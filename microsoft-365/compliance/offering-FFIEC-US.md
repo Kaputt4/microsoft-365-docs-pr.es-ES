@@ -1,9 +1,9 @@
 ---
 title: Consejo financiero federal de examen para instituciones financieras (FFIEC)
 description: Microsoft ayuda a los clientes de servicios financieros a cumplir con los requisitos de auditoría del Consejo de investigación de instituciones financieras federales (FFIEC).
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800101"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417324"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consejo financiero federal de examen para instituciones financieras (FFIEC)
 
@@ -42,7 +42,7 @@ Para ayudar a los clientes de instituciones financieras a satisfacer sus requisi
 
 Para ayudarle a cumplir con los requisitos de FFIEC, los servicios en la nube de Microsoft proporcionan [informes de atestación de SOC](offering-SOC.md) producidos por una empresa independiente de la CPA. Por ejemplo, la atestación del SOC 1 tipo 2 se basa en el estándar AICPA SSAE 18 (vea la sección de-C 105) que reemplazó a SAS 70 y es apropiado para informar sobre determinados controles de informes financieros. Los informes de SOC incluyen la opinión del Auditor sobre la eficacia de los controles de Microsoft en la consecución de los objetivos de control relacionados durante el período de supervisión especificado. Las instituciones financieras pueden usar esta auditoría formal al cumplir con las obligaciones de cumplimiento específicas de FFIEC para activos implementados en Azure, Power BI y Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -53,7 +53,7 @@ Para ayudarle a cumplir con los requisitos de FFIEC, los servicios en la nube de
 
 Informes de atestación de Azure y Office 365 SOC.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Puedo usar Microsoft Compliance con los estándares de SOC para cumplir con las obligaciones de cumplimiento de FFIEC para mi institución?**
 
@@ -78,4 +78,4 @@ Para ayudarle a cumplir estas obligaciones, Microsoft proporciona los detalles e
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

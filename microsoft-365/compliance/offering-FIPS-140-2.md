@@ -3,7 +3,7 @@ title: Publicación del estándar federal de procesamiento de información (FIPS
 description: Microsoft certifica que sus módulos criptográficos cumplen con el estándar federal de procesamiento de información estadounidense.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: f193e1846b957a26475cdfc48add6679a951841f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066585"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415854"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publicación del estándar federal de procesamiento de información (FIPS) 140-2
 
@@ -35,7 +35,7 @@ Microsoft mantiene un compromiso activo para cumplir los requisitos de 140-2, co
 
 Para obtener información técnica sobre los módulos criptográficos de Microsoft Windows, la Directiva de seguridad de cada módulo y el catálogo de los detalles del certificado CMVP, consulte el [contenido de Windows y Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Mientras que la guía de implementación de CMVP FIPS 140-2 actual excluye una validación de FIPS 140-2 para un servicio en la nube; los proveedores de servicios de nube pueden elegir obtener y operar módulos criptográficos de FIPS 140 validados para los elementos informáticos que componen su servicio en la nube. Los servicios en línea de Microsoft que incluyen componentes, que se han validado por FIPS 140-2, entre otros:
 
@@ -43,7 +43,7 @@ Mientras que la guía de implementación de CMVP FIPS 140-2 actual excluye una v
 - [Dynamics 365 y Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
 - [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Cuál es la diferencia entre "FIPS 140 validado" y "compatible con FIPS 140"?**
 

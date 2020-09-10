@@ -1,9 +1,9 @@
 ---
 title: Ley de privacidad y derechos educativos de la familia (FERPA)
 description: Microsoft se alinea con los requisitos de la ley de privacidad y derechos educativos de la serie estadounidense.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254273"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417354"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Ley de privacidad y derechos educativos de la familia (FERPA)
 
@@ -41,7 +41,7 @@ FERPA no requiere ni reconoce auditorías ni otras certificaciones, por lo que c
 
 Como resultado de estos compromisos contractuales, los clientes que están sujetos a FERPA (tanto las instituciones educativas como los terceros a quienes dan acceso a los datos confidenciales de los alumnos) pueden usar con confianza los servicios de nube de Microsoft Business Cloud para procesar, almacenar y transmitir dichos datos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Los servicios a los que Microsoft acuerda ser designados como "funcionario escolar" con "intereses educativos legítimos" en los datos de cliente son:
 
@@ -57,7 +57,7 @@ Los servicios a los que Microsoft acuerda ser designados como "funcionario escol
 
 FERPA no requiere ni reconoce auditorías ni certificaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué es importante FERPA?**
 
@@ -76,4 +76,4 @@ Esta ley federal de Estados Unidos tiene en cuentan la protección de la privaci
 - [Guía de implementación de FERPA para Microsoft Azure](https://aka.ms/azureferpa)
 - [Asignación del marco de cumplimiento de Azure FERPA](https://aka.ms/AzureFERPAMapping)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

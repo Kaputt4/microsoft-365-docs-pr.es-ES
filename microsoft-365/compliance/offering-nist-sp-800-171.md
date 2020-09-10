@@ -3,7 +3,7 @@ title: NIST SP 800 – 171
 description: Los servicios en la nube de Microsoft cumplen con las directrices de NIST SP 800 – 171 para proteger la información no clasificada controlada (CUI) en sistemas de información no federales.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 757541aa86049106ad06f02419fee02033c6a0e3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065815"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417072"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -42,7 +42,7 @@ Los requisitos de NIST SP 800 – 171 son un subconjunto de NIST SP 800-53, el e
 
 Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de investigación, empresas de consultoría, contratistas de fabricación) debe cumplir con las rigurosas necesidades de NIST SP 800-171. Esta atestación significa que los servicios en la nube de Microsoft en el ámbito pueden acomodar a los clientes que quieran implementar cargas de trabajo de CUI con la certeza de que Microsoft tiene el total cumplimiento. Por ejemplo, todos los contratistas de DoD que procesan, almacenan o transmiten la ' información de defensa cubierta ' con los servicios en la nube de Microsoft en sus sistemas de información cumplen las cláusulas DFARS del Departamento de defensa de Estados Unidos que requieren el cumplimiento de los requisitos de seguridad del NIST SP 800-171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -53,11 +53,11 @@ Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de i
 
 - [Atestación del gobierno de Azure del cumplimiento con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [Ejemplos de Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/): Obtenga soporte para implementar cargas de trabajo que cumplan con los controles basados en NIST.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Puedo usar Microsoft Compliance con NIST SP 800 – 171 para mi organización?**
 

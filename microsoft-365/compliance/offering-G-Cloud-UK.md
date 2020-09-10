@@ -1,9 +1,9 @@
 ---
 title: Reino Unido Government-Cloud (G-Cloud)
 description: El servicio de corona Commercial renovó la clasificación de servicios en la nube de Microsoft a la nube de administración pública v. 6.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560777"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416056"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Reino Unido Government-Cloud (G-Cloud)
 
@@ -39,7 +39,7 @@ La cita de los servicios Microsoft en el mercado digital implica que los socios 
 
  [14 Cloud Security Controls for uk Cloud Using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) proporciona estrategias de clientes para transferir sus servicios a Azure y ayudar a cumplir sus obligaciones del Reino Unido impuestas por el CESG/NSCs. Las notas del producto proporcionan información sobre cómo Azure se puede usar para ayudar a abordar los 14 controles descritos en las entidades de seguridad de la nube y describe cómo los clientes pueden avanzar más rápido y lograr más a la vez que ahorran dinero mientras adoptan los servicios de Microsoft Azure.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -80,7 +80,7 @@ Mover los servicios gubernamentales a la nube ahora es ahora más fácil que nun
 
 [Empezar a usar el proyecto de Azure RU G-Cloud Blueprint](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Quién es elegible para usar el mercado digital?**
 
@@ -112,4 +112,4 @@ El [Portal del Centro de confianza](https://docs.microsoft.com/microsoft-365/com
 - [G-Cloud Security Principles](https://aka.ms/UK-G-Cloud)
 - [Mercado digital](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

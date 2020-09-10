@@ -3,7 +3,7 @@ title: Servicios seguros de policía (PASF) United Kingdom
 description: Los servicios de Microsoft Business Cloud admiten el cumplimiento de la ley de Reino Unido que requieren instalaciones seguras garantizadas por la policía para procesar y almacenar sus datos en la nube.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3207d0d29c837064ac5c27cc7022a8d0d7e63a22
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 828a16ce825a21a532a22d60cd0005db10c97a75
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065795"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416402"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Servicios seguros de policía (PASF) United Kingdom
 
@@ -37,7 +37,7 @@ Microsoft tiene un enfoque holístico de defensa en profundidad de la seguridad.
 
 Estas certificaciones están respaldadas por las medidas que tomamos para proteger la seguridad física de nuestros centros de recursos. Adoptamos un enfoque por capas que comienza con la forma en que diseñamos, creamos y operamos los centros de datos para controlar estrictamente el acceso físico a las áreas en las que se almacenan los datos de los clientes. Los centros de recursos administrados por Microsoft tienen niveles extensivos de protección con la aprobación de acceso necesaria en el perímetro de la institución, en el perímetro del edificio, dentro del edificio y en el suelo del centro de trabajo. Esto reduce el riesgo de que los usuarios no autorizados obtengan acceso físico a los recursos de datos y centros de datos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -47,11 +47,11 @@ Estas certificaciones están respaldadas por las medidas que tomamos para proteg
 
 El NPIRMT audita un centro de recursos de Azure cada año, pasando anualmente por los cuatro centros de recursos de Microsoft en el Reino Unido. La evaluación de NPIRMT que los centros de usuarios de Microsoft están PASF está disponible a través de la oficina local para los clientes de cumplimiento de la ley que están llevando a cabo su propia evaluación de riesgos de Azure y otros servicios en la nube de Microsoft.
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - Proyecto [oficial de Azure uk](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): ayuda a los clientes de Reino Unido a acelerar las implementaciones de IaaS y PaaS de cargas de trabajo compatibles en Azure.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Pueden los departamentos policiales del Reino Unido usar la evaluación de PASF de Azure como parte de sus propias evaluaciones de riesgos?**
 
@@ -63,4 +63,4 @@ Sí. El cumplimiento de la ley puede usar la evaluación NPIRMT de Azure para ap
 - [Instalaciones, locales y seguridad física de Azure](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Estándares de Microsoft e ISO/IEC 27001:2013 ISM](offering-iso-27001.md)
 - [Términos de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

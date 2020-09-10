@@ -1,9 +1,9 @@
 ---
 title: Consideraciones sobre seguridad y privacidad de informática en la nube del gobierno de Nueva Zelanda
 description: Microsoft NZ aborda las preguntas publicadas en el marco de informática en la nube de Nueva Zelanda.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99e7d28bea37ec282bd6358b5af81a3078dfdd38
-ms.sourcegitcommit: b7f4f1e04b27519b818d4255022b28f99fbe54af
+ms.openlocfilehash: 992f531a39fdb21a109099ed30f75591f010c476
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46852506"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417052"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Consideraciones sobre seguridad y privacidad de informática en la nube del gobierno de Nueva Zelanda
 
@@ -37,7 +37,7 @@ Para ayudar a las agencias a emprender el análisis y la evaluación de los serv
 
 Obtenga información sobre cómo acelerar su implementación de .NET Framework de NZ con nuestro proyecto de Azure Security and Compliance: [descargar la respuesta de Azure en el marco de trabajo NZ CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -46,7 +46,7 @@ Obtenga información sobre cómo acelerar su implementación de .NET Framework d
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online, SharePoint Online y Microsoft Teams. Microsoft NZ ha trabajado con el equipo de GCIO para desarrollar una arquitectura de referencia para la integración de Exchange Online y SEEMail.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿A quién se aplica el marco?**
 
@@ -65,7 +65,7 @@ Si su agencia necesita llevar a cabo la certificación y acreditación de su sis
 - [Informática en la nube: consideraciones sobre seguridad y privacidad de la información (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365: arquitectura de referencia y de integración de SEEMail](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (más información sobre la adopción de Microsoft NZ sobre la adopción de servicios en la nube)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Respuestas de Microsoft a ' Cloud Computing IPSC '
 

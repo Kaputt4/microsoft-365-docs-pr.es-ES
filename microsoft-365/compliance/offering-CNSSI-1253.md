@@ -3,7 +3,7 @@ title: Comité de la instrucción máquina de sistemas de seguridad nacional 125
 description: Azure Government cumple con los controles de seguridad de CNSSI 1253 para los sistemas gubernamentales de Estados Unidos que requieren alta confidencialidad, alta integridad y alta disponibilidad.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: d84f31f38fb8e4ff71de067ca30abc39b58704fc
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066273"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415609"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
 
@@ -39,7 +39,7 @@ Azure Government actualmente posee una autorización provisional FedRAMP alta pa
   
 El cumplimiento de Azure Government con los requisitos CNSSI 1253 de la demanda significa que Azure puede ofrecer a los clientes del sector público en Estados Unidos una amplia variedad de servicios compatibles con CNSSI 1253, lo que les permite beneficiarse del ahorro de costos y de la seguridad rigurosa de la nube de Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 
@@ -47,11 +47,11 @@ El cumplimiento de Azure Government con los requisitos CNSSI 1253 de la demanda 
 
 Azure Government CNSSI 1253 atestación del cumplimiento de la CNSSI 1253 de alta-alta-alta base
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [Documentación de Azure Government](https://docs.microsoft.com/azure/azure-government/): las guías de tutoriales y procedimientos ayudan a los desarrolladores a implementar y administrar los servicios con el gobierno de Azure.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿A quién se aplica la CNSSI 1253?**
 

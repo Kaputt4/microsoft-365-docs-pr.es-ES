@@ -3,7 +3,7 @@ title: Asociación de producción digital (DPP) United Kingdom
 description: Microsoft Azure ha obtenido el DPP confirmado en la marca de seguridad para la difusión.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ce688fbf933cc14884e989572e222396f4ccec52
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066637"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415458"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Asociación de producción digital (DPP) United Kingdom
 
@@ -35,7 +35,7 @@ Se ha otorgado a Microsoft Azure la marca de seguridad DPP confirmada para la di
   
 Esto significa que los broadcasters y los clientes de medios que usan Azure pueden tener la confianza de que su robusto servicio de seguridad y resistente puede ayudarle a satisfacer las demandas exclusivas de la industria de la difusión, desde el desarrollo del programa hasta la transmisión.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -46,7 +46,7 @@ La marca de difusión de Azure es válida durante un año y se renueva anualment
 - [Lista de comprobación de requisitos de seguridad del difusor de DPP de Azure NABA](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP se compromete a las compañías de seguridad que han concedido las marcas](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [Asset Management hardening Guide](https://aka.ms/Azure-Asset-Mgmt): los procedimientos recomendados en Azure protegen el contenido preliminar de la divulgación, cambio o eliminación no autorizados.
 - [Servicios multimedia de Azure](https://docs.microsoft.com/azure/media-services/): cree soluciones que consigan la codificación de vídeo de alta definición y la transmisión de vídeo de calidad de difusión.

@@ -3,7 +3,7 @@ title: Entidad monetaria de Singapur (MAS) y Asociación de bancos en Singapur (
 description: Microsoft ayuda a los clientes financieros a cumplir con las directrices de subcontratación de la Entidad monetaria de Singapur y a aplicar las de la Asociación de bancos en Singapur.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1d5e6b196f4c064a4bb2f4bc0f92f8973a61a15
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 13956229628db1343ba72dbcba195b29fb651ba3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066607"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417534"
 ---
 # <a name="monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>Entidad monetaria de Singapur (MAS) y Asociación de bancos en Singapur (ABS)
 

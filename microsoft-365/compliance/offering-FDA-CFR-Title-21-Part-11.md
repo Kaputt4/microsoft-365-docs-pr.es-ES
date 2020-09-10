@@ -3,7 +3,7 @@ title: Título de administración de alimentos y medicamentos CFR 21 parte 11
 description: Microsoft ayuda a los clientes a cumplir con estos reglamentos de administración de alimentos y medicamentos de Estados Unidos.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066383"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417344"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Título de administración de alimentos y medicamentos CFR 21 parte 11
 
@@ -45,7 +45,7 @@ Los clientes pueden solicitar el acceso a los informes de cumplimiento, en funci
 
 Obtenga información sobre cómo acelerar la implementación del título 21 del FDA CFR: [descargar la guía de calificación de Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Aunque no existe ninguna certificación para cumplir con la parte 11 del título de CFR, los siguientes servicios en la nube de Microsoft Enterprise se han sometido a auditorías independientes de terceros, lo que puede ayudar a los clientes en sus esfuerzos de cumplimiento. Entre estos servicios se incluyen:
 

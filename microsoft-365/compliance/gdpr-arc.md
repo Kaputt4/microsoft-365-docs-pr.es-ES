@@ -3,7 +3,7 @@ title: Listas de comprobación de preparación de responsabilidad para RGPD
 description: En este artículo, aprenderá acerca de las listas de control de preparación para la rendición de cuentas para acceder a la información de apoyo a la GDPR cuando se utilizan productos y servicios de Microsoft.
 keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 154ba945db3bd5cfab25881bfdbbdc6738a3dfd7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8bee0c58075c535b5175d9f5ecbed6c6f2f5044c
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036118"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416990"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Apoye a su programa de RGPD con las listas de comprobación de preparación de responsabilidad
 

@@ -3,7 +3,7 @@ title: Configuración de administración de riesgos de Insider
 description: Obtenga información sobre la configuración de administración de riesgos de Insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: cec98f979a19c91946564aa402d1880c3ee08d5a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201426"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416784"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de Insider
 
@@ -126,7 +126,7 @@ La [protección contra amenazas avanzada de Microsoft defender](https://docs.mic
 En función de los tipos de señales que le interesen, puede optar por importar las alertas a la administración de riesgos de Insider en función del estado de clasificación de alertas de ATP de Microsoft defender. Puede definir uno o más de los siguientes Estados de clasificación de alertas en la configuración global que se va a importar:
 
 - Unknown
-- New
+- Nuevo
 - En curso
 - Resuelto
 

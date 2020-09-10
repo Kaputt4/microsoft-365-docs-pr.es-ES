@@ -3,7 +3,7 @@ title: Autorización provisional del Departamento de defensa de Estados Unidos (
 description: Microsoft recibió autorizaciones provisionales del Departamento de defensa (DoD) a niveles de impacto 5, 4 y 2.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 333333ad274c569337c2cbab7fd00c7337e26160
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fee91c384850b5a1593cc17e6215985217ada033
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064771"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415478"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorización provisional del Departamento de defensa (DoD) de Estados Unidos en los niveles 2, 4 y 5 de impacto
 
@@ -57,7 +57,7 @@ En función de las autorizaciones de FedRAMP, la compatibilidad con el servicio 
 
 El nivel de impacto 2 cubre información no clasificada no controlada: datos que están autorizados para la publicación pública. También se incluye otra información sin clasificar que, aunque no considerada "esencial", sigue necesitando un nivel de control de acceso mínimo. Esta autorización permite a los clientes de administración federal de Estados Unidos implementar información no confidencial y aplicaciones de defensa básica y sitios web en servicios en la nube de Microsoft en el ámbito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servicios cubiertos para el nivel 5 de impacto DoD
 
@@ -84,7 +84,7 @@ Una vez que se ha concedido un PA PA, los servicios en la nube de Microsoft se s
 
 Empiece a aprovechar las ventajas de la nube en el gobierno con el Blueprint del Departamento de defensa de Azure Security and Compliance. Este proyecto le proporciona herramientas y orientación para empezar a crear soluciones compatibles con DoD en la actualidad. [Empiece a usar el Blueprint de Azure DoD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Puedo usar el cumplimiento normativo de Microsoft en el proceso de certificación de mi organización?**
 

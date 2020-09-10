@@ -3,7 +3,7 @@ title: Federación contra robos de copyright (FACT)
 description: Microsoft Azure obtuvo la certificación de la Federación contra el robo de copyright en el Reino Unido.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066403"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416116"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Federación contra robos de copyright (FACT)
 
@@ -33,7 +33,7 @@ Para subrayar el compromiso de Microsoft de proteger a los clientes cuando estos
 
 Basado en el envío voluntario de Microsoft a una auditoría de hechos, el Auditor de hechos certificado de Azure. Azure fue el primer servicio de nube pública de varios inquilinos que lograba la certificación de hechos, que agregaba a la cartera de Azure de certificaciones relacionadas con los medios, incluida la certificación CDSA y una evaluación formal por parte de MPAA.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 [Azure y Azure Government](https://aka.ms/AzureCompliance)
 
@@ -41,7 +41,7 @@ Basado en el envío voluntario de Microsoft a una auditoría de hechos, el Audit
 
 La certificación de Azure se renueva anualmente: [certificado de hecho de Azure](https://aka.ms/azurefactcert)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué es importante el hecho?**
 
@@ -59,4 +59,4 @@ El cumplimiento de FACTo es voluntario, pero Microsoft decidió realizar una eva
 - [Certificación ISO 27001 de Azure](https://aka.ms/Azure-BSI-Cert)
 - [Evaluación de MPAA](offering-mpaa.md)
 - [Respuestas de Azure a CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

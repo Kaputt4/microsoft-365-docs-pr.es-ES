@@ -3,7 +3,7 @@ title: Corporación Norteamericana de Confiabilidad Eléctrica (NERC)
 description: Azure y Azure Government son adecuados para entidades registradas que utilizan ciertas cargas de trabajo en la nube sujetas a los estándares de la NERC CIP.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 635918f068a70eb8270f4d8e2f571f1fda962949
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7001a17af7932a7aafa7cceac207b772b42b55d9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601927"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417168"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>Corporación Norteamericana de Confiabilidad Eléctrica (NERC)
 

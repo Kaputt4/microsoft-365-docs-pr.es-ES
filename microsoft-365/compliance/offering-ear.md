@@ -1,9 +1,9 @@
 ---
 title: Normas para la administración de la exportación de Estados Unidos (EAR)
 description: Los servicios en la nube de Microsoft ayudan a los clientes sujetos a la normativa de administración de la exportación estadounidense (EAR) cumplen sus requisitos de cumplimiento y administran el riesgo de control de exportación.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1adf0bab35c921dd416028747b0309e5ad5f3055
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad12f785a76f6ee733cb3b459ad58370a330f51
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601967"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416066"
 ---
 # <a name="us-export-administration-regulations-ear"></a>Normas para la administración de la exportación de Estados Unidos (EAR)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41601967"
 
 El Departamento de comercio de Estados Unidos pone en vigor la normativa de administración de exportación (EAR) a través [de la oficina de la industria y la seguridad (bis)](https://www.bis.doc.gov/). El oído rige en general y impone los controles sobre la exportación y reexportación de la mayoría de los productos, el software y la tecnología comerciales, incluidos los elementos de "doble uso" que se pueden usar tanto para fines comerciales como militares y para determinados elementos de defensa.
 
-Instrucciones para BIS que, cuando los datos o el software se cargan en la nube o se transfieren entre nodos de usuario, el cliente, no el proveedor de la nube, es el "exportador" quien tiene la responsabilidad de garantizar que las transferencias, el almacenamiento y el acceso a esos datos o software cumple con las EAR.
+La guía de BIS implica que, cuando los datos o el software se cargan en la nube o se transfieren entre nodos de usuario, el cliente, no el proveedor de la nube, es el "exportador" quien tiene la responsabilidad de garantizar que las transferencias, el almacenamiento y el acceso a esos datos o software cumplan con la lengüeta.
 
 [Según el bis](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file), la *exportación* hace referencia a la transferencia de tecnología protegida o datos técnicos a un destino extranjero o su lanzamiento a una persona extranjera en los Estados Unidos (también conocido como una *exportación considerada*). El oído se rige en general:
 
@@ -41,7 +41,7 @@ La [regla final](https://www.federalregister.gov/documents/2016/06/03/2016-12734
 
 ## <a name="microsoft-and-the-ear"></a>Microsoft y las EAR
 
-Las tecnologías, productos y servicios de Microsoft están sujetos a la normativa para la administración de la exportación de Estados Unidos (EAR). Aunque no hay ninguna certificación de cumplimiento para las EAR, los Microsoft Azure, Microsoft Azure Government y Microsoft Office 365 Government (GCCHigh y DoD) ofrecen características y herramientas importantes para ayudar a clientes elegibles sujetos a la función EAR administrar exportación controlar los riesgos y cumplir con los requisitos de cumplimiento.
+Las tecnologías, productos y servicios de Microsoft están sujetos a la normativa para la administración de la exportación de Estados Unidos (EAR). Aunque no hay ninguna certificación de cumplimiento para las EAR, los Microsoft Azure, Microsoft Azure Government y Microsoft Office 365 Government (GCCHigh y DoD) ofrecen características y herramientas importantes para ayudar a los clientes elegibles que están sujetos a los oídos a administrar los riesgos de control de exportación y cumplir con los requisitos de cumplimiento.
 
 El Departamento de comercio de Estados Unidos, que exige el oído, ha tomado la posición de que los clientes, no los proveedores de servicios de nube como Microsoft, sean exportadores de sus propios datos de clientes. Si bien la mayoría de los datos de los clientes no se consideran "tecnológicos" o "datos técnicos" sujetos a EAR controles de exportación, los servicios en la nube de Microsoft en el ámbito están estructurados para ayudar a los clientes a administrar y mitigar considerablemente los posibles riesgos de control de exportación a los que se enfrentan. Microsoft generalmente, pero no exclusivamente, recomienda el uso de los servicios de nube de administración pública para clientes elegibles. Con una planificación adecuada, los clientes pueden usar las siguientes herramientas y sus propios procedimientos internos para ayudar a garantizar el total cumplimiento con los controles de exportación de los Estados Unidos.
 
@@ -49,7 +49,7 @@ El Departamento de comercio de Estados Unidos, que exige el oído, ha tomado la 
 - **Cifrado de un extremo a otro**. Al aprovechar el puerto seguro de cifrado de extremo a extremo para ubicaciones de almacenamiento físico especificadas en las EAR, los servicios de nube de Microsoft en el ámbito proporcionan características de cifrado que pueden ayudar a protegerse contra los riesgos de control de la exportación. También ofrecen a los clientes una [amplia variedad de opciones para cifrar datos](https://aka.ms/Azure-Encryption-Overview) en tránsito y en reposo, así como la flexibilidad para elegir entre las opciones de cifrado.
 - **Herramientas y protocolos para impedir la exportación no autorizada considerada**. El uso de cifrado también ayuda a proteger contra una Exportación posible (o reexportación considerada) bajo el oído, porque incluso si una persona no estadounidense tiene acceso a datos cifrados, no se revela nada si no pueden leer o comprender los datos mientras están cifrados; por lo tanto, no hay una "versión" de datos controlados.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 Government (GCC-High y DoD)](https://aka.ms/Office-365-Export-Controls)
@@ -66,7 +66,7 @@ Overview of US Export Controls and Guidance for customers Evaluating The astinas
 
 **¿Qué debo hacer para cumplir con los controles de exportación al usar los servicios en la nube de Microsoft?**
 
-En el oído, cuando los datos se cargan en un servidor en la nube, como la nube de Microsoft, el cliente propietario de los datos (no el proveedor de servicios en la nube) se considera el exportador. Por ese motivo, el propietario de los datos (es decir, el cliente de Microsoft) debe valorar cuidadosamente cómo su uso de la nube de Microsoft puede someterse a Implicate de exportación de los Estados Unidos y determinar si alguno de los datos que desean usar o almacenar puede estar sujeto a controles EAR y, si es así, qué controles son aplicables. Obtenga más información sobre cómo [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) y [Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI) Cloud Services pueden ayudar a los clientes a garantizar su total cumplimiento con los controles de exportación de los Estados Unidos.
+En el oído, cuando los datos se cargan en un servidor en la nube, como la nube de Microsoft, el cliente propietario de los datos (no el proveedor de servicios en la nube) se considera el exportador. Por ese motivo, el propietario de los datos (es decir, el cliente de Microsoft) debe valorar cuidadosamente cómo su uso de la nube de Microsoft puede someterse a Implicate de exportación de los Estados Unidos y determinar si alguno de los datos que desean usar o almacenar puede estar sujeto a controles EAR y, si es así, qué controles se aplican. Obtenga más información sobre cómo [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) y [Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI) Cloud Services pueden ayudar a los clientes a garantizar su total cumplimiento con los controles de exportación de los Estados Unidos.
 
 **¿Las tecnologías, productos y servicios de Microsoft están sujetos a la lengüeta?**
 

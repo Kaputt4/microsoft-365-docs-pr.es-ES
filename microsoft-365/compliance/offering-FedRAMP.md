@@ -3,7 +3,7 @@ title: Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
 description: Microsoft nos ha otorgado el programa federal de administración de riesgos y autorizaciones P-ATOs y ATOs.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ddb997246f2b7a23b25e1b611170c6163e1d670
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781487"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415784"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
 
@@ -63,7 +63,7 @@ El gobierno de Estados Unidos de Dynamics 365 a FedRAMP Agency en el nivel de im
 - Office 365 U.S. Government Defense tiene una P-ATO de US Defense Information Systems Agency (DISA). Cualquier cliente que desee implementar Office 365 US Government Defense puede usar la DISA P-ATO para generar una agencia ATO para documentar su aceptación.
 - Office 365 (planes empresariales y empresariales) y Office 365 el gobierno de Estados Unidos tienen un FedRAMP de agencia de distribución en el nivel de impacto moderado de la oficina DHHS del inspector general. Office 365 U.S. Government fue el primer servicio de colaboración y correo electrónico basado en la nube para obtener esta autorización.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -91,7 +91,7 @@ Deje que Microsoft le guíe a través del proceso de ATO e implemente rápidamen
 
 [Empezar a usar Azure FedRAMP High Blueprint](https://aka.ms/fedrampblueprint)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Los servicios en la nube de Microsoft cumplen con la ley de administración de seguridad de la información federal (FISMA)?**
 

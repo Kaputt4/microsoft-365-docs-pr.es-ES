@@ -3,7 +3,7 @@ title: Directiva de seguridad de los servicios de información de Justicia Penal
 description: Microsoft Government Cloud Services cumple la Directiva de seguridad de los servicios de información de Justicia de Estados Unidos.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
-ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
+ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772521"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416422"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
@@ -43,7 +43,7 @@ Obtenga información sobre las ventajas de la Directiva de seguridad de CJIS en 
 
 Obtenga información sobre cómo acelerar la Directiva de seguridad de CJIS con nuestro proyecto de Azure Security and Compliance: [descargar las instrucciones de implementación de CJIS para Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -64,11 +64,11 @@ Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawa
 
 El compromiso de Microsoft para cumplir con los controles normativos de CJIS aplicables permite a las organizaciones de justicia criminal implementar soluciones basadas en la nube y cumplir con la Directiva de seguridad de CJIS V 5.8.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Dónde puedo solicitar información de cumplimiento?**
 
-Póngase en contacto con el representante de su cuenta de Microsoft para obtener información sobre la jurisdicción que le interesa. Póngase <cjis@microsoft.com> en contacto con para obtener información sobre qué servicios están actualmente disponibles en cada Estado.
+Póngase en contacto con el representante de su cuenta de Microsoft para obtener información sobre la jurisdicción que le interesa. Póngase en contacto con <cjis@microsoft.com> para obtener información sobre qué servicios están actualmente disponibles en cada Estado.
 
 **¿Cómo demuestra Microsoft que sus servicios en la nube permiten el cumplimiento de los requisitos de mi estado?**
 

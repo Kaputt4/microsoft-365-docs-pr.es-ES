@@ -1,9 +1,9 @@
 ---
 title: Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 description: Microsoft ofrece portabilidad del seguro de salud & contratos de asociación comercial de negocios de la ley de responsabilidad (HIPAA).
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936355"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416854"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -34,7 +34,7 @@ La ley regula el uso y la difusión de la información protegida sobre la salud 
 - Identificadores, que son los tipos de información que no se pueden liberar si se recopilan con fines de investigación.
 - Códigos para la transmisión electrónica de datos en transacciones relacionadas con la asistencia sanitaria, incluida la elegibilidad y los pagos y las reclamaciones de seguros.
 
-El ámbito de la HIPAA se amplió con la enactment? a de la ley de información sobre salud para la salud económica y clínica (alta tecnología). Juntas, las reglas de Act de HIPAA y alta tecnología incluyen:
+El ámbito de la HIPAA se amplió con el enactment de la tecnología de información de salud para la ley de salud médica y clínica (ALTAia). juntas, las reglas de Act de HIPAA y alta tecnología incluyen:
 
 - La regla de privacidad HIPAA, que se centra en el derecho de los usuarios para controlar el uso de su información personal y cubre la confidencialidad de la PHI, lo que limita su uso y revelación.
 - La regla de seguridad HIPAA, que establece los estándares para salvaguardas administrativas, técnicas y físicas para proteger la PHI electrónica del acceso, uso y revelación no autorizados. También incluye Requisitos organizativos como los acuerdos de asociación empresarial (HIPAA).
@@ -51,7 +51,7 @@ Los servicios en la nube de Microsoft Enterprise también están cubiertos por e
 
 Para obtener información sobre cómo la nube de Microsoft ayuda a los clientes a apoyar los requisitos de HIPAA y alta tecnología, visite [historias de clientes de Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -72,7 +72,7 @@ Empiece a aprovechar las ventajas de la nube para obtener soluciones de datos de
 
 [Empezar a usar el Blueprint de Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Puede mi organización ingresar a un BAA con Microsoft?**
 
@@ -114,4 +114,4 @@ La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una caract
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
 - [Ejemplo de HITRUST de Blueprint de Azure HIPAA](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

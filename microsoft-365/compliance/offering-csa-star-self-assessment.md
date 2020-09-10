@@ -3,7 +3,7 @@ title: 'Oferta de conformidad: Alianza de seguridad en la nube (CSA) STAR autoev
 description: La autoevaluación de Microsoft STAR detalla cómo los servicios de la nube cumplen con los requisitos de la Alianza de Seguridad de la Nube.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 6d47b393993df3d9c105ff0912a6112cb10489eb
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254193"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416268"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Autoevaluación de la nube Security Alliance (CSA)
 

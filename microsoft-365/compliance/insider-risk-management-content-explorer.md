@@ -3,7 +3,7 @@ title: Explorador de contenido de administración de riesgos de Insider
 description: Obtenga información sobre el explorador de contenido de administración de riesgos de Insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dee4ed05f4210530dddeff8ac62ee3f39903abca
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199827"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416494"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos de Insider
 
@@ -40,14 +40,14 @@ Para agregar o quitar encabezados de columna de la cola de contenido, use el con
 | **IDENTIFICADOR de conversación** | Identificador de la conversación del mensaje. |
 | **Índice de conversaciones** | Índice de la conversación del mensaje. |
 | **Fecha de creación** | La hora en la que se creó el archivo o mensaje de correo electrónico. |
-| **Fecha** | Para correo electrónico, la fecha en que un destinatario recibió un mensaje o en que un remitente envió un mensaje. Para los documentos, la fecha en que se modificó por última vez un documento. |
+| **Date** | Para correo electrónico, la fecha en que un destinatario recibió un mensaje o en que un remitente envió un mensaje. Para los documentos, la fecha en que se modificó por última vez un documento. |
 | **Tema dominante** | Tema dominante como se calcula para el análisis. |
 | **IDENTIFICADOR de conjunto de correo electrónico** | IDENTIFICADOR de grupo para todos los mensajes en el mismo conjunto de correo electrónico. |
 | **IDENTIFICADOR de familia** | ID de familia agrupa todos los elementos; para el correo electrónico, esta columna incluye el mensaje y todos los datos adjuntos; para los documentos, esta columna incluye el documento y los elementos incrustados. |
 | **Clase File** | Para contenido de SharePoint y OneDrive: **documento**; para contenido de Exchange: * * correo electrónico o **datos adjuntos**. |
 | **IDENTIFICADOR de archivo** | Identificador del documento único en el caso. |
 | **Icono de tipo de archivo** | La extensión de un archivo; por ejemplo, docx, One, pptx o XLSX. Este campo es la misma propiedad que la propiedad de sitio FileExtension. |
-| **ID** | Identificador GUID del archivo. |
+| **Id.** | Identificador GUID del archivo. |
 | **Identificador inmutable** | Identificador inmutable tal y como se almacena en Office 365. |
 | **Tipo inclusivo** | Tipo inclusivo calculado para análisis: **0** -no inclusivo; **1** -ambos inclusive; **2** -inclusive menos; **3** -copia inclusiva. |
 | **Última modificación** | La fecha en la que el documento se modificó por última vez. |
@@ -65,7 +65,7 @@ Para agregar o quitar encabezados de columna de la cola de contenido, use el con
 | **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico. |
 | **Asunto/título** | Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se ha explicado anteriormente, la propiedad title es metadatos especificados en los documentos de Microsoft Office. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de OR. |
 | **Lista de temas** | Lista de temas tal y como se calcula para el análisis. |
-| **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
+| **Título** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
 | **To** | El destinatario de un mensaje de correo electrónico en el campo para. |
 
 ## <a name="advanced-search-conditions"></a>Condiciones de búsqueda avanzadas
@@ -170,6 +170,6 @@ En la siguiente tabla se enumeran las condiciones de propiedad de documentos dis
 | **IDENTIFICADOR representativo** | Identificador numérico de cada conjunto de duplicados exactos. |
 | **Tags** | Etiquetas aplicadas en un conjunto de revisión. |
 | **Lista de temas** | Lista de temas tal y como se calcula para el análisis. |
-| **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
+| **Título** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
 | **Se corrigió** | True si el elemento se ha corregido; en caso contrario, false. |
 | **Conteo de palabras** | Número de palabras en un archivo. |

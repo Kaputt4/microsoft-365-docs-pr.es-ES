@@ -3,7 +3,7 @@ title: Autoridad holandesa para los mercados financieros y el Banco de los País
 description: Microsoft ha publicado una guía para ayudar a las instituciones financieras de los Países Bajos con la adopción de la nube.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 09d6514a3b18535820f31b50736591314182d140
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: bab5664054cf4b2ba171887b4e2df754c6edd3cf
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066657"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416176"
 ---
 # <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>Autoridad neerlandesa para los mercados financieros y el Banco Central de países bajos
 

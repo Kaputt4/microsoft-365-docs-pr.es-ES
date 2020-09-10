@@ -3,7 +3,7 @@ title: Marcos de los Escudos de la privacidad UE-EE. UU. y Suiza-EE. UU.
 description: Microsoft está certificado en los marcos de los Escudos de la privacidad UE-EE. UU. y Suiza-EE. UU.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f58baecce1d1972c7aee1fdb7121375d5ddd111c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6037712fb5ad60d8fb3dfe01a4a909d117456160
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066413"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416146"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>Marcos de los Escudos de Privacidad entre la UE y EE. UU., y Suiza y EE. UU.
 

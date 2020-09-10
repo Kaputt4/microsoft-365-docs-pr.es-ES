@@ -3,7 +3,7 @@ title: Introducción a la administración de riesgos internos
 description: Configure la administración de riesgos de Insiders en su organización.
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b968de12a2dee9d6b820558af05f99c7be29763c
-ms.sourcegitcommit: b3316b947059d3a2e31acbf0ab57d2e000b662ff
+ms.openlocfilehash: e4a13d25506481ddcdfaf6ca2f9ad21c871bb603
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45255345"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416474"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -183,7 +183,7 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 11. Seleccione **siguiente** para continuar.
 12. En la página **revisión** , revise la configuración que ha elegido para la Directiva. Seleccione **Editar** para cambiar cualquiera de los valores de la Directiva o seleccione **Enviar** para crear y activar la Directiva.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya completado estos pasos para crear su primera Directiva de administración de riesgos de Insider, empezará a recibir alertas de los indicadores de actividad después de aproximadamente 24 horas. Configure directivas adicionales según sea necesario mediante las instrucciones del paso 4 de este artículo o los pasos en [Create a Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
 

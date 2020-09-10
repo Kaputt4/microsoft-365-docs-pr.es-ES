@@ -3,7 +3,7 @@ title: Tráfico internacional en las regulaciones de brazos (ITAR)
 description: Azure Government es compatible con los clientes que crean tráfico internacional en los brazos regs.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6019e215e99af672f7e938b11abdac8732c152fa
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065735"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417644"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Tráfico internacional en las regulaciones de brazos (ITAR)
 
@@ -39,12 +39,12 @@ El ITAR tiene obligaciones específicas para informar sobre infracciones, que pu
   
 Los clientes que quieran hospedar datos regulados por el ITAR deben trabajar con su cuenta de Microsoft y con Microsoft Teams para obtener más información, obtener contratos adecuados y acceder a información relevante sobre la arquitectura del sistema.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Dónde puedo solicitar información de cumplimiento?**
 

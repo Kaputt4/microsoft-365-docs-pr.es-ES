@@ -3,7 +3,7 @@ title: Publicación de US Internal Revenue Service 1075
 description: Microsoft tiene controles que cumplen los requisitos de la publicación 1075 de los servicios de ingresos internos de US.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066333"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416350"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publicación de US Internal Revenue Service 1075
 
@@ -43,7 +43,7 @@ Para ayudar a las agencias gubernamentales en sus esfuerzos de cumplimiento, Mic
 - Proporciona a las consideraciones de cumplimiento de la administración pública de la Agencia Tributaria de Azure y Office 365 U.S. Government Compliance, que explican cómo una agencia puede usar Microsoft Cloud para los servicios gubernamentales de manera que cumpla con IRS 1075. Los clientes del gobierno con NDA pueden solicitar estos documentos.
 - Ofrece a los clientes la oportunidad (a su cargo) para comunicarse con expertos en la materia del tema de Microsoft o con auditores externos, si es necesario.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 Las autorizaciones de FedRAMP se conceden a tres niveles de impacto en función de las instrucciones del NIST: bajo, medio y alto. Estos clasifican el impacto que la pérdida de confidencialidad, integridad o disponibilidad puede tener en una organización: bajo (efecto limitado), medio (efecto adverso grave) y alto (efecto grave o catastrófico).
 
@@ -60,7 +60,7 @@ El cumplimiento de los requisitos de fondo de IRS 1075 está cubierto por la aud
 - [Autorizaciones de FedRAMP](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
 - [Informe de seguridad de protección de IRS 1075 de Azure](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Cómo soluciona Microsoft los requisitos de IRS 1075?**
 

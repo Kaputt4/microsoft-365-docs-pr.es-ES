@@ -3,7 +3,7 @@ title: Ley de Protección de Datos Personales (PDPA) de Argentina
 description: Los servicios en la nube de Microsoft para empresas cumplen con los estándares de la PDPA para proteger la privacidad de los datos personales.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d4d794c05498cd40d1a844d1cb402a52f23ad0c6
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065785"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417062"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Ley de Protección de Datos Personales (PDPA) de Argentina
 
