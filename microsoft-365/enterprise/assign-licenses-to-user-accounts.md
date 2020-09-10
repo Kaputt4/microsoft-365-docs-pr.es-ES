@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo asignar licencias de 365 de Microsoft a cuentas de usuario, ya sea de forma individual o en función de la pertenencia a grupos.
-ms.openlocfilehash: 60936e52bffa58d50419f771e670848ee76271fd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e132a8c2d65c401899624b9d255050385f2cb721
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693671"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417103"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Asignar licencias de 365 de Microsoft a cuentas de usuario
 
@@ -58,5 +58,5 @@ Con el conjunto completo de cuentas de usuario a las que se han asignado licenci
 
 - [Implementar seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Implementación de software cliente, como aplicaciones de Microsoft 365](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [Configurar la administración de dispositivos móviles en Microsoft 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Configurar la movilidad básica y la seguridad en Microsoft 365](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Configuración de servicios y aplicaciones](configure-services-and-applications.md)

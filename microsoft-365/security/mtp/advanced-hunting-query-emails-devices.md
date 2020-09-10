@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649348"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419149"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas en dispositivos, mensajes de correo electrónico, aplicaciones e identidades
 
@@ -62,9 +62,6 @@ EmailEvents
 
 Puede obtener nombres de cuenta y otra información de la cuenta si combina o combina la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md). La siguiente consulta obtiene la lista de detecciones de suplantación de identidad (phishing) y malware de la [tabla EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, combina esa información con la `IdentityInfo` tabla para obtener información detallada acerca de cada destinatario. 
 
->[!Tip]
-> Esta consulta usa `kind=inner` para especificar una [Unión interna](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que impide la desduplicación de los valores del lado izquierdo o las direcciones de correo electrónico de los destinatarios.
-
 ```kusto
 EmailEvents
 | where Timestamp > ago(7d)
@@ -81,6 +78,9 @@ Department, City, Country
 
 ### <a name="get-device-information"></a>Obtener información del dispositivo
 El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) proporciona una amplia información de dispositivos en varias tablas. Por ejemplo, la [tabla DeviceInfo](advanced-hunting-deviceinfo-table.md) proporciona información completa sobre dispositivos en función de los datos de eventos agregados con regularidad. Esta consulta usa la `DeviceInfo` tabla para comprobar si un usuario potencialmente comprometido ( `<account-name>` ) ha iniciado sesión en cualquier dispositivo y, a continuación, muestra las alertas que se han desencadenado en dichos dispositivos.
+
+>[!Tip]
+> Esta consulta usa `kind=inner` para especificar una [Unión interna](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que impide la desduplicación de los valores del lado izquierdo `DeviceId` .
 
 ```kusto
 DeviceInfo

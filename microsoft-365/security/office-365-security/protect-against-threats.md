@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: ''
+ms.date: 09/08/2020
 search.appverid:
 - MOE150
 - MET150
@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826830"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417127"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
-Microsoft 365 incluye una variedad de características de protección contra amenazas. Esta es una guía de inicio rápido que puede usar como una lista de comprobación para asegurarse de que las características de protección contra amenazas se configuran para su organización. Si no está familiarizado con las características de protección contra amenazas de Office 365 o no está seguro de dónde empezar, use las siguientes instrucciones como punto de partida.
+Esta es una guía de inicio rápido que rompe la configuración de la protección contra amenazas avanzada en fragmentos. Si no está familiarizado con las características de protección contra amenazas de Office 365, pero no sabe dónde empezar, o si desea obtener mejores resultados, use esta guía como una lista de comprobación y un *punto de partida*.
 
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
@@ -36,24 +36,27 @@ Microsoft 365 incluye una variedad de características de protección contra ame
 
 ### <a name="subscriptions"></a>Suscripciones
 
-Las características de protección contra amenazas se incluyen en todas las suscripciones de Microsoft 365; sin embargo, algunas suscripciones incluyen características más avanzadas. En la siguiente tabla se enumeran las características de protección que se incluyen en este artículo junto con los requisitos mínimos de suscripción.
+Las características de protección contra amenazas se incluyen en *todas las* suscripciones de Microsoft u Office 365; sin embargo, algunas suscripciones tienen características avanzadas. En la tabla siguiente se enumeran las características de protección que se incluyen en este artículo junto con los requisitos mínimos de suscripción.
+
+> [!TIP]
+> Tenga en cuenta que, aparte de las instrucciones para activar la auditoría, *los pasos* inician anti-malware, anti-phishing y anti-spam, que están marcados como parte de Office 365 Exchange Online Protection (**EOP**). Esto puede parecer extraño en un artículo de protección contra amenazas avanzada, hasta que se recuerde que la protección contra amenazas avanzada (**ATP**) contiene y se basa en EOP.
 
 ****
 
 |Tipo de protección|Requisito de suscripción|
 |---|---|
-|Protección antimalware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (EOP)|
-|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
+|Registro de auditoría (para fines de informes)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|Protección antimalware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protección contra phishing|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protección contra suplantación de identidad avanzada|[ATP de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Protección contra correo no deseado|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purgado automático de cero horas (para correo electrónico)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Registro de auditoría (se usa con fines de informes)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|
+|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
+|Activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams| [ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)|
+|Protección contra suplantación de identidad avanzada|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
 
-Debe tener asignado un rol apropiado para configurar directivas en el [centro de seguridad & cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). En la tabla siguiente se ofrecen algunos ejemplos:
+Para configurar las directivas de ATP, debe tener asignado un rol apropiado en el [centro de seguridad & cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Eche un vistazo a la tabla siguiente para obtener las funciones que pueden realizar estas acciones.
 
 ****
 
@@ -65,6 +68,10 @@ Debe tener asignado un rol apropiado para configurar directivas en el [centro de
 |
 
 Para obtener más información, consulte [permisos en el &amp; centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Antes de empezar, active el registro de auditoría para los informes y la investigación
+
+Inicie el registro de auditoría anticipadamente. Necesitará la auditoría para estar **activada** para algunos de los pasos que se indican a continuación. El registro de auditoría está disponible en las suscripciones que incluyen [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Para poder ver los datos de los informes de protección contra amenazas, como el [Panel de seguridad](security-dashboard.md), los informes de [seguridad de correo electrónico](view-email-security-reports.md)y el [Explorador](threat-explorer.md), el registro de auditoría debe estar *activado*. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1: protección contra malware
 
@@ -84,9 +91,65 @@ La [protección contra malware](anti-malware-protection.md) está disponible en 
 
 Para obtener más información acerca de las opciones de directiva antimalware, vea [Configure anti-malware Policies](configure-anti-malware-policies.md).
 
-## <a name="part-2---protection-from-malicious-urls-and-files"></a>Parte 2: protección frente a direcciones URL y archivos malintencionados
+## <a name="part-2---anti-phishing-protection"></a>Parte 2: protección contra la suplantación de identidad
 
-La protección del tiempo de clic de los archivos y las direcciones URL malintencionadas está disponible en las suscripciones que incluyen [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) y se configuran mediante las directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) y [vínculos seguros ATP](atp-safe-links.md) .
+[Anti-phishing]
+
+[La protección contra suplantación de identidad (phishing)](anti-phishing-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). La protección contra suplantación de identidad avanzada está disponible en [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+
+El siguiente procedimiento describe cómo configurar una directiva contra la suplantación de identidad ATP. Los pasos son similares a la configuración de una directiva contra la suplantación de identidad (sin ATP).
+
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija la Directiva de **Administración de amenazas**  >  **Policy**  >  **ATP anti-phishing**.
+
+2. Haga clic en **directiva predeterminada**.
+
+3. En la sección **suplantación** , haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
+
+   - En la pestaña **Agregar usuarios a proteger** *, active la* protección. A continuación, agregue usuarios, como los miembros del Consejo de su organización, su CEO, director financiero y otros líderes senior. (Puede escribir una dirección de correo electrónico individual o hacer clic en para mostrar una lista).
+
+   - En la pestaña **Agregar dominios para proteger** , Active **incluir automáticamente los dominios que posea**. Si tiene dominios personalizados, agréguelos ahora.
+
+   - En la ficha **acciones** , seleccione **poner en cuarentena el mensaje** para las opciones **usuario** suplantado y **dominio suplantado** . Además, active las sugerencias de seguridad de suplantación.
+
+   - En la pestaña **inteligencia de buzones** de correo, asegúrese de que la inteligencia de buzones está activada y active la protección de representación basada en inteligencia de buzones de correo. En la lista **si el correo electrónico se envía por un usuario suplantado** , elija **poner en cuarentena el mensaje**.
+
+   - En la ficha **Agregar remitentes y dominios** de confianza, especifique los remitentes o dominios de confianza que desee agregar.
+
+   - **Guardar** en la pestaña **revisar la configuración** una vez que hayas revisado la configuración.
+
+4. En la sección **suplantación** , haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
+
+   - En la pestaña **configuración de filtro de suplantación de identidad** , asegúrese de que está activada la protección contra la suplantación de identidad.
+
+   - En la ficha **acciones** , elija **poner en cuarentena el mensaje**.
+
+   - **Guardar** en la pestaña **revisar la configuración** una vez que haya revisado los cambios. (Si no realizó ningún cambio, **Cancelar**).
+
+5. Cierre la página Configuración de directiva predeterminada.
+
+Para obtener más información sobre las opciones de la Directiva antiphishing, consulte [Configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
+
+## <a name="part-3---anti-spam-protection"></a>Parte 3: protección contra correo no deseado
+
+[La protección contra correo no deseado](anti-spam-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), **Threat management**elija  >  **Policy**  >  **anti-spam**de la Directiva de administración de amenazas.
+
+2. En la pestaña **personalizado** , active la configuración personalizada.
+
+3. Expanda **directiva predeterminada de filtro de correo no deseado**, haga clic en **Editar Directiva**y especifique la siguiente configuración:
+
+   - En la sección **correo electrónico no deseado y acciones en masa** , establezca el umbral en un valor de 5 o 6.
+
+   - En la sección **listas de permitidos** , revise (o edite) los remitentes y dominios permitidos.
+
+4. Haga clic en **Guardar**.
+
+Para obtener más información sobre las opciones de la Directiva contra correo no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
+
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments"></a>Parte 4: protección frente a direcciones URL y archivos malintencionados (vínculos seguros y datos adjuntos seguros)
+
+La protección de tiempo de clic de direcciones URL y archivos malintencionados está disponible en las suscripciones que incluyen [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). Se configura mediante las directivas de [datos adjuntos seguros](atp-safe-attachments.md) de ATP y [vínculos seguros de ATP](atp-safe-links.md) .
 
 ### <a name="atp-safe-attachments-policies"></a>Directivas de datos adjuntos seguros de ATP
 
@@ -104,11 +167,11 @@ Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), de
 
    - En la sección respuesta, elija **bloquear**.
 
-   - En la sección **redirigir datos adjuntos** , seleccione la opción **Habilitar redireccionamiento**y, a continuación, especifique la dirección de correo electrónico del administrador o operador de seguridad de la organización que va a revisar los archivos detectados.
+   - En la sección **redirigir datos adjuntos** , seleccione la opción **Habilitar redirección**. Especifique la dirección de correo electrónico del administrador o operador de seguridad de la organización, que va a revisar los archivos detectados.
 
-   - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione el dominio, elija **Agregar**y, a continuación, haga clic en **Aceptar**.
+   - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione su dominio, elija **Agregar**y, después, haga clic en **Aceptar**.
 
-5. Haga clic en **Guardar**.
+5. **Guardar**.
 
 6. (**Paso adicional recomendado**) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro **DisallowInfectedFileDownload** establecido en  *true* para su entorno de Microsoft 365. (Esto impide que los usuarios abran, muevan, copien o compartan archivos que se detectan como malintencionados.)
 
@@ -140,89 +203,90 @@ Para configurar [vínculos seguros ATP](atp-safe-links.md), revise y edite su di
 
      - **No permitir que los usuarios hagan clic en los vínculos seguros a la dirección URL original**
 
-   - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione el dominio, elija **Agregar**y, a continuación, haga clic en **Aceptar**.
+   - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione su dominio, elija **Agregar**y, después, haga clic en **Aceptar**.
 
-6. Haga clic en **Guardar**.
+6. **Guardar**.
 
 Para obtener más información, consulte [Configurar directivas de vínculos seguros de ATP de Office 365](set-up-atp-safe-links-policies.md).
 
-## <a name="part-3---anti-phishing-protection"></a>Parte 3: protección contra la suplantación de identidad
+## <a name="part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads"></a>Parte 5: activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams
 
-[Anti-phishing]
+Se crean cargas de trabajo como SharePoint, OneDrive y Microsoft Teams para la colaboración. El uso de ATP ayuda a bloquear y detectar archivos que se identifican como malintencionados en los sitios de grupo y las bibliotecas de documentos. Puede leer más sobre cómo funciona [aquí](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-worldwide).
 
-[La protección contra suplantación de identidad (phishing)](anti-phishing-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). La protección contra suplantación de identidad avanzada está disponible en [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> [!IMPORTANT]
+> **Antes de comenzar este procedimiento, asegúrese de que el registro de auditoría ya esté activado en su entorno de Microsoft 365**. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
-El siguiente procedimiento describe cómo configurar una directiva contra la suplantación de identidad ATP. Los pasos son similares a la configuración de una directiva contra la suplantación de identidad (sin ATP).
+1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa.
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija la Directiva de **Administración de amenazas**  >  **Policy**  >  **ATP anti-phishing**.
+2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, elija **Policy** \> **datos adjuntos seguros**de directiva.
 
-2. Haga clic en **directiva predeterminada**.
+   ![En el centro de seguridad & cumplimiento, elija Directiva de administración de amenazas. \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
-3. En la sección **suplantación** , haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
+3. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
-   - En la pestaña **Agregar usuarios a proteger** , desactive la protección. A continuación, agregue usuarios, como los miembros del Consejo de su organización, su CEO, director financiero y otros líderes senior. (Puede escribir una dirección de correo electrónico individual o hacer clic en para mostrar una lista).
+   ![Activar la protección contra amenazas avanzada para SharePoint Online, OneDrive para la empresa y Microsoft Teams](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
-   - En la pestaña **Agregar dominios para proteger** , Active **incluir automáticamente los dominios que posea**. Si tiene dominios personalizados, agréguelos también.
+4. **Guardar**.
 
-   - En la ficha **acciones** , seleccione **poner en cuarentena el mensaje** para las opciones **usuario** suplantado y **dominio suplantado** . Además, active las sugerencias de seguridad de suplantación.
+5. Revise (y, según corresponda, Edit) las directivas de [datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) de su organización y [las directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
 
-   - En la pestaña **inteligencia de buzones de correo** , asegúrese de que la inteligencia de buzones está activada. Además, active la protección de suplantación basada en la inteligencia de buzones. En la lista **si el correo electrónico se envía por un usuario suplantado** , elija **poner en cuarentena el mensaje**.
+6. Recomenda Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro _DisallowInfectedFileDownload_ establecido en *true*.
 
-   - En la ficha **Agregar remitentes y dominios** de confianza, especifique los remitentes o dominios de confianza que desee agregar.
+   - Si se establece el parámetro en *true* , se bloquearán todas las acciones (excepto eliminar) de los archivos detectados. Los usuarios no pueden abrir, mover, copiar o compartir los archivos detectados.
 
-   - En la pestaña **revisar la configuración** , una vez que haya revisado la configuración, haga clic en **Guardar**.
+   - Si el parámetro se establece en *false* , se bloquearán todas las acciones excepto eliminar y descargar. Los usuarios pueden elegir entre aceptar el riesgo y descargar un archivo detectado.
+   > [!TIP] Para obtener más información sobre el uso de PowerShell con Microsoft 365, consulte [Manage microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
-4. En la sección **suplantación** , haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
+7. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de recursos de Microsoft 365.
 
-   - En la pestaña **configuración de filtro de suplantación de identidad** , asegúrese de que está activada la protección contra la suplantación de identidad.
 
-   - En la ficha **acciones** , elija **poner en cuarentena el mensaje**.
+#### <a name="now-set-up-alerts-for-detected-files"></a>Ahora configurar alertas para los archivos detectados
 
-   - En la pestaña **revisar la configuración** , una vez que haya revisado la configuración, haga clic en **Guardar**. (Si no realizó ningún cambio, haga clic en **Cancelar**).
+Para recibir una notificación cuando se identificó un archivo en SharePoint Online, OneDrive para la empresa o Microsoft Teams como malintencionado, puede configurar una alerta.
 
-5. Cierre la página Configuración de directiva predeterminada.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija **alertas** \> **Administrar alertas**.
 
-Para obtener más información sobre las opciones de la Directiva antiphishing, consulte [Configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
+2. Elija **nueva Directiva de alerta**.
 
-## <a name="part-4---anti-spam-protection"></a>Parte 4: protección contra correo no deseado
+3. Especifique un nombre para la alerta. Por ejemplo, podría escribir archivos malintencionados en bibliotecas.
 
-[La protección contra correo no deseado](anti-spam-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+4. Escriba una descripción de la alerta. Por ejemplo, puede escribir notificar a los administradores cuando se detectan archivos malintencionados en SharePoint Online, OneDrive o Microsoft Teams.
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), **Threat management**elija  >  **Policy**  >  **anti-spam**de la Directiva de administración de amenazas.
+5. En la sección **enviar esta alerta cuando...** , establezca:
 
-2. En la ficha **personalizado** , active la **Configuración personalizada** .
+   a. En la lista **actividades** , seleccione **malware detectado en el archivo**.
 
-3. Expanda **directiva predeterminada de filtro de correo no deseado**, haga clic en **Editar Directiva**y especifique la siguiente configuración:
+   b. Deje el campo **usuarios** vacío.
 
-   - En la sección **correo electrónico no deseado y acciones en masa** , establezca el umbral en un valor de 5 o 6.
+6. En la sección **enviar esta alerta a...** , seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado.
 
-   - En la sección **listas de permitidos** , revise (y, si es necesario, Edit) los remitentes y dominios permitidos.
+7. **Guardar**.
 
-4. Haga clic en **Guardar**.
+Para obtener más información acerca de las alertas, consulte [crear alertas de actividad en el centro de seguridad & cumplimiento](../../compliance/create-activity-alerts.md).
 
-Para obtener más información sobre las opciones de la Directiva contra correo no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
+> [!NOTE]
+> Cuando haya terminado de configurar, use estos vínculos para iniciar las investigaciones de carga de trabajo:
+>- [Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+>- [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md) 
 
-## <a name="part-5---additional-settings-to-configure"></a>Parte 5: configuración adicional para configurar
+## <a name="part-6---additional-settings-to-configure"></a>Parte 6: configuración adicional para configurar
 
-Además de configurar la protección contra malware, archivos y direcciones URL malintencionadas, suplantación de identidad (phishing) y correo no deseado, le recomendamos que configure las opciones de configuración de registro de auditoría y de purga automática de cero horas.
+Además de configurar la protección contra malware, archivos y direcciones URL malintencionadas, suplantación de identidad (phishing) y correo no deseado, le recomendamos que configure la purga automática de cero horas.
 
-### <a name="zero-hour-auto-purge-for-email"></a>Purgado automático de cero horas para correo electrónico
+### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Purgado automático de cero horas para correo electrónico en EOP
 
 [La purga automática de cero horas](zero-hour-auto-purge.md) (ZAP) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Esta protección está activada de forma predeterminada; sin embargo, deben cumplirse las siguientes condiciones para que la protección esté en vigor:
 
 - Las acciones de correo no deseado se establecen para **mover el mensaje a la carpeta correo no deseado** en [las directivas contra correo no deseado](anti-spam-protection.md).
 
-- Los usuarios han mantenido su [configuración](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)predeterminada de correo no deseado y no han desactivado la protección contra correo electrónico no deseado.
+- Los usuarios han mantenido su [configuración predeterminada de correo no deseado](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)y no han desactivado la protección contra correo electrónico no deseado.
 
 Para obtener más información, consulte [depuración automática de cero horas-protección contra correo no deseado y malware](zero-hour-auto-purge.md).
 
-### <a name="audit-logging-for-reporting-and-investigation"></a>Registro de auditoría para informes e investigación
+## <a name="post-setup-tasks-and-next-steps"></a>Tareas posteriores a la instalación y pasos siguientes
 
-El registro de auditoría está disponible en las suscripciones que incluyen [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Para poder ver los datos de los informes de protección contra amenazas, como el [Panel de seguridad](security-dashboard.md), los informes de [seguridad de correo electrónico](view-email-security-reports.md)y el [Explorador](threat-explorer.md), el registro de auditoría debe estar activado para su organización. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
-
-## <a name="post-setup-tasks"></a>Tareas posteriores a la instalación
-
-Una vez que haya configurado las características de protección contra amenazas, asegúrese de supervisar cómo funcionan estas características, revise y revise las directivas según sea necesario, y vea las nuevas características y actualizaciones de servicio.
+Después de configurar las características de protección contra amenazas, asegúrese de supervisar cómo funcionan estas características. Revise y revise las directivas para que puedan hacer lo que necesite. Además, vea las nuevas características y actualizaciones de servicio que pueden agregar valor.
 
 ****
 
@@ -231,4 +295,4 @@ Una vez que haya configurado las características de protección contra amenazas
 |Ver cómo funcionan las características de protección contra amenazas en su organización al ver los informes|[Panel de seguridad](security-dashboard.md)<br/>[Informes de seguridad de correo electrónico](view-email-security-reports.md)<br/>[Informes para Office 365 ATP](view-reports-for-atp.md)<br/>[Explorador de amenazas](threat-explorer.md)|
 |Revisar y revisar periódicamente las directivas de protección contra amenazas según sea necesario|[Puntuación de seguridad](../mtp/microsoft-secure-score.md)<br/>[Informes inteligentes y perspectivas](reports-and-insights-in-security-and-compliance.md)<br/>[Características de respuesta y investigación de amenazas de Microsoft 365](keep-users-safe-with-office-365-ti.md)|
 |Vea las nuevas características y actualizaciones de servicio|[Opciones de versión estándar y de destino](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centro de mensajes](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|
+|Obtenga información sobre las configuraciones de seguridad estándar y estricta recomendadas para EOP y ATP | [Configuración recomendada para EOP y la seguridad de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |
