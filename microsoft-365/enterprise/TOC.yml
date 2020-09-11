@@ -582,7 +582,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Administrar grupos de Microsoft 365
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: Administrar SharePoint Online
+    - name: Administrar SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items:
         - name: Crear sitios de SharePoint Online y agregar usuarios
@@ -593,7 +593,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Administrar Exchange Online
       href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
-    - name: Usar PowerShell para la migración de correo electrónico a Microsoft 365
+    - name: Use PowerShell para migrar el correo electrónico a Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items:
         - name: Usar PowerShell para realizar una migración total a Microsoft 365
