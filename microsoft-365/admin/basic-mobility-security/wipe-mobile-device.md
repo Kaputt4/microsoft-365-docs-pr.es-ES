@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Use la movilidad y la seguridad básicas integradas para quitar información de dispositivos inscritos.
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47337081"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429955"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrar un dispositivo móvil en la movilidad y la seguridad básicas
 
@@ -39,7 +39,7 @@ Los dispositivos móviles pueden almacenar información de la organización conf
 
 - **Cuando se borra un dispositivo (restablecimiento de fábrica o eliminación de datos de la empresa)**, el dispositivo se quita de la lista de dispositivos administrados.
     
-- **Restablecer automáticamente un dispositivo**: puede configurar una directiva básica de movilidad y seguridad que Factory restablece automáticamente un dispositivo después de que el usuario no intente escribir la contraseña del dispositivo un número específico de veces. Para ello, siga los pasos descritos en [Create Device Security policies in Basic Mobility and Security](create-device-security-policies-in-basic-mmobility-and-security.md).
+- **Restablecer automáticamente un dispositivo**: puede configurar una directiva básica de movilidad y seguridad que Factory restablece automáticamente un dispositivo después de que el usuario no intente escribir la contraseña del dispositivo un número específico de veces. Para ello, siga los pasos descritos en [Create Device Security policies in Basic Mobility and Security](create-device-security-policies.md).
     
 - **Si quiere conocer la experiencia del usuario** al borrar el dispositivo, consulte  [¿cuál es el impacto del dispositivo y el usuario?](#whats-the-user-and-device-impact)   
 
@@ -91,4 +91,4 @@ El barrido se envía inmediatamente al dispositivo móvil y el dispositivo se ma
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Configurar la Seguridad de Movilidad Básica](set-up-basic-mobility-and-security.md)
+[Configurar la Seguridad de Movilidad Básica](set-up.md)

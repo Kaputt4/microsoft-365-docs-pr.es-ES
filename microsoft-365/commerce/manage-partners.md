@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,13 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft para comprar y administrar productos y servicios para su organización o centro educativo.
-keywords: Partner, proveedor de soluciones
-ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6cce3640a321d1eab31d527369a303cfde646718
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402599"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430027"
 ---
 # <a name="manage-partner-relationships"></a>Administración de relaciones de socios
 
@@ -34,9 +33,13 @@ ms.locfileid: "44402599"
 
 Puede trabajar con proveedores de soluciones certificados por Microsoft para comprar y administrar productos y servicios para su organización o centro educativo. Hay algunos pasos relacionados con la configuración de las cosas.
 
-- Los administradores buscan y se pone en contacto con un partner mediante el formulario en <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
-- Los partners envían una solicitud de correo electrónico a los clientes para establecer una relación de socio.
-- Los clientes aceptan la invitación en el centro de administración de Microsoft 365 y empiezan a trabajar con el partner.
+1. Los administradores buscan y se pone en contacto con un partner mediante el formulario en <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
+2. Los partners envían una solicitud de correo electrónico a los clientes para establecer una relación de socio.
+3. Los clientes aceptan la invitación en el centro de administración de Microsoft 365 y empiezan a trabajar con el partner.
+
+## <a name="before-you-begin"></a>Antes de empezar
+
+Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un asociado de mi organización o centro educativo?
 
@@ -50,7 +53,6 @@ Hay varias formas en las que un partner puede trabajar con usted. En función de
 | Partner | Debe asignar a su compañero una cuenta de usuario en su espacio empresarial y trabajar con otros servicios de Microsoft en su nombre. |
 | Asesor | Los socios pueden restablecer las contraseñas y controlar las incidencias de soporte técnico. |
 | Socio del acuerdo de servicios de & de productos de Microsoft (MPSA) | Si ha trabajado con varios socios mediante el programa MPSA, puede permitirles ver las compras realizadas entre sí. |
-| Socio de PC OEM | Los socios pueden cargar identificadores de dispositivo para equipos que esté [administrando con el piloto automático](https://docs.microsoft.com/microsoft-store/add-profile-to-devices). |
 | Socio de línea de negocio (LOB) | Los socios pueden desarrollar, enviar y administrar aplicaciones de LOB específicas para su organización o centro educativo. |
 
 ## <a name="find-a-partner"></a>Buscar un partner
@@ -82,24 +84,16 @@ Si ya tiene un partner pero todavía no ha firmado un acuerdo de cliente de Micr
 4. Seleccione **Aceptar**.
 5. Se muestra la lista de socios con los que está trabajando. Seleccione cualquier socio para ver los detalles.
 
-## <a name="remove-partner-admin-privileges"></a>Quitar privilegios de administrador del asociado
+## <a name="remove-partner-admin-roles"></a>Quitar roles de administrador de socios
 
-Según la solicitud que haya realizado el asociado, parte de aceptar la invitación incluye aceptar los privilegios de administrador delegado para las mismas. Para obtener más información, consulte [delegar privilegios de administrador en Azure ad](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+En función de la solicitud que haya realizado el asociado, cuando acepte la invitación, se compromete a darles roles de administrador globales y de asistencia técnica. Al conceder estos roles de administrador a un partner, les concede automáticamente privilegios de administrador delegados en Azure AD. Para obtener más información, consulte [delegar privilegios de administrador en Azure ad](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
-Si no desea delegar los privilegios de administrador en el Partner, cancele la invitación en lugar de aceptarla.
+Si no desea conceder los roles de administrador al asociado, cancele la invitación en lugar de aceptarla.
 
-Si delega los privilegios de administrador a un partner, puede quitarlos en cualquier momento. Al quitar los privilegios de administrador no se quita la relación de socio. Pueden seguir trabajando con usted, por ejemplo, como revendedor.
+Puede quitar roles de administrador de un partner en cualquier momento. Si se quitan los roles de administrador, no se quita la relación de socio. Pueden seguir trabajando con usted en una capacidad distinta, como un revendedor. Si decide que ya no desea trabajar con un partner, póngase en contacto con su partner para finalizar la relación.
 
-1. En el centro de administración, vaya a **Billing**la  >  Página cuentas de<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">facturación</a> de facturación.
-2. En la página **cuentas de facturación** , seleccione la pestaña relaciones de **asociados** .
+1. En el centro de administración, vaya a la página relaciones con el socio de **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner relationships</a> .
+2. En la página **relaciones de socios** , seleccione la fila que contiene el nombre del asociado que desea quitar.
 3. Seleccione la fila que contiene el nombre del socio.
-4. En la página asociado, seleccione **quitar roles de administrador**.
-
-## <a name="delete-a-partner-relationship"></a>Eliminar una relación de socio
-
-Si decide que ya no desea trabajar con un partner, puede finalizar la relación. Sin embargo, solo puede eliminar relaciones en las que el asociado sea un administrador delegado o un asesor. Para todos los demás tipos de asociados, póngase en contacto con su partner para finalizar la relación.
-
-1. En el centro de administración, vaya a **Billing**la  >  Página cuentas de<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">facturación</a> de facturación.
-2. En la página **cuentas de facturación** , seleccione la pestaña relaciones de **asociados** .
-3. Seleccione la fila que contiene el nombre del socio.
-4. En la página de detalles del asociado, seleccione **eliminar asociado**.
+4. En la página asociado, seleccione **quitar roles**.
+5. En el cuadro de diálogo **quitar roles** , seleccione **sí**.

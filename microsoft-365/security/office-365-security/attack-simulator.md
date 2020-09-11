@@ -18,16 +18,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar simulador de ataques para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseña en sus organizaciones de Microsoft 365 E5 o ATP planeada 2.
-ms.openlocfilehash: 017376d8002811398fe3ce2d94f7c207cd718a78
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9fc28cdecc07f5325918e3d5176e52d1051a626c
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825838"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426998"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulador de ataque en ATP
 
 Si su organización tiene el plan 2 de la protección contra amenazas avanzada (ATP) de Office 365, que incluye [capacidades de investigación y respuesta de amenazas](office-365-ti.md), puede usar simulador de ataques en el centro de seguridad & cumplimiento para ejecutar escenarios de ataque realistas en la organización. Estos ataques simulados pueden ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
+
+> [!NOTE]
+> La simulación de ataques y los datos relacionados con la formación se almacenan con otros datos de clientes para los servicios 365 de Microsoft. Para obtener más información, vea [ubicaciones de datos de Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 

@@ -16,21 +16,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: En este artículo, aprenderá a administrar las cuentas de usuario, las licencias y los grupos de Microsoft 365 con PowerShell.
-ms.openlocfilehash: a262cbb62cd457e3a22550af2f773551cf67bb43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Obtenga información sobre cómo administrar las cuentas de usuario, las licencias y los grupos de Microsoft 365 con PowerShell.
+ms.openlocfilehash: 0c6ca6a4165b616097405a9de178c254aa489a3c
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696596"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429991"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell
 
 *Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-Una de las tareas principales de cualquier administrador de Microsoft 365 es la administración de cuentas de usuario, licencias y grupos. Aunque puede realizar la mayoría de los aspectos de estas tareas en el centro de administración de 365 de Microsoft, otras tareas son mucho más rápidas y fáciles con PowerShell. 
+Los administradores de Microsoft 365 necesitan administrar cuentas de usuario, licencias y grupos. Aunque puede realizar la mayoría de estas tareas en el centro de administración de Microsoft 365, algunas son más fáciles en PowerShell.
 
-Para obtener más información, consulte estos temas.
+Para obtener más información, vea los artículos siguientes.
 
 ## <a name="user-accounts"></a>Cuentas de usuario
 
@@ -54,4 +54,3 @@ Para obtener más información, consulte estos temas.
 ## <a name="groups"></a>Grupos
 - [Mantener la pertenencia a grupos](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Administrar grupos de Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
