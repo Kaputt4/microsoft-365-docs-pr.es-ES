@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399217"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427029"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
@@ -163,7 +163,7 @@ Para importar nuevas etiquetas de retención y modificar las existentes:
    |CitationUrl|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Provision/citation**.|
    |CitationJurisdiction|Cadena|Esta propiedad especifica la jurisdicción o agencia que se muestra en el descriptor del plan de archivos **Provision/citation**. Por ejemplo, "Comisión de Bolsa y Valores​​ de Estados Unidos (SEC)".|
    |Regulatory|Cadena|Se deja en blanco. Esta propiedad no se usa en este momento.|
-   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) para ver las reglas de retención disponibles. Tenga en cuenta que, como los valores de EventType son únicos para una organización, si exporta etiquetas desde una organización, no podrá usar los valores de la propiedad EventType de esa organización para importar las etiquetas en otra.|
+   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) para ver las reglas de retención disponibles. Tenga en cuenta que, como los valores de EventType son únicos para una organización, si exporta etiquetas desde una organización, no podrá usar los valores de la propiedad EventType de esa organización para importar las etiquetas en otra.|
    |||
 
    Este es un ejemplo de la plantilla que contiene información sobre las etiquetas de retención.

@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar PowerShell para crear y publicar etiquetas de retención desde la línea de comandos, de manera independiente del centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126371"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426987"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención con PowerShell
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Paso 4: Ejecute el script de PowerShell
 
-En primer lugar, [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+En primer lugar, [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 A continuación, ejecute el script que crea y publica las etiquetas de retención:
   

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: bbed892481571706d8d43c3fa4d5aff7e9fb4c92
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357792"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427019"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -201,13 +201,13 @@ Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y la
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usar PowerShell para aplicar una etiqueta de confidencialidad a varios sitios
 
-Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con el parámetro *SensitivityLabel* desde el [Shell de SharePoint Online Management](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actual para aplicar una etiqueta de confidencialidad a muchos sitios. Los sitios pueden ser cualquiera de los pertenecientes a la colección de sitios de SharePoint o un sitio de OneDrive.
+Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) con el parámetro *SensitivityLabel* desde el [Shell de SharePoint Online Management](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actual para aplicar una etiqueta de confidencialidad a muchos sitios. Los sitios pueden ser cualquiera de los pertenecientes a la colección de sitios de SharePoint o un sitio de OneDrive.
 
 Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de administración de SharePoint Online.
 
 1. Abra una sesión de PowerShell con la opción **Ejecutar como administrador**.
 
-2. Si no conoce el GUID de la etiqueta, vaya a: [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y obtenga la lista de etiquetas de confidencialidad y sus GUID.
+2. Si no conoce el GUID de la etiqueta, vaya a: [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y obtenga la lista de etiquetas de confidencialidad y sus GUID.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -317,7 +317,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 
    Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global:
 
-2. Consiga la lista de etiquetas de sensibilidad y sus GUIDs usando el cmdlet[Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps):
+2. Consiga la lista de etiquetas de sensibilidad y sus GUIDs usando el cmdlet[Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label):
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -325,7 +325,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 
 3. Tome nota de los GUID para las etiquetas de confidencialidad que quiere aplicar a los grupos de Microsoft 365.
 
-4. Ahora [conéctese a PowerShell en línea de Exchange](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) en una ventana independiente de Windows PowerShell.
+4. Ahora [conéctese a PowerShell en línea de Exchange](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) en una ventana independiente de Windows PowerShell.
 
 5. Use el comando siguiente como ejemplo para obtener la lista de grupos que actualmente tienen la clasificación de "general":
 

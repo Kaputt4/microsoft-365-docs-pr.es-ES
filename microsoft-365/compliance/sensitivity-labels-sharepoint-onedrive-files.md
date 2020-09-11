@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: d049cdd61d2155267f4e55c612885929e27adaaa
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 650673bd85ab8a7597c9dcd644872fab2b045e72
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845726"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426977"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -130,7 +130,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Usar PowerShell para habilitar la compatibilidad con las etiquetas de confidencialidad
 
-Como alternativa al uso del centro de cumplimiento, puede habilitar la compatibilidad con las etiquetas de confidencialidad mediante el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) de PowerShell de SharePoint Online.
+Como alternativa al uso del centro de cumplimiento, puede habilitar la compatibilidad con las etiquetas de confidencialidad mediante el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) de PowerShell de SharePoint Online.
 
 Si tiene Microsoft 365 multigeográfico, debe usar PowerShell para habilitar esta compatibilidad para todas las ubicaciones geográficas.
 
@@ -156,11 +156,11 @@ Antes de ejecutar el comando de PowerShell para habilitar las etiquetas de confi
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>Ejecutar el comando de PowerShell para habilitar la compatibilidad con las etiquetas de confidencialidad
 
-Para habilitar las nuevas funciones, use el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con el parámetro *EnableAIPIntegration* :
+Para habilitar las nuevas funciones, use el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) con el parámetro *EnableAIPIntegration* :
 
 1. Con una cuenta profesional o educativa que tenga privilegios de administrador global o de administrador de SharePoint en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-    Nota: Si tiene Microsoft 365 multigeográfico, use el parámetro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)y especifique la dirección URL del sitio del centro de administración de SharePoint Online para una de las ubicaciones geográficas.
+    Nota: Si tiene Microsoft 365 multigeográfico, use el parámetro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del centro de administración de SharePoint Online para una de las ubicaciones geográficas.
 
 2. Ejecute el siguiente comando y presione **y** para confirmar:
 
@@ -210,11 +210,11 @@ Por ejemplo, para buscar todos los documentos que se han etiquetado como "confid
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
-Para obtener los GUID de las etiquetas de confidencialidad, use el cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
+Para obtener los GUID de las etiquetas de confidencialidad, use el cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) :
 
 1. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-    Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global.
+    Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global:
 
 2. A continuación, ejecute el siguiente comando:
 
@@ -228,7 +228,7 @@ Para obtener más información sobre el uso de propiedades administradas, vea [a
 
 Si deshabilita estas nuevas capacidades, los archivos que cargó después de habilitar las etiquetas de confidencialidad para SharePoint y OneDrive seguirán protegidos por la etiqueta porque la configuración de la etiqueta se sigue aplicando. Al aplicar las etiquetas de confidencialidad a los archivos nuevos después de deshabilitar estas nuevas funciones, la búsqueda de texto completo, la exhibición de documentos electrónicos y la coautoría dejarán de funcionar.
 
-Para deshabilitar estas nuevas funciones, debe usar PowerShell. Mediante el shell de administración de SharePoint Online y el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) , especifique el mismo parámetro *EnableAIPIntegration* tal y como se describe en la sección [usar PowerShell para habilitar la compatibilidad con las etiquetas de confidencialidad](#use-powershell-to-enable-support-for-sensitivity-labels) . Pero esta vez, establezca el valor del parámetro en false y presione **y** para confirmar:
+Para deshabilitar estas nuevas funciones, debe usar PowerShell. Mediante el shell de administración de SharePoint Online y el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) , especifique el mismo parámetro *EnableAIPIntegration* tal y como se describe en la sección [usar PowerShell para habilitar la compatibilidad con las etiquetas de confidencialidad](#use-powershell-to-enable-support-for-sensitivity-labels) . Pero esta vez, establezca el valor del parámetro en false y presione **y** para confirmar:
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false
