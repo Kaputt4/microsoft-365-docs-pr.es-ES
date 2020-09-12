@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Información general sobre la característica de exhibición de documentos electrónicos y otras características de búsqueda de Microsoft 365 para auditar el uso y la transparencia.
-ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d18d3d4776c434788ee8fef7fb8be9edf339ff04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331864"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547775"
 ---
-# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Introducción a las características de exhibición de documentos electrónicos y búsqueda 365 de Microsoft 
+# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Introducción a las características de exhibición de documentos electrónicos y búsqueda 365 de Microsoft
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -67,6 +67,6 @@ Para obtener los pasos detallados para buscar registros de auditoría de Microso
 
 ## <a name="search-unified-audit-log"></a>Buscar registro de auditoría unificado
 
-Use la característica de búsqueda de registros de auditoría para buscar en el registro de auditoría unificado. Microsoft 365 también ofrece la posibilidad de realizar búsquedas en este registro mediante PowerShell remoto. El [cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) en Exchange Online PowerShell se usa para buscar en el registro de auditoría unificado de eventos relacionados con las operaciones de usuario de Exchange Online, SharePoint Online, OneDrive para la empresa y Azure ad. 
+Use la característica de búsqueda de registros de auditoría para buscar en el registro de auditoría unificado. Microsoft 365 también ofrece la posibilidad de realizar búsquedas en este registro mediante PowerShell remoto. El [cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell se usa para buscar en el registro de auditoría unificado de eventos relacionados con las operaciones de usuario de Exchange Online, SharePoint Online, OneDrive para la empresa y Azure ad.
 
 Puede buscar todos los eventos de un intervalo de fechas especificado o puede filtrar los resultados en función de criterios específicos, como una acción específica, el usuario que realizó la acción o el objeto de destino. Los administradores pueden usar hasta tres simultáneamente sesiones de PowerShell de Exchange Online para dividir grandes búsquedas de intervalo de fechas.

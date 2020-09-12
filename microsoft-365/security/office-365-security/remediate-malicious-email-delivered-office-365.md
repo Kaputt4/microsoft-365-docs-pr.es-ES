@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Corrección de amenazas
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903888"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547245"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -39,7 +39,6 @@ Para realizar acciones como ver encabezados de mensajes o descargar contenido de
 |Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas |Administrador global <br> Administrador de seguridad <br> Lector de seguridad|No|
 |Usar el explorador de amenazas (y la detección en tiempo real) para ver los encabezados de los mensajes de correo electrónico y obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena|Administrador global <br> Administrador de seguridad <br>Lector de seguridad|No|
 |Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones|Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview|Sí|
-
 
 > [!NOTE]
 > La vista previa es un *rol*, no un *grupo de roles*. El rol de vista previa debe agregarse a un grupo de roles existente para Office 365. El *rol de administrador global* se asigna en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Los roles de administrador de seguridad y lector de seguridad se asignan en los [centros de seguridad y cumplimiento](https://protection.office.com). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).

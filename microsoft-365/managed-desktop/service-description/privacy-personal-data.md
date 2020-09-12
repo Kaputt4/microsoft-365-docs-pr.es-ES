@@ -2,7 +2,7 @@
 title: Privacidad y datos personales
 description: Detalles los datos recopilados, almacenados y usados por el servicio
 keywords: RGPD, retención, eliminación, almacenamiento, retención, procesamiento, seguridad, auditoría
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:
@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e1b0c856a3bfb886521ee2c1a2115e4c29504862
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47363268"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547943"
 ---
 # <a name="privacy-and-personal-data"></a>Privacidad y datos personales
 
@@ -87,11 +87,11 @@ Para obtener más información sobre las regiones que Azure usa para el almacena
 
 Los datos de Intune se pueden almacenar en varias regiones diferentes, como Europa del norte (Irlanda) y Europa occidental (Países Bajos). El administrador de ti crea una cuenta de inquilino y elige el país en el que se almacenarán los datos cuando se inscriban inicialmente en los servicios de Intune. Para obtener una lista de las ubicaciones de centros de datos usadas por Intune, consulte [Microsoft Intune, donde es mis datos de clientes](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento de datos y el uso de Intune, consulte [recopilación de datos en Intune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
+### <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
 
 Los datos de la protección contra amenazas avanzada (ATP) de Microsoft defender se pueden almacenar en algunas regiones diferentes. Por este motivo, Microsoft defender ATP opera en los centros de datos de Microsoft Azure de la Unión Europea, el Reino Unido y en Estados Unidos, como se indica en [Microsoft defender ATP, ubicaciones de almacenamiento de datos](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento de datos y el uso de ATP de Microsoft defender, vea [¿qué datos recopila ATP Microsoft defender ATP?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Como se indica en la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement), "los datos personales recopilados por Microsoft se pueden almacenar y procesar en su región, en Estados Unidos y en cualquier otro país donde Microsoft o sus filiales, subsidiarias o proveedores de servicios operen con instalaciones. [...] Normalmente, la ubicación de almacenamiento principal está en la región del cliente o en Estados Unidos, a menudo con una copia de seguridad en un centro de recursos de otra región. Las ubicaciones de almacenamiento se eligen para funcionar de forma eficaz, mejorar el rendimiento y crear redundancias con el fin de proteger los datos si se produce una interrupción u otro problema. Se deben seguir los pasos para garantizar que los datos recopilados en esta declaración de privacidad se procesan de acuerdo con las disposiciones de esta declaración y los requisitos de la ley vigente dondequiera que se encuentren los datos. "
 
@@ -115,7 +115,7 @@ El escritorio administrado de Microsoft procesa datos personales con sistemas ce
 
 El escritorio administrado de Microsoft no usa ningún dato personal recopilado como parte del suministro del servicio para la generación de perfiles, publicidad o marketing.
 
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado del RGPD y CCPA
+## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de los temas de datos del RGPD y CCPA
 
 El Reglamento de [protección general de datos (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea concede derechos a personas (conocidas en el Reglamento como interesados) para administrar los datos personales recopilados por un empresario u otro tipo de agencia u organización (conocido como el controlador de datos o simplemente el controlador). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina Solicitud del interesado o DSR.
 

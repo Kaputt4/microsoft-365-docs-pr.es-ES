@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Encuentre los temas de referencia de los cmdlets de PowerShell de Microsoft 365 para Azure AD, Exchange Online, SharePoint Online, Skype empresarial online y el cumplimiento de & de seguridad.
-ms.openlocfilehash: 4905c20216e6df02399fe372ec31fe3bedfde6c4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8f2aa4b123e3b7e3f92aabee7f9e8adeeb9c154f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694042"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547123"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Referencias de cmdlets para los servicios de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Los temas de referencia de cmdlet para los distintos servicios de Microsoft 365 proporcionan información detallada e instrucciones sobre cómo usar cada cmdlet. Además, cada servicio de Microsoft 365 compatible con PowerShell requiere distintas instrucciones de conexión.
   
@@ -42,7 +42,7 @@ Para obtener instrucciones de conexión de PowerShell de Microsoft 365, vea [con
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets de Exchange Online PowerShell
 
-Los temas de referencia de los cmdlets de Exchange Online se encuentran en la sección **referencia** de la [documentación de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Los temas de referencia de los cmdlets de Exchange Online se encuentran en la sección **referencia** de la [documentación de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
 Para obtener instrucciones de conexión para Exchange Online PowerShell, haga clic en [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
@@ -61,17 +61,14 @@ Para los temas de referencia de los cmdlets de Skype empresarial online, haga cl
   
 Para obtener instrucciones de conexión para PowerShell de Skype empresarial online, haga clic en [administrar Skype empresarial online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Cmdlets de PowerShell del Centro de seguridad y cumplimiento
+## <a name="security--compliance-center-powershell-cmdlets"></a>Cmdlets de PowerShell del centro de cumplimiento de & de seguridad
 
-&amp;Los temas de referencia de los cmdlets de Microsoft 365 Security Compliance Center se encuentran en la sección **referencia** de la [documentación de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Los temas de referencia de los cmdlets de Microsoft 365 Security & del centro de cumplimiento se encuentran en la sección de **referencia** de la [documentación de PowerShell de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/scc-powershell).
   
-Para obtener instrucciones de conexión para &amp; PowerShell del centro de seguridad y cumplimiento, haga clic en [conectar al centro de seguridad y &amp; cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+Para obtener instrucciones de conexión para Security & PowerShell del centro de cumplimiento, haga clic en [conectar con el PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-
-  
 ## <a name="see-also"></a>Consulte también
 
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

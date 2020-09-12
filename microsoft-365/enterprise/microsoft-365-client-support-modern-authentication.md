@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: En este artículo, obtenga información sobre las plataformas, los clientes y los módulos de PowerShell compatibles con la autenticación moderna para Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e771ce5630053ffec2bf325e88b75f9a0d6baaa
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d38b5c11a77af8691aaa5e14d288918b39c0d847
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332069"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546307"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Soporte técnico de Microsoft 365 Client App-autenticación moderna
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 La autenticación moderna habilita el inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) para aplicaciones cliente de Office en distintas plataformas. Esto habilita las características de inicio de sesión, como la autenticación multifactor (MFA), la tarjeta inteligente y la autenticación basada en certificados.
 
@@ -60,12 +60,12 @@ Las versiones más recientes de los siguientes clientes admiten la autenticació
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icono de Azure](../media/o365-azure-64x64.png) <br> [PowerShell de Azure AD <br>](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icono de Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell de Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icono de SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell de SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Icono de Azure](../media/o365-azure-64x64.png) <br> [PowerShell de Azure AD <br>](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icono de Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell de Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![Icono de SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell de SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> la compatibilidad con pizarra y Skype empresarial en Web App disponible próximamente. <br>
 > <sup>2</sup> pronto estará disponible la compatibilidad con pizarra en Android.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

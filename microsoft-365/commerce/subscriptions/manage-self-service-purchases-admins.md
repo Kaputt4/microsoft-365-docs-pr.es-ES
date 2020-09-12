@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430003"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546679"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
@@ -38,13 +38,13 @@ También puede controlar si los usuarios de la organización pueden realizar com
 ## <a name="view-self-service-subscriptions"></a>Ver suscripciones de autoservicio
 
 1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
-2. Junto a **refinar resultados**, en la lista desplegable **tipo de cuenta** , elija **Self-Service**.
+2. En la pestaña **productos** , seleccione el icono filtrar y, a continuación, seleccione **autoservicio**.
 3. Para ver más detalles sobre una suscripción, seleccione una de la lista.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Ver quién tiene licencias para una suscripción de compra de autoservicio
 
 1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
-2. Elija el icono filtrar y, a continuación, elija **autoservicio**.
+2. Seleccione el icono filtrar y, a continuación, elija **autoservicio**.
 3. Seleccione un producto para ver las licencias asignadas a los usuarios.
     > [!NOTE]
     > Si hay varias compras para un producto, dicho producto solo aparece una vez y la columna **cantidad disponible** muestra el total de todas las suscripciones que ha comprado para ese producto.
@@ -67,13 +67,12 @@ Para obtener más información, vea [usar AllowSelfServicePurchase para el módu
 
 Puede asignar licencias existentes o comprar suscripciones adicionales a través de acuerdos existentes para usuarios asignados a las compras de autoservicio. Después de asignar estas licencias adquiridas de forma centralizada, puede solicitar que los compradores cancelen sus suscripciones existentes.
 
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a> con su cuenta de administrador global o de administrador de facturación.
-2. Vaya a la **Billing**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de facturación.
-3. Busque y seleccione el producto que desea comprar y, después, elija **comprar**.
-4. Complete los pasos restantes para completar la compra.
-5. Siga los pasos [que se indican en View of licenses for a Self-Service adquirid subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) para exportar una lista de usuarios a la que hacer referencia en el paso 6.
-6. Asigne licencias a todos los usuarios que tengan una licencia en la otra suscripción. Para obtener los pasos completos, consulte [asignar licencias a usuarios](../../admin/manage/assign-licenses-to-users.md).
-7. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que la cancele.
+1. En el centro de administración, vaya **Billing** a la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de facturación.
+2. Busque y seleccione el producto que desea comprar y, después, elija **comprar**.
+3. Complete los pasos restantes para completar la compra.
+4. Siga los pasos [que se indican en ver quién tiene licencias para una suscripción de autoservicio](#view-who-has-licenses-for-a-self-service-purchase-subscription) para exportar una lista de usuarios a la que hacer referencia en el siguiente paso.
+5. Asigne licencias a todos los usuarios que tengan una licencia en la otra suscripción. Para obtener los pasos completos, consulte [asignar licencias a usuarios](../../admin/manage/assign-licenses-to-users.md).
+6. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que la [cancele](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Asumir una suscripción de compra de autoservicio
 

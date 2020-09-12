@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo contiene un breve resumen sobre las migraciones de buzones de correo de Microsoft 365 y una lista de los cmdlets que se usan para las migraciones.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 86681cbca6f0899268ce11e233e8781619cb18e3
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 63080643e4994d6b16e77298907725a827997cef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332321"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546803"
 ---
 # <a name="microsoft-365-mailbox-migrations"></a>Migraciones de buzones de Microsoft 365
 
@@ -29,14 +29,14 @@ Con una implementación híbrida basada en Exchange, los clientes pueden elegir 
 
 Los clientes pueden revisar las estadísticas y otra información sobre las migraciones de buzones de correo con los siguientes cmdlets:
 
-- [Get-MoveRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequestStatistics?view=exchange-ps): proporciona estadísticas predeterminadas para un buzón de usuario, que incluye el estado, el tamaño del buzón, el tamaño del buzón de archivo y el porcentaje completado.
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox?view=exchange-ps
+- [Get-MoveRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-moverequeststatistics): proporciona estadísticas predeterminadas para un buzón de usuario, que incluye el estado, el tamaño del buzón, el tamaño del buzón de archivo y el porcentaje completado.
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox
 ): proporciona una lista resumida de los objetos de buzón y los atributos de la organización.
-- [Get-recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient?view=exchange-ps): proporciona una lista de objetos existentes habilitados para correo, como buzones de correo, usuarios de correo, contactos y grupos de distribución.
-- [Get-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequest?view=exchange-ps): proporciona un estado detallado de una migración de buzones de correo en curso.
-- [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationUser?view=exchange-ps): proporciona información sobre los usuarios de migración y movimiento de buzones.
-- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch?view=exchange-ps): proporciona información sobre el estado del lote de migración actual.
-- [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationUserStatistics?view=exchange-ps): proporciona información detallada sobre el estado de la migración de un usuario específico.
-- [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxStatistics?view=exchange-ps): proporciona información acerca de los buzones de correo, como el tamaño, el número de mensajes y la hora del último acceso.
+- [Get-recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient): proporciona una lista de objetos existentes habilitados para correo, como buzones de correo, usuarios de correo, contactos y grupos de distribución.
+- [Get-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/get-moverequest): proporciona un estado detallado de una migración de buzones de correo en curso.
+- [Get-MigrationUser](https://docs.microsoft.com/powershell/module/exchange/get-migrationuser): proporciona información sobre los usuarios de migración y movimiento de buzones.
+- [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch): proporciona información sobre el estado del lote de migración actual.
+- [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics): proporciona información detallada sobre el estado de la migración de un usuario específico.
+- [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics): proporciona información acerca de los buzones de correo, como el tamaño, el número de mensajes y la hora del último acceso.
 
-Para obtener más información acerca de los cmdlets, consulte [Move and Migration cmdlets in Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Para obtener más información acerca de los cmdlets, consulte [Move and Migration cmdlets in Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).

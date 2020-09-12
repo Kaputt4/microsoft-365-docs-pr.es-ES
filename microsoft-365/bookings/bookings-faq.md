@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Preguntas más frecuentes de Microsoft bookings.
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420188"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545721"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft bookings
 
@@ -180,7 +180,7 @@ No hay ninguna disposición para establecer la zona horaria para el personal en 
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>¿Se pueden enviar notificaciones de correo electrónico como nombre de dominio del inquilino?
 
-Las direcciones de correo electrónico se controlan y administran en el nivel de configuración de Microsoft 365 y dependen de las opciones de configuración del dominio. Puede encontrar más información [aquí](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps).
+Las direcciones de correo electrónico se controlan y administran en el nivel de configuración de Microsoft 365 y dependen de las opciones de configuración del dominio. Puede encontrar más información [aquí](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>¿Es la capacidad de enviar mensajes SMS que dependen de un servicio o una configuración específica diferentes?
 
@@ -366,7 +366,7 @@ Si sigue viendo este error después de un período de tiempo prolongado o si lo 
 
   - [Personalizar y publicar la página de reserva](customize-booking-page.md)
 
-  - [Configuración de buzón del espacio empresarial](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [Configuración de buzón del espacio empresarial](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [Reservas de grupo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

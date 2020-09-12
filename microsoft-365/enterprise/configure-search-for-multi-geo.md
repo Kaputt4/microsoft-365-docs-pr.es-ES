@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico. Solo algunos clientes, como OneDrive para la empresa, pueden devolver resultados en un entorno multigeográfico.
-ms.openlocfilehash: 22c71661e8f3b643a1fd7afa33b38584a1cd1be5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695087"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547157"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -30,15 +30,11 @@ Por ejemplo, un usuario de una ubicación geográfica puede realizar búsquedas 
 
 Estos clientes pueden devolver resultados de todas las ubicaciones geográficas:
 
--   OneDrive para la Empresa
-
--   Delve
-
--   Página principal de SharePoint
-
--   Centro de búsqueda
-
--   Aplicaciones de búsqueda personalizada que usan la API de SharePoint Search
+- OneDrive para la Empresa
+- Delve
+- Página principal de SharePoint
+- Centro de búsqueda
+- Aplicaciones de búsqueda personalizada que usan la API de SharePoint Search
 
 ### <a name="onedrive-for-business"></a>OneDrive para la Empresa
 
@@ -135,14 +131,12 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 
 Todos los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![Diagrama que muestra cómo las API de REST de búsqueda de SharePoint interactúan con los índices de búsqueda](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.
 2. La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.
 3. Los resultados de búsqueda de cada ubicación geográfica se combinan y clasifican.
 4. El cliente obtiene resultados unificados.
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Observe que no combinamos los resultados de búsqueda hasta que hemos recibido los resultados de todas las ubicaciones geográficas. Esto significa que las búsquedas multigeográficas tienen latencia adicional con respecto a las búsquedas en un entorno de una sola ubicación geográfica.
 
@@ -151,29 +145,32 @@ Todos los clientes de búsqueda usan la API REST de SharePoint Search existente 
 
 Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar individualmente cada sector vertical.
 
-1.  Asegúrese de realizar estos pasos con una cuenta que tenga permiso para editar la página de resultados de búsqueda y el elemento web de resultados de búsqueda.
+1. Asegúrese de realizar estos pasos con una cuenta que tenga permiso para editar la página de resultados de búsqueda y el elemento web de resultados de búsqueda.
 
-2.  Navegue a la página de resultados de búsqueda (vea la [lista](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) de páginas de resultados de búsqueda).
+2. Navegue a la página de resultados de búsqueda (vea la [lista](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) de páginas de resultados de búsqueda).
 
-3.  Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
+3. Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  En el elemento web Resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y, a continuación, haga clic en **Editar elemento web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá debajo de la cinta en la parte superior derecha de la página. ![](../media/configure-search-for-multi-geo-image3.png)
+   ![Editar la selección de página en configuración](../media/configure-search-for-multi-geo-image2.png)
 
-1.  En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.
+4. En el elemento web Resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y, a continuación, haga clic en **Editar elemento web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá debajo de la cinta en la parte superior derecha de la página.
 
-2.  Haga clic en **Aceptar** para guardar los cambios y cierre el panel de herramientas del elemento web.
+   ![Edición de la selección del elemento Web](../media/configure-search-for-multi-geo-image3.png)
 
-3.  Para comprobar los cambios realizados en el elemento web de resultados de búsqueda, haga clic en **Proteger** en la pestaña de página del menú principal.
+5. En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.
 
-4.  Publique los cambios mediante el vínculo incluido en la nota de la parte superior de la página.
+6. Haga clic en **Aceptar** para guardar los cambios y cierre el panel de herramientas del elemento web.
+
+7. Para comprobar los cambios realizados en el elemento web de resultados de búsqueda, haga clic en **Proteger** en la pestaña de página del menú principal.
+
+8. Publique los cambios mediante el vínculo incluido en la nota de la parte superior de la página.
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Obtener aplicaciones de búsqueda personalizada que muestren los resultados de todas o algunas de las ubicaciones geográficas
 
 Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algunas de las ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API REST de SharePoint Search. En función de los parámetros de consulta, se efectúa una distribución ramificada de la consulta a todas o a algunas de las ubicaciones geográficas. Por ejemplo, si solo tiene que consultar un subconjunto de las ubicaciones geográficas para encontrar información relevante, puede controlar la distribución ramificada a solo estas. Si la solicitud se realiza correctamente, la API REST de SharePoint Search devuelve datos de respuesta.
 
-**Requisito**
+### <a name="requirement"></a>Requisito
 
 Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
@@ -230,14 +227,12 @@ MultiGeoSearchStatus: se trata de una propiedad que devuelve la API de SharePoin
 <td align="left">Partial</td>
 <td align="left">Resultados parciales de una o varias ubicaciones geográficas. Los resultados están incompletos debido a un error transitorio.</td>
 </tr>
-
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>Consultar con el servicio REST
 
 Con una solicitud GET, especifica los parámetros de consulta en la dirección URL. Con una solicitud de POST, pasa los parámetros de consulta del cuerpo en el formato de notación de objetos JavaScript (JSON).
-
 
 #### <a name="request-headers"></a>Encabezados de solicitud
 
@@ -269,8 +264,9 @@ https:// \<tenant\> / \_ API/Search/Query? QueryText = "site" &tipocliente = ' m
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Ejemplo de distribución ramificada de una solicitud POST a **todas** las ubicaciones geográficas
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -289,11 +285,11 @@ https:// \<tenant\> / \_ API/Search/Query? QueryText = "site" &tipocliente = ' m
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Ejemplo de distribución ramificada de una solicitud POST a **algunas** ubicaciones geográficas
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -318,13 +314,15 @@ https:// \<tenant\> / \_ API/Search/Query? QueryText = "site" &tipocliente = ' m
             }
         }
     }
+```
 
 ### <a name="query-using-csom"></a>Consultar con CSOM
 
 Ejemplo de distribución ramificada de una consulta CSOM a **todas** las ubicaciones geográficas:
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

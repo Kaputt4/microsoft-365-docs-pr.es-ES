@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dde82ef9deb4d515ea5223470f7c96c1fe28a26
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685659"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546376"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -38,25 +38,27 @@ No es necesario que habilite los servicios dependientes para empezar a trabajar 
 - Grupos de Microsoft 365
 - Sitios de grupo de SharePoint
 - OneDrive para la Empresa
-- Buzones
+- Buzones de Exchange
 - Vídeos de secuencia y planes de Planner (si estos servicios están habilitados)
 
 ## <a name="updating-common-policies-to-include-teams"></a>Actualización de directivas comunes para incluir equipos
 
-El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteger chats, grupos y contenido en Teams. El icono de lápiz indica qué directivas deben revisarse para asegurarse de que Teams y los servicios dependientes se incluyen en la asignación de aplicaciones en la nube.
+Para proteger los chats, los grupos y el contenido en Teams, en el siguiente diagrama se ilustran las directivas que se deben actualizar de las directivas comunes de identidad y acceso a dispositivos. Para que se actualice cada Directiva, asegúrese de que Teams y los servicios dependientes se incluyen en la asignación de aplicaciones en la nube.
 
-![Un diagrama que muestra cómo usar Microsoft Teams en varios dispositivos.](../media/identity-access-ruleset-teams.png)
+[![Resumen de las actualizaciones de directivas para proteger el acceso a los equipos y sus servicios dependientes](../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+
+[Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 Estos son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
 - Microsoft Teams
-- SharePoint Online y OneDrive para la Empresa
+- SharePoint y OneDrive para la Empresa
 - Exchange Online
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
 
-En esta tabla se enumeran las directivas que deben revisitarse y vínculos a cada directiva en [las directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md), que tienen el conjunto de reglas más amplio para todas las aplicaciones de Office.
+En esta tabla se enumeran las directivas que deben revisitarse y los vínculos a cada directiva en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md), que tienen la directiva más amplia para todas las aplicaciones de Office.
 
 |Nivel de protección|Directivas|Información adicional para la implementación de Teams|
 |:---------------|:-------|:----------------|
@@ -76,13 +78,13 @@ En esta tabla se enumeran las directivas que deben revisitarse y vínculos a cad
 
 Como referencia, el siguiente diagrama ilustra los equipos de servicios en los que se basa. Para obtener más información e ilustraciones adicionales, consulte [Microsoft Teams y los servicios de productividad relacionados en microsoft 365 para arquitectos de ti](../solutions/productivity-illustrations.md).
 
-![Diagrama que muestra las dependencias de Teams en SharePoint Online, OneDrive para la empresa y Exchange.](../media/identity-access-logical-architecture-teams.png)
+![Diagrama que muestra las dependencias de Microsoft Teams en SharePoint, OneDrive para la empresa y Exchange](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>Habilitación del acceso externo y de invitado para Microsoft Teams
 
 En Azure AD, los usuarios externos y invitados son los mismos. El tipo de usuario para ambos es invitado. Los usuarios invitados son usuarios B2B. Microsoft Teams diferencia entre los usuarios invitados y los usuarios externos de la aplicación. Aunque es importante comprender cómo se trata cada uno de ellos en Teams, ambos tipos de usuarios son usuarios B2B de Azure AD y las directivas recomendadas para los usuarios B2B se aplican a ambos. Para las directivas recomendadas para permitir el acceso de invitado, consulte [directivas para permitir el acceso de invitado y de B2B externo](identity-access-policies-guest-access.md).
 
-### <a name="guest-access-in-teams"></a>Acceso de invitado en Microsoft Teams
+### <a name="guest-access-in-teams"></a>Acceso de invitado a Teams
 
 Además de las directivas para los usuarios que son internos a su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir, de forma individual para cada usuario, que los usuarios externos a su empresa u organización obtengan acceso a los recursos de Microsoft Teams e interactúen con personas internas para cosas como conversaciones de grupo, chat y reuniones. Puede obtener más información sobre el acceso de invitado en el siguiente vínculo: [acceso de invitado de Teams](https://docs.microsoft.com/microsoftteams/guest-access)
 
@@ -120,6 +122,10 @@ Para obtener más información sobre las directivas de permisos de la aplicació
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Obtenga información sobre cómo habilitar el acceso condicional para Exchange Online](secure-email-recommended-policies.md)
+![Paso 4: directivas para las aplicaciones en la nube de Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+Configure las directivas de acceso condicional para:
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

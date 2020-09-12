@@ -3,7 +3,7 @@ title: Vaya al Centro de actividades para ver y aprobar las tareas de investigac
 description: Use el Centro de actividades para ver los detalles de la investigación automatizada y aprobar las acciones pendientes.
 keywords: Centro de actividades, protección contra amenazas, investigación, alerta, pendiente, automatizada, detección
 search.appverid: met150
-ms.prod: M365-security-compliance
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 77bc0f088a9779396a56a9cc8cc9ae6ecbdadea7
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503108"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547991"
 ---
 # <a name="the-action-center"></a>El centro de actividades
 

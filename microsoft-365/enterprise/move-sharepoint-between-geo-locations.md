@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un sitio de SharePoint a una ubicación geográfica distinta dentro de su entorno multigeográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693607"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545641"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -36,13 +36,13 @@ Los siguientes tipos de sitios pueden moverse entre ubicaciones geográficas:
 Debe ser un administrador global o un administrador de SharePoint para mover un sitio entre ubicaciones geográficas.
 
 Hay una ventana de solo lectura durante el movimiento geográfico de sitios de SharePoint de aproximadamente 4 a 6 horas, según el contenido del sitio.
- 
+
 ## <a name="best-practices"></a>Procedimientos recomendados
 
-- Pruebe un movimiento del sitio de SharePoint en un sitio de prueba para familiarizarse con el procedimiento. 
-- Compruebe si el sitio se puede mover antes de programar o realizar el cambio. 
+- Pruebe un movimiento del sitio de SharePoint en un sitio de prueba para familiarizarse con el procedimiento.
+- Compruebe si el sitio se puede mover antes de programar o realizar el cambio.
 - Cuando sea posible, programe movimientos de sitios entre ubicaciones geográficas fuera del horario laboral para reducir el impacto con el usuario.
-- Comuníquese con los usuarios afectados antes del movimiento de sitios. 
+- Comuníquese con los usuarios afectados antes del movimiento de sitios.
 
 ## <a name="communicating-to-your-users"></a>Comunicación con los usuarios
 
@@ -62,10 +62,11 @@ Puede programar los movimientos de sitios de SharePoint por adelantado (como se 
 
 - Puede programar un máximo de 4000 movimientos cada vez.
 - Al empezar el movimiento, puede programar más, con un máximo de 4000 movimientos pendientes en la cola y en cualquier momento.
- 
+
 Para programar un movimiento geográfico de sitio de SharePoint para un momento posterior, incluya uno de los parámetros siguiente al iniciar:
+
 - `PreferredMoveBeginDate`: Es probable que se inicie el cambio en este momento especificado.
-- `PreferredMoveEndDate`: Es probable que se complete el movimiento dentro de este tiempo especificado, en el mejor de los casos. 
+- `PreferredMoveEndDate`: Es probable que se complete el movimiento dentro de este tiempo especificado, en el mejor de los casos.
 
 La hora para ambos parámetros debe especificarse según el Tiempo universal coordinado (UTC).
 
@@ -73,19 +74,22 @@ La hora para ambos parámetros debe especificarse según el Tiempo universal coo
 
 El movimiento geográfico del sitio de SharePoint requiere que se conecte y se realice desde la URL del administrador de SharePoint en la ubicación geográfica donde se encuentra el sitio.
 
-Por ejemplo, si la URL del sitio es https://contosohealthcare.sharepoint.com/sites/Turbines, conéctese a la URL del administrador de SharePoint en https://contosohealthcare-admin.sharepoint.com:
+Por ejemplo, si la dirección URL del sitio es <https://contosohealthcare.sharepoint.com/sites/Turbines> , conéctese a la dirección URL de administración de SharePoint en <https://contosohealthcare-admin.sharepoint.com> :
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![Ventana del shell de administración de SharePoint online donde se muestra el comando Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>Validación del entorno
 
 Se recomienda realizar una comprobación para asegurarse de que se puede mover el sitio, antes de programar su movimiento.
 
 No se admite mover sitios con:
--    Servicios de conectividad empresarial
--    Formularios de InfoPath 
+
+- Servicios de conectividad empresarial
+- Formularios de InfoPath
 - Se aplicaron las plantillas de Information Rights Management (IRM)
 
 Para asegurarse de que todas las ubicaciones geográficas son compatibles, ejecute `Get-SPOGeoMoveCrossCompatibilityStatus`. Esto mostrará todas las ubicaciones geográficas y si el entorno es compatible con la ubicación geográfica de destino.
@@ -102,15 +106,17 @@ Esto devolverá *Success* si el sitio está listo para moverse o *Fail* si hay a
 
 De forma predeterminada, se cambiará la dirección URL inicial del sitio a la dirección URL de la ubicación geográfica de destino. Por ejemplo:
 
-https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projectx
+<https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projectx>
 
 Los sitios sin ninguna asociación con los Grupos de Microsoft 365, también pueden cambiar el nombre mediante el parámetro `-DestinationUrl`. Por ejemplo:
 
-https://Contoso.sharepoint.com/sites/projectx a https://ContosoEUR.sharepoint.com/sites/projecty
+<https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 Para iniciar el movimiento del sitio, ejecute:
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![Captura de pantalla de la ventana de PowerShell que muestra el cmdlet Start-SPOSiteContentMove](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ Para establecer la PDL de un Grupo de Microsoft 365:
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-Una vez que haya actualizado la PDL, puede iniciar el movimiento del sitio: 
+
+Una vez que haya actualizado la PDL, puede iniciar el movimiento del sitio:
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,19 +146,22 @@ Puede detener un movimiento geográfico de sitios de SharePoint, siempre que el 
 Puede determinar el estado de un movimiento de sitios dentro y fuera de la ubicación geográfica a la que está conectado mediante los siguientes cmdlet:
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (sitios no conectados al grupo)
-- Get-SPOUnifiedGroupMoveState (sitios conectados al grupo)
+- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (sitios conectados a un grupo)
 
 Use el parámetro `-SourceSiteUrl` para especificar el sitio del que quiere ver el estado del movimiento.
 
 Los estados del movimiento se describen en la tabla siguiente.
 
+****
+
 |Estado|Descripción|
-|:-----|:----------|
+|---|---|
 |Ready to Trigger|No se ha iniciado el movimiento.|
 |Scheduled|El movimiento está en cola, pero todavía no se ha iniciado.|
 |InProgress (n/4)|El movimiento está en curso en uno de los siguientes estados: validación (1/4), copia de seguridad (2/4), restauración (3/4), limpieza (4/4).|
 |Success|El movimiento se completó correctamente.|
 |Failed|No se pudo realizar el movimiento.|
+|
 
 También puede aplicar la opción `-Verbose` para ver información adicional sobre el movimiento.
 
@@ -215,4 +225,4 @@ PowerApps debe volver a crearse en la ubicación de destino.
 
 ### <a name="data-movement-between-geo-locations"></a>Mover datos entre ubicaciones geográficas
 
-SharePoint usa el Azure Blob Storage para su contenido, mientras los metadatos asociados con los sitios y los archivos se almacenan dentro de SharePoint. Cuando el sitio se mueve de su ubicación geográfica de origen a la de destino, el servicio también moverá el Blob Storage asociado.  El movimiento de Blob Storage se completa en aproximadamente 40 días. 
+SharePoint usa el Azure Blob Storage para su contenido, mientras los metadatos asociados con los sitios y los archivos se almacenan dentro de SharePoint. Cuando el sitio se mueve de su ubicación geográfica de origen a la de destino, el servicio también moverá el Blob Storage asociado.  El movimiento de Blob Storage se completa en aproximadamente 40 días.

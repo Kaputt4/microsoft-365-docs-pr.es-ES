@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,16 @@ ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Obtenga información sobre cómo agregar licencias a su suscripción.
-ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Obtenga información sobre cómo agregar licencias o ampliar la suscripción con una clave de producto.
+ms.openlocfilehash: 583014c98207f98abc55248159aafd371c96b6c0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404015"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545789"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Agregar licencias o ampliar una suscripción pagada para usar una clave de producto
 
@@ -44,17 +41,13 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. Busque la suscripción a la que desea agregar licencias. En la sección **licencias** , seleccione **Agregar más licencias**.
-
-3. En el **Panel agregar más licencias**, seleccione **usar una clave de producto nueva y sin usar**y, a continuación, seleccione **siguiente**.
-
-4. Escriba la clave del producto y, a continuación, seleccione **siguiente**.
-
+2. En la pestaña **productos** , seleccione la suscripción a la que desea agregar licencias.
+3. En la sección **licencias** de la página Detalles de la suscripción, seleccione **Agregar más licencias**.
+4. En el **Panel agregar más licencias**, seleccione **usar una clave de producto nueva y sin usar**y, a continuación, seleccione **siguiente**.
+5. Escriba la clave del producto y, a continuación, seleccione **siguiente**.
     > [!NOTE]
     > Si tiene más de una clave de producto, puede seleccionar **Agregar otra clave de producto** o escribirlas.
-  
-5. Revise los detalles del pedido y, a continuación, seleccione **canjear**.
+6. Revise los detalles del pedido y, a continuación, seleccione **canjear**.
 
 ::: moniker-end
 
@@ -101,17 +94,13 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. Busque la suscripción que desea extender. En la sección **facturación** , seleccione **extender fecha de finalización**.
-
-3. En el panel **extender suscripción** , seleccione **usar una clave de producto nueva y sin usar**y, después, seleccione **siguiente**.
-
-4. Escriba la clave del producto y, a continuación, seleccione **siguiente**.
-
+2. En la pestaña **productos** , seleccione la suscripción que desea extender.
+3. En la sección **configuración de suscripción y pagos** de la página Detalles de la suscripción, seleccione **extender fecha de finalización**.
+4. En la página **renovar o agregar licencias de usuario** , seleccione **usar una clave de producto nueva y sin usar**y, a continuación, seleccione **siguiente**.
+5. Escriba la clave del producto y, a continuación, seleccione **siguiente**.
     > [!NOTE]
     > Si tiene más de una clave de producto, puede seleccionar **Agregar otra clave de producto** o escribirlas.
-  
-5. Revise los detalles del pedido y, a continuación, seleccione **canjear**.
+6. Revise los detalles del pedido y, a continuación, seleccione **canjear**.
 
 ::: moniker-end
 

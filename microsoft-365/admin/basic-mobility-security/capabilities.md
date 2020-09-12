@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básica pueden ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430313"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545901"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de movilidad y seguridad básicas
 
@@ -166,9 +166,9 @@ La siguiente opción permite impedir que los usuarios tengan acceso a su correo 
 |Bloquear conexión con almacenamiento extraíble |Sí|Sí|No|
 |Bloquear conexión Bluetooth |Sí|Sí|No|
 
-##  <a name="additional-settings"></a>Configuración adicional 
+## <a name="additional-settings"></a>Otras configuraciones
 
-Puede establecer las siguientes opciones de directiva adicionales usando cmdlets de PowerShell. Para obtener más información, vea [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Puede establecer las siguientes opciones de configuración de directivas adicionales con los cmdlets de PowerShell del centro de cumplimiento de & de seguridad. Para obtener más información, vea [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/scc-powershell).
 
 |**Nombre de la configuración**|**iOS 7,1 y versiones posteriores**|**Android 5 y versiones posteriores**|
 |:-----|:-----|:-----|

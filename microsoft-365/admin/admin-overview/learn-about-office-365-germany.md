@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Germany.
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307282"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545923"
 ---
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307282"
 
 Office 365 Germany fue una opción diferenciada entre los servicios de Office 365 disponibles en Europa. Ayudó a satisfacer las necesidades de los clientes más regulados en Alemania, la Unión Europea (UE) y la Asociación Europea de libre comercio (AELC) al ofrecer nuestros servicios de productividad líderes en el sector para el trabajo digital, desde centros de datos en alemán, con residencia de datos en Alemania, y a medidas estrictas de control y acceso a los datos a través de un modelo de confianza de datos
   
-La administración de los datos la realiza T-Systems International, una compañía independiente alemana y subsidiaria de Deutsche Telekom, controlando el acceso físico y lógico a los datos de los clientes. No se puede acceder a dichos datos sin la aprobación o la supervisión del administrador de datos, que se rige por la legislación alemana.
+La administración de los datos la realiza T-Systems International, una compañía independiente alemana y subsidiaria de Deutsche Telekom, controlando el acceso físico y lógico a los datos de los clientes. No se puede acceder a los datos de los clientes sin la aprobación ni la supervisión por parte del administrador de datos, que se rige por la legislación alemana.
   
-Las necesidades de los clientes se han desplazado y el aislamiento de Office 365 Alemania estableció límites en su capacidad para abordar la flexibilidad y la coherencia que los clientes quieren. Desde agosto de 2018, ya no se aceptan nuevos clientes ni se implementan servicios nuevos de la nube de Microsoft disponible actualmente. Para obtener más información, consulte esta publicación de blog: [Microsoft para entregar servicios en la nube desde nuevos centros de datos en Alemania en 2019 para satisfacer las necesidades de los clientes en constante evolución](https://go.microsoft.com/fwlink/p/?linkid=839016).
+Las necesidades de los clientes se han desplazado y el aislamiento de Office 365 Alemania estableció límites en su capacidad para enfrentar la flexibilidad y la coherencia que los clientes quieren. Desde agosto de 2018, ya no se aceptan nuevos clientes ni se implementan servicios nuevos de la nube de Microsoft disponible actualmente. Para obtener más información, vea esta entrada de blog: [Microsoft para entregar servicios en la nube desde nuevos centros de datos en Alemania en 2019 para satisfacer las necesidades de los clientes en constante evolución](https://go.microsoft.com/fwlink/p/?linkid=839016).
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>¿Qué servicios en línea de Microsoft están disponibles en Office 365 Germany?
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>¿Qué servicios en línea de Microsoft están disponibles en Office 365 Germany?
 
 Las ofertas de planes de Office 365 Germany están alineadas con las ofertas globales tanto como sea posible en este entorno aislado. Sin embargo, se excluyen los planes relacionados con Yammer, los que finalizarán su ciclo de vida en breve y los planes disponibles a través de programas sin ánimo de lucro. Office 365 E5, SPE y otros servicios estarán disponibles después de la disponibilidad general de Office 365 Germany. 
   
@@ -61,7 +61,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Vídeo de Microsoft 365
     
-- Project para la web
+- Project para la Web
     
 - Visio para la web
     
@@ -89,7 +89,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
   
 ## <a name="general-information"></a>Información general
 
-|||
+|Item|Información|
 |-----|-----|
 |Portal de inicio de sesión  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Suscripciones, facturación y soporte técnico  <br/> |Asistencia basada en Alemania disponible en alemán e inglés para obtener información detallada, consulte [Contact Support for Business Products: ayuda para administradores](../contact-support-for-business-products.md).  <br/> |

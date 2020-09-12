@@ -8,7 +8,6 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 06/07/2018
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,16 +15,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1cd56b7b02dedfbdb544b49410d231f08a0d4c67
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 1c6cdc626b31a486b8858efcff76480d31769740
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898157"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547832"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
-En este artículo se describe cómo implementar la identidad recomendada y las directivas de acceso a dispositivos para proteger SharePoint Online y OneDrive para la empresa. Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md).
+En este artículo se describe cómo implementar la identidad recomendada y las directivas de acceso a dispositivos para proteger SharePoint y OneDrive para la empresa. Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md).
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para los archivos de SharePoint que se pueden aplicar en función de la granularidad de sus necesidades: **línea base**, **confidencial**y **altamente regulable**. Puede obtener más información sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que se hace referencia en estas recomendaciones en [la introducción](microsoft-365-policies-configurations.md).
 
@@ -33,56 +32,68 @@ Además de implementar esta guía, asegúrese de configurar los sitios de ShareP
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Actualización de directivas comunes para incluir SharePoint y OneDrive para la empresa
 
-El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteger archivos en SharePoint Online y OneDrive para la empresa. Indica qué directivas deben actualizarse o recién creadas para agregar protección a SharePoint Online y OneDrive para la empresa.
+Para proteger los archivos en SharePoint y OneDrive, en el siguiente diagrama se ilustran las directivas que se deben actualizar desde las directivas comunes de identidad y acceso a dispositivos.
 
-[![Resumen de directivas para SharePoint Online y OneDrive ](../media/identity-access-ruleset-sharepoint.png)](../media/identity-access-ruleset-sharepoint.png#lightbox)
+[![Resumen de las actualizaciones de directivas para proteger el acceso a los equipos y sus servicios dependientes](../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
 
-Si incluyó SharePoint Online al crear las directivas comunes, solo tiene que crear las nuevas directivas. Al configurar reglas de acceso condicional, SharePoint Online incluye OneDrive para la empresa.
+[Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+
+Si ha incluido SharePoint al crear las directivas comunes, solo tiene que crear las nuevas directivas. Para las directivas de acceso condicional, SharePoint incluye OneDrive.
 
 Las nuevas directivas implementan la protección de dispositivos para contenido sensible y altamente regulado mediante la aplicación de requisitos de acceso específicos a los sitios de SharePoint que se especifiquen.
 
-En la siguiente tabla se enumeran las directivas que debe revisar y actualizar o crear nuevas para SharePoint Online. Las directivas comunes vinculan a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
+En la siguiente tabla se enumeran las directivas que debe revisar y actualizar o crear una nueva para SharePoint. Las directivas comunes vinculan a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
 |Nivel de protección|Directivas|Más información|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir SharePoint Online en la asignación de aplicaciones en la nube|
-|        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir SharePoint Online en la asignación de aplicaciones en la nube|
-|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que todas las aplicaciones recomendadas se incluyen en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows)|
-|        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir SharePoint Online en la lista de aplicaciones en la nube|
-|        |[Usar restricciones de aplicación forzada en SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Agregar esta nueva Directiva. Esto indica a Azure AD que use la configuración especificada en SharePoint Online. Esta regla se aplica a todos los usuarios, pero solo afecta al acceso a los sitios incluidos en las directivas de acceso de SharePoint Online|
-|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir SharePoint Online en las asignaciones de aplicaciones en la nube|
-|         |[Requerir equipos *y* dispositivos móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir SharePoint Online en la lista de aplicaciones en la nube|
-||[Directiva de control de acceso de SharePoint Online](#sharepoint-online-access-control-policies): permitir el acceso solo del explorador a sitios específicos de SharePoint desde dispositivos no administrados|Esto evita la edición y descarga de archivos. Usar PowerShell para especificar sitios|
-|**Extremadamente regulado**|[Requerir *siempre* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir SharePoint Online en la asignación de aplicaciones en la nube|
-||[Directiva de control de acceso de SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online): bloquear el acceso a sitios específicos de SharePoint desde dispositivos no administrados|Usar PowerShell para especificar sitios|
+|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
+|        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
+|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que todas las aplicaciones recomendadas se incluyen en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows).|
+|        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir SharePoint en la lista de aplicaciones en la nube.|
+|        |[Usar restricciones de aplicación forzada en SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Agregar esta nueva Directiva. Esto indica a Azure Active Directory (Azure AD) que use la configuración especificada en SharePoint. Esta Directiva se aplica a todos los usuarios, pero solo afecta al acceso a los sitios incluidos en las directivas de acceso de SharePoint.|
+|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluya SharePoint en las asignaciones de aplicaciones en la nube.|
+|         |[Requerir equipos *y* dispositivos móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluya SharePoint en la lista de aplicaciones en la nube.|
+||[Directiva de control de acceso de SharePoint](#sharepoint-access-control-policies): permitir el acceso solo del explorador a sitios específicos de SharePoint desde dispositivos no administrados.|Esto evita la edición y descarga de archivos. Usar PowerShell para especificar sitios.|
+|**Extremadamente regulado**|[Requerir *siempre* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
+||[Directiva de control de acceso de SharePoint](#use-app-enforced-restrictions-in-sharepoint): bloquear el acceso a sitios específicos de SharePoint desde dispositivos no administrados.|Usar PowerShell para especificar sitios.|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Usar restricciones de aplicación forzada en SharePoint Online
+## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Usar restricciones de aplicación forzada en SharePoint
 
-Si implementa controles de acceso en SharePoint Online, debe crear esta directiva de acceso condicional en Azure AD para decir a Azure AD que aplique las directivas que configure en SharePoint Online. Esta regla se aplica a todos los usuarios, pero solo afecta al acceso a los sitios que se especifiquen mediante PowerShell al crear los controles de acceso en SharePoint Online.
+Si implementa controles de acceso en SharePoint, debe crear esta directiva de acceso condicional en Azure AD para decir a Azure AD que aplique las directivas que configure en SharePoint. Esta Directiva se aplica a todos los usuarios, pero solo afecta al acceso a los sitios que se especifiquen mediante PowerShell al crear los controles de acceso en SharePoint.
 
-Para configurar esta Directiva, vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en este artículo: [controlar el acceso desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Para configurar esta Directiva, vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en [controlar el acceso desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
-## <a name="sharepoint-online-access-control-policies"></a>Directivas de control de acceso de SharePoint Online
+## <a name="sharepoint-access-control-policies"></a>Directivas de control de acceso de SharePoint
 
 Microsoft recomienda proteger el contenido de los sitios de SharePoint con contenido sensible y altamente regulado con controles de acceso a dispositivos. Para ello, cree una directiva que especifique el nivel de protección y los sitios a los que se aplicará la protección.
 
 - Sitios confidenciales: permitir el acceso solo del explorador. Esto impide que los usuarios editen y descarguen archivos.
 - Sitios altamente regulados: bloquear el acceso desde dispositivos no administrados.
 
-Vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en este artículo: [controlar el acceso desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en [controlar el acceso desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="how-these-policies-work-together"></a>Funcionamiento conjunto de estas directivas
 
 Es importante comprender que los permisos de sitio de SharePoint suelen basarse en la necesidad empresarial de acceso a los sitios. Estos permisos los administran los propietarios del sitio y pueden ser muy dinámicos. El uso de directivas de acceso a dispositivos de SharePoint garantiza la protección de estos sitios, independientemente de si los usuarios están asignados a un grupo de Azure AD asociado con una protección de línea base, sensible o altamente regulada.
 
-En la siguiente ilustración se muestra un ejemplo de cómo las directivas de acceso a dispositivos de SharePoint protegen el acceso a los sitios.
+En la siguiente ilustración se muestra un ejemplo de cómo las directivas de acceso a dispositivos de SharePoint protegen el acceso a los sitios de un usuario.
 
-[![Cómo protegen las directivas de acceso a dispositivos de SharePoint los sitios ](../media/SharePoint-rules-scenario.png)](../media/SharePoint-rules-scenario.png#lightbox)
+[![Ejemplo de cómo protegen las directivas de acceso a dispositivos de SharePoint los sitios](../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-En la ilustración:
+[Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-- James se asigna a las directivas de acceso condicional asociadas con la protección de línea de base, pero se le puede conceder acceso a los sitios de SharePoint asociados con una protección sensible o altamente regulada.
+James tiene directivas de acceso condicional de línea base asignadas, pero se le puede dar acceso a los sitios de SharePoint con protección sensible o altamente regulada.
+
 - Si James obtiene acceso a un sitio sensible o altamente regulado, es miembro del uso de su equipo, se concede su acceso siempre que su equipo sea compatible.
 - Si James obtiene acceso a un sitio confidencial, es miembro del uso de su teléfono no administrado, lo que se permite a los usuarios de línea base, recibirá acceso solo del explorador al sitio confidencial debido a la Directiva de acceso de dispositivos configurada para este sitio.
 - Si James obtiene acceso a un sitio altamente regulado, es miembro del uso de su teléfono no administrado, se bloqueará debido a la Directiva de acceso configurada para este sitio. Solo puede acceder a este sitio mediante su equipo administrado y compatible.
+
+## <a name="next-step"></a>Paso siguiente
+
+![Paso 4: directivas para las aplicaciones en la nube de Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+Configure las directivas de acceso condicional para:
+
+- [Microsoft Teams](teams-access-policies.md)
+- [Exchange Online](secure-email-recommended-policies.md)
 

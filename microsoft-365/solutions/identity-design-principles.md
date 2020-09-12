@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308372"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547811"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Para identidades y más allá: el punto de vista de un arquitecto
 
@@ -117,7 +117,7 @@ La [autenticación multifactor](https://docs.microsoft.com/azure/active-director
 
 
 
-### <a name="authorization"></a>Autorización
+### <a name="authorization"></a>Authorization
 
 Por [Wikipedia](https://en.wikipedia.org/wiki/Authorization), "para autorizar" es definir una directiva de acceso. Muchas personas lo ven como la capacidad de definir controles de acceso a un objeto (archivo, servicio, etc.). En el mundo actual de las amenazas de la Cyber, este concepto evoluciona rápidamente a una directiva dinámica que puede reaccionar a varios vectores de amenaza y ajustar rápidamente los controles de acceso en respuesta a ellos. Por ejemplo, si tengo acceso a mi cuenta bancaria desde una ubicación inusual, obtengo pasos de confirmación adicionales. Para plantearse esto, debemos tener en cuenta no solo la propia Directiva sino el ecosistema de metodologías de detección de amenazas y de correlación de señales.
 
@@ -272,7 +272,7 @@ Office 365 tiene un [registro de auditoría unificado](https://docs.microsoft.co
 
 Algunos ejemplos de registros de 365 de Microsoft a los que se tiene acceso a través de otras API son los siguientes:
 - [Azure ad](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (actividades no relacionadas con Office 365)
-- [Seguimiento de mensajes de Exchange](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
+- [Seguimiento de mensajes de Exchange](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - Sistemas de amenaza/UEBA descritos anteriormente (por ejemplo, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft defender ATP, etc.)
 - [Protección de la información de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
