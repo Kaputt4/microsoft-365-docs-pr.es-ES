@@ -16,12 +16,12 @@ description: Obtenga información sobre cómo poner un buzón en retención por 
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818049"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546992"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -68,7 +68,7 @@ Estos son los pasos para poner un buzón en retención por juicio mediante el ce
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Crear una retención por juicio con PowerShell
 
-También puede crear una retención por juicio ejecutando el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+También puede crear una retención por juicio ejecutando el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true

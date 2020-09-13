@@ -7,16 +7,16 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637952"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547568"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -77,7 +77,7 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 ## <a name="how-do-i-get-this"></a>¿Cómo obtengo esto?
 
-Para visitar el catálogo de soluciones de 365 de Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) , vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la Página principal del catálogo.
+Para visitar el catálogo de soluciones de 365 de Microsoft, vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la Página principal del catálogo.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -89,7 +89,7 @@ En primer lugar, asegúrese de que tiene las licencias y los permisos adecuados.
 
 Siempre estamos trabajando para agregar nuevas funciones al centro de cumplimiento de Microsoft 365 y al catálogo de soluciones. Si no encuentra una solución específica en el área de navegación, será accesible cuando la solución esté disponible en su suscripción.
 
-Si está buscando una solución de cumplimiento existente y no está disponible en el centro de cumplimiento de Microsoft 365, puede acceder a las soluciones en el centro de cumplimiento &amp; de seguridad existente yendo a [https://protection.office.com](https://protection.office.com). Como alternativa, puede hacer clic en la pestaña **más recursos** en el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento de Office 365.  
+Si está buscando una solución de cumplimiento existente y no está disponible en el centro de cumplimiento de Microsoft 365, puede acceder a las soluciones en el centro de cumplimiento de seguridad existente &amp; yendo a [https://protection.office.com](https://protection.office.com) . Como alternativa, puede hacer clic en la pestaña **más recursos** en el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento de Office 365.  
 
 ## <a name="next-steps"></a>Pasos siguientes
 

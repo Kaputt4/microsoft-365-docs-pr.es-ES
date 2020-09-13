@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 27c4d4603396089cb58cfed192f09d0db70cac5a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282608"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547590"
 ---
 # <a name="supervision-policies"></a>Directivas de supervisión
 
@@ -143,7 +143,7 @@ Para obtener más información acerca de los detalles de información confidenci
 
 #### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
-Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100 KB de términos (compresión posterior) en el Diccionario y admiten cualquier idioma. El límite de inquilino también es de 100 KB tras la compresión. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de supervisión y pueden ser origen de un archivo (por ejemplo, una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md).
+Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100 KB de términos (compresión posterior) en el Diccionario y admiten cualquier idioma. El límite del espacio empresarial también es de 100 KB después de la compresión. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de supervisión y pueden ser origen de un archivo (por ejemplo, una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md).
 
 #### <a name="offensive-language"></a>Lenguaje ofensivo
 
@@ -301,7 +301,7 @@ En este ejemplo se devuelven las actividades de actualización de las directivas
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-Además de la información proporcionada en los informes y registros de supervisión, también puede usar el cmdlet de PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) para obtener una lista detallada completa de todas las actividades de la Directiva de supervisión.
+Además de la información proporcionada en los informes y registros de supervisión, también puede usar el cmdlet de PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity) para obtener una lista detallada completa de todas las actividades de la Directiva de supervisión.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 28d47ae30d47430744729705d9ace2e1ea0a6b97
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419173"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547232"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -62,11 +62,11 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 
 Antes de configurar directivas, identifique los grupos de Azure AD que está usando para cada nivel de protección. Normalmente, la protección de línea de base se aplica a todos los de la organización. Un usuario que se incluya para la protección de línea base y sensible tendrá todas las directivas de línea de base aplicadas, además de las directivas confidenciales. La protección es acumulativa y se aplica la directiva más restrictiva. 
 
-Una práctica recomendada es crear un grupo de Azure AD para la exclusión de acceso condicional. Agregue este grupo a todas las reglas de acceso condicional en el valor **excluir** de la opción **usuarios y grupos** de la sección **asignaciones** . Esto le proporciona un método para proporcionar acceso a un usuario mientras se solucionan problemas de acceso. Solo se recomienda como solución temporal. Supervise si hay cambios en este grupo y asegúrese de que el grupo de exclusión solo se usa como se esperaba. 
+Una práctica recomendada es crear un grupo de Azure AD para la exclusión de acceso condicional. Agregue este grupo a todas las directivas de acceso condicional en el valor **excluir** de la opción **usuarios y grupos** de la sección **asignaciones** . Esto le proporciona un método para proporcionar acceso a un usuario mientras se solucionan problemas de acceso. Solo se recomienda como solución temporal. Supervise si hay cambios en este grupo y asegúrese de que el grupo de exclusión solo se usa como se esperaba. 
 
 A continuación, se muestra un ejemplo de asignación de grupo y exclusiones para requerir MFA.
 
-![Ejemplo de asignaciones y exclusiones de grupo para las reglas de MFA](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Ejemplo de asignación y exclusiones de grupo para directivas de MFA](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Estos son los resultados:
 
@@ -82,7 +82,7 @@ Estos son los resultados:
 
 Tenga cuidado al aplicar más niveles de protección a grupos y usuarios. Por ejemplo, los miembros del grupo de proyecto X superior secreto deberán usar MFA cada vez que inicien sesión, aunque no estén trabajando en el contenido altamente regulado para el proyecto X.  
 
-Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es importante para la implementación de las etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint Online.
+Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es importante para la implementación de las etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint.
 
 ![Captura de pantalla para crear grupos de 365 de Microsoft](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
@@ -105,7 +105,7 @@ En la sección **asignaciones** :
 |:---|:---------|:-----|:----|
 |Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
 ||Excluir| **Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
-|Aplicaciones o acciones en la nube| **Las aplicaciones en la nube > incluyen** | **Seleccione aplicaciones**: seleccione las aplicaciones a las que quiere aplicar esta regla. Por ejemplo, seleccione Exchange Online.||
+|Aplicaciones o acciones en la nube| **Las aplicaciones en la nube > incluyen** | **Seleccione aplicaciones**: seleccione las aplicaciones a las que quiere aplicar esta Directiva. Por ejemplo, seleccione Exchange Online.||
 |Condiciones| | |Configure las condiciones específicas de su entorno y necesidades.|
 ||Riesgo de inicio de sesión||Vea las instrucciones de la tabla siguiente.|
 |||||
@@ -194,6 +194,8 @@ Por último, seleccione **activado** para **exigir Directiva**y, a continuación
 
 Considere la posibilidad de usar la herramienta [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la Directiva.
 
+Use esta directiva junto con [configurar la protección con contraseña de Azure ad](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad), que detecta y bloquea contraseñas débiles conocidas y sus variantes, así como términos débiles adicionales específicos de la organización. El uso de la protección con contraseña de Azure AD garantiza que las contraseñas modificadas sean fuertes.
+
 ## <a name="apply-app-data-protection-policies"></a>Aplicar directivas de protección de datos de aplicaciones
 
 Las directivas de protección de aplicaciones (aplicación) definen qué aplicaciones están permitidas y las acciones que pueden llevar a cabo con los datos de la organización. Las opciones disponibles en la aplicación permiten a las organizaciones adaptar la protección a sus necesidades específicas. Para algunos, puede que no sea obvio qué configuración de directiva es necesaria para implementar un escenario completo. Para ayudar a las organizaciones a priorizar la protección de extremos de extremos de cliente móvil, Microsoft ha lanzado una taxonomía para el marco de protección de datos de aplicaciones para iOS y la administración de aplicaciones móviles de Android. 
@@ -221,11 +223,11 @@ Para crear una nueva Directiva de protección de aplicaciones para cada platafor
 
 ## <a name="require-approved-apps-and-app-protection"></a>Requerir aplicaciones aprobadas y protección de aplicaciones
 
-Para aplicar las directivas de protección de aplicaciones que ha aplicado en Intune, debe crear una regla de acceso condicional que requiera las aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de aplicaciones. 
+Para aplicar las directivas de protección de aplicaciones que ha aplicado en Intune, debe crear una directiva de acceso condicional que requiera aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de aplicaciones. 
 
 La aplicación de directivas de protección de aplicaciones requiere un conjunto de directivas que se describen en en [requerir la Directiva de protección de aplicaciones para Cloud Access Access con acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
 
-Para crear la regla de acceso condicional que requiere aplicaciones aprobadas y protección de aplicaciones, siga "paso 1: configurar una directiva de acceso condicional de Azure AD para Microsoft 365" en el [escenario 1: las aplicaciones de Microsoft 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), lo que permite a Outlook para iOS y Android, pero bloquea la conexión de los clientes de Exchange ActiveSync a Exchange Online
+Para crear la Directiva de acceso condicional que requiere aplicaciones aprobadas y protección de aplicaciones, siga "paso 1: configurar una directiva de acceso condicional de Azure AD para Microsoft 365" en el [escenario 1: las aplicaciones de Microsoft 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), lo que permite a Outlook para iOS y Android, pero bloquea la conexión de los clientes de Exchange ActiveSync a Exchange Online
 
    > [!NOTE]
    > Esta Directiva garantiza que los usuarios móviles puedan acceder a todos los puntos de conexión de Office con las aplicaciones correspondientes.
@@ -234,7 +236,7 @@ Si va a habilitar el acceso móvil a Exchange Online, implemente [los clientes d
 
  Estas directivas aprovechan los controles Grant [requieren la aplicación cliente aprobada](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) y [requieren la Directiva de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
-Por último, el bloqueo de la autenticación heredada para otras aplicaciones cliente en dispositivos iOS y Android garantiza que estos clientes no puedan eludir las reglas de acceso condicional. Si sigue las instrucciones de este artículo, ya ha configurado [bloquear clientes que no admiten la autenticación moderna](#block-clients-that-dont-support-modern-authentication).
+Por último, el bloqueo de la autenticación heredada para otras aplicaciones cliente en dispositivos iOS y Android garantiza que estos clientes no puedan eludir las directivas de acceso condicional. Si sigue las instrucciones de este artículo, ya ha configurado [bloquear clientes que no admiten la autenticación moderna](#block-clients-that-dont-support-modern-authentication).
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

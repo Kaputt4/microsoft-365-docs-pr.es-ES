@@ -7,15 +7,15 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: En este artículo se describen las etiquetas de confidencialidad y clasificación de Azure Active Directory clásicas.
-ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308177"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545664"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Etiquetas de confidencialidad y clasificación de Azure Active Directory para grupos de 365 de Microsoft
 
@@ -48,8 +48,10 @@ Tabla 1. Comportamiento de las cargas de trabajo compatibles y no compatibles: 
 
 > [!NOTE]
 > En el caso del cliente de escritorio de Outlook (Win 32), después de que el administrador habilite las etiquetas de confidencialidad en su espacio empresarial y que su usuario esté en una versión anterior del cliente de escritorio de Outlook (Win 32):
+>
 > - El usuario ve las etiquetas de confidencialidad aparecen en la versión anterior del cliente de escritorio de Outlook.
 > - Sin embargo, cuando el usuario edita un grupo y guarda el grupo con una etiqueta de confidencialidad, la configuración de privacidad seleccionada se reemplaza por la configuración de privacidad de la etiqueta de confidencialidad aplicada.
+>
 > Se recomienda que los usuarios de una versión antigua del cliente de Outlook se actualicen a la versión más reciente.
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Escenario 2: el inquilino ya usa las [clasificaciones](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) clásicas de AAD
@@ -76,8 +78,10 @@ Tabla 2. Comportamiento de las cargas de trabajo compatibles y no compatibles: c
 
 > [!NOTE]
 > En el caso del cliente de escritorio de Outlook (Win 32), después de que el administrador habilite las etiquetas de confidencialidad en su espacio empresarial y que su usuario esté en una versión anterior del cliente de escritorio de Outlook (Win 32):
+>
 > - El usuario ve las etiquetas de confidencialidad aparecen en la versión anterior del cliente de escritorio de Outlook.
 > - Sin embargo, cuando el usuario edita un grupo y guarda el grupo con una etiqueta de confidencialidad, la configuración de privacidad seleccionada se reemplaza por la configuración de privacidad de la etiqueta de confidencialidad aplicada.
+>
 > Se recomienda que los usuarios de una versión antigua del cliente de Outlook se actualicen a la versión más reciente.
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>Caso B: etiquetas de confidencialidad usadas por inquilino para documentos y correos electrónicos
@@ -90,4 +94,3 @@ Tabla 2. Comportamiento de las cargas de trabajo compatibles y no compatibles: c
 ## <a name="sample-script"></a>Script de ejemplo
 
 Para obtener un script de ejemplo para migrar grupos con etiquetas clásicas de AAD a etiquetas de confidencialidad, consulte [Classic Azure ad Group Classification](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification).
-

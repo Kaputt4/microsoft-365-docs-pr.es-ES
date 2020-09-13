@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: En este artículo, encontrará detalles sobre la compatibilidad de la aplicación cliente de Microsoft 365 para la autenticación basada en certificados.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89ae78b4cf5c5bb3cfb1575a5db76047f4299239
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: ac48305d634baa436eab7f2d9eeb520897f2a3d8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332633"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47548015"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Soporte técnico de Microsoft 365 Client App: autenticación basada en certificados
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 La autenticación basada en certificados permite autenticar a Azure Active Directory con un certificado de cliente en dispositivos Windows, Android o iOS. La configuración de esta característica elimina la necesidad de escribir una combinación de nombre de usuario y contraseña en determinadas aplicaciones de correo y Microsoft Office en el dispositivo móvil.
 
@@ -60,7 +60,7 @@ Las versiones más recientes de los siguientes clientes admiten la autenticació
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Icono de Azure](../media/o365-azure-64x64.png) <br> [PowerShell de Azure AD <br>](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icono de Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell de Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Icono de SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell de SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Icono de Azure](../media/o365-azure-64x64.png) <br> [PowerShell de Azure AD <br>](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Icono de Exchange](../media/o365-exchange-64x64.png) <br> [PowerShell de Exchange Online <br>](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![Icono de SharePoint](../media/o365-sharepoint-64x64.png) <br> [PowerShell de SharePoint Online <br>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> pronto estará disponible la compatibilidad con OneDrive en MacOS. <br>
@@ -68,6 +68,6 @@ Las versiones más recientes de los siguientes clientes admiten la autenticació
 > <sup>3</sup> pronto estará disponible la compatibilidad con PowerApps y pizarras en aplicaciones Web. <br>
 > <sup>4</sup> pronto estará disponible la compatibilidad con pizarra en Android.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

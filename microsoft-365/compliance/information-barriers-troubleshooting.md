@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4e6087d0e1886d833a6cf0472ed467f8577c5d0
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e19c7d22e2b34d3f8083bcf5b8fb7297dbf86229
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307933"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545674"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -28,7 +28,7 @@ Las [barreras de información](information-barriers.md) pueden ayudar a su organ
 En el caso de que los usuarios se encuentren en problemas inesperados después de que entren en vigor las barreras de la información, hay algunos pasos que puede seguir para resolverlos. Use este artículo como guía.
 
 > [!IMPORTANT]
-> Para llevar a cabo las tareas descritas en este artículo, debe tener asignada una función adecuada, como una de las siguientes:<br/>-Administrador global de Microsoft 365 Enterprise<br/>-administrador global<br/>-Administrador de cumplimiento<br/>-IB Compliance Management (este es un nuevo rol).<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [requisitos previos (para las directivas de barrera de información)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectarse al centro de seguridad & PowerShell del centro de cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Para llevar a cabo las tareas descritas en este artículo, debe tener asignada una función adecuada, como una de las siguientes:<br/>-Administrador global de Microsoft 365 Enterprise<br/>-administrador global<br/>-Administrador de cumplimiento<br/>-IB Compliance Management (este es un nuevo rol).<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [requisitos previos (para las directivas de barrera de información)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectarse al centro de seguridad & PowerShell del centro de cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problema: se impide que los usuarios se comuniquen de forma inesperada con otras personas en Microsoft Teams 
 
@@ -161,9 +161,9 @@ En este caso, ha definido los segmentos, las directivas de barrera de informaci�
 
 Asegúrese de que su organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en su lugar. Dichas directivas impedirán que se apliquen las directivas de barrera de información.
 
-1. Conéctese a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps). 
+1. Conéctese a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). 
 
-2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) y revise los resultados.
+2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) y revise los resultados.
 
     |Resultados  |Paso siguiente  |
     |---------|---------|

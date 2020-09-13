@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324216"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546762"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -402,7 +402,7 @@ Recuerde! Cuando se crea un DEP, se especifican dos claves que residen en dos de
   
 Para crear la DEP, siga estos pasos:
   
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conéctese a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conéctese a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) en una ventana de Windows PowerShell.
 
 2. Para crear un DEP, use el cmdlet New-DataEncryptionPolicy; para ello, escriba el siguiente comando.
 
@@ -486,7 +486,7 @@ Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante 
 
 ### <a name="validate-file-encryption"></a>Validar el cifrado de archivos
 
- Para validar el cifrado de los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams, [Conéctese a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)y, a continuación, use el cmdlet Get-SPODataEncryptionPolicy para comprobar el estado del espacio empresarial. La propiedad _State_ devuelve un valor de **registrado** si el cifrado de clave de cliente está habilitado y todos los archivos de todos los sitios se han cifrado. Si el cifrado todavía está en curso, este cmdlet proporciona información sobre el porcentaje de sitios que se ha completado.
+ Para validar el cifrado de los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams, [Conéctese a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)y, a continuación, use el cmdlet Get-SPODataEncryptionPolicy para comprobar el estado del espacio empresarial. La propiedad _State_ devuelve un valor de **registrado** si el cifrado de clave de cliente está habilitado y todos los archivos de todos los sitios se han cifrado. Si el cifrado todavía está en curso, este cmdlet proporciona información sobre el porcentaje de sitios que se ha completado.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

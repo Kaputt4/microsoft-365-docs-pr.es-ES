@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798066"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546886"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -151,7 +151,7 @@ Tenga en cuenta lo siguiente cuando coloque tanto Teams como grupos de Office 36
 
 - Como se ha explicado anteriormente, para colocar el contenido ubicado en Teams and Office 365 Groups Hold, tiene que especificar el buzón de correo y el sitio de SharePoint que están asociados con un grupo o un equipo.
 
-- Ejecute el cmdlet **Get-UnifiedGroup** en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para ver las propiedades de los grupos teams y Office 365. Esta es una buena forma de obtener la dirección URL del sitio que está asociado a un grupo de Office y Office 365. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
+- Ejecute el cmdlet **Get-UnifiedGroup** en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) para ver las propiedades de los grupos teams y Office 365. Esta es una buena forma de obtener la dirección URL del sitio que está asociado a un grupo de Office y Office 365. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -211,9 +211,9 @@ En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensi
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |
   |Número máximo de suspensiones de eDiscovery para una organización  <br/> |10 000  <br/> |
-  |Número máximo de buzones en una sola retención de exhibición de documentos electrónicos  <br/> |1.000  <br/> |
+  |Número máximo de buzones en una sola retención de exhibición de documentos electrónicos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola retención de exhibición de documentos electrónicos  <br/> |100  <br/> |
-  |Número máximo de escenarios mostrados en la Página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1.000|
+  |Número máximo de escenarios mostrados en la Página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]
