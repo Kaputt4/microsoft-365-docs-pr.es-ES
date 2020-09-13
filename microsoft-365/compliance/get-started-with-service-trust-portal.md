@@ -16,52 +16,52 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo acceder y usar el portal de confianza de servicios de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817629"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547478"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
 El portal de confianza de servicios de Microsoft proporciona una variedad de contenido, herramientas y otros recursos sobre las prácticas de seguridad, privacidad y cumplimiento de Microsoft.
-  
+
 ## <a name="accessing-the-service-trust-portal"></a>Acceso al portal de confianza de servicios
 
 El portal de confianza del servicio contiene detalles sobre la implementación de Microsoft de controles y procesos que protegen nuestros servicios en la nube y los datos del cliente que hay en él. Para obtener acceso a algunos de los recursos del portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de Microsoft Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar el contrato de Microsoft no divulgación para los materiales de cumplimiento.
-  
-**Los clientes existentes pueden acceder al portal de confianza de servicios** en [https://aka.ms/STP](https://aka.ms/STP) con una de las siguientes suscripciones en línea (de prueba o de pago): 
-  
+
+### <a name="existing-customers"></a>Clientes existentes
+
+Los clientes existentes pueden acceder al portal de confianza de servicios en <https://aka.ms/STP> con una de las siguientes suscripciones en línea (de prueba o de pago):
+
 - Microsoft 365
-
 - Dynamics 365
-
 - Azure
-    
+
  > [!NOTE]
- > Las cuentas de Azure Active Directory asociadas con las organizaciones tienen acceso a toda la gama de documentos y características como administrador de cumplimiento. Las cuentas de Microsoft creadas para uso personal tienen acceso limitado al contenido del portal de confianza de servicios. 
-  
-**Nuevos clientes y clientes que evalúen Microsoft Online Services**
-  
+ > Las cuentas de Azure Active Directory asociadas con las organizaciones tienen acceso a toda la gama de documentos y características como administrador de cumplimiento. Las cuentas de Microsoft creadas para uso personal tienen acceso limitado al contenido del portal de confianza de servicios.
+
+### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Nuevos clientes y clientes que evalúen Microsoft Online Services
+
 Para crear una cuenta nueva o para crear una cuenta de prueba, use uno de los siguientes formularios de suscripción (también se usa para las cuentas de prueba) para obtener acceso a STP.
-  
+
 - Inscríbase para obtener una nueva cuenta [de prueba de Microsoft 365 apps for Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) o una nueva [cuenta de prueba de Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - Registrarse para obtener una nueva [cuenta de prueba de Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- Regístrese para obtener una nueva [cuenta de prueba de Azure](https://go.microsoft.com/fwlink/?LinkId=722737). 
-    
+- Regístrese para obtener una nueva [cuenta de prueba de Azure](https://go.microsoft.com/fwlink/?LinkId=722737).
+
 Al registrarse para obtener una prueba gratuita o una suscripción, debe habilitar Azure Active Directory para que admita el acceso a STP.
-  
+
 ## <a name="using-the-service-trust-portal"></a>Uso del portal de confianza de servicios
 
 El contenido y las características del portal de confianza de servicios son accesibles desde el menú principal.
-  
+
 ![Menú portal de confianza de servicios](../media/STPMenus1.png)
 
 En las secciones siguientes se describe cada elemento en el menú principal.
-  
+
 ### <a name="service-trust-portal"></a>Portal de confianza del servicio
 
 El vínculo **portal de confianza de servicios** muestra la Página principal. Proporciona una forma rápida de volver a la Página principal.
@@ -79,16 +79,12 @@ El administrador de cumplimiento es una herramienta de evaluación de riesgos ba
 Proporciona una gran cantidad de información sobre la implementación y el diseño de seguridad con el objetivo de que sea más fácil para usted cumplir los objetivos de cumplimiento normativo mediante la comprensión del modo en que los servicios en la nube de Microsoft mantienen seguros sus datos. Para revisar el contenido, seleccione una de las siguientes opciones en el menú desplegable de **documentos de confianza** .
 
 - **Informes de auditoría:** Se muestra una lista de informes independientes de auditoría y evaluación de los servicios en la nube de Microsoft. Estos informes proporcionan información sobre el cumplimiento de los servicios en la nube de Microsoft con los estándares de protección de datos y los requisitos normativos, como:
-  
-    - Organización Internacional de normalización (ISO)
 
-    - Controles para la Organización de Servicios (SOC)
-
-    - Instituto Nacional de Normas y Tecnología (NIST)
-
-    - Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
-
-    - Reglamento general de protección de datos (RGPD)
+  - Organización Internacional de normalización (ISO)
+  - Controles para la Organización de Servicios (SOC)
+  - Instituto Nacional de Normas y Tecnología (NIST)
+  - Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
+  - Reglamento general de protección de datos (RGPD)
 
 - **Protección de datos:** Contiene una gran cantidad de recursos, como controles auditados, notas del producto, preguntas más frecuentes, pruebas de penetración, herramientas de evaluación de riesgos y guías de cumplimiento.
 
@@ -101,11 +97,11 @@ Proporciona información de cumplimiento específica de la industria y de la reg
 - **Industrias:** En este momento, esta página proporciona una página de aterrizaje específica del sector para la industria de servicios financieros. Contiene información como ofertas de cumplimiento, preguntas más frecuentes y historias de éxito. Los recursos para más industrias se publicarán en el futuro, pero puede encontrar recursos para más industrias en la página de **documentos de confianza > protección de datos** en el STP.
 
 - **Regiones:** Proporciona dictámenes legales sobre el cumplimiento de los servicios en la nube de Microsoft con diversas leyes de varios países. Los países específicos incluyen Australia, Canadá, República Checa, Dinamarca, Alemania, Polonia, Rumanía, España y Reino Unido.
-  
+
 ### <a name="trust-center"></a>Centro de confianza
 
 Vínculos al [centro de confianza de Microsoft](https://www.microsoft.com/trust-center), que proporciona más información sobre la seguridad, el cumplimiento y la privacidad en la nube de Microsoft. Esto incluye información sobre las capacidades de los servicios en la nube de Microsoft que puede usar para satisfacer requisitos específicos de la RGPD, la documentación útil para su responsabilidad RGPD y su conocimiento de las medidas técnicas y organizativas que Microsoft ha tomado para admitir el RGPD.
-  
+
 ### <a name="my-library"></a>Mi biblioteca
 
 Esta nueva característica le permite guardar (o *anclar*) documentos para que pueda obtener acceso rápidamente a ellos en la página mi biblioteca. También puede configurar notificaciones para que Microsoft le envíe un mensaje de correo electrónico cuando se actualicen los documentos de la mis bibliotecas. Para obtener más información, vea la sección [mi biblioteca](#my-library-1) de este artículo.
@@ -113,11 +109,11 @@ Esta nueva característica le permite guardar (o *anclar*) documentos para que p
 ### <a name="more"></a>Más
 
 Vaya a **más > administrador** para acceder a funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo está visible si ha iniciado sesión como administrador global. Hay dos opciones en el menú desplegable **Administración** :
-  
-- **Configuración:** Esta página le permite asignar acceso basado en roles (conocidos como *roles de usuario*) al administrador de cumplimiento.  Para obtener más información, vea:
-   
+
+- **Configuración:** Esta página le permite asignar acceso basado en roles (conocidos como *roles de usuario*) al administrador de cumplimiento.  Para más información, consulte:
+
   - [Permisos en el administrador de cumplimiento (clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-   
+
   - [Permisos en el administrador de cumplimiento (versión preliminar)](compliance-manager-overview.md#permissions)
 
   También puede configurar si las acciones en el administrador de cumplimiento se actualizan en función del estado de la misma acción en calificación segura. Esta funcionalidad solo se admite si usa la versión más reciente del administrador de cumplimiento. Para obtener más información, consulte [control de actualizaciones automáticas de puntuaciones seguras](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
@@ -127,18 +123,18 @@ Vaya a **más > administrador** para acceder a funciones administrativas que sol
 ### <a name="search"></a>Búsqueda
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**. Se muestra la página de **búsqueda** , con el término de búsqueda en el cuadro de búsqueda y los resultados de la búsqueda que se enumeran a continuación.
-  
+
 ![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados con las listas desplegables para refinar la lista de documentos mostrados. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, categorías de cumplimiento o prácticas de seguridad, regiones e industrias. Haga clic en el vínculo nombre del documento para descargar el documento.
-  
+
 Para enumerar controles a partir de evaluaciones en el administrador de cumplimiento relacionadas con los términos de búsqueda, haga clic en **Administrador de cumplimiento**. Los resultados de la búsqueda muestran la fecha en que se creó la evaluación, el nombre de la agrupación de la evaluación, el servicio aplicable en la nube de Microsoft y si el control es Microsoft o administrado por el cliente. Haga clic en el nombre del control para ver el control en la evaluación en Compliance Manager.
-  
+
 ![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-  
+
 > [!NOTE]
 > Los informes y documentos del portal de confianza de servicios están disponibles para su descarga durante al menos 12 meses después de su publicación o hasta que esté disponible una nueva versión del documento.
-  
+
 ## <a name="my-library"></a>Mi biblioteca
 
 Use la característica mi biblioteca para agregar documentos y recursos en el portal de confianza de servicios a la página mi biblioteca. Esto le permite acceder a los documentos que son relevantes para usted en un solo punto.  Para agregar un documento a mi biblioteca, haga clic en el menú **...** a la derecha de un documento y, a continuación, seleccione **Guardar en la biblioteca**. Puede agregar varios documentos a mi biblioteca haciendo clic en la casilla situada junto a uno o más documentos y, a continuación, hacer clic en **Guardar en la biblioteca** en la parte superior de la página.
@@ -161,14 +157,14 @@ Para acceder a estos paquetes de inicio, vaya a **Service Trust Portal > Industr
 
 ## <a name="localization-support"></a>Soporte de localización
 
-El portal de confianza del servicio le permite ver el contenido de la página en diferentes idiomas. Para cambiar el idioma de la página, simplemente haga clic en el icono del globo terráqueo en la esquina inferior izquierda de la página y seleccione el idioma de su elección. 
-  
+El portal de confianza del servicio le permite ver el contenido de la página en diferentes idiomas. Para cambiar el idioma de la página, simplemente haga clic en el icono del globo terráqueo en la esquina inferior izquierda de la página y seleccione el idioma de su elección.
+
 ![Portal de confianza de servicios: Opciones de contenido localizado](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
-  
-## <a name="feedback"></a>Comentarios
+
+## <a name="give-feedback"></a>Enviar comentarios
 
 Podemos ayudarle con las preguntas sobre el portal de confianza de servicios o con los errores que experimente cuando use el portal. También puede ponerse en contacto con nosotros con preguntas y comentarios sobre los informes de cumplimiento del portal de confianza del servicio y los recursos de confianza mediante el vínculo comentarios en la parte inferior de las páginas STP.
-  
+
 Su opinión es importante para nosotros. Haga clic en el botón comentarios de la parte inferior de la página para enviarnos comentarios sobre lo que ha hecho o no le gusta, o sugerencias que puede tener para mejorar nuestros productos o características del producto.
-  
+
 ![¿Qué tipo de comentarios tiene](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

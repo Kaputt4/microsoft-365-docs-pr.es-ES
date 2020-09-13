@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Compruebe si hay una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798192"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546064"
 ---
 # <a name="message-encryption-faq"></a>Preguntas frecuentes sobre el cifrado de mensajes
 
@@ -120,7 +120,7 @@ Para Outlook en la web, Outlook para iOS y Outlook para Android, puede cifrar lo
 
 El escritorio de Outlook no admite de forma nativa el cifrado de archivos adjuntos PDF. En su lugar, debe configurar las reglas de flujo de correo de Exchange o DLP para aplicar el cifrado a los datos adjuntos PDF en primer lugar. Cuando se envía correo desde el escritorio de Outlook con un archivo adjunto PDF, el cliente envía el mensaje con los datos adjuntos al servicio en primer lugar. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
 
-Para habilitar el cifrado de datos adjuntos PDF, ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+Para habilitar el cifrado de datos adjuntos PDF, ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true

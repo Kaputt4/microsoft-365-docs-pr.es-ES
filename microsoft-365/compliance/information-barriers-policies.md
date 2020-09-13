@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308079"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547448"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -71,7 +71,7 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 - Ninguna directiva de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. Las barreras de la información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar. Una vez que se habilitan las directivas de barrera de información y tiene habilitada la libreta jerárquica de direcciones, todos los usuarios ***que no estén incluidos*** en un segmento de barrera de información verán la [Libreta jerárquica de direcciones](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
 
 - Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo de Azure PowerShell.
-    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [Instalar el módulo de Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Consentimiento del administrador para barreras de la información en Microsoft Teams: cuando se implementan las directivas, las barreras de la información pueden quitar a las personas de las sesiones de chat en las que no se supone que están. Esto ayuda a garantizar que su organización siga cumpliendo con las directivas y las regulaciones. Use el siguiente procedimiento para habilitar las directivas de barrera de información para que funcionen según lo previsto en Microsoft Teams. 
@@ -258,7 +258,7 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 |Mismos     |Use el cmdlet **Get-OrganizationSegment** .<p>Consta `Get-OrganizationSegment` <p>Se mostrará una lista de todos los segmentos definidos para la organización.         |
 |Directivas de barrera de información     |Use el cmdlet **Get-InformationBarrierPolicy** . <p> Consta `Get-InformationBarrierPolicy` <p>Se mostrará una lista de las directivas de barrera de información definidas y su estado.       |
 |La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta `Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
-|Todas las aplicaciones de directiva de barrera de información|Utilizados `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
+|Todas las aplicaciones de directiva de barrera de información|Use `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

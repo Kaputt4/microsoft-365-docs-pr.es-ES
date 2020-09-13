@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo editar o quitar directivas para las barreras de información.
-ms.openlocfilehash: 6ac739ecff3921b4061d5d22410b2e2b1ada7af2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 7e027d9026818eefacd1c84949e3211c19ae8cf9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307943"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547468"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Editar (o quitar) directivas de barrera de información
 
@@ -38,7 +38,7 @@ Una vez que haya [definido las directivas de barrera de información](informatio
 |[Solución de problemas de barreras de información](information-barriers-troubleshooting.md)     |Consulte este artículo cuando surgen problemas inesperados con barreras de información.         |
 
 > [!IMPORTANT]
-> Para llevar a cabo las tareas descritas en este artículo, debe tener asignada una función adecuada, como una de las siguientes:<br/>-Administrador global de Microsoft 365 Enterprise<br/>-Administrador global<br/>-Administrador de cumplimiento<br/>-IB Compliance Management (este es un nuevo rol).<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [requisitos previos (para las directivas de barrera de información)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectar con el PowerShell del centro de seguridad & cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Para llevar a cabo las tareas descritas en este artículo, debe tener asignada una función adecuada, como una de las siguientes:<br/>-Administrador global de Microsoft 365 Enterprise<br/>-Administrador global<br/>-Administrador de cumplimiento<br/>-IB Compliance Management (este es un nuevo rol).<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [requisitos previos (para las directivas de barrera de información)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectar con el PowerShell del centro de seguridad & cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="edit-user-account-attributes"></a>Editar atributos de cuenta de usuario
 

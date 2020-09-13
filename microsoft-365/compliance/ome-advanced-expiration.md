@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Use el cifrado avanzado de mensajes de Office 365 para ampliar la seguridad del correo electrónico mediante la configuración de una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818693"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546164"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado con el Cifrado de mensajes avanzado de Office 365
 
@@ -40,7 +40,7 @@ Con Office 365 Advanced Message Encryption, siempre que aplique la personalizaci
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Crear una plantilla de personalización de marca personalizada para forzar la expiración del correo mediante PowerShell
 
-1. [Conéctese a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) con una cuenta que tenga permisos de administrador global en su organización.
+1. [Conéctese a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) con una cuenta que tenga permisos de administrador global en su organización.
 
 2. Ejecute el cmdlet New-OMEConfiguration.
 
@@ -50,9 +50,9 @@ Con Office 365 Advanced Message Encryption, siempre que aplique la personalizaci
 
 Donde:
 
-- `Identity`es el nombre de la plantilla personalizada.
+- `Identity` es el nombre de la plantilla personalizada.
 
-- `ExternalMailExpiryInDays`identifica el número de días que los destinatarios pueden conservar el correo antes de que expire. Puede usar cualquier valor entre 1 y 730 días.
+- `ExternalMailExpiryInDays` identifica el número de días que los destinatarios pueden conservar el correo antes de que expire. Puede usar cualquier valor entre 1 y 730 días.
 
 ## <a name="more-information-about-office-365-advanced-message-encryption"></a>Más información sobre el cifrado de mensajes avanzado de Office 365
 
