@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: ed8390b9c773e04723c0f409eb9649e20af0dac3
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 4dc328cdba9f01177b3e8239ab2c09317774eb31
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778404"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546548"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -316,7 +316,7 @@ Las acciones del administrador en cuanto a las directivas y a las etiquetas de r
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 
-Para usar los cmdlets de retención, primero debe [conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). A continuación, use cualquiera de los siguientes cmdlets:
+Para usar los cmdlets de retención, primero debe [conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). A continuación, use cualquiera de los siguientes cmdlets:
 
 - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
 

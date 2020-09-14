@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: 6e9fb0295f8958584878921c1fac362dc511be8f
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 745cea9a0851168999335e27b970276726b516d0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086617"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546668"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
@@ -33,7 +33,7 @@ Puede usar este ejemplo y aplicarlo en otros tipos de información confidencial 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exportar el archivo XML de las reglas actuales
 
-Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cumplimiento mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cumplimiento mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
   
 1. En el símbolo del sistema de PowerShell, escriba lo siguiente para mostrar en pantalla las reglas de la organización. Si no creó sus propias reglas, solo verá las reglas integradas y predeterminadas con la etiqueta “Paquete de reglas de Microsoft”.
 

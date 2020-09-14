@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilice la herramienta Búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de Teams de usuarios locales en un entorno híbrido de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 159c9c674feca4b01618289b194dd162c9020d59
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e3bb1f187faf3196dae6aa663af89dcb2b9e7e53
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818889"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547600"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Búsqueda de buzones basados en la nube para usuarios locales
 
@@ -110,7 +110,7 @@ Una vez habilitada la función, puede utilizar la búsqueda de contenido en el C
 
 Puede usar los cmdlets **New-ComplianceSearch** y **Set-ComplianceSearch** en el Centro de seguridad y cumplimiento PowerShell para buscar en el buzón basado en la nube a los usuarios locales. Como se explicó anteriormente, no es necesario presentar una solicitud de soporte para utilizar PowerShell para buscar datos de chat de Teams para usuarios locales. 
   
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Ejecute el siguiente comando de PowerShell para crear una búsqueda de contenido que busque en los buzones de correo basados en la nube de los usuarios locales.
 

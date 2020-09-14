@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d65b64f80dc9d8c3c799e8044d6fc5d3dfec4321
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357812"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547256"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -828,14 +828,14 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-| Opciones configuradas para una directiva de retención |NewRetentionComplianceRule |El administrador estableció la configuración de retención para una nueva directiva de retención. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule).|
+| Opciones configuradas para una directiva de retención |NewRetentionComplianceRule |El administrador estableció la configuración de retención para una nueva directiva de retención. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule).|
 | Etiqueta de retención creada |NewComplianceTag |El administrador creó una etiqueta de retención nueva.|
 | Directiva de retención creada |NewRetentionCompliancePolicy|El administrador creó una nueva directiva de retención.|
 | Configuración eliminada de una directiva de retención| RemoveRetentionComplianceRule<br/>| El administrador eliminó las opciones de configuración de una directiva de retención. Lo más probable es que esta actividad se registre cuando un administrador elimina una directiva de retención o ejecuta el cmdlet [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule).|
 | Etiqueta de retención eliminada |RemoveComplianceTag | El administrador eliminó una etiqueta de retención.|
 | Directiva de retención eliminada |RemoveRetentionCompliancePolicy<br/> |El administrador eliminó una directiva de retención. |
 | Opción de registro normativo habilitada para etiquetas de retención<br/> |SetRestrictiveRetentionUI |El administrador ejecutó el cmdlet [Set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) para que un administrador pueda seleccionar la opción de configuración de la interfaz de usuario para que una etiqueta de retención marque el contenido como un registro reglamentario.|
-| Configuración actualizada para una directiva de retención | SetRetentionComplianceRule | El administrador cambió la configuración de retención de una directiva de retención existente. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule). |
+| Configuración actualizada para una directiva de retención | SetRetentionComplianceRule | El administrador cambió la configuración de retención de una directiva de retención existente. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Etiqueta de retención actualizada |SetComplianceTag  | El administrador actualizó una etiqueta de retención existente.|
 | Directiva de retención actualizada |SetRetentionCompliancePolicy |El administrador actualizó una directiva de retención existente. Las actualizaciones que desencadenan este evento incluyen agregar o excluir ubicaciones de contenido a las que se aplica la directiva de retención.|
 

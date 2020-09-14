@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d6e37da7456cfbb0b7cbf8d986b54615aca60f0
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819190"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547622"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
@@ -62,9 +62,9 @@ Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requ
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Comprobar la nueva configuración de OME en PowerShell de Exchange Online
 
-Puede comprobar que su espacio empresarial de Microsoft 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Puede comprobar que su espacio empresarial de Microsoft 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
   
-1. [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Microsoft 365.
+1. [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Microsoft 365.
 
 2. Ejecute el cmdlet Get-IRMConfiguration.
 

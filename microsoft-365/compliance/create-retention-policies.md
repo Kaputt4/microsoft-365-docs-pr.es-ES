@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilice una directiva de retención para decidir de forma pro activa si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan determinadas condiciones.
-ms.openlocfilehash: 01a5137c3ab098101ebfeab71be38ee3ca28088f
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: bf449c15378226ffb0dd28a55903cbef35d32944
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426967"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546921"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -297,7 +297,7 @@ Debe usar PowerShell si necesita usar el [Bloqueo de conservación](retention.md
 
 Todas las directivas de retención con cualquier configuración admiten el Bloqueo de conservación. Sin embargo, al usar los comandos de PowerShell que siguen, observará que el parámetro de la **Carga de trabajo** siempre muestra **Exchange, SharePoint, OneDriveForBusines, Skype ModernGroup**, en lugar de reflejar las cargas de trabajo reales configuradas en la directiva. Este solo es un problema de visualización.
 
-1. [Conectarse al Centro de seguridad y cumplimiento PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conectarse al Centro de seguridad y cumplimiento PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Enumere sus directivas de retención y encuentre el nombre de la directiva que desea bloquear ejecutando [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). Por ejemplo:
     

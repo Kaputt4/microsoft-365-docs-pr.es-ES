@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327654"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546296"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
@@ -67,7 +67,7 @@ Vea el paso 1 de la sección [usar registros de auditoría de MailItemsAccessed 
 
 La auditoría del buzón genera registros de auditoría para obtener acceso a los mensajes de correo electrónico para que pueda asegurarse de que los mensajes de correo electrónico no se han visto comprometidos. Por este motivo, en los casos en los que no se está seguro de que se haya tenido acceso a ciertos datos, damos por sentado que ha sido así, registrando toda la actividad de acceso al correo.
 
-El uso de registros de auditoría de MailItemsAccessed para propósitos forenses suele realizarse después de que se haya resuelto la violación de datos y se haya eliminado el atacante. Para comenzar la investigación, debe identificar el conjunto de buzones que se han visto comprometidos y determinar el período de tiempo en el que el atacante ha tenido acceso a los buzones de su organización. Después, puede usar los cmdlets **Search-UnifiedAuditLog** o **Search-MailboxAuditLog** en el [PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para buscar registros de auditoría que correspondan a la violación de datos. 
+El uso de registros de auditoría de MailItemsAccessed para propósitos forenses suele realizarse después de que se haya resuelto la violación de datos y se haya eliminado el atacante. Para comenzar la investigación, debe identificar el conjunto de buzones que se han visto comprometidos y determinar el período de tiempo en el que el atacante ha tenido acceso a los buzones de su organización. Después, puede usar los cmdlets **Search-UnifiedAuditLog** o **Search-MailboxAuditLog** en el [PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) para buscar registros de auditoría que correspondan a la violación de datos. 
 
 Puede ejecutar uno de los siguientes comandos para buscar registros de auditoría de MailItemsAccessed:
 

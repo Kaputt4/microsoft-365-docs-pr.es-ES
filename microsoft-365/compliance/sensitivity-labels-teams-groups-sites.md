@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: bbed892481571706d8d43c3fa4d5aff7e9fb4c92
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: b81d598c3a80a915d9d20622a1b6d2e6f4517883
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427019"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547692"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -207,7 +207,7 @@ Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de ad
 
 1. Abra una sesión de PowerShell con la opción **Ejecutar como administrador**.
 
-2. Si no conoce el GUID de la etiqueta, vaya a: [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y obtenga la lista de etiquetas de confidencialidad y sus GUID.
+2. Si no conoce el GUID de la etiqueta, vaya a: [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) y obtenga la lista de etiquetas de confidencialidad y sus GUID.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -325,7 +325,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 
 3. Tome nota de los GUID para las etiquetas de confidencialidad que quiere aplicar a los grupos de Microsoft 365.
 
-4. Ahora [conéctese a PowerShell en línea de Exchange](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) en una ventana independiente de Windows PowerShell.
+4. Ahora [conéctese a PowerShell en línea de Exchange](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) en una ventana independiente de Windows PowerShell.
 
 5. Use el comando siguiente como ejemplo para obtener la lista de grupos que actualmente tienen la clasificación de "general":
 
