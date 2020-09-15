@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Agregue su dominio a Microsoft 365 en el centro de administración de Microsoft 365 agregando un registro DNS en su host DNS. El Asistente para la instalación le guiará por el proceso.
-ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315722"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775164"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -83,34 +83,26 @@ ms.locfileid: "47315722"
     
 5. Elija cómo desea comprobar que es el propietario del dominio.
     
-    1. Si el registrador de dominios usa la [conexión de dominio](#domain-connect-registrars-integrating-with-microsoft-365), seleccione **iniciar sesión**  >  **junto** y Microsoft [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md).
+    1. Si el registrador de dominios usa [conexión de dominio](#domain-connect-registrars-integrating-with-microsoft-365), Microsoft [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md) al tener que iniciar sesión en su registrador y confirmar la conexión a Microsoft 365. Se le devolverá al centro de administración y Microsoft, a continuación, comprobará el dominio automáticamente.
+    2. Puede usar un registro TXT para comprobar su dominio. Seleccione esta y seleccione **siguiente** para ver instrucciones sobre cómo agregar este registro DNS al sitio web de su registrador. Esto puede tardar hasta 30 minutos en comprobarse después de agregar el registro. 
+    3. Puede Agregar un archivo de texto al sitio web del dominio. Seleccione y descargue el archivo. txt desde el Asistente de configuración y, después, cargue el archivo en la carpeta de nivel superior del sitio Web. La ruta de acceso al archivo debe tener un aspecto similar a: `http://mydomain.com/ms39978200.txt` . Le confirmaremos que es el propietario del dominio buscando el archivo en el sitio Web.
     
-    2. Puede hacer que le envíen un correo electrónico al contacto registrado para el dominio con un código de comprobación. Si no reconoce o tiene acceso al correo electrónico en el registro, puede usar la tercera opción.
+6. Elija cómo desea que los cambios de DNS sean necesarios para que Microsoft use su dominio.
     
-    3. Puede usar un registro TXT para comprobar su dominio. Seleccione esta y seleccione **siguiente** para ver instrucciones sobre cómo agregar este registro DNS al sitio web de su registrador. Esto puede tardar hasta 30 minutos en comprobarse después de agregar el registro. 
-
-    4. Puede Agregar un archivo de texto al sitio web del dominio. Seleccione y descargue el archivo. txt desde el Asistente de configuración y, después, cargue el archivo en la carpeta de nivel superior del sitio Web. La ruta de acceso al archivo debe tener un aspecto similar a: `http://mydomain.com/ms39978200.txt` . Le confirmaremos que es el propietario del dominio buscando el archivo en el sitio Web.
-    
-6. Elija cómo desea realizar los cambios de DNS necesarios para que Office use su dominio.
-    
-    1. Elija **Agregar los registros DNS para mí** si desea que Office configure el DNS de forma automática. 
-    
-  
+    1. Elija **Agregar los registros DNS para mí** si su registrador admite la [conexión de dominio](#domain-connect-registrars-integrating-with-microsoft-365)y Microsoft [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md) al tener que iniciar sesión en su registrador y confirmar la conexión a Microsoft 365.
     2. Elija **voy a agregar los registros DNS yo mismo** si solo quiere adjuntar los servicios específicos de Microsoft 365 a su dominio o si desea omitir este por ahora y hacerlo más adelante. **Elija esta opción si sabe exactamente lo que hace.**
-    
-7. Si eligió  *Agregar los registros DNS*  , seleccione **siguiente** y verá una página con todos los registros que necesita agregar al sitio web de sus registradores para configurar el dominio. 
-    
-  
-  
+
+7. Si eligió *Agregar los registros DNS*  , seleccione **siguiente** y verá una página con todos los registros que necesita agregar al sitio web de sus registradores para configurar el dominio. 
+
     Si el portal no reconoce el registrador, puede [seguir estas instrucciones generales.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
     Consulte nuestra lista de [instrucciones específicas del host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) para buscar su host y siga los pasos para agregar todos los registros que necesite. 
     
     Si no conoce el proveedor de host DNS o el registrador de dominios de su dominio, vea [Encuentre su registrador de dominios o proveedor de host DNS](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Si desea esperar más tarde, desplácese hasta la parte inferior y seleccione **omitir este paso**.
+    Si desea esperar más adelante, anule la selección de todos los servicios y haga clic en **continuar**o bien, en el paso anterior de la conexión de dominio, elija **más opciones** y seleccione **omitir esta por ahora**.
     
-8. Haga clic en **Finalizar** (ya está listo). 
+8. Haga clic en **Finalizar** (ya está listo).
 
 ## <a name="add-or-edit-custom-dns-records"></a>Agregar o editar registros DNS personalizados
 
@@ -140,15 +132,16 @@ En el asistente, simplemente confirmaremos que es el propietario del dominio y, 
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Registradores de conexión de dominio que se integran con Microsoft 365
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
-- [123Reg](https://www.123-reg.co.uk/)
+- [EuroDNS](https://www.eurodns.com/)
 - [CloudFlare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer o WildWestDomains (revendedores de GoDaddy que usen el hospedaje de SecureServer DNS)
-    - [Dominios de MadDog](https://www.maddogdomains.com/)
-    - [CheapNames](https://www.cheapnames.com)
+    - Ejemplos:
+        - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
+        - [DomainRightNow](https://www.domainrightnow.com/)
 
 ### <a name="what-happens-to-my-email-and-website"></a>¿Qué ocurre con mi correo electrónico y el sitio web?
 

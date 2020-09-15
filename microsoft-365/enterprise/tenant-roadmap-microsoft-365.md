@@ -13,22 +13,22 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315758"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775152"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mapa de ruta del espacio empresarial para Microsoft 365
 
-Su inquilino de Microsoft 365 es el conjunto de servicios asignados a su organización. Este inquilino suele estar asociado con uno o más de los nombres de dominio DNS y actúa como un contenedor central para distintas suscripciones y las licencias que se asignan a las cuentas de usuario. 
+Su inquilino de Microsoft 365 es el conjunto de servicios asignados a su organización. Normalmente, este inquilino está asociado con uno o más de los nombres de dominio DNS y actúa como un contenedor central para distintas suscripciones y las licencias que se asignan a las cuentas de usuario.
 
 Cuando se crea un inquilino de Microsoft 365, se asigna a una ubicación geográfica específica. También puede tener un inquilino con varias ubicaciones geográficas y mover el espacio empresarial de una ubicación a otra.
 
-Una configuración de inquilino bien planeada y ejecutada es fundamental para obtenerla lista para los servicios básicos de la red y la identidad.
+Para preparar a su inquilino para los servicios básicos de la red y la identidad, es fundamental planear y ejecutar cuidadosamente la configuración del espacio empresarial.
 
-## <a name="plan"></a>Plan
+## <a name="plan"></a>Planear
 
 Para planear la implementación del espacio empresarial:
 
@@ -50,13 +50,13 @@ Para implementar el inquilino, [agregue los dominios DNS](https://docs.microsoft
 
 Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Microsoft 365 a varias regiones geográficas y países dentro de su espacio empresarial existente.
 
-[Introducción a](microsoft-365-multi-geo.md) la comprensión, planeación, configuración y administración con Microsoft 365 multi-geo.
+Para obtener más información acerca de Microsoft 365 multigeográfico, incluido cómo planear, configurar y administrar, [empiece aquí](microsoft-365-multi-geo.md).
 
 ## <a name="move-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino
 
 Microsoft sigue abrir nuevas ubicaciones geográficas del centro de recursos (GEOS) para los servicios de Microsoft 365. Estos nuevos GEOS de centro de recursos agregan capacidad y computan recursos para apoyar el crecimiento de la demanda y el uso de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes.
 
-Introducción a la comprensión y solicitud de un movimiento de datos geográficas con [movimiento de datos principales a un nuevo centro de datos de Microsoft 365 geográficamente](moving-data-to-new-datacenter-geos.md).
+Para obtener información sobre la geografía de Microsoft 365 Datacenter, incluido cómo solicitar un movimiento de datos geográficamente, [empiece aquí](moving-data-to-new-datacenter-geos.md).
 
 ## <a name="next-step"></a>Paso siguiente
 

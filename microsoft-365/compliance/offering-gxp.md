@@ -54,7 +54,7 @@ Las organizaciones de ciencias biológicas que crean soluciones GxP en Azure y O
 
 - [Directrices GxP de Microsoft 365](../downloads/microsoft-365-gxp-guidelines-july-2020.pdf): Notas del producto para usar Microsoft 365 al mismo tiempo que se cumplen las prácticas recomendadas y las normativas de GxP.
 - [Directrices GxP de Microsoft Dynamics 365](../downloads/microsoft-dynamics-365-gxp-guidelines-july-2020.pdf): Notas del producto para usar Microsoft Dynamics 365 al mismo tiempo que se cumplen las prácticas recomendadas y las normativas de GxP.
-- [Directrices GxP de Azure](https://aka.ms/gxpcompliance): Un conjunto integral de herramientas para usar Azure al mismo tiempo que se cumplen con las prácticas recomendadas y las normativas de GxP.
+- [Directrices GxP de Azure](https://aka.ms/gxpcompliance): Un conjunto integral de herramientas para usar Azure al mismo tiempo que se cumple con las prácticas recomendadas y las normativas de GxP.
 - [El uso de Azure con sistemas GxP](https://aka.ms/GXP-Azure-Strategies): Ayuda para las organizaciones de las ciencias biológicas al establecer una estrategia para crear aplicaciones de GxP.
 - Guías del FDA CFR título 21, parte 11: Obtenga ayuda para establecer una estrategia de calificación de [Azure](https://aka.ms/Azure-FDA-Guidelines) y [Office 365](https://aka.ms/o365-qualification-guideline) que cumpla con las directrices de la FDA para los registros electrónicos.
 

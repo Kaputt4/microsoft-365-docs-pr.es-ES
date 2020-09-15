@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa Premium, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 07/21/2020
-ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: e056f0c33aec180080a0d4e27e182d2d98877e6e
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560807"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775093"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft 365 Empresa Premium
 
@@ -157,7 +157,7 @@ Todos los complementos que pueden agregarse a Microsoft 365 Empresa Estándar p
 Sí, puede comprar una suscripción de voz de empresa. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) es una solución de telefonía diseñada para pequeñas y medianas empresas de hasta 300 usuarios que agrupan el sistema telefónico, la audioconferencia, un plan de llamadas nacionales, etc. Las capacidades del sistema telefónico que obtendrá incluyen el correo de voz, el identificador de llamada, el estacionamiento de llamadas, el desvío de llamadas, los operadores automáticos y las colas de llamadas. <br> Para averiguar si la voz empresarial está disponible en su país o región, consulte la [disponibilidad de país y región para la voz empresarial](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). Para obtener información sobre precios, consulte [precios de la voz empresarial](https://go.microsoft.com/fwlink/?linkid=2127221).
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>¿Pueden los clientes de Microsoft 365 Business Premium usar la protección contra amenazas avanzada de Microsoft defender? 
-Sí, la protección contra amenazas avanzada de Microsoft defender está disponible como un complemento para los clientes de Microsoft 365 empresa Premium.
+Sí, la protección contra amenazas avanzada de Microsoft defender está disponible como un complemento para Microsoft 365 empresa Premium cuando se adquiere de un [proveedor de soluciones en la nube de Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## <a name="partner-opportunity"></a>Oportunidad para partners
 

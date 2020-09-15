@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar los servicios en la nube para Microsoft 365.
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315770"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775140"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Plan de desarrollo de servicios en la nube para Microsoft 365
 
 Para obtener las ventajas de creatividad, trabajo en equipo y productividad de Microsoft 365 para empresas, implemente los servicios en la nube que mejor se adapten a las necesidades de su organización.
 
-Si tiene implementaciones basadas en servidor existentes para Exchange, SharePoint o Skype empresarial, vea el [mapa de ruta del software de cliente y servidor](client-server-software-roadmap-microsoft-365.md) para migrar toda la organización a Microsoft 365 para empresas. Esta guía básica incluye los productos de cliente de Microsoft Office, los productos de servidor de Office local y los dispositivos basados en Microsoft Windows.
+Si tiene implementaciones basadas en servidor existentes para Exchange, SharePoint o Skype empresarial y desea migrar toda la organización a Microsoft 365 para empresas, vea el plan de desarrollo de [software de cliente y servidor](client-server-software-roadmap-microsoft-365.md). Este plan de desarrollo incluye los productos de cliente de Microsoft Office, los productos de servidor de Office local y los dispositivos basados en Microsoft Windows &ndash; .
 
 ## <a name="deploy"></a>Implementar
 
@@ -40,7 +40,7 @@ Para implementar los servicios en la nube:
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Proporcionar formación a los usuarios](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-## <a name="manage"></a>Manage
+## <a name="manage"></a>Administrar
 
 Para administrar los servicios en la nube: 
 
@@ -56,12 +56,12 @@ Para administrar los servicios en la nube:
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Servicios de nube de Microsoft para Microsoft 365
 
-Para ver cómo la división de TI de Microsoft se ha implementado o está administrando los servicios en la nube de Microsoft 365:
+Para obtener información sobre cómo Microsoft IT ha implementado o está administrando los servicios en la nube de Microsoft 365:
 
 1. Vaya a [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Seleccione **contenido de búsqueda**.
-3. En **refinar resultados**, seleccione **profesionales de ti** en la **audiencia**y el servicio de nube que le interesa en **producto**.
+3. En **refinar resultados**, seleccione **profesionales de ti** en **audiencia**y, a continuación, en **producto**, seleccione un servicio de nube.
 
 ## <a name="next-step"></a>Paso siguiente
 
-Inicie la implementación de los servicios en la nube con [Get Ready](configure-services-and-applications.md).
+Inicie la implementación de servicios en la nube. Para obtener instrucciones, vea [Configure Microsoft 365 Enterprise Services and Applications](configure-services-and-applications.md).
