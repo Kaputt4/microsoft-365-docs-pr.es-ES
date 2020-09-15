@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289255"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817170"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurar un conector para importar datos de recursos humanos (versión preliminar)
 
-Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar los datos de recursos humanos relacionados con eventos como la retirada de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la [solución de administración de riesgos de Insiders](insider-risk-management.md) puede usar estos datos de recursos humanos para generar indicadores de riesgos que pueden ayudarle a identificar posibles robos de datos o actividad dañina por parte de los usuarios de la organización.
+Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar los datos de recursos humanos relacionados con eventos como la retirada de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la [solución de administración de riesgos de Insiders](insider-risk-management.md) puede usar los datos de recursos humanos para generar indicadores de riesgos que le ayuden a identificar posibles robos de datos o actividad malintencionada por parte de los usuarios de la organización.
 
 Configurar un conector para los datos de recursos humanos que las directivas de administración de riesgos de Insider pueden usar para generar indicadores de riesgo consiste en crear un archivo CSV que contenga los datos de recursos humanos, crear una aplicación en Azure Active Directory que se usa para la autenticación, crear un conector de datos de recursos humanos en el centro de cumplimiento de Microsoft 365 y, a continuación, ejecutar un script (en una base programada) que recopile los datos de recursos humanos en archivos CSV a la nube de Microsoft para que esté disponible para el Insider solución de administración de riesgos.
 
@@ -91,8 +91,8 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV para 
 | **Columna**  |  **Descripción**|
 |:------------|:----------------|
 |**EmailAddress**| Especifica la dirección de correo electrónico (UPN) del usuario que ha finalizado.|
-| **ResignationDate** | Especifica la fecha en la que el usuario terminó oficialmente su empleo en la organización. Por ejemplo, puede ser la fecha en la que el usuario ha dado su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **LastWorkingDate** | Especifica el último día de trabajo del usuario que ha finalizado. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **ResignationDate** | Especifica la fecha en la que el usuario terminó oficialmente su empleo en la organización. Por ejemplo, puede ser la fecha en la que el usuario ha dado su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **LastWorkingDate** | Especifica el último día de trabajo del usuario que ha finalizado. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 ### <a name="csv-file-for-job-level-changes-data"></a>Datos del archivo CSV para cambios en el nivel de trabajo
@@ -110,8 +110,8 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV para 
 | **Columna**|**Descripción**|
 |:--------- |:------------- |
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
-| **EffectiveDate** | Especifica la fecha en que se cambió oficialmente el nivel de trabajo del usuario. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Comentarios**| Especifica las notas que el evaluador ha proporcionado sobre el cambio de nivel de trabajo. Se trata de un parámetro de texto con un límite de 200 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
+| **EffectiveDate** | Especifica la fecha en que se cambió oficialmente el nivel de trabajo del usuario. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **Comentarios**| Especifica las notas que el evaluador ha proporcionado sobre el cambio de nivel de trabajo. Puede especificar un límite de 200 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 | **OldLevel**| Especifica el nivel de trabajo del usuario antes de que se modificara. Este es un parámetro de texto libre y puede contener una taxonomía jerárquica para su organización. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 | **NewLevel**| Especifica el nivel de trabajo del usuario después de que se modificó. Este es un parámetro de texto libre y puede contener una taxonomía jerárquica para su organización. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 |||
@@ -131,7 +131,7 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV para 
 | **Columna**|**Descripción**|
 |:----------|:--------------|
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
-| **EffectiveDate** | Especifica la fecha en la que se informará oficialmente al usuario sobre el resultado de la revisión del rendimiento. Puede ser la fecha en la que finalizó el ciclo de revisión del rendimiento. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **EffectiveDate** | Especifica la fecha en la que se informará oficialmente al usuario sobre el resultado de la revisión del rendimiento. Puede ser la fecha en la que finalizó el ciclo de revisión del rendimiento. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Comentarios**| Especifica cualquier comentario que el evaluador haya proporcionado al usuario para que la revise el rendimiento. Se trata de un parámetro de texto con un límite de 200 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 | **Rating**| Especifica la clasificación proporcionada para la revisión del rendimiento. Es un parámetro de texto y puede contener cualquier texto de forma libre que la organización use para reconocer la evaluación. Por ejemplo, "3 cumplieron las expectativas" o "2 por debajo de la media". Es un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 |||

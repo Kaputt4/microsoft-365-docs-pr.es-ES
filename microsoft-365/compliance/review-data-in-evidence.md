@@ -7,22 +7,21 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Obtenga información sobre los métodos para revisar los datos de su evidencia, como la visualización en formatos nativos, de texto o casi nativos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f094718bd14ee86ff8fdae482e86c22ecfbdc483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9df5c1f0fd15cb320e8359d09ab39202700dbc4b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034614"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816733"
 ---
 # <a name="review-the-data-in-evidence"></a>Revisar los datos de pruebas
 
@@ -34,7 +33,7 @@ Para agrupar documentos y obtener más ayuda para su revisión, seleccione un co
 
 ## <a name="view-documents-in-evidence"></a>Ver documentos en prueba
 
-Las investigaciones de datos (versión preliminar) le permiten mostrar contenido en varios visores distintos, con un propósito diferente para cada visor. Estos visores son los siguientes:
+La herramienta de investigación de datos (versión preliminar) le permite mostrar contenido en varios visores distintos, con un propósito diferente para cada visor. Estos visores son los siguientes:
 
 - Metadatos de archivo
 - Vista nativa
@@ -60,7 +59,7 @@ El visor nativo muestra la vista más exacta de un documento en su formato nativ
 
 ## <a name="text-view"></a>Vista de texto
 
-El visor de texto proporciona una vista del texto extraído de un archivo. Omite las imágenes incrustadas y el formato, pero esta vista es muy útil si está intentando revisar y comprender rápidamente el contenido de un documento. La vista de texto también incluye estas características:
+El visor de texto proporciona una vista del texto extraído de un archivo. Omite las imágenes incrustadas y el formato, pero esta vista es útil si está intentando revisar y comprender rápidamente el contenido de un documento. La vista de texto también incluye estas características:
 
   - Un contador de línea que hace que sea más fácil hacer referencia a partes específicas de un documento.
 

@@ -1,52 +1,34 @@
 ---
-title: Configurar los pilares de la protección contra amenazas de Microsoft para el entorno de pruebas de prueba
-description: Configurar los pilares de la protección contra amenazas de Microsoft, Office 365 ATP, Azure ATP, Microsoft Cloud App Security y Microsoft defender ATP para su entorno de laboratorio de prueba
-keywords: configurar Microsoft Threat Protection prueba, configuración de prueba de protección contra amenazas de Microsoft, configurar los pilares de la protección contra amenazas de Microsoft, pilares de la protección contra amenazas de Microsoft
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dolmont
-author: DulceMontemayor
-ms.localizationpriority: medium
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049945"
+Título: configuración de los pilares de la protección contra amenazas de Microsoft para el entorno piloto o del laboratorio de prueba Descripción: configure Microsoft Threat Protection pilares: Office 365 ATP, Azure ATP, Microsoft Cloud App Security y Microsoft defender ATP, para su laboratorio de prueba o entorno piloto.
+Palabras clave: configurar la versión de prueba de Microsoft Threat Protection, configuración de prueba de protección contra amenazas de Microsoft, configurar el proyecto piloto de Microsoft Threat Protection Pilot, configurar Microsoft Threat Protection pilares, búsqueda de Microsoft Threat Protection pilares. producto: eADQiWindows 10XVcnh Search. appverid: met150 ms. Prod: W10 ms. mktglfcycl: deploy ms. sitesec: Library ms. pageType: Security ms.  
+Autor: DulceMontemayor ms. localizationpriority: Media Manager: dansimp público: ITPro ms. Collection: M365-Security-Compliance ms. topic: article 
 ---
-# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurar los pilares de la protección contra amenazas de Microsoft para el entorno de pruebas de prueba
+
+# <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurar los pilares de la protección contra amenazas de Microsoft para el entorno de prueba o el entorno piloto
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
 
-La creación de un entorno de laboratorio de prueba de Microsoft Threat Protection y su implementación es un proceso de tres fases:
+La creación de un entorno piloto o un laboratorio de pruebas de Microsoft Threat Protection y su implementación es un proceso de tres fases:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Preparar el entorno de laboratorio de prueba de Microsoft Threat Protection" />
-      <br/>Fase 1: preparación</a><br>
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Preparar el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection" />
+      <br/>Fase 1: preparación </a><br>
     </td>
      <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Configurar el entorno de laboratorio de prueba de Microsoft Threat Protection" />
-      <br/>Fase 2: configuración</a><br>
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Configurar el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection" />
+      <br/>Fase 2: configuración </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configurar cada pilar de protección contra amenazas de Microsoft para el entorno de laboratorio de prueba de Microsoft Threat Protection y los puntos de conexión incorporados" />
-      <br/>Fase 3: configurar & incorporado</a><br>
+        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configurar cada pilar de protección contra amenazas de Microsoft para su laboratorio de prueba de Microsoft Threat Protection o entorno piloto y los extremos incorporados" />
+      <br/>Fase 3: configurar & incorporado </a><br>
 </td>
 
 
@@ -96,17 +78,17 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 5. Seleccione **datos adjuntos seguros de ATP** y seleccione la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams** .  
 ![Imagen of_Office 365 la página del centro de cumplimiento de & de seguridad donde puede activar ATP para SharePoint, OneDrive y Microsoft Teams](../../media/mtp-eval-36.png) <br>
 
-6. Haga clic en el icono + para crear una nueva Directiva de datos adjuntos seguros, aplíquela como dominio del destinatario en sus dominios. Haga clic en **Guardar **.
+6. Haga clic en el icono + para crear una nueva Directiva de datos adjuntos seguros, aplíquela como dominio del destinatario en sus dominios. Haga clic en **Guardar**.
 ![Imagen of_Office 365 la página del centro de cumplimiento de & de seguridad donde puede crear una nueva Directiva de datos adjuntos seguros](../../media/mtp-eval-37.png) <br>
  
 7. A continuación, seleccione la Directiva de **vínculos seguros ATP** y haga clic en el icono de lápiz para editar la directiva predeterminada.
 
-8. Asegúrese de que la opción no **realizar seguimiento cuando los usuarios hagan clic en vínculos seguros** no esté seleccionada, mientras que el resto de las opciones están seleccionadas. Vea [configuración de vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) para obtener más información. Haga clic en **Guardar **. 
+8. Asegúrese de que la opción no **realizar seguimiento cuando los usuarios hagan clic en vínculos seguros** no esté seleccionada, mientras que el resto de las opciones están seleccionadas. Vea [configuración de vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) para obtener más información. Haga clic en **Guardar**. 
 ![Página of_Office 365 de seguridad & de centro de cumplimiento que muestra que la opción no realiza un seguimiento cuando los usuarios hacen clic en seguro no está seleccionado](../../media/mtp-eval-38.png) <br>
 
 9. A continuación, seleccione la directiva **antimalware** , seleccione la opción predeterminada y elija el icono de lápiz.
 
-10. Haga clic en **configuración** y seleccione **sí y use el texto de notificación predeterminado** para habilitar la **respuesta de detección de malware**. Active el **filtro tipos de datos adjuntos comunes** en. Haga clic en **Guardar **.
+10. Haga clic en **configuración** y seleccione **sí y use el texto de notificación predeterminado** para habilitar la **respuesta de detección de malware**. Active el **filtro tipos de datos adjuntos comunes** en. Haga clic en **Guardar**.
 <br>![Página of_Office 365 de seguridad & de centro de cumplimiento que muestra que la respuesta de detección de malware está activada con notificación predeterminada y el filtro tipos de datos adjuntos comunes está activado](../../media/mtp-eval-39.png) <br>
   
 11. Vaya a [Office 365 Security & cumplimiento del centro](https://protection.office.com/homepage)  >  **Search**  >  de**Auditoría** búsqueda y active la auditoría.  
@@ -141,7 +123,7 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 7. Haga clic en **siguiente** en el tipo de implementación de sensor.
 <br>![Imagen of_Azure página protección avanzada contra amenazas, en la que debe hacer clic en siguiente para seguir el Asistente para sensores ATP de Azure](../../media/mtp-eval-48.png) <br>
  
-8. Copie la clave de acceso, ya que tendrá que escribirla a continuación en el asistente.
+8. Copie la clave de acceso porque tiene que escribirla a continuación en el asistente.
 ![Página de of_the de la imagen sensores donde debe copiar la clave de acceso que necesita escribir en la próxima página del Asistente para la configuración de sensores de ATP de Azure](../../media/mtp-eval-49.png) <br>
  
 9. Copie la clave de acceso en el asistente y haga clic en **instalar**. 
@@ -150,7 +132,7 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 10. Enhorabuena, ha configurado correctamente la protección contra amenazas avanzada de Azure en el controlador de dominio.
 ![Imagen of_Azure protección contra amenazas avanzadas Asistente para sensores ATP de Azure finalización de la instalación donde debe hacer clic en el botón Finalizar](../../media/mtp-eval-51.png) <br>
  
-11. En la sección configuración de ATP de Azure [Azure](https://go.microsoft.com/fwlink/?linkid=2040449) , seleccione **ATP de Windows Defender**y, a continuación, cambie el botón de alternancia a. Haga clic en **Guardar **. 
+11. En la sección configuración de ATP de Azure [Azure](https://go.microsoft.com/fwlink/?linkid=2040449) , seleccione **ATP de Windows Defender**y, a continuación, active la alternancia. Haga clic en **Guardar**. 
 ![Imagen of_the página de configuración de ATP de Azure Azure donde deberías activar el botón de alternancia de ATP de Windows Defender](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
@@ -170,12 +152,12 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 >[!NOTE]
 >Si no aparece este mensaje, puede significar que ya se ha habilitado la integración de datos de ATP de Azure. Sin embargo, si no está seguro, póngase en contacto con su administrador de TI para confirmarlo. 
 
-3. Vaya a **configuración**, active la opción de alternancia de **Azure ATP Integration** y, a continuación, haga clic en **Guardar**. 
-![Página de configuración de of_the de imágenes donde debe activar la alternancia de la integración de ATP de Azure y, a continuación, haga clic en guardar](../../media/mtp-eval-55.png) <br>
+3. Vaya a **configuración**, active el botón de alternancia **integración de ATP de Azure** y haga clic en **Guardar**. 
+![Página de configuración de of_the de imágenes donde debe activar el botón de alternancia integración de ATP de Azure y, a continuación, haga clic en guardar](../../media/mtp-eval-55.png) <br>
 >[!NOTE]
 >Para las nuevas instancias de ATP de Azure, este cambio de integración se activa automáticamente. Confirme que la integración de ATP de Azure se haya habilitado antes de continuar con el paso siguiente.
  
-4. En la configuración de detección en la nube, seleccione **integración de Microsoft defender ATP**y, a continuación, habilite la integración. Haga clic en **Guardar **.
+4. En la configuración de detección en la nube, seleccione **integración de Microsoft defender ATP**y, a continuación, habilite la integración. Haga clic en **Guardar**.
 ![Imagen of_the página ATP de Microsoft defender en la que la casilla bloquear aplicaciones no autorizadas de la integración de ATP de Microsoft defender está seleccionada. Haga clic en guardar.](../../media/mtp-eval-56.png) <br>
 
 5. En configuración de detección en la nube, seleccione **enriquecimiento de usuario**y, a continuación, habilite la integración con Azure Active Directory.
@@ -243,13 +225,13 @@ Haga clic en **Siguiente**.
 <br>
 
 Vaya al [centro de seguridad 365 de Microsoft](https://security.microsoft.com/homepage). Vaya a **configuración** y, a continuación, seleccione **protección contra amenazas de Microsoft**.
-<br>![Imagen of_Microsoft captura de pantalla de la opción de protección contra amenazas de la página Configuración del centro de seguridad 365 de Microsoft](../../media/mtp-eval-72b.png) <br>
+<br>![Imagen of_Microsoft captura de pantalla de la opción de protección contra amenazas de la página Configuración del centro de seguridad 365 de Microsoft ](../../media/mtp-eval-72b.png) <br>
 
 Para obtener una guía más completa, consulte [activar la protección contra amenazas de Microsoft](mtp-enable.md). 
 
-¡Enhorabuena! Acaba de crear su entorno de laboratorio de prueba de Microsoft Threat Protection. Ahora puede familiarizarse con la interfaz de usuario de Microsoft Threat Protection. Vea lo que puede aprender y sepa cómo usar cada panel para las tareas de la operación de seguridad diaria: [Microsoft Threat Protection Interactive Guide](https://aka.ms/MTP-Interactive-Guide).
+¡Enhorabuena! Acaba de crear su entorno de prueba de Microsoft Threat Protection o un entorno piloto. Ahora puede familiarizarse con la interfaz de usuario de Microsoft Threat Protection. Vea lo que puede aprender y cómo usar cada panel para las tareas de la operación de seguridad diaria: [Microsoft Threat Protection Interactive Guide](https://aka.ms/MTP-Interactive-Guide).
 
 A continuación, puede simular un ataque y ver cómo las capacidades cruzadas del producto detectan, crean alertas y responden automáticamente a un ataque de archivos no deseados en un extremo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 [Genere una alerta de prueba](generate-test-alert.md).

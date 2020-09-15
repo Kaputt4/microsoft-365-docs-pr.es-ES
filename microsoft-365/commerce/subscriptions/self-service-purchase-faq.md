@@ -17,13 +17,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653706"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816930"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
@@ -32,7 +32,7 @@ La compra de autoservicio ofrece a los usuarios una oportunidad para probar nuev
 La compra de autoservicio está disponible para la plataforma de alimentación (Power BI, Power apps y Power Automate), Project y Visio.
 
 > [!NOTE]
-> La compra de autoservicio no está disponible en India, y no está disponible para los clientes de la administración pública o educativa.
+> La compra de autoservicio no está disponible en India ni para los clientes de la administración pública o educativa. Project y Visio no están disponibles para la compra de autoservicio en Brasil y la República Democrática del Congo.
 
 ## <a name="making-a-self-service-purchase"></a>Realizar una compra de autoservicio
 

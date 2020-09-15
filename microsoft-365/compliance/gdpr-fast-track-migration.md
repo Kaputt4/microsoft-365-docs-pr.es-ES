@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 10a983297640ac4b65aaf181ef35ac19918e74fe
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416916"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547397"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Conjunto de herramientas de migración de FastTrack para cursar solicitudes de eliminación
 
@@ -30,20 +30,18 @@ ms.locfileid: "47416916"
 Si es un cliente que actualmente está realizando una migración de FastTrack, eliminar la cuenta de usuario no hará que se elimine la copia de datos que el equipo de FastTrack de Microsoft conserva, cosa que hace con el único propósito de completar la migración. Si quiere que el equipo de Microsoft FastTrack elimine también esa copia de datos durante la migración, curse una solicitud a través de este conjunto de herramientas. En el transcurso habitual de las actividades, Microsoft FastTrack eliminará todas las copias de datos cuando la migración finalice.
 
 ### <a name="supported-platforms"></a>Plataformas compatibles
+
 Microsoft admite la versión inicial de este conjunto de herramientas en la plataforma de Windows y en la consola de PowerShell. Este conjunto de herramientas admite las siguientes plataformas conocidas:
- 
+
 ***Tabla 1: plataformas admitidas por este conjunto de herramientas***
- 
-<!--start table here HEADER -->
- 
-|||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|
-| |**Windows 7**|**Windows 8**|**Windows 10**|**Windows Server 2012**|**Windows Server 2016**|
-|PS 5.0|No<br/>Compatible.|Compatible.|Compatible.|Compatible.|Compatible.|
-|PS 5.1|No<br/>Compatible.|Compatible.|Compatible.|Compatible.|Compatible.|
-|||
- 
-<!-- end of table -->
+
+****
+
+|Versión de PowerShell|Windows 7|Windows 8|Windows 10|Windows Server 2012|Windows Server 2016|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|5.0|No compatible|Compatible|Compatible.|Compatible.|Compatible|
+|5.1|No compatible|Compatible|Compatible.|Compatible.|Compatible.|
+|
 
 ### <a name="obtaining-the-toolset"></a>Obtener el conjunto de herramientas
 
@@ -53,7 +51,11 @@ Este conjunto de herramientas está disponible en la Galería de PowerShell de l
 
 ![PowerShell: permitir que la aplicación haga cambios](../media/fasttrack-run-powershell_image.png)
 
-Con la consola ya abierta, hay que configurar los permisos que permitan ejecutar scripts. Para ello, escriba el siguiente comando: "Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope: Process".
+Ahora que la consola está abierta, debe establecer permisos para ejecutar la secuencia de comandos. Escriba el siguiente comando para permitir que se ejecuten los scripts:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+```
 
 Se le pedirá que confirme esta acción, dado que el administrador puede cambiar el ámbito a su conveniencia.
 
@@ -63,53 +65,60 @@ Se le pedirá que confirme esta acción, dado que el administrador puede cambiar
 
 Ahora que la consola está configurada para permitir la ejecución de scripts, ejecute el siguiente comando para instalar el módulo:
 
->`Install-Module -Name Microsoft.FastTrack ` -Repository PSGallery `
->        
->               -WarningAction: SilentlyContinue `
->               -Force’
+```powershell
+Install-Module -Name Microsoft.FastTrack -Repository PSGallery -WarningAction SilentlyContinue -Force
+```
 
 ### <a name="prerequisites-for-module"></a>Requisitos previos del módulo
-Para ejecutar correctamente este módulo, puede que sea necesario instalar módulos dependientes para usarlos si aún no están instalados. Posiblemente deba reiniciar PowerShell.  
 
-Para enviar una solicitud de interesado, antes tiene que iniciar sesión con sus credenciales de Office 365; cuando especifique las credenciales apropiadas, se validará el estado de su cuenta de administrador global y se recopilará información del inquilino. 
+Para ejecutar correctamente este módulo, puede que sea necesario instalar módulos dependientes para usarlos si aún no están instalados. Posiblemente deba reiniciar PowerShell.
 
-**Login-FastTrackAccount -ApiKey: \<API Key provided by FastTrack MVM\>**
+Para poder enviar una DSR, primero debe iniciar sesión con sus credenciales de Office 365. Al escribir las credenciales correctas, se validará el estado de administrador global y se recopilará la información de espacio empresarial.
+
+```powershell
+Login-FastTrackAccount -ApiKey <API Key provided by FastTrack MVM>
+```
 
 Tras haber iniciado sesión correctamente, la clave y las credenciales se almacenarán para su uso con módulos FastTrack durante lo que quede de la sesión actual de PowerShell.
 
 Si necesita conectarse a un entorno de nube que no sea comercial, deberá agregar *-Environment* al comando *Login* con uno de los siguientes entornos válidos:
+
 - AzureCloud
 - AzureChinaCloud
 - AzureGermanCloud
 - AzureUSGovernmentCloud
 
-**Login-FastTrackAcccount -ApiKey\ <API Key provided by FastTrack MVM> -Environment: <entorno de nube\>**
+```powershell
+Login-FastTrackAccount -ApiKey <API Key provided by FastTrack MVM> -Environment <cloud environment>
+```
 
-Para enviar una solicitud de interesado, ejecute el siguiente comando: Submit-FastTrackGdprDsrRequest -DsrRequestUserEmail: SubjectUserEmail@mycompany.com
+Para enviar una solicitud DSR, ejecute el siguiente comando:
 
-Si el cmdlet se ejecuta correctamente, devolverá un objeto de identificador de transacción. Guárdelo.
+```powershell
+Submit-FastTrackGdprDsrRequest -DsrRequestUserEmail SubjectUserEmail@mycompany.com
+```
 
+Si se ejecuta correctamente, el cmdlet devolverá un objeto de Id. de la transacción. Guarde el Id. de la transacción.
 
 #### <a name="checking-the-status-of-a-request-transaction"></a>Comprobar el estado de una transacción de solicitud
 
-Ejecutar la siguiente función usando el identificador de transacción obtenido anteriormente: Get-FastTrackGdprDsrRequest -TransactionID: "identificadorDeTransacción"
+Ejecute la siguiente función con el Id. de la transacción que consiguió previamente:
+
+```powershell
+Get-FastTrackGdprDsrRequest -TransactionID "YourTransactionID"
+```
 
 #### <a name="transaction-status-codes"></a>Códigos de estado de la transacción
-<!--start table here no header -->
 
-|||
-|:-----|:-----|:-----|
-|**Transacción** |**Estado**|
-|**Created** |La solicitud se ha creado.|
+|Transacción|Estado|
+|---|---|
+|**Created**|La solicitud se ha creado.|
 |**Failed**|La solicitud no se ha podido crear. Vuelva a enviarla o póngase en contacto con el equipo de soporte técnico.|
 |**Completed**|La solicitud se ha completado y saneado.|
-|||
-
-<!-- end of table -->
+|
 
 <!-- original version: **Created**  Request has been created<br/>**Failed** Request failed to create, please resubmit, or contact support<br/>**Completed** Request has been completed and sanitized -->
 
+## <a name="learn-more"></a>Obtén más información
 
-## <a name="learn-more"></a>Más información
-[Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview
-)
+[Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

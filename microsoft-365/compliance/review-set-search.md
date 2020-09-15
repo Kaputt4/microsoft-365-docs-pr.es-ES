@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear y ejecutar una consulta en un conjunto de revisiones para organizar los datos para una revisión más eficiente en un caso de exhibición avanzada de documentos electrónicos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527440"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816723"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Consultar los datos de un conjunto de revisión
 
@@ -30,7 +30,7 @@ En la mayoría de los casos, será útil poder profundizar más en los datos de 
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Crear y ejecutar una consulta en un conjunto de revisiones
 
-Para crear y ejecutar una consulta en los documentos de un conjunto de revisiones, haga clic en **nueva consulta** en el conjunto de revisiones. Después de asignar un nombre a la consulta y definir las condiciones, haga clic en **Guardar** para guardar y ejecutar la consulta. Para ejecutar una consulta que se ha guardado previamente, haga clic en una consulta guardada.
+Para crear y ejecutar una consulta en los documentos de un conjunto de revisión, seleccione **nueva consulta** en el conjunto de revisiones. Después de asignar un nombre a la consulta y definir las condiciones, seleccione **Guardar** para guardar y ejecutar la consulta. Para ejecutar una consulta que se ha guardado previamente, seleccione una consulta guardada.
 
 ![Revisar establecer consultas](../media/AeDReviewSetQueries.png)
 
@@ -56,9 +56,9 @@ Hay varios tipos de tarjetas de condición:
 
 Además de las tarjetas de condición, puede usar un lenguaje de consulta similar a tipo KQL en la tarjeta Keywords para crear la consulta. El lenguaje de consulta para las consultas set de revisión admite operadores booleanos estándar, como **and**, **or**, **Not**y **Near**. También admite caracteres comodín de un solo carácter (?) y un comodín de varios caracteres (*).
 
-## <a name="using-filters"></a>Uso de filtros
+## <a name="filters"></a>Filtros
 
-Además de las consultas que puede guardar, puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a una consulta de conjunto de revisión. Esto le ayuda a restringir aún más los resultados mostrados por una consulta de conjunto de revisión.
+Además de las consultas que puede guardar, puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a una consulta de conjunto de revisión. El uso de filtros ayuda a restringir aún más los resultados mostrados por una consulta de conjunto de revisión.
 
 ![Revisar definir filtros](../media/AeDReviewSetFilters.png)
 

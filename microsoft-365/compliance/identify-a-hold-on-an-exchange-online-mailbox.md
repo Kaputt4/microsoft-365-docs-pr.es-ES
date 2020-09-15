@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo identificar los diferentes tipos de retenciones que se pueden colocar en un buzón de correo de Exchange online en Microsoft 365.
-ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547458"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816829"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -40,11 +40,9 @@ Microsoft 365 ofrece varias formas en que la organización puede evitar que el c
 
   Hay dos tipos de directivas de retención de Microsoft 365 que se pueden asignar a los buzones de correo.
 
-    - **Directivas de retención de ubicación específicas:** Estas son las directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox** en Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones de correo específicos.
+    - **Directivas de retención de ubicación específicas:** Estas son las directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox** en Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones de correo específicos. Para obtener más información acerca de este tipo de directiva de retención, consulte la sección [una directiva con inclusiones o exclusiones específicas](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) de la documentación de la Directiva de retención.
 
-    - **Directivas de retención de toda la organización:** Estas son las directivas que se asignan a todas las ubicaciones de contenido de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización.
-    
-  Para obtener más información, vea [aplicar una directiva de retención a toda la organización o a ubicaciones específicas](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
+    - **Directivas de retención de toda la organización:** Estas son las directivas que se asignan a todas las ubicaciones de contenido de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización. Para obtener más información acerca de este tipo de directiva de retención, vea la sección [una directiva que se aplica a ubicaciones completas](create-retention-policies.md#a-policy-that-applies-to-entire-locations) en la documentación de la Directiva de retención.
 
 - **[Etiquetas de retención de 365 de Microsoft](retention.md):** si un usuario aplica una etiqueta de retención de Microsoft 365 (una que esté configurada para conservar contenido o conservar y, a continuación, eliminar contenido) en *cualquier* carpeta o elemento del buzón, se aplica una retención al buzón como si el buzón estuviera en retención por juicio o asignado a una directiva de retención de Microsoft 365. Para obtener más información, consulte la sección [identificar buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) de este artículo.
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289821"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817175"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurar un conector para importar datos de recursos humanos en el gobierno de Estados Unidos (versión preliminar)
 
@@ -65,11 +65,11 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV:
 |**Nombre de columna**|**Descripción**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Especifica la dirección de correo electrónico del empleado que ha finalizado.|
-| **TerminationDate** <br/> |Especifica la fecha de finalización oficial del empleo de la persona en la organización. Por ejemplo, puede ser la fecha en la que el empleado dio su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Especifica el último día de trabajo del empleado que ha finalizado. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Especifica la fecha de finalización oficial del empleo de la persona en la organización. Por ejemplo, puede ser la fecha en la que el empleado dio su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Especifica el último día de trabajo del empleado que ha finalizado. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el mismo sistema que el script que ejecutó en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual, de modo que cualquier cosa que ejecute el script, los datos de finalización de empleado más actuales se cargarán en la nube de Microsoft.
+Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el mismo sistema que el script que ejecutó en el paso 4. Asegúrese de implementar una estrategia de actualización para que el archivo CSV siempre contenga la información más actual. De este modo, se garantiza que cualquier cosa que ejecute el script, los datos de finalización del empleado más actual se carguen en la nube de Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: crear el conector de recursos humanos
 
@@ -139,11 +139,11 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    |**Parámetro**|**Descripción**
    |:-----|:-----|:-----|
-   |`tenantId`|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja de **información general** del centro de administración de Azure ad. Se usa para identificar la organización.|
-   |`appId` |Este es el identificador de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. |
-   |`appSecret`|Este es el secreto de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
-   |`jobId`|Se trata del identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Se usa para asociar los datos de recursos humanos cargados en la nube de Microsoft con el conector de recursos humanos.|
-   |`csvFilePath`|Esta es la ruta de acceso del archivo CSV (que se almacena en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
+   |`tenantId`|El identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja de **información general** del centro de administración de Azure ad. Se usa para identificar la organización.|
+   |`appId` |El identificador de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. |
+   |`appSecret`|El secreto de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
+   |`jobId`|El identificador de trabajo del conector de recursos humanos que creó en el paso 3. Se usa para asociar los datos de recursos humanos cargados en la nube de Microsoft con el conector de recursos humanos.|
+   |`csvFilePath`|La ruta de acceso del archivo CSV (que se almacena en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
    |||
    
    A continuación, se muestra un ejemplo de la sintaxis del script del conector de recursos humanos con valores reales para cada parámetro:

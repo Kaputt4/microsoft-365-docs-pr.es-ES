@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f08d0adf58d0e6028fddabf7c88bc7c0bcf8aecb
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 0053d4b467ec0b03a158ef411c0a0643ff64292e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416634"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547428"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Office 365 para el RGPD y la CCPA
 
@@ -59,8 +59,8 @@ Para ayudarle a buscar información relevante a su caso de uso, esta guía está
 - **[Parte 3: Responder a solicitudes de interesado sobre registros generados por el sistema](#part-3-responding-to-dsrs-for-system-generated-logs):** cuando usa servicios de Office 365 Enterprise, Microsoft genera información como registros de servicio que registran el uso o el rendimiento de las características de los servicios en línea. La mayoría de los datos de servicio generados contienen identificadores anónimos generados por Microsoft y por ello a esta categoría se la denomina *registros generado por el sistema* en este documento. Aunque estos datos no pueden atribuirse a un interesado específico sin el uso de información adicional, algunos pueden ser considerados personales dentro de la definición del RGPD de "datos personales". La parte 3 de esta guía trata acerca de cómo acceder a, eliminar y exportar registros generados por el sistema.
 - **[Parte 4: Recursos adicionales para ayudarle con las solicitudes del interesado](#part-4-additional-resources-to-assist-you-with-dsrs):** en la parte 4 de esta guía aparecen escenarios limitados en los que Microsoft es el responsable de los datos cuando se usan determinados servicios y productos de Office 365.
 
->[!NOTE]
->En la mayoría de casos, cuando los usuarios de la organización usan servicios y productos de Microsoft Office 365, usted es el responsable de los datos y Microsoft el encargado de los datos. Como responsable de los datos, es responsable de responder directamente ante el interesado. Para ayudarle con esto, en las tres primeras partes de esta guía se detallan las funcionalidades técnicas disponibles para la organización a fin de responder a una solicitud DSR. Aunque en algunos escenarios limitados, Microsoft será el responsable de los datos cuando las personas usen determinados servicios y productos de Office 365. En estos casos, la información proporcionada en la parte 4 contiene instrucciones sobre cómo los interesados pueden enviar sus solicitudes DSR a Microsoft.
+> [!NOTE]
+> En la mayoría de casos, cuando los usuarios de la organización usan servicios y productos de Microsoft Office 365, usted es el responsable de los datos y Microsoft el encargado de los datos. Como responsable de los datos, es responsable de responder directamente ante el interesado. Para ayudarle con esto, en las tres primeras partes de esta guía se detallan las funcionalidades técnicas disponibles para la organización a fin de responder a una solicitud DSR. Aunque en algunos escenarios limitados, Microsoft será el responsable de los datos cuando las personas usen determinados servicios y productos de Office 365. En estos casos, la información proporcionada en la parte 4 contiene instrucciones sobre cómo los interesados pueden enviar sus solicitudes DSR a Microsoft.
 
 ### <a name="office-365-national-clouds"></a>Nubes nacionales de Office 365
 
@@ -111,8 +111,8 @@ En la tabla siguiente se enumeran las aplicaciones de Office 365 que usan los us
 | ![Icono de PowerPoint](../media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Icono de Word](../media/o365-word-64x64.png) <br> Word
 ||
 
->[!NOTE]
->La herramienta de Búsqueda de contenido eDiscovery no está disponible en [Office 365 ofrecido por 21Vianet (China)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china). Esto significa que no puede usar esta herramienta para buscar y exportar datos del cliente en las aplicaciones de Office 365 que se muestran en la tabla 1. Sin embargo, puede usar la herramienta eDiscovery local en Exchange Online para buscar contenido en buzones de usuario. También puede usar el Centro de eDiscovery en SharePoint Online para buscar contenido en cuentas de OneDrive y sitios de SharePoint. Como alternativa, puede pedirle a un propietario del documento que le ayude a buscar y realizar cambios en el contenido, eliminarlo o exportarlo si es necesario. Para obtener más información, vea:</br><br> * [Crear una búsqueda de eDiscovery local](https://docs.microsoft.com/exchange/create-in-place-ediscovery-search-exchange-2013-help)<br> * [Configurar un Centro de eDiscovery en SharePoint Online](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
+> [!NOTE]
+> La herramienta de Búsqueda de contenido eDiscovery no está disponible en [Office 365 ofrecido por 21Vianet (China)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china). Esto significa que no puede usar esta herramienta para buscar y exportar datos del cliente en las aplicaciones de Office 365 que se muestran en la tabla 1. Sin embargo, puede usar la herramienta eDiscovery local en Exchange Online para buscar contenido en buzones de usuario. También puede usar el Centro de eDiscovery en SharePoint Online para buscar contenido en cuentas de OneDrive y sitios de SharePoint. Como alternativa, puede pedirle a un propietario del documento que le ayude a buscar y realizar cambios en el contenido, eliminarlo o exportarlo si es necesario. Para obtener más información, vea:</br><br> * [Crear una búsqueda de eDiscovery local](https://docs.microsoft.com/exchange/create-in-place-ediscovery-search-exchange-2013-help)<br> * [Configurar un Centro de eDiscovery en SharePoint Online](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### <a name="using-content-search-to-find-personal-data"></a>Usar la Búsqueda de contenido para buscar datos personales
 
@@ -124,8 +124,8 @@ En esta guía se presupone que usted o la persona que busca datos personales que
 
 Después de encontrar los datos, puede realizar la acción específica para satisfacer la solicitud del interesado.
 
->[!NOTE]
->En Office 365 Alemania, el Centro de seguridad y cumplimiento se encuentra en https://protection.office.de.
+> [!NOTE]
+> En Office 365 Alemania, el Centro de seguridad y cumplimiento se encuentra en https://protection.office.de.
 
 #### <a name="searching-content-locations"></a>Buscar ubicaciones de contenido
 
@@ -136,8 +136,8 @@ Puede buscar los siguientes tipos de ubicaciones de contenido con la herramienta
 - Sitios de SharePoint Online. Esto incluye los sitios asociados con Grupos de Microsoft 365 y Microsoft Teams
 - Cuentas de OneDrive para la Empresa
 
->[!NOTE]
->En esta guía se asume que todos los datos que puedan ser relevantes para una investigación de DSR se almacenan en Office 365; en otras palabras, se almacenan en la nube de Microsoft. Los datos almacenados en el equipo local de un usuario o en las instalaciones de los servidores de archivos de la organización quedan fuera del ámbito de una investigación de DSR en datos almacenados en Office 365. Para más información sobre cómo responder a las solicitudes de datos de DSR en organizaciones locales, vea [RGPD para servidores locales de Office](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
+> [!NOTE]
+> En esta guía se asume que todos los datos que puedan ser relevantes para una investigación de DSR se almacenan en Office 365; en otras palabras, se almacenan en la nube de Microsoft. Los datos almacenados en el equipo local de un usuario o en las instalaciones de los servidores de archivos de la organización quedan fuera del ámbito de una investigación de DSR en datos almacenados en Office 365. Para más información sobre cómo responder a las solicitudes de datos de DSR en organizaciones locales, vea [RGPD para servidores locales de Office](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
 
 #### <a name="tips-for-searching-content-locations"></a>Sugerencias para la búsqueda de ubicaciones de contenido
 
@@ -270,9 +270,9 @@ Las siguientes secciones describen factores que debe tener en cuenta a la hora d
 
 Una persona que usa Office Lens (una aplicación para cámara compatible con dispositivos en iOS, Android y Windows) puede tomar una imagen de pizarras, documentos impresos, tarjetas de presentación y otras cosas que contengan una gran cantidad de texto. Office Lens usa una tecnología de reconocimiento óptico de caracteres que extrae el texto de una imagen y la guarda en un documento de Office, (como Word, PowerPoint o OneNote) o en un archivo PDF. Los usuarios pueden entonces cargar el archivo que contiene el texto de la imagen en su cuenta de OneDrive para la empresa en Office 365. Esto significa que puede usar la herramienta de Búsqueda de contenido para buscar, obtener acceso, eliminar y exportar datos de archivos que se han creado a partir de una imagen de Office Lens. Para obtener más información acerca de Office Lens, vea:
 
-- [Office Lens para iOS](https://support.microsoft.com/es-ES/office/microsoft-office-lens-for-ios-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
+- [Office Lens para iOS](https://support.microsoft.com/office/microsoft-office-lens-for-ios-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
 - [Office Lens para Android](https://support.office.com/article/Office-Lens-for-Android-ec124207-0049-4201-afaf-b5874a8e6f2b)
-- [Office Lens para Windows](https://support.microsoft.com/es-ES/office/office-lens-for-windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
+- [Office Lens para Windows](https://support.microsoft.com/office/office-lens-for-windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
 
 #### <a name="onedrive-for-business-and-sharepoint-online-experience-settings"></a>Configuración de la experiencia de OneDrive para la Empresa y SharePoint Online
 
@@ -357,29 +357,28 @@ Aquí tiene las instrucciones específicas para buscar un bloc de notas de clase
 1. Ejecute una búsqueda de contenido con los criterios de búsqueda siguientes:
 
    - Buscar todos los sitios de SharePoint Online
-
    - Incluya el nombre del equipo de clase como palabra clave de búsqueda; por ejemplo, "Biología 9C".
 
 2. Obtenga una vista previa de los resultados y busque el elemento correspondiente al Bloc de notas de clase.
 3. Seleccione ese elemento y, a continuación, copie la ruta que se muestra en el panel de detalles. Esta es la carpeta raíz del Bloc de notas de clase.
 4. Edite la búsqueda que creó en el paso 1, cambie el nombre de la clase en la consulta de palabras clave con la ruta de la carpeta del Bloc de notas de clase y ponga delante de la ruta de la carpeta la propiedad del sitio **ruta**; por ejemplo, **ruta:"<https://contosoedu.onmicrosoft.com/sites/9C> Biología/SiteAssets/bloc de notas de Biología 9C/"**. Asegúrese de incluir las comillas y la barra invertida final.
-5. Agregue una condición de búsqueda, seleccione la condición de tipo de archivo y use una para el valor del tipo de archivo. Esto devuelve todos los archivos de OneNote en los resultados de búsqueda. La sintaxis de la palabra clave resultante tendría un aspecto similar a este:[](#building-search-queries-to-find-personal-data)
+5. Agregue una condición de búsqueda, seleccione la condición de tipo de archivo y use una para el valor del tipo de archivo. Esto devuelve todos los archivos de OneNote en los resultados de búsqueda. La sintaxis de la palabra clave resultante tendría un aspecto similar a [este](#building-search-queries-to-find-personal-data):
 
    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
 
-6.  Vuelva a ejecutar la búsqueda de contenido. Los resultados de búsqueda deben incluir todos los archivos de OneNote del Bloc de notas de clase del equipo de clase.
+6. Vuelva a ejecutar la búsqueda de contenido. Los resultados de búsqueda deben incluir todos los archivos de OneNote del Bloc de notas de clase del equipo de clase.
 
 #### <a name="microsoft-to-do"></a>Microsoft To Do
 
-Las *tareas*, que se guardan en las *listas de tareas pendientes* en Microsoft To Do se guardan como tareas en el buzón de correo electrónico del usuario de Exchange Online. Esto significa que puede usar la herramienta de búsqueda de contenido para localizar, acceder, borrar y exportar cosas que hacer. Para obtener más información, consulte [Configurar Microsoft To Do](https://support.microsoft.com/es-ES/office/set-up-microsoft-to-do-490c1a8c-2333-4952-8125-841afadb9620).
+Las *tareas*, que se guardan en las *listas de tareas pendientes* en Microsoft To Do se guardan como tareas en el buzón de correo electrónico del usuario de Exchange Online. Esto significa que puede usar la herramienta de búsqueda de contenido para localizar, acceder, borrar y exportar cosas que hacer. Para obtener más información, consulte [Configurar Microsoft To Do](https://support.microsoft.com/office/set-up-microsoft-to-do-490c1a8c-2333-4952-8125-841afadb9620).
 
 #### <a name="skype-for-business"></a>Skype Empresarial
 
 A continuación se muestra información adicional acerca de cómo acceder a datos personales, verlos y exportarlos en Skype Empresarial.
 
-- Los archivos adjuntados a una reunión se conservan en ella durante 180 días y después dejan de ser accesibles. Los participantes a la reunión pueden acceder a ellos tras unirse a la misma desde la convocatoria de reunión y, luego, revisarlos o descargarlos. Consulte la sección "Usar los datos adjuntos de la reunión" en [Precargar datos adjuntos para una reunión de Skype Empresarial](https://support.microsoft.com/es-ES/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251).
+- Los archivos adjuntados a una reunión se conservan en ella durante 180 días y después dejan de ser accesibles. Los participantes a la reunión pueden acceder a ellos tras unirse a la misma desde la convocatoria de reunión y, luego, revisarlos o descargarlos. Consulte la sección "Usar los datos adjuntos de la reunión" en [Precargar datos adjuntos para una reunión de Skype Empresarial](https://support.microsoft.com/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251).
 - Las conversaciones de Skype Empresarial se conservan en la carpeta Historial de conversaciones en buzones de usuario. Puede usar la búsqueda de contenido para buscar datos en buzones en las conversaciones de Skype.
 - Un interesado puede exportar sus contactos de Skype Empresarial. Para ello, debe hacer clic en un grupo de contactos de Skype Empresarial y después hacer clic en **Copiar**. A continuación, puede pegar la lista de direcciones de correo electrónico en un texto o un documento de Word.
 - Si el buzón de Exchange Online de un participante de la reunión se coloca en Suspensión por litigio o se asigna a una directiva de retención de Office 365, se conservan los archivos adjuntados a una reunión en el buzón de participantes. Puede usar la Búsqueda de contenido para buscar los archivos en el buzón de participantes si no ha expirado el período de retención del archivo. Para obtener más información acerca de la retención de archivos, vea [Conservar archivos grandes adjuntados a una reunión de Skype Empresarial](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting).
@@ -429,8 +428,8 @@ Para cumplir una solicitud de interesado de exportación, puede exportar documen
 
 Al exportar los resultados de una búsqueda de contenido, es posible descargar los elementos de correo electrónico como archivos PST o mensajes individuales (archivos .msg). Al exportar documentos y listas de SharePoint Online y OneDrive para la Empresa, se exportan copias en los formatos de archivo nativo. Por ejemplo, las listas de SharePoint se exportan como archivos CSV y las páginas web se exportan como archivos .aspx o html.
 
->[!NOTE]
->Exportar elementos de buzón de un buzón de usuario mediante la búsqueda de contenido requiere que el usuario (de cuyo buzón va a exportar elementos) tenga asignada una licencia de Exchange Online Plan 2. 
+> [!NOTE]
+> Exportar elementos de buzón de un buzón de usuario mediante la búsqueda de contenido requiere que el usuario (de cuyo buzón va a exportar elementos) tenga asignada una licencia de Exchange Online Plan 2. 
 
 Para exportar y descargar elementos:
 
@@ -471,12 +470,12 @@ Cuando investiga o se prepara para eliminar datos personales en respuesta a una 
 
 - **Eliminación temporal y eliminación definitiva**: en servicios de Office 365 como Exchange Online, SharePoint Online y OneDrive para la Empresa existe el concepto de *eliminación temporal* y *eliminación definitiva*, relacionado con la recuperación de un elemento eliminado (normalmente durante un tiempo limitado) antes de que se elimine permanentemente de la nube de Microsoft sin posibilidad de recuperación. En este contexto, se puede recuperar un elemento tras su eliminación temporal por parte de un usuario o administrador durante un período de tiempo antes de ser eliminado permanentemente. Cuando un elemento ha sido eliminado permanentemente, se marca para su eliminación permanente y se purga cuando lo procesa el servicio de Office 365 correspondiente. Aquí se indica cómo se desarrolla la eliminación temporal y la eliminación definitiva para elementos en buzones de correo y sitios (independientemente de si el elemento es eliminado por el propietario de los datos o por un administrador):
 
-    - **Buzones de correo:** la eliminación temporal de un elemento se realiza cuando se elimina de la carpeta Elementos Eliminados o cuando un usuario elimina un elemento presionando **Mayús + Supr**. Tras la eliminación temporal de un elemento, este se mueve a la carpeta Elementos Recuperables del buzón de correo. En este momento, el elemento puede ser recuperado por el usuario antes de que expire el período de retención de elementos eliminados (en Office 365, el período de retención de elementos eliminados es de 14 días, pero un administrador puede extenderlo hasta 30 días). Cuando expira el período de retención, el elemento es eliminado permanentemente y se mueve a una carpeta oculta (denominada carpeta *Purgas*). El elemento se eliminará permanentemente (purgado) de Office 365 la próxima vez que se procese el buzón de correo (los buzones se procesan una vez cada 7 días).
+  - **Buzones de correo:** la eliminación temporal de un elemento se realiza cuando se elimina de la carpeta Elementos Eliminados o cuando un usuario elimina un elemento presionando **Mayús + Supr**. Tras la eliminación temporal de un elemento, este se mueve a la carpeta Elementos Recuperables del buzón de correo. En este momento, el elemento puede ser recuperado por el usuario antes de que expire el período de retención de elementos eliminados (en Office 365, el período de retención de elementos eliminados es de 14 días, pero un administrador puede extenderlo hasta 30 días). Cuando expira el período de retención, el elemento es eliminado permanentemente y se mueve a una carpeta oculta (denominada carpeta *Purgas*). El elemento se eliminará permanentemente (purgado) de Office 365 la próxima vez que se procese el buzón de correo (los buzones se procesan una vez cada 7 días).
 
-    - **Sitios de SharePoint Online y OneDrive para la Empresa**: cuando un archivo o documento se elimina, este se mueve a la Papelera de reciclaje del sitio (también denominada *Papelera de reciclaje de primer nivel*, que es similar a la Papelera de reciclaje de Windows). El elemento permanece en la Papelera de reciclaje durante 93 días (el período de retención de elementos eliminados para sitios en Office 365). Transcurrido ese período, el elemento se mueve automáticamente a la Papelera de reciclaje de la colección de sitios, que también se denomina la *Papelera de reciclaje de segundo nivel*. (Tenga en cuenta que los usuarios o administradores, con los permisos adecuados, pueden eliminar elementos de la Papelera de reciclaje de primer nivel). En este momento, el elemento se encuentra en eliminación blanda; aún puede ser recuperado por el usuario o administrador de SharePoint Online o por un administrador de colección de sitios de OneDrive para la Empresa). Cuando se elimina un elemento de la Papelera de reciclaje de segundo nivel (manual o automáticamente) queda eliminado permanentemente y no es accesible para el usuario o administrador. Existe un período de retención de 93 días para las papeleras de reciclaje del primer nivel y del segundo nivel. Esto significa que la retención de la Papelera de reciclaje de segundo nivel se inicia cuando el elemento se elimina en primer lugar. Por lo tanto, el tiempo de retención máximo total es de 93 días para ambas papeleras de reciclaje.
+  - **Sitios de SharePoint Online y OneDrive para la Empresa**: cuando un archivo o documento se elimina, este se mueve a la Papelera de reciclaje del sitio (también denominada *Papelera de reciclaje de primer nivel*, que es similar a la Papelera de reciclaje de Windows). El elemento permanece en la Papelera de reciclaje durante 93 días (el período de retención de elementos eliminados para sitios en Office 365). Transcurrido ese período, el elemento se mueve automáticamente a la Papelera de reciclaje de la colección de sitios, que también se denomina la *Papelera de reciclaje de segundo nivel*. (Tenga en cuenta que los usuarios o administradores, con los permisos adecuados, pueden eliminar elementos de la Papelera de reciclaje de primer nivel). En este momento, el elemento se encuentra en eliminación blanda; aún puede ser recuperado por el usuario o administrador de SharePoint Online o por un administrador de colección de sitios de OneDrive para la Empresa). Cuando se elimina un elemento de la Papelera de reciclaje de segundo nivel (manual o automáticamente) queda eliminado permanentemente y no es accesible para el usuario o administrador. Existe un período de retención de 93 días para las papeleras de reciclaje del primer nivel y del segundo nivel. Esto significa que la retención de la Papelera de reciclaje de segundo nivel se inicia cuando el elemento se elimina en primer lugar. Por lo tanto, el tiempo de retención máximo total es de 93 días para ambas papeleras de reciclaje.
 
->[!NOTE]
->Comprender las acciones que dan lugar a la eliminación temporal o definitiva de este debate le ayudará a determinar cómo eliminar datos de forma que reúna los requisitos RGPD y responda a los requisitos de RGPD al responder a una solicitud de eliminación.
+> [!NOTE]
+> Comprender las acciones que dan lugar a la eliminación temporal o definitiva de este debate le ayudará a determinar cómo eliminar datos de forma que reúna los requisitos RGPD y responda a los requisitos de RGPD al responder a una solicitud de eliminación.
 
 - **Directivas y suspensiones legales:** Office 365 permite dejar «en espera» buzones y sitios. Si un buzón o un sitio está en espera, esto significa que no se elimina nada de forma permanente hasta que finalice el período de espera del elemento o hasta que se elimine la espera. Esto es importante en el contexto de eliminar el contenido de un cliente en respuesta a un DSR: si un elemento se elimina de forma permanente de una ubicación en espera, el elemento no se eliminará permanentemente de Office 365. Por lo tanto, es posible que un administrador de TI pueda recuperarlo. Si su organización tiene un requisito o directiva según la cual los datos se eliminan de forma permanente y no se pueden recuperar en Office 365 como respuesta a un DSR, entonces debe quitar la espera de un buzón o un sitio para eliminar de forma permanente los datos en Office 365. Es probable que las directrices de respuesta a las DSR de su organización incluyan un proceso para determinar qué tiene prioridad: una solicitud de eliminación específica de un DSR o una situación de espera por razones legales. Usted puede quitar una espera para eliminar elementos específicos y, tras eliminarlos, volver a implementarla.
 
@@ -491,17 +490,17 @@ Este es el proceso general para eliminar documentos de sitios.
 3. Vaya a la Papelera de reciclaje de primer nivel (la Papelera de reciclaje del sitio) y elimine el mismo documento que eliminó en el paso anterior. El documento se envía a la Papelera de reciclaje de segundo nivel. **En este momento, el documento está eliminado de forma temporal**.
 4. Vaya a la Papelera de reciclaje de segundo nivel (la Papelera de reciclaje de la colección de sitios) y elimine el mismo documento que eliminó de la Papelera de reciclaje de primer nivel. **En este momento, el documento se ha eliminado de forma permanente**.
 
->[!IMPORTANT]
->No puede eliminar un documento que se encuentra en un sitio que está en suspensión (con una de las funciones de suspensión legal de Office 365). En caso de que una solicitud de eliminación de DSR tenga prioridad sobre una suspensión legal, tendrá que quitarse la retención del sitio para que un documento pueda eliminarse definitivamente.
+> [!IMPORTANT]
+> No puede eliminar un documento que se encuentra en un sitio que está en suspensión (con una de las funciones de suspensión legal de Office 365). En caso de que una solicitud de eliminación de DSR tenga prioridad sobre una suspensión legal, tendrá que quitarse la retención del sitio para que un documento pueda eliminarse definitivamente.
 
 Vea los temas siguientes para obtener procedimientos detallados.
 
-- [Eliminar un archivo, carpeta o vínculo de una biblioteca de documentos de SharePoint](https://support.microsoft.com/es-ES/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)
-- [Eliminar elementos o vaciar la papelera de reciclaje de un sitio de SharePoint](https://support.microsoft.com/es-ES/office/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e)
-- [Eliminar elementos de la papelera de reciclaje de la colección de sitios](https://support.microsoft.com/es-ES/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)
+- [Eliminar un archivo, carpeta o vínculo de una biblioteca de documentos de SharePoint](https://support.microsoft.com/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)
+- [Eliminar elementos o vaciar la papelera de reciclaje de un sitio de SharePoint](https://support.microsoft.com/office/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e)
+- [Eliminar elementos de la papelera de reciclaje de la colección de sitios](https://support.microsoft.com/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)
 - La sección "Obtener acceso a los documentos de OneDrive para la Empresa" en [Obtener acceso a los datos de un antiguo usuario y realizar una copia de seguridad](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data).
 - [Eliminar archivos o carpetas en OneDrive para la Empresa](https://support.office.com/article/Delete-files-or-folders-in-OneDrive-21fe345a-e488-4fa7-932b-f053c1bebe8a)
-- [Eliminar una lista de SharePoint](https://support.microsoft.com/es-ES/office/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d)
+- [Eliminar una lista de SharePoint](https://support.microsoft.com/office/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d)
 - [Eliminar elementos de lista en SharePoint Online](https://support.office.com/article/delete-list-items-in-sharepoint-online-db722233-4a38-4889-a6cf-4b33fe5c60c0)
 
 ### <a name="deleting-a-sharepoint-site"></a>Eliminar un sitio de SharePoint
@@ -570,8 +569,8 @@ Como se ha explicado anteriormente, si elimina de forma permanente elementos de 
 
 Su organización puede determinar qué elementos eliminar permanentemente al expirar la duración de retención cumplan los requisitos para una solicitud de interesado de eliminación. Sin embargo, si usted determina que deben eliminarse inmediatamente elementos del buzón de Office 365, tendrá que quitar la suspensión del buzón y luego eliminar permanentemente los elementos del buzón. Para obtener instrucciones detalladas, consulte [Eliminar elementos de la carpeta elementos recuperables de buzones en la nube en espera](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
->[!NOTE]
->Para eliminar definitivamente elementos del buzón de correo para satisfacer la solicitud de interesado siguiendo el procedimiento del tema anterior, puede que tenga que eliminar temporalmente dichos elementos mientras el buzón de correo sigue retenido para poder moverlos a la carpeta Elementos recuperables.
+> [!NOTE]
+> Para eliminar definitivamente elementos del buzón de correo para satisfacer la solicitud de interesado siguiendo el procedimiento del tema anterior, puede que tenga que eliminar temporalmente dichos elementos mientras el buzón de correo sigue retenido para poder moverlos a la carpeta Elementos recuperables.
 
 ## <a name="deleting-a-user"></a>Eliminar un usuario
 
@@ -588,11 +587,11 @@ Después de eliminar una cuenta de usuario:
 - Algunas aplicaciones de Office 365 eliminan información sobre el usuario. Por ejemplo, en Microsoft Flow, el usuario eliminado se elimina de la lista de propietarios para un flujo compartido.
 - Los registros generados por el sistema sobre el interesado, con la excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio, se eliminarán 30 días después de que se elimine la cuenta de usuario. Para más información, vea la sección [Eliminar registros generados por el sistema](#deleting-system-generated-logs).
 
->[!IMPORTANT]
->Después de eliminar una cuenta de usuario, ese usuario ya no podrá iniciar sesión en Office 365 ni en los productos o servicios de los que disponía anteriormente en su cuenta profesional o educativa. Ese usuario tampoco podrá iniciar ninguna solicitud DSR directamente a través de Microsoft en instancias en las que Microsoft es el responsable de los datos. Para obtener más información, vea la sección [Productos y servicios autenticados con el identificador de organización por los que Microsoft es responsable de datos](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) de la parte 4 de esta guía.
+> [!IMPORTANT]
+> Después de eliminar una cuenta de usuario, ese usuario ya no podrá iniciar sesión en Office 365 ni en los productos o servicios de los que disponía anteriormente en su cuenta profesional o educativa. Ese usuario tampoco podrá iniciar ninguna solicitud DSR directamente a través de Microsoft en instancias en las que Microsoft es el responsable de los datos. Para obtener más información, vea la sección [Productos y servicios autenticados con el identificador de organización por los que Microsoft es responsable de datos](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) de la parte 4 de esta guía.
 
->[!NOTE]
->Si es un cliente que actualmente realiza migraciones de FastTrack, la eliminación de la cuenta de usuario no eliminará la copia de datos que el equipo de Microsoft FastTrack conserva, cosa que se hace con el único propósito de completar la migración. Si quiere que el equipo de Microsoft FastTrack elimine también esa copia de datos durante la migración, puede [enviar una solicitud](https://go.microsoft.com/fwlink/?linkid=874544). En el transcurso habitual de las actividades, Microsoft FastTrack eliminará todas las copias de datos cuando la migración finalice.
+> [!NOTE]
+> Si es un cliente que actualmente realiza migraciones de FastTrack, la eliminación de la cuenta de usuario no eliminará la copia de datos que el equipo de Microsoft FastTrack conserva, cosa que se hace con el único propósito de completar la migración. Si quiere que el equipo de Microsoft FastTrack elimine también esa copia de datos durante la migración, puede [enviar una solicitud](https://go.microsoft.com/fwlink/?linkid=874544). En el transcurso habitual de las actividades, Microsoft FastTrack eliminará todas las copias de datos cuando la migración finalice.
 
 Al igual que la eliminación temporal y la eliminación permanente de datos descritas en la sección anterior sobre el borrado de datos personales, también existe un estado de eliminación temporal y de eliminación permanente cuando se elimina una cuenta de usuario.
 
@@ -609,8 +608,8 @@ Este es el proceso de alto nivel para eliminar usuarios de su organización.
 
 No puede eliminar de forma permanente un usuario del Portal de administración de Office 365.
 
->[!NOTE]
->En Office 365 ofrecido por 21Vianet (China), no puede eliminar permanentemente un usuario tal y como se ha descrito anteriormente. Para eliminar un usuario permanentemente, puede enviar una solicitud a través del Portal de administración de Office 365 en esta dirección [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Vaya a **Comercio**, seleccione **Suscripción** -> **Privacidad** ->  **RGPD** y escriba la información necesaria.
+> [!NOTE]
+> En Office 365 ofrecido por 21Vianet (China), no puede eliminar permanentemente un usuario tal y como se ha descrito anteriormente. Para eliminar un usuario permanentemente, puede enviar una solicitud a través del Portal de administración de Office 365 en esta dirección [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Vaya a **Comercio**, seleccione **Suscripción** -> **Privacidad** ->  **RGPD** y escriba la información necesaria.
 
 ### <a name="removing-exchange-online-data"></a>Quitar datos de Exchange Online
 
@@ -645,7 +644,7 @@ En las secciones siguientes se explica cómo usar la funcionalidad integrada en 
 
 Existen varias formas de buscar registros en una base de datos de Access que puedan ser relevantes para una solicitud DSR. Para una investigación de DSR, puede buscar registros relacionados con el interesado o registros que contengan datos específicos. Por ejemplo, puede buscar o ir a un registro que corresponda al interesado. O buscar registros que contengan datos específicos, tales como datos personales sobre el interesado. Para más información, vea:
 
-- [Buscar registros en una base de datos de Access](https://support.microsoft.com/es-ES/office/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
+- [Buscar registros en una base de datos de Access](https://support.microsoft.com/office/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
 - [Crear una consulta de selección simple](https://support.office.com/article/create-a-simple-select-query-de8b1c8d-14e9-4b25-8e22-70888d54de59)
 
 ##### <a name="access"></a>Access
@@ -654,12 +653,12 @@ Cuando haya encontrado los registros o campos relacionados con la solicitud DSR,
 
 - [Introducción a los informes en Access](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
 - [Exportar datos a Excel](https://support.office.com/article/export-data-to-excel-64e974e6-ae43-4301-a53e-20463655b1a9)
-- [Exportar datos a un documento de Word](https://support.microsoft.com/es-ES/office/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
-- [Exportar datos a un archivo de texto](https://support.microsoft.com/es-ES/office/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
+- [Exportar datos a un documento de Word](https://support.microsoft.com/office/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
+- [Exportar datos a un archivo de texto](https://support.microsoft.com/office/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
 
 ##### <a name="export"></a>Exportar
 
-Como se ha explicado anteriormente, puede exportar datos de una base de datos de Access a diferentes formatos de archivo. El formato de archivo de exportación que elija podría depender de la solicitud de exportación del DSR específica del interesado. Vea [Importar y exportar](https://support.microsoft.com/es-ES/office/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f) para una lista de temas que describen cómo exportar datos de Access en diferentes formatos de archivo.
+Como se ha explicado anteriormente, puede exportar datos de una base de datos de Access a diferentes formatos de archivo. El formato de archivo de exportación que elija podría depender de la solicitud de exportación del DSR específica del interesado. Vea [Importar y exportar](https://support.microsoft.com/office/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f) para una lista de temas que describen cómo exportar datos de Access en diferentes formatos de archivo.
 
 ##### <a name="delete"></a>Eliminar
 
@@ -974,11 +973,11 @@ Los usuarios de Forms pueden ir a <https://forms.office.com> y seleccionar **Mis
 
 #### <a name="access"></a>Access
 
-Después de encontrar los formularios relevantes, puede acceder a las respuestas del formulario si hace clic en la pestaña **Respuestas**. Obtenga más información sobre cómo [comprobar los resultados del cuestionario](https://support.microsoft.com/es-ES/office/check-and-share-your-quiz-results-c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) o los [resultados del formulario](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). Para revisar los resultados de respuesta en Excel, seleccione la pestaña **Respuestas** y, a continuación, haga clic en **Abrir en Excel**. Si desea enviar al interesado una copia del formulario, puede tomar capturas de pantalla de las preguntas y respuestas relevantes que se muestran en la aplicación con formato de texto enriquecido o enviar al interesado una copia de los resultados en formato de Excel. Si usa Excel y quisiera compartir con el interesado solo una parte del resultado de la encuesta, puede eliminar determinadas filas o columnas u ocultar las secciones restantes antes de compartir los resultados. Como alternativa, puede ir a **Compartir \> Obtener un vínculo para duplicar** (en Compartir como plantilla) para proporcionar al interesado una réplica de todo el formulario.
+Después de encontrar los formularios relevantes, puede acceder a las respuestas del formulario si hace clic en la pestaña **Respuestas**. Obtenga más información sobre cómo [comprobar los resultados del cuestionario](https://support.microsoft.com/office/check-and-share-your-quiz-results-c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) o los [resultados del formulario](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). Para revisar los resultados de respuesta en Excel, seleccione la pestaña **Respuestas** y, a continuación, haga clic en **Abrir en Excel**. Si desea enviar al interesado una copia del formulario, puede tomar capturas de pantalla de las preguntas y respuestas relevantes que se muestran en la aplicación con formato de texto enriquecido o enviar al interesado una copia de los resultados en formato de Excel. Si usa Excel y quisiera compartir con el interesado solo una parte del resultado de la encuesta, puede eliminar determinadas filas o columnas u ocultar las secciones restantes antes de compartir los resultados. Como alternativa, puede ir a **Compartir \> Obtener un vínculo para duplicar** (en Compartir como plantilla) para proporcionar al interesado una réplica de todo el formulario.
 
 #### <a name="delete"></a>Eliminar
 
-El propietario de una encuesta, un cuestionario o un sondeo puede eliminarlos de forma permanente. Si quiere honrar la solicitud de un interesado sobre el derecho al olvido y eliminar completamente un formulario, búsquelo en la lista, seleccione los tres puntos en la esquina superior derecha de la vista previa del formulario y haga clic en **Eliminar**. Tras eliminar un formulario, no puede recuperarse. Para más información, consulte [Eliminar un formulario](https://support.microsoft.com/es-ES/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
+El propietario de una encuesta, un cuestionario o un sondeo puede eliminarlos de forma permanente. Si quiere honrar la solicitud de un interesado sobre el derecho al olvido y eliminar completamente un formulario, búsquelo en la lista, seleccione los tres puntos en la esquina superior derecha de la vista previa del formulario y haga clic en **Eliminar**. Tras eliminar un formulario, no puede recuperarse. Para más información, consulte [Eliminar un formulario](https://support.microsoft.com/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
 
 #### <a name="export"></a>Exportar
 
@@ -1129,10 +1128,10 @@ Las siguientes secciones explican cómo usar la función integrada en la aplicac
 
 Puede usar la Búsqueda de contenido para buscar en el sitio de SharePoint Online que está asociado a un proyecto (cuando se crea un proyecto por primera vez, hay una opción para crear un sitio de SharePoint Online asociado). La Búsqueda de contenido no busca los datos en un proyecto real en Project online, solo en el sitio asociado. Aunque la Búsqueda de contenido busca simplemente metadatos de proyectos (como las personas mencionadas en el asunto), puede usar esto para buscar y acceder al proyecto que contiene los datos relacionados con el DSR.
 
->[!TIP]
->La dirección URL de la colección de sitios de la organización donde se encuentran los sitios asociados a Projects es **https://\<your org\>.sharepoint.com/sites/pwa**; por ejemplo, **https://contoso.sharepoint.com/pwa**. Puede usar esta colección de sitios específica como ubicación de la búsqueda de contenido y luego escribir el nombre en la consulta de búsqueda. Además, un administrador de TI puede usar la página de colecciones de sitios en el Centro de administración de SharePoint para obtener una lista de colecciones de sitios de PWA de la organización.
+> [!TIP]
+> La dirección URL de la colección de sitios de la organización donde se encuentran los sitios asociados a los proyectos es `https://<your org>.sharepoint.com/sites/pwa`; por ejemplo, **<https://contoso.sharepoint.com/pwa>**. Puede usar esta colección de sitios específica como ubicación de la búsqueda de contenido y luego escribir el nombre del proyecto en la consulta de búsqueda. Además, un administrador de TI puede usar la página de Colecciones de sitios en el Centro de administración de SharePoint para obtener una lista de colecciones de sitios PWA de la organización.
 
-#### <a name="delete"></a>Delete
+#### <a name="delete"></a>Eliminar
 
 Puede eliminar información de un usuario de su entorno de Project Online. Vea [Eliminar datos de usuario de Project Online](https://support.office.com/article/delete-user-data-from-project-online-252fa593-9c25-47ed-b861-643fe8bf1cb7).
 
@@ -1152,15 +1151,15 @@ Puede usar la característica de búsqueda en la aplicación para buscar texto e
 
 Después de encontrar los datos, puede tomar una captura de pantalla o copiarlos y pegarlos en un archivo de Word o de texto y proporcionarlos al sujeto de los datos. También puede guardar una publicación como un archivo PDF, XPS o Word. Vea:
 
-  - [Guardar una publicación como un documento de Word](https://support.microsoft.com/es-ES/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [Guardar como o convertir una publicación a .pdf o .xps utilizando Publisher](https://support.microsoft.com/es-ES/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [Guardar una publicación como un documento de Word](https://support.microsoft.com/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [Guardar como o convertir una publicación a .pdf o .xps utilizando Publisher](https://support.microsoft.com/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### <a name="export"></a>Exportar
 
 Puede proporcionar un asunto de datos con el archivo de Publisher real o, como se explicó anteriormente, puede guardar una publicación como archivo de Word, PDF o XPS. Vea:
 
-  - [Guardar una publicación como un documento de Word](https://support.microsoft.com/es-ES/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [Guardar como o convertir una publicación a .pdf o .xps utilizando Publisher](https://support.microsoft.com/es-ES/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [Guardar una publicación como un documento de Word](https://support.microsoft.com/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [Guardar como o convertir una publicación a .pdf o .xps utilizando Publisher](https://support.microsoft.com/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### <a name="delete"></a>Eliminar
 
@@ -1192,7 +1191,7 @@ Las secciones siguientes explican cómo usar la función integrada en la aplicac
 
 #### <a name="discover"></a>Detectar
 
-El contenido creado con Sway (que se encuentra en [www.sway.com](https://sway.office.com/)) solo lo puede ver el propietario y aquellos a los que el autor dé permiso. Ver [Configuración de privacidad en Sway](https://support.microsoft.com/es-ES/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Para determinar si es probable que en Sway haya datos personales que responden a su DSR, puede pedir al interesado, y a los usuarios de la organización que generen contenido sobre el interesado, que busquen en sus Sways y compartan cualquier Sway que pueda contener datos personales que respondan a la solicitud del interesado. Para informarse sobre cómo compartir un Sway, vea «compartir un Sway desde su cuenta profesional» en este artículo sobre [Compartir su Sway](https://support.microsoft.com/es-ES/office/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
+El contenido creado con Sway (que se encuentra en [www.sway.com](https://sway.office.com/)) solo lo puede ver el propietario y aquellos a los que el autor dé permiso. Ver [Configuración de privacidad en Sway](https://support.microsoft.com/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217). Para determinar si es probable que en Sway haya datos personales que responden a su DSR, puede pedir al interesado, y a los usuarios de la organización que generen contenido sobre el interesado, que busquen en sus Sways y compartan cualquier Sway que pueda contener datos personales que respondan a la solicitud del interesado. Para informarse sobre cómo compartir un Sway, vea «compartir un Sway desde su cuenta profesional» en este artículo sobre [Compartir su Sway](https://support.microsoft.com/office/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998).
 
 #### <a name="access"></a>Access
 
@@ -1200,7 +1199,7 @@ Si encontró datos personales en un Sway que le gustaría compartir con el inter
 
 #### <a name="delete"></a>Eliminar
 
-Para obtener información sobre cómo eliminar un Sway, vaya a la sección "¿Cómo elimino mi Sway?" en [Configuración de privacidad en Sway](https://support.microsoft.com/es-ES/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217).
+Para obtener información sobre cómo eliminar un Sway, vaya a la sección "¿Cómo elimino mi Sway?" en [Configuración de privacidad en Sway](https://support.microsoft.com/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217).
 
 #### <a name="export"></a>Exportar
 
@@ -1296,8 +1295,8 @@ Yammer tiene una configuración de retención de datos que elimina datos de form
 
 Yammer permite a los administradores superiores ejecutar una eliminación que cumpla con RGPD a través del centro de administración de Yammer si reciben una solicitud de interesado. Esta opción se denomina Borrar usuario y suspende al usuario durante 14 días para, a continuación, eliminar todos sus datos personales, a excepción de sus archivos y mensajes. Si el usuario es un invitado, esto debe hacerse en cada red externa de la que sea miembro.
 
->[!NOTE]
->Si un administrador desea quitar los archivos y mensajes de los usuarios durante el intervalo de 14 días, tendrá que realizar una exportación de nivel de usuario para identificar los archivos y mensajes y, después, decidir cuáles va a eliminar mediante la eliminación integrada o un script de PowerShell. Después del plazo de 14 días, el administrador no puede asociar al usuario con sus archivos o mensajes.
+> [!NOTE]
+> Si un administrador desea quitar los archivos y mensajes de los usuarios durante el intervalo de 14 días, tendrá que realizar una exportación de nivel de usuario para identificar los archivos y mensajes y, después, decidir cuáles va a eliminar mediante la eliminación integrada o un script de PowerShell. Después del plazo de 14 días, el administrador no puede asociar al usuario con sus archivos o mensajes.
 
 Cuando se elimina un usuario con la opción Borrar usuario, se envía una notificación a la bandeja de entrada de Yammer de todos los administradores de red y administradores superiores. La opción Borrar usuario elimina el perfil de Yammer del usuario, pero no elimina su perfil de Office 365 o Azure Active Directory.
 
@@ -1359,7 +1358,7 @@ Los propietarios de datos o administradores de pueden realizar cambios en las p�
     3. Haga las revisiones en la copia del documento en el equipo local.
     4. Cargue el archivo revisado en la ubicación original de SharePoint Online.
 
-- Se pueden editar los datos en listas de SharePoint. Vea [Agregar, editar o eliminar elementos de lista](https://support.microsoft.com/es-ES/office/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde).
+- Se pueden editar los datos en listas de SharePoint. Vea [Agregar, editar o eliminar elementos de lista](https://support.microsoft.com/office/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde).
 
 Los administradores de TI también pueden corregir algunas propiedades personales asociadas con un documento:
 
@@ -1429,8 +1428,8 @@ Otra forma de tratar una solicitud DSR para restringir el procesamiento de datos
 
 La manera más conveniente de desactivar un servicio es usar PowerShell de Office 365 y eliminar la licencia de usuario correspondiente de todos los usuarios de la organización. Esto restringirá el acceso a los datos de cualquiera que use ese servicio. Para obtener instrucciones detalladas, vea [Desactivar el acceso a servicios con PowerShell de Office 365](https://docs.microsoft.com/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell) y siga los procedimientos para desactivar servicios de Office 365 para usuarios con un plan de licencia única.
 
->[!NOTE]
->Para Yammer, además de quitar la licencia de Yammer de las cuentas de usuario, también debe deshabilitar la capacidad de los usuarios de iniciar sesión con sus credenciales de Yammer (obligándoles a usar sus credenciales de Office 365 para iniciar sesión). Para obtener instrucciones detalladas, vea [Desactivar el acceso de Yammer para usuarios de Microsoft 365](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
+> [!NOTE]
+> Para Yammer, además de quitar la licencia de Yammer de las cuentas de usuario, también debe deshabilitar la capacidad de los usuarios de iniciar sesión con sus credenciales de Yammer (obligándoles a usar sus credenciales de Office 365 para iniciar sesión). Para obtener instrucciones detalladas, vea [Desactivar el acceso de Yammer para usuarios de Microsoft 365](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
 
 ### <a name="temporarily-removing-data-from-sharepoint-online-or-onedrive-for-business-sites"></a>Eliminar temporalmente los datos de SharePoint Online o de OneDrive para la Empresa
 
@@ -1444,14 +1443,14 @@ Como la mayoría de los documentos de Office se encuentra en los sitios de Share
 
     a. Elimine la copia original del documento. Al eliminar un documento de un sitio, se envía a la Papelera de reciclaje del sitio (también denominada *Papelera de reciclaje de primer nivel*).
 
-    b. Vaya a la Papelera de reciclaje y elimine la copia del documento. Al eliminar un documento de la Papelera de reciclaje, se envía a la Papelera de reciclaje de la colección de sitios (también denominada *Papelera de reciclaje de segundo nivel*). Vea [Eliminar un archivo, carpeta o vínculo de una biblioteca de documentos de SharePoint](https://support.microsoft.com/es-ES/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52).
+    b. Vaya a la Papelera de reciclaje y elimine la copia del documento. Al eliminar un documento de la Papelera de reciclaje, se envía a la Papelera de reciclaje de la colección de sitios (también denominada *Papelera de reciclaje de segundo nivel*). Vea [Eliminar un archivo, carpeta o vínculo de una biblioteca de documentos de SharePoint](https://support.microsoft.com/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52).
 
-    c. Vaya a la Papelera de reciclaje de la colección de sitios y elimine la copia del documento permanentemente de Office 365. Vea [Eliminar elementos de la Papelera de reciclaje de la colección de sitios](https://support.microsoft.com/es-ES/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653).
+    c. Vaya a la Papelera de reciclaje de la colección de sitios y elimine la copia del documento permanentemente de Office 365. Vea [Eliminar elementos de la Papelera de reciclaje de la colección de sitios](https://support.microsoft.com/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653).
 
 4. Cuando ya no se aplique la restricción, la copia del documento que se almacenó localmente puede volver a cargarse en el sitio de Office 365.
 
->[!IMPORTANT]
->El procedimiento anterior no funcionará si el documento se encuentra en un sitio que está suspendido (con una de las características de suspensión legal o de retención de Office 365). En caso de que una solicitud de restricción para una DSR tenga prioridad sobre una suspensión legal, tendrá que quitarse la suspensión del sitio antes de que un documento pueda eliminarse definitivamente. Además, el historial del documento de los documentos eliminados se elimina definitivamente.
+> [!IMPORTANT]
+> El procedimiento anterior no funcionará si el documento se encuentra en un sitio que está suspendido (con una de las características de suspensión legal o de retención de Office 365). En caso de que una solicitud de restricción para una DSR tenga prioridad sobre una suspensión legal, tendrá que quitarse la suspensión del sitio antes de que un documento pueda eliminarse definitivamente. Además, el historial del documento de los documentos eliminados se elimina definitivamente.
 
 ### <a name="temporarily-restricting-access-to-sharepoint-online-sites"></a>Restringir temporalmente el acceso a sitios de SharePoint Online
 
@@ -1599,15 +1598,15 @@ Para acceder a registros generados por el sistema y exportarlos:
 
 La solicitud de exportación pasa al estado **Pendiente**. Puede ver el informe de estado en la hoja **Privacidad del usuario** > **Información general**.
 
->[!IMPORTANT]
->Debido a que los datos personales pueden provenir de múltiples sistemas, es posible que el proceso de exportación pueda tardar hasta un mes en completarse.
+> [!IMPORTANT]
+> Debido a que los datos personales pueden provenir de múltiples sistemas, es posible que el proceso de exportación pueda tardar hasta un mes en completarse.
 
 ### <a name="notify-about-exporting-or-deleting-issues"></a>Notificar sobre los problemas de exportación o eliminación
 
 Si tiene problemas al exportar o eliminar datos desde Azure Portal, vaya a la hoja **Ayuda + soporte** de Azure Portal y envíe un nuevo vale en **Administración de suscripción** > **Otras solicitudes de seguridad y cumplimiento** > **Solicitudes de RGPD y la hoja de privacidad.**
 
->[!NOTE]
- >Cuando exporta datos desde Azure Portal, los datos generados por el sistema para unas pocas aplicaciones no se exportarán. Para exportar datos para estas aplicaciones, consulte [Pasos adicionales para exportar datos de registro generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
+> [!NOTE]
+> Cuando exporta datos desde Azure Portal, los datos generados por el sistema para unas pocas aplicaciones no se exportarán. Para exportar datos para estas aplicaciones, consulte [Pasos adicionales para exportar datos de registro generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
 
 A continuación, se resumen las acciones de acceso y exportación de registros generados por el sistema:
 
@@ -1670,8 +1669,8 @@ Las partes 1 a 3 abordan productos y servicios en los que Microsoft es el encarg
 - **Cuenta profesional o educativa de Windows autenticada**: si su organización ha comprado licencias de Windows y los usuarios las autentican en su cuenta profesional o educativa de Microsoft, este actúa como responsable de los datos.
 - **Productos y servicios adquiridos por el usuario**: si permite que los usuarios, actuando a título individual, adquieran productos o servicios de Microsoft que usan AAD para la autenticación (como complementos de Office o aplicaciones disponibles en Microsoft Store), es posible que Microsoft sea el responsable de los datos. Para estos productos o servicios de Microsoft, los usuarios tendrán que ponerse en contacto con Microsoft directamente para iniciar una solicitud de derechos del interesado.
 
->[!IMPORTANT]
->Si elimina un usuario habilitado mediante Azure Active Directory, el (antiguo) usuario ya no podrá iniciar sesión en los productos o servicios que usaba anteriormente con una cuenta profesional o educativa. Además, Microsoft ya no podrá autenticar al usuario en relación con una solicitud de derechos del interesado correspondiente para productos o servicios en los que Microsoft sea el responsable de los datos. Si quiere que un usuario pueda iniciar solicitudes de datos del interesado en estos servicios, es importante que le indique que lo haga antes de eliminar la cuenta de AAD del usuario.
+> [!IMPORTANT]
+> Si elimina un usuario habilitado mediante Azure Active Directory, el (antiguo) usuario ya no podrá iniciar sesión en los productos o servicios que usaba anteriormente con una cuenta profesional o educativa. Además, Microsoft ya no podrá autenticar al usuario en relación con una solicitud de derechos del interesado correspondiente para productos o servicios en los que Microsoft sea el responsable de los datos. Si quiere que un usuario pueda iniciar solicitudes de datos del interesado en estos servicios, es importante que le indique que lo haga antes de eliminar la cuenta de AAD del usuario.
 
 ### <a name="personal-accounts"></a>Cuentas personales
 
@@ -1714,8 +1713,8 @@ Le recomendamos que use la herramienta de solicitudes de interesado en el centro
 
 Para empezar a usar casos de DSR, vea [Administrar solicitudes de los interesados sobre RGPD con la herramienta de casos de DSR en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
->[!IMPORTANT]
->Un administrador de eDiscovery puede ver y administrar todos los casos de solicitudes de derechos del interesado de la organización. Para obtener más información sobre los distintos roles relacionados con eDiscovery, vea [Asignar permisos de eDiscovery a posibles miembros](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
+> [!IMPORTANT]
+> Un administrador de eDiscovery puede ver y administrar todos los casos de solicitudes de derechos del interesado de la organización. Para obtener más información sobre los distintos roles relacionados con eDiscovery, vea [Asignar permisos de eDiscovery a posibles miembros](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
 
 ### <a name="set-up-compliance-boundaries-to-limit-the-scope-of-content-searches"></a>Configurar los límites de cumplimiento normativo para limitar el ámbito de las búsquedas de contenido
 
@@ -1729,14 +1728,14 @@ Una descripción general de alto nivel acerca de cómo implementar límites de c
 
 2. Determine el atributo de objeto de usuario de Azure Active Directory que se va a usar para definir los límites de cumplimiento normativo. Por ejemplo, puede elegir el atributo Country, CountryCode o Department, para que los miembros del grupo de roles de administrador que cree el siguiente paso solo puedan buscar las ubicaciones de contenido de los usuarios con un valor específico para ese atributo. Así es como se limita quién puede buscar contenido en un organismo específico.
 
->[!NOTE]
->Actualmente, debe realizar un paso adicional para OneDrive para la Empresa y presentar una solicitud del Soporte técnico de Microsoft para que el atributo se sincronice con las cuentas de OneDrive para la Empresa.
+   > [!NOTE]
+   > Actualmente, debe realizar un paso adicional para OneDrive para la Empresa y presentar una solicitud del Soporte técnico de Microsoft para que el atributo se sincronice con las cuentas de OneDrive para la Empresa.
 
-4. Cree un grupo de roles de administrador en el Centro de seguridad y cumplimiento para cada límite de cumplimiento. Para crear estos grupos de roles, se recomienda copiar el grupo de roles de Supervisor de eDiscovery y luego quitar roles según sea necesario.
+3. Cree un grupo de roles de administrador en el Centro de seguridad y cumplimiento para cada límite de cumplimiento. Para crear estos grupos de roles, se recomienda copiar el grupo de roles de Supervisor de eDiscovery y luego quitar roles según sea necesario.
 
-5. Agregue miembros a cada uno de los grupos de roles específicos como administradores de eDiscovery. Los miembros son los responsables de investigar y responder a las solicitudes de interesado y normalmente serán administradores de TI, responsables de privacidad de datos, administradores de cumplimiento y representantes de recursos humanos.
+4. Agregue miembros a cada uno de los grupos de roles específicos como administradores de eDiscovery. Los miembros son los responsables de investigar y responder a las solicitudes de interesado y normalmente serán administradores de TI, responsables de privacidad de datos, administradores de cumplimiento y representantes de recursos humanos.
 
-6. Cree un filtro de permisos de búsqueda para cada límite de cumplimiento, de modo que los miembros del grupo de roles de administrador correspondientes solo puedan buscar en los buzones y sitios de los usuarios que se encuentren dentro del límite. El filtro de permisos de búsqueda permite a los miembros del grupo de roles correspondiente buscar solo en las ubicaciones de contenido con el valor de atributo del objeto de usuario que se corresponda con el límite de agencia/cumplimiento.
+5. Cree un filtro de permisos de búsqueda para cada límite de cumplimiento, de modo que los miembros del grupo de roles de administrador correspondientes solo puedan buscar en los buzones y sitios de los usuarios que se encuentren dentro del límite. El filtro de permisos de búsqueda permite a los miembros del grupo de roles correspondiente buscar solo en las ubicaciones de contenido con el valor de atributo del objeto de usuario que se corresponda con el límite de agencia/cumplimiento.
 
 Para obtener instrucciones detalladas, consulte [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries).
 
@@ -1751,8 +1750,8 @@ Los administradores de TI pueden usar la herramienta de búsqueda de registro de
 
 Puede buscar el registro de auditoría para actividades específicas, tipos de actividades, actividades que realiza un usuario específico y otros criterios de búsqueda. Además de las actividades de SharePoint Online y OneDrive para la empresa, también puede buscar actividades en Flow, Power BI y Microsoft Teams. Los registros de auditoría se conservan durante 90 días. Por lo tanto, no podrá buscar actividades de usuario que se hayan producido hace más de 90 días. Para obtener una lista completa de las actividades auditadas y averiguar cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría en el Centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md).
 
->[!TIP]
->Para evitar la limitación de 90 días descrita anteriormente y mantener un historial acumulado de los registros de auditoría de la organización, puede exportar todas las actividades periódicamente (por ejemplo, cada 30 días) para tener un registro continuo de los registros de auditoría de la organización.
+> [!TIP]
+> Para evitar la limitación de 90 días descrita anteriormente y mantener un historial acumulado de los registros de auditoría de la organización, puede exportar todas las actividades periódicamente (por ejemplo, cada 30 días) para tener un registro continuo de los registros de auditoría de la organización.
 
 ## <a name="appendix-b-change-log"></a>Apéndice B: registro de cambios
 
