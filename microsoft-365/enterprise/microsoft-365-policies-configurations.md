@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/31/2020
+ms.date: 09/14/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,26 +17,33 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
+ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546647"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651149"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
-En esta serie de artículos se describe cómo configurar el acceso seguro a los servicios en la nube mediante Microsoft 365 para productos empresariales mediante la implementación de un entorno y una configuración recomendados, incluido un conjunto de directivas de acceso condicional y funcionalidades relacionadas. Puede usar esta guía para proteger el acceso a todos los servicios que se integran con Azure Active Directory (Azure AD), incluidos los servicios de Microsoft 365, otros servicios de SaaS y aplicaciones locales publicadas con el proxy de aplicación de Azure AD.
+El perímetro de seguridad moderno de su organización ahora se extiende más allá de la red para incluir a los usuarios que acceden a las aplicaciones basadas en la nube desde cualquier ubicación con una variedad de dispositivos. La infraestructura de seguridad debe determinar si se debe conceder una solicitud de acceso determinada y en qué condiciones. 
 
-Estas recomendaciones:
+Esta determinación debe basarse en el inicio de sesión de la cuenta de usuario, el dispositivo que se está usando, las aplicaciones a las que el usuario intenta obtener acceso, la ubicación desde la que se realiza la solicitud de acceso y una evaluación del riesgo de la solicitud. Esta funcionalidad ayuda a garantizar que solo los usuarios y dispositivos aprobados puedan obtener acceso a los recursos críticos.
 
-- Se alinean con la [puntuación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) , así como con la [puntuación de identidad en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), y aumentan estos resultados para la organización
-- Le ayudarán a implementar estos [cinco pasos para proteger su infraestructura de identidades](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
+En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos e identidades y un conjunto de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365 para aplicaciones y servicios en la nube de empresa, otros servicios SaaS y aplicaciones locales publicadas con el proxy de aplicación de Azure AD.
+
+Se recomienda la configuración y las directivas de acceso a los dispositivos y la identidad en tres niveles: protección de línea base, protección confidencial y protección para entornos con datos altamente regulados o clasificados. Estos niveles y las configuraciones correspondientes proporcionan niveles de protección coherentes en los datos, las identidades y los dispositivos.
+
+Estas capacidades y sus recomendaciones:
+
+- Son compatibles con Microsoft 365 E3 y Microsoft 365 E5.
+- Se alinean con la [puntuación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) , así como con la [puntuación de identidad en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), y aumentan estos resultados para la organización.
+- Le ayudarán a implementar estos [cinco pasos para proteger su infraestructura de identidades](https://docs.microsoft.com/azure/security/azure-ad-secure-steps).
 
 Si su organización tiene requisitos de entorno únicos o complejidades, use estas recomendaciones como punto de partida. Sin embargo, la mayoría de las organizaciones pueden implementar estas recomendaciones como se recomiendan.
 
 >[!Note]
->Microsoft también vende licencias de Enterprise Mobility + Security (EMS) para las suscripciones de Office 365. Las capacidades de EMS E3 y EMS E5 son aproximadamente equivalentes a las de Microsoft 365 E3 y Microsoft 365 E5. Consulte [planes de EMS](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) para obtener información detallada.
+>Microsoft también vende licencias de Enterprise Mobility + Security (EMS) para las suscripciones de Office 365. Las capacidades de EMS E3 y EMS E5 son equivalentes a las de Microsoft 365 E3 y Microsoft 365 E5. Consulte [planes de EMS](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) para obtener información detallada.
 >
 
 ## <a name="intended-audience"></a>Público objetivo

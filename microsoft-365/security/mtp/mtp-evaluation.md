@@ -1,5 +1,5 @@
 ---
-title: Evaluación de la protección contra amenazas de Microsoft
+title: Evaluar la Protección contra amenazas de Microsoft
 description: Configure el entorno de prueba de la protección contra amenazas de Microsoft para probar cómo la solución coordinada de protección contra amenazas diseñada para proteger dispositivos, identidades, datos y aplicaciones puede ayudar a su organización
 keywords: Microsoft Threat Protection Trial, pruebe la protección contra amenazas de Microsoft, evalúe Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab, Cyber Security, la seguridad persistente avanzada, seguridad empresarial, dispositivos, dispositivo, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049644"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649966"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>Crear un entorno de laboratorio de prueba de Microsoft Threat Protection 
 
@@ -48,7 +48,7 @@ Esta guía le ayudará a:
 
 Hay tres fases para la creación de un entorno de laboratorio de prueba de Microsoft Threat Protection y su implementación:
 
-|Fase | Descripción | 
+|Fase | Description | 
 |:-------|:-----|
 | ![Fase 1: preparación](../../media/prepare.png)<br>[Fase 1: preparación](prepare-mtpeval.md)| Obtenga información sobre lo que debe tener en cuenta al implementar la protección contra amenazas de Microsoft en un entorno de prueba de pruebas: <br><br>-Partes interesadas y la firma <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración
 |  ![Fase 2: configuración](../../media/setup.png) <br>[Fase 2: configuración](setup-mtpeval.md)|  Siga los pasos iniciales para acceder al centro de seguridad de Microsoft 365 para configurar el entorno de laboratorio de prueba de Microsoft Threat Protection. Se le guiará para:<br><br>-Inscríbase en la versión de prueba de Microsoft 365 E5 <br>  -Configurar dominio<br>-Asignar licencias de Microsoft 365 E5<br>-Completar el Asistente de configuración en el portal|
@@ -68,7 +68,7 @@ A continuación se encuentra en el ámbito de esta guía del entorno de laborato
     -   Protección contra amenazas avanzada de Office 365
     -   Azure Advanced Threat Protection
     -   Microsoft Cloud App Security
-    -   Protección contra amenazas avanzada de Microsoft Defender
+    -   Protección contra amenazas avanzada de Microsoft Defender
 
 ## <a name="out-of-scope"></a>Fuera de ámbito
 
@@ -78,6 +78,5 @@ Las siguientes opciones están fuera del ámbito de esta guía de implementació
 -   Pruebas de penetración en el entorno de producción
 
 ## <a name="next-step"></a>Paso siguiente
-|||
-|:-------|:-----|
-|![Fase 1: preparación](../../media/prepare.png) <br>[Fase 1: preparación](prepare-mtpeval.md) | Preparar el entorno de laboratorio de evaluación de Microsoft Threat Protection
+![Fase 1: preparación](../../media/prepare.png) <br>[Fase 1: preparación](prepare-mtpeval.md) 
+<br> Preparar el entorno de laboratorio de evaluación de Microsoft Threat Protection

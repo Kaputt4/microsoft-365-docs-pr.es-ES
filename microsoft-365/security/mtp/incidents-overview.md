@@ -1,5 +1,5 @@
 ---
-title: Investigar incidentes en la Protección contra amenazas de Microsoft
+title: Resumen de los incidentes en la Protección contra amenazas de Microsoft
 description: Investigar incidentes vistos en todos los dispositivos, usuarios y buzones de correo.
 keywords: incidentes, alertas, investigar, correlación, ataque, equipos, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235119"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649942"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Resumen de los incidentes en la Protección contra amenazas de Microsoft
 
