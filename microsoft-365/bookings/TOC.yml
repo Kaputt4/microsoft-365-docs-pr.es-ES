@@ -32,7 +32,7 @@
     - name: Obtener la aplicación de reservas
       href: get-bookings-app.md
     - name: Aplicación de reservas y visitas virtuales en Microsoft Teams
-      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
     - name: Gráfico de comparación-aplicación web frente a aplicación de Teams
       href: comparison-chart.md
     - name: Eliminar un calendario de reserva
