@@ -1,5 +1,5 @@
 
-|**Ubicación geográfica**             |**Código**|**ubicación de datos de eDiscovery**      |
+|  Ubicación geográfica               |  Código  |  ubicación de datos de eDiscovery        |
 |:----------------------------|:-------|:---------------------------------|
 |Asia-Pacífico                 |APC     |Centros de datos de Asia oriental o Asia sudoriental|
 |Australia                    |AUS     |Centros de datos de Asia oriental o Asia sudoriental|

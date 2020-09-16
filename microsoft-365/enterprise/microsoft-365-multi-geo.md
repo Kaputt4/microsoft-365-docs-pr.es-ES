@@ -3,7 +3,7 @@ title: Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: En este artículo, aprenderá a ampliar su presencia de Microsoft 365 a varias regiones geográficas con Microsoft 365 multigeográfico.
-ms.openlocfilehash: a5843b98b5d64dfb3872c3d8a5d48c0e56949c02
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694052"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825365"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -26,9 +26,9 @@ Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Mic
   
 Con Microsoft 365 Multi-Geo, puede aprovisionar y almacenar los datos en reposo en las ubicaciones geográficas que haya elegido para cumplir los requisitos de residencia de datos y, al mismo tiempo, puede permitir la implementación global de experiencias de productividad modernas para sus empleados.
 
-#### <a name="video-introducing-microsoft-365-multi-geo"></a>Vídeo: Presentación de Microsoft 365 Multi-Geo
+Para obtener un vídeo de introducción a Microsoft 365 multigeográfico, consulte [SharePoint Online y OneDrive multigeográfico para controlar dónde residen los datos](https://www.youtube.com/watch?v=Do9U3JuROhk).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
+## <a name="multi-geo-architecture"></a>Arquitectura multigeográfica
 
 En un entorno multigeográfico, su espacio empresarial de Microsoft 365 cuenta con una ubicación central (donde se aprovisionó originalmente la suscripción a Microsoft 365) y una o varias ubicaciones satélites. En un espacio empresarial multigeográfico, la información sobre las ubicaciones geográficas, grupos y la información de usuario, se controla en Azure Active Directory (Azure AD). Como la información del espacio empresarial se controla de forma centralizada y se sincroniza en cada ubicación geográfica, el uso compartido y las experiencias que involucran a todos los empleados de su compañía comparten una conciencia global.
 

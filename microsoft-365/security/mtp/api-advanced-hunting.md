@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 92d5d2840963ae00ae0f03e3359f287371f770ee
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650552"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825379"
 ---
 # <a name="advanced-hunting-apis"></a>API de búsqueda avanzada
 
@@ -37,8 +37,10 @@ ms.locfileid: "47650552"
 ## <a name="limitations"></a>Limitaciones
 1. Solo se puede ejecutar una consulta con datos de los últimos 30 días.
 2. Los resultados incluirán un máximo de 100.000 filas.
-3. El número de ejecuciones es limitado por espacio empresarial: hasta 15 llamadas por minuto, 15 minutos de tiempo de ejecución cada hora y 4 horas de tiempo de ejecución al día.
+3. El número de ejecuciones es limitado por espacio empresarial: hasta 10 llamadas por minuto, 10 minutos de tiempo de ejecución cada hora y 4 horas de tiempo de ejecución al día.
 4. El tiempo de ejecución máximo de una única solicitud es de 10 minutos.
+5. 429 respuesta representará el límite de la cuota de alcance mediante el número de solicitudes o la CPU. El cuerpo de respuesta 429 también indicará el tiempo hasta que se renueve la cuota. 
+
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [acceso a las API de Microsoft Threat Protection](api-access.md)
@@ -68,7 +70,7 @@ Content-Type    | application/json
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro | Tipo    | Description
+Parámetro | Tipo    | Descripción
 :---|:---|:---
 Consulta | Texto |  La consulta que se va a ejecutar. **Necesario**.
 
