@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394697"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816743"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -100,10 +100,6 @@ Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](
 ## <a name="limitations"></a>Limitaciones
 
 Estamos trabajando continuamente en la optimización de la funcionalidad de retención en Teams. Mientras tanto, estas son algunas de las limitaciones que debe tener en cuenta al usar la retención para los mensajes de canal y chats de Teams:
-
-- **Teams no está incluido en una directiva de toda la organización.**. Si crea una directiva para toda la organización, los mensajes de canal y los chats de Teams no se incluye porque necesitan una directiva de retención independiente.
-
-- **Teams no es compatible con la retención avanzada**. Cuando creas una directiva de retención, si elige la [Configuración avanzada para identificar el contenido que cumple con condiciones específicas](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), las ubicaciones de Teams no están disponibles. La retención en Teams se aplica a todo el contenido de los mensajes de chat y de los canales cuando se seleccionan esas ubicaciones.
 
 - **Los mensajes de Teams en los canales privados no se incluyen cuando se configura una directiva de retención de los mensajes de los canales de Teams.**. Actualmente, los canales privados no son compatibles con las directivas de retención. 
 
