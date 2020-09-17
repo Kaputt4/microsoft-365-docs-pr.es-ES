@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649954"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948001"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -59,7 +59,6 @@ Las siguientes características y mejoras están disponibles actualmente en la v
 
 - **[API de Microsoft Threat Protection](api-overview.md)** : las API de Lop de protección contra amenazas de Microsoft le permitirán automatizar flujos de trabajo en función de las tablas incidente compartido y de caza avanzada. 
 - **[Tabla IdentityDirectoryEvents de búsqueda avanzada](advanced-hunting-identitydirectoryevents-table.md)** : buscar eventos que impliquen un controlador de dominio local que ejecute Active Directory (ad). Esta tabla cubre un rango de eventos relacionados con la identidad, así como eventos del sistema en el controlador de dominio.
-- **[Función AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** : Use esta función en la búsqueda avanzada para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo o las direcciones IP más recientes desde un momento determinado.
 - **[Emprender acciones en la búsqueda avanzada](advanced-hunting-take-action.md)** : contención de las amenazas o informarte de los activos comprometidos en [la búsqueda avanzada.](advanced-hunting-overview.md)
 - **[Referencia del esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta práctica referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
 

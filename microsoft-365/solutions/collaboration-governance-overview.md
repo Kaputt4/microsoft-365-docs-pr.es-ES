@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo controlar las características relacionadas en grupos de Microsoft 365, Teams, SharePoint y Yammer.
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662809"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950717"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Información general sobre el gobierno de colaboración en Microsoft 365
 
@@ -108,16 +108,16 @@ Vea estas sesiones de conferencia para obtener más información sobre el gobier
 
 Conozca los conceptos básicos y las nuevas innovaciones de los grupos de 365 de Microsoft, incluidos la administración y el gobierno a escala, procedimientos recomendados para impulsar el uso y la adopción, y autoservicio.
 
-- [Adoptar grupos de 365 de Microsoft](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Adoptar grupos de 365 de Microsoft](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **Gobierno**
 
 Obtenga información sobre cómo configurar el ciclo de vida de expiración de grupos, las directivas de nomenclatura, las etiquetas de clasificación, la colaboración con invitados externos y administrar los permisos de creación de grupos.
 
-- [Transformar la colaboración y luchar sombrearla con los grupos de Office 365](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [Transformar la colaboración y luchar sombrearla con los grupos de Office 365](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **Ejemplo de cliente**
 
 Vea un ejemplo en segundo plano sobre cómo Microsoft 365 grupos, SharePoint, Teams y Yammer trabajan juntos para proporcionar una plataforma de colaboración global.
 
-- [Buscar el punto de acción de colaboración con Office 365 grupos, SharePoint, Teams y Yammer](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Buscar el punto de acción de colaboración con Office 365 grupos, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Use las directivas y etiquetas de retención de 365 de Microsoft para administrar datos personales en su entorno de Microsoft 365.
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522306"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949257"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Control de la información sujeta a la normativa de privacidad de datos
 
@@ -81,27 +81,13 @@ Tenga en cuenta lo siguiente:
 
 - Una vez que se conozcan mejor los tipos de información personal de su entorno, establezca las programaciones de retención y eliminación de este tipo de contenido y ajuste la arquitectura de la información para facilitar el gobierno de este tipo de información. Por ejemplo, aísle la información personal en sitios, bibliotecas o carpetas independientes con acceso controlado.
 
-### <a name="retention-policies"></a>Directivas de retención
+### <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
 
-Cree e implemente [directivas de retención](../compliance/retention-policies.md) para el contenido de los sitios que se aplican automáticamente.
-
-Para la privacidad de los datos de los sitios que contengan o se espere que contengan datos personales, especifique reglas de retención o eliminación para abordar los estándares de la organización.
-
-### <a name="retention-labels"></a>Etiquetas de retención
-
-Cree e implemente [etiquetas de retención](../compliance/labels.md) para contenido y correo electrónico.
-
-Para la privacidad de los datos para sitios, bibliotecas, carpetas y correo electrónico que contengan o se espera que contengan datos personales, especifique las reglas de retención o eliminación automática para dirigirse a los estándares de la organización.
+Usar [directivas de retención y etiquetas de retención](../compliance/retention.md) para conservar o eliminar el contenido de Microsoft 365 que contenga o se espera que contenga datos personales.
 
 ### <a name="records-management"></a>Administración de registros
 
-Cree e implemente etiquetas de retención para la administración de registros en función de una programación de retención de registros y un plan de archivos.
+Use etiquetas de retención que declaren el contenido a registro para implementar una [solución de administración de registros](../compliance/records-management.md) para datos en Microsoft 365.
 
-Para la privacidad de los datos, las solicitudes de sujetos de datos (interesado) recibidas por el departamento jurídico se declaran como registro y se almacenan indefinidamente para cumplir con las especificaciones de retención de actividades regulatorias.
+Para la privacidad de los datos, las solicitudes de interesados de datos (interesado) recibidas por el departamento jurídico se declaran como un registro y pueden almacenarse indefinidamente o eliminarse con prueba para cumplir con las especificaciones de retención de actividades regulatorias.
 
-Consulte estos recursos para obtener más información: 
-
-- [Administración de registros](../compliance/records-management.md)
-- [Administrador del plan de archivos](../compliance/file-plan-manager.md)
-- [Retención basada en eventos para la administración de registros](../compliance/automate-event-driven-retention.md)
-- [Disposición del contenido](../compliance/disposition-reviews.md)

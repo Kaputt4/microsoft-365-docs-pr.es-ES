@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651149"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949897"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -114,8 +114,8 @@ Azure AD ofrece un conjunto completo de capacidades de administración de identi
 | [Grupos de Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups) | Las directivas de acceso condicional, administración de dispositivos con Intune e, incluso, los permisos para archivos y sitios de la organización dependen de la asignación a las cuentas de usuario o grupos de Azure AD. Le recomendamos que cree grupos de Azure AD que se correspondan con los niveles de protección que está implementando. Por ejemplo, el personal ejecutivo probablemente es un objetivo de mayor valor para los hackers. Por lo tanto, tiene sentido agregar las cuentas de usuario de estos empleados a un grupo de Azure AD y asignar este grupo a las directivas de acceso condicional y otras directivas que imponen un mayor nivel de protección para el acceso. | Microsoft 365 E3 o E5 |
 | [Inscripción de dispositivos](/azure/active-directory/devices/overview) | Inscriba un dispositivo en Azure AD para crear una identidad para el dispositivo. Esta identidad se usa para autenticar el dispositivo cuando un usuario inicia sesión y aplica directivas de acceso condicional que requieren equipos compatibles o Unidos a un dominio. Para esta guía, usamos la inscripción de dispositivos para inscribir automáticamente equipos con Windows Unidos a un dominio. La inscripción de dispositivos es un requisito previo para administrar dispositivos con Intune. | Microsoft 365 E3 o E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | Permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la Directiva de corrección automatizada para el riesgo de inicio de sesión de usuario, los riesgos y el riesgo de inicio de sesión bajo, medio y alto. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta una actividad de alto riesgo para su cuenta. | Microsoft 365 E5, Microsoft 365 E3 con las licencias Identity & Threat Protection Add-on, EMS E5 o Azure Premium P2 |
-| [Restablecimiento de contraseña de autoservicio (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Permitir a los usuarios restablecer sus contraseñas de forma segura y sin intervención del servicio de asistencia técnica, mediante la comprobación de varios métodos de autenticación que el administrador puede controlar. | Microsoft 365 E3 o E5 |
-| [Protección con contraseña de Azure ad](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad). Detectar y bloquear contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de la organización. Las listas de contraseñas permitidas globales de forma predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Puede definir entradas adicionales en una lista de contraseñas no permitidas personalizada. Cuando los usuarios cambian o restablecen sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras. |  Microsoft 365 E3 o E5 |
+| [Autoservicio de restablecimiento de contraseña (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | Permitir a los usuarios restablecer sus contraseñas de forma segura y sin intervención del servicio de asistencia técnica, mediante la comprobación de varios métodos de autenticación que el administrador puede controlar. | Microsoft 365 E3 o E5 |
+| [Protección con contraseña de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Detectar y bloquear contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de la organización. Las listas de contraseñas permitidas globales de forma predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Puede definir entradas adicionales en una lista de contraseñas no permitidas personalizada. Cuando los usuarios cambian o restablecen sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras. |  Microsoft 365 E3 o E5 |
 ||||
 
 ![Componentes de la identidad y el acceso al dispositivo.](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

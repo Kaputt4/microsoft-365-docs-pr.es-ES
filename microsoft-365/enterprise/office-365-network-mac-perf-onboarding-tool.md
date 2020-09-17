@@ -3,7 +3,7 @@ title: Prueba de conectividad de red 365 de Microsoft (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Prueba de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 92bd850c98261df1808219ee1f28c75da370d443
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650048"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948549"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Prueba de conectividad de red 365 de Microsoft (versión preliminar)
 
@@ -29,6 +29,8 @@ La herramienta de prueba de conectividad de red de Microsoft 365 se encuentra en
 >La herramienta de prueba de conectividad de red es compatible con los inquilinos de WW Commercial y Alemania, pero no con GCC moderate, GCC High, DoD o China.
 
 La información de red del centro de administración de Microsoft 365 se basa en las mediciones habituales del producto de su inquilino de Microsoft 365 que se agregan cada día. En comparación, la información de red de la prueba de conectividad de red de Microsoft 365 se ejecuta de forma local y una vez en la herramienta. Las pruebas que se pueden llevar a cabo en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da lugar a una información más profunda. Considere que en la información de red del centro de administración de Microsoft 365 se muestra que hay un problema de red para usar Microsoft 365 en una ubicación específica de la oficina. La prueba de conectividad de Microsoft 365 puede ayudarle a identificar la causa raíz de ese problema, lo que provoca una acción recomendada para mejorar el rendimiento de la red.
+
+![Herramienta de prueba de conectividad de red](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Le recomendamos que se usen conjuntamente donde el estado de calidad de la red se pueda evaluar para cada ubicación de la oficina en el centro de administración de Microsoft 365 y se puedan encontrar más detalles tras la implementación de las pruebas basadas en la prueba de conectividad de Microsoft 365.
 
@@ -131,7 +133,7 @@ Es posible que la ubicación buscada en la dirección IP de salida de red no sea
 
 Este conocimiento de la red afectará específicamente a la selección de la puerta del servicio de Exchange Online. Para resolver esta visión, la salida local y directa de la red debe ser un requisito previo y, a continuación, la resolución de nombres recursivos de DNS se debe encontrar cerca de la salida de la red.
 
-### <a name="exchange-online"></a>Exchange en línea
+### <a name="exchange-online"></a>Exchange Online
 
 En esta sección se muestran los resultados de pruebas relacionados con Exchange Online.
 
@@ -151,7 +153,7 @@ Muestra las ubicaciones de las puertas de las puertas de los servicios de Exchan
 
 Muestra el nombre DNS y la dirección IP del servidor de la puerta de servicio de Exchange al que se dirigió. Se proporciona solo para información y no hay ningún conocimiento de la red asociado.
 
-### <a name="sharepoint-online"></a>SharePoint en linea
+### <a name="sharepoint-online"></a>SharePoint Online
 
 En esta sección se muestran los resultados de pruebas relacionados con SharePoint Online y OneDrive.
 
@@ -205,6 +207,28 @@ Donde se encuentra un certificado SSL que Microsoft no proporciona, se muestra e
 
 En esta sección se muestran los resultados de ICMP traceroute en la puerta frontal del servicio de Exchange Online, el servicio de SharePoint Online y la puerta principal del servicio de Microsoft Teams. Se proporciona solo para información y no hay ningún conocimiento de la red asociado. Se proporcionan tres traceroute. Un traceroute a _Outlook.Office365.com_, un traceroute a los clientes front end de SharePoint o a _Microsoft.SharePoint.com_ si no se proporcionó ninguno y un traceroute a _World.tr.Teams.Microsoft.com_.
 
+## <a name="what-happens-at-each-test-step"></a>Qué ocurre en cada paso de prueba
+
+### <a name="office-location-identification"></a>Identificación de ubicación de oficina
+
+Al hacer clic en el botón Ejecutar prueba, se muestra la página de prueba en ejecución y se identifica la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o puede que lo detecte desde el explorador Web. Si lo detectas, solicitamos la latitud y la longitud desde el explorador Web y limitamos la precisión a 300 m de 300 $ antes de usarla. Lo hacemos porque no es necesario identificar la ubicación con más precisión que la del edificio para el rendimiento de la red. 
+
+### <a name="javascript-tests"></a>Pruebas de JavaScript
+
+Después de identificar la ubicación de la oficina, ejecutamos una prueba de latencia de TCP en JavaScript y solicitamos datos del servicio sobre los servidores de puerta de las puertas de servicio en uso y recomendados en Office 365. Cuando se completen, los mostraremos en el mapa y en la pestaña detalles, donde podrán visualizarse antes del siguiente paso.
+
+### <a name="download-the-advanced-tests-client-application"></a>Descargar la aplicación de cliente de pruebas avanzadas
+
+A continuación, inicie la descarga de la aplicación cliente de pruebas avanzadas. Confiamos en que el usuario inicie la aplicación cliente y también debe tener instalado .NET Core.
+
+### <a name="start-the-advanced-tests-client-application"></a>Inicio de la aplicación cliente de pruebas avanzadas
+
+Una vez iniciada la aplicación cliente, la página web se actualizará para mostrar que los datos de prueba se empezarán a recibir en la Página Web. Actualiza cada vez que se reciben nuevos datos y puede revisar los datos a medida que lleguen.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Pruebas avanzadas completadas y prueba de carga de informes
+
+Una vez finalizadas las pruebas, la página web y el cliente de pruebas avanzadas lo indicarán y, si el usuario está firmado en el informe de prueba, se cargará en el inquilino de clientes.
+
 ## <a name="connectivity-reports"></a>Informes de conectividad
 
 Si ha iniciado sesión, puede revisar los informes anteriores que ha ejecutado. También puede compartirlas o eliminarlas de la lista.
@@ -224,6 +248,10 @@ Estas son las respuestas a algunas de las preguntas más frecuentes.
 ### <a name="is-this-tool-released-and-supported-by-microsoft"></a>¿Esta herramienta se ha lanzado y es compatible con Microsoft?
 
 Actualmente, se trata de una versión preliminar y planea proporcionar actualizaciones periódicamente hasta que lleguen al estado de lanzamiento de disponibilidad general con soporte de Microsoft. Envíe sus comentarios para ayudarnos a mejorar. Planeamos publicar una guía de incorporación más detallada de la red de Office 365 como parte de esta herramienta, que se ha personalizado para la organización mediante los resultados de la prueba.
+
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>¿Qué se necesita para ejecutar el cliente de prueba avanzado?
+
+El cliente de prueba avanzado requiere .NET Core 3,1 en tiempo de ejecución de escritorio. Si ejecuta el cliente de prueba avanzada sin que se haya instalado, se le dirigirá a [la página del instalador de .net Core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Asegúrese de instalar el tiempo de ejecución de escritorio y no el SDK, o el tiempo de ejecución de ASP.NET Core, que están más arriba en la página. Los permisos de administrador en el equipo son reuqired de instalar .NET Core. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>¿Qué es el servicio de Microsoft 365 puerta frontal?
 

@@ -1,5 +1,5 @@
 ---
-title: Recomendaciones de rendimiento de red en el centro de administración de Microsoft 365 (versión preliminar)
+title: Conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información general sobre la conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815248"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948426"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
 
-El centro de administración de Microsoft 365 ahora includesaggregated métricas de conectividad de red recopiladas del inquilino de Microsoft 365 y disponibles para que las vean solo los usuarios administrativos de su espacio empresarial. Las **evaluaciones de red** y la información de **red** se muestran en el centro de administración de Microsoft 365 bajo **Health | Conectividad**.
+El centro de administración de Microsoft 365 ahora incluye métricas de conectividad de red agregadas recopiladas de su inquilino de Microsoft 365 y disponibles para que las vean solo los usuarios administrativos de su espacio empresarial. Las **evaluaciones de red** y la información de **red** se muestran en el centro de administración de Microsoft 365 bajo **Health | Conectividad**.
 
 ![Página de rendimiento de red](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -35,9 +35,9 @@ Hay tres opciones para obtener evaluaciones de red desde sus ubicaciones de ofic
 
 ### <a name="1-enable-windows-location-services"></a>1. habilitar los servicios de ubicación de Windows
 
-Para esta opción, debe tener al menos dos equipos en ejecución en cada ubicación de oficina que admita los requisitos previos. La versión 19,232 o superior de OneDrive para Windows debe estar instalada en cada equipo. Para obtener más información sobre las versiones de OneDrive, consulte las notas de la [versión de onedrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Se planea que las medidas de red se agreguen en otras aplicaciones cliente de Office 365 en un futuro próximo.
+Para esta opción, debe tener al menos dos equipos en ejecución en cada ubicación de oficina que admita los requisitos previos. La versión **19,232** o superior de OneDrive para Windows debe estar instalada en cada equipo. Para obtener más información sobre las versiones de OneDrive, consulte las notas de la [versión de onedrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Se planea que las medidas de red se agreguen en otras aplicaciones cliente de Office 365 en un futuro próximo.
 
-El servicio de ubicación de Windows debe estar Consent en los equipos. Puede probar esto ejecutando la aplicación **mapas** y buscándolo. Se puede habilitar en un único equipo con **Settings**  ->  la ubicación de**privacidad**configuración  ->  **Location** en la que la configuración "permitir que las aplicaciones tengan acceso a la ubicación" debe estar habilitada. El consentimiento de los servicios de ubicación de Windows se puede implementar en equipos que usen MDM o la Directiva de grupo con la configuración _LetAppsAccessLocation_.
+El servicio de ubicación de Windows debe estar Consent en los equipos. Puede probar esto ejecutando la aplicación **mapas** y buscándolo. Se puede habilitar en un único equipo con **configuración | Privacidad | Ubicación** en la que la configuración permite que las _aplicaciones tengan acceso a su ubicación_ debe estar habilitada. El consentimiento de los servicios de ubicación de Windows se puede implementar en equipos que usen MDM o la Directiva de grupo con la configuración _LetAppsAccessLocation_.
 
 No es necesario agregar ubicaciones en el centro de administración con este método, ya que se identifican automáticamente en la resolución de la ciudad. No puede mostrar varias ubicaciones de oficina dentro de una ciudad con los servicios de ubicación de Windows.
 
@@ -47,7 +47,7 @@ Las muestras de medidas y las ubicaciones de la oficina deberían empezar a pare
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. agregar ubicaciones y proporcionar información de subred de LAN
 
-Para esta opción no se necesitan servicios de ubicación de Windows ni Wi-Fi. Necesita la versión 20.161.0811.0001 o posterior de OneDrive para Windows instalada en cada commputer en la ubicación.
+Para esta opción no se necesitan servicios de ubicación de Windows ni Wi-Fi. Necesita la versión 20,161 o posterior de OneDrive para Windows instalada en todos los equipos de la ubicación.
 
 También tiene que agregar ubicaciones en la página conectividad de red del centro de administración o importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred de la LAN de Office.
 
@@ -118,14 +118,14 @@ La pestaña detalles de la página ubicación de la oficina muestra los resultad
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>Importación de CSV para ubicaciones de oficinas de subred de LAN
 
-Para la identificación de la oficina de subred de LAN, necesita agregar cada locaiton por adelantado. En lugar de agregar ubicaciones de oficina individuales en la ficha **ubicaciones** , puede importarlas desde un archivo CSV. Es posible que pueda obtener estos datos desde otros lugares que haya almacenado, como el panel de calidad de llamadas o los sitios y servicios de Active Directory.
+Para la identificación de la oficina de subred de LAN, debe agregar cada ubicación por adelantado. En lugar de agregar ubicaciones de oficina individuales en la ficha **ubicaciones** , puede importarlas desde un archivo CSV. Es posible que pueda obtener estos datos desde otros lugares que haya almacenado, como el panel de calidad de llamadas o los sitios y servicios de Active Directory.
 
 En el archivo CSV, una ubicación de ciudad detectada tiene la etiqueta **ciudad**y una ubicación de oficina agregada manualmente con la etiqueta **Ubicación**.
 
 1. En la ventana principal _conectividad a Microsoft 365_ , haga clic en la pestaña **ubicaciones** .
 1. Haga clic en el botón **importar** , justo encima de la lista ubicaciones. Aparecerá el control flotante **ubicaciones de importación** .
 
-   ![Mensaje de error de importación de CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![Mensaje de importación CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Haga clic en el vínculo **Descargar ubicaciones actuales de Office (. csv)** para exportar la lista de ubicaciones actuales a un archivo CSV y guárdelo en el disco duro local. Esto le proporcionará un archivo CSV con el formato correcto con los encabezados de columna a los que puede Agregar ubicaciones. Puede dejar las ubicaciones exportadas existentes tal como están; no se duplicarán cuando importe el CSV actualizado. Si desea cambiar la dirección de una ubicación existente, se actualizará cuando importe el archivo CSV. No puede cambiar la dirección de una ciudad descubierta.
 1. Abra el archivo CSV y agregue sus ubicaciones rellenando los siguientes campos en una nueva línea para cada ubicación que desee agregar. Deje todos los demás campos en blanco; se omitirán los valores que especifique en otros campos.
@@ -143,7 +143,7 @@ En el archivo CSV, una ubicación de ciudad detectada tiene la etiqueta **ciudad
 
    ![Mensaje listo para importación de CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="faq"></a>Preguntas frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio de Microsoft 365?
 
@@ -169,3 +169,5 @@ La ubicación de salida de Internet es la ubicación en la que el tráfico de re
 [Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-location-services.md)
+
+[Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)

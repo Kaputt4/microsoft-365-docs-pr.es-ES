@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la administración del conocimiento en Project Cortex.
-ms.openlocfilehash: 6ced55e8886c08219d7296e2709a2ffc2f09078d
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 80750ee94248b21b8ac7bd3869830a7986de34b9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612601"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949377"
 ---
 # <a name="knowledge-management-0verview-preview"></a>Knowledge Management 0verview (versión preliminar)
 
@@ -81,6 +81,6 @@ Además, los usuarios con los permisos adecuados pueden etiquetar elementos como
 
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 [Configuración de la administración del conocimiento](set-up-knowledge-network.md)</br>
 [Información general sobre el centro de temas](topic-center-overview.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Revise las respuestas a preguntas frecuentes sobre la implementación centralizada en el centro de administración de Microsoft 365.
-ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102889"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948693"
 ---
 # <a name="centralized-deployment-faq"></a>Preguntas frecuentes sobre implementación centralizada
 
@@ -94,8 +94,10 @@ Le sugerimos que llegue al desarrollador de ISV para que el complemento de pago 
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>¿Qué rol de administración necesito para administrar los complementos de mi organización?  
 
-Debe tener el rol de administrador global para administrar complementos. Si usted es la persona que compró su suscripción de Microsoft 365 para empresas, será el administrador global. 
+El administrador global es el rol recomendado con acceso completo al ciclo de vida de la administración de complementos. Otros roles de administrador tienen un acceso limitado al ciclo de vida de la implementación de complementos. Si usted es la persona que compró su suscripción de Microsoft 365 para empresas, será el administrador global. 
  
 Su suscripción incluye un conjunto de roles de administrador que puede asignar a otros usuarios de su organización. Cada rol de administrador se asigna a funciones empresariales comunes y proporciona a los usuarios de su organización permisos para realizar tareas específicas en el centro de administración de 365 de Microsoft.  
  
 Para obtener más información, vea [asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).  
+
+

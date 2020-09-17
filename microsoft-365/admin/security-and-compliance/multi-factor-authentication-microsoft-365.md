@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información acerca de la autenticación multifactor en Microsoft 365.
-ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: bca84e949e696b483b567bf5f72233840023abca
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083591"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948717"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
@@ -59,7 +59,7 @@ Estas formas se basan en el plan 365 de Microsoft.
 |---------|---------|----------|
 | Todos los planes de 365 de Microsoft | Use los valores predeterminados de seguridad, que requieren MFA para todas las cuentas de usuario. <br> También puede requerir MFA en cada cuenta de usuario, pero no se recomienda. | Empresa pequeña |
 | Microsoft 365 Empresa Premium <br><br> Microsoft 365 E3 <br><br> Licencias de Azure Active Directory (Azure AD) Premium P1 | Use las directivas de acceso condicional para requerir MFA para las cuentas de usuario en función de la pertenencia a grupos, las aplicaciones y otros criterios. | Pequeña empresa a empresarial |
-| Microsoft 365 E5 <br><br> Licencias de Azure AD Premium P2 | Use Azure AD Identity Protection para requerir MFA en función de los criterios de inicio de sesión en el riesgo. |  Empresa |
+| Microsoft 365 E5 <br><br> Licencias de Azure AD Premium P2 | Use Azure AD Identity Protection para requerir MFA en función de los criterios de inicio de sesión en el riesgo. |  Enterprise |
 ||||
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
@@ -134,7 +134,7 @@ Puede usar la protección de identidad de Azure AD y las directivas de acceso co
 
 Para más información, vea esta [información general sobre la protección de identidad de Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-### <a name="mfa-for-an-individual-user-account-not-recommended"></a>MFA para una cuenta de usuario individual (no recomendado)
+### <a name="legacy-per-person-mfa-not-recommended"></a>MFA heredado por persona (no recomendado)
 
 Debe usar los valores predeterminados de seguridad o directivas de acceso condicional para requerir MFA para los inicios de sesión de la cuenta de usuario. Sin embargo, si no se puede usar cualquiera de estos, Microsoft recomienda MFA para las cuentas de usuario que tienen roles de administrador, especialmente el rol de administrador global, para cualquier suscripción de tamaño. 
 
@@ -152,7 +152,7 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 |:-------|:-----|:-------|:-------|
 | **Valores predeterminados de seguridad** | No se pueden usar directivas de acceso condicional |   Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
 | **Directivas de acceso condicional** |Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad | Especificado por el usuario durante el registro de MFA |
-| **Configuración de cuenta por usuario (no recomendado)** | Invalida los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA en cada inicio de sesión | Invalidados por los valores predeterminados de seguridad y directivas de acceso condicional | Especificado por el usuario durante el registro de MFA|
+| **MFA heredado por persona (no recomendado)** | Invalida los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA en cada inicio de sesión | Invalidados por los valores predeterminados de seguridad y directivas de acceso condicional | Especificado por el usuario durante el registro de MFA|
 ||||
 
 Si se habilitan los valores predeterminados de seguridad, todos los usuarios nuevos se solicitarán para el registro de MFA y el uso de la aplicación Microsoft Authenticator en el siguiente inicio de sesión.
@@ -171,4 +171,3 @@ En el centro de administración de Microsoft 365, puede configurar las opciones 
 ## <a name="your-next-step"></a>El siguiente paso
 
 [Configurar MFA para Microsoft 365](set-up-multi-factor-authentication.md)
-

@@ -7,16 +7,16 @@ manager: pamgreen
 ms.date: 08/01/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 82a1b1990f464a892b8216caa26e0422b093bf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612495"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948059"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Trabajar con temas en el centro de temas (versión preliminar)
 
@@ -70,7 +70,7 @@ Para crear un nuevo tema:
     c. En la sección **Descripción breve** , escriba una descripción de una o dos frases del tema. Este texto se utilizará para la tarjeta de temas asociada.</br>
     d. En la sección **personas** , escriba los nombres de los expertos en la materia para el tema.</br>
     e. En la sección **archivos y páginas** , seleccione **Agregar** y, a continuación, en la página siguiente, puede seleccionar archivos de OneDrive asociados o páginas de SharePoint Online.</br>
-    f. En la sección **sitios** , seleccione **Agregar**. En el panel **sitios** que se muestra, seleccione los sitios asociados al tema.</br>
+    f. En la sección **sitios** , seleccione **Agregar**. En el panel  **sitios** que se muestra, seleccione los sitios asociados al tema.</br>
 
     ![Nueva página del tema](../media/content-understanding/k-new-topic-page.png) </br>
 3. Si necesita agregar otros componentes a la página, como texto, imágenes, elementos Web, vínculos, etc., seleccione el icono lienzo en la parte central de la página para buscarlos y agregarlos.
@@ -92,7 +92,7 @@ Las páginas de temas existentes se pueden encontrar en la página **páginas** 
 4. Realice los cambios necesarios en la página. Esto incluye actualizaciones para los siguientes campos:</br>
     a. Nombres alternativos</br>
     b. Descripción</br>
-    c. Personas</br>
+    c. Contactos</br>
     d. Archivos y páginas</br>
     e. Sitios</br>
     f. También puede agregar elementos estáticos a la página (como texto, imágenes o vínculo) seleccionando el icono lienzo.</br>

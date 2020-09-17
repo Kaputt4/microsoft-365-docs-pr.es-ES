@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca de documentos de SharePoint.
-ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 8a4931f4b7a936caeb99d7f8c07deefdac62919b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612685"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950253"
 ---
 # <a name="apply-a-document-understanding-model-preview"></a>Aplicación de un modelo de comprensión de documentos (versión preliminar)
 
@@ -39,7 +39,7 @@ Después de publicar el documento con información sobre el modelo, puede aplica
 
 Para aplicar el modelo a una biblioteca de documentos de SharePoint:
 
-1. En la Página principal del modelo, en el mosaico **aplicar modelo a bibliotecas** , seleccione **publicar modelo**. O bien, puede seleccionar **+ Agregar biblioteca** en la sección **bibliotecas con este modelo** . </br>
+1. En la Página principal del modelo, en el mosaico **aplicar modelo a bibliotecas** , seleccione **publicar modelo**. O bien, puede seleccionar  **+ Agregar biblioteca** en la sección **bibliotecas con este modelo** . </br>
 
     ![Agregar un modelo a la biblioteca](../media/content-understanding/apply-to-library.png)</br>
 

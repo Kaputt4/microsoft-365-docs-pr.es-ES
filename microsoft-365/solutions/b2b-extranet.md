@@ -15,12 +15,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo crear un sitio o un equipo de extranet B2B con usuarios invitados administrados desde una organización asociada.
-ms.openlocfilehash: 4f8eb33ad9b41f552975d4158a61ec4cedcfa9cc
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526987"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949389"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 
@@ -31,6 +31,12 @@ Con este método de compartir recursos para colaboración, la organización asoc
 En este artículo se describen los pasos para crear un paquete de recursos (en este caso, un sitio o un equipo) que puede compartir con una organización asociada a través de un modelo de registro de acceso sin ayuda de autoservicio. 
 
 Antes de empezar, cree el sitio o equipo que desea compartir con la organización asociada y habilítelo para compartir el invitado. Consulte [colaborar con invitados en un sitio](collaborate-in-site.md) o [colaborar con los invitados en un equipo](collaborate-as-team.md) para obtener más información. También le recomendamos que revise [crear un entorno seguro de uso compartido de invitados](create-secure-guest-sharing-environment.md) para obtener información sobre las características de seguridad y cumplimiento que puede usar para ayudar a mantener sus directivas de gobierno al colaborar con invitados.
+
+## <a name="license-requirements"></a>Requisitos de licencia
+
+El uso de esta característica requiere una licencia de Azure AD Premium P2. 
+
+Las nubes especializadas, como Azure Germany y Azure China 21Vianet, actualmente no están disponibles para su uso.
 
 ## <a name="video-demonstration"></a>Vídeo de demostración
 
@@ -121,7 +127,6 @@ Para buscar el vínculo del portal de Access
 
 Una vez que haya copiado el vínculo, puede compartirlo con su contacto en la organización asociada y puede enviarlo a los usuarios de su equipo de colaboración.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)
-

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547232"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950797"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -35,6 +35,10 @@ El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el 
 
 [ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+Este es un resumen de PDF de una página con vínculos a las directivas individuales:
+
+[![Imagen en miniatura para la protección de identidades y dispositivos para el documento de Microsoft 365](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Ver como PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 En el resto de este artículo se describe cómo configurar estas directivas. 
 
@@ -114,7 +118,7 @@ En la sección **asignaciones** :
 
 Aplique la configuración del nivel de riesgo en función del nivel de protección de destino.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
 |:---------|:-----|:----|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alta, media, baja|Compruebe los tres.|
@@ -123,7 +127,7 @@ Aplique la configuración del nivel de riesgo en función del nivel de protecci�
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Acción|
 |:---|:---------|:-----|:----|
 |Conceder|**Conceder acceso**| | Select |
 |||**Requerir multi-factor Authentication**| Check |
@@ -154,7 +158,7 @@ En la sección **asignaciones** :
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Acción|
 |:---|:---------|:-----|:----|
 |Conceder|**Bloquear acceso**| | Select |
 ||**Exigir todos los controles seleccionados** ||Select|
@@ -174,7 +178,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la sección **asignaciones** :
 
-|Tipo|Propiedades|Valores|Action|
+|Tipo|Propiedades|Valores|Acción|
 |:---|:---------|:-----|:----|
 |Usuarios|Incluir|**Todos los usuarios**|Select|
 |Riesgo de usuario| **Alto**||Select|
@@ -182,7 +186,7 @@ En la sección **asignaciones** :
 
 En la segunda sección **asignaciones** :
 
-| Tipo | Propiedades | Valores                  | Action |
+| Tipo | Propiedades | Valores                  | Acción |
 |:-----|:-----------|:------------------------|:------|
 | Access | **Permitir acceso** |  | Select  |
 |      |     | **Exigir cambio de contraseña** | Check  |
@@ -278,7 +282,7 @@ Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y ver
 
 Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows**, vea esta tabla.
 
-|Propiedades|Valor|Action|
+|Propiedades|Valor|Acción|
 |:---------|:-----|:----|
 |Requerir BitLocker|Obligatoria| Select |
 |Requerir el arranque seguro para habilitarse en el dispositivo|Obligatoria| Select |
@@ -291,7 +295,7 @@ Para el **cumplimiento del administrador de configuración**, seleccione **reque
 
 Para la **seguridad del sistema**, vea esta tabla.
 
-|Tipo|Propiedades|Valor|Action|
+|Tipo|Propiedades|Valor|Acción|
 |:---|:---------|:-----|:----|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
 ||Contraseñas sencillas|Bloquear|Select|
@@ -313,7 +317,7 @@ Para la **seguridad del sistema**, vea esta tabla.
 
 **ATP de Microsoft Defender**
 
-|Tipo|Propiedades|Valor|Action|
+|Tipo|Propiedades|Valor|Acción|
 |:---|:---------|:-----|:----|
 |Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano|Select|
 |||||
@@ -374,7 +378,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 ## <a name="next-step"></a>Paso siguiente
 
-![Paso 3: directivas para usuarios externos y invitados](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![Paso 3: directivas para usuarios externos y invitados](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Obtener información sobre recomendaciones de directivas para usuarios externos y invitados](identity-access-policies-guest-access.md)

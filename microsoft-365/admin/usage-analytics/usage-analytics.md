@@ -19,17 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando los servicios de Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402027"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948633"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 ---
-El análisis de uso de Microsoft 365 todavía no está disponible para la comunidad de Microsoft 365 US Government.
- 
+
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Información general acerca de análisis de uso de Microsoft 365
 
 Use el análisis de uso de Microsoft 365 en Power BI para obtener información sobre cómo su organización está adoptando los distintos servicios de Microsoft 365 para comunicarse y colaborar. Puede visualizar y analizar los datos de uso de Microsoft 365, crear informes personalizados y compartir la información dentro de su organización y obtener información sobre la forma en que determinadas regiones o departamentos usan Microsoft 365.
@@ -84,7 +83,7 @@ Este informe contiene un informe independiente para cada servicio de Microsoft 3
 
 Los informes de actividad de usuario están disponibles para determinados servicios individuales. Estos informes proporcionan datos de uso detallado a nivel de usuario Unidos con atributos de Active Directory. Además, el informe de adopción de departamento le permite segmentar los atributos de Active Directory para poder ver a los usuarios activos en todos los servicios individuales. Todas las métricas se agregan para el último mes completo.
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="faq"></a>Preguntas frecuentes
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>¿Esta aplicación de plantilla estará disponible a través de la compra o será gratuita?
 
@@ -136,7 +135,7 @@ Además, los detalles de nivel de usuario de la aplicación de plantilla solo es
 
 ### <a name="when-should-i-use-the-template-app-and-when-the-usage-reports"></a>¿Cuándo debo usar la aplicación de plantilla y cuándo los informes de uso?
 
-Los [informes de actividades](../activity-reports/activity-reports.md) son un buen punto de partida para comprender el uso y la adopción de Microsoft 365. La aplicación de plantillas combina los datos de uso de Microsoft 365 y la información de Active Directory de la organización y permite a los administradores analizar el conjunto de datos con las funciones de Visual Analytics de Power BI. Esto permite a los administradores no solo visualizar y analizar los datos de uso de Microsoft 365, sino también dividirlos por propiedades de Active Directory, como los departamentos, la ubicación, etc. También pueden crear informes personalizados y compartir la información dentro de su organización. 
+Los [informes de actividades](../activity-reports/activity-reports.md)  son un buen punto de partida para comprender el uso y la adopción de Microsoft 365. La aplicación de plantillas combina los datos de uso de Microsoft 365 y la información de Active Directory de la organización y permite a los administradores analizar el conjunto de datos con las funciones de Visual Analytics de Power BI. Esto permite a los administradores no solo visualizar y analizar los datos de uso de Microsoft 365, sino también dividirlos por propiedades de Active Directory, como los departamentos, la ubicación, etc. También pueden crear informes personalizados y compartir la información dentro de su organización. 
 
 ### <a name="how-often-is-the-data-refreshed"></a>¿Con qué frecuencia se actualizan los datos? 
 

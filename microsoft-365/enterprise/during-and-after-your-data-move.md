@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve servicios y datos asociados para el inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693833"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950277"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -45,8 +45,8 @@ Vea el centro de mensajes de Microsoft 365 para confirmar que se han completado 
 |Emiratos Árabes Unidos  <br/> |1 de julio de 2022  <br/> |
 |Sudáfrica  <br/> |1 de julio de 2022  <br/> |
 |Suiza, Liechtenstein  <br/> |1 de julio de 2022  <br/> |
-|Alemania  <br/> |Plane  <br/> |
 |Noruega  <br/> |1 de noviembre de 2022  <br/> |
+|Alemania  <br/> |Plane  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

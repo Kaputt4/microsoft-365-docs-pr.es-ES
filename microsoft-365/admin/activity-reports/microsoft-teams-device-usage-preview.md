@@ -1,5 +1,5 @@
 ---
-title: 'Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams-vista previa'
+title: Uso de dispositivo de Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,30 +21,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones de Microsoft Teams usadas en su organización al obtener el informe de uso de aplicaciones de Microsoft Teams de los informes de Microsoft 365.
-ms.openlocfilehash: 4945e74d91e12c1e846de3e4bd8393220349d608
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167358"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949095"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage---preview"></a>Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams-vista previa
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams
 
 El panel de **informes** de Microsoft 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
   
 > [!NOTE]
 > Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
  
-## <a name="how-to-get-to-the-preview-microsoft-teams-app-usage-report"></a>Obtener acceso al informe de uso de aplicaciones de Microsoft Teams en vista previa
+## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Cómo obtener el informe de uso de aplicaciones de Microsoft Teams
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la lista desplegable **seleccionar un informe** , seleccione **Microsoft Teams**.
+2. En la Página principal del panel, haga clic en el botón **Ver más** de la tarjeta de actividad de Microsoft Teams.
   
-## <a name="interpret-the-preview-microsoft-teams-app-usage-report"></a>Interpretar el informe de uso de aplicaciones de Microsoft Teams en vista previa
+## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpretar el informe de uso de aplicaciones de Microsoft Teams
 
-Puede ver el uso del dispositivo en el informe de vista previa de los equipos eligiendo la pestaña **uso de dispositivo** .
+Puede ver el uso del dispositivo en el informe de Microsoft Teams eligiendo la pestaña **uso de dispositivo** .<br/>![Microsoft 365 Reports: uso de dispositivos de Microsoft Teams.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+
+Seleccione **elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de dispositivos de usuario de Microsoft Teams: elegir columnas](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+
+También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|||
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |El nombre para mostrar del usuario. Puede hacer clic en el nombre para mostrar para ir a la página de configuración del usuario en el centro de administración de Microsoft Teams.  <br/> |

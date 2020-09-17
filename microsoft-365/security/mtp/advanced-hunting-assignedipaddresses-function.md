@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794236"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949317"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+Use la `AssignedIPAddresses()` función para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo. Si especifica un argumento timestamp, esta función obtiene las direcciones IP más recientes a la hora especificada. 
 
-Use la `AssignedIPAddresses()` función para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo o las direcciones IP más recientes desde un momento determinado. Esta función devuelve una tabla con las siguientes columnas:
+Esta función devuelve una tabla con las siguientes columnas:
 
 | Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
-| Timestamp | datetime | La última hora a la que se observó el dispositivo con la dirección IP |
-| IPAddress | string | Dirección IP usada por el dispositivo |
-| IPType | string | Indica si la dirección IP es una dirección pública o privada |
-| NetworkAdapterType | int | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) .  |
-| ConnectedNetworks | int | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o de dominio), una descripción y una marca que indica si está conectado públicamente a Internet |
-
+| `Timestamp` | datetime | La última hora a la que se observó el dispositivo con la dirección IP |
+| `IPAddress` | cadena | Dirección IP usada por el dispositivo |
+| `IPType` | cadena | Indica si la dirección IP es una dirección pública o privada |
+| `NetworkAdapterType` | int | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) . |
+| `ConnectedNetworks` | int | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o de dominio), una descripción y una marca que indica si está conectado públicamente a Internet |
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x** — `DeviceId` o `DeviceName` valor que identifica el dispositivo
-- **y** : `Timestamp` (DateTime) valor que indica el punto específico en el tiempo en el que se obtienen las direcciones IP más recientes. Si no se especifica, la función devuelve las direcciones IP más recientes.
+- **x**— `DeviceId` o `DeviceName` valor que identifica el dispositivo
+- **y**: `Timestamp` (DateTime) que indica a la función que debe obtener las direcciones IP asignadas más recientemente de una hora específica. Si no se especifica, la función devuelve las direcciones IP más recientes.
 
 ## <a name="examples"></a>Ejemplos
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>Obtener la lista de direcciones IP que usa un dispositivo hace 24 horas
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Obtener la lista de direcciones IP que usa un dispositivo hace 24 horas
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

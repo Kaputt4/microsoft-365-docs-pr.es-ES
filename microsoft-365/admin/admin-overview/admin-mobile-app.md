@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenga la aplicación de administración de Microsoft 365 y aprenda a administrar su organización en línea desde su teléfono o tableta.
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780546"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948813"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil de administración de Microsoft 365
 
@@ -40,7 +40,7 @@ La aplicación de administración es una aplicación de características enrique
 
 - Obtener el estado del servicio y las notificaciones de cambios
 - Crear una solicitud de servicio
-- Restablecer una contraseña de usuario
+- Restablecer la contraseña de un usuario
 - Asignar licencias
 - Agregar o quitar pertenencias a grupos
 - Agregar usuarios 
@@ -58,7 +58,7 @@ Vea un breve vídeo sobre la instalación de la aplicación móvil de administra
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
@@ -88,6 +88,10 @@ Los números son el total de los mensajes de la semana pasada, no los mensajes n
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>¿Cómo puedo compartir los mensajes e incidencias de servicio con el resto de mi organización?
 
 Si selecciona una incidencia de servicio específica o un mensaje, la opción de uso compartido estará en la esquina superior derecha. Actualmente se admite el uso compartido de correo electrónico.
+  
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>¿Puedo usar esta aplicación con varias cuentas o inquilinos?
+
+Sí, puede configurar varias cuentas o espacios empresariales.
   
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>Mi aplicación actúa de forma extraña. ¿Qué puedo hacer para solucionar problemas de comportamiento extraño de la aplicación?
 
