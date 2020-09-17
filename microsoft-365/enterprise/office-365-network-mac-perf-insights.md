@@ -14,26 +14,32 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información de la red de 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: b30af89d480383fdc9011d24409e3b418339c70b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693909"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948521"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Información de la red de 365 de Microsoft (versión preliminar)
 
-**Network Insights** son métricas de rendimiento de Live que recopila el inquilino de Microsoft 365 y que solo pueden ver los usuarios administrativos de su espacio empresarial. La información se muestra en el centro de administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Network Insights** son métricas de rendimiento que recopila el inquilino de Microsoft 365 y que solo pueden ver los usuarios administrativos de su espacio empresarial. La información se muestra en el centro de administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 
 La información está destinada a ayudar en el diseño de perímetros de red para sus ubicaciones de oficina. Cada conocimiento proporciona detalles sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios obtienen acceso a su inquilino.
 
-Hay cinco información de red específica que se puede mostrar para cada ubicación de la oficina:
+Hay seis opciones de red específicas que pueden mostrarse para cada ubicación de la oficina:
 
 - [Salida de red en recorrido](#backhauled-network-egress)
 - [Se ha detectado un mejor rendimiento para los clientes cercanos](#better-performance-detected-for-customers-near-you)
 - [Uso de una puerta principal no óptima del servicio de Exchange Online](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Uso de puerta frontal del servicio de SharePoint Online no óptimo](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [Velocidad de descarga baja desde la puerta frontal de SharePoint](#low-download-speed-from-sharepoint-front-door)
+- [Salida de red óptima de usuario de China](#china-user-optimal-network-egress)
+
+Hay dos información sobre la red de nivel de inquilino que puede mostrarse para el inquilino. También aparecen en las páginas de puntuación de producvitivy:
+
+- [Conexiones de ejemplo de Exchange afectadas por problemas de conectividad](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [Conexiones de muestreo de SharePoint afectadas por problemas de conectividad](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Microsoft 365 que se han inscrito en el programa de vista previa de características.
@@ -140,6 +146,30 @@ Internet sale aún más de los usuarios que estas ubicaciones reducirán el rend
 ### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
 
 Para obtener más información acerca de cómo mitigar problemas de rendimiento relacionados con esta visión, consulte [Office 365 global tenant performance Optimization for China users](microsoft-365-networking-china.md).
+
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Conexiones de ejemplo de Exchange afectadas por problemas de conectividad
+
+Esta información se mostrará cuando se vean afectados el 50% o más de las conexiones muestreadas. El impacto se define mediante la evaluación de Exchange por debajo del 60% para cada ejemplo.
+
+### <a name="what-does-this-mean"></a>Escenario
+
+Es una indicación de que es probable que la mayoría de los usuarios experimenten problemas de experiencia de usuario con Outlook que se conecta a Exchange Online. El porcentaje de muestras probablemente representará el porcentaje de usuarios que aparecen a menos de 60 puntos.  
+
+### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+
+Habilite la visibilidad de conectividad de red de la ubicación de Office si todavía no lo ha hecho. Desea identificar qué oficinas están impactred por una mala conectividad de red que está afectando a Exchange y encontrar formas de mejorar el perímetro de red en cada una de las que conecta a los usuarios a la red de Microsoft.
+
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Conexiones de muestreo de SharePoint afectadas por problemas de conectividad
+
+Esta información se mostrará cuando se vean afectados el 50% o más de las conexiones muestreadas. El impacto se define en la evaluación de SharePoint por debajo de 40% para cada ejemplo.
+
+### <a name="what-does-this-mean"></a>Escenario
+
+Es una indicación de que es probable que la mayoría de los usuarios experimenten problemas de experiencia de usuario con SharePoint y OneDrive. El porcentaje de muestras probablemente representará el porcentaje de usuarios que aparecen a menos de 40 puntos.  
+
+### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
+
+Habilite la visibilidad de conectividad de red de la ubicación de Office si todavía no lo ha hecho. Desea identificar qué oficinas están impactred por una mala conectividad de red que está afectando a SharePoint y encontrar formas de mejorar el perímetro de red en cada una de las que conecta a los usuarios a la red de Microsoft.
 
 ## <a name="related-topics"></a>Temas relacionados
 

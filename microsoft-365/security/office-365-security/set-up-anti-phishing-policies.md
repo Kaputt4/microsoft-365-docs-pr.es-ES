@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407933"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950609"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -188,6 +188,9 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **Usuarios suplantados**: la dirección de contiene un usuario protegido.
   - **Dominios suplantados**: la dirección de contiene un dominio protegido.
   - **Caracteres inusuales**: la dirección de contiene juegos de caracteres inusuales (por ejemplo, símbolos matemáticos y texto o una combinación de letras mayúsculas y minúsculas) en un dominio o remitente protegido.
+
+  > [!NOTE]
+  > Incluso cuando las sugerencias de seguridad de suplantación están desactivadas, puede usar una regla de flujo de correo (también denominada regla de transporte) para agregar un encabezado de mensaje denominado **X-MS-Exchange-EnableFirstContactSafetyTip** a los mensajes. Se mostrarán sugerencias de seguridad específicas para notificar a los destinatarios que a menudo no reciben correo electrónico del remitente o en casos en los que el destinatario recibe un correo por primera vez del remitente.
 
 - **Inteligencia de buzones**: habilita o deshabilita la inteligencia artificial (AI) que determina los patrones de correo electrónico del usuario con sus contactos frecuentes. Esta configuración ayuda a los AI a distinguir los correos electrónicos legítimos y falsos de los contactos. La inteligencia de buzones solo está disponible para buzones de Exchange Online.
 

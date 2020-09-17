@@ -1,24 +1,25 @@
 ---
 title: Información de actualización de seguridad de Windows
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341259"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950372"
 ---
 # <a name="windows-security-update-insights"></a>Información de actualización de seguridad de Windows
 En esta vista se proporciona información general sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. 
 
 Para ver los datos de uso, seleccione la pestaña <strong>actualizaciones de seguridad de Windows</strong> .
 
-![Panel de actualizaciones de seguridad de Windows: gráficos de barras del estado del dispositivo y versión de actualización en la columna izquierda, actualizar el progreso de la implementación a lo largo del tiempo en la columna central y el porcentaje de dispositivos activos por grupo de implementación, así como el número de días que se tarda en llegar a la implementación del 95% destino en la columna derecha.](../../media/update-insights.jpg)
+![Panel de actualizaciones de seguridad de Windows: gráficos de barras del estado del dispositivo y versión de actualización en la columna izquierda, actualizar el progreso de la implementación a lo largo del tiempo en la columna central y el porcentaje de dispositivos activos por grupo de implementación, así como el número de días que se toma para alcanzar el objetivo de implementación del 95% en la columna derecha.](../../media/update-insights.jpg)
 
 ## <a name="device-status"></a>Estado del dispositivo
 

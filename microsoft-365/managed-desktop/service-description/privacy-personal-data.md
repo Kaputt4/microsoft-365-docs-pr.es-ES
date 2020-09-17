@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547943"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950489"
 ---
 # <a name="privacy-and-personal-data"></a>Privacidad y datos personales
 
@@ -91,7 +91,7 @@ Los datos de Intune se pueden almacenar en varias regiones diferentes, como Euro
 
 Los datos de la protección contra amenazas avanzada (ATP) de Microsoft defender se pueden almacenar en algunas regiones diferentes. Por este motivo, Microsoft defender ATP opera en los centros de datos de Microsoft Azure de la Unión Europea, el Reino Unido y en Estados Unidos, como se indica en [Microsoft defender ATP, ubicaciones de almacenamiento de datos](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento de datos y el uso de ATP de Microsoft defender, vea [¿qué datos recopila ATP Microsoft defender ATP?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Como se indica en la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement), "los datos personales recopilados por Microsoft se pueden almacenar y procesar en su región, en Estados Unidos y en cualquier otro país donde Microsoft o sus filiales, subsidiarias o proveedores de servicios operen con instalaciones. [...] Normalmente, la ubicación de almacenamiento principal está en la región del cliente o en Estados Unidos, a menudo con una copia de seguridad en un centro de recursos de otra región. Las ubicaciones de almacenamiento se eligen para funcionar de forma eficaz, mejorar el rendimiento y crear redundancias con el fin de proteger los datos si se produce una interrupción u otro problema. Se deben seguir los pasos para garantizar que los datos recopilados en esta declaración de privacidad se procesan de acuerdo con las disposiciones de esta declaración y los requisitos de la ley vigente dondequiera que se encuentren los datos. "
 
@@ -128,7 +128,7 @@ En la siguiente sección se describe cómo Microsoft Managed Desktop ayuda a los
 
 ### <a name="it-admin-contact-information"></a>Información de contacto de administrador de ti
 
-Un administrador de inquilinos puede ver, corregir y eliminar sus datos personales directamente en la sección de contacto de administrador del portal de escritorio administrado de Microsoft.
+Un administrador de inquilinos puede ver, corregir y eliminar sus propios datos personales (como su propia información de contacto) directamente en la sección de contacto del administrador del portal de escritorio administrado de Microsoft.
 
 ### <a name="user-related-personal-data"></a>Datos personales relacionados con el usuario
 

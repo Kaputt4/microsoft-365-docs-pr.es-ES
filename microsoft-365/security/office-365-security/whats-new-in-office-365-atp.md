@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1aa5d2b59bf1f07c0a74ee7381cbefdb2b5c7506
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308384"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949425"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -40,29 +40,29 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 - [Comprobar las directivas mediante el analizador de configuración](configuration-analyzer-for-security-policies.md)
 - [Invalidar manualmente los veredictos de filtros usando la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md)
-- [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP plan 2)
 - La exposición invalida la información en el [Explorador de amenazas](threat-explorer.md) (el correo electrónico fue permitido o bloqueado por el inquilino o la Directiva de usuario)
-- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md) (malware, phish, correo no deseado o ninguno)
+- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md) (malware, phish, correo no deseado o ninguno) 
 
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020 
 
-- [Experimentar mejoras en la experiencia de búsqueda](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [Aplicar fácilmente la configuración recomendada mediante directivas de seguridad predeterminadas](preset-security-policies.md)
+- [Experimentar mejoras en la experiencia de búsqueda](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Office 365 ATP plan 1 o plan 2)
+- [Aplicar fácilmente la configuración recomendada mediante directivas de seguridad predeterminadas](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>Marzo/abril de 2020
 
-- La capacidad para [dirigir cuentas de usuario en peligro con investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) ahora está disponible para el público en general.
+- La capacidad para [dirigir cuentas de usuario en peligro con investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) ahora está disponible para el público en general. (Office 365 ATP plan 2)
 
 ## <a name="januaryfebruary-2020"></a>Enero/febrero de 2020
 
-- [Disponibilidad general de vistas de campaña en Office 365 ATP](campaigns.md)
-- Mejoras en el [Explorador de amenazas](threat-explorer.md) para permitir que los equipos de operaciones de seguridad busquen y filtren varios campos mientras [investigan el correo electrónico](investigate-malicious-email-that-was-delivered.md):
+- [Disponibilidad general de vistas de campaña en office 365 ATP](campaigns.md) (Office 365 ATP plan 2)
+- Mejoras en el [Explorador de amenazas](threat-explorer.md) para permitir que los equipos de operaciones de seguridad busquen y filtren varios campos mientras [investigan el correo electrónico](investigate-malicious-email-that-was-delivered.md): (Office 365 ATP plan 2)
     - Ubicación de entrega y acciones especiales
     - Direccionalidad (entrante, saliente o dentro de la organización)
     - Avanzados no filtros (son opciones de filtrado avanzadas que incluyen no contiene, no incluye, etc.)
     - Filtros de tiempo granulares (día, hora, media hora) 
 
-- El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento, vaya a **Administración**  >  de amenazas. **Revisión**).
+- El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento, vaya a **Administración**  >  de amenazas. **Revisión**). (Office 365 ATP plan 2)
 
 - [Documentos seguros en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(versión preliminar)**
 
@@ -70,7 +70,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 - [Exportar dirección URL haga clic en datos para análisis sin conexión](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP plan 1 o plan 2)
 
-- [Usar vistas de campaña en Office 365 ATP (**versión preliminar**)](campaigns.md)
+- [Usar vistas de campaña en office 365 ATP (**versión preliminar**)](campaigns.md) (Office 365 el plan ATP 2)
 
 ## <a name="november-2019"></a>Noviembre de 2019
 
@@ -100,7 +100,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

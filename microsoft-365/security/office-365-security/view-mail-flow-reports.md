@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 9e9249eab5d3519dac0e33acf40d600d471b7cb2
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826462"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949625"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
 Además de los informes de flujo de correo que están disponibles en el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento, hay disponible una variedad de informes de flujo de correo adicionales en el panel de informes para ayudarle a supervisar su organización de 365 de Microsoft.
 
-Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el [centro de seguridad & cumplimiento](https://office.protection.com) desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://office.protection.office.com/insightdashboard> .
+Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el [centro de seguridad & cumplimiento](https://office.protection.com) desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
 
 ![Panel de informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -73,7 +73,7 @@ Si hace clic en **filtros** en una vista de informe, puede especificar un interv
 
 Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección y nombre del conector**
 - **Tipo de conector**
 - **¿TLS forzado?**: el valor **true** o **false**.
@@ -129,7 +129,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: reglas de transporte de Exchange**:
 
-  - **Fecha**
+  - **Date**
   - **Regla de transporte**
   - **Asunto**
   - **Dirección del remitente**
@@ -139,7 +139,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: reglas de transporte de DLP de Exchange**:
 
-  - **Fecha**
+  - **Date**
   - **Directiva DLP**
   - **Regla de transporte**
   - **Asunto**
@@ -315,7 +315,7 @@ Para ver el correo electrónico filtrado por EOP o ATP por separado, haga clic e
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Protección perimetral**
 - **Anti-malware, reputación de archivos, bloque de tipo de archivo**
@@ -372,7 +372,7 @@ Cuando desplaza el puntero sobre una categoría del gráfico, puede ver el núme
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Borde filtrado**
 - **Motor antimalware, datos adjuntos seguros, regla filtrado**

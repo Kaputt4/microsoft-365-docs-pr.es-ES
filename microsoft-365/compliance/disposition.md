@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321999"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950394"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -122,7 +122,7 @@ El contenido que espera una revisión de disposición se elimina solo después d
 > [!NOTE]
 > Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive.
 >
-> Se acaba de empezar a implementar la prueba de la eliminación de los registros de Exchange. Cuando se complete este lanzamiento, actualizaremos esta nota.
+> La implementación de la prueba de eliminación de registros en Exchange está casi completa cuando se quita esta nota.
 
 Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que ya se han eliminado, ya sea automáticamente o después de una revisión de disposición. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 

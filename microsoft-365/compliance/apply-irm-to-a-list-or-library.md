@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de0105bf61b4abbddd938a4ec7286c1919bf3985
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818479"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948488"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 
@@ -70,10 +70,10 @@ Puede usar Information Rights Management (IRM) para ayudar a controlar y protege
 |:-----|:-----|
 |Permitir que los usuarios impriman documentos desde esta lista o biblioteca  <br/> |Active la casilla de verificación permitir que los **visores impriman** .  <br/> |
 |Permitir que los usuarios con al menos el permiso ver elementos ejecuten código insertado o macros en un documento.  <br/> |Active la casilla permitir que los **visores ejecuten el script y el lector de pantalla para que funcionen en los documentos descargados** .  <br/> Si selecciona esta opción, los usuarios podrían ejecutar código para extraer el contenido de un documento.           |
-|Requerir que los usuarios comprueben sus credenciales en intervalos específicos.  <br/> Seleccione esta opción si desea restringir el acceso al contenido a un período de tiempo especificado. Si selecciona esta opción, las licencias de emisión de los usuarios para obtener acceso al contenido expirarán después del número de días especificado, y se requerirá a los usuarios que vuelvan al servidor para comprobar sus credenciales y descargar una nueva copia.  <br/> |Seleccione la casilla los **usuarios deben comprobar sus credenciales mediante este intervalo (días)** y, a continuación, especifique el número de días durante los que desea que el documento esté visible.  <br/> |
+|Seleccione esta opción si desea restringir el acceso al contenido a un período de tiempo especificado. Si selecciona esta opción, las licencias de emisión de los usuarios para obtener acceso al contenido expirarán después del número de días especificado, y se requerirá a los usuarios que vuelvan al servidor para comprobar sus credenciales y descargar una nueva copia.  <br/> |Active la casilla **después de descargar, los derechos de acceso a documentos expirarán después de este número de días (1-365)** y, a continuación, especifique el número de días durante los que desea que el documento esté visible.  <br/> |
 | Impedir que los usuarios carguen documentos que no admiten IRM en esta lista o biblioteca.  <br/>  Si selecciona esta opción, los usuarios no podrán cargar ninguno de los siguientes tipos de archivo:  <br/>  Tipos de archivo que no tienen los protectores IRM correspondientes instalados en todos los servidores web Front-end.  <br/>  Tipos de archivo que SharePoint Server 2010 no puede descifrar.  <br/>  Tipos de archivo que están protegidos por IRM en otro programa  <br/> |Active la casilla **no permitir a los usuarios cargar documentos que no admitan IRM** .  <br/> |
 |Quitar permisos restringidos de esta lista o biblioteca en una fecha específica.  <br/> |Active la casilla de verificación **detener la restricción de acceso a la biblioteca en** y, a continuación, seleccione la fecha que desee.  <br/> |
-|Controle el intervalo en el que se almacenan en caché las credenciales del programa que tiene licencia para abrir el documento.  <br/> |En **establecer el intervalo de protección y credenciales de grupo**, escriba el intervalo para almacenar en caché las credenciales en número de días.  <br/> |
+|Controle el intervalo en el que se almacenan en caché las credenciales del programa que tiene licencia para abrir el documento.  <br/> |Seleccione la casilla los **usuarios deben comprobar sus credenciales mediante este intervalo (días)** y, a continuación, escriba el intervalo para almacenar las credenciales en caché en número de días.  <br/> |
 |Permitir la protección de grupos para que los usuarios puedan compartir con miembros del mismo grupo.  <br/> |Seleccione **permitir la protección del grupo**y escriba el nombre del grupo para compartir.  <br/> |
    
 8. Una vez que haya terminado de seleccionar las opciones que desee, haga clic en **Aceptar**.

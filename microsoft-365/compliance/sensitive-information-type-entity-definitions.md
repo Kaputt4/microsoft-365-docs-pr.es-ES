@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 9df6bd1918ec8f4c3b5f55d864468d17be31b119
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 8716a6d4e29f94ff3d7bedaaadece2449fcec8a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775105"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950288"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -684,8 +684,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - fuhrerschein
 - fuhrerschein republik osterreich
 
-## <a name="austria-national-identification-number"></a>Número de identificación nacional de Austria
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación nacional de la UE.
+## <a name="austria-identity-card"></a>Tarjeta de identidad de Austria
 
 ### <a name="format"></a>Formato
 
@@ -711,13 +710,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Se encuentra una palabra clave de  `Keywords_austria_eu_national_id_card` . 
    
 ```xml
-<!-- EU austria_eu_national_id -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Identity Card -->
+      <Entity id="5ec06c3b-007e-4820-8343-7ff73b889735" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_national_id_card" />
           <Match idRef="Keywords_austria_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -835,7 +834,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - versicherungsnummer
 
 ## <a name="austria-tax-identification-number"></a>Número de identificación fiscal de Austria
-Esta entidad de tipo de información confidencial solo está disponible el tipo de información confidencial de número de identificación de impuestos de la UE.
 
 ### <a name="format"></a>Formato
 
@@ -861,20 +859,20 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - La función  `Func_austria_eu_tax_file_number` busca contenido que coincide con el patrón. 
 - Se encuentra una palabra clave de  `Keywords_austria_eu_tax_file_number` . 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función  `Func_austria_eu_tax_file_number` busca contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Tax Identification Number -->
+      <Entity id="4fd58d22-af28-4451-b18a-6f722430a56d" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_tax_file_number" />
           <Match idRef="Keywords_austria_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_austria_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -1493,20 +1491,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - fuehrerschein-NR
 
 ## <a name="belgium-national-number"></a>Número nacional de Bélgica
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de número de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
-11 dígitos más delimitadores
+11 dígitos más delimitadores opcionales
 
 ### <a name="pattern"></a>Pattern
 
 11 dígitos más delimitadores:
-- seis dígitos y dos puntos en el formato YY. Formato. DD para la fecha de nacimiento 
-- un guión 
+- seis dígitos y dos puntos opcionales en el formato AA. Formato. DD para la fecha de nacimiento 
+- Un delimitador opcional de punto, guión, espacio 
 - tres dígitos secuenciales (impares para machos, incluso para hembras) 
-- un punto 
-- dos dígitos que son un dígito de control
+- Un delimitador opcional de punto, guión, espacio 
+- dos dígitos de control
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -1519,14 +1516,21 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Se encuentra una palabra clave de Keyword_belgium_national_number.
 - Se supera la suma de comprobación.
 
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función Func_belgium_national_number encuentra contenido que coincide con el patrón.
+- Se supera la suma de comprobación.
+
 ```xml
 <!-- Belgium National Number -->
-  <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
-   <Pattern confidenceLevel="75">
-     <IdMatch idRef="Func_belgium_national_number"/>
-     <Match idRef="Keyword_belgium_national_number"/>
-  </Pattern>
-</Entity>
+       <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_belgium_national_number" />
+          <Match idRef="Keyword_belgium_national_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_belgium_national_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -1695,107 +1699,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Nacional del identificador
 - identifiantnational #
 - numéronational #
-
-## <a name="belgium-tax-identification-number"></a>Número de identificación fiscal de Bélgica
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de la UE Identificaiton número de información confidencial.
-
-### <a name="format"></a>Formato
-
-11 dígitos sin espacios y delimitadores
-  
-### <a name="pattern"></a>Pattern
-
-11 dígitos:
-  
-- dos dígitos
-- un "0" o "1"
-- un dígito
-- un "0" o "1" o "2" o "3" 
-- seis dígitos
-    
-### <a name="checksum"></a>Suma de comprobación
-
-No aplicable
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_belgium_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_belgium_eu_tax_file_number` . 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium_eu_tax_file_number" />
-          <Match idRef="Keywords_belgium_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_belgium_eu_tax_file_number"></a>Keywords_belgium_eu_tax_file_number
-
-- la última aantal
-- bnn #
-- bnn
-- Carta d'identité
-- Nacional del identificador
-- identifiantnational #
-- identificatie
-- determinación
-- identifikation
-- identifikationsnummer
-- identifizierung
-- identité
-- identiteit
-- identiteitskaart
-- identifica
-- indicación
-- número nacional
-- Registro Nacional
-- nationalnumber #
-- nationalnumber
-- NIF #
-- NIF
-- numéro d'assuré
-- numéro de registros nacionales
-- numéro de sécurité
-
-- numéro d'identification
-- numéro d'immatriculation
-- numéro nacional
-- numéronational #
-- número de identificación personal
-- personalausweis
-- personalidnumber #
-- registratie
-- registro
-- registrationsnumme
-- registrierung
-- social security number
-
-- SSN #
-- SSN
-- steuernummer
-- tax id
-
-- n.º de identificación fiscal
-- número de identificación fiscal
-- Nº de impuestos #
-- Nº de impuestos
-- número de impuesto
-- NIF-CIF
-- taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- ID de estaño
-- n.º de estaño
-- / #
 
 
 ## <a name="belgium-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Bélgica
@@ -2114,8 +2017,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - шофьорска книжка
 
 
-## <a name="bulgaria-national-identification-number"></a>Número de identificación nacional de Bulgaria
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación nacional de la UE.
+## <a name="bulgaria-uniform-civil-number"></a>Número civil uniforme de Bulgaria
 
 ### <a name="format"></a>Formato
 
@@ -2138,26 +2040,31 @@ Sí
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función  `Func_bulgaria_eu_national_id_card` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_bulgaria_national_number` . 
+- Se encuentra una palabra clave de  `Keywords_bulgaria_eu_national_id_card` . 
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función  `Func_bulgaria_eu_national_id_card` busca contenido que coincide con el patrón. 
     
 ```xml
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Uniform Civil Number -->
+      <Entity id="100d58b1-0a35-4fb1-aa89-e4a86fb53fcc" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
-          <Match idRef="Keywords_bulgaria_national_number" />
+          <Match idRef="Keywords_bulgaria_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_bulgaria_eu_telephone_number" />
+            <Match idRef="Keywords_bulgaria_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
 - bnn #
 - bnn
@@ -2244,94 +2151,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de pasaporte búlgaro
 - n.º de pasaporte
 - номер на паспорта
-
-
-## <a name="bulgaria-tax-identification-number"></a>Número de identificación fiscal de Bulgaria
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
-
-### <a name="format"></a>Formato
-
-diez dígitos sin espacios y delimitadores
-  
-### <a name="pattern"></a>Pattern
-
-diez dígitos
-  
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_bulgaria_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_bulgaria_eu_tax_file_number` . 
-
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_bulgaria_eu_tax_file_number` busca contenido que coincide con el patrón. 
-
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_bulgaria_eu_tax_file_number" />
-          <Match idRef="Keywords_bulgaria_eu_tax_file_number" />
-        </Pattern>
- <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_bulgaria_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_bulgaria_eu_tax_file_number"></a>Keywords_bulgaria_eu_tax_file_number
-
-- bnn #
-- bnn
-- bucn #
-- bucn
-- edinen grazhdanski nomer
-- egn #
-- egn
-- identification number
-
-- 
-national id
-- número nacional
-- nationalnumber #
-- nationalnumber
-- identificador personal
-- no personal
-- número personal
-- personalidnumber #
-- social security number
-
-- SSN #
-- SSN
-- identificador civil uniforme
-- Uniform civil no
-- número civil uniforme
-- uniformcivilno #
-- uniformcivilno
-- uniformcivilnumber #
-- uniformcivilnumber
-- número de ciudadanía único
-- егн #
-- егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
-- identificador униформ
-- униформ граждански ID
-- униформ граждански не
-- униформ граждански номер
-- униформгражданскиid #
-- униформгражданскине. #
 
 
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
@@ -3554,7 +3373,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 dígitos:
 - diez dígitos 
-- el dígito final es un dígito de control para el intercambio internacional de datos, se agregan las letras h antes de los once dígitos.
+- el dígito final es un dígito de control
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -3564,7 +3383,7 @@ Sí
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_croatia_oib_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de Keyword_croatia_oib_number.
+- Se encuentra una palabra clave de Keywords_croatia_eu_tax_file_number.
 - Se supera la suma de comprobación.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
@@ -3572,26 +3391,51 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Se supera la suma de comprobación.
 
 ```xml
-<!-- Croatia Personal Identification (OIB) Number -->
-<Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_croatia_oib_number"/>
-     <Match idRef="Keyword_croatia_oib_number"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Func_croatia_oib_number"/>
-  </Pattern>
-</Entity>
+      <!-- Croatia Personal Identification (OIB) Number -->
+      <Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_croatia_oib_number" />
+          <Match idRef="Keywords_croatia_eu_tax_file_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_croatia_oib_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- Número de identificación personal
-- Osobni identifikacijski broj 
-- OIB 
+- majstorski broj građana
+- número de ciudadano principal
+- nacionalni identifikacijski broj
+- número de identificación nacional
+- OIB #
+- OIB
+- osobna iskaznica
+- identificador osobni
+- osobni identifikacijski broj
+- número de identificación personal
+- porezni broj
+- porezni identifikacijski broj
+- tax id
 
+- n.º de identificación fiscal
+- número de identificación fiscal
+- Nº de impuestos #
+- Nº de impuestos
+- número de impuesto
+- NIF-CIF
+- taxi #
+- taxidno #
+- taxidnumber #
+- taxno #
+- taxnumber #
+- taxnumber
+- ID de estaño
+- n.º de estaño
+- / #
 
 ## <a name="croatia-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Croacia o identificación equivalente
 Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
@@ -3655,81 +3499,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - osobni identifikacijski broj
 
    
-## <a name="croatia-tax-identification-number"></a>Número de identificación fiscal de Croacia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de Identificaiton de impuestos de la UE.
-
-### <a name="format"></a>Formato
-
-11 dígitos sin espacios ni delimitadores
-  
-### <a name="pattern"></a>Pattern
-
-11 dígitos:
-  
-- diez dígitos, elegidos aleatoriamente
-- un dígito de control
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_croatia_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_croatia_eu_tax_file_number` . 
-
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_croatia_eu_tax_file_number` busca contenido que coincide con el patrón. 
-
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_tax_file_number" />
-          <Match idRef="Keywords_croatia_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_croatia_eu_tax_file_number"></a>Keywords_croatia_eu_tax_file_number
-
-- majstorski broj građana
-- número de ciudadano principal
-- nacionalni identifikacijski broj
-- número de identificación nacional
-- OIB #
-- OIB
-- osobna iskaznica
-- identificador osobni
-- osobni identifikacijski broj
-- número de identificación personal
-- porezni broj
-- porezni identifikacijski broj
-- tax id
-
-- n.º de identificación fiscal
-- número de identificación fiscal
-- Nº de impuestos #
-- Nº de impuestos
-- número de impuesto
-- NIF-CIF
-- taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- ID de estaño
-- n.º de estaño
-- / #
-
-
 ## <a name="cyprus-drivers-license-number"></a>Número de licencia de controladores de Chipre
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
 
@@ -3779,8 +3548,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - άδεια οδήγησης
 
 
-## <a name="cyprus-national-identification-number"></a>Número de identificación nacional de Chipre
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación nacional de la UE.
+## <a name="cyprus-identity-card"></a>Tarjeta de identidad de Chipre
 
 ### <a name="format"></a>Formato
 
@@ -3801,12 +3569,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Se encuentra una palabra clave de  `Keywords_cyprus_eu_national_id_card` . 
     
 ```xml 
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Identity Card -->
+      <Entity id="3ba8afe5-7a6c-4929-8247-0001b6878438" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_national_id_card" />
           <Match idRef="Keywords_cyprus_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -3863,7 +3632,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="cyprus-tax-identification-number"></a>Número de identificación fiscal de Chipre
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
 
 ### <a name="format"></a>Formato
 
@@ -3873,7 +3641,7 @@ ocho dígitos y una letra en el patrón especificado
 
 ocho dígitos y una letra:
   
-- un "0" 
+- un "0" o "9"
 - siete dígitos
 - una letra (no distingue entre mayúsculas y minúsculas)
     
@@ -3891,16 +3659,16 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - La función  `Func_cyprus_eu_tax_file_number` busca contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Tax Identification Number -->
+      <Entity id="40e64bd9-55f3-4a09-9bd6-1db18dced9dd" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_cyprus_eu_tax_file_number" />
           <Match idRef="Keywords_cyprus_eu_tax_file_number" />
         </Pattern>
-Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_cyprus_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -3933,7 +3701,6 @@ Pattern confidenceLevel="75">
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
-- número de impuesto
 
 
 ## <a name="czech-drivers-license-number"></a>Número de permiso de conducción de Checo
@@ -4035,7 +3802,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="czech-personal-identity-number"></a>Número de identidad personal en Checo
-Esta entidad de tipo de información confidencial se incluye en el paquete de números de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -4044,19 +3810,11 @@ nueve dígitos con barra diagonal (formato antiguo) diez dígitos con barra diag
 ### <a name="pattern"></a>Pattern
 
 nueve dígitos (formato antiguo):
-- nueve dígitos
-
-O
-
 - seis dígitos que representan la fecha de nacimiento
 - barra diagonal
 - tres dígitos
 
 diez dígitos (nuevo formato):
-- diez dígitos
-
-O
-
 - seis dígitos que representan la fecha de nacimiento
 - barra diagonal 
 - cuatro dígitos donde el último dígito es un dígito de control
@@ -4073,19 +3831,76 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Se encuentra una palabra clave de Keyword_czech_id_card.
 - Se supera la suma de comprobación.
 
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+
+- La función Func_czech_id_card_new_format encuentra contenido que coincide con el patrón.
+- Se supera la suma de comprobación.
+
 ```xml
 <!-- Czech Personal Identity Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
-   <Pattern confidenceLevel="85">
-      <IdMatch idRef="Func_czech_id_card" />
-      <Match idRef="Keyword_czech_id_card" />
-   </Pattern>
-</Entity>
+      <!-- Czech Personal Identity Number -->
+      <Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_czech_id_card" />
+          <Match idRef="Keyword_czech_id_card" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3000.000">
+          <Pattern confidenceLevel="75">
+            <IdMatch idRef="Func_czech_id_card_new_format" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 ### <a name="keywords"></a>Keywords
 
-- número de identidad personal en Checo
-- Rodné číslo
+#### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
+
+- número de nacimiento
+- identificador de República Checa
+- czechidno #
+- daňové číslo
+- identifikační číslo
+- n.º de identidad
+- número de identidad
+- identityno #
+- identityno
+- número de seguro
+- número de identificación nacional
+- nationalnumber #
+- número nacional
+- osobní číslo
+- personalidnumber #
+- número de identificación personal
+- número de identificación personal
+- número personal
+- ID #
+- pid
+- pojištění číslo
+- rč
+- rodne cislo
+- rodné číslo
+- SSN
+- SSN #
+- social security number
+
+- tax id
+
+- n.º de identificación fiscal
+- número de identificación fiscal
+- Nº de impuestos #
+- Nº de impuestos
+- número de impuesto
+- NIF-CIF
+- taxi #
+- taxidno #
+- taxidnumber #
+- taxno #
+- taxnumber #
+- taxnumber
+- ID de estaño
+- n.º de estaño
+- / #
+- número de identificación único
 
 
 ## <a name="czech-social-security-number-or-equivalent-identification"></a>Número de la seguridad social en Checo o identificación equivalente
@@ -4148,84 +3963,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - rč
 - rodné číslo
 - rodne cislo
-
-
-## <a name="czech-tax-identification-number"></a>Número de identificación fiscal Checa
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
-
-### <a name="format"></a>Formato
-
-nueve o diez dígitos con una barra diagonal inversa opcional
-  
-### <a name="pattern"></a>Pattern
-
-nueve o diez dígitos con una barra diagonal inversa opcional:
-  
-- seis dígitos 
-- una barra diagonal inversa (opcional)
-- tres o cuatro dígitos
-    
-### <a name="checksum"></a>Suma de comprobación
-
-No aplicable
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_czech_republic_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_czech_republic_eu_tax_file_number` . 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_czech_republic_eu_tax_file_number" />
-          <Match idRef="Keywords_czech_republic_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_czech_republic_eu_tax_file_number"></a>Keywords_czech_republic_eu_tax_file_number
-
-- identificador de República Checa
-- czechidno #
-- daňové číslo
-- identifikační číslo
-- n.º de identidad
-- número de identidad
-- identityno #
-- identityno
-- número de seguro
-- número de identificación nacional
-- número nacional
-- osobní číslo
-- número de identificación personal
-- número personal
-- ID #
-- pid
-- pojištění číslo
-- rodné číslo
-- tax id
-
-- n.º de identificación fiscal
-- número de identificación fiscal
-- Nº de impuestos #
-- Nº de impuestos
-- número de impuesto
-- NIF-CIF
-- taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- ID de estaño
-- n.º de estaño
-- / #
-- número de identificación único
-- número de impuesto
 
 
 ## <a name="denmark-drivers-license-number"></a>Número de permiso de conducción de Dinamarca
@@ -4342,18 +4079,26 @@ Sí
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_denmark_id encuentra contenido que coincide con el patrón.
+- La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_denmark_id.
+- Se supera la suma de comprobación.
+
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
 <!-- Denmark Personal Identification Number -->
-<Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_denmark_id"/>
-     <Match idRef="Keyword_denmark_id"/>
-  </Pattern>
-</Entity>
+      <!-- Denmark Personal Identification Number -->
+      <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
+          <Match idRef="Keyword_denmark_id" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -4376,15 +4121,23 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de identidad
 - krankenkassennummer
 - nationalid #
+- nationalnumber #
+- número nacional
+- personalidnumber #
 - personalidentityno #
+- número de identificación personal
 - personnummer
 - personnummer #
 - reisekrankenversicherungskartenummer
 - rejsesygesikringskort
+- SSN
+- SSN #
 - identificador de patinaje
 - Kode de patinaje
 - Nummer de patinaje
 - skattenummer
+- social security number
+
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -4411,6 +4164,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Nº de impuestos #
 - ID de estaño
 - n.º de estaño
+- cpr.nr
+- cprnr
+- cprnummer
+- personnr
+- personregister
+- sygesikringsbevis
+- sygesikringsbevisnr
+- sygesikringsbevisnummer
+- sygesikringskort
+- sygesikringskortnr
+- sygesikringskortnummer
+- sygesikringsnr
+- sygesikringsnummer
 
 
 ## <a name="denmark-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Dinamarca o identificación equivalente
@@ -4469,104 +4235,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - personalidnumber #
 - CPR-Nummer
 - personnummer
-
-
-## <a name="denmark-tax-identification-number"></a>Número de identificación fiscal de Dinamarca
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
-
-### <a name="format"></a>Formato
-
-diez dígitos que contienen un guión
-  
-### <a name="pattern"></a>Pattern
-
-diez dígitos que contienen un guión:
-  
-- seis dígitos que corresponden a la fecha de nacimiento (DDMMAA)
-- un guión
-- cuatro dígitos que corresponden a un número de secuencia en el que el primer dígito corresponde al siglo de nacimiento y el último dígito corresponde al sexo de la persona (impar para macho e incluso para hembras)
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_denmark_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_denmark_eu_tax_file_number` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_denmark_eu_tax_file_number` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
-          <Match idRef="Keywords_denmark_eu_tax_file_number" />
-        </Pattern> 
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_denmark_eu_tax_file_number"></a>Keywords_denmark_eu_tax_file_number
-
-- centrale personregister
-- registreringssystem civil
-- RCP
-- RCP #
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
-- tarjeta de mantenimiento
-- número de tarjeta de seguro de salud
-- número de seguro de salud
-- identification number
-
-- identifikationsnummer
-- identifikationsnummer #
-- número de identidad
-- krankenkassennummer
-- nationalid #
-- personalidentityno #
-- personnummer
-- personnummer #
-- reisekrankenversicherungskartenummer
-- rejsesygesikringskort
-- identificador de patinaje
-- Kode de patinaje
-- Nummer de patinaje
-- skattenummer
-- sundhedsforsikringskort
-- sundhedsforsikringsnummer
-- sundhedskort
-- sundhedskortnummer
-- sygesikring
-- sygesikringkortnummer
-- código de impuestos
-- ficha de seguro de mantenimiento de viajes
-- uniqueidentityno #
-- número de impuesto
-- NIF-CIF
-- tax id
-
-- número de identificación fiscal
-- taxi #
-- taxnumber #
-- Nº de impuestos
-- taxno #
-- taxnumber
-- n.º de identificación fiscal
-- / #
-- taxidno #
-- taxidnumber #
-- Nº de impuestos #
-- ID de estaño
-- n.º de estaño
 
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Número de la Agencia para la imposición de drogas (DEA)
@@ -4659,8 +4327,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - permis de conduire
 
 
-## <a name="estonia-national-identification-number"></a>Estonia número de identificación nacional
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación nacional de la UE.
+## <a name="estonia-personal-identification-code"></a>Código de identificación personal de Estonia
 
 ### <a name="format"></a>Formato
 
@@ -4671,7 +4338,6 @@ Esta entidad de tipo de información confidencial solo está disponible en el ti
 11 dígitos:
   
 - un dígito que corresponde al sexo y al siglo de nacimiento (número impar macho, par hembra; 1-2: siglo XIX; 3-4: siglo XX; 5-6: siglo XXI)
-    
 - seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
 - tres dígitos que corresponden a un número de serie que separa a los empleados nacidos en la misma fecha
 - un dígito de control
@@ -4690,16 +4356,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - La función  `Func_estonia_eu_national_id_card` busca contenido que coincide con el patrón. 
     
 ```xml
- 
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Personal Identification Code -->
+      <Entity id="bfb26de6-dad5-4d48-ab72-4789cdd0654c" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_estonia_eu_national_id_card" />
           <Match idRef="Keywords_estonia_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_estonia_eu_national_id_card" />
-</Pattern>
-</Entity>
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_estonia_eu_telephone_number" />
+            <Match idRef="Keywords_estonia_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -4778,86 +4448,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de pasaporte de estonio
 - n.º de pasaporte
 - Eesti kodaniku Pass
-
-
-## <a name="estonia-tax-identification-number"></a>Número de identificación de impuestos de Estonia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
-
-### <a name="format"></a>Formato
-
-11 dígitos sin espacios ni delimitadores
-  
-### <a name="pattern"></a>Pattern
-
-11 dígitos:
-  
-- Un dígito que corresponde al sexo y al siglo de nacimiento donde un número impar indica macho y el número par indica hembra de la siguiente manera: 1,2 para el siglo XIX; 3, 4 para el siglo XX; y 5, 6 para el siglo XXI 
-    
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
-- tres dígitos que corresponden a un número de serie que separa a los empleados nacidos en la misma fecha
-- un dígito de control
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_estonia_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_estonia_eu_tax_file_number` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_estonia_eu_tax_file_number` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_estonia_eu_tax_file_number" />
-          <Match idRef="Keywords_estonia_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_estonia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_estonia_eu_tax_file_number"></a>Keywords_estonia_eu_tax_file_number
-
-- ID-Kaart
-- IK
-- isikukood #
-- isikukood
-- identificador maksu
-- maksukohustuslase identifitseerimisnumber
-- maksunumber
-- número de identificación nacional
-- número nacional
-- código personal
-- número de identificación personal
-- código de identificación personal
-- número de identificación personal
-- personalidnumber #
-- tax id
-
-- n.º de identificación fiscal
-- número de identificación fiscal
-- Nº de impuestos #
-- Nº de impuestos
-- número de impuesto
-- NIF-CIF
-- taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- ID de estaño
-- n.º de estaño
-- / #
 
 ## <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
 
@@ -5247,14 +4837,14 @@ Estas son las entidades en el tipo de información confidencial del número de l
 
 Estas son las entidades en el tipo de información confidencial de número de identificación nacional de la UE.
 
-- [Austria](#austria-national-identification-number)
+- [Austria](#austria-identity-card)
 - [Bélgica](#belgium-national-number)
-- [Bulgaria](#bulgaria-national-identification-number)
+- [Bulgaria](#bulgaria-uniform-civil-number)
 - [Croacia](#croatia-identity-card-number)
-- [Chipre](#cyprus-national-identification-number)
+- [Chipre](#cyprus-identity-card)
 - [Checo](#czech-personal-identity-number)
 - [Dinamarca](#denmark-personal-identification-number)
-- [Estonia](#estonia-national-identification-number)
+- [Estonia](#estonia-personal-identification-code)
 - [Finlandia](#finland-national-identification-number)
 - [Francia](#france-national-identification-card-cni)
 - [Alemania](#germany-identity-card-number)
@@ -5334,14 +4924,7 @@ Estas son las entidades que se encuentran en el número de la seguridad social d
 Estas entidades se encuentran en el tipo de información confidencial de número de identificación de impuestos de la UE.
 
 - [Austria](#austria-tax-identification-number)
-- [Bélgica](#belgium-tax-identification-number)
-- [Bulgaria](#bulgaria-tax-identification-number)
-- [Croacia](#croatia-tax-identification-number)
 - [Chipre](#cyprus-tax-identification-number)
-- [Checo](#czech-tax-identification-number)
-- [Dinamarca](#denmark-tax-identification-number)
-- [Estonia](#estonia-tax-identification-number)
-- [Finlandia](#finland-tax-identification-number)
 - [Francia](#france-tax-identification-number)
 - [Alemania](#germany-tax-identification-number)
 - [Grecia](#greece-tax-identification-number)
@@ -5472,7 +5055,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="finland-national-identification-number"></a>Número de identificación nacional de Finlandia
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de número de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -5497,14 +5079,21 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - se encuentra una palabra clave de Keyword_finnish_national_id
 - la suma de comprobación pasa
 
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- la función Func_finnish_national_id encuentra contenido que coincide con el patrón
+- la suma de comprobación pasa
+
 ```xml
-<!-- Finnish National ID-->
-<Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
-  <Pattern confidenceLevel="85">
+      <!-- Finnish National ID-->
+      <Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_finnish_national_id" />
           <Match idRef="Keyword_finnish_national_id" />
-  </Pattern>
-</Entity>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_finnish_national_id" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -5670,104 +5259,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - hetu
 
 
-## <a name="finland-tax-identification-number"></a>Número de identificación fiscal de Finlandia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
-
-### <a name="format"></a>Formato
-
-una combinación de 11 caracteres de dígitos, letras y más y un signo menos
-  
-### <a name="pattern"></a>Pattern
-
-una combinación de 11 caracteres de dígitos, letras y más y un signo menos:
-- seis dígitos
-- uno de los siguientes: un signo más, un signo menos o la letra "A" (no distingue entre mayúsculas y minúsculas) donde el signo más significa que nació entre 1800-1899, el signo menos significa que nació entre 1900-1999, y "A" significa que nació 2000 y posterior
-- tres dígitos
-- una letra o un número
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_finland_eu_tax_file_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_finland_eu_tax_file_number` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_finland_eu_tax_file_number` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_tax_file_number" />
-          <Match idRef="Keywords_finland_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>Keywords
-
-#### <a name="keywords_finland_eu_tax_file_number"></a>Keywords_finland_eu_tax_file_number
-
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
-- henkilötunnus
-- henkilötunnusnumero #
-- henkilötunnusnumero
-- hetu
-- identificador no
-- número de identificador
-- identification number
-
-- identiteetti numero
-- número de identidad
-- idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
-- tarjeta de identificación nacional
-- n.º de identificación nacional
-- identificador personal
-- código de identidad personal
-- personalidnumber #
-- personbeteckning
-- personnummer
-- social security number
-
-- sosiaaliturvatunnus
-- suomen kansallinen henkilötunnus
-- tax id
-
-- n.º de identificación fiscal
-- número de identificación fiscal
-- Nº de impuestos #
-- Nº de impuestos
-- número de impuesto
-- NIF-CIF
-- taxi #
-- taxidno #
-- taxidnumber #
-- taxno #
-- taxnumber #
-- taxnumber
-- ID de estaño
-- n.º de estaño
-- / #
-- tunnistenumero
-- tunnus numero
-- tunnusluku
-- tunnusnumero
-- verokortti
-- veronumero
-- verotunniste
-- verotunnus
-
-
 ## <a name="france-drivers-license-number"></a>Número de permiso de conducción de Francia
 Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial del número de licencia de conductor de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
@@ -5865,7 +5356,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="france-national-identification-card-cni"></a>Tarjeta de identificación nacional de Francia (CNI)
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de número de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -5883,17 +5373,21 @@ No
 
 Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_france_cni encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de Keywords_france_eu_national_id_card.
 
 ```xml
-<!-- France CNI -->
-<Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
-  <Pattern confidenceLevel="65">
+    <!-- France CNI -->
+    <Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
+      <Pattern confidenceLevel="65">
         <IdMatch idRef="Regex_france_cni" />
-  </Pattern>
-</Entity>
+        <Match idRef="Keywords_france_eu_national_id_card" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
+
+#### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
 
@@ -6044,24 +5538,30 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - code sécu 
 
 ## <a name="france-tax-identification-number"></a>Número de identificación fiscal de Francia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
 
 ### <a name="format"></a>Formato
 
-13 dígitos para personas y nueve dígitos para entidades
+13 dígitos
   
 ### <a name="pattern"></a>Pattern
 
-13 dígitos para los usuarios:
+13 dígitos
   
-- un dígito que debe ser 0, 1, 2 o 3
-- 12 dígitos
-    
-nueve dígitos para entidades
+- Un dígito que debe ser 0, 1, 2 o 3
+- 1 dígito
+- Un espacio (opcional) 
+- 2 dígitos 
+- Un espacio (opcional) 
+- 3 dígitos 
+- Un espacio (opcional) 
+- 3 dígitos 
+- Un espacio (opcional) 
+- 3 dígitos de control 
+
   
 ### <a name="checksum"></a>Suma de comprobación
 
-No aplicable
+Sí
   
 ### <a name="definition"></a>Definición
 
@@ -6073,16 +5573,21 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - La función  `Func_france_eu_tax_file_number` busca contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- France Tax Identification Number (numéro SPI.) -->
+      <Entity id="ed59e77e-171d-442c-9ec1-88e2ebcb5b0a" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_france_eu_tax_file_number" />
           <Match idRef="Keywords_france_eu_tax_file_number" />
         </Pattern>
- <Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_france_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_france_eu_telephone_number" />
+            <Match idRef="Keywords_france_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -6315,8 +5820,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="germany-identity-card-number"></a>Número de tarjeta de identidad de Alemania
-- Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de número de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
-- Esta entidad de tipo de información confidencial se incluye en el número de la seguridad social de la UE o en el tipo de información confidencial del identificador equivalente.
 
 ### <a name="format"></a>Formato
 
@@ -6459,7 +5962,6 @@ bnationalit. t
 
 
 ## <a name="germany-tax-identification-number"></a>Número de identificación fiscal de Alemania
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
 
 ### <a name="format"></a>Formato
 
@@ -6469,7 +5971,13 @@ Esta entidad de tipo de información confidencial solo está disponible en el ti
 
 11 dígitos:
   
-- diez dígitos 
+- Dos dígitos 
+- Un espacio opcional
+- Tres dígitos 
+- Un espacio opcional
+- Tres dígitos 
+- Un espacio opcional
+- Dos dígitos
 - un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -6486,16 +5994,16 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - La función  `Func_germany_eu_tax_file_number` busca contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Germany Tax Identification Number -->
+      <Entity id="43316a89-9880-40cf-b980-04bc7eefcec5" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_germany_eu_tax_file_number" />
           <Match idRef="Keywords_germany_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_germany_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -6637,7 +6145,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="greece-national-id-card"></a>Tarjeta de identificación nacional de Grecia
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de número de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -6665,14 +6172,20 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_greece_id_card.
 
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
+
 ```xml
-<!-- Greece National ID Card -->
-<Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_greece_id_card"/>
-     <Match idRef="Keyword_greece_id_card"/>
-  </Pattern>
-</Entity>
+      <!-- Greece National ID Card -->
+      <Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_id_card" />
+          <Match idRef="Keyword_greece_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Regex_greece_id_card" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords
@@ -6733,8 +6246,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="greece-tax-identification-number"></a>Número de identificación fiscal de Grecia
 
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
-
 ### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios y delimitadores
@@ -6755,13 +6266,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Se encuentra una palabra clave de  `Keywords_greece_eu_tax_file_number` . 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greek Tax Identification Number -->
+      <Entity id="15a54a5a-53d4-4080-ad43-a2a4fe1d3bf7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_tax_file_number" />
           <Match idRef="Keywords_greece_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Keywords

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394740"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947977"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -78,7 +78,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
-1. En la sección **tipo de objeto** , seleccione **dirección URL**. En el cuadro que aparece, escriba la dirección URL completa (por ejemplo, <https://www.fabrikam.com/marketing.html> ).
+1. En la sección **tipo de objeto** , seleccione **dirección URL**. En el cuadro que aparece, escriba la dirección URL completa (por ejemplo, `https://www.fabrikam.com/marketing.html` ).
 
 2. En la sección **motivo de envío** , seleccione una de las siguientes opciones:
 
@@ -132,7 +132,7 @@ Haga clic en la pestaña **correo electrónico** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
-- **Fecha**
+- **Date**
 - **Identificador de envío**: un valor de GUID que se asigna a cada envío.
 - **Enviado por**<sup>\*</sup>
 - **Asunto**<sup>\*</sup>
@@ -152,7 +152,7 @@ Haga clic en la ficha **dirección URL** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
-- **Fecha**
+- **Date**
 - **IDENTIFICADOR de envío**
 - **Enviado por**<sup>\*</sup>
 - **URL**<sup>\*</sup>
@@ -167,7 +167,7 @@ Haga clic en la pestaña **datos adjuntos** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
-- **Fecha**
+- **Date**
 - **IDENTIFICADOR de envío**
 - **Enviado por**<sup>\*</sup>
 - **Nombre de archivo**<sup>\*</sup>

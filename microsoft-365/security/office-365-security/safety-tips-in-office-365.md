@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo EOP y Office 365 protegen contra el correo no deseado, el phishing y la prevención de malware al agregar una sugerencia de seguridad a la parte superior de los correos electrónicos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827486"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949637"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sugerencias de seguridad en mensajes de correo electrónico
 
@@ -38,12 +38,6 @@ La sugerencia de seguridad (un mensaje codificado por colores) le avisará de lo
     ![Captura de pantalla que muestra una sugerencia de seguridad roja.](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     Una sugerencia de seguridad roja en un correo electrónico significa que el mensaje que ha recibido contiene algo sospechoso, como una estafa de suplantación de identidad (phishing). Le recomendamos que elimine este tipo de mensaje de correo electrónico de la bandeja de entrada sin abrirlo.
-
-- Correo no deseado (sugerencia de seguridad amarilla).
-
-    ![Captura de pantalla que muestra una sugerencia de seguridad amarilla.](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    Una sugerencia de seguridad amarilla en un correo electrónico significa que el mensaje se ha marcado como correo no deseado. Si no reconoce y no confía en el remitente del mensaje, no descargue ningún dato adjunto ni ninguna imagen y no haga clic en ningún vínculo del mensaje. En Outlook en la web, puede hacer clic en **no es correo no deseado** en la barra amarilla de un elemento de correo no deseado para mover el mensaje a la bandeja de entrada. Si aparece la sugerencia de seguridad amarilla en un mensaje que se entregó en la bandeja de entrada, probablemente se deba a que ha deshabilitado el traslado de correo no deseado a la carpeta correo electrónico no deseado.
 
 - Correo seguro (sugerencia de seguridad verde).
 

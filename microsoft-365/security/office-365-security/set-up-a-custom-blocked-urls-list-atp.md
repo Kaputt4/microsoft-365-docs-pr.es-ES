@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656652"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948095"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP
 
@@ -85,14 +85,14 @@ Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes punto
 
 |Entrada de ejemplo|Qué hace|
 |---|---|
-|`contoso.com` o `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de los, como `https://www.contoso.com` , `https://sub.contoso.com` y`https://contoso.com/abc`|
-|`https://contoso.com/a`|Bloquea un sitio, `https://contoso.com/a` pero no otros subtrazados adicionales como`https://contoso.com/a/b`|
-|`https://contoso.com/a*`|Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como`https://contoso.com/a/b`|
+|`contoso.com` o `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de los, como `https://www.contoso.com` , `https://sub.contoso.com` y `https://contoso.com/abc`|
+|`https://contoso.com/a`|Bloquea un sitio, `https://contoso.com/a` pero no otros subtrazados adicionales como `https://contoso.com/a/b`|
+|`https://contoso.com/a*`|Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como `https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com` ).|
 |
 
 > [!NOTE]
-> De forma predeterminada, solo puede agregar direcciones URL de 500 a la lista de URL bloqueadas en la directiva predeterminada de vínculos seguros de ATP de Office 365.
+> De forma predeterminada, solo puede agregar direcciones URL de 500 a la lista de URL bloqueadas en la directiva predeterminada de vínculos seguros de ATP de Office 365. Una dirección URL individual no puede superar los 128 caracteres. La lista de direcciones URL bloqueadas completas no puede superar los 10.000 caracteres.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Cómo definir excepciones para determinados usuarios de una organización
 

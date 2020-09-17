@@ -1,5 +1,5 @@
 ---
-title: Kit de laboratorio de implementación para Windows y Office
+title: Kit de entorno de implementación de Windows y Office
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685503"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949885"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
+# <a name="windows-and-office-deployment-lab-kit"></a>Kit de entorno de implementación de Windows y Office
 
 Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y la administración de equipos de escritorio que ejecutan Windows 10 Enterprise y Microsoft 365 apps for Enterprise. La cubierta de los laboratorios mediante el administrador de configuración de Microsoft Endpoint, el análisis de escritorio, la herramienta de personalización de Office, OneDrive, Windows AutoPilot y mucho más.
 
@@ -32,7 +32,7 @@ Este kit es muy recomendable para las organizaciones que se preparan para las ac
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
-El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de forma automática, en el que se incluyen clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El laboratorio contiene versiones de evaluación de los productos siguientes:
+El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de forma automática, en el que se incluyen clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El laboratorio contiene las últimas versiones de evaluación de los siguientes productos:
 
   - ¡NUEVO! Windows 10 Enterprise, versión 2004
   - Windows 7 Enterprise
@@ -53,70 +53,36 @@ ADEMÁS, el laboratorio está diseñado para conectarse a versiones de prueba pa
 
 Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager 
 
-### <a name="device-and-app-readiness"></a>Preparación de dispositivos y aplicaciones
+### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de la infraestructura 
+Análisis de escritorio   
+La puerta de enlace de administración en la nube & las cargas de trabajo de conexión, coadministración y conmutación de inquilino de punto de distribución de nube    
+Acceso remoto
 
-  - Desktop Analytics
-  - Implementar y actualizar el nuevo Microsoft Edge 
-  - Instalar y configurar Cloud Management Gateway (CMG) 
-  - Modo Internet Explorer. 
-  - Protección de aplicaciones 
+### <a name="prepare-configuration"></a>Preparar la configuración   
+Optimizar el servicio de entrega de Windows 10 Update para Windows 10 con la Directiva de grupo que atiende a Windows 10 mediante el servicio 365 de Microsoft Intune que atiende a Windows 10 con Configuration Manager para atender a las aplicaciones para empresas de Microsoft 365 con Intune    
+Seguridad y cumplimiento 
 
-### <a name="directory-and-network-readiness"></a>Preparación de los directorios y la red
+### <a name="prepare-applications"></a>Preparar aplicaciones    
+Kit de herramientas de preparación para Office    
+Empaquetado y conversión MSIX de aplicaciones Win32 
 
-  - Optimizar la entrega de la actualización de Windows 10 
-  - Administración conjunta de Configuration Manager y Microsoft Intune
-  - Acceso remoto (VPN)
+### <a name="deploy-windows-10"></a>Implementar Windows 10   
+Secuencias de tareas de implementación de SO en secuencias de tareas de implementación de sistema operativo de Configuration Manager en MDT Windows AutoPilot implementar y administrar el nuevo Microsoft Edge    
 
-### <a name="office-and-lob-app-delivery"></a>Entrega de aplicaciones de Office y de LOB
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Implementación de Aplicaciones de Microsoft 365 para empresas    
+Implementación de administración en la nube    
+Implementación de administración local  
+Microsoft 365 aplicaciones para la implementación empresarial en dispositivos que no están Unidos a AD   
+Implementación de administración empresarial mediante Configuration Manager Enterprise administrada Deployment Using Microsoft Intune    
+Implementación y administración de LOB con Microsoft Intune implementación de Microsoft Teams
 
-  - Aplicaciones de Microsoft 365 para empresas
-  - Implementación de administración empresarial con Configuration Manager y Microsoft Intune
-  - Implementación y administración de aplicaciones mediante Microsoft Intune
-  - Implementación de aplicaciones e instalación de autoservicio con Microsoft Store para Empresas
-  - ¡NUEVO! Instalar Microsoft Teams 
-
-### <a name="user-file-and-settings-migration"></a>Migración de los archivos y la configuración del usuario
-
-  - Migración de archivos de carpeta conocida 
-  - Herramienta de migración de estado de usuario 
-  - Enterprise State Roaming
-  - Personalización del menú Inicio y eliminación de la aplicación para UWP 
-  - Virtualización de la experiencia de usuario (UE-V) 
-
-### <a name="security-and-compliance"></a>Seguridad y cumplimiento
-
-  - Cifrado del dispositivo de BitLocker
-  - Antivirus de Windows Defender
-  - Windows Hello para empresas
-  - Conversión de BIOS a UEFI
-  - Protección de aplicaciones de Windows Defender
-  - Protección contra vulnerabilidades de seguridad de Windows Defender
-  - Control de aplicaciones de Windows Defender
-  - Protección contra amenazas avanzada de Windows Defender
-  - ¡NUEVO! Seguridad de punto de conexión 
-
-### <a name="os-deployment-and-feature-updates"></a>Implementación del sistema operativo y actualizaciones de características
-
-  - Creación de la imagen de sistema operativo
-  - Secuencias de tareas de implementación de sistema operativo en Configuration Manager 
-  - Secuencias de tareas de implementación de sistema operativo en MDT
-  - Windows Autopilot
-  - Paquetes de aprovisionamiento 
-
-### <a name="windows-and-office-as-a-service"></a>Windows y Office como servicio
-  - Administrar actualizaciones de Windows mediante la directiva de grupo
-  - Mantenimiento de Windows 10 con Configuration Manager e Intune
-  - Mantenimiento de Aplicaciones de Microsoft 365 para empresas con Configuration Manager
-  - ¡NUEVO! Actualizaciones de Office con Configuration Manager e Intune
-  
-### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
-  - Windows Virtual Desktop: preparación, implementación, optimización 
-
+### <a name="deploy-windows-virtual-desktop"></a>Implementar el escritorio virtual de Windows  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Descargar el kit de laboratorio de implementación de Office y Windows
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y espere entre 30 y 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 12 de septiembre de 2020. Antes de que caduque, se publicará una nueva versión.*
+*Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible. El laboratorio expira el 4 de diciembre de 2020. Se publicará una nueva versión antes de la expiración.*
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar el software de cliente y servidor para Microsoft 365.
-ms.openlocfilehash: 14169809deb363cac8ff3dd6ad35c12c20318674
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693777"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950573"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Guía básica de software de cliente y servidor para Microsoft 365
 
@@ -34,8 +34,7 @@ Para maximizar el valor empresarial del conjunto de productos de Microsoft 365 p
 >El soporte de Windows 7 terminó el **14 de enero de 2020**. Para más información, haga clic [aquí](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-Al realizar todas estas migraciones a lo largo del tiempo, la organización va más cerca al [lugar de trabajo moderno](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), un entorno integrado y seguro que desbloquea el trabajo en equipo y la creatividad de su organización, todos los cuales están habilitados y habilitados por Microsoft 365 para empresas. 
-
+Al realizar todas estas migraciones a lo largo del tiempo, la organización va más cerca al [lugar de trabajo moderno](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), un entorno integrado y seguro que desbloquea el trabajo en equipo y la creatividad de su organización, todos los cuales están habilitados y habilitados por Microsoft 365 para empresas.
 
 ## <a name="migration-for-microsoft-office-client-products"></a>Migración de productos de cliente de Microsoft Office
 
@@ -44,7 +43,7 @@ En muchas organizaciones, tanto grandes como pequeñas, puede que se use una com
 - Se pueden [actualizar](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) con las correcciones de soporte técnico y actualizaciones de seguridad más recientes, pero a veces el proceso es manual y es posible que no pueda escalarse a toda la organización.
 - No están preparadas óptimamente para aprovechar las tecnologías de nube de Microsoft y ayudarle a transformar digitalmente su negocio.
 - No incluyen nuevas características.
- 
+
 Microsoft 365 para empresas incluye Microsoft 365 apps for Enterprise, una versión de los productos cliente de Office que está disponible con una licencia de Microsoft 365 para empresas y se instala y actualiza desde la nube de Microsoft. Aplicaciones de Microsoft 365 para empresas incluye actualizaciones de seguridad y las características más recientes. Para obtener más información, consulte [Acerca de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
@@ -63,7 +62,7 @@ Aplicaciones de Microsoft 365 para empresas instala automáticamente las actual
 
 Para las versiones de Office 2010, el final del soporte técnico llegará el **13 de octubre de 2020**. Para obtener más información, vea [Guía de finalización del soporte para Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
-En lugar de actualizar los equipos que ejecuten Office 2010 con Office 2013 u Office 2016 (ya que ambos tendrían que actualizarse de forma manual), también puede: 
+En lugar de actualizar los equipos que ejecuten Office 2010 con Office 2013 u Office 2016 (ya que ambos tendrían que actualizarse de forma manual), también puede:
 
 1. Obtener una licencia de Microsoft 365 y asignarla a los usuarios.
 2. Desinstalar Office 2010 de sus equipos.
@@ -92,7 +91,7 @@ En muchas organizaciones, tanto grandes como pequeñas, puede que use una combin
 - No se incluyen las nuevas aplicaciones de productividad, como Microsoft Teams.
 - No se incluyen las características de seguridad más recientes, como Protección contra amenazas avanzada de Exchange.
 
-Microsoft 365 para Enterprise incluye versiones basadas en la nube de los servicios de Office Server que usan algunas de las mismas herramientas que el software de servidor de Office, como exploradores Web y el cliente de Outlook. Estos servicios se actualizan continuamente por seguridad sin involucrar a TI, lo que le ahorra tiempo en el mantenimiento y actualización de los servidores locales. Estos servicios también tienen mejoras de características nuevas que no están presentes en el software de servidor de Office. 
+Microsoft 365 para Enterprise incluye versiones basadas en la nube de los servicios de Office Server que usan algunas de las mismas herramientas que el software de servidor de Office, como exploradores Web y el cliente de Outlook. Estos servicios se actualizan continuamente por seguridad sin involucrar a TI, lo que le ahorra tiempo en el mantenimiento y actualización de los servidores locales. Estos servicios también tienen mejoras de características nuevas que no están presentes en el software de servidor de Office.
 
 Para obtener información acerca de la migración de usuarios y datos para cargas de trabajo de Microsoft 365 específicas:
 
@@ -146,7 +145,7 @@ Para los productos de servidor de la versión de Office 2016, aún no se determi
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Migración para Microsoft Windows 7 y 8.1
 
-El soporte de Windows 7 terminó el **14 de enero de 2020**. Para migrar los dispositivos que ejecuten Windows 7 o Windows 8.1, puede realizar una actualización local. 
+El soporte de Windows 7 terminó el **14 de enero de 2020**. Para migrar los dispositivos que ejecuten Windows 7 o Windows 8.1, puede realizar una actualización local.
 
 Para obtener más métodos, [vea escenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios) de implementación de Windows 10. También puede [planear la implementación de Windows 10](https://aka.ms/planforwin10deployment) por su cuenta.
 
@@ -154,7 +153,7 @@ Para obtener más métodos, [vea escenarios](https://docs.microsoft.com/windows/
 
 Para obtener un resumen visual de las opciones de actualización, migración y desplazamiento a la nube de estos productos, vea el [póster de fin de soporte técnico.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Imagen para el final del soporte técnico para los servidores y clientes de Office 2010 y póster de Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Imagen de final del soporte técnico para servidores y clientes de Office 2010 y póster de Windows 7](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este póster de una página es una forma rápida de comprender las diversas rutas que puede realizar para evitar que los productos de cliente y servidor de Office 2010 y Windows 7 lleguen al final del soporte técnico, con las rutas preferidas y la compatibilidad de destino resultante en Microsoft 365 para Enterprise resaltado.
 
@@ -162,7 +161,7 @@ Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, vea el [póster de transición](../downloads/transition-org-to-m365.pdf).
+Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, consulte el [póster de transición](../downloads/transition-org-to-m365.pdf).
 
 [![Imagen del póster de transición a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
@@ -172,11 +171,10 @@ Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Cómo Microsoft realiza Microsoft 365 para empresas
 
-Vea cómo los expertos de TI de Microsoft han migrado la compañía a Microsoft 365 para empresas con estos recursos: 
+Vea cómo los expertos de TI de Microsoft han migrado la compañía a Microsoft 365 para empresas con estos recursos:
 
 - [Implementación y actualización de las aplicaciones de Microsoft 365 para empresas](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migra 150.000 buzones a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint en la nube: Obtenga información sobre cómo Microsoft llevó a cabo su propia migración](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [Implementar Windows 10 en Microsoft como una actualización local](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 deployment: tips and tricks from Microsoft IT (Implementación de Windows 10: sugerencias y trucos de TI de Microsoft)](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (vídeo)
-
