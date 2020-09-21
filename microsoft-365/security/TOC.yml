@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: Microsoft 365 Security para BDM
           href: Microsoft-365-security-for-bdm.md
-        - name: 'Taller de aprendizaje de director de seguridad de la información (CISO) '
-          href: ./office-365-security/ciso-workshop.md
-          items:
-            - name: 'Módulo 1: referencia de ciberseguridad de Microsoft'
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: 'Módulo 2: administración de seguridad'
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: 'Modulo 3: identidad y acceso de usuario de confianza cero'
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 'Módulo 4a: estrategia de protección contra amenazas, parte I'
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 'Módulo 4b: estrategia de protección contra amenazas, parte II'
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: 'Módulo 5: protección de la información'
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: Configuraciones de acceso a dispositivos e identidades
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: Guías de procedimientos
           items:
-            - name: Crear un entorno de laboratorio de pruebas
+            - name: Crear un entorno piloto o de laboratorio de pruebas
               href: mtp/mtp-evaluation.md
             - name: Implementación de servicios compatibles
               href: mtp/deploy-supported-services.md
@@ -125,20 +110,30 @@
               items:
                 - name: Información general sobre la búsqueda avanzada
                   href: mtp/advanced-hunting-overview.md
-                - name: Aprender el lenguaje de consulta
-                  href: mtp/advanced-hunting-query-language.md
-                - name: Aplicar procedimientos recomendados de consulta
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: 'Aprender, entrenar y obtener ejemplos'
+                  items:
+                    - name: Aprender el lenguaje de consulta
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: Obtener formación experta
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: Usar consultas compartidas
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: 'Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades'
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Trabajar con resultados de consulta
                   href: mtp/advanced-hunting-query-results.md
                 - name: Realizar una acción en los resultados de consulta
                   href: mtp/advanced-hunting-take-action.md
-                - name: Usar consultas compartidas
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: 'Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades'
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Ir a la caza
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Optimizar y controlar errores
+                  items:
+                    - name: Aplicar procedimientos recomendados de consulta
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: Controlar los errores
+                      href: mtp/advanced-hunting-errors.md
+                    - name: Límites del servicio
+                      href: mtp/advanced-hunting-limits.md
                 - name: Ampliar la cobertura de los datos
                   href: mtp/advanced-hunting-extend-data.md
                 - name: Esquema de datos
@@ -219,22 +214,62 @@
                   href: mtp/monitor-devices.md
                 - name: Supervisión e informes de aplicaciones
                   href: mtp/monitor-apps.md
+            - name: API
+              items: null
+        - name: Referencia
+          items:
             - name: Permisos y configuraciones
               items:
                 - name: Administrar el acceso
                   href: mtp/mtp-permissions.md
                 - name: Establecer la zona horaria
                   href: mtp/mtp-time-zone.md
-            - name: Ver perfiles de dispositivo
-              href: mtp/device-profile.md
-            - name: Enviar comentarios
-              href: mtp/feedback.md
-            - name: Crear tareas y tickets de ServiceNow
+                - name: Ver perfiles de dispositivo
+                  href: mtp/device-profile.md
+                - name: Enviar comentarios
+                  href: mtp/feedback.md
+                - name: Crear tareas y tickets de ServiceNow
+                  items:
+                    - name: Información general de la integración de ServiceNow
+                      href: ./mtp/tickets.md
+                    - name: Tickets de ServiceNow en el centro de seguridad
+                      href: ./mtp/tickets-security-center.md
+            - name: API de Protección contra amenazas de Microsoft (vista previa)
               items:
-                - name: Información general de la integración de ServiceNow
-                  href: ./mtp/tickets.md
-                - name: Tickets de ServiceNow en el centro de seguridad
-                  href: ./mtp/tickets-security-center.md
+                - name: Información general sobre las API de Protección contra amenazas de Microsoft (vista previa)
+                  href: mtp/api-overview.md
+                - name: Introducción a las API de Protección contra amenazas de Microsoft (vista previa)
+                  items:
+                    - name: Licencia de API de Protección contra amenazas de Microsoft y condiciones de uso
+                      href: mtp/api-terms.md
+                    - name: Acceso a las API de Protección contra amenazas de Microsoft
+                      href: mtp/api-access.md
+                    - name: 'Hola mundo, ejemplo'
+                      href: mtp/api-hello-world.md
+                    - name: Obtener acceso con el contexto de la aplicación
+                      href: mtp/api-create-app-web.md
+                    - name: Obtener acceso con el contexto de usuario
+                      href: mtp/api-create-app-user-context.md
+                    - name: Obtener acceso a aplicaciones de asociados
+                      href: mtp/api-partner-access.md
+                    - name: Otros recursos de API
+                      href: mtp/api-articles.md
+                - name: Esquema y API de Protección contra amenazas de Microsoft (vista previa)
+                  items:
+                    - name: API de Protección contra amenazas de Microsoft compatibles
+                      href: mtp/api-supported.md
+                    - name: Códigos de error comunes de API de REST
+                      href: mtp/api-error-codes.md
+                    - name: API de Búsqueda avanzada de amenazas
+                      href: mtp/api-advanced-hunting.md
+                    - name: API de incidentes
+                      items:
+                        - name: Métodos y propiedades del incidente
+                          href: mtp/api-incident.md
+                        - name: Lista de Incidentes
+                          href: mtp/api-list-incidents.md
+                        - name: Incidente de actualización
+                          href: mtp/api-update-incidents.md
     - name: Seguridad de Office 365
       items:
         - name: Introducción
