@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: a8c0b8ac689407fa871d2373f1ca0a3658bb1668
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 0b655800d27e6836a3848bfb2a94fc9c30439ec7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132207"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
@@ -86,7 +86,7 @@ Si los valores predeterminados de seguridad están habilitados, se le pedirá al
 
 Esta tabla muestra los resultados de habilitar MFA con los valores predeterminados de seguridad y las directivas de acceso condicional.
 
-|| Habilitado | Deshabilitado | Método de autenticación adicional |
+| Método | Habilitado | Deshabilitado | Método de autenticación adicional |
 |:-------|:-----|:-------|:-------|
 | **Valores predeterminados de seguridad**  | No se pueden usar directivas de acceso condicional | Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
 | **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
@@ -104,7 +104,7 @@ Además de proporcionar autenticación en la nube para los usuarios, Azure AD ta
 
 - [MFA para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [Las 5 mejores formas en que Azure AD puede ayudarle a habilitar el trabajo remoto](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
-- [Planear e implementar la infraestructura de identidades de Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure?view=o365-worldwide#plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure)
+- [Plan de identidad para Microsoft 365](../enterprise/identity-roadmap-microsoft-365.md)
 - [Vídeos de aprendizaje de Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configurar la directiva de registro de autenticación multi-factor de Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Planear la implementación del autoservicio de restablecimiento de contraseña para Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)

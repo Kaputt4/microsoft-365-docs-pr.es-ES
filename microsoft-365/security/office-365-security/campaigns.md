@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867204"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173313"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
 
-Las vistas de campañas son una característica del plan 2 de la protección contra amenazas avanzada (ATP) (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento ATP plan 2). Campaing views in the Security & Compliance Center identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
+Las vistas de campañas son una característica del plan 2 de la protección contra amenazas avanzada (ATP) (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento ATP plan 2). Vistas de campañas en el centro de seguridad & cumplimiento identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
 
 - Investigar y responder eficazmente a los ataques de suplantación de identidad.
 - Entender mejor el alcance del ataque.
@@ -47,7 +47,7 @@ Microsoft aprovecha la gran cantidad de datos contra phishing, contra correo ele
 
 Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Es posible que se inicie una campaña en su organización específica o que la organización forme parte de una campaña más grande en varias compañías.
 
-## <a name="campaign-views-the-security--compliance-center"></a>Vistas de campaña el centro de seguridad & cumplimiento
+## <a name="campaign-views-in-the-security--compliance-center"></a>Vistas de campaña en el centro de seguridad & cumplimiento
 
 Las vistas de campaña están disponibles en el [centro de seguridad & cumplimiento](https://protection.office.com) en las campañas de **Administración de amenazas** \> **Campaigns**, o directamente en <https://protection.office.com/campaigns> .
 
@@ -218,7 +218,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Description|
+  |Valor|Veredicto de filtro de correo no deseado|Descripción|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, un mensaje se marcó como no correo no deseado mediante una regla de flujo de correo (también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, por una regla de flujo de correo.|
@@ -229,7 +229,7 @@ El diagrama contiene la información siguiente:
   |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros del usuario.|
   |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados del usuario.|
-  |**ZAP**|No aplicable|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta de correo electrónico no deseado o a la cuarentena. La acción se configura en la Directiva contra correo no deseado.|
+  |**ZAP**|n/a|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta de correo electrónico no deseado o a la cuarentena. La acción se configura en la Directiva contra correo no deseado.|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
@@ -300,7 +300,7 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
   - **DKIM pasado**: el remitente ha sido autenticado por el [correo identificado por claves de dominio (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un remitente que no pasa la validación de DKIM indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
   - **DMARC pasada**: el remitente ha sido autenticado por la [autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC)](use-dmarc-to-validate-email.md). Un remitente que no pasa la validación de DMARC indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
 
-- **Attachments**
+- **Datos adjuntos**
 
   - **Filename**
   - **SHA256**

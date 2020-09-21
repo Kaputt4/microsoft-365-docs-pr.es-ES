@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132140"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -83,7 +83,7 @@ A diferencia de las directivas de retención, la configuración de retención de
  
 - Opciones para iniciar el período de retención desde el momento en que se etiquetó el contenido o en función de un evento, en lugar de la antigüedad del contenido o cuando se modificó por última vez.
 
-- Uso de [clasificadores que se pueden entrenar](classifier-getting-started-with.md) para identificar el contenido que se va a etiquetar.
+- Uso de [clasificadores que se pueden entrenar](classifier-learn-about.md) para identificar el contenido que se va a etiquetar.
 
 - Aplicación de una etiqueta predeterminada a los documentos de SharePoint.
 

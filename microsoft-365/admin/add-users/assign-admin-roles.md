@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de la empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307324"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131763"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -42,11 +42,11 @@ Para obtener más información, vea [Asignar roles de administrador](about-admin
 
 Cuando se agregan nuevos usuarios, si no se les asigna un rol de administrador, se encuentran en el *rol de usuario* y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero, si necesita ayuda para hacer cosas, puede asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer contraseñas, no debería asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a sus datos y a la empresa en línea, es un riesgo para la seguridad.
 
-Vea un breve vídeo sobre cómo agregar un administrador.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Watch: agregar un administrador.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="assign-admin-roles"></a>Asignar roles de administrador 
 
@@ -100,7 +100,6 @@ Puede asignar usuarios a un rol de dos maneras distintas:
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>Asignar roles de administrador a varios usuarios
 
 Si conoce PowerShell, vea [asignar roles a cuentas de usuario con PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). Es ideal para asignar roles a cientos de usuarios.
@@ -108,7 +107,6 @@ Si conoce PowerShell, vea [asignar roles a cuentas de usuario con PowerShell](ht
 Use las siguientes instrucciones para asignar roles a decenas de usuarios.
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>Comprobar sus permisos
 

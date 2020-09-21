@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generar una alerta de prueba
               href: mtp/generate-test-alert.md
+        - name: Ejecutar un piloto en producción
+          items:
+            - name: Información general del piloto
+              href: mtp/mtp-pilot.md
+            - name: Plan
+              href: mtp/mtp-pilot-plan.md
+            - name: Preparación
+              href: mtp/prepare-mtpeval.md
+            - name: Simular ataque
+              href: mtp/mtp-pilot-simulate.md
+            - name: Cerrar y resumir
+              href: mtp/mtp-pilot-close.md
         - name: Guías de procedimientos
           items:
             - name: Crear un entorno piloto o de laboratorio de pruebas
               href: mtp/mtp-evaluation.md
+            - name: Ejecutar el cuaderno de estrategias piloto
+              href: mtp/mtp-pilot.md
             - name: Implementación de servicios compatibles
               href: mtp/deploy-supported-services.md
             - name: Habilitar la Protección contra amenazas de Microsoft
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: Investigación y respuesta automatizada
               items:
-                - name: Visión general de AIR
+                - name: Introducción a la investigación y respuesta automatizada
                   href: mtp/mtp-autoir.md
-                - name: Acciones de corrección
+                - name: Configurar las funciones de investigación y respuesta automatizada
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: Acciones correctivas que siguen a las investigaciones automatizadas
                   href: mtp/mtp-remediation-actions.md
-                - name: El centro de actividades
+                - name: Visite el Centro de actividades
                   href: mtp/mtp-action-center.md
-                - name: Ver los detalles y los resultados de una investigación automatizada
-                  href: mtp/mtp-autoir-results.md
-                - name: Aprobar o rechazar acciones pendientes
+                - name: Aprobar o rechazar acciones correctivas
                   href: mtp/mtp-autoir-actions.md
+                - name: Ver detalles y resultados de las investigaciones automatizadas
+                  href: mtp/mtp-autoir-results.md
                 - name: Informar sobre falsos positivos/negativos
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Búsqueda avanzada
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: Supervisión e informes de aplicaciones
                   href: mtp/monitor-apps.md
-            - name: API
-              items: null
         - name: Referencia
           items:
             - name: Permisos y configuraciones

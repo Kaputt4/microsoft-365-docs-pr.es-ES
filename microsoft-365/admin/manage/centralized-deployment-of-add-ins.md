@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131739"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -43,10 +43,10 @@ La implementación centralizada admite tres plataformas de escritorio Windows, M
 
 Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para todos los usuarios.
   
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para empresas (y que hayan iniciado sesión en Office con su identificador de organización) y tengan Exchange Online y los buzones activos de Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
-Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
+Puede ver los requisitos específicos para Office y Exchange, o usar el[Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
   
@@ -82,7 +82,7 @@ Para usar las aplicaciones de Microsoft 365 para empresas, un usuario debe tener
 
 La forma más sencilla de detectar si un usuario tiene Microsoft 365 apps for Enterprise instalado y lo ha usado recientemente es usar el informe de activaciones de Microsoft Office, que está disponible en el centro de administración de Microsoft 365. El informe proporciona una lista de todos los usuarios que han activado Microsoft 365 apps for Enterprise en los últimos 7 días, 30 días, 90 días o 180 días. Con fines de implementación centralizada, las activaciones de escritorio para Windows o Mac son las columnas importantes del informe. Puede exportar el informe a Excel. Para obtener más información acerca del informe, vea [informes de microsoft 365 en el centro de administración: activaciones de Microsoft Office](../activity-reports/microsoft-office-activations.md).
   
-Si no desea usar el informe de activaciones, puede pedir a un usuario que abra una aplicación de Office, como Word en su equipo y, a continuación, elija cuenta de **archivo** \> **Account**. En **información del producto**, debería ver **producto de suscripción** y **Microsoft 365 para empresas**, como se muestra en la siguiente imagen.
+Si no desea usar el informe de activaciones, puede pedir a un usuario que abra una aplicación de Office, como Word en su equipo y, a continuación, elija cuenta de **archivo** \> **Account**. En **información del producto**, verá que el **producto de suscripción** y **Microsoft 365 para empresas**, o Microsoft 365 empresa Premium, son similares a lo que se muestra en la siguiente imagen.
 
 ![Información de producto en una aplicación de Office](../../media/product-information-microsoft-365-enterprise.png)
   
@@ -115,7 +115,7 @@ Con el comprobador de compatibilidad de implementación centralizada, puede comp
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Este comando le pedirá que *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated. de Microsoft. </span> com*) y *_TenantAdmin_* (use las credenciales de administrador global) y, a continuación, solicite el consentimiento.
+   Este comando le pedirá que  *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated. de Microsoft. </span> com*) y  *_TenantAdmin_* (use las credenciales de administrador global) y, a continuación, solicite el consentimiento.
     
    > [!NOTE]
    > Según el número de usuarios de su espacio empresarial, el comprobador puede tardar minutos u horas en realizar la comprobación. 

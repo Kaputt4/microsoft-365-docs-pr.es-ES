@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949625"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171403"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -399,7 +399,7 @@ Cada archivo. csv exportado está limitado a 150.000 filas. Si los datos contien
 
 ## <a name="sent-and-received-email-report"></a>Informe de correo electrónico enviado y recibido
 
-El informe de **correo electrónico enviado y recibido** es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, incluidas las detecciones de correo no deseado, malware y el correo electrónico identificado como "bueno". La diferencia entre este informe y el [Informe de estado de flujo](#mailflow-status-report) de correos es la siguiente: este informe no incluye datos sobre los mensajes bloqueados por la protección perimetral.
+El informe de **correo electrónico enviado y recibido** es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, incluidas las detecciones de correo no deseado, malware y el correo electrónico identificado como "bueno". La diferencia entre este informe y el [Informe de estado de flujo](#mailflow-status-report) de correos es la siguiente: este informe no incluye datos sobre los mensajes bloqueados por la protección perimetral. Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como un mensaje.
 
 La vista agregada y la vista de detalles del informe permiten 90 días de filtrado.
 

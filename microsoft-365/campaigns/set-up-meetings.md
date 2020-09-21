@@ -2,7 +2,7 @@
 title: Configurar reuniones en línea
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: twerner
 author: twerner
 manager: scotv
 ms.audience: Admin
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar reuniones en línea con Microsoft Teams.
-ms.openlocfilehash: ce13dbcc32457263295e0e617b92a2d7e5fc3909
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 3e1eaba887249db59ef28e36ffefb5b89f80c469
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132005"
 ---
 # <a name="set-up-meetings"></a>Configurar reuniones
 

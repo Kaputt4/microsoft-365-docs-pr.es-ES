@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c3323192e0095ad6693241390cff81d42be9cce1
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817186"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956248"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurar el entorno de laboratorio de prueba de Microsoft Threat Protection 
 
@@ -121,7 +121,7 @@ En esta fase, se le guiará a:
 ## <a name="enable-microsoft-365-trial-subscription"></a>Habilitar la suscripción de prueba de Microsoft 365
 
 >[!NOTE]
->Al registrarse para obtener una prueba, se le da 25 licencias de usuario para usarla durante un mes. Consulte [probar o comprar una suscripción a M365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) para obtener más información.
+>Al registrarse para obtener una prueba, se le da 25 licencias de usuario para usarla durante un mes. Consulte [probar o comprar una suscripción a M365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) para obtener más información.
 
 1. En [centro de administración de 365 de Microsoft](https://admin.microsoft.com/), haga clic en **facturación** y navegue a **servicios de compra**.
 
@@ -149,4 +149,5 @@ En esta fase, se le guiará a:
 
 
 ## <a name="next-step"></a>Paso siguiente
-![Fase 3: configurar & incorporado](../../media/config-onboard.png) <br>[Fase 3: configurar & incorporado](config-mtpeval.md) <br>Configure cada uno de los pilares de la protección contra amenazas de Microsoft para su laboratorio de prueba de Microsoft Threat Protection o su entorno piloto y incorpore los puntos de conexión.
+|![Fase 3: configurar & incorporado](../../media/config-onboard.png) <br>[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada uno de los pilares de la protección contra amenazas de Microsoft para su laboratorio de prueba de Microsoft Threat Protection o su entorno piloto y incorpore los puntos de conexión.
+|:-------|:-----|

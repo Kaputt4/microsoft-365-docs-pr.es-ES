@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: aec2adab7735a2be5670210abf05f88f081fe4ed
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5806b2a33446a8e273c2aaf78e082c6fd753bbe4
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306531"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171285"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -64,6 +64,9 @@ Antes de comenzar, vea [determinar si la implementación centralizada de complem
 1. En el centro de administración, vaya a la página **configuración** \> **de complementos** .
     
 2. Seleccione **implementar complemento** en la parte superior de la página y, a continuación, seleccione **siguiente**.
+ 
+    > [!NOTE]
+    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración**de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
     
 3. Seleccione una opción y siga las instrucciones.
   
@@ -131,7 +134,7 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
     
 - **Complemento de la Tienda Office:** si un administrador seleccionó un complemento de la Tienda Office y el complemento se actualiza en la Tienda Office, se actualizará más tarde en Implementación centralizada. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
   
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Obtén más información
 
 [Administrar complementos en el centro de administración](manage-addins-in-the-admin-center.md)
 

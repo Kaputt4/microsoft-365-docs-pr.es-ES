@@ -26,16 +26,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de los servicios 365 de Microsoft antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo.
-ms.openlocfilehash: 49f7d3afd3c19cd4e9b6486db580082fe933b997
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
+ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694151"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48134080"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
-[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
 Puede ver el estado de los servicios de Microsoft, incluidos Office en la web, Yammer, Microsoft Dynamics CRM y los servicios en la nube de administración de dispositivos móviles, en la página **Estado del servicio** en el centro de [administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Si experimenta algún problema con un servicio en la nube, antes de llamar al soporte técnico o de invertir tiempo intentando solucionarlo, puede comprobar el estado del servicio para determinar si se trata de un problema conocido que ya tenga una resolución en curso.
 
@@ -46,7 +46,7 @@ Si no puede iniciar sesión en el portal de servicios, puede usar la [Página es
 1. Vaya al centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) e inicie sesión con una cuenta de administrador.
 
     > [!NOTE]
-    > Los usuarios que tienen asignado el rol de administrador de servicios o administrador global pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios. Para obtener más información acerca de los roles que pueden ver el estado del servicio, vea [acerca de los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
+    > Los usuarios que tienen asignado el rol de administrador de servicios o administrador global pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios. Para obtener más información acerca de los roles que pueden ver el estado del servicio, vea [acerca de los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
   
 2. Si no usa el nuevo centro de administración, en la página **principal** , seleccione el botón de alternancia **probar el nuevo centro de administración** en la esquina superior derecha.
 
@@ -64,7 +64,9 @@ La ficha **historial** muestra el historial de incidentes y avisos que se han re
 
 Si tiene un problema con un servicio de Microsoft 365 y no lo ve en la página de **Estado del servicio** , comuníquese con nosotros seleccionando **informar de un problema**y completando el formulario corto. Analizaremos los datos y los informes relacionados de otras organizaciones para ver el alcance del problema y si se ha originado con nuestro servicio. Si lo hizo, lo agregaremos como un nuevo aviso o aviso en la página **Estado del servicio** , donde puede realizar el seguimiento de su resolución. Si no aparece en la lista en unos 30 minutos, considere la posibilidad de ponerse en contacto con el soporte técnico para resolver el problema.
 
-Para suscribirse a notificaciones de correo electrónico de nuevos incidentes que afecten al espacio empresarial y a los cambios de estado de un incidente activo, seleccione **preferencias**, haga clic en **enviarme notificaciones de estado del servicio en el correo electrónico**y, a continuación, especifique:
+Para personalizar la vista de los servicios que se muestran en el panel, seleccione **preferencias**de  >  **vista personalizada**y desactive las casillas correspondientes a los servicios que desea filtrar de la vista del panel de estado del servicio. Asegúrese de que la casilla de verificación está activada para cada servicio que desea supervisar.    
+
+Para suscribirse a notificaciones de correo electrónico de nuevos incidentes que afecten al espacio empresarial y a los cambios de estado de un incidente activo, seleccione **preferencias**de  >  **correo electrónico**, haga clic en **enviarme notificaciones de estado del servicio en el correo electrónico**y, a continuación, especifique:
 
 - Hasta dos direcciones de correo electrónico.
 - Si desea que las notificaciones de incidentes o avisos
@@ -80,7 +82,7 @@ Para suscribirse a notificaciones de correo electrónico de nuevos incidentes qu
 
 En la vista **todos los servicios** , al seleccionar el estado del servicio se abrirá una vista de Resumen de avisos o incidentes.
   
-![Una captura de pantalla que muestra el aviso de servicio](../media/service-health-advisory.png)
+[![Una captura de pantalla que muestra el aviso ](../media/service-health-advisory.png) de servicio](../media/service-health-advisory.png#lightbox)
 
 En el resumen del aviso o del incidente, se proporciona la siguiente información:
 
@@ -150,4 +152,4 @@ Para obtener más información sobre nuestro compromiso con el tiempo de activid
 ## <a name="related-topics"></a>Temas relacionados
 
 [Informes de actividades en el centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- [Preferencias del centro de mensajes](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)
+ [Preferencias del centro de mensajes](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)

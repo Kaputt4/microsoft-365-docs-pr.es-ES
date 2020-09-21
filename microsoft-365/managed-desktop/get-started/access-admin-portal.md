@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546579"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137040"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
 La puerta de enlace al servicio de escritorio administrado de Microsoft es el portal de Microsoft [Azure](https://portal.azure.com). Para obtener más información sobre el uso y la personalización de la experiencia del portal de Azure en general, consulte la [documentación de Azure portal](https://docs.microsoft.com/azure/azure-portal/). Disponible en la versión preliminar ahora, también puede encontrar Microsoft Managed Desktop en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Si no está familiarizado con las capacidades de este portal para la administración de dispositivos, consulte la [documentación de Microsoft Endpoint Manager](https://docs.microsoft.com/mem/).
 
-Su cuenta administrativa necesita permisos específicos para obtener acceso a las características administrativas del escritorio administrado de Microsoft en Azure portal o en Microsoft Endpoint Manager. Puede administrar el acceso de administrador a estas características dentro de su organización mediante el control de acceso basado en roles (RBAC). Varios roles de administrador de Azure AD y roles personalizados integrados están disponibles para proporcionar un control más granular de las diferentes características dentro del portal de administración de escritorio administrado de Microsoft. Para obtener más información sobre los roles de Azure Active Directory, consulte [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). A diferencia de los roles de administrador de AAD que se aplican a una variedad de productos y servicios de Microsoft, los roles personalizados son específicos del escritorio administrado de Microsoft y solo garantizan el acceso a las características de administración de este servicio. Los administradores pueden asignar roles personalizados a los usuarios de forma individual o en combinación con los roles de administrador de AAD para agregar permisos de escritorio administrado de Microsoft a cuentas de administrador existentes.
+> [!NOTE]
+> Sin embargo, usted elige tener acceso a escritorio administrado de Microsoft, en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) o en [Azure portal](https://portal.azure.com), se admiten los siguientes exploradores:
+> - Microsoft Edge (versión más reciente)
+> - Microsoft Internet Explorer 11
+> - Safari (versión más reciente, solo Mac)
+> - Chrome (versión más reciente)
+> - Firefox (versión más reciente)
+
+Su cuenta administrativa necesita permisos específicos para obtener acceso a las características administrativas del escritorio administrado de Microsoft en Azure portal o en Microsoft Endpoint Manager. Puede administrar el acceso de administrador a estas características dentro de su organización mediante el control de acceso basado en roles (RBAC). Hay disponibles varios roles de administrador de Azure Active Directory (Azure AD) y roles personalizados integrados para proporcionar un control más granular de las diferentes características dentro del portal de administración de escritorio administrado de Microsoft. Para obtener más información sobre los roles de Azure Active Directory, consulte [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). A diferencia de los roles de administrador de Azure AD que se aplican a diversos productos y servicios de Microsoft, las funciones personalizadas son específicas del escritorio administrado de Microsoft y solo garantizarán el acceso a las características de administración de este servicio. Los administradores pueden asignar roles personalizados a los usuarios de forma individual o en combinación con los roles de administrador de Azure AD para agregar permisos de escritorio administrado de Microsoft a cuentas de administrador existentes.
 
 Cada una de las funciones siguientes se puede asignar para proporcionar diferentes niveles de acceso:
 

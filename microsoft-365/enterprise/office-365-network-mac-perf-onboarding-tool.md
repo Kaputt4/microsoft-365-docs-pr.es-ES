@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Prueba de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962403"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171355"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Prueba de conectividad de red 365 de Microsoft (versión preliminar)
 
@@ -37,13 +37,33 @@ Le recomendamos que se usen conjuntamente donde el estado de calidad de la red s
 >[!IMPORTANT]
 >Información sobre la red, recomendaciones de rendimiento y evaluaciones en el centro de administración de Microsoft 365 se encuentra actualmente en estado de versión preliminar y solo está disponible para los inquilinos de Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
-## <a name="the-advanced-tests-client-application"></a>Aplicación cliente de pruebas avanzadas
+## <a name="what-happens-at-each-test-step"></a>Qué ocurre en cada paso de prueba
+
+### <a name="office-location-identification"></a>Identificación de ubicación de oficina
+
+Al hacer clic en el botón Ejecutar prueba, se muestra la página de prueba en ejecución y se identifica la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o puede que lo detecte desde el explorador Web. Si lo detectas, solicitamos la latitud y la longitud desde el explorador Web y limitamos la precisión a 300 m de 300 $ antes de usarla. Lo hacemos porque no es necesario identificar la ubicación con más precisión que la del edificio para el rendimiento de la red. 
+
+### <a name="javascript-tests"></a>Pruebas de JavaScript
+
+Después de identificar la ubicación de la oficina, ejecutamos una prueba de latencia de TCP en JavaScript y solicitamos datos del servicio sobre los servidores de puerta de las puertas de servicio en uso y recomendados en Office 365. Cuando se completen, los mostraremos en el mapa y en la pestaña detalles, donde podrán visualizarse antes del siguiente paso.
+
+### <a name="download-the-advanced-tests-client-application"></a>Descargar la aplicación de cliente de pruebas avanzadas
+
+A continuación, inicie la descarga de la aplicación cliente de pruebas avanzadas. Confiamos en que el usuario inicie la aplicación cliente y también debe tener instalado .NET Core.
 
 La prueba de conectividad de red de Microsoft 365 es de dos partes: el sitio Web <https://connectivity.office.com> y una aplicación cliente de Windows descargable que ejecuta pruebas avanzadas de conectividad de red. La mayoría de las pruebas requieren que se ejecute la aplicación. Se rellenarán los resultados de nuevo en la página web mientras se ejecuta.
 
 Se le pedirá que descargue la aplicación de prueba de cliente avanzada desde el sitio web una vez que se hayan completado las pruebas del explorador Web. Abra y ejecute el archivo cuando se le solicite.
 
 ![Aplicación cliente de pruebas avanzadas](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>Inicio de la aplicación cliente de pruebas avanzadas
+
+Una vez iniciada la aplicación cliente, la página web se actualizará para mostrar que los datos de prueba se empezarán a recibir en la Página Web. Actualiza cada vez que se reciben nuevos datos y puede revisar los datos a medida que lleguen.
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>Pruebas avanzadas completadas y prueba de carga de informes
+
+Una vez finalizadas las pruebas, la página web y el cliente de pruebas avanzadas lo indicarán y, si el usuario está firmado en el informe de prueba, se cargará en el inquilino de clientes.
 
 ## <a name="sharing-your-test-report"></a>Compartir el informe de pruebas
 
@@ -111,7 +131,7 @@ Esto detecta si está usando una VPN para conectarse a Office 365. Se mostrará 
 
 #### <a name="vpn-split-tunnel"></a>Túnel dividido de VPN
 
-Cada ruta de categoría optimizada para Exchange Online, SharePoint Online y Microsoft Teams se prueba para ver si está en túnel en la red privada virtual (VPN). Una carga de trabajo dividida evita completamente la VPN. Una carga de trabajo de túnel se envía a través de la VPN. Una carga de trabajo de túnel selectivo tiene algunas rutas enviadas a través de VPN y otras divididas. Se mostrará un resultado satisfactorio si todas las cargas de trabajo se dividen o si se realiza un túnel selectivo.
+Cada ruta de categoría optimizada para Exchange Online, SharePoint Online y Microsoft Teams se prueba para ver si está canalizado en la red privada virtual (VPN). Una carga de trabajo dividida evita completamente la VPN. Una carga de trabajo de túnel se envía a través de la VPN. Una carga de trabajo de túnel selectivo tiene algunas rutas enviadas a través de la VPN y otras divididas. Se mostrará un resultado satisfactorio si todas las cargas de trabajo están divididas o en túnel selectivo.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Clientes de su área metropolitana con mejor rendimiento
 
@@ -133,7 +153,7 @@ Es posible que la ubicación buscada en la dirección IP de salida de red no sea
 
 Este conocimiento de la red afectará específicamente a la selección de la puerta del servicio de Exchange Online. Para resolver esta visión, la salida local y directa de la red debe ser un requisito previo y, a continuación, la resolución de nombres recursivos de DNS se debe encontrar cerca de la salida de la red.
 
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online"></a>Exchange en línea
 
 En esta sección se muestran los resultados de pruebas relacionados con Exchange Online.
 
@@ -207,28 +227,6 @@ Donde se encuentra un certificado SSL que Microsoft no proporciona, se muestra e
 
 En esta sección se muestran los resultados de ICMP traceroute en la puerta frontal del servicio de Exchange Online, el servicio de SharePoint Online y la puerta principal del servicio de Microsoft Teams. Se proporciona solo para información y no hay ningún conocimiento de la red asociado. Se proporcionan tres traceroute. Un traceroute a _Outlook.Office365.com_, un traceroute a los clientes front end de SharePoint o a _Microsoft.SharePoint.com_ si no se proporcionó ninguno y un traceroute a _World.tr.Teams.Microsoft.com_.
 
-## <a name="what-happens-at-each-test-step"></a>Qué ocurre en cada paso de prueba
-
-### <a name="office-location-identification"></a>Identificación de ubicación de oficina
-
-Al hacer clic en el botón Ejecutar prueba, se muestra la página de prueba en ejecución y se identifica la ubicación de la oficina. Puede escribir su ubicación por ciudad, estado y país o puede que lo detecte desde el explorador Web. Si lo detectas, solicitamos la latitud y la longitud desde el explorador Web y limitamos la precisión a 300 m de 300 $ antes de usarla. Lo hacemos porque no es necesario identificar la ubicación con más precisión que la del edificio para el rendimiento de la red. 
-
-### <a name="javascript-tests"></a>Pruebas de JavaScript
-
-Después de identificar la ubicación de la oficina, ejecutamos una prueba de latencia de TCP en JavaScript y solicitamos datos del servicio sobre los servidores de puerta de las puertas de servicio en uso y recomendados en Office 365. Cuando se completen, los mostraremos en el mapa y en la pestaña detalles, donde podrán visualizarse antes del siguiente paso.
-
-### <a name="download-the-advanced-tests-client-application"></a>Descargar la aplicación de cliente de pruebas avanzadas
-
-A continuación, inicie la descarga de la aplicación cliente de pruebas avanzadas. Confiamos en que el usuario inicie la aplicación cliente y también debe tener instalado .NET Core.
-
-### <a name="start-the-advanced-tests-client-application"></a>Inicio de la aplicación cliente de pruebas avanzadas
-
-Una vez iniciada la aplicación cliente, la página web se actualizará para mostrar que los datos de prueba se empezarán a recibir en la Página Web. Actualiza cada vez que se reciben nuevos datos y puede revisar los datos a medida que lleguen.
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>Pruebas avanzadas completadas y prueba de carga de informes
-
-Una vez finalizadas las pruebas, la página web y el cliente de pruebas avanzadas lo indicarán y, si el usuario está firmado en el informe de prueba, se cargará en el inquilino de clientes.
-
 ## <a name="connectivity-reports"></a>Informes de conectividad
 
 Si ha iniciado sesión, puede revisar los informes anteriores que ha ejecutado. También puede compartirlas o eliminarlas de la lista.
@@ -251,7 +249,7 @@ Actualmente, se trata de una versión preliminar y planea proporcionar actualiza
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>¿Qué se necesita para ejecutar el cliente de prueba avanzado?
 
-El cliente de prueba avanzado requiere .NET Core 3,1 en tiempo de ejecución de escritorio. Si ejecuta el cliente de prueba avanzada sin que se haya instalado, se le dirigirá a [la página del instalador de .net Core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Asegúrese de instalar el tiempo de ejecución de escritorio y no el SDK, o el tiempo de ejecución de ASP.NET Core, que están más arriba en la página. Los permisos de administrador en el equipo son reuqired de instalar .NET Core. 
+El cliente de prueba avanzado requiere .NET Core 3,1 en tiempo de ejecución de escritorio. Si ejecuta el cliente de prueba avanzada sin que se haya instalado, se le dirigirá a [la página del instalador de .net Core 3,1](https://dotnet.microsoft.com/download/dotnet-core/3.1). Asegúrese de instalar el tiempo de ejecución de escritorio y no el SDK, o el tiempo de ejecución de ASP.NET Core, que están más arriba en la página. Se necesitan permisos de administrador en el equipo para instalar .NET Core. 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>¿Qué es el servicio de Microsoft 365 puerta frontal?
 

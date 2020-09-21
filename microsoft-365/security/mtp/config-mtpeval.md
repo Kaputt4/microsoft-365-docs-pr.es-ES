@@ -1,9 +1,29 @@
 ---
-Título: configuración de los pilares de la protección contra amenazas de Microsoft para el entorno piloto o del laboratorio de prueba Descripción: configure Microsoft Threat Protection pilares: Office 365 ATP, Azure ATP, Microsoft Cloud App Security y Microsoft defender ATP, para su laboratorio de prueba o entorno piloto.
-Palabras clave: configurar la versión de prueba de Microsoft Threat Protection, configuración de prueba de protección contra amenazas de Microsoft, configurar el proyecto piloto de Microsoft Threat Protection Pilot, configurar Microsoft Threat Protection pilares, búsqueda de Microsoft Threat Protection pilares. producto: eADQiWindows 10XVcnh Search. appverid: met150 ms. Prod: W10 ms. mktglfcycl: deploy ms. sitesec: Library ms. pageType: Security ms.  
-Autor: DulceMontemayor ms. localizationpriority: Media Manager: dansimp público: ITPro ms. Collection: M365-Security-Compliance ms. topic: article 
+title: Configurar los pilares de la protección contra amenazas de Microsoft para el entorno piloto o el laboratorio de prueba
+description: Configure Microsoft Threat Protection pilares, como Office 365 ATP, Azure ATP, Microsoft Cloud App Security y Microsoft defender ATP, para su laboratorio de pruebas o entorno piloto.
+keywords: configurar Microsoft Threat Protection prueba, configuración de prueba de protección contra amenazas de Microsoft, configurar el proyecto piloto de Microsoft Threat Protection Pilot, configurar los pilares de la protección contra amenazas de Microsoft, pilares de la protección contra amenazas de Microsoft
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956270"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurar los pilares de la protección contra amenazas de Microsoft para el entorno de prueba o el entorno piloto
 
 **Se aplica a:**
@@ -43,7 +63,7 @@ La preparación es fundamental para todas las implementaciones correctas. En est
 
 ## <a name="microsoft-threat-protection-pillars"></a>Pilares de la protección contra amenazas de Microsoft
 La protección contra amenazas de Microsoft consta de cuatro pilares. Aunque un pilar ya puede proporcionar valor a la seguridad de su organización de red, la habilitación de los cuatro pilares de la protección contra amenazas de Microsoft dará mayor valor a su organización.
-
+<br>
 ![Solución de protección contra amenazas of_Microsoft de imágenes para los usuarios, la protección contra amenazas avanzada de Azure, para extremos protección contra amenazas avanzada de Microsoft defender, para aplicaciones en la nube, seguridad de aplicación en la nube de Microsoft y para datos, protección contra amenazas avanzada de Office 365  ](../../media/mtp-eval-31.png) <br>
 
 Esta sección le guiará para configurar:
@@ -121,7 +141,7 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 <br>![Imagen of_Azure página protección avanzada contra amenazas, en la que debe hacer clic en siguiente para seguir el Asistente para sensores ATP de Azure](../../media/mtp-eval-47.png) <br>
  
 7. Haga clic en **siguiente** en el tipo de implementación de sensor.
-<br>![Imagen of_Azure página protección avanzada contra amenazas, en la que debe hacer clic en siguiente para seguir el Asistente para sensores ATP de Azure](../../media/mtp-eval-48.png) <br>
+<br>![Imagen of_Azure página protección avanzada contra amenazas en la que debe hacer clic en siguiente para ir a la página siguiente](../../media/mtp-eval-48.png) <br>
  
 8. Copie la clave de acceso porque tiene que escribirla a continuación en el asistente.
 ![Página de of_the de la imagen sensores donde debe copiar la clave de acceso que necesita escribir en la próxima página del Asistente para la configuración de sensores de ATP de Azure](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Para obtener una guía más completa, consulte [activar la protección contra am
 
 A continuación, puede simular un ataque y ver cómo las capacidades cruzadas del producto detectan, crean alertas y responden automáticamente a un ataque de archivos no deseados en un extremo.
 
-## <a name="next-steps"></a>Pasos siguientes
-[Genere una alerta de prueba](generate-test-alert.md).
+## <a name="next-step"></a>Paso siguiente
+|![Fase de simulación de ataques](../../media/mtp/run-sim.png) <br>[Fase de simulación de ataques](mtp-pilot-simulate.md) | Ejecute la simulación de ataques para su entorno piloto de Microsoft Threat Protection.
+|:-------|:-----|

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132174"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -101,6 +101,6 @@ Si está buscando una solución de cumplimiento existente y no está disponible 
 
 - **Microsoft Information Protection**, obtenga información sobre cómo las soluciones de Microsoft 365 le ayudarán a descubrir, clasificar y proteger información confidencial en cualquier lugar en que se encuentre o viaje.
     - **Familiarícese con y configure Microsoft Cloud App Security**. Consulte [QuickStart: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
-    - Empezar **a trabajar con clasificadores**. Clasificar el contenido y, a continuación, etiquetarlo para que se pueda proteger y administrar correctamente es el punto de partida de la disciplina de protección de la información. Consulte [Introducción a los clasificadores capacitados](classifier-getting-started-with.md).
+    - Empezar **a trabajar con clasificadores**. Clasificar el contenido y, a continuación, etiquetarlo para que se pueda proteger y administrar correctamente es el punto de partida de la disciplina de protección de la información. Vea [más información sobre los clasificadores que se capacitan (versión preliminar)](classifier-learn-about.md).
 
 - **Visite con frecuencia el catálogo de soluciones de Microsoft 365**y asegúrese de revisar las nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, seleccione **Catálogo** en el panel de navegación izquierdo.

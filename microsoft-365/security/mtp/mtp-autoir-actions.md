@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962658"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Aprobar o rechazar acciones pendientes tras una investigación automatizada
 
@@ -56,14 +58,11 @@ Las acciones pendientes se pueden revisar y aprobar mediante el [centro de activ
 
 ![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
-1. En la página Detalles de la [investigación](mtp-autoir-results.md) , seleccione la pestaña **acciones pendientes** (o **acciones**). los elementos que están pendientes de aprobación aparecen aquí.
+1. En una página de detalles de la [investigación](mtp-autoir-results.md) , seleccione la pestaña **acciones pendientes** (o **acciones**). Los elementos que están pendientes de aprobación se enumeran aquí.
 
 2. Seleccione un elemento de la lista y, a continuación, elija **aprobar** o **rechazar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Más información sobre el Centro de actividades](mtp-action-center.md)
-
-- [Más información sobre incidentes](incidents-overview.md)
-
-- [Obtener información sobre la búsqueda](advanced-hunting-overview.md)
+- [Ver los detalles y los resultados de una investigación automatizada](mtp-autoir-results.md)
+- [Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](mtp-autoir-report-false-positives-negatives.md)

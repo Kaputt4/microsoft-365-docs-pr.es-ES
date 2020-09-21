@@ -15,52 +15,69 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132163"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Directivas para permitir el acceso de B2B y de invitado externo
 
-En este artículo se describe cómo ajustar las directivas de identidad y acceso a dispositivos comunes recomendadas para permitir el acceso a la cuenta de empresa a empresa (B2B) (usuarios invitados y externos). Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md).
+En este artículo se describe cómo ajustar las directivas de identidad y acceso de dispositivos comunes recomendadas para permitir el acceso de usuarios externos y invitados que tienen una cuenta de Azure Active Directory (Azure AD) negocio a negocio (B2B). Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md).
 
 Estas recomendaciones están diseñadas para aplicarse al nivel de **línea base** de protección. Sin embargo, también puede ajustar las recomendaciones en función de la granularidad de sus necesidades de protección **sensible** y **altamente regulada** . 
 
-Proporcionar una ruta de acceso para que los usuarios B2B se autentiquen con el inquilino de Azure Active Directory (Azure AD) no concede a estos usuarios acceso a todo su entorno. Los usuarios B2B solo tienen acceso a los recursos compartidos con ellos (por ejemplo, archivos) dentro de los servicios concedidos en las directivas de acceso condicional.
+Al proporcionar una ruta de acceso para las cuentas B2B para autenticarse con el inquilino de Azure AD, no se concede a estas cuentas acceso a todo el entorno. Los usuarios de B2B y sus cuentas solo tienen acceso a los recursos compartidos con ellos (como archivos) dentro de los servicios concedidos en las directivas de acceso condicional.
 
 ## <a name="updating-the-common-policies-to-allow-and-protect-guest-and-external-access"></a>Actualización de las directivas comunes para permitir y proteger el acceso de invitados y externos 
 
-Para proteger el acceso de clientes y externos, en el siguiente diagrama se ilustran las directivas que se deben agregar o actualizar desde las directivas comunes de identidad y acceso a dispositivos. 
+Para proteger el acceso de invitados y externos con cuentas B2B de Azure AD, en el siguiente diagrama se ilustran las directivas que se deben agregar o actualizar desde las directivas comunes de identidad y acceso a dispositivos. 
 
 [![Resumen de las actualizaciones de directivas para proteger el acceso de invitado](../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
 [Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png)
 
-En la siguiente tabla se enumeran las directivas que debe actualizar o crear nuevas. Las directivas comunes vinculan a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
+En la siguiente tabla se enumeran las directivas que es necesario crear y actualizar. Las directivas comunes vinculan a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
 |Nivel de protección|Directivas|Más información|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Requerir MFA siempre para los usuarios externos y invitados](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Crear esta nueva Directiva y aplicarla solo a los invitados y a los usuarios externos. En **riesgo de inicio de sesión**, deje todas las opciones desactivadas para exigir siempre la autenticación multifactor (MFA).|
+|**Baseline**|[Requerir MFA siempre para los usuarios externos y invitados](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Crear esta nueva Directiva y configurar: <ul><li> Para las **asignaciones > usuarios y grupos > incluir**, elija **Seleccionar usuarios y grupos**y, a continuación, seleccione **todos los usuarios externos y invitados**. </li><li> Para **las asignaciones > condiciones > inicio de sesión**, deje todas las opciones desactivadas para exigir siempre la autenticación multifactor (MFA).</li>|
 |        |[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifique esta directiva para excluir usuarios externos y invitados.|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifique esta directiva para excluir usuarios externos y invitados.|
 
-Para incluir o excluir invitados y usuarios externos en las directivas de acceso condicional, haga clic en la ficha **incluir** o **excluir** y compruebe **todos los invitados y usuarios externos**.
+Para incluir o excluir usuarios de invitado y externos en directivas de acceso condicional, para **asignaciones > usuarios y grupos > incluir** o **excluir**, compruebe **todos los usuarios externos y de invitado**.
 
-![captura de pantalla de controles para excluir invitados](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![captura de pantalla de controles para excluir usuarios externos y invitados](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>Más información
 
-### <a name="guests-vs-external-users"></a>Invitados frente a usuarios externos
-En Azure AD, los usuarios externos y invitados son los mismos. El tipo de usuario para ambos es invitado. Los usuarios invitados son usuarios B2B.
+### <a name="guest-and-external-access-with-microsoft-teams"></a>Invitado y acceso externo con Microsoft Teams
 
-Microsoft Teams diferencia entre los usuarios invitados y los usuarios externos dentro de la aplicación. Los usuarios invitados tienen cuentas B2B de Azure AD y se pueden agregar a teams. Los usuarios externos solo pueden participar en llamadas, chats y reuniones. Para obtener más información, consulte [esta comparación entre el invitado y los usuarios externos para Microsoft Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+Microsoft Teams define lo siguiente:
 
-Consulte [recomendaciones de directivas para proteger a los equipos chats, grupos y archivos](teams-access-policies.md) para obtener más información sobre cómo proteger la identidad y el acceso a dispositivos para Teams.
+- El **acceso de invitado** usa una cuenta B2B de Azure ad que puede agregarse como miembro de un equipo y tener todo el acceso con permisos a las comunicaciones y recursos del equipo.
+
+- El **acceso externo** es para un usuario externo que no tiene una cuenta B2B. El acceso externo puede incluir invitaciones y participación en las llamadas, chats y reuniones, pero no incluye la pertenencia al equipo ni el acceso a los recursos del equipo.
+
+Para obtener más información, consulte [esta comparación entre Guest y external Access for Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+
+Las directivas de acceso condicional solo se aplican al acceso de invitado en Microsoft Teams porque hay una cuenta B2B de Azure AD correspondiente.
+
+Consulte [recomendaciones de directivas para proteger los equipos chats, grupos y archivos](teams-access-policies.md) para obtener más información sobre cómo proteger las directivas de acceso a dispositivos e identidades para Teams.
+
+<!--
+ount treats guest and external users that have an Azure AD B2B account differently than external access  .
+
+
+to a meeting, call, or chat with
+
+
+differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
+--> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Requerir MFA siempre para los usuarios externos y invitados
-Esta directiva solicita a los invitados que se registren en MFA en su espacio empresarial, independientemente de si están registrados para MFA en su inquilino de inicio. Al obtener acceso a los recursos de su espacio empresarial, los invitados y los usuarios externos deben usar MFA para cada solicitud. 
+Esta directiva solicita a los invitados que se registren en MFA en su espacio empresarial, independientemente de si están registrados para MFA en su inquilino de inicio. Al obtener acceso a los recursos de su espacio empresarial, los usuarios externos y invitados deben usar MFA para cada solicitud. 
 
 ### <a name="excluding-guest-and-external-users-from-risk-based-mfa"></a>Exclusión de invitados y usuarios externos de la MFA basada en riesgos
 Si bien las organizaciones pueden aplicar directivas basadas en riesgos para los usuarios de B2B mediante Azure AD Identity Protection, hay limitaciones en la implementación de la protección de identidad de Azure AD para los usuarios de colaboración B2B en un directorio de recursos debido a la identidad existente en su directorio principal. Debido a estas limitaciones, Microsoft recomienda excluir a los usuarios invitados de las directivas de MFA basadas en riesgos y requerir que estos usuarios usen siempre la MFA. 

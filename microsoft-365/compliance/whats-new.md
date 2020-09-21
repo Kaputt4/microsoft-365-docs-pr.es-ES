@@ -1,5 +1,5 @@
 ---
-title: Novedades en el cumplimiento de Microsoft 365
+title: Novedades de Cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Independientemente de si va a agregar nuevas soluciones al centro de cumplimiento, a actualizar características existentes en función de sus comentarios o a la actualización de documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132040"
 ---
-# <a name="whats-new-in-microsoft-365-compliance"></a>Novedades en el cumplimiento de Microsoft 365
+# <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
 Ya sea que se agreguen nuevas soluciones nuevas al [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md), se actualicen las características existentes en función de sus comentarios o se implantan documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento de cambios. Eche un vistazo a continuación para ver las novedades del cumplimiento de Microsoft 365 en la actualidad. 
 
@@ -269,7 +269,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
 |Cumplimiento de la comunicación (versión preliminar) <br/>|El cumplimiento de la comunicación forma parte de la nueva categoría de administración de riesgos de Insider, que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de su organización. La soluci? a amplía las capacidades de las directivas de supervisión en Office 365 presentando varias mejoras nuevas como, por ejemplo, plantillas inteligentes, flujos de trabajo de corrección flexibles e información procesable. <br/>|[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md)|
 |Clasificación de datos (versión preliminar) <br/>|Nuestra nueva página de clasificación de datos contiene una gran información y herramientas para ayudarle a descubrir y evaluar cómo se usa la información confidencial y las etiquetas (retención y confidencialidad) en el contenido de la organización. Revise el contenido que contiene información confidencial o que tiene etiquetas aplicadas, explore la actividad de la etiqueta en las ubicaciones de Microsoft 365, cree tipos personalizados de información confidencial y mucho más.<br/>|[Información general sobre la clasificación de datos (vista previa)](data-classification-overview.md)|
-|Clasificadores capacitados (versión preliminar) <br/>|Esta eficaz herramienta utiliza el motor de aprendizaje de la máquina para ayudarle a identificar las categorías de contenido de su organización, como documentos normativos o acuerdos de empleados. Una vez creado, los clasificadores pueden usarse en varias soluciones de cumplimiento para detectar contenido relacionado y clasificarlo, protegerlo, mantenerlo y mucho más.<br/>|[Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)|
+|Clasificadores capacitados (versión preliminar) <br/>|Esta eficaz herramienta utiliza el motor de aprendizaje de la máquina para ayudarle a identificar las categorías de contenido de su organización, como documentos normativos o acuerdos de empleados. Una vez creado, los clasificadores pueden usarse en varias soluciones de cumplimiento para detectar contenido relacionado y clasificarlo, protegerlo, mantenerlo y mucho más.<br/>|[Obtener información sobre los clasificadores capacitados (versión preliminar)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>Soluciones de cumplimiento actualizadas
 
@@ -298,7 +298,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Etiquetas de retención y directivas de etiquetas |Clasificación > etiquetas de retención > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/retentionlabels |Pestañas de gobierno de información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Introducción a las etiquetas de retención](retention.md)|
 |Directivas de retención|Control de > la retención de información <br/> https://protection.office.com/retention |Ficha > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Más información sobre las directivas y las etiquetas de retención](retention.md)|
 |Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)|
-|Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
+|Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
 |Garantía de servicio|Garantía de servicio <br/> https://protection.office.com/serviceassurance/dashboard |En este momento, solo se puede tener acceso a los recursos de garantía del servicio en el centro de seguridad & cumplimiento de Office 365. |[Garantía del servicio en el Centro de Cumplimiento de Seguridad &](service-assurance.md)|
 |Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento de las comunicaciones <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |
 

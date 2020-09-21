@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797821"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171273"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -39,18 +39,18 @@ En este vídeo se muestran los pasos de configuración que se describen en este 
 
 El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, se invalidará cualquier configuración de uso compartido que configure en Microsoft 365.
 
-Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
+Compruebe la configuración de colaboración externa para asegurarse de que no se bloquee el uso compartido con invitados.
 
-![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Captura de pantalla de la página de configuración de colaboración externa de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Para establecer la configuración de relación organizativa
+Para establecer la configuración de colaboración externa:
+
 
 1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
-3. En el panel de **información general** , haga clic en **relaciones organizativas**.
-4. En el panel relaciones de la **organización** , haga clic en **configuración**.
-5. Asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y que **los miembros puedan invitar** están establecidos en **sí**.
-6. Si ha realizado cambios, haga clic en **Guardar**.
+3. Seleccione **identidades externas** y haga clic en **configuración de colaboración externa**.
+4. En el panel **configuración de invitación invite** , asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y **los miembros puedan invitar** están establecidos en **sí**.
+5. Si ha realizado cambios, haga clic en **Guardar**.
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
@@ -146,4 +146,3 @@ Para invitar a invitados a un grupo
 [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)
 
 Para obtener más información, consulte [Crear una extranet de B2B con invitados administrados](b2b-extranet.md).
-

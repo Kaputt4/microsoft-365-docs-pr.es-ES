@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949885"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171415"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de entorno de implementación de Windows y Office
 
@@ -54,35 +54,47 @@ ADEMÁS, el laboratorio está diseñado para conectarse a versiones de prueba pa
 Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de la infraestructura 
-Análisis de escritorio   
-La puerta de enlace de administración en la nube & las cargas de trabajo de conexión, coadministración y conmutación de inquilino de punto de distribución de nube    
-Acceso remoto
+- Análisis de escritorio 
+- Puerta de enlace de administración en la nube & punto de distribución de nube 
+- Cargas de trabajo de conexión de inquilinos, coadministración y conmutación  
+- Acceso remoto (VPN) 
 
 ### <a name="prepare-configuration"></a>Preparar la configuración   
-Optimizar el servicio de entrega de Windows 10 Update para Windows 10 con la Directiva de grupo que atiende a Windows 10 mediante el servicio 365 de Microsoft Intune que atiende a Windows 10 con Configuration Manager para atender a las aplicaciones para empresas de Microsoft 365 con Intune    
-Seguridad y cumplimiento 
+- Optimizar la entrega de actualizaciones de Windows 10   
+- Mantenimiento de Windows 10 mediante la Directiva de grupo
+- Mantenimiento de Windows 10 con Microsoft Intune   
+- Servicio de Windows 10 con Configuration Manager   
+- Servicio de aplicaciones de Microsoft 365 para empresas con Configuration Manager   
+- Servicio de aplicaciones de Microsoft 365 para empresas con Intune  
+- Seguridad y cumplimiento   
 
 ### <a name="prepare-applications"></a>Preparar aplicaciones    
-Kit de herramientas de preparación para Office    
-Empaquetado y conversión MSIX de aplicaciones Win32 
+- Kit de herramientas de preparación para Office  
+- Empaquetado y conversión MSIX de aplicaciones Win32   
 
 ### <a name="deploy-windows-10"></a>Implementar Windows 10   
-Secuencias de tareas de implementación de SO en secuencias de tareas de implementación de sistema operativo de Configuration Manager en MDT Windows AutoPilot implementar y administrar el nuevo Microsoft Edge    
+- Secuencias de tareas de implementación de sistema operativo en Configuration Manager
+- Secuencias de tareas de implementación de sistema operativo en MDT   
+- Windows Autopilot
+- Implementar y administrar el nuevo Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Implementación de Aplicaciones de Microsoft 365 para empresas    
-Implementación de administración en la nube    
-Implementación de administración local  
-Microsoft 365 aplicaciones para la implementación empresarial en dispositivos que no están Unidos a AD   
-Implementación de administración empresarial mediante Configuration Manager Enterprise administrada Deployment Using Microsoft Intune    
-Implementación y administración de LOB con Microsoft Intune implementación de Microsoft Teams
+- Implementación de administración en la nube  
+- Implementación de administración local    
+- Microsoft 365 aplicaciones para la implementación empresarial en dispositivos que no están Unidos a AD 
+- Implementación de administración empresarial mediante el administrador de configuración
+- Implementación de administración empresarial con Microsoft Intune  
+- Implementación y administración de LOB con Microsoft Intune
+- Implementar Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Implementar el escritorio virtual de Windows  
+- Preparación, implementación, optimización
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Descargar el kit de laboratorio de implementación de Office y Windows
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible. El laboratorio expira el 4 de diciembre de 2020. Se publicará una nueva versión antes de la expiración.*
+*Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible. El laboratorio expira el 5 de diciembre de 2020. Se publicará una nueva versión antes de la expiración.*
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
