@@ -2,7 +2,7 @@
 title: Configurar reuniones en línea
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: twerner
 author: twerner
 manager: scotv
 ms.audience: Admin
@@ -25,36 +25,36 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar reuniones en línea con Microsoft Teams.
-ms.openlocfilehash: ce13dbcc32457263295e0e617b92a2d7e5fc3909
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 3e1eaba887249db59ef28e36ffefb5b89f80c469
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132005"
 ---
-# <a name="set-up-meetings"></a><span data-ttu-id="8a738-103">Configurar reuniones</span><span class="sxs-lookup"><span data-stu-id="8a738-103">Set up meetings</span></span>
+# <a name="set-up-meetings"></a><span data-ttu-id="8679f-103">Configurar reuniones</span><span class="sxs-lookup"><span data-stu-id="8679f-103">Set up meetings</span></span>
 
-<span data-ttu-id="8a738-104">Las reuniones en Microsoft Teams incluyen audio, vídeo y uso compartido.</span><span class="sxs-lookup"><span data-stu-id="8a738-104">Meetings in Microsoft Teams include audio, video, and sharing.</span></span> <span data-ttu-id="8a738-105">Y, dado que están en línea, siempre tendrá un área de reuniones y nunca necesitará una sala o un proyector para la campaña.</span><span class="sxs-lookup"><span data-stu-id="8a738-105">And because they're online, you'll always have a meeting space and never need a room or projector for your campaign.</span></span><span data-ttu-id="8a738-106">Las reuniones de Microsoft Teams son una buena forma de reunirse con el personal y los voluntarios tanto dentro como fuera de la organización.</span><span class="sxs-lookup"><span data-stu-id="8a738-106"> Microsoft Teams meetings are a great way to come together with your staff and volunteers both inside and outside of your organization.</span></span> <span data-ttu-id="8a738-107">No es necesario ser miembro de la organización ni siquiera tener una cuenta para unirse a una reunión.</span><span class="sxs-lookup"><span data-stu-id="8a738-107">You don’t need to be a member of your organization or even have an account to join a meeting.</span></span> <span data-ttu-id="8a738-108">Para la campaña política, puede programar y ejecutar reuniones en línea con Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8a738-108">For your political campaign, you can schedule and run online meetings using Microsoft Teams.</span></span> <span data-ttu-id="8a738-109">Puede incluir personal, voluntarios e invitados externos a la organización.</span><span class="sxs-lookup"><span data-stu-id="8a738-109">You can include staff, volunteers, and guests outside your organization.</span></span> <span data-ttu-id="8a738-110">Durante una reunión, puede compartir la pantalla, compartir archivos, asignar tareas y mucho más.</span><span class="sxs-lookup"><span data-stu-id="8a738-110">During a meeting, you can share your screen, share files, assign tasks, and more.</span></span>
+<span data-ttu-id="8679f-104">Las reuniones en Microsoft Teams incluyen audio, vídeo y uso compartido.</span><span class="sxs-lookup"><span data-stu-id="8679f-104">Meetings in Microsoft Teams include audio, video, and sharing.</span></span> <span data-ttu-id="8679f-105">Y, dado que están en línea, siempre tendrá un área de reuniones y nunca necesitará una sala o un proyector para la campaña.</span><span class="sxs-lookup"><span data-stu-id="8679f-105">And because they're online, you'll always have a meeting space and never need a room or projector for your campaign.</span></span><span data-ttu-id="8679f-106">Las reuniones de Microsoft Teams son una buena forma de reunirse con el personal y los voluntarios tanto dentro como fuera de la organización.</span><span class="sxs-lookup"><span data-stu-id="8679f-106"> Microsoft Teams meetings are a great way to come together with your staff and volunteers both inside and outside of your organization.</span></span> <span data-ttu-id="8679f-107">No es necesario ser miembro de la organización ni siquiera tener una cuenta para unirse a una reunión.</span><span class="sxs-lookup"><span data-stu-id="8679f-107">You don’t need to be a member of your organization or even have an account to join a meeting.</span></span> <span data-ttu-id="8679f-108">Para la campaña política, puede programar y ejecutar reuniones en línea con Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8679f-108">For your political campaign, you can schedule and run online meetings using Microsoft Teams.</span></span> <span data-ttu-id="8679f-109">Puede incluir personal, voluntarios e invitados externos a la organización.</span><span class="sxs-lookup"><span data-stu-id="8679f-109">You can include staff, volunteers, and guests outside your organization.</span></span> <span data-ttu-id="8679f-110">Durante una reunión, puede compartir la pantalla, compartir archivos, asignar tareas y mucho más.</span><span class="sxs-lookup"><span data-stu-id="8679f-110">During a meeting, you can share your screen, share files, assign tasks, and more.</span></span>
 
-<span data-ttu-id="8a738-111">[![Ilustración de dos usuarios en una reunión](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span><span class="sxs-lookup"><span data-stu-id="8a738-111">[![An illustration of two users in a meeting](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span></span>
+<span data-ttu-id="8679f-111">[![Ilustración de dos usuarios en una reunión](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span><span class="sxs-lookup"><span data-stu-id="8679f-111">[![An illustration of two users in a meeting](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)</span></span>
 
-<span data-ttu-id="8a738-112">Descargue un infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) para obtener una introducción rápida sobre cómo unirse a una reunión en línea o hospedarla con Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8a738-112">Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.</span></span>
+<span data-ttu-id="8679f-112">Descargue un infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) para obtener una introducción rápida sobre cómo unirse a una reunión en línea o hospedarla con Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8679f-112">Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.</span></span>
 
-## <a name="best-practices"></a><span data-ttu-id="8a738-113">Procedimientos recomendados</span><span class="sxs-lookup"><span data-stu-id="8a738-113">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="8679f-113">Procedimientos recomendados</span><span class="sxs-lookup"><span data-stu-id="8679f-113">Best practices</span></span>
 
-<span data-ttu-id="8a738-114">Siga estos procedimientos recomendados para sus reuniones en línea:</span><span class="sxs-lookup"><span data-stu-id="8a738-114">Follow these best practices for your online meetings:</span></span>
-- <span data-ttu-id="8a738-115">Programe sus reuniones en línea directamente en Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8a738-115">Schedule your online meetings right in Microsoft Teams.</span></span> <span data-ttu-id="8a738-116">Puede elegir un equipo y un canal, y Microsoft Teams invitará a los participantes de ese equipo o canal automáticamente.</span><span class="sxs-lookup"><span data-stu-id="8a738-116">You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.</span></span>
-- <span data-ttu-id="8a738-117">¿Necesita una reunión improvisada?</span><span class="sxs-lookup"><span data-stu-id="8a738-117">Need an impromptu meeting?</span></span> <span data-ttu-id="8a738-118">Si estás en una conversación de uno en uno, elige **reunirse ahora** para iniciar una llamada de audio o vídeo con la persona con la que estás chateando.</span><span class="sxs-lookup"><span data-stu-id="8a738-118">If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with.</span></span> 
+<span data-ttu-id="8679f-114">Siga estos procedimientos recomendados para sus reuniones en línea:</span><span class="sxs-lookup"><span data-stu-id="8679f-114">Follow these best practices for your online meetings:</span></span>
+- <span data-ttu-id="8679f-115">Programe sus reuniones en línea directamente en Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8679f-115">Schedule your online meetings right in Microsoft Teams.</span></span> <span data-ttu-id="8679f-116">Puede elegir un equipo y un canal, y Microsoft Teams invitará a los participantes de ese equipo o canal automáticamente.</span><span class="sxs-lookup"><span data-stu-id="8679f-116">You can choose a team and channel, and Teams will invite the participants in that team or channel automatically.</span></span>
+- <span data-ttu-id="8679f-117">¿Necesita una reunión improvisada?</span><span class="sxs-lookup"><span data-stu-id="8679f-117">Need an impromptu meeting?</span></span> <span data-ttu-id="8679f-118">Si estás en una conversación de uno en uno, elige **reunirse ahora** para iniciar una llamada de audio o vídeo con la persona con la que estás chateando.</span><span class="sxs-lookup"><span data-stu-id="8679f-118">If you're in a one-on-one chat, choose **Meet now** to start a video or audio call with the person you're chatting with.</span></span> 
 
 
-## <a name="schedule-a-meeting"></a><span data-ttu-id="8a738-119">Programar una reunión</span><span class="sxs-lookup"><span data-stu-id="8a738-119">Schedule a meeting</span></span>
+## <a name="schedule-a-meeting"></a><span data-ttu-id="8679f-119">Programar una reunión</span><span class="sxs-lookup"><span data-stu-id="8679f-119">Schedule a meeting</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP]
 
-## <a name="join-a-meeting"></a><span data-ttu-id="8a738-120">Unirse a la reunión</span><span class="sxs-lookup"><span data-stu-id="8a738-120">Join a meeting</span></span>
+## <a name="join-a-meeting"></a><span data-ttu-id="8679f-120">Unirse a la reunión</span><span class="sxs-lookup"><span data-stu-id="8679f-120">Join a meeting</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-<span data-ttu-id="8a738-121">Obtenga más información sobre la reunión en Microsoft Teams:</span><span class="sxs-lookup"><span data-stu-id="8a738-121">Learn more about meeting in Microsoft Teams:</span></span>
+<span data-ttu-id="8679f-121">Obtenga más información sobre la reunión en Microsoft Teams:</span><span class="sxs-lookup"><span data-stu-id="8679f-121">Learn more about meeting in Microsoft Teams:</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
