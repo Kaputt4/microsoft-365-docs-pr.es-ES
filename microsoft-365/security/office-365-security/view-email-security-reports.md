@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b714d9dc4e3ca143d2cb2d7164f8c3c737d1928
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104527"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -114,7 +114,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Dividir por: método de cifrado** o **desglosar por: plantilla de cifrado**: se muestra la siguiente información:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del remitente**
   - **Plantilla de cifrado**
   - **Método de cifrado**
@@ -123,7 +123,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: los 5 dominios de destinatarios principales**:
 
-  - **Fecha**
+  - **Date**
   - **Dominio del destinatario**
   - **Número de mensajes**
   
@@ -159,7 +159,7 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
@@ -217,7 +217,7 @@ Si hace clic en **filtros** en una vista de informe, puede modificar los resulta
 
 Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
@@ -256,7 +256,7 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Fecha**
+- **Date**
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
@@ -269,7 +269,7 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 El informe de **Estado de protección contra amenazas** está disponible en EOP y en Office 365 ATP; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-El informe proporciona un recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y características de ATP, como [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)de ATP y [antiphishing de ATP](set-up-anti-phishing-policies.md). Puede usar esta información para identificar tendencias o determinar si es necesario ajustar las directivas de la organización.
+El informe proporciona el número de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y características de ATP como [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)de ATP y [protección contra el phishing](set-up-anti-phishing-policies.md)de ATP. Puede usar esta información para identificar tendencias o determinar si es necesario ajustar las directivas de la organización. Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
 
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
@@ -331,7 +331,7 @@ Están disponibles las siguientes vistas:
 
 - **Desglose por: tipo de directiva** y **ver datos por: \> phishing de correo electrónico** o **ver datos por: \> malware de correo electrónico**: se muestra la siguiente información:
 
-  - **Antimalware**
+  - **Anti-malware**
   - **Datos adjuntos seguros**<sup>1</sup>
   - **Anti-phish**
   - **Contra correo electrónico no deseado**
@@ -370,7 +370,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: contenido \> Malware**:
 
-  - **Fecha**
+  - **Date**
   - **Location**
   - **Dirigida por**
   - **Nombre del malware**
@@ -379,7 +379,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - Todos los demás gráficos:
 
-  - **Fecha**
+  - **Date**
   - **Asunto**
   - **Remitente**
   - **Destinatarios**

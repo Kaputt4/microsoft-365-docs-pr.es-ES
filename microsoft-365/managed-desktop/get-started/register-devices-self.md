@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104405"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
-Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos mediante el portal de administración de escritorio administrado de Microsoft.
+Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos con Microsoft Managed Desktop en el portal de Microsoft Endpoint Manager.
 
 > [!NOTE]
 > ¿Está trabajando con un partner para obtener dispositivos? Si es así, no tiene que preocuparse por obtener los hash de hardware; se ocuparán de ello. Asegúrese de que su compañero establece una relación con usted en el [centro de Partners](https://partner.microsoft.com/dashboard). Su socio puede obtener más información en [ayuda del centro de asociados](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Una vez que se ha establecido esta relación, el socio simplemente registrará los dispositivos en su nombre; no se requiere ninguna otra acción por parte del usuario. Si desea ver los detalles o su compañero tiene preguntas, consulte [pasos para que los partners registren dispositivos](register-devices-partner.md). Una vez que se hayan registrado los dispositivos, puede continuar con la [comprobación de la imagen](#check-the-image) y [la entrega de los dispositivos](#deliver-the-device) a los usuarios.
@@ -73,9 +73,9 @@ Necesitará tener los datos de los archivos CSV combinados en un único archivo 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el portal de administración
 
-En el [portal de administración](https://aka.ms/mmdportal)de escritorio administrado de Microsoft, seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
+En el [Administrador de extremos de Microsoft](https://endpoint.microsoft.com/), seleccione **dispositivos** en el panel de navegación izquierdo. Busque la sección escritorio administrado de Microsoft del menú y seleccione **dispositivos**. En el área de trabajo de dispositivos de escritorio administrados de Microsoft, seleccione **+ registrar dispositivos** que abren un paso para registrar nuevos dispositivos.
 
-[![Paso a paso después de seleccionar los dispositivos de registro, enumerar los dispositivos con columnas para los usuarios asignados, el número de serie, el estado, la fecha de última visualización y la antigüedad.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -87,7 +87,7 @@ Siga estos pasos:
 3. Seleccione **registrar dispositivos**. El sistema agregará los dispositivos a la lista de dispositivos en la **hoja dispositivos**, marcada como **AutopilotRegistrationRequested**. El registro suele tardar menos de 10 minutos y, cuando se ejecuta correctamente, el dispositivo se muestra como **listo para el usuario** significa que está listo y esperando a que un usuario empiece a usar.
 
 
-Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
+Puede supervisar el progreso del registro de dispositivos en la Página principal. Los posibles Estados que se notifican incluyen:
 
 | Estado | Descripción |
 |---------------|-------------|

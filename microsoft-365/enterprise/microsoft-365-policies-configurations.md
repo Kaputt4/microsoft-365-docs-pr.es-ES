@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131583"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
 El perímetro de seguridad moderno de su organización ahora se extiende más allá de la red para incluir a los usuarios que acceden a las aplicaciones basadas en la nube desde cualquier ubicación con una variedad de dispositivos. La infraestructura de seguridad debe determinar si se debe conceder una solicitud de acceso determinada y en qué condiciones. 
 
-Esta determinación debe basarse en el inicio de sesión de la cuenta de usuario, el dispositivo que se está usando, las aplicaciones a las que el usuario intenta obtener acceso, la ubicación desde la que se realiza la solicitud de acceso y una evaluación del riesgo de la solicitud. Esta funcionalidad ayuda a garantizar que solo los usuarios y dispositivos aprobados puedan obtener acceso a los recursos críticos.
+Esta determinación debe basarse en la cuenta de usuario del inicio de sesión, el dispositivo que se usa, la aplicación que el usuario está usando para el acceso, la ubicación desde la que se realiza la solicitud de acceso y una evaluación del riesgo de la solicitud. Esta funcionalidad ayuda a garantizar que solo los usuarios y dispositivos aprobados puedan obtener acceso a los recursos críticos.
 
 En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos e identidades y un conjunto de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365 para aplicaciones y servicios en la nube de empresa, otros servicios SaaS y aplicaciones locales publicadas con el proxy de aplicación de Azure AD.
 

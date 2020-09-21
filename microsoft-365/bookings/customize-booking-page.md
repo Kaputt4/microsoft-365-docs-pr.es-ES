@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambiar el tema de color de la página de reserva en la aplicación Microsoft bookings.
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962518"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 
 La página de reserva es donde se configura la apariencia de la página de reserva a la que se enfrenta el cliente externo. Una vez que haya personalizado y publicado la página de reserva, los clientes la usarán para reservar citas con usted.
-
-> [!NOTE]
-> Las reservas están activadas de forma predeterminada para los clientes con las suscripciones Microsoft 365 Business Standard, Microsoft 365 a3 o Microsoft 365 A5. Las reservas también están disponibles para los clientes que tienen Office 365 Enterprise E3 y Office 365 Enterprise E5, pero están desactivados de forma predeterminada. Para empezar, vea [obtener acceso a Microsoft bookings](get-access.md). Para activar o desactivar las reservas, consulte [activar o desactivar las reservas para su organización](turn-bookings-on-or-off.md).
 
 Para personalizar la página de reserva, inicie sesión en [Office.com](https://office.com)y, a continuación, vaya a la página de reservas de **reservas** \> **Booking page**. Puede personalizar la página de reserva con las siguientes opciones. Una vez que haya configurado la página de reserva, puede publicarla para que los clientes puedan empezar a reservar citas con usted.
 

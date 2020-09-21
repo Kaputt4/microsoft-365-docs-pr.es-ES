@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289278"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104599"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 
@@ -48,8 +48,8 @@ Es totalmente responsable de garantizar que los usuarios y grupos tengan y mante
  
 Asegúrese de que no se pueden evitar las unidades asignadas y de que ha revisado atentamente los requisitos antes de enviar cualquier solicitud de servicio. A continuación, siga estos pasos:
 
-1. Navegue al [portal de escritorio administrado por Microsoft](https://aka.ms/mmdportal).  
-2. Envíe una solicitud de soporte titulada "implementación de unidades asignadas" a través de la sección **support solicitudes** de soporte > y proporcione todos los detalles necesarios del recurso compartido de archivos.  
+1. Navegue a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y seleccione "solución de problemas + Soporte técnico" y, a continuación, busque "solicitudes de servicio" en la sección Deskop administrados de Microsoft.  
+2. Envíe una solicitud de soporte titulada "implementación de unidades asignadas" y proporcione todos los detalles necesarios del recurso compartido de archivos.  
 3. Las operaciones de TI de escritorio administradas de Microsoft le avisarán, mediante actualizaciones de solicitudes de soporte, cuando se haya completado la solicitud. Inicialmente, esta configuración solo se implementará en los dispositivos del grupo de implementación de prueba.  
-4. Debe probar y confirmar si la configuración implementada por las operaciones de TI de escritorio administradas de Microsoft funciona según lo previsto. Responda mediante la pestaña discusión de la solicitud de soporte técnico para notificar a las operaciones de TI de escritorio administradas de Microsoft una vez que haya completado las pruebas.  
+4. Debe probar y confirmar si la configuración implementada por las operaciones de TI de escritorio administradas de Microsoft funciona según lo previsto. Responda mediante la pestaña discusión en los detalles de la misma solicitud de soporte técnico para notificar a las operaciones de TI de escritorio administradas de Microsoft una vez que haya completado las pruebas.  
 5. El equipo de operaciones de TI de escritorio administrado de Microsoft implementará la configuración en los demás grupos de implementación. 

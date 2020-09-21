@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: Siga estas instrucciones para crear su página acerca de nosotros, que incluye el nombre de la empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft bookings.
-ms.openlocfilehash: 65de115f2217948b1e57a1642ca3c6a105675898
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420135"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962506"
 ---
 # <a name="enter-your-business-information"></a>Escribir la información empresarial
 
@@ -25,7 +25,7 @@ La información que proporcione aquí se mostrará en la página que los cliente
    ![Imagen de ejemplo de página de información empresarial en Microsoft bookings](../media/bookings-business-info.png)
 
 > [!NOTE]
-> Las reservas están activadas de forma predeterminada para los clientes con las suscripciones Microsoft 365 Business Standard, Microsoft 365 a3 o Microsoft 365 A5. Las reservas también están disponibles para los clientes que tienen Office 365 Enterprise E3 y Office 365 Enterprise E5, pero están desactivados de forma predeterminada. Para empezar, vea [obtener acceso a Microsoft bookings](get-access.md). Para activar o desactivar las reservas, consulte [activar o desactivar las reservas para su organización](turn-bookings-on-or-off.md).
+> Para empezar, vea [obtener acceso a Microsoft bookings](get-access.md). Para activar o desactivar las reservas, consulte [activar o desactivar las reservas para su organización](turn-bookings-on-or-off.md).
 
 ## <a name="provide-business-name-and-contact-information"></a>Proporcionar el nombre de la empresa y la información de contacto
 

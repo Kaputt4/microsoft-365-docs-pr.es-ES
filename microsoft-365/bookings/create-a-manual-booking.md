@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Siga estas instrucciones para crear una cita y asignar a un empleado a través de la aplicación Microsoft bookings.
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962566"
 ---
 # <a name="create-a-manual-booking"></a>Crear una reserva manual
 
 Las reservas se pueden programar y proveer de personal de dos maneras diferentes. La primera forma es que el cliente use una página de reserva independiente o una página de reserva integrada que agregue a su sitio Web. La otra forma es que usted o uno de sus empleados especifique las reservas manualmente, como cuando un cliente llama a una cita. En este artículo se describe el escenario manual.
-
-> [!NOTE]
-> Las reservas están activadas de forma predeterminada para los clientes con las suscripciones Microsoft 365 Business Standard, Microsoft 365 a3 o Microsoft 365 A5. Las reservas también están disponibles para los clientes que tienen Office 365 Enterprise E3 y Office 365 Enterprise E5, pero están desactivados de forma predeterminada. Para empezar, vea [obtener acceso a Microsoft bookings](get-access.md). Para activar o desactivar las reservas, consulte [activar o desactivar las reservas para su organización](turn-bookings-on-or-off.md).
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **reservas**.
 

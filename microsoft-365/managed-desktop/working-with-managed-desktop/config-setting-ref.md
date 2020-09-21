@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2c7c7d75fad58cab0cd6d19a16a97667ea3641a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104493"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de opciones configurables-escritorio administrado por Microsoft
 
@@ -33,9 +33,9 @@ Estos requisitos se deben cumplir para una imagen de fondo de escritorio:
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personalizar e implementar la imagen de fondo de escritorio
 
 **Para agregar una imagen de fondo de escritorio personalizada**
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
-3. En área de trabajo **configurable** , seleccione **imagen de fondo de escritorio**. 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
+3. En área de trabajo **configuración** , seleccione **imagen de fondo de escritorio**. 
 4. Escriba la ubicación de la imagen que desea usar. 
 5. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba. 
 
@@ -49,9 +49,9 @@ Debe proporcionar el nombre de dominio completo (FQDN) para los sitios de intran
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personalización e implementación de páginas de inicio del explorador
 
 **Para agregar una página de inicio del explorador**
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
-3. En área de trabajo **configurable** , seleccione **páginas de inicio del explorador**. 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
+3. En área de trabajo de **configuración** , seleccione **páginas de inicio del explorador**. 
 4. Seleccione **Agregar página de inicio**.
 5. En **Agregar página de inicio del explorador**, escriba la dirección URL del sitio que desea usar y, a continuación, seleccione **Agregar página de inicio**. 
 6. Repita los pasos 1-5 para páginas de inicio adicionales del explorador. 
@@ -80,11 +80,11 @@ Se ofrecen estos procedimientos recomendados para ayudar a los clientes a tomar 
 
 **Para agregar una ubicación de la lista en el modo de sitio de empresa**
 
-1.  Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2.  En **configuración**, seleccione **configurable**.
-3.  En área de trabajo **configurable** , seleccione ubicación de la **lista de sitios del modo de empresa**. 
-4.  Escriba la ubicación https de la lista de sitios. 
-5.  Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
+3. En área de trabajo **configuración** , seleccione ubicación de la **lista de sitios del modo de empresa**. 
+4. Escriba la ubicación https de la lista de sitios. 
+5. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 ## <a name="trusted-sites"></a>Sitios de confianza
 
@@ -102,18 +102,18 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de intranet o d
 
 **Para agregar un sitio de confianza**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
-3. En área de trabajo **configurable** , seleccione **sitios de confianza**y, a continuación, seleccione **Agregar sitio de confianza**. 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
+3. En área de trabajo de **configuración** , seleccione **sitios de confianza**y, a continuación, seleccione **Agregar sitio de confianza**. 
 4. En **Agregar sitio de confianza**, escriba la dirección URL, elija una zona de seguridad y, a continuación, seleccione **Agregar sitio de confianza**. 
 5. Repita los pasos 1-4 para cada sitio de confianza que desee agregar. 
 6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
 
 **Para quitar un sitio de confianza**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
-3. En área de trabajo **configurable** , seleccione **sitios de confianza**. 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
+3. En área de trabajo de **configuración** , seleccione **sitios de confianza**. 
 4. Seleccione el sitio que desea eliminar y, a continuación, seleccione **eliminar**. 
 5. Repita los pasos 1-4 para cada sitio de confianza que desee eliminar. 
 6. Seleccione **Stage Deployment** para guardar los cambios e implementarlos en el grupo de prueba.
@@ -136,9 +136,9 @@ Estos requisitos se deben cumplir con las excepciones de servidor proxy y de sit
 
 **Para agregar una excepción de sitio de proxy individual**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
-3. En área de trabajo **configurable** , seleccione **proxy**. 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
+3. En área de trabajo de **configuración** , seleccione **proxy**. 
 4. Escriba la **Dirección** y el **número de Puerto** del servidor proxy y, a continuación, seleccione **Agregar excepción de proxy**. 
 5. Escriba la dirección URL de un sitio http válido y, a continuación, seleccione **Agregar excepción de proxy**. 
 6. Repita los pasos 1-5 para cada sitio de confianza que desee agregar. 

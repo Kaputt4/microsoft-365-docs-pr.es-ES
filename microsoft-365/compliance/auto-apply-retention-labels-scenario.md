@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: d02c8102dc53f455c5e0620acf1f8a9a7529bf08
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 321043a8a33d274ed9e7caecfb167b9587ceae1d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336695"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817257"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -99,17 +99,17 @@ Este es el [plan de archivo](file-plan-manager.md) para la etiqueta de retenció
 
 - **Nombre:** Especificaciones del producto.
 
-- **Descripción para administradores:** conservar 5 años después de que se detenga la producción, la eliminación automática, la retención basada en eventos, el tipo de evento es *Cese de producción*.
+- **Descripción para los usuarios:** Conservar durante cinco años después de que se detenga la producción.
 
-- **Descripción para los usuarios:** Conservar durante 5 años después de que se detenga la producción.
+- **Descripción para administradores:** conservar cinco años después de que se detenga la producción, la eliminación automática, la retención basada en eventos, el tipo de evento es *Cese de producción*.
 
 - **Acción de retención:** conservar y eliminar.
 
 - **Duración de la retención:** 5 años (1 825 días).
 
-- **Etiqueta de registro**: configurar la etiqueta de retención para clasificar el contenido como un [registro](records-management.md#records). (Los usuarios no pueden modificar ni eliminar los documentos clasificados como un *registro*).
+- **Etiqueta de registro**: configure la etiqueta de retención para marcar los elementos como un [registro](records-management.md#records), lo que significa que los usuarios no podrán modificarlos ni eliminarlos.
 
-- **Descriptores del plan de archivos:** (para simplificar el escenario, no se proporcionan descriptores de archivo)
+- **Descriptores del plan de archivos:** para simplificar el escenario, no se proporcionan descriptores de archivo opcionales.
 
 La siguiente captura de pantalla muestra la configuración al crear la etiqueta de retención Especificaciones del producto en el Centro de cumplimiento de Microsoft 365. Cuando cree la etiqueta de retención, puede crear el tipo de evento *Cese de producción*. Vea el procedimiento en la sección siguiente.
 
@@ -120,34 +120,30 @@ La siguiente captura de pantalla muestra la configuración al crear la etiqueta 
 
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Creación de un tipo de evento al crear una etiqueta de retención
 
-1. En la lista desplegable **Conservar o eliminar el contenido en función de**, seleccione **un evento**.
-
-2. Seleccione **Elegir tipo de evento**.
+1. Entre en la página **Definir la configuración de retención** del asistente para crear etiquetas de retención, después en **Iniciar el período de retención adecuado** y seleccione **Crear nuevo tipo de evento**:
     
-    ![Crear un nuevo tipo de evento para el cuadro de diálogo etiqueta de Especificaciones del producto](../media/SPRetention6.png)
+    ![Crear un nuevo tipo de evento para el cuadro de diálogo etiqueta de especificaciones del producto](../media/SPRetention6.png)
 
-3. Seleccione **Elegir tipo de evento**y, después, seleccione **Crear nuevos tipos de evento** en la página **Elegir tipo de evento**.
+3. En la página **Asignar un nombre al tipo de evento**, escriba **Cese de producción** y una descripción opcional. Luego, seleccione **Siguiente**, **Enviar** y **Hecho**.
 
-4. Cree un tipo de evento denominado ***Cese de producción***, añada una descripción y seleccione **Finalizar**.
+4. Regrese a la página **Definir la configuración de retención**, para **Iniciar el período de retención adecuado**, utilice el cuadro desplegable para seleccionar el tipo de evento **Cese de producción** que creó.
+    
+    Este es el aspecto que tiene la configuración de la etiqueta de retención Especificaciones del producto: 
+    
+   ![Configuración para la nueva etiqueta Especificaciones del producto](../media/SPRetention7.png)
 
-5. Al volver a la página **Elegir un tipo de evento**, seleccione el tipo de evento **Cese de producción** que creó y seleccione **Agregar**.
+6. Seleccione **Crear etiqueta** y, en la siguiente página donde puede ver las opciones para publicarla, Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicarla automáticamente o guardarla: seleccione **Solo guardar la etiqueta por ahora** y, a continuación, **Hecho**. 
+    
+    > [!TIP]
+    > Para obtener instrucciones más detalladas, consulte [Crear una etiqueta cuyo período de retención se base en un evento](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
-   Este es el aspecto que tiene la configuración de la etiqueta de retención de Especificaciones del producto. 
+Ahora, echemos un vistazo cómo aplicar automáticamente la etiqueta de retención al contenido de las especificaciones del producto.
 
-   ![Configuración para la nueva etiqueta Especificaciones de producto](../media/SPRetention7.png)
-
-6. Seleccione **Crear esta etiqueta**. 
-
-   > [!TIP]
-   > Para obtener instrucciones más detalladas, consulte [Crear una etiqueta cuyo período de retención se base en un evento](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
-
-Ahora, echemos un vistazo a la aplicación automática de la etiqueta de retención al contenido de las especificaciones del producto.
-
-## <a name="auto-apply-retention-labels-to-classify-content"></a>Aplicar automáticamente etiquetas de retención para clasificar contenido
+## <a name="auto-apply-retention-labels-to-documents"></a>Aplicar automáticamente etiquetas de retención a documentos
 
 Usaremos el lenguaje de consultas de palabras clave (KQL) para [aplicar automáticamente](apply-retention-labels-automatically.md) las etiquetas de retención que creamos. KQL es el lenguaje que se usa para crear consultas de búsqueda. En KQL, puede realizar búsquedas mediante palabras clave o propiedades administradas. Para obtener más información, vea [Referencia de sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Básicamente, queremos indicar a Microsoft 365 que "aplique la etiqueta de retención *Especificaciones del producto* a todos los documentos que contengan el **Estado** ***Final *** y un **Tipo de documento** de ***Especificaciones del producto***". Recuerde que **Estado** y **Tipo de documento** son las columnas de sitio que definimos para el tipo de contenido de Documentación del producto en la sección [Arquitectura de información](#information-architecture). Para ello, debemos configurar el esquema de búsqueda.
+Básicamente, queremos indicar a Microsoft 365 que "aplique la etiqueta de retención **Especificaciones del producto** a todos los documentos que contengan el **Estado** **Final ** y un **Tipo de documento** de **Especificaciones del producto**". Recuerde que **Estado** y **Tipo de documento** son las columnas de sitio que definimos para el tipo de contenido de Documentación del producto en la sección [Arquitectura de información](#information-architecture). Para ello, debemos configurar el esquema de búsqueda.
 
 Cuando SharePoint indexa contenido, genera automáticamente propiedades rastreadas para cada columna de sitio. Para este escenario, nos interesan las propiedades **Tipo de documento** y **Estado**. Necesitamos documentos en la biblioteca con el tipo de contenido correcto y las columnas de sitio rellenadas, para que la búsqueda pueda crear las propiedades rastreadas.
 
@@ -217,47 +213,47 @@ Ahora, en el cuadro de búsqueda, escriba **RefinableString00:"Especificaciones 
 
 ### <a name="create-auto-apply-label-policies"></a>Crear directivas de etiqueta de aplicación automática
 
-Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una directiva de etiqueta que usa una consulta de KQL para aplicar automáticamente la etiqueta de retención Especificaciones del producto en los documentos correspondientes.
+Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una directiva de etiqueta aplicable automáticamente que usa una consulta de KQL para aplicar de manera automática la etiqueta de retención Especificaciones del producto en los documentos correspondientes.
 
 1. En el [Centro de cumplimiento](https://compliance.microsoft.com/homepage), vaya a **Administración de registros** > **Directivas de etiqueta** > **Aplicar automáticamente una etiqueta**.
 
    [ ![Seleccione "Aplicar automáticamente una etiqueta" en la página Etiquetas](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. En la página del asistente **Elegir una etiqueta para aplicar automáticamente**, seleccione **Elegir una etiqueta para aplicar automáticamente**.
+2. En el asistente para Crear directiva de etiquetado automático, en la página **Asignar un nombre a la directiva de etiquetado automático**, introduzca un nombre como **Aplicación automática de la etiqueta Especificación de producto** y una descripción opcional. Después, seleccione **Siguiente**.
 
-3. En la lista de etiquetas, seleccione **Especificación de producto**. Después, seleccione **Agregar** y **Siguiente**.
-
-4. Seleccione **Aplicar la etiqueta al contenido que tenga palabras o frases específicas** y, luego, **Siguiente**.
-
+3. En la página **Elegir el tipo de contenido al que quiere aplicar la etiqueta**, seleccione **Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas** y, a continuación, seleccione **Siguiente**.
+    
    [ ![Seleccione Aplicar la etiqueta al contenido que tenga palabras, frases o propiedades específicas](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
+    
+   Esta opción nos permite proporcionar la misma consulta de búsqueda de KQL que probamos en la sección anterior. La consulta devuelve todos los documentos de Especificaciones del producto que tienen el estado *Final*. Cuando usamos esta misma consulta en la directiva de etiqueta aplicada automáticamente, la etiqueta de retención de Especificaciones del producto se aplicará de manera automática a todos los documentos que coincidan con esta consulta.
 
-   En el siguiente paso, proporcionará la misma consulta de búsqueda de KQL que probamos en la sección anterior. Esta consulta devuelve todos los documentos de Especificaciones del producto que tienen el estado *Final*. Cuando usamos esta misma consulta en la directiva de etiqueta, la etiqueta de retención de Especificaciones del producto se aplicará automáticamente a todos los documentos que coincidan con esta consulta.
-
-5. En el cuadro **Editor de consultas de palabras clave**, escriba ***RefinableString00:"Especificaciones del producto" AND RefinableString01:Final*** y seleccione **Siguiente**.
+4. En la página **Aplicar la etiqueta al contenido que coincida con esta consulta**, escriba **RefinableString00:"Especificaciones del producto" AND RefinableString01:Final** y seleccione **Siguiente**.
 
    ![Especificar la consulta en el cuadro editor de Consulta de palabras clave](../media/SPRetention19.png)
 
-6. Escriba un nombre (por ejemplo, ***Aplicar automáticamente etiqueta de Especificaciones del producto***) y una descripción opcional para la directiva de etiqueta. Después, seleccione **Siguiente**.
-
-7. En la página del asistente **Elegir ubicaciones**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario, solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan en las bibliotecas de documentos de SharePoint. Seleccione **Permitir elegir ubicaciones específicas** y, después, desactive el estado de **Correo electrónico de Exchange**, **Cuentas de OneDrive** y **Grupos de Microsoft 365**. Asegúrese de que el estado de los sitios de SharePoint esté activado. 
-
+5. En la página **Elegir ubicaciones para aplicar la directiva**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario, solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan en las bibliotecas de documentos de SharePoint. Cambiar el estado para el **Correo electrónico de Exchange**, las **cuentas de OneDrive** y los **Grupos de Office 365** a **Desactivado**. Asegúrese de que el estado de los sitios de SharePoint esté **Activado** antes de seleccionar **Siguiente**: 
+    
     ![Elegir sitios específicos a los que aplicar etiquetas automáticamente](../media/SPRetentionSPlocations.png)
-
+    
    > [!TIP]
-   > En lugar de aplicar la directiva a todos los sitios de SharePoint, puede seleccionar **Elegir sitios** y agregar las direcciones URL de sitios específicos de SharePoint.
+   > En lugar de aplicar la directiva a todos los sitios de SharePoint, puede seleccionar **Elegir sitio** y agregar las direcciones URL de sitios específicos de SharePoint.
 
-8. Seleccione **Siguiente** para mostrar la página **Revisar la configuración**.
+6. En la página **Elegir una etiqueta para aplicar automáticamente**, seleccione **Añadir etiqueta**.
+
+7. En la lista de etiquetas de retención, seleccione **Especificación de producto**. Después, seleccione **Agregar** y **Siguiente**.
+
+8. Revisar la configuración:
 
     ![Configuración para aplicar la etiqueta automáticamente](../media/SPRetention18.png)
 
-9. Seleccione **Aplicar automáticamente** para crear la directiva de etiqueta.
-
+9. Seleccione **Enviar** para crear la directiva de etiqueta aplicable automáticamente.
+    
    >[!NOTE]
    >Puede llevar hasta 7 días aplicar automáticamente la etiqueta de Especificaciones del producto a todos los documentos que coincidan con la consulta de búsqueda de KQL.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Compruebe que la etiqueta de retención se aplicó automáticamente
 
-Después de 7 días, utilice el [Explorador de actividad](data-classification-activity-explorer.md) en el centro de cumplimiento para comprobar que la directiva de etiquetas que creamos ha aplicado automáticamente las etiquetas de retención a los documentos de producto.
+Después de 7 días, utilice el [Explorador de actividad](data-classification-activity-explorer.md) del centro de cumplimiento para comprobar que la directiva de etiqueta aplicable automáticamente que creamos aplicó de manera automática las etiquetas de retención a los documentos de producto.
 
 También examine las propiedades de los documentos en la biblioteca de documentos. En el panel de información, puede ver que la etiqueta de retención se ha aplicado a un documento seleccionado.
 

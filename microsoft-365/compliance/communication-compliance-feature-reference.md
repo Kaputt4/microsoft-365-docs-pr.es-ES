@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289359"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131640"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -189,7 +189,7 @@ Los clasificadores de imágenes de *adultos*, *racy*y *Gory* digitalizan archivo
 
 Los clasificadores globales y capacitados integrados no proporcionan una lista exhaustiva de términos o imágenes en estas áreas. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho de actualizar los clasificadores según su criterio. Aunque los clasificadores pueden ayudar a su organización a supervisar estas áreas, los clasificadores no están destinados a proporcionar a los únicos medios de la organización la supervisión o el direccionamiento de dicho idioma o imagen. La organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con el idioma y las imágenes de análisis y bloqueo en estas áreas.
 
-Para obtener información acerca de los clasificadores que se capacitan en Microsoft 365, consulte [Getting Started with Trainer Classifiers](classifier-getting-started-with.md).
+Para obtener información acerca de los clasificadores que se capacitan en Microsoft 365, consulte [Getting Started with Trainer Classifiers](classifier-get-started-with.md).
 
 ### <a name="conditional-settings"></a>Configuración condicional
 <a name="ConditionalSettings"> </a>
@@ -200,7 +200,7 @@ La siguiente tabla explica más sobre cada condición.
   
 |**Condición**|**Cómo usar esta condición**|
 |:-----|:-----|
-| **El contenido coincide con cualquiera de estos clasificadores** | Se aplican a la Directiva cuando se incluyen o excluyen clasificadores en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados deben configurarse por separado antes de que estén disponibles para esta condición. Solo se puede definir un clasificador como condición en una directiva. Para obtener más información acerca de la configuración de clasificadores, consulte [Classifiers](classifier-getting-started-with.md). |
+| **El contenido coincide con cualquiera de estos clasificadores** | Se aplican a la Directiva cuando se incluyen o excluyen clasificadores en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados deben configurarse por separado antes de que estén disponibles para esta condición. Solo se puede definir un clasificador como condición en una directiva. Para obtener más información acerca de la configuración de clasificadores, vea información sobre los clasificadores que se van a [capacitar (versión preliminar)](classifier-learn-about.md). |
 | **El contenido contiene cualquiera de estos tipos de información confidencial** | Se aplican a la Directiva cuando se incluyen o excluyen tipos de información confidencial en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados se pueden configurar por separado o como parte del proceso de asignación de condición. Cada tipo de información confidencial que elija se aplica por separado y solo uno de estos tipos de información confidencial se debe aplicar para que la Directiva se aplique al mensaje. Para obtener más información acerca de los tipos personalizados de información confidencial, vea [tipos personalizados de información confidencial](custom-sensitive-info-types.md). |
 | **Se recibe el mensaje desde cualquiera de estos dominios**  <br><br> **No se recibe el mensaje desde ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes recibidos. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dominio o dirección de correo electrónico que se escriba se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea analizar todo el correo electrónico de un dominio específico, pero desea excluir los mensajes que no necesitan revisión (boletines, anuncios, etc.), debe configurar un mensaje que **no se reciba de ninguna de estas** condiciones de dominio que excluya la dirección de correo electrónico (por ejemplo, "Newsletter@contoso.com"). |
 | **El mensaje se envía a cualquiera de estos dominios**  <br><br> **El mensaje no se envía a ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes enviados. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dirección de correo electrónico o dominio se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea analizar todo el correo electrónico enviado a un dominio específico, pero quiere excluir los mensajes enviados que no necesitan revisión, debe configurar dos condiciones: <br> - **Se envía un mensaje a cualquiera de estas condiciones de los dominios** que define el dominio ("contoso.com") y <br> -Un **mensaje no se envía a ninguna condición de dominio** que excluya la dirección de correo electrónico ("subscriptions@contoso.com"). |
@@ -243,7 +243,7 @@ La protección de la privacidad de los usuarios que tienen coincidencias de dire
 Para los usuarios con una coincidencia de cumplimiento de la comunicación, puede elegir una de las siguientes opciones en **configuración de cumplimiento**de la comunicación:
 
 - **Mostrar anonimizan versiones de**los nombres de usuario: los nombres de usuario son anonimizan para evitar que los administradores, analistas, investigadores de datos y revisores vean a quién está asociado con las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. La información de Perfil de usuario en los detalles de alerta de cumplimiento de comunicaciones no estará disponible cuando se seleccione esta opción. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si elige desactivar esta opción, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
-- **No mostrar anonimizan versiones de nombres de**usuario: los nombres de usuario se muestran en todas las coincidencias de directivas actuales y pasadas para las alertas de cumplimiento de comunicaciones. La información del perfil de usuario (el nombre, el cargo, el alias y la organización o departamento) se muestra al usuario para todos los casos y alertas de administración de riesgos del Insider.
+- **No mostrar anonimizan versiones de nombres de**usuario: los nombres de usuario se muestran en todas las coincidencias de directivas actuales y pasadas para las alertas de cumplimiento de comunicaciones. La información del perfil de usuario (el nombre, el cargo, el alias y la organización o departamento) se muestra al usuario para todas las alertas de cumplimiento de comunicación.
 
 ## <a name="notice-templates"></a>Plantillas de aviso
 
@@ -283,14 +283,14 @@ Si desea crear más de un mensaje de correo electrónico basado en texto sencill
 
 Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los mensajes de alerta para obtener una investigación más rápida y acciones de corrección. El filtrado está disponible en las pestañas **pendientes** y **resueltas** para cada Directiva. Para guardar un filtro o un conjunto de filtros como una consulta de filtro guardada, se deben configurar uno o más valores como selecciones de filtro. En la tabla siguiente se describen los detalles del filtro:
 
-|**Filter**|**Detalles**|
+|**Filtro**|**Detalles**|
 |:-----|:-----|
-| **Fecha** | La fecha en la que un usuario de la organización envió o recibió el mensaje. |
+| **Date** | La fecha en la que un usuario de la organización envió o recibió el mensaje. |
 | **Clase File** | La clase del mensaje en función del tipo de mensaje, ya sea *mensaje* o *datos adjuntos*. |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloomberg, etc. Para obtener más información acerca de los tipos de elementos y las clases de mensajes comunes, vea [tipos de elementos y clases de mensajes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Dominios de destinatarios** | El dominio al que se envió el mensaje. Este dominio suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
-| **Destinatario** | El usuario al que se envió el mensaje. |
+| **Recipient** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
 | **Tamaño** | El tamaño del mensaje en KB. |
@@ -334,16 +334,91 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para 
 
 7. Seleccione **cerrar** para salir de la página Detalles de la Directiva de alerta.
 
+## <a name="power-automate-flows-preview"></a>Flujos de automatización de la potencia (versión preliminar)
+
+[Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) es un servicio de flujo de trabajo que automatiza acciones en aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas con estas aplicaciones y servicios. Al habilitar flujos de alimentación automatizada para el cumplimiento de la comunicación, puede automatizar las tareas importantes para las alertas y los usuarios. Puede configurar los flujos de alimentación automatizada para notificar a los administradores cuando los usuarios tienen alertas de cumplimiento de comunicaciones y otras aplicaciones.
+
+Los clientes con suscripciones de Microsoft 365 que incluyen el cumplimiento de la comunicación no necesitan una automatización adicional para usar la plantilla de automatización de cumplimiento de comunicaciones predeterminada recomendada. La plantilla predeterminada se puede personalizar para apoyar a su organización y cubrir los principales escenarios de cumplimiento de comunicaciones. Si decide usar las características de automatizar la alimentación avanzada en estas plantillas, cree una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o use las plantillas de Power automatizada para otras áreas de cumplimiento en Microsoft 365, es posible que necesite otras licencias de Power automatizada.
+
+![Automatización de la energía de cumplimiento de comunicaciones](../media/communication-compliance-power-automate.png)
+
+La siguiente plantilla de autoautomatización se proporciona a los clientes para que admitan la automatización de procesos para las alertas de cumplimiento de comunicaciones:
+
+- **Notificar al administrador cuando un usuario tiene una alerta de cumplimiento de comunicaciones**: es posible que algunas organizaciones necesiten una notificación de administración inmediata cuando un usuario tiene una alerta de cumplimiento de la comunicación. Cuando se configura y se selecciona este flujo, se envía un mensaje de correo electrónico al administrador del caso al usuario con la siguiente información sobre todas las alertas:
+    - Directiva aplicable para la alerta
+    - Fecha y hora de la alerta
+    - Nivel de gravedad de la alerta
+
+### <a name="create-a-power-automate-flow"></a>Crear un flujo de automatización de potencia
+
+Para crear un flujo de automatización de la potencia desde una plantilla predeterminada recomendada, use la opción **administrar flujos de automatización** **del control** automatizado cuando trabaje directamente en una alerta. Para crear un flujo de automatización automatizada con **administrar flujos de alimentación automatizada**, debe ser miembro de, al menos, un grupo de funciones de cumplimiento de la comunicación.
+
+Complete los pasos siguientes para crear un flujo de automatización de eficacia desde una plantilla predeterminada:
+
+1. En el centro de cumplimiento de Microsoft 365, vaya a directivas de **cumplimiento de comunicaciones**  >  **Policies** y seleccione la Directiva con la alerta que desea revisar.
+2. En la Directiva, seleccione la pestaña **pendiente** y seleccione una alerta pendiente.
+3. Seleccione **energía automatizada** en el menú Acción de alerta.
+4. En la página **automatizar la automatización** , seleccione una plantilla predeterminada en la sección **plantillas de cumplimiento de comunicaciones que** puede desear que se refieren a la página.
+5. El flujo mostrará una lista de las conexiones incrustadas necesarias para el flujo y se mostrará si los Estados de conexión están disponibles. Si es necesario, actualice las conexiones que no se muestren como disponibles. Seleccione **continuar**.
+6. De forma predeterminada, los flujos recomendados están preconfigurados con los campos de datos de servicio de Microsoft 365 y cumplimiento de comunicaciones recomendados para completar la tarea asignada al flujo. Si es necesario, Personalice los componentes de flujo mediante el control **Mostrar opciones avanzadas** y configurando las propiedades disponibles para el componente de flujo.
+7. Si es necesario, agregue pasos adicionales al flujo seleccionando el botón **nuevo paso** . En la mayoría de los casos, este cambio no debería ser necesario para las plantillas predeterminadas recomendadas.
+8. Seleccione **Guardar borrador** para guardar el flujo para una configuración más reciente o seleccione **Guardar** para completar la configuración del flujo.
+9. Seleccione **cerrar** para volver a la página flujo de energía automatizada. La nueva plantilla aparecerá como un flujo en la ficha **Mis flujos** y estará disponible automáticamente desde el control Power Automate para el usuario que creó el flujo al trabajar con las alertas de cumplimiento de comunicaciones.
+
+### <a name="share-a-power-automate-flow"></a>Compartir un flujo de automatización de la alimentación
+
+De forma predeterminada, los flujos de automatización creados por un usuario solo están disponibles para ese usuario. Para que otros usuarios de cumplimiento de comunicaciones tengan acceso y usen un flujo, el flujo debe compartirse con el creador del flujo. Para compartir un flujo, deberá usar el control **exponencial automatizada** cuando trabaje directamente en una alerta.
+
+Para compartir un flujo de automatización, debe ser miembro de, al menos, un grupo de funciones de cumplimiento de la comunicación.
+Complete los pasos siguientes para compartir un flujo de automatización de la alimentación:
+
+1. En el centro de cumplimiento de Microsoft 365, vaya a directivas de **cumplimiento de comunicaciones**  >  **Policies** y seleccione la Directiva con la alerta que desea revisar.
+2. En la Directiva, seleccione la pestaña **pendiente** y seleccione una alerta pendiente.
+3. Seleccione **energía automatizada** en el menú Acción de alerta.
+4. En la página **flujos de automatización eléctrica** , seleccione la pestaña **Mis flujos** o **flujos de equipo** .
+5. Seleccione el flujo que desea compartir y, a continuación, seleccione **compartir** en el menú opciones de flujo.
+6. En la página uso compartido de flujo, escriba el nombre del usuario o grupo que desea agregar como propietario del flujo.
+7. En el cuadro de diálogo **conexión utilizada** , seleccione **Aceptar** para confirmar que el flujo de usuario o grupo agregado tendrá acceso total al flujo.
+
+### <a name="edit-a-power-automate-flow"></a>Edición de un flujo de automatización de la alimentación
+
+Si tiene que editar un flujo, usará el control **exponencial automatizando** el control cuando trabaje directamente en una alerta. Para editar un flujo de automatización, debe ser miembro de, al menos, un grupo de funciones de cumplimiento de la comunicación.
+
+Complete los pasos siguientes para editar un flujo de automatización de consumo:
+
+1. En el centro de cumplimiento de Microsoft 365, vaya a directivas de **cumplimiento de comunicaciones**  >  **Policies** y seleccione la Directiva con la alerta que desea revisar.
+2. En la Directiva, seleccione la pestaña **pendiente** y seleccione una alerta pendiente.
+3. Seleccione **energía automatizada** en el menú Acción de alerta.
+4. En la página **flujos de automatización eléctrica** , seleccione flujo para editar. Seleccione **Editar** en el menú de control de flujo.
+5. Seleccione la configuración de **puntos suspensivos**  >  **Settings** para cambiar una configuración del componente de flujo o **puntos suspensivos**  >  **Delete** para eliminar un componente de flujo.
+6. Seleccione **Guardar** y, a continuación, **cerrar** para completar la edición del flujo.
+
+### <a name="delete-a-power-automate-flow"></a>Eliminar un flujo de automatización de alimentación
+
+Si necesita eliminar un flujo, deberá usar el control **Automate exponencial** cuando trabaje directamente en una alerta. Para eliminar un flujo de automatización de la alimentación, debe ser miembro de al menos un grupo de roles de cumplimiento de la comunicación.
+
+Complete los pasos siguientes para eliminar un flujo de automatización de la alimentación:
+
+1. En el centro de cumplimiento de Microsoft 365, vaya a directivas de **cumplimiento de comunicaciones**  >  **Policies** y seleccione la Directiva con la alerta que desea revisar.
+2. En la Directiva, seleccione la pestaña **pendiente** y seleccione una alerta pendiente.
+3. Seleccione **energía automatizada** en el menú Acción de alerta.
+4. En la página **flujos de automatización eléctrica** , seleccione flujo para eliminar. Seleccione **eliminar** en el menú de control de flujo.
+5. En el cuadro de diálogo de confirmación de eliminación, seleccione **eliminar** para quitar el flujo o seleccione **Cancelar** para salir de la acción de eliminación.
+
 ## <a name="reports-preview"></a>Informes (versión preliminar)
 
-El nuevo panel **informes** es la ubicación central para ver todos los informes de cumplimiento de la comunicación. Los widgets de informe proporcionan una vista rápida de información más necesaria para una evaluación general del estado de las actividades de cumplimiento de la comunicación. La información contenida en los widgets del informe no es exportable.
+El nuevo panel **informes** es la ubicación central para ver todos los informes de cumplimiento de la comunicación. Los widgets de informe proporcionan una vista rápida de la información más necesaria para una evaluación general del estado de las actividades de cumplimiento de la comunicación. La información contenida en los widgets del informe no es exportable. Los informes detallados proporcionan información detallada relacionada con las áreas de cumplimiento de comunicaciones específicas y ofrecen la posibilidad de filtrar, agrupar, ordenar y exportar información durante la revisión.
 
-El panel **informes** contiene los widgets de informe siguientes:
+El **Panel informes** contiene los siguientes widgets de informe e informes detallados:
 
-- **Coincidencias de directivas recientes**: muestra el número de coincidencias por Directiva activa a lo largo del tiempo.
-- **Elementos resueltos por directiva**: muestra el número de alertas de coincidencia de directivas resueltas por directiva a lo largo del tiempo.
-- **Usuarios con la mayoría de las coincidencias de directiva**: muestra los usuarios (o los nombres de usuario de anonimizan) y el número de coincidencias de directivas para un período determinado.
-- **Directiva con la mayoría de las coincidencias**: muestra las directivas y el número de coincidencias de un período determinado, clasificados de mayor a menor para las coincidencias.
+- Widget de **coincidencias de directivas recientes** : muestra el número de coincidencias por Directiva activa a lo largo del tiempo.
+- Widget **elementos resueltos por directiva** : muestra el número de alertas de coincidencia de directivas que la Directiva resuelve a lo largo del tiempo.
+- **Usuarios con la mayoría** de los widgets de coincidencia de directivas: muestra los usuarios (o los nombres de usuario de anonimizan) y el número de coincidencias de directivas para un período determinado.
+- **Directiva con el widget de más coincidencias** : muestra las directivas y el número de coincidencias de un período determinado, clasificados de mayor a menor para las coincidencias.
+- **Extensiones por** widget de directiva: muestra el número de escalas por directiva a lo largo de un tiempo determinado.
+- **Configuración de la Directiva e** informe detallado del estado: proporciona una visión detallada de la configuración y las opciones de la Directiva, así como el estado general de cada una de las directivas (coincidencias y acciones) en los mensajes. Use la opción *exportar* para crear un. Archivo CSV que contiene los detalles del informe.
+- Informe detallado de **elementos y acciones por directiva** : Revise y exporte los elementos coincidentes y las acciones de corrección por directiva. Use la opción *exportar* para crear un. Archivo CSV que contiene los detalles del informe.
+- Informe detallado de elementos **y acciones por ubicación** : Revise y exporte los elementos coincidentes y las acciones de corrección por ubicación de Microsoft 365. Use la opción *exportar* para crear un. Archivo CSV que contiene los detalles del informe.
 
 ## <a name="audit"></a>Auditoría
 

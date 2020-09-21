@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104575"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -21,7 +21,7 @@ ms.locfileid: "47289144"
 
 El proceso para socios se documenta en [pasos para que los partners registren dispositivos](register-devices-partner.md).
 
-Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos mediante el portal de administración de escritorio administrado de Microsoft.
+Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos con Microsoft Managed Desktop en el portal de Microsoft Endpoint Manager.
 
 ## <a name="prepare-to-register-existing-devices"></a>Preparar el registro de los dispositivos existentes
 
@@ -56,7 +56,7 @@ Si ha cumplido todos estos requisitos previos, estará listo para recopilar la i
 2. En el área de trabajo supervisión, expanda el nodo **informes** , expanda **informes**y seleccione el nodo **hardware general** . 
 3. Ejecute el informe, la **información del dispositivo de Windows AutoPilot**y vea los resultados.
 4. En el visor de informes, seleccione el icono **exportar** y elija la opción **CSV (delimitado por comas)** .
-5. Después de guardar el archivo, tendrá que filtrar los resultados para que solo los dispositivos que va a registrar con el escritorio administrado de Microsoft y cargar los datos en el [portal de administración](https://aka.ms/mmdportal)de escritorio administrado de Microsoft, seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
+5. Después de guardar el archivo, tendrá que filtrar los resultados solo para los dispositivos que planea registrar con el escritorio administrado de Microsoft y cargar los datos en el escritorio administrado de Microsoft. Abra el administrador de extremos de Microsoft y vaya al menú **dispositivos** , a continuación, busque la sección escritorio administrado de Microsoft y seleccione **dispositivos**. Seleccione **+ registrar dispositivos** que abren un vuelo para registrar nuevos dispositivos.
 
 
 Para obtener más información [, consulte registrar dispositivos mediante el portal de administración](#register-devices-by-using-the-admin-portal) .
@@ -134,9 +134,9 @@ Una vez que los datos de hash se combinan en un archivo CSV, ahora puede continu
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el portal de administración
 
-En el [portal de administración](https://aka.ms/mmdportal)de escritorio administrado de Microsoft, seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
+En el [Administrador de extremos de Microsoft](https://endpoint.microsoft.com/), seleccione **dispositivos** en el panel de navegación izquierdo. Busque la sección escritorio administrado de Microsoft del menú y seleccione **dispositivos**. En el área de trabajo de dispositivos de escritorio administrados de Microsoft, seleccione **+ registrar dispositivos** que abren un paso para registrar nuevos dispositivos.
 
-[![Paso a paso después de seleccionar los dispositivos de registro, enumerar los dispositivos con columnas para los usuarios asignados, el número de serie, el estado, la fecha de última visualización y la antigüedad.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -149,7 +149,7 @@ Siga estos pasos:
 1. Seleccione **registrar dispositivos**. El sistema agregará los dispositivos a la lista de dispositivos en la **hoja dispositivos**, marcada como **AutopilotRegistrationRequested**. El registro suele tardar menos de 10 minutos y, cuando se ejecuta correctamente, el dispositivo se muestra como **listo para el usuario** significa que está listo y esperando a que un usuario empiece a usar.
 
 
-Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
+Puede supervisar el progreso del registro de dispositivos en la Página principal. Los posibles Estados que se notifican incluyen:
 
 | Estado | Descripción |
 |---------------|-------------|

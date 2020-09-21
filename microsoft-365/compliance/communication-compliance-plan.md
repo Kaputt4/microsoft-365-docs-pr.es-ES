@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289325"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131542"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -66,7 +66,7 @@ Al planear directivas de cumplimiento en las comunicaciones, tenga en cuenta las
 - Para simplificar la configuración, considere la posibilidad de crear grupos para los usuarios que necesitan sus comunicaciones revisadas. Si está usando grupos; es posible que necesite varias. Por ejemplo, si desea examinar las comunicaciones entre dos grupos de personas distintos, o si desea especificar un grupo que no está supervisado.
 - Configure el porcentaje de comunicaciones que se van a revisar al 100% para asegurarse de que las directivas detectan todas las cuestiones de preocupación en las comunicaciones de la organización.
 - Puede examinar las comunicaciones de [orígenes de terceros](communication-compliance-feature-reference.md#supported-communication-types) para los datos importados en buzones de la organización de Microsoft 365. Para incluir la revisión de comunicaciones en estas plataformas, deberá configurar un conector para estos servicios antes de que las condiciones de la Directiva de reunión de los mensajes se supervisan mediante una directiva de comunicación.
-- Las directivas pueden admitir idiomas de supervisión distintos del inglés en las directivas de cumplimiento de comunicaciones personalizadas. Cree un [Diccionario de palabras clave personalizadas](communication-compliance-feature-reference.md#custom-keyword-dictionaries) con palabras ofensivas en el idioma de su elección o cree su propio modelo de aprendizaje de la máquina mediante [clasificadores capacitados](classifier-getting-started-with.md) en Microsoft 365.
+- Las directivas pueden admitir idiomas de supervisión distintos del inglés en las directivas de cumplimiento de comunicaciones personalizadas. Cree un [Diccionario de palabras clave personalizadas](communication-compliance-feature-reference.md#custom-keyword-dictionaries) con palabras ofensivas en el idioma de su elección o cree su propio modelo de aprendizaje de la máquina mediante [clasificadores capacitados](classifier-get-started-with.md) en Microsoft 365.
 - Todas las organizaciones tienen diferentes normas de comunicación y necesidades de directivas. Supervisar palabras clave específicas usando [las condiciones](communication-compliance-feature-reference.md#conditional-settings) de la Directiva de cumplimiento de comunicaciones o monitor para tipos específicos de información con [tipos personalizados de información confidencial](create-a-custom-sensitive-information-type.md).
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?

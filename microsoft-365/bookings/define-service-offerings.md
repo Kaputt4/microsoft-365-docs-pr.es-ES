@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para introducir información sobre ofertas de servicio, como el nombre, la descripción, la ubicación, la duración y el precio del servicio. También puede etiquetar a los empleados que están cualificados para proporcionar el servicio.
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962542"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definir las ofertas de servicios en las reservas
 
 Al definir las ofertas de servicio en Microsoft Bookings, usted establece, un nombre de servicio, una descripción, una ubicación (elija si desea reunirse en persona o tener una reunión en línea), la duración, los avisos predeterminados a los clientes y el personal, notas internas sobre el servicio y precios. También puede etiquetar a los empleados que están cualificados para proporcionar el servicio. A continuación, cuando los clientes visiten el sitio web de la empresa para reservar una cita, podrán ver exactamente qué tipos de citas están disponibles, elegir la persona que quieren proporcionar el servicio y cuánto costará su servicio.
 
 También puede agregar información personalizada y direcciones URL a la confirmación de correo electrónico y los avisos que envía cuando alguien dirige un servicio a través de la página de reserva.
-
-> [!NOTE]
-> Las reservas están activadas de forma predeterminada para los clientes con las suscripciones Microsoft 365 Business Standard, Microsoft 365 a3 o Microsoft 365 A5. Las reservas también están disponibles para los clientes que tienen Office 365 Enterprise E3 y Office 365 Enterprise E5, pero están desactivados de forma predeterminada. Para empezar, vea [obtener acceso a Microsoft bookings](get-access.md). Para activar o desactivar las reservas, consulte [activar o desactivar las reservas para su organización](turn-bookings-on-or-off.md).
 
 ## <a name="create-the-service-details"></a>Crear los detalles del servicio
 

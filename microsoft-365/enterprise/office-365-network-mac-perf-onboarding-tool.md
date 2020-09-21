@@ -3,7 +3,7 @@ title: Prueba de conectividad de red 365 de Microsoft (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Prueba de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948549"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962403"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Prueba de conectividad de red 365 de Microsoft (versión preliminar)
 
 La herramienta de prueba de conectividad de red de Microsoft 365 se encuentra en <https://connectivity.office.com> . Se trata de una herramienta de Adjunct a la información de evaluación de red y de información de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | Menú conectividad** .
 
+![Herramienta de prueba de conectividad](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >La herramienta de prueba de conectividad de red es compatible con los inquilinos de WW Commercial y Alemania, pero no con GCC moderate, GCC High, DoD o China.
 
 La información de red del centro de administración de Microsoft 365 se basa en las mediciones habituales del producto de su inquilino de Microsoft 365 que se agregan cada día. En comparación, la información de red de la prueba de conectividad de red de Microsoft 365 se ejecuta de forma local y una vez en la herramienta. Las pruebas que se pueden llevar a cabo en el producto son limitadas y al ejecutar pruebas locales para el usuario se pueden recopilar más datos, lo que da lugar a una información más profunda. Considere que en la información de red del centro de administración de Microsoft 365 se muestra que hay un problema de red para usar Microsoft 365 en una ubicación específica de la oficina. La prueba de conectividad de Microsoft 365 puede ayudarle a identificar la causa raíz de ese problema, lo que provoca una acción recomendada para mejorar el rendimiento de la red.
-
-![Herramienta de prueba de conectividad de red](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Le recomendamos que se usen conjuntamente donde el estado de calidad de la red se pueda evaluar para cada ubicación de la oficina en el centro de administración de Microsoft 365 y se puedan encontrar más detalles tras la implementación de las pruebas basadas en la prueba de conectividad de Microsoft 365.
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b731422e6d981b12ea576ed26b841e7c679266ae
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: a24d0dc64e2262a8b208119c45a4a6bade701c10
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104539"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft
 
@@ -29,7 +29,7 @@ Estado  | Explicación
 Implementar | El cambio está esperando a que se implemente en este grupo.
 En curso | El cambio se aplica a los dispositivos activos en este grupo. 
 Completar | El cambio se completó en todos los dispositivos activos de este grupo. 
-Failed | Se produjo un error en el cambio en un 10% de los dispositivos activos del grupo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
+Error | Se produjo un error en el cambio en un 10% de los dispositivos activos del grupo, por lo que se detuvo la implementación.<br><br> Se abrirá automáticamente una solicitud de soporte técnico con las operaciones de escritorio administradas de Microsoft para solucionar problemas de la implementación. 
 Revierten | El cambio se revirtió al último cambio que se implementó correctamente en todos los grupos de implementación.
 
 ## <a name="deploy-changes"></a>Implementar cambios
@@ -38,20 +38,21 @@ En estas instrucciones se mostrará la imagen de fondo del escritorio. Una vez q
 
 **Para implementar los cambios**
 
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
 3. En el área de trabajo del **Estado de implementación** , seleccione la configuración que desee implementar y, a continuación, seleccione la implementación preconfigurada que se va a implementar.
 4. Seleccione **implementar** para implementar el cambio en uno de los grupos de implementación.
 
 > [!NOTE] 
 > El icono de advertencia de color naranja indica que hay un grupo anterior disponible para la implementación, ya que se recomienda que se implemente en orden. 
 
-![Área de trabajo de estado de implementación. Panel sitios de confianza a la derecha. En la sección grupos de implementación hay tres columnas: grupos de implementación, dispositivos y estado. En la columna Estado, se resalta "implementar".](../../media/1deployedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png) -->
+
 Se recomienda implementar en los grupos de implementación en este orden: probar, primero, rápido y, a continuación, general. 
 
 Cuando se completen los cambios en cada grupo, el estado cambiará a **completa**.
 
-![Área de trabajo del estado de implementación con columnas para la fecha actualizada, versión, prueba, primera, rápida y amplia. Se expande la fila del proxy, que muestra una configuración con fecha marcada como "completa" en cada uno de los cuatro grupos de implementación.](../../media/2completeedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png) -->
 
 ## <a name="revert-deployment"></a>Revertir la implementación
 
@@ -60,12 +61,12 @@ Después de implementar un cambio, puede revertir el estado de **implementación
 Mostraremos los pasos para revertir un cambio con la imagen de fondo de escritorio como ejemplo. 
 
 **Para revertir un cambio**
-1. Iniciar sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal)
-2. En **configuración**, seleccione **configurable**.
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **dispositivos**
+2. Busque la sección escritorio administrado de Microsoft y seleccione **configuración**.
 3. En el área de trabajo del **Estado de implementación** , seleccione la configuración que desea revertir y, a continuación, seleccione la implementación preconfigurada que se va a revertir.
 4. En **¿necesita revertir este cambio?**, seleccione **revertir implementación**.
 
-![Área de trabajo de estado de implementación. Páginas de inicio del explorador está seleccionada, abriendo un panel en el lado derecho con datos sobre el cambio enviado y su estado. En la parte inferior se encuentra el área "es necesario revertir este cambio" donde puede seleccionar "revertir la implementación".](../../media/3revert.png) 
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->
 
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Información general de configuración configurable](config-setting-overview.md)

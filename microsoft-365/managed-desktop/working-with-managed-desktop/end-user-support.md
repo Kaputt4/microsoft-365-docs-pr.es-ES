@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289692"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104417"
 ---
-# <a name="getting-help-for-users"></a>Obtener ayuda para usuarios
+# <a name="getting-help-for-users"></a>Obtener ayuda para los usuarios
 
 Hay dos formas en que los usuarios de su organización pueden obtener ayuda con sus dispositivos de escritorio administrados por Microsoft: obtener aplicación de **ayuda** o soporte telefónico. Ambas opciones de soporte técnico están disponibles para los usuarios las 24 horas del día, los 7 días de la semana.
  
@@ -71,4 +71,4 @@ los usuarios con dispositivos de escritorio administrados por Microsoft también
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Soporte de administración para escritorio administrado de Microsoft](admin-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md).
-- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal).
+- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en los **recursos en línea** en la sección escritorio administrado de Microsoft del menú **Administración de inquilinos** de [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).

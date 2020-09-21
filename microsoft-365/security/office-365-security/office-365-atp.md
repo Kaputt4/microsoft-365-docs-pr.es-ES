@@ -19,19 +19,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 184ab53059a73de534d9a67a45fc41b20a73f13f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653610"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949702"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
+# <a name="office-365-advanced-threat-protection-atp"></a>Protección contra amenazas avanzada de Office 365 (ATP)
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-La Protección contra amenazas avanzada de Office 365 (ATP) protege su organización contra las amenazas malintencionadas ocultas en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. ATP incluye:
+La Protección contra amenazas avanzada de Office 365 (ATP) protege su organización contra las amenazas malintencionadas ocultas en mensajes de correo electrónico, vínculos (direcciones URL) y herramientas de colaboración. ATP incluye:
 
 - **[Directivas de protección contra amenazas](#configure-atp-policies)**: defina directivas de protección contra amenazas para establecer el nivel de protección adecuado para su organización.
 
@@ -40,6 +40,25 @@ La Protección contra amenazas avanzada de Office 365 (ATP) protege su organizac
 - **[Investigación de amenazas y funcionalidades de respuesta](#use-threat-investigation-and-response-capabilities)**: use las herramientas más avanzadas para investigar, entender, simular y evitar las amenazas.
 
 - **[Investigación automatizada y funcionalidades de respuesta](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**: ahorre tiempo y esfuerzo al investigar y mitigar las amenazas.
+
+## <a name="getting-started"></a>Introducción
+
+Si no está familiarizado con la Protección contra amenazas avanzada de Office 365 o prefiere aprender mediante la *práctica*, puede que le convenga analizar por partes la configuración inicial de ATP, investigar y consultar informes utilizando este artículo como referencia. Aquí se muestran fragmentos previos de configuración de manera lógica:
+
+- Configure todo con "*anti*" en el nombre.
+    - antimalware
+    - anti-phishing
+    - anti-spam (protección contra correo electrónico no deseado)
+- Configure todo con "*seguro*" en el nombre.
+    - vínculos seguros
+    - archivos adjuntos seguros
+- Defender las cargas de trabajo (ej. SharePoint Online, OneDrive y Teams) 
+- Proteger con la purga automática
+
+Para aprender con la práctica, [haga clic en este vínculo](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true). 
+
+> [!NOTE]
+> ATP ofrece dos tipos de plan diferentes. Si tiene "Detecciones en tiempo real", tiene el **Plan 1** y, si tiene el Explorador de amenazas, tiene el **Plan 2**. El plan que tenga influirá en las herramientas que pueda ver, de modo que asegúrese de saber cuál es su plan mientras aprende.
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP Plan 1 y Plan 2
 
@@ -52,7 +71,7 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 |<br/>Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](atp-safe-attachments.md)</li><li>[Vínculos seguros](atp-safe-links.md)</li><li>[ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing de ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Funcionalidades del plan 1 de ATP de Office 365<br/>--- además ---<br/>Funcionalidades de automatización, investigación, corrección y educación:</li><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
 |
 
-- El plan 2 de ATP de Office 365 está incluido en Office 365 E5, Office 365 A5 y en Microsoft 365 E5.
+- El plan 2 de ATP de Office 365 está incluido en Office 365 E5, Office 365 A5, Seguridad de Microsoft 365 E5 y en Microsoft 365 E5.
 
 - El plan 1 de ATP de Office 365 está incluido en Microsoft 365 Empresa Premium.
 
@@ -68,6 +87,8 @@ Con ATP de Office 365, el equipo de seguridad de su organización puede configur
 
 > [!TIP]
 > Para ver una lista de directivas para definir rápidamente, vea [Protegerse ante amenazas](protect-against-threats.md).
+
+## <a name="advanced-threat-protection-policies"></a>Directivas de la Protección contra amenazas avanzada
 
 Las directivas definidas por la organización determinan el comportamiento y el nivel de protección para las amenazas predefinidas. Las opciones de directivas son muy flexibles. Por ejemplo, el equipo de seguridad de su organización puede establecer protección contra amenazas específica para el nivel de usuario, organización, destinatario y dominio. Es importante revisar las directivas de forma periódica, ya que a diario surgen nuevas amenazas y desafíos.
 

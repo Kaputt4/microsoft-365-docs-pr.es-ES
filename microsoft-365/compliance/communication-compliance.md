@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cd796a6bd5faebc87b2f7c9cab36fe17be41fe2e
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 43edaec282cc1efb9f4ab7d9e92ed0a779d255ab
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131562"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -70,7 +70,7 @@ El cumplimiento de la comunicación en Microsoft 365 ofrece varias característi
 Las plantillas inteligentes y personalizables en el cumplimiento de la comunicación le permiten aplicar el aprendizaje automático para detectar de manera inteligente las violaciones de comunicación en su organización.
 
 - **Plantillas preconfiguradas personalizables**: las nuevas plantillas de directiva ayudan a abordar los riesgos de comunicaciones más comunes. La creación de directivas iniciales y la actualización de seguimiento ahora son más rápidas con un Antiacoso predefinido y un lenguaje ofensivo, información confidencial y plantillas de cumplimiento normativo.
-- **Compatibilidad con nuevos equipos de aprendizaje**: la amenaza integrada, el acoso, los términos blasfemos y los [clasificadores](classifier-getting-started-with.md) de imágenes ayudan a reducir los falsos positivos en los mensajes examinados, lo que ahorra tiempo a los revisores durante el proceso de investigación y corrección.
+- **Compatibilidad con nuevos equipos de aprendizaje**: la amenaza integrada, el acoso, los términos blasfemos y los [clasificadores](classifier-get-started-with.md) de imágenes ayudan a reducir los falsos positivos en los mensajes examinados, lo que ahorra tiempo a los revisores durante el proceso de investigación y corrección.
 - **Generador de condiciones mejorado**: la configuración de las condiciones de la Directiva ahora se simplifica en una sola experiencia integrada en el Asistente para directivas, lo que reduce la confusión en el modo en que se aplican las directivas.
 
 ### <a name="flexible-remediation-workflows"></a>Flujos de trabajo de corrección flexibles
@@ -150,7 +150,7 @@ El siguiente paso consiste en corregir los problemas de cumplimiento de comunica
 - **Quitar mensaje de Teams (versión preliminar)**: los mensajes inapropiados pueden quitarse de los canales de Microsoft Teams o de los mensajes de chat de grupo y personales. Los mensajes inapropiados que se quitan se sustituyen por una notificación de que se ha quitado el mensaje para una infracción de la Directiva.
 - **Escalar para la investigación**: en las situaciones más graves, es posible que necesite compartir la información de cumplimiento de comunicaciones con otros revisores de la organización. El cumplimiento de la comunicación se integra estrechamente con otras características de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro. Escalar un caso para la investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
 
-### <a name="monitor"></a>Supervisar
+### <a name="monitor"></a>Monitorear
 
 Mantener el seguimiento y administrar los problemas de cumplimiento identificados por las directivas de cumplimiento de la comunicación abarca todo el proceso de flujo de trabajo. A medida que se generan las alertas y se implementan las acciones de investigación y corrección, es posible que las directivas existentes necesiten revisión y actualizaciones, y que sea necesario crear nuevas directivas.
 

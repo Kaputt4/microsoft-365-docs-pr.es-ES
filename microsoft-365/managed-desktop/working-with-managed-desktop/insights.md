@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104393"
 ---
 # <a name="work-with-insights"></a>Trabajar con ideas
 
-El escritorio administrado de Microsoft proporciona una serie de paneles que los administradores de TI de su inquilino pueden usar para comprender diversos aspectos de la población de dispositivos. Puede obtener acceso a estos a través del centro de administración de Microsoft 365.
+El escritorio administrado de Microsoft proporciona una serie de paneles que los administradores de TI de su inquilino pueden usar para comprender diversos aspectos de la población de dispositivos. Puede obtener acceso a estas directamente en el [centro de administración de Microsoft 365](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop).
 
 Con estos paneles puede encontrar respuestas a preguntas como las siguientes:
 
@@ -31,10 +31,9 @@ Con estos paneles puede encontrar respuestas a preguntas como las siguientes:
 - ¿Cuál es el estado actual de las actualizaciones de seguridad en los dispositivos?
 - ¿Cuánto tiempo tardó el 95% de los dispositivos en estar al día con la actualización de seguridad más reciente?
 
-Para obtener acceso a estas vistas desde el centro de administración de Microsoft 365, seleccione **Ver detalles** en el área **informes** :
+Para acceder a estas vistas desde el [Administrador de pintada de Microsoft](https://endpoint.microsoft.com/), nvaigate a la ficha escritorio administrado de Microsoft en la página de inicio y seleccione **Ver detalles** en el área **informes** :
 
-![Área centro de administración con informes en la esquina superior derecha, incluida la tarjeta informes de dispositivos y el vínculo "ver detalles".](../../media/insights_overview.png)
-
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
 
 
 ## <a name="usage-insights"></a>Información sobre el uso

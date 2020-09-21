@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104587"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
@@ -24,10 +24,11 @@ Puede enviar Vales de soporte o solicitudes de comentarios a Microsoft mediante 
 >Asegúrese de [configurar un contacto de administración](../get-started/add-admin-contacts.md) para el empaquetado de la aplicación, los dispositivos, la seguridad y otros. No puede enviar una solicitud de soporte técnico en ninguna de estas áreas si no hay configurado un contacto de administración.
 
 **Para enviar una solicitud de soporte técnico**
-1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal). 
-2. En **solicitudes de soporte**, seleccione **+ nuevo vale de soporte técnico**.
-3. Seleccione el **tipo de solicitud de soporte** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones. 
-4. Seleccione el **nivel de gravedad**. Para obtener más información, consulte [support request Severity Definitions](#sev). 
+1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y navegue hasta el menú **Troubleshooting + support** .
+2. Busque la sección escritorio administrado de Microsoft y seleccione **request**.
+3. En **solicitudes de soporte**, seleccione **+ nuevo vale de soporte técnico**.
+4. Seleccione el **tipo de solicitud de soporte** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones. 
+5. Seleccione el **nivel de gravedad**. Para obtener más información, consulte [support request Severity Definitions](#sev). 
 
 Tipo de solicitud de soporte | Cuándo usarlo
 --- | ---
@@ -58,7 +59,7 @@ Detalles adicionales:
 
 Agradecemos sus comentarios y la usamos para mejorar la experiencia de soporte de administración.
 
-Una vez que un vale está en estado **mitigado** o **resuelto** , puede compartir sus comentarios sobre su experiencia con ese problema en particular. Para ello, vaya a la página **solicitudes de soporte técnico** en el portal de administración. Seleccione el vale específico. En el momento en que aparece en el lado derecho, seleccione la pestaña **comentarios** y proporcione la información solicitada. Tenga cuidado de no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, consulte la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+Una vez que un vale está en estado **mitigado** o **resuelto** , puede compartir sus comentarios sobre su experiencia con ese problema en particular. Para ello, vaya a la página **solicitudes de servicio** del menú **solución de problemas + Soporte** en MEM portal. Seleccione el vale específico. Los detalles del tíquet aparecerán en el lado derecho de la lista desplegable, seleccione la pestaña **comentarios** y proporcione la información solicitada. Tenga cuidado de no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, consulte la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ![Formulario de comentarios](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ Una vez que un vale está en estado **mitigado** o **resuelto** , puede comparti
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Compatibilidad con el usuario para el escritorio administrado de Microsoft](end-user-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md). 
-- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal).
+- Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la página **recursos en línea** de la sección **escritorio administrado de Microsoft** del menú **Administración de inquilinos** en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
