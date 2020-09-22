@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre cómo Microsoft 365 ayuda a los servicios financieros a migrar a una plataforma de colaboración moderna, al tiempo que protege los datos y sistemas y les permite cumplir con las normativas
 f1.keywords: NOCSH
-ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 19f8acc4a0d94c9fb4952a31a8e119a99a553bf0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597526"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197554"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave sobre el cumplimiento y la seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -164,7 +164,7 @@ Microsoft 365 permite que todas las organizaciones identifiquen datos confidenci
 * **Microsoft Information Protection (MIP)** para la clasificación basada en el usuario y la clasificación automatizada de datos confidenciales.
 * **La prevención de pérdida de datos (DLP) de Office 365** para identificar automáticamente datos confidenciales con tipos de datos confidenciales (es decir, expresiones regulares), así como palabras clave y aplicación de directivas.
 
-**[Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/)** permite a las organizaciones clasificar documentos y mensajes de correo electrónico de forma inteligente mediante etiquetas de confidencialidad. Los usuarios pueden aplicar manualmente las etiquetas de confidencialidad en documentos en aplicaciones de Microsoft Office y en mensajes de correo electrónico en Outlook. Las etiquetas pueden aplicar automáticamente marcas de documento, protección mediante el cifrado y la exigencia de administración de derechos. Las etiquetas de confidencialidad también se pueden aplicar automáticamente si se configuran directivas que usen palabras clave y tipos de datos confidenciales (como números de tarjeta de crédito, números de seguridad social y números de identidad) para buscar y clasificar automáticamente datos confidenciales.
+**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** permite a las organizaciones clasificar documentos y mensajes de correo electrónico de forma inteligente mediante etiquetas de confidencialidad. Los usuarios pueden aplicar manualmente las etiquetas de confidencialidad en documentos en aplicaciones de Microsoft Office y en mensajes de correo electrónico en Outlook. Las etiquetas pueden aplicar automáticamente marcas de documento, protección mediante el cifrado y la exigencia de administración de derechos. Las etiquetas de confidencialidad también se pueden aplicar automáticamente si se configuran directivas que usen palabras clave y tipos de datos confidenciales (como números de tarjeta de crédito, números de seguridad social y números de identidad) para buscar y clasificar automáticamente datos confidenciales.
 
 Además, Microsoft ofrece "clasificadores que se pueden entrenar" que usan modelos de aprendizaje automático para identificar datos confidenciales basándose en el contenido, en lugar de usar solo la coincidencia de un patrón o los elementos en el contenido. Un clasificador aprende cómo identificar un tipo de contenido al revisar numerosos ejemplos del contenido que se va a clasificar. El entrenamiento de un clasificador comienza por añadir ejemplos de contenido para una categoría determinada. Después de aprender de estos ejemplos, el modelo se prueba añadiendo una mezcla de ejemplos coincidentes y no coincidentes. El clasificador predice si un ejemplo determinado entra o no en la categoría. Después, una persona confirma los resultados, ordenando los positivos, negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de las predicciones del clasificador. Cuando se publica el clasificador entrenado, este procesa el contenido de Microsoft SharePoint Online, Exchange Online y OneDrive para la Empresa y clasifica automáticamente el contenido.
 

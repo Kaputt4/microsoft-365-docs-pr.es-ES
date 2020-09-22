@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649384"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197708"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Trabajar con los resultados de la consulta de búsqueda avanzada
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -41,7 +44,7 @@ Aunque puede crear consultas de [búsqueda avanzada](advanced-hunting-overview.m
 ## <a name="view-query-results-as-a-table-or-chart"></a>Ver los resultados de la consulta como una tabla o un gráfico
 De forma predeterminada, la búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede mostrar los mismos datos que un gráfico. La búsqueda avanzada es compatible con las siguientes vistas:
 
-| Tipo de vista | Description |
+| Tipo de vista | Descripción |
 | -- | -- |
 | **Table** | Muestra los resultados de la consulta en formato de tabla. |
 | **Gráfico de columnas** | Representa una serie de elementos únicos en el eje x como barras verticales cuyos altos representan valores numéricos de otro campo. |
@@ -151,7 +154,7 @@ Cuando aplica el filtro para modificar la consulta y, a continuación, ejecuta l
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)

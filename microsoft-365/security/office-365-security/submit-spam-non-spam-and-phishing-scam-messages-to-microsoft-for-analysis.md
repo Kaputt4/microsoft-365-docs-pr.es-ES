@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores y los usuarios finales pueden obtener información sobre cómo realizar análisis a los mensajes de correo electrónico (se permite el correo marcado como correo incorrecto o malo) a Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94f00f8399164a84d2cb9dae0c4c416b73dfb0dc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827814"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202208"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Si es administrador de una organización con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).

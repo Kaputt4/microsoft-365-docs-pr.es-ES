@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
-ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827414"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196052"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección del correo electrónico
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, el correo electrónico entrante puede marcarse con varias formas de protección. Por ejemplo, las directivas antiphishing de EOP integradas que están disponibles para todos los clientes de Microsoft 365 y las más sólidas directivas antiphishing de ATP que también están disponibles para clientes de Office 365 Advanced Threat Protection (Office 365 ATP). Los mensajes también pasan varios exámenes de detección de malware, correo no deseado, suplantación de identidad (phishing), etc. Teniendo en cuentan toda esta actividad, puede que haya cierta confusión con respecto a qué directiva se aplica.
 
@@ -37,8 +40,8 @@ Hay dos factores principales que determinan la Directiva que se aplica a un mens
 
   |Priority|Protección de correo electrónico|Categoría|Dónde administrar|
   |---|---|---|---|
-  |1|Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
-  |segundo|Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |1 |Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
+  |2 |Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |3|Correo no deseado de alta confianza|CAT: HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar inteligencia de identidades en EOP](learn-about-spoof-intelligence.md)|
   |5 |Correo no deseado|CAT: SPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
@@ -59,8 +62,8 @@ Por ejemplo, considere las siguientes directivas antiphishing de ATP **que se ap
 
   |Directiva contra la suplantación de identidad ATP|Priority|Suplantación de usuario|Directiva contra la suplantación|
   |---|---|---|---|
-  |Directiva A|1|Activada|Desactivada|
-  |Directiva B|segundo|Desactivada|Activada|
+  |Directiva A|1 |Activada|Desactivada|
+  |Directiva B|2 |Desactivada|Activada|
   |
 
 1. El mensaje se marca y se trata como falso, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación del usuario (8).

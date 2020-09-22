@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 70b687a185538b11cf0a8975eebf2a5d8b53ec11
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 78878593e345cd6744af54b54356ab7de9864ccf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648958"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197006"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -55,7 +58,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Búsqueda proactiva de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
 - [Información general sobre la Administración de amenazas y vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

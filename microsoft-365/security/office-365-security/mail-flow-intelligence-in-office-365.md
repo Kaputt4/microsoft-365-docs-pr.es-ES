@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307922"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198508"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar los mensajes de correo electrónico de EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentando la entrega de cada mensaje durante 24 horas. Transcurridas las 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
 

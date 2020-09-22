@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: 184ab53059a73de534d9a67a45fc41b20a73f13f
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d8ac32436a0b825e6e649dd7a23e73cad9a17480
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949702"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202226"
 ---
 # <a name="office-365-advanced-threat-protection-atp"></a>Protección contra amenazas avanzada de Office 365 (ATP)
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).

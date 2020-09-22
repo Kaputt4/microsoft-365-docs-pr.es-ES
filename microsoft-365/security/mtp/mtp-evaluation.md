@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62852dfe75794d5d0e33453f978967fff40813e1
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 202a5900dedece865f1aa328735477293a8a19c0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816942"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201776"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Crear un entorno piloto o un laboratorio de prueba de Microsoft Threat Protection 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -48,7 +51,7 @@ Esta guía le ayudará a:
 
 Hay tres fases para la creación de un entorno de laboratorio de prueba de Microsoft Threat Protection y su implementación:
 
-|Fase | Description | 
+|Fase | Descripción | 
 |:-------|:-----|
 | ![Fase 1: preparación](../../media/prepare.png)<br>[Fase 1: preparación](prepare-mtpeval.md)| Obtenga información sobre lo que debe tener en cuenta al implementar la protección contra amenazas de Microsoft en un laboratorio de pruebas o un entorno piloto: <br><br>-Partes interesadas y la firma <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración
 |  ![Fase 2: configuración](../../media/setup.png) <br>[Fase 2: configuración](setup-mtpeval.md)|  Siga los pasos iniciales para acceder al centro de seguridad de Microsoft 365 para configurar el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection. Se le guiará a:<br><br>-Inscríbase en la versión de prueba de Microsoft 365 E5 <br>  -Configurar dominio<br>-Asignar licencias de Microsoft 365 E5<br>-Completar el Asistente de configuración en el portal|

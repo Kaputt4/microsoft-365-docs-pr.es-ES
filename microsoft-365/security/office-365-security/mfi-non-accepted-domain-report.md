@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los mensajes de la organización local donde el dominio del remitente no está configurado en Microsoft 365.
-ms.openlocfilehash: 02692fbded20aa5062ce8add83925fb65c116630
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: d05489ec4a6d670fc89b5d943b3e7061506b6fe8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358583"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199330"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el centro de seguridad & cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 El informe de **dominio no aceptado** del [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) muestra información sobre los mensajes de la organización de correo electrónico local donde el dominio del remitente no está configurado como un dominio aceptado en la organización de Microsoft 365.
 
@@ -42,7 +45,7 @@ Si desplaza el puntero sobre un punto de datos (día) del gráfico, verá el nú
 
 Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Número de mensajes**
@@ -54,7 +57,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Cuando se selecciona una fila de la tabla, aparece un control flotante con la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Número de mensajes**

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre la característica de datos adjuntos seguros de ATP para Office 365 y sobre cómo obtener la característica para su suscripción.
-ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 1ff7021f1c9fa64d3f04cbcac7231733399ad2b8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656998"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198780"
 ---
 # <a name="atp-safe-attachments"></a>Datos adjuntos seguros ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-safe-attachments"></a>Información general sobre datos adjuntos seguros de ATP de Office 365
 
@@ -45,7 +48,7 @@ A continuación, asegúrese de que las directivas de datos adjuntos seguros de A
 
 Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 
-|Role|Dónde y cómo se asigna|
+|Rol|Dónde y cómo se asigna|
 |---|---|
 |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrador de seguridad|Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|

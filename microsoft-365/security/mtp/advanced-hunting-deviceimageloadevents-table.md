@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3c63808e503da5474176de11ff5df8d909ab58e3
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: afb6c74c11f1d24583e5b1087e6a3bea5ab6906d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797949"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198162"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -58,11 +61,11 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
-| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y timestamp. |

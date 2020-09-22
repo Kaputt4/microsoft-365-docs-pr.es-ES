@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 00e8b30507228df41c8eb29eac88102e59d0950b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: be39e3f9c1216e0af44820aa9365492eefdf4c86
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797973"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197090"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -45,10 +48,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento. Consulte la [Referencia del esquema del portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más detalles |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
-| `RemotePort` | int | Puerto TCP del dispositivo remoto al que se estaba conectando |
+| `RemotePort` | entero | Puerto TCP del dispositivo remoto al que se estaba conectando |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `LocalIP` | cadena | Dirección IP asignada al equipo local usada durante la comunicación |
-| `LocalPort` | int | Puerto TCP del equipo local usado durante la comunicación |
+| `LocalPort` | entero | Puerto TCP del equipo local usado durante la comunicación |
 | `Protocol` | string | Protocolo usado durante la comunicación |
 | `LocalIPType` | string | Tipo de dirección IP, por ejemplo Public, Private, Reserved, loopback, Teredo, FourToSixMapping y difusión |
 | `RemoteIPType` | string | Tipo de dirección IP, por ejemplo Public, Private, Reserved, loopback, Teredo, FourToSixMapping y difusión |
@@ -56,12 +59,12 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
-| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
-| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |

@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los códigos de error más comunes en los informes de no entrega (también conocidos como NDR o mensajes de devolución) de los remitentes de su organización.
-ms.openlocfilehash: f9017a7f041037c5db2dc9b9f4f5155b038bf2c7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: bc530cce54b3d4fd9f414920a8fb58f4322f6b5c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195969"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el centro de seguridad & cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 El **Informe de no entrega** del [Panel de flujo de correo](mail-flow-insights-v2.md) del [centro de seguridad & cumplimiento](https://protection.office.com) muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de devolución) para los usuarios de la organización. Este informe muestra los detalles de NDR para que pueda solucionar problemas de entrega de correo electrónico.
 
@@ -40,7 +43,7 @@ Si desplaza el puntero sobre un color específico (código de error) en un día 
 
 Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Código de informe de no entrega**
 - **Count**
 - **Mensajes de ejemplo**: los identificadores de mensaje de una muestra de mensajes afectados.
@@ -51,7 +54,7 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Cuando se selecciona una fila de la tabla, aparece un control flotante con la siguiente información:
 
-- **Fecha**
+- **Date**
 - Código de error de **Informe de no entrega**: puede hacer clic en el vínculo para buscar más información sobre las causas y soluciones para el código de error específico.
 - **Count**
 - **Mensajes de ejemplo**: puede hacer clic en **Ver mensajes de muestra** para ver los resultados de [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados.

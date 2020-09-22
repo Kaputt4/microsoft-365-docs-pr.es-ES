@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 36e76ae097dc31c6d7eb7eeff18dd2128ff0cc5c
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 61efedf8323833b65a5f0b0b857cd83a5c5b085a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649492"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198264"
 ---
 # <a name="alertinfo"></a>AlertInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Aplica para:**
 - Protección contra amenazas de Microsoft
@@ -50,6 +53,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

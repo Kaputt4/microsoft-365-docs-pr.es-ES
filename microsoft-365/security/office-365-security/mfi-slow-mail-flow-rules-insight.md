@@ -14,14 +14,17 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo usar la solución Fix Slow mail Flow rules Insight en el centro de seguridad & cumplimiento para identificar y corregir reglas de flujo de correo ineficientes o ineficientes (también conocidas como reglas de transporte) en su organización.
-ms.openlocfilehash: c933a6816c82161d0f4a6199ff1a339dd8a10eae
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2f9a35534ab4377cff164b38eeb66dd55c48d5b9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199270"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corrección de las reglas de flujo de correo lenta información del centro de seguridad & cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las reglas de flujo de correo ineficiente (también conocidas como reglas de transporte) pueden llevar a retrasos en el flujo de correo de la organización. Esta visión informa de las reglas de flujo de correo que afectan al flujo de correo de su organización. Algunos ejemplos de estos tipos de reglas son:
 

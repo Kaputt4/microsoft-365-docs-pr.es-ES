@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las diferencias entre el correo electrónico no deseado y el correo electrónico masivo (correo en gris) en Exchange Online Protection (EOP).
-ms.openlocfilehash: 17e6223175013678f389c0d7624cc4e4f4476f98
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 1e11f897a145f7b34acc81e1d132d6babac08979
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195484"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo en EOP?
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En los clientes de Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los clientes preguntan a veces: "¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?" En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
 

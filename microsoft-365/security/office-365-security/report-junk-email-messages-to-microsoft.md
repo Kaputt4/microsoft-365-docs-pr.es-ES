@@ -16,14 +16,17 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre las distintas formas de informar de los mensajes y los archivos buenos y no válidos a Microsoft para su análisis.
-ms.openlocfilehash: cff9d1b3524200fba9d7ba1775e0b9851027158d
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315868"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203664"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los usuarios y los administradores tienen varios métodos diferentes para informar de los mensajes de correo electrónico y los archivos a Microsoft.
 

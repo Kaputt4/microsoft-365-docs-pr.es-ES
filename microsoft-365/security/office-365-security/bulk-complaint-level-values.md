@@ -16,14 +16,17 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los valores del nivel de cumplimiento masivo (BCL) que se usan en Exchange Online Protection (EOP).
-ms.openlocfilehash: e24c0c97afcca2e7aa014d929d7b2131c6a2d074
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827438"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203532"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Nivel de queja masiva (BCL) en EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP asigna un nivel compatible con masa (BCL) a los mensajes entrantes de los correos masivos. La BCL se agrega al mensaje en un encabezado X y es similar al [nivel de confianza contra correo no deseado (SCL)](spam-confidence-levels.md) que se usa para identificar mensajes como correo no deseado. Una BCL superior indica que un mensaje masivo tiene más probabilidades de generar quejas (y, por lo tanto, es más probable que sea correo no deseado). Microsoft usa orígenes internos y de terceros para identificar el correo masivo y determinar la BCL adecuada.
 

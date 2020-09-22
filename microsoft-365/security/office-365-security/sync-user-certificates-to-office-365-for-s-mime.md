@@ -16,14 +16,17 @@ ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a publicar los certificados apropiados en Office 365 antes de enviar mensajes de S/MIME protegidos en Exchange Online.
-ms.openlocfilehash: 634b65e45b01186a27f9ae61c91d4b27f1a11635
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3551dbacc3cc6279d319860f1133d059216ae591
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826486"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202108"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>Sincronizar certificados de usuario con Office 365 para S/MIME
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Para que cualquier persona pueda enviar mensajes protegidos por S/MIME en Exchange Online, deben configurarse los certificados apropiados. Para enviar mensajes cifrados a través de Exchange Online, la aplicación de correo electrónico del remitente usa el certificado público del destinatario para cifrar el mensaje. Este certificado X.509 público debe publicarse en Office 365.
 

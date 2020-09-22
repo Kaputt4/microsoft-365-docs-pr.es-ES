@@ -12,14 +12,17 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre las opiniones y los informes que están disponibles en el panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826570"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198486"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Los administradores pueden usar el panel de flujo de correo en el centro de seguridad & cumplimiento para descubrir tendencias, información y emprender acciones para corregir problemas relacionados con el flujo de correo en su organización.
 

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo funciona el análisis de inteligencia de suplantación de identidad, incluido cómo determinar rápidamente qué remitentes envían de forma legítima un correo no autenticado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 6fc934491606a53ebfb4bae4f46ab9e1ee93467b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726509"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198576"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Tutorial: información de inteligencia sobre la simulación de ATP en Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con la protección contra amenazas avanzada (ATP), puede usar la información de inteligencia de inteligencia de suplantación para determinar rápidamente qué remitentes le envían de forma legítima un correo no autenticado. Al permitirles enviar mensajes suplantados, puede reducir el riesgo de que los falsos positivos vayan a sus usuarios. También puede usar la información de inteligencia de inteligencia de suplantación para supervisar y administrar pares de dominios permitidos para proporcionar un nivel adicional de seguridad y evitar que lleguen mensajes no seguros a su organización.
 
@@ -41,10 +44,10 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
 - Debe tener permisos asignados para poder realizar los procedimientos de este tema. Para usar el conocimiento de inteligencia de suplantación de identidad, debe pertenecer a uno de los siguientes grupos de roles:
 
-  - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Puede habilitar y deshabilitar la inteligencia de identidad en las directivas antiphishing de ATP. Para obtener más información, consulte [Configure ATP anti-phishing policies en Microsoft 365](configure-atp-anti-phishing-policies.md).
 
@@ -68,7 +71,7 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
    - **Modo Insight**. Si tiene una directiva de suplantación habilitada, la información le mostrará Cuántos correos se vieron afectados por nuestras capacidades de inteligencia empresarial de suplantación en los últimos 30 días.
 
-   - **Mode if**. Si no tiene habilitada ninguna directiva de suplantación de identidad, la información le mostrará Cuántos correos se *verían* afectados por nuestras capacidades de inteligencia de suplantación en los últimos 30 días.
+   - **Mode if**. Si no tiene habilitada ninguna directiva de suplantación de identidad, la información le mostrará Cuántos correos se  *verían*  afectados por nuestras capacidades de inteligencia de suplantación en los últimos 30 días.
 
    En cualquier caso, los dominios suplantados que se muestran en la información se separan en dos categorías: **pares de dominios sospechosos** y **pares de dominios no sospechosos**. Estas categorías se subdividen en tres diferentes recipientes para su revisión.
 
@@ -102,7 +105,7 @@ Puede Agregar o quitar un dominio de la lista de remitentes seguros de AllowedTo
 
 Esto modifica la combinación única de par de dominios del dominio falso y de la infraestructura de envío y no proporciona cobertura para todo el dominio falso o la infraestructura de envío de forma aislada.
 
-Por ejemplo, si agrega el siguiente par de dominios a la lista de permitidos del *remitente: "* gmail.com" y envía la *infraestructura* "TMS *. mx.com",* sólo se permitirá la suplantación de correo desde ese par de dominios. Otros remitentes que intentan imitar "gmail.com" y otros dominios que intentan simular "tms.mx.com" seguirán protegidos por inteligencia de suplantación de identidad.
+Por ejemplo, si agrega el siguiente par de dominios a la lista de permitidos del  *remitente: "*  gmail.com" y envía la *infraestructura* "TMS *. mx.com",* sólo se permitirá la suplantación de correo desde ese par de dominios. Otros remitentes que intentan imitar "gmail.com" y otros dominios que intentan simular "tms.mx.com" seguirán protegidos por inteligencia de suplantación de identidad.
 
 ## <a name="related-topics"></a>Temas relacionados
 

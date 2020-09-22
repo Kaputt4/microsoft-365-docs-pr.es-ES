@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01a014de3de0a7433aa154d251aa8e1ad5487400
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866912"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197922"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Las amenazas de la Cyber son cada vez más frecuentes y sofisticadas. Es fundamental para las organizaciones evaluar rápidamente su postura de seguridad y resistencia frente a amenazas emergentes específicas.
 

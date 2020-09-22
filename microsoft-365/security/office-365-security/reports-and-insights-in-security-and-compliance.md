@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los informes y la información inteligentes disponibles en el centro de seguridad & cumplimiento y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 7f8094c46868118bb88858dab6cd12b2427382be
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652782"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196340"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Si forma parte del Microsoft para el equipo de seguridad empresarial de 365 de la organización y tiene los [permisos necesarios asignados en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md), puede tener acceso a una variedad de informes, incluidos informes inteligentes e información. Lea este artículo para obtener información general sobre estos informes y opiniones, y dónde obtener más información sobre informes específicos.
 

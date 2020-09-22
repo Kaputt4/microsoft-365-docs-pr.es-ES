@@ -14,16 +14,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los equipos ahora tendrán acceso a vínculos seguros en el momento de hacer clic. Si usa chats 1-en-1 chats, entre grupos o en canales y pestañas, si tiene una suscripción a Office 365 ATP, tendrá la posibilidad de habilitar y usar esta característica de seguridad.
-ms.openlocfilehash: d7586dba86c7ec9f43457b5510a1255e06bb6bf9
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 362fb37b352a77aea07b899b707dbf4ac3d440d5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588281"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198756"
 ---
 <!--06/21/2019-->
 
 # <a name="safe-links-in-teams"></a>Vínculos seguros en Teams
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Esta característica se encuentra en **versión preliminar pública** para los clientes del programa de adopción de tecnología de Microsoft Teams (TAP) a partir del 28 de febrero de 2020. Esta nota se quitará del artículo cuando vínculos seguros para Teams esté más disponible.

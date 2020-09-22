@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico que aceptan o rechazan Exchange Online Protection (EOP) y Outlook.com para ayudar a evitar la suplantación de identidad (phishing).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827426"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196064"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección from para evitar la suplantación de identidad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema. Esta aplicación se habilitó en noviembre de 2017.
 

@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173313"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203484"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las vistas de campañas son una característica del plan 2 de la protección contra amenazas avanzada (ATP) (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento ATP plan 2). Vistas de campañas en el centro de seguridad & cumplimiento identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
 

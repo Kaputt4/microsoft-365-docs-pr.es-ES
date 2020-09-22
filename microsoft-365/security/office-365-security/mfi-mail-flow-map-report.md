@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el mapa del flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para visualizar y realizar un seguimiento de la forma en que el correo fluye hacia y desde la organización a través de conectores y sin usar conectores.
-ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358595"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199376"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el centro de seguridad & cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 El **mapa de flujo de correo** en el [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) ofrece información sobre cómo fluye el correo a través de la organización. Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.
 
@@ -52,7 +55,7 @@ La información relacionada se muestra debajo del mapa de flujo de correo si est
 
 Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Categoría**
 - **Conector/proveedor de servicios de terceros**
 - **Dominio de remitente/destinatario**
@@ -68,6 +71,6 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Para volver a la vista informes, haga clic en **Ver informe**.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

@@ -18,14 +18,17 @@ search.appverid:
 description: Esta solución le indica cuáles podrían ser los ataques Cybersecurity más comunes en Microsoft 365 y cómo responder a ellos.
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818800"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198708"
 ---
 # <a name="security-incident-response"></a>Respuesta de incidente de seguridad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Resumen:** Esta solución le indica qué son los indicadores para los ataques más comunes de Cybersecurity en Office 365, cómo confirmar positivamente cualquier ataque dado y cómo responder a él.
 

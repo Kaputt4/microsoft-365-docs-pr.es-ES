@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el nivel de confianza contra correo no deseado (SCL) que se aplica a los mensajes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827402"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202238"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Nivel de confianza contra correo no deseado (SCL) en EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes entrantes pasan por el filtrado de correo no deseado en EOP y se les asigna una puntuación de correo no deseado. Esa puntuación se asigna a un nivel de confianza de correo no deseado (SCL) individual que se agrega al mensaje en un encabezado X. Un SCL más alto indica que un mensaje es más probable que sea correo no deseado. EOP realiza una acción en el mensaje en función del SCL.
 
@@ -45,7 +48,7 @@ Verá que SCL 2, 3, 4, 7 y 8 no se usan en el filtrado de correo no deseado.
 
 Puede usar reglas de flujo de correo (también conocidas como reglas de transporte) para marcar el SCL en los mensajes. Si usa una regla de flujo de correo para establecer el SCL, los valores 5 o 6 activarán la acción de filtrado de correo no deseado para **correo no deseado**, y los valores 7, 8 o 9 activarán la acción de filtrado de correo no deseado para **correo no deseado de alta confianza**. Para obtener más información, vea [usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL) en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-Al igual que el SCL, el nivel de queja masiva (BCL) identifica un correo electrónico en masa malo (también conocido como _correo gris_). Una BCL superior indica que un mensaje de correo masivo es más probable que genere quejas (y, por lo tanto, sea más probable que sea correo no deseado). El umbral de BCL se configura en las directivas contra correo no deseado. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md), [nivel de queja masiva (BCL) en EOP](bulk-complaint-level-values.md), y [¿cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Al igual que el SCL, el nivel de queja masiva (BCL) identifica un correo electrónico en masa malo (también conocido como _correo gris_). Un BCL superior indica que es más probable que un mensaje de correo masivo generen quejas (y, por lo tanto, es más probable que sea correo no deseado). El umbral de BCL se configura en las directivas contra correo no deseado. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md), [nivel de queja masiva (BCL) en EOP](bulk-complaint-level-values.md), y [¿cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 |<!-- -->|
 |---|

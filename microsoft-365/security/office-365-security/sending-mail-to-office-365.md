@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información como remitente externo, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. Obtenga información sobre cómo informar sobre el correo electrónico no deseado & intentos de suplantación de identidad como usuario externo.
-ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825190"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196802"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envío de correo a Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Estos artículos ayudan a los remitentes externos a mejorar su reputación y aumentar su capacidad para entregar correo electrónico a los usuarios en Microsoft 365. También proporcionan información acerca de cómo puede informar sobre el correo no deseado y los intentos de suplantación de identidad, aunque no sea usted mismo un usuario de Microsoft 365.
 

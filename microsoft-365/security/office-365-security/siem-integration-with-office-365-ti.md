@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Integre el servidor de SIEM de su organización con la protección contra amenazas avanzada de Office 365 y eventos de amenazas relacionados en la API de administración de actividad de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e9dcf24adfb227d0c454b4f5952c879cea511f7
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203660"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Integración de SIEM con la protección contra amenazas avanzada
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Si su organización usa un servidor de incidentes de seguridad y de administración de eventos (SIEM), puede integrar Office 365 Advanced Threat Protection (Office 365 ATP) con su servidor de SIEM. Puede configurar esta integración mediante la [API de administración de actividad de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
@@ -50,7 +53,7 @@ El servidor de SIEM o un sistema similar sondea la **auditoría.** carga de trab
 
 En la siguiente tabla se resumen los valores de **AuditLogRecordType** relevantes para los eventos de ATP de Office 365:
 
-|Valor|Nombre del miembro|Description|
+|Valor|Nombre del miembro|Descripción|
 |---|---|---|
 |28|ThreatIntelligence|Eventos de suplantación de identidad y malware de Exchange Online Protection y Office 365 ATP.|
 |41|ThreatIntelligenceUrl|Vínculos seguros ATP tiempo de bloqueo y bloqueo de eventos de invalidación de ATP de Office 365.|

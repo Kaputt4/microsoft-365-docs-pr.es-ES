@@ -16,14 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general de las páginas de advertencia que puede ver cuando la protección contra amenazas avanzada de Office 365 está en funcionamiento.
-ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 7fbca71e7c000cc73b71feeaa777042278e35c4b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588293"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198802"
 ---
 # <a name="atp-safe-links-warning-pages"></a>Páginas de advertencia de vínculos seguros de ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si usa Outlook.com, Microsoft 365 Family o Microsoft 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).

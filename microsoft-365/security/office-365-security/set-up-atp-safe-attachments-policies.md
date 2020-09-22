@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197228"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre datos adjuntos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -48,7 +51,7 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
   ****
 
-  |Role|Dónde y cómo se asigna|
+  |Rol|Dónde y cómo se asigna|
   |---|---|
   |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
   |Administrador de seguridad |Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
@@ -95,7 +98,7 @@ A medida que configure las directivas de datos adjuntos seguros de ATP, podrá e
 
 |Opción|Efecto|Se usa cuando se desea:|
 |---|---|---|
-|**Desactivado**|No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes|Desactivar el análisis para los destinatarios seleccionados.  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento.  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros de ATP para los destinatarios que solo reciben mensajes de correo electrónico de remitentes de confianza.**|
+|**Desactivar**|No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes|Desactivar el análisis para los destinatarios seleccionados.  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento.  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros de ATP para los destinatarios que solo reciben mensajes de correo electrónico de remitentes de confianza.**|
 |**Monitor**|Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que ocurre con malware detectado|Ver dónde se encuentra el malware detectado en su organización|
 |**Desbloquear**|Impide que se prosigan los mensajes con datos adjuntos de malware detectados  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> Bloquea los mensajes y datos adjuntos futuros de forma automática|Proteger a su organización de ataques repetidos con los mismos datos adjuntos de malware|
 |**Replace**|Quita los datos adjuntos de malware detectados  <br/> Notifica a los destinatarios que se han quitado datos adjuntos  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes|Elevar la visibilidad a los destinatarios que los datos adjuntos se quitaron debido al malware detectado|
@@ -104,7 +107,7 @@ A medida que configure las directivas de datos adjuntos seguros de ATP, podrá e
 |**Aplicar la selección anterior si el análisis de malware para archivos adjuntos se agota el tiempo de espera o se produce un error**|Aplica la acción configurada para datos adjuntos no seguros a los datos adjuntos que no se pueden analizar (debido a un tiempo de espera o un error)|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se hayan implementado las directivas de datos adjuntos seguros de ATP, puede ver cómo está trabajando ATP para su organización consultando los informes. Vea los siguientes recursos para obtener más información:
 

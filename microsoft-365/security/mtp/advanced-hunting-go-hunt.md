@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 496deff5d2fda47b7ffac4bc87e98bf28e90ea50
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430416"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196970"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Búsqueda rápida de información de entidad o eventos con Go Hunt
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -37,7 +40,7 @@ La acción *ir a búsqueda* está disponible en varias secciones del centro de s
 
     ![Imagen que muestra los detalles del buzón con la opción de búsqueda Go](../../media/mtp-ah/go-hunt-email.png)
 
-- En la página incidente, también puede tener acceso a una lista de entidades en la pestaña evidencia. al seleccionar una de estas entidades, se obtiene una opción para buscar información sobre dicha entidad rápidamente.
+- En la página incidente, también puede tener acceso a una lista de entidades en la pestaña evidencia. La selección de una de estas entidades proporciona una opción para buscar información sobre la entidad rápidamente.
 
     ![Imagen que muestra el archivo seleccionado con la opción go Hunt en la pestaña Evidence](../../media/mtp-ah/go-hunt-evidence-file.png)
 

@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73d807a37f1c85e9d79353334cac4208b86bbdc2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633476"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198890"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -38,7 +41,7 @@ ms.locfileid: "43633476"
 ## <a name="supported-services"></a>Servicios admitidos
 Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o A5, o una combinación válida de licencias, proporciona acceso a los siguientes servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365. [Ver requisitos de licencia](prerequisites.md#licensing-requirements)
 
-| Servicio compatible | Description |
+| Servicio compatible | Descripción |
 | ------ | ------ |
 | ATP de Microsoft Defender | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
 | ATP de Office 365 | Protección avanzada de sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |

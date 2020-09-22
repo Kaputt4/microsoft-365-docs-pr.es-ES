@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f3c13025203a59eb192b9e0d193c429be57a83ce
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 1e866c2c7fb43b4ab041a1d3d5d6e66c2bbb0767
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797985"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197102"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -52,7 +55,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RemoteDeviceName` | string | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento que se notifica, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemoteIPType` | string | Tipo de dirección IP, por ejemplo Public, Private, Reserved, loopback, Teredo, FourToSixMapping y difusión |
-| `RemotePort` | int | Puerto TCP del dispositivo remoto al que se estaba conectando |
+| `RemotePort` | entero | Puerto TCP del dispositivo remoto al que se estaba conectando |
 | `AdditionalFields` | string | Información adicional sobre el evento en el formato de matriz JSON |
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
@@ -63,11 +66,11 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
-| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y timestamp. |

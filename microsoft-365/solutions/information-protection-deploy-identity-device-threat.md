@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Evite las violaciones de datos personales con los servicios de identidad, dispositivos y protección contra amenazas de Microsoft 365.
-ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a0efdcfe8e9d27e19b6cf1355a6d0943b7cdaa59
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520986"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195668"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Usar identidad, dispositivo y protección contra amenazas para la normativa de privacidad de datos
 
@@ -33,17 +33,17 @@ Aunque las regulaciones de privacidad de datos varían en su especificidad, la e
 
 - Los datos personales se procesarán de manera que se garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida, destrucción o daños accidentales, mediante las medidas técnicas o organizacionales adecuadas (integridad y confidencialidad).
 
-Debido a que las infracciones de datos personales suelen deberse a la intromisión de cuentas de usuarios finales o administrativos y al acceso malintencionado al sistema. Por ejemplo, una cuenta de administrador pirata puede dar como resultado la exfiltración de números de tarjeta de crédito de clientes u otra información personal. Se deben implementar todos los requisitos generales de identidad, dispositivo y protección contra amenazas disponibles con Microsoft 365 potencialmente, que se reflejarán en la puntuación de cumplimiento.
+Debido a que las infracciones de datos personales suelen deberse a la intromisión de cuentas de usuarios finales o administrativos y al acceso malintencionado al sistema. Por ejemplo, una cuenta de administrador pirata puede dar como resultado la exfiltración de números de tarjeta de crédito de clientes u otra información personal. Todos los requisitos generales de identidad, dispositivo y protección contra amenazas disponibles con Microsoft 365 potencialmente deben implementarse, lo que se reflejará en su puntuación de cumplimiento, que se encuentra en el administrador de cumplimiento.
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a>Uso de los resultados del trabajo de evaluación y la puntuación de cumplimiento
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Uso de los resultados del administrador de cumplimiento y trabajo de evaluación
 
-La puntuación de cumplimiento incluye la protección contra amenazas, dispositivos y identidades mediante estas categorías:
+El administrador de cumplimiento incluye la protección contra amenazas, dispositivos y identidades mediante estas categorías:
 
 - La identidad corresponde a la categoría de **acceso de control**
 - El dispositivo corresponde a la categoría **administrar dispositivos**
 - La protección contra amenazas corresponde a la categoría **protección contra amenazas**
  
-Si se seleccionan en todo el conjunto de ejemplo de cuatro normativas de privacidad de datos principales, la puntuación de cumplimiento especifica 90 acciones de mejora, la mayoría de las cuales se puntuan como "27". Como un número tan elevado se denomina por puntuación de cumplimiento para estas categorías, algunos de los más comunes se enumeran aquí, como referencia.
+Si se seleccionan en el conjunto de ejemplo de cuatro normativas de privacidad de datos principales, el administrador de cumplimiento especifica las acciones de mejora de 90, la mayoría de las cuales se puntuan como "27". Dado que el administrador de cumplimiento llama a un número tan grande para estas categorías, algunos de los más comunes se enumeran aquí, como referencia.
 
 Use [Azure Active Directory (Azure ad)](https://azure.microsoft.com/services/active-directory/) para la identidad y la categoría de **acceso de control** , con la que puede:
 

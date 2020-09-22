@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ebf220472db69d48127b805256e15246bd400cb
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 14785e032d6e4a7a0868308f4029df623456af2a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552753"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197898"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados de la consulta de búsqueda avanzada
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -55,10 +58,10 @@ Para obtener más información sobre cómo estas acciones de respuesta se realiz
 ## <a name="quarantine-files"></a>Archivos en cuarentena
 Puede implementar la acción de *cuarentena* en los archivos para que se pongan en cuarentena automáticamente cuando se detecten. Al seleccionar esta acción, puede elegir entre las siguientes columnas para identificar los archivos de los resultados de la consulta que se pondrán en cuarentena:
 
-- `SHA1`(En la mayoría de las tablas de búsqueda avanzadas), es el SHA-1 del archivo que se ha visto afectado por la acción grabada. Por ejemplo, si se ha copiado un archivo, sería el archivo copiado.
-- `InitiatingProcessSHA1`(En la mayoría de las tablas de la caza avanzadas), es el archivo responsable de iniciar la acción grabada. Por ejemplo, si se inició un proceso secundario, sería el proceso principal. 
-- `SHA256`: Es el equivalente de SHA-256 del archivo identificado por la `SHA1` columna.
-- `InitiatingProcessSHA256`: Es el equivalente de SHA-256 del archivo identificado por la `InitiatingProcessSHA1` columna.
+- `SHA1` (En la mayoría de las tablas de búsqueda avanzadas), es el SHA-1 del archivo que se ha visto afectado por la acción grabada. Por ejemplo, si se ha copiado un archivo, sería el archivo copiado.
+- `InitiatingProcessSHA1` (En la mayoría de las tablas de la caza avanzadas), es el archivo responsable de iniciar la acción grabada. Por ejemplo, si se inició un proceso secundario, sería el proceso principal. 
+- `SHA256` : Es el equivalente de SHA-256 del archivo identificado por la `SHA1` columna.
+- `InitiatingProcessSHA256` : Es el equivalente de SHA-256 del archivo identificado por la `InitiatingProcessSHA1` columna.
 
 Para obtener más información sobre cómo se llevan a cabo las acciones de cuarentena y cómo se pueden restaurar los archivos, [vea acciones de respuesta en los archivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 

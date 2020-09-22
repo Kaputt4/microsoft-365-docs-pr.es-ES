@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el conocimiento del flujo de correo entrante y saliente en el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 33bfe3882c274fa655d17c80aba007e8d246b250
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357427"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199306"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Visión del flujo de correo entrante y saliente en el centro de seguridad & cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 La introducción al **flujo de correo entrante y** saliente del [Panel de flujo de correo](mail-flow-insights-v2.md) del [centro de seguridad & cumplimiento](https://protection.office.com) combina la información del [Informe de conector](view-mail-flow-reports.md#connector-report) y del antiguo Informe de **información general de TLS** en un único punto.
 
@@ -52,6 +55,6 @@ Puede hacer clic en el vínculo de **Informe de conector** para ir al [Informe d
 
 Para las conexiones TLS 1,0, es necesario que el servidor de correo electrónico o el servidor de su compañero se actualice o se corrija para evitar problemas cuando la compatibilidad con TLS 1,0 está en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

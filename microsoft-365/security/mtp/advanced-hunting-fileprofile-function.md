@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797787"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196982"
 ---
 # <a name="fileprofile"></a>FileProfile()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -36,8 +39,8 @@ La `FileProfile()` función es una función de enriquecimiento de la [búsqueda 
 | SHA1 | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | SHA256 | string | SHA-256 del archivo al que se aplicó la acción grabada |
 | MD5 | string | Hash MD5 del archivo al que se aplicó la acción grabada |
-| FileSize | int | Tamaño del archivo en bytes |
-| GlobalPrevalence | int | Número de instancias de la entidad observadas por Microsoft globalmente |
+| FileSize | entero | Tamaño del archivo en bytes |
+| GlobalPrevalence | entero | Número de instancias de la entidad observadas por Microsoft globalmente |
 | GlobalFirstSeen | datetime | Fecha y hora en que Microsoft observó por primera vez la entidad |
 | GlobalLastSeen | datetime | Fecha y hora en que Microsoft recibió la última observación global de la entidad |
 | Firmante | string | Información sobre el firmante del archivo |

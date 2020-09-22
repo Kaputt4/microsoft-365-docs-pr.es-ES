@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estas recomendaciones de procedimientos recomendados para la protección independiente de Exchange Online (EOP) con el fin de establecer el éxito y evitar errores de configuración habituales.
-ms.openlocfilehash: eb8e4aff765fbc1ab13c603f32ca0af51f87a4ae
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: cb3aa36720a6a46932d69341394304937bb1a296
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827670"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203568"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedimientos recomendados para configurar EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Siga estas recomendaciones de procedimientos recomendados para la protección independiente de Exchange Online (EOP) con el fin de establecer el éxito y evitar errores de configuración habituales. En este tema se supone que ya completó el proceso de configuración. Si no completó la configuración de EOP, vea [Configurar un servicio de EOP](set-up-your-eop-service.md).
 
@@ -41,7 +44,7 @@ Esta configuración cubre una variedad de características que se encuentran fue
 
 ****
 
-|Nombre de la característica de seguridad|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |[Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sí|Sí||
 |[Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)|Sí|Sí||

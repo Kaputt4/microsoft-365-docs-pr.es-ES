@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en el plan de protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 6c009a756b30d4b35159b98b145b19b72c9ab541
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: c37129c7c3801ab1e55bd59f9c40c9e65f9cbd8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656676"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198438"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las capacidades de investigación y respuesta de amenazas de [Office 365 Advanced Threat Protection](office-365-atp.md) ayudan a los analistas de seguridad y los administradores a proteger a los usuarios de la organización 365 para la empresa por:
 - Facilitar la identificación, el seguimiento y la comprensión de cyberattacks
@@ -44,7 +47,7 @@ La exposición de amenazas y las capacidades de respuesta del centro de segurida
 - [Explorador](#threat-explorer)
 - [Incidentes](#incidents)
 - [Simulador de ataque](#attack-simulator)
-- [Investigación y respuesta de amenazas](automated-investigation-response-office.md)
+- [Investigación y respuesta automatizadas](automated-investigation-response-office.md)
 
 ### <a name="threat-dashboard"></a>Panel de amenazas
 
@@ -112,7 +115,7 @@ La protección contra amenazas avanzada de Office 365 usa el control de acceso b
 |Integración del plan 2 de la protección contra amenazas avanzada de Office 365 con la protección contra amenazas avanzada de Microsoft defender  <br/><br/> Integración del plan 2 de la protección contra amenazas avanzada de Office 365 con un servidor de SIEM|El **administrador global** o el rol de **Administrador de seguridad** asignado en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **Asimismo** ---<br/>Una función adecuada asignada en aplicaciones adicionales (como el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor de Siem)|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
 

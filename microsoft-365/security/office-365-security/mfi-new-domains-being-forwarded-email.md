@@ -11,14 +11,17 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos dominios que reenvían el conocimiento del correo electrónico en el centro de administración de Exchange moderno para investigar Cuándo los usuarios de la organización reenvían mensajes a dominios externos a los que nunca se ha reenviado.
-ms.openlocfilehash: 0f0622fc686cb9c90790630e16c187bf9f69d918
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 62e254e324322aec55d692cfe3128e8e4dd60e4b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358263"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200740"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Aunque puede tener motivos empresariales válidos para reenviar mensajes de correo electrónico a destinatarios externos en dominios específicos, es sospechoso cuando los usuarios de la organización inician repentinamente el reenvío de mensajes a dominios externos y nadie en la organización ha reenviado mensajes a esos dominios antes (nuevos dominios). Esta condición podría indicar que las cuentas de usuario están comprometidas. Si sospecha que las cuentas se han puesto en peligro, consulte [responder a una cuenta de correo electrónico en peligro](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
