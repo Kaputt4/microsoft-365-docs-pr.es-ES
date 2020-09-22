@@ -18,16 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: d29732051f2a7c023992287a131f3bb68bd28a4d
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
+ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104504"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177128"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
 La prevención de pérdida de datos (DLP) en el centro de cumplimiento incluye muchos tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos. Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Además, pueden usarse pruebas contundentes como palabras clave y sumas de comprobación para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
+
+Los tipos de información confidencial requieren una de estas suscripciones:
+- Microsoft 365 E3
+- Microsoft 365 E5
+
+Los tipos de información confidencial se pueden usar en:
+- directivas de prevención de pérdida de datos
+- polcies de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
+
   
 ## <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
