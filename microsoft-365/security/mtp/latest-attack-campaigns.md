@@ -15,17 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01a014de3de0a7433aa154d251aa8e1ad5487400
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866912"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197922"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a><span data-ttu-id="3d168-104">Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas</span><span class="sxs-lookup"><span data-stu-id="3d168-104">Understand the latest attack campaigns and techniques with threat analytics</span></span> 
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a><span data-ttu-id="6b8b0-104">Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas</span><span class="sxs-lookup"><span data-stu-id="6b8b0-104">Understand the latest attack campaigns and techniques with threat analytics</span></span> 
 
-<span data-ttu-id="3d168-105">Las amenazas de la Cyber son cada vez más frecuentes y sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="3d168-105">Cyber threats are becoming more frequent and sophisticated.</span></span> <span data-ttu-id="3d168-106">Es fundamental para las organizaciones evaluar rápidamente su postura de seguridad y resistencia frente a amenazas emergentes específicas.</span><span class="sxs-lookup"><span data-stu-id="3d168-106">It's critical for organizations to quickly assess their security posture and resilience against specific emerging threats.</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3d168-107">**Threat Analytics** es un conjunto de informes interactivos publicados tan pronto como se identifican las amenazas emergentes (nuevas técnicas, campañas de ataque y brotes de malware).</span><span class="sxs-lookup"><span data-stu-id="3d168-107">**Threat analytics** is a set of interactive reports published as soon as emerging threats—new techniques, attack campaigns, and malware outbreaks—are identified.</span></span> <span data-ttu-id="3d168-108">Los informes le ayudarán a evaluar el impacto de las amenazas en su entorno y a proporcionar acciones recomendadas para contener, aumentar la resistencia organizativa y evitar amenazas específicas.</span><span class="sxs-lookup"><span data-stu-id="3d168-108">The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.</span></span>
 
-<span data-ttu-id="3d168-109">[Obtenga más información sobre el análisis de amenazas en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).</span><span class="sxs-lookup"><span data-stu-id="3d168-109">[Learn more about threat analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).</span></span>  
+<span data-ttu-id="6b8b0-105">Las amenazas de la Cyber son cada vez más frecuentes y sofisticadas.</span><span class="sxs-lookup"><span data-stu-id="6b8b0-105">Cyber threats are becoming more frequent and sophisticated.</span></span> <span data-ttu-id="6b8b0-106">Es fundamental para las organizaciones evaluar rápidamente su postura de seguridad y resistencia frente a amenazas emergentes específicas.</span><span class="sxs-lookup"><span data-stu-id="6b8b0-106">It's critical for organizations to quickly assess their security posture and resilience against specific emerging threats.</span></span>
+
+<span data-ttu-id="6b8b0-107">**Threat Analytics** es un conjunto de informes interactivos publicados tan pronto como se identifican las amenazas emergentes (nuevas técnicas, campañas de ataque y brotes de malware).</span><span class="sxs-lookup"><span data-stu-id="6b8b0-107">**Threat analytics** is a set of interactive reports published as soon as emerging threats—new techniques, attack campaigns, and malware outbreaks—are identified.</span></span> <span data-ttu-id="6b8b0-108">Los informes le ayudarán a evaluar el impacto de las amenazas en su entorno y a proporcionar acciones recomendadas para contener, aumentar la resistencia organizativa y evitar amenazas específicas.</span><span class="sxs-lookup"><span data-stu-id="6b8b0-108">The reports help you the assess impact of threats to your environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.</span></span>
+
+<span data-ttu-id="6b8b0-109">[Obtenga más información sobre el análisis de amenazas en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).</span><span class="sxs-lookup"><span data-stu-id="6b8b0-109">[Learn more about threat analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).</span></span>  
