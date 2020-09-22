@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo enrutar correo no deseado a las carpetas de correo no deseado del usuario en un entorno híbrido de protección de Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15acc9ad87fa0c785998895d026dae036d9ddd7b
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4c01ad0e8efa4d28e1b5d1e72b3daa87bb01b619
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547669"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196598"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar un EOP independiente para enviar correo no deseado a la carpeta de correo no deseado en entornos híbridos
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > Este tema es solo para clientes de EOP independientes en entornos híbridos. Este tema no se aplica a los clientes de Microsoft 365 con buzones de correo de Exchange Online.
@@ -46,7 +49,7 @@ En este tema se describe cómo crear estas reglas de flujo de correo en el centr
 > [!TIP]
 > En lugar de entregar los mensajes a la carpeta de correo no deseado del usuario local, puede configurar directivas contra correo no deseado en EOP para poner en cuarentena los mensajes de correo no deseado en EOP. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Debe tener asignados permisos en el entorno local de Exchange para poder realizar estos procedimientos. En concreto, debe tener asignado el rol **reglas de transporte** , que se asigna a las **funciones administración**de la organización, **Administración del cumplimiento**y administración de **registros** de forma predeterminada. Para obtener más información, vea [Agregar miembros a un grupo de funciones](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
 

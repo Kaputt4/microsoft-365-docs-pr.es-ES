@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401995"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195527"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa Premium a Microsoft 365 E3
 
@@ -50,8 +50,8 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Característica    | Soporte en Microsoft 365 Business Premium    | Soporte técnico de Microsoft 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
-| Aplicaciones de Office *    | [Aplicaciones de Microsoft 365 para negocios](#office-365-business)    | Aplicaciones de Microsoft 365 para empresas | 
+| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
+| Aplicaciones de Office *    | [Aplicaciones de Microsoft 365 para negocios](#office-365-business)    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
 | Teams    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
@@ -79,13 +79,13 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Enterprise CAL Suite (Exchange, SharePoint, Skype, Windows, Microsoft Endpoint Configuration Manager, Windows Rights Management)| |         ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | **Cumplimiento**        | | | 
 | Archivado de correo electrónico ilimitado    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
-| Puntuación de cumplimiento/administrador de cumplimiento    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| Administrador de cumplimiento    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | eDiscovery    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Conservación local y retención por juicio    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Etiquetas de retención y directivas de retención de administración de registros de mensajería (MRM)    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 ||||
 
-\*Los usuarios a los que se les asignó acceso a las aplicaciones de SaaS pueden obtener acceso SSO a un máximo de 10 aplicaciones. Los administradores pueden configurar el SSO y cambiar el acceso del usuario a distintas aplicaciones de SaaS, pero el acceso SSO solo se permite para 10 aplicaciones por usuario a la vez. Todas las aplicaciones de Office 365 se cuentan como una aplicación única.
+\* Los usuarios a los que se les asignó acceso a las aplicaciones de SaaS pueden obtener acceso SSO a un máximo de 10 aplicaciones. Los administradores pueden configurar el SSO y cambiar el acceso del usuario a distintas aplicaciones de SaaS, pero el acceso SSO solo se permite para 10 aplicaciones por usuario a la vez. Todas las aplicaciones de Office 365 se cuentan como una aplicación única.
 
 ## <a name="migration"></a>Migración
 
@@ -136,7 +136,7 @@ Windows 10 Enterprise E3 también incluye administración empresarial del aislam
 
 No es necesario realizar ningún cambio en la configuración de Intune actual antes de la migración, lo que incluye los dispositivos inscritos y la configuración de dispositivos y aplicaciones.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business Premium incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 

@@ -12,14 +12,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: db6109fb73f0e208ab4403e2469bc955a1a01b38
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43517073"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196862"
 ---
 # <a name="device-profile-page"></a>Página de Perfil de dispositivo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 El portal de seguridad 365 de Microsoft proporciona páginas de Perfil de dispositivo para que pueda evaluar rápidamente el estado y el estado de los dispositivos de la red.
 

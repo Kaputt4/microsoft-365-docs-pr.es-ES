@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Microsoft 365.
-ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 2256cde6a3ca3a8ddd728cb2464adff702fa94c8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739246"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195836"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico se encuentra en Microsoft 365? Si cree que no debe recibir el mensaje de error, puede usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados.
 

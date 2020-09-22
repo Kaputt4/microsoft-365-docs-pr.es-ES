@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e5f17da63f7bb0306c4b5899771d2e324770705c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: dd49cc0bab2013a0f786266aa87d5575e2b4a2fd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798031"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198242"
 ---
 # <a name="deviceevents"></a>DeviceEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -55,7 +58,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `RemoteDeviceName` | cadena | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
-| `ProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso recién creado |
+| `ProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | datetime | Fecha y hora de creación del proceso |
 | `ProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de la elevación de privilegios de control de acceso de usuario (UAC) que se aplica al proceso recién creado. |
@@ -64,9 +67,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RegistryValueName` | string | Nombre del valor del registro al que se aplicó la acción grabada |
 | `RegistryValueData` | string | Datos del valor del registro al que se aplicó la acción grabada |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
-| `RemotePort` | int | Puerto TCP del dispositivo remoto al que se estaba conectando |
+| `RemotePort` | entero | Puerto TCP del dispositivo remoto al que se estaba conectando |
 | `LocalIP` | string | Dirección IP asignada al equipo local usada durante la comunicación |
-| `LocalPort` | int | Puerto TCP del equipo local usado durante la comunicación |
+| `LocalPort` | entero | Puerto TCP del equipo local usado durante la comunicación |
 | `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
 | `AdditionalFields` | string | Información adicional sobre el evento en el formato de matriz JSON |
@@ -74,10 +77,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |

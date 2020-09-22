@@ -14,14 +14,17 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Los administradores pueden aprender a configurar la protección independiente de Exchange Online (EOP) para proteger los entornos de correo electrónico locales.
-ms.openlocfilehash: e6ca3965dd82bf0e6ed7e361984758ab34e3eea0
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307596"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197172"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurar el servicio independiente de EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En este tema se explica cómo configurar la protección independiente de Exchange Online (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 

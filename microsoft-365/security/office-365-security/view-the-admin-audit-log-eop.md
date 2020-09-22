@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre cómo ver y buscar el registro de auditoría de administración en Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825082"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196548"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Ver el registro de auditoría de administrador en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En las organizaciones independientes de Exchange Online Protection (EOP) que no tienen buzones de Exchange Online, puede usar el centro de administración de Exchange (EAC) o PowerShell independiente de EOP para buscar y ver las entradas en el registro de auditoría de administrador.
 
@@ -33,7 +36,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 >
 > - Las entradas de los registros de auditoría se conservan durante 90 días. Cuando una entrada tiene más de 90 días, se elimina
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Para abrir el centro de administración de Exchange, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -140,7 +143,7 @@ Todas las entradas del registro de auditoría contienen la información que se d
 
 ****
 
-|Field|Description|
+|Field|Descripción|
 |---|---|
 |`RunspaceId`|Este campo se usa de forma interna en EOP.|
 |`ObjectModified`|Este campo contiene el objeto modificado por el cmdlet especificado en el `CmdletName` campo.|

@@ -20,14 +20,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b378288637baa5b51f74fb63d8c8da33ac5e148f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866876"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196196"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Puede encontrarse en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
@@ -43,7 +46,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 ![Página principal de puntuación segura](../../media/secure-score/secure-score-homepage-new.png)
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Se le proporcionan puntos para las siguientes acciones:
 

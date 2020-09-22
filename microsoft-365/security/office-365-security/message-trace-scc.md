@@ -13,14 +13,17 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 1e9f5e21655e55f711997defcb7ace0319ff4be6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827056"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197542"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="message-trace-features"></a>Características de seguimiento de mensajes
 
@@ -337,7 +340,7 @@ Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de c
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El mensaje se marcó como correo no deseado por un filtrado contra correo electrónico no deseado (también conocido como filtrado de contenido).|
@@ -367,7 +370,7 @@ Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de m
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM` indica que el malware podría haber sido detectado por cualquier número de motores. `EV` indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -393,7 +396,7 @@ Un valor de **custom_data** que empieza por `S:TRA` es del agente de reglas de t
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653538"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196602"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las organizaciones de protección contra amenazas avanzada (ATP) de Office 365 (por ejemplo, las suscripciones de Microsoft 365 E5 o el plan de ATP 1 o ATP del plan 2) contienen una variedad de informes relacionados con la seguridad. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-atp-reports), puede ver estos informes en el centro de seguridad & cumplimiento desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
 
@@ -88,7 +91,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: archivo**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
@@ -101,7 +104,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: mensaje**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Id. de mensaje**
@@ -170,7 +173,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: mensaje**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Id. de mensaje**
@@ -184,7 +187,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: archivo**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Id. de mensaje**
@@ -252,7 +255,7 @@ El informe de **protección contra amenazas de direcciones URL** tiene dos vista
 Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi en tiempo real de todos los clics que ocurren dentro de la organización en los últimos 7 días con los siguientes detalles:
 
 - **Haga clic en hora**
-- **Usuario**
+- **User**
 - **URL**
 - **Acción**
 - **App**

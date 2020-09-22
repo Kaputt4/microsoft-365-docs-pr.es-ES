@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evitar que los ataques actuales y emergentes, como los ataques malintencionados o los vínculos maliciosos, interrumpan la productividad de los empleados y la seguridad empresarial.
-ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405546"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197578"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Protección de aplicaciones para Office (vista previa pública) para administradores
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 **Se aplica a:** Word, Excel y PowerPoint para Microsoft 365, Windows 10 Enterprise

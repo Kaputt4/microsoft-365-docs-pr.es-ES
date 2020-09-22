@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950609"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195920"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las directivas para configurar las opciones de protección contra suplantación de identidad están disponibles en Microsoft 365 organizaciones con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online y organizaciones de la protección contra amenazas avanzada de Office 365 (ATP de Office 365).
 
@@ -145,7 +148,7 @@ La suplantación es cuando el dominio de correo electrónico del remitente o del
 - Un ejemplo de suplantación del dominio contoso.com es ćóntoso.com.
 - Un ejemplo de suplantación del usuario michelle@contoso.com es michele@contoso.com.
 
-De lo contrario, un dominio suplantado podría considerarse legítimo (dominio registrado, registros de autenticación de correo electrónico configurados, etc.), pero su intención es engañar a los destinatarios.
+Un dominio suplantado podría considerarse legítimo (dominio registrado, registros de autenticación de correo electrónico configurados, etc.), salvo que su intención sea engañar a los destinatarios.
 
 La siguiente configuración de suplantación solo está disponible en las directivas contra la suplantación de identidad ATP:
 

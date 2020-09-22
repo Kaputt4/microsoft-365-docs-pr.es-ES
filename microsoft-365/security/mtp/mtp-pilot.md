@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: bf080fddd7545c4397483c0eba7a010952922e7e
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 88d92558d86e0aa2e90ef04d88a3cd4676386f15
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956534"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195632"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ejecutar el proyecto piloto de Microsoft Threat Protection 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -50,7 +53,7 @@ La siguiente escala de tiempo de ejemplo varía en función de la necesidad de d
 
 Hay cuatro fases para ejecutar un piloto de Microsoft Threat Protection:
 
-|Fase | Description | 
+|Fase | Descripción | 
 |:-------|:-----|
 | ![Planeación](../../media/mtp/plan.png)<br>[Planeación](mtp-pilot-plan.md)| Obtenga información sobre lo que debe tener en cuenta antes de ejecutar el proyecto piloto de Microsoft Threat Protection: <br><br>-Scope <br> Casos de uso de <br>- Requisitos <br>-Plan de pruebas <br> -Criterios de éxito <br> -Cuadro de mandos 
 | ![Declaración](../../media/prepare.png) <br>[Declaración](mtp-evaluation.md)|  Obtenga acceso al centro de seguridad de Microsoft 365 para configurar el entorno piloto de Microsoft Threat Protection. Se le guiará para:<br><br>-Identificar las partes interesadas y buscar la firma para el proyecto piloto <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración <br> -Inscríbase en la versión de prueba de Microsoft 365 E5 <br> -Configurar dominio <br>-Asignar licencias de Microsoft 365 E5 <br> -Completar el Asistente de configuración en el portal|

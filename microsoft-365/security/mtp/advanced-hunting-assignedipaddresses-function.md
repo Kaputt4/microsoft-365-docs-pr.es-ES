@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949317"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198252"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -36,10 +39,10 @@ Esta función devuelve una tabla con las siguientes columnas:
 | Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | La última hora a la que se observó el dispositivo con la dirección IP |
-| `IPAddress` | cadena | Dirección IP usada por el dispositivo |
-| `IPType` | cadena | Indica si la dirección IP es una dirección pública o privada |
-| `NetworkAdapterType` | int | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) . |
-| `ConnectedNetworks` | int | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o de dominio), una descripción y una marca que indica si está conectado públicamente a Internet |
+| `IPAddress` | string | Dirección IP usada por el dispositivo |
+| `IPType` | string | Indica si la dirección IP es una dirección pública o privada |
+| `NetworkAdapterType` | entero | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) . |
+| `ConnectedNetworks` | entero | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (pública, privada o de dominio), una descripción y una marca que indica si está conectado públicamente a Internet |
 
 ## <a name="syntax"></a>Sintaxis
 

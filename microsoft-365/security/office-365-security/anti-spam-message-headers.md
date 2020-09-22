@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los campos de encabezado que Exchange Online Protection (EOP) agrega a los mensajes. Estos campos de encabezado proporcionan información sobre el mensaje y cómo se ha procesado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867192"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197506"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En todas las organizaciones de Microsoft 365, Exchange Online Protection (EOP) analiza todos los mensajes entrantes para detectar spam, malware y otras amenazas. Los resultados de estos análisis se agregan a los siguientes campos de encabezado de los mensajes:
 

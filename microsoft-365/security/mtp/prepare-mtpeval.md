@@ -15,14 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6b87b051d243c11fe2b32fccb50f3ad0d01d0c04
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 97e75b07721c180fe6b4df56c2d9cc819b610802
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956156"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195552"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Preparar el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -83,7 +86,7 @@ Agregue partes interesadas a la tabla siguiente según corresponda para su organ
 
 -   I = informado de este proyecto
 
-| Nombre                 | Role                                                                                                                                                                                                          | Action |
+| Nombre                 | Rol                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Escriba el nombre y el correo electrónico | Director General de seguridad de la **información (CISO)** *un representante ejecutivo que sirve de patrocinador dentro de la organización para la nueva implementación de la tecnología.*                                                  | PARA     |
 | Escriba el nombre y el correo electrónico | **Director de operaciones de la defensa en el ciberespacio (CDOC)** *un representante del equipo de CDOC a cargo de definir cómo se alinea este cambio con los procesos del equipo de operaciones de seguridad de clientes.*       | PARA     |
@@ -124,11 +127,11 @@ Ahora puede [Agregar usuarios y grupos a Active](https://docs.microsoft.com/azur
 ## <a name="configuration-order"></a>Orden de configuración
 En la tabla siguiente se indica el orden que Microsoft recomienda para configurar los componentes de la protección contra amenazas de Microsoft para la implementación del laboratorio de prueba o del entorno piloto.
 
-| Componente                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rango de orden de configuración |
+| Componente                               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rango de orden de configuración |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Protección contra amenazas avanzada de Office 365| Office 365 ATP protege a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. <br> [Aprende más.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
 |Azure Advanced Threat Protection|ATP de Azure usa las señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones de Insider dañinas dirigidas a la organización. <br> [Más información](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
-|Microsoft Cloud App Security| Microsoft Cloud App Security es un agente de seguridad de acceso a la nube (CASB) que funciona en varias nubes. Proporciona una gran visibilidad, control sobre los recorridos de datos y análisis sofisticados para identificar y combatir ciberamenazas en todos sus servicios en la nube. <br> [Más información](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+|Microsoft Cloud App Security| Microsoft Cloud App Security es un agente de seguridad de acceso a la nube (CASB) que funciona en varias nubes. Proporciona una gran visibilidad, control sobre los recorridos de datos y análisis sofisticados para identificar y combatir ciberamenazas en todos sus servicios en la nube. <br> [Más información](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Protección contra amenazas avanzada de Microsoft Defender | Las funciones de detección y respuesta en el punto de conexión de ATP de Microsoft Defender proporcionan detecciones de ataques avanzadas que son casi en tiempo real y permiten tomar medidas. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. <br> [Aprende más.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Paso siguiente

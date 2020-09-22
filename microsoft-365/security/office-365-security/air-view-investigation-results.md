@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados principales.
-ms.openlocfilehash: 057dcf5e6f33c789ecfb47c7e3dfb49f0e2548fc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656842"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197696"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Cuando se produce una [investigación automatizada](office-365-air.md) en la [protección contra amenazas avanzada de Office 365](office-365-atp.md), los detalles sobre la investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes.
 
@@ -42,7 +45,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |Acción pendiente| La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo arriesgado, y una acción para corregir dicha amenaza está en espera de [aprobación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>El estado de acción pendiente se desencadena cuando se encuentra cualquier amenaza con una acción correspondiente. Sin embargo, la lista de acciones pendientes puede aumentar a medida que se ejecute una investigación. Compruebe el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) para ver si hay otros elementos aún pendientes de finalización.|
 |Corregido| La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota**: las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Independientemente de si las acciones de corrección se completan correctamente, el estado de la investigación no cambia. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
 |Parcialmente remediado| La investigación dio como resultado acciones correctivas y algunas fueron aprobadas y completadas. Aún hay otras acciones [pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
-|Erróneo| Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
+|Error| Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
 |En cola por limitación| Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia**: las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
 |Terminado con la limitación| Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia**: puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 |
@@ -51,7 +54,7 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 1. Vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) e inicie sesión.
 
-2. Realice una de las acciones siguientes:
+2. Realice una de las siguientes acciones:
 
     - Vaya al panel de **Administración de amenazas**  >  **Dashboard**. Esto le llevará al [Panel de seguridad](security-dashboard.md). Los widgets de AIR aparecen en la parte superior del [Panel de seguridad](security-dashboard.md). Seleccione un widget, como un **Resumen de investigaciones**.
 
@@ -174,7 +177,7 @@ Puede:
 
 En la pestaña **usuarios** , puede ver todos los usuarios identificados como parte de la investigación. Las cuentas de usuario aparecen en la investigación cuando hay un evento o una indicación de que esas cuentas de usuario podrían verse afectadas o en peligro.
 
-Por ejemplo, en la siguiente imagen, AIR ha identificado indicadores de peligro y anomalías en función de una nueva regla de bandeja de entrada creada. Hay disponibles detalles adicionales (evidencia) de la investigación en vistas detalladas de esta ficha. los indicadores de exposición y anomalías también pueden incluir detecciones de anomalías de [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security).
+Por ejemplo, en la siguiente imagen, AIR ha identificado indicadores de peligro y anomalías en función de una nueva regla de bandeja de entrada creada. Hay disponibles detalles adicionales (evidencia) de la investigación en las vistas detalladas de esta pestaña. Los indicadores de exposición y anomalías también pueden incluir detecciones de anomalías de [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security).
 
 ![Página de usuarios de investigación de aire](../../media/air-investigationuserspage.png)
 
@@ -224,7 +227,7 @@ Puede:
 
 ****
 
-|Análisis| Description|
+|Análisis| Descripción|
 |---|---|
 |Investigación de violaciones de DLP|Investigue las violaciones detectadas por la [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Extracción de indicadores de correo electrónico|Extraer indicadores desde el encabezado, el cuerpo y el contenido de un mensaje de correo electrónico para su investigación|
@@ -261,7 +264,7 @@ Puede:
 - Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Revisar y aprobar acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
 
