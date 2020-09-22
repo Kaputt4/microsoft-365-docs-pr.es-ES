@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f2ba1b63b3c1a986b3e811b3495bb4de85f93223
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: d6e9dbc214cdbb7aaf6bf8922ca4eaf986f8a91c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956531"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173289"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Cerrar y resumir su piloto de Microsoft Threat Protection  
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-Acaba de simular un ataque avanzado de solo memoria que ejecutó código de forma remota en un controlador de dominio. Ha visto cómo Microsoft defender ATP y Azure ATP detecta y alerta sobre actividades malintencionadas ocultas. También ha visto cómo se entregan alertas de orígenes diferentes junto con otra información contextual en un único incidente en el portal de protección contra amenazas de Microsoft, lo que permite a los analistas de SOC investigar y tomar las medidas necesarias. También ha creado una consulta de búsqueda avanzada que identificará los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos y crea una detección basada en esa consulta.
+Acaba de simular un ataque avanzado de solo memoria que ejecutó código de forma remota en un controlador de dominio. Ha visto cómo Microsoft defender ATP y Azure ATP detecta y alerta sobre actividades malintencionadas ocultas. También ha visto cómo se entregan alertas de diferentes orígenes junto con otra información contextual en un solo incidente en el portal del centro de seguridad de Microsoft 365, lo que permite a los analistas de SOC investigar y tomar las medidas necesarias. También ha creado una consulta de búsqueda avanzada que identificará los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos y crea una detección basada en esa consulta.
 
 Ha alcanzado el final del proceso una vez finalizadas todas las pruebas.
 

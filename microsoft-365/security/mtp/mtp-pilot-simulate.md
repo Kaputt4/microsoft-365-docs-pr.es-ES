@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 518afae2d241cca5fdff054faeb07d25e37eb585
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956590"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173325"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Ejecutar las simulaciones de ataque de la protección contra amenazas de Microsoft  
 
@@ -33,9 +33,9 @@ Después de preparar el entorno piloto, es el momento de probar la administraci�
 
 En esta simulación, nuestro escenario de ejemplo comienza con un script de PowerShell. Se puede engañar a un usuario para que ejecute un script. O la secuencia de comandos puede ejecutarse desde una conexión remota a otro equipo desde un dispositivo previamente infectado: el atacante intenta moverse más adelante en la red. La detección de estos scripts puede ser difícil porque los administradores también suelen ejecutar scripts de forma remota para llevar a cabo varias actividades administrativas.
 
-Durante la simulación, el ataque inyecta shellcode en un proceso aparentemente inocente. En este escenario, usaremos notepad.exe. Elegimos este proceso para la simulación, pero es más probable que los atacantes se destinen a un proceso del sistema de ejecución prolongada, como svchost.exe. A continuación, el shellcode se pone en contacto con el servidor de comandos y control (C2) del atacante para recibir instrucciones sobre cómo continuar. Además, el script intenta ejecutar consultas de reconocimiento en el controlador de dominio (DC). Esto permite a un atacante obtener información sobre la información de inicio de sesión del usuario reciente. Una vez que los atacantes tengan esta información, pueden avanzar más adelante en la red para llegar a una cuenta sensible específica
-
 ![Ataque de PowerShell sin archivo con diagrama de ataque de inserción de proceso y Reconnaisance de SMB](../../media/mtp/mtpdiydiagram.png)
+
+Durante la simulación, el ataque inyecta shellcode en un proceso aparentemente inocente. En este escenario, usaremos notepad.exe. Elegimos este proceso para la simulación, pero es más probable que los atacantes se destinen a un proceso del sistema de ejecución prolongada, como svchost.exe. A continuación, el shellcode se pone en contacto con el servidor de comandos y control (C2) del atacante para recibir instrucciones sobre cómo continuar. Además, el script intenta ejecutar consultas de reconocimiento en el controlador de dominio (DC). Esto permite a un atacante obtener información sobre la información de inicio de sesión del usuario reciente. Una vez que los atacantes tengan esta información, pueden avanzar más adelante en la red para llegar a una cuenta sensible específica
 
 >[!IMPORTANT]
 >Para obtener resultados óptimos, siga las instrucciones de simulación de ataque lo más parecida posible.
@@ -109,9 +109,9 @@ Para ver la característica de respuesta y incidente automatizada en acción, ma
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal de protección contra amenazas de Microsoft. 
+Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal del centro de seguridad de Microsoft 365. 
 
-1.  Abra la cola de incidentes de [Microsoft Threat Protection portal](https://security.microsoft.com/incidents) desde cualquier dispositivo.
+1.  Abra la cola de incidentes del [Portal del centro de seguridad 365 de Microsoft](https://security.microsoft.com/incidents) desde cualquier dispositivo.
 
 2.  Vaya a **incidentes** en el menú. 
 
@@ -230,7 +230,7 @@ Haga clic en el nombre de usuario para abrir la página de perfil del usuario en
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navegue hasta el incidente en el portal de Microsoft Threat Protection. La pestaña **investigaciones** de la página **incidente** muestra las investigaciones automatizadas que se desactivaron con Azure ATP y Microsoft defender ATP. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por ATP de Microsoft defender. De forma predeterminada, Microsoft defender ATP corrige automáticamente los artefactos que se encuentran en la cola y que requiere corrección.
+Navegue hasta el incidente en el portal del centro de seguridad 365 de Microsoft. La pestaña **investigaciones** de la página **incidente** muestra las investigaciones automatizadas que se desactivaron con Azure ATP y Microsoft defender ATP. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por ATP de Microsoft defender. De forma predeterminada, Microsoft defender ATP corrige automáticamente los artefactos que se encuentran en la cola y que requiere corrección.
 
 ![Captura de pantalla de las investigaciones automatizadas relacionadas con el incidente](../../media/mtp/fig14.png)
 
@@ -255,7 +255,7 @@ Una vez completada la investigación y confirmada que se va a corregir, cierre e
 
 Haga clic en **administrar incidente**. Establezca el estado para **resolver el incidente** y seleccione la clasificación correspondiente.
 
-Una vez resuelto el incidente, se cerrarán todas las alertas asociadas en la protección contra amenazas de Microsoft y en los portales relacionados.
+Una vez resuelto el incidente, se cerrarán todas las alertas asociadas en el centro de seguridad de Microsoft 365 y en los portales relacionados.
 
 ![Captura de pantalla de la página incidentes con el panel abrir incidente de administración donde puede hacer clic en el conmutador para resolver el incidente](../../media/mtp/fig16.png) 
 
@@ -289,7 +289,7 @@ Hay un solo buzón y un dispositivo interno necesarios para este escenario. Tamb
 1.  Abra el portal de security.microsoft.com.
 2.  Navegue a la **caza > la caza avanzada**.
 
-    ![Captura de pantalla de la búsqueda avanzada en la barra de navegación del portal de seguridad de M365](../../media/mtp/fig17.png) 
+    ![Captura de pantalla de la búsqueda avanzada en la barra de navegación del portal del centro de seguridad de M365](../../media/mtp/fig17.png) 
 
 3.  Cree una consulta que se inicie al recopilar eventos de correo electrónico.
     a.  En el panel consulta, seleccione nuevo.
