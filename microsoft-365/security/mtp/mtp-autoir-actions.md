@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: dd7ded318c5ab0cf9aad47054ac04d5a2d353943
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962658"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199810"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Aprobar o rechazar acciones pendientes tras una investigación automatizada
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -62,7 +65,7 @@ Las acciones pendientes se pueden revisar y aprobar mediante el [centro de activ
 
 2. Seleccione un elemento de la lista y, a continuación, elija **aprobar** o **rechazar**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver los detalles y los resultados de una investigación automatizada](mtp-autoir-results.md)
 - [Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](mtp-autoir-report-false-positives-negatives.md)

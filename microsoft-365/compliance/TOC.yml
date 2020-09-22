@@ -107,12 +107,14 @@
           href: what-the-dlp-functions-look-for.md
     - name: Clasificadores que se pueden entrenar
       items:
+        - name: Obtenga información sobre los clasificadores entrenables (versión preliminar)
+          href: classifier-learn-about.md
         - name: Introducción a los clasificadores que se pueden entrenar (versión preliminar)
-          href: classifier-getting-started-with.md
-        - name: Uso de un clasificador integrado (versión preliminar)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creación y entrenamiento de un clasificador (versión preliminar)
-          href: classifier-creating-a-trainable-classifier.md
+          href: classifier-get-started-with.md
+        - name: Cómo volver a entrenar un clasificador en el cumplimiento de las comunicaciones (versión preliminar)
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: Cómo volver a entrenar un clasificador en el explorador de contenido (versión preliminar)
+          href: classifier-how-to-retrain-content-explorer.md
     - name: Clasificación de los datos
       items:
         - name: Entender la clasificación de datos

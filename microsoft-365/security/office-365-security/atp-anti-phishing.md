@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las funciones contra la suplantación de identidad que forman parte de la protección contra amenazas avanzada de Office 365 para proporcionar protección para los ataques de suplantación de identidad & Spear.
-ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: db1587d0cd60dc94e79b1498e000e63aa2a5ceac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653369"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199068"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funciones de ATP contra suplantación de identidad en Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 La protección contra phishing de ATP forma parte de la [protección contra amenazas avanzada de Office 365](office-365-atp.md). La antipesca de ATP aplica un conjunto de modelos de aprendizaje automático junto a algoritmos de detección de suplantación a los mensajes entrantes para ofrecer protección frente a ataques de phishing de objetivo definido y productos. Todos los mensajes están sujetos a un amplio conjunto de modelos de aprendizaje de máquinas capacitados para detectar mensajes de suplantación de identidad (phishing), junto con un conjunto de algoritmos avanzados que se usan para proteger contra varios ataques de suplantación de usuario y de dominio. La protección contra el phishing de ATP protege a su organización de acuerdo con las directivas establecidas por los administradores globales o de seguridad de Office 365.
   

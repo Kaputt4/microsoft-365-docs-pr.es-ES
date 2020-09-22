@@ -14,14 +14,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Obtenga información sobre cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con capacidades automatizadas de investigación y respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656914"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201236"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Dirigir las cuentas de usuario en peligro con investigación y respuesta automatizadas
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) incluye capacidades [de investigación y respuesta automáticas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air) eficaces. Estas capacidades pueden guardar el equipo de operaciones de seguridad en gran cantidad de tiempo y esfuerzo relacionados con las amenazas. Microsoft sigue mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se mejoraron para incluir una guía de seguridad de usuario en peligro (actualmente en versión preliminar). Lea este artículo para obtener más información acerca de la guía de seguridad de usuario comprometida. Y ve la entrada de blog [acelerar el tiempo de respuesta para detectar y responder a la puesta en peligro del usuario y limitar el ámbito de infracción con Office 365 ATP](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener más detalles.
 
@@ -88,7 +91,7 @@ Para obtener más información, consulte [Ver detalles de una investigación](ht
 
 - **No confíe en una alerta de inicio de sesión sospechosa como el único indicador**. Cuando una cuenta de usuario está en peligro, puede o no activar una alerta de inicio de sesión sospechosa. A veces, es la serie de actividades que se producen después de que se haya comprometido una cuenta que desencadena una alerta. ¿Desea saber más sobre las alertas? Consulte [directivas de alerta](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Revisar los permisos necesarios para usar la funcionalidad de AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)
 

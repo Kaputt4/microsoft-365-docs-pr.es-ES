@@ -12,20 +12,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden obtener información sobre cómo asignar o quitar permisos en el centro de administración de Exchange (EAC) en Exchange Online Protection.
-ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201906"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Administrar grupos de roles en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En las organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, puede usar el centro de administración de Exchange (EAC) para agregar usuarios a los grupos de roles. Al agregar un usuario a un grupo de funciones, se concede a los usuarios permisos para realizar tareas de administración específicas. También puede quitar usuarios de los grupos de roles.
 
 Para obtener más información acerca de los roles y los grupos de roles, consulte [Permissions in Standalone EOP](feature-permissions-in-eop.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 

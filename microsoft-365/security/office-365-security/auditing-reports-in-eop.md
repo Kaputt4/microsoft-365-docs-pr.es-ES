@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre los informes de auditoría de administrador que están disponibles en Exchange Online Protection (EOP).
-ms.openlocfilehash: ab2c1af7197094b456d8e1b4151dd42791d992a1
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8e5175266cd964a2f2fb721a67f64e709661ce26
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825790"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200338"
 ---
 # <a name="auditing-reports-in-standalone-eop"></a>Informes de auditoría en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En las organizaciones independientes de Exchange Online Protection (EOP) que no tienen buzones de Exchange Online, los informes de auditoría pueden ayudarle a cumplir los requisitos normativos, de cumplimiento normativo y de litigios para su organización. Puede obtener informes de auditoría en cualquier momento para determinar los cambios que se realizaron en la configuración de EOP. Estos informes ayudan a solucionar problemas de configuración o a encontrar la causa de problemas relacionados con el cumplimiento normativo o la seguridad.
 

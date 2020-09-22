@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434272"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200078"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Funciones básicas y cómo abrir el panel de seguridad
 
@@ -102,7 +105,7 @@ Por ejemplo, es posible que vea que se están entregando mensajes de correo elec
 
 ## <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
-Si la suscripción de su organización incluye [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), el panel de seguridad tiene una sección que incluye herramientas avanzadas de investigación y respuesta de amenazas. Estas herramientas incluyen [capacidades automatizadas de investigación y respuesta](automated-investigation-response-office.md). La investigación y la respuesta automatizadas pueden ser útiles en escenarios como el [direccionamiento rápido de cuentas de usuario en peligro](address-compromised-users-quickly.md).
+Si la suscripción de su organización incluye  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), el panel de seguridad tiene una sección que incluye herramientas avanzadas de investigación y respuesta de amenazas. Estas herramientas incluyen [capacidades automatizadas de investigación y respuesta](automated-investigation-response-office.md). La investigación y la respuesta automatizadas pueden ser útiles en escenarios como el [direccionamiento rápido de cuentas de usuario en peligro](address-compromised-users-quickly.md).
 
 Para obtener más información, vea Introducción al [uso de investigación y respuesta automatizadas (Air) en Office 365](office-365-air.md).
 

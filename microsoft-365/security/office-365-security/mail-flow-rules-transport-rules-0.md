@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización.
-ms.openlocfilehash: ed17ac62009f5e766772095985441fad2367edf4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: dba4771d575f0155e4ca1fc994d8467e496e5777
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827706"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201752"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Reglas de flujo de correo (reglas de transporte) en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En las organizaciones independientes de Exchange Online Protection (EOP) que no tienen buzones de Exchange Online, puede usar reglas de flujo de correo (también conocidas como reglas de transporte) para identificar y realizar acciones en los mensajes que fluyen por la organización.
 
@@ -87,7 +90,7 @@ En la tabla siguiente se describen las propiedades de regla que están disponibl
 
 ****
 
-|Nombre de la propiedad en el EAC|Nombre del parámetro en PowerShell|Description|
+|Nombre de la propiedad en el EAC|Nombre del parámetro en PowerShell|Descripción|
 |---|---|---|
 |**Prioridad**|_Priority_|Indica el orden en el que se aplican las reglas a los mensajes. La prioridad predeterminada se establece en función del momento en el que se creó la regla (las reglas más antiguas tienen más prioridad que las más recientes y las reglas con una prioridad superior se procesan antes que las que tienen una prioridad inferior).   <br/><br/> La prioridad de la regla en el EAC se cambia moviendo la regla hacia arriba o hacia abajo en la lista de reglas. En PowerShell, establezca el número de prioridad (0 es la prioridad más alta). <br/><br/> Por ejemplo, si dispone de una regla para rechazar mensajes que incluyan un número de tarjeta de crédito y otra que exija su probación, deseará que se aplique primero la regla de rechazo y que dejen de aplicarse las demás.  |
 |**Modo**|_Mode_|Puede especificar si quiere que la regla inicie el procesamiento de mensajes inmediatamente o si quiere probar las reglas sin afectar a la entrega del mensaje (con o sin sugerencias de directiva de prevención de pérdida de datos o DLP). <br/><br/> Mediante las sugerencias de directiva, se muestra una nota breve en Outlook o en Outlook en la web que ofrece información sobre posibles infracciones de la directiva al usuario que crea el mensaje. Para obtener más información, consulte **Policy Tips**.  <br/><br/> Para obtener más información acerca de los modos, consulte **Test a mail flow rule**.|

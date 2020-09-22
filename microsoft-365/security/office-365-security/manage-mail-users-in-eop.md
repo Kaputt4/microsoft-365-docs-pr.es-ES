@@ -13,14 +13,17 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Obtenga información sobre cómo administrar usuarios de correo en Exchange Online Protection (EOP), incluido el uso de la sincronización de directorios, el EAC y PowerShell para administrar usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827080"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201788"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En las organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los usuarios de correo son el tipo fundamental de cuenta de usuario. Un usuario de correo tiene credenciales de cuenta en su organización de EOP independiente y puede tener acceso a los recursos (tener permisos asignados). La dirección de correo electrónico de un usuario de correo es externa (por ejemplo, en su entorno de correo electrónico local).
 
@@ -31,7 +34,7 @@ El método recomendado para crear y administrar usuarios de correo en EOP indepe
 
 Para organizaciones independientes de EOP con un pequeño número de usuarios, puede Agregar y administrar usuarios de correo en el centro de administración de Exchange (EAC) o en PowerShell independiente de EOP, tal y como se describe en este tema.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -100,7 +103,7 @@ Use la ficha **General** para ver o cambiar la información básica sobre el usu
 
 Use la ficha **información de contacto** para ver o cambiar la información de contacto del usuario. La información de esta página se muestra en la libreta de direcciones.
 
-- **Street**
+- **Drogas**
 - **Ciudad**
 - **Estado o provincia**
 - **Código postal**
@@ -273,7 +276,7 @@ Obtenga los permisos necesarios y prepárese para la sincronización de director
 
 3. [Seleccione el tipo de instalación que se va a usar para Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
 
-   - [Exprés](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
    - [Personalizados](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 

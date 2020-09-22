@@ -12,14 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825214"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201680"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Aunque Microsoft 365 incluye una variedad de características antiphishing que están habilitadas de forma predeterminada, es posible que algunos mensajes de suplantación de identidad sigan teniendo acceso a sus buzones. En este tema se describe qué se puede hacer para descubrir por qué ha recibido un mensaje de suplantación de identidad (phishing) y qué se puede hacer para ajustar la configuración antiphishing en la organización de Microsoft 365 _sin empeorar los elementos por accidente_.
 

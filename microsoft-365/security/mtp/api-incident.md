@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 310e3105c973223ea79373d770eb10f7753b917e
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650540"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201308"
 ---
 # <a name="incident-resource-type"></a>Tipo de recurso Incident
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -34,24 +37,24 @@ ms.locfileid: "47650540"
 >[!IMPORTANT] 
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-Método |Tipo de valor devuelto |Description
+Método |Tipo de valor devuelto |Descripción
 :---|:---|:---
-[Enumerar incidentes](api-list-incidents.md) | Lista de [incidentes](api-incident.md) | Obtener una lista de incidentes.
-[Actualizar incidente](api-update-incidents.md) | [Incidentes](api-incident.md) | Actualizar incidente específico.
+[Lista de Incidentes](api-list-incidents.md) | Lista de [incidentes](api-incident.md) | Obtener una lista de incidentes.
+[Incidente de actualización](api-update-incidents.md) | [Incidentes](api-incident.md) | Actualizar incidente específico.
 
 
 ## <a name="properties"></a>Propiedades
 
-Propiedad |    Tipo    |    Description
+Propiedad |    Tipo    |    Descripción
 :---|:---|:---
 incidentId | largo | IDENTIFICADOR único de incidente.
 redirectIncidentId | Nullable Long | IDENTIFICADOR del incidente al que se combinó el incidente actual.
-incidentName | cadena | Nombre del incidente.
+incidentName | string | Nombre del incidente.
 createdTime | DateTimeOffset | La fecha y hora (en UTC) en que se creó el incidente.
 lastUpdateTime | DateTimeOffset | La fecha y hora (en UTC) en que se actualizó por última vez el incidente.
-assignedTo | cadena | Propietario del incidente.
+assignedTo | string | Propietario del incidente.
 severity | Enum | Gravedad del incidente. Los valores posibles son: ```UnSpecified``` ,, ```Informational``` ```Low``` ```Medium``` y ```High``` .
 status | Enum | Especifica el estado actual del incidente. Los valores posibles son ```Active``` : ```Resolved``` y ```Redirected``` .
 classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.

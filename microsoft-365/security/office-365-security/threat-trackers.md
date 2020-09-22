@@ -16,14 +16,17 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: 13e8463d88250fe76474311e9df394577949989e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755069"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201800"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las capacidades de [investigación y respuesta de amenazas de Office 365](office-365-ti.md) permiten que el equipo de seguridad de su organización Descubra y actúe en contra de las amenazas de Cybersecurity. Las capacidades de investigación y respuesta de amenazas de Office 365 incluyen características de seguimiento de amenazas, incluidos los seguimientos dignos de ser interesantes. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes. 
 

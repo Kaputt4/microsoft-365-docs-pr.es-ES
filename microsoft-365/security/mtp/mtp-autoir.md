@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: f2a0a439996f13cea3823815aceb9dd1c235e2f2
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 2131af5e35aa0cf9f236940d2b4aaa2bed85190a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962670"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199786"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
@@ -76,7 +79,7 @@ Durante la ejecución de una investigación, todas las demás alertas relacionad
 > No todas las alertas activan una investigación automatizada, y no todas las investigaciones dan como resultado acciones de corrección automatizadas; todo esto depende de cómo esté configurada la respuesta y la investigación automatizadas para su organización. Consulte [Configure Automated Investigation and Response Capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte los requisitos previos para la investigación y la respuesta automatizadas en la protección contra amenazas de Microsoft](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
 - [Configurar la investigación y la respuesta automatizadas para su organización](mtp-configure-auto-investigation-response.md)

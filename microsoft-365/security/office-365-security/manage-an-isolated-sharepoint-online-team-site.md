@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Administrar un sitio de grupo de SharePoint Online aislado, agregar nuevos usuarios y grupos, quitar usuarios y grupos y crear una subcarpeta de documentos con permisos personalizados.
-ms.openlocfilehash: d66f9a349bd5834d07fbc13146127bde522923e4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e63cd6d17bf30ce6d236e38673b33cf054940eac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308272"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200624"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Resumen:** Administre el sitio de grupo de SharePoint Online aislado con estos procedimientos.
   
@@ -184,7 +187,7 @@ Para crear una subcarpeta de documentos con permisos personalizados, haga lo sig
     
 17. Cierre la pestaña **personas y grupos** del explorador.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   

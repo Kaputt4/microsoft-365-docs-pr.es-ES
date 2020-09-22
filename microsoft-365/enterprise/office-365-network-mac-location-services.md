@@ -3,7 +3,7 @@ title: Servicios de ubicación de conectividad de red 365 de Microsoft (versión
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: e614e719069a74ea087b07ca624ae0450790c763
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f2ab872f67eca70ab2791d3ad6fe1396b009cc18
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694047"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200786"
 ---
 # <a name="microsoft-365-network-connectivity-location-services-preview"></a>Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)
 
@@ -38,3 +38,13 @@ En el centro de administración de Microsoft 365, los controles de mapas de Bing
 Cualquier contenido que se proporcione a través de mapas de Bing, incluidos los códigos geocodes, solo se puede usar dentro del producto a través del cual se proporciona el contenido. El uso del cliente de la característica de servicios de ubicación del centro de administración de Microsoft 365, con tecnología de mapas de Bing, está regido por las _condiciones de uso disponibles del usuario final de mapas de Bing_ en <https://go.microsoft.com/?linkid=9710837> y la _declaración de privacidad de Microsoft_ disponible en <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
 Esta característica, que se proporciona a través de mapas de Bing, también es compatible con las **tecnologías de este**. La forma en que los mapas de Bing aprovechan los servicios de ubicación proporcionados por estas tecnologías se rige por las _siguientes condiciones del servicio de tecnologías_ disponibles en <https://legal.here.com/en-gb/terms> .
+
+## <a name="related-topics"></a>Temas relacionados
+
+[Conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-overview.md)
+
+[Microsoft 365 Network performance Insight (versión preliminar)](office-365-network-mac-perf-insights.md)
+
+[Evaluación de red de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-score.md)
+
+[Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)

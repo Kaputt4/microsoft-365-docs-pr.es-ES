@@ -15,18 +15,21 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las acciones de corrección en la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 761ae38250dc084a248203dd78b66ed18ea9c401
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c327bdf505b774532600169e9579ffa6acfac1b1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653382"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199906"
 ---
 # <a name="remediation-actions-in-microsoft-365"></a>Acciones de corrección en Microsoft 365
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ## <a name="remediation-actions"></a>Acciones de corrección
 
-La [funcionalidad de investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air) en [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) Plan 2 incluyen determinadas acciones de corrección. Siempre que se ejecuta una investigación automatizada o se ha completado, normalmente verá una o más acciones de corrección que requieren la aprobación del equipo de operaciones de seguridad para continuar. Estas acciones de corrección pueden incluir lo siguiente:
+La [funcionalidad de investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (Air) en [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) Plan 2 incluyen determinadas acciones de corrección. Siempre que una investigación automatizada esté en marcha o se haya completado, normalmente verá una o más medidas correctivas que requieren la aprobación de su equipo de operaciones de seguridad para proceder. Estas acciones de corrección pueden incluir lo siguiente:
 
 - Eliminar temporalmente mensajes de correo electrónico o clústeres
 - Bloquear URL (tiempo de clic)
@@ -59,7 +62,7 @@ En la tabla siguiente se resumen las amenazas y las acciones de corrección adec
 |Usuario|Envío de correo electrónico anómalo <br/>(Un usuario ha enviado recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción pendiente específica. <br/><br/>Enviar una gran cantidad de correo electrónico no es peligroso por sí mismo; es posible que el usuario simplemente haya enviado un correo electrónico a un grupo grande de destinatarios para un evento. Para investigar, use el [flujo de correo](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-insights-v2), incluido el informe de mapa de flujo de [correo](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-mail-flow-map-report) , para determinar lo que está ocurriendo y emprender acciones.|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver los detalles y los resultados de una investigación automatizada en Microsoft 365](air-view-investigation-results.md)
 

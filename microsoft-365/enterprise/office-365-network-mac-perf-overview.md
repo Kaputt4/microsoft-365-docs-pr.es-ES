@@ -3,7 +3,7 @@ title: Conectividad de red en el centro de administración de 365 de Microsoft (
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información general sobre la conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171367"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200802"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
 
@@ -63,7 +63,7 @@ Las muestras de medidas y las ubicaciones de la oficina deberían empezar a pare
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. reúna manualmente los informes de prueba con la herramienta de prueba de conectividad de red de Microsoft 365
 
-Para esta opción, debe identificar a una persona en cada ubicación. Pídales que exploren la [prueba de conectividad de red de Microsoft 365](https://connectivity.office.com) en un equipo con Windows en el que tenga permisos de administrador. En el sitio web, es necesario que inicie sesión en su cuenta de Office 365 para la misma organización en la que desea ver los resultados. A continuación, haga clic en Ejecutar prueba. Durante la prueba, hay un archivo EXE de prueba de conectividad descargado. También necesitan abrirlo y ejecutarlo. Una vez finalizadas las pruebas, el resultado de la prueba se carga en Office 365.
+Para esta opción, debe identificar a una persona en cada ubicación. Pídales que exploren la [prueba de conectividad de red de Microsoft 365](https://connectivity.office.com) en un equipo con Windows en el que tenga permisos de administrador. En el sitio web, es necesario que inicie sesión en su cuenta de Office 365 para la misma organización en la que desea ver los resultados. A continuación, deben hacer clic en **Ejecutar prueba**. Durante la prueba, hay un archivo EXE de prueba de conectividad descargado. También necesitan abrirlo y ejecutarlo. Una vez finalizadas las pruebas, el resultado de la prueba se carga en Office 365.
 
 Los informes de prueba están vinculados a una ubicación si se agregaron con información de subred de LAN, de lo contrario solo se muestran en el almacén de la ciudad.
 
@@ -174,7 +174,7 @@ La puerta de entrada del servicio 365 de Microsoft es un punto de entrada en la 
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio de Microsoft 365 óptima?
 
-Una puerta frontal de servicio Microsoft 365 óptima es la que más se aproxime a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [prueba de conectividad de microsoft 365](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio de Microsoft 365 y la puerta de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
+Una puerta frontal de servicio Microsoft 365 óptima es la que más se aproxime a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [herramienta de prueba de conectividad de 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio de Microsoft 365 y el servicio de puerta de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>¿Qué es una ubicación de salida de Internet?
 
@@ -186,8 +186,6 @@ La ubicación de salida de Internet es la ubicación en la que el tráfico de re
 
 [Evaluación de red de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-score.md)
 
-[Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+[Herramienta de prueba de conectividad de Microsoft 365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-location-services.md)
-
-[Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)

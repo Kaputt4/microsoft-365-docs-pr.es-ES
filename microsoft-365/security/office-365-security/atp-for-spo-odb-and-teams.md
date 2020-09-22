@@ -21,14 +21,17 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información sobre la protección contra amenazas avanzada de Office 365 para archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9831b61fafc7cb4696fbad3d569f061612f85fe1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815414"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199044"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP para SharePoint, OneDrive y Microsoft Teams
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Información general sobre Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 
@@ -52,7 +55,7 @@ Para obtener más información, consulte [Activar ATP de Office 365 para SharePo
 
 ## <a name="keep-these-points-in-mind"></a>Tenga en cuenta estos puntos
 
-- ATP no examinará cada archivo único en SharePoint Online, OneDrive para la empresa o Microsoft Teams. Esto ocurre por motivos de diseño. Los archivos se examinan de forma asincrónica, a través de un proceso que usa eventos de actividad de uso compartido e invitados junto con heurística inteligente y señales de amenazas para identificar archivos malintencionados.
+- ATP no examinará cada archivo único en SharePoint Online, OneDrive para la empresa o Microsoft Teams. Esto es así por motivos de diseño. Los archivos se examinan de forma asincrónica, a través de un proceso que usa eventos de actividad de uso compartido e invitados junto con heurística inteligente y señales de amenazas para identificar archivos malintencionados.
 
 - Asegúrese de que los sitios de SharePoint están configurados para usar la [experiencia moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Cuando un archivo se identifica como malintencionado y bloqueado, los usuarios pueden ver que se ha producido en la experiencia moderna, pero no en la vista clásica. La protección ATP se aplica si se usa la experiencia moderna o la vista clásica; sin embargo, los indicadores visuales que un archivo está bloqueado solo están presentes en la experiencia moderna.
 

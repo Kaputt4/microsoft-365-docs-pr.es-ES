@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131552"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Más información sobre la prevención de pérdida de datos en punto de conexión de Microsoft 365 (versión preliminar)
 
@@ -120,7 +120,7 @@ Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atri
 - nombre de dispositivo
 - tipo de ubicación de destino
 - aplicación que realizó la copia
-- Id. del dispositivo MDATP (si corresponde)
+- Id. de dispositivo de Microsoft Defender para punto de conexión (si corresponde)
 - fabricante del dispositivo multimedia extraíble
 - modelo del dispositivo multimedia extraíble
 - número de serie del dispositivo multimedia extraíble

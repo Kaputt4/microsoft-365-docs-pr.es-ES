@@ -3,7 +3,7 @@ title: Evaluación de red de Microsoft 365 (versión preliminar)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Evaluación de red de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: 21fb9515ea1621225cffbe23fe87d0daeb5265de
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 3d80130dbf9ca41342bc1a01fe3ce992303efb48
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104551"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200752"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Evaluación de red de Microsoft 365 (versión preliminar)
 
@@ -59,7 +59,7 @@ Una evaluación de la red mide el diseño del perímetro de la red de una ubicac
 
 Se muestra un valor de evaluación de red para todo el espacio empresarial de Microsoft 365 en la página información general de rendimiento de red, que es un promedio ponderado de las evaluaciones de red para todas las ubicaciones de oficina. También hay un valor de evaluación de red específico para cada ubicación de la oficina detectada en la página de Resumen de esa ubicación.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 Para Exchange Online se mide la latencia TCP desde el equipo cliente al servicio de Exchange de la puerta frontal. Esto puede verse afectado por la distancia que la red viaja a través de la LAN y la WAN de los clientes. También puede verse afectado por servicios o dispositivos intermedios de red que retrasn la conectividad o provocan la reenvío de paquetes. Y se ve afectada por la distancia de la puerta frontal del servicio de Exchange más cercana. La mediana (también denominada percentil 50 o P50) se realiza para todas las medidas en los tres días anteriores.
 
@@ -101,8 +101,6 @@ Se calcula una puntuación de opinión media a partir de estas mediciones UDP pa
 
 [Microsoft 365 Network performance Insight (versión preliminar)](office-365-network-mac-perf-insights.md)
 
-[Prueba de conectividad de Microsoft 365 en el centro de administración de M365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
+[Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Servicios de ubicación de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-location-services.md)
-
-[Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md)
