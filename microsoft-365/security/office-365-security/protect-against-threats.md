@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547367"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202584"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Esta es una guía de inicio rápido que rompe la configuración de la protección contra amenazas avanzada en fragmentos. Si no está familiarizado con las características de protección contra amenazas de Office 365, pero no sabe dónde empezar, o si desea obtener mejores resultados, use esta guía como una lista de comprobación y un *punto de partida*.
 
@@ -87,7 +90,7 @@ La [protección contra malware](anti-malware-protection.md) está disponible en 
 
     - En la sección **filtro de tipos de datos adjuntos comunes** , elija **activado**.
 
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
 
 Para obtener más información acerca de las opciones de directiva antimalware, vea [Configure anti-malware Policies](configure-anti-malware-policies.md).
 
@@ -143,7 +146,7 @@ Para obtener más información sobre las opciones de la Directiva antiphishing, 
 
    - En la sección **listas de permitidos** , revise (o edite) los remitentes y dominios permitidos.
 
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
 
 Para obtener más información sobre las opciones de la Directiva contra correo no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 

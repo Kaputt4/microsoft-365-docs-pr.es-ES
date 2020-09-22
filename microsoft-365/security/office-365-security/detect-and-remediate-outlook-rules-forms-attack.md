@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 7d879d34a925354084e08d82f5e1724725c18825
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811055"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203076"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detectar y corregir ataques de las reglas de Outlook y de las inyecciones de formularios personalizados
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Resumen** Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365.
 
@@ -227,9 +230,9 @@ Tenga en cuenta que, incluso con las revisiones y actualizaciones instaladas, un
 
 Puede ver si "Iniciar aplicación" se ha rehabilitado a través de una invalidación en el registro mediante el uso de la información de [Cómo ver el registro del sistema con las versiones de 64 bits de Windows](https://support.microsoft.com/help/305097). Compruebe estas subclaves:
 
-- **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
 Busque la clave EnableUnsafeClientMailRules. Si está y se establece en 1, la revisión de seguridad de Outlook se ha reemplazado y el equipo es vulnerable al ataque de reglas o formularios. Si el valor es 0, la acción "Iniciar aplicación" está deshabilitada. Si está instalada la versión actualizada y revisada de Outlook y esta clave del registro no está presente, un sistema no es vulnerable a estos ataques.
 

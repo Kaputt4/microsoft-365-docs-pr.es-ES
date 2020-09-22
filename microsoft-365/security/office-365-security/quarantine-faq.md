@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden ver las preguntas más frecuentes y las respuestas sobre los mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 896a83d4a09e8d0fcafeb6885cf2c63b6d8bb045
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d52aa8b6d86421bbc03e03191d0e0ccd074ce782
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826794"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202464"
 ---
 # <a name="quarantined-messages-faq"></a>Preguntas más frecuentes sobre los mensajes en cuarentena
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En este tema se proporcionan preguntas frecuentes y respuestas sobre los mensajes de correo electrónico en cuarentena para organizaciones de Microsoft 365 con buzones en Exchange online o con organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
 

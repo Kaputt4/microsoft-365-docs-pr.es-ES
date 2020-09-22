@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825262"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202608"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Directivas de seguridad preestablecidas en EOP y Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Las directivas de seguridad preestablecidas proporcionan una ubicación centralizada para aplicar todas las directivas recomendadas de correo no deseado, malware y de suplantación de identidad a los usuarios a la vez. La configuración de la Directiva no se puede configurar. En su lugar, están establecidos por nosotros y se basan en nuestras observaciones y experiencias en los centros de datos para conseguir un equilibrio entre el mantenimiento del contenido peligroso de los usuarios sin interrumpir su trabajo.
 

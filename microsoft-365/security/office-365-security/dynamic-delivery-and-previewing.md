@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija Entrega dinámica para evitar retrasos en los mensajes y permitir que los usuarios puedan obtener una vista previa de los datos adjuntos mientras se examinan.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: c0b19317babbd433ba0914ca2385cf6c9b40d89b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430356"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203040"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adjuntos seguros de ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-features-of-dynamic-delivery"></a>Características básicas de la entrega dinámica
 
@@ -68,7 +71,7 @@ Supongamos que una organización usa la Entrega dinámica para su [directiva de 
 
 ## <a name="additional-considerations"></a>Consideraciones adicionales
 
-Hay algunos escenarios en los que los datos adjuntos seguros (incluida la entrega dinámica) no son compatibles. Entre ellas se incluyen:
+Hay algunos escenarios en los que los datos adjuntos seguros (incluida la entrega dinámica) no son compatibles. Entre ellos se incluyen:
 
 - Mensajes de correo electrónico que están en carpetas públicas.
 

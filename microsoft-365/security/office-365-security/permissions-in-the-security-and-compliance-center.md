@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: Los administradores pueden obtener información sobre los permisos que están disponibles en el centro de seguridad & cumplimiento en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171319"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202692"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Permisos en el Centro de seguridad y cumplimiento
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 El centro de seguridad & cumplimiento le permite conceder permisos a personas que realizan tareas de cumplimiento como la administración de dispositivos, la prevención de pérdida de datos, la exhibición de documentos electrónicos, la retención, etc. Estas personas solo pueden realizar las tareas a las que les dé acceso explícitamente. Para obtener acceso al centro de seguridad & cumplimiento, los usuarios deben ser administrador global o miembro de uno o varios grupos de roles del centro de cumplimiento de & de seguridad.
 

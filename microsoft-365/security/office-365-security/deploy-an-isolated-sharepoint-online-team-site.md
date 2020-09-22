@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Use esta guía paso a paso de implementación para crear y configurar un sitio de grupo aislado de SharePoint Online en Microsoft Office 365.
-ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203136"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **Resumen:** Implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.
   
@@ -187,7 +190,7 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
 
 4. Establezca **permitir solicitudes de acceso** en **desactivado**.
 
-5. Haga clic en **Guardar**.
+5. Haga clic en **Guardar **.
     
 6. En el panel **permisos** , haga clic en **Configuración avanzada de permisos**.
     
@@ -235,7 +238,7 @@ Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de l
 
 Cuando necesite cambiar la pertenencia al grupo de acceso al sitio o crear una carpeta de documentos con permisos personalizados, vea [administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   

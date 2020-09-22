@@ -21,14 +21,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores de China con Office 365 operado por 21Vianet pueden aprender a usar independiente de Exchange Online Protection (EOP) para proteger sus buzones locales.
-ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: eb17b25db93aa50c6c390b5f79cdbd707762a0f9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307754"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202488"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteger los buzones locales en China con EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Este artículo solo se aplica a Office 365 operado por 21Vianet en China.

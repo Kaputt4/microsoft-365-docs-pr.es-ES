@@ -14,14 +14,17 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos híbridos y independientes.
-ms.openlocfilehash: b546b60e242d7f4f7fd4c4550bb61b94052ff4d1
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137026"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202908"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. EOP se incluye en todas las organizaciones de Microsoft 365 con buzones de correo de Exchange Online. Sin embargo, EOP también está disponible en los siguientes escenarios locales:
 

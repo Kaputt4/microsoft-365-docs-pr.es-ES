@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear los correos electrónicos de los servidores de correo electrónico.
-ms.openlocfilehash: 45213ff36c7efc76a83a2c520e0369211ffecf53
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827850"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203376"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Si es un cliente de 365 de Microsoft con buzones de correo en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, use el filtrado de conexiones en EOP (específicamente, la Directiva de filtro de conexión predeterminada) para identificar los servidores de correo electrónico de origen válidos o incorrectos mediante sus direcciones IP. Los componentes clave de la Directiva de filtro de conexión predeterminada son:
 

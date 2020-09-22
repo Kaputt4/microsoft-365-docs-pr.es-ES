@@ -13,14 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 9b676f96ccdff8be1fa49841a9e0ce44bb59964c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7894a6cfe665539fa8c00f5911c4a588b9cf7ebc
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827318"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203196"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de bloquear el correo electrónico de remitentes no deseados. Estas opciones incluyen a los remitentes bloqueados de Outlook, las listas de remitentes bloqueados o las listas de dominios bloqueados en directivas contra correo no deseado, reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y la lista de direcciones IP bloqueadas (filtrado de conexiones). De forma colectiva, puede considerar estas opciones como _listas de remitentes bloqueados_.
 

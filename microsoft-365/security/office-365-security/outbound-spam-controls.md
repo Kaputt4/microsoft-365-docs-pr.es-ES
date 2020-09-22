@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre los controles de correo no deseado saliente en Exchange Online Protection (EOP) y qué hacer si necesita enviar correos masivos.
-ms.openlocfilehash: 99502e7fb55419dedb4d0f7d4a7e6c4591eff859
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1097b768b955f2fa99c552ceda7564bef33a1aa7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208928"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202392"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Protección contra correo no deseado saliente en EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, tenemos que administrar el correo no deseado de salida de una verdad importante. Un cliente que envía accidental o no de forma accidental de correo no deseado de su organización puede degradar la reputación de todo el servicio y puede afectar la entrega de correo electrónico para otros clientes.
 
@@ -40,7 +43,7 @@ En este tema se describen los controles y las notificaciones diseñados para ayu
 
 ## <a name="how-eop-controls-outbound-spam"></a>Cómo EOP controla el correo no deseado saliente
 
-- **Segregación de tráfico de correo saliente**: todos los mensajes salientes que se envían a través del servicio se examinan en busca de correo no deseado. Si se determina que el mensaje es correo no deseado, se entrega desde un grupo de direcciones IP secundarias y menos prestigiosos denominado _grupo de entrega de alto riesgo_. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).
+- **Segregación de tráfico de correo saliente**: todos los mensajes salientes que se envían a través del servicio se examinan en busca de correo no deseado. Si se determina que el mensaje es correo no deseado, se entrega desde un grupo de direcciones IP secundarias y menos prestigiosos denominado _grupo de entrega de alto riesgo_. Para más información, consulte [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Supervisión de nuestra dirección IP de origen reputación**: Microsoft 365 consulta varias listas de direcciones IP bloqueadas de terceros. Se genera una alerta si alguna de las direcciones IP que usamos para el correo electrónico saliente aparece en estas listas. Esto nos permite reaccionar rápidamente cuando el correo no deseado ha provocado una degradación de nuestra reputación. Cuando se genera una alerta, tenemos documentación interna que describe cómo obtener nuestras direcciones IP (en la lista) de las listas de bloqueados.
 
@@ -48,7 +51,7 @@ En este tema se describen los controles y las notificaciones diseñados para ayu
 
 - **Deshabilitar cuentas que envían demasiado correo electrónico demasiado rápido** <sup>\*</sup> : además de los límites que buscan los mensajes marcados como correo no deseado, también hay límites para bloquear las cuentas cuando alcanzan un límite de mensajes salientes generales, independientemente del filtro de correo no deseado en los mensajes salientes. Una cuenta en peligro podría enviar correo no deseado de día cero (no reconocido previamente) que perdió el filtro de correo no deseado. Debido a que puede ser difícil identificar una campaña de correo masivo legítima en comparación con una campaña de correo no deseado, estos límites ayudan a minimizar los posibles daños.
 
-<sup>\*</sup>No anunciamos los límites exactos para que los remitentes de correo no deseado puedan jugar el sistema y, por lo tanto, podemos aumentar o disminuir los límites según sea necesario. Los límites son lo suficientemente altos como para evitar que un usuario de una empresa promedio los supere siempre y lo suficientemente bajo como para ayudar a contener el daño causado por un remitente de correo no deseado.
+<sup>\*</sup> No anunciamos los límites exactos para que los remitentes de correo no deseado puedan jugar el sistema y, por lo tanto, podemos aumentar o disminuir los límites según sea necesario. Los límites son lo suficientemente altos como para evitar que un usuario de una empresa promedio los supere siempre y lo suficientemente bajo como para ayudar a contener el daño causado por un remitente de correo no deseado.
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recomendaciones para los clientes que desean enviar correo masivo a través de EOP
 

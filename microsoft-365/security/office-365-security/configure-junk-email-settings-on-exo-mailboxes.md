@@ -16,14 +16,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203352"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 En Microsoft 365 organizaciones con buzones en Exchange Online, Exchange Online Protection (EOP) controla la configuración contra correo no deseado de la organización. Para obtener más información, vea [protección contra correo no deseado en EOP](anti-spam-protection.md).
 

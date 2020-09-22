@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Obtenga información sobre el permiso necesario para las tareas de la protección independiente de Exchange Online
-ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826630"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202872"
 ---
 # <a name="permissions-in-standalone-eop"></a>Permisos en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Independiente de Exchange Online Protection (EOP) sin buzones de correo de Exchange online usa el modelo de permisos de control de acceso basado en roles (RBAC) para conceder permisos fácilmente a los administradores. Puede usar las características de permisos en EOP independiente para poner en marcha rápidamente su nueva organización.
 
@@ -45,7 +48,7 @@ En la tabla siguiente se describen los grupos de funciones disponibles en EOP in
 
 ****
 
-|Grupo de funciones|Description|Roles predeterminados asignados|
+|Grupo de funciones|Descripción|Roles predeterminados asignados|
 |---|---|---|
 |ComplianceManagement|Configure y administre la configuración de cumplimiento dentro de la organización, incluida la prevención de pérdida de datos (DLP) si la suscripción tiene capacidades de DLP. <br/><br/> Los miembros del rol de [Administrador de cumplimiento](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) en Azure ad obtienen automáticamente los permisos de este grupo de roles.|Registros de auditoría <br/><br/> Administración de cumplimiento <br/><br/> Information Rights Management <br/><br/> Administración de retención <br/><br/> Registros de auditoría de solo vista <br/><br/> Configuración con permiso de vista <br/><br/> Destinatarios con permiso de vista|
 |ContentExplorerContentViewer|No se usa.|Visor de contenido de clasificación de datos|
@@ -73,7 +76,7 @@ En la tabla siguiente se describen los roles integrados que están disponibles e
 
 ****
 
-|Función * *|Description|Asignaciones de grupo de roles predeterminadas|
+|Función * *|Descripción|Asignaciones de grupo de roles predeterminadas|
 |---|---|---|
 |AntiMalware|Permite ver y modificar la configuración y los informes de las características antimalware.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |Anti|Permite ver y modificar la configuración y los informes de las características contra correo no deseado.|OrganizationManagement <br/><br/> SecurityAdministrator|

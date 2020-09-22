@@ -17,14 +17,17 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c6643b30327b7f362c4649c2be1b1eea81ff3523
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289668"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203641"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Estamos realizando algunos cambios en un futuro próximo para hacer que [Microsoft califique](microsoft-secure-score.md) con seguridad una mejor representativo de su postura de seguridad y mejorar el uso. Su puntuación y la puntuación máxima posible pueden cambiar.
 

@@ -16,14 +16,17 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la interfaz de administración web en la protección independiente de Exchange Online (EOP).
-ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652914"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202956"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 El centro de administración de Exchange (EAC) es una consola de administración basada en web para la protección independiente de Exchange Online (EOP).
 
@@ -82,7 +85,7 @@ Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. 
 
 ****
 
-|Icon|Nombre|Acción|
+|Icon|Nombre|Action|
 |---|---|---|
 |![Agregar icono](../../media/ITPro-EAC-AddIcon.gif)|Agregar, nuevo|Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.|
 |![Icono Editar](../../media/ITPro-EAC-EditIcon.gif)|Editar|Utilice este icono para editar un objeto.|

@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar el analizador de configuración para encontrar y corregir directivas de seguridad que están por debajo de las directivas de seguridad estándar protección estándar y protección estricta.
-ms.openlocfilehash: 022f11013ef49c65b1f94fea7a3872233ff1ab14
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2d37d937f42587ad99e4145d3a9f9fbc6a5a0f4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949483"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203436"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Analizador de configuración para directivas de protección en EOP y Office 365 ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > Las características descritas en este tema están en versión preliminar, no están disponibles en todas las organizaciones y están sujetas a cambios. Para obtener información sobre la programación de versiones, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
@@ -93,7 +96,7 @@ De forma predeterminada, la columna **grupo de directivas/nombre de configuraci�
 
 - **Contra correo electrónico no deseado**
 - **Contra la suplantación de identidad**
-- **Antimalware**
+- **Anti-malware**
 - **Datos adjuntos seguros de ATP** (si la suscripción incluye ATP)
 - **Vínculos seguros ATP** (si la suscripción incluye ATP)
 
