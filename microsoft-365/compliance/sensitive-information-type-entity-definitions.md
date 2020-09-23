@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177128"
+ms.locfileid: "48208102"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -33,14 +33,6 @@ Los tipos de información confidencial requieren una de estas suscripciones:
 - Microsoft 365 E3
 - Microsoft 365 E5
 
-Los tipos de información confidencial se pueden usar en:
-- directivas de prevención de pérdida de datos
-- polcies de cumplimiento de comunicaciones
-- Gobierno de la información
-- administración de registros
-- Microsoft Cloud App Security
-
-  
 ## <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
 ### <a name="format"></a>Formato

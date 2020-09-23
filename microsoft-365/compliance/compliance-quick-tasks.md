@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar a trabajar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816819"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200843"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -31,7 +31,7 @@ Una vez que haya completado estas tareas básicas de cumplimiento, considere la 
 
 Es importante administrar quién en su organización tiene acceso al centro de cumplimiento de Microsoft 365 para ver el contenido y realizar tareas de administración. Microsoft 365 proporciona roles administrativos específicos para el cumplimiento y el uso de las herramientas incluidas en el centro de cumplimiento de Microsoft 365.
 
-Empiece por asignar los permisos de cumplimiento a los miembros de la organización para que puedan realizar estas tareas y evitar que personas no autorizadas tengan acceso a áreas ajenas a sus responsabilidades. Querrá asegurarse de que ha asignado a las personas adecuadas al administrador de datos de **cumplimiento** y a los roles de administrador de **Administrador de cumplimiento** antes de empezar a configurar e implementar soluciones de cumplimiento incluidas con Microsoft 365. También necesitará asignar usuarios al rol de lector global de Azure Active Directory para ver los datos con la puntuación de cumplimiento.
+Empiece por asignar los permisos de cumplimiento a los miembros de la organización para que puedan realizar estas tareas y evitar que personas no autorizadas tengan acceso a áreas ajenas a sus responsabilidades. Querrá asegurarse de que ha asignado a las personas adecuadas al administrador de datos de **cumplimiento** y a los roles de administrador de **Administrador de cumplimiento** antes de empezar a configurar e implementar soluciones de cumplimiento incluidas con Microsoft 365. También necesitará asignar usuarios al rol de lector global de Azure Active Directory para ver los datos en el administrador de cumplimiento.
 
 Para obtener instrucciones paso a paso para configurar permisos y asignar personas a roles de administrador, consulte [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -39,9 +39,9 @@ Para obtener instrucciones paso a paso para configurar permisos y asignar person
 
 Es difícil saber a dónde ir si no sabes dónde estás. Satisfacer sus necesidades de cumplimiento de normas incluye comprender el nivel de riesgo actual y las actualizaciones que se necesitan en cada vez que cambien horas. Independientemente de si su organización es nueva en los requisitos de cumplimiento o tiene una experiencia profunda con los estándares y las regulaciones que rigen a la industria, lo mejor que puede hacer para mejorar el cumplimiento es comprender dónde se encuentra su organización.
 
-La [puntuación de cumplimiento de Microsoft](compliance-score.md) puede ayudarle a comprender la postura de cumplimiento normativo y las áreas de resaltado de su organización que pueden necesitar mejora. La puntuación de cumplimiento usa un panel centralizado para calcular una puntuación basada en riesgos, lo que mide su progreso en la realización de acciones que ayudan a reducir los riesgos relacionados con la protección de datos y los estándares normativos. También puede usar la puntuación de cumplimiento como una herramienta para realizar un seguimiento de todas las evaluaciones de riesgos. Proporciona funcionalidades de flujo de trabajo para ayudarle a completar eficazmente las evaluaciones de riesgos mediante una herramienta común.
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) puede ayudarle a comprender la postura de cumplimiento normativo y las áreas de resaltado de su organización que pueden necesitar mejora. El administrador de cumplimiento usa un panel centralizado para calcular una puntuación basada en riesgos, lo que mide su progreso en la realización de acciones que ayudan a reducir los riesgos relacionados con la protección de datos y los estándares normativos. También puede usar el administrador de cumplimiento como una herramienta para realizar un seguimiento de todas las evaluaciones de riesgos. Proporciona funcionalidades de flujo de trabajo para ayudarle a completar eficazmente las evaluaciones de riesgos mediante una herramienta común.
 
-Para obtener instrucciones paso a paso sobre cómo empezar a utilizar la puntuación de cumplimiento, consulte [set up Compliance score](compliance-score-setup.md).
+Para obtener instrucciones paso a paso sobre cómo empezar a utilizar el administrador de cumplimiento, consulte [Get Started with Compliance Manager](compliance-manager-setup.md).
 
 >[!IMPORTANT]
 >La seguridad y el cumplimiento están estrechamente integrados en la mayoría de las organizaciones. Es importante que la organización se base en la seguridad básica, la protección contra amenazas y las áreas de administración de identidades y acceso para ayudar a proporcionar un enfoque de defensa en profundidad tanto para la seguridad como para el cumplimiento.
@@ -89,7 +89,7 @@ Cuando el contenido está sujeto a una directiva de retención, los usuarios pue
 
 Puede poner rápidamente una directiva de retención en su lugar para varias ubicaciones en su entorno de Microsoft 365, como correo de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. No hay límites en cuanto al número de buzones o sitios que esta Directiva puede incluir automáticamente. Pero si necesita obtener más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluya o excluya sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, consulte [Create and configure Retention Policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, consulte [Create and configure Retention Policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 8: configurar la información confidencial y las directivas de lenguaje ofensivo
 
@@ -129,7 +129,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener una guía paso a paso sobre el uso del explorador de actividades, consulte Introducción [a Activity Explorer](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento para su organización, tenga en cuenta las siguientes soluciones de cumplimiento de Microsoft 365 para ayudarle a proteger la información confidencial y a detectar y actuar en riesgos de Insider adicionales.
 

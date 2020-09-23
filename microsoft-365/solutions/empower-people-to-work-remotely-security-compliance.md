@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Use los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores remotos.
-ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f2743e9f7d2f102231531e7a9146a0f26727e1d4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560468"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200948"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Paso 3: implementar seguridad y cumplimiento para trabajadores remotos
 
@@ -68,7 +68,7 @@ Cumpla los requisitos reglamentarios o las directivas internas con estas caracte
 | Directivas y etiquetas de retención de datos | Implemente controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos de almacenamiento de datos personales sobre los clientes, para cumplir con las directivas de la organización o las regulaciones de datos. | Microsoft 365 E3 o E5 |
 | Cifrado de mensajes de Office (OME) | Envíe y reciba mensajes de correo electrónico cifrado entre las personas de dentro y fuera de la organización que contengan datos regulados, como los datos personales sobre clientes. | Microsoft 365 E3 o E5 |
 | Administrador de cumplimiento | Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza del servicio de Microsoft. | Microsoft 365 E3 o E5 |
-| Puntuación de cumplimiento (versión preliminar) | Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 o E5 |
+| Administrador de cumplimiento | Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 o E5 |
 | Cumplimiento de la comunicación  | Detectar, capturar y llevar a cabo acciones correctivas para los mensajes no adecuados de su organización. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
 | Administración de riesgos de Insider |  Detecte, investigue y actúe ante riesgos malintencionados e involuntarios en su organización. Microsoft 365 puede detectar estos tipos de riesgos, incluso cuando un trabajador usa un dispositivo no administrado. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
 ||||

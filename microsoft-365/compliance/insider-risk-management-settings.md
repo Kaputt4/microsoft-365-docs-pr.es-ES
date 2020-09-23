@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cec98f979a19c91946564aa402d1880c3ee08d5a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416784"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214909"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de Insider
 
@@ -27,8 +27,11 @@ La configuración de la administración de riesgos de Insider se aplica a todas 
 - Indicadores
 - Escalas de tiempo de Directiva
 - Detecciones inteligentes
-- Exportar alertas
-- Grupos de usuarios con prioridad
+- Exportar alertas (versión preliminar)
+- Grupos de usuarios con prioridad (versión preliminar)
+- Activos de prioridad física (versión preliminar)
+- Flujos de automatización de la potencia (versión preliminar)
+- Microsoft Teams (versión preliminar)
 
 Antes de empezar y crear directivas de administración de riesgos de Insider, es importante comprender esta configuración y elegir los niveles de configuración mejor para las necesidades de cumplimiento de la organización.
 
@@ -36,7 +39,7 @@ Antes de empezar y crear directivas de administración de riesgos de Insider, es
 
 La protección de la privacidad de los usuarios que tienen coincidencias de directivas es importante y puede ayudar a promover la objetividad en la investigación de datos y análisis de revisiones de alertas de riesgo de Insider. Para los usuarios con una directiva de riesgo de Insider coinciden, puede elegir una de las siguientes opciones:
 
-- **Mostrar anonimizan versiones de nombres de**usuario: los nombres de usuario son anonimizan para evitar que los administradores, investigadores de datos y revisores vean quiénes están asociados a las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. Cuando se selecciona esta opción, la información de Perfil de usuario en la alerta de riesgo de Insider y los detalles de casos no estarán disponibles. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si decide desactivar esta opción, los nombres de usuario se mostrarán para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
+- **Mostrar anonimizan versiones de**nombres de usuario: los nombres de los usuarios se anonimizan para evitar que los administradores, investigadores de datos y revisores vean quiénes están asociados con las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. Cuando se selecciona esta opción, la información de Perfil de usuario en la alerta de riesgo de Insider y los detalles de casos no estarán disponibles. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si decide desactivar esta opción, los nombres de usuario se mostrarán para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
 - **No mostrar anonimizan versiones de nombres de usuario**: los nombres de usuario se muestran en todas las coincidencias de directivas actuales y pasadas para alertas y casos. La información del perfil de usuario (el nombre, el cargo, el alias y la organización o departamento) se muestra al usuario para todos los casos y alertas de administración de riesgos del Insider.
 
 ![Configuración de privacidad de administración de riesgos de Insider](../media/insider-risk-settings-privacy.png)
@@ -105,6 +108,9 @@ Las detecciones anómalas incluyen la configuración de las exclusiones de tipo 
 
 ### <a name="offensive-language-detections"></a>Detecciones de idiomas ofensivos
 
+>[!IMPORTANT]
+>A partir del 16 de octubre de 2020, ya no podrá crear directivas con esta plantilla. Todas las directivas activas que usen esta plantilla funcionarán hasta que se eliminen de forma permanente en el 2021 de enero. Estamos en desuso el clasificador integrado integrado que admite esta plantilla, ya que ha generado un gran número de falsos positivos. Para solucionar los problemas de lenguaje ofensivo, se recomienda usar las directivas de [cumplimiento normativo de comunicaciones](communication-compliance.md) de Microsoft 365. Para obtener más información acerca de los clasificadores integrados, consulte [Getting Started with trainable Classifiers](classifier-get-started-with.md).
+
 Para ajustar la confidencialidad del clasificador de idioma ofensivo para las directivas que usan el *idioma ofensivo en* la plantilla de correo electrónico, elija una de las siguientes opciones:
 
 - **Bajo**: el nivel de confidencialidad más bajo con el intervalo más amplio para la detección de un idioma y una opinión ofensivos. La probabilidad de falsos positivos para la coincidencia de idiomas ofensivos es elevada.
@@ -153,11 +159,40 @@ La información de alerta de administración de riesgos de Insider es exportable
 
 Para usar las API para revisar la información de alertas de los riesgos de Insider:
 
-1. Habilite la compatibilidad con la API de actividad de administración 365 de Office en la configuración de administración de riesgos de Insider. De forma predeterminada, esta opción está deshabilitada para la organización de Microsoft 365.
+1. Habilitar la API de actividad de administración 365 de Office en la exportación de configuración de **Administración de riesgos de Insider**  >  **Settings**  >  **Export**. De forma predeterminada, esta opción está deshabilitada para la organización de Microsoft 365.
 2. Filtrar las actividades de auditoría comunes de Office 365 por *SecurityComplianceAlerts*.
 3. Filtrar *SecurityComplianceAlerts* por la categoría *InsiderRiskManagement* .
 
 ![Configuración de alertas de exportación de administración de riesgos de Insider](../media/insider-risk-settings-export.png)
+
+La información de alerta contiene información del esquema de alerta de seguridad y cumplimiento y del esquema común de la API de actividad de administración de Office 365.
+
+Los siguientes campos y valores se exportan para las alertas de administración de riesgos de Insider para el esquema de alerta de cumplimiento de & de seguridad:
+
+| **Parámetro de alerta** | **Descripción** |
+|:------------------|:----------------|
+| AlertType | El tipo de la alerta es *personalizado*.  |
+| AlertId | GUID de la alerta. Las alertas de administración de riesgos de Insider son mutables. Cuando el estado de alerta cambia, se genera un nuevo registro con el mismo AlertID. Esta AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
+| Categoría | La categoría de la alerta es *InsiderRiskManagement*. Esta categoría puede usarse para distinguir estas alertas de otras alertas de seguridad & cumplimiento. |
+| Comentarios | Comentarios predeterminados para la alerta. Los valores son *alertas nuevas* (registradas cuando se crea una alerta) y *alertas actualizadas* (registradas cuando hay una actualización de una alerta). Use AlertID para correlacionar las actualizaciones de una alerta. |
+| Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal de usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
+| Nombre | Nombre de la Directiva para la Directiva de administración de riesgos de Insider que generó la alerta. |
+| PolicyId | El GUID de la Directiva de administración de riesgos de Insider que activó la alerta. |
+| Severity | La gravedad de la alerta. Los valores son *alta*, *media*o *baja*. |
+| Origen | Origen de la alerta. El valor es *Office 365 Security & Compliance*. |
+| Estado | El estado de la alerta. Los valores *están activos* (*necesita revisión* en el riesgo de Insider), la *investigación* (*confirmada* en el riesgo de Insider), *resuelto* (*resuelto* en el riesgo de Insider), *despedido* (se*descarta* en el riesgo de Insider). |
+| Versión | La versión del esquema de alertas de seguridad y cumplimiento. |
+
+Los siguientes campos y valores se exportan para las alertas de administración de riesgos de Insider del [esquema común de la API de actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
+
+- UserId
+- Id
+- RecordType
+- CreationTime
+- Operación
+- OrganizationId
+- UserType
+- UserKey
 
 ## <a name="priority-user-groups-preview"></a>Grupos de usuarios con prioridad (versión preliminar)
 
@@ -212,3 +247,174 @@ Complete los siguientes pasos para eliminar un grupo de usuarios con prioridad:
 2. Seleccione la ficha **grupos de usuarios con prioridad**
 3. Seleccione el grupo de usuarios con prioridad que desea editar y seleccione **eliminar** en el menú del panel.
 4. En el cuadro de diálogo **eliminar** , seleccione **sí** para eliminar el grupo de prioridad de usuario o seleccione **Cancelar** para volver al panel.
+
+## <a name="priority-physical-assets-preview"></a>Activos de prioridad física (versión preliminar)
+
+Identificar el acceso a los activos físicos prioritarios y correlacionar la actividad de acceso a los eventos de usuario es un componente importante de la infraestructura de cumplimiento. Estos activos físicos representan ubicaciones de prioridad en su organización, como edificios de empresas, centros de datos o salas de servidores. Las actividades de riesgo de Insider pueden asociarse con los usuarios que trabajan en horas inusuales, intentar obtener acceso a estas áreas seguras o confidenciales no autorizadas, y solicitudes de acceso a áreas de alto nivel sin necesidades legítimas.
+
+Con la prioridad de activos físicos habilitada y el [conector de datos físico distintivos](import-physical-badging-data.md) configurado, la administración de riesgos de Insider integra las señales de su control físico y accede a los sistemas con otras actividades de riesgo de los usuarios. Mediante el examen de patrones de comportamiento en sistemas de acceso físico y la correlación de estas actividades con otros eventos de riesgo de Insider, la administración de riesgos de Insider puede ayudar a los investigadores y a los analistas de cumplimiento a tomar decisiones de respuesta para las alertas. El acceso a los activos físicos prioritarios se puntúa y se identifica de manera diferente que el acceso a los activos sin prioridad.
+
+Por ejemplo, su organización tiene un sistema distintivos para los usuarios que supervisa y aprueba el acceso físico a las áreas de proyecto confidenciales y de trabajo normal. Tiene varios usuarios trabajando en un proyecto confidencial y estos usuarios volverán a otras áreas de la organización cuando se complete el proyecto. A medida que el proyecto confidencial se acerque a su finalización, querrá asegurarse de que el trabajo del proyecto permanece confidencial y que el acceso a las áreas del proyecto está muy controlado.
+
+Elija Habilitar el conector de datos físico distintivos en Microsoft 365 para importar la información de acceso desde el sistema de distintivos físico y especificar los activos con prioridad en la administración de riesgos de Insider. Al importar información de su sistema de distintivos y correlacionar la información de acceso físico con otras actividades de riesgo identificadas en la administración de riesgos de Insider, observa que uno de los usuarios del proyecto tiene acceso a las oficinas de proyecto después del horario de trabajo normal y que también está exportando grandes cantidades de datos a un servicio de almacenamiento en la nube de trabajo normal. Esta actividad de acceso físico asociada con la actividad en línea puede apuntar a posibles investigadores y analistas de cumplimiento y analistas pueden tomar las medidas oportunas según las circunstancias de este usuario.
+
+### <a name="configure-priority-physical-assets"></a>Configurar los activos físicos con prioridad
+
+Para configurar los activos físicos con prioridad, debe configurar el conector de distintivos físico y usar los controles de configuración de la solución de **Administración de riesgos de Insider** en el centro de cumplimiento de Microsoft 365. Para configurar los activos físicos con prioridad, debe ser miembro del grupo de roles de *Administración de riesgos de Insiders* o administradores de administración de riesgos de *Insider*.
+
+Complete los pasos siguientes para configurar los activos físicos con prioridad:
+
+1. Siga los pasos de configuración de la administración de riesgos de Insider en el artículo [Introducción a la administración de riesgos de Insider](insider-risk-management-configure.md) . En el paso 3, asegúrese de configurar el conector de distintivos físico.
+
+    >[!IMPORTANT]
+    >Para que las directivas de administración de riesgos de Insider puedan usar y correlacionar datos de señal relacionados con los usuarios que se desponen y finalizan con datos de eventos de las plataformas de acceso y control físico, también debe configurar el conector de 365 de RRHH de Microsoft. Si habilita el conector de distintivos físico sin habilitar el conector de 365 de h de Microsoft, las directivas de administración de riesgos de Insider solo procesarán eventos de actividades de acceso físico para los usuarios de su organización.
+
+2. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **configuración de riesgos de internación**  >  **prioridad de activos físicos**.
+3. En la página **activos con prioridad** , puede Agregar manualmente los identificadores de activos físicos que desea supervisar para los eventos de activos importados por el conector de distintivos físico o importar un. Archivo CSV de todos los identificadores de activos físicos importados por el conector distintivos físico: a) para agregar manualmente identificadores de activos físicos, elija **Agregar activos físicos con prioridad**, especifique un identificador de activo físico y, a continuación, seleccione **Agregar**. Especifique otros identificadores de activos físicos y, a continuación, seleccione **Agregar activos físicos con prioridad** para guardar todos los activos especificados.
+    b) para agregar una lista de identificadores de activos físicos desde un. Archivo CSV, elija **importar activos físicos con prioridad**. En el cuadro de diálogo explorador de archivos, seleccione. Archivo CSV que desea importar y, a continuación, seleccione **abrir**. Los identificadores de activos físicos del. Los archivos CSV se agregan a la lista.
+4. Vaya a la ficha **indicadores de directiva** en configuración.
+5. En la página **indicadores de directiva** , vaya a la sección indicadores de **acceso físico** y active la casilla de **acceso físico tras la finalización o error de acceso al activo confidencial**.
+6. Seleccione **Guardar** para configurar y salir.
+
+### <a name="delete-a-priority-physical-asset"></a>Eliminación de un activo físico con prioridad
+
+Para eliminar un activo físico con prioridad existente, debe usar los controles de configuración de la solución de administración de riesgos de Insider en el centro de cumplimiento de Microsoft 365. Para eliminar un activo físico con prioridad, debe ser miembro del grupo de roles de administración de riesgos de Insider o de administrador de administración de riesgos de Insider.
+
+>[!IMPORTANT]
+>La eliminación de un activo físico con prioridad quita el examen de cualquier directiva activa a la que se incluyó anteriormente. Las alertas generadas por actividades asociadas con el activo físico de prioridad no se eliminan.
+
+Complete los siguientes pasos para eliminar un activo físico con prioridad:
+
+1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **configuración de riesgos de internación**  >  **prioridad de activos físicos**.
+2. En la página **activos físicos con prioridad** , seleccione el recurso que desea eliminar.
+3. Seleccione **eliminar** en el menú Acción para eliminar el recurso.
+
+## <a name="power-automate-flows-preview"></a>Flujos de automatización de la potencia (versión preliminar)
+
+[Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) es un servicio de flujo de trabajo que automatiza acciones en aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas con estas aplicaciones y servicios. Cuando habilita los flujos de alimentación automatizada para la administración de riesgos de Insider, puede automatizar tareas importantes para casos y usuarios. Puede configurar los flujos de alimentación automatizada para recuperar información de usuarios, alertas y casos, y compartir esta información con las partes interesadas y otras aplicaciones, así como automatizar acciones en la administración de riesgos de Insider, como la publicación en notas de mayúsculas o minúsculas. Los flujos de alimentación automatizada se aplican a los casos y a los usuarios del ámbito de una directiva.
+
+Los clientes con suscripciones de Microsoft 365 que incluyen la administración de riesgos de Insider no necesitan otras licencias de Power automatizada para usar las plantillas recomendadas de administración de riesgos de Insider. Estas plantillas se pueden personalizar para apoyar a su organización y cubrir los principales escenarios de administración de riesgos de Insider. Si decide usar las características de automatizar la alimentación avanzada en estas plantillas, cree una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o use las plantillas de Power automatizada para otras áreas de cumplimiento en Microsoft 365, es posible que necesite otras licencias de Power automatizada.
+
+Las siguientes plantillas de automatización se proporcionan a los clientes para que admitan la automatización de procesos para usuarios y casos de la administración de riesgos de Insider:
+
+- **Notificar a los usuarios cuando se agregan a una directiva de riesgos de Insider**: esta plantilla es para organizaciones que tienen requisitos de directivas, privacidad o normativas internas que los usuarios deben recibir una notificación cuando están sujetos a las directivas de administración de riesgos de Insider. Cuando este flujo está configurado y seleccionado para un usuario de la página usuarios, a los usuarios y a sus administradores se les envía un mensaje de correo electrónico cuando el usuario se agrega a una directiva de administración de riesgos de Insider. Esta plantilla también admite la actualización de una lista de SharePoint hospedada en un sitio de SharePoint para ayudar a hacer un seguimiento de los detalles de los mensajes de notificación, como la fecha y la hora y el destinatario del mensaje. La automatización de la alimentación los flujos con esta plantilla están disponibles en el **Panel de usuarios**.
+- **Solicitar información de recursos humanos o empresas sobre un usuario en un caso de riesgo de Insider**: cuando actúe en un caso, es posible que los analistas e investigadores de riesgos para Insiders tengan que consultar con recursos humanos u otras partes interesadas para comprender el contexto de las actividades de caso. Cuando este flujo está configurado y seleccionado para un caso, los analistas e investigadores envían un mensaje de correo electrónico a las partes interesadas de RRHH y empresas configuradas para este flujo. A cada destinatario se le envía un mensaje con opciones de respuesta preconfiguradas o personalizables. Cuando los destinatarios seleccionan una opción de respuesta, la respuesta se registra como una nota de caso e incluye la información de destinatarios y fecha y hora. La automatización de la alimentación los flujos con esta plantilla están disponibles en el **Panel casos**.
+- **Notificar al administrador cuando un usuario tiene una alerta de riesgo de Insider**: es posible que algunas organizaciones necesiten una notificación de administración inmediata cuando un usuario tiene una alerta de administración de riesgos de Insider. Cuando se configura y se selecciona este flujo, se envía un mensaje de correo electrónico al administrador del caso al usuario con la siguiente información acerca de todas las alertas de casos: 
+    - Directiva aplicable para la alerta
+    - Fecha y hora de la alerta
+    - Nivel de gravedad de la alerta
+
+    El flujo actualiza automáticamente las notas de mayúsculas y minúsculas en las que se envió el mensaje y se activó el flujo. La automatización de la alimentación los flujos con esta plantilla están disponibles en el **Panel casos**.
+
+- **Agregar aviso de calendario para realizar un seguimiento de un caso de riesgo de Insider**: esta plantilla permite a los investigadores y analistas de riesgos agregar recordatorios de calendario para los casos a su calendario de Office 365 Outlook. Este flujo elimina la necesidad de que los usuarios salgan o cambien del flujo de trabajo de administración de riesgos de Insider al procesar los casos y las alertas de clasificación. Cuando este flujo está configurado y seleccionado, se agrega un aviso al calendario de Office 365 Outlook para el usuario que ejecuta el flujo. La automatización de la alimentación los flujos con esta plantilla están disponibles en el **Panel casos**.
+
+### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Crear un flujo de automatización de potencia desde la plantilla de administración de riesgos de Insider
+
+Para crear un flujo de automatización de potencia desde una plantilla de administración de riesgos de Insider recomendada, use los controles de configuración de la solución de **Administración de riesgos de Insider** en el centro de cumplimiento de Microsoft 365 o la opción **administrar flujos de automatización de energía** del control **automatizar** cuando trabaje directamente en los paneles de **casos** o **usuarios**.
+
+Para crear un flujo de autoconsumo en el área de configuración, debe ser miembro del grupo de roles *Administración de riesgos de Insider* o administrador de administración de riesgos de *Insider* . Para crear un flujo de automatización de potencia con la opción **administrar flujos de automatización eléctrica** , debe pertenecer al menos a un grupo de roles de administración de riesgos de la Insider.
+
+Complete los pasos siguientes para crear un flujo de automatización de eficacia desde una plantilla de administración de riesgos de Insider recomendada:
+
+1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), vaya a **Administración de riesgos de Insider** y seleccione **configuración de riesgos de Insider**para la  >  **automatización de flujos de energía**. También puede acceder a desde las páginas **casos** o **usuarios de paneles** eligiendo **automatizar**  >  **administrar flujos de alimentación automatizada**.
+2. En la página **flujos de automatización eléctrica** , seleccione una plantilla recomendada de las **plantillas de administración de riesgos** de localizador a las que se refiere la sección de la página.
+3. El flujo enumera las conexiones incrustadas necesarias para el flujo y observará si los Estados de conexión están disponibles. Si es necesario, actualice las conexiones que no se muestren como disponibles. Seleccione **continuar**.
+4. De forma predeterminada, los flujos recomendados están preconfigurados con los campos de datos de servicio de Microsoft 365 recomendados de administración de riesgos de Insider recomendados para completar la tarea asignada al flujo. Si es necesario, Personalice los componentes de flujo mediante el control **Mostrar opciones avanzadas** y configurando las propiedades disponibles para el componente de flujo.
+5. Si es necesario, agregue pasos adicionales al flujo seleccionando el botón **nuevo paso** . En la mayoría de los casos, esto no debería ser necesario para las plantillas predeterminadas recomendadas.
+6. Seleccione **Guardar borrador** para guardar el flujo para más configuraciones o seleccione **Guardar** para completar la configuración del flujo.
+7. Seleccione **cerrar** para volver a la página **flujo de energía automatizada** . La nueva plantilla se mostrará como un flujo en las fichas **Mis flujos** y estará disponible automáticamente en el control desplegable **automatizar** al trabajar con casos de administración de riesgos de Insider para el usuario que crea el flujo.
+
+>[!IMPORTANT]
+>Si otros usuarios de su organización necesitan tener acceso al flujo, el flujo debe compartirse.
+
+### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Crear un flujo de automatización de energía personalizada para la administración de riesgos de Insider
+
+Algunos procesos y flujos de trabajo de su organización pueden estar fuera de las plantillas de flujo de administración de riesgos de Insider recomendadas y es posible que tenga que crear flujos de alimentación automatizada personalizados para áreas de administración de riesgos de Insider. Los flujos de automatización de la potencia son flexibles y admiten una amplia personalización, pero hay pasos que deben realizarse para integrarse con las características de administración de riesgos de Insider.
+
+Complete los siguientes pasos para crear una plantilla de Power automatizada personalizada para la administración de riesgos de Insider:
+
+1. **Consulte su licencia de flujo de automatización de energía**: para crear flujos de alimentación automatizada personalizados que usan desencadenadores de administración de riesgos de Insider, necesitará una licencia de automatización de la potencia. Las plantillas de flujo de administración de riesgos de Insider recomendadas no requieren licencias adicionales y se incluyen como parte de la licencia de administración de riesgos de Insider.
+2. **Cree un flujo automatizado**: cree un flujo que realice una o varias tareas después de que se desencadene por un evento de administración de riesgos de Insider. Para obtener más información sobre cómo crear un flujo automatizado, consulte [Create a Flow with Power automaticing](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+3. **Seleccione el conector de cumplimiento de microsoft 365**: Busque y seleccione el conector de cumplimiento de Microsoft 365. Este conector habilita las acciones y los desencadenadores de administración de riesgos de Insider. Para obtener más información acerca de los conectores, consulte el artículo de [información general de referencia de conector](https://docs.microsoft.com/connectors/connector-reference/) .
+4. **Elija los desencadenadores de administración de riesgos de Insider para su flujo: la**administración de riesgos de Insider tiene dos desencadenadores disponibles para flujos de alimentación automatizada personalizados:
+    - **Para un caso de administración de riesgos de Insider seleccionado**: los flujos con este desencadenador se pueden seleccionar en la página de panel de escenarios de administración de riesgos de Insider.
+    - **Para un usuario seleccionado de la administración de riesgos de Insider**: los flujos con este desencadenador se pueden seleccionar en la página del panel de usuarios de administración de riesgos de Insider.
+5. Elija las acciones de administración de riesgos de Insider para su flujo: puede elegir entre varias acciones de administración de riesgos de Insider para incluirla en el flujo personalizado:
+    - Obtener alerta de administración de riesgos de Insider
+    - Obtener caso de administración de riesgos de Insider
+    - Obtener usuario de administración de riesgos de Insider
+    - Obtener alertas de administración de riesgos de Insider para un caso
+    - Agregar Nota del caso de administración de riesgos de Insider
+
+### <a name="share-a-power-automate-flow"></a>Compartir un flujo de automatización de la alimentación
+
+De forma predeterminada, los flujos de automatización creados por un usuario solo están disponibles para ese usuario. Para que otros usuarios de administración de riesgos de Insider puedan tener acceso y usar un flujo, el flujo debe compartirse con el creador del flujo. Para compartir un flujo, use los controles de configuración de la **solución de administración de riesgos de Insider** en el centro de cumplimiento de Microsoft 365 o la opción **administrar flujos de automatización de energía** del control automatizar cuando trabaje directamente en las páginas de panel de **usuarios** o **casos** . Una vez que haya compartido un flujo, todos los usuarios con los que se haya compartido pueden tener acceso al flujo **en el cuadro** desplegable de control automatizar en los paneles **caso** y **usuario**.
+
+Para compartir un flujo de autoconsumo en el área de configuración, debe ser miembro del grupo de roles *Administración de riesgos de Insider* o administrador de administración de riesgos de *Insider* . Para compartir un flujo de automatización automatizada con la opción **administrar flujos de alimentación automatizada** , debe ser miembro de al menos un grupo de roles de administración de riesgos de Insider.
+
+Complete los pasos siguientes para compartir un flujo de automatización de la alimentación:
+
+1. En el [centro de cumplimiento de Microsoft 365](htttps://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **configuración de riesgos de Insider**para la  >  **automatización de flujos de energía**. También puede acceder a desde las páginas **casos** o **usuarios de paneles** eligiendo **automatizar**  >  **administrar flujos de alimentación automatizada**.
+2. En la página **flujos de automatización eléctrica** , seleccione la pestaña **Mis flujos** o **flujos de equipo** .
+3. Seleccione el flujo que desea compartir y, a continuación, seleccione **compartir** en el menú opciones de flujo.
+4. En la página uso compartido de flujo, escriba el nombre del usuario o grupo que desea agregar como propietario del flujo.
+5. En el cuadro de diálogo **conexión utilizada** , seleccione **Aceptar** para confirmar que el flujo de usuario o grupo agregado tendrá acceso total al flujo.
+
+### <a name="edit-a-power-automate-flow"></a>Edición de un flujo de automatización de la alimentación
+
+Para editar un flujo, use los controles de configuración de la solución de **Administración de riesgos de Insider** en el centro de cumplimiento de Microsoft 365 o la opción **administrar flujos de alimentación automatizada** desde el control **automatizado** cuando trabaja directamente en los **paneles de usuarios**o **casos** .
+
+Para editar un flujo de automatización de energía en el área configuración, debe ser miembro del grupo de roles *Administración de riesgos de Insider* o administrador de administración de riesgos de *Insider* . Para editar un flujo de automatización automatizada con la opción **administrar flujos de alimentación automatizada** , debe ser miembro de al menos un grupo de roles de administración de riesgos de Insider.
+
+Complete los pasos siguientes para editar un flujo de automatización de consumo:
+
+1. En el [centro de cumplimiento de Microsoft 365](htttps://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **configuración de riesgos de Insider**para la  >  **automatización de flujos de energía**. También puede acceder a desde las páginas **casos** o **usuarios de paneles** eligiendo **automatizar**  >  **administrar flujos de alimentación automatizada**.
+2. En la página **flujos de automatización eléctrica** , seleccione un flujo para editarlo y seleccione **Editar** en el menú de control de flujo.
+3. Seleccione la configuración de **puntos suspensivos**  >  **Settings** para cambiar una configuración del componente de flujo o **puntos suspensivos**  >  **Delete** para eliminar un componente de flujo.
+4. Seleccione **Guardar** y, a continuación, **cerrar** para completar la edición del flujo.
+
+### <a name="delete-a-power-automate-flow"></a>Eliminar un flujo de automatización de alimentación
+
+Para eliminar un flujo, use los controles de configuración de la solución de **Administración de riesgos de Insider** en el centro de cumplimiento de Microsoft 365 o la opción **administrar flujos de alimentación automatizada** desde el control **automatizado** cuando trabaja directamente en los **paneles de usuarios**o **casos** . Cuando se elimina un flujo, se quita como una opción para todos los usuarios.
+
+Para eliminar un flujo de automatización de alimentación en el área configuración, debe ser miembro del grupo de roles *Administración de riesgos de Insider* o *Administrador de administración de riesgos de Insider* . Para eliminar un flujo de automatización de alimentación con la opción **administrar flujos de alimentación automatizada** , debe ser miembro de al menos un grupo de roles de administración de riesgos de Insider.
+
+Complete los pasos siguientes para eliminar un flujo de automatización de la alimentación:
+
+1. En el [centro de cumplimiento de Microsoft 365](htttps://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **configuración de riesgos de Insider**para la  >  **automatización de flujos de energía**. También puede acceder a desde las páginas **casos** o **usuarios de paneles** eligiendo **automatizar**  >  **administrar flujos de alimentación automatizada**.
+2. En la página **flujos de automatización eléctrica** , seleccione un flujo para eliminar y seleccione **eliminar** en el menú de control de flujo.
+3. En el cuadro de diálogo de confirmación de eliminación, seleccione **eliminar** para quitar el flujo o seleccione **Cancelar** para salir de la acción de eliminación.
+
+## <a name="microsoft-teams-preview"></a>Microsoft Teams (versión preliminar)
+
+Los analistas de cumplimiento e investigadores pueden usar fácilmente Microsoft Teams para colaborar en casos de administración de riesgos de Insider. Pueden coordinar y comunicarse con otras partes interesadas en Microsoft Teams para:
+
+- Coordinar y revisar actividades de respuesta para casos en canales de equipos privados
+- Compartir y almacenar de forma segura archivos y pruebas relacionados con casos individuales
+- Seguimiento y revisión de las actividades de respuesta por parte de analistas e investigadores
+
+Una vez que Microsoft Teams está habilitado para la administración de riesgos de Insider, se crea un equipo dedicado de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. De forma predeterminada, el equipo incluye automáticamente a todos los miembros de los grupos de funciones de *Administración de riesgos*de Insider, *analistas de administración*de riesgos de Insider y investigadores de administración de riesgos de *insider* (hasta 100 usuarios iniciales). Se pueden agregar colaboradores de organización adicionales al equipo después de su creación y según corresponda. Para los casos existentes creados antes de la habilitación de Microsoft Teams, los analistas e investigadores pueden optar por crear un nuevo equipo de Microsoft Teams al trabajar en un caso si es necesario.  Una vez que se resuelve el caso asociado en la administración de riesgos de Insider, el equipo se archiva automáticamente (se mueve a oculto y de solo lectura).
+
+Para obtener más información sobre cómo usar equipos y canales en Microsoft Teams, vea [información general sobre los equipos y canales en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-channels-overview).
+
+La habilitación de la compatibilidad con Microsoft Teams para casos es rápida y fácil de configurar. Para habilitar Microsoft Teams para la administración de riesgos de Insider, siga los pasos que se indican a continuación:
+
+1. En el [centro de cumplimiento de Microsoft 365](htttps://compliance.microsoft.com), vaya a configuración de riesgos de Insider de **Administración de riesgos de Insider**  >  **Insider risk settings**.
+2. Seleccione la pestaña **Microsoft Teams** .
+3. Habilite la integración de Microsoft Teams para la administración de riesgos de Insider.
+4. Seleccione **Guardar** para configurar y salir.
+
+### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Crear un equipo de Microsoft Teams para casos existentes
+
+Si habilita la compatibilidad con Microsoft Teams para la administración de riesgos de Insider después de tener casos, tendrá que crear manualmente un equipo para cada caso, según sea necesario. Después de habilitar la compatibilidad de Microsoft Teams con la configuración de la administración de riesgos de Insider, se creará automáticamente un nuevo equipo de Microsoft Teams.
+
+Los usuarios necesitan permiso para crear grupos de 365 de Microsoft en su organización para crear un equipo de Microsoft Teams a partir de un caso. Para obtener más información acerca de la administración de permisos para grupos de Microsoft 365, consulte [Manage The Can Create microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups).
+
+Para crear un equipo para un caso, deberá usar el control de Microsoft Teams cuando trabaje directamente en un caso existente. Complete los siguientes pasos para crear un nuevo equipo:
+
+1. En el [centro de cumplimiento de Microsoft 365](htttps://compliance.microsoft.com), vaya a escenarios de **Administración de riesgos de Insider**  >  **Cases** y seleccione un caso existente.
+2. En el menú Acción de escenario, seleccione **crear Microsoft Team**.
+3. En el campo **nombre del equipo** , escriba un nombre para el nuevo equipo de Microsoft Teams.
+4. Seleccione **crear Microsoft Team** y, a continuación, haga clic en **cerrar**.
+
+Según el número de usuarios asignados a los grupos de roles de administración de riesgos de Insider, es posible que se detengan 15 minutos para que todos los investigadores y analistas se agreguen al equipo de Microsoft Teams para un caso.

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter a Microsoft 365. Una vez que estos datos se han importado a Microsoft 365, puede usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el gobierno de los datos de Twitter de la organización.
-ms.openlocfilehash: 1476350f9f1e777ab5b6706d9802a7d528ec3698
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 01c4901544e47cd1c361a132e144440f00bd8504
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943033"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200833"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementar un conector para archivar datos de Twitter
 
@@ -40,7 +40,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Crear un nuevo registro de la aplicación](../media/TCimage03.png)
 
-4. Registrar la aplicación. En **URI de redireccionamiento (opcional)**, seleccione **Web** en la lista desplegable tipo de `https://portal.azure.com` aplicación y, a continuación, escriba en el cuadro del URI.
+4. Registrar la aplicación. En **URI de redireccionamiento (opcional)**, seleccione **Web** en la lista desplegable tipo de aplicación y, a continuación, escriba `https://portal.azure.com` en el cuadro del URI.
 
    ![Tipo https://portal.azure.com de URI de redireccionamiento ](../media/TCimage04.png)
 
@@ -89,7 +89,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 ## <a name="step-3-create-the-twitter-app"></a>Paso 3: crear la aplicación de Twitter
 
-1. Vaya a https://developer.twitter.com, inicie sesión con las credenciales de la cuenta de desarrollador de su organización y, a continuación, haga clic en **aplicaciones**.
+1. Vaya a https://developer.twitter.com , inicie sesión con las credenciales de la cuenta de desarrollador de su organización y, a continuación, haga clic en **aplicaciones**.
 
    ![Ir a https://developer.twitter.com e iniciar sesión](../media/TCimage25-5.png)
 2. Haga clic en **crear una aplicación**.
@@ -100,11 +100,11 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    ![Escribir información sobre la aplicación](../media/TCimage27.png)
 
-4. En el panel del programador de Twitter, seleccione la aplicación que acaba de crear y copie el identificador de aplicación que se muestra y guárdelo en un archivo de texto u otra ubicación de almacenamiento. A continuación, haga clic en **detalles**.
+4. En el panel del programador de Twitter, seleccione la aplicación que acaba de crear y, a continuación, haga clic en **detalles**.
    
    ![Copiar y guardar el identificador de la aplicación](../media/TCimage28.png)
 
-5. En la pestaña **claves y tokens** , en **claves** de la API de consumidor, copie la clave secreta de la API y guárdela en un archivo de texto u otra ubicación de almacenamiento. A continuación, haga clic en **crear** para generar un token de acceso y un secreto de token de acceso, y cópielos en un archivo de texto u otra ubicación de almacenamiento.
+5. En la pestaña **claves y tokens** , en **claves** de la API de consumidor, copie la clave de API y la clave secreta de la API y guárdelas en un archivo de texto u otra ubicación de almacenamiento. A continuación, haga clic en **crear** para generar un token de acceso y un secreto de acceso y cópielos en un archivo de texto u otra ubicación de almacenamiento.
    
    ![Copiar y guardar en clave secreta de la API](../media/TCimage29.png)
 
@@ -122,7 +122,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
    - Active la casilla para permitir que la aplicación conector inicie sesión en Twitter.
    
-   - Agregue el URI de redireccionamiento de OAuth con el siguiente formato: ** \<connectorserviceuri>/views/twitteroauth**, donde el valor de *connectorserviceuri* es la dirección URL de Azure App Service para su organización; por ejemplo, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
+   - Agregue el URI de redireccionamiento de OAuth con el siguiente formato: ** \<connectorserviceuri> /views/TwitterOAuth**, donde el valor de *connectorserviceuri* es la dirección URL de Azure App Service para su organización; por ejemplo, https://twitterconnector.azurewebsites.net/Views/TwitterOAuth .
 
     ![Permitir que la aplicación conector inicie sesión en Twitter y agregue el URI de redireccionamiento de OAuth](../media/TCimage32.png)
 
@@ -130,7 +130,7 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
 ## <a name="step-4-configure-the-connector-web-app"></a>Paso 4: configurar la aplicación web del conector 
 
-1. Vaya a https://\<AzureAppResourceName>. azurewebsites.net (donde **AzureAppResourceName** es el nombre del recurso de la aplicación de Azure que ha nombrado en el paso 4). Por ejemplo, si el nombre es **twitterconnector**, vaya a https://twitterconnector.azurewebsites.net. La Página principal de la aplicación es similar a la siguiente captura de pantalla:
+1. Vaya a https:// \<AzureAppResourceName> . azurewebsites.net (donde **AzureAppResourceName** es el nombre del recurso de la aplicación de Azure que ha nombrado en el paso 4). Por ejemplo, si el nombre es **twitterconnector**, vaya a https://twitterconnector.azurewebsites.net . La Página principal de la aplicación es similar a la siguiente captura de pantalla:
 
    ![Ir a la página de recursos de la aplicación de Azure](../media/FBCimage41.png)
 
@@ -144,7 +144,7 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
 4. Especifique las siguientes opciones de configuración 
 
-   - **Clave de API de Twitter:** El identificador de aplicación de la aplicación de Twitter que creó en el paso 3.
+   - **Clave de API de Twitter:** La clave de la API de la aplicación de Twitter que creó en el paso 3.
    
    - **Clave secreta de la API de Twitter:** Clave secreta de la API para la aplicación de Twitter que creó en el paso 3.
    
@@ -162,7 +162,7 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **conectores de datos (vista previa)** , en **Twitter**, haga clic en **Ver**.
+2. En la página **conectores de datos** , en **Twitter**, haga clic en **Ver**.
 
 3. En la página de **Twitter** , haga clic en **Agregar conector**.
 
@@ -174,7 +174,7 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
     - En el cuadro **nombre** , escriba un nombre para el conector, como **controlador de ayuda de Twitter**.
     
-    - En el cuadro **dirección URL del conector** , escriba o pegue la dirección URL de Azure App Service; por ejemplo `https://twitterconnector.azurewebsites.net`.
+    - En el cuadro **dirección URL del conector** , escriba o pegue la dirección URL de Azure App Service; por ejemplo `https://twitterconnector.azurewebsites.net` .
     
     - En el cuadro **contraseña** , escriba o pegue el valor de la APISecretKey que creó en el paso 2.
     
@@ -182,7 +182,7 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
 6. Una vez validada correctamente la conexión, haga clic en **siguiente**.
 
-7. En la página **autorizar a Microsoft 365 a importar datos** , escriba o pegue el APISecretKey de nuevo y, a continuación, haga clic en **iniciar sesión en la aplicación web**.
+7. En la página **autorizar a Microsoft 365 a importar datos** , escriba o pegue el APISecretKey de nuevo y, a continuación, haga clic en  **iniciar sesión en la aplicación web**.
 
 8. Haga clic en **iniciar sesión con Twitter**.
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar las páginas de empresa de Facebook a Microsoft 365. Una vez que estos datos se han importado a Microsoft 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Facebook de la organización.
-ms.openlocfilehash: 240ce3a90cf46a05ab5d6030b9318d42d23904d8
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 065a5c6a1276c1ce37aa48137caf6627e76c8db0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200865"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Implementación de un conector para archivar datos de páginas empresariales de Facebook
 
@@ -190,7 +190,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **conectores de datos (vista previa)** , en **páginas empresariales de Facebook**, haga clic en **Ver**.
+2. En la página **conectores de datos** , en **páginas empresariales de Facebook**, haga clic en **Ver**.
 
 3. En la página **páginas empresariales de Facebook** , haga clic en **Agregar conector**.
 

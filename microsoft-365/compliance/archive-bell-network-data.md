@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector de Telemensaje para importar y archivar datos de SMS y MMS desde la red Bell. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 975053c589b0c5ff36df1fa49f14d5d0452053d1
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: ad4b8a51e88e6477d9d4408c9faee1d83590eaa9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362061"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200579"
 ---
-# <a name="set-up-a-connector-to-archive-bell-network-data-preview"></a>Configurar un conector para archivar datos de la red de Bell (versión preliminar)
+# <a name="set-up-a-connector-to-archive-bell-network-data"></a>Configurar un conector para archivar datos de la red de Bell
 
 Use un conector de teleservicio en el centro de cumplimiento de Microsoft 365 para importar y archivar mensajes de servicio de mensajería breve (SMS) y servicio de mensajería multimedia (MMS) desde la red Bell. Después de configurar y configurar un conector, se conecta a la red de Bell de la organización una vez al día e importa mensajes SMS y MMS a los buzones de correo de Microsoft 365.
 
@@ -88,4 +87,4 @@ El último paso consiste en crear un conector de Bell Network en el centro de cu
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.
