@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417354"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208462"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Ley de privacidad y derechos educativos de la familia (FERPA)
 
@@ -57,7 +57,7 @@ Los servicios a los que Microsoft acuerda ser designados como "funcionario escol
 
 FERPA no requiere ni reconoce auditorías ni certificaciones.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué es importante FERPA?**
 
@@ -67,6 +67,10 @@ Esta ley federal de Estados Unidos tiene en cuentan la protección de la privaci
 
 - [Registro federal: regla final de FERPA](https://aka.ms/ferpa-reg) (diciembre de 2011)
 - [Instrucciones generales de FERPA para padres](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

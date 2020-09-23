@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54f1c4006450d47e974c4775720c91d8c6bea764
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415580"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208595"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>United Kingdom Cyber Essentials PLUS
 
@@ -46,6 +46,10 @@ La [certificación Azure Cyber Essentials Plus](https://aka.ms/AzureCyberEPlusCe
 
 - [Informe de cumplimiento de Azure Cyber Essentials PLUS](https://aka.ms/AzureCyberEPlusReport)
 - [Certificación de Azure Cyber Essentials PLUS](https://aka.ms/AzureCyberEPlusCert)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

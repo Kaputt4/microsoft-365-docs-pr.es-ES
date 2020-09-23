@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208382"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publicación de US Internal Revenue Service 1075
 
@@ -60,7 +60,7 @@ El cumplimiento de los requisitos de fondo de IRS 1075 está cubierto por la aud
 - [Autorizaciones de FedRAMP](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
 - [Informe de seguridad de protección de IRS 1075 de Azure](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Cómo soluciona Microsoft los requisitos de IRS 1075?**
 
@@ -75,6 +75,10 @@ Sí, si su organización cumple los requisitos de elegibilidad para Azure Govern
 **¿Puedo usar los entornos de nube pública de Azure o Office 365 y seguir siendo compatibles con IRS 1075?**
 
 No. Los únicos entornos en los que FTI se puede almacenar y procesar son Azure Government u Office 365 U.S. Government. Los clientes gubernamentales deben cumplir con los requisitos de elegibilidad para usar estos entornos.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

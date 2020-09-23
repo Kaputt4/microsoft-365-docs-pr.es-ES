@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fa38b81ff02729f1bd874c1ac286712b0a6bbb7a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416814"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208786"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -71,7 +71,7 @@ Al crear o modificar directivas de DLP para usarlas con directivas de administra
 
 Cada directiva de administración de riesgos de Insider creada a partir de la plantilla de **fugas de datos** solo puede tener asignada una directiva DLP. Considere la posibilidad de crear una directiva de DLP dedicada que combine las distintas actividades que quiera detectar y actúe como desencadenamiento de eventos para las directivas de riesgo de Insider que usan la plantilla de **fugas de datos** .
 
-Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
+Consulte el artículo sobre cómo [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para su organización.
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Pérdidas de datos por usuarios con prioridad (versión preliminar)
 
@@ -115,6 +115,9 @@ También necesitará tener Microsoft defender ATP configurado en su organizació
 
 ### <a name="offensive-language-in-email"></a>Lenguaje ofensivo en el correo electrónico
 
+>[!IMPORTANT]
+>A partir del 16 de octubre de 2020, ya no podrá crear directivas con esta plantilla. Todas las directivas activas que usen esta plantilla funcionarán hasta que se eliminen de forma permanente en el 2021 de enero. Estamos en desuso el clasificador integrado integrado que admite esta plantilla, ya que ha generado un gran número de falsos positivos. Para solucionar los problemas de lenguaje ofensivo, se recomienda usar las directivas de [cumplimiento normativo de comunicaciones](communication-compliance.md) de Microsoft 365. Para obtener más información acerca de los clasificadores integrados, consulte [Getting Started with trainable Classifiers](classifier-get-started-with.md).
+
 La detección y la realización de acciones para evitar el comportamiento ofensivo y abusivo es un componente crítico de evitar el riesgo. Clasificadores integrados en Microsoft 365 analizar los mensajes de correo electrónico enviados desde buzones de Exchange online en su organización para diferentes tipos de problemas de cumplimiento. Estos clasificadores usan una combinación de inteligencia artificial y palabras clave para identificar el idioma en el correo electrónico que probablemente infrinja las directivas de Antiacoso. Use esta plantilla para crear rápidamente una directiva que use estos clasificadores para detectar automáticamente el contenido de los mensajes de correo electrónico que puedan considerarse abusivos u ofensivos. La administración de riesgos de Insiders usa clasificadores que exploran mensajes de correo electrónico enviados según los términos del idioma inglés y que se recomiendan en lenguaje ofensivo.
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>Requisitos previos de la plantilla de directiva y desencadenamiento de eventos
@@ -139,7 +142,7 @@ En la tabla siguiente se enumeran los eventos desencadenantes y los requisitos p
 
 Las directivas de administración de riesgos de Insider admiten la especificación de una prioridad más alta para el contenido en función de dónde se almacenen o de cómo se clasifique. La especificación de contenido como prioridad aumenta la puntuación de riesgo para cualquier actividad asociada, lo que, a su vez, aumenta la posibilidad de generar una alerta de gravedad alta. Sin embargo, algunas actividades no generarán ninguna alerta a menos que el contenido relacionado contenga tipos de información confidencial integrados o personalizados o que se haya especificado como prioridad en la Directiva.
 
-Por ejemplo, su organización tiene un sitio dedicado de SharePoint para un proyecto extremadamente confidencial. Las pérdidas de datos para la información en este sitio de SharePoint podrían poner en peligro el proyecto y tendrían un impacto significativo en su éxito. Al establecer la prioridad de este sitio de SharePoint en una directiva de pérdidas de datos, los resultados de las actividades de calificación aumentan automáticamente. Esto aumenta la probabilidad de que estas actividades generen una alerta de riesgo de Insider y eleva el nivel de gravedad de la alerta.
+Por ejemplo, su organización tiene un sitio dedicado de SharePoint para un proyecto extremadamente confidencial. Las pérdidas de datos para la información en este sitio de SharePoint podrían poner en peligro el proyecto y tendrían un impacto significativo en su éxito. Al establecer la prioridad de este sitio de SharePoint en una directiva de pérdidas de datos, los resultados de las actividades de calificación aumentan automáticamente. Esta priorización aumenta la probabilidad de que estas actividades generen una alerta de riesgo de Insider y eleva el nivel de gravedad de la alerta.
 
 Al crear una directiva de administración de riesgos de Insider en el Asistente para directivas, puede elegir entre las siguientes prioridades:
 

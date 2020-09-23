@@ -11,18 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos del margen de demora de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 6466beb6115037ff726b1e5fd3350032bceb2230
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47957044"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196764"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Configurar un conector para archivar datos del margen de demora (versión preliminar)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Configurar un conector para archivar los datos del margen de demora
 
-Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de terceros desde plataformas de medios sociales, mensajería instantánea y colaboración de documentos a los buzones de la organización 365 de Microsoft. Globanet proporciona un conector de [conector de datos del margen de demora](https://globanet.com/slack/) en el centro de cumplimiento de Microsoft 365 que puede configurarse para capturar elementos del origen de datos de terceros (de forma regular) y, a continuación, importar dichos elementos a Microsoft 365. El margen de demora extrae mensajes y archivos de la API de demora y los convierte en un formato de mensajes de correo electrónico y, a continuación, los importa a los buzones de usuario en Microsoft 365.
+Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de terceros desde plataformas de medios sociales, mensajería instantánea y colaboración de documentos a los buzones de la organización 365 de Microsoft. Globanet proporciona un conector de demora que está configurado para capturar elementos del origen de datos de terceros (de forma regular) y, a continuación, importar dichos elementos a Microsoft 365. El margen de demora extrae mensajes y archivos de la API de demora y los convierte a un formato de mensaje de correo electrónico y, a continuación, importa el elemento a los buzones de usuario.
 
 Después de almacenar los datos de demora en los buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, eDiscovery, directivas de retención y etiquetas de retención, y cumplimiento de la comunicación. El uso de un conector de margen de demora para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
 
@@ -92,4 +91,4 @@ Después de crear el conector de margen de demora, puede ver el estado del conec
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos y elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

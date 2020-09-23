@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos desde el conector de Microsoft Teams de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3d9693fd1baf990ba3ca956c8a24d8d796e80995
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405449"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196569"
 ---
-# <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>Configurar un conector para archivar datos de Teams de WebEx (versión preliminar)
+# <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configurar un conector para archivar datos de Teams de WebEx
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de equipos Webex en buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector de Microsoft [Teams](https://globanet.com/webex-teams/) que está configurado para capturar los elementos de comunicación de los equipos de WebEx e importarlos a Microsoft 365. El conector convierte el contenido de los equipos WebEx, como los chats de 1:1, las conversaciones en grupo, las conversaciones en canales y los datos adjuntos desde la cuenta de equipo de WebEx de la organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
@@ -94,4 +93,4 @@ Después de crear el conector de Microsoft WebEx, puede ver el estado del conect
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

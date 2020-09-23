@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d7e06eb025513caa2d4ad61f7b9d8b2a9e0d2cba
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 92b8802325ea6d80241d59bd506051ad048b8422
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199592"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208682"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -115,7 +115,7 @@ Una vez que se han investigado los casos, los revisores pueden actuar rápidamen
 En las situaciones más graves, es posible que necesite compartir la información del caso de administración de riesgos de Insider con otros revisores o servicios de la organización. La administración de riesgos de Insider se integra estrechamente con otras soluciones de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro.
 
 - **EDiscovery avanzado**: escalar un caso para investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
-- **Servicenow (versión preliminar)**: ServiceNow es una plataforma de informática en la nube que ayuda a las organizaciones a administrar flujos de trabajo digitales para operaciones empresariales. La administración de riesgos de Insider permite compartir alertas de casos con el servicio de ServiceNow y le permite crear incidentes y solicitudes de cambio relacionadas con casos de riesgo de Insider. Para obtener más información sobre cómo compartir información de alertas con ServiceNow, consulte [compartir un caso con servicenow](insider-risk-management-cases.md#share-a-case).
+- **Servicenow (versión preliminar)**: ServiceNow es una plataforma de informática en la nube que ayuda a las organizaciones a administrar flujos de trabajo digitales para operaciones empresariales. La administración de riesgos de Insider permite compartir alertas de casos con el servicio de ServiceNow y le permite crear incidentes y solicitudes de cambio relacionadas con casos de riesgo de Insider. Para obtener más información sobre cómo compartir información de alertas con ServiceNow, consulte [compartir un caso con servicenow](insider-risk-management-cases.md#share-the-case).
 - **Integración de API de administración de office 365 (versión preliminar)**: la administración de riesgos de Insider admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (Siem) a través de las API de administración de Office 365 Tener acceso a la información de alerta en la plataforma lo mejor que se adapte a los procesos de riesgo de su organización le ofrece más flexibilidad para actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alertas con las API de administración 365 de Office, consulte [exportar alertas](insider-risk-management-settings.md#export-alerts-preview).
 
 ## <a name="scenarios"></a>Escenarios

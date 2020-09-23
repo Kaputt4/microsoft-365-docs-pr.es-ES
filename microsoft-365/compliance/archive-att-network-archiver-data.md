@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector de teleservicio para importar y archivar datos de SMS y MMS desde la red móvil de&T. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: dfcc59c6ed7beb088ca738c50112cf40a0ebe511
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362081"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200255"
 ---
-# <a name="set-up-a-connector-to-archive-att-smsmms-data-preview"></a>Configurar un conector para archivar en&T SMS/MMS datos (versión preliminar)
+# <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar en&T SMS/MMS Data
 
 Use un conector de Telemensaje en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de SMS y MMS desde&red móvil de SMS. Una vez que haya instalado y configurado un conector, este se conectará a la red de la organización en&T una vez cada día e importará los datos de SMS y MMS a los buzones en Microsoft 365.
 
@@ -88,4 +87,4 @@ Una vez que haya completado los requisitos previos descritos en la sección ante
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

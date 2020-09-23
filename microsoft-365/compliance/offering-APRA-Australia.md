@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417764"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208662"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autoridad de la reglamentación prudencial australiano (APRA)
 
@@ -76,7 +76,7 @@ Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerd
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Dynamics 365
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Las instituciones financieras necesitan APRA aprobación previa para actividades de negocio de subcontratación de materiales?**
 
@@ -87,6 +87,10 @@ Además, si se considera que los servicios en la nube consiguen un riesgo inhere
 **¿Se permiten las transferencias de datos fuera de Australia?**
 
 Sí. La legislación general de privacidad (que se aplica a todos los sectores, no solo a las instituciones financieras), permite las transferencias fuera de Australia bajo ciertas condiciones. Microsoft acepta términos contractuales en línea con los principios de privacidad australiano para que se permitan las transferencias de datos fuera de Australia cuando se usan los servicios en la nube de Microsoft. Sin embargo, muchos de nuestros clientes de Australian Financial Services se benefician de los servicios en la nube disponibles en nuestros centros de datos australianos, para lo cual hemos realizado compromisos contractuales específicos para almacenar categorías de datos en reposo en la zona geográfica australiana. Estos compromisos se describen con más detalle en la [lista de comprobación de cumplimiento](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

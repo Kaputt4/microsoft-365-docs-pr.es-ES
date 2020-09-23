@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c8c5e78cfd7d531b2c2ee46ae4f28367240a87ca
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29c56d525375162926d34bd298bbbd660964438d
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415996"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208162"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Requisitos de localización de datos personales en ruso
 
@@ -40,6 +40,10 @@ Microsoft invita a los clientes a considerar la suscripción a Microsoft Online 
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>Administración de la identidad y el acceso de los usuarios en Microsoft Online Services
 
 Para los servicios en línea de Microsoft, como Microsoft Azure, Microsoft 365, Dynamics 365 y Power Platform, la verificación de usuario y la administración de acceso se realizan a través de [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/). Tenga en cuenta que los casos en los que un cliente de Microsoft usa un sistema de administración de identificación local para los servicios en la nube de Microsoft (como Windows Server Active Directory (AD) o cualquier otro sistema de administración de IDENTIFICADOres), el cliente tiene la oportunidad de integrar rápidamente dicho sistema con Azure Active Directory (AAD) a través de Azure AD Connect. Vea la opción de [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) para obtener más información. Los clientes de Microsoft también pueden considerar el uso de aplicaciones y soluciones de otros fabricantes para administrar a sus usuarios e integrar su sistema de identificación local con Azure AD.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="questions-and-support"></a>Preguntas y soporte técnico
 

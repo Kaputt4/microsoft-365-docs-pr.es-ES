@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos delimitados por texto de Globanet a Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 6a7c8a23fdf78ccac21e1cae68dbc6b971bd6486
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 854e678067a26fd5fa1f89eb4b2f4f0327eac7a0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405611"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196579"
 ---
-# <a name="set-up-a-connector-to-archive-text-delimited-data-preview"></a>Configurar un conector para archivar datos delimitados por texto (versión preliminar)
+# <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Configurar un conector para archivar datos delimitados por texto
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos delimitados por texto a los buzones de usuario de la organización 365 de Microsoft. [Globanet](https://globanet.com/merge1/) proporciona un conector delimitado por texto que está configurado para capturar elementos de un origen de datos de terceros (de forma regular) e importar los elementos a Microsoft 365. El conector convierte el contenido del origen de datos delimitados por texto a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
@@ -92,4 +91,4 @@ Después de crear el conector de texto delimitado, puede ver el estado del conec
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

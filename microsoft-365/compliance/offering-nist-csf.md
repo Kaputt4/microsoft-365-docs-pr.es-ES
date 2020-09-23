@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: be40c207f5f09c97d1a0a4da5cf56e2caf2c51b7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417092"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208172"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 
@@ -64,7 +64,7 @@ Cybersecurity sigue siendo un problema de administración crítico en la era de 
 
 - [Empezar a usar la puntuación de cumplimiento](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Se ha validado un evaluador independiente de que Azure Government, Dynamics 365 y Office 365 admitan los requisitos del NIST CSF?**
 
@@ -97,9 +97,9 @@ La certificación in Scope of NIST CSF es archivado de Exchange Online, Exchange
 
 Microsoft proporciona las ofertas más completas en comparación con otros proveedores de servicios de nube. Para estar al día de nuestras amplias ofertas de cumplimiento en todas las regiones e industrias, incluimos servicios en el ámbito de nuestros esfuerzos de seguridad en función de la demanda del mercado, los comentarios de los clientes y el ciclo de vida de los productos. Si un servicio no se incluye en el ámbito actual de una oferta de cumplimiento específica, su organización tiene la responsabilidad de evaluar los riesgos basándose en las obligaciones de cumplimiento y determinar la forma en que se procesan los datos en el servicio. Recopilamos continuamente los comentarios de los clientes y trabajamos con reguladores y auditores para ampliar nuestra cobertura de cumplimiento para satisfacer sus necesidades de seguridad y cumplimiento.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Una vez configurada la [puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla CSF](https://go.microsoft.com/fwlink/?linkid=2117917) preconfigurada del NIST en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de este Reglamento.
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

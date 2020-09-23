@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416854"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208412"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -72,7 +72,7 @@ Empiece a aprovechar las ventajas de la nube para obtener soluciones de datos de
 
 [Empezar a usar el Blueprint de Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Puede mi organización ingresar a un BAA con Microsoft?**
 
@@ -102,9 +102,9 @@ Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 - La [Guía práctica para diseñar soluciones de mantenimiento seguro con Microsoft Azure](https://aka.ms/azureindustrysecurity) le ayudará a comprender mejor lo que se necesita para adoptar correctamente un servicio en la nube de manera segura.
 - [La administración de los requisitos de privacidad y seguridad de HIPAA en la nube de Microsoft](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) ofrece una breve descripción general de los requisitos de la regla. También se proporciona un análisis detallado de cómo se crearon los servicios en la nube de Microsoft con metodologías que se ajustan a dichos requisitos, así como instrucciones sobre cómo crear soluciones listas para el cumplimiento normativo.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica en versión preliminar en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después [de configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la plantilla de [Office 365 de HIPAA](https://go.microsoft.com/fwlink/?linkid=2118005) preconfigurada y la plantilla de [HIPAA Intune](https://go.microsoft.com/fwlink/?linkid=2118006) en el menú desplegable de **plantillas** para ayudar a su organización a cumplir los requisitos del presente Reglamento.
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

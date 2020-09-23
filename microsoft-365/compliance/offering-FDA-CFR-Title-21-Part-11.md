@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 59e11a5e0142647003ea4b0e9f1876ebedb37d00
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417344"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208452"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Título de administración de alimentos y medicamentos CFR 21 parte 11
 
@@ -79,9 +79,13 @@ El [Portal del Centro de confianza](https://aka.ms/stphelp) ofrece informes de c
 
 Sí. Los informes de cumplimiento independientes de terceros de los estándares IEC/ISO 27001, ISO/IEC 27018, SOC 1 y SOC 2 atestiguan la eficacia de los controles de Microsoft. Los clientes de la nube de Microsoft Enterprise pueden usar los controles auditados que se describen en estos informes relacionados como parte del análisis de riesgos y el análisis de riesgos de 21 parte 11 del título de CFR. Los clientes que crean e implementan aplicaciones sujetas a la normativa de la FDA son responsables de garantizar que sus aplicaciones cumplan los requisitos de la FDA.
 
-**¿Cuáles son las responsabilidades de Microsoft para mantener el cumplimiento con este estándar?**
+**¿Cuáles son las responsabilidades de Microsoft para mantener el cumplimiento de esta norma?**
 
 Microsoft garantiza que los servicios en la nube de su empresa cumplan los términos definidos dentro de los [términos de servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) que rigen y los contratos de nivel de servicio (SLA) correspondientes. Estos definen nuestra responsabilidad para implementar y mantener los controles adecuados para proteger y supervisar el sistema.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

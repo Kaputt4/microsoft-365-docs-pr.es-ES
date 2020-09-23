@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9a5eb61d6009dd5a7ab2f66eb3ef712196368010
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 224221950104b5dee6a6e8f179db34ee6fad014e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208776"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel de usuarios de administración de riesgos de Insider
 
@@ -45,7 +45,7 @@ El **Panel usuarios** muestra automáticamente todos los usuarios con indicadore
 
 El **Panel de usuarios** le permite agregar temporalmente usuarios a una directiva de administración de riesgos de Insider existente después de un evento inusual fuera del flujo de trabajo de administración de riesgos de Insider. Agregar usuarios temporalmente también es una forma de agregar usuarios a una directiva de administración de riesgos de Insider para probar la Directiva, incluso si no se ha configurado un conector necesario.
 
-Cuando se agrega manualmente un usuario a una directiva, las actividades de usuario de los 90 días anteriores se puntuan y se agregan a la escala de tiempo de **actividad del usuario** . Por ejemplo, un usuario que no está en el ámbito actual de una directiva de riesgos de Insider y el usuario tiene actividades de pérdida de datos que se notifican al departamento legal de la organización. El departamento jurídico recomienda configurar nuevos requisitos de supervisión a corto plazo para el usuario. Puede asignar temporalmente el usuario a la Directiva de *pérdidas de datos* durante un período de tiempo designado (ventana de activación). Todos los usuarios agregados temporalmente se muestran en el **Panel usuarios** , ya que se condonan los requisitos del indicador de activación.
+Cuando se agrega manualmente un usuario a una directiva, las actividades de usuario de los 90 días anteriores se puntuan y se agregan a la escala de tiempo de **actividad del usuario** . Por ejemplo, si un usuario no está actualmente en una directiva de riesgo de Insider y el usuario tiene actividades de pérdida de datos que se notifican al departamento legal de la organización. El departamento jurídico recomienda configurar nuevos requisitos de supervisión a corto plazo para el usuario. Puede asignar temporalmente el usuario a la Directiva de *pérdidas de datos* durante un período de tiempo designado (ventana de activación). Todos los usuarios agregados temporalmente se muestran en el **Panel usuarios** , ya que se condonan los requisitos del indicador de activación.
 
 >[!NOTE]
 >Puede tardar varias horas en aparecer nuevos usuarios agregados manualmente en el **Panel de usuarios**. Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el **Panel de usuarios** y abra la ficha **actividad de usuario** en el panel de detalles.
@@ -104,3 +104,17 @@ Complete los siguientes pasos para agregar un usuario a una directiva de riesgos
 
 >[!NOTE]
 >Puede tardar varias horas en aparecer nuevos usuarios agregados manualmente en el **Panel de usuarios**. Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el **Panel de usuarios** y abra la ficha **actividad de usuario** en el panel de detalles.
+
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ejecutar tareas automatizadas con los flujos de alimentación automatizada para un usuario
+
+Mediante el uso de flujos de energía recomendados, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para:
+
+- Notificar a los usuarios cuando se les agregue a una directiva de riesgos de Insider
+
+Para ejecutar, administrar o crear flujos de alimentación automatizada para un usuario de administración de riesgos de Insider:
+
+1. Seleccione **automatizar** en la barra de herramientas acción del usuario.
+2. Elija el flujo de automatización de energía que se va a ejecutar y, a continuación, seleccione **flujo de ejecución**.
+3. Una vez completado el flujo, seleccione **listo**.
+
+Para obtener más información sobre los flujos de alimentación automatizada para la administración de riesgos de Insider, vea [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#power-automate-flows-preview).

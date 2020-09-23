@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos desde el lugar de trabajo desde Facebook, que se archiva en el sitio Merge1 de Globanet, en Microsoft 365. Para configurar un conector es necesario trabajar con Globanet este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de la organización.
-ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: cea8f7549bbf1ed19bc3de6fe4d1e1c63f1be4cd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405491"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195587"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurar un conector para archivar el área de trabajo de datos de Facebook (versión preliminar)
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurar un conector para archivar el área de trabajo de datos de Facebook
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos desde el lugar de trabajo de Facebook a los buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un [área de trabajo del conector de Facebook](https://globanet.com/workplace/) que está configurada para capturar elementos del origen de datos de terceros (de forma regular) e importar dichos elementos a Microsoft 365. El conector convierte el contenido, como chats, datos adjuntos, publicaciones y vídeos del lugar de trabajo a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
 
@@ -94,4 +93,4 @@ Después de crear el área de trabajo desde el conector de Facebook, puede ver e
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

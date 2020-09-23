@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet FX Connect en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: e56c0bc1ab16d9790e56bf0baf054057121ff94c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405591"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197251"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>Configurar un conector para archivar datos de Connect FX (versión preliminar)
+# <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Configurar un conector para archivar datos de Connect FX
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma de colaboración de FX Connect a los buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector [FX Connect](https://globanet.com/fx-connect/) que está configurado para capturar los elementos de Connect de FX e importar dichos elementos a Microsoft 365. El conector convierte el contenido de FX Connect, como transacciones, mensajes y otros detalles de la cuenta de conexión de FX de su organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
@@ -90,4 +89,4 @@ Después de crear el conector de conexión de FX, puede ver el estado del conect
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

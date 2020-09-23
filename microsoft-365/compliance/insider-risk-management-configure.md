@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4a13d25506481ddcdfaf6ca2f9ad21c871bb603
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416474"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208806"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -89,6 +89,7 @@ Si está configurando una directiva con el *idioma ofensivo en la plantilla de d
 ### <a name="configure-microsoft-365-hr-connector"></a>Configuración del conector de 365 de RRHH de Microsoft
 
 La administración de riesgos de Insider admite la importación de datos de usuario y registro importados de plataformas de administración de riesgos y recursos humanos de terceros. El conector de datos de recursos humanos de Microsoft 365 (HR) le permite extraer datos de recursos humanos de archivos CSV, incluidas fechas de finalización del usuario, fechas del último empleo, notificaciones del plan de mejora del rendimiento, acciones de revisión del rendimiento y estado de cambio en el nivel de trabajo. Estos datos ayudan a impulsar indicadores de alertas en las directivas de administración de riesgos de Insider y es una parte importante de la configuración de la cobertura completa de administración de riesgos en la organización. Si configura más de un conector de recursos humanos para su organización, la administración de riesgos de Insider extrae automáticamente los indicadores de todos los conectores de recursos humanos.
+
 El conector de Microsoft 365 HR es necesario cuando se usan las siguientes plantillas de directiva:
 
 - Cómo se parte del robo de datos de usuario
@@ -123,10 +124,19 @@ La administración de riesgos de Insider incluye la compatibilidad para asignar 
 
 Un grupo de usuarios con prioridad es necesario cuando se usan las siguientes plantillas de directiva:
 
-- Infracciones de directivas de seguridad por usuarios con prioridad 
+- Infracciones de directivas de seguridad por usuarios con prioridad
 - Pérdidas de datos por usuarios con prioridad
 
 Consulte el artículo Introducción a la [configuración de administración de riesgos de Insider](insider-risk-management-settings.md#priority-user-groups-preview) para obtener instrucciones paso a paso para crear un grupo de usuarios con prioridad. Después de configurar un grupo de usuarios con prioridad, vuelva a estos pasos de configuración.
+
+### <a name="configure-physical-badging-connector-optional"></a>Configuración del conector de distintivos físico (opcional)
+
+La administración de riesgos de Insider admite la importación de datos de usuario y registro importados desde el control físico y las plataformas de acceso. El conector de distintivos físico permite extraer los datos de Access de los archivos JSON, incluidos los identificadores de usuario, los identificadores de punto de acceso, el tiempo de acceso y las fechas y el estado de acceso. Estos datos ayudan a impulsar indicadores de alertas en las directivas de administración de riesgos de Insider y es una parte importante de la configuración de la cobertura completa de administración de riesgos en la organización. Si configura más de un conector de distintivos físico para su organización, la administración de riesgos de Insider extrae automáticamente los indicadores de todos los conectores de distintivos físicos. La información del conector de distintivos físico complementa otras señales de riesgo de Insider al usar todas las plantillas de directiva de riesgo de Insider.
+
+>[!IMPORTANT]
+>Para que las directivas de administración de riesgos de Insider puedan usar y correlacionar datos de señal relacionados con los usuarios que se desponen y finalizan con datos de eventos de las plataformas de acceso y control físico, también debe configurar el conector de 365 de RRHH de Microsoft. Si habilita el conector de distintivos físico sin habilitar el conector de 365 de h de Microsoft, las directivas de administración de riesgos de Insider solo procesarán eventos de acceso físico no autorizado para los usuarios de su organización.
+
+Consulte el artículo sobre [Cómo configurar un conector para importar datos de distintivos físicos](import-physical-badging-data.md) para obtener una guía paso a paso sobre cómo configurar el conector de distintivos físico para su organización. Después de configurar el conector, vuelva a estos pasos de configuración.
 
 ## <a name="step-4-configure-insider-risk-settings"></a>Paso 4: configurar las opciones de riesgo de Insider
 
@@ -150,14 +160,17 @@ Antes de configurar una directiva, defina las siguientes opciones de riesgo de I
     - [Configuración del dominio](insider-risk-management-settings.md#domains-preview)
 6. En la página **exportar alertas** , habilite la exportación de información de alertas de riesgos de Insider mediante las API de administración de Office 365, si es necesario.
 7. En la página **grupos de usuarios con prioridad** , cree un grupo de usuarios con prioridad y agregue usuarios si no se crean en el **paso 3**.
-8. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgos de Insider.
+8. En la página **flujos de automatización de energía** , configure un flujo de plantillas de flujo de riesgo de Insider o cree un nuevo flujo. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#power-automate-flows-preview) para obtener una guía paso a paso.
+9. En la **Página activos prioritarios**, configure los activos prioritarios para usar datos de la plataforma de acceso y control físico importadas por el conector de distintivos físico. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#priority-physical-assets-preview) para obtener una guía paso a paso.
+10. En la página **Microsoft Teams** , habilite la integración de Microsoft Teams con la administración de riesgos de Insider para crear automáticamente un equipo para la colaboración de usuarios o casos. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#microsoft-teams-preview) para obtener una guía paso a paso.
+11. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgos de Insider.
 
 ## <a name="step-5-create-an-insider-risk-management-policy"></a>Paso 5: crear una directiva de administración de riesgos de Insider
 
 Las directivas de administración de riesgos de Insider incluyen usuarios asignados y definen qué tipos de indicadores de riesgo se configuran para las alertas. Antes de que las actividades puedan desencadenar alertas, debe configurarse una directiva.
 
 1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **directivas** .
-2. Seleccione **crear Directiva** para abrir el Asistente para directivas
+2. Seleccione **crear Directiva** para abrir el Asistente para directivas.
 3. En la página **nueva Directiva de riesgo de Insider** , complete los campos siguientes:
     - **Nombre (obligatorio)**: escriba un nombre descriptivo para la Directiva.
     - **Descripción (opcional)**: escriba una descripción para la Directiva.
@@ -165,6 +178,9 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 
     >[!IMPORTANT]
     >La mayoría de las plantillas de Directiva tienen requisitos previos que deben configurarse para que la Directiva genere alertas relevantes. Si no ha configurado los requisitos previos de la Directiva aplicables, consulte el **paso 3** anterior.
+
+    >[!CAUTION]
+    >A partir del 16 de octubre de 2020, ya no podrá crear directivas con el lenguaje ofensivo en la plantilla de correo electrónico. Todas las directivas activas que usen esta plantilla funcionarán hasta que se eliminen de forma permanente en el 2021 de enero.
 
 4. Seleccione **siguiente** para continuar.
 5. En la página **usuarios** , seleccione **Agregar usuario o grupo** o **Seleccione prioridad de grupos** de usuarios para definir los usuarios o grupos de usuarios con prioridad que se incluyen en la Directiva, en función de la plantilla de directiva que haya seleccionado. Marque la casilla de verificación **todos los usuarios y grupos con correo habilitado** , si procede (si no ha seleccionado una plantilla basada en el usuario con prioridad). Seleccione **siguiente** para continuar.
@@ -183,7 +199,7 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 11. Seleccione **siguiente** para continuar.
 12. En la página **revisión** , revise la configuración que ha elegido para la Directiva. Seleccione **Editar** para cambiar cualquiera de los valores de la Directiva o seleccione **Enviar** para crear y activar la Directiva.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que haya completado estos pasos para crear su primera Directiva de administración de riesgos de Insider, empezará a recibir alertas de los indicadores de actividad después de aproximadamente 24 horas. Configure directivas adicionales según sea necesario mediante las instrucciones del paso 4 de este artículo o los pasos en [Create a Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
 

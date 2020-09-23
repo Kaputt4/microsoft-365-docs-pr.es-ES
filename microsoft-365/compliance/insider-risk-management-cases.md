@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416564"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208856"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -127,6 +127,15 @@ La ficha de **actividad de usuario** es una de las herramientas más eficaces pa
 4. **Actividad de riesgo cronología**: se enumera toda la cronología de todas las alertas de riesgo asociadas con el caso, incluidos todos los detalles disponibles en la burbuja de alerta correspondiente.
 5. **Acciones de casos**: las opciones para resolver el caso se muestran en la barra de herramientas acción de escenario. Puede resolver un caso, enviar un aviso por correo electrónico al usuario o remitir el caso a un usuario o a una investigación del usuario.
 
+### <a name="activity-explorer-preview"></a>Explorador de actividades (versión preliminar)
+
+>[!IMPORTANT]
+>La ficha explorador de actividades está disponible en el área administración de casos para los usuarios con eventos desencadenantes después de que esta característica esté disponible en la organización.
+
+La ficha **Explorador de actividades** permite a los analistas de riesgos y a los investigadores revisar los detalles de la actividad asociados con las alertas de riesgos. Por ejemplo, como parte de las acciones de administración de casos, los investigadores y analistas pueden tener que revisar todas las actividades de riesgo asociadas con el caso para obtener más detalles. Con el **Explorador de actividades**, los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con las alertas.
+
+Para obtener más información sobre el explorador de actividades, consulte el artículo de alertas de la [Administración de riesgos de Insider](insider-risk-management-alerts.md#activity-explorer-preview) .
+
 ### <a name="content-explorer"></a>Explorador de contenido
 
 La ficha **Explorador de contenido** permite a los analistas de riesgos y a los investigadores revisar las copias de todos los archivos individuales y los mensajes de correo electrónico asociados a las alertas de riesgos. Por ejemplo, si se crea una alerta cuando un usuario descarga cientos de archivos de SharePoint Online y la actividad desencadena una alerta de Directiva, todos los archivos descargados para la alerta se capturan y se copian en el caso de administración de riesgos de Insider desde orígenes de almacenamiento originales.
@@ -196,15 +205,42 @@ Para remitir un caso a una investigación de usuario:
 1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **casos** .
 2. Seleccione un caso y, a continuación, seleccione el botón **remitir a investigación** en la barra de herramientas acción de escenario.
 3. En el cuadro de diálogo **escalar para investigación** , escriba un nombre para la nueva investigación de usuario. Si es necesario, escriba notas sobre el caso y seleccione **escalar**.
+4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí reemplazarán los valores de la plantilla.
 5. Seleccione **confirmar** para crear el caso de investigación del usuario o seleccione **Cancelar** para cerrar el cuadro de diálogo sin crear un nuevo caso de investigación del usuario.
 
 Una vez que el caso de administración de riesgos de Insider se ha remitido a un nuevo caso de investigación de **eDiscovery**usuario, puede revisar el nuevo caso en el  >  área**Advanced** eDiscovery del centro de cumplimiento de Microsoft 365.
 
-### <a name="share-a-case"></a>Compartir un caso
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ejecutar tareas automatizadas con los flujos de alimentación automatizada para el caso
 
-Compartir un caso de administración de riesgos de Insider permite que los investigadores y las revisiones colaboren fácilmente con otras partes interesadas del cumplimiento de su organización. Puede compartir rápidamente un vínculo a un caso de administración de riesgos de Insider con partes interesadas externas del área de administración de casos. Para acceder al caso de la administración de riesgos de Insider desde el vínculo, las partes interesadas deben incluirse en cualquiera de los grupos de roles de administración de riesgos de Insider.
+Mediante el uso de flujos de energía recomendados, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para:
 
-Están disponibles las siguientes opciones de uso compartido: 
+- Solicitar información de recursos humanos o empresas sobre un usuario en un caso de riesgo de Insider
+- Notificar al administrador cuando un usuario tiene una alerta de riesgo de Insider
+- Agregar un aviso de calendario para realizar un seguimiento de un caso de riesgo de Insider
+
+Para ejecutar, administrar o crear flujos de alimentación automatizada para un caso de administración de riesgos de Insider:
+
+1. Seleccione **automatizar** en la barra de herramientas acción de escenario. 
+2. Elija el flujo de automatización de energía que se va a ejecutar y, a continuación, seleccione **flujo de ejecución**. 
+3. Una vez completado el flujo, seleccione **listo**.
+
+Para obtener más información sobre los flujos de alimentación automatizada para la administración de riesgos de Insider, vea [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#power-automate-flows-preview).
+
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo de Microsoft Teams para el caso
+
+Cuando la integración de Microsoft Teams para la administración de riesgos de Insider está habilitada en la configuración, se crea automáticamente un equipo de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. Los investigadores y analistas de riesgos pueden abrir rápidamente Microsoft Teams y navegar directamente al equipo para un caso si selecciona **Ver equipo de Microsoft Teams** en la barra de herramientas acción de caso.
+
+Para los casos abiertos antes de habilitar la integración de Microsoft Team, los investigadores y los analistas de riesgos pueden crear un nuevo equipo de Microsoft Teams para un caso seleccionando **crear equipo de Microsoft Teams** en la barra de herramientas de acciones de caso.
+
+Cuando se resuelve un caso, el equipo de Microsoft asociado se archivará automáticamente (oculto y convertido en solo lectura).
+
+Para obtener más información acerca de Microsoft Teams para la administración de riesgos de Insider, vea [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#microsoft-teams-preview).
+
+### <a name="share-the-case"></a>Compartir el caso
+
+Compartir un caso de administración de riesgos de Insiders permite a los investigadores y analistas de riesgos colaborar fácilmente con otras partes interesadas de cumplimiento de la organización. Puede compartir rápidamente un vínculo a un caso de administración de riesgos de Insider con partes interesadas externas del área de administración de casos. Para acceder al caso de la administración de riesgos de Insider desde el vínculo, las partes interesadas deben incluirse en cualquiera de los grupos de roles de administración de riesgos de Insider.
+
+Están disponibles las siguientes opciones de uso compartido:
 
 - **ServiceNow**: Tras configurar el conector de servicenow de 365 de Microsoft para su organización de Microsoft 365, puede compartir fácilmente un vínculo al caso, abrir un incidente o solicitar un cambio con su organización de ServiceNow. Para compartir el caso con ServiceNow, seleccione **compartir**  >  **ServiceNow** en la acción del caso. La integración de ServiceNow con la administración de riesgos de Insider admite incluye la siguiente información de casos y acciones:
     - **Nombre de tarea**: el nombre de la nueva tarea de ServiceNow.

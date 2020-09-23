@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 43c98e0b710f5b88c17e089fd974e924728f27f3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307778"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202680"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Su organización necesita administrar los escenarios de seguridad y cumplimiento que se extienden a todos los servicios de Microsoft 365. Por lo que necesita la flexibilidad para dar los permisos de administrador adecuados a las personas adecuadas en el grupo de TI de su organización. Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
 
@@ -63,7 +66,7 @@ Los usuarios con este rol tienen permisos para administrar las características 
 |En este servicio...|El administrador de cumplimiento puede...|
 |---|---|
 |[**Centro de cumplimiento de Microsoft 365**](https://compliance.microsoft.com/)|Proteger y administrar los datos de su organización en los servicios de Microsoft 365 <br/><br/> Administrar alertas de cumplimiento.|
-|[**Puntuación de conformidad**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
+|[**Administrador de cumplimiento**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
 |[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Administrar el gobierno de datos. <br/><br/> Realizar investigaciones de datos y legales. <br/><br/> Administrar solicitudes de interesados.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver todos los datos de auditoría de Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Cuenta con permisos de solo lectura y puede administrar alertas. <br/><br/> Puede crear y modificar directivas de archivo y permitir acciones de gobierno de archivo. <br/><br/> Puede ver todos los informes integrados en Administración de datos.|
@@ -71,14 +74,14 @@ Los usuarios con este rol tienen permisos para administrar las características 
 
 ### <a name="compliance-data-administrator"></a>Administrador de datos de cumplimiento
 
-Los usuarios con este rol tienen permisos para proteger y realizar un seguimiento de los datos en el Centro de cumplimiento de Microsoft 365, en el Centro de administración de Microsoft 365 y en Azure. Los usuarios también pueden administrar todas las características dentro del Centro de administración de Exchange, la puntuación de cumplimiento y el Centro de administración de Teams y Skype Empresarial, así como crear incidencias de soporte técnico para Azure y Microsoft 365.
+Los usuarios con este rol tienen permisos para proteger y realizar un seguimiento de los datos en el Centro de cumplimiento de Microsoft 365, en el Centro de administración de Microsoft 365 y en Azure. Los usuarios también pueden administrar todas las características dentro del Centro de administración de Exchange, el Administrador de cumplimiento y el Centro de administración de Teams y Skype Empresarial, así como crear incidencias de soporte técnico para Azure y Microsoft 365.
 
 ****
 
 |En este servicio...|El administrador de datos de cumplimiento puede...|
 |---|---|
 |[**Centro de cumplimiento de Microsoft 365**](https://compliance.microsoft.com/)|Proteger y administrar los datos de su organización en los servicios de Microsoft 365 <br/><br/> Administrar alertas de cumplimiento. <br/><br/> Administrar etiquetas de sensibilidad|
-|[**Puntuación de conformidad**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
+|[**Administrador de cumplimiento**](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
 |[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Administrar el gobierno de datos. <br/><br/> Realizar investigaciones de datos y legales. <br/><br/> Administrar solicitudes de interesados. <br/><br/> Administrar etiquetas de sensibilidad|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (próximamente)|Ver todos los datos de auditoría de Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Usa permisos de solo lectura para ver la información. <br/>Administrar alertas. <br/><br/> Crear y modificar directivas de archivo y permitir acciones de gobierno de archivo. <br/><br/> Ver todos los informes integrados en Administración de datos.|
@@ -173,7 +176,7 @@ Al asignar un usuario a uno de los roles de administrador de seguridad y cumplim
 |Azure Active Directory (Azure AD) y Azure AD Identity Protection|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Grupos de roles de Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Puntuación de conformidad|[Puntuación de conformidad](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
+|Administrador de cumplimiento|[Administrador de cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Control de acceso basado en roles de Exchange](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Control de acceso basado en roles de Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Escritorio administrado|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416422"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208622"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
@@ -64,7 +64,7 @@ Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawa
 
 El compromiso de Microsoft para cumplir con los controles normativos de CJIS aplicables permite a las organizaciones de justicia criminal implementar soluciones basadas en la nube y cumplir con la Directiva de seguridad de CJIS V 5.8.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Dónde puedo solicitar información de cumplimiento?**
 
@@ -77,6 +77,10 @@ Microsoft firma un acuerdo de información con un State CJIS Systems Agency (CSA
 **¿Dónde empezaré con el esfuerzo de cumplimiento de mi agencia?**
 
 La [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy) cubre las precauciones que debe tomar su agencia para proteger CJI. Además, el representante de su cuenta de Microsoft puede ponerse en contacto con los usuarios familiarizados con los requisitos de su jurisdicción
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

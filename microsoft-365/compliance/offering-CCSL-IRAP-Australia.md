@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417334"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208652"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programa de evaluación de la seguridad de la información del gobierno australiano (IRAP)
 
@@ -50,7 +50,7 @@ La evaluación de los servicios de Microsoft en Australia cubre las cuatro regio
 
 Para cada evaluación, Microsoft contrató un evaluador de IRAP acreditado ACSC que examinó los controles y los procesos de seguridad que usaba el equipo de operaciones de TI de Microsoft, los centros de datos físicos, la detección de intrusiones, la criptografía, la seguridad entre dominios y de red, el control de acceso y la administración de riesgos de seguridad de la información de los servicios de ámbito. La evaluación de IRAP ha descubierto que la arquitectura del sistema de Microsoft se basa en principios de seguridad sonoros y que los controles de seguridad de información de Australian Government Government (ISM) están en vigor y son totalmente eficaces dentro de nuestros servicios evaluados.
 
-El marco de administración de riesgos usado por ISM se basa en [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), "marco de administración de riesgos para sistemas y organizaciones de la información: un enfoque del ciclo de vida del sistema para seguridad y privacidad". Dentro de este marco de administración de riesgos, la identificación de los riesgos y la selección de controles de seguridad se pueden llevar a cabo con una variedad de estándares de administración de riesgos, como la [organización internacional de normalización (ISO) 31000:2018, las directrices de administración de riesgos](https://www.iso.org/standard/65694.html). En general, el marco de administración de riesgos usado por ISM tiene seis pasos:
+El marco de administración de riesgos usado por ISM se basa en el [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-37 Rev. 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final), ' entorno de administración de riesgos para sistemas de información y organizaciones: un enfoque del ciclo de vida del sistema para seguridad y privacidad '. Dentro de este marco de administración de riesgos, la identificación de los riesgos y la selección de controles de seguridad se pueden llevar a cabo con una variedad de estándares de administración de riesgos, como la [organización internacional de normalización (ISO) 31000:2018, las instrucciones de administración de riesgos](https://www.iso.org/standard/65694.html). En general, el marco de administración de riesgos usado por ISM tiene seis pasos:
 
 - Definir el sistema
 - Selección de controles de seguridad
@@ -86,9 +86,9 @@ Empiece con [Qué es IRAP](https://www.cyber.gov.au/irap/what-irap) y siga la in
 - [¿Quién proporciona el aprendizaje de IRAP?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Información de requisitos de cumplimiento y de no cumplimiento](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Una vez configurada la [puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) preconfigurada en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de este Reglamento.
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

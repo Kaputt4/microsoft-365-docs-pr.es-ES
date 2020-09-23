@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817175"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196393"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurar un conector para importar datos de recursos humanos en el gobierno de Estados Unidos (versión preliminar)
+# <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en el gobierno de Estados Unidos
 
 Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar los datos de recursos humanos (HR) a la organización de US Government. Los datos relacionados con recursos humanos incluyen la fecha en que un empleado envió su retirada y la fecha del último día del empleado. Estos datos de recursos humanos pueden usarse en las soluciones de protección de la información de Microsoft, como la [solución de administración de riesgos de Insider](insider-risk-management.md), para ayudar a proteger su organización de la actividad malintencionada o del robo de datos dentro de la organización. La configuración de un conector de recursos humanos consiste en la creación de una aplicación en Azure Active Directory que se usa para la autenticación por conector, la creación de archivos de asignación CSV que contienen los datos de recursos humanos, la creación de un conector de datos en el centro de cumplimiento y la ejecución de un script (en forma de base programada) que recopila los datos de recursos humanos del archivo A continuación, la herramienta de administración de riesgos de Insider usa el conector de datos para tener acceso a los datos de recursos humanos que se importaron a la organización de Microsoft 365 US Government.
 
@@ -77,7 +77,7 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **conectores de datos (vista previa)** , en **HR**, haga clic en **Ver**.
+2. En la página **conectores de datos** en **HR**, haga clic en **Ver**.
 
 3. En la página **RRHH** , haga clic en **Agregar conector**.
 

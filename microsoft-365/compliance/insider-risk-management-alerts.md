@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0c0c529569ae1c4ca0ed54863b8b2ddcfcfcba2d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 602571e5cbd3132209382ca2e2a3d8941ea8ab2e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416864"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208842"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertas de administración de riesgos de Insider
 
@@ -56,7 +56,7 @@ Los niveles de gravedad de riesgo de alertas son:
 - **Gravedad media**: las actividades y los indicadores de la alerta representan un riesgo moderado. Las actividades de riesgo asociadas son moderadas, frecuentes y tienen cierta correlación con otros factores de riesgo.
 - **Gravedad baja**: las actividades y los indicadores de la alerta suponen un riesgo menor. Las actividades de riesgo asociadas son secundarias, más poco frecuentes y no corelacionadas con otros factores de riesgo significativos.
 
-## <a name="filter-alerts"></a>Alertas de filtros
+## <a name="filter-alerts-on-the-alert-dashboard"></a>Filtrar alertas en el panel de alertas
 
 Según el número y el tipo de directivas activas de administración de riesgos de Insider en la organización, la revisión de una cola de alertas de gran tamaño puede resultar complicada. El uso de filtros de alerta puede ayudar a los analistas y investigadores a ordenar las alertas por varios atributos. Para filtrar las alertas del **Panel alertas**, seleccione el control **filtro** . Puede filtrar las alertas por uno o más atributos:
 
@@ -65,7 +65,7 @@ Según el número y el tipo de directivas activas de administración de riesgos 
 - **Tiempo detectado**: seleccione las fechas de inicio y finalización para cuando se creó la alerta.
 - **Directiva**: Seleccione una o más directivas para filtrar las alertas generadas por las directivas seleccionadas.
 
-## <a name="search-alerts"></a>Alertas de búsqueda
+## <a name="search-alerts-on-the-alert-dashboard"></a>Alertas de búsqueda en el panel de alertas
 
 Para buscar en el nombre de la alerta una palabra específica, seleccione el control de **búsqueda** y escriba la palabra que desea buscar. Los resultados de la búsqueda muestran cualquier alerta de directiva que contenga la palabra definida en la búsqueda.
 
@@ -76,16 +76,36 @@ Para clasificar una alerta de riesgo de Insider, siga los pasos que se indican a
 1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **alertas** .
 2. En el **Panel alertas**, seleccione la alerta que desea clasificar.
 3. En el **Panel de detalles de alertas**, puede revisar las siguientes pestañas y clasificar la alerta:
-    - **Información**general: esta ficha contiene información general acerca de la alerta y le permite confirmar la alerta y crear un nuevo caso o permite descartar la alerta.
-        - **Status**: el estado de la alerta
-        - **Tiempo detectado**: el período de tiempo desde que se generó la alerta.
-        - **Coincidencias de directivas**: se enumeran las directivas que generaron la alerta. Cada directiva aparece como un vínculo a los detalles de la Directiva.
-        - **Gravedad**: nivel de gravedad del riesgo de alertas actual, enumerado como *alto*, *medio*o *bajo*. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no se clasifica.
-        - **Caso**: si se confirma, se muestra el caso generado a partir de la alerta. Para las nuevas alertas, el campo **caso** muestra *ninguno*.
+    - **Resumen**: esta ficha contiene información general sobre la alerta y le permite confirmar la alerta y crear un nuevo caso o permite descartar la alerta. Incluye el estado actual de la alerta y el nivel de gravedad de riesgo de la alerta, enumerados como *alto*, *medio*o *bajo*. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no se clasifica.
+        - **Lo que sucedió**: muestra las tres principales actividades de riesgo y coincidencias de directivas durante el período de evaluación de la actividad, incluido el tipo de infracción asociada con la actividad.
+        - **Detalles del usuario**: muestra información general acerca del usuario asignado a la alerta. Si anonymization está habilitado, los campos nombre de usuario, dirección de correo electrónico, alias y organización son anonimizan.
+        - **Detalles**de la alerta: incluye el período de tiempo desde que se generó la alerta, las directivas que generaron la alerta aparecen en la lista y se muestra el caso generado a partir de la alerta. Para las nuevas alertas, el campo **caso** muestra ninguno.
+        - **Contenido detectado**: incluye contenido asociado a las actividades de riesgo para la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad se abre el explorador de actividades y se muestran detalles adicionales sobre la actividad.
     - **Actividad de usuario**: esta pestaña muestra el historial de actividades del usuario asociado a la alerta. Este historial incluye otras alertas y actividades relacionadas con los indicadores de riesgo definidos en la plantilla asignada a la Directiva para esta alerta. Este historial permite a los analistas de riesgos y a los investigadores factorizar cualquier comportamiento de riesgo pasado para el empleado como parte del proceso de evaluación de prioridades.
-    - **Perfil de usuario**: esta pestaña muestra la información general sobre el empleado asignado a la alerta. Si anonymization está habilitado, los campos nombre de usuario, dirección de correo electrónico, alias y organización son anonimizan.
-    - **Confirmar y crear caso**: visible en todas las pestañas, use este botón para confirmar y crear un nuevo caso. Esta acción cambia automáticamente el estado de la alerta a *confirmado*.
-    - **Descartar alerta**: visible en todas las pestañas, use este botón para descartar la alerta. Esta acción cambia el estado de la alerta a *resuelto*.
+    - **Acciones**: están disponibles las siguientes acciones para cada alerta:
+        - **Abrir vista expandida**: abre el panel del **Explorador de actividades** .
+        - **Confirmar y crear caso**: Use esta acción para confirmar y crear un nuevo caso para todas las alertas asociadas a un usuario. Esta acción cambia automáticamente el estado de la alerta a *confirmado*.
+        - **Descartar alerta**: Use esta acción para descartar la alerta. Esta acción cambia el estado de la alerta a *resuelto*.
+
+## <a name="activity-explorer-preview"></a>Explorador de actividades (versión preliminar)
+
+>[!NOTE]
+>El explorador de actividades está disponible en el área de administración de alertas para los usuarios con eventos desencadenantes después de que esta característica esté disponible en la organización.
+
+El explorador de actividades proporciona a los investigadores y analistas de riesgos una herramienta analítica completa que proporciona información detallada sobre las alertas. Con el explorador de actividades, los revisores pueden revisar rápidamente una escala de tiempo de actividad de riesgo detectada e identificar y filtrar todas las actividades de riesgo asociadas con las alertas. Para filtrar alertas en el explorador de actividades, seleccione el control de filtro. Puede filtrar las alertas por uno o más atributos que aparecen en el panel de detalles de la alerta. Activity Explorer también admite columnas personalizables para ayudar a los investigadores y analistas a centrar el panel sobre la información más importante para ellos.
+
+![Introducción al explorador de actividad de administración de riesgos de Insider](../media/insider-risk-management-activity-explorer.png)
+
+Para usar el **Explorador de actividades**, siga estos pasos:
+
+1. En el centro de cumplimiento de Microsoft 365, vaya a **Administración de riesgos de Insider** y seleccione la pestaña **alertas** .
+2. En el **Panel alertas**, seleccione la alerta que desea clasificar.
+3. En el **Panel de detalles de alertas**, seleccione **abrir vista expandida**.
+4. En la página de la alerta seleccionada, seleccione la pestaña **Explorador de actividades** .
+
+Al revisar actividades en el explorador de actividades, los investigadores y analistas pueden seleccionar una actividad específica y abrir el panel de detalles de la actividad. El panel muestra información detallada sobre la actividad que pueden usar los investigadores y analistas durante el proceso de clasificación de alertas. La información detallada puede proporcionar contexto para la alerta y ayudar a identificar el ámbito completo de la actividad de riesgo que activó la alerta.
+
+![Detalles del explorador de actividad de administración de riesgos de Insider](../media/insider-risk-management-activity-explorer-details.png)
 
 ## <a name="create-a-case-for-an-alert"></a>Crear un caso para una alerta
 
@@ -93,6 +113,8 @@ Como la alerta se ha revisado y se ha clasificado, puede crear un nuevo caso par
 
 1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **alertas** .
 2. En el **Panel alertas**, seleccione la alerta que desea confirmar y cree un nuevo caso para.
-3. En el **Panel de detalles de alertas**, seleccione **confirmar y crear caso**.
+3. En el **Panel de detalles de alertas**, seleccione **acciones**  >  **confirmar alertas & crear caso**.
 4. En el cuadro de diálogo **confirmar la alerta y crear un caso de riesgo de Insider** , escriba un nombre para el caso, seleccione usuarios para agregarlos como colaboradores y agregue comentarios según corresponda. Los comentarios se agregan automáticamente al caso como una nota de caso.
 5. Seleccione **crear caso** para crear un caso nuevo o seleccione **Cancelar** para cerrar el cuadro de diálogo sin crear un caso.
+
+Una vez creado el caso, los investigadores y analistas pueden administrar y actuar en el caso. Consulte el artículo sobre el [caso de administración de riesgos de Insider](insider-risk-management-cases.md) para obtener más información.

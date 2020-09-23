@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector de teleservicio para importar y archivar datos de SMS y MMS desde la red de Verizon en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c088adbd0e0a5d4a46b3f7ddb3d64d3f8c32c8dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361835"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196559"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data-preview"></a>Configurar un conector para archivar datos de Verizon Network (versión preliminar)
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Configurar un conector para archivar datos de la red de Verizon
 
 Use el conector de teleservicio del centro de cumplimiento de Microsoft 365 para importar y archivar datos del servicio de mensajería breve (SMS) y el servicio de mensajería multimedia (MMS) de Verizon Network. Después de configurar y configurar un conector, se conecta a la red Verizon de su organización una vez al día e importa los datos SMS y MMS a los buzones en Microsoft 365.
 
@@ -88,4 +87,4 @@ Una vez que haya completado los requisitos previos descritos en la sección ante
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

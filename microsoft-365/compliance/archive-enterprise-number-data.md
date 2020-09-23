@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de SMS y MMS desde el Archiver de números empresariales de Telemensaje. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362039"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200167"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>Configurar un conector para archivar datos de número de empresa (versión preliminar)
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configurar un conector para archivar datos de número de empresa
 
 Use un conector de teleservicio en el centro de cumplimiento de Microsoft 365 para importar y archivar mensajes de servicio de mensajería breve (SMS) y servicio de mensajería multimedia (MMS), mensajes de chat, grabaciones de llamadas de voz y registros de llamadas de voz del Archiver número de empresa. Una vez que haya instalado y configurado un conector, se conectará a la cuenta de los mensajes de correo de su organización una vez al día y importará los datos de comunicación móvil de los empleados mediante el Archiver de números empresariales de Telemensaje a los buzones de Microsoft 365.
 
@@ -82,4 +81,4 @@ Una vez que haya completado los requisitos previos descritos en la sección ante
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54d188aa84cd6bc2614489dbbc3a969d30b40342
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417042"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208422"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Information Trust Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -68,7 +68,7 @@ Use Office 365 para administrar la información de estado de forma segura y conf
 
 Acelere el cumplimiento de HITRUST para su solución hospedada en Microsoft Azure rellenando previamente su evaluación con controles de responsabilidad completamente heredados o compartidos para Azure en la herramienta HITRUST MyCSF y colaborando con Microsoft en su evaluación.
 
-[Obtener más información](https://go.microsoft.com/fwlink/p/?linkid=2100268)
+[Más información](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -102,6 +102,10 @@ Sí, puede encontrar las acciones de cliente recomendadas en puntuación de cump
 **¿Cómo puedo participar con Microsoft?**
 
 Inicie sesión en la herramienta de® HITRUST MyCSF y rellene previamente la evaluación de la solución hospedada en Microsoft Azure con controles de responsabilidad completamente heredados o compartidos para Azure. A continuación, un administrador de Microsoft HITRUST completará su parte de la evaluación mediante su cuenta en la herramienta de® de MyCSF.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

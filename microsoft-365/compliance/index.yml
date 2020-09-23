@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: 648b9a3256aaca8eaabba80af1edee3beccf1ac2
-  ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+  ms.openlocfilehash: 69387d2697c91d637fa6a3ab19a07f4924037637
+  ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/12/2020
-  ms.locfileid: "46641624"
+  ms.lasthandoff: 09/22/2020
+  ms.locfileid: "48201458"
 landingContent:
 - title: Administrar el gobierno y la protección de la información
   linkLists:
@@ -66,8 +66,8 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: 'Puntuación de cumplimiento '
-      url: compliance-score.md
+    - text: Administrador de cumplimiento
+      url: compliance-manager.md
     - text: Plan de acción de cumplimiento de RGPD
       url: gdpr-action-plan.md
     - text: Protección de la información para RGPD

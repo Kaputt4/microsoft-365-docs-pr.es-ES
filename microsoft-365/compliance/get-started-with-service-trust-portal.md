@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo acceder y usar el portal de confianza de servicios de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547478"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197767"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -68,11 +68,8 @@ El vínculo **portal de confianza de servicios** muestra la Página principal. P
 
 ### <a name="compliance-manager"></a>Administrador de cumplimiento
 
-El administrador de cumplimiento es una herramienta de evaluación de riesgos basada en flujos de trabajo que le ayuda a controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización relacionadas con los servicios en la nube de Microsoft, como Microsoft 365, Dynamics 365 y Azure. Use el administrador de cumplimiento para administrar el cumplimiento normativo en el modelo de responsabilidad compartida de la nube. En función de la versión del administrador de cumplimiento que desee usar, vea los artículos siguientes para obtener más información:
-
-- [Administrador de cumplimiento de Microsoft (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Administrador de cumplimiento de Microsoft (versión preliminar)](compliance-manager-overview.md)
+> [!IMPORTANT]
+> El administrador de cumplimiento ha movido del portal de confianza de servicios a su nueva ubicación en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Todos los datos de los clientes se han movido a la nueva ubicación, por lo que puede seguir usando el administrador de cumplimiento sin interrupciones. Consulte la [documentación del administrador de cumplimiento](compliance-manager.md) para obtener información de configuración y obtener información sobre las nuevas características. Aunque la versión clásica del administrador de cumplimiento permanece en el portal de confianza de servicios, se recomienda que todos los usuarios usen el administrador de cumplimiento en el centro de cumplimiento de Microsoft 365.
 
 ### <a name="trust-documents"></a>Documentos de confianza
 
@@ -110,15 +107,9 @@ Esta nueva característica le permite guardar (o *anclar*) documentos para que p
 
 Vaya a **más > administrador** para acceder a funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo está visible si ha iniciado sesión como administrador global. Hay dos opciones en el menú desplegable **Administración** :
 
-- **Configuración:** Esta página le permite asignar acceso basado en roles (conocidos como *roles de usuario*) al administrador de cumplimiento.  Para más información, consulte:
+- **Configuración:** Esta página le permite asignar roles de usuario para el administrador de cumplimiento (clásico).
 
-  - [Permisos en el administrador de cumplimiento (clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [Permisos en el administrador de cumplimiento (versión preliminar)](compliance-manager-overview.md#permissions)
-
-  También puede configurar si las acciones en el administrador de cumplimiento se actualizan en función del estado de la misma acción en calificación segura. Esta funcionalidad solo se admite si usa la versión más reciente del administrador de cumplimiento. Para obtener más información, consulte [control de actualizaciones automáticas de puntuaciones seguras](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
-
-- **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado. Para obtener más información, vea [configuración de privacidad de usuario](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
+- **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento (Classic) para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado.
 
 ### <a name="search"></a>Búsqueda
 
@@ -126,9 +117,9 @@ Haga clic en la lupa de la esquina superior derecha de la página portal de conf
 
 ![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados con las listas desplegables para refinar la lista de documentos mostrados. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, categorías de cumplimiento o prácticas de seguridad, regiones e industrias. Haga clic en el vínculo nombre del documento para descargar el documento.
+De forma predeterminada, la búsqueda devuelve los resultados de un documento. Puede filtrar los resultados con las listas desplegables para refinar la lista de documentos mostrados. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, categorías de cumplimiento o prácticas de seguridad, regiones e industrias. Haga clic en el vínculo nombre del documento para descargar el documento.
 
-Para enumerar controles a partir de evaluaciones en el administrador de cumplimiento relacionadas con los términos de búsqueda, haga clic en **Administrador de cumplimiento**. Los resultados de la búsqueda muestran la fecha en que se creó la evaluación, el nombre de la agrupación de la evaluación, el servicio aplicable en la nube de Microsoft y si el control es Microsoft o administrado por el cliente. Haga clic en el nombre del control para ver el control en la evaluación en Compliance Manager.
+Para enumerar controles de evaluaciones en el administrador de cumplimiento (Classic) relacionados con los términos de búsqueda, haga clic en **Administrador de cumplimiento**. Los resultados de la búsqueda muestran la fecha en que se creó la evaluación, el nombre de la agrupación de la evaluación, el servicio aplicable en la nube de Microsoft y si el control es Microsoft o administrado por el cliente. Haga clic en el nombre del control para ver el control en la evaluación en Compliance Manager (Classic).
 
 ![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

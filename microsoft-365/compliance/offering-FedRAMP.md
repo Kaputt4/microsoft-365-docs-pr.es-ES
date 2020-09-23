@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415784"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208442"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
 
@@ -91,7 +91,7 @@ Deje que Microsoft le guíe a través del proceso de ATO e implemente rápidamen
 
 [Empezar a usar Azure FedRAMP High Blueprint](https://aka.ms/fedrampblueprint)
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Los servicios en la nube de Microsoft cumplen con la ley de administración de seguridad de la información federal (FISMA)?**
 
@@ -109,9 +109,9 @@ Para obtener información general sobre los pasos que deben realizar las agencia
 
 Sí. Puede usar las certificaciones de los servicios en la nube de Microsoft como base para cualquier programa o iniciativa que requiera una ATO de una agencia gubernamental federal. Sin embargo, debe conseguir sus propias autorizaciones para los componentes fuera de estos servicios.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Una vez configurada la [puntuación de cumplimiento](compliance-score-setup.md), seleccione la [plantilla FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) preconfigurada en el menú desplegable **plantilla** para ayudar a su organización a cumplir los requisitos de este Reglamento.
+El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

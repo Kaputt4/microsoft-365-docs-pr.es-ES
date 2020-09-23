@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet reuniones de zoom en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a94d0a776af05b609816d3fdbfede869018fa30a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956237"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196363"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configurar un conector para archivar datos de reuniones de zoom (versión preliminar)
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurar un conector para archivar datos de reuniones de zoom
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de las reuniones de zoom en los buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector de [reuniones de zoom](https://globanet.com/zoom/) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar los elementos a Microsoft 365. El conector convierte el contenido de las reuniones (incluidos los chats, los archivos grabados y los metadatos) de la cuenta de reuniones de zoom a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
 
@@ -102,6 +101,6 @@ Después de crear el conector de reuniones de zoom, puede ver el estado del cone
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.
 
 - Para que funcione el conector de reuniones de zoom, debe habilitar las grabaciones al configurar las reuniones de zoom.

@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector de Telemensaje para importar y archivar datos de SMS y MMS desde la red móvil de O2 en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: afcb7708cacd2ec04f79cdb03ce3d799232014a7
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39a56e58bd9259b31138a4acf58a5ea5f432bc15
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362029"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196305"
 ---
-# <a name="set-up-a-connector-to-archive-o2-network-data-preview"></a>Configurar un conector para archivar datos de red O2 (versión preliminar)
+# <a name="set-up-a-connector-to-archive-o2-network-data"></a>Configurar un conector para archivar datos de red de O2
 
 Use un conector de Telemensaje en el centro de cumplimiento de Microsoft 365 para importar y archivar mensajes de servicio de mensajes cortos (SMS) y llamadas de voz desde la red móvil de O2. Después de configurar y configurar un conector, se conecta a la red de O2 de su organización una vez al día e importa las llamadas de voz y SMS a los buzones en Microsoft 365.
 
@@ -88,4 +87,4 @@ Una vez que haya completado los requisitos previos descritos en la sección ante
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.

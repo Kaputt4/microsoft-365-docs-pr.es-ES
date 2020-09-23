@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Reuters Eikon de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: ec5df821bcfbb772879fea5e8568e7090ce54aae
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c9e63896d333d7f94d01b6ec3af565f476fac39e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405481"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196779"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>Configurar un conector para archivar datos de Reuters Eikon (versión preliminar)
+# <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>Configurar un conector para archivar datos de Reuters Eikon
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma de Eikon de Reuters a los buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector de [Reuters Eikon](https://globanet.com/eikon/) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar dichos elementos a Microsoft 365. El conector convierte el contenido, por ejemplo, los mensajes de persona a persona, chats de grupo, datos adjuntos y avisos de declinación de responsabilidad de la cuenta de Eikon de Reuters de un usuario en un formato de mensaje de correo electrónico y, a continuación, importa dichos elementos en el buzón del usuario en Microsoft 365.
 
@@ -90,4 +89,4 @@ Después de crear el conector de Reuters EIKON, puede ver el estado del conector
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- En este momento, no se admite la importación de datos adjuntos de más de 10 MB, pero el soporte para elementos de mayor tamaño estará disponible en una fecha posterior.
+- En este momento, no se admite la importación de datos adjuntos o elementos de más de 10 MB. La compatibilidad con elementos más grandes estará disponible en una fecha posterior.
