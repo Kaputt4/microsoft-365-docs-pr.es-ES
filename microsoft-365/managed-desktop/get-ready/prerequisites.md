@@ -1,6 +1,6 @@
 ---
 title: Requisitos previos del Escritorio administrado de Microsoft
-description: ''
+description: Licencias, cuentas de Azure, configuración de autenticación y configuración de Microsoft 365 para configurar antes de inscribirse en el escritorio administrado de Microsoft
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4850aabfac0774f899d6497543b74ff77c446523
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1c03d9028205ea392bade15e6dec354bff0be96e
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361956"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235399"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
 
@@ -23,7 +23,6 @@ ms.locfileid: "47361956"
 
 En este tema se describen los requisitos de infraestructura que debe cumplir para garantizar el éxito con Microsoft Managed Desktop. 
 
-Microsoft FastTrack está disponible para ayudarle a cumplir con estos requisitos y a prepararse para participar en el escritorio administrado de Microsoft. Para obtener más información, consulte [Microsoft FastTrack](https://fasttrack.microsoft.com/about). 
 
 Área | Detalles de requisitos previos
 --- | ---
@@ -33,7 +32,7 @@ Azure Active Directory |    Azure Active Directory (Azure AD) debe ser el origen
 Autenticación |    Si Azure AD no es el origen de la autenticación principal de las cuentas de usuario, debe configurar uno de estos en Azure AD Connect:<br>-Sincronización de hash de contraseña<br>: Autenticación de paso a través<br>-Un proveedor de identidades externo (incluidos los ADFS de Windows Server y distintos de Microsoft IDP) configurados para cumplir los requisitos de integración de Azure AD. Vea las [instrucciones](https://www.microsoft.com/download/details.aspx?id=56843) para obtener más información. <br><br>Al configurar las opciones de autenticación con Azure AD Connect, también se recomienda la escritura diferida de contraseñas. Para obtener más información, vea [escritura diferida de contraseñas](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Si se implementa un proveedor de identidades externo, debe validar la solución:<br>-Cumple los requisitos de integración de Azure AD<br>-Compatible con el acceso condicional de Azure AD, esto es para habilitar la configuración de la Directiva de cumplimiento de dispositivos de MMD<br>-Habilita la inscripción de dispositivos y el uso de los servicios de Microsoft 365 o las características necesarias como parte del escritorio administrado por Microsoft <br><br>Para obtener más información sobre las opciones de autenticación con Azure AD, consulte [Opciones de inicio de sesión de usuario de Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin).
 Microsoft 365 | OneDrive para la empresa debe estar habilitado para los usuarios de escritorio administrados por Microsoft.<br><br>Aunque no es necesario inscribirse en el escritorio administrado de Microsoft, se recomienda encarecidamente que los siguientes servicios se migren a la nube:<br>-Email: migrar a buzones de correo basados en la nube, Exchange online o configurar con Exchange Online híbrido con Exchange 2013 o superior, local.<br>-Archivos y carpetas: migrar a OneDrive para la empresa o SharePoint Online.<br>-Herramientas de colaboración en línea: migrar a teams.
 Administración de dispositivos | Los dispositivos de escritorio administrados por Microsoft requieren administración con Microsoft Intune. Intune se debe establecer como la entidad de administración de dispositivos móviles.<br><br>Para obtener más información, consulte [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Copia de seguridad y recuperación de datos | Microsoft Managed Desktop requiere que los archivos se sincronicen con OneDrive para la empresa para la protección. El escritorio administrado de Microsoft no garantiza los archivos que no se hayan sincronizado con OneDrive para la empresa, por lo que podrían perderse durante los intercambios de dispositivos o llamadas de soporte técnico que requieran un restablecimiento del dispositivo.<br><br>Aunque no es necesario, Microsoft Managed Desktop recomienda la migración de unidades de red asignadas a la solución de nube adecuada. Para obtener más información, vea [preparar unidades asignadas para el escritorio administrado por Microsoft](mapped-drives.md)
+Copia de seguridad y recuperación de datos |  Microsoft Managed Desktop requiere que los archivos se sincronicen con OneDrive para la empresa para la protección. El escritorio administrado de Microsoft no garantiza los archivos que no se hayan sincronizado con OneDrive para la empresa, por lo que podrían perderse durante los intercambios de dispositivos o llamadas de soporte técnico que requieran un restablecimiento del dispositivo.<br><br>Aunque no es necesario, Microsoft Managed Desktop recomienda la migración de unidades de red asignadas a la solución de nube adecuada. Para obtener más información, vea [preparar unidades asignadas para el escritorio administrado por Microsoft](mapped-drives.md)
 
 Cuando esté listo para empezar con el escritorio administrado de Microsoft, póngase en contacto con el administrador de cuentas de Microsoft. 
 
@@ -49,9 +48,9 @@ Microsoft Managed Desktop requiere determinadas opciones de licencia para poder 
 |Opción de licencia |Disponible en *cualquiera* de estos productos de licencia |Cómo lo usa Microsoft Managed Desktop|
 |-------------|-------------|-------------|
 |Azure Active Directory Premium P2     |-Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P2|  Proporciona acceso a los servicios en la nube de Microsoft; permite que AutoPilot registre dispositivos      |
-|Microsoft Intune | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Microsoft Intune  |  Necesario para registrar dispositivos, implementar actualizaciones y administrar dispositivos       |
+|Microsoft Intune | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Microsoft Intune  |  Necesario para registrar dispositivos, implementar actualizaciones y administrar dispositivos       |
 |Windows 10 Enterprise  |-Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E3<br>-Windows 10 Enterprise E5 | Proporciona características empresariales de Windows 10       |
-|Protección contra amenazas avanzada de Microsoft Defender | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protección contra amenazas avanzada de Microsoft defender   |  Proporciona detección, supervisión, alertas y respuesta a amenazas  |
+|Protección contra amenazas avanzada de Microsoft Defender | -Microsoft 365 E5<br>-Complemento de seguridad Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protección contra amenazas avanzada de Microsoft defender   |  Proporciona detección, supervisión, alertas y respuesta a amenazas  |
 |Aplicaciones de Microsoft 365 para empresas  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| Activa la oficina y las herramientas de colaboración y productividad    |
 
 > [!TIP]

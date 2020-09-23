@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131739"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235423"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -45,7 +45,7 @@ Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para tod
   
 ## <a name="requirements"></a>Requirements
 
-La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para empresas (y que hayan iniciado sesión en Office con su identificador de organización) y tengan Exchange Online y los buzones activos de Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
+La implementación centralizada de complementos requiere que los usuarios usen Microsoft 365 apps for Enterprise o Microsoft 365 Business Premium (y hayan iniciado sesión en Office con su identificador de organización) y que tengan buzones de Exchange Online y Active Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
 Puede ver los requisitos específicos para Office y Exchange, o usar el[Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
@@ -61,11 +61,11 @@ La implementación centralizada no es compatible con lo siguiente:
 ### <a name="office-requirements"></a>Requisitos de Office
 
 - Para los complementos de Word, Excel y PowerPoint, los usuarios deben usar una de las siguientes opciones:
-  - En un dispositivo Windows, versión 1704 o posterior de Microsoft 365 apps for Enterprise.
+  - En un dispositivo Windows, versión 1704 o posterior de Microsoft 365 apps for Enterprise o Microsoft 365 Business Premium.
   - En un equipo Mac, versión 15,34 o posterior.
 
 - Para Outlook, los usuarios deben usar una de las siguientes opciones: 
-  - Versión 1701 o posterior de las aplicaciones de Microsoft 365 para empresas.
+  - La versión 1701 o posterior de Microsoft 365 apps for Enterprise o Microsoft 365 Business Premium.
   - La versión 1808 o posterior de Office Professional Plus 2019 u Office Standard 2019.
   - Versión 16.0.4494.1000 o posterior de Office Professional Plus 2016 (MSI) u Office Standard 2016 (MSI)\*
   - Versión 15.0.4937.1000 o posterior de Office Professional Plus 2013 (MSI) u Office Standard 2013 (MSI)\*

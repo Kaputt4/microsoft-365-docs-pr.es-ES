@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948213"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104459"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -58,9 +58,8 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 
 ::: moniker-end
 
-   
-2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. O bien, seleccione un widget de actividad de un servicio (como el correo electrónico o OneDrive) para ver más información. <br/>![Panel de utilización](../../media/usage-report-dashboard.png)
-  
+2. Haga clic en el botón **Ver más** en la tarjeta de vista rápida de actividad de un servicio (como el correo electrónico o OneDrive) para ver la página de detalles del informe. En las pestañas, se proporcionan diferentes informes para el servicio. <br/>![Panel de utilización](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>Quién puede ver los informes
 
 Usuarios que tengan los permisos siguientes:
@@ -147,7 +146,7 @@ Según la suscripción, estos son los informes disponibles.
 
 ::: moniker range="o365-worldwide"
 
-- [Actividad de usuario de Microsoft Teams para el Departamento de defensa y Government Community Cloud](microsoft-teams-user-activity.md)
+- [Actividad de usuario de Microsoft Teams para el gobierno de EE. UU.](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ Según la suscripción, estos son los informes disponibles.
 
 ::: moniker range="o365-worldwide"
 
-- [Uso de dispositivos de Microsoft Teams para el Departamento de defensa y Government Community Cloud](microsoft-teams-device-usage.md)
+- [Uso de dispositivos de Microsoft Teams para el gobierno de EE. UU.](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

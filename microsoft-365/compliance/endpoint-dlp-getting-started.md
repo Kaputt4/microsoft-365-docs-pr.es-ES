@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 08e2bd43b4337087b401244b7dc4cf80a26aaf06
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131674"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introducción a la prevención de pérdida de datos de Endpoint (versión preliminar)
 
@@ -90,9 +90,9 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
 
 Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, descargue el script apropiado y, luego, impleméntelo en esos dispositivos. Siga los pasos del [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
 
-Si ya tiene dispositivos incorporados en [Protección contra amenazas avanzada de Microsoft Defender (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), aparecerán ya en la lista de dispositivos administrados. Siga el [Procedimiento para dispositivos incorporados en MDATP](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp).
+Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de conexión (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), estos aparecerán en la lista de dispositivos administrados. Siga el [procedimiento con dispositivos incorporados en Microsoft Defender para punto de conexión](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint).
 
-### <a name="onboarding-devices"></a>Incorporación de dispositivos
+### <a name="onboarding-devices"></a>Incorporar dispositivos
 
 En este escenario de implementación, incorporará dispositivos que aún no hayan sido incorporados y, además, solo quiere supervisar y proteger elementos confidenciales frente al uso compartido no intencionado en dispositivos con Windows 10.
 
@@ -109,7 +109,7 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
 5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
 
    ![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de MDATP que coinciden con el paquete de implementación que seleccionó en el paso 5:
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
@@ -121,16 +121,16 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 > [!NOTE]
 > Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
 
-### <a name="with-devices-onboarded-into-mdatp"></a>Para dispositivos incorporados en MDATP
+### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Con dispositivos incorporados en Microsoft Defender para punto de conexión
 
-En este escenario, MDATP ya está implementada y existen puntos de conexión de los que se informa. Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puede seguir incorporando nuevos dispositivos a Endpoint DLP para ampliar la cobertura siguiendo el [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
+En este escenario, Microsoft Defender para punto de conexión ya está implementada y existen puntos de conexión de los que se informa. Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puede seguir incorporando nuevos dispositivos a Endpoint DLP para ampliar la cobertura siguiendo el [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
 2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
-3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a MDATP. ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión. ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
 4. Elija **Incorporación** si necesita incorporar dispositivos adicionales.
 5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
-6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de MDATP que coinciden con el paquete de implementación que seleccionó en el paso 5:
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles

@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7026dcc09207ce1b6fa911bf20683e4e642eee5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 757da7f0fb3089c358333ac5f49140d965476945
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397603"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235411"
 ---
 # <a name="contact-support-for-india"></a>Póngase en contacto con el soporte técnico para India
 
@@ -26,6 +26,8 @@ ms.locfileid: "44397603"
 
 ## <a name="phone-number"></a>Número de teléfono
 000 800 440 2038
+
+Gratuito local
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:

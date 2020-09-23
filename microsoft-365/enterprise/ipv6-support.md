@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumen: describe la compatibilidad de IPv6 en componentes de Microsoft Office 365 y en ofertas de administración pública de Office 365.'
-ms.openlocfilehash: c4ecd2ef26ecf660eb1d172b1951907724d2238a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693784"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235612"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Compatibilidad con IPv6 en servicios de Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Office 365 admite tanto IPv6 como IPv4; sin embargo, no todas las características de Office 365 están completamente habilitadas con IPv6. Esto significa que debe usar tanto IPv4 como IPv6 para conectarse a Office 365. Si va a filtrar el tráfico saliente a Office 365, la lista completa de direcciones IPv6 admitidas por Office 365 puede encontrarse en el artículo [office 365 URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md). Una vez configurada la red y se permiten las direcciones IPv6 adecuadas, puede descargar el [plan de pruebas de IPv6 de Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) desde el centro de descarga de Microsoft.
   
@@ -50,6 +50,10 @@ Si el programa que usa para conectarse a SharePoint Online admite IPv6, usará I
 ### <a name="skype-for-business-and-ipv6"></a>Skype empresarial e IPv6
 
 Tenga en cuenta que el IPv6 no es compatible con Skype empresarial y ya no se puede habilitar.
+
+### <a name="microsoft-teams-and-ipv6"></a>Microsoft Teams e IPV6
+
+El enrutamiento directo de Microsoft Teams solo admite IPv4. El servicio y el cliente de Microsoft Teams admiten tanto IPv4 como IPv6. Si desea controlar las comunicaciones a Microsoft Teams, use los intervalos de direcciones IP en [Office 365 URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md).
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection e IPv6
 
