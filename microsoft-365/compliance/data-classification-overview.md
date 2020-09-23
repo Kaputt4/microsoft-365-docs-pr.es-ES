@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131728"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
@@ -34,7 +34,7 @@ Como administrador de Microsoft 365 o administrador de cumplimiento, puede evalu
 - las ubicaciones de los datos confidenciales y retenidos.
 
 También puede administrar estas características en la página de clasificación de datos:
-- [clasificadores que se pueden entrenar](classifier-getting-started-with.md)
+- [clasificadores que se pueden entrenar](classifier-learn-about.md)
 - [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 
 Puede encontrar la clasificación de los datos en el **Centro de cumplimiento de Microsoft 365** o en el **Centro de seguridad de Microsoft 365** > **Clasificación** > **Clasificación de datos**.
@@ -137,4 +137,4 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 - [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-- [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
+- [Obtenga información sobre los clasificadores entrenables (versión preliminar)](classifier-learn-about.md)
