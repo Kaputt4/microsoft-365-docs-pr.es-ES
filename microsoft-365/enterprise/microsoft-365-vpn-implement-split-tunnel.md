@@ -3,7 +3,7 @@ title: Implementación del túnel dividido de VPN para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar el túnel dividido VPN para Office 365
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171427"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214895"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
@@ -37,7 +37,7 @@ Durante bastante tiempo, los modelos de VPN en los que todas las conexiones del 
 
 El uso de túneles forzados de VPN para conectarse a aplicaciones en la nube de distribución y rendimiento confidenciales es extremadamente deficiente, pero es posible que algunas empresas aceptasen el impacto negativo de esta práctica para mantener su método principal desde el punto de vista de la seguridad. A continuación se muestra un diagrama de ejemplo de este escenario:
 
-![Configuración del túnel dividido de VPN](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![Configuración del túnel dividido de VPN](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 Este problema ha estado creciendo durante varios años, en los que muchos clientes han estado informando de un cambio considerable en los patrones de tráfico de red. El tráfico que solía permanecer en local ahora se conecta a puntos de conexión de la nube externa. Muchos clientes de Microsoft han informado de que, en el pasado, alrededor del 80 % del tráfico de red se dirigía a un origen interno (representado por la línea de puntos en el diagrama anterior). En 2020 esa cifra ha caído aproximadamente a un 20 % o menos, debido a los desplazamientos de amplios volúmenes de cargas de trabajo a la nube. Estas tendencias no son infrecuentes para otras empresas. Con el tiempo, a medida que la nube avanza, el modelo anterior se convierte en algo cada vez más engorroso y menos sostenible, lo que limita la agilidad de la organización para adaptarse a un mundo que da prioridad a la nube.
 
@@ -95,7 +95,7 @@ En esta sección se describen los pasos sencillos que se deben seguir para migra
 
 En el siguiente diagrama se muestra cómo funciona la solución recomendada de túnel dividido de VPN:
 
-![Detalle de solución de túnel dividido de VPN](../media/vpn-split-tunneling/vpn-split-detail.png)
+![Detalle de solución de túnel dividido de VPN](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identificar los puntos de conexión que se deben optimizar
 
@@ -109,9 +109,6 @@ Las direcciones URL de esta categoría tienen las siguientes características:
 - Tienen ancho de banda o son sensibles a la latencia
 - Se les puede proporcionar elementos de seguridad necesarios directamente en el servicio en lugar de en línea en la red
 - Suponen aproximadamente entre el 70 % y el 80 % del volumen de tráfico en el servicio de Office 365
-
->[!NOTE]
->Microsoft se ha comprometido a suspender los cambios realizados en **Optimizar** los puntos de conexión de Office 365 hasta al menos el **30 de junio de 2020**, lo que permite que los clientes se centren en otros problemas y no en mantener una lista blanca de puntos de conexión una vez que los implementaran inicialmente. Este artículo se actualizará para reflejar todos los cambios futuros.
 
 Para obtener más información acerca de los puntos de conexión de Office 365 y cómo se clasifican y administran, vea el artículo [Administración de puntos de conexión de Office 365](managing-office-365-endpoints.md).
 
