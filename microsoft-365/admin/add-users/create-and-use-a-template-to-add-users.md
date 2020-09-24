@@ -2,8 +2,8 @@
 title: Crear y usar una plantilla para agregar usuarios
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración cuando se agregan varios usuarios.
-ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022150"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245862"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
@@ -43,13 +43,13 @@ Al crear una plantilla después de agregar un usuario, los valores que elija par
 - Ubicación de la licencia
 - Opciones de licencia
 - Opciones de aplicación
-- Role
+- Función
 - La mayoría de la información del perfil, como el **Perfil del trabajo**, el **Departamento**, la **Oficina**, el teléfono de la **Oficina**y la **dirección postal** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:
 
 - Nombre y apellidos
-- Nombre completo (DN)
+- Nombre para mostrar
 - Nombre de usuario
 - Opción para enviar la contraseña por correo electrónico y a quién se envía el correo electrónico de la contraseña
 - Número de teléfono móvil
