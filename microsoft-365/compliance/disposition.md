@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3ef98e07df37d429567534e252c15abee69d0044
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950394"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245941"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -118,11 +118,6 @@ Todas las acciones de disposición se pueden auditar y el texto de justificació
 El contenido que espera una revisión de disposición se elimina solo después de que un revisor elige eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive pasa a ser apto para el proceso de limpieza estándar descrito en [Cómo funciona la configuración de retención con el contenido en su lugar](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## <a name="disposition-of-records"></a>Eliminación de registros
-
-> [!NOTE]
-> Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive.
->
-> La implementación de la prueba de eliminación de registros en Exchange está casi completa cuando se quita esta nota.
 
 Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que ya se han eliminado, ya sea automáticamente o después de una revisión de disposición. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 

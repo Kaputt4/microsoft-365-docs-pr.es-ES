@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131640"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245907"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -198,7 +198,7 @@ Las condiciones que elija para la Directiva se aplican a las comunicaciones de l
 
 La siguiente tabla explica más sobre cada condición.
   
-|**Condición**|**Cómo usar esta condición**|
+|**Condition**|**Cómo usar esta condición**|
 |:-----|:-----|
 | **El contenido coincide con cualquiera de estos clasificadores** | Se aplican a la Directiva cuando se incluyen o excluyen clasificadores en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados deben configurarse por separado antes de que estén disponibles para esta condición. Solo se puede definir un clasificador como condición en una directiva. Para obtener más información acerca de la configuración de clasificadores, vea información sobre los clasificadores que se van a [capacitar (versión preliminar)](classifier-learn-about.md). |
 | **El contenido contiene cualquiera de estos tipos de información confidencial** | Se aplican a la Directiva cuando se incluyen o excluyen tipos de información confidencial en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados se pueden configurar por separado o como parte del proceso de asignación de condición. Cada tipo de información confidencial que elija se aplica por separado y solo uno de estos tipos de información confidencial se debe aplicar para que la Directiva se aplique al mensaje. Para obtener más información acerca de los tipos personalizados de información confidencial, vea [tipos personalizados de información confidencial](custom-sensitive-info-types.md). |
@@ -256,7 +256,7 @@ Las plantillas de notificaciones son plantillas de correo electrónico personali
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo Notify durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o más usuarios o grupos que envían el mensaje al usuario con una coincidencia de Directiva, seleccionada en Active Directory de la suscripción. |
 | **Direcciones CC y CCO** | No | Que los usuarios o grupos opcionales reciban una notificación de la coincidencia de la Directiva, seleccionada en Active Directory de la suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite texto o valores HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -283,9 +283,9 @@ Si desea crear más de un mensaje de correo electrónico basado en texto sencill
 
 Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los mensajes de alerta para obtener una investigación más rápida y acciones de corrección. El filtrado está disponible en las pestañas **pendientes** y **resueltas** para cada Directiva. Para guardar un filtro o un conjunto de filtros como una consulta de filtro guardada, se deben configurar uno o más valores como selecciones de filtro. En la tabla siguiente se describen los detalles del filtro:
 
-|**Filtro**|**Detalles**|
+|**Filter**|**Detalles**|
 |:-----|:-----|
-| **Date** | La fecha en la que un usuario de la organización envió o recibió el mensaje. |
+| **Fecha** | La fecha en la que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience por el día cuyos resultados desea obtener y terminen por el día siguiente. Por ejemplo, si desea filtrar los resultados para 9/20/2020, debería elegir un intervalo de fechas de filtrado de 9/20/2020-9/21/2020.|
 | **Clase File** | La clase del mensaje en función del tipo de mensaje, ya sea *mensaje* o *datos adjuntos*. |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloomberg, etc. Para obtener más información acerca de los tipos de elementos y las clases de mensajes comunes, vea [tipos de elementos y clases de mensajes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
@@ -293,7 +293,7 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Recipient** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
-| **Tamaño** | El tamaño del mensaje en KB. |
+| **Size** | El tamaño del mensaje en KB. |
 | **Asunto/título** | El asunto del mensaje o el título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, ya sea *dudosa*, *compatible*o *no compatible*. |
 | **Remitir a** | El nombre de usuario de la persona incluida como parte de una acción de elevación de mensajes. |

@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208102"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235576"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -71,7 +71,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ```
 
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
@@ -128,7 +128,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -187,7 +187,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
@@ -206,6 +206,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - OIEA
 
 ## <a name="australia-business-number"></a>Número de empresa de Australia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
+
 
 ### <a name="format"></a>Formato
 
@@ -248,7 +255,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
@@ -261,6 +268,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - businessno #
 
 ## <a name="australia-company-number"></a>Número de compañía de Australia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -302,7 +315,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
@@ -361,7 +374,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
@@ -501,7 +514,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
@@ -549,7 +562,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>   
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_passport"></a>Keyword_passport
 
@@ -623,7 +636,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_australia_tax_file_number"></a>Keyword_australia_tax_file_number
 
@@ -669,7 +682,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
 
@@ -689,6 +702,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - fuhrerschein republik osterreich
 
 ## <a name="austria-identity-card"></a>Tarjeta de identidad de Austria
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -723,7 +742,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
@@ -762,20 +781,38 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
-          <Match idRef="Keywords_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
 
-- passport number
-- número de pasaporte austriaco
-- n.º de pasaporte
-- reisepass
-- österreichisch reisepass
+- reisepassnummer
+- reisepasse
+- No-Reisepass 
+- Nr-Reisepass
+- Reisepass-NR
+- Passnummer
+- reisepässe
 
 ## <a name="austria-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Austria o identificación equivalente
 Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
@@ -819,7 +856,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
@@ -879,7 +916,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
@@ -906,6 +943,12 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - número de impuesto
  
 ## <a name="austria-value-added-tax"></a>Impuesto sobre el valor añadido de Austria
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -951,7 +994,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
@@ -1008,7 +1051,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -1068,7 +1111,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1128,7 +1171,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1179,7 +1222,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1234,7 +1277,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1328,7 +1371,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
@@ -1388,7 +1431,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
@@ -1470,7 +1513,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 **Keywords__belgium_eu_driver ' s_license_number**
 
@@ -1537,7 +1580,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
@@ -1626,23 +1669,42 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium__eu_passport_number" />
-          <Match idRef="Keywords_belgium_eu_passport_number" />
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
-- passport number
-- número de pasaporte belga
-- n.º de pasaporte
-- paspoort
+- numéro passeport
+- paspoort NR
+- paspoort-NR
 - paspoortnummer
+- paspoortnummers
+- Passeport
+- Passeport livre
+- Paso-NR
+- Passnummer
 - reisepass kein
-- reisepass
 
 ## <a name="belgium-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Bélgica o identificación equivalente
 Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
@@ -1682,7 +1744,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_belgium_eu_ssn_or_equivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
@@ -1706,6 +1768,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="belgium-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Bélgica
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -1752,7 +1820,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
     </Version>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
@@ -1815,7 +1883,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
@@ -1878,7 +1946,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
@@ -1955,7 +2023,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
@@ -2000,7 +2068,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>    
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
 - listas #
@@ -2022,6 +2090,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="bulgaria-uniform-civil-number"></a>Número civil uniforme de Bulgaria
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -2066,7 +2140,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
@@ -2136,26 +2210,40 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_bulgaria_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_bulgaria_eu_passport_number` . 
+- Palabra clave from  `Keywords_bulgaria_eu_passport_number` o `Keywords_eu_passport_number_common` found. 
 
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
-- passport number
-- número de pasaporte búlgaro
-- n.º de pasaporte
 - номер на паспорта
-
+- номер на паспорт
+- паспорт no
 
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
 
@@ -2204,7 +2292,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
@@ -2308,7 +2396,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
@@ -2481,7 +2569,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
@@ -2529,7 +2617,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
@@ -2597,7 +2685,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
@@ -2689,7 +2777,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_sin"></a>Keyword_sin
 
@@ -2764,7 +2852,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
@@ -2824,7 +2912,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
@@ -2885,7 +2973,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
@@ -3242,7 +3330,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
 
@@ -3292,7 +3380,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
@@ -3346,26 +3434,40 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_croatia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_croatia_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_croatia_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
-          <Match idRef="Keywords_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- passport number
-- número de pasaporte de croata
-- n.º de pasaporte
 - broj putovnice
-
+- br. Putovnice
+- br putovnice
    
 ## <a name="croatia-personal-identification-oib-number"></a>Número de identificación personal de Croacia (OIB)
 
@@ -3407,7 +3509,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
@@ -3483,7 +3585,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
@@ -3534,7 +3636,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
 
@@ -3553,6 +3655,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="cyprus-identity-card"></a>Tarjeta de identidad de Chipre
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -3582,7 +3690,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
@@ -3613,29 +3721,57 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_cyprus_eu_passport_number` busca contenido que coincide con el patrón.
-- Se encuentra una palabra clave de  `Keywords_cyprus_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_cyprus_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
-          <Match idRef="Keywords_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
-- passport number
-- número de pasaporte de Chipre
-- n.º de pasaporte
 - αριθμό διαβατηρίου
-
+- pasaportu
+- Αριθμός Διαβατηρίου
+- κυπριακό διαβατήριο
+- διαβατήριο #
+- διαβατήριο
+- αριθμός διαβατηρίου
+- Pasaport Kimliği
+- pasaport numarası
+- Pasaport no.
+- Αρ. Διαβατηρίου
 
 ## <a name="cyprus-tax-identification-number"></a>Número de identificación fiscal de Chipre
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -3675,7 +3811,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
@@ -3743,7 +3879,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
 
@@ -3782,27 +3918,43 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_czech_republic_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_czech_republic_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_czech_republic_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
-          <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- passport number
-- número de pasaporte Checo
-- n.º de pasaporte
 - Cestovní PAS
-- PAS
+- číslo pasu
+- cestovní pasu
+- passeport no
+- čísla pasu
 
 
 ## <a name="czech-personal-identity-number"></a>Número de identidad personal en Checo
@@ -3855,7 +4007,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Version>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
@@ -3950,7 +4102,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
@@ -4000,7 +4152,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
 
@@ -4039,31 +4191,44 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_denmark_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_denmark_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_denmark_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
-          <Match idRef="Keywords_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
-- passport number
-- número de pasaporte danés
-- n.º de pasaporte
-- PAS
 - pasnummer
+- Passeport n °
+- pasnumre
 
 
 ## <a name="denmark-personal-identification-number"></a>Número de identificación personal de Dinamarca
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de número de identificación nacional de la UE y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -4105,7 +4270,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
@@ -4224,7 +4389,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
 
@@ -4273,7 +4438,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 ninguno
 
@@ -4312,7 +4477,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
 
@@ -4332,6 +4497,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="estonia-personal-identification-code"></a>Código de identificación personal de Estonia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -4376,7 +4547,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
@@ -4432,26 +4603,39 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_estonia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_estonia_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_estonia_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Match idRef="Keywords_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-- passport number
-- número de pasaporte de estonio
-- n.º de pasaporte
-- Eesti kodaniku Pass
+Eesti kodaniku Pass Passi passinumbrid número de documento de número de documento dokumendi NR
 
 ## <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
 
@@ -4495,7 +4679,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
@@ -4992,7 +5176,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
 
@@ -5012,6 +5196,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="finland-european-health-insurance-number"></a>Número de seguro médico de Finlandia europeo
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -5044,7 +5234,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
 
@@ -5107,7 +5297,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 - ainutlaatuinen henkilökohtainen tunnus
 - henkilökohtainen tunnus
@@ -5180,22 +5370,44 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de Keyword_finland_passport_number.
+- Se encuentra una palabra clave de Keywords_eu_passport_number_common o Keyword_finland_passport_number.
 
 ```xml
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_finland_passport_number"/>
-     <Match idRef="Keyword_finland_passport_number"/>
-  </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+        </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
-- Keyword_finland_passport_number
-- Usuarios
-- Passi
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
+
+#### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
+
+- Suomalainen Passi
+- Passen numero
+- Passen numero. #
+- Passen numero #
+- Passen numero.
+- Passi #
+- número de pase
 
 
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Finlandia o identificación equivalente
@@ -5243,7 +5455,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_finland_eu_ssn_or_equivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
@@ -5306,7 +5518,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
@@ -5322,6 +5534,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="france-health-insurance-number"></a>Número de seguro de estado de Francia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -5357,7 +5575,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
@@ -5396,7 +5614,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
@@ -5448,7 +5666,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_passport"></a>Keyword_passport
 
@@ -5522,7 +5740,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
@@ -5601,7 +5819,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
@@ -5626,6 +5844,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="france-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Francia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -5670,7 +5894,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
@@ -5730,7 +5954,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
@@ -5867,7 +6091,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
@@ -5909,68 +6133,41 @@ Sí
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_german_passport encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de cualquiera de las cinco listas de palabras clave.
+- Se encuentra una palabra clave de `Keyword_german_passport` .
 - Se supera la suma de comprobación.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_german_passport_data encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de cualquiera de las cinco listas de palabras clave.
+- Se encuentra una palabra clave de `Keyword_german_passport` .
 - Se supera la suma de comprobación.
 
 ```xml
-<!-- Germany Passport Number -->
-<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="85">
+    <!-- German Passport Number -->
+    <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+    </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_german_passport"></a>Keyword_german_passport
 
-- reisepass
 - reisepasse
 - reisepassnummer
-- usuarios
-- passports
-
-#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
-
-- geburtsdatum
-- ausstellungsdatum
-- ausstellungsort
-
-#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
-
-No-Reisepass NR-Reisepass
-
-#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
-
-Reisepass-NR
-
-#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
-
-bnationalit. t
-
+- No-Reisepass 
+- Nr-Reisepass
+- Reisepass-NR
+- Passnummer
+- reisepässe
+- passeport no.
+- passeport no
 
 ## <a name="germany-tax-identification-number"></a>Número de identificación fiscal de Alemania
 
@@ -6017,7 +6214,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_germany_eu_tax_file_number"></a>Keywords_germany_eu_tax_file_number
 
@@ -6048,6 +6245,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="germany-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Alemania
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -6091,7 +6294,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
@@ -6135,7 +6338,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
 
@@ -6199,7 +6402,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
@@ -6234,28 +6437,49 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_greece_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_greece_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_greece_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
-          <Match idRef="Keywords_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
-- passport number
-- número de pasaporte griego
-- n.º de pasaporte
-- διαβατηριο
+- αριθμός διαβατηρίου
+- αριθμούς διαβατηρίου
+- αριθμός διαβατηριο
 
 ## <a name="greece-tax-identification-number"></a>Número de identificación fiscal de Grecia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -6286,7 +6510,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
@@ -6360,7 +6584,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
@@ -6439,7 +6663,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
 
@@ -6459,6 +6683,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="hungary-personal-identification-number"></a>Número de identificación personal de Hungría
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -6505,7 +6735,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
@@ -6540,26 +6770,40 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_hungary_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_hungary_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_hungary_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
-          <Match idRef="Keywords_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
-- passport number
-- número de pasaporte Húngaro
-- n.º de pasaporte
 - útlevél száma
-
+- Útlevelek száma
+- útlevél szám
 
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Hungría o identificación equivalente
 
@@ -6601,7 +6845,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
@@ -6625,6 +6869,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="hungary-tax-identification-number"></a>Número de identificación fiscal de Hungría
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -6670,7 +6920,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
@@ -6701,6 +6951,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="hungary-value-added-tax-number"></a>Número del impuesto sobre el valor añadido en Hungría
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -6742,7 +6998,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
@@ -6793,7 +7049,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
@@ -6843,7 +7099,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
   </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - Aadhar
@@ -6889,7 +7145,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
@@ -6936,9 +7192,9 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
-Ninguno
+None
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación Internacional de enfermedades (ICD-10-CM)
@@ -6977,7 +7233,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 Cualquier término del Diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la [clasificación internacional de enfermedades, décima revisión, modificación clínica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguro.
 
@@ -7018,7 +7274,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 Cualquier término del Diccionario de palabras clave Dictionary_icd_9_updated, que se basa en la [clasificación internacional de enfermedades, novena revisión, modificación clínica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca el término, no los códigos de seguro.
 
@@ -7078,7 +7334,7 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
@@ -7124,7 +7380,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
 
@@ -7167,29 +7423,45 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_ireland_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_ireland_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_ireland_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
-          <Match idRef="Keywords_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
-- passport number
-- número de pasaporte irlandés
-- n.º de pasaporte
-- PAS
-- usuarios
-- passeport
 - passeport numero
+- uimhreacha pasanna
+- uimhir PAS
+- fase uimhir
+- uimhreacha PAS
+- uimhir cárta
+- uimhir chárta
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de servicio público personal (PPS) de Irlanda
 
@@ -7240,7 +7512,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
@@ -7330,7 +7602,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
@@ -7372,7 +7644,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
@@ -7416,7 +7688,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
@@ -7424,6 +7696,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - patente di guida 
 
 ## <a name="italy-fiscal-code"></a>Código fiscal de Italia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -7466,7 +7744,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
@@ -7527,34 +7805,53 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_italy_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_italy_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_italy_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
-          <Match idRef="Keywords_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
-- número de pasaporte Italiano
-- repubblica italiana passaporto
-- passaporto
+- italiana passaporto
 - passaporto italiana
-- passport number
-- italiana passaporto numero
 - passaporto numero
-- numéro passeport italien
 - numéro passeport
-
+- Numero di Passaporto
+- número del Passaporto
+- passeport italien
 
 ## <a name="italy-value-added-tax-number"></a>Número de impuesto sobre el valor añadido de Italia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -7595,7 +7892,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
@@ -7658,7 +7955,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
@@ -7751,7 +8048,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
@@ -7783,6 +8080,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="japan-my-number---corporate"></a>Mi número de Japón-empresa
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -7821,7 +8124,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
@@ -7838,6 +8141,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="japan-my-number---personal"></a>Mi número-personal de Japón
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -7879,7 +8188,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
@@ -7925,7 +8234,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
@@ -7967,7 +8276,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
@@ -8006,7 +8315,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
@@ -8065,7 +8374,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
@@ -8109,7 +8418,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
 
@@ -8193,7 +8502,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
@@ -8286,27 +8595,44 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_latvia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_latvia_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_latvia_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Match idRef="Keywords_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
-- passport number
-- número de pasaporte de letón
-- n.º de pasaporte
-- pase numurs    
-
+- pase numurs
+- pase numur
+- pases numuri
+- pases NR
+- passeport no
+- n° du passeport
 
 ## <a name="lithuania-drivers-license-number"></a>Número de permiso de conducción de Lituania
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
@@ -8339,7 +8665,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
 
@@ -8358,6 +8684,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - vairuotojo pažymėjimas
 
 ## <a name="lithuania-personal-code"></a>Código de Lituania personal
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -8402,7 +8734,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
@@ -8459,27 +8791,41 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_lithuania_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_lithuania_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_lithuania_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
-          <Match idRef="Keywords_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-- passport number
-- número de pasaporte de lithunian
-- n.º de pasaporte
 - numeración paso
-
+- paso numeriai
+- paso NR
 
 ## <a name="luxemburg-drivers-license-number"></a>Número de permiso de conducción de Luxemburgo
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
@@ -8512,7 +8858,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
 
@@ -8531,6 +8877,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - fahrerlaubnis
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburgo número de identificación nacional (personas físicas)
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -8574,7 +8926,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
@@ -8630,7 +8982,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
 
@@ -8688,7 +9040,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_luxemburg_eu_tax_file_number"></a>Keywords_luxemburg_eu_tax_file_number
 
@@ -8769,7 +9121,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
@@ -8835,7 +9187,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
 
@@ -8854,6 +9206,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - liċenzja sewqan
 
 ## <a name="malta-identity-card-number"></a>Número de tarjeta de identidad de Malta
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -8892,7 +9250,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
@@ -8931,26 +9289,41 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_malta_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_malta_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
-          <Match idRef="Keywords_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
-- passport number
-- número de pasaporte de Maltés
-- n.º de pasaporte
 - numru tal-passaport
+- numri tal-passaport
+- NRU tal-passaport
 
 ## <a name="malta-tax-identification-number"></a>Número de identificación fiscal de Malta
 
@@ -9006,7 +9379,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
@@ -9078,7 +9451,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
   
@@ -9135,7 +9508,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
 
@@ -9187,7 +9560,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
@@ -9200,6 +9573,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - paspoortnummer
 
 ## <a name="netherlands-tax-identification-number"></a>Número de identificación fiscal de países bajos
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9235,7 +9614,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
@@ -9278,6 +9657,12 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 
 ## <a name="netherlands-value-added-tax-number"></a>Número del impuesto sobre el valor añadido en los países bajos
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9321,7 +9706,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
@@ -9334,6 +9719,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="new-zealand-bank-account-number"></a>Número de cuenta bancaria de Nueva Zelanda
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9378,7 +9769,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
@@ -9390,6 +9781,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="new-zealand-drivers-license-number"></a>Número de permiso de conducción de Nueva Zelanda
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9428,7 +9825,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_new_zealand_drivers_license_number"></a>Keyword_new_zealand_drivers_license_number
 
@@ -9500,6 +9897,12 @@ international driving permit
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>Número de ingresos interiores de Nueva Zelanda
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9541,7 +9944,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
@@ -9586,7 +9989,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
@@ -9597,6 +10000,12 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 
 ## <a name="new-zealand-social-wlefare-number"></a>Número de wlefare social de Nueva Zelanda
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9639,7 +10048,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
     </Version>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
@@ -9691,7 +10100,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
@@ -9738,7 +10147,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
@@ -9785,7 +10194,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
 
@@ -9834,7 +10243,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
@@ -9887,7 +10296,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
@@ -9935,7 +10344,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Version>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
@@ -9944,6 +10353,12 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Paszport
 
 ## <a name="poland-regon-number"></a>Número de REGON de Polonia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -9983,7 +10398,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
         </Pattern>
       </Entity>
 ```
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
@@ -10004,6 +10419,12 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 
 ## <a name="poland-tax-identification-number"></a>Número de identificación fiscal de Polonia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10034,7 +10455,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
@@ -10098,7 +10519,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
@@ -10159,7 +10580,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
 
@@ -10199,26 +10620,48 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_portugal_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_portugal_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_portugal_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
-          <Match idRef="Keywords_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-- passport number
-- número de pasaporte de Portugués
-- n.º de pasaporte
 - número Passaporte
+- pasaporte de Portugal
+- Portugués passeport
+- Portugués Passaporte
+- Passaporte n º
+- passeport n º
+- números de Passaporte
+- pasaportes de Portugal
+- número Passaporte
+- números Passaporte
 
 ## <a name="portugal-tax-identification-number"></a>Número de identificación fiscal de Portugal
 
@@ -10260,7 +10703,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
@@ -10323,7 +10766,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
 
@@ -10342,6 +10785,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Perm de conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Código numérico personal (CNP) de Rumania
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10380,7 +10829,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
@@ -10454,29 +10903,47 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_romania_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_romania_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_romania_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
-          <Match idRef="Keywords_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-- passport number
-- número de pasaporte de rumano
-- n.º de pasaporte
-- numărul pașaportului
-
+numărul pașaportului numarul pasaportului numerele pașaportului Pașaport NR
 
 ## <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia nacional
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10512,7 +10979,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
@@ -10533,6 +11000,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="russia-passport-number-international"></a>Número de pasaporte de Rusia internacional
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10566,7 +11039,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
@@ -10618,7 +11091,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
@@ -10669,7 +11142,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
@@ -10716,7 +11189,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
 
@@ -10735,6 +11208,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - vodičský preukaz
 
 ## <a name="slovakia-personal-number"></a>Número personal de Eslovaquia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10774,7 +11253,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
     </Version>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
@@ -10845,27 +11324,43 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovakia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_slovakia_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_slovakia_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
-          <Match idRef="Keywords_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- passport number
-- número de pasaporte de eslovaco
-- n.º de pasaporte
 - číslo pasu
-
+- čísla pasov
+- PAS č.
+- Passeport n °
+- n° passeport
 
 ## <a name="slovenia-drivers-license-number"></a>Número de permiso de conducción de Eslovenia
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
@@ -10898,7 +11393,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
 
@@ -10917,6 +11412,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - vozniško dovoljenje
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Eslovenia número de ciudadanos maestros únicos
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10957,7 +11458,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
@@ -11012,28 +11513,52 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovenia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_slovenia_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_slovenia_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
-          <Match idRef="Keywords_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- passport number
-- número de pasaporte de esloveno
-- n.º de pasaporte
 - številka potnega lista
+- potek veljavnosti
+- lista potni #
+- rojstva de datos de referencia
+- lista potni
+- številke potnih listov
 
 ## <a name="slovenia-tax-identification-number"></a>Número de identificación fiscal de Eslovenia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -11071,7 +11596,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
@@ -11135,7 +11660,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
@@ -11187,7 +11712,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
@@ -11231,7 +11756,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
 
@@ -11271,6 +11796,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - conducir del cuaderno
 
 ## <a name="spain-dni"></a>DNI de España
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -11318,7 +11849,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
@@ -11367,31 +11898,50 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_spain_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_spain_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_spain_eu_passport_number` found. 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
-          <Match idRef="Keywords_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- número de pasaporte
+- passportnumbers
+- números de pasaporte
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- usuarios
-- pasaporte de España
-- libro de Passport
-- passport number
-- n.º de pasaporte
 - libreta pasaporte
 - número pasaporte
 - españa pasaporte
-- pasaporte
+- números de pasaporte
+- número de pasaporte
+- números pasaporte
+- pasaporte no
+- Passeport n °
+- n° passeport
+- pasaporte no.
+- pasaporte n °
+- pasaporte de España
 
 
 ## <a name="spain-social-security-number-ssn"></a>Número de la seguridad social de España (NSS)
@@ -11429,11 +11979,17 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
-Ninguno
+None
 
 ## <a name="spain-tax-identification-number"></a>Número de identificación fiscal de España
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -11503,7 +12059,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
@@ -11580,7 +12136,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
@@ -11649,7 +12205,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity> 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 **Keywords_sweden_eu_driver ' s_license_number**
 
@@ -11710,7 +12266,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
     </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
@@ -11768,7 +12324,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
@@ -11846,7 +12402,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
@@ -11865,6 +12421,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Número de identificación fiscal de Suecia
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -11911,7 +12473,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
@@ -11975,7 +12537,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
@@ -12012,7 +12574,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - code identificateur de banque 
 
 
-## <a name="swiss-ssn-ahv-number"></a>Número de AHV de SSN suizo
+## <a name="switzerland-ssn-ahv-number"></a>Número AHV de SSN de Suiza
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -12056,7 +12624,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
@@ -12123,7 +12691,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
@@ -12177,7 +12745,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
@@ -12223,7 +12791,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
@@ -12279,7 +12847,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
@@ -12326,7 +12894,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
@@ -12372,7 +12940,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_uk_drivers_license"></a>Keyword_uk_drivers_license
 
@@ -12424,7 +12992,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
@@ -12477,7 +13045,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
@@ -12560,7 +13128,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
@@ -12594,6 +13162,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
     
 ## <a name="uk-unique-taxpayer-reference-number"></a>RU Número de referencia del contribuyente único
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -12624,7 +13198,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
@@ -12677,7 +13251,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
@@ -12756,7 +13330,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
@@ -12929,7 +13503,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
@@ -13017,7 +13591,7 @@ Una directiva DLP está segura al 55% de que este tipo de información confidenc
   </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
@@ -13064,7 +13638,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_passport"></a>Keyword_passport
 
@@ -13088,6 +13662,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>País de pasaporte de Ucrania
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -13117,7 +13697,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
@@ -13130,6 +13710,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="ukraine-passport-international"></a>Internacional Ucrania Passport
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -13161,7 +13747,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
