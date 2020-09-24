@@ -14,6 +14,8 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Planificación de la seguridad y el cumplimiento en Office 365
       href: plan-for-security-and-compliance.md
+    - name: Extensibilidad de cumplimiento
+      href: compliance-extensibility.md
 - name: Administrar riesgos internos
   items:
     - name: Administración de riesgos internos
@@ -258,6 +260,8 @@
               href: retention-policies-sharepoint.md
             - name: Retention para Microsoft Teams
               href: retention-policies-teams.md
+            - name: Retención para Yammer
+              href: retention-policies-yammer.md
             - name: Retention para Exchange
               href: retention-policies-exchange.md
         - name: Empezar a usar la retención
@@ -310,8 +314,52 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: Datos de los distintivos físicos
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Conectores de datos Globanet
+          items:
+            - name: EML
+              href: archive-eml-data.md
+            - name: Conectar FX
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Margen de demora
+              href: archive-slack-data.md
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Texto delimitado
+              href: archive-text-delimited-data.md
+            - name: Teams de Webex
+              href: archive-webexteams-data.md
+            - name: Área de trabajo de Facebook
+              href: archive-workplacefromfacebook-data.md
+            - name: Reuniones de Zoom
+              href: archive-zoommeetings-data.md
+            - name: Margen de demora
+              href: archive-slack-data.md
+            - name: Reuniones de Zoom
+              href: archive-zoommeetings-data.md
+        - name: Conectores de datos de telemensaje
+          items:
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: Red AT&T
+              href: archive-att-network-archiver-data.md
+            - name: Red Bell
+              href: archive-bell-network-data.md
+            - name: Número de empresa
+              href: archive-enterprise-number-data.md
+            - name: Red O2
+              href: archive-o2-network-data.md
+            - name: Red TELUS
+              href: archive-telus-network-data.md
+            - name: Red Verizon
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: Trabajar con un socio para archivar datos de terceros
           href: work-with-partner-to-archive-third-party-data.md
         - name: Buscar datos de terceros
@@ -794,31 +842,30 @@
       href: alert-policies.md
 - name: Administración de los riesgos de cumplimiento
   items:
-    - name: Portal de confianza del servicio de Microsoft
-      href: get-started-with-service-trust-portal.md
-    - name: Puntuación de cumplimiento y Administrador de cumplimiento (versión preliminar)
+    - name: Administrador de cumplimiento
       items:
-        - name: Puntuación de cumplimiento (versión preliminar)
-          href: compliance-score.md
-        - name: Configurar la Puntuación de cumplimiento
-          href: compliance-score-setup.md
-        - name: Personalizar la Puntuación de cumplimiento con evaluaciones
-          href: compliance-score-assessments.md
-        - name: Asignar y realizar trabajo con acciones de mejora
-          href: compliance-score-improvement-actions.md
-        - name: Cómo se calcula la puntuación
-          href: compliance-score-methodology.md
+        - name: Obtenga más información sobre el Administrador de cumplimiento
+          href: compliance-manager.md
+        - name: Inicio rápido del Administrador de cumplimiento
+          href: compliance-manager-quickstart.md
+        - name: Introducción al Administrador de cumplimiento
+          href: compliance-manager-setup.md
+        - name: Compilar y administrar evaluaciones
+          href: compliance-manager-assessments.md
+        - name: Trabajar con plantillas de evaluación
+          href: compliance-manager-templates.md
+        - name: Lista de plantillas del Administrador de cumplimiento
+          href: compliance-manager-templates-list.md
+        - name: Asignar y completar las acciones de mejora
+          href: compliance-manager-improvement-actions.md
+        - name: Cómo se calcula su puntuación de cumplimiento
+          href: compliance-score-calculation.md
         - name: Preguntas más frecuentes (P+F)
-          href: compliance-score-faq.md
-        - name: Administrador de cumplimiento (versión preliminar)
-          href: compliance-manager-overview.md
-          items:
-            - name: Novedades del Administrador de cumplimiento (versión preliminar)
-              href: compliance-manager-release-notes.md
-            - name: Trabajar con el Administrador de cumplimiento (versión preliminar)
-              href: working-with-compliance-manager.md
-            - name: Administrador de cumplimiento (clásico)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
+          href: compliance-manager-faq.md
+        - name: Administrador de cumplimiento (clásico)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
+    - name: Portal de confianza del Servicio Microsoft
+      href: get-started-with-service-trust-portal.md
     - name: Herramienta de solicitudes de interesados RGPD
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: Information Protection de Office 365 para RGPD
