@@ -17,43 +17,64 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817113"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198929"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Para declarar documentos y correos electrónicos como un registro, use las [etiquetas de retención](retention.md#retention-labels) que marcan elementos como un registro. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro.
+Para declarar documentos y correos electrónicos como [registros](records-management.md#records), use las [etiquetas de retención](retention.md#retention-labels) que marcan el contenido como **registro** o como **registro normativo**.
+
+> [!NOTE]
+> Actualmente, los registros normativos se encuentran en versión preliminar.
+
+Si no está seguro de si debe usar un registro o un registro normativo, consulte [Comparar las restricciones de las acciones que se permiten o se bloquean](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Si necesita usar registros normativos, primero tiene que ejecutar un comando de PowerShell, como se describe en la sección siguiente.
+
+Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas de retención (de modo que los usuarios y administradores puedan aplicarlas al contenido), o bien, en el caso de las etiquetas que marcan elementos como registros (no como registros normativos), podrá aplicarlas automáticamente al contenido que desee declarar como registro.
+
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Cómo mostrar la opción para marcar contenido como un registro normativo
+
+>[!NOTE] 
+> El procedimiento siguiente es una acción auditable, con el registro **Opción de registro normativo habilitado para las etiquetas de retención** en la sección [Directivas de retención y actividades de etiqueta de retención](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) del registro de auditoría.
+
+De forma predeterminada, la opción de etiqueta de retención para marcar contenido como un registro normativo no se muestra en el asistente de etiquetas de retención. Para mostrar esta opción, primero tiene que ejecutar un comando de PowerShell:
+
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+2. Ejecute el siguiente cmdlet:
+    
+    ```powershell
+    Set-RegulatoryComplianceUI -Enabled $true
+    ````
+    No se pide confirmación y la configuración surte efecto inmediatamente.
+
+Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas de retención, puede ocultarla de nuevo ejecutando el mismo cmdlet con el valor **false**: `Set-RegulatoryComplianceUI -Enabled $false` 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurar etiquetas de retención para declarar registros
 
-Cuando cree o configure una etiqueta de retención, seleccione la opción para marcar elementos como un registro.
+Al crear o editar una etiqueta de retención de la solución **administración de registros** del Centro de cumplimiento de Microsoft 365, tiene la opción de marcar los elementos como un registro. Si ha ejecutado el comando de PowerShell de la sección anterior, como alternativa puede marcar los elementos como un registro normativo.
 
->[!NOTE] 
-> La opción para marcar el contenido como un registro no está disponible al crear o configurar las etiquetas de retención de **Gobierno de la información** en el Centro de cumplimiento de Microsoft 365. En su lugar, debe usar **Administración de registros**.
+Por ejemplo:
 
-Siga estos pasos para crear una nueva etiqueta de retención que marque el contenido como un registro:
+![Configurar una etiqueta de retención para marcar contenido como un registro o como un registro normativo](../media/recordversioning6.png)
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, seleccione **Crear una etiqueta**.
+Ahora puede aplicar esta etiqueta de retención a documentos de SharePoint o OneDrive y a correos electrónicos de Exchange, según sea necesario. 
 
-2. En la página **Definir la configuración de retención** del asistente, elija la opción para marcar elementos como registros:
-    
-   ![Seleccionar la configuración de retención para marcar elementos como registro](../media/recordversioning6.png)
+Instrucciones completas:
 
-3. Aplique la etiqueta de retención a los documentos de SharePoint o OneDrive y los correos electrónicos de Exchange, según sea necesario. Para obtener instrucciones, consulte:
-    
-    - [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
-    
-    - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
+- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+
+- [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md) (no es compatible con los registros normativos)
+
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Aplicar una etiqueta de retención configurada al contenido
 
-Cuando las etiquetas de retención que marcan el contenido como un registro se ponen a disposición de los usuarios para que las usen en aplicaciones:
+Cuando las etiquetas de retención que marcan elementos como un registro o como un registro normativo se ponen a disposición de los usuarios para aplicarlas a aplicaciones:
 
 - Para Exchange, todos los usuarios con acceso de escritura al buzón pueden aplicar las etiquetas. 
 - Para SharePoint y OneDrive, cualquier usuario del grupo predeterminado de miembros (con nivel de permisos de contribución) puede aplicar las etiquetas.

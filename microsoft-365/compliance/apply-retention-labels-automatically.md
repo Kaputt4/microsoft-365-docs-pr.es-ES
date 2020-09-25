@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196383"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Este escenario no es compatible con los [registros normativos](records-management.md#records).
 
 Una de las características más eficaces de las [etiquetas de retención](retention.md) es la capacidad de aplicarlas automáticamente al contenido que coincide con condiciones especificadas. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de retención. Microsoft 365 realiza el trabajo por ellos.
   
@@ -39,6 +42,9 @@ Las etiquetas de retención auto aplicadas son poderosas porque:
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
     
 Las etiquetas de retención se pueden aplicar a contenido automáticamente cuando dicho contenido contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores que se puedan entrenar](classifier-get-started-with.md).
+
+> [!TIP]
+> Ahora, en la versión preliminar, puede utilizar las propiedades que permiten búsquedas para identificar las [grabaciones de reuniones de Teams](#microsoft-teams-meeting-recordings).
 
 Los procesos para aplicar automáticamente una etiqueta de retención se basan en estas condiciones:
 
@@ -80,7 +86,7 @@ Las instrucciones de navegación dependerán de si está usando o no la [adminis
     
     - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md) 
     
-    - Para usar la etiqueta de retención para declarar un [registro](records-management.md#records), habilite la opción **Marcar elementos como registro**.
+    - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico**y luego, seleccione **Finalizado** para iniciar el Asistente para la creación de etiquetas automáticas, que lo llevará directamente al paso 2 del procedimiento siguiente.
 
@@ -162,6 +168,29 @@ Consultas de ejemplos:
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### <a name="microsoft-teams-meeting-recordings"></a>Grabaciones de reuniones de Microsoft Teams
+
+> [!NOTE]
+> La posibilidad de conservar y eliminar las grabaciones de reuniones de Teams se está implementando en la versión preliminar y no funcionará antes de guardar las grabaciones en OneDrive o SharePoint. Para más información, consulte [Usar OneDrive para la Empresa y SharePoint Online o Stream para las grabaciones de reuniones](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+
+Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave**:
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+En el caso de esta etiqueta de retención, también tiene que publicarla en los sitios de SharePoint o en las cuentas de OneDrive de los usuarios relevantes mediante la creación de una directiva de etiqueta. La mayoría de las veces, las grabaciones de reuniones se guardan en OneDrive, pero, en el caso de las reuniones de canal, las grabaciones se guardan en SharePoint.
+
+Cuando haya guardado la directiva de aplicación automática:
+
+1. Seleccione la pestaña **Directivas de etiqueta** > **Publicar etiquetas**
+
+2. Cuando se le pida que seleccione una etiqueta, elija la etiqueta que haya creado con la consulta KQL para identificar las grabaciones de reuniones de Teams.
+
+3. Cuando se le pida seleccionar la ubicación, elija **Sitios de SharePoint** y **Cuentas de OneDrive**. A continuación, puede mantener el valor predeterminado de **Todo** o especificar ubicaciones individuales. Por ejemplo, puede incluir o excluir cuentas de OneDrive específicas.
+
+4. Complete el asistente y guarde esta directiva de etiqueta.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
