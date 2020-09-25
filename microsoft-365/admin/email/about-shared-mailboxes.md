@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón de correo compartido.
-ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f6feae1662093ffea2537a62c5e8fdf28c622166
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780318"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269354"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -50,7 +50,7 @@ Antes [de crear un buzón compartido](create-a-shared-mailbox.md), aquí le indi
 
 - **Roles de administrador:** Los usuarios con roles de administrador global o de administrador de Exchange pueden crear buzones compartidos.
 
-- **Requisitos de suscripción:** Para crear un buzón compartido, necesita suscribirse a un plan de 365 para la empresa de Microsoft que incluya correo electrónico (el servicio de Exchange Online). La suscripción a Microsoft 365 apps for Business no incluye correo electrónico; Microsoft 365 Business Standard.
+- **Requisitos de suscripción:** Para crear un buzón compartido, necesita suscribirse a un plan de 365 para la empresa de Microsoft que incluya correo electrónico (el servicio de Exchange Online). La suscripción a Microsoft 365 apps for Business no incluye correo electrónico. Microsoft 365 Business Standard incluye correo electrónico.
 
 - **Iniciar sesión:** Un buzón compartido no está diseñado para el inicio de sesión directo por parte de su cuenta de usuario asociada. Siempre debe bloquear el inicio de sesión para la cuenta de buzón de correo compartido y mantenerla bloqueada.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6a8ab25a1bce4355e63482b8450412884a9f0faf
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950797"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269410"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -118,7 +118,7 @@ En la sección **asignaciones** :
 
 Aplique la configuración del nivel de riesgo en función del nivel de protección de destino.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
 |:---------|:-----|:----|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alta, media, baja|Compruebe los tres.|
@@ -127,7 +127,7 @@ Aplique la configuración del nivel de riesgo en función del nivel de protecci�
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |:---|:---------|:-----|:----|
 |Conceder|**Conceder acceso**| | Select |
 |||**Requerir multi-factor Authentication**| Check |
@@ -158,7 +158,7 @@ En la sección **asignaciones** :
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |:---|:---------|:-----|:----|
 |Conceder|**Bloquear acceso**| | Select |
 ||**Exigir todos los controles seleccionados** ||Select|
@@ -170,6 +170,8 @@ Por último, seleccione **activado** para **Habilitar Directiva**y, a continuaci
 
 Considere la posibilidad de usar la herramienta [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la Directiva.
 
+Para Exchange Online, puede usar directivas de autenticación para [deshabilitar la autenticación básica](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), lo que obliga a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
+
 ## <a name="high-risk-users-must-change-password"></a>Los usuarios de riesgo alto tienen que cambiar la contraseña
 
 Para asegurarse de que todas las cuentas de usuarios de alto riesgo se vean obligadas a realizar un cambio de contraseña al iniciar sesión, debe aplicar la siguiente directiva.
@@ -178,7 +180,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la sección **asignaciones** :
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |:---|:---------|:-----|:----|
 |Usuarios|Incluir|**Todos los usuarios**|Select|
 |Riesgo de usuario| **Alto**||Select|
@@ -186,9 +188,9 @@ En la sección **asignaciones** :
 
 En la segunda sección **asignaciones** :
 
-| Tipo | Propiedades | Valores                  | Acción |
+| Tipo | Propiedades | Valores                  | Action |
 |:-----|:-----------|:------------------------|:------|
-| Access | **Permitir acceso** |  | Select  |
+| Acceso | **Permitir acceso** |  | Select  |
 |      |     | **Exigir cambio de contraseña** | Check  |
 |||||
 
@@ -282,7 +284,7 @@ Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y ver
 
 Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows**, vea esta tabla.
 
-|Propiedades|Valor|Acción|
+|Propiedades|Valor|Action|
 |:---------|:-----|:----|
 |Requerir BitLocker|Obligatoria| Select |
 |Requerir el arranque seguro para habilitarse en el dispositivo|Obligatoria| Select |
@@ -295,7 +297,7 @@ Para el **cumplimiento del administrador de configuración**, seleccione **reque
 
 Para la **seguridad del sistema**, vea esta tabla.
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |:---|:---------|:-----|:----|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
 ||Contraseñas sencillas|Bloquear|Select|
@@ -317,7 +319,7 @@ Para la **seguridad del sistema**, vea esta tabla.
 
 **ATP de Microsoft Defender**
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |:---|:---------|:-----|:----|
 |Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano|Select|
 |||||

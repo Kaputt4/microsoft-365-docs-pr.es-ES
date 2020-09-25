@@ -3,7 +3,7 @@ title: Office 365 puntos de conexión altos de GCC U.S. Government
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/28/2020
+ms.date: 08/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: En este artículo, encontrará los extremos a los que se puede llegar para los clientes con los planes altos de Office 365 U.S. Government GCC.
 hideEdit: true
-ms.openlocfilehash: 6c7424b487f107d1459996ac9ee6e880e11b08c5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 150ad8a660b63c43a560d15547cec9ffeb57422b
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693636"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269570"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 puntos de conexión altos de GCC U.S. Government
 
@@ -37,7 +37,7 @@ Office 365 requiere conectividad a Internet. Los puntos de conexión a continuac
   
 |||
 |:-----|:-----|
-|**Última actualización:** 07/28/2020- ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Última actualización:** 08/28/2020- ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Descargar:** lista completa en [formato JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Comience con la administración de los puntos de conexión de [Office 365](managing-office-365-endpoints.md) para comprender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de puntos de conexión se actualizan al principio de cada mes con nuevas direcciones IP y direcciones URL publicadas 30 días antes de estar activo. Esto permite a los clientes que aún no tienen actualizaciones automatizadas para completar sus procesos antes de que sea necesaria una nueva conectividad. Los puntos de conexión también se pueden actualizar durante el mes si es necesario para resolver las escalaciones de soporte, los incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que se muestran en esta página se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para tener acceso a estos datos, debe ir directamente al [servicio Web](microsoft-365-ip-web-service.md) .
 

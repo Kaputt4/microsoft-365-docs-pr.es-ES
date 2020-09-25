@@ -3,7 +3,7 @@ title: Direcciones URL e intervalos de direcciones IP para Office 365 operado po
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/08/2020
+ms.date: 08/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo se enumeran las direcciones URL y los intervalos de direcciones IP para Office 365 cuando se opera por 21Vianet en China.
 hideEdit: true
-ms.openlocfilehash: dd833ded674ded9e8f291a72f93e61eda2b9aeb8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 79dbd32b26c8ad81e183fb659ad7abc38ec07828
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693781"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269558"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>Direcciones URL e intervalos de direcciones IP para Office 365 operado por 21Vianet
 
@@ -38,7 +38,7 @@ ms.locfileid: "46693781"
   
 |||
 |:-----|:-----|
-|**Última actualización:** 07/08/2020- ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS|**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Última actualización:** 08/28/2020- ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [suscripción de registro de cambios](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS|**Descargue:** todos los destinos obligatorios y opcionales en una lista de [formato JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Comience con [Administrar los puntos de conexión de Office 365](managing-office-365-endpoints.md) si desea entender nuestras recomendaciones para administrar la conectividad de red con estos datos. Los datos de puntos de conexión se actualizan al principio de cada mes con las nuevas direcciones IP y URL publicadas 30 días antes de su activación. Esto permite que los clientes que todavía no han automatizado las actualizaciones completen los procesos antes de que se requiera una nueva conectividad. Los puntos de conexión también pueden actualizarse durante el mes si fuera necesario para tratar escalaciones de soporte técnico, incidentes de seguridad u otros requisitos operativos inmediatos. Los datos que aparecen en la página siguiente se generan a partir de los servicios web basados en REST. Si usa un dispositivo de red o un script para obtener acceso a estos datos, vaya directamente a [Servicio web](microsoft-365-ip-web-service.md).
 

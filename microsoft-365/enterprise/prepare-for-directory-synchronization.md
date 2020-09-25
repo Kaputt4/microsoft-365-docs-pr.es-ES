@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: 790ea72879a40681447a2ca2ef883c7c601ba475
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546691"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269422"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Microsoft 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Entre las ventajas de la identidad híbrida y la sincronización de directorios de su organización se incluyen:
 
