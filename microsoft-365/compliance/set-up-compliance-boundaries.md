@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que puede buscar un administrador de exhibición de documentos electrónicos en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8aaa1128788ba8f2f4ece7fb54f886595770c01
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357772"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269399"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de eDiscovery
 
@@ -55,7 +55,7 @@ Este es el proceso para configurar los límites de cumplimiento:
 [Paso 4: crear un filtro de permisos de búsqueda para aplicar el límite de cumplimiento](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Paso 5: crear un caso de exhibición de documentos electrónicos para investigaciones dentro de una agencia](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Paso 1: identificar un atributo de usuario para definir las agencias
 
 El primer paso es elegir un atributo de Azure Active Directory que se usará para definir las agencias. Este atributo se usa para crear el filtro de permisos de búsqueda que limita a un administrador de exhibición de documentos electrónicos para buscar solo las ubicaciones de contenido de los usuarios que tienen asignado un valor específico para este atributo. Por ejemplo, supongamos que contoso decide usar el atributo **Department** . El valor de este atributo para los usuarios de la subsidiaria del cuarto café sería  `FourthCoffee`  y el valor para los usuarios de la subsidiaria de Coho Winery sería `CohoWinery` . En el paso 4, use este  `attribute:value`  par (por ejemplo, *Department: fourthcoffee*) para limitar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar. 

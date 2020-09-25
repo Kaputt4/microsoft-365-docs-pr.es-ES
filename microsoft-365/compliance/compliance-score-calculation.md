@@ -15,17 +15,19 @@ search.appverid:
 - MET150
 description: Comprenda cómo Microsoft Compliance Manager calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204517"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262273"
 ---
 # <a name="compliance-score-calculation"></a>Cálculo de puntuación de cumplimiento
 
+**En este artículo:** Obtenga información sobre cómo calcula el administrador de cumplimiento una puntuación de cumplimiento para la organización. En este artículo se explica cómo **interpretar su puntuación**, qué incluye la **evaluación de línea base de protección de datos** , la **supervisión continua**y **cómo se administran y se puntuan los distintos tipos de acciones**.
+
 > [!IMPORTANT]
-> Las recomendaciones del administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de cliente según su entorno de reglamentación. Estos servicios están sujetos a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también la [Guía de licencias de Microsoft 365 por seguridad y cumplimiento normativo](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de cliente según su entorno de reglamentación. Estos servicios están sujetos a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también la [Guía de licencias de Microsoft 365 por seguridad y cumplimiento normativo](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="how-to-read-your-compliance-score"></a>Cómo leer la puntuación de cumplimiento
 
@@ -108,13 +110,13 @@ A las acciones se les asigna un valor de puntuación en función de si son oblig
   
 Cada acción tiene asignado un valor en el administrador de cumplimiento según el riesgo que representa:
 
-|**Tipo**|**Puntuación asignada**|
+|**Type**|**Puntuación asignada**|
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
 | Discrecional preventivo | 9  |
 | Detective obligatorio | 3 |
-| Discrecionales de detectives | 1  |
+| Discrecionales de detectives | 1 |
 | Obligatorio de corrección | 3 |
-| Discrecionales correctivas | 1  |
+| Discrecionales correctivas | 1 |
   
 ![Valores del punto de acción del administrador de cumplimiento](../media/compliance-score-action-scoring.png "Valores del punto de acción del administrador de cumplimiento")

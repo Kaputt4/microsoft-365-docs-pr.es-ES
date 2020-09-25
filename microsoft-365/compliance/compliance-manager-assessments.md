@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en el administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de las regulaciones y las certificaciones que son importantes para su organización.
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204541"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262295"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Creación y administración de evaluaciones en el administrador de cumplimiento
 
@@ -206,6 +206,9 @@ Para eliminar una evaluación, siga los pasos que se indican a continuación:
 3. Aparecerá una ventana en la que se le pedirá que confirme que desea eliminar la evaluación de forma permanente. Seleccione **eliminar evaluación** para cerrar la ventana. Recibirá una ventana de confirmación de que la evaluación se eliminó del administrador de cumplimiento.
 
 Si elimina la única evaluación en un grupo, ese grupo también se elimina del administrador de cumplimiento.
+
+> [!NOTE]
+> No puede eliminar todas las evaluaciones. Las organizaciones necesitan al menos una evaluación para que el administrador de cumplimiento funcione correctamente. Si la evaluación que desea eliminar es la única, agregue otra evaluación antes de eliminar la otra evaluación.
 
 ## <a name="monitor-assessment-progress-and-controls"></a>Supervisión del progreso y los controles de la evaluación
 

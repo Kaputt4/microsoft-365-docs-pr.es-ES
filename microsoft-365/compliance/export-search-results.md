@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97073c95af986afcbe932dfc2b5bc840d5e2dc5c
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357938"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269601"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -71,7 +71,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
     Agregue las líneas siguientes al archivo de  *machine.config*  en algún lugar entre las  `<configuration>`  `</configuration>` etiquetas y. Asegúrese de reemplazar  `ProxyServer` y  `Port` con los valores correctos para su organización; por ejemplo,  `proxy01.contoso.com:80` . 
     
-    ```text
+    ```xml
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
          <proxy proxyaddress="https://ProxyServer :Port " 
@@ -157,25 +157,27 @@ Como se ha explicado anteriormente, puede aumentar la velocidad de descarga conf
 2. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 5 para descargar los resultados de la búsqueda.
     
     > [!NOTE]
-    > Dado que cualquier persona puede instalar e iniciar la herramienta de exportación de exhibición de documentos electrónicos y después usar esta clave para descargar los resultados de búsqueda, asegúrese de tomar precauciones para proteger esta clave como protegería las contraseñas u otra información relacionada con la seguridad.  
+    > Dado que cualquier persona puede instalar e iniciar la herramienta de exportación de exhibición de documentos electrónicos y después usar esta clave para descargar los resultados de búsqueda, asegúrese de tomar precauciones para proteger esta clave como protegería las contraseñas u otra información relacionada con la seguridad. 
   
 3. Haga clic en **Descargar resultados**.
-    
-4. Si se le pide que instale la **herramienta de exportación de exhibición**de documentos electrónicos, haga clic en **instalar**.
-    
-5. En la **Herramienta de exportación de exhibición de documentos electrónicos**, pegue la clave de exportación que ha copiado en el paso 2 en el cuadro correspondiente.
-    
-6. Haga clic en **Examinar** para especificar la ubicación en la que desea descargar los archivos de los resultados de la búsqueda. 
-    
-    > [!NOTE]
-    > Debido a la gran cantidad de actividad de disco (lecturas y escrituras), debe descargar los resultados de la búsqueda en una unidad de disco local; no descárguelos en una unidad de red asignada ni en otra ubicación de red. 
-  
-1. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo. 
-    
-    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. 
-    
 
+4. Si se le pide que instale la **herramienta de exportación de exhibición**de documentos electrónicos, haga clic en **instalar**.
+
+5. En la **herramienta de exportación de exhibición**de documentos electrónicos, haga lo siguiente:
+
+   ![Herramienta de exportación de exhibición de documentos electrónicos](../media/eDiscoveryExportTool.png)
+
+   1. Pegue la clave de exportación que ha copiado en el paso 2 en el cuadro correspondiente.
+    
+   2. Haga clic en **Examinar** para especificar la ubicación en la que desea descargar los archivos de los resultados de la búsqueda.
+    
+      > [!NOTE]
+      > Debido a la gran cantidad de actividad de disco (lecturas y escrituras), debe descargar los resultados de la búsqueda en una unidad de disco local; no descárguelos en una unidad de red asignada ni en otra ubicación de red. 
   
+6. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo.
+    
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron.
+
 ## <a name="more-information"></a>Más información
 
 Aquí encontrará más información sobre cómo exportar los resultados de la búsqueda.
@@ -188,23 +190,27 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
 
 [Exportar mensajes individuales o archivos PST](#exporting-individual-messages-or-pst-files)
   
+[Exportar resultados de más de 100.000 buzones](#exporting-results-from-more-than-100000-mailboxes)
+
 [Descifrado de mensajes cifrados con RMS](#decrypting-rms-encrypted-messages)
 
 [Nombres de archivo de los elementos exportados](#filenames-of-exported-items)  
   
 [Varios](#miscellaneous)
   
- ### <a name="export-limits"></a>Límites de exportación
+### <a name="export-limits"></a>Límites de exportación
   
 - La exportación de resultados de búsqueda desde el centro de seguridad & cumplimiento tiene los siguientes límites:
-    
+
   - Puede exportar un máximo de 2 TB de datos a partir de una sola búsqueda de contenido. Si los resultados de la búsqueda tienen más de 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda.
-    
+  
   - Su organización puede exportar un máximo de 2 TB de datos durante un solo día.
-    
+  
   - Puede tener un máximo de 10 exportaciones ejecutándose a la vez dentro de su organización.
-    
+
   - Un único usuario puede ejecutar un máximo de tres exportaciones al mismo tiempo.
+  
+  - Puede descargar los resultados de la búsqueda de 100.000 buzones como máximo mediante la herramienta de exportación de exhibición de documentos electrónicos del centro de cumplimiento de & de seguridad de Office 365 o del centro de cumplimiento de Microsoft 365. Para descargar los resultados de búsqueda de más de 100.000 buzones, tiene que usar el PowerShell del centro de cumplimiento de & de seguridad. Para obtener instrucciones, consulte [exportar resultados de más de 100.000 buzones](#exporting-results-from-more-than-100000-mailboxes).
 
   > [!NOTE]
   > Exportar solo los informes de una búsqueda de contenido también cuenta con el número de exportaciones que se ejecutan al mismo tiempo y el número de exportaciones que un solo usuario puede ejecutar.
@@ -215,15 +221,15 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
     Además, los resultados de la búsqueda de un buzón de correo específico no se dividirán entre varios archivos PST a menos que el contenido de un buzón de correo sea superior a 10 GB. Si opta por exportar los resultados de búsqueda de un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda tienen un tamaño superior a 10 GB, los elementos siguen organizados en orden cronológico, por lo que se Spilt en archivos PST adicionales en función de la fecha de envío.
      
- ### <a name="export-reports"></a>Exportar informes
+### <a name="export-reports"></a>Exportar informes
   
 - Al exportar los resultados de la búsqueda, se incluyen los siguientes informes además de los resultados de la búsqueda.
     
-  - **Resumen de exportación** Un documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se han buscado, los tamaños Estimado y descargado de los resultados de la búsqueda y el número estimado y descargado de elementos que se exportaron. 
+  - **Resumen de exportación** Un documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se han buscado, los tamaños Estimado y descargado de los resultados de la búsqueda y el número estimado y descargado de elementos que se exportaron.
     
-  - **Manifiesto** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. 
+  - **Manifiesto** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda.
     
-  - **Resultados** Un documento de Excel que contiene información acerca de cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
+  - **Resultados** Un documento de Excel que contiene información acerca de cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos:
     
       - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
         
@@ -256,7 +262,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     > [!NOTE]
     > Solo puede exportar estos documentos sin tener que exportar los resultados de búsqueda reales. Consulte [exportar un informe de búsqueda de contenido](export-a-content-search-report.md). 
   
- ### <a name="exporting-partially-indexed-items"></a>Exportar elementos parcialmente indizados
+### <a name="exporting-partially-indexed-items"></a>Exportar elementos parcialmente indizados
   
 - Si está exportando elementos de buzón de una búsqueda de contenido que devuelve todos los elementos del buzón de correo en los resultados de la búsqueda (porque no se incluyen palabras clave en la consulta de búsqueda), los elementos indexados parcialmente no se copiarán en el archivo PST que contiene los elementos sin indexar. Esto se debe a que todos los elementos, incluidos los elementos parcialmente indizados, se incluyen automáticamente en los resultados de la búsqueda normales. Esto significa que los elementos parcialmente indizados se incluirán en un archivo PST (o en mensajes individuales) que contengan los otros elementos indizados.
     
@@ -275,11 +281,11 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     ![Elija la opción exportar en función de si un sitio contiene un elemento indizado que coincida con los criterios de búsqueda.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    a. Solo se exportan los elementos indexados que coinciden con los criterios de búsqueda. No se exportan elementos parcialmente indizados.
+    1. Solo se exportan los elementos indexados que coinciden con los criterios de búsqueda. No se exportan elementos parcialmente indizados.
     
-    b. Si no hay elementos indizados de un sitio que coincidan con los criterios de búsqueda, los elementos indexados parcialmente de ese mismo sitio no se exportarán. Si los elementos indexados de un sitio se devuelven en los resultados de la búsqueda, se exportan los elementos parcialmente indizados de ese sitio. Es decir, solo se exportan los elementos parcialmente indizados de los sitios que contienen elementos que coinciden con los criterios de búsqueda.
+    1. Si no hay elementos indizados de un sitio que coincidan con los criterios de búsqueda, los elementos indexados parcialmente de ese mismo sitio no se exportarán. Si los elementos indexados de un sitio se devuelven en los resultados de la búsqueda, se exportan los elementos parcialmente indizados de ese sitio. Es decir, solo se exportan los elementos parcialmente indizados de los sitios que contienen elementos que coinciden con los criterios de búsqueda.
     
-    c. Todos los elementos parcialmente indizados de todos los sitios de la búsqueda se exportan, independientemente de si un sitio contiene elementos que coinciden con los criterios de búsqueda.
+    1. Todos los elementos parcialmente indizados de todos los sitios de la búsqueda se exportan, independientemente de si un sitio contiene elementos que coinciden con los criterios de búsqueda.
     
     Si elige exportar elementos parcialmente indizados, los elementos del buzón indizados parcialmente se exportan a un archivo PST independiente independientemente de la opción que elija en **exportar contenido de Exchange como**.
 
@@ -291,9 +297,31 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
 - Como se explicó anteriormente, los resultados de la búsqueda de correo electrónico se exportan a una carpeta en el sistema de archivos. La ruta de acceso de la carpeta para los mensajes individuales replicaría la ruta de la carpeta en el buzón del usuario. Por ejemplo, para una búsqueda con el nombre "ContosoCase101" en la bandeja de entrada de un usuario estaría en la ruta de la carpeta  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
     
-- Si elige exportar los mensajes de correo electrónico de un archivo PST que contenga todos los mensajes de una sola carpeta, se incluirán en el nivel superior de la carpeta PST una carpeta de **elementos eliminados** y una carpeta de **carpetas de búsqueda** . Estas carpetas están vacías. 
+- Si elige exportar los mensajes de correo electrónico de un archivo PST que contenga todos los mensajes de una sola carpeta, se incluirán en el nivel superior de la carpeta PST una carpeta de **elementos eliminados** y una carpeta de **carpetas de búsqueda** . Estas carpetas están vacías.
   
- ### <a name="decrypting-rms-encrypted-messages"></a>Descifrado de mensajes cifrados con RMS
+### <a name="exporting-results-from-more-than-100000-mailboxes"></a>Exportar resultados de más de 100.000 buzones
+
+- Como se ha explicado anteriormente, tiene que usar el PowerShell del centro de cumplimiento de & de seguridad para descargar los resultados de búsqueda de más de 100.000 buzones. Puede ejecutar el siguiente script en esta sección para descargar estos resultados de búsqueda. El uso de esta secuencia de comandos presupone que ya ha exportado los resultados de la búsqueda (el trabajo de exportación se muestra en la ficha **Exports** de la herramienta de búsqueda de contenido) y ahora desea descargarlos.
+
+   ```powershell
+   $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
+   $exportUrl=   [System.Uri]::EscapeDataString(($export.Results.Split(";") | ?{$_ -like '*Container url*'} | %{$_.Split(":",2)} | select -last 1).Trim());
+   $exportToken=($export.Results.Split(";") | ?{$_ -like '*SAS Token*'} | %{$_.Split(":",2)} | select -last 1).Trim();
+   ."$env:ProgramFiles\Internet Explorer\IEXPLORE.EXE" "https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.application?name=$($export.Name)&source=$exportUrl&zip=allow&trace=1";
+   $exportToken | clip;
+   ```
+
+  En el script, tiene que especificar el nombre de la búsqueda para la que desea exportar resultados. Por ejemplo, para una búsqueda llamada, `SearchAllMailboxes` reemplace SEARCHNAME_Export por `SearchAllMailboxes_Export` .
+
+  Después de agregar el nombre de la búsqueda a la secuencia de comandos, puede copiar el texto del script y pegarlo en una ventana de Windows PowerShell que esté [conectada al PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Después de pegar el script, se muestra la herramienta de exportación de exhibición de documentos electrónicos (como es cuando se descargan los resultados de búsqueda mediante la interfaz de usuario):
+
+  ![Herramienta de exportación de exhibición de documentos electrónicos](../media/eDiscoveryExportTool.png)
+
+  Haga clic en el cuadro exportar clave y, a continuación, presione `CTRL + V` para pegar la clave de exportación (el script copia la clave de exportación al portapapeles para que se pueda pegar en el cuadro). Haga clic en **examinar** para especificar la ubicación en la que desea descargar los archivos de resultados de búsqueda y, a continuación, inicie la descarga.
+
+  Como se mencionó anteriormente, se recomienda descargar los resultados de la búsqueda en una unidad de disco local debido a la gran cantidad de actividad del disco (lecturas y escrituras). No descargar los resultados de la búsqueda en una unidad de red asignada o en otra ubicación de red.
+
+### <a name="decrypting-rms-encrypted-messages"></a>Descifrado de mensajes cifrados con RMS
   
 - Como se ha explicado anteriormente, para descifrar los mensajes cifrados con RMS cuando se exportan, se deben exportar los resultados de la búsqueda como mensajes individuales. Si exporta los resultados de la búsqueda a un archivo PST, los mensajes cifrados con RMS permanecerán cifrados.
     
@@ -315,7 +343,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
     Si se supera el límite de 260 caracteres, se truncará el nombre de ruta completo de un elemento.
     
-  - Si el nombre de la ruta de acceso completa tiene más de 260 caracteres, el nombre del archivo se acortará para que quede bajo el límite; Tenga en cuenta que el nombre de archivo truncado (excluyendo la extensión de archivo) no tendrá menos de 8 caracteres.
+  - Si el nombre de la ruta de acceso completa tiene más de 260 caracteres, el nombre del archivo se acortará para que quede bajo el límite; Tenga en cuenta que el nombre de archivo truncado (excluyendo la extensión de archivo) no tendrá menos de ocho caracteres.
     
   - Si el nombre de la ruta de acceso completa sigue siendo demasiado largo después de acortar el nombre del archivo, el elemento se mueve de su ubicación actual a la carpeta principal. Si el nombre de la ruta de la ruta sigue siendo demasiado largo, el proceso se repite: Acorte el nombre de archivo y, si es necesario, desplácese de nuevo a la carpeta principal. Este proceso se repite hasta que el directorio completo tiene un límite de 260 caracteres.
     
@@ -335,4 +363,4 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
 - Los metadatos del sistema de archivos para los documentos de los sitios de SharePoint y OneDrive para la empresa se mantienen cuando los documentos se exportan a su equipo local. Eso significa que las propiedades del documento, como la fecha de creación y la fecha en la que se modificó por última vez, no cambian cuando se exportan los documentos.
 
-- Si los resultados de la búsqueda incluyen un elemento de lista de SharePoint que coincide con la consulta de búsqueda, todas las filas de la lista se exportarán además del elemento que coincida con la consulta de búsqueda. Esto incluye todos los datos adjuntos de la lista. El motivo es proporcionar un contexto para los elementos de lista que se devuelven en los resultados de la búsqueda. Además, tenga en cuenta que los elementos de lista y datos adjuntos adicionales pueden hacer que el recuento de elementos exportados sea diferente de la estimación original de los resultados de búsqueda.
+- Si los resultados de la búsqueda incluyen un elemento de lista de SharePoint que coincide con la consulta de búsqueda, todas las filas de la lista se exportarán además del elemento que coincida con la consulta de búsqueda y los datos adjuntos de la lista. El motivo de este comportamiento es proporcionar un contexto para los elementos de lista que se devuelven en los resultados de la búsqueda. Además, tenga en cuenta que los elementos de lista y datos adjuntos adicionales pueden hacer que el recuento de elementos exportados sea diferente de la estimación original de los resultados de búsqueda.
