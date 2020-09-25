@@ -1,5 +1,5 @@
 ---
-title: Migración de buzones de correo entre inquilinos
+title: Migración de buzones de inquilinos cruzados
 description: Cómo mover buzones entre los inquilinos de Microsoft 365 o de Office 365.
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177194"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277488"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones de correo entre espacios empresariales (versión preliminar)
 
@@ -57,12 +57,12 @@ Para obtener el identificador de inquilino de una suscripción, inicie sesión e
 
 Este es el funcionamiento del proceso.
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="Preparación del espacio empresarial para la migración de buzones.":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="Preparación del espacio empresarial para la migración de buzones.":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>Preparar inquilinos
@@ -99,17 +99,17 @@ Prepare el inquilino de origen:
 
     | Parámetro | Valor | Obligatorio u opcional
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Dominio de inquilino de origen, como Fabrikam \. onmicrosoft.com. | Obligatorio |
-    | -ResourceTenantAdminEmail                   | Dirección de correo electrónico del administrador del inquilino de origen. Este es el administrador de inquilinos de origen que contratará el uso de la aplicación de migración de buzones de correo enviada desde el administrador de destino. Este es el administrador que recibirá la invitación por correo electrónico para la aplicación. | Obligatorio |
-    | -TargetTenantDomain                         | Dominio de inquilino de destino, como contoso \. onmicrosoft.com. | Obligatorio |
-    | -ResourceTenantId                           | IDENTIFICADOR de la organización del espacio empresarial de origen (GUID). | Obligatorio |
-    | -SubscriptionId                             | La suscripción de Azure que se va a usar para crear recursos. | Obligatorio |
-    | -ResourceGroup                              | Nombre del grupo de recursos de Azure que contiene o contendrá el almacén de claves. | Obligatorio |
-    | -KeyVaultName                               | Instancia de Azure Key Vault que almacenará el secreto o certificado de la aplicación de migración de buzones. | Obligatorio |
-    | -CertificateName                            | Nombre del certificado al generar o buscar un certificado en el almacén de claves. | Obligatorio |
-    | -CertificateSubject                         | Nombre del firmante del certificado de Azure Key Vault, como CN = contoso_fabrikam. | Obligatorio |
+    | -ResourceTenantDomain                       | Dominio de inquilino de origen, como Fabrikam \. onmicrosoft.com. | Necesario |
+    | -ResourceTenantAdminEmail                   | Dirección de correo electrónico del administrador del inquilino de origen. Este es el administrador de inquilinos de origen que contratará el uso de la aplicación de migración de buzones de correo enviada desde el administrador de destino. Este es el administrador que recibirá la invitación por correo electrónico para la aplicación. | Necesario |
+    | -TargetTenantDomain                         | Dominio de inquilino de destino, como contoso \. onmicrosoft.com. | Necesario |
+    | -ResourceTenantId                           | IDENTIFICADOR de la organización del espacio empresarial de origen (GUID). | Necesario |
+    | -SubscriptionId                             | La suscripción de Azure que se va a usar para crear recursos. | Necesario |
+    | -ResourceGroup                              | Nombre del grupo de recursos de Azure que contiene o contendrá el almacén de claves. | Necesario |
+    | -KeyVaultName                               | Instancia de Azure Key Vault que almacenará el secreto o certificado de la aplicación de migración de buzones. | Necesario |
+    | -CertificateName                            | Nombre del certificado al generar o buscar un certificado en el almacén de claves. | Necesario |
+    | -CertificateSubject                         | Nombre del firmante del certificado de Azure Key Vault, como CN = contoso_fabrikam. | Necesario |
     | -ExistingApplicationId                      | Aplicación de migración de correo para usar si ya se creó una. | Opcional |
-    | -AzureAppPermissions                        | Los permisos que se deben dar a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones de correo, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al espacio empresarial de recursos). | Obligatorio |
+    | -AzureAppPermissions                        | Los permisos que se deben dar a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones de correo, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al espacio empresarial de recursos). | Necesario |
     | -UseAppAndCertGeneratedForSendingInvitation | Parámetro de uso de la aplicación creada para la migración que se va a usar para enviar la invitación del vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se le pedirá a las credenciales del administrador de destino que se conecten al administrador de invitaciones de Azure y que envíen la invitación como administrador de destino. | Opcional |
     | -KeyVaultAuditStorageAccountName            | La cuenta de almacenamiento en la que se almacenarán los registros de auditoría del almacén clave. | Opcional |
     | -KeyVaultAuditStorageResourceGroup          | El grupo de recursos que contiene la cuenta de almacenamiento para almacenar los registros de auditoría de bóveda clave. | Opcional |
@@ -162,11 +162,11 @@ Se ha completado la configuración de administración de destino.
 
 1.  Inicie sesión en su buzón de correo como el-ResourceTenantAdminEmail especificado por el administrador de destino durante la instalación. Busque la invitación por correo electrónico del inquilino de destino y, después, seleccione el botón **Introducción** .
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Se ha invided cuadro de diálogo":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Se ha invitado (cuadro de diálogo)":::
 
 2. Seleccione **Aceptar** para aceptar la invitación.
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Cuadro de diálogo para aceptar permissons":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Cuadro de diálogo para aceptar permisos":::
 
    > [!NOTE]
    > Si no obtiene este correo electrónico o no lo encuentra, el administrador del espacio empresarial de destino le proporcionó una dirección URL directa que puede darle para aceptar la invitación. La dirección URL debe encontrarse en la transcripción de la sesión de PowerShell remoto del administrador de inquilinos de destino.
@@ -407,7 +407,7 @@ El envío por lotes de migración también se admite desde el nuevo centro de ad
 
 Una vez que el buzón de correo se mueve del origen al destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualizan con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en la transferencia es **contoso \. onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
  
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
  
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del traslado?**
  

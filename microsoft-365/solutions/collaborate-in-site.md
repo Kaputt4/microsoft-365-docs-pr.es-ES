@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
-ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171273"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277568"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -35,7 +35,7 @@ En este vídeo se muestran los pasos de configuración que se describen en este 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
+## <a name="azure-external-collaboration-settings"></a>Configuración de colaboración externa de Azure
 
 El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, se invalidará cualquier configuración de uso compartido que configure en Microsoft 365.
 
@@ -137,7 +137,7 @@ Para invitar a invitados a un grupo
 3. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
 4. Haga clic en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

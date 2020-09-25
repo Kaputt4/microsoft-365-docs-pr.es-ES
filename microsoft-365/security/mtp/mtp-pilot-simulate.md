@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201200"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277545"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Ejecutar las simulaciones de ataque de la protección contra amenazas de Microsoft  
 
@@ -48,7 +48,7 @@ Durante la simulación, el ataque inyecta shellcode en un proceso aparentemente 
 
 Como ya ha configurado el entorno piloto durante la fase de preparación, asegúrese de que dispone de dos dispositivos para este escenario: un dispositivo de prueba y un controlador de dominio.
 
-1.  Compruebe que el inquilino tenga [protección](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service).
+1.  Compruebe que el inquilino haya [habilitado Microsoft Threats](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)para la protección contra amenazas de Microsoft.
 2.  Compruebe la configuración del controlador de dominio de prueba:
     - El dispositivo se ejecuta con Windows Server 2008 R2 o una versión posterior.
     - El controlador de dominio de prueba a la [protección contra amenazas avanzada de Azure](https://docs.microsoft.com/azure/security-center/security-center-wdatp) y habilitar la [administración remota](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager).    
@@ -434,7 +434,7 @@ Para obtener más información sobre la búsqueda avanzada, las siguientes difus
 >[!NOTE]
 >Prepárese con su propia cuenta de GitHub para ejecutar las consultas de la caza en el entorno del laboratorio de pruebas piloto.  
 
-| **Título** | **Descripción** | **Descargar MP4** | **Ver en YouTube** | **CSL archivo que usar** |
+| **Title** | **Descripción** | **Descargar MP4** | **Ver en YouTube** | **CSL archivo que usar** |
 |:-----|:-----|:-----|:-----|:-----|
 | Episodio 1: conceptos básicos de KQL | Trataremos los conceptos básicos de las funcionalidades de búsqueda avanzada en la protección contra amenazas de Microsoft. Obtenga información sobre los datos de búsqueda avanzada disponibles y la sintaxis y los operadores de KQL básicos. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episodio 1: archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episodio 2: combinaciones | Seguiremos aprendiendo sobre los datos de la búsqueda avanzada y cómo combinar tablas. Obtenga información sobre las combinaciones internas, externas, únicas y semicombinadas, así como los matices del Kusto de innerunique predeterminado. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Episodio 2: archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
