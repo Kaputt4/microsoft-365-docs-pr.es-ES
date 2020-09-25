@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d8b24885b1d1a80380d0e9ad5c7942bb31ba054c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 398fdb66623fb668bfc95e8a8a8f8fae44c8163e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416724"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208612"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Indicadores del Centro de seguridad de internet (CSI)
 
@@ -85,6 +85,10 @@ El lanzamiento de los Indicadores CSI revisados cambia en función de la comunid
 **¿Quién contribuyó al desarrollo de Indicadores de CSI de Microsoft?**
 
 El CIS señala que sus "bancos de pruebas se desarrollan gracias a los generosos esfuerzos voluntarios de expertos en la materia, proveedores de tecnología, miembros de la comunidad de bancos de pruebas del CIS públicos y privados, y el equipo de desarrollo de pruebas del CIS". Por ejemplo, encontrará una lista de colaboradores de Azure en [CIS Microsoft Azure Foundations Benchmark v1.0.0 Ahora disponible.](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

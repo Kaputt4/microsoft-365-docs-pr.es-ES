@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208302"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>Código de prácticas para los controles de la seguridad de la información ISO/IEC 27017:2015
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417694"
 
 El código de prácticas ISO/IEC 27017:2015 está diseñado para que las organizaciones lo usen como referencia para seleccionar controles de seguridad de la información de servicios en la nube al implementar un sistema de administración de seguridad de la información de informática en la nube basado en la norma ISO/IEC 27002:2013. Los proveedores de servicios en la nube también pueden usar este documento como guía para implementar controles de protección comúnmente aceptados.
 
-Este estándar internacional proporciona instrucciones adicionales para las implementaciones específicas para la nube basadas en la norma ISO/IEC 27002, así como controles adicionales para abordar los riesgos y las amenazas de seguridad de la información específicos de la nube que hacen referencia a las cláusulas 5 a 18 de la norma ISO/IEC 27002:2013 sobre controles, instrucciones de implementación y otra información. En concreto, en este estándar se proporcionan instrucciones sobre 37 controles de la norma ISO/IEC 27002, además de siete nuevos controles que no se encuentran en la ISO/IEC 27002. Estos nuevos controles abordan las siguientes áreas de importancia:
+Este estándar internacional proporciona instrucciones adicionales para las implementaciones específicas para la nube basadas en la norma ISO/IEC 27002, así como controles adicionales para abordar los riesgos y las amenazas de seguridad de la información específicos de la nube que hacen referencia a las cláusulas 5-18 de la norma ISO/IEC 27002:2013 sobre controles, instrucciones de implementación y otra información. En concreto, en este estándar se proporcionan instrucciones sobre 37 controles de la norma ISO/IEC 27002, además de siete nuevos controles que no se encuentran en la ISO/IEC 27002. Estos nuevos controles abordan las siguientes áreas de importancia:
 
 - Roles y responsabilidades compartidos en un entorno informático en la nube
 - Eliminación y devolución de los activos de los clientes del servicio en la nube una vez que finaliza el contrato
@@ -84,6 +84,10 @@ Sí. Si su empresa desea obtener una certificación para las implementaciones de
 **¿Cómo puedo obtener copias de los informes de auditoría aplicables?**
 
 En el [Portal de confianza de servicios](https://aka.ms/stphelp) encontrará informes de auditoría independientes de terceros y otros documentos relacionados. Puede usar el portal para descargar y revisar esa documentación para obtener ayuda con sus propios requisitos normativos.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

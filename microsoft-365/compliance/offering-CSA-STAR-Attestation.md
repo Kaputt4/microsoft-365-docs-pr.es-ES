@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 56f01880e3e2f381d85ed386ac413d4dbff38ff4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415620"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208602"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Certificación STAR de Cloud Security Alliance (CSA)
 
@@ -68,6 +68,10 @@ Puede descargar la [Certificación CSA STAR](https://aka.ms/CSASTAR-Attestation)
 - **Nivel 1**: **Autoevaluación para CSA STAR**: Azure, Microsoft Dynamics 365 y Microsoft Office 365. La [Autoevaluación](offering-csa-star-self-assessment.md) es una oferta gratuita de los proveedores de servicios en la nube para documentar sus controles de seguridad y ayudar a los clientes a evaluar la seguridad del servicio.
 - **Nivel 2**: **Certificación CSA STAR**: Azure, Microsoft Cloud App Security, Intune y Microsoft Power BI. La certificación STAR exige lograr la certificación ISO/IEC 27001 y cumplir los criterios especificados en la CCM. Se otorga después de una evaluación rigurosa hecha por terceros de los controles y prácticas de seguridad de un proveedor de servicios en la nube.
 - **Nivel 2**: **Atestación de CSA STAR**: Azure e Intune. CSA y AICPA han colaborado para proporcionar directrices para que los CPA las utilicen en la realización de compromisos SOC 2, con criterios de AICPA (Principios de Servicio de Confianza, AT 101) y la CCM de CSA. [La Atestación STAR](offering-CSA-STAR-Attestation.md) se basa en estas directrices y se otorga tras rigurosas evaluaciones independientes a los proveedores en la nube.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47cc5cf10f048640ead85d239881fa9b2603e699
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3757d400d16b324f512c60059c8d8b762916894c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417510"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208262"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Estándar de Seguridad en la Nube Multinivel (MTCS) para Singapur
 
@@ -42,7 +42,7 @@ Tras las evaluaciones rigurosas realizadas por el cuerpo de certificación MTCS,
 
 Se concedieron certificaciones en el Nivel 3 para servicios de Microsoft Azure (IaaS y PaaS), Microsoft Dynamics 365 (SaaS) y Microsoft Office 365 (SaaS). Una certificación de Nivel 3 significa que los servicios en ámbito en la nube de Microsoft pueden hospedar datos de alto impacto de organizaciones reguladas con los requisitos de seguridad más estrictos. El Gobierno de Singapur requiere ciertas implementaciones para algunas soluciones en la nube.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
@@ -96,6 +96,10 @@ El [Esquema de Certificación MTCS](https://go.microsoft.com/fwlink/p/?linkid=20
 **¿Puedo usar el cumplimiento normativo de Microsoft en el proceso de certificación de mi organización?**
 
 Sí. Si necesita certificar los servicios que haya creado en los servicios en la nube de Microsoft, puede usar la certificación MTCS para reducir el impacto de las auditorias en su infraestructura de TI, en caso de que las use. Sin embargo, usted tiene la responsabilidad de contratar un asesor para evaluar la implementación para el cumplimiento normativo y los controles y procesos de su propia organización.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

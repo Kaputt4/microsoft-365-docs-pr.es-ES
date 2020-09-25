@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417062"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208112"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Ley de Protección de Datos Personales (PDPA) de Argentina
 
 ## <a name="about-the-pdpa"></a>Acerca de la PDPA
 
-De acuerdo con la Constitución Argentina, la [Ley de Protección de Datos Personales 25.326](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) se sancionó en 2000 para proteger la privacidad de los datos personales y ofrecer acceso a los usuarios a cualquier información sobre ellos almacenada en los registros y en las bases de datos públicas y privadas. La [Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip) (AAIP), perteneciente a la Jefatura del Gabinete de Ministros, es responsable de aplicar esta legislación.
+De acuerdo con la Constitución Argentina, la [Ley de Protección de Datos Personales 25.326](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) se sancionó en 2000 para proteger la privacidad de los datos personales y ofrecer acceso a los usuarios a cualquier información sobre ellos almacenada en los registros y en las bases de datos públicas y privadas. La [Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip) (AAIP) de Argentina, perteneciente a la Jefatura del Gabinete de Ministros, es responsable de aplicar esta legislación.
 
 La PDPA se alinea con el modelo de información legislativa europeo para la protección de la privacidad de datos, y Argentina fue el primer país en Latinoamérica en lograr una calificación de "idoneidad" para las transferencias de datos de la UE.
 
@@ -39,7 +39,7 @@ Las medidas de seguridad técnicas y organizativas implementadas en los servicio
 
 El acuerdo de transferencia de datos de Microsoft es una enmienda (Enmienda ID M314) a los términos de procesamiento de datos de nuestros Términos de Servicios en Línea. Agrega compromisos importantes, incluido que Microsoft notificará al cliente cualquier solicitud legalmente vinculante para revelar datos personales. Además, solicitará a sus instalaciones de procesamiento de datos que auditen la solicitud del cliente, ya sea por parte del cliente o un tercero independiente, y obtendrá el consentimiento por escrito para el uso de subcontratistas.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure y Azure DevOps](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -55,6 +55,10 @@ El acuerdo de transferencia de datos de Microsoft es una enmienda (Enmienda ID M
 **¿Cómo ha cambiado el RGPD la Ley de Protección de Datos Personales?**
 
 A finales de 2018, Argentina aún no ha promulgado normativas relacionadas con el RGPD, pero ha elaborado el borrador de un proyecto de ley sobre la protección de datos, que el Poder Ejecutivo ya ha enviado al Congreso y que la Cámara de Representantes está revisando, para armonizar su legislación de protección de datos con el RGPD. Trata discrepancias tales como la definición de interesados de los datos y cuestiones sobre la transferencia de información personal entre fronteras.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

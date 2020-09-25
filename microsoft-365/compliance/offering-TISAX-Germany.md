@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe9186b45268fee11d011d6a941e244071e31a42
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417544"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208129"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>Intercambio de Evaluación de Seguridad sobre la información confiable (TISAX, por sus siglas en inglés) en Alemania
 
@@ -67,11 +67,15 @@ La duración de esta evaluación es de tres años.
 
 Utilice resúmenes de casos, guías de soluciones, tutoriales y otros recursos para ayudar a crear [soluciones Azure](https://docs.microsoft.com/azure/industry/manufacturing/).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **¿Por qué no puedo ver una copia de la certificación TISAX de Microsoft?**
 
 ENX proporciona confirmación de certificación sólo a representantes registrados de la industria a través del portal de ENX. Para ver más información sobre cómo proceder, vea la sección "Auditorías, informes y certificados" en la sección anterior.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d57c725f471e5197f269270eca19c863a7f79555
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208632"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Seguridad de entrega de contenido de & (CDSA) estándares de protección de contenido & (CPS)
 
@@ -61,13 +61,17 @@ Microsoft completó con éxito la renovación de la certificación CPS CDSA por 
 
 El estándar se aplica a cualquier proveedor que quiera proporcionar servicios en la nube a la industria de la producción multimedia.
 
-**¿Cómo puedo empezar con los esfuerzos de cumplimiento normativo de mi organización?**
+**¿Cómo puedo empezar los esfuerzos de cumplimiento normativo de mi organización?**
 
 Para obtener instrucciones, consulte la [guía de implementación CDSA de Azure](https://aka.ms/cdsaprotectsecure). Para debatir sobre los requisitos específicos y el proceso de aplicación del programa de certificación estándar CPS, [póngase en contacto con la CDSA](https://go.microsoft.com/fwlink/p/?linkid=2099484).
 
 **¿Puedo usar el cumplimiento normativo de Microsoft en el proceso de certificación para mi organización?**
 
 Sí. Puede basarse en la certificación CPS de Azure dentro de su propio esfuerzo de certificación CPS usando las características de seguridad y cifrado de Azure.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

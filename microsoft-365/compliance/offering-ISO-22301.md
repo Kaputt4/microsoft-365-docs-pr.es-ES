@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416238"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208392"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norma ISO 22301:2012 de Administración de Continuidad Empresarial 
 
@@ -70,6 +70,10 @@ El [Portal de Confianza del Servicio](https://aka.ms/stphelp) ofrece informes de
 **¿Puedo usar el cumplimiento de la norma ISO 22301 de los servicios Microsoft en la certificación de mi organización?**
 
 Sí. Si su empresa requiere la certificación de ISO 22301 para las implementaciones realizadas en los servicios de Microsoft, puede usar la certificaciones de Azure y Office 365 en la evaluación de cumplimiento. Sin embargo, usted tiene la responsabilidad de contratar un asesor para evaluar los controles, los procesos y la implementación para el cumplimiento de la norma ISO 22301 dentro de su organización y para sus propias aplicaciones.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

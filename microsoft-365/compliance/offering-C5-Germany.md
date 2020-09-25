@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c2c1e516e0d2c338104d36bb227e877d490ecb7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416166"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208642"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>El Catálogo de controles de cumplimiento de informática en la nube (C5)
 
@@ -29,10 +29,9 @@ En el año 2016, la Oficina Federal Alemana para la Seguridad de la Información
 
 El objetivo del catálogo de controles C5 es proporcionar un marco de seguridad coherente para certificar a los proveedores de los Servicios en la Nube y ofrecer a los clientes la seguridad de que sus datos serán gestionados de forma segura.
 
-El C5 se basa en los estándares de seguridad reconocidos internacionalmente de la tecnología de la información, como el ISO/IEC 27001:2013, la Cloud Security Alliance Cloud Controls Matrix 3.0.1 y los catálogos de la tecnología de la información (IT) - Grundschutz propios de BSI. El catálogo consta de 114 requisitos en 17 dominios, por ejemplo, la organización de la seguridad de la información y la seguridad física, con requisitos de seguridad básicos para todos los proveedores de servicios en la nube, y requisitos adicionales para el procesamiento de datos altamente confidenciales y situaciones que requieren una alta disponibilidad.
+El C5 se basa en los estándares de seguridad reconocidos internacionalmente de la tecnología de la información, como la norma ISO/IEC 27001:2013, la Cloud Security Alliance Cloud Controls Matrix 3.0.1 y los catálogos de la tecnología de la información (IT) - Grundschutz propios de BSI. El catálogo consta de 114 requisitos en 17 dominios, por ejemplo, la organización de la seguridad de la información y la seguridad física, con requisitos de seguridad básicos para todos los proveedores de servicios en la nube, y requisitos adicionales para el procesamiento de datos altamente confidenciales y situaciones que requieren una alta disponibilidad.
 
-La BSI también se enfoca en la transparencia. Como parte de una auditoría, el proveedor de la nube debe incluir una descripción detallada del sistema e indicar a las autoridades públicas los parámetros medioambientales, como la jurisdicción y la ubicación del procesamiento de datos, la prestación de servicios y otras certificaciones otorgadas a los servicios en la nube, así como la información acerca de las obligaciones de difusión para los organismos públicos del proveedor de la nube.
- Esto ayuda a los clientes potenciales de la nube a decidir si los servicios en la nube cumplen con los requisitos esenciales, tales como el cumplimiento de los requisitos legales de protección de datos, políticas de la empresa, o la capacidad para hacer frente a la amenaza de espionaje industrial.
+La BSI también se enfoca en la transparencia. Como parte de una auditoría, el proveedor de la nube debe incluir una descripción detallada del sistema e informar a las autoridades públicas acerca de los parámetros del entorno, como la jurisdicción y la ubicación del procesamiento de datos, la prestación de servicios y otras certificaciones otorgadas a los servicios en la nube, así como información sobre las obligaciones que proveedor de la nube tiene de informar a las autoridades públicas. Esto ayuda a los clientes potenciales de la nube a decidir si los servicios en la nube cumplen con los requisitos esenciales, tales como el cumplimiento de los requisitos legales de protección de datos, políticas de la empresa, o la capacidad para hacer frente a la amenaza de espionaje industrial.
 
 ## <a name="microsoft-and-c5"></a>Microsoft y C5
 
@@ -60,6 +59,10 @@ La tecnología de la información (IT) - Grundschutz proporciona la metodología
 **¿Qué es la nube de Microsoft Alemania?**
 
 La nube de Microsoft Alemania tiene su base física en Alemania, adhiriéndose a los requisitos de la ley de privacidad alemana, que limita la transferencia de datos personales a otros países y ofrece protección contra el acceso de autoridades de otras jurisdicciones que puedan violar las leyes nacionales. Azure Alemania ofrece los servicios de Azure desde los centros de datos alemanes con residencia de datos en Alemania, y ofrece estrictas medidas de control y acceso a los datos a través de un modelo único de administración de datos regido por la ley alemana.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad755398afc80f829561854217f1295ce8fff6f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417864"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208242"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)
 
@@ -58,9 +58,9 @@ Es importante entender que el estado de cumplimiento del DSS PCI para Azure, One
 
 Cree e implemente la solución DSS PCI en la nube de forma más rápida con el Plano técnico de seguridad y cumplimiento de Azure para DSS PCI. Obtenga arquitecturas de referencia, instrucciones de implementación, asignaciones de control de implementación, scripts automatizados y mucho más. [Empezar a usar el Plano técnico de Azure para el DSS PCI](https://aka.ms/pciblueprint).
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-**¿Por qué la Atestación de Cumplimiento normativo (AoC) dice "junio de 2018"?**
+**¿Por qué dice la página de portada de la Atestación de Cumplimiento (AoC) "Junio de 2018"?**
 
 La fecha de junio de 2018 en la portada es de cuando se publicó la plantilla AoC. Consulte la sección 2 para ver la fecha de la evaluación.
 
@@ -93,6 +93,10 @@ Actualmente OneDrive para la Empresa y SharePoint Online solo son compatibles co
 **¿Qué abarcan OneDrive para la Empresa y SharePoint Online?**
 
 En la actualidad, solo los archivos y documentos cargados en OneDrive para la Empresa y SharePoint Online serán compatibles con el DSS PCI.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

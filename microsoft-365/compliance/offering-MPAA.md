@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417924"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208282"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>Asociación cinematográfica de Estados Unidos (ACEU)
 
@@ -59,6 +59,10 @@ Las directrices de la ACEU proporcionan a los principales proveedores y socios d
 **¿Mi organización todavía necesita someterse a una auditoría de la ACEU, o podemos usar la auditoría de Azure?**
 
 Las instalaciones de producción, las casas de efectos visuales y otros socios de servicios deben trabajar con sus productores ejecutivos y directores para comprender los nuevos requisitos de seguridad, y si es necesaria una auditoría formal de la ACEU. El cumplimiento de las directrices de la ACEU es voluntario, pero Microsoft eligió llevar a cabo una evaluación independiente para que los clientes de medios puedan confiar en las capacidades de seguridad y protección de contenido de Azure. Sin embargo, Azure no gestiona los entornos de nube individuales de los clientes, los cuales pueden estar sujetos a una regulación adicional de la ACEU que se trata mejor en su propia auditoría de su entorno.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

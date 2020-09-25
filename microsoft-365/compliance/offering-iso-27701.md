@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b46a1996d1a86601efe21ec71b19adfc9fa02c61
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417218"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208147"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Sistema de Administración de Información de Privacidad (PIMS)
 
@@ -77,7 +77,7 @@ Indistintamente del tamaño de su organización y de si se trata de un controlad
 - Bot de Microsoft Healthcare
 - Intune
 - Escritorio administrado de Microsoft
-- Power Automate (anteriormente Microsoft Flow) 
+- Power Automate (anteriormente Microsoft Flow)
 - PowerApps
 - Power BI
 - Power BI incrustado
@@ -86,15 +86,14 @@ Indistintamente del tamaño de su organización y de si se trata de un controlad
 - Expertos en amenazas de Microsoft
 - Protección contra amenazas avanzada de Windows Defender
 
-
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
 - [Azure, Dynamics 365 y servicios en línea: certificado ISO27701](https://aka.ms/azureiso27701cert)
 - [Azure, Dynamics 365 y servicios en línea: informe de evaluación ISO27701](https://aka.ms/azureiso27701report)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después de [configurar la puntuación de cumplimiento](compliance-score-setup.md), utilice la [plantilla preconfigurada ISO 27701](https://go.microsoft.com/fwlink/?linkid=2117915) del menú desplegable **Plantilla** para ayudar a su organización a cumplir los requisitos de este reglamento.
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 677196f23430ec19f23c50e05fcc193fde420ca0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868915"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200497"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -53,7 +53,7 @@ Además de la documentación en línea, es posible que le resulte útil escuchar
 
 ## <a name="records"></a>Registros
 
-Cuando el contenido está marcado como un registro:
+Cuando el contenido se declara como registro:
 
 - Se colocan restricciones en los elementos relativas a qué [acciones se permiten o se bloquean](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
@@ -61,31 +61,31 @@ Cuando el contenido está marcado como un registro:
 
 - Tendrá la prueba de la eliminación cuando se eliminen los elementos al final de su período de retención.
 
-Puede usar las [etiquetas de retención](retention.md#retention-labels) para marcar el contenido como un registro. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro.
+Usted utiliza las [etiquetas de retención](retention.md#retention-labels) para marcar contenido como un **registro** o un **registro normativo** (actualmente en versión preliminar). La diferencia entre estas dos etiquetas se explica en la siguiente sección. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro o como registro normativo.
 
-Al usar las etiquetas de retención para marcar contenido como registros, puede implementar una sola estrategia de administración de registros uniforme en todo el entorno de Microsoft 365.
+Al usar las etiquetas de retención para declarar registros, puede implementar una sola estrategia de administración de registros uniforme en todo el entorno de Microsoft 365.
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Comparar restricciones de acciones permitidas o bloqueadas
 
-Use la tabla siguiente para identificar qué restricciones se colocan en el contenido como resultado de aplicar una etiqueta de retención estándar y conocer las etiquetas de retención que marcan el contenido como un registro. 
+Use la tabla siguiente para identificar qué restricciones se colocan en el contenido como resultado de aplicar una etiqueta de retención estándar y conocer las etiquetas de retención que marcan el contenido como un registro o un registro normativo. 
 
-Una etiqueta de retención estándar tiene opciones de retención y acciones, pero no marca el contenido como un registro.
+Una etiqueta de retención estándar tiene opciones de retención y acciones, pero no marca el contenido como un registro o un registro normativo.
 
 >[!NOTE] 
 > Por motivos de integridad, la tabla contiene columnas para un registro bloqueado y desbloqueado, lo que se aplica a SharePoint y OneDrive, pero no a Exchange. La capacidad de bloquear y desbloquear un registro usa el [control de versiones de registros](record-versioning.md) que no es compatible con los elementos de Exchange. Por lo tanto, para todos los elementos de Exchange que estén marcados como un registro, el comportamiento que se asigna a la columna **registro bloqueado** y a la columna **registro desbloqueado** no es relevante.
 
 
-|Acción| Etiqueta de retención |Registro: bloqueado| Registro: desbloqueado|
-|:-----|:-----|:-----|:-----|:-----|
-|Editar contenidos|Permitido | **Bloqueado** | Permitido|
-|Editar propiedades, incluido cambiar nombre|Permitido |Permitido | Permitido|
-|Eliminar|Permitido<sup>1</sup> |**Bloqueado** | **Bloqueado**|
-|Copiar|Permitido |Permitido | Permitido|
-|Moverse dentro del contenedor<sup>2</sup>|Permitido |Permitido | Permitido|
-|Moverse entre contenedores<sup>2</sup>|Permitido |Permitido si nunca se desbloquea | Permitido|
-|Abrir y leer|Permitido |Permitido | Permitido|
-|Cambiar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor|
-|Quitar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor|
+|Acción| Etiqueta de retención |Registro: bloqueado| Registro: desbloqueado| Registro normativo |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|Editar contenidos|Permitido | **Bloqueado** | Permitido | **Bloqueado**|
+|Editar propiedades, incluido cambiar nombre|Permitido |Permitido | Permitido| **Bloqueado**|
+|Eliminar|Permitido<sup>1</sup> |**Bloqueado** |**Bloqueado**| **Bloqueado**|
+|Copiar|Permitido |Permitido | Permitido| Permitido|
+|Moverse dentro del contenedor<sup>2</sup>|Permitido |Permitido | Permitido| Permitido|
+|Moverse entre contenedores<sup>2</sup>|Permitido |Permitido si nunca se desbloquea | Permitido| **Bloqueado**|
+|Abrir y leer|Permitido |Permitido | Permitido| Permitido|
+|Cambiar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor| **Bloqueado**
+|Quitar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor| **Bloqueado**
 
 Notas al pie:
 
@@ -95,8 +95,17 @@ Mensaje que ve el usuario si intenta eliminar un documento con etiquetas en Shar
 
 ![Mensaje que indica que el elemento no se elimina de SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-
 <sup>2</sup> Los contenedores incluyen librerías de documentos de SharePoint y buzones de Exchange.
+
+>[!IMPORTANT] 
+> La diferencia más importante que supone un registro normativo es que, una vez que se aplica al contenido, nadie, ni siquiera un administrador global, puede quitar la etiqueta. 
+>
+> Además, las etiquetas de retención configuradas para los registros normativos tienen las siguientes restricciones de administrador:
+> - El período de retención no se puede reducir después de guardar la etiqueta, solo se puede extender.
+> - Estas etiquetas no son compatibles con las directivas de etiquetado automático y deben aplicarse mediante [directivas de etiqueta de retención](create-apply-retention-labels.md). 
+> - Una vez que haya agregado y guardado estas etiquetas en una directiva de etiqueta de retención, no podrá quitar estas etiquetas de las ubicaciones, solo podrá agregar ubicaciones.
+> 
+> Dado que se trata de acciones irreversibles, asegúrese de que realmente necesita usar registros normativos antes de seleccionar esta opción para las etiquetas de retención. Para evitar la configuración accidental, esta opción no está disponible de forma predeterminada, sino que primero se debe habilitar con PowerShell. Las instrucciones se incluyen en [Declarar registros mediante etiquetas de retención](declare-records.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
