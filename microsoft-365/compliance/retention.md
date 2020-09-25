@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132140"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197343"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -31,6 +31,7 @@ ms.locfileid: "48132140"
 Para la mayoría de las organizaciones, el volumen y la complejidad de los datos se incrementa diariamente: correo electrónico, documentos, mensajes instantáneos y mucho más. Administrar o gobernar esta información es importante, ya que necesita:
   
 - **Cumplir de forma proactiva con las normas del sector y las directivas internas** que le exigen retener contenido durante un período mínimo de tiempo. Por ejemplo, la ley Sarbanes-Oxley puede exigirle que retenga determinados tipos de contenido durante siete años. 
+
 - **Reducir el riesgo en caso de litigio o una infracción de seguridad** al eliminar de forma permanente contenido antiguo que ya no es necesario mantener. 
     
 - **Ayudar a su organización a compartir los conocimientos de manera eficaz y ser más ágil** al asegurarse de que los usuarios trabajan solo con contenido actualizado y relevante para ellos. 
@@ -58,7 +59,7 @@ Cuando se establece la configuración de retención, el contenido permanece en s
 
 - Para buzones de Exchange: la copia se conserva en la carpeta **Elementos recuperables**. 
 
-- Para mensajes de chat y canales de Teams: la copia se conserva en una carpeta oculta llamada **SubstrateHolds** dentro de la carpeta **Elementos recuperables** de Exchange.
+- Para mensajes de Teams y Yammer: la copia se conserva en una carpeta oculta llamada **SubstrateHolds** dentro de la carpeta **Elementos recuperables** de Exchange.
 
 > [!NOTE]
 > La biblioteca de Suspensión para conservación consume almacenamiento que no está exento de la cuota de almacenamiento de un sitio. Es posible que tenga que aumentar el almacenamiento al usar la configuración de retención para los grupos de Microsoft 365 y SharePoint.
@@ -69,6 +70,7 @@ Para obtener información más detallada sobre cómo funciona la configuración 
 
 - [Más información sobre las directivas de retención de SharePoint y OneDrive](retention-policies-sharepoint.md)
 - [Más información sobre las directivas de retención para Microsoft Teams](retention-policies-teams.md)
+- [Más información sobre la retención para Yammer](retention-policies-yammer.md)
 - [Más información sobre las directivas de retención de Exchange](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
@@ -102,6 +104,8 @@ Las directivas de retención se pueden aplicar a las siguientes ubicaciones:
 - Carpetas públicas de Exchange
 - Mensajes de canal de Teams
 - Chats de Teams
+- Mensajes de la comunidad de Yammer
+- Mensajes privados de Yammer
 
 Puede aplicar una sola directiva en varias ubicaciones, o bien en determinadas ubicaciones o usuarios.
     
@@ -214,7 +218,7 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
    
 En Exchange, las etiquetas de aplicación automática solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial y clasificadores que se pueden entrenar solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar buzones concretos.
   
-Las carpetas públicas de Exchange, Skype y los chats y mensajes de canal de Teams no admiten etiquetas de retención. Para conservar y eliminar contenido de estas ubicaciones, use en cambio directivas de retención.
+Las carpetas públicas de Exchange y los mensajes de Skype, Teams y Yammer no admiten etiquetas de retención. Para conservar y eliminar contenido de estas ubicaciones, use en cambio directivas de retención.
 
 #### <a name="only-one-retention-label-at-a-time"></a>Solo una etiqueta de retención a la vez
 
@@ -265,7 +269,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Funcionalidad|Directiva de retención |Etiqueta de retención|
 |:-----|:-----|:-----|:-----|
 |Configuración de retención que puede conservar y, después, eliminar, solo conservar o solo eliminar. |Sí |Sí |
-|Cargas de trabajo compatibles: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Grupos de Microsoft 365 <br />- Skype Empresarial <br />- Teams|<br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí | <br /> Sí, excepto carpetas públicas <br /> Sí <br /> Sí <br /> Sí <br /> No <br /> No  |
+|Cargas de trabajo compatibles: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Grupos de Microsoft 365 <br />- Skype Empresarial <br />- Teams<br />- Yammer|<br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí | <br /> Sí, excepto carpetas públicas <br /> Sí <br /> Sí <br /> Sí <br /> No <br /> No <br /> No |
 |Retención aplicada automáticamente | Sí | Sí |
 |La retención aplicada se basa en las condiciones <br /> : tipos de información confidencial, consultas KQL y clasificadores que se pueden entrenar| No | Sí |
 |Retención aplicada manualmente | No | Sí |

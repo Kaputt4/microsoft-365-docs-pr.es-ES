@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: a657e3cac4c6b0620d7c5c69247154776ce60ffe
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547024"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199555"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
-Puede crear y administrar directivas de retención de registros de auditoría en el Centro de seguridad y cumplimiento. Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización. Puede conservar los registros de auditoría hasta por un año. Puede crear directivas en función de los siguientes criterios:
+Puede crear y administrar directivas de retención de registros de auditoría en el Centro de seguridad y cumplimiento. Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización. Puede conservar los registros de auditoría hasta por 10 años. Puede crear directivas en función de los siguientes criterios:
 
 - Todas las actividades en uno o más servicios de Microsoft 365
 
-- Actividades específicas (en un servicio específico) realizadas por todos los usuarios o por usuarios específicos
+- Actividades específicas (en un servicio de Microsoft 365) realizadas por todos los usuarios o por usuarios específicos
 
 - Un nivel de prioridad que especifique qué directiva prevalece en caso de que tenga varias directivas en su organización
 
@@ -39,7 +39,7 @@ Puede crear y administrar directivas de retención de registros de auditoría en
 Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de registros de auditoría predeterminada para todas las organizaciones. Esta directiva conserva todos los registros de auditoría de Exchange, SharePoint y Azure Active Directory durante un año. Esta directiva predeterminada conserva registros de auditoría que contienen el valor de **AzureActiveDirectory**, **Exchange** o **SharePoint** de la propiedad **Carga de trabajo** (que es el servicio en el que se produjo la actividad). La directiva predeterminada no se puede modificar. Vea la sección [Más información](#more-information) en este artículo para obtener una lista de los tipos de registros para cada carga de trabajo que se incluye en la directiva predeterminada.
 
 > [!NOTE]
-> La directiva de retención de registros de auditoría predeterminada solo se aplica a los registros de auditoría para la actividad realizada por usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5, o que tienen una licencia de complemento de Microsoft 365 E5 Compliance. Si no tiene usuarios de E5 en su organización, los registros de auditoría correspondientes se conservarán durante 90 días.
+> La directiva de retención de registros de auditoría predeterminada solo se aplica a los registros de auditoría para la actividad realizada por usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5, o que tienen una licencia del complemento de Cumplimiento de Microsoft 365 E5 o de eDiscovery y Auditoría de Microsoft 365 E5 Si no tiene usuarios de E5 en su organización, los registros de auditoría correspondientes se conservarán durante 90 días.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Antes de crear una directiva de retención de registros de auditoría
 
@@ -53,46 +53,48 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 ## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>Crear una directiva de retención de registros de auditoría en el centro de cumplimiento
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con la cuenta de usuario que tenga asignado el rol de Configuración de la organización en el Centro de seguridad y cumplimiento.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con la cuenta de usuario que tenga asignado el rol de Configuración de la organización en el Centro de seguridad y cumplimiento.
 
-2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Buscar** > **Búsqueda de registros de auditoría**.
+2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo**, y luego haga clic en**Auditoría**.
 
-    La página de **Búsqueda de registros de auditoría** se mostrará.
+    Aparece la página **Auditoría**.
 
-    ![La página de búsqueda de registros de auditoría](../media/AuditLogRetentionPolicy1.png)
+    ![La página de Búsqueda en el registro de auditoría en el Centro de cumplimiento](../media/AuditLogRetentionPolicy1.png)
 
-3. Haga clic en **Nueva directiva de retención de auditoría**, y después, complete los siguientes campos en la página flotante:
+3. Haga clic en **Crear directiva de retención de auditoría**, y después, complete los siguientes campos en la página flotante:
 
     ![Página flotante de la directiva de retención de auditoría](../media/AuditLogRetentionPolicy2.png)
 
-   a. **Nombre:** el nombre de la directiva de retención de registros de auditoría. Este nombre debe ser exclusivo en la organización.
+   1. **Nombre:** el nombre de la directiva de retención de registros de auditoría. Este nombre debe ser exclusivo en la organización.
 
-   b. **Descripción:** es opcional, pero le resultará útil para proporcionar información sobre la directiva (como el tipo de registro o la carga de trabajo, los usuarios especificados en la directiva y la duración).
+   2. **Descripción:** es opcional, pero le resultará útil para proporcionar información sobre la directiva (como el tipo de registro o la carga de trabajo, los usuarios especificados en la directiva y la duración).
 
-   c. **Tipos de registro:** el tipo de registro de auditoría al que se aplica la directiva. Si selecciona más de un tipo de registro, no podrá seleccionar actividades porque la directiva se aplicará a todas las actividades para los tipos de registros seleccionados. Además, si deja en blanco esta propiedad, debe seleccionar un usuario en el cuadro **Usuarios**.
+   3. **Usuarios:** seleccione uno o más usuarios para aplicar la directiva. Si deja este cuadro en blanco, la directiva se aplicará a todos los usuarios. Si deja en blanco **Tipo de registro**, deberá seleccionar un usuario.
 
-   d. **Actividades:** use este cuadro para elegir las actividades del tipo de registro que haya seleccionado. Puede elegir actividades específicas para aplicar la directiva. Si no elige actividades específicas, la directiva se aplicará a todas las actividades del tipo de registro seleccionado.
+   4. **Tipo de registro:** el tipo de registro de auditoría al que se aplica la directiva. Si deja en blanco esta propiedad, debe seleccionar un usuario en el cuadro **Usuarios**. Puede seleccionar un único tipo de registro o varios tipos de registro:
 
-   e. **Usuarios:** seleccione uno o más usuarios para aplicar la directiva. Si deja este cuadro en blanco, la directiva se aplicará a todos los usuarios. Si deja en blanco **Tipos de registro**, entonces deberá seleccionar un usuario.
+   - Si selecciona un único tipo de registro, el campo **Actividades** se mostrará dinámicamente. Puede usar la lista desplegable para seleccionar las actividades del tipo de registro seleccionado a las que desea aplicar la directiva. Si no elige actividades específicas, la directiva se aplicará a todas las actividades del tipo de registro seleccionado.
 
-   f. **Duración:** es la cantidad de tiempo que se conservarán los registros de auditoría que cumplan los criterios de la directiva.
+   - Si selecciona varios tipos de registro, no podrá seleccionar actividades. La directiva se aplicará a todas las actividades de los tipos de registro seleccionados.
 
-   g. **Prioridad:** este valor determina el orden en el que se procesan las directivas de retención de registros de auditoría de su organización. Un valor más alto indica una prioridad mayor. Por ejemplo, una directiva con un valor de prioridad de **5** tendría prioridad sobre una directiva con un valor de prioridad de **0**. Como se ha explicado anteriormente, cualquier directiva de retención de registros de auditoría personalizada tiene prioridad sobre la directiva predeterminada para su organización.
+   5. **Duración:** es la cantidad de tiempo que se conservarán los registros de auditoría que cumplan los criterios de la directiva.
+
+   6. **Prioridad:** este valor determina el orden en el que se procesan las directivas de retención de registros de auditoría de su organización. Un valor más alto indica una prioridad mayor. Por ejemplo, una directiva con un valor de prioridad de **5** tendría prioridad sobre una directiva con un valor de prioridad de **0**. Como se ha explicado anteriormente, cualquier directiva de retención de registros de auditoría personalizada tiene prioridad sobre la directiva predeterminada para su organización.
 
 4. Haga clic en **Guardar** para crear la nueva directiva de retención de registros de auditoría.
 
-En este momento, no hay ningún indicio de que la directiva de retención se ha creado correctamente. Consulte la siguiente sección para ver las propiedades de las directivas de retención de registros de auditoría.
+La nueva directiva de retención de auditoría se muestra en la pestaña **Directivas de retención de auditoría**.
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Crear una directiva de retención de registros de auditoría en PowerShell
 
-También puede usar PowerShell del Centro de seguridad y cumplimiento para crear directivas de retención de registros de auditoría. 
+También puede usar PowerShell del Centro de seguridad y cumplimiento para crear directivas de retención de registros de auditoría.
 
 1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Ejecute el siguiente comando para crear una directiva de retención de registros de auditoría. 
+2. Ejecute el siguiente comando para crear una directiva de retención de registros de auditoría.
 
    ```powershell
-   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TwelveMonths -Priority 100
+   New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
     En este ejemplo se crea una directiva de retención de registros de auditoría denominada "Directiva de auditoría de Microsoft Teams" con esta configuración:
@@ -101,7 +103,7 @@ También puede usar PowerShell del Centro de seguridad y cumplimiento para crear
 
    - Conserva todas las actividades de Microsoft Teams (definidas en el parámetro *RecordType*).
 
-   - Conserva los registros de auditoría de Microsoft Teams por un año.
+   - Conserva los registros de auditoría de Microsoft Teams por 10 años.
 
    - Una prioridad de 100.
 
