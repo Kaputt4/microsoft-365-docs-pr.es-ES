@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo configurar las opciones de búsqueda y análisis, como duplicados Near, subprocesos de correo electrónico y temas al administrar investigaciones de datos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ebc04e68c4d8854c91ceae75b164cc061e77aad4
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527356"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277074"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
+# <a name="configure-search-and-analytics-settings-in-data-investigations"></a>Configurar las opciones de búsqueda y análisis en las investigaciones de datos
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicación cercana y subprocesamiento de correo electrónico
 

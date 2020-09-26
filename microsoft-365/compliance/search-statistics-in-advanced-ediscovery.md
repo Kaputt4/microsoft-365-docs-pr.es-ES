@@ -1,5 +1,5 @@
 ---
-title: Estadísticas de búsqueda
+title: Buscar estadísticas en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,46 +7,55 @@ author: esclee
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: b7975f5d288348177cbb6edec8002b4ed49de327
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Para validar los resultados de la búsqueda, vea las estadísticas que se generan después de ejecutar una búsqueda de colección en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069877"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286086"
 ---
-# <a name="search-statistics"></a>Estadísticas de búsqueda
+# <a name="search-statistics-in-advanced-ediscovery"></a>Estadísticas de búsqueda en eDiscovery avanzado
 
 Una forma de validar los resultados de la búsqueda es ver las estadísticas de los resultados para asegurarse de que se ajustan a sus expectativas. Una vez finalizada la búsqueda, se muestran las estadísticas de alto nivel en el control flotante de detalles de búsqueda:
+
 - Número y volumen de los elementos recuperados por la búsqueda
-- Número y volumen de elementos parcialmente indizados o sin indexar que se encontraron en las ubicaciones de búsqueda
+
+- Número y volumen de los elementos sin indexar o parcialmente indizados que se encontraron en las ubicaciones de búsqueda
+
 - Número de buzones y ubicaciones que se han buscado.
 Para ver estadísticas más detalladas, haga clic en "estadísticas" en el control flotante de detalles de búsqueda.
 
-## <a name="summary"></a>Resumen
+## <a name="summary-view"></a>Vista de Resumen
 
 En la vista de Resumen, puede ver los resultados de la búsqueda desglosados por tipo de ubicación (por ejemplo, Exchange). Para cada tipo de ubicación, puede ver:
+
 - Número de ubicaciones que tenían elementos que coincidían con las condiciones de búsqueda
+
 - Número de elementos de estas ubicaciones que coinciden con las condiciones de búsqueda
+
 - Volumen total de elementos que coinciden con las condiciones de búsqueda.
 
-## <a name="top-locations"></a>Principales ubicaciones
+## <a name="top-locations-view"></a>Vista de ubicaciones superiores
 
 En la vista de ubicaciones superiores, verá las ubicaciones individuales con más coincidencias. Para cada ubicación, verá:
+
 - Nombre de la ubicación (por ejemplo, dirección URL de SharePoint)
+
 - Tipo de ubicación
+
 - Número de elementos que coinciden con las condiciones de búsqueda
+
 - Volumen total de elementos que coinciden con las condiciones de búsqueda.
 
-## <a name="queries"></a>Queries
+## <a name="queries-view"></a>Vista de consultas
 
 Si ha usado (c:s) palabra clave o filas de palabra clave en la consulta, puede ver el desglose de la consulta en la vista consultas por tipo de ubicación. Para cada tipo de ubicación, verá:
 

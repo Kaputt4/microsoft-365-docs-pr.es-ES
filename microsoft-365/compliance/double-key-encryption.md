@@ -4,7 +4,7 @@ description: DKE permite proteger datos extremadamente confidenciales y mantener
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,32 +12,42 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: f36eeeb1f228bff48088cbbf3241d6866d0b3a21
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 39d7933014f1dc71f8c94e467954d36ede4fb451
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794169"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277536"
 ---
-# <a name="double-key-encryption-dke"></a>Cifrado de doble clave (DKE)
+# <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de doble clave para Microsoft 365
 
-> *Se aplica a: cifrado de doble clave para Microsoft 365 Public Preview, [microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Se aplica a: cifrado de doble clave para Microsoft 365, [microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instrucciones para: [cliente de etiquetado Unificado de Azure Information Protection para Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Descripción del servicio para: [cumplimiento de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-El cifrado de doble clave (DKE) utiliza dos claves conjuntamente para obtener acceso al contenido protegido. Se almacena una clave en Microsoft Azure y se mantiene la otra clave. El cliente de etiqueta Unificado de Azure Information Protection protege el contenido altamente confidencial mientras mantiene un control total de una de las claves.
+El cifrado de doble clave (DKE) utiliza dos claves conjuntamente para obtener acceso al contenido protegido. Microsoft almacena una clave en Microsoft Azure y mantiene la otra clave. Se mantiene un control total de una de las claves mediante el servicio de cifrado de doble clave. La protección se aplica mediante el cliente de etiquetado Unificado de Azure Information Protection a su contenido extremadamente confidencial.
 
 El cifrado de doble clave admite tanto la nube como las implementaciones locales. Estas implementaciones ayudan a garantizar que los datos cifrados permanezcan opacos dondequiera que almacene los datos protegidos.
 
 Para obtener más información acerca de las claves predeterminadas de raíz de inquilino basadas en la nube, vea [Planning and Implementing Your Azure Information Protection tenant Key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-<!--
-The following video shows how Double Key Encryption works to secure your content.
+## <a name="when-your-organization-should-adopt-dke"></a>Cuando su organización debe adoptar DKE
 
-> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
--->
+El cifrado de doble clave está destinado a los datos más confidenciales que están sujetos a los requisitos de protección más estrictos. DKE no está pensada para todos los datos. En general, utilizará el cifrado de doble clave para proteger solo una parte muy pequeña de los datos globales. Debe llevar a cabo la diligencia debida para identificar los datos correctos que se incluirán con esta solución antes de implementarla. En algunos casos, es posible que necesite limitar el ámbito y usar otras soluciones para la mayoría de los datos, como Microsoft Information Protection con claves administradas por Microsoft o BYOK. Estas soluciones son suficientes para los documentos que no están sujetos a las protecciones mejoradas y a los requisitos normativos. Además, estas soluciones le permiten usar los servicios de Office 365 más eficaces; servicios que no se pueden usar con contenido cifrado de DKE. Por ejemplo:
+
+- Reglas de transporte que incluyen protección contra malware y correo no deseado que requieren visibilidad en los datos adjuntos
+- Microsoft Delve
+- eDiscovery
+- Búsqueda de contenido e indización
+- Office Web Apps, incluida la funcionalidad de co-autoría
+
+Cualquier aplicación o servicio externo que no esté integrado con DKE a través del SDK de MIP no podrá realizar acciones en los datos cifrados.
+
+El SDK de Microsoft Information Protection 1.7 + admite el cifrado de doble clave; las aplicaciones que se integran con nuestro SDK podrán conllevarle motivos sobre estos datos con los permisos e integraciones suficientes.
+
+Recomendamos que las organizaciones usen las capacidades de Microsoft Information Protection (clasificación y etiquetado) para proteger la mayoría de sus datos confidenciales y solo usen DKE para sus datos de misión crítica. El cifrado de doble clave es especialmente relevante para los datos extremadamente confidenciales en industrias altamente reguladas, como los servicios financieros y la asistencia sanitaria.
 
 Si las organizaciones tienen alguno de los siguientes requisitos, puede usar DKE para ayudar a proteger el contenido:
 
@@ -47,11 +57,15 @@ Si las organizaciones tienen alguno de los siguientes requisitos, puede usar DKE
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisitos de licencia y sistema para DKE
 
-El cifrado de doble clave para Microsoft 365 incluye Microsoft 365 E5 y Office 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [versión de prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información acerca de estas licencias, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
-
-**Office Insider** Para usar la versión preliminar pública, debe ser miembro del programa Office Insider. Para unirse a Office Insider, vaya a [https://insider.office.com](https://insider.office.com) . Una vez que sea miembro, prepare el entorno para implementar las compilaciones de Office Insider eligiendo el método de implementación adecuado para su organización. Para obtener instrucciones, consulte [Introducción a la implementación de compilaciones de Office Insider](https://insider.office.com/business/deploy).
+El **cifrado de doble clave para microsoft 365** incluye Microsoft 365 E5 y Office 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [versión de prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información acerca de estas licencias, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere Azure Information Protection.
+
+Las etiquetas de confidencialidad de DKE están disponibles para los usuarios finales a través de la cinta de confidencialidad en las aplicaciones de escritorio de Office. Instale estos requisitos previos en cada equipo cliente donde quiera proteger y consumir documentos protegidos.
+
+**Microsoft Office apps for Enterprise** versión *. 12711 o posterior (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
+
+**Azure Information Protection el cliente de etiquetado unificado** versiones 2.7.93.0 o posterior. Descargue e instale el cliente de etiquetado unificado desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Entornos admitidos para almacenar y ver contenido protegido por DKE
 
@@ -59,42 +73,41 @@ El cifrado de doble clave para Microsoft 365 incluye Microsoft 365 E5 y Office 3
 
 **Soporte de contenido en línea**. Se admiten los documentos y archivos almacenados en línea tanto en Microsoft SharePoint como en OneDrive para la empresa. Puede compartir contenido cifrado por correo electrónico, pero no puede ver documentos cifrados y archivos en línea. En su lugar, debe ver el contenido protegido con las aplicaciones de escritorio en su equipo local.
 
-## <a name="about-this-public-preview-article"></a>Acerca de este artículo de la versión preliminar pública
+## <a name="overview-of-deploying-dke"></a>Información general sobre la implementación de DKE
+
+Seguiremos estos pasos generales para configurar DKE. Una vez que haya completado estos pasos, los usuarios finales podrán proteger los datos extremadamente confidenciales con el cifrado doble de claves.
+
+1. Implemente el servicio DKE tal como se describe en este artículo.
+
+2. Cree una etiqueta con dos claves de cifrado. Navegue a Information Protection en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) y cree una nueva etiqueta con cifrado de doble clave. Consulte [restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+
+3. Use las etiquetas de cifrado de doble clave. Proteja los datos seleccionando la etiqueta cifrada de doble clave en la cinta de confidencialidad de Microsoft Office.
 
 Hay varias formas de realizar algunos de los pasos para implementar el cifrado doble de claves. En este artículo se proporcionan instrucciones detalladas para que los administradores menos experimentados implementen correctamente el servicio. Si le resulta cómodo hacerlo, puede elegir usar sus propios métodos.
 
-En este artículo se incluyen instrucciones paso a paso sobre cómo implementar el servicio de cifrado de doble clave en Azure. Este escenario no es algo que probablemente haría en producción. Para la versión preliminar pública, el uso de Azure es una forma rápida de implementar DKE. La implementación en Azure le permite empezar a usar el cifrado de doble clave inmediatamente.
-
-Puede implementar el servicio localmente en la red o con otro proveedor. Deberá publicar el almacén de claves con los métodos apropiados para esa ubicación.
-
-## <a name="deploy-double-key-encryption"></a>Implementar el cifrado de doble clave
+## <a name="deploy-dke"></a>Implementar DKE
 
 Este artículo y el vídeo de implementación usan Azure como destino de implementación para el servicio DKE. Si va a realizar la implementación en otra ubicación, deberá proporcionar sus propios valores.
 
-Vea el [vídeo sobre la implementación de doble clave](https://youtu.be/vDWfHN_kygg) para ver una introducción paso a paso de los conceptos del artículo. El vídeo tarda unos 18 minutos en completarse.
+Vea el [vídeo sobre la implementación de doble clave](https://youtu.be/vDWfHN_kygg) para ver una introducción paso a paso de los conceptos de este artículo. El vídeo tarda unos 18 minutos en completarse.
 
 Deberá seguir estos pasos generales para configurar el cifrado de doble clave para su organización.
 
-1. [Requisitos previos de instalación de software](#install-software-prerequisites)
+1. [Instalar los requisitos previos de software para el servicio DKE](#install-software-prerequisites-for-the-dke-service)
 1. [Clone el repositorio de GitHub con cifrado de doble clave](#clone-the-dke-github-repository)
 1. [Modificación de la configuración de la aplicación](#modify-application-settings)
 1. [Generar claves de prueba](#generate-test-keys)
 1. [Compile el proyecto.](#build-the-project)
-1. [Publicar el almacén de claves](#publish-the-key-store)
+1. [Implementar el servicio DKE y publicar el almacén de claves](#deploy-the-dke-service-and-publish-the-key-store)
 1. [Validar la implementación](#validate-your-deployment)
 1. [Registrar el almacén de claves](#register-your-key-store)
-1. [Cree etiquetas de confidencialidad](#create-labels-using-dke)
+1. [Crear etiquetas de confidencialidad mediante DKE](#create-sensitivity-labels-using-dke)
+1. [Habilitar DKE en el cliente](#enable-dke-in-your-client)
+1. [Migrar archivos protegidos desde etiquetas HYOK a etiquetas DKE](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
 Cuando haya terminado, puede cifrar documentos y archivos con DKE. Para obtener más información, consulte [aplicar etiquetas de confidencialidad a los archivos y el correo electrónico en Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
-### <a name="install-software-prerequisites"></a>Requisitos previos de instalación de software
-
-Existen dos tipos de requisitos previos de software para el cifrado doble de claves
-
-- [Requisitos previos del servicio de cifrado de doble clave](#double-key-encryption-service-prerequisites)
-- [Requisitos previos de cifrado de doble clave para equipos cliente](#double-key-encryption-prerequisites-for-client-computers)
-
-#### <a name="double-key-encryption-service-prerequisites"></a>Requisitos previos del servicio de cifrado de doble clave
+### <a name="install-software-prerequisites-for-the-dke-service"></a>Instalar los requisitos previos de software para el servicio DKE
 
 Instale estos requisitos previos en el equipo en el que desea instalar el servicio DKE.
 
@@ -106,8 +119,6 @@ Instale estos requisitos previos en el equipo en el que desea instalar el servic
 
 - Administrador de paquetes NuGet
 
-**Microsoft Office Insider**. Configure al menos un [método de implementación](https://insider.office.com/business/deploy).
-
 **Recursos git**. Descargue e instale uno de los siguientes elementos.
 
 - [Git](https://git-scm.com/downloads)
@@ -116,15 +127,7 @@ Instale estos requisitos previos en el equipo en el que desea instalar el servic
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
-**OpenSSL** Debe tener instalado [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) para [generar las claves de prueba](#generate-test-keys) después de implementar DKE. Asegúrese de que está invocando correctamente desde la ruta de las variables de entorno. Por ejemplo, consulte "agregar el directorio de instalación a la ruta de acceso" en https://www.osradar.com/install-openssl-windows/ para más detalles.
-
-#### <a name="double-key-encryption-prerequisites-for-client-computers"></a>Requisitos previos de cifrado de doble clave para equipos cliente
-
-Instale estos requisitos previos en cada equipo cliente donde quiera proteger y consumir documentos protegidos.
-
-**Microsoft Office** versión *. 12711 o posterior.
-
-**Azure Information Protection el cliente de etiquetado unificado** versiones 2.7.93.0 o posterior. Descargue e instale el cliente de etiquetado Unificado de [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+**OpenSSL** Debe tener instalado [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) para [generar las claves de prueba](#generate-test-keys) después de implementar DKE. Asegúrese de que está invocando correctamente desde la ruta de las variables de entorno. Por ejemplo, consulte "agregar el directorio de instalación a la ruta de acceso" en [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) para más detalles.
 
 ### <a name="clone-the-dke-github-repository"></a>Clonar el repositorio de GitHub DKE
 
@@ -132,9 +135,9 @@ Microsoft proporciona los archivos de origen de DKE en un repositorio de GitHub.
 
 Las siguientes instrucciones están destinadas a usuarios no con experiencia de Git o Visual Studio Code:
 
-1. En el explorador, vaya a: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
+1. En el explorador, vaya a: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
 
-1. Hacia el lado derecho de la pantalla, seleccione **código**. Es posible que la versión de la interfaz de usuario muestre un botón **clonar o descargar** . A continuación, en la lista desplegable que aparece, seleccione el icono de copia para copiar la dirección URL en el portapapeles.
+2. Hacia el lado derecho de la pantalla, seleccione **código**. Es posible que la versión de la interfaz de usuario muestre un botón **clonar o descargar** . A continuación, en la lista desplegable que aparece, seleccione el icono de copia para copiar la dirección URL en el portapapeles.
 
     Por ejemplo:
 
@@ -154,10 +157,10 @@ Las siguientes instrucciones están destinadas a usuarios no con experiencia de 
 
    ![Rama de patrón de Visual Studio Code](../media/dke-vscode-master.png)
 
-6. Seleccione el **patrón** de palabras y, a continuación, seleccione **public_preview** de la lista de ramas.
+6. Seleccione el **patrón** de palabras de la lista de ramas.
 
    > [!IMPORTANT]
-   > Al seleccionar la rama public_preview, se asegura de que tiene los archivos correctos para compilar el proyecto. Si no elige la rama correcta, se producirá un error en la implementación.
+   > La selección de la rama maestra garantiza que tenga los archivos correctos para compilar el proyecto. Si no elige la rama correcta, se producirá un error en la implementación.
 
 Ahora tiene su repositorio de origen de DKE configurado de forma local. A continuación, [modifique la configuración](#modify-application-settings) de la aplicación para su organización.
 
@@ -190,7 +193,7 @@ Elija si desea usar el correo electrónico o la autorización de roles. DKE solo
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
    ```
 
-3. Busque la `LDAPPath` configuración y quite el texto `If role authorization is used then this is the LDAP path` comprendido entre las comillas dobles. Deje las comillas dobles en su posición. Cuando haya terminado, la configuración debería ser similar a la siguiente.
+3. Busque la `LDAPPath` configuración y quite el texto `If you use role authorization (AuthorizedRoles) then this is the LDAP path.` comprendido entre las comillas dobles. Deje las comillas dobles en su posición. Cuando haya terminado, la configuración debería ser similar a la siguiente.
 
    ```json
    "LDAPPath": ""
@@ -242,8 +245,6 @@ La configuración de clave y de inquilino de DKE se encuentra en el **appsetting
 
 Busque el `JwtAudience` . Reemplace `<yourhostname>` por el nombre de host del equipo en el que se ejecutará el servicio DKE. Por ejemplo:
 
-
-
   > [!IMPORTANT]
   > El valor de `JwtAudience` debe coincidir *exactamente*con el nombre de su host. Puede usar **localhost: 5001** durante la depuración. Sin embargo, cuando haya terminado la depuración, asegúrese de actualizar este valor al nombre de host del servidor.
 
@@ -262,48 +263,48 @@ Para generar claves:
 
 1. En el menú Inicio de Windows, ejecute el símbolo del sistema de OpenSSL.
 
-1. Cambie a la carpeta en la que desea guardar las claves de prueba. Los archivos que crea al completar los pasos de esta tarea se almacenan en la misma carpeta.
+2. Cambie a la carpeta en la que desea guardar las claves de prueba. Los archivos que crea al completar los pasos de esta tarea se almacenan en la misma carpeta.
 
-1. Generar la nueva clave de prueba.
+3. Generar la nueva clave de prueba.
 
    ```dos
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
-2. Generar la clave privada.
+4. Generar la clave privada.
 
    ```dos
    openssl rsa -in key.pem -out privkeynopass.pem
    ```
 
-1. Generar la clave pública.
+5. Generar la clave pública.
 
    ```dos
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-1. En un editor de texto, Abra **pubkeyonly. pem**. Copie todo el contenido del archivo **pubkeyonly. pem** , excepto la primera y la última línea, en la `PublicPem` sección de la **appsettings.jsen** el archivo.
+6. En un editor de texto, Abra **pubkeyonly. pem**. Copie todo el contenido del archivo **pubkeyonly. pem** , excepto la primera y la última línea, en la `PublicPem` sección de la **appsettings.jsen** el archivo.
 
-1. En un editor de texto, Abra **privkeynopass. pem**. Copie todo el contenido del archivo **privkeynopass. pem** , excepto la primera y la última línea, en la `PrivatePem` sección de la **appsettings.jsen** el archivo.
+7. En un editor de texto, Abra **privkeynopass. pem**. Copie todo el contenido del archivo **privkeynopass. pem** , excepto la primera y la última línea, en la `PrivatePem` sección de la **appsettings.jsen** el archivo.
 
-1. Quite todos los espacios en blanco y las nuevas líneas en las `PublicPem` `PrivatePem` secciones y.
+8. Quite todos los espacios en blanco y las nuevas líneas en las `PublicPem` `PrivatePem` secciones y.
 
     > [!IMPORTANT]
     > Cuando copie este contenido, no elimine ninguno de los datos del PEM.
 
-1. En Visual Studio Code, vaya al archivo **Startup.CS** . Este archivo se encuentra en el repositorio de DoubleKeyEncryptionService que clonó localmente en DoubleKeyEncryptionService\src\customer-key-store\.
+9. En Visual Studio Code, vaya al archivo **Startup.CS** . Este archivo se encuentra en el repositorio de DoubleKeyEncryptionService que clonó localmente en DoubleKeyEncryptionService\src\customer-key-store\.
 
-2. Busque las siguientes líneas:
+10. Busque las siguientes líneas:
 
    ```c#
         #if USE_TEST_KEYS
         #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing,
-        DO NOT USE  FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        DO NOT USE FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
         #endif
    ```
 
-3. Reemplace estas líneas con el texto siguiente:
+11. Reemplace estas líneas con el texto siguiente:
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
@@ -321,7 +322,7 @@ Use las siguientes instrucciones para crear el proyecto DKE de forma local:
 
 1. En Visual Studio Code, en el repositorio del servicio DKE, seleccione **Ver** \> **paleta de comandos** y, a continuación, escriba **generar** en el símbolo del sistema.
 
-1. En la lista, elija **tareas: Ejecutar tarea de compilación**.
+2. En la lista, elija **tareas: Ejecutar tarea de compilación**.
 
    Si no se encuentra ninguna tarea de compilación, seleccione **Configurar tarea de compilación** y cree una para .net Core de la siguiente manera.
 
@@ -329,11 +330,11 @@ Use las siguientes instrucciones para crear el proyecto DKE de forma local:
 
    1. Elija **crear tasks.jsen a partir de plantilla**.
 
-   ![Crear tasks.jsen archivo de plantilla para DKE](../media/dke-createtasksjsonfromtemplate.png)
+      ![Crear tasks.jsen archivo de plantilla para DKE](../media/dke-createtasksjsonfromtemplate.png)
 
    2. En la lista de tipos de plantilla, seleccione **.net Core**.
 
-   ![Crear tasks.jsen archivo de plantilla para DKE](../media/dke-tasksjsontemplate.png)
+      ![Seleccione la plantilla correcta para DKE](../media/dke-tasksjsontemplate.png)
 
    3. En la sección generar, busque la ruta de acceso al archivo **customerkeystore. csproj** . Si no está ahí, agregue la siguiente línea:
 
@@ -341,15 +342,15 @@ Use las siguientes instrucciones para crear el proyecto DKE de forma local:
       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
       ```
 
-  4. Vuelva a ejecutar la compilación.
+   4. Vuelva a ejecutar la compilación.
 
-1. Compruebe que no haya errores rojos en la ventana de salida.
+3. Compruebe que no haya errores rojos en la ventana de salida.
 
    Si hay errores rojos, compruebe el resultado de la consola. Asegúrese de que ha completado todos los pasos anteriores correctamente y de que las versiones de compilación correctas están presentes.
 
-2. Seleccione **Ejecutar** \> la **depuración de inicio** para depurar el proceso. Si se le pide que seleccione un entorno, seleccione **.net Core**.
+4. Seleccione **Ejecutar** \> la **depuración de inicio** para depurar el proceso. Si se le pide que seleccione un entorno, seleccione **.net Core**.
 
-Normalmente, el depurador de .net Core se inicia en ' ' https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 ' y se anexa una barra diagonal (/) y el nombre de la clave. Por ejemplo:
+El depurador de .NET Core se inicia normalmente en `https://localhost:5001` . Para ver la clave de prueba, vaya a `https://localhost:5001` y anexe una barra diagonal (/) y el nombre de la clave. Por ejemplo:
 
 ```https
 https://localhost:5001/TestKey1
@@ -359,15 +360,21 @@ La clave debe mostrarse en formato JSON.
 
 La configuración se ha completado. Antes de publicar el almacén de claves, en appsettings.jsen la configuración de JwtAudience, asegúrese de que el valor para hostname coincide exactamente con el nombre de host del servicio de la aplicación. Puede que lo haya cambiado a localhost para solucionar los problemas de la compilación.
 
-### <a name="publish-the-key-store"></a>Publicar el almacén de claves
+### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>Implementar el servicio DKE y publicar el almacén de claves
 
-Para publicar el almacén de claves, debe crear una instancia de Azure App Service para hospedar la implementación de DKE. A continuación, publicará las claves generadas en Azure.
+Para las implementaciones de producción, implemente el servicio en una nube de terceros o [publíquelo en un sistema local](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli).
+
+Puede que prefiera otros métodos para implementar las claves. Seleccione el método que mejor se adapte a su organización.
+
+Para las implementaciones piloto, puede implementar en Azure y comenzar inmediatamente.
 
 **Para crear una instancia de la aplicación Web de Azure para hospedar la implementación de DKE**
 
+Para publicar el almacén de claves, debe crear una instancia de Azure App Service para hospedar la implementación de DKE. A continuación, publicará las claves generadas en Azure.
+
 1. En el explorador, inicie sesión en el [portal de Microsoft Azure](https://ms.portal.azure.com)y vaya a **App Services**  >  **Add**.
 
-1. Seleccione su suscripción y grupo de recursos y defina los detalles de la instancia.
+2. Seleccione su suscripción y grupo de recursos y defina los detalles de la instancia.
 
     - Escriba el nombre de host del equipo en el que desea instalar el servicio DKE. Asegúrese de que es el mismo nombre que el definido para la configuración JwtAudience en el [**appsettings.jsen**](#tenant-and-key-settings) el archivo. El valor que se proporciona para el nombre también es WebAppInstanceName.
 
@@ -377,66 +384,59 @@ Para publicar el almacén de claves, debe crear una instancia de Azure App Servi
 
    ![Agregar el servicio de aplicaciones](../media/dke-azure-add-app-service.png)
 
-1. En la parte inferior de la página, seleccione **revisar + crear**y, a continuación, seleccione **Agregar**.
+3. En la parte inferior de la página, seleccione **revisar + crear**y, a continuación, seleccione **Agregar**.
 
-1. Realice una de las siguientes acciones para publicar las claves generadas en Azure:
+4. Realice una de las siguientes acciones para publicar las claves generadas:
 
     - [Publicar a través de ZipDeployUI](#publish-via-zipdeployui)
     - [Publicar mediante FTP](#publish-via-ftp)
     - [Publicar a través de Visual Studio 2019 o versiones posteriores](https://docs.microsoft.com/aspnet/core/tutorials/)
-    - [Publicar en un sistema local](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli)
-
-    > [!NOTE]
-    > Puede que prefiera otros métodos para implementar las claves. Seleccione el método que mejor se adapte a su organización.
-
-    > [!TIP]
-    > La [publicación a través de Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) y a un [sistema local](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli) se describe en la [documentación de ASP .net](https://docs.microsoft.com/aspnet/core/). Si usa uno de estos métodos, abra las instrucciones en una pestaña independiente para que pueda volver fácilmente cuando termine.
 
 #### <a name="publish-via-zipdeployui"></a>Publicar a través de ZipDeployUI
 
 1. Vaya a `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
-    Por ejemplo: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
+    Por ejemplo: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
-1. En el código base del almacén de claves, vaya a la carpeta **Customer-Key-store\src\customer-Key-Store** y compruebe que esta carpeta contiene el archivo **customerkeystore. csproj** .
+2. En el código base del almacén de claves, vaya a la carpeta **Customer-Key-store\src\customer-Key-Store** y compruebe que esta carpeta contiene el archivo **customerkeystore. csproj** .
 
-1. Ejecutar: **publicación dotnet**
+3. Ejecutar: **publicación dotnet**
 
      La ventana resultados muestra el directorio en el que se ha implementado la publicación.
 
     Por ejemplo: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-1. Enviar todos los archivos del directorio de publicación a un archivo. zip. Al crear el archivo. zip, asegúrese de que todos los archivos del directorio se encuentran en el nivel raíz del archivo. zip.
+4. Enviar todos los archivos del directorio de publicación a un archivo. zip. Al crear el archivo. zip, asegúrese de que todos los archivos del directorio se encuentran en el nivel raíz del archivo. zip.
 
-1. Arrastre y coloque el archivo. zip que ha creado en el sitio de ZipDeployUI que ha abierto anteriormente. Por ejemplo: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
+5. Arrastre y coloque el archivo. zip que ha creado en el sitio de ZipDeployUI que ha abierto anteriormente. Por ejemplo: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 DKE está implementado y puede ir a las claves de prueba que ha creado. Siga [validando la implementación](#validate-your-deployment) a continuación.
 
 #### <a name="publish-via-ftp"></a>Publicar mediante FTP
 
-1. Conéctese al App Service que creó [anteriormente](#publish-the-key-store).
+1. Conéctese al App Service que creó [anteriormente](#deploy-the-dke-service-and-publish-the-key-store).
 
     En el explorador, vaya a: **Azure portal**  >  **App Service**  >  **Deployment Center**  >  **manual de implementación**de  >  **FTP**  >  **Dashboard**.
 
-1. Copie las cadenas de conexión que se muestran en un archivo local. Usaremos estas cadenas para conectar con el servicio de la aplicación web y cargar archivos a través de FTP.
+2. Copie las cadenas de conexión que se muestran en un archivo local. Usaremos estas cadenas para conectar con el servicio de la aplicación web y cargar archivos a través de FTP.
 
     Por ejemplo:
 
    ![Copiar cadenas de conexión del panel FTP](../media/dke-ftp-dashboard.png)
 
-1. En el código base para el almacenamiento de claves, vaya al **directorio Customer-Key-store\src\customer-Key-Store**.
+3. En el código base para el almacenamiento de claves, vaya al **directorio Customer-Key-store\src\customer-Key-Store**.
 
-1. Compruebe que este directorio contiene el archivo **customerkeystore. csproj** .
+4. Compruebe que este directorio contiene el archivo **customerkeystore. csproj** .
 
-1. Ejecutar: **publicación dotnet**
+5. Ejecutar: **publicación dotnet**
 
     El resultado contiene el directorio en el que se ha implementado la publicación.
 
     Por ejemplo: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-1. Enviar todos los archivos del directorio de publicación a un archivo zip. Al crear el archivo. zip, asegúrese de que todos los archivos del directorio se encuentran en el nivel raíz del archivo. zip.
+6. Enviar todos los archivos del directorio de publicación a un archivo zip. Al crear el archivo. zip, asegúrese de que todos los archivos del directorio se encuentran en el nivel raíz del archivo. zip.
 
-1. Desde el cliente FTP, use la información de conexión que copió para conectarse a su servicio de aplicaciones. Cargue el archivo. zip que creó en el paso anterior en el directorio raíz de la aplicación Web.
+7. Desde el cliente FTP, use la información de conexión que copió para conectarse a su servicio de aplicaciones. Cargue el archivo. zip que creó en el paso anterior en el directorio raíz de la aplicación Web.
 
 DKE está implementado y puede desplazarse a las claves de prueba que ha creado. A continuación, [valide la implementación](#validate-your-deployment).
 
@@ -444,21 +444,21 @@ DKE está implementado y puede desplazarse a las claves de prueba que ha creado.
 
 Después de implementar DKE con uno de los métodos descritos anteriormente, valide la implementación y la configuración del almacén de claves.
 
-Ejecute: 
+Realizar
 
-src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
+src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 
 Por ejemplo:
 
-key_store_tester.ps1 https://mycustomerkeystore.com/mykey
+key_store_tester.ps1 https://mydkeservice.com/mykey
 
 Asegúrese de que no aparecen errores en el resultado. Cuando esté listo, [Registre el almacén de claves](#register-your-key-store).
 
 ## <a name="register-your-key-store"></a>Registrar el almacén de claves
 
-Los siguientes pasos le permiten registrar el almacén de claves. Registrar el almacén de claves es el último paso para implementar DKE antes de empezar a crear etiquetas.
+Los siguientes pasos le permiten registrar el servicio de DKE. El registro del servicio DKE es el último paso en la implementación de DKE para poder empezar a crear etiquetas.
 
-Para registrar el almacén de claves:
+Para registrar el servicio DKE:
 
 1. En el explorador, abra el [portal de Microsoft Azure](https://ms.portal.azure.com/)y vaya a **todos los** registros de la aplicación de \> **identidad** de servicios \> **App Registrations**.
 
@@ -477,26 +477,26 @@ Para registrar el almacén de claves:
 5. En el registro de la nueva aplicación, en el panel izquierdo, en **administrar**, seleccione **autenticación**.
 
 6. Seleccione **Agregar una plataforma**.
- 
+
 7. En el menú emergente **configurar plataformas** , seleccione **Web**.
- 
+
 8. En **URI de redireccionamiento**, escriba el URI del servicio de cifrado de doble clave. Escriba la dirección URL del servicio de aplicaciones, incluidos el nombre de host y el dominio.
 
-    Por ejemplo: https://mycustomerkeystoretest.com
+    Por ejemplo: https://mydkeservicetest.com
 
-    - La dirección URL que especifique debe coincidir con el nombre de host en el que se ha implementado el almacén de claves.
+    - La dirección URL que especifique debe coincidir con el nombre de host en el que está implementado el servicio de DKE.
     - Si está probando localmente con Visual Studio, use **https://localhost:5001** .
     - En todos los casos, el esquema debe ser **https**.
 
-    Asegúrese de que el nombre de host coincida exactamente con el nombre de host de App Service. Puede que lo haya cambiado a `localhost` para solucionar los problemas de la compilación. En **appsettings.jsactivado**, este valor es el nombre de host que se establece para `JwtAudience` .
+    Asegúrese de que el nombre de host coincida exactamente con el nombre de host del servicio de aplicaciones. Puede que lo haya cambiado a `localhost` para solucionar los problemas de la compilación. En **appsettings.jsactivado**, este valor es el nombre de host que se establece para `JwtAudience` .
 
-6. En **concesión implícita**, active la casilla de verificación **tokens de identificador** .
+9. En **concesión implícita**, active la casilla de verificación **tokens de identificador** .
 
-1. Seleccione **Guardar** para guardar los cambios.
+10. Seleccione **Guardar** para guardar los cambios.
 
-7. En el panel izquierdo, seleccione **exponer una API**y, a continuación, junto a URI de identificador de aplicación, seleccione **establecer**.
+11. En el panel izquierdo, seleccione **exponer una API**y, a continuación, junto a URI de identificador de aplicación, seleccione **establecer**.
 
-9. Aún en la página **exponer una API** , en el área **ámbitos definidos por esta API** , seleccione **Agregar un ámbito**. En el nuevo ámbito:
+12. Aún en la página **exponer una API** , en el área **ámbitos definidos por esta API** , seleccione **Agregar un ámbito**. En el nuevo ámbito:
 
     1. Defina el nombre del ámbito como **user_impersonation**.
 
@@ -504,11 +504,11 @@ Para registrar el almacén de claves:
 
     3. Defina los valores restantes necesarios.
 
-    4. Seleccione **Agregar ámbito.**
+    4. Seleccione **Agregar ámbito**.
 
-    Seleccione **Guardar** en la parte superior para guardar los cambios.
+    5. Seleccione **Guardar** en la parte superior para guardar los cambios.
 
-10. Aún en la página **exponer una API** , en el área **aplicaciones cliente autorizadas** , seleccione **Agregar una aplicación cliente**.
+13. Aún en la página **exponer una API** , en el área **aplicaciones cliente autorizadas** , seleccione **Agregar una aplicación cliente**.
 
     En la nueva aplicación cliente:
 
@@ -520,9 +520,9 @@ Para registrar el almacén de claves:
 
     4. Seleccione **Guardar** en la parte superior para guardar los cambios.
 
-El almacén de claves de DKE está registrado. Para continuar, [cree etiquetas con DKE](#create-labels-using-dke).
+El servicio de DKE se ha registrado. Para continuar, [cree etiquetas con DKE](#create-sensitivity-labels-using-dke).
 
-## <a name="create-labels-using-dke"></a>Crear etiquetas con DKE
+## <a name="create-sensitivity-labels-using-dke"></a>Crear etiquetas de confidencialidad mediante DKE
 
 En el centro de cumplimiento de Microsoft 365, cree una nueva etiqueta de confidencialidad y aplique el cifrado como lo haría en otro caso. Seleccione **usar cifrado doble de clave** y escriba la dirección URL del punto de conexión para la clave.
 
@@ -537,7 +537,7 @@ Las etiquetas de DKE que agregue empezarán a aparecer para los usuarios en las 
 
 ### <a name="enable-dke-in-your-client"></a>Habilitar DKE en el cliente
 
-Para habilitar DKE para el cliente, agregue las siguientes claves del registro:
+Si es Office Insider, DKE está habilitado para usted. De lo contrario, habilite DKE para el cliente agregando las siguientes claves del registro:
 
 ```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
@@ -546,3 +546,9 @@ Para habilitar DKE para el cliente, agregue las siguientes claves del registro:
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 ```
+
+## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>Migrar archivos protegidos desde etiquetas HYOK a etiquetas DKE
+
+Si quiere, una vez que haya finalizado la configuración de DKE, puede migrar el contenido que ha protegido mediante etiquetas HYOK a etiquetas de DKE. Para realizar la migración, debe usar el analizador de AIP. Para empezar a usar el escáner, vea [¿Qué es el escáner de etiquetado Unificado de Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner).
+
+Si no migra contenido, el contenido protegido HYOK no se verá afectado.

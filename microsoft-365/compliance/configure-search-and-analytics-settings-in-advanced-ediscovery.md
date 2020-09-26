@@ -1,5 +1,5 @@
 ---
-title: 'Configurar las opciones de búsqueda y análisis: eDiscovery'
+title: 'Configurar las opciones de búsqueda y análisis: eDiscovery avanzado'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,15 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Configure las opciones avanzadas de eDiscovery que se aplican a todo el conjunto de revisiones en un caso. Esto incluye la configuración de análisis y OCR.
-ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Configure las opciones avanzadas de eDiscovery que se aplican a todo el conjunto de revisiones en un caso. Esto incluye la configuración de los análisis y el reconocimiento óptico de caracteres.
+ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033680"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277090"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
+# <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en la exhibición avanzada de documentos electrónicos
 
 Puede establecer la configuración de cada caso de exhibición avanzada de documentos electrónicos para controlar las siguientes funciones.
 
@@ -84,7 +84,15 @@ Hay situaciones en las que cierto texto va a afectar a la calidad de los anális
 
 ## <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
-Cuando esta opción está activada, OCR se ejecutará en archivos de imagen que se agregan a los conjuntos de revisión para que el texto de la imagen se pueda revisar, buscar, etiquetar y analizar. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisiones. Para obtener más información, vea:
+Cuando esta opción está activada, el procesamiento de OCR se ejecutará en los archivos de imagen. El procesamiento de OCR se ejecuta en las siguientes situaciones:
+
+- Cuando los custodios y los [orígenes de datos que no son de Private](non-custodial-data-sources.md) se agregan a un caso. El procesamiento de OCR se lleva a cabo durante el proceso de indización avanzada. Esto significa que el texto de los archivos de imagen que coincide con los criterios de búsqueda se devolverá en una búsqueda de colección.
+
+- Cuando se agrega contenido de otros orígenes de datos (que no están asociados con un custodio y se agrega al caso en un origen de datos que no es de tipo Private) a un conjunto de revisión.
+
+Una vez agregados los datos a un conjunto de revisión, se puede revisar, buscar, etiquetar y analizar el texto de la imagen. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisiones. Para obtener más información, vea:
+
+- [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 
 - [Agregar los resultados de búsqueda a un conjunto de revisión](add-data-to-review-set.md#optical-character-recognition)
 

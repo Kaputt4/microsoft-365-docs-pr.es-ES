@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Vea información general sobre el procesamiento de varios formularios de datos en la herramienta Advanced eDiscovery en Office 365.
-ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Información general sobre el procesamiento de varios formularios de datos en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527410"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285246"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Trabajar con errores de procesamiento en eDiscovery avanzado
 
-El *procesamiento* es el proceso de identificación de archivos, la expansión de documentos y datos adjuntos incrustados, la extracción de texto y OCR (reconocimiento óptico de caracteres) de los archivos de imagen y la indización subsiguiente de ese contenido.  
+El *procesamiento* es el proceso de identificación de archivos, la expansión de documentos y datos adjuntos incrustados, la extracción de texto y el reconocimiento óptico de caracteres (OCR) de los archivos de imagen y la indización subsiguiente de ese contenido.  
 
 Cuando se agregan los orígenes de datos de custodios y no custodios a un caso en la ficha **orígenes** , todos los elementos parcialmente indizados de Microsoft 365 se procesan para que se puedan buscar por completo. Del mismo modo, cuando se agrega contenido a un conjunto de revisión de orígenes de datos que no son de Microsoft 365 y que no son de 365 Microsoft, este contenido también se procesa.
 

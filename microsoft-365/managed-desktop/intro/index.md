@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950501"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269378"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -44,7 +44,7 @@ Nuestras directivas y la línea base de seguridad proporcionan a los usuarios es
 - Tiempos de arranque de los dispositivos de Escritorio administrado de Microsoft de una cuarta parte.
 - Como mínimo, el doble de duración de la batería.
 - Alrededor de un tercio del número de bloqueos de dispositivo por año.
-- Movilidad de dispositivos a través [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), que permite que los usuarios tengan la misma experiencia, independientemente del dispositivo en el que inicien sesión.
+- Movilidad de dispositivos a través de [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), que permite que los usuarios tener la misma experiencia, independientemente del dispositivo en el que inicien sesión.
 
 Los administradores de TI se benefician de estas características:
 

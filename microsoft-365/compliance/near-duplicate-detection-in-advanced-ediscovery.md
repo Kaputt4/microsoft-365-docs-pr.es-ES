@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use la detección de Near duplicada para agrupar documentos similares textualmente al analizar datos de casos para la exhibición avanzada de documentos electrónicos.
+description: Use la detección de casi duplicada para agrupar documentos similares textualmente al analizar datos de casos en eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4c24e1b67af68dc5fccd900fc390a63e8da3c389
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 255531897a1706904005034c56cab00d0032b7f3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036445"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286026"
 ---
-# <a name="near-duplicate-detection"></a>Detección de semiduplicados
+# <a name="near-duplicate-detection-in-advanced-ediscovery"></a>Detección de duplicados Near en eDiscovery avanzado
 
 Considere un conjunto de documentos que se deben revisar en los que un subconjunto se basa en la misma plantilla y que tiene principalmente el mismo lenguaje reutilizable, con unas pocas diferencias aquí y allí. Si un revisor puede identificar este subconjunto, revise una de ellas minuciosamente y revise las diferencias para el resto, no habría perdido ninguna información única y solo tardó una pequeña parte del tiempo que habría llevado a leer todos los documentos que abarcaban. La detección de duplicados de casi todos los documentos con texto similar que le ayudarán a mejorar el eficacia del proceso de revisión.
 

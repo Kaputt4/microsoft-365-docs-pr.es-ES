@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la indización avanzada para asegurarse de que su búsqueda captura todos los datos que desea investigar.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6e72ec4a41d5b32ef3837e52f21836207c6f66e1
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 7b0bb1a757ac70466fb43f2385485ce6da1dc741
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527582"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285966"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indización avanzada de datos para una investigación
 

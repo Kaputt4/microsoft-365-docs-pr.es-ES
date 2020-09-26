@@ -1,12 +1,12 @@
 ---
-title: Ver documentos en un conjunto de revisión-eDiscovery
+title: Ver documentos en un conjunto de revisión en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 description: Elija cómo ver el contenido en la exhibición avanzada de documentos electrónicos, como texto, anotar, convertido o vista nativa.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c7527caedb06ccc6a2600a35576600452bb9c09a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034292"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286056"
 ---
-# <a name="view-documents-in-a-review-set"></a>Ver documentos de un conjunto de revisión
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Ver documentos en un conjunto de revisión en eDiscovery avanzado
 
 EDiscovery avanzado muestra contenido a través de varios visores cada uno con fines distintos. Se pueden usar los distintos visores haciendo clic en cualquier documento dentro de un conjunto de revisión. Los visores que se proporcionan actualmente son:
 

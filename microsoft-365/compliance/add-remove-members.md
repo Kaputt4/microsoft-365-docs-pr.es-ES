@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden tener acceso a una investigación al administrar una investigación de datos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dd57b0bd30e032f16160953e2849d908ecdfc3c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5348d457cfeeeb0f23b6004aefd727a662ac3dc9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034920"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285164"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Agregar o quitar miembros de una investigación de datos
 

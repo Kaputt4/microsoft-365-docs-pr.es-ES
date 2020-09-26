@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Las estadísticas de búsqueda son una manera eficaz de validar los resultados de la búsqueda y mostrarlos en estado en la página de flotante detalles de búsqueda.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 24de99cf0a7ae21b5966811b988c93d64abd5148
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035842"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286096"
 ---
-# <a name="search-statistics"></a>Estadísticas de búsqueda
+# <a name="search-statistics-in-data-investigations-preview"></a>Estadísticas de búsqueda en investigaciones de datos (versión preliminar)
 
 Una manera eficaz de validar los resultados de la búsqueda cuando la investigación es un incidente de datos es ver las estadísticas de los resultados de la búsqueda para asegurarse de que se ajustan a sus expectativas. Cuando una búsqueda termina de ejecutarse, se muestran las siguientes estadísticas de alto nivel bajo **Estado** en la página flotante de búsqueda de detalles:
 

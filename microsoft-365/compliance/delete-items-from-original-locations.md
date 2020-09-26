@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se describe cómo usar la herramienta de nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para eliminar elementos de sus ubicaciones originales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 82f411dd380c039d2c8a9011144d5a49fcbfd597
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817889"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285776"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminar elementos de su ubicación original (versión preliminar)
 

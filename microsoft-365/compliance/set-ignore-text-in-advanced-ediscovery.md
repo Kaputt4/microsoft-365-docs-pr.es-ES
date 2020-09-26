@@ -8,7 +8,7 @@ manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: Obtenga información sobre cómo definir la regla para omitir texto específico al usar los módulos Analyze y Process en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e167cc2877ca6e1ecb2b4ac896e2000b0441be59
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936897"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285856"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Establecer la opción omitir texto para analizar en eDiscovery avanzado (Classic)
 
@@ -36,13 +36,12 @@ Si la característica de omitir texto se ha definido previamente para los módul
 
 Se aplican varios filtros de omitir texto en el orden en que se especificaron. Para cambiar el orden en el que se aplican, se deben eliminar y volver a especificar en el orden deseado.
   
-Por ejemplo, si el contenido de texto es: "DAVE BOB ALICE CAROL Eva", a continuación se muestran ejemplos de omitir las entradas de texto y los resultados:
-  
-||||
-|:-----|:-----|:-----|
-|**Omitir entradas de texto** <br/> |**==\>** <br/> |**Resultados** <br/> |
-|"ALICIA", "BOB CAROL"  <br/> |==\>  <br/> |"DAVE EVA"  <br/> |
-|"ALICIA", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"EVA BOB CAROL EVA"  <br/> |
+Por ejemplo, si el contenido de texto es: "DAVE BOB ALICE CAROL Eva", a continuación se muestran ejemplos de cómo omitir las entradas de texto y los resultados que estas entradas producen:
+
+|**Omitir entradas de texto** <br/> |**Resultados** <br/> |
+|:-----|:-----|
+|"ALICIA", "BOB CAROL"  <br/> |"DAVE EVA"  <br/> |
+|"ALICIA", "BOB ALICE CAROL"  <br/> |"EVA BOB CAROL EVA"  <br/> |
    
 La segunda omisión de la entrada de texto no se implementa porque no se encuentra la cadena como tal después de que se haya aplicado el primer texto ignore.
   

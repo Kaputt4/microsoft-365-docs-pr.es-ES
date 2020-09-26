@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo el módulo de relevancia analiza los datos en evidencia con una descripción del flujo de trabajo de relevancia y los pasos de aprendizaje en las investigaciones de datos (versión preliminar).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64bd0101fd2a0804da9e513241a97bc9f133880e
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: fcfe651402b123ac6ec918c4c8a7170c78e78bd3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528166"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286076"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Usar el módulo relevancia para analizar datos en evidencias
 

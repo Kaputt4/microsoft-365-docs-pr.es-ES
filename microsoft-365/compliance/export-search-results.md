@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a809a5880a247c66cd96daf7ae44efea13c04704
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269601"
+ms.locfileid: "48277466"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -317,7 +317,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
 
   ![Herramienta de exportación de exhibición de documentos electrónicos](../media/eDiscoveryExportTool.png)
 
-  Haga clic en el cuadro exportar clave y, a continuación, presione `CTRL + V` para pegar la clave de exportación (el script copia la clave de exportación al portapapeles para que se pueda pegar en el cuadro). Haga clic en **examinar** para especificar la ubicación en la que desea descargar los archivos de resultados de búsqueda y, a continuación, inicie la descarga.
+  Haga clic en el cuadro exportar clave y, a continuación, presione `CTRL + V` para pegar la clave de exportación (el script copia la clave de exportación al portapapeles). Haga clic en **examinar** para especificar la ubicación en la que desea descargar los archivos y, a continuación, inicie la descarga.
 
   Como se mencionó anteriormente, se recomienda descargar los resultados de la búsqueda en una unidad de disco local debido a la gran cantidad de actividad del disco (lecturas y escrituras). No descargar los resultados de la búsqueda en una unidad de red asignada o en otra ubicación de red.
 

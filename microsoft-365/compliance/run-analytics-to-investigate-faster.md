@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar herramientas analíticas como detección de duplicados, subprocesamiento de correo electrónico y temas para acelerar sus investigaciones.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e7c5103adabadf88028351f0314bcdfaa2cd4d0f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7a97f5ce7aefdd230a3c7a671155a7b73b2e8e19
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035852"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285346"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>Ejecutar el análisis para investigar más rápido
 

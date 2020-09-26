@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Durante una investigación de datos, use temas para organizar documentos buscando ideas o conceptos comunes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e05210036ce2db0a06b6450a611908cf2de24f19
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 249d0739e7d83665f3d2a30d544886c43f89e07d
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034514"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285526"
 ---
-# <a name="themes"></a>Temas
+# <a name="themes-in-data-investigations-preview"></a>Temas en investigaciones de datos (versión preliminar)
 
 Cuando alguien redacta un documento, no elige palabras de forma aleatoria; están intentando transmitir ideas o conceptos, y las palabras se eligen en consecuencia. Módulos de temas agrupa los documentos que tratan temas similares para que los revisores puedan ser más eficientes para pasar por los documentos.
 

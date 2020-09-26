@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo el módulo de relevancia analiza los datos en evidencia con una descripción del flujo de trabajo de relevancia y los pasos de aprendizaje en eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4babb0aa7693bc1107cc7594da967bca2d307228
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a05ec47a4a6b2100c062912e7668c2bf785caf7
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034472"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286066"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Usar el módulo relevancia para analizar datos en eDiscovery avanzado
 
@@ -30,7 +30,7 @@ En la exhibición avanzada de documentos electrónicos, el módulo de relevancia
 
 - Proceso: cada conjunto de carga agregado al conjunto de revisión se mostrará como un "contenedor" aquí. Debe procesar estos documentos para poder agregarlos al módulo de relevancia; Aquí también puede marcarlos como semilla o etiquetarse previamente para un problema específico.
 
-- Agregar a relevancia: en cargas \> de relevancia, puede agregar documentos que se han procesado en relevancia para que estén disponibles para su aprendizaje.
+- Agregar a relevancia: en cargas de relevancia \> , puede agregar documentos que se han procesado en relevancia para que estén disponibles para su aprendizaje.
 
 El flujo de trabajo de relevancia se muestra y se describe de la siguiente manera:
   

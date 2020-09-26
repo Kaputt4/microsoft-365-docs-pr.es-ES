@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implemente las capacidades de Microsoft Information Protection (MIP) mediante el cumplimiento de Microsoft 365 para ayudarle a descubrir, clasificar y proteger información confidencial donde vive o se desplaza.
-ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131970"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277522"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Protección de la información de Microsoft en Microsoft 365
 
@@ -42,7 +42,7 @@ Para comprender su panorama de datos e identificar datos importantes en todo el 
 |:------|:------------|:--------------------|:-----------------------------|
 |[Tipos de información confidencial](sensitive-information-type-entity-definitions.md)| Identifica los datos confidenciales mediante expresiones regulares integradas o personalizadas o una función, junto con evidencias corroboradoras que incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
 |[Clasificadores capacitados (versión preliminar)](classifier-learn-about.md)| Clasifica datos para usted, usando uno de los clasificadores integrados o entrena un clasificador con su propio contenido | [Introducción a los clasificadores que se pueden entrenar (versión preliminar)](classifier-get-started-with.md) |
-|[Clasificación de datos](data-classification-overview.md) | Identifica los elementos que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado como un tipo de información confidencial en la organización y las acciones que los usuarios están tomando en ellos.  | [Introducción al explorador de contenido](data-classification-content-explorer.md)<br /><br /> [Introducción al explorador de actividades](data-classification-activity-explorer.md) |
+|[Clasificación de datos](data-classification-overview.md) | Identifica los elementos que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado como un tipo de información confidencial en la organización y las acciones que los usuarios están tomando en ellos.  | [Introducción al explorador de contenido](data-classification-content-explorer.md)<br /><br /> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Proteger los datos
 
@@ -52,7 +52,7 @@ Para aplicar acciones de protección flexibles que incluyan cifrado, restriccion
 |:------|:------------|---------------------|:----------------------------|
 |[Etiquetas de confidencialidad](sensitivity-labels.md)| Una única solución en aplicaciones, servicios y dispositivos para etiquetar y proteger los datos a medida que viajan dentro y fuera de la organización. <br /><br />Escenario de ejemplo: [aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se exportan](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) |
 |[Cliente de etiquetación unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Para los equipos Windows, extiende las etiquetas de confidencialidad para las características y funciones adicionales que incluyen el etiquetado y la protección de todos los tipos de archivo desde el explorador de archivos y PowerShell<br /><br /> Ejemplo de características adicionales: [configuraciones personalizadas para el cliente de etiquetado Unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guía del administrador del cliente de etiqueta unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[Cifrado de claves doble](double-key-encryption.md)| En todos los casos, solo usted puede descifrar el contenido protegido o los requisitos normativos deben mantener las claves de cifrado dentro de un límite geográfico | [Implementar el cifrado de doble clave](double-key-encryption.md#deploy-double-key-encryption)|
+|[Cifrado de claves doble](double-key-encryption.md)| En todos los casos, solo usted puede descifrar el contenido protegido o los requisitos normativos deben mantener las claves de cifrado dentro de un límite geográfico | [Implementar el cifrado de doble clave](double-key-encryption.md)|
 |[Office 365 cifrado de mensajes](ome.md) (OME)| Cifra los mensajes de correo electrónico y los documentos adjuntos que se envían a cualquier usuario en cualquier dispositivo, de modo que solo los destinatarios autorizados puedan leer la información de correo electrónico.  <br /><br />Escenario de ejemplo: [revocar correo electrónico cifrado por el cifrado de mensajes avanzado](revoke-ome-encrypted-mail.md) | [Introducción al cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)|
 |[Cifrado de servicio con clave de cliente](customer-key-overview.md) | Protege contra la visualización de datos por parte de sistemas o sistemas no autorizados y complementa el cifrado de disco de BitLocker en centros de datos de Microsoft. | [Configurar Clave de cliente de Office 365](customer-key-set-up.md)|
 |[Administración de derechos de la información (IRM) de SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protege las listas y bibliotecas de SharePoint de modo que, cuando un usuario desproteja un documento, el archivo descargado esté protegido para que solo los usuarios autorizados puedan ver y usar el archivo de acuerdo con las directivas que especifique. | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md).|

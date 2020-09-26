@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, obtendrá información sobre la herramienta de investigación de datos (versión preliminar) en Microsoft 365. La herramienta de investigaciones de datos le ayuda a evaluar y corregir la derramación de datos.
-ms.openlocfilehash: 6975d554e939481c6ee1c32ec4e76bb25c7bf36c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036053"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285996"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 

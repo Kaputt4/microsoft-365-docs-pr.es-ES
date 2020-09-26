@@ -13,14 +13,14 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Use la herramienta de búsqueda de contenido eDiscovery en el centro de seguridad & cumplimiento para encontrar rápidamente el correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial.
-ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c02bcf627cec46b52ba9ff449a0d39b185ce4a0a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632925"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285986"
 ---
-# <a name="search-for-content"></a>Buscar contenido
+# <a name="search-for-content-using-the-content-search-tool"></a>Buscar contenido mediante la herramienta de búsqueda de contenido
 
 Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para encontrar rápidamente el correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial. Puede usar la herramienta de búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en herramientas de colaboración, como Microsoft Teams y grupos de 365 de Microsoft.
   
@@ -36,7 +36,7 @@ El primer paso consiste en empezar a usar la herramienta de búsqueda de conteni
     
 - [Ejecutar una búsqueda de lista de identificadores](csv-file-for-an-id-list-content-search.md) para buscar mensajes de correo electrónico específicos 
     
-- [Buscar buzones de correo basados en la nube](search-cloud-based-mailboxes-for-on-premises-users.md) para usuarios locales en Microsoft 365
+- [Buscar buzones de correo basados en la nube ](search-cloud-based-mailboxes-for-on-premises-users.md) para usuarios locales en Microsoft 365
 
 - [Ver las estadísticas de palabras clave](view-keyword-statistics-for-content-search.md) para los resultados de una búsqueda y, a continuación, refinar la consulta si es necesario 
     
@@ -79,7 +79,7 @@ La búsqueda de contenido es fácil de usar, pero también es una herramienta ef
 
 A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos de PowerShell en el centro de seguridad & cumplimiento. Para facilitar esta tarea, hemos creado una serie de scripts de PowerShell del centro de seguridad & cumplimiento que le ayudarán a completar tareas complejas relacionadas con la búsqueda de contenido.
   
-- [Buscar en buzones de correo y carpetas específicas](use-content-search-for-targeted-collections.md) (lo que se denomina *colección de destino* ) cuando se tiene la certeza de que los elementos que responden a un caso se encuentran en esa carpeta 
+- [Buscar en buzones de correo y carpetas específicas](use-content-search-for-targeted-collections.md) (lo que se denomina  *colección de destino*  ) cuando se tiene la certeza de que los elementos que responden a un caso se encuentran en esa carpeta 
     
 - Buscar una lista de usuarios en [el buzón y en la ubicación de OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) 
     

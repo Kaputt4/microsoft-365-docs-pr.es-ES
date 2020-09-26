@@ -1,5 +1,5 @@
 ---
-title: 'Subprocesamiento de correo electrónico: eDiscovery'
+title: Subprocesamiento de correo electrónico en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Al realizar un análisis avanzado de eDiscovery, el subprocesamiento de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en categorías diferentes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e6072650a07f634b8dc19a013907eb36469c443b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527678"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285566"
 ---
-# <a name="email-threading"></a>Subprocesos de correo electrónico
+# <a name="email-threading-in-advanced-ediscovery"></a>Subprocesamiento de correo electrónico en eDiscovery avanzado
 
 Considere una conversación de correo electrónico que ha estado ocurriendo durante un rato. En la mayoría de los casos, el último correo electrónico del hilo incluirá el contenido de todos los mensajes de correo electrónico anteriores; la revisión del último correo electrónico proporcionará un contexto completo de la conversación que se produjo en el hilo. El encadenamiento de correo electrónico identifica dichos mensajes para que los revisores puedan revisar una fracción de los documentos recopilados sin perder ningún contexto.
 

@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Use casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento en Office 365 para administrar la investigación legal de su organización.
-ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815507"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285656"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
@@ -68,7 +68,7 @@ A continuación, se presenta una introducción rápida al flujo de trabajo integ
 
 - [Recopilar datos](collecting-data-for-ediscovery.md) para un caso y agregarlos [a un conjunto de revisión](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) para una investigación más detallada
 
-- [Ver](view-documents-in-review-set.md) documentos, [consultar](review-set-search.md) datos y [etiquetar](tagging-documents.md) elementos en un conjunto de revisión
+- [Ver ](view-documents-in-review-set.md) documentos, [consultar](review-set-search.md) datos y [etiquetar](tagging-documents.md) elementos en un conjunto de revisión
 
 - [Analizar datos de casos](analyzing-data-in-review-set.md) con herramientas de análisis avanzadas
 

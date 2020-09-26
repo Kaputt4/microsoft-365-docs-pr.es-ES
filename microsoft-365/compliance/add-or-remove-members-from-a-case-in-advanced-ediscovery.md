@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden tener acceso a un caso al administrar un caso de exhibición avanzada de documentos electrónicos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0f54953c77f3350746f3853ba128b2d5c08d4321
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 301796dfd15236a8d590d8f94ff5b885176d5d82
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034664"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285154"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
@@ -34,7 +34,7 @@ Puede Agregar o quitar miembros para administrar quién puede tener acceso al ca
 
 3. Haga clic en **Actualizar**.
 
-4. En **administrar miembros**, haga clic en **Agregar** para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso haciendo clic en **Agregar** en **administrar grupos de roles**.
+4. En **administrar miembros**, haga clic en **Agregar** para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso haciendo clic en  **Agregar** en **administrar grupos de roles**.
 
 5. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, active la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
 

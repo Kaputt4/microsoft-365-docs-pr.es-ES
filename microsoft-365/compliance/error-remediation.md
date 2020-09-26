@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Aprenda a usar la corrección de errores para corregir problemas de datos en investigaciones de datos (versión preliminar) que podrían impedir el procesamiento adecuado de contenido.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c6c62bb1a3191e369d553df5eb451d4656e704d7
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817819"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286036"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Corrección de errores al procesar datos para una investigación
 
@@ -43,15 +42,15 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
 
 3. Haga clic en **+ nuevo error de corrección**.
 
-    ![Corrección de errores](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Haga clic en el nuevo botón corrección de errores](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     La sesión de corrección de errores comienza a partir de una fase de preparación donde los archivos con errores se copian en una ubicación segura de Azure para que se puedan descargar.
 
-    ![Preparación de la corrección de errores](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparación para la corrección de errores](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Una vez completada la preparación, haga clic en **siguiente: descargar archivos** para continuar con la descarga.
 
-    ![Descargar archivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Descargar los archivos que necesitan corrección](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Para descargar archivos, especifique la **ruta de destino de la descarga**. Se trata de una ruta de acceso en el equipo local en la que se debe descargar el archivo.  La ruta de acceso predeterminada,%USERPROFILE%\Downloads\errors, apunta a la carpeta descargas del usuario que ha iniciado sesión; Esto se puede cambiar si es necesario.
 
@@ -65,7 +64,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
 
     Los archivos se descargarán.
 
-    ![Preparación de la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Información acerca de los archivos descargados en el símbolo del sistema](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Si tiene problemas al ejecutar este comando, consulte [solucionar problemas de AzCopy en EDiscovery avanzado](troubleshooting-azcopy.md).
@@ -77,13 +76,13 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
 
 8. Ahora, vuelva a investigaciones de datos (versión preliminar) y haga clic en **siguiente: cargar archivos**.  Se desplazará al siguiente paso en el que ahora puede cargar los archivos.
 
-    ![Cargar archivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![La pestaña cargar archivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Especifique la ubicación de los archivos corregidos en el cuadro **de texto Ruta de acceso a la ubicación del archivo** y, a continuación, haga clic en **copiar al portapapeles**.
 
 10. Pegue el comando en un símbolo del sistema de Windows y presione **entrar** para cargar los archivos.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Información acerca de los archivos cargados en el símbolo del sistema](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Por último, vuelva a investigaciones de datos (versión preliminar) y haga clic en **siguiente: procesar archivos**.
 

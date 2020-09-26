@@ -1,5 +1,5 @@
 ---
-title: 'Consultas de búsqueda de compilación: investigaciones de datos'
+title: Crear consultas de búsqueda en investigaciones de datos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Use palabras clave y condiciones para restringir el ámbito de búsqueda al buscar datos mediante la investigación de datos en Microsoft 365.
-ms.openlocfilehash: 95466d0e7c7109001fef001cc0d5bca5b6d658ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b2d77ef23e7427fd5f770a27166dc571f853191d
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034118"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285766"
 ---
-# <a name="build-search-queries"></a>Crear consultas de búsqueda
+# <a name="build-search-queries-in-data-investigations-preview"></a>Crear consultas de búsqueda en investigaciones de datos (versión preliminar)
 
 Al crear consultas de búsqueda, puede usar palabras clave para buscar contenido y condiciones específicos para reducir el ámbito de la búsqueda y devolver los elementos más relevantes para la investigación.
 

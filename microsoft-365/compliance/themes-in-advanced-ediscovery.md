@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Use los temas de la exhibición avanzada de documentos electrónicos para organizar los conjuntos de revisiones buscando el tema dominante en cada documento.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: eb008e091cd8c8330d1cdd5b388e252af70922da
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034524"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285536"
 ---
-# <a name="themes"></a>Temas
+# <a name="themes-in-advanced-ediscovery"></a>Temas en eDiscovery avanzado
 
 ¿Cómo escribe un documento un usuario? Por lo general, comienzan con una o más ideas que quieren transmitir en el documento y se redactan con palabras que se alinean con las ideas. Cuanto más frecuente sea la idea, más frecuentes serán las palabras relacionadas con dicha idea. Esto informa de cómo los usuarios también usan los documentos. Lo más importante que debe comprender a partir de la lectura de un documento son las ideas que el documento está tratando de transmitir, las ideas que aparecen en dónde y cuáles son las relaciones entre las ideas.
 

@@ -14,15 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: Al administrar investigaciones de datos, use la detección de duplicados Near para agrupar documentos similares textualmente al analizar datos de casos.
+description: Al administrar investigaciones de datos, use la detección de duplicados Near para agrupar documentos similares textualmente al analizar pruebas en investigaciones de datos (versión preliminar).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aa451051c008f7a1614661d3bd66129cac6bb4ad
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37ce968016e674ec83da536c65361d2075cf9bbb
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036435"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285956"
 ---
 # <a name="near-duplicate-detection"></a>Detección de semiduplicados
 

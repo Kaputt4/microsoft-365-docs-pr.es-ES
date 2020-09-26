@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe el uso de la herramienta nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para administrar un incidente de derrame de datos.
-ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8151cfa04d166ccc180f01d9bb88322ba6157d82
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635940"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285576"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365
 
@@ -141,6 +141,6 @@ Para eliminar una investigación:
 
 1. En la pestaña **configuración** , haga clic en información de la **investigación**.
 
-2. Haga clic en **eliminar investigación**. 
+2. Haga clic en  **eliminar investigación**. 
 
 Si no necesita eliminar la investigación o si desea guardar la información recopilada durante la investigación, puede hacer clic en **cerrar caso**. Posteriormente, puede volver a abrir las investigaciones cerradas.
