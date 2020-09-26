@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -15,45 +15,61 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 451eb2a10074081b6d688754002d4f2e9f50f4b1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd92d8d471af07d6be252390f0be0764e6b320f7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351697"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200326"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
-La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. Ahora, con el lanzamiento de la Auditoría avanzada en Microsoft 365, estamos agregando nuevas capacidades de auditoría que pueden ayudar a su organización con las investigaciones forenses y de cumplimiento.
+La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. La auditoría avanzada permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y agilizar el acceso a la API de Actividad de administración de Office 365.
 
 > [!NOTE]
-> Auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 E5 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una licencia al complemento Cumplimiento de Microsoft 365 E5 para cuando se requiera una licencia por usuario para las funciones de Auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones.
+> Auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 E5 o Microsoft 365 Enterprise E5. Además, se puede asignar a los usuarios una licencia al complemento Cumplimiento de Microsoft 365 E5 o eDiscovery E5 y auditoría para cuando se requiera una licencia por usuario para las funciones de Auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones. Para obtener más información sobre las licencias, consulte la [Guía de licencias de Microsoft 365 para la seguridad y cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
-Este artículo ofrece una visión general de estas capacidades de auditoría avanzada.
+Este artículo ofrece una visión general de las capacidades de auditoría avanzada.
 
 ## <a name="long-term-retention-of-audit-logs"></a>Retención a largo plazo de los registros de auditoría
 
-La Auditoría avanzada conserva todos los registros de auditoría de Exchange, SharePoint y Azure Active Directory durante un año. Esto se logra mediante la directiva de retención de registros de auditoría predeterminada que conserva durante un año cualquier registro de auditoría que contenga el valor de **Exchange** ,**SharePoint** o **AzureActiveDirectory** para la propiedad de la **carga de trabajo** (que indica el servicio en el que se produjo la actividad). Esto puede ser de utilidad para las investigaciones forenses y de cumplimiento en curso. Para más información, vea la sección "Directiva predeterminada de retención de registros de auditoría" en [administrar las directivas de retención de registros de auditoría](audit-log-retention-policies.md#default-audit-log-retention-policy).
+La Auditoría avanzada conserva todos los registros de auditoría de Exchange, SharePoint y Azure Active Directory durante un año. Esto se logra mediante la directiva de retención de registros de auditoría predeterminada que conserva durante un año cualquier registro de auditoría que contenga el valor de **Exchange** ,**SharePoint** o **AzureActiveDirectory** para la propiedad de la **carga de trabajo** (que indica el servicio en el que se produjo la actividad). Retener registros de auditoría durante períodos más prolongados puede ser de ayuda para investigaciones en curso de cumplimiento y forenses. Para más información, vea la sección "Directiva predeterminada de retención de registros de auditoría" en [Administrar las directivas de retención de registros de auditoría](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-## <a name="audit-log-retention-policies"></a>Directivas de retención de registros de auditoría
+También estamos publicando la posibilidad de retener registros de auditoría durante 10 años. La retención de los registros de auditoría de 10 años ofrece soporte a investigaciones de larga duración y ayuda a responder frente a obligaciones reglamentarias, jurídicas e internas.
 
-Todos los registros de auditoría generados en otros servicios que no estén cubiertos por la directiva predeterminada de retención de registros de auditoría (descrita en la sección anterior) se conservarán durante 90 días. Sin embargo, ahora puede crear directivas de retención de registro personalizados de auditoría para conservar otros registros de auditoría de hasta un año. Puede crear una directiva para conservar registros de auditoría en función de uno o varios de los siguientes criterios:
+> [!NOTE]
+> La retención de los registros de auditoría durante 10 años necesitará una licencia adicional de complemento. Esta nueva licencia estará disponible a principios de 2021. Para más información, vea la sección [Preguntas más frecuentes sobre Auditoría avanzada](#faqs-for-advanced-audit) de este artículo.
 
-- Las actividades auditadas se realizan en el servicio de Microsoft 365
+### <a name="audit-log-retention-policies"></a>Directivas de retención de registros de auditoría
 
-- Especificar las actividades auditadas
+Todos los registros de auditoría generados en otros servicios que no estén cubiertos por la directiva predeterminada de retención de registros de auditoría (descrita en la sección anterior) se conservarán durante 90 días. Sin embargo, puede crear directivas de retención de registro personalizados de auditoría para conservar otros registros de auditoría durante periodos de tiempo de hasta 10 años. Puede crear una directiva para conservar registros de auditoría en función de uno o varios de los siguientes criterios:
 
-- Ser el usuario que realiza la actividad auditada
+- Las actividades auditadas se realizan en el servicio de Microsoft 365.
 
-También puede especificar el tiempo de retención de los registros de auditoría que coincidan con la directiva y el nivel de prioridad, de modo que ciertas políticas específicas tengan prioridad sobre otras. También debe tener en cuenta que cualquier directiva de retención de registros personalizados de auditoría tendrán prioridad sobre la directiva predeterminada de retención de auditorías en caso de que necesite conservar los registros de auditoría de Exchange, SharePoint o Azure Active Directory durante menos de un año para todos o algunos de los usuarios de su organización. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
+- Especificar las actividades auditadas.
+
+- Ser el usuario que realiza la actividad auditada.
+
+También puede especificar el tiempo de retención de los registros de auditoría que coincidan con la directiva y el nivel de prioridad, de modo que ciertas políticas específicas tengan prioridad sobre otras. También debe tener en cuenta que cualquier directiva de retención de registros personalizados de auditoría tendrá prioridad sobre la directiva predeterminada de retención de auditorías en caso de que necesite conservar los registros de auditoría de Exchange, SharePoint o Azure Active Directory durante menos de un año (o durante 10 años) para todos o algunos de los usuarios de su organización. Para obtener más información, vea [administrar directivas de retención de los registros de auditoría](audit-log-retention-policies.md).
 
 ## <a name="access-to-crucial-events-for-investigations"></a>Acceso a eventos fundamentales para investigaciones
 
-Los eventos de auditoría de alto valor relacionados con la seguridad y el cumplimiento son aquellos que pueden ayudarle a investigar las posibles infracciones u otras investigaciones forenses. El primero de estos eventos fundamentales que estamos lanzando es la acción de auditoría del buzón *MailItemsAccessed* Esta acción se activa cuando se obtiene acceso a los datos de correo electrónico a través de protocolos de correo y clientes de correo. La acción MailItemsAccess puede ayudar a los investigadores a identificar las vulneraciones de datos y determinar el ámbito de los mensajes que han estado en peligro. Si un atacante obtuvo acceso a los mensajes de correo electrónico, se desencadenará la acción MailItemsAccessed aunque no haya ninguna señal explícita de que se hayan leído realmente mensajes (es decir, el tipo de acceso como, por ejemplo, mediante enlace o sincronización, se graba en el registro de auditoría).
+La Auditoría avanzada ayuda a las organizaciones a llevar a cabo investigaciones forenses y de cumplimiento mediante el acceso a eventos fundamentales, como cuando se obtuvo acceso a elementos de correo, o bien cuando se respondió a elementos de correo y se reenviaron, y cuándo y qué buscó un usuario en Exchange Online y SharePoint Online. Estos sucesos vitales pueden ayudarle a investigar posibles vulneraciones y determinar el alcance de la intromisión.  La Auditoría avanzada proporciona los siguientes eventos fundamentales:
 
-La nueva acción de buzón MailItemsAccessed reemplaza a MessageBind en el registro de auditoría de buzón de Exchange Online y proporciona las siguientes mejoras:
+- [MailItemsAccessed](#mailitemsaccessed)
+
+- [Send](#send)
+
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+
+### <a name="mailitemsaccessed"></a>MailItemsAccessed
+
+El evento MailItemsAccessed es una acción de edición del buzón de correo y se activa cuando se obtiene acceso a los datos de correo electrónico a través de protocolos de correo y clientes de correo. La acción MailItemsAccess puede ayudar a los investigadores a identificar las vulneraciones de datos y determinar el ámbito de los mensajes que han estado en peligro. Si un atacante obtuvo acceso a los mensajes de correo electrónico, se desencadenará la acción MailItemsAccessed aunque no haya ninguna señal explícita de que se hayan leído realmente mensajes (es decir, el tipo de acceso como, por ejemplo, mediante enlace o sincronización, se graba en el registro de auditoría).
+
+La acción de buzón MailItemsAccessed reemplaza a MessageBind en el registro de auditoría de buzón de Exchange Online y proporciona las siguientes mejoras:
 
 - MessageBind sólo era configurable para el tipo de inicio de sesión de usuario AuditAdmin; no se aplicaba a las acciones de los delegados o los propietarios. MailItemsAccessed se aplica a todos los tipos de inicio de sesión.
 
@@ -63,13 +79,55 @@ La nueva acción de buzón MailItemsAccessed reemplaza a MessageBind en el regis
 
 Para obtener información sobre los registros de auditoría de las actividades de MailItemsAccessed, vea [usar la auditoría avanzada para investigar cuentas comprometidas](mailitemsaccessed-forensics-investigations.md).
 
-### <a name="search-for-mailitemsaccessed-audit-records"></a>Buscar registros de auditoría de MailItemsAccessed
+Para buscar registros de auditoría de MailItemsAccessed, puede buscar la actividad **elementos del buzón a los que se ha accedido** en la lista desplegable **actividades de buzón de Exchange** en la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento de Microsoft 365.
 
-Para buscar registros de auditoría de MailItemsAccessed, puede buscar la actividad **elementos del buzón a los que se ha accedido** en la lista desplegable **actividades de buzón de Exchange** en la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de seguridad y cumplimiento.
-
-![Buscar acciones MailItemsAccessed en la herramienta de búsqueda de registros de auditoría](../media/MailItemsAccessedSCC1.png)
+![Buscar acciones MailItemsAccessed en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_MailItemsAccessed.png)
 
 También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
+
+### <a name="send"></a>Enviar
+
+El evento Enviar también es una acción de auditoría del buzón de correo y se activa cuando un usuario realiza una de las acciones siguientes:
+
+- Envía un mensaje de correo electrónico
+
+- Responde a un mensaje de correo electrónico
+
+- Reenvía un mensaje de correo electrónico
+
+Los investigadores pueden usar el evento Send para identificar correos enviados desde una cuenta en peligro. El registro de auditoría para un evento de Send contiene información sobre el mensaje, como cuándo se ha enviado el mensaje, el id. del InternetMessage, la línea de asunto y si el mensaje contiene datos adjuntos. Esta información de auditoría puede ayudar a que los investigadores identifiquen información acerca de los mensajes de correo electrónico enviados a través de una cuenta en peligro o por un atacante. Además, los investigadores pueden usar una herramienta de eDiscovery de Microsoft 365 para buscar el mensaje (con la línea de asunto o el id. de mensaje) para identificar los destinatarios a los que se envió el mensaje y el contenido real del mensaje enviado.
+
+Para buscar registros de auditoría de Send, puede buscar la actividad de **Mensaje enviado** en la lista desplegable **Actividades de buzón de Exchange** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento de Microsoft 365.
+
+![Buscar acciones de mensaje enviado en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SentMessage.png)
+
+También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
+
+### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
+
+El evento SearchQueryInitiatedExchange se activa cuando una persona usa la barra de búsqueda de Outlook o Outlook en la web para buscar elementos en un buzón. Los investigadores pueden usar el evento SearchQueryInitiatedExchange para determinar si un atacante que pueda haber puesto en peligro una cuenta ha buscado o intentado tener acceso a información confidencial en el buzón de correo. El registro de auditoría para un evento SearchQueryInitiatedExchange contiene información, como el texto de la consulta de búsqueda real, y si la búsqueda se ha realizado en el cliente de escritorio de Outlook o en Outlook en la Web. Al observar las consultas de búsqueda que un atacante pudiera haber realizado, un investigador puede comprender mejor el porqué se buscaron esos datos de correo.
+
+Para buscar registros de auditoría de SearchQueryInitiatedExchange, puede buscar la actividad de **Búsqueda de mensaje enviado** en la lista desplegable de **Actividades de búsqueda** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento.
+
+![Buscar acciones de búsqueda de mensaje enviado en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SearchExchange.png)
+
+También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
+
+> [!NOTE]
+> Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedExchange (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+
+### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
+
+De forma similar a la búsqueda de elementos de buzón, el evento SearchQueryInitiatedSharePoint se activa cuando una persona busca elementos en el sitio de inicio de SharePoint, los sitios de Teams, los sitios de colaboración y los sitios centrales de la organización. Los investigadores pueden usar el evento SearchQueryInitiatedSharePoint para determinar si un atacante ha intentado encontrar información confidencial en SharePoint (y, posiblemente, haber accedido a ella). El registro de auditoría para un evento SearchQueryInitiatedSharePoint contendrá también el texto de la consulta de búsqueda real. Al observar las consultas de búsqueda que un atacante pudiera haber realizado, un investigador puede comprender mejor la intención y el ámbito de búsqueda sobre los datos de archivo que se buscan.
+
+Para buscar registros de auditoría de SearchQueryInitiatedSharePoint, puede buscar la actividad de **Búsqueda de SharePoint realizada** en la lista desplegable de **Actividades de búsqueda** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento.
+
+![Buscar acciones de búsqueda de SharePoint realizadas en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SearchSharePoint.png)
+
+También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
+
+> [!NOTE]
+> Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedSharePoint (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Acceso de banda ancha a la API de Actividad de administración de Office 365
 
@@ -77,53 +135,27 @@ Las organizaciones que tienen acceso a registros de auditoría a través de la A
 
 Con el lanzamiento de la Auditoría avanzada, estamos pasando de un límite de nivel de editor a un límite de nivel de espacio empresarial. El resultado es que cada organización obtendrá su propia cuota de ancho de banda totalmente asignada para acceder a los datos de auditoría. El ancho de banda no es un límite estático y predefinido, sino que se basa en una combinación de factores que incluyen el número de puestos en la organización y que las organizaciones E5 obtendrán más ancho de banda que las organizaciones que no son E5.
 
-Se asigna inicialmente una línea base de 2000 solicitudes por minuto a todas las organizaciones. Este límite se incrementará de forma dinámica dependiendo del número de puestos de la organización y su suscripción de licencias. Las organizaciones E5 obtendrán aproximadamente el doble de ancho de banda que las organizaciones no son E5. También habrá un límite en el ancho de banda máximo para proteger el estado del servicio.
+Se asigna inicialmente una línea base de 2000 solicitudes por minuto a todas las organizaciones. Este límite se incrementará de forma dinámica dependiendo del número de puestos de la organización y su suscripción de licencias. Las organizaciones E5 obtendrán, aproximadamente, el doble de ancho de banda que las organizaciones que no son E5. También habrá un límite en el ancho de banda máximo para proteger el estado del servicio.
 
 Para obtener más información, vea la sección "límite de la API" en la [referencia de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
 ## <a name="faqs-for-advanced-audit"></a>Preguntas más frecuentes sobre las auditorías avanzadas
 
-**¿Dónde puedo tener acceso a auditoría avanzada?**
-
-Después de que se implemente la auditoría avanzada en la organización, podrá crear directivas de retención de registro de auditoría y buscar registros de auditoría MailItemsAccessed con la herramienta de búsqueda de registros de auditoría en el [Centro de seguridad y cumplimiento](https://protection.office.com). Estamos trabajando para implementar la auditoria avanzada en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) en las próximas semanas.
-
 **¿Todos los usuarios necesitan una licencia de E5 para beneficiarse de las auditorías avanzadas?**
 
 Para beneficiarse de las funciones de auditoría avanzada de nivel de usuario, es necesario que un usuario tenga asignada una licencia de E5. Hay algunas funciones que buscan la licencia adecuada para mostrar la característica para el usuario. Por ejemplo, si está intentando retener los registros de auditoría para un usuario al que no se le ha asignado una licencia E5 durante más de 90 días, el sistema devolverá un mensaje de error.
 
-**¿Por qué no veo la auditoría avanzada en mi organización, incluso si tenemos una suscripción a E5 y los usuarios tienen asignadas las licencias E5?**
+**Si mi organización tiene una suscripción a E5, ¿necesito hacer algo para tener acceso a los registros de auditoría de eventos fundamentales?**
 
-Es posible que las características de auditoría avanzada (como la capacidad de crear directivas de retención de registro de auditoría y el registro de registros de auditoría MailItemsAccessed) no estén disponibles en su organización, incluso con la licencia correcta. Si le sucede esto, se debe a que el paquete de auditoría avanzada aún no se ha implementado en la organización. Este es un problema de reposición de la licencia temporal que debería resolverse pronto en las organizaciones afectadas. Para mitigar este problema, lleve a cabo los pasos siguientes para cada usuario de E5:
+Para los clientes que cumplan los requisitos, no hay ninguna acción para tener acceso a eventos de auditoría fundamentales. Sin embargo, tal y como se ha explicado anteriormente en este tema, la latencia provocada por el problema de reposición de licencias puede impedir que se devuelvan registros de auditoría para eventos fundamentales en una búsqueda de registros de auditoría. Si ocurre esto, siga las instrucciones de las preguntas más frecuentes anteriores sobre el problema de reposición de licencia temporal.
 
-1. En el Centro de administración de Microsoft 365, vaya a **usuarios > usuarios activos** y seleccione un usuario.
+**¿Cuándo estará disponible la nueva licencia del complemento de retención de registros de auditoría de 10 años?**
 
-2. En la página flotante de propiedades de usuario, haga clic en **licencias y aplicaciones**.
+La compra del nuevo complemento de retención de registro de auditoría de 10 años estará disponible para los clientes que tengan suscripciones a E5 a principios de 2021.
 
-3. Expanda la sección **Aplicaciones** y realice una de las siguientes acciones:
+**¿Qué ocurre con los datos de registro de auditoría de mi organización si creo una directiva de retención de registro de auditoría de 10 años, la característica se ha publicado para disponibilidad general, pero antes de que esté disponible la licencia de complemento necesaria a principios de 2021?**
 
-   a. Si no está activada la casilla de **auditoría avanzada de Microsoft 365**, selecciónela y haga clic en **guardar cambios.** Se debe poder buscar en los registros de auditoría de las acciones MailItemsAccessed para este usuario durante 24 horas.
-
-   b. Si está activada la casilla de **auditoría avanzada de Microsoft 365**, desactívela y haga clic en **guardar cambios.** Vea el paso 4.
-
-4. Si ha desactivado la casilla de verificación del paso 3, espere 60 minutos y repita el paso 3a para habilitar la aplicación de auditoría avanzada de Microsoft 365.
-
-En el caso de las organizaciones que asignan licencias a grupos de usuarios mediante licencias basadas en grupos, tiene que desactivar la asignación de licencias para la Auditoría avanzada de Microsoft 365 para el grupo. Una vez que haya guardado los cambios, compruebe que está desactivada la Auditoría avanzada de Microsoft 365 para el grupo. Después, vuelva a activar la asignación de licencias para el grupo. Para obtener instrucciones sobre las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
-**¿Qué ocurre si mi organización tenía la versión preliminar privada para la retención de registros de auditoría de un año?**
-
-Las directivas de retención de auditoría del programa de versión preliminar se conservarán siempre y cuando no se reemplacen y se cambien con directivas de retención de auditoría personalizadas.
-
-**¿Qué ocurre si mi organización desea retener registros de auditoría durante más de un año?**
-
-Estamos estudiando opciones sobre cómo y si podemos ofrecer períodos de retención más largos para los registros de auditoría. Puede enviar comentarios sobre retenciones más largas de registros de auditoría en [Office 365 User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187).
-
-**Mi organización tiene una suscripción a E5, ¿necesito hacer algo para obtener acceso a los registros de auditoría de eventos MailItemsAccessed?**
-
-Para los clientes que cumplan los requisitos, no hay ninguna acción para obtener acceso a los eventos MailItemsAccessed. Sin embargo, tal y como se ha explicado anteriormente en este tema, la latencia provocada por el problema de reposición de licencias puede impedir que se devuelvan registros de auditoría para eventos MailItemsAccessed en una búsqueda de registros de auditoría. Si esto ocurre, siga las instrucciones de la sección Buscar registros de auditoría MailItemsAccessed.
-
-**¿Están pensando en publicar otros eventos este año?**
-
-Sí, tenemos previsto publicar nuevos eventos que son fundamentales para las investigaciones en los próximos meses. Publicaremos información sobre estos nuevos eventos en la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) a medida que se acerque la fecha de publicación.
+Todos los datos del registro de auditoría cubiertos por una directiva de retención de registro de auditoría de 10 años creada después de la disponibilidad general se conservarán durante 10 años. Cuando la licencia del complemento de retención del registro de auditoría de 10 años esté disponible a principios de 2021, tendrá que adquirir licencias de complemento para los usuarios cuyos datos de auditoria se retengan por una directiva de retención de auditoria existente de 10 años. Asimismo, una vez que la licencia del complemento esté disponible a principios de 2021, las licencias adecuadas se aplicarán cuando cree nuevas directivas de retención de registro de auditoría de 10 años.
 
 **¿Están disponibles los nuevos eventos de la auditoría avanzada en la API de Actividad de administración de Office 365?**
 
@@ -131,4 +163,4 @@ Sí. Siempre que los registros de auditoría se generen para los usuarios con la
 
 **¿Un ancho de banda mayor significa una mayor latencia o un SLA mayor?**
 
-En este momento, un ancho de banda alto ofrece una canalización más eficaz, especialmente para las organizaciones con un alto volumen de señales de auditoría y patrones de consumo significativos. Esto puede dar lugar a una mejor latencia. Sin embargo, no hay un SLA asociado con el ancho de banda alto. Se documentan las latencias estándar y no se modifican con la versión de la auditoría avanzada.
+En este momento, un ancho de banda alto ofrece una canalización más eficaz, especialmente para las organizaciones con un alto volumen de señales de auditoría y patrones de consumo significativos. Más ancho de banda puede dar lugar a una mejor latencia. Sin embargo, no hay un SLA asociado con el ancho de banda alto. Se documentan las latencias estándar y no se modifican con la versión de la auditoría avanzada.
