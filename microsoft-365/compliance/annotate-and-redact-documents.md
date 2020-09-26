@@ -15,14 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 05aacce9605e17dd45afed8eb3bf16b8784a2316
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ROBOTS: NOINDEX, NOFOLLOW
+description: Puede anotar y censurar documentos de evidencia en las investigaciones de datos (versión preliminar).
+ms.openlocfilehash: c88750ca23a2bb8e1c689bdd6a05bd8cd0726aa6
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079927"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285556"
 ---
-# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="d4a71-102">Anotar y censurar documentos en pruebas</span><span class="sxs-lookup"><span data-stu-id="d4a71-102">Annotate and redact documents in evidence</span></span>
+# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="9aaaf-103">Anotar y censurar documentos en pruebas</span><span class="sxs-lookup"><span data-stu-id="9aaaf-103">Annotate and redact documents in evidence</span></span>
 
-<span data-ttu-id="d4a71-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="d4a71-103">Content coming soon.</span></span>
+<span data-ttu-id="9aaaf-104">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="9aaaf-104">Content coming soon.</span></span>
