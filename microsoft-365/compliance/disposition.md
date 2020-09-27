@@ -1,5 +1,5 @@
 ---
-title: Disposición del contenido
+title: Eliminación de contenido
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -9,135 +9,137 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 3ef98e07df37d429567534e252c15abee69d0044
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
-ms.translationtype: MT
+description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
+ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245941"
+ms.locfileid: "48262243"
 ---
-# <a name="disposition-of-content"></a>Disposición del contenido
+# <a name="disposition-of-content"></a>Eliminación de contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Use la pestaña **disposición** de la **Administración de registros** en el centro de cumplimiento de Microsoft 365 para administrar las revisiones de disposición y ver [los registros](records-management.md#records) que se han eliminado automáticamente al final del período de retención. 
+Use la pestaña **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 para administrar las revisiones de eliminación y ver [registros](records-management.md#records) que se hayan eliminado automáticamente al final de su período de retención. 
 
-## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las disposiciones de contenido
+## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las eliminaciones de contenido
 
-Para administrar las revisiones de disposición y confirmar que los registros se han eliminado, debe tener permisos suficientes y la auditoría debe estar habilitada.
+Para administrar las revisiones de eliminación y confirmar que los registros se han eliminado, debe tener los permisos necesarios y la auditoría debe estar habilitada.
 
-### <a name="permissions-for-disposition"></a>Permisos para disposición
+### <a name="permissions-for-disposition"></a>Permisos para la eliminación
 
-Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de administrador de **disposición de disposición** . Este rol se incluye en los grupos de roles de administración predeterminados, el **Administrador de cumplimiento** y el administrador de **datos de cumplimiento**.
+Para acceder de forma satisfactoria a la pestaña **Eliminación** en el Centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de administrador de **Administración de eliminación**. Este rol está incluido en los grupos de roles de administrador predeterminados, **Administrador de cumplimiento** y **Administrador de datos de cumplimiento**.
 
-Para conceder a los usuarios esta función de administración de disposición, agréguela a uno de estos grupos de roles predeterminados o cree un grupo de roles personalizado (por ejemplo, denominado "revisores de disposición") y conceda a este grupo la función de administración de disposición.  
+Para conceder a los usuarios este rol de Administración de eliminación, agréguelos a uno de los grupos de roles predeterminados o cree un grupo de roles personalizado (por ejemplo, denominado "Revisores de eliminación") y conceda a este grupo el rol de Administración de eliminación.  
 
 > [!NOTE]
-> Incluso un administrador global debe recibir la función de **Administración de disposición** . 
+> Incluso un administrador global necesita que se le otorgue el rol de **Administración de eliminación**. 
 
 Para instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
-### <a name="enable-auditing"></a>Habilitar la auditoría
+### <a name="enable-auditing"></a>Habilitar auditoría
 
-Asegúrese de que la auditoría esté habilitada al menos un día antes de la primera acción de disposición. Para obtener más información, vea [Buscar en el registro de auditoría del &amp; centro de seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md). 
+Asegúrese de que la auditoría está activada al menos un día antes de la primera acción de eliminación. Para más información, vea [Buscar en el registro de auditoría del Centro de seguridad &amp; cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Revisiones para eliminación
 
-Cuando el contenido alcanza el final de su período de retención, existen varios motivos por los que puede que desee revisar el contenido para decidir si se puede eliminar de forma segura ("eliminado"). Por ejemplo, es posible que deba:
+Cuando el contenido llega al final de su período de retención, hay varios motivos por los que es posible que quiera revisar el contenido para decidir si se puede borrar de forma segura ("eliminar"). Por ejemplo, puede que necesite:
   
-- Suspender la eliminación del contenido relevante en caso de litigio o una auditoría.
+- Suspender la eliminación de contenido relevante en caso de litigio o una auditoría.
     
-- Quitar contenido de la lista de disposición para almacenarla en un archivo, si el contenido tiene un valor histórico o de investigación.
+- Quitar el contenido de la lista de eliminación para almacenarlo en un archivo, si el contenido tiene un valor histórico o para investigación.
     
-- Asigne un período de retención diferente al contenido, quizá porque la configuración de retención original era una solución temporal o provisional.
+- Asignar un periodo de retención diferente al contenido, por ejemplo, porque las configuraciones de retención originales eran una solución temporal o provisional.
     
 - Devolver el contenido a los clientes o transferirlo a otra organización.
 
-Cuando se activa una revisión de disposición al final del período de retención:
+Cuando se activa una revisión para eliminación al final del período de retención:
   
-- Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales o grupos de seguridad habilitados para correo. Tenga en cuenta que las notificaciones se envían cada semana.
+- Las personas que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar. Estos revisores pueden ser usuarios individuales o grupos de seguridad habilitados para correo. Tenga en cuenta que las notificaciones se envían cada semana.
     
-- Los revisores van a la pestaña **disposición** del centro de cumplimiento de Microsoft 365 para revisar el contenido y decidir si desea eliminarlo permanentemente, ampliar el período de retención o aplicar una etiqueta de retención diferente.
+- Los revisores pueden ir a la pestaña **Eliminación** en el Centro de cumplimiento de Microsoft 365 para revisar el contenido y decidir si se elimina de forma permanente, se amplía el período de retención o se aplica una etiqueta de retención diferente.
 
-Una revisión de disposición puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. El contenido que espera una revisión de disposición en esas ubicaciones se elimina solo después de que un revisor elige eliminar el contenido de forma permanente.
+Una revisión para eliminación puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. El contenido pendiente de una revisión para eliminación en esas ubicaciones se eliminará solo después de que un revisor elija eliminar el contenido de forma permanente.
 
 > [!NOTE]
-> Un buzón de correo debe tener al menos 10 MB de datos para admitir revisiones de disposición.
+> Un buzón debe tener al menos 10 MB de datos para admitir las revisiones para eliminación.
 
-Puede ver una descripción general de todas las disposiciones pendientes en la ficha **información general** . Por ejemplo:
+Puede ver una descripción general de todas las eliminaciones pendientes en la pestaña **Información general**. Por ejemplo:
 
-![Información general sobre las disposiciones pendientes en la administración de registros](../media/dispositions-overview.png)
+![Disposiciones pendientes en la información general de Administración de registros](../media/dispositions-overview.png)
 
-Al seleccionar **ver todas las disposiciones pendientes**, se le lleva a la página de **disposición** . Por ejemplo:
+Al seleccionar **Ver todas las eliminaciones pendientes**, se le dirigirá a la página **Eliminación**. Por ejemplo:
 
-![Página disposiciones del centro de cumplimiento de Microsoft 365](../media/disposition-tab.png)
+![Página Eliminaciones en el Centro de cumplimiento de Microsoft 365](../media/disposition-tab.png)
 
 
-### <a name="workflow-for-a-disposition-review"></a>Flujo de trabajo para una revisión de disposición
+### <a name="workflow-for-a-disposition-review"></a>Flujo de trabajo para una revisión para eliminación
 
-El siguiente diagrama muestra el flujo de trabajo básico para una revisión de disposición cuando una etiqueta de retención se publica y, a continuación, un usuario la aplica manualmente. Como alternativa, una etiqueta de retención configurada para una revisión de disposición se puede aplicar automáticamente al contenido.
+El siguiente diagrama muestra el flujo de trabajo básico de una revisión para eliminación cuando se publica una etiqueta de retención y un usuario la aplica de forma manual. Como alternativa, puede aplicar automáticamente la etiqueta de retención configurada para una revisión para eliminación al contenido.
   
-![Gráfico que muestra el flujo de trabajo de disposición](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Gráfico que muestra el flujo de trabajo de eliminación](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Desencadenar una revisión de disposición al final del período de retención es una opción de configuración que solo está disponible con una etiqueta de retención. Esta opción no está disponible para una directiva de retención. Para obtener más información acerca de estas dos soluciones de retención, consulte [información sobre las directivas de retención y las etiquetas de retención](retention.md).
-  
-![Configuración de retención de una etiqueta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+Desencadenar una revisión para eliminación al final del período de retención es una opción de configuración que solo está disponible con una etiqueta de retención. Esta opción no está disponible para una directiva de retención. Para más información sobre estas dos soluciones de retención, consulte [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md).
+
+En la página **Definir la configuración de retención** de una etiqueta de retención:
+
+![Configuración de retención para una etiqueta](../media/disposition-review-option.png)
  
-> [!NOTE]
-> Cuando seleccione la opción **notificar a estas personas cuando hay elementos listos para revisar**, especifique un usuario o un grupo de seguridad habilitado para correo. Para esta opción no se admiten grupos de 365 de Microsoft ([anteriormente los grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)).
+Después de seleccionar la opción **Desencadenar una revisión para eliminación**, especifique los revisores de eliminación en la siguiente página del asistente:
+
+![Especificar revisores de eliminación](../media/disposition-reviewers.png)
+
+Para los revisores, especifique un usuario o un grupo de seguridad habilitado para correo. En esta opción no se admiten los grupos de Microsoft 365 ([anteriormente llamados grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)).
 
 ### <a name="viewing-and-disposing-of-content"></a>Visualización y eliminación de contenido
 
-Cuando se notifica a un revisor por correo electrónico que el contenido está preparado para revisarlo, se dirige a la pestaña **disposición** de **Administración de registros** en el centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos tiene la etiqueta de retención en espera de disposición y, a continuación, seleccionar una etiqueta de retención para ver todo el contenido con esa etiqueta.
+Cuando un revisor recibe una notificación por correo electrónico de que el contenido está listo para su revisión, puede ir a la pestaña **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos están esperando la eliminación para cada etiqueta de retención y seleccionar una etiqueta de retención para ver todo el contenido con esa etiqueta.
 
-Después de seleccionar una etiqueta de retención, verá todas las disposiciones pendientes para esa etiqueta en la pestaña de **disposición pendiente** . Seleccione uno o más elementos en los que puede elegir una acción y escriba un Comentario sobre la justificación:
+Después de seleccionar una etiqueta de retención, verá todas las eliminaciones pendientes para dicha etiqueta en la pestaña **Pendiente de eliminación**. Seleccione uno o más elementos, en los que puede elegir una acción y escribir un comentario de justificación:
 
-![Opciones de disposición](../media/retention-disposition-options.png)
+![Opciones de eliminación](../media/retention-disposition-options.png)
 
-Como puede ver en la imagen, las acciones admitidas son las siguientes: 
+Como puede ver en la imagen, las acciones compatibles son las siguientes: 
   
 - Eliminar permanentemente el elemento
-- Ampliación del período de retención
+- Extender el período de retención
 - Aplicar una etiqueta de retención diferente
 
-Siempre que tenga permisos para la ubicación y el contenido, puede usar el vínculo de la columna **Ubicación** para ver los documentos en su ubicación original. Durante una revisión de disposición, el contenido nunca se mueve desde su ubicación original, y nunca se elimina hasta que el revisor elige hacerlo.
+Siempre que disponga de permisos para la ubicación y el contenido, puede usar el vínculo de la columna **Ubicación** para ver los documentos en su ubicación original. Durante una revisión para eliminación, el contenido nunca se mueve de su ubicación original y nunca se elimina hasta que el revisor elija hacerlo.
 
-Las notificaciones por correo electrónico se envían de forma automática a los revisores cada semana. Este proceso programado significa que cuando el contenido alcanza el final de su período de retención, los revisores pueden tardar hasta siete días en recibir la notificación por correo electrónico de que el contenido espera la disposición.
+Las notificaciones por correo electrónico se envían automáticamente a los revisores cada semana. Este proceso programado significa que cuando el contenido llega al final de su período de retención, es posible que los revisores tarden hasta siete días en recibir la notificación por correo electrónico de que el contenido está esperando la eliminación.
   
-Todas las acciones de disposición se pueden auditar y el texto de justificación escrito por el revisor se guarda y se muestra en la columna **Comentario** de la página **elementos desechados** .
+Se pueden auditar todas las acciones de eliminación. Además, el texto de justificación introducido por el revisor se guarda y se muestra en la columna **Comentario** de la página **Elementos eliminados**.
   
-### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo se eliminará permanentemente el contenido desechado
+### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo tarda el contenido eliminado en borrarse permanentemente
 
-El contenido que espera una revisión de disposición se elimina solo después de que un revisor elige eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive pasa a ser apto para el proceso de limpieza estándar descrito en [Cómo funciona la configuración de retención con el contenido en su lugar](retention.md#how-retention-settings-work-with-content-in-place).
+El contenido que espera una revisión para eliminación solo se elimina después de que un revisor elija eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o en la cuenta de OneDrive pasa a ser apto para el proceso de limpieza estándar descrito en [Cómo funciona la configuración de retención con el contenido local](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## <a name="disposition-of-records"></a>Eliminación de registros
 
-Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que ya se han eliminado, ya sea automáticamente o después de una revisión de disposición. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
+Use la pestaña **Eliminación** en la página **Administración de registros** para identificar registros ya eliminados, ya sea automáticamente o después de una revisión para eliminación. Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ejemplo:
 
-![Elementos eliminados sin una revisión de disposición](../media/records-disposed2.png)
+![Elementos que se eliminaron sin una revisión para eliminación](../media/records-disposed2.png)
 
-Los elementos que se muestran en la ficha **elementos desechados** para las etiquetas de registro se conservan hasta siete años después de que se eliminó el elemento, con un límite de 1 millón elementos por registro para ese período. Si ve el número de **recuento** cerca de este límite de 1 millón y necesita probar la disposición de sus registros, póngase en contacto [con el soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Los elementos que se muestran en la pestaña **Elementos eliminados** para etiquetas de registro se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría esté [habilitada y sea buscada](turn-audit-log-search-on-or-off.md) para que se capturen los eventos correspondientes.
+> Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.
     
 ## <a name="filter-and-export-the-views"></a>Filtrar y exportar las vistas
 
-Cuando se selecciona una etiqueta de retención de la página de **disposición** , la ficha de **disposición pendiente** (si procede) y la ficha **elementos desechados** le permiten filtrar las vistas para facilitar la búsqueda de elementos. 
+Al seleccionar una etiqueta de retención de la página **Eliminación**, la pestaña **Pendiente de eliminación** (si procede) y la pestaña **Elementos eliminados** le permiten filtrar las vistas para facilitar la búsqueda de elementos. 
 
-Para las disposiciones pendientes, el intervalo de tiempo se basa en la fecha de expiración. Para los elementos eliminados, el intervalo de tiempo se basa en la fecha de eliminación.
+Para las eliminaciones pendientes, el intervalo de tiempo se basa en la fecha de expiración. En el caso de los elementos eliminados, el intervalo de tiempo se basa en la fecha de eliminación.
   
-Puede exportar la información sobre los elementos en cualquiera de las vistas como un archivo. csv que puede ordenar y administrar mediante Excel:
+Puede exportar información acerca de los elementos de cualquier vista como un archivo .csv que puede ordenar y administrar con Excel:
 
-![Opción de exportación para la disposición](../media/retention-export-option.png)
-  
-![Datos de disposición exportados en Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
-
+![Opción de exportación para la eliminación](../media/retention-export-option.png)
 
