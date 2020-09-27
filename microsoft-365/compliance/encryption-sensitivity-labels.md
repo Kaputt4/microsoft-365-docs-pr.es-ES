@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6a1be64f98def6676e27e1e0c1b3f7e031b31cba
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399269"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196625"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -159,7 +159,7 @@ Al asignar permisos, puede elegir:
 
 - Todos los usuarios autenticados. Asegúrese de comprender [las limitaciones y los requisitos](#requirements-and-limitations-for-add-any-authenticated-users) de esta configuración antes de seleccionarla.
 
-- Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 ([anteriormente denominado grupo de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Tenga en cuenta que no puede usar un grupo de [distribución dinámico de Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) porque este tipo de grupo no está sincronizado con Azure AD, y no puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
+- Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 ([anteriormente denominado grupo de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Tenga en cuenta que no puede usar un grupo de [distribución dinámico de Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) porque este tipo de grupo no está sincronizado con Azure AD, y no puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
 
 - Cualquier dirección de correo electrónico o dominio. Use esta opción para especificar todos los usuarios de otra organización que usan Azure AD, escribiendo un nombre de dominio de dicha organización. También puede usar esta opción para proveedores de redes sociales si escribe su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
     
@@ -211,7 +211,7 @@ Para obtener más información, vea [Emisor de administración de derechos y pro
 ### <a name="double-key-encryption"></a>Cifrado de claves doble
 
 > [!NOTE]
-> Esta característica está disponible actualmente en versión preliminar pública. Para obtener más información, vea [Presentación de la versión preliminar pública del cifrado de doble clave de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+> Esta característica solo es compatible actualmente con el cliente de etiquetado unificado de Azure Information Protection.
 
 Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos que tengan aplicada esta etiqueta.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948178"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198497"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -50,11 +50,14 @@ Si bien una directiva de retención es compatible con varias ubicaciones, no se 
 - Carpetas públicas de Exchange
 - Mensajes de canal de Teams
 - Chats de Teams
+- Mensajes de la comunidad de Yammer
+- Mensajes privados de Yammer
 
-Al seleccionar una de las ubicaciones de Teams durante la creación de una directiva de retención, las demás ubicaciones quedan excluidas automáticamente. Por lo tanto, las instrucciones que debe seguir dependerán de si necesita incluir las ubicaciones de Teams:
+Cuando selecciona una de las ubicaciones de Teams o Yammer durante la creación de una directiva de retención, las demás ubicaciones quedan excluidas automáticamente. Por lo tanto, las instrucciones que debe seguir dependerán de si necesita incluir las ubicaciones de Teams o de Yammer:
 
-- [Instrucciones para una directiva de retención para ubicaciones de Teams](#retention-policy-for-teams-locations)
-- [Instrucciones para una directiva de retención para ubicaciones que no sean de Teams](#retention-policy-for-locations-other-than-teams)
+- [Instrucciones para crear una directiva de retención para ubicaciones de Teams](#retention-policy-for-teams-locations)
+- [Instrucciones para crear una directiva de retención para ubicaciones de Yammer](#retention-policy-for-yammer-locations)
+- [Instrucciones para crear una directiva de retención para otras ubicaciones fuera de Teams y Yammer](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 Si tiene más de una directiva de retención y, además, utiliza etiquetas de retención, consulte [Los principios de la retención o qué tiene prioridad](retention.md#the-principles-of-retention-or-what-takes-precedence) para entender qué resultado se obtiene cuando varias configuraciones de retención se aplican al mismo contenido.
 
@@ -93,7 +96,56 @@ Si tiene sitios de equipo que no estén conectados con un grupo de Microsoft 365
 
 Es posible que una directiva de retención que se aplique a los grupos de Microsoft 365, los sitios de SharePoint o las cuentas de OneDrive pueda eliminar un archivo al que se hace referencia en un mensaje de canal o chat de Teams antes de que se eliminen esos mensajes. En este caso, el archivo seguirá apareciendo en el mensaje de Teams, pero cuando los usuarios lo seleccionen, obtendrán un error de "Archivo no encontrado". Este comportamiento no es específico de las directivas de retención y también podría ocurrir si un usuario elimina manualmente un archivo de SharePoint o OneDrive.
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>Directivas de retención para ubicaciones que no sean de Teams
+### <a name="retention-policy-for-yammer-locations"></a>Directiva de retención para ubicaciones de Yammer
+
+> [!NOTE]
+> Las directivas de retención de Yammer se implementan en versión preliminar. Si aún no ve las nuevas ubicaciones de Yammer, inténtelo de nuevo en unos días.
+>
+> Para usar esta característica, la red de Yammer debe estar en [Modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
+
+1. En el[centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione**Directivas de** > **retención**.
+
+2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
+
+3. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
+    
+    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
+    
+    No seleccione **Usar la configuración de retención avanzada**, ya que esta opción no es compatible con las ubicaciones de Yammer. 
+
+4. Para acceder a la página **Elegir ubicaciones**, seleccione **Quiero elegir ubicaciones concretas**. A continuación, alterne entre una o ambas ubicaciones de Yammer: **Mensaje de la comunidad de Yammer** y **Mensajes privados de Yammer**.
+    
+    De forma predeterminada, todas las comunidades y usuarios están seleccionados, pero puede restringir los resultados al especificar qué comunidades y usuarios desea incluir o excluir.
+    
+    Para los mensajes privados de Yammer: 
+    - Si deja la opción predeterminada en **Todos**, no se incluirá a los usuarios invitados de Azure B2B. 
+    - Si selecciona **Elegir usuario**, puede aplicar una directiva de retención a los usuarios externos si ya sabe cuál es su cuenta.
+
+5. Finalice el asistente para guardar la configuración.
+
+Para obtener más información sobre cómo funcionan las directivas de retención de Yammer, consulte [Obtener información sobre la retención para Yammer](retention-policies-yammer.md).
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Directivas de retención adicionales que se necesitan para admitir Yammer
+
+Yammer es más que solo mensajes de la comunidad y mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, a través de la ubicación de los **Grupos de Office 365**. 
+
+Para conservar y eliminar los archivos almacenados en Yammer, necesitará una directiva de retención que incluya las ubicaciones de los **sitios de SharePoint** o de las **cuentas de OneDrive**:
+
+- Los archivos compartidos en los mensajes privados se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. 
+
+- Los archivos que se cargan en las comunidades se almacenan en el sitio de SharePoint de la comunidad de Yammer.
+
+Es posible que una directiva de retención que se aplique a los sitios de SharePoint o a las cuentas de OneDrive pueda eliminar un archivo al que se haga referencia en un mensaje de Yammer antes de que dicho mensaje sean eliminado. En este caso, el archivo seguirá mostrándose en el mensaje de Yammer, pero cuando los usuarios lo seleccionen, obtendrán el error "Archivo no encontrado". Este comportamiento no es específico para las directivas de retención y también podría ocurrir si un usuario elimina manualmente un archivo de SharePoint o OneDrive.
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Directivas de retención para otras ubicaciones fuera de Teams y Yammer
+
+Use las siguientes instrucciones para crear directivas de retención que apliquen a cualquiera de estos servicios:
+
+- Correo electrónico y carpetas públicas de Exchange
+- Sitios de SharePoint
+- Cuentas de OneDrive
+- Grupos de Microsoft 365
+- Skype Empresarial
 
 1. En el[centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione**Directivas de** > **retención**.
 

@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información general sobre la protección de la información de Office 365 para GDPR. Obtenga información acerca de cómo descubrir, clasificar, proteger y supervisar datos personales.
-ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 72ce55b5ceb2ec3ff95cada481ec4aee0bbe8eef
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919609"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197411"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Información general de Information Protection de Office 365 para RGPD
 
@@ -43,13 +43,13 @@ Esta solución está pensada para ayudar a las organizaciones a descubrir y prot
 
 El primer paso para el cumplimiento de RGPD es evaluar si el RGPD se aplica a su organización y, si es así, en qué medida. Este análisis incluye comprender los datos de los procesos de su organización y dónde se encuentran.
 
-### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>Paso 1: usar la puntuación de cumplimiento para ver los requisitos del Reglamento y realizar un seguimiento del progreso
+### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>Paso 1: Usar el Administrador de cumplimiento para ver los requisitos de regulación y realizar un seguimiento del progreso
 
-La puntuación de cumplimiento ofrece herramientas para realizar un seguimiento de los controles de auditoría, implementarlos y administrarlos para que su organización cumpla el cumplimiento con varios estándares, incluido GDPR.
+El Administrador de cumplimiento le proporciona las herramientas para realizar seguimiento, implementar y administrar los controles de auditoría para ayudar a su organización a lograr el cumplimiento de varios estándares, incluido el RGPD.
 
-![Usar puntuaciones de cumplimiento y administrador de cumplimiento para ver los requisitos y realizar un seguimiento del progreso](../media/Overview-image1.png)
+![Usar el Administrador de cumplimiento para ver los requisitos y seguir su progreso](../media/Overview-image1.png)
 
-Para obtener más información, consulte [Calificación de Conformidad](compliance-score.md).
+Para obtener más información, consulte [Administrador de cumplimiento](compliance-manager.md).
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Paso 2: Usar la Búsqueda de contenido y los tipos de información confidencial para buscar datos personales 
 
