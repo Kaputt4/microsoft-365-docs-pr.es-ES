@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Obtenga información acerca de cómo usar el Administrador de cumplimiento en el Portal de confianza del servicio de Microsoft para satisfacer los requisitos normativos y de protección de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 1e530acb5ca22fd67d94fea47aa37973d62e767c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198541"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
-> [!NOTE]
-> En esta documentación se describe una versión anterior de este producto. *No es recomendable que los usuarios usen esta versión del Administrador de cumplimiento*. **Si usa la versión preliminar del Administrador de cumplimiento actual, consulte la [documentación del Administrador de cumplimiento (versión preliminar)](working-with-compliance-manager.md).**
+> [!IMPORTANT]
+> **El Administrador de cumplimiento ahora está disponible de forma general en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Recomendamos encarecidamente a los clientes que dejen de usar el Administrador de cumplimiento (clásico) y cambien al nuevo Administrador de cumplimiento para beneficiarse de su experiencia de usuario enriquecida y de la asignación de controles actualizados. Para más información, consulte la documentación del [Administrador de cumplimiento](compliance-manager.md) para configurar y empezar a usar el nuevo Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365.**
 
  *El Administrador de cumplimiento no está disponible en Office 365 ofrecido por 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) u Office 365 Department of Defense.*
   
@@ -43,9 +43,6 @@ Administrador de cumplimiento:
 - Proporciona un repositorio seguro para que pueda cargar y administrar evidencias y otros artefactos relacionados con sus actividades de cumplimiento.
     
 - Proporciona informes detallados enriquecidos en Microsoft Excel donde se documentan las actividades de cumplimiento realizadas por Microsoft y su organización, y que pueden proporcionarse a auditores, entidades reguladoras y otras partes interesadas de cumplimiento.
-
-Para ver una breve demostración del Administrador de cumplimiento, vea el vídeo [Administrador de cumplimiento](https://www.youtube.com/watch?v=r1vs8NdSXKQ).
-
     
 > [!IMPORTANT]
 > El Administrador de cumplimiento es un panel que proporciona un resumen de su nivel de cumplimiento y protección de datos, así como recomendaciones para mejorar el cumplimiento y la protección de datos. Las acciones de cliente proporcionadas en el Administrador de cumplimiento son recomendaciones; cada organización necesita evaluar la efectividad de estas recomendaciones en su respectivo entorno reglamentario antes de la implementación. Las recomendaciones que aparecen en el Administrador de cumplimiento no han que interpretarse como una garantía de cumplimiento.
@@ -830,11 +827,3 @@ El Administrador de cumplimiento se diseñó para actualizarlo de forma periódi
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## <a name="see-also"></a>Vea también
-
-- [Guía interactiva del Administrador de cumplimiento normativo](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [Anuncio de la disponibilidad general del Administrador de cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Microsoft 365 proporciona una estrategia de protección de la información como ayuda para el RGPD](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

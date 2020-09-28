@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422458"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208816"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -56,6 +56,10 @@ Las siguientes tareas están relacionadas con el cumplimiento de los estándares
 - **[ Evaluación de impacto de la protección de datos (EPIA)](gdpr-data-protection-impact-assessments.md)**. Los controladores de datos son requeridos en el reglamento general de protección de datos (RGPD), para preparar una evaluación de impacto de la protección de datos (EIPA) para las operaciones de datos que sean "probables que resulten en un alto riesgo para los derechos y libertades de las personas naturales".
 
 Como se ha mencionado anteriormente, el plan de acción recomendado para las listas de comprobación de la preparación de el reglamento general de protección de datos (RGPD), y el control en las listas de comprobación ofrece una guía de conformidad para implementar o evaluar el reglamento general de protección de datos (RGPD), con los productos y servicios de Microsoft.
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
+
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento tiene una evaluación predefinida para esta normativa para los clientes de Enterprise E5. Busque la plantilla para generar la evaluación en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="data-subject-request-dsr"></a>Solicitud de temas de datos (STD).
 
@@ -180,7 +184,7 @@ Microsoft cuenta con directivas y procedimientos para notificarle inmediatamente
 
 ## <a name="accountability-readiness-checklists-for-the-gdpr"></a>Listas de comprobación de preparación de responsabilidad para el reglamento general de protección de datos (RGPD)
 
-Estas [listas de comprobación](gdpr-arc.md)proporciona una forma cómoda de obtener acceso a la información que puede necesitar para respaldar el reglamento general de protección de datos (RGPD) al usar los productos de Microsoft. Los elementos de en la lista de control se podrán administrar con la[ puntuación de cumplimiento Microsoft](compliance-score.md) haciendo referencia al identificador y título de control encontrados en los controles administrados por el cliente en el icono del RGPD.
+Estas [listas de comprobación](gdpr-arc.md)proporciona una forma cómoda de obtener acceso a la información que puede necesitar para respaldar el reglamento general de protección de datos (RGPD) al usar los productos de Microsoft. Puede administrar los elementos de esta lista de comprobación con el [Administrador de cumplimiento de Microsoft](compliance-manager.md) haciendo referencia al Id. y el título de control en Controles administrados de cliente en el icono del Reglamento general de protección de datos (RGPD).
 
 ## <a name="gdpr-faqs"></a>Preguntas frecuentes sobre el RGPD
 
