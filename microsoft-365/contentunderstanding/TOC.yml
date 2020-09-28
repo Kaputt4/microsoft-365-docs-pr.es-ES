@@ -1,22 +1,44 @@
 - name: Introducción a la comprensión del contenido
   items:
+    - name: Introducción a Microsoft SharePoint Syntex
+      href: microsoft-sharepoint-syntex-overview.md
     - name: Información general sobre el documento
       href: document-understanding-overview.md
     - name: Introducción al procesamiento de formularios
       href: form-processing-overview.md
     - name: Diferencia entre los modelos de conocimiento de documentos y procesamiento de formularios
       href: difference-between-document-understanding-and-form-processing-model.md
+    - name: Obtenga información sobre los modelos en el modelo de ejemplo
+      href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Crear un centro de contenido
       href: create-a-content-center.md
     - name: Crear un clasificador
       href: create-a-classifier.md
     - name: Crear un extractor
       href: create-an-extractor.md
+    - name: Información general sobre los tipos de explicación
+      href: explanation-types-overview.md
     - name: Aplicar un modelo
       href: apply-a-model.md
     - name: Crear un modelo de procesamiento de formularios
       href: create-a-form-processing-model.md
-- name: Introducción a la instalación
+    - name: Aplicar una etiqueta de retención
+      href: apply-a-retention-label-to-a-model.md
+    - name: Análisis de uso de modelos
+      href: model-usage-analytics.md
+- name: Configuración y administración
   items:
     - name: Configurar la comprensión del contenido
       href: set-up-content-understanding.md
+    - name: Etiquetado de imágenes
+      href: image-tagging.md
+- name: Servicios de contenido
+  items:
+    - name: Importar mediante SKOS
+      href: import-term-set-skos.md
+    - name: Referencia de formato SKOS
+      href: skos-format-reference.md
+    - name: Insertar tipo de contenido en el concentrador
+      href: push-content-type-to-hub.md
+    - name: Informes de almacén de términos
+      href: term-store-analytics.md
