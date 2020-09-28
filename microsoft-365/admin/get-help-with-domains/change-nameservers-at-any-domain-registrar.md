@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que sus servicios como el correo electrónico y Skype empresarial online usen su propio nombre de dominio.
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662237"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295063"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios
 
@@ -122,8 +122,8 @@ Para cambiar los servidores DNS en el sitio web del registrador de dominios uste
 |:-----|:-----|
 |Primer servidor de nombres  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Segundo servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Tercer servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Cuarto servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Tercer servidor de nombres  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Cuarto servidor de nombres  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > Es mejor agregar los cuatro registros, pero si su registrador solo admite dos, agregue **ns1.BDM.microsoftonline.com** y **NS2.BDM.microsoftonline.com**. 

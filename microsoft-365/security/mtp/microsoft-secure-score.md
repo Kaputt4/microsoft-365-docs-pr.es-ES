@@ -1,7 +1,7 @@
 ---
 title: Puntuación de seguridad de Microsoft
 description: Describe la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, cómo mejorar su postura de seguridad y qué administradores de seguridad pueden esperar.
-keywords: seguridad, malware, Microsoft 365, M365, calificación segura, centro de seguridad, acciones de mejora
+keywords: puntuación segura de Microsoft, calificación segura, puntuación segura de Office 365, puntuación de seguridad de Microsoft, centro de seguridad de Microsoft 365, acciones de mejora
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b378288637baa5b51f74fb63d8c8da33ac5e148f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196196"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294789"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -109,7 +109,7 @@ Con acceso de lectura y escritura, puede realizar cambios e interactuar directam
 
 Con acceso de solo lectura, no puede editar el estado o las notas para una acción de mejora, editar zonas de puntuación o editar comparaciones personalizadas.
 
-* Administrador del departamento de soporto técnico
+* Administrador del departamento de soporte técnico
 * Administrador de usuarios
 * Administrador de servicios
 * Lector de seguridad

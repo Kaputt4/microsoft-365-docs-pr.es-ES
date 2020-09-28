@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200822"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295531"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)
 
@@ -153,7 +153,7 @@ Es posible que la ubicación buscada en la dirección IP de salida de red no sea
 
 Este conocimiento de la red afectará específicamente a la selección de la puerta del servicio de Exchange Online. Para resolver esta visión, la salida local y directa de la red debe ser un requisito previo y, a continuación, la resolución de nombres recursivos de DNS se debe encontrar cerca de la salida de la red.
 
-### <a name="exchange-online"></a>Exchange en línea
+### <a name="exchange-online"></a>Exchange Online
 
 En esta sección se muestran los resultados de pruebas relacionados con Exchange Online.
 
@@ -205,7 +205,7 @@ Esto comprueba la conectividad UDP con el servicio de Microsoft Teams puerta de 
 
 Muestra la pérdida de paquetes UDP medida en una llamada de prueba de audio de 10 segundos desde el cliente hasta la puerta de frontal del servicio de Microsoft Teams. Debe ser inferior al **1,00%** para una pasada.
 
-### <a name="latency"></a>Latencia
+#### <a name="latency"></a>Latencia
 
 Muestra la latencia UDP medida, que debe ser inferior a **100 ms**.
 

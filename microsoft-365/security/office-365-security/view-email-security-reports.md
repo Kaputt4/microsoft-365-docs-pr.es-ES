@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199222"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295543"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -61,7 +61,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
 - **Hora de creación**
 - **Nombre de usuario**
-- **Acción**
+- **Action**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
 
@@ -117,16 +117,16 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Dividir por: método de cifrado** o **desglosar por: plantilla de cifrado**: se muestra la siguiente información:
 
-  - **Date**
+  - **Fecha**
   - **Dirección del remitente**
   - **Plantilla de cifrado**
   - **Método de cifrado**
   - **Dirección del destinatario**
-  - **Asunto**
+  - **Subject**
 
 - **Ver datos por: los 5 dominios de destinatarios principales**:
 
-  - **Date**
+  - **Fecha**
   - **Dominio del destinatario**
   - **Número de mensajes**
   
@@ -162,11 +162,11 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Date**
+- **Fecha**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
-- **Asunto**
+- **Subject**
 - **Filename**
 - **Nombre del malware**
 
@@ -220,12 +220,12 @@ Si hace clic en **filtros** en una vista de informe, puede modificar los resulta
 
 Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se mostrará la siguiente información:
 
-- **Date**
+- **Fecha**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
-- **Acción**
-- **Asunto**
+- **Action**
+- **Subject**
 
 Si hace clic en **filtros** en una tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -259,11 +259,11 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Date**
+- **Fecha**
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
-- **Acción**
+- **Action**
 - **Número de mensajes**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
@@ -364,8 +364,13 @@ Están disponibles las siguientes vistas:
 Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
 
 - **Fecha de inicio** y **fecha de finalización**
-- Valor de detección
-- **Protegido por** (solo para ATP de Office 365): **ATP** o **EOP**. Tenga en cuenta que esta propiedad filterable no está disponible en **ver datos por: \> malware de contenido**.
+- **Detección**
+- **Protegido por**: **ATP** o **EOP**
+- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Dominio**
+
+> [!NOTE]
+> **Protegido por**, **etiqueta** y **dominio** son solo Office 365 ATP. Estas propiedades filtrables no están disponibles en los datos de la **vista por: \> malware de contenido**.
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vista de tabla de detalles para el informe de estado de protección contra amenazas
 
@@ -373,28 +378,37 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: contenido \> Malware**:
 
-  - **Date**
-  - **Location**
+  - **Fecha**
+  - **Ubicación**
   - **Dirigida por**
   - **Nombre del malware**
 
-- **Ver datos por: información general**: no hay disponible ningún botón **tabla de detalles** de la vista.
+Si hace clic en **filtros** en esta vista, puede modificar el informe con los siguientes filtros:
+
+- **Fecha de inicio** y **fecha de finalización**
+- **Detección**
+
+**Ver datos por: información general**: no hay disponible ningún botón **tabla de detalles** de la vista.
 
 - Todos los demás gráficos:
 
-  - **Date**
-  - **Asunto**
+  - **Fecha**
+  - **Subject**
   - **Remitente**
   - **Destinatarios**
   - **Detectado por**
   - **Estado de entrega**
   - **Origen de la intromisión**
+  - **Tags**
 
 Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
 
 - **Fecha de inicio** y **fecha de finalización**
-- Valor de detección
-- **Protegido por** (solo para ATP de Office 365): **ATP** o **EOP**. Tenga en cuenta que esta propiedad filterable no está disponible en **ver datos por: \> malware de contenido**.
+- **Detección**
+- **Protegido por** (solo para ATP de Office 365): **ATP** o **EOP**
+- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Dominio**
+- **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
 
 ## <a name="top-malware-report"></a>Informe de malware principal
 
