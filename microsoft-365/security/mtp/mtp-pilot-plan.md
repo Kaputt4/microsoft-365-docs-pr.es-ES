@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195656"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305371"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>Planeación del proyecto piloto de Microsoft Threat Protection 
 
@@ -60,7 +60,7 @@ Los casos de uso representan instrucciones sobre cómo la herramienta que se est
 
 Tenga en cuenta que estos casos de uso deben crearse dentro de los parámetros del ámbito definido. Si, por ejemplo, el ámbito de las pruebas no incluye una evaluación de herramientas como Microsoft Cloud App Security, use casos que dependan de esto como no se debe crear un origen de datos.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 En la lista de casos de uso, puede empezar a crear requisitos. Los requisitos incluyen características que una herramienta debe tener para satisfacer los casos de uso. Estos requisitos pueden dividirse en categorías como la configuración y el mantenimiento, la compatibilidad con las integraciones y los requisitos específicos de características, como la capacidad de búsqueda y la capacidad de crear alertas personalizadas.
 
@@ -76,9 +76,9 @@ Los criterios de éxito son en última instancia la barra que se debe medir con 
 
 Una forma de llevar a cabo juntos todos los elementos del plan puede ser crear un cuadro de mandos. Vea un cuadro de mandos de muestra a continuación:
 
-|**Caso de uso**|**Requisitos** |**Requisitos de configuración**|**Plan de pruebas**|**Resultado previsto**|**Estado de la prueba**|**Puntuación**|**Notas**|
+|**Caso de uso**|**Requisitos** |**Requisitos de configuración**|**Plan de pruebas**|**Resultado previsto**|**Estado de la prueba**|**Obtenidos**|**Notas**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Administración de incidentes|-Protección contra amenazas de Microsoft </br></br>-ATP de Azure </br></br>-ATP de Microsoft defender </br></br>-Microsoft Cloud App Security (opcional)|Vea los [requisitos previos](https://aka.ms/mtp-trial-lab) para la preparación, configuración y configuración para obtener más información. |[Simular ataque](mtp-pilot-simulate.md) <br></br>[Investigar el incidente](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |Los investigadores pueden comprender el alcance y el impacto del incidente y administrar el incidente.||||
+|Administración de incidentes|-Protección contra amenazas de Microsoft </br></br>-ATP de Azure </br></br>-ATP de Microsoft defender </br></br>-Microsoft Cloud App Security (opcional)|Vea los [requisitos previos](https://aka.ms/mtp-trial-lab) para la preparación, configuración y configuración para obtener más información. |[Simular ataque](mtp-pilot-simulate.md) <br></br>[Investigar el incidente](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Los investigadores pueden comprender el alcance y el impacto del incidente y administrar el incidente.||||
 |AutoIR|-Protección contra amenazas de Microsoft </br></br>-ATP de Azure </br></br>-ATP de Microsoft defender |Vea los [requisitos previos](https://aka.ms/mtp-trial-lab) para la preparación, configuración y configuración para obtener más información. <br>Habilitar AutoIR  |[Simular ataque](mtp-pilot-simulate.md) <br></br>[Investigación automatizada](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |La protección contra amenazas de Microsoft corrige automáticamente las alertas y los incidentes||||
 |Búsqueda avanzada|-Protección contra amenazas de Microsoft </br></br>-ATP de Microsoft defender </br></br>-Office 365 ATP   |Vea los [requisitos previos](https://aka.ms/mtp-trial-lab) para la preparación, configuración y configuración para obtener más información.|[Escenario de caza avanzado](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |Los investigadores pueden encontrar datos a través de la búsqueda avanzada, dinamizar las entidades afectadas y crear detecciones personalizadas.||||
 

@@ -6,6 +6,7 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,12 +14,12 @@ search.appverid:
 ms.collection:
 - microsoft-365-docs-pr
 description: Seguridad en Office 365, de EOP a ATP, planes 1 y 2, configuraciones de seguridad estándar frente a estrictas y mucho más, para que pueda comprender lo que tiene y proteger sus propiedades.
-ms.openlocfilehash: 66a83d99197b8af98ef191b348b1303a8233a990
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 680066f58850f59523ae6fb8a8168459dd813fc1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299323"
+ms.locfileid: "48304851"
 ---
 # <a name="office-365-security-outline"></a>Esquema de seguridad de Office 365
 
@@ -50,7 +51,7 @@ Pero, en términos de arquitectura, comencemos a pensar en cada una de las parte
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP y ATP y sus relaciones entre sí con énfasis en el servicio, incluida una nota para la autenticación de correo electrónico.":::
+:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="Placeholder graphic":::
 
 Aunque cada uno de estos servicios enfatiza un objetivo específico entre proteger, detectar, investigar y responder, ***todos*** los servicios pueden llevar a cabo ***cualquiera*** de los objetivos de protección, detección, investigación y respuesta.
 
@@ -65,7 +66,7 @@ Si tiene un Office 365 E3, o inferior, tiene EOP, pero con la opción de comprar
 
 ## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>La escalera de seguridad de Office 365 de EOP a ATP
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP y ATP y sus fortalezas específicas, al ir de la protección y la detección para investigar y responder, respectivamente. Además, la configuración de la autenticación de correo electrónico se muestra según las necesidades de EOP hacia arriba.":::
+:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="Placeholder graphic":::
 
 > [!IMPORTANT]
 > Obtenga información sobre estas páginas: [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)y protección contra [amenazas avanzada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).

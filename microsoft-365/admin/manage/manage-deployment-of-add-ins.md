@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 5806b2a33446a8e273c2aaf78e082c6fd753bbe4
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171285"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304797"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -61,7 +61,7 @@ En función del tamaño de la audiencia de destino, puede Agregar o quitar pasos
 
 Antes de comenzar, vea [determinar si la implementación centralizada de complementos funciona para su organización](centralized-deployment-of-add-ins.md).
   
-1. En el centro de administración, vaya a la página **configuración** \> **de complementos** .
+1. En el centro de administración, vaya a la página **configuración** \> **de complementos** . Si no ve la página de **Complementos** , vaya a la página **configuración** de \> **aplicaciones integradas** \> **de complementos** .
     
 2. Seleccione **implementar complemento** en la parte superior de la página y, a continuación, seleccione **siguiente**.
  
@@ -134,7 +134,7 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
     
 - **Complemento de la Tienda Office:** si un administrador seleccionó un complemento de la Tienda Office y el complemento se actualiza en la Tienda Office, se actualizará más tarde en Implementación centralizada. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
   
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 [Administrar complementos en el centro de administración](manage-addins-in-the-admin-center.md)
 

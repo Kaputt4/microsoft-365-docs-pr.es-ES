@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Configurar la comprensión del contenido en Project Cortex
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294891"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304785"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -107,29 +107,9 @@ Si tiene 300 o más licencias de Syntex de SharePoint para SharePoint Syntex en 
 
 Puede calcular la capacidad del generador de AI que más le conviene con la [calculadora del generador de AI](https://powerapps.microsoft.com/ai-builder-calculator).
 
-1. Vaya al centro de administración de la [plataforma de energía](https://admin.powerplatform.microsoft.com/resources/capacity) para comprobar los créditos y el uso.
+Vaya al centro de administración de la [plataforma de energía](https://admin.powerplatform.microsoft.com/resources/capacity) para comprobar los créditos y el uso.
 
-    > [!NOTE]
-    > Habilitar esta opción en una biblioteca de documentos de SharePoint no afecta a los modelos existentes que se aplican a la biblioteca o a la capacidad de aplicar documentos que comprenden los modelos a una biblioteca. 
-    
-2. En la página **crear centro de contenido** , puede crear un sitio del centro de contenido de SharePoint para el que los usuarios puedan crear y administrar los modelos de comprensión de documentos. </br>
-    a. En **nombre del sitio**, escriba el nombre que desee para el sitio del centro de contenido.</br>
-    b. La **dirección del sitio** muestra la dirección URL del sitio, en función del nombre del sitio.</br>
-
-    > [!NOTE] 
-    > Aunque puede seleccionar cualquier idioma admitido, los modelos de comprensión de contenido solo se pueden crear para inglés.</br>
-
-      ![Crear centro de contenido](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. Seleccione **Siguiente**.
-
-4. En la página **finalizar y revisar** , mire la configuración seleccionada y elija realizar cambios. Si está satisfecho con las selecciones, seleccione **Activar**.
-
-5. Se muestra el **contenido que comprende** la página activada, confirmando que el sistema agregó sus preferencias de procesamiento de formulario y creó el sitio del centro de contenido. Seleccione **Listo**.
-
-6. Volverá a la página de **comprensión automatizada del contenido** . En esta página, puede seleccionar **administrar** para realizar cambios en las opciones de configuración. 
-
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Información general sobre el modelo de procesamiento de formularios](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 

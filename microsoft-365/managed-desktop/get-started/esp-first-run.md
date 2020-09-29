@@ -1,6 +1,6 @@
 ---
 title: Experiencia de primera ejecución con AutoPilot y la página de estado de inscripción
-description: Cómo implementar la experiencia de ESP, la configuración usada y las excepciones
+description: Cómo implementar la experiencia de ESP, la configuración usada y los cambios de configuración
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299244"
+ms.locfileid: "48305275"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con AutoPilot y la página de estado de inscripción
 
@@ -49,7 +49,7 @@ Microsoft Managed Desktop usa esta configuración en el perfil de AutoPilot usad
 |Escriba un nombre     | MMD-% RAND: 11%        |
 
 > [!NOTE]
-> Mientras que la "guante blanca" rovisioning solo está habilitada para los clientes con el ESP activado, actualmente no es compatible con el escritorio administrado por Microsoft.
+> Aunque el aprovisionamiento de "guante blanca" solo está habilitado para los clientes con el ESP activado, actualmente no es compatible con el escritorio administrado por Microsoft.
 
 ## <a name="enrollment-status-page-settings"></a>Configuración de la página de estado de inscripción
 
@@ -89,15 +89,15 @@ La experiencia continúa de la siguiente manera:
 
 Microsoft Managed Desktop no es compatible actualmente con la característica "guante blanca" de Windows AutoPilot.
 
-## <a name="exceptions"></a>Exceptions
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Cambio en la configuración de la página de estado de inscripción y AutoPilot
 
-Si la configuración que usa el escritorio administrado por Microsoft no se ajusta exactamente a sus necesidades, puede archivar una solicitud para una excepción. Para ello, vea los detalles en [solicitar una excepción](../service-description/customizing.md#request-an-exception). A continuación se muestran algunos ejemplos de los tipos de excepciones que puede necesitar:
+Si la configuración que usa el escritorio administrado por Microsoft no se ajusta exactamente a sus necesidades, puede archivar un vale de soporte técnico a través del [portal de administración](https://portal.azure.com/). A continuación se muestran algunos ejemplos de los tipos de configuración que puede necesitar:
 
-### <a name="autopilot-exception"></a>Excepción de piloto automático
+### <a name="autopilot-settings-change"></a>Cambio de la configuración de AutoPilot
 
 Es posible que desee solicitar una plantilla de nombre de dispositivo diferente. Sin embargo, no puede cambiar el modo de implementación, unirse a Azure como, configuración de privacidad o tipo de cuenta de usuario.
 
-### <a name="enrollment-status-page-exception"></a>Excepción de página de estado de inscripción
+### <a name="enrollment-status-page-settings-change"></a>Cambio de configuración de página de estado de inscripción
 
 - Un número de minutos mayor para la configuración "Mostrar un error cuando la instalación tarde más que el número de minutos especificado".
 - Mensaje de error que se muestra
