@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft proporciona plantillas para crear evaluaciones que se ajusten a las leyes, estándares y normas nacionales, regionales e industriales.
-ms.openlocfilehash: 548844e3850757484f9ee1d455d6ecd18bcb939c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9bce625bd8733570a62e3b5f7685cace84005b69
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204529"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294802"
 ---
-# <a name="compliance-manager-templates-list"></a>Lista de plantillas del administrador de cumplimiento
+# <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
 **En este artículo:** Vea la lista completa de **plantillas** disponibles para crear evaluaciones en el administrador de cumplimiento.
 
@@ -134,13 +134,8 @@ Obtenga más información sobre [Cómo ver y administrar las plantillas](complia
 - Indonesia-Law 11/2008 (Microsoft 365)
 - Indonesia-Peraturan Pemerintah Nº 82 Tahun 2012-administración de la información: Reglamento de protección de datos (Microsoft 365)
 - [IRS-P1075](offering-irs-1075.md) (Microsoft 365)
-- ISO 15489 (Microsoft 365)
-- [ISO 22301:2019](offering-iso-22301.md) (Microsoft 365)
-- ISO 27005:2018 (Microsoft 365)
 - [ISO 27017:2015](offering-iso-27017.md) (Microsoft 365)
-- ISO 31000:2018 (Microsoft 365)
 - [ISO/IEC 27018:2014](offering-iso-27018.md)
-- [ISO/IEC 27701:2019](offering-iso-27701.md) (Microsoft 365)
 - Normativa de Israel-protección de privacidad (transferencia de datos a bases de datos en el extranjero) (Microsoft 365)
 - Estructura de administración de seguridad de la información de ITU X. 365 (Microsoft)
 - Japón: Ley de prohibición de acceso a equipos no autorizados (Microsoft 365)
