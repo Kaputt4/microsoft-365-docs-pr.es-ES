@@ -14,4 +14,4 @@ ms.lasthandoff: 09/22/2020
 ms.locfileid: "48195384"
 ---
 > [!IMPORTANT]
-> Le damos la bienvenida a **Microsoft 365 Defender**, el nuevo nombre de la **Protección contra amenazas de Microsoft**. Obtenga más información sobre esta y otras actualizaciones[aquí](https://www.microsoft.com/security/blog/?p=91813).  Los nombres de los productos y los documentos se actualizarán en un futuro próximo
+> Le damos la bienvenida a **Microsoft 365 Defender**, el nuevo nombre de la **Protección contra amenazas de Microsoft**. Obtenga más información sobre esta y otras actualizaciones [aquí](https://www.microsoft.com/security/blog/?p=91813).  Los nombres de los productos y los documentos se actualizarán en un futuro próximo
