@@ -388,8 +388,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Eliminar un buzón inactivo
           href: delete-an-inactive-mailbox.md
-    - name: Vídeos del equipo de gobierno de datos
-      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: Administración de registros
       items:
         - name: Más información sobre la administración de registros

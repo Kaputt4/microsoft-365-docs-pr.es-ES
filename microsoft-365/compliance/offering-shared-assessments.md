@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 22518473a8caf038a0f0f1ef89085c50f4483d5b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: fcb5f3b96ab62dec8926e2638866775beeb8206b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416684"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304774"
 ---
 # <a name="shared-assessments-program"></a>Programa de evaluaciones compartidas
 
@@ -52,6 +52,6 @@ Basándose en una autoevaluación, Microsoft documentó el cumplimiento de Azure
 
 ## <a name="resources"></a>Recursos
 
-- [Respuesta estándar de Azure a la solicitud de información](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
+- [Respuesta estándar de Azure a la solicitud de información](https://azure.microsoft.com/resources/azure-standard-response-to-rfi-on-security-privacy-and-compliance/)
 - [Microsoft y la autoevaluación de CSA STAR](offering-csa-star-self-assessment.md)
 - [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: bfcb2bda4d560ab629ddebed88ac1d55e6224c05
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45186052"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295039"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -101,7 +101,48 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 
 5. Seleccione **Crear** > **Cerrar**.
 
-### <a name="step-6-update-dns-records-at-your-dns-hosting-provider"></a>Paso 6: actualizar los registros DNS en su proveedor de host DNS
+### <a name="step-6-configure-mail-to-flow-from-microsoft-365-or-office-365-to-email-server"></a>Paso 6: **configurar el correo para que fluya desde Microsoft 365 u Office 365 hacia el servidor de correo electrónico
+
+Para lograr esto, hay dos pasos:
+
+1. Configurar el entorno de Microsoft 365 u Office 365.
+
+2. Configurar un conector desde Microsoft 365 u Office 365 hacia su servidor de correo electrónico.
+
+### <a name="1-configure-your-microsoft-365-or-office-365-environment"></a>1. Configurar el entorno de Microsoft 365 u Office 365.
+
+Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
+
+1. Para configurar conectores, necesita permisos asignados antes de comenzar. Para comprobar qué permisos necesita, consulte la entrada sobre conectores de Microsoft 365 y Office 365 en el tema [Permisos de características en EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
+
+2. Si desea que EOP o Exchange Online retransmitan correo electrónico desde los servidores de correo electrónico a Internet, elija una de las siguientes opciones:
+
+   - Use un certificado configurado con un nombre de sujeto que coincida con un dominio aceptado en Microsoft 365 u Office 365. Se recomienda que el nombre común del certificado o el nombre alternativo del sujeto coincida con el dominio SMTP principal de la organización. Para obtener más información, consulte [Requisitos previos para su entorno de correo electrónico local](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+
+   -O-
+
+   - Asegúrese de que todos los dominios y subdominios del remitente de la organización estén configurados como dominios aceptados en Microsoft 365 y Office 365.
+
+   Para obtener más información sobre la definición de dominios aceptados, consulte [Administrar los dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) y [Habilitar el flujo de correo para los subdominios en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+
+3. Decida si desea usar reglas de flujo de correo (también conocidas como reglas de transporte) o nombres de dominio para entregar correo desde Microsoft 365 u Office 365 hacia los servidores de correo electrónico. La mayoría de las empresas elige entregar el correo para todos los dominios aceptados. Para obtener más información, consulte [Escenario: Enrutamiento de correo condicional en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
+
+> [!NOTE]
+> Puede configurar las reglas de flujo de correo tal y como se describen en [Acciones relacionadas con las reglas de flujo de correo de Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Por ejemplo, podría querer usar reglas de flujo de correo con conectores si actualmente su correo se dirigiera a través de listas de distribución hacia varios sitios.
+
+### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurar un conector desde Microsoft 365 u Office 365 hacia su servidor de correo electrónico
+
+Para crear un conector en Microsoft 365 u Office 365, haga clic en **Administración** y, luego, haga clic en **Exchange** para ir al Centro de administración de Exchange. A continuación, haga clic en **flujo de correo**, y en **conectores**.
+
+Configure los conectores con el asistente.
+
+Para iniciar el asistente, haga clic en el símbolo más **+**. En la primera pantalla, elija **De** Office 365 y **Para** el servidor de correo electrónico de su organización.
+
+Haga clic en **Siguiente**, y siga las instrucciones del asistente. Haga clic en los vínculos **Ayuda** o **Más información** si necesita más información. El asistente le guiará a través de la configuración. Al final, asegúrese de que su conector se valida. Si el conector no se valida, haga doble clic en el mensaje que se muestra para obtener más información, y consulte [Validar conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) para obtener ayuda con estos problemas.
+
+
+
+### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>Paso 7: actualizar los registros DNS en su proveedor de host DNS
 
 Inicie sesión en el sitio web de su proveedor de host DNS y siga las instrucciones que encontrará en [Agregar registros DNS para conectar su dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
@@ -115,7 +156,7 @@ Inicie sesión en el sitio web de su proveedor de host DNS y siga las instruccio
 
     Si no tiene un registro de SPF, modifique el recomendado por Microsoft 365 para incluir el dominio de su proveedor de correo electrónico actual y agregue spf.protection.outlook.com. Esto autoriza los mensajes salientes de ambos sistemas de correo electrónico.
 
-### <a name="step-7-set-up-email-forwarding-at-your-current-provider"></a>Paso 7: configurar el reenvío de correo electrónico en su proveedor actual
+### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Paso 8: configurar el reenvío de correo electrónico en su proveedor actual
 
 En su proveedor de correo electrónico actual, configure el reenvío de las cuentas de correo electrónico de los usuarios a su dominio onmicrosoft.com:
 
@@ -130,7 +171,7 @@ Cuando finalice este paso, todo el correo electrónico enviado a usera@yourcompa
 > No es necesario mantener una copia de los mensajes en el proveedor de correo electrónico actual.<br/>
 > La mayoría de los proveedores reenvían el correo electrónico dejando la dirección de respuesta del remitente intacta para que las respuestas pasen al remitente original.
 
-### <a name="step-8-test-mail-flow"></a>Paso 8: comprobar el flujo de correo
+### <a name="step-9-test-mail-flow"></a>Paso 9: comprobar el flujo de correo
 
 1. Inicie sesión en Outlook Web App con las credenciales del usuario A.
 
@@ -142,10 +183,10 @@ Cuando finalice este paso, todo el correo electrónico enviado a usera@yourcompa
 
     - Compruebe que el reenvío se configuró correctamente desde una cuenta externa o desde una cuenta de correo electrónico del empleado en el sistema de correo electrónico existente. Por ejemplo, desde la cuenta de servidor original del usuario C o de una cuenta de hotmail, envíe un correo electrónico al usuario A y compruebe que llega al buzón de Microsoft 365 para el usuario A.
 
-### <a name="step-9-move-mailbox-contents"></a>Paso 9: mover contenido del buzón de correo
+### <a name="step-10-move-mailbox-contents"></a>Paso 10: mover contenido del buzón de correo
 
 Como va a mover solo dos usuarios de prueba, y el usuario A y el usuario B usan Outlook, puede mover el correo electrónico abriendo el archivo .PST antiguo en el nuevo perfil de Outlook y copie los mensajes, los elementos de calendario, los contactos, etc. Para obtener más información, vea [Importar correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Una vez que se importan a las ubicaciones adecuadas en el buzón de correo de Microsoft 365, se puede acceder a ellos desde cualquier dispositivo y en cualquier lugar.
 
-Cuando haya más buzones involucrados, o si los empleados no están usando Outlook, puede usar las herramientas de migración disponibles en el Centro de administración de Exchange. Para empezar, vaya al Centro de administración de Exchange y siga las instrucciones que encontrará en [migrar el correo electrónico desde un servidor IMAP a los buzones de correo de Exchange Online: necesitamos un nuevo recurso de artículo].
+Cuando haya más buzones involucrados, o si los empleados no están usando Outlook, puede usar las herramientas de migración disponibles en el Centro de administración de Exchange. Para empezar, vaya al Centro de administración de Exchange y siga las instrucciones que encontrará en [Migrar el correo electrónico desde un servidor IMAP a los buzones de correo de Exchange Online](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
