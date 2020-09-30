@@ -1,4 +1,4 @@
-- name: Introducción a la comprensión del contenido
+- name: Introducción a Microsoft SharePoint Syntex
   items:
     - name: Introducción a Microsoft SharePoint Syntex
       href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
       href: create-a-classifier.md
     - name: Crear un extractor
       href: create-an-extractor.md
-    - name: Información general sobre los tipos de explicación
+    - name: Tipos de explicación
       href: explanation-types-overview.md
     - name: Aplicar un modelo
       href: apply-a-model.md
@@ -26,6 +26,8 @@
       href: apply-a-retention-label-to-a-model.md
     - name: Análisis de uso de modelos
       href: model-usage-analytics.md
+    - name: Aprovechar la taxonomía del almacén de términos al crear un extractor
+      href: leverage-term-store-taxonomy.md
 - name: Configuración y administración
   items:
     - name: Configurar la comprensión del contenido

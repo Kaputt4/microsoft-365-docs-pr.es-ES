@@ -95,6 +95,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Prepare a los usuarios para que usen dispositivos
           href: get-started/get-started-devices.md
+        - name: Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
+          href: get-started/esp-first-run.md
         - name: Introducción al control de aplicaciones
           href: get-started/get-started-app-control.md
         - name: Implementar aplicaciones
