@@ -9,18 +9,18 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 5198691a38b179a5491a36de95531edb9f32d691
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530252"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322228"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparar recursos de impresión para el Escritorio administrado de Microsoft
 
 A medida que esté listo para inscribirse en el escritorio administrado de Microsoft, debe evaluar los requisitos de impresión y determinar el enfoque adecuado para su entorno. Tiene tres opciones:
  
-- Implemente la solución de impresión de nube híbrida de Microsoft para que los dispositivos de escritorio administrados por Microsoft puedan detectar fácilmente impresoras. Para obtener más información, vea [deploy Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- Implemente la solución de impresión universal de Microsoft para que los dispositivos de escritorio administrados por Microsoft puedan detectar fácilmente impresoras. Para obtener más información, consulte [What is universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis).
 - Implemente las impresoras directamente mediante un script de PowerShell personalizado. Siga los pasos de la sección [configurar impresoras locales](#set-up-local-printers) para hacerlo.
 - Use una solución de impresión en la nube que no sea de Microsoft que sea compatible con dispositivos Windows 10 que estén Unidos a un dominio de Azure Active Directory. La solución debe cumplir los requisitos de software para el escritorio administrado por Microsoft. Para obtener más información, vea requisitos de la [aplicación de escritorio administrada de Microsoft](../service-description/mmd-app-requirements.md).
  

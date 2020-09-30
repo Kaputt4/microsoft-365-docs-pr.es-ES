@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Información general sobre la conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235543"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322204"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
 
@@ -157,8 +157,8 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    1. **Dirección** (obligatorio): dirección física de la oficina
    1. **Latitud** (opcional): se rellena desde mapas de Bing buscar en la dirección si está en blanco
    1. **Longitud** (opcional): se rellena desde mapas de Bing búsqueda de la dirección si está en blanco
-   1. **Intervalos de direcciones IP de salida 1-5** (opcional): para cada intervalo, escriba el nombre del circuito seguido de una lista separada por espacios de direcciones CIDR IPv4 o IPv6 válidas. Estos valores se usan para diferenciar varias ubicaciones de oficina en las que se usan las mismas direcciones IP de subred de LAN.
-   1. **LanIps** (obligatorio): enumerar los intervalos de subred de LAN en uso en esta ubicación de la oficina.
+   1. **Intervalos de direcciones IP de salida 1-5** (opcional): para cada intervalo, escriba el nombre del circuito seguido de una lista separada por espacios de direcciones CIDR IPv4 o IPv6 válidas. Estos valores se usan para diferenciar varias ubicaciones de oficina en las que se usan las mismas direcciones IP de subred de LAN. Los intervalos de direcciones IP de salida deben ser de/24 y el tamaño de red no se incluye en la entrada.
+   1. **LanIps** (obligatorio): enumerar los intervalos de subred de LAN en uso en esta ubicación de la oficina. Los identificadores de subred de LAN deben tener un tamaño de red CIDR donde el tamaño de red pueda estar comprendido entre/8 y/29. Se pueden separar varios intervalos de subred de LAN con una coma o un punto y coma.
 1. Una vez que haya agregado las ubicaciones de la oficina y guardado el archivo, haga clic en el botón **examinar** situado junto al campo **cargar el completado** y seleccione el archivo CSV guardado.
 1. El archivo se validará automáticamente. Si hay errores de validación, verá un mensaje de error que indica que _hay algunos errores en el archivo de importación. Revise los errores, corrija el archivo de importación y, a continuación, vuelva a intentarlo._ Haga clic en el vínculo **abrir detalles de error** para obtener una lista de errores de validación de campo específicos.
 

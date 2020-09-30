@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con los invitados en Microsoft Teams.
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797775"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322182"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -47,7 +47,7 @@ Para establecer la configuración de relación organizativa
 
 1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
-3. En el panel de **información general** , haga clic en **identidades externas**.
+3. En el panel **Información general**, haga clic en **Identidades externas**.
 4. En el panel **identidades organizativas** , haga clic en **configuración de colaboración externa**.
 5. Asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y que **los miembros puedan invitar** están establecidos en **sí**.
 6. Si ha realizado cambios, haga clic en **Guardar**.
@@ -105,7 +105,7 @@ Si desea permitir el uso compartido de archivos y carpetas con personas sin aute
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **directivas** y, a continuación, haga clic en **compartir**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -175,7 +175,7 @@ Para invitar a invitados a un equipo
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
