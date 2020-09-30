@@ -17,37 +17,37 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199714"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318213"
 ---
-# <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a><span data-ttu-id="f571a-104">Cerrar y resumir su piloto de Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f571a-104">Closing and summarizing your Microsoft Threat Protection pilot</span></span>  
+# <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a><span data-ttu-id="ea555-104">Cerrar y resumir su piloto de Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="ea555-104">Closing and summarizing your Microsoft Threat Protection pilot</span></span>  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="f571a-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="f571a-105">**Applies to:**</span></span>
-- <span data-ttu-id="f571a-106">Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="f571a-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="ea555-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="ea555-105">**Applies to:**</span></span>
+- <span data-ttu-id="ea555-106">Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="ea555-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="f571a-107">Acaba de simular un ataque avanzado de solo memoria que ejecutó código de forma remota en un controlador de dominio.</span><span class="sxs-lookup"><span data-stu-id="f571a-107">You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller.</span></span> <span data-ttu-id="f571a-108">Ha visto cómo Microsoft defender ATP y Azure ATP detecta y alerta sobre actividades malintencionadas ocultas.</span><span class="sxs-lookup"><span data-stu-id="f571a-108">You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity.</span></span> <span data-ttu-id="f571a-109">También ha visto cómo se entregan alertas de diferentes orígenes junto con otra información contextual en un solo incidente en el portal del centro de seguridad de Microsoft 365, lo que permite a los analistas de SOC investigar y tomar las medidas necesarias.</span><span class="sxs-lookup"><span data-stu-id="f571a-109">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="f571a-110">También ha creado una consulta de búsqueda avanzada que identificará los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos y crea una detección basada en esa consulta.</span><span class="sxs-lookup"><span data-stu-id="f571a-110">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
+<span data-ttu-id="ea555-107">Acaba de simular un ataque avanzado de solo memoria que ejecutó código de forma remota en un controlador de dominio.</span><span class="sxs-lookup"><span data-stu-id="ea555-107">You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller.</span></span> <span data-ttu-id="ea555-108">Ha visto cómo Microsoft defender ATP y Azure ATP detecta y alerta sobre actividades malintencionadas ocultas.</span><span class="sxs-lookup"><span data-stu-id="ea555-108">You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity.</span></span> <span data-ttu-id="ea555-109">También ha visto cómo se entregan alertas de diferentes orígenes junto con otra información contextual en un solo incidente en el portal del centro de seguridad de Microsoft 365, lo que permite a los analistas de SOC investigar y tomar las medidas necesarias.</span><span class="sxs-lookup"><span data-stu-id="ea555-109">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="ea555-110">También ha creado una consulta de búsqueda avanzada que identificará los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos y crea una detección basada en esa consulta.</span><span class="sxs-lookup"><span data-stu-id="ea555-110">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
 
-<span data-ttu-id="f571a-111">Ha alcanzado el final del proceso una vez finalizadas todas las pruebas.</span><span class="sxs-lookup"><span data-stu-id="f571a-111">You’ve reached the end of the process after all tests have concluded.</span></span>
+<span data-ttu-id="ea555-111">Ha alcanzado el final del proceso una vez finalizadas todas las pruebas.</span><span class="sxs-lookup"><span data-stu-id="ea555-111">You’ve reached the end of the process after all tests have concluded.</span></span>
 
-<span data-ttu-id="f571a-112">El resultado final debe ser:</span><span class="sxs-lookup"><span data-stu-id="f571a-112">The final output should be:</span></span>
-- <span data-ttu-id="f571a-113">Un cuadro de mandos completado</span><span class="sxs-lookup"><span data-stu-id="f571a-113">A completed scorecard</span></span>
-- <span data-ttu-id="f571a-114">Un informe detallado de los resultados de la prueba piloto</span><span class="sxs-lookup"><span data-stu-id="f571a-114">A detailed report of the findings of the pilot</span></span>
-- <span data-ttu-id="f571a-115">Una decisión sobre cómo avanzar</span><span class="sxs-lookup"><span data-stu-id="f571a-115">A decision on how to move forward</span></span>
+<span data-ttu-id="ea555-112">El resultado final debe ser:</span><span class="sxs-lookup"><span data-stu-id="ea555-112">The final output should be:</span></span>
 
-<span data-ttu-id="f571a-116">Esta información debe presentarse a las partes interesadas internas (que usted identificó durante la fase de [preparación](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) y a los contactos de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f571a-116">This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase)  and Microsoft contacts.</span></span> <span data-ttu-id="f571a-117">Esto garantiza que se puedan usar comentarios para mejorar los productos y la documentación.</span><span class="sxs-lookup"><span data-stu-id="f571a-117">This ensures that any feedback can be used to improve products and documentation.</span></span>
+- <span data-ttu-id="ea555-113">Un cuadro de mandos completado</span><span class="sxs-lookup"><span data-stu-id="ea555-113">A completed scorecard</span></span>
+- <span data-ttu-id="ea555-114">Un informe detallado de los resultados de la prueba piloto</span><span class="sxs-lookup"><span data-stu-id="ea555-114">A detailed report of the findings of the pilot</span></span>
+- <span data-ttu-id="ea555-115">Una decisión sobre cómo avanzar</span><span class="sxs-lookup"><span data-stu-id="ea555-115">A decision on how to move forward</span></span>
 
-<span data-ttu-id="f571a-118">Esperamos que haya disfrutado de esta simulación y que se le anima a empezar a implementar lo que ha aprendido.</span><span class="sxs-lookup"><span data-stu-id="f571a-118">We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.</span></span>
+<span data-ttu-id="ea555-116">Esta información debe presentarse a las partes interesadas internas (que usted identificó durante la fase de [preparación](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) ) y a los contactos de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ea555-116">This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts.</span></span> <span data-ttu-id="ea555-117">Esto garantiza que se puedan usar comentarios para mejorar los productos y la documentación.</span><span class="sxs-lookup"><span data-stu-id="ea555-117">This ensures that any feedback can be used to improve products and documentation.</span></span>
 
+<span data-ttu-id="ea555-118">Esperamos que haya disfrutado de esta simulación y que se le anima a empezar a implementar lo que ha aprendido.</span><span class="sxs-lookup"><span data-stu-id="ea555-118">We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="f571a-119">Paso siguiente</span><span class="sxs-lookup"><span data-stu-id="f571a-119">Next step</span></span>
-||
-|:-------|
-|<span data-ttu-id="f571a-120">Examine el [centro de soluciones y arquitectura de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) para comprender cómo diseñar la solución y la arquitectura adecuadas para su organización.</span><span class="sxs-lookup"><span data-stu-id="f571a-120">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.</span></span>
+## <a name="next-step"></a><span data-ttu-id="ea555-119">Paso siguiente</span><span class="sxs-lookup"><span data-stu-id="ea555-119">Next step</span></span>
 
+****
+
+<span data-ttu-id="ea555-120">Examine el [centro de soluciones y arquitectura de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) para comprender cómo diseñar la solución y la arquitectura adecuadas para su organización.</span><span class="sxs-lookup"><span data-stu-id="ea555-120">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.</span></span>
