@@ -91,7 +91,7 @@
           href: managing-expressroute-for-connectivity.md
     - name: Programa para partners de redes de Microsoft 365
       href: microsoft-365-networking-partner-program.md
-- name: Inquilino
+- name: Tenant
   items:
     - name: Guía básica
       href: tenant-roadmap-microsoft-365.md
@@ -334,12 +334,14 @@
           href: during-and-after-your-data-move.md
         - name: Preguntas más frecuentes sobre el movimiento de datos
           href: data-move-faq.md
-        - name: 'Microsoft Cloud Alemania: programa de migración de Office 365'
-          href: ms-cloud-germany-transition.md
-        - name: 'Microsoft Cloud Alemania: optar por la migración'
-          href: ms-cloud-germany-migration-opt-in.md
         - name: Dónde se almacenan los datos del cliente
           href: o365-data-locations.md
+        - name: Microsoft Cloud Deutschland
+          items:
+            - name: Información general
+              href: ms-cloud-germany-transition.md
+            - name: Participar en la migración
+              href: ms-cloud-germany-migration-opt-in.md
 - name: Identidad
   items:
     - name: Guía básica

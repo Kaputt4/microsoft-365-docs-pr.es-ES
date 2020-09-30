@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear los correos electrónicos de los servidores de correo electrónico.
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203376"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318257"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -141,7 +141,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que la Directiva de filtro de conexión predeterminada se modificó correctamente, siga uno de estos pasos:
 
@@ -203,7 +203,6 @@ Si se encuentra en cualquiera de estos escenarios, puede crear una regla de fluj
 
 ## <a name="new-to-microsoft-365"></a>¿Es la novedad de Microsoft 365?
 
-|<!-- a -->|
-|---|
-|![El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New a Microsoft 365?** Descubra los cursos de vídeo gratuitos para **administradores y profesionales de ti**, que le ha ofrecido LinkedIn Learning.|
-|
+****
+
+![El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New a Microsoft 365?** Descubra los cursos gratuitos de vídeo para **administradores y profesionales de TI de Microsoft 365**, que le ha ofrecido LinkedIn Learning.

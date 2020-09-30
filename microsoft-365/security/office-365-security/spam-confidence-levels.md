@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el nivel de confianza contra correo no deseado (SCL) que se aplica a los mensajes en Exchange Online Protection (EOP).
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202238"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318245"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Nivel de confianza contra correo no deseado (SCL) en EOP
 
@@ -50,6 +50,6 @@ Puede usar reglas de flujo de correo (también conocidas como reglas de transpor
 
 Al igual que el SCL, el nivel de queja masiva (BCL) identifica un correo electrónico en masa malo (también conocido como _correo gris_). Un BCL superior indica que es más probable que un mensaje de correo masivo generen quejas (y, por lo tanto, es más probable que sea correo no deseado). El umbral de BCL se configura en las directivas contra correo no deseado. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md), [nivel de queja masiva (BCL) en EOP](bulk-complaint-level-values.md), y [¿cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-|<!-- -->|
-|---|
-|![El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New a Microsoft 365?** Descubra los cursos gratuitos de vídeo para **administradores y profesionales de TI de Microsoft 365**, que le ha ofrecido LinkedIn Learning.|
+****
+
+![El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New a Microsoft 365?** Descubra los cursos gratuitos de vídeo para **administradores y profesionales de TI de Microsoft 365**, que le ha ofrecido LinkedIn Learning.

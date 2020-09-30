@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre las distintas formas de informar de los mensajes y los archivos buenos y no válidos a Microsoft para su análisis.
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203664"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318199"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los usuarios y los administradores tienen varios métodos diferentes para informar de los mensajes de correo electrónico y los archivos a Microsoft.
 
@@ -43,6 +42,5 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 |[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Obtenga información sobre cómo crear una regla de flujo de correo (también denominada regla de transporte) que le notifica cuando los usuarios notifican mensajes a Microsoft para su análisis.
 |||
 |[Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Usar el sitio de inteligencia en seguridad de Microsoft para enviar datos adjuntos y otros archivos.|
-|
 
 Si los mensajes de correo no deseado o de suplantación de identidad se han puesto en cuarentena en lugar de entregarse, los usuarios pueden informar de los mensajes a Microsoft del portal de cuarentena en el centro de seguridad & cumplimiento. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).
