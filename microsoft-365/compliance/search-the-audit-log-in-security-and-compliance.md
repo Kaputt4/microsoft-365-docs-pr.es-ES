@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
+description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197353"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286046"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
+# <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de [actividades administrativas y de usuario](#audited-activities) en Office 365:
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de [Actividades administrativas y de usuario](#audited-activities) en Microsoft 365:
 
 - Actividad de usuario en SharePoint Online y OneDrive para Empresas
 
@@ -36,7 +36,7 @@ ms.locfileid: "48197353"
 
 - Actividad de administración en SharePoint en línea
 
-- Actividad de administrador en Azure Active Directory (el servicio de directorio para Office 365)
+- Actividad de administrador en Azure Active Directory (el servicio de directorio para Microsoft 365)
 
 - Actividad de administración en Exchange en línea (registro de auditoría de administración de Exchange)
 

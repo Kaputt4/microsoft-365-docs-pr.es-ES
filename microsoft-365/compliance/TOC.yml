@@ -151,8 +151,10 @@
       items:
         - name: Entender el cifrado
           href: encryption.md
-        - name: Cifrado de doble clave (vista previa)
+        - name: Cifrado de clave doble (DKE)
           href: double-key-encryption.md
+        - name: Preguntas más frecuentes sobre el Cifrado de clave doble
+          href: double-key-encryption-overview.md
         - name: Cifrado de servicio de Office 365
           href: office-365-service-encryption.md
         - name: Clave de cliente
@@ -340,10 +342,6 @@
               href: archive-workplacefromfacebook-data.md
             - name: Reuniones de Zoom
               href: archive-zoommeetings-data.md
-            - name: Margen de demora
-              href: archive-slack-data.md
-            - name: Reuniones de Zoom
-              href: archive-zoommeetings-data.md
         - name: Conectores de datos de telemensaje
           items:
             - name: Android
@@ -425,7 +423,7 @@
               href: configure-edge-to-export-search-results.md
             - name: Buscar y eliminar mensajes de correo electrónico
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: Buscar los buzones basados en la nube de usuarios locales
+            - name: Buscar los datos de los chats de Teams para usuarios locales
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Editar en masa varias búsquedas de contenido
               href: bulk-edit-content-searches.md
