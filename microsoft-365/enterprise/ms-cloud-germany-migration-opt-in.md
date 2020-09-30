@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693597"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309052"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
 
 >[!Note]
->Este artículo solo se aplica a los clientes de Microsoft Cloud Alemania/Deutschland elegibles.
+>Este artículo solo se aplica a los clientes de Microsoft Cloud Germany (Microsoft Cloud Alemania).
 >
 
 ## <a name="how-to-request-migration"></a>Cómo solicitar la migración
 
-Los clientes elegibles para el servicio que se ofrece en Microsoft Cloud Alemania verán una página en el Centro de administración de Microsoft 365 que permite a un administrador del espacio empresarial del cliente participar en la migración.
+Los clientes elegibles con el servicio aprovisionado en la nube de Microsoft Alemania (Microsoft Cloud Alemania) verán una página en el centro de administración de 365 de Microsoft que permitirá que un administrador de inquilinos de cliente participe en la migración.
 
 Para obtener acceso a la página en el Centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **Configuración** y, después, haga clic en **Perfil de la organización**.
 
@@ -54,7 +54,13 @@ Una vez que el administrador ha aceptado la participación en nombre de su espac
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>¿Qué pasa después de suscribirse a la migración?
 
-Se espera que las migraciones de las organizaciones que participen en el enfoque liderado por Microsoft ocurran en 2020.  Como resultado de la migración, los datos básicos del cliente y las suscripciones se mueven a las nuevas regiones alemanas.  Microsoft enviará actualizaciones en el Centro de mensajes durante todo el proceso de migración.
+Las migraciones empezarán a principios de 2021 para las organizaciones que participen en el enfoque dirigido por Microsoft y se completarán antes de la fecha de jubilación de Microsoft Cloud Germany (Microsoft Cloud Alemania) del 29 de octubre de 2021.  Como resultado de la migración, los datos básicos del cliente y las suscripciones se mueven a las nuevas regiones alemanas.  Microsoft enviará actualizaciones en el Centro de mensajes durante todo el proceso de migración.  Para obtener más información, consulte los artículos a los que se hace referencia a continuación.
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>¿Qué sucede si el administrador de inquilinos de cliente no está habilitado para la migración en el centro de administración?
+
+Los términos de servicios en línea han cambiado para incluir los términos que permitirán a Microsoft migrar los datos y las suscripciones de Microsoft 365, Dynamics 365 y Power BI desde la nube de Microsoft Alemania a un nuevo centro de datos. Estos términos surten efecto en cualquier suscripción de Microsoft Cloud Germany (Microsoft Cloud Alemania) renovada desde el 1 de mayo de 2020.  El administrador de inquilinos de cliente recibirá un aviso en el correo electrónico y en el centro de mensajes que advierte que la suscripción a la migración se producirá automáticamente para una migración asistida por Microsoft. Esta notificación se enviará al menos 30 días antes de la opción automática.  Después de la migración, todas las comunicaciones y las actualizaciones de estado se envían a los administradores de inquilinos del cliente en el centro de mensajes.
+
+Se recomienda a los administradores de inquilinos de clientes y asociados de la suscripción para la migración en el centro de administración, de modo que el proceso de migración pueda comenzar tan pronto como sea posible.
 
 ## <a name="more-information"></a>Más información
 

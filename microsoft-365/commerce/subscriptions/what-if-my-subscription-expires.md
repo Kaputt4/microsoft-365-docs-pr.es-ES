@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: 2852d2fc301d71131a0adb1c277974e2303dd395
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 2c8b21274d7e3e776e62a9a185309d6e742ac2b3
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016082"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309187"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
@@ -36,7 +36,7 @@ Si su suscripción termina, ya sea porque expira o porque decide cancelarla, el 
 
 Lea esta información importante antes de ponerse en contacto [con el soporte técnico de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
-## <a name="what-happens-to-data-when-a-subscription-expires"></a>¿Qué pasa con los datos cuando expira una suscripción? 
+## <a name="what-happens-to-data-when-a-subscription-expires"></a>¿Qué pasa con los datos cuando expira una suscripción?
 
 - Si su suscripción expira, pasa por las siguientes fases: caducada/deshabilitada/desaprovisionada. La fase expirada comienza inmediatamente después de que la suscripción ha alcanzado la fecha de finalización.
 - Si desactiva la facturación recurrente en su suscripción anual, pasa por las mismas fases que una suscripción expirada. La primera etapa comienza es el aniversario de la suscripción anual, no a partir de la fecha en que se ha desactivado la configuración de facturación recurrente de la suscripción.
@@ -47,7 +47,7 @@ En la siguiente tabla se explica qué se puede esperar cuando expire una suscrip
 | **Active**                                                             | **Expirado <br/> (30 días \* )**                                                | **Deshabilitado <br/> (90 días \* )**                                               | **Desaprovisionada**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Datos accesibles para todos los*                                               | *Datos accesibles para todos los*                                                     | *Datos accesibles solo para administradores*                                             | **Se quitan los datos eliminados <br/> de Azure Active Directory, si otros servicios no los usan** |
-| Los usuarios tienen acceso normal a Microsoft 365, datos y aplicaciones de Office  | Los usuarios tienen acceso normal a Microsoft 365, archivos y aplicaciones.              | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                        | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                                     |
+| Los usuarios tienen acceso normal a Microsoft 365, archivos y aplicaciones.   | Los usuarios tienen acceso normal a Microsoft 365, archivos y aplicaciones.              | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                        | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                                     |
 | Los administradores tienen acceso normal a las aplicaciones de Microsoft 365, datos y Office. | Los administradores pueden acceder al centro de administración                                           | Los administradores pueden tener acceso al centro de administración, pero no pueden asignar licencias a los usuarios.       | Los administradores pueden tener acceso al centro de administración para comprar y administrar otras suscripciones             |
 |                                                                        | Los administradores globales o de facturación pueden reactivar la suscripción en el centro de administración | Los administradores globales o de facturación pueden reactivar la suscripción en el centro de administración |                                                                                           |
 
@@ -208,16 +208,19 @@ A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como 
 Cuando finalice la versión de prueba, no podrá seguir usando Microsoft 365 de forma gratuita. Tiene algunas opciones:
 
 ::: moniker range="o365-worldwide"
+
 - **Compre Microsoft 365.** Cuando la versión de prueba expire, pasa a un período de gracia, lo que le da otros 30 días (para la mayoría de los casos de prueba, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [compre Your Trial version of Microsoft 365 for Business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 - **Compre Microsoft 365.** Cuando la versión de prueba expire, pasa a un período de gracia, lo que le da otros 30 días (para la mayoría de los casos de prueba, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [compre Your Trial version of Microsoft 365 for Business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 - **Comprar Office 365.** Al expirar la prueba, entrará en un período de gracia que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Office 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
 
 ::: moniker-end
@@ -229,10 +232,8 @@ Cuando finalice la versión de prueba, no podrá seguir usando Microsoft 365 de 
 > [!NOTE]
 > La información de esta página está sujeta a [Aviso de cambio y exención de responsabilidades de la directiva de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Vuelva a este sitio periódicamente para revisar los cambios.
 
-## <a name="related-articles"></a>Artículos relacionados 
+## <a name="related-content"></a>Contenido relacionado 
 
-[Cancelar la suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription)
-
-[Renovar Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription)
-
-[Reactivar la suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription)
+[Cancelar la suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (artículo) \
+[Renovar Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (artículo) \
+[Reactivar la suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (artículo)

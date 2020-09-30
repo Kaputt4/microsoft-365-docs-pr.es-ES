@@ -13,22 +13,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 08/21/2020
-description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: d6793793a663e562b05df7e8458a6a8933e5ee47
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+keywords: respuesta de incidente automatizada, investigación, corrección, protección contra amenazas
+ms.date: 09/29/2020
+description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Microsoft defender para Office 365
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: ce95b91aa67f76cf46ce3ed6285e24d3e9edd146
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200350"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308959"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Información general sobre la investigación y la respuesta automatizadas (AIR) en Microsoft 365
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Información general sobre investigación y respuesta automatizada (AIR) en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-A medida que se activen las alertas de seguridad, el equipo de operaciones de seguridad será el encargado de consultar esas alertas y tomar las medidas necesarias para proteger su organización. A veces, los equipos de operaciones de seguridad pueden sentirse abrumados por el volumen de alertas que se desencadenan. Capacidades de investigación y respuesta automatizadas (AIR) en Office 365 Advanced Threat Protection (Office 365 ATP) puede ser útil. 
+A medida que se activen las alertas de seguridad, el equipo de operaciones de seguridad será el encargado de consultar esas alertas y tomar las medidas necesarias para proteger su organización. A veces, los equipos de operaciones de seguridad pueden sentirse abrumados por el volumen de alertas que se desencadenan. La funcionalidad de investigación y respuesta automatizada (AIR) de Microsoft defender para Office 365 puede ayudarle. 
 
 AIR permite que el equipo de operaciones de seguridad funcione de forma más eficiente y eficaz. Las capacidades de AIR incluyen procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen en la actualidad. Acciones de corrección adecuadas esperando la aprobación, lo que permite al equipo de operaciones de seguridad responder a amenazas detectadas. 
 
@@ -36,7 +39,7 @@ En este artículo se proporciona información general sobre AIR. Cuando esté li
 
 ## <a name="at-a-high-level"></a>A un alto nivel
 
-A medida que se activen las alertas, las guías de seguridad entrarán en vigor. En función de la situación, puede comenzar un [proceso de investigación automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) . Durante y después de una investigación automatizada, se recomiendan [las acciones de corrección](air-remediation-actions.md) . No se realiza automáticamente ninguna acción en la protección contra amenazas avanzada de Office 365. El equipo de operaciones de seguridad revisa y, a continuación, [aprueba o rechaza cada acción de corrección](air-review-approve-pending-completed-actions.md). Cuando se aprueban o rechazan todas las acciones que siguen a la investigación, se completa la investigación. Todas estas actividades se controlan y se pueden ver en el centro de seguridad & cumplimiento (vea [Ver detalles de una investigación](air-view-investigation-results.md#view-details-of-an-investigation)).
+A medida que se activen las alertas, las guías de seguridad entrarán en vigor. En función de la situación, puede comenzar un [proceso de investigación automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) . Durante y después de una investigación automatizada, se recomiendan [las acciones de corrección](air-remediation-actions.md) . No se realizan acciones automáticamente en Microsoft defender para Office 365. El equipo de operaciones de seguridad revisa y, a continuación, [aprueba o rechaza cada acción de corrección](air-review-approve-pending-completed-actions.md). Cuando se aprueban o rechazan todas las acciones que siguen a la investigación, se completa la investigación. Se realiza el seguimiento y la visualización de todas estas actividades en el centro de seguridad 365 de Microsoft ( [https://security.microsoft.com](https://security.microsoft.com) ). (Para obtener más información, consulte [Ver detalles de una investigación](air-view-investigation-results.md#view-details-of-an-investigation)).
 
 En las secciones siguientes se proporcionan más detalles sobre las alertas, las guías de seguridad y ejemplos de aire en funcionamiento.
 
@@ -50,43 +53,36 @@ Actualmente, las alertas generadas a partir de los siguientes tipos de directiva
 - Correo electrónico notificado por el usuario como phish`*`
 - Mensajes de correo electrónico que contienen malware quitados después de la entrega`*`
 - Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega`*`
-- Patrones de envío de correo electrónico sospechosos detectados`#`
-- El usuario restringió el envío de correo electrónico`#`
+- Patrones de envío de correo electrónico sospechosos detectados
+- El usuario restringió el envío de correo electrónico
+- El administrador ha activado la investigación manual del correo electrónico`*`
 
 > [!NOTE]
-> A las alertas marcadas con un asterisco ( `*` ) se les asigna una gravedad *informativa* en las respectivas directivas de alerta del centro de seguridad & cumplimiento, con las notificaciones de correo electrónico desactivadas. Las notificaciones por correo electrónico se pueden activar a través de la configuración de la [Directiva de alerta](../../compliance/alert-policies.md#alert-policy-settings). Las alertas marcadas con un hash ( `#` ) están normalmente disponibles como alertas asociadas con las guías de vista previa pública.
+> A las alertas marcadas con un asterisco ( `*` ) se les asigna una gravedad *informativa* en las respectivas directivas de alerta en el centro de seguridad de Microsoft 365, con notificaciones de correo electrónico desactivadas. Las notificaciones por correo electrónico se pueden activar a través de la configuración de la [Directiva de alerta](../../compliance/alert-policies.md#alert-policy-settings). 
 
 Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas**  >  **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](air-view-investigation-results.md#investigation-graph)correspondiente.  
 
 > [!NOTE]
 > Las alertas informativas están ocultas de forma predeterminada en la vista de alertas. Para verlos, cambie el filtrado de alertas para incluir alertas informativas.
 
-Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas a ese sistema mediante una notificación por correo electrónico o a través de la [API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través de correo electrónico o API incluyen vínculos para acceder a las alertas en el centro de seguridad & cumplimiento, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
+Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas a ese sistema mediante una notificación por correo electrónico o a través de la [API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través del correo electrónico o la API incluyen vínculos para acceder a las alertas en el centro de seguridad de Microsoft 365, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
 
 ![Alertas que vinculan a investigaciones](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>Guías de seguridad
 
-Las guías de seguridad son directivas de back-end que se encuentran en el corazón de la automatización de la protección contra amenazas avanzada de Office y en la protección contra amenazas de Microsoft. Las guías de seguridad que se proporcionan en AIR se basan en escenarios comunes de seguridad de todo el mundo y se desarrollan en función de los comentarios de los equipos de operaciones de seguridad. Una guía de seguridad se inicia automáticamente cuando se desencadenan alertas específicas dentro de la organización. Una vez que se activa la alerta, el sistema de investigación y respuesta automatizada (AIR) ejecuta la guía asociada. La investigación avanza paso a paso por el análisis de la alerta basándose en la guía de la alerta en particular, examinando todos los metadatos asociados (incluidos los mensajes de correo electrónico, usuarios, asuntos, remitentes, etc.). Basándose en los resultados de la guía de investigación, AIR recomienda un conjunto de acciones que el equipo de seguridad de la organización puede llevar a cabo para controlar y mitigar la amenaza. 
+Las guías de seguridad son directivas de back-end que están en el corazón de la automatización de Microsoft defender para Office 365 y protección contra amenazas de Microsoft. Las guías de seguridad que se proporcionan en AIR se basan en escenarios comunes de seguridad de todo el mundo y se desarrollan en función de los comentarios de los equipos de operaciones de seguridad. Una guía de seguridad se inicia automáticamente cuando se desencadenan alertas específicas dentro de la organización. Una vez que se activa la alerta, el sistema de investigación y respuesta automatizada ejecuta la guía asociada. La investigación avanza paso a paso por el análisis de la alerta basándose en la guía de la alerta en particular, examinando todos los metadatos asociados (incluidos los mensajes de correo electrónico, usuarios, asuntos, remitentes, etc.). Basándose en los resultados de la guía de investigación, AIR recomienda un conjunto de acciones que el equipo de seguridad de la organización puede llevar a cabo para controlar y mitigar la amenaza. 
 
 Las guías de seguridad que recibirá con AIR están diseñadas para enfrentarse a las amenazas más frecuentes que las organizaciones detectan actualmente con el correo electrónico. Se basan en la información de las operaciones de seguridad y los equipos de respuesta ante incidentes, incluidas las personas que ayudan a defender a Microsoft y a los activos de nuestros clientes.
-
-### <a name="security-playbooks-are-rolling-out-in-phases"></a>Las guías de seguridad se implementan en fases
-
-Como parte de AIR, las guías de seguridad se implementan en fases. La fase 1 suele estar disponible e incluye varias guías que proporcionan recomendaciones para las acciones que los administradores de seguridad pueden revisar y aprobar:
 
 - Mensaje de phish notificado por el usuario
 - URL-hacer clic en el cambio de veredicto
 - Malware detectado después de la entrega (ZAP de malware)
 - Phish detectado tras entrega tras entrega (ZAP de Phish)
+- Usuario notificado como comprometido 
+- Investigación manual de correo electrónico (desencadenado por el administrador desde malware, phish o todas las vistas de correo electrónico)
 
-La fase 1 también incluye compatibilidad para las investigaciones de correo electrónico desencadenadas por el administrador (mediante el [Explorador de amenazas](threat-explorer.md)).
-
-La fase 2 está ahora en progreso con las siguientes guías en la **versión preliminar pública**, ofreciendo recomendaciones para las acciones y a los administradores de seguridad en la investigación de problemas:
-
-- Usuario notificado como comprometida (vista previa pública)
-
-Se publicarán más guías cuando se completen. Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que más está previsto y próximamente.
+Se publicarán más guías y actualizaciones de la guía a medida que se completen. Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que más está previsto y próximamente.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Las guías incluyen investigación y recomendaciones
 
@@ -118,7 +114,7 @@ Una vez completada la investigación raíz, la guía proporciona una lista de la
 A continuación, se ejecutan varios pasos de investigación y de búsqueda de amenazas:
 
 - Los mensajes de correo electrónico similares se identifican mediante búsquedas de clúster de correo electrónico.
-- La señal se comparte con otras plataformas, como [ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+- La señal se comparte con otras plataformas, como [Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Se determina si algún usuario ha hecho clic en cualquier vínculo malintencionado en mensajes de correo electrónico sospechosos.
 - Se realiza una comprobación en Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) y Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) para ver si hay otros mensajes similares notificados por los usuarios.
 - Se realiza una comprobación para ver si un usuario se ha puesto en peligro. Esta comprobación aprovecha las señales de Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)y [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlacionando las anomalías relacionadas con las actividades de los usuarios.
@@ -129,9 +125,9 @@ La corrección es la fase final de la guía. Durante esta fase, se realizan paso
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Ejemplo: un administrador de seguridad desencadena una investigación desde el explorador de amenazas
 
-Además de las investigaciones automatizadas que se desencadenan por una alerta, el equipo de operaciones de seguridad de la organización puede desencadenar una investigación automatizada desde una vista en el [Explorador de amenazas](threat-explorer.md).
+Además de las investigaciones automatizadas que se desencadenan por una alerta, el equipo de operaciones de seguridad de la organización puede desencadenar una investigación automatizada desde una vista en el [Explorador de amenazas](threat-explorer.md).  Esta investigación también crea una alerta, de modo que los incidentes de Microsoft defender y las herramientas de SIEM externa puedan ver que se ha desencadenado esta investigación. 
 
-Por ejemplo, supongamos que usa la vista de **malware** en el explorador de amenazas. Mediante las pestañas debajo del gráfico, seleccione la pestaña **correo electrónico** . Si selecciona uno o más elementos de la lista, se activa el botón **+ acciones** . 
+Por ejemplo, supongamos que usa la vista de **malware** en el explorador. Mediante las pestañas debajo del gráfico, seleccione la pestaña **correo electrónico** . Si selecciona uno o más elementos de la lista, se activa el botón **+ acciones** . 
 
 ![Explorador con los mensajes seleccionados](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
@@ -143,16 +139,14 @@ De forma similar a las guías activadas por una alerta, las investigaciones auto
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Ejemplo: un equipo de operaciones de seguridad integra AIR con su SIEM mediante la API de actividad de administración 365 de Office
 
-Funcionalidades de AIR en Office 365 ATP incluye [informes & detalles](air-view-investigation-results.md) que el equipo de operaciones de seguridad puede usar para supervisar y solucionar amenazas. Pero también puede integrar las capacidades de AIR con otras soluciones. Algunos ejemplos son un sistema de administración de eventos e información de seguridad (SIEM), un sistema de administración de casos o una solución de informes personalizada. Estos tipos de integración se pueden realizar mediante el uso de la [API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Las funcionalidades de AIR de Microsoft defender para Office 365 incluyen [informes & detalles](air-view-investigation-results.md) que los equipos de operaciones de seguridad pueden usar para supervisar y solucionar amenazas. Pero también puede integrar las capacidades de AIR con otras soluciones. Algunos ejemplos son un sistema de administración de eventos e información de seguridad (SIEM), un sistema de administración de casos o una solución de informes personalizada. Estos tipos de integraciones se pueden realizar mediante el uso de la [API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea las alertas de phish notificadas por el usuario que ya se procesaron por vía aérea. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, vea [blog de la comunidad tecnológica: mejorar la efectividad de su SOC con Office 365 ATP y la API de administración de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Empezar a usar AIR](office-365-air.md)
 
-## <a name="see-also"></a>Vea también
+- [Visite el plan de desarrollo de Microsoft 365 para ver lo que se ha planeado y lanzado pronto](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [Capacidades de investigación y respuesta automatizadas en la protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide)
+- [Obtenga más información sobre las capacidades de investigación y respuesta automatizadas adicionales en Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
