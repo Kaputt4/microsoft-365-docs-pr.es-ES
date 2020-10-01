@@ -1,66 +1,75 @@
 ---
-title: Diferencia entre los modelos de conocimiento de documentos y procesamiento de formularios
+title: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Describe la diferencia clave entre los modelos de procesamiento de formularios y la comprensión de documentos
-ms.openlocfilehash: 268a2fa4a0381e5822c17e5df22566c931d37f3c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Describe las diferencias clave entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
+ms.openlocfilehash: 5fa9bd6b5873a11c00b19663226c4e3dd2b65825
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294753"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321790"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencia entre los modelos de conocimiento de documentos y procesamiento de formularios 
+# <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 
-El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información sobre Project Cortex](https://aka.ms/projectcortex).
 
-La comprensión del contenido en Project Cortex permite identificar y clasificar los documentos que se cargan en bibliotecas de documentos de SharePoint, así como extraer información relevante de cada archivo.  Por ejemplo, a medida que los archivos se cargan en una biblioteca de documentos de SharePoint, todos los archivos identificados como *pedidos de compra* se clasifican como tales y, a continuación, se muestran en una vista de biblioteca de documentos personalizada. Además, puede extraer información específica de cada archivo (por ejemplo, *número de PC* y *total*) y mostrarla como una columna en la vista de la biblioteca de documentos. 
+La comprensión de contenidos en Microsoft SharePoint Syntex le permite identificar y clasificar documentos cargados en bibliotecas de documentos de SharePoint, así como extraer información relevante de cada archivo.  Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
 
-El conocimiento del contenido le permite crear *modelos* para identificar y extraer la información que necesita. Se trata de dos tipos de modelo que puede usar:
+La comprensión de contenidos le permite crear *modelos* para identificar y extraer la información que necesita. Los modelos ayudan a solucionar problemas de búsqueda, procesos empresariales, cumplimiento normativo y muchas otras cosas.
 
-- [Documento sobre modelos](document-understanding-overview.md)
+Hay dos tipos de modelo que puede usar:
+
+- [Modelos de comprensión mediante documentos](document-understanding-overview.md)
 - [Modelos de procesamiento de formularios](form-processing-overview.md)
 
-Aunque ambos modelos se usan generalmente con el mismo propósito, las diferencias clave que se enumeran a continuación afectan a los que se pueden usar.
+Aunque los dos modelos se usan generalmente para el mismo propósito, las siguientes diferencias clave afectan a su uso.
 
-## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado en lugar de contenido semiestructurado.
 
-Use Document que comprenda los modelos para identificar y extraer datos de documentos no estructurados, como cartas o contratos, donde las entidades de texto que desea extraer residen en oraciones o regiones específicas del documento. Por ejemplo, un documento sin estructurar podría ser una carta de renovación de contrato que puede escribirse de varias formas. Sin embargo, la información existe de forma coherente en el cuerpo de cada documento de renovación de contrato, como la cadena de texto "fecha de inicio del servicio" seguida de una fecha real.   
 
-Use modelos de procesamiento de formularios para identificar archivos y extraer datos de documentos estructurados o semiestructurados, como formularios o facturas. Estos documentos deben tener pares clave-valor claros (por ejemplo, *Date: 10/1/2020*) * o datos de tabla. Por ejemplo, un buen candidato para el procesamiento de formularios es un formulario de solicitud de pedido de una empresa que los clientes necesitan para proporcionar información de campos específicos que se encuentran en la misma área del diseño del documento, como *el nombre, el* *número de teléfono*, el *costo total*, etc.  Un formulario de impuestos es un buen ejemplo de un documento estructurado. 
+## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado, no estructurado y semiestructurado
+
+Use modelos de comprensión mediante documentos para identificar y extraer los datos de documentos no estructurados como, por ejemplo, cartas o contratos, donde las entidades de texto que desea extraer se encuentran en frases o regiones específicas del documento. Por ejemplo, un documento no estructurado podría ser una carta de renovación de contrato que pueda escribirse de varias maneras. Sin embargo, en el cuerpo de cada documento se encuentra habitualmente información de renovación de contrato, como la cadena de texto *Fecha de inicio de un servicio* seguida de una fecha.   
+
+Use modelos de procesamiento de formularios para identificar archivos y extraer datos de documentos estructurados o semiestructurados, como formularios o facturas. Los modelos de procesamiento de formularios están capacitados para comprender el diseño de su formulario a partir de documentos de ejemplo y aprenden a buscar los datos que necesita extraer de ubicaciones similares, ya que los formularios tienen un diseño más estructurado en el que las entidades están en la misma ubicación (por ejemplo, un número de la seguridad social en un formulario tributario). 
+
+> [!NOTE]
+> Debe tener acceso a un sitio de centro de contenido para crear un modelo de comprensión mediante documentos o para aplicar uno a una biblioteca de documentos de SharePoint. 
+
 
 ## <a name="where-they-are-created"></a>Dónde se crean
 
-Document: los modelos se crean y administran en un sitio del centro de contenido de SharePoint. 
+Los modelos de comprensión mediante documentos se crean y administran en un sitio de centro de contenido de SharePoint. 
 
 > [!NOTE]
-> Debe tener acceso a un sitio del centro de contenido para crear un documento que comprenda el modelo o para aplicar uno a una biblioteca de documentos de SharePoint. 
+> Para obtener más información sobre los documentos de entrada, consulte [Requisitos y limitaciones del modelo de procesamiento de formularios](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
 
-Los modelos de procesamiento de formularios se crean en PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), pero la creación se inicia directamente desde una biblioteca de documentos de SharePoint. El modelo de procesamiento de formularios debe estar habilitado en la biblioteca de documentos para que un usuario pueda crear un modelo de procesamiento de formularios para el mismo, y un administrador puede hacer esto en el contenido que comprenda la configuración de administración. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
+Los modelos de procesamiento de formularios se crean en el generador de archivos [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, pero la creación se inicia directamente desde una Biblioteca de documentos de SharePoint. Se debe habilitar la creación del modelo de procesamiento de formularios en la biblioteca de documentos para que un usuario pueda crear un modelo de procesamiento de formularios para ella y un administrador puede hacerlo en la configuración de administrador de comprensión de contenidos. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
 
-Al crear un documento que comprenda el modelo, se crea un nuevo [tipo de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) que se guarda en la galería de tipos de contenido de SharePoint. O bien, puede usar tipos de contenido existentes para definir el modelo si es necesario.
+Cuando se crea modelo de comprensión mediante documentos, se crea un nuevo [tipo de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) que se guarda en la galería de tipos de contenido de SharePoint. También puede usar tipos de contenido existentes para definir el modelo, si es necesario.
 
-Los modelos de procesamiento de formularios se crean en PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), pero la creación se inicia directamente desde una biblioteca de documentos de SharePoint. Se debe habilitar la creación del modelo de procesamiento de formularios en la biblioteca de documentos para que un usuario pueda crear un modelo de procesamiento de formularios para él. O un administrador puede hacer esto en el contenido que comprenda la configuración de administración. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
+Los modelos de procesamiento de formularios se crean en el generador de archivos [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, pero la creación se inicia directamente desde una Biblioteca de documentos de SharePoint. Se debe habilitar la creación del modelo de procesamiento de formularios en la biblioteca de documentos para que un usuario pueda crear un modelo de procesamiento de formularios para ella. O bien, un administrador puede hacerlo en la configuración de administrador de comprensión de contenidos. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
 
-Los modelos de procesamiento de formularios también crean nuevos [tipos de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)y también se almacenan en la galería de tipos de contenido de SharePoint.
+Los modelos de procesamiento de formularios también crean nuevos [Tipos de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) y se almacenan en la galería de Tipos de contenido de SharePoint.
 
 ## <a name="where-they-can-be-applied"></a>Dónde se pueden aplicar
 
-Puede aplicar un documento que comprenda los modelos a las bibliotecas de documentos de SharePoint a las que tiene acceso. Use el centro de contenido para crear un documento que comprenda el modelo y aplíquelo a distintas bibliotecas de documentos. El centro de contenido le ofrece un control más central sobre cómo se usan los modelos de comprensión de los modelos y dónde se aplican. Nota esta información también debe resumirse en un centro de contenido.
+Puede aplicar modelos de comprensión mediante documentos a las bibliotecas de documentos de SharePoint a las que tenga acceso. Use el centro de contenido para crear un modelo de comprensión mediante documentos y aplíquelo a otras bibliotecas de documentos. El centro de contenido le ofrece un control más centralizado sobre cómo se usan los modelos de comprensión mediante documentos y cómo se aplican. Nota: Esta información también debe resumirse en un centro de contenido.
 
-Actualmente, los modelos de procesamiento de formularios solo se pueden aplicar a la biblioteca de documentos de SharePoint desde la que se crearon. Esto permite que los usuarios con licencia con acceso al sitio puedan crear un modelo de procesamiento de formularios.
+Actualmente, los modelos de procesamiento de formularios solo se pueden aplicar a la biblioteca de documentos de SharePoint desde la que los creó. Esto permite a los usuarios con licencia de acceso al sitio crear un modelo de procesamiento de formularios. Tenga en cuenta que el administrador necesita habilitar el procesamiento de formularios en una biblioteca de documentos de SharePoint para que esté disponible para los usuarios con licencia.
 
  ## <a name="see-also"></a>Consulte también
-[Aprendizaje: mejorar el rendimiento empresarial con el generador de AI](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
-[Crear un clasificador](create-a-classifier.md)</br>
-[Crear un extractor](create-an-extractor.md)</br>
-[Aplicación de un documento con información sobre el modelo](apply-a-model.md)</br>
-[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)</br>
+[Aprendizaje: mejorar el rendimiento empresarial con AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+
+[Crear un clasificador](create-a-classifier.md)
+
+[Crear un extractor de datos](create-an-extractor.md)
+
+[Aplicar modelos de comprensión mediante documentos](apply-a-model.md)
+
+[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)
