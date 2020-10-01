@@ -1,20 +1,22 @@
-- name: Introducción a Microsoft SharePoint Syntex
+- name: Obtenga información sobre Microsoft SharePoint Syntex
   items:
-    - name: Introducción a Microsoft SharePoint Syntex
-      href: microsoft-sharepoint-syntex-overview.md
+    - name: Introducción a SharePoint Syntex
+      href: index.md
     - name: Información general sobre el documento
       href: document-understanding-overview.md
     - name: Introducción al procesamiento de formularios
       href: form-processing-overview.md
-    - name: Diferencia entre los modelos de conocimiento de documentos y procesamiento de formularios
+    - name: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
       href: difference-between-document-understanding-and-form-processing-model.md
+- name: Introducción a los modelos
+  items:
     - name: Obtenga información sobre los modelos en el modelo de ejemplo
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Crear un centro de contenido
       href: create-a-content-center.md
     - name: Crear un clasificador
       href: create-a-classifier.md
-    - name: Crear un extractor
+    - name: Crear un extractor de datos
       href: create-an-extractor.md
     - name: Tipos de explicación
       href: explanation-types-overview.md
