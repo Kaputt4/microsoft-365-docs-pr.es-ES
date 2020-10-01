@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 942097033fe5ed97449dbf3be93e8153f91a7961
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417904"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305030"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>Evaluaciones de impacto en la protección de datos: Guía para controladores de datos que usan Microsoft Office 365 
 
@@ -29,7 +29,7 @@ En virtud del Reglamento general de protección de datos (GDPR), los responsable
 
 La finalidad de este documento es proporcionar información a los controladores de datos sobre Office 365 que les ayudará a determinar si se necesita una EIPD y si es así, qué información incluir. Se aplica a las aplicaciones y servicios de Office 365, incluidos entre otros Exchange Online, SharePoint Online, OneDrive para la Empresa, Yammer, Skype Empresarial y Power BI.  Vea, por ejemplo, Tablas 1 y 2 de la Guía de Solicitud de los interesados de Office 365. 
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Parte 1: determinar si se necesita una EIPD
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Parte 1: determinar si se necesita una EIPD
 
 El artículo 35 de la GDPR exige que el responsable del tratamiento de datos cree una evaluación del impacto de la protección de datos "en la que un tipo de tratamiento, en particular utilizando nuevas tecnologías y teniendo en cuenta la naturaleza, el alcance, el contexto y los fines del tratamiento, es probable que dé lugar a un alto riesgo para los derechos y libertades de las personas físicas". Además, se exponen los factores particulares que indicarían ese alto riesgo, que se examinan en el cuadro siguiente: Para determinar si se necesita una DPIA, el controlador de datos debe considerar estos factores, junto con cualquier otro factor pertinente, a la luz de la aplicación o aplicaciones específicas del controlador y el uso o usos de Office 365.
 
@@ -44,7 +44,7 @@ El artículo 35 de la GDPR exige que el responsable del tratamiento de datos cre
 >[!Note]
 ><sup>1</sup> Con respecto al criterio de que el procesamiento sea a "gran escala", el considerando 91 de la GDPR lo aclara: "El tratamiento de datos personales no debe considerarse a gran escala si se trata de datos personales de pacientes o clientes por parte de un médico, otro profesional de la salud o un abogado. En esos casos, la evaluación del impacto de la protección de datos no debería ser obligatoria".
 
-## <a name="part-2--contents-of-a-dpia"></a>Parte 2: Contenido de una EIPD
+## <a name="part-2-contents-of-a-dpia"></a>Parte 2: Contenido de una EIPD
 
 El artículo 35 (7) exige que una Evaluación de impacto en la protección de datos especifique los fines del tratamiento y una descripción sistemática del tratamiento previsto.  En las DPIA de Microsoft, esa descripción sistemática incluye factores tales como los tipos de datos procesados, el tiempo de retención de los datos, el lugar en que se localizan y transfieren los datos y los terceros que pueden tener acceso a ellos.  Además, en la EIPD tiene que incluirse lo siguiente:
 

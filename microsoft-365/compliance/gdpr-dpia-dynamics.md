@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3352483f87c12996f00e8a75dfcba19581fdaf0c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29da829ddf20a24776ef40b7aefb02cdf1546669
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417914"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305060"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>Evaluaciones de impacto en la protección de datos personales: Guía para poseedores de los datos que usen Dynamics 365
 
@@ -30,7 +30,7 @@ Según el Reglamento General de Protección de Datos (RGPD), los responsables de
 
 La finalidad de este documento es proporcionar a los poseedores de los datos información sobre Dynamics 365 que les permitirá determinar si se necesita un EIPD y, en ese caso, qué detalles incluir.
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Parte 1: determinar si se necesita una EIPD
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>Parte 1: determinar si se necesita una EIPD
 
 El artículo 35 de la GDPR exige que el responsable del tratamiento de datos cree una evaluación del impacto de la protección de datos "en la que un tipo de tratamiento, en particular utilizando nuevas tecnologías y teniendo en cuenta la naturaleza, el alcance, el contexto y los fines del tratamiento, es probable que dé lugar a un alto riesgo para los derechos y libertades de las personas físicas". Además, se exponen los factores particulares que indicarían ese alto riesgo, que se examinan en el cuadro siguiente: Para determinar si se necesita una DPIA, un controlador de datos debe considerar estos factores, junto con cualquier otro factor pertinente, a la luz de la aplicación o aplicaciones específicas del controlador y el uso o usos de Dynamics 365.
 
@@ -44,7 +44,7 @@ El artículo 35 de la GDPR exige que el responsable del tratamiento de datos cre
 >[!Note]
 ><sup>1</sup> Con respecto a los criterios según los que el tratamiento se realice a "gran escala", el considerando 91 del RGPD aclara que: "el tratamiento de datos personales no debe considerarse a gran escala si se trata de datos personales de pacientes o clientes por parte de un médico, otro profesional sanitario o un abogado En estos casos, la evaluación de impacto de la protección de datos no debe ser obligatoria".
 
-## <a name="part-2--contents-of-a-dpia"></a>Parte 2: Contenido de una EIPD
+## <a name="part-2-contents-of-a-dpia"></a>Parte 2: Contenido de una EIPD
 
 El artículo 35 (7) exige que una Evaluación de impacto en la protección de datos especifique los fines del tratamiento y una descripción sistemática del tratamiento previsto. En dicha descripción sistemática podrían incluirse factores como el tipo de los datos procesados, durante cuánto tiempo se conservan, dónde se encuentran y dónde se transfieren, y qué terceras partes podrían tener acceso a los datos. Además, en la EIPD tiene que incluirse lo siguiente:
 
