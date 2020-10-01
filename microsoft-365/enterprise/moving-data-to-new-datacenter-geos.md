@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre el nuevo Office 365 Datacenter GEOS y cómo usar la opción de residencia de datos para solicitar un movimiento de los datos principales a un nuevo geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c1c838f52627e0ff2eee5b7fdbeef7aee55b137
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693598"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333717"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Movimiento de datos básicos a un nuevo centro de datos de Microsoft 365 GEOS
 
@@ -39,28 +39,23 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |**Japón**| Asia/Pacífico | Japón | Diciembre de 2014 |
 |**Australia, Nueva Zelanda, Fiji**| Asia/Pacífico | Australia | Marzo de 2015 |
 |**India**| Asia/Pacífico | India | Octubre de 2015 |
-|**Canadá**| Norteamérica | Canadá | Mayo de 2016 |
-|**Reino Unido**| Europa | Reino Unido | Septiembre de 2016 |
+|**Canadá**| Estados Unidos | Canadá | Mayo de 2016 |
+|**Reino Unido**| Unión Europea | Reino Unido | Septiembre de 2016 |
 |**Corea del Sur**| Asia/Pacífico | Corea del Sur | Abril de 2017 |
-|**Francia**| Europa | Francia | Marzo de 2018 |
-|**Emiratos Árabes Unidos**| Europa | Emiratos Árabes Unidos | Junio de 2019 |
-|**Sudáfrica**| Europa | Sudáfrica | Julio de 2019 |
-|**Suiza, Liechtenstein**| Europa | Suiza | Diciembre de 2019 |
-|**Alemania**| Europa | Alemania | Diciembre de 2019 |
-|**Noruega**| Europa | Noruega | Abril de 2020 |
-  
-Los clientes nuevos o los inquilinos de Office 365 creados después de la disponibilidad del nuevo área geográfica del centro de datos tendrán automáticamente almacenados sus datos de clientes principales en el nuevo centro de datos.
+|**Francia**| Unión Europea | Francia | Marzo de 2018 |
+|**Emiratos Árabes Unidos**| Unión Europea | Emiratos Árabes Unidos | Junio de 2019 |
+|**Sudáfrica**| Unión Europea | Sudáfrica | Julio de 2019 |
+|**Suiza, Liechtenstein**| Unión Europea | Suiza | Diciembre de 2019 |
+|**Alemania**| Unión Europea | Alemania | Diciembre de 2019 |
+|**Noruega**| Unión Europea | Noruega | Abril de 2020 |
 
+A partir del 1 de octubre de 2020, los clientes con una suscripción a Office 365 Education incluida en el inquilino no tienen derecho a la migración.
 
->[!Note]
->Se ha lanzado la región del centro de recursos de Alemania en diciembre de 2019. Los nuevos clientes de Microsoft 365 con una dirección de suscripción en alemán asociada con su inquilino tendrán sus datos de clientes principales almacenados en Alemania. Planeamos ofrecer una migración de Europa a Alemania a los clientes alemanes en el futuro. En la actualidad, los clientes de Microsoft Cloud Alemania/Alemania pueden solicitar la migración a los servicios de Office 365 en las regiones del centro de administración de la nueva región de Alemania. Para obtener más información, vea [Cómo participar en la migración de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en las nuevas regiones del centro](https://aka.ms/office365germanymoveoptin) de datos alemán.
->
-  
 Una lista completa de todos los GEOS de centro de datos, los centros de datos y la ubicación de los datos de clientes en reposo están disponibles como parte de los mapas de centros de datos [interactivos](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Opción de residencia de datos
 
-Proporcionamos una opción de residencia de datos a los clientes de Microsoft 365 existentes que están cubiertos por la GEOS del centro de datos que se enumeran en la tabla anterior. Con esta opción, los clientes con requisitos de residencia de datos pueden solicitar la migración temprana de los datos principales de los clientes de su organización en reposo a su nuevo área geográfica del centro de datos.  Microsoft ofrecerá una fecha límite asignada a todos los clientes elegibles que soliciten la migración temprana durante la ventana de inscripción.  Revise la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más información sobre la ventana de inscripción para la geografía y los pasos para inscribirse en el programa.  Los movimientos de datos pueden tardar hasta 24 meses después del período de solicitud para completarse.
+Proporcionamos una opción de residencia de datos para los clientes elegibles de Microsoft 365 que están cubiertos por la GEOS del centro de datos que se muestra en la tabla anterior. Con esta opción, los clientes elegibles con requisitos de residencia de datos pueden solicitar la migración de los datos principales de los clientes de su organización en reposo a su nuevo área geográfica del centro de datos.  Microsoft ofrecerá una fecha límite asignada a todos los clientes elegibles que soliciten la migración durante la ventana de inscripción.  Revise la página [Cómo solicitar el movimiento de datos](request-your-data-move.md) para obtener más información sobre la ventana Abrir inscripción para el área geográfica del centro de datos y los pasos para inscribirse en el programa.  Los movimientos de datos pueden tardar hasta 24 meses después de que finalice el período de solicitud.
 
 No presentamos ninguna funcionalidad, características o certificaciones de cumplimiento únicos con el nuevo centro de recursos geográfico.
     

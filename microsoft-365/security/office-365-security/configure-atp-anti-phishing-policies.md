@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328076"
+ms.locfileid: "48333551"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurar directivas contra phishing de ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Las directivas antiphishing de ATP forman parte de la [protección contra amenazas avanzada de Office 365](office-365-atp.md). Las directivas antiphishing de ATP pueden ayudar a proteger a su organización de ataques de suplantación de identidad (phishing) malintencionados y otros tipos de ataques de suplantación de identidad. Para obtener más información acerca de las diferencias entre las directivas antiphishing en Exchange Online Protection (EOP) y las directivas antiphishing de ATP, consulte [anti-phishing Protection](anti-phishing-protection.md).
 
@@ -63,7 +62,7 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para poder realizar los procedimientos de este tema, deberá tener asignados los permisos necesarios:
+- Debe tener permisos asignados para poder realizar los procedimientos descritos en este artículo:
 
   - Para agregar, modificar y eliminar directivas antiphishing de ATP, debe pertenecer a uno de los siguientes grupos de roles:
 
@@ -176,6 +175,8 @@ Use los siguientes procedimientos para modificar las directivas antiphishing de 
 
      - **Incluir automáticamente los dominios que tengo**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
      - **Incluir dominios personalizados**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**y, en el cuadro **Agregar dominios** , escriba el nombre de dominio (por ejemplo, contoso.com), presione entrar y repita lo mismo según sea necesario.
+
+       **Nota**: en el centro de seguridad & cumplimiento, puede especificar un máximo de 20 dominios. En Exchange Online PowerShell, puede especificar un máximo de 50 dominios.
 
    - **Acciones**: haga clic en **Editar**
 

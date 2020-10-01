@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve servicios y datos asociados para el inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950277"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333705"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -30,8 +30,7 @@ Los movimientos de datos son una operación back-end con un impacto mínimo en l
 > [!NOTE]
 > Los movimientos se producen en diferentes momentos para cada servicio. Como resultado, verá la funcionalidad reducida descrita para cada servicio a una hora distinta. 
   
-Vea el centro de mensajes de Microsoft 365 para confirmar que se han completado los movimientos de cada uno de los Exchange Online, SharePoint Online, Teams y Skype empresarial. Como se muestra en la tabla siguiente, puede tardar hasta 24 meses, después del final del período de inscripción, completar todos los movimientos de datos solicitados para todos los clientes de una geo específica. Si ve algún problema con el espacio empresarial después de la transferencia, póngase en contacto con el [soporte técnico](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obtener ayuda. 
-  
+Vea el centro de mensajes de Microsoft 365 para confirmar si se han completado los movimientos de cada uno de los servicios de chat de Exchange Online, SharePoint Online y Teams. Como se muestra en la tabla siguiente, puede tardar hasta 24 meses después del final del período de inscripción para completar los datos principales de clientes en el resto, en el área geográfica nueva.   
 
 |**Clientes con país de suscripción en**|**Todos los movimientos completados por**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ Vea el centro de mensajes de Microsoft 365 para confirmar que se han completado 
 |Sudáfrica  <br/> |1 de julio de 2022  <br/> |
 |Suiza, Liechtenstein  <br/> |1 de julio de 2022  <br/> |
 |Noruega  <br/> |1 de noviembre de 2022  <br/> |
-|Alemania  <br/> |Plane  <br/> |
+|Alemania  <br/> |1 de abril de 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,13 +66,9 @@ Cuando se mueve SharePoint Online, también se mueven los datos de los siguiente
   
 - OneDrive para la Empresa
     
-- Project Online
-    
-- Project para Microsoft 365
-    
 - Servicios de vídeo de Microsoft 365
     
-- Explorador de Office en s
+- Office en un explorador
     
 - Aplicaciones de Microsoft 365 para empresas
     
@@ -109,7 +104,7 @@ Se ven afectadas las siguientes características de búsqueda:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Además de Exchange Online, SharePoint Online y OneDrive para la empresa, Microsoft migrará los datos de Teams al centro de datos local.
+Además de Exchange Online, SharePoint Online y OneDrive para la empresa, Microsoft migrará los datos del servicio de chat de Microsoft Teams al centro de datos local.
 
 - Mensajes de chat de Microsoft Teams, incluidos los mensajes privados y los mensajes de canal.
 - Las imágenes de Teams usadas en chats.
@@ -118,20 +113,7 @@ Los archivos de Microsoft Teams se almacenan en SharePoint Online y los archivos
 
 ## <a name="skype-for-business"></a>Skype Empresarial
 
-Los movimientos de Skype empresarial están disponibles para Australia, Japón, India, Canadá, Reino Unido y Corea del sur.
-
-Todos los usuarios se cerrarán desde el software de cliente de Skype empresarial durante la recorte. El inicio de sesión automático volverá a conectar a los usuarios en dos minutos.
-  
-|**Características que funcionan durante la transferencia completa**|**Características que pueden estar limitadas durante una parte del movimiento**|
-|:-----|:-----|
-| Mensajería instantánea y llamadas de voz  <br/>  Los usuarios pueden agregar contactos, agregar grupos de contactos, agregar reuniones, definir su ubicación y cambiar "¿Qué está ocurriendo hoy".  <br/>  La configuración del proveedor de servicios de audioconferencia (ACP) se copia en el área geográfica del centro de servicios de destino. Si el proveedor ACP está presente en el centro de centros de recursos de destino, funcionará. De lo contrario, no lo hará.  <br/> | El administrador de inquilinos TRPS (PowerShell remoto del inquilino) no estará disponible para que los administradores puedan crear sesiones.  <br/>  El CONCENTRADOr de administración de inquilinos no estará disponible para que los administradores inicien sesión y cambie la configuración del usuario.  <br/> |
-   
-|**Después del movimiento**|
-|:-----|
-| Los datos de la reunión (presentaciones cargadas, etc.) no se moverán y deberán volver a cargarse.  <br/>  Los clientes más antiguos de Lync, como el cliente de Lync 2010 y el cliente de Lync para Mac 2011, se sabe que almacenan en caché la información de DNS para el servicio que causa problemas de inicio de sesión. Es posible que sea necesario borrar la memoria caché de DNS si el usuario no se encuentra en el último cliente Windows de Skype empresarial. Vea [solución de problemas de configuración de DNS de Skype empresarial online en Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Los usuarios del cliente de Lync para Mac deben seguir [estas instrucciones](https://support.microsoft.com/kb/2629861).  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Movimientos de Skype empresarial que implican a un proveedor de servicios de audioconferencia de terceros
-Los servicios complementarios de proveedores de servicios de audioconferencia de terceros para Skype empresarial no están disponibles para los usuarios hospedados en nuevos centros de datos geográficamente específicos.  Los clientes existentes que usen un servicio de proveedor de servicios de audioconferencia de terceros no deben solicitar el traslado a un nuevo centro de datos específico de forma geográfica.  Los clientes nuevos que se implementen en los nuevos centros de datos geográficamente específicos deberán solicitar un traslado a un centro de datos regional para usar un proveedor de servicios de audioconferencia de terceros.
+Los movimientos de Skype empresarial ya no están disponibles.  [Skype empresarial online se retirará](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) el 31 de julio de 2021. A partir de ese momento, el servicio ya no será accesible. 
   
 ## <a name="related-topics"></a>Temas relacionados 
  

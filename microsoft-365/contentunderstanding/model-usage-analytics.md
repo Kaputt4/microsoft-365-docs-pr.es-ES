@@ -1,56 +1,51 @@
 ---
-title: Documento sobre el análisis de uso de modelos
+title: Análisis de uso del modelo de comprensión mediante documentos
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Obtener información sobre cómo aplicar una etiqueta de retención a un documento con información sobre el modelo
-ms.openlocfilehash: a07e60d575e616b3a2765011a4fba84b4cff21ff
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Obtenga información sobre cómo aplicar una etiqueta de retención en un modelo de comprensión mediante documentos
+ms.openlocfilehash: 26e8aea3ef52e9d850dea2f2268858d8367f7408
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296257"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321282"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>Documento sobre el análisis de uso de modelos
+# <a name="document-understanding-model-usage-analytics"></a>Análisis de uso del modelo de comprensión mediante documentos
 
-</br>
+El centro de contenido de Microsoft SharePoint Syntex proporciona análisis de uso de modelos para obtener más información sobre cómo se usan los modelos que se publicaron desde el centro de contenido. Esto incluye un resumen de la siguiente información:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+- ¿Dónde se aplican los modelos?
+- ¿Cuántos archivos se procesan a lo largo del tiempo?
 
-</br>
+ ![Análisis de modelo](../media/content-understanding/model-analytics.png) </br>
 
-El centro de contenido de Microsoft SharePoint Syntex proporciona análisis de uso de modelos para proporcionar más información sobre cómo se usan los modelos que se publicaron desde el centro de contenido. Esto incluye una distribución de la siguiente información:
+## <a name="total-model-percentage"></a>Porcentaje de modelo total
 
-- Dónde se aplican los modelos
-- El número de archivos que se procesan con el tiempo
+   ![Porcentaje de modelo total](../media/content-understanding/total-model-percentage.png) </br>
 
- ![Análisis de modelos](../media/content-understanding/model-analytics.png) </br>
+El gráfico circular del **Porcentaje de modelo total** muestra cada modelo publicado como un porcentaje del total de los archivos procesados por todos los modelos publicados en el centro de contenido.
 
-## <a name="total-model-percentage"></a>Porcentaje total del modelo
-
-   ![Porcentaje total del modelo](../media/content-understanding/total-model-percentage.png) </br>
-
-El gráfico circular **porcentaje de modelo total** muestra cada modelo publicado como un porcentaje del total de archivos procesados por todos los modelos publicados en el centro de contenido.
-
-Cada modelo también muestra la **tasa de integridad**, el porcentaje de archivos cargados que el modelo analizó correctamente. Una tasa de finalización baja puede significar que hay problemas con el modelo o con los archivos que se están analizando.
+Asimismo, cada modelo presenta una **Tasa de exhaustividad**. Es decir, el porcentaje de los archivos cargados que el modelo analizó correctamente. Una tasa de exhaustividad baja puede significar que existen problemas con el modelo o los archivos que se están analizando.
 
 ## <a name="files-processed-over-time"></a>Archivos procesados a lo largo del tiempo
 
    ![Archivos procesados](../media/content-understanding/files-processed-over-time.png) </br>
 
-El gráfico de **archivos procesados con** barra de tiempo muestra el número de archivos procesados en el tiempo para cada modelo, pero también muestra las bibliotecas de documentos a las que se aplicó el modelo.
+El gráfico de barras de los **Archivos procesados a lo largo del tiempo** no solo muestra el número de archivos que se procesó a lo largo del tiempo para cada modelo, sino también las bibliotecas de documentos a las que se aplicó el modelo.
 
    ![Gráfico de barras](../media/content-understanding/bar-chart-models.png) </br>
 
 ## <a name="see-also"></a>Consulte también
-[Crear un clasificador](create-a-classifier.md)</br>
-[Crear un extractor](create-an-extractor.md)</br>
-[Información general sobre el documento](document-understanding-overview.md)</br>
+[Crear un clasificador](create-a-classifier.md)
+
+[Crear un extractor](create-an-extractor.md)
+
+[Información general de la comprensión mediante documentos ](document-understanding-overview.md)
+
 [Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)  

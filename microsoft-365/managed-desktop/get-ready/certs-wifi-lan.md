@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7a0af5db4e18bc46436ace6f9fefefc18f0ccd68
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608280"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333529"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft  
  
@@ -32,9 +32,6 @@ Antes de implementar los certificados de SCEP o PKCS en el escritorio administra
  
 - [Plantilla de certificado PKCS](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [Plantilla de certificado de SCEP](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
-
->[!NOTE]
->Actualmente, solo se admiten perfiles de certificado de SCEP para la implementación de perfiles de Wi-Fi en el escritorio administrado de Microsoft cuando se usa un tipo de EAP. No se admiten los perfiles de certificado PKCS. Consulte [Agregar configuración Wi-Fi para dispositivos Windows 10 en Intune](https://docs.microsoft.com/intune/wi-fi-settings-windows) para referencia.
 
   
 ## <a name="wi-fi-connectivity-requirements"></a>Requisitos de conectividad Wi-Fi

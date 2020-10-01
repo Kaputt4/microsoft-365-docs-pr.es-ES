@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: be6bf277926cffb77dfcde425ef08a688fb0cf34
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277545"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333983"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Ejecutar las simulaciones de ataque de la protección contra amenazas de Microsoft  
 
@@ -31,6 +31,47 @@ ms.locfileid: "48277545"
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" >
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="Planear el proyecto piloto de Microsoft Threat Protection" />
+      <br/>Pensado </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Preparar el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection" />
+      <br/>Párelo </a><br>
+    </td>
+    <td align="center"bgcolor="#d5f5e3">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Ejecutar las simulaciones de ataque de la protección contra amenazas de Microsoft" />
+      <br/>Simular ataque </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Cierre y resuma el piloto de Microsoft Threat Protection" />
+      <br/>Cerrar y resumir </a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+Actualmente está en la fase de simulación de ataques.
 
 Después de preparar el entorno piloto, es el momento de probar la administración de incidentes de Microsoft Threat Protection y las capacidades automatizadas de investigación y corrección. Le ayudaremos a simular un ataque complejo que aprovecha las técnicas avanzadas para ocultarse de la detección. El ataque enumera las sesiones del bloque de mensajes del servidor (SMB) abiertas en los controladores de dominio y recupera las direcciones IP recientes de los dispositivos de los usuarios. Esta categoría de ataques no suele incluir los archivos ubicados en el dispositivo de la víctima, sino que se producen únicamente en la memoria. Se "desconectan" del terreno usando herramientas administrativas y del sistema existentes e insertan su código en procesos de sistema para ocultar su ejecución, lo que les permite eludir la detección y persisten en el dispositivo.
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 88d92558d86e0aa2e90ef04d88a3cd4676386f15
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 250c125648f734a13899a58dd22ee3bffb0921a9
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195632"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333739"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ejecutar el proyecto piloto de Microsoft Threat Protection 
 
@@ -55,8 +55,8 @@ Hay cuatro fases para ejecutar un piloto de Microsoft Threat Protection:
 
 |Fase | Descripción | 
 |:-------|:-----|
-| ![Planeación](../../media/mtp/plan.png)<br>[Planeación](mtp-pilot-plan.md)| Obtenga información sobre lo que debe tener en cuenta antes de ejecutar el proyecto piloto de Microsoft Threat Protection: <br><br>-Scope <br> Casos de uso de <br>- Requisitos <br>-Plan de pruebas <br> -Criterios de éxito <br> -Cuadro de mandos 
-| ![Declaración](../../media/prepare.png) <br>[Declaración](mtp-evaluation.md)|  Obtenga acceso al centro de seguridad de Microsoft 365 para configurar el entorno piloto de Microsoft Threat Protection. Se le guiará para:<br><br>-Identificar las partes interesadas y buscar la firma para el proyecto piloto <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración <br> -Inscríbase en la versión de prueba de Microsoft 365 E5 <br> -Configurar dominio <br>-Asignar licencias de Microsoft 365 E5 <br> -Completar el Asistente de configuración en el portal|
+| ![Planificación](../../media/mtp/plan.png)<br>[Planificación](mtp-pilot-plan.md)| Obtenga información sobre lo que debe tener en cuenta antes de ejecutar el proyecto piloto de Microsoft Threat Protection: <br><br>-Scope <br> Casos de uso de <br>- Requisitos <br>-Plan de pruebas <br> -Criterios de éxito <br> -Cuadro de mandos 
+| ![Declaración](../../media/mtp/prep.png) <br>[Declaración](mtp-evaluation.md)|  Obtenga acceso al centro de seguridad de Microsoft 365 para configurar el entorno piloto de Microsoft Threat Protection. Se le guiará para:<br><br>-Identificar las partes interesadas y buscar la firma para el proyecto piloto <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración <br> -Inscríbase en la versión de prueba de Microsoft 365 E5 <br> -Configurar dominio <br>-Asignar licencias de Microsoft 365 E5 <br> -Completar el Asistente de configuración en el portal|
 | ![Simulación de ataques](../../media/mtp/run-sim.png) <br>[Simulación de ataques](mtp-pilot-simulate.md) | Para simular un ataque, se le guiará a lo siguiente:<br><br>-Comprobación de los requisitos del entorno de prueba <br>-Ejecutar la simulación <br>-Investigar un incidente <br>-resolver el incidente 
 | ![Cierre y Resumen](../../media/mtp/close.png) <br>[Cierre y Resumen](mtp-pilot-close.md) | Cuando haya llegado al final del proceso, se le guiará a lo siguiente:<br><br>-Pase por el resultado final<br>-Presentar la salida a las partes interesadas <br>-Proporcionar comentarios <br>-Realizar los siguientes pasos 
 
