@@ -1,5 +1,5 @@
 ---
-title: Directivas contra phishing
+title: Directivas de protección contra phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195920"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326942"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -43,7 +43,7 @@ En la tabla siguiente se describen las diferencias de alto nivel entre las direc
 
 ****
 
-|Característica|Directivas contra phishing|Directivas contra la suplantación de identidad ATP|
+|Característica|Directivas de protección contra phishing|Directivas contra la suplantación de identidad ATP|
 |---|:---:|:---:|
 |Directiva predeterminada creada automáticamente|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Crear directivas personalizadas|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -220,4 +220,4 @@ Los siguientes umbrales de suplantación de identidad avanzada solo están dispo
 
 - **4: más agresivo**: los mensajes que se identifican como suplantación de identidad (phishing) con un nivel bajo, medio o alto de confianza se tratan como si se hubieran identificado con un grado muy alto de confianza.
 
-La probabilidad de falsos positivos (mensajes buenos marcados como no válidos) aumenta a medida que se aumenta esta configuración. Para obtener información acerca de la configuración recomendada, consulte [configuración de la Directiva de suplantación de identidad ATP de Office](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+La probabilidad de falsos positivos (mensajes buenos marcados como no válidos) aumenta a medida que se aumenta esta configuración. Para obtener información acerca de la configuración recomendada, consulte [ATP anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings).

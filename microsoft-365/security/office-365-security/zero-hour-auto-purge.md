@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo la depuración automática de cero horas (ZAP) puede mover mensajes entregados de forma retroactiva en un buzón de Exchange Online a la carpeta de correo no deseado o cuarentena que se han encontrado como correo no deseado o suplantación de identidad.
-ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202644"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327980"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Depuración automática de cero horas (ZAP) en Exchange Online
 
@@ -83,7 +83,7 @@ Para obtener más información acerca de cómo configurar los veredictos de filt
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Consideraciones de ZAP para la protección contra amenazas avanzada de Office 365 (Office 365 ATP)
 
-ZAP no pondrá en cuarentena ningún mensaje que se encuentre en el proceso de análisis de [entregas dinámicos](dynamic-delivery-and-previewing.md) o en el que el filtrado de malware ya haya reemplazado los datos adjuntos con el archivo de **alerta de malware Text.txt** . Si se recibe una señal de phish o correo no deseado para estos tipos de mensajes y se establece el veredicto de filtrado en la Directiva contra correo no deseado para realizar alguna acción en el mensaje (mover a correo no deseado, redirigir, eliminar, cuarentena), el valor de ZAP será la acción "migrar a correo no deseado".
+ZAP no pondrá en cuarentena ningún mensaje que esté en proceso de [entrega dinámica](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) en el análisis de datos adjuntos seguros, o donde el filtrado de malware de EOP ya ha reemplazado los datos adjuntos con el archivo de **alerta de malware Text.txt** . Si se recibe una señal de phish o correo no deseado para estos tipos de mensajes y se establece el veredicto de filtrado en la Directiva contra correo no deseado para realizar alguna acción en el mensaje (mover a correo no deseado, redirigir, eliminar o poner en cuarentena), el valor de ZAP se establece de forma predeterminada en una acción "mover a correo no deseado".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Cómo ver si el ZAP movió el mensaje
 

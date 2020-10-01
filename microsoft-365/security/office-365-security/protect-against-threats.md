@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202584"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326560"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -35,7 +35,7 @@ Esta es una guía de inicio rápido que rompe la configuración de la protecció
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -54,7 +54,7 @@ Las características de protección contra amenazas se incluyen en *todas las* s
 |Protección contra correo no deseado|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purgado automático de cero horas (para correo electrónico)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
-|Activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams| [ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)|
+|Activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[ATP](atp-for-spo-odb-and-teams.md)|
 |Protección contra suplantación de identidad avanzada|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
@@ -90,7 +90,7 @@ La [protección contra malware](anti-malware-protection.md) está disponible en 
 
     - En la sección **filtro de tipos de datos adjuntos comunes** , elija **activado**.
 
-4. Haga clic en **Guardar **.
+4. Haga clic en **Guardar**.
 
 Para obtener más información acerca de las opciones de directiva antimalware, vea [Configure anti-malware Policies](configure-anti-malware-policies.md).
 
@@ -146,94 +146,82 @@ Para obtener más información sobre las opciones de la Directiva antiphishing, 
 
    - En la sección **listas de permitidos** , revise (o edite) los remitentes y dominios permitidos.
 
-4. Haga clic en **Guardar **.
+4. Haga clic en **Guardar**.
 
 Para obtener más información sobre las opciones de la Directiva contra correo no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments"></a>Parte 4: protección frente a direcciones URL y archivos malintencionados (vínculos seguros y datos adjuntos seguros)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-office-365-atp"></a>Parte 4: protección frente a direcciones URL y archivos malintencionados (vínculos seguros y datos adjuntos seguros en Office 365 ATP)
 
-La protección de tiempo de clic de direcciones URL y archivos malintencionados está disponible en las suscripciones que incluyen [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP). Se configura mediante las directivas de [datos adjuntos seguros](atp-safe-attachments.md) de ATP y [vínculos seguros de ATP](atp-safe-links.md) .
+La protección de tiempo de clic de direcciones URL y archivos malintencionados está disponible en las suscripciones que incluyen la [protección contra amenazas avanzada](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) de Office 365. Se configura a través de [datos adjuntos seguros](atp-safe-attachments.md) y directivas de [vínculos seguros](atp-safe-links.md) .
 
-### <a name="atp-safe-attachments-policies"></a>Directivas de datos adjuntos seguros de ATP
+### <a name="safe-attachments-policies-in-office-365-atp"></a>Directivas de datos adjuntos seguros en Office 365 ATP
 
-Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), debe definir al menos una directiva de datos adjuntos seguros ATP.
+Para configurar [datos adjuntos seguros](atp-safe-attachments.md), cree al menos una directiva de vínculos seguros.
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas**:  >  **Policy**  >  **datos adjuntos seguros ATP**.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione la Directiva de **Administración de amenazas**  >  **Policy**  >  **datos adjuntos seguros de ATP**y haga clic en **crear**.
 
-2. Seleccione la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
+2. En el Asistente para **nueva Directiva de datos adjuntos seguros** que aparece, configure las siguientes opciones:
 
-3. En la sección **proteger archivos adjuntos de correo electrónico** , haga clic en el signo más ( **+** ).
+   - En el cuadro **nombre** , escriba `Block malware` y, a continuación, haga clic en **siguiente**.
 
-4. Especifique las siguientes opciones de configuración:
+   - En la página **configuración** , configure las siguientes opciones:
+     - En la sección **respuesta de malware desconocida de datos adjuntos seguros** , elija **bloquear**.
+     - En la sección **redirigir datos adjuntos** , seleccione la opción **Habilitar redirección**. Especifique la dirección de correo electrónico del administrador o operador de seguridad de la organización, que va a revisar los archivos detectados.
 
-   - En el cuadro **nombre** , escriba `Block malware` .
+     Haga clic en **Siguiente**.
 
-   - En la sección respuesta, elija **bloquear**.
+3. En la página **aplicado a** , haga clic en **Agregar una condición**, elija **aplicado si: el dominio del destinatario es**, haga clic en **Agregar**, seleccione su dominio o dominios, haga clic en **Agregar**, haga clic en **listo**y, a continuación, haga clic en **siguiente**.
 
-   - En la sección **redirigir datos adjuntos** , seleccione la opción **Habilitar redirección**. Especifique la dirección de correo electrónico del administrador o operador de seguridad de la organización, que va a revisar los archivos detectados.
+4. Revise la configuración y, a continuación, haga clic en **Finalizar**.
 
-   - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione su dominio, elija **Agregar**y, después, haga clic en **Aceptar**.
+### <a name="safe-links-policies-in-office-365-atp"></a>Directivas de vínculos seguros en Office 365 ATP
 
-5. **Guardar**.
+Para configurar [vínculos seguros](atp-safe-links.md), revise y modifique la configuración global para vínculos seguros y cree al menos una directiva de vínculos seguros.
 
-6. (**Paso adicional recomendado**) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro **DisallowInfectedFileDownload** establecido en  *true* para su entorno de Microsoft 365. (Esto impide que los usuarios abran, muevan, copien o compartan archivos que se detectan como malintencionados.)
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas**,  >  **Policy**  >  **vínculos seguros ATP**y haga clic en **configuración global**y, a continuación, configure las siguientes opciones:
 
-Para obtener más información, consulte [configurar las directivas de datos adjuntos seguros de office 365 ATP](set-up-atp-safe-attachments-policies.md) y [activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+   - Compruebe **usar vínculos seguros en: Office 365 aplicaciones** está activada: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros**: Desactive esta opción para hacer un seguimiento de los clics del usuario: desactivar ![ ](../../media/scc-toggle-off.png) .
+   - **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original**: comprobar que esta configuración está activada: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-### <a name="atp-safe-links-policies"></a>Directivas de vínculos seguros de ATP
+   Cuando haya terminado, haga clic en **Guardar**.
 
-Para configurar [vínculos seguros ATP](atp-safe-links.md), revise y edite su directiva predeterminada y agregue una directiva para usuarios específicos.
+2. De nuevo en la página vínculos seguros principal, haga clic en **crear**.
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas**de  >  **Policy**  >  **ATP Safe links**.
+3. En el Asistente para **crear Directiva de vínculos seguros** que aparece, configure las siguientes opciones:
 
-2. Haga doble clic en la directiva **predeterminada** .
+   - En el cuadro **nombre** , escriba un nombre, como `Safe Links` y, a continuación, haga clic en **siguiente**.
 
-3. En la sección **usar vínculos seguros en** , seleccione la opción **Microsoft 365 apps for Enterprise, Office para iOS y Android**y, a continuación, haga clic en **Guardar**.
-
-4. En la sección **directivas que se aplican a destinatarios específicos** , haga clic en el signo más ( **+** ).
-
-5. Especifique las siguientes opciones de configuración:
-
-   - En el cuadro **nombre** , escriba un nombre, como `Safe Links` .
-
-   - En la sección **seleccionar la acción** , elija **activado**.
-
-   - Seleccione estas opciones:
-
-     - **Usar datos adjuntos seguros para analizar contenido descargable**
-
+   - En la página **configuración** , configure las siguientes opciones:
+     - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: elija **activado**.
+     - **Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams**: elija **activado**.
      - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**
+     - **Esperar a que se complete el análisis de URL antes de entregar el mensaje**
+     - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**
+     - **No permitir que los usuarios hagan clic a través de la dirección URL original**
 
-     - **No permitir que los usuarios hagan clic en los vínculos seguros a la dirección URL original**
+     Haga clic en **Siguiente**.
 
-   - En la sección **aplicado a** , elija **el dominio del destinatario es**. A continuación, seleccione su dominio, elija **Agregar**y, después, haga clic en **Aceptar**.
+4. En la página **aplicado a** , haga clic en **Agregar una condición**, elija **aplicado si: el dominio del destinatario es**, haga clic en **Agregar**, seleccione su dominio o dominios, haga clic en **Agregar**, haga clic en **listo**y, a continuación, haga clic en **siguiente**.
 
-6. **Guardar**.
+5. Revise la configuración y, a continuación, haga clic en **Finalizar**.
 
-Para obtener más información, consulte [Configurar directivas de vínculos seguros de ATP de Office 365](set-up-atp-safe-links-policies.md).
+Para obtener más información, consulte [configurar directivas de vínculos seguros](set-up-atp-safe-links-policies.md).
 
-## <a name="part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads"></a>Parte 5: activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams
+## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5: comprobar que ATP para SharePoint, OneDrive y Microsoft Teams está activado
 
-Se crean cargas de trabajo como SharePoint, OneDrive y Microsoft Teams para la colaboración. El uso de ATP ayuda a bloquear y detectar archivos que se identifican como malintencionados en los sitios de grupo y las bibliotecas de documentos. Puede leer más sobre cómo funciona [aquí](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-worldwide).
+Se crean cargas de trabajo como SharePoint, OneDrive y Microsoft Teams para la colaboración. El uso de ATP ayuda a bloquear y detectar archivos que se identifican como malintencionados en los sitios de grupo y las bibliotecas de documentos. Puede leer más sobre cómo funciona [aquí](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
 
 > [!IMPORTANT]
 > **Antes de comenzar este procedimiento, asegúrese de que el registro de auditoría ya esté activado en su entorno de Microsoft 365**. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas**:  >  **Policy**  >  **datos adjuntos seguros ATP**y, a continuación, haga clic en **configuración global**.
 
-2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, elija **Policy** \> **datos adjuntos seguros**de directiva.
+2. Compruebe que el botón **activar o desactivar ATP para SharePoint, OneDrive y Microsoft Teams** esté a la derecha: ![ alternar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) y, a continuación, haga clic en **Guardar**.
 
-   ![En el centro de seguridad & cumplimiento, elija Directiva de administración de amenazas. \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+3. Revise (y, según corresponda, Edit) las directivas de [datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) de su organización y [las directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
 
-3. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
-
-   ![Activar la protección contra amenazas avanzada para SharePoint Online, OneDrive para la empresa y Microsoft Teams](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
-
-4. **Guardar**.
-
-5. Revise (y, según corresponda, Edit) las directivas de [datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) de su organización y [las directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
-
-6. Recomenda Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro _DisallowInfectedFileDownload_ establecido en `$true` .
+4. Recomenda Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro _DisallowInfectedFileDownload_ establecido en `$true` .
 
    - `$true` bloquea todas las acciones (excepto eliminar) para los archivos detectados. Los usuarios no pueden abrir, mover, copiar o compartir los archivos detectados.
    - `$false` bloquea todas las acciones excepto eliminar y descargar. Los usuarios pueden elegir entre aceptar el riesgo y descargar un archivo detectado.
@@ -241,7 +229,7 @@ Se crean cargas de trabajo como SharePoint, OneDrive y Microsoft Teams para la c
    > [!TIP]
    > Para obtener más información sobre el uso de PowerShell con Microsoft 365, consulte [Manage microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
 
-7. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de recursos de Microsoft 365.
+5. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de recursos de Microsoft 365.
 
 ### <a name="now-set-up-alerts-for-detected-files"></a>Ahora configurar alertas para los archivos detectados
 
@@ -270,9 +258,10 @@ Para obtener más información acerca de las alertas, consulte [crear alertas de
 > [!NOTE]
 > Cuando haya terminado de configurar, use estos vínculos para iniciar las investigaciones de carga de trabajo:
 >
-> - [Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
-> - [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+>- [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
+>- [Usar el centro de seguridad & cumplimiento para administrar los archivos en cuarentena](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>Parte 6: configuración adicional para configurar
 
@@ -299,4 +288,4 @@ Después de configurar las características de protección contra amenazas, aseg
 |Ver cómo funcionan las características de protección contra amenazas en su organización al ver los informes|[Panel de seguridad](security-dashboard.md)<br/>[Informes de seguridad de correo electrónico](view-email-security-reports.md)<br/>[Informes para Office 365 ATP](view-reports-for-atp.md)<br/>[Explorador de amenazas](threat-explorer.md)|
 |Revisar y revisar periódicamente las directivas de protección contra amenazas según sea necesario|[Puntuación de seguridad](../mtp/microsoft-secure-score.md)<br/>[Informes inteligentes y perspectivas](reports-and-insights-in-security-and-compliance.md)<br/>[Características de respuesta y investigación de amenazas de Microsoft 365](keep-users-safe-with-office-365-ti.md)|
 |Vea las nuevas características y actualizaciones de servicio|[Opciones de versión estándar y de destino](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centro de mensajes](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Obtenga información sobre las configuraciones de seguridad estándar y estricta recomendadas para EOP y ATP | [Configuración recomendada para EOP y la seguridad de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |
+|Obtenga información sobre las configuraciones de seguridad estándar y estricta recomendadas para EOP y ATP|[Configuración recomendada para EOP y la seguridad de ATP de Office 365](recommended-settings-for-eop-and-office365-atp.md)|

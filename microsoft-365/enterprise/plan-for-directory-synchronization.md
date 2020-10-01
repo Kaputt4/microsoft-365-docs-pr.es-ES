@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Describe la sincronización de directorios con Microsoft 365, la limpieza de los servicios de dominio de Active Directory y la herramienta Azure Active Directory Connect.
-ms.openlocfilehash: 2d3161fb835073a22743ea4f3b00ac508479f0f2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693877"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327384"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidad híbrida y sincronización de directorios para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 En función de las necesidades de negocio y los requisitos técnicos, el modelo de identidad híbrida y la sincronización de directorios son las opciones más comunes para los clientes empresariales que están adoptando Microsoft 365. La sincronización de directorios permite administrar las identidades de los servicios de dominio de Active Directory (AD DS) y todas las actualizaciones de las cuentas de usuario, los grupos y los contactos se sincronizan con el inquilino de Azure Active Directory (Azure AD) de la suscripción a Microsoft 365.
 
@@ -143,9 +143,5 @@ La sincronización de directorios es necesaria para las siguientes característi
 
 ## <a name="next-step"></a>Paso siguiente
 
-Cuando esté listo para implementar la identidad híbrida, vea [preparar el aprovisionamiento de usuarios](prepare-for-directory-synchronization.md).
+Cuando esté listo para implementar la identidad híbrida, consulte [preparar la sincronización de directorios](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Recursos adicionales
-
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
-

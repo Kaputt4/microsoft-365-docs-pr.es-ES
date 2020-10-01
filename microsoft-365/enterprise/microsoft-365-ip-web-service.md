@@ -11,6 +11,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365initiative-CoreDeploy
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: abcf6eb8ab963749b451e1f0eeef91d963b76b89
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 55ad3330e1d75b2d52af63076840bc6db7294884
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696607"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327526"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 

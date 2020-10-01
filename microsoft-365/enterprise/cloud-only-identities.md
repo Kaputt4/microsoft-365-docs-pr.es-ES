@@ -3,7 +3,7 @@ title: Identidad solo de nube de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo crear usuarios y grupos cuando la suscripción de Microsoft 365 usa identidad solo de nube.
-ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547763"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327932"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Identidad solo de nube de Microsoft 365
 
@@ -58,17 +58,9 @@ Puede usar grupos en Azure AD para varios fines que simplifican la administraci�
 - Aprovisionar automáticamente a los usuarios para aplicaciones de software como servicio (SaaS) y para proteger el acceso a esas aplicaciones con multi-factor Authentication (MFA) y otras directivas de acceso condicional.
 - Aprovisionar permisos y niveles de acceso para los sitios de grupo de SharePoint Online.
 
-***Los usuarios*** nuevos se crean con:
+## <a name="next-steps-for-cloud-only-identity"></a>Pasos siguientes para la identidad solo de la nube
 
-- [Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell para Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-Los nuevos ***grupos*** se crean con:
-
-- [Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell para Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
-## <a name="next-step-for-cloud-only-identity"></a>Paso siguiente para identidad solo de nube
-
-[Asignar licencias a cuentas de usuario](assign-licenses-to-user-accounts.md)
+- [Administrar cuentas de usuario](manage-microsoft-365-accounts.md)
+- [Asignar licencias a cuentas de usuario](assign-licenses-to-user-accounts.md)
+- [Administrar grupos y pertenencia a grupos](manage-microsoft-365-groups.md)
+- [Administración de contraseñas de cuentas de usuario](manage-microsoft-365-passwords.md)

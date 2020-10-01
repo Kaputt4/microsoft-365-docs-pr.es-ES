@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar el analizador de configuración para encontrar y corregir directivas de seguridad que están por debajo de las directivas de seguridad estándar protección estándar y protección estricta.
-ms.openlocfilehash: d2d37d937f42587ad99e4145d3a9f9fbc6a5a0f4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ac70b7fa2b2d0ecc65cf81ea4e5e5f2e807f2467
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203436"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326584"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Analizador de configuración para directivas de protección en EOP y Office 365 ATP
 
@@ -50,9 +50,9 @@ El analizador de configuración analiza los siguientes tipos de directivas:
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [Directivas de vínculos a prueba](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)de errores.
+  - [Directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
 
-  - [Directivas de datos adjuntos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users).
+  - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md).
 
 Los valores de configuración **estándar** y **estricta** de la Directiva que se usan como líneas de base se describen en [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
 
@@ -132,7 +132,7 @@ Esta pestaña le permite realizar un seguimiento de los cambios realizados en la
 - **Modificado por**
 - **Nombre de la configuración**
 - **Directiva**
-- **Tipo**
+- **Type**
 
 Para filtrar los resultados, haga clic en **Filtrar**. En el control flotante **filtros** que aparece, puede seleccionar entre los filtros siguientes:
 

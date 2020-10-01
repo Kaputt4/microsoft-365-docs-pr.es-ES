@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/18/2020
+ms.date: 09/30/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b9a9044a063c01724710679682e1edbe458dec0f
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132117"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327144"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -66,7 +66,6 @@ En esta tabla se enumeran las directivas que deben revisitarse y los vínculos a
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir equipos y servicios dependientes en la asignación de aplicaciones en la nube.|
 |        |[Los usuarios de riesgo alto tienen que cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
 |        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
-|        |[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir equipos y servicios dependientes en esta Directiva.|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo. Incluir equipos y servicios dependientes en esta Directiva.|

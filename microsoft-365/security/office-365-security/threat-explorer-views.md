@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar el explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200112"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327002"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -140,7 +140,7 @@ Al hacer clic en **detonaciones ATP** en este gráfico, se obtiene una vista sim
 
 ![El explorador está filtrado para mostrar solo los resultados de detonaciones de ATP](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-En esta vista, ahora miramos los datos de los archivos que se han enumerado con datos [adjuntos seguros de ATP de Office 365](atp-safe-attachments.md). Debajo del gráfico, podemos ver los detalles sobre los mensajes de correo electrónico específicos que tienen datos adjuntos detectados por los datos adjuntos seguros de ATP.
+En esta vista, ahora miramos los datos de los archivos que se han detonado con datos [adjuntos seguros](atp-safe-attachments.md). Debajo del gráfico, podemos ver los detalles sobre los mensajes de correo electrónico específicos que tenían datos adjuntos detectados por datos adjuntos seguros.
 
 ![Detalles específicos sobre los mensajes de correo electrónico con datos adjuntos detectados](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

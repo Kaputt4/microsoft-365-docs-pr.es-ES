@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados principales.
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309111"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327704"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -232,7 +232,7 @@ Puede:
 
 ****
 
-|Análisis| Descripción|
+|Análisis| Description|
 |---|---|
 |Investigación de violaciones de DLP|Investigue las violaciones detectadas por la [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Extracción de indicadores de correo electrónico|Extraer indicadores desde el encabezado, el cuerpo y el contenido de un mensaje de correo electrónico para su investigación|
@@ -247,7 +247,7 @@ Puede:
 |Investigación de anomalías de correo no deseado y de malware saliente|Detección de malware, phish o correo no deseado dentro de la organización y salientes procedentes de los usuarios de la organización|
 |Investigación del dominio del remitente|Comprobación bajo demanda de la reputación del dominio del [gráfico de seguridad inteligente de Microsoft](https://www.microsoft.com/security/operations/intelligence) y orígenes de inteligencia de amenazas externos|
 |Investigación de IP del remitente| Comprobación bajo demanda de la reputación de IP del [gráfico de seguridad inteligente de Microsoft](https://www.microsoft.com/security/operations/intelligence) y orígenes de inteligencia de amenazas externos|
-|URL hace clic en investigación| Investigar los clics de los usuarios protegidos por los [vínculos seguros de ATP de Office 365](atp-safe-links.md) en su organización|
+|URL hace clic en investigación| Investigar los clics de usuarios protegidos por [vínculos seguros en Office 365 ATP](atp-safe-links.md) en su organización|
 |Investigación de reputación de dirección URL|Comprobación bajo demanda de reputación de dirección URL del [gráfico de seguridad inteligente de Microsoft](https://www.microsoft.com/security/operations/intelligence) y orígenes de inteligencia de amenazas externos|
 |Investigación de actividad de usuario|Analizar anomalías de actividad de usuario en [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |Extracción de indicadores de correo electrónico notificados por el usuario|Extraer indicadores del encabezado, el cuerpo y el contenido del [correo electrónico notificado](enable-the-report-message-add-in.md) por el usuario para su investigación|
@@ -269,8 +269,8 @@ Puede:
 - Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Revisar y aprobar acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [Revisar y aprobar acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [Obtenga información sobre la investigación y la respuesta automatizadas en la protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

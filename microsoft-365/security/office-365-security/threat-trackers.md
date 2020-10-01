@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c631a6d9ad56c2bd155a9aa24b3758eb30d10cf7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201800"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327158"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -88,22 +88,20 @@ Y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras caract
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Rastreadores y Office 365 protección contra amenazas avanzada
 
-Con nuestra amenaza de inaugural de confianza, destacamos las amenazas de malware avanzadas detectadas por los [datos adjuntos seguros de ATP de Office 365](atp-safe-attachments.md). Si es cliente de Office 365 Enterprise E5 y no usa la [protección contra amenazas avanzada](office-365-atp.md) (ATP) de Office 365, debe estar incluido en la suscripción. ATP proporciona valor incluso si tiene otras herramientas de seguridad filtrando el flujo de correo electrónico con los servicios de Office 365. Sin embargo, las características contra correo no deseado y [vínculos seguros de Office 365 ATP](atp-safe-links.md) funcionan mejor cuando la solución principal de seguridad de correo electrónico es a través de Office 365. 
+Con nuestra amenaza de inaugural de confianza, se destacan las amenazas de malware avanzadas detectadas por [datos adjuntos seguros](atp-safe-attachments.md). Si es cliente de Office 365 Enterprise E5 y no usa la [protección contra amenazas avanzada](office-365-atp.md) (ATP) de Office 365, debe estar incluido en la suscripción. ATP proporciona valor incluso si tiene otras herramientas de seguridad filtrando el flujo de correo electrónico con los servicios de Office 365. Sin embargo, las características contra correo electrónico no deseado y [vínculos seguros](atp-safe-links.md) funcionan mejor cuando la solución principal de seguridad de correo electrónico es a través de Office 365.
   
 ![ATP en el centro de seguridad y &amp; cumplimiento](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware tradicionales significa que no está protegido lo suficiente como para evitar los ataques. Los atacantes más sofisticados de hoy usan las herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores de antimalware tradicionales basados en firmas. La característica de datos adjuntos seguros de ATP lleva archivos adjuntos de correo y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Tanto si se trata de un archivo PDF, un archivo comprimido o un documento de Office, el código malintencionado se puede ocultar en un archivo, activando una vez que la víctima la abre en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, las capacidades de ATP de Office 365 encuentran estas amenazas en función de los comportamientos, la reputación del archivo y una serie de reglas heurísticas.
+En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware tradicionales significa que no está protegido lo suficiente como para evitar los ataques. Los atacantes más sofisticados de hoy usan las herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores de antimalware tradicionales basados en firmas. La característica de datos adjuntos seguros tiene archivos adjuntos de correo y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Tanto si se trata de un archivo PDF, un archivo comprimido o un documento de Office, el código malintencionado se puede ocultar en un archivo, activando una vez que la víctima la abre en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, las capacidades de ATP de Office 365 encuentran estas amenazas en función de los comportamientos, la reputación del archivo y una serie de reglas heurísticas.
   
-El filtro de nueva amenaza notable resalta los elementos que se detectaron recientemente a través de datos adjuntos seguros ATP. Estas detecciones representan elementos que son nuevos archivos malintencionados, que 365 Microsoft no ha encontrado previamente en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la funcionalidad de datos adjuntos seguros de ATP: este Tracker destacado incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
+El filtro de nueva amenaza notable resalta los elementos detectados recientemente mediante datos adjuntos seguros. Estas detecciones representan elementos que son nuevos archivos malintencionados, que 365 Microsoft no ha encontrado previamente en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la función de datos adjuntos seguros: este Tracker importante incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
-    
-- Asegúrese de que el equipo de seguridad tiene asignados los roles y permisos correctos. Debe ser administrador global o tener el rol de administrador de seguridad o de búsqueda y depuración asignado en el centro de seguridad y &amp; cumplimiento. Consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    
-- Vea los nuevos rastreadores para que se muestren en su entorno de Microsoft 365. Cuando esté disponible, encontrará los seguimientos [aquí](https://protection.office.com/). Vaya a **Threat management** los \> **rastreadores de amenazas**de administración de amenazas.
-    
-- Si aún no lo ha hecho, obtenga más información acerca de la [protección contra amenazas avanzada de office 365](office-365-atp.md) para su organización, incluidos los [vínculos seguros de atp](atp-safe-links.md) de Office 365 y los [datos ADjuntos seguros de ATP](atp-safe-attachments.md)de Office 365.
-  
 
+- Asegúrese de que el equipo de seguridad tiene asignados los roles y permisos correctos. Debe ser administrador global o tener el rol de administrador de seguridad o de búsqueda y depuración asignado en el centro de seguridad y &amp; cumplimiento. Consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+- Vea los nuevos rastreadores para que se muestren en su entorno de Microsoft 365. Cuando esté disponible, encontrará los seguimientos [aquí](https://protection.office.com/). Vaya a **Threat management** los \> **rastreadores de amenazas**de administración de amenazas.
+
+- Si aún no lo ha hecho, obtenga más información acerca de la [protección contra amenazas avanzada de Office 365](office-365-atp.md) para su organización, incluidos [vínculos seguros](atp-safe-links.md) y [datos adjuntos seguros](atp-safe-attachments.md).

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295543"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327014"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -61,7 +61,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
 - **Hora de creación**
 - **Nombre de usuario**
-- **Action**
+- **Acción**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
 
@@ -224,7 +224,7 @@ Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se most
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
-- **Action**
+- **Acción**
 - **Subject**
 
 Si hace clic en **filtros** en una tabla de detalles, puede modificar los resultados con los filtros siguientes:
@@ -263,16 +263,16 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
-- **Action**
+- **Acción**
 - **Número de mensajes**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El informe de **Estado de protección contra amenazas** está disponible en EOP y en Office 365 ATP; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md).
+El informe de **Estado de protección contra amenazas** está disponible en EOP y en Office 365 ATP; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados por ATP para SharePoint, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-El informe proporciona el número de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y características de ATP como [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)de ATP y [protección contra el phishing](set-up-anti-phishing-policies.md)de ATP. Puede usar esta información para identificar tendencias o determinar si es necesario ajustar las directivas de la organización. Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
+El informe proporciona el número de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, la [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md)y las características de ATP, como [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [ATP contra el phishing](set-up-anti-phishing-policies.md). Puede usar esta información para identificar tendencias o determinar si es necesario ajustar las directivas de la organización. Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
 
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
@@ -366,7 +366,7 @@ Si hace clic en **filtros**, puede modificar el informe con los siguientes filtr
 - **Fecha de inicio** y **fecha de finalización**
 - **Detección**
 - **Protegido por**: **ATP** o **EOP**
-- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
 - **Dominio**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ Si hace clic en **filtros**, puede modificar el informe con los siguientes filtr
 - **Fecha de inicio** y **fecha de finalización**
 - **Detección**
 - **Protegido por** (solo para ATP de Office 365): **ATP** o **EOP**
-- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide).
+- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
 - **Dominio**
 - **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
 

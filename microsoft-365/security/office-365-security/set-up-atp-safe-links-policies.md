@@ -1,9 +1,9 @@
 ---
-title: Configurar directivas de vínculos seguros de Office 365 ATP
+title: Configurar directivas de vínculos seguros en Office 365 ATP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,157 +16,460 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración de vínculos seguros globales en la protección contra amenazas avanzada (ATP) de Office 365.
+ms.openlocfilehash: 58088955a6909238c1fe5202688e0b8d1ab8e6c6
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279585"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327230"
 ---
-# <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
+# <a name="set-up-safe-links-policies-in-office-365-atp"></a>Configurar directivas de vínculos seguros en Office 365 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre Safelinks en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Vínculos seguros ATP](atp-safe-links.md) es una característica de la [protección contra amenazas avanzada](office-365-atp.md) (atp) de Office 365 que puede ayudar a proteger a su organización de vínculos malintencionados usados en suplantación de identidad (phishing) y otros ataques. Si tiene los permisos necesarios [para el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que cuando los usuarios hagan clic en direcciones web (URL), su organización esté protegida. Las directivas de vínculos seguros de ATP se pueden configurar para analizar direcciones URL en correo electrónico y direcciones URL en documentos de Office. Vínculos seguros ATP examina el correo electrónico entrante en busca de hipervínculos malintencionados conocidos y de datos adjuntos que contengan malware. Esta característica reescribe las direcciones URL examinadas en el prefijo de formato de dirección URL estándar de Microsoft <https://nam01.safelinks.protection.outlook.com> . Una vez reescrito un vínculo, se analiza para detectar cualquier posible contenido malintencionado. Con los vínculos seguros ATP habilitados, si un usuario hace clic en un vínculo en un correo electrónico y la lista de direcciones URL bloqueadas personalizadas de la organización ha bloqueado la URL, o si la dirección URL se determina como malintencionada, se abrirá una página de advertencia.
+Vínculos seguros es una característica de la [protección contra amenazas avanzada (ATP) de Office 365](office-365-atp.md) que proporciona análisis de URL de los mensajes de correo electrónico entrantes en el flujo de correo y la hora de la comprobación de direcciones URL y vínculos en los mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, vea [vínculos seguros en Office 365 ATP](atp-safe-links.md).
 
-Una vez que los vínculos seguros de ATP han reescrito una dirección URL, si el mensaje se reenvía o se responde a, la dirección URL seguirá reescrita. No se rescribirán los vínculos adicionales agregados al mensaje que se va a responder o a reenviar.
+No hay ninguna directiva de vínculos a prueba de errores integrada o predeterminada. Para obtener vínculos a prueba de errores de las direcciones URL, debe crear una o más directivas de vínculos seguros, como se describe en este artículo.
 
-[Las nuevas características se agregan continuamente a ATP](office-365-atp.md#new-features-in-office-365-atp). A medida que se agreguen nuevas características, es posible que deba realizar ajustes en las directivas de vínculos seguros de ATP existentes.
+Puede configurar directivas de vínculos seguros en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para las organizaciones de Microsoft 365 con buzones de correo en Exchange Online; PowerShell de EOP independiente para las organizaciones sin buzones de Exchange Online, pero con las suscripciones complementarias de ATP de Office 365).
 
-## <a name="what-to-do"></a>Qué hacer
+Los elementos básicos de una directiva de vínculos seguros son los siguientes:
 
-1. Revise los requisitos previos.
+- **La Directiva de vínculos seguros**: activar la protección de vínculos seguros, activar el análisis de URL en tiempo real, especificar si se debe esperar a que se complete la detección en tiempo real antes de entregar el mensaje, activar el examen de mensajes internos, especificar si se realiza un seguimiento de los clics del usuario en las direcciones URL y especificar si se permite a los usuarios hacer clic en el valle.
+- **La regla de vínculos seguros**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva).
 
-2. Revise y edite la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios. Por ejemplo, puede [configurar la lista de direcciones URL bloqueadas personalizadas para vínculos seguros ATP](set-up-a-custom-blocked-urls-list-atp.md).
+La diferencia entre estos dos elementos no es obvia cuando se administran directivas de vínculos seguros en el centro de seguridad & cumplimiento:
 
-3. Agregar o editar directivas para destinatarios de correo electrónico específicos, incluida [la configuración de la lista de direcciones URL "no reescribir" personalizadas para vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+- Al crear una directiva de vínculos seguros, en realidad está creando una regla de vínculos seguros y la Directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambas.
+- Cuando se modifica una directiva de vínculos seguros, la configuración relacionada con los filtros nombre, prioridad, habilitado o deshabilitado y de destinatarios modifica la regla de vínculos a prueba de errores. Todas las demás opciones modifican la Directiva de vínculos seguros asociada.
+- Cuando se quita una directiva de vínculos seguros, se quitan la regla de vínculos seguros y la Directiva de vínculos seguros asociada.
 
-4. Obtenga información sobre las opciones de directiva de vínculos seguros de ATP (en este artículo), incluida la configuración de cambios recientes.
-
-## <a name="step-1-review-the-prerequisites"></a>Paso 1: revisar los requisitos previos
-
-- Asegúrese de que su organización tiene la [protección contra amenazas avanzada de Office 365](office-365-atp.md).
-
-- Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
-
-    |Función|Dónde y cómo se asigna|
-    |---|---|
-    |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
-    |Administrador de seguridad|Centro de administración de Azure Active Directory ( <https://aad.portal.azure.com> )|
-    |Administración de la organización en Exchange Online|Centro de administración de Exchange ( <https://outlook.office365.com/ecp> ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
-
-    Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
-- Asegúrese de que los clientes de Office estén configurados para usar la [autenticación moderna](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (esto es para la protección de vínculos seguros de ATP en documentos de Office).
-
-- [Obtenga información sobre las opciones de directiva de vínculos seguros de ATP](#step-4-learn-about-atp-safe-links-policy-options) (en este artículo).
-
-- Espere hasta 30 minutos para que la directiva nueva o actualizada se extienda a todos los centros de recursos de Microsoft 365.
-
-## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Paso 2: definir (o revisar) la Directiva de vínculos seguros de ATP que se aplica a todos los usuarios
-
-Cuando tenga la [protección contra amenazas avanzada de Office 365](office-365-atp.md), tendrá una directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios de la organización. Asegúrese de revisar y, si es necesario, modifique la directiva predeterminada.
-
-1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa.
-
-2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **vínculos seguros**de **directiva \> ** .
-
-3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).
-
-   ![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-
-4. En la sección **bloquear las siguientes direcciones URL** , especifique una o más direcciones URL en las que desee impedir que los usuarios de la organización puedan visitar. (Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-atp.md)).
-
-5. En la sección **configuración que se aplica a los contenidos excepto el correo electrónico** , active (o desactive) las opciones que desee usar. (Le recomendamos que seleccione todas las opciones).
-
-6. Seleccione **Guardar**.
-    
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>Paso 3: agregar (o editar) directivas de vínculos seguros de ATP que se aplican a todos los destinatarios de correo electrónico o a determinados
-
-Una vez que haya revisado (o editado) la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios, el siguiente paso consiste en definir directivas adicionales que se aplicarán a todos los destinatarios de correo electrónico o a los destinatarios específicos. Por ejemplo, puede especificar excepciones a su directiva predeterminada definiendo una directiva adicional o crear restricciones más detalladas para todos los empleados.
-  
-1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa. 
-    
-2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva**.
-
-3. Elija **vínculos seguros**.
-
-4. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un signo más ( **+** )).
-
-   ![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
-
-5. Especifique el nombre, la descripción y la configuración de la directiva.
-
-   **Ejemplo:** Para configurar una directiva denominada "no hay clic directo a través de" que no permite a los usuarios de un grupo determinado de su organización hacer clic a través de un sitio web específico sin protección de vínculos seguros de ATP, puede especificar la siguiente configuración recomendada:
-
-   - En el cuadro **nombre** , escriba sin clic directo.
-
-   - En el cuadro **Descripción** , escriba una descripción como, para evitar que los usuarios de determinados grupos puedan hacer clic en un sitio web sin verificación de vínculos seguros de ATP.
-
-   - En la sección **seleccionar la acción** , elija **activado**.
-
-   - Seleccione **aplicar análisis de URL en tiempo real para vínculos sospechosos y vínculos que apunten a archivos** si desea habilitar la detonación de dirección URL para direcciones URL que señalen archivos y sospechosos (recomendado). Y seleccione **esperar a que se complete el análisis de URL antes de entregar el mensaje** si solo quiere que los usuarios reciban mensajes después de que se hayan examinado completamente las direcciones URL.
-
-   - Seleccione **aplicar vínculos seguros a los mensajes enviados dentro de la organización** si desea habilitar vínculos seguros para los mensajes enviados entre usuarios de la organización (recomendado).
-
-   - Seleccione no permitir que el **usuario haga clic a través de la dirección URL original** si no desea que los usuarios individuales invaliden las páginas *de notificación de análisis en curso* o *URL bloqueadas* .
-
-   - (Opcional) En la sección no **reescribir las siguientes direcciones URL** , especifique una o más direcciones URL que se consideren seguras para su organización. (Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
-
-   - En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
-
-6. Seleccione **Guardar**.
+En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, vea la sección [usar Exchange Online PowerShell o Standalone EOP PowerShell para configurar directivas de vínculos seguros](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) , más adelante en este artículo.
 
 > [!NOTE]
-> Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo se aplicará la Directiva de mayor prioridad. Si desea que la Directiva del cliente tenga prioridad, debe aumentar la prioridad de la Directiva.
+> La configuración global de la protección de vínculos seguros se establece **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [configurar las opciones globales de vínculos seguros en Office 365 ATP](configure-global-settings-for-safe-links.md).
 
-## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Paso 4: información sobre las opciones de directiva de vínculos seguros de ATP
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Al configurar o editar las directivas de vínculos seguros de ATP, verá que hay varias opciones disponibles. En caso de que se pregunte Cuáles son estas opciones, en la tabla siguiente se describe cada una de ellas y su efecto. Recuerde que hay dos tipos principales de directivas de vínculos seguros de ATP que debe definir o editar:
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **vínculos seguros de ATP** , use <https://protection.office.com/safelinksv2> .
 
-- una [directiva predeterminada](#default-policy-options) que se aplica a todos los usuarios; y
-- [directivas adicionales para destinatarios específicos](#policies-that-apply-to-specific-email-recipients)
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-### <a name="default-policy-options"></a>Opciones de directivas predeterminadas
+- Para ver, crear, modificar y eliminar directivas de vínculos a prueba de errores, debe pertenecer a uno de los siguientes grupos de roles:
 
-Las opciones de directiva predeterminadas se aplican a todos los usuarios de la organización.
+  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - **Administración** de la organización en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-****
+- Para conocer la configuración recomendada para las directivas de vínculos seguros, consulte [configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
-|Esta opción|Se obtiene este resultado|
-|---|---|
-|**Bloquear las siguientes direcciones URL**|Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL. Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP](set-up-a-custom-blocked-urls-list-atp.md).|
-|**Microsoft 365 apps for Enterprise, Office para iOS y Android**| Cuando se selecciona esta opción, la protección de vínculos seguros de ATP se aplica a direcciones URL en archivos de Word, Excel y PowerPoint en Windows o Mac OS, mensajes de correo electrónico en Outlook, documentos de Office en dispositivos iOS o Android, archivos de Visio 2016 en Windows y archivos abiertos en las versiones web de las aplicaciones de Office (Word, PowerPoint, Excel, Outlook y OneNote), siempre y 365|
-|**No hacer un seguimiento cuando los usuarios hacen clic en ATP vínculos seguros**|Cuando se selecciona esta opción, se hace clic en datos de direcciones URL en Word, Excel, PowerPoint, documentos de Visio y los mensajes de correo electrónico de Outlook no se almacenan.|
-|**No permitir que los usuarios haga clic en los vínculos seguros ATP a la dirección URL original**|Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.|
-|
+- Permitir que se aplique una directiva nueva o actualizada durante un máximo de 30 minutos.
 
-### <a name="policies-that-apply-to-specific-email-recipients"></a>Directivas que se aplican a destinatarios de correo electrónico específicos
+- [Las nuevas características se agregan continuamente a ATP](office-365-atp.md#new-features-in-office-365-atp). A medida que se agreguen nuevas características, es posible que deba realizar ajustes en las directivas de vínculos a prueba de errores existentes.
 
-****
+## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para crear directivas de vínculos a prueba de errores
 
-|Esta opción|Se obtiene este resultado|
-|---|---|
-|**Desactivar**|No examina direcciones URL en mensajes de correo electrónico.  <br/> Permite definir una regla de excepción, como una regla que no examina direcciones URL en mensajes de correo electrónico para un grupo específico de destinatarios.|
-|**On**|Reescribe las direcciones URL para enrutar a los usuarios a través de la protección de vínculos seguros de ATP cuando los usuarios hacen clic en direcciones URL en mensajes de correo electrónico y habilita vínculos seguros de ATP en Outlook (C2R) en Windows.  <br/> Comprueba una dirección URL al hacer clic en una lista de direcciones URL malintencionadas o bloqueadas y desencadena una detonación de la dirección URL en segundo plano si la dirección URL no tiene una reputación válida.|
-|**Aplicar un análisis de URL en tiempo real de vínculos y vínculos sospechosos que señalan a archivos**|Cuando se selecciona esta opción, se examinan direcciones URL sospechosas y vínculos que apuntan al contenido descargable.|
-|**Esperar a que se complete el análisis de URL antes de entregar el mensaje**|Cuando se selecciona esta opción, los mensajes que contienen direcciones URL que se examinarán se retendrán hasta que las direcciones URL terminen de analizar y se confirmen como seguras antes de que se entreguen los mensajes.|
-|**Aplicar vínculos seguros a los mensajes enviados dentro de la organización** <br/> | Cuando esta opción está disponible y seleccionada, la protección de vínculos seguros de ATP se aplica a los mensajes de correo electrónico enviados entre las personas de su organización, siempre que las cuentas de correo electrónico se hospeden en Office 365.|
-|**No hacer un seguimiento de los clics del usuario**|Cuando se selecciona esta opción, no se almacenan los datos de las direcciones URL del correo electrónico de remitentes externos. Dirección URL haga clic en seguimiento para los vínculos de los mensajes de correo electrónico enviados dentro de la organización actualmente no se admite.|
-|**No permitir que los usuarios hagan clic a través de la dirección URL original**|Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.|
-|**No volver a escribir las siguientes direcciones URL**|Deja las direcciones URL tal y como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis para un grupo específico de destinatarios de correo electrónico de la organización. Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obtener más información, incluidos los cambios recientes para la compatibilidad con asteriscos comodín ( \* ).|
-|
+La creación de una directiva de vínculos seguros personalizada en el centro de seguridad & cumplimiento crea la regla de vínculos seguros y la Directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambas.
 
-## <a name="next-steps"></a>Pasos siguientes
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
 
-Una vez que se hayan implementado las directivas de vínculos seguros de ATP, podrá ver cómo está trabajando ATP para su organización consultando los informes. Vea los siguientes recursos para obtener más información:
+2. En la página **vínculos seguros** , haga clic en **crear**.
 
-- [Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)
+3. Se abre el Asistente para **nueva Directiva de vínculos seguros** . En la página **asigne un nombre a la Directiva** , configure las siguientes opciones:
 
-- [Usar el explorador en el Centro de seguridad y cumplimiento](threat-explorer.md)
+   - **Nombre**: escriba un nombre único y descriptivo para la directiva.
 
-Manténgase al tanto de las nuevas características que llegarán a ATP. visite el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).
+   - **Descripción**: escriba una descripción opcional para la directiva.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+4. En la página de **configuración** que aparece, configure las siguientes opciones:
+
+   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **activado**.
+
+   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **activado** o deje el valor **predeterminado seleccionado.**
+
+   - **Aplique un análisis de URL en tiempo real en busca de vínculos y vínculos sospechosos que apunten a archivos**: Seleccione esta opción para habilitar el análisis en tiempo real de vínculos en mensajes de correo electrónico.
+
+   - **Espere a que se complete el análisis de URL antes de entregar el mensaje**: Seleccione esta opción para esperar a que se complete el análisis de URL en tiempo real antes de entregar el mensaje.
+
+   - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: Seleccione esta opción para aplicar la Directiva de vínculos seguros a los mensajes entre los remitentes internos y los destinatarios internos.
+
+   - **No hacer un seguimiento de los clics del usuario**: deje esta opción sin seleccionar para permitir que el seguimiento del usuario haga clic en direcciones URL en mensajes de correo electrónico.
+
+   - **No permita que los usuarios hagan clic a través de la dirección URL original**: Seleccione esta opción para impedir que los usuarios hagan clic a través de la dirección URL original en [las páginas de advertencia](atp-safe-links.md#warning-pages-from-safe-links).
+
+   - **No vuelva a escribir las siguientes direcciones URL**: permite el acceso a las direcciones URL especificadas que, de lo contrario, bloquearían mediante vínculos seguros.
+
+     En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en ![Icono Agregar botón](../../media/ITPro-EAC-AddIcon.png).
+
+     Para quitar una entrada existente, selecciónela y, a continuación, haga clic en ![Icono Eliminar botón](../../media/ITPro-EAC-DeleteIcon.png).
+
+     Para obtener la sintaxis de la entrada, consulte [la sintaxis de la entrada "no reescribir las siguientes direcciones URL"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+
+   Para obtener información detallada acerca de estas opciones, vea configuración de [vínculos seguros para los mensajes de correo electrónico](atp-safe-links.md#safe-links-settings-for-email-messages) y la [configuración de vínculos seguros para Microsoft Teams](atp-safe-links.md#safe-links-settings-for-microsoft-teams).
+
+   Para obtener más información sobre los valores recomendados para la configuración de directivas estándar y estricta, consulte [configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
+
+   Cuando termine, haga clic en **Siguiente**.
+
+5. En la página **aplicado a** que aparece, identifique los destinatarios internos a los que se aplica la Directiva.
+
+   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
+
+   Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si**:
+
+   - **El destinatario es**: especifica uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
+   - **El destinatario es un miembro de**: especifica uno o más grupos de la organización.
+   - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en su organización.
+
+   Después de seleccionar la condición, aparece la lista desplegable correspondiente con una **de estas** casillas.
+
+   - Haga clic en el cuadro y desplácese por la lista de valores que desea seleccionar.
+   - Haga clic en el cuadro y comience a escribir para filtrar la lista y seleccionar un valor.
+   - Para agregar más valores, haga clic en un área vacía del cuadro.
+   - Para quitar entradas individuales, haga **Remove** clic en ![ el icono quitar quitar del ](../../media/scc-remove-icon.png) valor.
+   - Para quitar toda la condición, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en la condición.
+
+   Para agregar una condición adicional, haga clic en **Agregar condición** y seleccione un valor restante en **aplicado si**.
+
+   Para agregar excepciones, haga clic en **Agregar una condición** y seleccione una excepción en **excepto si**. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+
+   Cuando termine, haga clic en **Siguiente**.
+
+6. En la página **Revise la configuración** que aparece, revise la configuración. Puede hacer clic en **Editar** en cada configuración para modificarla.
+
+   Cuando haya terminado, haga clic en **Finalizar**.
+
+## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para ver las directivas de vínculos a prueba de errores
+
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+
+2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
+
+   Los detalles de la Directiva aparecen en un vuelo hacia fuera
+
+## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para modificar las directivas de vínculos a prueba de errores
+
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+
+2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
+
+3. En los detalles de la Directiva hacia fuera que aparece, haga clic en **Editar Directiva**.
+
+La configuración disponible en la volar hacia fuera que aparece es idéntica a la que se describe en la sección [usar el centro de seguridad & cumplimiento para crear directivas de vínculos seguros](#use-the-security--compliance-center-to-create-safe-links-policies) .
+
+Para habilitar o deshabilitar una directiva o establecer el orden de prioridad de la Directiva, consulte las siguientes secciones.
+
+### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar las directivas de vínculos a prueba de errores
+
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+
+2. Observe el valor de la columna **Estado** :
+
+   - Mueva el botón de alternancia a la izquierda para deshabilitar la directiva: ![Desactivar Directiva](../../media/scc-toggle-off.png).
+
+   - Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Activar la Directiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+
+### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas de vínculos a prueba de errores
+
+De forma predeterminada, las directivas de vínculos a prueba de errores reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
+
+Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
+
+Las directivas de vínculos seguros se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0).
+
+**Nota**: en el centro de seguridad & cumplimiento, solo puede cambiar la prioridad de la Directiva de vínculos seguros después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (que puede afectar a la prioridad de las reglas existentes).
+
+Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista (no puede modificar directamente el número de **Prioridad** en el Centro de seguridad y cumplimiento).
+
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+
+2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
+
+3. En los detalles de la Directiva volar hacia fuera que aparece, haga clic en el botón prioridad disponible:
+
+   - La Directiva de vínculos seguros con el valor de **prioridad** **0** sólo tiene disponible el botón **disminuir prioridad** .
+
+   - La Directiva de vínculos seguros con el valor de **prioridad** más bajo (por ejemplo, **3**) solo tiene el botón **aumentar prioridad** disponible.
+
+   - Si tiene tres o más directivas de vínculos seguros, las directivas entre los valores de prioridad mayor y menor tienen los botones **aumentar prioridad** y **disminuir prioridad** disponibles.
+
+4. Haga clic en **aumentar prioridad** o **disminuir prioridad** para cambiar el valor de **prioridad** .
+
+5. Cuando haya terminado, haga clic en **Cerrar**.
+
+## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para quitar directivas de vínculos a prueba de errores
+
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+
+2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
+
+3. En los detalles de la Directiva que aparecen, haga clic en **eliminar Directiva**y, a continuación, haga clic en **sí** en el cuadro de diálogo de advertencia que aparece.
+
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP para configurar directivas de vínculos seguros
+
+Como se ha descrito anteriormente, una directiva de vínculos seguros consta de una directiva de vínculos seguros y una regla de vínculos seguros.
+
+En PowerShell, la diferencia entre las directivas de vínculos a prueba de errores y las reglas de vínculos seguros es evidente. Las directivas de vínculos a prueba de errores se administran mediante los cmdlets ** \* -SafeLinksPolicy** y se administran las reglas de vínculos a prueba de errores mediante los cmdlets ** \* -SafeLinksRule** .
+
+- En PowerShell, se crea la Directiva de vínculos seguros en primer lugar y, a continuación, se crea la regla de vínculos seguros que identifica la Directiva a la que se aplica la regla.
+- En PowerShell, la configuración de la Directiva de vínculos seguros y la regla de vínculos seguros se modifica por separado.
+- Cuando se quita una directiva de vínculos seguros de PowerShell, la regla de vínculos seguros correspondiente no se quita automáticamente y viceversa.
+
+### <a name="use-powershell-to-create-safe-links-policies"></a>Usar PowerShell para crear directivas de vínculos a prueba de errores
+
+La creación de una directiva de vínculos seguros en PowerShell es un proceso de dos pasos:
+
+1. Cree la Directiva de vínculos seguros.
+2. Cree la regla de vínculos seguros que especifica la Directiva de vínculos a prueba de errores a la que se aplica la regla.
+
+ **Notas**:
+
+- Puede crear una nueva regla de vínculos seguros y asignarle una directiva de vínculos seguros existente no asociada. No se puede asociar una regla de vínculos seguros con más de una directiva de vínculos seguros.
+
+- Puede configurar las siguientes opciones en nuevas directivas de vínculos a prueba de errores en PowerShell que no están disponibles en el centro de seguridad & cumplimiento hasta que se crea la Directiva:
+
+  - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-SafeLinksRule** ).
+  - Establezca la prioridad de la Directiva durante la creación (_prioridad_ _\<Number\>_ ) en el cmdlet **New-SafeLinksRule** ).
+
+- Una nueva Directiva de vínculos seguros que se crea en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que se asigna la Directiva a una regla de vínculos seguros.
+
+#### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Paso 1: usar PowerShell para crear una directiva de vínculos seguros
+
+Para crear una directiva de vínculos seguros, use esta sintaxis:
+
+```PowerShell
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+```
+
+**Notas**:
+
+- Para obtener información detallada sobre la sintaxis de entrada que se debe usar para el parámetro _DoNotRewriteUrls_ , vea [la sintaxis de entrada de la lista "no reescribir las siguientes direcciones URL"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+
+- Para obtener más sintaxis que puede usar para el parámetro _DoNotRewriteUrls_ al modificar las directivas de vínculos a prueba de errores existentes mediante el cmdlet **set-SafeLinksPolicy** , consulte la sección [usar PowerShell para modificar las directivas de vínculos seguros](#use-powershell-to-modify-safe-links-policies) , más adelante en este artículo.
+
+En este ejemplo se crea una directiva de vínculos seguros llamada contoso All con los valores siguientes:
+
+- Activar el análisis y la reescritura de URL en mensajes de correo electrónico.
+- Active el análisis de URL en Teams (pulse solo vista previa).
+- Active el análisis en tiempo real de las direcciones URL en las que hizo clic, incluidos los vínculos a los que se hizo clic que señalan a archivos.
+- Espere a que se complete el análisis de URL antes de entregar el mensaje.
+- Activar el análisis y la reescritura de URL para los mensajes internos.
+- Realizar un seguimiento de los clics de usuario relacionados con la protección de vínculos seguros (no se usa el parámetro _DoNotTrackUserClicks_ y el valor predeterminado es $false, lo que significa que se realiza un seguimiento de los clics del usuario).
+- No permita que los usuarios hagan clic en la dirección URL original.
+
+```PowerShell
+New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy).
+
+#### <a name="step-2-use-powershell-to-create-a-safe-links-rule"></a>Paso 2: usar PowerShell para crear una regla de vínculos seguros
+
+Para crear una regla de vínculos seguros, use esta sintaxis:
+
+```PowerShell
+New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+```
+
+En este ejemplo se crea una regla de vínculos a prueba de errores denominada contoso All con las siguientes condiciones:
+
+- La regla está asociada a la Directiva de vínculos a prueba de errores denominada contoso ALL.
+- La regla se aplica a todos los destinatarios del dominio contoso.com.
+- Como no se usa el parámetro _Priority_ , se usa la prioridad predeterminada.
+- La regla está habilitada (no se usa el parámetro _Enabled_ y el valor predeterminado es `$true` ).
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule).
+
+### <a name="use-powershell-to-view-safe-links-policies"></a>Usar PowerShell para ver las directivas de vínculos a prueba de errores
+
+Para ver las directivas de vínculos a prueba de errores existentes, use la siguiente sintaxis:
+
+```PowerShell
+Get-SafeLinksPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+En este ejemplo se devuelve una lista resumida de todas las directivas de vínculos a prueba de errores.
+
+```PowerShell
+Get-SafeLinksPolicy | Format-Table Name
+```
+
+En este ejemplo se muestra información detallada de la Directiva de vínculos a prueba de errores denominada ejecutivos de contoso.
+
+```PowerShell
+Get-SafeLinksPolicy -Identity "Contoso Executives"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy).
+
+### <a name="use-powershell-to-view-safe-links-rules"></a>Usar PowerShell para ver las reglas de vínculos a prueba de errores
+
+Para ver las reglas de vínculos a prueba de errores existentes, use la siguiente sintaxis:
+
+```PowerShell
+Get-SafeLinksRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+En este ejemplo se devuelve una lista resumida de todas las reglas de vínculos a prueba de errores.
+
+```PowerShell
+Get-SafeLinksRule | Format-Table Name,State
+```
+
+Para filtrar la lista mediante las reglas habilitadas o deshabilitadas, ejecute los siguientes comandos:
+
+```PowerShell
+Get-SafeLinksRule -State Disabled
+```
+
+```PowerShell
+Get-SafeLinksRule -State Enabled
+```
+
+En este ejemplo se muestra información detallada de la regla de vínculos a prueba de errores denominada ejecutivos de contoso.
+
+```PowerShell
+Get-SafeLinksRule -Identity "Contoso Executives"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule).
+
+### <a name="use-powershell-to-modify-safe-links-policies"></a>Usar PowerShell para modificar directivas de vínculos a prueba de errores
+
+No puede cambiar el nombre de una directiva de vínculos seguros en PowerShell (el cmdlet **set-SafeLinksPolicy** no tiene ningún parámetro _Name_ ). Al cambiar el nombre de una directiva de vínculos seguros en el centro de seguridad & cumplimiento, sólo cambia el nombre de la _regla_de vínculos seguros.
+
+La única consideración adicional para modificar las directivas de vínculos a prueba de errores en PowerShell es la sintaxis disponible para el parámetro _DoNotRewriteUrls_ (la [lista "no reescribir las siguientes direcciones URL"](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):
+
+- Para agregar valores que van a reemplazar las entradas existentes, use la siguiente sintaxis: `"Entry1","Entry2,..."EntryN"` .
+- Para agregar o quitar valores sin que ello afecte a las entradas existentes, use la sintaxis siguiente: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
+
+De lo contrario, la misma configuración está disponible cuando se crea una directiva de vínculos seguros, tal como se describe en la sección [paso 1: usar PowerShell para crear una directiva de vínculos seguros](#step-1-use-powershell-to-create-a-safe-links-policy) anteriormente en este artículo.
+
+Para modificar una directiva de vínculos seguros, use esta sintaxis:
+
+```PowerShell
+Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy).
+
+### <a name="use-powershell-to-modify-safe-links-rules"></a>Usar PowerShell para modificar las reglas de vínculos a prueba de errores
+
+La única opción que no está disponible cuando se modifica una regla de vínculos seguros en PowerShell es el parámetro _Enabled_ que permite crear una regla deshabilitada. Para habilitar o deshabilitar reglas de vínculos a prueba de errores, consulte la siguiente sección.
+
+De lo contrario, la misma configuración está disponible cuando se crea una regla tal y como se describe en la sección [paso 2: usar PowerShell para crear una regla de vínculos seguros](#step-2-use-powershell-to-create-a-safe-links-rule) anteriormente en este artículo.
+
+Para modificar una regla de vínculos a prueba de errores, use esta sintaxis:
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
+
+### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>Usar PowerShell para habilitar o deshabilitar reglas de vínculos a prueba de errores
+
+Al habilitar o deshabilitar una regla de vínculos a prueba de errores en PowerShell, se habilita o deshabilita toda la Directiva de vínculos seguros (la regla de vínculos seguros y la Directiva de vínculos seguros asignada).
+
+Para habilitar o deshabilitar una regla de vínculos a prueba de errores en PowerShell, use esta sintaxis:
+
+```PowerShell
+<Enable-SafeLinksRule | Disable-SafeLinksRule> -Identity "<RuleName>"
+```
+
+En este ejemplo se deshabilita la regla de vínculos a prueba de errores denominada Marketing Department.
+
+```PowerShell
+Disable-SafeLinksRule -Identity "Marketing Department"
+```
+
+Este ejemplo habilita la misma regla.
+
+```PowerShell
+Enable-SafeLinksRule -Identity "Marketing Department"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) y [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).
+
+### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>Usar PowerShell para establecer la prioridad de las reglas de vínculos a prueba de errores
+
+El valor de prioridad máximo que se puede establecer en una regla es 0. El valor mínimo que se puede establecer depende del número de reglas. Por ejemplo, si tiene cinco reglas, puede usar los valores de prioridad del 0 al 4. El cambio de prioridad de una regla existente puede tener un efecto cascada en otras reglas. Por ejemplo, si tiene cinco reglas personalizadas (prioridades del 0 al 4) y cambia la prioridad de una regla a 2, la regla existente de prioridad 2 cambia a prioridad 3 y la regla de prioridad 3 cambia a prioridad 4.
+
+Para establecer la prioridad de una regla de vínculos seguros en PowerShell, use la sintaxis siguiente:
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
+```
+
+Este ejemplo establece la prioridad de la regla denominada Marketing Department en 2. Todas las reglas existentes que tienen una prioridad menor o igual a 2 se reducen en 1 (sus números de prioridad aumentan en 1).
+
+```PowerShell
+Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
+```
+
+**Nota**: para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-SafeLinksRule** en su lugar.
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
+
+### <a name="use-powershell-to-remove-safe-links-policies"></a>Usar PowerShell para quitar directivas de vínculos a prueba de errores
+
+Cuando se usa PowerShell para quitar una directiva de vínculos seguros, no se quita la regla de vínculos seguros correspondiente.
+
+Para quitar una directiva de vínculos seguros en PowerShell, use esta sintaxis:
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "<PolicyName>"
+```
+
+En este ejemplo se quita la Directiva de vínculos a prueba de errores denominada Marketing Department.
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "Marketing Department"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy).
+
+### <a name="use-powershell-to-remove-safe-links-rules"></a>Usar PowerShell para quitar reglas de vínculos a prueba de errores
+
+Cuando se usa PowerShell para quitar una regla de vínculos seguros, no se quita la Directiva de vínculos seguros correspondiente.
+
+Para quitar una regla de vínculos a prueba de errores en PowerShell, use esta sintaxis:
+
+```PowerShell
+Remove-SafeLinksRule -Identity "<PolicyName>"
+```
+
+En este ejemplo se quita la regla de vínculos a prueba de errores denominada Marketing Department.
+
+```PowerShell
+Remove-SafeLinksRule -Identity "Marketing Department"
+```
+
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule).
+
+Para comprobar que vínculos seguros está examinando los mensajes, consulte los informes de protección contra amenazas avanzada disponibles. Para obtener más información, consulte [View Reports for Office 365 ATP](view-reports-for-atp.md) and [use Explorer en el centro de seguridad & cumplimiento](threat-explorer.md).
+
+## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
+
+Para comprobar que las directivas de vínculos seguros se crearon, modificaron o quitaron correctamente, siga uno de estos pasos:
+
+- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**. Compruebe la lista de directivas, sus valores de **Estado** y sus valores de **prioridad** . Para ver más detalles, seleccione la Directiva de la lista y vea los detalles en la lista desplegable.
+
+- En PowerShell de Exchange Online PowerShell o Exchange Online Protection, reemplace \<Name\> por el nombre de la Directiva o regla, ejecute el siguiente comando y Compruebe la configuración:
+
+  ```PowerShell
+  Get-SafeLinksPolicy -Identity "<Name>"
+  ```
+
+  ```PowerShell
+  Get-SafeLinksRule -Identity "<Name>"
+  ```

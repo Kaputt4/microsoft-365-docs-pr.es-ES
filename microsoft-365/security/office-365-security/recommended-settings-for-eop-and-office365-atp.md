@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202716"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328034"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EOP)** es el núcleo de la seguridad de las suscripciones de Microsoft 365 y ayuda a que los mensajes malintencionados lleguen a las bandejas de entrada de sus empleados. Pero con los nuevos y sofisticados ataques emergentes cada día, las protecciones mejoradas suelen ser necesarias. **Office 365 Advanced Threat Protection (ATP)** El plan 1 de ATP o el plan ATP 2 contienen características adicionales que ofrecen más niveles de seguridad, control e investigación a los administradores.
 
@@ -153,7 +152,7 @@ Office 365 ATP incluye directivas de datos adjuntos seguros y vínculos seguros 
 
 Si ha agregado una suscripción de ATP de Office 365 a su EOP, establezca las siguientes configuraciones.
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Configuración de la Directiva contra phishing de ATP de Office
+### <a name="atp-anti-phishing-policy-settings"></a>Configuración de la Directiva contra phishing de ATP
 
 Los clientes de EOP obtienen contra la suplantación de identidad (phishing) básica como se describió anteriormente, pero Office 365 ATP incluye más características y control para ayudar a prevenir, detectar y corregir los ataques. Para crear y configurar estas directivas, consulte [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -203,27 +202,31 @@ Para obtener más información sobre esta configuración, consulte [umbrales de 
 |---|---|---|---|
 |**Umbrales de suplantación de identidad avanzada** <br/><br/> _PhishThresholdLevel_|**2-agresivo** <br/><br/> `2`|**3-más agresivo** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>Configuración de directiva de vínculos seguros de ATP
+### <a name="safe-links-settings"></a>Configuración de vínculos seguros
 
-Para configurar estas opciones, consulte [configurar las directivas de vínculos seguros de Office 365 ATP](set-up-atp-safe-links-policies.md).
+Vínculos seguros en Office 365 ATP incluye la configuración global que se aplica a todos los usuarios incluidos en las directivas de vínculos seguros activos y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, vea [vínculos seguros en Office 365 ATP](atp-safe-links.md).
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>Configuración de directiva de vínculos seguros en la directiva predeterminada para todos los usuarios
+#### <a name="global-settings-for-safe-links"></a>Configuración global para vínculos seguros
 
-**Nota**: en PowerShell, use el cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) para estas opciones.
+Para configurar estas opciones, consulte [Configure global Settings for Safe links in Office 365 ATP](configure-global-settings-for-safe-links.md).
+
+En PowerShell, use el cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) para estas opciones de configuración.
 
 ****
 
 |Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
-|**Usar vínculos seguros en: aplicaciones de Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Use vínculos seguros de ATP en clientes de escritorio y móviles de Office 365 (iOS y Android).|
-|**Usar vínculos seguros en: Utilidades para Office Web Access** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Use vínculos seguros de ATP en Office Web Apps. Tenga en cuenta que esta opción no se puede configurar.|
-|**No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros** <br/><br/> _TrackClicks_|Desactivado <br/><br/> `$true`|Desactivado <br/><br/> `$true`||
-|**No permitir que los usuarios hagan clic en los vínculos seguros a la dirección URL original** <br/><br/> _AllowClickThrough_|Activado <br/><br/> `$false`|Activado <br/><br/> `$false`||
+|**Usar vínculos seguros en: aplicaciones de Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Use vínculos seguros de ATP en aplicaciones compatibles con Office 365 Desktop y Mobile (iOS y Android). Para obtener más información, vea [configuración de vínculos seguros para aplicaciones de Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
+|**No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros** <br/><br/> _TrackClicks_|Desactivado <br/><br/> `$true`|Desactivado <br/><br/> `$true`|Esta configuración está relacionada con el seguimiento de clics de usuario en aplicaciones de Office 365 compatibles.|
+|**No permitir que los usuarios hagan clic en los vínculos seguros a la dirección URL original** <br/><br/> _AllowClickThrough_|Activado <br/><br/> `$false`|Activado <br/><br/> `$false`|Esta configuración está relacionada con hacer clic en para en las aplicaciones de Office 365 compatibles.|
+|Usar vínculos seguros en: Utilidades para Office Web Access <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Use vínculos seguros en Office Web Apps. Tenga en cuenta que esta opción no se puede configurar.|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Configuración de directiva de vínculos seguros en directivas personalizadas para usuarios específicos
+#### <a name="safe-links-policy-settings"></a>Configuración de directiva de vínculos seguros
 
-**Nota**: en PowerShell, use los cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) y [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
+Para configurar estas opciones, consulte [configurar directivas de vínculos seguros en Office 365 ATP](set-up-atp-safe-links-policies.md).
+
+En PowerShell, se usan los cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) y [set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
 
 ****
 
@@ -238,13 +241,15 @@ Para configurar estas opciones, consulte [configurar las directivas de vínculos
 |**No permitir que los usuarios hagan clic en los vínculos seguros a la dirección URL original** <br/><br/> _DoNotAllowClickThrough_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>Configuración de directiva de datos adjuntos seguros de ATP
+### <a name="safe-attachments-settings"></a>Configuración de datos adjuntos seguros
 
-Para configurar estas opciones, consulte [configurar las directivas de datos adjuntos seguros de Office 365 ATP](set-up-atp-safe-attachments-policies.md).
+Datos adjuntos seguros en Office 365 ATP incluye la configuración global que se aplica a todos los usuarios incluidos en las directivas de datos adjuntos seguros activos y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, consulte [datos adjuntos seguros en Office 365 ATP](atp-safe-attachments.md).
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>Configuración de la Directiva de datos adjuntos seguros en la directiva predeterminada para todos los usuarios
+#### <a name="global-settings-for-safe-attachments"></a>Configuración global de datos adjuntos seguros
 
-**Nota**: en PowerShell, use el cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) para estas opciones.
+Para configurar estas opciones, consulte [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) y [documentos seguros en Microsoft 365 E5](safe-docs.md).
+
+En PowerShell, use el cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) para estas opciones de configuración.
 
 ****
 
@@ -252,12 +257,14 @@ Para configurar estas opciones, consulte [configurar las directivas de datos adj
 |---|---|---|---|
 |**Activar ATP para SharePoint, OneDrive y Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
 |**Activar documentos seguros para clientes de Office**<bt/><br/> _EnableSafeDocs_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||Esta configuración solo está disponible con las licencias de seguridad de Microsoft 365 E5 o Microsoft 365 E5. Para obtener más información, vea [documentos seguros en Office 365 Advanced Threat Protection](safe-docs.md).|
-|**Permitir que los usuarios haga clic a través de la vista protegida, incluso si los documentos seguros identificaron el archivo como malintencionado**<bt/><br/> _AllowSafeDocsOpen_|Desactivado <br/><br/> `$false`|Desactivado <br/><br/> `$false`||
+|**Permitir que los usuarios haga clic a través de la vista protegida, incluso si los documentos seguros identificaron el archivo como malintencionado**<bt/><br/> _AllowSafeDocsOpen_|Desactivado <br/><br/> `$false`|Desactivado <br/><br/> `$false`|Esta configuración está relacionada con documentos seguros.|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Configuración de la Directiva de datos adjuntos seguros en directivas personalizadas para usuarios específicos
+#### <a name="safe-attachments-policy-settings"></a>Configuración de la Directiva de datos adjuntos seguros
 
-**Nota**: en PowerShell, use los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) y [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
+Para configurar estas opciones, consulte [configurar directivas de datos adjuntos seguros en Office 365 ATP](set-up-atp-safe-attachments-policies.md).
+
+En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) y [set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
 
 ****
 

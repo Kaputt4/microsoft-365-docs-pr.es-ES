@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integre el servidor de SIEM de su organización con la protección contra amenazas avanzada de Office 365 y eventos de amenazas relacionados en la API de administración de actividad de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203660"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327170"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Integración de SIEM con la protección contra amenazas avanzada
 
@@ -46,17 +46,16 @@ Recientemente, los eventos de las capacidades automatizadas de investigación y 
 
 El servidor de SIEM o un sistema similar sondea la **auditoría.** carga de trabajo general para obtener acceso a los eventos de detección. Para obtener más información, vea Introducción [a las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType - Tipo: Edm.Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
 En la siguiente tabla se resumen los valores de **AuditLogRecordType** relevantes para los eventos de ATP de Office 365:
 
-|Valor|Nombre del miembro|Descripción|
+|Valor|Nombre del miembro|Description|
 |---|---|---|
 |28|ThreatIntelligence|Eventos de suplantación de identidad y malware de Exchange Online Protection y Office 365 ATP.|
-|41|ThreatIntelligenceUrl|Vínculos seguros ATP tiempo de bloqueo y bloqueo de eventos de invalidación de ATP de Office 365.|
+|41|ThreatIntelligenceUrl|Vínculos seguros eventos de invalidación de tiempo de bloqueo y bloqueo de la ATP de Office 365.|
 |47|ThreatIntelligenceAtpContent|Eventos de suplantación de identidad y malware para archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams desde Office 365 ATP.|
 |64|AirInvestigation|Investigación automatizada y eventos de respuesta, como detalles de investigación y artefactos relevantes, de Office 365 ATP plan 2.|
 |

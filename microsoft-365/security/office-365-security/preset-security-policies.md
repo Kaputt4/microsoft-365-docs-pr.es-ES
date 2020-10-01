@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202608"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326548"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Directivas de seguridad preestablecidas en EOP y Office 365 ATP
 
@@ -75,9 +75,9 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [Directivas de vínculos a prueba](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) de errores denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**.
+  - [Directivas de vínculos a prueba](set-up-atp-safe-links-policies.md) de errores denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**.
 
-  - [Directivas de datos adjuntos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users) denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**.
+  - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**.
 
 Tenga en cuenta que puede aplicar protecciones de EOP a diferentes usuarios que las protecciones de ATP.
 

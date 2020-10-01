@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203484"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326596"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
 
@@ -129,7 +129,7 @@ Las propiedades de la campaña disponibles se describen en la siguiente lista:
   - **Remitente**
   - **Destinatarios**
   - **Dominio del remitente**
-  - **Asunto**
+  - **Subject**
   - **Nombres de archivos adjuntos**
   - **Familia de malware**
   - **Acción de entrega**
@@ -137,7 +137,7 @@ Las propiedades de la campaña disponibles se describen en la siguiente lista:
   - **Tags**
   - **Invalidaciones del sistema**
 
-- Opciones avanzadas
+- Advanced
 
   - **Identificador del mensaje de Internet**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
   
@@ -221,7 +221,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Descripción|
+  |Valor|Veredicto de filtro de correo no deseado|Description|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, un mensaje se marcó como no correo no deseado mediante una regla de flujo de correo (también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, por una regla de flujo de correo.|
@@ -232,7 +232,7 @@ El diagrama contiene la información siguiente:
   |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
   |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros del usuario.|
   |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados del usuario.|
-  |**ZAP**|n/a|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta de correo electrónico no deseado o a la cuarentena. La acción se configura en la Directiva contra correo no deseado.|
+  |**ZAP**|No aplicable|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta de correo electrónico no deseado o a la cuarentena. La acción se configura en la Directiva contra correo no deseado.|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
@@ -264,9 +264,9 @@ Si un usuario hace clic en la dirección URL de carga en el mensaje de suplantac
 
 - **Permitido**
 
-- **BlockPage**: el destinatario hizo clic en la dirección URL de carga, pero el acceso al sitio Web malintencionado fue bloqueado por las directivas de [vínculos seguros de ATP](atp-safe-links.md) en su organización.
+- **BlockPage**: el destinatario hizo clic en la dirección URL de carga, pero su acceso al sitio Web malintencionado fue bloqueado por una directiva de [vínculos seguros](atp-safe-links.md) en su organización.
 
-- **BlockPageOverride**: el destinatario hizo clic en la dirección URL de carga en el mensaje, los vínculos seguros de ATP intentaron detenerlos, pero se permitió invalidar el bloque. Revise sus [directivas de vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar con el sitio Web malintencionado.
+- **BlockPageOverride**: el destinatario hizo clic en la dirección URL de carga en el mensaje, los vínculos seguros intentaron detenerlos, pero podían invalidar el bloque. Revise sus [directivas de vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar con el sitio Web malintencionado.
 
 - **PendingDetonationPage**: datos adjuntos seguros en Office 365 ATP está en proceso de abrir y investigar la dirección URL de carga en un entorno de equipo virtual.
 

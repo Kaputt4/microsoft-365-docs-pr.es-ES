@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,20 +23,22 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Aprenda a administrar el servicio de identidad de usuario de Azure AD en Microsoft 365 usando modelos de identidad híbrido o solo de nube.
-ms.openlocfilehash: d91e14f678e487365805b024e4025e9a39db0c2c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6b5b80584408671a1925e32df1fbf458b7c16139
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694206"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327956"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelos de identidad de Microsoft 365 y Azure Active Directory
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Microsoft 365 usa Azure Active Directory (Azure AD), una identidad de usuario basada en la nube y un servicio de autenticación que se incluye con la suscripción a Microsoft 365, para administrar las identidades y la autenticación de Microsoft 365. La obtención de una infraestructura de identidad configurada correctamente es vital para administrar el acceso y los permisos de usuario de Microsoft 365 para la organización.
 
 Antes de empezar, vea este vídeo para obtener una introducción a los modelos de identidad y autenticación de Microsoft 365.
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -58,7 +60,7 @@ Estos son los dos tipos de identidad y sus mejores ventajas y ventajas.
 
 ## <a name="cloud-only-identity"></a>Identidad solo de nube
 
-Una identidad de solo nube usa cuentas de usuario que solo existen en Azure AD. La identidad de nube suele usarse en organizaciones pequeñas que no tienen servidores locales o que no usan AD DS para administrar identidades locales. 
+Una identidad de solo nube usa cuentas de usuario que solo existen en Azure AD. La identidad solo de nube suele usarse en organizaciones pequeñas que no tienen servidores locales o que no usan AD DS para administrar identidades locales. 
 
 Estos son los componentes básicos de la identidad solo de la nube.
  
@@ -67,7 +69,7 @@ Estos son los componentes básicos de la identidad solo de la nube.
 Los usuarios locales y remotos (en línea) usan sus cuentas de usuario y contraseñas de Azure AD para acceder a los servicios en la nube de Microsoft 365. Azure AD autentica las credenciales de usuario en función de sus cuentas de usuario y contraseñas almacenadas.
 
 ### <a name="administration"></a>Administración
-Como las cuentas de usuario se almacenan solo en Azure AD, se administran las identidades de nube con herramientas como el [centro de administración de Microsoft 365](https://admin.microsoft.com) y [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
+Como las cuentas de usuario se almacenan solo en Azure AD, se administran las identidades de nube con herramientas como el [centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/) y [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
 
 ## <a name="hybrid-identity"></a>Identidad híbrida
 
@@ -89,7 +91,7 @@ El inquilino de Azure AD tiene una copia de las cuentas de AD DS. En esta config
 
 ### <a name="administration"></a>Administración
 
-Debido a que las cuentas de usuario originales y autorizadas se almacenan en AD DS local, administra las identidades con las mismas herramientas que AD DS, como la herramienta usuarios y equipos de Active Directory. 
+Dado que las cuentas de usuario originales y autorizadas se almacenan en AD DS local, las identidades se administran con las mismas herramientas que la administración de AD DS. 
 
 No usa el centro de administración de Microsoft 365 o PowerShell para Microsoft 365 para administrar cuentas de usuario sincronizadas en Azure AD.
 
@@ -100,6 +102,6 @@ Si necesita el modelo de identidad solo de la nube, consulte [identidad solo de 
 Si necesita el modelo de identidad híbrida, consulte [Hybrid Identity](plan-for-directory-synchronization.md).
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
