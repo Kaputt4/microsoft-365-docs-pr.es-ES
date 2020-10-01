@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245907"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318181"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -113,7 +113,7 @@ Con las directivas de cumplimiento de la comunicación, puede elegir analizar lo
     - **Para las comunicaciones de chat de Microsoft Teams con entornos de correo electrónico híbridos**: el cumplimiento de la comunicación puede supervisar los mensajes de chat para los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para los usuarios con buzones locales o externos para supervisar. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de **usuarios y grupos supervisados** en el Asistente para directivas.
 
     >[!IMPORTANT]
-    >Debe archivar una solicitud con soporte técnico de Microsoft para permitir que su organización use la interfaz gráfica de usuario del centro de seguridad & cumplimiento para buscar los datos de chat de Microsoft Teams para los usuarios locales. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+    >Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams en los buzones de correo basados en la nube para los usuarios locales.
 
@@ -194,7 +194,7 @@ Para obtener información acerca de los clasificadores que se capacitan en Micro
 ### <a name="conditional-settings"></a>Configuración condicional
 <a name="ConditionalSettings"> </a>
 
-Las condiciones que elija para la Directiva se aplican a las comunicaciones de los orígenes de correo electrónico y de terceros de la organización (por ejemplo, Bloomberg o DropBox instantánea).
+Las condiciones que elija para la Directiva se aplican a las comunicaciones de los orígenes de correo electrónico y de terceros de la organización (como de un Bloomberg instantáneo).
 
 La siguiente tabla explica más sobre cada condición.
   

@@ -1,5 +1,5 @@
 ---
-title: Obtener información sobre los clasificadores capacitados (versión preliminar)
+title: Obtenga información sobre los clasificadores entrenables (versión preliminar)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 9a628eec748681e0a22911bf7cf3774895b10ead
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 8b086690faba23e1331e02d8844503c44e7617c0
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132393"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322193"
 ---
 # <a name="learn-about-classifiers-preview"></a>Obtener información sobre los clasificadores (versión preliminar)
 
@@ -75,10 +75,8 @@ Microsoft 365 incluye cinco clasificadores preparados previamente:
     - +
     - Clojure
     - CoffeeScript
-    - CSS
     - Ir
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua
