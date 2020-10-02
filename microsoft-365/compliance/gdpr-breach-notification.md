@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 9e7853fb44cc9ccd8c233cc2fee71eaef91a5c1c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415884"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305184"
 ---
 # <a name="gdpr-breach-notification"></a>Notificación de incumplimiento del RGPD
 
@@ -45,9 +45,9 @@ Definiciones útiles de los términos del RGPD utilizados en este documento:
 
 En Microsoft nos tomamos muy en serio nuestras obligaciones relativas al Reglamento general de protección de datos (RGPD). Un incidente de seguridad o vulneración de datos consiste en eventos como el acceso ilícito a los datos de los clientes almacenados en el equipo de Microsoft o en las instalaciones de Microsoft, o el acceso no autorizado a los mismos, que puede resultar en la pérdida, divulgación o alteración de los datos del cliente.
 
-Al ser un procesador de datos, Microsoft garantiza que los clientes de servicios pueden cumplir los requisitos de notificación de incumplimiento del RGPD como controladores de datos. Nuestra notificación proporciona la información necesaria para realizar la valoración. Microsoft informa a los clientes de cualquier vulneración de datos personales, excepto los casos en los que se confirma que los datos personales son ininteligibles (por ejemplo, datos cifrados en los que se confirma la integridad de las claves).
+Al ser un procesador de datos, Microsoft garantiza que los clientes de servicios pueden cumplir los requisitos de notificación de infracción del RGPD como controladores de datos. Nuestra notificación proporciona la información necesaria para realizar la valoración. Microsoft informa a los clientes de cualquier vulneración de datos personales, excepto los casos en los que se confirma que los datos personales son ininteligibles (por ejemplo, datos cifrados en los que se confirma la integridad de las claves).
 
-Los controladores de datos son responsables de evaluar los riesgos relacionados con la privacidad de los datos y determinar si una vulneración requiere la notificación a la DPA de un cliente. Para realizar esa valoración, Microsoft proporciona la información necesaria, junto con su directiva de cumplimiento del RGPD.
+Los controladores de datos son responsables de evaluar los riesgos para la privacidad de los datos y determinar si una infracción requiere la notificación de la DPA de un cliente. Para realizar esa valoración, Microsoft proporciona la información necesaria, junto con su directiva de cumplimiento del RGPD.
 
 La notificación inicial incluye una descripción de la naturaleza de la vulneración, el impacto aproximado del usuario y los pasos de mitigación (si procede). Si nuestra investigación no se completa en el momento de la notificación inicial, se indicarán los pasos y las escalas de tiempo para las comunicaciones subsiguientes. Para obtener más información sobre cómo Microsoft detecta y responde ante una vulneración de datos personales, vea [Notificación de vulneraciones de datos según el RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) en el Portal de confianza del servicio.
 
