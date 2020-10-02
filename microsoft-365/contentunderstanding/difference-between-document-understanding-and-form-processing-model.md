@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Describe las diferencias clave entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: c5d60753e84cb55dc088b79f90fe841b50da1836
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333877"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338604"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 
@@ -68,10 +68,10 @@ Actualmente, los modelos de procesamiento de formularios solo se pueden aplicar 
  ## <a name="see-also"></a>Consulte también
 [Aprendizaje: mejorar el rendimiento empresarial con AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[Crear un clasificador](create-a-classifier.md)
 
-[Crear un extractor de datos](create-an-extractor.md)
 
-[Aplicar modelos de comprensión mediante documentos](apply-a-model.md)
+[Información general sobre la comprensión mediante documentos](document-understanding-overview.md)
 
-[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)
+[Información general sobre el procesamiento de formularios](form-processing-overview.md)
+
+[Introducción a SharePoint Syntex](index.md)

@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mig
+- m365initiative-compliance
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198945"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338389"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -60,16 +62,17 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 
 |Quiero...|Documentación|
 |----------------|---------------|
-|Establecer de forma eficiente las acciones de conservación y de eliminación en la organización, o bien por el servicio de Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupos de Microsoft 365 <br />- Skype Empresarial  <br />- Microsoft Teams <br />- Red de Yammer |[Crear y configurar directivas de retención](create-retention-policies.md)|
-|Permitir a los administradores y usuarios aplicar manualmente un conjunto de acciones de conservación y de eliminación de documentos y mensajes de correo electrónico: <br />- SharePoint <br />- OneDrive <br />- Outlook y Outlook en la Web|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
-|Permitir a los administradores del sitio aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
-|Permitir a los usuarios aplicar una etiqueta de retención automáticamente a los mensajes de correo electrónico mediante reglas de Outlook|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
-|Aplicar manualmente un conjunto de acciones de conservación y de eliminación a documentos y mensajes de correo electrónico |[Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)|
+|Establezca eficientemente las acciones de retención y eliminación en el servicio Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupos de Microsoft 365 <br />- Skype Empresarial  <br />- Microsoft Teams <br />- Red de Yammer |[Crear y configurar directivas de retención](create-retention-policies.md)|
+|Permitir que los administradores y usuarios apliquen de forma manual acciones de retención y eliminación de documentos y mensajes de correo electrónico: <br />- SharePoint <br />- OneDrive <br />- Outlook y Outlook en la Web|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permita que los administradores del sitio establezcan acciones predeterminadas de retención y eliminación para todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permita a los usuarios aplicar automáticamente acciones de retención y eliminación a los correos electrónicos mediante el uso de las reglas de Outlook|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permitir a los administradores aplicar acciones de retención y eliminación en un documento con información sobre el modelo, para que sean aplicado automáticamente a los documentos identificados en una biblioteca de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Aplicar acciones de retención y eliminación automáticamente a documentos y mensajes de correo electrónico |[Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)|
 |Inicie el período de retención cuando tenga lugar un evento, por ejemplo, cuando:  <br />- Algún empleado abandone la organización <br />- Algún contrato expire <br />- Finalice la duración de un producto| [Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
 |Administrar el ciclo de vida de los distintos tipos de documentos en SharePoint| [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md)|
 |Cumplir con la norma 17a-4 de la SEC|[Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |
-| Supervisar cómo y dónde se aplican las etiquetas de retención | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |
+|Asegúrese de que alguien revisa y aprueba para que el contenido se elimine permanentemente al final de su período de retención.|[Revisiones para eliminación](disposition.md#disposition-reviews) |
+| Supervise cómo y cuándo se aplican las opciones de conservar y eliminar la configuración de los elementos | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |
 |Utilice una única solución de administración de registros para documentos y mensajes de correo electrónico |[Más información sobre la administración de registros](records-management.md) |
 
 Si usa etiquetas de retención para la administración de registros, hay escenarios adicionales que son únicos para las etiquetas de retención que marcan el contenido como un registro. Consulte [Escenarios comunes para la administración de registros](get-started-with-records-management.md#common-scenarios-for-records-management).
