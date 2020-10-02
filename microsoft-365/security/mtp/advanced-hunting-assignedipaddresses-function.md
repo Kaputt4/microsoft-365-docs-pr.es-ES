@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ea6b65e5e6d676c5efb2622193197bae5b9ba1b2
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198252"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338550"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48198252"
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-Use la `AssignedIPAddresses()` función para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo. Si especifica un argumento timestamp, esta función obtiene las direcciones IP más recientes a la hora especificada. 
+Use la `AssignedIPAddresses()` función en las consultas de [búsqueda avanzada](advanced-hunting-overview.md) para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo. Si especifica un argumento timestamp, esta función obtiene las direcciones IP más recientes a la hora especificada. 
 
 Esta función devuelve una tabla con las siguientes columnas:
 

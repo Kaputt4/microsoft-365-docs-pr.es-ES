@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196982"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338422"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -34,7 +34,7 @@ ms.locfileid: "48196982"
 
 La `FileProfile()` función es una función de enriquecimiento de la [búsqueda avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
 
-| Columna | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Description |
 |------------|-------------|-------------|
 | SHA1 | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | SHA256 | string | SHA-256 del archivo al que se aplicó la acción grabada |
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x** — columna de identificador de archivo que se debe usar: `SHA1` , `SHA256` `InitiatingProcessSHA1` o `InitiatingProcessSHA256` ; la función usa `SHA1` si no se especifica
-- **y** : límite para el número de registros para enriquecer, 1-1000; la función usa 100 si no se especifica
+- **x**— columna de identificador de archivo que se debe usar: `SHA1` ,, `SHA256` `InitiatingProcessSHA1` o `InitiatingProcessSHA256` ; la función usa `SHA1` si no se especifica
+- **y**: límite para el número de registros para enriquecer, 1-1000; la función usa 100 si no se especifica
 
 ## <a name="examples"></a>Ejemplos
 

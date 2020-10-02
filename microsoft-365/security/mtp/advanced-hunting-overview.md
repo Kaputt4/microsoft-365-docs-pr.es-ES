@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b7e20daa3a5d642a864f9b24e836d3c75bbd7b1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8e586050465464def02c7787a5fb218b0b6071c7
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199858"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338478"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -40,17 +40,24 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para comprobar y, a continuación, responder a la actividad de infracciones, máquinas mal configuradas y otras conclusiones.
 
-Esta funcionalidad es similar a la [búsqueda avanzada en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible en el centro de seguridad 365 de Microsoft, esta función admite consultas que comprueban un conjunto de datos más amplio de Microsoft defender ATP, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
+Esta funcionalidad es similar a la [búsqueda avanzada en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview). Disponible en el centro de seguridad 365 de Microsoft, esta función admite consultas que comprueban un conjunto de datos más amplio desde:
+
+- Protección contra amenazas avanzada de Microsoft Defender
+- Protección contra amenazas avanzada de Office 365
+- Microsoft Cloud App Security
+- Azure Advanced Threat Protection
+
+Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 
-Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamente con la búsqueda avanzada.
+Le recomendamos que siga varios pasos para empezar rápidamente con la búsqueda avanzada.
 
 | Objetivo de aprendizaje | Descripción | Recurso |
 |--|--|--|
 | **Obtener información sobre el idioma** | La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/)y admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
 | **Obtener información sobre cómo usar los resultados de la consulta** | Obtenga información sobre los gráficos y las distintas formas en que puede ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas, profundizar para obtener información más enriquecida y tomar medidas de respuesta. | - [Trabajar con los resultados de la consulta](advanced-hunting-query-results.md)<br>- [Realizar acciones en los resultados de la consulta](advanced-hunting-take-action.md) |
-| **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear consultas. | [Referencia del esquema](advanced-hunting-schema-tables.md) |
+| **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Obtenga información sobre dónde buscar datos al crear consultas. | - [Referencia de esquema](advanced-hunting-schema-tables.md)<br>- [Transición de ATP de Microsoft defender](advanced-hunting-migrate-from-mdatp.md) |
 | **Obtener sugerencias y ejemplos de expertos** | Entrenar gratuitamente con las guías de expertos de Microsoft. Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | - [Obtener formación experta](advanced-hunting-expert-training.md)<br>- [Usar consultas compartidas](advanced-hunting-shared-queries.md)<br>- [Ir a la búsqueda](advanced-hunting-go-hunt.md)<br>- [Buscar amenazas en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md) |
 | **Optimizar las consultas y controlar los errores** | Aprenda a crear consultas eficaces y sin errores. | - [Procedimientos recomendados de consulta](advanced-hunting-best-practices.md)<br>- [Controlar errores](advanced-hunting-errors.md) |
 | **Crear reglas de detección personalizadas** | Comprenda cómo puede usar consultas de búsqueda avanzada para desencadenar alertas y realizar acciones de respuesta automáticamente. | - [Información general sobre las detecciones personalizadas](custom-detections-overview.md)<br>- [Reglas de detección personalizadas](custom-detection-rules.md) |
@@ -62,7 +69,7 @@ Para usar la búsqueda avanzada u otras capacidades de [Microsoft Threat Protect
 Los datos de búsqueda avanzada pueden clasificarse en dos tipos distintos, cada uno de ellos consolidado de manera diferente.
 
 - **Datos de eventos o actividades**: se rellenan tablas sobre alertas, eventos de seguridad, eventos del sistema y evaluaciones rutinarias. La búsqueda avanzada recibe estos datos casi inmediatamente después de que los sensores que los recopilan los transmitan correctamente a los servicios en la nube correspondientes. Por ejemplo, puede consultar los datos de eventos de sensores saludables en estaciones de trabajo o controladores de dominio casi inmediatamente después de que estén disponibles en Microsoft defender ATP y Azure ATP.
-- **Datos de entidad**: rellena tablas con información consolidada acerca de los usuarios y los dispositivos. Estos datos proceden de orígenes de datos relativamente estáticos y dinámicos, como las entradas de Active Directory y los registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que puede que no se llenen completamente. Cada 24 horas, los datos se consolidan para insertar un registro que contenga el conjunto de datos más reciente y completo sobre cada entidad.
+- **Datos de entidad**: rellena tablas con información acerca de los usuarios y los dispositivos. Estos datos proceden de orígenes de datos relativamente estáticos y dinámicos, como las entradas de Active Directory y los registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan con cualquier información nueva cada 15 minutos, agregando filas que puede que no se llenen completamente. Cada 24 horas, los datos se consolidan para insertar un registro que contenga el conjunto de datos más reciente y completo sobre cada entidad.
 
 ## <a name="time-zone"></a>Zona horaria
 La información de hora de la búsqueda avanzada está en la zona horaria UTC.

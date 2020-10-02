@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos.
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200589"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338433"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -86,7 +86,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
 
   - Flujo de correo
 
-  - Permissions
+  - Permisos
 
   - Administración de amenazas
 
@@ -109,13 +109,14 @@ En la tabla siguiente se enumeran y describen las directivas de alertas predeter
 
 La tabla también indica el plan Office 365 Enterprise y Office 365 US Government, que se requiere para cada uno. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción complementaria correspondiente además de una suscripción a E1/F1/G1 o E3/G3.
 
-|**Directiva de alertas predeterminada**|**Descripción**|**Category**|**Suscripción de Office 365 Enterprise**|
+| Directiva de alertas predeterminada | Descripción | Categoría | Suscripción de Office 365 Enterprise |
 |:-----|:-----|:-----|:-----|
 |**Se ha detectado un clic en una dirección URL potencialmente malintencionada**|Genera una alerta cuando un usuario protege a un usuario mediante [vínculos seguros de ATP de Office 365](../security/office-365-security/atp-safe-links.md) en su organización y hace clic en un vínculo malintencionado. Este evento se desencadena cuando Office 365 ATP identifica los cambios en la dirección URL o cuando los usuarios invalidan las páginas de vínculos seguros de ATP de Office 365 (en función de la Directiva de vínculos seguros de Microsoft 365 para empresas ATP de su organización). Esta directiva de alerta tiene una configuración de gravedad **alta** . Para Office 365 ATP P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Para obtener más información sobre los eventos que desencadenan esta alerta, consulte [configurar las directivas de vínculos seguros de Office 365 ATP](../security/office-365-security/set-up-atp-safe-links-policies.md).|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Resultado de envío de administración completado**|Genera una alerta cuando un [envío del administrador](../security/office-365-security/admin-submission.md) completa el nuevo análisis de la entidad enviada. Se desencadenará una alerta cada vez que se represente un resultado de nuevo análisis a partir de un envío de administración. Estas alertas están destinadas a recordarle que debe [revisar los resultados de](https://protection.office.com/reportsubmission)los envíos anteriores, enviar mensajes de usuario notificados para obtener la comprobación de la directiva más reciente y volver a examinar los veredictos, y determinar si las directivas de filtrado de su organización tienen el impacto previsto. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|E1/F1, E3 o E5|
+|**El administrador ha activado la investigación manual del correo electrónico**|Genera una alerta cuando un administrador desencadena la investigación manual de un correo electrónico desde el explorador de amenazas. Para obtener más información, consulte [ejemplo: un administrador de seguridad desencadena una investigación desde el explorador de amenazas] ( https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) . Esta alerta notifica a su organización que se ha iniciado la investigación. La alerta proporciona información sobre quién la ha desencadenado e incluye un vínculo a la investigación. Esta directiva tiene una configuración de gravedad **informativa** .|Administración de amenazas| Suscripción complementaria E5/G5 o la P2 de Office 365 ATP| 
 |**Creación de una regla de reenvío/redireccionamiento**|Genera una alerta cuando una persona de la organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige los mensajes a otra cuenta de correo electrónico. Esta directiva solo realiza un seguimiento de las reglas de la bandeja de entrada que se crean con Outlook en la web (anteriormente conocido como Outlook Web App) o Exchange Online PowerShell. Esta directiva tiene una configuración de gravedad **baja** . Para obtener más información sobre el uso de reglas de la bandeja de entrada para reenviar y redirigir correo electrónico en Outlook en la web, vea [usar reglas en Outlook en la web para reenviar mensajes automáticamente a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
 |**búsqueda de exhibición de documentos electrónicos iniciada o exportada**|Genera una alerta cuando alguien usa la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento. Se desencadena una alerta cuando se realizan las siguientes actividades de búsqueda de contenido: <br/><br/>* Se inicia una búsqueda de contenido<br/>* Se exportan los resultados de una búsqueda de contenido<br/>* Se exporta un informe de búsqueda de contenido<br/><br/>También se desencadenan alertas cuando las actividades de búsqueda de contenido anteriores se realizan en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una configuración de gravedad **media** . Para obtener más información acerca de las actividades de búsqueda de contenido, vea [buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
-|**Privilegio de administración de elevación de Exchange**|Genera una alerta cuando se asignan permisos administrativos a un usuario en la organización de Exchange Online. Por ejemplo, cuando se agrega un usuario al grupo de funciones de administración de la organización en Exchange Online. Esta directiva tiene una configuración de gravedad **baja** .|Permissions|E1/F1/G1, E3/G3 o E5/G5|
+|**Privilegio de administración de elevación de Exchange**|Genera una alerta cuando se asignan permisos administrativos a un usuario en la organización de Exchange Online. Por ejemplo, cuando se agrega un usuario al grupo de funciones de administración de la organización en Exchange Online. Esta directiva tiene una configuración de gravedad **baja** .|Permisos|E1/F1/G1, E3/G3 o E5/G5|
 |**Mensajes de correo electrónico que contienen malware quitados después de la entrega**|Genera una alerta cuando se entregan mensajes con malware a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo de Exchange online mediante la [purga automática de cero horas](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una configuración de gravedad **informativa** y desencadena automáticamente [investigación y respuesta automatizada en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega**|Genera una alerta cuando se entregan mensajes con phish a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo de Exchange online mediante la [purga automática de cero horas](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una configuración de gravedad **informativa** y desencadena automáticamente [investigación y respuesta automatizada en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Correo electrónico notificado por el usuario como malware o phish**|Genera una alerta cuando los usuarios de la organización informen de mensajes como correo electrónico de suplantación de identidad mediante el complemento de mensajes de informe. Esta directiva tiene una configuración de gravedad **informativa** . Para obtener más información sobre este complemento, vea [use the Report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Para Office 365 ATP P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
@@ -205,7 +206,7 @@ En la siguiente tabla se enumeran las funciones necesarias para ver las alertas 
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla de la sección [directivas de alertas predeterminadas](#default-alert-policies) .
 
-|Función|Gobierno de la información|Prevención de pérdida de datos|Flujo de correo|Permissions|Administración de amenazas|Otros|
+|Función|Gobierno de la información|Prevención de pérdida de datos|Flujo de correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
@@ -238,17 +239,18 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 |View-Only Retention Management|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**Sugerencia:** Para ver los roles asignados a cada uno de los grupos de roles predeterminados, ejecute los siguientes comandos en el PowerShell del centro de cumplimiento de & de seguridad:
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-También puede ver las funciones asignadas a un grupo de funciones en el centro de seguridad & cumplimiento. Vaya a la página de **permisos** y seleccione un grupo de roles. Los roles asignados se enumeran en la página de flotante.
+> [!TIP]
+> Para ver los roles asignados a cada uno de los grupos de roles predeterminados, ejecute los siguientes comandos en el PowerShell del centro de cumplimiento de & de seguridad:
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> También puede ver las funciones asignadas a un grupo de funciones en el centro de seguridad & cumplimiento. Vaya a la página de **permisos** y seleccione un grupo de roles. Los roles asignados se enumeran en la página de flotante.
 
 ## <a name="managing-alerts"></a>Administración de alertas
 
