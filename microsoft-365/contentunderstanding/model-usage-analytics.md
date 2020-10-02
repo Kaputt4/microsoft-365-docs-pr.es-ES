@@ -9,14 +9,21 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Obtenga información sobre cómo aplicar una etiqueta de retención en un modelo de comprensión mediante documentos
-ms.openlocfilehash: 26e8aea3ef52e9d850dea2f2268858d8367f7408
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321282"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337246"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>Análisis de uso del modelo de comprensión mediante documentos
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+
+</br>
+
 
 El centro de contenido de Microsoft SharePoint Syntex proporciona análisis de uso de modelos para obtener más información sobre cómo se usan los modelos que se publicaron desde el centro de contenido. Esto incluye un resumen de la siguiente información:
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104393"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337186"
 ---
 # <a name="work-with-insights"></a>Trabajar con ideas
 
@@ -31,9 +31,9 @@ Con estos paneles puede encontrar respuestas a preguntas como las siguientes:
 - ¿Cuál es el estado actual de las actualizaciones de seguridad en los dispositivos?
 - ¿Cuánto tiempo tardó el 95% de los dispositivos en estar al día con la actualización de seguridad más reciente?
 
-Para acceder a estas vistas desde el [Administrador de pintada de Microsoft](https://endpoint.microsoft.com/), nvaigate a la ficha escritorio administrado de Microsoft en la página de inicio y seleccione **Ver detalles** en el área **informes** :
+Para obtener acceso a estas vistas desde el [Administrador de extremos de Microsoft](https://endpoint.microsoft.com/), vaya a la ficha escritorio administrado de Microsoft en la Página principal y seleccione **Ver detalles** en el área **informes** :
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>Información sobre el uso
@@ -54,7 +54,6 @@ Esta vista muestra información sobre el consumo de energía de las aplicaciones
 Obtenga más información sobre la información sobre las [baterías](battery-insights.md).
 
 ## <a name="windows-security-update-insights"></a>Información de actualización de seguridad de Windows
-
-Esta vista muestra información sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. Para ver esta información, seleccione la ficha **udates de seguridad de Windows** .
+Esta vista muestra información sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. Para ver esta información, seleccione la pestaña **actualizaciones de seguridad de Windows** .
 
 Obtenga más información sobre [Insights de actualizaciones de seguridad](security-update-insights.md).

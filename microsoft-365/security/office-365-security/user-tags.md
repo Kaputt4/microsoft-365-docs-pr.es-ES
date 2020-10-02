@@ -1,5 +1,5 @@
 ---
-title: Etiquetas de usuario
+title: Etiquetas de usuario en la ATP de Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Oiffce 365 ATP plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Office 365 ATP para identificar rápidamente los usuarios etiquetados.
-ms.openlocfilehash: d47c5c00e3cf0362c44aebc18d11db4bba68a149
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Office 365 ATP plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Office 365 ATP para identificar rápidamente los usuarios etiquetados.
+ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48210035"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337258"
 ---
-# <a name="user-tags-in-the-microsoft-security-center"></a>Etiquetas de usuario en el centro de seguridad de Microsoft
+# <a name="user-tags-in-office-365-atp"></a>Etiquetas de usuario en la ATP de Office 365
 
 Las etiquetas de usuario son identificadores para grupos de usuarios específicos en [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). [Las cuentas de prioridad](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) son un tipo de etiqueta de usuario. Si su organización tiene Office 365 ATP plan 2 (incluido en su suscripción o como complemento), puede crear etiquetas de usuario personalizadas además de usar la etiqueta accounts Priority.
 
@@ -33,11 +33,11 @@ Después de aplicar etiquetas a usuarios específicos, puede usarlas como filtro
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Vistas de campañas](campaigns.md)
 
-En este artículo se explica cómo configurar etiquetas de usuario en el centro de seguridad.
+En este artículo se explica cómo configurar etiquetas de usuario en el centro de seguridad & cumplimiento. No hay cmdlets en el centro de seguridad & cumplimiento para administrar las etiquetas de usuario.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el centro de seguridad en <https://security.microsoft.com/> . Para ir directamente a la página **etiquetas de usuario** , Abra <https://security.microsoft.com/securitysettings/userTags> .
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **etiquetas de usuario** , Abra <https://protection.office.com/userTags> .
 
 - Para crear, modificar o quitar etiquetas de usuario, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -45,7 +45,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Usar el centro de seguridad para crear etiquetas de usuario
 
-1. En el centro de seguridad, vaya a **configuración** \> **correo electrónico &** \> **etiquetas de usuario**de colaboración.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
 
 2. En la página **etiquetas de usuario** que se abre, haga clic en **crear etiqueta**.
 
@@ -79,7 +79,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>Usar el centro de seguridad para ver las etiquetas de usuario
 
-1. En el centro de seguridad, vaya a **configuración** \> **correo electrónico &** \> **etiquetas de usuario**de colaboración.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
 
 2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea ver (no haga clic en la casilla de verificación).
 
@@ -89,7 +89,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>Usar el centro de seguridad para modificar las etiquetas de usuario
 
-1. En el centro de seguridad, vaya a **configuración** \> **correo electrónico &** \> **etiquetas de usuario**de colaboración.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
 
 2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea ver y, a continuación, haga clic en **Editar etiqueta**.
 
@@ -101,6 +101,6 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 **Nota**: no se puede quitar la etiqueta de **cuenta** integrada con prioridad.
 
-1. En el centro de seguridad, vaya a **configuración** \> **correo electrónico &** \> **etiquetas de usuario**de colaboración.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
 
 2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea quitar, haga clic en **Eliminar etiqueta**y, a continuación, seleccione **sí, quitar** en la advertencia que aparece.

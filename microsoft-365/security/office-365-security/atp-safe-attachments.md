@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la característica datos adjuntos seguros de la protección contra amenazas avanzada de Office 365 (ATP).
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326536"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337210"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Datos adjuntos seguros en Office 365 ATP
 
@@ -108,9 +108,7 @@ Estas son algunas consideraciones para los mensajes reenviados y la entrega din�
 
 - Si el destinatario reenviado no está protegido por una directiva de datos adjuntos seguros, el mensaje y los datos adjuntos se entregarán sin los marcadores de posición de datos adjuntos o los datos adjuntos de datos adjuntos seguros.
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>Escenarios en los que los datos adjuntos seguros no exploran mensajes
-
-Hay escenarios en los que los datos adjuntos seguros no pueden examinar mensajes:
+Hay escenarios donde la entrega dinámica no puede reemplazar los datos adjuntos en los mensajes. Entre estos escenarios se incluyen lo siguientes:
 
 - Mensajes en carpetas públicas.
 
@@ -126,7 +124,7 @@ Hay escenarios en los que los datos adjuntos seguros no pueden examinar mensajes
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) mensajes cifrados.
 
-- Ha configurado la acción de entrega dinámica en una directiva de datos adjuntos seguros, pero el destinatario no admite la entrega dinámica (por ejemplo, el destinatario es un buzón de correo en una organización de Exchange local). Sin embargo, los [vínculos seguros en office 365 ATP](set-up-atp-safe-links-policies.md) son capaces de analizar datos adjuntos de archivos de Office que contienen direcciones URL (en función de cómo estén configurados los vínculos seguros).
+- Ha configurado la acción de entrega dinámica en una directiva de datos adjuntos seguros, pero el destinatario no admite la entrega dinámica (por ejemplo, el destinatario es un buzón de correo en una organización de Exchange local). Sin embargo, los [vínculos seguros en office 365 ATP](set-up-atp-safe-links-policies.md) pueden analizar datos adjuntos de archivos de Office que contienen direcciones URL (según la [configuración global de los vínculos seguros](configure-global-settings-for-safe-links.md) ).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Enviar archivos para el análisis de malware
 
