@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 87f956e0c9ae80610a61a7ed9496e2aa8b52ebb4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 51abfe03db57a838cbf5e132027cce7927db439c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416844"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305224"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Soporte técnico y servicios profesionales de Microsoft, y notificación de infracciones según el RGPD
 
@@ -28,7 +28,7 @@ El Soporte técnico y los servicios profesionales de Microsoft se toman muy en s
 
 El equipo de Servicios profesionales de Microsoft está formado por un grupo diverso de arquitectos técnicos, ingenieros, consultores y profesionales de soporte técnico dedicados a alcanzar la misión de Microsoft de proporcionar recursos a los clientes para mejorar su productividad. Nuestro equipo de Servicios profesionales está formado por un total de más de 21 000 consultores, asesores digitales, representantes de soporte técnico Premier, ingenieros y profesionales de ventas que trabajan en 191 países, ofrecen asistencia en 46 idiomas, administran varios millones de interacciones al mes, e interactúan con clientes y partners con herramientas automatizadas, locales, telefónicas, web y de la comunidad. La organización ofrece amplia experiencia en toda la cartera de Microsoft, con una extensa red de partners, comunidades técnicas, herramientas, diagnósticos y canales que nos conectan con nuestros clientes empresariales.
 
-Los objetivos del equipo de respuesta ante incidentes de protección de datos global de los Servicios profesionales de Microsoft son (a) usar procesos y operaciones estrictos para evitar que se produzcan incidentes de protección de datos; (b) administrarlos de forma profesional y eficiente cuando se produzcan; y (c) aprender de estos incidentes de protección de datos con mejoras del programa y análisis posteriores. Los procesos y los resultados del equipo de respuesta ante incidentes de protección de datos de Servicios profesionales de Microsoft son revisados y evaluados por varias auditorías de seguridad y cumplimiento (por ejemplo, ISO/CEI 27001).
+Los objetivos del equipo de respuesta ante incidentes de protección de datos global de los Servicios profesionales de Microsoft son (a) usar procesos y operaciones estrictos para evitar que se produzcan incidentes de protección de datos; (b) administrarlos de forma profesional y eficiente cuando se produzcan; y (c) aprender de estos incidentes de protección de datos a través de mejoras del programa y análisis posteriores. Los procesos y los resultados del equipo de respuesta ante incidentes de protección de datos de Servicios profesionales de Microsoft son revisados y evaluados por varias auditorías de seguridad y cumplimiento (por ejemplo, ISO/CEI 27001).
 
 ## <a name="data-protection-incident-response-overview"></a>Información general sobre la respuesta ante incidentes de protección de datos 
 
@@ -38,7 +38,7 @@ Los Servicios profesionales de Microsoft se comprometen a proteger a sus cliente
 
 Nuestro proceso de notificación de vulneraciones de datos personales se inicia cuando declaramos que se produce una [vulneración de datos personales].
 
-Para poder declarar, el equipo de respuesta ante incidentes de protección de datos de Microsoft necesita determinar si el incidente de protección de datos se ha producido realmente según la definición anterior o con una gran probabilidad. La declaración se producirá en cuanto la información correspondiente se encuentre disponible para determinar que se ha producido un incidente de protección de datos.
+Para poder declarar, el equipo de respuesta ante incidentes de protección de datos de Microsoft necesita determinar si el incidente de protección de datos se ha producido realmente según la definición mencionada anteriormente. La declaración se producirá en cuanto la información correspondiente se encuentre disponible para determinar que se ha producido un incidente de protección de datos.
 
 Debido a la naturaleza de los servicios profesionales, algunos eventos que parecen incidentes de protección de datos de Microsoft en realidad no lo son, ya que se producen a causa a acciones de clientes o acciones realizadas en los sistemas de clientes. Microsoft no supervisa ni responde ante incidentes de protección de datos en el dominio de responsabilidad del cliente. Pero, cuando Microsoft tenga conocimiento de un incidente de protección de datos producido por el cliente, lo clasificaremos como un incidente de protección de datos originado por el cliente, lo que el equipo de respuesta ante incidentes de protección de datos denomina un “evento”, informaremos al cliente de nuestra observación y, según se solicite, le asistiremos en sus esfuerzos de respuesta, hasta el máximo necesario por su interacción con Microsoft. Algunos ejemplos de incidentes de protección de datos originados por el cliente son el envío por error a Microsoft de contraseñas de cliente y otra información confidencial a Microsoft, solicitudes para eliminar datos y ser la víctima de un fraude.
 
@@ -65,7 +65,7 @@ Los procesos de detección usados por los Servicios profesionales de Microsoft s
 
 ### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>Simulacros de respuesta ante incidentes de protección de datos, prueba del plan de respuesta ante incidentes de protección de datos 
 
-Además del aprendizaje continuado, los Servicios profesionales ejecutan cada año simulacros de forma conjunta con los departamentos internos adecuados para comunicar los procedimientos de escalación, los roles y las responsabilidades de los incidentes de protección de datos a todos los miembros del equipo de estabilización. De esta forma, se prepara a los principales interesados para incidentes de protección de datos reales (ya estén relacionadas con la seguridad, con intrusiones físicas o con la privacidad). Entre estas acciones, se realizan ejercicios con representantes del equipo de respuesta ante incidentes de protección de datos, el equipo de seguridad, los equipos jurídicos y el equipo de comunicaciones. 
+Además del aprendizaje continuado, los Servicios profesionales ejecutan cada año exploraciones de forma conjunta con los departamentos internos adecuados para comunicar los procedimientos de escalación, los roles y las responsabilidades de los incidentes de protección de datos a todos los miembros del equipo de estabilización. Este entrenamiento prepara a los principales interesados para incidentes de protección de datos reales (ya estén relacionadas con la seguridad, con intrusiones físicas o con la privacidad). Entre estas acciones, se realizan ejercicios con representantes del equipo de respuesta ante incidentes de protección de datos, el equipo de seguridad, los equipos jurídicos y el equipo de comunicaciones.
 
 Después de los ejercicios, documentamos el resultado y los métodos de corrección que decidimos usar.
 
@@ -81,7 +81,7 @@ Cuando la organización de Servicios profesionales de Microsoft identifica un in
 
 Microsoft también completa un análisis posterior interno de los incidentes de protección de datos basándose en su nivel de gravedad. Como parte de este ejercicio, se evalúa la suficiencia en la respuesta y los procedimientos operativos, y cualquier actualización que pueda ser necesaria para el *Procedimiento operativo estándar de respuesta ante incidentes de protección de datos*, o procesos relacionados que son identificados e implementados. Los análisis posteriores internos de las infracciones de datos son registros altamente confidenciales que no están disponibles para los clientes. Pero los análisis posteriores se pueden resumir e incluir en notificaciones de eventos para clientes. Como parte de un ciclo de auditoría rutinario, los auditores externos revisan los procesos de análisis posterior para garantizar que se produzca un seguimiento.
 
-### <a name="notification"></a>Notificación
+### <a name="notification"></a>Notification
 
 Cuando los Servicios profesionales de Microsoft declaran un incidente de protección de datos en el RGPD, dirigiremos la notificación a nuestros clientes en un plazo de 72 horas. 
 

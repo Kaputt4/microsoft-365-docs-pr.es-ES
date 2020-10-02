@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: b113935ce31aa7992eab1d57f78b6cdec5919cc4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416906"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304904"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Servicio de tratamiento de datos de solicitudes de interesados de Windows Enterprise para el RGPD y la CCPA 
 
@@ -30,26 +30,27 @@ ms.locfileid: "47416906"
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Introducción a las solicitudes de los interesados (DSR) 
 El Reglamento General de Protección de Datos (RGPD) otorga derechos a las personas (denominadas _interesados_ en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (denominado _responsable de los datos_ o simplemente _responsable_). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina _Solicitud del interesado_ o DSR. 
 
-De forma similar, la Ley de Privacidad de Consumidores de California (CCPA) establece los derechos y obligaciones de privacidad a los consumidores de California, incluidos los derechos de los interesados del RGDP, como el derecho a eliminar, obtener acceso y recibir (portabilidad) sus datos personales. La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
+De forma similar, la Ley de Privacidad del Consumidor de California (CCPA) proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los Derechos del interesado del RGPD, como el derecho a eliminar sus datos personales, obtener acceso a ellos y recibirlos (portabilidad). La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
-Esta guía explica cómo usar productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes responsables de los datos a encontrar y actuar sobre datos personales para responder solicitudes de interesado. En concreto, esto incluye cómo encontrar, acceder y actuar sobre datos personales alojados en la nube de Microsoft. Este es un breve resumen de los procedimientos descritos en esta guía: 
+En esta guía se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes que sean responsables de los datos a encontrar datos personales y actuar sobre ellos para responder a solicitudes de interesado. En concreto, esto abarca cómo encontrar datos personales hospedados en la nube de Microsoft, cómo tener acceso a ellos y cómo actuar en consecuencia. Este es un breve resumen de los procedimientos descritos en esta guía: 
 
 1. **Acceder**: recupere datos personales alojados en la nube de Microsoft y, si se le pide, realice una copia que puede estar a disposición del interesado. 
 2. **Eliminar**: eliminar de forma permanente los datos personales que residen en la nube de Microsoft. 
 3. **Exportar**: enviar una copia electrónica (en un formato legible) de datos personales al interesado. La información personal de acuerdo con la CCPA es cualquier información relacionada con una persona identificada o identificable.
 
-La información personal bajo la CCPA es cualquier información relacionada con una persona identificada o identificable. No hay distinción entre los roles privados, públicos o laborales de una persona. La definición de la CCPA de la "información personal" es a grandes rasgos similar a la que el RGPD hace de los "datos personales". Sin embargo, la CCPA también incluye datos domésticos y familiares. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
+La información personal bajo la CCPA es cualquier información relacionada con una persona identificada o identificable. No hay distinción entre los roles privados, públicos o laborales de una persona. La definición del término "información personal" es, a grandes rasgos, similar a la que el RGPD da al término "datos personales". Sin embargo, la CCPA también incluye datos domésticos y familiares. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
 Cada sección de esta guía describe los procedimientos técnicos que puede realizar una organización responsable de los datos para responder a una solicitud del interesado de datos personales en la nube de Microsoft. 
 
-## <a name="terminology"></a>Terminología 
-A continuación se ofrecen definiciones de términos relacionados con esta guía. 
+## <a name="terminology"></a>Terminología
 
-* _Responsable_: la persona física o legal, autoridad pública, agencia u organismo que solo o junto a otras personas, determina los fines y medios del tratamiento de datos personales; donde los fines y los medios de dicho tratamiento están determinados por la ley de la unión o de un estado miembro, el poseedor o los criterios específicos para su nominación pueden estar proporcionados por la ley de un estado miembro o de la unión. 
+En la siguiente lista, se proporcionan definiciones de términos relevantes para esta guía. 
 
-* _Datos personales e interesado_: cualquier información sobre una persona física identificada o identificable (“interesado”); una persona física identificable es aquella que puede identificarse, directa o indirectamente, especialmente con referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más elementos específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física; 
+* _Poseedor:_ la persona física o jurídica, entidad pública, agencia u organismo que, solo o junto a otras personas, determina los fines y los medios del procesamiento de datos personales; donde los fines y los medios de dicho procesamiento están determinados por la ley de la Unión Europea o de los Estados miembros, el poseedor o los criterios específicos para su designación pueden estar proporcionados por la ley de la Unión Europea o de los Estados miembros. 
 
-* _Encargado_: persona física o legal, autoridad pública, agencia u otro organismo que trata datos personales en nombre del responsable. 
+* _Datos personales y titular de los datos:_ cualquier información sobre una persona física identificada o identificable ("interesado"); una persona física identificable es una que puede identificarse, directa o indirectamente, especialmente en referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona física. 
+
+* _Encargado de los datos:_ una persona física o jurídica, una autoridad pública, una agencia u otro organismo que procesa datos personales en nombre del responsable. 
 
 * _Datos de cliente_: todos los datos, incluidos el software y todos los archivos de texto, sonido, vídeo o imagen, proporcionados a Microsoft por un cliente o en su representación mediante el uso del servicio empresarial. 
 

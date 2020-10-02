@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 838e2ee09ea80f07c637eeebd1229b63f01ad00b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c262e496313ec5f59e9e369d8622f4698a9a585a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415904"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305204"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>Notificación de infracciones de datos según el RGPD de Azure y Dynamics 365
 
@@ -38,7 +38,7 @@ Microsoft no supervisa o responde a los incidentes de seguridad responsabilidad 
 
 Azure responde a una posible vulneración de datos según el proceso de respuesta a incidentes de seguridad, un subconjunto del plan de administración de incidentes de Microsoft Azure. La respuesta a incidentes de seguridad de Azure se implementa con un proceso de cinco fases: detección, evaluación, diagnóstico, estabilización y cierre. El equipo de respuesta a incidentes de seguridad puede alternar entre las fases de diagnóstico y estabilización a medida que avanza a la investigación. A continuación se expone información general sobre el proceso de respuesta de seguridad:
 
-|**Fase**|**Descripción**|
+|**Stage**|**Descripción**|
 | ------- | ------------- |
 | ***1: detección*** | Primera indicación de un posible incidente. |
 | ***2: evaluación*** | Un miembro del equipo de respuesta ante incidentes evalúa el impacto y la gravedad del evento. Según las pruebas, la evaluación puede o no provocar una escalación al equipo de respuesta de seguridad. |
@@ -52,8 +52,8 @@ Los procesos de detección usados por Microsoft Azure están diseñados para det
 
 - Alertas automatizadas del sistema mediante marcos internos de monitoreo y alerta. Estas alertas pueden interferir con alarmas basadas en firmas, como antimalware, detección de intrusiones o mediante algoritmos diseñados para identificar actividades previstas y generar alertas ante anomalías.
 - Informes internos de los servicios Microsoft ejecutándose en Microsoft Azure y Azure Government.
-- Las vulnerabilidades de seguridad se notifican al [Centro de respuestas de seguridad de Microsoft (MSRC)](https://technet.microsoft.com/security/dn440717) en la dirección [secure@microsoft.com](mailto:secure@microsoft.com). El MSRC trabaja con socios e investigadores de seguridad de todo el mundo para evitar incidentes de seguridad y mejorar la seguridad de los productos de Microsoft.
-- Los informes de cliente a través del [Portal de soporte técnico al cliente](https://www.windowsazure.com/support/contact/) o el portal de administración de Microsoft Azure y Azure Government, que describen la actividad sospechosa atribuida a la infraestructura de Azure (en lugar de la actividad que se producen en el ámbito de responsabilidad del cliente).
+- Las vulnerabilidades de seguridad se notifican al [Centro de respuestas de seguridad de Microsoft (MSRC)](https://technet.microsoft.com/security/dn440717) en la dirección [secure@microsoft.com](mailto:secure@microsoft.com). El Centro de respuestas de seguridad de Microsoft trabaja con asociados e investigadores de seguridad de todo el mundo para impedir que se produzcan incidentes de seguridad y mejorar la seguridad de los productos de Microsoft.
+- Los informes de cliente a través del [Portal de soporte técnico al cliente](https://www.windowsazure.com/support/contact/) o el portal de administración de Microsoft Azure y Azure Government, que describen la actividad sospechosa atribuida a la infraestructura de Azure (en lugar de la actividad que se produce en el ámbito de responsabilidad del cliente).
 - Actividad de los [equipos de seguridad rojo y azul](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/). Esta estrategia usa un equipo Rojo de expertos altamente cualificados en seguridad ofensiva de Microsoft para descubrir y atacar debilidades potenciales en los servicios de Azure. El equipo Azul de respuesta de seguridad debe detectar la actividad del equipo rojo y defenderse contra ella. Las acciones de los equipos Rojo y Azul se usan para comprobar que los esfuerzos de respuesta de seguridad de Azure son efectivos a la hora de administrar incidentes de seguridad. Las actividades de los equipos de seguridad Rojo y Azul se basan en las reglas de compromiso para garantizar la protección de los datos de clientes.
 - Remisiones a una instancia superior por parte de los operadores de servicios de Azure. Los empleados de Microsoft están preparados para identificar y escalar los posibles problemas de seguridad.
 
@@ -73,7 +73,7 @@ Microsoft Azure clasifica el impacto del incidente en la información en las sig
 El equipo de respuesta de seguridad trabaja con los ingenieros de seguridad de Microsoft Azure y PYME para clasificar el evento con datos reales de las pruebas. Un evento de seguridad se puede clasificar como:
 
 - **Falso positivo**: un evento que cumple con los criterios de detección pero que se considera parte de una práctica comercial normal y es preciso que sea filtrado. El equipo de servicio identifica la causa principal de los falsos positivos y los soluciona de forma sistemática aprovechando los orígenes de detección, y ajustándolos según sea necesario.
-- **Incidente de seguridad**: un incidente en el que se produce un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipos o instalaciones de Microsoft; o un acceso no autorizado a dichos equipos o instalaciones que da como resultado la pérdida, divulgación o modificación de datos de clientes o de soporte técnico.
+- **Incidente de seguridad**: un incidente en el que se produce un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipos o instalaciones de Microsoft; o un acceso no autorizado a dichos equipos o instalaciones, que da como resultado la pérdida, divulgación o modificación de datos de clientes o de soporte técnico.
 - **Incidente de seguridad o privacidad denunciado por el cliente**: un acceso o un uso ilegal o no autorizado de sistemas, equipos o instalaciones de Microsoft que da como resultado la divulgación, modificación o pérdida de datos de clientes.
 - **Infracción de privacidad**: caso específico de un incidente relativo a la seguridad que involucra datos personales. Los procedimientos de control son los mismos que los de un incidente de seguridad.
 
@@ -83,7 +83,7 @@ Durante la investigación, el equipo de respuesta de seguridad trabaja junto a a
 
 Microsoft comprueba que el riesgo para los clientes y negocios se ha contenido con éxito y que las medidas correctivas se han implementado. En caso necesario, se llevan a cabo pasos de atenuación de emergencia para resolver los riesgos de seguridad inmediatos asociados con el evento.
 
-Microsoft también realiza un análisis final interno para las vulneraciones de datos. Como parte de este ejercicio, se evalúan los procedimientos operativos y la suficiencia de respuesta y se identifican e implementan las actualizaciones necesarias para la respuesta ante incidentes de seguridad o procesos relacionados. Los análisis finales internos para las vulneraciones de datos son registros muy confidenciales no disponibles para los clientes. Los análisis finales pueden, sin embargo, resumirse e incluirse en otras notificaciones de eventos del cliente. Estos informes se proporcionan a auditores externos para su revisión como parte del ciclo de auditoría rutinario de Azure.
+Microsoft también realiza un análisis final interno para las vulneraciones de datos. Como parte de este ejercicio, se evalúan los procedimientos operativos y la suficiencia de respuesta y se identifican e implementan las actualizaciones necesarias para la respuesta ante incidentes de seguridad o procesos relacionados. Los análisis finales internos para las vulneraciones de datos son registros muy confidenciales no disponibles para los clientes. Pero los análisis posteriores pueden resumirse e incluirse en otras notificaciones de eventos del cliente. Estos informes se proporcionan a auditores externos para su revisión como parte del ciclo de auditoría rutinario de Azure.
 
 ## <a name="customer-notification"></a>Notificación al cliente
 
@@ -97,9 +97,9 @@ Tras la declaración de un CRSPI, el proceso de notificación tiene lugar tan pr
 
 Microsoft Azure proporciona a los clientes información detallada, lo que les permite realizar investigaciones internas y ayudar a cumplir los compromisos de usuario final, mientras no retrase indebidamente el proceso de notificación.
 
-La notificación de una vulneración de datos personales se entregará al cliente por cualquier medio elegido por Microsoft, incluyendo el correo electrónico. La notificación de una vulneración de datos se enviará a la lista de contactos de seguridad proporcionada en Azure Security Center, que puede configurarse siguiendo las [directrices de implementación](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Si no se proporciona información de contacto en el centro de seguridad de Azure, la notificación se envía a uno o varios administradores de una suscripción de Azure. Para asegurarse de que pueda entregarse la notificación correctamente, es responsabilidad del cliente proporcionar información de contacto administrativa correcta en cada suscripción y portal de servicios en línea aplicables.
+La notificación de una vulneración de datos personales se entregará al cliente por cualquier medio elegido por Microsoft, incluyendo el correo electrónico. La notificación de una vulneración de datos se enviará a la lista de contactos de seguridad proporcionada en Azure Security Center, que puede configurarse siguiendo las [directrices de implementación](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Si no se proporciona información de contacto en el centro de seguridad de Azure, la notificación se envía a uno o varios administradores de una suscripción de Azure. Para asegurar que la notificación pueda entregarse correctamente, es responsabilidad del cliente proporcionar información de contacto administrativa correcta en cada suscripción y portal de servicios en línea aplicables.
 
-El grupo de Microsoft Azure o Azure Government también puede notificar al personal adicional de Microsoft, como el servicio de atención al cliente (CSS), el administrador de cuentas del cliente (o) o el administrador de cuentas técnicas (TAM). Por lo general, estas personas suelen tener relaciones estrechas con el cliente y pueden facilitar la reparación más rápida
+El grupo de Microsoft Azure o Azure Government también puede notificar al personal adicional de Microsoft, como el servicio de atención al cliente (CSS), el administrador de cuentas del cliente (o) o el administrador de cuentas técnicas (TAM). Por lo general, estas personas suelen tener relaciones estrechas con los clientes y pueden hacer que las correcciones se lleven a cabo más rápidamente.
 
 ## <a name="microsoft-dynamics-365-built-in-security-features"></a>Características de seguridad integradas en Microsoft Dynamics 365
 
