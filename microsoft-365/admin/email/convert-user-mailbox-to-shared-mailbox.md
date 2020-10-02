@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que puedan tener acceso varios usuarios. '
-ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521034"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341197"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
@@ -51,48 +51,9 @@ Cuando se convierte el buzón de un usuario en un buzón compartido, se conserva
 
 4. Si el buzón es inferior a 50 GB, puede quitar la [licencia del usuario](../manage/remove-licenses-from-users.md)y dejar de pagar por ella. No elimine la cuenta de usuario. El buzón compartido lo necesita como un delimitador. Si va a convertir el buzón de un empleado que abandona su organización, debe realizar pasos adicionales para asegurarse de que ya no pueden iniciar sesión. Consulte [quitar un antiguo empleado de Microsoft 365](../add-users/remove-former-employee.md).
     
-5. Para todos los demás que necesite saber sobre los buzones compartidos, vea [About Shared mailboxes](about-shared-mailboxes.md) y [Create a Shared Mailbox](create-a-shared-mailbox.md).
+> [!NOTE]
+> No es necesario restablecer la contraseña del usuario durante la conversión de buzones de correo. Sin embargo, si no se restablece la contraseña, **el nombre de usuario y la contraseña originales seguirán funcionando** una vez finalizada la conversión del buzón.
 
-## <a name="use-the-microsoft-365-admin-center-to-convert-a-mailbox"></a>Usar el centro de administración de Microsoft 365 para convertir un buzón
-
-::: moniker range="o365-worldwide"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-
-2. Seleccione el nombre del usuario cuyo buzón desea convertir.
-
-3. Restablecer la contraseña del usuario.
-
-   > [!NOTE]
-   > No es necesario restablecer la contraseña del usuario durante la conversión de buzones de correo. Sin embargo, si no se restablece la contraseña, **el nombre de usuario y la contraseña originales seguirán funcionando** una vez finalizada la conversión del buzón.
-
-4. En la ficha **correo** , en **más acciones**, seleccione **convertir a buzón compartido**. 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
-
-2. Seleccione el usuario cuyo buzón desea convertir.
-
-3. En el panel derecho, expanda **configuración de correo**. Junto a **configuración adicional**, seleccione **convertir a buzón compartido**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
-
-2. Seleccione el usuario cuyo buzón desea convertir.
-
-3. En el panel derecho, expanda **configuración de correo**. Junto a **configuración adicional**, seleccione **convertir a buzón compartido**.
-
-::: moniker-end
-
-
-Si el buzón es inferior a 50 GB, puede [quitar la licencia del usuario](../manage/remove-licenses-from-users.md)y dejar de pagar por ella. No elimine el buzón de correo antiguo del usuario. El buzón compartido lo necesita como un delimitador. Si va a convertir el buzón de un empleado que abandona su organización, debe realizar pasos adicionales para asegurarse de que ya no pueden iniciar sesión. Consulte [quitar un antiguo empleado de Microsoft 365](../add-users/remove-former-employee.md).
-    
 Para todos los demás que necesite saber sobre los buzones compartidos, vea [About Shared mailboxes](about-shared-mailboxes.md) y [Create a Shared Mailbox](create-a-shared-mailbox.md).
 
 > [!NOTE]
