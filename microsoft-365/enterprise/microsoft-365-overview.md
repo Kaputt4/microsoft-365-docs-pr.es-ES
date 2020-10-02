@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949921"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327478"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -32,7 +32,7 @@ Microsoft 365 para empresas consiste en lo siguiente:
 
 |Servicios|Descripción|
 |---|---|
-|Aplicaciones locales y basadas en la nube, y servicios de productividad |Incluye tanto las aplicaciones de Microsoft 365 para empresas como las aplicaciones de Office más recientes para su equipo PC y Mac (por ejemplo, Word, Excel, PowerPoint, Outlook, etc.) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones, entre otros.|
+|Aplicaciones locales y basadas en la nube, y servicios de productividad|Incluye tanto las aplicaciones de Microsoft 365 para empresas como las aplicaciones de Office más recientes para su equipo PC y Mac (por ejemplo, Word, Excel, PowerPoint, Outlook, etc.) y un conjunto completo de servicios en línea para el correo electrónico, el almacenamiento de archivos y la colaboración, reuniones, entre otros.|
 |Windows 10 Enterprise|Satisface las necesidades de organizaciones grandes y medianas. Es la versión más productiva y segura de Windows para los usuarios. Para los profesionales de IT, también proporciona una administración completa de implementación, dispositivos y aplicaciones.|
 |Servicios de seguridad avanzada y administración de dispositivos|Incluye Microsoft Intune, un servicio de administración de movilidad empresarial basado en la nube que ayuda a los empleados a ser productivos mientras protegen los datos de su organización.|
 |||

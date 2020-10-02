@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Obtenga información sobre cómo administrar grupos de 365 de Microsoft, como agregar miembros de quitar grupos, editar la dirección de correo electrónico, el nombre de grupo o la descripción, y personalizar cómo funciona el grupo.
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307306"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343276"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el centro de administración de 365 de Microsoft
 
@@ -122,7 +122,7 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. En la pestaña **configuración** , seleccione **enviar copias de conversaciones de grupo y eventos a miembros del grupo** si desea que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
 
 3. En la lista grupos del centro de administración, seleccione el nombre del grupo que desea cambiar y, a continuación, en la pestaña **configuración** , seleccione **permitir a los remitentes externos que envíen correo electrónico a este grupo**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -196,10 +196,10 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
 
 [Administrar el acceso de invitado a grupos de 365 de Microsoft](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Elegir el dominio que se va a usar al crear grupos de 365 de Microsoft](choose-domain-to-create-groups.md)
+[Elegir el dominio que se va a usar al crear grupos de 365 de Microsoft](../../solutions/choose-domain-to-create-groups.md)
 
-[Permitir que los miembros envíen como o envíen en nombre de un grupo de Microsoft 365](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Permitir que los miembros envíen como o envíen en nombre de un grupo de Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [Actualizar listas de distribución a grupos de 365 de Microsoft](../manage/upgrade-distribution-lists.md)
 
-[Administración de grupos de Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Administración de grupos de Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)

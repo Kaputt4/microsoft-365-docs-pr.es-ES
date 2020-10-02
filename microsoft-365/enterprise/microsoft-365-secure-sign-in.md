@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,20 +15,29 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Requerir que los usuarios inicien sesión de forma segura con la autenticación multifactor (MFA) y otras características.
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132250"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327431"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Asegurar inicios de sesión de usuario en el espacio empresarial de Microsoft 365
 
 Para aumentar la seguridad de los inicios de sesión de los usuarios:
 
+- Usar Windows Hello para empresas
 - Use la protección de contraseñas de Azure Active Directory
 - Use la autenticación multifactor (MFA)
-- Implemente las directivas comunes de acceso a dispositivos e identidades
+- Implementar configuraciones de acceso a dispositivos e identidades
+- Protegerse frente al compromiso de credenciales con Azure AD Identity Protection
+
+## <a name="windows-hello-for-business"></a>Windows Hello para empresas
+
+Windows Hello para empresas en Windows 10 Enterprise reemplaza el mero uso de contraseñas por la ultrasegura autenticación de dos factores cuando inicie sesión en un dispositivo Windows. Esta es un nueva forma de inicio de sesión que vincula el dispositivo de un usuario con un factor biométrico o un PIN.
+
+Para más información, consulte [Información general para Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+
 
 ## <a name="azure-ad-password-protection"></a>Protección de contraseñas de Azure AD
 
@@ -44,7 +53,7 @@ MFA requiere que los inicios de sesión de usuario estén sujetos a una comproba
 
 El primer paso en el uso de MFA es que sea ***necesario para todas las cuentas de administrador***, también conocidas como cuentas con privilegios.
 
-Después de este primer paso, Microsoft recomienda de manera enfática el uso de MFA para todos los usuarios.
+Después de este primer paso, Microsoft recomienda el uso de MFA para todos los usuarios.
 
 Existen tres maneras para requerir que los administradores o usuarios usen MFA basándose en su plan de Microsoft 365.
 
@@ -96,7 +105,7 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 | **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>Directivas de acceso a dispositivos e identidades
+## <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
 Las directivas y configuraciones de acceso a dispositivos e identidades son características de requisitos previos recomendadas y sus opciones de configuración combinada con el acceso condicional, Intune y directivas de Azure AD Identity Protection. Estas determinan si se debe conceder una solicitud de acceso determinada y en qué condiciones. Esta determinación se basa en la cuenta de usuario del inicio de sesión, el dispositivo que se usa, la aplicación que el usuario usa para obtener acceso, la ubicación desde la que se realiza la solicitud de acceso y una valoración del riesgo de la solicitud. Esta funcionalidad le permite garantizar que solo los usuarios y dispositivos aprobados puedan acceder a los recursos críticos.
 
@@ -114,27 +123,22 @@ Estos niveles y sus configuraciones correspondientes proporcionan niveles de pro
 
 Microsoft recomienda la configuración y la implementación de directivas de acceso a dispositivos e identidades en la organización, incluidas las configuraciones específicas para Microsoft Teams, Exchange Online y SharePoint. Para más información, consulte [Configuraciones de acceso a dispositivos e identidades](microsoft-365-policies-configurations.md).
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-## Let your users reset their own passwords
+En esta sección, aprenderá a configurar las directivas que protejan credenciales en peligro, donde un atacante determine el nombre de una cuenta de usuario y la contraseña para acceder a servicios en la nube y los datos de una organización. La protección de identidad de Azure AD ofrece varias maneras de evitar que un atacante acceda a las credenciales de una cuenta de usuario.
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+Con Azure AD Identity Protection, puede:
 
-## Sign in to SaaS apps with Azure AD
+|Funcionalidad|Descripción|
+|:---------|:---------|
+| Determinar y corregir posibles vulnerabilidades en las identidades de su organización | Azure AD usa el aprendizaje automático para detectar anomalías y actividad sospechosa, como inicios de sesión y actividades posteriores al inicio de sesión. Con estos datos, Azure AD Identity Protection genera informes y alertas que le ayudarán a evaluar los problemas y tomar medidas.|
+|Detectar acciones sospechosas relacionadas con las identidades de su organización y responder a ellas automáticamente|Puede configurar directivas basadas en riesgos que respondan automáticamente a problemas detectados si se alcanza un nivel de riesgo específico. Estas directivas, además de otros controles de acceso condicional proporcionados por Azure AD y Microsoft Intune, pueden bloquear automáticamente el acceso o llevar a cabo acciones correctivas que incluyen el restablecimiento de contraseñas y la solicitud de Azure Multi-Factor Authentication en posteriores inicios de sesión. |
+| Investigar incidentes sospechosos y solucionarlos con acciones administrativas | Puede investigar eventos de riesgo con información sobre el incidente de seguridad. Hay disponibles flujos de trabajo básicos para realizar un seguimiento de las investigaciones e iniciar acciones de corrección, como restablecimientos de contraseña. |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+Vea [más información sobre Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+Vea los [pasos para habilitar Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Recursos técnicos de administración para MFA e inicios de sesión seguros
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [Configurar la directiva de registro de autenticación multi-factor de Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Configuraciones de acceso a dispositivos e identidades](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>Paso siguiente
+
+[Administrar las cuentas de usuario](manage-microsoft-365-accounts.md)
