@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: Ubicaciones de datos de Microsoft 365'
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269546"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337162"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Obtenga información acerca de los compromisos contractuales para la ubicación 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Debido a las circunstancias sin precedentes en torno a la COVID-19 y la necesidad de administrar la demanda de servicios en línea, si su organización es una institución educativa localizada en Europa, podemos aprovisionar su espacio empresarial de Office 365, transferir los datos, y almacenar los datos en reposo dentro de la Unión Europea.  Si su organización es una institución educativa localizada en India, podemos aprovisionar su espacio empresarial de Office 365, transferir los datos, y almacenar los datos en reposo dentro de India, Europa o Estados Unidos.  Si su organización es una institución educativa localizada en Sudáfrica, podemos aprovisionar su espacio empresarial de Office 365, transferir los datos, y almacenar los datos en reposo dentro de Sudáfrica o Europa. Nuestro compromiso con el cumplimiento, la privacidad y la seguridad sigue intacto mientras seguimos implementando las medidas necesarias y prudentes para mantener la disponibilidad del servicio. Cumpliremos con todas las leyes aplicables en lo que respecta a las transferencias de datos.
+Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de Europa o Norteamérica y guardar Datos de los clientes en reposo en cualquier parte de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el Cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de la Unión Europea y guardar Datos de los clientes en reposo en cualquier parte de la Unión Europea.
 
 
 
@@ -703,7 +703,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | --- | --- |
 | Exchange Online | Geografía global 1: EMEA |
 | OneDrive para la Empresa | Geografía global 1: EMEA |
-| SharePoint Online | Geografía global 1: EMEA |
+| SharePoint Online | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
 | Office Online y Office Mobile | Geografía global 1: EMEA |
@@ -1018,7 +1018,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | SharePoint Online | Geografía global 1: EMEA |
 | Skype Empresarial | Geografía global 1: EMEA |
 | Microsoft Teams | Geografía global 1: EMEA |
-| Office Online &amp; Office Mobile | Geografía global 1: EMEA |
+| Office Online y Office Mobile | Geografía global 1: EMEA |
 | EOP | Geografía global 1: EMEA |
 | Intune | Geografía global 1: EMEA |
 | MyAnalytics | Geografía global 1: EMEA |
@@ -4493,7 +4493,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |

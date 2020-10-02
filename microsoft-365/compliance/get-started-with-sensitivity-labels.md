@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 94edcb2e430b01ca423e6bb2a7baf51a407a52df
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 80149170fad47366178e9b899bbd5355c1d9e7db
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295224"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338411"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
