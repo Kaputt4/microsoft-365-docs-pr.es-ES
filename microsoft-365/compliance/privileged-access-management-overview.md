@@ -1,5 +1,5 @@
 ---
-title: Administración del acceso con privilegios
+title: Privileged Access Management
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,20 +13,22 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: ''
 description: En este artículo se proporciona información general sobre la administración del acceso con privilegios en Microsoft 365, incluidas las respuestas a las preguntas más frecuentes (p + f).
-ms.openlocfilehash: eb5fe5320c061d40f0882f93b66afa3cad4fa0fa
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036043"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341238"
 ---
-# <a name="privileged-access-management"></a>Administración del acceso con privilegios
+# <a name="privileged-access-management"></a>Privileged Access Management
 
 La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger a su organización de las infracciones que usan cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o al acceso a las opciones de configuración críticas. La administración de acceso privilegiado requiere que los usuarios soliciten acceso puntual para completar las tareas elevadas y privilegiadas a través de un flujo de trabajo de aprobación limitado por el ámbito y de gran alcance. Esta configuración proporciona a los usuarios un acceso suficiente para realizar la tarea a mano, sin arriesgar la exposición de los datos confidenciales o las opciones de configuración críticas. La habilitación de la administración de acceso privilegiada en Microsoft 365 permite que su organización opere con privilegios que no tienen ningún derecho y proporciona un nivel de defensa contra las vulnerabilidades de acceso administrativo.
 
@@ -50,13 +52,13 @@ Cada uno de los siguientes flujos de proceso describe la arquitectura de acceso 
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>Paso 1: configurar una directiva de acceso privilegiado
 
-Cuando se configura una directiva de acceso privilegiado con el [centro de administración de Microsoft 365](https://admin.microsoft.com) o PowerShell de administración de Exchange, se define la Directiva y los procesos de características de acceso privilegiado y los atributos de directiva en el sustrato de Microsoft 365. Las actividades se registran en el &amp; centro de seguridad y cumplimiento. La Directiva está ahora habilitada y lista para administrar las solicitudes entrantes para aprobaciones.
+Cuando se configura una directiva de acceso privilegiado con el [centro de administración de Microsoft 365](https://admin.microsoft.com) o PowerShell de administración de Exchange, se define la Directiva y los procesos de características de acceso privilegiado y los atributos de directiva en el sustrato de Microsoft 365. Las actividades se registran en el centro de seguridad y &amp; cumplimiento. La Directiva está ahora habilitada y lista para administrar las solicitudes entrantes para aprobaciones.
 
 ![Paso 1: creación de la Directiva](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Paso 2: solicitud de acceso
 
-En el [centro de administración de Microsoft 365](https://admin.microsoft.com) o con PowerShell de administración de Exchange, los usuarios pueden solicitar acceso a tareas elevadas o privilegiadas. La característica de acceso privilegiado envía la solicitud al sustrato de 365 de Microsoft para su procesamiento con respecto a la Directiva configurada de &amp; acceso a privilegios y registra la actividad en los registros del centro de cumplimiento de seguridad.
+En el [centro de administración de Microsoft 365](https://admin.microsoft.com) o con PowerShell de administración de Exchange, los usuarios pueden solicitar acceso a tareas elevadas o privilegiadas. La característica de acceso privilegiado envía la solicitud al sustrato de 365 de Microsoft para su procesamiento con respecto a la Directiva configurada de acceso a privilegios y registra la actividad en los registros del centro de cumplimiento de seguridad &amp; .
 
 ![Paso 2: solicitud de acceso](../media/pam-step2-access-request.jpg)
 
@@ -68,11 +70,11 @@ Se genera una solicitud de aprobación y la notificación de solicitud pendiente
 
 ### <a name="step-4-access-processing"></a>Paso 4: acceso al procesamiento
 
-Para una solicitud aprobada, el espacio de ejecución de administración de Exchange procesa la tarea. La aprobación se comprueba contra la Directiva de acceso privilegiado y la procesa el sustrato 365 de Microsoft. Toda la actividad de la tarea se registra en el &amp; centro de seguridad y cumplimiento.
+Para una solicitud aprobada, el espacio de ejecución de administración de Exchange procesa la tarea. La aprobación se comprueba contra la Directiva de acceso privilegiado y la procesa el sustrato 365 de Microsoft. Toda la actividad de la tarea se registra en el centro de seguridad y &amp; cumplimiento.
 
 ![Paso 4: acceso al procesamiento](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>¿Qué SKU puede usar el acceso con privilegios en Office 365?
 

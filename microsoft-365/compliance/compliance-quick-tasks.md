@@ -9,15 +9,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
+- m365initiative-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar a trabajar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200843"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341186"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -89,7 +90,7 @@ Cuando el contenido está sujeto a una directiva de retención, los usuarios pue
 
 Puede poner rápidamente una directiva de retención en su lugar para varias ubicaciones en su entorno de Microsoft 365, como correo de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. No hay límites en cuanto al número de buzones o sitios que esta Directiva puede incluir automáticamente. Pero si necesita obtener más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluya o excluya sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, consulte [Create and configure Retention Policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, consulte [Create and configure Retention Policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 8: configurar la información confidencial y las directivas de lenguaje ofensivo
 
@@ -129,7 +130,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener una guía paso a paso sobre el uso del explorador de actividades, consulte Introducción [a Activity Explorer](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento para su organización, tenga en cuenta las siguientes soluciones de cumplimiento de Microsoft 365 para ayudarle a proteger la información confidencial y a detectar y actuar en riesgos de Insider adicionales.
 

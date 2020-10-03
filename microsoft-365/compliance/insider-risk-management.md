@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 92b8802325ea6d80241d59bd506051ad048b8422
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208682"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341406"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -108,7 +111,7 @@ Al seleccionar un caso en el panel del caso, se abre el caso de investigación y
 
 ![Investigación de administración de riesgos de Insider](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Action
+### <a name="action"></a>Acción
 
 Una vez que se han investigado los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Si los usuarios infringen accidental o involuntariamente condiciones de Directiva, se puede enviar una notificación de aviso simple al usuario desde plantillas de notificación que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o dirigir al usuario a un entrenamiento o guía de refresco para ayudar a evitar un comportamiento arriesgado futuro. Para obtener más información, consulte [plantillas de aviso de administración de riesgos de Insider](insider-risk-management-notices.md).
 
