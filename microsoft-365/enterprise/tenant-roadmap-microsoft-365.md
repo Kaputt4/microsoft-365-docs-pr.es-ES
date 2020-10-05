@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: La guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775152"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357915"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mapa de ruta del espacio empresarial para Microsoft 365
 
@@ -28,13 +30,12 @@ Cuando se crea un inquilino de Microsoft 365, se asigna a una ubicación geográ
 
 Para preparar a su inquilino para los servicios básicos de la red y la identidad, es fundamental planear y ejecutar cuidadosamente la configuración del espacio empresarial.
 
-## <a name="plan"></a>Planear
+## <a name="plan"></a>Plan
 
 Para planear la implementación del espacio empresarial:
 
 - [Comprender las suscripciones, las licencias y los inquilinos de Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Aprenda a usar certificados SSL de terceros](plan-for-third-party-ssl-certificates.md)
-- [Acceder a las guías de configuración en el centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md)
 - [Comprender las formas en que un inquilino de Microsoft 365 se integra con los servicios de Azure AD](integrated-apps-and-azure-ads.md)
 - [Planeación del soporte técnico de aplicaciones cliente](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determinación del uso de la autenticación moderna híbrida](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ Para planear la implementación del espacio empresarial:
 
 ## <a name="deploy"></a>Implementar
 
-Para implementar el inquilino, [agregue los dominios DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de la organización.
+Para implementar el inquilino, [agregue los dominios DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de su organización y use las [guías de configuración del centro de administración de Microsoft 365](setup-guides-for-microsoft-365.md).
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Inquilinos con varias ubicaciones geográficas
 

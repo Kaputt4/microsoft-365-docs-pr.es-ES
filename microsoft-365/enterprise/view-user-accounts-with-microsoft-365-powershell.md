@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Obtenga información sobre cómo ver, enumerar o mostrar las cuentas de usuario de Microsoft 365 de diferentes formas con PowerShell.
-ms.openlocfilehash: ea631d12a95ca813ebf9da3286e36d724d51a2f7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dba05ce440ec0d395fda58a12df3e9f751bb469
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696643"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357903"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Ver cuentas de usuario 365 de Microsoft con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Aunque puede usar el centro de administración de Microsoft 365 para ver las cuentas de su inquilino de Microsoft 365, también puede usar PowerShell para Microsoft 365 y hacer algunas cosas que el centro de administración no puede.
   
@@ -99,6 +99,21 @@ Como otro ejemplo, puede comprobar el estado habilitado de una cuenta de usuario
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
+
+### <a name="view-account-synchronization-status"></a>Ver el estado de sincronización de cuentas
+
+Las cuentas de usuario tienen dos orígenes; Windows Server Active Directory (AD), que son cuentas que se sincronizan desde un AD local a la nube y Azure AD, que son cuentas creadas directamente en la nube.
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+```
+Este comando indica a PowerShell que debe obtener todos los usuarios que tienen el atributo **DirSyncEnabled** establecido en true. Se puede usar para extraer cuentas que se sincronizan desde un anuncio local.
+
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+```
+Este comando indica a PowerShell que debe obtener todos los usuarios que tienen el atributo **DirSyncEnabled** establecido en false. Puede usarse para extraer cuentas solo en la nube.
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Ver algunas cuentas basadas en una propiedad común
 
@@ -298,11 +313,10 @@ Si usa la sincronización de directorios para crear y administrar los usuarios d
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
