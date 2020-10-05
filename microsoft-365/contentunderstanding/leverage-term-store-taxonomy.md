@@ -3,54 +3,59 @@ title: Aprovechar la taxonomía del almacén de términos al crear un extractor
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Aproveche la taxonomía del almacén de términos al crear un extractor en el documento información sobre el modelo en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 94f7a0389d2f06e0f8c1a60a341a02e43dfb2071
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Saque el máximo partido de la taxonomía al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296010"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337282"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a><span data-ttu-id="a0bee-103">Aprovechar la taxonomía del almacén de términos al crear un extractor</span><span class="sxs-lookup"><span data-stu-id="a0bee-103">Leverage term store taxonomy when creating an extractor</span></span>
-
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a><span data-ttu-id="bef6b-103">Aprovechar la taxonomía del almacén de términos al crear un extractor</span><span class="sxs-lookup"><span data-stu-id="bef6b-103">Leverage term store taxonomy when creating an extractor</span></span>
 
 </br>
 
-<span data-ttu-id="a0bee-104">Al crear un extractor en el documento con información sobre el modelo en SharePoint Syntex, puede aprovechar la taxonomía del almacén de términos de los [servicios de metadatos administrados](https://docs.microsoft.com/sharepoint/managed-metadata#terms) para mostrar los términos preferidos de los datos que extrae.</span><span class="sxs-lookup"><span data-stu-id="a0bee-104">When you create an extractor in your document understanding model in SharePoint Syntex, you can take advantage of [Managed Metadata services](https://docs.microsoft.com/sharepoint/managed-metadata#terms) term store taxonomy to display preferred terms for data that you extract.</span></span>  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
-<span data-ttu-id="a0bee-105">Por ejemplo, el modelo identifica y clasifica todos los documentos de **contrato** que se cargan en la biblioteca de documentos.</span><span class="sxs-lookup"><span data-stu-id="a0bee-105">As an example, your model identifies and classifies all **Contract** documents that are uploaded to the document library.</span></span>  <span data-ttu-id="a0bee-106">Además, el modelo también extrae un valor de **servicio de contrato** de cada contrato y lo muestra en una columna en la vista de biblioteca.</span><span class="sxs-lookup"><span data-stu-id="a0bee-106">Additionally, the model also extracts a **Contract Service** value from each contract, and will display it in a column in your library view.</span></span> <span data-ttu-id="a0bee-107">Entre los distintos valores de servicios de contrato en los contratos, hay varios valores anteriores que su compañía ya no utiliza y a los que se les ha cambiado el nombre.</span><span class="sxs-lookup"><span data-stu-id="a0bee-107">Among the various Contract Services values in the contracts, there are several older values that your company no longer uses and have been renamed.</span></span> <span data-ttu-id="a0bee-108">Por ejemplo, todas las referencias a los términos *diseño*, *gráficos*o servicios del contrato de *topografía* deben llamarse ahora *creativo*.</span><span class="sxs-lookup"><span data-stu-id="a0bee-108">For example, all references to the terms *Design*, *Graphics*, or *Topography* contract services should now be called *Creative*.</span></span> <span data-ttu-id="a0bee-109">Siempre que el modelo extrae uno de los términos obsoletos de un documento de contrato, desea que muestre el término actual-creativo-en la vista de biblioteca.</span><span class="sxs-lookup"><span data-stu-id="a0bee-109">Whenever your model extracts one of the outdated terms from a contract document, you want it to display the current term - Creative - in your library view.</span></span> <span data-ttu-id="a0bee-110">En el ejemplo siguiente, al entrenar el modelo, vemos que un documento de muestra contiene el período de *diseño*obsoleto.</span><span class="sxs-lookup"><span data-stu-id="a0bee-110">In the example below, while training the model we see that one sample document contains the outdated term of *Design*.</span></span>
+</br>
+
+
+<span data-ttu-id="bef6b-104">Cuando se crea un extractor en el modelo de comprensión de documentos en SharePoint Syntex, puede aprovechar la taxonomía del almacén de términos de los [servicios de metadatos administrados](https://docs.microsoft.com/sharepoint/managed-metadata#terms) para mostrar los términos preferidos para los datos que extraerá.</span><span class="sxs-lookup"><span data-stu-id="bef6b-104">When you create an extractor in your document understanding model in SharePoint Syntex, you can take advantage of [Managed Metadata services](https://docs.microsoft.com/sharepoint/managed-metadata#terms) term store taxonomy to display preferred terms for data that you extract.</span></span>  
+
+<span data-ttu-id="bef6b-105">Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato** cargados en la biblioteca de documentos.</span><span class="sxs-lookup"><span data-stu-id="bef6b-105">As an example, your model identifies and classifies all **Contract** documents that are uploaded to the document library.</span></span>  <span data-ttu-id="bef6b-106">Además, el modelo también extrae un valor de **Servicio de contrato** de cada contrato, y lo mostrará en una columna de la vista de la biblioteca.</span><span class="sxs-lookup"><span data-stu-id="bef6b-106">Additionally, the model also extracts a **Contract Service** value from each contract, and will display it in a column in your library view.</span></span> <span data-ttu-id="bef6b-107">Entre los distintos valores de Servicios de contrato en los contratos, hay varios valores anteriores que la empresa ya no usa y a los que se les ha cambiado el nombre.</span><span class="sxs-lookup"><span data-stu-id="bef6b-107">Among the various Contract Services values in the contracts, there are several older values that your company no longer uses and have been renamed.</span></span> <span data-ttu-id="bef6b-108">Por ejemplo, todas las referencias a los términos de los servicios de contratos *Diseño*, *Gráficos* o *Topografía* ahora deberían llamarse *Creativo*.</span><span class="sxs-lookup"><span data-stu-id="bef6b-108">For example, all references to the terms *Design*, *Graphics*, or *Topography* contract services should now be called *Creative*.</span></span> <span data-ttu-id="bef6b-109">Siempre que el modelo extrae uno de los términos desactualizado de un documento de contrato, quiere que muestre el término actual, "Creativo", en la vista de la biblioteca.</span><span class="sxs-lookup"><span data-stu-id="bef6b-109">Whenever your model extracts one of the outdated terms from a contract document, you want it to display the current term - Creative - in your library view.</span></span> <span data-ttu-id="bef6b-110">En el ejemplo siguiente, al entrenar el modelo, observamos que un documento de muestra contiene el término desactualizado de *Diseño*.</span><span class="sxs-lookup"><span data-stu-id="bef6b-110">In the example below, while training the model we see that one sample document contains the outdated term of *Design*.</span></span>
 
    ![Almacén de términos](../media/content-understanding/design.png)</br>
 
 
-## <a name="term-set-synonyms"></a><span data-ttu-id="a0bee-112">Sinónimos del conjunto de términos</span><span class="sxs-lookup"><span data-stu-id="a0bee-112">Term set synonyms</span></span> 
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a><span data-ttu-id="bef6b-112">Usar una columna de metadatos administrados en el extractor</span><span class="sxs-lookup"><span data-stu-id="bef6b-112">Use a Managed metadata column in your extractor</span></span>
 
-<span data-ttu-id="a0bee-113">Los conjuntos de términos se configuran en el almacén de términos de servicios de metadatos administrados en el centro de administración de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="a0bee-113">Term sets are configured in the Managed Metadata services term store in the SharePoint admin center.</span></span> <span data-ttu-id="a0bee-114">En el ejemplo siguiente, el [conjunto de términos](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) de *servicios de contrato* está configurado para incluir una serie de términos, incluido el *creativo*.</span><span class="sxs-lookup"><span data-stu-id="a0bee-114">In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.</span></span>  <span data-ttu-id="a0bee-115">Los detalles de este muestran que el término tiene tres sinónimos (*diseño*, *gráficos*y *topografía*) y que los sinónimos se deben traducir a *creativo*.</span><span class="sxs-lookup"><span data-stu-id="a0bee-115">The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*.</span></span>
+<span data-ttu-id="bef6b-113">Los conjuntos de términos se configuran en el almacén de términos de servicios de metadatos administrados en el Centro de administración de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="bef6b-113">Term sets are configured in the Managed Metadata services term store in the SharePoint admin center.</span></span> <span data-ttu-id="bef6b-114">En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) se configura para incluir un número de términos, incluido *Creativo*.</span><span class="sxs-lookup"><span data-stu-id="bef6b-114">In the the example below, the *Contract Services* [term set](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) is configured to include a number of terms, including *Creative*.</span></span>  <span data-ttu-id="bef6b-115">En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*.</span><span class="sxs-lookup"><span data-stu-id="bef6b-115">The details for it show that the term has three synonyms (*Design*, *Graphics*, and *Topography*) and the synonyms should be translated to *Creative*.</span></span> 
 
    ![Conjunto de términos](../media/content-understanding/term-store.png)</br>
 
-<span data-ttu-id="a0bee-117"><Mike, aquí es donde no estoy seguro de cómo describir esto.</span><span class="sxs-lookup"><span data-stu-id="a0bee-117"><Mike, here is where I am unsure about how to describe this.</span></span>  <span data-ttu-id="a0bee-118">Qué acción indica al modelo que cuando se crea un extractor para extraer y mostrar una columna de servicios de contrato, ¿cómo se marca dicha columna para usar el conjunto de términos de metadatos administrados para servicios creativos? ></span><span class="sxs-lookup"><span data-stu-id="a0bee-118">What action tells the model that when I create an extractor to extract and display a Contract Services column, how is that column "marked" to use the managed metadata term set for Creative Services?></span></span>
+<span data-ttu-id="bef6b-117">Puede haber varios motivos por los que quiera usar un sinónimo en el conjunto de términos.</span><span class="sxs-lookup"><span data-stu-id="bef6b-117">There could be a number of reasons why you might want to use a synonym in your term set.</span></span> <span data-ttu-id="bef6b-118">Por ejemplo, es posible que haya términos no actualizados, términos con nombre cambiado o variaciones en la denominación entre los departamentos de su organización.</span><span class="sxs-lookup"><span data-stu-id="bef6b-118">For example, there could be outdated terms, renamed terms, or variations between your organizations departments on naming.</span></span>
 
-## <a name="configure-your-document-library-site-column-for-a-managed-metadata-field"></a><span data-ttu-id="a0bee-119">Configurar la columna de sitio de la biblioteca de documentos para un campo de metadatos administrados</span><span class="sxs-lookup"><span data-stu-id="a0bee-119">Configure your document library site column for a managed metadata field</span></span>
+<span data-ttu-id="bef6b-119">Para que el campo de metadatos administrados esté disponible para que lo seleccione cuando cree el extractor en el modelo, debe [agregarlo como una columna de sitio de metadatos administrados](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f).</span><span class="sxs-lookup"><span data-stu-id="bef6b-119">To make the managed metadata field available for you to select when you create your extractor in your model, you need to [add it as a managed-metadata site column](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f).</span></span> <span data-ttu-id="bef6b-120">Después de agregar la columna del sitio, estará disponible para que la seleccione cuando cree el extractor para el modelo.</span><span class="sxs-lookup"><span data-stu-id="bef6b-120">After you add the site column, it will be available for you to select when you create the extractor for your model.</span></span>
+
+   ![Servicio de contrato](../media/content-understanding/contract-services.png)</br>
 
 
-   ![Crear metadatos administrados](../media/content-understanding/creative.png)</br>
+<span data-ttu-id="bef6b-122">Después de aplicar el modelo a la biblioteca de documentos, cuando los documentos se carguen en la biblioteca, en la columna *Servicios creativos* se mostrará el término preferido (*Creativo*) cuando el extractor encuentre cualquiera de los valores de los sinónimos (*Diseño*, *Gráficos* y *Topografía*).</span><span class="sxs-lookup"><span data-stu-id="bef6b-122">After applying your model to the document library, when documents are uploaded to library, the *Creative Services* column will display the preferred term (*Creative*) when the extractor finds any of the synonym values (*Design*, *Graphics*, and *Topography*).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a0bee-121">Consulte también</span><span class="sxs-lookup"><span data-stu-id="a0bee-121">See Also</span></span>
-[<span data-ttu-id="a0bee-122">Introducción a los metadatos administrados</span><span class="sxs-lookup"><span data-stu-id="a0bee-122">Introduction to Managed Metadata</span></span>](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
-[<span data-ttu-id="a0bee-123">Crear un extractor</span><span class="sxs-lookup"><span data-stu-id="a0bee-123">Create an extractor</span></span>](create-an-extractor.md)</br>
-[<span data-ttu-id="a0bee-124">Crear una columna de metadatos administrados</span><span class="sxs-lookup"><span data-stu-id="a0bee-124">Create a managed metadata column</span></span>](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)</br>
+   ![Columna de servicio de contrato](../media/content-understanding/creative.png)</br>
+
+
+## <a name="see-also"></a><span data-ttu-id="bef6b-124">Consulte también</span><span class="sxs-lookup"><span data-stu-id="bef6b-124">See Also</span></span>
+[<span data-ttu-id="bef6b-125">Introducción a los metadatos administrados</span><span class="sxs-lookup"><span data-stu-id="bef6b-125">Introduction to Managed Metadata</span></span>](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+
+[<span data-ttu-id="bef6b-126">Crear un extractor</span><span class="sxs-lookup"><span data-stu-id="bef6b-126">Create an extractor</span></span>](create-an-extractor.md)
+
+[<span data-ttu-id="bef6b-127">Crear una columna de metadatos administrados</span><span class="sxs-lookup"><span data-stu-id="bef6b-127">Create a managed metadata column</span></span>](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
 
 
 
