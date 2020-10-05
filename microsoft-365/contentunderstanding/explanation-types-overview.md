@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Más información sobre los tipos de explicación en Microsoft SharePoint Syntex
-ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321802"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350308"
 ---
 # <a name="introduction-to-explanation-types"></a>Introducción a los tipos de explicación
 
@@ -34,7 +34,7 @@ Estos son los tipos de explicación disponibles:
 
 Un tipo de explicación de la lista de frases se usa normalmente para identificar y clasificar un documento a través del modelo. Como se describe en el ejemplo de etiqueta *médico remitente*, se trata de una cadena de palabras, frases, números o caracteres que es coherente en los documentos que se están identificando.
 
-Aunque no es un requisito, puede lograr un mejor éxito con su explicación si la frase que está registrando se encuentra en un lugar consistente en su documento. Por ejemplo, es posible que la etiqueta*médico remitente* puede encontrarse sistemáticamente en el primer párrafo del documento.
+Aunque no es un requisito, puede lograr un mayor éxito con su explicación si la frase que está registrando se encuentra en un lugar consistente en su documento. Por ejemplo, puede que la etiqueta*médico remitente* se encuentre sistemáticamente en el primer párrafo del documento.
 
 Si la distinción de mayúsculas y minúsculas es un requisito para identificar la etiqueta, usar el tipo Lista de frases le permite especificarla en la explicación si activa la casilla de verificación **Solo mayúsculas exactas**.
 
@@ -68,7 +68,7 @@ Además, si tiene requisitos de usar mayúsculas y minúsculas en su lista de pa
    ![Solo usar mayúsculas y minúsculas exactamente](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> En lugar de crear manualmente una explicación de las listas de patrones, utilice la[biblioteca de explicación ]() para usar plantillas de listas de patrones predefinidas para las listas de patrones comunes, como *fecha*, *números de teléfono*, *número de tarjeta de crédito*, etc. 
+> En lugar de crear manualmente una explicación de las listas de patrones, utilice la[biblioteca de explicación ](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) para usar plantillas de listas de patrones predefinidas para las listas de patrones comunes, como *fecha*, *números de teléfono*, *número de tarjeta de crédito*, etc. 
 
 ## <a name="proximity"></a>Proximidad 
 
@@ -87,7 +87,7 @@ Use la explicación de proximidad para definir el número de teléfono que se de
 
 #### <a name="what-are-tokens"></a>¿Qué son los tokens?
 
-Para poder usar el tipo de explicación de proximidad, entienda lo que es un token, ya que el número de tokens es cómo la explicación de la proximidad mide la distancia entre una explicación y otra.  
+Para poder usar el tipo de explicación de proximidad, necesita entender qué es un token, ya que la explicación de proximidad utiliza el número de tokens para medir la distancia entre una explicación y otra.  
 
 Un token es un intervalo continuo (sin espacios ni signos de puntuación) de letras y números. Un espacio NO es un token. Cada signo de puntuación es un token. En la siguiente tabla se muestran algunos ejemplos de cómo determinar el número de tokens en una frase.
 

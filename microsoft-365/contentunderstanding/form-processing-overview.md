@@ -1,50 +1,58 @@
 ---
-title: Introducción al procesamiento de formularios
+title: Información general del procesamiento de formularios
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: 518bc13017762bbe21420a81726e89c9c327834d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
+ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295181"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338618"
 ---
-# <a name="form-processing-overview-preview"></a>Información general sobre el procesamiento de formularios (versión preliminar)
+# <a name="form-processing-overview"></a>Información general del procesamiento de formularios
 
-El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información sobre Project Cortex](https://aka.ms/projectcortex).
+ ![Generador de IA](../media/content-understanding/ai-builder.png)</br>
 
-Project Cortex usa el procesamiento de formularios de Microsoft PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) para crear modelos dentro de las bibliotecas de documentos de SharePoint.
+Microsoft SharePoint Syntex usa el procesamiento de formularios del [generador de IA](https://docs.microsoft.com/ai-builder/overview) de Microsoft PowerApps para crear modelos en las bibliotecas de documentos de SharePoint.
 
-Puede usar el procesamiento de formularios del generador de AI para crear modelos AI que usen la tecnología de aprendizaje automático para identificar y extraer pares de valores clave y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
+Puede usar el procesamiento de formularios del generador de IA para crear modelos de IA que usan la tecnología de aprendizaje automático para identificar y extraer pares de valor-clave y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
 
-Use el procesamiento de formularios del generador de AI para crear modelos AI que utilicen la tecnología de machine learning (ML) para identificar y extraer pares clave-valor y datos de tabla de documentos estructurados o semiestructurados, como formularios y facturas.
+La mayoría de las organizaciones suelen recibir facturas en grandes cantidades y de una gran variedad de orígenes, como correo, fax, correo electrónico, etc. Procesar estos documentos y añadirlos manualmente a una base de datos puede suponer un tiempo considerable. Mediante el uso de IA para extraer el texto, los pares clave o de valor y las tablas de los documentos, el procesamiento de formularios automatiza este proceso. 
 
-Las organizaciones a menudo reciben facturas en grandes cantidades de diversos orígenes, como correo, fax, correo electrónico, etc. El procesamiento de estos documentos y su introducción manual en una base de datos puede llevar una cantidad considerable de tiempo. Mediante el uso de AI para extraer el texto, los pares clave/valor y las tablas de los documentos, el procesamiento de formularios automatiza este proceso. 
+> [!NOTE]
+> Consulte la guía [Adopción de SharePoint Syntex: Guía de introducción](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example) para obtener más información sobre ejemplos de escenarios de procesamiento de formularios.
 
-Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se cargan en la biblioteca de documentos. Desde cada pedido de compra, puede extraer y Mostrar datos específicos que sean importantes para usted, como *número de pedido*, *fecha*o *coste total*.
+Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se hayan cargado en la biblioteca de documentos. A partir de cada pedido de compra, puede extraer y mostrar datos específicos que sean importantes para usted, como el *Número de pedido de compra*, la *Fecha* o el *Coste total*.
 
-También puede usar archivos de ejemplo para entrenar el modelo y definir la información que se va a extraer del formulario. El diseño del documento se conoce mediante el entrenamiento del modelo. Necesitará un mínimo de cinco documentos de formulario para comenzar. La creación de AI analiza los archivos de ejemplo para ver los pares clave-valor y, a continuación, identifica de forma manual los que no se han detectado.  El generador de AI permite probar la precisión del modelo en los archivos de ejemplo.
+![Vista de la biblioteca de documentos](../media/content-understanding/doc-lib-done.png)</br>  
 
-Después de entrenar y publicar el modelo, úselo para crear un [flujo de automatización energética](https://docs.microsoft.com/power-automate/getting-started) que se ejecuta después de que se cargue un archivo en la biblioteca de documentos de SharePoint. A continuación, se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
+También puede usar archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento se aprende al entrenar el modelo, y aprende a extraer los datos de ubicaciones similares en los formularios, ya que tienen un diseño estructurado de forma similar. 
 
-Use archivos de ejemplo para entrenar el modelo y definir la información que se extraerá del formulario. El diseño del documento se conoce mediante el entrenamiento del modelo. Solo necesita cinco documentos de formulario para empezar. El generador de AI analizará los archivos de muestra de los pares clave-valor, y también puede identificar manualmente aquellos que no se hayan detectado.  El generador de AI permite probar la precisión del modelo en los archivos de ejemplo.
+Necesita un mínimo de cinco documentos de formulario para empezar. La creación de IA analiza los archivos de ejemplo para buscar pares de clave-valor e identifica manualmente los que es posible que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
 
-Después de entrenar y publicar el modelo, puede usarlo para crear un [flujo de automatización de energía](https://docs.microsoft.com/power-automate/getting-started). El flujo se ejecuta cuando un archivo se carga en la biblioteca de documentos de SharePoint y extrae los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
+Una vez que haya entrenado y publicado el modelo, úselo para crear un [flujo de Power Automate](https://docs.microsoft.com/power-automate/getting-started) que se ejecuta después de que se cargue un archivo en la biblioteca de documentos de SharePoint. Luego, se extraerán los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
 
-Un administrador de Office 365 debe [Habilitar el procesamiento de formularios](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en él.
+Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. El generador de IA analizará los archivos de ejemplo para pares de clave y valor, y también puede identificar manualmente los que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
+
+Una vez que haya entrenado y publicado el modelo, el modelo crea un [flujo de Power Automate](https://docs.microsoft.com/power-automate/getting-started). El flujo se ejecuta cuando se carga un archivo en la biblioteca de documentos de SharePoint y se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
+
+Los administradores de Office 365 deben [habilitar el procesamiento de formularios](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en ella. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
+
+
 
 ## <a name="see-also"></a>Consulte también
   
-[Documentación automatizada de la energía](https://docs.microsoft.com/power-automate/)</br>
-[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)</br>
-[Información general sobre el documento](document-understanding-overview.md)</br>
-[Aprendizaje: mejorar el rendimiento empresarial con el generador de AI](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
+[Documentación de Power Automate](https://docs.microsoft.com/power-automate/)
+
+[Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)
+
+[Información general sobre la comprensión de documentos](document-understanding-overview.md)
+
+[Aprendizaje: mejorar el rendimiento empresarial con el generador de IA](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

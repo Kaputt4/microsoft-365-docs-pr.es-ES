@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321814"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338654"
 ---
-# <a name="create-an-extractor-preview"></a>Crear un extractor (vista previa)
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
 
 </br>
@@ -122,9 +122,20 @@ Si vuelve a recibir un **No coincidencia** en sus archivos etiquetados, es proba
 
 ## <a name="test-your-model"></a>Pruebe el modelo
 
-Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes. Este es un paso útil para evaluar la "aptitud" o preparación del modelo antes de usarlo, probándolo en archivos que el modelo no ha visto antes.
+Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes. Se trata de un paso opcional, pero resulta útil para evaluar la idoneidad del modelo o determinar si está preparado antes de usarlo, y para ello se prueba en archivos que el modelo no ha visto antes.
 
-1. En la página principal del modelo, haga clic en la pestaña **Prueba**.  Esto ejecuta el modelo en sus archivos de muestra sin etiquetar.
+1. En la página principal del modelo, haga clic en la pestaña **Prueba**. Se ejecutará el modelo en sus archivos de muestra sin etiquetar.
 2. En la lista de **Archivos de prueba**, sus archivos de ejemplo son presentados para mostrar si el modelo es capaz de extraer la información que necesita. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
 
-    ![Prueba en sus archivos](../media/content-understanding/test-filies-extractor.png) 
+    ![Prueba en los archivos](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>Consulte también
+[Crear un clasificador](create-a-classifier.md)
+
+[Tipos de explicación](explanation-types-overview.md)
+
+[Aprovechar la taxonomía del almacén de términos al crear un extractor](leverage-term-store-taxonomy.md)
+
+[Información general sobre la comprensión mediante documentos](document-understanding-overview.md)
+
+[Aplicar un modelo](apply-a-model.md) 
