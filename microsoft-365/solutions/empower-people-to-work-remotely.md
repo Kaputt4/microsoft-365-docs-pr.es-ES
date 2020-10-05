@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configure una infraestructura de servicios y seguridad que permita a los trabajadores trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: f5364103610fbac8efe47b9ae7e776d215fc0733
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357307"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327740"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
@@ -95,7 +95,7 @@ Para ver los criterios de seguridad y cumplimiento consulte [Implementar la segu
 
 [![Póster para aumentar la productividad de los trabajadores remotos](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-También puede descargar este póster en los formatos [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
+También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) e imprimirlo en tamaño de carta, legal o tabloide (11 x 17).
 
 Siga los pasos que se indican a continuación para proteger y optimizar el acceso a los servidores, datos y servicios en la nube de la organización y optimizar la productividad de sus empleados.
 
