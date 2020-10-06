@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305382"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357888"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -76,7 +76,7 @@ Si necesita ayuda para crear o editar una etiquetas de confidencialidad, vea las
 
 En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
-- **Privacidad de los sitios de equipos conectados a grupos de Office 365**: mantenga el valor predeterminado de **Público: cualquier persona de la organización puede acceder al sitio ** si quiere que todos en su organización accedan al sitio de grupo o grupo donde se aplica esta etiqueta.
+- **Privacidad de los sitios de equipos conectados a grupos de Microsoft 365**: mantenga el valor predeterminado de **Público: cualquier persona de la organización puede acceder al sitio** si quiere que todos en su organización accedan al sitio de grupo o grupo donde se aplica esta etiqueta.
 
   Seleccione **Privado** si quiere que el acceso esté restringido solo a miembros aprobados de su organización.
 
