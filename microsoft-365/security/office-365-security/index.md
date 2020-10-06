@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Seguridad en Office 365, de EOP a ATP, planes 1 y 2, configuraciones de seguridad estándar frente a estrictas y mucho más, para que pueda comprender lo que tiene y proteger sus propiedades.
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Seguridad en Office 365, de EOP a ATP, planes 1 y 2, configuraciones de seguridad estándar frente a estrictas y mucho más. Comprenda lo que tiene y cómo proteger sus propiedades.
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338755"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359158"
 ---
 # <a name="office-365-security-overview"></a>Introducción a la seguridad de Office 365
 
@@ -53,9 +53,9 @@ Pero, en términos de arquitectura, comencemos a pensar en cada una de las parte
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-Aunque cada uno de estos servicios enfatiza un objetivo específico entre proteger, detectar, investigar y responder, ***todos*** los servicios pueden llevar a cabo ***cualquiera*** de los objetivos de protección, detección, investigación y respuesta.
+Aunque cada uno de estos servicios enfatiza un objetivo entre la protección, la detección, la investigación y la respuesta, ***todos*** los servicios pueden llevar a cabo ***cualquiera*** de los objetivos de la protección, la detección, la investigación y la respuesta.
 
-El núcleo de la seguridad de Office 365 es la protección EOP. ATP P1 contiene EOP. ATP P2 contiene P1 y EOP. La estructura es acumulativa. Por eso, al configurar ATP, debe empezar con EOP y trabajar hasta las capas.
+El núcleo de la seguridad de Office 365 es la protección EOP. ATP P1 contiene EOP. ATP P2 contiene P1 y EOP. La estructura es acumulativa. Por eso, al configurar este producto, debe empezar con EOP y trabajar en ATP.
 
 Aunque la configuración de la autenticación de correo electrónico tiene su propio DNS público, es importante configurar esta característica para ayudar a defender contra la suplantación de identidad. *Si tiene EOP,* ***debe configurar la [autenticación de correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***.
 
@@ -138,11 +138,11 @@ Esta referencia rápida le ayudará a comprender las funcionalidades que se incl
 - Si su suscripción actual no incluye ATP de Office 365 y lo desea, [póngase en contacto con sales para iniciar una prueba](https://go.microsoft.com/fwlink/p/?LinkId=518644)y descubra cómo puede funcionar ATP en su organización.
 
 > [!TIP]
-> ***Sugerencia de Insider***. Puede usar la tabla de contenido docs.microsoft.com para obtener información sobre EOP y ATP. Navegue a artículos de [seguridad de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) y verá que la organización de la tabla de contenido comienza con la evaluación y la implementación (incluida la migración) y, a continuación, sigue en prevención, detección, investigación y respuesta. <p> Esta estructura se divide para que los temas de **Administración de seguridad** sigan los temas de **operaciones de seguridad** . Si es un miembro nuevo de cualquier rol de trabajo, use el vínculo de esta sugerencia y su conocimiento de la tabla de contenido para ayudarle a aprender el espacio. Recuerde usar *vínculos de comentarios* y *calificar artículos* a medida que avanza. Los comentarios nos ayudarán a mejorar lo que le ofrecemos.
+> ***Sugerencia de Insider***. Puede usar la tabla de contenido docs.microsoft.com para obtener información sobre EOP y ATP. Vuelva a esta página, [Office 365 Security Overview](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide), y verá que la organización de la tabla de contenido está en la barra lateral. Comienza con la implementación (incluida la migración) y, a continuación, sigue en prevención, detección, investigación y respuesta. <p> Esta estructura se divide para que los temas de **Administración de seguridad** sigan los temas de **operaciones de seguridad** . Si es un miembro nuevo de cualquier rol de trabajo, use el vínculo de esta sugerencia y su conocimiento de la tabla de contenido para ayudarle a aprender el espacio. Recuerde usar *vínculos de comentarios* y *calificar artículos* a medida que avanza. Los comentarios nos ayudarán a mejorar lo que le ofrecemos.
 
 ## <a name="where-to-go-next"></a>Dónde ir junto
 
-Si es un administrador de seguridad, es posible que tenga que configurar DKIM o DMARC para su correo, distribuir los ajustes preestablecidos de seguridad ' STRICT ' para los usuarios con prioridad o puede que le interesen las novedades del producto. Si tiene operaciones de seguridad, puede que desee aprovechar las detecciones en tiempo real o el explorador de amenazas para investigar y responder, o entrenar la detección del usuario final con el simulador de ataques. Estas son algunas recomendaciones adicionales para qué mirar a continuación.
+Si es un administrador de seguridad, es posible que deba configurar DKIM o DMARC para el correo. Es posible que desee implementar ajustes preestablecidos de seguridad ' STRICT ' para los usuarios con prioridad o buscar las novedades del producto. O bien, si tiene un OPS de seguridad, puede que desee aprovechar las detecciones en tiempo real o el explorador de amenazas para investigar y responder, o entrenar la detección del usuario final con el simulador de ataques. En cualquier caso, estas son algunas recomendaciones adicionales para lo que se debe considerar a continuación.
 
 [Autenticación de correo electrónico, que incluye SPF, DKIM y DMARC (con vínculos al programa de instalación de los tres)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
