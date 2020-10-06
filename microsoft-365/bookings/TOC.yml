@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: Definir las ofertas de servicio
           href: define-service-offerings.md
+        - name: Agregar personal a las reservas
+          href: add-staff.md
         - name: Programar cierres de empresa y tiempo libre
           href: schedule-closures-time-off-vacation.md
         - name: Establecer las directivas de programación
