@@ -11,17 +11,17 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la administración del conocimiento en Project Cortex.
-ms.openlocfilehash: 80750ee94248b21b8ac7bd3869830a7986de34b9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949377"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361956"
 ---
-# <a name="knowledge-management-0verview-preview"></a>Knowledge Management 0verview (versión preliminar)
+# <a name="knowledge-management-overview-preview"></a>Introducción a la administración del conocimiento (vista previa)
 
 > [!Note] 
-> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtener más información sobre Project Cortex](https://aka.ms/projectcortex) 
+> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
 La administración de conocimiento usa la tecnología de Microsoft AI, Microsoft 365, Delve, búsqueda y otros componentes y servicios para crear una red de conocimiento en el entorno de Microsoft 365. 
 
@@ -81,6 +81,6 @@ Además, los usuarios con los permisos adecuados pueden etiquetar elementos como
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Configuración de la administración del conocimiento](set-up-knowledge-network.md)</br>
 [Información general sobre el centro de temas](topic-center-overview.md)

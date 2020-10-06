@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 08/25/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre la autenticación moderna híbrida y los requisitos previos para su uso con Skype empresarial local y los servidores de Exchange.
-ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546449"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361932"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para el uso en Skype Empresarial y los servidores de Exchange locales
 
@@ -143,18 +143,22 @@ Verifique y compruebe estos elementos antes de continuar:
   - Si usa Exchange Server 2013, al menos un servidor debe tener instalados los roles de servidor de Acceso de cliente y Buzón de correo. Aunque es posible instalar los roles de Buzón de correo y Acceso de cliente en servidores independientes, le recomendamos que instale los dos en el mismo servidor para proporcionar mayor confiabilidad y mejor rendimiento.
   - Si usa Exchange Server 2016 o una versión posterior, al menos un servidor debe tener instalado el rol de servidor de Buzón de correo.
   - No hay ningún servidor de Exchange 2007 o 2010 en el entorno híbrido.
-  - Todos los servidores de Exchange deben tener instaladas las últimas actualizaciones acumulativas, consulte [Actualizar Exchange a las últimas actualizaciones acumulativas](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) para buscar y administrar todas las actualizaciones disponibles.
+  - Todos los servidores de Exchange deben tener instaladas las últimas actualizaciones acumulativas, consulte [Actualizar Exchange a las últimas actualizaciones acumulativas](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) para buscar y administrar todas las actualizaciones disponibles.
 
 - **Requisitos de protocolo y el cliente de Exchange**
 
-  - Los siguientes clientes son compatibles con la autenticación moderna:
+    La disponibilidad de la autenticación moderna está determinada por la combinación del cliente, el protocolo y la configuración. Si la autenticación moderna no es compatible con el cliente, el protocolo o la configuración, el cliente seguirá aprovechando la autenticación heredada.
+  
+    Los siguientes clientes y protocolos admiten la autenticación moderna con Exchange local cuando la autenticación moderna está habilitada en el entorno:
 
   |**Clientes**|**Protocolo principal**|**Notas**|
   |:-----|:-----|:-----|
-  |Outlook 2013 y Outlook 2016  <br/> |MAPI sobre HTTP  <br/> |Se debe habilitar MAPI sobre HTTP en Exchange para poder aprovechar la autenticación moderna con estos clientes (por lo general, se habilitan o son True para las nuevas instalaciones de Exchange 2013 Service Pack 1 y versiones posteriores); para más información, consulte [Cómo funciona la autenticación moderna para las aplicaciones de cliente de Office 2013 y Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Asegúrese de que está ejecutando la compilación mínima necesaria de Outlook. Consulte [Últimas actualizaciones para las versiones de Outlook que usan Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 para Mac  <br/> |Servicios Web de Exchange  <br/> |  <br/> |
-  |Outlook para iOS y Android  <br/> |  <br/> |Consulte [Usar la autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) para más información.  <br/> |
+  |Outlook 2013 y versiones posteriores  <br/> |MAPI sobre HTTP  <br/> |Se debe habilitar MAPI sobre HTTP en Exchange para poder aprovechar la autenticación moderna con estos clientes (por lo general, se habilitan o son True para las nuevas instalaciones de Exchange 2013 Service Pack 1 y versiones posteriores); para más información, consulte [Cómo funciona la autenticación moderna para las aplicaciones de cliente de Office 2013 y Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Asegúrese de que está ejecutando la compilación mínima necesaria de Outlook. Consulte [Últimas actualizaciones para las versiones de Outlook que usan Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2016 para Mac y versiones posteriores  <br/> |Servicios Web de Exchange  <br/> |  <br/> |
+  |Outlook para iOS y Android  <br/> | Tecnología de sincronización de Microsoft <br/> |Consulte [Usar la autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) para más información.  <br/> |
   |Clientes de Exchange ActiveSync (p.ej., correo de iOS11)  <br/> |Exchange ActiveSync  <br/> |Para los clientes de Exchange ActiveSync que son compatibles con la autenticación moderna, debe volver a crear el perfil para cambiar de la autenticación básica a la autenticación moderna.  <br/> |
+
+    Los clientes o los protocolos que no se enumeran (por ejemplo, POP3) no admiten la autenticación moderna con Exchange local y continúan aprovechando los mecanismos de autenticación heredados, incluso cuando la autenticación moderna está habilitada en el entorno.
 
 - **Requisitos previos generales**
   - Si usa AD FS, debe tener Windows 2012 R2 AD FS 3.0 y superior para la federación.

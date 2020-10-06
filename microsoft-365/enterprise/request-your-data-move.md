@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Los clientes de Office 365 existentes deben enviar una solicitud antes de la fecha límite de su país para que los datos de Microsoft 365 Services se muevan a su nueva geografía.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333889"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361944"
 ---
 # <a name="how-to-request-your-data-move"></a>Cómo solicitar el movimiento de datos
 
@@ -31,7 +31,7 @@ Los clientes elegibles de Microsoft 365 pueden solicitar la migración de los da
   
 ## <a name="when-can-i-request-a-move"></a>¿Cuándo puedo solicitar un movimiento?
 
-|**Clientes con país de suscripción en**|**Inicio del período de la solicitud**|**Fecha límite de solicitud**|
+| Clientes con país de suscripción en | Inicio del período de la solicitud | Fecha límite de solicitud |
 |:-----|:-----|:-----|
 |Japón  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
 |Australia, Nueva Zelanda, Fiji  <br/> |1 de enero de 2020  <br/> |30 de junio de 2020  <br/> |
@@ -44,7 +44,7 @@ Los clientes elegibles de Microsoft 365 pueden solicitar la migración de los da
 |Sudáfrica  <br/> |25 de julio de 2019  <br/> |30 de junio de 2020  <br/> |
 |Suiza, Liechtenstein  <br/> |10 de diciembre de 2019  <br/> |30 de junio de 2020  <br/> |
 |Noruega  <br/> |15 de abril de 2020  <br/> |31 de octubre de 2020  <br/> |
-|Alemania  <br/> |1 de octubre de 2020  <br/> |31 de marzo de 2021  <br/> |
+|Alemania  <br/> |Plane  <br/> |Plane  <br/> |
 
 ## <a name="how-to-request-a-move"></a>Cómo solicitar un movimiento
 
