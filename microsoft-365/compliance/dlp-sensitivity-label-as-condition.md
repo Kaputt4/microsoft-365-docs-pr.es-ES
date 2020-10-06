@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga más información sobre los servicios y los tipos de elementos en los que puede usar etiquetas de sensibilidad como condiciones en directivas DLP
-ms.openlocfilehash: bb06ed6919a396bef1e5d1f1cb04731fa11267ae
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235727"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321115"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Usar etiquetas de confidencialidad como condición en las directivas DLP (vista previa)
 
@@ -59,7 +59,7 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 
 \* Se admite la detección DLP de etiquetas de confidencialidad en mensajes de correo electrónico. No se admite la detección DLP de etiquetas de confidencialidad en los datos adjuntos de correo electrónico.
 
-\** Los datos adjuntos enviados en Teams sobre chats o canales 1:1 se cargan automáticamente en OneDrive para la empresa y SharePoint. Por lo tanto, si se incluyen SharePoint Online o OneDrive para la empresa como ubicaciones en su directiva DLP, los datos adjuntos etiquetados enviados en Teams se incluirán automáticamente en el ámbito de esta condición. No es necesario seleccionar Teams como una ubicación en la Directiva DLP.
+\** Los datos adjuntos enviados en Teams sobre chats o canales 1:1 son cargados automáticamente en OneDrive para la Empresa y SharePoint. De modo que si SharePoint Online o OneDrive para la Empresa están incluidos como ubicaciones en su directiva de DLP, entonces los adjuntos etiquetados enviados en Teams serán incluidos de forma automática en el alcance de esta condición. No es necesario seleccionar Teams como una ubicación en la Directiva DLP.
 
 ### <a name="supported-scenarios"></a>Escenarios admitidos
 

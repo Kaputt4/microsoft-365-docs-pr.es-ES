@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131808"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326751"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -75,7 +75,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 
 |Característica o comportamiento|Configuración de etiqueta: etiquetado automático para aplicaciones de Office |Directiva: etiquetado automático|
 |:-----|:-----|:-----|
-|Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
+|Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No\* |
 |Restringir por ubicación|No |Sí |
 |Condiciones: clasificadores que se pueden entrenar|Sí |No |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
@@ -85,6 +85,8 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |Aplicar marcas visuales |Sí |Sí (solo correo electrónico) |
 |Reemplazar el cifrado IRM aplicado sin una etiqueta|Sí, si el usuario tiene el uso mínimo adecuado de exportar |Sí (solo correo electrónico) |
 |Etiquetar correo electrónico entrante|No |Sí (no se aplicó cifrado) |
+
+\*El etiquetado automático no está disponible actualmente en todas las regiones. Si su espacio empresarial no es compatible con esta funcionalidad, la pestaña etiquetado automático no se puede ver en el centro de etiquetado de administración.
 
 > [!NOTE]
 > Si el contenido se ha etiquetado manualmente, dicha etiqueta nunca se reemplazará por el etiquetado automático. Sin embargo, las directivas de etiquetado automático pueden reemplazar una [etiqueta de prioridad más baja](sensitivity-labels.md#label-priority-order-matters) que se aplicó con el etiquetado automático para las aplicaciones de Office.
@@ -242,6 +244,8 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     
     ![Pestaña Etiquetado automático](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > Si no ve la pestaña**Etiquetado automático**, esta función no se encuentra disponible en su región.
 
 3. Seleccione **+ Crear directiva de etiquetado automático**. Se iniciará el asistente de Nueva Directiva:
     
