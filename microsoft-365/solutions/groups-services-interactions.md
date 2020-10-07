@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Interacciones de los servicios de grupos
-ms.openlocfilehash: 9632debf1bc6fdd2fce061a4c535906410700175
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662839"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377634"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de los servicios de grupos
 
@@ -112,16 +113,16 @@ En la siguiente tabla se proporciona una introducción a las interacciones de Mi
 |:---|:---|:---|:---|:---|
 |Azure AD|Pertenencia, controles de grupo, invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón de correo|Sí|Sí|Sí|
-|Formularios|Formulario|Sí|No|No|
+|Forms|Form|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
 |Aplicación de Power apps|Aplicación|Sí|No|No|
 |Power Automate|Flujo de trabajo|Sí|No|No|
 |Power BI (clásico)|Workspace|No|Sí|Sí|
 |Power BI (nueva)|Workspace|Sí|No|Sí|
-|Project para la web|Plan del proyecto|Sí|Sí|No|
-|Hoja de ruta|Hoja de ruta|Sí|Sí|No|
-|SharePoint|Sitio|Sí|Sí|Sí|
+|Project para la Web|Plan del proyecto|Sí|Sí|No|
+|Guía básica|Guía básica|Sí|Sí|No|
+|SharePoint|Site|Sí|Sí|Sí|
 |Stream|Canal, vídeo|Sí|Sí|Sí|
 |Teams|Equipo|No|Sí|Sí|
 |Yammer|Group|Sí|Sí|Sí|
@@ -174,7 +175,7 @@ De forma predeterminada, cuando se crea un equipo, el buzón y el calendario aso
 
 - Conversaciones
 - Fichas de & de canales
-- Meetings
+- Reuniones
 
 **¿Puede Teams crear un grupo?**
 
@@ -234,7 +235,7 @@ No, el buzón y el calendario no se pueden cambiar a un grupo diferente. Sin emb
 
 Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como el contenido y los servicios asociados a un grupo.
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Forms proporciona encuestas y cuestionarios basados en Web.
 
@@ -468,7 +469,7 @@ Sí y no. Un área de trabajo creada por Power BI solo se puede asociar a un gru
 
 Sí, al eliminar el área de trabajo en Power BI, se eliminará el contenido y los servicios asociados con el grupo y el grupo.
 
-## <a name="project-for-the-web"></a>Project para la web
+## <a name="project-for-the-web"></a>Project para la Web
 
 Project for the Web ofrece la capacidad de crear planes de proyectos, diagramas de Gantt y guías básicas.
 Características clave que se proporcionan a los grupos.
@@ -499,7 +500,7 @@ No, una vez que se establece la asociación con un grupo, no puede cambiar.
 
 No, al eliminar el proyecto en el proyecto para el Web no se eliminará el grupo.
 
-## <a name="roadmap"></a>Hoja de ruta
+## <a name="roadmap"></a>Guía básica
 
 Roadmap proporciona la capacidad de crear guías básicas del proyecto con Project para web y Project online.
 

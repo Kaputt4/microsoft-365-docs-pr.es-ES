@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c2f8bd6587e399fd1e928575b3cd9dfb2a4565eb
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195752"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377120"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar los elementos confidenciales con Microsoft 365
 
@@ -180,7 +181,7 @@ Las organizaciones que están sujetas a otras regulaciones de privacidad de dato
 
 La evaluación de RGPD consta de las siguientes secciones:
 
-| Section | Descripción |
+| Section | Description |
 |:-------|:-----|
 | Gobierno | <ol><li>¿Su Directiva de privacidad indica explícitamente qué información de datos se está procesando? </li><li>¿Se ejecutan de forma regular evaluaciones de impacto de privacidad (PIA)? </li><li> ¿Utiliza una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para realizar negocios con datos de PI en un individuo determinado? ¿Realiza un seguimiento de los datos de consentimiento? </li><li> ¿Realiza un seguimiento, la implementación y la administración de controles de auditoría? ¿Supervisa si hay pérdidas de datos? </li></ol>|
 | Eliminación y notificación | <ol><li>¿Proporciona instrucciones explícitas sobre cómo se puede obtener acceso a los datos de los usuarios? </li><li> ¿Tiene procesos documentados en su ubicación para controlar el consentimiento de cancelación? </li><li> ¿Tiene un proceso de eliminación automatizado de datos? </li><li>   ¿Tiene un proceso para validar la identidad al participar con un cliente? </li></ol>|

@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: Use las directivas y etiquetas de retención de 365 de Microsoft para administrar datos personales en su entorno de Microsoft 365.
-ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c2a933e556213ae4b78db9dc5f903885df969b27
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949257"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377050"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Control de la información sujeta a la normativa de privacidad de datos
 

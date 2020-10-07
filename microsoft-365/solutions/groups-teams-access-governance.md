@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo controlar el acceso en grupos de Microsoft 365, Teams y SharePoint.
-ms.openlocfilehash: 8b58016ffa421328e3c1442d4ed2364f2eedc37b
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662831"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377574"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Controlar el acceso a los grupos de Microsoft 365, Teams y SharePoint
 
@@ -27,7 +28,7 @@ Hay muchos controles que le permiten controlar la forma en que los usuarios obti
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de acceso disponibles en Microsoft 365. En las siguientes secciones se proporciona información adicional.
 
-|Categoría|Descripción|Referencia|
+|Categoría|Description|Referencia|
 |:-------|:----------|:--------|
 |Pertenencia|||
 ||Detección de equipos privados|[Administrar la detección de equipos privados en Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|

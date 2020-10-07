@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 Groups, Teams y SharePoint Collaboration.
-ms.openlocfilehash: cc8f7391b03cc65ba66cca6cf010137e3843ab05
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662829"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377538"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 Groups, Teams y SharePoint Collaboration
 
@@ -27,7 +28,7 @@ Microsoft 365 ofrece un conjunto completo de herramientas para mantener el cumpl
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de cumplimiento disponibles en Microsoft 365. En las siguientes secciones se proporciona información adicional.
 
-|Categoría|Descripción|Referencia|
+|Categoría|Description|Referencia|
 |:-------|:----------|:--------|
 |Retención de la información|||
 ||Conservar los grupos de contenido de correo y SharePoint|[Más información sobre las directivas de retención para SharePoint y OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|

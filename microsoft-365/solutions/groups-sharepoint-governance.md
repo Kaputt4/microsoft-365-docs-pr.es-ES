@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre las interacciones de configuración entre los grupos de Microsoft 365 y SharePoint
-ms.openlocfilehash: 0c9fdd69db82985039bae03768aa0c19f514c99f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: e8d4189c2d945d5a6d2aa78bd7ea980a77360ce0
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662836"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377562"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Interacciones de configuración entre los grupos de Microsoft 365 y SharePoint
 
@@ -29,7 +30,7 @@ Algunas configuraciones para los grupos de Microsoft 365 y SharePoint en Microso
 
 ## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Efectos de la configuración de SharePoint en grupos de 365 de Microsoft
 
-|Configuración de SharePoint|Descripción|Efecto en los grupos de 365 de Microsoft|Recomendación|
+|Configuración de SharePoint|Description|Efecto en los grupos de 365 de Microsoft|Recomendación|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |Uso compartido externo de la organización y el sitio|Determina si se pueden compartir sitios, archivos y carpetas con personas de fuera de la organización.|Si la configuración de SharePoint y los grupos no coinciden, es posible que los invitados del grupo tengan bloqueado el acceso al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, Compruebe la configuración de los grupos y de los sitios de SharePoint para los sitios de grupo conectados a un grupo.<br><br>Consulte [colaborar con invitados en un sitio](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site).|
 |Permitir/bloquear dominio|Permite o impide que el contenido se comparta con los dominios especificados.|Los grupos no reconocen las listas permitir o bloquear de SharePoint. Los usuarios de los dominios no permitidos en SharePoint podrían obtener acceso a SharePoint a través de un grupo.|Administre las listas de permitidos y bloqueados de dominio conjuntamente para Azure AD y SharePoint. Crear un proceso de gobierno para toda la organización para permitir y bloquear dominios.<br><br>Ver la [configuración de dominio de SharePoint](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) y la configuración de dominio de [Azure ad](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
@@ -39,7 +40,7 @@ Algunas configuraciones para los grupos de Microsoft 365 y SharePoint en Microso
 
 ## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>Efectos de la configuración de grupos de 365 de Microsoft en SharePoint
 
-|Configuración de Microsoft 365 Groups|Descripción|Efecto en SharePoint|Recomendación|
+|Configuración de Microsoft 365 Groups|Description|Efecto en SharePoint|Recomendación|
 |:---------------------------|:----------|:-------------------|:-------------|
 |Directivas de nomenclatura|Especifica los prefijos y los sufijos de nombre de grupo, y las palabras bloqueadas para la creación de grupos|Las directivas se aplican a los usuarios que crean sitios de grupo conectados a un grupo, pero no a sitios o sitios de comunicación con otras plantillas.|Cree una guía de nomenclatura separada para los sitios de comunicación si es necesario.|
 |Acceso de invitado de grupo|Especifica si las personas de fuera de la organización se pueden agregar a los grupos.|Si la configuración de SharePoint y los grupos no coinciden, es posible que los invitados del grupo tengan bloqueado el acceso al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, Compruebe la configuración de los grupos y de los sitios de SharePoint para los sitios de grupo conectados a un grupo.<br><br>Consulte [colaborar con invitados en un sitio](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site)|

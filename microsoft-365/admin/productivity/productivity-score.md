@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285194"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376978"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
-La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con información sobre cómo los usuarios usan Microsoft 365 y las experiencias tecnológicas que los admiten. La puntuación refleja el rendimiento de su organización con respecto a las medidas de experiencia de empleado y tecnología, y compara su puntuación con organizaciones como la suya.
+La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con información sobre cómo los usuarios usan Microsoft 365 y las experiencias tecnológicas que los admiten. La puntuación refleja el rendimiento de su organización con respecto a los usuarios y a las experiencias tecnológicas, y compara su puntuación con organizaciones como la suya.
 
 La puntuación incluye:
 
@@ -39,18 +39,18 @@ La puntuación incluye:
 
 Proporcionamos datos, información y recomendaciones en dos áreas: 
 
-- **Experiencia de los empleados:** Medimos cómo los usuarios colaboran en el contenido, cómo usan los productos de 365 de Microsoft para comunicarse y si usan Microsoft 365 en todas las plataformas. 
+- **Experiencias de personas:** Medimos cómo los usuarios colaboran en el contenido, cómo usan los productos de 365 de Microsoft para comunicarse y si usan Microsoft 365 en todas las plataformas. 
 
     Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo. Con la libertad de trabajar en cualquier dispositivo, son más productivos y están satisfechos. La comunicación de una manera flexible hace que los usuarios sean más eficientes, conforman mejores relaciones y su organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que le ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo. También proporcionamos acciones recomendadas para corregirlos, así como la información de conectividad de red de Microsoft 365 para su organización.
+- **Experiencias tecnológicas:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que le ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo. También proporcionamos acciones recomendadas para corregirlos, así como la información de conectividad de red de Microsoft 365 para su organización.
 
 Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
 
-La puntuación de productividad se basa en los resultados combinados de las categorías de empleado y experiencia tecnológica. Cada categoría se pondera equitativamente, con un total de 100 puntos por categoría. El total de puntos posibles para la puntuación de productividad es de 500.
+La puntuación de productividad se basa en los resultados combinados de las categorías de personas y experiencias tecnológicas. Cada categoría se pondera equitativamente, con un total de 100 puntos por categoría. El total de puntos posibles para la puntuación de productividad es de 500.
 
 ### <a name="score-categories"></a>Categorías de puntuación 
 
@@ -72,7 +72,7 @@ La puntuación se actualiza diariamente y refleja las acciones del usuario compl
 
 ## <a name="pre-requisites"></a>Requisitos previos 
 
-Necesita una suscripción a Microsoft 365 para empresas o Office 365 para empresas para obtener los datos de experiencia de los empleados y necesita usar servicios en la nube multiinquilino. Para obtener datos de análisis de extremos para el espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones.       Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre Microsoft Intune. 
+Necesita una suscripción de Microsoft 365 para empresas o Office 365 para empresas para que los usuarios experimenten datos y necesite usar servicios en la nube de varios inquilinos. Para obtener datos de análisis de extremos para el espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones.       Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre Microsoft Intune. 
 
 Para ver la puntuación de productividad de su organización, debe tener uno de los siguientes roles: 
 
@@ -94,17 +94,17 @@ La página de inicio de la puntuación de productividad muestra la puntuación t
 
 **La puntuación** se muestra como un valor porcentual, así como en puntos, de modo que puede ver los puntos (Numerator) y los puntos máximos posibles (denominador).
 
-Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación con organizaciones como la suya. Para las categorías de experiencia de empleado, la medida de Benchmark del mismo nivel se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto está compuesto por organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
+Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación con organizaciones como la suya. Para las categorías de experiencias de personas, la medida de Benchmark del mismo nivel se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto está compuesto por organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
 
 El punto de referencia del punto de conexión del análisis de extremos incluye objetivos para el rendimiento de inicio de dispositivo y la configuración de software recomendada en función de los valores de la mediana agregada en todos los inquilinos.
 
 Para la conectividad de red, el benchmark recomendado es de 80 puntos.
 
-La sección de **desglose de puntuación** proporciona un desglose de la puntuación de productividad con puntos de referencia de las áreas de experiencia de empleados y tecnología.
+La sección de **desglose de puntuación** proporciona un desglose de la puntuación de productividad con los benchmarks de las personas y las áreas de experiencia de tecnología.
 
 Historial de puntuación muestra cómo ha cambiado su puntuación en cada categoría en los últimos 6 meses.
 
-Las áreas experiencia de los **empleados** y **experiencia de tecnología** contienen la visión principal de las categorías de esas áreas. Puede hacer clic en cada categoría para ver información más detallada.
+Las áreas experiencias de las **personas** y **experiencias tecnológicas** contienen la visión principal de las categorías de esas áreas. Puede hacer clic en cada categoría para ver información más detallada.
 
 ## <a name="category-details-pages"></a>Páginas de detalles de categoría
 

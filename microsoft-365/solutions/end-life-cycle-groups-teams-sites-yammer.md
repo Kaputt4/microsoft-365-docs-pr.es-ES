@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Opciones de final de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: ab06f06cc65614ee313892a026c2f482d641791f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662811"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377180"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de final de ciclo de vida para grupos, equipos y Yammer
 
@@ -32,14 +33,14 @@ En la siguiente tabla se describen los servicios asociados a grupos y equipos, y
 |Servicio|Tipos de contenido|
 |:------|:---------------|
 |Teams|Conversaciones de canal, archivos en canales|
-|Formularios|Resultados y estructura de la encuesta|
+|Forms|Resultados y estructura de la encuesta|
 |OneNote|Bloc de notas|
 |Outlook|Correo y calendario|
 |Planner|Información de estado y tarea del proyecto|
 |Power Automate|Flujos de trabajo|
 |Power BI|Datos, informes y paneles|
 |Proyecto en la web|Planes de proyecto|
-|Hoja de ruta|Guías básicas|
+|Guía básica|Guías básicas|
 |SharePoint|Archivos, listas, Teams canal datos de wiki|
 |Stream|Vídeos|
 |Yammer|Conversaciones|
@@ -52,7 +53,7 @@ Los grupos y los equipos permanecen en un estado de eliminación temporal durant
 
 Hay tres áreas clave que los propietarios de grupo y de grupo y los administradores de TI deben tener en cuenta al eliminar un grupo o un equipo.
 
-**Contenido**
+**Content**
 
 ¿Se debe conservar el contenido después de que el equipo ya no funcione o exista? ¿Es suficiente para confiar en las capacidades de retención de Microsoft 365 o es parte del contenido de aplicaciones y servicios que no ofrece retención? ¿Es necesario conservar el contenido para fines de administración de registros, con fines de archivo, o para uso futuro y referencia?
 
@@ -100,7 +101,7 @@ Mientras las conversaciones del canal del equipo y el contenido del sitio de Sha
 - Los vídeos aún se pueden cargar, modificar y eliminar en la secuencia
 - Los flujos de automatización automatizada todavía pueden crearse, modificarse, eliminarse y seguir ejecutándose (se producirá un error si, si es necesario, se publica un mensaje en un canal del equipo archivado)
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Mientras que un formulario se puede mover de una cuenta individual a un grupo, no se puede mover ni copiar de un grupo a otro. Hay tres opciones disponibles para un formulario cuando se elimina un equipo.
 

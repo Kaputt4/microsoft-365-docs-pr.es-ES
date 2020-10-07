@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Obtenga información sobre cómo permitir a los miembros enviar correo electrónico como un grupo de Microsoft 365 o enviar correo electrónico en nombre de un grupo de Microsoft 365.
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662815"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377598"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
@@ -50,7 +50,7 @@ En esta sección se explica cómo permitir que los usuarios envíen correo elect
     
 4. En la sección **Enviar como** , seleccione el **+** signo para agregar los usuarios que desea enviar como grupo. 
     
-    ![Seleccione el signo más para agregar los usuarios que desee enviar como grupo de Microsoft 365](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Captura de pantalla del cuadro de diálogo Enviar como](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Escriba para buscar o seleccionar un usuario de la lista. Seleccione **Aceptar** y **Guardar**.
     
@@ -68,7 +68,7 @@ En esta sección se explica cómo permitir que los usuarios envíen correo elect
     
 4. En la sección enviar en nombre de, seleccione el **+** signo para agregar los usuarios que desea enviar como grupo. 
     
-    ![Seleccione el signo más para agregar los usuarios que desee enviar como grupo de Microsoft 365](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Captura de pantalla del cuadro de diálogo Enviar en nombre de](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Escriba para buscar o seleccionar un usuario de la lista. Seleccione **Aceptar** y **Guardar**.
     

@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre las interacciones de configuración entre los grupos de Microsoft 365, Teams y SharePoint
-ms.openlocfilehash: 3ad5011c2d7b4579e054b014237d5771049b3c91
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3a6d4e057f88410a8808ea133bf7e579d0041228
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662835"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377550"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Interacciones de configuración entre los grupos de Microsoft 365, Teams y SharePoint
 
@@ -29,7 +30,7 @@ Algunas opciones de configuración para Microsoft 365 grupos, Microsoft Teams y 
 
 ## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Efectos de la configuración de SharePoint en grupos y equipos
 
-|Configuración de SharePoint|Descripción|Efecto en grupos y equipos de Microsoft 365|Recomendación|
+|Configuración de SharePoint|Description|Efecto en grupos y equipos de Microsoft 365|Recomendación|
 |:-----------------|:----------|:---------------------------------------|:-------------|
 |Uso compartido externo de la organización y el sitio|Determina si se pueden compartir sitios, archivos y carpetas con personas de fuera de la organización.|Si la configuración de SharePoint, grupos y Teams no coincide, es posible que los invitados del equipo tengan bloqueado el acceso al sitio, o que se produzca un acceso externo inesperado.|Al cambiar la configuración de uso compartido, Compruebe la configuración de los grupos, la configuración de Teams y la configuración del sitio de SharePoint para los sitios de grupo conectados a un grupo.<br><br> Consulte [colaborar con invitados en un equipo](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)|
 |Permitir/bloquear dominio|Permite o impide que el contenido se comparta con los dominios especificados.|Los grupos y los equipos no reconocen las listas permitir o bloquear de SharePoint. Los usuarios de los dominios no permitidos en SharePoint podrían obtener acceso a contenido o sitios de SharePoint a través de un equipo.|Administre las listas de permitidos y bloqueados de dominio conjuntamente para Azure AD y SharePoint. Crear un proceso de gobierno para toda la organización para permitir y bloquear dominios.<br><br>Ver la [configuración de dominio de SharePoint](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) y la configuración de dominio de [Azure ad](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
@@ -39,7 +40,7 @@ Algunas opciones de configuración para Microsoft 365 grupos, Microsoft Teams y 
 
 ## <a name="the-effects-of-groups-settings-on-teams"></a>Los efectos de la configuración de grupos en Microsoft Teams
 
-|Configuración de Microsoft 365 Groups|Descripción|Efecto en Microsoft Teams|Recomendación|
+|Configuración de Microsoft 365 Groups|Description|Efecto en Microsoft Teams|Recomendación|
 |:---------------------------|:----------|:--------------|:-------------|
 |Directivas de nomenclatura|Especifica los prefijos y los sufijos de nombre de grupo, y las palabras bloqueadas para la creación de grupos|Las directivas se aplican a los usuarios que crean equipos.||
 |Acceso de invitado de grupo|Especifica si las personas de fuera de la organización se pueden agregar a los grupos.|Si la configuración de uso compartido de invitado o grupos está desactivada, el equipo no se puede compartir con los invitados.|Al cambiar la configuración del uso compartido de invitado, Compruebe la configuración de Teams, grupos y el sitio de SharePoint asociado con el equipo.<br><br> Consulte [colaborar con invitados en un equipo](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)|

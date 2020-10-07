@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: Implemente las características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: 87057d7c823fc9808169efd254300f2b2f5e0487
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 97c34ca236ea4be98b9412518788630732259d5a
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903900"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377156"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la normativa de privacidad de datos
 
