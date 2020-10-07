@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208132"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370306"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>Ley de privacidad del consumidor de California (CCPA)
 
@@ -53,7 +53,7 @@ Tal y como se establece en el OST, Microsoft cumple con todas las leyes y regula
 
 Estos son algunos de los pasos que puede realizar para prepararse para el CCPA:
 
-- Empiece a aprovechar la evaluación de RGPD en la [puntuación de cumplimiento](compliance-score.md) como parte de su programa de privacidad de CCPA.
+- Empiece a aprovechar la evaluación de RGPD en el [Administrador de cumplimiento](compliance-manager.md) como parte de su programa de privacidad de CCPA.
 - Establecer un proceso para responder de manera eficaz a las solicitudes de acceso de sujetos de datos (DSARs) mediante la herramienta de solicitudes de interesados.
 - Configure etiquetas y directivas para detectar, clasificar, etiquetar y proteger los datos confidenciales con Microsoft Information Protection.
 - Use las capacidades de cifrado de correo electrónico para controlar aún más la información confidencial.
@@ -93,9 +93,9 @@ El CCPA requiere que los negocios regulados recopilen, transfieran y vendan info
 - La CCPA introduce obligaciones del consentimiento paterno compatibles con la Ley de Protección de la Privacidad en Línea de los Niños (COPPA) para menores de 13 años.
 - Para los menores de 13 a 16 años, CCPA imponen una nueva obligación de obtener el consentimiento de suscripción del menor.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 
@@ -103,4 +103,4 @@ El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una ca
 - [Introducción a la guía de CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Solicitudes de interesados de datos y RGPD](gdpr-data-subject-requests.md)
 - [Preguntas y Respuestas: Ley de Privacidad del Consumidor de California (CCPA)](ccpa-faq.md)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: b6ffd0156b295f03049d68ba99ad30c0ab8ae43b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d26d187277b021e278667b6e0ae19a0772b34f03
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204521"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368133"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -64,7 +67,7 @@ El premio del administrador de cumplimiento le ofrece puntos para completar acci
 
 El administrador de cumplimiento le da una puntuación inicial basada en la línea base de protección de datos 365 de Microsoft. Esta línea base es un conjunto de controles que incluye normas y estándares clave para la protección de datos y el gobierno de datos general.
 
-##### <a name="learn-more"></a>Obtén más información
+##### <a name="learn-more"></a>Más información
 
 [Comprenda cómo se calcula la puntuación de cumplimiento](compliance-score-calculation.md).
 
@@ -84,7 +87,7 @@ El administrador de cumplimiento realiza un seguimiento de los siguientes tipos 
 2. **Sus controles**: a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
 3. **Controles compartidos**: son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
 
-##### <a name="learn-more"></a>Obtén más información
+##### <a name="learn-more"></a>Más información
 
 [Supervise el progreso de los controles](compliance-manager-assessments.md#monitor-assessment-progress-and-controls).
 
@@ -104,7 +107,7 @@ Las evaluaciones tienen varios componentes:
 
 Al crear evaluaciones, deberá asignarlas a un grupo. Puede configurar los grupos de la forma más lógica para su organización. Por ejemplo, puede agrupar las evaluaciones por año de auditoría, región, solución, Teams dentro de su organización o de algún otro modo. Una vez creados los grupos, puede [filtrar el panel del administrador de cumplimiento](compliance-manager-setup.md#filtering-your-dashboard-view) para ver la puntuación de uno o varios grupos.
 
-##### <a name="learn-more"></a>Obtén más información
+##### <a name="learn-more"></a>Más información
 
 [Cree y administre evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
 
@@ -112,7 +115,7 @@ Al crear evaluaciones, deberá asignarlas a un grupo. Puede configurar los grupo
 
 El administrador de cumplimiento proporciona plantillas para ayudarle a crear rápidamente evaluaciones. Puede modificar estas plantillas para crear una evaluación optimizada para sus necesidades. También puede crear una evaluación personalizada creando una plantilla con sus propios controles y acciones. Por ejemplo, puede que desee que una plantilla abarque un control de proceso empresarial interno o un estándar de protección de datos regional que no esté cubierto por una de las 150 plantillas de evaluación predefinidas.
 
-##### <a name="learn-more"></a>Obtén más información
+##### <a name="learn-more"></a>Más información
 
 [Ver la lista de plantillas de evaluación que proporciona el administrador de cumplimiento](compliance-manager-templates-list.md).
 
@@ -122,7 +125,7 @@ El administrador de cumplimiento proporciona plantillas para ayudarle a crear r�
 
 Las acciones de mejora ayudan a centralizar las actividades de cumplimiento. Cada acción de mejora proporciona una orientación recomendada que está destinada a ayudarle a alinearse con las normas y los estándares de protección de datos. Las acciones de mejora se pueden asignar a los usuarios de su organización para realizar tareas de implementación y pruebas. También puede almacenar la documentación, las notas y las actualizaciones de estado de registro dentro de la acción de mejora.
 
-##### <a name="learn-more"></a>Obtén más información
+##### <a name="learn-more"></a>Más información
 
 [Use acciones de mejora para administrar el flujo de trabajo de cumplimiento](compliance-manager-improvement-actions.md).
 

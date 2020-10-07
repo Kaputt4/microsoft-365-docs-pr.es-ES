@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo ilimitado para buzones de correo de Exchange Online.
-ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: 5481fd14f281c132475613228c835c72592d2f59
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534922"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370428"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Información general sobre el archivado ilimitado
 
@@ -112,4 +112,4 @@ En esta sección se explica la funcionalidad entre el archivado de expansión au
 
 ## <a name="more-information"></a>Más información
 
-Para obtener más información técnica sobre el archivado de expansión automática, consulte [Microsoft 365: archivos de expansión automática de archivos de preguntas más frecuentes](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+Para obtener más información técnica sobre el archivado de expansión automática, consulte [Microsoft 365: archivos de expansión automática de archivos de preguntas más frecuentes](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

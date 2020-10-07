@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que puede buscar un administrador de exhibición de documentos electrónicos en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277103"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370406"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de eDiscovery
 
 Las instrucciones de este artículo se pueden aplicar al usar la exhibición de documentos electrónicos principal o la exhibición avanzada de documentos electrónicos para administrar las investigaciones.
 
-Los límites de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido del usuario (como buzones de correo, sitios de SharePoint y cuentas de OneDrive) que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede tener acceso a casos de eDiscovery que se usan para administrar las investigaciones legales, de recursos humanos u otras investigaciones dentro de la organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que deben respetar los reglamentos y las regulaciones geográficas y para los gobiernos, que a menudo se dividen en diferentes agencias. En Microsoft 365, los límites de cumplimiento le ayudan a cumplir estos requisitos cuando realizan búsquedas de contenido y administran investigaciones con casos de eDiscovery.
+Los límites de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido del usuario (como buzones de correo, cuentas de OneDrive y sitios de SharePoint) que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede tener acceso a casos de eDiscovery que se usan para administrar las investigaciones legales, de recursos humanos u otras investigaciones dentro de la organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que deben respetar los reglamentos y las regulaciones geográficas y para los gobiernos, que a menudo se dividen en diferentes agencias. En Microsoft 365, los límites de cumplimiento le ayudan a cumplir estos requisitos cuando realizan búsquedas de contenido y administran investigaciones con casos de eDiscovery.
   
 Usamos el ejemplo de la siguiente ilustración para explicar cómo funcionan los límites de cumplimiento.
   
@@ -56,11 +56,21 @@ Este es el proceso para configurar los límites de cumplimiento:
 
 [Paso 5: crear un caso de exhibición de documentos electrónicos para investigaciones dentro de una agencia](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
 
+## <a name="before-you-set-up-compliance-boundaries"></a>Antes de configurar los límites de cumplimiento
+
+Debe cumplir los siguientes requisitos previos antes de que el atributo de Azure Active Directory (Azure AD) que identifica (en el paso 1) se pueda sincronizar correctamente en la cuenta de OneDrive de un usuario (en el paso 2):
+
+- Los usuarios deben tener asignada una licencia de Exchange Online y una licencia de SharePoint Online.
+
+- Los buzones de usuario deben tener al menos 10 MB de tamaño. Si el buzón de un usuario es inferior a 10 MB, el atributo usado para definir las agencias no se sincronizará con la cuenta de OneDrive del usuario.
+
+- Los límites de cumplimiento y los atributos que se usan para crear los filtros de permisos de búsqueda requieren que los atributos de Azure Active Directory (Azure AD) se sincronicen con los buzones de usuario. Para comprobar que los atributos que desea usar se han sincronizado, ejecute el cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) en Exchange Online PowerShell. El resultado de este cmdlet muestra los atributos de Azure AD sincronizados en Exchange Online.
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Paso 1: identificar un atributo de usuario para definir las agencias
 
-El primer paso es elegir un atributo de Azure Active Directory que se usará para definir las agencias. Este atributo se usa para crear el filtro de permisos de búsqueda que limita a un administrador de exhibición de documentos electrónicos para buscar solo las ubicaciones de contenido de los usuarios que tienen asignado un valor específico para este atributo. Por ejemplo, supongamos que contoso decide usar el atributo **Department** . El valor de este atributo para los usuarios de la subsidiaria del cuarto café sería  `FourthCoffee`  y el valor para los usuarios de la subsidiaria de Coho Winery sería `CohoWinery` . En el paso 4, use este  `attribute:value`  par (por ejemplo, *Department: fourthcoffee*) para limitar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar. 
+El primer paso consiste en elegir el atributo de Azure AD que se va a usar para definir las agencias. Este atributo se usa para crear el filtro de permisos de búsqueda que limita a un administrador de exhibición de documentos electrónicos para buscar solo las ubicaciones de contenido de los usuarios que tienen asignado un valor específico para este atributo. Por ejemplo, supongamos que contoso decide usar el atributo **Department** . El valor de este atributo para los usuarios de la subsidiaria del cuarto café sería  `FourthCoffee`  y el valor para los usuarios de la subsidiaria de Coho Winery sería `CohoWinery` . En el paso 4, use este  `attribute:value`  par (por ejemplo, *Department: fourthcoffee*) para limitar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar. 
   
-Esta es una lista de atributos de usuario de Azure Active Directory que puede usar para los límites de cumplimiento:
+Esta es una lista de atributos de usuario de Azure AD que puede usar para los límites de cumplimiento:
   
 - Company
 
@@ -79,20 +89,20 @@ Aunque hay disponibles más atributos de usuario, especialmente para los buzones
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Paso 2: archivo a solicitud con soporte técnico de Microsoft para sincronizar el atributo de usuario con las cuentas de OneDrive
 
-El siguiente paso consiste en archivar una solicitud con soporte técnico de Microsoft para sincronizar el atributo de Azure Active Directory que eligió en el paso 1 para todas las cuentas de OneDrive de la organización. Una vez que se ha producido esta sincronización, el atributo (y el valor) que eligió en el paso 1 se asignará a una propiedad administrada oculta denominada `ComplianceAttribute` . Use este atributo para crear el filtro de permisos de búsqueda para OneDrive en el paso 4.
+El siguiente paso consiste en archivar una solicitud con soporte técnico de Microsoft para sincronizar el atributo de Azure AD que eligió en el paso 1 para todas las cuentas de OneDrive de la organización. Una vez que se ha producido esta sincronización, el atributo (y el valor) que eligió en el paso 1 se asignará a una propiedad administrada oculta denominada `ComplianceAttribute` . Use este atributo para crear el filtro de permisos de búsqueda para OneDrive en el paso 4.
   
 Incluya la siguiente información cuando envíe la solicitud a soporte técnico de Microsoft:
   
 - El nombre de dominio predeterminado de su organización
 
-- El nombre del atributo de Azure Active Directory (del paso 1)
+- El nombre del atributo de Azure AD (del paso 1)
 
-- El título o la descripción siguiente del propósito de la solicitud de soporte técnico: "habilitar la sincronización de OneDrive para la empresa con Azure Active Directory para filtros de seguridad de cumplimiento". Esto ayuda a enrutar la solicitud al equipo de ingeniería de eDiscovery que implementa la solicitud.
+- El título o la descripción siguiente del propósito de la solicitud de soporte técnico: "habilitar la sincronización de OneDrive para la empresa con Azure AD para filtros de seguridad de cumplimiento". Esto ayuda a enrutar la solicitud al equipo de ingeniería de eDiscovery que implementa la solicitud.
 
 Una vez realizado el cambio de ingeniería y se sincronice el atributo con OneDrive, el soporte técnico de Microsoft le enviará el número de compilación en el que se realizó el cambio y una fecha de implementación estimada. El proceso de implementación suele tardar entre 4 y 6 semanas después de enviar la solicitud de soporte técnico.
   
 > [!IMPORTANT]
-> Puede completar el paso 3 hasta el paso 5 antes de implementar este cambio de atributo. Pero la ejecución de búsquedas de contenido no devolverá documentos de los sitios de OneDrive especificados en el filtro de permisos de búsqueda hasta que se implemente el cambio.
+> Puede completar el paso 3 hasta el paso 5 antes de implementar este cambio de atributo. Pero la ejecución de búsquedas de contenido no devolverá documentos de las cuentas de OneDrive que se especifican en un filtro de permisos de búsqueda hasta que se implemente la sincronización de atributos.
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Paso 3: crear un grupo de roles para cada agencia
 
@@ -211,12 +221,12 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |LAM  <br/> |Infórmenos  <br/> |
     |||
 
-   Si no especifica el parámetro **Region** para un filtro de permisos de búsqueda, se buscará en la región de SharePoint predeterminada de la organización. Los resultados de la búsqueda se exportan al centro de recursos más cercano.
+   Si no especifica el parámetro **Region** para un filtro de permisos de búsqueda, se buscará en la región de SharePoint principal de la organización. Los resultados de la búsqueda se exportan al centro de recursos más cercano.
 
    Para simplificar el concepto, el parámetro **Region** controla el centro de datos que se usa para buscar contenido en SharePoint y OneDrive. Esto no se aplica a la búsqueda de contenido en Exchange porque las búsquedas de contenido de Exchange no están vinculadas por la ubicación geográfica de los centros de datos. Además, el mismo valor de parámetro **Region** también puede indicar el centro de recursos al que se redirigen las exportaciones. Esto suele ser necesario para controlar el movimiento de datos entre los tableros geográficos.
 
 > [!NOTE]
-> Si está usando la exhibición avanzada de documentos electrónicos, el parámetro **Region** no controla la región desde la que se exportan los datos. Además, la búsqueda de contenido en SharePoint y OneDrive no depende de la ubicación geográfica de los centros de datos. Se busca en todos los centros de recursos. Para obtener más información acerca de la exhibición avanzada de documentos electrónicos, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](overview-ediscovery-20.md).
+> Si está usando la exhibición avanzada de documentos electrónicos, el parámetro **Region** no controla la región desde la que se exportan los datos. Los datos se exportan desde el centro de datos principal de la organización. Además, la búsqueda de contenido en SharePoint y OneDrive no depende de la ubicación geográfica de los centros de datos. Se busca en todos los centros de recursos. Para obtener más información acerca de la exhibición avanzada de documentos electrónicos, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](overview-ediscovery-20.md).
 
 A continuación, se muestran ejemplos de cómo usar el parámetro **Region** al crear filtros de permisos de búsqueda para límites de cumplimiento. Esto supone que la subsidiaria de Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
   
@@ -230,13 +240,13 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 Tenga en cuenta lo siguiente cuando busque y Exporte contenido en entornos multigeográfico.
   
-- El parámetro **Region** no controla las búsquedas de los buzones de Exchange. Se buscará en todos los centros de datos cuando se busque en buzones. Para limitar el ámbito en el que se buscarán los buzones de Exchange, use el parámetro **Filters** al crear o cambiar un filtro de permisos de búsqueda. 
+- El parámetro **Region** no controla las búsquedas de los buzones de Exchange. Se buscará en todos los centros de la copia de los buzones de búsqueda. Para limitar el ámbito en el que se buscarán los buzones de Exchange, use el parámetro **Filters** al crear o cambiar un filtro de permisos de búsqueda. 
 
 - Si es necesario que un administrador de eDiscovery busque en varias regiones de SharePoint, debe crear una cuenta de usuario diferente para que el administrador de eDiscovery use en el filtro de permisos de búsqueda para especificar la región donde se encuentran los sitios de SharePoint o las cuentas de OneDrive. Para obtener más información acerca de cómo configurar esto, consulte la sección "búsqueda de contenido en un entorno multigeográfico de SharePoint" en [búsqueda de contenido](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
 
 - Al buscar contenido en SharePoint y OneDrive, el parámetro **Region** dirige las búsquedas a la ubicación principal o satélite donde el administrador de eDiscovery realizará las investigaciones de eDiscovery. Si un administrador de exhibición de documentos electrónicos busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelven resultados de búsqueda.
 
-- Cuando se exportan los resultados de la búsqueda, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta de búsqueda de contenido) se carga en la ubicación de almacenamiento de Azure en el centro de datos especificado por el parámetro **Region** . Esto permite a las organizaciones mantener el cumplimiento de las normas al no permitir que el contenido se exporte entre límites controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en la región predeterminada de la organización.
+- Cuando se exportan los resultados de la búsqueda, el contenido de todas las ubicaciones de contenido (incluidos Exchange, Skype empresarial, SharePoint, OneDrive y otros servicios que se pueden buscar mediante la herramienta de búsqueda de contenido) se carga en la ubicación de almacenamiento de Azure en el centro de datos especificado por el parámetro **Region** . Esto permite a las organizaciones mantener el cumplimiento de las normas al no permitir que el contenido se exporte entre límites controlados. Si no se especifica ninguna región en el filtro de permisos de búsqueda, el contenido se carga en el centro de datos principal de la organización.
 
 - Puede editar un filtro de permisos de búsqueda existente para agregar o cambiar la región ejecutando el siguiente comando:
 
@@ -272,7 +282,23 @@ Tenga en cuenta las siguientes limitaciones al administrar casos de eDiscovery e
 
 - Los filtros de permisos de búsqueda no se aplican a las carpetas públicas de Exchange.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="more-information"></a>Más información
+
+- Si un buzón se ha quitado de la licencia o se ha eliminado temporalmente, los atributos de Azure AD ya no se sincronizan con el buzón. Si se colocó una retención en el buzón de correo cuando se eliminó, el contenido que se conserva en el buzón sigue estando sujeto a un límite de cumplimiento o a un filtro de permisos de búsqueda en función de la última vez que los atributos de Azure AD se sincronizaron antes de que se eliminara el buzón. 
+
+    Además, la sincronización entre el buzón de correo del usuario y la cuenta de OneDrive se detendrá si el buzón se ha quitado de la licencia o se ha eliminado temporalmente. El último valor estampado del atributo de cumplimiento de la cuenta de OneDrive seguirá en vigor.
+
+- El atributo de cumplimiento se sincroniza desde el buzón de correo de Exchange de un usuario a su cuenta de OneDrive cada siete días. Como se mencionó anteriormente, esta sincronización solo se produce cuando al usuario se le asigna una licencia de Exchange Online y de SharePoint Online y el buzón del usuario tiene al menos 10 MB.
+
+- Si los límites de cumplimiento y los filtros de permisos de búsqueda se implementan en el buzón de un usuario y en la cuenta de OneDrive, se recomienda no eliminar el buzón de un usuario y no su cuenta de OneDrive. Es decir, si elimina el buzón de un usuario, también debe quitar la cuenta de OneDrive del usuario.
+
+- Hay situaciones (como un empleado devuelto) en las que un usuario puede tener dos o más cuentas de OneDrive. En estos casos, solo se sincronizará la cuenta principal de OneDrive asociada con el usuario en Azure AD.
+
+- Los límites de cumplimiento y los filtros de permisos de búsqueda dependen de los atributos que se marcan en el contenido de Exchange, OneDrive y SharePoint y la indización subsiguiente de este contenido estampado. 
+
+- No se recomienda usar filtros de exclusión (como `-not()` el uso de en un filtro de permisos de búsqueda) para un límite de cumplimiento basado en el contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente. 
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **Quién puede crear y administrar filtros de permisos de búsqueda (con los cmdlets New-ComplianceSecurityFilter y set-ComplianceSecurityFilter)?**
   

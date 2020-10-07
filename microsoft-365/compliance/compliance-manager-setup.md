@@ -9,19 +9,22 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y los roles de usuario de Microsoft Compliance Manager y configure las pruebas automatizadas de las acciones. Administrar el historial del usuario y filtrar la vista del panel.
-ms.openlocfilehash: ead4fe60a11bcf78a318601c1de6d72f2490c567
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 043a52e2817e770671c2ef8876049f6bbe0285ee
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204530"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368143"
 ---
-# <a name="get-started-with-compliance-manager"></a>Introducción al administrador de cumplimiento
+# <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
 **En este artículo:** Este artículo le ayudará a configurar el administrador de cumplimiento. Obtenga información sobre cómo **obtener acceso** al administrador de cumplimiento, **establecer roles y permisos**y configurar la **prueba automática de acciones de mejora**. Recorra el **panel del administrador de cumplimiento** y comprenda las páginas principales: la página acciones de mejora, la página soluciones, la página evaluaciones y la página plantillas de evaluación.
 
@@ -70,7 +73,7 @@ Para establecer permisos y asignar roles desde dentro del centro de cumplimiento
 
 Obtenga más información sobre [los permisos en el centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Si no tiene acceso al centro de seguridad y cumplimiento de Office 365 o si necesita tener acceso a la versión clásica del administrador de cumplimiento en el portal de confianza de servicios de Microsoft, la configuración de administración del portal de confianza de servicios proporciona otra forma de asignar roles (instrucciones de la[vista](/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?view=o365-worldwide.md#assigning-compliance-manager-roles-to-users)). Tenga en cuenta que estos roles están más limitados en su funcionalidad.
+Si no tiene acceso al centro de seguridad y cumplimiento de Office 365 o si necesita tener acceso a la versión clásica del administrador de cumplimiento en el portal de confianza de servicios de Microsoft, la configuración de administración del portal de confianza de servicios proporciona otra forma de asignar roles (instrucciones de la[vista](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Tenga en cuenta que estos roles están más limitados en su funcionalidad.
 
 ##### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
 
