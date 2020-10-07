@@ -19,21 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 8b3f8d6868d14b8791a676367d4fb9ad5c2e3307
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304967"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370385"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Versión preliminar de las características de la Protección contra amenazas de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+>Las versiones preliminares se proporcionan sin un contrato de nivel de servicio y no se recomienda para las cargas de trabajo de producción. Es posible que algunas características no se admitan o que tengan capacidades restringidas.
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
-
 
 El servicio de Protección contra amenazas de Microsoft se actualiza constantemente para incluir nuevas mejoras en sus funciones y características.
 

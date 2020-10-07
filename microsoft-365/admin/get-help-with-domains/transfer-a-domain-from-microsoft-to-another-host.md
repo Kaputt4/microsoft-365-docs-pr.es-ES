@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Busque aquí los pasos para transferir un dominio de Microsoft a otro registrador. '
-ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d960b57a2c82b804d61ead1c672c00f0543b3ae8
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289176"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370329"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transferir un dominio de Microsoft a otro host
 
@@ -55,13 +55,16 @@ Siga estos pasos para obtener un código en Microsoft 365 y, a continuación, va
 
 7. Copie el código de autorización y espere unos 30 minutos hasta que el estado de transferencia del dominio cambie a **desbloqueado para transferencia** en la ficha **registro** antes de continuar con los pasos siguientes.
 
-8. Vaya al sitio web del registrador de dominios en el que desea administrar el nombre de dominio que se va a enviar. Siga las instrucciones para transferir un dominio (busque ayuda en su sitio web).
+8. Vaya al sitio web del registrador de dominios en el que desea administrar el nombre de dominio que se va a enviar. Siga las instrucciones para transferir un dominio (busque ayuda en su sitio web). Normalmente, esto significa pagar cuotas de transferencia y conceder el AuthCode al nuevo registrador para que puedan iniciar la transferencia. Microsoft le enviará un correo electrónico para confirmar que hemos recibido la solicitud de transferencia y que el dominio se transferirá en un plazo de 5 días.
 
-Puede encontrar la ficha **registro** de código de autorización en la página  **dominios** de Microsoft 365.
+    Puede encontrar la ficha **registro** de código de autorización en la página  **dominios** de Microsoft 365.
+    
+    > [!TIP]
+    > los dominios de. uk requieren un procedimiento diferente. Póngase en contacto con el soporte técnico de Microsoft y solicite un **cambio de etiqueta IPS** para que se ajuste al registrador que desea para administrar su dominio en adelante. Una vez que la etiqueta cambia, el dominio se transfiere inmediatamente al nuevo registrador. A continuación, tendrá que trabajar con el nuevo registrador para completar la transferencia, probablemente pagaremos cuotas de transferencia y agregar el dominio transferido a su cuenta con su nuevo registrador.
 
 9. Una vez completada la transferencia, renovará su dominio en el nuevo registrador de dominios.
 
-10. Para finalizar el proceso, vuelva a la página **dominios** en el centro de administración y, a continuación, seleccione  **transferencia de dominio completa**.
+10. Para finalizar el proceso, vuelva a la página **dominios** en el centro de administración y, a continuación, seleccione  **transferencia de dominio completa**. Esto marcará el dominio como ya no comprado de Microsoft 365 y deshabilitará la suscripción de dominio. No se quitará el dominio del espacio empresarial y no afectará a los usuarios y buzones existentes en el dominio.
 
 > [!NOTE]
 > Los dominios adquiridos de Microsoft 365 no son válidos para los cambios de nameserver o para transferir el dominio entre las organizaciones de Microsoft 365. Si alguno de ellos es necesario, el registro de dominio debe transferirse a otro registrador.
