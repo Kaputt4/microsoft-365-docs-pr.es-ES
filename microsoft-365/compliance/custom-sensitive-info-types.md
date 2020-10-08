@@ -12,17 +12,19 @@ ms.date: 04/23/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga una visión general de los tipos de información confidencial personalizada para la Prevención de pérdida de datos (DLP), como el patrón primario, la proximidad de caracteres y el nivel de confianza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b3e30c75641dde16726e1d98c8f12c4437b0df6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d21d0be23847a8fbd27b6082ca28cdca2d4eed05
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685480"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379178"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipos de información confidencial personalizada
 
@@ -63,7 +65,7 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 > - Coreano
 > - Japonés
 > 
->Esta vista previa solo se encuentra en la nube comercial y la implementación está limitada a:
+>Esta versión preliminar solo se encuentra en la nube comercial y la implementación está limitada a:
 > - Japón
 > - Corea
 > - China

@@ -12,16 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127047"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379217"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -139,7 +141,7 @@ Puede buscar en:
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
