@@ -11,17 +11,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f723885a366e6f92f29faccfb632677c6e0028c8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430228"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379191"
 ---
-# <a name="information-barriers"></a>Barreras de información
+# <a name="information-barriers"></a>Barreras de la información
 
 Los servicios en la nube de Microsoft incluyen eficaces capacidades de comunicación y colaboración. Pero supongamos que desea restringir la comunicación y la colaboración entre dos grupos para evitar que se produzca un conflicto de intereses en la organización. O bien, quizás desee restringir la comunicación y la colaboración entre determinadas personas dentro de la organización con el fin de proteger la información interna. Microsoft 365 permite la comunicación y la colaboración entre grupos y organizaciones, así que hay una forma de restringir la comunicación y la colaboración entre grupos de usuarios específicos cuando sea necesario. Con las barreras de la información, puede hacerlo. 
 
@@ -83,7 +85,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 - [Ver los atributos que se pueden usar para las directivas de barrera de información](information-barriers-attributes.md)
