@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: En este artículo, encontrará detalles sobre la compatibilidad de la aplicación cliente de Microsoft 365 para la autenticación basada en certificados.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac48305d634baa436eab7f2d9eeb520897f2a3d8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 55d3fa4db6abcd7589cf9fadb9084144cd26c8d7
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47548015"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384953"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Soporte técnico de Microsoft 365 Client App: autenticación basada en certificados
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-La autenticación basada en certificados permite autenticar a Azure Active Directory con un certificado de cliente en dispositivos Windows, Android o iOS. La configuración de esta característica elimina la necesidad de escribir una combinación de nombre de usuario y contraseña en determinadas aplicaciones de correo y Microsoft Office en el dispositivo móvil.
+La autenticación basada en certificados permite autenticar a Azure Active Directory (Azure AD) con un certificado de cliente en dispositivos Windows, Android o iOS. La configuración de esta característica elimina la necesidad de escribir una combinación de nombre de usuario y contraseña en determinadas aplicaciones de correo y Microsoft Office en el dispositivo móvil.
 
 Obtenga más información acerca de [la autenticación basada en certificados](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
@@ -40,7 +40,7 @@ Obtenga más información acerca de [la autenticación basada en certificados](h
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-Para obtener más información acerca de la compatibilidad de plataformas de Microsoft 365, vea [requisitos del sistema para microsoft 365](https://products.office.com/office-system-requirements).
+Para obtener más información acerca de la compatibilidad de plataformas de Microsoft 365, vea [requisitos del sistema para microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="supported-clients"></a>Clientes compatibles
 
@@ -49,7 +49,7 @@ Las versiones más recientes de los siguientes clientes admiten la autenticació
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Icono de Access](../media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Icono de Azure](../media/o365-azure-64x64.png) <br> [Portal de Azure AD <br>](https://azure.microsoft.com/features/azure-portal/) | ![Icono del portal de empresa](../media/o365-microsoft-64x64.png) <br> [Portal de empresa <br>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Icono de Delve](../media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Icono de Dynamics 365](../media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) 
-| ![Icono de borde](../media/o365-edge-64x64.png) <br> [Vanguardia](https://www.microsoft.com/windows/microsoft-edge) | ![Icono de Excel](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icono de formularios](../media/o365-forms-64x64.png) <br> [Formularios](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Icono de Kaizala](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icono de Office.com](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
+| ![Icono de borde](../media/o365-edge-64x64.png) <br> [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Icono de Excel](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Icono de formularios](../media/o365-forms-64x64.png) <br> [Formularios](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Icono de Kaizala](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Icono de Office.com](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
 | ![Icono de Office 365 administrador](../media/o365-o365admin-64x64.png) <br> [Administrador de Microsoft 365 <br>](https://products.office.com/business/manage-office-365-admin-app) | ![Icono de lente](../media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Icono de OneDrive para la empresa](../media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Icono de OneNote](../media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Icono de Outlook](../media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
 | ![Icono de Planificador](../media/o365-planner-64x64.png) <br> [Planificador](https://products.office.com/business/task-management-software) | ![Icono de PowerApps](../media/o365-powerapps-64x64.png) <br> [PowerApps<sup>3</sup>](https://powerapps.microsoft.com) | ![Icono de automatización de energía](../media/o365-flow-64x64.png) <br> [<br>Automatizar la alimentación](https://flow.microsoft.com) | ![Icono de PowerBI](../media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Icono de PowerPoint](../media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Icono de proyecto](../media/o365-project-64x64.png) <br> [Proyecto](https://products.office.com/project) | ![Icono de Publisher](../media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Icono de SharePoint](../media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Icono de Skype Empresarial](../media/o365-skypeforbusiness-64x64.png) <br> [Skype <br> empresarial](https://www.skype.com/business/) | ![Icono de notas adhesivas](../media/o365-stickynotes-64x64.png) <br> [Notas rápidas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 

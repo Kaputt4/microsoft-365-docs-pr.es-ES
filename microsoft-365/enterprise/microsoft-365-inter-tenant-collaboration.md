@@ -3,7 +3,6 @@ title: Colaboración entre inquilinos de Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo funciona la colaboración de Microsoft 365 en los inquilinos y las organizaciones, lo que permite a distintas organizaciones trabajar conjuntamente de manera segura.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214804"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384833"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Colaboración entre inquilinos de Microsoft 365
 
@@ -78,7 +77,7 @@ Las opciones de colaboración entre espacios empresariales de Microsoft 365 incl
 |Finalidad del uso compartido|Acción administrativa|Información de procedimientos|
 |:-----|:-----|:-----|
 |Colaborar en Teams con usuarios externos a la organización | Un administrador global para el inquilino invitando a Microsoft 365 debe habilitar la colaboración externa en Teams. Ahora, los administradores globales y los propietarios de los equipos podrán invitar a cualquier persona con una dirección de correo electrónico para que colabore en Microsoft Teams.  <br/> Los administradores también pueden administrar y editar invitados que ya están presentes en su espacio empresarial. |  <ul><li> [Autorizar el acceso de invitado](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Activar o desactivar el acceso de invitado en Microsoft Teams](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [Usar PowerShell para controlar el acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [Lista de comprobación de acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [Ver usuarios invitados](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [Editar información del usuario invitado](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|Los propietarios de equipo pueden invitar y administrar la forma en que los invitados colaboran en sus equipos.  </li><li> |Los propietarios de equipo tienen controles adicionales sobre lo que los invitados pueden hacer en sus equipos. |  <ul><li> [Agregar invitados](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Agregar un invitado a un equipo](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Administrar el acceso de invitado en Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Ver quién está en un equipo o en un canal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|Los propietarios de equipo pueden invitar y administrar la forma en que los invitados colaboran en sus equipos.  |Los propietarios de equipo tienen controles adicionales sobre lo que los invitados pueden hacer en sus equipos. |  <ul><li> [Agregar invitados](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [Agregar un invitado a un equipo](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Administrar el acceso de invitado en Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [Ver quién está en un equipo o en un canal](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |Los invitados de otros inquilinos pueden ver el contenido de Microsoft Teams y colaborar con otros miembros | Ninguno. | [La experiencia de acceso de invitado](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Opciones de colaboración de Power BI
@@ -93,18 +92,18 @@ Las opciones de colaboración entre espacios empresariales de Microsoft 365 incl
 
 Cada organización mantiene sus propias cuentas de usuario, identidades, grupos de seguridad, suscripciones, licencias y almacenamiento. Los usuarios usan las características de colaboración de Microsoft 365 junto con las directivas de uso compartido y la configuración de seguridad para proporcionar acceso a la información necesaria a la vez que mantienen el control de los activos de la compañía.
   
-- **Cuentas de usuario:** Las cuentas no se pueden compartir y las cuentas no se pueden duplicar entre los inquilinos o particiones en los servicios de directorio de Active Directory local. 
+- **Cuentas de usuario:** Las cuentas no se pueden compartir o duplicar entre los inquilinos o particiones en los servicios de dominio de Active Directory local. 
     
 - **Licenses &amp; subscriptions:** en Microsoft 365, las licencias de los planes de licencias (también denominados SKU o planes de Microsoft 365) proporcionan a los usuarios acceso a los servicios de Microsoft 365 que se definen para los planes. 
     
-- **Almacenamiento:** En los planes de Microsoft 365, los límites de software y los límites de SharePoint Online se administran independientemente de los límites de almacenamiento de los buzones. Los límites de almacenamiento de buzones se configuran y administran mediante Exchange Online. En ambos casos, el almacenamiento no se puede compartir entre inquilinos. 
+- **Almacenamiento:** En Microsoft 365 planes de licencias, los límites de software y los límites de SharePoint Online se administran independientemente de los límites de almacenamiento de buzones. Los límites de almacenamiento de buzones se configuran y administran mediante Exchange Online. En ambos escenarios, el almacenamiento no se puede compartir entre los inquilinos. 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>¿Podemos compartir espacios de nombres de dominio entre inquilinos de Microsoft 365?
 
-No. Los dominios de cortesía, como fabrikam.com o tailspintoys.com, solo se pueden asociar y usar con un inquilino en el momento. Cada inquilino debe tener su propio espacio de nombres; Los espacios de nombres UPN, SMTP y SIP no se pueden compartir entre los inquilinos.
+No. Los nombres de dominio de la organización, como fabrikam.com o tailspintoys.com, solo se pueden asociar y usar con un solo inquilino de Microsoft 365. Cada inquilino debe tener su propio espacio de nombres. Los espacios de nombres UPN, SMTP y SIP no se pueden compartir entre los inquilinos.
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>¿Qué ocurre con los componentes híbridos y la colaboración entre espacios empresariales de Microsoft 365?
 
 Los componentes híbridos locales, como una organización de Exchange y Azure AD Connect, no se pueden dividir en varios inquilinos.
-  
+ 
 

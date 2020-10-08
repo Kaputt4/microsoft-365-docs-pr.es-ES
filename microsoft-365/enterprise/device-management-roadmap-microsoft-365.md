@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La guía básica para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: bb19c38d5cf92cfc04ac83bc29573ea24c93ef30
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775176"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384751"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
@@ -35,17 +35,22 @@ Hay dos opciones para la administración de dispositivos:
 
 Puede usar Microsoft Intune para administrar el acceso a su organización mediante la administración de dispositivos móviles o la administración de aplicaciones móviles. La administración de dispositivos móviles es cuando los usuarios "inscriben" sus dispositivos en Intune. Una vez inscrito un dispositivo, se trata de un dispositivo administrado; por lo tanto, puede recibir las directivas, reglas y opciones de configuración de su organización. Por ejemplo, puede instalar aplicaciones específicas, crear una directiva de contraseñas, instalar una conexión VPN, etc.
 
-Es posible que los usuarios con sus propios dispositivos personales no deseen inscribir sus dispositivos o ser administrados por Intune y las directivas de su organización. Sin embargo, debe proteger los recursos y los datos de la organización. En este escenario, puede proteger sus aplicaciones con la administración de aplicaciones móviles. Por ejemplo, puede usar una directiva de administración de aplicaciones móviles que requiera que un usuario escriba un PIN al tener acceso a Microsoft SharePoint en el dispositivo.
+Es posible que los usuarios con sus propios dispositivos personales no deseen inscribir sus dispositivos o ser administrados por Intune y las directivas de su organización. Sin embargo, debe proteger los recursos y los datos de la organización. En este escenario, puede proteger sus aplicaciones con la administración de aplicaciones móviles. Por ejemplo, puede usar una directiva de administración de aplicaciones móviles que requiera que un usuario escriba un PIN al obtener acceso a SharePoint Online en el dispositivo.
 
 También determinará cómo va a administrar los dispositivos personales y los dispositivos de propiedad de la organización. Es posible que quiera tratar los dispositivos de forma diferente, en función de sus usos.
-
-Para administrar dispositivos con Intune, empiece [aquí](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
 
 ## <a name="basic-mobility-and-security"></a>Movilidad y seguridad básica
 
 Esto está integrado en Microsoft 365 y le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhone, iPad, Android y Windows Phone. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
-Para administrar dispositivos con la seguridad y la movilidad básicos, empiece [aquí](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+## <a name="choose-between-the-two-options"></a>Elegir entre las dos opciones
+
+Para ayudarle a evaluar mejor qué opción de administración de dispositivos es la mejor para usted, consulte [Choose between Basic Mobility Security and Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+
+En función de la evaluación, empiece a administrar sus dispositivos con:
+
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
+- [Movilidad y seguridad básicas](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
  
 ## <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 

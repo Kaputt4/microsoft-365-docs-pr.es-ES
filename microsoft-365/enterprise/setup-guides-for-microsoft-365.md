@@ -3,7 +3,6 @@ title: Guías de configuración para los servicios de Office 365 y Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,22 +21,22 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y la configuración de Microsoft 365 u Office 365 con las guías de instalación.
-ms.openlocfilehash: 106a659dd75ae14d38c393a9547b84630e458337
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 67e24ae41806b4dc112387526177cb4bd84d0779
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357987"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384916"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
-Las guías de configuración de Microsoft 365 y Office 365 proporcionan a los administradores orientación y recursos adaptados para implementar aplicaciones y servicios. Estas guías se crean con las mismas recomendaciones que los especialistas de incorporación de FastTrack comparten en interacciones individuales y están disponibles para todos los administradores del centro de administración de Microsoft 365. Proporcionan información sobre la configuración del producto, habilitación de las características de seguridad, implementación de herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
+Las guías de configuración de Microsoft 365 y Office 365 le proporcionan orientación y recursos adaptados para planear e implementar su espacio empresarial, aplicaciones y servicios. Estas guías se crean con los mismos procedimientos recomendados que comparten los especialistas de incorporación de [microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) en interacciones individuales y están disponibles para todos los administradores del centro de administración de Microsoft 365. Proporcionan información sobre la configuración del producto, habilitación de las características de seguridad, implementación de herramientas de colaboración y proporcionan scripts para acelerar las implementaciones avanzadas.
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Cómo acceder a las guías de configuración en el centro de administración de Microsoft 365
 
 Se puede tener acceso a las guías de instalación desde la página de [instrucciones del programa de instalación](https://aka.ms/setupguidance) en el centro de administración de Microsoft 365. Puede realizar un seguimiento del estado de su progreso y tener la opción de volver en cualquier momento para completar una guía. Para llegar a la página de **instrucciones del programa de instalación** :
 
-1. En el [centro de administración](https://admin.microsoft.com/), vaya a la página **principal** .
+1. En el [centro de administración de Microsoft 365](https://admin.microsoft.com/), vaya a la página **principal** .
 
 2. Busque la tarjeta de **& de guía de aprendizaje** . 
 
@@ -52,11 +51,11 @@ Se puede tener acceso a las guías de instalación desde la página de [instrucc
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>¿Cómo funcionan las guías de instalación en el centro de administración de Microsoft 365?
 
-En cada guía se proporcionan instrucciones paso a paso, recursos, artículos y, cuando sea necesario, scripts que se pueden usar para realizar cambios en la configuración. Estas guías le proporcionan opciones para reflejar las necesidades específicas de organizaciones pequeñas y grandes. Además, las instrucciones proporcionadas incluyen asistencia para administradores nuevos y más experimentados.
+En cada guía se proporcionan instrucciones paso a paso, recursos, artículos y, cuando sea necesario, scripts que se pueden usar para realizar cambios en la configuración. Estas guías le proporcionan opciones para reflejar las necesidades específicas de organizaciones pequeñas y grandes. Además, la guía incluye asistencia tanto para los administradores nuevos como para los más experimentados.
 
 ![Ejemplo de una guía de instalación](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-Puede usar las guías para obtener más información acerca de las características específicas de Microsoft 365 y Office 365 durante la fase de planeación o volver a visitarlas después de completar una implementación para modificar una configuración.
+Puede usar las guías para obtener más información acerca de las características específicas de Microsoft 365 y Office 365 durante la fase de planeación, durante la implementación y el lanzamiento, o para volver a visitarlas una vez completada la implementación para modificar una configuración.
 
 ## <a name="guides-for-initial-setup"></a>Guías para la configuración inicial
 
@@ -74,7 +73,7 @@ Al migrar el buzón de un usuario de Gmail a Microsoft 365, los mensajes de corr
 
 ### <a name="microsoft-365-deployment-advisor"></a>Asesor de implementación de Microsoft 365
 
-[Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) proporciona a los clientes comerciales una guía para configurar las herramientas de productividad, las directivas de seguridad y las capacidades de administración de dispositivos. Con una suscripción de Microsoft 365 empresa Premium o Microsoft 365 Enterprise, puede usar este asesor para configurar y configurar los dispositivos de su organización. 
+[Microsoft 365 Deployment Advisor](https://aka.ms/microsoft365setupguide) le proporciona instrucciones para configurar herramientas de productividad, directivas de seguridad y capacidades de administración de dispositivos. Con una suscripción a Microsoft 365 empresa Premium o Microsoft 365 para empresas, puede usar este asesor para configurar y configurar los dispositivos de la organización. 
 
 Recibirá orientación y acceso a los recursos para habilitar los servicios en la nube, actualizar los dispositivos a la última versión compatible de Windows 10 y unir dispositivos a Azure Active Directory (Azure AD), todo en una ubicación central.
 
@@ -83,7 +82,7 @@ Recibirá orientación y acceso a los recursos para habilitar los servicios en l
 
 La [Guía de configuración del trabajo remoto](https://aka.ms/remoteworksetup) proporciona a las organizaciones los consejos y los recursos necesarios para garantizar que los usuarios puedan trabajar de manera remota, sus datos están protegidos y las credenciales de los usuarios están protegidas. 
 
-Recibirá instrucciones para optimizar el tráfico de dispositivos de los trabajadores remotos a los recursos de Microsoft 365 en la nube y en la red de su organización, lo que reducirá la presión en la infraestructura de VPN. 
+Recibirá instrucciones para optimizar el tráfico de dispositivos de los trabajadores remotos para los recursos de Microsoft 365 en la nube y en la red de su organización, lo que reducirá la presión en la infraestructura VPN de acceso remoto. 
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Guía de instalación de escritorio virtual de Windows
 
@@ -97,15 +96,19 @@ La [Guía de instalación de escritorio virtual de Windows](https://aka.ms/wvdse
 
 La [Guía de configuración de Azure ad](https://aka.ms/aadpguidance) proporciona información para garantizar que su organización tenga una base de seguridad sólida. En esta guía, configurará las características iniciales, como el control de acceso basado en roles de Azure (Azure RBAC) para los administradores, Azure AD Connect para el directorio local y Azure AD Connect Health, para que pueda supervisar el estado de la identidad híbrida durante las sincronizaciones automatizadas. 
 
-También se incluye información esencial sobre cómo habilitar el restablecimiento de contraseñas de autoservicio, el acceso condicional y el inicio de sesión de terceros integrado, incluida la protección de identificación avanzada opcional y la automatización de aprovisionamiento de usuarios.
+También se incluye información esencial sobre cómo habilitar el restablecimiento de contraseñas de autoservicio, el acceso condicional y el inicio de sesión de terceros integrado, incluida la protección de identidad avanzada opcional y la automatización del aprovisionamiento de usuarios.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planeación de la implementación no con contraseña
 
-Actualícese a un método alternativo de inicio de sesión que permite a los usuarios acceder a sus dispositivos de forma segura con uno de los siguientes métodos de autenticación sin contraseñas: Windows Hello para empresas, aplicación Microsoft Authenticator o claves de seguridad. 
+Actualícese a un método alternativo de inicio de sesión que permite a los usuarios acceder con seguridad a sus dispositivos con uno de los siguientes métodos de autenticación sin contraseñas: 
+
+- Windows Hello para empresas
+- La aplicación de Microsoft Authenticator
+- Claves de seguridad 
 
 Use el [Asistente para la implementación de planeación de contraseñas](https://aka.ms/passwordlesssetup) para detectar los métodos de autenticación que no sean los más idóneos para usar y recibir instrucciones sobre cómo implementarlos. 
 
-### <a name="plan-your-self-service-password-reset-deployment"></a>Planeación de la implementación de restablecimiento de contraseña de autoservicio
+### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planear la implementación de restablecimiento de contraseña de autoservicio (SSPR)
 
 Dar a los usuarios la capacidad de cambiar o restablecer su contraseña de manera independiente, si su cuenta está bloqueada o si olvidan su contraseña sin necesidad de ponerse en contacto con un ingeniero de soporte técnico. 
 
@@ -187,4 +190,3 @@ Use la [Guía de implementación de Office a usuarios remotos](https://aka.ms/of
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Implementación y actualización de las aplicaciones de Microsoft 365 con Configuration Manager
 
 Para las organizaciones que usan el administrador de configuración, puede usar la implementación [y actualización de las aplicaciones de microsoft 365 con Configuration Manager Advisor](https://aka.ms/oppinstall) para generar un script que configurará automáticamente la implementación de aplicaciones de Microsoft 365 con prácticas recomendadas por los ingenieros de FastTrack. Use esta guía para compilar los grupos de implementación, personalizar las aplicaciones y características de Office, configurar las instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos necesarias para dirigir la implementación. 
-
