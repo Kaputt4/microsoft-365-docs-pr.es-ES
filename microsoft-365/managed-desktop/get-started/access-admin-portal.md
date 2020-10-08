@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137040"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379297"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -34,12 +34,12 @@ Cada una de las funciones siguientes se puede asignar para proporcionar diferent
 
 |Rol de Azure AD  |Permisos de escritorio administrado de Microsoft  |
 |---------|---------|
-|Administrador global     | Los administradores con este rol tendrán **permisos de lectura y escritura** para todas las características del portal de administración de escritorio administrado de Microsoft.         |
-|Lector global     | Los administradores con este rol tendrán **permisos de solo lectura** para todas las características del portal de administración de escritorio administrado de Microsoft.         |
-|Administrador de servicios de Intune     |  Los administradores con este rol tendrán **permisos de lectura y escritura** para todas las características del portal de administración de escritorio administrado de Microsoft. **Cambiar:** A partir de septiembre 2020 los administradores con este rol no tendrán acceso a las características de seguridad de escritorio administradas por Microsoft.       |
-|Administrador de soporte de servicio     | Los administradores con este rol tendrán **permisos de lectura y escritura** para todas las características del portal de administración de escritorio administrado de Microsoft. **Cambiar:** A partir de septiembre 2020 los administradores con este rol no tendrán acceso a las características de seguridad de escritorio administradas por Microsoft.         |
-|Administrador de seguridad | **(En versión preliminar 2020 de septiembre)** Los administradores con este rol tendrán permisos de solo lectura para todas las características y permisos de escritura de las características relacionadas con la seguridad en el escritorio administrado de Microsoft en el portal de administración. |
-|Lector de seguridad | **(En versión preliminar 2020 de septiembre)**  Los administradores con este rol tendrán permisos de solo lectura para todas las características del portal de administración de escritorio administrado de Microsoft.|
+|Administrador global     | Los administradores con este rol tendrán **permisos de lectura y escritura para todas las características** del portal de administración de escritorio administrado de Microsoft.         |
+|Lector global     | Los administradores con este rol tendrán **permisos de solo lectura para todas las características** del portal de administración de escritorio administrado de Microsoft.         |
+|Administrador de servicios de Intune     |  Los administradores con este rol tendrán **permisos de lectura y escritura para las características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.       |
+|Administrador de soporte de servicio     | Los administradores con este rol tendrán **permisos de lectura y escritura para las características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.         |
+|Administrador de seguridad | Los administradores con este rol tendrán **permisos de solo lectura para todas las características** y **permisos de escritura de las características relacionadas con la seguridad** en el escritorio administrado de Microsoft en el portal de administración. |
+|Lector de seguridad |Los administradores con este rol tendrán **permisos de solo lectura para todas las características** del portal de administración de escritorio administrado de Microsoft.|
 
 > [!IMPORTANT]
 > Sólo el rol de administrador global tiene los permisos necesarios para *inscribir* a su organización en el escritorio administrado de Microsoft. Tenga en cuenta que los roles de Azure Active Directory proporcionarán privilegios de cuentas de usuario en una amplia variedad de servicios de Microsoft. Una vez finalizada la inscripción con el escritorio administrado de Microsoft, siempre debe usar el rol con los privilegios *mínimos* necesarios para llevar a cabo las demás tareas.
@@ -47,9 +47,9 @@ Cada una de las funciones siguientes se puede asignar para proporcionar diferent
  
 |Rol personalizado  |Permisos de escritorio administrado de Microsoft  |
 |---------|---------|
-|Administrador del servicio de escritorio administrado de Microsoft  | **(En versión preliminar 2020 de septiembre)** Cuando se asigna a un usuario, este rol permite al administrador **leer & escribir en características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.  |
-|Lector de servicios de escritorio administrados de Microsoft | **(En versión preliminar 2020 de septiembre)** Cuando se asigna a un usuario, este rol concede al administrador **permisos de solo lectura en características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft. |
-|Administrador de seguridad de escritorio administrada de Microsoft | **(En versión preliminar 2020 de septiembre)** Cuando se asigna a un usuario, este rol le da a ese administrador **& de lectura permisos de escritura solo para las características relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.   |
+|Administrador del servicio de escritorio administrado de Microsoft  | Cuando se asigna a un usuario, este rol concede al administrador **permisos de lectura y escritura para las características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.  |
+|Lector de servicios de escritorio administrados de Microsoft | Cuando se asigna a un usuario, este rol concede al administrador **permisos de solo lectura en características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft. |
+|Administrador de seguridad de escritorio administrada de Microsoft |Cuando se asigna a un usuario, este rol concede a ese administrador **permisos de lectura y escritura solo para las características relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.   |
 
 > [!NOTE]
 > Las características de seguridad incluyen comunicaciones relacionadas con la seguridad, administración de los contactos de seguridad, administración de solicitudes de soporte relacionadas con la seguridad y acceso a los informes relacionados con la seguridad. 
