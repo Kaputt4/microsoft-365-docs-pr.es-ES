@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341438"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399175"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -47,6 +47,9 @@ Los usuarios incluidos en las directivas de administración de riesgos de intern
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a la suscripción existente o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Paso 1: habilitar permisos para la administración de riesgos de Insider
+
+>[!Important]
+>Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
 Hay cuatro grupos de roles que se usan para configurar los permisos para administrar las características de administración de riesgos de Insider. Para continuar con estos pasos de configuración, los administradores de espacios empresariales deben asignarle primero al grupo de roles **Administración de riesgos de Insider** o **Administrador de administración de riesgos de Insider** . Para acceder a y administrar las características de administración de riesgos de Insider después de la configuración inicial, los usuarios deben pertenecer al menos a un grupo de roles de administración de riesgos de Insider.
 

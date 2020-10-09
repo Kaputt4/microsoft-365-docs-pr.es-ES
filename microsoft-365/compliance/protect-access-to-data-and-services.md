@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Obtenga información sobre cómo proteger el acceso de dispositivos y usuarios a datos y servicios de Microsoft 365 y proteger contra la pérdida de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90fd902f0ccd8589fa413a2b06b9d5ccf74ab1fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64baa2c9e49a9b24841ec50db3e5592ba3d7d55d
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036033"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399029"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y dispositivo
 
@@ -50,7 +50,7 @@ Otra recomendación es usar estaciones de trabajo configuradas específicamente 
 Por último, puede mitigar el impacto de la falta de acceso administrativo involuntaria mediante la creación de dos o más cuentas de acceso de emergencia en el espacio empresarial. Consulte [administrar cuentas de acceso de emergencia en Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Paso 3: configurar directivas de acceso a dispositivos e identidades recomendadas
-Las directivas de autenticación multifactor (MFA) y de acceso condicional son herramientas eficaces para mitigar las cuentas en peligro y el acceso no autorizado. Le recomendamos que implemente un conjunto de directivas que se han probado en conjunto. Para obtener más información, incluidos los pasos de implementación, vea [configuración de identidad y acceso a dispositivos](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations).
+Las directivas de autenticación multifactor (MFA) y de acceso condicional son herramientas eficaces para mitigar las cuentas en peligro y el acceso no autorizado. Le recomendamos que implemente un conjunto de directivas que se han probado en conjunto. Para obtener más información, incluidos los pasos de implementación, vea [configuración de identidad y acceso a dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md).
 
  Estas directivas implementan las siguientes capacidades:
 - Autenticación de factor múltiple
@@ -63,7 +63,7 @@ La implementación del cumplimiento del dispositivo de Intune requiere la inscri
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Paso 4: configurar las directivas de acceso a dispositivos de SharePoint
 
-Microsoft recomienda proteger el contenido de los sitios de SharePoint con contenido sensible y altamente regulado con controles de acceso a dispositivos. Para obtener más información, vea [recomendaciones de directivas para proteger los archivos y los sitios de SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
+Microsoft recomienda proteger el contenido de los sitios de SharePoint con contenido sensible y altamente regulado con controles de acceso a dispositivos. Para obtener más información, vea [recomendaciones de directivas para proteger los archivos y los sitios de SharePoint](../security/office-365-security/sharepoint-file-access-policies.md).
 
 
 

@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Esta página de aterrizaje proporciona vínculos e información de planeación para la seguridad y el cumplimiento en Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086661"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399039"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planeación del &amp; cumplimiento de seguridad
 
@@ -46,7 +46,7 @@ La protección del acceso a los datos y servicios de Microsoft 365 es crucial pa
   
 - [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
     
-- [Directivas y configuraciones de correo electrónico seguro](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Directivas y configuraciones de correo electrónico seguro](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -70,15 +70,15 @@ El &amp; centro de seguridad y cumplimiento le ofrece una vista única de los co
 
 Use estas configuraciones recomendadas como punto de partida para escenarios de escala empresarial o seguridad de acceso sofisticada.
   
-- [Directivas y configuraciones de correo electrónico seguro](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Directivas y configuraciones de correo electrónico seguro](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Contoso en la nube de Microsoft](https://aka.ms/cloudarchcontoso)
+- [Contoso en la nube de Microsoft](../enterprise/contoso-case-study.md)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Paneles y centros de administración de Microsoft 365
 
 Configure la seguridad y la configuración de cumplimiento en estos centros de administración y paneles para proteger su entorno 365 de Microsoft
   
-|**Subscription**|**Dirección URL de administración**|**Paneles y centros de administración**|
+|**Suscripción**|**Dirección URL de administración**|**Paneles y centros de administración**|
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centro de administración de Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centro de administración de Exchange  <br/>  Centro de administración de SharePoint y centro de administración de OneDrive para la empresa  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Administración de aplicaciones móviles de Microsoft  <br/>  Microsoft Intune  <br/> |

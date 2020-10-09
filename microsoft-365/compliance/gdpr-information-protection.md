@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416804"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398489"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protección de la información para el RGPD con funciones de Microsoft 365
 
@@ -49,7 +49,7 @@ Azure Active Directory y otras características de Microsoft 365 ofrecen una amp
 
 Microsoft ofrece una configuración recomendada que puede usar como punto de inicio:
 
-- [Configuraciones de acceso a dispositivos e identidad](../enterprise/microsoft-365-policies-configurations.md): configuraciones de directiva recomendadas para alcanzar tres niveles de protección (línea base, confidencialidad, sujeto a normativas estrictas). En esta guía, se incluyen directivas recomendadas para Exchange Online y SharePoint Online (incluido OneDrive para la Empresa).
+- [Configuraciones de acceso a dispositivos e identidad](../security/office-365-security/microsoft-365-policies-configurations.md): configuraciones de directiva recomendadas para alcanzar tres niveles de protección (línea base, confidencialidad, sujeto a normativas estrictas). En esta guía, se incluyen directivas recomendadas para Exchange Online y SharePoint Online (incluido OneDrive para la Empresa).
 - [Guía de seguridad para campañas políticas, ONG y otras organizaciones ágiles](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): se incluye el mismo conjunto de directivas, pero se ofrecen más directrices para entornos de BYOD y para cuentas de B2B.
 
 ## <a name="threat-protection"></a>Protección contra amenazas
