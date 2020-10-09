@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198497"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384549"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -259,19 +259,19 @@ Por ejemplo, si la directiva incluye todo el correo electrónico de Exchange y t
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 
-También puede aplicar una directiva de retención a usuarios específicos, grupos específicos de Microsoft 365 o sitios específicos. Para ello, asegúrese de que el **Estado** de esa ubicación está **Activado**y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
+Deben tenerse en cuenta ciertos límites únicamente si utiliza la configuración opcional para definir el ámbito de la configuración de retención para usuarios específicos, grupos específicos de Microsoft 365 o determinados sitios: 
 
-Sin embargo, al usar esta configuración, hay algunos límites cuando la directiva de retención incluye o excluye más de 1 000 objetos específicos:
-
-- Números máximos para la directiva de retención:
+- Números máximos para una directiva de retención:
   - 1 000 buzones de usuario
   - Grupos de Microsoft 365 1 000.
   - 1 000 usuarios para chats privados de Teams
   - 100 sitios (OneDrive o SharePoint)
 
-Hay un número máximo de directivas que se apoyan para un inquilino: 10 000. Estos elementos incluyen directivas de retención, directivas de etiquetas de retención y directivas de retención de aplicación automática.
+Asimismo, hay un número máximo de directivas que se admiten para un inquilino: 10 000. Estos elementos incluyen directivas de retención, directivas de etiquetas de retención y directivas de retención de aplicación automática.
 
-Si es probable que sus directivas de retención estén sujetas a estas limitaciones, elija las opciones de configuración que se aplican a todas las ubicaciones.
+Si cree probable que sus directivas de retención estén sujetas a estas limitaciones, utilice la configuración predeterminada que se aplica a toda la ubicación, ya que estas directivas no tienen ninguna limitación.
+
+Para usar la configuración opcional para definir el ámbito de la configuración de retención, asegúrese de que el **Estado** de esa ubicación esté **Activado**y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
 
 > [!WARNING]
 > Si configura inclusiones y, a continuación, quita la última, la configuración de su ubicación se revertirá a **Todos**.  Asegúrese de que esta es la configuración que desea antes de guardar la directiva.
