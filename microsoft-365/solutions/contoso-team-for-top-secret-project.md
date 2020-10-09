@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso usó un equipo con aislamiento de seguridad para un proyecto de secreto principal para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: ba9a66d2419e81aeb1eac026b16c0475ac6d0614
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778601"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399494"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto principal de la compañía contoso
 
@@ -40,7 +40,7 @@ El personal de TI de Contoso usó un [equipo con aislamiento de seguridad](secur
 
 ## <a name="step-1-created-a-private-team"></a>Paso 1: creado un equipo privado
 
-En primer lugar, para proteger el acceso al sitio de SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las [directivas de acceso de SharePoint recomendadas](../enterprise/sharepoint-file-access-policies.md).
+En primer lugar, para proteger el acceso al sitio de SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las [directivas de acceso de SharePoint recomendadas](../security/office-365-security/sharepoint-file-access-policies.md).
 
 A continuación, un administrador de Contoso ha creado un nuevo equipo privado denominado proyecto 2X y ha agregado las cuentas de usuario del proyecto el doble de personal como miembros. También configuraron el equipo para que solo los propietarios del equipo del proyecto más 2X puedan crear canales privados.
 
@@ -51,7 +51,7 @@ Para obtener información detallada sobre la configuración, vea [crear un equip
 Los administradores de Contoso crearon una nueva etiqueta de confidencialidad denominada **proyecto 2x** que:
 
 - Cifrado habilitado.
-- Permisos de co-autoría permitidos para el grupo de 2 proyectos de Microsoft 365.
+- Permisos de Co-Author permitidos para el grupo de 2 proyectos de Microsoft 365.
 - Permisos de visor permitidos para el grupo de liderazgo Senior.
 - Acceso bloqueado a dispositivos no administrados.
 
@@ -64,7 +64,7 @@ Para obtener información detallada sobre la configuración, vea [crear una etiq
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Paso 3: configurar el sitio de SharePoint subyacente
 
-En primer lugar, para proteger el acceso al sitio de SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las [directivas de acceso de SharePoint recomendadas](../enterprise/sharepoint-file-access-policies.md).
+En primer lugar, para proteger el acceso al sitio de SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las [directivas de acceso de SharePoint recomendadas](../security/office-365-security/sharepoint-file-access-policies.md).
 
 A continuación, se configuraron parámetros de permisos adicionales para el sitio:
 

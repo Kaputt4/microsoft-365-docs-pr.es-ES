@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La guía básica para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384751"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398966"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
@@ -54,10 +54,10 @@ En función de la evaluación, empiece a administrar sus dispositivos con:
  
 ## <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 
-Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para el acceso a los dispositivos, use las recomendaciones y la configuración de estos artículos:
+Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para el acceso a los dispositivos, use las recomendaciones y la configuración de estos artículos:
 
-- [Requisitos previos](identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md)
+- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Cómo contoso realizó la administración de dispositivos para Microsoft 365
 

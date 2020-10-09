@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 544f62e4765388f90874c15504e6656820111ed4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fdebfcbfa4aad68f381db4ffb8c9b83a5100187c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326500"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398720"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -51,8 +51,8 @@ También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/
 ## <a name="initial-protections"></a>Protecciones iniciales
 
 Para ayudar a proteger el acceso al equipo y a su sitio de SharePoint subyacente, revise las siguientes recomendaciones:
-- [Directivas de acceso a dispositivos e identidades](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [Directivas de acceso de SharePoint Online](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)
+- [Directivas de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
+- [Directivas de acceso de SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Implementación de equipos con la protección de base de referencia](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Uso compartido de invitados

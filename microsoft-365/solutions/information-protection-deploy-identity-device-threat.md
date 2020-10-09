@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Evite las violaciones de datos personales con los servicios de identidad, dispositivos y protección contra amenazas de Microsoft 365.
-ms.openlocfilehash: 681ff807b734430ae864334b409fe11397f3089e
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377062"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398696"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Usar identidad, dispositivo y protección contra amenazas para la normativa de privacidad de datos
 
@@ -81,7 +81,7 @@ Use [Exchange Online Protection y Office 365 Advanced Threat Protection (ATP)](.
 
 ### <a name="references"></a>Referencias
 
-- [Directivas comunes de acceso a dispositivos e identidades](../enterprise/identity-access-policies.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 - [Protección contra amenazas en Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
 - [Datos adjuntos seguros ATP](../security/office-365-security/atp-safe-attachments.md)
 - [Vínculos seguros de ATP](../security/office-365-security/atp-safe-links.md)

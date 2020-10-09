@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527865"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398870"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -31,7 +31,7 @@ En este artículo, veremos cómo implementar equipos con un nivel de protección
 
 ## <a name="initial-protections"></a>Protecciones iniciales
 
-Como primer paso, le recomendamos que configure directivas básicas de identidad y acceso de dispositivo. Para más información, vea [Recomendaciones de directivas para proteger los chats, grupos y archivos de Teams](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies).
+Como primer paso, le recomendamos que configure directivas básicas de identidad y acceso de dispositivo. Para más información, vea [Recomendaciones de directivas para proteger los chats, grupos y archivos de Teams](../security/office-365-security/teams-access-policies.md).
 
 También recomendamos activar las características básicas de protección contra amenazas avanzada para protegerse contra malware en documentos, datos adjuntos y vínculos. Se recomienda activar todas las opciones de la tabla siguiente.
 

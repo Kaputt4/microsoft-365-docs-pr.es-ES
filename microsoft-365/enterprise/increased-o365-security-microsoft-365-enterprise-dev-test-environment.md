@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar opciones de seguridad de Microsoft 365 adicionales para el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686807"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398954"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba de Microsoft 365 para empresas.
 
@@ -47,7 +47,7 @@ En esta fase, se habilita una mayor seguridad de Microsoft 365 para el entorno d
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurar SharePoint Online para bloquear aplicaciones que no son compatibles con la autenticación moderna
 
-Las aplicaciones que no admiten la autenticación moderna no pueden tener aplicadas [configuraciones de identidad y acceso a dispositivos](microsoft-365-policies-configurations.md) , que es un elemento importante de la protección de la suscripción de Microsoft 365 y sus activos digitales. 
+Las aplicaciones que no admiten la autenticación moderna no pueden tener aplicadas [configuraciones de identidad y acceso a dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) , que es un elemento importante de la protección de la suscripción de Microsoft 365 y sus activos digitales. 
 
 1. Vaya al centro de administración de 365 de Microsoft ( [https://portal.microsoft.com](https://portal.microsoft.com) ) e inicie sesión en su suscripción de laboratorio de pruebas de microsoft 365 con su cuenta de administrador global.
     
@@ -70,7 +70,7 @@ Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsof
 
 3. En **proteger archivos en SharePoint, OneDrive y Microsoft Teams**. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
-4. Haga clic en **Guardar **.
+4. Haga clic en **Guardar**.
 
 
 ### <a name="enable-anti-malware"></a>Habilitar anti-malware
@@ -117,10 +117,10 @@ Para obtener más información, consulte [calificación segura de Microsoft](htt
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8c66ee39d9c7f90142a564c61b13f68e6b4b481e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: de8a2c3d55d887a28500bb82a97e4453861aef46
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197778"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399222"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197778"
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/). Puede usar la sintaxis y los operadores Kusto para crear consultas que buscan información en el [esquema](advanced-hunting-schema-tables.md) específicamente estructurado para la búsqueda avanzada. Para entender mejor estos conceptos, ejecute la primera consulta.
+La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/). Puede usar la sintaxis y los operadores de Kusto para crear consultas que ubiquen información en un [esquema](advanced-hunting-schema-tables.md)especializado. Para entender mejor estos conceptos, ejecute la primera consulta.
 
 ## <a name="try-your-first-query"></a>Pruebe la primera consulta
 
@@ -58,24 +58,22 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Así se verá en la búsqueda avanzada.
-
-![Imagen de la consulta de búsqueda avanzada de Microsoft Threat Protection](../../media/advanced-hunting-query-example-2.png)
+**[Ejecutar esta consulta en la búsqueda avanzada](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Describir la consulta y especificar las tablas que se van a buscar
-Se ha agregado un breve comentario al principio de la consulta para describir su significado. Esto le ayudará si más adelante decide guardar la consulta y compartirla con otras personas de la organización. 
+Se ha agregado un breve comentario al principio de la consulta para describir su significado. Este comentario ayuda si más adelante decide guardar la consulta y compartirla con otras personas de la organización. 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-Generalmente, la consulta comienza con un nombre de tabla seguido de una serie de elementos precedidos por un operador de canalización (`|`). En este ejemplo, empezamos creando una Unión de dos tablas  `DeviceProcessEvents` y `DeviceNetworkEvents` , y agregamos elementos canalizados según sea necesario.
+Normalmente, la propia consulta comenzará con un nombre de tabla seguido de varios elementos que comienzan con una barra vertical ( `|` ). En este ejemplo, empezamos creando una Unión de dos tablas  `DeviceProcessEvents` y `DeviceNetworkEvents` , y agregamos elementos canalizados según sea necesario.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Establecer el intervalo de tiempo
-El primer elemento canalizado es un filtro de tiempo cuyo ámbito es el de los siete días anteriores. Un intervalo de tiempo tan reducido como sea posible garantiza que las consultas funcionen bien, devuelvan resultados que se puedan administrar y no se agote el tiempo de espera.
+El primer elemento canalizado es un filtro de tiempo cuyo ámbito es el de los siete días anteriores. Limitar el intervalo de tiempo contribuye a garantizar que las consultas funcionan bien, devuelven resultados manejables y no se agota el tiempo de espera.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -105,7 +103,7 @@ Después, la consulta busca cadenas en las líneas de comandos que se suelen usa
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personalizar la longitud y las columnas de resultados 
-Ahora que la consulta identifica claramente los datos que desea localizar, agregue elementos que definen cómo son los resultados. `project` Devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados tienen un formato adecuado y un tamaño razonable y sencillo de procesar.
+Ahora que la consulta identifica claramente los datos que desea encontrar, puede definir el aspecto de los resultados. `project` Devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados tienen un formato adecuado y un tamaño razonable y sencillo de procesar.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -113,7 +111,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Haga clic en **Ejecutar consulta** para ver los resultados. Seleccione el icono de expandir en la parte superior derecha del editor de consultas para centrarse en la consulta de búsqueda y los resultados. 
+Seleccione **Ejecutar consulta** para ver los resultados. Use el icono de expandir en la parte superior derecha del editor de consultas para centrarse en la consulta de búsqueda y los resultados. 
 
 ![Imagen del control de expansión en el editor de consultas de caza avanzada](../../media/advanced-hunting-expand.png)
 
@@ -122,7 +120,7 @@ Haga clic en **Ejecutar consulta** para ver los resultados. Seleccione el icono 
 
 ## <a name="learn-common-query-operators"></a>Obtener información sobre operadores de consulta comunes
 
-Ahora que ha ejecutado la primera consulta y tiene una idea general de los componentes, es hora de retroceder un poco y aprender más sobre los aspectos básicos. El lenguaje de consulta Kusto que utiliza la búsqueda avanzada es compatible con una gama de operadores, entre ellos los siguientes operadores comunes.
+Acaba de ejecutar la primera consulta y tener una idea general de sus componentes. Es el momento de hacer un poco de retroceso y aprender algunos conceptos básicos. El lenguaje de consulta Kusto que utiliza la búsqueda avanzada es compatible con una gama de operadores, entre ellos los siguientes operadores comunes.
 
 | Operador | Descripción y uso |
 |--|--|
@@ -141,26 +139,26 @@ Para ver un ejemplo dinámico de estos operadores, ejecútelos desde la sección
 
 ## <a name="understand-data-types"></a>Descripción de los tipos de datos
 
-Los datos de las tablas de búsqueda avanzada se clasifican generalmente en los siguientes tipos de datos.
+La búsqueda avanzada admite tipos de datos de Kusto, incluidos los tipos comunes siguientes:
 
 | Tipo de datos | Descripción e implicaciones de la consulta |
 |--|--|
-| `datetime` | Información sobre datos y hora que representan las marcas de tiempo del evento |
-| `string` | Cadena de caracteres |
-| `bool` | Verdadero o falso |
-| `int` | Valor numérico de 32 bits  |
-| `long` | Valor numérico de 64 bits |
+| `datetime` | La información de fecha y hora suele representar marcas de tiempo de evento. [Ver formatos de DateTime admitidos](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Cadena de caracteres en UTF-8 entre comillas simples ( `'` ) o comillas dobles ( `"` ). [Obtenga más información sobre las cadenas](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | Este tipo de datos admite o está en `true` `false` Estado. [Ver literales y operadores admitidos](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | entero de 32 bits  |
+| `long` | entero de 64 bits |
 
-Para obtener más información sobre estos tipos de datos y sus implicaciones, [Lea acerca de los tipos de datos Scalar Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
+Para obtener más información sobre estos tipos de datos, [Lea acerca de los tipos de datos escalares Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtener ayuda mientras escribe consultas
 Aprovéchese de las funciones siguientes para escribir consultas más rápido:
-- **Autosugerir** : cuando se escriben consultas, la búsqueda avanzada ofrece sugerencias de IntelliSense. 
-- **Árbol de esquema** : se proporciona una representación del esquema que incluye la lista de tablas y sus columnas junto a su área de trabajo. Para obtener más información, mueva el puntero sobre un elemento. Haga doble clic en un elemento para insertarlo en el editor de consultas.
-- **[Referencia de esquema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : referencia en el portal con las descripciones de las tablas y las columnas, así como los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo
+- **Autosugerir**: cuando se escriben consultas, la búsqueda avanzada ofrece sugerencias de IntelliSense. 
+- **Árbol de esquema**: se proporciona una representación del esquema que incluye la lista de tablas y sus columnas junto a su área de trabajo. Para obtener más información, mueva el puntero sobre un elemento. Haga doble clic en un elemento para insertarlo en el editor de consultas.
+- **[Referencia de esquema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: referencia en el portal con las descripciones de las tablas y las columnas, así como los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Trabajar con varias consultas en el editor
-El editor de consultas puede servir como un bloc de notas para experimentar con varias consultas. Para usar varias consultas:
+Puede usar el editor de consultas para experimentar con varias consultas. Para usar varias consultas:
 
 - Separe cada consulta con una línea vacía.
 - Situar el cursor en cualquier parte de una consulta para seleccionar esa consulta antes de ejecutarla. Se ejecutará sólo la consulta seleccionada. Para ejecutar otra consulta, mueva el cursor según corresponda y seleccione **Ejecutar consulta**.
@@ -174,7 +172,7 @@ La sección **Comenzar** ofrece algunas consultas sencillas con operadores de us
 ![Imagen de la ventana de búsqueda avanzada](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en la parte izquierda de la página o en el repositorio de consultas de GitHub.
+>Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o el [repositorio de consultas de github](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Acceso a documentación del lenguaje de consulta
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo contoso usa las características de protección de la información de Microsoft 365 para empresas para proteger sus activos digitales en la nube.
-ms.openlocfilehash: 67404df9bb2056c226eeb9370190519fc0cc8f3b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686027"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399246"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -76,9 +76,9 @@ Contoso usó los pasos siguientes para preparar a Microsoft 365 para empresas pa
 
 Junto con la infraestructura de administración de identidad y dispositivos móviles, y como parte de su implementación de Exchange Online y SharePoint, Contoso configuró el siguiente conjunto de directivas de acceso condicional y las aplicó los grupos adecuados:
 
-- [Directivas de acceso a aplicaciones administradas y no administradas en dispositivos](identity-access-policies.md)
-- [Directivas de acceso de Exchange Online](secure-email-recommended-policies.md)
-- [Directivas de acceso a SharePoint](sharepoint-file-access-policies.md)
+- [Directivas de acceso a aplicaciones administradas y no administradas en dispositivos](../security/office-365-security/identity-access-policies.md)
+- [Directivas de acceso de Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
+- [Directivas de acceso a SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Aquí se muestra el conjunto resultante de directivas de protección de la información de Contoso.
 
@@ -115,11 +115,11 @@ Esta es la configuración de protección de la información resultante de Contos
 
 [Vea](contoso-security-summary.md) cómo contoso ha usado las características de seguridad de Microsoft 365 for Enterprise para la administración de identidad y acceso, la protección contra amenazas, la protección de la información y la administración de la seguridad.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 [Plan de seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)
 

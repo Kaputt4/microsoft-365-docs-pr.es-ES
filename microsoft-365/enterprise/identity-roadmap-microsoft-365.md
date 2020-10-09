@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Guía básica de identidad para Microsoft 365.
-ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357835"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398776"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Plan de identidad para Microsoft 365
 
@@ -60,10 +60,10 @@ Para implementar la implementación de la identidad:
 
 ### <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 
-Para ayudar a garantizar un personal seguro y productivo, Microsoft proporciona un conjunto de recomendaciones para el [acceso a los dispositivos e identidades](microsoft-365-policies-configurations.md). Para identidad, use las recomendaciones y la configuración de estos artículos:
+Para ayudar a garantizar un personal seguro y productivo, Microsoft proporciona un conjunto de recomendaciones para el [acceso a los dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md). Para identidad, use las recomendaciones y la configuración de estos artículos:
 
-- [Requisitos previos](identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md)
+- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>Manage
 
