@@ -16,14 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bb28decf459035c238c61b12f65abf45128e527c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326560"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413595"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -35,7 +36,7 @@ Esta es una guía de inicio rápido que rompe la configuración de la protecció
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -206,7 +207,7 @@ Para configurar [vínculos seguros](atp-safe-links.md), revise y modifique la co
 
 5. Revise la configuración y, a continuación, haga clic en **Finalizar**.
 
-Para obtener más información, consulte [configurar directivas de vínculos seguros](set-up-atp-safe-links-policies.md).
+Para más información, consulte [Configurar directivas de vínculos seguros](set-up-atp-safe-links-policies.md).
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5: comprobar que ATP para SharePoint, OneDrive y Microsoft Teams está activado
 

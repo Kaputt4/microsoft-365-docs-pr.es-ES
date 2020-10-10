@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367936"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413715"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -51,11 +51,7 @@ Como administrador, también puede realizar cambios en la configuración selecci
 
     ![Iniciar la instalación](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. En la página Activar etiquetado de imágenes, elija si desea permitir el [etiquetado de imágenes](image-tagging.md).
-
-    ![Captura de pantalla del control de etiquetado de imágenes](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
-
-5. En la página **Configurar el procesamiento** de formularios, puede elegir si desea que los usuarios puedan crear modelos de procesamiento de formularios en bibliotecas de documentos específicos de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
+4. En la página **Configurar el procesamiento** de formularios, puede elegir si desea que los usuarios puedan crear modelos de procesamiento de formularios en bibliotecas de documentos específicos de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
  
      Para **Qué bibliotecas de SharePoint debe mostrar la opción de crear un modelo de procesamiento de formularios**, puede seleccionar:</br>
       - **Todas las bibliotecas de SharePoint** para que estén disponibles para todas las bibliotecas de SharePoint de su organización.</br>
@@ -67,7 +63,7 @@ Como administrador, también puede realizar cambios en la configuración selecci
    > [!Note]
    > Quitando un sitio después de incluirlo no afecta a los modelos existentes aplicados a las bibliotecas de ese sitio ni a la capacidad de aplicar modelos de comprensión de documentos a una biblioteca. 
     
-6. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos. </br>
+5. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos. </br>
     a. Para el **Nombre del sitio**, escriba el nombre que quiere darle a su sitio de centro de contenido.</br>
     b. La **Dirección del sitio** mostrará el URL de su sitio, basado en lo que usted seleccionó para el nombre del sitio. Si desea cambiar la configuración, haga clic en **Editar**.</br>
 
@@ -75,11 +71,11 @@ Como administrador, también puede realizar cambios en la configuración selecci
 
     Seleccione **Siguiente**.
 
-7. En la página **Revisar y finalizar**, puede mirar el ajuste seleccionado y elegir hacer cambios. Si está de acuerdo con las selecciones, seleccione **Activar**.
+6. En la página **Revisar y finalizar**, puede mirar el ajuste seleccionado y elegir hacer cambios. Si está de acuerdo con las selecciones, seleccione **Activar**.
 
-8. En la página de confirmación, haga clic en **Listo**.
+7. En la página de confirmación, haga clic en **Listo**.
 
-9. Volverá a su página **Automatizar la comprensión del contenido**. Desde esta página, puede seleccionar **administrar** para realizar cambios en las opciones de configuración. 
+8. Volverá a su página **Automatizar la comprensión del contenido**. Desde esta página, puede seleccionar **administrar** para realizar cambios en las opciones de configuración. 
 
 ## <a name="assign-licenses"></a>Asignar licencias
 

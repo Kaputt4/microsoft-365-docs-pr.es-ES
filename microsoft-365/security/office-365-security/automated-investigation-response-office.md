@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 keywords: respuesta de incidente automatizada, investigación, corrección, protección contra amenazas
 ms.date: 09/29/2020
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Microsoft defender para Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: ce95b91aa67f76cf46ce3ed6285e24d3e9edd146
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 850291966c2f2da51782d8e70de23ff4f06d6136
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308959"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413967"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Información general sobre investigación y respuesta automatizada (AIR) en Microsoft defender para Office 365
 
@@ -143,7 +145,7 @@ Las funcionalidades de AIR de Microsoft defender para Office 365 incluyen [infor
 
 Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea las alertas de phish notificadas por el usuario que ya se procesaron por vía aérea. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, vea [blog de la comunidad tecnológica: mejorar la efectividad de su SOC con Office 365 ATP y la API de administración de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Empezar a usar AIR](office-365-air.md)
 

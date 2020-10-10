@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 333e9c03cea9f16393169396ca016b09fd6a359d
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326596"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413979"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
 
@@ -221,7 +222,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Description|
+  |Valor|Veredicto de filtro de correo no deseado|Descripción|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, un mensaje se marcó como no correo no deseado mediante una regla de flujo de correo (también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, por una regla de flujo de correo.|
@@ -303,7 +304,7 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
   - **DKIM pasado**: el remitente ha sido autenticado por el [correo identificado por claves de dominio (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un remitente que no pasa la validación de DKIM indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
   - **DMARC pasada**: el remitente ha sido autenticado por la [autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC)](use-dmarc-to-validate-email.md). Un remitente que no pasa la validación de DMARC indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
 
-- **Datos adjuntos**
+- **Attachments**
 
   - **Filename**
   - **SHA256**

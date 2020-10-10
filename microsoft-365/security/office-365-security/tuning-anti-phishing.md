@@ -9,15 +9,18 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
+search.appverid: ''
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: ca1030141dd18797c7672b95ccae60b86fe9b7f2
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328064"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414159"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -32,9 +35,9 @@ Si la cuenta de un destinatario se viera comprometida como resultado del mensaje
 
 Si su suscripción incluye la protección contra amenazas avanzada (ATP), puede usar la [inteligencia sobre amenazas de Office 365](office-365-ti.md) para identificar a otros usuarios que también recibieron el mensaje de suplantación de identidad (phishing). Tiene opciones adicionales para bloquear los mensajes de suplantación de identidad:
 
-- [Vínculos seguros en Office 365 ATP](set-up-atp-safe-links-policies.md)
+- [Vínculos seguros en la ATP de Office 365](set-up-atp-safe-links-policies.md)
 
-- [Datos adjuntos seguros en Office 365 ATP](set-up-atp-safe-attachments-policies.md)
+- [Datos adjuntos seguros en la ATP de Office 365](set-up-atp-safe-attachments-policies.md)
 
 - [Directivas antiphishing en Office 365 ATP](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo**, **más agresivo**o **más agresivo**.
 

@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328088"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414267"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -47,9 +48,9 @@ Con este informe, puede:
 - [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones en tiempo real
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones de Real-Time
 
-Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y en las detecciones en tiempo real. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación:
+Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y las detecciones de Real-Time. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación:
 
 - [Mejoras en la zona horaria](#timezone-improvements)
 - [Actualizar en el proceso de actualización](#update-in-the-refresh-process)
@@ -103,7 +104,7 @@ La búsqueda de ETR y la disponibilidad de nombres dependerán de la función es
 - AAD o EXO-Security admin: ALL
 - AAD o EXO-Security Reader: ALL
 - Solo EXO-reglas de transporte: todas
-- Solo EXO-configuración de vista: ALL
+- Solo EXO-configuración View-Only: ALL
 
 Dentro de la cuadrícula de correo electrónico, los detalles flotantes y el archivo CSV exportado, el ETR se presenta con un nombre/GUID, tal como se muestra a continuación.
 

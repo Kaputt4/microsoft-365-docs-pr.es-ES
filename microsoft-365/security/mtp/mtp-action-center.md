@@ -16,16 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 5dc752591faf1a89e63632bce290e03b2c00f777
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 651beeff6326e6cab898c4297bcd50edc241a9d4
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198660"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413691"
 ---
 # <a name="the-action-center"></a>El centro de actividades
 
@@ -97,7 +98,7 @@ Para aprobar o rechazar las acciones pendientes en el Centro de actividades, deb
 > [!NOTE]
 > Los usuarios que tienen el rol de administrador global asignado en Azure Active Directory pueden aprobar o denegar cualquier acción pendiente en el Centro de actividades. No obstante, el procedimiento recomendado es que la organización limite el número de usuarios que tienen asignado el rol de administrador global. Le recomendamos que use los roles de administrador de seguridad, acciones de corrección activas y búsqueda y purga enumerados anteriormente para los permisos del Centro de actividades.
 
-## <a name="next-steps"></a>Siguientes pasos 
+## <a name="next-steps"></a>Pasos siguientes 
 
 - [Aprobar o rechazar acciones pendientes tras una investigación automatizada](mtp-autoir-actions.md)
 - [Ver los resultados de una investigación automatizada](mtp-autoir-results.md)

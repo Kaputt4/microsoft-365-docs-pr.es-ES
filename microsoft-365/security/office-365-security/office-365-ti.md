@@ -16,15 +16,16 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en el plan de protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: c37129c7c3801ab1e55bd59f9c40c9e65f9cbd8d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d3ebf1d2e425eb3699f972692c6b632f8f405019
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198438"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414315"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -115,7 +116,7 @@ La protección contra amenazas avanzada de Office 365 usa el control de acceso b
 |Integración del plan 2 de la protección contra amenazas avanzada de Office 365 con la protección contra amenazas avanzada de Microsoft defender  <br/><br/> Integración del plan 2 de la protección contra amenazas avanzada de Office 365 con un servidor de SIEM|El **administrador global** o el rol de **Administrador de seguridad** asignado en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **Asimismo** ---<br/>Una función adecuada asignada en aplicaciones adicionales (como el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor de Siem)|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
 
