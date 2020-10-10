@@ -16,16 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 232d19cb0bcb6a2f91c1bdad15d842ec7396499c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5f6e7a1a3f9c19a0ecfdca922505d2b27ad466c6
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201056"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412315"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Acciones de corrección tras investigaciones automatizadas en protección contra amenazas de Microsoft
 
@@ -66,7 +67,7 @@ En la tabla siguiente se muestran los posibles resultados:
 > - [Configuración de capacidades de investigación y respuesta automatizadas en Microsoft Threat Protection](mtp-configure-auto-investigation-response.md)
 > - [Cómo se corrigen las amenazas en los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de actividades](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [Aprobar o rechazar acciones pendientes](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)

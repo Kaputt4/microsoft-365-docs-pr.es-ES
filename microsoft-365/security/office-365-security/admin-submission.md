@@ -14,15 +14,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: 85251e82166279c25f009728dd5e5f0ff3c3f2ea
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5165761b96eefe85437743968502dada51bc297f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201260"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412027"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -135,7 +136,7 @@ Haga clic en la pestaña **correo electrónico** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
-- **Date**
+- **Fecha**
 - **Identificador de envío**: un valor de GUID que se asigna a cada envío.
 - **Enviado por**<sup>\*</sup>
 - **Asunto**<sup>\*</sup>
@@ -155,7 +156,7 @@ Haga clic en la ficha **dirección URL** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
-- **Date**
+- **Fecha**
 - **IDENTIFICADOR de envío**
 - **Enviado por**<sup>\*</sup>
 - **URL**<sup>\*</sup>
@@ -170,7 +171,7 @@ Haga clic en la pestaña **datos adjuntos** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
-- **Date**
+- **Fecha**
 - **IDENTIFICADOR de envío**
 - **Enviado por**<sup>\*</sup>
 - **Nombre de archivo**<sup>\*</sup>
@@ -203,7 +204,7 @@ Cerca de la parte superior de la página, puede escribir una fecha de inicio, un
 Para cambiar los criterios de filtro, haga clic en el botón **remitente** y elija uno de los siguientes valores:
 
 - **Dominio del remitente**
-- **Asunto**
+- **Subject**
 - **Enviado por**
 - **Tipo de envío**
 - **IP del remitente**

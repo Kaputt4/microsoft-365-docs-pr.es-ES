@@ -16,16 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2131af5e35aa0cf9f236940d2b4aaa2bed85190a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ee5616f79df35ebff2713538bae7fb42fd755287
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199786"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413583"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft
 
@@ -79,7 +80,7 @@ Durante la ejecución de una investigación, todas las demás alertas relacionad
 > No todas las alertas activan una investigación automatizada, y no todas las investigaciones dan como resultado acciones de corrección automatizadas; todo esto depende de cómo esté configurada la respuesta y la investigación automatizadas para su organización. Consulte [Configure Automated Investigation and Response Capabilities in Microsoft Threat Protection](mtp-configure-auto-investigation-response.md).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte los requisitos previos para la investigación y la respuesta automatizadas en la protección contra amenazas de Microsoft](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
 - [Configurar la investigación y la respuesta automatizadas para su organización](mtp-configure-auto-investigation-response.md)

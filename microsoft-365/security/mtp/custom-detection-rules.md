@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3388bd0d3a7ac6afff0109eb80945d3ddc362fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a0fb30915cac875e1e5278ecec2b3a1c65685f37
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198902"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412531"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creación y administración de reglas de detecciones personalizadas
 
@@ -69,7 +71,7 @@ Para crear una regla de detección personalizada, la consulta debe devolver las 
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress` (remitente del sobre o dirección de ruta de regreso)
+    - `SenderFromAddress` (remitente del sobre o dirección de Return-Path)
     - `SenderMailFromAddress` (dirección del remitente mostrada por el cliente de correo electrónico)
     - `RecipientObjectId`
     - `AccountObjectId`

@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con los invitados en Microsoft Teams.
-ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357799"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409053"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -37,7 +37,7 @@ En este vídeo se muestran los pasos de configuración que se describen en este 
 
 ## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
 
-El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, se invalidará cualquier configuración de uso compartido que configure en Microsoft 365.
+El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
 
 Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
 
@@ -45,10 +45,10 @@ Compruebe la configuración de relaciones de organización para asegurarse de qu
 
 Para establecer la configuración de relación organizativa
 
-1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
+1. Inicie sesión en Azure Active Directory en [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
-3. En el panel **Información general**, haga clic en **Identidades externas**.
-4. En el panel **identidades organizativas** , haga clic en **configuración de colaboración externa**.
+3. Haga clic en **identidades externas**.
+4. En la **pantalla introducción** , en el panel de navegación de la izquierda, haga clic en **configuración de colaboración externa**.
 5. Asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y que **los miembros puedan invitar** están establecidos en **sí**.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -67,14 +67,14 @@ Asegúrese de que el acceso de invitado esté habilitado en Microsoft Teams y re
 Para establecer la configuración de acceso de invitados de Teams
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
-2. En el panel de navegación izquierdo, haga clic en **Mostrar todos**.
+2. En el panel de navegación izquierdo, haga clic en **Mostrar todo**.
 3. En **Centros de administración**, haga clic en **Teams**.
-4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **Configuración de toda la organización** y haga clic en **Acceso de invitado**.
+4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **configuración de toda la organización** y haga clic en **acceso de invitado**.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 
 > [!NOTE]
-> La configuración de invitado de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.
+> La configuración de invitado de Teams puede tardar hasta 24 horas en activa una vez que la activa.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Microsoft 365 Groups
 
@@ -84,10 +84,10 @@ Microsoft Teams usa grupos de 365 para la pertenencia al equipo. La configuraci�
 
 Para establecer la configuración de invitado de Microsoft 365 Groups
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**.
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **configuración**.
 2. Haga clic en configuración de la **organización**.
 3. En la lista, haga clic en **grupos de 365 de Microsoft**.
-4. Asegúrese de que la casilla **permitir a los miembros del grupo fuera de la organización el acceso al contenido del grupo** y **que los propietarios del grupo agreguen personas fuera de la organización a las** casillas de verificación están activadas.
+4. Asegúrese de que los **propietarios del grupo Let agreguen personas externas a la organización a Microsoft 365 Groups As Guests** y **permita a los miembros del grupo de invitados tener acceso a** las casillas de verificación contenido del grupo.
 5. Si ha realizado cambios, haga clic en **Guardar cambios**.
 
 
@@ -112,11 +112,11 @@ Para establecer la configuración de uso compartido en el nivel de la organizaci
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Configuración de vínculos predeterminados de nivel de organización de SharePoint
 
-La configuración predeterminada de los vínculos de archivos y carpetas determina qué opción de vínculo se muestra al usuario de forma predeterminada cuando comparte un archivo o una carpeta. Los usuarios pueden cambiar el tipo de vínculo a una de las otras opciones antes de compartirlo, si lo desea.
+La configuración predeterminada de los vínculos de archivos y carpetas determina la opción de vínculo que se mostrará a los usuarios de forma predeterminada cuando compartan un archivo o una carpeta. Los usuarios pueden cambiar el tipo de vínculo a una de las otras opciones antes de compartirlo, si lo deseas.
 
 Tenga en cuenta que esta configuración afecta a todos los equipos y sitios de SharePoint de la organización.
 
-Elija el tipo de vínculo que está seleccionado de forma predeterminada cuando los usuarios comparten archivos y carpetas:
+Elija uno de los siguientes tipos de vínculo que se seleccionarán de forma predeterminada cuando los usuarios compartan archivos y carpetas:
 
 - **Cualquiera que tenga el vínculo** : elija esta opción si tiene previsto compartir de forma considerable archivos y carpetas sin autenticar. Si desea permitir que *todos* los vínculos, pero le preocupa el uso compartido no autenticado accidentalmente, considere una de las otras opciones como predeterminada. Este tipo de vínculo solo está disponible si ha habilitado a **todos los usuarios** que comparten el mismo.
 - **Solo las personas de su organización** : elija esta opción si prevé que la mayoría del uso compartido de archivos y carpetas sea para personas dentro de la organización.
@@ -145,7 +145,7 @@ Para crear un equipo
 
 Invitaremos a los usuarios más adelante. A continuación, es importante comprobar la configuración de uso compartido de nivel de sitio para el sitio de SharePoint asociado al equipo.
 
-## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido del nivel de sitio de SharePoint
+## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido en el nivel de sitio de SharePoint
 
 Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este equipo. Por ejemplo, si establece la configuración en el nivel de la organización en **cualquiera**, pero desea que todos los invitados se autentiquen para este equipo, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
 
@@ -153,9 +153,9 @@ Compruebe la configuración de uso compartido de nivel de sitio para asegurarse 
 
 
 Para establecer la configuración de uso compartido de nivel de sitio
-1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.
+1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **sitios** y haga clic en **sitios activos**.
 2. Seleccione el sitio para el equipo recién creado.
-3. En la cinta de opciones, haga clic en **Uso compartido**.
+3. Haga clic en... y elija **compartir**.
 4. Asegúrese de que el uso compartido está establecido en **todos** o en **invitados nuevos o existentes**.
 5. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -175,7 +175,7 @@ Para invitar a invitados a un equipo
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

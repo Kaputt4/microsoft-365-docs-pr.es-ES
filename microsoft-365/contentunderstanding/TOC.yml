@@ -1,10 +1,10 @@
 - name: Obtenga información sobre Microsoft SharePoint Syntex
   items:
-    - name: Introducción a SharePoint Syntex
+    - name: "Introducción a SharePoint\_Syntex"
       href: index.md
-    - name: Información general sobre el documento
+    - name: Información general sobre la comprensión de documentos
       href: document-understanding-overview.md
-    - name: Introducción al procesamiento de formularios
+    - name: Información general del procesamiento de formularios
       href: form-processing-overview.md
     - name: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
       href: difference-between-document-understanding-and-form-processing-model.md
@@ -16,7 +16,7 @@
       href: create-a-content-center.md
     - name: Crear un clasificador
       href: create-a-classifier.md
-    - name: Crear un extractor de datos
+    - name: Crear un extractor
       href: create-an-extractor.md
     - name: Tipos de explicación
       href: explanation-types-overview.md
@@ -26,11 +26,11 @@
       href: create-a-form-processing-model.md
     - name: Aplicar una etiqueta de retención
       href: apply-a-retention-label-to-a-model.md
-    - name: Análisis de uso de modelos
+    - name: Análisis de uso del modelo
       href: model-usage-analytics.md
     - name: Aprovechar la taxonomía del almacén de términos al crear un extractor
       href: leverage-term-store-taxonomy.md
-- name: Adopta
+- name: Adopción
   items:
     - name: Introducción a la adopción
       href: adoption-getstarted.md
@@ -38,8 +38,6 @@
   items:
     - name: Configurar la comprensión del contenido
       href: set-up-content-understanding.md
-    - name: Etiquetado de imágenes
-      href: image-tagging.md
 - name: Servicios de contenido
   items:
     - name: Importar mediante SKOS
@@ -48,5 +46,5 @@
       href: skos-format-reference.md
     - name: Insertar tipo de contenido en el concentrador
       href: push-content-type-to-hub.md
-    - name: Informes de almacén de términos
+    - name: Informes del almacén de términos
       href: term-store-analytics.md

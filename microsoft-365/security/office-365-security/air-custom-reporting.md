@@ -13,17 +13,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 description: Obtenga información sobre cómo integrar la investigación y la respuesta automatizadas con una solución de informes personalizada o de terceros.
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 08502516ae03dc7c6e7b58aa77939723e7532ef0
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 429ceae87e3beeb9ec0a254b120289be4ab51d16
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308925"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411978"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Usar la API de actividad de administración para soluciones de informes personalizadas o de terceros
 
@@ -44,7 +46,7 @@ Use los siguientes recursos para configurar esto:
 |[Esquema de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Obtenga información general sobre el [esquema común](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el [esquema de investigación y respuesta de ATP y la investigación de amenazas de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) para obtener información sobre los tipos de datos específicos disponibles a través de la API de actividad de administración de Office 365.|
 |
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Ver también
 
 - [Microsoft defender para Office 365](office-365-atp.md)
 

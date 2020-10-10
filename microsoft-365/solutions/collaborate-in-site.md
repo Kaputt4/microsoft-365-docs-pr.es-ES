@@ -16,16 +16,16 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
-ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357999"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409041"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
-Si necesita colaborar con invitados en documentos, datos y listas, puede usar un sitio de SharePoint. Los sitios modernos de SharePoint están conectados a grupos de 365 de Microsoft y pueden administrar la pertenencia a sitios y proporcionar herramientas de colaboración adicionales, como un buzón compartido y un calendario.
+Si necesita colaborar con invitados en documentos, datos y listas, puede usar un sitio de SharePoint. Los sitios modernos de SharePoint están conectados a grupos de 365 de Microsoft y pueden administrar la pertenencia al sitio y proporcionar herramientas de colaboración adicionales, como un buzón compartido y un calendario.
 
 En este artículo, analizaremos los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
 
@@ -37,20 +37,20 @@ En este vídeo se muestran los pasos de configuración que se describen en este 
 
 ## <a name="azure-external-collaboration-settings"></a>Configuración de colaboración externa de Azure
 
-El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, se invalidará cualquier configuración de uso compartido que configure en Microsoft 365.
+El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
 
 Compruebe la configuración de colaboración externa para asegurarse de que no se bloquee el uso compartido con invitados.
 
 ![Captura de pantalla de la página de configuración de colaboración externa de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Para establecer la configuración de colaboración externa:
+Para establecer la configuración de colaboración externa
 
-
-1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
+1. Inicie sesión en Azure Active Directory en [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
-3. Seleccione **identidades externas** y haga clic en **configuración de colaboración externa**.
-4. En el panel **configuración de invitación invite** , asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y **los miembros puedan invitar** están establecidos en **sí**.
-5. Si ha realizado cambios, haga clic en **Guardar**.
+3. Haga clic en **identidades externas**.
+4. En la **pantalla introducción** , en el panel de navegación de la izquierda, haga clic en **configuración de colaboración externa**.
+5. Asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y que **los miembros puedan invitar** están establecidos en **sí**.
+6. Si ha realizado cambios, haga clic en **Guardar**.
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
@@ -64,18 +64,17 @@ Los sitios modernos de SharePoint usan grupos de Microsoft 365 para controlar el
 
 Para establecer la configuración de invitado de Microsoft 365 Groups
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**.
-2. Haga clic en **servicios & complementos**.
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda **configuración**.
+2. Haga clic en configuración de la **organización**.
 3. En la lista, haga clic en **grupos de 365 de Microsoft**.
-4. Asegúrese de que la casilla **permitir a los miembros del grupo fuera de la organización el acceso al contenido del grupo** y **que los propietarios del grupo agreguen personas fuera de la organización a las** casillas de verificación están activadas.
+4. Asegúrese de que los **propietarios del grupo Let agreguen personas externas a la organización a Microsoft 365 Groups As Guests** y **permita a los miembros del grupo de invitados tener acceso a** las casillas de verificación contenido del grupo.
 5. Si ha realizado cambios, haga clic en **Guardar cambios**.
 
-
-## <a name="sharepoint-organization-level-sharing-settings"></a>Configuración de uso compartido en el nivel de organización de SharePoint
+## <a name="sharepoint-organization-level-sharing-settings"></a>Configuración de uso compartido en el nivel de la organización de SharePoint
 
 Para que los invitados tengan acceso a los sitios de SharePoint, la configuración de uso compartido en el nivel de la organización de SharePoint debe permitir el uso compartido con invitados.
 
-La configuración en el nivel de la organización determina qué opciones de configuración están disponibles para cada sitio. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización.
+La configuración en el nivel de la organización determina la configuración que estará disponible para cada uno de los sitios. La configuración del sitio no puede ser más permisiva que la configuración de nivel de organización.
 
 Si desea permitir el uso compartido de archivos y carpetas sin autenticar, elija **cualquiera**. Si desea asegurarse de que todos los usuarios ajenos a la organización tienen que autenticarse, elija los **invitados nuevos y existentes**. Elija la configuración más permisiva que necesitará cualquier sitio de la organización.
 
@@ -85,7 +84,7 @@ Si desea permitir el uso compartido de archivos y carpetas sin autenticar, elija
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, en **directivas**, haga clic en **uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -98,13 +97,13 @@ Para crear un sitio
 2. Haga clic en **Crear**.
 3. Haga clic en **sitio de grupo**.
 4. Escriba un nombre de sitio y escriba un nombre para el propietario del grupo (propietario del sitio).
-5. En **Configuración avanzada**, elija si desea que sea un sitio público o privado.
+5. En **Configuración avanzada**, elija si desea que este sitio sea público o privado.
 6. Haga clic en **Siguiente**.
 7. Haga clic en **Finalizar**.
 
 Invitaremos a los usuarios más adelante. A continuación, es importante comprobar la configuración de uso compartido de nivel de sitio para este sitio.
 
-## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido del nivel de sitio de SharePoint
+## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido en el nivel de sitio de SharePoint
 
 Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este sitio. Por ejemplo, si establece la configuración de nivel de organización en **cualquiera**, pero desea que todos los invitados se autentiquen en este sitio, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
 
@@ -114,8 +113,8 @@ Tenga en cuenta que no se puede compartir el sitio con personas no autenticadas 
 
 Para establecer la configuración de uso compartido de nivel de sitio
 1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.
-2. Seleccione el sitio que acaba de crear.
-3. En la cinta de opciones, haga clic en **Uso compartido**.
+2. Seleccione el sitio que desea compartir.
+3. Haga clic en... y haga clic en **compartir**.
 4. Asegúrese de que el uso compartido está establecido en **todos** o en **invitados nuevos o existentes**.
 5. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -125,19 +124,21 @@ La configuración de uso compartido de invitados ya está configurada, por lo qu
 
 Para invitar a usuarios internos a un grupo
 1. Navegue hasta el sitio en el que desea agregar usuarios.
-2. Haga clic en **miembros** en la esquina superior derecha.
+2. Haga clic en el vínculo **miembros** en la esquina superior derecha, que denota el recuento de miembros.
 3. Haga clic en **Agregar miembros**.
 4. Escriba los nombres o las direcciones de correo electrónico de los usuarios que desea invitar al sitio y, a continuación, haga clic en **Guardar**.
 
-No se pueden agregar usuarios invitados desde el sitio. Debe agregarlos mediante Outlook en la Web.
+No se pueden agregar usuarios invitados desde el sitio. Debe agregarlos mediante Outlook en la Web. Por lo tanto, como requisito previo para agregar e invitar invitados a un grupo, haga clic en la dirección URL del sitio en la columna **dirección URL**  para ir a la página específica del sitio. En esta página, haga clic en el icono del **iniciador de aplicaciones** y seleccione **Outlook**. Esta es la pantalla desde la que puede invitar a los invitados a un grupo, para qué procedimiento se describe a continuación.
 
 Para invitar a invitados a un grupo
-1. En Outlook en la web, en **grupos**, haga clic en el grupo al que desea agregar miembros.
-2. Abra la tarjeta de contacto del grupo y, a continuación, en **más opciones** (...), haga clic en **Agregar miembros**.
-3. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
-4. Haga clic en **Cerrar**.
+1. En **grupos**, haga clic en el grupo al que desea invitar a los invitados.
+2. Abra la tarjeta de contacto de grupo y haga clic en vínculo de **miembros** en la esquina superior derecha (el vínculo que indica el recuento de miembros).
+3. Haga clic en **Agregar miembros**.
+4. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
+5. Haga clic en **Cerrar**.
+Tenga en cuenta que debe hacer clic en **cerrar** solo si no es el propietario del grupo y, como resultado, no tiene permiso para agregar el invitado al grupo. En estos casos, la solicitud para agregar el invitado al grupo se transfiere al propietario del grupo para su aprobación.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

@@ -16,15 +16,16 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: e156967ff6e594503868f979e9c7f18b6bee02e2
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 1ed1f7f8abd245634db709e7c79806114c92c5c8
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327218"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413369"
 ---
 # <a name="office-365-advanced-threat-protection-atp"></a>Protección contra amenazas avanzada de Office 365 (ATP)
 

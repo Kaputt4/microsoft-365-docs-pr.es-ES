@@ -14,17 +14,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 description: Empiece a usar las capacidades de investigación y respuesta automatizadas en Microsoft defender para Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: b844e4817bc77d7f6f4e99df53fc4b14c7e7110c
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: c2ce99a2a7033c7cdcf435e237b46438259f37e4
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308892"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412963"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Introducción al uso de investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -109,7 +111,7 @@ Las licencias [de Microsoft defender para Office 365](https://docs.microsoft.com
 
 Además, [las directivas de Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) deben definirse y aplicarse para que la protección esté en su ubicación.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

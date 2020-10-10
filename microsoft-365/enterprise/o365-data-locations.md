@@ -3,7 +3,6 @@ title: Ubicaciones de datos de Microsoft 365
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 07/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,21 +15,25 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumen: Ubicaciones de datos de Microsoft 365'
-ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
+ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337162"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384770"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos del cliente de Microsoft 365?
 
-En las tablas siguientes, se muestra dónde se almacenan los datos en reposo de los clientes de los servicios de Microsoft 365 en todas las ubicaciones de nube globales de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
+>[!Note]
+>Las actualizaciones de este artículo están estrictamente controladas por Microsoft. No se publicarán las ediciones directas. Si quiere sugerirnos cambios, envíelos como comentarios al final del artículo.
+>
+
+En las tablas siguientes, se muestra dónde se almacenan los datos del cliente en reposo de los servicios de Microsoft 365 en todas las ubicaciones de nube globales de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
 
 Los clientes deberían ver la información de ubicación de los datos específica del espacio empresarial en el Centro de administración de Microsoft 365 en **Configuración | Configuración de la organización | Perfil de la organización | Ubicación de datos**.
 
@@ -105,7 +108,11 @@ Microsoft no almacenará los datos en reposo de los clientes de Intune que se en
    
   - Versión preliminar, beta u otros servicios preliminares, que, por lo general, almacenan datos de clientes en Estados Unidos, pero pueden almacenarlos de forma global.
 
-En cualquier caso, Microsoft no controla ni limita la geoárea desde la cual los clientes o usuarios finales pueden tener acceso a los datos de los clientes. 
+En cualquier caso, Microsoft no controla ni limita la ubicación desde la cual los clientes o usuarios finales pueden tener acceso a los datos del cliente. 
+
+### <a name="can-i-edit-the-information-in-this-article"></a>¿Puedo editar la información en este artículo?
+
+No. Las actualizaciones de este artículo están estrictamente controladas por Microsoft. No se publicarán las ediciones directas. Si quiere sugerirnos cambios, envíelos como comentarios al final del artículo.
 
 ## <a name="data-center-locations"></a>Ubicaciones de los centros de datos
 

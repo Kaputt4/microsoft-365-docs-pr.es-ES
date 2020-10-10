@@ -13,24 +13,26 @@ author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 ms.topic: conceptual
 ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2639027a742717070e2dee72b0c12feac7347ee7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200146"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413263"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-**Aplica para:**
+**Se aplica a:**
 
 - [Office 365 Advanced Threat Protection (Office 365 ATP)](office-365-atp.md)
 
@@ -103,7 +105,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

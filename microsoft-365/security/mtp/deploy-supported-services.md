@@ -14,17 +14,19 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73d807a37f1c85e9d79353334cac4208b86bbdc2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3a5db0b9709a9596ccd6560d7f2e546dd3753332
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198890"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413357"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -43,7 +45,7 @@ Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o A5, o una combi
 
 | Servicio compatible | Descripción |
 | ------ | ------ |
-| ATP de Microsoft Defender | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
+| inquilino dedicado | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
 | ATP de Office 365 | Protección avanzada de sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Azure ATP | Protección contra amenazas avanzadas, identidades en peligro e Insiders malintencionados mediante señales de Active Directory correlacionadas |
 | Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
@@ -64,7 +66,7 @@ En la tabla siguiente se muestra cómo cada servicio compatible proporciona dato
 
 | Servicio | Datos (señales & información relacionada) | Ámbito de respuesta & de corrección |
 | ------ | ------ | ------ |
-| ATP de Microsoft Defender | -Estados de punto de conexión y eventos sin procesar<br />-Detección de puntos de conexión y alertas, incluidos antivirus, EDR y reducción de superficie de ataques<br />-Información sobre los archivos y otras entidades observadas en los puntos de conexión | Puntos de conexión |
+| inquilino dedicado | -Estados de punto de conexión y eventos sin procesar<br />-Detección de puntos de conexión y alertas, incluidos antivirus, EDR y reducción de superficie de ataques<br />-Información sobre los archivos y otras entidades observadas en los puntos de conexión | Puntos de conexión |
 | ATP de Office 365 | -Estados de correo y de buzón y eventos sin procesar<br />-Detecciones de correo electrónico, datos adjuntos y vínculos | -Buzones de correo<br />-Cuentas de 365 de Microsoft |
 | Azure ATP | -Señales de Active Directory, incluidos los eventos de autenticación<br />-Detecciones de comportamiento relacionadas con la identidad | Identidades |
 | Microsoft Cloud App Security | -Detección de servicios y aplicaciones en la nube no autorizados (Sombrear)<br />-Exposición de datos a aplicaciones en la nube<br />-Actividad de amenaza asociada con las aplicaciones en la nube | Aplicaciones en la nube |
@@ -74,7 +76,7 @@ La implementación de cada servicio suele requerir un aprovisionamiento para el 
 
 | Servicio | Instrucciones de aprovisionamiento | Configuración inicial |
 | ------ | ------ | ------ |
-| ATP de Microsoft Defender | [Guía de implementación de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Consulte instrucciones de aprovisionamiento* |
+| inquilino dedicado | [Guía de implementación de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Consulte instrucciones de aprovisionamiento* |
 | ATP de Office 365 | *Ninguno, aprovisionado con Office 365* | [Configurar directivas ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [Inicio rápido: crear una instancia de ATP de Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Consulte instrucciones de aprovisionamiento* |
 | Microsoft Cloud App Security | *Ninguna* | [Inicio rápido: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

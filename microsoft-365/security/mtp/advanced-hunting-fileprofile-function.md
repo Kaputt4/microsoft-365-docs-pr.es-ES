@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: a89622206917c6b343ce47638c443b789513367b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338422"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412183"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -34,7 +36,7 @@ ms.locfileid: "48338422"
 
 La `FileProfile()` función es una función de enriquecimiento de la [búsqueda avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
 
-| Columna | Tipo de datos | Description |
+| Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | SHA1 | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | SHA256 | string | SHA-256 del archivo al que se aplicó la acción grabada |
