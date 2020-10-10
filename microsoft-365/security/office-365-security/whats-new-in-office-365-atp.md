@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413263"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417286"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -47,7 +47,8 @@ En este artículo se enumeran las nuevas características de la versión más re
 - [Invalidar manualmente los veredictos de filtros usando la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md)
 - [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP plan 2)
 - La exposición invalida la información en el [Explorador de amenazas](threat-explorer.md) (el correo electrónico fue permitido o bloqueado por el inquilino o la Directiva de usuario)
-- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md) (malware, phish, correo no deseado o ninguno) 
+- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md#threats-in-urls) (malware, phish, correo no deseado o ninguno) 
+- [Mejoras en la búsqueda](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) de la experiencia del explorador de amenazas con actualizaciones alrededor de las amenazas, acciones adicionales, ubicaciones de entrega y vista de escala de tiempo actualizada
 
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020 
 

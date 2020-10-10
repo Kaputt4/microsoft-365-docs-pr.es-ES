@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos seguros en Office 365 Advanced Threat Protection (ATP) para proteger su organización de los ataques de suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414123"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417267"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Vínculos seguros en la ATP de Office 365
 
@@ -150,7 +150,7 @@ En un nivel alto, a continuación se muestra cómo funciona la protección de v�
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Configuración de vínculos seguros para Microsoft Teams
 
 > [!IMPORTANT]
-> A partir del 2020 de marzo, esta característica se encuentra en versión preliminar y solo está disponible para los miembros del programa de adopción de tecnología de Microsoft Teams (TAP).
+> A partir del 2020 de marzo, esta característica se encuentra en versión preliminar y solo está disponible para los miembros del programa de adopción de tecnología de Microsoft Teams (TAP). Para obtener información sobre la programación de versiones, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
 Puede habilitar o deshabilitar la protección de vínculos seguros para Microsoft Teams en directivas de vínculos a prueba de errores. En concreto, use la opción **seleccionar la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams** . El valor recomendado es **on**.
 

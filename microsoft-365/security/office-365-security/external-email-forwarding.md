@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202884"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417226"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configurar el reenvío externo de correo electrónico en Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202884"
 
 El reenvío externo se controla mediante la *Directiva de correo no deseado saliente* y se establece en el ámbito de los usuarios en función de la configuración configurada. Actualmente se admite la configuración de 3:
 
-- **Automático** : en este modo, el sistema es responsable de decidir si se permite o no un mensaje reenviado.  Este es el modo predeterminado y, en este modo, el sistema bloqueará el reenvío externo automático.
+- **Automático** : esto está controlado por el sistema: permite el filtrado de correo no deseado saliente para controlar el reenvío de correo electrónico externo automático. Esta configuración es la predeterminada.
 
 - **Activado** : el reenvío externo automático se permite y no está restringido.
 
@@ -37,7 +37,7 @@ El reenvío externo se controla mediante la *Directiva de correo no deseado sali
 Para obtener más información sobre cómo configurar estas opciones, vea [configurar el filtrado de correo no deseado saliente en EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
 
 > [!NOTE]
-> Al deshabilitar el reenvío automático también se dsable las reglas de la bandeja de entrada que redirigen los mensajes a direcciones externas.
+> Al deshabilitar el reenvío automático también se deshabilitan las reglas de la bandeja de entrada que redirigen mensajes a direcciones externas.
 
 ## <a name="controlling-external-email-forwarding"></a>Controlar el reenvío de correo electrónico externo
 

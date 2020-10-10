@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración de vínculos seguros globales en la protección contra amenazas avanzada (ATP) de Office 365.
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350724"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417258"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>Configurar las Directivas de vínculos seguros en la ATP de Office 365
 
@@ -88,9 +88,9 @@ La creación de una directiva de vínculos seguros personalizada en el centro de
 
 4. En la página de **configuración** que aparece, configure las siguientes opciones:
 
-   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **activado**.
+   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **activado** para habilitar la protección de vínculos seguros para vínculos en mensajes de correo electrónico.
 
-   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **activado** o deje el valor **predeterminado seleccionado.**
+   - **Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams**: seleccione **activado** para habilitar la protección de vínculos seguros para vínculos en Microsoft Teams.
 
    - **Aplique un análisis de URL en tiempo real en busca de vínculos y vínculos sospechosos que apunten a archivos**: Seleccione esta opción para habilitar el análisis en tiempo real de vínculos en mensajes de correo electrónico.
 

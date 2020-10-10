@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP) también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: 1969a282d5d083886b9ad5a8aae54896ea9b1fc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202428"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417216"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -65,25 +65,15 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
    - **Recibido**<sup>\*</sup>
-
    - **Remitente**<sup>\*</sup>
-
    - **Asunto**<sup>\*</sup>
-
    - **Motivo de la cuarentena**<sup>\*</sup>
-
    - **¿Liberado?**<sup>\*</sup>
-
    - **Tipo de directiva**<sup>\*</sup>
-
    - **Destinatario**
-
    - **Id. de mensaje**
-
    - **Nombre de la directiva**
-
    - **Tamaño**
-
    - **Dirección**
 
    Cuando haya terminado, haga clic en **Guardar** o en **Establecer como predeterminado**.
@@ -91,29 +81,19 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 4. Para filtrar los resultados, haga clic en **Filtrar**. Los filtros disponibles son:
 
    - **Hora de expiración**: Filtrar los mensajes según cuando expiran de la cuarentena:
-
      - **Hoy**
-
      - **Próximos 2 días**
-
      - **Próximos 7 días**
-
      - **Personalizado**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
 
    - **Hora de recepción**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
 
    - **Motivo de la cuarentena**:
-
      - **Directiva**: el mensaje coincide con las condiciones de una regla de flujo de correo (también denominada regla de transporte).
-
-     - **Masivo**
-
-     - **Suplantación de identidad**
-
+     - **Correo masivo**
+     - **Phish**: el filtro de correo no deseado el veredicto fue **phishing email** o anti-phishing Protection en cuarentena del mensaje ([configuración de falsificación](set-up-anti-phishing-policies.md#spoof-settings) o [protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
      - **Malware**
-
      - **Correo no deseado**
-
      - **Phish de confianza alta**
 
    - **Destinatario de correo electrónico**: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
@@ -175,11 +155,8 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
   - **Notificar mensajes a Microsoft para su análisis**: esta opción está seleccionada de forma predeterminada y notifica a Microsoft el mensaje con una cuarentena incorrecta como falso positivo. Si el mensaje se puso en cuarentena como correo no deseado, en masa o con suplantación de identidad o con malware, el mensaje también se notifica al equipo de análisis de correo no deseado de Microsoft. Según el análisis, las reglas de filtro de correo no deseado de todo el servicio pueden ajustarse para permitir el paso del mensaje.
 
   - Elija una de las siguientes opciones:
-
     - **Liberar mensajes para todos los destinatarios**
-
     - **Liberar mensajes a destinatarios específicos**
-
     - **Liberar mensajes para otros usuarios**
 
   Cuando haya terminado, haga clic en **Liberar mensajes**.
@@ -195,7 +172,6 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
 - **Vista previa del mensaje**: En el panel flotante que aparece, elija una de las siguientes opciones:
 
   - **Vista de código fuente**: Muestra la versión HTML del cuerpo del mensaje con todos los vínculos desactivados.
-  
   - **Vista de texto**: Muestra el cuerpo del mensaje como texto sin formato.
 
 - **Quitar de cuarentena**: después de hacer clic en **sí** en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
@@ -245,37 +221,23 @@ En las organizaciones con ATP, los administradores pueden administrar los archiv
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Las columnas predeterminadas se marcan con un asterisco ( <sup>\*</sup> ):
 
    - **Usuario**<sup>\*</sup>
-
    - **Ubicaciones**<sup>\*</sup>
-
    - **Nombre de archivo**<sup>\*</sup>
-
    - **Dirección URL de archivo**<sup>\*</sup>
-
    - **Tamaño de archivo**<sup>\*</sup>
-
    - **Expira**<sup>\*</sup>
-
    - **¿Liberado?**<sup>\*</sup>
-
    - **Detectado por**
-
    - **Modificado por hora**
 
 4. Para filtrar los resultados, haga clic en **Filtrar**. Los filtros disponibles son:
 
    - **Hora de expiración**: Filtrar los mensajes según cuando expiran de la cuarentena:
-
      - **Hoy**
-
      - **Próximos 2 días**
-
      - **Próximos 7 días**
-
      - Un intervalo de fecha y hora personalizado.
-
    - **Hora de recepción**
-
    - **Motivo de cuarentena**: el único valor disponible es **malware**.
 
 Una vez que haya encontrado un archivo en cuarentena específico, seleccione el archivo para ver los detalles del mismo y para realizar acciones en él (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
@@ -293,29 +255,17 @@ Una vez que haya encontrado un archivo en cuarentena específico, seleccione el 
 Al seleccionar un archivo de la lista, aparecen los siguientes detalles de archivo en el panel flotante de **detalles** :
 
 - **Nombre de archivo**
-
 - **Dirección URL del archivo**: dirección URL que define la ubicación del archivo (por ejemplo, en SharePoint Online).
-
 - **Contenido malintencionado detectado en** La fecha y la hora en que se puso en cuarentena el archivo.
-
 - **Expires**: la fecha en la que se eliminará el archivo de la cuarentena.
-
 - **Detectado por**: ATP (protección contra amenazas avanzada) o motor antimalware de Microsoft.
-
 - **¿Liberado?**
-
 - **Nombre del malware**
-
 - **Identificador de documento**: un identificador único para el documento.
-
 - **Tamaño de archivo**: en kilobytes (KB).
-
 - **Organización** El identificador único de su organización.
-
 - **Última modificación**
-
 - **Modificado por**: el usuario que modificó el archivo por última vez.
-
 - **Algoritmo hash seguro 256-bit (SHA-256) valor**: puede usar este valor de hash para identificar el archivo en otros almacenes de reputación o en otras ubicaciones del entorno.
 
 ### <a name="take-action-on-quarantined-files"></a>Realizar acciones en archivos en cuarentena
@@ -323,9 +273,7 @@ Al seleccionar un archivo de la lista, aparecen los siguientes detalles de archi
 Al seleccionar un archivo de la lista, puede realizar las siguientes acciones en el archivo del panel flotante de **detalles** :
 
 - **Liberar archivos**: seleccione (predeterminado) o anule la selección **de archivos de informe a Microsoft para su análisis**y, a continuación, haga clic en **liberar archivos**.
-
 - **Descargar archivo**
-
 - **Quitar archivo de la cuarentena**
 
 Si no libera ni quita los archivos, se eliminarán después de que expire el período de retención de cuarentena predeterminado.
@@ -335,7 +283,6 @@ Si no libera ni quita los archivos, se eliminarán después de que expire el per
 Al seleccionar varios archivos en cuarentena en la lista (hasta 100), aparece el panel flotante **acciones en masa** donde puede realizar las siguientes acciones:
 
 - **Liberar archivos**
-
 - **Eliminar archivos**: después de hacer clic en **sí** en la advertencia que aparece, los archivos se eliminan inmediatamente.
 
 1. Con una cuenta profesional o educativa con privilegios de administrador global (o roles de seguridad & cumplimiento del centro de cumplimiento) en su organización, inicie sesión y [vaya al centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md).

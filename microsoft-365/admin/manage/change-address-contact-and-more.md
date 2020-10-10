@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Obtenga información sobre cómo realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.openlocfilehash: 7df4c95bde187dc4922bea3da908b9cd82c5f775
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f306130e4578284a159c01436d6e2adc6b08add7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780150"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417200"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
 
@@ -69,7 +69,7 @@ Para cambiar otra información de la página de Perfil de la compañía:
 
 ## <a name="change-your-alternate-email-address"></a>Cambiar la dirección de correo electrónico alternativa
 
-Como administrador, puede cambiar su dirección de correo electrónico alternativa para restablecer las contraseñas.
+Como administrador, puede cambiar la dirección de correo electrónico alternativa para restablecer las contraseñas.
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>.
 

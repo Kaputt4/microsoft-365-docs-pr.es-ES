@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ffa5e6abf7fb1cb0f93fe1c233ef7e3f0b023faf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 35de1504d4d7ddd3512b6cc3e478b138c1f43c29
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412627"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418126"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -34,7 +34,7 @@ ms.locfileid: "48412627"
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/). Puede usar la sintaxis y los operadores de Kusto para crear consultas que ubiquen información en un [esquema](advanced-hunting-schema-tables.md)especializado. Para entender mejor estos conceptos, ejecute la primera consulta.
+La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/). Puede usar operadores e instrucciones Kusto para crear consultas que ubiquen información en un [esquema](advanced-hunting-schema-tables.md)especializado. Para entender mejor estos conceptos, ejecute la primera consulta.
 
 ## <a name="try-your-first-query"></a>Pruebe la primera consulta
 

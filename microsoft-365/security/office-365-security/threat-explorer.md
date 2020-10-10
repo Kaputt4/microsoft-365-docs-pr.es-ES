@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414267"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417306"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -48,6 +48,101 @@ Con este informe, puede:
 - [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
 
+## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Mejoras en la experiencia de búsqueda de amenazas (próximamente)
+
+### <a name="updated-threat-information-for-emails"></a>Información de amenazas actualizada para los correos electrónicos
+
+Nos hemos concentrado en mejoras en la calidad de los datos y plataformas para aumentar la precisión de los datos y la coherencia de los registros de correo electrónico. Este conjunto de actualizaciones incluye la consolidación de la información previa y posterior a la entrega (la acción de ejemplo ejecutada en un correo electrónico como parte del proceso de ZAP) en un único registro junto con una riqueza agregada como el veredicto de correo no deseado, las amenazas a nivel de entidad (por ejemplo, qué dirección URL era malintencionada) y las ubicaciones de entrega más recientes. 
+
+Después de estas actualizaciones, verá una entrada única para cada mensaje, independientemente de los diferentes eventos posteriores a la entrega que se hayan realizado en el mensaje. Las acciones pueden incluir ZAP, corrección manual (que significa acción de administrador), entrega dinámica, etc. 
+
+Además de mostrar amenazas de malware y phish, ahora podrá ver el veredicto de correo no deseado asociado a un correo electrónico. Dentro del correo electrónico, podrá ver todas las amenazas asociadas con el correo electrónico junto con las tecnologías de detección correspondientes. Cada correo electrónico puede tener 0, 1 o varias amenazas. Verá las amenazas actuales en la sección Detalles del control flotante de correo electrónico. Además, para varias amenazas (por ejemplo, un mensaje de correo electrónico con malware y phish), el campo de la tecnología de detección daría la asignación de Threat-Detection, lo que significa que el técnico de detección llevó a la identificación de la amenaza.
+
+El conjunto de tecnologías de detección se ha actualizado para incluir los nuevos métodos de detección, así como las tecnologías de detección de correo no deseado, y Aross todas las distintas vistas de correo electrónico (malware, phish, todo el correo electrónico), tendrá el mismo conjunto coherente de tecnologías de detección para filtrar los resultados. 
+
+**Nota**: es posible que el análisis de veredicto no esté necesariamente ligado a entidades. Por ejemplo, un correo electrónico puede clasificarse como phish o correo no deseado, pero no hay direcciones URL que tengan marcas de phish o correo no deseado marcadas en ellos. Esto se debe a que los filtros también evalúan el contenido y otros detalles de un correo electrónico antes de asignar un veredicto. 
+ 
+#### <a name="threats-in-urls"></a>Amenazas en direcciones URL
+
+En el control flotante de correo electrónico: > pestaña detalles, ahora podría ver la amenaza específica para una dirección URL (la amenaza de una dirección URL puede ser malware, phish, correo no deseado o ninguno)
+
+![Amenazas de URL](../../media/URL_Threats.png)
+
+### <a name="updated-timeline-view-upcoming"></a>Vista escala de tiempo actualizada (próximamente)
+
+![Vista escala de tiempo actualizada](../../media/Email_Timeline.png)
+
+Además de identificar todos los eventos de entrega y posterior a la entrega, la vista escala de tiempo también proporciona información sobre la amenaza identificada en ese punto de tiempo para un subconjunto de estos eventos. También proporciona más información acerca de acciones adicionales (por ejemplo, ZAP, corrección manual) junto con el resultado de esa acción. La vista escala de tiempo contiene información sobre la entrega original y, posteriormente, los eventos posteriores a la entrega que se realizan en un correo electrónico.
+
+-   Origen: puede ser administrador/sistema o usuario basado en el origen del evento.
+-   Evento: Esto incluye los eventos de nivel superior, como la entrega original, la corrección manual, el ZAP, los envíos y la entrega dinámica.
+-   Acción: abarca la acción específica que se realizó como parte de la acción de ZAP o de administración (por ejemplo, eliminación temporal).
+-   Amenazas: cubre las amenazas (malware, phish, correo no deseado) identificadas en ese momento.
+-   Resultado/detalles: cubre más información sobre el resultado de la acción, si se realizó como parte de la acción de ZAP o de administración.
+
+### <a name="original-and-latest-delivery-location"></a>Ubicación de entrega original y última
+
+Hoy en día, se presenta la ubicación de entrega dentro de la cuadrícula de correo y el control flotante de correo electrónico. En el futuro, el campo Ubicación de entrega se cambiará de nombre a la ubicación de entrega original. Además, también presentamos otro campo llamado última ubicación de entrega. 
+
+La ubicación de entrega original proporcionaría más información sobre dónde se entregó un correo electrónico inicialmente. La última ubicación de entrega incluiría la ubicación en la que puede haber descargado un correo electrónico después de acciones del sistema como ZAP o acciones de administración, como **mover a elementos eliminados**. La última ubicación de entrega tiene como objetivo informar a los administradores de la última ubicación conocida del mensaje después de la entrega o cualquier acción del sistema o de administración. Por diseño, no incluye acciones del usuario final relacionadas con el correo electrónico. Por ejemplo: Si un usuario elimina un mensaje o mueve el mensaje a archivo/pst, no se actualizará la ubicación de entrega del mensaje. Sin embargo, si una acción del sistema actualizó la ubicación (por ejemplo, ZAP que da como resultado un traslado de correo electrónico a cuarentena), vería la última ubicación de entrega como cuarentena. 
+
+![Ubicaciones de entrega actualizadas](../../media/Updated_Delivery_Location.png)
+
+**Nota**: en algunos casos, la ubicación de entrega y la acción de entrega podrían mostrar "desconocido" como valor:
+
+- Es posible que vea la ubicación de entrega como entregada y la ubicación de entrega como desconocida. Esto ocurre cuando se entregó el mensaje, pero una regla de la bandeja de entrada movió el mensaje a una carpeta predeterminada (borrador, archivo, etc.) en lugar de a la bandeja de entrada o las carpetas de correo electrónico no deseado. 
+
+- La última ubicación de entrega puede ser desconocida si se intenta realizar una acción del administrador o del sistema (por ejemplo, ZAP, acción de administrador), pero no se encuentra el mensaje. Normalmente, la acción se produce después de que el usuario haya movido o eliminado el mensaje. En estos casos, Compruebe la columna resultado/detalles en la vista escala de tiempo. Busque el mensaje: el mensaje se movió o eliminó el usuario.
+
+![Ubicaciones de entrega para la escala de tiempo](../../media/Updated_Timeline_Delivery_Location.png)
+
+### <a name="additional-actions"></a>Acciones adicionales 
+
+Las acciones adicionales constan de las acciones que se han aplicado después de enviar la entrega del correo electrónico y pueden incluir ZAP, corrección manual (acción realizada por admi; n por ejemplo, eliminación temporal), entrega dinámica y reprocesamiento (un mensaje de correo electrónico se ha detectado como bueno de forma retroactiva). 
+
+> [!NOTE]
+>
+> - Como parte de este cambio, el valor eliminado por valor de ZAP que se muestra actualmente en el filtro de acción de entrega está desaparecedo. Tendrá una forma de buscar todo el correo electrónico con el intento de ZAP a través de las acciones adicionales.
+>
+> -Habrá nuevos campos y valores para tecnologías de detección y acciones adicionales (especialmente para los escenarios de ZAP). Evalúe las consultas guardadas y las consultas de seguimiento existentes para asegurarse de que funcionan con los nuevos valores. 
+
+![Additional_Actions](../../media/Additional_Actions.png)
+
+### <a name="system-overrides"></a>Invalidaciones del sistema 
+
+Las invalidaciones del sistema son un método para realizar excepciones a la ubicación de entrega prevista de un mensaje mediante la anulación de la ubicación de entrega proporcionada por el sistema (en función de las amenazas y otras detecciones identificadas por nuestra pila de filtros). Las invalidaciones del sistema se pueden establecer a través de la Directiva de inquilino o usuario para entregar el mensaje como lo sugiere la Directiva. Las invalidaciones son útiles para identificar cualquier entrega involuntaria de mensajes malintencionados debido a intervalos de configuración (por ejemplo, una directiva de remitentes seguros muy amplia establecida por un usuario). Estos valores de reemplazo pueden ser:
+
+- Permitido por la Directiva de usuario: cuando un usuario permite dominios o remitentes mediante la creación de directivas en el nivel de buzón de correo.
+- Bloqueado por la Directiva de usuario: cuando un usuario bloquea dominios o remitentes mediante la creación de directivas en el nivel de buzón de correo.
+- Permitido por la Directiva de la organización: esto se debe a que los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) para permitir a los remitentes y dominios de la organización. Esto puede ser para un conjunto de usuarios o para toda la organización.
+- Bloqueado por la Directiva de la organización: esto se debe a que los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo para bloquear a los remitentes, dominios, idiomas de mensajes o direcciones IP de origen para los usuarios de su organización. También puede tratarse de un conjunto de usuarios o de toda la organización.
+- Extensión de archivo bloqueada por la Directiva de la organización: esto se debe a que los equipos de seguridad de una organización bloquean la extensión del tipo de archivo mediante la configuración de la Directiva antimalware. Estos valores se mostrarán ahora en detalles de correo electrónico para ayudar con las investigaciones. Secops Teams también puede filtrar las extensiones de archivos bloqueados mediante la funcionalidad de filtrado enriquecido.
+
+![System_Overrides](../../media/System_Overrides.png)
+
+![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
+### <a name="improvements-around-url-and-clicks-experience"></a>Mejoras en torno a la experiencia de clics
+
+El conjunto de mejoras que se centra en los datos de los clics de direcciones URL y URL incluyen:
+
+-   Que muestra la dirección URL completa de clics (incluidos los parámetros de consulta que forman parte de la dirección URL) dentro de la sección clics del elemento emergente de dirección URL. Actualmente, se muestra el dominio y la ruta de acceso de la dirección URL en la barra de título. Esta información se amplía para mostrar la dirección URL completa.
+-   Correcciones en los filtros de direcciones URL (URL vs dominio URL vs de URL vs): hemos realizado actualizaciones en torno a la búsqueda de mensajes que contienen un veredicto de URL o clic. Como parte de esto, hemos habilitado la compatibilidad con búsquedas agnósticos de protocolo (lo que significa que puede buscar directamente una dirección URL sin http). De forma predeterminada, la búsqueda de direcciones URL se asigna a http, a menos que se especifique explícitamente. Por ejemplo:
+
+  a.    Busque con y sin el `http://` prefijo en los campos de filtro "dirección URL", "dominio de dirección URL" y "dominio de dirección URL y ruta de acceso". Este comportamiento es coherente y debe mostrar el mismo resultado.
+  b.    Busque el `https://` prefijo en "URL". Cuando no está presente, `http://` se presupone el prefijo.
+  c.     `/` al principio y al final de los campos "ruta de dirección URL", "dominio de dirección URL", "dominio y ruta de dirección URL" se omite. `/` al final del campo "dirección URL" se omite. 
+
+### <a name="phish-confidence-level"></a>Nivel de confianza de phish
+
+Nivel de confianza de phish ayuda a identificar el grado de confianza con el que un correo electrónico se ha clasificado como phish. Los dos valores posibles son alta y normal. En las fases iniciales, este filtro solo estará disponible en la vista phish del explorador de amenazas.
+
+![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+
+### <a name="zap-url-signal"></a>Señal de dirección URL ZAP 
+
+Se usa normalmente para escenarios de alerta de phish contra robo en los que se identificó un correo electrónico como phish y se quitó tras la entrega. Se usa para conectar la alerta con los resultados correspondientes en el explorador. Es una de las IOCs de la alerta. 
+
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones de Real-Time
 
 Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y las detecciones de Real-Time. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación:
@@ -59,13 +154,14 @@ Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actual
 
 ### <a name="timezone-improvements"></a>Mejoras en la zona horaria
 
-Se mostrará la zona horaria para los registros de correo electrónico dentro del portal, así como para los datos exportados. La zona horaria será visible en todas las experiencias como cuadrícula de correo electrónico, flotante de detalles, escala de tiempo del correo electrónico y correos electrónicos similares, de modo que la zona horaria del conjunto de resultados quede clara para el usuario.
+Verá la zona horaria para los registros de correo electrónico dentro del portal, así como para los datos exportados. La zona horaria será visible en todas las experiencias como cuadrícula de correo electrónico, flotante de detalles, escala de tiempo del correo electrónico y correos electrónicos similares, de modo que la zona horaria del conjunto de resultados quede clara para el usuario.
 
 ![Ver la zona horaria en el explorador](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>Actualizar en el proceso de actualización
 
 Hemos recibido comentarios sobre la confusión con la actualización automática (por ejemplo, para la fecha, en cuanto cambia la fecha, la página se actualizará) y la actualización manual (para otros filtros). De forma similar, la eliminación de filtros conduce a la actualización automática, lo que provoca situaciones en las que el cambio de distintos filtros mientras se modifica la consulta puede provocar experiencias de búsqueda incoherentes. Para solucionar esto, estamos cambiando a un mecanismo de filtrado manual.
+
 Desde el punto de vista de la experiencia, el usuario puede aplicar y quitar los distintos intervalos de filtros (desde el conjunto de filtros y la fecha) y hacer clic en el botón actualizar para filtrar los resultados una vez que se han realizado con la definición de la consulta. El botón actualizar también se ha actualizado para llamarlo claramente en la pantalla. También hemos actualizado la información sobre herramientas y la documentación del producto sobre este cambio.
 
 ![Haga clic en actualizar para filtrar los resultados](../../media/ManualRefresh.png)

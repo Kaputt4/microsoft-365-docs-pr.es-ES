@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412567"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417243"
 ---
 # <a name="user-submissions-policies"></a>Directivas de envíos de usuario
 
@@ -47,17 +47,17 @@ La entrega de mensajes de usuario que se han informado a un buzón de correo per
 
 Use los siguientes artículos para configurar los requisitos previos necesarios para que los mensajes que el usuario haya notificado vayan a su buzón personalizado:
 
-- Omitir el filtrado de correo no deseado creando una regla de flujo de correo de Exchange para establecer el nivel de confianza contra correo no deseado. Consulte [usar el EAC para crear una regla de flujo de correo que establezca el SCL de un mensaje](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) para establecer el SCL en **-1**.
+- Omitir el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de Exchange para establecer el nivel de confianza contra correo no deseado. Consulte [usar el EAC para crear una regla de flujo de correo que establezca el SCL de un mensaje](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) para establecer el SCL en **-1**.
 
-- Desactivar el examen de datos adjuntos para malware. Use [Configurar (o editar) una directiva de datos adjuntos seguros de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) para crear una directiva de datos adjuntos seguros con la configuración **fuera del archivo adjunto no se examinará el malware** habilitado.
+- Desactive el examen de datos adjuntos para malware en el buzón personalizado. Use [configurar directivas de datos adjuntos seguros en Office 365 ATP](set-up-atp-safe-attachments-policies.md) para crear una directiva de datos adjuntos seguros con la opción **desactivada** para la **respuesta de malware desconocido de datos adjuntos seguros**.
 
-- Desactivar el análisis de URL en los mensajes. Use [Agregar (o editar) directivas de vínculos seguros ATP que se aplican a todos los destinatarios o a los destinatarios de correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) para crear una directiva de vínculos seguros con **seleccionar la acción para direcciones URL potencialmente malintencionadas en los mensajes** establecidos en **desactivada**.
+- Desactive el análisis de URL en los mensajes del buzón personalizado. Use [configurar directivas de vínculos seguros en Office 365 ATP](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos a prueba de errores con el valor **desactivar** para **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**.
 
-- Cree una directiva antimalware para desactivar la depuración automática de malware de cero horas. Consulte [usar el centro de seguridad & cumplimiento para crear directivas antimalware](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) para establecer la **depuración automática de cero horas de malware** en **desactivada**.
+- Cree una directiva antimalware para desactivar la depuración automática de malware de cero horas. Consulte [usar el centro de seguridad & cumplimiento para crear directivas antimalware](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) para establecer la **depuración automática de cero horas de malware** en **desactivada**.
 
-- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática de cero horas (ZAP) para el correo no deseado y ZAP de phish. Consulte [usar el centro de seguridad & cumplimiento para crear directivas contra correo electrónico no deseado](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) y desactivar las **casillas de verificación** para el correo no deseado y ZAP de phish.
+- Cree una directiva de filtro de correo no deseado para deshabilitar la depuración automática de cero horas (ZAP) para correo no deseado y suplantación de identidad en el buzón personalizado. Consulte [usar el centro de seguridad & cumplimiento para crear directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) y desactivar las **casillas de verificación** para el **correo no deseado** y **Zap de phish**.
 
-- Deshabilitar la regla de correo no deseado. Use [configurar la configuración del correo electrónico no deseado en buzones de Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) para deshabilitar la regla de correo no deseado. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta de correo no deseado en función de la acción de veredicto " **mover mensaje a la carpeta correo no deseado** " o la colección de listas seguras del buzón.
+- Deshabilite la regla de correo no deseado en el buzón personalizado. Use [configurar la configuración del correo electrónico no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md) para deshabilitar la regla de correo no deseado. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta de correo no deseado en función de la acción de veredicto " **mover mensaje a la carpeta correo no deseado** " o la colección de listas seguras del buzón.
 
 Una vez que haya comprobado que el buzón cumple todos los requisitos previos aplicables, [use el centro de seguridad & cumplimiento para configurar el buzón de envíos de usuarios](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (en este artículo).
 
@@ -118,7 +118,7 @@ Los mensajes que se envían a los buzones personalizados deben seguir un formato
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-se SafetyAPIAction es uno de los siguientes valores enteros:
+donde SafetyAPIAction es uno de los siguientes valores enteros:
 
 - 1: correo no deseado
 - 2: NotJunk
