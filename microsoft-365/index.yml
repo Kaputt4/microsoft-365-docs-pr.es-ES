@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: ad215b1b5115faaaf82f01488aaf864f4b2de392
-  ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+  ms.openlocfilehash: 2b25d2b290723378f0e7ec286a0928add997ea39
+  ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/03/2020
-  ms.locfileid: "48350252"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "48398708"
 highlightedContent:
   items:
   - title: Refuerce a sus trabajadores remotos
@@ -93,7 +93,7 @@ productDirectory:
       text: Implementar la Protección contra amenazas avanzada de Microsoft Defender
     - url: security/office-365-security/office-365-atp.md
       text: Implementar la Protección contra amenazas avanzada de Office 365
-    - url: enterprise/microsoft-365-policies-configurations.md
+    - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Configurar la protección de acceso a dispositivos e identidades
   - title: Proteger su información y cumplir con las normativas
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
@@ -247,9 +247,12 @@ additionalContent:
     - title: Usuarios finales
       summary: Encuentre formación, procedimientos y contenido de ayuda para los usuarios de Microsoft 365 en support.microsoft.com.
       url: https://support.microsoft.com/microsoft-365
-    - title: Educadores
+    - title: Educación sobre TI
       summary: Aprenda cómo desbloquear la creatividad, promover el trabajo en equipo y tener una experiencia sencilla y segura con Microsoft 365 Educación.
       url: /education
+    - title: Educadores
+      summary: Obtenga formación, procedimientos y contenido de ayuda para educadores que utilicen Microsoft 365 Educación.
+      url: https://support.microsoft.com/education
     - title: Comunidad técnica
       summary: Únase a la comunidad técnica de Microsoft 365 para compartir experiencias, interactuar y aprender de expertos.
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

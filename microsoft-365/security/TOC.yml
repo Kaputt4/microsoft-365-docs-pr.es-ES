@@ -9,20 +9,20 @@
         - name: Microsoft 365 Security para BDM
           href: Microsoft-365-security-for-bdm.md
     - name: Configuraciones de acceso a dispositivos e identidades
-      href: ../enterprise/microsoft-365-policies-configurations.md
+      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
         - name: Trabajo de requisitos previos
-          href: ../enterprise/identity-access-prerequisites.md
+          href: ./office-365-security/identity-access-prerequisites.md
         - name: Directivas comunes de acceso a dispositivos e identidades
-          href: ../enterprise/identity-access-policies.md
+          href: ./office-365-security/identity-access-policies.md
         - name: Directivas para usuarios externos e invitados
-          href: ../enterprise/identity-access-policies-guest-access.md
+          href: ./office-365-security/identity-access-policies-guest-access.md
         - name: Directivas de acceso de Teams recomendadas
-          href: ../enterprise/teams-access-policies.md
+          href: ./office-365-security/teams-access-policies.md
         - name: Directivas de acceso de Exchange Online recomendadas
-          href: ../enterprise/secure-email-recommended-policies.md
+          href: ./office-365-security/secure-email-recommended-policies.md
         - name: Directivas de acceso de SharePoint Online recomendadas
-          href: ../enterprise/sharepoint-file-access-policies.md
+          href: ./office-365-security/sharepoint-file-access-policies.md
     - name: Puntuación de seguridad de Microsoft
       items:
         - name: Información general sobre Puntuación de seguridad
@@ -422,6 +422,8 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: Etiquetas de usuario en la ATP de Office 365
+              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items:
