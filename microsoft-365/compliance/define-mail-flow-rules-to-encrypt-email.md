@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
-ms.openlocfilehash: b36a924b41da645bd0fb823c25173fea6e7e2313
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 28486f601a79e294550bbceb48ad57069024fd5a
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546174"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408610"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -29,7 +29,7 @@ Como administrador global, puede crear reglas de flujo de correo (también conoc
 
 No se puede cifrar el correo entrante de remitentes externos a la organización.
 
-Si migró recientemente de AD RMS a Azure Information Protection, deberá revisar sus reglas de flujo de correo existentes para asegurarse de que siguen funcionando en su nuevo entorno. Además, si desea aprovechar las nuevas capacidades de cifrado de mensajes de Office 365 (OME) disponibles a través de Azure Information Protection, debe actualizar las reglas de flujo de correo existentes. De lo contrario, los usuarios seguirán recibiendo correo cifrado que usa el formato de datos adjuntos HTML anterior en lugar de la nueva experiencia de OME sin problemas. Si todavía no ha configurado OME, vea [configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md) para obtener información.
+Si migró recientemente de Active Directory RMS a Azure Information Protection, deberá revisar sus reglas de flujo de correo existentes para asegurarse de que siguen funcionando en su nuevo entorno. Además, si desea aprovechar las nuevas capacidades de cifrado de mensajes de Office 365 (OME) disponibles a través de Azure Information Protection, debe actualizar las reglas de flujo de correo existentes. De lo contrario, los usuarios seguirán recibiendo correo cifrado que usa el formato de datos adjuntos HTML anterior en lugar de la nueva experiencia de OME sin problemas. Si todavía no ha configurado OME, vea [configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md) para obtener información.
 
 Para obtener información sobre los componentes que conforman las reglas de flujo de correo y cómo funcionan las reglas de flujo de correo, consulte [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules). Para obtener más información acerca de cómo funcionan las reglas de flujo de correo con Azure Information Protection, consulte [configuración de reglas de flujo de correo de Exchange Online para las etiquetas de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
 
@@ -118,109 +118,7 @@ Puede definir reglas de flujo de correo para desencadenar la eliminación de cif
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Crear reglas de flujo de correo para el cifrado de mensajes de Office 365 sin las nuevas funciones
 
-Si todavía no ha movido su organización a las nuevas capacidades de OME, use estas tareas para definir reglas de flujo de correo para cifrar mensajes para su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea [configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection](set-up-new-message-encryption-capabilities.md).
-
-### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar el EAC para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funciones OME
-
-1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador global, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
-
-2. Elija el icono **Administración** .
-
-3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
-
-4. En el EAC, vaya a reglas de **flujo de correo** \> **Rules** y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
-
-5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
-
-6. En **aplicar esta regla si** selecciona una condición, escriba un valor si es necesario. Por ejemplo, para cifrar los mensajes dirigidos a DrToniRamos@hotmail.com:
-
-   1. En **aplicar esta regla si**, seleccione **el destinatario es**.
-
-   2. Seleccione un nombre existente de la lista de contactos o escriba una nueva dirección de correo electrónico en el cuadro **Comprobar nombres** .
-
-      - Para seleccionar un nombre existente, selecciónelo en la lista y, a continuación, haga clic en **Aceptar**.
-
-      - Para escribir un nuevo nombre, escriba una dirección de correo electrónico en el cuadro **Comprobar nombres** y, a continuación, seleccione **Comprobar nombres** \> **correctos**.
-
-7. Para agregar más condiciones, elija **más opciones** y, a continuación, seleccione **Agregar condición** y seleccione en la lista.
-
-   Por ejemplo, para aplicar la regla solo si el destinatario está fuera de la organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es externo o interno** \> **fuera de la organización** \> **OK**.
-
-8. Para habilitar el cifrado sin usar las nuevas funciones de OME, en **hacer lo siguiente**, seleccione **modificar la seguridad** \> **de mensajes aplique la versión anterior de OME**y, a continuación, elija **Guardar**.
-
-  Si recibe un error que hace que las licencias de IRM no estén habilitadas, todavía no ha configurado OME para su organización. Si desea configurar OME ahora, debe configurarlo para usar las nuevas funciones de OME. Para obtener más información, consulte [configurar las nuevas capacidades de cifrado de mensajes de Office 365 basadas en Azure Information Protection](set-up-new-message-encryption-capabilities.md). Microsoft ya no admite la configuración de nuevas implementaciones de OME sin las nuevas funciones.
-
-  Puede elegir **Agregar acción** si desea especificar otra acción.
-
-### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funciones OME
-
-1. Conexión a Exchange Online PowerShell. Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
-
-2. Cree una regla con el cmdlet **New-TransportRule** y establezca el parámetro _ApplyOME_ en `$true` .
-
-   En este ejemplo, es necesario que todos los mensajes de correo electrónico enviados a DrToniRamos@hotmail.com se cifren.
-
-   ```powershell
-   New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
-   ```
-
-   > [!NOTE]
-   > 
-   > - El nombre único de la nueva regla es "cifrar regla para recuperación ante desastres Toni Ramos".
-   > 
-   > - El parámetro _sentto_ especifica los destinatarios del mensaje (identificados por nombre, dirección de correo electrónico, nombre distintivo, etc.). En este ejemplo, el destinatario se identifica mediante la dirección de correo electrónico "DrToniRamos@hotmail.com".
-   > 
-   > - El parámetro _SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, el buzón de correo del destinatario está en hotmail y no forma parte de la organización, por lo que `NotInOrganization` se usa el valor.
-   
-   Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
-
-### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones OME
-
-Cuando los usuarios de correo electrónico envían mensajes cifrados, los destinatarios de esos mensajes pueden responder con respuestas cifradas. Puede crear reglas de flujo de correo para quitar automáticamente el cifrado de las respuestas para que los usuarios de correo electrónico de la organización no tengan que iniciar sesión en el portal de cifrado para verlos. Puede usar el EAC o los cmdlets de Windows PowerShell para definir estas reglas. Si aún no usa las nuevas funciones OME, solo puede descifrar mensajes que se envían desde dentro de la organización o mensajes que son respuestas a los mensajes enviados desde dentro de la organización. No se pueden descifrar los mensajes cifrados que se originan fuera de la organización.
-
-#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar el EAC para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
-
-1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
-
-2. Elija el icono **Administración** .
-
-3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
-
-4. En el EAC, vaya a reglas de **flujo de correo** \> **Rules** y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
-
-5. En **nombre**, escriba un nombre para la regla, como quitar el cifrado del correo entrante.
-
-6. En **aplicar esta regla si** selecciona las condiciones en las que se debe quitar el cifrado de los mensajes, como **el destinatario se encuentra** \> **dentro de la organización**.
-
-7. En **hacer lo siguiente**, seleccione **modificar la seguridad de los mensajes** \> **Quite la versión anterior de OME**.
-
-8. Seleccione **Guardar**.
-
-#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
-
-1. Conexión a Exchange Online PowerShell. Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
-
-2. Cree una regla con el cmdlet **New-TransportRule** y establezca el parámetro _RemoveOME_ en `$true` .
-
-   En este ejemplo se quita el cifrado de todo el correo enviado a los destinatarios de la organización.
-
-   ```powershell
-   New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
-   ```
-
-   > [!NOTE]
-   > 
-   > - El nombre único de la nueva regla es "quitar el cifrado del correo entrante".
-   > 
-   > - El parámetro _SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, `InOrganization` se usa el valor Value, que indica lo siguiente:
-   > 
-   >   - El destinatario es un buzón, un usuario de correo, un grupo o una carpeta pública habilitada para correo en la organización.
-   > 
-   >     o
-   > 
-   >   - La dirección de correo electrónico del destinatario está en un dominio aceptado que está configurado como un dominio autoritativo o un dominio de retransmisión interno en su organización, _y_ el mensaje se ha enviado o recibido a través de una conexión autenticada.
-
-Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+Si todavía no ha movido su organización a las nuevas capacidades de OME, Microsoft recomienda que cree un plan para cambiar las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea [configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection](set-up-new-message-encryption-capabilities.md). De lo contrario, vea [definir reglas de flujo de correo para el cifrado de mensajes de Office 365 que no usan las nuevas funciones de OME](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities).
 
 ## <a name="related-topics"></a>Temas relacionados
 

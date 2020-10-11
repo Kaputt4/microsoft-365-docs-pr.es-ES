@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de teleservicio para importar y archivar datos de SMS y MMS desde la red móvil de&T. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200255"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408978"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar en&T SMS/MMS Data
 
@@ -37,7 +37,7 @@ La información general siguiente explica el proceso de uso de un conector para 
 
 3. El conector de red AT&T que se crea en el centro de cumplimiento de Microsoft 365 se conecta al sitio de Telemensaje cada día y transfiere los mensajes SMS y MMS de las 24 horas anteriores a una ubicación de almacenamiento seguro de Azure en la nube de Microsoft. El conector también convierte el contenido de los mensajes de SMS y MMS en un formato de mensaje de correo electrónico.
 
-4. El conector importa los elementos de comunicación móvil al buzón de un usuario específico. En el buzón del usuario se crea una nueva carpeta denominada **en&T SMS/MMS Network Archiver** y se importarán los elementos en ella. El conector realiza esta asignación mediante el valor de la propiedad de la *dirección de correo electrónico del usuario* . Todos los mensajes SMS y MMS contienen esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje.
+4. El conector importa los elementos de comunicación móvil al buzón de un usuario específico. En el buzón del usuario se crea una nueva carpeta denominada **en&T SMS/MMS Network Archiver** y los elementos se importan a ella. El conector realiza esta asignación mediante el valor de la propiedad de la *dirección de correo electrónico del usuario* . Todos los mensajes SMS y MMS contienen esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje.
  
    Además de la asignación automática de usuarios mediante el valor de la propiedad de la *dirección de correo electrónico del usuario* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección de correo electrónico de Microsoft 365 correspondiente a los usuarios de su organización. Si habilita la asignación automática de usuarios y la asignación personalizada, para cada elemento de correo electrónico, el conector examina primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que corresponda a un número de teléfono móvil, el conector usa los valores de la propiedad dirección de correo electrónico del elemento que intenta importar. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento de correo electrónico, el elemento no se importará.
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de la exhibición de documentos electrónicos de Globanet de demora en Microsoft 365. Este conector de datos le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 4e0e57ff46656b45aea373a9c0ea6e530310272f
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 93b3a84aea2144f7f3f83470303d0270681d9323
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370396"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408640"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configurar un conector para archivar datos de eDiscovery de demora
 
@@ -37,7 +37,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 3. El conector eDiscovery de demora que crea en el centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes de chat a una ubicación de almacenamiento seguro de Azure en la nube de Microsoft.
 
-4. El conector importa los elementos de mensaje de chat convertidos a los buzones de usuarios específicos usando el valor de la propiedad *email* y la asignación automática de usuarios, como se describe en el paso 3. En los buzones de usuario se crea una subcarpeta nueva en la carpeta Bandeja de entrada con el nombre **eDiscovery** , y los elementos de los mensajes de chat se importarán a esa carpeta. El conector lo hace mediante el valor de la propiedad *email* . Todos los mensajes de chat contienen esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de chat.
+4. El conector importa los elementos de mensaje de chat convertidos a los buzones de usuarios específicos usando el valor de la propiedad *email* y la asignación automática de usuarios, como se describe en el paso 3. En los buzones de usuario se crea una subcarpeta nueva en la carpeta Bandeja de entrada con el nombre **eDiscovery** , y los elementos de mensajes de chat se importan a esa carpeta. El conector lo hace mediante el valor de la propiedad *email* . Todos los mensajes de chat contienen esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de chat.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -73,7 +73,7 @@ Después de hacer clic en **guardar & finalizar**, se le redirigirá al centro d
 
    Los elementos de eDiscovery de demora incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
 
-2. En la página **consentimiento del administrador** , haga clic en el botón **proporcionar consentimiento** . Se le redirigirá al sitio de Microsoft. Haga clic en **Aceptar** para proporcionar el consentimiento.
+2. En la página **consentimiento del administrador** , haga clic en **proporcionar consentimiento**. Se le redirigirá al sitio de Microsoft. Haga clic en **Aceptar** para proporcionar el consentimiento.
 
    La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de buzones de la organización. Para proporcionar el consentimiento del administrador, debe haber iniciado sesión con las credenciales de un administrador global de Microsoft 365 y aceptar la solicitud de consentimiento. Si no ha iniciado sesión como administrador global, puede ir a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) e iniciar sesión con las credenciales de administrador global para aceptar la solicitud.
 

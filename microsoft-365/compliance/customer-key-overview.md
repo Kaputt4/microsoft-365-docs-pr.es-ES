@@ -12,14 +12,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre cómo funciona el cifrado de servicios con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817959"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408988"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 

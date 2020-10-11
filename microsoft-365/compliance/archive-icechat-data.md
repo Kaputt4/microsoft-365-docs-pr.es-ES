@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de la herramienta de chat de hielo en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cd56e98aadc2b7328b733939ecc8951413309ba5
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196373"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408770"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurar un conector para archivar datos de chat de ICE
 
@@ -37,7 +37,7 @@ La siguiente descripción general explica el proceso de uso de un conector para 
 
 3. El conector de chat de hielo que crea en el centro de cumplimiento de Microsoft 365 se conecta al sitio de SFTP chat de ICE todos los días y transfiere los mensajes de chat de las 24 horas anteriores a una ubicación de almacenamiento seguro de Azure en la nube de Microsoft. El conector también convierte el contenido de un chat en un formato de mensaje de correo electrónico.
 
-4. El conector importa los elementos de mensajes de chat a los buzones de usuarios específicos. Se creará una nueva carpeta llamada **ICE chat** en los buzones de usuario y los elementos de mensajes de chat se importarán a esa carpeta. El conector usa el valor de las propiedades *SenderEmail* y *RecipientEmail* . Todos los mensajes de chat contienen estas propiedades, que se rellenan con la dirección de correo electrónico del remitente y de todos los destinatarios o participantes del mensaje de chat.
+4. El conector importa los elementos de mensajes de chat a los buzones de usuarios específicos. Se crea una nueva carpeta llamada **ICE chat** en los buzones de usuario y se importan los elementos de mensajes de chat a esa carpeta. El conector usa el valor de las propiedades *SenderEmail* y *RecipientEmail* . Todos los mensajes de chat contienen estas propiedades, que se rellenan con la dirección de correo electrónico del remitente y de todos los destinatarios o participantes del mensaje de chat.
 
    Además de la asignación automática de usuarios que usa los valores de la propiedad *SenderEmail* y *RecipientEmail* (lo que significa que el conector importa un mensaje de chat al buzón de correo del remitente y a los buzones de todos los destinatarios), también puede definir la asignación de usuarios personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene el *ImId* de chat de ICE y la dirección de buzón de correo de Microsoft 365 correspondiente a cada usuario de la organización. Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizada, para cada elemento de chat el conector examinará primero el archivo de asignación personalizada. Si no encuentra una cuenta de usuario de Microsoft 365 válida que corresponda a la ImId de chat de ICE de un usuario, el conector usará las propiedades *SenderEmail* y *RecipientEmail* del elemento chat para importar el elemento a los buzones de los participantes del chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizada o en las propiedades *SenderEmail* y *RecipientEmail* , no se importará el elemento.
 
