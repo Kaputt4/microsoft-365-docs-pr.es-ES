@@ -1,10 +1,10 @@
 ---
-title: Configurar las opciones del buzón compartido
+title: Establecer la configuración de buzón compartido
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Una vez que haya creado un buzón compartido, querrá configurar algunas opciones para sus usuarios, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre o los miembros del buzón.
-ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: a007b3ca810bdfc00176e71a737a510230f18113
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739204"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445680"
 ---
-# <a name="configure-shared-mailbox-settings"></a>Configurar las opciones del buzón compartido
+# <a name="configure-shared-mailbox-settings"></a>Establecer la configuración de buzón compartido
 
 Una vez que haya [creado un buzón compartido](create-a-shared-mailbox.md), querrá configurar algunas opciones para los usuarios de buzones de correo, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre del buzón, los miembros o los permisos de los miembros. 
 
@@ -82,7 +82,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione Edición de **reenvío de correo electrónico** \> **Edit**.
     
-3. Establezca el botón de alternancia en **activado**y escriba una dirección de correo electrónico a la que reenviar los mensajes. Puede ser cualquier dirección de correo electrónico válida. Para reenviar a varias direcciones, debe [crear un grupo de distribución](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) para las direcciones y, a continuación, escribir el nombre del grupo en este cuadro.
+3. Establezca el botón de alternancia en **activado**y escriba una dirección de correo electrónico a la que reenviar los mensajes. Puede ser cualquier dirección de correo electrónico válida. Para reenviar a varias direcciones, debe [crear un grupo de distribución](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) para las direcciones y, a continuación, escribir el nombre del grupo en este cuadro.
     
 4. Seleccione **Guardar**.
 
@@ -203,7 +203,7 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 2. Seleccione el buzón compartido que desea editar y, a continuación **Members** , seleccione \> **Editar**miembros.
 
-3. Realice una de las acciones siguientes:
+3. Realice una de las siguientes acciones:
    - Para agregar miembros, seleccione **Agregar miembros**, busque o seleccione un miembro para agregarlo y, a continuación, seleccione **Guardar**.
    - Para quitar miembros, use el cuadro de búsqueda para buscar el miembro si es necesario, seleccione la **X** junto al nombre del miembro y, a continuación, seleccione **Guardar**. 
 
@@ -233,7 +233,7 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 3. Seleccione **Editar** junto al permiso que desea cambiar para un miembro. 
 
-4. Realice una de las acciones siguientes:
+4. Realice una de las siguientes acciones:
    - Para conceder ese permiso a un miembro adicional, seleccione **Agregar permisos**, busque o seleccione un miembro para agregarlo y, después, seleccione **Guardar**.
    - Para quitar el permiso de un miembro, use el cuadro de búsqueda para buscar el miembro si es necesario, seleccione la **X** junto al nombre del miembro y, a continuación, seleccione **Guardar**. 
 
@@ -263,7 +263,7 @@ Si elige no mostrar el buzón compartido en la lista global de direcciones, el b
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Mostrar en la edición de la lista global de direcciones** \> **Edit**.
 
-3. Establezca el botón de alternancia en **activado** o **desactivado**. 
+3. Establezca el botón de alternancia en **activado**  o **desactivado**. 
 
 4. Seleccione **Guardar**.
 

@@ -1,6 +1,6 @@
 ---
 title: Evaluar la Protección contra amenazas de Microsoft
-description: Configure el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection para probar cómo la solución coordinada de protección contra amenazas diseñada para proteger los dispositivos, la identidad, los datos y las aplicaciones puede ayudar a su organización
+description: Configure el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection para probar y experimentar la solución de seguridad diseñada para proteger los dispositivos, la identidad, los datos y las aplicaciones de su organización.
 keywords: Microsoft Threat Protection Trial, pruebe Microsoft Threat Protection, evalúe Microsoft Threat Protection, Microsoft Threat Protection Evaluation Lab, Microsoft Threat Protection Pilot, Cyber Security, seguridad persistente avanzada, seguridad empresarial, dispositivos, dispositivo, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 489ce48be4d995d7e91e2559311d7e619530ba4c
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: d3f63c8ac4ba82a80c365dce564bbd8d3dd4da4b
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418090"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447124"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Crear un entorno piloto o un laboratorio de prueba de Microsoft Threat Protection 
 
@@ -35,9 +35,9 @@ ms.locfileid: "48418090"
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-La finalidad de crear este entorno de prueba o un entorno piloto es ilustrar las capacidades completas, integradas e inteligentes de la protección contra amenazas de Microsoft en detección, prevención, investigación y respuesta que puede usar en su organización. 
+La finalidad de crear este entorno de prueba o un entorno piloto es ilustrar las capacidades completas e integradas de la protección contra amenazas de Microsoft. Experimente cómo esta solución de seguridad inteligente detecta, evita, investiga automáticamente y responde a las amenazas avanzadas de su organización. 
 
-Esta guía le guiará por los pasos necesarios para iniciar la evaluación de Microsoft Threat Protection en función de las rutas de implementación recomendadas. El objetivo es ayudarle a configurar los servicios integrados de protección contra amenazas de Microsoft en un entorno de laboratorio cuando use una cuenta de prueba o en un entorno piloto en producción cuando use una licencia completa. Cuyos resultados serán útiles para presentar los casos de uso de las operaciones de seguridad a los responsables de la toma de decisiones de soluciones de seguridad de la organización. Una vez que haya terminado de ejecutar las simulaciones de ataque y esté satisfecho con los resultados, puede implementar y operar por completo en su organización con la ayuda de profesionales de ventas técnicos de Microsoft o expertos de su organización. 
+Esta guía le guiará por los pasos necesarios para iniciar la evaluación de Microsoft Threat Protection en función de las rutas de implementación recomendadas. El objetivo es ayudarle a configurar la solución de seguridad, ya sea en un entorno de laboratorio con una cuenta de prueba o en un entorno piloto en producción con una licencia completa. La preparación del entorno piloto o del laboratorio de pruebas puede ayudarle a presentar los casos de uso de la operación de seguridad a los responsables de la toma de decisiones de la organización. Cuando haya terminado de ejecutar las simulaciones de ataque y esté satisfecho con los resultados, puede implementar y descargar por completo en su organización con la ayuda de profesionales de ventas técnicos de Microsoft o expertos de su organización. 
 
 Esta guía le ayudará a:
 - Configurar el servidor y los equipos del laboratorio

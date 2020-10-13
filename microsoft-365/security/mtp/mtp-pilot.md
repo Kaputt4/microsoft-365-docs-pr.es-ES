@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418078"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446872"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>Ejecutar el proyecto piloto de Microsoft Threat Protection 
 
@@ -35,7 +35,7 @@ ms.locfileid: "48418078"
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-Para determinar con eficacia el beneficio y la adopción de la protección contra amenazas de Microsoft (MTP), puede ejecutar un proyecto piloto. Antes de habilitar la protección contra amenazas de Microsoft en su entorno de producción y comenzar con casos de uso definidos, es mejor pasar por un proceso de planeación para determinar las tareas que deben realizarse en este proyecto piloto y los criterios de éxito. 
+Para determinar con eficacia el beneficio y la adopción de la protección contra amenazas de Microsoft (MTP), puede ejecutar un proyecto piloto. Antes de habilitar la protección contra amenazas de Microsoft en el entorno de producción e iniciar los casos de uso, es mejor planear la determinación de las tareas que se deben realizar para el proyecto piloto y establecer los criterios de éxito. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Cómo usar esta guía del piloto
@@ -58,8 +58,8 @@ Hay cuatro fases para ejecutar un piloto de Microsoft Threat Protection:
 
 |Fase | Descripción | 
 |:-------|:-----|
-| ![Planificación](../../media/mtp/plan.png)<br>[Planificación](mtp-pilot-plan.md)| Obtenga información sobre lo que debe tener en cuenta antes de ejecutar el proyecto piloto de Microsoft Threat Protection: <br><br>-Scope <br> Casos de uso de <br>- Requisitos <br>-Plan de pruebas <br> -Criterios de éxito <br> -Cuadro de mandos 
-| ![Declaración](../../media/mtp/prep.png) <br>[Declaración](mtp-evaluation.md)|  Obtenga acceso al centro de seguridad de Microsoft 365 para configurar el entorno piloto de Microsoft Threat Protection. Se le guiará para:<br><br>-Identificar las partes interesadas y buscar la firma para el proyecto piloto <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración <br> -Inscríbase en la versión de prueba de Microsoft 365 E5 <br> -Configurar dominio <br>-Asignar licencias de Microsoft 365 E5 <br> -Completar el Asistente de configuración en el portal|
+| ![Planeación](../../media/mtp/plan.png)<br>[Planeación](mtp-pilot-plan.md)| Obtenga información sobre lo que debe tener en cuenta antes de ejecutar el proyecto piloto de Microsoft Threat Protection: <br><br>-Scope <br> Casos de uso de <br>- Requisitos <br>-Plan de pruebas <br> -Criterios de éxito <br> -Cuadro de mandos 
+| ![Declaración](../../media/mtp/prep.png) <br>[Declaración](mtp-evaluation.md)|  Obtenga acceso al centro de seguridad de Microsoft 365 para configurar su entorno piloto de Microsoft Threat Protection. Se le guiará a:<br><br>-Identificar las partes interesadas y buscar la firma para el proyecto piloto <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración <br> -Inscríbase en la versión de prueba de Microsoft 365 E5 <br> -Configurar dominio <br>-Asignar licencias de Microsoft 365 E5 <br> -Completar el Asistente de configuración en el portal|
 | ![Simulación de ataques](../../media/mtp/run-sim.png) <br>[Simulación de ataques](mtp-pilot-simulate.md) | Para simular un ataque, se le guiará a lo siguiente:<br><br>-Comprobación de los requisitos del entorno de prueba <br>-Ejecutar la simulación <br>-Investigar un incidente <br>-resolver el incidente 
 | ![Cierre y Resumen](../../media/mtp/close.png) <br>[Cierre y Resumen](mtp-pilot-close.md) | Cuando haya llegado al final del proceso, se le guiará a lo siguiente:<br><br>-Pase por el resultado final<br>-Presentar la salida a las partes interesadas <br>-Proporcionar comentarios <br>-Realizar los siguientes pasos 
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 502ceb47a110dd7cd743281d518e542451413672
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e07c1455cc2799481bc31871d2c3ee07b10492b9
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399751"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446188"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -118,7 +118,9 @@ Azure AD ofrece un conjunto completo de capacidades de administración de identi
 | [Protección con contraseña de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Detectar y bloquear contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de la organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras. |  Microsoft 365 E3 o E5 |
 ||||
 
-![Componentes de la identidad y el acceso al dispositivo.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+Estos son los componentes de acceso a los dispositivos e identidades, incluidos Intune y los objetos, la configuración y los subservicios de Azure AD.
+
+![Componentes de acceso de identidad y de dispositivo](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

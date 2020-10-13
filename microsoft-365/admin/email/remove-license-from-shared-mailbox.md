@@ -2,8 +2,8 @@
 title: Quitar la licencia de un buzón compartido
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432224"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445500"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -72,8 +72,8 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 
  1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
-   > [!NOTE]
-   > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario.
+    > [!NOTE]
+    > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario.
 
 2. Seleccione el buzón compartido y, a continuación, seleccione **Editar** junto a **licencias de producto**.
 
@@ -91,8 +91,8 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 
  1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
-   > [!NOTE]
-   > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario.
+    > [!NOTE]
+    > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario.
 
 2. Seleccione el buzón compartido y, a continuación, seleccione **Editar** junto a **licencias de producto**.
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar a un empleado de Microsoft 365 y proteger los datos. '
-ms.openlocfilehash: 252442c36fd29b816626adb71b3ae38ae66f1f64
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324529"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445524"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Quitar o eliminar un antiguo empleado
 
@@ -49,7 +49,7 @@ Vea un breve vídeo sobre cómo quitar a un empleado. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Para evitar que un empleado inicie sesión:
 
@@ -127,7 +127,7 @@ Puede guardar el contenido del buzón de correo del antiguo empleado de dos form
 
 2. Aplique una retención por juicio o una conservación local al buzón de correo antes de eliminar la cuenta del usuario. Esto es mucho más complicado que la primera opción, pero vale la pena hacerlo si su plan Enterprise incluye archivado y retención legal, si los litigios son una posibilidad o si tiene un departamento informático potente a nivel técnico.
 
-    Después de convertir el buzón en un "buzón inactivo", los administradores, los responsables de cumplimiento normativo o los administradores de registros pueden usar las herramientas de exhibición de documentos electrónicos local en Exchange Online para acceder al contenido y realizar búsquedas en él.
+    Después de convertir el buzón en un "buzón inactivo", los administradores, los responsables de cumplimiento normativo o los administradores de registros pueden usar In-Place herramientas de eDiscovery de Exchange Online para acceder al contenido y realizar búsquedas en él.
 
     Los buzones inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de su organización ni en otras listas.
 
@@ -140,7 +140,6 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 - Crear un buzón compartido es la forma más económica, ya que no conlleva el pago de una licencia **si el tamaño del buzón es menor que 50 GB**. Si el buzón supera los 50 GB, necesitará asignar una licencia.
 - Si convierte el buzón en uno compartido, todos los mensajes de correo electrónico antiguos también estarán disponibles. Esto puede ocupar una gran cantidad de espacio.
 - Si establece el reenvío de correo electrónico, solo los correos electrónicos  *nuevos*  que reciba el antiguo empleado se enviarán al empleado actual.
-- El reenvío de correo electrónico requiere que la cuenta del antiguo empleado tenga una licencia.
 
  > [!IMPORTANT]
  > Si está configurando el reenvío de correo electrónico o un buzón compartido, al final, no elimine la cuenta del antiguo empleado. Debe conservar la cuenta, puesto que se usa para anclar el reenvío de correo electrónico o el buzón compartido.
@@ -150,7 +149,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la pestaña **correo** .
 3. En **reenvío de correo electrónico**, seleccione **administrar reenvío de correo electrónico**.
-4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo.
+4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **dirección de reenvío** , escriba la dirección de correo electrónico del empleado actual que va a obtener el correo electrónico.
 5. Seleccione **Guardar**.
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 

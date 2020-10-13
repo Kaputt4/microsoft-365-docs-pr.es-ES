@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Preguntas más frecuentes de Microsoft bookings.
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545721"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445456"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft bookings
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545721"
 
 ### <a name="what-is-microsoft-bookings"></a>¿Qué es Microsoft bookings?
 
-Microsoft bookings es una aplicación de Microsoft 365 que facilita la programación y la administración de las citas. Las reservas incudesn un calendario de reserva basado en Web y se integran con Outlook para optimizar el calendario del personal, dando flexibilidad a los clientes para reservar una hora que funcione mejor para ellos. Los mensajes de correo electrónico de notificación automatizada reducen los programas y las organizaciones ahorran tiempo con una disminución de las tareas de programación repetitivas. Las reservas le ayudarán a realizar citas virtuales fácilmente a través de Skype o Microsoft Teams y le ayudarán a administrar la programación diaria a través de la aplicación bookings en Teams. Con la capacidad integrada para la personalización, las reservas están diseñadas para satisfacer las necesidades de varias partes de cualquier organización.
+Microsoft bookings es una aplicación de Microsoft 365 que facilita la programación y la administración de las citas. Bookings incluye un calendario de reserva basado en Web y se integra con Outlook para optimizar el calendario del personal, lo que ofrece a los clientes flexibilidad para reservar una hora que funcione mejor para ellos. Los mensajes de correo electrónico de notificación automatizada reducen los programas y las organizaciones ahorran tiempo con una disminución de las tareas de programación repetitivas. Las reservas le ayudarán a realizar citas virtuales fácilmente a través de Skype o Microsoft Teams y le ayudarán a administrar la programación diaria a través de la aplicación bookings en Teams. Con la capacidad integrada para la personalización, las reservas están diseñadas para satisfacer las necesidades de varias partes de cualquier organización.
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>¿Cómo se usa Microsoft bookings?
 
@@ -174,7 +174,7 @@ Una configuración llamada plazo **máximo** determina la más lejana (medida en
 
 Todas las horas se encuentran en la zona horaria comercial (la zona horaria local) de forma predeterminada. Esto significa que cualquier configuración que configure para un calendario de reservas, como horas laborables, aparecerá en esta zona horaria. La página de autoservicio tiene la capacidad de mostrar todas las horas de las citas en la zona horaria del usuario final, lo que se puede desactivar si se desea.Si **siempre mostrar las franjas temporales en la zona horaria comercial** permanece desactivada en la pestaña de la página de reservas, las personas que visiten la página verán las franjas horarias en sus propias zonas horarias locales.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Configuración de zona horaria y región de reservas":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Programación en reservas":::
 
 No hay ninguna disposición para establecer la zona horaria para el personal en las reservas. La zona horaria del personal y, por lo tanto, el horario comercial, estará en la zona horaria comercial.
 
@@ -202,7 +202,7 @@ Sí, tenemos una funcionalidad de reservas de grupo que permite que varias perso
 
 Sí. Hay una casilla de verificación en la pestaña de la página de reserva en la aplicación web: **requerir una cuenta de Microsoft 365 o de Office 365 de mi organización para reservar un libro**. Al activar esta casilla de verificación, se restringe el acceso a páginas de autoservicio solo a los que se encuentran en el espacio empresarial. El calendario de reservas que se encuentra dentro de la aplicación web para la creación y la administración solo pueden obtener acceso los usuarios agregados como personal a la página con roles de administrador o visor.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Control de acceso a la página de reserva en reservas":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Programación en reservas":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>¿Con qué frecuencia se actualiza la Página principal?
 
@@ -214,7 +214,7 @@ El tiempo de grabación en la aplicación Web de reservas siempre desencadenará
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>¿Pueden clonar los calendarios de reserva o duplicarlos, y pueden ser templatized para facilitar el escalado?
 
-Actualmente, la capacidad para duplicar páginas está disponible a través de PowerShell. El proceso sería usar la API de Graph para obtener detalles de los buzones y, a continuación, usar estos detalles para crear un nuevo buzón. La documentación de la API está [aquí](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+El proceso sería usar la API de Graph para obtener detalles de los buzones y, a continuación, usar estos detalles para crear un nuevo buzón. La documentación de la API está [aquí](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### <a name="what-reporting-is-available-in-bookings"></a>¿Qué informes está disponible en las reservas?
 
@@ -250,7 +250,7 @@ Cada calendario de reservas se mantiene de forma independiente. No hay ninguna v
 
 El acceso a la aplicación Web de reservas implica la autenticación mediante la autenticación normal de Azure Active Directory (AAD). La página de reserva de autoservicio se puede poner a disposición de todos los usuarios con el vínculo de la Página Web. Sin embargo, cuando la opción **requerir una cuenta de Microsoft 365 u Office 365 de mi organización** al libro está seleccionada, la página está restringida para usarse solo dentro del inquilino de Microsoft 365 (mediante la autenticación de AAD).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Control de acceso a la página de reserva en reservas":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Programación en reservas":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>¿Los datos de cliente abandonan el sistema de producción por algún motivo?
 

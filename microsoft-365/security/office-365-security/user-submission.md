@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417243"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446932"
 ---
 # <a name="user-submissions-policies"></a>Directivas de envíos de usuario
 

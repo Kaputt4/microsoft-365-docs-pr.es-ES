@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368006"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446736"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Preparar el entorno piloto o el laboratorio de pruebas de Microsoft Threat Protection
 
@@ -75,7 +76,7 @@ La preparación es fundamental para todas las implementaciones correctas. Esta s
 Obtenga información sobre las licencias, los requisitos de hardware y software, y otras opciones de configuración para aprovisionar y usar la protección contra amenazas de Microsoft. Vea los requisitos mínimos para [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites), [ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Partes interesadas y la firma
-La siguiente sección sirve para identificar a todas las partes interesadas del proyecto y que pueden tener que cerrar, revisar o mantenerse informados, ya sea para la evaluación o la ejecución de un proyecto piloto.
+Identifique todas las partes interesadas involucradas en el proyecto y que puedan tener que cerrar, revisar o mantenerse informado, ya sea para la evaluación o la ejecución de un proyecto piloto.
 
 >[!NOTE]
 >Es posible que no todas las organizaciones tengan el vencimiento de la organización de seguridad para estas funciones. En este caso, consulte con su equipo de liderazgo sobre accountabilities de revisión y aprobación.
@@ -88,13 +89,13 @@ Agregue partes interesadas a la tabla siguiente según corresponda para su organ
 
 -   I = informado de este proyecto
 
-| Nombre                 | Función                                                                                                                                                                                                          | Acción |
+| Nombre                 | Role                                                                                                                                                                                                          | Acción |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Escriba el nombre y el correo electrónico | Director General de seguridad de la **información (CISO)** *un representante ejecutivo que sirve de patrocinador dentro de la organización para la nueva implementación de la tecnología.*                                                  | PARA     |
 | Escriba el nombre y el correo electrónico | **Director de operaciones de la defensa en el ciberespacio (CDOC)** *un representante del equipo de CDOC a cargo de definir cómo se alinea este cambio con los procesos del equipo de operaciones de seguridad de clientes.*       | PARA     |
 | Escriba el nombre y el correo electrónico | **Arquitecto de seguridad** *un representante del equipo de seguridad a cargo de definir cómo se alinea este cambio con la arquitectura de seguridad principal de la organización.*                         | R      |
 | Escriba el nombre y el correo electrónico | **Arquitecto de trabajo** *un representante del equipo de ti encargado de definir cómo se alinea este cambio con la arquitectura principal del área de trabajo de la organización.*                             | R      |
-| Escriba el nombre y el correo electrónico | **Analista de seguridad** *un representante del equipo de CDOC que puede proporcionar información sobre las capacidades de detección, la experiencia del usuario y la utilidad general de este cambio desde el punto de vista de las operaciones de seguridad.* | I      |
+| Escriba el nombre y el correo electrónico | **Analista de seguridad** *un representante del equipo de CDOC que puede enviar comentarios sobre las capacidades de detección, la experiencia del usuario y la utilidad general de este cambio desde el punto de vista de las operaciones de seguridad.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Preparar Azure Active Directory
 Omita este paso si ya ha habilitado la sincronización entre Active Directory y Azure Active Directory local. Revise la documentación de procedimientos recomendados existentes de Azure Active Directory. Los siguientes pasos están optimizados para evaluar o ejecutar un proyecto piloto de Microsoft Threat Protection.
@@ -131,9 +132,9 @@ En la tabla siguiente se indica el orden que Microsoft recomienda para configura
 
 | Componente                               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rango de orden de configuración |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Protección contra amenazas avanzada de Office 365| Office 365 ATP protege a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. <br> [Aprende más.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
-|Azure Advanced Threat Protection|ATP de Azure usa las señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones de Insider dañinas dirigidas a la organización. <br> [Más información](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2  |
-|Microsoft Cloud App Security| Microsoft Cloud App Security es un agente de seguridad de acceso a la nube (CASB) que funciona en varias nubes. Proporciona una gran visibilidad, control sobre los recorridos de datos y análisis sofisticados para identificar y combatir ciberamenazas en todos sus servicios en la nube. <br> [Más información](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+| Protección contra amenazas avanzada de Office 365| Office 365 ATP protege a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. <br> [Aprende más.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                   |
+|Azure Advanced Threat Protection|ATP de Azure usa las señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones de Insider dañinas dirigidas a la organización. <br> [Más información](https://docs.microsoft.com/azure-advanced-threat-protection/).| segundo |
+|Microsoft Cloud App Security| Microsoft Cloud App Security es un agente de seguridad de acceso a la nube (CASB) que funciona en varias nubes. Proporciona una gran visibilidad, control sobre los recorridos de datos y análisis sofisticados para identificar y combatir ciberamenazas en todos sus servicios en la nube. <br> [Más información](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Protección contra amenazas avanzada de Microsoft Defender | Las funciones de detección y respuesta en el punto de conexión de ATP de Microsoft Defender proporcionan detecciones de ataques avanzadas que son casi en tiempo real y permiten tomar medidas. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. <br> [Aprende más.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Paso siguiente
