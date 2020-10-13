@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 23f5fb935bb67efe8e08cb8be629aad242d856cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413441"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429424"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 
@@ -73,6 +73,6 @@ Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidade
 - [Buscar de forma proactiva amenazas](advanced-hunting-overview.md) de intentos de intrusión y actividad de infracciones que afectan el correo electrónico, los datos, los dispositivos y las cuentas
 - [Comprenda las campañas y técnicas de ataque más recientes con el](latest-attack-campaigns.md) análisis de amenazas
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Portales de seguridad de Microsoft](portals.md)

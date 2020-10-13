@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: f8d741cbc7215c18d096573fe6555dfe7709c58b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ecfd1bb9e5ff548c08aea322d12d626fa7fb6120
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413643"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429640"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -84,7 +84,7 @@ Si se realizó una acción de corrección en un dispositivo (como un dispositivo
 
 7. Para deshacer la acción, seleccione **eliminar corrección**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Ver los detalles y los resultados de una investigación automatizada](mtp-autoir-results.md)
 - [Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft](advanced-hunting-overview.md)
