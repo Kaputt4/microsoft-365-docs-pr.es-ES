@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Seguridad en Office 365, de EOP a ATP, planes 1 y 2, configuraciones de seguridad estándar frente a estrictas y mucho más. Comprenda lo que tiene y cómo proteger sus propiedades.
-ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430697"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456476"
 ---
 # <a name="office-365-security-overview"></a>Introducción a la seguridad de Office 365
 
@@ -88,7 +88,7 @@ a partir de **Exchange Online Protection**:
 |---------|---------|---------|
 | Entre las tecnologías se incluyen:<ul><li>correo no deseado</li><li>conseguir</li><li>software</li><li>correo masivo</li><li>inteligencia de identidad</li><li>detección de suplantación</li><li>Cuarentena de administrador</li><li>Administradores y envíos de usuarios de falsos positivos y falsos negativos</li><li>Permitir o bloquear para direcciones URL y archivos</li><li>Informes</li></u1>|<li>Búsqueda de registros de auditoría</li><li>Seguimiento de mensajes</li>|<li>Depuración automática de cero horas (ZAP)</li><li>Refinamiento y pruebas de las listas de permitidos y bloqueados</li>|
 
-Si desea profundizar en EOP, vaya **[a este artículo](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**.
+Si desea profundizar en EOP, vaya **[a este artículo](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**.
 
 Como estos productos son acumulativos, si evalúa el P1 y decide suscribirse a él, agregará estas capacidades.
 

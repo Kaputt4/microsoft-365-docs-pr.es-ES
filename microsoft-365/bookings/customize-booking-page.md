@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambiar el tema de color de la página de reserva en la aplicación Microsoft bookings.
-ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962518"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456380"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 
@@ -36,21 +36,21 @@ En la sección siguiente se proporciona información sobre cómo configurar la p
 
 - **Control de acceso de la página de reserva: requerir una cuenta de Microsoft 365 de mi organización para reservar**  Al seleccionar esta opción, solo se permitirá que los usuarios de la organización vean la página o los libros de todos los servicios. El acceso a la página está autorizado a través de comprobaciones de credenciales para asegurarse de que el visitante pertenece a una cuenta dentro del espacio empresarial.
 
-- **Control de acceso de la página de reserva: deshabilitar la indización directa del motor de búsqueda de la página de reserva** Esta configuración impide que la página aparezca en los resultados de búsqueda para Google, Bing u otros motores de búsqueda. Al anular la selección de este cuadro, se asegurará de que el acceso a la página se limita al vínculo de la página generada.
+- **Control de acceso de la página de reserva: deshabilitar la indización directa del motor de búsqueda de la página de reserva** Esta configuración impide que la página aparezca en los resultados de búsqueda para Google, Bing u otros motores de búsqueda. Al activar esta casilla, se limitará el acceso a la página al vínculo de la página generada.
 
-- **Consentimiento del uso de datos del cliente** Cuando se selecciona, el texto que solicita el consentimiento del usuario o del cliente de su organización para usar sus datos aparecerá en la página de autoservicio. La casilla tendrá que ser comprobada por el usuario para poder completar la reserva.
+- **Consentimiento del uso de datos del cliente** Cuando se selecciona, el texto que solicita el consentimiento del usuario o del cliente de su organización para usar sus datos aparecerá en la página de Self-Service. La casilla tendrá que ser comprobada por el usuario para poder completar la reserva.
 
 - **Directiva de programación**, **notificaciones de correo electrónico**y **personal** todas estas configuraciones son similares a las disponibles para cada servicio en la ficha servicios.
 
 - **Disponibilidad** Esta es una opción para establecer los intervalos de disponibilidad de fecha y hora específicos para un servicio. De lo contrario, las reservas se establecerán de forma predeterminada en el horario comercial. Puede usar la opción de **disponibilidad** que se muestra aquí para escenarios como festivos o grandes horas.
 
-- **Personalizar la página** Elija los colores y logotipos que aparecen en la página de autoservicio, por ejemplo, para la coherencia de la marca.
+- **Personalizar la página** Elija los colores y logotipos que aparecen en la página Self-Service, por ejemplo, para la coherencia de la marca.
 
-- **Configuración regional y de zona horaria** Aquí puede configurar la zona horaria y las preferencias de idioma para la página de autoservicio. Se recomienda configurar la zona horaria local. Para los visitantes de la página de autoservicio, las reservas detectan automáticamente sus zonas horarias locales y mostrarán la disponibilidad en sus propias zonas horarias. Por ejemplo, si una cita está disponible en 1:00PM PST, alguien en CST verá que la hora disponible aparece como 3:00PM CST.
+- **Configuración regional y de zona horaria** Aquí puede configurar la zona horaria y las preferencias de idioma para la página de Self-Service. Se recomienda configurar la zona horaria local. Para los visitantes de la página de Self-Service, las reservas detectan automáticamente sus zonas horarias locales y mostrarán la disponibilidad en sus propias zonas horarias. Por ejemplo, si una cita está disponible en 1:00PM PST, alguien en CST verá que la hora disponible aparece como 3:00PM CST.
 
-Una vez que haya publicado la página de reserva, los clientes verán la página de reserva donde pueden reservar citas con usted. El cliente al que se enfrenta la pag tiene el siguiente aspecto:
+Una vez que haya publicado la página de reserva, los clientes verán la página de reserva donde pueden reservar citas con usted. La página de reserva a la que se enfrenta el cliente tiene el siguiente aspecto:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Página de reserva orientada al cliente":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="La página reservas":::
 
 ## <a name="publish-the-booking-page"></a>Publicar la página de reserva
 
@@ -70,4 +70,4 @@ Vea este vídeo o siga los pasos que se indican a continuación para publicar o 
 
 ## <a name="unpublish-the-booking-page"></a>Cancelar la publicación de la página de reserva
 
-1. Para cancelar la publicación de la página de reserva, vaya a la página de reserva y seleccione **Cancelar publicación**.
+ - Para cancelar la publicación de la página de reserva, vaya a la página de reserva y seleccione **Cancelar publicación**.

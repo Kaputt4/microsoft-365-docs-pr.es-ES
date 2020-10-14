@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326882"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456428"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el centro de administración de 365 de Microsoft (versión preliminar)
 
@@ -53,13 +53,13 @@ El servicio de ubicación de Windows debe estar Consent en los equipos. Puede pr
 
 No es necesario agregar ubicaciones en el centro de administración con este método, ya que se identifican automáticamente en la resolución de la ciudad. No puede mostrar varias ubicaciones de oficina dentro de una ciudad con los servicios de ubicación de Windows. La información de ubicación también se redondea a los 300 metros más próximos por 300 metros antes de cargarse para que no sea posible acceder a la información de ubicación más precisa.
 
-Los equipos deben tener una red Wi-Fi en lugar de un cable Ethernet. Los equipos con un cable Ethernet no tienen información precisa sobre la ubicación.
+Los equipos deben tener Wi-Fi red en lugar de un cable Ethernet. Los equipos con un cable Ethernet no tienen información precisa sobre la ubicación.
 
 Las muestras de medidas y las ubicaciones de la oficina deberían empezar a parecer 24 horas después de que se hayan cumplido estos requisitos previos.
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. agregar ubicaciones y proporcionar información de subred de LAN
 
-Para esta opción no se necesitan servicios de ubicación de Windows ni Wi-Fi. Necesita la versión **20,161** o posterior de OneDrive para Windows instalada en todos los equipos de la ubicación.
+Para esta opción, no se requieren los servicios de ubicación de Windows ni Wi-Fi. Necesita la versión **20,161** o posterior de OneDrive para Windows instalada en todos los equipos de la ubicación.
 
 También tiene que agregar ubicaciones en la página conectividad de red del centro de administración o importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred de la LAN de Office.
 
@@ -169,7 +169,7 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
 
    ![Mensaje listo para importación de CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Preguntas frecuentes
+## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta de servicio de Microsoft 365?
 
