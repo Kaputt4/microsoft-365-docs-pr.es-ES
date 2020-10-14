@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Independientemente de si va a agregar nuevas soluciones al centro de cumplimiento, a actualizar características existentes en función de sus comentarios o a la actualización de documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398531"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446563"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -43,7 +43,7 @@ Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/micr
 
 Varias características nuevas y mejoradas se resaltan en la vista previa pública este mes:
 
-**Administración de riesgos de Insider**
+**Administración de riesgos internos**
 
 - Consulte nuestras seis nuevas [plantillas de directiva](insider-risk-management-policies.md#policy-templates):
     - Pérdidas de datos por usuarios con prioridad
@@ -170,7 +170,7 @@ La carga de red ya está disponible en los Emiratos Árabes Unidos.
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>Etiquetas de confidencialidad: nueva opción de privacidad
 
-Al configurar las [Opciones de sitio y grupo](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) de una etiqueta, ahora puede establecer la opción de privacidad en ninguno, permitir que el **usuario elija quién puede tener acceso al sitio**. Esto es útil cuando desea proteger el contenido en el contenedor usando una etiqueta de confidencialidad, pero sigue permitiendo que los usuarios configuren la configuración de privacidad.
+Al configurar las [Opciones de sitio y grupo](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) de una etiqueta, ahora puede establecer la opción de privacidad en ninguno, permitir que el **usuario elija quién puede tener acceso al sitio**. Esto es útil cuando desea proteger el contenido en el contenedor usando una etiqueta de confidencialidad, pero sigue permitiendo que los usuarios configuren la configuración de privacidad.
 
 ## <a name="april-2020"></a>Abril de 2020
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de mayúsculas y minúsculas, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358478"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446257"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -38,6 +38,8 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 |Cantidad total de datos cargados en todos los conjuntos de revisión de la organización por día.<br/> |2 TB <br/> |
 |Número máximo de conjuntos de carga por caso.  <br/> |200 <br/> |
 |Número máximo de conjuntos de revisión por caso.  <br/> |20 <br/> |
+|Número máximo de grupos de etiquetas por caso.  <br/> |1000 <br/> |
+|Número máximo de etiquetas por caso.  <br/> |1000 <br/> |
 |||
 
 ## <a name="indexing-limits"></a>Límites de indexación
@@ -62,7 +64,7 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo.  <br/> |Sin límite  <br/> | 
 |Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10    <br/> | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones).  <br/> |**Buzones de correo**: 10.000<br/>**Sitios**: 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
-|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3   <br/> |  
+|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3  <br/> |  
 |Número máximo de variantes devueltas al usar el carácter comodín de prefijo para buscar una frase exacta o al usar un carácter comodín de prefijo y el operador booleano **Near** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.   <br/> |100  <br/> |
 |Número máximo de elementos de todos los buzones mostrados en la página de vista previa para las búsquedas.  <br/> |1,000  <br/> |

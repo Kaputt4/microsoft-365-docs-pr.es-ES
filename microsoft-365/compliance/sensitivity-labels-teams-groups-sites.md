@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357888"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430319"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -86,9 +86,9 @@ En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
 - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Dispositivos no administrados**: esta opción usa la característica de SharePoint que usa el acceso condicional a Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices). La opción que especifica para esta configuración de la etiqueta constituye el equivalente de ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 7-9 desde [Bloquear o limitar el acceso a un sitio de SharePoint específico o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+- **Dispositivos no administrados**: esta opción usa la característica de SharePoint que usa el acceso condicional a Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices). La opción que especifica para esta configuración de la etiqueta constituye el equivalente de ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 2-4 en [Bloquear o limitar el acceso a un sitio de SharePoint específico o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
     
-    Si no configura la directiva de acceso condicional dependiente tal y como se describe en los pasos 1-6 de las instrucciones de SharePoint, la opción que especifique aquí no tendrá ningún efecto. Además, no tendrá ningún efecto si es menos restrictiva que un valor configurado a nivel de la cuenta empresarial. Si ha configurado una opción de configuración a nivel de toda la organización para los dispositivos no administrados, elija una configuración de etiqueta que sea la misma o la más restrictiva.
+    Si no configura la directiva de acceso condicional dependiente para SharePoint tal y como se describe en [Utilizar las restricciones que exige la aplicación](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), la opción que especifique aquí no tendrá ningún efecto. Además, no tendrá ningún efecto si es menos restrictiva que un valor configurado a nivel de la cuenta empresarial. Si ha configurado una opción de configuración a nivel de toda la organización para los dispositivos no administrados, elija una configuración de etiqueta que sea la misma o la más restrictiva.
     
     Por ejemplo, si la cuenta empresarial está configurada para **Permitir tan solo el acceso web limitado**, el valor de la etiqueta que permite el acceso total no tendrá ningún efecto, ya que es menos restrictivo. Para esta configuración a nivel de la cuenta empresarial, elija el valor de la etiqueta que permita bloquear el acceso (más restrictivo) o el valor de la etiqueta para acceso limitado (igual que la configuración de la cuenta empresarial).
     
