@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286046"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446643"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -456,6 +456,24 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Ver señalado por el cliente|ClientViewSignaled|El cliente de un usuario (como un sitio web o una aplicación móvil) ha señalado que el usuario ha visto la página indicada. Esta actividad a menudo se registra después de un evento de PagePrefetched para una página. <br/><br/>**Nota**: Como el cliente señaliza eventos ClientViewSignaled, en lugar del servidor, es posible que el servidor no pueda registrar el evento y, por lo tanto, puede que no aparezca en el registro de auditoría. También es posible que la información del registro de auditoría no sea confiable. Sin embargo, dado que la identidad del usuario se valida por el token usado para crear la señal, la identidad del usuario que aparece en el registro de auditoría correspondiente es precisa. |
 |(ninguno)|PagePrefetched|El cliente de un usuario (como el sitio web o la aplicación móvil) ha solicitado la página indicada para ayudar a mejorar el rendimiento si el usuario la explora. Este evento se registra para indicar que el contenido de la página se ha servido para el cliente del usuario. Este evento no es una indicación definitiva de que el usuario ha navegado hasta la página. <br/><br/> Cuando el cliente muestra el contenido de la página (de acuerdo con la solicitud del usuario), debe generarse un evento ClientViewSignaled. No todos los clientes son compatibles con la búsqueda previa, y por lo tanto, algunas actividades que se buscan previamente se pueden registrar como eventos PageViewed.|
 ||||
+
+#### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Preguntas más frecuentes sobre los eventos FileAccessed y FilePreviewed
+
+**¿Podrían las actividades no relacionadas con el usuario desencadenar registros de auditoría FilePreviewed que contengan un agente de usuario como "OneDriveMpc-Transform_Thumbnail"?**
+
+No sabemos de escenarios donde las acciones no relacionadas con el usuario generen eventos como estos. Las acciones de usuario como abrir una tarjeta de perfil de usuario (haciendo clic en su nombre o dirección de correo electrónico en un mensaje en Outlook en la Web) generan eventos similares.
+
+**¿Las llamadas a OneDriveMpc-Transform_Thumbnail siempre son desencadenadas por el usuario intencionalmente?**
+
+No. Sin embargo, algunos eventos similares pueden registrarse como resultado de la búsqueda previa del explorador.
+
+**Si vemos que un evento de FilePreviewed proviene de una dirección IP registrada por Microsoft, ¿significa que la vista previa se mostró en la pantalla del dispositivo del usuario?**
+
+No. Es posible que el evento se haya registrado como resultado de la búsqueda previa del explorador.
+
+**¿Hay algún escenario en el que se generen eventos FileAccessed cuando un usuario obtiene una vista previa de un documento?**
+
+Tanto el evento FilePreviewed como el FileAccessed indican que la llamada de un usuario condujo a la lectura del archivo (o una lectura de la representación en miniatura del archivo). Aunque estos eventos están diseñados para alinearse con la vista previa frente a la intención de acceso, la distinción de eventos no es una garantía de la intención del usuario.
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>El usuario app\@sharepoint en los registros de auditoría
 

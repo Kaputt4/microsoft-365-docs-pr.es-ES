@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 87b1078462d6315e6cf4ddeb95832f20eae67375
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326751"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445486"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -107,7 +107,11 @@ Para obtener más información sobre las etiquetas principales y las subetiqueta
 
 El etiquetado automático en las aplicaciones de Office para Windows es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las etiquetas incorporadas en las aplicaciones de Office, esta funcionalidad se encuentra en [diferentes fases de disponibilidad en las distintas aplicaciones](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Los ajustes de etiquetado automático para las aplicaciones de Office están disponibles al [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md). Puede elegir aplicar etiquetas de confidencialidad al contenido automáticamente cuando se detecta información confidencial. Elija de una lista de tipos de información confidencial o clasificadores capacitados:
+Los ajustes de etiquetado automático para las aplicaciones de Office están disponibles al [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md). Asegúrese de que **Archivos y mensajes de correo electrónico** está seleccionada para el ámbito de la etiqueta: 
+
+![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/filesandemails-scope-options-sensitivity-label.png)
+
+A medida que se desplace por el asistente, verá la página **Etiquetado automático para las aplicaciones de Office**, en la que puede elegir entre una lista de tipos de información confidencial o clasificadores capacitados:
 
 ![Condiciones de etiquetado para el etiquetado automático en las aplicaciones de Office](../media/sensitivity-labels-conditions.png)
 
@@ -202,7 +206,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
     - En el momento en el que se ejecuta la directiva de etiquetado automático, el archivo no debe estar abierto por otro proceso o usuario. Un archivo desprotegido para edición entra en esta categoría.
 
 - Si tiene previsto usar [tipos de información confidencial personalizados](custom-sensitive-info-types.md) en lugar de los tipos de confidencialidad integrados: 
-    - Se evalúan los tipos de información de confidencialidad personalizados para el contenido que se crea después de guardar los tipos de información de confidencialidad personalizados. 
+    - Los tipos de información de confidencialidad personalizados se evalúan para el contenido que se agrega a OneDrive o SharePoint, después de que han sido guardados. 
     - Para probar los nuevos tipos de información confidencial, créelos antes de crear su directiva de etiquetado automático y, después, cree nuevos documentos con datos de ejemplo para probarlos.
 
 - [Crear y publicar](create-sensitivity-labels.md) una o más etiquetas de confidencialidad (para al menos un usuario) que pueda seleccionar para las directivas de etiquetado automático. Para estas etiquetas:

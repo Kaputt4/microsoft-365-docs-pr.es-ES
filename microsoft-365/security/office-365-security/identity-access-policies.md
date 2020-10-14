@@ -16,12 +16,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1ad8f643741626c4cbb8534b4ed5ed7591010fe0
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399739"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464079"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -190,7 +192,7 @@ En la segunda sección **asignaciones** :
 
 | Tipo | Propiedades | Valores                  | Acción |
 |:-----|:-----------|:------------------------|:------|
-| Access | **Permitir acceso** |  | Select  |
+| Acceso | **Permitir acceso** |  | Select  |
 |      |     | **Exigir cambio de contraseña** | Check  |
 |||||
 
@@ -299,7 +301,7 @@ Para la **seguridad del sistema**, vea esta tabla.
 
 |Tipo|Propiedades|Valor|Acción|
 |:---|:---------|:-----|:----|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
 ||Contraseñas sencillas|Bloquear|Select|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Select|
 ||Longitud mínima de la contraseña|6 |Tipo|

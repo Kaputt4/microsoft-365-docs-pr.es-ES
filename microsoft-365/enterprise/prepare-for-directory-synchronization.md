@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390178"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464245"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
@@ -100,7 +100,7 @@ A continuación se enumeran los atributos que debe preparar:
   - Si el atributo existe en el objeto de usuario, se sincronizará con Microsoft 365, pero Microsoft 365 no lo necesita ni lo usa.
   - Número máximo de caracteres: 64
 
-- **mail**
+- **tales**
 
   - El valor del atributo debe ser único dentro del directorio.
 
@@ -159,7 +159,7 @@ A continuación se enumeran los atributos que debe preparar:
   - Número máximo de caracteres para el nombre de dominio después de la arroba (@): 48
   - Caracteres no válidos: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
   - Caracteres permitidos: A – Z, a-z, 0 – 9, '. - _ ! # ^ ~
-  - Una umlaut también es un carácter no válido.
+  - Las Letras con marcas diacríticas, como diéresis, acentos y tildes, son caracteres no válidos.
   - El carácter @ es necesario en cada valor **userPrincipalName** .
   - El carácter @ no puede ser el primer carácter de cada valor **userPrincipalName**.
   - El nombre de usuario no puede terminar con un punto (.), un signo de y comercial ( &amp; ), un espacio o un signo de arroba (@).

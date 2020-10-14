@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235423"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464055"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -46,7 +46,7 @@ Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para tod
 ## <a name="requirements"></a>Requirements
 
 La implementación centralizada de complementos requiere que los usuarios usen Microsoft 365 apps for Enterprise o Microsoft 365 Business Premium (y hayan iniciado sesión en Office con su identificador de organización) y que tengan buzones de Exchange Online y Active Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
-Puede ver los requisitos específicos para Office y Exchange, o usar el[Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
+Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
   
@@ -134,7 +134,8 @@ Cuando la herramienta completa el proceso, genera un archivo de salida en format
     
 - Buzón compatible: si están en un buzón habilitado para OAuth
 
-
+> [!NOTE]
+> La autenticación multifactor no es compatible cuando se usa el módulo de implementación central de PowerShell.
   
 ## <a name="user-and-group-assignments"></a>Asignaciones de usuario y de grupo
 
@@ -171,4 +172,3 @@ Si usted o sus usuarios experimentan problemas al cargar el complemento mientras
 |Office  <br/> | Registros Charles/Fiddler  <br/>  Id. del espacio empresarial ( [más información](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))      <br/>  CorrelationID. Vea el origen de una de las páginas de Office y busque el valor del identificador de correlación y envíelo a soporte técnico:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clientes enriquecidos (Windows y Mac)  <br/> | Registros Charles/Fiddler  <br/>  Números de compilación de la aplicación cliente (preferiblemente como una captura de pantalla de **archivo/cuenta**)  <br/> |
    
-

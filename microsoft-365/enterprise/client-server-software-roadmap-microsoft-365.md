@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar el software de cliente y servidor para Microsoft 365.
-ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950573"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464413"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Guía básica de software de cliente y servidor para Microsoft 365
 
@@ -60,7 +60,7 @@ Aplicaciones de Microsoft 365 para empresas instala automáticamente las actual
 
 ### <a name="office-2010"></a>Office 2010
 
-Para las versiones de Office 2010, el final del soporte técnico llegará el **13 de octubre de 2020**. Para obtener más información, vea [Guía de finalización del soporte para Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+Para las versiones de Office en la versión Office 2010, el soporte finalizó el **13 de octubre de 2020**. Para obtener más información, vea [Guía de finalización del soporte para Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 En lugar de actualizar los equipos que ejecuten Office 2010 con Office 2013 u Office 2016 (ya que ambos tendrían que actualizarse de forma manual), también puede:
 
@@ -117,7 +117,7 @@ En lugar de actualizar los productos de servidor en la versión de Office 2007 c
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-El soporte técnico para [Exchange Server 2010](exchange-2010-end-of-support.md) finalizará el **13 de octubre de 2020**.
+La compatibilidad con [Exchange Server 2010](exchange-2010-end-of-support.md) finalizó el **13 de octubre de 2020**.
 
 El soporte técnico para [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) finalizará el **13 de abril de 2021**.
 

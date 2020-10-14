@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo se rellena la lista de usuarios invitados en el centro de administración de Microsoft 365.
-ms.openlocfilehash: b22b23e27c1a0cbb241b75a9a9953537f9fcb819
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c698332351d525c12659849826d9e822351a347d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786258"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463983"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Usuarios invitados en el centro de administración de Microsoft 365
 
@@ -51,7 +51,7 @@ Para unirse a un equipo como invitado, vea el siguiente vídeo:<br><br>
 
 Para agregar usuarios invitados a Azure Active Directory, consulte [Add guestd users](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
-Al agregar un usuario, también puede asignarlos a un grupo o darles acceso a una aplicación de su organización. Una vez que haya agregado un una en el portal de Azure AD, dicho usuario también aparecerá en la página usuarios invitados del centro de administración de Microsoft 365.
+Al agregar un usuario, también puede asignarlos a un grupo o darles acceso a una aplicación de su organización. Una vez que haya agregado un usuario en el portal de Azure AD, dicho usuario también aparecerá en la página usuarios invitados del centro de administración de Microsoft 365.
 Una vez que un usuario se agrega a la lista de usuarios invitados, se puede [Agregar a los grupos](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) del centro de administración de Microsoft 365.
 
 Consulte [Agregar usuarios invitados de forma masiva](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) para invitar a varios invitados para colaborar con su organización.

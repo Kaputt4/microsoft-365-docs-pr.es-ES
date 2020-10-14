@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Describe las diferencias clave entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-ms.openlocfilehash: c5d60753e84cb55dc088b79f90fe841b50da1836
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338604"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464233"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 
@@ -54,8 +54,6 @@ Los modelos de comprensión mediante documentos se crean y administran en un sit
 Los modelos de procesamiento de formularios se crean en el generador de archivos [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, pero la creación se inicia directamente desde una Biblioteca de documentos de SharePoint. Se debe habilitar la creación del modelo de procesamiento de formularios en la biblioteca de documentos para que un usuario pueda crear un modelo de procesamiento de formularios para ella y un administrador puede hacerlo en la configuración de administrador de comprensión de contenidos. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
 
 Cuando se crea modelo de comprensión mediante documentos, se crea un nuevo [tipo de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) que se guarda en la galería de tipos de contenido de SharePoint. También puede usar tipos de contenido existentes para definir el modelo, si es necesario.
-
-Los modelos de procesamiento de formularios se crean en el generador de archivos [AI Builder](https://docs.microsoft.com/ai-builder/overview) de PowerApps, pero la creación se inicia directamente desde una Biblioteca de documentos de SharePoint. Se debe habilitar la creación del modelo de procesamiento de formularios en la biblioteca de documentos para que un usuario pueda crear un modelo de procesamiento de formularios para ella. O bien, un administrador puede hacerlo en la configuración de administrador de comprensión de contenidos. Los modelos de procesamiento de formularios usan flujos de PowerAutomate para procesar archivos cuando se cargan en la biblioteca de documentos.
 
 Los modelos de procesamiento de formularios también crean nuevos [Tipos de contenido de SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) y se almacenan en la galería de Tipos de contenido de SharePoint.
 

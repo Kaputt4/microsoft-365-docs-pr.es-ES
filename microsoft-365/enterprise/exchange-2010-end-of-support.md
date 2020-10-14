@@ -3,7 +3,6 @@ title: Plan de final del soporte técnico de Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 está llegando al final del soporte técnico. Use esta guía básica de planeación como guía para preparar la actualización a Exchange online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950825"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464257"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-El **13 de octubre de 2020**, el servidor de Exchange Server 2010 alcanzará el final del soporte técnico. Si todavía no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
+Exchange Server 2010 ha llegado al final del soporte técnico el **13 de octubre de 2020**. Si todavía no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar la planeación.
 
 ## <a name="what-does-end-of-support-mean"></a>¿Qué significa el fin de soporte?
 
-Exchange Server, como casi todos los productos de Microsoft, tiene un ciclo de vida de soporte técnico durante el cual ofrecemos nuevas características, correcciones de errores, correcciones de seguridad, etc. Este ciclo de vida suele durar 10 años a partir de la fecha de lanzamiento inicial del producto y el final de este ciclo de vida se conoce como el final del soporte técnico del producto. Cuando Exchange 2010 llegue a su fin de soporte el 13 de octubre de 2020, Microsoft dejará de proporcionar:
+Exchange Server, como casi todos los productos de Microsoft, tiene un ciclo de vida de soporte técnico durante el cual ofrecemos nuevas características, correcciones de errores, correcciones de seguridad, etc. Este ciclo de vida suele durar 10 años a partir de la fecha de lanzamiento inicial del producto y el final de este ciclo de vida se conoce como el final del soporte técnico del producto. Como Exchange 2010 ha alcanzado su fin de soporte el 13 de octubre de 2020, Microsoft dejará de proporcionar:
 
 - Soporte técnico para los problemas que pueden surgir.
 - Correcciones de errores para problemas detectados y que pueden afectar a la estabilidad y la usabilidad del servidor.
@@ -49,8 +48,8 @@ Una vez que Exchange 2010 alcanza su fin de soporte técnico, este es un buen mo
 > [!IMPORTANT]
 > Si su organización decide migrar buzones a Microsoft 365 pero pretende mantener la sincronización de directorios o Azure AD Connect en su lugar para seguir administrando las cuentas de usuario desde Active Directory local, debe tener al menos un servidor de Exchange local. Si se quita el último servidor de Exchange, no podrá realizar cambios en los destinatarios de Exchange en Exchange Online. Esto se debe a que el origen de la autoridad permanece en su Active Directory local y los cambios deben realizarse allí. En este escenario, tiene las siguientes opciones:
 
-- (**Recomendado**) Si puede migrar los buzones a Microsoft 365 y actualizar los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Microsoft 365 y migrar los buzones de correo. A continuación, migre Exchange 2010 a Exchange 2016 y retire los servidores de Exchange 2010 restantes.
-- Si no puede completar la migración de buzones y la actualización del servidor local antes del 13 de octubre de 2020, actualice los servidores locales de Exchange 2010 a Exchange 2016 primero y, a continuación, use Exchange 2016 para conectarse a Microsoft 365 y migrar los buzones de correo.
+- (**Recomendado**) Si pudo migrar sus buzones de correo a Microsoft 365 y actualizar los servidores antes del 13 de octubre de 2020, use Exchange 2010 para conectarse a Microsoft 365 y migrar los buzones de correo. A continuación, migre Exchange 2010 a Exchange 2016 y retire los servidores de Exchange 2010 restantes.
+- Si no ha completado la migración de buzones y la actualización del servidor local antes del 13 de octubre de 2020, actualice los servidores locales de Exchange 2010 a Exchange 2016 primero y, a continuación, use Exchange 2016 para conectarse a Microsoft 365 y migrar los buzones de correo.
 
 > [!NOTE]
 > Aunque un poco más complicado, también puede migrar buzones a Microsoft 365 mientras se migran los servidores locales de Exchange 2010 a Exchange 2016.
@@ -65,7 +64,7 @@ En las siguientes secciones se examina cada opción con más detalle.
 
 Migrar el correo electrónico a Microsoft 365 es la mejor y sencilla opción para ayudarle a retirar la implementación de Exchange 2010. Con una migración a Microsoft 365, puede realizar un solo salto de tecnología antigua a características de vanguardia, como:
 
-- Capacidades de cumplimiento, como directivas de retención, conservación local y retención por juicio, exhibición de documentos electrónicos local y mucho más.
+- Capacidades de cumplimiento, como directivas de retención, In-Place y retención por juicio, exhibición de documentos electrónicos local y mucho más.
 - Microsoft Teams
 - Power BI
 - Bandeja de entrada Prioritarios

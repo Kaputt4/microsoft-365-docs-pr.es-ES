@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408630"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446172"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -43,34 +43,39 @@ Cuando se encripta un documento o correo electrónico, el acceso al contenido es
 Por último, como administrador, al configurar una etiqueta de confidencialidad para aplicar el cifrado, puede elegir entre:
 
 - **Asignar permisos ahora** para que determine exactamente los permisos para el contenido con esa etiqueta y los usuarios que los obtendrán.
-- **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo.
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
 La configuración de cifrado está disponible cuando se [crea una etiqueta de confidencialidad](create-sensitivity-labels.md) en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento.
 
 ## <a name="understand-how-the-encryption-works"></a>Entender cómo funciona el cifrado
 
-El cifrado usa el servicio Azure Rights Management (Azure RMS) de Azure Information Protection. Esta solución de protección usa directivas de cifrado, identidades y de autorización. Para obtener más información, consulte [¿qué es Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) en la documentación de Azure Information Protection. 
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
-Cuando usa esta solución de cifrado, la característica de **superusuario** garantiza que los usuarios y los servicios autorizados siempre puedan leer e inspeccionar los datos que se han cifrado para la organización. Si es necesario, el cifrado puede quitarse o modificarse. Para obtener más información, consulte [configuración de superusuarios para Azure Information Protection y servicios de detección y de recuperación de datos de Azure](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Cómo configurar una etiqueta para el cifrado
 
-[Cree o edite una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y, en la página de **cifrado** del asistente, seleccione una de las opciones siguientes:
+1. Siga las instrucciones generales para [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y asegurarse de que **Archivos y mensajes de correo electrónico** está seleccionada para el ámbito de la etiqueta: 
+    
+    ![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- **Ninguno**: es la configuración predeterminada para una nueva etiqueta. No se aplica ningún nuevo cifrado.
-- **Aplicar**: activa el cifrado y podrá especificar la configuración de cifrado.
-- **Quitar**: quita el cifrado si el documento o el correo electrónico está cifrado.
+2. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico**
+    
+    ![Opciones de protección de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> La opción **Quitar** solo es compatible con el cliente de etiquetado unificado de Azure Information Protection. Cuando se usa la etiqueta integrada, en las aplicaciones y servicios de Office se puede ver una etiqueta con esta opción y, si se selecciona, el comportamiento de cifrado es igual que **Ninguno**.
-
-Configuración de las opciones de cifrado:
-
-![Opciones de etiqueta de confidencialidad para el cifrado](../media/encrytion-options-sensitivity-label.png)
+4.  En la página**Cifrado **del asistente, seleccione una de las siguientes opciones:
+    
+    - **Quitar el cifrado si el archivo está cifrado**: para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied). Es importante tener en cuenta que esta configuración puede dar lugar a que los usuarios no puedan aplicar una etiqueta de confidencialidad cuando no tienen permisos suficientes.
+    
+    - **Configurar las opciones de cifrado**: activa el cifrado y hace que la configuración de cifrado sea visible:
+        
+        ![Opciones de etiqueta de confidencialidad para el cifrado](../media/encrytion-options-sensitivity-label.png)
+        
+        Las instrucciones para estas opciones de configuración están en la sección [Establecer la configuración de cifrado](#configure-encryption-settings).
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qué sucede con el cifrado existente al aplicar una etiqueta
 
-Si se aplica una etiqueta de confidencialidad a contenido sin cifrar, el resultado de las opciones de cifrado que puede seleccionar se explica por sí mismo. Por ejemplo, si el cifrado está establecido en **ninguno**, el contenido permanece sin cifrar.
+Si se aplica una etiqueta de confidencialidad a contenido sin cifrar, el resultado de las opciones de cifrado que puede seleccionar se explica por sí mismo. Por ejemplo, si no ha seleccionado **Cifrar archivos y mensajes de correo electrónico**, el contenido permanecerá sin cifrar.
 
 Sin embargo, es posible que el contenido ya esté cifrado. Por ejemplo, otro usuario puede haber aplicado:
 
@@ -80,7 +85,7 @@ Sin embargo, es posible que el contenido ya esté cifrado. Por ejemplo, otro usu
 
 En la tabla siguiente se identifica lo que ocurre con el cifrado existente cuando se aplica una etiqueta de confidencialidad al contenido:
 
-| |**Cifrado: ninguno**|**Cifrado: aplicar**|**Cifrado: quitar**|
+| |**Cifrado: no seleccionado**|**Cifrado: configurado**|**Cifrado: quitar**|
 |:-----|:-----|:-----|:-----|
 |**Permisos especificados por un usuario**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 |**Plantilla de protección**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
@@ -103,7 +108,7 @@ Los documentos que ya están cifrados y se agregan como datos adjuntos siempre c
 
 ## <a name="configure-encryption-settings"></a>Configurar opciones de cifrado
 
-Cuando selecciona **Aplicar** en la página **Cifrado** del asistente para crear o editar una etiqueta de confidencialidad, elija si quiere:
+Cuando seleccione**Establecer la configuración de cifrado**, en la página **Cifrado** del asistente para crear o editar una etiqueta de confidencialidad, elija una de las siguientes opciones:
 
 - **Asignar permisos ahora** para que pueda determinar exactamente qué permisos obtienen los distintos usuarios para el contenido que tenga aplicada la etiqueta. Para obtener más información, vea la sección siguiente [Asignar permisos ahora](#assign-permissions-now).
 - **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo. Para obtener más información, vea la sección [Permitir a los usuarios asignar permisos](#let-users-assign-permissions) en esta página.
@@ -275,7 +280,7 @@ Para las etiquetas integradas, los usuarios verán el mismo cuadro de diálogo s
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Configuraciones de ejemplo para la configuración de cifrado
 
-Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración desde la página **cifrado** del asistente cuando [cree o edite una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). En primer lugar, asegúrese de que el **cifrado** se establece en **aplicar**:
+Para cada ejemplo que se muestra a continuación, lleve a cabo la configuración desde la página **Cifrado** del asistente, cuando **Establecer la configuración de cifrado** esté seleccionada:
 
 ![Opción Aplicar cifrado en el Asistente de etiquetas de confidencialidad](../media/apply-encryption-option.png)
 
@@ -391,17 +396,18 @@ Para disfrutar de la mejor experiencia de colaboración para los archivos que se
 
 Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de configuración.
 
-### <a name="activate-protection-from-azure-information-protection"></a>Activar la protección de Azure Information Protection
+- Activar la protección de Azure Information Protection
+    
+    Para que las etiquetas de confidencialidad puedan aplicar el cifrado, el servicio de protección (Azure Rights Management) de Azure Information Protection debe estar activado para su espacio empresarial. En los espacios empresariales más recientes, esta es la configuración predeterminada, pero es posible que tenga que activar el servicio manualmente. Para obtener más información, consulte [Activar el servicio de protección de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
-Para que las etiquetas de confidencialidad puedan aplicar el cifrado, el servicio de protección (Azure Rights Management) de Azure Information Protection debe estar activado para su espacio empresarial. En los espacios empresariales más recientes, esta es la configuración predeterminada, pero es posible que tenga que activar el servicio manualmente. Para obtener más información, consulte [Activar el servicio de protección de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+- Configurar Exchange para Azure Information Protection
+    
+    Exchange no necesita configurarse para Azure Information Protection para que los usuarios puedan aplicar etiquetas en Outlook para cifrar sus correos electrónicos. Sin embargo, hasta que Exchange se configure para Azure Information Protection, no tendrá la funcionalidad completa para usar la protección de Azure Rights Management con Exchange.
+    
+    Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos. 
+    
+    Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
+    
+    - Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
 
-### <a name="configure-exchange-for-azure-information-protection"></a>Configurar Exchange para Azure Information Protection
-
-Exchange no necesita configurarse para Azure Information Protection para que los usuarios puedan aplicar etiquetas en Outlook para cifrar sus correos electrónicos. Sin embargo, hasta que Exchange se configure para Azure Information Protection, no tendrá la funcionalidad completa para usar la protección de Azure Rights Management con Exchange.
-
-Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos.
-
-Para asegurarse de que Exchange puede admitir estos escenarios adicionales, vea lo siguiente:
-
-- Para Exchange Online, consulte las instrucciones de [Exchange Online: configuración de IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-- Para Exchange local, debe implementar el [conector RMS y configurar los servidores de Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).

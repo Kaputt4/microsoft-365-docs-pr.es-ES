@@ -16,12 +16,14 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6949e72b9f70464221b9aff7137b8ec034a3b04f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 56b712c73d63bfcb06d5d35d627facb229668c59
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399769"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464149"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -53,7 +55,7 @@ Estos son los servicios dependientes que se deben incluir en la asignación de a
 
 - Microsoft Teams
 - SharePoint y OneDrive para la Empresa
-- Exchange en línea
+- Exchange Online
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)

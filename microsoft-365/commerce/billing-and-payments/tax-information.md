@@ -20,24 +20,32 @@ description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de M
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434066"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464101"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
-Los impuestos de las compras del Centro de Administración de Microsoft 365 que realiza por Microsoft están determinados por la dirección de la empresa o, si es diferente, por la dirección de envío. Si está en los Estados Unidos, debe proporcionar un número de identificación de empleador federal (FEIN).
+Cuando compra productos y servicios de Microsoft 365, los impuestos que paga se determinan por una de estas dos cosas: la dirección de la empresa o la dirección de envío, si es diferente. Si su organización está en los Estados Unidos, debe proporcionar un número de identificación de empleador (FEIN) federal.
 
-Las empresas de estos países pueden proporcionar su número de IVA:
+Las empresas de los siguientes países pueden proporcionar su número de IVA o equivalente local:
 
 :::row:::
     :::column:::
+- Armenia
+- Australia
 - Austria
+- Bahamas
+- Bangladesh
+- Belarús
 - Bélgica
+- Brasileño
 - Bulgaria
+- Chile
+- Colombia
 - Croacia
 - Chipre
 - Chequia
@@ -48,112 +56,90 @@ Las empresas de estos países pueden proporcionar su número de IVA:
 - Alemania
 - Grecia
 - Hungría
+- Indio
+- Indonesia
 - Irlanda
+- Isla de Man
 - Italia
-- Letonia
     :::column-end:::
     :::column:::
+- Corea
+- Letonia
 - Liechtenstein
 - Lituania
 - Luxemburgo
+- Malasia
 - Malta
+- México
 - Mónaco
 - Países Bajos
+- Nueva Zelanda
 - Noruega
 - Polonia
 - Portugal
 - Rumania
+- Arabia Saudí
 - Eslovaquia
+- Eslovenia
 - Sudáfrica
 - España
 - Suecia
 - Suiza
+- Taiwán
+- Turquía
+- Emiratos Árabes Unidos
 - Reino Unido
     :::column-end:::
 :::row-end:::
 
-Estos países pueden proporcionar su número de IVA o equivalente local en su información de cuenta de facturación.
-
-|Márketing| Identificador de impuestos |
-|------|----------------|
-| Australia | ABN (opcional) |
-| Brasil | CNPJ (obligatorio) |
-| India | GSTIN (opcional), ID de PAN (obligatorio) |
-| Isla de Man | NIF (opcional) |
-| Nueva Zelanda | Número de registro de GST (opcional) |
-| Mónaco | NIF (opcional) |
-| Taiwán | NIF (opcional) |
+* En la mayoría de los países que se enumeran, el número de IVA o el equivalente local es opcional. Para Brasil y la India, el número de identificación fiscal es obligatorio.
 
 > [!Note]
 > Si necesita ponerse en contacto con el soporte técnico, tenga el FEIN, el número de IVA o el equivalente local listo para dar al agente de soporte.
 
-## <a name="what-tax-will-i-be-charged"></a>¿Qué impuesto se me cobrará?
+## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
 
-Obtenga información sobre los impuestos que se cobran en las regiones siguientes. También puede [solicitar el estado de exención de impuestos](tax-information.md#apply-for-tax-exempt-status) si proporciona la documentación adecuada para justificarlo.
+Al comprar servicios de Microsoft 365 en la Unión Europea, esta compra está sujeta a Value-Added Tax (IVA).
   
-### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
-
-Al comprar los servicios 365 de Microsoft en la Unión Europea, esta compra está sujeta al impuesto sobre el valor añadido (IVA).
-  
-- Si se encuentra en un estado miembro de la Unión Europea y no proporciona su CIF local válido, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA local actual según el país de facturación que se configuró para su cuenta.
+- Si se encuentra en un Estado miembro de la Unión Europea y no proporciona un NIF local válido, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA local actual, en función del país de facturación en el que se establezca su cuenta como.
 
 - Si se encuentra en Suiza o en Liechtenstein, se aplicará la tasa de IVA suiza actual, independientemente de si proporciona su CIF o no.
 
-- Por lo general, si se encuentra en un país de EMEA fuera de la Unión Europea o en Suiza o Liechtenstein, Microsoft Ireland Operations Ltd no cargará el IVA.
+- Por lo general, si está ubicado en un país de EMEA fuera de la Unión Europea y Suiza/Liechtenstein, Microsoft Ireland Operations Ltd no cobra el IVA.
 
-- Antes de que podamos validar su identificación de IVA, debe estar disponible para la verificación en el Sistema de intercambio de información de IVA (VIES). Si no se puede comprobar su identificación de IVA, póngase en contacto con su autoridad fiscal local.
+- Antes de que podamos validar su identificación de IVA, debe estar disponible para la verificación en el Sistema de intercambio de información de IVA (VIES). Si no se puede comprobar el NIF, póngase en contacto con la autoridad fiscal local.
 
-Puede ser susceptible de no tener que pagar la tasa de IVA:
+Puede optar a la calificación cero del IVA si:
   
-- **Si se encuentra en un Estado miembro de la Unión Europea fuera de Irlanda:** Puede proporcionar su NIF-CIF local válido. Esto da derecho a Microsoft Ireland Operations Ltd. a IVA de tasa cero de la transacción. Sin embargo, puede tener una obligación de contabilidad del IVA local, por lo que debe consultar a sus asesores fiscales si tiene alguna preocupación. Para obtener instrucciones, consulte "adición de la identificación de IVA (solo países de la UE)" a continuación.
+- **Está en un Estado miembro de la Unión Europea fuera de Irlanda:** Puede proporcionar su NIF-CIF local válido. Esto permite a Microsoft Ireland Operations Ltd. a VAT tasa cero la transacción. Sin embargo, es posible que tenga una obligación de contabilidad del IVA local. Si tiene algún problema, consulte a sus consejeros fiscales. Para obtener instrucciones, consulte [Agregar el NIF](#add-your-vat-id).
 
-- **Si se encuentra en Irlanda y tiene la certificación de exención de IVA válida pertinente:** Microsoft Ireland Operations Ltd. podrá excluir el IVA de la transacción. Si no dispone de la certificación en cuestión, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA actual de Irlanda, independientemente de si proporciona un CIF o no.
+- **Está en Irlanda y tiene la certificación de exención de IVA válida relevante:** Microsoft Ireland Operations Ltd. puede tener derecho a eximir la transacción del IVA. Si no lo hace, Microsoft Ireland Operations Ltd. aplica la tasa de IVA irlandés actual, independientemente de que proporcione un NIF o no.
 
-::: moniker range="o365-worldwide"
+## <a name="asia-pacific-countries-apac"></a>Países de Asia Pacífico (APAC)
 
-#### <a name="add-your-vat-id-eu-countries-only"></a>Procedimiento para especificar la identificación de IVA (países de la UE únicamente)
+Si está facturado por la oficina de ventas regional de Microsoft, "Pte de ventas regionales de Microsoft". Ltd. " aparece en su factura y es posible que se le cobre por cualquier impuesto de valor añadido, de ventas o similar.
+  
+Si se le factura de una de las siguientes ubicaciones, se aplica el impuesto local actual. La ubicación se incluye [en la factura](view-your-bill-or-invoice.md):
+  
+- India
+- Japón
+- Corea
+- Singapur
+- Taiwán
+
+## <a name="north-central-and-south-america"></a>América del Norte, América Central y América del Sur
+
+En Estados Unidos, Canadá, México, Chile y Colombia, se aplican varios tipos de impuestos según el tipo de producto y la ubicación.
+  
+Si Microsoft Corporation ha realizado su facturación ([consulte su factura](view-your-bill-or-invoice.md)) y se ha registrado en Microsoft 365 fuera de Estados Unidos, Canadá, Puerto Rico, Chile y Colombia, el impuesto no suele ser cargado.
+
+## <a name="add-your-vat-id"></a>Añadir su NIF-CIF
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. Busque la tarjeta de suscripción de la suscripción que desea actualizar.
-
-3. En la sección **configuración & acciones** , seleccione **Editar dirección de uso del servicio**.
-
-4. En la página **editar la dirección de uso del servicio** , en **el cuadro NIF** , escriba el NIF, incluido el prefijo y sin espacios. Seleccione **Guardar**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-#### <a name="add-your-vat-id-eu-countries-only"></a>Procedimiento para especificar la identificación de IVA (países de la UE únicamente)
-  
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
-2. Seleccione el nombre de la suscripción y, a continuación, seleccione **más acciones** \> **Editar NIF**.
-  
-3. En la página **editar la dirección de uso del servicio** , en **el cuadro NIF** , escriba el NIF, incluido el prefijo y sin espacios. Seleccione **Guardar**.
-
-::: moniker-end
-
-### <a name="asia-pacific-countries-apac"></a>Países de Asia Pacífico (APAC)
-
-Si la facturación la realiza la oficina regional de ventas de Microsoft, en la factura aparecerá "Microsoft Regional Sales". En este caso, normalmente no se le aplicará ningún impuesto sobre el consumo ni sobre el valor añadido (IVA), a menos que sea una venta interna.
-  
-Si se le factura desde otra ubicación, se aplicará el impuesto local vigente. [En la factura](view-your-bill-or-invoice.md), verá lo siguiente:
-  
-- Singapur para Singapur
-
-- Corea para Corea
-
-- Japón para Japón
-
-- Taiwán para Taiwán
-
-### <a name="north-central-and-south-america"></a>América del Norte, América Central y América del Sur
-
-En los Estados Unidos y Canadá, se aplican varios impuestos en función de la ubicación del cliente. Si se encuentra en Puerto Rico, se aplica el impuesto sobre el valor añadido (IVA) local.
-  
-Si Microsoft Corporation ha realizado su facturación ([consulte su factura](view-your-bill-or-invoice.md)) y se ha registrado en Microsoft 365 fuera de Estados Unidos, Canadá y Puerto Rico, el impuesto no suele ser cargado.
+2. En la pestaña **productos** , seleccione la suscripción que desea actualizar.
+3. En la página Detalles de la suscripción, en la sección **dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio**.
+4. En el panel **editar la dirección de uso del servicio** , en el cuadro NIF, escriba el NIF, incluido el prefijo y sin espacios. **VAT number**
+5. Seleccione **Guardar**.
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 
@@ -163,7 +149,7 @@ Por ejemplo:
 
 >*(precio unitario X tasa de impuestos) X cantidad = total de impuesto sobre las ventas*
 
-O bien,
+– O bien –
 
 >($1,29 X 0,095) X 100 = $12,25
 
@@ -171,14 +157,14 @@ O bien,
 
 Si califica para el estado de exento de impuestos en su mercado, [inicie una solicitud de servicio](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) para establecer el estado de exención de impuestos para su organización.
 
-Prepare la siguiente documentación:
-
 |País o configuración regional | Documentación |
 |------------------|----------------|
-| Estados Unidos | Certificado de exención de impuestos de ventas |
 | Canadá | Certificado de exención (o letra de autorización equivalente) |
-| Irlanda | Certificado de exención de impuestos de 13B/56A|
+| Chile | IVA estado/ESTANCARSE (registro unico tributario) |
+| Colombia | IVA estado/ESTANCARSE (registro unico tributario) |
 | Organizaciones internacionales que mantienen la exención de impuestos | Confirmación de certificación/carta de las autoridades fiscales locales |
+| Irlanda | Certificado de exención de impuestos de 13B/56A|
+| Estados Unidos | Certificado de exención de impuestos de ventas |
 | Puerto Rico | Certificado de compra exentas |
   
 ## <a name="related-content"></a>Contenido relacionado
