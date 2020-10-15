@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f4cd713abdda0eba20e0b783ff89653ae02efb72
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399505"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464090"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -128,9 +128,9 @@ Use el siguiente gráfico para ayudarle a configurar los grupos de su organizaci
 | **Miembro de la Directiva** | **Grupos admitidos** | **Grupos no admitidos** |
 |:-----|:-----|:-----|
 |Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos |
-| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
+| Reviewers | None | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
   
-Cuando se asigna un grupo de distribución en la Directiva, la Directiva supervisa todos los mensajes de correo de cada usuario en el grupo de distribución. Cuando asigna un grupo de Microsoft 365 en la Directiva, la Directiva supervisa todos los mensajes de correo electrónico enviados a ese grupo, no los mensajes de correo electrónico individuales recibidos por cada miembro del grupo.
+Cuando se asigna un grupo de distribución en la Directiva, la Directiva supervisa todos los correos electrónicos y chats de cada usuario en el grupo de distribución. Cuando se asigna un grupo de Microsoft 365 en la Directiva, la Directiva supervisa todos los correos electrónicos y los chats de equipo enviados a ese grupo, no los correos electrónicos y chats individuales recibidos por cada miembro del grupo.
 
 Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea supervisar los chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para los usuarios con buzones locales o externos para supervisar. Más adelante en estos pasos, asignará este grupo de distribución como la selección de **usuarios y grupos supervisados** en el Asistente para directivas.
 
