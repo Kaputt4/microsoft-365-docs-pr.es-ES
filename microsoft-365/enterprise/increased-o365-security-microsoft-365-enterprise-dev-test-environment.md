@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar opciones de seguridad de Microsoft 365 adicionales para el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398954"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487405"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba de Microsoft 365 para empresas.
 
@@ -30,7 +30,7 @@ Con las instrucciones de este artículo, se configuran opciones adicionales de c
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
+> Haga clic [aquí](../downloads/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 para empresas
 
@@ -117,10 +117,10 @@ Para obtener más información, consulte [calificación segura de Microsoft](htt
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)

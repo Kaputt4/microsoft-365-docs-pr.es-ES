@@ -18,40 +18,43 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el restablecimiento de contraseña para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 98e6b8d8432c86e9d1c432128ed6d223da83610e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 5d98dcc50f16bc08da787a928beeeacf825201c9
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686541"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487429"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Restablecimiento de contraseña para el entorno de prueba de Microsoft 365
 
 *Esta guía del entorno de pruebas solo puede usarse para entornos de prueba de empresa de Microsoft 365.*
 
-El restablecimiento de contraseña de autoservicio (SSPR) de Azure Active Directory (Azure AD) permite a los usuarios restablecer o desbloquear sus contraseñas o cuentas. 
+El restablecimiento de contraseña de autoservicio (SSPR) de Azure Active Directory (Azure AD) permite a los usuarios restablecer o desbloquear sus contraseñas o cuentas.
 
-En este artículo se describe cómo configurar y probar los restablecimientos de contraseña en su entorno de prueba de Microsoft 365 en tres fases:
+En este artículo se describe cómo configurar y probar restablecimientos de contraseñas en el entorno de prueba de Microsoft 365.
 
-1.    Cree el entorno de prueba de Microsoft 365 para empresas.
-2.  Habilitar escritura diferida de contraseñas.
-3.    Configure y pruebe el restablecimiento de contraseña para la cuenta de usuario 3.
+La configuración de SSPR implica tres fases:
+- [Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
+- [Fase 2: habilitar escritura diferida de contraseñas](#phase-2-enable-password-writeback)
+- [Fase 3: configurar y probar el restablecimiento de contraseña](#phase-3-configure-and-test-password-reset)
     
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
+> Para obtener un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de 365 para empresas, vaya a la [pila de la guía de entorno de pruebas 365 de Microsoft para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
-Primero, siga las instrucciones de [Sincronización de hash de contraseñas](password-hash-sync-m365-ent-test-environment.md). Esta es la configuración resultante.
+En primer lugar, siga las instrucciones de [sincronización de hash de contraseña](password-hash-sync-m365-ent-test-environment.md). 
+
+La configuración resultante tiene el siguiente aspecto:
   
 ![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-Esta configuración se compone de: 
+Esta configuración se compone de:
   
 - Una suscripción de prueba o de pago de Microsoft 365 E5.
-- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. 
+- Una intranet de organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y cliente1 en una subred de una red virtual de Azure.
 - Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de TESTLAB de Active Directory Domain Services (AD DS) con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365.
 
 ## <a name="phase-2-enable-password-writeback"></a>Fase 2: habilitar escritura diferida de contraseñas
@@ -62,32 +65,32 @@ Debe tener la escritura diferida de contraseñas habilitada para utilizar el res
   
 ## <a name="phase-3-configure-and-test-password-reset"></a>Fase 3: configurar y probar el restablecimiento de contraseña
 
-En esta fase, configurará el restablecimiento de contraseña del inquilino de Azure AD mediante la pertenencia del grupo y después comprobará que funciona correctamente.
+En esta fase, configure el restablecimiento de contraseña en el inquilino de Azure AD a través de la pertenencia a grupos y, a continuación, compruebe que funciona.
 
 En primer lugar, habilite el restablecimiento de contraseña de cuentas en un determinado grupo de Azure AD.
 
 1. Desde una instancia privada del explorador, abra [https://portal.azure.com](https://portal.azure.com) y después inicie sesión con las credenciales de la cuenta de administrador global.
-2. En Azure Portal, haga clic en **Azure Active Directory > Grupos > Nuevo grupo**.
-3. Configure **Tipo de grupo** como **Seguridad**, **Nombre del grupo** como **PWReset** y **Tipo de pertenencia** como **Asignado**. 
-4. Haga clic en **Miembros**, busque y seleccione **usuario 3**, después haga clic en **Seleccionar**y, a continuación, haga clic en **Crear**.
+2. En Azure portal, seleccione grupos de **Azure Active Directory**  >  **Groups**  >  **New Group**.
+3. Configure **Tipo de grupo** como **Seguridad**, **Nombre del grupo** como **PWReset** y **Tipo de pertenencia** como **Asignado**.
+4. Seleccione **miembros**, buscar y seleccione el **usuario 3**, seleccione **seleccionar**y, a continuación, seleccione **crear**.
 5. Cierre el panel **Grupos**.
-6. En el panel de navegación izquierdo de Azure Active Directory, haga clic en **Restablecer contraseña**.
+6. En el panel Azure Active Directory, seleccione **restablecimiento de contraseña** en el panel de navegación izquierdo.
 7. En el panel **Propiedades - Restablecer contraseña**, debajo de la opción **Habilitar autoservicio de restablecimiento de contraseña**, elija **Seleccionado**.
-8. Haga clic en **Seleccionar grupo**, seleccione el grupo **PWReset** y después haga clic en **Seleccionar > Guardar**.
+8. Seleccione **Seleccionar grupo**, seleccione el grupo **PWReset** y, a continuación **, seleccione**  >  **Guardar**.
 9. Cierre la instancia de explorador privada.
 
-Después, pruebe el restablecimiento de contraseña de la cuenta Usuario 3.
+A continuación, pruebe el restablecimiento de contraseña de la cuenta de usuario 3.
 
 1. Abra una nueva instancia de explorador privada y vaya a [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
-2. Inicie sesión con las credenciales de la cuenta Usuario 3.
-3. En **más información necesaria**, haga clic en **siguiente**. 
-5. En **No perder el acceso a su cuenta**, configure el teléfono de autenticación con su número de teléfono y el correo electrónico de autenticación con su cuenta de correo electrónico laboral o personal.
-7. Cuando haya comprobados ambos, haga clic en **Parece que está bien** y cierre la instancia privada del explorador.
-8. Abra una nueva instancia de explorador privada y vaya a [https://aka.ms/sspr](https://aka.ms/sspr).
-9. Escriba el nombre de la cuenta de usuario 3, escriba los caracteres de la CAPTCHA y después haga clic en **Siguiente**.
-10. Para el **paso de verificación 1**, haga clic en **Enviar un correo electrónico a mi correo electrónico alternativo** y después en **Correo electrónico**. Cuando reciba el correo electrónico, escriba el código de comprobación y luego haga clic en **Siguiente**.
-11. En **Volver a la cuenta**, escriba una nueva contraseña para la cuenta de usuario 3 y después haga clic en **Finalizar**. Anote la contraseña cambiada de la cuenta de usuario 3 y almacénela en un lugar seguro.
-12. En una pestaña independiente del mismo explorador, vaya a [https://portal.office.com](https://portal.office.com) y después inicie sesión con el nombre de la cuenta Usuario 3 y la nueva contraseña. Debe ver la página **principal de Microsoft Office**.
+1. Inicie sesión con las credenciales de la cuenta Usuario 3.
+1. En la **información necesaria**, seleccione **siguiente**. 
+1. En **No perder el acceso a su cuenta**, configure el teléfono de autenticación con su número de teléfono y el correo electrónico de autenticación con su cuenta de correo electrónico laboral o personal.
+1. Una vez comprobados ambos, seleccione **parece adecuado**y, a continuación, cierre la instancia privada del explorador.
+1. En una nueva instancia de explorador privada, vaya a [https://aka.ms/sspr](https://aka.ms/sspr) .
+1. Escriba el nombre de la cuenta de usuario 3, escriba los caracteres de la CAPTCHA y, a continuación, seleccione **siguiente**.
+1. Para el **paso 1 de comprobación**, seleccione Enviar por correo electrónico **mi correo electrónico alternativo**y, después, seleccione **correo electrónico**. Cuando reciba el correo electrónico, escriba el código de verificación y, a continuación, seleccione **siguiente**.
+1. En **volver a la cuenta**, escriba una nueva contraseña para la cuenta de usuario 3 y, a continuación, seleccione **Finalizar**. Anote la contraseña cambiada de la cuenta de usuario 3 y almacénela en un lugar seguro.
+1. En una pestaña independiente del mismo explorador, vaya a [https://portal.office.com](https://portal.office.com) y después inicie sesión con el nombre de la cuenta Usuario 3 y la nueva contraseña. Debe ver la página **principal de Microsoft Office**.
 
 ## <a name="next-step"></a>Paso siguiente
 

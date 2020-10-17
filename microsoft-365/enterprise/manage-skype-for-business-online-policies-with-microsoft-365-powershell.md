@@ -14,35 +14,38 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: Use PowerShell para administrar las propiedades de la cuenta de usuario de Skype empresarial online con directivas.'
-ms.openlocfilehash: 7657dae6fa1b27299e4cbc0cf6a311380cb90e9e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694080"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477046"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Administrar las directivas de Skype Empresarial Online con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Para administrar muchas propiedades de la cuenta de usuario de Skype empresarial online, debe especificarlas como propiedades de directivas con PowerShell para Microsoft 365.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Siga estas instrucciones para preparar la ejecución de los comandos (omita los pasos que ya ha completado):
-  
-1. Descargue e instale el [módulo de conector de Skype empresarial online](https://www.microsoft.com/download/details.aspx?id=39366).
+
+  > [!Note]
+  > En este momento, el conector de Skype empresarial online forma parte del módulo de PowerShell más reciente de Microsoft Teams. Si usa la versión pública de Microsoft Teams más reciente, no es necesario que instale el conector de Skype empresarial online.
+
+1. Instale el [módulo de PowerShell de Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
     
 2. Abra el símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
-    
-```powershell
-Import-Module SkypeOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-  ```
 
-Cuando se le solicite, escriba el nombre y la contraseña de la cuenta de administrador en línea de Skype empresarial online.
+   ```powershell
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
+
+   Cuando se le solicite, escriba el nombre y la contraseña de la cuenta de administrador en línea de Skype empresarial online.
     
 ## <a name="manage-user-account-policies"></a>Administrar directivas de cuentas de usuario
 
@@ -122,7 +125,7 @@ Con Skype empresarial online, los usuarios deben ser administrados por una direc
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

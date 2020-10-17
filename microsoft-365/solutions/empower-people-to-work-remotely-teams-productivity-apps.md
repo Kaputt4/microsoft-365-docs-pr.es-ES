@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: a873c003537b98d10db5fc8a660b9d15ac0bcc23
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399306"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445833"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Paso 5. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
 
@@ -102,5 +101,7 @@ Consulte [este artículo](https://docs.microsoft.com/deployoffice/deployment-gui
 - [Usar Office para la web](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Paso siguiente
+
+[![Paso 6: Entrenar a los usuarios y supervisar su éxito](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 Continúe con el [Paso 6](empower-people-to-work-remotely-train-monitor-usage.md) para entrenar a los usuarios y supervisar su éxito.

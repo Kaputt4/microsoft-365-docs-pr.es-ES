@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430437"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487498"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -670,36 +670,155 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_austria_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_austria_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_austria_eu_driver's_license_number` found. 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- driver's licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - fuhrerschein
-- fuhrerschein republik osterreich
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>Tarjeta de identidad de Austria
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -1501,41 +1620,163 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_belgium_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_belgium_eu_driver's_license_number` .
+- Palabra clave from `Keywords_eu_driver's_license_number` o `Keywords_belgium_eu_driver's_license_number` found.
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-**Keywords__belgium_eu_driver ' s_license_number**
 
-- listas #
-- driver license
-- número de licencia de conductor
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
 - permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
 - dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver ' s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- Führerschein-NR
-- fuehrerschein-NR
-- fuehrerschein-NR
+- 
+permis de conduire
+- numéro Permis conduire
+
 
 ## <a name="belgium-national-number"></a>Número nacional de Bélgica
 
@@ -2055,38 +2296,155 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_bulgaria_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_bulgaria_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_bulgaria_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
-- listas #
-- driver license
-- número de licencia de conductor
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
 - permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
 - dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>Número civil uniforme de Bulgaria
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -3316,35 +3674,152 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_croatia_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_croatia_eu_driver's_license_number` . 
+- Palabra clave from `Keywords_eu_driver's_license_number` o `Keywords_croatia_eu_driver's_license_number` found. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>Número de tarjeta de identidad de Croacia
@@ -3622,34 +4097,152 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_cyprus_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_cyprus_eu_driver's_license_number` .
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_cyprus_eu_driver's_license_number` found.
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>Tarjeta de identidad de Chipre
@@ -3852,7 +4445,8 @@ dos letras seguidas de seis dígitos
 
 ocho letras y dígitos:
   
-- dos letras (sin distinción entre mayúsculas y minúsculas)
+- letra ' E ' (no distingue entre mayúsculas y minúsculas)
+- una carta
 - un espacio (opcional)
 - seis dígitos
 
@@ -3864,37 +4458,153 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_czech_republic_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_czech_republic_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_czech_republic_eu_driver's_license_number` found. 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>Número de pasaporte Checo
@@ -4131,40 +4841,155 @@ ocho dígitos
   
 ### <a name="checksum"></a>Suma de comprobación
 
-Sí
+No
   
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_denmark_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_denmark_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_denmark_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
 
-- | DL #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - kørekort
 - kørekortnummer
 
@@ -4461,35 +5286,153 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_estonia_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_estonia_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_estonia_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
-- permis de conduire
+--Permis de conduire
+- juhilubade numbrid
+- número de juhiloa
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>Código de identificación personal de Estonia
@@ -5142,15 +6085,16 @@ Esta entidad de tipo de información confidencial sólo está disponible en el t
 
 ### <a name="format"></a>Formato
 
-diez dígitos que contienen un guión
+diez dígitos y letras que contienen un guión
   
 ### <a name="pattern"></a>Patrón
 
-diez dígitos que contienen un guión:
+diez dígitos y letras que contienen un guión:
   
 - seis dígitos 
 - un guión
-- cuatro dígitos 
+- tres dígitos 
+- un dígito o una letra
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -5160,35 +6104,159 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_finland_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_finland_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_finland_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - ajokortti
+- permis de conduire
+- ajokortin numero
+- Lic kuljettaja.
+- körkort
+- körkortnummer
+- Lic förare.
+- ajokortit
+- ajokortin numerot
 
 
 ## <a name="finland-european-health-insurance-number"></a>Número de seguro médico de Finlandia europeo
@@ -5496,36 +6564,155 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - la función Func_french_drivers_license encuentra contenido que coincide con el patrón.
-- al menos una de las siguientes condiciones es verdadera:
 - se encuentra una palabra clave de Keyword_french_drivers_license.
-- la función Func_eu_date encuentra una fecha en el formato de fecha correcto.
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
-- drivers licence
-- drivers license
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
 - driving licence
-- driving license
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+- 
+permis de conduire
+- 
+licence number
+- 
+license number
+- 
+licence numbers
+- 
+
+license numbers
+- numéros de licencia
 
 
 ## <a name="france-health-insurance-number"></a>Número de seguro de estado de Francia
@@ -5929,124 +7116,177 @@ Sí
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_german_drivers_license encuentra contenido que coincide con el patrón.
-- Al menos una de las siguientes opciones es verdadera:
-    - Se encuentra una palabra clave de Keyword_german_drivers_license_number.
-    - Se encuentra una palabra clave de Keyword_german_drivers_license_collaborative.
-    - Se encuentra una palabra clave de Keyword_german_drivers_license.
+- Se encuentra una palabra clave de Keyword_german_drivers_license_number.
 - Se supera la suma de comprobación.
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein- 
-- Fuhrerschein- 
-- Fuehrerschein- 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein- Nr
-- Fuhrerschein- Nr
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein- Nr 
-- Fuhrerschein- Nr 
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- LISTAS 
-- DISTRIBUCIÓN
-- Driv Lic 
-- Driv Licen 
-- Driv License
-- Driv Licenses 
-- Driv Licence 
-- Driv Licences 
-- Driv Lic 
-- Driver Licen 
-- Driver License 
-- Driver Licenses 
-- Driver Licence 
-- Driver Licences 
-- Drivers Lic 
-- Drivers Licen 
-- Drivers License 
-- Drivers Licenses 
-- Drivers Licence 
-- Drivers Licences 
-- Driver's Lic 
-- Driver's Licen 
-- Driver's License 
-- Driver's Licenses 
-- Driver's Licence 
-- Driver's Licences 
-- Driving Lic 
-- Driving Licen 
-- Driving License 
-- Driving Licenses 
-- Driving Licence 
-- Driving Licences
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-fuehrerschein 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- 
+ausstellende behöde
+- 
+ausstellende behorde
+- 
+
+ausstellende behoerde
+- führerschein
+- fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- Nr-Führerschein
+- Nr-fuhrerschein
+- Nr-fuehrerschein
+- no-Führerschein
+- no-fuhrerschein
+- no-fuehrerschein
+- n-Führerschein
+- n-fuhrerschein
+- n-fuehrerschein
+- 
+permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>Número de tarjeta de identidad de Alemania
@@ -6321,36 +7561,154 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_greece_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_greece_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_greece_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
 
-- Biblioteca #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>Tarjeta de identificación nacional de Grecia
@@ -6646,35 +8004,152 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_hungary_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_hungary_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_hungary_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>Número de identificación personal de Hungría
@@ -7363,36 +8838,152 @@ No
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_ireland_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_ireland_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_ireland_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>Número de pasaporte de Irlanda
 
@@ -7655,10 +9246,10 @@ una combinación de 10 letras y dígitos
 
 ### <a name="pattern"></a>Patrón
 
-- una combinación de 10 letras y dígitos:
+una combinación de 10 letras y dígitos:
 - una letra (no distingue entre mayúsculas y minúsculas) 
 - la letra "A" o "V" (no distingue entre mayúsculas y minúsculas) 
-- Siete Letras (no distinguen entre mayúsculas y minúsculas), dígitos o el carácter de subrayado 
+- siete dígitos
 - una letra (no distingue entre mayúsculas y minúsculas)
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -7687,8 +9278,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- Numero di patentes
 - patente di guida 
+- Guida de patentes
+- Guida de patentes
+- Guida de patentes
 
 ## <a name="italy-fiscal-code"></a>Código fiscal de Italia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -7982,36 +9576,24 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- #アカウントの確認 、 勘定番号の確認 
-- #勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## <a name="japan-drivers-license-number"></a>Número de permiso de conducción de Japón
 
@@ -8047,31 +9629,41 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- listas # 
-- LISTAS 
-- distribución # 
-- DISTRIBUCIÓN 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- Lic # 
-- Lic 
-- conducción # 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- listas #
+- distribución #
+- Lic #
+- conducción #
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証 #
+- 運転免許 #
+- 免許証 #
+- 免許 #
 
 
 ## <a name="japan-my-number---corporate"></a>Mi número de Japón-empresa
@@ -8233,10 +9825,22 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- Usuarios
+- Número de pasaporte
+- N.º de pasaporte
+- Passport #
+
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート #
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- ♯ 旅券番号
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>Número de tarjeta de residencia de Japón
 
@@ -8279,6 +9883,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Nº de tarjeta de residencia
 - Tarjeta de residencia #
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## <a name="japan-resident-registration-number"></a>Número de registro de residente de Japón
 
@@ -8315,16 +9921,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>Número del seguro social de Japón (SIN)
@@ -8376,8 +9981,22 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## <a name="latvia-drivers-license-number"></a>Número de permiso de conducción de Letonia
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
@@ -8401,35 +10020,153 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_latvia_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_latvia_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_latvia_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>Código personal de Letonia
 
@@ -8647,35 +10384,153 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_lithuania_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_lithuania_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_lithuania_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - vairuotojo pažymėjimas
+- vairuotojo pažymėjimo número
+- vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>Código de Lituania personal
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -8840,35 +10695,152 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_luxemburg_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_luxemburg_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_luxemburg_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - fahrerlaubnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburgo número de identificación nacional (personas físicas)
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -9169,35 +11141,153 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_malta_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_malta_eu_driver's_license_number` found. 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - liċenzja sewqan
+- liċenzji sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>Número de tarjeta de identidad de Malta
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -9490,37 +11580,156 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_netherlands_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_netherlands_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_netherlands_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>Número de pasaporte de Holanda
@@ -9755,7 +11964,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -10176,35 +12385,152 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_poland_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_poland_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_poland_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>Tarjeta de identidad de Polonia
 
@@ -10542,17 +12868,24 @@ Esta entidad de tipo de información confidencial sólo está disponible en el t
 
 ### <a name="format"></a>Formato
 
-dos letras seguidas de siete números en el patrón especificado
+dos modelos: dos letras seguidas por 5-8 dígitos con caracteres especiales
   
 ### <a name="pattern"></a>Patrón
 
-dos letras seguidas de siete números con caracteres especiales:
-  
-- dos letras (sin distinción entre mayúsculas y minúsculas) 
-- un guión
-- seis dígitos
-- un espacio
-- un dígito
+Trama 1: dos letras seguidas de 5/6 con caracteres especiales:
+- Dos letras (sin distinción entre mayúsculas y minúsculas)
+- Un guión 
+- Cinco o seis dígitos
+- Un espacio
+- Un dígito
+
+Patrón 2: una letra seguida de 6/8 dígitos con caracteres especiales:
+- Una letra (no distingue entre mayúsculas y minúsculas)
+- Un guión 
+- Seis u ocho dígitos
+- Un espacio
+- Un dígito
+
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -10562,35 +12895,160 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_portugal_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_portugal_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_portugal_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - Carteira de motorista
+- carteira motorista
+- Carteira de habilitação
+- carteira habilitação
+- número de Licença
+- número Licença
+- permissão de condução
+- permissão condução
+- Licença condução Portugal
+- Carta de condução
 
 ## <a name="portugal-passport-number"></a>Número de pasaporte de Portugal
 Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
@@ -10736,7 +13194,6 @@ un carácter seguido de ocho dígitos
 ### <a name="pattern"></a>Patrón
 
 un carácter seguido de ocho dígitos:
-  
 - una letra (no distingue entre mayúsculas y minúsculas) o un dígito 
 - ocho dígitos
     
@@ -10748,35 +13205,156 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_romania_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_romania_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_romania_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - Perm de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- Perm conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Código numérico personal (CNP) de Rumania
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -11171,35 +13749,154 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovakia_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_slovakia_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_slovakia_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>Número personal de Eslovaquia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -11374,35 +14071,155 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovenia_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_slovenia_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_slovenia_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
-- permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license 
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- dlno #
 - vozniško dovoljenje
+- licencia de številka de vozniška
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Eslovenia número de ciudadanos maestros únicos
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -11735,58 +14552,180 @@ Sí
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` encuentra contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_spain_eu_driver's_license_number` found. 
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_spain_eu_driver's_license_number` . 
+- La función  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` encuentra contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
+- permiso de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
+- dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
 
-- dlno #
-- listas #
-- Lic de drivers.
-- permiso de conducir
-- driver license
-- drivers licence
-- drivers license
-- driver's licence
-- driver's license
-- driving licence
-- driving license
-- número de licencia de conductor
-- número de licencia de conductor
-- número de licencia de drivers
-- número de licencia de drivers
-- número de permiso de conducción
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
-- permiso de conducción
-- número de permiso de conducir
 - permisos de conducción
 - permisos conducción
-- número de licencia conducir
-- número de cuaderno de conducir
-- número conducir de cuaderno
+- licencia de conducir
 - licenciar conducir
-- número de permisos de conducir
-- número de permisos conducir
-- número permisos conducir
 - permisos conducir
-- licencia de manejo
-- el cuaderno de conducir
+- permisos de conducir
+- permisos de conducir
+- permisos conducir
 - conducir del cuaderno
+- cuaderno de conducir
+- licencia de manejo
+- licenciar manejo
 
 ## <a name="spain-dni"></a>DNI de España
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -12186,35 +15125,161 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_sweden_eu_driver's_license_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_sweden_eu_driver's_license_number` . 
+- Palabra clave from  `Keywords_eu_driver's_license_number` o `Keywords_sweden_eu_driver's_license_number` found. 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-**Keywords_sweden_eu_driver ' s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- listas #
-- driver license
-- número de licencia de conductor
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- Lic del conductor
+- controlador conducción
+- licencia de controlador
+- licencias de controlador
 - permiso de conducir
-- Lic de drivers.
-- drivers license
-- drivers licence
-- driver's license
-- número de permiso de conducción
-- número de permiso de conducción
-- número de licencia de conducir
+- licencias de conducir
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- Lic de los drivers
+- Controladores conducción
+- licencia de controladores
+- licencias de controladores
+- licencia de conductores
+- licencias de conductores
+- n.º carné
+- n.º carnés
+- conducción
+- conducción
+- n.º carné
+- n.º carnés
+- Lic del controlador
+- controlador de conducción
+- licencia del controlador
+- licencias de controlador
+- permiso de conducción
+- licencias de conducir
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- Lic del conductor
+- conducción del conductor
+- permiso de conducción
+- licencias de conducir
+- permiso de conducción
+- permiso de conducción
+- listas #
+- distribución #
+- driverlic #
+- driverlics #
+- driverlicense #
+- driverlicenses #
+- driverlicence #
+- driverlicences #
+- Lic del conductor #
+- controlador conducción #
+- licencia de controlador #
+- licencias de controlador #
+- licencias de conducir #
+- driverslic #
+- driverslics #
+- driverslicense #
+- driverslicenses #
+- driverslicence #
+- driverslicences #
+- Lic de los drivers #
+- Controladores conducción #
+- licencia de controladores #
+- licencias de controladores #
+- licencia de conductores #
+- licencias de conductores #
+- n.º carné #
+- n.º carnés #
+- conducción #
+- conducción #
+- n.º carné #
+- n.º carnés #
+- Lic del controlador #
+- controlador de conducción #
+- licencia del controlador #
+- licencias de controlador #
+- permiso de conducción #
+- licencias de conducir #
+- driver'slic #
+- driver'slics #
+- driver'slicense #
+- driver'slicenses #
+- driver'slicence #
+- driver'slicences #
+- Lic del conductor #
+- conducción del conductor #
+- permiso de conducción #
+- licencias de conducir #
+- permiso de conducción #
+- permiso de conducción #
+- driving licence
+ 
+- licencia de conducir
 - dlno #
+- Lic Cond.
+- Cond. licen
+- licencia de Cond.
+- licencias de Cond.
+- licencia de Cond.
+- licencias de Cond.
+- controlador licen
+- Controladores licen
+- licen del conductor
+- Lic de conducción
+- licen de conducción
+- licencias de conducción
+- driving licence
+
+- driving licences
+
+- permiso de conducción
+- Nº DL
+- dlno
+- número de DL
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver ' s_license_number
+
+- ajokortti
+- Perm de conducere
+- ajokortin numero
+- Lic kuljettajat.
+- Lic de controlador.
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- Lic förare.
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>IDENTIFICACIÓN nacional de Suecia
 
@@ -12534,38 +15599,54 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- rápido\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- BIC \# 
-- BIC\# 
-- bank identifier code 
-- 標準化 9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rápido \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
+- international organization for standardization 9362
 
+- iso 9362
+- iso9362
+- rápido #
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift code
+
+- swift number #
+
+- swift routing number
+
+- bic number
+
+- bic code
+
+- bic #
+- BIC #
+- bank identifier code
+
+- Organisation internationale de normalisation 9362
+
+- rapide #
+
+- code SWIFT
+
+- le numéro de swift
+
+- swift numéro d'acheminement
+
+- le numéro BIC
+
+- # <a name="bic"></a>BIC
+- code identificateur de banque
+
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>Número AHV de SSN de Suiza
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -13100,24 +16181,18 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_uk_nino encuentra contenido que coincide con el patrón.
-- No se encuentra ninguna palabra clave de Keyword_uk_nino.
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave

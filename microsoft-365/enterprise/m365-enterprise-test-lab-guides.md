@@ -18,36 +18,36 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilice estas guías de laboratorio de pruebas para configurar una demostración, prueba de concepto o entornos de desarrollo/prueba en Microsoft 365 para empresas.
-ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686771"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487475"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guías de laboratorio para pruebas de Microsoft 365 para empresas
 
 *Esto se aplica tanto a Microsoft 365 para empresas como a Office 365 Enterprise.*
 
-Las Guías del laboratorio de pruebas (TLG) le ayudan a obtener información rápidamente sobre productos de Microsoft. Proporcionan instrucciones prescriptivas para configurar entornos de pruebas representativos pero simplificados. Puede usar estos entornos para la demostración, la personalización o la creación de pruebas de concepto complejas durante el tiempo que dure una suscripción de prueba o de pago. 
+Las Guías del laboratorio de pruebas (TLG) le ayudan a obtener información rápidamente sobre productos de Microsoft. Proporcionan instrucciones prescriptivas para configurar entornos de pruebas representativos pero simplificados. Puede usar estos entornos para la demostración, la personalización o la creación de pruebas de concepto complejas durante el tiempo que dure una suscripción de prueba o de pago.
 
-Las TLG están diseñadas para ser modulares. Se desarrollan entre sí para crear varias configuraciones que se adapten a sus necesidades de configuración de aprendizaje o de prueba. La experiencia práctica "Lo diseñé yo mismo y funciona" le ayudará a comprender los requisitos de implementación de un nuevo producto o escenario para que pueda planear mejor su hospedaje en producción.
+Las guías del laboratorio están diseñadas para ser modulares. Se basan en los otros para crear varias configuraciones que se ajusten mejor a sus necesidades de configuración de aprendizaje o prueba. La experiencia práctica "he creado ti y funciona" le ayuda a comprender los requisitos de implementación de un nuevo producto o escenario, de modo que pueda planear mejor su hospedaje en producción.
 
-Las TLG también le permiten crear entornos representativos para desarrollo y prueba de aplicaciones, también conocidos como entornos de desarrollo y prueba.
+También puede usar TLG para crear entornos representativos para desarrollar y probar aplicaciones, también conocidas como entornos de desarrollo y pruebas.
   
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Haga clic en [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila de guías de laboratorio de pruebas de Microsoft 365 Enterprise.
+Para obtener un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de Microsoft 365 para empresas, expanda el siguiente gráfico o vaya a la [pila de la guía del laboratorio de pruebas de microsoft 365 para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-[![Pila de guías de laboratorio para pruebas de Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![Pila de guías de laboratorio para pruebas de Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configuración básica
 
-En primer lugar, debe crear un entorno de prueba para [Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/). Puede crear dos tipos diferentes de configuraciones básicas:
+En primer lugar, cree un entorno de prueba para [Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/). Puede crear dos tipos diferentes de configuraciones básicas:
 
-- Utilice la [configuración de base ligera](lightweight-base-configuration-microsoft-365-enterprise.md) cuando desee configurar y realizar demostraciones sobre las características y capacidades de Microsoft 365 para empresas en un entorno únicamente de la nube, que no incluya componentes locales.
+- [Configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md) : Úsela cuando quiera configurar y demostrar las características y funciones de Microsoft 365 para empresas en un entorno solo de nube, que no incluye ningún componente local.
 
-- Utilice la [configuración de base simulada para empresas](simulated-ent-base-configuration-microsoft-365-enterprise.md) cuando desee configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno híbrido de la nube, que usa componentes locales como el Servicios de dominio de Active Directory (AD DS).
+- [Configuración de base de empresa simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md) : Úsela cuando quiera configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno de nube híbrida, que usa componentes locales como un dominio de servicios de dominio de Active Directory (AD DS).
 
 También puede crear entornos de prueba para Office 365 E5 al no agregar la licencia de Microsoft 365 E5 a su prueba o entorno de prueba de producción.
     
@@ -69,14 +69,14 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Habilite y pruebe Azure AD Seamless Single Sign-on (SSO) con un controlador de dominio AD DS.
+   Habilite y pruebe el inicio de sesión único de integración de Azure AD (SSO transparente) con un controlador de dominio de AD DS.
 
 - [Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md)
   
    Habilite y pruebe la autenticación multifactor basada en teléfono inteligente para una cuenta de usuario determinada.
 
 - [Proteger las cuentas de administrador global](protect-global-administrator-accounts-microsoft-365-test-environment.md)
- 
+
    Bloquear sus cuentas de administrador global con directivas de acceso condicional.
 
 - [Reescritura de contraseña](password-writeback-m365-ent-test-environment.md)
@@ -85,7 +85,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Restablecimiento de contraseña](password-reset-m365-ent-test-environment.md)
 
-   Use el restablecimiento de contraseñas de autoservicio (SSPR) para restablecer su contraseña.
+   Use el restablecimiento de contraseña de autoservicio para restablecer la contraseña.
 
 - [Licencias automáticas y pertenencia a grupos](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
@@ -99,7 +99,6 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
    Crear un entorno para probar la identidad recomendada y configuraciones de acceso de dispositivo y directivas de acceso condicional.
 
-
 ## <a name="mobile-device-management"></a>Administración de dispositivos móviles
 
 Para mostrar funcionalidades y características relacionadas con la administración de dispositivos móviles, vea:
@@ -111,7 +110,6 @@ Para mostrar funcionalidades y características relacionadas con la administraci
 - [Inscribir dispositivos iOS y Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    Inscriba los dispositivos Android o iOS y adminístrelos de forma remota.
-
 
 ## <a name="information-protection"></a>Protección de la información
 
@@ -128,5 +126,3 @@ Para demostrar características y funciones de la información relacionadas con 
 - [Administración del acceso con privilegios](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    Configure la administración del acceso con privilegios para habilitar el acceso puntual a tareas elevadas o con privilegios en su organización.
-
-

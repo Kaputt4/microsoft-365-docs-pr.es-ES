@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre la autenticación moderna híbrida y los requisitos previos para su uso con Skype empresarial local y los servidores de Exchange.
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361932"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487725"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para el uso en Skype Empresarial y los servidores de Exchange locales
 
@@ -161,6 +161,7 @@ Verifique y compruebe estos elementos antes de continuar:
     Los clientes o los protocolos que no se enumeran (por ejemplo, POP3) no admiten la autenticación moderna con Exchange local y continúan aprovechando los mecanismos de autenticación heredados, incluso cuando la autenticación moderna está habilitada en el entorno.
 
 - **Requisitos previos generales**
+  - Los escenarios de bosque de recursos requerirán una confianza bidireccional con el bosque de cuentas para garantizar que las búsquedas de SID adecuadas se realizan durante las solicitudes de autenticación moderna híbrida. 
   - Si usa AD FS, debe tener Windows 2012 R2 AD FS 3.0 y superior para la federación.
   - Las configuraciones de identidad son cualquiera de los tipos compatibles con Azure AD Connect, como la sincronización de hash de contraseña, la autenticación de paso y el STS local compatibles con Office 365.
   - Tiene Azure AD Connect configurado y funcionando para la replicación y sincronización de usuarios.

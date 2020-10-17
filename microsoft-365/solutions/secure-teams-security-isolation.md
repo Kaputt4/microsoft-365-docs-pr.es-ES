@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: fdebfcbfa4aad68f381db4ffb8c9b83a5100187c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398720"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487487"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -42,11 +42,15 @@ Los elementos de configuración para un equipo con aislamiento de seguridad son:
 > [!IMPORTANT]
 > Antes de proceder con los pasos de este artículo, asegúrese de que tiene habilitadas las [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
+Vea este vídeo para obtener información general del proceso.
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
+
 <a name="poster"></a> Para ver un resumen de dos páginas de este escenario, consulte el [Póster de aislamiento de seguridad de Microsoft Teams](../downloads/team-security-isolation-poster.pdf).
 
 [![Póster de aislamiento de seguridad de Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) e imprimirlo en tamaño de carta, legal o tabloide (11 x 17).
+También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 ## <a name="initial-protections"></a>Protecciones iniciales
 

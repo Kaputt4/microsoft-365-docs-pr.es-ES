@@ -2,8 +2,8 @@
 title: Establecer la contraseña de un usuario individual que nunca caduque
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: mnirkhe
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 01817aba0de1f5ca5f0b9bdf7feb1d03d72f6a24
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e778ad8a020a6767934d51f8bc227bfc39b13a9b
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361754"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580921"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
@@ -35,7 +35,7 @@ En este artículo se explica cómo establecer una contraseña para que un usuari
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo va dirigido a los usuarios que deben establecer una directiva de expiración de contraseñas para una empresa, un centro educativo o una ONG. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../admin-overview/admin-overview.md). 
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../admin-overview/admin-overview.md). 
 
 Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para poder realizar estos pasos.
 
@@ -48,7 +48,7 @@ Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que tambi
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Cómo comprobar la Directiva de expiración de una contraseña
 
-Para obtener más información sobre el comando Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
+Para obtener más información acerca del comando Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
 Ejecute uno de los siguientes comandos:
 

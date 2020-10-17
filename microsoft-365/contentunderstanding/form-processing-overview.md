@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338618"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493678"
 ---
 # <a name="form-processing-overview"></a>Información general del procesamiento de formularios
 
@@ -33,13 +33,9 @@ Por ejemplo, puede crear un modelo de procesamiento de formularios que identifiq
 
 ![Vista de la biblioteca de documentos](../media/content-understanding/doc-lib-done.png)</br>  
 
-También puede usar archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento se aprende al entrenar el modelo, y aprende a extraer los datos de ubicaciones similares en los formularios, ya que tienen un diseño estructurado de forma similar. 
+Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. El generador de IA analizará los archivos de ejemplo para pares de clave y valor, y también puede identificar manualmente los que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
 
 Necesita un mínimo de cinco documentos de formulario para empezar. La creación de IA analiza los archivos de ejemplo para buscar pares de clave-valor e identifica manualmente los que es posible que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
-
-Una vez que haya entrenado y publicado el modelo, úselo para crear un [flujo de Power Automate](https://docs.microsoft.com/power-automate/getting-started) que se ejecuta después de que se cargue un archivo en la biblioteca de documentos de SharePoint. Luego, se extraerán los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
-
-Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. El generador de IA analizará los archivos de ejemplo para pares de clave y valor, y también puede identificar manualmente los que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
 
 Una vez que haya entrenado y publicado el modelo, el modelo crea un [flujo de Power Automate](https://docs.microsoft.com/power-automate/getting-started). El flujo se ejecuta cuando se carga un archivo en la biblioteca de documentos de SharePoint y se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
 

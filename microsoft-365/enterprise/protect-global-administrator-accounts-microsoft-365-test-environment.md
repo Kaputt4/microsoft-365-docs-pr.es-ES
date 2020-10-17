@@ -15,32 +15,33 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Siga estos pasos para proteger las cuentas de administrador global en el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: fff09ca41ff0b648d46b5c33f753affc01242264
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1ae04e4761ed86e087e647464ad522466ed6abef
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695187"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487641"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteger las cuentas de administrador global en el entorno de prueba de Microsoft 365 para empresas
 
 *Esta guía del entorno de pruebas solo puede usarse para entornos de prueba de empresa de Microsoft 365.*
 
-Puede evitar ataques digitales en su organización asegurándose de que las cuentas de administrador son lo más seguras posible. En este artículo se describe cómo usar las directivas de acceso condicional de Azure Active Directory (Azure AD) para proteger las cuentas de administrador global.
+Puede evitar ataques digitales en su organización asegurándose de que las cuentas de administrador son lo más seguras posible. 
 
-Hay dos fases para proteger las cuentas de administrador global en el entorno de prueba de Microsoft 365 para empresas:
+En este artículo se describe cómo usar las directivas de acceso condicional de Azure Active Directory (Azure AD) para proteger las cuentas de administrador global.
 
-1.  Cree el entorno de prueba de Microsoft 365 para empresas.
-2.  Proteja su cuenta de administrador global dedicada.
+La protección de las cuentas de administrador global en el entorno de prueba de Microsoft 365 para empresas implica dos fases:
+- [Fase 1: crear el entorno de prueba de Microsoft 365 para empresas](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 2: configurar directivas de acceso condicional](#phase-2-configure-conditional-access-policies)
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
+> Para obtener un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de 365 para empresas, vaya a la [pila de la guía de entorno de pruebas 365 de Microsoft para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 para empresas
 
-Si solo quiere probar la protección de la cuenta de administrador global de manera ligera con los requisitos mínimos, siga las instrucciones de la [configuración básica](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si desea probar la protección de la cuenta de administrador global de manera ligera con los requisitos mínimos, siga las instrucciones de la [configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
 Si desea probar la protección de la cuenta de administrador global en una empresa simulada, siga las instrucciones de la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
@@ -52,46 +53,46 @@ Si desea probar la protección de la cuenta de administrador global en una empre
 En primer lugar, cree una nueva cuenta de usuario como administrador global dedicado.
 
 1. En una pestaña independiente, abra el [centro de administración de Microsoft 365](https://admin.microsoft.com/).
-2. Haga clic en **usuarios > usuarios activos**y, a continuación, haga clic en **Agregar un usuario**.
-3. En el panel **Agregar usuario** , escriba **DedicatedAdmin** en **nombre**, **nombre para mostrar**y nombre de **usuario**.
-4. Haga clic en **contraseña**, en **deseo crear la contraseña**y, a continuación, escriba una contraseña segura. Registre la contraseña de esta nueva cuenta en una ubicación segura.
-5. Haga clic en **Siguiente**.
-6. En el panel **asignar licencias de producto** , seleccione **Microsoft 365 E5**y, a continuación, haga clic en **siguiente**.
-7. En el panel **configuración opcional** , haga clic en **roles**y, a continuación, seleccione **acceso al centro de administración** y **administrador global**. Haga clic en **siguiente**.
-8. En el panel **está casi terminado** , haga clic en **Finalizar adición**y, a continuación, haga clic en **cerrar**.
+2. Seleccione **usuarios**  >  **activos**y, a continuación, seleccione **Agregar un usuario**.
+3. En el panel **Agregar usuario** , escriba **DedicatedAdmin** en los cuadros **nombre**, **nombre para mostrar**y nombre de **usuario** .
+4. Seleccione **contraseña**, seleccione **me permite crear la contraseña**y, a continuación, escriba una contraseña segura. Registre la contraseña de esta nueva cuenta en una ubicación segura.
+5. Seleccione **Siguiente**.
+6. En el panel **asignar licencias de producto** , seleccione **Microsoft 365 E5**y, a continuación, seleccione **siguiente**.
+7. En el panel **configuración opcional** , seleccione **roles**de administrador global de  >  **acceso al centro de administración**  >  **Global admin**  >  **Next**.
+8. En el panel **está casi listo** , seleccione **terminar de agregar**y, a continuación, haga clic en **cerrar**.
 
 A continuación, cree un nuevo grupo denominado GlobalAdmins y agréguele la cuenta DedicatedAdmin.
 
-1. En la pestaña **centro de administración de 365 de Microsoft** , haga clic en **grupos** en el panel de navegación izquierdo y, después, haga clic en **grupos**.
-2. Haga clic en **Agregar un grupo**.
-3. En el panel **elegir un tipo de grupo** , seleccione **seguridad**y, a continuación, haga clic en **siguiente**.
-4. En el panel **configurar conceptos básicos** , haga clic en **Crear grupo**y, a continuación, haga clic en **cerrar**.
-5. En el panel **revisar y finalizar agregar grupo** , escriba **GlobalAdmins**y, a continuación, haga clic en **siguiente**.
-7. En la lista de grupos, haga clic en el grupo **GlobalAdmins** .
-8. En el panel **GlobalAdmins** , haga clic en **miembros**y, a continuación, haga clic en **Ver todos y administrar miembros**.
-9. En el panel **GlobalAdmins** , haga clic en **Agregar miembros**, seleccione la cuenta **DedicatedAdmin** y la cuenta de administrador global y, a continuación, haga clic en **Guardar > cerrar > cerrar**.
+1. En la pestaña **centro de administración de 365 de Microsoft** , seleccione **grupos** en el panel de navegación izquierdo y, a continuación, seleccione **grupos**.
+2. Seleccione **Agregar un grupo**.
+3. En el panel **elegir un tipo de grupo** , seleccione **seguridad**y, a continuación, seleccione **siguiente**.
+4. En el panel **configurar conceptos básicos** , seleccione **Crear grupo**y, a continuación, haga clic en **cerrar**.
+5. En el panel **revisar y finalizar agregar grupo** , escriba **GlobalAdmins**y, a continuación, seleccione **siguiente**.
+7. En la lista de grupos, seleccione el grupo **GlobalAdmins** .
+8. En el panel **GlobalAdmins** , seleccione **miembros**y, a continuación, seleccione **Ver todos y administrar miembros**.
+9. En el panel **GlobalAdmins** , seleccione **Agregar miembros**, seleccione la cuenta **DedicatedAdmin** y la cuenta de administrador global y, a continuación, seleccione **Guardar**  >  **cerrar**  >  **Close**.
 
-A continuación, cree directivas de acceso condicional para requerir la autenticación multifactor para las cuentas de administrador global y para denegar la autenticación si el riesgo de inicio de sesión es medio o alto.
+A continuación, cree directivas de acceso condicional para requerir multi-factor Authentication para las cuentas de administrador global y para denegar la autenticación si el riesgo de inicio de sesión es medio o alto.
 
 Esta primera Directiva requiere que todas las cuentas de administrador global usen MFA.
 
 1. En una pestaña nueva del explorador, vaya a [https://portal.azure.com](https://portal.azure.com) .
-2. Haga clic en **Azure active directory > Security > el acceso condicional**.
-3. En el panel **acceso condicional-directivas** , haga clic en **Directiva de línea de base: requerir MFA para administradores (versión preliminar)**.
-4. En el panel **Directiva de línea de base** , haga clic en usar la **Directiva inmediatamente > guardar**.
+2. Haga **Azure Active Directory**clic en  >  **Security**  >  **acceso condicional**de seguridad de Azure Active Directory.
+3. En el panel **acceso condicional-directivas** , seleccione **Directiva de línea de base: solicitar MFA para administradores (versión preliminar)**.
+4. En el panel **Directiva de línea de base** , seleccione usar la **Directiva inmediatamente > guardar**.
 
 Esta segunda Directiva bloquea el acceso a la autenticación de la cuenta de administrador global cuando el riesgo de inicio de sesión es medio o alto.
 
-1. En el panel **acceso condicional-directivas** , haga clic en **nueva Directiva**.
+1. En el panel **acceso condicional-directivas** , seleccione **nueva Directiva**.
 2. En el panel **nuevo** , escriba **administradores globales** en **nombre**.
-3. En la sección **asignaciones** , haga clic en **usuarios y grupos**.
-4. En la ficha **incluir** del panel **usuarios y grupos** , haga clic en **Seleccionar usuarios y grupos > usuarios y grupos > seleccione**.
-5. En el panel de **selección** , haga clic en el grupo **GlobalAdmins** y, a continuación, haga clic en **seleccionar > listo**.
-6. En la sección **asignaciones** , haga clic en **condiciones**.
-7. En el panel de **condiciones** , haga clic en **riesgo de inicio de sesión**, haga clic en **sí** para **configurar**, haga clic en **alta** y **media**y, a continuación, haga clic en **seleccionar** y **listo**.
-8. En la sección **controles de acceso** del panel **nuevo** , haga clic en **conceder**.
-9. En el panel **conceder** , haga clic en **Bloquear acceso**y, a continuación, haga clic en **seleccionar**.
-10. En el panel **nuevo** , haga clic **en** **Habilitar Directiva**y, a continuación, haga clic en **crear**.
+3. En la sección **asignaciones** , seleccione **usuarios y grupos**.
+4. En la ficha **incluir** del panel **usuarios y grupos** , seleccione **Seleccionar usuarios y**grupos, seleccione usuarios y  >  **grupos**  >  **Select**.
+5. En el panel de **selección** , seleccione el grupo **GlobalAdmins** y, a continuación, seleccione **seleccionar**  >  **listo**.
+6. En la sección **asignaciones** , seleccione **condiciones**.
+7. En el panel de **condiciones** , seleccione **riesgo de inicio de sesión**, seleccione **sí** para **configurar**, seleccione **alta** y **media**y, a continuación, seleccione **seleccionar** y **listo**.
+8. En la sección **controles de acceso** del panel **nuevo** , seleccione **conceder**.
+9. En el panel **conceder** , seleccione **Bloquear acceso**y, a continuación, seleccione **seleccionar**.
+10. En el panel **nuevo** , seleccione **activado** para **Habilitar Directiva**y, a continuación, seleccione **crear**.
 11. Cierre las pestañas **Azure portal** y **centro de administración de Microsoft 365** .
 
 Para probar la primera Directiva, cierre e inicie sesión con la cuenta DedicatedAdmin. Se le pedirá que configure la MFA. Esto demuestra que se está aplicando la primera Directiva.

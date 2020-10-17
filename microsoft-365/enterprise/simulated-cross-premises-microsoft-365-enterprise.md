@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Resumen: cree una red virtual entre locales simulada en Microsoft Azure como entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: afbf294d0637c3454cedadec3268e74411a3c399
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685729"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487656"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Red virtual entre locales simulada en un entorno de prueba de Microsoft 365
 
@@ -64,7 +64,7 @@ Puede usar el entorno resultante para probar las características y funciones de
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Vaya a [Microsoft 365 for Enterprise test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para obtener un mapa visual de todos los artículos de la pila de la guía de entorno de pruebas 365 para empresas de Microsoft.
+> Vaya a [Microsoft 365 for Enterprise test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) para obtener un mapa visual de todos los artículos de la pila de la guía de entorno de pruebas 365 para empresas de Microsoft.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: configurar la red virtual TestLab
 

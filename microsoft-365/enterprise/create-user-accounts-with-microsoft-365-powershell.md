@@ -3,7 +3,6 @@ title: Crear cuentas de usuario 365 de Microsoft con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: En este artículo, aprenderá a usar PowerShell para crear cuentas de usuario o varias cuentas de usuario de Microsoft 365.
-ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: aedcc4adba6171a63a5ddaeb87b20150e72b2a76
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235599"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580957"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>Crear cuentas de usuario 365 de Microsoft con PowerShell
 
@@ -41,7 +40,7 @@ Puede usar PowerShell para Microsoft 365 para crear de forma eficaz cuentas de u
 |**Apellidos** <br/> |No  <br/> ||
 |**LicenseAssignment** <br/> |No  <br/> |Se trata del plan de licencias (también conocido como el plan de licencia o SKU) desde el que se asigna una licencia disponible a la cuenta de usuario. La licencia define los servicios de Microsoft 365 que están disponibles para la cuenta. No es necesario asignar una licencia a un usuario cuando se crea la cuenta, pero la cuenta requiere una licencia para obtener acceso a los servicios de Microsoft 365. Dispone de 30 días para conceder una licencia a la cuenta de usuario después de crearla. |
 |**Password** <br/> |No  <br/> | Si no especifica una contraseña, se asignará una aleatoria a la cuenta de usuario y esta será visible en los resultados del comando. Si especifica una contraseña, debe tener entre 8 y 16 caracteres ASCII de cualquiera de los siguientes tipos: letras minúsculas, letras mayúsculas, números y símbolos. <br/> |
-|**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, US para Estados Unidos y FR para Francia. Es importante proporcionar este valor, ya que algunos servicios de Microsoft 365 no están disponibles en determinados países, por lo que no puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga este valor configurado. Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
+|**UsageLocation** <br/> |No  <br/> |Se trata de un código de país válido ISO 3166-1 alpha-2. Por ejemplo, US para Estados Unidos y FR para Francia. **Debido a que algunos servicios de Microsoft 365 no están disponibles en determinados países, no puede asignar una licencia a una cuenta de usuario a menos que la cuenta tenga este valor configurado.** Para obtener más información, consulte [Sobre las restricciones de licencia](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
 
 >[!Note]
 >[Obtenga información sobre cómo crear cuentas de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) con el centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, consulte [Manage Users and Groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).

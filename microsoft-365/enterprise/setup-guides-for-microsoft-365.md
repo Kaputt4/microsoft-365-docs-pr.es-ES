@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere la planeación y la configuración de Microsoft 365 u Office 365 con las guías de instalación.
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446944"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493702"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -90,6 +90,17 @@ El escritorio virtual de Windows es un servicio de escritorio completo y de virt
 
 La [Guía de instalación de escritorio virtual de Windows](https://aka.ms/wvdsetupguide) proporciona a los administradores recursos de planeación y los requisitos previos para la implementación, la guía de instalación y recursos adicionales. 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Asesor de implementación de Microsoft Edge
+
+Microsoft Edge se ha reconstruido desde cero para aportar compatibilidad y rendimiento de nivel internacional, la seguridad y privacidad que merece, así como nuevas características diseñadas para ofrecerle la mejor de las web.
+
+El [Asesor de implementación de Microsoft Edge](https://aka.ms/edgeadvisor) le ayudará a configurar la detección de sitios empresariales para ver qué sitios a los que se ha tenido acceso en su organización podrían necesitar usar el modo IE, revisar y configurar las características de seguridad importantes, configurar directivas de privacidad y directivas adicionales para cumplir los requisitos de su organización y administrar el acceso web en los dispositivos. Puede descargar Microsoft Edge en dispositivos individuales o le mostraremos cómo implementarlo en varios usuarios de su organización con Configuration Manager o Microsoft Intune.
+El escritorio virtual de Windows es un servicio de escritorio completo y de virtualización de aplicaciones que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, optimizaciones de Windows 10 para sesiones múltiples para las aplicaciones de Microsoft 365 y compatibilidad con entornos de servicios de escritorio remoto (RDS). Implemente y escale sus aplicaciones y escritorios de Windows a Azure en minutos y obtenga características de cumplimiento y seguridad integradas. 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guía de instalación de la co-administración de Intune Configuration Manager
+
+Use la [Guía de instalación de la co-administración del administrador de configuración de Intune](https://aka.ms/comanagementsetup) para dispositivos cliente de Configuration Manager existentes y nuevos dispositivos basados en Internet que su organización desee coadministrar con Microsoft Intune y Configuration Manager. Esta guía de implementación de co-administración le permite administrar dispositivos Windows 10 y agrega nuevas funciones a los dispositivos de su organización, a la vez que recibe las ventajas de ambas soluciones.
+
 ## <a name="guides-for-authentication-and-access"></a>Guías de autenticación y acceso
 
 ### <a name="azure-ad-setup-guide"></a>Guía de configuración de Azure AD
@@ -97,6 +108,10 @@ La [Guía de instalación de escritorio virtual de Windows](https://aka.ms/wvdse
 La [Guía de configuración de Azure ad](https://aka.ms/aadpguidance) proporciona información para garantizar que su organización tenga una base de seguridad sólida. En esta guía, configurará las características iniciales, como el control de acceso basado en roles de Azure (Azure RBAC) para los administradores, Azure AD Connect para el directorio local y Azure AD Connect Health, para que pueda supervisar el estado de la identidad híbrida durante las sincronizaciones automatizadas. 
 
 También se incluye información esencial sobre cómo habilitar el restablecimiento de contraseñas de autoservicio, el acceso condicional y el inicio de sesión de terceros integrado, incluida la protección de identidad avanzada opcional y la automatización del aprovisionamiento de usuarios.
+
+### <a name="sync-users-from-your-orgs-directory"></a>Sincronizar usuarios del directorio de su organización
+
+El [Asistente para la sincronización de usuarios del directorio de su organización](https://aka.ms/directorysyncsetup) le guiará por la activación de la sincronización de directorios. Esto trae sus identidades locales y en la nube para facilitar el acceso y simplificar la administración. Desbloquear nuevas capacidades, como inicio de sesión único, opciones de autoservicio, aprovisionamiento automático de cuentas, controles de acceso condicional y directivas de cumplimiento. Esto garantiza que los usuarios tengan acceso a los recursos que necesitan desde cualquier lugar.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planeación de la implementación no con contraseña
 

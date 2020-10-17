@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad del marco de Microsoft Informatio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 80aad465442ce43d2fef993133c4e49da709a531
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7b2eaf8bcfa7014e8c70f4c7efb7d859b32e5e7e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398997"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446754"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -56,6 +56,8 @@ Puede usar etiquetas de confidencialidad para:
 
 - ** Proteger el contenido en los servicios y aplicaciones de terceros ** con Microsoft Cloud App Security Con Cloud App Security, puede detectar, clasificar, etiquetar y proteger el contenido en los servicios y aplicaciones de terceros, como SalesForce, Box o Dropbox, incluso si la aplicación o servicio de terceros no puede leer o no tiene compatibilidad con etiquetas de confidencialidad.
 
+- **Proteger contenedores** que incluyan Teams, Grupos de Microsoft 365 y sitios de SharePoint. Por ejemplo, configure las opciones de privacidad, el acceso de usuarios externos y el acceso desde dispositivos no administrados.
+
 - **Extienda las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.** Con el SDK de la protección de la información de Microsoft, las aplicaciones de terceros pueden leer etiquetas de confidencialidad y aplicar configuraciones de protección.
 
 - **Clasificar contenido sin usar una configuración de protección.** También puede asignar una clasificación al contenido (como un adhesivo) que se adhiera y traslade con el contenido cuando se use y comparta. Puede usar esta clasificación para crear informes de uso y ver los datos de actividad de contenido confidencial. También puede usar esta información para aplicar la configuración de protección más adelante.
@@ -74,7 +76,7 @@ Cuando asigna una etiqueta de confidencialidad a un documento o correo electrón
 
 En las aplicaciones de Office, una etiqueta de confidencialidad se muestra como una etiqueta para los usuarios en un correo electrónico o documento.
 
-Cada elemento de contenido puede tener una única etiqueta de confidencialidad aplicada. Un elemento puede tener a la vez una única etiqueta de confidencialidad y una única [etiqueta de retención](retention.md#retention-labels) aplicadas.
+Cada elemento que admite las etiquetas de confidencialidad puede tener una sola etiqueta aplicada. Los documentos y mensajes de correo electrónico pueden tener aplicadas tanto una etiqueta de confidencialidad como una [etiqueta de retención](retention.md#retention-labels).
 
 > [!div class="mx-imgBorder"]
 > ![Etiqueta de confidencialidad aplicada a un correo electrónico](../media/Sensitivity-label-on-email.png)
@@ -95,10 +97,9 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
-
 - **Proteja el contenido de los contenedores como sitios y grupos** cuando habilita la capacidad de [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md).
     
-    Las opciones de configuración de **Configuración de sitio y de grupo** no se mostrarán hasta que habilite esta capacidad. Tenga en cuenta que esta configuración de etiqueta no da como resultado que los documentos se etiqueten automáticamente, sino que la configuración de la etiqueta protege el contenido al controlar el acceso al contenedor donde se almacenan los documentos. Esta configuración incluye el nivel de privacidad, si un propietario de un grupo de Microsoft 365 puede agregar invitados al grupo y el nivel de acceso concedido a un dispositivo no administrado.
+    No puede configurar las opciones de protección para grupos y sitios hasta que habilite esta capacidad. Esta configuración de etiqueta no da como resultado que los documentos o mensajes de correo electrónico sean etiquetados automáticamente, pero, en cambio, la configuración de la etiqueta protege el contenido, al controlar el acceso al contenedor donde puede almacenarse el contenido. Estas opciones incluyen los ajustes de privacidad, el acceso de usuarios externos y el acceso desde dispositivos no administrados.
 
 - **Aplicar la etiqueta automáticamente en aplicaciones de Office o recomendar una etiqueta.** Puede elegir qué tipos de información confidencial quiere etiquetar y la etiqueta se puede aplicar automáticamente, o bien puede solicitar a los usuarios que apliquen la etiqueta que recomiende usar. Si recomienda una etiqueta, el mensaje mostrará el texto que elija. Por ejemplo:
     
@@ -106,11 +107,27 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     Para obtener más información sobre la configuración **Aplicación automática de etiquetas para aplicaciones de Office** al crear o editar una etiqueta de confidencialidad, vea [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md).
 
+### <a name="label-scopes"></a>Ámbitos de etiqueta
+
+Cuando cree una etiqueta de confidencialidad, se le pedirá que configure el ámbito de la etiqueta, el cual determinará dos cosas:
+- Las opciones de etiqueta que puede configurar para esa etiqueta
+- El lugar en el que los usuarios verán la etiqueta
+
+Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. De forma predeterminada, ambos ámbitos están seleccionados:
+
+![Opciones de ámbito para etiquetas de confidencialidad](../media/sensitivity-labels-scopes.png)
+
+Cuando cambie esta configuración predeterminada y seleccione solo un ámbito, aún verá la primera página de las opciones de configuración para el otro ámbito, pero no podrá seleccionarlas. Por ejemplo, si el ámbito para archivos y mensajes de correo electrónico no está seleccionado, no podrá seleccionar las opciones en la página siguiente:
+
+![Opciones para etiquetas de confidencialidad no disponibles](../media/sensitivity-labels-unavailable-settings.png)
+
+En las páginas que no tengan opciones disponibles, seleccione **Siguiente** para continuar. O bien, seleccione **Atrás** para cambiar el ámbito de la etiqueta.
+
 ### <a name="label-priority-order-matters"></a>Prioridad de etiqueta (el orden importa)
 
 Al crear las etiquetas de confidencialidad en el centro de administración, éstas aparecen en una lista en la pestaña **Confidencialidad** en la página de **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
 
-Puede aplicar una sola etiqueta de confidencialidad a un documento o correo electrónico. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas.
+Solo puede aplicar una etiqueta de confidencialidad a un elemento, como un documento, un correo electrónico o un contenedor. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas.
 
 Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](apply-sensitivity-label-automatically.md). Cuando configure etiquetas para aplicarlas automáticamente o como recomendación, pueden producirse varias coincidencias para más de una etiqueta. Para determinar la etiqueta que se va a aplicar o recomendar, se usa el orden de las etiquetas: se selecciona la última etiqueta de confidencialidad y, a continuación, si procede, la última subetiqueta.
 
@@ -142,22 +159,26 @@ Con una directiva de etiqueta, puede:
 
 - **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o un grupo de seguridad activado por correo electrónico, un grupo de distribución o un grupo de Microsoft 365, que puede tener [suscripción dinámica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) en Azure AD.
 
-- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta opción también se aplica a los contenedores, si [habilita las etiquetas de confidencialidad para Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md). Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico. 
+- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y mensajes de correo electrónico creados por los usuarios y grupos incluidos en la directiva de etiqueta, y la misma etiqueta predeterminada u otra diferente a los contenedores (si ha [habilitado las etiquetas de confidencialidad para Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)). Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico. 
     
     Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. Por lo general, no es una buena idea seleccionar una etiqueta que aplique el cifrado como etiqueta predeterminada a los documentos. Por ejemplo, muchas organizaciones necesitan enviar y compartir documentos con usuarios externos que pueden no tener aplicaciones compatibles con el cifrado o que no usen una cuenta que pueda ser autorizada. Para obtener más información sobre este escenario, consulte [Uso compartido de documentos cifrados con usuarios externos](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
-- **Solicitar una justificación para cambiar una etiqueta.** Si un usuario intenta quitar una etiqueta o reemplazarla por una etiqueta con un número de pedido inferior, puede solicitar que el usuario proporcione una justificación para realizar esa acción. Por ejemplo, un usuario abre un documento con la etiqueta Confidencial (número de pedido 3) y reemplaza dicha etiqueta por una llamada Público (número de pedido 1). Actualmente, el motivo de justificación no es enviado a [la etiqueta Analítica](label-analytics.md) para que el administrador pueda revisarla. No obstante, la [cliente de etiquetas unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envía esta información a [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
+- **Solicitar una justificación para cambiar una etiqueta.** Si un usuario intenta quitar una etiqueta o reemplazarla por una etiqueta con un número de pedido inferior, puede solicitar que el usuario proporcione una justificación para realizar esa acción. Por ejemplo, un usuario abre un documento con la etiqueta Confidencial (número de pedido 3) y reemplaza dicha etiqueta por una llamada Público (número de pedido 1). Actualmente, el motivo de la justificación solo se usa en el [cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2), que envía esta información a [Análisis de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Aviso en el que los usuarios especifican una justificación](../media/Sensitivity-label-justification-required.png)
 
-- **Requerir que los usuarios apliquen una etiqueta al correo electrónico y a los documentos.** También conocido como etiqueta obligatoria, puede solicitar que se aplique una etiqueta para que los usuarios puedan guardar documentos y enviar correos electrónicos. El usuario puede asignar manualmente la etiqueta, automáticamente como resultado de una condición configurada, o bien puede asignarse de forma predeterminada (la opción de etiqueta predeterminada se ha indicado anteriormente). Un ejemplo de aviso que se muestra en Outlook cuando se requiere que un usuario asigne una etiqueta:
+- **Requerir que los usuarios apliquen una etiqueta** con una opción para correo electrónico y documentos, y otra para contenedores. También conocidas como etiquetado obligatorio, estas opciones aseguran que se aplique una etiqueta antes de que los usuarios puedan guardar documentos y enviar mensajes de correo electrónico, y crear nuevos grupos o sitios.
+    
+    Para documentos y mensajes de correo electrónico, el usuario puede asignar la etiqueta manualmente; de forma automática, como resultado de una condición configurada; o bien, de forma predeterminada (la opción de etiqueta predeterminada descrita anteriormente). Un ejemplo de aviso que se muestra en Outlook cuando se requiere que un usuario asigne una etiqueta:
 
     ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > Actualmente, la etiqueta obligatoria requiere [un cliente de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Este cliente solo se ejecuta en Windows, por lo que esta característica aún no se admite en Mac, iOS y Android.
+    > Actualmente, el etiquetado obligatorio para documentos y mensajes de correo electrónico requiere el [cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Este cliente solo se ejecuta en Windows, por lo que esta característica aún no se admite en Mac, iOS y Android.
     
-    Considere usar esta opción para mejorar la cobertura de la etiqueta. Sin embargo, sin el aprendizaje del usuario, esta configuración también puede dar como resultado una etiqueta incorrecta. Además, a menos que también establezca una etiqueta predeterminada, la etiqueta obligatoria puede frustrar a los usuarios con avisos frecuentes. 
+    Para los contenedores, se debe asignar una etiqueta al momento de crear el grupo o sitio.
+    
+    Considere usar esta opción para mejorar la cobertura de la etiqueta. Sin embargo, sin el aprendizaje del usuario, estas opciones de configuración también pueden dar como resultado un etiquetado incorrecto. Además, a menos que también establezca una etiqueta predeterminada correspondiente, el etiquetado obligatorio puede frustrar a los usuarios debido a los avisos frecuentes. 
 
 - **Proporcione un vínculo de ayuda a una página de ayuda personalizada.** Si los usuarios no están seguros de lo que significan las etiquetas de confidencialidad o cómo deben usarse, puede proporcionar una URL con más información que aparecerá en la parte inferior del menú **Etiqueta de confidencialidad** en las aplicaciones de Office:
 
@@ -236,5 +257,5 @@ También puede obtener más información sobre [las soluciones de asociados que 
 
 ## <a name="deployment-guidance"></a>Instrucciones de implementación
 
-Consulte [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
+Para planear la implementación y obtener una guía que incluye información sobre licencias, permisos, estrategia de implementación y una lista de recursos para escenarios admitidos y la documentación del usuario final, consulte [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
 

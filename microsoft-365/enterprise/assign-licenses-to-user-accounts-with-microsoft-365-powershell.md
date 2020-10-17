@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: En este artículo, obtenga información sobre cómo usar PowerShell para asignar una licencia de Microsoft 365 a los usuarios sin licencia.
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235623"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580945"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Asignar licencias de 365 de Microsoft a cuentas de usuario con PowerShell
 
@@ -34,9 +34,13 @@ ms.locfileid: "48235623"
 
 Los usuarios no pueden usar ninguno de los servicios de Microsoft 365 hasta que su cuenta tenga asignada una licencia de un plan de licencias. Puede usar PowerShell para asignar licencias rápidamente a cuentas sin licencia. 
 
->[!Note]
->Las cuentas de usuario deben tener asignada una ubicación. Puede hacerlo desde las propiedades de una cuenta de usuario en el centro de administración de Microsoft 365 o desde PowerShell.
->
+Las cuentas de usuario primero deben asignarse a una ubicación. La especificación de una ubicación es una parte obligatoria de la creación de una nueva cuenta de usuario en el [centro de administración de Microsoft 365](../admin/add-users/add-users.md). 
+
+Las cuentas sincronizadas desde los servicios de dominio de Active Directory local no tienen una ubicación especificada de forma predeterminada. Puede configurar una ubicación para estas cuentas desde:
+
+- Centro de administración de Microsoft 365
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - El [portal de Azure](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (usuarios de**Active**Directory  >  **Users** > cuenta de usuario > **perfil**  >  **información**  >  **de contacto país o región**).
 
 >[!Note]
 >[Obtenga información sobre cómo asignar licencias a cuentas de usuario](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) con el centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, consulte [Manage Users and Groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: ac6af4d82b3da507f1fe0081041b347b9f5e4a94
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430319"
+ms.locfileid: "48446857"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -30,23 +30,23 @@ ms.locfileid: "48430319"
 
 Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clasificar y proteger documentos y mensajes de correo electrónico, también puede usarlas para proteger el contenido en los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), y sitios de SharePoint. Para esta clasificación y protección de nivel de contenedor, utilice la siguiente configuración de etiquetas:
 
-- Privacidad (pública o privada) de los sitios de equipos conectados a grupos de Microsoft 365
+- Privacidad (pública o privada) de los sitios de equipos y Grupos de Microsoft 365
 - Acceso de usuarios externos
 - Acceso desde dispositivos no administrados
 
 > [!IMPORTANT]
 > La configuración de **Acceder desde dispositivos sin administrar** funciona conjuntamente con la característica de SharePoint para [controlar el acceso desde dispositivos sin administrar](/sharepoint/control-access-from-unmanaged-devices). Debe configurar esta característica dependiente de SharePoint para usar una etiqueta de confidencialidad que tenga este ajuste configurado. Se incluye información adicional en las instrucciones siguientes.
 
-Cuando aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente la configuración de protección y clasificación al grupo o sitio conectado.
+Cuando aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente la clasificación y la configuración de protección establecida al sitio o al grupo.
 
-Sin embargo, el contenido de estos contenedores no hereda las etiquetas para la clasificación y configuración, como las marcas visuales o el cifrado. Para que los usuarios puedan etiquetar sus documentos en los sitios de SharePoint o de grupos, asegúrese de [habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Sin embargo, el contenido de estos contenedores no hereda las etiquetas para la clasificación y configuración de archivos y mensajes de correo electrónico, como las marcas visuales y el cifrado. Para que los usuarios puedan etiquetar sus documentos en los sitios de SharePoint o de grupos, asegúrese de [habilitar las etiquetas de confidencialidad para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 > [!NOTE]
 > Las etiquetas de sensibilidad para contenedores no son compatibles con las Redes de entrega de contenido (CDNs) de Office 365.
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Uso de etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
-Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
+Antes de habilitar etiquetas de confidencialidad para contenedores y establecerlas para la nueva configuración, los usuarios podrán verlas y aplicarlas en sus aplicaciones. Por ejemplo, en Word:
 
 ![Una etiqueta de sensibilidad que se muestra en la aplicación de escritorio de Word](../media/sensitivity-label-word.png)
 
@@ -68,42 +68,53 @@ Después de habilitar y configurar etiquetas de confidencialidad para contenedor
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-site-and-group-settings"></a>Cómo establecer la configuración de sitio y grupo
+## <a name="how-to-configure-groups-and-site-settings"></a>Cómo configurar los grupos y las opciones de configuración del sitio
 
-Ya está listo para crear o editar las etiquetas de confidencialidad que quiera y que estén disponibles para sitios y grupos. Al habilitar etiquetas de confidencialidad para contenedores, se hace visible una nueva página en los asistentes de etiquetas de confidencialidad: **Configuración de sitio y grupo**
+Habilitar las etiquetas de confidencialidad para contenedores significa que ahora puede configurar las opciones de protección para grupos y sitios en el asistente de etiquetado de confidencialidad. Hasta que habilite este soporte técnico, las opciones de configuración serán visibles en el asistente, pero no podrá configurarlas.
 
-Si necesita ayuda para crear o editar una etiquetas de confidencialidad, vea las instrucciones en [Crear y configurar etiquetas de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
-
-En la nueva página **Configuración de sitio y grupo**, configure las opciones:
-
-- **Privacidad de los sitios de equipos conectados a grupos de Microsoft 365**: mantenga el valor predeterminado de **Público: cualquier persona de la organización puede acceder al sitio** si quiere que todos en su organización accedan al sitio de grupo o grupo donde se aplica esta etiqueta.
-
-  Seleccione **Privado** si quiere que el acceso esté restringido solo a miembros aprobados de su organización.
-
-  Seleccione **Ninguno: permitir al usuario elegir quién puede acceder al sitio** cuando quiera proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permitir que los usuarios configuren la configuración de privacidad ellos mismos.
-
-  Las opciones **Pública** o **Privada** para establecen y bloquean la configuración de privacidad cuando aplica esta etiqueta al contenedor. La configuración elegida reemplaza cualquier configuración de privacidad anterior establecida para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
-
-- **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
-
-- **Dispositivos no administrados**: esta opción usa la característica de SharePoint que usa el acceso condicional a Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices). La opción que especifica para esta configuración de la etiqueta constituye el equivalente de ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 2-4 en [Bloquear o limitar el acceso a un sitio de SharePoint específico o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+1. Siga las instrucciones generales para [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) y asegúrese de que **Archivos y sitios** está seleccionada para el ámbito de la etiqueta: 
     
-    Si no configura la directiva de acceso condicional dependiente para SharePoint tal y como se describe en [Utilizar las restricciones que exige la aplicación](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), la opción que especifique aquí no tendrá ningún efecto. Además, no tendrá ningún efecto si es menos restrictiva que un valor configurado a nivel de la cuenta empresarial. Si ha configurado una opción de configuración a nivel de toda la organización para los dispositivos no administrados, elija una configuración de etiqueta que sea la misma o la más restrictiva.
+    ![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/groupsandsites-scope-options-sensitivity-label.png)
     
-    Por ejemplo, si la cuenta empresarial está configurada para **Permitir tan solo el acceso web limitado**, el valor de la etiqueta que permite el acceso total no tendrá ningún efecto, ya que es menos restrictivo. Para esta configuración a nivel de la cuenta empresarial, elija el valor de la etiqueta que permita bloquear el acceso (más restrictivo) o el valor de la etiqueta para acceso limitado (igual que la configuración de la cuenta empresarial).
+    Cuando solo este ámbito para la etiqueta esté seleccionado, la etiqueta no se mostrará en las aplicaciones de Office que admiten etiquetas de confidencialidad y no se podrá aplicar a archivos y mensajes de correo electrónico. Tener esta separación de etiquetas puede ser útil tanto para los usuarios como para los administradores, pero también puede aumentar la complejidad de la implementación de la etiqueta.
     
-    Dado que puede configurar las opciones de configuración de SharePoint independientemente de la configuración de etiqueta, no hay ninguna comprobación en el asistente de etiquetas de confidencialidad que incluya las dependencias.
+    Por ejemplo, necesita revisar atentamente la [clasificación de etiquetas](sensitivity-labels.md#label-priority-order-matters), ya que SharePoint detecta cuándo se carga un documento con etiqueta en un sitio etiquetado. En este escenario, se genera automáticamente un evento de auditoría y un correo electrónico cuando el documento tiene una etiqueta de confidencialidad con mayor prioridad que la etiqueta del sitio. Para obtener más información, vea la sección [Auditoría de actividades de etiquetas de confidencialidad](#auditing-sensitivity-label-activities) en esta página. 
 
-![La pestaña de configuración del sitio y del grupo](../media/edit-sensitivity-label-site-group2.png)
+2. A continuación, en la página **Definir configuración de protección para grupos y sitios**, seleccione una o ambas opciones disponibles:
+    
+    - **Configuración de privacidad y acceso de usuarios externos** para establecer las opciones de configuración de **Privacidad** y **Acceso de usuarios externos**. 
+    - **Configuración de acceso al dispositivo y uso compartido externo** para establecer la configuración del **Acceso desde dispositivos no administrados**.
+
+3. Si seleccionó **Configuración de privacidad y acceso de usuarios externos**, configure las siguientes opciones:
+    
+    - **Privacidad**: mantenga la opción predeterminada **Público** si quiere que cualquier persona de su organización tenga acceso al sitio de grupo o al grupo al que se aplica esta etiqueta.
+        
+        Seleccione **Privado** si quiere que el acceso esté restringido solo a miembros aprobados de su organización.
+        
+        Seleccione **Ninguno** cuando desee proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permita que los usuarios establezcan la configuración de privacidad ellos mismos.
+        
+        Las opciones **Pública** o **Privada** para establecen y bloquean la configuración de privacidad cuando aplica esta etiqueta al contenedor. La configuración elegida reemplaza cualquier configuración de privacidad anterior establecida para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
+    
+    - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
+
+4. Si seleccionó **Configuración de acceso al dispositivo y uso compartido externo**, configure las siguientes opciones:
+    
+    - **Acceso a dispositivos no administrados**: esta opción emplea la característica de SharePoint que usa el acceso condicional de Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices) en la documentación de SharePoint. La opción que especifique para esta configuración de la etiqueta constituye el equivalente a ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 2-4 en la sección de las instrucciones de SharePoint[Bloquear o limitar el acceso a un sitio específico de SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+        
+        Para obtener más información, vea la opción [Más información sobre las dependencias para los dispositivos no administrados](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) al final de esta sección.
 
 > [!IMPORTANT]
-> La configuración de sitio y grupo solo surte efecto al aplicar la etiqueta a un equipo, grupo o sitio. El resto de opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplican a todo el contenido del equipo, grupo o sitio.
->
-> Implementación gradual en espacios empresariales: solo las etiquetas con la configuración de sitio y de grupo estarán disponibles para seleccionarlas cuando los usuarios creen equipos, grupos y sitios. Si actualmente puede aplicar una etiqueta a un contenedor cuando la etiqueta no tiene habilitadas las configuraciones de sitio y grupo, solo se aplica el nombre de la etiqueta al contenedor.
+> La configuración de sitio y grupo solo surte efecto al aplicar la etiqueta a un equipo, grupo o sitio. Si el [ámbito de la etiqueta](sensitivity-labels.md#label-scopes) incluye archivos y mensajes de correo electrónico, otras opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplicarán a todo el contenido del equipo, grupo o sitio.
 
 Si la etiqueta de confidencialidad aún no se ha publicado, publíquela [agregándola a una directiva de etiqueta de confidencialidad](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Los usuarios que tienen asignada una directiva de etiqueta de confidencialidad que incluye esta etiqueta podrán seleccionarla para sitios y grupos.
 
-En la Directiva de etiqueta, solo la configuración de directiva **aplicar esta etiqueta de forma predeterminada a los documentos y el correo electrónico** es aplicable cuando se aplica esta etiqueta a contenedores. No se aplican otras opciones de configuración de Directiva, como la etiqueta obligatoria, que requiere la justificación del usuario y un vínculo a la página de ayuda personalizada.
+##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>Más información sobre la opción de dependencias para los dispositivos no administrados
+
+Si no configura la directiva de acceso condicional dependiente para SharePoint tal y como se describe en [Utilizar las restricciones que exige la aplicación](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), la opción que especifique aquí no tendrá ningún efecto. Además, no tendrá ningún efecto si es menos restrictiva que una configuración establecida en el nivel de inquilino. Si ha configurado una opción de configuración a nivel de toda la organización para dispositivos no administrados, elija una configuración de etiqueta que sea igual o más restrictiva.
+
+Por ejemplo, si la cuenta empresarial está configurada para **Permitir tan solo el acceso web limitado**, el valor de la etiqueta que permite el acceso total no tendrá ningún efecto, ya que es menos restrictivo. Para esta configuración a nivel de la cuenta empresarial, elija el valor de la etiqueta que permita bloquear el acceso (más restrictivo) o el valor de la etiqueta para acceso limitado (igual que la configuración de la cuenta empresarial).
+
+Dado que puede configurar las opciones de configuración de SharePoint independientemente de la configuración de etiqueta, no hay ninguna comprobación en el asistente de etiquetas de confidencialidad que incluya las dependencias. Estas dependencias pueden configurarse después de crear y publicar la etiqueta, e incluso después de aplicarla. Sin embargo, si la etiqueta ya se ha aplicado, la configuración no tendrá efecto hasta que el usuario vuelva a autenticarse.
 
 ## <a name="sensitivity-label-management"></a>Administración de etiquetas de confidencialidad
 
@@ -344,6 +355,9 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 
 ## <a name="auditing-sensitivity-label-activities"></a>Auditar actividades de etiqueta de confidencialidad
 
+> [!IMPORTANT]
+> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios**para las etiquetas que protegen los contenedores: debido al evento de auditoría y correo electrónico **Desfase detectado de la confidencialidad del documento**descrito en esta sección, considere [ordenar esas etiquetas](sensitivity-labels.md#label-priority-order-matters)antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
+
 Si alguien carga un documento en un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) que la etiqueta de confidencialidad que se aplica al sitio, esta acción no está bloqueada. Por ejemplo, aplicó la etiqueta **general** a un sitio de SharePoint y alguien carga en este sitio un documento etiquetado como **confidencial**. Debido a que una etiqueta de confidencialidad con mayor prioridad identifica el contenido que es más confidencial que el contenido que tiene un orden de menor prioridad, esta situación podría ser un problema de seguridad.
 
 Aunque la acción no está bloqueada, se audita y genera automáticamente un correo electrónico a la persona que cargó el documento y el administrador del sitio. Como resultado, tanto el usuario como los administradores pueden identificar los documentos que no están alineados con la prioridad de las etiquetas y tomar las medidas necesarias. Por ejemplo, eliminar o mover el documento cargado del sitio.
@@ -362,7 +376,7 @@ Todos estos eventos de auditoría se pueden encontrar en la categoría [Activida
 
 Puede desactivar las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint siguiendo las mismas instrucciones que se indican en [Habilitar la compatibilidad con etiquetas de confidencialidad en PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar la característica, en el paso 5, especifique `$setting["EnableMIPLabels"] = "False"`.
 
-Además de ocultar la página **Configuración de sitios y grupos** cuando cree o edite etiquetas de confidencialidad, esta acción revierte la propiedad que usan los contenedores para su configuración. Al habilitar las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint se cambia la propiedad **Clasificación** (usada para la [clasificación de grupos de Azure AD](#classic-azure-ad-group-classification)) a **Confidencialidad**. Cuando deshabilita las etiquetas de confidencialidad para contenedores, estos ignoran la propiedad Confidencialidad y vuelven a usar la propiedad Clasificación.
+Además de hacer que todas las opciones de configuración para grupos y sitios no estén disponibles cuando cree o edite etiquetas de confidencialidad, esta acción revierte la propiedad que usan los contenedores para su configuración. Al habilitar las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint se cambia la propiedad **Clasificación** (usada para la [clasificación de grupos de Azure AD](#classic-azure-ad-group-classification)) a **Confidencialidad**. Cuando deshabilita las etiquetas de confidencialidad para contenedores, estos ignoran la propiedad Confidencialidad y vuelven a usar la propiedad Clasificación.
 
 Esto quiere decir que no se exigirá la configuración de etiquetas para sitios y grupos que se aplicó previamente a los contenedores, y los contenedores ya no mostrarán las etiquetas.
 

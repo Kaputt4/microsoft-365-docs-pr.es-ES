@@ -3,7 +3,6 @@ title: Configurar las propiedades de la cuenta de usuario 365 de Microsoft con P
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,22 +18,22 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Resumen: Use PowerShell para Microsoft 365 para configurar las propiedades de una o varias cuentas de usuario en su inquilino de Microsoft 365.'
-ms.openlocfilehash: 6a435b3981efa8d8c2be7f6d983a1d062237f0db
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ae797d67b47c637dc95176b92fad8090f8a7ab37
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693588"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580933"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurar las propiedades de la cuenta de usuario 365 de Microsoft con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Aunque puede usar el centro de administración de Microsoft 365 para configurar las propiedades de las cuentas de usuario de su inquilino de Microsoft 365, también puede usar PowerShell y hacer algunas cosas que el centro de administración de Microsoft 365 no puede.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-Para configurar las propiedades de las cuentas de usuario con el módulo Azure Active Directory PowerShell para Graph, use el cmdlet [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) y especifique las propiedades que se deben establecer o cambiar. 
+Para configurar las propiedades de las cuentas de usuario con el módulo Azure Active Directory PowerShell para Graph, use el cmdlet [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) y especifique las propiedades que se deben establecer o cambiar. 
 
 En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
@@ -74,8 +73,11 @@ La cuenta se identifica con el parámetro **-objectId** y se establecen o cambia
     
     Este es el código de país o región de dos letras ISO 3166-1 (a2).
     
-Consulte [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) para obtener más parámetros.
+Consulte [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) para obtener más parámetros.
 
+>[!Note]
+>Antes de poder asignar licencias a una cuenta de usuario, debe asignar una ubicación de uso.
+>
 
 Para mostrar el nombre principal de usuario de las cuentas de usuario, ejecute el siguiente comando.
   
@@ -264,9 +266,9 @@ Este comando indica a PowerShell que:
 - Busque todas las cuentas de usuario que tengan su propiedad Department establecida en "Accounting" (**donde {$ _. Department-EQ "Accounting"}**) y enviar la información resultante al siguiente comando ( **|** ).
     
 - Establezca la ubicación del usuario en Francia (**set-MsolUser-UsageLocation "fr"**).
-    
 
-## <a name="see-also"></a>Recursos adicionales
+
+## <a name="see-also"></a>Consulte también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
