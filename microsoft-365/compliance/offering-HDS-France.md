@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 84b7f5959d3bd8c13476059655113ea78495862a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 07309131e9be4ef8149ca71dfd4fc6bc5ecf845d
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417724"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487440"
 ---
 # <a name="health-data-hosting-hds-france"></a>Hospedaje de Datos de Salud (HDS) de Francia
 
@@ -58,18 +58,18 @@ El certificado del HDS no se aplica a los servicios en línea de Microsoft en ve
 
 La certificación del HDS es válida durante tres años.
 
-- HDS: 2018: [ASIP SANTÉ](https://esante.gouv.fr/) y [Grupo BSI](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
+- HDS: 2018: [ASIP SANTÉ](https://esante.gouv.fr/)
+- [Grupo BSI](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
 
 ## <a name="how-to-implement"></a>Cómo se debe implementar
 
-**Términos del contrato: el Código de Salud Pública francés requiere la ejecución de términos contractuales específicos entre el servicio de hospedaje de datos de mantenimiento o el proveedor de servicios en la nube y sus clientes. Los clientes aptos deben comunicarse con el contacto de Microsoft para licencias para suscribir estos términos contractuales específicos antes de hospedar datos personales de salud en los servicios en línea de Microsoft.
-
-[Ciencias sociales y de la salud: información general de casos, guías de soluciones, tutoriales y otros recursos para ayudarle a crear soluciones de Azure].
+- **Términos del contrato**: el Código de Salud Pública francés requiere la ejecución de términos contractuales específicos entre el servicio de hospedaje de datos de mantenimiento o el proveedor de servicios en la nube y sus clientes. Los clientes aptos deben comunicarse con el contacto de Microsoft para licencias para suscribir estos términos contractuales específicos antes de hospedar datos personales de salud en los servicios en línea de Microsoft.
+- **Ciencias sociales y de la salud**: información general de casos, guías de soluciones, tutoriales y otros recursos para ayudarle a crear soluciones de Azure.
 
 ## <a name="resources"></a>Recursos
 
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Blog de certificación en Microsoft HDS](https://news.microsoft.com/fr-fr/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
+- [Blog de certificación en Microsoft HDS](https://news.microsoft.com/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
 - [Azure France](https://azure.microsoft.com/global-infrastructure/france/)
 - [Azure para la salud](https://azure.microsoft.com/industries/healthcare/)
 - [Seguridad en Microsoft](https://www.microsoft.com/security)
