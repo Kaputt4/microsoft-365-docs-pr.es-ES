@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422634"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493690"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -316,7 +316,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -340,7 +340,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -364,7 +364,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -436,7 +436,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -474,8 +474,8 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Yammer | Estados Unidos |
 | Servicios de OneNote | Australia |
 | Stream | Australia |
-| Whiteboard | Estados Unidos |
-| Formularios | Estados Unidos |
+| Whiteboard | Australia |
+| Forms | Estados Unidos |
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
@@ -484,7 +484,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -532,7 +532,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -604,7 +604,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -652,7 +652,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -676,7 +676,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -724,7 +724,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -868,7 +868,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -940,7 +940,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -988,7 +988,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -1156,7 +1156,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -1324,7 +1324,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -1444,7 +1444,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -1492,7 +1492,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -1540,7 +1540,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -1564,7 +1564,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -1588,7 +1588,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -1636,7 +1636,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -1660,7 +1660,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -1732,7 +1732,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -1804,7 +1804,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -1948,7 +1948,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -2044,7 +2044,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2212,7 +2212,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -2236,7 +2236,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2260,7 +2260,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2284,7 +2284,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2332,7 +2332,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2452,7 +2452,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2476,7 +2476,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2548,7 +2548,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -2596,7 +2596,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -2716,7 +2716,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -2788,7 +2788,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -2812,7 +2812,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -3100,7 +3100,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -3244,7 +3244,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -3268,7 +3268,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -3412,7 +3412,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -3460,7 +3460,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -3556,7 +3556,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -3676,7 +3676,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -3844,7 +3844,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -3868,7 +3868,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -3940,7 +3940,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4204,7 +4204,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4348,7 +4348,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -4372,7 +4372,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -4396,7 +4396,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4492,7 +4492,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -4588,7 +4588,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4612,7 +4612,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4636,7 +4636,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4660,7 +4660,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4684,7 +4684,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4708,7 +4708,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4948,7 +4948,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -4972,7 +4972,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -4996,7 +4996,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -5092,7 +5092,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -5116,7 +5116,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -5164,7 +5164,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -5236,7 +5236,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Unión Europea |
+| Exchange Online | Unión Europea |
 | OneDrive para la Empresa | Unión Europea |
 | SharePoint Online | Unión Europea |
 | Skype Empresarial | Unión Europea |
@@ -5476,7 +5476,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -5572,7 +5572,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -5620,7 +5620,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -5740,7 +5740,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
@@ -5860,7 +5860,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange en línea | Estados Unidos |
+| Exchange Online | Estados Unidos |
 | OneDrive para la Empresa | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype Empresarial | Estados Unidos |
