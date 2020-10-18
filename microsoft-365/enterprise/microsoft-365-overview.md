@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464353"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487157"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -104,21 +104,21 @@ Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## <a name="plan-for-and-deploy"></a>Planear e implementar
 
-Existen tres formas de planear la implementación de los productos, las características y los componentes de Microsoft 365 para empresas:
+Existen tres formas de planear e implementar los productos, las características y los componentes de Microsoft 365 para empresas:
 
-- En asociación con FastTrack:
+- En asociación con FastTrack
 
    Con FastTrack, los ingenieros de Microsoft le ayudan a pasarse a la nube a su propio ritmo. Consulte [FastTrack para Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-- Con la ayuda de los Servicios de consultoría de Microsoft o de un [asociado de Microsoft](https://partner.microsoft.com/):
+- Con la ayuda de los Servicios de consultoría de Microsoft o de un [asociado de Microsoft](https://partner.microsoft.com/)
 
    Los consultores pueden analizar su infraestructura actual y ayudarle a desarrollar un plan para incorporar todo el software y los servicios de Microsoft 365 para empresas.
 
-- Hágalo usted mismo:
+- Por cuenta propia
 
-   Empiece con un [Plan de desarrollo de redes](networking-roadmap-microsoft-365.md) para compilar o comprobar la infraestructura existente y las cargas de trabajo de productividad.
+   Empiece con el [Plan de desarrollo de redes](networking-roadmap-microsoft-365.md) para crear o comprobar la infraestructura existente y las cargas de trabajo de productividad.
 
-Para obtener un ejemplo de cómo una organización multinacional ficticia pero representativa implementó Microsoft 365 para empresas, consulte la[Corporación Contoso](contoso-overview.md).
+Para obtener un ejemplo de cómo una organización multinacional ficticia pero representativa implementó Microsoft 365 para empresas, consulte el [Caso práctico de Contoso Corporation](contoso-overview.md).
 
 ## <a name="additional-microsoft-365-products"></a>Productos adicionales de Microsoft 365
 
