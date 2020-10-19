@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327014"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594890"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -117,7 +117,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Dividir por: método de cifrado** o **desglosar por: plantilla de cifrado**: se muestra la siguiente información:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del remitente**
   - **Plantilla de cifrado**
   - **Método de cifrado**
@@ -126,7 +126,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: los 5 dominios de destinatarios principales**:
 
-  - **Fecha**
+  - **Date**
   - **Dominio del destinatario**
   - **Número de mensajes**
   
@@ -162,7 +162,7 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
@@ -220,7 +220,7 @@ Si hace clic en **filtros** en una vista de informe, puede modificar los resulta
 
 Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
@@ -259,7 +259,7 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Fecha**
+- **Date**
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
@@ -276,8 +276,8 @@ El informe proporciona el número de mensajes de correo electrónico con conteni
 
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
-- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget de estado de protección contra amenazas en el panel de informes](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ Están disponibles las siguientes vistas:
   - **Detonación de archivos**
 
   ![Vista de malware de contenido en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **Ver datos por: reemplazo de mensaje**: se muestra la siguiente información sobre el motivo de invalidación:
+
+  - **Omisión local**
+  - **IP allow**
+  - **Regla de flujo de correo**
+  - **Permitir remitente**
+  - **Permitir dominio**
+  - **ZAP no habilitado**
+  - **Carpeta de correo no deseado no habilitada**
+  - **Remitente seguro del usuario**
+  - **Dominio seguro del usuario**
+
+  ![Vista de invalidación de mensajes en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-message-override-view.png)
 
 - **Desglose por: tecnología de detección** y **ver datos por: \> phishing email**: se muestra la siguiente información:
 
@@ -361,7 +375,18 @@ Están disponibles las siguientes vistas:
 
 <sup>2</sup> la depuración automática de cero horas (ZAP) no está disponible en EOP independiente (solo funciona en buzones de Exchange Online).
 
-Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+Si hace clic en **filtros**, los filtros disponibles dependen del gráfico que esté consultando:
+
+En el caso del ** \> malware de contenido**, puede modificar el informe por la **fecha de inicio** y la **fecha de finalización**, y por el valor de **detección** .
+
+Para la **invalidación de mensajes**, puede modificar el informe con los siguientes filtros:
+
+- **Fecha de inicio** y **fecha de finalización**
+- **Motivo de la invalidación**
+- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+- **Dominio**
+
+Para todas las demás vistas, puede modificar el informe con los siguientes filtros:
 
 - **Fecha de inicio** y **fecha de finalización**
 - **Detección**
@@ -369,30 +394,43 @@ Si hace clic en **filtros**, puede modificar el informe con los siguientes filtr
 - **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
 - **Dominio**
 
-> [!NOTE]
-> **Protegido por**, **etiqueta** y **dominio** son solo Office 365 ATP. Estas propiedades filtrables no están disponibles en los datos de la **vista por: \> malware de contenido**.
-
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vista de tabla de detalles para el informe de estado de protección contra amenazas
 
 Si hace clic en **ver tabla de detalles**, la información que se muestra depende del gráfico que estaba viendo:
 
 - **Ver datos por: contenido \> Malware**:
 
-  - **Fecha**
-  - **Ubicación**
+  - **Date**
+  - **Location**
   - **Dirigida por**
   - **Nombre del malware**
+
+Si hace clic en **filtros** en esta vista, puede modificar el informe por **fecha de inicio** y **fecha de finalización**, y por el valor de **detección** .
+
+- **Ver datos por: invalidación de mensaje**:
+
+  - **Date**
+  - **Subject**
+  - **Remitente**
+  - **Destinatarios**
+  - **Detectado por**
+  - **Motivo de la invalidación**
+  - **Origen de la intromisión**
+  - **Tags**
 
 Si hace clic en **filtros** en esta vista, puede modificar el informe con los siguientes filtros:
 
 - **Fecha de inicio** y **fecha de finalización**
-- **Detección**
+- **Motivo de la invalidación**
+- **Etiqueta**: filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+- **Dominio**
+- **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
 
 **Ver datos por: información general**: no hay disponible ningún botón **tabla de detalles** de la vista.
 
 - Todos los demás gráficos:
 
-  - **Fecha**
+  - **Date**
   - **Subject**
   - **Remitente**
   - **Destinatarios**
@@ -439,7 +477,7 @@ El informe de **mensajes de** informes de usuario muestra información sobre los
 
 Hay más detalles disponibles para cada mensaje, incluidos el motivo de la entrega, la excepción de la Directiva de correo no deseado o la regla de flujo de correo configurada para la organización. Para ver los detalles, seleccione un elemento de la lista de informes de usuarios y, a continuación, vea la información en las pestañas **Resumen** y **detalles** .
 
-![El informe de mensajes de informes de usuario muestra los usuarios etiquetados como correo no deseado, no deseado o intentos de suplantación de identidad.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![El informe mensajes de User-Reported muestra los usuarios que han sido identificados como correo no deseado, no deseados o de suplantación de identidad.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 Para ver este informe, en el [centro de seguridad & cumplimiento](https://protection.office.com), realice una de las siguientes acciones:
 

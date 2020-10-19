@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumen: Use PowerShell para crear sitios de SharePoint Online y luego agregar usuarios y grupos a esos sitios.'
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693779"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594923"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Crear sitios de SharePoint Online y agregar usuarios con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Cuando usa PowerShell para Microsoft 365 para crear sitios de SharePoint Online y agregar usuarios, puede realizar las tareas de forma rápida y repetida con mucha más rapidez que en el centro de administración de Microsoft 365. También puede realizar tareas que no es posible realizar en el centro de administración de Microsoft 365. 
 
@@ -43,6 +43,9 @@ Cree varios sitios con PowerShell y un archivo. csv que cree con el código de e
 El cmdlet de PowerShell importa el archivo. csv y lo canaliza en un bucle dentro de las llaves que lee la primera línea del archivo como encabezados de columna. A continuación, el cmdlet de PowerShell recorre en iteración los registros restantes, crea una nueva colección de sitios para cada registro y asigna propiedades de la colección de sitios de acuerdo con los encabezados de columna.
 
 ### <a name="create-a-csv-file"></a>Crear un archivo .csv
+
+> [!NOTE]
+> El parámetro de cuota de recursos solo funciona en sitios clásicos. Si usa este parámetro en un sitio moderno, es posible que reciba un mensaje de advertencia que indica que está en desuso. 
 
 1. Abra el Bloc de notas y pegue el siguiente bloque de texto:<br/>
 
@@ -155,7 +158,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-
