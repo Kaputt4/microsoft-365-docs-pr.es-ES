@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202848"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600350"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -100,6 +100,11 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
      - **Correo no deseado**
 
      - **Suplantación de identidad**
+     
+   - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
+     - **Política Antiphishing**
+     - **Directiva de filtro de contenido alojado**
+     
 
    Para borrar el filtro, haga clic en **Borrar**. Para ocultar el control flotante del filtro, haga clic de nuevo en **Filtrar**.
 
@@ -108,6 +113,8 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
    - **Id. de mensaje**: El identificador único global del mensaje. Si selecciona un mensaje de la lista, el valor **Id. de mensaje** aparece en el panel flotante **Detalles** que aparece. Los administradores pueden usar [seguimiento de mensajes](message-trace-scc.md) para buscar mensajes y los valores de Id. de mensaje correspondientes.
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
+   
+   - **Nombre de directiva**: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    - **Dirección de correo electrónico del destinatario**: Una única dirección de correo electrónico de destinatario.
 
