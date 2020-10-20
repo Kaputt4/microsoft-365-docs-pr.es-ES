@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP) también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417216"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600546"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -95,6 +95,13 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
      - **Malware**
      - **Correo no deseado**
      - **Phish de confianza alta**
+     
+   - **Tipo de directiva**: filtrar mensajes por tipo de directiva:
+     - **Directiva antimalware**
+     - **Directiva de datos adjuntos seguros**
+     - **Directiva contra phish**
+     - **Directiva de filtro de contenido hospedado**
+     - **Regla de transporte**
 
    - **Destinatario de correo electrónico**: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
 
@@ -107,6 +114,8 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
      Por ejemplo, usó el [seguimiento de mensajes](message-trace-scc.md) para buscar un mensaje que se envió a un usuario de su organización y usted determina que el mensaje se puso en cuarentena en lugar de entregarse. Asegúrese de incluir el valor completo del identificador de mensaje, que puede incluir corchetes angulares ( \<\> ). Por ejemplo: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
+
+   - **Nombre**de la Directiva: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    - **Dirección de correo electrónico del destinatario**: Una única dirección de correo electrónico de destinatario.
 
@@ -152,7 +161,7 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
 
 - **Mensaje de liberación**: en el panel flotante que aparece, elija las siguientes opciones:
 
-  - **Notificar mensajes a Microsoft para su análisis**: esta opción está seleccionada de forma predeterminada y notifica a Microsoft el mensaje con una cuarentena incorrecta como falso positivo. Si el mensaje se puso en cuarentena como correo no deseado, en masa o con suplantación de identidad o con malware, el mensaje también se notifica al equipo de análisis de correo no deseado de Microsoft. Según el análisis, las reglas de filtro de correo no deseado de todo el servicio pueden ajustarse para permitir el paso del mensaje.
+  - **Notificar mensajes a Microsoft para su análisis**: esta opción está seleccionada de forma predeterminada y notifica a Microsoft el mensaje con una cuarentena incorrecta como falso positivo. Si el mensaje se puso en cuarentena como correo no deseado, en masa o con suplantación de identidad o con malware, el mensaje también se notifica al equipo de análisis de correo no deseado de Microsoft. Según el análisis, las reglas de filtro de correo no deseado de todo el servicio podrían ajustarse para permitir el paso del mensaje.
 
   - Elija una de las siguientes opciones:
     - **Liberar mensajes para todos los destinatarios**

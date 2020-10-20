@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447076"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600510"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -46,9 +46,9 @@ En este artículo se enumeran las nuevas características de la versión más re
 - [Comprobar las directivas mediante el analizador de configuración](configuration-analyzer-for-security-policies.md)
 - [Invalidar manualmente los veredictos de filtros usando la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md)
 - [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP plan 2)
-- La exposición invalida la información en el [Explorador de amenazas](threat-explorer.md) (el correo electrónico fue permitido o bloqueado por el inquilino o la Directiva de usuario)
-- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md#threats-in-urls) (malware, phish, correo no deseado o ninguno) 
-- [Mejoras en la búsqueda](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) de la experiencia del explorador de amenazas con actualizaciones alrededor de las amenazas, acciones adicionales, ubicaciones de entrega y vista de escala de tiempo actualizada
+- La información de invalidaciones de exposición en el [Explorador de amenazas](threat-explorer.md) (se permitió o bloqueó el correo electrónico por parte del inquilino o la Directiva de usuario) (Office 365 ATP plan 2)
+- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md#threats-in-urls) (malware, phish, correo no deseado o ninguno) (Office 365 ATP plan 2)
+- [Mejoras en la búsqueda de la experiencia del explorador de amenazas](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) con actualizaciones en torno a las amenazas, acciones adicionales, ubicaciones de entrega y vista de escala de tiempo actualizada (Office 365 ATP plan 2)
 
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020 
 
@@ -111,4 +111,3 @@ En este artículo se enumeran las nuevas características de la versión más re
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descripción del servicio ATP de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-

@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Integre el servidor de SIEM de su organización con la protección contra amenazas avanzada de Office 365 y eventos de amenazas relacionados en la API de administración de actividad de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327170"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600558"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>Integración de SIEM con la protección contra amenazas avanzada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Si su organización usa un servidor de incidentes de seguridad y de administración de eventos (SIEM), puede integrar Office 365 Advanced Threat Protection (Office 365 ATP) con su servidor de SIEM. Puede configurar esta integración mediante la [API de administración de actividad de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Si su organización usa un servidor de administración de eventos e información de seguridad (SIEM), puede integrar Office 365 Advanced Threat Protection (Office 365 ATP) con su servidor de SIEM. Puede configurar esta integración mediante la [API de administración de actividad de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
 La integración de SIEM permite ver información, como malware o phish detectada por Office 365 ATP, en los informes del servidor de SIEM. 
 
@@ -68,5 +68,4 @@ En la siguiente tabla se resumen los valores de **AuditLogRecordType** relevante
 [Investigación y respuesta de amenazas de Office 365](office-365-ti.md)
 
 [Investigación y respuesta automatizadas (AIR) en Office 365](automated-investigation-response-office.md)
-
 

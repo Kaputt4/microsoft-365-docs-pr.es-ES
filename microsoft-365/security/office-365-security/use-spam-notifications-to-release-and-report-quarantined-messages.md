@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado para el usuario final sobre los mensajes en cuarentena de Exchange Online Protection (EOP).
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195824"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600302"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de correo no deseado de usuario para liberar y notificar mensajes en cuarentena
 
@@ -58,3 +58,6 @@ Una notificación de correo no deseado para el usuario final contiene la siguien
 - **Revisión**: haga clic en este vínculo para ir a cuarentena en el centro de seguridad & cumplimiento, donde puede (en función de por qué se puso en cuarentena el mensaje) ver, liberar, eliminar o informar de los mensajes en cuarentena. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Ejemplo de notificación de correo no deseado para el usuario final](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> Un remitente bloqueado todavía puede enviarle correo. Los mensajes de este remitente que lo hagan a su buzón se moverán inmediatamente a la carpeta de correo electrónico no deseado. Los mensajes futuros de este remitente Irán a la carpeta de correo electrónico no deseado o a la cuarentena de usuario final. Si desea eliminar estos mensajes al recibirlos en lugar de ponerlos en cuarentena, use [las reglas de flujo de correo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) para eliminar los mensajes al recibirlas.

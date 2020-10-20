@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594890"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600570"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -297,8 +297,8 @@ Están disponibles las siguientes vistas:
 
 - **Ver datos por: contenido \> Malware**<sup>1</sup>: se muestra la siguiente información para las organizaciones de ATP de Office 365:
 
-  - **Motor antimalware**
-  - **Detonación de archivos**
+  - **Motor antimalware**: captura de archivos malintencionados en SharePoint Online, OneDrive y Teams mediante antimalware.
+  - **Detonación de archivos**: detonación de archivos malintencionados en SharePoint Online, OneDrive y Microsoft Teams con datos adjuntos seguros.
 
   ![Vista de malware de contenido en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ Están disponibles las siguientes vistas:
 
 - **Desglose por: tecnología de detección** y **ver datos por: \> phishing email**: se muestra la siguiente información:
 
-  - **Reputación de dirección URL generada por ATP**<sup>1</sup>
-  - **Filtro de phish avanzado**
-  - **Anti-falseamiento: error de DMARC**
-  - **Anti-suplantación de identidad: intra-org**
-  - **Anti-falsear: dominio externo**
-  - **Suplantación de marca**
-  - **Suplantación de dominio**<sup>1</sup>
-  - **Reputación de dirección URL de EOP**
-  - **Filtro de phish general**
+  - **Reputación de dirección URL generada por ATP**<sup>1</sup>: reputación de dirección URL malintencionada generada a partir de detonaciones de ATP en otros clientes de ATP.
+  - **Filtro de phish avanzado**: señales de suplantación de identidad basadas en aprendizaje automático.
+  - **Anti-spoofing-error de dMarc**: error de autenticación de dMarc en los mensajes.
+  - **Anti-spoofing-intra-org**: el remitente está intentando imitar el dominio del destinatario.
+  - **Anti-falseamiento-dominio externo**: el remitente está intentando suplantar algún otro dominio.
+  - **Suplantación de marca**: suplantación de marcas conocidas basadas en remitentes.
+  - **Suplantación de dominio**<sup>1</sup>: suplantación de dominios que el cliente posee o define.
+  - **Reputación de dirección URL de EOP**: reputación de dirección URL malintencionada.
+  - **Filtro de phish general**: señales de suplantación de identidad basadas en reglas de analista. 
   - **Otros**
-  - **Zap de phish**<sup>2</sup>
+  - **Zap de phish**<sup>2</sup>: no hay ningún mensaje de suplantación automática de purga de horas.
   - **Detonación de dirección URL**<sup>1</sup>
-  - **Suplantación de usuario**<sup>1</sup>
+  - **Suplantación de usuario**<sup>1</sup>: suplantación de usuarios definida por el administrador o aprendida a través de la inteligencia de buzones.
 
   ![Vista de la tecnología de detección de correo phishing en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **Desglose por: tecnología de detección** y **ver datos por: \> malware de correo electrónico**: se muestra la siguiente información:
 
-  - **Reputación de archivo generada por ATP**<sup>1</sup>
-  - **Motor antimalware**<sup>1</sup>
-  - **Bloque de tipo de archivo de directiva antimalware**
-  - **Detonación de archivo**<sup>1</sup>
+  - **Reputación de archivo generada por ATP**<sup>1</sup>: toda la reputación de archivos malintencionados generada por detonaciones de ATP.
+  - **Motor de antimalware**<sup>1</sup>: detección de motores antimalware.
+  - **Bloqueo de tipo de archivo de directiva antimalware**: son mensajes de correo electrónico filtrados debido al tipo de archivo malintencionado identificado en el mensaje.
+  - **Detonación de archivo**<sup>1</sup>: la detonación de archivos se detecta mediante datos adjuntos seguros.  
   - **Reputación de archivos malintencionados**
   - **Zap de malware**<sup>2</sup>
   - **Otros**

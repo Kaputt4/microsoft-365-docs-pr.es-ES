@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417226"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600534"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configurar el reenvío externo de correo electrónico en Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417226"
 
 El reenvío externo se controla mediante la *Directiva de correo no deseado saliente* y se establece en el ámbito de los usuarios en función de la configuración configurada. Actualmente se admite la configuración de 3:
 
-- **Automático** : esto está controlado por el sistema: permite el filtrado de correo no deseado saliente para controlar el reenvío de correo electrónico externo automático. Esta configuración es la predeterminada.
+- **Automático** : el reenvío externo automático está bloqueado. El reenvío automático interno de los mensajes seguirá funcionando. Esta configuración es la predeterminada.
 
 - **Activado** : el reenvío externo automático se permite y no está restringido.
 

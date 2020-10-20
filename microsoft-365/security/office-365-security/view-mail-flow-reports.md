@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 801463877db2e022ab84c3187367587c61f71090
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195848"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600606"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -134,22 +134,22 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
   - **Date**
   - **Regla de transporte**
-  - **Asunto**
+  - **Subject**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
-  - **Dirección**
+  - **Direction**
 
 - **Ver datos por: reglas de transporte de DLP de Exchange**:
 
   - **Date**
   - **Directiva DLP**
   - **Regla de transporte**
-  - **Asunto**
+  - **Subject**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
-  - **Dirección**
+  - **Direction**
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -240,7 +240,7 @@ Puede cambiar estos filtros haciendo clic en **filtrar** o haciendo clic en un v
 
 La tabla de datos contiene la siguiente información:
 
-- **Dirección**
+- **Direction**
 - **Tipo**
 - **24 horas**
 - **3 días**
@@ -320,13 +320,23 @@ La tabla de datos contiene la siguiente información, que se muestra en orden de
 
 - **Date**
 - **Correo electrónico total**
-- **Protección perimetral**
-- **Anti-malware, reputación de archivos, bloque de tipo de archivo**
-- **Anti-phish, reputación de dirección URL, suplantación de marca, antifalsificación**
-- **Contra correo electrónico no deseado, filtrado de correo masivo**
-- **Suplantación de usuario y dominio (ATP)**
-- **Detonación de archivo y dirección URL (ATP)**
-- **Protección tras entrega y ZAP (ATP) o ZAP (EOP)**
+- **Protección perimetral** 
+- **Anti-malware, reputación de archivo, bloque de tipo de archivo**:
+  - **Reputación del archivo**: mensajes filtrados debido a la identificación de un archivo adjunto por otros clientes de Microsoft.
+  - **Bloqueo de tipo de archivo**: mensajes filtrados debido al tipo de archivo malintencionado identificado en el mensaje.      
+- **Anti-phish, reputación de dirección URL, suplantación de marca, anti-falseamiento**:
+  - **Reputación de dirección URL**: mensajes filtrados debido a la identificación de la dirección URL por otros clientes de Microsoft.
+  - **Suplantación de marca**: mensajes filtrados debido a que el mensaje proviene de remitentes de suplantación de marca conocidos.
+  - **Anti-falsear**: mensajes filtrados debido al mensaje que intenta suplantar un dominio al que pertenece el destinatario o a un dominio que el remitente del mensaje no tiene.  
+- **Contra correo electrónico no deseado, filtrado de correo masivo**:
+  - **Filtrado de correo masivo**: mensajes filtrados debido a un intento de entrega de correo masivo a sus destinatarios. 
+- **Suplantación de usuario y dominio (ATP)**:
+  - **Suplantación del usuario**: mensajes filtrados debido a un intento de suplantar a un usuario (remitente del mensaje) que se define en la configuración de protección de suplantación de una directiva antiphishing.
+  - **Suplantación de dominio**: mensajes filtrados debido a un intento de suplantar un dominio que está definido en la configuración de protección de suplantación de una directiva antiphishing. 
+- **Detonación de archivo y dirección URL (ATP)**:
+  - **Detonación de archivo**: mensajes filtrados por una directiva de datos adjuntos seguros.
+  - **Detonación de dirección URL**: mensaje filtrado por una directiva de vínculos seguros.  
+- **Protección tras entrega y ZAP (ATP) o Zap (EOP)**: Zap indica que hay una purga automática de cero horas.
 
 Si selecciona una fila en la tabla de datos, se muestra un desglose de los recuentos de correo electrónico en el control flotante.
 
@@ -378,8 +388,10 @@ La tabla de datos contiene la siguiente información, que se muestra en orden de
 - **Date**
 - **Correo electrónico total**
 - **Borde filtrado**
-- **Motor antimalware, datos adjuntos seguros, regla filtrado**
-- **DMARC, suplantación, falsificación, phish filtrado**
+- **Motor antimalware, datos adjuntos seguros, regla filtrado**:
+  - **Regla filtrada**: mensajes filtrados debido a reglas de flujo de correo (también conocidas como reglas de transporte).
+- **DMARC, suplantación, suplantación, phish filtrada**:
+  - **DMARC**: mensajes filtrados debido a que el mensaje no supera la comprobación de autenticación de DMARC. 
 - **Detección de detonación de dirección URL**
 - **Filtrado contra correo electrónico no deseado**
 - **ZAP quitado**
@@ -449,7 +461,7 @@ Si hace clic en **ver tabla de detalles** en el cuadro **desglosar por: direcci�
 
 - **Fecha (UTC)**
 - **Tipo**
-- **Dirección**
+- **Direction**
 - **Número de mensajes**
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:

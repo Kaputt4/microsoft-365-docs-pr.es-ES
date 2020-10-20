@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para permitir los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203172"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600326"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -71,7 +71,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
    > [!IMPORTANT]
    >
-   > - No configure nunca configurar reglas de flujo de correo *solo* con el dominio del remitente como la condición para omitir el filtrado de correo no deseado. Al hacerlo, aumentará *significativamente* la probabilidad de que los intrusos puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir el filtrado de correo no deseado y omitir las comprobaciones de autenticación de remitente para que el mensaje llegue a la bandeja de entrada del destinatario.
+   > - No configure nunca reglas de flujo de correo *solo* con el dominio del remitente como la condición para omitir el filtrado de correo no deseado. Al hacerlo, aumentará *significativamente* la probabilidad de que los intrusos puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir el filtrado de correo no deseado y omitir las comprobaciones de autenticación de remitente para que el mensaje llegue a la bandeja de entrada del destinatario.
    >
    > - No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) como condiciones en las reglas de flujo de correo. Al hacerlo, se considera un riesgo alto porque crea oportunidades para que los atacantes envíen correo electrónico que, de lo contrario, se filtraría.
    >
@@ -97,7 +97,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
 ## <a name="use-outlook-safe-senders"></a>Usar remitentes seguros de Outlook
 
-En lugar de una configuración de la organización, los usuarios o los administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros en el buzón. Para obtener instrucciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Esto no es aconsejable en la mayoría de las situaciones, ya que los remitentes omitirán las partes de la pila de filtrado. Aunque confíe en el remitente, el remitente se mantiene en peligro y puede enviar contenido malintencionado. Es mejor dejar que los filtros hagan lo que se necesita para comprobar todos los mensajes y, a continuación, [informar del falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) si nuestros filtros no se han realizado correctamente. Omitir la pila de filtrado también interfiere con [Zap](zero-hour-auto-purge.md).
+En lugar de una configuración de la organización, los usuarios o los administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros en el buzón. Para obtener instrucciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Esto no es aconsejable en la mayoría de las situaciones, ya que los remitentes omitirán las partes de la pila de filtrado. Aunque confíe en el remitente, el remitente todavía puede estar en peligro y enviar contenido malintencionado. Es mejor dejar que los filtros hagan lo que se necesita para comprobar todos los mensajes y, a continuación, [informar del falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) si nuestros filtros no se han realizado correctamente. Omitir la pila de filtrado también interfiere con [Zap](zero-hour-auto-purge.md).
 
 Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes seguros de un usuario, el campo de encabezado **X-Forefront-antispam-Report** contendrá el valor `SFV:SFE` , lo que indica que se han omitido los filtros de correo no deseado, suplantación de identidad y phishing.
 

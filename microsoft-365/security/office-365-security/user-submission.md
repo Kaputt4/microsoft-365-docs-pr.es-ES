@@ -1,5 +1,5 @@
 ---
-title: Directivas de envíos de usuario
+title: Directiva de envíos de usuario
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446932"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600486"
 ---
-# <a name="user-submissions-policies"></a>Directivas de envíos de usuario
+# <a name="user-submissions-policy"></a>Directiva de envíos de usuario
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -76,7 +76,7 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
 
 2. En la página **envíos de usuarios** que aparece, seleccione una de las siguientes opciones:
 
-   a. **Habilitar la característica de mensaje de informe para Outlook (recomendado)**: Seleccione esta opción si usa el complemento de mensajes de informe o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
+   1. **Habilitar la característica de mensaje de informe para Outlook (recomendado)**: Seleccione esta opción si usa el complemento de mensajes de informe o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
       - **Personalizar el mensaje de confirmación del usuario final**: haga clic en este vínculo. En el control flotante **personalizar mensaje de confirmación** que aparece, configure las siguientes opciones:
 
