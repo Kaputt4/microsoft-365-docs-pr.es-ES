@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377275"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600385"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de Insider
 
@@ -59,7 +59,7 @@ Las directivas desencadenan alertas cuando los usuarios realizan actividades rel
 Los indicadores de Directiva se segmentan en las siguientes áreas. Puede elegir los indicadores para activar y personalizar los límites de eventos de indicador para cada nivel de indicador al crear una directiva de riesgos de Insider:
 
 - **Indicadores de Office**: incluyen indicadores de directiva para los sitios de SharePoint, los equipos y la mensajería de correo electrónico.
-- **Indicadores de dispositivo**: Estos incluyen indicadores de directiva para actividades como compartir archivos a través de la red o con dispositivos. Los indicadores incluyen actividades relacionadas con los archivos de Microsoft Office. Archivos CSV y. Archivos PDF. Si seleccionas **indicadores de dispositivo**, la actividad solo se procesa para dispositivos con Windows 10 compilación 1809 o posterior. Para obtener más información sobre la configuración de dispositivos para la integración con riesgos de Insider, vea [Getting Started with Endpoint DLP](endpoint-dlp-getting-started.md).
+- **Indicadores de dispositivo**: Estos incluyen indicadores de directiva para actividades como compartir archivos a través de la red o con dispositivos. Los indicadores incluyen actividades relacionadas con los archivos de Microsoft Office. Archivos CSV y. Archivos PDF. Si seleccionas **indicadores de dispositivo**, la actividad solo se procesa para dispositivos con Windows 10 compilación 1809 o posterior. Para obtener más información sobre la configuración de dispositivos para la integración con riesgos de Insider, consulte la sección [habilitar los indicadores de dispositivo y los dispositivos integrados](insider-risk-management-settings.md#OnboardDevices) .
 - **Indicador de infracción**de la Directiva de seguridad: incluyen indicadores de ATP de Microsoft defender relacionados con la instalación de software no aprobado o malintencionado o la omisión de controles de seguridad. Para recibir alertas en la administración de riesgos de Insiders, debe tener habilitada una licencia de ATP de Microsoft defender activa y una integración de riesgos de Insider. Para obtener más información sobre cómo configurar ATP de Microsoft defender para la integración de la administración de riesgos de Insider, vea [Configure Advanced Features in Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Elevadores de puntuación de riesgo**: incluyen la elevación de la puntuación de riesgo para actividades inusuales o infracciones de directivas pasadas. La habilitación de los elevadores de puntuación de riesgo aumenta los resultados de los riesgos y la probabilidad de que se presenten alertas para estos tipos de actividades. Los elevadores de puntuación de riesgo solo se pueden seleccionar si uno o más de los indicadores anteriores están seleccionados.
 
@@ -71,6 +71,73 @@ Para definir los indicadores de directiva de riesgos de Insider que están habil
 
 >[!NOTE]
 >Puede tardar varias horas en aparecer nuevos usuarios agregados manualmente en el **Panel de usuarios**. Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el **Panel de usuarios** y abra la ficha **actividad de usuario** en el panel de detalles.
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>Habilitar los indicadores de dispositivo y los dispositivos integrados
+<a name="OnboardDevices"> </a>
+
+Para habilitar la supervisión de actividades de riesgo en los dispositivos e incluir indicadores de directiva para estas actividades, los dispositivos deben cumplir los siguientes requisitos y debe completar los siguientes pasos de incorporación.
+
+#### <a name="step-1-prepare-your-endpoints"></a>Paso 1: preparar los puntos de conexión
+
+Asegúrese de que los dispositivos con Windows 10 que va a informar de la administración de riesgos de Insider cumplan estos requisitos.
+
+1. Debe estar ejecutando Windows 10 x64 compilación 1809 o posterior.
+2. Todos los dispositivos deben estar [unidos a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
+3. Instale el examinador perimetral de Microsoft cromo en el dispositivo de extremo para supervisar las acciones para la actividad de carga en la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+#### <a name="step-2-onboarding-devices"></a>Paso 2: dispositivos de incorporación
+<a name="OnboardStep2"> </a>
+
+Debe habilitar la supervisión de dispositivos e incorporar los puntos de conexión antes de poder supervisar las actividades de administración de riesgos de Insider en un dispositivo. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
+
+Cuando quiera incorporar dispositivos que todavía no han sido incorporados, deberá descargar el script adecuado e implementarlo como se describe en los siguientes pasos.
+
+Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de conexión (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), estos aparecerán en la lista de dispositivos administrados. Siga el [paso 3: Si tiene dispositivos integrados en Microsoft defender para el punto de conexión](insider-risk-management-settings.md#OnboardStep3) en la sección siguiente.
+
+En este escenario de implementación, incorporará dispositivos que aún no se han incorporado y que solo quiere supervisar actividades de riesgo de Insider en dispositivos con Windows 10.
+
+1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**.
+
+   > [!NOTE]
+   > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
+
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. La lista estará vacía hasta que haya incorporado dispositivos.
+4. Elija **Incorporación** para iniciar el proceso de incorporación.
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
+    - Incorporar equipos con Windows 10 usando Directiva de grupo
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
+    - Incorporar equipos con Windows 10 usando un script local
+    - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
+
+Una vez hecho, el punto de conexión está incorporado, debe estar visible en la lista de dispositivos y el punto de conexión iniciará el informe de registros de actividad de auditoría a la administración de riesgos de Insider.
+
+> [!NOTE]
+> Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Paso 3: Si tiene dispositivos integrados en Microsoft defender para el punto de conexión
+<a name="OnboardStep3"> </a>
+
+Si Microsoft defender para el punto de conexión ya está implementado y hay informes de puntos de conexión en, todos estos extremos aparecerán en la lista de dispositivos administrados. Puede seguir incorporando nuevos dispositivos en la administración de riesgos de Insider para ampliar la cobertura mediante la sección [Step 2: entrening Devices](insider-risk-management-settings.md#OnboardStep2) .
+
+1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión.
+4. Elija **Incorporación** si necesita incorporar dispositivos adicionales.
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
+    - Incorporar equipos con Windows 10 usando Directiva de grupo
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
+    - Incorporar equipos con Windows 10 usando un script local
+    - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
+
+Una vez realizado y el extremo está incorporado, debe estar visible en la tabla **dispositivos** y el extremo iniciará el informe de registros de actividad de auditoría a la administración de riesgos de Insider.
+
+> [!NOTE]
+>Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
 
 ### <a name="indicator-level-settings-preview"></a>Configuración de nivel de indicador (versión preliminar)
 

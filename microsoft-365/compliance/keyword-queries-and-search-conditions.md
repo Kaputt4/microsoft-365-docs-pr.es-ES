@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar mediante las herramientas de búsqueda y exhibición de documentos electrónicos de Microsoft 365.
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446199"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600453"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido y eDiscovery
 
-En este tema se describen las propiedades de correo electrónico y de documento que se pueden buscar en elementos de correo electrónico en Exchange Online y documentos almacenados en SharePoint y los sitios de OneDrive para la empresa mediante la característica de búsqueda de contenido en el centro de seguridad & cumplimiento. También puede usar los cmdlets ** \* -ComplianceSearch** en el PowerShell del centro de cumplimiento de & de seguridad para buscar estas propiedades. El tema también describe:   
+En este tema se describen las propiedades de correo electrónico y de documento que se pueden buscar en elementos de correo electrónico en Exchange Online y documentos almacenados en SharePoint y los sitios de OneDrive para la empresa mediante la característica de búsqueda de contenido en el centro de cumplimiento de Microsoft 365. También puede usar los cmdlets ** \* -ComplianceSearch** en el PowerShell del centro de cumplimiento de & de seguridad para buscar estas propiedades. El tema también describe:
   
 - Usar operadores de búsqueda booleanos, condiciones de búsqueda y otras técnicas de consulta de búsqueda para refinar los resultados de la búsqueda.
-    
-- Buscar tipos de datos confidenciales y tipos de datos confidenciales personalizados en SharePoint y OneDrive para la empresa.
-    
-- Búsqueda de contenido de sitio compartido con usuarios fuera de la organización
-    
-Para obtener instrucciones paso a paso sobre cómo crear una búsqueda de contenido, consulte [búsqueda de contenido en Office 365](content-search.md).
 
-  
+- Buscar tipos de datos confidenciales y tipos de datos confidenciales personalizados en SharePoint y OneDrive para la empresa.
+
+- Búsqueda de contenido de sitio compartido con usuarios fuera de la organización
+
+Para obtener instrucciones paso a paso sobre cómo crear una búsqueda de contenido, consulte [búsqueda de contenido](content-search.md).
+
 > [!NOTE]
-> Búsqueda de contenido en el centro de seguridad & cumplimiento y los cmdlets ** \* -ComplianceSearch** correspondientes en el centro de seguridad & cumplimiento de PowerShell use el lenguaje de consulta de palabras clave (KQL). Para obtener información más detallada, vea [referencia de sintaxis de lenguaje de consulta de palabras clave](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> La búsqueda de contenido en el centro de cumplimiento de Microsoft 365 y los cmdlets ** \* -ComplianceSearch** correspondientes en el centro de seguridad & cumplimiento de PowerShell usan el lenguaje de consulta de palabras clave (KQL). Para obtener información más detallada, vea [referencia de sintaxis de lenguaje de consulta de palabras clave](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Propiedades del correo electrónico que permiten búsquedas
 
-En la siguiente tabla se enumeran las propiedades de los mensajes de correo electrónico que se pueden buscar usando la característica de búsqueda de contenido en el centro de seguridad & cumplimiento o con el **New-compliancesearch** o el cmdlet **set-ComplianceSearch** . La tabla incluye un ejemplo de la sintaxis  _propiedad:valor_ de cada propiedad y una descripción de los resultados de búsqueda devueltos por los ejemplos. Puede escribir estos  `property:value` pares en el cuadro palabras clave para una búsqueda de contenido. 
+En la siguiente tabla se enumeran las propiedades de los mensajes de correo electrónico que se pueden buscar usando la característica de búsqueda de contenido en el centro de cumplimiento de Microsoft 365 o mediante el **New-compliancesearch** o el cmdlet **set-compliancesearch** . La tabla incluye un ejemplo de la sintaxis  _propiedad:valor_ de cada propiedad y una descripción de los resultados de búsqueda devueltos por los ejemplos. Puede escribir estos  `property:value` pares en el cuadro palabras clave para una búsqueda de contenido. 
 
 > [!NOTE]
 > Al buscar propiedades de correo electrónico, no es posible buscar elementos en los que la propiedad especificada está vacía o en blanco. Por ejemplo, si se usa el par *propiedad: valor* del **asunto: ""** para buscar mensajes de correo electrónico con una línea de asunto vacía, devolverá cero resultados. Esto también se aplica al buscar propiedades de sitio y contacto.
@@ -112,13 +111,13 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |Size|El tamaño de un elemento, en bytes.|`size>=1`  <br/> `size:1..10000`|El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.|
 |El título|El título del documento. La propiedad title es metadatos que se especifican en los documentos de Microsoft Office. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>Propiedades de contactos que permiten búsquedas
 
 En la siguiente tabla se enumeran las propiedades de los contactos que se indizan y que se pueden buscar mediante la búsqueda de contenido. Estas son las propiedades que los usuarios pueden configurar para los contactos (también denominados contactos personales) que se encuentran en la libreta personal de direcciones del buzón de un usuario. Para buscar contactos, puede seleccionar los buzones para buscar y, a continuación, usar una o más propiedades de contacto en la consulta de palabras clave.
   
 > [!TIP]
-> Para buscar valores que contienen espacios o caracteres especiales, use comillas dobles ("") para incluir la frase; por ejemplo,  `businessaddress:"123 Main Street"` . 
+> Para buscar valores que contienen espacios o caracteres especiales, use comillas dobles ("") para incluir la frase; por ejemplo, `businessaddress:"123 Main Street"` .
   
 |**Propiedad**|**Descripción de la propiedad**|
 |:-----|:-----|
@@ -144,18 +143,19 @@ En la siguiente tabla se enumeran las propiedades de los contactos que se indiza
 
 ## <a name="searchable-sensitive-data-types"></a>Tipos de datos confidenciales que se pueden buscar
 
-Puede usar la característica de búsqueda de contenido en el centro de seguridad y cumplimiento para buscar datos confidenciales, como los números de tarjetas de crédito o los números de la seguridad social, que se almacenan en documentos en los sitios de SharePoint y OneDrive para la empresa. Para ello, use la  `SensitiveType` propiedad y el nombre de un tipo de información confidencial en una consulta de palabra clave. Por ejemplo, la consulta  `SensitiveType:"Credit Card Number"` devuelve documentos que contienen un número de tarjeta de crédito. La consulta  `SensitiveType:"U.S. Social Security Number (SSN)"` devuelve documentos que contienen un número de la seguridad social de Estados Unidos. Para ver una lista de los tipos de datos confidenciales que se pueden buscar, vaya a **clasificación** de \> **tipos de información confidencial** en el centro de seguridad & cumplimiento. O bien, puede usar el cmdlet **Get-DlpSensitiveInformationType** en el PowerShell del centro de cumplimiento de & de seguridad para mostrar una lista de tipos de información confidencial. 
-  
-También puede usar la  `SensitiveType` propiedad para buscar el nombre de un tipo personalizado de información confidencial que usted (u otro administrador) creado para su organización. Puede usar la columna **Publisher** en la página **tipos de información confidencial** en el centro de seguridad & cumplimiento (o la propiedad **Publisher** en PowerShell) para diferenciar entre los tipos de información confidencial integrados y personalizados. Para obtener más información, vea [crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md).
+Puede usar la característica de búsqueda de contenido en el centro de cumplimiento para buscar datos confidenciales, como los números de tarjetas de crédito o los números de la seguridad social, que se almacenan en documentos en los sitios de SharePoint y OneDrive para la empresa. Para ello, use la `SensitiveType` propiedad y el nombre de un tipo de información confidencial en una consulta de palabra clave. Por ejemplo, la consulta `SensitiveType:"Credit Card Number"` devuelve documentos que contienen un número de tarjeta de crédito. La consulta  `SensitiveType:"U.S. Social Security Number (SSN)"` devuelve documentos que contienen un número de la seguridad social de Estados Unidos. Para ver una lista de los tipos de datos confidenciales que puede buscar, vaya a **Data classifications** \> **tipos de información confidencial** de clasificación de datos en el centro de cumplimiento de Microsoft 365. O bien, puede usar el cmdlet **Get-DlpSensitiveInformationType** en el PowerShell del centro de cumplimiento de & de seguridad para mostrar una lista de tipos de información confidencial.
   
 Para obtener más información acerca de la creación de consultas mediante la  `SensitiveType` propiedad, vea el [formulario a Query para buscar datos confidenciales almacenados en sitios](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-> [!NOTE]
-> No puede usar tipos de datos confidenciales y la `SensitiveType` propiedad Search para buscar datos confidenciales en el resto de los buzones de Exchange Online. Sin embargo, puede usar las directivas de prevención de pérdida de datos (DLP) para proteger los datos confidenciales de correo electrónico en tránsito. Para obtener más información, vea [información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) y [Buscar y buscar datos personales](search-for-and-find-personal-data.md).
+### <a name="limitations-for-searching-sensitive-data-types"></a>Limitaciones para la búsqueda de tipos de datos confidenciales
+
+- Solo puede usar la `SensitiveType` propiedad para buscar tipos de datos de información confidencial integrados. No puede buscar tipos de datos confidenciales personalizados que usted (u otro administrador) haya creado para su organización. Use la columna **Publisher** en la ficha **tipos de información confidencial** en el centro de cumplimiento (o la propiedad **Publisher** en PowerShell) para diferenciar entre los tipos de información confidencial integrados y personalizados. Los tipos de datos confidenciales integrados se identifican por el valor de **Microsoft Corporation** en la columna **Publisher** .
+  
+- No puede usar tipos de datos de información confidencial y la `SensitiveType` propiedad Search para buscar datos confidenciales en el resto de los buzones de Exchange Online. Sin embargo, puede usar las directivas de prevención de pérdida de datos (DLP) para proteger los datos confidenciales de correo electrónico en tránsito. Para obtener más información, vea [información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) y [Buscar y buscar datos personales](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Operadores de búsqueda
 
-Los operadores de búsqueda booleanos, como **and**, **or**y **Not**, ayudan a definir búsquedas más precisas incluyendo o excluyendo palabras específicas en la consulta de búsqueda. Otras técnicas, como el uso de operadores de propiedades (como \> = o..), las comillas, los paréntesis y los caracteres comodín, ayudan a refinar una consulta de búsqueda. En la siguiente tabla se muestran los operadores que puede usar para restringir o ampliar los resultados de la búsqueda. 
+Los operadores de búsqueda booleanos, como **and**, **or**y **Not**, ayudan a definir búsquedas más precisas incluyendo o excluyendo palabras específicas en la consulta de búsqueda. Otras técnicas, como los operadores de propiedades (como `>=` o `..` ), las comillas, los paréntesis y los caracteres comodín, ayudan a refinar una consulta de búsqueda. En la siguiente tabla se muestran los operadores que puede usar para restringir o ampliar los resultados de la búsqueda. 
   
 |**Operador**|**Uso**|**Descripción**|
 |:-----|:-----|:-----|
