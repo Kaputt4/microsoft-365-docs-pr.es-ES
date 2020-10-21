@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 5e7156a884093ca12fff7020bb045da30882547d
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464341"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646816"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -33,7 +33,7 @@ Estas recomendaciones se basan en tres niveles diferentes de seguridad y protecc
 
 Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android, en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones móviles de Outlook también tienen capacidades de seguridad que admiten el uso móvil y trabajan conjuntamente con otras funciones de seguridad en la nube de Microsoft. Para obtener más información, consulte [preguntas más frecuentes sobre Outlook para iOS y Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
-## <a name="updating-common-policies-to-include-email"></a>Actualización de directivas comunes para incluir correo electrónico
+## <a name="update-common-policies-to-include-email"></a>Actualizar directivas comunes para incluir correo electrónico
 
 Para proteger el correo electrónico, en el siguiente diagrama se ilustran las directivas que se deben actualizar desde las directivas comunes de identidad y acceso a dispositivos.
 
@@ -64,6 +64,41 @@ Esta directiva impide a los clientes de ActiveSync omitir otras directivas de ac
 - Siga "paso 2: configurar una directiva de acceso condicional de Azure AD para Exchange Online con ActiveSync (EAS)" en el [escenario 1: las aplicaciones de Office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), lo que impide que los clientes de Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online.
 
 También puede usar directivas de autenticación para [deshabilitar la autenticación básica](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), que obliga a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
+
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitar el acceso a Exchange online desde Outlook en la web
+
+Puede restringir la capacidad de los usuarios para descargar datos adjuntos de Outlook en la web en dispositivos umnanaged. Los usuarios de estos dispositivos pueden ver y editar estos archivos con Office online sin perder ni almacenar los archivos en el dispositivo. También puede impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
+
+Para ello, siga estos pasos:
+
+1. [Conéctese a una sesión de PowerShell remoto de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+2. Si aún no tiene una directiva de buzón de OWA, cree una con el cmdlet [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy) .
+3. Si desea permitir la visualización de datos adjuntos pero no descargarlos, use este comando:
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
+   ```
+
+4. Si desea bloquear los datos adjuntos, use este comando:
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
+   ```
+
+4. En Azure portal, cree una nueva Directiva de acceso condicional con estos valores:
+
+   **Asignaciones > usuarios y grupos**: seleccione los usuarios y grupos correspondientes que desee incluir y excluir.
+
+   **Las asignaciones > aplicaciones o acciones en la nube > aplicaciones en la nube > incluir > seleccionar aplicaciones**: seleccionar **Office 365 Exchange Online**
+
+   **Controles de acceso > sesión**: seleccione **usar restricciones de aplicación forzada**
+
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android deban usar Outlook
+
+Para garantizar que los usuarios de dispositivos iOS y Android solo puedan acceder al contenido de trabajo o escuela con Outlook para iOS y Android, necesitará una directiva de acceso condicional que se destina a los usuarios potenciales.
+
+Vea los pasos para configurar esta directiva en [Manage Messaging Collaboration Access by Using Outlook for iOS and Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+
 
 ## <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
 

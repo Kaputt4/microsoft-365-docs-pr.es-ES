@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
-ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: d0e8c6fd9973573d4e49f7512e4394f7534bd97c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419117"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646804"
 ---
 # <a name="understand-the-proposal-workflow"></a>Descripción del flujo de trabajo de propuestas
 
@@ -123,7 +123,7 @@ La propuesta contiene la siguiente información:
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | El nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de la propuesta. Si pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para hacerle saber que todavía está interesado en la propuesta. |
-| Moneda | La moneda que se usa para calcular el costo de los elementos de la propuesta. |
+| Divisa | La moneda que se usa para calcular el costo de los elementos de la propuesta. |
 | Preparado para | El nombre de la cuenta de facturación, la dirección, la dirección de correo electrónico de contacto y el número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | La dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de cambio (FX) extranjera que se usa para calcular los costos. |

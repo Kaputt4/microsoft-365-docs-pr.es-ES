@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenga la aplicación de administración de Microsoft 365 y aprenda a administrar su organización en línea desde su teléfono o tableta.
-ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 55aaf26d0da922c8d9bfb7c64f16278eb4a705a5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948813"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646648"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil de administración de Microsoft 365
 
@@ -61,7 +61,7 @@ Vea un breve vídeo sobre la instalación de la aplicación móvil de administra
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 A continuación están las respuestas a algunas de las preguntas más frecuentes sobre la aplicación.
   
