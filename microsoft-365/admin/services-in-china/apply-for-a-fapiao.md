@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de administración de 21Vianet Fapiao después de realizar un pago en Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4503226d50a719e169e9112538e7d0dcd172197e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ebaec639c7eccbfef848c1cd8a4857a5a9a77443
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432408"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644896"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Solicitar una Fapiao para Office 365 operado por 21Vianet
 

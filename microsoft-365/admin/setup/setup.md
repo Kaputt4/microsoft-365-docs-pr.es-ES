@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Obtenga información acerca de cómo configurar su suscripción de Microsoft Empresa Premium, Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Básico, Aplicaciones de Microsoft 365 para negocios u Office 365 Educación.
-ms.openlocfilehash: 6aef028745aa9b2e2e20529dbea1193ea7cbf3aa
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f832272aff5ba9c657eb8a6f58f3d9c330d7700c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778918"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644452"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurar Microsoft 365 para empresas
 

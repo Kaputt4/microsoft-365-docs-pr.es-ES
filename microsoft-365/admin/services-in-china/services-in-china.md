@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información sobre Office 365 operado por 21Vianet que está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079742"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644656"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -57,7 +57,7 @@ Si desea obtener información sobre cómo empezar [a trabajar con](../admin-over
 |:-----|:-----|
 |Dominios personalizados  <br/> |Los administradores pueden crear o usar dominios personalizados registrados a través de proveedores de dominios específicos de chino. Si no tiene un dominio personalizado, puede [comprar un nombre de dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) de un registrador de nombres de dominio. Si ya tiene uno, [Busque su registrador de dominios o proveedor de hospedaje DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Además, si crea un sitio web público mediante el servicio Office 365 SharePoint Online, la Directiva de cumplimiento de Internet de China requiere que obtenga un número de proveedor de contenido de Internet (ICP).  **Nota:** La validación automática de palabras no permitidas en nombres de dominio personalizados no está disponible.           |
 |Suscripciones, facturación y soporte técnico  <br/> |Proporcionado por 21Vianet. Para obtener información sobre cómo ponerse en contacto con el soporte técnico, vea [Contact Office 365 for Business Support](../contact-support-for-business-products.md).  <br/> |
-|Restablecimiento de contraseñas de autoservicio  <br/> |Disponible solo para administradores. Para obtener más información, vea [cambiar o restablecer la contraseña en Office 365 operado por 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Autoservicio de restablecimiento de contraseña  <br/> |Disponible solo para administradores. Para obtener más información, vea [cambiar o restablecer la contraseña en Office 365 operado por 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Seguridad, privacidad, cumplimiento y detalles de los niveles de soporte  <br/> |Proporcionado por 21Vianet.  <br/> |
 |Configuración de escritorio de Office  <br/> |La configuración de escritorio de Office no está disponible para Office 2010 y Office 2007. Sin embargo, los administradores pueden [configurar las aplicaciones de escritorio actuales de Office para que funcionen con office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
 |Compatibilidad con dispositivos y dispositivos móviles\*  <br/> | Próximamente estarán disponibles las siguientes características de dispositivos móviles:  <br/>  Administración de dispositivos móviles (MDM)  <br/>  BlackBerry Business Cloud Services (BBCS) no está disponible, pero puede usar dispositivos Exchange ActiveSync o una oferta de Research in Motion (RIM, la solución de correo electrónico inalámbrico BlackBerry) para ejecutar BlackBerry Enterprise Server (BES).  <br/>  Para obtener más información sobre la compatibilidad con dispositivos móviles, vea [configurar y administrar el acceso móvil para los usuarios](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
@@ -75,7 +75,7 @@ Si desea obtener información sobre cómo empezar [a trabajar con](../admin-over
 |||
 |:-----|:-----|
 |Compartir un documento, una biblioteca o un sitio por correo electrónico con alguien ajeno a la organización  <br/> |Esta característica está disponible, pero, de forma predeterminada, si se usa, puede hacer que los archivos compartidos sean accesibles fuera de su país. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Los usuarios que intenten compartir con alguien externo a la organización también recibirán una advertencia. Para obtener más información, vea [compartir archivos o carpetas de SharePoint en Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
-|Servicios de Access  <br/> |Access 2013 es compatible, pero agregar nuevas aplicaciones de Access puede no estar disponible, ya que esta característica se retirará de Office 365 y SharePoint Online. La creación de nuevas aplicaciones web basadas en el acceso y de las bases de datos Web de Access en Office 365 y SharePoint Online se detendrá a partir de la 2017 de junio y a las demás aplicaciones web y bases de datos Web en abril de 2018. Además, no se admite la funcionalidad de Access 2010 y, si se intenta usar una base de datos de Access 2010, se producirán errores y posible pérdida de datos.  <br/> |
+|Access Services  <br/> |Access 2013 es compatible, pero agregar nuevas aplicaciones de Access puede no estar disponible, ya que esta característica se retirará de Office 365 y SharePoint Online. La creación de nuevas aplicaciones web basadas en el acceso y de las bases de datos Web de Access en Office 365 y SharePoint Online se detendrá a partir de la 2017 de junio y a las demás aplicaciones web y bases de datos Web en abril de 2018. Además, no se admite la funcionalidad de Access 2010 y, si se intenta usar una base de datos de Access 2010, se producirán errores y posible pérdida de datos.  <br/> |
 |Microsoft PowerApps  <br/> |Próximamente.  <br/> |
 |Information Rights Management (IRM)  <br/> |Pronto estará disponible la capacidad de establecer capacidades de IRM en SharePoint para su organización.  <br/> |
 |Capacidad para traducir texto o páginas  <br/> |Disponible, pero desactivada de forma predeterminada. Los administradores de inquilinos pueden activar esta capacidad, pero el servicio de nube de traducción puede estar ubicado fuera de su país. Si no desea que los usuarios envíen contenido a un servicio de nube de traducción, puede mantener estas características deshabilitadas.  <br/> |
@@ -99,7 +99,7 @@ Si desea obtener información sobre cómo empezar [a trabajar con](../admin-over
 |Compartir el calendario  <br/> |El uso compartido de calendarios entre buzones de correo locales y de Exchange Online está disponible.  <br/> |
 |Compartir contactos  <br/> |Próximamente.  <br/> |
 |Seguimiento de mensajes  <br/> |Próximamente.  <br/> |
-|Apps  <br/> |Próximamente.  <br/> |
+|Aplicaciones  <br/> |Próximamente.  <br/> |
 |Característica de lugares  <br/> |Esta característica muestra mapas de direcciones en el correo electrónico; debido a que puede permitir datos fuera de su país, no está disponible.  <br/> |
 |Cuentas conectadas  <br/> |La conexión con otras cuentas como hotmail (Outlook.com) estará disponible próximamente.  <br/> |
    
@@ -153,8 +153,8 @@ Use la tabla siguiente para obtener más información sobre la compatibilidad de
 |**Versión de Exchange local**|**MRM (archivo dividido)**|**Acceso de OWA (archivo dividido)**|**Exhibición de documentos electrónicos locales**|**Auditoría de buzones**|**Conservación local/archivado**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Todos los 2013 CU5  <br/> | Compatible <br/>  | No se admite <br/>  | Compatible <br/>  | Compatible  <br/> | Compatible <br/> |
-| Todos los 2010 SP3 <br/>  | No admitido <br/>  | No se admite <br/>  | <sup>1</sup> compatible <br/> | Compatible  <br/> | Compatible <br/>  |
-| Al menos un servidor anterior a 2013 CU5  <br/> | <sup>2</sup> admitidos <br/> | No admitido  <br/> | No se admite <br/> | Compatible  <br/> | Compatible <br/> |
+| Todos los 2010 SP3 <br/>  | No admitido <br/>  | No admitido <br/>  | <sup>1</sup> compatible <br/> | Compatible  <br/> | Compatible <br/>  |
+| Al menos un servidor anterior a 2013 CU5  <br/> | <sup>2</sup> admitidos <br/> | No admitido  <br/> | No admitido <br/> | Compatible  <br/> | Compatible <br/> |
 |||
 
 <sup>1</sup> las búsquedas independientes son necesarias para los buzones de correo locales y de Exchange Online.  <br/> <sup>2</sup> las directivas de traslado a archivo de MRM se pueden usar para buzones de correo ubicados en un servidor Exchange 2013 CU5 o superior. 

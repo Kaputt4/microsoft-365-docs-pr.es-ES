@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información acerca de los dominios buscando respuestas a las preguntas más frecuentes.
-ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845849"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644589"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
@@ -200,7 +200,7 @@ Cuando se agregan varios dominios a Microsoft 365, puede hospedar cualquiera de 
 
 Para obtener el procedimiento para transferir un dominio, consulte [transferir un dominio de Microsoft a otro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloto de Microsoft 365 desde mi dominio personalizado
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
 Para obtener el procedimiento piloto de funcionalidad de correo electrónico Microsoft 365 desde un dominio personalizado a un buzón de Microsoft 365, consulte [piloto microsoft 365 From My Custom Domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 

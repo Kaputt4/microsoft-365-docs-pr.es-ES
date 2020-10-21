@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: Obtenga información sobre cómo probar una suscripción de Office 365 o comprarla directamente, agregar suscripciones u obtener complementos para una cuenta existente de Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b20233190b117b4b2562bc2e47774541e6e2d3f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399091"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644836"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Comprar o probar las suscripciones para Office 365 operado por 21Vianet
 

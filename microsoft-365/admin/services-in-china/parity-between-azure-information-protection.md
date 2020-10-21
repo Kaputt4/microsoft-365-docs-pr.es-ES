@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Obtenga más información sobre Azure Information Protection para Office 365 operado por 21Vianet y cómo configurarlo para clientes en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: ca30811e77f686b92b8cdd13d624182eb0d3039e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445584"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644668"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Paridad entre Azure Information Protection para Office 365 ofrecido por 21Vianet y ofertas comerciales
 
@@ -55,12 +55,12 @@ Para que el cifrado funcione correctamente, RMS debe estar habilitado para el in
 
 - Compruebe si el RMS está habilitado:
   1. Inicie PowerShell como administrador.
-  2. Si el módulo AIPService no está instalado, ejecute  `Install-Module AipService` .
+  2. Si el módulo AIPService no está instalado, ejecute `Install-Module AipService` .
   3. Importe el módulo mediante `Import-Module AipService` .
-  4. Conéctese al servicio con  `Connect-AipService -environmentname azurechinacloud` .
-  5. Ejecute  `(Get-AipServiceConfiguration).FunctionalState`   y compruebe si el estado es  `Enabled` .
+  4. Conéctese al servicio con `Connect-AipService -environmentname azurechinacloud` .
+  5. Ejecute `(Get-AipServiceConfiguration).FunctionalState` y compruebe si el estado es `Enabled` .
 
-- Si el estado funcional es  `Disabled` , ejecute  `Enable-AipService` .
+- Si el estado funcional es `Disabled` , ejecute `Enable-AipService` .
 
 ### <a name="dns-configuration-for-encryption-windows"></a>Configuración de DNS para el cifrado (Windows)
 
@@ -70,27 +70,27 @@ Además, se supone que los usuarios inician sesión con un nombre de usuario bas
 
 - Obtener el identificador de RMS:
   1. Inicie PowerShell como administrador.
-  2. Si el módulo AIPService no está instalado, ejecute  `Install-Module AipService` .
-  3. Conéctese al servicio con  `Connect-AipService -environmentname azurechinacloud` .
-  4. Ejecutar  `(Get-AipServiceConfiguration).RightsManagementServiceId`   para obtener el identificador de RMS.
+  2. Si el módulo AIPService no está instalado, ejecute `Install-Module AipService` .
+  3. Conéctese al servicio con `Connect-AipService -environmentname azurechinacloud` .
+  4. Ejecutar `(Get-AipServiceConfiguration).RightsManagementServiceId` para obtener el identificador de RMS.
 
 - Inicie sesión en el proveedor de DNS, navegue hasta la configuración DNS del dominio y, a continuación, agregue un nuevo registro SRV.
-  - Servicio = `_rmsredir`
-  - Protocolo = `_http`
-  - Name = `_tcp`
-  - Target =  `[GUID].rms.aadrm.cn`   (donde GUID es el identificador RMS)
+  - Servicio = `_rmsredir`
+  - Protocolo = `_http`
+  - Name = `_tcp`
+  - Target = `[GUID].rms.aadrm.cn` (donde GUID es el identificador RMS)
   - Prioridad, peso, segundos, TTL = valores predeterminados
 
-- Asocie el dominio personalizado con el inquilino en [Azure portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Esto agregará una entrada en DNS, que puede tardar varios minutos en realizar comprobaciones después de agregar el valor a la configuración de DNS.
+- Asocie el dominio personalizado con el inquilino en [Azure portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Esto agregará una entrada en DNS, que puede tardar varios minutos en realizar comprobaciones después de agregar el valor a la configuración de DNS.
 
 - Inicie sesión en el centro de administración de Microsoft 365 con las credenciales de administrador global correspondientes y agregue el dominio (por ejemplo, `contoso.cn` ) para la creación de usuarios. En el proceso de comprobación, es posible que se necesiten cambios de DNS adicionales. Una vez realizada la comprobación, se pueden crear usuarios.
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>Configuración de DNS para cifrado (Mac, iOS, Android)
 
 - Inicie sesión en el proveedor de DNS, navegue hasta la configuración DNS del dominio y, a continuación, agregue un nuevo registro SRV.
-  - Servicio = `_rmsdisco`
-  - Protocolo = `_http`
-  - Name = `_tcp`
-  - Target = `api.aadrm.cn`
-  - Port = `80`
+  - Servicio = `_rmsdisco`
+  - Protocolo = `_http`
+  - Name = `_tcp`
+  - Target = `api.aadrm.cn`
+  - Port = `80`
   - Prioridad, peso, segundos, TTL = valores predeterminados
