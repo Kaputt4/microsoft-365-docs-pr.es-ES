@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP) también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600546"
+ms.locfileid: "48626172"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -70,6 +70,7 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
    - **Motivo de la cuarentena**<sup>\*</sup>
    - **¿Liberado?**<sup>\*</sup>
    - **Tipo de directiva**<sup>\*</sup>
+   - **Expires**
    - **Destinatario**
    - **Id. de mensaje**
    - **Nombre de la directiva**
@@ -90,17 +91,17 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Motivo de la cuarentena**:
      - **Directiva**: el mensaje coincide con las condiciones de una regla de flujo de correo (también denominada regla de transporte).
-     - **Correo masivo**
+     - **Masivo**
      - **Phish**: el filtro de correo no deseado el veredicto fue **phishing email** o anti-phishing Protection en cuarentena del mensaje ([configuración de falsificación](set-up-anti-phishing-policies.md#spoof-settings) o [protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)).
      - **Malware**
      - **Correo no deseado**
      - **Phish de confianza alta**
-     
-   - **Tipo de directiva**: filtrar mensajes por tipo de directiva:
+
+   - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
      - **Directiva antimalware**
      - **Directiva de datos adjuntos seguros**
-     - **Directiva contra phish**
-     - **Directiva de filtro de contenido hospedado**
+     - **Política Antiphishing**
+     - **Directiva de filtro de contenido hospedado** (Directiva contra correo no deseado)
      - **Regla de transporte**
 
    - **Destinatario de correo electrónico**: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
@@ -115,11 +116,13 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
 
-   - **Nombre**de la Directiva: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
+   - **Nombre de directiva**: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    - **Dirección de correo electrónico del destinatario**: Una única dirección de correo electrónico de destinatario.
 
    - **Asunto**: Use el asunto completo del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
+  
+   - **Nombre**de la Directiva: nombre de la Directiva que era responsable de poner en cuarentena el mensaje.
 
    Cuando haya introducido los criterios de búsqueda, haga clic en ![Botón actualizar](../../media/scc-quarantine-refresh.png) **Actualizar** para filtrar los resultados.
 
@@ -147,6 +150,8 @@ Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los de
 
 - **Motivo de cuarentena**: muestra si un mensaje se ha identificado **como correo no deseado**, en **masa**, **phish**, coincide con una regla de flujo de correo (**regla de transporte**) o se identificó como **malware**que lo contiene.
 
+- **Número de destinatarios**
+
 - **Destinatarios**: Si el mensaje contiene varios destinatarios, deberá hacer clic en **Vista previa del mensaje** o **Ver encabezado del mensaje** para ver la lista completa de destinatarios.
 
 - **Expira**: La fecha/hora en que el mensaje se eliminará automática y permanentemente de la cuarentena.
@@ -173,7 +178,6 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
   Notas sobre la liberación de mensajes:
 
   - No puede publicar un mensaje en el mismo destinatario más de una vez.
-
   - Solo los destinatarios que no recibieron el mensaje aparecerán en la lista de posibles destinatarios.
 
 - **Ver encabezado del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar los campos y valores del encabezado en profundidad y luego elija **Analizador de encabezados de mensaje de Microsoft** para desplazarse hasta el Analizador de conectividad remota (haga clic con el botón derecho y elija **Abrir en una nueva pestaña** si no desea que Microsoft 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione **Analizar encabezados**:
@@ -219,13 +223,13 @@ Cuando haya terminado, haga clic en **Cerrar**.
 > [!NOTE]
 > Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para los suscriptores de ATP plan 1 y plan 2.
 
-En las organizaciones con ATP, los administradores pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
+En las organizaciones con ATP, los administradores pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams. Para habilitar la protección de estos archivos, consulte [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Ver archivos en cuarentena
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Revisar** \> **Cuarentena**.
 
-2. Cambiar **vista en cuarentena** en los **archivos**de valores predeterminados. Puede ordenar por un campo haciendo clic en un encabezado de columna disponible.
+2. Cambiar **vista en cuarentena** en los **archivos**de valor. Puede ordenar por un campo haciendo clic en un encabezado de columna disponible.
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Las columnas predeterminadas se marcan con un asterisco ( <sup>\*</sup> ):
 
@@ -248,6 +252,7 @@ En las organizaciones con ATP, los administradores pueden administrar los archiv
      - Un intervalo de fecha y hora personalizado.
    - **Hora de recepción**
    - **Motivo de cuarentena**: el único valor disponible es **malware**.
+   - **Tipo de directiva**
 
 Una vez que haya encontrado un archivo en cuarentena específico, seleccione el archivo para ver los detalles del mismo y para realizar acciones en él (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
 
@@ -293,8 +298,6 @@ Al seleccionar varios archivos en cuarentena en la lista (hasta 100), aparece el
 
 - **Liberar archivos**
 - **Eliminar archivos**: después de hacer clic en **sí** en la advertencia que aparece, los archivos se eliminan inmediatamente.
-
-1. Con una cuenta profesional o educativa con privilegios de administrador global (o roles de seguridad & cumplimiento del centro de cumplimiento) en su organización, inicie sesión y [vaya al centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP para ver y administrar los mensajes y archivos en cuarentena
 

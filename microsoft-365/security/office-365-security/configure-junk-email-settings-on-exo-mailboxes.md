@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203352"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626160"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -36,7 +36,7 @@ Pero también hay opciones de Configuración antispam específicas que los admin
 
   - **Mover mensajes a la carpeta de correo no deseado en función de las directivas contra correo no**deseado: cuando una directiva contra correo electrónico no deseado se configura con la acción **mover mensaje a la carpeta de correo no deseado** para un veredicto de filtrado de correo no deseado, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo electrónico no deseado después de que el mensaje se entregue al buzón. Para obtener más información sobre el filtrado de correo no deseado en directivas contra correo electrónico no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md). De forma similar, si la depuración automática de cero horas (ZAP) determina que un mensaje entregado es correo no deseado o phish, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo no deseado para **mover el mensaje a la carpeta correo no deseado** acciones de veredicto filtrado de correo no deseado. Para obtener más información acerca de ZAP, consulte [Zero-Hour auto Purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
-  - **Configuración del correo no deseado que los usuarios se configuran para sí mismos en Outlook o Outlook en la web**: la _colección de listas seguras_ es la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados en cada buzón. Las entradas de estas listas determinan si la regla de correo electrónico no deseado mueve el mensaje a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Los usuarios pueden configurar la colección de listas seguras para su propio buzón de correo en Outlook o en Outlook en la web (anteriormente conocido como Outlook Web App). Los administradores pueden configurar la colección de listas seguras en el buzón de cualquier usuario.
+  - **Configuración de correo no deseado que los usuarios se configuran para sí mismos en Outlook o Outlook en la web**: la _colección de listas seguras_ es la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados en cada buzón. Las entradas de estas listas determinan si la regla de correo electrónico no deseado mueve el mensaje a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Los usuarios pueden configurar la colección de listas seguras para su propio buzón de correo en Outlook o en Outlook en la web (anteriormente conocido como Outlook Web App). Los administradores pueden configurar la colección de listas seguras en el buzón de cualquier usuario.
 
 Cuando la regla de correo no deseado está habilitada en el buzón, EOP puede mover los mensajes a la carpeta de correo no deseado en función de la acción de veredicto **mover mensaje a la carpeta** de correo no deseado o la lista de remitentes bloqueados en el buzón y evitar que los mensajes se entreguen a la carpeta de correo no deseado (según la lista de remitentes seguros del buzón)
 
@@ -47,7 +47,7 @@ Los administradores pueden usar Exchange Online PowerShell para deshabilitar, ha
 > [!NOTE]
 > Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes seguros omitirán el filtrado de conexiones como parte de EOP (el SCL es-1). Para evitar que los usuarios agreguen entradas a la lista de remitentes seguros en Outlook, use la Directiva de grupo tal y como se indica en la sección acerca de la  [configuración del correo electrónico no deseado en Outlook](#about-junk-email-settings-in-outlook) más adelante en este tema. Las comprobaciones de filtrado de directivas, filtrado de contenido y protección contra amenazas avanzada (ATP) se aplicarán a los mensajes.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
