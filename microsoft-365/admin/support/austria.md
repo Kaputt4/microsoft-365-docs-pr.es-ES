@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,33 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec95cc4df3983d78034bfcf2ef45f80a23ae8a5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 84b46e98741134e2edb6f9158cbc7f4be9b2f0db
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398635"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644128"
 ---
-# <a name="contact-support-for-austria"></a><span data-ttu-id="6143b-103">Póngase en contacto con el soporte para Austria</span><span class="sxs-lookup"><span data-stu-id="6143b-103">Contact support for Austria</span></span>
+# <a name="contact-support-for-austria"></a><span data-ttu-id="a83c4-103">Póngase en contacto con el soporte para Austria</span><span class="sxs-lookup"><span data-stu-id="a83c4-103">Contact support for Austria</span></span>
 
-<span data-ttu-id="6143b-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6143b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="a83c4-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="a83c4-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6143b-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="6143b-105">Phone number</span></span>
-<span data-ttu-id="6143b-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="6143b-106">0800 080 650</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a83c4-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="a83c4-105">Phone number</span></span>
+<span data-ttu-id="a83c4-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="a83c4-106">0800 080 650</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6143b-107">Horas</span><span class="sxs-lookup"><span data-stu-id="6143b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6143b-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="6143b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a83c4-107">Horas</span><span class="sxs-lookup"><span data-stu-id="a83c4-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a83c4-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="a83c4-108">Billing Support:</span></span>
 
-<span data-ttu-id="6143b-109">Alemán: lunes a viernes, 9 A.M.-5 P.M.</span><span class="sxs-lookup"><span data-stu-id="6143b-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="a83c4-109">Alemán: Mon-Fri 9 A.M.-5 P.M.</span><span class="sxs-lookup"><span data-stu-id="a83c4-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="6143b-110">Inglés: lunes a viernes 9 A.M.-5 P.M.</span><span class="sxs-lookup"><span data-stu-id="6143b-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="a83c4-110">Inglés: Mon-Fri 9 A.M.-5 P.M.</span><span class="sxs-lookup"><span data-stu-id="a83c4-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6143b-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="6143b-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a83c4-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="a83c4-111">Technical Support:</span></span>
 
-<span data-ttu-id="6143b-112">Alemán: lunes a viernes, de 8 A.M. a 9 P.M.</span><span class="sxs-lookup"><span data-stu-id="6143b-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="a83c4-112">Alemán: Mon-Fri 8 A.M.-9 P.M.</span><span class="sxs-lookup"><span data-stu-id="a83c4-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="6143b-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="6143b-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a83c4-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="a83c4-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6143b-114">Número de teléfono alternativo: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="6143b-114">Alternative Phone Number: 01 206 09 15 78</span></span>
+<span data-ttu-id="a83c4-114">Número de teléfono alternativo: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="a83c4-114">Alternative Phone Number: 01 206 09 15 78</span></span>
 
-<span data-ttu-id="6143b-115">Aplicar cargos de llamadas locales</span><span class="sxs-lookup"><span data-stu-id="6143b-115">Local call charges apply</span></span>
+<span data-ttu-id="a83c4-115">Aplicar cargos de llamadas locales</span><span class="sxs-lookup"><span data-stu-id="a83c4-115">Local call charges apply</span></span>
