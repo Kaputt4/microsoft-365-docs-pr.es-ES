@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,15 +13,15 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b7af4ce3df336bf6002a7a7e2592e8b2c5b38924
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d6febd3db944bb59b2c024bf55f887dcbb550803
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404135"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647200"
 ---
-# <a name="payment-information-for-india"></a><span data-ttu-id="a21b0-103">Información de pago para India</span><span class="sxs-lookup"><span data-stu-id="a21b0-103">Payment information for India</span></span>
+# <a name="payment-information-for-india"></a><span data-ttu-id="3c19d-103">Información de pago para India</span><span class="sxs-lookup"><span data-stu-id="3c19d-103">Payment information for India</span></span>
 
-<span data-ttu-id="a21b0-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a21b0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="3c19d-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="3c19d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="a21b0-105">Siga las instrucciones de pago en su factura y haga referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="a21b0-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
+<span data-ttu-id="3c19d-105">Siga las instrucciones de pago en su factura y haga referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="3c19d-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
