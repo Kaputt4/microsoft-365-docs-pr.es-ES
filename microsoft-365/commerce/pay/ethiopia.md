@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,23 +13,23 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7697662fafc6ab57037283854a11eccc85212a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4a1c60972ded80cfe31b15131f6061a0fe538f3c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404483"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647704"
 ---
-# <a name="payment-information-for-ethiopia"></a><span data-ttu-id="7f980-103">Información de pago para Etiopía</span><span class="sxs-lookup"><span data-stu-id="7f980-103">Payment information for Ethiopia</span></span>
+# <a name="payment-information-for-ethiopia"></a><span data-ttu-id="cbcf4-103">Información de pago para Etiopía</span><span class="sxs-lookup"><span data-stu-id="cbcf4-103">Payment information for Ethiopia</span></span>
 
-<span data-ttu-id="7f980-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="7f980-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="cbcf4-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="cbcf4-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="7f980-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="7f980-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="cbcf4-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="cbcf4-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="7f980-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="7f980-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="cbcf4-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="cbcf4-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="7f980-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="7f980-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="7f980-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="7f980-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="7f980-109">**Iban:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="7f980-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="7f980-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="7f980-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="7f980-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="7f980-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="cbcf4-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="cbcf4-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="cbcf4-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="cbcf4-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="cbcf4-109">**Iban:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="cbcf4-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="cbcf4-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="cbcf4-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="cbcf4-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="cbcf4-111">**Account Name:** MICROSOFT</span></span>  
