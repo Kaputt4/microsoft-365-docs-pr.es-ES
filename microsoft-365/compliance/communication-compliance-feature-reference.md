@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318181"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626193"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -125,13 +125,9 @@ Debe presentar una solicitud al Soporte técnico de Microsoft para que su organi
 
     - **Para las comunicaciones de chat de Skype empresarial online**: asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
 
-- **Orígenes de terceros**: puede examinar las comunicaciones de orígenes de terceros para los datos importados en buzones de la organización de Microsoft 365. Los conectores admiten los siguientes recursos de terceros:
+- **Orígenes de terceros**: puede examinar las comunicaciones de los datos importados a los buzones de la organización de Microsoft 365 desde orígenes de terceros como, por ejemplo, [Bloomberg](archive-instant-bloomberg-data.md), el [margen de demora](archive-slack-data.md), el [zoom](archive-zoommeetings-data.md), SMS y muchos otros. Para obtener una lista completa de los conectores compatibles con el cumplimiento de comunicaciones, vea [archivar datos de terceros](archiving-third-party-data.md).
 
-    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Mensaje de Bloomberg](archive-bloomberg-message-data.md)
-    - [Chat ICE](archive-icechat-data.md)
-
-Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **orígenes de terceros** del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
+    Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **orígenes de terceros** del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde la supervisión en Office 365
 
@@ -256,7 +252,7 @@ Las plantillas de notificaciones son plantillas de correo electrónico personali
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo Notify durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o más usuarios o grupos que envían el mensaje al usuario con una coincidencia de Directiva, seleccionada en Active Directory de la suscripción. |
 | **Direcciones CC y CCO** | No | Que los usuarios o grupos opcionales reciban una notificación de la coincidencia de la Directiva, seleccionada en Active Directory de la suscripción. |
-| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite texto o valores HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -283,17 +279,17 @@ Si desea crear más de un mensaje de correo electrónico basado en texto sencill
 
 Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los mensajes de alerta para obtener una investigación más rápida y acciones de corrección. El filtrado está disponible en las pestañas **pendientes** y **resueltas** para cada Directiva. Para guardar un filtro o un conjunto de filtros como una consulta de filtro guardada, se deben configurar uno o más valores como selecciones de filtro. En la tabla siguiente se describen los detalles del filtro:
 
-|**Filter**|**Detalles**|
+|**Filtro**|**Detalles**|
 |:-----|:-----|
-| **Fecha** | La fecha en la que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience por el día cuyos resultados desea obtener y terminen por el día siguiente. Por ejemplo, si desea filtrar los resultados para 9/20/2020, debería elegir un intervalo de fechas de filtrado de 9/20/2020-9/21/2020.|
+| **Date** | La fecha en la que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience por el día cuyos resultados desea obtener y terminen por el día siguiente. Por ejemplo, si desea filtrar los resultados para 9/20/2020, debería elegir un intervalo de fechas de filtrado de 9/20/2020-9/21/2020.|
 | **Clase File** | La clase del mensaje en función del tipo de mensaje, ya sea *mensaje* o *datos adjuntos*. |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloomberg, etc. Para obtener más información acerca de los tipos de elementos y las clases de mensajes comunes, vea [tipos de elementos y clases de mensajes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Dominios de destinatarios** | El dominio al que se envió el mensaje. Este dominio suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
-| **Recipient** | El usuario al que se envió el mensaje. |
+| **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
-| **Size** | El tamaño del mensaje en KB. |
+| **Tamaño** | El tamaño del mensaje en KB. |
 | **Asunto/título** | El asunto del mensaje o el título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, ya sea *dudosa*, *compatible*o *no compatible*. |
 | **Remitir a** | El nombre de usuario de la persona incluida como parte de una acción de elevación de mensajes. |

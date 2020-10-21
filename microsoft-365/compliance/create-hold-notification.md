@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Use la herramienta de comunicaciones en un caso avanzado de eDiscovery para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 730b60c4d57f8fecb0e66f460942e9e890732c2c
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035792"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626183"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de suspensión legal
 
@@ -46,7 +46,11 @@ El primer paso es especificar los detalles adecuados para los avisos de suspensi
 
     - **Name**: nombre de la comunicación.
 
-    - **Responsable**de la emisión: la lista desplegable muestra una lista de miembros de casos. Cada aviso que se envíe a los custodios se enviará en nombre del responsable de la expedición especificado.
+    - **Responsable**de la emisión: la lista desplegable muestra una lista de miembros de casos. Para obtener más información sobre cómo agregar nuevos miembros a un caso, vea [crear un caso de exhibición avanzada](get-started-with-advanced-ediscovery.md#step-4-create-an-advanced-ediscovery-case)de documentos electrónicos. Cada aviso que se envíe a los custodios se enviará en nombre del responsable de la expedición especificado.
+
+> [!NOTE]
+> El responsable de la emisión debe tener un **buzón activo** para que aparezca en la lista desplegable de la entidad emisora
+
 
 4. Haga clic en **Siguiente**.
 
@@ -87,9 +91,9 @@ Para crear una notificación de emisión:
 
 4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de emisión. 
 
-5. Haga clic en **Guardar**.
+5. Haga clic en **Guardar**.
 
-### <a name="re-issuance-notification"></a>Notificación de nueva emisión
+### <a name="re-issuance-notification"></a>Notificación de Re-Issuance
 
 A medida que avanza el caso, es posible que se necesiten custodios para conservar más o menos datos de los que se indicó anteriormente. Después de actualizar el contenido del portal, se envía la notificación de reemisión y se avisa a los custodios acerca de los cambios en sus obligaciones de conservación.
 
@@ -103,7 +107,7 @@ Para crear una notificación de nueva emisión:
 
 4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de reemisión.
 
-5. Haga clic en **Guardar**.
+5. Haga clic en **Guardar**.
 
 > [!NOTE]
 > Si se modifica el contenido del portal (en la página **definir contenido del portal** del Asistente para **Editar comunicación** ), la notificación de reemisión se enviará automáticamente a todos los custodios asignados al aviso. Una vez enviada la notificación, se pedirá a los custodios que vuelvan a confirmar su aviso de suspensión. Si ha configurado un flujo de trabajo de aviso o de escalado, también se reiniciará. Para obtener más información sobre qué otros eventos de administración de casos desencadenan comunicaciones, consulte [eventos que desencadenan notificaciones](#events-that-trigger-notifications).
@@ -130,7 +134,7 @@ De manera opcional, puede simplificar el flujo de trabajo para seguir con los ad
 
 ![Página aviso/remisión](../media/ReminderEscalations.PNG)
 
-### <a name="reminders"></a>Avisos
+### <a name="reminders"></a>Reminders
 
 Una vez que haya enviado una notificación de retención, puede realizar un seguimiento de los administradores que no responden mediante la definición de un flujo de trabajo de aviso.
 
@@ -200,6 +204,6 @@ En la tabla siguiente se describen los eventos del proceso de administración de
 |Avisos de emisión|La creación inicial de la notificación. También puede volver a enviar manualmente una notificación de retención. |
 |Avisos de nueva emisión|Actualizar el contenido del portal en la página **definir contenido del portal** en el Asistente para **Editar comunicación** .|
 |Avisos de versión|El custodio se publica desde el caso.|
-|Avisos|El intervalo y el número de avisos configurados para el aviso.|
+|Reminders|El intervalo y el número de avisos configurados para el aviso.|
 |Escalaciones|El intervalo y el número de avisos configurados para la escalación.|
 |||
