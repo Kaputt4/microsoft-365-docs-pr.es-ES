@@ -13,16 +13,18 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Obtenga información sobre cómo usar el parámetro region para configurar eDiscovery para su uso en ubicaciones de satélite en Microsoft 365 multigeográfico.
-ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547955"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636810"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuración de eDiscovery de Microsoft 365 Multi-Geo
 
-De forma predeterminada, un administrador o un supervisor de eDiscovery de un inquilino multigeográfico solo podrán ejecutar eDiscovery en la ubicación central de ese espacio empresarial. Para que se pueda ejecutar eDiscovery en ubicaciones por satélite, hay un nuevo parámetro de filtro de seguridad de cumplimiento llamado "Región" disponible mediante PowerShell.
+Las [capacidades avanzadas de eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) permiten que un administrador de eDiscovery multigeográfico busque en todos los GEOS sin necesidad de usar un filtro de seguridad "región". Los datos se exportan a la instancia de Azure de la ubicación central del espacio empresarial multigeográfico. 
+
+Sin capacidades avanzadas de eDiscovery, un administrador de eDiscovery o un administrador de un inquilino multigeográfico solo podrán realizar eDiscovery en la ubicación central de ese inquilino. Para admitir la capacidad de realizar eDiscovery para ubicaciones de satélite, hay disponible un nuevo parámetro de filtro de seguridad de cumplimiento denominado "Region" a través de PowerShell. Este parámetro puede usarse para los inquilinos cuya ubicación central se encuentra en Norteamérica, Europa o Asia Pacífico. La exhibición avanzada de documentos electrónicos se recomienda para los inquilinos cuya ubicación central no se encuentra en Norteamérica, Europa o Asia Pacífico y que necesitan realizar la exhibición de documentos electrónicos en ubicaciones geográficas de satélite. 
 
 El administrador global de Microsoft 365 debe asignar permisos de supervisor de eDiscovery para que otros usuarios puedan ejecutar eDiscovery y asignar un parámetro "Región" en el filtro de seguridad de cumplimiento correspondiente para especificar la región donde se ejecutará eDiscovery como ubicación por satélite; en caso contrario, no se ejecutará eDiscovery en la ubicación por satélite.
 

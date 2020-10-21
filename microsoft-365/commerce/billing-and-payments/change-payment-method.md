@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Obtenga información sobre cómo cambiar el método de pago para su suscripción de empresa.
-ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 0c739597253db8b54b12cacfbaf55fce9cb36dd2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432420"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638608"
 ---
 # <a name="change-your-payment-method"></a>Cambiar el modo de pago
 
@@ -147,7 +147,7 @@ Si la cantidad de su pedido es demasiado elevada, puede que sea necesario realiz
 1. Vaya a <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> y compre la misma suscripción que la que tiene actualmente. En la desprotección, elija la opción de pago mediante factura.
 
     > [!IMPORTANT]
-    > No puede usar la página **sus productos** en el centro de administración para comprar la suscripción. Debe usar <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
+    > No puede usar la página **sus productos** en el centro de administración para comprar la suscripción. Debe usar  <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
 2. Una vez completada la compra, cancele la suscripción original. Los usuarios se mueven automáticamente a la nueva suscripción.
 

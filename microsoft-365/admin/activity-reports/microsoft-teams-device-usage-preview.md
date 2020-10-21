@@ -1,5 +1,5 @@
 ---
-title: Uso de dispositivo de Microsoft Teams
+title: 'Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones de Microsoft Teams usadas en su organización al obtener el informe de uso de aplicaciones de Microsoft Teams de los informes de Microsoft 365.
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949095"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636978"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams
 
@@ -51,7 +51,7 @@ También puede exportar los datos del informe a un archivo. csv de Excel; para e
 |Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
-|Nombre de usuario  <br/> |El nombre para mostrar del usuario. Puede hacer clic en el nombre para mostrar para ir a la página de configuración del usuario en el centro de administración de Microsoft Teams.  <br/> |
+|Nombre de usuario  <br/> |El nombre para mostrar del usuario.  <br/> |
 |Windows  <br/> |Se selecciona si el usuario estuvo activo en el cliente de escritorio de Microsoft Teams en un equipo basado en Windows.  <br/> |
 |Mac  <br/> |Se selecciona si el usuario estuvo activo en el cliente de escritorio de Microsoft Teams en un equipo con macOS.  <br/> |
 |iOS  <br/> |Se selecciona si el usuario estuvo activo en el cliente móvil de Microsoft Teams para iOS.  <br/> |
@@ -61,4 +61,5 @@ También puede exportar los datos del informe a un archivo. csv de Excel; para e
 |Web  <br/> |Se selecciona si el usuario estuvo activo en el cliente web de Microsoft Teams en dispositivos.|
 |Fecha de la última actividad (UTC)  <br/> |La última fecha (UTC) que el usuario participó en una actividad de Microsoft Teams.  <br/> |
 |Tiene licencia|Seleccionado si el usuario tiene licencia para usar Teams.|
+|Actividad total de Teams|Número total de actividades de Microsoft Teams durante el período de tiempo seleccionado. |
 |||

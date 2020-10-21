@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Obtenga información sobre cómo actualizar sus direcciones de facturación para Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
-ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: d6083a170adddc6bd389e5f33a1050a7e048ad31
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324357"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638488"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -130,7 +130,7 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la pestaña **productos** , seleccione la suscripción que desea cambiar.
+2. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
 3. En la página Detalles de la suscripción, en la sección **dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio**.
 4. En el panel **Editar dirección de uso del servicio** , actualice su dirección y, después, seleccione **Guardar**.
 

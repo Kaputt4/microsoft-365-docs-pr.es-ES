@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3c99f3f22fb0eb13c4f9cab06a4037fe057b6fb4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402611"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638212"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
@@ -40,7 +40,7 @@ La parte superior de la página de detalles de **las cuentas de facturación** e
 
 En la siguiente tabla se enumeran los términos importantes que aparecen en la página de detalles de **cuentas de facturación** .
 
-| Nombre del campo | Description |
+| Nombre del campo | Descripción |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dirección de ventas | La entidad jurídica responsable del pago e identificada en la factura. La dirección que se proporciona aquí se usa para determinar la tasa de impuestos a menos que opte por proporcionar una dirección de envío alternativa durante la compra. Para obtener más información, consulte [información fiscal](billing-and-payments/tax-information.md). |
 | Sector | Un campo de solo lectura que identifica el segmento empresarial de la organización (comercial, educativa, gubernamental o sin ánimo de lucro). |
@@ -50,7 +50,7 @@ En la siguiente tabla se enumeran los términos importantes que aparecen en la p
 | Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, las condiciones de pago y un número de pedido de compra. Para distribuir la facturación en su organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información acerca de los perfiles de facturación y de cómo puede usarlos para crear opciones de facturación más flexibles para su organización, [administre los perfiles de facturación](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Si desea cambiar el nombre o la dirección del **usuario al** que se ha vendido, pero no ve ningún vínculo **Editar** , debe [ponerse en contacto con el soporte técnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) para cambiarlo. Las solicitudes de un cambio de nombre **vendido** requerirán una comprobación de crédito. Cuando se ponga en contacto con el soporte técnico, tenga preparado uno de los siguientes documentos:
+> Si desea cambiar el nombre o la dirección del **usuario al** que se ha vendido, pero no ve ningún vínculo **Editar** , debe  [ponerse en contacto con el soporte técnico](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) para cambiarlo. Las solicitudes de un cambio de nombre **vendido** requerirán una comprobación de crédito. Cuando se ponga en contacto con el soporte técnico, tenga preparado uno de los siguientes documentos:
 >
 > - Documento de anuncio externo que indica cualquier cambio en el nombre de la compañía o la estructura corporativa
 > - Documento o carta de registro emitido por el gobierno

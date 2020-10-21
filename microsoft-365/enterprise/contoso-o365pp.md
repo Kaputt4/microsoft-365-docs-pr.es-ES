@@ -15,76 +15,76 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
-ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695163"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637168"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
-Contoso actualizó sus equipos a Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas para mejorar la colaboración y la seguridad, y para disfrutar de un escritorio más moderno. Después de evaluar su infraestructura y las necesidades empresariales, Contoso identificó estos requisitos principales para la implementación:
+Contoso actualizó sus PCs a Windows 10 Enterprise y Microsoft 365 apps for Enterprise para permitir una colaboración más eficaz, una mejor seguridad y una experiencia de escritorio más moderna. Después de evaluar su infraestructura y necesidades empresariales, contoso identificó estos requisitos clave para la implementación:
 
-- Todos los equipos deben ejecutar Aplicaciones de Microsoft 365 para empresas
+- Todos los equipos deben ejecutar las aplicaciones de Microsoft 365 para empresas.
 - La implementación debe usar la infraestructura y las herramientas de administración existentes cuando sea posible.
-- La implementación debe admitir varios idiomas y arquitecturas existentes en los dispositivos del usuario final.
-- Los equipos se deben mantener actualizados y protegidos con los mínimos costos administrativos de TI y el menor impacto en los usuarios finales.
+- La implementación debe admitir varios idiomas y arquitecturas existentes en los dispositivos de los usuarios.
+- Los equipos deben mantenerse actualizados y protegidos con los mínimos costos administrativos de ti y un impacto mínimo en los usuarios.
 
 ## <a name="deployment-tools"></a>Herramientas de implementación
 
-Basándose en sus requisitos, Contoso optó por implementar Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas con Configuration Manager (rama actual). Configuration Manager se escala en entornos de gran tamaño y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También incluye características integradas para que sea más fácil y eficaz implementar y administrar Office, entre las que se incluyen:
+En función de sus requisitos, contoso decidió implementar Windows 10 Enterprise y Microsoft 365 apps for Enterprise a través de Configuration Manager (rama actual). Configuration Manager escala para entornos grandes y proporciona un amplio control sobre la instalación, las actualizaciones y la configuración. También tiene características integradas para que sea más fácil y eficaz implementar y administrar Office, entre los que se incluyen:
 
-- La caché del mismo nivel, que puede ayudar con la capacidad de red limitada cuando se implementa en dispositivos en ubicaciones remotas.
-- El panel de administración de clientes de Office, que facilita la implementación de Office y supervisa las actualizaciones. Asimismo, proporciona acceso a los administradores a las características de administración e implementación más recientes.
-- Implementación inteligente de paquetes de idioma, incluida la implementación automática del mismo idioma del sistema operativo.
-- Método fácil de usar y totalmente compatible para quitar las versiones existentes de Office de un cliente durante la implementación.
+- Memoria caché del mismo nivel, que puede ayudar con la capacidad de red limitada cuando se implementa en dispositivos en ubicaciones remotas.
+- El panel de administración de clientes de Office, que facilita la implementación de las actualizaciones de Office y de supervisión, y proporciona a los administradores acceso a las últimas características de implementación y administración.
+- Implementación de paquetes de idioma inteligentes, que incluye la implementación automática del mismo idioma que el sistema operativo.
+- Un método totalmente compatible y fácil de usar para quitar versiones existentes de Office desde un cliente durante la implementación.
 
-Además de Configuration Manager, Contoso usa [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), una herramienta gratuita de Microsoft para evaluar los problemas de compatibilidad con los complementos y macros de Office.
+Además de Configuration Manager, contoso usó [Readiness Toolkit for Office Add-in and VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), una herramienta gratuita de Microsoft, para evaluar los problemas de compatibilidad con sus complementos y macros de Office.
 
-## <a name="managing-the-deployment-and-updates"></a>Administración de la implementación y las actualizaciones
+## <a name="managing-deployment-and-updates"></a>Administración de la implementación y las actualizaciones
 
-Aplicaciones de Microsoft 365 para empresas tiene un nuevo modelo de versiones: Office como servicio. El modelo de servicio facilita mantenerse al día de las características nuevas, pero a menudo requiere un enfoque diferente por parte de los departamentos de TI en la forma de implementar y probar las versiones nuevas. Para minimizar los problemas de compatibilidad y asegurarse de que los equipos permanecían actualizados, Contoso implementó Windows y Office en dos fases: 
+Microsoft 365 apps for Enterprise tiene un nuevo modelo de versión: Office como servicio. El modelo de servicio facilita la tarea de mantenerse al día con las nuevas características. Pero, a menudo, requiere que los departamentos de ti cambien la forma en que implementan y prueban las versiones nuevas. Para minimizar los problemas de compatibilidad y asegurarse de que sus equipos estén actualizados, contoso implementó Windows y Office en dos fases:
 
-- En la primera fase, implementaron Aplicaciones de Microsoft 365 para empresas en un pequeño conjunto de dispositivos representativos de la organización. Este grupo piloto se usó para probar aplicaciones, complementos y hardware con Aplicaciones de Microsoft 365 para empresas.
-- Cuatro meses más tarde, después de solucionar todos los problemas críticos relacionados con las aplicaciones, los complementos y el hardware en el grupo piloto, Contoso implementó Aplicaciones de Microsoft 365 para empresas en el resto de los dispositivos de la organización (el grupo general). 
+- En primer lugar, implementaron Microsoft 365 apps for Enterprise en un pequeño conjunto de dispositivos representativos en toda la organización. Este grupo piloto se usó para probar aplicaciones, complementos y hardware con las aplicaciones de Microsoft 365 para empresas.
+- Cuatro meses más tarde, después de solucionar todos los problemas críticos relacionados con las aplicaciones, los complementos y el hardware en el grupo piloto, Contoso implementó Aplicaciones de Microsoft 365 para empresas en el resto de los dispositivos de la organización (el grupo general).
 
-En lugar de administrar las actualizaciones de Office con Configuration Manager, Contoso habilitó actualizaciones automáticas desde la nube. Las actualizaciones basadas en la nube redujeron la sobrecarga administrativa además de garantizar que los dispositivos permanecían actualizados. 
+En lugar de administrar las actualizaciones de Office mediante el administrador de configuración, contoso habilitó actualizaciones automáticas desde la nube. Las actualizaciones basadas en la nube reducen la sobrecarga administrativa, al tiempo que garantizan la actualización de los dispositivos.
 
-Contoso siguió el mismo enfoque de dos fases de implementación de Office para las actualizaciones de características: los dispositivos del grupo piloto recibieron las actualizaciones de características cuatro meses antes que el resto de los dispositivos de la organización (el grupo general). Para habilitar esta opción en Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-update-channels)recomendados: 
+Contoso siguió el mismo enfoque de dos fases para las actualizaciones de características que se usaban para la implementación de Office: los dispositivos del grupo piloto recibieron actualizaciones de características cuatro meses antes que los dispositivos del resto de la organización (el grupo amplio). Para habilitar esta opción para Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-update-channels) recomendados:
 
-- Canal semestral empresarial (versión preliminar) para actualizaciones al grupo piloto 
-- Canal semestral empresarial para las actualizaciones del grupo general 
+- Canal semestral empresarial (versión preliminar) para actualizaciones al grupo piloto
+- Semi-Annual el canal de empresa para las actualizaciones del grupo general
 
-Como el canal semestral empresarial (versión preliminar) publica una versión de Aplicaciones de Microsoft 365 para empresas cuatro meses antes que el canal empresarial semestral, Contoso tiene tiempo para validar las actualizaciones sin tener que administrarlas. 
+Como el canal semestral empresarial (versión preliminar) publica una versión de Aplicaciones de Microsoft 365 para empresas cuatro meses antes que el canal empresarial semestral, Contoso tiene tiempo para validar las actualizaciones sin tener que administrarlas.
 
 ## <a name="deployment-process"></a>Proceso de implementación
 
 Para completar la implementación de Office, Contoso implementó el siguiente proceso, que incluye los procedimientos recomendados de Microsoft:
 
-1. Antes de la implementación, usaron Readiness Toolkit para probar sus aplicaciones y los complementos de Office con el fin de evaluar la compatibilidad con Aplicaciones de Microsoft 365 para empresas.
-2. En Configuration Manager, Contoso habilitó la caché del mismo nivel en los dispositivos cliente, lo que contribuyó a compensar la capacidad de red limitada al implementar en los dispositivos cliente en ubicaciones remotas. 
-3. Definieron dos grupos de implementación como colecciones de dispositivo en Configuration Manager: un grupo piloto y un grupo general. El grupo piloto, que incluía un pequeño conjunto de dispositivos representativos en toda la organización, se usó para realizar pruebas adicionales de aplicaciones, complementos y hardware con Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas. 
-4. Crearon paquetes de implementación de Office con el panel de administración de clientes de Office y el Asistente de instalación de Office 365, que forman parte de la consola de Configuration Manager. Crearon dos paquetes de Aplicaciones de Microsoft 365 para empresas, uno para el grupo piloto en el canal semestral empresarial (versión preliminar) y otro para el grupo general en el canal semestral empresarial. 
-5. En cada paquete de Office, incluyeron los paquetes de los idiomas inglés, francés y alemán. Si un dispositivo requería un idioma que no estaba incluido en el paquete de Office, se descargaba de forma automática de la Red de entrega de contenido (CDN) de Office.
-6. Para eliminar de forma automática todas las versiones MSI existentes de Office antes de instalar Aplicaciones de Microsoft 365 para empresas, usaron las características integradas en el paquete de Office.
-7. En Configuration Manager, implementaron los paquetes de Windows y Office en puntos de distribución en la red y, después, ejecutaron las secuencias de tareas de implementación de Configuration Manager para implementar el paquete piloto de Aplicaciones de Microsoft 365 para empresas en el grupo piloto.
-8. Después de corregir los problemas de compatibilidad con el grupo piloto, Contoso ejecutó las secuencias de tareas para implementar el paquete general de Aplicaciones de Microsoft 365 para empresas en el grupo general.
+1. Antes de la implementación, contoso usó Readiness Toolkit for Office Add-in y VBA para probar sus aplicaciones y complementos de Office para evaluar su compatibilidad con las aplicaciones de Microsoft 365 para empresas.
+1. En el administrador de configuración, habilitaban la caché del mismo nivel en sus dispositivos cliente, lo que ayuda con la capacidad de red limitada al implementar en dispositivos cliente en ubicaciones remotas. 
+1. Contoso definió dos grupos de implementación como colecciones de dispositivos en Configuration Manager: un grupo piloto y un grupo amplio. El grupo piloto, que incluye un pequeño conjunto de dispositivos representativos en toda la organización, se usó para las pruebas adicionales de aplicaciones, complementos y hardware con Windows 10 Enterprise y las aplicaciones de Microsoft 365 para empresas.
+1. Han creado paquetes de implementación para Office usando el panel de administración de clientes de Office y el Asistente de Office 365 Installer, que forman parte de la consola de Configuration Manager. Han creado dos aplicaciones de Microsoft 365 para paquetes para empresas, una para el grupo piloto del canal de empresa de Semi-Annual (versión preliminar) y otra para el grupo general en el canal de empresa de Semi-Annual.
+2. Cada paquete de Office incluía los paquetes de idioma inglés, francés y alemán. Si un dispositivo requería un idioma que no se incluía en el paquete de Office, ese paquete de idioma se descargó automáticamente de la red de entrega de contenido (CDN) de Office.
+3. Para eliminar de forma automática todas las versiones MSI existentes de Office antes de instalar Aplicaciones de Microsoft 365 para empresas, usaron las características integradas en el paquete de Office.
+4. En el administrador de configuración, implementaban los paquetes de Windows y Office en puntos de distribución en su red. A continuación, ejecutaban las secuencias de tareas de implementación de Configuration Manager para implementar el paquete piloto Microsoft 365 apps for Enterprise en el grupo piloto.
+5. Después de haber abordado los problemas de compatibilidad con el grupo piloto, contoso ejecutó las secuencias de tareas para implementar el paquete de aplicaciones de Microsoft 365 para empresas en el grupo general.
 
-Como Contoso decidió actualizar de forma automática los dispositivos desde la nube, no fue necesario administrar el proceso en el Administrador de configuración. Los dispositivos se actualizaron de forma automática directamente desde la nube según el canal de actualización definido como parte de la implementación inicial. 
+Como contoso decidió actualizar automáticamente los dispositivos de la nube, no había necesidad de administrar el proceso en Configuration Manager. Sus dispositivos se actualizan automáticamente directamente desde la nube en el canal de actualización que se definió en la implementación inicial.
 
-Aquí se muestra la arquitectura de implementación de la instalación y las actualizaciones continuas de Aplicaciones de Microsoft 365 para empresas de Contoso.
+Esta es la arquitectura de implementación de aplicaciones Microsoft 365 para la instalación empresarial y actualizaciones continuas de contoso.
 
-![Infraestructura de implementación de Aplicaciones de Microsoft 365 para empresas en Contoso](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![La infraestructura de implementación de Contoso para las aplicaciones de Microsoft 365 para empresas](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información sobre](contoso-mdm.md) cómo contoso usa Microsoft Intune en Microsoft 365 para empresas para administrar los dispositivos y las aplicaciones que se ejecutan en ellos en la organización.
+[Obtenga información sobre](contoso-mdm.md) cómo contoso usa Microsoft Intune en Microsoft 365 para empresas para administrar los dispositivos y las aplicaciones que ejecutan en la organización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
+[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

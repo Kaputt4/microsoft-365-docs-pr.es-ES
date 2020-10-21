@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre las suscripciones y licencias de Microsoft 365 para la empresa.
 ms.date: 07/01/2020
-ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015964"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638200"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias de Microsoft 365 para empresas
 
-Al comprar una suscripción a Microsoft 365 para empresas, se registra para un conjunto de aplicaciones y servicios a los que paga con una base mensual o anual. Las aplicaciones y los servicios que reciba como parte de la suscripción dependen de qué producto haya adquirido, como Microsoft 365 apps for Business o Microsoft 365 Business Standard. Puede ver lo que incluye cada producto en la página [de Microsoft 365 para PYMES y pequeñas y](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) medianas empresas.
+Al comprar una suscripción a Microsoft 365 para empresas, se registra para un conjunto de aplicaciones y servicios a los que paga con una base mensual o anual. Las aplicaciones y los servicios que reciba como parte de la suscripción dependen de qué producto haya adquirido, como Microsoft 365 apps for Business o Microsoft 365 Business Standard. Puede ver lo que incluye cada producto en la página [de Microsoft 365 para PYMES y pequeñas y](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) medianas empresas.
 
 Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Una vez que compre una suscripción, cree cuentas para las personas de su organización y, a continuación, asigne una licencia a cada persona. A medida que cambien las necesidades de su organización, puede comprar más licencias para acomodar a nuevas personas o reasignar licencias a otros usuarios cuando alguien abandone la organización.
 
@@ -58,7 +58,7 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
 |Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para completar esta tarea, consulte ["configurar..." mensajes en el centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |La persona tiene acceso a las características asociadas con la licencia.  <br/> |
-|Aplicaciones de Microsoft 365 para empresas  <br/> |La persona puede descargar las aplicaciones de Office en un máximo de cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
+|Aplicaciones de Microsoft 365 para empresas  <br/> |La persona puede descargar las aplicaciones de Office en un máximo de cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Información sobre las licencias para los buzones que no son de usuario
 
@@ -79,12 +79,12 @@ Los distintos tipos de administradores pueden trabajar con las licencias de dife
 |Administrador de facturación  <br/> |No  <br/> |No  <br/> |Sí  <br/> |No  <br/> |
 |Administrador global  <br/> |Sí  <br/> |Sí  <br/> |Sí  <br/> |Sí  <br/> |
 |Administrador de licencias <br/> |Sí <br/>|Sí <br/> |No <br/> |No <br/> |
-|Administrador de soporte de servicio  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Administrador de soporte técnico del servicio  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
 |Administrador de usuarios  <br/> |Sí  <br/> |Sí  <br/> |No  <br/> |Sí  <br/> |
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Comprar o quitar licencias de su suscripción de empresa](buy-licenses.md) (artículo) \
 [Asignar licencias a usuarios](../../admin/manage/assign-licenses-to-users.md) (artículo) \
-[Cancelar la asignación de licencias de los usuarios](../../admin/manage/remove-licenses-from-users.md) (artículo) \
+[Cancelar asignación a licencias de usuarios](../../admin/manage/remove-licenses-from-users.md) (artículo)\
 [Quitar una licencia de un buzón compartido](../../admin/email/remove-license-from-shared-mailbox.md) (artículo)
