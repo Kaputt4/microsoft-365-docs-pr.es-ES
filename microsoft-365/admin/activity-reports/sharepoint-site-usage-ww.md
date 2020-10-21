@@ -1,0 +1,67 @@
+---
+title: 'Informes de Microsoft 365 en el centro de administración: uso del sitio de SharePoint'
+f1.keywords:
+- NOCSH
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+ms.custom: AdminSurgePortfolio
+ROBOTS: NOINDEX, NOFOLLOW
+search.appverid:
+- BCS160
+- MST160
+- MET150
+- MOE150
+description: Obtenga el informe de uso del sitio de SharePoint para saber cuántos archivos almacenan los usuarios en los sitios de SharePoint, cuántos se usan activamente y el almacenamiento total que se ha consumido.
+ms.openlocfilehash: bc9345a5e281f1e7343bf62a2dc6832587d0786e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649876"
+---
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a><span data-ttu-id="6b60e-103">Informes de Microsoft 365 en el centro de administración: uso del sitio de SharePoint</span><span class="sxs-lookup"><span data-stu-id="6b60e-103">Microsoft 365 Reports in the admin center - SharePoint site usage</span></span>
+
+<span data-ttu-id="6b60e-104">Como administrador de Microsoft 365, el panel **informes** muestra la información general de la actividad en varios productos de la organización.</span><span class="sxs-lookup"><span data-stu-id="6b60e-104">As a Microsoft 365 admin, the **Reports** dashboard shows you the activity overview across various products in your organization.</span></span> <span data-ttu-id="6b60e-105">Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto.</span><span class="sxs-lookup"><span data-stu-id="6b60e-105">It enables you to drill in to get more granular insight about the activities specific to each product.</span></span> <span data-ttu-id="6b60e-106">Por ejemplo, puede obtener una vista de alto nivel del valor que se genera desde SharePoint en cuanto al número total de archivos que almacenan los usuarios en sitios de SharePoint, el número de archivos que se usan de manera activa y el almacenamiento consumido en todos estos sitios.</span><span class="sxs-lookup"><span data-stu-id="6b60e-106">For example, you can get a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites.</span></span> <span data-ttu-id="6b60e-107">Luego, puede explorar el informe de uso del sitio de SharePoint para analizar las tendencias y los detalles de nivel de cada sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-107">Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites.</span></span> 
+  
+> [!NOTE]
+> <span data-ttu-id="6b60e-108">Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.</span><span class="sxs-lookup"><span data-stu-id="6b60e-108">You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.</span></span>
+<span data-ttu-id="6b60e-109">Los informes de Microsoft 365 en el centro de administración no son compatibles con los inquilinos de GCC High y DoD.</span><span class="sxs-lookup"><span data-stu-id="6b60e-109">Microsoft 365 Reports in the admin center is not supported for GCC High and DoD tenants.</span></span>
+ 
+## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a><span data-ttu-id="6b60e-110">Obtener acceso al informe de uso del sitio de SharePoint</span><span class="sxs-lookup"><span data-stu-id="6b60e-110">How to get to the SharePoint site usage report</span></span>
+
+1. <span data-ttu-id="6b60e-111">En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.</span><span class="sxs-lookup"><span data-stu-id="6b60e-111">In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.</span></span> 
+2. <span data-ttu-id="6b60e-112">En la Página principal del panel, haga clic en el botón **Ver más** de la tarjeta de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="6b60e-112">From the dashboard homepage, click on the **View more** button on the SharePoint card.</span></span>
+  
+## <a name="interpret-the-sharepoint-site-usage-report"></a><span data-ttu-id="6b60e-113">Interpretar el informe de uso del sitio de SharePoint</span><span class="sxs-lookup"><span data-stu-id="6b60e-113">Interpret the SharePoint site usage report</span></span>
+
+<span data-ttu-id="6b60e-114">Puede ver el uso del sitio en el informe de SharePoint seleccionando la pestaña **uso del sitio** .</span><span class="sxs-lookup"><span data-stu-id="6b60e-114">You can view the site usage in the SharePoint report by choosing the **Site usage** tab.</span></span><br/><span data-ttu-id="6b60e-115">![Microsoft 365 Reports: informe de uso del sitio de Microsoft SharePoint.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)</span><span class="sxs-lookup"><span data-stu-id="6b60e-115">![Microsoft 365 reports - Microsoft SharePoint site usage report.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)</span></span>
+
+<span data-ttu-id="6b60e-116">Seleccione **elegir columnas** para agregar o quitar columnas del informe.</span><span class="sxs-lookup"><span data-stu-id="6b60e-116">Select **Choose columns** to add or remove columns from the report.</span></span>  <br/> <span data-ttu-id="6b60e-117">![Informe de uso del sitio de SharePoint: elegir columnas](../../media/639f3cfd-6725-4318-a225-6d5c2f01770c.png)</span><span class="sxs-lookup"><span data-stu-id="6b60e-117">![SharePoint site usage report - choose columns](../../media/639f3cfd-6725-4318-a225-6d5c2f01770c.png)</span></span>
+
+<span data-ttu-id="6b60e-118">También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** .</span><span class="sxs-lookup"><span data-stu-id="6b60e-118">You can also export the report data into an Excel .csv file by selecting the **Export** link.</span></span> <span data-ttu-id="6b60e-119">Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado.</span><span class="sxs-lookup"><span data-stu-id="6b60e-119">This exports data of all users and enables you to do simple sorting and filtering for further analysis.</span></span> <span data-ttu-id="6b60e-120">Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe.</span><span class="sxs-lookup"><span data-stu-id="6b60e-120">If you have less than 2000 users, you can sort and filter within the table in the report itself.</span></span> <span data-ttu-id="6b60e-121">Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.</span><span class="sxs-lookup"><span data-stu-id="6b60e-121">If you have more than 2000 users, in order to filter and sort, you will need to export the data.</span></span> 
+  
+|<span data-ttu-id="6b60e-122">Item</span><span class="sxs-lookup"><span data-stu-id="6b60e-122">Item</span></span>|<span data-ttu-id="6b60e-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="6b60e-123">Description</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="6b60e-124">**Métrica**</span><span class="sxs-lookup"><span data-stu-id="6b60e-124">**Metric**</span></span>|<span data-ttu-id="6b60e-125">**Definición**</span><span class="sxs-lookup"><span data-stu-id="6b60e-125">**Definition**</span></span>|
+|<span data-ttu-id="6b60e-126">Dirección URL del sitio</span><span class="sxs-lookup"><span data-stu-id="6b60e-126">Site URL</span></span>  <br/> |<span data-ttu-id="6b60e-127">La dirección URL completa del sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-127">The full URL of the site.</span></span> <br/> |
+|<span data-ttu-id="6b60e-128">Deleted</span><span class="sxs-lookup"><span data-stu-id="6b60e-128">Deleted</span></span>  <br/> |<span data-ttu-id="6b60e-129">El estado de eliminación del sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-129">The deletion status of the site.</span></span> <span data-ttu-id="6b60e-130">Se tarda como mínimo siete días para que los sitios se marquen como eliminados.</span><span class="sxs-lookup"><span data-stu-id="6b60e-130">It takes at least 7 days for sites to be marked as deleted.</span></span>  <br/> |
+|<span data-ttu-id="6b60e-131">Propietario del sitio</span><span class="sxs-lookup"><span data-stu-id="6b60e-131">Site owner</span></span>  <br/> |<span data-ttu-id="6b60e-132">El nombre de usuario del propietario principal del sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-132">The username of the primary owner of the site.</span></span>   <br/> |
+|<span data-ttu-id="6b60e-133">Nombre principal del propietario del sitio</span><span class="sxs-lookup"><span data-stu-id="6b60e-133">Site owner principal name</span></span>  <br/> |<span data-ttu-id="6b60e-134">La dirección de correo electrónico del propietario del sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-134">The email address of the owner of the site.</span></span> <br/> |
+|<span data-ttu-id="6b60e-135">Fecha de la última actividad (UTC)</span><span class="sxs-lookup"><span data-stu-id="6b60e-135">Last activity date (UTC)</span></span>  <br/> | <span data-ttu-id="6b60e-136">Fecha de la última vez que se detectó actividad de archivo o se vio una página en el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-136">The date of the last time file activity was detected or a page was viewed on the site.</span></span>  <br/> |
+|<span data-ttu-id="6b60e-137">Archivos</span><span class="sxs-lookup"><span data-stu-id="6b60e-137">Files</span></span>  <br/> |<span data-ttu-id="6b60e-138">El número de archivos del sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-138">The number of files on the site.</span></span> <br/>|
+|<span data-ttu-id="6b60e-139">Archivos activos</span><span class="sxs-lookup"><span data-stu-id="6b60e-139">Active files</span></span>  <br/> | <span data-ttu-id="6b60e-140">El número de archivos activos en el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-140">The number of active files on the site.</span></span><br/> <span data-ttu-id="6b60e-141">Nota: si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos en el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-141">NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.</span></span>  <br/> |
+|<span data-ttu-id="6b60e-142">Almacenamiento usado (MB)</span><span class="sxs-lookup"><span data-stu-id="6b60e-142">Storage used (MB)</span></span>  <br/> |<span data-ttu-id="6b60e-143">La cantidad de almacenamiento que se está usando actualmente en el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-143">The amount of storage currently being used on the site.</span></span>  <br/>|
+|<span data-ttu-id="6b60e-144">Almacenamiento asignado (MB)</span><span class="sxs-lookup"><span data-stu-id="6b60e-144">Storage allocated (MB)</span></span>  <br/> |<span data-ttu-id="6b60e-145">La cantidad máxima de almacenamiento asignado para el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-145">The maximum amount of storage allocated for the site.</span></span>  <br/>|
+|<span data-ttu-id="6b60e-146">Vistas de página</span><span class="sxs-lookup"><span data-stu-id="6b60e-146">Page views</span></span>  <br/> |<span data-ttu-id="6b60e-147">Número de veces que las páginas se han visto en el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-147">The number of times pages were viewed on the site.</span></span>  <br/>|
+|<span data-ttu-id="6b60e-148">Páginas visitadas</span><span class="sxs-lookup"><span data-stu-id="6b60e-148">Pages visited</span></span>  <br/> |<span data-ttu-id="6b60e-149">Número de páginas únicas que se han visitado en el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-149">The number of unique pages that were visited on the site.</span></span>  <br/>|
+|<span data-ttu-id="6b60e-150">Plantilla de web raíz</span><span class="sxs-lookup"><span data-stu-id="6b60e-150">Root Web Template</span></span>  <br/> |<span data-ttu-id="6b60e-151">Plantilla utilizada para crear el sitio.</span><span class="sxs-lookup"><span data-stu-id="6b60e-151">The template used for creating the site.</span></span>  <br/> <span data-ttu-id="6b60e-152">Nota: Si desea filtrar los datos por distintos tipos de sitio, exporte los datos y use la columna raíz Web Template.</span><span class="sxs-lookup"><span data-stu-id="6b60e-152">NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column.</span></span> |
+|||
