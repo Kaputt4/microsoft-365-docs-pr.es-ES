@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Obtenga información sobre cómo obtener acceso a eNom y crear DNS a través de la Página Google Domains.
-ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 37fa8836b7511d51ef2dcb137f36d62eebc36443
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400261"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645616"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Crear registros DNS cuando Google (eNom) administra su dominio
 
@@ -75,7 +75,7 @@ Puede tener acceso a eNom y crear DNS a través de la Página Google **Domains**
     
     ![Google-Apps-eNom-configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. En la página ***domain_name*** , en la sección **registros de host** , seleccione **Editar**.
+9. En la **página _domain_name_*_, en la sección _ registros de*host** , seleccione **Editar**.
     
     ![Google-Apps-eNom-configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   
@@ -94,7 +94,7 @@ Puede tener acceso a eNom y crear DNS a través de la Página Google **Domains**
   
     [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)
   
-12. Haga clic en **Guardar**.
+12. Seleccione **Guardar**.
     
     ![Google-Apps-eNom-configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   

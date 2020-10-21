@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en DNS basado en Windows para Microsoft.
-ms.openlocfilehash: f0c2b8c4aaaa1012e0f11e3778c7ca6b092c053f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306952"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645580"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
@@ -76,14 +76,14 @@ Agregue registro CNAME SIP.
     - Nombre de host: SIP
     - Tipo: CNAME
     - Dirección: sipdir.online.lync.com
-- Seleccione **ACEPTAR**.
+- Seleccione **Aceptar**.
 
 Agregue el registro CNAME de detección automática de Skype Empresarial Online.  
 - En la página del administrador de DNS del dominio, vaya a **acción** \> **CNAME (CNAME)**. En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes:  
     - Nombre de host: lyncdiscover
     - Tipo: CNAME
     - Dirección: webdir.online.lync.com
-- Seleccione **ACEPTAR**.
+- Seleccione **Aceptar**.
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Agregar dos registros CNAME para la administración de dispositivos móviles (MDM) para Microsoft
 
@@ -97,7 +97,7 @@ Agregue el registro CNAME de MDM Enterpriseregistration.
 - Nombre de host: enterpriseregistration
 - Tipo: CNAME
 - Dirección: enterpriseregistration.windows.net
-- Seleccione **ACEPTAR**. 
+- Seleccione **Aceptar**. 
 
 Agregue el registro CNAME de MDM Enterpriseenrollment. 
 -  En la página del administrador de DNS del dominio, vaya a **acción** \> **CNAME (CNAME)**. 
@@ -105,9 +105,9 @@ Agregue el registro CNAME de MDM Enterpriseenrollment.
     - Nombre de host: enterpriseenrollment
     - Tipo: CNAME
     - Dirección: enterpriseenrollment-s.manage.microsoft.com
-- Seleccione **ACEPTAR**.
+- Seleccione **Aceptar**.
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -125,7 +125,7 @@ Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
 -  Tipo de registro: TXT
 -  Dirección: v = spf1 include include SPF. Protection. Outlook. com-All 
          
--  Seleccione **ACEPTAR**.
+-  Seleccione **Aceptar**.
    
 ## <a name="add-srv-records"></a>Agregar registros SRV
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ Agregue el registro SRV SIP para conferencias web de Skype Empresarial Online.  
     -  Peso: 1
     -  Puerto: 443
     -  Destino (nombre de host): sipdir.online.lync.com
--  Seleccione **ACEPTAR**. 
+-  Seleccione **Aceptar**. 
 
 
 Agregue el registro SRV SIP para la federación de Skype Empresarial Online.  
@@ -155,7 +155,7 @@ Agregue el registro SRV SIP para la federación de Skype Empresarial Online.
     -  Peso: 1
     -  Puerto: 5061
     -  Destino (nombre de host): sipfed.online.lync.com
--  Seleccione **ACEPTAR**. 
+-  Seleccione **Aceptar**. 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Agregar un registro para verificar que posee el dominio si todavía no lo ha hecho
 <a name="BKMK_verify"> </a>

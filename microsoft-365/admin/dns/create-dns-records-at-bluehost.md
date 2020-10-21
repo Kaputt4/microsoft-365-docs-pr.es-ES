@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Bluehost para Microsoft.
-ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307048"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646240"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Crear registros DNS en Bluehost para Microsoft
 
@@ -53,7 +53,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-3. En el área ***domain_name*** , en la fila editor de la **zona DNS** , seleccione **administrar registros DNS**.
+3. En el **área _domain_name_*_, en la fila _* editor de la zona DNS** , seleccione **administrar registros DNS**.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-3. En el área ***domain_name*** , en la fila editor de la **zona DNS** , seleccione **administrar registros DNS**.
+3. En el **área _domain_name_*_, en la fila _* editor de la zona DNS** , seleccione **administrar registros DNS**.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -101,7 +101,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Host Record**|**TTL**|**Tipo**|**Apunta a**|**Prioridad**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Nota: ** Obtenga la \<*domain-key*\> desde su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Nota: **Obtenga la \<*domain-key*\> desde su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Elija tipo en la lista desplegable](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
@@ -130,7 +130,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-3. En el área ***domain_name*** , en la fila editor de la **zona DNS** , seleccione **administrar registros DNS**.
+3. En el **área _domain_name_*_, en la fila _* editor de la zona DNS** , seleccione **administrar registros DNS**.
     
 4. En la sección registros de **A (host)** , busque la fila del registro de **detección automática** y, a continuación, seleccione **eliminar** para esa fila. 
     
@@ -139,7 +139,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
     ![Seleccione Eliminar](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. Seleccione **ACEPTAR**.
+5. Seleccione **Aceptar**.
     
     ![Seleccione Aceptar.](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
@@ -169,7 +169,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     Repita este proceso hasta crear los seis registros CNAME.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -181,7 +181,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-3. En el área ***domain_name*** , en la fila editor de la **zona DNS** , seleccione **administrar registros DNS**.
+3. En el **área _domain_name_*_, en la fila _* editor de la zona DNS** , seleccione **administrar registros DNS**.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-3. En el área ***domain_name*** , en la fila editor de la **zona DNS** , seleccione **administrar registros DNS**.
+3. En el **área _domain_name_*_, en la fila _* editor de la zona DNS** , seleccione **administrar registros DNS**.
     
 4. Cree el primero de los dos registros SRV.
     
@@ -216,8 +216,8 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Servicio**|**Protocolo**|**Host**|**TTL**|**Tipo**|**Prioridad**|**Grosor**|**Puerto**|**Apunta a**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Copiar el valor del nuevo registro](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   

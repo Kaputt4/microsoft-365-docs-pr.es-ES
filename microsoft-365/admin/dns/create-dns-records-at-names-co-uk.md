@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Names.co.uk para Microsoft.
-ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3a3e68558efc3857d343b3298c3c01f0e8d8802
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400381"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645868"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Crear registros DNS en Names.co.uk para Microsoft
 
@@ -61,11 +61,11 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     (Si necesita agregar una fila, seleccione **agregar registros a/CNAME (+)**).
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
         
     |**Nombre de host**|**Tipo**|**Resultado**|
     |:-----|:-----|:-----|
@@ -73,9 +73,9 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
        
     ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     ![NamesUK-BP-Verify-1-2](../../media/40e991f9-2209-4210-8762-981cca670d70.png)
   
@@ -117,17 +117,17 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 3. En la página **Agregar o modificar zona DNS**, en la sección **Registros Mail eXchange**, en los cuadros del nuevo registro, escriba (o copie y pegue) los valores de la tabla siguiente. 
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     |**Nombre de host**|**Prioridad**|**Resultado**|
     |:-----|:-----|:-----|
-    |(Deje este campo en blanco).  <br/> |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> > [!NOTE]> Obtén tu *\<domain-key\>* cuenta de Microsoft.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Deje este campo en blanco).  <br/> |1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Obtén tu  *\<domain-key\>*  cuenta de Microsoft.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     ![NamesUK-BP-configure-2-2](../../media/01e6c801-daa2-40ca-84f9-dcac6422257c.png)
   
@@ -135,9 +135,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![NamesUK-BP-configure-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     ![NamesUK-BP-configure-2-4](../../media/cd705919-d0bd-408f-82be-b54e732cb05c.png)
   
@@ -156,11 +156,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     (Si necesita agregar una fila, seleccione **agregar registros a/CNAME (+)**).
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     |**Nombre de host**|**Tipo**|**Resultado**|
     |:-----|:-----|:-----|
@@ -168,19 +168,19 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
        
     ![NamesUK-BP-configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![NamesUK-BP-configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores.
   
 1. Para empezar, vaya a su página de dominios en Names.co.uk a través de [este vínculo](https://account.names.co.uk/dashboard#/). Se le pedirá que inicie sesión primero.
     
@@ -198,11 +198,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 4. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     (Si necesita agregar una fila, seleccione **agregar registros a/CNAME (+)**).
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     |**Nombre de host**|**Tipo**|**Resultado**|
     |:-----|:-----|:-----|
@@ -210,9 +210,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
        
     ![NamesUK-BP-configure-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
     ![NamesUK-BP-configure-4-2](../../media/b4d445a1-09c0-46c3-8141-672cc2831a9b.png)
   
@@ -235,12 +235,12 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre**|**Prioridad**|**Grosor**|**Puerto**|**Resultado**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     

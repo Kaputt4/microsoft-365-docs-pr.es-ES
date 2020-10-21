@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configure el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office365.
-ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780258"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645532"
 ---
 # <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -45,9 +45,9 @@ Como administrador de una organización, es posible que los requisitos de la com
 
  Antes de configurar el reenvío de correo electrónico, tenga en cuenta lo siguiente: 
 
-- Una vez que haya configurado el reenvío de correo electrónico, solo se fowarded los correos electrónicos **nuevos** enviados al buzón *de* correo. 
+- Una vez que haya configurado el reenvío de correo electrónico, solo se fowarded los correos electrónicos **nuevos** enviados al buzón  *de*  correo. 
     
-- El reenvío de correo electrónico requiere que la cuenta *de* tiene una licencia. Si está configurando el reenvío de correo electrónico porque el usuario ha abandonado la organización, otra opción es [convertir su buzón en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md). De este modo, varias personas pueden tener acceso a ella. Sin embargo, un buzón compartido no puede superar los 50 GB. 
+- El reenvío de correo electrónico requiere que la cuenta  *de*  tiene una licencia. Si está configurando el reenvío de correo electrónico porque el usuario ha abandonado la organización, otra opción es [convertir su buzón en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md). De este modo, varias personas pueden tener acceso a ella. Sin embargo, un buzón compartido no puede superar los 50 GB. 
     
 Para realizar estos pasos, debe ser administrador de Exchange o administrador global en Microsoft 365. Para obtener más información, vea el tema [sobre los roles de administrador](../add-users/about-admin-roles.md).
 

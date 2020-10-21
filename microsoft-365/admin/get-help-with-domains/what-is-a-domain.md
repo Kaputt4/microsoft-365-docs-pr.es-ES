@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ description: Comprenda qué es un dominio y cómo puede comprar un dominio o use
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399865"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645124"
 ---
 # <a name="what-is-a-domain"></a>¿Qué es un dominio?
 
@@ -45,14 +45,14 @@ Usar Microsoft 365 para comprar un nuevo dominio: vamos a configurar todo. [Apre
   
  **Use un dominio de su propiedad:**
   
-Si ya tiene un dominio como *You@yourcompany. <span> com* puede agregarlo y empezar a usar las aplicaciones de OneDrive y Microsoft de inmediato. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
+Si ya tiene un dominio como  *You@yourcompany. <span> com*  puede agregarlo y empezar a usar las aplicaciones de OneDrive y Microsoft de inmediato. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
   
 > [!TIP]
 > ¿No sabe dónde está registrado su dominio? [Obtenga ayuda para encontrar su registrador de dominios](find-your-domain-registrar.md)
   
  **Use un dominio predeterminado por ahora:**
   
-Puede usar un dominio predeterminado como *yourcompany. <span> com* para iniciar sesión ahora y agregar un dominio personalizado más adelante. No se puede modificar ni cambiar el nombre del dominio predeterminado, por lo que es importante que se asegure de que es lo que quiere antes de continuar. 
+Puede usar un dominio predeterminado como  *yourcompany. <span> com*  para iniciar sesión ahora y agregar un dominio personalizado más adelante. No se puede modificar ni cambiar el nombre del dominio predeterminado, por lo que es importante que se asegure de que es lo que quiere antes de continuar. 
   
 ## <a name="feeling-stuck"></a>¿Está bloqueado?
 

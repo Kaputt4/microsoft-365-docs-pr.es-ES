@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Obtenga información sobre cómo configurar Microsoft para que administre los registros DNS de su dominio personalizado en Google Domains.
-ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400658"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646432"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Cambiar los servidores DNS para configurar Microsoft con Google Domains
 
@@ -44,21 +44,21 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
   
 1. Para empezar, vaya a su página de dominios en Google Domains a través de [este vínculo](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
     
-1. Seleccione **iniciar sesión**.
+1. Seleccione **Iniciar sesión**.
     
 2. Escriba sus credenciales de inicio de sesión y vuelva a seleccionar **iniciar sesión**.
     
-2. En la página **dominios** , en la sección **dominio** , seleccione **configurar DNS** para el dominio que desea editar. 
+2. En la página **Dominios**, en la sección **Dominio**, seleccione **Configurar DNS** para el dominio que quiera editar. 
     
-3. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+3. En la sección **Registros de recursos personalizados**, en los cuadros para el nuevo registro, escriba o copie y pegue los valores que aparecen en la tabla siguiente. 
     
-    (You may have to scroll down.)
+    (Es posible que tenga que desplazarse hacia abajo).
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Name** <br/> |**Type** <br/> |**TTL** <br/> |**Datos** <br/> |
+|**Nombre** <br/> |**Tipo** <br/> |**TTL** <br/> |**Datos** <br/> |
 |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. Elija **Agregar**.
@@ -93,11 +93,11 @@ Para completar la configuración de su dominio con Microsoft, debe cambiar los r
   
 1. Para empezar, vaya a su página de dominios en Google Domains a través de [este vínculo](https://domains.google.com/registrar). Se le pedirá que inicie sesión. Para ello:
     
-1. Seleccione **iniciar sesión**.
+1. Seleccione **Iniciar sesión**.
     
-2. Escriba sus credenciales de inicio de sesión y, después, seleccione **iniciar sesión de**nuevo.
+2. Escriba sus credenciales de inicio de sesión y vuelva a seleccionar **Iniciar sesión**.
     
-2. En la página **dominios** , en la sección **dominio** , seleccione **configurar DNS** para el dominio que desea editar. 
+2. En la página **Dominios**, en la sección **Dominio**, seleccione **Configurar DNS** para el dominio que quiera editar. 
     
 3. En la página **Dominios**, en la sección **Servidores de nombres**, seleccione **Use servidores de nombres personalizados**.
     
@@ -134,7 +134,7 @@ Para completar la configuración de su dominio con Microsoft, debe cambiar los r
     
     Repita este proceso hasta que haya creado los cuatro registros de servidor de nombres.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -146,7 +146,7 @@ Para completar la configuración de su dominio con Microsoft, debe cambiar los r
 1. Si en la lista se muestran otros servidores DNS, seleccione **Editar**.
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Es decir, elimine solo los servidores DNS actuales que *no* tengan el nombre **ns1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Es decir, elimine solo los servidores DNS actuales que  *no*  tengan el nombre **ns1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -175,7 +175,7 @@ Para completar la configuración de su dominio con Microsoft, debe cambiar los r
     
     Repita este proceso hasta que haya creado los cuatro registros de servidor de nombres.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

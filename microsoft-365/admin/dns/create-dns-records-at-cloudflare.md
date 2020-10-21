@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en CloudFlare para Microsoft.
-ms.openlocfilehash: 9b717ddedaf6435f6599f4f75cc0fa7c4e618d59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400550"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646156"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Crear registros DNS en CloudFlare para Microsoft
 
@@ -91,7 +91,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     |TXT  <br/> |@  <br/> |30 minutos  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
   
   
 9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
@@ -132,11 +132,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Tipo**|**Nombre**|**Servidor de correo**|**Prioridad**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Obtenga su *\<domain-key\>* cuenta de Microsoft 365.   [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 minutos  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga su  *\<domain-key\>*  cuenta de Microsoft 365.   [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 minutos  <br/> |
    
 
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
   
 9. Si hay otros registros MX enumerados en la sección **registros MX** , elimínelos seleccionando el icono **eliminar (X)** . 
   
@@ -165,18 +165,18 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutos  <br/> |
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |30 minutos  <br/> |
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |30 minutos  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |30 minutos  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |30 minutos  <br/> |
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutos  <br/> |
     
   
 5. Seleccione el icono de **tráfico DNS** (nube naranja) para omitir los servidores de CloudFlare.
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
   
 7. Agregue los otros cinco registros CNAME.
 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -197,7 +197,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |TXT  <br/> |@  <br/> |30 minutos  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.   |
 
  
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
     
 
   
@@ -219,11 +219,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
         
     |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**TTL**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Use su *domain_name*; por ejemplo, contoso.com  |30 minutos | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Use su *domain_name*; por ejemplo, contoso.com  |30 minutos | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1 |5061 | sipfed.online.lync.com |
 
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
   
 6. Agregue el otro registro SRV; para ello, elija los valores de la segunda fila de la tabla. 

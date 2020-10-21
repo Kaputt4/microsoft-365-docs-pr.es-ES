@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Obtenga información sobre cómo administrar sus propios registros DNS o permitir que Microsoft administre sus registros DNS por usted.
-ms.openlocfilehash: ac026ce0dba4eefff2c837da71c18b08aca12ea6
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: a22968fdfcdb6be8ecfdc9dde351de034edce4b2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079778"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645304"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Configurar su dominio (instrucciones específicas del host)
 
@@ -47,7 +47,7 @@ Seleccione su host de dominio a continuación para conocer los pasos exactos. Si
 |[Amazon Web Services (AWS)](../dns/change-nameservers-at-aws.md) |
  [Bluehost](../dns/change-nameservers-at-bluehost.md)|
 |[Dominios de Google](../dns/change-nameservers-at-google-domains.md) |
-|[Hostgator](../dns/change-nameservers-at-hostgator.md)  |  
+|[Hostgator   ](../dns/change-nameservers-at-hostgator.md)  |  
 |[MyDomain](../dns/change-nameservers-at-mydomain.md) | 
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
@@ -69,10 +69,10 @@ O bien, obtenga información sobre cómo [cambiar los servidores de nombres para
 |[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [OVH](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
 | [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 para Microsoft 365](../dns/create-dns-records-at-register365.md)  |
-| [Freenom](../dns/create-dns-records-at-freenom.md) | [web.com](../dns/create-dns-records-at-web-com.md)|
-|[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[DNS basado en Windows](../dns/create-dns-records-using-windows-based-dns.md)   |
+| [Freenom](../dns/create-dns-records-at-freenom.md) | [ web.com ](../dns/create-dns-records-at-web-com.md)|
+|[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[ DNS basado en Windows](../dns/create-dns-records-using-windows-based-dns.md)   |
 | [Google Domains](../dns/create-dns-records-at-google-domains.md) |[Wix](../dns/create-dns-records-at-wix.md) |
 |[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [Yahoo!   Pequeña empresa](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
-[Necesito instrucciones generales porque mi host de dominio no está en esta lista.](create-dns-records-at-any-dns-hosting-provider.md)
+[Necesito instrucciones generales porque mi host de dominio no está en esta lista. ](create-dns-records-at-any-dns-hosting-provider.md)
    

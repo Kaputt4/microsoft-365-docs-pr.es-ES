@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en easyDNS para Microsoft.
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400237"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645556"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Crear registros DNS en easyDNS para Microsoft
 
-[Consulte preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md) si no encuentra lo que está buscando. 
+[Consulte preguntas más frecuentes acerca de los dominios ](../setup/domains-faq.md) si no encuentra lo que está buscando. 
   
 Deberá agregar todos los registros DNS siguientes al sitio web del registrador para enrutar el correo a Microsoft, usar su dominio para Teams y Skype empresarial, y así sucesivamente.
   
@@ -63,7 +63,7 @@ Nota: Actualmente, los registros SRV no están disponibles en todos los paquetes
     
 11. En la página **configuración** , seleccione **Iniciar configuración.**
     
-12. En la página**verificar dominio**, seleccione **verificar**. 
+12. En la página**Verificar dominio**, elija **Verificar**. 
     
 ## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Agregar un registro MX para redirigir el correo electrónico a Microsoft
 
@@ -108,7 +108,7 @@ Nota: Actualmente, los registros SRV no están disponibles en todos los paquetes
     
 6. Asegúrese de que el registro sea correcto y, a continuación, seleccione **confirmar**. 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 
 1. Vaya a [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) e inicie sesión con sus credenciales. 
     
@@ -140,8 +140,8 @@ Nota: Actualmente, los registros SRV no están disponibles en easyDNS ' dominio 
     
     |**SERVICIO**|**Protocolo**|**HOST**|**PRIORIDAD**|**WGT**|**PUERTO**|**DESTINO (debe terminar con ".")**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Seleccione **siguiente**. 
     

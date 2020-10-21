@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Wix para Microsoft.
-ms.openlocfilehash: fcc0f8e8187e22dde68149e0f2a80073312bff7f
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814449"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645664"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Crear registros DNS en Wix para Microsoft
 
@@ -115,7 +115,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
    
 6. Si hay otros registros MX enumerados, elimínelos. 
     
-7. Seleccione **ACEPTAR**.
+7. Seleccione **Aceptar**.
     
 8. En el cuadro de diálogo de confirmación, seleccione **Aceptar**.
     
@@ -133,7 +133,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
    | Nombre de host | Points to  | TTL |
    |:-----|:-----|:-----|
-   |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hora  <br/> |
+   |autodescubrir  <br/> |autodiscover.outlook.com  <br/> |1 hora  <br/> |
    |sip  <br/> |sipdir.online.lync.com  <br/> |1 hora <br/> |
    |lyncdiscover  <br/> |webdir.online.lync.com   <br/> |1 hora  <br/> |
    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hora <br/> |
@@ -144,7 +144,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 6. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
