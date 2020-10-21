@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Para cambiar de forma manual las suscripciones de Microsoft 365 para empresas, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3712f01502362e68d05e6a2eadfcac588f6092b7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403203"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647764"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiar de Microsoft 365 para planes de empresa manualmente
 
