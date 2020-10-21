@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e014908c6a9ef0f461e89c8500de5ba91c3712c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: aa74f60ab87bccacefb11822edd02c75b5bdacc9
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388382"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639808"
 ---
 # <a name="contact-support-for-singapore"></a>Póngase en contacto con el soporte técnico de Singapur
 
@@ -30,7 +30,7 @@ ms.locfileid: "44388382"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: lunes a viernes, 9 A.M. a 6 P.M.
+Inglés: Mon-Fri 9 A.M.-6 P.M.
 
 ### <a name="technical-support"></a>Soporte técnico:
 

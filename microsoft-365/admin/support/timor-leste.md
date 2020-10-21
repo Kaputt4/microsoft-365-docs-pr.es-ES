@@ -1,10 +1,10 @@
 ---
-title: Información de soporte de Timor-Leste
+title: Información de soporte para Timor-Leste
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a0db9a54188fefe107c526e1b2ba821b8207527
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401623"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639208"
 ---
-# <a name="contact-support-for-timor-leste"></a>Póngase en contacto con el soporte de Timor-Leste
+# <a name="contact-support-for-timor-leste"></a>Póngase en contacto con soporte técnico para Timor-Leste
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,9 +30,9 @@ ms.locfileid: "44401623"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Portugués: lunes a viernes 9 P.M.-5 A.M.
+Portugués: Mon-Fri 9 P.M.-5 A.M.
 
-Inglés: lunes a viernes 9 P.M.-5 A.M.
+Inglés: Mon-Fri 9 P.M.-5 A.M.
 
 ### <a name="technical-support"></a>Soporte técnico:
 

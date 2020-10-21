@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dde7dc7c46d6e67f0786f6e44ab3b79d6e43c762
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 92c39e85ece5cf2da157a1e92b7bb86d164955d2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401887"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639136"
 ---
 # <a name="contact-support-for-tonga"></a>Póngase en contacto con el soporte técnico de Tonga
 
@@ -30,7 +30,7 @@ ms.locfileid: "44401887"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: lunes a viernes 2 PM-10 PM
+Inglés: Mon-Fri 2 PM-10 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 

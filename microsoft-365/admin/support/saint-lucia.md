@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 058c864b49b0c1c3f05c8f547cdd5168ead0df1e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e7f07aaaad6f8a51231e5b14251f0badb4c08089
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389774"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640084"
 ---
 # <a name="contact-support-for-saint-lucia"></a>Póngase en contacto con el soporte técnico para Santa Lucía
 
@@ -30,7 +30,7 @@ ms.locfileid: "44389774"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: lunes a viernes 9 A.M.-5 P.M.
+Inglés: Mon-Fri 9 A.M.-5 P.M.
 
 ### <a name="technical-support"></a>Soporte técnico:
 
