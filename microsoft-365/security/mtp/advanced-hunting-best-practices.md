@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477010"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649672"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477010"
 
 Aplique estas recomendaciones para obtener resultados con mayor rapidez y evitar Tiempos de espera mientras se ejecutan consultas complejas. Para obtener más información sobre cómo mejorar el rendimiento de las consultas, vea [procedimientos recomendados de consulta de Kusto](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="understand-cpu-resource-limits"></a>Descripción de los límites de recursos de CPU
-Según su tamaño, cada inquilino tiene acceso a una cantidad fija de recursos de CPU asignados para ejecutar consultas de búsqueda avanzada. Para obtener información detallada sobre varios límites de servicio, [Lea acerca de los límites de búsqueda avanzada](advanced-hunting-limits.md).
+## <a name="understand-cpu-resource-quotas"></a>Descripción de las cuotas de recursos de CPU
+Según su tamaño, cada inquilino tiene acceso a una cantidad fija de recursos de CPU asignados para ejecutar consultas de búsqueda avanzada. Para obtener información detallada acerca de los distintos límites de servicio, [Lea acerca de las cuotas de caza avanzadas y los parámetros de uso](advanced-hunting-limits.md).
 
-Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar la guía de optimización de este artículo para minimizar las interrupciones derivadas de la superación de los límites.
+Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar la guía de optimización de este artículo para minimizar la interrupción derivada de la superación de las cuotas o los parámetros de uso.
 
 ## <a name="general-optimization-tips"></a>Sugerencias generales de optimización
 
@@ -265,7 +265,7 @@ Para obtener información sobre todas las funciones de análisis admitidas, [Lea
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Documentación del lenguaje de consulta de Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [Límites del servicio](advanced-hunting-limits.md)
+- [Cuotas y parámetros de uso](advanced-hunting-limits.md)
 - [Controlar errores de búsqueda avanzada](advanced-hunting-errors.md)
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
