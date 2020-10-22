@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626193"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651412"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -335,6 +335,9 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para 
 [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) es un servicio de flujo de trabajo que automatiza acciones en aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas con estas aplicaciones y servicios. Al habilitar flujos de alimentación automatizada para el cumplimiento de la comunicación, puede automatizar las tareas importantes para las alertas y los usuarios. Puede configurar los flujos de alimentación automatizada para notificar a los administradores cuando los usuarios tienen alertas de cumplimiento de comunicaciones y otras aplicaciones.
 
 Los clientes con suscripciones de Microsoft 365 que incluyen el cumplimiento de la comunicación no necesitan una automatización adicional para usar la plantilla de automatización de cumplimiento de comunicaciones predeterminada recomendada. La plantilla predeterminada se puede personalizar para apoyar a su organización y cubrir los principales escenarios de cumplimiento de comunicaciones. Si decide usar las características de automatizar la alimentación avanzada en estas plantillas, cree una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o use las plantillas de Power automatizada para otras áreas de cumplimiento en Microsoft 365, es posible que necesite otras licencias de Power automatizada.
+
+>[!IMPORTANT]
+>¿Recibe mensajes para la validación de licencia adicional al probar los flujos de alimentación automatizada? Es posible que su organización no haya recibido todavía actualizaciones de servicio para esta característica de vista previa. Las actualizaciones se están implementando y todas las organizaciones con suscripciones de Microsoft 365 que incluyan el cumplimiento de la comunicación deben disponer de soporte de licencia para los flujos creados a partir de las plantillas de Power automatization recomendadas antes del 30 de octubre de 2020.
 
 ![Automatización de la energía de cumplimiento de comunicaciones](../media/communication-compliance-power-automate.png)
 

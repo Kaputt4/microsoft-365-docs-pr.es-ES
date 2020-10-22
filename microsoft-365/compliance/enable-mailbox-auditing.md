@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: El registro de auditoría de buzones de correo está activado de forma predeterminada en Microsoft 365 (también denominado auditoría de buzones de correo predeterminada o auditoría de buzones de correo de forma predeterminada). Esto significa que determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545846"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649629"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -35,7 +35,7 @@ Estas son algunas de las ventajas de la auditoría de buzones de correo de forma
 
 - No es necesario administrar las acciones de buzón de correo que se auditan. De forma predeterminada, se audita un conjunto predefinido de acciones de buzón para cada tipo de inicio de sesión (Administrador, delegado y propietario).
 
-- Cuando Microsoft lanza una nueva acción de buzón (especialmente acciones que ayudan a proteger la organización y ayuda con las investigaciones forenses), la acción se agrega automáticamente a la lista de acciones de buzón de correo que se auditan de forma predeterminada. Esto significa que no es necesario supervisar agregar nuevas acciones en los buzones de correo.
+- Cuando Microsoft publica una nueva acción de buzón de correo, la acción se puede Agregar automáticamente a la lista de acciones de buzón de correo que se auditan de forma predeterminada (sujeto al usuario con la licencia correspondiente). Esto significa que no es necesario supervisar agregar nuevas acciones en los buzones de correo.
 
 - Tiene una directiva de auditoría de buzones de correo coherente en toda la organización (porque está auditando las mismas acciones para todos los buzones de correo).
 
@@ -90,7 +90,7 @@ Los tipos de inicio de sesión clasifican al usuario que llevó a cabo las accio
 
     - eDiscovery o exhibición avanzada de documentos electrónicos en el centro de cumplimiento.
 
-    - Exhibición de documentos electrónicos local en Exchange Online.
+    - In-Place eDiscovery en Exchange Online.
 
   - Se obtiene acceso al buzón con Microsoft Exchange Server MAPI editor.
 

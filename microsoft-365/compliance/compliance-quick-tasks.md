@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar a trabajar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341186"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651366"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -68,13 +68,7 @@ Use las directivas de alerta y las herramientas del escritorio para crear direct
 
 Para obtener instrucciones paso a paso para crear directivas de alertas personalizadas, consulte [Alert policies en el centro de seguridad y cumplimiento](alert-policies.md).
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>Tarea 5: configurar el acceso Just-in-Time para los administradores
-
-Tener acceso permanente a algunos usuarios a la información confidencial o a la configuración de la red crítica es una posible vía para las actividades en peligro o para las actividades de amenazas internas. La [Administración de acceso con privilegios](privileged-access-management-overview.md) ayuda a proteger la organización de las infracciones y ayuda a cumplir los procedimientos recomendados al limitar el acceso permanente a los datos confidenciales o el acceso a las opciones de configuración fundamentales. En lugar de que los administradores tengan acceso constante, las reglas de acceso Just-in-Time se implementan para las tareas que necesitan permisos elevados. La habilitación de la administración de acceso privilegiada en Microsoft 365 permite que su organización opere con privilegios que no tienen ningún derecho y proporciona un nivel de defensa contra las vulnerabilidades de acceso administrativo.
-
-Para obtener instrucciones paso a paso para configurar la administración del acceso con privilegios, consulte [Get Started with privileged Access Management](privileged-access-management-configuration.md). Para obtener información sobre las licencias de administración de acceso privilegiadas, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365).
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>Tarea 6: clasificar y proteger los datos confidenciales
+## <a name="task-5-classify-and-protect-sensitive-data"></a>Tarea 5: clasificar y proteger los datos confidenciales
 
 Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
@@ -82,7 +76,7 @@ Las [etiquetas de confidencialidad](sensitivity-labels.md) le permiten clasifica
 
 Para obtener información paso a paso sobre cómo configurar y usar las etiquetas de confidencialidad, consulte Introducción [a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md). Para obtener información sobre la licencia de la etiqueta de confidencialidad, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-## <a name="task-7-configure-a-retention-policy"></a>Tarea 7: configurar una directiva de retención
+## <a name="task-6-configure-a-retention-policy"></a>Tarea 6: configurar una directiva de retención
 
 Una [Directiva de retención](retention.md) permite decidir de forma proactiva Si se conserva el contenido, se elimina el contenido o ambos, y, a continuación, se elimina el contenido al final de un período de retención especificado. Estas acciones pueden ser necesarias para cumplir con las regulaciones de la industria y las directivas internas, así como para reducir el riesgo en caso de litigio o de una violación de la seguridad.
 
@@ -90,9 +84,9 @@ Cuando el contenido está sujeto a una directiva de retención, los usuarios pue
 
 Puede poner rápidamente una directiva de retención en su lugar para varias ubicaciones en su entorno de Microsoft 365, como correo de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. No hay límites en cuanto al número de buzones o sitios que esta Directiva puede incluir automáticamente. Pero si necesita obtener más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluya o excluya sitios o usuarios.
 
-Para obtener instrucciones paso a paso para configurar una directiva de retención, consulte [Create and configure Retention Policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Para obtener instrucciones paso a paso para configurar una directiva de retención, consulte [Create and configure Retention Policies](create-retention-policies.md). Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 8: configurar la información confidencial y las directivas de lenguaje ofensivo
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Tarea 7: configurar información confidencial y directivas de lenguaje ofensivo
 
 La protección de la información confidencial y la detección y la actuación de los incidentes de acoso del lugar de trabajo es una parte importante del cumplimiento de las directivas y los estándares internos. El cumplimiento de la [comunicación](communication-compliance-feature-reference.md) en Microsoft 365 ayuda a minimizar estos riesgos al ayudarle a detectar, capturar y realizar acciones de corrección rápidamente para el correo electrónico y las comunicaciones de Microsoft Teams. Estos incluyen comunicaciones inadecuadas que contienen palabras soeces, amenazas y acoso y comunicaciones que comparten información confidencial dentro y fuera de la organización.
 
@@ -102,7 +96,7 @@ La plantilla de directiva de *información confidencial* predefinida le ayuda a 
 
 Para obtener instrucciones paso a paso para planear y configurar el cumplimiento de la comunicación, vea [Plan for Communication Compliance](communication-compliance-plan.md) y [Get Started with Communication Compliance](communication-compliance-configure.md). Para obtener información sobre las licencias de cumplimiento de comunicaciones, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Tarea 9: ver lo que ocurre con sus elementos confidenciales
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Tarea 8: ver lo que ocurre con sus elementos confidenciales
 
 Las etiquetas de confidencialidad, los tipos de información confidencial, las etiquetas de retención y los clasificadores que se pueden entrenar pueden usarse para clasificar y etiquetar elementos confidenciales en Exchange, SharePoint y OneDrive, tal y como se ha visto en las tareas anteriores. El último paso en el recorrido rápido de la tarea es ver los elementos que se han etiquetado y las acciones que los usuarios toman sobre esos elementos confidenciales. Explorador de [contenido](data-classification-content-explorer.md) y [Explorador de actividades](data-classification-activity-explorer.md) proporcionan esta visibilidad.
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Pasos para importar contenido que no está almacenado en Microsoft 365 en un BLOB de Azure para que se pueda analizar con AeD
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fbb21f6bc3fdfd2a5251a9ec773a22351db5749e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: be30daa35770247a9dd342b88093872083075547
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817599"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636957"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Importar contenido que no es de Microsoft 365 para el análisis avanzado de exhibición de documentos electrónicos (Classic)
 
@@ -37,56 +37,54 @@ No todos los documentos que puede que necesite analizar con eDiscovery avanzado 
 
 El uso de la característica cargar no de Office 365 tal y como se describe en este procedimiento requiere que tenga:
   
-- Un complemento de Office 365 E3 con Advanced Compliance o de la suscripción a E5
+- Una suscripción a Office 365 E3 con Advanced Compliance Add-on o E5.
     
 - Todos los custodios cuyo contenido que no pertenezca a Office 365 se cargarán deben tener E3 con las licencias del complemento de cumplimiento avanzado o E5.
     
-- Un caso de eDiscovery existente
+- Un caso de eDiscovery existente.
     
-- Todos los archivos para carga recopilados en carpetas en las que hay una carpeta por custodio y el nombre de las carpetas se encuentran en este formato *alias@domainname* . Los *alias@domainname* deben ser usuarios alias y dominio Office 365. Puede recopilar todas las carpetas de *alias@domainname* en una carpeta raíz. La carpeta raíz solo puede contener las carpetas *alias@domainname* , no debe haber archivos sueltos en la carpeta raíz 
+- Todos los archivos para carga recopilados en carpetas en las que hay una carpeta por custodio y el nombre de las carpetas se encuentran en este formato  *alias@domainname*  . Los  *alias@domainname*  deben ser usuarios alias y dominio Office 365. Puede recopilar todas las carpetas de  *alias@domainname*  en una carpeta raíz. La carpeta raíz solo puede contener las carpetas  *alias@domainname*  , no debe haber archivos sueltos en la carpeta raíz.
     
-- Una cuenta que sea administrador de exhibición de documentos electrónicos o administrador de exhibición de documentos electrónicos
+- Una cuenta que sea administrador de exhibición de documentos electrónicos o administrador de exhibición de documentos electrónicos.
     
 - [Herramientas de almacenamiento de Microsoft Azure](https://aka.ms/downloadazcopy) instaladas en un equipo que tiene acceso a la estructura de carpetas de contenido no Office 365. 
     
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido no de Office 365 en eDiscovery avanzado
 
 
-1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, Abra **eDiscovery**y abra el caso en el que se cargarán los datos que no son de Office 365. Si necesita crear un caso, consulte [administrar casos de eDiscovery en el &amp; centro de seguridad y cumplimiento](ediscovery-cases.md)
+1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, Abra **eDiscovery**y abra el caso en el que se cargarán los datos que no son de Office 365. Si necesita crear un caso, consulte [administrar casos de eDiscovery en el &amp; centro de seguridad y cumplimiento](ediscovery-cases.md).
     
-2. Haga clic en **cambiar a exhibición avanzada de** documentos electrónicos
+2. Haga clic en **cambiar a exhibición avanzada de**documentos electrónicos.
+
+3. Seleccione **Review sets** en el menú.
+
+4. Seleccione un conjunto de revisiones existente o elija **Agregar conjunto de revisión**.
+
+5. Seleccione **administrar conjunto de revisión**.
+
+6. En la tarjeta de datos que no son de Office 365, seleccione **Ver cargas**.
+
+7. Elija **cargar archivos** para iniciar el Asistente para carga de archivos.
+
+8. La primera pestaña es **1. Paso de preparación**. Seleccione **siguiente: cargar archivos**.
+
+9. En la **2. Ficha cargar archivos** se le pedirá que descargue AzCopy.exe si todavía no lo ha hecho y, a continuación, para proporcionar la ruta de acceso a la ubicación del archivo. Por ejemplo, le `C:\Upload`  dará el comando para ejecutar AzCopy.exe. Con el `C:\Upload` , verá:
+
+   `"%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy\AzCopy.exe" /Source:"c:\upload" /Dest:"https://spnam03salinkexternal003.blob.core.windows.net/16d13440-a6a4-4bc5-a82b-10ac9cfe9d7c-1601401811-externalstore?sv=2017-07-29&sr=c&si=ExternalStore63%7C0&sig=9Dq5v20TwkxByYDHhIEx%2FHSLlmlqUjY0njkJyTO0zGA%3D" /s`
+  
+10. Abra una ventana de símbolo del sistema y ejecute el comando AzCopy.exe para importar los datos en Azure. Una vez que haya cargado todos los datos, seleccione **siguiente: procesar archivos**.
+
+11. La siguiente ficha es **3. Procese los archivos** en los que verá los custodios que tienen datos asociados y también le mostrarán el progreso de los datos que se van a importar.
+        
+    Para obtener más información sobre la sintaxis de Azcopy, vea [transferir datos con Azcopy en Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). 
     
-3. En **tipo de origen** , seleccione **datos que no son de Office 365**.
-    
-4. Haga clic en **Agregar contenedor**. Asigne un nombre al contenedor y agregue una descripción.
-    
-5. Seleccione el contenedor recién agregado de la lista de contenedores y copie la dirección URL que aparece en el panel de detalles del contenedor y, a continuación, cierre el panel.
-    
-6. Abra un símbolo del sistema como administrador y cambie el directorio a la carpeta donde está instalado AzCopy.
-    
-7. Construya la línea de comandos de AzCopy para cargar los archivos de la siguiente manera:
-    
-    AzCopy/Source: " *ruta de acceso completa a la carpeta raíz en el equipo local* "/dest: " *dirección URL del contenedor hasta el? o sin incluir el?*  "/DestSAS:" *resto de la dirección URL del contenedor del? al final* "/S. 
-    
-    Por ejemplo, con estos valores: 
-    
-  - carpeta raíz: datos de C:\Collected 
-    
-  - Dirección URL del contenedor- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp ; Sr = c &amp; si = NonOfficeData15% 7C0 &amp; SIG = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3D
-    
-    la sintaxis de la línea de comandos de AzCopy sería:
-    
-     `AzCopy /Source:"C:\CollectedData" /Dest:"https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17" /DestSAS:"?sv=2015-04-05&amp;sr=c&amp;si=NonOfficeData15%7C0&amp;sig=Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA%3D" /S`
-    
-    Para obtener más información sobre la sintaxis de Azcopy, consulte [transferir datos con Azcopy en Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
+    Para obtener más información sobre el procesamiento avanzado de eDiscovery, consulte [ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos (Classic)](run-the-process-module-and-load-data-in-advanced-ediscovery.md). 
     
     > [!IMPORTANT]
-    > Debe haber una carpeta raíz por usuario y el nombre de la carpeta debe tener el formato *alias@domainname* . 
-  
-8. Una vez que las carpetas terminen de cargarse, vuelva a la exhibición avanzada de documentos electrónicos. El contenido de las carpetas que cargó ya está listo para su procesamiento en eDiscovery avanzado. Seleccione el contenedor y haga clic en el botón procesar. Para obtener más información sobre el procesamiento avanzado de eDiscovery, vea [ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado](run-the-process-module-and-load-data-in-advanced-ediscovery.md) .
-    
+    > Debe haber una carpeta raíz por usuario y el nombre de la carpeta debe tener el formato <b>alias@domainname</b>  . 
+   
     > [!IMPORTANT]
     > Una vez que el contenedor se procesa correctamente en eDiscovery avanzado, ya no podrá agregar nuevo contenido al almacenamiento SAS en Azure. Si recopila contenido adicional y desea agregarlo al análisis de eDiscovery avanzado, debe crear un nuevo contenedor de **datos distinto de Office 365** y repetir este procedimiento. 
   
     > [!NOTE]
-    > Si el contenedor *no se procesa correctamente debido a problemas de nombres de carpeta* y, a continuación, soluciona los problemas, deberá crear un nuevo contenedor y volver a conectar y cargar de nuevo con los procedimientos descritos en este artículo.
+    > Si el contenedor  *no se procesa correctamente debido a problemas de nombres de carpeta*  y, a continuación, soluciona los problemas, deberá crear un nuevo contenedor y volver a conectar y cargar de nuevo con los procedimientos descritos en este artículo.

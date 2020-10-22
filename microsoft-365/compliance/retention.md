@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398987"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651434"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -276,7 +276,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |La retención aplicada se basa en las condiciones <br /> : tipos de información confidencial, consultas KQL y clasificadores que se pueden entrenar| No | Sí |
 |Retención aplicada manualmente | No | Sí |
 |Presencia de interfaz de usuario para usuarios finales | No | Sí |
-|Se mantiene si el contenido se mueve | No | Sí, con Microsoft 365 |
+|Se mantiene si el contenido se mueve | No | Sí, dentro de su espacio empresarial de Microsoft 365 |
 |Declara el elemento como un registro| No | Sí |
 |Inicio del período de retención cuando se etiqueta o basado en un evento | No | Sí |
 |Revisión para eliminación | No| Sí |
@@ -353,27 +353,50 @@ Para usar los cmdlets de retención, primero debe [conectarse a PowerShell del C
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Cuándo usar directivas de retención y etiquetas de retención o suspensiones de eDiscovery
+
+Si bien tanto la configuración de retenciones y las suspensiones[ que usted cree con un caso de eDiscovery](create-ediscovery-holds.md) pueden impedir que se eliminen los datos de forma permanente, están diseñados para diferentes escenarios. Para que le resulte más fácil comprender las diferencias y decidir qué usar, siga estas instrucciones:
+
+- La configuración de retenciones que especifique en directivas de retención y etiquetas de retención está diseñada para que una estrategia de control de información a largo plazo pueda conservar o eliminar datos a efectos de requisitos de cumplimiento. Por lo general, el ámbito es amplio y el enfoque principal lo constituyen la ubicación y el contenido, en lugar de los usuarios individuales. El inicio y el final del período de retención es configurable y se incluye la opción de eliminar automáticamente contenido sin ninguna intervención adicional por parte del administrador.
+
+- Las suspensiones para eDiscovery (tanto casos de Core eDiscovery como de eDiscovery avanzado) están diseñadas para una duración limitada, para conservar datos para una investigación legal. El ámbito es específico y se centra en el contenido propiedad de los usuarios identificados. El inicio y el final del período de conservación no se pueden configurar, sino que dependen de las acciones individuales del administrador y no existe ninguna opción para eliminar el contenido automáticamente al liberar la suspensión.
+
+Resumen para comparar la retención con suspensiones:
+
+|Consideración|Retención |Suspensiones de eDiscovery|
+|:-----|:-----|:-----|:-----|
+|Necesidad de negocio: |Cumplimiento |Legal |
+|Ámbito de tiempo: |A largo plazo |A corto plazo |
+|Foco: |Amplio, basado en contenido |Específico, basado en el usuario |
+|Fecha de inicio y de finalización configurable: |Sí |No |
+|Eliminación de contenido: |Sí (opcional) |No |
+|Gastos generales de administración: |Bajo |Alto |
+
+Si el contenido está sujeto tanto a la configuración de retención como a una suspensión de eDiscovery, tendrá prioridad conservar el contenido de la suspensión de eDiscovery. De esta forma, los [principios de retención](#the-principles-of-retention-or-what-takes-precedence) se amplían a las suspensiones de eDiscovery, ya que conservan los datos hasta que un administrador libera manualmente la suspensión. Sin embargo, aún con esta precedencia, no use suspensiones de eDiscovery para el control de la información a largo plazo. Si le preocupa la eliminación automática de datos, puede configurar las opciones de retención para que se conserven los elementos de forma indefinida, o usar la [revisión para eliminación](disposition.md#disposition-reviews) con etiquetas de retención.
+
+Si usa herramientas de eDiscovery antiguas para conservar datos, consulte los siguientes recursos:
+
+- Exchange: 
+    - [Conservación local y retención por juicio](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [Cómo identificar el tipo de retención en un buzón de Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint y OneDrive: 
+    - [Agregar contenido a un caso y poner orígenes en espera en el Centro de eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Usar directivas de retención y etiquetas de retención en lugar de características más antiguas
 
-Si tiene que conservar o eliminar contenido en 365 Microsoft de manera proactiva para la gobernanza de la información, le recomendamos que use las directivas de retención y las etiquetas de retención en lugar de las siguientes características antiguas. 
-  
+Si tiene que conservar o eliminar contenido en 365 Microsoft de manera proactiva para la gobernanza de la información, le recomendamos que use las directivas de retención y las etiquetas de retención en lugar de las siguientes características antiguas.
+
 Si actualmente usa esas características más antiguas, estas seguirán funcionando en paralelo con las directivas de retención y las etiquetas de retención. Sin embargo, le recomendamos que, en adelante, utilice directivas de retención y etiquetas de retención. Proporcionan un mecanismo único para administrar centralmente tanto la retención como la eliminación de contenido en Microsoft 365.
 
 **Características anteriores de Exchange Online:**
 
-- [Conservación local y Retención por juicio](https://go.microsoft.com/fwlink/?linkid=846124) (suspensión de eDiscovery) 
-
-- [Cómo identificar el tipo de retención en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [Etiquetas de retención y directivas de retención](https://go.microsoft.com/fwlink/?linkid=846125), lo que también se conoce como [administración de registros de mensajes (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (solo eliminación)
-    
-Vea también [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md)
-
 
 **Características anteriores de SharePoint y OneDrive:**
 
-- [Agregar contenido a un caso y poner orígenes en suspensión en el Centro de eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (suspensión de eDiscovery) 
-    
 - [Directivas de eliminación de documentos](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (solo eliminación)
     
 - [Configuración de administración de registros local](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retención) 
@@ -382,10 +405,6 @@ Vea también [Retirada de herramientas heredadas de eDiscovery](legacy-ediscover
     
 - [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación)
      
-Si ha usado previamente cualquiera de las retenciones de eDiscovery con el propósito del gobierno de información, debe usar en su lugar una directiva de retención para el cumplimiento proactivo. Use eDiscovery solo para retenciones.
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>Directivas de retención y directivas de tipo de contenido de SharePoint o directivas de administración de información
-
 Si ha configurado los sitios de SharePoint para directivas de tipo de contenido o directivas de administración de información para conservar el contenido de una lista o biblioteca, estas directivas se omiten cuando se aplica una directiva de retención. 
 
 ## <a name="related-information"></a>Información relacionada

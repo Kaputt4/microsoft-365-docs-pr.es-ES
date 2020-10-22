@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379191"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636967"
 ---
-# <a name="information-barriers"></a>Barreras de la información
+# <a name="information-barriers"></a>Barreras de información
 
 Los servicios en la nube de Microsoft incluyen eficaces capacidades de comunicación y colaboración. Pero supongamos que desea restringir la comunicación y la colaboración entre dos grupos para evitar que se produzca un conflicto de intereses en la organización. O bien, quizás desee restringir la comunicación y la colaboración entre determinadas personas dentro de la organización con el fin de proteger la información interna. Microsoft 365 permite la comunicación y la colaboración entre grupos y organizaciones, así que hay una forma de restringir la comunicación y la colaboración entre grupos de usuarios específicos cuando sea necesario. Con las barreras de la información, puede hacerlo. 
 
@@ -35,7 +35,7 @@ Las barreras de la información ahora son compatibles con Microsoft Teams, Share
 - Un equipo de investigación solo debe llamar o chatear en línea con un equipo de desarrollo del producto
 
 > [!IMPORTANT]
-> Las barreras informativas ***solo admiten*** dos restricciones. Las restricciones en un solo sentido, como el Departamento de marketing, se pueden comunicar con los comerciantes de día, pero ***no se admite***la comunicación comercial del día con marketing.
+> Barreras de información ***solo admite**restricciones de dos vías. Las restricciones en un solo sentido, como el marketing, se pueden comunicar con los comerciantes de día, pero_no se admiten_los comerciantes de día con marketing _ * * *.
 
 Para todos estos escenarios de ejemplo (y más), se pueden definir directivas de barrera de información para impedir o permitir las comunicaciones en Microsoft Teams. Estas directivas pueden impedir que los usuarios llamen o chatean con ellos que no deben, o bien permitir que los usuarios se comuniquen solo con grupos específicos en Microsoft Teams. Con las directivas de barrera de información en vigor, cada vez que los usuarios que están cubiertos por estas directivas intentan comunicarse con otros usuarios de Microsoft Teams, se realizan comprobaciones para evitar (o permitir) la comunicación (según las directivas de la barrera de información definida). Para obtener más información sobre la experiencia del usuario con barreras de información, consulte [barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
@@ -85,7 +85,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 - [Ver los atributos que se pueden usar para las directivas de barrera de información](information-barriers-attributes.md)

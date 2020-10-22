@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: 30f3c45945b4879be17eadfe04e8ccb8526df16a
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379254"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636989"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Introducción a los clasificadores que se pueden entrenar (versión preliminar)
 
@@ -43,8 +43,8 @@ Los clasificadores son una característica de cumplimiento de Microsoft 365 E5 o
 
 Para acceder a los clasificadores en la interfaz de usuario: 
 
-- el administrador global debe participar en el inquilino para crear clasificadores personalizados
-- el rol de administrador de cumplimiento o el administrador de datos de cumplimiento es necesario para entrenar a un clasificador
+- el administrador global debe participar en el inquilino para crear clasificadores personalizados.
+- el rol de administrador de cumplimiento o el administrador de datos de cumplimiento es necesario para entrenar a un clasificador.
 
 Necesitará cuentas con estos permisos para usar clasificadores en estos escenarios:
 
@@ -70,7 +70,7 @@ Esta escala de tiempo refleja una implementación de ejemplo de clasificadores q
 
 ### <a name="overall-workflow"></a>Flujo de trabajo general
 
-Para obtener más información acerca del flujo de trabajo general de la creación de clasificadores interexperto personalizados, vea [flujo del proceso para crear clasificadores capacitados para clientes](classifier-learn-about.md#process-flow-for-creating-custom-classifiers)
+Para obtener más información acerca del flujo de trabajo general sobre la creación de clasificadores que se puedan entrenar de forma personalizada, vea [flujo del proceso para crear clasificadores capacitados para clientes](classifier-learn-about.md#process-flow-for-creating-custom-classifiers).
 
 ### <a name="seed-content"></a>Contenido de inicialización
 
@@ -81,7 +81,7 @@ Cuando quiera que un clasificador capacitado identifique de forma independiente 
 
 ### <a name="testing-content"></a>Pruebas de contenido
 
-Una vez que el clasificador que se puede entrenar haya procesado suficientes ejemplos positivos para crear un modelo de predicción, debe probar las predicciones que realiza para ver si el clasificador puede distinguir correctamente entre los elementos que coinciden con la categoría y los elementos que no lo hacen. Para ello, debe alimentarse en un conjunto de contenido seleccionado, con suerte más grande, que consista en muestras que deben incluirse en la categoría y en ejemplos que no lo hagan. Una vez que los procese, revise manualmente los resultados y compruebe si cada predicción es correcta, incorrecta o no está seguro. El clasificador capacitado usa estos comentarios para mejorar su modelo de predicción.
+Una vez que el clasificador que se puede entrenar haya procesado suficientes ejemplos positivos para crear un modelo de predicción, debe probar las predicciones que realiza para ver si el clasificador puede distinguir correctamente entre los elementos que coinciden con la categoría y los elementos que no lo hacen. Para ello, seleccione otro conjunto de contenido seleccionado humano que consista en muestras que deben incluirse en la categoría y en ejemplos que no lo hagan. Debe probar con datos diferentes de los datos de inicialización iniciales que ha proporcionado por primera vez. Una vez que los procese, revise manualmente los resultados y compruebe si cada predicción es correcta, incorrecta o no está seguro. El clasificador capacitado usa estos comentarios para mejorar su modelo de predicción.
 
 > [!TIP]
 > Para obtener los mejores resultados, tenga al menos 200 elementos en el conjunto de muestras de prueba con una distribución equitativa de las coincidencias negativas y positivas.
@@ -90,24 +90,24 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 1. Recopilar entre 50-500 elementos de contenido de inicialización. Estos deben ser solo ejemplos que representen de forma segura el tipo de contenido que desea que el clasificador capacitado identifique como en la categoría de clasificación. Vea las [extensiones de nombre de archivo y los tipos de archivo analizados predeterminados en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo compatibles.
 
-> [!IMPORTANT]
-> Los elementos de la muestra de inicialización y de prueba no deben cifrarse y deben estar en inglés.
+   > [!IMPORTANT]
+   > Los elementos de la muestra de inicialización y de prueba no deben cifrarse y deben estar en inglés.
 
-> [!IMPORTANT]
-> Asegúrese de que los elementos del conjunto de SEED son ejemplos **fuertes** de la categoría. El clasificador que se puede entrenar crea inicialmente su modelo en función de su inicialización. El clasificador presupone que todas las muestras de inicialización son positivos y no tienen forma de saber si una muestra es una coincidencia débil o negativa con la categoría.
+   > [!IMPORTANT]
+   > Asegúrese de que los elementos del conjunto de SEED son ejemplos **fuertes** de la categoría. El clasificador que se puede entrenar crea inicialmente su modelo en función de su inicialización. El clasificador presupone que todas las muestras de inicialización son positivos y no tienen forma de saber si una muestra es una coincidencia débil o negativa con la categoría.
 
 2. Colocar el contenido de inicialización en una carpeta de SharePoint Online que esté dedicada exclusivamente a contener *el contenido de inicialización*. Tome nota de la dirección URL del sitio, la biblioteca y la carpeta.
 
-> [!TIP]
-> Si crea un sitio y una carpeta nuevos para los datos de inicialización, deje que se indexe al menos una hora para que esa ubicación se Indice antes de crear el clasificador que va a entrenar que usará esos datos de inicialización.
+   > [!TIP]
+   > Si crea un sitio y una carpeta nuevos para los datos de inicialización, deje que se indexe al menos una hora para que esa ubicación se Indice antes de crear el clasificador que va a entrenar que usará esos datos de inicialización.
 
-3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y Abra **Microsoft 365 Compliance Center** o la clasificación de datos del **centro de seguridad de Microsoft 365**  >  **Data classification**
+3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y abra el **centro de cumplimiento** de Microsoft 365 o la clasificación de datos del **centro de seguridad de Microsoft 365**  >  **Data classification**.
 
 4. Elija la pestaña **clasificadores** que se puede entrenar.
 
 5. Elija **crear clasificador capacitado**.
 
-6. Rellene los valores apropiados para los `Name` `Description` campos y de la categoría de los elementos que desea que identifique este clasificador capacitado.
+6. Rellene los valores apropiados para `Name` los `Description` campos y de la categoría de elementos que desea que identifique este clasificado que se puede entrenar.
 
 7. Seleccione el sitio de SharePoint Online, la biblioteca y la dirección URL de la carpeta para el sitio de contenido semilla del paso 2. Elija `Add` .
 
@@ -117,18 +117,18 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 10. Ahora puede ver la página de detalles eligiendo el clasificador.
 
-
-![clasificador entrenado preparado para pruebas](../media/classifier-trainable-ready-to-test-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![clasificador entrenado preparado para pruebas](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Recopile al menos 200 elementos de contenido de prueba (10.000 máx.) para obtener los mejores resultados. Debe tratarse de una mezcla de elementos que son fuertes positivos, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Vea las [extensiones de nombre de archivo y los tipos de archivo analizados predeterminados en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo compatibles.
 
-> [!IMPORTANT]
-> Los elementos de ejemplo no deben estar cifrados y deben estar en inglés.
+    > [!IMPORTANT]
+    > Los elementos de ejemplo no deben estar cifrados y deben estar en inglés.
 
 12. Colocar el contenido de prueba en una carpeta de SharePoint Online que esté dedicada a contener *el contenido de prueba únicamente*. Anote la dirección URL del sitio, la biblioteca y la carpeta de SharePoint Online.
 
-> [!TIP]
-> Si crea un nuevo sitio y una carpeta para los datos de prueba, permita al menos una hora para indizar esa ubicación antes de crear el clasificador que va a formar parte de la información que usará esos datos de inicialización.
+    > [!TIP]
+    > Si crea un nuevo sitio y una carpeta para los datos de prueba, permita al menos una hora para indizar esa ubicación antes de crear el clasificador que va a formar parte de la información que usará esos datos de inicialización.
 
 13. Elija `Add items to test` .
 
@@ -138,17 +138,20 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 16. Cuando el clasificador que se pueda entrenar termine de procesar los archivos de prueba, el estado de la página Detalles cambiará a `Ready to review` . Si necesita aumentar el tamaño de la muestra de prueba, elija `Add items to test` y permita que el clasificador que se puede entrenar procese los elementos adicionales.
 
-![captura de pantalla de listo para revisar](../media/classifier-trainable-ready-to-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![captura de pantalla de listo para revisar](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Elija `Tested items to review` Tab para revisar los elementos.
 
 18. Microsoft 365 presentará 30 elementos a la vez. Revise y, en el `We predict this item is "Relevant". Do you agree?` cuadro, elija `Yes` o `No` o `Not sure, skip to next item` . La precisión del modelo se actualiza automáticamente después de cada 30 elementos.
 
-![cuadro revisar elementos](../media/classifier-trainable-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![cuadro revisar elementos](../media/classifier-trainable-review-detail.png)
 
 19. Revise *al menos* 200 elementos. Una vez que la puntuación de precisión se ha estabilizado, la opción **publicar** estará disponible y el estado del clasificador se dirá `Ready to use` .
 
-![puntuación de precisión y lista para publicar](../media/classifier-trainable-review-ready-to-publish.png)
+    > [!div class="mx-imgBorder"]
+    > ![puntuación de precisión y lista para publicar](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publique el clasificador.
 
@@ -159,10 +162,15 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 Use este procedimiento para conceder a otros usuarios permisos para entrenar, revisar y ajustar el clasificador que se ha personalizado para su formación.  
  
 1. Como creador del clasificador, un administrador global o administrador de exhibición de documentos electrónicos se conecta al centro de cumplimiento mediante PowerShell usando los procedimientos descritos en [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true).
-2. Ejecute este comando:
-```powershell
-Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-```
-Por ejemplo: `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 
-Puede ejecutar este comando varias veces para agregar varios usuarios. Tenga en cuenta que solo puede agregar grupos de roles de Exchange Online Protection (EOP) y no grupos de roles de Azure.
+2. Ejecute este comando:
+
+   ```powershell
+   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
+   ```
+   
+   Por ejemplo:
+   
+   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
+
+   Puede ejecutar este comando varias veces para agregar varios usuarios. Tenga en cuenta que solo puede agregar grupos de roles de Exchange Online Protection (EOP) y no grupos de roles de Azure.

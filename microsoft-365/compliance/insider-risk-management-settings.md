@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600385"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651444"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de Insider
 
@@ -81,7 +81,7 @@ Para habilitar la supervisión de actividades de riesgo en los dispositivos e in
 
 Asegúrese de que los dispositivos con Windows 10 que va a informar de la administración de riesgos de Insider cumplan estos requisitos.
 
-1. Debe estar ejecutando Windows 10 x64 compilación 1809 o posterior.
+1. Debe ejecutar Windows 10 x64 compilación 1809 o posterior y debe tener instalada la [actualización de Windows 10 (SO compilación 17763,1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) del 20 de febrero de 2020.
 2. Todos los dispositivos deben estar [unidos a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
 3. Instale el examinador perimetral de Microsoft cromo en el dispositivo de extremo para supervisar las acciones para la actividad de carga en la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -364,6 +364,9 @@ Complete los siguientes pasos para eliminar un activo físico con prioridad:
 [Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) es un servicio de flujo de trabajo que automatiza acciones en aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas con estas aplicaciones y servicios. Cuando habilita los flujos de alimentación automatizada para la administración de riesgos de Insider, puede automatizar tareas importantes para casos y usuarios. Puede configurar los flujos de alimentación automatizada para recuperar información de usuarios, alertas y casos, y compartir esta información con las partes interesadas y otras aplicaciones, así como automatizar acciones en la administración de riesgos de Insider, como la publicación en notas de mayúsculas o minúsculas. Los flujos de alimentación automatizada se aplican a los casos y a los usuarios del ámbito de una directiva.
 
 Los clientes con suscripciones de Microsoft 365 que incluyen la administración de riesgos de Insider no necesitan otras licencias de Power automatizada para usar las plantillas recomendadas de administración de riesgos de Insider. Estas plantillas se pueden personalizar para apoyar a su organización y cubrir los principales escenarios de administración de riesgos de Insider. Si decide usar las características de automatizar la alimentación avanzada en estas plantillas, cree una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o use las plantillas de Power automatizada para otras áreas de cumplimiento en Microsoft 365, es posible que necesite otras licencias de Power automatizada.
+
+>[!IMPORTANT]
+>¿Recibe mensajes para la validación de licencia adicional al probar los flujos de alimentación automatizada? Es posible que su organización no haya recibido todavía actualizaciones de servicio para esta característica de vista previa. Las actualizaciones se están implementando y todas las organizaciones con suscripciones de Microsoft 365 que incluyan la administración de riesgos de Insider deben disponer de soporte de licencia para los flujos creados a partir de las plantillas de Power automatization recomendadas antes del 30 de octubre de 2020.
 
 Las siguientes plantillas de automatización se proporcionan a los clientes para que admitan la automatización de procesos para usuarios y casos de la administración de riesgos de Insider:
 

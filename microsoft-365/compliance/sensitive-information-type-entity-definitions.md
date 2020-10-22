@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487498"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656057"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -60,14 +60,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - La función Func_aba_routing encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ABA_Routing.
 
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función Func_aba_routing encuentra contenido que coincide con el patrón.
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -75,37 +81,36 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- ABA
-- aba #
-- aba routing #
-- aba routing number
-- ABA #
-- abarouting #
 - aba number
+- ABA #
+- ABA
+- abarouting #
 - abaroutingnumber
-- american bank association routing #
-- american bank association routing number
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
-- bank routing number
 - bankrouting #
 - bankroutingnumber
+- distribuir #
+- Nº de enrutamiento
+- número de enrutamiento
 - routing transit number
-- RTN 
-   
+- distribuir #
+- RTN
+
+
 ## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
 
 ### <a name="format"></a>Formato
 
-Ocho dígitos separados por puntos
+Ocho dígitos con o sin puntos
 
 ### <a name="pattern"></a>Patrón
 
 Ocho dígitos:
 - dos dígitos
-- un punto
+- un período opcional
 - tres dígitos
-- un punto
+- un período opcional
 - tres dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -133,14 +138,14 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identidad 
-- Tarjeta de identidad nacional de identificación 
+- cedula 
+- cédula 
 - DNI 
-- Registro Nacional de NIC de personas 
-- Documento Nacional de Identidad 
-- Registro nacional de las personas 
-- Identidad 
-- Identificación 
+- documento nacional de identidad 
+- número de documento 
+- documento numero 
+- Registro Nacional de las personas 
+- rnp 
    
 ## <a name="australia-bank-account-number"></a>Número de cuenta bancaria de Australia
 
@@ -697,8 +702,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -709,9 +714,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -733,9 +738,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -786,9 +791,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -803,9 +807,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -866,9 +868,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 - número de identidad
-- 
-national id
-- personalausweis republik österreich
+- national id
+- personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>Número de pasaporte de Austria
 Esta entidad de tipo de información confidencial solo está disponible en el tipo sensitiveinformation de número de pasaporte de la UE.
@@ -913,13 +914,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -1043,7 +1044,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - st.nr.
 - steuernummer
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -1648,8 +1648,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -1660,9 +1660,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -1684,9 +1684,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -1737,9 +1737,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -1754,9 +1753,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -1773,8 +1770,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- 
-permis de conduire
+- permis de conduire
 - numéro Permis conduire
 
 
@@ -1847,10 +1843,9 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - nationalnumber
 - NIF #
 - NIF
-- numéro d'assuré
+- numéro d'assuré
 - numéro de registros nacionales
 - numéro de sécurité
-
 - numéro d'identification
 - numéro d'immatriculation
 - numéro nacional
@@ -1862,12 +1857,11 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - registro
 - registrationsnumme
 - registrierung
-- número de la seguridad social
+- social security number
 - SSN #
 - SSN
 - steuernummer
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -1923,13 +1917,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -2323,8 +2317,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -2335,9 +2329,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -2359,9 +2353,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -2412,9 +2406,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -2429,9 +2422,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -2505,13 +2496,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - bnn
 - bucn #
 - bucn
-- edinen grazhdanski nomer
+- edinen grazhdanski nomer
 - egn #
 - egn
 - identification number
-
-- 
-national id
+- national id
 - número nacional
 - nationalnumber #
 - nationalnumber
@@ -2519,7 +2508,7 @@ national id
 - no personal
 - número personal
 - personalidnumber #
-- número de la seguridad social
+- social security number
 - SSN #
 - SSN
 - identificador civil uniforme
@@ -2532,17 +2521,17 @@ national id
 - número de ciudadanía único
 - егн #
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
 - identificador униформ
 - униформ граждански ID
-- униформ граждански не
-- униформ граждански номер
+- униформ граждански не
+- униформ граждански номер
 - униформгражданскиid #
 - униформгражданскине. #
 
@@ -2585,13 +2574,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -3333,28 +3322,20 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- 
-card verification
-
+- card verification
 - card identification number
 - cvn
 - cid
 - cvc2
 - cvv2
-- 
-pin block
+- pin block
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
 - cryptogramme
-- 
-numéro de sécurité
+- numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -3365,32 +3346,26 @@ numéro de sécurité
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- COD.sicurezza
-- 
-cod sicurezza
+- COD. sicurezza
+- cod sicurezza
 - n autorizzazione
 - Código
 - codigo
-- COD.seg
-- 
-cod seg
+- COD. seg
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-- campos.segurança
-- COD.seguranca
-- COD.segurança
-- campos.seguranca
-- Cód segurança
-- c.o.d. SEGURANCA
-- c.o.d. segurança
-- Cód SEGURANCA
+- campos. segurança
+- COD. seguranca
+- COD. segurança
+- campos. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -3398,20 +3373,15 @@ cod seg
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- 
-data scad
+- data scad
 - fecha de expiracion
-
 - fecha de venc
 - 1er
-- 
-válido hasta
+- válido hasta
 - valido hasta
 - vto
-- 
-data de expiração
+- data de expiração
 - data de expiracao
-
 - data em que expira
 - validade
 - valorar
@@ -3420,9 +3390,9 @@ data de expiração
 - número de transacción
 - número de referencia
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番号
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
@@ -3431,15 +3401,13 @@ data de expiração
 - american express
 - americanexpress
 - americano espresso
-
 - Régimen
 - MasterCard
 - master card
 - valuación
 - MasterCard
-- 
-master cards
-- Club de comensal
+- master cards
+- diner's Club
 - diners club
 - dinersclub
 - advierte
@@ -3449,27 +3417,20 @@ master cards
 - JCB
 - BrandSmart
 - japanese card bureau
-
 - carte blanche
 - carteblanche
-- tarjeta de crédito
+- credit card
 - CC #
 - # CC:
-- fecha de expiración
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
 - bankcard
-- 
-card number
+- card number
 - card num
 - cardnumber
 - cardnumbers
@@ -3495,10 +3456,8 @@ card number
 - atm cards
 - atmcards
 - enrutar
-- 
-en route
+- en route
 - card type
-
 - Acct Cardmember
 - cuenta cardmember
 - Cardno
@@ -3509,22 +3468,14 @@ en route
 - cuenta de usuario de tarjeta
 - Cardmember acct.
 - card no.
-
 - Nº de tarjeta
 - card number
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
 - kreditkarte
 - karte
@@ -3538,91 +3489,57 @@ en route
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- 
-carta di credito
+- carta di credito
 - carta credito
-- z.e.n..cobro
+- z.e.n.. cobro
 - n carta
-- Nº.cobro
-- 
-nr carta
+- Nº. cobro
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-- No.de tarjeta
-- sin tarjeta de
+- No. de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
 - tarjetahabiente
-- 
-cartão de crédito
+- cartão de crédito
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
+- número do cartão
 - numero do cartão
-
 - número do cartao
-
 - numero do cartao
-
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do cartão
+- nº do cartão
 - nº do cartao
-- Nº.do cartão
-- no cartão
-- no hacer carta
-- No.do cartão
-- No.do cartao
+- Nº. do cartão
+- no do cartão
+- no do cartao
+- No. do cartão
+- No. do cartao
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3634,23 +3551,23 @@ número do cartão
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
 - Visa カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 
 
@@ -3701,8 +3618,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -3713,9 +3630,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -3737,9 +3654,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -3790,9 +3707,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -3807,9 +3723,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -3857,20 +3771,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstorski broj građana
+- majstorski broj građana
 - número de ciudadano principal
-- nacionalni identifikacijski broj
-- número de identificación nacional
+- nacionalni identifikacijski broj
+- national identification number
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - identificador osobni
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - número de identificación personal
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -3926,13 +3839,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -3986,20 +3899,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstorski broj građana
+- majstorski broj građana
 - número de ciudadano principal
-- nacionalni identifikacijski broj
-- número de identificación nacional
+- nacionalni identifikacijski broj
+- national identification number
 - OIB #
 - OIB
-- osobna iskaznica
+- osobna iskaznica
 - identificador osobni
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - número de identificación personal
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -4124,8 +4036,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -4136,9 +4048,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -4160,9 +4072,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -4213,9 +4125,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -4230,9 +4141,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -4287,8 +4196,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - número de tarjeta de identificación
 - número de tarjeta de identidad
-- kimlik karti
-- número de identificación nacional
+- kimlik karti
+- national identification number
 - número de identificación personal
 - ταυτοτητασ
 
@@ -4332,13 +4241,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -4407,7 +4316,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-
 - código de identificación de impuestos
 - n.º de identificación fiscal
 - número de identificación fiscal
@@ -4426,12 +4334,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - ID de estaño
 - n.º de estaño
 - / #
-- vergi kimlik kodu
-- vergi kimlik numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
+- vergi kimlik kodu
+- vergi kimlik numarası
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 
 ## <a name="czech-drivers-license-number"></a>Número de permiso de conducción de Checo
@@ -4485,8 +4393,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -4497,9 +4405,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -4521,9 +4429,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -4574,9 +4482,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -4591,9 +4498,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -4646,13 +4551,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -4722,32 +4627,31 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de nacimiento
 - identificador de República Checa
 - czechidno #
-- daňové číslo
-- identifikační číslo
+- daňové číslo
+- identifikační číslo
 - n.º de identidad
 - número de identidad
 - identityno #
 - identityno
 - número de seguro
-- número de identificación nacional
+- national identification number
 - nationalnumber #
 - número nacional
-- osobní číslo
+- osobní číslo
 - personalidnumber #
 - número de identificación personal
 - número de identificación personal
 - número personal
 - ID #
 - pid
-- pojištění číslo
+- pojištění číslo
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - SSN
 - SSN #
-- número de la seguridad social
+- social security number
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -4874,8 +4778,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -4886,9 +4790,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -4910,9 +4814,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -4963,9 +4867,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -4980,9 +4883,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -5033,13 +4934,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -5096,17 +4997,16 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
-- centrale personregister
+- centrale personregister
 - registreringssystem civil
 - RCP
 - RCP #
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
 - tarjeta de mantenimiento
 - número de tarjeta de seguro de salud
 - número de seguro de salud
 - identification number
-
 - identifikationsnummer
 - identifikationsnummer #
 - número de identidad
@@ -5127,7 +5027,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - Kode de patinaje
 - Nummer de patinaje
 - skattenummer
-- número de la seguridad social
+- social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5140,7 +5040,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - número de impuesto
 - NIF-CIF
 - tax id
-
 - número de identificación fiscal
 - taxi #
 - taxnumber #
@@ -5237,7 +5136,7 @@ dos letras seguidas por siete dígitos
 
 El patrón debe incluir todo lo siguiente:
 - una letra (no distingue entre mayúsculas y minúsculas) de este conjunto de letras posibles: abcdefghjklmnprstux, que es un código del inscrito 
-- una letra (no distingue entre mayúsculas y minúsculas), que es la primera letra del apellido del inscrito 
+- una letra (no distingue entre mayúsculas y minúsculas), que es la primera letra del apellido o del dígito ' 9 ' del inscrito
 - siete dígitos, el último de los cuales es el dígito de control
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -5248,20 +5147,41 @@ Sí
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_dea_number encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de `Keyword_dea_number`
+- Se supera la suma de comprobación.
+
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función Func_dea_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-ninguno
+#### <a name="keyword_dea_number"></a>Keyword_dea_number
+
+- DEA
+- DEA #
+- Administración de la aplicación de drogas
+- organismo de cumplimiento de drogas
 
 
 ## <a name="estonia-drivers-license-number"></a>Número de permiso de conducción de Estonia
@@ -5313,8 +5233,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -5325,9 +5245,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -5349,9 +5269,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -5402,9 +5322,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -5419,9 +5338,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -5495,9 +5412,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - isikukood #
 - isikukood
 - identificador maksu
-- maksukohustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
-- número de identificación nacional
+- national identification number
 - número nacional
 - código personal
 - número de identificación personal
@@ -5505,7 +5422,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de identificación personal
 - personalidnumber #
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -5562,13 +5478,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -6131,8 +6047,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -6143,9 +6059,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -6167,9 +6083,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -6220,9 +6136,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -6237,9 +6152,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -6305,7 +6218,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - ehic #
 - ehic
 - finlandehicnumber #
-- finska sjukförsäkringskort
+- finska sjukförsäkringskort
 - tarjeta de mantenimiento
 - tarjeta de seguro de salud
 - número de seguro de salud
@@ -6313,9 +6226,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförsäkring nummer
+- sjukförsäkring nummer
 - sjukförsäkringskort
-- suomen sairausvakuutuskortti
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
@@ -6363,8 +6276,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero #
 - henkilötunnusnumero
@@ -6372,12 +6285,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - identificador no
 - número de identificador
 - identification number
-
-- identiteetti numero
+- identiteetti numero
 - número de identidad
 - idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
 - tarjeta de identificación nacional
 - n.º de identificación nacional
 - identificador personal
@@ -6385,10 +6297,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - personalidnumber #
 - personbeteckning
 - personnummer
-- número de la seguridad social
+- social security number
 - sosiaaliturvatunnus
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -6405,7 +6316,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - n.º de estaño
 - / #
 - tunnistenumero
-- tunnus numero
+- tunnus numero
 - tunnusluku
 - tunnusnumero
 - verokortti
@@ -6452,13 +6363,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -6588,8 +6499,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -6600,9 +6511,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -6624,9 +6535,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -6677,9 +6588,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -6694,24 +6604,16 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
 - número de DL
-- 
-permis de conduire
-- 
-licence number
-- 
-license number
-- 
-licence numbers
-- 
-
-license numbers
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 - numéros de licencia
 
 
@@ -6801,13 +6703,12 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-
 - Carte de Nationale d'identité
 - decir Nationale d'idenite no
 - CNI #
 - CNI
-- compte bancaire
-- número de identificación nacional
+- compte bancaire
+- national identification number
 - identidad nacional
 - nationalidno #
 - numéro d'assurance maladie
@@ -7007,7 +6908,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - numéro d'identification fiscal
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -7085,7 +6985,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - IVA #
 - impuesto sobre el valor añadido
 - identificación de Siren no numéro d'identification Taxe sur de Valeur ajoutée
-- taxe valeur ajoutée
+- taxe valeur ajoutée
 - Taxe sur la Valeur ajoutée
 - n° TVA
 - numéro de TVA
@@ -7135,22 +7035,18 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - ausstellungsdatum
 - ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
 - führerschein
 - fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7166,8 +7062,7 @@ ausstellende behoerde
 - n-Führerschein
 - n-fuhrerschein
 - n-fuehrerschein
-- 
-permis de conduire
+- permis de conduire
 - driverlic
 - driverlics
 - driverlicense
@@ -7176,8 +7071,8 @@ permis de conduire
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -7188,9 +7083,9 @@ permis de conduire
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -7212,9 +7107,9 @@ permis de conduire
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -7265,9 +7160,8 @@ permis de conduire
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -7282,9 +7176,7 @@ permis de conduire
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - dlno
 
@@ -7335,13 +7227,13 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - determinación
 - identifikation
 - identifizierungsnummer
-- tarjeta de identidad
+- documento de identidad
 - número de identidad
 - ID-Nummer
 - identificador personal
 - personalausweis
 - persönliche ID Nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-ID-Nummer
 
 
@@ -7458,7 +7350,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -7538,8 +7429,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - IVA #
 - número de IVA mehrwertsteuer
 - mwst
-- mehrwertsteuer identifikationsnummer
-- mehrwertsteuer nummer
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
 
 
 ## <a name="greece-drivers-license-number"></a>Número de permiso de conducción de Grecia
@@ -7588,8 +7479,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -7600,9 +7491,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -7624,9 +7515,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -7677,9 +7568,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -7694,9 +7584,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -7763,7 +7651,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - identificación nacional griega
 - tarjeta de identificación personal griega
 - identificador de policía griega
-- tarjeta de identidad
+- documento de identidad
 - tautotita
 - ταυτότητα
 - ταυτότητας
@@ -7810,13 +7698,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -7872,7 +7760,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - aφμ | aφμ αριθμός
 - aφμ
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -7891,9 +7778,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - ID de estaño
 - n.º de estaño
 - / #
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>Número de tarjeta de identidad de Hong Kong (HKID)
@@ -8030,8 +7917,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -8042,9 +7929,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -8066,9 +7953,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -8119,9 +8006,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -8136,9 +8022,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -8211,12 +8095,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - número de identificador
 - identification number
-
 - SZ IG
-- SZ.IG.
 - SZ. IG.
-- személyazonosító igazolvány
-- személyi igazolvány
+- SZ. IG.
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>Número de pasaporte de Hungría
@@ -8259,13 +8142,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -8394,14 +8277,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
 - NIF Húngaro
 - hungatiantin #
 - n.º de autoridad fiscal
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -8479,10 +8361,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - hungarianvatno #
 - Nº de impuestos
 - áfa del impuesto sobre el valor añadido
-- közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
-- áfa szám
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
 
 
 ## <a name="india-permanent-account-number-pan"></a>Número de cuenta permanente de India (PAN)
@@ -8494,29 +8376,39 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="pattern"></a>Patrón
 
 10 letras o dígitos:
-- Cinco letras (no distingue entre mayúsculas y minúsculas)  
+- Tres letras (no distingue entre mayúsculas y minúsculas) 
+- Una letra en C, P, H, F, A, T, B, L, J, G (no distingue entre mayúsculas y minúsculas)
+- Una carta
 - Cuatro dígitos 
-- Una letra que es un dígito de control alfabético
+- Una letra (no distingue entre mayúsculas y minúsculas)
 
 ### <a name="checksum"></a>Suma de comprobación
 
-Sí
+No
 
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_india_permanent_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_india_permanent_account_number.
-- Se supera la suma de comprobación.
+
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_india_permanent_account_number encuentra contenido que coincide con el patrón.
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -8535,7 +8427,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 ### <a name="pattern"></a>Patrón
 
 12 dígitos:
-- Cuatro dígitos 
+- Un dígito que no es 0 ni 1
+- Tres dígitos 
 - Un guión o un espacio opcional  
 - Cuatro dígitos 
 - Un guión o un espacio opcional  
@@ -8572,10 +8465,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
-- Aadhar
 - Aadhaar
-- UID
+- aadhar
+- aadhar #
+- uid
 - आधार
+- uidai
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Número de tarjeta de identidad (KTP) de Indonesia
 
@@ -8865,8 +8760,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -8877,9 +8772,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -8901,9 +8796,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -8954,9 +8849,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -8971,9 +8865,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -9029,13 +8921,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -9104,11 +8996,10 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - servicio de identidad de cliente
 - identification number
-
 - número de identificación personal
 - número de servicio público personal
 - n.º de servicio personal
-- phearsanta seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - n.º de PPS
 - número de PPS
 - número de PPS
@@ -9126,11 +9017,10 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - rsin
 - cliente de seirbhís aitheantais
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -9234,8 +9124,23 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
-- מספר זהות 
-- National ID Number
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber #
+-   número de identificador
+-   n.º de identidad        
+-   identitynumber #
+-   número de identidad
+-   israeliidentitynumber       
+-   identificador personal
+-   identificador único  
+
    
 ## <a name="italy-drivers-license-number"></a>Número de permiso de conducción de Italia
 Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial del número de licencia de conductor de la UE y está disponible como entidad de tipo independiente de información confidencial.
@@ -9353,7 +9258,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - personalcodeno #
 - código de impuestos
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - número de identidad fiscal
@@ -9414,13 +9318,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -9826,10 +9730,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - Usuarios
-- Número de pasaporte
+- Passport Number
 - N.º de pasaporte
 - Passport #
-
 - パスポート
 - パスポート番号
 - パスポートナンバー
@@ -10047,8 +9950,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -10059,9 +9962,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -10083,9 +9986,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -10136,9 +10039,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -10153,9 +10055,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -10239,7 +10139,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - número administrativo
-- alvas nē
+- alvas nē
 - número de nacimiento
 - número de ciudadano
 - número civil
@@ -10250,22 +10150,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - identificador #
 - identificador-código
 - identification number
-
-- identifikācijas numurs
+- identifikācijas numurs
 - identificador-número
 - número individual
-- latvija alva
+- latvija alva
 - identificador nacionālais
-- 
-national id
+- national id
 - número de identificación nacional
 - número de identidad nacional
 - national insurance number
-
 - número de registro nacional
-- nodokļa numurs
+- nodokļa numurs
 - identificador nodokļu
-- nodokļu identifikācija numurs
+- nodokļu identifikācija numurs
 - número de certificado personal
 - código personal
 - código de identificación personal
@@ -10279,15 +10176,13 @@ national id
 - roles kods
 - código de identificación de población
 - número de servicio público
-- 
-registration number
+- registration number
 - número de ingresos
-- número del seguro social
-- número de la seguridad social
+- social insurance number
+- social security number
 - código de impuestos estatales
-- número de archivo de impuestos
+- tax file number
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -10346,13 +10241,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -10411,8 +10306,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -10423,9 +10318,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -10447,9 +10342,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -10500,9 +10395,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -10517,9 +10411,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -10587,19 +10479,18 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis kodas
-- asmens kodas
+- asmeninis skaitmeninis kodas
+- asmens kodas
 - número de servicio de ciudadanos
 - identificador mokesčių
 - mokesčių identifikavimas número
 - mokesčių identifikavimo número
 - numeración mokesčių
-- número de identificación nacional
+- national identification number
 - código personal
 - código numérico personal
 - piliečio paslaugos número
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -10615,7 +10506,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - ID de estaño
 - n.º de estaño
 - / #
-- unikalus identifikavimo kodas
+- unikalus identifikavimo kodas
 - unikalus identifikavimo número
 - número de identificación único
 - número de identidad único
@@ -10660,13 +10551,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -10722,8 +10613,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -10734,9 +10625,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -10758,9 +10649,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -10811,9 +10702,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -10828,9 +10718,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -10912,7 +10800,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - identidad personal
 - personalidno #
 - personalidnumber #
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - identificador único
 - identidad única
 - uniqueidkey #
@@ -11015,21 +10903,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - étain #
 - identificador d'impôt
 - identifikatiounsnummer de impuestos de Luxemburgo
-- numéro d'étain
+- numéro d'étain
 - numéro d'identification fiscales de Luxembourgeois
 - numéro d'identification fiscal
-- seguridad social
+- social security
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
 - identificador Steier
-- steier identifikatiounsnummer
-- steier nummer
+- steier identifikatiounsnummer
+- steier nummer
 - identificador Steuer
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -11168,8 +11055,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -11180,9 +11067,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -11204,9 +11091,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -11257,9 +11144,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -11274,9 +11160,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -11340,14 +11224,14 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - número de servicio de ciudadanos
 - identificador TAT-taxxa
-- identifika numru tal-biljett
+- identifika numru tal-biljett
 - kodiċi numerali personali
 - numru ta ' identifikazzjoni personali
 - numru ta ' identifikazzjoni TAT-taxxa
 - numru ta ' identifikazzjoni uniku
 - numru ta ' Identità uniku
 - numru Servizz taċ-ċittadin
-- numru tat-taxxa
+- numru tat-taxxa
 - código numérico personal
 - número de identificación único
 - número de identidad único
@@ -11393,13 +11277,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -11469,17 +11353,16 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - número de servicio de ciudadanos
 - identificador TAT-taxxa
-- identifika numru tal-biljett
+- identifika numru tal-biljett
 - kodiċi numerali personali
 - numru ta ' identifikazzjoni personali
 - numru ta ' identifikazzjoni TAT-taxxa
 - numru ta ' identifikazzjoni uniku
 - numru ta ' Identità uniku
 - numru Servizz taċ-ċittadin
-- numru tat-taxxa
+- numru tat-taxxa
 - código numérico personal
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -11547,16 +11430,16 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - número personal
 - código numérico personal
 - número relacionado con la persona
-- persoonlijk nummer
+- persoonlijk nummer
 - persoonlijke numerieke código
 - persoonsgebonden
 - persoonsnummer
-- sociaal-fiscaal nummer
+- sociaal-fiscaal nummer
 - número social-fiscal
 - sofi
 - sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
+- uniek identificatienummer
+- uniek identiteitsnummer
 - número de identificación único
 - número de identidad único
 - uniqueidentityno #
@@ -11607,8 +11490,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -11619,9 +11502,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -11643,9 +11526,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -11696,9 +11579,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -11713,9 +11595,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -11821,7 +11701,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
-- btw nummer
+- btw nummer
 - identificación de impuestos de hollânske
 - número de identificador de hulandes impuesto
 - identificación de hulandes impuesto
@@ -11839,7 +11719,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - NIF-Países Bajos
 - estaño de Netherland
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - identificación de impuestos tal
@@ -11917,7 +11796,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de IVA
 - IVA #
 - wearde tafoege impuestos getadl
-- btw nûmer
+- btw nûmer
 - btw-nummer
 
 
@@ -11976,7 +11855,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
-- número de cuenta
+- account number
 - cuenta bancaria
 - bank_acct_id
 - bank_acct_branch
@@ -12042,7 +11921,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - driverslicences
 - Lic de los drivers
 - Controladores conducción
-- licencia de conductores
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -12058,7 +11937,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
+- driver's licence
 - permiso de conducción
 - driverlic #
 - driverlics #
@@ -12092,8 +11971,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - conducción del conductor #
 - permiso de conducción #
 - permiso de conducción #
-- 
-international driving permit
+- international driving permit
 - international driving permits
 - Asociación de automóvil NZ
 - Asociación de automóviles de Nueva Zelanda
@@ -12255,7 +12133,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- bienestar social #
+- bienestar social #
 - bienestar social #
 - Nº de bienestar social
 - número de bienestar social
@@ -12412,8 +12290,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -12424,9 +12302,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -12448,9 +12326,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -12501,9 +12379,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -12518,9 +12395,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -12733,7 +12608,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - companyId #
 - companyidno #
 - números statystyczny
-- numeru regon
+- numeru regon
 - numerstatystyczny #
 - numeruregon #
 
@@ -12784,7 +12659,6 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - numerar identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -12851,7 +12725,6 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - número de identificador
 - n.º de identificación
 - identification number
-
 - Nº de tarjeta de identidad
 - número de tarjeta de identidad
 - tarjeta de identificación nacional
@@ -12922,8 +12795,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -12934,9 +12807,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -12958,9 +12831,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -13011,9 +12884,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -13028,9 +12900,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -13092,13 +12962,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -13166,7 +13036,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - número de identificação Fisca
 - fiscal numero
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -13232,8 +13101,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -13244,9 +13113,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -13268,9 +13137,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -13321,9 +13190,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -13338,9 +13206,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -13417,11 +13283,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de seguro
 - insurancenumber #
 - identificación nacional #
-- 
-national id
-- número de identificación nacional
+- national id
+- national identification number
 - număr identificare personal
-- număr identitate
+- număr identitate
 - număr personal UNIC
 - număridentitate #
 - număridentitate
@@ -13433,9 +13298,8 @@ national id
 - patilla #
 - patilla
 - n.º de archivo de impuestos
-- número de archivo de impuestos
+- tax file number
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -13495,13 +13359,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -13555,19 +13419,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
-- número de pasaporte
+- passport number
 - n.º de pasaporte
-- usuarios #
+- usuarios #
 - identificador de Passport
 - passportno #
 - passportnumber #
-- паспорт нет
+- паспорт нет
 - identificador паспорт
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13615,19 +13479,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
-- número de pasaporte
+- passport number
 - n.º de pasaporte
-- usuarios #
+- usuarios #
 - identificador de Passport
 - passportno #
 - passportnumber #
-- паспорт нет
+- паспорт нет
 - identificador паспорт
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт #
 - паспортid #
-- номер паспорта
+- номер паспорта
 - номерпаспорта #
 
 
@@ -13776,8 +13640,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -13788,9 +13652,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -13812,9 +13676,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -13865,9 +13729,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -13882,9 +13745,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -13948,37 +13809,35 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
+- azonosító szám
 - número de nacimiento
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
 - número de identificador
 - n.º de identificación
 - identification number
-
-- identifikačná karta č
-- identifikačné číslo
+- identifikačná karta č
+- identifikačné číslo
 - Nº de tarjeta de identidad
 - número de tarjeta de identidad
-- národná identifikačná značka č
+- národná identifikačná značka č
 - número nacional
 - nationalnumber #
-- nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
-- rodne cislo
-- rodné číslo
-- número de la seguridad social
+- rodne cislo
+- rodné číslo
+- social security number
 - SSN #
 - SSN
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - n.º de archivo de impuestos
-- número de archivo de impuestos
+- tax file number
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -14034,13 +13893,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -14098,8 +13957,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -14110,9 +13969,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -14134,9 +13993,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -14187,9 +14046,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -14204,9 +14062,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -14272,32 +14128,30 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - emšo
-- enotna maticna številka obcana
-- tarjeta de identificación
+- enotna maticna številka obcana
+- id card
 - identification number
-
-- identifikacijska številka
-- tarjeta de identidad
+- identifikacijska številka
+- documento de identidad
 - identificador Nacionalna
 - lista potni de Nacionalni
-- 
-national id
-- osebna izkaznica
-- osebni koda
+- national id
+- osebna izkaznica
+- osebni koda
 - NE osebni
-- osebni številka
+- osebni številka
 - código personal
 - número personal
 - código numérico personal
-- številka državljana
+- številka državljana
 - número de ciudadano único
 - número de identificador único
 - número de identidad único
 - número único de ciudadano principal
 - número de registro único
-- uniqueidentityno #
+- uniqueidentityno #
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Número de pasaporte de Eslovenia
@@ -14343,13 +14197,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -14410,13 +14264,12 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
 - n.º de archivo de impuestos
-- número de archivo de impuestos
+- tax file number
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -14597,8 +14450,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -14609,9 +14462,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -14633,9 +14486,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -14686,9 +14539,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -14703,9 +14555,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -14790,10 +14640,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - DNI
 - dninúmero #
 - documento nacional de identidad
-- identidad único
+- identidad único
 - identidadúnico #
 - número de seguro
-- número de identificación nacional
+- national identification number
 - identidad nacional
 - nationalid #
 - nationalidno #
@@ -14850,13 +14700,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
 - usuarios #
-- usuarios #
+- usuarios #
 - passportid
 - passports
 - passportno
 - n.º de pasaporte
 - passportnumber
-- número de pasaporte
+- passport number
 - passportnumbers
 - números de pasaporte
 
@@ -15006,9 +14856,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - spanishcifno #
 - spanishcifno
 - n.º de archivo de impuestos
-- número de archivo de impuestos
+- tax file number
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -15152,8 +15001,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverlicences
 - Lic del conductor
 - controlador conducción
-- licencia de controlador
-- licencias de controlador
+- driver license
+- driver licenses
 - permiso de conducir
 - licencias de conducir
 - driverslic
@@ -15164,9 +15013,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driverslicenses
 - Lic de los drivers
 - Controladores conducción
-- licencia de controladores
-- licencias de controladores
-- licencia de conductores
+- drivers license
+- drivers licenses
+- drivers licence
 - licencias de conductores
 - n.º carné
 - n.º carnés
@@ -15188,9 +15037,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driver'slicences
 - Lic del conductor
 - conducción del conductor
-- permiso de conducción
-- licencias de conducir
-- permiso de conducción
+- driver's license
+- driver's licenses
+- driver's licence
 - permiso de conducción
 - listas #
 - distribución #
@@ -15241,9 +15090,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licencias de conducir #
 - permiso de conducción #
 - permiso de conducción #
-- driving licence
- 
-- licencia de conducir
+- driving licence 
+- driving license
 - dlno #
 - Lic Cond.
 - Cond. licen
@@ -15258,9 +15106,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - licen de conducción
 - licencias de conducción
 - driving licence
-
 - driving licences
-
 - permiso de conducción
 - Nº DL
 - dlno
@@ -15333,7 +15179,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - identificador #
 - n.º de identificación
 - identification number
-
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
@@ -15539,11 +15384,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - personnummer
 - Nummer de identificador de patinaje
 - Identifikation de patinaje
-- skattebetalarens identifikationsnummer
+- skattebetalarens identifikationsnummer
 - Sverige estaño
 - archivo de impuestos
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -15600,7 +15444,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362
-
 - iso 9362
 - iso9362
 - rápido #
@@ -15608,34 +15451,21 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - swiftnumber
 - swiftroutingnumber
 - swift code
-
 - swift number #
-
 - swift routing number
-
 - bic number
-
 - bic code
-
 - bic #
 - BIC #
 - bank identifier code
-
 - Organisation internationale de normalisation 9362
-
 - rapide #
-
 - code SWIFT
-
 - le numéro de swift
-
 - swift numéro d'acheminement
-
 - le numéro BIC
-
-- # <a name="bic"></a>BIC
+- # <a name="bic"></a>BIC
 - code identificateur de banque
-
 - SWIFTコード
 - SWIFT番号
 - BIC番号
@@ -15707,7 +15537,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - pid
 - número de seguro
 - personalidno #
-- número de la seguridad social
+- social security number
 - número de identificación personal
 - n.º de identificación personal
 - insuranceno #
@@ -15716,11 +15546,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número AVS
 - identidad personal no versicherungsnummer
 - identifikationsnummer
-- einzigartige identität nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
 - identificador de personnelle de identificación
-- 
-numéro de sécurité sociale
+- numéro de sécurité sociale
 
    
 ## <a name="taiwan-national-identification-number"></a>Número de identificación nacional de Taiwán
@@ -16200,26 +16029,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - national insurance number
-
 - national insurance contributions
-
 - protection act
 - Pensión
-- número de la seguridad social
+- social security number
 - insurance application
-
 - medical application
-
 - social insurance
-
 - medical attention
-
-- seguridad social
+- social security
 - great britain
-
 - NI número
 - NI no.
-- Alec #
+- Alec #
 - Alec #
 - Pensión #
 - insurancenumber
@@ -16271,7 +16093,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de impuesto
 - archivo de impuestos
 - tax id
-
 - n.º de identificación fiscal
 - número de identificación fiscal
 - Nº de impuestos #
@@ -16291,11 +16112,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-Entre 8 y 17 dígitos
+6-17 dígitos
 
 ### <a name="pattern"></a>Patrón
 
-Entre 8 y 17 dígitos consecutivos
+6-17 dígitos consecutivos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -16532,41 +16353,33 @@ No
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_formatted_itin encuentra contenido que coincide con el patrón.
-- Al menos una de las siguientes opciones es verdadera:
-    - Se encuentra una palabra clave de Keyword_itin.
-    - La función Func_us_address encuentra una dirección en el formato de fecha correcto.
-    - La función Func_us_date encuentra una fecha en el formato de fecha correcto.
-    - Se encuentra una palabra clave de Keyword_itin_collaborative.
+- Se encuentra una palabra clave de Keyword_itin.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_itin encuentra contenido que coincide con el patrón.
-- Al menos una de las siguientes opciones es verdadera:
-    - Se encuentra una palabra clave de Keyword_itin_collaborative.
-    - La función Func_us_address encuentra una dirección en el formato de fecha correcto.
-    - La función Func_us_date encuentra una fecha en el formato de fecha correcto.
+- Se encuentra una palabra clave de Keyword_itin.
+
+Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función Func_formatted_itin o Func_unformatted_itin busca contenido que coincide con el patrón.
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -16577,6 +16390,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - tax id 
 - tax identification 
 - élen 
+- i.t.i.n.
 - SSN 
 - / 
 - social security 
@@ -16585,14 +16399,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - taxi 
 - individual taxpayer 
 
-#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
-
-- Licencia 
-- LISTAS 
-- NACIMIENTO 
-- Fecha de nacimiento 
-- Birthday 
-- Fecha de nacimiento 
 
 ## <a name="us-social-security-number-ssn"></a>Número de la seguridad social de Estados Unidos (SSN)
 
@@ -16768,10 +16574,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
 - pasaporte de Ucrania
-- número de pasaporte
+- passport number
 - n.º de pasaporte
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
 - персональний
 
 
@@ -16818,7 +16624,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
 - pasaporte de Ucrania
-- número de pasaporte
+- passport number
 - n.º de pasaporte
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar directivas de DLP para aplicaciones en la nube que no son de Microsoft.
-ms.openlocfilehash: dd5a7a4bc0725d0785daec6b7635047cd91f20a2
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422762"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649661"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no sean de Microsoft (versión preliminar)
 
@@ -45,7 +45,7 @@ Antes de empezar a usar directivas de DLP en aplicaciones en la nube que no sean
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Preparar el entorno de seguridad de aplicaciones en la nube
 
-Las directivas DLP en las aplicaciones en la nube que no son de Microsoft usan capacidades DLP de Cloud App Security. Para usarlo, debe preparar el entorno de Cloud App Security. Para obtener instrucciones, vea [establecer la visibilidad, la protección y las acciones de gobierno de isntant para las aplicaciones](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+Las directivas DLP en las aplicaciones en la nube que no son de Microsoft usan capacidades DLP de Cloud App Security. Para usarlo, debe preparar el entorno de Cloud App Security. Para obtener instrucciones, vea [establecer la visibilidad instantánea, la protección y las acciones de gobierno de las aplicaciones](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Conectar una aplicación en la nube que no es de Microsoft
 
