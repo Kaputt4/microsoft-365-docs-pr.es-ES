@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso usó un equipo con aislamiento de seguridad para un proyecto de secreto principal para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399494"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656088"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto principal de la compañía contoso
 
@@ -77,7 +77,7 @@ Como se crearon los canales privados para el proyecto 2X, el propietario del gru
 
 A continuación se muestra la configuración resultante del equipo del proyecto de 2X con aislamiento de seguridad.
 
-![La configuración resultante del equipo del proyecto de 2X](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![La configuración resultante del equipo del proyecto de 2X](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>Paso 4: miembros del equipo con experiencia en el 2X del proyecto
 
@@ -92,7 +92,7 @@ El resultado final fue un entorno seguro en el que el proyecto 2X de miembros de
 
 A continuación, se muestra un ejemplo de un archivo almacenado en el sitio del espacio de nombre 2 subyacente con la etiqueta de sensibilidad espacio de proyecto 2 asignada.
 
-![Un ejemplo de un archivo almacenado en el sitio del proyecto 2X subyacente](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![Un ejemplo de un archivo almacenado en el sitio del proyecto 2X subyacente](../media/contoso-team-for-top-secret-project-example.png)
 
 En un par de instancias, Project 2X los miembros del equipo descargaron archivos protegidos por la etiqueta del proyecto 2X en una unidad local para trabajar sin conexión. 
 

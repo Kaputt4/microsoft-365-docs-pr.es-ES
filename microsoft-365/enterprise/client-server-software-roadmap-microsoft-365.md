@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar el software de cliente y servidor para Microsoft 365.
-ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464413"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655966"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Guía básica de software de cliente y servidor para Microsoft 365
 
@@ -161,13 +161,11 @@ Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para tener una mejor idea de cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, consulte el [póster de transición](../downloads/transition-org-to-m365.pdf).
+Para obtener una imagen mejor sobre cómo mover toda la organización a los productos y servicios de Microsoft 365 para empresas, descargue y vea el [póster de transición](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Imagen del póster de transición a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Imagen del póster de Transición a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Este póster de dos páginas es una forma rápida de realizar un inventario de su infraestructura existente y conseguir las instrucciones para moverse al producto o servicio correspondiente de Microsoft 365 Enterprise. Incluye productos de Windows y Office y otros elementos de infraestructura y seguridad, tales como la administración de dispositivos, la identidad, la información y la protección contra amenazas.
-
-Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) en formato carta, legal o tabloide (11 x 17).
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Cómo Microsoft realiza Microsoft 365 para empresas
 

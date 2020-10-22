@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487157"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655976"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -75,13 +75,11 @@ También puede [descargar una copia del póster](https://github.com/MicrosoftDoc
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 
-Para tener una mejor idea de cómo trasladar a toda la organización a los productos y servicios de Microsoft 365 para empresas, consulte el [póster de transición](../downloads/transition-org-to-m365.pdf).
+Para tener una mejor idea de cómo trasladar a toda la organización a los productos y servicios de Microsoft 365 para empresas, consulte el [póster de transición](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Imagen del póster de Transición a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![Imagen del póster de Transición a Microsoft 365](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 Este póster de dos páginas es una forma rápida de hacer un inventario de la infraestructura existente. Le ayuda a encontrar las instrucciones para pasar al producto o servicio correspondiente en Microsoft 365 para empresas. Incluye los productos de Windows y Office, así como otros elementos de infraestructura y seguridad, como la administración de dispositivos, la identidad y la información y protección contra amenazas.
-
-Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Finalización del soporte técnico para clientes y servidores de Windows 7 y Office 2010
 

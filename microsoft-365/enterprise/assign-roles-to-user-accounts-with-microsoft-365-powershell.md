@@ -19,22 +19,22 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 de forma rápida y sencilla para asignar roles a las cuentas de usuario.
-ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 de forma rápida y sencilla para asignar roles de administrador a las cuentas de usuario.
+ms.openlocfilehash: 1486c86172cd34e6e88f8cd02d003967518bcdb7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235435"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655952"
 ---
-# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Asignar roles a cuentas de usuario de Microsoft 365 con PowerShell
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Asignar roles de administrador a las cuentas de usuario de Microsoft 365 con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede asignar roles a cuentas de usuario de forma rápida y sencilla mediante PowerShell para Microsoft 365.
+Puede asignar roles de administración a las cuentas de usuario de forma rápida y sencilla mediante PowerShell para Microsoft 365.
 
 >[!Note]
->[Obtenga información sobre cómo asignar roles a cuentas de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) con el centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, consulte [Manage Users and Groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Obtenga información sobre cómo asignar roles de administrador a las cuentas de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) con el centro de administración de Microsoft 365. Para obtener una lista de recursos adicionales, consulte [Manage Users and Groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
@@ -43,7 +43,7 @@ En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microso
   
 A continuación, determine el nombre de inicio de sesión de la cuenta de usuario que desea agregar a un rol (ejemplo: fredsm@contoso.com). Esto también se conoce como el nombre principal de usuario (UPN).
 
-A continuación, determine el nombre de la función. Use esta [lista de permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+A continuación, determine el nombre del rol de administrador. Use esta [lista de permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
 >Preste atención a las notas de este artículo. Algunos nombres de rol son diferentes para Azure AD PowerShell. Por ejemplo, el rol "Administrador de SharePoint" en el centro de administración de Microsoft 365 se denomina "administrador del servicio de SharePoint" para Azure AD PowerShell.
@@ -53,7 +53,7 @@ A continuación, rellene los nombres de rol y de inicio de sesión y ejecute est
   
 ```powershell
 $userName="<sign-in name of the account>"
-$roleName="<role name>"
+$roleName="<admin role name>"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 if ($role -eq $null) {
 $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
@@ -63,7 +63,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-A continuación, se muestra un ejemplo de un conjunto de comandos completado que asigna el rol de administrador de servicios de SharePoint a la cuenta belindan@contoso.com:
+A continuación, se muestra un ejemplo de un conjunto de comandos completado que asigna el rol de administrador del administrador del servicio de SharePoint a la cuenta belindan@contoso.com:
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -77,7 +77,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Para mostrar la lista de nombres de usuario para una función específica, use estos comandos.
+Para mostrar la lista de nombres de usuario para un rol de administrador específico, use estos comandos.
 
 ```powershell
 $roleName="<role name>"
@@ -118,17 +118,17 @@ Si se usa para trabajar con los nombres para mostrar de las cuentas de usuario, 
     
 - El rol que desea asignar.
     
-    Para mostrar la lista de los roles disponibles que puede asignar a las cuentas de usuario, use este comando:
+    Para mostrar la lista de roles de administrador disponibles que puede asignar a las cuentas de usuario, use este comando:
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Una vez que haya determinado el nombre para mostrar de la cuenta y el nombre de la función, use estos comandos para asignar el rol a la cuenta:
+Una vez que haya determinado el nombre para mostrar de la cuenta y el nombre del rol de administrador, use estos comandos para asignar el rol a la cuenta:
   
 ```powershell
 $dispName="<The Display Name of the account>"
-$roleName="<The role name you want to assign to the account>"
+$roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
