@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión para la compatibilidad con juegos de caracteres de doble byte.
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695281"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681506"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>Notas de la versión sobre la compatibilidad con juegos de caracteres de doble byte (vista previa)
 
@@ -29,15 +29,6 @@ ms.locfileid: "46695281"
 - Chino (tradicional)
 - Coreano
 - Japonés
-
-Esta versión preliminar solo se encuentra en la nube comercial y la implementación está limitada a:
-
-- Japón
-- Corea
-- China
-- RAE de Hong Kong
-- RAE de Macao
-- Taiwán
 
 Esta compatibilidad está disponible para tipos de información confidencial y diccionarios de palabras clave y se reflejará en las soluciones de prevención de pérdida de datos, cumplimiento de las comunicaciones, Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams.
 
