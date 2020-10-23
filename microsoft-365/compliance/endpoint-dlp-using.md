@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0f1fc3159de6545007ddd62da2fca17ce87ad1dc
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430248"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636821"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Uso de la Prevención de pérdida de datos de los puntos de conexión (versión preliminar)
 
@@ -36,11 +36,12 @@ Antes de empezar, configure las opciones de configuración DLP que se aplican a 
 - restricciones de salida de la nube
 - restricciones de aplicaciones no permitidas
 
-O bien:
+O bien
 
-- Si desea excluir a las rutas de archivo con ruido de supervisar
+- Si desea excluir de la supervisión las rutas de archivo ruidosas
 
-![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > [!div class="mx-imgBorder"]
+  > ![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
@@ -48,13 +49,19 @@ Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DL
 
 Puede usar esta lógica para crear sus rutas de exclusión:
 
-- Una ruta de archivo es válida cuando termina en "\". Esto incluye solo a los archivos que se encuentran directamente dentro de la carpeta. Por ejemplo: C:\Temp\
-- Una ruta de archivo es válida cuando termina en "\*". Esto incluye solo a los archivos que se encuentran dentro de las subcarpetas, además de los archivos ubicados directamente dentro de la carpeta. Por ejemplo: C:\Temp\*
-- Una ruta de archivo es válida cuando termina sin "\" o "\*". Esto incluye a todos los archivos que se encuentran directamente dentro de la carpeta o subcarpetas. Por ejemplo: C:\Temp
-- Una ruta con comodín con "\" en cada lado. Por ejemplo: C:\Usuarios\*\Escritorio\
-- Una ruta con comodín con "\" en cada lado y con "(número)" para dar un número exacto de subcarpetas. Por ejemplo: C:\Usuarios\*(1)\Descargas\
-- Una ruta con variables de entorno del SISTEMA. Por ejemplo: %SystemDrive%\Test\*
-- Una combinación de todas las anteriores. Por ejemplo: %SystemDrive%\Users\*\Documents\*(2)\Sub\
+- Una ruta de archivo es válida cuando termina en "\". Esto incluye solo a los archivos que se encuentran directamente dentro de la carpeta. <br/>Por ejemplo: C:\Temp\
+
+- Una ruta de archivo es válida cuando termina en "\*". Esto incluye solo a los archivos que se encuentran dentro de las subcarpetas, además de los archivos ubicados directamente dentro de la carpeta. <br/>Por ejemplo: C:\Temp\*
+
+- Una ruta de archivo es válida cuando termina sin "\" o "\*". Esto incluye a todos los archivos que se encuentran directamente dentro de la carpeta o subcarpetas. <br/>Por ejemplo: C:\Temp
+
+- Una ruta con comodín con "\" en cada lado. <br/>Por ejemplo: C:\Usuarios\*\Escritorio\
+
+- Una ruta con comodín con "\" en cada lado y con "(número)" para dar un número exacto de subcarpetas. <br/>Por ejemplo: C:\Usuarios\*(1)\Descargas\
+
+- Una ruta con variables de entorno del SISTEMA. <br/>Por ejemplo: %SystemDrive%\Test\*
+
+- Una combinación de todas las anteriores. <br/>Por ejemplo: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
 ### <a name="service-domains"></a>Dominios de servicio
 
@@ -62,15 +69,18 @@ Puede agregar dominios a esta lista que servirá como referencia para Edge Chrom
 
 Si el modo de lista está configurado en **Bloquear**, el usuario no podrá cargar elementos confidenciales a esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
 
-Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales ***solo*** a esos dominios y no se permitirá el acceso de carga a todos los demás dominios.
+Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_*_ a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
 
 ### <a name="unallowed-apps"></a>Aplicaciones no permitidas
 
-Cuando la configuración de **Acceso por aplicaciones y exploradores no permitidos** de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará pero los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
+Cuando la configuración de _*Acceso por parte de aplicaciones y exploradores no permitidos* de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará, y los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
 
 ### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
-Agregue exploradores, identificados por los nombres de los procesos, que no tendrán acceso a los archivos que cumplan con las condiciones de una directiva DLP aplicada en la que la restricción de carga a servicios en la nube se configuró para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
+Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
+
+[!IMPORTANT]
+No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
 
 ## <a name="tying-dlp-settings-together"></a>Vincular las opciones de configuración DLP
 
@@ -80,8 +90,10 @@ Cuando usa la DLP de los puntos de conexión como una ubicación en una directiv
 
 Para usar esta restricción, tendrá que configurar tres partes importantes:
 
-1. Especifique los sitios (servicios, dominios y direcciones IP) que quiere impedir que compartan elementos confidenciales.
+1. Especifique los sitios (servicios, dominios y direcciones IP) con los que no quiere que se compartan elementos confidenciales.
+
 2. Agregue los exploradores que no tienen permitido acceder a ciertos elementos confidenciales cuando se produzca una coincidencia de directiva DLP.
+
 3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido**.
 
 Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
@@ -104,49 +116,83 @@ Para ayudarle a familiarizarse con las características de DLP de los puntos de 
 Estos escenarios requieren que ya tenga dispositivos incorporados y que presenten informes al Explorador de actividades. Si todavía no incorpora sus dispositivos, consulte [Introducción a la prevención de pérdida de datos de los puntos de conexión (versión preliminar)](endpoint-dlp-getting-started.md).
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Elija **Crear directiva (versión preliminar)**.
+
 3. Para este escenario, elija **Privacidad**, después **Datos de información de identificación personal (PII) de Estados Unidos**, y elija **Siguiente**.
+
 4. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos**. Elija **Siguiente**.
+
 5. Acepte la selección predeterminada **Revisar y personalizar la configuración a partir de la plantilla** y elija **Siguiente**.
+
 6. Acepte los valores predeterminados **Acciones de protección** y elija **Siguiente**.
+
 7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. Elija **Siguiente**.
+
 8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. Elija **Siguiente**.
+
 9. Revise la configuración y elija **Enviar**.
+
 10. La nueva directiva DLP se mostrará en la lista de directivas.
+
 11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
+
 12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
+
 13. Compruebe que el evento se encuentre en el Explorador de actividades.
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Escenario 2: modificar la directiva existente, configurar una alerta
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Elija la directiva **Datos de información de identificación personal (PII) de Estados Unidos** que creó en el escenario 1.
+
 3. Elija **editar directiva (versión preliminar)**.
+
 4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
+
 5. Desplácese hacia abajo hasta la sección **Informes de incidentes** y configure **Enviar una alerta a los administradores cuando se produzca una coincidencia de regla** en **Activado**. Las alertas por correo electrónico se enviarán automáticamente al administrador y a cualquier persona que agregue a la lista de destinatarios. 
-![activar-informes-de-incidentes](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![activar-informes-de-incidentes](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   
 6. Para este escenario, elija **Enviar una alerta cada vez que una actividad coincida con la regla**.
+
 7. Seleccione **Guardar**.
+
 8. Conserve todas las opciones de configuración anteriores eligiendo **Siguiente** y, después, **Enviar** los cambios de directiva.
+
 9. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
+
 10. Compruebe que el evento se encuentre en el Explorador de actividades.
 
 ### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Caso 3: modificar la directiva existente, bloquear la acción con permitir invalidación
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+
 2. Elija la directiva **Datos de información de identificación personal (PII) de Estados Unidos** que creó en el escenario 1.
+
 3. Elija **editar directiva (versión preliminar)**.
+
 4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
+
 5. Desplácese hacia abajo hasta la sección **Auditar o restringir actividades en dispositivos Windows** y configure la acción correspondiente en **Bloquear con invalidación** para cada actividad.
-![configurar bloqueo con acción de invalidación](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![configurar bloqueo con acción de invalidación](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   
 6. Seleccione **Guardar**.
+
 7. Repita los pasos del 4 al 7 para el **Alto volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
+
 8. Conserve todas las opciones de configuración anteriores eligiendo **Siguiente** y, después, **Enviar** los cambios de directiva.
+
 9. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
 
-Verá un elemento emergente como el siguiente en el dispositivo cliente:
+   Verá un elemento emergente como el siguiente en el dispositivo cliente:
 
-![notificación de invalidación de cliente bloqueado por dlp de los puntos de conexión](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > [!div class="mx-imgBorder"]
+   > ![notificación de invalidación de cliente bloqueado por dlp en punto de conexión](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Compruebe que el evento se encuentre en el Explorador de actividades.
 

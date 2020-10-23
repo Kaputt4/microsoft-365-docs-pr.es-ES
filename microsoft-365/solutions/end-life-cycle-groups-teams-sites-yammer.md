@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Opciones de final de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 31383287f3288cbab68d6e249f98210dec62af2f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377180"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681715"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de final de ciclo de vida para grupos, equipos y Yammer
 
@@ -225,7 +225,7 @@ En el caso de los archivos almacenados en SharePoint en una de las bibliotecas m
 **Mover archivos**
 
 Además, los archivos se pueden mover a otra ubicación dentro de SharePoint, como una biblioteca en un sitio diferente.
-Referencias https://support.office.com/en-us/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+Referencias https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
 **Exportar lista** Los datos almacenados en las listas de SharePoint se pueden [exportar a una hoja de cálculo de Excel](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)y volver a importar a una lista en otro sitio.
 

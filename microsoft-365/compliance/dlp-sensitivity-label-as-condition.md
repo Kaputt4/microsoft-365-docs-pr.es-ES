@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga más información sobre los servicios y los tipos de elementos en los que puede usar etiquetas de sensibilidad como condiciones en directivas DLP
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321115"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649639"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Usar etiquetas de confidencialidad como condición en las directivas DLP (vista previa)
 
@@ -38,7 +38,12 @@ Puede usar [etiquetas de confidencialidad](sensitivity-labels.md) como condicion
 
 Las etiquetas de confidencialidad aparecen como una opción en la lista de **Contenido**.
 
-![etiqueta de confidencialidad como una condición](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![etiqueta de confidencialidad como una condición](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> **Las etiquetas de confidencialidad** como una condición no estarán disponibles si ha seleccionado **mensajes de canal y de chat de Teams** como una ubicación para aplicar la directiva DLP.
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>Elementos compatibles, escenarios y sugerencias de directiva
 
@@ -46,7 +51,7 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 
 ### <a name="supported-items"></a>Elementos compatibles
 
-|servicio  |tipo de elemento  |disponible para sugerencia de directiva  |aplicable  |
+|Servicio  |Tipo de elemento  |Disponible para sugerencia de directiva  |Aplicable  |
 |---------|---------|---------|---------|
 |Exchange    |mensaje de correo electrónico         |sí         |sí         |
 |Exchange    |datos adjuntos de correo electrónico         |no *         |no *         |
@@ -64,16 +69,20 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 ### <a name="supported-scenarios"></a>Escenarios admitidos
 
 - El administrador de DLP podrá ver una lista de todas las etiquetas de confidencialidad en el espacio empresarial cuando decida incluir una o más etiquetas de confidencialidad como condición.
-- El uso de las etiquetas de confidencialidad como condición se admite en todas las cargas de trabajo, como se indica en la matriz de soporte más arriba
+
+- El uso de las etiquetas de confidencialidad como condición se admite en todas las cargas de trabajo, como se indica en la matriz de soporte más arriba.
+
 - Las sugerencias de directiva DLP se seguirán mostrando en las cargas de trabajo (excepto Outlook Win32) para las directivas DLP que contienen la etiqueta de confidencialidad como condición.
+
 - Las etiquetas de sensibilidad también aparecerán como parte del correo del informe de incidentes si se cumple una directiva DLP con la etiqueta de confidencialidad como condición.
+
 - Los detalles de la etiqueta de confidencialidad también se mostrarán en el registro de auditoría de coincidencia de regla DLP para una coincidencia de directiva DLP que contiene la etiqueta de confidencialidad como condición.
 
 
 ### <a name="support-policy-tips"></a>Sugerencias de directivas compatibles
 
 
-|carga de trabajo  |Sugerencias sobre las directivas compatibles / no compatibles  |
+|Carga de trabajo  |Sugerencias sobre las directivas compatibles / no compatibles  |
 |---------|---------|
 |OWA |    compatible     |
 |Outlook Win 32    |  no compatible       |

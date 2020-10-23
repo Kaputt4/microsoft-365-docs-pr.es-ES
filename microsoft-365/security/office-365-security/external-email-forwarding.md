@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/01/2020
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,49 +14,57 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600534"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681737"
 ---
-# <a name="configuring-external-email-forwarding-in-office-365"></a>Configurar el reenvío externo de correo electrónico en Office 365
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío de correo electrónico externo automático en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+Como administrador, puede tener los requisitos de la compañía para restringir o controlar los mensajes reenviados automáticamente a los destinatarios externos (destinatarios fuera de la organización). El reenvío de correo electrónico puede resultar útil, pero también puede suponer un riesgo de seguridad debido a la posible revelación de información. Los atacantes podrían usar esta información para atacar a su organización o a sus socios.
 
-El reenvío externo se controla mediante la *Directiva de correo no deseado saliente* y se establece en el ámbito de los usuarios en función de la configuración configurada. Actualmente se admite la configuración de 3:
+Los siguientes tipos de reenvío automático están disponibles en Microsoft 365:
 
-- **Automático** : el reenvío externo automático está bloqueado. El reenvío automático interno de los mensajes seguirá funcionando. Esta configuración es la predeterminada.
+- Los usuarios pueden configurar [las reglas](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) de la bandeja de entrada para reenviar mensajes de forma automática a los remitentes externos (deliberadamente o como resultado de una cuenta en peligro).
 
-- **Activado** : el reenvío externo automático se permite y no está restringido.
+- Los administradores pueden configurar el [reenvío de buzón](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (también conocido como reenvío SMTP) para reenviar mensajes automáticamente a los destinatarios externos.
 
-- **Desactivado** : el reenvío externo automático está deshabilitado y dará como resultado un informe de no entrega (NDR) al usuario final.
+Puede usar las directivas de filtro de correo no deseado saliente para controlar el reenvío automático a los destinatarios externos. Hay tres opciones de configuración disponibles:
 
-Para obtener más información sobre cómo configurar estas opciones, vea [configurar el filtrado de correo no deseado saliente en EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) .
+- **Automático**: el reenvío externo automático está bloqueado. El reenvío automático interno de los mensajes seguirá funcionando. Esta configuración es la predeterminada.
+- **On**: el reenvío externo automático está permitido y no está restringido.
+- **Desactivado**: el reenvío externo automático está deshabilitado y dará como resultado un informe de no entrega (también conocido como mensaje NDR o de devolución) al remitente.
 
-> [!NOTE]
-> Al deshabilitar el reenvío automático también se deshabilitan las reglas de la bandeja de entrada que redirigen mensajes a direcciones externas.
+Para obtener instrucciones sobre cómo configurar estas opciones, vea [configurar el filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md).
 
-## <a name="controlling-external-email-forwarding"></a>Controlar el reenvío de correo electrónico externo
+**Notas**:
 
-Como administrador de una organización, es posible que los requisitos de la compañía tengan que restringir o controlar quién puede reenviar automáticamente los correos electrónicos con las reglas de la bandeja de entrada o el reenvío SMTP, fuera de la organización. El reenvío de correo electrónico puede ser una característica útil, pero también puede suponer un riesgo a través de la posible revelación de información, incluso proporcionando información a los atacantes que pueden aprovecharse para atacar a la organización o a sus asociados.
+- Al deshabilitar el reenvío automático también se deshabilitan las reglas de la bandeja de entrada que redirigen mensajes a direcciones externas.
 
-Office 365 no permite el reenvío externo automático por reglas de la bandeja de entrada o por la configuración de buzón de correo, lo que proporciona una directiva predeterminada segura. Sin embargo, el administrador puede modificar esta configuración para todos o algunos de los usuarios de la organización. El reenvío de mensajes entre usuarios internos no se ve afectado por esta modificación.
+- El reenvío automático de mensajes entre usuarios internos no se ve afectado por la configuración de las directivas de filtro de correo no deseado saliente.
 
-> [!NOTE]
-> Deshabilitar el reenvío automático a direcciones externas en Office 365 se está implementando en fases con detalles que se comunican a través de las publicaciones del [centro de mensajes](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . Para ayudar a los administradores a preparar estos cambios, pídales que modifiquen las directivas con anticipación para asegurarse de que no hay interrupciones para sus usuarios.
+- Puede ver información sobre los usuarios que reenvían automáticamente los mensajes a los destinatarios externos en el [Informe de mensajes reenviados automáticamente](mfi-auto-forwarded-messages-report.md).
 
-Puede encontrar más información acerca de los usuarios que usan el reenvío automático (reglas de la bandeja de entrada o reenvío SMTP) en el [Informe de mensajes reenviados automáticamente](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true).
+## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Cómo funciona la configuración de la Directiva de filtro de correo no deseado saliente con otros controles de reenvío de correo electrónico automático
 
-## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Cómo funciona esta directiva con otros controles de reenvío automático
+Como administrador, es posible que ya haya configurado otros controles para permitir o bloquear el reenvío automático de correo electrónico. Por ejemplo:
 
-Como administrador, es posible que ya tenga otros tipos de controles en su ubicación, lo que bloquea el reenvío automático en [dominios remotos](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) y el uso de una regla de transporte de Exchange (ETR). Ambos controles son independientes de esta característica, por ejemplo, si se permite el reenvío automático para un dominio remoto, pero se bloquea el desvío automático a través de la Directiva de correo no deseado saliente, el resultado será que el mensaje reenviado automáticamente está bloqueado. De forma similar, si se permite el reenvío automático en la Directiva de correo no deseado saliente, pero se bloquea en un dominio de ETR o remoto, cualquiera de estos controles bloqueará el mensaje. Esto le permite, por ejemplo, permitir el reenvío automático en la Directiva de correo no deseado saliente y usar dominios remotos para controlar los dominios a los que los usuarios pueden reenviar mensajes automáticamente.
+- [Dominios remotos](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) para permitir o bloquear el reenvío automático de correo electrónico a algunos o todos los dominios externos.
+- Condiciones y acciones de [las reglas de flujo de correo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de Exchange (también conocidas como reglas de transporte) para detectar y bloquear mensajes reenviados automáticamente a destinatarios externos.
 
+La configuración del dominio remoto y las reglas de flujo de correo son independientes de la configuración en las directivas de filtro de correo no deseado saliente. Por ejemplo:
+
+- Permite el reenvío automático para un dominio remoto, pero bloquea el reenvío automático en las directivas de filtro de correo no deseado saliente. En este ejemplo, los mensajes reenviados automáticamente están bloqueados.
+- Permite el reenvío automático en las directivas de filtro de correo no deseado saliente, pero usa reglas de flujo de correo o la configuración de dominio remoto para bloquear el correo electrónico reenviado automáticamente. En este ejemplo, las reglas de flujo de correo o la configuración de dominio remoto bloquearán los mensajes que se reenviarán automáticamente.
+
+Esta independencia de características le permite (por ejemplo) permitir el reenvío automático en las directivas de filtro de correo no deseado salientes, pero usa dominios remotos para controlar los dominios externos a los que los usuarios pueden reenviar mensajes.
 
 ## <a name="the-blocked-email-forwarding-message"></a>Mensaje de reenvío de correo electrónico bloqueado
 
-Cuando se detecta un mensaje como reenviado automáticamente y la directiva organizativa *bloquea* dicha actividad, se generará un **Informe de no entrega (NDR)** para el usuario final. El informe indicará que el mensaje no se entregó. El NDR tendrá el siguiente formato: 
+Cuando se detecta un mensaje como reenviado automáticamente y la Directiva de la organización *bloquea* dicha actividad, el mensaje se devuelve al remitente en un NDR que contiene la siguiente información:
 
-`5.7.520 Access Denied – Your administrator has disabled external forwarding – AS(XXXX)`
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`
