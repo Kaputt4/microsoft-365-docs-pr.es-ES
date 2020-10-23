@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 8b43c225c6ea5ecd0de02250d341572704fb4482
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 0587e868d8e9d54d0e5025d02fdbd5a5dfc0f430
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477117"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740284"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -110,6 +110,16 @@ Por ejemplo:
   
 ![Diagrama de cuándo entran en vigor las etiquetas manuales](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
+
+Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiqueta seleccionándola en la página **Directivas de etiqueta** en el centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
+
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+
+2. Ejecute el siguiente comando:
+    
+    ``` PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+   ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Cómo comprobar el estado de las etiquetas de retención publicadas en Exchange
 
@@ -224,7 +234,7 @@ Then, create one or more label policies that contain the labels and policy setti
 
 This method requires retention labels to be published to a retention label policy.
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label.
+In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label.
   
 For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   

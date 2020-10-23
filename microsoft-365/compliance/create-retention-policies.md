@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 848ed959b1ed728a5a193641d7df42a477604d30
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384549"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681788"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -181,9 +181,10 @@ Cuando elige la ubicación de los **sitios de SharePoint**, la directiva de rete
 
 Si bien la directiva de retención se aplica en el nivel de sitio, la configuración de retención solo se aplica a los documentos. La configuración de retención no se aplica a las estructuras de organización que contienen bibliotecas, listas y carpetas dentro del sitio.
 
-Cuando especifica sus ubicaciones para los sitios de SharePoint o las cuentas de OneDrive, no necesita permisos para acceder a los sitios y no se lleva a cabo ninguna validación en el momento en el que especifica la dirección URL en la página **Editar ubicaciones**. Sin embargo, los sitios de SharePoint se deben indexar y al final del asistente se comprueba que existan los sitios que usted especifica.
+Cuando especifica sus ubicaciones para los sitios de SharePoint o las cuentas de OneDrive, no necesita permisos para acceder a los sitios y no se lleva a cabo ninguna validación en el momento en el que especifica la dirección URL en la página **Editar ubicaciones**. Sin embargo, los sitios de SharePoint que especifique se deben indexar y al final del asistente se comprueba que existan. Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y el asistente no creará la directiva de retención hasta que se supere la comprobación de validación.  Si ve este mensaje, vuelva al asistente para cambiar la dirección URL o eliminar el sitio de la directiva de retención.
 
-Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y el asistente no creará la directiva de retención hasta que se supere la comprobación de validación.  Si ve este mensaje, vuelva al asistente para cambiar la dirección URL o eliminar el sitio de la directiva de retención.
+> [!NOTE]
+> Los sitios de SharePoint se deben indexar para que se aplique la configuración de retención. Sin embargo, si los elementos de la biblioteca de documentos de SharePoint se configuran para que no aparezcan en los resultados de búsqueda, esta configuración no excluirá los elementos de la configuración de retención.
 
 Para especificar cuentas individuales de OneDrive que quiera incluir o excluir, la dirección URL tiene el siguiente formato: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
