@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: Usar notificaciones y sugerencias de directiva en directivas DLP
           href: use-notifications-and-policy-tips.md
+        - name: Configurar y ver alertas para las directivas DLP (vista previa)
+          href: dlp-configure-view-alerts-policies.md
         - name: Qué incluyen las plantillas de directiva DLP
           href: what-the-dlp-policy-templates-include.md
         - name: Crear una directiva DLP para proteger documentos con FCI u otras propiedades

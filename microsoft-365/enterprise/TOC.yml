@@ -269,6 +269,10 @@
       items:
         - name: Agregar un dominio
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: Administrar
+      items:
+        - name: Estado de mantenimiento del servicio de Microsoft 365
+          href: microsoft-365-service-health.md
         - name: Guías de configuración
           href: setup-guides-for-microsoft-365.md
     - name: Varios inquilinos
@@ -571,7 +575,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: Configurar las propiedades
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: Asignar roles
+            - name: Asignar roles de administrador
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: Eliminar y restaurar
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -703,7 +707,7 @@
   items:
     - name: Información general
       href: contoso-overview.md
-    - name: Infraestructura y necesidades de TI de Contoso
+    - name: Infraestructura y necesidades de la TI de Contoso
       href: contoso-infra-needs.md
     - name: Redes
       href: contoso-networking.md
@@ -719,8 +723,6 @@
       href: contoso-info-protect.md
     - name: Resumen de seguridad
       href: contoso-security-summary.md
-- name: Estado de mantenimiento del servicio de Microsoft 365
-  href: microsoft-365-service-health.md
 - name: Cumplimiento de Microsoft 365
   href: ../compliance/index.yml
 - name: Seguridad de Microsoft 365
