@@ -82,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Paridad de Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Administrar usuarios y grupos
+    - name: 'Administrar usuarios, grupos y contraseñas'
       href: add-users/index.yml
       items:
         - name: Usuarios
@@ -109,14 +109,6 @@
               href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Restaurar un usuario
               href: add-users/restore-user.md
-            - name: Restablecer contraseñas
-              href: add-users/reset-passwords.md
-            - name: Establecer contraseñas para que no expiren nunca
-              href: add-users/set-password-to-never-expire.md
-            - name: Permitir a los usuarios restablecer contraseñas
-              href: add-users/let-users-reset-passwords.md
-            - name: Reenviar contraseña de usuario
-              href: add-users/resend-user-password.md
             - name: Crear plantilla para agregar usuarios
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Actualizar usuarios a las últimas aplicaciones
@@ -137,6 +129,20 @@
               href: create-groups/restore-deleted-group.md
             - name: Administrar el acceso de invitado a grupos
               href: create-groups/manage-guest-access-in-groups.md
+        - name: Contraseñas
+          items:
+            - name: Restablecer contraseñas
+              href: add-users/reset-passwords.md
+            - name: Permitir a los usuarios restablecer contraseñas
+              href: add-users/let-users-reset-passwords.md
+            - name: Establecer contraseñas para que no expiren nunca
+              href: add-users/set-password-to-never-expire.md
+            - name: Reenviar contraseña de usuario
+              href: add-users/resend-user-password.md
+            - name: Desactivar contraseñas seguras
+              href: add-users/strong-password.md
+            - name: Establecer directiva de expiración de contraseña
+              href: manage/set-password-expiration-policy.md
     - name: Administrar correo electrónico y calendarios
       href: email/index.yml
       items:
