@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 4b2c53ee8535c2e99acb83060a2ee04d8f5033db
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409029"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754521"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de escritorio administrado por Microsoft
 
@@ -38,9 +38,13 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 
 | Model  | Especificaciones mínimas  | Requisitos adicionales   | Fecha de retirada |
 |---------|---------|---------|---------|
-| Dell Precision 3530| 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **22 de mayo de 2023** |
-| Dell Latitude 5490| 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **9 de enero de 2023** |
-| Dell Latitude 7390 7390 2-en-1/7490 | 256 GB/Intel i5/8 GB de RAM   | Cámara IR requerida | **9 de enero de 2023** |
+|Dell Precision 3530| 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **22 de mayo de 2023** |
+|Dell Latitude 5300/5300 2-in-1/5400/5500 | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **1 de junio de 2024**  |
+|Dell Latitude 5490 | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **9 de enero de 2023** |
+|Dell Latitude 7200 2-en-1 | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **1 de mayo de 2024** |
+|Dell Latitude 7300/7400/7400 2-in-1 | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **1 de mayo de 2024**  |
+|Dell Latitude 7390/7390 2-in-1/7490 | 256 GB/Intel i5/8 GB de RAM   | Cámara IR requerida | **9 de enero de 2023** |
+|Dell OptiPlex 3070 | 128 GB/Intel i3/8 GB de RAM | Ninguno | **1 de mayo de 2025**  |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario  | **15 de febrero de 2023** |
 |HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario  | **30 de noviembre de 2023** |
 |HP Elite x2 1013 G3| 256 GB/Intel i5/8 GB de RAM | SKU con 5VS03AV, se requiere cámara IR |**14 de mayo de 2023** |

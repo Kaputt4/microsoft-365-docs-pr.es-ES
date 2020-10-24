@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo contoso usa Microsoft Intune en Microsoft 365 para empresas para administrar los dispositivos y las aplicaciones que se ejecutan en ellos.
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649650"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754002"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Administración de dispositivos móviles para Contoso
 
@@ -28,7 +27,7 @@ Microsoft 365 para empresas incluye Intune y un conjunto de servicios de Azure c
 
 Contoso tiene muchos empleados con movilidad habilitada. Algunas tienen oficinas en las ubicaciones de Contoso y otras no tienen oficinas. Contoso necesitaba una forma de habilitar la productividad de los empleados y mantener seguros los dispositivos, los datos de Contoso almacenados en dichos dispositivos y el comportamiento de la aplicación.
 
-## <a name="plan"></a>Plan
+## <a name="plan"></a>Planear
 
 Contoso identificó los siguientes casos de uso de Intune de la administración de dispositivos móviles para Microsoft 365 para empresas:
 
@@ -71,13 +70,13 @@ Esta es la arquitectura de implementación de administración de dispositivos m�
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información sobre](contoso-info-protect.md) cómo contoso usa las capacidades de protección de la información de Microsoft 365 para empresas para clasificar, identificar y proteger activos digitales fundamentales en toda su organización.
+Obtenga información sobre cómo contoso usa las [capacidades de protección](contoso-info-protect.md) de la información de Microsoft 365 para empresas para clasificar, identificar y proteger activos digitales fundamentales en toda su organización.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 [Administración de dispositivos para Microsoft 365](device-management-roadmap-microsoft-365.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)
 

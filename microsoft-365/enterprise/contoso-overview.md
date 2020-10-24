@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,16 +14,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entender Contoso Corporation como un negocio y la estructura en niveles de sus oficinas en todo el mundo.
-ms.openlocfilehash: 402c8c1cbb1484d8a0ad2ce4159b90107856167d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0c00ed5657d914851f28278a2f4cf80660b53b0
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637084"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754273"
 ---
 # <a name="overview-of-contoso-corporation"></a>Información general sobre contoso Corporation
-
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 Contoso Corporation es una empresa multinacional con su sede central en París. La empresa es una organización de fabricación, ventas y soporte técnico con más de 100.000 productos.
 
@@ -38,7 +35,7 @@ La figura 1 muestra la oficina central en París y las oficinas de concentradore
  
 Contoso tiene tres niveles de oficinas:
 
-- Sede
+- Headquarters
 
   Contoso Headquarters es una sede corporativa en los dispositivos de París con docenas de edificios para las instalaciones de administración, ingeniería y fabricación. Todos los centros de recursos de Contoso y su presencia en Internet están hospedados en la sede central de París.
 
@@ -74,10 +71,10 @@ Los arquitectos de TI de Contoso identificaron los siguientes factores de requis
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información](contoso-infra-needs.md) sobre la infraestructura de ti local de Contoso Corporation y cómo las necesidades empresariales de la compañía se dirigen con Microsoft 365 para empresas.
+Obtenga información sobre la [infraestructura de ti local de](contoso-infra-needs.md) contoso Corporation y cómo las necesidades empresariales de la compañía se dirigen con Microsoft 365 para empresas.
 
 ## <a name="see-also"></a>Recursos adicionales
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

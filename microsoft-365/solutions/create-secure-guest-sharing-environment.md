@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: En este artículo, aprenderá sobre las opciones disponibles para crear un entorno seguro para compartir invitados en Microsoft 365.
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527935"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681569"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -165,7 +165,7 @@ Cómo restringir el acceso de los invitados a solo la web
 9. En la hoja **Aplicaciones o acciones en la nube**, haga clic en **Listo**.
 10. En **Tareas**, haga clic en **Condiciones**.
 11. En la hoja **Condiciones**, haga clic en **Aplicaciones cliente**.
-12. En la hoja **Aplicaciones cliente**, haga clic en **Sí** para **Configurar**, y seleccione **Clientes de aplicaciones móviles y de escritorio** y **Clientes de autenticación moderna**.</br>
+12. En la hoja **Aplicaciones cliente**, haga clic en **Sí** para **Configurar**, y seleccione **Clientes de aplicaciones móviles y de escritorio**</br>
     ![Captura de pantalla de la configuración de acceso condicional para aplicaciones cliente en Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
 13. Haga clic en **Listo** y, después, en la hoja **Condiciones**, haga clic de nuevo en **Listo**.
 14. En **Controles de acceso**, haga clic en **Conceder**.

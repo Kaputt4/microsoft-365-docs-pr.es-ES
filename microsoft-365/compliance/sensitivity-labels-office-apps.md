@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 238dc5c0b54d09258f2f679bff5467052d3448f3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309212"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754568"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -59,6 +59,7 @@ Para iOS y Android: cuando se muestran las versiones mínimas, también se admit
 |[Requerir una justificación para cambiar una etiqueta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Vínculo proporcionar ayuda a una página de ayuda personalizada](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Marcas dinámicas con variables](#dynamic-markings-with-variables)                                              | Vista previa: [canal de la versión beta y canal actual (versión preliminar)](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | En revisión |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canal actual](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | En revisión   | En revisión         | En revisión                                                        |
 |[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
@@ -76,6 +77,7 @@ Para iOS y Android: cuando se muestran las versiones mínimas, también se admit
 |[Requerir una justificación para cambiar una etiqueta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
 |[Vínculo proporcionar ayuda a una página de ayuda personalizada](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
 |[Marcar el contenido](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
+|[Marcas dinámicas con variables](#dynamic-markings-with-variables)                                              | En revisión                     | En revisión                 | En revisión         | En revisión           | En revisión               |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
 |[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión                       | En revisión                    | En revisión           | En revisión               | En revisión               |
@@ -235,6 +237,27 @@ Entre los escenarios que incluyen la aplicación de una etiqueta de confidencial
 - Microsoft Cloud App Security
 
 Para estos escenarios, usando sus aplicaciones de Office, un usuario con etiquetas integradas puede aplicar los marcados de contenido de la etiqueta quitando o reemplazando temporalmente la etiqueta actual y, a continuación, volviendo a aplicar la etiqueta original.
+
+### <a name="dynamic-markings-with-variables"></a>Marcas dinámicas con variables
+
+> [!IMPORTANT]
+> Actualmente, no todas las aplicaciones de todas las plataformas admiten marcadores de contenido dinámico que puede especificar para los encabezados, pies de página y marcas de agua. En el caso de las aplicaciones que no admiten esta capacidad, aplican las marcas como el texto original especificado en la configuración de la etiqueta, en lugar de resolver las variables.
+> 
+> El cliente de etiquetado Unificado de Azure Information Protection admite marcas dinámicas. Para las etiquetas integradas en Office, vea las tablas de la sección [capacidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
+
+Cuando configure una etiqueta de confidencialidad para los marcados de contenido, puede usar las siguientes variables en la cadena de texto del encabezado, pie de página o marca de agua:
+
+| Variable | Descripción | Ejemplo cuando se aplica una etiqueta |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | Nombre para mostrar de la etiqueta actual | **General**|
+| `${Item.Name}` | Nombre de archivo actual o asunto de correo electrónico | **Sales.docx** |
+| `${Item.Location}` | Ruta de acceso y nombre de archivo actuales del documento, o el asunto del correo electrónico de un correo electrónico | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nombre para mostrar del usuario actual  | **Richard Simone** |
+| `${User.PrincipalName}` | Nombre principal de usuario (UPN) de Azure AD del usuario actual | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Fecha y hora actuales de la zona horaria local | **8/10/2020 1:30 PM** |
+
+> [!NOTE]
+> La sintaxis de estas variables distingue mayúsculas de minúsculas.
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 

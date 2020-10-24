@@ -16,28 +16,25 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumen: Use PowerShell para Microsoft 365 para crear informes que no puede producir en el centro de administración de Microsoft 365.'
-ms.openlocfilehash: 99aa86b1b58b15c63803e1b71d071cbde5c38492
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 10000f62b1d6a747cf0373623c6038b080666e1a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693950"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753983"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar PowerShell para crear informes de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Existen muchos informes diferentes disponibles en el Centro de administración de Microsoft Office 365. Sin embargo, estos informes solo proporcionan demasiada información y a veces necesita más. Es cuando necesita PowerShell para Microsoft 365
+Hay disponibles muchos informes diferentes en el centro de administración de Microsoft 365. Pero estos informes solo proporcionan tanta información y, a veces, necesita más. Esto es cuando necesita PowerShell para Microsoft 365.
   
 En estos artículos se describe cómo usar PowerShell para Microsoft 365 para obtener información de su inquilino de Microsoft 365:
   
 - Introducción a los informes con PowerShell para Microsoft 365:
     
-  - [PowerShell para Microsoft 365 puede revelar información adicional que no puede ver con el centro de administración](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [¿Por qué necesita usar PowerShell para Microsoft 365?](https://technet.microsoft.com/library/dn568034.aspx#reveal)
     
-  - [PowerShell para Microsoft 365 es excelente en el filtrado de datos](https://technet.microsoft.com/library/dn568034.aspx#filter)
-    
-  - [PowerShell para Microsoft 365 simplifica la tarea de imprimir o guardar datos](https://technet.microsoft.com/library/dn568034.aspx#printsave)
     
 - Informes para licencias y cuentas de usuario:
     
@@ -53,21 +50,20 @@ En estos artículos se describe cómo usar PowerShell para Microsoft 365 para ob
     
   - [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Administrar grupos de sitio de SharePoint Online con PowerShell](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Get-SPOSiteGroup: obtiene todos los grupos de una colección de sitios especificada.](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
 - Informes de Exchange Online:
     
-  - [Mostrar información del buzón de Exchange Online con PowerShell](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Usar Exchange Online PowerShell para mostrar el buzón de correo](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
     
-  - [Mostrar informes de Exchange Online con PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-articlesl"></a>Artículos relacionados
 
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
   
-[Administrar SharePoint Online con PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[Administrar SharePoint con PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

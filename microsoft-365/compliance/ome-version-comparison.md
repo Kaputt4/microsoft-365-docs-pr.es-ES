@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: En este artículo se explican las diferencias entre las distintas versiones de Office 365 cifrado de mensajes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034880"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754134"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -39,11 +39,11 @@ En este artículo se compara el cifrado de mensajes de Office 365 heredado (OME)
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Función**                     | **OME heredado**    | **IRM**           | **Nuevas funciones de OME** |
 |*Enviar un correo cifrado*        |Mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde un equipo de escritorio de Outlook o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la web; a través de reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y prevención de pérdida de datos (DLP)|
-|*Plantilla de administración de derechos*       |   N/D      |No reenviar opciones y plantillas personalizadas|Opción no reenviar, opción de solo codificación y plantillas personalizadas|
+|*Plantilla de administración de derechos*       |   N/D      |No reenviar opciones y plantillas personalizadas|Opción no reenviar, Encrypt-Only opción y plantillas personalizadas|
 |*Tipo de destinatario*                   |Destinatarios internos y externos|Solo destinatarios internos         |Destinatarios internos y externos|
 |*Experiencia para destinatario interno*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador Web o en una aplicación móvil|Experiencia en línea nativa en clientes de Outlook|Experiencia en línea nativa para los destinatarios de la misma organización con clientes de Outlook.  Los destinatarios pueden leer un mensaje del portal de OME mediante clientes que no sean Outlook (no se requiere descarga ni ninguna aplicación).|
 |*Experiencia para destinatario externo*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador Web o en una aplicación móvil|N/D|Experiencia en línea nativa para destinatarios de Microsoft 365. El resto de los destinatarios pueden leer el mensaje del portal de OME (no se requiere descarga ni aplicación).|
-|*Permisos de datos adjuntos*           |No hay restricciones en los datos adjuntos|Los datos adjuntos están protegidos|Los datos adjuntos están protegidos para la opción no reenviar y las plantillas personalizadas. Los administradores pueden elegir si los datos adjuntos de la opción de solo codificación están protegidos o no.|
+|*Permisos de datos adjuntos*           |No hay restricciones en los datos adjuntos|Los datos adjuntos están protegidos|Los datos adjuntos están protegidos para la opción no reenviar y las plantillas personalizadas. Los administradores pueden elegir si los datos adjuntos para la opción de Encrypt-Only están protegidos o no.|
 |*Proporcionar compatibilidad con claves propias (BYOK)*|Ninguno                |Ninguno               |BYOK compatible          |
 ||
 
@@ -51,13 +51,13 @@ En este artículo se compara el cifrado de mensajes de Office 365 heredado (OME)
 
 Las nuevas capacidades proporcionan las siguientes ventajas:
 
-- Capacidad para usar el cifrado (lo que permite la colaboración segura), no reenviar y personalizar restricciones.
+- Capacidad para usar Encrypt-Only (lo que permite la colaboración segura), no reenviar y personalizar restricciones.
 - Los remitentes pueden enviar correo cifrado con las nuevas funciones de forma manual desde los clientes de escritorio de Outlook, Outlook para Mac y Outlook en la Web.
 - Los destinatarios de Microsoft 365 usan una experiencia en línea en clientes de Outlook compatibles. Como alternativa, los administradores pueden elegir que se muestre a los destinatarios de Microsoft 365 una experiencia de personalización de marca.
 - Las cuentas que se encuentran fuera de Microsoft 365, como las cuentas de gmail, Yahoo y Microsoft, están federadas con el portal OME, que proporciona una mejor experiencia de usuario para estos destinatarios. El resto de las identidades usan un código de paso único para acceder a los mensajes cifrados.
 - Los administradores pueden personalizar la personalización de marca y crear varias plantillas de personalización de marca.
 - Los administradores pueden revocar mensajes de correo electrónico cifrados con las nuevas funciones.
-- Las nuevas funciones proporcionan informes de uso detallados &amp; a través del centro de seguridad y cumplimiento.
+- Las nuevas funciones proporcionan informes de uso detallados a través del centro de seguridad y &amp; cumplimiento.
 
 ## <a name="office-365-advanced-message-encryption-capabilities"></a>Capacidades avanzadas de cifrado de mensajes de Office 365
 
@@ -75,21 +75,19 @@ Para obtener información sobre cómo usar el cifrado de mensajes avanzado, cons
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Características únicas del cifrado de mensajes de Office 365 en una implementación alta de GCC
 
-Office 365 Advanced Message Encryption no está disponible en un entorno de GCC High. Todavía puede usar y personalizar una plantilla de marca única en un entorno de GCC de alto nivel.
+Si planea usar el cifrado de mensajes de Office 365 en un entorno de GCC High, hay algunas características únicas relacionadas con la experiencia del destinatario.
 
-Además, si va a usar el cifrado de mensajes de Office 365 en un entorno de GCC High, existen algunas características únicas sobre la experiencia de los destinatarios.
-
-### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>Correo electrónico cifrado de GCC High a GCC destinatarios altos
+### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>Correo electrónico cifrado entre GCC altos y GCC destinatarios altos
 
 Los remitentes pueden cifrar mensajes de correo electrónico manualmente en Outlook para PC y Mac y Outlook en la web, o las organizaciones pueden configurar una directiva para cifrar correos electrónicos con las reglas de flujo de correo de Exchange.
 
 Los destinatarios dentro de GCC reciben en gran medida la misma experiencia de lectura en línea en Outlook para PC y Mac y Outlook en la web como todos los demás usuarios.
 
-### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>Mensajes de correo electrónico cifrados de GCC High a non-GCC High Recipients
+### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>Correo electrónico cifrado entre los destinatarios altos altos y sin GCC de GCC
 
-Los remitentes de GCC High pueden enviar correo electrónico cifrado fuera del límite superior de GCC.
+Los remitentes de GCC High pueden enviar correo electrónico cifrado fuera del límite superior de GCC y viceversa.
 
-Todos los destinatarios que superen GCC High, incluidos los usuarios comerciales de Microsoft 365, los usuarios de Outlook.com y otros usuarios de otros proveedores de correo electrónico, como gmail y Yahoo, reciben un correo de contenedor. Este correo de contenedor redirige al destinatario al portal de OME donde el destinatario puede leer y responder al mensaje.
+Todos los destinatarios que superen GCC High, incluidos los usuarios comerciales de Microsoft 365, los usuarios de Outlook.com y otros usuarios de otros proveedores de correo electrónico, como gmail y Yahoo, reciben un correo de contenedor. Este correo de contenedor redirige al destinatario al portal de OME donde el destinatario puede leer y responder al mensaje. Esto también se aplica a los remitentes que están fuera del nivel GCC, el correo cifrado de OME de alta transmisión a GCC High.
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coexistencia de OME heredados y las nuevas funcionalidades en el mismo espacio empresarial
 

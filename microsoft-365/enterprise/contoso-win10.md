@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usó Configuration Manager de Microsoft Endpoint para implementar las actualizaciones locales de Windows 10 Enterprise.
-ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686423"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754256"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Implementación de Windows 10 Enterprise para Contoso
 
@@ -55,15 +54,7 @@ Contoso tiene una infraestructura existente de Configuration Manager (Rama actua
 
 ## <a name="planning-process"></a>Proceso de planeación
 
-Antes de la implementación, Contoso definió los anillos siguientes:
-
-- Tres anillos de validación y pruebas de implementación 
-  - Uno para las compilaciones de versión preliminar 
-  - Uno para las compilaciones de versión nuevas
-  - Uno para una versión anterior 
-- Un anillo para la implementación general de Windows 10 Enterprise en función de los datos de los anillos de validación
-
-Contoso también usó la solución Upgrade Readiness de Windows Analytics para determinar el conjunto de aplicaciones instaladas y su compatibilidad con Windows 10 Enterprise.
+Contoso usó la preparación para la actualización de Windows Analytics para determinar el conjunto de aplicaciones instaladas y su compatibilidad con Windows 10 Enterprise.
 
 ## <a name="deployment-process"></a>Proceso de implementación
 
@@ -71,11 +62,11 @@ Para completar la implementación de actualizaciones locales de Windows 10 Enter
 
 1. Habilitó la caché del mismo nivel para Configuration Manager.
 2. Creó paquetes de Windows personalizados en función de imágenes del Centro de servicios de licencias por volumen.
-3. Usó Configuration Manager para implementar los paquetes de Windows en puntos de distribución en su red e implementó las compilaciones en los tres anillos de validación y pruebas de implementación.
+3. Se usó el administrador de configuración para implementar los paquetes de Windows en puntos de distribución en su red y se implementaron compilaciones en los tres grupos provisionales de validación e implementación.
 4. Evaluó el éxito de los equipos y dispositivos en los tres anillos de validación y pruebas de implementación mediante las soluciones Estado del dispositivo y Update Compliance de Windows Analytics.
-5. Según la información de Windows Analytics, Contoso determinó la versión de Windows 10 Enterprise que se iba a implementar en el anillo de implementación general.
-6. Ejecutó las secuencias de tareas de implementación de Configuration Manager para implementar el paquete de Windows seleccionado en el anillo de implementación general.
-7. Equipos y dispositivos del anillo de implementación general supervisados mediante las soluciones para solucionar los problemas.
+5. En función de la información de Windows Analytics, contoso determinó la versión de Windows 10 Enterprise para implementarla en el grupo de implementación general.
+6. Se ejecutaron las secuencias de tareas de implementación de Configuration Manager para implementar el paquete de Windows seleccionado en el grupo de implementación general.
+7. Equipos y dispositivos supervisados en el grupo de implementación amplio mediante las soluciones de cumplimiento del estado del dispositivo y actualización para solucionar problemas.
 
 Aquí se muestra la arquitectura de implementación de actualización local y actualizaciones continuas de Contoso.
 
@@ -87,13 +78,13 @@ Esta infraestructura consta de:
   - Obtiene imágenes de paquetes de Windows 10 Enterprise del Centro de servicios de licencias por volumen de Microsoft en Microsoft Network.
   - Es el punto de administración central para los paquetes de implementación.
 - Puntos de distribución regionales que normalmente se encuentran en las oficinas centrales regionales de Contoso.
-- Equipos y dispositivos Windows en diferentes ubicaciones que reciben e instalan los paquetes de implementación para la actualización local o las actualizaciones continuas según el anillo al que pertenezcan.
+- Equipos y dispositivos Windows en varias ubicaciones que reciben e instalan los paquetes de implementación para la actualización local o actualizaciones en curso en función de la pertenencia a grupos.
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información acerca de](contoso-o365pp.md) cómo Contoso aprovecha su infraestructura del Administrador de configuración para implementar y mantener las aplicaciones actuales de Microsoft 365 para empresas en su organización. 
+Obtenga información sobre cómo Contoso está aprovechando su infraestructura de Configuration Manager para [implementar y mantener las aplicaciones actuales de Microsoft 365 para empresas](contoso-o365pp.md) en toda la organización. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
 

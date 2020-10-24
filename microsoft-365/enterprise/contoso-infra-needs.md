@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la estructura básica de la infraestructura de ti local de Contoso y cómo se satisfacen las necesidades empresariales de Microsoft 365 para la empresa.
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637180"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754591"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de ti y necesidades empresariales de Contoso
 
@@ -30,12 +29,10 @@ Contoso está pasando de una infraestructura de ti centralizada local a una conf
 
 Contoso usa una infraestructura de TI local mayoritariamente centralizada, con centros de datos de aplicaciones en la sede de París.
 
-La figura 1 muestra la oficina central con centros de aplicaciones, una red perimetral e Internet.
+A continuación se muestra la oficina central con centros de aplicaciones, una red perimetral e Internet.
 
 ![Infraestructura de TI existente de Contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**Figura 1: infraestructura de TI existente de Contoso**
- 
 En los centros de datos de aplicaciones locales se hospeda lo siguiente: 
 
 - Aplicaciones de línea de negocio personalizadas que usan SQL Server y otras bases de datos de Linux.
@@ -135,15 +132,15 @@ El Departamento de TI de Contoso determinó la siguiente asignación de necesida
 | Cumplimiento |  |  |
 |  | Cumplir los requisitos normativos regionales | Características de RGPD en Microsoft 365 |
 | Administración |  |  |
-|  | Reducir la sobrecarga de TI para instalar actualizaciones de cliente | Anillos de implementación <BR> Actualizaciones de Windows 10 Enterprise <BR> Actualizaciones para las aplicaciones de Microsoft 365 para empresas |
+|  | Reducir la sobrecarga de TI para instalar actualizaciones de cliente | Actualizaciones de Windows 10 Enterprise <BR> Actualizaciones para las aplicaciones de Microsoft 365 para empresas |
 ||||
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información](contoso-networking.md) sobre la red local de Contoso Corporation y cómo se optimizó para el acceso y la latencia de los recursos basados en la nube de Microsoft 365.
+Obtenga información sobre la [red local de](contoso-networking.md) contoso Corporation y cómo se optimizó para el acceso y la latencia de los recursos basados en la nube de Microsoft 365.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

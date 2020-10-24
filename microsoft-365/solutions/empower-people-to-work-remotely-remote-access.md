@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Asegúrese de que los trabajadores remotos puedan tener acceso a los recursos locales y optimizar el acceso a los servicios en la nube de Microsoft 365.
-ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445994"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681425"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Paso 2. Proporcionar acceso remoto a los servicios y aplicaciones locales
 
@@ -30,11 +30,12 @@ Si en su organización se usa una solución de VPN de acceso remoto, habitualmen
 
 Si los usuarios no usan una solución de VPN, puede usar el proxy de aplicación de Azure Active Directory (Azure AD) y la VPN de punto a sitio de Azure (P2S) para ofrecer acceso en función de si todas las aplicaciones se basan en la web.
 
-Existen tres configuraciones principales:
+Estas son las principales configuraciones para acceso remoto:
 
-1. Ya está usando una solución de VPN de acceso remoto.
-2. No está usando una solución de VPN de acceso remoto, tiene una identidad híbrida y solo necesita el acceso remoto a aplicaciones locales basadas en la web.
-3. No está usando una solución de VPN de acceso remoto y necesita tener acceso a aplicaciones locales, algunas de las cuales no se basan en la web.
+- Ya está usando una solución de VPN de acceso remoto.
+- No está usando una solución de VPN de acceso remoto y desea que los trabajadores remotos usen sus equipos personales.
+- No está usando una solución de VPN de acceso remoto, tiene una identidad híbrida y solo necesita el acceso remoto a aplicaciones locales basadas en la web.
+- No está usando una solución de VPN de acceso remoto y necesita tener acceso a aplicaciones locales, algunas de las cuales no se basan en la web.
 
 Vea este diagrama de flujo para ver las opciones de configuración de acceso remoto descritas en este artículo.
 
@@ -56,6 +57,8 @@ Con el túnel dividido, puede configurar el cliente VPN para excluir determinado
 
 Para optimizar el acceso a los recursos en la nube de Microsoft 365, configure los clientes VPN de túnel dividido para excluir el tráfico a los puntos de conexión de Microsoft 365 de la categoría **Optimizar** por la conexión VPN. Para obtener más información, consulte [Office 365 endpoint categories](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories) (Categorías de puntos de conexión de Office 365). Vea la lista de puntos de conexión de la categoría Optimizar [aquí](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
+Este es el flujo de tráfico resultante, en el que la mayoría del tráfico para las aplicaciones en la nube de Microsoft 365 omiten la conexión VPN.
+
 ![Tráfico de red de clientes de VPN sin túneles](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 Esto permite que el cliente VPN envíe y reciba tráfico esencial de servicio en la nube de Microsoft 365 directamente por Internet y al punto de entrada más cercano a la red de Microsoft.
@@ -64,13 +67,13 @@ Para obtener más información e instrucciones, consulte [Optimizar la conectivi
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Implementación del acceso remoto cuando todas las aplicaciones son aplicaciones web y tiene una identidad híbrida
 
-Si los trabajadores remotos no usan un cliente VPN tradicional y las cuentas de usuario y los grupos locales se sincronizan con Azure AD, puede usar el proxy de la aplicación de Azure AD para proporcionar acceso remoto seguro para aplicaciones basadas en web que se encuentren en servidores de intranet. Entre las aplicaciones basadas en web se incluyen los sitios de SharePoint, los servidores de Outlook Web Access, o cualquier otra línea de aplicaciones empresariales basada en web. 
+Si sus trabajadores remotos no usan un cliente VPN tradicional y sus grupos y cuentas de usuario locales están sincronizados con Azure AD, puede usar Azure AD Application Proxy para proporcionar acceso remoto seguro para aplicaciones basadas en web hospedadas en servidores locales. Entre las aplicaciones basadas en web se incluyen los sitios de SharePoint, los servidores de Outlook Web Access, o cualquier otra línea de aplicaciones empresariales basada en web. 
 
 Estos son los componentes del proxy de la aplicación Azure AD.
 
 ![Componentes del proxy de la aplicación Azure AD](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Para obtener más información, vea este [resumen sobre el proxy de aplicación de Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) y la [tercera parte del vídeo sobre el uso del proxy de aplicación de Azure AD](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
+Para más información, vea esta [información general sobre el proxy de aplicación de Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 >[!Note]
 >El proxy de aplicación de Azure AD no está incluido en una suscripción de Microsoft 365. Debe pagar para usarlo con una suscripción de Azure por separado.
@@ -78,7 +81,7 @@ Para obtener más información, vea este [resumen sobre el proxy de aplicación 
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Implementar el acceso remoto cuando no todas las aplicaciones son aplicaciones web
 
-Si los trabajadores remotos no usan un cliente VPN tradicional y cualquiera de las aplicaciones no está basada en web, puede usar una red privada virtual punto a sitio (P2S) de Azure.
+Si sus trabajadores remotos no usan un cliente VPN tradicional y tiene aplicaciones que no están basadas en la web, puede usar una VPN de Azure Point-to-Site (P2S).
 
 Una conexión VPN de P2S crea una conexión segura desde el dispositivo de un trabajador remoto a la red de la organización a través de una red virtual de Azure. 
 
@@ -96,10 +99,7 @@ Para dar servicio a los trabajadores remotos que solo pueden usar sus dispositiv
 
 ![Componentes de Azure en Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Para obtener más información, vea: 
-
-- [Este resumen sobre Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
-- [La segunda parte del vídeo sobre el uso de Windows Virtual Desktop para los trabajadores remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+Para obtener más información, consulte [esta introducción a Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview). 
 
 >[!Note]
 >Windows Virtual Desktop no está incluido en una suscripción de Microsoft 365. Debe pagar para usarlo con una suscripción de Azure por separado.

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la infraestructura de red de Contoso y cómo usa su tecnología SD-WAN el rendimiento óptimo de la red para los servicios de nube de Microsoft 365 para empresas.
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637192"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754019"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Redes para Contoso Corporation
 
@@ -115,14 +114,14 @@ La adopción satisfactoria de Microsoft 365 para los servicios empresariales por
 
    Se comprobaron los equipos individuales para asegurarse de que se instalaron las últimas actualizaciones del sistema operativo y que la supervisión de seguridad de extremos estaba activa en todos los clientes.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información sobre](contoso-identity.md) cómo aprovecha Contoso sus Servicios de dominio de Active Directory(AD DS) locales en la nube para la autenticación de federación y empleados para los clientes y socios empresariales.
+Obtenga información sobre cómo Contoso está [aprovechando sus servicios de dominio de Active Directory local en la nube](contoso-identity.md) para los empleados y la autenticación de Federación para clientes y socios comerciales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Guía de redes para Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

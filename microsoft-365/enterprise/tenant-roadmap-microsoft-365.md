@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,27 +14,26 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: db0f9552fce460ca6d25ee74ea2031bea388b8dc
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656012"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753971"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mapa de ruta del espacio empresarial para Microsoft 365
 
-Su inquilino de Microsoft 365 es el conjunto de servicios asignados a su organización. Normalmente, este inquilino está asociado con uno o más de los nombres de dominio DNS y actúa como un contenedor central para distintas suscripciones y las licencias que se asignan a las cuentas de usuario. Para obtener más información, vea [suscripciones, licencias, cuentas e inquilinos para las ofertas de la nube de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Su inquilino de Microsoft 365 es el conjunto de servicios asignados a su organización. Normalmente, este inquilino está asociado con uno o más de los nombres de dominio DNS públicos y actúa como un contenedor central y aislado para las distintas suscripciones y las licencias que se asignan a las cuentas de usuario. Para obtener más información, vea [suscripciones, licencias, cuentas e inquilinos para las ofertas de la nube de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 
 Cuando se crea un inquilino de Microsoft 365, se asigna a una ubicación geográfica específica. También puede tener un inquilino con varias ubicaciones geográficas y mover el espacio empresarial de una ubicación a otra.
 
-Para preparar su inquilino para la identidad, es fundamental planear y ejecutar cuidadosamente la configuración de inquilinos.
-
+Para preparar al inquilino para el usuario, los grupos, las licencias y las aplicaciones en la nube, es fundamental planear y ejecutar cuidadosamente la configuración del espacio empresarial.
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurar su inquilino de Microsoft 365
 
 Una vez que haya comprobado que la red está optimizada para el acceso a Microsoft 365 tanto para trabajadores locales como remotos, las próximas grandes tareas planean y configuran el espacio empresarial de Microsoft 365 para los nombres de dominio DNS, los servicios comunes y para esa infraestructura de identidad que admita el inicio de sesión de usuario seguro.
 
-## <a name="plan"></a>Plan
+### <a name="plan"></a>Planear
 
 Para planear la implementación del espacio empresarial:
 
@@ -46,7 +44,6 @@ Para planear la implementación del espacio empresarial:
 - [Determinación del uso de la autenticación moderna híbrida](hybrid-modern-auth-overview.md)
 - [Planeación de actualizaciones de Office 2007 y Office 2010](plan-upgrade-previous-versions-office.md)
 - [Comprender el aislamiento de inquilino](microsoft-365-tenant-isolation-overview.md)
-- [Obtener información detallada sobre Microsoft 365 Service Assurance](microsoft-365-administrative-access-controls-overview.md)
 
 ### <a name="deploy"></a>Implementar
 
@@ -69,16 +66,15 @@ Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Mic
 
 Para obtener más información, vea [Microsoft 365 multi-geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenancies"></a>Administrar varios arrendamientos de Microsoft 365 
+## <a name="manage-multiple-microsoft-365-tenant"></a>Administrar varios inquilinos de Microsoft 365 
 
-Aunque tener un único inquilino para su oganization es ideal, puede ser una de las muchas organizaciones que tienen varios arrendamientos. Los motivos para varios inquilinos pueden incluir fusiones y adquisiciones, desear el aislamiento administrativo o tener un descentralizado.
+Aunque tener un único inquilino para su oganization es ideal, puede ser una de las muchas organizaciones que tienen varios inquilinos. Los motivos pueden incluir fusiones y adquisiciones, desear el aislamiento administrativo o tener una descentralizada.
 
-Si tiene varios arrendamientos de Microsoft 365, consulte estos artículos para obtener más información acerca de:
+Si tiene varios inquilinos de Microsoft 365, consulte estos artículos para obtener más información acerca de:
 
 - [Colaboración entre inquilinos](microsoft-365-inter-tenant-collaboration.md)
 - [Migración de buzones de inquilinos cruzados](cross-tenant-mailbox-migration.md)
 - [Migraciones de espacio empresarial a espacio empresarial](microsoft-365-tenant-to-tenant-migrations.md)
-
 
 ## <a name="next-step"></a>Paso siguiente
 

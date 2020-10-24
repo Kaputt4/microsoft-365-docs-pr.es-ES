@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445970"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681485"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
 
 Con los trabajadores remotos, hay que dar soporte a un número cada vez mayor de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
 
-Endpoint Manager proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
+[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
 
-![Los componentes para la administración de puntos de conexión](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Los componentes de Endpoint Management para Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -83,9 +83,7 @@ Para obtener más información, vea esta [introducción a Windows Autopilot](htt
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Recursos técnicos administrativos para la administración de puntos de conexión
 
-- [Vídeo 3.ª parte sobre la administración de dispositivos con Windows 10 para trabajadores remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Vídeo 5.ª parte sobre la administración de los exploradores y los equipos de escritorio de los usuarios remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Implementar una infraestructura de movilidad para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Guía básica de administración de dispositivos para Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
 - [Cómo inscribir diferentes tipos de dispositivos para la administración de dispositivos móviles](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Cómo instruir a los usuarios finales sobre Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

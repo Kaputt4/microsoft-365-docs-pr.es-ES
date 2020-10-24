@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637168"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754355"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
@@ -40,7 +39,7 @@ En función de sus requisitos, contoso decidió implementar Windows 10 Enterpris
 - Implementación de paquetes de idioma inteligentes, que incluye la implementación automática del mismo idioma que el sistema operativo.
 - Un método totalmente compatible y fácil de usar para quitar versiones existentes de Office desde un cliente durante la implementación.
 
-Además de Configuration Manager, contoso usó [Readiness Toolkit for Office Add-in and VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), una herramienta gratuita de Microsoft, para evaluar los problemas de compatibilidad con sus complementos y macros de Office.
+Además de Configuration Manager, contoso usó [Readiness Toolkit for Office Add-Ins and VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), una herramienta gratuita de Microsoft, para evaluar los problemas de compatibilidad con sus complementos y macros de Office.
 
 ## <a name="managing-deployment-and-updates"></a>Administración de la implementación y las actualizaciones
 
@@ -79,12 +78,12 @@ Esta es la arquitectura de implementación de aplicaciones Microsoft 365 para la
  
 ## <a name="next-step"></a>Paso siguiente
 
-[Obtenga información sobre](contoso-mdm.md) cómo contoso usa Microsoft Intune en Microsoft 365 para empresas para administrar los dispositivos y las aplicaciones que ejecutan en la organización.
+Obtenga información sobre cómo contoso [usa Microsoft Intune](contoso-mdm.md) en Microsoft 365 para empresas para administrar los dispositivos y las aplicaciones que ejecutan en la organización.
 
 ## <a name="see-also"></a>Recursos adicionales
 
 [Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

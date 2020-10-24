@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo contoso usa las características de protección de la información de Microsoft 365 para empresas para proteger sus activos digitales en la nube.
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637240"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754610"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -54,7 +54,7 @@ Contoso siguió estos pasos para preparar a Microsoft 365 para empresas para sus
 
 1. Identificación de la información que se va a proteger
 
-   Contoso realizó una revisión exhaustiva de sus activos digitales existentes ubicados en los sitios de SharePoint locales y los recursos compartidos de archivos, y clasificó cada activo.
+   Contoso realizó una revisión exhaustiva de sus activos digitales existentes ubicados en los sitios de SharePoint locales y los recursos compartidos de archivos, y ha clasificado cada activo.
 
 2. Determinar las directivas de acceso, retención y protección de la información para los niveles de datos
 
@@ -113,12 +113,12 @@ Esta es la configuración resultante de la protección de la información de con
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Vea](contoso-security-summary.md) cómo contoso usa las características de seguridad de Microsoft 365 para empresas para la administración de identidad y acceso, la protección contra amenazas, la protección de la información y la administración de la seguridad.
+Obtenga información sobre cómo contoso usa las [características de seguridad de Microsoft 365 para empresas](contoso-security-summary.md) para la administración de identidad y acceso, la protección contra amenazas, la protección de la información y la administración de la seguridad.
 
 ## <a name="see-also"></a>Recursos adicionales
 
 [Plan de seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

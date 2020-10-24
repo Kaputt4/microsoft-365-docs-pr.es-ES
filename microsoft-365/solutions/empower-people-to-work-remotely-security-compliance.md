@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores remotos.
-ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445890"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681473"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Paso 3: implementar seguridad y cumplimiento para trabajadores remotos
 
@@ -39,6 +39,8 @@ El trabajo remoto necesita los siguientes elementos de seguridad y cumplimiento:
 - Prevención del filtrado de información
 - Cumplimiento de las regulaciones de datos regionales
 
+Estas son las características de Microsoft 365 que ofrecen servicios de seguridad y cumplimiento para los trabajadores remotos.
+
 ![Utilice estos servicios de Microsoft 365 para mantener la seguridad y el cumplimiento](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>Seguridad
@@ -54,7 +56,7 @@ Proteja sus datos y aplicaciones con estas características de seguridad de Micr
 | Azure AD Identity Protection  | Automatizar la detección y corrección de riesgos basados en la identidad. <br><br>Cree directivas de acceso condicional basadas en riesgos para requerir la autenticación multifactor (MFA) para los inicios de sesión de riesgo. | Microsoft 365 E5 o E3 con las licencias de Azure AD Premium P2 |
 ||||
 
-Para obtener más información, consulte [Tareas rápidas para comenzar con el cumplimiento de Microsoft 365](../compliance/compliance-quick-tasks.md).
+Para obtener más información, consulte [Las 12 tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md).
 
 ## <a name="compliance"></a>Cumplimiento
 
@@ -73,16 +75,16 @@ Cumpla los requisitos reglamentarios o las directivas internas con estas caracte
 | Administración de riesgos de Insider |  Detecte, investigue y actúe ante riesgos malintencionados e involuntarios en su organización. Microsoft 365 puede detectar estos tipos de riesgos, incluso cuando un trabajador usa un dispositivo no administrado. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
 ||||
 
-Para obtener más información, consulte [Las 12 tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md).
+Para obtener más información, consulte [Tareas rápidas para comenzar con el Centro de cumplimiento de Microsoft 365](../compliance/compliance-quick-tasks.md).
 
 ## <a name="results-of-step-3"></a>Resultados del paso 3
 
 Para sus trabajadores remotos, ha implementado:
 
-- Seguridad:
+- Seguridad
   - Acceso controlado a aplicaciones y datos que los trabajadores remotos usan para comunicarse y colaborar.
   - Protección contra malware para datos de servicios en la nube, correo electrónico y dispositivos con Windows 10. 
-- Cumplimiento:
+- Cumplimiento
   - Etiquetado consistente para niveles de sensibilidad y protección
   - Políticas para prevenir la filtración de información
   - Cumplimiento de las regulaciones de datos regionales

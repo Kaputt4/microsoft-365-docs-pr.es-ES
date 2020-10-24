@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445833"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681413"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Paso 5. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
 
@@ -30,7 +30,7 @@ Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. 
 
 - Para mantener a las personas conectadas mientras se trabaja de forma independiente, utilice Microsoft Teams, que proporciona un centro común de comunicación para reuniones, chats y almacenamiento de archivos para la organización, los departamentos y para pequeños equipos y usuarios. 
 - Para intercambiar correo electrónico y administrar calendarios, contactos y tareas, use Exchange Online y el cliente de Outlook.
-- Para almacenar y colaborar en archivos, use SharePoint y OneDrive. Se pueden usar con un explorador web o en Teams.
+- Para almacenar y colaborar en archivos, use SharePoint y OneDrive. Puedes usarlo dentro de un explorador web o dentro de Teams.
 - Para crear nuevo contenido o colaborar en el contenido existente, las Aplicaciones de Microsoft 365 son versiones de Word, PowerPoint, Excel y Outlook que están instaladas en el equipo local y reciben actualizaciones de características y seguridad continuas.
 
 ![Usar aplicaciones de Teams, Outlook, SharePoint, OneDrive y Microsoft 365 para mantener la productividad](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
@@ -39,9 +39,9 @@ Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. 
 
 Teams le permite charlar, reunirse, llamar y colaborar en un único sitio. Millones de personas trabajan en Teams todos los días ya que reúne todo lo que necesita para hacerlo de forma remota en un centro para el trabajo en equipo. 
 
-Use [este artículo](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) como guía para dar soporte técnico a los trabajadores remotos con Teams. 
+Para obtener instrucciones detalladas, consulte [Soporte técnico para trabajadores remotos con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
 
-En el [vídeo 1.ª parte](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) encontrará instrucciones y demostraciones sobre el uso de Teams para trabajar de forma remota.
+Vea los webcasts [Habilitar el trabajo híbrido con Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) para obtener instrucciones y demostraciones de cómo usar Teams para trabajar de forma remota.
 
 ### <a name="chat-and-conversations"></a>Chats y conversaciones
 
@@ -82,14 +82,14 @@ Vea [este artículo](../security/office-365-security/sharepoint-file-access-poli
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Creación y colaboración en contenido con aplicaciones de Microsoft 365
 
-Las aplicaciones de Microsoft 365 son las más productivas y seguras para empresas, lo que permite que los usuarios trabajen conjuntamente sin problemas desde cualquier lugar y en cualquier momento. Los trabajadores remotos pueden colaborar en un documento con varias personas simultáneamente, ver modificaciones y cambios en tiempo real y coautoría con otros usuarios en cualquier equipo portátil, PC o en un dispositivo móvil.
+Las Aplicaciones de Microsoft 365 son las más productivas y seguras para empresas, lo que permite que los usuarios trabajen conjuntamente sin problemas desde cualquier lugar y en cualquier momento. Los trabajadores remotos pueden colaborar en un documento con varias personas simultáneamente, ver modificaciones y cambios en tiempo real y coautoría con otros usuarios en cualquier equipo portátil, PC o en un dispositivo móvil.
 
-Consulte [este artículo](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) para planear, implementar y administrar Aplicaciones de Microsoft 365 en su entorno empresarial.
+Para obtener más información, [Consulte la guía de implementación de para de Aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Recursos técnicos para administradores de aplicaciones y servicios de productividad
 
 - [Dar soporte para trabajadores remotos con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [Vídeo 1.ª parte sobre Teams para trabajadores remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [Cómo habilitar el trabajo híbrido con webcasts de Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Descarga del kit de consecución del cliente de Teams](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Herramientas para impulsar la adopción de Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Crear una estrategia de administración de cambios para Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

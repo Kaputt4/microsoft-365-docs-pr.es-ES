@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445927"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681461"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
@@ -43,7 +43,7 @@ Existen tres formas de requerir que los usuarios usen MFA basándose en su plan 
 
 ## <a name="security-defaults"></a>Valores predeterminados de seguridad
 
-Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen los valores predeterminados de seguridad activados, lo que ***obliga a que todos los usuarios usen MFA con la aplicación Microsoft Authenticator***.
+Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen los valores predeterminados de seguridad activados, lo que **obliga a que todos los usuarios usen MFA con la aplicación Microsoft Authenticator**.
  
 Los usuarios tienen 14 días para registrarse en MFA con la aplicación Microsoft Authenticator desde sus teléfonos inteligentes, que comienzan a contar desde la primera vez que inician sesión después de que se hayan habilitado los valores predeterminados de seguridad. Transcurridos 14 días, el usuario no podrá iniciar sesión hasta que el registro de MFA se haya completado.
 
@@ -75,6 +75,9 @@ La protección de identidad de Azure AD requiere licencias de Azure AD Premium P
 
 Para más información, consulte [Acceso condicional basado en riesgos](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
+Con Azure Active Directory Identity Protection, también puede crear una directiva para obligar a los usuarios a registrarse en MFA. Para obtener más información, consulte [Configurar la directiva de registro de autenticación multi-factor de Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+
+
 ## <a name="using-these-methods-together"></a>Usar estos métodos conjuntamente
 
 Tenga en cuenta lo siguiente:
@@ -88,13 +91,13 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 
 | Método | Habilitado | Deshabilitado | Método de autenticación adicional |
 |:-------|:-----|:-------|:-------|
-| **Valores predeterminados de seguridad**  | No se pueden usar directivas de acceso condicional | Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
+| _*Valores predeterminados de seguridad**  | No se pueden usar directivas de acceso condicional | Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
 | **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
 ||||
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
-El Restablecimiento de Contraseña de Autoservicio (SSPR) permite a los usuarios restablecer sus contraseñas sin que el personal de TI deba actuar. Los usuarios pueden restablecer las contraseñas rápidamente en cualquier momento y desde cualquier sitio. Vea [este vídeo](https://go.microsoft.com/fwlink/?linkid=2128524) para configurar el SSPR.
+El Restablecimiento de Contraseña de Autoservicio (SSPR) permite a los usuarios restablecer sus contraseñas sin que el personal de TI deba actuar. Los usuarios pueden restablecer las contraseñas rápidamente en cualquier momento y desde cualquier sitio. Para obtener más información, consulte [Planear una implementación de restablecimiento de contraseña de autoservicio de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Iniciar sesión en aplicaciones SaaS con Azure AD
 
@@ -102,12 +105,9 @@ Además de proporcionar autenticación en la nube para los usuarios, Azure AD ta
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Recursos técnicos de administración para MFA e identidad
 
-- [MFA para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [Las 5 mejores formas en que Azure AD puede ayudarle a habilitar el trabajo remoto](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
 - [Plan de identidad para Microsoft 365](../enterprise/identity-roadmap-microsoft-365.md)
 - [Vídeos de aprendizaje de Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Configurar la directiva de registro de autenticación multi-factor de Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Planear la implementación del autoservicio de restablecimiento de contraseña para Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
 
 ## <a name="results-of-step-1"></a>Resultado del paso 1
 
