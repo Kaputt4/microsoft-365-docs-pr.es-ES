@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104459"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637012"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -102,15 +102,23 @@ Según la suscripción, estos son los informes disponibles.
   
 - [Grupos de Microsoft 365](office-365-groups.md)
   
-- [Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity.md)
-  
-- [Uso de OneDrive para la Empresa](onedrive-for-business-usage.md)
+- [Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity-ww.md)
+
+- [Actividad de usuarios de OneDrive para la Empresa para el gobierno de Estados Unidos](onedrive-for-business-activity.md)
+
+- [Uso de OneDrive para la Empresa](onedrive-for-business-usage-ww.md)
+
+- [Uso de OneDrive para la Empresa para el gobierno de Estados Unidos](onedrive-for-business-usage.md)
 
 - [Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage.md)
   
-- [Uso del sitio de SharePoint](sharepoint-site-usage.md)
+- [Uso del sitio de SharePoint](sharepoint-site-usage-ww.md)
+
+- [Uso del sitio de SharePoint para el gobierno de Estados Unidos](sharepoint-site-usage.md)
   
-- [Actividad de SharePoint](sharepoint-activity.md)
+- [Actividad de SharePoint](sharepoint-activity-ww.md)
+
+- [Actividad de SharePoint para el gobierno de Estados Unidos](sharepoint-activity.md)
   
 - [Actividad de Skype Empresarial Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   

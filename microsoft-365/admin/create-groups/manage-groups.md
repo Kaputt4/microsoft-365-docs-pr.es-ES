@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Obtenga información sobre cómo administrar grupos de 365 de Microsoft, como agregar miembros de quitar grupos, editar la dirección de correo electrónico, el nombre de grupo o la descripción, y personalizar cómo funciona el grupo.
-ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8216b80ba6cd6bffe470f4fe4ace43307afba5f2
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469714"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753306"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el centro de administración de 365 de Microsoft
 
@@ -34,40 +34,14 @@ Vaya al centro de administración de Microsoft 365 en [https://admin.microsoft.c
 
 ## <a name="edit-the-group-name-or-description"></a>Editar el nombre de grupo o la descripción
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
 
 2. Seleccione el grupo que desee editar y, a continuación, haga clic en **Editar nombre y descripción**.
 
 3. Actualice el nombre y la descripción y, a continuación, seleccione **Guardar**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
-
-2. Seleccione el grupo que desee editar y, a continuación, haga clic en **Editar nombre y descripción**.
-
-3. Actualice el nombre y la descripción y, a continuación, seleccione **Guardar**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
-
-2. Seleccione el grupo que desee editar y, a continuación, haga clic en **Editar nombre y descripción**.
-
-3. Actualice el nombre y la descripción y, a continuación, seleccione **Guardar**.
-
-::: moniker-end
 
 ## <a name="manage-group-owners-and-members"></a>Administrar miembros y propietarios de grupos
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
 
 2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
@@ -77,36 +51,6 @@ Vaya al centro de administración de Microsoft 365 en [https://admin.microsoft.c
 4. Elija **Agregar** para agregar a alguien o haga clic en **X** para quitar a alguien.
 
 5. Haga clic en **Cerrar**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
-
-2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
-
-3. En la pestaña **miembros** , elija si desea administrar propietarios o miembros.
-
-4. Elija **Agregar** para agregar a alguien o haga clic en **X** para quitar a alguien.
-
-5. Haga clic en **Cerrar**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
-
-2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
-
-3. En la pestaña **miembros** , elija si desea administrar propietarios o miembros.
-
-4. Elija **Agregar** para agregar a alguien o haga clic en **X** para quitar a alguien.
-
-5. Haga clic en **Cerrar**.
-
-::: moniker-end
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Enviar copias de conversaciones a las bandejas de los miembros del grupo
   
@@ -116,8 +60,6 @@ Al activar esta configuración, los miembros del grupo recibirán una copia de l
 
 Los miembros del grupo pueden optar por no recibir estos mensajes de correo electrónico si elige dejar de seguir el grupo en Outlook.
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
 
 2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
@@ -126,38 +68,10 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 4. Seleccione **Guardar**.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a **la** \> **Groups** página grupos y, a continuación, seleccione el grupo que desea cambiar.
-
-2. Junto a **nombre**, seleccione **Editar**.
-
-3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
-
-4. Seleccione **Guardar**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a **la** \> **Groups** página grupos y, a continuación, seleccione el grupo que desea cambiar.
-
-2. Junto a **nombre**, seleccione **Editar**.
-
-3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
-
-4. Seleccione **Guardar**.
-
-::: moniker-end
-
 ## <a name="let-people-outside-the-organization-email-the-group"></a>Permitir que los usuarios ajenos a la organización envíen un correo electrónico al grupo
 
 Esta opción es fantástica si desea tener una dirección de correo electrónico de la compañía como info@contoso.com.
  
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, expanda **grupos**y, a continuación, haga clic en **grupos**.
 
 2. Haga clic en el nombre del grupo que desea administrar para abrir el panel de configuración.
@@ -166,32 +80,27 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 4. Seleccione **Guardar**.
 
-::: moniker-end
+## <a name="permanently-delete-a-microsoft-365-group"></a>Eliminar de forma permanente un grupo de 365 de Microsoft
 
-::: moniker range="o365-germany"
+A veces, es posible que desee purgar un grupo de forma permanente sin esperar a que expire el período de eliminación de software de 30 días. Para ello, inicie PowerShell y ejecute este comando para obtener el identificador de objeto del Grupo:
+ 
+ ```powershell
+`Get-AzureADMSDeletedGroup`
+```
 
-1. Actualice la página del centro de administración para que aparezca el nuevo grupo.
-    
-2. En la lista grupos del centro de administración, seleccione el grupo que desee cambiar y, a continuación, junto a **nombre**, seleccione **Editar**. 
-    
-3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
-    
-4. Seleccione **Guardar**.
+Anote el identificador de objeto del grupo o grupos que desea eliminar de forma permanente.
+  
+> [!CAUTION]
+> Purgar el grupo elimina el grupo y sus datos para siempre. 
+  
+Para purgar el grupo, ejecute este comando en PowerShell:
 
-::: moniker-end
+```powershell
+`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+```
 
-::: moniker range="o365-21vianet"
-
-1. Actualice la página del centro de administración para que aparezca el nuevo grupo.
-    
-2. En la lista grupos del centro de administración, seleccione el grupo que desee cambiar y, a continuación, junto a **nombre**, seleccione **Editar**. 
-    
-3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
-    
-4. Seleccione **Guardar**.
-
-::: moniker-end
-
+Para confirmar que el grupo se ha purgado correctamente, ejecute el cmdlet  *Get-AzureADMSDeletedGroup*  de nuevo para confirmar que el grupo ya no aparece en la lista de grupos eliminados temporalmente. En algunos casos, la eliminación permanente del grupo y todos sus datos puede tardar hasta 24 horas. 
+  
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Crear un grupo de 365 de Microsoft](create-groups.md)

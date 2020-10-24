@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361910"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651423"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -64,7 +64,7 @@ Para desactivar el uso compartido de invitados en Teams
 Si quiere evitar el acceso de invitado en los Grupos de Microsoft 365, puede desactivar la configuración del acceso de invitado de los grupos en el Centro de administración de Microsoft 365.
 
 Para desactivar el uso compartido de invitados en los grupos de Microsoft 365
-1. En el Centro de administración de Microsoft 365, haga clic en **Configuración** y, después, haga clic en **Configuración**.
+1. En el Centro de administración de Microsoft 365, haga clic en **Configuración** y después haga clic en **Configuración de la organización**.
 2. En la pestaña **Servicios**, haga clic en **Grupos de Microsoft 365**.
 3. Desactive las casillas **Permitir que los miembros del grupo de fuera de la organización tengan acceso al contenido del grupo** y **Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a los grupos**.
 4. Haga clic en **Guardar cambios**.

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Microsoft 365 Empresa Estándar.
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324451"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644560"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurar Microsoft Empresa Estándar
 
@@ -40,7 +40,7 @@ Vea un vídeo breve sobre cómo configurar Microsoft 365 Empresa Estándar.<br><
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
- *Estos pasos están dirigidos a empresas y [organizaciones sin ánimo de lucro](https://go.microsoft.com/fwlink/p/?LinkId=627221) que tengan el **[Plan de Microsoft 365 Empresa Estándar.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
+ *Estos pasos están dirigidos a empresas y [organizaciones sin ánimo de lucro](https://go.microsoft.com/fwlink/p/?LinkId=627221) que tengan el **[Plan de Microsoft 365 Empresa Estándar.](https://go.microsoft.com/fwlink/p/?LinkId=627220)**_
 
 Vea un vídeo breve sobre cómo configurar Microsoft 365 Empresa Estándar (anteriormente denominada Office 365 Empresa Premium).<br><br>
 
@@ -56,7 +56,7 @@ Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la op
 
 1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
 
-2. Para iniciar el asistente, seleccione **Ir a la configuración**.
+2. Elija _*Ir a la configuración** para iniciar el asistente.
 
 3. En la página **Instalar sus aplicaciones de Office**, tendrá la opción de instalar las aplicaciones en su equipo.
     

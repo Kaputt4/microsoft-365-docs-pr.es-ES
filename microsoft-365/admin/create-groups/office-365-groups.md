@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los grupos de 365 de Microsoft.
-ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: f3114fdd6eefae0fe226e25907716101dcb6a51f
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337174"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753270"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -108,7 +108,7 @@ Cualquier suscripción a Microsoft 365 que tenga Exchange Online y SharePoint On
 
 Si tiene un plan de solo Exchange, todavía puede obtener las características de bandeja de entrada compartida y calendario compartido de los grupos en Outlook, pero no obtendrá la biblioteca de documentos, el programador ni ninguna de las demás funcionalidades.
 
-Los grupos de Microsoft 365 funcionan con Azure Active Directory (AAD). Las características de grupos que obtengas dependen de qué suscripción de Azure Active Directory tiene y qué licencia o licencias se asignan al organizador del grupo.
+Los grupos de Microsoft 365 funcionan con Azure Active Directory. Las características de grupos que obtengas dependen de qué suscripción de Azure Active Directory tiene y qué licencia o licencias se asignan al organizador del grupo.
 
 > [!IMPORTANT]
 > Para todas las características de grupos, si tiene una suscripción de Azure AD Premium, los usuarios pueden unirse al grupo independientemente de si tienen una licencia de AAD P1 asignada. No se aplican licencias.
