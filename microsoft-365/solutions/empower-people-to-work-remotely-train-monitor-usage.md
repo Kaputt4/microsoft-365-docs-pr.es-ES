@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,35 +17,37 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: b1dd55febcd23f6bb8413b0aa5c625f4b785babb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377074"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681389"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a><span data-ttu-id="53c0b-103">Paso 6: Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso</span><span class="sxs-lookup"><span data-stu-id="53c0b-103">Step 6: Train remote workers and address usage feedback</span></span>
+# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a><span data-ttu-id="530c4-103">Paso 6: Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso</span><span class="sxs-lookup"><span data-stu-id="530c4-103">Step 6: Train remote workers and address usage feedback</span></span>
 
-<span data-ttu-id="53c0b-104">La formación de los trabajadores remotos abarca los siguientes aspectos:</span><span class="sxs-lookup"><span data-stu-id="53c0b-104">Train your remote workers on:</span></span>
+<span data-ttu-id="530c4-104">La formación de los trabajadores remotos abarca los siguientes aspectos:</span><span class="sxs-lookup"><span data-stu-id="530c4-104">Train your remote workers on:</span></span>
 
-- <span data-ttu-id="53c0b-105">Procedimientos de inicio de sesión adecuados mediante la autenticación multifactor, incluido el registro de un método de comprobación adicional.</span><span class="sxs-lookup"><span data-stu-id="53c0b-105">Proper sign-in procedures using MFA, including registering an additional verification method.</span></span>
-- <span data-ttu-id="53c0b-106">El uso de dispositivos y cómo las directivas de administración de puntos de conexión pueden servir para bloquear el acceso a dispositivos no compatibles.</span><span class="sxs-lookup"><span data-stu-id="53c0b-106">The use of devices and how endpoint management policies can be used to block access for non-compliant devices.</span></span>
-- <span data-ttu-id="53c0b-107">El uso de aplicaciones permitidas y cómo se pueden usar las directivas de aplicaciones de administración de puntos de conexión para bloquear el uso de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="53c0b-107">The use of allowed apps and how endpoint management application polices can be used to block the use of apps.</span></span>
-- <span data-ttu-id="53c0b-108">Características de seguridad de Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="53c0b-108">Windows 10 Enterprise security features.</span></span>
-- <span data-ttu-id="53c0b-109">Cómo usar [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) para chatear, compartir documentos, hacer videoconferencias y tener conversaciones encadenadas.</span><span class="sxs-lookup"><span data-stu-id="53c0b-109">How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.</span></span>
-- <span data-ttu-id="53c0b-110">Cómo usar [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) para el correo electrónico y el calendario.</span><span class="sxs-lookup"><span data-stu-id="53c0b-110">How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.</span></span>
-- <span data-ttu-id="53c0b-111">Cómo usar los equipos o sitios de comunicaciones de [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) y las carpetas de [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) para examinar archivos que pertenezcan a una biblioteca de usuario o a un grupo y colaborar en ellos.</span><span class="sxs-lookup"><span data-stu-id="53c0b-111">How to use [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) team or communication sites and [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) folders to browse and collaborate on files in a user's library and those belonging to a group.</span></span>
+- <span data-ttu-id="530c4-105">Procedimientos de inicio de sesión adecuados mediante la autenticación multifactor, incluido el registro de un método de comprobación adicional.</span><span class="sxs-lookup"><span data-stu-id="530c4-105">Proper sign-in procedures using MFA, including registering an additional verification method.</span></span>
+- <span data-ttu-id="530c4-106">El uso de dispositivos y cómo las directivas de administración de puntos de conexión pueden servir para bloquear el acceso a dispositivos no compatibles o no administrados.</span><span class="sxs-lookup"><span data-stu-id="530c4-106">The use of devices and how endpoint management policies can be used to block access for non-compliant or unmanaged devices.</span></span>
+- <span data-ttu-id="530c4-107">El uso de aplicaciones permitidas y cómo se pueden usar las directivas de aplicaciones de administración de puntos de conexión para bloquear el uso de algunas aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="530c4-107">The use of allowed apps and how endpoint management application polices can be used to block the use of some apps.</span></span>
+- <span data-ttu-id="530c4-108">Características de seguridad de Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="530c4-108">Windows 10 Enterprise security features.</span></span>
+- <span data-ttu-id="530c4-109">Cómo usar [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) para chatear, compartir documentos, hacer videoconferencias y tener conversaciones encadenadas.</span><span class="sxs-lookup"><span data-stu-id="530c4-109">How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.</span></span>
+- <span data-ttu-id="530c4-110">Cómo usar [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) para el correo electrónico y el calendario.</span><span class="sxs-lookup"><span data-stu-id="530c4-110">How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.</span></span>
+- <span data-ttu-id="530c4-111">Cómo usar los equipos o sitios de comunicaciones de [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) y las carpetas de [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) para examinar archivos que pertenezcan a una biblioteca de usuario o a un grupo y colaborar en ellos.</span><span class="sxs-lookup"><span data-stu-id="530c4-111">How to use [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) team or communication sites and [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) folders to browse and collaborate on files in a user's library and those belonging to a group.</span></span>
 
-<span data-ttu-id="53c0b-112">Esta formación debe incluir ejercicios prácticos para que los empleados puedan experimentar con las funcionalidades y sus resultados.</span><span class="sxs-lookup"><span data-stu-id="53c0b-112">This training should include hands-on exercises so that your workers can experience these capabilities and their results.</span></span>
+<span data-ttu-id="530c4-112">Esta formación debe incluir ejercicios prácticos para que los empleados puedan experimentar con las funcionalidades y sus resultados.</span><span class="sxs-lookup"><span data-stu-id="530c4-112">This training should include hands-on exercises so that your workers can experience these capabilities and their results.</span></span>
 
-<span data-ttu-id="53c0b-113">En las semanas posteriores a la formación:</span><span class="sxs-lookup"><span data-stu-id="53c0b-113">In the weeks after training:</span></span>
+<span data-ttu-id="530c4-113">Cree un foro para que sus trabajadores remotos hagan preguntas o solucionen problemas, como un equipo o un grupo de Yammer.</span><span class="sxs-lookup"><span data-stu-id="530c4-113">Create a forum for your remote workers to ask questions or get issues addressed, such as a team or a Yammer group.</span></span>
 
-- <span data-ttu-id="53c0b-114">Responder rápidamente a los comentarios de los trabajadores y ajustar las directivas y las configuraciones.</span><span class="sxs-lookup"><span data-stu-id="53c0b-114">Quickly address remote worker feedback and fine tune policies and configurations.</span></span>
-- <span data-ttu-id="53c0b-115">Analizar el uso de Teams, el correo electrónico, los sitios de SharePoint y las carpetas de OneDrive y compararlo con las expectativas de uso previas.</span><span class="sxs-lookup"><span data-stu-id="53c0b-115">Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with usage expectations.</span></span>
+<span data-ttu-id="530c4-114">En las semanas después de la formación haga lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="530c4-114">In the weeks after training:</span></span>
 
-<span data-ttu-id="53c0b-116">Luego, volver a dar formación a los usuarios que lo necesiten.</span><span class="sxs-lookup"><span data-stu-id="53c0b-116">Then, retrain your users as needed.</span></span>
+- <span data-ttu-id="530c4-115">Responda rápidamente a los comentarios de los trabajadores remotos en su foro y ajuste las directivas y configuraciones de los trabajadores remotos según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="530c4-115">Quickly address remote worker feedback in your forum and adjust your remote worker policies and configurations as needed.</span></span>
+- <span data-ttu-id="530c4-116">Analice el uso de equipos, correo electrónico, sitios de SharePoint y carpetas de OneDrive y compárelo con sus expectativas de adopción por parte de los usuarios.</span><span class="sxs-lookup"><span data-stu-id="530c4-116">Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with your expectations of user adoption.</span></span>
 
-## <a name="results-of-step-6"></a><span data-ttu-id="53c0b-117">Resultado del paso 6</span><span class="sxs-lookup"><span data-stu-id="53c0b-117">Results of Step 6</span></span>
+<span data-ttu-id="530c4-117">Luego, volver a dar formación a los usuarios que lo necesiten.</span><span class="sxs-lookup"><span data-stu-id="530c4-117">Then, retrain your users as needed.</span></span>
 
-<span data-ttu-id="53c0b-118">Los trabajadores remotos están preparados y existe un foro abierto y resolutivo donde pueden proporcionar comentarios y publicar incidencias relacionadas con el acceso remoto y los servicios y aplicaciones de productividad.</span><span class="sxs-lookup"><span data-stu-id="53c0b-118">Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps and services.</span></span>
+## <a name="results-of-step-6"></a><span data-ttu-id="530c4-118">Resultado del paso 6</span><span class="sxs-lookup"><span data-stu-id="530c4-118">Results of Step 6</span></span>
+
+<span data-ttu-id="530c4-119">Sus trabajadores remotos están preparados y hay un foro abierto y resolutivo donde pueden proporcionar comentarios y publicar incidencias relacionadas con el acceso remoto y las aplicaciones de productividad.</span><span class="sxs-lookup"><span data-stu-id="530c4-119">Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps.</span></span>
 
