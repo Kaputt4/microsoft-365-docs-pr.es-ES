@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 497e8b9fce06ae64d9f4396f2db05e65274f61dd
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399007"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755569"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -106,7 +106,6 @@ Mensaje que ve el usuario si intenta eliminar un documento con etiquetas en Shar
 > Además, las etiquetas de retención configuradas para los registros normativos tienen las siguientes restricciones de administrador:
 > - El período de retención no se puede reducir después de guardar la etiqueta, solo se puede extender.
 > - Estas etiquetas no son compatibles con las directivas de etiquetado automático y deben aplicarse mediante [directivas de etiqueta de retención](create-apply-retention-labels.md). 
-> - Una vez que haya agregado y guardado estas etiquetas en una directiva de etiqueta de retención, no podrá quitar estas etiquetas de las ubicaciones, solo podrá agregar ubicaciones.
 > 
 > Dado que se trata de acciones irreversibles, asegúrese de que realmente necesita usar registros normativos antes de seleccionar esta opción para las etiquetas de retención. Para evitar la configuración accidental, esta opción no está disponible de forma predeterminada, sino que primero se debe habilitar con PowerShell. Las instrucciones se incluyen en [Declarar registros mediante etiquetas de retención](declare-records.md).
 
