@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 848ed959b1ed728a5a193641d7df42a477604d30
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 43bfe1b51b730dd41342f95a069645ff15a03437
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681788"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755579"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -53,7 +53,7 @@ Si bien una directiva de retención es compatible con varias ubicaciones, no se 
 - Mensajes de la comunidad de Yammer
 - Mensajes privados de Yammer
 
-Cuando selecciona una de las ubicaciones de Teams o Yammer durante la creación de una directiva de retención, las demás ubicaciones quedan excluidas automáticamente. Por lo tanto, las instrucciones que debe seguir dependerán de si necesita incluir las ubicaciones de Teams o de Yammer:
+Cuando selecciona una de las ubicaciones de Teams o Yammer durante la creación de una directiva de retención, las demás ubicaciones quedan excluidas automáticamente. Por lo tanto, las instrucciones que debe seguir dependen de si necesita incluir las ubicaciones de Teams o Yammer:
 
 - [Instrucciones para crear una directiva de retención para ubicaciones de Teams](#retention-policy-for-teams-locations)
 - [Instrucciones para crear una directiva de retención para ubicaciones de Yammer](#retention-policy-for-yammer-locations)
@@ -63,17 +63,17 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
-1. En el[centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione**Directivas de** > **retención**.
+1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención** .
 
 2. Seleccione **Nueva Directiva de retención** para iniciar el Asistente para crear directivas de retención y asignar un nombre a su nueva Directiva de retención.
 
-3. Para la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o ambas ubicaciones para Teams: **mensaje de canal de Teams** y **chats de Teams**.
+3. Para la página **Elegir ubicaciones para aplicar la directiva** , seleccione una o ambas ubicaciones para Teams: **mensaje de canal de Teams** y **chats de Teams** .
 
-   En **los mensajes de canal de Teams**, se incluyen los mensajes de los canales estándar, pero no los de[canales privados](https://docs.microsoft.com/microsoftteams/private-channels). Actualmente, los canales privados no son compatibles con las directivas de retención.
+   En **los mensajes de canal de Teams** , se incluyen los mensajes de los canales estándar, pero no los de [canales privados](https://docs.microsoft.com/microsoftteams/private-channels). Actualmente, los canales privados no son compatibles con las directivas de retención.
 
    De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](#a-policy-with-specific-inclusions-or-exclusions).
 
-4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
+4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos** , especifique las opciones de configuración para conservar y eliminar el contenido.
 
    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
 
@@ -83,7 +83,7 @@ Para más información sobre las directivas de retención para Teams, consulte [
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Directivas de retención adicionales que se necesitan para Teams
 
-Teams es mucho más que solo chats y mensajes de canal. Si tiene equipos creados a partir de un grupo de Microsoft 365 (anteriormente grupo de Office 365), debe configurar una directiva de retención que incluya el grupo de Microsoft 365 mediante la ubicación **grupos de Office 365**. La directiva de retención se aplica al contenido del buzón, del sitio y de los archivos del grupo.
+Teams es mucho más que solo chats y mensajes de canal. Si tiene equipos creados a partir de un grupo de Microsoft 365 (anteriormente grupo de Office 365), debe configurar una directiva de retención que incluya el grupo de Microsoft 365 mediante la ubicación **grupos de Office 365** . La directiva de retención se aplica al contenido del buzón, del sitio y de los archivos del grupo.
 
 Si tiene sitios de equipo que no estén conectados con un grupo de Microsoft 365, necesitará una directiva de retención que incluya las ubicaciones de los **sitios de SharePoint** o de las **cuentas de OneDrive** para conservar y eliminar archivos en Teams:
 
@@ -103,23 +103,23 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
-1. En el[centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione**Directivas de** > **retención**.
+1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención** .
 
 2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
 
-3. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
+3. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos** , especifique las opciones de configuración para conservar y eliminar el contenido. 
     
     Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
     
-    No seleccione **Usar la configuración de retención avanzada**, ya que esta opción no es compatible con las ubicaciones de Yammer. 
+    No seleccione **Usar la configuración de retención avanzada** , ya que esta opción no es compatible con las ubicaciones de Yammer. 
 
-4. Para acceder a la página **Elegir ubicaciones**, seleccione **Quiero elegir ubicaciones concretas**. A continuación, alterne entre una o ambas ubicaciones de Yammer: **Mensaje de la comunidad de Yammer** y **Mensajes privados de Yammer**.
+4. Para acceder a la página **Elegir ubicaciones** , seleccione **Quiero elegir ubicaciones concretas** . A continuación, alterne entre una o ambas ubicaciones de Yammer: **Mensaje de la comunidad de Yammer** y **Mensajes privados de Yammer** .
     
     De forma predeterminada, todas las comunidades y usuarios están seleccionados, pero puede restringir los resultados al especificar qué comunidades y usuarios desea incluir o excluir.
     
     Para los mensajes privados de Yammer: 
-    - Si deja la opción predeterminada en **Todos**, no se incluirá a los usuarios invitados de Azure B2B. 
-    - Si selecciona **Elegir usuario**, puede aplicar una directiva de retención a los usuarios externos si ya sabe cuál es su cuenta.
+    - Si deja la opción predeterminada en **Todos** , no se incluirá a los usuarios invitados de Azure B2B. 
+    - Si selecciona **Elegir usuario** , puede aplicar una directiva de retención a los usuarios externos si ya sabe cuál es su cuenta.
 
 5. Finalice el asistente para guardar la configuración.
 
@@ -127,9 +127,9 @@ Para obtener más información sobre cómo funcionan las directivas de retenció
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Directivas de retención adicionales que se necesitan para admitir Yammer
 
-Yammer es más que solo mensajes de la comunidad y mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, a través de la ubicación de los **Grupos de Office 365**. 
+Yammer es más que solo mensajes de la comunidad y mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, a través de la ubicación de los **Grupos de Office 365** . 
 
-Para conservar y eliminar los archivos almacenados en Yammer, necesitará una directiva de retención que incluya las ubicaciones de los **sitios de SharePoint** o de las **cuentas de OneDrive**:
+Para conservar y eliminar los archivos almacenados en Yammer, necesitará una directiva de retención que incluya las ubicaciones de los **sitios de SharePoint** o de las **cuentas de OneDrive** :
 
 - Los archivos compartidos en los mensajes privados se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. 
 
@@ -147,11 +147,11 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 - Grupos de Microsoft 365
 - Skype Empresarial
 
-1. En el[centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione**Directivas de** > **retención**.
+1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Directivas de** > **retención** .
 
 2. Seleccione **Nueva Directiva de retención** para iniciar el Asistente para crear directivas de retención y asignar un nombre a su nueva Directiva de retención.
 
-3. En la página **Elegir ubicaciones**, activar o desactivar cualquiera de las ubicaciones, excepto las ubicaciones de los Teams. Para cada ubicación, puede dejarla de forma predeterminada [aplicar la directiva a toda la ubicación](#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](#a-policy-with-specific-inclusions-or-exclusions).
+3. En la página **Elegir ubicaciones** , activar o desactivar cualquiera de las ubicaciones, excepto las ubicaciones de los Teams. Para cada ubicación, puede dejarla de forma predeterminada [aplicar la directiva a toda la ubicación](#a-policy-that-applies-to-entire-locations), o [especificar lo que se incluye y excluye](#a-policy-with-specific-inclusions-or-exclusions).
 
     Información específica de las ubicaciones:
     - [Correo electrónico de Exchange y carpetas públicas de Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
@@ -159,7 +159,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
     - [Grupos de Office 365](#configuration-information-for-microsoft-365-groups)
     - [Skype Empresarial](#configuration-information-for-skype-for-business)
 
-4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
+4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos** , especifique las opciones de configuración para conservar y eliminar el contenido.
 
     Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](#settings-for-retaining-and-deleting-content) en esta página.
 
@@ -171,17 +171,17 @@ La ubicación del **correo electrónico de Exchange** admite la retención para 
 
 Se incluyen los siguientes elementos de correo: mensajes de correo (incluidos los borradores) con los datos adjuntos, las tareas y los elementos del calendario que tienen una fecha de finalización y las notas. No se incluyen contactos, tareas o elementos del calendario que no tienen una fecha de finalización. El resto de los elementos almacenados en un buzón de correo, como los mensajes guardados de Skype y Teams, no se incluyen con esta ubicación. Dichos elementos cuentan con sus propias ubicaciones de retención.
 
-Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de**correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Para conservar el contenido de estos buzones, seleccione la ubicación **Grupos de Office 365**.
+Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Para conservar el contenido de estos buzones, seleccione la ubicación **Grupos de Office 365** .
 
 La ubicación de las **carpetas públicas de Exchange** aplica la configuración de retención a todas las carpetas públicas y no se puede aplicar en el nivel de carpeta o de buzón de correo.
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Información de configuración para los sitios de SharePoint y las cuentas de OneDrive
 
-Cuando elige la ubicación de los **sitios de SharePoint**, la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de grupo no conectados por grupos de Office 365 y en los sitios clásicos. Los sitios de equipos conectados por grupos de Office 365 no son compatibles con esta opción. En su lugar, use la ubicación **Grupos de Office 365** que corresponda con el contenido del buzón, el sitio y los archivos del grupo.
+Cuando elige la ubicación de los **sitios de SharePoint** , la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de grupo no conectados por grupos de Office 365 y en los sitios clásicos. Los sitios de equipos conectados por grupos de Office 365 no son compatibles con esta opción. En su lugar, use la ubicación **Grupos de Office 365** que corresponda con el contenido del buzón, el sitio y los archivos del grupo.
 
 Si bien la directiva de retención se aplica en el nivel de sitio, la configuración de retención solo se aplica a los documentos. La configuración de retención no se aplica a las estructuras de organización que contienen bibliotecas, listas y carpetas dentro del sitio.
 
-Cuando especifica sus ubicaciones para los sitios de SharePoint o las cuentas de OneDrive, no necesita permisos para acceder a los sitios y no se lleva a cabo ninguna validación en el momento en el que especifica la dirección URL en la página **Editar ubicaciones**. Sin embargo, los sitios de SharePoint que especifique se deben indexar y al final del asistente se comprueba que existan. Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y el asistente no creará la directiva de retención hasta que se supere la comprobación de validación.  Si ve este mensaje, vuelva al asistente para cambiar la dirección URL o eliminar el sitio de la directiva de retención.
+Cuando especifica sus ubicaciones para los sitios de SharePoint o las cuentas de OneDrive, no necesita permisos para acceder a los sitios y no se lleva a cabo ninguna validación en el momento en el que especifica la dirección URL en la página **Editar ubicaciones** . Sin embargo, los sitios de SharePoint que especifique se deben indexar y al final del asistente se comprueba que existan. Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y el asistente no creará la directiva de retención hasta que se supere la comprobación de validación.  Si ve este mensaje, vuelva al asistente para cambiar la dirección URL o eliminar el sitio de la directiva de retención.
 
 > [!NOTE]
 > Los sitios de SharePoint se deben indexar para que se aplique la configuración de retención. Sin embargo, si los elementos de la biblioteca de documentos de SharePoint se configuran para que no aparezcan en los resultados de búsqueda, esta configuración no excluirá los elementos de la configuración de retención.
@@ -194,7 +194,7 @@ Para comprobar la sintaxis de su espacio empresarial e identificar las direccion
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los grupos de Microsoft 365
 
-Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **grupos de Office 365**. Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de**correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Además, aunque la ubicación **de correo electrónico de Exchangl** le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, recibe un error que indique que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
+Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **grupos de Office 365** . Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Además, aunque la ubicación **de correo electrónico de Exchangl** le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, recibe un error que indique que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
 Las directivas de retención que se aplican a un grupo de Microsoft 365 incluyen el buzón de grupo y el sitio de Teams, en caso de que se haya seleccionado un sitio de Teams en el momento en que se creó el grupo o se agregase posteriormente al grupo. Los archivos almacenados en el sitio de Teams se tratan en esta ubicación, pero no los mensajes de chats ni canales de Teams que tienen sus propias ubicaciones de directivas de retención.
 
@@ -204,9 +204,9 @@ A diferencia del correo electrónico de Exchange, no puede activar el estado de 
 
 ![Elegir la ubicación de Skype para las directivas de retención](../media/skype-location-retention-policies.png)
 
-Cuando seleccione **Elegir usuario**, puede incluir rápidamente a todos los usuarios seleccionando el cuadro **Seleccionar todo**. Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la directiva. Por lo tanto, si incluye 1 000 usuarios seleccionando la casilla **Seleccionar todo**, será lo mismo que si selecciona manualmente 1 000 usuarios para incluir, que es el máximo admitido para Skype Empresarial.
+Cuando seleccione **Elegir usuario** , puede incluir rápidamente a todos los usuarios seleccionando el cuadro **Seleccionar todo** . Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la directiva. Por lo tanto, si incluye 1 000 usuarios seleccionando la casilla **Seleccionar todo** , será lo mismo que si selecciona manualmente 1 000 usuarios para incluir, que es el máximo admitido para Skype Empresarial.
 
-Tenga en cuenta que **Historial de conversaciones**, una carpeta en Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El **Historial de conversaciones** puede estar desactivado por el usuario final, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery pero es inaccesible para el usuario.
+Tenga en cuenta que **Historial de conversaciones** , una carpeta en Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El **Historial de conversaciones** puede estar desactivado por el usuario final, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery pero es inaccesible para el usuario.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Configuración para retener y borrar el contenido
 
@@ -214,15 +214,15 @@ Al elegir las configuraciones para retener y eliminar contenido en su directiva 
 
 - Sólo para retención
 
-    Para esta configuración, elija **Conservar elementos durante un período específico** y **Al final del período de retención: no haga nada**. O bien, seleccione **Retener elementos para siempre**.
+    Para esta configuración, elija **Conservar elementos durante un período específico** y **Al final del período de retención: no haga nada** . O bien, seleccione **Retener elementos para siempre** .
 
 - Retener y luego eliminar
 
-    Para esta configuración, elija **conservar elementos durante un período específico** y **al final del período de retención: eliminar elementos automáticamente**.
+    Para esta configuración, elija **conservar elementos durante un período específico** y **al final del período de retención: eliminar elementos automáticamente** .
 
 - Solo eliminar
 
-    Para esta configuración, elija **Solo eliminar elementos cuando alcancen una antigüedad determinada**.
+    Para esta configuración, elija **Solo eliminar elementos cuando alcancen una antigüedad determinada** .
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Retención del contenido durante un período de tiempo determinado
 
@@ -252,7 +252,7 @@ Por lo tanto, antes de asignar una directiva de retención por primera vez, espe
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Una directiva que se aplica a todas las ubicaciones
 
-Al elegir las ubicaciones, con la excepción de Skype Empresarial, la configuración predeterminada es **Todo** cuando el estado de la ubicación está **Activado**.
+Al elegir las ubicaciones, con la excepción de Skype Empresarial, la configuración predeterminada es **Todo** cuando el estado de la ubicación está **Activado** .
 
 Cuando una directiva de retención se aplica a cualquier combinación de todas las ubicaciones, no hay ningún límite en el número de destinatarios, sitios, cuentas, grupos, etc. que la directiva pueda incluir.
 
@@ -272,10 +272,10 @@ Asimismo, hay un número máximo de directivas que se admiten para un inquilino:
 
 Si cree probable que sus directivas de retención estén sujetas a estas limitaciones, utilice la configuración predeterminada que se aplica a toda la ubicación, ya que estas directivas no tienen ninguna limitación.
 
-Para usar la configuración opcional para definir el ámbito de la configuración de retención, asegúrese de que el **Estado** de esa ubicación esté **Activado**y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
+Para usar la configuración opcional para definir el ámbito de la configuración de retención, asegúrese de que el **Estado** de esa ubicación esté **Activado** y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
 
 > [!WARNING]
-> Si configura inclusiones y, a continuación, quita la última, la configuración de su ubicación se revertirá a **Todos**.  Asegúrese de que esta es la configuración que desea antes de guardar la directiva.
+> Si configura inclusiones y, a continuación, quita la última, la configuración de su ubicación se revertirá a **Todos** .  Asegúrese de que esta es la configuración que desea antes de guardar la directiva.
 >
 > Por ejemplo, si especifica un sitio de SharePoint para incluirlo en su directiva de retención que está configurada para eliminar datos y, a continuación, quita el sitio en concreto, todos los sitios de SharePoint quedarán sujetos de forma predeterminada a la directiva de retención que elimina de forma permanente los datos. Esto mismo se aplica a las inclusiones de destinatarios de Exchange, cuentas de OneDrive, usuarios de chat de Teams, etc.
 >
@@ -285,13 +285,13 @@ Para usar la configuración opcional para definir el ámbito de la configuració
 
 Si edita una directiva de retención y el contenido ya está sujeto a la configuración original de su directiva de retención, la configuración actualizada se aplicará automáticamente a estos elementos, además de los elementos identificados recientemente.
 
-Por lo general, esta actualización es bastante rápida, pero puede tardar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el centro de cumplimiento de Microsoft 365 cambia de **Activado (Pendiente)** a **Activado (Éxito)**.
+Por lo general, esta actualización es bastante rápida, pero puede tardar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el centro de cumplimiento de Microsoft 365 cambia de **Activado (Pendiente)** a **Activado (Éxito)** .
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>Bloquear una directiva de retención con PowerShell
 
 Debe usar PowerShell si necesita usar el [Bloqueo de conservación](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) para cumplir con los requerimientos reglamentarios. Debido a que los administradores no pueden deshabilitar o eliminar una directiva de retención después de aplicar un bloqueo de conservación, la habilitación de esta característica no está disponible en la interfaz del usuario para protegerlo contra la configuración accidental.
 
-Todas las directivas de retención con cualquier configuración admiten el Bloqueo de conservación. Sin embargo, al usar los comandos de PowerShell que siguen, observará que el parámetro de la **Carga de trabajo** siempre muestra **Exchange, SharePoint, OneDriveForBusines, Skype ModernGroup**, en lugar de reflejar las cargas de trabajo reales configuradas en la directiva. Este solo es un problema de visualización.
+Todas las directivas de retención con cualquier configuración admiten el Bloqueo de conservación. Sin embargo, al usar los comandos de PowerShell que siguen, observará que el parámetro de la **Carga de trabajo** siempre muestra **Exchange, SharePoint, OneDriveForBusines, Skype ModernGroup** , en lugar de reflejar las cargas de trabajo reales configuradas en la directiva. Este solo es un problema de visualización.
 
 1. [Conectarse al Centro de seguridad y cumplimiento PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
@@ -299,7 +299,7 @@ Todas las directivas de retención con cualquier configuración admiten el Bloqu
 
    ![Lista de las directivas de retención en PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
-3. Para colocar un Bloqueo de preservación en una directiva de retención, ejecute el [Set-RetentionCompliancePolicy]( ) cmdlet con el nombre de la directiva de retención y el parámetro *RestrictiveRetention* establecido en true:
+3. Para colocar un Bloqueo de preservación en una directiva de retención, ejecute el [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet con el nombre de la directiva de retención y el parámetro *RestrictiveRetention* establecido en true:
 
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
@@ -309,7 +309,7 @@ Todas las directivas de retención con cualquier configuración admiten el Bloqu
 
     ![Parámetro RestrictiveRetention de PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
-     Cuando se le solicite, lea y acepte las restricciones que se incluyen en esta configuración y elija **Sí**:
+     Cuando se le solicite, lea y acepte las restricciones que se incluyen en esta configuración y elija **Sí** :
 
    ![Preguntar para confirmar que desea bloquear una directiva de retención en PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
@@ -319,6 +319,6 @@ Ahora, se coloca un bloqueo de preservación en la Directiva de retención. Para
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-Debería ver que **RestrictiveRetention** esté establecida en **True**. Por ejemplo:
+Debería ver que **RestrictiveRetention** esté establecida en **True** . Por ejemplo:
 
 ![Directiva bloqueada con todos los parámetros visibles en PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)

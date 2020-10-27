@@ -17,16 +17,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394717"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754440"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
-La información de este artículo complementa el contenido de [Más información sobre la retención](retention.md) porque tiene información que es específica de Exchange.
+La información de este artículo complementa el contenido de [Más información sobre la retención](retention.md) porque tiene información que es específica de Exchange.  Para otras cargas de trabajo, vea:
+
+- [Más información sobre las directivas de retención de SharePoint y OneDrive](retention-policies-sharepoint.md)
+- [Más información sobre las directivas de retención para Microsoft Teams](retention-policies-teams.md)
+- [Más información sobre la retención para Yammer](retention-policies-yammer.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>¿Qué se incluye para la retención y eliminación?
+
+Los siguientes elementos de Exchange pueden ser retenidas y eliminadas con las directivas de retención y las etiquetas de retención: mensajes de correo (incluidos los borradores) con datos adjuntos, tareas que tienen una fecha de finalización y notas. 
+
+Los elementos de calendario que tienen una fecha de finalización son compatibles con las directivas de retención, pero no son compatibles con las etiquetas de retención.
+
+Los contactos y las tareas y elementos del calendario que no tienen una fecha de finalización no son compatibles.
+
+Otros elementos almacenados en un buzón de correo, como los mensajes de Skype y de los Teams, no están incluidos en las directivas de retención ni en las etiquetas de Exchange. Estos elementos tienen sus propias directivas de retención.
 
 ## <a name="how-retention-works-for-exchange"></a>Cómo funciona la retención para Exchange
 

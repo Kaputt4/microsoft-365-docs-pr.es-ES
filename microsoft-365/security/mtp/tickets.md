@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196124"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769658"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrar los vales de ServiceNow en el centro de seguridad y cumplimiento de Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**El período de versión preliminar del conector de ServiceNow está finalizando**<br>
+>Esta capacidad ya no estará disponible al final de noviembre de 2020. Gracias por sus comentarios y el soporte técnico continuo mientras determinamos los siguientes pasos.
 
 ServiceNow es una plataforma de informática en la nube popular que ayuda a las empresas a administrar flujos de trabajo digitales para operaciones empresariales. Su plataforma ahora tiene flujos de trabajo de ti, flujos de trabajo de empleados y flujos de trabajo de clientes. [Obtenga más información sobre ServiceNow](https://www.servicenow.com/)
 
@@ -77,7 +78,7 @@ Vaya a [crear y realizar un seguimiento de los vales de ServiceNow en el centro 
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>Recibe un error en el primer paso de la lista de comprobación de instalación (creación de OAuth)
 
-**Mensaje de error**: se rechazó la operación de lectura contra ' oauth_entity ' del ámbito ' x_mioms_m365ticket ' debido a la Directiva de acceso entre ámbitos de la tabla
+**Mensaje de error** : se rechazó la operación de lectura contra ' oauth_entity ' del ámbito ' x_mioms_m365ticket ' debido a la Directiva de acceso entre ámbitos de la tabla
 
 La aplicación supone que cualquier administrador de la instancia de ServiceNow puede crear y leer entidades de OAuth. Este error puede deberse a una personalización en su instancia de ServiceNow que restringe quién puede crear o leer entidades de OAuth.
 
@@ -92,7 +93,7 @@ Establezca la configuración de la tabla "registros de aplicación" en default:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Cómo validar la entidad de OAuth creada para el conector de cumplimiento de & de seguridad de Microsoft 365
 
-Vaya a la tabla registros de aplicaciones (**menú > el registro de aplicaciones de OAuth > sistema**) en ServiceNow. Busque la entidad OAuth que ha creado, con el nombre que le ha asignado.
+Vaya a la tabla registros de aplicaciones ( **menú > el registro de aplicaciones de OAuth > sistema** ) en ServiceNow. Busque la entidad OAuth que ha creado, con el nombre que le ha asignado.
 
 ### <a name="signing-in-as-the-integration-user"></a>Iniciar sesión como usuario de integración
 

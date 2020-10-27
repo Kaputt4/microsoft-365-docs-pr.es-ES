@@ -1,6 +1,6 @@
 ---
 title: Tabla DeviceTvmSecureConfigurationAssessmentKB en el esquema de búsqueda avanzada
-description: Obtén más información sobre los eventos de evaluación de seguridad de la administración de amenazas y vulnerabilidades en la tabla DeviceTvmSecureConfigurationAssessment del esquema de caza avanzada. Estos eventos proporcionan información del equipo, así como detalles de la configuración de seguridad, consecuencias e información sobre el cumplimiento.
+description: Obtenga información sobre los eventos de evaluación de seguridad en la tabla DeviceTvmSecureConfigurationAssessment del esquema de búsqueda avanzada. Estas amenazas & eventos de administración de vulnerabilidad proporcionan información de dispositivos, así como detalles de configuración de seguridad, impacto e información de cumplimiento.
 keywords: búsqueda avanzada, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, amenaza & la administración de vulnerabilidades, TVM, administración de dispositivos, configuración de seguridad, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8c9e886f205a3d1b402b8c39718b6ee49b86a11d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 356548c3115aacce8c76d7fbc552811c168750ed
+ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429892"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48770078"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -42,15 +42,18 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificador único para el equipo en servicio |
-| `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7.|
+| `DeviceId` | string | Identificador único del dispositivo en el servicio |
+| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
+| `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7.|
 | `Timestamp` | datetime | Fecha y hora en que se generó el registro |
 | `ConfigurationId` | cadena | Identificador único para una configuración específica |
 | `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad |
 | `ConfigurationSubcategory` | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
+| `IsApplicable` | boolean | Indica si la configuración o la Directiva se aplican al dispositivo. |
+| `Context` | string | Información contextual adicional acerca de la configuración o la Directiva |
+| `IsExpectedUserImpactCompliant` | boolean | Indica si habrá impacto en el usuario si se aplica la configuración o la Directiva. |
 
 ## <a name="related-topics"></a>Temas relacionados
 
