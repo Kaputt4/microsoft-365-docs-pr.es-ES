@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2eb8b984550f301af9d99e738f6db4623aa2cc86
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529402"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769111"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 Parte del escritorio administrado de incorporación a Microsoft incluye la adición e implementación de aplicaciones en los dispositivos del usuario. Una vez que esté usando Microsoft Managed Desktop portal, puede Agregar e implementar sus aplicaciones. 
@@ -42,11 +42,11 @@ En este procedimiento, seleccionará el tipo de aplicación que desea agregar y,
 Puede iniciar sesión en el portal de escritorio administrado de Microsoft, o iniciar sesión en Intune y, a continuación, buscar Microsoft Managed Desktop. Se mostrará el inicio de sesión en Microsoft Managed Desktop portal. 
 
 1.    Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal). 
-2.    En **inventario**, seleccione **aplicaciones**.
-3.    En la carga de trabajo de aplicaciones, seleccione **Agregar**.
-4.    En **Agregar aplicación**, seleccione **aplicación de línea de negocio** o **aplicación de Windows (Win32)**.
-    - Si seleccionó **aplicación de línea de negocio**, vea [Agregar una aplicación de línea de negocio de Windows a Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de línea de negocio.
-    - Si seleccionó **Windows App (Win32)**, vea [Administración de aplicaciones Win32](https://docs.microsoft.com/intune/apps-win32-app-management) para obtener instrucciones sobre cómo agregar y configurar aplicaciones para Windows.
+2.    En **inventario** , seleccione **aplicaciones** .
+3.    En la carga de trabajo de aplicaciones, seleccione **Agregar** .
+4.    En **Agregar aplicación** , seleccione **aplicación de línea de negocio** o **aplicación de Windows (Win32)** .
+    - Si seleccionó **aplicación de línea de negocio** , vea [Agregar una aplicación de línea de negocio de Windows a Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de línea de negocio.
+    - Si seleccionó **Windows App (Win32)** , vea [Administración de aplicaciones Win32](https://docs.microsoft.com/intune/apps-win32-app-management) para obtener instrucciones sobre cómo agregar y configurar aplicaciones para Windows.
 
 <span id="msfb-apps">
 
@@ -56,25 +56,20 @@ Si no te has registrado en Microsoft Store para empresas, puedes registrarte en 
 **Para comprar aplicaciones de Microsoft Store para empresas**
 
 1. Inicie sesión en [Microsoft Store para empresas](https://businessstore.microsoft.com) con su cuenta de administrador de Microsoft Store for Business.
-2. Seleccione **comprar para mi grupo**.
+2. Seleccione **comprar para mi grupo** .
 3. Use la búsqueda para encontrar la aplicación que quiera y seleccione la aplicación.
-4. En los detalles del producto, seleccione **obtener la aplicación**. Microsoft Store agrega la aplicación a **los productos** de la organización.
+4. En los detalles del producto, seleccione **obtener la aplicación** . Microsoft Store agrega la aplicación a **los productos** de la organización.
 
 **Para forzar una sincronización entre Intune y Microsoft Store para empresas**
-1. Iniciar sesión en [Azure portal](https://portal.azure.com/) como administrador de Intune o administrador global para su espacio empresarial
-2. Seleccione **todos los servicios > Intune**. Intune se encuentra en la sección Monitoring + Management.
-3. En el panel Intune, seleccione **aplicaciones cliente**y, a continuación, seleccione **Microsoft Store para empresas**.
-4. Seleccione **Habilitar** para sincronizar las aplicaciones de Microsoft Store para empresas con Intune.
-    - Si aún no lo ha hecho, Regístrese y asocie su cuenta de Microsoft Store for Business con Intune
-    - Seleccione el idioma en el que se mostrarán las aplicaciones de Microsoft Store para empresas en la consola de Intune.
-    - Seleccione **sincronizar** para sincronizar las aplicaciones de Microsoft Store para empresas con Intune.
-    - Compruebe que la sincronización entre Microsoft Store para empresas y Intune esté activa (el siguiente paso). 
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione conectores de **Administración de inquilinos**  >  **y tokens**  >  **de Microsoft Store para empresas** .
+3. Seleccione **sincronizar** para obtener las aplicaciones que ha comprado de Microsoft Store a Intune.
 
 **Para comprobar que hay una sincronización activa entre Intune y Microsoft Store para empresas**
 1. Inicie sesión en [Microsoft Store para empresas](https://businessstore.microsoft.com) con su cuenta de administrador de Microsoft Store for Business.
-2. Seleccione **administrar**.
-3. Seleccione **configuración** y, después, seleccione **distribuir**.
-4. En **herramientas de administración**, compruebe que Intune aparece en la lista y que el estado es **activo**.  
+2. Seleccione **administrar** .
+3. Seleccione **configuración** y, después, seleccione **distribuir** .
+4. En **herramientas de administración** , compruebe que Intune aparece en la lista y que el estado es **activo** .  
 
 <span id="2" />
 
@@ -97,10 +92,10 @@ Agregue los usuarios a estos grupos para hacer que la aplicación esté disponib
 **Para asignar la aplicación a los usuarios**
 
 1. Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal).
-2. En el panel escritorio administrado, seleccione **aplicaciones**.
-3. En la carga de trabajo de aplicaciones, seleccione la aplicación a la que desea asignar usuarios y seleccione **asignar grupos de usuarios**.
+2. En el panel escritorio administrado, seleccione **aplicaciones** .
+3. En la carga de trabajo de aplicaciones, seleccione la aplicación a la que desea asignar usuarios y seleccione **asignar grupos de usuarios** .
 4. Para la aplicación específica, seleccione un tipo de asignación (disponible, obligatorio, desinstalar) y asigne el grupo adecuado.
-5. En el panel asignar aplicaciones, seleccione **Aceptar**.
+5. En el panel asignar aplicaciones, seleccione **Aceptar** .
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft

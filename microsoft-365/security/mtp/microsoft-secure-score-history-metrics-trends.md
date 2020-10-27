@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295255"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769249"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir los objetivos
 
@@ -60,17 +60,36 @@ En la ficha **métricas & tendencias** , hay varios gráficos y gráficos para p
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparar su calificación con organizaciones como la suya
 
-Hay dos lugares para ver cómo se compara su puntuación con las organizaciones que son similares.
+Hay dos lugares para ver cómo se compara su puntuación con las organizaciones que son similares. En ambos gráficos, puede seleccionar **administrar comparaciones** para ver y editar la información de la organización. También puede crear una comparación personalizada basada en la industria, el tamaño de la organización, las licencias y las regiones.
 
-El primer lugar se encuentra en la ficha **información general** , donde puede ver un gráfico de barra de comparación. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación.
+#### <a name="comparison-bar-chart"></a>Gráfico de barras de comparación
+
+El gráfico de barras de comparación es la ficha **información general** . Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de comparación son anonimizan, por lo que no sabemos exactamente qué otros inquilinos hay en la combinación.
 
 ![Gráfico de barras de calificaciones de una organización similar](../../media/secure-score/secure-score-comparison-bar.png)
 
-El segundo lugar se encuentra en la ficha **métricas & tendencias** , donde puede ver cómo la puntuación segura de su organización se compara con otras personas a lo largo del tiempo.
+- **Organizaciones como la suya** : le ofrecemos una puntuación media de otros inquilinos (siempre que tenga al menos 5 o más inquilinos para comparar) que cumplan con los siguientes criterios:
+    1. Misma industria
+    2. Mismo tamaño de organización
+    3. Todas las regiones
+    4. Los productos de Microsoft usados son de un 80% similar
+    5. Oportunidad (puntuación máxima que se puede lograr por licencia actual) dentro de un 20% de intervalo desde el espacio empresarial
+
+- **Comparación personalizada** : es necesario configurar primero la configuración seleccionando **administrar la comparación** (solo si encontramos 5 o más inquilinos) en función de los siguientes criterios:
+    1. Industria (es) seleccionada (s)
+    2. Tamaño de la organización seleccionada (es)
+    3. Región o regiones seleccionadas
+    4. Licencias seleccionadas
+    5. Los productos de Microsoft usados son de un 80% similar
+    6. Oportunidad (puntuación máxima que se puede lograr por licencia actual) dentro de un 20% de intervalo desde el espacio empresarial
+
+Si no ha realizado una selección para la selección personalizada del resultado de la selección al obtener menos de 5 otros inquilinos con los que se pueda comparar, verá "no disponible debido a los datos limitados".
+
+#### <a name="comparison-trend"></a>Tendencia de comparación
+
+En la ficha **métricas & tendencias** , vea cómo la puntuación segura de su organización se compara con otras personas a lo largo del tiempo.
 
 ![Gráfico de líneas de calificaciones similares a lo largo del tiempo](../../media/secure-score/secure-score-comparison-trend.png)
-
-En ambos gráficos, puede seleccionar **administrar comparaciones** para ver y editar la información de la organización. También puede crear una comparación personalizada basada en la industria, el tamaño de la organización, las licencias y las regiones.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 

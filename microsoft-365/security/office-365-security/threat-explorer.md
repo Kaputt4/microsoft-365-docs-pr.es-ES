@@ -18,19 +18,16 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89708efa6a34b5ca7a302ba0ad331a2dac99f5d9
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477183"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769381"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-
-Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto **exploradores** como **detecciones en tiempo real** (anteriormente *informes en tiempo real* , [vea lo nuevo](#new-features-in-threat-explorer-and-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** _o_ **detecciones en tiempo real**.
+Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto **exploradores** como **detecciones en tiempo real** (anteriormente *informes en tiempo real* , [vea lo nuevo](#new-features-in-threat-explorer-and-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas** y, a continuación, elija **Explorador** _o_ **detecciones en tiempo real** .
 
 |Con el plan ATP 2, verá:|Con el plan ATP 1, verá:|
 |---|---|
@@ -48,9 +45,12 @@ Con este informe, puede:
 - [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
 
+
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones en tiempo real
+
 ## <a name="tags-in-threat-explorer"></a>Etiquetas en el explorador de amenazas
 
-> [!NOTE] 
+> [!NOTE]
 > La característica de etiquetas de usuario está en versión preliminar, no está disponible para todos los usuarios y está sujeta a cambios. Para obtener información sobre la programación de versiones, consulte el plan de desarrollo de Microsoft 365.
 
 Las etiquetas de usuario son identificadores para grupos de usuarios específicos en Microsoft defender para Office 365. Para obtener más información sobre las etiquetas, las etiquetas de licencias y la configuración, vea más información aquí: [etiquetas de usuario en Office 365 ATP](user-tags.md).
@@ -59,42 +59,46 @@ En el explorador de amenazas, podrá ver información sobre las etiquetas del us
 
 #### <a name="email-grid-view"></a>Vista de cuadrícula de correo electrónico
 
-La columna etiquetas que se muestra en la cuadrícula del correo electrónico contiene todas las etiquetas que se han aplicado a los buzones del remitente o del destinatario. De forma predeterminada, las etiquetas del sistema, como las cuentas de prioridad, se muestran en primer lugar.
+La columna etiquetas que se muestra en la cuadrícula de correo electrónico contendrá todas las etiquetas que se han aplicado a los buzones de remitente o destinatario. De forma predeterminada, las etiquetas del sistema, como las cuentas de prioridad, se muestran en primer lugar.
 
-![Etiquetas de filtro](../../media/tags-grid.png)
+> [!div class="mx-imgBorder"]
+> ![Etiquetas de filtro](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrado
 Ahora tenemos etiquetas como filtro para que pueda buscar con las cuentas de prioridad o con escenarios específicos de etiquetas de usuario (e incluso excluir los resultados con determinadas etiquetas como parte de esta experiencia). La combinación de estos con los otros varios filtros proporcionados le ayudará a limitar el ámbito de investigación
 
-![Etiquetas de filtro](../../media/tags-filter-normal.png)
+[![Etiquetas ](../../media/tags-filter-normal.png) de filtro](../../media/tags-filter-normal.png#lightbox)
 
-![No filtrar etiquetas](../../media/tags-filter-not.png)
+> [!div class="mx-imgBorder"]
+> ![No filtrar etiquetas](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>Control flotante de detalles de correo electrónico
 Para ver las etiquetas individuales del remitente y el destinatario, haga clic en el asunto. Abre el control flotante detalles del mensaje. En la pestaña Resumen, las etiquetas de remitente y destinatario se muestran por separado, si están presentes para un correo electrónico.
-La información sobre etiquetas individuales para el remitente y el destinatario, también se extiende al CSV exportado, donde puede ver estos detalles en dos columnas independientes. 
+La información sobre etiquetas individuales para el remitente y el destinatario, también se extiende al CSV exportado, donde puede ver estos detalles en dos columnas independientes.
 
-![Etiquetas de detalles de correo electrónico](../../media/tags-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Etiquetas de detalles de correo electrónico](../../media/tags-flyout.png)
 
-La información de las etiquetas también se muestra en el control flotante haga clic en la dirección URL. Para obtener acceso a la dirección URL haga clic en el control flotante, deberá ir a phish o a toda la vista de correo electrónico y, a continuación, a direcciones URL o clics de direcciones URL. al hacer clic en un control flotante de dirección URL individual se mostrará más detalles sobre los clics para esa dirección URL y tendría etiquetas asociadas con ese clic. 
+La información de las etiquetas también se muestra en el control flotante haga clic en la dirección URL. Para obtener acceso a la dirección URL haga clic en el control flotante, deberá ir a phish o a toda la vista de correo electrónico y, a continuación, a direcciones URL o clics de direcciones URL. al hacer clic en un control flotante de dirección URL individual se mostrará más detalles sobre los clics para esa dirección URL y tendría etiquetas asociadas con ese clic.
 
-![Etiquetas URL](../../media/tags-urls.png)
+> [!div class="mx-imgBorder"]
+> ![Etiquetas URL](../../media/tags-urls.png)
 
 ## <a name="improvements-to-threat-hunting-experience-upcoming"></a>Mejoras en la experiencia de búsqueda de amenazas (próximamente)
 
 ### <a name="updated-threat-information-for-emails"></a>Información de amenazas actualizada para los correos electrónicos
 
-Nos hemos concentrado en mejoras en la calidad de los datos y plataformas para aumentar la precisión de los datos y la coherencia de los registros de correo electrónico. Este conjunto de actualizaciones incluye la consolidación de la información previa y posterior a la entrega (la acción de ejemplo ejecutada en un correo electrónico como parte del proceso de ZAP) en un único registro junto con una riqueza agregada como el veredicto de correo no deseado, las amenazas a nivel de entidad (por ejemplo, qué dirección URL era malintencionada) y las ubicaciones de entrega más recientes. 
+Nos hemos concentrado en mejoras en la calidad de los datos y plataformas para aumentar la precisión de los datos y la coherencia de los registros de correo electrónico. Este conjunto de actualizaciones incluye la consolidación de la información previa y posterior a la entrega (la acción de ejemplo ejecutada en un correo electrónico como parte del proceso de ZAP) en un único registro junto con una riqueza agregada como el veredicto de correo no deseado, las amenazas a nivel de entidad (por ejemplo, qué dirección URL era malintencionada) y las ubicaciones de entrega más recientes.
 
-Después de estas actualizaciones, verá una entrada única para cada mensaje, independientemente de los diferentes eventos posteriores a la entrega que se hayan realizado en el mensaje. Las acciones pueden incluir ZAP, corrección manual (que significa acción de administrador), entrega dinámica, etc. 
+Después de estas actualizaciones, verá una entrada única para cada mensaje, independientemente de los diferentes eventos posteriores a la entrega que se hayan realizado en el mensaje. Las acciones pueden incluir ZAP, corrección manual (que significa acción de administrador), entrega dinámica, etc.
 
 Además de mostrar amenazas de malware y phish, ahora podrá ver el veredicto de correo no deseado asociado a un correo electrónico. Dentro del correo electrónico, podrá ver todas las amenazas asociadas con el correo electrónico junto con las tecnologías de detección correspondientes. Cada correo electrónico puede tener 0, 1 o varias amenazas. Verá las amenazas actuales en la sección Detalles del control flotante de correo electrónico. Además, para varias amenazas (por ejemplo, un mensaje de correo electrónico con malware y phish), el campo de la tecnología de detección daría la asignación de Threat-Detection, lo que significa que el técnico de detección llevó a la identificación de la amenaza.
 
-El conjunto de tecnologías de detección se ha actualizado para incluir nuevos métodos de detección, así como tecnologías de detección de correo no deseado y en todas las distintas vistas de correo electrónico (malware, phish, todo el correo electrónico), tendrá el mismo conjunto coherente de tecnologías de detección para filtrar los resultados. 
+El conjunto de tecnologías de detección se ha actualizado para incluir nuevos métodos de detección, así como tecnologías de detección de correo no deseado y en todas las distintas vistas de correo electrónico (malware, phish, todo el correo electrónico), tendrá el mismo conjunto coherente de tecnologías de detección para filtrar los resultados.
 
 > [!NOTE]
-> Es posible que el análisis del veredicto no esté ligado necesariamente a las entidades. Por ejemplo, un correo electrónico puede clasificarse como phish o correo no deseado, pero no hay direcciones URL que tengan marcas de phish o correo no deseado marcadas en ellos. Esto se debe a que los filtros también evalúan el contenido y otros detalles de un correo electrónico antes de asignar un veredicto. 
- 
+> Es posible que el análisis del veredicto no esté ligado necesariamente a las entidades. Por ejemplo, un correo electrónico puede clasificarse como phish o correo no deseado, pero no hay direcciones URL que tengan marcas de phish o correo no deseado marcadas en ellos. Esto se debe a que los filtros también evalúan el contenido y otros detalles de un correo electrónico antes de asignar un veredicto.
+
 #### <a name="threats-in-urls"></a>Amenazas en direcciones URL
 
 En el control flotante de correo electrónico: > pestaña detalles, ahora podría ver la amenaza específica para una dirección URL (la amenaza de una dirección URL puede ser malware, phish, correo no deseado o ninguno)
@@ -117,37 +121,37 @@ Además de identificar todos los eventos de entrega y posterior a la entrega, la
 
 ### <a name="original-and-latest-delivery-location"></a>Ubicación de entrega original y última
 
-Hoy en día, se presenta la ubicación de entrega dentro de la cuadrícula de correo y el control flotante de correo electrónico. En el futuro, el campo Ubicación de entrega se cambiará de nombre a la ubicación de entrega original. Además, también presentamos otro campo llamado última ubicación de entrega. 
+Hoy en día, se presenta la ubicación de entrega dentro de la cuadrícula de correo y el control flotante de correo electrónico. En el futuro, el campo Ubicación de entrega se cambiará de nombre a la ubicación de entrega original. Además, también presentamos otro campo llamado última ubicación de entrega.
 
-La ubicación de entrega original proporcionaría más información sobre dónde se entregó un correo electrónico inicialmente. La última ubicación de entrega incluiría la ubicación en la que puede haber descargado un correo electrónico después de acciones del sistema como ZAP o acciones de administración, como **mover a elementos eliminados**. La última ubicación de entrega tiene como objetivo informar a los administradores de la última ubicación conocida del mensaje después de la entrega o cualquier acción del sistema o de administración. Por diseño, no incluye acciones relacionadas con el usuario final en el correo electrónico. Por ejemplo: Si un usuario elimina un mensaje o mueve el mensaje a archivo/pst, no se actualizará la ubicación de entrega del mensaje. Sin embargo, si una acción del sistema actualizó la ubicación (por ejemplo, ZAP que da como resultado un traslado de correo electrónico a cuarentena), vería la última ubicación de entrega como cuarentena. 
+La ubicación de entrega original proporcionaría más información sobre dónde se entregó un correo electrónico inicialmente. La última ubicación de entrega incluiría la ubicación en la que puede haber descargado un correo electrónico después de acciones del sistema como ZAP o acciones de administración, como **mover a elementos eliminados** . La última ubicación de entrega tiene como objetivo informar a los administradores de la última ubicación conocida del mensaje después de la entrega o cualquier acción del sistema o de administración. Por diseño, no incluye acciones relacionadas con el usuario final en el correo electrónico. Por ejemplo: Si un usuario elimina un mensaje o mueve el mensaje a archivo/pst, no se actualizará la ubicación de entrega del mensaje. Sin embargo, si una acción del sistema actualizó la ubicación (por ejemplo, ZAP que da como resultado un traslado de correo electrónico a cuarentena), vería la última ubicación de entrega como cuarentena.
 
 > [!div class="mx-imgBorder"]
 > ![Ubicaciones de entrega actualizadas](../../media/Updated_Delivery_Location.png)
 
 > [!NOTE]
 > Hay pocos casos en los que la ubicación de entrega y la acción de entrega pueden mostrar "desconocido" como valor:
-> 
-> - Es posible que vea la ubicación de entrega como entregada y la ubicación de entrega como desconocida. Esto ocurre cuando se entregó el mensaje, pero una regla de la bandeja de entrada movió el mensaje a una carpeta predeterminada (borrador, archivo, etc.) en lugar de a la bandeja de entrada o las carpetas de correo electrónico no deseado. 
-> 
+>
+> - Es posible que vea la ubicación de entrega como entregada y la ubicación de entrega como desconocida. Esto ocurre cuando se entregó el mensaje, pero una regla de la bandeja de entrada movió el mensaje a una carpeta predeterminada (borrador, archivo, etc.) en lugar de a la bandeja de entrada o las carpetas de correo electrónico no deseado.
+>
 > - La última ubicación de entrega puede ser desconocida si se intenta realizar una acción del administrador o del sistema (por ejemplo, ZAP, acción de administrador), pero no se encuentra el mensaje. Normalmente, la acción se produce después de que el usuario haya movido o eliminado el mensaje. En estos casos, Compruebe la columna resultado/detalles en la vista escala de tiempo. Busque el mensaje: el mensaje se movió o eliminó el usuario.
 
 > [!div class="mx-imgBorder"]
 > ![Ubicaciones de entrega para la escala de tiempo](../../media/Updated_Timeline_Delivery_Location.png)
 
-### <a name="additional-actions"></a>Acciones adicionales 
+### <a name="additional-actions"></a>Acciones adicionales
 
-Las acciones adicionales constan de las acciones que se han aplicado después de enviar la entrega del correo electrónico y pueden incluir ZAP, corrección manual (acción realizada por un administrador, por ejemplo, eliminación temporal), entrega dinámica y reprocesamiento (un mensaje de correo electrónico se ha detectado como bueno de forma retroactiva). 
+Las acciones adicionales constan de las acciones que se han aplicado después de enviar la entrega del correo electrónico y pueden incluir ZAP, corrección manual (acción realizada por un administrador, por ejemplo, eliminación temporal), entrega dinámica y reprocesamiento (un mensaje de correo electrónico se ha detectado como bueno de forma retroactiva).
 
 > [!NOTE]
 >
 > - Como parte de este cambio, el valor eliminado por valor de ZAP que se muestra actualmente en el filtro de acción de entrega está desaparecedo. Tendrá una forma de buscar todo el correo electrónico con el intento de ZAP a través de las acciones adicionales.
 >
-> - Habrá nuevos campos y valores para tecnologías de detección y acciones adicionales (especialmente para los escenarios de ZAP). Evalúe las consultas guardadas y las consultas de seguimiento existentes para asegurarse de que funcionan con los nuevos valores. 
+> - Habrá nuevos campos y valores para tecnologías de detección y acciones adicionales (especialmente para los escenarios de ZAP). Evalúe las consultas guardadas y las consultas de seguimiento existentes para asegurarse de que funcionan con los nuevos valores.
 
 > [!div class="mx-imgBorder"]
 > ![Additional_Actions](../../media/Additional_Actions.png)
 
-### <a name="system-overrides"></a>Invalidaciones del sistema 
+### <a name="system-overrides"></a>Invalidaciones del sistema
 
 Las invalidaciones del sistema son un método para realizar excepciones a la ubicación de entrega prevista de un mensaje mediante la anulación de la ubicación de entrega proporcionada por el sistema (en función de las amenazas y otras detecciones identificadas por nuestra pila de filtros). Las invalidaciones del sistema se pueden establecer a través de la Directiva de inquilino o usuario para entregar el mensaje como lo sugiere la Directiva. Las invalidaciones son útiles para identificar cualquier entrega involuntaria de mensajes malintencionados debido a intervalos de configuración (por ejemplo, una directiva de remitentes seguros muy amplia establecida por un usuario). Estos valores de reemplazo pueden ser:
 
@@ -157,39 +161,36 @@ Las invalidaciones del sistema son un método para realizar excepciones a la ubi
 - Bloqueado por la Directiva de la organización: esto se debe a que los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo para bloquear a los remitentes, dominios, idiomas de mensajes o direcciones IP de origen para los usuarios de su organización. También puede tratarse de un conjunto de usuarios o de toda la organización.
 - Extensión de archivo bloqueada por la Directiva de la organización: esto se debe a que los equipos de seguridad de una organización bloquean la extensión del tipo de archivo mediante la configuración de la Directiva antimalware. Estos valores se mostrarán ahora en detalles de correo electrónico para ayudar con las investigaciones. Secops Teams también puede filtrar las extensiones de archivos bloqueados mediante la funcionalidad de filtrado enriquecido.
 
-![System_Overrides](../../media/System_Overrides.png)
+[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
-
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Mejoras en torno a la experiencia de clics
 
 El conjunto de mejoras centradas en los datos de clics de URL y de URL incluyen:
 
  - Que muestra la dirección URL completa de clics (incluidos los parámetros de consulta que forman parte de la dirección URL) dentro de la sección clics del elemento emergente de dirección URL. Actualmente, se muestra el dominio y la ruta de acceso de la dirección URL en la barra de título. Esta información se amplía para mostrar la dirección URL completa.
- 
+
  - Correcciones en los filtros de direcciones URL (URL vs dominio URL vs de URL vs): hemos realizado actualizaciones en torno a la búsqueda de mensajes que contienen un veredicto de URL o clic. Como parte de esto, hemos habilitado la compatibilidad con búsquedas agnósticos de protocolo (lo que significa que puede buscar directamente una dirección URL sin http). De forma predeterminada, la búsqueda de direcciones URL se asigna a http, a menos que se especifique explícitamente. Por ejemplo:
 
    1. Busque con y sin el `http://` prefijo en los campos de filtro "dirección URL", "dominio de dirección URL" y "dominio de dirección URL y ruta de acceso". Este comportamiento es coherente y debe mostrar el mismo resultado.
-   
+
    1. Busque el `https://` prefijo en "URL". Cuando no está presente, `http://` se presupone el prefijo.
-   
-   1. `/` al principio y al final de los campos "ruta de dirección URL", "dominio de dirección URL", "dominio y ruta de dirección URL" se omite. `/` al final del campo "dirección URL" se omite. 
+
+   1. `/` al principio y al final de los campos "ruta de dirección URL", "dominio de dirección URL", "dominio y ruta de dirección URL" se omite. `/` al final del campo "dirección URL" se omite.
 
 ### <a name="phish-confidence-level"></a>Nivel de confianza de phish
 
 Nivel de confianza de phish ayuda a identificar el grado de confianza con el que un correo electrónico se ha clasificado como phish. Los dos valores posibles son alta y normal. En las fases iniciales, este filtro solo estará disponible en la vista phish del explorador de amenazas.
 
-![Phish_Confidence_Level](../../media/Phish_Confidence_Level.png)
+[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
-### <a name="zap-url-signal"></a>Señal de dirección URL ZAP 
+### <a name="zap-url-signal"></a>Señal de dirección URL ZAP
 
-Se suele usar para escenarios de alerta de suplantación de phish en los que un correo electrónico se identificó como phish y se quitó tras la entrega. Se usa para conectar la alerta con los resultados correspondientes en el explorador. Es una de las IOCs de la alerta. 
+Se suele usar para escenarios de alerta de suplantación de phish en los que un correo electrónico se identificó como phish y se quitó tras la entrega. Se usa para conectar la alerta con los resultados correspondientes en el explorador. Es una de las IOCs de la alerta.
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones de Real-Time
-
-Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y las detecciones de Real-Time. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación:
+Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y en las detecciones en tiempo real. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación:
 
 - [Mejoras en la zona horaria](#timezone-improvements)
 - [Actualizar en el proceso de actualización](#update-in-the-refresh-process)
@@ -277,7 +278,7 @@ Estas nuevas características se describen a continuación.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo
 
-La posibilidad de obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico son nuevas características disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y mensajes de correo electrónico descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *vista previa*, debe agregarse a otro grupo de roles (como operaciones de seguridad o administrador de seguridad) para poder descargar los correos electrónicos y obtener una vista previa de los encabezados en la vista de todos los mensajes de correo electrónico.
+La posibilidad de obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico son nuevas características disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y mensajes de correo electrónico descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *vista previa* , debe agregarse a otro grupo de roles (como operaciones de seguridad o administrador de seguridad) para poder descargar los correos electrónicos y obtener una vista previa de los encabezados en la vista de todos los mensajes de correo electrónico.
 
 Pero el explorador (y las detecciones en tiempo real) también agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los mensajes de correo electrónico. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 
@@ -306,13 +307,13 @@ Y esto es lo que el usuario puede ver y lo que no puede:
 
 Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores posibles de la ubicación de entrega:
 
-- **Bandeja de entrada o carpeta**: el correo electrónico está en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
-- **Local o externa**: el buzón no existe en la nube pero es local.
-- **Carpeta de correo no deseado**: el correo electrónico está en la carpeta de correo no deseado de un usuario.
-- **Carpeta elementos eliminados**: el correo electrónico en la carpeta elementos eliminados de un usuario.
-- **Quarantine**: el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
-- **Error**: el correo electrónico no pudo llegar al buzón.
-- **Quitado**: el correo electrónico se pierde en algún lugar del flujo de correo.
+- **Bandeja de entrada o carpeta** : el correo electrónico está en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
+- **Local o externa** : el buzón no existe en la nube pero es local.
+- **Carpeta de correo no deseado** : el correo electrónico está en la carpeta de correo no deseado de un usuario.
+- **Carpeta elementos eliminados** : el correo electrónico en la carpeta elementos eliminados de un usuario.
+- **Quarantine** : el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
+- **Error** : el correo electrónico no pudo llegar al buzón.
+- **Quitado** : el correo electrónico se pierde en algún lugar del flujo de correo.
 
 ### <a name="email-timeline"></a>Escala de tiempo de correo electrónico
 
@@ -333,7 +334,7 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 **Explorador** \> Detecciones en tiempo **real** \> **Ver phish** \> **Direcciones URL** \> **Direcciones URL principales o clics principales** \> **Haga clic en cualquier registro para abrir el control flotante** \> de dirección URL **Vaya a la pestaña clics.**
 
 > [!TIP]
-> IDENTIFICADOR de mensaje de red asigna el clic de nuevo a correos específicos cuando se realiza la búsqueda en el explorador o en las herramientas de terceros asociadas mediante el identificador de mensaje de red. La búsqueda en el identificador de mensaje de red dará a los administradores el correo electrónico específico asociado con un resultado de clic. En la exportación, la identificación de la identificación del mensaje de red facilita un análisis más rápido y eficaz.
+> IDENTIFICADOR de mensaje de red asigna el clic de nuevo a correos específicos cuando se realiza la búsqueda en el explorador o en herramientas de terceros asociadas mediante el identificador de mensaje de red. La búsqueda en el identificador de mensaje de red dará a los administradores el correo electrónico específico asociado con un resultado de clic. Al exportar, tener la identificación de correlación de mensajes de red facilita un análisis más rápido y eficaz.
 
 > [!div class="mx-imgBorder"]
 > ![Pestañas en el explorador](../../media/tp_ExportClickResultAndNetworkID.png)
@@ -342,14 +343,14 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 
 Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Microsoft 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware**.
+2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware** .
 
    > [!div class="mx-imgBorder"]
    > ![Menú Ver para el explorador](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Haga clic en **remitente**y, a continuación, elija tecnología de **Basic**  >  **detección**básica.
+3. Haga clic en **remitente** y, a continuación, elija tecnología de **Basic**  >  **detección** básica.
 
    Las tecnologías de detección están ahora disponibles como filtros para el informe.
 
@@ -369,16 +370,16 @@ Supongamos que desea ver los intentos de suplantación de identidad mediante dir
 
 Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use la vista de [correo electrónico > phish](threat-explorer-views.md#email--phish) de detecciones en tiempo real.
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish**.
+2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish** .
 
    > [!div class="mx-imgBorder"]
    > ![Menú Ver para el explorador](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Haga clic en **remitente**y, a continuación, elija **direcciones URL**,  >  **haga clic en veredicto**.
+3. Haga clic en **remitente** y, a continuación, elija **direcciones URL** ,  >  **haga clic en veredicto** .
 
-4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado**y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
+4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado** y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
    > [!div class="mx-imgBorder"]
    > ![Direcciones URL y haga clic en veredictos](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
@@ -403,29 +404,29 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 En los controles flotantes de dirección URL o de correo electrónico, los clics principales, así como en nuestras experiencias de filtrado, verá valores de clic diferentes como parte de su experiencia de búsqueda. A continuación se muestran los valores posibles de los veredictos de clic y su interpretación:
 
-- **None**: no se ha podido capturar el veredicto para la dirección URL. Es posible que el usuario haya acpulsado a través de la dirección URL.
-- Se **permite**: el usuario tiene permiso para navegar a la dirección URL.
-- **Bloqueado**: se ha bloqueado el usuario para navegar a la dirección URL.
-- **Veredicto pendiente**: se presentó el usuario con la página detonación pendiente.
-- **Bloqueado invalidado**: se ha bloqueado al usuario para que navegue a la dirección URL; sin embargo, el usuario overrode el bloque para desplazarse a la dirección URL.
-- Se **omite el veredicto pendiente**: se ha presentado la página de detonación al usuario. sin embargo, el usuario overrode? a la p? gina para navegar a la direcci? n URL.
-- **Error**: se ha presentado al usuario la página de error. Esto también puede significar que se ha producido un error al capturar el veredicto.
-- **Error**: se ha producido una excepción desconocida al capturar el veredicto. Es posible que el usuario haya acpulsado a través de la dirección URL.
+- **None** : no se ha podido capturar el veredicto para la dirección URL. Es posible que el usuario haya acpulsado a través de la dirección URL.
+- Se **permite** : el usuario tiene permiso para navegar a la dirección URL.
+- **Bloqueado** : se ha bloqueado el usuario para navegar a la dirección URL.
+- **Veredicto pendiente** : se presentó el usuario con la página detonación pendiente.
+- **Bloqueado invalidado** : se ha bloqueado al usuario para que navegue a la dirección URL; sin embargo, el usuario overrode el bloque para desplazarse a la dirección URL.
+- Se **omite el veredicto pendiente** : se ha presentado la página de detonación al usuario. sin embargo, el usuario overrode? a la p? gina para navegar a la direcci? n URL.
+- **Error** : se ha presentado al usuario la página de error. Esto también puede significar que se ha producido un error al capturar el veredicto.
+- **Error** : se ha producido una excepción desconocida al capturar el veredicto. Es posible que el usuario haya acpulsado a través de la dirección URL.
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
 Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico > vista de envíos](threat-explorer-views.md#email--submissions) del explorador (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija **Email**  >  **envíos**de correo electrónico.
+2. En el menú **Ver** , elija **Email**  >  **envíos** de correo electrónico.
 
    > [!div class="mx-imgBorder"]
    > ![Menú Ver para el explorador](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Haga clic en **remitente**y, a continuación, elija tipo de **Basic**  >  **Informe**básico.
+3. Haga clic en **remitente** y, a continuación, elija tipo de **Basic**  >  **Informe** básico.
 
-4. Seleccione una opción, como **phish**y, a continuación, haga clic en el botón **Actualizar** .
+4. Seleccione una opción, como **phish** y, a continuación, haga clic en el botón **Actualizar** .
 
    > [!div class="mx-imgBorder"]
    > ![Phish notificados por el usuario](../../media/EmailUserReportedReportType.png)
@@ -435,7 +436,7 @@ El informe se actualiza para Mostrar datos sobre los mensajes de correo electró
 ## <a name="start-automated-investigation-and-response"></a>Iniciar investigación y respuesta automatizadas
 
 > [!NOTE]
-> Las capacidades de investigación y respuesta automatizadas están disponibles en **office 365 ATP plan 2** y **Office 365 E5**.
+> Las capacidades de investigación y respuesta automatizadas están disponibles en **office 365 ATP plan 2** y **Office 365 E5** .
 
 (Nueva) La [investigación y la respuesta automatizadas](automated-investigation-response-office.md) pueden guardar el equipo de operaciones de seguridad con mucho tiempo y esfuerzo para investigar y mitigar cyberattacks. Además de configurar alertas que pueden desencadenar una guía de seguridad, puede iniciar un proceso de investigación y respuesta automatizado desde una vista en el explorador.
 
@@ -446,8 +447,9 @@ Para obtener más información sobre esto, consulte [ejemplo: un administrador d
 Además de los escenarios descritos en este artículo, tiene muchas más opciones de informes disponibles con el explorador (o detecciones en tiempo real).
 
 - [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
-- [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
+- [Ver archivos malintencionados detectados en SharePoint Online, OneDrive y Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Obtener información general sobre las vistas en el explorador de amenazas (y detecciones en tiempo real)](threat-explorer-views.md)
+- [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
@@ -483,6 +485,6 @@ Para obtener más información acerca de los roles y los permisos, vea los sigui
 - El informe de **detecciones en tiempo real** está disponible en Office 365 ATP plan 1, mientras que **Threat Explorer** está disponible en Office 365 ATP plan 2.
 - El informe de **detecciones en tiempo real** permite ver las detecciones en tiempo real. El **Explorador de amenazas** hace esto también, pero también le permite ver más detalles de un ataque determinado.
 - La vista **todo el correo electrónico** está disponible en el **Explorador de amenazas** (y no se encuentra en el informe de **detecciones en tiempo real** ).
-- En el **Explorador de amenazas**se incluyen más funciones de filtrado y acciones disponibles.
+- En el **Explorador de amenazas** se incluyen más funciones de filtrado y acciones disponibles.
 
 Para obtener más información, consulte [Office 365 ATP Service Description: disponibilidad de características en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

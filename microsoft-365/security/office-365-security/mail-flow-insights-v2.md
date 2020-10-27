@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre las opiniones y los informes que están disponibles en el panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198486"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769023"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -60,11 +60,11 @@ Los conocimientos disponibles son los siguientes:
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Permisos necesarios para ver el panel de flujo de correo
 
-El panel de flujo de correo está disponible para los miembros de los siguientes grupos de rutas:
+El panel de flujo de correo está disponible para los miembros de los siguientes grupos de roles:
 
 - **Administración** de la organización en el centro de seguridad & cumplimiento (administradores globales).
 
-- **[Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure ad.
+- **[Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure Active Directory.
 
 - **Administrador de flujo** de trabajo en el centro de cumplimiento de & de seguridad: Si un miembro de este grupo de roles no es también miembro de los grupos de roles de administrador global o administrador de Exchange, tenga en cuenta los siguientes problemas y requisitos:
 
@@ -76,6 +76,6 @@ Para obtener más información acerca de los permisos en el centro de seguridad 
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 
-Abra el centro de seguridad & cumplimiento en <https://protection.office.com> , expanda **flujo de correo**y, a continuación, seleccione **Panel**.
+Abra el centro de seguridad & cumplimiento en <https://protection.office.com> , expanda **flujo de correo** y, a continuación, seleccione **Panel** .
 
 Para ir directamente al panel de flujo de correo, Abra <https://protection.office.com/mailflow/dashboard> .

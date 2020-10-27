@@ -19,24 +19,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f57fc83f9102e5eeea61deaaadc17203bad030ac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8992efdd79295b6b56b8f033bd97b10f59a7a4d5
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195540"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769680"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Crear y realizar un seguimiento de los vales de ServiceNow en el centro de seguridad de Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!CAUTION]
+>**El período de versión preliminar del conector de ServiceNow está finalizando**<br>
+>Esta capacidad ya no estará disponible al final de noviembre de 2020. Gracias por sus comentarios y el soporte técnico continuo mientras determinamos los siguientes pasos.
 
 El [centro de seguridad de Microsoft 365](overview-security-center.md) se ha mejorado con la capacidad de crear y realizar un seguimiento de vales en ServiceNow de forma nativa. [Obtenga más información sobre ServiceNow](https://www.servicenow.com/)
 
 En el centro de seguridad, los administradores de seguridad pueden enviar una acción de mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) directamente a ServiceNow y crear un vale. Se pueden crear tíquets de administración de incidentes y de administración de cambios. Realice un seguimiento de las entradas en la Página principal del centro de seguridad y en ServiceNow.
 
 - [**Información sobre los requisitos previos, el intercambio de datos y la solución de problemas**](tickets.md)
-- **Administrar vales de ServiceNow en el centro de cumplimiento** (próximamente)
+- **Administrar vales de ServiceNow en el centro de cumplimiento** (no disponible)
 
 ## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Conectar el centro de seguridad de Microsoft 365 a ServiceNow
 
@@ -57,7 +60,7 @@ Obtenga información sobre errores comunes que pueden aparecer en el proceso de 
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>Crear una tarea y compartirla en ServiceNow
 
-Una vez que la integración esté configurada, cree tareas de ServiceNow basadas en acciones específicas para la mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) . Vaya a cualquier acción de mejora de la puntuación segura en el centro de seguridad 365 de Microsoft y seleccione **compartir**. Una de las opciones de lista desplegable es ServiceNow.
+Una vez que la integración esté configurada, cree tareas de ServiceNow basadas en acciones específicas para la mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) . Vaya a cualquier acción de mejora de la puntuación segura en el centro de seguridad 365 de Microsoft y seleccione **compartir** . Una de las opciones de lista desplegable es ServiceNow.
 
 Se genera una tarea en la que puede establecer la prioridad y editar el nombre, la descripción o la fecha de vencimiento. Una vez que se hayan rellenado todos los campos obligatorios, envíe la tarea a ServiceNow.
 

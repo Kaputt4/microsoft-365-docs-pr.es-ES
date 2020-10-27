@@ -17,25 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295087"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769273"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Estamos realizando algunos cambios en un futuro próximo para hacer que [Microsoft califique](microsoft-secure-score.md) con seguridad una mejor representativo de su postura de seguridad y mejorar el uso. Su puntuación y la puntuación máxima posible pueden cambiar.
 
 ## <a name="proposed-changes"></a>Cambios propuestos
 
-### <a name="october-2020"></a>2020 de octubre
+### <a name="november-2020"></a>2020 de noviembre
 
-#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Quitar la acción de mejora para la protección contra amenazas avanzada de Microsoft defender
+Eliminación de la capacidad de crear vales de ServiceNow a través de la calificación segura yendo a compartir Co> ServiceNow.
+
+- El período de versión preliminar del conector de ServiceNow está finalizando. Esta capacidad ya no estará disponible al final del 2020. Gracias por sus comentarios y el soporte técnico continuo mientras determinamos los siguientes pasos.
+
+### <a name="october-2020"></a>Octubre de 2020
+
+Quitar la acción de mejora relacionada con la protección contra amenazas avanzada de Microsoft defender:
+
 - Establecer la comprobación de contenido Web de aplicación de la tienda Windows de Microsoft defender para advertir
 
 ## <a name="related-resources"></a>Recursos relacionados
