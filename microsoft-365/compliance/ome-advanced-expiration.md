@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Use el cifrado avanzado de mensajes de Office 365 para ampliar la seguridad del correo electrónico mediante la configuración de una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546164"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769170"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado con el Cifrado de mensajes avanzado de Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced Message Encryption se incluye en [microsoft 365 Enterprise E
 
 Puede usar la expiración de mensajes en los correos electrónicos que los usuarios envían a los destinatarios externos que usan el portal OME para acceder a los correos electrónicos cifrados. Obliga a los destinatarios a usar el portal OME para ver y responder a los correos electrónicos cifrados enviados por la organización mediante una plantilla personalizada que especifica una fecha de expiración en Windows PowerShell.
 
-Como administrador global de O365, cuando aplique la marca de su compañía para personalizar la apariencia de los mensajes de correo electrónico de su organización, también puede especificar una expiración para estos mensajes de correo electrónico. Con Office 365 Advanced Message Encryption, puede crear varias plantillas para mensajes de correo electrónico cifrados que se originan en su organización. Mediante el uso de una plantilla, puede controlar durante cuánto tiempo los destinatarios tienen acceso al correo enviado por los usuarios.
+Como administrador global de Office 365, cuando aplica la marca de su compañía para personalizar la apariencia de los mensajes de correo electrónico de su organización, también puede especificar una expiración para estos mensajes de correo electrónico. Con Office 365 Advanced Message Encryption, puede crear varias plantillas para mensajes de correo electrónico cifrados que se originan en su organización. Mediante el uso de una plantilla, puede controlar durante cuánto tiempo los destinatarios tienen acceso al correo enviado por los usuarios.
 
 Cuando un usuario final recibe un correo con una fecha de expiración establecida, el usuario ve la fecha de expiración en el correo electrónico del contenedor. Si un usuario intenta abrir un correo expirado, aparece un error en el portal OME.
 
@@ -44,9 +44,9 @@ Con Office 365 Advanced Message Encryption, siempre que aplique la personalizaci
 
 2. Ejecute el cmdlet New-OMEConfiguration.
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 Donde:
 

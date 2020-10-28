@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341406"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774053"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -48,10 +48,10 @@ La administración de riesgos de Insiders usa toda la amplitud de los indicadore
 
 La administración de riesgos de Insider se centra en los siguientes principios:
 
-- **Transparencia**: equilibre la privacidad del usuario frente al riesgo de la organización con la arquitectura de privacidad por diseño.
-- **Configurable**: directivas configurables basadas en la industria, la geográfica y los grupos empresariales.
-- **Integrado**: flujo de trabajo integrado en las soluciones de cumplimiento de Microsoft 365.
-- **Accionable**: proporciona información para habilitar las notificaciones de usuario, las investigaciones de datos y las investigaciones del usuario.
+- **Transparencia** : equilibre la privacidad del usuario frente al riesgo de la organización con la arquitectura de privacidad por diseño.
+- **Configurable** : directivas configurables basadas en la industria, la geográfica y los grupos empresariales.
+- **Integrado** : flujo de trabajo integrado en las soluciones de cumplimiento de Microsoft 365.
+- **Accionable** : proporciona información para habilitar las notificaciones de usuario, las investigaciones de datos y las investigaciones del usuario.
 
 ## <a name="workflow"></a>Flujo de trabajo
 
@@ -105,9 +105,9 @@ Los [casos](insider-risk-management-cases.md) se crean para las alertas que requ
 
 Al seleccionar un caso en el panel del caso, se abre el caso de investigación y revisión. Este paso es el corazón del flujo de trabajo de administración de riesgos de Insider. Esta área es donde se sintetizan las actividades de riesgo, las condiciones de la Directiva, los detalles de las alertas y los detalles del usuario en una vista integrada para los revisores. Las principales herramientas de investigación de esta área son:
 
-- **Actividad de usuario**: la actividad del usuario se muestra automáticamente en un gráfico interactivo que traza las actividades a lo largo del tiempo y por nivel de riesgo para las actividades de riesgo actuales o pasadas. Los revisores pueden filtrar y ver rápidamente todo el historial de riesgos para el usuario y profundizar en actividades específicas para obtener más información.
-- **Explorador de contenido**: todos los archivos de datos y mensajes de correo electrónico asociados con actividades de alerta se capturan automáticamente y se muestran en el explorador de contenido. Los revisores pueden filtrar y ver los archivos y los mensajes por origen de datos, tipo de archivo, etiquetas, conversación y muchos más atributos.
-- **Notas del caso**: los revisores pueden proporcionar notas para un caso en la sección Notas de caso. Esta lista consolida todas las notas en una vista central e incluye la información enviada por el revisor y la fecha.
+- **Actividad de usuario** : la actividad del usuario se muestra automáticamente en un gráfico interactivo que traza las actividades a lo largo del tiempo y por nivel de riesgo para las actividades de riesgo actuales o pasadas. Los revisores pueden filtrar y ver rápidamente todo el historial de riesgos para el usuario y profundizar en actividades específicas para obtener más información.
+- **Explorador de contenido** : todos los archivos de datos y mensajes de correo electrónico asociados con actividades de alerta se capturan automáticamente y se muestran en el explorador de contenido. Los revisores pueden filtrar y ver los archivos y los mensajes por origen de datos, tipo de archivo, etiquetas, conversación y muchos más atributos.
+- **Notas del caso** : los revisores pueden proporcionar notas para un caso en la sección Notas de caso. Esta lista consolida todas las notas en una vista central e incluye la información enviada por el revisor y la fecha.
 
 ![Investigación de administración de riesgos de Insider](../media/insider-risk-investigate.png)
 
@@ -117,9 +117,12 @@ Una vez que se han investigado los casos, los revisores pueden actuar rápidamen
 
 En las situaciones más graves, es posible que necesite compartir la información del caso de administración de riesgos de Insider con otros revisores o servicios de la organización. La administración de riesgos de Insider se integra estrechamente con otras soluciones de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro.
 
-- **EDiscovery avanzado**: escalar un caso para investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
-- **Servicenow (versión preliminar)**: ServiceNow es una plataforma de informática en la nube que ayuda a las organizaciones a administrar flujos de trabajo digitales para operaciones empresariales. La administración de riesgos de Insider permite compartir alertas de casos con el servicio de ServiceNow y le permite crear incidentes y solicitudes de cambio relacionadas con casos de riesgo de Insider. Para obtener más información sobre cómo compartir información de alertas con ServiceNow, consulte [compartir un caso con servicenow](insider-risk-management-cases.md#share-the-case).
-- **Integración de API de administración de office 365 (versión preliminar)**: la administración de riesgos de Insider admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (Siem) a través de las API de administración de Office 365 Tener acceso a la información de alerta en la plataforma lo mejor que se adapte a los procesos de riesgo de su organización le ofrece más flexibilidad para actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alertas con las API de administración 365 de Office, consulte [exportar alertas](insider-risk-management-settings.md#export-alerts-preview).
+- **EDiscovery avanzado** : escalar un caso para investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
+- **Servicenow (versión preliminar)** : ServiceNow es una plataforma de informática en la nube que ayuda a las organizaciones a administrar flujos de trabajo digitales para operaciones empresariales. La administración de riesgos de Insider permite compartir alertas de casos con el servicio de ServiceNow y le permite crear incidentes y solicitudes de cambio relacionadas con casos de riesgo de Insider. Para obtener más información sobre cómo compartir información de alertas con ServiceNow, consulte [compartir un caso con servicenow](insider-risk-management-cases.md#share-the-case).
+- **Integración de API de administración de office 365 (versión preliminar)** : la administración de riesgos de Insider admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (Siem) a través de las API de administración de Office 365 Tener acceso a la información de alerta en la plataforma lo mejor que se adapte a los procesos de riesgo de su organización le ofrece más flexibilidad para actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alertas con las API de administración 365 de Office, consulte [exportar alertas](insider-risk-management-settings.md#export-alerts-preview).
+
+>[!NOTE]
+>La vista previa de ServiceNow finalizará el 30 2020 de noviembre y no continuará. Gracias por sus comentarios y soporte técnico mientras determinamos los siguientes pasos.
 
 ## <a name="scenarios"></a>Escenarios
 

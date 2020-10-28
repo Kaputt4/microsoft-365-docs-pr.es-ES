@@ -20,17 +20,17 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, el contenido está cifrado en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 28a5b55e63c3b66725aaa4a21e5dc750105c7c5a
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 10cb98407beeb575287e06caa06b31a6dd29c764
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408600"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48768926"
 ---
 # <a name="encryption"></a>Cifrado
 
 El cifrado es una parte importante de la estrategia de protección y protección de la información de archivos. En este artículo se proporciona información general sobre el cifrado de Office 365. Obtenga ayuda con las tareas de cifrado, como cómo configurar el cifrado de su organización y cómo proteger los documentos de Office con contraseña.
-  
+
 - Para obtener información acerca de certificados y tecnologías como TLS, consulte [información de referencia técnica sobre el cifrado en Office 365](technical-reference-details-about-encryption.md).
 
 - Para obtener información acerca de cómo configurar o configurar el cifrado para su organización, consulte [configurar el cifrado en Office 365 Enterprise](set-up-encryption.md).
@@ -38,20 +38,20 @@ El cifrado es una parte importante de la estrategia de protección y protección
 ## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>¿Qué es el cifrado y cómo funciona en Office 365?
 
 El proceso de cifrado codifica los datos (denominados texto sin formato) en texto cifrado. A diferencia del texto sin formato, los usuarios o los equipos no pueden usar el texto cifrado a menos que se descifre el texto cifrado. El descifrado requiere una clave de cifrado que solo tengan los usuarios autorizados. El cifrado ayuda a garantizar que solo los destinatarios autorizados puedan descifrar el contenido. El contenido incluye archivos, mensajes de correo electrónico, entradas de calendario, etc.
-  
+
 El cifrado por sí solo no impide la interceptación de contenido. El cifrado forma parte de una estrategia de protección de la información más amplia para su organización. Mediante el cifrado, se asegura de que solo las partes autorizadas puedan usar los datos cifrados.
-  
+
 Puede tener varios niveles de cifrado en su ubicación al mismo tiempo. Por ejemplo, puede cifrar los mensajes de correo electrónico y los canales de comunicación a través de los cuales fluye el correo electrónico. Con Office 365, los datos se cifran en reposo y en tránsito, mediante el uso de varios protocolos de cifrado seguros y tecnologías que incluyen seguridad de la capa de transporte/capa de sockets seguros (TLS/SSL), seguridad de protocolo de Internet (IPSec) y estándar de cifrado avanzado (AES).
-  
+
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>Cifrado de datos en reposo y datos en tránsito
 
  **Algunos ejemplos de datos en reposo** incluyen los archivos que se han cargado en una biblioteca de SharePoint, los datos de Project online, los documentos que se han cargado en una reunión de Skype empresarial, los mensajes de correo electrónico y los datos adjuntos que se han almacenado en las carpetas del buzón, así como los archivos que se han cargado en OneDrive para la empresa.
-  
+
  **Algunos ejemplos de datos en tránsito** son los mensajes de correo que están en proceso de entrega o las conversaciones que se están llevando a cabo en una reunión en línea. En Office 365, los datos están en tránsito siempre que el dispositivo de un usuario se comunica con un servidor de Microsoft o cuando un servidor de Microsoft se comunica con otro servidor.
-  
+
 Con Office 365, hay varias capas y tipos de cifrado que funcionan conjuntamente para proteger los datos. En la tabla siguiente se incluyen algunos ejemplos, con vínculos a información adicional.
-  
-|**Tipos de contenido**|**Tecnologías de cifrado**|**Recursos para obtener más información**|
+
+| Tipos de contenido | Tecnologías de cifrado | Recursos para obtener más información |
 |:-----|:-----|:-----|
 |Archivos en un dispositivo. Estos archivos pueden incluir mensajes de correo electrónico guardados en una carpeta, documentos de Office guardados en un equipo, una tableta o un teléfono, o datos guardados en la nube de Microsoft.  <br/> |BitLocker en centros de recursos de Microsoft. BitLocker también se puede usar en equipos cliente, como equipos y tabletas Windows  <br/> Administrador de claves distribuidas (DKM) en centros de recursos de Microsoft  <br/> Clave de cliente de Microsoft 365  <br/> |[Centro de TI de Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: cifrado de datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Cifrado de servicio con clave de cliente](customer-key-overview.md) <br/> |
 |Archivos en tránsito entre usuarios. Estos archivos pueden incluir documentos de Office o elementos de lista de SharePoint compartidos entre usuarios.  <br/> |TLS para los archivos en tránsito  <br/> |[Cifrado de datos en OneDrive para la Empresa y SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype empresarial online: seguridad y archivado](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
@@ -61,9 +61,9 @@ Con Office 365, hay varias capas y tipos de cifrado que funcionan conjuntamente 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>¿Qué sucede si necesito más control sobre el cifrado para cumplir con los requisitos de seguridad y cumplimiento?
 
 Microsoft 365 proporciona soluciones administradas por Microsoft para el cifrado de volúmenes, el cifrado de archivos y el cifrado de buzones en Office 365. Además, Microsoft proporciona soluciones de cifrado que puede administrar y controlar. Estas soluciones de cifrado se basan en Azure.
-  
+
 Para obtener más información, consulte los siguientes recursos:
-  
+
 - [¿Qué es Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 - [Activación de la administración de derechos en el centro de administración](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
@@ -76,13 +76,13 @@ Para obtener más información, consulte los siguientes recursos:
 
 ## <a name="how-do-i"></a>Cómo...
 
-|**Para realizar esta tarea**|**Ver estos recursos**|
+| Para realizar esta tarea | Ver estos recursos |
 |:-----|:-----|
 |Configurar el cifrado para mi organización  <br/> |[Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Ver detalles sobre certificados, tecnologías y conjuntos de cifrado TLS <br/> |[Detalles técnicos sobre el cifrado](technical-reference-details-about-encryption.md) <br/> |
 |Trabajar con mensajes cifrados en un dispositivo móvil  <br/> |[Ver mensajes cifrados en su dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Ver mensajes cifrados en su iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Cifrado de un documento con protección con contraseña  <br/><br/>  La protección con contraseña no es compatible con un explorador. Use versiones de escritorio de Word, Excel y PowerPoint para la protección con contraseña. |[Agregar o quitar la protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una sección **protección para agregar** y, a continuación, ver **cifrar con contraseña**.  |
-|Quitar el cifrado de un documento  <br/> |[Agregar o quitar la protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una sección **quitar protección** y, a continuación, vea **quitar cifrado de contraseña**.  |
+|Cifrado de un documento con protección con contraseña  <br/><br/>  La protección con contraseña no es compatible con un explorador. Use versiones de escritorio de Word, Excel y PowerPoint para la protección con contraseña. |[Agregar o quitar la protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una sección **protección para agregar** y, a continuación, ver **cifrar con contraseña** .  |
+|Quitar el cifrado de un documento  <br/> |[Agregar o quitar la protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una sección **quitar protección** y, a continuación, vea **quitar cifrado de contraseña** .  |
 
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -92,3 +92,5 @@ Para obtener más información, consulte los siguientes recursos:
 [Las diez formas principales de proteger los planes de Microsoft 365 para empresas](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
 
 [Flujo de reproducción y cifrado a nivel de vídeo de Microsoft Stream](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)
+
+[Riesgos y protección de cifrado](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections?view=o365-worldwide)
