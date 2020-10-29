@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Proporcionar a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, usar el servicio de noticias para habilitar un suministro de noticias personalizado para su organización.
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779183"
+ms.locfileid: "48791827"
 ---
 # <a name="manage-industry-news"></a>Administrar noticias de la industria
 
 Para proporcionar a los usuarios titulares de noticias actualizados sobre el sector y la información de su organización, use el servicio de [noticias](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) para habilitar un suministro de noticias personalizado para su organización.También puede administrar la configuración de la Página principal de Bing y de la nueva pestaña de Microsoft Edge (a partir de la versión de Edge 87).
 
 ## <a name="what-your-users-will-see"></a>Qué verán los usuarios
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Resumen de actualizaciones en el sector de Microsoft Search":::
  
 Los usuarios que han iniciado sesión en la Página principal de Bing verán su fuente de noticias en la información personalizada de su organización.
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Resumen de actualizaciones en el sector de Microsoft Search":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Captura de pantalla del carrusel de imágenes con noticias del sector de la web":::
 
 También pueden ver información sobre la empresa, el sector y las noticias internas o sobre el trabajo personalizado en su página de la nueva pestaña de Microsoft Edge. 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Resumen de actualizaciones en el sector de Microsoft Search":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Captura de pantalla del carrusel de imágenes con noticias del sector de la web":::
 
 ## <a name="news-settings"></a>Configuración de noticias
 
