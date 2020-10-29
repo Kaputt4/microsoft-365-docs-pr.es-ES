@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del administrador de cumplimiento para ayudarle en el recorrido de la comprensión, la configuración y el uso del administrador de cumplimiento.
-ms.openlocfilehash: 9fd86550652860b1c89be414f4c0b55c28a817e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204533"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791796"
 ---
-# <a name="compliance-manager-quickstart"></a>Tutorial rápido del administrador de cumplimiento
+# <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
 **En este artículo:** Use esta guía de inicio rápido para ayudarle con el recorrido por el uso del administrador de cumplimiento de Microsoft para administrar el cumplimiento de la organización con respecto a las normativas, las directivas y los estándares.
 
@@ -33,13 +33,13 @@ Si es la primera vez que se va a establecer el administrador de cumplimiento, o 
 
 El administrador de cumplimiento se encuentra en el centro de cumplimiento de Microsoft 365 en https://compliance.microsoft.com . El administrador global de su organización tendrá que [configurar los permisos de usuario y asignar roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) antes de empezar a usar el administrador de cumplimiento.
 
-La primera vez que visite el administrador de cumplimiento, verá una puntuación de cumplimiento para su organización. El administrador de cumplimiento ya está evaluando su entorno de Microsoft 365 actual con respecto a la línea base de protección de datos. La mejor forma de empezar a familiarizarse con el administrador de cumplimiento es comprender lo que le muestra, sus elementos clave y cómo personalizar el panel.
+La primera vez que visite el administrador de cumplimiento, verá una puntuación de cumplimiento para su organización. El administrador de cumplimiento ya está evaluando su entorno de Microsoft 365 actual con respecto a la línea base de protección de datos. La mejor manera de empezar a familiarizarse con el administrador de cumplimiento es comprender lo que le muestra, sus elementos clave y cómo personalizar el panel.
 
 La [Página de introducción al administrador de cumplimiento](compliance-manager.md) es la mejor opción para una revisión completa de qué es el administrador de cumplimiento y cómo funciona. Es posible que también desee dirigirse directamente a las secciones clave de nuestra documentación mediante los siguientes vínculos:
 
 - [Descripción de la puntuación de cumplimiento](compliance-manager.md#understanding-your-compliance-score)
 - [Información general sobre los elementos clave: controles, evaluaciones, plantillas y acciones de mejora](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Descripción del panel del administrador de cumplimiento](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Descripción del panel del administrador de cumplimiento](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filtrar la vista del panel](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Obtener información sobre las acciones de mejora](compliance-manager-setup.md#improvement-actions-page)
 - [Descripción de las evaluaciones](compliance-manager.md#assessments)

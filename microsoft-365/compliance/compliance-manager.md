@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: d26d187277b021e278667b6e0ae19a0772b34f03
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368133"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791812"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -83,9 +83,9 @@ Un control es un requisito de una regla, un estándar o una directiva. Define c�
 
 El administrador de cumplimiento realiza un seguimiento de los siguientes tipos de controles:
 
-1. **Controles administrados de Microsoft**: controles para los servicios en la nube de Microsoft, que Microsoft es responsable de implementar
-2. **Sus controles**: a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
-3. **Controles compartidos**: son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
+1. **Controles administrados de Microsoft** : controles para los servicios en la nube de Microsoft, que Microsoft es responsable de implementar
+2. **Sus controles** : a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
+3. **Controles compartidos** : son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
 
 ##### <a name="learn-more"></a>Más información
 
@@ -99,11 +99,11 @@ Una evaluación es la agrupación de los controles de una normativa, estándar o
 
 Las evaluaciones tienen varios componentes:
 
-- **Servicios en el ámbito**: el conjunto específico de servicios de Microsoft que se aplican a la evaluación
-- **Controles administrados de Microsoft**: controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
-- **Sus controles**: a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
-- **Controles compartidos**: son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
-- **Puntuación**de la evaluación: muestra el progreso en la obtención de los puntos totales posibles de las acciones de la evaluación administradas por la organización y por Microsoft.
+- **Servicios en el ámbito** : el conjunto específico de servicios de Microsoft que se aplican a la evaluación
+- **Controles administrados de Microsoft** : controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
+- **Sus controles** : a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
+- **Controles compartidos** : son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
+- **Puntuación** de la evaluación: muestra el progreso en la obtención de los puntos totales posibles de las acciones de la evaluación administradas por la organización y por Microsoft.
 
 Al crear evaluaciones, deberá asignarlas a un grupo. Puede configurar los grupos de la forma más lógica para su organización. Por ejemplo, puede agrupar las evaluaciones por año de auditoría, región, solución, Teams dentro de su organización o de algún otro modo. Una vez creados los grupos, puede [filtrar el panel del administrador de cumplimiento](compliance-manager-setup.md#filtering-your-dashboard-view) para ver la puntuación de uno o varios grupos.
 

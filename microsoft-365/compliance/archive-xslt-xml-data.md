@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: ac31fa147e19ac0d7f36d31651a8e0b4ec5f359f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 20d24e919c0fe045e487c41e42745f73acb521ad
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409216"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785502"
 ---
-# <a name="set-up-a-connector-to-archive-xsltxml-data-preview"></a>Configurar un conector para archivar datos XSLT/XML (versión preliminar)
+# <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurar un conector para archivar datos XSLT/XML
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos desde el origen de la página web a los buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un [conector XSLT/XML](https://globanet.com/xslt-xml) que permite el desarrollo rápido de archivos creados mediante XSLT (transformaciones de lenguaje de hojas de estilos extensible) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML a un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a los buzones de correo de Microsoft 365.
 
@@ -49,13 +49,13 @@ La información general siguiente explica el proceso de uso de un conector para 
 
 El primer paso es obtener acceso a los **conectores de datos** en el centro de cumplimiento de Microsoft 365 y crear un conector para los datos XSLT/XML.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **Data Connectors**  >  **XSLT/XML**.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **Data Connectors**  >  **XSLT/XML** .
 
-2. En la página Descripción del producto **XSLT/XML** , haga clic en **Agregar nuevo conector**.
+2. En la página Descripción del producto **XSLT/XML** , haga clic en **Agregar nuevo conector** .
 
-3. En la página **condiciones de servicio** , haga clic en **Aceptar**.
+3. En la página **condiciones de servicio** , haga clic en **Aceptar** .
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente** .
 
 5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
 
@@ -63,19 +63,19 @@ El primer paso es obtener acceso a los **conectores de datos** en el centro de c
 
 El segundo paso consiste en configurar el conector XSLT/XML en el sitio Merge1. Para obtener información sobre cómo configurar el conector XSLT/XML en el sitio de Merge1 de Globanet, consulte [Merge1 guía del usuario de conectores de terceros](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf).
 
-Después de hacer clic en **guardar & finalizar**, se le redirigirá al centro de cumplimiento de Microsoft 365, a la página **asignación de usuarios** del Asistente para el conector.
+Después de hacer clic en **guardar & finalizar** , se le redirigirá al centro de cumplimiento de Microsoft 365, a la página **asignación de usuarios** del Asistente para el conector.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
 
 1. Para asignar usuarios y completar la configuración del conector en el centro de cumplimiento de Microsoft 365, siga los pasos que se indican a continuación:
 
-2. En la página **asignar usuarios de XSLT/XML a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos XSLT/XML incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
+2. En la página **asignar usuarios de XSLT/XML a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos XSLT/XML incluyen una propiedad denominada *email* , que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
 
-3. En la página **consentimiento del administrador** , haga clic en **proporcionar consentimiento**. Se le redirigirá al sitio de Microsoft. Haga clic en **Aceptar** para proporcionar el consentimiento.
+3. En la página **consentimiento del administrador** , haga clic en **proporcionar consentimiento** . Se le redirigirá al sitio de Microsoft. Haga clic en **Aceptar** para proporcionar el consentimiento.
 
    La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de buzones de la organización. Para proporcionar el consentimiento del administrador, debe haber iniciado sesión con las credenciales de un administrador global de Microsoft 365 y aceptar la solicitud de consentimiento. Si no ha iniciado sesión como administrador global, puede ir a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) e iniciar sesión con las credenciales de administrador global para aceptar la solicitud.
 
-4. Haga clic en **siguiente**, revise la configuración y vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+4. Haga clic en **siguiente** , revise la configuración y vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="step-4-monitor-the-xsltxml-connector"></a>Paso 4: supervisar el conector XSLT/XML
 
@@ -85,7 +85,7 @@ Después de crear el conector XSLT/XML, puede ver el estado del conector en el c
 
 2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector **XSLT/XML** para mostrar la página de flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen** , haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

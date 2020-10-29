@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre el administrador de cumplimiento de Microsoft, que ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 3e1b6cdbcafd0cb4af4545cb258dab2ce082a2d8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204537"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791786"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Preguntas más frecuentes del administrador de cumplimiento
 
@@ -27,7 +27,7 @@ ms.locfileid: "48204537"
 
 Ahora hay una sola solución: administrador de cumplimiento. Esta sección le guiará a través de la transición, comenzando con una introducción básica a continuación. También es posible que le resulte útil ir directamente a una de las siguientes secciones:
 
-- [Su organización usó principalmente el administrador de cumplimiento (ya sea la versión preliminar clásica o pública), que se encuentra en el portal de confianza de servicios de Microsoft](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [Su organización usó principalmente el administrador de cumplimiento (ya sea la versión preliminar clásica o pública), que se encuentra en el portal de confianza de servicios de Microsoft](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [Su organización usó principalmente la puntuación de cumplimiento (versión preliminar pública), que se encuentra en el centro de cumplimiento de Microsoft 365](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -41,7 +41,7 @@ La disponibilidad general del administrador de cumplimiento en el centro de cump
 
 Lea esta [publicación de blog](https://aka.ms/compliancemanager/GAblog) para obtener más información sobre las novedades de la versión GA del administrador de cumplimiento.
 
-#### <a name="your-organization-regularly-used-compliance-manger-in-the-service-trust-portal"></a>Su organización usó con frecuencia el administrador de cumplimiento en el portal de confianza del servicio
+#### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>Su organización ha usado con regularidad el administrador de cumplimiento en el portal de confianza del servicio
 
 Si ha usado el administrador de cumplimiento en el portal de confianza de servicios, todos los datos de la organización se encuentran ahora en el administrador de cumplimiento en el centro de cumplimiento de Microsoft 365 en https://compliance.microsoft.com/compliancemanager . No es necesario hacer nada para reanudar el trabajo del administrador de cumplimiento en su nueva ubicación, excepto para actualizar los marcadores que tiene en su ubicación anterior. Se han extraído todas sus evaluaciones y otros datos.
 
@@ -51,7 +51,7 @@ Todo lo que solía hacer en versiones anteriores del administrador de cumplimien
 
 A continuación se muestran algunos recursos útiles:
 
-- [Familiarizarse con la nueva experiencia de administrador de cumplimiento](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [Familiarizarse con la nueva experiencia de administrador de cumplimiento](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Buscar permisos y otra información de configuración para el administrador de cumplimiento en su nueva casa](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Obtenga más información sobre el centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
 

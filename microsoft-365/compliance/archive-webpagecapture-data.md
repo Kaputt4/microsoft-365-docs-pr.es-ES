@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de captura de páginas web de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: b3f622a63e4f4dfe550f481bee6b3a56dfd3bdb1
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 766464c14c50b94ec15ce6e4bdc34c3422d8dd54
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409204"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785512"
 ---
-# <a name="set-up-a-connector-to-archive-webpage-data-preview"></a>Configurar un conector para archivar datos de la página web (versión preliminar)
+# <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurar un conector para archivar datos de la página web
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de páginas web en buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector de [captura de página web](https://globanet.com/webpage-capture) que captura páginas web específicas (y cualquier vínculo en las páginas) en un sitio web específico o en un dominio completo. El conector convierte el contenido de la página web en un formato de archivo PDF, PNG o personalizado y, a continuación, adjunta los archivos convertidos a un mensaje de correo electrónico y, a continuación, importa esos elementos de correo electrónico a los buzones de usuario en Microsoft 365.
 
@@ -51,13 +51,13 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 El primer paso es obtener acceso a los **conectores de datos** y crear un conector para los datos de origen de la Página Web.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y haga clic **Data connectors**en  >  **captura de página web**de conectores de datos.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y haga clic **Data connectors** en  >  **captura de página web** de conectores de datos.
 
-2. En la página Descripción del producto de **captura de página web** , haga clic en **Agregar conector**.
+2. En la página Descripción del producto de **captura de página web** , haga clic en **Agregar conector** .
 
-3. En la página **condiciones de servicio** , haga clic en **Aceptar**.
+3. En la página **condiciones de servicio** , haga clic en **Aceptar** .
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente** .
 
 5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
 
@@ -65,19 +65,19 @@ El primer paso es obtener acceso a los **conectores de datos** y crear un conect
 
 El segundo paso consiste en configurar el conector de captura de la página web en el sitio de Merge1 de Globanet. Para obtener información acerca de cómo configurar el conector de captura de página web, consulte la [Guía del usuario de conectores de terceros de Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
-Después de hacer clic en **guardar & finalizar**, se le redirigirá al centro de cumplimiento de Microsoft 365, a la página **asignación de usuarios** del Asistente para el conector.
+Después de hacer clic en **guardar & finalizar** , se le redirigirá al centro de cumplimiento de Microsoft 365, a la página **asignación de usuarios** del Asistente para el conector.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
 
 Para asignar usuarios y completar la configuración del conector en el centro de cumplimiento de Microsoft 365, siga los pasos que se indican a continuación:
 
-1. En la página **asignar usuarios de captura de página web a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos de captura de la página web incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
+1. En la página **asignar usuarios de captura de página web a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos de captura de la página web incluyen una propiedad denominada *email* , que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
 
-2. En la página **consentimiento del administrador** , haga clic en **proporcionar consentimiento**. Se le redirigirá al sitio de Microsoft. Haga clic en **Aceptar** para proporcionar el consentimiento.
+2. En la página **consentimiento del administrador** , haga clic en **proporcionar consentimiento** . Se le redirigirá al sitio de Microsoft. Haga clic en **Aceptar** para proporcionar el consentimiento.
 
    La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de buzones de la organización. Para proporcionar el consentimiento del administrador, debe haber iniciado sesión con las credenciales de un administrador global de Microsoft 365 y aceptar la solicitud de consentimiento. Si no ha iniciado sesión como administrador global, puede ir a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) e iniciar sesión con las credenciales de administrador global para aceptar la solicitud.
 
-3. Haga clic en **siguiente**, revise la configuración y vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+3. Haga clic en **siguiente** , revise la configuración y vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="step-4-monitor-the-webpage-capture-connector"></a>Paso 4: supervisar el conector de captura de la página web
 
@@ -85,9 +85,9 @@ Después de crear el conector de captura de la página web, puede ver el estado 
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector de **captura de página web** para mostrar la página de flotante, que contiene las propiedades y la información sobre el conector.
+2. Haga clic en la pestaña **conectores** y seleccione el conector de **captura de página web** para mostrar la página de flotante. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen** , haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

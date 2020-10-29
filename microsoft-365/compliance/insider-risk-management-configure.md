@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e8d30706895774986bc68936bd84c303a6460ece
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399175"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787516"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
 Use las directivas de administración de riesgos de Insider para identificar actividades arriesgadas y herramientas de administración que actúen en alertas de riesgo de la organización. Complete los siguientes pasos para configurar los requisitos previos y configurar una directiva de administración de riesgos de Insider.
 
 >[!IMPORTANT]
->La solución de administración de riesgos de Insider de Microsoft 365 proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar el control interno en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de la organización y configurar conectores de datos en el centro de cumplimiento de Microsoft 365 para importar los datos relevantes para admitir la identificación de nivel de usuario de actividad potencialmente arriesgada. Los clientes reconocen la información relacionada con el comportamiento, el personaje o el rendimiento de los usuarios individuales relacionados con el empleo que el administrador puede calcular y poner a disposición de otros usuarios de la organización.
+>La solución de administración de riesgos de Insider de Microsoft 365 proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar el control interno en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de la organización y configurar conectores de datos en el centro de cumplimiento de Microsoft 365 para importar los datos relevantes para admitir la identificación de nivel de usuario de actividad potencialmente arriesgada. Los clientes reconocen la información relacionada con el comportamiento, el personaje o el rendimiento del usuario individual relacionado con el empleo que el administrador puede calcular y poner a disposición de otros usuarios de la organización. Además, los clientes reconocen que deben llevar a cabo su propia investigación completa relacionada con el comportamiento, el personaje o el rendimiento del usuario individual relacionado con el empleo, y no solo se basan en la información del servicio de administración de riesgos de Insider. Los clientes son los únicos responsables de usar el servicio de administración de riesgos de Insider de Microsoft 365 y cualquier característica o servicio asociado de acuerdo con todas las leyes aplicables, incluidas las leyes relativas a la identificación de usuarios individuales y las acciones de corrección.
 
 Para obtener más información sobre cómo las directivas de riesgos de Insider pueden ayudarle a administrar el riesgo en su organización, consulte [Administración de riesgos de Insider en Microsoft 365](insider-risk-management.md).
 
@@ -71,15 +71,15 @@ Complete los siguientes pasos para agregar usuarios a un grupo de roles de admin
 
 1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 
-2. En el centro de seguridad &amp; y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+2. En el centro de seguridad &amp; y cumplimiento, vaya a **permisos** . Seleccione el vínculo para ver y administrar roles en Office 365.
 
-3. Seleccione el grupo de funciones de administración de riesgos de Insider al que desea agregar usuarios y, a continuación, seleccione **Editar Grupo de roles**.
+3. Seleccione el grupo de funciones de administración de riesgos de Insider al que desea agregar usuarios y, a continuación, seleccione **Editar Grupo de roles** .
 
-4. Seleccione **elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
+4. Seleccione **elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar** .
 
 5. Seleccione **Agregar** y, a continuación, marque la casilla de verificación para todos los usuarios que desee agregar al grupo de roles.
 
-6. Seleccione **Agregar**y haga clic en **listo**.
+6. Seleccione **Agregar** y haga clic en **listo** .
 
 7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **cerrar** para completar los pasos.
 
@@ -93,7 +93,7 @@ Para obtener instrucciones paso a paso para activar la auditoría, vea [activar 
 
 La mayoría de las plantillas de administración de riesgos de Insider tienen requisitos previos que deben configurarse para que los indicadores de directiva generen alertas de actividad relevantes. Configure los requisitos previos adecuados en función de las directivas que tenga previsto configurar para su organización.
 
-Si está configurando una directiva con el *idioma ofensivo en la plantilla de directiva de correo electrónico* , puede omitir este paso y pasar directamente al **paso 4**.
+Si está configurando una directiva con el *idioma ofensivo en la plantilla de directiva de correo electrónico* , puede omitir este paso y pasar directamente al **paso 4** .
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configuración del conector de 365 de RRHH de Microsoft
 
@@ -118,7 +118,7 @@ Las directivas de DLP ayudan a identificar a los usuarios a activar la puntuaci�
 >Asegúrese de que ha completado los pasos siguientes:
 >
 >- Comprenda y configure correctamente los usuarios del ámbito en las directivas de DLP y de administración de riesgos de Insider para producir la cobertura de la Directiva que espera.
->- Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con estas plantillas están configuradas para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
+>- Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con estas plantillas están configuradas para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio* .
 
 Se requiere una directiva DLP cuando se usan las siguientes plantillas de directiva:
 
@@ -168,9 +168,9 @@ Antes de configurar una directiva, defina las siguientes opciones de riesgo de I
     - [Estado de alerta de protección contra amenazas avanzada de Microsoft 365 defender](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
     - [Configuración del dominio](insider-risk-management-settings.md#domains-preview)
 6. En la página **exportar alertas** , habilite la exportación de información de alertas de riesgos de Insider mediante las API de administración de Office 365, si es necesario.
-7. En la página **grupos de usuarios con prioridad** , cree un grupo de usuarios con prioridad y agregue usuarios si no se crean en el **paso 3**.
+7. En la página **grupos de usuarios con prioridad** , cree un grupo de usuarios con prioridad y agregue usuarios si no se crean en el **paso 3** .
 8. En la página **flujos de automatización de energía** , configure un flujo de plantillas de flujo de riesgo de Insider o cree un nuevo flujo. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#power-automate-flows-preview) para obtener una guía paso a paso.
-9. En la **Página activos prioritarios**, configure los activos prioritarios para usar datos de la plataforma de acceso y control físico importadas por el conector de distintivos físico. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#priority-physical-assets-preview) para obtener una guía paso a paso.
+9. En la **Página activos prioritarios** , configure los activos prioritarios para usar datos de la plataforma de acceso y control físico importadas por el conector de distintivos físico. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#priority-physical-assets-preview) para obtener una guía paso a paso.
 10. En la página **Microsoft Teams** , habilite la integración de Microsoft Teams con la administración de riesgos de Insider para crear automáticamente un equipo para la colaboración de usuarios o casos. Consulte el artículo [Introducción a la configuración de administración de riesgos de Insider](insider-risk-management-settings.md#microsoft-teams-preview) para obtener una guía paso a paso.
 11. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgos de Insider.
 
@@ -181,9 +181,9 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **directivas** .
 2. Seleccione **crear Directiva** para abrir el Asistente para directivas.
 3. En la página **nueva Directiva de riesgo de Insider** , complete los campos siguientes:
-    - **Nombre (obligatorio)**: escriba un nombre descriptivo para la Directiva.
-    - **Descripción (opcional)**: escriba una descripción para la Directiva.
-    - **Elegir plantilla de directiva (obligatorio)**: Seleccione una de las [plantillas de directiva](insider-risk-management-policies.md#policy-templates) para definir los tipos de indicadores de riesgo que se supervisan mediante la Directiva.
+    - **Nombre (obligatorio)** : escriba un nombre descriptivo para la Directiva.
+    - **Descripción (opcional)** : escriba una descripción para la Directiva.
+    - **Elegir plantilla de directiva (obligatorio)** : Seleccione una de las [plantillas de directiva](insider-risk-management-policies.md#policy-templates) para definir los tipos de indicadores de riesgo que se supervisan mediante la Directiva.
 
     >[!IMPORTANT]
     >La mayoría de las plantillas de Directiva tienen requisitos previos que deben configurarse para que la Directiva genere alertas relevantes. Si no ha configurado los requisitos previos de la Directiva aplicables, consulte el **paso 3** anterior.
@@ -194,9 +194,9 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 4. Seleccione **siguiente** para continuar.
 5. En la página **usuarios** , seleccione **Agregar usuario o grupo** o **Seleccione prioridad de grupos** de usuarios para definir los usuarios o grupos de usuarios con prioridad que se incluyen en la Directiva, en función de la plantilla de directiva que haya seleccionado. Marque la casilla de verificación **todos los usuarios y grupos con correo habilitado** , si procede (si no ha seleccionado una plantilla basada en el usuario con prioridad). Seleccione **siguiente** para continuar.
 6. En la página **especificar el contenido que va a priorizar (opcional)** , puede asignar los orígenes para dar prioridad a los resultados de mayor riesgo. Sin embargo, algunas actividades no generarán ninguna alerta a menos que el contenido relacionado contenga tipos de información confidencial integrados o personalizados, o que se haya especificado como prioridad en esta página:
-    - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione las organizaciones de SharePoint que desea priorizar. Por ejemplo, *"Group1@contoso.sharepoint.com/sites/group1"*.
-    - **Tipo de información confidencial**: seleccione **Agregar información confidencial escriba** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"número de cuenta bancaria de Estados Unidos"* y *"número de tarjeta de crédito"*.
-    - **Etiquetas de confidencialidad**: seleccione **Agregar etiqueta de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"confidencial"* y *"secreto"*.
+    - **Sitios de SharePoint** : seleccione **Agregar sitio de SharePoint** y seleccione las organizaciones de SharePoint que desea priorizar. Por ejemplo, *"Group1@contoso.sharepoint.com/sites/group1"* .
+    - **Tipo de información confidencial** : seleccione **Agregar información confidencial escriba** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"número de cuenta bancaria de Estados Unidos"* y *"número de tarjeta de crédito"* .
+    - **Etiquetas de confidencialidad** : seleccione **Agregar etiqueta de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"confidencial"* y *"secreto"* .
 7. Seleccione **siguiente** para continuar.
 8. En la página **seleccionar indicadores de directiva** , verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página indicadores de **configuración de riesgos de Insider**  >  **Indicators** . Si seleccionó una plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** para habilitar los indicadores desencadenadores de la Directiva. Seleccione los indicadores que desea aplicar a la Directiva. Si prefiere no usar la configuración de umbral de directiva predeterminada para estos indicadores, deshabilite **usar umbrales predeterminados recomendados por Microsoft** y escriba los valores de umbrales para cada indicador seleccionado. Si ha seleccionado al menos un indicador de *dispositivo* o *Oficina* , seleccione los **aceleradores de puntuación de riesgo** según corresponda. Los elevadores de puntuación de riesgo solo se aplican a los indicadores seleccionados.
 
@@ -212,4 +212,4 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 
 Una vez que haya completado estos pasos para crear su primera Directiva de administración de riesgos de Insider, empezará a recibir alertas de los indicadores de actividad después de aproximadamente 24 horas. Configure directivas adicionales según sea necesario mediante las instrucciones del paso 4 de este artículo o los pasos en [Create a Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
 
-Para obtener más información sobre la investigación de alertas de los riesgos de Insider y el **Panel alertas**, vea [alertas de administración de riesgos de Insider](insider-risk-management-alerts.md).
+Para obtener más información sobre la investigación de alertas de los riesgos de Insider y el **Panel alertas** , vea [alertas de administración de riesgos de Insider](insider-risk-management-alerts.md).
