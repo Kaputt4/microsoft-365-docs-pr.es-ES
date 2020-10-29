@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 511e04e69dae03caafd7c7828dd24cea6e7a8832
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 18587fc6a718955cd5a752954b614c4d6fa5ee22
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769364"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779265"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -125,8 +125,6 @@ Para crear una regla DLP
 12. Haga clic en **Guardar** y, a continuación, en **Siguiente** .
 13. Elija las opciones de prueba y haga clic en **Siguiente** .
 14. Haga clic en **Enviar** y después en **Listo** .
-
-limit-accidental-exposure-dlp-anyone-links.png
 
 ## <a name="protect-against-malicious-files"></a>Protéjase contra archivos maliciosos
 
