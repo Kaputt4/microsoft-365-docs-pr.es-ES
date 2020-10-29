@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
-ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638380"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794902"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -51,9 +51,9 @@ Si su organización usa Active Directory que se sincroniza con Azure AD, elimine
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
-2. Si la lista de suscripciones está en la vista de **tabla** , a la derecha, seleccione **tarjetas**.
+2. Si la lista de suscripciones está en la vista de **tabla** , a la derecha, seleccione **tarjetas** .
 
-3. Busque una suscripción activa y, en la sección **configuración & acciones** , seleccione **Cancelar suscripción**.
+3. Busque una suscripción activa y, en la sección **configuración & acciones** , seleccione **Cancelar suscripción** .
 
 4. Siga las indicaciones para finalizar el proceso.
 
@@ -63,13 +63,13 @@ Si su organización usa Active Directory que se sincroniza con Azure AD, elimine
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
-2. Si la lista de suscripciones está en la vista de **tabla** , a la derecha, seleccione **tarjetas**.
+2. Si la lista de suscripciones está en la vista de **tabla** , a la derecha, seleccione **tarjetas** .
 
-3. Junto a **Estado de suscripción**, seleccione **deshabilitado**.
+3. Junto a **Estado de suscripción** , seleccione **deshabilitado** .
 
-4. Busque una suscripción deshabilitada y, en la sección **configuración & acciones** , seleccione **eliminar**.
+4. Busque una suscripción deshabilitada y, en la sección **configuración & acciones** , seleccione **eliminar** .
 
-5. En el cuadro de diálogo **eliminar suscripción** , active la casilla de verificación **entiendo el impacto** y, a continuación, seleccione **eliminar suscripción**.
+5. En el cuadro de diálogo **eliminar suscripción** , active la casilla de verificación **entiendo el impacto** y, a continuación, seleccione **eliminar suscripción** .
 
 6. Para cada suscripción deshabilitada, repita los pasos 4 y 5 hasta que se hayan eliminado todas las suscripciones.
 
@@ -77,7 +77,7 @@ Si su organización usa Active Directory que se sincroniza con Azure AD, elimine
 
 1. En el centro de administración, vaya a **la página usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">activos</a> .
 
-2. Elija **multi-factor Authentication**.
+2. Elija **multi-factor Authentication** .
 
 3. En la página autenticación multifactor, deshabilite todas las cuentas excepto la cuenta de administrador global que está usando actualmente.
 
@@ -87,12 +87,12 @@ También puede <a href="https://docs.microsoft.com/azure/active-directory/authen
 
 1. Inicie sesión en el <a href="https://aad.portal.azure.com/" target="_blank">centro de administración de Azure ad</a> con una cuenta de administrador global.
 
-2. Seleccione **Azure Active Directory**.
+2. Seleccione **Azure Active Directory** .
 
-3. Cambie al directorio que desee eliminar.
+3. Cambie a la organización que desee eliminar.
 
-4. Seleccione **eliminar directorio**.
+4. Seleccione **eliminar inquilino** .
 
-5. Si el directorio produce un error en una o más comprobaciones, verá un vínculo para obtener más información sobre cómo pasar las comprobaciones. Después de pasar todas las comprobaciones, seleccione **eliminar** para completar el proceso.
+5. Si la organización da error en una o más comprobaciones, verá un vínculo para obtener más información sobre cómo pasar las comprobaciones. Después de pasar todas las comprobaciones, seleccione **eliminar** para completar el proceso.
 
 Después de completar este paso final, su cuenta con Microsoft se cierra y se elimina.

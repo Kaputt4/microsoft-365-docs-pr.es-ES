@@ -9,24 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c574be6d171a230479d8b6c96e2e0a1dec8a87ac
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656159"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795110"
 ---
 # <a name="readiness-assessment-tool"></a>Herramienta de evaluación de preparación
 
 Para obtener la mejor experiencia posible al inscribirse en el escritorio administrado de Microsoft, hay varias opciones de configuración y otros parámetros que debe establecer antes de tiempo. Puede usar esta herramienta para comprobar la configuración y recibir los pasos detallados para corregir los que no sean correctos.
 
-La herramienta comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para garantizar que funcionarán con el escritorio administrado por Microsoft. Microsoft Managed Desktop mantiene los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecutó una protección en su organización (inquilino) de Azure AD.  Después de 12 meses, lo mantenemos en un formulario de identificación.  Puede optar por eliminar los datos recopilados.
+La herramienta comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para garantizar que funcionarán con el escritorio administrado por Microsoft. Microsoft Managed Desktop mantiene los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecutó una protección en su organización (inquilino) de Azure AD. Después de 12 meses, lo mantenemos en un formulario de identificación.  Puede optar por eliminar los datos recopilados.
+
+Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero tres de las comprobaciones ([conectores de certificados](readiness-assessment-fix.md#certificate-connectors), [autenticación multifactor](readiness-assessment-fix.md#multi-factor-authentication)y [restablecimiento de contraseñas de autoservicio](readiness-assessment-fix.md#self-service-password-reset)) requieren permisos adicionales.
  
 La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="microsoft-intune-settings"></a>Configuración de Microsoft Intune
 
-|Check  |Description  |
+|Check  |Descripción  |
 |---------|---------|
 |Perfil de implementación de piloto automático     | Comprueba que la asignación del perfil de implementación de piloto automático no se aplica a todos los dispositivos (el perfil *no* debe asignarse a ningún dispositivo de escritorio administrado por Microsoft).       |
 |Conectores de certificados     | Comprueba el estado de los conectores de certificado para asegurarse de que están activos.   |
@@ -48,7 +50,7 @@ La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="azure-active-directory-settings"></a>Configuración de Azure Active Directory
 
-|Check  |Description  |
+|Check  |Descripción  |
 |---------|---------|
 |Suscripciones "ad hoc" para la itinerancia del estado de la empresa     | Aconseja comprobar una opción que (si se establece en "false") impedir que la itinerancia del estado de la empresa funcione correctamente  |
 |Enterprise State Roaming     | Aconseja comprobar que la itinerancia del estado de la empresa está habilitada       |
@@ -63,12 +65,12 @@ La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>Configuración de Microsoft 365 apps for Enterprise
 
-|Check  |Description  |
+|Check  |Descripción  |
 |---------|---------|
 |OneDrive para la Empresa     | Comprueba si OneDrive para la empresa usa una configuración no admitida.        |
 
 
-Para cada comprobación, la herramienta informará de uno de los tres resultados posibles:
+Para cada comprobación, la herramienta notificará uno de los cuatro resultados posibles:
 
 
 |Resultado  |Significado  |
@@ -76,3 +78,4 @@ Para cada comprobación, la herramienta informará de uno de los tres resultados
 |Listo     | No es necesario realizar ninguna acción antes de completar la inscripción.        |
 |Consejo    | Siga los pasos de la herramienta para obtener la mejor experiencia con la inscripción y para los usuarios. *Puede* completar la inscripción, pero debe solucionar estos problemas antes de implementar el primer dispositivo.        |
 |No preparado | *Se producirá un error* en la inscripción si no soluciona estos problemas. Siga los pasos de la herramienta para resolverlos.        |
+|Error | El rol de Azure Active Director (AD) que está usando no tiene permisos suficientes para ejecutar esta comprobación. |
