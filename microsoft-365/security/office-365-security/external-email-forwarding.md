@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774098"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806641"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío de correo electrónico externo automático en Microsoft 365
 
@@ -31,7 +31,7 @@ Los siguientes tipos de reenvío automático están disponibles en Microsoft 365
 
 - Los usuarios pueden configurar [las reglas](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) de la bandeja de entrada para reenviar mensajes de forma automática a los remitentes externos (deliberadamente o como resultado de una cuenta en peligro).
 
-- Los administradores pueden configurar el [reenvío de buzón](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (también conocido como reenvío SMTP) para reenviar mensajes automáticamente a los destinatarios externos.
+- Los administradores pueden configurar el [reenvío de buzón](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (también conocido como reenvío _SMTP_ ) para reenviar mensajes automáticamente a los destinatarios externos.
 
 Puede usar las directivas de filtro de correo no deseado saliente para controlar el reenvío automático a los destinatarios externos. Hay tres opciones de configuración disponibles:
 
@@ -45,9 +45,9 @@ Para obtener instrucciones sobre cómo configurar estas opciones, vea [configura
 
 > [!NOTE]
 > 
-> - Al deshabilitar el reenvío automático también se deshabilitan las reglas de la bandeja de entrada que redirigen mensajes a direcciones externas.
+> - Al deshabilitar el reenvío automático se deshabilita cualquier regla de la bandeja de entrada (usuarios) o reenvío de buzón (administradores) que redirigen mensajes a direcciones externas.
 > 
->   Office 365 no permite el reenvío externo automático por reglas de la bandeja de entrada o por configuración de buzón, que proporciona una directiva predeterminada segura. Sin embargo, el administrador puede modificar esta configuración para todos o algunos de los usuarios de la organización. Cree [directivas de correo no deseado saliente](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) y modifique la sección Reenvío automático para controlar el reenvío de correo electrónico automático de los usuarios a remitentes externos. Esto puede aplicarse posteriormente a los remitentes internos a los que se aplica la Directiva. El reenvío de mensajes entre usuarios internos no se ve afectado por esta modificación.
+> - El reenvío automático de mensajes entre usuarios internos no se ve afectado por la configuración de las directivas de filtro de correo no deseado saliente.
 > 
 > - Puede ver información sobre los usuarios que reenvían automáticamente los mensajes a los destinatarios externos en el [Informe de mensajes reenviados automáticamente](mfi-auto-forwarded-messages-report.md).
 

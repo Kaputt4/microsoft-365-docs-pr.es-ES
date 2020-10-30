@@ -20,12 +20,12 @@ description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de M
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464101"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806605"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -99,21 +99,21 @@ Las empresas de los siguientes países pueden proporcionar su número de IVA o e
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
 
-Al comprar servicios de Microsoft 365 en la Unión Europea, esta compra está sujeta a Value-Added Tax (IVA).
+Cuando compre servicios de Microsoft 365 en la región de EMEA, esta compra podría estar sujeta a Value-Added Tax (IVA).
   
-- Si se encuentra en un Estado miembro de la Unión Europea y no proporciona un NIF local válido, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA local actual, en función del país de facturación en el que se establezca su cuenta como.
+- Si se encuentra en un Estado miembro de la Unión Europea, Armenia, Bielorrusia, Noruega, Turquía o Emiratos Árabes Unidos y no proporciona su identificador de IVA local válido, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA local actual, en función del país de facturación en el que se establezca su cuenta.
 
-- Si se encuentra en Suiza o en Liechtenstein, se aplicará la tasa de IVA suiza actual, independientemente de si proporciona su CIF o no.
+- Si se encuentra en Liechtenstein, Rusia, Serbia, Sudáfrica o Suiza, se aplica el IVA, independientemente de si proporciona el NIF o no lo utiliza.
 
-- Por lo general, si está ubicado en un país de EMEA fuera de la Unión Europea y Suiza/Liechtenstein, Microsoft Ireland Operations Ltd no cobra el IVA.
-
-- Antes de que podamos validar su identificación de IVA, debe estar disponible para la verificación en el Sistema de intercambio de información de IVA (VIES). Si no se puede comprobar el NIF, póngase en contacto con la autoridad fiscal local.
+- Para los clientes de la UE, antes de que podamos validar el NIF, debe estar disponible para su verificación en el sistema de intercambio de información de IVA (VIES). Si no se puede comprobar el NIF, póngase en contacto con la autoridad fiscal local.
 
 Puede optar a la calificación cero del IVA si:
   
 - **Está en un Estado miembro de la Unión Europea fuera de Irlanda:** Puede proporcionar su NIF-CIF local válido. Esto permite a Microsoft Ireland Operations Ltd. a VAT tasa cero la transacción. Sin embargo, es posible que tenga una obligación de contabilidad del IVA local. Si tiene algún problema, consulte a sus consejeros fiscales. Para obtener instrucciones, consulte [Agregar el NIF](#add-your-vat-id).
 
 - **Está en Irlanda y tiene la certificación de exención de IVA válida relevante:** Microsoft Ireland Operations Ltd. puede tener derecho a eximir la transacción del IVA. Si no lo hace, Microsoft Ireland Operations Ltd. aplica la tasa de IVA irlandés actual, independientemente de que proporcione un NIF o no.
+
+- **Está en Armenia, Bielorrusia, Noruega, Turquía o Emiratos Árabes Unidos:** Puede proporcionar su NIF-CIF local. Esto da derecho a Microsoft Ireland Operations Ltd. a IVA de tasa cero de la transacción. Sin embargo, puede tener una obligación de contabilidad del IVA local, por lo que debe consultar a sus asesores fiscales si tiene alguna preocupación. Para obtener instrucciones, consulte [Agregar el NIF](#add-your-vat-id).
 
 ## <a name="asia-pacific-countries-apac"></a>Países de Asia Pacífico (APAC)
 
@@ -136,10 +136,10 @@ Si Microsoft Corporation ha realizado su facturación ([consulte su factura](vie
 ## <a name="add-your-vat-id"></a>Añadir su NIF-CIF
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la pestaña **productos** , seleccione la suscripción que desea actualizar.
-3. En la página Detalles de la suscripción, en la sección **dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio**.
-4. En el panel **editar la dirección de uso del servicio** , en el cuadro NIF, escriba el NIF, incluido el prefijo y sin espacios. **VAT number**
-5. Seleccione **Guardar**.
+2. En la pestaña **Productos** , seleccione la suscripción que quiera actualizar.
+3. En la página Detalles de la suscripción, en la sección **dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio** .
+4. En el panel **Editar dirección de uso del servicio** , en el cuadro NIF, escriba el NIF, incluido el prefijo y sin espacios. **VAT number**
+5. Seleccione **Guardar** .
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 
