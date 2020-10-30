@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 85f272c5c663a95c749f7971b6e23c178dab2b94
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754066"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795099"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -38,9 +38,9 @@ Para otras cargas de trabajo, vea:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
-Los siguientes elementos de Teams se pueden retener y eliminar mediante la retención para Teams: chats y mensajes de canal.
+Los siguientes elementos de Teams pueden ser retenidos y eliminados mediante el uso de directivas de retención de Teams: chats y mensajes de canal, incluyendo imágenes insertadas.
 
-Los mensajes de Teams en canales privados no se incluyen y las reacciones de otras personas en forma de iconos gestuales no están incluidos.
+Los mensajes de Teams en canales privados no están incluidos y las reacciones de otras personas en forma de iconos gestuales no están incluidos.
 
 Los mensajes de correo electrónico y los archivos que use con Teams no son incluidos en directivas de retención para Teams. Estos elementos tienen sus propias directivas de retención.
 

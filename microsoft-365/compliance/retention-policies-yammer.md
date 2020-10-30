@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Yammer.
-ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754708"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795005"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Más información sobre la retención para Yammer
 
@@ -61,7 +61,7 @@ Cuando la directiva de retención consiste en retener y luego eliminar:
 
 Para las dos rutas en el diagrama:
 
-1. Si el usuario **edita o elimina un mensaje de Yammer** durante el período de retención, el mensaje original se copia (si se edita) o se traslada (si se elimina) a la carpeta SubstrateHolds de manera inmediata. El mensaje se almacena hasta que finaliza el período de retención y, luego, se elimina de forma permanente e inmediata.
+1. **Si se edita o elimina un mensaje de Yammer** durante el período de retención, el mensaje original se copia (si se edita) o se mueve (si se elimina) a la carpeta SubstrateHolds. El mensaje se almacena hasta que finaliza el período de retención y, luego, se elimina de forma permanente e inmediata.
 
 2. **Si no se elimina un mensaje de Yammer** , o se editan mensajes actuales, el mensaje se traslada a la carpeta SubstrateHolds después de que el período de retención expire. Esta acción tarda hasta siete días después de la fecha de expiración. Cuando un mensaje se encuentra en la carpeta SubstrateHolds, se elimina entonces de forma permanente e inmediata. 
 
@@ -72,7 +72,7 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo retención
 
-1. **Si se edita o elimina un mensaje de Yammer** : se crea, de manera inmediata, una copia del mensaje original en la carpeta SubstrateHolds y se retiene ahí hasta que expire el periodo de retención. Luego, el mensaje se elimina de forma permanente e inmediata de la carpeta SubstrateHolds.
+1. **Si se edita o elimina un mensaje de Yammer** : se crea una copia del mensaje original en la carpeta SubstrateHolds y se conserva allí hasta que finalice el período de retención. Luego, el mensaje se elimina de forma permanente e inmediata de la carpeta SubstrateHolds.
 
 2. **Si el mensaje de Yammer no se modifica ni se elimina** y se editan mensajes actuales durante el período de retención: no sucede nada antes ni después del período de retención. El mensaje permanece en su ubicación original.
 
@@ -80,12 +80,12 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 1. **Si el mensaje de Yammer no se elimina** durante el período de retención: al final del período de retención, el mensaje se mueve a la carpeta SubstrateHolds. Esta acción tarda hasta siete días después de la fecha de expiración. Luego, el mensaje se elimina de forma permanente e inmediata de la carpeta SubstrateHolds.
 
-2. **Si el usuario elimina el mensaje de Yammer** durante el período, el elemento se mueve inmediatamente a la carpeta SubstrateHolds, donde se eliminará de forma permanente e inmediata.
+2. **Si el usuario elimina el mensaje de Yammer** durante el período, el elemento se moverá a la carpeta SubstrateHolds, donde se eliminará inmediatamente de forma permanente e inmediata.
 
 
 ## <a name="messages-and-external-users"></a>Mensajes y usuarios externos
 
-De forma predeterminada, las directivas de retención para los mensajes privados de Yammer se aplican a todos los usuarios de la organización, pero no a los usuarios externos. Puede aplicar una directiva de retención a usuarios externos con la opción **Elegir usuario** y especificando su cuenta. 
+De forma predeterminada, una directiva de retención para los mensajes privados de Yammer se aplica a todos los usuarios de su organización, pero no a los usuarios externos. Puede aplicar una directiva de retención a usuarios externos con la opción **Elegir usuario** y especificando su cuenta. 
 
 En este momento, no se admiten usuarios invitados B2B de Azure.
 

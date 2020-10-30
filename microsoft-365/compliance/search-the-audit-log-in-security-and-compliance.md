@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e427cb2eaa282ebac46b47c6dd97718039c12cb8
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753349"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787586"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -672,6 +672,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Mensajes que se han purgado del buzón|HardDelete|Un mensaje se ha purgado de la carpeta Elementos recuperables (eliminado permanentemente del buzón).|
 |Permisos de buzón de delegado quitados|Remove-MailboxPermission|Un administrador quitó el permiso FullAccess (que se asignó a un delegado) del buzón de una persona. Una vez que se haya quitado el permiso FullAccess, el delegado no podrá abrir el buzón de la otra persona ni acceder a ningún contenido.|
 |Permisos quitados de la carpeta|RemoveFolderPermissions|Un permiso de la carpeta se ha removido. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
+|Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para obtener más información, vea la sección "Acceder a eventos fundamentales para las investigaciones" en [Auditoría avanzada](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Mensaje enviado mediante los permisos de Enviar como|SendAs|Un mensaje se ha enviado con el permiso Enviar como. Esto significa que otro usuario envió el mensaje como si viniera del propietario del buzón.|
 |Mensaje enviado mediante los permisos en nombre de|SendOnBehalf|Un mensaje se ha enviado con el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje a nombre del propietario del buzón. El mensaje indica al destinatario a nombre de quién se ha enviado el mensaje y quién lo ha enviado realmente.|
 |Reglas de la bandeja de entrada actualizadas desde el cliente de Outlook|UpdateInboxRules|El propietario de un buzón u otro usuario con acceso al buzón, modificó una regla de la bandeja de entrada en el Outlook del cliente.|
