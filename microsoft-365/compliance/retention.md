@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755589"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804763"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -240,6 +240,8 @@ Para comprender cómo y por qué se aplica una etiqueta de retención en lugar d
 - Las etiquetas de retención que se aplican automáticamente desde una directiva de aplicación automática se asignan implícitamente
 
 Una etiqueta de retención asignada explícitamente tiene prioridad sobre una etiqueta de retención asignada implícitamente. Para más información, consulte la sección [Los principios de la retención, ¿o qué tiene prioridad?](retention.md#the-principles-of-retention-or-what-takes-precedence)en esta página.
+
+Para SharePoint, las etiquetas de retención también se pueden asignar implícitamente al configurar una etiqueta predeterminada para todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint. En este escenario, una etiqueta de aplicación automática tiene prioridad sobre una etiqueta predeterminada. Si desea comprender todos los resultados cuando se usa una etiqueta predeterminada, vea la información de la sección [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
 
 #### <a name="monitoring-retention-labels"></a>Supervisar las etiquetas de retención
 

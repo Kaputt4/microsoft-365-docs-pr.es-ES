@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754144"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804545"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -51,19 +51,19 @@ Se pueden eliminar los siguientes archivos:
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive.
 
-Para admitir la retención, SharePoint y OneDrive crean una biblioteca de conservación de documentos si no existe una. Puede ver esta biblioteca en la página **Contenidos del sitio** en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no puede ver la biblioteca de suspensión para conservación porque solo es visible para los administradores de la colección de sitios.
+Para admitir la retención, SharePoint y OneDrive crean una biblioteca de suspensión para conservación si no existe una. Puede ver esta biblioteca en la página **Contenidos del sitio** en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no puede ver la biblioteca de suspensión para conservación porque solo es visible para los administradores de la colección de sitios.
   
 Si alguien intenta cambiar o eliminar un documento que está sujeto a la configuración de retención, se comprueba si el contenido se ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite a la persona cambiar o eliminar el contenido original. El contenido de una colección de sitios puede copiarse a la biblioteca de conservación de documentos, independientemente de la configuración de retención.
   
 Un trabajo de temporizador limpia periódicamente la biblioteca de suspensión para conservación. Este trabajo compara todo el contenido de la biblioteca de conservación de documentos con todas las consultas empleadas en la configuración de retención para este contenido. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, y la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que el contenido puede tardar hasta siete días en eliminarse.
   
-Este comportamiento se aplica al contenido que existe cuando se aplica la configuración de retención. Además, en el caso de las directivas de retención, el contenido nuevo que se cree o se agregue a la colección de sitios después de que se incluya en la directiva se conservará después de la eliminación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el[control de versiones](#how-retention-works-with-document-versions-in-a-site-collection).
+Este comportamiento se aplica al contenido que existe cuando se aplica la configuración de retención. Además, en el caso de las directivas de retención, el contenido nuevo que se cree o se agregue a la colección de sitios después de que se incluya en la directiva se conservará después de la eliminación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el[control de versiones](#how-retention-works-with-document-versions).
   
 Un usuario recibe un error si intenta eliminar una biblioteca, lista, carpeta o sitio que está sujeto a una directiva de retención. Un usuario puede eliminar una carpeta, si primero se mueven o eliminan los archivos en la carpeta que están sujetos a la directiva. Asimismo, en esta fase se crea una biblioteca de conservación de documentos y no cuando se crea una directiva de retención o se aplica una etiqueta de retención. Esto significa que para probar la retención, en primer lugar debe editar o eliminar un documento de un sitio sujeto a una directiva de retención o que tenga una etiqueta de retención aplicada y, a continuación, vaya a la biblioteca de conservación de documentos para ver la copia retenida.
   
 Cuando se asigna el contenido de una cuenta de OneDrive o un sitio de SharePoint a la configuración de retención, dependen de si la configuración de retención debe retener, eliminar, solo retener o eliminar.
 
-Cuando la configuración de retención se debe conservar y eliminar:
+Cuando los ajustes de retención son para retener y borrar:
 
 ![Diagrama del ciclo de vida de contenido en SharePoint y OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
@@ -90,24 +90,26 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 
 ## <a name="how-retention-works-for-onenote-content"></a>Cómo funciona la retención para el contenido de OneNote
 
-Cuando aplica una directiva de retención a una ubicación que incluye contenido de OneNote, las distintas secciones de OneNote son en realidad archivos diferentes. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
+Cuando aplica una directiva de retención a una ubicación que incluye contenido de OneNote, las distintas secciones de OneNote son a nivel de software archivos individuales. Esto significa que cada sección se retendrá y eliminará de forma individual, según la configuración de retención que especifique.
 
-## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
+## <a name="how-retention-works-with-document-versions"></a>Funcionamiento de una directiva de retención con versiones de documentos
 
-El versionado es una característica de todas las bibliotecas de documentos en SharePoint y OneDrive. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, consulte [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) y [Cómo funciona el control de versiones en las listas y bibliotecas](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+El control de versiones es una característica de todas las bibliotecas de documentos en SharePoint y OneDrive. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, consulte [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) y [Cómo funciona el control de versiones en las listas y bibliotecas](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-La configuración de conserva solo retiene todas las versiones de un documento en una colección de sitios de SharePoint o en una cuenta de OneDrive. Cuando se edita por primera vez un documento que está sujeto a una retención o que solo contiene configuraciones, se copia una versión del documento original a la biblioteca de conservación de documentos. Cuando se elimina un documento que está sujeto a una configuración de retención o de solo retención, todas las versiones se copian en la biblioteca de conservación de documentos si se habilita el control de versiones. Cada versión de un documento de la Biblioteca de conservación de documentos es un elemento independiente con un periodo de retención distinto:
-  
+Cuando un documento con versiones está sujeto a la configuración de retención que retiene el contenido, las versiones que se copian en la biblioteca de suspensión para conservación se encuentran como un elemento independiente. Si la configuración de retención se configura para eliminar al final del período de retención:
+
 - Si el período de retención se basa en el momento de la creación del contenido, cada versión tiene la misma fecha de caducidad que el documento original Todos los documentos originales y todas las versiones expiran al mismo tiempo.
 
-- Si el período de retención se basa en la fecha en que se modificó el contenido por última vez, cada versión tiene su propia fecha de caducidad según la fecha en que se modificó el documento original para crear esa versión. Los documentos originales y sus versiones expiran en forma independiente uno del otro.
+- Si el período de retención se basa en la fecha en que se modificó el contenido por última vez, cada versión tiene su propia fecha de caducidad según la fecha en que se modificó el documento original para crear esa versión. Los documentos originales y sus versiones expiran de forma independiente.
 
 > [!NOTE]
-> Las versiones preservadas de los documentos de SharePoint y OneDrive no se pueden buscar con las herramientas de eDiscovery.
+> Las versiones retenidas de los documentos de SharePoint y OneDrive no se pueden buscar con las herramientas de eDiscovery.
 
-En el caso de los elementos que están sujetos a las directivas de retención (o a una suspensión legal), los límites del control de versiones de la biblioteca de documentos se omiten hasta que se alcanza el período de retención del documento. En este escenario, las versiones antiguas no se purgan automáticamente y los usuarios no pueden eliminar versiones.
+Cuando la acción de retención es eliminar el documento, todas las versiones que no se encuentren en la biblioteca de suspensión para conservación se eliminarán al mismo tiempo de acuerdo con la versión actual.
 
-Este no es el caso de las etiquetas de retención cuando una directiva de retención no se aplica al sitio. En su lugar, se tienen en cuenta los límites del control de versiones, por lo que las versiones anteriores se eliminan automáticamente para dar lugar a nuevas versiones, pero los usuarios todavía no pueden eliminar versiones.
+En el caso de los elementos sujetos a las directivas de retención (o a una suspensión de eDiscovery), los límites del control de versiones de la biblioteca de documentos se omiten hasta que se alcanza el período de retención del documento (o se libera la suspensión de eDiscovery). En este escenario, las versiones antiguas no se purgan automáticamente y los usuarios no pueden eliminar versiones.
+
+Este no es el caso de las etiquetas de retención cuando el contenido está sujeto a una directiva de retención (o a una retención de eDiscovery). En su lugar, se tienen en cuenta los límites del control de versiones, por lo que las versiones anteriores se eliminan automáticamente para dar lugar a nuevas versiones, pero los usuarios todavía no pueden eliminar versiones.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización
 
