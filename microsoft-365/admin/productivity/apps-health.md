@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Los detalles de la tecnología de estado de Microsoft 365 apps experimentan una puntuación de productividad.
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795459"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804774"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Experiencias de tecnología de Microsoft 365, estado de las aplicaciones
 
@@ -112,3 +111,12 @@ Las siguientes columnas se presentan en la tabla en el nivel de usuario:
 - **Estado:**   La compatibilidad con aplicaciones de Microsoft 365 el estado de los dispositivos según el canal y la versión actuales.
 - **Versiones:**   Versiones actuales de las aplicaciones de Microsoft 365 en los dispositivos.
 - **n.º de dispositivos:**  Número de dispositivos.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Comunicación: experiencias de personas](communication.md) (artículo) \
+[Colaboración de contenido: experiencias de personas](content-collaboration.md) (artículo) \
+[Reuniones: experiencias de personas](meetings.md) (artículo) \
+[Movilidad: experiencias de personas](mobility.md) (artículo) \
+[Controles de privacidad para la puntuación de productividad](privacy.md) (artículo) \
+[Trabajo en equipo: experiencias de personas](teamwork.md) (artículo)

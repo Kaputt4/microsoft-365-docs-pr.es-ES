@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Detalles de la puntuación de la experiencia comunicación-personas.
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795069"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804660"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
@@ -160,3 +159,12 @@ En esta sección se proporcionan detalles a nivel de usuario de las actividades 
 - **Días usados @mention en el correo electrónico:** Número de días que el usuario envió un correo electrónico que contiene un @mention en los últimos 28 días.
 
 También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo exportar **botón** exportar. Tenga en cuenta que puede personalizar el conjunto de columnas de la vista seleccionando las columnas requeridas después de hacer clic en **elegir columnas** .
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Experiencia de la tecnología de Microsoft 365: estado](apps-health.md) de las aplicaciones (artículo) \
+[Colaboración de contenido: experiencias de personas](content-collaboration.md) (artículo) \
+[Reuniones: experiencias de personas](meetings.md) (artículo) \
+[Movilidad: experiencias de personas](mobility.md) (artículo) \
+[Controles de privacidad para la puntuación de productividad](privacy.md) (artículo) \
+[Trabajo en equipo: experiencias de personas](teamwork.md) (artículo)

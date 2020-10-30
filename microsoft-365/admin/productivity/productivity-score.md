@@ -18,14 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 3d014cd0eb3a3ceed3b3f3b48f126453e4ced193
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794970"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804737"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -43,25 +42,28 @@ Proporcionamos datos, información y recomendaciones en dos áreas:
 
     Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo y, con la libertad de trabajar en cualquier dispositivo, su productividad es más productiva y satisfactoria. La capacidad de comunicarse de una manera flexible hace que los usuarios sean más eficientes, capaces de formar mejores relaciones, por lo que su organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Experiencias tecnológicas:** La productividad depende de una tecnología fiable y con buen rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que le ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo. También proporcionamos acciones recomendadas para corregirlos, así como la información de conectividad de red de Microsoft 365 para su organización.
+- **Experiencias tecnológicas:** La productividad de su equipo depende de una tecnología fiable y con buen rendimiento, así como del uso eficaz de Microsoft 365. El [análisis de extremos](https://aka.ms/endpointanalytics) le ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y el software. Las acciones recomendadas ayudan a solucionar estos problemas. La información de conectividad de red 365 de Microsoft le ayudará a solucionar problemas de conectividad para su organización.
 
 Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
 
-La puntuación de productividad se basa en los resultados combinados de las categorías de personas y experiencias tecnológicas. Cada categoría se pondera equitativamente, con un total de 100 puntos. La mayor puntuación de productividad posible es de 500.
+La puntuación de productividad se basa en los resultados combinados de las categorías de personas y experiencias tecnológicas. Cada categoría se pondera equitativamente, con un total de 100 puntos. La mayor puntuación de productividad posible es de 800.
 
 ### <a name="score-categories"></a>Categorías de puntuación 
 
-- Colaboración de contenido (100 puntos)
 - Comunicación (100 puntos)
+- Reuniones (100 puntos)
+- Colaboración de contenido (100 puntos)
+- Trabajo en equipo (100 puntos)
 - Mobility (100 puntos)
 - Análisis de extremos (100 puntos)
 - Conectividad de red (100 puntos)
-- **Total posible = 500 puntos**
+- Estado de las aplicaciones de 365 de Microsoft (100 puntos)
+- **Total posible = 800 puntos**
  
- En cada categoría, identificamos patrones para actividades clave que son indicadores sobre cómo los usuarios usan los productos de 365 de Microsoft para colaborar, comunicarse y trabajar en todas las plataformas. Proporcionamos vistas de las actividades clave de 28 días y 180 días. También proporcionamos métricas auxiliares que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar los comportamientos y configuraciones subyacentes en los que puede actuar.
+ En cada categoría de puntuación, identificamos patrones para actividades clave que son indicadores sobre cómo los usuarios usan los productos de 365 de Microsoft para colaborar, comunicarse y trabajar en todas las plataformas. Proporcionamos vistas de las actividades clave de 28 días y 180 días. También proporcionamos métricas auxiliares que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar los comportamientos y configuraciones subyacentes que puede solucionar.
 
 ### <a name="products-included-in-productivity-score"></a>Productos incluidos en la puntuación de productividad 
 
@@ -72,7 +74,9 @@ La puntuación se actualiza diariamente y refleja las acciones del usuario compl
 
 ## <a name="pre-requisites"></a>Requisitos previos 
 
-Para que los usuarios experimenten datos, necesita una suscripción de Microsoft 365 para empresas o Office 365 para empresas, y necesita usar los servicios en la nube multiinquilino. Para obtener datos de análisis de extremos para el espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones.       Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre Microsoft Intune. 
+Para los datos de experiencias de personas, necesitará una suscripción de Microsoft 365 para empresas o Office 365 para empresas. Para los datos de análisis de extremos de su espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre Microsoft Intune. 
+> [!NOTE]
+> No se necesita una licencia para el análisis de Workplace para obtener las características de puntuación de productividad.
 
 Para ver la puntuación de productividad de su organización, debe tener uno de los siguientes roles: 
 
@@ -90,11 +94,11 @@ Puede tener acceso a la experiencia desde la Página principal de administració
 
 La página de inicio de la puntuación de productividad muestra el historial de puntuación y la puntuación totales y la información principal de cada categoría.
 
-![Página principal de puntuación de productividad](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Página de puntuación de productividad en informes.":::
 
 **La puntuación** se muestra como un valor porcentual y en puntos. Puede ver los puntos en el numerador y los puntos máximos posibles en el denominador.
 
-Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación con organizaciones como la suya. Para las categorías de experiencias de personas, la medida de Benchmark del mismo nivel se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto está compuesto por organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
+Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación con organizaciones como la suya. La referencia del mismo nivel para las categorías de experiencias de personas se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto de organizaciones se compone de organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
 
 El punto de referencia del punto de conexión del análisis de extremos incluye objetivos para el rendimiento de inicio de dispositivo y la configuración de software recomendada en función de los valores de la mediana agregada en todos los inquilinos.
 

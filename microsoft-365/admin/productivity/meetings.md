@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Detalles de las reuniones-personas experimenta la puntuación de productividad.
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795534"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804590"
 ---
 # <a name="meetings--people-experiences"></a>Reuniones: experiencias de personas
 
@@ -166,3 +165,12 @@ Las siguientes columnas se representan en la tabla en el nivel de usuario:
 - Solo las personas que tienen acceso a Microsoft Teams se consideran para cualquier evaluación.
 - Se excluyen los eventos de difusión y algunos eventos que no se etiquetan como una reunión o llamada.
 - Los eventos que comienzan con el uso compartido de pantalla entre participantes se clasifican como 1:1 llamadas (con 2 participantes) o llamadas de grupo (3 o más participantes).
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Experiencia de la tecnología de Microsoft 365: estado](apps-health.md) de las aplicaciones (artículo) \
+[Comunicación: experiencias de personas](communication.md) (artículo) \
+[Colaboración de contenido: experiencias de personas](content-collaboration.md) (artículo) \
+[Movilidad: experiencias de personas](mobility.md) (artículo) \
+[Controles de privacidad para la puntuación de productividad](privacy.md) (artículo) \
+[Trabajo en equipo: experiencias de personas](teamwork.md) (artículo)

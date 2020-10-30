@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Detalles de la colaboración del contenido-los usuarios experimentan una puntuación de productividad.
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795529"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804602"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
@@ -202,4 +201,13 @@ Las siguientes columnas se presentan en la tabla en el nivel de usuario:
 - **Archivos compartidos de forma externa:** El número de archivos en línea en OneDrive o SharePoint la persona que se compartió con otras personas externas a la organización en los últimos 28 días.
 - **Archivos adjuntos de archivo de correo electrónico:** Valor booleano que indica si la persona envió el correo electrónico con archivos (no en OneDrive o SharePoint) como datos adjuntos en los últimos 28 días.
 - **Archivos adjuntos en línea del correo electrónico:** Valor booleano que indica si la persona envió el correo electrónico con vínculos a archivos en línea (en OneDrive o SharePoint) como datos adjuntos en los últimos 28 días.
-- **Insertar vínculo a archivo en línea:** Valor booleano que indica si la persona envió el correo electrónico con vínculos a archivos en línea (en OneDrive o SharePoint) incrustados en el cuerpo del correo electrónico en los últimos 28 días.
+- **Insertar vínculo a archivo en línea:** Valor booleano que indica si la persona envió un correo electrónico con vínculos a archivos en línea (en OneDrive o SharePoint) incrustado en el cuerpo del correo electrónico en los últimos 28 días.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Experiencia de la tecnología de Microsoft 365: estado](apps-health.md) de las aplicaciones (artículo) \
+[Comunicación: experiencias de personas](communication.md) (artículo) \
+[Reuniones: experiencias de personas](meetings.md) (artículo) \
+[Movilidad: experiencias de personas](mobility.md) (artículo) \
+[Controles de privacidad para la puntuación de productividad](privacy.md) (artículo) \
+[Trabajo en equipo: experiencias de personas](teamwork.md) (artículo)
