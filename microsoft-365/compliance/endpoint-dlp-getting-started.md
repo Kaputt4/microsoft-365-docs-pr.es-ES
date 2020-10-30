@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430685"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779218"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introducción a la prevención de pérdida de datos de Endpoint (versión preliminar)
 
@@ -82,12 +82,23 @@ Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-cla
 Asegúrese de que los dispositivos con Windows 10 en los que planee implementar Endpoint DLP cumplan los siguientes requisitos.
 
 1. Debe estar ejecutando Windows 10 x64 compilación 1809 o posterior.
-2. Todos los dispositivos deben estar [unidos a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
-3. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+2. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware. Nota: no es necesario que ninguno de los componentes de Seguridad de Windows estén activos; puede ejecutar DLP en punto de conexión independiente del estado de Seguridad de Windows.
+
+3. Se instalan las siguientes actualizaciones de Windows. Nota: estas actualizaciones no son un requisito previo para incorporar un dispositivo a DLP en punto de conexión, pero contienen correcciones de problemas importantes y, por lo tanto, deben instalarse antes de usar el producto.
+
+    - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+    - Para Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
+    - For Windows 10 2004 - KB4568831, KB4577063
+    - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063 
+
+4. Todos los dispositivos deben estar [unidos a Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
+
+5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 ## <a name="onboarding-devices-into-device-management"></a>Incorporación de dispositivos a la administración de dispositivos
 
- Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
+Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
 
 Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, descargue el script apropiado y, luego, impleméntelo en esos dispositivos. Siga los pasos del [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
 
@@ -98,19 +109,26 @@ Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de cone
 En este escenario de implementación, incorporará dispositivos que aún no hayan sido incorporados y, además, solo quiere supervisar y proteger elementos confidenciales frente al uso compartido no intencionado en dispositivos con Windows 10.
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
-2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**. 
 
-   ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos** . 
+
+   > [!div class="mx-imgBorder"]
+   > ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
 
-3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. La lista estará vacía hasta que haya incorporado dispositivos.
-4. Elija **Incorporación** para iniciar el proceso de incorporación.
-5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos** . La lista estará vacía hasta que haya incorporado dispositivos.
 
-   ![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+4. Elija **Incorporación** para iniciar el proceso de incorporación.
+
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete** .
+
+   > [!div class="mx-imgBorder"]
+   > ![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
+
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
@@ -127,18 +145,27 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 En este escenario, Microsoft Defender para punto de conexión ya está implementada y existen puntos de conexión de los que se informa. Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puede seguir incorporando nuevos dispositivos a Endpoint DLP para ampliar la cobertura siguiendo el [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
-2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
-3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión. ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
+
+2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos** .
+
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos** . Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión.
+
+   > [!div class="mx-imgBorder"]
+   > ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
+   
 4. Elija **Incorporación** si necesita incorporar dispositivos adicionales.
-5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
+
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete** .
+
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
+
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
     - Incorporar equipos con Windows 10 usando un script local
     - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
 
-Una vez que se haya incorporado el punto de conexión, debería estar visible en la tabla **Dispositivos** y también empezar a informar de los registros de auditoría al **Explorador de actividad**.
+Una vez que se haya incorporado el punto de conexión, debería estar visible en la tabla **Dispositivos** y también empezar a informar de los registros de auditoría al **Explorador de actividad** .
 
 > [!NOTE]
 >Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
@@ -146,9 +173,11 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
 
 1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija Explorador de actividad.
+
 2. Consulte los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para tener acceso a todos los datos de los dispositivos con Endpoint y filtrarlos.
 
-![filtro de explorador de actividad filtro para dispositivos de punto de conexióin](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > [!div class="mx-imgBorder"]
+   > ![filtro de explorador de actividad filtro para dispositivos de punto de conexión](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad en el explorador de actividad, está listo para realizar el siguiente paso, donde puede crear directivas DLP que protegen los elementos confidenciales.
@@ -165,5 +194,5 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 - [Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Unido a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Dispositivos de Azure AD Unidos](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

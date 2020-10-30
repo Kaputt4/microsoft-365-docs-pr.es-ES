@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637012"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779125"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -48,13 +48,13 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso** .
 
 ::: moniker-end
 
@@ -130,19 +130,37 @@ Según la suscripción, estos son los informes disponibles.
   
 ::: moniker range="o365-worldwide"
 
-- [Actividad de Yammer](yammer-activity-report.md)
+- [Actividad de Yammer](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Uso de dispositivos en Yammer](yammer-device-usage-report.md)
+- [Actividad de Yammer para el gobierno de Estados Unidos](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Informe de actividad de los grupos de Yammer](yammer-groups-activity-report.md)
+- [Uso de dispositivos en Yammer](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Uso de dispositivos de Yammer para el gobierno de EE. UU.](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Informe de actividad de los grupos de Yammer](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Informe de actividad de los grupos de Yammer para el gobierno de EE. UU.](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -190,7 +208,7 @@ Si desea ocultar la información de nivel de usuario cuando está generando sus 
 
 2. Select **Informes** 
   
-3. En el panel **informes**, seleccione las opciones que desee y, a continuación, guarde los cambios.
+3. En el panel **informes** , seleccione las opciones que desee y, a continuación, guarde los cambios.
   
 La lista de usuarios será similar a la siguiente:
   

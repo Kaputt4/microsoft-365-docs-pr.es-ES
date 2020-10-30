@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 43bfe1b51b730dd41342f95a069645ff15a03437
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6b30c5689981adaf3eb7f4893a8acf0398ca2339
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755579"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774041"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -83,7 +83,7 @@ Para más información sobre las directivas de retención para Teams, consulte [
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Directivas de retención adicionales que se necesitan para Teams
 
-Teams es mucho más que solo chats y mensajes de canal. Si tiene equipos creados a partir de un grupo de Microsoft 365 (anteriormente grupo de Office 365), debe configurar una directiva de retención que incluya el grupo de Microsoft 365 mediante la ubicación **grupos de Office 365** . La directiva de retención se aplica al contenido del buzón, del sitio y de los archivos del grupo.
+Teams es mucho más que solo chats y mensajes de canal. Si tiene equipos creados a partir de un grupo de Microsoft 365 (anteriormente "grupo de Office 365"), debe configurar una directiva de retención que incluya el grupo de Microsoft 365 mediante la ubicación de **Grupos de Microsoft 365** . La directiva de retención se aplica al contenido del buzón, del sitio y de los archivos del grupo.
 
 Si tiene sitios de equipo que no estén conectados con un grupo de Microsoft 365, necesitará una directiva de retención que incluya las ubicaciones de los **sitios de SharePoint** o de las **cuentas de OneDrive** para conservar y eliminar archivos en Teams:
 
@@ -127,7 +127,7 @@ Para obtener más información sobre cómo funcionan las directivas de retenció
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Directivas de retención adicionales que se necesitan para admitir Yammer
 
-Yammer es más que solo mensajes de la comunidad y mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, a través de la ubicación de los **Grupos de Office 365** . 
+Yammer es más que solo mensajes de la comunidad y mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, mediante la ubicación de los **Grupos de Microsoft 365** . 
 
 Para conservar y eliminar los archivos almacenados en Yammer, necesitará una directiva de retención que incluya las ubicaciones de los **sitios de SharePoint** o de las **cuentas de OneDrive** :
 
@@ -156,7 +156,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
     Información específica de las ubicaciones:
     - [Correo electrónico de Exchange y carpetas públicas de Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [Sitios de SharePoint y cuentas de OneDrive](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Grupos de Office 365](#configuration-information-for-microsoft-365-groups)
+    - [Grupos de Microsoft 365](#configuration-information-for-microsoft-365-groups)
     - [Skype Empresarial](#configuration-information-for-skype-for-business)
 
 4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos** , especifique las opciones de configuración para conservar y eliminar el contenido.
@@ -171,13 +171,13 @@ La ubicación del **correo electrónico de Exchange** admite la retención para 
 
 Se incluyen los siguientes elementos de correo: mensajes de correo (incluidos los borradores) con los datos adjuntos, las tareas y los elementos del calendario que tienen una fecha de finalización y las notas. No se incluyen contactos, tareas o elementos del calendario que no tienen una fecha de finalización. El resto de los elementos almacenados en un buzón de correo, como los mensajes guardados de Skype y Teams, no se incluyen con esta ubicación. Dichos elementos cuentan con sus propias ubicaciones de retención.
 
-Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Para conservar el contenido de estos buzones, seleccione la ubicación **Grupos de Office 365** .
+Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Para conservar el contenido de estos buzones, seleccione la ubicación de **Grupos de Microsoft 365** .
 
 La ubicación de las **carpetas públicas de Exchange** aplica la configuración de retención a todas las carpetas públicas y no se puede aplicar en el nivel de carpeta o de buzón de correo.
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Información de configuración para los sitios de SharePoint y las cuentas de OneDrive
 
-Cuando elige la ubicación de los **sitios de SharePoint** , la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de grupo no conectados por grupos de Office 365 y en los sitios clásicos. Los sitios de equipos conectados por grupos de Office 365 no son compatibles con esta opción. En su lugar, use la ubicación **Grupos de Office 365** que corresponda con el contenido del buzón, el sitio y los archivos del grupo.
+Cuando elige la ubicación de los **sitios de SharePoint** , la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de equipo no conectados por grupos de Microsoft 365 y en los sitios clásicos. Los sitios de equipos conectados por grupos de Microsoft 365 no son compatibles con esta opción. En su lugar, use la ubicación de **Grupos de Microsoft 365** que corresponda con el contenido del buzón, el sitio y los archivos del grupo.
 
 Si bien la directiva de retención se aplica en el nivel de sitio, la configuración de retención solo se aplica a los documentos. La configuración de retención no se aplica a las estructuras de organización que contienen bibliotecas, listas y carpetas dentro del sitio.
 
@@ -192,9 +192,9 @@ Por ejemplo, para un usuario en el espacio empresarial de Contoso con un nombre 
 
 Para comprobar la sintaxis de su espacio empresarial e identificar las direcciones URL de los usuarios, consulte [Obtener una lista de todas las URL de OneDrive de usuario en su organización](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los grupos de Microsoft 365
+### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 
-Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **grupos de Office 365** . Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Además, aunque la ubicación **de correo electrónico de Exchangl** le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, recibe un error que indique que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
+Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **Grupos de Microsoft 365** . Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de **correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Además, aunque la ubicación **de correo electrónico de Exchangl** le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, recibe un error que indique que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
 Las directivas de retención que se aplican a un grupo de Microsoft 365 incluyen el buzón de grupo y el sitio de Teams, en caso de que se haya seleccionado un sitio de Teams en el momento en que se creó el grupo o se agregase posteriormente al grupo. Los archivos almacenados en el sitio de Teams se tratan en esta ubicación, pero no los mensajes de chats ni canales de Teams que tienen sus propias ubicaciones de directivas de retención.
 
