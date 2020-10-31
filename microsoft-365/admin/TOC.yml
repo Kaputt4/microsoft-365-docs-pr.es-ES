@@ -210,6 +210,8 @@
       items:
         - name: Supervisar la actividad de los usuarios mediante informes
           href: activity-reports/activity-reports.md
+        - name: Supervisar la productividad de los usuarios mediante la calificación de Productividad
+          href: productivity/productivity-score.md
         - name: Cambiar la información de contacto de la organización
           href: manage/change-address-contact-and-more.md
         - name: Actualizar la información de contacto de administrador
