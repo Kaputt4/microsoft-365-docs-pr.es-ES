@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Los administradores pueden aprender a usar las etiquetas de cuarentena para controlar lo que los usuarios pueden hacer a sus mensajes en cuarentena.
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819266"
+ms.locfileid: "48819745"
 ---
 # <a name="quarantine-tags"></a>Etiquetas de cuarentena
 
@@ -477,7 +477,7 @@ El permiso **Permitir remitente** ( _PermissionToAllowSender_ ) controla el acce
 
 Para obtener más información acerca de la lista de remitentes seguros, consulte [impedir el bloqueo de remitentes de confianza](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) y [usar Exchange Online PowerShell para configurar la colección de listas seguras en un buzón](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="block-sender-permission"></a>Permiso bloquear remitente
+#### <a name="block-sender-permission"></a>Permiso bloquear remitente
 
 El permiso **bloquear remitente** ( _PermissionToBlockSender_ ) controla el acceso al botón que permite a los usuarios agregar convenientemente el remitente del mensaje en cuarentena a la lista de remitentes bloqueados.
 
@@ -491,7 +491,7 @@ El permiso **bloquear remitente** ( _PermissionToBlockSender_ ) controla el acce
 
 Para obtener más información acerca de la lista de remitentes bloqueados, vea [bloquear mensajes de alguien](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) y [usar Exchange Online PowerShell para configurar la colección de listas seguras en un buzón](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-### <a name="delete-permission"></a>Permiso de eliminación
+#### <a name="delete-permission"></a>Permiso de eliminación
 
 El permiso de **eliminación** ( _PermissionToDelete_ ) controla la capacidad de los usuarios de eliminar sus mensajes (mensajes en los que el usuario es un destinatario) de la cuarentena.
 
@@ -501,7 +501,7 @@ El permiso de **eliminación** ( _PermissionToDelete_ ) controla la capacidad de
 
 - **Notificaciones de correo no deseado para el usuario final** : sin efecto.
 
-### <a name="preview-permission"></a>Permiso de vista previa
+#### <a name="preview-permission"></a>Permiso de vista previa
 
 El permiso de **vista previa** ( _PermissionToPreview_ ) controla la capacidad de los usuarios de obtener una vista previa de los mensajes en cuarentena.
 
