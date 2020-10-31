@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: beebb4a6fba9baf2770bee7e3bd7a7b5a0fed0b1
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201549"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816673"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -53,7 +53,7 @@ El primer paso consiste en crear un archivo CSV que contenga los datos de recurs
 
 El tipo de datos de recursos humanos que se va a importar depende de la Directiva de administración de riesgos de Insider y de la plantilla de directiva correspondiente que desea implementar. En la tabla siguiente se muestra qué tipo de datos de HR es necesario para cada plantilla de directiva:
 
-| **Plantilla de directiva**| **Tipo de datos HR**|
+|  Plantilla de directiva |  Tipo de datos HR |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
 | Robo de datos al pertenecer a los usuarios                   | Remesas de empleado                                                 |
 | Pérdidas de datos generales                              | No aplicable                                                        |
@@ -88,7 +88,7 @@ pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 
 En la tabla siguiente se describe cada una de las columnas del archivo CSV para los datos de retirada de empleados.
 
-| **Columna**  |  **Descripción**|
+|  Columna   |   Descripción |
 |:------------|:----------------|
 |**EmailAddress**| Especifica la dirección de correo electrónico (UPN) del usuario que ha finalizado.|
 | **ResignationDate** | Especifica la fecha en la que el usuario terminó oficialmente su empleo en la organización. Por ejemplo, puede ser la fecha en la que el usuario ha dado su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -107,7 +107,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level
 
 En la tabla siguiente se describe cada una de las columnas del archivo CSV para los datos de cambios en el nivel de trabajo.
 
-| **Columna**|**Descripción**|
+|  Columna | Descripción |
 |:--------- |:------------- |
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
 | **EffectiveDate** | Especifica la fecha en que se cambió oficialmente el nivel de trabajo del usuario. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -128,7 +128,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 En la tabla siguiente se describe cada una de las columnas del archivo CSV para los datos de revisión de rendimiento.
 
-| **Columna**|**Descripción**|
+|  Columna | Descripción |
 |:----------|:--------------|
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
 | **EffectiveDate** | Especifica la fecha en la que se informará oficialmente al usuario sobre el resultado de la revisión del rendimiento. Puede ser la fecha en la que finalizó el ciclo de revisión del rendimiento. Use el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -148,7 +148,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 En la tabla siguiente se describe cada una de las columnas del archivo CSV para los datos de revisión de rendimiento.
 
-| **Columna**| **Descripción**|
+|  Columna |  Descripción |
 |:----------|:---------------|
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
 | **EffectiveDate** | Especifica la fecha en la que se informará oficialmente al usuario sobre su plan de mejora del rendimiento. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -203,11 +203,11 @@ En función de los sistemas de RRHH de la organización y de cómo se exportan l
 
 El siguiente paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RRHH que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RRHH cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que ejecutó en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en el paso 3 y en el paso 4.
 
-- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente*)
+- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente* )
 
-- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente*)
+- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente* )
 
-- Identificador de inquilino (también denominado *identificador de directorio*)
+- Identificador de inquilino (también denominado *identificador de directorio* )
 
 Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, vea [registrar una aplicación con la plataforma de identidad de Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -219,29 +219,29 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **conectores de datos** en **HR**, haga clic en **Ver**.
+2. En la página **conectores de datos** en **HR** , haga clic en **Ver** .
 
-3. En la página **personalizada RH** , haga clic en **Agregar conector**.
+3. En la página **personalizada RH** , haga clic en **Agregar conector** .
 
-4. En la página **configurar la conexión** , realice lo siguiente y, a continuación, haga clic en **siguiente**:
+4. En la página **configurar la conexión** , realice lo siguiente y, a continuación, haga clic en **siguiente** :
 
-   a. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 2.
+   1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que creó en el paso 2.
 
-   b. Escriba un nombre para el conector de recursos humanos.
+   1. Escriba un nombre para el conector de recursos humanos.
 
-5. En la página escenarios de recursos humanos, seleccione uno o varios escenarios de RRHH para los que desea importar datos y, a continuación, haga clic en **siguiente**.
+5. En la página escenarios de recursos humanos, seleccione uno o varios escenarios de RRHH para los que desea importar datos y, a continuación, haga clic en **siguiente** .
 
-6. En la página método de asignación de archivos, seleccione una de las siguientes opciones y, a continuación, haga clic en **siguiente**.
+6. En la página método de asignación de archivos, seleccione una de las siguientes opciones y, a continuación, haga clic en **siguiente** .
 
-   - **Cargar un archivo de muestra**. Si selecciona esta opción, haga clic en **Cargar archivo de ejemplo** para cargar el archivo CSV que preparó en el paso 1. Esta opción le permite seleccionar rápidamente los nombres de columna en el archivo CSV desde una lista desplegable para asignarlos a los tipos de datos para los escenarios de recursos humanos que seleccionó anteriormente.
+   - **Cargar un archivo de muestra** . Si selecciona esta opción, haga clic en **Cargar archivo de ejemplo** para cargar el archivo CSV que preparó en el paso 1. Esta opción le permite seleccionar rápidamente los nombres de columna en el archivo CSV desde una lista desplegable para asignarlos a los tipos de datos para los escenarios de recursos humanos que seleccionó anteriormente.
 
    O
 
-   - **Proporcione manualmente los detalles de la asignación**. Si selecciona esta opción, tiene que escribir el nombre de las columnas en el archivo CSV para asignarlas a los tipos de datos para los escenarios de RRHH que seleccionó anteriormente.
+   - **Proporcione manualmente los detalles de la asignación** . Si selecciona esta opción, tiene que escribir el nombre de las columnas en el archivo CSV para asignarlas a los tipos de datos para los escenarios de RRHH que seleccionó anteriormente.
 
 7. En la página Detalles de la asignación de archivos, realice una de las siguientes acciones, en función de si ha cargado un archivo CSV de muestra y si está configurando el conector para un solo escenario de RRHH o para varios escenarios. Si ha cargado un archivo de muestra, no es necesario que escriba los nombres de las columnas. Puede seleccionarlos de una lista desplegable.
 
-    - Si seleccionó un solo escenario de RRHH en el paso anterior, escriba los nombres de encabezado de columna (también denominados *parámetros*) del archivo CSV que creó en el paso 1 en cada uno de los cuadros correspondientes. Los nombres de columna que escriba no distinguen entre mayúsculas y minúsculas, pero asegúrese de incluir espacios si los nombres de las columnas del archivo CSV incluyen espacios. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de los parámetros en el archivo CSV. Por ejemplo, en la siguiente captura de pantalla se muestran los nombres de parámetro del archivo CSV de ejemplo para el escenario de retirada de recursos humanos del empleado que se muestra en el paso 1.
+    - Si seleccionó un solo escenario de RRHH en el paso anterior, escriba los nombres de encabezado de columna (también denominados *parámetros* ) del archivo CSV que creó en el paso 1 en cada uno de los cuadros correspondientes. Los nombres de columna que escriba no distinguen entre mayúsculas y minúsculas, pero asegúrese de incluir espacios si los nombres de las columnas del archivo CSV incluyen espacios. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de los parámetros en el archivo CSV. Por ejemplo, en la siguiente captura de pantalla se muestran los nombres de parámetro del archivo CSV de ejemplo para el escenario de retirada de recursos humanos del empleado que se muestra en el paso 1.
 
     - Si seleccionó varios tipos de datos en el paso anterior, debe escribir el nombre de la columna de identificador que identificará el tipo de datos HR en el archivo CSV. Después de escribir el nombre de columna de identificador, escriba el valor que identifica este tipo de datos de HR y escriba los nombres de los encabezados de columna de los tipos de datos seleccionados de los archivos. CSV que creó en el paso 1 en cada uno de los cuadros correspondientes para cada tipo de datos seleccionado. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de columna en el archivo CSV.
 
@@ -251,11 +251,11 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    ![Página revisión con identificador de trabajo y vínculo a GitHub para obtener un script de ejemplo](../media/HRConnector_Confirmation.png)
 
-   a. **IDENTIFICADOR de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página de control flotante de los conectores.
+   1. **IDENTIFICADOR de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página de control flotante de los conectores.
 
-   b. **Vínculo al script de ejemplo.** Haga clic en **este vínculo para** ir al sitio de Github y acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para poder copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para que pueda tener acceso de nuevo al ejecutar el script. Este vínculo también está disponible en la página de control flotante de conectores.
+   1. **Vínculo al script de ejemplo.** Haga clic en **este vínculo para** ir al sitio de Github y acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para poder copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para que pueda tener acceso de nuevo al ejecutar el script. Este vínculo también está disponible en la página de control flotante de conectores.
 
-9. Haga clic en **Listo**.
+9. Haga clic en **Listo** .
 
    El nuevo conector se muestra en la lista de la ficha **conectores** .
 
@@ -263,7 +263,7 @@ Después de completar este paso, asegúrese de copiar el identificador de trabaj
 
    ![Página de control flotante para nuevo conector de recursos humanos](../media/HRConnectorWizard7.png)
 
-Si aún no lo ha hecho, puede copiar los valores del identificador de la **aplicación de Azure** y del identificador de trabajo del **conector**. Necesitará estos para ejecutar el script en el paso siguiente. También puede descargar el script de la página flotante (o descargarlo con el vínculo en el paso siguiente).
+Si aún no lo ha hecho, puede copiar los valores del identificador de la **aplicación de Azure** y del identificador de trabajo del **conector** . Necesitará estos para ejecutar el script en el paso siguiente. También puede descargar el script de la página flotante (o descargarlo con el vínculo en el paso siguiente).
 
 También puede hacer clic en **Editar** para cambiar el identificador de la aplicación de Azure o los nombres de encabezado de columna que ha definido en la página **asignación de archivos** .
 
@@ -291,7 +291,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    En la tabla siguiente se describen los parámetros que se deben usar con este script y los valores necesarios. La información que ha obtenido en los pasos anteriores se usa en los valores de estos parámetros.
 
-   |**Parámetro**|**Descripción**
+   | Parámetro | Descripción |
    |:-----|:-----|:-----|
    |`tenantId`|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 2. También puede obtener el identificador de inquilino de su organización en la hoja de **información general** del centro de administración de Azure ad. Se usa para identificar la organización.|
    |`appId` |Este es el identificador de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 2. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. | 
@@ -317,17 +317,17 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector de RRHH para mostrar la página de flotante, que contiene las propiedades y la información sobre el conector.
+2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector de RRHH para mostrar la página de flotante. Esta página contiene las propiedades y la información sobre el conector.
 
    ![Página de control flotante de conector de RRHH con propiedades y estado](../media/HRConnectorFlyout1.png)
 
-3. En **curso**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft. 
+3. En **curso** , haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft. 
 
    ![El archivo de registro del conector de recursos humanos muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
 
    El `RecordsSaved` campo indica el número de filas que se han cargado en el archivo CSV. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los `RecordsSaved` campos es 4, si el script cargó correctamente todas las filas en el archivo CSV.
 
-Si no ha ejecutado el script en el paso 4, en la **última importación**se muestra un vínculo para descargar el script. Puede descargar el script y, a continuación, seguir los pasos para ejecutar el script.
+Si no ha ejecutado el script en el paso 4, en la **última importación** se muestra un vínculo para descargar el script. Puede descargar el script y, a continuación, seguir los pasos para ejecutar el script.
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a>Opcional Paso 6: programar el script para que se ejecute automáticamente
 
@@ -335,41 +335,41 @@ Para asegurarse de que los datos de recursos humanos más recientes de su organi
 
 Puede usar la aplicación programador de tareas de Windows para ejecutar el script de forma automática cada día.
 
-1. En el equipo local, haga clic en el botón **Inicio** de Windows y, a continuación, escriba **programador de tareas**.
+1. En el equipo local, haga clic en el botón **Inicio** de Windows y, a continuación, escriba **programador de tareas** .
 
 2. Haga clic en la aplicación **programador de tareas** para abrirla.
 
-3. En la sección **acciones** , haga clic en **crear tarea**.
+3. En la sección **acciones** , haga clic en **crear tarea** .
 
-4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector de recursos humanos**. También puede Agregar una descripción opcional.
+4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector de recursos humanos** . También puede Agregar una descripción opcional.
 
-5. En **Opciones de seguridad**, haga lo siguiente:
+5. En **Opciones de seguridad** , haga lo siguiente:
 
-   a. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
+   1. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
 
-   b. Asegúrese de que la casilla **ejecutar con los privilegios más altos** está seleccionada.
+   1. Asegúrese de que la casilla **ejecutar con los privilegios más altos** está seleccionada.
 
-6. Seleccione la pestaña **desencadenadores** , haga clic en **nuevo**y, a continuación, realice las siguientes acciones:
+6. Seleccione la pestaña **desencadenadores** , haga clic en **nuevo** y, a continuación, realice las siguientes acciones:
 
-   a. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
+   1. En **configuración** , seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
 
-   b. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
+   1. En **Configuración avanzada** , asegúrese de que esté activada la casilla de verificación **habilitado** .
 
-   c. Haga clic en **Aceptar**.
+   1. Haga clic en **Aceptar** .
 
-7. Seleccione la pestaña **acciones** , haga clic en **nueva**y, a continuación, realice las siguientes acciones:
+7. Seleccione la pestaña **acciones** , haga clic en **nueva** y, a continuación, realice las siguientes acciones:
 
    ![Configuración de la acción para crear una nueva tarea programada para el script del conector de recursos humanos](../media/HRConnectorScheduleTask1.png)
 
-   a. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
+   1. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
 
-   b. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el cuadro: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. En el cuadro **programa/script** , haga clic en **examinar** , vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el cuadro: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
-   c. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
-   d. En el cuadro **iniciar en (opcional)** , pegue la ubicación de la carpeta del script que ejecutó en el paso 4. Por ejemplo, `C:\Users\contosoadmin\Desktop\Scripts`.
+   1. En el cuadro **iniciar en (opcional)** , pegue la ubicación de la carpeta del script que ejecutó en el paso 4. Por ejemplo, `C:\Users\contosoadmin\Desktop\Scripts`.
 
-   e. Haga clic en **Aceptar** para guardar la configuración de la nueva acción.
+   1. Haga clic en **Aceptar** para guardar la configuración de la nueva acción.
 
 8. En la ventana **crear tarea** , haga clic en **Aceptar** para guardar la tarea programada. Es posible que se le pida que escriba sus credenciales de cuenta de usuario.
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0251f783aebd1264facfcbaa23a9b7afa286833
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e790dfa986e6132295279e64321bda71a736a4b2
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774023"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816855"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -241,7 +241,7 @@ Para obtener más información acerca de Microsoft Teams para la administración
 Compartir un caso de administración de riesgos de Insiders permite a los investigadores y analistas de riesgos colaborar fácilmente con otras partes interesadas de cumplimiento de la organización. Puede compartir rápidamente un vínculo a un caso de administración de riesgos de Insider con partes interesadas externas del área de administración de casos. Para acceder al caso de la administración de riesgos de Insider desde el vínculo, las partes interesadas deben incluirse en cualquiera de los grupos de roles de administración de riesgos de Insider.
 
 >[!NOTE]
->La vista previa de ServiceNow finalizará el 30 2020 de noviembre y no continuará. Gracias por sus comentarios y soporte técnico mientras determinamos los siguientes pasos.
+>Gracias por sus comentarios y soporte técnico durante la vista previa del conector de ServiceNow. Hemos decidido finalizar la vista previa de ServiceNow Connector y dejar de admitir la compatibilidad con la administración de riesgos de Insider el 30 de noviembre de 2020. Estamos evaluando activamente métodos alternativos para proporcionar a los clientes integración de ServiceNow en la administración de riesgos de Insider.
 
 Están disponibles las siguientes opciones de uso compartido:
 

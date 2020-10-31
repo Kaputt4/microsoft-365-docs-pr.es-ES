@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
+ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656057"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819120"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -3162,9 +3162,9 @@ de siete a ocho dígitos más delimitadores, un dígito de control o una letra
 
 de siete a ocho dígitos más delimitadores:
 - uno a dos dígitos 
-- un punto 
+- un período opcional 
 - tres dígitos 
-- un punto 
+- un período opcional 
 - tres dígitos 
 - un guión 
 - un dígito o letra (no distingue entre mayúsculas y minúsculas) que es un dígito de control
@@ -3201,18 +3201,40 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
-- Número de identificación nacional 
-- tarjeta de identidad 
-- ID 
-- Determinación 
-- Rol Único Nacional 
-- REALIZAR 
-- Rol Único Tributario 
-- ESTANCARSE 
-- Cédula de Identidad 
-- Número De Identificación Nacional 
-- Tarjeta de identificación 
-- Identificación 
+- Cédula de identidad
+- identificación
+- national identification
+- national identification number
+- national id
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
+- REALIZAR
+- ESTANCARSE
+- tarjeta de identificación
+- Rol unico nacional
+- Rol unico tributario
+- REALIZAR #
+- ESTANCARSE #
+- nationaluniqueroleID #
+- identidad nacional
+- número de identificación
+- número de identidad
+- numero identificacion
+- identidad numero
+- Nº de identidad de chileno
+- Número de identidad de chileno
+- Identidad chileno #
+- Registro fiscal único
+- Rol tributary único
+- Rol de impuestos único
+- Número tributary único
+- Número nacional único
+- Rol nacional único
+- Rol nacional único
+- N.º de identidad de Chile
+- Número de identidad de Chile
+- Identidad de Chile #
 
    
 ## <a name="china-resident-identity-card-prc-number"></a>Número de tarjeta de identidad de residente de China (PRC)
@@ -12045,7 +12067,9 @@ tres letras, un espacio (opcional) y cuatro dígitos
 
 ### <a name="pattern"></a>Patrón
 
-tres letras (no distingue entre mayúsculas y minúsculas), un espacio (opcional) y cuatro dígitos
+- tres letras (no distinguen entre mayúsculas y minúsculas) excepto "I" y "O"
+- un espacio (opcional) 
+- cuatro dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -12058,27 +12082,38 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Se encuentra una palabra clave de Keyword_nz_terms.
 - Se supera la suma de comprobación.
 
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función Func_new_zealand_ministry_of_health_number encuentra contenido que coincide con el patrón.
+- Se supera la suma de comprobación.
+
 ```xml
-<!-- New Zealand Health Number -->
-<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- New Zealand Health Number -->
+    <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
-        <Any minMatches="1">
           <Match idRef="Keyword_nz_terms" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+       </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
-- NHI 
-- New Zealand 
-- Salud 
-- régimen 
-
+- NHI
+- New Zealand
+- Salud
+- régimen
+- Número de índice de salud nacional
+- número de NHI
+- NHI no.
+- NHI #
+- N.º de índice de salud nacional
+- Identificador de índice de salud nacional
+- Índice de salud nacional #
 
 ## <a name="new-zealand-social-wlefare-number"></a>Número de wlefare social de Nueva Zelanda
 Este tipo de información confidencial solo está disponible para su uso en:

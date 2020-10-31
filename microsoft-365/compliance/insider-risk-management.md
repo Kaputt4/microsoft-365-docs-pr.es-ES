@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774053"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816865"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -111,7 +111,7 @@ Al seleccionar un caso en el panel del caso, se abre el caso de investigación y
 
 ![Investigación de administración de riesgos de Insider](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se han investigado los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Si los usuarios infringen accidental o involuntariamente condiciones de Directiva, se puede enviar una notificación de aviso simple al usuario desde plantillas de notificación que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o dirigir al usuario a un entrenamiento o guía de refresco para ayudar a evitar un comportamiento arriesgado futuro. Para obtener más información, consulte [plantillas de aviso de administración de riesgos de Insider](insider-risk-management-notices.md).
 
@@ -122,7 +122,7 @@ En las situaciones más graves, es posible que necesite compartir la informació
 - **Integración de API de administración de office 365 (versión preliminar)** : la administración de riesgos de Insider admite la exportación de información de alertas a servicios de administración de eventos e información de seguridad (Siem) a través de las API de administración de Office 365 Tener acceso a la información de alerta en la plataforma lo mejor que se adapte a los procesos de riesgo de su organización le ofrece más flexibilidad para actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alertas con las API de administración 365 de Office, consulte [exportar alertas](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]
->La vista previa de ServiceNow finalizará el 30 2020 de noviembre y no continuará. Gracias por sus comentarios y soporte técnico mientras determinamos los siguientes pasos.
+>Gracias por sus comentarios y soporte técnico durante la vista previa del conector de ServiceNow. Hemos decidido finalizar la vista previa de ServiceNow Connector y dejar de admitir la compatibilidad con la administración de riesgos de Insider el 30 de noviembre de 2020. Estamos evaluando activamente métodos alternativos para proporcionar a los clientes integración de ServiceNow en la administración de riesgos de Insider.
 
 ## <a name="scenarios"></a>Escenarios
 

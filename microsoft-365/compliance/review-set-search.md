@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear y ejecutar una consulta en un conjunto de revisiones para organizar los datos para una revisión más eficiente en un caso de exhibición avanzada de documentos electrónicos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816723"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816573"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Consultar los datos de un conjunto de revisión
 
@@ -36,25 +36,25 @@ Para crear y ejecutar una consulta en los documentos de un conjunto de revisión
 
 ## <a name="building-a-review-set-query"></a>Creación de una consulta de conjunto de revisión
 
-Puede crear una consulta mediante una combinación de tarjetas de condición y lenguaje de consulta en la tarjeta de condición de palabras clave. También puede agrupar las tarjetas de condición como un bloque (denominado *grupo de condición*) para crear una consulta más compleja. Para obtener una lista y una descripción de las propiedades de metadatos que puede buscar, consulte [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Puede crear una consulta mediante una combinación de palabras clave, propiedades y condiciones en la condición Keywords. También puede agrupar condiciones como un bloque (denominado *grupo de condición* ) para crear una consulta más compleja. Para obtener una lista y una descripción de las propiedades de metadatos que puede buscar, consulte [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
-### <a name="condition-cards"></a>Tarjetas de condición
+### <a name="conditions"></a>Condiciones
 
-Cada campo de búsqueda de un conjunto de revisión tiene una tarjeta de condición correspondiente que puede usar para crear la consulta.
+Cada campo de búsqueda de un conjunto de revisión tiene una condición correspondiente que puede usar para crear la consulta.
 
-Hay varios tipos de tarjetas de condición:
+Hay varios tipos de condiciones:
 
-- FREETEXT: se usa una tarjeta de condición FREETEXT para los campos de texto, como el asunto. Puede enumerar varios términos de búsqueda separándolos con una coma.
+- FREETEXT: se usa una condición FREETEXT para campos de texto como Subject. Puede enumerar varios términos de búsqueda separándolos con una coma.
 
-- Fecha: se usa una tarjeta de condición de fecha para los campos de fecha como última fecha de modificación.
+- Date: se usa una condición de fecha para los campos de fecha como fecha de última modificación.
 
-- Opciones de búsqueda: una tarjeta de condición de opciones de búsqueda proporcionará una lista de valores posibles para el campo en particular en su conjunto de revisión. Se usa para los campos, como Sender, donde hay un número finito de valores posibles en su conjunto de revisión.
+- Opciones de búsqueda: una condición de opciones de búsqueda proporcionará una lista de valores posibles para el campo en particular en su conjunto de revisión. Se usa para los campos, como Sender, donde hay un número finito de valores posibles en su conjunto de revisión.
 
-- Palabra clave: una tarjeta de condición de palabra clave es una instancia específica de la tarjeta de condición FREETEXT que puede usar para buscar términos o usar el lenguaje de consulta de tipo KQL en. Consulte a continuación para obtener más detalles.
+- Palabra clave: una condición de palabra clave es una instancia específica de condición FREETEXT que puede usar para buscar términos o usar el lenguaje de consulta de tipo KQL en. Consulte a continuación para obtener más detalles.
 
 ### <a name="query-language"></a>Lenguaje de consulta
 
-Además de las tarjetas de condición, puede usar un lenguaje de consulta similar a tipo KQL en la tarjeta Keywords para crear la consulta. El lenguaje de consulta para las consultas set de revisión admite operadores booleanos estándar, como **and**, **or**, **Not**y **Near**. También admite caracteres comodín de un solo carácter (?) y un comodín de varios caracteres (*).
+Además de las condiciones, puede usar un lenguaje de consulta similar a tipo KQL en la condición Keywords para crear la consulta. El lenguaje de consulta para las consultas set de revisión admite operadores booleanos estándar, como **and** , **or** , **Not** y **Near** . También admite caracteres comodín de un solo carácter (?) y un comodín de varios caracteres (*).
 
 ## <a name="filters"></a>Filtros
 
