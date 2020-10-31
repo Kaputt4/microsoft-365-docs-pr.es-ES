@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787586"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816763"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -459,7 +459,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Preguntas más frecuentes sobre los eventos FileAccessed y FilePreviewed
 
-**¿Podrían las actividades no relacionadas con el usuario desencadenar registros de auditoría FilePreviewed que contengan un agente de usuario como "OneDriveMpc-Transform_Thumbnail"?**
+**¿Podrían algunas actividades no relacionadas con el usuario desencadenar los registros de auditoría de FilePreviewed que contienen un agente de usuario como "OneDriveMpc-Transform_Thumbnail"?**
 
 No sabemos de escenarios donde las acciones no relacionadas con el usuario generen eventos como estos. Las acciones de usuario como abrir una tarjeta de perfil de usuario (haciendo clic en su nombre o dirección de correo electrónico en un mensaje en Outlook en la Web) generan eventos similares.
 
@@ -893,7 +893,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |:-----|:-----|:-----|
 |Comentario creado|CreateComment|El propietario del formulario ha añadido comentarios o puntuaciones a un cuestionario.|
 |Formulario creado|CreateForm|Un nuevo formulario ha sido creado por el propietario.|
-|Formulario editado|EditForm|Al crear, eliminar o editar una pregunta, el propietario del formulario lo edita. <br><br>La propiedad EditOperation: La cadena indica el nombre de la operación de edición. Las operaciones posibles son: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage y ChangeTheme.  <br><br>La mayoría de los nombres de las operaciones se explican por sí solos. <br><br>FormImage incluye cualquier lugar dentro de los formularios en los que el usuario pueda subir una imagen, como en la cadena de consulta o como tema en la imagen de fondo.|
+|Formulario editado|EditForm|Al crear, eliminar o editar una pregunta, el propietario del formulario lo edita. La propiedad *EditOperation:string* indica el nombre de la operación de edición. Las posibles operaciones son:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>-UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>-Cambiar tema <br><br>FormImage incluye cualquier lugar dentro de los formularios en los que el usuario pueda subir una imagen, como en la cadena de consulta o como tema en la imagen de fondo.|
 |Formulario movido|MoveForm|Un formulario ha sido movido por el propietario. <br><br>La propiedad DestinationUserId: la cadena indica el ID de usuario de la persona que ha movido el formulario. La propiedad NewFormId: la cadena es el nuevo ID para el formulario recién copiado.|
 |Formulario eliminado|DeleteForm|Un formulario ha sido eliminado por el propietario. Esto incluye SoftDelete (eliminar la opción utilizada y mover el formulario a la papelera de reciclaje) y HardDelete (Se vacía la papelera de reciclaje).|
 |Formulario visto (tiempo de diseño)|ViewForm|Un formulario existente ha sido abierto por el propietario para su edición.|
@@ -912,7 +912,8 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Respuesta vista|ViewResponse|El propietario del formulario visualiza una respuesta concreta. <br><br>La propiedad ResponseId:string y la propiedad ResponderId:string indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad de ResponderId será nula.|
 |Vínculo de resumen creado|GetSummaryLink|El propietario del formulario ha creado un vínculo de resumen de resultados para ser compartidos.|
 |Vínculo de resumen eliminado|DeleteSummaryLink|El enlace de resumen de resultados ha sido eliminado por el propietario del formulario.|
-|Estado de phishing actualizado del formulario|UpdatePhishingStatus|Este evento se registra siempre que el valor detallado del estado de seguridad interna haya cambiado, independientemente de si ha cambiado el estado de seguridad final (por ejemplo, el formulario ahora se encuentra Cerrado o Abierto). Esto significa que usted puede ver eventos duplicados sin un cambio final en el Estado de Seguridad.|
+|Estado de phishing actualizado del formulario|UpdatePhishingStatus|Este evento se registra cada vez que se cambie el valor detallado del estado de seguridad interna, independientemente de que ha cambiado el estado de seguridad final (por ejemplo, el formulario ahora está cerrado o abierto). Esto significa que usted puede ver los eventos duplicados sin un cambio final en el Estado de Seguridad. Los posibles valores de estado de este evento son:<br/>-Deseche el <br/>-Derribado por la administración <br/>-Administrador desbloqueado <br/>-Bloqueado automáticamente <br/>-Desbloqueado automáticamente <br/>-El cliente informó <br/>-Restablecer cliente notificado|
+|Estado de phising de usuario actualizado|UpdateUserPhishingStatus|Este evento se registra cuando se cambia el valor del estado de seguridad de usuario. El valor del estado del usuario en el registro de auditoría es **confirmado como Phisher** cuando el usuario ha creado un formulario de phishing que ha sido retirado por el equipo de seguridad de Microsoft Online. Si un administrador desbloquea al usuario, el valor de estado del usuario se establece en **Restablecer como usuario normal** .|
 |Invitación a Forms Pro enviada|ProInvitation|El usuario hace clic para activar la versión de prueba Pro.|
 |Configuración de formulario actualizada|UpdateFormSetting|La configuración del formulario ha sido actualizada por el propietario. <br><br>La propiedad FormSettingName: la cadena indica el nombre y el nuevo valor de la configuración.|
 |Configuración del usuario actualizada |UpdateUserSetting|La configuración del usuario ha sido actualizada por el propietario del formulario. <br><br>La propiedad UserSettingName: la cadena indica el nombre y el nuevo valor de la configuración|
@@ -922,7 +923,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
 
-Forms admite la colaboración al diseñar formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor* . Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario. 
+Forms es compatible con la colaboración cuando se diseñan formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor* . Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario.
 
 En la siguiente tabla se describen las actividades y la información de auditoría del registro de auditoría en relación con las actividades realizadas por los coautores y respondedores anónimos.
 
@@ -944,9 +945,9 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 |:-----|:-----|:-----|
 |Etiqueta de confidencialidad aplicada al sitio|SensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un sitio de SharePoint o Teams.|
 |Etiqueta de confidencialidad eliminada del sitio|SensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un sitio de SharePoint o Teams.|
-|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento mediante Office en la web o una directiva de etiquetado automático.|
-|Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un documento mediante Office en la web o una directiva de etiquetado automático.|
-|Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha eliminado una etiqueta de confidencialidad de un documento mediante Office en la web o una directiva de etiquetado automático.|
+|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Ha aplicado una etiqueta de confidencialidad a un documento con Office en la web o con una directiva de etiquetado.|
+|Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se aplicó una etiqueta de sensibilidad diferente a un documento mediante el uso de Office en la web o una directiva de auto etiquetado.|
+|Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Una etiqueta de sensibilidad fue eliminada de un documento mediante el uso de Office en la web o una directiva de auto etiquetado.|
 ||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Actividades de las directivas y etiquetas de retención
