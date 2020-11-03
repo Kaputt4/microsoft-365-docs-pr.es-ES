@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199776"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846278"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -65,7 +65,7 @@ Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la a
 
 - Cuando se usa la plantilla de **robo de datos mediante el robo de datos** , se debe configurar un conector de Microsoft 365 de RRHH para que importe periódicamente información sobre la retirada y la fecha de finalización de los usuarios de la organización. Consulte el artículo [importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de 365 de RRHH de Microsoft para su organización.
 - Cuando se usan plantillas de **pérdida de datos** , debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de la organización y recibir alertas de riesgo de Insider para alertas de directiva DLP de gravedad alta. Consulte el artículo sobre cómo [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para su organización.
-- Al usar plantillas de **infracción de directivas de seguridad** , debe habilitar la protección contra amenazas avanzada de Microsoft defender (ATP) para la integración de administración de riesgos de Insider en el centro de seguridad de defender para importar las alertas de infracción de seguridad. Consulte el artículo [Configure Advanced Features in Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) para obtener una guía paso a paso para habilitar la integración de Microsoft defender ATP con la administración de riesgos de Insider.
+- Al usar plantillas de **infracción de directivas de seguridad** , debe habilitar Microsoft defender for Endpoint for Insider Management Management en el centro de seguridad de defender para importar las alertas de infracción de seguridad. Consulte el artículo [Configure Advanced Features in Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) para obtener instrucciones paso a paso sobre cómo habilitar defender para la integración de extremos con la administración de riesgos de Insider.
 - Al usar plantillas de **usuario descontentos** , debe configurar un conector de Microsoft 365 de RRHH para que importe periódicamente información de estado de disminución de rendimiento o degradación para los usuarios de la organización. Consulte el artículo [importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de 365 de RRHH de Microsoft para su organización.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Probar con un grupo pequeño de usuarios en un entorno de producción

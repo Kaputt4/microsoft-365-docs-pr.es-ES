@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464079"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846453"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -59,7 +59,7 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 |        |[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Habilita la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPados o Android.|
 |        |[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|
 |        |[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Aplica la administración de Intune de los equipos con Windows o MacOS.|
-|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión sea *bajo*, *medio*o *alto*](#require-mfa-based-on-sign-in-risk)| |
+|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión sea *bajo* , *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Requerir equipos *y* dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos PC (Windows o Mac OS) y teléfonos o tabletas (iOS, iPados o Android).|
 |**Extremadamente regulado**|[Requerir *siempre* MFA](#require-mfa-based-on-sign-in-risk)|
 | | | |
@@ -100,7 +100,7 @@ Una vez registrados los usuarios, puede solicitar MFA para iniciar sesión con u
 
 1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales.
 2. En la lista de servicios de Azure, elija **Azure Active Directory**.
-3. En la lista **administrar** , elija **seguridad**y, después, elija **acceso condicional**.
+3. En la lista **administrar** , elija **seguridad** y, después, elija **acceso condicional**.
 4. Elija **nueva Directiva** y escriba el nombre de la nueva Directiva.
 
 En las tablas siguientes se describen las opciones de configuración de directivas de acceso condicional para requerir MFA en función del riesgo de inicio de sesión.
@@ -109,9 +109,9 @@ En la sección **asignaciones** :
 
 |Configuración|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
-||Excluir| **Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
-|Aplicaciones o acciones en la nube| **Las aplicaciones en la nube > incluyen** | **Seleccione aplicaciones**: seleccione las aplicaciones a las que quiere aplicar esta Directiva. Por ejemplo, seleccione Exchange Online.||
+|Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos** : seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
+||Excluir| **Usuarios y grupos** : seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
+|Aplicaciones o acciones en la nube| **Las aplicaciones en la nube > incluyen** | **Seleccione aplicaciones** : seleccione las aplicaciones a las que quiere aplicar esta Directiva. Por ejemplo, seleccione Exchange Online.||
 |Condiciones| | |Configure las condiciones específicas de su entorno y necesidades.|
 ||Riesgo de inicio de sesión||Vea las instrucciones de la tabla siguiente.|
 |||||
@@ -120,7 +120,7 @@ En la sección **asignaciones** :
 
 Aplique la configuración del nivel de riesgo en función del nivel de protección de destino.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
 |:---------|:-----|:----|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alta, media, baja|Compruebe los tres.|
@@ -129,7 +129,7 @@ Aplique la configuración del nivel de riesgo en función del nivel de protecci�
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |:---|:---------|:-----|:----|
 |Conceder|**Conceder acceso**| | Select |
 |||**Requerir multi-factor Authentication**| Check |
@@ -138,7 +138,7 @@ En la sección **controles de acceso** :
 
 Elija **seleccionar** para guardar la configuración de **concesión** .
 
-Por último, seleccione **activado** para **Habilitar Directiva**y, a continuación, elija **crear**.
+Por último, seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
 
 También considere la posibilidad de usar la herramienta [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la Directiva.
 
@@ -152,15 +152,15 @@ En la sección **asignaciones** :
 
 |Configuración|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
-||Excluir| **Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
-|Aplicaciones o acciones en la nube|**Las aplicaciones en la nube > incluyen**| **Seleccione aplicaciones**: seleccione las aplicaciones correspondientes a los clientes que no admiten la autenticación moderna.||
+|Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos** : seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
+||Excluir| **Usuarios y grupos** : seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
+|Aplicaciones o acciones en la nube|**Las aplicaciones en la nube > incluyen**| **Seleccione aplicaciones** : seleccione las aplicaciones correspondientes a los clientes que no admiten la autenticación moderna.||
 |Condiciones| **Aplicaciones cliente** | Elija **sí** para **configurar** <br> Desactivar las marcas de verificación para **exploradores** y **aplicaciones móviles y clientes de escritorio** | |
 ||||
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |:---|:---------|:-----|:----|
 |Conceder|**Bloquear acceso**| | Select |
 ||**Exigir todos los controles seleccionados** ||Select|
@@ -168,7 +168,7 @@ En la sección **controles de acceso** :
 
 Elija **seleccionar** para guardar la configuración de **concesión** .
 
-Por último, seleccione **activado** para **Habilitar Directiva**y, a continuación, elija **crear**.
+Por último, seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
 
 Considere la posibilidad de usar la herramienta [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la Directiva.
 
@@ -182,7 +182,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la sección **asignaciones** :
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |:---|:---------|:-----|:----|
 |Usuarios|Incluir|**Todos los usuarios**|Select|
 |Riesgo de usuario| **Alto**||Select|
@@ -190,15 +190,15 @@ En la sección **asignaciones** :
 
 En la segunda sección **asignaciones** :
 
-| Tipo | Propiedades | Valores                  | Acción |
+| Tipo | Propiedades | Valores                  | Action |
 |:-----|:-----------|:------------------------|:------|
-| Acceso | **Permitir acceso** |  | Select  |
+| Access | **Permitir acceso** |  | Select  |
 |      |     | **Exigir cambio de contraseña** | Check  |
 |||||
 
 Elija **listo** para guardar la configuración de **acceso** .
 
-Por último, seleccione **activado** para **exigir Directiva**y, a continuación, elija **Guardar**.
+Por último, seleccione **activado** para **exigir Directiva** y, a continuación, elija **Guardar**.
 
 Considere la posibilidad de usar la herramienta [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la Directiva.
 
@@ -282,24 +282,24 @@ Para obtener instrucciones paso a paso sobre cómo crear directivas de cumplimie
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Configuración recomendada para Windows 10 y versiones posteriores
 
-Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y versiones posteriores, tal como se ha configurado en el **paso 2: configuración de cumplimiento**, del proceso de creación de la Directiva.
+Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y versiones posteriores, tal como se ha configurado en el **paso 2: configuración de cumplimiento** , del proceso de creación de la Directiva.
 
-Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows**, vea esta tabla.
+Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows** , vea esta tabla.
 
-|Propiedades|Valor|Acción|
+|Propiedades|Valor|Action|
 |:---------|:-----|:----|
 |Requerir BitLocker|Obligatoria| Select |
 |Requerir el arranque seguro para habilitarse en el dispositivo|Obligatoria| Select |
 |Requerir integridad de código|Obligatoria| Select |
 ||||
 
-Para **las propiedades de dispositivo**, especifique los valores adecuados para las versiones de sistema operativo en función de las directivas de seguridad y de ti.
+Para **las propiedades de dispositivo** , especifique los valores adecuados para las versiones de sistema operativo en función de las directivas de seguridad y de ti.
 
-Para el **cumplimiento del administrador de configuración**, seleccione **requerir**.
+Para el **cumplimiento del administrador de configuración** , seleccione **requerir**.
 
-Para la **seguridad del sistema**, vea esta tabla.
+Para la **seguridad del sistema** , vea esta tabla.
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |:---|:---------|:-----|:----|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
 ||Contraseñas sencillas|Bloquear|Select|
@@ -319,11 +319,11 @@ Para la **seguridad del sistema**, vea esta tabla.
 ||Protección en tiempo real|Obligatoria|Select <br>Solo se admite en el escritorio de Windows 10|
 |||||
 
-**ATP de Microsoft Defender**
+**Microsoft Defender para punto de conexión**
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |:---|:---------|:-----|:----|
-|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano|Select|
+|Microsoft defender para reglas de extremo|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano|Select|
 |||||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
@@ -334,22 +334,22 @@ Para requerir equipos compatibles:
 
 1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales.
 2. En la lista de servicios de Azure, elija **Azure Active Directory**.
-3. En la lista **administrar** , elija **seguridad**y, después, elija **acceso condicional**.
+3. En la lista **administrar** , elija **seguridad** y, después, elija **acceso condicional**.
 4. Elija **nueva Directiva** y escriba el nombre de la nueva Directiva.
 
-5. En **tareas**, elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
+5. En **tareas** , elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
 
-6. En **tareas**, elija **aplicaciones o acciones en la nube**.
+6. En **tareas** , elija **aplicaciones o acciones en la nube**.
 
-7. Para **incluir**, elija **seleccionar aplicaciones > seleccionar**y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
+7. Para **incluir** , elija **seleccionar aplicaciones > seleccionar** y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
 
-8. Para requerir equipos compatibles (pero no teléfonos y tabletas compatibles), en **asignaciones**, elija **condiciones > plataformas de dispositivos**. Seleccione **sí** para **configurar**. Elija  **seleccionar plataformas de dispositivos**, seleccione **Windows** y **MacOS**y, a continuación, elija **listo**.
+8. Para requerir equipos compatibles (pero no teléfonos y tabletas compatibles), en **asignaciones** , elija **condiciones > plataformas de dispositivos**. Seleccione **sí** para **configurar**. Elija  **seleccionar plataformas de dispositivos** , seleccione **Windows** y **MacOS** y, a continuación, elija **listo**.
 
-9. En **controles de acceso**, elija **conceder** .
+9. En **controles de acceso** , elija **conceder** .
 
 10. Elija **conceder acceso** y, a continuación, compruebe que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**. Cuando termine, elija **seleccionar**. 
 
-10. Seleccione **activado** para **Habilitar Directiva**y, a continuación, elija **crear**.
+10. Seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
 
 >[!Note]
 >Asegúrese de que el dispositivo es compatible antes de habilitar esta Directiva. De lo contrario, podría obtener el bloqueo y no podrá cambiar esta Directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.
@@ -361,20 +361,20 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 1. Vaya al [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales.
 2. En la lista de servicios de Azure, elija **Azure Active Directory**.
-3. En la lista **administrar** , elija **seguridad**y, después, elija **acceso condicional**.
+3. En la lista **administrar** , elija **seguridad** y, después, elija **acceso condicional**.
 4. Elija **nueva Directiva** y escriba el nombre de la nueva Directiva.
 
-5. En **tareas**, elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
+5. En **tareas** , elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
 
-6. En **tareas**, elija **aplicaciones o acciones en la nube**.
+6. En **tareas** , elija **aplicaciones o acciones en la nube**.
 
-7. Para **incluir**, elija **seleccionar aplicaciones > seleccionar**y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
+7. Para **incluir** , elija **seleccionar aplicaciones > seleccionar** y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
 
-8. En **controles de acceso**, elija **conceder** .
+8. En **controles de acceso** , elija **conceder** .
 
 9. Elija **conceder acceso** y, a continuación, compruebe que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**. Cuando termine, elija **seleccionar**. 
 
-10. Seleccione **activado** para **Habilitar Directiva**y, a continuación, elija **crear**.
+10. Seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
 
 >[!Note]
 >Asegúrese de que el dispositivo es compatible antes de habilitar esta Directiva. De lo contrario, podría obtener el bloqueo y no podrá cambiar esta Directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.

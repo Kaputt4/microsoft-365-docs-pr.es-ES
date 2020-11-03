@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262222"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846233"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -34,7 +34,7 @@ Los dispositivos llegarán con una imagen de firma y, a continuación, se unirá
 
 En esta tabla se resaltan las directivas predeterminadas que se aplican a todos los dispositivos de escritorio administrados por Microsoft durante el aprovisionamiento de dispositivos. Se revertirán todos los cambios detectados no aprobados por el equipo de operaciones de escritorio administrado por Microsoft para objetos administrados por el escritorio administrado por Microsoft.
 
-Directiva | Descripción
+Directiva | Description
 --- | ---
 Línea de base de seguridad | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) para MDM está configurado para todos los dispositivos de escritorio administrados por Microsoft. Esta línea base es la configuración estándar del sector. Se publica, se prueba de forma pública y los expertos en seguridad de Microsoft lo han revisado para mantener seguras los dispositivos de escritorio y las aplicaciones administrados por Microsoft en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas del panorama de la amenaza de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en los dispositivos de escritorio administrados por Microsoft con cada actualización de características de Windows 10.<br><br>Para obtener más información, vea [líneas de base de seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
 Plantilla de seguridad recomendada para escritorio administrado de Microsoft | Un conjunto de cambios recomendados en la línea de base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el apéndice de seguridad](#security-addendum). Las actualizaciones del anexo de Directiva se producen según sea necesario.  
@@ -53,5 +53,5 @@ Conexiones de uso medido | De forma predeterminada, las actualizaciones en conex
  ### <a name="additional-security-policies"></a>Directivas de seguridad adicionales
 
  Estas directivas se agregan para aumentar la seguridad de las industrias altamente reguladas. 
- - **Supervisión de seguridad**: Microsoft realizará un seguimiento de los dispositivos con la [protección contra amenazas avanzada de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si se detecta una amenaza, Microsoft lo notifica al cliente, aísla el dispositivo y rectifica el problema de forma remota. 
- - **Deshabilitar PowerShell V2**: Microsoft quitó PowerShell V2 en agosto de 2017. Esta característica se ha deshabilitado en todos los dispositivos de escritorio administrados por Microsoft. Para obtener más información sobre este cambio, consulte [Windows PowerShell 2,0 deprecated](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).
+ - **Supervisión de seguridad** : Microsoft supervisará los dispositivos con [Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Si se detecta una amenaza, Microsoft lo notifica al cliente, aísla el dispositivo y rectifica el problema de forma remota. 
+ - **Deshabilitar PowerShell V2** : Microsoft quitó PowerShell V2 en agosto de 2017. Esta característica se ha deshabilitado en todos los dispositivos de escritorio administrados por Microsoft. Para obtener más información sobre este cambio, consulte [Windows PowerShell 2,0 deprecated](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

@@ -25,26 +25,26 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos seguros en Office 365 Advanced Threat Protection (ATP) para proteger su organización de los ataques de suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos seguros en defender para Office 365 para proteger su organización del phishing y otros ataques que usan direcciones URL malintencionadas.
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806731"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846061"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Vínculos seguros en la ATP de Office 365
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Si está usando Outlook.com, Microsoft 365 Family o Microsoft 365 personal, y está buscando información sobre Safelinks en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen [Microsoft defender para Office 365](office-365-atp.md). Si está usando Outlook.com, Microsoft 365 Family o Microsoft 365 personal, y está buscando información sobre Safelinks en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Vínculos seguros es una característica de la [protección contra amenazas avanzada de Office 365](office-365-atp.md) que proporciona el análisis y la reescritura de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y la comprobación del tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. El análisis de vínculos seguros se produce además de la protección normal contra el [correo no deseado y antimalware](anti-spam-and-anti-malware-protection.md) en los mensajes de correo electrónico entrantes en Exchange Online Protection (EOP). El análisis de vínculos seguros puede ayudarle a proteger su organización de vínculos malintencionados que se usan en suplantación de identidad (phishing) y otros ataques.
+Vínculos seguros es una característica de [defender para Office 365](office-365-atp.md) que proporciona el análisis y la reescritura de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y la comprobación del tiempo de clic de direcciones URL y vínculos en mensajes de correo electrónico y otras ubicaciones. El análisis de vínculos seguros se produce además de la protección normal contra el [correo no deseado y antimalware](anti-spam-and-anti-malware-protection.md) en los mensajes de correo electrónico entrantes en Exchange Online Protection (EOP). El análisis de vínculos seguros puede ayudarle a proteger su organización de vínculos malintencionados que se usan en suplantación de identidad (phishing) y otros ataques.
 
 La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 
-- **Mensajes de correo electrónico** : la protección de vínculos seguros para vínculos en mensajes de correo electrónico se controla mediante directivas de vínculos seguros. No hay ninguna directiva de vínculos a prueba de errores predeterminada, **por lo que para obtener la protección de vínculos seguros en los mensajes de correo electrónico, debe crear una o varias directivas de vínculos a prueba** de errores. Para obtener instrucciones, consulte [configurar directivas de vínculos seguros en ATP](set-up-atp-safe-links-policies.md).
+- **Mensajes de correo electrónico** : la protección de vínculos seguros para vínculos en mensajes de correo electrónico se controla mediante directivas de vínculos seguros. No hay ninguna directiva de vínculos a prueba de errores predeterminada, **por lo que para obtener la protección de vínculos seguros en los mensajes de correo electrónico, debe crear una o varias directivas de vínculos a prueba** de errores. Para obtener instrucciones, consulte [configurar directivas de vínculos seguros en Microsoft defender para Office 365](set-up-atp-safe-links-policies.md).
 
   Para obtener más información acerca de la protección de vínculos seguros para los mensajes de correo electrónico, consulte la sección [configuración de vínculos seguros para los mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.
 
@@ -52,7 +52,7 @@ La protección de vínculos seguros está disponible en las siguientes ubicacion
 
   Para obtener más información acerca de la protección de vínculos seguros en Teams, consulte la sección [configuración de vínculos seguros para Microsoft Teams](#safe-links-settings-for-microsoft-teams) más adelante en este tema.
 
-- **Office 365 apps** : la protección de vínculos seguros para aplicaciones de Office 365 está disponible en los AP de escritorio, móviles y Web admitidos. Puede **configurar** la protección de vínculos seguros para las aplicaciones de Office 365 en la configuración global que se encuentran **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [configurar las opciones globales de configuración de vínculos seguros en Office 365 ATP](configure-global-settings-for-safe-links.md).
+- **Office 365 apps** : la protección de vínculos seguros para aplicaciones de Office 365 está disponible en los AP de escritorio, móviles y Web admitidos. Puede **configurar** la protección de vínculos seguros para las aplicaciones de Office 365 en la configuración global que se encuentran **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [configurar las opciones globales de configuración de vínculos seguros en Microsoft defender para Office 365](configure-global-settings-for-safe-links.md).
 
   Pero, la protección de vínculos seguros para las aplicaciones de Office 365 solo se **aplica** a los usuarios que se incluyen en las directivas de vínculos seguros activos. Si un usuario no está incluido en una directiva de vínculos seguros activa, el usuario no obtiene protección de vínculos seguros en las aplicaciones de Office 365 compatibles.
 
@@ -71,7 +71,7 @@ En este artículo se incluyen descripciones detalladas de los siguientes tipos d
   - [Configuración de vínculos seguros para aplicaciones de Office 365](#safe-links-settings-for-office-365-apps)
   - [Lista "bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links)
 
-En la tabla siguiente se describen escenarios para vínculos seguros en organizaciones de Microsoft 365 y Office 365 que incluyen ATP (es decir, la falta de licencias nunca es un problema en los ejemplos).
+En la tabla siguiente se describen los escenarios de vínculos a prueba de errores en organizaciones de Microsoft 365 y Office 365 que incluyen defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
 
 ****
 
@@ -91,7 +91,7 @@ Después de que los vínculos seguros reescriben una dirección URL, la direcci�
 
 Las opciones de configuración de las directivas de vínculos a prueba de errores que se aplican a los mensajes de correo electrónico se describen en la siguiente lista:
 
-- **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** : habilita o deshabilita el análisis de vínculos seguros en los mensajes de correo electrónico. El valor recomendado es **on** . Al activar esta configuración, se producen las siguientes acciones.
+- **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** : habilita o deshabilita el análisis de vínculos seguros en los mensajes de correo electrónico. El valor recomendado es **on**. Al activar esta configuración, se producen las siguientes acciones.
 
   - La exploración de vínculos seguros está habilitada en Outlook (C2R) en Windows.
   - Las direcciones URL se reescriben y los usuarios se redirigen a través de la protección de vínculos seguros cuando hacen clic en direcciones URL en los mensajes.
@@ -152,7 +152,7 @@ En un nivel alto, a continuación se muestra cómo funciona la protección de v�
 > [!IMPORTANT]
 > A partir del 2020 de marzo, esta característica se encuentra en versión preliminar y solo está disponible para los miembros del programa de adopción de tecnología de Microsoft Teams (TAP). Para obtener información sobre la programación de versiones, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
 
-Puede habilitar o deshabilitar la protección de vínculos seguros para Microsoft Teams en directivas de vínculos a prueba de errores. En concreto, use la opción **seleccionar la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams** . El valor recomendado es **on** .
+Puede habilitar o deshabilitar la protección de vínculos seguros para Microsoft Teams en directivas de vínculos a prueba de errores. En concreto, use la opción **seleccionar la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams** . El valor recomendado es **on**.
 
 Las siguientes opciones de configuración en las directivas de vínculos seguros que se aplican a los vínculos de los mensajes de correo electrónico también se aplican a los vínculos de Teams:
 
@@ -180,7 +180,7 @@ En un nivel alto, a continuación se muestra cómo funciona la protección de v�
 
 1. Un usuario inicia la aplicación Microsoft Teams.
 
-2. Microsoft 365 comprueba que la organización del usuario incluye ATP de Office 365 y que el usuario se incluye en una directiva de vínculos seguros activa en la que está habilitada la protección para Microsoft Teams.
+2. Microsoft 365 comprueba que la organización del usuario incluye Microsoft defender para Office 365 y que el usuario se incluye en una directiva de vínculos seguros activa donde la protección para Microsoft Teams está habilitada.
 
 3. Las direcciones URL se validan en el momento de hacer clic para el usuario en chats, chats de grupo, canales y pestañas.
 
@@ -204,11 +204,11 @@ Puede configurar la protección de vínculos seguros para las aplicaciones de Of
 
 Están disponibles las siguientes opciones de configuración de vínculos seguros para las aplicaciones de Office 365:
 
-- **Aplicaciones de office 365** : habilita o deshabilita el análisis de vínculos seguros en aplicaciones de Office 365 compatibles. El valor predeterminado y el valor recomendado es **on** .
+- **Aplicaciones de office 365** : habilita o deshabilita el análisis de vínculos seguros en aplicaciones de Office 365 compatibles. El valor predeterminado y el valor recomendado es **on**.
 
 - **No realizar seguimiento cuando los usuarios hacen clic en vínculos seguros** : habilita o deshabilita el almacenamiento de vínculos seguros haga clic en datos de direcciones URL en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor recomendado es **OFF** , lo que significa que se realiza un seguimiento de los clics del usuario.
 
-- **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original** : permite o bloquea que los usuarios hagan clic en la [Página de advertencia](#warning-pages-from-safe-links) en la dirección URL original en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor predeterminado y el valor recomendado es **on** .
+- **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original** : permite o bloquea que los usuarios hagan clic en la [Página de advertencia](#warning-pages-from-safe-links) en la dirección URL original en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor predeterminado y el valor recomendado es **on**.
 
 Para configurar las opciones de vínculos seguros para las aplicaciones de Office 365, consulte [Configure Safe links Protection for office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 

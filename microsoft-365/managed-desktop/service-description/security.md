@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289488"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846209"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologías de seguridad en el escritorio administrado por Microsoft
 
@@ -39,7 +39,7 @@ Servicio | Descripción
 --- | ---
 Antivirus | Microsoft defender AV está instalado y configurado<br>Definiciones de antivirus de Microsoft defender actualizadas
 Cifrado completo de volumen |    Windows BitLocker es la solución de cifrado de volumen para los dispositivos de escritorio administrados por Microsoft.<br><br>Una vez que una organización está incorporada en el servicio, los dispositivos se cifrarán con Windows BitLocker con el módulo de plataforma de confianza integrado (TPM) para evitar el acceso no autorizado a los datos locales cuando el dispositivo esté en modo de suspensión o desactivado. 
-Supervisión |    La protección contra amenazas avanzada de Microsoft defender (ATP de Microsoft defender) se usa para la supervisión de amenazas de seguridad en todos los dispositivos de escritorio administrados por Microsoft. ATP de Microsoft defender permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, consulte [protección contra amenazas avanzada de Microsoft defender.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Supervisión |    Microsoft defender for Endpoint se usa para la supervisión de amenazas de seguridad en todos los dispositivos de escritorio administrados por Microsoft. Defender for Endpoint permite a los clientes de empresa detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, vea [Microsoft defender para Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Actualizaciones del sistema operativo |  Los dispositivos de escritorio administrados por Microsoft siempre están protegidos con las actualizaciones de seguridad más recientes.
 Configuración de dispositivos seguros |   Microsoft Managed Desktop implementa la línea de base de seguridad de Microsoft. Para obtener más información, vea [líneas de base de seguridad de Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 

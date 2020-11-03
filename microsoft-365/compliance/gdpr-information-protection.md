@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 547d79093b65fba37a020781fbfce938d122c943
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398489"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846382"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protección de la información para el RGPD con funciones de Microsoft 365
 
@@ -57,9 +57,9 @@ Microsoft ofrece una configuración recomendada que puede usar como punto de ini
 Protección contra amenazas se basa en los servicios de Microsoft 365. Aquí encontrará algunos recursos para empezar:
 
 - [Plan de desarrollo de seguridad de Office 365: Prioridades más importantes para los primeros 30 días, 90 días y posteriores](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap). En este plan de desarrollo, se incluyen recomendaciones para implementar funciones. 
-- [Protect against threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) (Protección contra amenazas en Office 365). Obtenga información acerca de acciones de protección que puede realizar en el Centro de seguridad de Microsoft 365.
-- [Protección contra amenazas avanzada Windows](https://docs.microsoft.com/windows/security/threat-protection/). Obtenga más información sobre Protección contra amenazas avanzada de Windows Defender y otras funciones en Windows 10.
+- [Protect against threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) (Protección contra amenazas en Office 365). Obtenga más información acerca de las acciones de protección que puede realizar en el Centro de seguridad de Microsoft 365.
+- [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/) Obtenga más información sobre Microsoft Defender para punto de conexión y otras funcionalidades de Windows 10.
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Obtenga más información
 
 [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

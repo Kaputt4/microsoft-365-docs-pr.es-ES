@@ -1,6 +1,6 @@
 ---
-title: Códigos de error comunes de la API de REST de Microsoft Threat Protection
-description: Obtenga información sobre los códigos de error comunes de la API de REST de Microsoft Threat Protection
+title: Códigos de error comunes de la API de REST de Microsoft 365 defender
+description: Obtener información sobre los códigos de error comunes de la API de REST de Microsoft 365 defender
 keywords: API, error, códigos, errores comunes, MTP, códigos de error de la API
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201344"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846013"
 ---
-# <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>Códigos de error comunes de la API de REST de Microsoft Threat Protection
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Códigos de error comunes de la API de REST de Microsoft 365 defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 >[!IMPORTANT] 
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Los códigos de error que se enumeran en la siguiente tabla pueden devolverse mediante una operación en cualquiera de las API de Microsoft Threat Protection.
+Los códigos de error que se enumeran en la siguiente tabla pueden devolverse mediante una operación en cualquiera de las API de Microsoft 365 defender.
 
 Cada respuesta de error contiene un mensaje de error, que puede ayudar a resolver el problema.
 

@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 83a897438b9da88287574ff576fab9b2f6b30236
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430804"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846513"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -34,9 +34,9 @@ ms.locfileid: "48430804"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
-Cuando se produce una investigación automatizada en la Protección contra amenazas de Microsoft, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizada. Si tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes. 
+Cuando se produce una investigación automatizada en Microsoft 365 defender, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizada. Si tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks), puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes. 
 
 ![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
@@ -48,13 +48,13 @@ Puede abrir un informe en la vista previa de impresión utilizando uno de los m�
 
 ### <a name="select-an-item-in-the-action-center"></a>Seleccionar un elemento en el centro de actividades
 
-Use el centro de actividades para ver las acciones que estén pendientes de aprobación (en la pestaña **pendiente**) o que ya se hayan aprobado (en la pestaña **historial**). 
+Use el centro de actividades para ver las acciones que estén pendientes de aprobación (en la pestaña **pendiente** ) o que ya se hayan aprobado (en la pestaña **historial** ). 
 
 1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
 
 2. En el panel de navegación, elija **Centro de actividades**. 
 
-3. En la pestaña **pendiente** o **historial**, seleccione un elemento. Si tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks), puede aprobar (o rechazar) acciones pendientes.
+3. En la pestaña **pendiente** o **historial** , seleccione un elemento. Si tiene los [permisos necesarios](mtp-action-center.md#required-permissions-for-action-center-tasks), puede aprobar (o rechazar) acciones pendientes.
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Abrir una investigación desde una página de detalles de un incidente
 
@@ -66,7 +66,7 @@ Use una página de detalles de un incidente para ver información detallada sobr
 
 3. Seleccione un elemento de la lista para abrir la vista detalles del incidente.<br/>![Detalles del incidente](../../media/mtp-incidentdetails-tabs.png)
 
-4. En la pestaña **investigaciones**, seleccione una investigación en la lista.
+4. En la pestaña **investigaciones** , seleccione una investigación en la lista.
 
 ## <a name="investigation-details"></a>Detalles de la investigación
 
@@ -74,7 +74,7 @@ Use la vista detalles de la investigación para ver la actividad pasada, actual 
 
 ![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
-En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
+En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación** , **alertas** , **dispositivos** , **identidades** , **resultados clave** , **entidades** , **registro** , y **acciones pendientes** , que se describen en la siguiente tabla.
 
 |Pestaña    |Descripción |
 |--------|--------|

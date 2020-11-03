@@ -17,14 +17,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar el analizador de configuración para encontrar y corregir directivas de seguridad que están por debajo de las directivas de seguridad estándar protección estándar y protección estricta.
-ms.openlocfilehash: ac70b7fa2b2d0ecc65cf81ea4e5e5f2e807f2467
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 1429bddc5ae5f8409ad4f3593f7ea236b13f854c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326584"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846477"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Analizador de configuración para directivas de protección en EOP y Office 365 ATP
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,25 +36,25 @@ El analizador de configuración del centro de seguridad & cumplimiento ofrece un
 
 El analizador de configuración analiza los siguientes tipos de directivas:
 
-- **Directivas de Exchange Online Protection (EOP)**: Esto incluye a Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de EOP sin buzones de Exchange Online:
+- **Directivas de Exchange Online Protection (EOP)** : Esto incluye a Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de EOP sin buzones de Exchange Online:
   
   - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md).
   - [Directivas antimalware](configure-anti-malware-policies.md).
   - [Directivas de protección contra suplantación de EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Directivas de protección contra amenazas avanzada (ATP) de Office 365**: Esto incluye a las organizaciones con suscripciones de complementos de ATP de Microsoft 365 E5 u Office 365:
+- **Directivas de Microsoft defender para office 365** : Esto incluye a las organizaciones con las suscripciones complementarias de Microsoft 365 E5 o defender para Office 365:
 
-  - Directivas antiphishing de ATP, que incluyen:
+  - Directivas antiphishing en Microsoft defender para Office 365, que incluyen:
 
     - La misma [configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad que están disponibles en las directivas de protección contra suplantación de EOP.
-    - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   - [Directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
 
   - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md).
 
-Los valores de configuración **estándar** y **estricta** de la Directiva que se usan como líneas de base se describen en [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
+Los valores de configuración **estándar** y **estricta** de la Directiva que se usan como líneas de base se describen en [configuración recomendada para EOP y Microsoft defender para Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -82,9 +82,9 @@ En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Poli
 
 El analizador de configuración tiene dos pestañas principales:
 
-- **Configuración y recomendaciones**: elige estándar o estricto y compara esa configuración con las directivas de seguridad existentes. En los resultados, puede ajustar los valores de la configuración para que aparezcan en el mismo nivel que el estándar o estricto.
+- **Configuración y recomendaciones** : elige estándar o estricto y compara esa configuración con las directivas de seguridad existentes. En los resultados, puede ajustar los valores de la configuración para que aparezcan en el mismo nivel que el estándar o estricto.
 
-- **Análisis e historial de la fase de configuración**: esta vista permite realizar un seguimiento de los cambios de directiva con el tiempo.
+- **Análisis e historial de la fase de configuración** : esta vista permite realizar un seguimiento de los cambios de directiva con el tiempo.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Configuración y ficha recomendaciones en el analizador de configuración
 
@@ -97,32 +97,32 @@ De forma predeterminada, la columna **grupo de directivas/nombre de configuraci�
 - **Contra correo electrónico no deseado**
 - **Contra la suplantación de identidad**
 - **Anti-malware**
-- **Datos adjuntos seguros de ATP** (si la suscripción incluye ATP)
-- **Vínculos seguros ATP** (si la suscripción incluye ATP)
+- **Datos adjuntos seguros de ATP** (si su suscripción incluye a Microsoft defender para Office 365)
+- **Vínculos seguros ATP** (si la suscripción incluye Microsoft defender para Office 365)
 
 En la vista predeterminada, todo se contrae. Junto a cada Directiva, hay un resumen de los resultados de la comparación de las directivas (que puede modificar) y la configuración de las directivas correspondientes para los perfiles de protección estándar o estricto (que no se pueden modificar). Verá la siguiente información del perfil de protección que está comparando con:
 
-- **Verde**: todas las opciones de configuración de todas las directivas existentes son al menos tan seguras como el perfil de protección.
-- **Ámbar**: un número reducido de configuraciones en las directivas existentes no es tan seguro como el perfil de protección.
-- **Red**: un número significativo de configuraciones en las directivas existentes no es tan seguro como el perfil de protección. Esto puede deberse a algunas configuraciones en muchas directivas o muchas opciones de configuración en una directiva.
+- **Verde** : todas las opciones de configuración de todas las directivas existentes son al menos tan seguras como el perfil de protección.
+- **Ámbar** : un número reducido de configuraciones en las directivas existentes no es tan seguro como el perfil de protección.
+- **Red** : un número significativo de configuraciones en las directivas existentes no es tan seguro como el perfil de protección. Esto puede deberse a algunas configuraciones en muchas directivas o muchas opciones de configuración en una directiva.
 
 Para comparaciones favorables, verá el texto: **todas las opciones siguen** \<**Standard** or **Strict**\> **recomendaciones**. De lo contrario, verá el número de opciones de configuración recomendadas que se deben cambiar.
 
-Si amplía el **nombre del grupo o la configuración de directivas**, se muestran todas las directivas y la configuración asociada en cada Directiva específica que requieran atención. O bien, puede expandir un tipo específico de directiva (por ejemplo, **contra el correo no deseado**) para ver sólo la configuración en los tipos de directivas que requieren su atención.
+Si amplía el **nombre del grupo o la configuración de directivas** , se muestran todas las directivas y la configuración asociada en cada Directiva específica que requieran atención. O bien, puede expandir un tipo específico de directiva (por ejemplo, **contra el correo no deseado** ) para ver sólo la configuración en los tipos de directivas que requieren su atención.
 
 Si la comparación no tiene recomendaciones para la mejora (verde), la expansión de la Directiva no revela nada. Si hay algún número de recomendaciones para la mejora (ámbar o rojo), se revela la configuración que requiere atención y se revela la información correspondiente en las siguientes columnas:
 
 - El nombre de la configuración que requiere su atención. Por ejemplo, en la captura de pantalla anterior, se trata del **umbral de correo electrónico masivo** en una directiva contra correo no deseado.
 
-- **Directiva**: el nombre de la Directiva afectada que contiene la configuración.
+- **Directiva** : el nombre de la Directiva afectada que contiene la configuración.
 
-- Se **aplica a**: el número de usuarios a los que se aplican las directivas afectadas.
+- Se **aplica a** : el número de usuarios a los que se aplican las directivas afectadas.
 
-- **Configuración actual**: el valor actual de la configuración.
+- **Configuración actual** : el valor actual de la configuración.
 
-- **Última modificación**: la fecha en la que la Directiva se modificó por última vez.
+- **Última modificación** : la fecha en la que la Directiva se modificó por última vez.
 
-- **Recomendaciones**: el valor de la configuración en el perfil de protección estándar o estricta. Para cambiar el valor de la configuración de la Directiva de manera que se ajuste al valor recomendado en el perfil de protección, haga clic en **adoptar**. Si el cambio se realiza correctamente, verá el mensaje: **recomendaciones adoptadas correctamente**. Haga clic en **Actualizar** para ver el menor número de recomendaciones y para quitar la configuración específica o la fila de la Directiva de los resultados.
+- **Recomendaciones** : el valor de la configuración en el perfil de protección estándar o estricta. Para cambiar el valor de la configuración de la Directiva de manera que se ajuste al valor recomendado en el perfil de protección, haga clic en **adoptar**. Si el cambio se realiza correctamente, verá el mensaje: **recomendaciones adoptadas correctamente**. Haga clic en **Actualizar** para ver el menor número de recomendaciones y para quitar la configuración específica o la fila de la Directiva de los resultados.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Ficha historial y análisis de derivación de configuración del analizador de configuración
 
@@ -132,7 +132,7 @@ Esta pestaña le permite realizar un seguimiento de los cambios realizados en la
 - **Modificado por**
 - **Nombre de la configuración**
 - **Directiva**
-- **Type**
+- **Tipo**
 
 Para filtrar los resultados, haga clic en **Filtrar**. En el control flotante **filtros** que aparece, puede seleccionar entre los filtros siguientes:
 
