@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9708ec9877c4d07b0cf93ea9d6815303236eff4b
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304797"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830642"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -63,33 +63,33 @@ Antes de comenzar, vea [determinar si la implementación centralizada de complem
   
 1. En el centro de administración, vaya a la página **configuración** \> **de complementos** . Si no ve la página de **Complementos** , vaya a la página **configuración** de \> **aplicaciones integradas** \> **de complementos** .
     
-2. Seleccione **implementar complemento** en la parte superior de la página y, a continuación, seleccione **siguiente**.
+2. Seleccione **implementar complemento** en la parte superior de la página y, a continuación, seleccione **siguiente** .
  
     > [!NOTE]
-    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración**de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
+    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración** de  >  **aplicaciones integradas** . En la parte superior de la página **aplicaciones integradas** , elija **Complementos** .
     
 3. Seleccione una opción y siga las instrucciones.
   
 4. Si seleccionó la opción de agregar un complemento de la tienda Office, realice la selección del complemento. </br>
 
-    Puede ver los complementos disponibles por categorías: **sugeridas para usted**, **calificación**o **nombre**. Solo los complementos gratuitos están disponibles en la tienda Office. Los complementos de pago no son compatibles en estos momentos. Después de seleccionar un complemento, acepte los términos y condiciones para continuar. <br/> 
+    Puede ver los complementos disponibles por categorías: **sugeridas para usted** , **calificación** o **nombre** . Solo los complementos gratuitos están disponibles en la tienda Office. Los complementos de pago no son compatibles en estos momentos. Después de seleccionar un complemento, acepte los términos y condiciones para continuar. <br/> 
 
     > [!NOTE] 
-    > Con la opción de la tienda Office, las actualizaciones y las mejoras se refuerzan automáticamente a los usuarios.
+    > Con la opción de la tienda Office, las actualizaciones y las mejoras se implementan automáticamente para los usuarios.
 
-5. En la página siguiente, seleccione **todos** **los usuarios, grupos o usuarios específicos**, o **solo** para especificar con quién se ha implementado el complemento. Use el cuadro de búsqueda para buscar usuarios o grupos específicos. <br/>
+5. En la página siguiente, seleccione **todos** **los usuarios, grupos o usuarios específicos** , o **solo** para especificar con quién se ha implementado el complemento. Use el cuadro de búsqueda para buscar usuarios o grupos específicos. <br/>
 
     > [!NOTE] 
     > Para obtener información sobre otros Estados que se aplican a un complemento, vea [Estados de complementos](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
   
-6. Seleccione **Implementar**.
+6. Seleccione **Implementar** .
   
 7. Cuando se implementa el complemento, aparece una marca de verde. Siga las instrucciones de la página para probar el complemento.
 
     > [!NOTE]
     > Es posible que los usuarios deban volver a iniciar Office para ver el icono del complemento en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 24 horas en aparecer en las cintas de la aplicación.
     
-8. Cuando termine, seleccione **siguiente**. Si ha implementado solo en usted, puede seleccionar **cambiar quién tiene acceso al complemento** para implementarlo en más usuarios.
+8. Cuando termine, seleccione **siguiente** . Si ha implementado solo en usted, puede seleccionar **cambiar quién tiene acceso al complemento** para implementarlo en más usuarios.
 
     Si ha implementado el complemento en otros miembros de la organización, siga las instrucciones para anunciar la implementación del complemento. <br/>
   

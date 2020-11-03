@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: En este artículo, obtenga información sobre cómo realizar tareas de administración comunes para los grupos de Microsoft 365 en PowerShell.
-ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 1cad2aa39a6b106cbb4dbfbafa995899b2442ed1
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277478"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830620"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administración de grupos de Microsoft 365 con PowerShell
 
@@ -114,7 +114,7 @@ Una vez habilitada esta configuración, el propietario del grupo podrá elegir u
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>Oculte los grupos de Microsoft 365 de la lista global de direcciones.
 <a name="BKMK_CreateClassification"> </a>
 
-Puede especificar si un grupo de 365 de Microsoft aparece en la lista global de direcciones (GAL) y en otras listas de la organización. Por ejemplo, si tiene un grupo de departamento legal que no desea que aparezca en la lista de direcciones, puede impedir que ese grupo aparezca en la GAL. Ejecute el cmdlet Set-Unified Group para ocultar el grupo de la lista de direcciones de la siguiente manera:
+Puede especificar si un grupo de 365 de Microsoft aparece en la lista global de direcciones (GAL) y en otras listas de la organización. Por ejemplo, si tiene un grupo de departamento legal que no desea que aparezca en la lista de direcciones, puede impedir que ese grupo aparezca en la GAL. Ejecute el cmdlet de grupo Set-Unified para ocultar el grupo de la lista de direcciones de la siguiente manera:
 
 ```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -136,7 +136,7 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 
 Cuando un remitente intenta enviar un correo electrónico a un grupo de Microsoft 365, se le puede mostrar una sugerencia de correo electrónico.
 
-Ejecute el cmdlet Set-Unified Group para agregar una sugerencia de correo al Grupo:
+Ejecute el cmdlet de grupo Set-Unified para agregar una sugerencia de correo al Grupo:
 
 ```powershell
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Cambiar el nombre para mostrar del grupo 365 de Microsoft
 
-El nombre para mostrar especifica el nombre del grupo de Microsoft 365. Puede ver este nombre en su centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente mediante la ejecución del comando set-UnifiedGroup:
+El nombre para mostrar especifica el nombre del grupo de Microsoft 365. Puede ver este nombre en su centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -181,10 +181,10 @@ Los siguientes cmdlets se pueden usar con los grupos de Microsoft 365.
 |:-----|:-----|
 |[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Use este cmdlet para buscar grupos existentes de Microsoft 365 y para ver las propiedades del objeto de grupo.  <br/> |
 |[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Actualizar las propiedades de un grupo de Microsoft 365 específico  <br/> |
-|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Cree un nuevo grupo de 365 de Microsoft. Este cmdlet proporciona un conjunto mínimo de parámetros. Para establecer los valores de las propiedades extendidas, use set-UnifiedGroup después de crear el nuevo grupo.  <br/> |
+|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Cree un nuevo grupo de 365 de Microsoft. Este cmdlet proporciona un conjunto mínimo de parámetros. Para establecer los valores de las propiedades extendidas, use Set-UnifiedGroup después de crear el nuevo grupo.  <br/> |
 |[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Eliminar un grupo de Microsoft 365 existente  <br/> |
 |[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Recuperar la información de pertenencia y propietario de un grupo de 365 de Microsoft  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Agregar cientos o miles de usuarios o nuevos propietarios a un grupo de Microsoft 365 existente  <br/> |
+|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Agregar miembros, propietarios y suscriptores a un grupo de Microsoft 365 existente <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Quitar propietarios y miembros de un grupo de Microsoft 365 existente  <br/> |
 |[Get-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Se usa para ver información sobre la foto de usuario asociada a una cuenta. Las fotos de los usuarios se almacenan en Active Directory  <br/> |
 |[Set-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Se usa para asociar una foto de usuario con una cuenta. Las fotos de los usuarios se almacenan en Active Directory  <br/> |
