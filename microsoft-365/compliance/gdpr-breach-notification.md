@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305184"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843154"
 ---
 # <a name="gdpr-breach-notification"></a>Notificación de incumplimiento del RGPD
 
@@ -36,10 +36,10 @@ Los datos personales se refieren a cualquier información relacionada con un usu
 
 Definiciones útiles de los términos del RGPD utilizados en este documento:
 
-- *Controlador de datos (controlador)*: una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determinan el propósito y el medio del procesamiento de datos personales.  
-- *Datos personales * e *interesado*: cualquier información relacionada con una persona física identificada o una persona natural identificable (interesado), una persona física identificable es la que puede identificarse, directa o indirectamente.  
-- *Procesador*: una persona física o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
-- *Datos de clientes*: datos producidos y almacenados en las operaciones diarias de su empresa.
+- *Controlador de datos (controlador)* : una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determinan el propósito y el medio del procesamiento de datos personales.  
+- *Datos personales* e *interesado* : cualquier información relacionada con una persona física identificada o una persona natural identificable (interesado), una persona física identificable es la que puede identificarse, directa o indirectamente.  
+- *Procesador* : una persona física o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
+- *Datos de clientes* : datos producidos y almacenados en las operaciones diarias de su empresa.
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft y la notificación de incumplimiento
 
@@ -61,14 +61,14 @@ A continuación, se muestra información sobre las notificaciones de incumplimie
 2. **[Azure y Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft tiene un servicio ininterrumpido y global de respuesta al incidente que sirve para reducir los efectos de los ataques en Microsoft Azure y Dynamics 365.
 
-    - *Detección de vulneraciones*: ya que tanto Microsoft como el cliente tienen obligaciones de seguridad, los servicios de Azure usan un modelo de responsabilidad compartida para definir las responsabilidades operativas y de seguridad. Microsoft no supervisa ni responde a los incidentes de seguridad dentro del ámbito de responsabilidad del cliente. La respuesta a los incidentes del cliente puede implicar la colaboración con la [asistencia al cliente](https://azure.microsoft.com/support/options/) de Azure con contratos de servicio adecuados. Microsoft Azure también ofrece varios servicios (por ejemplo, [Azure Security Center](https://azure.microsoft.com/services/security-center/)) que los clientes pueden usar para desarrollar y administrar la respuesta a incidentes de seguridad.
+    - *Detección de vulneraciones* : ya que tanto Microsoft como el cliente tienen obligaciones de seguridad, los servicios de Azure usan un modelo de responsabilidad compartida para definir las responsabilidades operativas y de seguridad. Microsoft no supervisa ni responde a los incidentes de seguridad dentro del ámbito de responsabilidad del cliente. La respuesta a las incidencias del cliente puede implicar la colaboración con [el soporte técnico](https://azure.microsoft.com/support/options/) de Azure, si se cuenta con los contratos de servicio adecuados. Microsoft Azure también ofrece varios servicios (por ejemplo, [Azure Defender*](https://azure.microsoft.com/services/security-center/)) que los clientes pueden usar para desarrollar y administrar la respuesta a incidentes de seguridad.
 
-        Para obtener una lista de los eventos que activan una investigación de vulneración de Microsoft Azure, vea [Detección de vulneraciones potenciales](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). [Azure y la notificación de incumplimiento en virtud del RGPD](gdpr-breach-azure-dynamics.md) más información sobre cómo Microsoft investiga, administra y responde a incidentes de seguridad en Azure.
+        Para obtener una lista de los eventos que activan una investigación de vulneración de seguridad de Microsoft Azure, vea [Detección de posibles vulneraciones](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). [Azure y la notificación de incumplimiento en virtud del RGPD](gdpr-breach-azure-dynamics.md) más información sobre cómo Microsoft investiga, administra y responde a incidentes de seguridad en Azure.
 
-    - *Respuesta a la vulneración de datos*: Microsoft determina los niveles de prioridad y gravedad adecuados de una vulneración al investigar el impacto funcional, la capacidad de recuperación y el impacto de la información del incidente. La prioridad y la gravedad pueden cambiar a lo largo de la investigación, en función de nuevos resultados y conclusiones.
+    - *Respuesta a la vulneración de datos* : Microsoft determina los niveles de prioridad y gravedad adecuados de una vulneración al investigar el impacto funcional, la capacidad de recuperación y el impacto de la información del incidente. La prioridad y la gravedad pueden cambiar a lo largo de la investigación, en función de nuevos resultados y conclusiones.
     El equipo de respuesta de seguridad de Microsoft trabaja en estrecha colaboración con consejeros jurídicos globales para asegurarse de que los informes forenses se realicen de acuerdo con las obligaciones y los compromisos jurídicos para los clientes. Estos procesos se detallan en la [Respuesta a la vulneración de datos de Azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response).
 
-    - *Notificación al cliente*: Microsoft Azure envía notificaciones a los clientes y a las autoridades competentes de las vulneraciones de datos, según sea necesario. Los avisos a los clientes se entregan en no más de 72 horas desde el momento en que se declaró una vulneración, excepto en las siguientes circunstancias:
+    - *Notificación al cliente* : Microsoft Azure envía notificaciones a los clientes y a las autoridades competentes de las vulneraciones de datos, según sea necesario. Los avisos a los clientes se entregan en no más de 72 horas desde el momento en que se declaró una vulneración, excepto en las siguientes circunstancias:
 
         - Microsoft cree que el acto de realizar una notificación aumentará el riesgo para otros clientes.
         - El plazo de 72 horas puede permitir que algunos detalles del incidente estén disponibles. Se le proporcionará esta información a medida que avanza la investigación.
@@ -80,7 +80,7 @@ A continuación, se muestra información sobre las notificaciones de incumplimie
 
 ## <a name="breach-notification-admin-tools"></a>Herramientas de administración de notificación de infracciones
 
-- **Establecer el contacto de privacidad de la organización**: los administradores de espacios empresariales pueden usar el [Portal de administración de Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2052736) para definir el contacto de privacidad de la organización por si Microsoft necesita comunicarse con él.
+- **Establecer el contacto de privacidad de la organización** : los administradores de espacios empresariales pueden usar el [Portal de administración de Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=2052736) para definir el contacto de privacidad de la organización por si Microsoft necesita comunicarse con él.
 
 ## <a name="learn-more"></a>Obtén más información
 

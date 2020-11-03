@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429424"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844805"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 
@@ -52,7 +52,7 @@ Apartados del Centro de seguridad de Microsoft 365:
 
 * **Inicio** : Obtenga una vista general del estado general de la seguridad de su organización.
 * **Incidentes** : vea el artículo más amplio de un ataque conectando los puntos que se muestran en las alertas individuales de las entidades. Sabrá exactamente dónde se ha iniciado un ataque, qué dispositivos se ven afectados, quién se ha visto afectado y dónde ha desaparecido la amenaza.
-* **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 365. Incluye alertas de Microsoft Cloud App Security, Office 365 ATP, Azure Active Directory, ATP de Azure y ATP de Microsoft defender. Disponible para clientes de E3 y E5.  
+* **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 365. Incluye alertas de Microsoft Cloud App Security, Microsoft defender para Office 365, Azure Active Directory, Microsoft defender para identidad y Microsoft defender para el punto de conexión. Disponible para clientes de E3 y E5.  
 * **Centro de actividades** : reduzca el volumen de alertas que el equipo de seguridad debe dirigir manualmente, lo que permite al equipo de operaciones de seguridad centrarse en amenazas más complejas y en otras iniciativas de gran valor.
 * **Informes** : obtenga los detalles y la información que necesita para proteger mejor a sus usuarios, dispositivos, aplicaciones y mucho más.
 * **Puntuación de seguridad:** mejore su posición de seguridad global con Puntuación de seguridad de Microsoft. Esta página proporciona un resumen de todas las distintas características y capacidades de seguridad que ha habilitado, e incluye recomendaciones para las áreas que deben mejorarse.
@@ -73,6 +73,6 @@ Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidade
 - [Buscar de forma proactiva amenazas](advanced-hunting-overview.md) de intentos de intrusión y actividad de infracciones que afectan el correo electrónico, los datos, los dispositivos y las cuentas
 - [Comprenda las campañas y técnicas de ataque más recientes con el](latest-attack-campaigns.md) análisis de amenazas
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Portales de seguridad de Microsoft](portals.md)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 43a5c0f2e207274574c3c08eadd2804b9c241bb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208442"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845070"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
 
@@ -63,7 +63,7 @@ El gobierno de Estados Unidos de Dynamics 365 a FedRAMP Agency en el nivel de im
 - Office 365 U.S. Government Defense tiene una P-ATO de US Defense Information Systems Agency (DISA). Cualquier cliente que desee implementar Office 365 US Government Defense puede usar la DISA P-ATO para generar una agencia ATO para documentar su aceptación.
 - Office 365 (planes empresariales y empresariales) y Office 365 el gobierno de Estados Unidos tienen un FedRAMP de agencia de distribución en el nivel de impacto moderado de la oficina DHHS del inspector general. Office 365 U.S. Government fue el primer servicio de colaboración y correo electrónico basado en la nube para obtener esta autorización.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -71,7 +71,7 @@ El gobierno de Estados Unidos de Dynamics 365 a FedRAMP Agency en el nivel de im
 - [Office 365 y Office 365 para dirigir a EE. UU.](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 U.S. Government Defense
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
-- ATP de Microsoft Defender
+- Microsoft Defender para punto de conexión
 
 > [!NOTE]
 > El uso de Azure Active Directory en Azure Government requiere el uso de componentes que se implementan fuera de Azure Government en la nube pública de Azure.
@@ -109,9 +109,9 @@ Para obtener información general sobre los pasos que deben realizar las agencia
 
 Sí. Puede usar las certificaciones de los servicios en la nube de Microsoft como base para cualquier programa o iniciativa que requiera una ATO de una agencia gubernamental federal. Sin embargo, debe conseguir sus propias autorizaciones para los componentes fuera de estos servicios.
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

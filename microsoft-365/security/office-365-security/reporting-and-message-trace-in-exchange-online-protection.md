@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196404"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845557"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -30,13 +30,13 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 
 ## <a name="usage-reports"></a>Informes de uso
 
-**Actividad de microsoft 365 Groups**: ver información sobre el número de grupos de Microsoft 365 que se crean y usan.
+**Actividad de microsoft 365 Groups** : ver información sobre el número de grupos de Microsoft 365 que se crean y usan.
 
-**Actividad de correo electrónico**: ver información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
+**Actividad de correo electrónico** : ver información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
 
-**Uso de la aplicación de correo electrónico**: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones de cada aplicación y las versiones de Outlook que se conectan.
+**Uso de la aplicación de correo electrónico** : ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones de cada aplicación y las versiones de Outlook que se conectan.
 
-**Uso de buzón de correo**: ver información sobre el almacenamiento usado, el consumo de cuotas, el recuento de elementos y la última actividad (actividad de envío o lectura) para los buzones.
+**Uso de buzón de correo** : ver información sobre el almacenamiento usado, el consumo de cuotas, el recuento de elementos y la última actividad (actividad de envío o lectura) para los buzones.
 
 Consulte los siguientes recursos para obtener más información:
 
@@ -52,11 +52,11 @@ Consulte los siguientes recursos para obtener más información:
 
 Estos informes mejorados proporcionan una experiencia de creación de informes interactiva para los administradores de EOP, que incluye información de Resumen y la capacidad de profundizar para obtener más detalles.
 
-**Protección contra amenazas avanzada (ATP)**: ver información sobre vínculos seguros y datos adjuntos seguros que forman parte de ATP.
+**Defender para office 365** : ver información sobre vínculos seguros y datos adjuntos seguros que forman parte de Microsoft defender para Office 365.
 
-**EOP**: ver información sobre las detecciones de malware, el correo falsificado, las detecciones de correo no deseado y el flujo de correo hacia y desde la organización.
+**EOP** : ver información sobre las detecciones de malware, el correo falsificado, las detecciones de correo no deseado y el flujo de correo hacia y desde la organización.
 
-[Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)
+[Ver informes para defender para Office 365](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
 

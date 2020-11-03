@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208147"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845048"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Sistema de Administración de Información de Privacidad (PIMS)
 
@@ -33,9 +33,9 @@ El nuevo estándar internacional [ISO/IEC 27701 Sistema de Gestión de Informaci
 
 Esperar que los proveedores se certifiquen contra el PIMS será eficaz para que los proveedores y socios establezcan prácticas de privacidad responsables, sin importar el tamaño de su organización. ISO/IEC 27701 abarca tres desafíos clave de cumplimiento:
 
-- **Demasiados requisitos reglamentarios para conciliar**: La conciliación de múltiples requisitos reglamentarios mediante el uso de un conjunto universal de controles operativos permite una aplicación coherente y eficiente.
-- **Es demasiado costoso para auditar la regulación por regulación**: los auditores, tanto interno como de terceros, pueden evaluar el cumplimiento normativo mediante un control operativo universal establecido dentro de un único ciclo de auditoría.
-- **La promesa del cumplimiento sin pruebas es potencialmente peligroso**: los acuerdos comerciales que impliquen el movimiento de información personal podrán exigir la certificación del cumplimiento.
+- **Demasiados requisitos reglamentarios para conciliar** : La conciliación de múltiples requisitos reglamentarios mediante el uso de un conjunto universal de controles operativos permite una aplicación coherente y eficiente.
+- **Es demasiado costoso para auditar la regulación por regulación** : los auditores, tanto interno como de terceros, pueden evaluar el cumplimiento normativo mediante un control operativo universal establecido dentro de un único ciclo de auditoría.
+- **La promesa del cumplimiento sin pruebas es potencialmente peligroso** : los acuerdos comerciales que impliquen el movimiento de información personal podrán exigir la certificación del cumplimiento.
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>Se necesitan demasiados requerimientos reglamentarios para conciliar
 
@@ -84,7 +84,7 @@ Indistintamente del tamaño de su organización y de si se trata de un controlad
 - Power Virtual Agents
 - Microsoft Stream
 - Expertos en amenazas de Microsoft
-- Protección contra amenazas avanzada de Windows Defender
+- Microsoft Defender para punto de conexión
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 

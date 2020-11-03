@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados principales.
 ms.date: 09/29/2020
-ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9640ec9429f1c8317c6526976b2fe24c1137115a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447064"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844577"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Cuando se produce una [investigación automatizada](office-365-air.md) en la [protección contra amenazas avanzada de Office 365](office-365-atp.md), los detalles sobre la investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes.
+Cuando se produce una [investigación automatizada](office-365-air.md) en [Microsoft Defender para Office 365](office-365-atp.md), los detalles sobre la investigación están disponibles durante y después del proceso de investigación automatizada. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes.
 
 ## <a name="investigation-status"></a>Estado de la investigación
 
@@ -42,15 +42,15 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |---|---|
 |Iniciando| La investigación se ha desencadenado y está en espera de comenzar a ejecutarse.|
 |En funcionamiento| El proceso de investigación se ha iniciado y está en curso. Este estado también se produce cuando se aprueban [las acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) .|
-|No se encontraron amenazas| La investigación ha finalizado y no se han identificado amenazas (cuenta de usuario, mensaje de correo electrónico, URL o archivo). <br/><br/>**Sugerencia**: Si sospecha que se ha perdido algo (como un falso negativo), puede emprender acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
-|Amenazas encontradas|La investigación automatizada encontró problemas, pero no hay acciones de corrección específicas para resolver estos problemas.<br/><br/> El estado de amenazas encontradas puede producirse cuando se identificó algún tipo de actividad de usuario, pero no hay ninguna acción de limpieza disponible. Algunos ejemplos son las siguientes actividades de usuario: <br/>-Un evento de [prevención de pérdida de datos](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Una anomalía del envío de correo electrónico <br/>-Malware enviado <br/>-Se ha enviado phish<br/>La investigación no encontró direcciones URL malintencionadas, archivos ni mensajes de correo electrónico que corregir, y no se ha corregido ninguna actividad de buzón, como desactivar las reglas de reenvío o la delegación. <br/><br/>**Sugerencia**: Si sospecha que se ha perdido algo (como un falso negativo), puede investigar y realizar acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
-|Finalizado por el sistema| Se detuvo la investigación. Una investigación puede detenerse por varias razones:<br/>-Las acciones pendientes de la investigación han expirado. Se agota el tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana. <br/>-Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, de modo que la investigación se detenga. <br/><br/>**Sugerencia**: Si una investigación se detiene antes de que se tomaron las acciones, pruebe a usar el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) para encontrar y solucionar amenazas.|
+|No se encontraron amenazas| La investigación ha finalizado y no se han identificado amenazas (cuenta de usuario, mensaje de correo electrónico, URL o archivo). <br/><br/>**Sugerencia** : Si sospecha que se ha perdido algo (como un falso negativo), puede emprender acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
+|Amenazas encontradas|La investigación automatizada encontró problemas, pero no hay acciones de corrección específicas para resolver estos problemas.<br/><br/> El estado de amenazas encontradas puede producirse cuando se identificó algún tipo de actividad de usuario, pero no hay ninguna acción de limpieza disponible. Algunos ejemplos son las siguientes actividades de usuario: <br/>-Un evento de [prevención de pérdida de datos](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Una anomalía del envío de correo electrónico <br/>-Malware enviado <br/>-Se ha enviado phish<br/>La investigación no encontró direcciones URL malintencionadas, archivos ni mensajes de correo electrónico que corregir, y no se ha corregido ninguna actividad de buzón, como desactivar las reglas de reenvío o la delegación. <br/><br/>**Sugerencia** : Si sospecha que se ha perdido algo (como un falso negativo), puede investigar y realizar acciones con el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer).|
+|Finalizado por el sistema| Se detuvo la investigación. Una investigación puede detenerse por varias razones:<br/>-Las acciones pendientes de la investigación han expirado. Se agota el tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana. <br/>-Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, de modo que la investigación se detenga. <br/><br/>**Sugerencia** : Si una investigación se detiene antes de que se tomaron las acciones, pruebe a usar el [Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) para encontrar y solucionar amenazas.|
 |Acción pendiente| La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo arriesgado, y una acción para corregir dicha amenaza está en espera de [aprobación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>El estado de acción pendiente se desencadena cuando se encuentra cualquier amenaza con una acción correspondiente. Sin embargo, la lista de acciones pendientes puede aumentar a medida que se ejecute una investigación. Compruebe el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) para ver si hay otros elementos aún pendientes de finalización.|
-|Corregido| La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota**: las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Independientemente de si las acciones de corrección se completan correctamente, el estado de la investigación no cambia. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
+|Corregido| La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota** : las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Independientemente de si las acciones de corrección se completan correctamente, el estado de la investigación no cambia. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
 |Parcialmente remediado| La investigación dio como resultado acciones correctivas y algunas fueron aprobadas y completadas. Aún hay otras acciones [pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).|
-|Error| Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
-|En cola por limitación| Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia**: las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
-|Terminado con la limitación| Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia**: puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|Error| Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota** : si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados.|
+|En cola por limitación| Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia** : las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions).|
+|Terminado con la limitación| Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia** : puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 |
 
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
@@ -87,7 +87,7 @@ Ciertos tipos de alertas desencadenan la investigación automatizada en Microsof
 
 5. Seleccione un elemento de la lista. Se abre un control flotante, con detalles sobre la alerta y vínculos a acciones e información adicionales.
 
-6. Revise la información en el control flotante y, en función de la alerta en particular, realice una acción, como **resolver**, **suprimir**o **notificar a los usuarios**.
+6. Revise la información en el control flotante y, en función de la alerta en particular, realice una acción, como **resolver** , **suprimir** o **notificar a los usuarios**.
 
     - **Resolve** equivale a cerrar una alerta
 
@@ -107,8 +107,8 @@ La página investigaciones automatizadas muestra las investigaciones de su organ
 
 Puede:
 
-- Vaya directamente a una investigación (seleccione un **identificador de investigación**).
-- Aplicar filtros. Elija entre el **tipo de investigación**, **el intervalo de tiempo**, el **Estado**o una combinación de estos.
+- Vaya directamente a una investigación (seleccione un **identificador de investigación** ).
+- Aplicar filtros. Elija entre el **tipo de investigación** , **el intervalo de tiempo** , el **Estado** o una combinación de estos.
 - Exporte los datos a un archivo. csv.
 
 ### <a name="investigation-graph"></a>Gráfico de investigación
@@ -164,7 +164,7 @@ El recuento de correo electrónico identificado en la ficha correo electrónico 
 
 Tanto Explorer como AIR cuentan los mensajes de correo electrónico por destinatario, ya que los veredictos de seguridad, las acciones y las ubicaciones de entrega varían según los destinatarios. Por lo tanto, un mensaje de correo electrónico original enviado a tres usuarios cuenta como un total de tres mensajes de correo electrónico en lugar de un mensaje de correo electrónico. Puede haber casos en los que un correo electrónico se cuente dos o más veces, como cuando un correo electrónico tiene varias acciones en él, o cuando hay varias copias del correo electrónico cuando se producen todas las acciones. Por ejemplo, un correo electrónico de malware que se detecta al entregar puede dar como resultado un correo electrónico bloqueado (en cuarentena) y un correo electrónico reemplazado (el archivo de amenaza se reemplaza con un archivo de advertencia y, a continuación, se entrega en el buzón del usuario). Dado que hay literalmente dos copias del correo electrónico en el sistema, es posible que ambas se cuenten en el recuento de clústeres.
 
-Los recuentos de correo electrónico se calculan en el momento de la investigación y algunos recuentos se vuelven a calcular al abrir controles flotantes de investigación (según una consulta subyacente). Los recuentos de correo electrónico que se muestran para los clústeres de correo electrónico en la ficha correo electrónico y el valor de cantidad de correo electrónico que se muestra en el control flotante de clúster se calculan en el momento de la investigación y no cambian. El recuento de correo electrónico que se muestra en la parte inferior de la ficha correo electrónico del control flotante del clúster de correo electrónico y el número de mensajes de correo electrónico que se muestran en el explorador reflejan los mensajes de correo electrónico recibidos después del análisis inicial de la investigación. Por lo tanto, un clúster de correo electrónico que muestra una cantidad original de 10 mensajes de correo electrónico mostraría un total de 15 en la lista de correo electrónico a menos de 15 mensajes de correo electrónico entre la fase de análisis de la investigación y cuando el administrador Revise la investigación.  Asimismo, las investigaciones antiguas pueden comenzar con recuentos mayores que las consultas del explorador, ya que ATP P2 expira los datos después de 7 días para las pruebas y 30 días para las licencias de pago.  Mostrar recuentos históricos y actuales en vistas diferentes se realiza para indicar el impacto del correo electrónico en el momento de la investigación y el impacto actual hasta el momento en que se ejecuta la corrección.
+Los recuentos de correo electrónico se calculan en el momento de la investigación y algunos recuentos se vuelven a calcular al abrir controles flotantes de investigación (según una consulta subyacente). Los recuentos de correo electrónico que se muestran para los clústeres de correo electrónico en la ficha correo electrónico y el valor de cantidad de correo electrónico que se muestra en el control flotante de clúster se calculan en el momento de la investigación y no cambian. El recuento de correo electrónico que se muestra en la parte inferior de la ficha correo electrónico del control flotante del clúster de correo electrónico y el número de mensajes de correo electrónico que se muestran en el explorador reflejan los mensajes de correo electrónico recibidos después del análisis inicial de la investigación. Por lo tanto, un clúster de correo electrónico que muestra una cantidad original de 10 mensajes de correo electrónico mostraría un total de 15 en la lista de correo electrónico a menos de 15 mensajes de correo electrónico entre la fase de análisis de la investigación y cuando el administrador Revise la investigación.  De manera similar, las investigaciones antiguas pueden comenzar con recuentos mayores que las consultas del explorador, ya que defender para Office 365 P2 expira los datos después de 7 días para las pruebas y 30 días para las licencias de pago.  Mostrar recuentos históricos y actuales en vistas diferentes se realiza para indicar el impacto del correo electrónico en el momento de la investigación y el impacto actual hasta el momento en que se ejecuta la corrección.
 
 Como ejemplo, considere el siguiente escenario. El primer clúster de tres mensajes de correo electrónico se consideró phish. Se ha encontrado otro clúster de mensajes similares con la misma dirección IP y asunto, y se ha considerado malintencionado, ya que algunos de ellos se identificaron como phish durante la detección inicial.
 
@@ -198,13 +198,13 @@ En la pestaña **máquinas** , puede ver todos los equipos identificados como pa
 
 ![Página de la máquina de investigación de aire](../../media/air-investigationmachinepage.png)
 
-Como parte de las guías, AIR correlaciona las amenazas de correo electrónico con los dispositivos (por ejemplo, malware zapped). Por ejemplo, una investigación pasa un hash de archivo malintencionado entre en [Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos.
+Como parte de las guías, AIR correlaciona las amenazas de correo electrónico con los dispositivos (por ejemplo, malware zapped). Por ejemplo, una investigación pasa un hash de archivo malintencionado a [Microsoft defender para](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) que el extremo lo investigue. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos.
 
 Puede:
 
 - Obtenga información general visual de las amenazas y los equipos actuales encontrados.
-- Seleccione un equipo para abrir una vista en la investigación de [ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) relacionada en el centro de seguridad de Microsoft defender.
+- Seleccione un equipo para abrir una vista en las investigaciones relacionadas [de Microsoft defender para extremo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) en el centro de seguridad de Microsoft defender.
 
 ### <a name="entity-investigation"></a>Investigación de entidades
 
@@ -234,7 +234,7 @@ Puede:
 
 ****
 
-|Análisis| Descripción|
+|Análisis| Description|
 |---|---|
 |Investigación de violaciones de DLP|Investigue las violaciones detectadas por la [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) (DLP)|
 |Extracción de indicadores de correo electrónico|Extraer indicadores desde el encabezado, el cuerpo y el contenido de un mensaje de correo electrónico para su investigación|
@@ -249,7 +249,7 @@ Puede:
 |Investigación de anomalías de correo no deseado y de malware saliente|Detección de malware, phish o correo no deseado dentro de la organización y salientes procedentes de los usuarios de la organización|
 |Investigación del dominio del remitente|Comprobación bajo demanda de la reputación del dominio del [gráfico de seguridad inteligente de Microsoft](https://www.microsoft.com/security/operations/intelligence) y orígenes de inteligencia de amenazas externos|
 |Investigación de IP del remitente| Comprobación bajo demanda de la reputación de IP del [gráfico de seguridad inteligente de Microsoft](https://www.microsoft.com/security/operations/intelligence) y orígenes de inteligencia de amenazas externos|
-|URL hace clic en investigación| Investigar los clics de usuarios protegidos por [vínculos seguros en Office 365 ATP](atp-safe-links.md) en su organización|
+|URL hace clic en investigación| Investigue los clics de usuarios protegidos por [vínculos seguros en Microsoft defender para Office 365](atp-safe-links.md) en su organización|
 |Investigación de reputación de dirección URL|Comprobación bajo demanda de reputación de dirección URL del [gráfico de seguridad inteligente de Microsoft](https://www.microsoft.com/security/operations/intelligence) y orígenes de inteligencia de amenazas externos|
 |Investigación de actividad de usuario|Analizar anomalías de actividad de usuario en [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|
 |Extracción de indicadores de correo electrónico notificados por el usuario|Extraer indicadores del encabezado, el cuerpo y el contenido del [correo electrónico notificado](enable-the-report-message-add-in.md) por el usuario para su investigación|
@@ -275,4 +275,4 @@ Puede:
 
 - [Revisar y aprobar acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
-- [Obtenga información sobre la investigación y la respuesta automatizadas en la protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Obtenga información sobre la investigación y la respuesta automatizadas en Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Los administradores pueden aprender a usar las etiquetas de cuarentena para controlar lo que los usuarios pueden hacer a sus mensajes en cuarentena.
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819745"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845701"
 ---
 # <a name="quarantine-tags"></a>Etiquetas de cuarentena
 
@@ -68,11 +68,11 @@ Puede crear y asignar etiquetas de cuarentena en el centro de seguridad & cumpli
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Paso 1: crear etiquetas de cuarentena en el centro de seguridad & cumplimiento
 
-1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena** .
+1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena**.
 
-2. En la página **etiquetas de cuarentena** , seleccione **Agregar etiqueta personalizada** .
+2. En la página **etiquetas de cuarentena** , seleccione **Agregar etiqueta personalizada**.
 
-3. Se abrirá el asistente **nueva etiqueta** . En la página **nombre de etiqueta** , escriba un nombre breve pero único en el campo Nombre de **etiqueta** . Deberá identificar y seleccionar la etiqueta por nombre en los próximos pasos. Cuando termine, haga clic en **Siguiente** .
+3. Se abrirá el asistente **nueva etiqueta** . En la página **nombre de etiqueta** , escriba un nombre breve pero único en el campo Nombre de **etiqueta** . Deberá identificar y seleccionar la etiqueta por nombre en los próximos pasos. Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **acceso al mensaje de destinatarios** , seleccione uno de los siguientes valores:
    - **Sin acceso**
@@ -96,11 +96,11 @@ Puede crear y asignar etiquetas de cuarentena en el centro de seguridad & cumpli
 
    Estos permisos y su efecto en los mensajes en cuarentena y en las notificaciones de correo no deseado para el usuario final se describen en la sección [detalles de permisos de etiqueta de cuarentena](#quarantine-tag-permission-details) más adelante en este artículo.
 
-   Cuando termine, haga clic en **Siguiente** .
+   Cuando termine, haga clic en **Siguiente**.
 
 5. En la página de **Resumen** que aparece, revise la configuración. Puede hacer clic en **Editar** en cada configuración para modificarla.
 
-   Cuando haya terminado, haga clic en **Enviar** .
+   Cuando haya terminado, haga clic en **Enviar**.
 
 6. Haga clic en **listo** en la página de confirmación que aparece.
 
@@ -229,7 +229,7 @@ En las características de protección _admitidas_ que ponen mensajes o archivos
 |Característica|¿Se admiten las etiquetas de cuarentena?|Etiquetas de cuarentena predeterminadas usadas|
 |---|:---:|---|
 |[Directivas contra correo no deseado](configure-your-spam-filter-policies.md): <ul><li>**Correo no deseado** ( _SpamAction_ )</li><li>**Correo no deseado de alta confianza** ( _HighConfidenceSpamAction_ )</li><li>**Correo electrónico de suplantación de identidad** ( _PhishSpamAction_ )</li><li>**Correo electrónico de suplantación de identidad de alta confianza** ( _HighConfidencePhishAction_ )</li><li>**Correo electrónico masivo** ( _BulkSpamAction_ )</li></ul>|Sí|<ul><li>DefaultSpamTag (acceso completo)</li><li>DefaultHighConfSpamTag (acceso completo)</li><li>DefaultPhishTag (acceso completo)</li><li>DefaultHighConfPhishTag (sin acceso)</li><li>DefaultBulkTag (acceso completo)</li></ul>
-|Directivas contra la suplantación de identidad: <ul><li>[Protección de inteligencia de suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**Si un usuario suplantado envía un correo electrónico** ( _TargetedUserProtectionAction_ )</li><li>**Si un dominio suplantado envía un correo electrónico** ( _TargetedDomainProtectionAction_ )</li><li>Inteligencia de buzones **Mailbox intelligence** \> **Si un usuario suplantado envía un correo electrónico** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|No|No aplicable|
+|Directivas contra la suplantación de identidad: <ul><li>[Protección de inteligencia de suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings) ( _AuthenticationFailAction_ )</li><li>[Protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**Si un usuario suplantado envía un correo electrónico** ( _TargetedUserProtectionAction_ )</li><li>**Si un dominio suplantado envía un correo electrónico** ( _TargetedDomainProtectionAction_ )</li><li>Inteligencia de buzones **Mailbox intelligence** \> **Si un usuario suplantado envía un correo electrónico** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|No|No aplicable|
 |[Directivas antimalware](configure-anti-malware-policies.md): todos los mensajes detectados siempre se ponen en cuarentena.|No|No aplicable|
 |[ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|No aplicable|
 |[Reglas de flujo de correo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (también conocidas como reglas de transporte) con la acción: **entregar el mensaje a la cuarentena hospedada** ( _cuarentena_ ).|No|No aplicable|
@@ -243,7 +243,7 @@ Si está satisfecho con los permisos de usuario final que proporcionan las etiqu
 
 En [configurar las directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)se describen las instrucciones completas para la creación y modificación de las directivas contra el correo no deseado.
 
-1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** \> de amenazas y, a continuación, seleccione **anti-spam** . O bien, Abra <https://protection.office.com/antispam> .
+1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** \> de amenazas y, a continuación, seleccione **anti-spam**. O bien, Abra <https://protection.office.com/antispam> .
 
 2. Busque y seleccione una directiva contra correo no deseado existente para editarla o cree una nueva Directiva contra correo no deseado.
 
@@ -255,7 +255,7 @@ En [configurar las directivas contra correo no deseado en EOP](configure-your-sp
   
    ![Selecciones de etiquetas de cuarentena en una directiva contra correo no deseado](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. Cuando haya terminado, haga clic en **Guardar** .
+5. Cuando haya terminado, haga clic en **Guardar**.
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Asignar etiquetas de cuarentena en directivas contra correo no deseado en PowerShell
 
@@ -304,9 +304,9 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 La configuración global de las etiquetas de cuarentena le permite personalizar las notificaciones de correo no deseado para el usuario final que se envían a los destinatarios de los mensajes que se pusieron en cuarentena. Para obtener más información acerca de estas notificaciones, consulte [End-User spam Notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena** .
+1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena**.
 
-2. En la página **etiquetas de cuarentena** , seleccione **configuración global** .
+2. En la página **etiquetas de cuarentena** , seleccione **configuración global**.
 
 3. En el control flotante **configuración de notificación de cuarentena** que se abre, configure algunas o todas las opciones siguientes:
 
@@ -318,7 +318,7 @@ La configuración global de las etiquetas de cuarentena le permite personalizar 
 
    - **Elija lenguaje** : las notificaciones de correo no deseado para el usuario final ya se localizan en función de la configuración de idioma del destinatario. Puede especificar texto personalizado en diferentes idiomas para el **nombre para mostrar** y los valores de **declinación de responsabilidades** .
 
-     Seleccione al menos un idioma en el cuadro primer idioma y, a continuación, haga clic en **Agregar** . Puede seleccionar varios idiomas haciendo clic en **Agregar** después de cada uno de ellos. Un cuadro de idioma de sección muestra todos los idiomas que ha seleccionado:
+     Seleccione al menos un idioma en el cuadro primer idioma y, a continuación, haga clic en **Agregar**. Puede seleccionar varios idiomas haciendo clic en **Agregar** después de cada uno de ellos. Un cuadro de idioma de sección muestra todos los idiomas que ha seleccionado:
 
      ![Idiomas seleccionados en el segundo cuadro de idioma de la configuración de notificación de cuarentena global de las etiquetas de cuarentena](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
@@ -340,7 +340,7 @@ La configuración global de las etiquetas de cuarentena le permite personalizar 
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>Ver las etiquetas de cuarentena en el centro de seguridad & cumplimiento
 
-1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena** .
+1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena**.
 
 - Para ver la configuración de las etiquetas de cuarentena integradas o personalizadas, seleccione la etiqueta cuarentena de la lista (no active la casilla de verificación).
 
@@ -384,9 +384,9 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
   Si se está usando la etiqueta Quarantine, [reemplace la etiqueta cuarentena asignada antes de](#step-2-assign-a-quarantine-tag-to-supported-features) quitarla.
 
-1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena** .
+1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración** \> **Policy** de amenazas y, a continuación, seleccione **marcas de cuarentena**.
 
-2. En la página **etiquetas de cuarentena** , seleccione la etiqueta de cuarentena personalizada que desee quitar y, a continuación, haga clic en **Eliminar etiqueta** .
+2. En la página **etiquetas de cuarentena** , seleccione la etiqueta de cuarentena personalizada que desee quitar y, a continuación, haga clic en **Eliminar etiqueta**.
 
 3. Haga clic en **quitar etiqueta** en el cuadro de diálogo de confirmación que aparece.
 

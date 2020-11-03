@@ -1,6 +1,6 @@
 ---
 title: Actualizar la API de incidentes
-description: Obtenga información sobre cómo actualizar incidentes mediante la API de Microsoft Threat Protection
+description: Obtenga información sobre cómo actualizar incidentes con la API de Microsoft 365 defender
 keywords: actualización, API, incidente
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203645"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844841"
 ---
 # <a name="update-incidents-api"></a>Actualizar la API de incidentes
 
@@ -32,7 +32,7 @@ ms.locfileid: "48203645"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 >[!IMPORTANT] 
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -49,7 +49,7 @@ Actualiza las propiedades de un incidente existente.
 
 
 ## <a name="permissions"></a>Permisos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [acceso a las API de Microsoft Threat Protection](api-access.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [acceso a las API de Microsoft 365 defender](api-access.md).
 
 Tipo de permiso |   Permiso  |   Nombre para mostrar del permiso
 :---|:---|:---
@@ -80,7 +80,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 <br>Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. 
 <br>Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad | Tipo | Descripción
+Propiedad | Tipo | Description
 :---|:---|:---
 status | Enum | Especifica el estado actual de la alerta. Los valores posibles son ```Active``` : ```Resolved``` y ```Redirected``` .
 assignedTo | string | Propietario del incidente.

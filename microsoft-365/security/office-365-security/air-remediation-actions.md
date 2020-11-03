@@ -20,12 +20,12 @@ description: Obtenga información sobre las acciones de corrección tras la inve
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446712"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844543"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Acciones de corrección tras la investigación automatizada en Microsoft defender para Office 365
 
@@ -53,7 +53,7 @@ En la tabla siguiente se resumen las amenazas y las acciones de corrección adec
 |Categoría|Amenaza/riesgo|Acción (es) de corrección|
 |---|---|---|
 |Correo electrónico|Malware|Eliminación temporal de correo electrónico/clúster <br/><br/>Si hay más de un puñado de mensajes de correo electrónico en un clúster que contienen malware, se considerará que el clúster es malintencionado.|
-|Correo electrónico|Dirección URL malintencionada<br/>(Los vínculos seguros detectaron una dirección URL malintencionada [en Office 365 ATP](atp-safe-links.md).|Eliminación temporal de correo electrónico/clúster <br/><br/>El correo electrónico que contiene una dirección URL malintencionada se considera malintencionado.|
+|Correo electrónico|Dirección URL malintencionada<br/>(Los vínculos seguros han detectado una dirección URL malintencionada [en Microsoft defender para Office 365](atp-safe-links.md).|Eliminación temporal de correo electrónico/clúster <br/><br/>El correo electrónico que contiene una dirección URL malintencionada se considera malintencionado.|
 |Correo electrónico|Suplantación de identidad|Eliminación temporal de correo electrónico/clúster <br/><br/>Si más de un puñado de mensajes de correo electrónico en un clúster contienen intentos de suplantación de identidad, el clúster se considera phish.|
 |Correo electrónico|Phish zapped <br/>(Los mensajes de correo electrónico se entregaron y [zapped](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)).|Eliminación temporal de correo electrónico/clúster <br/><br/>Los informes están disponibles para ver mensajes de zapped. [Consulte si Zap movió un mensaje y preguntas más frecuentes](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message).|
 |Correo electrónico|Correo electrónico de phish perdido [notificado](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) por un usuario|[Investigación automatizada desencadenada por el informe del usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

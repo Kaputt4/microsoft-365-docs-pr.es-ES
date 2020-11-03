@@ -1,6 +1,6 @@
 ---
-title: Trabajar con los resultados de la consulta de búsqueda avanzada en protección contra amenazas de Microsoft
-description: Aprovechar al máximo la mayoría de los resultados de la consulta de búsqueda avanzada en la protección contra amenazas de Microsoft
+title: Trabajar con los resultados de la consulta de búsqueda avanzada en Microsoft 365 defender
+description: Obtener la mayor parte de los resultados de la consulta obtenidos por la búsqueda avanzada en Microsoft 365 defender
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, Microsoft 365, protección contra amenazas de Microsoft, visualización, gráfico, filtros, explorar en profundidad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431080"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844133"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Trabajar con los resultados de la consulta de búsqueda avanzada
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431080"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -46,7 +46,7 @@ Aunque puede crear consultas de [búsqueda avanzada](advanced-hunting-overview.m
 ## <a name="view-query-results-as-a-table-or-chart"></a>Ver los resultados de la consulta como una tabla o un gráfico
 De forma predeterminada, la búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede mostrar los mismos datos que un gráfico. La búsqueda avanzada es compatible con las siguientes vistas:
 
-| Tipo de vista | Descripción |
+| Tipo de vista | Description |
 | -- | -- |
 | **Table** | Muestra los resultados de la consulta en formato de tabla. |
 | **Gráfico de columnas** | Representa una serie de elementos únicos en el eje x como barras verticales cuyos altos representan valores numéricos de otro campo. |

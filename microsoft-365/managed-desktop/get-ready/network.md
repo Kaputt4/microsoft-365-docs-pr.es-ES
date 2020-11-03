@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ee93840cb6855d776d8fd3007bc6ec7c7f44fa29
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28f438c80f2da5740f7fcd0a2927fede1af6eb50
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308068"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844073"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el Escritorio administrado de Microsoft
 
@@ -60,7 +60,7 @@ Optimización de distribución | [Configurar la optimización de entrega para la
 Microsoft 365 | [Intervalos de direcciones IP y URL de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | La [identidad híbrida requiere puertos y protocolos](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) y [los requisitos de puerto de servicios de dominio de Active Directory y](https://aka.ms/AA26ygm) Active Directory 
 Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Puntos de conexión de red para Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-Protección contra amenazas avanzada de Microsoft Defender (ATP). | [Extremos de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Microsoft Defender para punto de conexión | [Requisitos de Microsoft defender para puntos de conexión](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Requisitos de red de Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---

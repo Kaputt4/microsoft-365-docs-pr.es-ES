@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527023"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845197"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
 
@@ -40,8 +40,8 @@ Microsoft 365 para las campañas dificulta que los hackers obtengan acceso a su 
 ## <a name="use-secure-email-practices"></a>Usar prácticas de correo electrónico seguro
 Todos los usuarios deben conocer y usar estos procedimientos de correo electrónico para ayudar a mantener seguro su correo electrónico:
 - Configurar el correo electrónico para usar la autenticación multifactor con la aplicación autenticadora.
-- Compruebe los mensajes de correo electrónico legítimos y busque sugerencias de seguridad de ATP avanzada protección contra phishing.
-- Abra solo vínculos seguros y datos adjuntos, tal como lo ha comprobado los vínculos seguros de ATP y los datos adjuntos seguros de ATP.
+- Compruebe los mensajes de correo electrónico legítimos y busque sugerencias de seguridad de la protección contra phishing avanzada en defender para Office 365.
+- Abrir sólo vínculos seguros y datos adjuntos, tal y como lo comprueban los vínculos seguros y los datos adjuntos seguros.
 
 Obtenga más información acerca de la [suplantación de identidad y otros ataques](m365-campaigns-phishing-and-attacks.md). 
 

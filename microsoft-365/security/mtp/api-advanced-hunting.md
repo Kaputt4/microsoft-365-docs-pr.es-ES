@@ -1,6 +1,6 @@
 ---
 title: API de búsqueda avanzada
-description: Obtenga información sobre cómo ejecutar consultas de búsqueda avanzada mediante la API de protección contra amenazas de Microsoft
+description: Obtenga información sobre cómo ejecutar consultas de búsqueda avanzada mediante la API de Microsoft 365 defender
 keywords: Búsqueda avanzada, API, API, MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197814"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844037"
 ---
 # <a name="advanced-hunting-apis"></a>API de búsqueda avanzada
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197814"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 >[!IMPORTANT] 
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -46,7 +46,7 @@ ms.locfileid: "48197814"
 
 
 ## <a name="permissions"></a>Permisos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [acceso a las API de Microsoft Threat Protection](api-access.md)
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [acceso a las API de Microsoft 365 defender](api-access.md)
 
 Tipo de permiso |   Permiso  |   Nombre para mostrar del permiso
 :---|:---|:---
@@ -73,7 +73,7 @@ Content-Type    | application/json
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro | Tipo    | Descripción
+Parámetro | Tipo    | Description
 :---|:---|:---
 Consulta | Texto |  La consulta que se va a ejecutar. **Necesario**.
 
@@ -82,7 +82,7 @@ Si se ejecuta correctamente, este método devuelve 200 OK y el objeto _QueryResp
 
 El objeto Response se divide en 3 partes (propiedades):<br>
 1) ```Stats``` -Estadísticas de rendimiento de consultas.<br>
-2) ```Schema``` -El esquema de la respuesta, una lista de pares de nombre-tipo para cada columna. <br>
+2) ```Schema``` -El esquema de la respuesta, una lista de pares de Name-Type para cada columna. <br>
 3) ```Results``` -Una lista de eventos de búsqueda avanzada.
 
 ## <a name="example"></a>Ejemplo
@@ -168,4 +168,4 @@ Aquí tiene un ejemplo de la respuesta.
 ```
 
 ## <a name="related-topic"></a>Tema relacionado
-- [Acceso a las API de Microsoft Threat Protection](api-access.md)
+- [Acceso a las API de Microsoft 365 defender](api-access.md)

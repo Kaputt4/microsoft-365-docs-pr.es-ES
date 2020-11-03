@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 6fc99048a4a60991b9ba098249692584f596545b
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 30fefe49dbbe1bffa0447d66695431d30342b843
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305120"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843144"
 ---
 # <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>Notificación de infracción del servicio de tratamiento de datos para Windows Enterprise en virtud del RGPD
 
@@ -33,11 +33,11 @@ La seguridad está integrada en el servicio de tratamiento de datos de Microsoft
 
 |**Stage**|**Descripción**|
 | ------- | ------------- |
-| ***1: detección*** | Primera indicación de un posible incidente. |
-| ***2: evaluación*** | Un miembro del equipo de respuesta ante incidentes evalúa el impacto y la gravedad del evento. Según las pruebas, la evaluación puede o no provocar una escalación al equipo de respuesta de seguridad. |
-| ***3: diagnóstico*** | Los expertos en respuestas de seguridad llevan a cabo la investigación técnica o forense, la identificación de estrategias de contención, la mitigación y la aplicación de soluciones alternativas. Si el equipo de seguridad cree que los datos del cliente pueden haberse expuesto a una ejecución individual ilegal o no autorizada, se inicia el proceso de notificación de incidentes del cliente de forma paralela. |
-| ***4: estabilización y recuperación*** | El equipo de respuesta ante incidentes crea un plan de recuperación para mitigar el problema. De forma inmediata y en paralelo al diagnóstico, pueden darse pasos de contención de crisis, como poner en cuarentena los sistemas afectados. Pueden planearse mitigaciones a largo plazo después de solucionar el riesgo inmediato. |
-| ***5: cierre y análisis posterior*** | El equipo de respuesta ante incidentes crea un análisis posterior que expone los detalles del incidente, con la intención de revisar directivas, procedimientos y procesos para evitar que el evento vuelva a producirse. |
+| **_1: Detección_* _ | Primera indicación de un posible incidente. |
+| _*_2: Evaluación_*_ | Un miembro del equipo de respuesta ante incidentes evalúa el impacto y la gravedad del evento. Según las pruebas obtenidas, la evaluación puede o no derivarse al equipo de respuesta de seguridad. |
+| _*_3: Diagnóstico_*_ | Los expertos en respuestas de seguridad llevan a cabo la investigación técnica o forense, la identificación de estrategias de contención, la mitigación y la aplicación de soluciones alternativas. Si el equipo de seguridad cree que los datos del cliente pueden haberse expuesto a una ejecución individual ilegal o no autorizada, se inicia el proceso de notificación de incidentes del cliente de forma paralela. |
+| _*_4: Estabilización y recuperación_*_ | El equipo de respuesta ante incidentes crea un plan de recuperación para mitigar el problema. De forma inmediata y en paralelo al diagnóstico, pueden darse pasos de contención de crisis, como poner en cuarentena los sistemas afectados. Pueden planearse mitigaciones a largo plazo después de solucionar el riesgo inmediato. |
+| _*_5: Cierre y análisis posterior_*_ | El equipo de respuesta ante incidentes crea un análisis posterior que expone los detalles del incidente con la intención de revisar directivas, procedimientos y procesos y evitar que se vuelva a producir. |
 
 Los procesos de detección usados por el servicio de tratamiento de datos de Microsoft para Windows Enterprise están diseñados para detectar eventos que puedan poner en riesgo la confidencialidad, integridad y disponibilidad del servicio de tratamiento de datos para Windows Enterprise. Varios eventos pueden desencadenar una investigación: 
 
@@ -50,21 +50,21 @@ Los procesos de detección usados por el servicio de tratamiento de datos de Mic
 
  ## <a name="data-processor-service-for-windows-enterprise-data-breach-response"></a>Respuesta a infracciones del servicio de tratamiento de datos para Windows Enterprise 
 
- Microsoft asigna los niveles de prioridad y gravedad adecuados investigando el impacto funcional, la capacidad de recuperación y el impacto de la información del incidente. Tanto la prioridad como la gravedad pueden cambiar a lo largo de la investigación, en función de nuevos resultados y conclusiones. Los eventos de seguridad que impliquen un riesgo inminente o confirmado para los datos de los clientes se tratan como muy graves y se trabaja de forma urgente para su resolución. El servicio de tratamiento de datos de Microsoft para Windows Enterprise clasifica el impacto del incidente en la información en las siguientes categorías de infracciones: 
+ Microsoft asigna los niveles de prioridad y gravedad adecuados investigando el impacto funcional, la capacidad de recuperación y el impacto de la información del incidente. Tanto la prioridad como la gravedad pueden cambiar a lo largo de la investigación, en función de nuevos resultados y conclusiones. Los eventos de seguridad que impliquen un riesgo inminente o confirmado para los datos de los clientes se tratan como muy graves y se trabaja de forma urgente para su resolución. El servicio de tratamiento de datos de Microsoft para Windows Enterprise clasifica la información sobre el impacto del incidente en las siguientes categorías de vulneraciones: 
 
-| **Categoría**             | **Definición**                                                                                                                   |
+| _ *Categoría**             | **Definición**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| ***Ninguna***               | No se ha extraído, cambiado, eliminado o comprometido ninguna información. |
-| ***Infracción de privacidad***     | Se ha accedido a datos personales confidenciales de contribuyentes, empleados, beneficiarios, etc., o se han eliminado. |
-| ***Infracción de propietario*** | Se ha accedido a información privilegiada sin clasificar, como información de infraestructura crítica protegida (PCII), o se ha eliminado.  |
-| ***Pérdida de integridad***     | Se ha modificado o eliminado información confidencial o de propiedad. |
+| **_Ninguna_* _               | No se ha extraído, cambiado, eliminado o comprometido ninguna información. |
+| _*_Vulneración de privacidad_*_     | Se ha eliminado o se ha accedido a datos personales confidenciales de contribuyentes, empleados, beneficiarios, etc. |
+| _*_Vulneración de propiedad_*_ | Se ha eliminado o se ha accedido a información no clasificada de propiedad, como información de infraestructura crítica protegida (PCII). |
+| _*_Pérdida de integridad_*_     | Se ha modificado o eliminado información confidencial o de propiedad. |
 
 El equipo de respuesta de seguridad trabaja con los ingenieros de seguridad del servicio de tratamiento de datos de Microsoft para Windows Enterprise y con los expertos en la materia para clasificar el evento en función de los datos reales que se obtienen de las evidencias. Se puede clasificar un evento de seguridad como: 
 
- - **Falso positivo**: un evento que cumple con los criterios de detección pero que se considera parte de una práctica comercial normal y es preciso que sea filtrado. El equipo de servicio se ocupará de identificar la causa principal de los falsos positivos y afrontarlos de forma sistemática aprovechando las fuentes de detección y afinarlas en caso necesario. 
- - **Incidente de seguridad**: un incidente en el que se produce un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipos o instalaciones de Microsoft; o un acceso no autorizado a dichos equipos o instalaciones, que da como resultado la pérdida, divulgación o modificación de datos de clientes o de soporte técnico. 
+ - _*Falso positivo**: un evento que cumple con los criterios de detección pero que se considera parte de una práctica comercial normal y es preciso que sea filtrado. El equipo de servicio se ocupará de identificar la causa principal de los falsos positivos y afrontarlos de forma sistemática aprovechando las fuentes de detección y afinarlas en caso necesario. 
+ - **Incidente de seguridad** : un incidente en el que se produce un acceso ilegal a los datos de los clientes o de soporte técnico almacenados en equipos o instalaciones de Microsoft; o un acceso no autorizado a dichos equipos o instalaciones, que da como resultado la pérdida, divulgación o modificación de datos de clientes o de soporte técnico. 
  - **Incidente de seguridad que debe notificarse al cliente (CRSI):** un acceso o uso ilegal o no autorizado a sistemas, equipos o instalaciones de Microsoft, que resulta en la divulgación, modificación o pérdida de datos de clientes. 
- - **Infracción de privacidad**: caso específico de un incidente relativo a la seguridad que involucra datos personales. Los procedimientos de control son los mismos que los de un incidente de seguridad. 
+ - **Infracción de privacidad** : caso específico de un incidente relativo a la seguridad que involucra datos personales. Los procedimientos de control son los mismos que los de un incidente de seguridad. 
 
  Para que se declare una CRSI, Microsoft debe determinar que el acceso no autorizado a los datos del cliente se ha producido, o es probable que lo haya hecho, o existe un compromiso legal o contractual que fuerce la notificación. Es preferible, aunque no se requiere, que se conozcan los pasos de impacto del cliente específico, acceso a los recursos y reparación. Por lo general, se declara que una incidencia es un CRSI tras la conclusión de la etapa de diagnóstico de una incidencia de seguridad; sin embargó, la declaración puede producirse en cualquier momento si la información pertinente se encuentra disponible. El administrador de la incidencia de seguridad debe establecer pruebas más allá de la duda razonable de que se ha producido un evento del que informar para iniciar la ejecución del proceso de notificación de incidencias del cliente. 
 
@@ -85,7 +85,7 @@ Una vez que se declara un CRSI, el proceso de notificación tiene lugar tan pron
 
  El servicio de tratamiento de datos de Microsoft para Windows Enterprise proporciona a los clientes información detallada, lo que les permite realizar investigaciones internas y satisfacer los compromisos contraídos con los usuarios finales sin retrasar indebidamente el proceso de notificación. 
 
-La notificación de una vulneración de datos personales se entregará al cliente por cualquier medio elegido por Microsoft, incluyendo el correo electrónico. La notificación de una vulneración de datos se enviará a la lista de contactos de seguridad proporcionada en Azure Security Center, que puede configurarse siguiendo las [directrices de implementación](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Si no se proporciona información de contacto en el centro de seguridad de Azure, la notificación se envía a uno o varios administradores de una suscripción de Azure. Para asegurar que la notificación pueda entregarse correctamente, es responsabilidad del cliente proporcionar información de contacto administrativa correcta en cada suscripción y portal de servicios en línea aplicables.
+Se hará llegar la notificación de una vulneración de datos personales al cliente por cualquier medio elegido por Microsoft, incluyendo el correo electrónico. Se enviará una notificación de la vulneración de datos a la lista de contactos de seguridad proporcionada a Azure defender *, que se puede configurar siguiendo [las instrucciones de implementación](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Si no se proporciona ninguna información de contacto en Azure Defender* , la notificación se enviará a uno o más administradores de una suscripción de Azure. Para asegurar la correcta entre de la notificación, es responsabilidad del cliente proporcionar la información administrativa de contacto correcta en cada suscripción y portal de servicios en línea aplicables.
 
 El equipo del servicio de tratamiento de datos para Windows Enterprise también puede elegir enviar notificaciones a otros miembros del personal de Microsoft, como, por ejemplo, el servicio de atención al cliente, los administradores de cuentas de clientes o los administradores de cuentas técnicas. Por lo general, estas personas suelen tener relaciones estrechas con los clientes y pueden hacer que las correcciones se lleven a cabo más rápidamente. 
 

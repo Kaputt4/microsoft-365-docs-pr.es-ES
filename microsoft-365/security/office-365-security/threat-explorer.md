@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769381"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845685"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
-Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto **exploradores** como **detecciones en tiempo real** (anteriormente *informes en tiempo real* , [vea lo nuevo](#new-features-in-threat-explorer-and-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas** y, a continuación, elija **Explorador** _o_ **detecciones en tiempo real** .
+Si su organización tiene [Microsoft defender para Office 365](office-365-atp.md)y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene **detectadas las detecciones en tiempo real** (ya sean del **Explorador** o de tiempo real) (anteriormente, *informes en tiempo real* , [consulte what's New](#new-features-in-threat-explorer-and-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas** y, a continuación, elija **Explorador** _o_ **detecciones en tiempo real**.
 
-|Con el plan ATP 2, verá:|Con el plan ATP 1, verá:|
+|Con Microsoft defender para Office 365 plan 2, verá:|Con Microsoft defender para Office 365 plan 1, verá:|
 |---|---|
 |![Explorador de amenazas](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,27 +42,27 @@ Con este informe, puede:
 
 - [Ver malware detectado por las características de seguridad de Microsoft 365](#see-malware-detected-in-email-by-technology)
 - [Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto](#view-data-about-phishing-urls-and-click-verdict)
-- [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
+- [Inicie un proceso de investigación y respuesta automatizado desde una vista del explorador (solo en el](#start-automated-investigation-and-response) caso de defender para Office 365 plan 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones en tiempo real
 
-## <a name="tags-in-threat-explorer"></a>Etiquetas en el explorador de amenazas
+### <a name="tags-in-threat-explorer"></a>Etiquetas en el explorador de amenazas
 
 > [!NOTE]
 > La característica de etiquetas de usuario está en versión preliminar, no está disponible para todos los usuarios y está sujeta a cambios. Para obtener información sobre la programación de versiones, consulte el plan de desarrollo de Microsoft 365.
 
-Las etiquetas de usuario son identificadores para grupos de usuarios específicos en Microsoft defender para Office 365. Para obtener más información sobre las etiquetas, las etiquetas de licencias y la configuración, vea más información aquí: [etiquetas de usuario en Office 365 ATP](user-tags.md).
+Las etiquetas de usuario son identificadores para grupos de usuarios específicos en Microsoft defender para Office 365. Para obtener más información acerca de las etiquetas, licencias y configurarlas, vea [etiquetas de usuario en defender para Office 365](user-tags.md).
 
-En el explorador de amenazas, podrá ver información sobre las etiquetas del usuario en las siguientes experiencias:
+En el explorador de amenazas, puede ver información sobre las etiquetas del usuario en las siguientes experiencias:
 
 #### <a name="email-grid-view"></a>Vista de cuadrícula de correo electrónico
 
 La columna etiquetas que se muestra en la cuadrícula de correo electrónico contendrá todas las etiquetas que se han aplicado a los buzones de remitente o destinatario. De forma predeterminada, las etiquetas del sistema, como las cuentas de prioridad, se muestran en primer lugar.
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas de filtro](../../media/tags-grid.png)
+> ![Filtrar etiquetas en la vista de cuadrícula de correo electrónico](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrado
 Ahora tenemos etiquetas como filtro para que pueda buscar con las cuentas de prioridad o con escenarios específicos de etiquetas de usuario (e incluso excluir los resultados con determinadas etiquetas como parte de esta experiencia). La combinación de estos con los otros varios filtros proporcionados le ayudará a limitar el ámbito de investigación
@@ -123,7 +123,7 @@ Además de identificar todos los eventos de entrega y posterior a la entrega, la
 
 Hoy en día, se presenta la ubicación de entrega dentro de la cuadrícula de correo y el control flotante de correo electrónico. En el futuro, el campo Ubicación de entrega se cambiará de nombre a la ubicación de entrega original. Además, también presentamos otro campo llamado última ubicación de entrega.
 
-La ubicación de entrega original proporcionaría más información sobre dónde se entregó un correo electrónico inicialmente. La última ubicación de entrega incluiría la ubicación en la que puede haber descargado un correo electrónico después de acciones del sistema como ZAP o acciones de administración, como **mover a elementos eliminados** . La última ubicación de entrega tiene como objetivo informar a los administradores de la última ubicación conocida del mensaje después de la entrega o cualquier acción del sistema o de administración. Por diseño, no incluye acciones relacionadas con el usuario final en el correo electrónico. Por ejemplo: Si un usuario elimina un mensaje o mueve el mensaje a archivo/pst, no se actualizará la ubicación de entrega del mensaje. Sin embargo, si una acción del sistema actualizó la ubicación (por ejemplo, ZAP que da como resultado un traslado de correo electrónico a cuarentena), vería la última ubicación de entrega como cuarentena.
+La ubicación de entrega original proporcionaría más información sobre dónde se entregó un correo electrónico inicialmente. La última ubicación de entrega incluiría la ubicación en la que puede haber descargado un correo electrónico después de acciones del sistema como ZAP o acciones de administración, como **mover a elementos eliminados**. La última ubicación de entrega tiene como objetivo informar a los administradores de la última ubicación conocida del mensaje después de la entrega o cualquier acción del sistema o de administración. Por diseño, no incluye acciones relacionadas con el usuario final en el correo electrónico. Por ejemplo: Si un usuario elimina un mensaje o mueve el mensaje a archivo/pst, no se actualizará la ubicación de entrega del mensaje. Sin embargo, si una acción del sistema actualizó la ubicación (por ejemplo, ZAP que da como resultado un traslado de correo electrónico a cuarentena), vería la última ubicación de entrega como cuarentena.
 
 > [!div class="mx-imgBorder"]
 > ![Ubicaciones de entrega actualizadas](../../media/Updated_Delivery_Location.png)
@@ -196,6 +196,16 @@ Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actual
 - [Actualizar en el proceso de actualización](#update-in-the-refresh-process)
 - [Desglose del gráfico para agregar a los filtros](#chart-drilldown-to-add-to-filters)
 - [En actualizaciones de información del producto](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>Filtrar por etiquetas de usuario
+
+Ahora puede ordenar y filtrar por etiquetas de sistema o de usuario personalizadas para captar rápidamente el ámbito de las amenazas. Vea [etiquetas de usuario en Office 365 ATP](user-tags.md) para obtener más información.
+
+> [!IMPORTANT]
+> El filtrado y la ordenación por etiquetas de usuario se encuentra actualmente en versión preliminar pública.
+> Se puede modificar de forma sustancial antes de que se publique comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se proporciona a continuación.
+
+![Columna de etiquetas en el explorador](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Mejoras en la zona horaria
 
@@ -345,7 +355,7 @@ Supongamos que desea ver el malware detectado en el correo electrónico con la t
 
 1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware** .
+2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware**.
 
    > [!div class="mx-imgBorder"]
    > ![Menú Ver para el explorador](../../media/ExplorerViewEmailMalwareMenu.png)
@@ -372,12 +382,12 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish** .
+2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish**.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú Ver para el explorador](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![Ver el menú del explorador en el contexto de suplantación de identidad](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Haga clic en **remitente** y, a continuación, elija **direcciones URL** ,  >  **haga clic en veredicto** .
+3. Haga clic en **remitente** y, a continuación, elija **direcciones URL** ,  >  **haga clic en veredicto**.
 
 4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado** y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
@@ -422,7 +432,7 @@ Supongamos que desea ver los mensajes de correo electrónico que los usuarios de
 2. En el menú **Ver** , elija **Email**  >  **envíos** de correo electrónico.
 
    > [!div class="mx-imgBorder"]
-   > ![Menú Ver para el explorador](../../media/explorer-view-menu-email-user-reported.png)
+   > ![Menú Ver para el explorador de correo electrónico](../../media/explorer-view-menu-email-user-reported.png)
 
 3. Haga clic en **remitente** y, a continuación, elija tipo de **Basic**  >  **Informe** básico.
 
@@ -431,12 +441,12 @@ Supongamos que desea ver los mensajes de correo electrónico que los usuarios de
    > [!div class="mx-imgBorder"]
    > ![Phish notificados por el usuario](../../media/EmailUserReportedReportType.png)
 
-El informe se actualiza para Mostrar datos sobre los mensajes de correo electrónico que las personas de su organización han notificado como un intento de suplantación de identidad. Puede usar esta información para realizar análisis adicionales y, si es necesario, ajustar las [directivas antiphishing de ATP](configure-atp-anti-phishing-policies.md).
+El informe se actualiza para Mostrar datos sobre los mensajes de correo electrónico que las personas de su organización han notificado como un intento de suplantación de identidad. Puede usar esta información para realizar análisis adicionales y, si es necesario, ajustar las [directivas antiphishing en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="start-automated-investigation-and-response"></a>Iniciar investigación y respuesta automatizadas
 
 > [!NOTE]
-> Las capacidades de investigación y respuesta automatizadas están disponibles en **office 365 ATP plan 2** y **Office 365 E5** .
+> Las capacidades de investigación y respuesta automatizadas están disponibles en **Microsoft defender para office 365 plan 2** y **Office 365 E5**.
 
 (Nueva) La [investigación y la respuesta automatizadas](automated-investigation-response-office.md) pueden guardar el equipo de operaciones de seguridad con mucho tiempo y esfuerzo para investigar y mitigar cyberattacks. Además de configurar alertas que pueden desencadenar una guía de seguridad, puede iniciar un proceso de investigación y respuesta automatizado desde una vista en el explorador.
 
@@ -454,11 +464,11 @@ Además de los escenarios descritos en este artículo, tiene muchas más opcione
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
-Debe tener [Office 365 ATP](office-365-atp.md) para obtener detecciones de Internet Explorer o en tiempo real.
+Debe tener [Microsoft defender para Office 365](office-365-atp.md) para obtener detecciones en tiempo real o del explorador.
 
-- Explorer se incluye en el plan 2 de ATP de Office 365.
-- El informe de detecciones en tiempo real se incluye en el plan 1 de ATP de Office 365.
-- Planee la asignación de licencias para todos los usuarios que deberían estar protegidos por Office 365 ATP. (El explorador o detecciones en tiempo real muestra los datos de detección de los usuarios con licencia).
+- Explorer se incluye en defender para Office 365 plan 2.
+- El informe de detecciones en tiempo real se incluye en defender para Office 365 plan 1.
+- Planee la asignación de licencias para todos los usuarios que deban estar protegidos por defender para Office 365. (El explorador o detecciones en tiempo real muestra los datos de detección de los usuarios con licencia).
 
 Para ver y usar el explorador o las detecciones en tiempo real, debe tener los permisos adecuados, como los que se han concedido a un administrador de seguridad o un lector de seguridad.
 
@@ -482,9 +492,9 @@ Para obtener más información acerca de los roles y los permisos, vea los sigui
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Algunas diferencias entre el explorador de amenazas y las detecciones en tiempo real
 
-- El informe de **detecciones en tiempo real** está disponible en Office 365 ATP plan 1, mientras que **Threat Explorer** está disponible en Office 365 ATP plan 2.
+- El informe de **detecciones en tiempo real** está disponible en defender para Office 365 plan 1, mientras que **Threat Explorer** está disponible en defender para Office 365 plan 2.
 - El informe de **detecciones en tiempo real** permite ver las detecciones en tiempo real. El **Explorador de amenazas** hace esto también, pero también le permite ver más detalles de un ataque determinado.
 - La vista **todo el correo electrónico** está disponible en el **Explorador de amenazas** (y no se encuentra en el informe de **detecciones en tiempo real** ).
 - En el **Explorador de amenazas** se incluyen más funciones de filtrado y acciones disponibles.
 
-Para obtener más información, consulte [Office 365 ATP Service Description: disponibilidad de características en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+Para obtener más información, vea [Descripción del servicio de Microsoft defender para office 365: disponibilidad de características en los planes de defender para office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

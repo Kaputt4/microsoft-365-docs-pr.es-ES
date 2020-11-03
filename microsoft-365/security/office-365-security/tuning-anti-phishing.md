@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446470"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845473"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -33,15 +33,15 @@ Aunque Microsoft 365 incluye una variedad de características antiphishing que e
 
 Si la cuenta de un destinatario se viera comprometida como resultado del mensaje de suplantación de identidad (phishing), siga los pasos de [respuesta a una cuenta de correo electrónico en peligro en Microsoft 365](responding-to-a-compromised-email-account.md).
 
-Si su suscripción incluye la protección contra amenazas avanzada (ATP), puede usar la [inteligencia sobre amenazas de Office 365](office-365-ti.md) para identificar a otros usuarios que también recibieron el mensaje de suplantación de identidad (phishing). Tiene opciones adicionales para bloquear los mensajes de suplantación de identidad:
+Si su suscripción incluye a Microsoft defender para Office 365, puede usar [Office 365 Threat Intelligence](office-365-ti.md) para identificar a otros usuarios que también recibieron el mensaje de suplantación de identidad (phishing). Tiene opciones adicionales para bloquear los mensajes de suplantación de identidad:
 
-- [Vínculos seguros en la ATP de Office 365](set-up-atp-safe-links-policies.md)
+- [Vínculos seguros en Microsoft defender para Office 365](set-up-atp-safe-links-policies.md)
 
-- [Datos adjuntos seguros en la ATP de Office 365](set-up-atp-safe-attachments-policies.md)
+- [Datos adjuntos seguros de Microsoft defender para Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Directivas antiphishing en Office 365 ATP](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo**, **más agresivo**o **más agresivo**.
+- [Directivas antiphishing en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo** , **más agresivo** o **más agresivo**.
 
-Compruebe que estas características de ATP están activadas.
+Compruebe que las características de defender para Office 365 están activadas.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Informar del mensaje de suplantación de identidad a Microsoft
 
@@ -59,7 +59,7 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - Para los mensajes que acaben en cuarentena por error o para los mensajes que se permitan, le recomendamos que los busque en [el explorador de amenazas y en las detecciones en tiempo real](threat-explorer.md). Puede buscar por remitente, destinatario o identificador de mensaje. Una vez que encuentre el mensaje, haga clic en el tema para ver los detalles. Para un mensaje en cuarentena, Compruebe cómo se encuentra la "tecnología de detección" para poder usar el método adecuado para invalidar. Para un mensaje permitido, mire para ver qué directiva permitió el mensaje. 
 
-- El correo falsificado se etiqueta como phish en ATP. A veces la suplantación de identidad es benigna y, a veces, los usuarios no quieren estar en cuarentena. Para minimizar el impacto en los usuarios, revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md). Una vez que haya revisado y realizado las invalidaciones necesarias, puede confiar en [configurar la inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para poner en **cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
+- El correo falsificado se etiqueta como phish en defender para Office 365. A veces la suplantación de identidad es benigna y, a veces, los usuarios no quieren estar en cuarentena. Para minimizar el impacto en los usuarios, revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md). Una vez que haya revisado y realizado las invalidaciones necesarias, puede confiar en [configurar la inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para poner en **cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
 
 - Puede repetir el paso anterior para la suplantación (dominio o usuario). El informe de suplantación se encuentra en información sobre el panel de **Administración de amenazas** \> **Dashboard** \> **Insights**.
 

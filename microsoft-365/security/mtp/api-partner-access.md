@@ -1,6 +1,6 @@
 ---
-title: Acceso de asociados mediante las API de Microsoft Threat Protection
-description: Obtenga información sobre cómo crear una aplicación de AAD para obtener acceso mediante programación a la protección contra amenazas de Microsoft en nombre de sus clientes
+title: Acceso de asociados a través de las API de Microsoft 365 defender
+description: Aprenda a crear una aplicación de AAD para obtener acceso mediante programación a Microsoft 365 defender en nombre de sus clientes
 keywords: asociado, acceso, API, multiempresa, consentimiento, token de acceso, aplicación
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,36 +19,36 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ae9e5ae158c95ae52112f7bc16559559230a20e8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: eb40d5d2d82f57be225515ad0aa566038397bbbd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203712"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844989"
 ---
-# <a name="partner-access-through-microsoft-threat-protection-apis"></a>Acceso de asociados mediante las API de Microsoft Threat Protection
+# <a name="partner-access-through-microsoft-365-defender-apis"></a>Acceso de asociados a través de las API de Microsoft 365 defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 >[!IMPORTANT] 
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-En esta página se describe cómo crear una aplicación de AAD para obtener acceso mediante programación a la protección contra amenazas de Microsoft en nombre de sus clientes.
+En esta página se describe cómo crear una aplicación de AAD para obtener acceso mediante programación a Microsoft 365 defender en nombre de sus clientes.
 
-Microsoft Threat Protection expone gran parte de sus datos y acciones a través de un conjunto de API de programación. Estas API le ayudarán a automatizar los flujos de trabajo y la innovación en función de las capacidades de Microsoft Threat Protection. El acceso a la API requiere la autenticación OAuth 2.0. Para obtener más información, vea [flujo de código de autorización de OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 defender expone gran parte de sus datos y acciones a través de un conjunto de API de programación. Estas API le ayudarán a automatizar los flujos de trabajo y la innovación en función de las capacidades de Microsoft 365 defender. El acceso a la API requiere la autenticación OAuth 2.0. Para obtener más información, vea [flujo de código de autorización de OAuth 2,0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En general, deberá realizar los siguientes pasos para usar las API:
 - Cree una aplicación **de AAD multiinquilino** .
-- Obtenga autorización (consentimiento) por parte del administrador del cliente para que su aplicación tenga acceso a los recursos de Microsoft Threat Protection que necesita.
+- Obtenga autorización (consentimiento) por parte del administrador del cliente para que su aplicación tenga acceso a los recursos de Microsoft 365 defender que necesita.
 - Obtenga un token de acceso con esta aplicación.
-- Use el token para acceder a la API de Microsoft Threat Protection.
+- Use el token para obtener acceso a la API de Microsoft 365 defender.
 
-Los siguientes pasos, que le guían cómo crear una aplicación de AAD, obtener un token de acceso a la protección contra amenazas de Microsoft y validar el token.
+Los siguientes pasos, que le guían cómo crear una aplicación de AAD, obtener un token de acceso a Microsoft 365 defender y validar el token.
 
 ## <a name="create-the-multi-tenant-app"></a>Crear la aplicación multiinquilino
 
@@ -69,12 +69,12 @@ Los siguientes pasos, que le guían cómo crear una aplicación de AAD, obtener 
     ![Imagen del registro de la aplicación de socio de Microsoft Azure](../../media/atp-api-new-app-partner.png)
 
 
-4. Permita que su aplicación tenga acceso a la protección contra amenazas de Microsoft y asígnela con el conjunto mínimo de permisos necesarios para completar la integración.
+4. Permita que su aplicación tenga acceso a Microsoft 365 defender y asígnela con el conjunto mínimo de permisos necesarios para completar la integración.
 
-   - En la página de la aplicación, haga clic en **permisos de API**  >  **Agregar API de permisos**  >  **mi organización usa** > escriba **Microsoft Threat Protection** y haga clic en **protección contra amenazas de Microsoft**.
+   - En la página de la aplicación, haga clic en **permisos de API**  >  **Agregar API de permisos**  >  **mi organización usa** > escriba **Microsoft 365 defender** y haga clic en **Microsoft 365 defender**.
 
    >[!NOTE]
-   >La protección contra amenazas de Microsoft no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para ver aparezca.
+   >Microsoft 365 defender no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para ver aparezca.
 
    ![Imagen de acceso a API y selección de API](../../media/apis-in-my-org-tab.PNG)
    
@@ -98,10 +98,10 @@ Los siguientes pasos, que le guían cómo crear una aplicación de AAD, obtener 
 
 6. Agregue un secreto a la aplicación.
 
-    - Haga clic en **certificados & secretos**, agregue Descripción al secreto y haga clic en **Agregar**.
+    - Haga clic en **certificados & secretos** , agregue Descripción al secreto y haga clic en **Agregar**.
 
     >[!IMPORTANT]
-    > Después de seleccionar **Agregar**, **copie el valor de secreto generado**. No podrá recuperar después de salir.
+    > Después de seleccionar **Agregar** , **copie el valor de secreto generado**. No podrá recuperar después de salir.
 
     ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
 
@@ -113,7 +113,7 @@ Los siguientes pasos, que le guían cómo crear una aplicación de AAD, obtener 
 
 8. Agregue la aplicación al inquilino del cliente.
 
-    Necesita que su aplicación esté aprobada en cada inquilino de cliente donde tenga previsto usarla. Esto se debe a que la aplicación interactúa con la aplicación de Microsoft Threat Protection en nombre de su cliente.
+    Necesita que su aplicación esté aprobada en cada inquilino de cliente donde tenga previsto usarla. Esto se debe a que la aplicación interactúa con la aplicación de Microsoft 365 defender en nombre de su cliente.
 
     Un usuario con **administrador global** del inquilino del cliente debe hacer clic en el vínculo de consentimiento y aprobar la aplicación.
 
@@ -203,7 +203,7 @@ return $token
 - Abrir una ventana de comandos
 - Establecer CLIENT_ID en el identificador de la aplicación de Azure
 - Establecer CLIENT_SECRET en el secreto de la aplicación de Azure
-- Establecer TENANT_ID en el identificador de inquilino de Azure del cliente que desea usar la aplicación para acceder a la aplicación de protección contra amenazas de Microsoft
+- Establecer TENANT_ID en el identificador de inquilino de Azure del cliente que desea usar la aplicación para acceder a la aplicación Microsoft 365 defender
 - Ejecute el siguiente comando:
 
 ```
@@ -222,14 +222,14 @@ Comprobación de la validez para asegurarse de que obtuvo un token correcto:
 
 - Copiar/pegar en [JWT](https://jwt.ms) el token que se obtiene en el paso anterior para poder descodificarlo
 - Validar que obtiene una notificación de ' roles ' con los permisos deseados
-- En la captura de pantalla siguiente, puede ver un token descodificado adquirido de una aplicación con varios permisos para la protección contra amenazas de Microsoft:
+- En la captura de pantalla siguiente, puede ver un token descodificado adquirido de una aplicación con varios permisos para Microsoft 365 defender:
 - La notificación "TID" es el identificador de inquilino al que pertenece el token.
 
 ![Imagen de validación de tokens](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-threat-protection-api"></a>Usar el token para acceder a la API de protección contra amenazas de Microsoft
+## <a name="use-the-token-to-access-microsoft-365-defender-api"></a>Usar el token para obtener acceso a la API de Microsoft 365 defender
 
-- Elija la API que desea usar para obtener más información, consulte [API admitidas de Microsoft Threat Protection](api-supported.md)
+- Elija la API que desea usar para obtener más información, vea compatibilidad de las [API de Microsoft 365 defender](api-supported.md)
 - Establecer el encabezado Authorization en la solicitud HTTP que envía a "Bearer {token}" (Bearer es el esquema de autorización)
 - La fecha de expiración del token es 1 hora (puede enviar más de una solicitud con el mismo token)
 
@@ -248,6 +248,6 @@ Comprobación de la validez para asegurarse de que obtuvo un token correcto:
 
 ## <a name="related-topics"></a>Temas relacionados 
 
-- [Acceso a las API de Microsoft Threat Protection](api-access.md)
-- [Acceso a Microsoft Threat Protection con contexto de aplicación](api-create-app-web.md)
-- [Acceso a Microsoft Threat Protection con contexto de usuario](api-create-app-user-context.md)
+- [Acceso a las API de Microsoft 365 defender](api-access.md)
+- [Acceso a Microsoft 365 defender con contexto de aplicación](api-create-app-web.md)
+- [Acceso a Microsoft 365 defender con contexto de usuario](api-create-app-user-context.md)

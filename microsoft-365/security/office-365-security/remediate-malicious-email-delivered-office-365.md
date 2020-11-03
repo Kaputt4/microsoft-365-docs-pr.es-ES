@@ -13,20 +13,20 @@ MS.collection: ''
 search.appverid: MET150
 description: Corrección de amenazas
 appliesto:
-- Microsoft Threat Protection
-ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+- Microsoft 365 Defender
+ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774064"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845605"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La corrección supone llevar a cabo una acción recomendada contra una amenaza. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, a través de la depuración automática de cero horas (ZAP) o por parte de los equipos de seguridad mediante acciones de corrección como *mover a la bandeja de entrada* , *desplazarse a correo no deseado* , *mover a elementos eliminados* , *eliminar temporalmente* o *eliminar permanentemente* . La protección contra amenazas avanzada de Office (ATP de Office) P2/E5 permite a los equipos de seguridad corregir amenazas en el correo electrónico y la funcionalidad de colaboración mediante la investigación manual y automatizada.
+La corrección supone llevar a cabo una acción recomendada contra una amenaza. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, a través de la depuración automática de cero horas (ZAP) o por parte de los equipos de seguridad mediante acciones de corrección como *mover a la bandeja de entrada* , *desplazarse a correo no deseado* , *mover a elementos eliminados* , *eliminar temporalmente* o *eliminar permanentemente*. Microsoft defender para Office 365 P2/E5 permite a los equipos de seguridad corregir amenazas en el correo electrónico y la funcionalidad de colaboración mediante la investigación manual y automatizada.
 
 > [!NOTE]
 > Para corregir el correo electrónico malintencionado, los equipos de seguridad necesitan la función de *búsqueda y depuración* que tienen asignada. La asignación de roles se realiza a través de permisos en el centro de seguridad y cumplimiento.
@@ -44,10 +44,10 @@ Para realizar acciones como ver encabezados de mensajes o descargar contenido de
 |Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones|Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview|Sí|
 
 > [!NOTE]
-> La vista previa es un *rol* , no un *grupo de roles* . El rol de vista previa debe agregarse a un grupo de roles existente para Office 365. El *rol de administrador global* se asigna en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Los roles de administrador de seguridad y lector de seguridad se asignan en los [centros de seguridad y cumplimiento](https://protection.office.com). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
+> La vista previa es un *rol* , no un *grupo de roles*. El rol de vista previa debe agregarse a un grupo de roles existente para Office 365. El *rol de administrador global* se asigna en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Los roles de administrador de seguridad y lector de seguridad se asignan en los [centros de seguridad y cumplimiento](https://protection.office.com). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Los administradores pueden realizar las acciones necesarias en los mensajes de correo electrónico, pero para que estas acciones sean aprobadas, deben tener asignada la función de *búsqueda y depuración* a través de los permisos del **centro de seguridad y cumplimiento**  >  **Permissions** .
+> Los administradores pueden realizar las acciones necesarias en los mensajes de correo electrónico, pero para que estas acciones sean aprobadas, deben tener asignada la función de *búsqueda y depuración* a través de los permisos del **centro de seguridad y cumplimiento**  >  **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Corrección manual y automatizada
 
@@ -73,7 +73,7 @@ La **investigación automatizada y** las acciones de respuesta las desencadenan 
 
 ![Correo con malware en la página "zapped" que muestra la hora de la ejecución de la Zap.](../../media/tp-RemediationArticle3.png)
 
-En el centro de actividades se muestran todas las correcciones (tanto la aprobación directa como la aprobación en dos pasos) que se crearon en el explorador de amenazas y las acciones aprobadas que provienen de las investigaciones automatizadas. Obtenga acceso a estos mediante el panel de navegación izquierdo en **revisión** del  >  **centro de actividades** .
+En el centro de actividades se muestran todas las correcciones (tanto la aprobación directa como la aprobación en dos pasos) que se crearon en el explorador de amenazas y las acciones aprobadas que provienen de las investigaciones automatizadas. Obtenga acceso a estos mediante el panel de navegación izquierdo en **revisión** del  >  **centro de actividades**.
 
 ![El centro de actividades con una lista de amenazas por fecha y gravedad.](../../media/tp-RemediationArticle4.png)
 

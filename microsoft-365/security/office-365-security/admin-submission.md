@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 1ca1dc5e740aa5aa03a4c8b0c138eadb55c08a20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806765"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844649"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -52,17 +52,17 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar sobre contenido sospechoso a Microsoft
 
-1. En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions** , compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío** .
+1. En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions** , compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
 
 2. Use el nuevo control flotante de **envío** que aparece para enviar el mensaje, la dirección URL o los datos adjuntos, tal como se describe en las siguientes secciones.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Enviar un correo electrónico cuestionable a Microsoft
 
-1. En la sección **tipo de objeto** , seleccione **correo electrónico** . En la sección **formato de envío** , use una de las siguientes opciones:
+1. En la sección **tipo de objeto** , seleccione **correo electrónico**. En la sección **formato de envío** , use una de las siguientes opciones:
 
    - **Identificador de mensaje de red** : es un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-ID** del mensaje.
 
-   - **Archivo** : haga clic en **elegir archivo** . En el cuadro de diálogo que se abre, busque y seleccione el archivo. eml o. msg y, a continuación, haga clic en **abrir** .
+   - **Archivo** : haga clic en **elegir archivo**. En el cuadro de diálogo que se abre, busque y seleccione el archivo. eml o. msg y, a continuación, haga clic en **abrir**.
 
 2. En la sección **destinatarios** , especifique uno o más destinatarios con los que desee ejecutar una comprobación de directiva. La comprobación de la Directiva determinará si se ha omitido el análisis del correo electrónico debido a las directivas del usuario o la organización.
 
@@ -70,11 +70,11 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
    - **No se debe haber bloqueado**
 
-   - **Debe haberse bloqueado** : seleccione **correo no deseado** , **phishing** o **malware** . Si no está seguro, use su mejor criterio.
+   - **Debe haberse bloqueado** : seleccione **correo no deseado** , **phishing** o **malware**. Si no está seguro, use su mejor criterio.
 
 4. Si se ha omitido el filtro debido a las directivas tras el envío, verá información sobre esa Directiva.
 
-   Si no se ha omitido el filtro debido a una o más directivas, el análisis se completará en varios minutos. Para ver más información sobre el envío, haga clic en el vínculo estado. Esto incluye los resultados de la comprobación de la Directiva y el veredicto de reescaneo. Nota Esto no ejecuta el correo electrónico a través de la pila de filtrado completo de ATP de Office 365, sino que ejecuta un nuevo análisis parcial en función de determinados atributos del correo, la dirección URL o el archivo.
+   Si no se ha omitido el filtro debido a una o más directivas, el análisis se completará en varios minutos. Para ver más información sobre el envío, haga clic en el vínculo estado. Esto incluye los resultados de la comprobación de la Directiva y el veredicto de reescaneo. Nota: esto no ejecuta el correo electrónico a través de la pila de filtros completos de Microsoft defender para Office 365, sino que ejecuta un nuevo análisis parcial en función de determinados atributos del correo, la dirección URL o el archivo.
 
 5. Cuando haya terminado, haga clic en el botón **Enviar** .
 
@@ -82,13 +82,13 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
-1. En la sección **tipo de objeto** , seleccione **dirección URL** . En el cuadro que aparece, escriba la dirección URL completa (por ejemplo, `https://www.fabrikam.com/marketing.html` ).
+1. En la sección **tipo de objeto** , seleccione **dirección URL**. En el cuadro que aparece, escriba la dirección URL completa (por ejemplo, `https://www.fabrikam.com/marketing.html` ).
 
 2. En la sección **motivo de envío** , seleccione una de las siguientes opciones:
 
    - **No se debe haber bloqueado**
 
-   - **Debe haberse bloqueado** : seleccione **suplantación de identidad (phishing)** o **malware** .
+   - **Debe haberse bloqueado** : seleccione **suplantación de identidad (phishing)** o **malware**.
 
 3. Cuando haya terminado, haga clic en el botón **Enviar** .
 
@@ -96,9 +96,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Enviar un archivo sospechoso a Microsoft
 
-1. En la sección **tipo de objeto** , seleccione **datos adjuntos** .
+1. En la sección **tipo de objeto** , seleccione **datos adjuntos**.
 
-2. Haga clic en **elegir archivo** . En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **abrir** .
+2. Haga clic en **elegir archivo**. En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **abrir**.
 
 3. En la sección **motivo de envío** , seleccione una de las siguientes opciones:
 
@@ -112,7 +112,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="view-admin-submissions"></a>Ver envíos de administración
 
-En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions** , compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío** .
+En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions** , compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
 
 Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **identificador de envío** (un valor de GUID asignado a cada envío) introduciendo un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -128,7 +128,7 @@ Para cambiar los criterios de filtro, haga clic en el botón **identificador de 
 
 Para exportar los resultados, haga clic en **exportar** cerca de la parte superior de la página y seleccione datos o **tabla** de **gráficos** . En el cuadro de diálogo que aparece, guarde el archivo. csv.
 
-Debajo del gráfico, hay tres pestañas: **correo electrónico** (predeterminado), **dirección URL** y **datos adjuntos** .
+Debajo del gráfico, hay tres pestañas: **correo electrónico** (predeterminado), **dirección URL** y **datos adjuntos**.
 
 ### <a name="view-admin-email-submissions"></a>Ver envíos de correo electrónico de administrador
 
@@ -186,7 +186,7 @@ Si ha implementado el [complemento de mensajes de informe](enable-the-report-mes
 
 1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **envíos** de administración de amenazas.
 
-2. Seleccione la pestaña envíos de **usuarios** y, a continuación, haga clic en **nuevo envío** .
+2. Seleccione la pestaña envíos de **usuarios** y, a continuación, haga clic en **nuevo envío**.
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 

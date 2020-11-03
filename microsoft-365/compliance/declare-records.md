@@ -17,23 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 34b5272a8bed9be01c3965dae258c88facec0145
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198929"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830609"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Para declarar documentos y correos electrónicos como [registros](records-management.md#records), use las [etiquetas de retención](retention.md#retention-labels) que marcan el contenido como **registro** o como **registro normativo**.
+Para declarar los documentos y correos electrónicos como [registros](records-management.md#records), use las [etiquetas de retención](retention.md#retention-labels) que marcan el contenido como **registro** o como **registro normativo**.
 
-> [!NOTE]
-> Actualmente, los registros normativos se encuentran en versión preliminar.
-
-Si no está seguro de si debe usar un registro o un registro normativo, consulte [Comparar las restricciones de las acciones que se permiten o se bloquean](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Si necesita usar registros normativos, primero tiene que ejecutar un comando de PowerShell, como se describe en la sección siguiente.
+Si no está seguro de si debe usar un registro o un registro normativo, vea [Comparar las restricciones de las acciones que se permiten o se bloquean](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). Si necesita usar registros normativos, primero tiene que ejecutar un comando de PowerShell, como se describe en la sección siguiente.
 
 Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas de retención (de modo que los usuarios y administradores puedan aplicarlas al contenido), o bien, en el caso de las etiquetas que marcan elementos como registros (no como registros normativos), podrá aplicarlas automáticamente al contenido que desee declarar como registro.
 
@@ -53,7 +50,7 @@ De forma predeterminada, la opción de etiqueta de retención para marcar conten
     ````
     No se pide confirmación y la configuración surte efecto inmediatamente.
 
-Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas de retención, puede ocultarla de nuevo ejecutando el mismo cmdlet con el valor **false**: `Set-RegulatoryComplianceUI -Enabled $false` 
+Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas de retención, puede ocultarla de nuevo ejecutando el mismo cmdlet con el valor **false** : `Set-RegulatoryComplianceUI -Enabled $false` 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurar etiquetas de retención para declarar registros
 

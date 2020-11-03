@@ -1,5 +1,5 @@
 ---
-title: Utilice las consultas compartidas en la búsqueda avanzada en la Protección contra amenazas de Microsoft
+title: Usar consultas compartidas en búsqueda avanzada de Microsoft 365 defender
 description: Inicie inmediatamente la protección contra amenazas a través de las consultas predefinidas y compartidas. Comparta sus consultas con el público o con su organización.
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, repositorio de Github, mis consultas, consultas compartidas
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429688"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844085"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429688"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 
 

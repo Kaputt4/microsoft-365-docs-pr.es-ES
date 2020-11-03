@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1d1756a6f5872fb639bca5f2597b1abac55726f4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208392"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843398"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norma ISO 22301:2012 de Administración de Continuidad Empresarial 
 
@@ -38,7 +38,7 @@ Microsoft es el primer proveedor de servicios en la nube a hiperescala que recib
 - [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - Dynamics 365, Dynamics 365 Government y Dynamics 365 Germany
-- Protección contra amenazas avanzada de Microsoft Defender
+- Microsoft Defender para punto de conexión
 - Microsoft Graph
 - Bot de Microsoft Healthcare
 - Intune

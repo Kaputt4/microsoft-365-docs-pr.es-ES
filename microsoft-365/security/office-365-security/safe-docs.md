@@ -1,5 +1,5 @@
 ---
-title: Documentos seguros en ATP de Office 365
+title: Documentos seguros en Microsoft defender para Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,23 +15,23 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773954"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845485"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Documentos seguros es una característica de la seguridad de Microsoft 365 E5 o Microsoft 365 E5 que usa la [protección contra amenazas avanzada de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar documentos y archivos que se abren en la [vista protegida](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
+Documentos seguros es una característica de la seguridad de Microsoft 365 E5 o Microsoft 365 E5 que usa [Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar documentos y archivos que se abren en la [vista protegida](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Documentos seguros solo está disponible para los usuarios con licencias de seguridad de *microsoft 365 E5* o *Microsoft 365 E5* . Estas licencias no se incluyen en los planes de la protección contra amenazas avanzada (ATP) de Office 365.
+- Documentos seguros solo está disponible para los usuarios con licencias de seguridad de *microsoft 365 E5* o *Microsoft 365 E5* . Estas licencias no se incluyen en los planes de Microsoft defender para Office 365.
 
 - Documentos seguros es compatible con las aplicaciones de Microsoft 365 para empresas (anteriormente conocidas como Office 365 ProPlus) versión 2004 o posterior.
 
@@ -43,13 +43,13 @@ Documentos seguros es una característica de la seguridad de Microsoft 365 E5 o 
 
 ### <a name="how-does-microsoft-handle-your-data"></a>¿Cómo administra Microsoft sus datos?
 
-Para mantenerlo protegido, los documentos seguros envían archivos a la nube de [protección contra amenazas avanzada de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para su análisis. Aquí encontrará información sobre cómo Microsoft defender ATP administra sus datos: [almacenamiento de datos y privacidad de Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+Para mantenerlo protegido, los documentos seguros envían archivos a [Microsoft defender para](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) la nube de punto de conexión para su análisis. Aquí encontrará información detallada sobre cómo se pueden encontrar Microsoft defender for Endpoint en los datos: [Microsoft defender for Endpoint Data Storage and Privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 Los archivos enviados por documentos seguros no se conservan en defender más allá del tiempo necesario para el análisis (normalmente, menos de 24 horas).
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Usar el centro de seguridad & cumplimiento para configurar documentos seguros
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** \> **Policy** \> **datos adjuntos seguros de ATP** y haga clic en **configuración global** .
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** \> **Policy** \> **datos adjuntos seguros de ATP** y haga clic en **configuración global**.
 
 2. En la **configuración global** vuela hacia fuera que aparece, configure las siguientes opciones:
 
@@ -57,9 +57,9 @@ Los archivos enviados por documentos seguros no se conservan en defender más al
 
    - **Permitir que los usuarios haga clic a través de la vista protegida incluso si documentos seguros identifica el archivo como malintencionado** : le recomendamos que deje esta opción desactivada (deje el botón de alternancia a la izquierda: ![ desactivar ](../../media/scc-toggle-off.png) ).
 
-   Cuando haya terminado, haga clic en **Guardar** .
+   Cuando haya terminado, haga clic en **Guardar**.
 
-   ![Configuración de documentos seguros después de seleccionar la configuración global en la página de datos adjuntos seguros de ATP.](../../media/safe-docs.png)
+   ![Configuración de documentos seguros tras seleccionar la configuración global en la página datos adjuntos seguros.](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Usar Exchange Online PowerShell para configurar documentos seguros
 

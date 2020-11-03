@@ -1,6 +1,6 @@
 ---
-title: Licencia y condiciones de uso de las API de Microsoft Threat Protection
-description: Descripción de la licencia y de los términos de uso de las API en protección contra amenazas de Microsoft
+title: Licencia y términos de uso de las API de Microsoft 365 defender
+description: Descripción de la licencia y de los términos de uso de las API en Microsoft 365 defender
 keywords: API, API, licencia, términos, API, legal, avisos, código de conducta
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203682"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844901"
 ---
-#  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Licencia y condiciones de uso de las API de Microsoft Threat Protection
+#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Licencia y términos de uso de las API de Microsoft 365 defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 >[!IMPORTANT] 
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -39,7 +39,7 @@ ms.locfileid: "48203682"
 
 ## <a name="apis"></a>API
 
- Las API de Microsoft Threat Protection se rigen por [licencia de API de Microsoft y condiciones de uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+ Las API de Microsoft 365 defender se rigen por [licencia de API de Microsoft y condiciones de uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 
 ### <a name="throttling-limits"></a>Superado la limitación
 

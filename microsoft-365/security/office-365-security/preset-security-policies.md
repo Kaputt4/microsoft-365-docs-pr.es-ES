@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Microsoft defender para Office 365
+ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830542"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845737"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Directivas de seguridad preestablecidas en EOP y Office 365 ATP
+# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en EOP y Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -59,31 +59,31 @@ Las condiciones y excepciones disponibles son:
 
 ### <a name="policies-in-preset-security-policies"></a>Directivas en directivas de seguridad predefinidas
 
-Las directivas de seguridad preestablecidas usan las directivas correspondientes de las diversas características de protección de EOP y Office 365 ATP. Estas directivas se crean _después_ de asignar directivas de seguridad de **protección estándar** o de **protección estricta** a los usuarios. No puede modificar estas directivas.
+Las directivas de seguridad preestablecidas usan las directivas correspondientes de las diversas características de protección de EOP y Microsoft defender para Office 365. Estas directivas se crean _después_ de asignar directivas de seguridad de **protección estándar** o de **protección estricta** a los usuarios. No puede modificar estas directivas.
 
 - **Directivas de Exchange Online Protection (EOP)** : Esto incluye a Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de EOP sin buzones de Exchange Online:
   
-  - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md) que se denominan **Directiva de seguridad preestablecida estándar** y **estricta** .
-  - [Directivas antimalware](configure-anti-malware-policies.md) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida** .
+  - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md) que se denominan **Directiva de seguridad preestablecida estándar** y **estricta**.
+  - [Directivas antimalware](configure-anti-malware-policies.md) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida**.
   - [Las directivas de suplantación de identidad de EOP](set-up-anti-phishing-policies.md#spoof-settings) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida** (configuración de falsificación).
 
-- **Directivas de protección contra amenazas avanzada (ATP) de Office 365** : Esto incluye a las organizaciones con suscripciones de complementos de ATP de Microsoft 365 E5 u Office 365:
+- **Directivas de Microsoft defender para office 365** : Esto incluye a las organizaciones con las suscripciones complementarias de Microsoft 365 E5 o defender para Office 365:
 
-  - Las directivas antiphishing de ATP denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida** , que incluye:
+  - Directivas antiphishing en Microsoft defender para Office 365 denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida** , que incluye:
 
     - La misma [configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad que están disponibles en las directivas de protección contra suplantación de EOP.
-    - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Umbrales de suplantación de identidad avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Directivas de vínculos a prueba](set-up-atp-safe-links-policies.md) de errores denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida** .
+  - [Directivas de vínculos a prueba](set-up-atp-safe-links-policies.md) de errores denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**.
 
-  - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida** .
+  - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**.
 
-Tenga en cuenta que puede aplicar protecciones de EOP a diferentes usuarios que las protecciones de ATP.
+Tenga en cuenta que puede aplicar protecciones de EOP a diferentes usuarios que las protecciones de Microsoft defender para Office 365.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Configuración de directivas en directivas de seguridad predeterminadas
 
-No puede modificar la configuración de la Directiva en los perfiles de protección. Los valores de configuración de directiva **estándar** y **estricta** se describen en [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md).
+No puede modificar la configuración de la Directiva en los perfiles de protección. Los valores de configuración **estándar** y **estricta** de la Directiva se describen en [configuración recomendada para EOP y Microsoft defender para Office 365 Security](recommended-settings-for-eop-and-office365-atp.md).
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Orden de prioridad de las directivas de seguridad preestablecidas y otras directivas
 
@@ -121,11 +121,11 @@ En otras palabras, la configuración de la Directiva de **protección estricta**
 
 1. En el centro de seguridad & cumplimiento, vaya **Threat management** a directivas de \> **Policy** \> **seguridad preestablecidas** de directiva de administración de amenazas.
 
-2. En **protección estándar** o **protección estricta** , haga clic en **Editar** .
+2. En **protección estándar** o **protección estricta** , haga clic en **Editar**.
 
 3. Se inicia el Asistente para **aplicar protección estándar** o **aplicar protección estricta** . En las **protecciones de EOP se aplican al** paso, identifique los destinatarios internos a los que se aplican las [protecciones de EOP](#policies-in-preset-security-policies) :
 
-   1. Haga clic en **Agregar condición** . En la lista desplegable que aparece, seleccione una condición en **aplicado si** :
+   1. Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si** :
 
       - **Los destinatarios son**
       - **Los destinatarios son miembros de**
@@ -139,23 +139,23 @@ En otras palabras, la configuración de la Directiva de **protección estricta**
 
       Repita el paso anterior para agregar valores a la condición y repita el paso tantas veces como sea necesario o hasta que se agoten las condiciones.
 
-   4. Para agregar una excepción, haga clic en **Agregar condición** . En la lista desplegable que aparece, seleccione una condición en **excepto cuando** . La configuración y el comportamiento se muestran exactamente igual que las condiciones.
+   4. Para agregar una excepción, haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **excepto cuando**. La configuración y el comportamiento se muestran exactamente igual que las condiciones.
 
-   Cuando termine, haga clic en **Siguiente** .
+   Cuando termine, haga clic en **Siguiente**.
 
-4. Si su organización tiene Office 365 ATP, se le ha dado a las **protecciones de ATP que se aplican al** paso para identificar a los destinatarios internos a los que se aplican las [protecciones atp de Office 365](#policies-in-preset-security-policies) .
+4. Si su organización tiene Microsoft defender para Office 365, se le dirigirá a las **protecciones de ATP que se aplican al** paso para identificar a los destinatarios internos a los que se aplicarán las [protecciones de Microsoft Defender para Office 365](#policies-in-preset-security-policies) .
 
    La configuración y el comportamiento son exactamente iguales **a las protecciones de EOP que se aplican al** paso.
 
-   Cuando termine, haga clic en **Siguiente** .
+   Cuando termine, haga clic en **Siguiente**.
 
-5. En el paso **confirmar** , compruebe las selecciones y, a continuación, haga clic en **confirmar** .
+5. En el paso **confirmar** , compruebe las selecciones y, a continuación, haga clic en **confirmar**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>Usar el centro de seguridad & cumplimiento para modificar las asignaciones de directivas de seguridad preestablecidas
 
 Los pasos para modificar la asignación de la Directiva de seguridad de protección **estándar** o **estricta** son los mismos que cuando se [asignaron inicialmente las directivas de seguridad preestablecidas para los usuarios](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users).
 
-Para deshabilitar las directivas de seguridad de protección **estándar** o **protección estricta** mientras se conservan las condiciones y excepciones existentes, deslice el botón de alternancia a **deshabilitado** . Para habilitar las directivas, deslice el botón de alternancia a **habilitado** .
+Para deshabilitar las directivas de seguridad de protección **estándar** o **protección estricta** mientras se conservan las condiciones y excepciones existentes, deslice el botón de alternancia a **deshabilitado**. Para habilitar las directivas, deslice el botón de alternancia a **habilitado**.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 

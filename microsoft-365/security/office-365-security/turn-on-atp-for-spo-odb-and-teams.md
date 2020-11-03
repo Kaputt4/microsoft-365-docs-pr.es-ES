@@ -1,5 +1,5 @@
 ---
-title: Activar Office 365 ATP-SharePoint, OneDrive & Teams
+title: Activar Microsoft defender para Office 365-SharePoint, OneDrive & Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,18 +19,18 @@ ms.collection:
 - SPO_Content
 description: Obtenga información sobre cómo activar ATP para SharePoint, OneDrive y Teams, incluido cómo establecer alertas para los archivos detectados.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c717a89492ea1160f26f26f13be6c36f348c79c
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 69cb7ffcfb06d5ccda915004a512e7eefc6eb56e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350660"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844277"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar ATP para SharePoint, OneDrive y Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsoft Teams protege su organización de archivos malintencionados que se comparten de forma inadvertida. Para obtener más información, consulte [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Microsoft defender para Office 365 para SharePoint, OneDrive y Microsoft Teams protege su organización de archivos malintencionados que se comparten de forma inadvertida. Para obtener más información, consulte [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Este artículo contiene los pasos para habilitar y configurar ATP para SharePoint, OneDrive y Microsoft Teams.
 
@@ -48,7 +48,7 @@ Este artículo contiene los pasos para habilitar y configurar ATP para SharePoin
 
 ## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Paso 1: usar el centro de seguridad & cumplimiento para activar ATP para SharePoint, OneDrive y Microsoft Teams
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** \> **Policy** \> **datos adjuntos seguros de ATP**y haga clic en **configuración global**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** \> **Policy** \> **datos adjuntos seguros de ATP** y haga clic en **configuración global**.
 
 2. En la **configuración global** vuela hacia fuera que aparece, vaya a la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams** . Desplace el botón de alternancia a la derecha para ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Activar ATP para SharePoint, OneDrive y Microsoft Teams.
 
@@ -74,7 +74,7 @@ Para evitar que los usuarios descarguen archivos malintencionados, [Conéctese a
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**Notas**:
+**Notas** :
 
 - Esta configuración afecta tanto a usuarios como a administradores.
 - Los usuarios pueden seguir eliminando archivos malintencionados.
@@ -91,24 +91,24 @@ Puede crear una directiva de alerta que notifique a usted y a otros administrado
 
 3. El Asistente para **nueva Directiva de alerta** se abre en un vuelo hacia fuera. En la página **asigne un nombre a la alerta** , configure las siguientes opciones:
 
-   - **Nombre**: escriba un nombre único y descriptivo. Por ejemplo, archivos malintencionados en bibliotecas.
-   - **Descripción**: escriba una descripción opcional. Por ejemplo, notifica a los administradores Cuándo se detectan archivos malintencionados en SharePoint Online, OneDrive o Microsoft Teams.
-   - **Gravedad**: deje el valor predeterminado **bajo** seleccionado o seleccione **medio** o **alto**.
-   - **Seleccione una categoría**: seleccionar la **Administración de amenazas**.
+   - **Nombre** : escriba un nombre único y descriptivo. Por ejemplo, archivos malintencionados en bibliotecas.
+   - **Descripción** : escriba una descripción opcional. Por ejemplo, notifica a los administradores Cuándo se detectan archivos malintencionados en SharePoint Online, OneDrive o Microsoft Teams.
+   - **Gravedad** : deje el valor predeterminado **bajo** seleccionado o seleccione **medio** o **alto**.
+   - **Seleccione una categoría** : seleccionar la **Administración de amenazas**.
 
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **crear configuración de alertas** , configure las siguientes opciones:
 
-   - **¿En qué desea alertar?: Activity es**: SELECT **Detected malware in file**.
-   - **¿Cómo desea que se desencadene la alerta?**: deje el valor predeterminado **cada vez que una actividad coincida con la regla** seleccionada.
+   - **¿En qué desea alertar?: Activity es** : SELECT **Detected malware in file**.
+   - **¿Cómo desea que se desencadene la alerta?** : deje el valor predeterminado **cada vez que una actividad coincida con la regla** seleccionada.
 
    Cuando termine, haga clic en **Siguiente**.
 
 5. En la página **establecer los destinatarios** , configure las siguientes opciones:
 
-   - **Enviar notificaciones por correo electrónico**: Compruebe que esta configuración está seleccionada. En el cuadro **destinatarios de correo electrónico** , seleccione uno o más administradores globales, administradores de seguridad o lectores de seguridad que deban recibir una notificación cuando se detecte un archivo malintencionado.
-   - **Límite de notificaciones diarias**: deje el valor predeterminado **sin límite** seleccionado.
+   - **Enviar notificaciones por correo electrónico** : Compruebe que esta configuración está seleccionada. En el cuadro **destinatarios de correo electrónico** , seleccione uno o más administradores globales, administradores de seguridad o lectores de seguridad que deban recibir una notificación cuando se detecte un archivo malintencionado.
+   - **Límite de notificaciones diarias** : deje el valor predeterminado **sin límite** seleccionado.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -126,7 +126,7 @@ Si prefiere usar PowerShell para crear la misma directiva de alerta que se descr
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
 ```
 
-**Nota**: el valor de _gravedad_ predeterminado es bajo. Para especificar medio o alto, incluya el parámetro _Severity_ y el valor en el comando.
+**Nota** : el valor de _gravedad_ predeterminado es bajo. Para especificar medio o alto, incluya el parámetro _Severity_ y el valor en el comando.
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).
 
@@ -134,7 +134,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 - Para comprobar si ha activado ATP para SharePoint, OneDrive y Microsoft Teams correctamente, siga uno de estos pasos:
 
-  - En el [centro de seguridad & cumplimiento](https://protection.office.com), vaya a la Directiva de **Administración de amenazas** : \> **Policy** \> **datos adjuntos seguros de ATP**, seleccione **configuración global**y compruebe el valor de la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams** .
+  - En el [centro de seguridad & cumplimiento](https://protection.office.com), vaya a la Directiva de **Administración de amenazas** : \> **Policy** \> **datos adjuntos seguros de ATP** , seleccione **configuración global** y compruebe el valor de la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams** .
 
   - En Exchange Online PowerShell, ejecute el siguiente comando para comprobar la configuración de la propiedad:
 
