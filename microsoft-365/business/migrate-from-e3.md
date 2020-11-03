@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business Premium desde Office 365 E3.
-ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295298"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842168"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 empresa Premium 
 
@@ -51,7 +51,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | StaffHub    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
 | Administrador de clientes de Outlook, MileIQ    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | | 
 | **Protección contra amenazas**        | | | 
-| Plan 1 de protección avanzada contra amenazas (ATP) de Office 365 | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
+| Defender para Office 365 plan 1 | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**        | | | 
 | Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    |  | 
 | **Administración de dispositivos y aplicaciones**        | | |
@@ -122,7 +122,7 @@ Microsoft 365 empresa Premium tiene un límite de almacenamiento de 50 GB, ya qu
 
 ### <a name="threat-protection"></a>Protección contra amenazas
 
-Después de realizar la migración a Microsoft 365 Business Premium, tiene Office 365 ATP. Consulte [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) para obtener información general. Para configurar, consulte [configurar los vínculos seguros de ATP](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [configurar los datos adjuntos seguros](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)de ATP y [configurar la protección contra phishing de ATP](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Después de realizar la migración a Microsoft 365 Business Premium, tiene defender para Office 365. Consulte [Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) para obtener información general. Para configurar, consulte [configurar vínculos seguros](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [configurar datos adjuntos seguros](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)y [configurar la protección contra suplantación de identidad (phishing) en defender para Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

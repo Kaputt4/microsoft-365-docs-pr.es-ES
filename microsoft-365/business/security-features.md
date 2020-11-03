@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad que se incluyen en Microsoft 365 Business Premium para ayudar a proteger sus datos en equipos, teléfonos y tabletas.
-ms.openlocfilehash: 5e16d4bf297d363b6f9b44ce854c857e7e5464ed
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357326"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843496"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business Premium
 
@@ -63,9 +63,9 @@ Puede administrar muchas de las características de seguridad de Microsoft 365 B
 
 Las características avanzadas de Microsoft 365 empresa Premium están disponibles para ayudarle a proteger su negocio de las amenazas cibernéticos y salvaguardar la información confidencial.
   
-- **[Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-    La protección contra amenazas avanzada (ATP) ayuda a proteger su empresa contra ataques de suplantación de identidad y ataque de ransomware sofisticados, diseñados para comprometer la información de empleados o clientes Entre las características se incluyen:
+    Microsoft defender para Office 365 ayuda a proteger su empresa contra ataques de suplantación de identidad y ataque de ransomware sofisticados, diseñados para poner en peligro la información de los empleados o clientes. Entre las características se incluyen:
     
   - Análisis sofisticado de archivos adjuntos y análisis con tecnología de AI para detectar y descartar mensajes peligrosos.
     
@@ -111,7 +111,7 @@ Su suscripción a Microsoft 365 Business Premium incluye características que le
 Puede administrar estas características en el centro de seguridad &amp; y cumplimiento y en el centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro de administración de Microsoft 365.
   
     
-## <a name="faq"></a>Preguntas frecuentes
+## <a name="faq"></a>Preguntas más frecuentes
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>¿Estas características de seguridad están disponibles en todos los mercados?
   
@@ -125,4 +125,4 @@ Sí, estas características están disponibles en todos los mercados donde se ve
     
     ![En el panel de navegación izquierdo del centro de administración de Microsoft 365, elija centros de administración.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Elija ** &amp; cumplimiento de seguridad** para ir al centro de seguridad y &amp; cumplimiento.
+3. Elija **&amp; cumplimiento de seguridad** para ir al centro de seguridad y &amp; cumplimiento.

@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye las aplicaciones de productividad de Office y protección avanzada para defender a las empresas frente a las ciberamenazas.
-ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138236"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842188"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Información general sobre Microsoft 365 Empresa Premium
 
@@ -69,13 +69,13 @@ Microsoft 365 Empresa Premium le ayuda a proteger los datos en cada uno de esto
 
 ## <a name="how-your-data-and-devices-are-protected"></a>Protección de datos y dispositivos
 
-Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse contra las amenazas**:
+Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse contra las amenazas** :
 
-- Análisis en tiempo real de los vínculos incluidos en documentos y correos electrónicos para bloquear los sitios web no seguros (Vínculos seguros de ATP).
+- Exploración de vínculos en mensajes de correo electrónico y documentos en tiempo real para bloquear sitios web no seguros (vínculos seguros).
 
-- Análisis avanzado de los datos adjuntos al correo electrónico en un entorno de espacio aislado para detectar malware recientemente desarrollado (Archivos adjuntos seguros de ATP). 
+- Realizar un análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recientemente desarrollado (datos adjuntos seguros). 
 
-- Directivas antiphishing que usan modelos de aprendizaje automático y detección de suplantación de identidad para protegerse frente a ataques avanzados (Protección contra suplantación de identidad [anti-phishing] de ATP). 
+- Habilitación de las directivas antiphishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (antiphishing en defender para Office 365 Intelligence). 
 
 - Directivas avanzadas que deshabilitan el acceso desde ubicaciones en las que no se confía o que omiten la autenticación multifactor en sitios de confianza como la red de su oficina (Azure MFA, incluido IP de confianza y Acceso condicional). 
 

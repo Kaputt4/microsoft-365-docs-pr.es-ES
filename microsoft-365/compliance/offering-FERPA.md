@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 668a92bf57e61d68d07a2d40e4405cc7bd111580
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208462"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843122"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Ley de privacidad y derechos educativos de la familia (FERPA)
 
@@ -41,7 +41,7 @@ FERPA no requiere ni reconoce auditorías ni otras certificaciones, por lo que c
 
 Como resultado de estos compromisos contractuales, los clientes que están sujetos a FERPA (tanto las instituciones educativas como los terceros a quienes dan acceso a los datos confidenciales de los alumnos) pueden usar con confianza los servicios de nube de Microsoft Business Cloud para procesar, almacenar y transmitir dichos datos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 Los servicios a los que Microsoft acuerda ser designados como "funcionario escolar" con "intereses educativos legítimos" en los datos de cliente son:
 
@@ -51,7 +51,7 @@ Los servicios a los que Microsoft acuerda ser designados como "funcionario escol
 - [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps y Power Automate (anteriormente Microsoft Flow) ya sea como un servicio independiente o como se incluye en un plan o conjunto de marcas de Office 365
 - Azure DevOps Services
-- ATP de Windows Defender
+- Microsoft Defender para punto de conexión 
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -68,9 +68,9 @@ Esta ley federal de Estados Unidos tiene en cuentan la protección de la privaci
 - [Registro federal: regla final de FERPA](https://aka.ms/ferpa-reg) (diciembre de 2011)
 - [Instrucciones generales de FERPA para padres](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el administrador de cumplimiento de Microsoft para evaluar el riesgo
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-El [Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica del centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) para ayudarle a comprender el nivel de cumplimiento normativo de su organización y emprender acciones para ayudar a reducir los riesgos. El administrador de cumplimiento ofrece una plantilla Premium para crear una evaluación de este Reglamento. Busque la plantilla en la página **plantillas de evaluación** en el administrador de cumplimiento. Obtenga información sobre cómo [compilar evaluaciones en el administrador de cumplimiento](compliance-manager-assessments.md).
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 

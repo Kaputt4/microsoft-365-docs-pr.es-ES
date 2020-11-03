@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: c78e65e9a466fe8b95e83fa1791dd8f09fa0c541
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c74b8a096afe1dbdd0e0d0cdc7ca5ce3fe8f9ea8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948741"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843323"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las diez formas principales de proteger los planes de Microsoft 365 para empresas
 
@@ -43,16 +43,16 @@ Microsoft recomienda que complete las tareas que se enumeran en la siguiente tab
 
 ||Task|Microsoft 365 Empresa Estándar|Microsoft 365 Empresa Premium|
 |---|---|---|---|
-|1 |[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Configurar la autenticación multifactor](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|segundo|[Proporcionar formación a los usuarios](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Aumentar el nivel de protección contra malware en correo](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Protección contra ransomware](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Detener el reenvío automático de correo electrónico](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Usar el cifrado de mensajes de Office](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Protección contra datos adjuntos malintencionados y archivos con datos adjuntos seguros](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[Protección contra ataques de suplantación de identidad con vínculos seguros](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Antes de empezar, Compruebe la [puntuación segura de microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) en el centro de seguridad de Microsoft 365. Desde un panel centralizado, puede supervisar y mejorar la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365. Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o dirigir recomendaciones con una aplicación o software de terceros. Con información adicional y una mayor visibilidad en un conjunto más amplio de productos y servicios de Microsoft, puede sentirse seguro de informar sobre el estado de seguridad de la organización.
 
@@ -75,7 +75,7 @@ Si la suscripción es nueva, es posible que los valores predeterminados de segur
 Puede habilitar o deshabilitar los valores predeterminados de seguridad en el panel **Propiedades** de Azure Active Directory (Azure AD) en Azure Portal.
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con credenciales de administrador global.
-2. En el panel de navegación izquierdo, elija**Mostrar todo** y, en **Centros de administración**, elija **Azure Active Directory**.
+2. En el panel de navegación izquierdo, elija **Mostrar todo** y, en **Centros de administración** , elija **Azure Active Directory**.
 3. En el **Centro de administración de Azure Active Directory** elija **Azure Active Directory** > **Propiedades**.
 4. En la parte inferior de la página, elija **Administrar los valores predeterminados de seguridad**.
 5. Elija **Sí** para habilitar los valores predeterminados de seguridad y **No** para deshabilitar los valores predeterminados de seguridad; a continuación, elija **Guardar**.
@@ -121,13 +121,13 @@ Su entorno de Microsoft 365 incluye protección contra malware, pero puede aumen
 
 1. Vaya a <https://protection.office.com> e inicie sesión con las credenciales de su cuenta de administrador.
 
-2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva** \> **antimalware**de directiva.
+2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas** , elija **Directiva** \> **antimalware** de directiva.
 
 3. Haga doble clic en la directiva predeterminada para editar esta directiva de toda la compañía.
 
 4. Seleccione **Configuración**.
 
-5. En **filtro de tipos de datos adjuntos comunes**, seleccione **activado**. Los tipos de archivo que están bloqueados aparecen en la ventana que se encuentra justo debajo de este control. Puede Agregar o eliminar tipos de archivo más adelante, si es necesario.
+5. En **filtro de tipos de datos adjuntos comunes** , seleccione **activado**. Los tipos de archivo que están bloqueados aparecen en la ventana que se encuentra justo debajo de este control. Puede Agregar o eliminar tipos de archivo más adelante, si es necesario.
 
 6. Seleccione **Guardar.**
 
@@ -237,52 +237,52 @@ Para obtener más información, vea [enviar, ver y responder a mensajes cifrados
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. proteger el correo electrónico de los ataques de suplantación de identidad
 <a name="phishing"> </a>
 
-Si ha configurado uno o más dominios personalizados para su entorno de Microsoft 365, puede configurar la protección contra suplantas de identidad (phishing) específica. La protección contra suplantación de identidad ATP, parte de la protección contra amenazas avanzada de Office 365, puede ayudar a proteger a su organización de ataques de suplantación de identidad (phishing) malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario que lo haga.
+Si ha configurado uno o más dominios personalizados para su entorno de Microsoft 365, puede configurar la protección contra suplantas de identidad (phishing) específica. Protección contra suplantación de identidad, una parte de Microsoft defender para Office 365, puede ayudar a proteger a su organización de ataques malintencionados de suplantación de identidad (phishing) malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario que lo haga.
 
 Le recomendamos que empiece con esta protección creando una directiva para proteger a los usuarios más importantes y a su dominio personalizado.
 
-![Creación de una directiva contra la suplantación de identidad ATP](../../media/security-and-compliance-center.png)
+![Creación de una directiva contra la suplantación de identidad en Microsoft defender para Office 365](../../media/security-and-compliance-center.png)
 
-Para crear una directiva contra la suplantación de identidad ATP, vea un [vídeo de aprendizaje corto](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)o realice los pasos siguientes:
+Para crear una directiva contra la suplantación de identidad en defender para Office 365, vea un [breve vídeo de aprendizaje](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)o siga los pasos que se indican a continuación:
 
 1. Vaya a <https://protection.office.com>.
 
-2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, seleccione **Directiva**.
+2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas** , seleccione **Directiva**.
 
-3. En la página Directiva, seleccione **protección contra phishing de ATP**.
+3. En la página Directiva, seleccione **protección contra suplantación de identidad**.
 
 4. En la página contra la suplantación de identidad, seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
 
-5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) .
+5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en el siguiente gráfico. Para obtener más información, vea [información sobre la Directiva contra la suplantación de identidad en Microsoft defender para Office 365 opciones](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) .
 
-6. Una vez que haya revisado la configuración, seleccione **crear esta directiva** o **Guardar**, según corresponda.
+6. Una vez que haya revisado la configuración, seleccione **crear esta directiva** o **Guardar** , según corresponda.
 
 |Configuración u opción|Valor recomendado|
 |---|---|
 |Nombre|Dominio y personal de la campaña más valioso|
-|Descripción|Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.|
+|Description|Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.|
 |Agregar usuarios que proteger|Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.|
 |Agregar dominios que proteger|Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.|
-|Elegir acciones|Si un usuario suplantado envía un correo electrónico: seleccione **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com. <br/> Si un dominio suplantado envía un correo electrónico: seleccione **mensaje en cuarentena**.|
+|Elegir acciones|Si un usuario suplantado envía un correo electrónico: seleccione **redirigir un mensaje a otra dirección de correo electrónico** y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com. <br/> Si un dominio suplantado envía un correo electrónico: seleccione **mensaje en cuarentena**.|
 |Inteligencia de buzones|De forma predeterminada, se selecciona inteligencia de buzones al crear una directiva contra suplantación de identidad (anti-phishing). Deje esta configuración **activada** para obtener mejores resultados.|
 |Agregar dominios y remitentes de confianza|En este ejemplo, no defina ninguna invalidación.|
-|Aplicado a|Seleccione**El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.|
+|Aplicado a|Seleccione **El dominio del destinatario es**. En **Cualquiera de estos** , seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.|
 |
 
-Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
+Para obtener más información, vea [set up anti-phishing policies in defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9: protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros
 <a name="atp"> </a>
 
-Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados solo mirando un mensaje de correo electrónico. Office 365 Advanced Threat Protection incluye protección contra datos adjuntos seguros de ATP, pero esta protección no está activada de forma predeterminada. Le recomendamos que cree una nueva regla para comenzar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
+Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados solo mirando un mensaje de correo electrónico. Microsoft defender para Office 365 incluye protección de datos adjuntos seguros, pero esta protección no está activada de forma predeterminada. Le recomendamos que cree una nueva regla para comenzar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
-Para crear una directiva de datos adjuntos seguros para ATP, vea un [vídeo de aprendizaje corto](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o realice los pasos siguientes:
+Para crear una directiva de datos adjuntos seguros, vea un [vídeo de aprendizaje corto](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o realice los pasos siguientes:
 
 1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta de administrador.
 
-2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, seleccione **Directiva**.
+2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas** , seleccione **Directiva**.
 
-3. En la página Directiva, seleccione **datos adjuntos seguros de ATP**.
+3. En la página Directiva, seleccione **datos adjuntos seguros**.
 
 4. En la página datos adjuntos seguros, aplique esta protección ampliando la selección de la casilla **Activar ATP para SharePoint, OneDrive y Microsoft Teams** .
 
@@ -290,23 +290,23 @@ Para crear una directiva de datos adjuntos seguros para ATP, vea un [vídeo de a
 
 6. Aplique la configuración de la tabla siguiente.
 
-7. Una vez que haya revisado la configuración, seleccione **crear esta directiva** o **Guardar**, según corresponda.
+7. Una vez que haya revisado la configuración, seleccione **crear esta directiva** o **Guardar** , según corresponda.
 
 |Configuración u opción|Valor recomendado|
 |---|---|
 |Nombre|Bloquear los correos electrónicos actuales y futuros con malware detectado.|
-|Descripción|Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.|
+|Description|Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocida|Seleccione **bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado**.|
 |Redirigir datos adjuntos en detección|Habilitar redirección (Seleccione esta casilla) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).|
 |Aplicado a|El dominio del destinatario es. . . Seleccione su dominio.|
 |
 
-Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
+Para obtener más información, vea [set up anti-phishing policies in defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
-## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10: protección contra ataques de suplantación de identidad con vínculos seguros de ATP
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: protección contra ataques de suplantación de identidad con vínculos seguros
 <a name="phishingatp"> </a>
 
-A veces, los hackers ocultan sitios Web malintencionados en vínculos de correo electrónico u otros archivos. Vínculos seguros de ATP de Office 365 (vínculos seguros de ATP), parte de la protección contra amenazas avanzada de Office 365, puede ayudar a proteger su organización proporcionando una comprobación del tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos de Office. La protección se define mediante las directivas de vínculos seguros de ATP.
+A veces, los hackers ocultan sitios Web malintencionados en vínculos de correo electrónico u otros archivos. Vínculos seguros, parte de Microsoft defender para Office 365, puede ayudarle a proteger su organización proporcionando una comprobación del tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos de Office. La protección se define mediante directivas de vínculos a prueba de errores.
 
 Le recomendamos que haga lo siguiente:
 
@@ -314,27 +314,27 @@ Le recomendamos que haga lo siguiente:
 
 - Agregue una nueva Directiva dirigida a todos los destinatarios de su dominio.
 
-Para acceder a vínculos seguros de ATP, vea un [vídeo de aprendizaje corto](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o realice los pasos siguientes:
+Para acceder a vínculos seguros, vea un [vídeo de aprendizaje corto](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o realice los pasos siguientes:
 
 1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta de administrador.
 
-2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, seleccione **Directiva**.
+2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas** , seleccione **Directiva**.
 
-3. En la página Directiva, seleccione **vínculos seguros ATP**.
+3. En la página Directiva, seleccione **vínculos seguros**.
 
 Para modificar la directiva predeterminada:
 
-1. En la página vínculos seguros, en **directivas que se aplican a toda la organización**, haga doble clic en la directiva **predeterminada** .
+1. En la página vínculos seguros, en **directivas que se aplican a toda la organización** , haga doble clic en la directiva **predeterminada** .
 
-2. En **configuración que se aplican al contenido de Office 365**, escriba una dirección URL que se va a bloquear, por ejemplo, _example.com_, y seleccione **+** .
+2. En **configuración que se aplican al contenido de Office 365** , escriba una dirección URL que se va a bloquear, por ejemplo, _example.com_ , y seleccione **+** .
 
-3. En **configuración que se aplican a contenido excepto correo electrónico**, seleccione **aplicaciones de Office 365**, **no realizar seguimiento cuando los usuarios hacen clic en vínculos seguros**y no **permiten a los usuarios hacer clic en los vínculos seguros a la dirección URL original**.
+3. En **configuración que se aplican a contenido excepto correo electrónico** , seleccione **aplicaciones de Office 365** , **no realizar seguimiento cuando los usuarios hacen clic en vínculos seguros** y no **permiten a los usuarios hacer clic en los vínculos seguros a la dirección URL original**.
 
 4. Seleccione **Guardar**.
 
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
 
-1. En la página vínculos seguros, en **directivas que se aplican a destinatarios específicos**, seleccione **+** para crear una nueva Directiva.
+1. En la página vínculos seguros, en **directivas que se aplican a destinatarios específicos** , seleccione **+** para crear una nueva Directiva.
 
 2. Aplique la configuración que se muestra en la tabla siguiente.
 
@@ -348,4 +348,4 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
 |Aplicado a|El dominio del destinatario es. . . Seleccione su dominio.|
 |
 
-Para obtener más información, vea [vínculos seguros en Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
+Para obtener más información, vea [vínculos a prueba de errores en Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).

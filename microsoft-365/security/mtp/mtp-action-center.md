@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: a89383d99cc3f6c98947d1562daf3467dd48c62d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 3ec17204903f3e83f3fbfd126d57d0b9ca5d56f7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429760"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843797"
 ---
 # <a name="the-action-center"></a>El centro de actividades
 
@@ -34,7 +34,7 @@ ms.locfileid: "48429760"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 Use el centro de actividades para ver los resultados de las investigaciones actuales y pasadas en los buzones y dispositivos de su organización. Según el tipo de amenaza y el veredicto resultante, [las acciones de corrección](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) se producen automáticamente o al aprobarlas por parte del equipo de operaciones de seguridad de la organización. Todas las acciones de corrección, tanto si están pendientes de aprobación como si ya se han aprobado, se consolidan en el Centro de actividades. 
 
@@ -47,7 +47,7 @@ El Centro de actividades proporciona una perspectiva centralizada de diferentes 
 - Visualización de un registro de auditoría de las acciones de corrección ya aprobadas; y
 - Revisión de las acciones de corrección completadas.
 
-El equipo de operaciones de seguridad puede trabajar con más eficacia y eficiencia, ya que el Centro de actividades ofrece una vista integral de la Protección contra amenazas de Microsoft en el trabajo.
+El equipo de operaciones de seguridad puede funcionar de forma más eficaz y eficaz, ya que el centro de actividades proporciona una vista completa de Microsoft 365 defender en el trabajo.
 
 ## <a name="go-to-the-action-center"></a>Vaya al Centro de actividades
 
@@ -61,7 +61,7 @@ El equipo de operaciones de seguridad puede trabajar con más eficacia y eficien
 
     - En la pestaña **Historial** se muestran las investigaciones pasadas y las acciones de corrección que se han ejecutado automáticamente. Puede ver los datos del día, la semana, el mes o los seis meses anteriores.
 
-4. Para mostrar solo las columnas que quiera ver, seleccione **Personalizar columnas**.<br/>![Centro de actividades en la Protección contra amenazas de Microsoft](../../media/mtp-action-center.png)
+4. Para mostrar solo las columnas que quiera ver, seleccione **Personalizar columnas**.<br/>![Centro de actividades de Microsoft 365 defender](../../media/mtp-action-center.png)
 
 5. Seleccione un elemento de la lista para ver más detalles sobre una investigación. Se abrirá la vista de detalles de la investigación.<br/>![Detalles de la investigación](../../media/mtp-air-investdetails.png)
 
@@ -70,7 +70,7 @@ El equipo de operaciones de seguridad puede trabajar con más eficacia y eficien
     - Si la investigación está relacionada con un dispositivo, los detalles de la investigación se abren en el centro de seguridad ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 > [!TIP]
-> Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](mtp-autoir-report-false-positives-negatives.md).
+> Si cree que algo se perdió o no se detectó de forma incorrecta en las características de investigación y respuesta automatizadas de Microsoft 365 defender, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en Microsoft 365 defender](mtp-autoir-report-false-positives-negatives.md).
 
 ## <a name="available-actions"></a>Acciones disponibles
 
@@ -92,8 +92,8 @@ Para aprobar o rechazar las acciones pendientes en el Centro de actividades, deb
 
 |Acción de corrección |Permisos y roles necesarios |
 |--|----|
-|Corrección de ATP de Microsoft Defender (dispositivos) |Rol de administrador de seguridad asignado en Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>Rol de acciones de corrección activas asignado en ATP de Microsoft Defender. <br/> <br/> Para obtener más información, vea los siguientes recursos: <br/>- [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Crear y administrar roles para el control de acceso basado en roles (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Corrección de ATP de Office 365 (contenido de Office y correo electrónico)  |Rol de administrador de seguridad asignado en Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- y --- <br/>Rol de búsqueda y depuración asignado al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**Importante**: Si tiene asignado el rol de administrador de seguridad en el centro de seguridad & cumplimiento, no podrá acceder al centro de actividades ni a las capacidades de Microsoft Threat Protection. Debe tener el rol de administrador de seguridad asignado en Azure Active Directory o en el Centro de administración de Microsoft 365. <br/><br/>Para obtener más información, vea los siguientes recursos: <br/>- [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permisos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft defender para la corrección de extremos (dispositivos) |Rol de administrador de seguridad asignado en Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>Rol acciones de corrección activas asignado en Microsoft defender para el punto de conexión <br/> <br/> Para obtener más información, vea los siguientes recursos: <br/>- [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creación y administración de roles para el control de acceso basado en roles (Microsoft defender for Endpoint)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Corrección de Microsoft defender para Office 365 (contenido de Office y correo electrónico)  |Rol de administrador de seguridad asignado en Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- y --- <br/>Rol de búsqueda y depuración asignado al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**Importante** : Si tiene asignado el rol de administrador de seguridad en el centro de seguridad & cumplimiento, no podrá acceder al centro de actividades ni a las capacidades de Microsoft 365 defender. Debe tener el rol de administrador de seguridad asignado en Azure Active Directory o en el Centro de administración de Microsoft 365. <br/><br/>Para obtener más información, vea los siguientes recursos: <br/>- [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Permisos en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
 > Los usuarios que tienen el rol de administrador global asignado en Azure Active Directory pueden aprobar o denegar cualquier acción pendiente en el Centro de actividades. No obstante, el procedimiento recomendado es que la organización limite el número de usuarios que tienen asignado el rol de administrador global. Le recomendamos que use los roles de administrador de seguridad, acciones de corrección activas y búsqueda y purga enumerados anteriormente para los permisos del Centro de actividades.

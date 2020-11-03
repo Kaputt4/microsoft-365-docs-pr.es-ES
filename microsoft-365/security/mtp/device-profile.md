@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196862"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843857"
 ---
 # <a name="device-profile-page"></a>Página de Perfil de dispositivo
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196862"
 El portal de seguridad 365 de Microsoft proporciona páginas de Perfil de dispositivo para que pueda evaluar rápidamente el estado y el estado de los dispositivos de la red.
 
 > [!IMPORTANT]
-> La página de Perfil de dispositivo puede aparecer ligeramente diferente en función de si el dispositivo está inscrito en ATP de Microsoft defender, en ATP de Azure o en ambas.
+> La página de Perfil de dispositivo puede aparecer ligeramente distinta, en función de si el dispositivo está inscrito en Microsoft defender para el punto de conexión, Microsoft defender para la identidad o ambos.
 
-Si el dispositivo está inscrito en ATP de Microsoft defender, también puede usar la página Perfil de dispositivo para realizar algunas tareas de seguridad comunes.
+Si el dispositivo está inscrito en Microsoft defender para el punto de conexión, también puede usar la página Perfil de dispositivo para realizar algunas tareas de seguridad comunes.
 
 ## <a name="navigating-the-device-profile-page"></a>Navegación por la página de Perfil de dispositivo
 
@@ -41,7 +41,7 @@ La barra lateral (1) enumera los detalles básicos sobre el dispositivo.
 
 El área de contenido principal (2) contiene pestañas que se pueden alternar para ver distintos tipos de información sobre el dispositivo.
 
-Si el dispositivo está inscrito en ATP de Microsoft defender, también verá una lista de acciones de respuesta (3). Las acciones de respuesta le permiten realizar tareas comunes relacionadas con la seguridad.
+Si el dispositivo está inscrito en Microsoft defender para el punto de conexión, también verá una lista de acciones de respuesta (3). Las acciones de respuesta le permiten realizar tareas comunes relacionadas con la seguridad.
 
 ## <a name="sidebar"></a>-
 
@@ -51,15 +51,15 @@ Junto al área de contenido principal de la página de perfil del dispositivo se
 
 La barra lateral muestra el nombre completo y el nivel de exposición del dispositivo. También se proporciona información básica importante en subsecciones pequeñas que se pueden alternar abiertas o cerradas, por ejemplo:
 
-* **Etiquetas** : cualquier ATP de Microsoft defender, ATP de Azure o etiquetas personalizadas asociadas con el dispositivo. Las etiquetas de Azure ATP no se pueden editar.
-* **Información de seguridad** : incidentes abiertos y alertas activas. Los dispositivos inscritos en ATP de Microsoft defender también mostrarán el nivel de exposición y el nivel de riesgo.
+* **Tags** : cualquier Microsoft defender para extremo, Microsoft defender para identidad o etiquetas personalizadas asociadas con el dispositivo. Las etiquetas de Microsoft defender para identidad no son editables.
+* **Información de seguridad** : incidentes abiertos y alertas activas. Los dispositivos inscritos en Microsoft defender para el punto de conexión también mostrarán el nivel de exposición y el nivel de riesgo.
 
 > [!TIP]
 > El nivel de exposición está relacionado con la medida en que el dispositivo cumple con las recomendaciones de seguridad, mientras que el nivel de riesgo se calcula en función de una serie de factores, incluidos los tipos y la gravedad de las alertas activas.
 
-* **Detalles del dispositivo** : dominio, so, marca de tiempo para cuando se ha visto el dispositivo por primera vez, direcciones IP y recursos. Los dispositivos inscritos en Microsoft defender ATP también muestran el estado de mantenimiento. Los dispositivos inscritos en ATP de Azure mostrarán el nombre SAM y una marca de hora para cuando se creó el dispositivo por primera vez.
+* **Detalles del dispositivo** : dominio, so, marca de tiempo para cuando se ha visto el dispositivo por primera vez, direcciones IP y recursos. Los dispositivos inscritos en Microsoft defender para el punto de conexión también muestran el estado de mantenimiento. Los dispositivos inscritos en Microsoft defender para la identidad mostrarán el nombre del SAM y una marca de hora para cuando se creó el dispositivo por primera vez.
 * **Actividad de red** : marcas de tiempo para la primera y última vez que el dispositivo se ve en la red.
-* **Datos del directorio** (*solo para dispositivos inscritos en ATP de Azure*): marcas [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) , [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)y pertenencias a grupos.
+* **Datos del directorio** ( *solo para dispositivos inscritos en Microsoft defender para identidad* ): marcas [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) , [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)y pertenencias a grupos.
 
 ## <a name="response-actions"></a>Acciones de respuesta
 
@@ -68,13 +68,13 @@ Las acciones de respuesta ofrecen una forma rápida de defenderse y analizar las
 ![Imagen de la barra de acciones para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [Las acciones de respuesta](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) solo están disponibles si el dispositivo está inscrito en ATP de Microsoft defender.
-> * Los dispositivos inscritos en ATP de Microsoft defender pueden mostrar diferentes números de acciones de respuesta según el sistema operativo del dispositivo y el número de versión.
+> * [Las acciones de respuesta](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) solo están disponibles si el dispositivo está inscrito en Microsoft defender para el punto de conexión.
+> * Los dispositivos inscritos en Microsoft defender para el punto de conexión pueden mostrar distintos números de acciones de respuesta, según el sistema operativo del dispositivo y el número de versión.
 
 Las acciones disponibles en la página de Perfil de dispositivo incluyen:
 
 * **Administrar etiquetas** : actualiza las etiquetas personalizadas que hayas aplicado a este dispositivo.
-* **Aislar dispositivo** : aísla el dispositivo de la red de su organización y conserva la conexión con la protección contra amenazas avanzada de Microsoft defender. Puede elegir permitir que se ejecuten Outlook, Teams y Skype empresarial mientras el dispositivo está aislado, con fines de comunicación.
+* **Aislar dispositivo** : aísla el dispositivo de la red de su organización al tiempo que lo conserva conectado a Microsoft defender para el punto de conexión. Puede elegir permitir que se ejecuten Outlook, Teams y Skype empresarial mientras el dispositivo está aislado, con fines de comunicación.
 * **Centro de actividades** : ver el estado de las acciones enviadas. Solo está disponible si ya se ha seleccionado otra acción.
 * **Restringir la ejecución** de la aplicación: evita que se ejecuten las aplicaciones que Microsoft no ha firmado.
 * **Ejecutar detección de virus** : actualiza las definiciones de antivirus de Windows Defender y ejecuta inmediatamente un examen de antivirus. Elija entre análisis rápido o análisis completo.
@@ -87,7 +87,7 @@ Las acciones disponibles en la página de Perfil de dispositivo incluyen:
 
 Las fichas de Perfil de dispositivo permiten alternar entre una introducción a los detalles de seguridad del dispositivo y las tablas que contienen una lista de alertas.
 
-Los dispositivos inscritos en ATP de Microsoft defender también mostrarán pestañas que incluyen una escala de tiempo, una lista de recomendaciones de seguridad, un inventario de software, una lista de vulnerabilidades descubiertas y los KB (actualizaciones de seguridad) que faltan.
+Los dispositivos inscritos en Microsoft defender para el punto de conexión también mostrarán pestañas que incluyen una escala de tiempo, una lista de recomendaciones de seguridad, un inventario de software, una lista de vulnerabilidades descubiertas y los KB (actualizaciones de seguridad) que faltan.
 
 ### <a name="overview-tab"></a>Ficha Información general
 
@@ -97,11 +97,11 @@ La pestaña predeterminada es **información general**. Proporciona una visión 
 
 Aquí puede ver rápidamente las alertas activas del dispositivo y cualquier usuario que haya iniciado sesión en ese momento.
 
-Si el dispositivo está inscrito en ATP de Microsoft defender, también verá el nivel de riesgo del dispositivo y los datos disponibles en las evaluaciones de seguridad. Las evaluaciones de seguridad describen el nivel de exposición del dispositivo, proporcionan recomendaciones de seguridad y enumeran el software afectado y las vulnerabilidades detectadas.
+Si el dispositivo está inscrito en Microsoft defender para el punto de conexión, también verá el nivel de riesgo del dispositivo y los datos disponibles en las evaluaciones de seguridad. Las evaluaciones de seguridad describen el nivel de exposición del dispositivo, proporcionan recomendaciones de seguridad y enumeran el software afectado y las vulnerabilidades detectadas.
 
 ### <a name="alerts-tab"></a>Ficha Alertas
 
-La pestaña **alertas** contiene una lista de las alertas que se han generado en el dispositivo, tanto de ATP de Azure como de ATP de Microsoft defender.
+La ficha **alertas** contiene una lista de las alertas que se han generado en el dispositivo, tanto de Microsoft defender para identidad como de Microsoft defender para el punto de conexión.
 
 ![Imagen de la pestaña de alertas para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -179,7 +179,7 @@ Al seleccionar un elemento, se abrirá un control flotante que se vincula a la a
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Introducción a la Protección contra amenazas de Microsoft](microsoft-threat-protection.md)
-* [Habilitar la Protección contra amenazas de Microsoft](mtp-enable.md)
+* [Información general de Microsoft 365 defender](microsoft-threat-protection.md)
+* [Activar Microsoft 365 defender](mtp-enable.md)
 * [Investigar entidades en dispositivos usando la respuesta activa](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Investigación y respuesta automatizadas (AIR) en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779239"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843821"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación segura de Microsoft
 
@@ -35,7 +35,7 @@ Para convertir la puntuación segura de Microsoft en un mejor representante de s
 
 ## <a name="october-2020"></a>Octubre de 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Quitar la acción de mejora relacionada con la protección contra amenazas avanzada de Microsoft defender
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Quitar la acción de mejora relacionada con Microsoft defender para el punto de conexión
 
 - Establecer la comprobación de contenido Web de aplicación de la tienda Windows de Microsoft defender para advertir
 
@@ -54,8 +54,8 @@ En el tiempo, la calificación de identidad segura y la API de Graph adoptarán 
 ## <a name="updated-improvement-actions"></a>Acciones de mejora actualizadas
 
 - Se agregaron acciones de mejora de Azure Active Directory
-- Se agregaron acciones de mejora de protección contra amenazas avanzada de Azure
-- Compatibilidad con las recomendaciones de seguridad de la [vulnerabilidad ATP & vulnerabilidad](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) de Microsoft defender
+- Se agregaron las acciones de Microsoft defender para mejorar la identidad
+- Soporte para la amenaza de Microsoft defender para la amenaza de extremo & recomendaciones de seguridad para la [Administración de vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
     - Todas las recomendaciones de seguridad emitidas suministradas por TVM ya están disponibles
 
 ## <a name="updated-interface-and-functionality"></a>Interfaz y funciones actualizadas

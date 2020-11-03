@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre los pasos de configuración para Microsoft 365 empresa Premium, suscribirse, agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841149"
+ms.locfileid: "48842138"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
@@ -48,7 +48,7 @@ La mayoría de los pasos de configuración pueden realizarse en la configuració
 
    - **[Agregar el dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (si ha comprado su dominio durante el [registro](sign-up.md), este paso ya se ha realizado).
 
-   - **Agregar usuarios** . Puede Agregar usuarios de las tres maneras siguientes:
+   - **Agregar usuarios**. Puede Agregar usuarios de las tres maneras siguientes:
         - En la [configuración guiada](set-up.md#add-users-in-the-wizard).
         - Use la sincronización de directorios para [Agregar usuarios con Azure ad Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) si tiene un Active Directory local.
         - También puede [Agregar usuarios más adelante](add-users-m365b.md) en el centro de administración.
@@ -61,7 +61,7 @@ La mayoría de los pasos de configuración pueden realizarse en la configuració
   Además de la configuración de seguridad del asistente de configuración, puede aumentar la seguridad si agrega las siguientes opciones de configuración:
 
 - **Protección contra malware de correo electrónico**
-- **Contra la suplantación de identidad ATP**
+- **Anti-phishing en defender para Office 365**
 - **Archivado de Exchange Online**
 - **Azure Information Protection (Plan1** )
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evitar que los ataques actuales y emergentes, como los ataques malintencionados o los vínculos maliciosos, interrumpan la productividad de los empleados y la seguridad empresarial.
-ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3b31ef639667c7ef761d1d5fa0295f5d767e0c48
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197578"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843011"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Protección de aplicaciones para Office (vista previa pública) para administradores
 
@@ -40,15 +40,15 @@ La protección de aplicaciones de Microsoft defender para Office (protección de
 
 ### <a name="minimum-hardware-requirements"></a>Requisitos mínimos de hardware
 
-* **CPU**: 64 bits, 4 núcleos (físicos o virtuales), extensiones de virtualización (Intel VT-x o AMD-V), principales i5 equivalentes o superiores recomendados
-* **Memoria física**: 8 GB de RAM
-* **Disco duro**: 10 GB de espacio libre en la unidad del sistema (se recomienda SSD)
+* **CPU** : 64 bits, 4 núcleos (físicos o virtuales), extensiones de virtualización (Intel VT-x o AMD-V), principales i5 equivalentes o superiores recomendados
+* **Memoria física** : 8 GB de RAM
+* **Disco duro** : 10 GB de espacio libre en la unidad del sistema (se recomienda SSD)
 
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
-* **Windows 10**: Windows 10 Enterprise Edition, versión de compilación de cliente 2004 (20H1) compilación 19041
-* **Office**: versión de compilación de canal de office beta 2008 16.0.13212 o posterior
-* **Paquete de actualización**: actualizaciones de seguridad mensual acumuladas de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
+* **Windows 10** : Windows 10 Enterprise Edition, versión de compilación de cliente 2004 (20H1) compilación 19041
+* **Office** : versión de compilación de canal de office beta 2008 16.0.13212 o posterior
+* **Paquete de actualización** : actualizaciones de seguridad mensual acumuladas de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 Para obtener información detallada sobre los requisitos del sistema, consulte [requisitos del sistema para la protección de aplicaciones de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Para obtener más información sobre las versiones de Office Insider Preview, consulte Introducción a la [implementación de las compilaciones de Office Insider](https://insider.office.com/business/deploy).
 
@@ -92,7 +92,7 @@ Este paso garantiza que los datos necesarios para identificar y solucionar los p
 
     ![Menú Inicio](../../media/ag05-diagnostic.png)
 
-2.  En **configuración de Windows**, seleccione **privacidad**.
+2.  En **configuración de Windows** , seleccione **privacidad**.
 
     ![Menú de configuración de Windows](../../media/ag06-diagnostic.png)
 
@@ -131,7 +131,7 @@ Office admite las siguientes directivas que le permitirán configurar las capaci
 > Estas directivas estarán disponibles próximamente.
 >Además, la configuración de estas directivas puede deshabilitar algunas funcionalidades para los archivos abiertos en protección de aplicaciones para Office.
 
-| Policy                                                                          | Descripción                                                                                                                                                                                                                                                                                             |
+| Directiva                                                                          | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deshabilitar la protección de aplicaciones para Office                                            | Al habilitar esta Directiva, Word, Excel y PowerPoint usarán el contenedor de aislamiento de vista protegida en lugar de la protección de aplicaciones de Office. Esta Directiva se puede usar para deshabilitar temporalmente la protección de aplicaciones de Office cuando hay problemas para dejarla habilitada para el servidor perimetral.                                  |
 | Deshabilitar la copia y pegado de los documentos abiertos en la protección de aplicaciones                    | Al habilitar esta Directiva, impedirá que un usuario copie y pegue contenido de un documento abierto en la protección de aplicaciones de Office a un documento abierto fuera de él.                                                                                                                                   |
@@ -160,9 +160,9 @@ Si encuentra algún problema al iniciar la protección de aplicaciones para Offi
 
 4.  Rellene el cuadro **explicar en más detalles** con una descripción detallada del problema que ha experimentado y los pasos que ha seguido y, a continuación, seleccione **siguiente**.
 
-5.  Seleccione la burbuja junto a problema. Asegúrese de que la categoría seleccionada es **seguridad y privacidad \> Microsoft defender Application Guard – Office**y, a continuación, seleccione **siguiente**.
+5.  Seleccione la burbuja junto a problema. Asegúrese de que la categoría seleccionada es **seguridad y privacidad \> Microsoft defender Application Guard – Office** y, a continuación, seleccione **siguiente**.
 
-6.  Seleccione **comentarios nuevos**y, a continuación, **siguiente**.
+6.  Seleccione **comentarios nuevos** y, a continuación, **siguiente**.
 
 7.  Recopile los seguimientos del problema:
 
@@ -188,13 +188,13 @@ Si encuentra algún problema al iniciar la protección de aplicaciones para Offi
 
 También puede enviar comentarios desde Office si el problema se produce al abrir documentos de Office en la protección de aplicaciones. Consulte el [manual de Office Insider](https://insider.office.com/handbook) para enviar comentarios.
 
-## <a name="integration-with-microsoft-defender-atp-and-office-atp"></a>Integración con ATP de Microsoft defender y Office ATP
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integración con Microsoft defender para Endpoint y Microsoft defender para Office 365
 
-La protección de aplicaciones para Office está integrada con la protección contra amenazas de avance de Microsoft defender (ATP) para proporcionar supervisión y alertas sobre actividades malintencionadas que ocurren en el entorno aislado.
+La protección de aplicaciones para Office está integrada con Microsoft defender para el punto de conexión para proporcionar supervisión y alertas sobre actividades malintencionadas que ocurren en el entorno aislado.
 
-Microsoft defender ATP es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información sobre esta plataforma, visite la página de [protección contra amenazas avanzada de Microsoft defender](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) . Obtén más información sobre los dispositivos de incorporación a esta plataforma en [los dispositivos integrados en el servicio ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+Microsoft defender for Endpoint es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información sobre esta plataforma, visite la página [de Microsoft defender para extremo](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) . Obtenga más información sobre los dispositivos de incorporación a esta plataforma en [los dispositivos integrados en el servicio de Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-También puede configurar ATP de Office 365 para que funcione con ATP de Microsoft defender. Consulte [integrar Office 365 ATP con Microsoft defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
+También puede configurar Microsoft defender para Office 365 para que funcione con defender para el punto de conexión. Consulte [integrar defender para Office 365 con Microsoft defender para el punto de conexión](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide).
 
 ## <a name="limitations-and-considerations"></a>Limitaciones y consideraciones
 

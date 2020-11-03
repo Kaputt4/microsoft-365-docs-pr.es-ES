@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b84ca774e1b9bd0bca51b8ee21f6a06f2fde5b4
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92760ef14fb1192e4462bab656e22f3595f9b449
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430626"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843869"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de dispositivos en el centro de seguridad 365 de Microsoft
 
@@ -33,11 +33,11 @@ Mantenga los dispositivos protegidos, actualizados y detecte posibles amenazas e
 
 ## <a name="view-device-alerts"></a>Ver alertas de dispositivos
 
-Obtén las alertas actualizadas sobre la actividad de infracciones y otras amenazas en tus dispositivos de ATP de Microsoft defender (disponible con una licencia E5). El centro de seguridad 365 de Microsoft supervisa con eficacia estas alertas en un nivel alto usando el flujo de trabajo preferido.
+Obtenga alertas actualizadas sobre la actividad de infracciones y otras amenazas en los dispositivos de Microsoft defender para el punto de conexión (disponible con una licencia E5). El centro de seguridad 365 de Microsoft supervisa con eficacia estas alertas en un nivel alto usando el flujo de trabajo preferido.
 
 ### <a name="monitor-high-impact-alerts"></a>Supervisar alertas de alto impacto
 
-Cada alerta de ATP de Microsoft defender tiene una gravedad correspondiente (alta, media, baja o informativa). Indica un posible impacto en la red si se deja desatendida.  
+Cada alerta de Microsoft defender for Endpoint tiene una gravedad correspondiente (alta, media, baja o informativa). Indica un posible impacto en la red si se deja desatendida.  
 
 Use la tarjeta de **gravedad de alertas de dispositivos** para centrarse específicamente en las alertas más graves y que puedan requerir respuesta inmediata. Desde esta tarjeta, puede ver más información en el portal del centro de seguridad de Microsoft defender.
 
@@ -45,7 +45,7 @@ Use la tarjeta de **gravedad de alertas de dispositivos** para centrarse especí
 
 ### <a name="understand-sources-of-alerts"></a>Comprender los orígenes de las alertas
 
-ATP de Microsoft defender aprovecha los datos de una amplia gama de sensores de seguridad y orígenes de inteligencia para generar alertas. Por ejemplo, puede usar la información de detección de antivirus de Microsoft defender y antimalware de terceros. También puede usar su propia inteligencia de amenazas personalizada que se proporciona a través de la API del servicio Web.
+Microsoft defender for Endpoint aprovecha los datos de una amplia gama de sensores de seguridad y orígenes de inteligencia para generar alertas. Por ejemplo, puede usar la información de detección de antivirus de Microsoft defender y antimalware de terceros. También puede usar su propia inteligencia de amenazas personalizada que se proporciona a través de la API del servicio Web.
 
 La tarjeta orígenes de **detección de alertas de dispositivo** muestra la distribución de las alertas por origen. Realizar un seguimiento de la actividad relacionada con determinados orígenes, especialmente con los orígenes personalizados. También puede usar la tarjeta para centrarse en las alertas procedentes de sensores que no están configurados para bloquear automáticamente la actividad o los componentes malintencionados.
 
@@ -55,7 +55,7 @@ Desde esta tarjeta, puede ver más información en el portal del centro de segur
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Descripción de los tipos de amenazas que desencadenan alertas
 
-Microsoft defender ATP ordena cada alerta en una categoría que representa una determinada fase en la cadena de ataques o en el tipo de componente de amenaza. Por ejemplo, una actividad de amenaza detectada se puede clasificar como "movimiento lateral" para indicar que se ha intentado llegar a otros dispositivos de la red. Es probable que se haya producido una actividad después de que los atacantes hayan obtenido un primer apoyo. Cuando se detecta, un componente de amenaza puede clasificarse ampliamente como malware o específicamente como un tipo de amenaza específico. Los detalles específicos incluyen ransomware, robo de credenciales u otros tipos de software malintencionado o no deseado.
+Microsoft defender for Endpoint ordena cada alerta en una categoría que representa una determinada fase en la cadena de ataques o en el tipo de componente de amenaza. Por ejemplo, una actividad de amenaza detectada se puede clasificar como "movimiento lateral" para indicar que se ha intentado llegar a otros dispositivos de la red. Es probable que se haya producido una actividad después de que los atacantes hayan obtenido un primer apoyo. Cuando se detecta, un componente de amenaza puede clasificarse ampliamente como malware o específicamente como un tipo de amenaza específico. Los detalles específicos incluyen ransomware, robo de credenciales u otros tipos de software malintencionado o no deseado.
 
 La tarjeta de **categorías de amenaza de dispositivo** muestra la distribución de las alertas a estas categorías. Use esta información para identificar la actividad de amenazas, como los intentos de robo de credenciales, que suelen tener un mayor impacto que los intentos de ingeniería social. También puede supervisar amenazas potencialmente destructivas como ransomware.
 
@@ -69,7 +69,7 @@ La tarjeta de **Estado de alerta de dispositivo** indica el número de alertas q
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Supervisión de la clasificación de las alertas resueltas
 
-Al resolver una alerta de ATP de Microsoft defender, el personal de seguridad puede especificar si se ha verificado una alerta como:
+Al resolver una alerta de Microsoft defender para el punto de conexión, el personal de seguridad puede especificar si se ha verificado una alerta como:
 
 * Una alerta verdadera que identifica la actividad de infracciones real o los componentes de amenazas
 * Una alerta falsa que ha detectado incorrectamente actividad normal
@@ -86,12 +86,12 @@ Además de clasificar si una alerta es verdadera o falsa durante la resolución,
 
 La tarjeta de **determinación de alertas de dispositivo** muestra la determinación proporcionada para cada alerta.
 
-* **Apt**: amenaza persistente avanzada, que indica que el componente de amenaza o actividad detectada forma parte de una infracción compleja diseñada para llegar a la red afectada  
-* **Malware**: archivo malintencionado o código
-* **Personal de seguridad**: actividad normal realizada por el personal de seguridad
-* **Pruebas de seguridad**: actividad o componentes diseñados para simular amenazas reales y que se espera que desencadenen sensores de seguridad y generen alertas
-* **Software no deseado**: aplicaciones y otro software que no se consideran malintencionados pero que infringen las directivas o los estándares de uso aceptables
-* **Otros**: cualquier otra determinación que no se incluya en los tipos proporcionados
+* **Apt** : amenaza persistente avanzada, que indica que el componente de amenaza o actividad detectada forma parte de una infracción compleja diseñada para llegar a la red afectada  
+* **Malware** : archivo malintencionado o código
+* **Personal de seguridad** : actividad normal realizada por el personal de seguridad
+* **Pruebas de seguridad** : actividad o componentes diseñados para simular amenazas reales y que se espera que desencadenen sensores de seguridad y generen alertas
+* **Software no deseado** : aplicaciones y otro software que no se consideran malintencionados pero que infringen las directivas o los estándares de uso aceptables
+* **Otros** : cualquier otra determinación que no se incluya en los tipos proporcionados
 
 Desde esta tarjeta, puede ver más información en el centro de seguridad de Microsoft defender.
 
@@ -162,9 +162,9 @@ La tarjeta **Reglas de reducción de la superficie expuesta a ataques** ofrece i
 
 La barra superior de la tarjeta muestra el número total de dispositivos que se encuentran en los siguientes modos de implementación:
 
-* **Modo de bloqueo**: dispositivos con al menos una regla configurada para bloquear la actividad detectada
-* **Modo auditoría**: dispositivos sin reglas establecidas para bloquear la actividad detectada, pero tiene al menos una regla establecida para auditar la actividad detectada  
-* **Desactivado: dispositivos**con todas las reglas de ASR desactivadas
+* **Modo de bloqueo** : dispositivos con al menos una regla configurada para bloquear la actividad detectada
+* **Modo auditoría** : dispositivos sin reglas establecidas para bloquear la actividad detectada, pero tiene al menos una regla establecida para auditar la actividad detectada  
+* **Desactivado: dispositivos** con todas las reglas de ASR desactivadas
 
 La parte inferior de esta tarjeta muestra la configuración por regla en los dispositivos. Cada barra indica el número de dispositivos que están configurados para bloquear, la detección de auditoría o la desactivación de la regla por completo.
 
@@ -176,10 +176,10 @@ Para ver información detallada sobre las detecciones de reglas de ASR en la red
 
 El gráfico de la parte superior de la página muestra las detecciones con detecciones de agrupamiento de tiempo que se bloquearon o auditaron. En la tabla de la parte inferior se muestran las detecciones más recientes. Use la siguiente información de la tabla para comprender la naturaleza de las detecciones:
 
-* **Archivo detectado**: el archivo, normalmente un script o un documento, cuyo contenido activó la actividad de ataque sospechoso
-* **Regla**: nombre que describe las actividades de ataque para las que se ha diseñado la regla. Leer acerca de las reglas de ASR existentes
-* **Aplicación de origen**: aplicación que ha cargado o ejecutado contenido que desencadena la actividad de ataque sospechoso. Puede ser una aplicación legítima, como un explorador Web, una aplicación de Office o una herramienta del sistema como PowerShell.
-* **Publisher**: el proveedor que liberó la aplicación de origen
+* **Archivo detectado** : el archivo, normalmente un script o un documento, cuyo contenido activó la actividad de ataque sospechoso
+* **Regla** : nombre que describe las actividades de ataque para las que se ha diseñado la regla. Leer acerca de las reglas de ASR existentes
+* **Aplicación de origen** : aplicación que ha cargado o ejecutado contenido que desencadena la actividad de ataque sospechoso. Puede ser una aplicación legítima, como un explorador Web, una aplicación de Office o una herramienta del sistema como PowerShell.
+* **Publisher** : el proveedor que liberó la aplicación de origen
 
 ### <a name="review-device-asr-rule-settings"></a>Revisar la configuración de la regla de ASR del dispositivo
 
@@ -207,7 +207,7 @@ En la tabla se enumeran todos los nombres de archivo detectados por las reglas d
 
 Para obtener una lista de los archivos seleccionados con todas las rutas de acceso para la exclusión, seleccione **obtener rutas de exclusión**.
 
-Registros para la regla de **protección contra credenciales de bloqueo de las credenciales de ASR desde el subsistema de la autoridad de seguridad local de Windows (lsass.exe)** capturar la aplicación de origen **lsass.exe**. Es un archivo de sistema normal, pero se captura como el archivo detectado. Como resultado, la lista generada de rutas de exclusión incluirá este archivo. Para excluir el archivo que desencadenó esta regla en lugar de **lsass.exe**, use la ruta de acceso a la aplicación de origen en lugar del archivo detectado.
+Registros para la regla de **protección contra credenciales de bloqueo de las credenciales de ASR desde el subsistema de la autoridad de seguridad local de Windows (lsass.exe)** capturar la aplicación de origen **lsass.exe**. Es un archivo de sistema normal, pero se captura como el archivo detectado. Como resultado, la lista generada de rutas de exclusión incluirá este archivo. Para excluir el archivo que desencadenó esta regla en lugar de **lsass.exe** , use la ruta de acceso a la aplicación de origen en lugar del archivo detectado.
 
 Para encontrar la aplicación de origen, ejecute la siguiente [consulta de búsqueda avanzada](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) para esta regla específica (identificada por el identificador de regla 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 

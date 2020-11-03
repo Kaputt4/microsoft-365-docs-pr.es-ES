@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos híbridos y independientes.
-ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202908"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842409"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -28,9 +28,9 @@ ms.locfileid: "48202908"
 
 Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. EOP se incluye en todas las organizaciones de Microsoft 365 con buzones de correo de Exchange Online. Sin embargo, EOP también está disponible en los siguientes escenarios locales:
 
-- **En un escenario independiente**: EOP proporciona protección de correo electrónico basada en la nube para su organización de Exchange local o para cualquier otra solución de correo SMTP local.
+- **En un escenario independiente** : EOP proporciona protección de correo electrónico basada en la nube para su organización de Exchange local o para cualquier otra solución de correo SMTP local.
 
-- **En una implementación híbrida**: EOP se puede configurar para proteger su entorno de correo electrónico y controlar el enrutamiento de correo cuando tiene una mezcla de buzones locales y en la nube.
+- **En una implementación híbrida** : EOP se puede configurar para proteger su entorno de correo electrónico y controlar el enrutamiento de correo cuando tiene una mezcla de buzones locales y en la nube.
 
 En estos escenarios, EOP puede simplificar la administración de su entorno de correo electrónico y aliviar muchas de las cargas que se incluyen en el mantenimiento de hardware y software local.
 
@@ -58,11 +58,11 @@ Para obtener más información, consulte [Order and Precedence of email Protecti
 
 Los planes de suscripción de EOP disponibles son los siguientes:
 
-- **EOP independiente**: debe inscribirse en EOP para proteger su organización de correo electrónico local.
+- **EOP independiente** : debe inscribirse en EOP para proteger su organización de correo electrónico local.
 
-- **Características de EOP en Exchange Online**: cualquier suscripción que incluya Exchange Online (independiente o como parte de Microsoft 365) utiliza EOP para proteger los buzones de correo de Exchange Online.
+- **Características de EOP en Exchange Online** : cualquier suscripción que incluya Exchange Online (independiente o como parte de Microsoft 365) utiliza EOP para proteger los buzones de correo de Exchange Online.
 
-- **Exchange Enterprise cal con servicios**: Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
+- **Exchange Enterprise cal con servicios** : Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
 
 Para obtener información acerca de los requisitos, límites importantes y disponibilidad de características en todos los planes de suscripción de EOP, vea la [Descripción del servicio protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
@@ -80,7 +80,7 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 - En Europa, Oriente Medio y África (EMEA), todos los buzones de Exchange Online están ubicados en centros de datos de EMEA, y todos los mensajes se enrutan a través de EMEA para el filtrado de EOP.
 
-- En Asia-Pacífico (APAC), todos los buzones de correo de Exchange Online se encuentran en centros de recursos de APACciones y los mensajes se enrutan actualmente a través de centros de recursos de APAC para el filtrado de EOP.
+- En Asia-Pacific (APAC), todos los buzones de correo de Exchange Online se encuentran en centros de recursos de APAC y los mensajes se enrutan actualmente a través de centros de recursos de APAC para el filtrado de EOP.
 
 - En América, los servicios se distribuyen en las siguientes ubicaciones:
 
@@ -96,7 +96,7 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 El contenido de la Ayuda para administradores de EOP consta de las siguientes categorías principales:
 
-- [Configure EOP, día 1, para administradores de ATP de office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): configurar las herramientas de detección y protección de EOP en el centro de la protección contra amenazas avanzada de Office 365.
+- [Configure EOP, día 1, para Microsoft defender para office 365 Admins](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): configure EOP Protection and Detection Tools en el centro de Microsoft defender para Office 365.
 
 - [Características de EOP](eop-features.md): proporciona una lista de las características que están disponibles en EOP.
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195527"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842208"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa Premium a Microsoft 365 E3
 
@@ -40,7 +40,7 @@ O bien, su empresa necesita características empresariales, como Microsoft 365 a
 La actualización es sencilla: puede iniciar la actualización [desde el centro de administración](../commerce/subscriptions/upgrade-to-different-plan.md). Se mantienen todos los datos y la configuración de la suscripción actual. No hay nada que hacer para prepararse para la migración, ni nada más hacerlo, a menos que se beneficie de las nuevas características.
 
 >[!Note]
->También puede usar una suscripción de Microsoft 365 Business Premium para un máximo de 300 puestos y obtener una suscripción a Microsoft 365 E3 para más de 300 plazas. Sin embargo, Office 365 ATP no se incluye con Microsoft 365 E3. Para la protección contra amenazas continuas, debe agregar licencias de ATP de Office 365 adicionales para que todos los usuarios en el ámbito de las directivas de ATP de Office 365 tengan una licencia.
+>También puede usar una suscripción de Microsoft 365 Business Premium para un máximo de 300 puestos y obtener una suscripción a Microsoft 365 E3 para más de 300 plazas. Sin embargo, Microsoft defender para Office 365 no se incluye con Microsoft 365 E3. Para la protección contra amenazas continuas, debe agregar licencias de defender para Office 365 de modo que todos los usuarios que se encuentren en el ámbito de las directivas de defender para Office 365 tengan una licencia.
 >
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Diferencias entre Microsoft 365 Business Premium y Microsoft 365 Enterprise
@@ -50,7 +50,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Característica    | Soporte en Microsoft 365 Business Premium    | Soporte técnico de Microsoft 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
+| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
 | Aplicaciones de Office *    | [Aplicaciones de Microsoft 365 para negocios](#office-365-business)    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
@@ -60,12 +60,12 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Administrador de clientes de Outlook, MileIQ    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | | 
 | **Protección contra amenazas**        | | | 
 | Capacidades de reducción de superficie de ataques    | [Vea esta lista](#threat-protection) | Administración empresarial del aislamiento basado en hardware para Microsoft Edge | 
-| Plan 1 de protección avanzada contra amenazas (ATP) de Office 365 | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
+| Defender para Office 365 plan 1 | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**        | | | 
 | Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Detección de aplicaciones en la nube, Azure AD Connect Health    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
-| El inicio de sesión único (SSO) de las aplicaciones Office 365 de Azure AD: 10 aplicaciones por usuario (Galería de aplicaciones SaaS como Salesforce) * | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: sin límite (aplicaciones locales a través de proxy de aplicación de Azure AD y aplicaciones que no son de galería con plantillas de integración de aplicaciones de autoservicio)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Office 365 de un solo Sign-On de aplicaciones (SSO): 10 aplicaciones por usuario (Galería de aplicaciones SaaS como Salesforce) * | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO: sin límite (aplicaciones locales a través de proxy de aplicación de Azure AD y aplicaciones que no son de galería con las plantillas de integración de aplicaciones de Self-Service)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | **Administración de dispositivos y aplicaciones**        | | | 
 | Microsoft Intune, Windows AutoPilot|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 |Acceso de escritorio virtual (VDA)    |  |     ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
@@ -129,14 +129,14 @@ Windows 10 Business incluye estas protecciones:
 Windows 10 Enterprise E3 también incluye administración empresarial del aislamiento basado en hardware para Microsoft Edge.
 
 >[!Note]
->Los usuarios migrados a Microsoft 365 E3 necesitarán una licencia ATP de Office 365 para una protección contra amenazas continuada. Asegúrese de comprar licencias de ATP de Office 365 adicionales para que todos los usuarios en el ámbito de las directivas de ATP de Office 365 estén autorizados. 
+>Los usuarios migrados a Microsoft 365 E3 necesitarán una licencia de Microsoft defender para Office 365 para la protección contra amenazas continuada. Asegúrese de comprar más licencias de defender para Office 365 de modo que todos los usuarios que se encuentren en el ámbito de las directivas de defender para Office 365 tengan una licencia. 
 >
 
 ### <a name="device-management-with-intune"></a>Administración de dispositivos con Intune
 
 No es necesario realizar ningún cambio en la configuración de Intune actual antes de la migración, lo que incluye los dispositivos inscritos y la configuración de dispositivos y aplicaciones.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business Premium incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 

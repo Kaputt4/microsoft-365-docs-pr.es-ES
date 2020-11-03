@@ -1,6 +1,6 @@
 ---
-title: Preguntas más frecuentes sobre Microsoft 365 Empresa Premium 
-description: Encuentre respuestas a las preguntas más frecuentes sobre Microsoft 365 Empresa, una nueva solución diseñada para las pequeñas y medianas empresas (SMB). 
+title: Preguntas más frecuentes sobre Microsoft 365 Empresa Premium
+description: Encuentre respuestas a las preguntas más frecuentes sobre Microsoft 365 Empresa, una nueva solución diseñada para las pequeñas y medianas empresas (SMB).
 author: Sirkkuw
 f1.keywords:
 - NOCSH
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-audience: microsoft-business 
+audience: microsoft-business
 keywords: Microsoft 365 Empresa Premium, Microsoft 365, SMB, preguntas frecuentes, preguntas más frecuentes, respuestas, empresa
 ms.date: 07/21/2020
-ms.openlocfilehash: a8547240a2733a10730d0f8fb62fe8e8c7ef971c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b117f0aecb76dc3b30a30e067c37328865eb0fdf
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948576"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842118"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft 365 Empresa Premium
 
@@ -27,15 +27,15 @@ ms.locfileid: "47948576"
 ### <a name="what-is-microsoft-365-business-premium"></a>¿Qué es Microsoft 365 Empresa Premium?
 Microsoft 365 es una solución integrada que reúne las mejores herramientas de productividad, capacidades de seguridad y administración de dispositivos para pequeñas y medianas empresas. Incluye:
 
-**Un conjunto de herramientas de colaboración y productividad empresarial**:
+**Un conjunto de herramientas de colaboración y productividad empresarial** :
 
 - Word, Excel, PowerPoint, Outlook, OneNote, Publisher y Access
 - Exchange, OneDrive, Skype Empresarial, Microsoft Teams y SharePoint
 - Aplicaciones empresariales de Office (Bookings, MileIQ<sup>[1](#footnote1)</sup>)
 
-**Capacidades de seguridad y administración de dispositivos de nivel empresarial**:
+**Capacidades de seguridad y administración de dispositivos de nivel empresarial** :
 
-- Ayuda a proteger contra amenazas externas, como la suplantación de identidad y el malware sofisticado con Office 365 Advanced Threat Protection Plan 1 y protección contra vulnerabilidades de Microsoft defender.
+- Ayuda a proteger contra amenazas externas como suplantación de identidad (phishing) y malware sofisticado con Microsoft defender para Office 365, plan 1 y protección contra vulnerabilidades de Microsoft defender.
 - Control y administración del acceso a la información confidencial y su transmisión mediante directivas de prevención de pérdida de datos y Azure Information Protection Plan 1
 - Protección, mantenimiento y copia de seguridad de los datos con Archivado de Exchange Online
 - Protección de las aplicaciones móviles y de Office con Intune App Protection
@@ -43,14 +43,14 @@ Microsoft 365 es una solución integrada que reúne las mejores herramientas de
 - Protección de identidad con autenticación multifactor, autoservicio de restablecimiento de contraseña y acceso condicional.
 - Configuración de seguridad coherente en todos los dispositivos &mdash; protección de datos de la empresa en todos los dispositivos; Antivirus de Microsoft defender, que siempre está activado y actualizado.
 
-**Implementación simplificada de dispositivos y configuración de usuario**:
+**Implementación simplificada de dispositivos y configuración de usuario** :
 
 - Consola de administración única para configurar y administrar usuarios y dispositivos
 - Instalación automática de aplicaciones de Office en equipos con Windows 10
 - Office y Windows 10 siempre actualizados
 - Implementación simplificada de equipos con Windows AutoPilot
 
-**Otros derechos**:
+**Otros derechos** :
 
 - Los clientes de Microsoft 365 Empresa Premium también tienen acceso a las funcionalidades de Windows Virtual Desktop y Activación en equipos compartidos de Office. Lea el [blog de Microsoft 365 Empresa Premium](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) para obtener más información. Consulte también la [Descripción del servicio Microsoft 365 para empresas](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
@@ -110,7 +110,7 @@ Muchos empleados prefieren usar sus propios teléfonos móviles o tabletas para 
 
 Microsoft 365 Empresa Premium ofrece a los clientes un medio sencillo pero eficaz de permitir a los empleados usar sus dispositivos personales para el trabajo, al tiempo que proporciona a la empresa la capacidad de impedir que dichos dispositivos accedan a información empresarial, la conserven o la compartan. Más concretamente:
 
-- **Protección de aplicaciones móviles de Office**: ayuda a las aplicaciones a proteger los datos de Office como, por ejemplo, correo electrónico, calendario, contactos y documentos en dispositivos móviles iOS y Android, al aplicar directivas como, por ejemplo, eliminación automática de datos empresariales transcurrido un plazo de tiempo sin conexión al servicio, exigir que la información se almacene únicamente en OneDrive para la Empresa, exigir la verificación mediante PIN o huella digital para acceder a aplicaciones de Office y evitar que los datos de la empresa se copien desde una aplicación de Office a aplicaciones personales. Los suscriptores de Microsoft 365 Empresa Premium también pueden administrar otras aplicaciones móviles a través de Intune.
+- **Protección de aplicaciones móviles de Office** : ayuda a las aplicaciones a proteger los datos de Office como, por ejemplo, correo electrónico, calendario, contactos y documentos en dispositivos móviles iOS y Android, al aplicar directivas como, por ejemplo, eliminación automática de datos empresariales transcurrido un plazo de tiempo sin conexión al servicio, exigir que la información se almacene únicamente en OneDrive para la Empresa, exigir la verificación mediante PIN o huella digital para acceder a aplicaciones de Office y evitar que los datos de la empresa se copien desde una aplicación de Office a aplicaciones personales. Los suscriptores de Microsoft 365 Empresa Premium también pueden administrar otras aplicaciones móviles a través de Intune.
 
 - La **Administración de dispositivos para equipos con Windows 10 PC** permite que los negocios elijan establecer y aplicar capacidades como la protección antivirus de Microsoft defender para malware, actualizaciones automáticas y la desactivación de pantallas después de un período de tiempo previsto. Además, los dispositivos Windows 10 perdidos o robados se pueden borrar completamente para eliminar las aplicaciones y los datos empresariales a través del Centro de administración.
 
@@ -156,7 +156,7 @@ El camino más directo a una implementación de Microsoft 365 Empresa Premium c
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>¿Microsoft 365 Empresa Premium incluye todas las funcionalidades de Microsoft Intune?
 
-Sí, los suscriptores de Microsoft 365 empresa Premium tienen licencia para usar capacidades completas de Intune para iOS, Android, macOS y otra administración de dispositivos entre plataformas. Las características no disponibles en la consola de administración simplificada de Microsoft 365 empresa Premium, como la administración de aplicaciones de terceros, la configuración de perfiles de Wi-Fi y los certificados de VPN, se pueden administrar en la consola de Intune completa.
+Sí, los suscriptores de Microsoft 365 empresa Premium tienen licencia para usar capacidades completas de Intune para iOS, Android, macOS y otra administración de dispositivos entre plataformas. Las características no disponibles en la consola de administración simplificada de Microsoft 365 empresa Premium, como la administración de aplicaciones de terceros, la configuración de perfiles de Wi-Fi y los certificados VPN, se pueden administrar en la consola de Intune completa.
 
 ### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>¿Azure Active Directory (Azure AD) Premium P1 incluye Microsoft 365 empresa Premium?
 
@@ -180,9 +180,9 @@ Todos los complementos que pueden agregarse a Microsoft 365 Empresa Estándar p
 
 Sí, puede comprar una suscripción de voz de empresa. [Business Voice](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) es una solución de telefonía diseñada para pequeñas y medianas empresas de hasta 300 usuarios que agrupan el sistema telefónico, la audioconferencia, un plan de llamadas nacionales, etc. Las capacidades del sistema telefónico que obtendrá incluyen el correo de voz, el identificador de llamada, el estacionamiento de llamadas, el desvío de llamadas, los operadores automáticos y las colas de llamadas. <br> Para averiguar si la voz empresarial está disponible en su país o región, consulte la [disponibilidad de país y región para la voz empresarial](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability). Para obtener información sobre precios, consulte [precios de la voz empresarial](https://go.microsoft.com/fwlink/?linkid=2127221).
 
-### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>¿Pueden los clientes de Microsoft 365 Business Premium usar la protección contra amenazas avanzada de Microsoft defender?
+### <a name="can-microsoft-365-business-premium-customers-use-microsoft-defender-for-endpoint"></a>¿Pueden los clientes de Microsoft 365 Business Premium usar Microsoft defender para el punto de conexión?
 
-Sí, la protección contra amenazas avanzada de Microsoft defender está disponible como un complemento para Microsoft 365 empresa Premium cuando se adquiere de un [proveedor de soluciones en la nube de Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
+Sí, Microsoft defender for Endpoint está disponible como un complemento para Microsoft 365 empresa Premium cuando se adquiere de un [proveedor de soluciones en la nube de Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 
 ## <a name="partner-opportunity"></a>Oportunidad para partners
 
@@ -224,7 +224,7 @@ Microsoft 365 Empresa Premium no convierte en original una versión de Windows 
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-premium-help-customers-with-their-compliance-obligations"></a>¿Qué es el GDPR y cómo ayuda Microsoft 365 Empresa Premium a los clientes con sus obligaciones de cumplimiento?
 
-El GDPR (Reglamento General de Protección de Datos) es una nueva ley integral en materia de privacidad que confiere a los residentes de la Unión Europea (UE) un mayor control sobre sus "datos personales" y exige que las organizaciones mantengan la integridad de los datos personales. El GDPR requiere que las organizaciones que controlan o procesan datos personales de los residentes de la UE usen únicamente aquellos procesadores de datos de terceros que cumplan los requisitos del GDPR para el procesamiento de datos personales. En marzo de 2017, Microsoft estableció garantías contractuales al respecto. Los clientes que tienen preguntas sobre cómo Microsoft puede ayudarlos a cumplir con sus obligaciones de GDPR adicionales deben conocer las capacidades de seguridad y cumplimiento avanzadas disponibles en Microsoft 365 Empresa Premium (por ejemplo, Azure Information Protection, prevención de pérdida de datos, Advanced Threat Protection, etc.) y en otros conjuntos de aplicaciones (por ejemplo, Microsoft 365 Enterprise E5). Para obtener más información, visite [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+El GDPR (Reglamento General de Protección de Datos) es una nueva ley integral en materia de privacidad que confiere a los residentes de la Unión Europea (UE) un mayor control sobre sus "datos personales" y exige que las organizaciones mantengan la integridad de los datos personales. El GDPR requiere que las organizaciones que controlan o procesan datos personales de los residentes de la UE usen únicamente aquellos procesadores de datos de terceros que cumplan los requisitos del GDPR para el procesamiento de datos personales. En marzo de 2017, Microsoft estableció garantías contractuales al respecto. Los clientes que tienen preguntas sobre cómo Microsoft puede ayudarles a cumplir sus obligaciones RGPD adicionales deben conocer las capacidades avanzadas de cumplimiento y seguridad disponibles en Microsoft 365 empresa Premium (por ejemplo, Azure Information Protection, prevención de pérdida de datos, defender para Office 365, etc.) y en otros conjuntos (por ejemplo, Microsoft 365 Enterprise E5). Para obtener más información, visite [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
 
 ## <a name="footnotes"></a>Notas al pie
 

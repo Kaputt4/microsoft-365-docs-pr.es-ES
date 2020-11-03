@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Germany.
-ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545923"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843335"
 ---
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
 
@@ -61,7 +61,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Vídeo de Microsoft 365
     
-- Project para la Web
+- Project para la web
     
 - Visio para la web
     
@@ -73,7 +73,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Exhibición avanzada de documentos electrónicos
     
-- Protección contra amenazas avanzada
+- Microsoft defender para Office 365
     
 - Inteligencia de amenazas de Office 365
     

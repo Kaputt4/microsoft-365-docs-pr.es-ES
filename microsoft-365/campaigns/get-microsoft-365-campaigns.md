@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga Microsoft 365 para las campañas para que pueda proteger su campaña de las amenazas de Cybersecurity contra el correo electrónico, los datos y las comunicaciones.
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131981"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843239"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtener Microsoft 365 para las campañas
 
@@ -43,11 +43,11 @@ Si no tiene derecho a precios especiales, Microsoft 365 Business Premium sigue s
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>¿Qué incluye Microsoft 365 para las campañas?
 Esta configuración de Microsoft 365 Business Premium incluye controles sencillos que le ayudarán a usted y a su personal a trabajar en conjunto de manera segura: 
-- **Proteger identidad de usuario**: Asegúrese de que los usuarios dicen que son cuando inician sesión para enviar correo electrónico o para obtener acceso a los archivos (autenticación multifactor).
-- **Proteger información confidencial**: Proteja la información confidencial para supervisar la información que se comparte fuera de la organización (prevención de pérdida de datos).
-- **Proteger dispositivos móviles**: proteger datos en dispositivos móviles (Directiva de protección de aplicaciones móviles).
-- **Protéjase contra contenido malintencionado**: impedir el acceso a contenido malintencionado mediante el análisis de archivos adjuntos de correo electrónico (protección contra amenazas avanzada).
-- **Proteger contraseñas**: establecer contraseñas para que no expire nunca, lo que es más seguro y ayuda a evitar interrupciones de trabajo (Directiva de contraseñas). 
+- **Proteger identidad de usuario** : Asegúrese de que los usuarios dicen que son cuando inician sesión para enviar correo electrónico o para obtener acceso a los archivos (autenticación multifactor).
+- **Proteger información confidencial** : Proteja la información confidencial para supervisar la información que se comparte fuera de la organización (prevención de pérdida de datos).
+- **Proteger dispositivos móviles** : proteger datos en dispositivos móviles (Directiva de protección de aplicaciones móviles).
+- **Protéjase contra contenido malintencionado** : impedir el acceso a contenido malintencionado mediante la exploración de datos adjuntos de correo (defender para Office 365).
+- **Proteger contraseñas** : establecer contraseñas para que no expire nunca, lo que es más seguro y ayuda a evitar interrupciones de trabajo (Directiva de contraseñas). 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>¿Qué cuesta, quién lo necesita y cuál es el compromiso?

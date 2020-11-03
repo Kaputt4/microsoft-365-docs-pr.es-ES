@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294789"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843845"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -46,7 +46,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 ![Página principal de puntuación segura](../../media/secure-score/secure-score-homepage-new.png)
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Se le proporcionan puntos para las siguientes acciones:
 
@@ -76,7 +76,7 @@ Por ejemplo, los Estados de acción de mejora obtienen 10 puntos al proteger a t
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure Active Directory, Microsoft defender ATP, Azure ATP y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
+Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure Active Directory, Microsoft defender para extremo, Microsoft defender para identidad y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
@@ -109,7 +109,7 @@ Con acceso de lectura y escritura, puede realizar cambios e interactuar directam
 
 Con acceso de solo lectura, no puede editar el estado o las notas para una acción de mejora, editar zonas de puntuación o editar comparaciones personalizadas.
 
-* Administrador del departamento de soporte técnico
+* Administrador del departamento de soporto técnico
 * Administrador de usuarios
 * Administrador de servicios
 * Lector de seguridad

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399402"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842803"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Obstáculos de seguridad que puede gobernar: el punto de vista de un arquitecto
 
@@ -55,7 +55,7 @@ Para una configuración recomendada, consulte [Identity and Device Access](../se
 
 Muchos equipos de seguridad siguen usando los procedimientos recomendados de seguridad tradicionales creados para todo el mundo local, incluido el mantenimiento de un "seguridad del perímetro de red" e intentan "forzar" las herramientas de seguridad locales y los controles para las soluciones de nube. Estos controles no se diseñaron para la nube, son ineficaces y dificultan la adopción de capacidades de nube modernas. Los procesos y las herramientas que funcionan para un enfoque de seguridad del perímetro de red han demostrado ser ineficaces, Obstructive a las capacidades de la nube y no permiten aprovechar las características de seguridad modernas y automatizadas.
 
-Puede gobernar este obstáculo mediante la transición de las estrategias de defensa a la protección administrada en la nube, la investigación y la corrección automatizadas, las pruebas automáticas de lápiz, la protección contra amenazas avanzada y el análisis de incidentes. Los clientes que usan soluciones modernas de administración de dispositivos han implementado la administración automatizada, la revisión estandarizada, el antivirus, el cumplimiento de directivas y la protección de aplicaciones en todos los dispositivos (ya sea un smartphone, un ordenador personal, un portátil o una tableta). Esto elimina la necesidad de una VPN, Microsoft System Center Configuration Manager (SCCM) y las directivas de grupo de Active Directory. Esto, combinado con las directivas de acceso condicional, proporciona un control y una visibilidad potentes, así como un acceso optimizado a los recursos independientemente de dónde estén funcionando sus usuarios.
+Puede gobernar este obstáculo mediante la transición de estrategias de defensa a la protección administrada en la nube, la investigación y la corrección automatizadas, las pruebas automáticas de lápiz, defender para Office 365 y el análisis de incidentes. Los clientes que usan soluciones modernas de administración de dispositivos han implementado la administración automatizada, la revisión estandarizada, el antivirus, el cumplimiento de directivas y la protección de aplicaciones en todos los dispositivos (ya sea un smartphone, un ordenador personal, un portátil o una tableta). Esto elimina la necesidad de una VPN, Microsoft System Center Configuration Manager (SCCM) y las directivas de grupo de Active Directory. Esto, combinado con las directivas de acceso condicional, proporciona un control y una visibilidad potentes, así como un acceso optimizado a los recursos independientemente de dónde estén funcionando sus usuarios.
 
 ## <a name="strive-for-best-together-security-tools"></a>Lucha por las mejores herramientas de seguridad
 

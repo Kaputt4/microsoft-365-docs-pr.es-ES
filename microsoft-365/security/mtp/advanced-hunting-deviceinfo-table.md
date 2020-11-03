@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 966f329d1d3ce374cc3eed9eccb6c337071f4ee1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430084"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842719"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430084"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 
 
@@ -46,7 +46,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceId` | cadena | Identificador único para el equipo en servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `ClientVersion` | cadena | Versión del agente de extremo o del sensor que se ejecuta en el equipo |
-| `PublicIP` | string | Dirección IP pública usada por el equipo incorporado para conectarse al servicio ATP de Microsoft defender. Podría ser la dirección IP del equipo, un dispositivo NAT o un proxy |
+| `PublicIP` | string | Dirección IP pública usada por el equipo incorporado para conectarse a Microsoft defender para el servicio de extremo. Podría ser la dirección IP del equipo, un dispositivo NAT o un proxy |
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
 | `OSBuild` | string | Versión de compilación del sistema operativo que se ejecuta en el equipo |

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: d39614c2cafd3469625c4a01bdc63a1e60fead85
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600486"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842909"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuario
 
@@ -49,9 +49,9 @@ Use los siguientes artículos para configurar los requisitos previos necesarios 
 
 - Omitir el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de Exchange para establecer el nivel de confianza contra correo no deseado. Consulte [usar el EAC para crear una regla de flujo de correo que establezca el SCL de un mensaje](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) para establecer el SCL en **-1**.
 
-- Desactive el examen de datos adjuntos para malware en el buzón personalizado. Use [configurar directivas de datos adjuntos seguros en Office 365 ATP](set-up-atp-safe-attachments-policies.md) para crear una directiva de datos adjuntos seguros con la opción **desactivada** para la **respuesta de malware desconocido de datos adjuntos seguros**.
+- Desactive el examen de datos adjuntos para malware en el buzón personalizado. Use [configurar directivas de datos adjuntos seguros en defender para Office 365](set-up-atp-safe-attachments-policies.md) para crear una directiva de datos adjuntos seguros con la opción **desactivada** para **respuesta de malware desconocida de datos adjuntos seguros**.
 
-- Desactive el análisis de URL en los mensajes del buzón personalizado. Use [configurar directivas de vínculos seguros en Office 365 ATP](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos a prueba de errores con el valor **desactivar** para **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**.
+- Desactive el análisis de URL en los mensajes del buzón personalizado. Use [configurar directivas de vínculos seguros en defender para Office 365](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos seguros con el valor **desactivar** para **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**.
 
 - Cree una directiva antimalware para desactivar la depuración automática de malware de cero horas. Consulte [usar el centro de seguridad & cumplimiento para crear directivas antimalware](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) para establecer la **depuración automática de cero horas de malware** en **desactivada**.
 
@@ -72,31 +72,31 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Usar el centro de seguridad & cumplimiento para configurar el buzón de envíos de usuarios
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **envíos de usuarios**de la Directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **envíos de usuarios** de la Directiva de administración de amenazas.
 
 2. En la página **envíos de usuarios** que aparece, seleccione una de las siguientes opciones:
 
-   1. **Habilitar la característica de mensaje de informe para Outlook (recomendado)**: Seleccione esta opción si usa el complemento de mensajes de informe o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
+   1. **Habilitar la característica de mensaje de informe para Outlook (recomendado)** : Seleccione esta opción si usa el complemento de mensajes de informe o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
-      - **Personalizar el mensaje de confirmación del usuario final**: haga clic en este vínculo. En el control flotante **personalizar mensaje de confirmación** que aparece, configure las siguientes opciones:
+      - **Personalizar el mensaje de confirmación del usuario final** : haga clic en este vínculo. En el control flotante **personalizar mensaje de confirmación** que aparece, configure las siguientes opciones:
 
-      - **Antes de enviar**: en los cuadros de mensaje **título** y **confirmación** , escriba el texto descriptivo que verán los usuarios antes de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío (correo no deseado, correo deseado, phish, etc.).
+      - **Antes de enviar** : en los cuadros de mensaje **título** y **confirmación** , escriba el texto descriptivo que verán los usuarios antes de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío (correo no deseado, correo deseado, phish, etc.).
 
         Como se indicó, si selecciona una opción que envía los mensajes notificados a Microsoft, también se agregará el siguiente texto a la notificación:
 
         > El correo electrónico se enviará tal cual a Microsoft para su análisis. Algunos mensajes de correo electrónico pueden contener información personal o confidencial.
 
-      - **Después del envío**: haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) . En los cuadros de texto **título** y **confirmación** , escriba el texto descriptivo que los usuarios verán después de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío.
+      - **Después del envío** : haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) . En los cuadros de texto **título** y **confirmación** , escriba el texto descriptivo que los usuarios verán después de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío.
 
       Cuando haya terminado, haga clic en **Guardar**. Para borrar estos valores, haga clic en **restaurar** de nuevo en la página **envíos de usuarios** .
 
-      - **Enviar los mensajes notificados a**: realice una de las siguientes selecciones:
+      - **Enviar los mensajes notificados a** : realice una de las siguientes selecciones:
 
-        - **Microsoft (recomendado)**: no se usa el buzón de envíos de usuario (todos los mensajes que se han informado van a Microsoft).
+        - **Microsoft (recomendado)** : no se usa el buzón de envíos de usuario (todos los mensajes que se han informado van a Microsoft).
 
-        - **Microsoft y un buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Los envíos de usuarios Irán a Microsoft para su análisis y al buzón de correo personalizado para que los analice el administrador o el equipo de operaciones de seguridad.
+        - **Microsoft y un buzón personalizado** : en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Los envíos de usuarios Irán a Microsoft para su análisis y al buzón de correo personalizado para que los analice el administrador o el equipo de operaciones de seguridad.
 
-        - **Buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador los reenvíe por sí mismos.
+        - **Buzón personalizado** : en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador los reenvíe por sí mismos.
 
         > [!NOTE]
         > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas. 
@@ -106,7 +106,7 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
       > [!CAUTION]
       > Si ha [deshabilitado la notificación de correo no deseado en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) con directivas de buzón de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán informar de los mensajes a Microsoft en Outlook en la web mediante el complemento de mensajes de informe.
 
-   - **Deshabilitar la característica de mensaje de informe para Outlook**: Seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento de mensajes de informe o la creación de informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
+   - **Deshabilitar la característica de mensaje de informe para Outlook** : Seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento de mensajes de informe o la creación de informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
       Seleccione **usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón existente que ya esté en Office 365. Debe ser un buzón existente en Exchange online que pueda recibir correo electrónico.
 

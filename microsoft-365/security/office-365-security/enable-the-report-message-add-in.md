@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: d760aa5d58e628872682131efae9d9c3b3c46734
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600374"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842457"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
@@ -35,7 +35,7 @@ El complemento de mensajes de informe para Outlook y Outlook en la web (anterior
 
 Por ejemplo, supongamos que las personas están notificando una gran cantidad de mensajes como suplantación de identidad. Esta información se Surfaces en el [Panel de seguridad](security-dashboard.md) y otros informes. El equipo de seguridad de su organización puede usar esta información como indicación de que es posible que sea necesario actualizar las directivas antiphishing. O bien, si los usuarios notifican un gran número de mensajes que se marcaron como correo no deseado mediante el complemento de mensajes de informe, es posible que el equipo de seguridad de la organización deba ajustar [las directivas contra correo no deseado](configure-your-spam-filter-policies.md).
 
-Además, si su organización usa [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) o [plan 2](office-365-ti.md), el complemento de mensajes de informe proporciona al equipo de seguridad de su organización información útil que puede usar para revisar y actualizar las directivas de seguridad.
+Además, si su organización usa [Microsoft defender para Office 365 plan 1](office-365-atp.md) o [plan 2](office-365-ti.md), el complemento de mensajes de informe proporciona al equipo de seguridad de su organización información útil que puede usar para revisar y actualizar las directivas de seguridad.
 
 Los administradores pueden habilitar el complemento de mensajes de informe para la organización y los usuarios individuales pueden instalarlo por sí mismos.
 
@@ -43,7 +43,7 @@ Si es un usuario individual, puede [Habilitar el complemento de mensajes de info
 
 Si es administrador global o administrador de Exchange Online y Exchange está configurado para usar la autenticación OAuth, puede [Habilitar el complemento de mensajes de informe para su organización](#get-and-enable-the-report-message-add-in-for-your-organization). El Add-In de mensaje de informe ahora está disponible a través de la [implementación centralizada](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - El complemento de mensajes de informe funciona con la mayoría de las suscripciones de Microsoft 365 y los productos siguientes:
 
@@ -101,7 +101,7 @@ Para obtener información sobre cómo usar el complemento, vea [usar el compleme
 
    ![Implementar una nueva página de complemento](../../media/NewAddInScreen2.png)
 
-4. En la página **seleccionar complemento** que aparece, haga clic en el cuadro de **búsqueda** , escriba **mensaje de informe**y, a continuación, haga clic en buscar en el icono de **Search** ![ búsqueda ](../../media/search-icon.png) . En la lista de resultados, buscar **mensaje de informe** y, a continuación, haga clic en **Agregar**.
+4. En la página **seleccionar complemento** que aparece, haga clic en el cuadro de **búsqueda** , escriba **mensaje de informe** y, a continuación, haga clic en buscar en el icono de **Search** ![ búsqueda ](../../media/search-icon.png) . En la lista de resultados, buscar **mensaje de informe** y, a continuación, haga clic en **Agregar**.
 
    ![Seleccionar resultados de la búsqueda de complementos](../../media/NewAddInScreen3.png)
 
@@ -109,17 +109,17 @@ Para obtener información sobre cómo usar el complemento, vea [usar el compleme
 
 6. En la página **configurar complemento** que aparece, configure las opciones siguientes:
 
-   - **Usuarios asignados**: Seleccione uno de los siguientes valores:
+   - **Usuarios asignados** : Seleccione uno de los siguientes valores:
 
      - **Todos** (predeterminado)
      - **Usuarios o grupos específicos**
      - **Sólo yo**
 
-   - **Método de implementación**: Seleccione uno de los siguientes valores:
+   - **Método de implementación** : Seleccione uno de los siguientes valores:
 
-     - **Fijo (predeterminado)**: el complemento se implementa automáticamente en los usuarios especificados y no puede quitarlo.
-     - **Disponible**: los usuarios pueden instalar el complemento en **casa** \> **obtener complementos** \> **administrados por el administrador**.
-     - **Opcional**: el complemento se implementa automáticamente para los usuarios especificados, pero puede elegir quitarlo.
+     - **Fijo (predeterminado)** : el complemento se implementa automáticamente en los usuarios especificados y no puede quitarlo.
+     - **Disponible** : los usuarios pueden instalar el complemento en **casa** \> **obtener complementos** \> **administrados por el administrador**.
+     - **Opcional** : el complemento se implementa automáticamente para los usuarios especificados, pero puede elegir quitarlo.
 
    ![Página de configuración del complemento](../../media/configure-add-in.png)
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre inteligencia de suplantación de identidad en Exchange Online Protection (EOP), donde puede permitir o bloquear remitentes simulados específicos.
-ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199606"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841833"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurar inteligencia de identidades en EOP
 
@@ -53,7 +53,7 @@ Puede administrar inteligencia de identidad en el centro de seguridad & cumplimi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use <https://protection.office.com/antiphishing> .
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado** , use <https://protection.office.com/antispam>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use <https://protection.office.com/antiphishing> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
@@ -74,7 +74,7 @@ Puede administrar inteligencia de identidad en el centro de seguridad & cumplimi
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Usar el centro de seguridad & cumplimiento para administrar los remitentes suplantados
 
 > [!NOTE]
-> Si tiene una suscripción de Microsoft 365 Enterprise E5 o ha comprado por separado un complemento de protección contra amenazas avanzada de Office 365 (ATP de Office 365), también puede administrar a los remitentes que están suplantando su dominio mediante el [conocimiento de inteligencia de suplantación de identidad](walkthrough-spoof-intelligence-insight.md).
+> Si tiene una suscripción de Microsoft 365 Enterprise E5 o ha comprado por separado un complemento de Microsoft defender para Office 365, también puede administrar los remitentes que están suplantando su dominio a través de la [información de inteligencia de inteligencia de suplantación](walkthrough-spoof-intelligence-insight.md).
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Directiva** \> **Correo no deseado**.
 
@@ -89,49 +89,49 @@ Puede administrar inteligencia de identidad en el centro de seguridad & cumplimi
 
 4. En el control flotante **decidir si estos remitentes pueden suplantar a los usuarios** que aparecen, seleccione una de las siguientes pestañas:
 
-   - **Sus dominios**: los remitentes suplantan a los usuarios de los dominios internos.
-   - **Dominios externos**: remitentes de suplantación de usuarios en dominios externos.
+   - **Sus dominios** : los remitentes suplantan a los usuarios de los dominios internos.
+   - **Dominios externos** : remitentes de suplantación de usuarios en dominios externos.
 
-5. Haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) en la columna **¿se permite la suplantación?** . Elija **sí** para permitir el remitente suplantado o elija **no** para marcar el mensaje como falsificado. La acción se controla mediante la Directiva antiphishing predeterminada o las directivas antiphishing personalizadas de ATP (el valor predeterminado es **mover mensaje a la carpeta de correo no deseado**). Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
+5. Haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) en la columna **¿se permite la suplantación?** . Elija **sí** para permitir el remitente suplantado o elija **no** para marcar el mensaje como falsificado. La acción se controla mediante la Directiva antiphishing predeterminada o las directivas antiphishing personalizadas (el valor predeterminado es **mover el mensaje a la carpeta de correo electrónico no deseado** ). Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Captura de pantalla que muestra el control flotante de remitentes suplantados y si se permite que el remitente suplante](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    En la lista siguiente se explican las columnas y los valores que se ven:
 
-   - **Usuario suplantado**: la cuenta de usuario que se va a imitar. Este es el remitente del mensaje en la dirección de (también denominada `5322.From` dirección) que se muestra en los clientes de correo electrónico. SPF no comprueba la validez de esta dirección.
+   - **Usuario suplantado** : la cuenta de usuario que se va a imitar. Este es el remitente del mensaje en la dirección de (también denominada `5322.From` dirección) que se muestra en los clientes de correo electrónico. SPF no comprueba la validez de esta dirección.
 
      - En la ficha **sus dominios** , el valor contiene una sola dirección de correo electrónico o, si el servidor de correo electrónico de origen imita varias cuentas de usuario, contiene **más de una**.
 
      - En la ficha **dominios externos** , el valor contiene el dominio del usuario falso, no la dirección de correo electrónico completa.
 
-   - **Infraestructura de envío**: el dominio que se encuentra en una búsqueda DNS inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen o en la dirección IP si el origen no tiene registro PTR.
+   - **Infraestructura de envío** : el dominio que se encuentra en una búsqueda DNS inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen o en la dirección IP si el origen no tiene registro PTR.
 
      Para obtener más información acerca de los orígenes de mensajes y los remitentes de mensajes, vea [información general sobre los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-   - **n.º de mensajes**: el número de mensajes de la infraestructura de envío a su organización que contienen los remitentes suplantados que se han especificado en los últimos 30 días.
+   - **n.º de mensajes** : el número de mensajes de la infraestructura de envío a su organización que contienen los remitentes suplantados que se han especificado en los últimos 30 días.
 
-   - **número de quejas del usuario**: quejas archivadas por los usuarios con este remitente en los últimos 30 días. Las quejas suelen estar en forma de envíos de correo no deseado a Microsoft.
+   - **número de quejas del usuario** : quejas archivadas por los usuarios con este remitente en los últimos 30 días. Las quejas suelen estar en forma de envíos de correo no deseado a Microsoft.
 
-   - **Resultado de autenticación**: uno de los siguientes valores:
+   - **Resultado de autenticación** : uno de los siguientes valores:
 
-      - **Passed**: el remitente ha superado las comprobaciones de autenticación de correo electrónico del remitente (SPF o DKIM).
-      - **Error**: el remitente no pudo realizar comprobaciones de autenticación de remitente de EOP.
-      - **Desconocido**: no se conoce el resultado de estas comprobaciones.
+      - **Passed** : el remitente ha superado las comprobaciones de autenticación de correo electrónico del remitente (SPF o DKIM).
+      - **Error** : el remitente no pudo realizar comprobaciones de autenticación de remitente de EOP.
+      - **Desconocido** : no se conoce el resultado de estas comprobaciones.
 
-   - **Decisión definida por**: muestra quién ha determinado si la infraestructura de envío tiene permiso para suplantar al usuario:
+   - **Decisión definida por** : muestra quién ha determinado si la infraestructura de envío tiene permiso para suplantar al usuario:
 
        - **Directiva de inteligencia de identidad** (automática)
        - **Administrador** (manual)
 
-   - **Último visto**: la última fecha en la que se recibió un mensaje de la infraestructura de envío que contiene al usuario suplantado.
+   - **Último visto** : la última fecha en la que se recibió un mensaje de la infraestructura de envío que contiene al usuario suplantado.
 
-   - ¿Se **permite la suplantación?**: los valores que aparecen aquí son los siguientes:
+   - ¿Se **permite la suplantación?** : los valores que aparecen aquí son los siguientes:
 
-     - **Sí**: los mensajes de la combinación de usuario falsificado y la infraestructura de envío están permitidos y no se tratan como correo electrónico falsificado.
+     - **Sí** : los mensajes de la combinación de usuario falsificado y la infraestructura de envío están permitidos y no se tratan como correo electrónico falsificado.
 
-     - **No**: los mensajes de la combinación de usuario falsificado y infraestructura de envío se marcan como falseados. La acción se controla mediante la Directiva antiphishing predeterminada o las directivas antiphishing personalizadas de ATP (el valor predeterminado es **mover mensaje a la carpeta de correo no deseado**). Vea la sección siguiente para obtener más información.
+     - **No** : los mensajes de la combinación de usuario falsificado y infraestructura de envío se marcan como falseados. La acción se controla mediante la Directiva antiphishing predeterminada o las directivas antiphishing personalizadas (el valor predeterminado es **mover el mensaje a la carpeta de correo electrónico no deseado** ). Vea la sección siguiente para obtener más información.
 
-     - **Algunos usuarios** (**la ficha dominios** solamente): una infraestructura de envío imita a varios usuarios, donde se permiten algunos usuarios suplantados y otros no. Use la pestaña **detalles** para ver las direcciones específicas.
+     - **Algunos usuarios** ( **la ficha dominios** solamente): una infraestructura de envío imita a varios usuarios, donde se permiten algunos usuarios suplantados y otros no. Use la pestaña **detalles** para ver las direcciones específicas.
 
 6. En la parte inferior de la página, haga clic en **Guardar**.
 
@@ -181,7 +181,7 @@ Puede configurar las opciones de inteligencia contra la suplantación de identid
 
 - [Configure las directivas contra la suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
 
-- [Configure las directivas antiphishing de ATP en Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configure directivas antiphishing en Microsoft defender para Office 365 en microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
@@ -204,7 +204,7 @@ Para comprobar que ha configurado inteligencia de suplantación con remitentes a
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-** phishing o **ATP anti-phishing**y realice uno de los siguientes pasos:  
+- En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-** phishing o **ATP anti-phishing** y realice uno de los siguientes pasos:  
 
   - Seleccione una directiva de la lista. En el control flotante que aparece, compruebe los valores de la sección **suplantación de identidad** .
   - Haga clic en **directiva predeterminada**. En el control flotante que aparece, compruebe los valores de la sección **suplantación de identidad** .

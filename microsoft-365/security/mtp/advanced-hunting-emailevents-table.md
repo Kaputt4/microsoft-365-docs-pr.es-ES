@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429460"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842637"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429460"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 
 
-La tabla `EmailEvents` en el [esquema de](advanced-hunting-overview.md) búsqueda avanzada contiene información sobre eventos que implican el procesamiento de mensajes en la ATP de Office 365. Use esta referencia para crear consultas que devuelvan información de esta tabla.
+La `EmailEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los eventos que implican el procesamiento de mensajes de correo electrónico en Microsoft Defender para Office 365. Use esta referencia para crear consultas que devuelvan información de esta tabla.
 
 >[!TIP]
 > Para obtener información detallada acerca de los tipos de eventos ( `ActionType` valores) admitidos por una tabla, use la [referencia de esquema integrada](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible en el centro de seguridad.
@@ -62,9 +62,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeliveryAction` | cadena | Acción de entrega del correo electrónico: entregado, marcado como correo no deseado, bloqueado o reemplazado. |
 | `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
 | `PhishFilterVerdict` | cadena | Veredicto sobre la pila de correos electrónicos filtrados para determinar si el correo es para suplantar la identidad: suplantar identidad o no suplantar identidad. |
-| `PhishDetectionMethod` | cadena | Método que se usa para detectar que el correo electrónico es para suplantar la identidad: reputación de URL malintencionada, desactivación de URL de vínculos seguros ATP, filtro avanzado contra suplantar identidad, filtro general contra suplantar identidad, contra la suplantación de identidad: dentro de la organización o contra la suplantación de identidad: dominio externo, suplantación de dominio, suplantación de usuario, suplantación de marca. |
+| `PhishDetectionMethod` | cadena | Método que se usa para detectar el correo electrónico como phish: reputación de dirección URL malintencionada, detonación de dirección URL de vínculos seguros, filtro de phish avanzado, filtro de phish general, anti-falseamiento: intra-org, anti-spoofing: dominio externo, suplantación de dominio, suplantación de usuarios, suplantación de marca |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
-| `MalwareDetectionMethod` | cadena | Método utilizado para detectar el software malintencionado en el correo electrónico: motor contra el software malintencionado, reputación del archivo, datos adjuntos seguros de ATP. |
+| `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor antimalware, reputación de archivos, datos adjuntos seguros |
 | `FinalEmailAction` | cadena | Acción final tomada sobre el correo electrónico basada en el veredicto del filtro, las directivas y las acciones del usuario: mover el mensaje a la carpeta correo no deseado, agregar encabezado X, modificar el asunto, redirigir mensaje, eliminar mensaje, enviar a cuarentena, no realizar ninguna acción, enviar mensaje con CCO. |
 | `FinalEmailActionPolicy` | cadena | Directiva de acciones que entró en vigor: correo electrónico no deseado con alto nivel de confianza, correo electrónico no deseado, correo electrónico no deseado masivo, correo electrónico no deseado de suplantación de identidad, suplantación de un dominio protegido contra la suplantación de identidad, suplantación de un usuario protegido contra la suplantación de identidad, suplantación de identidad en contra de las medidas contra la suplantación de identidad, suplantación del gráfico contra la suplantación de identidad, contra el software malintencionado, datos adjuntos seguros, reglas de transporte empresarial (RTE). |
 | `FinalEmailActionPolicyGuid` | cadena | Identificador único de la directiva que determinó la acción final tomada sobre el correo electrónico. |

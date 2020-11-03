@@ -1,5 +1,5 @@
 ---
-title: Realizar acciones en los resultados de la consulta de búsqueda avanzada en protección contra amenazas de Microsoft
+title: Realizar acciones en los resultados de la consulta de búsqueda avanzada en Microsoft 365 defender
 description: Solucionar rápidamente las amenazas y los activos afectados en los resultados de la consulta de búsqueda avanzada
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, emprender acciones
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7250feffa69cc1a6cc37908a599dff0fab6c5e6c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 506af82ec08ad6cd8dbeece5c1c2741e09e4817a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429664"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842469"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados de la consulta de búsqueda avanzada
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429664"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -42,7 +42,7 @@ Puede contener amenazas o dirigir a los activos en peligro que encuentra en la [
 - Archivos en cuarentena
 
 ## <a name="required-permissions"></a>Permisos necesarios
-Para poder emprender acciones a través de la búsqueda avanzada, necesita un rol en Microsoft defender ATP con [permisos para enviar acciones de corrección en los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede emprender ninguna acción, póngase en contacto con un administrador global para obtener el siguiente permiso:
+Para poder emprender acciones a través de la búsqueda avanzada, necesita un rol de Microsoft defender para el punto de conexión con [permisos para enviar acciones de corrección en los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede emprender ninguna acción, póngase en contacto con un administrador global para obtener el siguiente permiso:
 
 *Acciones de corrección activas > administración de amenazas y vulnerabilidades-control de correcciones*
 
@@ -55,7 +55,7 @@ Puede realizar las siguientes acciones en los dispositivos identificados por la 
 - Iniciar una investigación automatizada para comprobar y corregir las amenazas en el dispositivo y posiblemente en otros dispositivos afectados
 - Restringir la ejecución de la aplicación solo a archivos ejecutables firmados por Microsoft, evitando actividades posteriores de amenazas a través de malware u otros ejecutables que no son de confianza
 
-Para obtener más información sobre cómo estas acciones de respuesta se realizan a través de ATP de Microsoft defender, [Lea acerca de las acciones de respuesta en los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Para obtener más información sobre cómo estas acciones de respuesta se realizan a través de Microsoft defender para el punto de conexión, [vea acciones de respuesta en dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
 ## <a name="quarantine-files"></a>Archivos en cuarentena
 Puede implementar la acción de *cuarentena* en los archivos para que se pongan en cuarentena automáticamente cuando se detecten. Al seleccionar esta acción, puede elegir entre las siguientes columnas para identificar los archivos de los resultados de la consulta que se pondrán en cuarentena:
@@ -76,7 +76,7 @@ Para realizar cualquiera de las acciones descritas, seleccione uno o más regist
 ![Imagen del registro seleccionado con panel para inspeccionar el registro](../../media/mtp-ah/ah-take-actions.png)
 
 ## <a name="review-actions-taken"></a>Revisión de las acciones realizadas
-Cada acción se registra individualmente en el [centro de actividades](mtp-action-center.md) , en historial del **centro de actividades**  >  **History** ([Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Vaya al centro de actividades para comprobar el estado de cada acción.
+Cada acción se registra individualmente en el [centro de actividades](mtp-action-center.md) , en historial del **centro de actividades**  >  **History** ( [Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Vaya al centro de actividades para comprobar el estado de cada acción.
  
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

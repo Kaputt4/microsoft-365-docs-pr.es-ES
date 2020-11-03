@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636989"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841237"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>Introducción a los clasificadores que se pueden entrenar (versión preliminar)
 
@@ -44,7 +44,7 @@ Los clasificadores son una característica de cumplimiento de Microsoft 365 E5 o
 Para acceder a los clasificadores en la interfaz de usuario: 
 
 - el administrador global debe participar en el inquilino para crear clasificadores personalizados.
-- el rol de administrador de cumplimiento o el administrador de datos de cumplimiento es necesario para entrenar a un clasificador.
+- el rol de administrador de cumplimiento, el rol de investigación de datos o el administrador de datos de cumplimiento es necesario para entrenar a un clasificador.
 
 Necesitará cuentas con estos permisos para usar clasificadores en estos escenarios:
 

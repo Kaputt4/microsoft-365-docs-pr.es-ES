@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: be7aacf180cf8ffc59a490279083aeb2aa6a0567
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768978"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841291"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -27,13 +27,13 @@ Con la clave de cliente, se controlan las claves de cifrado de la organización 
 Debe configurar Azure antes de poder usar la clave de cliente de Office 365. En este tema se describen los pasos que debe seguir para crear y configurar los recursos necesarios de Azure y, a continuación, se proporcionan los pasos para configurar la clave de cliente en Office 365. Una vez completada la configuración de Azure, determine qué directivas y, por lo tanto, qué claves asignar a los buzones de correo y los archivos de su organización. Los buzones de correo y los archivos para los que no se asigna una directiva usarán directivas de cifrado controladas y administradas por Microsoft. Para obtener más información acerca de la clave de cliente o para obtener información general, consulte [Service Encryption with Customer key in Office 365](customer-key-overview.md).
   
 > [!IMPORTANT]
-> Se recomienda encarecidamente seguir los procedimientos recomendados de este tema. Se les llama como **Tip** e **Important** . La clave de cliente le da control sobre las claves de cifrado raíz cuyo ámbito puede ser tan grande como toda la organización. Esto significa que los errores realizados con estas claves pueden tener un gran impacto y pueden dar lugar a interrupciones en el servicio o la pérdida irrevocable de los datos.
+> Se recomienda encarecidamente seguir los procedimientos recomendados de este tema. Se les llama como **Tip** e **Important**. La clave de cliente le da control sobre las claves de cifrado raíz cuyo ámbito puede ser tan grande como toda la organización. Esto significa que los errores realizados con estas claves pueden tener un gran impacto y pueden dar lugar a interrupciones en el servicio o la pérdida irrevocable de los datos.
   
 ## <a name="before-you-set-up-customer-key"></a>Antes de configurar la clave de cliente
 
-Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización y de que su cuenta se factura y no se le paga con una tarjeta de crédito. La clave de cliente de Microsoft 365 se ofrece en Office 365 E5 o en la SKU de cumplimiento avanzada. Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [tenant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
+Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles.
 
-Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [inquilino de Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización y de que su cuenta se factura y no se le paga con una tarjeta de crédito. Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [inquilino de Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack solo se usa para recopilar la información de configuración de servicio y el inquilino necesario que se usa para registrar la clave de cliente. Las ofertas de clave de cliente se publican a través de FastTrack para que sea conveniente para usted y para nuestros partners enviar la información necesaria con el mismo método. FastTrack también facilita el archivado de los datos facilitados en la oferta.
   
@@ -55,7 +55,7 @@ Completará la mayoría de estas tareas conectándose de forma remota a Azure Po
 
 - [Enviar una solicitud para activar la clave de cliente de Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
 
-Una vez que haya creado las dos nuevas suscripciones de Azure, deberá enviar la solicitud de oferta de la clave de cliente correspondiente completando un formulario web hospedado en el portal de Microsoft FastTrack. **El equipo de FastTrack no proporciona asistencia con la clave de cliente. Office simplemente usa el portal de FastTrack para permitirle enviar el formulario y ayudar a hacer un seguimiento de las ofertas relevantes para la clave de cliente** .
+Una vez que haya creado las dos nuevas suscripciones de Azure, deberá enviar la solicitud de oferta de la clave de cliente correspondiente completando un formulario web hospedado en el portal de Microsoft FastTrack. **El equipo de FastTrack no proporciona asistencia con la clave de cliente. Office simplemente usa el portal de FastTrack para permitirle enviar el formulario y ayudar a hacer un seguimiento de las ofertas relevantes para la clave de cliente**.
 
 - [Crear un almacén de claves Premium de Azure en cada suscripción](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -110,7 +110,7 @@ Para enviar una oferta para activar la clave de cliente, siga estos pasos:
   
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie sesión en el [portal de Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
-2. Una vez que haya iniciado sesión, vaya al **Panel** .
+2. Una vez que haya iniciado sesión, vaya al **Panel**.
 
 3. Elija **implementar** en la barra de navegación **o** seleccione **Ver todos los recursos de implementación** en la tarjeta de información de **implementación** y revise la lista de ofertas actuales.
 
@@ -120,9 +120,9 @@ Para enviar una oferta para activar la clave de cliente, siga estos pasos:
 
    - **Archivos de SharePoint Online, OneDrive y Teams:** Elija la **ayuda de la clave de cifrado Request for SharePoint y OneDrive** .
 
-5. Una vez que hayas revisado los detalles de la oferta, elige **continuar en el paso 2** .
+5. Una vez que hayas revisado los detalles de la oferta, elige **continuar en el paso 2**.
 
-6. Rellene todos los detalles aplicables y la información solicitada en el formulario de oferta. Preste especial atención a las selecciones de los funcionarios de su organización a los que desea conceder autorización para aprobar la destrucción permanente e irreversible de claves de cifrado y datos. Una vez que haya completado el formulario, elija **Enviar** .
+6. Rellene todos los detalles aplicables y la información solicitada en el formulario de oferta. Preste especial atención a las selecciones de los funcionarios de su organización a los que desea conceder autorización para aprobar la destrucción permanente e irreversible de claves de cifrado y datos. Una vez que haya completado el formulario, elija **Enviar**.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrar suscripciones de Azure para usar un período de retención obligatorio
 
@@ -175,7 +175,7 @@ Para cada servicio de Microsoft 365 con el que va a usar la clave de cliente, cr
   
 Use una Convención de nomenclatura para los depósitos clave que refleje el uso previsto de la Directiva de cifrado de datos con la que va a asociar los almacenes. Consulte la sección procedimientos recomendados a continuación para conocer las recomendaciones de Convención de nomenclatura.
   
-Cree un conjunto independiente y emparejado de depósitos para cada directiva de cifrado de datos. Para Exchange Online, el ámbito de una directiva de cifrado de datos se elige cuando se asigna la Directiva al buzón. Un buzón puede tener solo una directiva asignada y puede crear hasta 50 directivas. Para SharePoint Online el ámbito de una Directiva son todos los datos de una organización en una ubicación geográfica o _geográfica_ .
+Cree un conjunto independiente y emparejado de depósitos para cada directiva de cifrado de datos. Para Exchange Online, el ámbito de una directiva de cifrado de datos se elige cuando se asigna la Directiva al buzón. Un buzón puede tener solo una directiva asignada y puede crear hasta 50 directivas. Para SharePoint Online el ámbito de una Directiva son todos los datos de una organización en una ubicación geográfica o _geográfica_.
 
 La creación de almacenes clave también requiere la creación de grupos de recursos de Azure, ya que las bóvedas clave necesitan capacidad de almacenamiento (aunque muy pequeña) y el registro de la bóveda clave, si está habilitado, también genera datos almacenados. Como procedimiento recomendado, Microsoft recomienda el uso de administradores independientes para administrar cada grupo de recursos, con la administración alineada con el conjunto de administradores que administrarán todos los recursos de clave de cliente relacionados.
   
@@ -279,7 +279,7 @@ Donde:
   > [!TIP]
   > Denomine claves con una Convención de nomenclatura similar, como se ha descrito anteriormente para los almacenes de claves. De este modo, en las herramientas que solo muestran el nombre de la clave, la cadena es autodescriptivo.
   
-- Si piensa proteger la clave con un HSM, asegúrese de especificar **HSM** como el valor del parámetro _Destination_ ; de lo contrario, especifique el **software** .
+- Si piensa proteger la clave con un HSM, asegúrese de especificar **HSM** como el valor del parámetro _Destination_ ; de lo contrario, especifique el **software**.
 
 Por ejemplo,
   

@@ -1,5 +1,5 @@
 ---
-title: Etiquetas de usuario en la ATP de Office 365
+title: Etiquetas de usuario en Microsoft defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Office 365 ATP plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Office 365 ATP para identificar rápidamente los usuarios etiquetados.
-ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft defender para Office 365 plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Microsoft defender para Office 365 para identificar rápidamente los usuarios etiquetados.
+ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417276"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842885"
 ---
-# <a name="user-tags-in-office-365-atp"></a>Etiquetas de usuario en la ATP de Office 365
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft defender para Office 365
 
 > [!NOTE]
 > La característica de etiquetas de usuario está en versión preliminar, no está disponible para todos los usuarios y está sujeta a cambios. Para obtener información sobre la programación de versiones, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
-Las etiquetas de usuario son identificadores para grupos de usuarios específicos en [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md). Hay dos tipos de etiquetas de usuario:
+Las etiquetas de usuario son identificadores para grupos de usuarios específicos en [defender para Office 365](office-365-atp.md). Hay dos tipos de etiquetas de usuario:
 
-- **Etiquetas del sistema**: Actualmente, [cuentas prioritarias](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) es el único tipo de etiqueta de sistema.
-- **Etiquetas personalizadas**: usted mismo crea estas etiquetas de usuario.
+- **Etiquetas del sistema** : Actualmente, [cuentas prioritarias](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) es el único tipo de etiqueta de sistema.
+- **Etiquetas personalizadas** : usted mismo crea estas etiquetas de usuario.
 
-Si su organización tiene Office 365 ATP plan 2 (incluido en su suscripción o como complemento), puede crear etiquetas de usuario personalizadas además de usar la etiqueta accounts Priority.
+Si su organización tiene defender for Office 365 plan 2 (incluido en su suscripción o como complemento), puede crear etiquetas de usuario personalizadas además de usar la etiqueta accounts Priority.
 
 Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuarios, puede usar esas etiquetas como filtros en alertas, informes e investigaciones:
 
@@ -47,7 +47,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **etiquetas de usuario** , Abra <https://protection.office.com/userTags> .
 
-- Para crear, modificar o quitar **etiquetas de usuario personalizadas**, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Para crear, modificar o quitar **etiquetas de usuario personalizadas** , debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - Para configurar las cuentas prioritarias (etiquetas del sistema), debe ser [administrador global](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o [Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
 
@@ -61,9 +61,9 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 3. El Asistente para **crear etiquetas** se abre en una nueva volar hacia fuera. En la página **definir etiqueta** , configure las siguientes opciones:
 
-   - **Name**: escriba un nombre único y descriptivo para la etiqueta. Este es el valor que verás y usarás.
+   - **Name** : escriba un nombre único y descriptivo para la etiqueta. Este es el valor que verás y usarás.
 
-   - **Descripción**: escriba una descripción opcional para la etiqueta.
+   - **Descripción** : escriba una descripción opcional para la etiqueta.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -109,8 +109,8 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Usar el centro de seguridad para quitar etiquetas de usuario
 
-**Nota**: no se puede quitar la etiqueta de **cuenta** integrada con prioridad.
+**Nota** : no se puede quitar la etiqueta de **cuenta** integrada con prioridad.
 
 1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
 
-2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea quitar, haga clic en **Eliminar etiqueta**y, a continuación, seleccione **sí, quitar** en la advertencia que aparece.
+2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea quitar, haga clic en **Eliminar etiqueta** y, a continuación, seleccione **sí, quitar** en la advertencia que aparece.
