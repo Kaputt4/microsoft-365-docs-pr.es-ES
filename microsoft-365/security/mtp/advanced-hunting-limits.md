@@ -1,5 +1,5 @@
 ---
-title: Cuotas de caza avanzadas y parámetros de uso de la protección contra amenazas de Microsoft
+title: Cuotas de caza avanzadas y parámetros de uso en Microsoft 365 defender
 description: Comprenda varias cuotas y parámetros de uso (límites de servicio) que mantendrán el servicio de búsqueda avanzada receptivo
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, esquema, kusto, límite de CPU, límite de consulta, recursos, resultados máximos, cuota, parámetros, asignación
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 192fb47aafdd20bd5e1f0774a64ec3215f1203d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bab63d9e5939f87f6a1edbf62d256b82552e4fe9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636910"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847373"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Cuotas de caza avanzadas y parámetros de uso
 
@@ -32,17 +32,17 @@ ms.locfileid: "48636910"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 Para mantener el servicio y la capacidad de respuesta del servicio, la búsqueda avanzada establece varias cuotas y parámetros de uso (también conocidos como "límites de servicio"). Estas cuotas y parámetros se aplican a las consultas que se ejecutan manualmente y por [reglas de detección personalizadas](custom-detection-rules.md). Los clientes que ejecutan varias consultas regularmente deben realizar un seguimiento del consumo y [aplicar procedimientos recomendados de optimización](advanced-hunting-best-practices.md) para minimizar las interrupciones.
 
 Consulte la tabla siguiente para conocer las cuotas existentes y los parámetros de uso.
 
-| Cuota o parámetro | Size | Ciclo de actualización | Descripción |
+| Cuota o parámetro | Size | Ciclo de actualización | Description |
 |--|--|--|--|
 | Rango de datos | 30 días | Cada consulta | Cada consulta puede buscar datos de hasta los últimos 30 días. |
 | Conjunto de resultados | 10.000 filas | Cada consulta | Cada consulta puede devolver hasta 10.000 registros. |
-| Timeout | 10 minutos | Cada consulta | Cada consulta puede ejecutarse durante un máximo de 10 minutos. Si no se completa en 10 minutos, el servicio muestra un error.
+| Límite de tiempo | 10 minutos | Cada consulta | Cada consulta puede ejecutarse durante un máximo de 10 minutos. Si no se completa en 10 minutos, el servicio muestra un error.
 | Recursos de CPU | Basado en el tamaño del espacio empresarial | -En la hora y después cada 15 minutos<br>-Diariamente el 12 de la noche | El servicio exige por separado la cuota diaria y de 15 minutos. Para cada cuota, el [portal muestra un error](advanced-hunting-errors.md) siempre que se ejecuta una consulta y el inquilino se ha consumido más del 10% de los recursos asignados. Las consultas se bloquean si el inquilino ha alcanzado el 100% hasta después del siguiente ciclo diario o de 15 minutos. |
 
 >[!NOTE] 

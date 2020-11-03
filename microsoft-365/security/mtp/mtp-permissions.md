@@ -1,6 +1,6 @@
 ---
-title: Administre el acceso a los datos de protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365
-description: Obtenga información acerca de cómo administrar permisos en los datos de protección contra amenazas de Microsoft
+title: Administración del acceso a los datos de Microsoft 365 defender en el centro de seguridad de Microsoft 365
+description: Obtenga información sobre cómo administrar los permisos para datos en Microsoft 365 defender
 keywords: Access, permisos, MTP, seguridad de las amenazas de Microsoft, M365, seguridad, MCAS, MDATP, Cloud App Security, protección contra amenazas avanzada de Microsoft defender, ámbito, ámbito, RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,22 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 96a8694f5cbc7c27d27acbd5ec0aabe8712c6f06
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 55b7b8c5755b773a4d53c95017a0a17a85495dee
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201080"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847253"
 ---
-# <a name="manage-access-to-microsoft-threat-protection"></a>Administre el acceso a la protección contra amenazas de Microsoft
+# <a name="manage-access-to-microsoft-365-defender"></a>Administración del acceso a Microsoft 365 defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
-Las cuentas asignadas a los siguientes roles de Azure Active Directory (AD) pueden acceder a los datos y a la funcionalidad de protección contra amenazas de Microsoft:
+Las cuentas asignadas a los siguientes roles de Azure Active Directory (AD) pueden tener acceso a los datos y la funcionalidad de Microsoft 365 defender:
 - Administrador global
 - Administrador de seguridad
 - Operador de seguridad
@@ -50,15 +50,15 @@ El acceso a la funcionalidad específica está determinado por el de [roles de d
 [Investigación y corrección automatizadas](mtp-autoir-actions.md)puede actuar en los mensajes de correo electrónico, las reglas de reenvío, los archivos, los mecanismos de persistencia y otros artefactos presentes durante las investigaciones. Para aprobar o rechazar acciones pendientes que requieran aprobación explícita, debe tener determinadas funciones asignadas en Microsoft 365. Para obtener más información, consulte [permisos del centro de actividades](mtp-action-center.md#required-permissions-for-action-center-tasks).
 
 ## <a name="access-to-data"></a>Acceso a datos
-El acceso a los datos de Protección contra amenazas de Microsoft puede controlarse con el ámbito asignado a los grupos de usuarios en el control de acceso basado en roles (RBAC) ATP de Microsoft defender. Si su acceso no se ha asignado a un conjunto específico de dispositivos en la ATP de Microsoft defender, tendrá acceso completo a los datos de Protección contra amenazas de Microsoft. Sin embargo, una vez que su cuenta está en el ámbito, solo verá los datos de los dispositivos de su ámbito.
+El acceso a los datos de Microsoft 365 defender se puede controlar mediante el ámbito asignado a los grupos de usuarios en Microsoft defender para el control de acceso basado en roles de extremo (RBAC). Si no se ha establecido el ámbito de acceso a un conjunto específico de dispositivos de defender para el punto de conexión, tendrá acceso total a los datos de Microsoft 365 defender. Sin embargo, una vez que su cuenta está en el ámbito, solo verá los datos de los dispositivos de su ámbito.
 
-Por ejemplo, si solo pertenece en un grupo de usuario con una función ATP de Microsoft Defender y se le ha concedido acceso solo a los dispositivos de ventas, solo verá los datos de los dispositivos de ventas en la Protección contra amenazas de Microsoft. [Más información acerca de la configuración de RBAC en Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
+Por ejemplo, si solo pertenece a un grupo de usuarios con un rol de Microsoft defender para extremo y ese grupo de usuarios solo tiene acceso a los dispositivos de ventas, verá solo los datos sobre los dispositivos de ventas en Microsoft 365 defender. [Obtenga más información sobre la configuración de RBAC en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Controles de acceso a Microsoft Cloud App Security
-Durante la versión preliminar, la Protección contra amenazas de Microsoft no exige los controles de acceso en función de la configuración de seguridad de aplicaciones en la nube. El acceso a los datos de protección contra amenazas de Microsoft no se ve afectado por esta configuración.
+Durante la vista previa, Microsoft 365 defender no exige los controles de acceso basados en la configuración de Cloud App Security. El acceso a los datos de Microsoft 365 defender no se ve afectado por esta configuración.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Roles de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-- [ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac).
+- [Microsoft defender para el RBAC de extremo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Roles de Cloud App Security](https://docs.microsoft.com/cloud-app-security/manage-admins)

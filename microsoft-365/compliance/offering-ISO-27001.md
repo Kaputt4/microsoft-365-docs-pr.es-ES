@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3dc182ce799078e50087699aa3ca88c3abbcf769
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1acab5da365b8d89671bca37a5b84bdab9e3e47b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208432"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843376"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards (Estándares de administración de seguridad de la información ISO/IEC 27001:2013)
 
@@ -42,7 +42,7 @@ Obtenga más información acerca de las ventajas de la norma ISO-IEC-27001 en la
 - [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
 - Azure DevOps Services
 - Microsoft Cloud App Security
-- Protección contra amenazas avanzada de Microsoft Defender
+- Microsoft Defender para punto de conexión
 - [Dynamics 365, Dynamics 365 Government y Dynamics 365 Germany](https://aka.ms/d365-compliance-list)
 - Microsoft Graph
 - Bot de Microsoft Healthcare

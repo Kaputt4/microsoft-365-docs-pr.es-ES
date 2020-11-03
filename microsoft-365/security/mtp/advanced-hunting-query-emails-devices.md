@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6c758c05a64cd7ce84a2b021fe32f9e5ce5c1090
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431068"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847349"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas en dispositivos, mensajes de correo electrónico, aplicaciones e identidades
 
@@ -32,12 +32,12 @@ ms.locfileid: "48431068"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
-La [caza avanzada](advanced-hunting-overview.md) de la protección contra amenazas de Microsoft permite buscar de forma proactiva las amenazas en:
-- Dispositivos administrados por ATP de Microsoft defender
+La [búsqueda avanzada](advanced-hunting-overview.md) en Microsoft 365 defender le permite buscar de forma proactiva las amenazas en:
+- Dispositivos administrados por Microsoft defender para el punto de conexión
 - Mensajes de correo electrónico procesados por Microsoft 365
-- Actividades de la aplicación de nube, eventos de autenticación y actividades del controlador de dominio a las que hace seguimiento Microsoft Cloud App Security y Azure ATP
+- Actividades de la aplicación de nube, eventos de autenticación y actividades del controlador de dominio con seguimiento de Microsoft Cloud App Security y Microsoft defender para identidad
 
 Con este nivel de visibilidad, puede buscar rápidamente amenazas que atraviesan secciones de la red, incluidas las complejas intrusiones que llegan en el correo electrónico o en la web, elevan los privilegios locales, adquieren credenciales de dominio privilegiadas y se mueven al otro lado de sus dispositivos. 
 

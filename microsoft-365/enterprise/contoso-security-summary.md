@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754237"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847111"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 para la seguridad empresarial de Contoso Corporation
 
@@ -89,9 +89,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
   Contoso usa [Antivirus de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) para la protección contra malware y la administración antimalware en los equipos y dispositivos que ejecutan Windows 10 Enterprise.
 
-- Flujo de correo electrónico seguro y registro de auditoría del buzón de correo con Protección contra amenazas avanzada de Office 365 
+- Proteger el flujo de correo electrónico y el registro de auditoría de buzones con Microsoft defender para Office 365 
 
-  Contoso usa Exchange Online Protection y [Protección contra amenazas avanzada (ATP) de Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) para protegerse contra el malware desconocido, los virus y las direcciones URL malintencionadas que se transmiten a través de los mensajes de correo electrónico.
+  Contoso usa Exchange Online Protection y [defender para Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) para proteger contra malware, virus y URL malintencionadas desconocidos transmitidos a través de mensajes de correo electrónico.
 
   Contoso también habilitó el registro de auditoría de buzones para identificar quién inicia sesión en buzones de usuario, envía mensajes y realiza otras actividades realizadas por el propietario del buzón, un usuario delegado o un administrador.
 
@@ -127,9 +127,9 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 ## <a name="security-management"></a>Administración de seguridad
 
-- Panel central de seguridad para TI con Azure Security Center
+- Panel de seguridad central para ti con Azure defender *
 
-  Contoso usa el [centro de seguridad de Azure](https://azure.microsoft.com/services/security-center/) para presentar una vista unificada de la seguridad y la protección contra amenazas, para administrar las directivas de seguridad en sus cargas de trabajo y responder a cyberattacks.
+  Contoso usa [Azure defender *](https://azure.microsoft.com/services/security-center/) para presentar una vista unificada de la seguridad y protección contra amenazas, para administrar las directivas de seguridad en sus cargas de trabajo y para responder a cyberattacks.
 
 - Panel de seguridad central para los usuarios con Seguridad de Windows
 

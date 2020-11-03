@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8ced46ea30c7225fd3e5c8f1309ef482542e51b2
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445788"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847785"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roles y responsabilidades del Escritorio administrado de Microsoft
 
@@ -28,12 +28,12 @@ Cuando su organización está inscrito en el escritorio administrado de Microsof
 
 Microsoft proporciona estas funciones y responsabilidades clave:
 
-Rol o responsabilidad | Descripción
+Rol o responsabilidad | Description
 --- | ---
 Administración de directivas de MDM | Microsoft aplicará directivas de MDM de acuerdo con los procedimientos recomendados y considerará las solicitudes de cambios de directiva. También realizaremos cambios en su espacio empresarial tal y como se indica en [directivas de dispositivo](../service-description/device-policies.md).
 soporte para usuarios | Ofrecemos soporte al usuario para dispositivos, Windows y el conjunto de productos de Microsoft 365 apps for Enterprise para todos los usuarios inscritos a través de la aplicación obtener ayuda que está preinstalada en todos los dispositivos de escritorio administrados por Microsoft. 
 Soporte técnico del servicio de escritorio administrado de Microsoft | Microsoft proporcionará soporte técnico a su Departamento de ti a través de un equipo de operaciones de escritorio administrado por Microsoft. Este equipo será compatible con la solución de problemas técnicos, las solicitudes de cambio y la administración de incidentes para el entorno de escritorio administrado por Microsoft del cliente. Para obtener más información, consulte [soporte de administración para escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
-Supervisión de seguridad | Microsoft supervisará sus dispositivos de escritorio administrados por Microsoft con ATP de Microsoft defender. Si Microsoft Managed Desktop Security Operations Center (SOC) detecta una amenaza, le notificaremos, aislará el dispositivo y rectificará el problema de forma remota. Para obtener más información, consulte [seguridad](../service-description/security.md).
+Supervisión de seguridad | Microsoft realizará un seguimiento de los dispositivos de escritorio administrados por Microsoft con Microsoft defender para el punto de conexión. Si Microsoft Managed Desktop Security Operations Center (SOC) detecta una amenaza, le notificaremos, aislará el dispositivo y rectificará el problema de forma remota. Para obtener más información, consulte [seguridad](../service-description/security.md).
 Actualización de la supervisión y la administración | Supervisamos activamente sus dispositivos de escritorio administrados por Microsoft para asegurarse de que se instalan las últimas actualizaciones de calidad y características para Microsoft Windows y Microsoft Office. Para obtener más información, vea [cómo se administran las actualizaciones](../service-description/updates.md).
 Agrupación de usuarios y dispositivos | El equipo de operaciones de escritorio administrado por Microsoft creará y administrará el dispositivo y los grupos de usuarios necesarios como parte de las operaciones de ti. No se permiten cambios de configuración ni pertenencia a estos grupos. La modificación de estos grupos puede llevar a la configuración inesperada de los dispositivos y la pérdida de funcionalidad. Para cualquier problema o pregunta sobre estos grupos una vez que se ha establecido, los administradores de TI pueden ponerse en contacto con las operaciones de escritorio administradas de Microsoft. Para obtener más información, consulte [soporte de administración para escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
 
@@ -41,7 +41,7 @@ Agrupación de usuarios y dispositivos | El equipo de operaciones de escritorio 
 
 Este conjunto adicional de roles y responsabilidades comunes es necesario para la implementación, pero Microsoft no la proporciona. No es exhaustivo pero es aplicable a la mayoría de las organizaciones. Hay algunos elementos de los que usted y Microsoft comparten responsabilidad. 
 
-Rol o responsabilidad | Descripción
+Rol o responsabilidad | Description
 --- | ---
 Administración de cambios | Microsoft notificará a los clientes, por anticipado, Cuándo deben realizarse cambios en el entorno de escritorio administrado de Microsoft. Para obtener más información, consulte [cambios de servicio y comunicación](../service-description/servicechanges.md).<br><br>Debe tener su propio proceso de administración de cambios y tener un contacto establecido con el equipo de operaciones de escritorio administradas de Microsoft. También debe disponer de recursos para revisar y aprobar estos cambios. Para obtener más información, consulte [Operations and Monitoring](../service-description/operations-and-monitoring.md).  
 Administración de identidades | Usted es el responsable de la creación de cuentas de usuario, la asignación de usuarios a grupos y la actualización de los metadatos. 

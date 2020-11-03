@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950489"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847773"
 ---
 # <a name="privacy-and-personal-data"></a>Privacidad y datos personales
 
@@ -56,7 +56,7 @@ Microsoft Managed Desktop usa estos datos:
 |---------|---------|
 |Datos de Azure Active Directory     | Se usa en informes creados para administradores de inquilinos, que están disponibles en el portal de administración de escritorio administrado de Microsoft.        |
 |Datos de Intune     | Se usa en informes creados para administradores de inquilinos, que están disponibles en el portal de administración de escritorio administrado de Microsoft.        |
-|Protección contra amenazas avanzada de Microsoft Defender (ATP).     |  Se usa para solucionar las amenazas de seguridad que detecta el centro de operaciones de seguridad de Microsoft Managed Desktop (SOC) sobre los dispositivos inscritos.  |
+|Microsoft Defender para punto de conexión     |  Se usa para solucionar las amenazas de seguridad que detecta el centro de operaciones de seguridad de Microsoft Managed Desktop (SOC) sobre los dispositivos inscritos.  |
 |Datos de diagnóstico de Windows     |Se usa para determinar el estado de actualización de los dispositivos administrados, así como para proporcionar y mejorar la oferta de ti como servicio (ITaaS) del escritorio administrado de Microsoft.         |
 |Datos de contacto de administración     | Lo usa el escritorio administrado por Microsoft para comunicarse con los administradores de espacios empresariales.        |
 
@@ -73,7 +73,7 @@ El escritorio administrado de Microsoft procesa estas entidades para proporciona
 - Datos del espacio empresarial
 - Recursos de Azure Active Directory
 - Datos de configuración y directivas
-- Metadatos ATP de Microsoft defender
+- Microsoft defender para metadatos de punto de conexión
 - Datos de diagnóstico de Windows
 - Datos de uso de productos y servicios
 
@@ -87,9 +87,9 @@ Para obtener más información sobre las regiones que Azure usa para el almacena
 
 Los datos de Intune se pueden almacenar en varias regiones diferentes, como Europa del norte (Irlanda) y Europa occidental (Países Bajos). El administrador de ti crea una cuenta de inquilino y elige el país en el que se almacenarán los datos cuando se inscriban inicialmente en los servicios de Intune. Para obtener una lista de las ubicaciones de centros de datos usadas por Intune, consulte [Microsoft Intune, donde es mis datos de clientes](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento de datos y el uso de Intune, consulte [recopilación de datos en Intune](https://docs.microsoft.com/intune/privacy-data-collect).
 
-### <a name="microsoft-defender-advanced-threat-protection"></a>Protección contra amenazas avanzada de Microsoft Defender
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-Los datos de la protección contra amenazas avanzada (ATP) de Microsoft defender se pueden almacenar en algunas regiones diferentes. Por este motivo, Microsoft defender ATP opera en los centros de datos de Microsoft Azure de la Unión Europea, el Reino Unido y en Estados Unidos, como se indica en [Microsoft defender ATP, ubicaciones de almacenamiento de datos](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento de datos y el uso de ATP de Microsoft defender, vea [¿qué datos recopila ATP Microsoft defender ATP?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Los datos de Microsoft defender para puntos de conexión se pueden almacenar en varias regiones diferentes. Por este motivo, defender para el punto de conexión opera en los centros de datos de Microsoft Azure en la Unión Europea, en el Reino Unido y en Estados Unidos, tal y como se indica en [Microsoft defender for Endpoint: ubicaciones de almacenamiento de datos](http://intunedatacentermap.azurewebsites.net/). Para obtener más información acerca del almacenamiento de datos y el uso de defender para el punto de conexión, vea [¿qué datos Microsoft defender para el punto de conexión recopilar?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -138,5 +138,5 @@ Además, use las siguientes instrucciones para ejercitar interesado para los ser
 
 - [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [ATP de Microsoft Defender](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft defender para extremo](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)

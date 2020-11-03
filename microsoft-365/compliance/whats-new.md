@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Independientemente de si va a agregar nuevas soluciones al centro de cumplimiento, a actualizar características existentes en función de sus comentarios o a la actualización de documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446563"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847806"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -34,7 +34,7 @@ Tanto si va a agregar nuevas soluciones en el [centro de cumplimiento de microso
 
 
 > [!TIP]
-> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
 
 ## <a name="august-2020"></a>Agosto de 2020
@@ -53,10 +53,10 @@ Varias características nuevas y mejoradas se resaltan en la vista previa públi
     - Infracciones de directivas de seguridad por usuarios con prioridad
     - Violaciones de directivas de seguridad por usuarios descontentos
 
-- La integración con [ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) le permite importar y filtrar las alertas de ATP de Microsoft defender para actividades detectadas mediante directivas creadas a partir de las nuevas plantillas de directiva de violación de la seguridad. También hay una configuración de [riesgo de Insider](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) relacionada en la que puede elegir importar alertas de seguridad a la administración de riesgos de Insider en función del estado de clasificación de alertas de ATP de Microsoft defender.
+- La integración con [Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) le permite importar y filtrar las alertas de Microsoft defender para Endpoint para actividades detectadas mediante directivas creadas a partir de las nuevas plantillas de directiva de violación de la seguridad. También hay una configuración de [riesgo de Insider](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) relacionada en la que puede elegir importar alertas de seguridad a la administración de riesgos de Insider basada en el estado de clasificación de alertas de Microsoft defender para el punto de conexión.
 
     > [!NOTE]
-    > Para aprovechar la integración de ATP de Microsoft defender (incluidas las nuevas plantillas de infracciones de directivas de seguridad), deberá tener Microsoft defender ATP configurado en su organización. También necesitará habilitar ATP de Microsoft defender para la integración de la administración de riesgos de Insider mediante la [configuración de características avanzadas en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
+    > Para aprovechar las ventajas de Microsoft defender para la integración de extremos (incluidas las nuevas plantillas de violación de directivas de seguridad), necesitará tener Microsoft defender para Endpoint configurado en su organización. También necesitará habilitar Microsoft defender para que Endpoint para la integración de la administración de riesgos de Insider mediante la [configuración de características avanzadas en Microsoft defender para Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
  
 - Personalice los umbrales de indicador al [crear una directiva](insider-risk-management-policies.md#create-a-new-policy).
 - Configure los [grupos de usuarios con prioridad](insider-risk-management-settings.md#priority-user-groups-preview) para definir los usuarios de la organización cuya actividad requiere una inspección más cercana en función de factores como su posición, el nivel de acceso a la información confidencial o el historial de riesgos.
@@ -366,7 +366,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>Nuevas opciones de cifrado para las etiquetas de confidencialidad 
 
 Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene dos opciones que permiten a los usuarios asignar permisos al aplicar manualmente la etiqueta al correo electrónico y los documentos:<br>
-- Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
-- Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
+- Al aplicar la etiqueta a un **correo electrónico de Outlook** , los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
+- Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel** , a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
 
 Vaya a [restringir el acceso al contenido mediante las etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md#let-users-assign-permissions) para obtener más información.

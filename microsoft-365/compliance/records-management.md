@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755569"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830531"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -64,7 +64,7 @@ Cuando el contenido se declara como registro:
 
 - Tendrá la prueba de la eliminación cuando se eliminen los elementos al final de su período de retención.
 
-Usted utiliza las [etiquetas de retención](retention.md#retention-labels) para marcar contenido como un **registro** o un **registro normativo** (actualmente en versión preliminar). La diferencia entre estas dos etiquetas se explica en la siguiente sección. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro o como registro normativo.
+Usted utiliza las [etiquetas de retención](retention.md#retention-labels) para marcar contenido como un **registro** o un **registro normativo**. La diferencia entre estas dos etiquetas se explica en la siguiente sección. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro o como registro normativo.
 
 Al usar las etiquetas de retención para declarar registros, puede implementar una sola estrategia de administración de registros uniforme en todo el entorno de Microsoft 365.
 

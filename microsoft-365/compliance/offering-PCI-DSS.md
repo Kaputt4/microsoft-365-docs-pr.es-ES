@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 00f9832eadb55b3056ca3fcd3a79ee12afe83034
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208242"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841889"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)
 
@@ -44,8 +44,8 @@ Es importante entender que el estado de cumplimiento del DSS PCI para Azure, One
 - El servicio de nube de Flow como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Microsoft Graph
 - Intune
-- [Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- El servicio en la nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 - OneDrive para la Empresa y SharePoint Online (solo Estados Unidos)
 
@@ -68,7 +68,7 @@ La fecha de junio de 2018 en la portada es de cuando se publicó la plantilla Ao
 
 El paquete Azure AoC tiene AoCs correspondientes a Azure público, Alemania y la nube de administración pública. Los clientes deben usar el AoC que se corresponda sus entornos de Azure.  
 
-**¿Cuál es la relación entre el DSS PA y el DSS PCI **
+**¿Cuál es la relación entre el DSS PA y el DSS PCI**
 
 El Estándar de seguridad de datos para las aplicaciones de pago (DSS PA) es un conjunto de requerimientos que cumplen con el DSS PCI, que reemplaza a las Mejores prácticas para las aplicaciones de pagos de Visa y consolida los requerimientos de cumplimiento de los otros emisores principales de tarjetas. El PA DSS ayuda a los proveedores de software a desarrollar aplicaciones de terceros que almacenan, procesan o transmiten datos de pago del titular de la tarjeta como parte de un proceso de autorización o liquidación de tarjeta. Los distribuidores deben usar aplicaciones certificadas con el DSS PA para lograr el cumplimiento eficaz de su DSS PCI. El PA DSS no es aplicable a Azure.
 

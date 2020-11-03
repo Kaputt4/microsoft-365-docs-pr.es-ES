@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816865"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847816"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -146,7 +146,7 @@ Las comunicaciones entre usuarios son a menudo una fuente de infracciones accide
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Infracciones de directivas de seguridad intencionadas o no intencionadas (versión preliminar)
 
-Los usuarios suelen tener un alto grado de control al administrar sus dispositivos en el lugar de trabajo moderno. Esto puede incluir permisos para instalar o desinstalar aplicaciones necesarias en el rendimiento de sus deberes o la capacidad de deshabilitar temporalmente las características de seguridad de dispositivos. Si esta actividad es inadvertida, accidental o malintencionada, esta conducta puede suponer un riesgo para la organización y es importante identificarla y actuar para minimizarla. Para ayudar a identificar estas actividades de seguridad arriesgadas, las siguientes plantillas de infracción de la Directiva de seguridad de Insider Risk Management califican los indicadores de riesgo de seguridad y usan alertas de la protección contra amenazas avanzada (ATP) de Microsoft defender para proporcionar información sobre las actividades relacionadas con la seguridad:
+Los usuarios suelen tener un alto grado de control al administrar sus dispositivos en el lugar de trabajo moderno. Esto puede incluir permisos para instalar o desinstalar aplicaciones necesarias en el rendimiento de sus deberes o la capacidad de deshabilitar temporalmente las características de seguridad de dispositivos. Si esta actividad es inadvertida, accidental o malintencionada, esta conducta puede suponer un riesgo para la organización y es importante identificarla y actuar para minimizarla. Para ayudar a identificar estas actividades de seguridad arriesgadas, las siguientes plantillas de infracción de la Directiva de seguridad de Insider Risk Management califican los indicadores de riesgo de seguridad y usan Microsoft defender para las alertas de Endpoint para proporcionar información sobre las actividades relacionadas con la seguridad:
 
 - [Infracciones de directivas de seguridad generales (versión preliminar)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [Infracciones de la Directiva de seguridad al pertenecer a los usuarios (versión preliminar)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

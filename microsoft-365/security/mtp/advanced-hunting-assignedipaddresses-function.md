@@ -1,5 +1,5 @@
 ---
-title: La función AssignedIPAddresses () en la caza avanzada para la protección contra amenazas de Microsoft
+title: La función AssignedIPAddresses () en la búsqueda avanzada de Microsoft 365 defender
 description: Obtenga información sobre cómo usar la función AssignedIPAddresses () para obtener las direcciones IP más recientes asignadas a un dispositivo.
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430132"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847649"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430132"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 Use la `AssignedIPAddresses()` función en las consultas de [búsqueda avanzada](advanced-hunting-overview.md) para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo. Si especifica un argumento timestamp, esta función obtiene las direcciones IP más recientes a la hora especificada. 
 
@@ -54,8 +54,8 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x**— `DeviceId` o `DeviceName` valor que identifica el dispositivo
-- **y**: `Timestamp` (DateTime) que indica a la función que debe obtener las direcciones IP asignadas más recientemente de una hora específica. Si no se especifica, la función devuelve las direcciones IP más recientes.
+- **x** — `DeviceId` o `DeviceName` valor que identifica el dispositivo
+- **y** : `Timestamp` (DateTime) que indica a la función que debe obtener las direcciones IP asignadas más recientemente de una hora específica. Si no se especifica, la función devuelve las direcciones IP más recientes.
 
 ## <a name="examples"></a>Ejemplos
 

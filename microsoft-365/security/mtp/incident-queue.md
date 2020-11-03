@@ -1,6 +1,6 @@
 ---
-title: Priorizar incidentes con la Protección contra amenazas de Microsoft
-description: Obtenga información acerca de cómo priorizar los incidentes de la cola de incidentes con la Protección contra amenazas de Microsoft
+title: Priorizar incidentes en Microsoft 365 defender
+description: Obtenga información sobre cómo priorizar incidentes de la cola de incidentes en Microsoft 365 defender
 keywords: incidente, cola, información general, dispositivos, identidades, usuarios, buzón, correo electrónico, incidentes
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 382cfd374c40d0c5a0dd7d7705281bd56263d8b8
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430828"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846717"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Priorizar incidentes con la Protección contra amenazas de Microsoft
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 
 
-La Protección contra amenazas de Microsoft aplica análisis de correlación y agrega todas las alertas y las investigaciones relacionadas de diferentes productos en un incidente. La Protección contra amenazas de Microsoft también activa alertas exclusivas en actividades que solo se pueden identificar como malintencionadas, y esto es posible gracias a que la Protección contra amenazas de Microsoft tiene visibilidad de un extremo a otro en todo el conjunto de productos de Microsoft. Al hacerlo, la Protección contra amenazas de Microsoft narra una historia más amplia del ataque, lo que permite que el analista de operaciones de seguridad entienda y se ocupe de las amenazas complejas en toda la organización.
+Microsoft 365 defender aplica análisis de correlación y agrega todas las alertas y investigaciones relacionadas de distintos productos en un incidente. Microsoft 365 defender también desencadena alertas únicas en actividades que solo se pueden identificar como malintencionadas dado la visibilidad de un extremo a otro que Microsoft 365 defender tiene en toda la población y en el conjunto de productos. Al hacerlo, Microsoft 365 defender narra la historia de ataque más amplio, lo que permite a un analista de operaciones de seguridad comprender y tratar amenazas complejas en toda la organización.
 
 
 La **cola de incidentes** muestra un conjunto de incidentes que se han marcado desde diferentes dispositivos, usuarios y buzones de correo. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada.
@@ -75,7 +75,7 @@ Filtre para ver solo los incidentes que contienen más de una alerta. Esto podr�
 
 
 ### <a name="multiple-service-sources"></a>Múltiples orígenes del servicio 
-Filtre solo para ver los incidentes que contienen alertas de orígenes diferentes (ATP de Microsoft Defender, Microsoft Cloud App Security, Azure ATP, ATP de Office 365)
+Filtrar solo para ver incidentes que contienen alertas de diferentes orígenes (Microsoft defender para el extremo, Microsoft Cloud App Security, Microsoft defender para identidad, Microsoft defender para Office 365)
 ### <a name="service-sources"></a>Orígenes del servicio
 Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. 
 

@@ -1,5 +1,5 @@
 ---
-title: La función FileProfile () en la caza avanzada para la protección contra amenazas de Microsoft
+title: La función FileProfile () en la búsqueda avanzada de Microsoft 365 defender
 description: Obtenga información sobre cómo usar FileProfile () para enriquecer la información sobre los archivos en los resultados de la consulta de búsqueda avanzada
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e99e545b5578b5eff8c19345dc672f735e4f7bd2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430590"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847457"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -32,11 +32,11 @@ ms.locfileid: "48430590"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 La `FileProfile()` función es una función de enriquecimiento de la [búsqueda avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
 
-| Columna | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Description |
 |------------|-------------|-------------|
 | SHA1 | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | SHA256 | string | SHA-256 del archivo al que se aplicó la acción grabada |
@@ -63,8 +63,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x**— columna de identificador de archivo que se debe usar: `SHA1` ,, `SHA256` `InitiatingProcessSHA1` o `InitiatingProcessSHA256` ; la función usa `SHA1` si no se especifica
-- **y**: límite para el número de registros para enriquecer, 1-1000; la función usa 100 si no se especifica
+- **x** — columna de identificador de archivo que se debe usar: `SHA1` ,, `SHA256` `InitiatingProcessSHA1` o `InitiatingProcessSHA256` ; la función usa `SHA1` si no se especifica
+- **y** : límite para el número de registros para enriquecer, 1-1000; la función usa 100 si no se especifica
 
 ## <a name="examples"></a>Ejemplos
 

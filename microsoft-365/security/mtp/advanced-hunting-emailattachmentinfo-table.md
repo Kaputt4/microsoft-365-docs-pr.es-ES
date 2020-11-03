@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: dcacc31f8ea2546cbf90e45a4323a60670a98458
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429844"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847481"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429844"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 
 
-La `EmailAttachmentInfo` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los datos adjuntos en los correos electrónicos procesados por la ATP de Office 365. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `EmailAttachmentInfo` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los datos adjuntos de los mensajes de correo electrónico procesados por Microsoft Defender para Office 365. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -51,7 +51,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `FileType` | cadena | Tipo de extensión de archivo |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
-| `MalwareDetectionMethod` | cadena | Método utilizado para detectar el código malintencionado en el correo electrónico: Motor de antimalware, reputación del archivo, archivos adjuntos seguros de ATP. |
+| `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor antimalware, reputación de archivos, datos adjuntos seguros |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

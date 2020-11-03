@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8590f73b32e452c9d34d179db12c4db978df8e4d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197922"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846705"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas 
 
@@ -31,4 +31,4 @@ Las amenazas de la Cyber son cada vez más frecuentes y sofisticadas. Es fundame
 
 **Threat Analytics** es un conjunto de informes interactivos publicados tan pronto como se identifican las amenazas emergentes (nuevas técnicas, campañas de ataque y brotes de malware). Los informes le ayudarán a evaluar el impacto de las amenazas en su entorno y a proporcionar acciones recomendadas para contener, aumentar la resistencia organizativa y evitar amenazas específicas.
 
-[Obtenga más información sobre el análisis de amenazas en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  
+[Obtenga más información sobre Threat Analytics en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  

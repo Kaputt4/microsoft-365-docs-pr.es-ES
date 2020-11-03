@@ -1,5 +1,5 @@
 ---
-title: Administrar incidentes en Protección contra amenazas de Microsoft
+title: Administración de incidentes en Microsoft 365 defender
 description: Obtenga información acerca de cómo asignar, actualizar el estado
 keywords: incidente, incidentes, alertas, alertas correlacionadas, asignar, actualizar, estado, administrar, clasificación, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c599343233e7e29589bc4e3d1cda01da505b16f1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430566"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846657"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>Administrar incidentes en Protección contra amenazas de Microsoft
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Administración de incidentes en Microsoft 365 defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 
 
-La administración de incidentes es esencial para lidiar con las amenazas y poder contenerlas. En Protección contra amenazas de Microsoft, tiene acceso a la administración de incidentes en dispositivos, usuarios y buzones de correo. 
+La administración de incidentes es esencial para lidiar con las amenazas y poder contenerlas. En Microsoft 365 defender, tiene acceso a la administración de incidentes en dispositivos, usuarios y buzones de correo. 
 
 
 Para administrar los incidentes, seleccione un incidente en la **Cola de incidentes**. 
@@ -64,7 +64,7 @@ Si aún no se ha asignado un incidente, puede seleccionar **Asignarme a mí** pa
 
 ## <a name="set-status-and-classification"></a>Establecer estado y clasificación
 ### <a name="incident-status"></a>Estado del incidente
-Puede categorizar los incidentes (por ejemplo, como **Activo** o **Resuelto**) cambiando su estado a medida que progresa la investigación. Esto le ayuda a organizar y administrar la forma en que su equipo puede responder a incidencias.
+Puede categorizar los incidentes (por ejemplo, como **Activo** o **Resuelto** ) cambiando su estado a medida que progresa la investigación. Esto le ayuda a organizar y administrar la forma en que su equipo puede responder a incidencias.
 
 Por ejemplo, su analista de SOC puede revisar los incidentes de urgencia clasificados como **Activo** durante el día y decidir asignárselos a sí mismo para investigarlos.
 

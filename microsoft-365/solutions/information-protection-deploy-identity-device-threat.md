@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Evite las violaciones de datos personales con los servicios de identidad, dispositivos y protección contra amenazas de Microsoft 365.
-ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398696"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847183"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Usar identidad, dispositivo y protección contra amenazas para la normativa de privacidad de datos
 
@@ -70,12 +70,12 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microso
 - Requerir que los dispositivos móviles se bloqueen al inactividad.
 - Requerir que los dispositivos móviles se borren en varios errores de inicio de sesión.
 
-Use [Exchange Online Protection y Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md) para la categoría **proteger contra amenazas** , con la que puede:
+Use [Exchange Online Protection y Microsoft defender para Office 365](../security/office-365-security/office-365-atp.md) para la categoría **proteger contra amenazas** , con la que puede:
 
 - Habilitar la autenticación de remitente (SPF, DMARC y DKIM).
-- Configurar las directivas de protección contra suplantación de identidad (ATP) de Office 365 Advanced Threat Protection.
-- Implementar datos adjuntos seguros de ATP.
-- Implementar vínculos seguros de ATP.
+- Configure Microsoft defender para Office 365 anti-phishing Policies.
+- Implementar datos adjuntos seguros.
+- Implementar vínculos seguros.
 - Implementar directivas de detección y respuesta de malware.
 - Implemente directivas de correo no deseado salientes y entrantes.
 
@@ -83,6 +83,6 @@ Use [Exchange Online Protection y Office 365 Advanced Threat Protection (ATP)](.
 
 - [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 - [Protección contra amenazas en Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Datos adjuntos seguros ATP](../security/office-365-security/atp-safe-attachments.md)
-- [Vínculos seguros de ATP](../security/office-365-security/atp-safe-links.md)
-- [Documentos seguros de ATP](../security/office-365-security/safe-docs.md)
+- [Archivos adjuntos seguros](../security/office-365-security/atp-safe-attachments.md)
+- [Vínculos seguros](../security/office-365-security/atp-safe-links.md)
+- [Documentos seguros](../security/office-365-security/safe-docs.md)

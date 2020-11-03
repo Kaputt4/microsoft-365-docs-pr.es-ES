@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 4abbedc34b6d77e785c2096d9f334000f9ffb02f
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9ddad74d179ac16a25640e2bdf4ed4906f920102
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430472"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846885"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Búsqueda rápida de información de entidad o eventos con Go Hunt
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430472"
 
 
 **Se aplica a:**
-- Protección contra amenazas de Microsoft
+- Microsoft 365 defender
 
 Con la acción de *búsqueda go* , puede investigar rápidamente eventos y varios tipos de entidades usando funciones eficaces de [búsqueda avanzada](advanced-hunting-overview.md) basadas en consultas. Esta acción ejecuta automáticamente una consulta de búsqueda avanzada para buscar información relevante sobre la entidad o el evento seleccionado.
 

@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del entorno de pruebas para habilitar opciones de seguridad de Microsoft 365 adicionales para el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487405"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847005"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Aumentó la seguridad de Microsoft 365 para su entorno de prueba de Microsoft 365 para empresas.
 
@@ -57,16 +57,16 @@ Las aplicaciones que no admiten la autenticación moderna no pueden tener aplica
  
 2. En la nueva pestaña **centro de administración de 365 de Microsoft** , en centros de **Administración** , en el panel de navegación izquierdo, haga clic en **SharePoint**.
 3. En la nueva pestaña **centro de administración de SharePoint** , haga clic en **directivas > control de acceso**.
-4. Haga clic en **aplicaciones que no admiten la autenticación moderna**, seleccione **Bloquear acceso**y, a continuación, haga clic en **Guardar**.
+4. Haga clic en **aplicaciones que no admiten la autenticación moderna** , seleccione **Bloquear acceso** y, a continuación, haga clic en **Guardar**.
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitación de la protección contra amenazas avanzada para SharePoint, OneDrive para la empresa y Microsoft Teams
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitar defender para Office 365 para SharePoint, OneDrive para la empresa y Microsoft Teams
 
-Office 365 Advanced Threat Protection (ATP) para SharePoint, OneDrive y Microsoft Teams protege su organización de archivos malintencionados que se comparten de forma inadvertida.
+Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams protege a su organización de archivos malintencionados que se comparten de forma inadvertida.
 
 1. Vaya al [centro de seguridad & cumplimiento](https://protection.office.com) e inicie sesión con su cuenta de administrador global.
 
-2. En el panel de navegación izquierdo, en **Administración de amenazas**, haga clic en **Directiva**y, a continuación, en **datos adjuntos seguros ATP**. 
+2. En el panel de navegación izquierdo, en **Administración de amenazas** , haga clic en **Directiva** y, a continuación, en **datos adjuntos seguros**. 
 
 3. En **proteger archivos en SharePoint, OneDrive y Microsoft Teams**. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
@@ -85,7 +85,7 @@ Para asegurarse de que el procesamiento antimalware se realice en archivos con t
 2. Haga clic en **anti-malware**.
 3. Haga doble clic en la Directiva denominada **default**.
 4. En la ventana **Directiva contra malware** , haga clic en **configuración**.
-4. En **filtro de tipos de datos adjuntos comunes**, seleccione **activado**y haga clic en **Guardar**.
+4. En **filtro de tipos de datos adjuntos comunes** , seleccione **activado** y haga clic en **Guardar**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Fase 3: examinar el panel de seguridad
@@ -96,7 +96,7 @@ Para ver el panel de seguridad:
 
 1. Si es necesario, vaya al [centro de seguridad & cumplimiento](https://protection.office.com) e inicie sesión con su cuenta de administrador global.
 
-2. En el panel de navegación izquierdo, en **Administración de amenazas**, haga clic en **Panel**.
+2. En el panel de navegación izquierdo, en **Administración de amenazas** , haga clic en **Panel**.
 
 Eche un vistazo a todas las tarjetas del panel para familiarizarse con la información proporcionada.
 
@@ -117,7 +117,7 @@ Para obtener más información, consulte [calificación segura de Microsoft](htt
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 

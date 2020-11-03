@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277488"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847123"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones de correo entre espacios empresariales (versión preliminar)
 
@@ -407,7 +407,7 @@ El envío por lotes de migración también se admite desde el nuevo centro de ad
 
 Una vez que el buzón de correo se mueve del origen al destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualizan con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en la transferencia es **contoso \. onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
  
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
  
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del traslado?**
  
@@ -533,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **Problema: MailUsers en la nube con el bloque de la MRS con SMTP no poseído se mueve el fondo.** Al crear objetos de MailUser de inquilino de destino, debe asegurarse de que todas las direcciones de proxy SMTP pertenezcan a la organización de inquilinos de destino. Si existe un proxyAddress SMTP en el usuario de correo de destino que no pertenece al inquilino local, se evita la conversión de MailUser en Mailbox. Esto se debe a la garantía de que los objetos de buzón solo pueden enviar correo desde dominios para los que el inquilino tenga autoridad (dominios reclamados por el inquilino): 
 - 
-   - Al sincronizar usuarios de local mediante Azure AD Connect, se aprovisionan objetos de MailUser locales con ExternalEmailAddress que señalan al inquilino de origen donde existe el buzón (laran@contoso \. onmicrosoft.com) y se marca PrimarySMTPAddress como un dominio que reside en el inquilino de destino (Lara. Newton@northwind \. com). Estos valores se sincronizan con el inquilino y un usuario de correo adecuado se aprovisionan y están listos para la migración. Aquí se muestra un objeto de ejemplo.
+   - Cuando se sincronizan usuarios de forma local mediante Azure AD Connect, se aprovisionan objetos de MailUser locales con ExternalEmailAddress que señalan al inquilino de origen donde existe el buzón (laran@contoso \. onmicrosoft.com) y se marca PrimarySMTPAddress como un dominio que reside en el inquilino de destino (Lara.Newton@northwind \. com). Estos valores se sincronizan con el inquilino y un usuario de correo adecuado se aprovisionan y están listos para la migración. Aquí se muestra un objeto de ejemplo.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics (Completo)                      |
    | eDiscovery avanzado de Office 365                    |
-   | Protección contra amenazas avanzada de Office 365 (plan 1)    |
-   | Protección contra amenazas avanzada de Office 365 (plan 2)    |
+   | Microsoft defender para Office 365 (plan 1)    |
+   | Microsoft defender para Office 365 (plan 2)    |
    | Office 365 Privileged Access Management           |
    | Outlook Customer Manager                          |
    | Cifrado Premium en Office 365                  |

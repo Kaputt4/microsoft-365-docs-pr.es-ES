@@ -1,5 +1,5 @@
 ---
-title: Controlar los errores de la caza avanzada para la protección contra amenazas de Microsoft
+title: Control de errores en la búsqueda avanzada de Microsoft 365 defender
 description: Comprender los errores mostrados al usar la búsqueda avanzada
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, esquema, kusto, tiempo de espera, recursos, errores, error desconocido, límites, cuota, parámetro, asignación
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636898"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846897"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Controlar errores de búsqueda avanzada
 
@@ -45,6 +45,6 @@ La búsqueda avanzada muestra errores para notificar errores de sintaxis y siemp
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Procedimientos recomendados para la búsqueda avanzada](advanced-hunting-best-practices.md)
-- [Cuotas y parámetros de uso](advanced-hunting-limits.md)
+- [Parámetros de uso y cuotas](advanced-hunting-limits.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Información general sobre el lenguaje de consulta Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
