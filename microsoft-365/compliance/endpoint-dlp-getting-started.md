@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779218"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842044"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introducción a la prevención de pérdida de datos de Endpoint (versión preliminar)
 
@@ -110,7 +110,7 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
 
-2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos** . 
+2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**. 
 
    > [!div class="mx-imgBorder"]
    > ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -118,11 +118,11 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
 
-3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos** . La lista estará vacía hasta que haya incorporado dispositivos.
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. La lista estará vacía hasta que haya incorporado dispositivos.
 
 4. Elija **Incorporación** para iniciar el proceso de incorporación.
 
-5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete** .
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
 
    > [!div class="mx-imgBorder"]
    > ![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
@@ -146,16 +146,16 @@ En este escenario, Microsoft Defender para punto de conexión ya está implement
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
 
-2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos** .
+2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
 
-3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos** . Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión.
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión.
 
    > [!div class="mx-imgBorder"]
    > ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
    
 4. Elija **Incorporación** si necesita incorporar dispositivos adicionales.
 
-5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete** .
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
 
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
 
@@ -165,7 +165,7 @@ En este escenario, Microsoft Defender para punto de conexión ya está implement
     - Incorporar equipos con Windows 10 usando un script local
     - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
 
-Una vez que se haya incorporado el punto de conexión, debería estar visible en la tabla **Dispositivos** y también empezar a informar de los registros de auditoría al **Explorador de actividad** .
+Una vez que se haya incorporado el punto de conexión, debería estar visible en la tabla **Dispositivos** y también empezar a informar de los registros de auditoría al **Explorador de actividad**.
 
 > [!NOTE]
 >Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
@@ -191,7 +191,7 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
-- [Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Dispositivos de Azure AD Unidos](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)

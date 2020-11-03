@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816763"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846309"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -102,7 +102,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   Para obtener más información, consulte[Desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog** . Eso significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la página de **Búsqueda de registros de auditoría** del Centro de seguridad y cumplimiento. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Eso significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la página de **Búsqueda de registros de auditoría** del Centro de seguridad y cumplimiento. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
   Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -112,7 +112,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   |Característica o servicio de Microsoft 365|30 minutos|24 horas|
   |:-----|:-----:|:-----:|
-  |Esquema de Protección e Inteligencia contra amenazas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Defender para Office 365 e Inteligencia sobre amenazas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (eventos administrativos)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Prevención de pérdida de datos|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -139,6 +139,9 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 ## <a name="search-the-audit-log"></a>Búsquedas en el registro de auditoría
 
+> [!NOTE]
+> Actualmente estamos investigando un problema debido al cual no hay actividades de Azure AD disponibles en la herramienta de búsqueda en el registro de auditoría. Este problema comenzó en torno al 26 de octubre de 2020. Entre estas actividades, se incluyen las actividades de administración de usuarios de Azure AD, las actividades de administración de grupos, las actividades de administración de aplicaciones, las actividades de administración de roles y las actividades de administración de directorios. Se informará cuando se solucione el problema.
+    
 Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
 [Paso 1: Ejecute una búsqueda de registros de auditoría](#step-1-run-an-audit-log-search)
@@ -158,7 +161,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **buscar** , y luego haga clic en **buscar el registro de auditoría** .
+3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **buscar** , y luego haga clic en **buscar el registro de auditoría**.
 
     La página del **registro de auditoría de búsqueda** será mostrada.
 
@@ -176,7 +179,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
    1. **Fecha de inicio** y **Fecha de finalización** : los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
 
       > [!TIP]
-      > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio** . De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
+      > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio**. De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
 
    1. **Usuarios** : haga clic en este cuadro y, luego, seleccione uno o más usuarios para mostrarles los resultados de búsqueda. Las entradas del registro de auditoría de la actividad seleccionada realizada por los usuarios que selecciona en este cuadro, se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
 
@@ -192,7 +195,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
 5. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 
-   Los resultados de búsqueda se cargan y, después de unos minutos, se muestran en **Resultados** . Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. En el **panel resultados** se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
+   Los resultados de búsqueda se cargan y, después de unos minutos, se muestran en **Resultados**. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. En el **panel resultados** se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
 
    ![El número de resultados se muestra cuando haya terminado la búsqueda](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -202,17 +205,17 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
   ![Haga clic en el nombre de grupo de actividades para seleccionar todas las actividades](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
-- Tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista de **Actividades** para mostrar los eventos del registro de auditoría de administración de Exchange. Los eventos de este registro de auditoría muestran un nombre de cmdlet (por ejemplo, **Set-Mailbox** ) en la columna de **Actividad** en los resultados. Para obtener más información, haga clic en la pestaña **actividades auditadas** de este tema y luego haga clic en **actividades de administración de Exchange** .
+- Tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista de **Actividades** para mostrar los eventos del registro de auditoría de administración de Exchange. Los eventos de este registro de auditoría muestran un nombre de cmdlet (por ejemplo, **Set-Mailbox** ) en la columna de **Actividad** en los resultados. Para obtener más información, haga clic en la pestaña **actividades auditadas** de este tema y luego haga clic en **actividades de administración de Exchange**.
 
-  De forma similar, hay algunas actividades de auditoría que no tienen un elemento correspondiente en la lista **Actividades** . Si sabe el nombre de la operación para estas actividades, puede buscarlas todas y luego filtrar los resultados escribiendo el nombre de la operación en el cuadro de la columna de **Actividad** . Consulte [Paso 3: Filtrar los resultados de búsqueda](#step-3-filter-the-search-results) para obtener más información sobre cómo filtrar los resultados.
+  De forma similar, hay algunas actividades de auditoría que no tienen un elemento correspondiente en la lista **Actividades**. Si sabe el nombre de la operación para estas actividades, puede buscarlas todas y luego filtrar los resultados escribiendo el nombre de la operación en el cuadro de la columna de **Actividad**. Consulte [Paso 3: Filtrar los resultados de búsqueda](#step-3-filter-the-search-results) para obtener más información sobre cómo filtrar los resultados.
 
 - Haga clic en **Borrar** para borrar los criterios actuales de búsqueda. El intervalo de fecha vuelve al predeterminado de los últimos siete días. También puede hacer clic en **Borrar todo para mostrar los resultados de todas las actividades** para cancelar todas las actividades seleccionadas.
 
-- Si 5 000 resultados son encontrados, puede suponer que probablemente existen más de 5,000 eventos que cumplen los criterios de búsqueda. Puede restringir los criterios de búsqueda y volver a ejecutar la búsqueda para devolver menos resultados o puede exportar todos los resultados de búsqueda al seleccionar **Exportar resultado**\>**Descargar todos los resultados** .
+- Si 5 000 resultados son encontrados, puede suponer que probablemente existen más de 5,000 eventos que cumplen los criterios de búsqueda. Puede restringir los criterios de búsqueda y volver a ejecutar la búsqueda para devolver menos resultados o puede exportar todos los resultados de búsqueda al seleccionar **Exportar resultado**\>**Descargar todos los resultados**.
 
 ### <a name="step-2-view-the-search-results"></a>Paso 2: Ver los resultados de la búsqueda
 
-Los resultados de una búsqueda de registro de auditoría se muestran en **Resultados** en la página **Búsqueda de registros de auditoría** . Como se mencionó anteriormente se muestran un máximo de 5 000 eventos (más recientes) en incrementos de 150 eventos. Para mostrar más eventos puede usar la barra de desplazamiento en el panel **Resultados** o también puede presionar **Mayús+Fin** para mostrar los siguientes 150 eventos.
+Los resultados de una búsqueda de registro de auditoría se muestran en **Resultados** en la página **Búsqueda de registros de auditoría**. Como se mencionó anteriormente se muestran un máximo de 5 000 eventos (más recientes) en incrementos de 150 eventos. Para mostrar más eventos puede usar la barra de desplazamiento en el panel **Resultados** o también puede presionar **Mayús+Fin** para mostrar los siguientes 150 eventos.
 
 Los resultados contienen la siguiente información sobre cada evento que la búsqueda ha devuelto:
 
@@ -225,7 +228,7 @@ Los resultados contienen la siguiente información sobre cada evento que la bús
 
 - **Usuario** : el usuario (o cuenta de servicio) que ha realizado la acción que ha desencadenado el evento.
 
-- **Actividad** : la actividad que ha realizado el usuario. Este valor corresponde a las actividades que ha seleccionado en la lista desplegable de **Actividades** . Para un evento del registro de auditoría de administración de Exchange, el valor de esta columna es un cmdlet de Exchange.
+- **Actividad** : la actividad que ha realizado el usuario. Este valor corresponde a las actividades que ha seleccionado en la lista desplegable de **Actividades**. Para un evento del registro de auditoría de administración de Exchange, el valor de esta columna es un cmdlet de Exchange.
 
 - **Elemento** : el objeto que se ha creado o modificado como resultado de la actividad correspondiente. Por ejemplo, el archivo que se ha visto o modificado, o la cuenta de usuario que se ha actualizado. No todas las actividades tienen un valor en esta columna.
 
@@ -236,7 +239,7 @@ Los resultados contienen la siguiente información sobre cada evento que la bús
 
 #### <a name="view-the-details-for-a-specific-event"></a>Ver los detalles de un evento específico
 
-Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de **detalles** que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio en el que se produce el evento. Para mostrar esos detalles, haga clic en **Más información** . Para ver descripciones, consulte[Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
+Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de **detalles** que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio en el que se produce el evento. Para mostrar esos detalles, haga clic en **Más información**. Para ver descripciones, consulte[Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 
 ![Haga clic en Obtener más información para ver las propiedades detalladas del registro de eventos de auditoría.](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -248,7 +251,7 @@ Para filtrar los resultados:
 
 1. Ejecute una búsqueda de registros de auditoría.
 
-2. Cuando se muestren los resultados, haga clic en **Filtrar resultados** .
+2. Cuando se muestren los resultados, haga clic en **Filtrar resultados**.
 
    Los cuadros de palabra clave se muestran en cada encabezado de columna.
 
@@ -256,10 +259,10 @@ Para filtrar los resultados:
 
    ![Escriba una palabra en el filtro para mostrar los eventos que coincidan con el filtro](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
-4. Para borrar un filtro, haga clic en la **X** en el cuadro de filtro o haga clic en **Ocultar filtrado** .
+4. Para borrar un filtro, haga clic en la **X** en el cuadro de filtro o haga clic en **Ocultar filtrado**.
 
 > [!TIP]
-> Para mostrar los eventos del registro de auditoría de administración de Exchange, escriba un **-** (guion) en el cuadro de filtro **Actividad** . Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
+> Para mostrar los eventos del registro de auditoría de administración de Exchange, escriba un **-** (guion) en el cuadro de filtro **Actividad**. Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Paso 4: Exportar los resultados de búsqueda a un archivo
 
@@ -269,9 +272,9 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 2. Haga clic en **Exportar resultados** y seleccione una de las siguientes opciones:
 
-   - **Guardar los resultados cargados** : elija esta opción para exportar solo las entradas que se muestran en los **Resultados** en la página de **Búsqueda de registros de auditoría** . El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (Fecha, Usuario, Actividad, Elemento y Detalles). Se incluye una columna adicional (denominada **Más** ) en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se han cargado (y visualizado) en la página **Búsqueda de registros de auditoría** , se exportan un máximo de 5 000 entradas.
+   - **Guardar los resultados cargados** : elija esta opción para exportar solo las entradas que se muestran en los **Resultados** en la página de **Búsqueda de registros de auditoría**. El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (Fecha, Usuario, Actividad, Elemento y Detalles). Se incluye una columna adicional (denominada **Más** ) en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se han cargado (y visualizado) en la página **Búsqueda de registros de auditoría** , se exportan un máximo de 5 000 entradas.
 
-   - **Descargar todos los resultados** : elija esta opción para exportar todas las entradas del registro de auditoría que cumplan los criterios de búsqueda. Para obtener un conjunto amplio de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los 5 000 resultados que se muestran en la página **Búsqueda de registros de auditoría** . Esta opción descargará los datos sin procesar del registro de auditoría a un archivo CSV, y contiene información adicional de la entrada del registro de auditoría en una columna denominada **AuditData** . Puede tardar más en descargar el archivo si elige esta opción de exportación ya que el archivo puede ser mucho más grande que el que se descarga si eligiera otra opción.
+   - **Descargar todos los resultados** : elija esta opción para exportar todas las entradas del registro de auditoría que cumplan los criterios de búsqueda. Para obtener un conjunto amplio de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los 5 000 resultados que se muestran en la página **Búsqueda de registros de auditoría**. Esta opción descargará los datos sin procesar del registro de auditoría a un archivo CSV, y contiene información adicional de la entrada del registro de auditoría en una columna denominada **AuditData**. Puede tardar más en descargar el archivo si elige esta opción de exportación ya que el archivo puede ser mucho más grande que el que se descarga si eligiera otra opción.
 
      > [!IMPORTANT]
      > Puede descargar un máximo de 50 000 entradas en un archivo CSV desde una única búsqueda de registros de auditoría. Si se descargan 50 000 entradas en el archivo CSV, probablemente puede suponer que existen más de 50 000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fecha para reducir el número de entradas de registro de auditoría. Puede que tenga que ejecutar varias búsquedas con intervalos de fecha de menor tamaño para exportar más de 50 000 entradas.
@@ -284,7 +287,7 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
   Después de que divida la columna **AuditData** , puede filtrar en la columna de **Operaciones** para mostrar las propiedades detalladas de un tipo de actividad específico.
 
-- La opción **Descargar todos los resultados** descarga los datos sin procesar del registro de auditoría en un archivo CSV. Este archivo contiene diferentes nombres de columna (CreationDate, Identificadores de usuario, Operaciones, AuditData) que los del archivo que se descarga si selecciona la opción **Guardar resultados cargados** . Los valores de los dos archivos CSV diferentes para la misma actividad también podrían ser distintos. Por ejemplo, la actividad de la columna **Acción** en el archivo CSV y podría tener un valor diferente que el nombre "sencillo" de usuario que se muestra en la columna de **Actividad** de la página de **Búsqueda de registros de auditoría** . Por ejemplo, MailboxLogin vs. el usuario ha iniciado sesión en el buzón.
+- La opción **Descargar todos los resultados** descarga los datos sin procesar del registro de auditoría en un archivo CSV. Este archivo contiene diferentes nombres de columna (CreationDate, Identificadores de usuario, Operaciones, AuditData) que los del archivo que se descarga si selecciona la opción **Guardar resultados cargados**. Los valores de los dos archivos CSV diferentes para la misma actividad también podrían ser distintos. Por ejemplo, la actividad de la columna **Acción** en el archivo CSV y podría tener un valor diferente que el nombre "sencillo" de usuario que se muestra en la columna de **Actividad** de la página de **Búsqueda de registros de auditoría**. Por ejemplo, MailboxLogin vs. el usuario ha iniciado sesión en el buzón.
 
 - Cuando descargue todos los resultados de una consulta de búsqueda que contenga eventos de diferentes servicios, la columna **AuditData** del archivo CSV contiene diferentes propiedades en función del servicio en que se ha realizado la acción. Por ejemplo, las entradas de los registros de auditoría de Exchange y Azure AD incluyen una propiedad denominada **ResultStatus** que indica si la acción se ha realizado correctamente o no. Esta propiedad no se incluye para los eventos en SharePoint. De manera similar, los eventos de SharePoint tienen una propiedad que identifica la dirección URL del sitio para las actividades relacionadas con la carpeta y el archivo. Para mitigar este comportamiento, considere la posibilidad de usar diferentes búsquedas para exportar los resultados de las actividades de un único servicio.
 
@@ -477,7 +480,7 @@ Tanto el evento FilePreviewed como el FileAccessed indican que la llamada de un 
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>El usuario app\@sharepoint en los registros de auditoría
 
-En los registros de auditoría para actividades de archivo (y otras actividades relacionadas con SharePoint), puede que el usuario que aparezca como el autor de la actividad (identificado en los campos usuario y seudónimo) es app@sharepoint. Esto indica que el "usuario" que llevó a cabo la actividad era una aplicación. En este caso, se otorgó a la aplicación permisos en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. Este proceso de conceder permisos a una aplicación se denomina acceso *a SharePoint solo para aplicación* . Esto indica que la autenticación presentada en SharePoint para realizar una acción la realizó una aplicación, en lugar de un usuario. Por este motivo, el usuario app@sharepoint se identifica en ciertos registros de auditoría. Para obtener más información, lea [Conceder acceso a SharePoint solo para aplicación](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+En los registros de auditoría para actividades de archivo (y otras actividades relacionadas con SharePoint), puede que el usuario que aparezca como el autor de la actividad (identificado en los campos usuario y seudónimo) es app@sharepoint. Esto indica que el "usuario" que llevó a cabo la actividad era una aplicación. En este caso, se otorgó a la aplicación permisos en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. Este proceso de conceder permisos a una aplicación se denomina acceso *a SharePoint solo para aplicación*. Esto indica que la autenticación presentada en SharePoint para realizar una acción la realizó una aplicación, en lugar de un usuario. Por este motivo, el usuario app@sharepoint se identifica en ciertos registros de auditoría. Para obtener más información, lea [Conceder acceso a SharePoint solo para aplicación](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
 Por ejemplo, app@sharepoint se identifica por lo general como el usuario para los eventos "Ha realizado una consulta de búsqueda" y "Archivo al que se obtuvo acceso". Esto se debe a que una aplicación que tenga acceso a SharePoint solo para aplicación, realiza consultas de búsqueda y obtiene acceso a los archivos cuando se apliquen directivas de retención a sitios y cuentas de OneDrive.
 
@@ -601,7 +604,7 @@ La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con
 |Configuración de solicitud de acceso modificada|WebRequestAccessModified|La configuración de solicitud de acceso fueron modificadas en un sitio.|
 |Configuración modificada "los miembros pueden compartir" |WebMembersCanShareModified|Los **miembros pueden compartir** la configuración se ha modificado en un sitio.|
 |Nivel de permiso modificado en una colección de sitios|PermissionLevelModified|Un nivel de permisos se modificó en una colección de sitios.|
-|Permisos de sitio modificados|SitePermissionsModified|El administrador o el propietario del sitio (o la cuenta de sistema) cambia el nivel de permisos que se asignan a un grupo en un sitio. Esta actividad también se registra si todos los permisos son removidos de un grupo. <br/><br/> **Nota** :Esta operación se ha dejado de usar en SharePoint en línea. Para buscar eventos relacionados, puede buscar otras actividades relacionadas con el permiso como **Administradores de la colección de sitios agregados** , **Usuario o grupo agregado a un grupo de SharePoint** , **Usuario permitido para crear grupos** , **Grupo creado** y **Grupo eliminado** .|
+|Permisos de sitio modificados|SitePermissionsModified|El administrador o el propietario del sitio (o la cuenta de sistema) cambia el nivel de permisos que se asignan a un grupo en un sitio. Esta actividad también se registra si todos los permisos son removidos de un grupo. <br/><br/> **Nota** :Esta operación se ha dejado de usar en SharePoint en línea. Para buscar eventos relacionados, puede buscar otras actividades relacionadas con el permiso como **Administradores de la colección de sitios agregados** , **Usuario o grupo agregado a un grupo de SharePoint** , **Usuario permitido para crear grupos** , **Grupo creado** y **Grupo eliminado**.|
 |Nivel de permiso eliminado de la colección de sitios|PermissionLevelRemoved|Un nivel de permisos se eliminó de una colección de sitios.|
 |Administradores de la colección de sitios removidos|SiteCollectionAdminRemoved|El administrador de la colección de sitios o el propietario remueve una persona como administrador de la colección de sitios a un sitio. Esta actividad también se registra cuando un administrador se remueve así mismo de la lista de colección de administradores a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el Centro de administración de SharePoint).  Para devolver esta actividad en los resultados de búsqueda del registro de auditoría, tiene que buscar todas las actividades.|
 |Usuario o grupo removido al grupo de SharePoint|RemovedFromGroup|El usuario ha removido un miembro o invitado de un grupo de SharePoint. Esto puede haber sido una acción intencionada o el resultado de otra actividad, como un evento sin uso compartido.|
@@ -663,7 +666,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Mensajes copiados a otra carpeta|Copiar|Se ha copiado un mensaje a otra carpeta.|
 |Elementos del buzón creado|Crear|Se crea un elemento en la carpeta de Calendario, Contactos, Notas o Tareas en el buzón. Por ejemplo, se crea una nueva solicitud de reunión. No se audita la creación, el envío ni la recepción de un mensaje. Además, no se audita la creación de una carpeta del buzón.|
 |Nueva regla de bandeja de entrada creada en la aplicación web de Outlook|New-InboxRule|El propietario de un buzón u otro usuario con acceso al buzón creó una regla de la bandeja de entrada en la aplicación web de Outlook.|
-|Mensajes eliminados de la carpeta elementos eliminados|SoftDelete|Un mensaje se ha eliminado de manera permanente o se ha eliminado de la carpeta Elementos eliminados. Estos elementos se mueven a la carpeta Elementos recuperables. Los mensajes también se mueven a la carpeta elementos recuperables cuando un usuario lo selecciona y presiona **Mayús+Supr** .|
+|Mensajes eliminados de la carpeta elementos eliminados|SoftDelete|Un mensaje se ha eliminado de manera permanente o se ha eliminado de la carpeta Elementos eliminados. Estos elementos se mueven a la carpeta Elementos recuperables. Los mensajes también se mueven a la carpeta elementos recuperables cuando un usuario lo selecciona y presiona **Mayús+Supr**.|
 |Mensaje etiquetado como un registro|ApplyRecordLabel|Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica manual o automáticamente a un mensaje.|
 |Mensajes movidos a otra carpeta|Mover|Se ha movido un mensaje a otra carpeta.|
 |Mensajes movidos a la carpeta Elementos eliminados|MoveToDeletedItems|Un mensaje se ha eliminado y movido a la carpeta Elementos eliminados.|
@@ -688,7 +691,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 |Actividad|Operación|Descripción|
 |:-----|:-----|:-----|
 |Usuario agregado|Agregar usuario|Secreó una cuenta de usuario.|
-|Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado** .|
+|Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado**.|
 |Contraseña de usuario cambiada|Cambiar contraseña de usuario|El usuario cambia su contraseña. El restablecimiento de contraseña de autoservicio tiene que estar habilitado (para todos los usuarios o los seleccionados) en la organización para que los usuarios puedan restablecer la contraseña. También puede realizar un seguimiento de la actividad de restablecimiento de contraseña de autoservicio de Azure Active Directory. Para obtener más información, consulte [Opciones de creación de informes para la administración de contraseñas de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Usuario eliminado|Eliminar usuario|Se ha eliminado una cuenta de usuario.|
 |Restablecer contraseña de usuario|Restablecer contraseña de usuario|El administrador restablece la contraseña de un usuario.|
@@ -809,7 +812,7 @@ Puede buscar en el registro de auditoría actividades administrativas y de usuar
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Actividades de Microsoft Teams para Sanidad
 
-Si su organización usa la [aplicación Pacientes](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) en Microsoft Teams, puede buscar el registro de auditoría para las actividades relacionadas con el uso de la aplicación Pacientes. Si su entorno está configurado para admitir la aplicación Pacientes, un grupo adicional de actividad está disponible para estas actividades en la lista del selector **Actividades** .
+Si su organización usa la [aplicación Pacientes](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) en Microsoft Teams, puede buscar el registro de auditoría para las actividades relacionadas con el uso de la aplicación Pacientes. Si su entorno está configurado para admitir la aplicación Pacientes, un grupo adicional de actividad está disponible para estas actividades en la lista del selector **Actividades**.
 
 ![Actividades de Microsoft Teams para Sanidad en la lista del selector Actividades](../media/TeamsHealthcareAuditActivities.png)
 
@@ -817,20 +820,20 @@ Para obtener una descripción de las actividades de la aplicación Pacientes, co
 
 ### <a name="microsoft-teams-shifts-activities"></a>Actividades de Turnos en Microsoft Teams
 
-Si su organización usa la aplicación Turnos en Microsoft Teams, puede buscar en el registro de auditoría actividades relacionadas con el uso de la aplicación Turnos. Si su entorno está configurado para admitir la aplicación Turnos, habrá disponible un grupo adicional de esas actividades en la lista del selector **Actividades** .
+Si su organización usa la aplicación Turnos en Microsoft Teams, puede buscar en el registro de auditoría actividades relacionadas con el uso de la aplicación Turnos. Si su entorno está configurado para admitir la aplicación Turnos, habrá disponible un grupo adicional de esas actividades en la lista del selector **Actividades**.
 
 Para obtener una descripción de las actividades de la aplicación Turnos, consulte [Buscar eventos en el registro de auditoría de Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ### <a name="yammer-activities"></a>Actividades de Yammer
 
-En la siguiente tabla, se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría. Para devolver las actividades relacionadas con Yammer del registro de auditoría, tiene que seleccionar **Mostrar resultados de todas las actividades** en la lista **Actividades** . Use los cuadros de intervalo de fecha y la lista **Usuarios** para restringir los resultados de la búsqueda.
+En la siguiente tabla, se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría. Para devolver las actividades relacionadas con Yammer del registro de auditoría, tiene que seleccionar **Mostrar resultados de todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista **Usuarios** para restringir los resultados de la búsqueda.
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Directiva de retención de datos cambiada|SoftDeleteSettingsUpdated|Un administrador superior actualizó la configuración de la directiva de retención de datos de la red a eliminación permanente o eliminación temporal. Solo los administradores superiores pueden realizar esta operación.|
 |Configuración de red cambiada|NetworkConfigurationUpdated|Un administrador superior o de red cambió la configuración de la red de Yammer. Esto incluye establecer el intervalo de exportación de datos y habilitar el chat.|
 |Configuración del perfil de red cambiada|ProcessProfileFields|Un administrador superior o de red cambia la información que aparece en los perfiles de usuario para los usuarios de su red.|
-|Modo de contenido privado cambiado|SupervisorAdminToggled|Un administrador superior activa o desactiva el *Modo de contenido privado* . Este modo permite a un administrador ver publicaciones de grupos privados y mensajes privados entre los usuarios (o grupos de usuarios). Solo los administradores superiores pueden realizar esta operación.|
+|Modo de contenido privado cambiado|SupervisorAdminToggled|Un administrador superior activa o desactiva el *Modo de contenido privado*. Este modo permite a un administrador ver publicaciones de grupos privados y mensajes privados entre los usuarios (o grupos de usuarios). Solo los administradores superiores pueden realizar esta operación.|
 |Configuración de seguridad cambiada|NetworkSecurityConfigurationUpdated|Un administrador superior actualizó la configuración de seguridad de la red de Yammer. Esto incluye establecer las directivas de expiración de contraseña y las restricciones de las direcciones IP. Solo los administradores superiores pueden realizar esta operación.|
 |Archivo creado|FileCreated|El usuario cargó un archivo.|
 |Grupo creado|GroupCreation|El usuario crea un grupo.|
@@ -913,7 +916,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Vínculo de resumen creado|GetSummaryLink|El propietario del formulario ha creado un vínculo de resumen de resultados para ser compartidos.|
 |Vínculo de resumen eliminado|DeleteSummaryLink|El enlace de resumen de resultados ha sido eliminado por el propietario del formulario.|
 |Estado de phishing actualizado del formulario|UpdatePhishingStatus|Este evento se registra cada vez que se cambie el valor detallado del estado de seguridad interna, independientemente de que ha cambiado el estado de seguridad final (por ejemplo, el formulario ahora está cerrado o abierto). Esto significa que usted puede ver los eventos duplicados sin un cambio final en el Estado de Seguridad. Los posibles valores de estado de este evento son:<br/>-Deseche el <br/>-Derribado por la administración <br/>-Administrador desbloqueado <br/>-Bloqueado automáticamente <br/>-Desbloqueado automáticamente <br/>-El cliente informó <br/>-Restablecer cliente notificado|
-|Estado de phising de usuario actualizado|UpdateUserPhishingStatus|Este evento se registra cuando se cambia el valor del estado de seguridad de usuario. El valor del estado del usuario en el registro de auditoría es **confirmado como Phisher** cuando el usuario ha creado un formulario de phishing que ha sido retirado por el equipo de seguridad de Microsoft Online. Si un administrador desbloquea al usuario, el valor de estado del usuario se establece en **Restablecer como usuario normal** .|
+|Estado de phising de usuario actualizado|UpdateUserPhishingStatus|Este evento se registra cuando se cambia el valor del estado de seguridad de usuario. El valor del estado del usuario en el registro de auditoría es **confirmado como Phisher** cuando el usuario ha creado un formulario de phishing que ha sido retirado por el equipo de seguridad de Microsoft Online. Si un administrador desbloquea al usuario, el valor de estado del usuario se establece en **Restablecer como usuario normal**.|
 |Invitación a Forms Pro enviada|ProInvitation|El usuario hace clic para activar la versión de prueba Pro.|
 |Configuración de formulario actualizada|UpdateFormSetting|La configuración del formulario ha sido actualizada por el propietario. <br><br>La propiedad FormSettingName: la cadena indica el nombre y el nuevo valor de la configuración.|
 |Configuración del usuario actualizada |UpdateUserSetting|La configuración del usuario ha sido actualizada por el propietario del formulario. <br><br>La propiedad UserSettingName: la cadena indica el nombre y el nuevo valor de la configuración|
@@ -923,7 +926,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
 
-Forms es compatible con la colaboración cuando se diseñan formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor* . Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario.
+Forms es compatible con la colaboración cuando se diseñan formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor*. Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario.
 
 En la siguiente tabla se describen las actividades y la información de auditoría del registro de auditoría en relación con las actividades realizadas por los coautores y respondedores anónimos.
 
@@ -974,13 +977,13 @@ El registro de auditoría de administrador de Exchange (que está habilitado de 
 
 Aquí se muestran algunas sugerencias para buscar actividades de administrador de Exchange al buscar en el registro de auditoría:
 
-- Para devolver las entradas del registro de auditoría de administrador Exchange, tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista **Actividades** . Use los cuadros de intervalo de fecha y la lista de **Usuarios** para restringir los resultados de búsqueda para los cmdlets que se ejecutan mediante un administrador de Exchange específico dentro de un rango de fecha específico.
+- Para devolver las entradas del registro de auditoría de administrador Exchange, tiene que seleccionar **Mostrar resultados para todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista de **Usuarios** para restringir los resultados de búsqueda para los cmdlets que se ejecutan mediante un administrador de Exchange específico dentro de un rango de fecha específico.
 
-- Para mostrar los eventos del registro de auditoría de administración de Exchange, filtre los resultados de búsqueda y escriba un **-** (guion) en el cuadro de filtro **Actividad** . Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
+- Para mostrar los eventos del registro de auditoría de administración de Exchange, filtre los resultados de búsqueda y escriba un **-** (guion) en el cuadro de filtro **Actividad**. Esto mostrará los nombres de los cmdlet, que se muestran en la columna **Actividad** de los eventos de administración de Exchange. Luego usted puede ordenar los nombres de cmdlet en orden alfabético.
 
   ![Escriba un guión en el cuadro de actividades para filtrar los eventos de administración de Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
-- Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados** . Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
+- Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados**. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 
 - También puede usar el `Search-UnifiedAuditLog -RecordType ExchangeAdmin` comando de PowerShell Exchange en línea para devolver solo los registros de auditoría del registro de auditoría de administración de Exchange. Se puede tardar hasta 30 minutos después de ejecutar el cmdlet de Exchange para que se devuelva la entrada del registro de auditoría correspondiente en los resultados de la búsqueda. Para obtener más información, consulte [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog). Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -996,7 +999,7 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
 **¿Qué servicios de Microsoft 365 se auditan actualmente?**
 
-Se auditan los servicios más usados, como Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Dynamics 365, Protección contra amenazas avanzada y Power BI. Consulte el [principio de este artículo](search-the-audit-log-in-security-and-compliance.md) para obtener una lista de los servicios que se van a auditar.
+Se auditan los servicios más usados, como Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Dynamics 365, Microsoft Defender para Office 365 y Power BI. Consulte el [principio de este artículo](search-the-audit-log-in-security-and-compliance.md) para obtener una lista de los servicios que se van a auditar.
 
 **¿Qué actividades audita el servicio de auditoría en Office 365?**
 

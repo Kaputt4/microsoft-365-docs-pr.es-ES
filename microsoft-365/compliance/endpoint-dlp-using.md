@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 682996c084f4dce888aaff517ad84d335ed92206
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+ms.openlocfilehash: 95c470a3dfc90f9c7b9a36d282c016781e4e13a8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769669"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847194"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Uso de la Prevención de pérdida de datos de los puntos de conexión (versión preliminar)
 
@@ -94,7 +94,7 @@ Para usar esta restricción, tendrá que configurar tres partes importantes:
 
 2. Agregue los exploradores que no tienen permitido acceder a ciertos elementos confidenciales cuando se produzca una coincidencia de directiva DLP.
 
-3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido** .
+3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido**.
 
 Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
 
@@ -117,21 +117,21 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Elija **Crear directiva (versión preliminar)** .
+2. Elija **Crear directiva (versión preliminar)**.
 
-3. Para este escenario, elija **Privacidad** , después **Datos de información de identificación personal (PII) de Estados Unidos** , y elija **Siguiente** .
+3. Para este escenario, elija **Privacidad** , después **Datos de información de identificación personal (PII) de Estados Unidos** , y elija **Siguiente**.
 
-4. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos** . Elija **Siguiente** .
+4. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos**. Elija **Siguiente**.
 
-5. Acepte la selección predeterminada **Revisar y personalizar la configuración a partir de la plantilla** y elija **Siguiente** .
+5. Acepte la selección predeterminada **Revisar y personalizar la configuración a partir de la plantilla** y elija **Siguiente**.
 
-6. Acepte los valores predeterminados **Acciones de protección** y elija **Siguiente** .
+6. Acepte los valores predeterminados **Acciones de protección** y elija **Siguiente**.
 
-7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar** . Elija **Siguiente** .
+7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. Elija **Siguiente**.
 
-8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba** . Elija **Siguiente** .
+8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. Elija **Siguiente**.
 
-9. Revise la configuración y elija **Enviar** .
+9. Revise la configuración y elija **Enviar**.
 
 10. La nueva directiva DLP se mostrará en la lista de directivas.
 
@@ -147,18 +147,18 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 2. Elija la directiva **Datos de información de identificación personal (PII) de Estados Unidos** que creó en el escenario 1.
 
-3. Elija **editar directiva (versión preliminar)** .
+3. Elija **editar directiva (versión preliminar)**.
 
-4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos** .
+4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
 
-5. Desplácese hacia abajo hasta la sección **Informes de incidentes** y configure **Enviar una alerta a los administradores cuando se produzca una coincidencia de regla** en **Activado** . Las alertas por correo electrónico se enviarán automáticamente al administrador y a cualquier persona que agregue a la lista de destinatarios. 
+5. Desplácese hacia abajo hasta la sección **Informes de incidentes** y configure **Enviar una alerta a los administradores cuando se produzca una coincidencia de regla** en **Activado**. Las alertas por correo electrónico se enviarán automáticamente al administrador y a cualquier persona que agregue a la lista de destinatarios. 
 
    > [!div class="mx-imgBorder"]
    > ![activar-informes-de-incidentes](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
-6. Para este escenario, elija **Enviar una alerta cada vez que una actividad coincida con la regla** .
+6. Para este escenario, elija **Enviar una alerta cada vez que una actividad coincida con la regla**.
 
-7. Seleccione **Guardar** .
+7. Seleccione **Guardar**.
 
 8. Conserve todas las opciones de configuración anteriores eligiendo **Siguiente** y, después, **Enviar** los cambios de directiva.
 
@@ -172,18 +172,18 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 2. Elija la directiva **Datos de información de identificación personal (PII) de Estados Unidos** que creó en el escenario 1.
 
-3. Elija **editar directiva (versión preliminar)** .
+3. Elija **editar directiva (versión preliminar)**.
 
-4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos** .
+4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
 
 5. Desplácese hacia abajo hasta la sección **Auditar o restringir actividades en dispositivos Windows** y configure la acción correspondiente en **Bloquear con invalidación** para cada actividad.
 
    > [!div class="mx-imgBorder"]
    > ![configurar bloqueo con acción de invalidación](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
-6. Seleccione **Guardar** .
+6. Seleccione **Guardar**.
 
-7. Repita los pasos del 4 al 7 para el **Alto volumen de contenido detectado en la información de identificación personal de Estados Unidos** .
+7. Repita los pasos del 4 al 7 para el **Alto volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
 
 8. Conserve todas las opciones de configuración anteriores eligiendo **Siguiente** y, después, **Enviar** los cambios de directiva.
 
@@ -203,7 +203,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
-- [Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Unido a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
