@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel informes de Microsoft 365 en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 78b09edfbfeb83c056af16787085b7c4cfe93fc6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 843548e77067c7598cfa78ba6fac985237f6f62c
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949209"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841118"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de formularios
 
@@ -39,7 +39,7 @@ Por ejemplo, puede comprender la actividad de cada usuario con licencia para usa
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione **Forms** \> **actividad**de formularios.
+2. En la lista desplegable **seleccionar un informe** , seleccione **Forms** \> **actividad** de formularios.
 
 ## <a name="interpret-the-forms-activity-report"></a>Interpretar el informe de actividad de formularios
 
@@ -47,7 +47,7 @@ Puede obtener una vista de la actividad de los formularios del usuario consultan
 
 ![Informe de actividad de formularios](../../media/adminformsactivity.png)
 
-|Item|Descripción|
+|Item|Description|
 |:-----|:-----|
 |1.  <br/> |El informe de **actividad de formularios** puede visualizarse para las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día concreto en el informe, la tabla (7) mostrará los datos de hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe normalmente cubren hasta las últimas 24 a 48 horas.  <br/> |

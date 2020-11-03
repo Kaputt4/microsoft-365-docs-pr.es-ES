@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre los pasos de configuración para Microsoft 365 empresa Premium, suscribirse, agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: fa9c02fa9546437c83b9cc6c1f1e6e0d723ec868
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306477"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841149"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
@@ -40,21 +40,21 @@ Vea un breve vídeo sobre la configuración de Microsoft 365 Business Premium.<b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-La mayoría de los pasos de configuración pueden realizarse en el Asistente de configuración, pero también se muestran otras opciones.
+La mayoría de los pasos de configuración pueden realizarse en la configuración guiada, pero también se muestran otras opciones.
 
 ## <a name="step-1-add-your-domain-and-users"></a>Paso 1: agregar el dominio y los usuarios
 
    - **[Agregar el dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (si ha comprado su dominio durante el [registro](sign-up.md), este paso ya se ha realizado).
 
-   - **Agregar usuarios**. Puede Agregar usuarios de las tres maneras siguientes:
-        - En el [Asistente](set-up.md#add-users-in-the-wizard).
+   - **Agregar usuarios** . Puede Agregar usuarios de las tres maneras siguientes:
+        - En la [configuración guiada](set-up.md#add-users-in-the-wizard).
         - Use la sincronización de directorios para [Agregar usuarios con Azure ad Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) si tiene un Active Directory local.
         - También puede [Agregar usuarios más adelante](add-users-m365b.md) en el centro de administración.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Paso 2: configurar directivas de seguridad y configurar dispositivos 
 
-  - Use el [Asistente](set-up.md#protect-your-organization) para la instalación para configurar las directivas del dispositivo. 
+  - Use la [configuración guiada](set-up.md#protect-your-organization) para configurar las directivas de dispositivo. 
   - También puede agregar más o editarlos más adelante en el [centro de administración](view-policies-and-devices.md) y en el [portal de Intune](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - El Asistente para la instalación también configurará la protección contra amenazas básica y la configuración de prevención de pérdida de datos.
   
@@ -63,15 +63,15 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
 - **Protección contra malware de correo electrónico**
 - **Contra la suplantación de identidad ATP**
 - **Archivado de Exchange Online**
-- **Azure Information Protection (Plan1**)
+- **Azure Information Protection (Plan1** )
 
 Para empezar, consulte [aumentar la protección contra amenazas](increase-threat-protection.md) y [configurar las características de cumplimiento](set-up-compliance.md).
 
-Consulte también [las 10 principales formas de proteger su Microsoft 365 empresa Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía básica de los procedimientos de seguridad.
+Consulte también [las 10 principales formas de proteger su Microsoft 365 empresa Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía de las mejores prácticas de seguridad.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Paso 3: configurar y administrar dispositivos con Windows 10
 
-Después de ejecutar el Asistente para la configuración, querrá proctect todos los equipos de la Windwos 10 en su organización.
+Una vez completada la configuración guiada, querrá proteger todos los equipos con Windows 10 de la organización.
   
 - Windows 10 Pro es un [requisito previo](pre-requisites-for-data-protection.md) para Microsoft 365 empresa Premium, pero si tiene Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, su suscripción le da derecho a una [actualización a Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
 - Siga los pasos que se indican en [proteger equipos con Windows 10](secure-win-10-pcs.md) para configurar directivas para dispositivos con Windows 10.
@@ -82,7 +82,7 @@ Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directiv
 - Puede instalar Office automáticamente en los dispositivos Windows mediante el Asistente de [configuración](set-up.md#deploy-office-365-client-apps).
 - Permita que los usuarios [instalen aplicaciones de Office](https://docs.microsoft.com/office365/admin/setup/install-applications) para Windows y dispositivos.
      
-## <a name="advanced"></a>Opciones avanzadas
+## <a name="advanced"></a>Advanced
 - **Usar AutoPilot para configurar nuevos dispositivos**
             
      Puede usar [Windows AutoPilot](add-autopilot-devices-and-profile.md) para preconfigurar automáticamente los **nuevos** dispositivos Windows 10 para un usuario, pero podría ser más fácil obtener un [asociado](https://www.microsoft.com/solution-providers/search) que lo haga por usted. También puede ir a [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)y solicitar a un experto en la tecnología de la nube que configure nuevos dispositivos que compre.

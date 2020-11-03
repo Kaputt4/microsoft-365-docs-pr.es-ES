@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Obtenga información sobre cómo solucionar problemas relacionados con la aplicación de plantilla de análisis de uso de Microsoft 365.
-ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bf8e4ece7b1e310d91f418f5388cae9aa27f2aa7
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402039"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841440"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Solución de problemas de análisis de uso de Microsoft 365
 
@@ -40,7 +40,7 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
   
  **Causa:** Antes de poder conectarse a la aplicación, tiene que suscribirse a los datos desde el centro de administración de 365 de Microsoft. Si este paso no se realiza primero, no podrás conectar con la aplicación de plantilla, incluso si proporcionas tu identificador de inquilino de 365 de Microsoft. 
   
- **Para solucionar este error:** Para suscribirse a los datos, vaya al centro de administración \> **informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la Página principal del panel. Seleccione el botón **Introducción** y, a continuación, en el panel de **informes** que se abre, active la opción hacer que los **datos estén disponibles en análisis de uso de Microsoft 365 para Power BI** en y **guarde**.
+ **Para solucionar este error:** Para suscribirse a los datos, vaya al centro de administración \> **informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la Página principal del panel. Seleccione el botón **Introducción** y, a continuación, en el panel de **informes** que se abre, active la opción hacer que los **datos estén disponibles en análisis de uso de Microsoft 365 para Power BI** en y **guarde** .
   
 ## <a name="we-are-processing-your-data"></a>Estamos procesando sus datos
 
@@ -54,9 +54,9 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
 
  **Código de error:** 423 
   
- **Donde verá este mensaje:** En Power BI cuando se conecta a la aplicación de plantilla de análisis de uso de Microsoft 365 o al llamar directamente a las API de informes de Microsoft 365. 
+ **Donde verá este mensaje:** En Power BI, al conectarse a la aplicación de plantilla de análisis de uso de Microsoft 365 o al llamar directamente a las API de informes de Microsoft 365. 
   
- **Causa:** Cuando se [opta por ver los datos en la aplicación de plantilla](enable-usage-analytics.md) desde el centro de administración, el sistema Microsoft 365 comienza a generar datos de uso históricos para la organización. Según el tamaño del espacio empresarial, puede que este paso tarde en completarse de 2 a 48 horas. 
+ **Causa:** Cuando se [opta por ver los datos en la aplicación de plantilla](enable-usage-analytics.md) desde el centro de administración, el sistema Microsoft 365 comienza a generar datos de uso históricos para la organización. Según el tamaño del espacio empresarial, este paso puede tardar entre dos horas y 48 horas. 
   
  **Para solucionar esto:** Solo es paciente, pero si el mensaje no cambia a **sus datos está listo** incluso durante 3 días desde el inicio, [póngase en contacto con el soporte técnico de Microsoft 365 para empresas](../contact-support-for-business-products.md).
   
@@ -64,9 +64,9 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
 
  **Código de error:** 400 
   
- **Donde verá este mensaje:** En Power BI cuando se conecta a la aplicación de plantilla de análisis de uso de Microsoft 365 o al llamar directamente a las API de informes de Microsoft 365. 
+ **Donde verá este mensaje:** En Power BI, al conectarse a la aplicación de plantilla de análisis de uso de Microsoft 365 o al llamar directamente a las API de informes de Microsoft 365. 
   
- **Causa:** el id. de espacio empresarial es un GUID y necesita estar en el formato xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Si escribe cualquier otra cadena en el cuadro de entrada del espacio empresarial, obtendrá este error. 
+ **Causa:** El identificador de inquilino es un GUID y debe estar en el formato xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX. Si escribe cualquier otra cadena en el cuadro de entrada del inquilino, recibirá este error. 
   
  **Para solucionar este error:** Vaya al centro de administración de \> **informes** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la página del panel principal. El identificador de inquilino aparece en el icono. Puede copiarla desde aquí y pegarla en el cuadro de diálogo para conectarse a la aplicación de plantilla. 
   
@@ -76,7 +76,7 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
   
  **Donde verá este mensaje:** En Power BI cuando se conecta a la aplicación de plantilla de análisis de uso de Microsoft 365 o al llamar directamente a las API de informes de Microsoft 365. 
   
- **Causa:** el id. de espacio empresarial que especificó no es válido o no existe. 
+ **Causa:** El identificador de inquilino proporcionado no es válido o no existe. 
   
  **Para solucionar este error:** Vaya al centro de administración de \> **informes** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la página del panel principal. El identificador de inquilino aparece en el icono. Puede copiarla desde aquí y pegarla en el cuadro de diálogo para conectarse a la aplicación de plantilla. 
   
@@ -98,7 +98,7 @@ Código de error: 302
   
  **Causa:** El código de autorización falló porque el usuario que intentó conectarse a la aplicación de plantilla no tiene el nivel correcto de autorización para obtener acceso a estos datos. 
   
- **Para solucionar este error:** Proporcione las credenciales de un usuario que sea un **administrador global**, el administrador de **Exchange**, el **Administrador de Skype empresarial**, el **Administrador de SharePoint**, el lector **global** o el **lector de informes** para conectarse a la aplicación de plantilla. Para obtener más información, vea acerca de los [roles de administrador](../add-users/about-admin-roles.md) . 
+ **Para solucionar este error:** Proporcione las credenciales de un usuario que sea un **administrador global** , el administrador de **Exchange** , el **Administrador de Skype empresarial** , el **Administrador de SharePoint** , el lector **global** o el **lector de informes** para conectarse a la aplicación de plantilla. Para obtener más información, vea acerca de los [roles de administrador](../add-users/about-admin-roles.md) . 
   
 ## <a name="refresh-failed"></a>No se pudo actualizar
 

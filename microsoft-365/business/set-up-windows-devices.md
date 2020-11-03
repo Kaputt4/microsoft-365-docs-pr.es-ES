@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Obtenga información sobre cómo configurar los dispositivos Windows que ejecutan Windows 10 Pro para los usuarios de Microsoft 365 empresa Premium, lo que permite controles de seguridad y administración centralizados.
-ms.openlocfilehash: 85ac3c964792a132d5699703e543289020e38f57
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c95b9e51c7ec3c440509fe34084d2a030c7f2eec
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785860"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841267"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para usuarios de Microsoft 365 empresa Premium
 
@@ -49,7 +49,7 @@ Vea un breve vídeo sobre cómo conectar Windows a Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows 10 en la cuenta de Azure AD de una organización
 
@@ -59,7 +59,7 @@ Cuando todos los dispositivos Windows de su organización se hayan actualizado a
 
 En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Update, o en el de los dispositivos que se hayan actualizado a dicho producto pero no hayan pasado por el proceso de configuración de dispositivos Windows 10, siga estos pasos.
   
-1. Siga el proceso de configuración de dispositivos Windows 10 hasta que llegue a la página **¿Cómo quiere realizar la configuración?**. 
+1. Siga el proceso de configuración de dispositivos Windows 10 hasta que llegue a la página **¿Cómo quiere realizar la configuración?** . 
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
@@ -77,53 +77,53 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
   
    ![In the Start menu, click Windows Settings icon](../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
-2. En **Configuración**, vaya a **Cuentas**.
+2. En **Configuración** , vaya a **Cuentas** .
   
    ![In Windows Settings, go to Accounts](../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
-3. En la página **Tu información**, haga clic en **Obtener acceso a trabajo o escuela** \> **Conectar**.
+3. En la página **Tu información** , haga clic en **Obtener acceso a trabajo o escuela** \> **Conectar** .
   
    ![Choose Connect under Access work or school](../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
-4. En el cuadro de diálogo **Configurar una cuenta de trabajo o escuela**, en **Acciones alternativas**, elija **Unir este dispositivo a Azure Active Directory**.
+4. En el cuadro de diálogo **Configurar una cuenta de trabajo o escuela** , en **Acciones alternativas** , elija **Unir este dispositivo a Azure Active Directory** .
   
    ![Click Join this device to Azure Active Directory](../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. En la página **Vamos a iniciar sesión**, escriba su cuenta profesional o educativa \> **Siguiente**.
+5. En la página **Vamos a iniciar sesión** , escriba su cuenta profesional o educativa \> **Siguiente** .
   
-   En la página **Escribir contraseña**, escriba la contraseña \> **Iniciar sesión**.
+   En la página **Escribir contraseña** , escriba la contraseña \> **Iniciar sesión** .
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. En la página Asegúrese de que **es su organización** , compruebe que la información es correcta y haga clic en **unirse**.
+6. En la página Asegúrese de que **es su organización** , compruebe que la información es correcta y elija **unirse** .
   
-   En la página **Listo**, haga clic en **Listo**.
+   En la de **todo está juego.** Página, chosse **completado** .
   
-   ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![En la pantalla Asegúrese de que esta es su organización, elija unirse](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si ha usado una herramienta de terceros para migrar perfiles y archivos, sincronice también los archivos con el nuevo perfil.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
 
-Para comprobar el estado de la sincronización, en la página **tener acceso a la escuela o el trabajo** en **configuración**, haga clic en el área **conectado a** _ \<organization name\> _ para mostrar la **información** de los botones y **desconectar**. Haga clic en **Información** para obtener el estado de sincronización. 
+Para comprobar el estado de la sincronización, en la página **tener acceso a la escuela o trabajo** en **configuración** , selecciona el área **conectado a** _ \<organization name\> _ para mostrar la **información** de los botones y **desconectar** . Elija **información** para obtener el estado de sincronización. 
   
-En la página Estado de sincronización, haga clic en Sincronizar para recibir las directivas de administración de dispositivos móviles más recientes en el equipo.
+En la página **Estado de sincronización** , elija **sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.
   
-Para empezar a usar la cuenta de Microsoft 365 Business Premium, vaya al botón **Inicio** de Windows, haga clic con el botón secundario en la imagen de cuenta actual y, a continuación, **cambie de cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
+Para empezar a usar la cuenta de Microsoft 365 Business Premium, vaya al botón **Inicio** de Windows, haga clic con el botón secundario en la imagen de cuenta actual y, a continuación, **cambie de cuenta** . Inicie sesión con el correo electrónico y la contraseña de la organización.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>Comprobar que un dispositivo está actualizado a Windows 10 Business
+## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Comprobar que el equipo está actualizado a Windows 10 Business
 
-Compruebe que los dispositivos Windows 10 Unidos a Azure AD se han actualizado a Windows 10 Business como parte de su suscripción a Microsoft 365 empresa Premium.
+Compruebe que los dispositivos de Windows 10 Unidos a Azure AD se actualicen a Windows 10 Business como parte de su suscripción a Microsoft 365 empresa Premium.
   
-1. Vaya a **Configuración** \> **Sistema** \> **Acerca de**.
+1. Vaya a **Configuración** \> **Sistema** \> **Acerca de** .
     
-2. Confirme que la **Edición** es **Windows 10 Business**.
+2. Confirme que la **Edición** es **Windows 10 Business** .
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para configurar los dispositivos móviles, consulte [configurar dispositivos móviles para los usuarios de microsoft 365 empresa Premium](set-up-mobile-devices.md), para establecer directivas de protección de dispositivos o de protección de aplicaciones, consulte [Manage Microsoft 365 for Business](manage.md).
   

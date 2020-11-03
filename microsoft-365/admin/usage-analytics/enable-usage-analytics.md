@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo empezar a recopilar datos para su inquilino con la aplicación de plantilla de análisis de uso de Microsoft 365 en Power BI.
-ms.openlocfilehash: 1e59811d6812c6a9d68878f6766181e85efb668b
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 0817e6441540086bf679c6533b1bad2e4087b4b9
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295338"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841462"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -52,54 +52,59 @@ También puede expandir la sección **Productos** para comprar una versión de P
 > [!NOTE]
 > Necesita una licencia de Power BI Pro para instalar, personalizar y distribuir una aplicación de plantilla. Para obtener más información, vea [requisitos previos](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-Necesita una licencia de Power BI Pro para compartir el contenido y las personas con las que lo comparte también lo hacen, o el contenido debe estar en un área de trabajo con una [capacidad Premium](https://docs.microsoft.com/power-bi/service-premium-what-is). 
+Para compartir sus datos, usted y las personas con las que comparte los datos necesitan una licencia de Power BI Pro o el contenido debe estar en un área de trabajo en un [servicio Premium de Power BI](https://docs.microsoft.com/power-bi/service-premium-what-is). 
   
 ### <a name="enable-the-template-app"></a>Habilitar la aplicación de plantilla
 
-Para habilitar la aplicación de plantilla, debe ser **administrador global**, **lector de informes**, administrador de **Exchange**, **Administrador de Skype empresarial**o administrador de **SharePoint**. 
+Para habilitar la aplicación de plantilla, debe ser uno de los siguientes: 
+- **Administrador global**
+- **Lector de informes**
+- **Administrador de Exchange**
+- **Administrador de Skype empresarial**
+- **Administrador de SharePoint** 
   
 Para obtener más información, vea acerca de los [roles de administrador](../add-users/about-admin-roles.md) . 
   
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
     
-2. En la página **uso** , busque la tarjeta de **análisis de uso de Microsoft 365** y **Seleccione introducción**.
+2. En la página **uso** , busque la tarjeta de **análisis de uso de Microsoft 365** y **Seleccione introducción** .
     
-3. En el panel de informes que se abre, establezca hacer que los **datos estén disponibles para el análisis de uso de Microsoft 365 para Power BI** **en el** \> **almacenamiento**. 
+3. En el panel de informes que se abre, establezca hacer que los **datos estén disponibles para el análisis de uso de Microsoft 365 para Power BI** **en el** \> **almacenamiento** . 
   
-Esto inicia el proceso de recopilación de datos y finalizará en 2 a 48 horas, según el tamaño del espacio empresarial. El botón **ir a Power BI** estará habilitado (no estará en gris) cuando se complete la recopilación de datos. 
+El proceso de recopilación de datos se completará en dos a 48 horas, según el tamaño del espacio empresarial. El botón **ir a Power BI** estará habilitado (no estará en gris) cuando se complete la recopilación de datos. 
     
-### <a name="initiate-the-template-app"></a>Iniciar la aplicación de plantilla
+### <a name="start-the-template-app"></a>Iniciar la aplicación de plantilla
 
-Para iniciar la aplicación de plantilla, debe ser **administrador global**, **lector de informes**, administrador de **Exchange**, **Administrador de Skype empresarial**o administrador de **SharePoint**. 
+Para iniciar la aplicación de plantilla, debe ser **administrador global** , **lector de informes** , administrador de **Exchange** , **Administrador de Skype empresarial** o administrador de **SharePoint** . 
   
-1. Copie el identificador de inquilino y seleccione **ir a Power BI**.
+1. Copie el identificador de inquilino y seleccione **ir a Power BI** .
     
-2.  Cuando llegue a Power BI, inicie sesión. Seleccione aplicaciones: >obtener aplicaciones desde el menú de navegación.    
+2.  Cuando llegue a Power BI, inicie sesión. A continuación, **Seleccione aplicaciones** -> **obtener aplicaciones** en el menú de navegación.    
   
-3. En la pestaña **apps** , escriba Microsoft 365 en el cuadro de búsqueda y, a continuación, seleccione **Microsoft 365 Usage Analytics** \> **ahora**.
+3. En la pestaña **apps** , escriba Microsoft 365 en el cuadro de búsqueda y, a continuación, seleccione **Microsoft 365 Usage Analytics** \> **ahora** .
 
     [![Seleccionar obtener ahora](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
-4.  Una vez instalada la aplicación. Haga clic en el icono para abrirlo.
+4.  Una vez instalada la aplicación. Seleccione el icono para abrirlo.
 
-5.  Haga clic en **explorar aplicación** para ver la aplicación con los datos de ejemplo. Haga clic en **conectar** para conectar la aplicación con los datos de la organización.
+5.  Seleccione **explorar aplicación** para ver la aplicación con los datos de ejemplo. Elija **conectar** para conectar la aplicación con los datos de la organización.
 
-6.  Después de hacer clic en **conectar**, en la pantalla **conectar con el análisis de uso de Microsoft 365** , escriba el identificador de inquilino (sin guiones) que copió en el paso (1) y seleccione **siguiente**.
+6.  Elija **conectar** , en la pantalla **conectar con el análisis de uso de Microsoft 365** , escriba el identificador de inquilino (sin guiones) que copió en el paso (1) y seleccione **siguiente** .
     
-7. En la siguiente pantalla, seleccione **OAuth2** como el **método de autenticación** , \> **inicie sesión**. Si elige cualquier otro método de autenticación, se producirá un error en la conexión con la aplicación de plantilla.
+7. En la siguiente pantalla, seleccione **OAuth2** como el **método de autenticación** , \> **inicie sesión** . Si elige cualquier otro método de autenticación, se producirá un error en la conexión con la aplicación de plantilla.
     
     ![Elegir la cuenta Microsoft como método de autenticación](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
 8. Una vez que se crea una instancia de la aplicación de plantilla, el panel de análisis de uso de Microsoft 365 estará disponible en Power BI en la Web. La carga inicial del panel tardará entre 2 y 30 minutos.
   
-Los agregados a nivel de inquilino estarán disponibles en todos los informes. **Los detalles en el nivel de usuario solo estarán disponibles después del 1º o el 15 del mes del calendario después de optar**. Esto afectará a todos los informes de actividad de usuario (consulte [navegación y uso de los informes en Microsoft 365 Usage Analytics](navigate-and-utilize-reports.md) para obtener sugerencias sobre cómo ver y usar estos informes).
+Los agregados a nivel de inquilino estarán disponibles en todos los informes. **Los detalles en el nivel de usuario solo estarán disponibles después del 1º o el 15 del mes del calendario después de optar** . Esto afectará a todos los informes de actividad de usuario. Consulte [explorar y usar los informes en análisis de uso de Microsoft 365](navigate-and-utilize-reports.md) para obtener sugerencias sobre cómo ver y usar estos informes.
     
 ## <a name="make-the-collected-data-anonymous"></a>Establecer que los datos recopilados sean anónimos
 
 Para establecer que los datos que se recopilen para todos los informes sean anónimos, debe ser administrador global. Esto ocultará la información identificable como nombres de usuario, grupo y sitio en los informes y en la aplicación de plantilla.
   
-1. En el centro de administración, vaya a configuración **de la** \> **organización**y, en la ficha **servicios** , elija **informes**.
+1. En el centro de administración, vaya a configuración **de la** \> **organización** y, en la ficha **servicios** , elija **informes** .
     
-2. Seleccione **informes**y, a continuación, elija para **Mostrar identificadores anónimos**. Esta configuración se aplica tanto a los informes de uso como a la aplicación de plantilla.
+2. Seleccione **informes** y, a continuación, elija para **Mostrar identificadores anónimos** . Esta configuración se aplica tanto a los informes de uso como a la aplicación de plantilla.
   
-3. Seleccione **Guardar cambios**.
+3. Seleccione **Guardar cambios** .

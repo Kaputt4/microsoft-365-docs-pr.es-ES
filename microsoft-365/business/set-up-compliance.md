@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayude a mantener segura la información confidencial de sus clientes.
-ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785840"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841181"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
@@ -35,7 +35,7 @@ Su Microsoft 365 empresa Premium incluye características para proteger sus dato
 
 ## <a name="set-up-dlp-features"></a>Configurar las características de DLP
 
-Consulte [crear una directiva DLP a partir de una plantilla](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) para obtener un ejemplo sobre cómo configurar una directiva para protegerla contra información de identificación personal (PII). 
+Consulte [crear una directiva DLP a partir de una plantilla](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) para obtener un ejemplo sobre cómo configurar una directiva para proteger contra la pérdida de datos personales. 
   
 DLP incluye varias plantillas de directiva listas para usarse para muchas configuraciones regionales diferentes. Por ejemplo, datos financieros de Australia, Act de información personal de Canadá, datos financieros de Estados Unidos, etc. Vea [Qué incluyen las plantillas de directiva de DLP](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) para obtener una lista completa. Todas estas plantillas se pueden habilitar de forma similar al ejemplo de plantilla PII. 
   
@@ -47,13 +47,13 @@ DLP incluye varias plantillas de directiva listas para usarse para muchas config
     
 Para poner un buzón de correo en retención por juicio, en el centro de administración:
     
-1. En el panel de navegación izquierdo, **vaya a usuarios** \> **activos**.
+1. En el panel de navegación izquierdo, **vaya a usuarios** \> **activos** .
     
-2. Seleccione un usuario cuyo buzón quiera poner en retención por juicio. En el panel de usuario, expanda **configuración de correo**y, junto a **más configuraciones**, elija **Editar propiedades de Exchange**.
+2. Seleccione un usuario cuyo buzón quiera poner en retención por juicio. En el panel de usuario, expanda **configuración de correo** y, junto a **más configuraciones** , elija **Editar propiedades de Exchange** .
     
-3. En la página buzón del usuario, elija * * características de buzón * * en el panel de navegación izquierdo y, a continuación, elija el vínculo **Habilitar** en **retención por juicio**.
+3. En la página buzón del usuario, elija * * características de buzón * * en el panel de navegación izquierdo y, a continuación, elija el vínculo **Habilitar** en **retención por juicio** .
     
-4. En el cuadro de diálogo **retención por juicio** , puede especificar la duración de retención por juicio en el campo **duración** de retención por juicio. Deje el campo vacío si desea realizar una suspensión infinita. También puede agregar notas y dirigir al propietario del buzón a un sitio web que tenga que explicar más sobre la retención por juicio. \>**Guardar**.
+4. En el cuadro de diálogo **retención por juicio** , puede especificar la duración de retención por juicio en el campo **duración** de retención por juicio. Deje el campo vacío si desea realizar una suspensión infinita. También puede agregar notas y dirigir al propietario del buzón a un sitio web que tenga que explicar más sobre la retención por juicio. \>**Guardar** .
     
 **Retención:** Puede habilitar las directivas de retención personalizadas, por ejemplo, para conservarlas durante un período de tiempo determinado o eliminar el contenido de forma permanente al final del período de retención. Para obtener más información, vea [información general sobre las directivas de retención](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
 

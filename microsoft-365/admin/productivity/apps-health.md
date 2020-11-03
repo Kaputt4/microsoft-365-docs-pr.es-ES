@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Los detalles de la tecnología de estado de Microsoft 365 apps experimentan una puntuación de productividad.
-ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804774"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841194"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Experiencias de tecnología de Microsoft 365, estado de las aplicaciones
 
-La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas auxiliares. La puntuación refleja el rendimiento de su organización&#39;s de personas y categorías de experiencia de tecnología y compara su puntuación con organizaciones como la suya. La categoría trabajo en equipo forma parte de las medidas que caen en la experiencia de personas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md) para obtener más información.
+La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas auxiliares. La puntuación refleja el rendimiento de su organización&#39;s de personas y categorías de experiencia de tecnología y compara su puntuación con organizaciones como la suya. La categoría de estado de las aplicaciones forma parte de las medidas que se encuentran en la experiencia de personas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md) para obtener más información.
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Por qué su organización&#39;s puntuación de estado de aplicaciones de Microsoft 365 es importante
 
