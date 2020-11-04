@@ -1,5 +1,5 @@
 ---
-title: Consideraciones clave sobre el cumplimiento y la seguridad para los mercados de capital y los bancos de Estados Unidos
+title: Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -8,18 +8,18 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-ms.custom: ''
+ms.custom: seo-marvel-jun2020
 localization_priority: Priority
-description: Obtenga más información sobre cómo Microsoft 365 ayuda a los servicios financieros a migrar a una plataforma de colaboración moderna, al tiempo que protege los datos y sistemas y les permite cumplir con las normativas
+description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: ba8feb12dbd9e7b82a2c85b0a1d8d26110e10140
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844193"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906912"
 ---
-# <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave sobre el cumplimiento y la seguridad para los mercados de capital y los bancos de Estados Unidos
+# <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
 ## <a name="introduction"></a>Introducción
 Las instituciones de servicios financieros superan a casi todas las empresas comerciales en su demanda de estrictos controles de seguridad, cumplimiento y gobierno. La protección de los datos, las identidades, los dispositivos y las aplicaciones no solo es crítica para su negocio, sino que está sujeta a las directrices y requisitos de cumplimiento de organismos normativos como la Comisión de Bolsa y Valores de Estados Unidos (SEC), la Autoridad Reguladora de la Industria Financiera (FINRA), el Consejo Federal de Certificación de Instituciones Financieras (FFIEC) y la Comisión de Comercio de Futuros de Mercancías (CFTC). Además, las instituciones financieras están sujetas a leyes como la Dodd-Frank y la Sarbanes-Oxley de 2002.

@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: En este artículo, aprenderá sobre las opciones disponibles para crear un entorno seguro para compartir invitados en Microsoft 365.
-ms.openlocfilehash: 3ca7dba7c22f1eaa24f1285e42aa3f4caaf70b65
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
+ms.openlocfilehash: e9dcb55deb5fc7ecd4230fdbcc8da9f881e90481
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787575"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906768"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -51,15 +51,15 @@ En este ejemplo, configuraremos la autenticación multifactor para invitados med
 Configurar autenticación multifactor para invitados
 
 1. Vaya a [directivas de acceso condicional de Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. En la hoja **Acceso condicional | Directivas** , seleccione **Nueva directiva** .
+2. En la hoja **Acceso condicional | Directivas** , seleccione **Nueva directiva**.
 3. En el campo **Nombre** , escriba un nombre.
-4. En **Asignaciones** , haga clic en **Usuarios y grupos** .
-5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos** .
-6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube** .
-7. En la hoja **Aplicaciones o acciones en la nube** , seleccione **Todas las aplicaciones en la nube** en la pestaña **Incluir** .
-8. En **Controles de acceso** , haga clic en **Conceder** .
-9. En la hoja **Conceder** , marque la casilla **Requerir autenticación multifactor** y haga clic en **Seleccionar** .
-10. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear** .
+4. En **Asignaciones** , haga clic en **Usuarios y grupos**.
+5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos**.
+6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube**.
+7. En la hoja **Aplicaciones o acciones en la nube** , seleccione **Todas las aplicaciones en la nube** en la pestaña **Incluir**.
+8. En **Controles de acceso** , haga clic en **Conceder**.
+9. En la hoja **Conceder** , marque la casilla **Requerir autenticación multifactor** y haga clic en **Seleccionar**.
+10. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear**.
 
 Ahora, el invitado deberá inscribirse en la autenticación multifactor para acceder al contenido compartido, a los sitios o a los equipos.
 
@@ -77,32 +77,32 @@ Para crearlos, primero elabore el documento en Word u otro programa de creación
 
 1. Inicie sesión en Azure como administrador global, administrador de seguridad o administrador de acceso condicional.
 2. Vaya a [Términos de uso](https://aka.ms/catou).
-3. Haga clic en **Nuevos términos** .
+3. Haga clic en **Nuevos términos**.
 
    ![Captura de pantalla de la configuración de nuevos términos de uso de Azure AD](../media/azure-ad-guest-terms-of-use.png)
 
-4. Escriba un **Nombre** y **Nombre para mostrar** .
+4. Escriba un **Nombre** y **Nombre para mostrar**.
 6. En **Documento de términos de uso** explore hasta encontrar el archivo PDF que creó y selecciónelo.
 7. Seleccione el idioma para su documento de términos de uso.
-8. En **Requerir a los usuarios que expandan los términos de uso** , seleccione **Activado** .
-9. En **Acceso condicional** , de la lista **Exigir con plantillas de directiva de acceso condicional** elija **Crear directiva de acceso condicional más adelante** .
-10. Haga clic en **Crear** .
+8. En **Requerir a los usuarios que expandan los términos de uso** , seleccione **Activado**.
+9. En **Acceso condicional** , de la lista **Exigir con plantillas de directiva de acceso condicional** elija **Crear directiva de acceso condicional más adelante**.
+10. Haga clic en **Crear**.
 
 Una vez haya creado los términos de uso, el siguiente paso es crear una directiva de acceso condicional que muestre los términos a los invitados.
 
 Para crear una nueva directiva de acceso condicional, haga lo siguiente:
 
 1. Vaya a [directivas de acceso condicional de Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. En la hoja **Acceso condicional | Directivas** , seleccione **Nueva directiva** .
+2. En la hoja **Acceso condicional | Directivas** , seleccione **Nueva directiva**.
 3. En el cuadro **Nombre** , escriba un nombre.
-4. En **Asignaciones** , haga clic en **Usuarios y grupos** .
-5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos** .
-6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube** .
-7. En la pestaña **Incluir** , elija **Seleccionar aplicaciones** y, a continuación, haga clic en **Seleccionar** .
-8. En la hoja **Seleccionar** , elija **Microsoft Teams** , **Office 365 SharePoint Online** y **Grupos de Outlook** y, a continuación, haga clic en **Seleccionar** .
-9. En **Controles de acceso** , haga clic en **Conceder** .
-10. En la hoja **Conceder** , seleccione **Términos de uso de invitado** y, a continuación, haga clic en **Seleccionar** .
-11. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear** .
+4. En **Asignaciones** , haga clic en **Usuarios y grupos**.
+5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos**.
+6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube**.
+7. En la pestaña **Incluir** , elija **Seleccionar aplicaciones** y, a continuación, haga clic en **Seleccionar**.
+8. En la hoja **Seleccionar** , elija **Microsoft Teams** , **Office 365 SharePoint Online** y **Grupos de Outlook** y, a continuación, haga clic en **Seleccionar**.
+9. En **Controles de acceso** , haga clic en **Conceder**.
+10. En la hoja **Conceder** , seleccione **Términos de uso de invitado** y, a continuación, haga clic en **Seleccionar**.
+11. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear**.
 
 A partir de ahora, cuando un usuario invitado acceda por primera vez al contenido, a un grupo o a un sitio de su organización, se le pedirá que acepte los términos de uso.
 
@@ -122,28 +122,28 @@ Las revisiones de acceso se pueden organizar en distintos programas. Un programa
 Para crear un programa:
 
 1. Inicie sesión en Azure Portal y abra la página [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. En el menú de la izquierda, haga clic en **Programas** .
-3. Haga clic en **Nuevo programa** .
-4. Escriba un **Nombre** y una **Descripción** .
-5. Haga clic en **Crear** .
+2. En el menú de la izquierda, haga clic en **Programas**.
+3. Haga clic en **Nuevo programa**.
+4. Escriba un **Nombre** y una **Descripción**.
+5. Haga clic en **Crear**.
 
 Una vez que haya creado el programa, puede crear una revisión de acceso de invitados y asociarla a él.
 
 Crear una revisión de acceso de invitados
 
-1. En la página [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), en el menú de la izquierda, haga clic en **Revisiones de acceso** .
-2. Haga clic en **Nueva revisión de acceso** .
+1. En la página [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), en el menú de la izquierda, haga clic en **Revisiones de acceso**.
+2. Haga clic en **Nueva revisión de acceso**.
 
    ![Captura de pantalla de la configuración de revisión de acceso en Azure AD](../media/azure-ad-create-access-review.png)
 
 3. En el cuadro **Nombre** , escriba un nombre.
-4. En **Frecuencia** , elija **Trimestral** .
-5. En **Finalización** , elija **Nunca** .
-6. En **Ámbito** , elija **Solo usuarios invitados** .
-7. Haga clic en **Agrupar** , seleccione los grupos que desea incluir en la revisión de acceso y, a continuación, haga clic en **Seleccionar** .
-8. En **Programas** , haga clic en **Vincular al programa** .
+4. En **Frecuencia** , elija **Trimestral**.
+5. En **Finalización** , elija **Nunca**.
+6. En **Ámbito** , elija **Solo usuarios invitados**.
+7. Haga clic en **Agrupar** , seleccione los grupos que desea incluir en la revisión de acceso y, a continuación, haga clic en **Seleccionar**.
+8. En **Programas** , haga clic en **Vincular al programa**.
 9. En la hoja **Seleccionar un programa** , elija **Programa de revisión de acceso para invitados**
-10. Haga clic en **Iniciar** .
+10. Haga clic en **Iniciar**.
 
 Se creará una revisión de acceso independiente para cada grupo que especifique. Los propietarios de cada grupo recibirán un correo cada trimestre para aprobar o denegar el acceso de los invitados a sus grupos.
 
@@ -164,30 +164,30 @@ Para Grupos de Microsoft 365 y Teams, esto se realiza mediante una directiva de 
 Cómo restringir el acceso de los invitados a solo web para grupos y equipos
 
 1. Vaya a [directivas de acceso condicional de Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. En la hoja **Acceso condicional - Directivas** , seleccione **Nueva directiva** .
+2. En la hoja **Acceso condicional - Directivas** , seleccione **Nueva directiva**.
 3. En el cuadro **Nombre** , escriba un nombre.
-4. En **Asignaciones** , haga clic en **Usuarios y grupos** .
-5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos** .
-6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube** .
-7. En la pestaña **Incluir** , elija **Seleccionar aplicaciones** y, a continuación, haga clic en **Seleccionar** .
-8. En la hoja **Seleccionar** , elija **Microsoft Teams** y **Outlook Groups** y, a continuación, haga clic en **Seleccionar** .
-9. En **Tareas** , haga clic en **Condiciones** .
-10. En la hoja **Condiciones** , haga clic en **Aplicaciones cliente** .
-11. En la hoja **Aplicaciones cliente** , haga clic en **Sí** para **Configurar** , y seleccione la configuración de **Clientes de aplicaciones móviles y de escritorio** , **Clientes de Exchange ActiveSync** y de **Otros clientes** . Desactive la casilla **Explorador** .
+4. En **Asignaciones** , haga clic en **Usuarios y grupos**.
+5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos**.
+6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube**.
+7. En la pestaña **Incluir** , elija **Seleccionar aplicaciones** y, a continuación, haga clic en **Seleccionar**.
+8. En la hoja **Seleccionar** , elija **Microsoft Teams** y **Outlook Groups** y, a continuación, haga clic en **Seleccionar**.
+9. En **Tareas** , haga clic en **Condiciones**.
+10. En la hoja **Condiciones** , haga clic en **Aplicaciones cliente**.
+11. En la hoja **Aplicaciones cliente** , haga clic en **Sí** para **Configurar** , y seleccione la configuración de **Clientes de aplicaciones móviles y de escritorio** , **Clientes de Exchange ActiveSync** y de **Otros clientes**. Desactive la casilla **Explorador**.
 
     ![Captura de pantalla de la configuración de acceso condicional para aplicaciones cliente en Azure AD](../media/azure-ad-conditional-access-client-mobile.png)
 
-12. Haga clic en **Listo** .
-13. En **Controles de acceso** , haga clic en **Conceder** .
-14. En la hoja **Conceder** , seleccione **Requerir que el dispositivo esté marcado como compatible** y **Requerir un dispositivo unido de Hybrid Azure AD** .
-15. En **Para varios controles** , seleccione **Requerir uno de los controles seleccionados** y, a continuación haga clic en **Seleccionar** .
-16. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear** .
+12. Haga clic en **Listo**.
+13. En **Controles de acceso** , haga clic en **Conceder**.
+14. En la hoja **Conceder** , seleccione **Requerir que el dispositivo esté marcado como compatible** y **Requerir un dispositivo unido de Hybrid Azure AD**.
+15. En **Para varios controles** , seleccione **Requerir uno de los controles seleccionados** y, a continuación haga clic en **Seleccionar**.
+16. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear**.
 
 Cómo restringir el acceso de los invitados a solo web para SharePoint
 
-1. En el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint), expanda **Directivas** y haga clic en **Control de acceso** .
-2. Haga clic en **Dispositivos no administrados** .
-3. Seleccione la opción **Permitir el acceso limitado a solo web** y, a continuación, haga clic en **Guardar** .
+1. En el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint), expanda **Directivas** y haga clic en **Control de acceso**.
+2. Haga clic en **Dispositivos no administrados**.
+3. Seleccione la opción **Permitir el acceso limitado a solo web** y, a continuación, haga clic en **Guardar**.
 
 Tenga en cuenta que esta configuración del Centro de administración de SharePoint crea una directiva de apoyo de acceso condicional en Azure AD.
 
@@ -198,17 +198,17 @@ Requerir que los invitados se autentiquen periódicamente puede reducir la posib
 Cómo configurar una directiva de tiempo de espera de sesión para invitado
 
 1. Vaya a [directivas de acceso condicional de Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. En la hoja **Acceso condicional - Directivas** , seleccione **Nueva directiva** .
-3. En el cuadro **Nombre** , escriba *Tiempo de espera de sesión para invitado* .
-4. En **Asignaciones** , haga clic en **Usuarios y grupos** .
-5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos** .
-6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube** .
-7. En la pestaña **Incluir** , elija **Seleccionar aplicaciones** y, a continuación, haga clic en **Seleccionar** .
-8. En la hoja **Seleccionar** , elija **Microsoft Teams** , **Office 365 SharePoint Online** y **Grupos de Outlook** y, a continuación, haga clic en **Seleccionar** .
-9. En **Controles de acceso** , haga clic en **Sesión** .
-10. En la hoja **Sesión** , seleccione **Frecuencia de inicio de sesión** .
-11. Seleccione **1** y **días** para el período de tiempo y, a continuación, haga clic en **Seleccionar** .
-12. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear** .
+2. En la hoja **Acceso condicional - Directivas** , seleccione **Nueva directiva**.
+3. En el cuadro **Nombre** , escriba *Tiempo de espera de sesión para invitado*.
+4. En **Asignaciones** , haga clic en **Usuarios y grupos**.
+5. En la hoja **Usuarios y grupos** , seleccione **Seleccionar usuarios y grupos** , marque la casilla **Todos los invitados y usuarios externos**.
+6. En **Tareas** , haga clic en **Aplicaciones o acciones en la nube**.
+7. En la pestaña **Incluir** , elija **Seleccionar aplicaciones** y, a continuación, haga clic en **Seleccionar**.
+8. En la hoja **Seleccionar** , elija **Microsoft Teams** , **Office 365 SharePoint Online** y **Grupos de Outlook** y, a continuación, haga clic en **Seleccionar**.
+9. En **Controles de acceso** , haga clic en **Sesión**.
+10. En la hoja **Sesión** , seleccione **Frecuencia de inicio de sesión**.
+11. Seleccione **1** y **días** para el período de tiempo y, a continuación, haga clic en **Seleccionar**.
+12. En la hoja **Nuevo** , en **Habilitar directiva** , haga clic en **Activar** y, luego, haga clic **Crear**.
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Crear un tipo de información confidencial para un proyecto altamente confidencial.
 
@@ -218,13 +218,13 @@ Puede crear tipos de información confidencial personalizados para ayudar a admi
 
 Cómo crear un tipo de información confidencial
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), en el panel de navegación izquierdo, expanda **Clasificación** y, a continuación, haga clic en **Tipos de información confidencialidad** .
-2. Haga clic en **Crear** .
-3. En **Nombre** y **Descripción** , escriba **Proyecto Saturno** y haga clic en **Siguiente** .
-4. Haga clic en **Agregar un elemento** .
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), en el panel de navegación izquierdo, expanda **Clasificación** y, a continuación, haga clic en **Tipos de información confidencialidad**.
+2. Haga clic en **Crear**.
+3. En **Nombre** y **Descripción** , escriba **Proyecto Saturno** y haga clic en **Siguiente**.
+4. Haga clic en **Agregar un elemento**.
 5. En la lista **Detectar contenido que contenga** , seleccione **Palabras clave** y, a continuación, escriba *Proyecto Saturno* en el cuadro de palabras clave.
-6. Haga clic en **Siguiente** y después en **Finalizar** .
-7. Si se le solicita si quiere probar el tipo de información confidencial, haga clic en **No** .
+6. Haga clic en **Siguiente** y después en **Finalizar**.
+7. Si se le solicita si quiere probar el tipo de información confidencial, haga clic en **No**.
 
 ### <a name="more-information"></a>Más información
 
@@ -237,22 +237,22 @@ Si utiliza etiquetas de confidencialidad en la organización, puede aplicar auto
 Crear una directiva de etiquetado automático
 
 1. Abra el [Centro de administración de Cumplimiento de Microsoft 365](https://compliance.microsoft.com).
-2. En el panel de navegación izquierdo, haga clic en **Protección de la información** .
-3. En la pestaña **Etiquetado automático** , haga clic en **Crear una directiva de etiquetado automático** .
-4. En la página **Elegir la información a la que desea aplicar esta etiqueta** , elija **Personalizado** y haga clic en **Siguiente** .
-5. Escriba un nombre y una descripción para la directiva y haga clic en **Siguiente** .
-6. En la página **Elegir las ubicaciones a las que desea aplicar la etiqueta** , active **Sitios de SharePoint** y haga clic en **Elegir sitios** .
-7. Agregue las direcciones URL de los sitios en los que quiera activar el etiquetado automático y haga clic en **Listo** .
-8. Haga clic en **Siguiente** .
-9. En la página **Configurar reglas comunes o avanzadas** , elija **Reglas comunes** y haga clic en **Siguiente** .
-10. En la página **Definir reglas para el contenido en todas las ubicaciones** , haga clic en **Nueva regla** .
-11. En la página **Nueva regla** , asigne un nombre a la regla, haga clic en **Agregar condición** y, a continuación, haga clic en **El contenido contiene tipos de información confidencial** .
-12. Haga clic en **Agregar** y en **Tipos de información confidencial** , seleccione los tipos de información confidencial que desee usar, haga clic en **Agregar** y, a continuación, en **Guardar** .
-13. Haga clic en **Siguiente** .
-14. Haga clic en **Elegir una etiqueta** , seleccione la etiqueta que desee utilizar y, a continuación, haga clic en **Agregar** .
-15. Haga clic en **Siguiente** .
-16. Deje la directiva en modo de simulación y haga clic en **Siguiente** .
-17. Haga clic en **Crear directiva** y, a continuación, en **Listo** .
+2. En el panel de navegación izquierdo, haga clic en **Protección de la información**.
+3. En la pestaña **Etiquetado automático** , haga clic en **Crear una directiva de etiquetado automático**.
+4. En la página **Elegir la información a la que desea aplicar esta etiqueta** , elija **Personalizado** y haga clic en **Siguiente**.
+5. Escriba un nombre y una descripción para la directiva y haga clic en **Siguiente**.
+6. En la página **Elegir las ubicaciones a las que desea aplicar la etiqueta** , active **Sitios de SharePoint** y haga clic en **Elegir sitios**.
+7. Agregue las direcciones URL de los sitios en los que quiera activar el etiquetado automático y haga clic en **Listo**.
+8. Haga clic en **Siguiente**.
+9. En la página **Configurar reglas comunes o avanzadas** , elija **Reglas comunes** y haga clic en **Siguiente**.
+10. En la página **Definir reglas para el contenido en todas las ubicaciones** , haga clic en **Nueva regla**.
+11. En la página **Nueva regla** , asigne un nombre a la regla, haga clic en **Agregar condición** y, a continuación, haga clic en **El contenido contiene tipos de información confidencial**.
+12. Haga clic en **Agregar** y en **Tipos de información confidencial** , seleccione los tipos de información confidencial que desee usar, haga clic en **Agregar** y, a continuación, en **Guardar**.
+13. Haga clic en **Siguiente**.
+14. Haga clic en **Elegir una etiqueta** , seleccione la etiqueta que desee utilizar y, a continuación, haga clic en **Agregar**.
+15. Haga clic en **Siguiente**.
+16. Deje la directiva en modo de simulación y haga clic en **Siguiente**.
+17. Haga clic en **Crear directiva** y, a continuación, en **Listo**.
 
 Con la directiva en vigor, cuando un usuario escriba "Proyecto Saturno" en un documento, la directiva de etiquetado automático aplicará automáticamente la etiqueta especificada al analizar el archivo.
 
@@ -267,25 +267,25 @@ Puede usar la [prevención de pérdida de datos (DLP)](https://docs.microsoft.co
 Crear una regla DLP
 
 1. En el centro de administración del centro de cumplimiento de Microsoft 365, vaya a [Prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
-2. Haga clic en **Crear directiva** .
-3. Elija **Personalizado** y haga clic en **Siguiente** .
-4. Escriba el nombre de la directiva y haga clic en **Siguiente** .
-5. En la página **Ubicaciones en las que aplicar la directiva** desactive todas las páginas de configuración excepto **Sitios de SharePoint** y **Cuentas de OneDrive** y, a continuación, haga clic en **Siguiente** .
-6. En la página **Definir configuración de directiva** , haga clic en **Siguiente** .
+2. Haga clic en **Crear directiva**.
+3. Elija **Personalizado** y haga clic en **Siguiente**.
+4. Escriba el nombre de la directiva y haga clic en **Siguiente**.
+5. En la página **Ubicaciones en las que aplicar la directiva** desactive todas las páginas de configuración excepto **Sitios de SharePoint** y **Cuentas de OneDrive** y, a continuación, haga clic en **Siguiente**.
+6. En la página **Definir configuración de directiva** , haga clic en **Siguiente**.
 7. En la página **Personalizar las reglas DLP avanzadas** , haga clic en **Crear regla** y escriba un nombre para la regla.
-8. En **Condiciones** , haga clic en **Agregar condición** y elija **El contenido incluye** .
-9. Haga clic en **Agregar** , seleccione **Etiquetas de confidencialidad** , elija las etiquetas que desee usar y haga clic en **Agregar** .
+8. En **Condiciones** , haga clic en **Agregar condición** y elija **El contenido incluye**.
+9. Haga clic en **Agregar** , seleccione **Etiquetas de confidencialidad** , elija las etiquetas que desee usar y haga clic en **Agregar**.
 
    ![Recorte de pantalla de las opciones de condiciones, tipos de información confidencial, etiquetas de confidencialidad y etiquetas de retención.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. En **Acciones** haga clic en **Agregar una acción** y elija **Restringir el acceso o cifrar el contenido en la ubicaciones de Microsoft 365** .
-11. Active la casilla **Restringir el acceso o cifrar el contenido en las ubicaciones de Microsoft 365** y, después, elija la opción **Solo los usuarios de fuera de la organización** .
+10. En **Acciones** haga clic en **Agregar una acción** y elija **Restringir el acceso o cifrar el contenido en la ubicaciones de Microsoft 365**.
+11. Active la casilla **Restringir el acceso o cifrar el contenido en las ubicaciones de Microsoft 365** y, después, elija la opción **Solo los usuarios de fuera de la organización**.
 
       ![Recorte de pantalla de las opciones de acción de reglas DLP](../media/dlp-remove-guest-access-sensitive-files.png)
 
-12. Haga clic en **Guardar** y, a continuación, en **Siguiente** .
-13. Elija las opciones de prueba y haga clic en **Siguiente** .
-14. Haga clic en **Enviar** y después en **Listo** .
+12. Haga clic en **Guardar** y, a continuación, en **Siguiente**.
+13. Elija las opciones de prueba y haga clic en **Siguiente**.
+14. Haga clic en **Enviar** y después en **Listo**.
 
 Es importante tener en cuenta que esta directiva no retira el acceso si el invitado es miembro del sitio o del equipo en general. Si prevé disponer de documentos altamente confidenciales en un sitio o equipo con miembros invitados, considere usar [Canales privados en Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) y solo permitir que los miembros de su organización los usen.
 
