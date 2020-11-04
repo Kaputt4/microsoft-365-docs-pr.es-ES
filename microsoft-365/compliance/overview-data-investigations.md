@@ -18,14 +18,19 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, obtendrá información sobre la herramienta de investigación de datos (versión preliminar) en Microsoft 365. La herramienta de investigaciones de datos le ayuda a evaluar y corregir la derramación de datos.
-ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f3e08ca602d9d131cd25d234c96c660f0b9639aa
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285996"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906935"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
+
+> [!IMPORTANT]
+> Tras mucha deliberación y debates con nuestros clientes, hemos decidido no lanzar la herramienta de investigaciones de datos a la disponibilidad general. Como resultado, se quitará esta herramienta y los datos asociados con los casos de investigaciones de datos existentes el 31 de diciembre de 2020.  Para administrar las investigaciones de datos en su organización, se recomienda usar casos de eDiscovery principales. Si necesita buscar y depurar contenido de Microsoft 365, consulte los siguientes artículos: 
+> - [serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración](data-spillage-scenariosearch-and-purge.md)
+> - [Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messages-in-your-organization.md)
 
 La reescritura de datos se produce cuando un documento que contiene contenido confidencial, confidencial o malintencionado se suelta en un entorno que no es de confianza. Cuando se detecta una reescritura de datos, es importante que contenga rápidamente el entorno, evalúe el tamaño y las ubicaciones del derrame, examine las actividades de los usuarios que lo rodean y, a continuación, elimine los datos derramados del servicio. Mediante la herramienta nueva investigación de datos (versión preliminar), puede buscar datos confidenciales, malintencionados o mal colocados en Office 365, investigar qué ha sucedido y realizar las acciones adecuadas para corregir el derrame.  
 

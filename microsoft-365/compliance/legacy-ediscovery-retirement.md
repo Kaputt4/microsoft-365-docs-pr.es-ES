@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y eDiscovery avanzado v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 98e04ada0afa03404ba36da2004a9352a01f598a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: In-Place eDiscovery y la retención de In-Place (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y la exhibición avanzada de documentos electrónicos v 1.0 también se están retirando en el mismo período de tiempo.
+ms.openlocfilehash: e8edda9436d62e07d0f64126a012791080766aba
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546286"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877471"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -31,7 +31,7 @@ Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro
 
 - [Exhibición](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) de documentos electrónicos local y [conservaciones locales](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) en el centro de administración de Exchange.
 
-- Los cmdlets de PowerShell de Exchange online que admiten la exhibición de documentos electrónicos local y las suspensiones locales (estos cmdlets se identifican colectivamente como cmdlets **-MailboxSearch* ). Esto incluye los siguientes cmdlets:
+- Los cmdlets de PowerShell de Exchange online que admiten In-Place las suspensiones de exhibición de documentos electrónicos y In-Place (estos cmdlets se identifican colectivamente como cmdlets * *-MailboxSearch* ). Esto incluye los siguientes cmdlets:
 
   - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
@@ -42,7 +42,7 @@ Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro
   - [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > Los cmdlets [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) y [Remove-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) estarán disponibles después de que se retiran los otros cmdlets * * * *-MailboxSearch * * * para que pueda usarlos como ayuda en la transición a otras herramientas de exhibición de documentos electrónicos y retención. Sin embargo, después de una fecha determinada (citada a continuación), el soporte técnico de Microsoft ya no será compatible con estos dos cmdlets.
+   > Los cmdlets [Get-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) y [Remove-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) estarán disponibles después de que se retiran los otros cmdlets * * * *-MailboxSearch * * _ para que pueda usarlos como ayuda en la transición a otras herramientas de exhibición de documentos electrónicos y retención. Sin embargo, después de una fecha determinada (citada a continuación), el soporte técnico de Microsoft ya no será compatible con estos dos cmdlets.
 
 - El cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) en Exchange Online PowerShell.
 
@@ -63,11 +63,11 @@ Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro
 
 En las siguientes secciones de este artículo se proporcionan instrucciones sobre cómo retirar cada característica. Esta información, incluidas las escalas de tiempo y las herramientas alternativas que puede usar en lugar de la herramienta retirada.
 
-## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>Exhibición de documentos electrónicos local y conservaciones locales en el centro de administración de Exchange 
+## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place la exhibición de documentos electrónicos y las suspensiones de In-Place en el centro de administración de Exchange 
 
-De acuerdo con el anuncio original del 1 de julio de 2017, se está retirando la funcionalidad de conservación de exhibición de documentos electrónicos local & en el centro de administración de Exchange (EAC). La página suspensiones de exhibición de documentos electrónicos & local en el EAC le permite buscar, conservar y exportar contenido de Exchange Online. La exhibición de documentos electrónicos local también le permite copiar los resultados de la búsqueda en un buzón de correo de detección para que usted u otros administradores de eDiscovery puedan revisar el contenido y hacer que esté disponible para las solicitudes legales, reglamentarias y públicas.
+De acuerdo con el anuncio original del 1 de julio de 2017, se está retirando la funcionalidad de conservación de exhibición de documentos electrónicos In-Place & eDiscovery en el centro de administración de Exchange (EAC). La página suspensiones de In-Place eDiscovery & en el EAC le permite buscar, retener y exportar contenido de Exchange Online. In-Place eDiscovery también le permite copiar los resultados de la búsqueda en un buzón de correo de detección para que usted u otros administradores de eDiscovery puedan revisar el contenido y hacer que esté disponible para las solicitudes legales, reglamentarias y públicas.
 
-Debido a que todas estas capacidades (excepto la de copiar los resultados de la búsqueda en un buzón de correo de detección) ahora están disponibles en la búsqueda de contenido, las herramientas eDiscovery y eDiscovery avanzado del [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funcionalidad, confiabilidad y soporte mejorados para una amplia gama de servicios de Microsoft 365), se recomienda empezar a usar estas herramientas tan pronto como sea posible. Para ayudarle en la transición a estas otras herramientas de eDiscovery, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de la exhibición de documentos electrónicos local y la conservación local.
+Debido a que todas estas capacidades (excepto la de copiar los resultados de la búsqueda en un buzón de correo de detección) ahora están disponibles en la búsqueda de contenido, las herramientas eDiscovery y eDiscovery avanzado del [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funcionalidad, confiabilidad y soporte mejorados para una amplia gama de servicios de Microsoft 365), se recomienda empezar a usar estas herramientas tan pronto como sea posible. Para ayudarle en la transición a estas otras herramientas de eDiscovery, en la tabla siguiente se enumeran las herramientas que puede usar en lugar de In-Place eDiscovery y la suspensión de In-Place.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
@@ -81,9 +81,9 @@ Debido a que todas estas capacidades (excepto la de copiar los resultados de la 
 
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la jubilación
 
-- 1 de julio de 2020: no podrá crear nuevas búsquedas y suspensiones, pero puede seguir ejecutando, editando y eliminando las búsquedas existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no guardará la exhibición de documentos electrónicos & retenciones en el EAC.
+- 1 de julio de 2020: no podrá crear nuevas búsquedas y suspensiones, pero puede seguir ejecutando, editando y eliminando las búsquedas existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no In-Place las retenciones de eDiscovery & en el EAC.
 
-- 1 de octubre de 2020: el & de la exhibición de documentos electrónicos local incluye funciones en el EAC se colocarán en modo de solo lectura. Esto significa que solo podrá quitar búsquedas y suspensiones existentes.
+- 1 de octubre de 2020: la funcionalidad In-Place eDiscovery & mantiene en el EAC se colocará en modo de solo lectura. Esto significa que solo podrá quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
@@ -92,16 +92,16 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <table>
 <thead>
 <tr class="header">
-<th><strong>Funcionalidad</strong></th>
-<th><strong>Herramienta alternativa</strong></th>
-<th><strong>Comments</strong></th>
+<th>Funcionalidad</th>
+<th>Herramienta alternativa</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Búsqueda, exportación y retención por motivos legales</td>
 <td>Casos principales de eDiscovery en el centro de cumplimiento de Microsoft 365 </td>
-<td><p>Usar las capacidades de los casos de eDiscovery principales proporcionan la paridad funcional a la exhibición de documentos electrónicos local y las suspensiones locales. Esto incluye lo siguiente:</p>
+<td><p>El uso de las capacidades de los casos de eDiscovery principales proporciona la paridad funcional para In-Place eDiscovery y las suspensiones de In-Place. Esto incluye lo siguiente:</p>
 <ul>
 <li>
 <p>La búsqueda se ajusta a millones de ubicaciones</p>
@@ -152,9 +152,9 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tbody>
 </table>
 
-### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>Preguntas más frecuentes sobre la exhibición de documentos electrónicos local y las suspensiones locales
+### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>Preguntas más frecuentes acerca de In-Place eDiscovery y las suspensiones de In-Place
 
-**Utilizo la funcionalidad copiar resultados de búsqueda de exhibición de documentos electrónicos local & suspensiones en el EAC para copiar los resultados de la búsqueda en un buzón de correo de detección para su revisión por parte de los abogados. ¿Qué opciones tengo ahora?**
+_ *Uso la funcionalidad copiar resultados de búsqueda de In-Place suspensiones de & de eDiscovery en el EAC para copiar los resultados de la búsqueda en un buzón de correo de detección para su revisión por parte de los abogados. ¿Qué opciones tengo ahora?**
 
 Actualmente, hay dos formas de replicar esta funcionalidad. La primera es usar los [conjuntos de revisiones en EDiscovery avanzado v 2.0](https://docs.microsoft.com/microsoft-365/compliance/view-documents-in-review-set). Los conjuntos de revisión tienen muchas de las mismas funciones que se ven en una herramienta de revisión tradicional, como Fast Search of Documents, tagging, subprocesamiento de correo electrónico, casi agrupación de duplicados, análisis de temas y Codificación predictiva. Si aún desea usar buzones de correo de detección para revisión, la segunda opción es exportar los resultados de la búsqueda a archivos PST y, a continuación, importar los archivos PST a un buzón de correo de detección mediante la [característica de importación de PST](use-network-upload-to-import-pst-files.md) del centro de cumplimiento de Microsoft.
 
@@ -164,11 +164,11 @@ El centro de cumplimiento de Microsoft 365 también usa [límites de cumplimient
 
 **¿Cómo puedo transferir mis suspensiones y búsquedas actuales al centro de cumplimiento de Microsoft 365?**
 
-Es posible migrar las búsquedas y las suspensiones de exhibición de documentos electrónicos local desde el EAC con PowerShell. Para obtener instrucciones, consulte [migrar búsquedas y suspensiones del EAC al centro de cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2114224).
+Es posible migrar In-Place las búsquedas y las suspensiones de eDiscovery desde el EAC con PowerShell. Para obtener instrucciones, consulte [migrar búsquedas y suspensiones del EAC al centro de cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2114224).
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*Cmdlets-MailboxSearch
 
-Según el aviso original anunciado el 1 de julio de 2017 en el centro de administración de Exchange, la funcionalidad de conservación de & exhibición de documentos electrónicos local y los cmdlets ** \* -MailboxSearch** correspondientes se están retirando. Estos cmdlets proporcionan a los usuarios la capacidad de buscar, conservar y exportar contenido de buzones de correo para solicitudes legales, reglamentarias y públicas.
+Según el aviso original anunciado el 1 de julio de 2017 en el centro de administración de Exchange, se está retirando In-Place la funcionalidad de conservación de exhibición de documentos electrónicos & y los cmdlets **\* -MailboxSearch** correspondientes. Estos cmdlets proporcionan a los usuarios la capacidad de buscar, conservar y exportar contenido de buzones de correo para solicitudes legales, reglamentarias y públicas.
 
 Como estas capacidades ahora están disponibles en el [<span class="underline">centro de cumplimiento de Microsoft 365</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) y el PowerShell del centro de cumplimiento de & de seguridad de Office 365 con mejoras en el rendimiento y la escalabilidad, debería usar estos cmdlets mejorados. Estos cmdlets incluyen [<span class="underline"> \* -ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule)y [<span class="underline"> \* -ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction).
 
@@ -184,9 +184,9 @@ Como estas capacidades ahora están disponibles en el [<span class="underline">c
 
 ### <a name="timeline"></a>Escala de tiempo
 
-- 1 de julio de 2020: no podrá usar **New-MailboxSearch** para crear nuevas búsquedas de exhibición de documentos electrónicos local y retenciones locales, pero todavía puede usar cmdlets para ejecutar, editar y eliminar las búsquedas y las suspensiones existentes bajo su responsabilidad. El soporte técnico de Microsoft ya no ofrece asistencia para estos tipos de búsquedas y suspensiones.
+- 1 de julio de 2020: no podrá usar **New-MailboxSearch** para crear nuevas In-Place búsquedas de exhibición de documentos electrónicos y retenciones de In-Place, pero puede seguir usando cmdlets para ejecutar, editar y eliminar las búsquedas y las suspensiones existentes bajo su responsabilidad. El soporte técnico de Microsoft ya no ofrece asistencia para estos tipos de búsquedas y suspensiones.
 
-- 1 de octubre de 2020: como se indicó anteriormente, la funcionalidad de la exhibición de documentos electrónicos local & retiene la funcionalidad en el EAC se colocará en modo de solo lectura. Esto también significa que no podrá usar los cmdlets **New-mailboxsearch**, **Start-mailboxsearch**o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
+- 1 de octubre de 2020: como se mencionó anteriormente, la funcionalidad de In-Place eDiscovery & mantiene en el EAC se colocará en modo de solo lectura. Esto también significa que no podrá usar los cmdlets **New-mailboxsearch** , **Start-mailboxsearch** o **set-mailboxsearch** . Solo podrás obtener y quitar búsquedas y suspensiones existentes.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
@@ -195,9 +195,9 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <table>
 <thead>
 <tr class="header">
-<th><strong>Funcionalidad</strong></th>
-<th><strong>Herramientas alternativas</strong></th>
-<th><strong>Comments</strong></th>
+<th>Funcionalidad</th>
+<th>Herramientas alternativas</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
@@ -235,21 +235,21 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tbody>
 </table>
 
-### <a name="faqs-about--mailboxsearch-cmdlets"></a>Preguntas más frecuentes sobre los cmdlets ***-MailboxSearch**
+### <a name="faqs-about--mailboxsearch-cmdlets"></a>Preguntas más frecuentes sobre los cmdlets * **-MailboxSearch**
 
 **Usamos la copia de búsqueda para exportar mensajes de correo electrónico o mensajes instantáneos para fines de otras investigaciones legales y eDiscovery. ¿Qué otras opciones tiene cuando se retiran estos cmdlets?**
 
-Las [<span class="underline">API de Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) proporcionan una serie de métodos para extraer datos para el análisis y otros propósitos que son mucho más resistentes y escalables que con los cmdlets ** \* -MailboxSearch** .
+Las [<span class="underline">API de Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) proporcionan una serie de métodos para extraer datos para el análisis y otros propósitos que son mucho más resistentes y escalables que con los cmdlets **\* -MailboxSearch** .
 
 **¿Cómo puedo migrar Mis búsquedas y retenciones al centro de cumplimiento de Microsoft 365?**
 
-Es posible migrar las búsquedas y las suspensiones de exhibición de documentos electrónicos local desde el centro de administración de Exchange mediante un script de PowerShell. Para obtener más información, consulte [migrar búsquedas y suspensiones de eDiscovery heredado al centro de cumplimiento de Microsoft 365](migrate-legacy-eDiscovery-searches-and-holds.md).
+Es posible migrar In-Place las búsquedas y las suspensiones de eDiscovery desde el centro de administración de Exchange mediante un script de PowerShell. Para obtener más información, consulte [migrar búsquedas y suspensiones de eDiscovery heredado al centro de cumplimiento de Microsoft 365](migrate-legacy-eDiscovery-searches-and-holds.md).
 
 **Una vez retirados los cmdlets, ¿podré quitar o recuperar las búsquedas?**
 
 Sí, aunque estamos eliminando la capacidad de crear y modificar búsquedas, aún podrá usar **Get-mailboxsearch** y **Remove-MailboxSearch** hasta recibir más avisos. Sin embargo, el uso de estos cmdlets será bajo su propio riesgo después de que las fechas de jubilación y soporte técnico de Microsoft ya no puedan proporcionar asistencia.
 
-## <a name="search-mailbox-cmdlet"></a>Cmdlet Search-Mailbox
+## <a name="search-mailbox-cmdlet"></a>Cmdlet de Search-Mailbox
 
 El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando como se anunció originalmente en una advertencia en la salida del cmdlet que comienza en 2018. El cmdlet **Search-Mailbox** se usó originalmente para buscar en el buzón de correo de un usuario y purgar contenido malintencionado. Le recomendamos que empiece a usar los cmdlets **New-ComplianceSearch** y **New-ComplianceSearchAction** en Office 365 Security & el centro de cumplimiento de PowerShell para buscar y purgar contenido. Para una experiencia de seguridad integrada, las [<span class="underline">características de seguridad de microsoft 365</span>](https://docs.microsoft.com/microsoft-365/security/) proporcionan una sólida protección contra amenazas para el correo electrónico y muchos otros servicios de Microsoft.
 
@@ -274,9 +274,9 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <table>
 <thead>
 <tr class="header">
-<th><strong>Funcionalidad</strong></th>
-<th><strong>Herramientas alternativas</strong></th>
-<th><strong>Comments</strong></th>
+<th>Funcionalidad</th>
+<th>Herramientas alternativas</th>
+<th>Comentarios</th>
 </tr>
 </thead>
 <tbody>
@@ -323,7 +323,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 
 ## <a name="exchange-web-services-api-operations"></a>Operaciones de la API de servicios web Exchange
 
-Estas operaciones en la API de los servicios web Exchange se usan en la característica de exhibición de documentos electrónicos & de exhibición de documentos electrónicos local en el centro de administración de Exchange y los cmdlets ** \* -MailboxSearch** correspondientes en Exchange Online PowerShell. También se retirarán como parte de la retirada de las otras herramientas de eDiscovery heredadas.
+Estas operaciones en la API de los servicios web Exchange se usan en la característica In-Place eDiscovery & retenciones del centro de administración de Exchange y los cmdlets **\* -MailboxSearch** de Exchange en Exchange Online PowerShell. También se retirarán como parte de la retirada de las otras herramientas de eDiscovery heredadas.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
@@ -341,31 +341,33 @@ Estas operaciones en la API de los servicios web Exchange se usan en la caracter
 
 ## <a name="advanced-ediscovery-v10"></a>EDiscovery avanzado v 1.0
 
-EDiscovery avanzado v 1.0, que es la versión de eDiscovery avanzado disponible en un caso de exhibición de documentos electrónicos principal al hacer clic en **cambiar a exhibición avanzada**de documentos electrónicos, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución Advanced eDiscovery](https://aka.ms/edisco) en el centro de cumplimiento de Microsoft 365.
+EDiscovery avanzado v 1.0, que es la versión de eDiscovery avanzado disponible en un caso de exhibición de documentos electrónicos principal al hacer clic en **cambiar a exhibición avanzada** de documentos electrónicos, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución Advanced eDiscovery](https://aka.ms/edisco) en el centro de cumplimiento de Microsoft 365.
 
 Para determinar si su organización está usando eDiscovery avanzado v 1.0:
 
 1. Vaya al [centro de cumplimiento de & de seguridad de Office 365](https://protection.office.com).
 
-2. En el panel de navegación izquierdo del centro de seguridad & cumplimiento, haga clic en **ediscovery > eDiscovery**y abra un caso principal de eDiscovery.
+2. En el panel de navegación izquierdo del centro de seguridad & cumplimiento, haga clic en **ediscovery > eDiscovery** y abra un caso principal de eDiscovery.
 
-3. Si ve el botón **cambiar a eDiscovery avanzado** , al hacer clic en él le llevará a la versión 1,0 de eDiscovery avanzado, que se está retirando. La capacidad de crear y administrar casos en la exhibición de documentos electrónicos principal no se verá afectada. Solo se retirará la capacidad de agregar y analizar datos de casos en eDiscovery avanzado v 1.0 (haciendo clic en **cambiar a EDiscovery avanzado**).
+3. Si ve el botón **cambiar a eDiscovery avanzado** , al hacer clic en él le llevará a la versión 1,0 de eDiscovery avanzado, que se está retirando. La capacidad de crear y administrar casos en la exhibición de documentos electrónicos principal no se verá afectada. Solo se retirará la capacidad de agregar y analizar datos de casos en eDiscovery avanzado v 1.0 (haciendo clic en **cambiar a EDiscovery avanzado** ).
 
-La nueva solución avanzada de exhibición de documentos electrónicos de Microsoft 365 (también denominada *EDiscovery avanzado v 2.0*) proporciona todas las capacidades de la solución original, pero ahora incluye un enfoque basado en custodios para identificar contenido en otros servicios de Microsoft 365, recopilar dicho contenido y, a continuación, agregarlo a un conjunto de revisión en el que los revisores pueden aprovechar las consultas de Fast Search, el etiquetado y las características de análisis para facilitar la selección de documentos relevantes. La exhibición avanzada de documentos electrónicos ahora incluye mejoras de procesamiento y visores nativos para tipos de archivo de Microsoft y que [no son de](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)Microsoft, aquí se muestra una lista completa de los tipos de [archivo y los](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) campos de metadatos admitidos. Además, la nueva solución Advanced eDiscovery proporciona una potente característica de administración de retenciones de custodios que le permite aplicar suspensiones a contenido en diferentes servicios, notificar a los usuarios de las suspensiones y realizar un seguimiento de las respuestas de custodios, todo dentro de un caso de eDiscovery avanzado.
+La nueva solución avanzada de exhibición de documentos electrónicos de Microsoft 365 (también denominada *EDiscovery avanzado v 2.0* ) proporciona todas las capacidades de la solución original, pero ahora incluye un enfoque basado en custodios para identificar contenido en otros servicios de Microsoft 365, recopilar dicho contenido y, a continuación, agregarlo a un conjunto de revisión en el que los revisores pueden aprovechar las consultas de Fast Search, el etiquetado y las características de análisis para facilitar la selección de documentos relevantes. La exhibición avanzada de documentos electrónicos ahora incluye mejoras de procesamiento y visores nativos para tipos de archivo de Microsoft y que [no son de](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)Microsoft, aquí se muestra una lista completa de los tipos de [archivo y los](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) campos de metadatos admitidos. Además, la nueva solución Advanced eDiscovery proporciona una potente característica de administración de retenciones de custodios que le permite aplicar suspensiones a contenido en diferentes servicios, notificar a los usuarios de las suspensiones y realizar un seguimiento de las respuestas de custodios, todo dentro de un caso de eDiscovery avanzado.
 
 Para acceder a la exhibición avanzada de documentos electrónicos v 2.0:
 
 1. Vaya al [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 
-2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo**y, a continuación, en **eDiscovery > avanzadas**.
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, en **eDiscovery > avanzadas**.
 
-En este momento, le recomendamos que empiece a realizar la transición del flujo de trabajo de eDiscovery a la nueva funcionalidad de eDiscovery avanzado. Aunque aún podrá obtener acceso a la exhibición avanzada de documentos electrónicos v 1.0 en casos existentes, el soporte técnico de Microsoft no proporcionará soporte técnico después del 1 de octubre de 2020. Para obtener más información, vea la siguiente escala de tiempo.
+En este momento, le recomendamos que empiece a realizar la transición del flujo de trabajo de eDiscovery a la nueva funcionalidad de eDiscovery avanzado. Si es necesario, puede archivar los casos avanzados de eDiscovery 1,0 exportando el contenido y almacenándolos sin conexión. Aunque aún podrá obtener acceso a la exhibición avanzada de documentos electrónicos v 1.0 en casos existentes hasta el 31 de diciembre de 2020, el soporte técnico de Microsoft no proporcionará soporte técnico después del 1 de octubre de 2020. Para obtener más información, vea la siguiente escala de tiempo.
 
 ### <a name="scope-of-affected-organizations"></a>Ámbito de las organizaciones afectadas
 
 - Office 365 y Microsoft 365 organizaciones empresariales
 
 - Organizaciones de Educación de Office 365 y Microsoft 365
+
+- Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
 - Office 365 Germany
 
@@ -374,6 +376,8 @@ En este momento, le recomendamos que empiece a realizar la transición del flujo
 - 1 de julio de 2020: no podrá crear nuevos casos de exhibición de documentos electrónicos v 1.0 avanzado.
 
 - 1 de octubre de 2020: no podrá agregar nuevos datos (preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos) en ningún caso. Podrá seguir trabajando con los datos en casos existentes bajo su propio riesgo. El soporte técnico de Microsoft ya no ofrece asistencia. 
+
+- 31 de diciembre de 2020: no podrá acceder a los casos avanzados de eDiscovery v 1.0.
 
 ### <a name="alternative-tools"></a>Herramientas alternativas
 
