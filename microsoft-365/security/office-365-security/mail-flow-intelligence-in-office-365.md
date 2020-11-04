@@ -2,7 +2,7 @@
 title: Inteligencia del flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198508"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877806"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
@@ -77,11 +77,11 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
        - Eliminar el conector haciendo clic en **eliminar** ![ icono quitar](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Para deshabilitar el conector, haga clic en **Editar** ![ icono de edición y desactive la ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **opción para**desactivarlo.
+       - Para deshabilitar el conector, haga clic en **Editar** ![ icono de edición y desactive la ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **opción para** desactivarlo.
 
   - Cambie el dominio aceptado en Microsoft 365 que está asociado con su entorno de correo electrónico local de **retransmisión interna** a **autorizado**. Para obtener instrucciones, vea [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Nota**: normalmente, estos cambios tardan entre 30 minutos y una hora en surtir efecto. Después de una hora, compruebe que ya no recibe el error.
+  **Nota** : normalmente, estos cambios tardan entre 30 minutos y una hora en surtir efecto. Después de una hora, compruebe que ya no recibe el error.
 
 - Si el error procede de la organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.
 

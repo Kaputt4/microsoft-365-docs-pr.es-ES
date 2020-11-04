@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846717"
+ms.locfileid: "48877224"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 defender
 
@@ -46,44 +46,29 @@ La **cola de incidentes** muestra un conjunto de incidentes que se han marcado d
 
 ![Imagen de cola de incidentes](../../media/incidents-queue.png) 
 
-De manera predeterminada, la cola del Centro de seguridad de Microsoft 365 muestra los incidentes encontrados en los últimos 30 días, con el incidente más reciente en la parte superior de la lista, ayudándole así a ver primero los incidentes más recientes.
+De forma predeterminada, la cola del centro de seguridad 365 de Microsoft muestra los incidentes que se han visto en los últimos 30 días. El incidente más reciente se encuentra en la parte superior de la lista, por lo que puede verlo primero.
 
-La cola de incidentes expone columnas personalizables donde podrá ver las distintas características del incidente o de las entidades que contiene, lo que le permite tomar decisiones fundamentadas sobre la priorización de incidentes que debe controlar.
+La cola de incidentes expone columnas personalizables que le proporcionan visibilidad en diferentes características del incidente o las entidades que contiene. Esto le ayudará a tomar una decisión informada sobre la priorización de incidentes para controlar.
 
-Para obtener más visibilidad de un vistazo, la denominación automática de incidentes genera nombres de incidente en función de atributos de alerta como el número de puntos de conexión afectados, los usuarios afectados, las fuentes o categorías de detección. Esto le permite comprender rápidamente el ámbito del incidente.
+Para obtener más visibilidad de un vistazo, la denominación automática de incidentes genera nombres de incidente en función de atributos de alerta, como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
 
 Por ejemplo: *incidente de varias fases en varios puntos de conexión que han sido notificados por varios orígenes.*
 
 > [!NOTE]
 > Los incidentes que existían antes de la implementación de la asignación automática de nombres de incidentes no tendrán su nombre cambiado.
 
-La cola de incidentes también muestra opciones de filtrado que, al aplicarlas, le permiten decidir si limpiar todos los incidentes existentes en su entorno o enfocarse en un escenario o amenaza específica. Aplicar filtros en la cola de incidentes puede ayudar a determinar qué incidente requiere atención inmediata. 
+La cola de incidentes también expone varias opciones de filtrado, que cuando se aplican, le permiten realizar un amplio barrido de todos los incidentes existentes en su entorno o decidir centrarse en un escenario o amenaza específicos. Aplicar filtros en la cola de incidentes puede ayudar a determinar qué incidente requiere atención inmediata. 
 
 ## <a name="available-filters"></a>Filtros disponibles
 
-### <a name="status"></a>Estado
-Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos.
-
-### <a name="severity"></a>Gravedad
-La gravedad de un incidente indica el impacto que puede tener en sus activos. Cuanto mayor sea el nivel de gravedad, mayor será el impacto y, por lo general, requerirá atención más inmediata. 
-
-### <a name="assigned-to-owner"></a>Asignado a (propietario)
-Puede filtrar la lista seleccionando los incidentes asignados a cualquiera o solo los asignados a su usuario.
-
-### <a name="multiple-alerts"></a>Más de una alerta 
-Filtre para ver solo los incidentes que contienen más de una alerta. Esto podría ser una indicación para un ataque que es más complejo o que progresa en la cadena de eliminación. 
-
-
-### <a name="multiple-service-sources"></a>Múltiples orígenes del servicio 
-Filtrar solo para ver incidentes que contienen alertas de diferentes orígenes (Microsoft defender para el extremo, Microsoft Cloud App Security, Microsoft defender para identidad, Microsoft defender para Office 365)
-### <a name="service-sources"></a>Orígenes del servicio
-Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. 
-
-### <a name="multiple-categories"></a>Varias categorías 
-Puede elegir ver solo los incidentes que se han asignado a varias categorías de la cadena de eliminación y que pueden provocar más daño. 
+### <a name="assigned-to"></a>Asignado a
+Puede elegir mostrar las alertas que están asignadas a usted o a las administradas por automatización.
 
 ### <a name="categories"></a>Categorías
-Elija categorías específicas para concentrarse en un paso específico de la cadena de eliminación
+Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos que se ven. 
+
+### <a name="classification"></a>Clasificación
+Filtre las incidencias según las clasificaciones establecidas de las alertas relacionadas. Los valores incluyen alertas verdaderas, falsas alertas o no establecidas.
 
 ### <a name="data-sensitivity"></a>Confidencialidad de datos
 Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes.
@@ -91,13 +76,40 @@ Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. 
 >[!NOTE]
 >Solo se aplica si se ha activado Microsoft Information Protection. 
 
+### <a name="device-group"></a>Grupo de dispositivos
+Filtra por grupos de dispositivos definidos.
+
+### <a name="investigation-state"></a>Estado de investigación
+Filtrar incidentes por el estado de la investigación automatizada. 
+
+### <a name="multiple-categories"></a>Varias categorías 
+Puede elegir ver solo los incidentes que se han asignado a varias categorías y, por lo tanto, puede causar más daño. 
+
+### <a name="multiple-service-sources"></a>Múltiples orígenes del servicio 
+Filtrar solo para ver incidentes que contengan alertas de diferentes orígenes (Microsoft defender para extremo, Microsoft Cloud App Security, Microsoft defender para identidad, Microsoft defender para Office 365).
+
+### <a name="os-platform"></a>Plataforma de sistema operativo
+Limitar la vista de cola de incidentes por sistema operativo.
+
+### <a name="service-sources"></a>Orígenes del servicio
+Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. 
+
+### <a name="severity"></a>Severity
+La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requerirá la atención más inmediata. 
+
+### <a name="status"></a>Estado
+Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos.
+
+>[!IMPORTANT]
+>Los filtros de clasificación, grupo de dispositivos, estado de investigación y plataforma de SO solo están disponibles actualmente en la versión preliminar pública.
+
 
 ## <a name="next-steps"></a>Siguientes pasos
 Una vez que haya determinado qué incidente tiene mayor prioridad, puede seguir investigando.
 - [Investigar incidentes](investigate-incidents.md)
 
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="see-also"></a>Recursos adicionales
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

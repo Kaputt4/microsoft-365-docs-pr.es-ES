@@ -2,7 +2,7 @@
 title: Corrección de información de reglas de flujo de correo lento
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo usar la solución Fix Slow mail Flow rules Insight en el centro de seguridad & cumplimiento para identificar y corregir reglas de flujo de correo ineficientes o ineficientes (también conocidas como reglas de transporte) en su organización.
-ms.openlocfilehash: 2f9a35534ab4377cff164b38eeb66dd55c48d5b9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199270"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877542"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corrección de las reglas de flujo de correo lenta información del centro de seguridad & cumplimiento
 
@@ -40,10 +40,10 @@ Puede usar esta notificación para ayudarle a identificar y ajustar las reglas d
 
 Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con más información:
 
-- **Regla**: puede desplazar el mouse sobre el resumen para ver todas las condiciones, excepciones y acciones de la regla. Puede hacer clic en el resumen para editar la regla en el centro de administración de Exchange (EAC).
-- **Número de mensajes evaluados**: puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados por la regla.
+- **Regla** : puede desplazar el mouse sobre el resumen para ver todas las condiciones, excepciones y acciones de la regla. Puede hacer clic en el resumen para editar la regla en el centro de administración de Exchange (EAC).
+- **Número de mensajes evaluados** : puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados por la regla.
 - **Tiempo promedio invertido en cada mensaje**
-- **Tiempo medio invertido en un mensaje**: el valor medio que separa la mitad superior de la mitad inferior de los datos de tiempo.
+- **Tiempo medio invertido en un mensaje** : el valor medio que separa la mitad superior de la mitad inferior de los datos de tiempo.
 
 ![Control flotante de detalles que aparece después de hacer clic en ver detalles en la solución solucionar reglas de flujo de correo lenta](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 

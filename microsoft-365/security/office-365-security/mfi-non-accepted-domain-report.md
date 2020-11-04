@@ -2,7 +2,7 @@
 title: Informe de dominio no aceptado en el panel de flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los mensajes de la organización local donde el dominio del remitente no está configurado en Microsoft 365.
-ms.openlocfilehash: d05489ec4a6d670fc89b5d943b3e7061506b6fe8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199330"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877722"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el centro de seguridad & cumplimiento
 
@@ -35,7 +35,7 @@ Microsoft 365 puede limitar estos mensajes si tenemos datos para probar que la i
 
 Al hacer clic en el gráfico en el widget de **dominio no aceptado** , irá al informe de **dominio no aceptado** .
 
-De forma predeterminada, se muestra la actividad de todos los conectores afectados. Si hace clic en **Mostrar datos de**, puede seleccionar un conector específico en la lista desplegable.
+De forma predeterminada, se muestra la actividad de todos los conectores afectados. Si hace clic en **Mostrar datos de** , puede seleccionar un conector específico en la lista desplegable.
 
 Si desplaza el puntero sobre un punto de datos (día) del gráfico, verá el número total de mensajes para el conector.
 
@@ -49,7 +49,7 @@ Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará 
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Número de mensajes**
-- **Mensajes de ejemplo**: los identificadores de mensaje de una muestra de mensajes afectados.
+- **Mensajes de ejemplo** : los identificadores de mensaje de una muestra de mensajes afectados.
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede especificar un intervalo de fechas con **fecha de inicio** y fecha de **finalización**.
 
@@ -61,7 +61,7 @@ Cuando se selecciona una fila de la tabla, aparece un control flotante con la si
 - **Nombre del conector de entrada**
 - **Dominio del remitente**
 - **Número de mensajes**
-- **Mensajes de ejemplo**: puede hacer clic en **Ver mensajes de muestra** para ver los resultados de [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados.
+- **Mensajes de ejemplo** : puede hacer clic en **Ver mensajes de muestra** para ver los resultados de [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados.
 
 ![Flotante de detalles después de seleccionar una fila en la vista de tabla de detalles en el informe de dominio no aceptado](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 

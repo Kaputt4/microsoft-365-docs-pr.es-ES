@@ -2,7 +2,7 @@
 title: Informar del correo electrónico no deseado y de suplantación de identidad en Outlook para iOS y Android
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre las opciones integradas de correo no deseado, correo no deseado y suplantación de identidad en Outlook para iOS y Android.
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350860"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877296"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Informar del correo electrónico no deseado y de suplantación de identidad en Outlook para iOS y Android en Exchange Online
 
@@ -54,7 +54,7 @@ Para los mensajes de la bandeja de entrada, o cualquier otra carpeta de correo e
 
    ![Informar del correo no deseado o de suplantación de identidad](../../media/Android-report-junk-or-phishing.png)
 
-4. En el cuadro de diálogo que aparece, puede elegir **Informe** o **no gracias**. Al seleccionar **no gracias**, si ha punteado en **correo no deseado** , el mensaje se mueve a la carpeta correo electrónico no deseado, si puntea en **suplantación de identidad** , el mensaje se mueve a la carpeta elementos eliminados. Seleccione **Report** para enviar también una copia del mensaje a Microsoft.
+4. En el cuadro de diálogo que aparece, puede elegir **Informe** o **no gracias**. Al seleccionar **no gracias** , si ha punteado en **correo no deseado** , el mensaje se mueve a la carpeta correo electrónico no deseado, si puntea en **suplantación de identidad** , el mensaje se mueve a la carpeta elementos eliminados. Seleccione **Report** para enviar también una copia del mensaje a Microsoft.
 
    ![Informar sobre opciones de informes de correo no deseado o de suplantación](../../media/Android-junk-email-reporting-options.png)
 

@@ -2,7 +2,7 @@
 title: Corrección de posible información de bucle de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la información sobre cómo solucionar posibles bucles de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para identificar y corregir bucles de correo en su organización.
-ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 15ad5c467d18ce3038bcb05db798a9b5a7c3e391
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198450"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877515"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corrección de la información posible sobre el bucle de correo en el centro de seguridad & cumplimiento
 
@@ -34,10 +34,10 @@ La información de **corrección posible del bucle de correo** en el área **rec
 Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con más información:
 
 - **Dominio**
-- **Número de mensajes**: puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados por el bucle.
-- **Tipo de dominio**"por ejemplo, autoritario o no autoritativo.
-- **Registro MX**: host (**servidor de correo**) y valores de **prioridad** del registro MX para el dominio.
-- **Razón** **para el bucle y cómo corregir**: intentaremos identificar los escenarios de bucle de correo más comunes y proporcionar las acciones recomendadas (si están disponibles) para corregir el bucle.
+- **Número de mensajes** : puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados por el bucle.
+- **Tipo de dominio** "por ejemplo, autoritario o no autoritativo.
+- **Registro MX** : host ( **servidor de correo** ) y valores de **prioridad** del registro MX para el dominio.
+- **Razón** **para el bucle y cómo corregir** : intentaremos identificar los escenarios de bucle de correo más comunes y proporcionar las acciones recomendadas (si están disponibles) para corregir el bucle.
 
 ![Control flotante de detalles después de hacer clic en ver detalles en la información de corrección posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
 

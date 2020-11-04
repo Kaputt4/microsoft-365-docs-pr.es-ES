@@ -2,7 +2,7 @@
 title: Informar del correo electrónico no deseado y de suplantación de identidad en Outlook en la web
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre las opciones integradas de correo no deseado, correo no deseado y suplantación de identidad en Outlook en la web (Outlook Web App) en Exchange Online y cómo deshabilitar estas opciones de informes para los usuarios.
-ms.openlocfilehash: 076f2858e84359d788714dc5d7e8bdb972b2c2ee
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351082"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877378"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Informar del correo electrónico no deseado y de suplantación de identidad en Outlook en la web en Exchange Online
 
@@ -128,13 +128,13 @@ Para comprobar que ha habilitado o deshabilitado correctamente la notificación 
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la bandeja de entrada **, haga clic en correo** no deseado \> **Junk** y compruebe que la pregunta para informar del mensaje a Microsoft es o no se muestra.<sup>\*</sup>
+- Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la bandeja de entrada **, haga clic en correo** no deseado \> **Junk** y compruebe que la pregunta para informar del mensaje a Microsoft es o no se muestra. <sup>\*</sup>
 
-- Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la carpeta de correo no deseado **, haga clic en correo no deseado** \> **Junk** y compruebe que la pregunta para informar del mensaje a Microsoft es o no se muestra.<sup>\*</sup>
+- Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la carpeta de correo no deseado **, haga clic en correo no deseado** \> **Junk** y compruebe que la pregunta para informar del mensaje a Microsoft es o no se muestra. <sup>\*</sup>
 
 <sup>\*</sup> Los usuarios pueden ocultar el mensaje para informar del mensaje mientras están notificando el mensaje. Para comprobar esta configuración en Outlook en la web:
 
-1. Haga clic en **configuración** ![ Outlook en el icono de configuración del Web ](../../media/owa-settings-icon.png) \> **ver todo** el \> **correo electrónico no deseado**de configuración de Outlook.
+1. Haga clic en **configuración** ![ Outlook en el icono de configuración del Web ](../../media/owa-settings-icon.png) \> **ver todo** el \> **correo electrónico no deseado** de configuración de Outlook.
 2. En la sección **informes** , compruebe el valor: **preguntarme antes de enviar un informe**.
 
    ![Configuración de informes de correo no deseado de Outlook en la web](../../media/owa-junk-email-reporting-options.png)

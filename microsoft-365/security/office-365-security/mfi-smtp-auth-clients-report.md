@@ -2,7 +2,7 @@
 title: Informes y información sobre los clientes de autenticación SMTP en el panel de flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de conocimiento de autenticación de SMTP en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los remitentes de correo electrónico de su organización que usan SMTP autenticado (autenticación SMTP) para enviar mensajes de correo electrónico.
-ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 54798dfcad50c263705b027c879fdf71d0dabfba
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199246"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877566"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Informes y información sobre los clientes de autenticación SMTP en el centro de seguridad & cumplimiento
 
@@ -45,11 +45,11 @@ De forma predeterminada, el informe muestra los datos de los últimos 7 días, p
 
 La sección información general contiene los siguientes gráficos:
 
-- **Ver datos por: volumen de envío**: de forma predeterminada, el gráfico muestra el número de mensajes de cliente de autenticación SMTP que se enviaron desde todos los dominios (**Mostrar datos para: todos los dominios de remite** están seleccionados de forma predeterminada). Puede filtrar los resultados a un dominio de remitente específico haciendo clic en **Mostrar datos para** y seleccionando el dominio del remitente en la lista desplegable. Si pasa por un punto de datos específico (día), se muestra el número de mensajes.
+- **Ver datos por: volumen de envío** : de forma predeterminada, el gráfico muestra el número de mensajes de cliente de autenticación SMTP que se enviaron desde todos los dominios ( **Mostrar datos para: todos los dominios de remite** están seleccionados de forma predeterminada). Puede filtrar los resultados a un dominio de remitente específico haciendo clic en **Mostrar datos para** y seleccionando el dominio del remitente en la lista desplegable. Si pasa por un punto de datos específico (día), se muestra el número de mensajes.
 
   ![Envío de la vista de volumen en el informe de clientes de autenticación SMTP en el centro de seguridad & cumplimiento](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **Ver datos por: uso de TLS**: el gráfico muestra el porcentaje de uso de TLS para todos los mensajes de cliente de autenticación SMTP durante el período de tiempo seleccionado. Este gráfico permite identificar y realizar acciones en usuarios y cuentas del sistema que todavía usan versiones anteriores de TLS.
+- **Ver datos por: uso de TLS** : el gráfico muestra el porcentaje de uso de TLS para todos los mensajes de cliente de autenticación SMTP durante el período de tiempo seleccionado. Este gráfico permite identificar y realizar acciones en usuarios y cuentas del sistema que todavía usan versiones anteriores de TLS.
 
   ![Vista de uso de TLS en el informe de clientes de autenticación SMTP en el centro de seguridad & cumplimiento](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
@@ -59,16 +59,16 @@ Haga clic en **Solicitar informe** para recibir una versión más detallada del 
 
 ### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Vista de tabla de detalles para el informe de clientes de autenticación SMTP
 
-Si hace clic en **ver tabla de detalles**, la información que se muestra depende del gráfico que estaba viendo:
+Si hace clic en **ver tabla de detalles** , la información que se muestra depende del gráfico que estaba viendo:
 
-- **Ver datos por: volumen de envío**: la siguiente información se muestra en una tabla:
+- **Ver datos por: volumen de envío** : la siguiente información se muestra en una tabla:
 
   - **Dirección del remitente**
   - **Número de mensajes**
 
   Si selecciona una fila, se muestran los mismos detalles en un control flotante.
 
-- **Ver datos por: uso de TLS**: la siguiente información se muestra en una tabla:
+- **Ver datos por: uso de TLS** : la siguiente información se muestra en una tabla:
 
   - **Dirección del remitente**
   - **TLS 1.0%**<sup>\*</sup>

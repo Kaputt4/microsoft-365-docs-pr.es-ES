@@ -2,7 +2,7 @@
 title: Información de nuevos usuarios que reenvían correo electrónico
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento para investigar Cuándo los usuarios de la organización reenvían mensajes a nuevos dominios.
-ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200660"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877530"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento
 
@@ -35,7 +35,7 @@ Al hacer clic en el widget, aparece un control flotante donde puede encontrar m�
 
 ![Control flotante de detalles que aparece después de hacer clic en los nuevos usuarios Reenviar información sobre el correo electrónico](../../media/mfi-new-users-forwarding-email-details.png)
 
-También puede obtener acceso a esta página de detalles si selecciona la información después de hacer clic en **ver todo** en el área de **recomendaciones &** información sobre (**Reports** \> **Panel** de informes o <https://protection.office.com/insightdashboard> ).
+También puede obtener acceso a esta página de detalles si selecciona la información después de hacer clic en **ver todo** en el área de **recomendaciones &** información sobre ( **Reports** \> **Panel** de informes o <https://protection.office.com/insightdashboard> ).
 
 Puede hacer clic en el vínculo **Ver informe asociado con conocimiento** para ir al **Informe de modificaciones de reenvío** , como se describe en la siguiente sección.
 
@@ -59,11 +59,11 @@ Este informe no está directamente disponible en el [Panel de flujo de correo](m
 
 Los siguientes gráficos están disponibles en la vista de informe:
 
-- **Mostrar datos para: nuevos usuarios de reenvío**:
+- **Mostrar datos para: nuevos usuarios de reenvío** :
 
   ![Vista de nuevos usuarios de reenvío en el informe de modificaciones de reenvío](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Mostrar datos para: nuevos dominios de reenvío**:
+- **Mostrar datos para: nuevos dominios de reenvío** :
 
   ![Vista de nuevos dominios reenviados en el informe de modificaciones de reenvío](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ Si hace clic en **filtros** en una vista de informe, puede especificar un interv
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vista de tabla de detalles para el informe de modificaciones de reenvío
 
-Si hace clic en **ver tabla de detalles**, la información que se muestra depende del gráfico que estaba viendo:
+Si hace clic en **ver tabla de detalles** , la información que se muestra depende del gráfico que estaba viendo:
 
-- **Mostrar datos para: nuevos usuarios de reenvío**:
+- **Mostrar datos para: nuevos usuarios de reenvío** :
 
-  - **Name**: la dirección de correo electrónico del remitente.
+  - **Name** : la dirección de correo electrónico del remitente.
   - **Tipo de reenvío**
   - **Dirección del destinatario**
   - **Detalles**
   - **Count**
   - **Primera fecha de reenvío**
 
-- **Mostrar datos para: nuevos dominios de reenvío**:
+- **Mostrar datos para: nuevos dominios de reenvío** :
 
-  - **Name**: el dominio de correo electrónico del remitente.
+  - **Name** : el dominio de correo electrónico del remitente.
   - **Tipo de reenvío**
   - **Dirección del destinatario**
   - **Detalles**
@@ -95,13 +95,13 @@ Si hace clic en **filtros** en una vista de tabla de detalles, puede especificar
 
 Si selecciona una fila de la tabla, aparece un flotante de **detalles** con la siguiente información:
 
-- **Name**: esta es la dirección de correo electrónico del remitente (de **Mostrar datos para: nuevos usuarios de reenvío** ) o el dominio de correo electrónico del remitente (de la vista **Mostrar datos para: nuevos dominios de reenvío** ).
+- **Name** : esta es la dirección de correo electrónico del remitente (de **Mostrar datos para: nuevos usuarios de reenvío** ) o el dominio de correo electrónico del remitente (de la vista **Mostrar datos para: nuevos dominios de reenvío** ).
 - **Tipo de reenvío**
 - **Recipient**
 - **Detalles**
 - **Count**
 - **Fecha de comienzo**
-- **Recomendación**: desde aquí, puede hacer clic en el vínculo para administrar el usuario en el centro de administración de Microsoft 365.
+- **Recomendación** : desde aquí, puede hacer clic en el vínculo para administrar el usuario en el centro de administración de Microsoft 365.
 
 ![Control flotante de la tabla detalles de la vista nuevos usuarios de reenvío en el informe de reenvío de modificaciones](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

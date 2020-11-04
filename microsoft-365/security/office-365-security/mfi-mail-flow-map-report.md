@@ -2,7 +2,7 @@
 title: Mapa de flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el mapa del flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para visualizar y realizar un seguimiento de la forma en que el correo fluye hacia y desde la organización a través de conectores y sin usar conectores.
-ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199376"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877770"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el centro de seguridad & cumplimiento
 
@@ -37,11 +37,11 @@ Al hacer clic en el widget **mapa de flujo de correo** , irá al informe de mapa
 
 Los siguientes gráficos están disponibles en la vista de informe:
 
-- **Mostrar datos para: información general**: esta es básicamente una vista más amplia del widget. Si pasa el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
+- **Mostrar datos para: información general** : esta es básicamente una vista más amplia del widget. Si pasa el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
 
   ![Vista general en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **Mostrar datos para: detalles**: esta vista muestra detalles sobre los conectores y los dominios de destino. Se enumeran los principales dominios del remitente y el destinatario, y el resto se colocan en **otros**. Si pasa el mouse sobre un color y una sección específicos, se muestra el número de mensajes.
+- **Mostrar datos para: detalles** : esta vista muestra detalles sobre los conectores y los dominios de destino. Se enumeran los principales dominios del remitente y el destinatario, y el resto se colocan en **otros**. Si pasa el mouse sobre un color y una sección específicos, se muestra el número de mensajes.
 
   ![Vista de detalles en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-detail.png)
 
@@ -71,6 +71,6 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Para volver a la vista informes, haga clic en **Ver informe**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

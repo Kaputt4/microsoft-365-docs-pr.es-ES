@@ -2,7 +2,7 @@
 title: Información sobre el flujo de correo en el panel de flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre las opiniones y los informes que están disponibles en el panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769023"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877782"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -76,6 +76,6 @@ Para obtener más información acerca de los permisos en el centro de seguridad 
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 
-Abra el centro de seguridad & cumplimiento en <https://protection.office.com> , expanda **flujo de correo** y, a continuación, seleccione **Panel** .
+Abra el centro de seguridad & cumplimiento en <https://protection.office.com> , expanda **flujo de correo** y, a continuación, seleccione **Panel**.
 
 Para ir directamente al panel de flujo de correo, Abra <https://protection.office.com/mailflow/dashboard> .

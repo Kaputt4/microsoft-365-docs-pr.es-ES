@@ -2,7 +2,7 @@
 title: Pone en cola información en el panel de flujo de correo
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget colas del panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar el flujo de correo incorrecto hacia sus organizaciones locales o de asociados a través de los conectores de salida.
-ms.openlocfilehash: 3291a21828215d0a2a99c2226147bb1b748b8469
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e6935793cd04c6072784cd20b55649126864c369
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199294"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877578"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Pone en cola información en el centro de seguridad & cumplimiento
 
@@ -34,7 +34,7 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
 
 - Las **colas** profundizan en el [panel del flujo de correo](mail-flow-insights-v2.md) en el [centro de seguridad & cumplimiento](https://protection.office.com). Para obtener más información, vea la información [sobre las colas en la sección panel de flujo de correo](#queues-insight-in-the-mail-flow-dashboard) de este tema.
   
-- Se muestra una alerta en el panel de alertas del centro de [seguridad & cumplimiento](https://protection.office.com) (panel de**alertas** o) en **Alerts recents** \> **Dashboard** <https://protection.office.com/alertsdashboard> .
+- Se muestra una alerta en el panel de alertas del centro de [seguridad & cumplimiento](https://protection.office.com) (panel de **alertas** o) en **Alerts recents** \> **Dashboard** <https://protection.office.com/alertsdashboard> .
 
   ![Alertas recientes en el panel de alertas del centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert.png)
 
@@ -52,16 +52,16 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
 
    ![Los mensajes se han retrasado de la Directiva de alerta detalles del centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Estado**: puede activar o desactivar la alerta.
+   - **Estado** : puede activar o desactivar la alerta.
 
-   - **Destinatarios de correo electrónico** y **límite de notificaciones diarias**: haga clic en **Editar** para configurar las opciones siguientes:
+   - **Destinatarios de correo electrónico** y **límite de notificaciones diarias** : haga clic en **Editar** para configurar las opciones siguientes:
 
 4. Para establecer la configuración de las notificaciones, haga clic en **Editar**. En el control flotante **Editar Directiva** que aparece, configure las siguientes opciones:
 
-   - **Enviar notificaciones por correo electrónico**: el valor predeterminado es activado.
-   - **Destinatarios de correo electrónico**: el valor predeterminado es **TenantAdmins**.
-   - **Límite de notificación diario**: el valor predeterminado es **sin límite**.
-   - **Umbral**: el valor predeterminado es 200.
+   - **Enviar notificaciones por correo electrónico** : el valor predeterminado es activado.
+   - **Destinatarios de correo electrónico** : el valor predeterminado es **TenantAdmins**.
+   - **Límite de notificación diario** : el valor predeterminado es **sin límite**.
+   - **Umbral** : el valor predeterminado es 200.
 
    ![La configuración de notificaciones en los mensajes se ha retrasado detalles de la Directiva de alerta el centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
@@ -76,13 +76,13 @@ Incluso si el volumen de mensajes en cola no ha superado el umbral y ha generado
 Si hace clic en el número de mensajes del widget, aparece un control flotante **en cola de mensajes** con la siguiente información:
 
 - **Número de mensajes en cola**
-- **Nombre del conector**: haga clic en el nombre del conector para administrar el conector en el centro de administración de Exchange (EAC).
+- **Nombre del conector** : haga clic en el nombre del conector para administrar el conector en el centro de administración de Exchange (EAC).
 - **Tiempo de inicio de la cola**
 - **Los mensajes más antiguos expiraron**
 - **Servidor de destino**
 - **Última dirección IP**
 - **Último error**
-- **Procedimiento para la corrección**: hay disponibles problemas y soluciones comunes. Si es un vínculo **arreglar ahora** está disponible, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
+- **Procedimiento para la corrección** : hay disponibles problemas y soluciones comunes. Si es un vínculo **arreglar ahora** está disponible, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
 
 ![Detalles después de hacer clic en la información sobre las colas del panel flujo de correo](../../media/mfi-queues-details.png)
 
@@ -90,6 +90,6 @@ Se muestra el mismo control flotante después de hacer clic en **Ver cola** en l
 
 ![Se han retrasado los detalles de la alerta en el centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

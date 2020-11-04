@@ -2,7 +2,7 @@
 title: Información de mensajes reenviados automáticamente
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245952"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877794"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Mensajes reenviados automáticamente información sobre el centro de seguridad & cumplimiento
 
@@ -31,14 +31,14 @@ La introducción a los **mensajes reenviados automáticamente** del [Panel flujo
 
 Al hacer clic en el número de mensajes del widget, aparece un panel de control flotante que muestra más información sobre los mensajes reenviados automáticamente:
 
-- Mensajes reenviados **automáticamente mediante métodos de reenvío**:
+- Mensajes reenviados **automáticamente mediante métodos de reenvío** :
 
   - **Por reglas de flujo de correo**
   - **Por reglas de la bandeja de entrada**
-  - **Por el reenvío SMTP**: este es el reenvío automático que los administradores pueden configurar en un buzón como se describe en [configurar el reenvío de correo electrónico para un buzón](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - **Por el reenvío SMTP** : este es el reenvío automático que los administradores pueden configurar en un buzón como se describe en [configurar el reenvío de correo electrónico para un buzón](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
   - Un vínculo al [Informe de reenvío](view-mail-flow-reports.md#forwarding-report) para obtener más información.
 
-- **Mensajes reenviados automáticamente por dominios y usuarios**:
+- **Mensajes reenviados automáticamente por dominios y usuarios** :
 
   - **Los 5 primeros dominios se reenvían a**
   - **Nuevos dominios (última semana)**
@@ -55,6 +55,6 @@ Se generan dos perspectivas en función de los datos del informe:
 - [Reenviar correo electrónico a los nuevos usuarios](mfi-new-users-forwarding-email.md)
 - [Nuevos dominios que se reenvían correo electrónico](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

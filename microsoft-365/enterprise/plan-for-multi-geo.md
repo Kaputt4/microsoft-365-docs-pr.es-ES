@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Obtenga información acerca de Microsoft 365 Multi-Geo, cómo funcionan las capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: 1924141b86ba3e1c16e4760e0f40d61b6f47ce69
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693876"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877237"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan para Microsoft 365 Multi-Geo
 
@@ -30,13 +30,13 @@ En una configuración multigeográfica, la cuenta empresarial de Microsoft 365 e
 
 Aquí encontrará algunos términos clave multigeográficos para ayudarle a comprender los conceptos básicos de la configuración:
 
--   **Cuenta empresarial**: la representación de una organización de Microsoft 365, que suele tener uno o más dominios asociados (por ejemplo, https://contoso.sharepoint.com). 
+-   **Cuenta empresarial** : la representación de una organización de Microsoft 365, que suele tener uno o más dominios asociados (por ejemplo, https://contoso.sharepoint.com). 
 
--   **Ubicaciones geográficas**: las ubicaciones geográficas disponibles para hospedar datos en una cuenta empresarial de Microsoft 365.
+-   **Ubicaciones geográficas** : las ubicaciones geográficas disponibles para hospedar datos en una cuenta empresarial de Microsoft 365.
 
--   **Ubicaciones satélite**: las ubicaciones geográficas adicionales que ha configurado para hospedar datos en su cuenta empresarial de Microsoft 365. Las cuentas empresariales multigeográficas abarcan más de una ubicación geográfica, por ejemplo, Norteamérica y Europa.
+-   **Ubicaciones satélite** : las ubicaciones geográficas adicionales que ha configurado para hospedar datos en su cuenta empresarial de Microsoft 365. Las cuentas empresariales multigeográficas abarcan más de una ubicación geográfica, por ejemplo, Norteamérica y Europa.
 
--   **Ubicación de datos preferida (PDL)**: la ubicación geográfica donde se almacenan los datos de Exchange y OneDrive de un usuario individual. El administrador la puede establecer en cualquiera de las ubicaciones geográficas que se hayan configurado para la cuenta empresarial. Tenga en cuenta que si cambia la PDL de un usuario que ya tiene un sitio de OneDrive, sus datos de OneDrive no se mueven a la nueva ubicación geográfica automáticamente. Vea [Mover un sitio de OneDrive a otra ubicación geográfica](move-onedrive-between-geo-locations.md) para obtener más información. Si tiene un buzón de Exchange, el buzón se mueve automáticamente a la nueva ubicación de datos preferida.
+-   **Ubicación de datos preferida (PDL)** : la ubicación geográfica donde se almacenan los datos de Exchange y OneDrive de un usuario individual. El administrador la puede establecer en cualquiera de las ubicaciones geográficas que se hayan configurado para la cuenta empresarial. Tenga en cuenta que si cambia la PDL de un usuario que ya tiene un sitio de OneDrive, sus datos de OneDrive no se mueven a la nueva ubicación geográfica automáticamente. Vea [Mover un sitio de OneDrive a otra ubicación geográfica](move-onedrive-between-geo-locations.md) para obtener más información. Si tiene un buzón de Exchange, el buzón se mueve automáticamente a la nueva ubicación de datos preferida.
 
 Para habilitar Capacidades multigeográficas es necesario completar cuatro pasos principales:
 
@@ -73,7 +73,7 @@ Si los usuarios se sincronizan desde un sistema de Active Directory local con Az
 
 La administración de un inquilino multigeográfico puede ser distinta de un espacio empresarial que no sea multigeográfico, ya que muchas de las opciones de configuración y servicios de SharePoint y OneDrive detectan las Capacidades multigeográficas. Le recomendamos que vea [Administrar un entorno multigeográfico](administering-a-multi-geo-environment.md) antes de continuar con la configuración.
 
-Para obtener más información sobre la experiencia de los usuarios finales en un entorno Multi-Geo, vea [Experiencia del usuario en un entorno multigeográfico](multi-geo-user-experience.md).
+Obtenga [experiencia del usuario en un entorno multigeográfico](multi-geo-user-experience.md) para obtener detalles sobre la experiencia de los usuarios finales en un entorno multigeográfico.
 
 Para obtener más información sobre la experiencia de Teams en una cuenta empresarial de Microsoft 365 Multi-Geo, consulte [Experiencia de Teams en una cuenta empresarial multigeográfica de OneDrive y SharePoint Online de Microsoft 365](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 

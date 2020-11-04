@@ -2,7 +2,7 @@
 title: Introducción al panel de seguridad
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: f7576de9db1403c3c010b2fd826866ec11a7e20a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843629"
+ms.locfileid: "48877330"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -70,7 +70,7 @@ Los detalles dependen de si su suscripción a Microsoft 365 incluye [Exchange On
 |Si su suscripción incluye...|Verá estos detalles|
 |---|---|
 |EOP pero no Microsoft defender para Office 365|Correo electrónico malintencionado detectado y bloqueado por EOP.<br><br> Consulte [Informe de estado de protección contra amenazas (EOP)](view-email-security-reports.md#threat-protection-status-report).|
-|Microsoft defender para Office 365|Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y defender para Office 365<br><br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por las características motor antimalware, [purga automática de cero horas](zero-hour-auto-purge.md)y defender para Office 365 (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [anti-phishing en defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Consulte [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).|
+|Microsoft Defender para Office 365|Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y defender para Office 365<br><br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por las características motor antimalware, [purga automática de cero horas](zero-hour-auto-purge.md)y defender para Office 365 (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [anti-phishing en defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).<br><br>Consulte [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).|
 
 Para ver o acceder al widget de estado de protección contra amenazas, debe tener permisos para ver los informes de defender para Office 365. Para obtener más información, vea [¿Qué permisos se necesitan para ver los informes de defender para Office 365?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
