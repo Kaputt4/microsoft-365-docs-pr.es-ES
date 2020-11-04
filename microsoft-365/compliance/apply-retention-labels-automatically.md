@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
-ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
+ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48740274"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877307"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -75,10 +75,10 @@ Las instrucciones de navegación dependerán de si está usando o no la [adminis
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes ubicaciones:
     
     - Si utiliza la administración de registros:
-        - **Soluciones** > **Administración de registros** > pestaña**Plan de archivos** tab > **+ Crear una etiqueta** > **Etiqueta de retención**
+        - **Soluciones** > **Administración de registros** > pestaña **Plan de archivos** tab > **+ Crear una etiqueta** > **Etiqueta de retención**
         
     - Si no está utilizando la administración de registros:
-       - **Soluciones** > **Gobierno de información** > pestaña**Etiquetas** > + **Crear una etiqueta**
+       - **Soluciones** > **Gobierno de información** > pestaña **Etiquetas** > + **Crear una etiqueta**
     
     ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
 
@@ -88,7 +88,7 @@ Las instrucciones de navegación dependerán de si está usando o no la [adminis
     
     - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico**y luego, seleccione **Finalizado** para iniciar el Asistente para la creación de etiquetas automáticas, que lo llevará directamente al paso 2 del procedimiento siguiente.
+3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplique la etiqueta automáticamente o simplemente guárdela: seleccione **Aplicar esta etiqueta automáticamente a un tipo de contenido específico** y luego, seleccione **Finalizado** para iniciar el Asistente para la creación de etiquetas automáticas, que lo llevará directamente al paso 2 del procedimiento siguiente.
 
 Para editar una etiqueta existente, selecciónela y después seleccione la opción **Editar etiqueta** para iniciar el Asistente de edición de etiquetas de retención, el cual le permite cambiar las descripciones de las etiquetas, así como cualquier [configuración que cumpla con los requisitos](#updating-retention-labels-and-their-policies) del paso 2.
 
@@ -99,7 +99,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes locaciones:
     
-    - Si utiliza la administración de registros:**Gobierno de información**:
+    - Si utiliza la administración de registros: **Gobierno de información** :
         - **Soluciones** > **Administración de registros** > pestaña de **Directivas de etiquetas** > **Aplicar etiqueta automáticamente**
     
     - Si no está utilizando la administración de registros:
@@ -128,7 +128,7 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 
-Al crear etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. Por ejemplo, la plantilla que se muestra aquí busca los números de ITIN, SSN y pasaporte de Estados Unidos de la categoría **Privacidad** y de la **Plantilla de datos de identificación personal (PII) de Estados Unidos**:
+Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. Por ejemplo, la plantilla que se muestra aquí busca los números de ITIN, SSN y pasaporte de Estados Unidos de la categoría **Privacidad** y de la **Plantilla de datos de identificación personal (PII) de Estados Unidos** :
 
 ![Plantillas de directiva con tipos de información confidencial](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -136,7 +136,7 @@ Para obtener más información sobre los tipos de información confidencial, con
 
 Después de seleccionar una plantilla de directiva, puede agregar o quitar cualquier tipo de información confidencial y cambiar el recuento de instancias y la precisión de coincidencia. En el recorte de pantalla de ejemplo que se muestra a continuación, solo se aplicará la etiqueta de retención automáticamente cuando:
   
-- El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o nivel de confianza) de al menos 75. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere más pruebas para ser encontrado (por ejemplo, palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos pruebas. Cuanto menor sea la precisión de coincidencia **mín**, más fácil será que el contenido coincida con la condición.
+- El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o nivel de confianza) de al menos 75. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere más pruebas para ser encontrado (por ejemplo, palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos pruebas. Cuanto menor sea la precisión de coincidencia **mín** , más fácil será que el contenido coincida con la condición.
 
 - El contenido tenga entre 1 y 9 instancias de cualquiera de estos tres tipos de información confidencial. Puede eliminar el valor **hasta** para cambiarlo a **Cualquiera**.
 
@@ -174,7 +174,7 @@ Consultas de ejemplos:
 > [!NOTE]
 > La posibilidad de conservar y eliminar las grabaciones de reuniones de Teams se está implementando en la versión preliminar y no funcionará antes de guardar las grabaciones en OneDrive o SharePoint. Para más información, consulte [Usar OneDrive para la Empresa y SharePoint Online o Stream para las grabaciones de reuniones](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
 
-Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave**:
+Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave** :
 
 ``` 
 ProgID:Media AND ProgID:Meeting
@@ -182,11 +182,11 @@ ProgID:Media AND ProgID:Meeting
 
 En el caso de esta etiqueta de retención, también tiene que publicarla en los sitios de SharePoint o en las cuentas de OneDrive de los usuarios relevantes mediante la creación de una directiva de etiqueta. La mayoría de las veces, las grabaciones de reuniones se guardan en OneDrive, pero, en el caso de las reuniones de canal, las grabaciones se guardan en SharePoint.
 
-Cuando haya guardado la directiva de aplicación automática:
+Cuando haya guardado la directiva de etiqueta de retención de aplicación automática:
 
 1. Seleccione la pestaña **Directivas de etiqueta** > **Publicar etiquetas**
 
-2. Cuando se le pida que seleccione una etiqueta, elija la etiqueta que haya creado con la consulta KQL para identificar las grabaciones de reuniones de Teams.
+2. Cuando se le pida que seleccione una etiqueta, elija la misma etiqueta que ha seleccionado para aplicar la directiva de aplicación automática que identifica las grabaciones de reuniones de Teams.
 
 3. Cuando se le pida seleccionar la ubicación, elija **Sitios de SharePoint** y **Cuentas de OneDrive**. A continuación, puede mantener el valor predeterminado de **Todo** o especificar ubicaciones individuales. Por ejemplo, puede incluir o excluir cuentas de OneDrive específicas.
 
@@ -194,12 +194,12 @@ Cuando haya guardado la directiva de aplicación automática:
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
-Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **Currículum**, **Código fuente**, **Código fuente**, **Acoso selectivo**, **Amenazas**:
+Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **Currículum** , **Código fuente** , **Código fuente** , **Acoso selectivo** , **Amenazas** :
 
 ![Elegir clasificador que se puede entrenar](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de**Acoso selectivo**, **Blasfemias**, **Amenazas**
+> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de **Acoso selectivo** , **Blasfemias** , **Amenazas**
 
 Para aplicar una etiqueta automáticamente usando esta opción, los buzones y sitios de SharePoint deben tener al menos 10 MB de datos.
 
@@ -236,4 +236,4 @@ Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar alg
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Consulte [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para obtener un escenario de ejemplo que usa una directiva de aplicación automática con propiedades administradas en SharePoint y una retención basada en eventos para iniciar el período de retención.
+Consulte [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para obtener un escenario de ejemplo que usa una directiva de etiqueta de retención de aplicación automática con propiedades administradas en SharePoint y una retención basada en eventos para iniciar el período de retención.
