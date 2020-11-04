@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7602ee5ac7001b4d4d88232c9528f0bdc731e90b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8036a4759f959a075ad0398e823116491e128c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693722"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847017"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -67,7 +67,7 @@ El objetivo principal del diseño de la red debe ser minimizar la latencia media
   
 Identificar el tráfico de red 365 de Microsoft es el primer paso para poder diferenciar dicho tráfico del tráfico de red genérico de Internet. La conectividad de Microsoft 365 puede optimizarse mediante la implementación de una combinación de enfoques como la optimización de rutas de red, reglas de firewall, la configuración de proxy del explorador y la omisión de dispositivos de inspección de red en determinados puntos de conexión.
   
-Las instrucciones anteriores de optimización de Microsoft 365 dividían los puntos de conexión de Microsoft 365 en dos categorías: **Necesarios** y **Opcionales**. Debido a que se han agregado puntos de conexión para admitir los nuevos servicios y características de Microsoft 365, hemos reorganizado los puntos de conexión de Microsoft 365 en tres categorías: **Optimizar**, **Permitir** y **Predeterminado**. Las instrucciones para cada categoría se aplican a todos los puntos de conexión de dicha categoría, para facilitar la comprensión y la implementación de las optimizaciones.
+Las instrucciones anteriores de optimización de Microsoft 365 dividían los puntos de conexión de Microsoft 365 en dos categorías: **Necesarios** y **Opcionales**. Debido a que se han agregado puntos de conexión para admitir los nuevos servicios y características de Microsoft 365, hemos reorganizado los puntos de conexión de Microsoft 365 en tres categorías: **Optimizar** , **Permitir** y **Predeterminado**. Las instrucciones para cada categoría se aplican a todos los puntos de conexión de dicha categoría, para facilitar la comprensión y la implementación de las optimizaciones.
   
 Para más información sobre las categorías de puntos de conexión de Microsoft 365 y los métodos de optimización, consulte la sección [Nuevas categorías de puntos de conexión de Office 365](microsoft-365-network-connectivity-principles.md#BKMK_Categories).
   
@@ -143,7 +143,7 @@ Los administradores de Microsoft 365 pueden crear scripts PAC (configuración au
 #### <a name="microsoft-365-security-features"></a>Características de seguridad de Microsoft 365
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft es transparente en relación con la seguridad de centros de datos, la seguridad operacional y la reducción de riesgos relacionados con los servidores de Microsoft 365 y con los puntos de conexión de red que representan. Las características de seguridad integradas de Microsoft 365 están disponibles para reducir los riesgos de seguridad de la red. Dichas características incluyen la prevención de la pérdida de datos, antivirus, autenticación multifactor, Caja de seguridad del cliente, Protección contra amenazas avanzada, Inteligencia sobre amenazas de Microsoft 365, Puntuación segura de Microsoft 365, Exchange Online Protection y seguridad de la red contra DDoS.
+Microsoft es transparente en relación con la seguridad de centros de datos, la seguridad operacional y la reducción de riesgos relacionados con los servidores de Microsoft 365 y con los puntos de conexión de red que representan. Las características de seguridad integradas de Microsoft 365 están disponibles para reducir los riesgos de seguridad de la red. Dichas características incluyen la prevención de pérdida de datos, antivirus, autenticación multifactor, Caja de seguridad del cliente, Microsoft Defender para Office 365, Inteligencia sobre amenazas de Microsoft 365, Puntuación de seguridad de Microsoft 365, Exchange Online Protection y seguridad de la red contra DDoS.
   
 Para más información sobre el centro de datos de Microsoft y la seguridad de la Red Global, consulte el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/security).
   
@@ -157,7 +157,7 @@ Los puntos de conexión de Office 365 representan un conjunto variado de direcci
   
 En nuestras instrucciones anteriores para administrar el tráfico de Microsoft 365, los puntos de conexión se organizaban en dos categorías: **Necesarios** y **Opcionales**. Los puntos de conexión en cada categoría requerían diferentes optimizaciones en función de la importancia del servicio, y muchos clientes se enfrentaban a dificultades para justificar la aplicación de las mismas optimizaciones de red a la lista completa de direcciones IP y URL de Office 365.
   
-En el nuevo modelo, los puntos de conexión se dividen en tres categorías: **Optimizar**, **Permitir** y **Predeterminado**, lo que proporciona un eje basado en las prioridades en el que se pueden centrar los esfuerzos de optimización de la red para lograr todas las mejoras posibles de rendimiento y el retorno de la inversión. Los puntos de conexión se consolidan en las categorías anteriores según la sensibilidad de la experiencia efectiva del usuario en relación con el volumen y la calidad de la red, el campo de rendimiento de los escenarios y la facilidad de implementación. Se pueden aplicar las optimizaciones recomendadas de la misma forma a todos los puntos de conexión de una categoría determinada.
+En el nuevo modelo, los puntos de conexión se dividen en tres categorías: **Optimizar** , **Permitir** y **Predeterminado** , lo que proporciona un eje basado en las prioridades en el que se pueden centrar los esfuerzos de optimización de la red para lograr todas las mejoras posibles de rendimiento y el retorno de la inversión. Los puntos de conexión se consolidan en las categorías anteriores según la sensibilidad de la experiencia efectiva del usuario en relación con el volumen y la calidad de la red, el campo de rendimiento de los escenarios y la facilidad de implementación. Se pueden aplicar las optimizaciones recomendadas de la misma forma a todos los puntos de conexión de una categoría determinada.
   
 - Los puntos de conexión de la categoría **Optimizar** son obligatorios para la conectividad a todos los servicios de Office 365 y representan más del 75 % del ancho de banda, las conexiones y el volumen de datos de Office 365. Estos puntos de conexión representan los escenarios de Office 365 que son más sensibles al rendimiento, la latencia y la disponibilidad de la red. Todos los puntos de conexión se hospedan en centros de datos de Microsoft. Se espera que la tasa de cambio para los puntos de conexión de esta categoría sea mucho menor que para los puntos de conexión de las otras dos categorías. Esta categoría contiene un conjunto reducido (en el orden de ~ 10) de direcciones URL y un conjunto definido de subredes IP dedicadas a cargas centrales de trabajo de Office 365, como Exchange Online, SharePoint Online, Skype Empresarial online y Microsoft Teams.
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398870"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845305"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -33,13 +33,13 @@ En este artículo, veremos cómo implementar equipos con un nivel de protección
 
 Como primer paso, le recomendamos que configure directivas básicas de identidad y acceso de dispositivo. Para más información, vea [Recomendaciones de directivas para proteger los chats, grupos y archivos de Teams](../security/office-365-security/teams-access-policies.md).
 
-También recomendamos activar las características básicas de protección contra amenazas avanzada para protegerse contra malware en documentos, datos adjuntos y vínculos. Se recomienda activar todas las opciones de la tabla siguiente.
+También recomendamos activar las características básicas de Microsoft Defender para Office 365 para protegerse contra malware en documentos, archivos adjuntos y vínculos. Se recomienda activar todas las opciones de la tabla siguiente.
 
 |Opción|Información|
 |:------|:-----------|
-|Datos adjuntos seguros ATP para SPO, OneDrive y Teams|[Datos adjuntos seguros de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).|
-|Documentos seguros de ATP|[Documentos seguros en Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Vínculos seguros de ATP para Teams|[Vínculos seguros de Office 365 en Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Vínculos seguros de Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Archivos adjuntos seguros para SPO, OneDrive y Teams|[Archivos adjuntos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).|
+|Documentos seguros|[Documentos seguros en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
+|Vínculos seguros en Teams|[Vínculos seguros de Office 365 en Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
 ## <a name="teams-guest-sharing"></a>Uso compartido de invitados en Teams
 
@@ -51,7 +51,7 @@ Para establecer la configuración de acceso de invitados de Teams
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todos**.
-3. En **Centros de administración**, haga clic en **Teams**.
+3. En **Centros de administración** , haga clic en **Teams**.
 4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **Configuración de toda la organización** y haga clic en **Acceso de invitado**.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
@@ -67,8 +67,8 @@ Para reducir el riesgo de compartir accidentalmente archivos o carpetas con pers
 
 Para cambiar el vínculo para compartir predeterminado
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Directivas**, haga clic en **Uso compartido**.
-3. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
+2. En **Directivas** , haga clic en **Uso compartido**.
+3. En **Vínculos de archivos y carpetas** , seleccione **Solo personas de la organización**.
 4. Haga clic en **Guardar**.
 
 Para disfrutar de la mejor experiencia de uso compartido de invitados, también le recomendamos que habilite la [Integración de SharePoint y OneDrive con B2B de Azure AD](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
@@ -87,8 +87,8 @@ Para actualizar la configuración de uso compartido del sitio
 1. En la barra de herramientas del equipo, haga clic en **Archivos**.
 2. Haga clic en **Abrir en SharePoint**.
 3. En la barra de herramientas de SharePoint, haga clic en el icono de configuración y luego en **Permisos del sitio**.
-4. En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
-5. En **Permisos de uso compartido**, elija **Los propietarios y miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios de sitios pueden compartir el sitio** y haga clic en **Guardar**.
+4. En el panel **Permisos del sitio** , en **Configuración de uso compartido** , haga clic en **Cambiar configuración de uso compartido**.
+5. En **Permisos de uso compartido** , elija **Los propietarios y miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios de sitios pueden compartir el sitio** y haga clic en **Guardar**.
 
 ## <a name="additional-protections"></a>Protecciones adicionales
 

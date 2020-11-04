@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681485"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845269"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
 
@@ -44,7 +44,7 @@ Para obtener más información, vea esta [introducción a Microsoft Intune](http
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager es una solución de administración local que permite administrar equipos de escritorio, servidores y portátiles en la red o en Internet. Puede usar Configuration Manager para implementar aplicaciones, actualizaciones de software y sistemas operativos. También puede supervisar el cumplimiento, hacer consultas y realizar acciones en los clientes en tiempo real, y mucho más. Puede habilitarlo en la nube para integrarlo con Intune, Azure AD, Protección contra amenazas avanzada de Microsoft Defender y otros servicios en la nube. 
+Configuration Manager es una solución de administración local que permite administrar equipos de escritorio, servidores y portátiles en la red o en Internet. Puede usar Configuration Manager para implementar aplicaciones, actualizaciones de software y sistemas operativos. También puede supervisar el cumplimiento, hacer consultas y realizar acciones en los clientes en tiempo real, y mucho más. Puede habilitarlo en la nube para integrarlo con Intune, Azure AD, Microsoft Defender para punto de conexión y otros servicios en la nube. 
 
 Para obtener más información, vea esta [introducción a Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 

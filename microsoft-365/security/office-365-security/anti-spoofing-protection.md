@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
-ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446280"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844421"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -39,13 +39,13 @@ Cuando se trata de proteger a sus usuarios, Microsoft se toma muy en serio las a
 
 Las siguientes tecnologías contra la suplantación de identidad están disponibles en EOP:
 
-- **Inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
+- **Inteligencia contra la suplantación de identidad** : revisa mensajes falsificados de remitentes en dominios internos y externos y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
 
-- **Directivas contra la suplantación de identidad**: en EOP, las directivas contra la suplantación de identidad le permiten activar o desactivar la inteligencia contra la suplantación de identidad, activar o desactivar la identificación de remitente no autenticado en Outlook, y especificar la acción para remitentes falsos bloqueados (mover a la carpeta de correo no deseado o a cuarentena). Las directivas avanzadas contra la suplantación de identidad disponibles en la protección contra amenazas avanzada de Office 365 (Office 365 ATP) también contienen la configuración de protección contra la suplantación (remitentes y dominios protegidos), la configuración de inteligencia de buzón y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
+- **Directivas contra la suplantación de identidad** : en EOP, las directivas contra la suplantación de identidad le permiten activar o desactivar la inteligencia contra la suplantación de identidad, activar o desactivar la identificación de remitente no autenticado en Outlook, y especificar la acción para remitentes falsos bloqueados (mover a la carpeta de correo no deseado o a cuarentena). Las directivas avanzadas contra el phishing disponibles en Microsoft Defender para Office 365 también contienen la configuración de protección contra la suplantación (remitentes y dominios protegidos), la configuración de inteligencia de buzón y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
 
-- **Autenticación de correo electrónico**: una parte integral de cualquier esfuerzo contra la suplantación de identidad es el uso de la autenticación de correo electrónico (también conocida como validación de correo electrónico) por registros de DMARC, DKIM y DMARC en DNS. Puede configurar estos registros para sus dominios, de modo que los sistemas de correo electrónico de destino puedan comprobar la validez de los mensajes que requieran que se envíen a los remitentes de su dominio. Para los mensajes entrantes, Microsoft 365 requiere la autenticación de correo electrónico para los dominios de remitente. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
+- **Autenticación de correo electrónico** : una parte integral de cualquier esfuerzo contra la suplantación de identidad es el uso de la autenticación de correo electrónico (también conocida como validación de correo electrónico) por registros de DMARC, DKIM y DMARC en DNS. Puede configurar estos registros para sus dominios, de modo que los sistemas de correo electrónico de destino puedan comprobar la validez de los mensajes que requieran que se envíen a los remitentes de su dominio. Para los mensajes entrantes, Microsoft 365 requiere la autenticación de correo electrónico para los dominios de remitente. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
 
-A partir de octubre del 2018, la protección contra la suplantación de identidad está disponible en EOP. Antes, la protección contra la suplantación de identidad solo estaba disponible en organizaciones con ATP de Office 365.
+A partir de octubre del 2018, la protección contra la suplantación de identidad está disponible en EOP.
 
 EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinación de métodos de autenticación de correo electrónico estándar y técnicas de reputación del remitente.
 
@@ -55,7 +55,7 @@ EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinaci�
 
 Los mensajes de suplantación de identidad tienen estas implicaciones negativas para los usuarios:
 
-- **Los mensajes falsificados engañan a los usuarios**: un mensaje falsificado puede engañar al destinatario para que haga clic en un vínculo y proporcione sus credenciales, descargue malware o responda a un mensaje con contenido confidencial (conocido como Business Email Compromise: compromiso de correo electrónico empresarial o BEC).
+- **Los mensajes falsificados engañan a los usuarios** : un mensaje falsificado puede engañar al destinatario para que haga clic en un vínculo y proporcione sus credenciales, descargue malware o responda a un mensaje con contenido confidencial (conocido como Business Email Compromise: compromiso de correo electrónico empresarial o BEC).
 
   Por ejemplo, el siguiente es un ejemplo de suplantación de identidad que usa el remitente falsificado msoutlook94@service.outlook.com:
 
@@ -69,7 +69,7 @@ Los mensajes de suplantación de identidad tienen estas implicaciones negativas 
 
   El mensaje parece legítimo, pero el remitente es falso.
 
-- **Los usuarios confunden mensajes reales con falsos**: incluso los usuarios que sepan acerca de la suplantación de identidad podrían tener dificultades para ver las diferencias entre los mensajes reales y los mensajes falsificados.
+- **Los usuarios confunden mensajes reales con falsos** : incluso los usuarios que sepan acerca de la suplantación de identidad podrían tener dificultades para ver las diferencias entre los mensajes reales y los mensajes falsificados.
 
   El siguiente mensaje es un ejemplo de un mensaje de restablecimiento de contraseña real desde la cuenta de Microsoft Security:
 
@@ -81,7 +81,7 @@ Los mensajes de suplantación de identidad tienen estas implicaciones negativas 
 
 Microsoft distingue entre dos tipos de mensajes falsificados:
 
-- **Suplantación de identidad en la organización**: también conocida como _suplantación de identidad propia_. Por ejemplo:
+- **Suplantación de identidad en la organización** : también conocida como _suplantación de identidad propia_. Por ejemplo:
 
   - El remitente y el destinatario están en el mismo dominio:
     > De: jose@contoso.com <br/> Para: carla@contoso.com
@@ -104,7 +104,7 @@ Microsoft distingue entre dos tipos de mensajes falsificados:
 
   - SFTY es el nivel de seguridad del mensaje. 9 indica suplantación de identidad (phishing), .11 indica suplantación dentro de la organización.
 
-- **Suplantación entre dominios**: los dominios del remitente y el destinatario son distintos, y no tienen ninguna relación entre sí (también conocidos como dominios externos). Por ejemplo:
+- **Suplantación entre dominios** : los dominios del remitente y el destinatario son distintos, y no tienen ninguna relación entre sí (también conocidos como dominios externos). Por ejemplo:
     > De: jose@contoso.com <br/> Para: carla@tailspintoys.com
 
   Los mensajes que producen un error de [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) debido a la suplantación de identidad entre dominios contienen los siguientes valores en los encabezados:
@@ -125,7 +125,7 @@ Para obtener más información acerca de la configuración de DMARC, consulte [U
 
 Las organizaciones de EOP pueden usar el informe de **Detecciones de suplantación** en el panel de Informes del Centro de seguridad y cumplimiento. Para obtener más información, consulte [Informe de detecciones de suplantación](view-email-security-reports.md#spoof-detections-report).
 
-La organización de ATP de Office 365 puede usar el explorador de amenazas en el Centro de seguridad y cumplimiento para ver información acerca de los intentos de suplantación de identidad. Para obtener más información, consulte [Investigación y respuesta frente a amenazas de Microsoft 365](office-365-ti.md).
+La organización de Microsoft Defender para Office 365 puede usar el explorador de amenazas en el Centro de seguridad y cumplimiento para ver información acerca de los intentos de phishing. Para obtener más información, consulte [Investigación y respuesta frente a amenazas de Microsoft 365](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Problemas con la protección contra la suplantación de identidad
 
