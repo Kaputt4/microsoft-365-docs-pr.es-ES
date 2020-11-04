@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con los invitados en Microsoft Teams.
-ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración de la tarea, conversación y documentación con los invitados en Microsoft Teams.
+ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409053"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906864"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -54,7 +54,7 @@ Para establecer la configuración de relación organizativa
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
-Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados**, seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
+Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados** , seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
 
 ## <a name="teams-guest-access-settings"></a>Configuración de acceso de invitado de Microsoft Teams
 
@@ -68,7 +68,7 @@ Para establecer la configuración de acceso de invitados de Teams
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todo**.
-3. En **Centros de administración**, haga clic en **Teams**.
+3. En **Centros de administración** , haga clic en **Teams**.
 4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **configuración de toda la organización** y haga clic en **acceso de invitado**.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
@@ -104,7 +104,7 @@ Si desea permitir el uso compartido de archivos y carpetas con personas sin aute
 
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración** , haga clic en **SharePoint**.
 2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **directivas** y, a continuación, haga clic en **compartir**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
@@ -128,7 +128,7 @@ Elija uno de los siguientes tipos de vínculo que se seleccionarán de forma pre
 Para establecer la configuración de vínculos predeterminados de nivel de organización de SharePoint
 
 1. Vaya a la página de uso compartido en el centro de administración de SharePoint.
-2. En **vínculos de archivos y carpetas**, seleccione el vínculo de uso compartido predeterminado que desee usar.
+2. En **vínculos de archivos y carpetas** , seleccione el vínculo de uso compartido predeterminado que desee usar.
 3. Si ha realizado cambios, haga clic en **Guardar**.
 
 ## <a name="create-a-team"></a>Crear un equipo
@@ -147,7 +147,7 @@ Invitaremos a los usuarios más adelante. A continuación, es importante comprob
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido en el nivel de sitio de SharePoint
 
-Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este equipo. Por ejemplo, si establece la configuración en el nivel de la organización en **cualquiera**, pero desea que todos los invitados se autentiquen para este equipo, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
+Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este equipo. Por ejemplo, si establece la configuración en el nivel de la organización en **cualquiera** , pero desea que todos los invitados se autentiquen para este equipo, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -175,7 +175,7 @@ Para invitar a invitados a un equipo
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

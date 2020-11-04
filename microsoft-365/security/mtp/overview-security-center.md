@@ -1,6 +1,6 @@
 ---
-title: Información general del centro de seguridad de Microsoft 365
-description: Describe la nueva casa para supervisar y administrar la seguridad en las identidades, los datos, los dispositivos y las aplicaciones de Microsoft.
+title: Información general-centro de seguridad 365 de Microsoft
+description: Describe la supervisión y la administración de la seguridad en las identidades de Microsoft, los datos, los dispositivos y las aplicaciones con la seguridad de Microsoft 365.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, identidades, datos, dispositivos, aplicaciones
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -16,12 +16,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844805"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906848"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 

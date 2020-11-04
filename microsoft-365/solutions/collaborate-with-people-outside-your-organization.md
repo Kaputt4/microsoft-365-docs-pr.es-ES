@@ -13,15 +13,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Configure Microsoft 365 para habilitar el uso compartido y seguridad adicional al invitar a usuarios externos a colaborar en Microsoft Teams y compartir sitios de SharePoint.
-ms.openlocfilehash: 11359e2de358d5673da6c39ca2d419c94349a829
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Obtenga información sobre cómo configurar las aplicaciones de Microsoft 365 como Teams, OneDrive y SharePoint para la colaboración con personas de fuera de la organización.
+ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377418"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906994"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas fuera de la organización
 

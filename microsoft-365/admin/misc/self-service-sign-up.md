@@ -1,5 +1,5 @@
 ---
-title: Uso del registro de autoservicio en su organización
+title: Uso del inicio de sesión de autoservicio en la organización
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Obtenga información sobre los programas de inscripción y autoservicio disponibles de Microsoft 365, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 for Finance.
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: Obtenga información sobre los programas de suscripción de autoservicio de Microsoft 365 y de autoservicio disponibles, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para Finance.
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324485"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906578"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
+# <a name="using-self-service-sign-up-in-your-organization"></a>Uso del inicio de sesión de autoservicio en la organización
 
-El registro de autoservicio permite a los usuarios de su organización registrarse más fácilmente para obtener servicios en línea de Microsoft. Llamamos a este proceso de inicio de sesión de autoservicio, ya que los usuarios pueden suscribirse a servicios pagados mediante la suscripción o usar servicios gratuitos, sin pedirle que realice ninguna acción en su nombre.
+El registro de autoservicio permite a los usuarios de la organización registrarse más fácilmente para obtener servicios en línea de Microsoft. Llamamos a este proceso de suscripción "inscripción en el autoservicio", ya que los usuarios pueden suscribirse a servicios pagados mediante la suscripción o usar servicios gratuitos, sin pedirle que realice ninguna acción en su nombre.
   
 ## <a name="how-self-service-sign-up-works"></a>Funcionamiento del registro de autoservicio
 
@@ -44,9 +44,8 @@ En el siguiente ejemplo, se describe cómo se realiza la inscripción automátic
 
 A continuación se muestran los programas de autoservicio actualmente disponibles. Esta lista se actualizará a medida que se agreguen nuevos programas.
   
-|||||
+| Programa <br/> | Descripción <br/> | Información adicional <br/> | Sitio web para el inicio de sesión de autoservicio <br/> |
 |:-----|:-----|:-----|:-----|
-|**Programa** <br/> |**Descripción** <br/> |**Información adicional** <br/> |Sitio web para registro de Self-Service * * * * <br/> |
 |Office 365 a1 * * * * <br/> |Cualquier estudiante o profesor puede usar una dirección de correo electrónico de la escuela para registrarse gratuitamente para Office 365 y obtener aplicaciones de Office para la web, 1 TB de almacenamiento en la nube de OneDrive y SharePoint Online para los sitios de clase, equipo y proyecto.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 a1 más** <br/> |Los estudiantes y profesores elegibles pueden registrarse para Office 365 a1 Plus, que incluye todo lo mencionado anteriormente más Microsoft 365 apps for Enterprise. Microsoft 365 apps for Enterprise es software de productividad, incluidos Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access y Skype empresarial, que está instalado en el equipo de escritorio o portátil.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI permite a los usuarios visualizar datos, compartir descubrimientos y colaborar en nuevas formas intuitivas. <br/> Si su organización ya está suscrita, también puede ver las licencias de "prueba de usuario individual de Power BI Pro", que ofrece a los usuarios un acceso limitado y gratuito a las capacidades avanzadas.  <br/> |[Power BI en su organización](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |

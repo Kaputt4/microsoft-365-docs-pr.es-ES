@@ -1,6 +1,6 @@
 ---
-title: 'Obstáculos de seguridad que puede gobernar: el punto de vista de un arquitecto'
-description: Descripción.
+title: Microsoft 365 Enterprise Resource Planning-arquitectura Cybersecurity
+description: Obtenga información sobre cómo superar los desafíos de seguridad de la arquitectura empresarial de Microsoft de Kozeta Garrett, Cybersecurity Architect en Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 454db3da5c37035cb3146e437761eff0f953b642
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842803"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906982"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Obstáculos de seguridad que puede gobernar: el punto de vista de un arquitecto
 

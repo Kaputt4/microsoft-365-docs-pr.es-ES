@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la administración del conocimiento en Project Cortex.
-ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361956"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906946"
 ---
 # <a name="knowledge-management-overview-preview"></a>Introducción a la administración del conocimiento (vista previa)
 
@@ -29,25 +29,32 @@ La administración de conocimiento usa la tecnología de Microsoft AI, Microsoft
 
 El objetivo es proporcionar información a los usuarios en las aplicaciones que usan diariamente, como Outlook, Teams y SharePoint.
 
-Por ejemplo, los usuarios ven términos desconocidos en sus correos electrónicos, sitios de SharePoint o conversaciones en Microsoft Teams, de los que quieren saber más. La administración de conocimiento usa AI para buscar e identificar automáticamente estos **temas**y compila información sobre ellos, como una breve descripción, los expertos en la materia y los sitios, los archivos y las páginas que están relacionados con el tema. Puede optar por actualizar la información del tema según sea necesario. A continuación, puede poner los temas a disposición de los usuarios, lo que significa que, para cada instancia del tema que aparece en aplicaciones como Outlook, Teams y SharePoint, el texto se resaltará. Los usuarios pueden elegir seleccionar el tema para obtener más información mediante el tema detalles.
+Por ejemplo, los usuarios ven términos desconocidos en sus correos electrónicos, sitios de SharePoint o conversaciones en Microsoft Teams, de los que quieren saber más. La administración de conocimiento usa AI para buscar e identificar automáticamente estos **temas** y compila información sobre ellos, como una breve descripción, los expertos en la materia y los sitios, los archivos y las páginas que están relacionados con el tema. Puede optar por actualizar la información del tema según sea necesario. A continuación, puede poner los temas a disposición de los usuarios, lo que significa que, para cada instancia del tema que aparece en aplicaciones como Outlook, Teams y SharePoint, el texto se resaltará. Los usuarios pueden elegir seleccionar el tema para obtener más información mediante el tema detalles.
 
 
-## <a name="topic-discovery"></a>Detección de temas
+## <a name="topic-indexing"></a>Indización de temas
 
-La administración de conocimiento usa la tecnología de Microsoft AI para buscar **temas** en su entorno de Office 365.
+La administración de conocimiento usa la tecnología de Microsoft AI para identificar **temas** en su entorno de Office 365.
 
 Un tema es una frase o un término que es importante en cuanto a la organización. Tiene un significado específico para la organización y tiene recursos relacionados con ella que pueden ayudar a los usuarios a comprender lo que es y encontrar más información sobre ella.
 
-Cuando se detecta un tema, se crea una **Página de tema** para el mismo que contiene información que se recopiló a través de la detección de temas, por ejemplo:
+Cuando se identifica un tema, se crea una **página del tema** que contiene información que se recopiló a través de la indización de temas, por ejemplo:
 
+- Nombres alternativos o acrónimos.
 - Una breve descripción del tema.
 - Usuarios que podrían conocer el tema.
 - Archivos, páginas y sitios relacionados con el tema.
 
 
+## <a name="topic-discovery"></a>Detección de temas
+Cuando se menciona un tema en contenido de las páginas y las noticias de SharePoint, se verá resaltado. Abra el resumen del tema desde el resaltado. Abra el tema detalles en el título del Resumen. <!--(msg for Efren: not sure if I should use discovery for this; we use discovered in-product for indexing?)--> El tema mencionado se puede identificar automáticamente o se ha agregado a la página con una referencia directa al tema por parte del autor de la página.
+
+También puede descubrir temas mediante Microsoft Search.
+
+
 ## <a name="topic-management"></a>Administración de temas
 
-La administración de temas se lleva a cabo en el **centro de temas**de la organización. El sitio del centro de temas se crea durante la instalación y sirve como centro de conocimientos para su organización. Contendrá una lista de todos los temas que se detectaron en su entorno, así como todas las páginas de temas que se crearon para estos temas. 
+La administración de temas se lleva a cabo en el **centro de temas** de la organización. El sitio del centro de temas se crea durante la instalación y sirve como centro de conocimientos para su organización. Contendrá una lista de todos los temas que se detectaron en su entorno, así como todas las páginas de temas que se crearon para estos temas. 
 
 Los usuarios que disponen de los permisos correctos podrán hacer lo siguiente en el centro de temas:
 
@@ -70,17 +77,15 @@ Los controles de administración en el centro de administración de Microsoft 36
 
 Consulte [Manage Your Knowledge Network](manage-knowledge-network.md) para obtener más información. 
 
-## <a name="topic-curation"></a>Tema curation
+## <a name="topic-curation--feedback"></a>Tema curation & comentarios
 
 AI continuará trabajando continuamente para proporcionar sugerencias para mejorar los temas a medida que se produzcan cambios en el entorno.
 
-Los usuarios a los que permite el acceso ven temas en su trabajo diario pueden realizar sugerencias para mejorarlos. Por ejemplo, si un usuario ve la página del tema y ve información que es incorrecta o tiene que agregarse, un vínculo en la página del tema les permite enviar una solicitud para actualizar la información.
+Los usuarios a los que permite el acceso ven temas en su trabajo diario pueden realizar sugerencias para mejorarlos. Por ejemplo, si un usuario ve la página del tema y ve información que no es correcta o tiene que agregarse, un vínculo en la página del tema les permite editar la información directamente. Otro ejemplo, si un usuario ve un resaltado en una página de noticias de SharePoint, encontrará preguntas preguntando si el resaltado es apropiado o si el tema sugerido es adecuado para su organización. Su respuesta le ayudará a determinar lo que se muestra en los resúmenes de tema y en los detalles del tema.
 
-Además, los usuarios con los permisos adecuados pueden etiquetar elementos como la conversación de Microsoft teams que son relevantes para un tema y agregarlos a un tema específico.
-
-
+Además, los usuarios con los permisos adecuados pueden etiquetar elementos como la conversación de Yammer que son relevantes para un tema y agregarlos a un tema específico. <!--(msg for Efren: changed to Yammer, because we will not have shipped Teams yet)-->
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 [Configuración de la administración del conocimiento](set-up-knowledge-network.md)</br>
 [Información general sobre el centro de temas](topic-center-overview.md)

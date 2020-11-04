@@ -11,25 +11,25 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 6e4038982f396bbd427273225c2a3d1a9f866252
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948131"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906970"
 ---
 # <a name="topic-center-overview-preview"></a>Información general sobre el centro de temas (vista previa)
 
 > [!Note] 
-> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información sobre Project Cortex](https://aka.ms/projectcortex).
+> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
 El centro del tema es un sitio de SharePoint moderno que sirve como centro de conocimientos para su organización. Se crea durante la [configuración de administración del conocimiento](set-up-knowledge-network.md) en el centro de administración de Microsoft 365.
 
-A través del centro del tema, los usuarios con los permisos adecuados pueden hacer lo siguiente:
+El centro del tema tiene una página principal predeterminada en la que puede ver los temas a los que se ha conectado o que se recomienda que estén conectados. Los usuarios con los permisos adecuados también pueden:
 
-- Confirmar o rechazar temas descubiertos
 - Crear una nueva página del tema
-- Editar una página de tema existente
+- Confirmar o rechazar temas sugeridos
+- Editar y publicar cambios en una página de tema
 
 > [!Note] 
 > Puede obtener más información sobre cada tarea en [trabajar con temas en el centro de temas](work-with-topics.md).
@@ -44,14 +44,26 @@ El centro de temas se crea durante la configuración de administración del cono
 
 2. En la página **conectar personas a los conocimientos** , en la sección **de un vistazo** , vea **dirección del centro de temas** para la dirección URL del sitio.
 
-## <a name="permissions-to-use-the-topic-center"></a>Permisos para usar el centro de temas
+## <a name="home-page"></a>Página principal
 
-Para trabajar en el centro de temas, necesita tener los permisos necesarios. El administrador puede asignar estos permisos a los usuarios durante la [configuración de administración del conocimiento](set-up-knowledge-network.md), o el administrador puede [agregar posteriormente](give-user-permissions-to-the-topic-center.md) nuevos usuarios a través del centro de administración de Microsoft 365.
+Para ver el centro de temas, necesita tener permisos para ver los temas y el tema experiencias. El administrador puede asignar estos permisos a los usuarios durante la [configuración de administración del conocimiento](set-up-knowledge-network.md), o el administrador puede [agregar posteriormente](give-user-permissions-to-the-topic-center.md) nuevos usuarios a través del centro de administración de Microsoft 365.
+
+En la Página principal 
+- **Ver temas** : ver experiencias de temas. Por lo tanto, puede ver los temas de la organización y proporcionar comentarios sobre los temas a los que se ha conectado:
+1. Conexiones sugeridas: son temas en los que se ha sugerido mi conexión
+2. Conexiones confirmadas: Estos son los temas donde estoy anclado al tema o he confirmado que los temas de conexión se desplazarán de la sección sugerido a confirmado cuando confirmo una conexión sugerida.
+Una vez que esté anclado, las modificaciones realizadas en la página del tema pueden realizarse para Curate mi conexión.
+
+- **Crear y editar temas** : el tema nuevo está disponible y puede editar páginas
+
+
+## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Permisos para usar el centro de temas de capacidad administrar temas
+
+Para trabajar en la sección administrar temas del centro de temas, necesita tener los permisos necesarios. El administrador puede asignar estos permisos a los usuarios durante la [configuración de administración del conocimiento](set-up-knowledge-network.md), o el administrador puede [agregar posteriormente](give-user-permissions-to-the-topic-center.md) nuevos usuarios a través del centro de administración de Microsoft 365.
 
 Los usuarios del centro de temas pueden recibir dos conjuntos de permisos:
 
-- **Crear y editar temas**: cree nuevos temas o actualice el contenido de los temas, como la descripción, documentos y personas asociadas. Asigne este permiso a expertos en la materia que se encargan de revisar las páginas del tema.
-- **Administración de temas**: Use el panel de temas para revisar los temas de la organización. Los usuarios pueden realizar acciones como confirmar y rechazar los temas no confirmados.
+- **Administración de temas** : Use el panel de temas para revisar los temas de la organización. Los usuarios pueden realizar acciones como confirmar y rechazar los temas no confirmados.
 
 Un usuario puede tener configurados ambos conjuntos de permisos o solo uno si es necesario. 
 

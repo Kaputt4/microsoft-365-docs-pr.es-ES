@@ -1,5 +1,5 @@
 ---
-title: Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos-SharePoint Online
+title: Personalización de un sitio de grupo de SharePoint para el almacenamiento y el uso compartido de archivos
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,19 +17,20 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: En este artículo, aprenderá a personalizar, organizar y administrar el sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: f2c59607d006cd6e5529d9e5ffb3d2f6eead6edf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Obtenga información sobre cómo personalizar, organizar y administrar el sitio de grupo de SharePoint con las bibliotecas de documentos, las listas y los concentradores.
+ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644572"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906494"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
 
@@ -39,7 +40,7 @@ Si tiene una pequeña empresa con algunos empleados, una de las mejores formas d
   
 [Crear un sitio de grupo en SharePoint](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-Estas son algunas ideas y vínculos para ayudarle a personalizar, organizar y administrar el sitio de grupo. 
+Estas son algunas ideas y vínculos para ayudarle a personalizar, organizar y administrar el sitio de grupo.
   
  
 ## <a name="customize-your-team-site"></a>Personalizar un sitio de grupo
@@ -60,7 +61,7 @@ Para obtener información sobre la configuración del sitio de grupo, vea [Manag
   
 ## <a name="work-with-document-libraries"></a>Trabajar con bibliotecas de documentos
 
-Un sitio de grupo incluye una biblioteca de documentos que puede empezar a usar inmediatamente. 
+Un sitio de grupo incluye una biblioteca de documentos que puede empezar a usar inmediatamente para el almacenamiento de archivos y la administración de documentos.
 
 Para empezar a cargar, vea [cargar una carpeta o archivos en una biblioteca de documentos](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb) .
    
@@ -70,7 +71,7 @@ Para obtener información sobre cómo crear vistas de bibliotecas para datos esp
   
 ## <a name="work-with-lists-to-organize-data"></a>Trabajar con listas para organizar los datos
 
-SharePoint incluye muchas plantillas para listas que puede Agregar a su sitio, como una lista de vínculos, un calendario, contactos o tareas. 
+SharePoint incluye muchas plantillas para listas que puede Agregar a su sitio, como una lista de vínculos, un calendario, contactos o tareas.
   
 Obtenga información sobre cómo [crear una lista en SharePoint](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online).
   
@@ -82,7 +83,7 @@ Ver un vídeo sobre cómo agregar calendarios a su sitio, vea [crear un calendar
 
 ## <a name="organize-sites-into-hubs"></a>Organizar sitios en concentradores
 
-El sitio de grupo comparte casi todo lo que hay con todos los miembros del grupo asociado con el sitio. Si desea tener un sitio independiente para clientes específicos, puede crear sitios de grupo adicionales y administrarlos mediante sitios concentradores de SharePoint. Aquí tiene más información. 
+El sitio de grupo comparte casi todo lo que hay con todos los miembros del grupo asociado con el sitio. Si desea tener un sitio independiente para clientes específicos, puede crear sitios de grupo adicionales y administrarlos mediante sitios concentradores de SharePoint. Aquí tiene más información.
   
 Los sitios de concentradores le permiten agregar y asociar sitios. Para obtener más información, vea [¿Qué es un sitio concentrador de SharePoint?](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f).
   
@@ -92,7 +93,7 @@ Para obtener información sobre cómo agregar sitios a un sitio concentrador, ve
   
 ## <a name="sharing-files-with-the-team"></a>Uso compartido de archivos con el equipo
 
-Aunque el almacenamiento y la organización son un comienzo, el uso compartido con su equipo y los clientes externos también es importante. Estos son algunos vínculos a temas que le ayudarán a administrar los usuarios y a compartir sus datos. 
+Aunque el almacenamiento de archivos y la administración de documentos es un inicio, también es importante compartir el equipo y los clientes externos. Estos son algunos vínculos a temas que le ayudarán a administrar los usuarios y a compartir sus datos.
   
 Para compartir archivos con su equipo, vea [compartir archivos o carpetas de SharePoint en Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
@@ -100,7 +101,7 @@ Para comprender el uso compartido fuera de su equipo, vea [external Sharing Over
   
 ## <a name="managing-users-and-groups"></a>Administración de usuarios y grupos
 
-Al administrar el sitio de grupo, es posible que tenga que agregar o quitar usuarios. Esta es la información que le ayudará a comprender, agregar y administrar usuarios en el sitio de grupo. 
+Al administrar el sitio de grupo, es posible que tenga que agregar o quitar usuarios. Esta es la información que le ayudará a comprender, agregar y administrar usuarios en el sitio de grupo.
   
 Vea un vídeo sobre los grupos con los [grupos comprender y administrar](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
@@ -119,6 +120,3 @@ Obtenga información sobre cómo controlar solicitudes de acceso con [configurar
   - [Configurar Office en Windows Phone con Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Más información sobre el uso de OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
-    
-
-

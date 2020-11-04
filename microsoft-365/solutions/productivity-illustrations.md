@@ -1,6 +1,6 @@
 ---
 title: Ilustraciones de productividad de Microsoft 365
-description: Use estas ilustraciones para entender los conceptos básicos de la arquitectura para implementar soluciones de productividad de Microsoft 365.
+description: Use estas ilustraciones, como el diagrama de la arquitectura de Teams, para comprender los conceptos básicos de la arquitectura para implementar soluciones de productividad de Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,29 +13,29 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 160211fe481d14749bd778255e6844b12aa80672
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847241"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906792"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
-La serie de soluciones empresariales de Microsoft 365 ofrece orientación para implementar funcionalidades de Microsoft 365, sobre todo cuando estas abarcan varias tecnologías.
+La serie de soluciones de Microsoft 365 Enterprise ofrece orientación para implementar capacidades de Microsoft 365, sobre todo cuando las capacidades se cruzan entre tecnologías, incluidos los diagramas de arquitectura de Teams.
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams y servicios de productividad relacionados de Microsoft 365 para arquitectos de TI
 La arquitectura lógica de los servicios de productividad en Microsoft 365, una de las más destacadas gracias a Microsoft Teams.
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
-|[![Imagen en miniatura para el póster de la arquitectura lógica de Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en abril de 2019   |Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <br/> <br/>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
+|[![Póster de arquitectura lógica de Microsoft Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Actualizado en abril de 2019   |Microsoft proporciona un conjunto de servicios de productividad que funcionan en conjunto para proporcionar experiencias de colaboración con funcionalidades de gobierno, seguridad y cumplimiento. <br/> <br/>Esta serie de ilustraciones proporciona una vista de la arquitectura lógica de los servicios de productividad para arquitectos empresariales, que es una de las más destacadas gracias a Microsoft Teams.|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupos en Microsoft 365 para arquitectos de TI
 Lo que necesitan saber los arquitectos de TI sobre los grupos en Microsoft 365
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Imagen en miniatura para la infografía de grupos](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Actualizado el 2020 de mayo|Estas ilustraciones detallan los diferentes tipos de grupos, cómo se crean y administran, y algunas recomendaciones para el gobierno de estos.|
 
@@ -46,7 +46,7 @@ Microsoft 365 incluye un amplio conjunto de capacidades de protección y cumplim
 Este conjunto de ilustraciones utiliza una de las industrias más reguladas, servicios financieros, para demostrar cómo se pueden aplicar estas capacidades para cumplir los requisitos normativos comunes. No dude en adaptar estas ilustraciones a su propio uso. 
 
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Póster de modelo: Microsoft 365 de protección de la información y capacidades de cumplimiento](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Actualizado el 2020 de octubre|Incluya <ul><li>  Protección de la información y prevención de pérdida de datos de Microsoft</li><li>Directivas de retención y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de las comunicaciones</li><li>Riesgo de Insider</li><li>Recopilación de datos de terceros</li>|
 
@@ -54,16 +54,16 @@ Este conjunto de ilustraciones utiliza una de las industrias más reguladas, ser
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Seguridad y protección de la información para organizaciones de varias regiones
 Seguridad y protección de la información para organizaciones de varias regiones con un único espacio empresarial de Microsoft 365
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
-|[![Imagen en miniatura para infografía de varias regiones](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Actualizado en marzo de 2020 |Usar un único espacio empresarial de Microsoft 365 para su organización global es la mejor opción y experiencia por muchas razones. Sin embargo, en muchos arquitectos luchan por cómo cumplir los objetivos de protección de la información y seguridad en distintas regiones. Este conjunto de temas contiene recomendaciones. |
+|[![Infografía de varias regiones](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Actualizado en marzo de 2020 |Usar un único espacio empresarial de Microsoft 365 para su organización global es la mejor opción y experiencia por muchas razones. Sin embargo, en muchos arquitectos luchan por cómo cumplir los objetivos de protección de la información y seguridad en distintas regiones. Este conjunto de temas contiene recomendaciones. |
 
 ### <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>Microsoft defender para la estrategia de implementación de extremos
 
 Dependiendo de su entorno, algunas herramientas son más adecuadas para determinadas arquitecturas.
 
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Imagen en miniatura de Microsoft defender para la estrategia de implementación de extremos](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Actualizado en febrero de 2020| El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
 
@@ -73,7 +73,7 @@ Dependiendo de su entorno, algunas herramientas son más adecuadas para determin
 
 Capacidades recomendadas para proteger las identidades y los dispositivos que tienen acceso a Microsoft 365, otros servicios de SaaS y aplicaciones locales publicadas con el proxy de aplicación de Azure AD.
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Póster de modelos: protección de identidades y dispositivos para Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Ver como PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Actualizado en septiembre de 2020|Es importante usar niveles de protección coherentes en los datos, las identidades y los dispositivos. Este modelo muestra qué capacidades son comparables con más información sobre las capacidades para proteger las identidades y los dispositivos.  <br/> |
  
@@ -82,7 +82,7 @@ Capacidades recomendadas para proteger las identidades y los dispositivos que ti
 
 Flujo de datos y flujo de datos de la exhibición de documentos electrónicos de un extremo a otro avanzado, incluidos en los entornos multigeográficoes de Microsoft 365. 
 
-| Item | Description |
+| Item | Descripción |
 |:-----|:-----|
 |[![Póster de modelos: arquitectura avanzada de exhibición de documentos electrónicos en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Ver como imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Descargar como PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Descargar como Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Actualizado el 2020 de octubre|Incluya <ul><li>  Flujo de trabajo de un extremo a otro en un solo entorno</li><li>Flujo de trabajo de un extremo a otro en un entorno multigeográfico de Microsoft 365 </li><li>Flujo de datos de un extremo a otro que admite el flujo de trabajo de EDRM</li> |
   
@@ -125,7 +125,7 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 Microsoft es compatible con varias opciones cuando empieza a utilizar Teams en la nube de Microsoft. Este póster le ayudará a decidir qué solución de telefonía de Microsoft (sistema telefónico en la nube o Enterprise Voice para ubicaciones locales) es adecuada para los usuarios de su organización y cómo su organización puede conectarse a la red telefónica pública conmutada (RTC).
 
 
-[![Miniatura del póster de Soluciones de telefonía de Microsoft](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Póster de soluciones de telefonía de Microsoft](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
 Actualizado en enero de 2019
 

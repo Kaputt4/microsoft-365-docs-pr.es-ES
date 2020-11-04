@@ -1,5 +1,5 @@
 ---
-title: Preguntas más frecuentes de dominios
+title: Preguntas más frecuentes acerca de los dominios
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Obtenga más información acerca de los dominios buscando respuestas a las preguntas más frecuentes.
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Obtenga más información acerca de los dominios (dominio de dominio y tranfer) buscando respuestas a sus preguntas en preguntas más frecuentes.
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644589"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906482"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 ::: moniker-end
 
@@ -85,7 +86,7 @@ Es importante que tenga o cree  **un solo registro TXT para SPF**. Si ya tiene u
 
 Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente, toma la forma del nombre de la organización y un sufijo de Internet estándar, como  *yourbusiness.com*  o  *StateUniversity.edu.* 
   
-Usar un dominio personalizado como "**rob \@ contoso.com**" con Microsoft 365 puede ayudarle a crear credibilidad y un reconocimiento para su marca. 
+Usar un dominio personalizado como " **rob \@ contoso.com** " con Microsoft 365 puede ayudarle a crear credibilidad y un reconocimiento para su marca. 
   
 Puede [comprar un dominio en Microsoft 365 y configurarlo automáticamente](../get-help-with-domains/buy-a-domain-name.md), o puede comprar o traer uno que ya es propietario de un registrador de dominios.
     
@@ -200,15 +201,15 @@ Cuando se agregan varios dominios a Microsoft 365, puede hospedar cualquiera de 
 
 Para obtener el procedimiento para transferir un dominio, consulte [transferir un dominio de Microsoft a otro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloto de Microsoft 365 desde mi dominio personalizado
 
 Para obtener el procedimiento piloto de funcionalidad de correo electrónico Microsoft 365 desde un dominio personalizado a un buzón de Microsoft 365, consulte [piloto microsoft 365 From My Custom Domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>¿Por qué tengo un dominio "onmicrosoft.com"?
 
-Microsoft 365 crea un dominio para usted, como *contoso.onmicrosoft.com*, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.com*. 
+Microsoft 365 crea un dominio para usted, como *contoso.onmicrosoft.com* , cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.com*. 
   
- **Si quiere que su correo sea similar a *Alan \@ contoso.com*:** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos que se indican en [Agregar usuarios y dominios a Microsoft 365](add-domain.md) si es el propietario ya. 
+ **Si quiere que su correo sea similar a *Alan \@ contoso.com* :** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos que se indican en [Agregar usuarios y dominios a Microsoft 365](add-domain.md) si es el propietario ya. 
   
 - **No puede cambiar el nombre del dominio de mi Microsoft después de suscribirse.** Por ejemplo, si el dominio inicial elegido era fourthcoffee.onmicrosoft.com, no puede cambiarlo a fabrikam.onmicrosoft.com. Para usar un dominio de onmicrosoft.com diferente, debe iniciar una nueva suscripción con Microsoft 365. 
     
@@ -223,9 +224,9 @@ Puede seguir usando el dominio de onmicrosoft.com inicial incluso después de ag
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>¿Por qué tengo un dominio "onmicrosoft.de"?
 
-Microsoft 365 crea un dominio para usted, como *contoso.onmicrosoft.de*, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.de*. 
+Microsoft 365 crea un dominio para usted, como *contoso.onmicrosoft.de* , cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.de*. 
   
- **Si quiere que su correo sea similar a *Alan@contoso.de*:** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos descritos en [Agregar los usuarios y el dominio a Microsoft 365](add-domain.md) si ya es el propietario. 
+ **Si quiere que su correo sea similar a *Alan@contoso.de* :** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos descritos en [Agregar los usuarios y el dominio a Microsoft 365](add-domain.md) si ya es el propietario. 
   
 - **No puede cambiar el nombre del dominio de mi Microsoft después de suscribirse.** Por ejemplo, si el dominio inicial elegido era fourthcoffee.onmicrosoft.de, no puede cambiarlo a fabrikam.onmicrosoft.de. Para usar un dominio de onmicrosoft.de diferente, debe iniciar una nueva suscripción con Microsoft 365. 
     

@@ -1,6 +1,6 @@
 ---
 title: Centro de soluciones y arquitectura de Microsoft 365
-description: Obtenga la orientación técnica que necesita para comprender, planear e implementar soluciones integradas de Microsoft 365 para una colaboración moderna segura y compatible.
+description: Guía técnica para comprender, planear e implementar soluciones integradas de Microsoft 365 para la planeación de recursos empresariales y la colaboración segura.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,18 +12,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 1f9d2d1a8a1c346214fa58f0f6095683bee0b24f
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 61947c940a5079574954344ab72d86594ac3ba48
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520974"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906208"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Centro de soluciones y arquitectura de Microsoft 365
 
-Este centro de soluciones y arquitectura reúne las instrucciones técnicas necesarias para comprender, planear e implementar soluciones integradas de Microsoft 365 para una colaboración moderna segura y compatible. En este centro, encontrarás:
+Este centro de soluciones y arquitectura reúne las instrucciones técnicas necesarias para comprender, planear e implementar soluciones integradas de Microsoft 365 para la planeación de recursos empresariales y la colaboración moderna segura y conforme. En este centro, encontrarás:
 
-![bloquea la ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[orientación de la solución básica](foundation-solutions-overview.md)** estas soluciones proporcionan una guía completa para un problema o una necesidad del negocio específicos. Le guiarán por los conceptos y las características y le ayudarán a elegir las opciones que conducen a un resultado final en funcionamiento, desde la planeación hasta la implementación hasta la adopción. 
+![bloquea la ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[orientación de la solución básica](foundation-solutions-overview.md)**  estas soluciones proporcionan una guía completa para un problema o una necesidad del negocio específicos. Le guiarán por los conceptos y las características y le ayudarán a elegir las opciones que conducen a un resultado final en funcionamiento, desde la planeación hasta la implementación hasta la adopción. 
 
 - [Proporcionar Microsoft 365 a los trabajadores remotos](empower-people-to-work-remotely.md)
 - [Configurar la colaboración moderna con Microsoft 365](setup-secure-collaboration-with-teams.md)
@@ -32,9 +32,9 @@ Este centro de soluciones y arquitectura reúne las instrucciones técnicas nece
 
 ![](https://docs.microsoft.com/office/media/icons/objects-blue.png) **[solución de carga de trabajo de objetos y orientación de escenario](workload-solutions-scenarios-overview.md)** estos escenarios y soluciones le ayudan a lograr un objetivo empresarial específico. Puede agregarlos a las soluciones de base para agregar funcionalidades a su entorno.
 
-![Ilustraciones de la arquitectura y la ](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[arquitectura](productivity-illustrations.md)** de los símbolos de la nube vea o Descargue estas ilustraciones para conocer las capacidades de Microsoft 365 y la arquitectura de los servicios en la nube de Microsoft 365.
+![Ilustraciones de la arquitectura y la ](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[arquitectura](productivity-illustrations.md)**  de los símbolos de la nube vea o Descargue estas ilustraciones para conocer las capacidades de Microsoft 365 y la arquitectura de los servicios en la nube de Microsoft 365.
 
-![Best Practices Ribbon ](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[orientación específica del sector](industry-specific-guidance-overview.md)** Obtenga más información sobre los procedimientos recomendados para su sector: Finanzas, cuidado de la salud y educación.
+![Best Practices Ribbon ](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[orientación específica del sector](industry-specific-guidance-overview.md)**  Obtenga más información sobre los procedimientos recomendados para su sector: Finanzas, cuidado de la salud y educación.
 
 ![](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png)Los **[principios de diseño](design-principles.md)** de los símbolos de diseño y navegación entienden los principios clave que necesita para comprender las arquitecturas de red, de identidad, de seguridad y multinacionales.
 

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646876"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906828"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
@@ -203,6 +203,10 @@ A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como 
 > [!NOTE]
 > Si agrega una nueva suscripción del mismo tipo cuyo aprovisionamiento se ha anulado no se restauran los datos asociados a la suscripción con aprovisionamiento anulado.
 
+
+> [!NOTE]
+> Si se suspende una licencia de CSP, no hay un período de gracia de 30 días y los servicios se deshabilitan inmediatamente. Los datos se eliminarán después de 90 días si el inquilino no se reactiva agregando una nueva licencia.
+
 ### <a name="what-happens-when-my-trial-ends"></a>¿Qué ocurre cuando termina la versión de prueba?
 
 Cuando finalice la versión de prueba, no podrá seguir usando Microsoft 365 de forma gratuita. Tiene algunas opciones:
@@ -237,3 +241,4 @@ Cuando finalice la versión de prueba, no podrá seguir usando Microsoft 365 de 
 [Cancelar la suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (artículo) \
 [Renovar Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (artículo) \
 [Reactivar la suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (artículo)
+

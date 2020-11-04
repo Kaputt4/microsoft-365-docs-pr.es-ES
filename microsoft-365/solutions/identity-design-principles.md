@@ -1,6 +1,6 @@
 ---
-title: 'Para identidades y más allá: el punto de vista de un arquitecto'
-description: Descripción.
+title: Microsoft 365 Enterprise Resource Planning-arquitectura de seguridad
+description: Obtenga información sobre las principales estrategias de diseño para la arquitectura empresarial de Microsoft de Alex Shteynberg, arquitecto de director técnico de Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845257"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906900"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Para identidades y más allá: el punto de vista de un arquitecto
 
@@ -134,7 +135,7 @@ Si está de acuerdo con esta definición ampliada de autorización, debe impleme
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/)
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) (MCAS)
 - [Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -284,7 +285,7 @@ Desde el punto de vista de la delegación de administración, la mayoría de los
 
 Diagrama de alto nivel:
 
-![diagrama de alto nivel del flujo de registro](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![diagrama de orígenes de registro para un programa de seguridad y cumplimiento](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 El diagrama anterior representa las capacidades integradas para enviar registros al centro de eventos o a análisis de registros de Azure o de almacenamiento de Azure. No todos los sistemas están listos para el por el momento. Pero hay otros métodos para enviar estos registros al mismo repositorio. Por ejemplo, consulte [Protect Your Teams with Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 

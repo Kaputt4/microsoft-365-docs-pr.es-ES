@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845281"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906756"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Implementar capacidades de protección contra amenazas en Microsoft 365
 
@@ -50,11 +50,11 @@ En la siguiente ilustración se muestra una ruta de acceso recomendada para impl
 
 ![Señales de protección contra amenazas de M365](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-|Solución/capacidades  |Description  |
+|Solución/capacidades  |Descripción  |
 |---------|---------|
 |Autenticación multifactor y acceso condicional     |Protéjase contra las identidades y los dispositivos comprometidos. Comience con esta protección porque es fundamental. La configuración recomendada en esta guía incluye Azure AD Identity Protection como requisito previo.     |
 |Microsoft Defender for Identity     |  Una solución de seguridad basada en la nube que aprovecha las señales locales de Active Directory para identificar, detectar e investigar las amenazas avanzadas, las identidades en peligro y las acciones de Insider malintencionadas dirigidas a la organización. Céntrese en Microsoft defender para obtener una identidad, ya que protege su infraestructura local y de la nube, no tiene dependencias o requisitos previos y puede proporcionar ventajas inmediatas.       | 
-|Microsoft defender para Office 365     | Salvaguarda a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. Protecciones para malware, suplantación de identidad (phishing), suplantación de identidad y otros tipos de ataques. La configuración de Microsoft defender para Office 365 se recomienda a continuación porque el control de cambios, la migración de la configuración del sistema y otras consideraciones pueden tardar más en implementarse. <br><br>Nota: Asegúrese de configurar las capacidades de la protección contra amenazas que se incluyen en todas las suscripciones de Office 365 (Exchange Online Protection).       |
+|Microsoft Defender para Office 365     | Salvaguarda a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. Protecciones para malware, suplantación de identidad (phishing), suplantación de identidad y otros tipos de ataques. La configuración de Microsoft defender para Office 365 se recomienda a continuación porque el control de cambios, la migración de la configuración del sistema y otras consideraciones pueden tardar más en implementarse. <br><br>Nota: Asegúrese de configurar las capacidades de la protección contra amenazas que se incluyen en todas las suscripciones de Office 365 (Exchange Online Protection).       |
 |Microsoft Defender para punto de conexión    | Una plataforma de protección de extremos que ayuda a prevenir, detectar, investigar y responder a amenazas avanzadas.  Defender for Endpoint puede tardar algún tiempo en implementarse, pero la configuración se puede realizar en paralelo con otras funciones.   |
 |Microsoft Cloud App Security     |   Un agente de seguridad de acceso a la nube para descubrimiento, investigación y gobernanza. Puede habilitar Microsoft Cloud App Security al principio para empezar a recopilar datos y obtener información. La implementación de información y otra protección dirigida en todas las aplicaciones SaaS implica la planeación y puede tardar más tiempo.       | 
 
@@ -77,5 +77,3 @@ Para asegurarse de que su organización tiene la mejor protección posible, conf
 Las características de protección contra amenazas se pueden configurar en paralelo, por lo que si tiene varios equipos de seguridad de red responsables de los distintos servicios, pueden configurar las características de protección de la organización al mismo tiempo. El siguiente diagrama ilustra el proceso de alto nivel para la implementación de capacidades de protección contra amenazas. 
 
 ![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

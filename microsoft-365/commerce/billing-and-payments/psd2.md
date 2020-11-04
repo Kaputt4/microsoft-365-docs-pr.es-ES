@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del espacio económico europeo están obligados a verificar la identidad de la persona que realiza una compra en línea antes de que se pueda procesar el pago.
+description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del espacio económico europeo están obligados a verificar la identidad de la persona que realiza una compra en línea antes de que se pueda procesar el pago. "
 keywords: Directiva 2 de servicios de pago, autenticación de varios factores en el cliente segura
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638428"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906614"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directiva 2 de servicios de pago y alta autenticación de clientes para clientes comerciales
 
-A partir del 14 de septiembre de 2019, los bancos de los 31 países del espacio económico europeo están obligados a verificar la identidad de la persona que realiza una compra en línea antes de que se pueda procesar el pago. Esta comprobación requiere la autenticación multifactor para ayudar a garantizar que las compras en línea estén seguras y protegidas. La fecha de este requisito de comprobación se retrasará para algunos países. 
+A partir del 14 de septiembre de 2019, los bancos de los 31 países del espacio económico europeo están obligados a comprobar la identidad de la persona que realiza una compra en línea antes de que se pueda procesar el pago. Esta comprobación requiere la autenticación multifactor para ayudar a garantizar que las compras en línea estén seguras y protegidas. La fecha de este requisito de comprobación se retrasará para algunos países.
 
 Para obtener más información, vea [preguntas más frecuentes de Microsoft sobre la Directiva 2 de servicios de pago y la autenticación segura de clientes](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 

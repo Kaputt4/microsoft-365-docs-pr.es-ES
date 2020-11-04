@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,27 +28,27 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: e6722dc7460a63878ba7fc6a15f6c384ca37e136
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
+ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350366"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906398"
 ---
-# <a name="set-up-file-storage-and-sharing"></a>Configurar el almacenamiento y el uso compartido de archivos
+# <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos en Microsoft 365
 
 Una de las mejores formas de configurar el almacenamiento y el uso compartido de archivos para su empresa es usar OneDrive y un sitio de grupo juntos. Esto es ideal si tiene una pequeña empresa con pocos empleados.
 
-Vea un breve vídeo sobre dónde almacenar archivos en Microsoft 365.<br><br>
+Vea un breve vídeo sobre el almacenamiento de archivos en la nube de Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="where-you-can-store-documents-in-microsoft-365"></a>Dónde puede almacenar documentos en Microsoft 365
+## <a name="microsoft-365-document-storage-and-management"></a>"Almacenamiento y administración de documentos de 365 de Microsoft"
 
-- OneDrive está diseñado para uso individual, con el uso compartido de archivos de forma ocasional. 
+- OneDrive está diseñado para uso individual, con el uso compartido de archivos de forma ocasional.
 
 - Un sitio de grupo está diseñado para compartir y colaborar en archivos con regularidad. Un sitio de grupo es ideal para almacenar archivos que tienen una propiedad compartida en la que varios usuarios poseen los archivos y pueden colaborar en ellos. Cree un equipo de Microsoft Teams para agregar un sitio de grupo. [Para obtener más información, vea crear un equipo en Microsoft Teams](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b).
 
@@ -72,7 +73,7 @@ Estas son algunas recomendaciones sobre lo que se debe almacenar en cada ubicaci
 
 Cada persona de su empresa que tenga una licencia de Microsoft 365 asignada (y SharePoint Online seleccionada) obtiene almacenamiento en la nube de OneDrive. Pueden almacenar archivos relacionados con la empresa para obtener acceso desde cualquier dispositivo y solo están disponibles para ese usuario. Por ejemplo, podrían almacenar un proyecto de propuesta, sus notas de reuniones o el texto de una presentación que vayan a realizar.
   
-Los empleados también pueden compartir archivos y carpetas de OneDrive. Si un empleado está ausente o abandona la compañía, otros usuarios pueden tener acceso a los archivos compartidos almacenados en OneDrive.
+Los empleados también pueden compartir archivos y carpetas de OneDrive. Si un empleado está ausente o abandona la compañía, otros usuarios pueden tener acceso a los archivos compartidos almacenados en OneDrive (uso compartido de la carpeta de equipo de OneDrive).
   
 Esta es la forma en que cada persona de su equipo puede configurar OneDrive y compartir archivos.
 
@@ -157,11 +158,11 @@ Estas son algunas sugerencias para obtener el máximo provecho de OneDrive o de 
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Recomendaciones sobre almacenamiento de archivos y colaboración para otros tipos de pequeñas empresas
 
-- **Proprietorships**: Use OneDrive para almacenar sus propios archivos y compartirlos con clientes en cada caso.
+- **Proprietorships** : Use OneDrive para almacenar sus propios archivos y compartirlos con clientes en cada caso.
 
-- **Copropiedades**: los propietarios usan OneDrive y comparten los archivos hacia delante y hacia atrás.
+- **Copropiedades** : los propietarios usan OneDrive y comparten los archivos hacia delante y hacia atrás.
 
-- **Empresas con clientes externos o asociados que necesitan acceso a los archivos**: cree un nuevo sitio de grupo para almacenar y compartir documentos destinados a un cliente específico. Configure el sitio para permitir el acceso solo a ese cliente. A continuación, no es necesario preocuparse de que un cliente obtenga acceso a la información destinada a otro cliente de forma accidental.
+- **Empresas con clientes externos o asociados que necesitan acceso a los archivos** : cree un nuevo sitio de grupo para almacenar y compartir documentos destinados a un cliente específico. Configure el sitio para permitir el acceso solo a ese cliente. A continuación, no es necesario preocuparse de que un cliente obtenga acceso a la información destinada a otro cliente de forma accidental.
 
 ### <a name="keep-private-files-private"></a>Establecer que los archivos privados sigan siéndolo
 
