@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842421"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920495"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Preguntas más frecuentes al activar Microsoft 365 defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "48842421"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 Lea las respuestas a las preguntas más comunes sobre cómo activar [Microsoft 365 defender](microsoft-threat-protection.md), incluidas las licencias y los permisos necesarios, la implementación de los servicios de soporte y la configuración inicial.
 
@@ -59,7 +59,7 @@ Para optimizar la experiencia de Microsoft 365 defender, recomendamos implementa
 Microsoft 365 defender selecciona automáticamente una ubicación óptima para el centro de datos donde se procesan y almacenan los datos consolidados. Si tiene Microsoft defender para el punto de conexión, selecciona la misma ubicación que usa defender para el punto de conexión.
 
 >[!NOTE]
->Microsoft defender for Endpoint provisiones de forma automática en los centros de datos de la Unión Europea (UE) cuando se activa a través de Azure defender *. Microsoft 365 defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que han aprovisionado Microsoft defender para el punto de conexión de esta manera. 
+>Microsoft defender for Endpoint se aprovisiona automáticamente en los centros de datos de la Unión Europea (UE) cuando se activa a través de Azure defender. Microsoft 365 defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que han aprovisionado Microsoft defender para el punto de conexión de esta manera. 
 
 La ubicación del centro de datos se muestra antes y después de que se aprovisione el servicio en la página de configuración de Microsoft 365 defender ( **settings > Microsoft 365 defender** ). Si prefiere usar otra ubicación de centro de datos, seleccione **¿necesita ayuda?** en el centro de seguridad de Microsoft 365, póngase en contacto con el soporte técnico de Microsoft.
 

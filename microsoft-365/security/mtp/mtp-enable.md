@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843641"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920507"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "48843641"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 [Microsoft 365 defender](microsoft-threat-protection.md) unifica el proceso de respuesta ante incidentes mediante la integración de capacidades clave en Microsoft defender para el punto de conexión, Microsoft defender para Office 365, Microsoft Cloud App Security y Microsoft defender para identidad. Esta experiencia unificada aporta potentes características a las que puede acceder desde el Centro de seguridad de Microsoft 365.
 
@@ -69,7 +69,7 @@ Microsoft 365 defender almacenará y procesará datos en la [misma ubicación us
 Seleccione **¿necesita ayuda?** en el centro de seguridad de Microsoft 365, póngase en contacto con el soporte técnico de Microsoft sobre el aprovisionamiento de Microsoft 365 defender en una ubicación diferente del centro de datos. 
 
 >[!NOTE]
->Microsoft defender for Endpoint provisiones de forma automática en los centros de datos de la Unión Europea (UE) cuando se activa a través de Azure defender *. Microsoft 365 defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que hayan proporcionado defender para el punto de conexión de esta manera. 
+>Microsoft defender for Endpoint se aprovisiona automáticamente en los centros de datos de la Unión Europea (UE) cuando se activa a través de Azure defender. Microsoft 365 defender aprovisionará automáticamente en el mismo centro de datos de la UE para los clientes que hayan proporcionado defender para el punto de conexión de esta manera. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Confirme que el servicio está activado
 Una vez que recibe el servicio, este agrega:

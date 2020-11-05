@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: 5c3b79dcf462dbab4fc67b75952ca0ef39b80e75
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844301"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919781"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -57,7 +57,7 @@ Para configurar las directivas contra la suplantación de identidad (phishing), 
 
 - [Configurar directivas contra la suplantación de identidad (phishing) en EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configure directivas antiphishing en Microsoft defender para Office 365 en Microsoft 365](configure-atp-anti-phishing-policies.md)
+- [Configurar directivas contra la suplantación de identidad en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md)
 
 En el resto de este artículo se describe la configuración disponible en anti-phishing policies in EOP and defender for Office 365.
 

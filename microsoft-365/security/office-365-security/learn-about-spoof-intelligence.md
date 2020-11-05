@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre inteligencia de suplantación de identidad en Exchange Online Protection (EOP), donde puede permitir o bloquear remitentes simulados específicos.
-ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4d40dae9518b451affc11c6666ee8f7454eceff3
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841833"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920649"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurar inteligencia de identidades en EOP
 
@@ -181,7 +181,7 @@ Puede configurar las opciones de inteligencia contra la suplantación de identid
 
 - [Configure las directivas contra la suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
 
-- [Configure directivas antiphishing en Microsoft defender para Office 365 en microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configure directivas antiphishing en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 

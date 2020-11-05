@@ -12,20 +12,22 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar la información más detallada sobre el estado del flujo de correo del dominio en el panel de flujo del correo en el centro de seguridad & cumplimiento para solucionar problemas del flujo de correo relacionados con los registros MX en sus dominios de correo electrónico.
-ms.openlocfilehash: d4abc311e96df87894d5f059328f1a16a00190b8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Los administradores pueden aprender a usar la información más detallada sobre el estado del flujo de correo del dominio en el panel de flujo del correo en el centro de seguridad & cumplimiento para solucionar problemas del flujo de correo relacionados con sus registros MX.
+ms.openlocfilehash: 0d750ab4dbe5875796118086fae1d9119dc486f0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877518"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920589"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información más detallada sobre el estado del flujo de correo del dominio en el centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La información más detallada sobre el **Estado del flujo de correo del dominio** en el panel del flujo de [correo](mail-flow-insights-v2.md) en el [centro de seguridad & cumplimiento](https://protection.office.com) le ofrece el estado actual de los dominios de su organización en términos de flujo de correo. Esta visión le ayuda a identificar y solucionar los problemas de dominios que experimentan un *_flujo de correo_* (por ejemplo, no puede recibir correo electrónico externo), especialmente expiraciones de dominio o dominios con registros MX incorrectos.
+La información sobre el **Estado del flujo de correo del dominio superior** del [Panel flujo](mail-flow-insights-v2.md) de correo del [centro de seguridad & cumplimiento](https://protection.office.com) le proporciona el estado actual del flujo de correo de su organización.
+
+Esta información le ayudará a identificar y solucionar problemas de dominios que experimentan problemas de *_flujo de correo_*. Por ejemplo, el dominio no puede recibir correo electrónico externo porque el dominio ha expirado o el dominio tiene un registro MX incorrecto.
 
 ![Widget de estado de flujo superior del dominio en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
@@ -35,14 +37,14 @@ Al hacer clic en _ *Ver detalles* * en el widget, aparece un control flotante de
 - **Registro MX anterior**
 - **Registro MX actual**
 - **Estado de recepción de correo electrónico**
-- **Estado del dominio** : una marca de verificación verde indica que el registro MX actual (en el momento en que hizo clic en el widget) coincide con el valor que tenemos en el registro y que el dominio ha recibido el correo electrónico durante las dos últimas horas.
+- **Estado del dominio** : una marca de verificación verde indica que el registro MX actual (en el momento en que hizo clic en el widget) coincide con el valor que tenemos en el registro y el dominio ha recibido el correo electrónico durante las dos últimas horas.
 
-  Una X roja indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las 6 últimas horas. Esto probablemente indica que su dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Consulte con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
+  Una X de color rojo indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las 6 últimas horas. Esto probablemente indica que su dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Consulte con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
 
 Puede hacer clic en **Ver más** para ver la misma información de más dominios.
 
 ![Flotante de detalles en la información del estado del flujo de correo del dominio superior](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

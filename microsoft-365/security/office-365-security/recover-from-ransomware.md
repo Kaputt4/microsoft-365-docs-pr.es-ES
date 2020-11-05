@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,25 +14,29 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Los administradores de Microsoft 365 pueden obtener información sobre cómo recuperarse de un ataque de ransomware.
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845545"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920613"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Incluso si toma todas las precauciones para proteger su organización, puede seguir siendo víctima de un ataque de [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Ransomware es gran empresa y los ataques se comprueban de forma sofisticada.
+Incluso si toma todas las precauciones para proteger su organización, puede seguir siendo víctima de un ataque de [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Ransomware es gran empresa y los ataques son muy sofisticados.
 
-Los pasos de este tema le proporcionarán la mejor oportunidad para recuperar datos cifrados por ransomware y ayudarán a detener la propagación de la infección en su organización. Antes de empezar, tenga en cuenta los siguientes elementos:
+Los pasos de este artículo le proporcionarán la mejor oportunidad para recuperar datos y detener la propagación interna de la infección. Antes de empezar, tenga en cuenta los siguientes elementos:
 
-- No hay ninguna garantía de que pagar el Ransom devolverá acceso a los archivos. De hecho, pagar el Ransom puede convertirle en un objetivo para obtener más ransomware. Si ya ha pagado, pero ha podido recuperar los archivos correctamente sin tener que usar la resolución del atacante, debe llamar al Banco para ver si pueden bloquear la transacción. También le recomendamos que informe sobre el ataque de ransomware a los sitios web de la ley, los informes de fraude de estafa y Microsoft, tal como se describe más adelante en este tema.
+- No hay ninguna garantía de que pagar el Ransom devolverá acceso a los archivos. De hecho, pagar el Ransom puede convertirle en un objetivo para obtener más ransomware.
 
-- Es muy importante que responda rápidamente al ataque y a sus consecuencias. Cuanto más tiempo espere, lo menos probable es que pueda recuperar los datos afectados.
+  Si ya ha pagado, pero ha recuperado sin usar la solución del atacante, póngase en contacto con el Banco para ver si puede bloquear la transacción.
+
+  También le recomendamos que informe sobre el ataque de ransomware a los cuerpos de aplicación, los sitios web de informes de estafa y Microsoft tal y como se describe más adelante en este artículo.
+
+- Es importante que responda rápidamente al ataque y a sus consecuencias. Cuanto más tiempo espere, lo menos probable es que pueda recuperar los datos afectados.
 
 ## <a name="step-1-verify-your-backups"></a>Paso 1: comprobar las copias de seguridad
 
@@ -40,13 +44,13 @@ Si tiene copias de seguridad sin conexión, probablemente podrá restaurar los d
 
 Si no tiene copias de seguridad o si las copias de seguridad también se vieron afectadas por el ransomware, puede omitir este paso.
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>Paso 2: deshabilitar la sincronización de ActiveSync y de OneDrive
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Paso 2: deshabilitar Exchange ActiveSync y la sincronización de OneDrive
 
 El punto clave aquí es detener la propagación de cifrado de datos por ransomware.
 
-Si sospecha que el correo electrónico es un objetivo, debe deshabilitar temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync se usa en dispositivos móviles para sincronizar datos entre el dispositivo y el buzón de correo de Exchange Online.
+Si sospecha que el correo electrónico es un destino del cifrado por ransomware, deshabilite temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync sincroniza los datos entre dispositivos y buzones de correo de Exchange Online.
 
-Para deshabilitar ActiveSync para un buzón de correo, consulte [How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
+Para deshabilitar Exchange ActiveSync para un buzón de correo, consulte [How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
 
 Para deshabilitar otros tipos de acceso a un buzón, consulte:
 
@@ -58,7 +62,9 @@ Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nub
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Paso 3: quitar el malware de los dispositivos afectados
 
-Ejecute un análisis antivirus completo con las actualizaciones más recientes en todos los equipos y dispositivos sospechosos para detectar y quitar la carga asociada con el ransomware. No olvide los dispositivos que sincronizan datos o el destino de las unidades de red asignadas (también deben examinarse los equipos y dispositivos).
+Ejecute un examen antivirus completo y actual en todos los equipos y dispositivos sospechosos para detectar y quitar la carga asociada con el ransomware.
+
+No olvide analizar los dispositivos que sincronizan datos o los destinos de las unidades de red asignadas.
 
 Puede usar [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) o (para clientes más antiguos) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
@@ -90,7 +96,7 @@ En el caso poco probable de que ransomware elimine todo el correo electrónico, 
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Paso 7: volver a habilitar Exchange ActiveSync y la sincronización de OneDrive
 
-Una vez que haya limpiado los equipos y dispositivos y recuperado los datos, puede volver a habilitar la sincronización de ActiveSync y de OneDrive que deshabilitó anteriormente en el [paso 2](#step-2-disable-activesync-and-onedrive-sync).
+Una vez que haya limpiado los equipos y dispositivos y recuperado los datos, puede volver a habilitar Exchange ActiveSync y la sincronización de OneDrive que deshabilitó anteriormente en el [paso 2](#step-2-disable-exchange-activesync-and-onedrive-sync).
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Paso 8 (opcional): bloquear la sincronización de OneDrive para extensiones de archivo específicas
 
@@ -126,9 +132,9 @@ Si su país no aparece en la lista, pregunte a las agencias de cumplimiento norm
 
 ### <a name="submit-email-messages-to-microsoft"></a>Enviar mensajes de correo electrónico a Microsoft
 
-Puede informar del mensaje de suplantación de identidad (phishing) que contiene ransomware mediante uno de varios métodos. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+Puede informar de los mensajes de suplantación de identidad (phishing) que contienen ransomware mediante uno de varios métodos. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

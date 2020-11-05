@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202728"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920435"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -28,7 +28,7 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 
 ## <a name="self-support-options"></a>Opciones de autosoporte
 
-Tras iniciar sesión, el centro de administración de Microsoft 365 proporciona información sobre el estado de los servicios de la organización. Además, la sección estado del servicio muestra el estado actual de los servicios, los detalles sobre las interrupciones y las interrupciones, y muestra las horas de mantenimiento planeado. El centro de administración de Microsoft 365 también proporciona información sobre problemas conocidos y soluciones previstas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información sobre el área de estado del servicio, consulte [Estado y continuidad del servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Puede encontrar más ayuda usando las herramientas, foros y sitios de comunidad siguientes.
+Tras iniciar sesión, el centro de administración de Microsoft 365 proporciona información sobre el estado de los servicios de la organización. Además, la sección estado del servicio muestra el estado actual de los servicios, los detalles sobre las interrupciones y las interrupciones, y muestra las horas de mantenimiento planeado. El centro de administración de Microsoft 365 también proporciona información sobre problemas conocidos y soluciones previstas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información sobre el área de estado del servicio, consulte [Estado y continuidad del servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Es posible que pueda encontrar más ayuda por su cuenta mediante las herramientas, los foros y los sitios de la comunidad que se muestran aquí.
 
 [Información del producto de Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -42,7 +42,7 @@ Tras iniciar sesión, el centro de administración de Microsoft 365 proporciona 
 
 ## <a name="assisted-support-from-microsoft"></a>Soporte técnico asistido de Microsoft
 
-Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el centro de administración de Microsoft 365 o llamando al teléfono. Los suscriptores al soporte premier tienen opciones de soporte técnico adicionales.
+Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el centro de administración de Microsoft 365 o llamando al teléfono. Los suscriptores de la compatibilidad Premier tienen opciones de soporte adicionales.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Soporte para suscriptores de soporte premier de Microsoft
 
@@ -62,7 +62,7 @@ Para obtener más información sobre cómo el soporte Premier puede ayudar a su 
 
 1. Inicie sesión en el centro de administración de Microsoft 365.
 
-2. Para las incidencias generales de productos, vaya a **Soporte**\> **Solicitar soporte técnico**\> **Llamar a soporte técnico**.
+2. Para problemas generales de productos, vaya a **soporte** técnico \> **solicitar asistencia al cliente** \> **Call technical support**.
 
    Para las preguntas relacionadas con la compra de EOP, facturación o suscripciones, vaya a **Soporte**\> **Solicitar soporte técnico**\> **Llamar a soporte de facturación y suscripción**.
 

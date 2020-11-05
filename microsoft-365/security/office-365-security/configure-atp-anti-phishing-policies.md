@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Microsoft defender para Office 365.
-ms.openlocfilehash: 9e07107c302f83b71a97517b11e71eac81f84f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845929"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920661"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra la suplantación de identidad en Microsoft defender para Office 365
 
@@ -159,9 +159,9 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
      - **Dirección de correo electrónico** :
 
-        - Haga clic en el cuadro y desplácese por la lista de usuarios que desea seleccionar.
-        - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario.
-        - Para quitar una entrada, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en el usuario.
+       - Haga clic en el cuadro y desplácese por la lista de usuarios que desea seleccionar.
+       - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario.
+       - Para quitar una entrada, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en el usuario.
 
      - **Nombre** : este valor se rellena en función de la dirección de correo electrónico que haya seleccionado, pero puede cambiarlo.
 
@@ -170,15 +170,15 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
      Para editar una entrada existente, seleccione el usuario protegido en la lista.
 
      > [!NOTE]
-     > Puede especificar un máximo de 60 usuarios en el centro de seguridad & cumplimiento o en PowerShell.
-       
+     > Puede tener un máximo de 60 usuarios en todas las directivas contra la suplantación de identidad (phishing). En otras palabras, puede tener 60 usuarios protegidos en una directiva, 12 usuarios protegidos en 5 directivas, etc.
+
    - **Agregar dominios para proteger** : configure una o ambas de las siguientes opciones:
 
      - **Incluir automáticamente los dominios que tengo** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
      - **Incluir dominios personalizados** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado** y, en el cuadro **Agregar dominios** , escriba el nombre de dominio (por ejemplo, contoso.com), presione entrar y repita lo mismo según sea necesario.
 
      > [!NOTE]
-     > Puede especificar un máximo de 50 dominios en el centro de seguridad & cumplimiento o en PowerShell.
+     > Puede tener un máximo de 50 dominios en todas las directivas contra la suplantación de identidad (phishing). En otras palabras, puede tener 50 usuarios protegidos en una directiva, 10 usuarios protegidos en 5 directivas, etc.
 
    - **Acciones** : haga clic en **Editar**
 
@@ -193,12 +193,12 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
      - **Si un dominio suplantado envía un correo electrónico** : configure una de las siguientes acciones para los mensajes en los que el remitente falso esté en uno de los dominios protegidos que ha especificado en **Agregar dominios para proteger** :
 
-     - **No aplicar ninguna acción**
-     - **Redirigir un mensaje a otras direcciones de correo electrónico**
-     - **Mover mensaje a la carpeta Correo no deseado**
-     - **Poner en cuarentena el mensaje**
-     - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
-     - **Eliminar el mensaje antes de su entrega**
+       - **No aplicar ninguna acción**
+       - **Redirigir un mensaje a otras direcciones de correo electrónico**
+       - **Mover mensaje a la carpeta Correo no deseado**
+       - **Poner en cuarentena el mensaje**
+       - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
+       - **Eliminar el mensaje antes de su entrega**
 
    - Haga clic en **Activar sugerencias de seguridad de suplantación** y configure cualquiera de las siguientes opciones:
 
@@ -267,7 +267,6 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
      - Puede hacer clic en **Editar** en cada sección para volver a la página correspondiente.
      - Puede activar o **desactivar** la siguiente configuración **directamente en esta** página:
-
        - **Habilitar la protección contra la suplantación de identidad**
        - **Habilitar la característica de remitente sin autenticar**
 

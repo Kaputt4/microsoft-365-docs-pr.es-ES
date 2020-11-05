@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846633"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920519"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de aplicaciones en el centro de seguridad de Microsoft 365
 
@@ -65,10 +65,10 @@ Las **ubicaciones de actividad de aplicación de nube** muestran dónde los usua
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Supervisión del estado de las cargas de trabajo de la infraestructura
 
-**Estado** de la infraestructura muestra alertas de estado de mantenimiento para cargas de trabajo de infraestructura en Azure defender *.
+**Estado** de la infraestructura muestra alertas de estado de mantenimiento para cargas de trabajo de infraestructura en Azure defender.
 
-Azure defender * proporciona administración de seguridad unificada y defender para Office 365 en cargas de trabajo locales y en la nube. Puede recopilar, buscar y analizar datos de seguridad de diferentes orígenes, incluidos firewalls y otras soluciones de asociados.
+Azure defender ofrece administración de seguridad unificada y defender para Office 365 en cargas de trabajo locales y en la nube. Puede recopilar, buscar y analizar datos de seguridad de diferentes orígenes, incluidos firewalls y otras soluciones de asociados.
 
-Para obtener más información, consulte [documentación de Azure defender *](https://docs.microsoft.com/azure/security-center/).
+Para obtener más información, vea la [documentación de Azure defender](https://docs.microsoft.com/azure/security-center/).
 
 ![Tarjeta de mantenimiento de la infraestructura](../../media/infrastructure-health.png)

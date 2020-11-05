@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d2c9c02f7530c58975ddf99289a3a0872788146a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546886"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920334"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -42,7 +42,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
   
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de la cuenta de usuario a la que se le han asignado los permisos de eDiscovery adecuados.
 
-2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todos**y, a continuación, en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todos** y, a continuación, en **eDiscovery > Core**.
 
 3. En la página **principal de eDiscovery** , seleccione el caso en el que desea crear la retención y, a continuación, haga clic en **abrir caso**.
 
@@ -56,11 +56,11 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
     ![Elegir las ubicaciones de contenido para colocar en suspensión](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Ubicaciones de buzones** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Microsoft Teams, Office 365 o un grupo de Yammer. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   1. **Ubicaciones de buzones** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Microsoft Teams, Office 365 o un grupo de Yammer. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir** y, a continuación, haga clic en **listo**.
 
-   b. **Ubicaciones del sitio** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que las cuentas de SharePoint y OneDrive se colocan en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft Teams, Office 365 o un grupo de Yammer. Haga clic en **elegir**y, a continuación, en **listo**.
+   1. **Ubicaciones del sitio** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que las cuentas de SharePoint y OneDrive se colocan en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft Teams, Office 365 o un grupo de Yammer. Haga clic en **elegir** y, a continuación, en **listo**.
   
-   c. **Carpetas públicas de Exchange.** Mueva el control de alternancia de alternancia ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+   1. **Carpetas públicas de Exchange.** Mueva el control de alternancia de alternancia ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
 
    > [!NOTE]
    > Debe agregar al menos una ubicación de contenido a la retención. De lo contrario, la característica de retención de exhibición de documentos estáticos mostrará que no hay elementos en espera.
@@ -71,9 +71,9 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
     ![Crear una suspensión basada en consulta con condiciones](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
-    a. En el cuadro bajo **palabras clave**, escriba una consulta de búsqueda para que solo se conserve el contenido que cumple los criterios de búsqueda. Puede especificar palabras clave, propiedades del mensaje de correo electrónico o propiedades del documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**.
+    1. En el cuadro bajo **palabras clave** , escriba una consulta de búsqueda para que solo se conserve el contenido que cumple los criterios de búsqueda. Puede especificar palabras clave, propiedades del mensaje de correo electrónico o propiedades del documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and** , **or** o **Not**.
 
-    b. Haga clic en **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición está conectada lógicamente a la consulta de palabras clave (que se especifica en el cuadro **palabras clave** ) por el operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a conservar.
+    1. Haga clic en **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición está conectada lógicamente a la consulta de palabras clave (que se especifica en el cuadro **palabras clave** ) por el operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a conservar.
 
     Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
@@ -123,13 +123,13 @@ Estas son algunas otras cosas que debe tener en cuenta al buscar ubicaciones en 
 
 - Si se colocan varias suspensiones de exhibición de documentos electrónicos en una sola ubicación en un caso de exhibición de documentos electrónicos y selecciona buscar ubicaciones en retención, el número máximo de palabras clave para esa consulta de búsqueda es de 500. Esto se debe a que la búsqueda combina todas las retenciones basadas en consultas mediante el operador **or** . Si hay más de 500 palabras clave en las consultas de retención combinada y la consulta de búsqueda, se buscará todo el contenido del buzón, no solo el contenido que coincida con el caso basado en consultas.
 
-- Si una retención de exhibición de documentos electrónicos tiene un estado de **activación**, puede seguir buscando en las ubicaciones en espera mientras se activa la suspensión.
+- Si una retención de exhibición de documentos electrónicos tiene un estado de **activación** , puede seguir buscando en las ubicaciones en espera mientras se activa la suspensión.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Conservar contenido en Microsoft Teams
 
 Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo asociado con el equipo de Microsoft. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que poner el buzón de equipo y el sitio de SharePoint en la exhibición de documentos electrónicos para conservar conversaciones y archivos en un canal.
 
-Como alternativa, las conversaciones que forman parte de la lista de chats en Microsoft Teams (llamados *1:1 chats* o *1: N Group chats*) se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en las conversaciones de chat se almacenan en la cuenta de OneDrive del usuario que comparte el archivo. Por lo tanto, tiene que agregar los buzones de usuario individuales y las cuentas de OneDrive a una conservación de exhibición de documentos electrónicos para conservar conversaciones y archivos en la lista de chats. Se recomienda retener una retención de los buzones de los miembros de un equipo de Microsoft, además de colocar el buzón de equipo y el sitio en suspensión.
+Como alternativa, las conversaciones que forman parte de la lista de chats en Microsoft Teams (llamados *1:1 chats* o *1: N Group chats* ) se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en las conversaciones de chat se almacenan en la cuenta de OneDrive del usuario que comparte el archivo. Por lo tanto, tiene que agregar los buzones de usuario individuales y las cuentas de OneDrive a una conservación de exhibición de documentos electrónicos para conservar conversaciones y archivos en la lista de chats. Se recomienda retener una retención de los buzones de los miembros de un equipo de Microsoft, además de colocar el buzón de equipo y el sitio en suspensión.
 
 A partir de febrero 2020, hemos activado la capacidad para preservar contenido en canales privados. Como los chats de canal privado se almacenan en los buzones de los participantes del chat, al colocar un buzón de usuario en la exhibición de documentos electrónicos se conservarán los chats de canal privado. Además, si se colocó un buzón de usuario en una retención de exhibición de documentos electrónicos antes del 2020 de febrero, la retención se aplicará ahora automáticamente a los mensajes de canal privado almacenados en ese buzón. También se admite la preservación de archivos compartidos en canales privados.
 
@@ -187,19 +187,19 @@ Para recopilar una lista de las direcciones URL de los sitios de OneDrive para l
 
 Después de quitar un buzón, un sitio de SharePoint o una cuenta de OneDrive de una suspensión de exhibición de documentos electrónicos, se aplica una *suspensión de retraso* . Esto significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen de forma permanente (purga) de una ubicación de contenido. Esto proporciona a los administradores una oportunidad para buscar o recuperar contenido que se purgará después de que se quite una retención de eDiscovery. Los detalles sobre cómo funciona la retención por retraso para los buzones de correo y los sitios son distintos.
 
-- **Buzones de correo:** Una retención de retraso se coloca en un buzón la próxima vez que el Asistente para carpetas administradas procese el buzón y detecte que se ha quitado una retención de eDiscovery. En concreto, se aplica una retención retrasada a un buzón de correo cuando el Asistente para carpeta administrada define una de las siguientes propiedades de buzón en **true**:
+- **Buzones de correo:** Una retención de retraso se coloca en un buzón la próxima vez que el Asistente para carpetas administradas procese el buzón y detecte que se ha quitado una retención de eDiscovery. En concreto, se aplica una retención retrasada a un buzón de correo cuando el Asistente para carpeta administrada define una de las siguientes propiedades de buzón en **true** :
 
    - **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la web) que se almacena en el buzón de correo de un usuario.
 
    - **DelayReleaseHoldApplied:** Esta propiedad se aplica a contenido basado en la nube (generado por aplicaciones que no son de Outlook, como Microsoft Teams, Microsoft Forms y Microsoft Yammer) que se almacena en el buzón de un usuario. Los datos de nube generados por una aplicación de Microsoft se almacenan normalmente en una carpeta oculta en el buzón de un usuario.
 
-   Cuando se coloca una retención en el buzón de correo (cuando cualquiera de las propiedades anteriores se establece en **true**), el buzón sigue considerándose en espera durante una duración de retención ilimitada, como si el buzón estuviera en retención por juicio. Transcurrido el plazo de 30 días, la retención en espera expira y Microsoft 365 automáticamente intentará quitar la retención retrasada (estableciendo la propiedad DelayHoldApplied o DelayReleaseHoldApplied en **false**) para que se elimine la retención. Una vez que cualquiera de estas propiedades se establece en **false**, los elementos correspondientes marcados para la eliminación se purgan la próxima vez que el Asistente para carpetas administradas procesa el buzón de correo.
+   Cuando se coloca una retención en el buzón de correo (cuando cualquiera de las propiedades anteriores se establece en **true** ), el buzón sigue considerándose en espera durante una duración de retención ilimitada, como si el buzón estuviera en retención por juicio. Transcurrido el plazo de 30 días, la retención en espera expira y Microsoft 365 automáticamente intentará quitar la retención retrasada (estableciendo la propiedad DelayHoldApplied o DelayReleaseHoldApplied en **false** ) para que se elimine la retención. Una vez que cualquiera de estas propiedades se establece en **false** , los elementos correspondientes marcados para la eliminación se purgan la próxima vez que el Asistente para carpetas administradas procesa el buzón de correo.
 
    Para obtener más información, consulte [Gestionar buzón con una retención de retraso](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
 - **Sitios de SharePoint y OneDrive:** Cualquier contenido de SharePoint o de OneDrive que se retiene en la biblioteca de conservación de documentos no se elimina durante el período de retención de 30 días después de que se quite un sitio de una suspensión de eDiscovery. Esto es similar a lo que sucede cuando se suelta un sitio desde una directiva de retención. Además, no puede eliminar manualmente este contenido en la biblioteca de conservación de la preservación durante el período de retención de un retraso de 30 días. 
 
-   Para obtener más información, consulte [liberar una directiva de retención](retention.md#releasing-a-retention-policy).
+   Para obtener más información, consulte [lanzamiento de una directiva de retención](retention.md#releasing-a-policy-for-retention).
 
 Una suspensión de retraso también se aplica a las ubicaciones de contenido en espera cuando se cierra un caso de eDiscovery principal porque las suspensiones se desactivan cuando se cierra un caso. Para obtener más información acerca de cómo cerrar un caso, vea [Cerrar, volver a abrir y eliminar un caso de exhibición de](close-reopen-delete-core-ediscovery-cases.md)documentos electrónicos principal.
 
@@ -207,7 +207,7 @@ Una suspensión de retraso también se aplica a las ubicaciones de contenido en 
 
 En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensiones de casos.
 
-  |**Descripción del límite**|**Límite**|
+  | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |
   |Número máximo de suspensiones de eDiscovery para una organización  <br/> |10 000  <br/> |
@@ -217,4 +217,9 @@ En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensi
   |||
 
    > [!NOTE]
-   > <sup>1</sup> para ver una lista de más de 1.000 casos, suspensiones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell de cumplimiento de & de seguridad de Office 365:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> para ver una lista de más de 1.000 casos, suspensiones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell de cumplimiento de & de seguridad de Office 365:
+   >
+   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

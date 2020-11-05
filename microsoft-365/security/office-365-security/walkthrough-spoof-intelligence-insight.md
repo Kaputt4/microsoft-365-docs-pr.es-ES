@@ -16,25 +16,27 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre cómo funciona el análisis de inteligencia de suplantación de identidad, incluido cómo determinar rápidamente qué remitentes envían de forma legítima un correo no autenticado.
+description: Los administradores pueden obtener información sobre cómo funciona el conocimiento de inteligencia de suplantación de identidad. Pueden determinar rápidamente qué remitentes están enviando de forma legítima correo electrónico a sus organizaciones desde dominios que no pasan comprobaciones de autenticación de correo electrónico (SPF, DKIM o DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5995095e442bbcd07ddf4538b67be6e1b14fd8f1
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844217"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920483"
 ---
-# <a name="walkthrough---defender-for-office-365-spoof-intelligence-insight-in-microsoft-365"></a>Tutorial-defender para Office 365 el conocimiento de inteligencia de suplantación de identidad en Microsoft 365
+# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Tutorial: información sobre inteligencia de inteligencia contra la simulación en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-En Microsoft 365 organizaciones con defender para Office 365, puede usar la información de inteligencia de inteligencia de suplantación para determinar rápidamente qué remitentes le envían de forma legítima un correo no autenticado. Al permitirles enviar mensajes suplantados, puede reducir el riesgo de que los falsos positivos vayan a sus usuarios. También puede usar la información de inteligencia de inteligencia de suplantación para supervisar y administrar pares de dominios permitidos para proporcionar un nivel adicional de seguridad y evitar que lleguen mensajes no seguros a su organización.
+En Microsoft 365 organizaciones con defender para Office 365, puede usar la visión de inteligencia de inteligencia de suplantación para determinar rápidamente qué remitentes le envían de forma legítima un correo no autenticado (mensajes de dominios que no pasan las comprobaciones SPF, DKIM o DMARC).
 
-Si no está familiarizado con [los informes y la información del centro de seguridad & cumplimiento](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede navegar fácilmente desde un panel hasta una perspectiva y las acciones recomendadas.
+Al permitir que los remitentes conocidos envíen mensajes falsos desde ubicaciones conocidas, puede reducir los falsos positivos (correo electrónico bueno marcado como malo). Mediante la supervisión de los remitentes suplantados permitidos, se proporciona una capa de seguridad adicional para evitar que los mensajes no seguros lleguen a la organización.
 
-Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. Para obtener información sobre Cómo desplazarse por los informes y la información, vea los tutoriales de la sección temas relacionados.
+Para obtener más información sobre los informes y la información, consulte [Reports and Insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+
+Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. Para obtener información sobre Cómo desplazarse por los informes y la información, vea los tutoriales de la sección [temas relacionados](#related-topics) .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -49,9 +51,9 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
   - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
   - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Puede habilitar y deshabilitar inteligencia simulada en directivas antiphishing en Microsoft defender para Office 365. Para obtener más información, vea [Configure anti-phishing policies in Microsoft defender for Office 365 en microsoft 365](configure-atp-anti-phishing-policies.md).
+- Puede habilitar y deshabilitar inteligencia simulada en directivas antiphishing en Microsoft defender para Office 365. Para obtener más información, vea [Configure anti-phishing policies in Microsoft defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-- En Microsoft 365 organizaciones con buzones de correo de Exchange Online y en Exchange Online Protection (EOP) independiente sin buzones de correo de Exchange Online, puede usar inteligencia de suplantación de identidad para supervisar y administrar a los remitentes que le envían mensajes sin autenticar. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
+- Para usar inteligencia simulada para supervisar y administrar a los remitentes que le envían mensajes sin autenticar, consulte [configurar inteligencia de identidades en Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Abrir el conocimiento de inteligencia de infalsificación en el centro de seguridad & cumplimiento
 
@@ -60,7 +62,6 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 2. En la fila **información** , busque uno de los siguientes elementos:
 
    - **Inteligencia de identidad habilitada** : la información se denomina **dominios falseados que no superaron la autenticación de los últimos 30 días**. Este valor es predeterminado.
-
    - La **inteligencia de identidad está deshabilitada** : la información de la **habilitación de la protección contra** la suplantación de identidad y al hacer clic en ella le permite habilitar la inteligencia de identidad.
 
 3. El conocimiento del panel muestra la siguiente información:
@@ -69,43 +70,59 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
    Esta visión tiene dos modos:
 
-   - **Modo Insight**. Si tiene una directiva de suplantación habilitada, la información le mostrará Cuántos correos se vieron afectados por nuestras capacidades de inteligencia empresarial de suplantación en los últimos 30 días.
+   - **Modo Insight** : Si la inteligencia de identidad está habilitada, el conocimiento le muestra cuántos mensajes se vieron afectados por nuestras capacidades de inteligencia empresarial de suplantación en los últimos 30 días.
 
-   - **Mode if**. Si no tiene habilitada ninguna directiva de suplantación de identidad, la información le mostrará Cuántos correos se  *verían*  afectados por nuestras capacidades de inteligencia de suplantación en los últimos 30 días.
+   - **Mode if** : Si la inteligencia de identidad está deshabilitada, la información muestra el número de mensajes que se *verían* afectados por nuestras capacidades de inteligencia de suplantación en los últimos 30 días.
 
    En cualquier caso, los dominios suplantados que se muestran en la información se separan en dos categorías: **pares de dominios sospechosos** y **pares de dominios no sospechosos**. Estas categorías se subdividen en tres diferentes recipientes para su revisión.
 
    Un **par de dominios** es una combinación de la dirección de y la infraestructura de envío:
 
-   - La dirección de es la dirección de correo electrónico del remitente que se muestra en los clientes de correo electrónico. Esta dirección identifica al autor del correo electrónico. Es decir, el buzón de la persona o el sistema responsables de escribir el mensaje. Esta dirección también se conoce como `5322.From` dirección.
+   - La dirección de es la dirección de correo electrónico del remitente que se muestra en el cuadro de en clientes de correo electrónico. Esta dirección también se conoce como `5322.From` dirección.
 
    - La infraestructura de envío o remitente es el dominio de la organización de la búsqueda DNS inversa (registro PTR) de la dirección IP de envío. Si la dirección IP de envío no tiene registro PTR, el remitente se identifica mediante la IP de envío con la máscara de subred 255.255.255.0 en la notación CIDR (/24). Por ejemplo, si la dirección IP es 192.168.100.100, la dirección IP completa del remitente es 192.168.100.100/24.
 
    Los **pares de dominios sospechosos** incluyen:
 
-   - **Suplantación de confianza alta** : Microsoft 365 recibió fuertes señales de que estos dominios son sospechosos, en función de los patrones de envío históricos y la puntuación de reputación de los dominios. Microsoft 365 es muy seguro que los dominios son suplantación de identidad y que los mensajes que se envían desde estos dominios tienen menos probabilidades de ser legítimos.
+   - **Suplantación de confianza alta** : según los patrones de envío históricos y la puntuación de reputación de los dominios, tenemos muy seguros que los dominios son suplantación de identidad y que los mensajes de estos dominios son más propensos a ser malintencionados.
 
-   - **Suplantación de confianza moderada** : Microsoft 365 recibió señales medianas que estos dominios son sospechosos, según los patrones de envío históricos y la puntuación de reputación de los dominios. Office 365 está moderadamente seguro de que los dominios son suplantación de identidad y que los mensajes enviados desde estos dominios son legítimos. Este cubo tiene una probabilidad mayor de contener falsos positivos (FPs) que el bucket de suplantación de confianza alta.
+   - **Simulación de confianza moderada** : según los patrones de envío históricos y la puntuación de reputación de los dominios, estamos muy seguros de que los dominios son suplantación de identidad y que los mensajes enviados desde estos dominios son legítimos. Los falsos positivos son más probables en esta categoría que la suplantación de confianza alta.
 
-   - **Pares de dominios no sospechosos** (incluye **suplantación de identidad recuperada** ): suplantación de identidad recuperada los dominios que no superaron la autenticación explícita [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) pero pasaron las comprobaciones de autenticación de correo electrónico IMPLÍCITAS ( [autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, Microsoft 365 recuperar el correo en su nombre y no se ha llevado a cabo ninguna acción contra la suplantación de identidad en el mensaje.
+   - **Pares de dominios no sospechosos** (incluye la **suplantación de identidad recuperada** ): el dominio no pudo comprobar la autenticación de correo electrónico explícita [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md). Sin embargo, el dominio pasó nuestras comprobaciones de autenticación de correo electrónico IMPLÍCITAS ([autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, no se ha llevado a cabo ninguna acción contra la suplantación de identidad en el mensaje.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Ver información detallada sobre los pares de dominios sospechosos desde el conocimiento de inteligencia de suplantación
 
 1. En el análisis de inteligencia de suplantación de identidad, haga clic en cualquiera de los pares de dominios (alta, moderada o rescatada).
 
-   Aparece la página **Suplantar visión de inteligencia empresarial** , que muestra una lista de remitentes que envían correo no autenticado a su organización. La información de esta página le ayudará a determinar si los mensajes falsos están autorizados o si necesita emprender otras acciones. Puede ordenar la información por número de mensajes, fecha de la última detección de la suplantación de identidad, etc. (Por ejemplo, haga clic en encabezados de columna, como **número de mensajes** o **última** vista).
+   Aparece la página de **información de inteligencia empresarial de suplantación** . La página muestra una lista de remitentes que envían correo no autenticado a su organización.
 
-2. Seleccione un elemento de la tabla para abrir un panel de detalles que contenga información enriquecida sobre el par de dominios, incluido por qué lo hemos capturado, lo que debe hacer, un resumen de dominio, datos WhoIs sobre el remitente y mensajes de correo electrónico similares que hemos visto en su espacio empresarial del mismo remitente. Desde aquí, también puede Agregar o quitar el par de dominios de la lista de remitentes seguros de **AllowedToSpoof** .
+   Esta información le ayudará a determinar si los mensajes suplantados están autorizados o si necesita emprender otras acciones.
+
+   Puede ordenar la información por número de mensajes, fecha de la última detección de la suplantación de identidad, etc.
+
+2. Seleccione un elemento de la tabla para abrir un panel de detalles que contenga información enriquecida sobre el par de dominios. La información incluye:
+   - Por qué lo hemos detectado.
+   - Lo que debe hacer.
+   - Un resumen de dominio.
+   - Datos WhoIs sobre el remitente.
+   - Mensajes similares que hemos visto en su espacio empresarial del mismo remitente.
+
+   Desde aquí, también puede Agregar o quitar el par de dominios de la lista de remitentes seguros de **AllowedToSpoof** .
 
    ![Captura de pantalla de un dominio en el panel de detalles de inteligencia empresarial de suplantación](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
-### <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Agregar o quitar un dominio de la lista de remitentes seguros de AllowedToSpoof
+### <a name="add-or-remove-a-domain-from-the-allowedtospoof-list"></a>Agregar o quitar un dominio de la lista de AllowedToSpoof
 
-Puede Agregar o quitar un dominio de la lista de remitentes seguros de AllowedToSpoof al revisar el par de dominios en el panel de detalles de la información de inteligencia empresarial de suplantación. Simplemente, establezca el botón de alternancia en consecuencia.
+Agregue o quite un dominio de la lista AllowedToSpoof (remitente seguro) en el panel de detalles del par de inteligencia empresarial de suplantación de identidad (spoofing) para el par de dominios. Simplemente, establezca el botón de alternancia en consecuencia.
 
-Esto modifica la combinación única de par de dominios del dominio falso y de la infraestructura de envío y no proporciona cobertura para todo el dominio falso o la infraestructura de envío de forma aislada.
+Permitir un par de dominios solo permite la combinación del dominio falso *y* la infraestructura de envío. No permite el correo electrónico del dominio falso desde ningún origen, ni tampoco permite el correo electrónico de la infraestructura de envío para cualquier dominio.
 
-Por ejemplo, si agrega el siguiente par de dominios a la lista de permitidos del  *remitente: "*  gmail.com" y envía la *infraestructura* "TMS *. mx.com",* sólo se permitirá la suplantación de correo desde ese par de dominios. Otros remitentes que intentan imitar "gmail.com" y otros dominios que intentan simular "tms.mx.com" seguirán protegidos por inteligencia de suplantación de identidad.
+Por ejemplo, permite que el siguiente par de dominios envíe mensajes falsos a su organización:
+
+- *Dominio falso* : gmail.com "
+- *Infraestructura de envío* `tms.mx.com` :
+
+Solo se permitirá la suplantación a correo electrónico de ese par de dominios. No se permiten otros remitentes que intenten imitar gmail.com. La inteligencia de identidad comprueba los mensajes de otros dominios de tms.mx.com.
 
 ## <a name="related-topics"></a>Temas relacionados
 

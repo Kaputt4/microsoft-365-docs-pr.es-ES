@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre las opiniones y los informes que están disponibles en el panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877782"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920013"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -66,13 +66,12 @@ El panel de flujo de correo está disponible para los miembros de los siguientes
 
 - **[Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure Active Directory.
 
-- **Administrador de flujo** de trabajo en el centro de cumplimiento de & de seguridad: Si un miembro de este grupo de roles no es también miembro de los grupos de roles de administrador global o administrador de Exchange, tenga en cuenta los siguientes problemas y requisitos:
-
+- **Administrador de flujo de flujo** en el centro de seguridad & cumplimiento. Si la cuenta no es miembro de los grupos de funciones de administración de la organización o administrador de Exchange, tenga en cuenta los siguientes aspectos:
   - El usuario debe iniciar sesión en el centro de seguridad & cumplimiento directamente en <https://protection.office.com> .
   - El usuario solo tendrá permiso de solo lectura en el panel de flujo de correo.
   - El usuario no tendrá acceso al centro de administración de Microsoft 365.
 
-Para obtener más información acerca de los permisos en el centro de seguridad & cumplimiento, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md) y [proporcionar a los usuarios acceso al centro de seguridad & cumplimiento](grant-access-to-the-security-and-compliance-center.md).
+Para obtener más información acerca de los permisos, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md) y [proporcionar a los usuarios acceso al centro de seguridad & cumplimiento](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 

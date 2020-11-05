@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 37a43717ebb003c10a65e14da46012dab164916d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 2af301fcac2f02a415972f8bf7857fa7b6ee0c1e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429388"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919837"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft 
 
@@ -28,7 +28,7 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ordenar los dispositivos, trabaje con los contactos de canal comercial para asegurarse de elegir la configuración correcta. En esta tabla, la *fecha de archivo* es la fecha en la que estos modelos estarán sujetos a una vida de servicio de escritorio administrada de Microsoft más corta; los dispositivos que se adjuntan después de esta fecha no recibirán un período completo de tres años de soporte desde el escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran en [dispositivos de escritorio administrado de Microsoft](archived-device-list.md). *Fecha de retiro* es la fecha en la que el escritorio administrado de Microsoft ya no será compatible con este modelo. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán del escritorio administrado de Microsoft, sin importar que se hayan inscrito.
 
 >[!NOTE]
->Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero se proporcionará un aviso de 90 días para cualquier cambio que afecte al archivo o a la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\*** .
+>Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero se proporcionará un aviso de 90 días para cualquier cambio que afecte al archivo o a la fecha de retiro. Los dispositivos agregados más recientemente están marcados con * *\** _.
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft
@@ -37,7 +37,7 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 
 | Model    | Especificaciones mínimas  | Requisitos adicionales    | Fecha de archivo   | Fecha de retirada   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| **\*[Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 28 de abril de 2022  | 28 de abril de 2025 |
+| _ *\* [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 28 de abril de 2022  | 28 de abril de 2025 |
 | **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 28 de abril de 2022 | 28 de abril de 2025  |
 | **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 28 de abril de 2022 | 28 de abril de 2025 |
 | **\*[Dell Latitude 7310/7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | 4 de mayo de 2022  | 4 de mayo de 2025  |
@@ -59,7 +59,7 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 | [HP EliteBook x360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB de RAM | SKU con 8XW08AV| 31 de agosto de 2021 | 31 de agosto de 2024 |
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB de RAM | SKU con 9MZ21AV | 31 de marzo de 2021 | 31 de marzo de 2024 |
 | [Estación de trabajo HP Z2 mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB de RAM | SKU con 8QR48AV| 31 de diciembre de 2021 | 31 de diciembre de 2024 |
-| [Estación de trabajo móvil HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB de RAM | SKU con 9JD63AV, se requiere cámara IR | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
+| **\*[Estación de trabajo móvil HP ZBook Firefly 14/15 G7](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB/Intel i5/8 GB de RAM | SKU con 9MZ22AV, se requiere cámara IR | 30 de noviembre de 2021 | 30 de noviembre de 2024 |
 
 ### <a name="microsoft"></a>Microsoft
 

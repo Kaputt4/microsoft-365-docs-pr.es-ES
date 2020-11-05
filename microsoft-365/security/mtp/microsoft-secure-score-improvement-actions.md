@@ -20,24 +20,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846645"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920541"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la postura de seguridad con calificación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Puede encontrarse en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
 Para ayudarle a la información que necesita con mayor rapidez, las acciones de mejora de Microsoft se organizan en grupos:
 
 * Identity (cuentas de Azure Active Directory & roles)
-* Datos (Microsoft Information Protection)
+* Datos (no hay acciones de mejora por ahora)
 * Dispositivo (Microsoft defender para el punto de conexión, conocido como [calificación segura de Microsoft para dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * Aplicación (aplicaciones de correo electrónico y nube, incluidos Office 365 y Microsoft Cloud App Security)
 * Infraestructura (no hay acciones de mejora por ahora)

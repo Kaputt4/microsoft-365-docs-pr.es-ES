@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo usar la solución Fix Slow mail Flow rules Insight en el centro de seguridad & cumplimiento para identificar y corregir reglas de flujo de correo ineficientes o ineficientes (también conocidas como reglas de transporte) en su organización.
-ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877542"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920553"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corrección de las reglas de flujo de correo lenta información del centro de seguridad & cumplimiento
 
@@ -32,7 +32,9 @@ Las reglas de flujo de correo ineficiente (también conocidas como reglas de tra
 - Condiciones que usan la coincidencia de patrón de expresiones regulares complejas (regex).
 - Condiciones que usan la comprobación de contenido en datos adjuntos.
 
-La opción para **corregir reglas de flujo de correo con lentitud** en el área **recomendada para** el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) le avisa cuando una regla de flujo de correo tarda mucho tiempo en completarse. Esta información sólo aparece cuando se detecta la condición (si no tiene bucles de correo, no verá la información).
+La opción para **corregir reglas de flujo de correo con lentitud** en el área **recomendada para** el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) le avisa cuando una regla de flujo de correo tarda mucho tiempo en completarse.
+
+Esta información sólo aparece cuando se detecta la condición (si no tiene bucles de correo, no verá la información).
 
 Puede usar esta notificación para ayudarle a identificar y ajustar las reglas de flujo de correo para ayudar a reducir los retrasos del flujo de correo.
 
@@ -47,8 +49,8 @@ Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con 
 
 ![Control flotante de detalles que aparece después de hacer clic en ver detalles en la solución solucionar reglas de flujo de correo lenta](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Para obtener más información acerca de las condiciones y excepciones de las reglas de flujo de correo en Exchange Online, consulte [mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Para obtener más información acerca de las condiciones y excepciones de las reglas de flujo de correo, vea [mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

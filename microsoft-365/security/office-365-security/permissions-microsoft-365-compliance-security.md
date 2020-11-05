@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9ad17933592b860fb81e469fd55a454c90b71320
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0f7dcddd7070f95ae61b17b9623dfcbab4a62e5f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845761"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920637"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
 
@@ -103,8 +103,8 @@ Los usuarios con este rol tienen permisos para administrar las características 
 |**Microsoft Defender para punto de conexión y EDR**|Asignar roles. <br/><br/> Administrar grupos de máquinas. <br/><br/> Configurar la detección de amenazas de punto de conexión y la corrección automatizada. <br/><br/> Ver, investigar y responder alertas.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver información sobre usuarios, dispositivos, inscripciones, configuración y aplicaciones. <br/><br/> **No puede** realizar cambios en Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Agregar administradores, agregar directivas y configuraciones, cargar registros y realizar acciones de gobierno.|
-|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (próximamente)|Ver directivas de seguridad, estados de seguridad, alertas y recomendaciones, editar directivas de seguridad, descartar alertas y recomendaciones.|
-|[_ *Estado del servicio de Office 365**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Ver el estado de los servicios de Office 365.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (próximamente)|Ver directivas de seguridad, estados de seguridad, alertas y recomendaciones, editar directivas de seguridad, descartar alertas y recomendaciones.|
+|[**Estado del servicio de Office 365**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Ver el estado de los servicios de Office 365.|
 |
 
 ### <a name="security-operator"></a>Operador de seguridad
@@ -140,8 +140,8 @@ Los usuarios con este rol tienen acceso global de solo lectura en la caracterís
 |**Microsoft Defender para punto de conexión y EDR**|Ver e investigar alertas.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver información sobre usuarios, dispositivos, inscripciones, configuración y aplicaciones. <br/><br/> **No puede** realizar cambios en Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Usa permisos de solo lectura para ver la información. <br/><br/> Administrar alertas.|
-|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Ver recomendaciones y alertas. <br/><br/> Ver directivas de seguridad. <br/><br/> Ver estados de seguridad, sin embargo, no pueden realizarse cambios.|
-|[_ *Estado del servicio de Office 365**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Ver el estado de los servicios de Office 365.|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|Ver recomendaciones y alertas. <br/><br/> Ver directivas de seguridad. <br/><br/> Ver estados de seguridad, sin embargo, no pueden realizarse cambios.|
+|[**Estado del servicio de Office 365**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Ver el estado de los servicios de Office 365.|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>Los administradores globales pueden administrar roles en Azure Active Directory

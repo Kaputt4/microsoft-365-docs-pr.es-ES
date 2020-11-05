@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b70393bfff32d855e49c74bab340379cdaf488f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415874"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919694"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Regla de la autoridad reguladora del sector financiero (FINRA) 4511 (c) Estados Unidos
 
@@ -47,11 +47,11 @@ Los proveedores de software y los asociados con cargas de trabajo confidenciales
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Para evaluar el cumplimiento de Office 365 con la 4511 de la regla de FINRA (c), Microsoft ha mantenido una empresa líder de derecho independiente que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4, Covington valida que [Office 365 con bloqueo de preservación](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) incluye características de archivado que permiten a los clientes regulados, incluidos agentes de mantenimiento, almacenar datos de una manera que les ayude a cumplir con los requisitos de FINRA para la retención de registros.
+Para evaluar el cumplimiento de Office 365 con la 4511 de la regla de FINRA (c), Microsoft ha mantenido una empresa líder de derecho independiente que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4, Covington valida que [Office 365 con bloqueo de preservación](retention-preservation-lock.md) incluye características de archivado que permiten a los clientes regulados, incluidos agentes de mantenimiento, almacenar datos de una manera que les ayude a cumplir con los requisitos de FINRA para la retención de registros.
 
 El archivado en Office 365 ayuda a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube dentro del alcance de Microsoft
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -68,9 +68,9 @@ El archivado en Office 365 ayuda a conservar una amplia gama de datos, incluidos
 
 ## <a name="how-to-implement"></a>Cómo se debe implementar
 
-- **Reglamento de servicios financieros**: mapa de cumplimiento de los principios clave de los Estados Unidos para la informática en la nube y los servicios en línea de Microsoft. [Obtener más información](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **Guía de cumplimiento y evaluación de riesgos**: Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias. [Obtener más información](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **Casos de uso financiero**: información general de casos de uso, tutoriales y otros recursos para crear soluciones de Azure para servicios financieros. [Obtener más información](https://docs.microsoft.com/azure/industry/financial/)
+- **Reglamento de servicios financieros** : mapa de cumplimiento de los principios clave de los Estados Unidos para la informática en la nube y los servicios en línea de Microsoft. [Más información](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- **Guía de evaluación de riesgos y cumplimiento normativo** : Cree un modelo de gobernanza para la evaluación de riesgos sobre los Servicios en la Nube de Microsoft y las notificaciones reglamentarias. [Más información](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **Casos de uso de servicios financieros** : Use visiones generales sobre los casos, tutoriales u otros recursos para compilar soluciones de Azure para servicios financieros. [Más información](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>Recursos
 
@@ -80,4 +80,4 @@ El archivado en Office 365 ayuda a conservar una amplia gama de datos, incluidos
 - [Herramienta de evaluación de riesgos en la nube para servicios financieros de Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Directivas de retención de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog de servicios financieros de Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)

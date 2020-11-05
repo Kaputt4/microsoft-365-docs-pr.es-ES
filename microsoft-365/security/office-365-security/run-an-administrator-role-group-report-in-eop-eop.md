@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP) independiente. Este informe registra Cuándo un administrador agrega o quita miembros de grupos de roles de administrador, EOP registra cada ocurrencia.
-ms.openlocfilehash: f2f3e32a818825d14c02b2bbffdc136e82f83013
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP) independiente. Este informe registra Cuándo un administrador agrega o quita miembros de grupos de roles de administrador.
+ms.openlocfilehash: 95b216b41d1c83ba36bcc00e1f571e08c8bd1f73
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200486"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920625"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP independiente
 
@@ -34,24 +34,24 @@ Al ejecutar un informe de grupo de roles de administrador en el centro de admini
 
 - Para abrir el centro de administración de Exchange, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol registros de auditoría o registros de auditoría con permiso de vista, que se asignan a los grupos de roles ComplianceManagement, OrganizationManagement (administradores globales) y SecurityAdministrator de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol registros de auditoría o registros de auditoría de View-Only, que se asignan a los grupos de roles ComplianceManagement, OrganizationManagement (administradores globales) y SecurityAdministrator de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este artículo, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Usar el EAC para ejecutar un informe de grupo de roles de administrador
 
-Ejecute el informe de grupo de roles de administrador para buscar los cambios en los grupos de roles de administración de la organización dentro de un período de tiempo determinado.
+Ejecute el informe de grupo de roles de administrador para buscar los cambios en los grupos de roles de administración dentro de un período de tiempo determinado.
 
-1. En el EAC, vaya a **Compliance management** \> **Auditoría**de administración de cumplimiento y, a continuación, elija **ejecutar un informe de grupo de roles de administrador**.
+1. En el EAC, vaya a **Compliance management** \> **Auditoría** de administración de cumplimiento y, a continuación, elija **ejecutar un informe de grupo de roles de administrador**.
 
 2. En la página **Buscar cambios en los grupos de roles de administrador** que se abre, configure las siguientes opciones:
 
-   - Fecha de **Inicio** y **fecha de finalización**: Introduzca un intervalo de fechas. De manera predeterminada, el informe busca los cambios efectuados en los grupos de roles de administrador en las últimas dos semanas.
+   - Fecha de **Inicio** y **fecha de finalización** : Introduzca un intervalo de fechas. De manera predeterminada, el informe busca los cambios efectuados en los grupos de roles de administrador en las últimas dos semanas.
 
-   - **Seleccionar grupos de roles**: de forma predeterminada, se busca en todos los grupos de roles. Para filtrar los resultados por grupos de funciones específicos, haga clic en **seleccionar grupos de roles**. En el cuadro de diálogo que aparece, seleccione un grupo de roles y haga clic en **agregar >**. Repita este paso tantas veces como sea necesario y, a continuación, haga clic en **Aceptar** cuando haya terminado.
+   - **Seleccionar grupos de roles** : de forma predeterminada, se busca en todos los grupos de roles. Para filtrar los resultados por grupos de funciones específicos, haga clic en **seleccionar grupos de roles**. En el cuadro de diálogo que aparece, seleccione un grupo de roles y haga clic en **agregar >**. Repita este paso tantas veces como sea necesario y, a continuación, haga clic en **Aceptar** cuando haya terminado.
 
 3. Cuando haya terminado, haga clic en **Buscar**.
 
@@ -65,14 +65,13 @@ Si se ejecutó correctamente un informe de grupo de roles de administrador, los 
 
 Cuando se agregan miembros a un grupo de funciones, o se quitan de él, los resultados de la búsqueda mostrados en el panel de detalles indican que la pertenencia al grupo de funciones se ha actualizado y enumera los miembros actuales. En los resultados no se indica explícitamente el usuario que se agregó o quitó.
 
-Para determinar si un usuario se agregó o quitó, tiene que comparar dos entradas independientes en el informe. Por ejemplo, veamos las siguientes entradas de registro para el grupo de roles **Servicio de asistencia**:
+Para determinar si un usuario se agregó o quitó, tiene que comparar dos entradas independientes en el informe. Por ejemplo, veamos las siguientes entradas de registro para el grupo de roles **Servicio de asistencia** :
 
 > 1/27/2018 4:43 PM <br> Administrador <br> Miembros actualizados: Administrator;annb,florencef;pilarp <br> 2/06/2018 10:09 A.M. <br> Administrador <br> Miembros actualizados: Administrator;annb;florencef;pilarp;tonip <br> 2/19/2018 2:12 PM <br> Administrador <br> Miembros actualizados: Administrator;annb;florencef;tonip
 
 En este ejemplo, la cuenta de usuario Administrador realizó los siguientes cambios:
 
 - El 2/06/2018 agrega el usuario tonip.
-
 - El 2/19/2018, eliminó el usuario pilarp.
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Usar Exchange Online PowerShell independiente para buscar entradas de registro de auditoría
@@ -90,15 +89,11 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 
 En este ejemplo se buscan todas las entradas del registro de auditoría con los siguientes criterios:
 
-- **Fecha de inicio**: 08/04/2018
-
-- **Fecha de finalización**: 10/03/2018
-
-- **Identificadores de usuario**: Davids, chrisd, Kima
-
-- **Cmdlets**: **set-Mailbox**
-
-- **Parámetros**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
+- **Fecha de inicio** : 08/04/2018
+- **Fecha de finalización** : 10/03/2018
+- **Identificadores de usuario** : `davids` , `chrisd` , `kima`
+- **Cmdlets** : **set-Mailbox**
+- **Parámetros** : _ProhibitSendQuota_ , _ProhibitSendReceiveQuota_ , _IssueWarningQuota_ , _MaxSendSize_ , _MaxReceiveSize_
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
@@ -106,17 +101,15 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 
 En este ejemplo se buscan los cambios realizados en un buzón específico. Esto resulta útil si está resolviendo problemas o necesita proporcionar información para una investigación. Se utilizan los siguientes criterios:
 
-- **Fecha de inicio**: 05/01/2018
-
-- **Fecha de finalización**: 10/03/2018
-
-- **Identificador de objeto**: contoso.com/users/DavidS
+- **Fecha de inicio** : 05/01/2018
+- **Fecha de finalización** : 10/03/2018
+- **Identificador de objeto** : contoso.com/users/DavidS
 
 ```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-Si las búsquedas devuelven muchas entradas de registro, le recomendamos que use el procedimiento proporcionado en **use Exchange Online PowerShell para buscar entradas de registro de auditoría y enviar los resultados a un destinatario** más adelante en este tema. El procedimiento de esta sección envía un archivo XML como dato adjunto de correo electrónico a los destinatarios que especifique, de modo que será más fácil extraer los datos que interesan.
+Si las búsquedas devuelven muchas entradas de registro, le recomendamos que use el procedimiento proporcionado en **use Exchange Online PowerShell para buscar entradas de registro de auditoría y enviar los resultados a un destinatario** más adelante en este artículo. El procedimiento de esta sección envía un archivo XML como dato adjunto de correo electrónico a los destinatarios que especifique, de modo que será más fácil extraer los datos que interesan.
 
 Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
@@ -124,7 +117,7 @@ Para obtener información más detallada acerca de la sintaxis y los parámet
 
 El cmdlet **Search-AdminAuditLog** devuelve los campos descritos en el [contenido del registro de auditoría](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). Entre los campos que devuelve el cmdlet, **CmdletParameters** y **ModifiedProperties** contienen información adicional que no se puede ver de manera predeterminada.
 
-Para ver el contenido de los campos **CmdletParameters** y **ModifiedProperties** siga los pasos que se describen a continuación. O bien, puede usar el procedimiento que se indica en **usar Exchange Online PowerShell para buscar entradas de registro de auditoría y enviar los resultados a un destinatario** más adelante en este tema para crear un archivo XML.
+Para ver el contenido de los campos **CmdletParameters** y **ModifiedProperties** siga los pasos que se describen a continuación. O bien, puede usar el procedimiento que se indica en **usar Exchange Online PowerShell para buscar entradas de registro de auditoría y enviar los resultados a un destinatario** más adelante en este artículo para crear un archivo XML.
 
 En este procedimiento se aplican los siguientes conceptos:
 
@@ -134,21 +127,21 @@ En este procedimiento se aplican los siguientes conceptos:
 
 1. Decida los criterios que desea buscar, ejecute el cmdlet **Search-AdminAuditLog** y guarde los resultados en una variable utilizando el siguiente comando.
 
-    ```PowerShell
-    $Results = Search-AdminAuditLog <search criteria>
-    ```
+   ```PowerShell
+   $Results = Search-AdminAuditLog <search criteria>
+   ```
 
 2. Cada entrada de registro de auditoría se almacena como un elemento de matriz en la variable `$Results` . Puede seleccionar un elemento de matriz especificando su índice de elemento de matriz. Los índices de elemento de matriz comienzan en cero (0) para el primer elemento de matriz. Por ejemplo, para recuperar el quinto elemento de matriz, que tiene un índice de 4, utilice el siguiente comando.
 
-    ```PowerShell
-    $Results[4]
-    ```
+   ```PowerShell
+   $Results[4]
+   ```
 
 3. El comando anterior devuelve la entrada de registro almacenada en el elemento de matriz 4. Para ver el contenido de los campos **CmdletParameters** y **ModifiedProperties** para esta entrada de registro, utilice los siguientes comandos.
 
-    ```PowerShell
-    $Results[4].CmdletParameters
-    $Results[4].ModifiedProperties
-    ```
+   ```PowerShell
+   $Results[4].CmdletParameters
+   $Results[4].ModifiedProperties
+   ```
 
 4. Para ver el contenido de los campos **CmdletParameters** o **ModifiedParameters** en otra entrada de registro, cambie el índice del elemento de matriz.
