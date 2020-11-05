@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: e1504bf4dda8ee2e9f78f84c147bb4f3ebc22887
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774001"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920344"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -65,15 +65,15 @@ El lugar donde se crean y configuran las etiquetas de retención depende de si s
     - Si no está utilizando la administración de registros:
        - **Soluciones** > **Gobierno de información** > pestaña **Etiquetas** > + **Crear una etiqueta**
     
-    ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo** . 
+    ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
 
 2. Siga las instrucciones del asistente. Si utiliza la administración de registros:
     
     - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md) 
     
-    - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos** . Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
+    - Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicar la etiqueta automáticamente o simplemente guardar la etiqueta: seleccione **Solo guardar la etiqueta por ahora** y después seleccione **Hecho** .
+3. Después de crear la etiqueta y ver las opciones para publicar la etiqueta, aplicar la etiqueta automáticamente o simplemente guardar la etiqueta: seleccione **Solo guardar la etiqueta por ahora** y después seleccione **Hecho**.
 
 4. Repita estos pasos para crear más etiquetas.
 
@@ -91,7 +91,7 @@ Publique etiquetas de retención para que los usuarios puedan usarlas en aplicac
     - Si no está utilizando la administración de registros:
         - **Soluciones** > **Gobierno de información** > pestaña **Directivas de etiquetas** > **Publicar etiquetas**
     
-    ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo** . 
+    ¿No ve su opción inmediatamente? Primero seleccione **Mostrar todo**. 
 
 2. Siga las instrucciones del asistente.
     
@@ -272,7 +272,11 @@ When you edit a retention label or retention label policy, and the retention lab
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
+- The option to mark items as a record.
+
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 

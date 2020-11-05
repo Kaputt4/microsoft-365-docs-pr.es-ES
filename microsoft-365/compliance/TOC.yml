@@ -296,8 +296,8 @@
           href: create-apply-retention-labels.md
         - name: Aplicar una etiqueta de retención automáticamente al contenido
           href: apply-retention-labels-automatically.md
-        - name: Cumplir con la norma 17a-4 de la SEC
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Bloquear directivas para restringir los cambios
+          href: retention-preservation-lock.md
         - name: Crear etiquetas de retención con PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Iniciar la retención cuando se produzca un evento
@@ -426,6 +426,8 @@
           href: declare-records.md
         - name: Usar el control de versiones en registros
           href: record-versioning.md
+        - name: Recursos para requerimientos normativos
+          href: retention-regulatory-requirements.md
 - name: Administrar eDiscovery
   items:
     - name: eDiscovery en Microsoft 365
@@ -531,6 +533,8 @@
               href: data-spillage-scenariosearch-and-purge.md
             - name: Conservar destinatarios CCO de la búsqueda
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Descifrado en las herramientas de eDiscovery
+              href: ediscovery-decryption.md
             - name: Solucionar problemas habituales de eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
             - name: Reintentar una búsqueda errónea
@@ -660,6 +664,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Configurar límites de cumplimiento
               href: set-up-compliance-boundaries.md
+            - name: Descifrado en las herramientas de eDiscovery
+              href: ediscovery-decryption.md
             - name: Buscar actividades de eDiscovery en el registro de auditoría
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Solución de problemas de AzCopy
