@@ -17,20 +17,20 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a671fc9234f76c63ff7336369c87e680a4432cc3
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843154"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920294"
 ---
 # <a name="gdpr-breach-notification"></a>Notificación de incumplimiento del RGPD
 
-El Reglamento general de protección de datos (RGPD) añade nuevas normas para organizaciones que ofrecen bienes y servicios a los ciudadanos de la Unión Europea (UE) o que recopilan y analizan datos de los residentes de la UE, independientemente de donde estén ubicados usted o su empresa. Puede encontrar más información en el [tema de resumen del RGPD](gdpr.md). Este documento le da información sobre la finalización de las notificaciones de incumplimiento en virtud del GDPR al usar productos y servicios de Microsoft.
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). This document leads you to information on the completion of Breach Notifications under the GDPR using Microsoft products and services.
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>¿Qué constituye una vulneración de datos personales en virtud del RGPD?
 
-Los datos personales se refieren a cualquier información relacionada con un usuario individual que pueda usarse para identificarlo directa o indirectamente. Una vulneración de datos personales es "una vulneración de seguridad que se traduce en la destrucción accidental o ilegal, pérdida, modificación, divulgación no autorizada o acceso a datos personales transmitidos, almacenados o procesados de alguna otra forma".
+Personal data means any information related to an individual that can be used to identify them directly or indirectly. A personal data breach is 'a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed'.
 
 ## <a name="terminology"></a>Terminología
 
@@ -43,40 +43,39 @@ Definiciones útiles de los términos del RGPD utilizados en este documento:
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft y la notificación de incumplimiento
 
-En Microsoft nos tomamos muy en serio nuestras obligaciones relativas al Reglamento general de protección de datos (RGPD). Un incidente de seguridad o vulneración de datos consiste en eventos como el acceso ilícito a los datos de los clientes almacenados en el equipo de Microsoft o en las instalaciones de Microsoft, o el acceso no autorizado a los mismos, que puede resultar en la pérdida, divulgación o alteración de los datos del cliente.
+Microsoft takes its obligations under the General Data Protection Regulation (GDPR) seriously. A security incident/data breach refers to events such as unlawful access to customer's data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such that has the potential to result in the loss, disclosure, or alteration of customer data.
 
-Al ser un procesador de datos, Microsoft garantiza que los clientes de servicios pueden cumplir los requisitos de notificación de infracción del RGPD como controladores de datos. Nuestra notificación proporciona la información necesaria para realizar la valoración. Microsoft informa a los clientes de cualquier vulneración de datos personales, excepto los casos en los que se confirma que los datos personales son ininteligibles (por ejemplo, datos cifrados en los que se confirma la integridad de las claves).
+As a data processor, Microsoft ensures that service customers are able to meet the GDPR's breach notification requirements as data controllers. Our notification provides the information needed to make that assessment. Microsoft notifies customers of any personal data breach, except for those cases where personal data is confirmed to be unintelligible (for example, encrypted data where integrity of the keys is confirmed).
 
-Los controladores de datos son responsables de evaluar los riesgos para la privacidad de los datos y determinar si una infracción requiere la notificación de la DPA de un cliente. Para realizar esa valoración, Microsoft proporciona la información necesaria, junto con su directiva de cumplimiento del RGPD.
+Data controllers are responsible for assessing risks to data privacy and determining whether a breach requires notification of a customer's DPA. Microsoft provides the information needed, along with your GDPR compliance policy, to make that assessment.
 
-La notificación inicial incluye una descripción de la naturaleza de la vulneración, el impacto aproximado del usuario y los pasos de mitigación (si procede). Si nuestra investigación no se completa en el momento de la notificación inicial, se indicarán los pasos y las escalas de tiempo para las comunicaciones subsiguientes. Para obtener más información sobre cómo Microsoft detecta y responde ante una vulneración de datos personales, vea [Notificación de vulneraciones de datos según el RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) en el Portal de confianza del servicio.
+Initial notification includes a description of the nature of the breach, approximate user impact, and mitigation steps (if applicable). If our investigation is not complete at the time of initial notification, we will indicate next steps and timelines for subsequent communication. For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
 
 A continuación, se muestra información sobre las notificaciones de incumplimiento de productos y servicios específicos de Microsoft.
   
 1. **[Office 365](gdpr-breach-Office365.md)**  
-    Microsoft invierte mucho en sistemas, procesos y personal para reducir la posibilidad de que se produzcan vulneraciones de datos personales y para detectar y mitigar rápidamente las consecuencias de las mismas en caso de que se produzcan. Puede leer información adicional en [Inversiones de Office 365 en seguridad de datos](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-office365#office-365-investments-in-data-security).
+    Microsoft invests extensively in systems, processes, and personnel to reduce the likelihood of personal data breach and to quickly detect and mitigate consequence of breach if it does occur. Additional details can be read at [Office 365 Investments in Data Security](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-office365#office-365-investments-in-data-security).
 
-    Un cliente puede tener constancia de una vulneración y querer ponerse en contacto con Microsoft. En este caso, notifíquelo al Soporte técnico de Microsoft, que se comunicará con los equipos de ingeniería para obtener más información.
+    A customer may become aware of a breach and wish to contact Microsoft. In this case, notify Microsoft Support, which will then interface with engineering teams for more information.
 
 2. **[Azure y Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft tiene un servicio ininterrumpido y global de respuesta al incidente que sirve para reducir los efectos de los ataques en Microsoft Azure y Dynamics 365.
 
-    - *Detección de vulneraciones* : ya que tanto Microsoft como el cliente tienen obligaciones de seguridad, los servicios de Azure usan un modelo de responsabilidad compartida para definir las responsabilidades operativas y de seguridad. Microsoft no supervisa ni responde a los incidentes de seguridad dentro del ámbito de responsabilidad del cliente. La respuesta a las incidencias del cliente puede implicar la colaboración con [el soporte técnico](https://azure.microsoft.com/support/options/) de Azure, si se cuenta con los contratos de servicio adecuados. Microsoft Azure también ofrece varios servicios (por ejemplo, [Azure Defender*](https://azure.microsoft.com/services/security-center/)) que los clientes pueden usar para desarrollar y administrar la respuesta a incidentes de seguridad.
+    - *Detección de vulneraciones* : ya que tanto Microsoft como el cliente tienen obligaciones de seguridad, los servicios de Azure usan un modelo de responsabilidad compartida para definir las responsabilidades operativas y de seguridad. Microsoft no supervisa ni responde a los incidentes de seguridad que se encuentran en el ámbito de responsabilidad del cliente. La respuesta a las incidencias del cliente puede implicar la colaboración con el [soporte técnico](https://azure.microsoft.com/support/options/) de Azure, si se cuenta con los contratos de servicio adecuados. Microsoft Azure también ofrece varios servicios (por ejemplo, [Azure Defender](https://azure.microsoft.com/services/security-center/)) que los clientes pueden utilizar para desarrollar y administrar la respuesta a incidentes de seguridad.
 
-        Para obtener una lista de los eventos que activan una investigación de vulneración de seguridad de Microsoft Azure, vea [Detección de posibles vulneraciones](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). [Azure y la notificación de incumplimiento en virtud del RGPD](gdpr-breach-azure-dynamics.md) más información sobre cómo Microsoft investiga, administra y responde a incidentes de seguridad en Azure.
+        For a list of events that trigger a breach investigation in Microsoft Azure, see [Detection of Potential Breaches](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). [Azure and Breach Notification under the GDPR](gdpr-breach-azure-dynamics.md) further details how Microsoft investigates, manages, and responds to security incidents within Azure.
 
-    - *Respuesta a la vulneración de datos* : Microsoft determina los niveles de prioridad y gravedad adecuados de una vulneración al investigar el impacto funcional, la capacidad de recuperación y el impacto de la información del incidente. La prioridad y la gravedad pueden cambiar a lo largo de la investigación, en función de nuevos resultados y conclusiones.
-    El equipo de respuesta de seguridad de Microsoft trabaja en estrecha colaboración con consejeros jurídicos globales para asegurarse de que los informes forenses se realicen de acuerdo con las obligaciones y los compromisos jurídicos para los clientes. Estos procesos se detallan en la [Respuesta a la vulneración de datos de Azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response).
+    - *Data Breach Response* : Microsoft determines appropriate priority and severity levels of a breach by investigating the functional impact, recoverability, and information impact of the incident. Priority and severity may change over the course of the investigation, based on new findings and conclusions. Microsoft's security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. These processes are detailed in [Azure's Data Breach Response](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response).
 
-    - *Notificación al cliente* : Microsoft Azure envía notificaciones a los clientes y a las autoridades competentes de las vulneraciones de datos, según sea necesario. Los avisos a los clientes se entregan en no más de 72 horas desde el momento en que se declaró una vulneración, excepto en las siguientes circunstancias:
+    - *Customer Notification* : Microsoft Azure notifies customers and regulatory authorities of data breaches as required. Customer notices are delivered in no more than 72 hours from the time we declared a breach except for the following circumstances:
 
         - Microsoft cree que el acto de realizar una notificación aumentará el riesgo para otros clientes.
-        - El plazo de 72 horas puede permitir que algunos detalles del incidente estén disponibles. Se le proporcionará esta información a medida que avanza la investigación.
+        - The 72-hour timeline may leave some incident details available. These details will be provided to you as the investigation proceeds.
 
         Puede encontrar más detalles en [Notificación de cliente](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification).
 
 3. **[Soporte técnico y Servicios profesionales de Microsoft](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
-    La naturaleza de los servicios profesionales significa que algunos incidentes de protección de datos pueden estar dentro del ámbito de responsabilidad del cliente. Cuando los Servicios profesionales de Microsoft identifican un incidente relacionado con la protección de datos, se sigue el plan de respuesta estándar del sector documentado, tal como se describe en el [Ámbito y límites del proceso de respuesta a incidentes de protección de datos](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
+    The nature of professional services means that some data protection incidents may fall within the customer's realm of responsibility. When Microsoft Professional Services identifies a data protection incident, it follows documented industry standard response plan as outlined in [Scope & Limits of Data Protection Incident Response Process](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
 
 ## <a name="breach-notification-admin-tools"></a>Herramientas de administración de notificación de infracciones
 
