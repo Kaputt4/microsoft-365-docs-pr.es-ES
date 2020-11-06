@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo Microsoft 365 eDiscovery Tools administra documentos cifrados adjuntos a mensajes de correo electrónico.
-ms.openlocfilehash: 89e6457015289055c56278f5f8650ce022ecf081
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b7c1dc20b8e400b9880cc00a88a2d23a4b6d1979
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920735"
+ms.locfileid: "48925597"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en las herramientas de eDiscovery de Microsoft 365
 
@@ -31,9 +31,6 @@ Las organizaciones usan tecnología de cifrado para proteger el contenido confid
 Hasta la fecha, la administración del contenido cifrado del flujo de trabajo de eDiscovery en Microsoft 365 requiere un control especial de los elementos cifrados según el tipo de cifrado usado y la fase específica del flujo de trabajo. Esto se consiguió principalmente mediante el descifrado del contenido de los mensajes de correo electrónico cuando se exportó de búsquedas de contenido, casos de eDiscovery principales y casos de eDiscovery avanzados. No se pudo obtener una vista previa del contenido cifrado con las tecnologías de cifrado de Microsoft hasta que se exportó. En la exhibición avanzada de documentos electrónicos, el contenido cifrado se marcó con un error de procesamiento, que requirió descargar el elemento cifrado, descifrarlo y, a continuación, carga el archivo descifrado en un conjunto de revisión.
 
 Para facilitar la administración del contenido cifrado en el flujo de trabajo de eDiscovery, las herramientas de exhibición de documentos electrónicos de 365 de Microsoft pueden descifrar archivos cifrados que se adjuntan a mensajes de correo electrónico y se envían a Exchange Online. Antes de esta nueva capacidad, solo se descifró el contenido de un mensaje de correo electrónico protegido por la administración de derechos (y no los archivos adjuntos). Ahora, si un archivo cifrado con una tecnología de cifrado de Microsoft se adjunta a un mensaje de correo electrónico que coincide con los criterios de búsqueda, el archivo cifrado se descifrará cuando los resultados de la búsqueda se hayan preparado para la vista previa. Esto permite a los administradores de eDiscovery ver el contenido de los datos adjuntos de correo electrónico cifrados al obtener una vista previa de los resultados de búsqueda.
-
-> [!NOTE]
-> A partir de 2021 de enero, las herramientas de eDiscovery de Microsoft 365 admitirán documentos cifrados almacenados en SharePoint Online y OneDrive para la empresa.
 
 ## <a name="supported-encryption-technologies"></a>Tecnologías de cifrado admitidas
 
