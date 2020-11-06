@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795122"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931917"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar problemas encontrados por la herramienta de evaluación de preparación
 
@@ -118,7 +118,7 @@ Los dispositivos de escritorio administrados por Microsoft deben estar autorizad
 
 **No preparado**
 
-Siga los pasos de [establecer restricciones de inscripción](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) para cambiar la configuración a **permitir** .
+Siga los pasos de [establecer restricciones de inscripción](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) para cambiar la configuración a **permitir**.
 
 
 ### <a name="enrollment-status-page"></a>Página de estado de inscripción
@@ -127,7 +127,7 @@ Actualmente tiene la página de estado de inscripción (ESP) habilitada. Si est�
 
 **No preparado**
 
-Tiene el perfil predeterminado ESP configurado para mostrar el progreso de la configuración de la **aplicación y el perfil** . Para deshabilitar esta configuración, siga los pasos de la [Página configurar el estado de inscripción](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+Tiene el perfil predeterminado ESP configurado para mostrar el progreso de la configuración de la **aplicación y el perfil**. Deshabilite esta opción o asegúrese de que las asignaciones a cualquier grupo de Azure AD no incluyen dispositivos de escritorio administrados por Microsoft mediante los pasos de la [página Configuración del estado de inscripción](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
 
 **Consejo**
 
@@ -137,9 +137,9 @@ Asegúrese de que los perfiles que tienen la configuración **Mostrar progreso d
 
 Los dispositivos con Windows 10 en la organización de Azure AD deben inscribirse automáticamente en Intune.
 
-**No preparado**
+**Consejo**
 
-Los usuarios de la organización de Azure AD no se inscriben automáticamente en Microsoft Intune. Cambie el **ámbito de usuario** de MDM a **todos o todos** . Si elige **algunos** , vuelva atrás después de la inscripción y seleccione el **lugar de trabajo moderno: todos los** grupos de Azure ad para los **grupos** .
+Asegúrese de que el ámbito de usuario de MDM esté establecido en **alguno** o en **todos** , no en **ninguno**. Si elige **algunos** , vuelva atrás después de la inscripción y seleccione el **lugar de trabajo moderno: todos los** grupos de Azure ad para los **grupos**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store para Empresas
@@ -180,7 +180,7 @@ Los scripts de Windows PowerShell no se pueden asignar de una manera que se diri
 
 **Consejo**
 
-Asegúrese de que los scripts de Windows PowerShell de la organización de Azure AD no tienen como objetivo ningún usuario o dispositivo de escritorio administrado por Microsoft. Para obtener más información, vea [usar scripts de PowerShell en dispositivos Windows 10 en Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Asegúrese de que los scripts de Windows PowerShell de la organización de Azure AD no tienen como objetivo ningún usuario o dispositivo de escritorio administrado por Microsoft. No asigne un script de PowerShell para dirigirse a todos los usuarios, todos los dispositivos o ambos. Cambie la Directiva para usar una asignación que tenga como destino un grupo específico de Azure AD que no incluya ningún dispositivo de escritorio administrado por Microsoft. Para obtener más información, vea [usar scripts de PowerShell en dispositivos Windows 10 en Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
 
 ### <a name="region"></a>Región
 
@@ -254,7 +254,7 @@ Aconseja comprobar una opción que (si se establece en "false") impedir que la i
 
 **Consejo**
 
-Asegúrese de que **AllowAdHocSubscriptions** está establecido en **true** . De lo contrario, es posible que la itinerancia del estado de la empresa no funcione. Para obtener más información, vea [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Asegúrese de que **AllowAdHocSubscriptions** está establecido en **true**. De lo contrario, es posible que la itinerancia del estado de la empresa no funcione. Para obtener más información, vea [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -308,19 +308,11 @@ Tiene los valores predeterminados de seguridad activados. Desactivar los valores
 
 ### <a name="self-service-password-reset"></a>Restablecimiento de contraseña de autoservicio
 
-Debe estar habilitado el restablecimiento de contraseña de autoservicio (SSPR).
-
-**No preparado**
-
-SSPR debe estar habilitado para todos los usuarios. Si no es así, las cuentas de servicio de escritorio administradas de Microsoft no pueden funcionar. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+El restablecimiento de contraseña de autoservicio (SSPR) debe estar habilitado para todos los usuarios. Si no es así, las cuentas de servicio de escritorio administradas de Microsoft no pueden funcionar. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Consejo**
 
 Asegúrese de que la configuración de SSPR **seleccionada** incluye dispositivos de escritorio administrados por Microsoft.
-
-**Error**
-
-El rol de administrador de Intune no tiene permisos suficientes para esta comprobación. También necesitará el rol de Azure AD del lector de informes asignado para ejecutar esta comprobación.
 
 
 ### <a name="standard-user-role"></a>Rol de usuario estándar

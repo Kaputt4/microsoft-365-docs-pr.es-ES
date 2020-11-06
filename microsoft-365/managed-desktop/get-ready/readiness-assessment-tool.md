@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795110"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931929"
 ---
 # <a name="readiness-assessment-tool"></a>Herramienta de evaluación de preparación
 
@@ -22,7 +22,7 @@ Para obtener la mejor experiencia posible al inscribirse en el escritorio admini
 
 La herramienta comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para garantizar que funcionarán con el escritorio administrado por Microsoft. Microsoft Managed Desktop mantiene los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecutó una protección en su organización (inquilino) de Azure AD. Después de 12 meses, lo mantenemos en un formulario de identificación.  Puede optar por eliminar los datos recopilados.
 
-Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero tres de las comprobaciones ([conectores de certificados](readiness-assessment-fix.md#certificate-connectors), [autenticación multifactor](readiness-assessment-fix.md#multi-factor-authentication)y [restablecimiento de contraseñas de autoservicio](readiness-assessment-fix.md#self-service-password-reset)) requieren permisos adicionales.
+Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones (los[conectores de certificados](readiness-assessment-fix.md#certificate-connectors) y [la autenticación multifactor](readiness-assessment-fix.md#multi-factor-authentication) requieren permisos adicionales.
  
 La herramienta de evaluación comprueba estos elementos:
 
