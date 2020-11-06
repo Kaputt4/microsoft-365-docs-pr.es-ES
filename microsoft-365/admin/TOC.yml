@@ -288,40 +288,61 @@
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: Una guía para cumplimiento normativo RGPD
           href: security-and-compliance/gdpr-compliance.md
-    - name: Administrar dispositivos
+    - name: Administra los dispositivos y datos de las aplicaciones
+      href: devices/index.yml
       items:
-        - name: Ver y editar directivas y dispositivos
-          href: ../business/view-policies-and-devices.md
-        - name: Quitar datos de la empresa
-          href: ../business/remove-company-data.md
-        - name: Restablecer dispositivos a la configuración de fábrica
-          href: ../business/reset-devices-to-factory-settings.md
-        - name: Asignar funciones de protección a la configuración de Intune
-          href: ../business/map-protection-features-to-intune-settings.md
-        - name: Estados de dispositivo
-          href: ../business/device-states.md
-        - name: Configuración de protección de la app para equipos con Windows 10
-          href: ../business/protection-settings-for-windows-10-devices.md
-        - name: Configuración de protección de aplicaciones para Android y iOS
-          href: ../business/app-protection-settings-for-android-and-ios.md
+        - name: Métodos de protección de datos de dispositivos y aplicaciones
+          href: devices/choose-device-security.md
+        - name: Documentación de Microsoft Intune
+          href: 'https://docs.microsoft.com/mem/intune/'
+        - name: Microsoft 365 Empresa Premium
           items:
-            - name: Validar la configuración en Android o iOS
-              href: ../business/validate-settings-on-android-or-ios.md
-        - name: Editar o crear la configuración de protección de dispositivos para equipos con Windows 10
-          href: ../business/protection-settings-for-windows-10-pcs.md
+            - name: Ver y editar directivas y dispositivos
+              href: ../business/view-policies-and-devices.md
+            - name: Quitar datos de la empresa
+              href: ../business/remove-company-data.md
+            - name: Restablecer dispositivos a la configuración de fábrica
+              href: ../business/reset-devices-to-factory-settings.md
+            - name: Asignar funciones de protección a la configuración de Intune
+              href: ../business/map-protection-features-to-intune-settings.md
+            - name: Estados de dispositivo
+              href: ../business/device-states.md
+            - name: Configuración de protección de la app para equipos con Windows 10
+              href: ../business/protection-settings-for-windows-10-devices.md
+            - name: Configuración de protección de aplicaciones para Android y iOS
+              href: ../business/app-protection-settings-for-android-and-ios.md
+              items:
+                - name: Validar la configuración en Android o iOS
+                  href: ../business/validate-settings-on-android-or-ios.md
+            - name: Editar o crear la configuración de protección de dispositivos para equipos con Windows 10
+              href: ../business/protection-settings-for-windows-10-pcs.md
+              items:
+                - name: Validar la configuración en equipos con Windows 10
+                  href: ../business/validate-settings-on-windows-10-pcs.md
+            - name: Autopilot
+              items:
+                - name: Agregar dispositivos y perfil de Autopilot
+                  href: ../business/add-autopilot-devices-and-profile.md
+                - name: Crear y editar perfiles de Autopilot
+                  href: ../business/create-and-edit-autopilot-profiles.md
+                - name: Crear y editar dispositivos de Autopilot
+                  href: ../business/create-and-edit-autopilot-devices.md
+                - name: Configuración de perfiles de Autopilot
+                  href: ../business/autopilot-profile-settings.md
+        - name: Documentación para Microsoft 365 Enterprise
+          href: ../enterprise/index.yml
+        - name: Movilidad y seguridad básicas
           items:
-            - name: Validar la configuración en equipos con Windows 10
-              href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Autopilot
-          items:
-            - name: Agregar dispositivos y perfil de Autopilot
-              href: ../business/add-autopilot-devices-and-profile.md
-            - name: Crear y editar perfiles de Autopilot
-              href: ../business/create-and-edit-autopilot-profiles.md
-            - name: Crear y editar dispositivos de Autopilot
-              href: ../business/create-and-edit-autopilot-devices.md
-            - name: Configuración de perfiles de Autopilot
-              href: ../business/autopilot-profile-settings.md
+            - name: Información general sobre Movilidad y seguridad básicas
+              href: basic-mobility-security/overview.md
+            - name: Compara Movilidad y seguridad básicas e Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: Preguntas frecuentes sobre Movilidad y seguridad básicas
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: Capacidades de Movilidad y seguridad básicas
+              href: basic-mobility-security/capabilities.md
+            - name: Compara Movilidad y seguridad básicas e Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
     - name: Trabajar con clientes
       href: work-with-customers/index.yml
       items:
