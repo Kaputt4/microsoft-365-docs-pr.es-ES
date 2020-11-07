@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7e1fbb0f1d468f8e1b79f9cc414fdb87a224283
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: ffeb1f1ca3296390fa10a636d3806127095712f8
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379184"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941435"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -38,7 +38,7 @@ Al definir directivas para barreras de información, trabajará con los atributo
 
 - Los atributos de la cuenta de usuario se definen en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir Departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil del trabajo. 
 
-- Los segmentos son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento mediante un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
+- Los segmentos son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento mediante un **atributo de cuenta de usuario** seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
 
 - Las directivas de barrera de información determinan límites de comunicación o restricciones. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
     - Las directivas "bloquear" impiden que un segmento se comunique con otro segmento.
@@ -70,7 +70,7 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 
 - Registro de auditoría: para buscar el estado de una aplicación de Directiva, el registro de auditoría debe estar activado. Le recomendamos hacer esto antes de empezar a definir segmentos o directivas. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Ninguna directiva de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. Las barreras de la información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar. Una vez que se habilitan las directivas de barrera de información y tiene habilitada la libreta jerárquica de direcciones, todos los usuarios ***que no estén incluidos*** en un segmento de barrera de información verán la [Libreta jerárquica de direcciones](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
+- Ninguna directiva de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. Las barreras de la información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar. Una vez que se habilitan las directivas de barrera de información y tiene habilitada la libreta jerárquica de direcciones, todos los usuarios *_que no se incluyan_* en un segmento de barrera de información verán la [Libreta jerárquica de direcciones](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
 
 - Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo de Azure PowerShell.
     - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
@@ -90,7 +90,7 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 
    2. Cuando se le solicite, inicie sesión con su cuenta profesional o educativa para Office 365.
 
-   3. En el cuadro de diálogo **permisos solicitados** , revise la información y, a continuación, elija **Aceptar**.
+   3. En el cuadro de diálogo _ *permisos solicitados* *, revise la información y, a continuación, elija **Aceptar**.
 
 Cuando se cumplan todos los requisitos previos, continúe con la siguiente sección.
 
@@ -116,7 +116,7 @@ Además de la lista inicial de directivas, haga una lista de los segmentos de su
 > [!IMPORTANT]
 > Un usuario solo puede estar en un segmento.
 
-Determine qué atributos de los datos del directorio de la organización va a usar para definir los segmentos. Puede usar *Department*, *memberOf*o cualquiera de los atributos admitidos. Asegúrese de que tiene valores en el atributo que ha seleccionado para los usuarios. [Vea la lista de atributos admitidos para las barreras de información](information-barriers-attributes.md).
+Determine qué atributos de los datos del directorio de la organización va a usar para definir los segmentos. Puede usar *Department* , *memberOf* o cualquiera de los atributos admitidos. Asegúrese de que tiene valores en el atributo que ha seleccionado para los usuarios. [Vea la lista de atributos admitidos para las barreras de información](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Antes de continuar con la siguiente sección, asegúrese de que los datos del directorio tengan valores para atributos que puede usar para definir segmentos**. Si los datos del directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esta información antes de continuar con las barreras de la información. Para obtener ayuda, vea los siguientes recursos:<br/>- [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -129,7 +129,7 @@ La definición de segmentos no afecta a los usuarios; solo establece la etapa de
 
     |Sintaxis   |Ejemplo  |
     |---------|---------|
-    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>En este ejemplo, un segmento denominado *HR* se define con *HR*, un valor en el atributo *Department* . La parte del cmdlet **-EQ** hace referencia a "es igual a". (Alternativamente, puede usar **-ne** para que signifique "no es igual a". Consulte [uso de "igual" y "no es igual a" en definiciones de segmentos](#using-equals-and-not-equals-in-segment-definitions).)        |
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>En este ejemplo, un segmento denominado *HR* se define con *HR* , un valor en el atributo *Department* . La parte del cmdlet **-EQ** hace referencia a "es igual a". (Alternativamente, puede usar **-ne** para que signifique "no es igual a". Consulte [uso de "igual" y "no es igual a" en definiciones de segmentos](#using-equals-and-not-equals-in-segment-definitions).)        |
 
     Después de ejecutar cada cmdlet, debe ver una lista de detalles sobre el nuevo segmento. Los detalles incluyen el tipo de segmento, quién lo creó o modificó por última vez, etc. 
 
@@ -150,7 +150,7 @@ En el siguiente ejemplo, se define un segmento para que "Department Equals HR".
 |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Observe que en este ejemplo, la definición de segmento incluye un parámetro "equivale a" denotado como **-EQ**. 
   |
 
-También puede definir segmentos con el parámetro "no es igual a", que se indica como **-ne**, como se muestra en la siguiente tabla:
+También puede definir segmentos con el parámetro "no es igual a", que se indica como **-ne** , como se muestra en la siguiente tabla:
 
 |Sintaxis  |Ejemplo  |
 |---------|---------|
@@ -180,7 +180,7 @@ Con la lista de segmentos de usuario y las directivas de barrera de información
 - [Escenario 2: permitir que un segmento se comunique solo con otro segmento](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> Asegúrese de **que, al definir las directivas, no asigne más de una directiva a un segmento**. Por ejemplo, si define una directiva para un segmento denominado *ventas*, no defina una directiva adicional para *ventas*.<p>Además, al definir las directivas de barrera de información, asegúrese de establecer las directivas en estado inactivo hasta que esté listo para aplicarlas. Las directivas de definición (o edición) no afectan a los usuarios hasta que esas directivas se establecen en estado activo y, a continuación, se aplican.
+> Asegúrese de **que, al definir las directivas, no asigne más de una directiva a un segmento**. Por ejemplo, si define una directiva para un segmento denominado *ventas* , no defina una directiva adicional para *ventas*.<p>Además, al definir las directivas de barrera de información, asegúrese de establecer las directivas en estado inactivo hasta que esté listo para aplicarlas. Las directivas de definición (o edición) no afectan a los usuarios hasta que esas directivas se establecen en estado activo y, a continuación, se aplican.
 
 (Vea [ejemplo: directivas de la barrera de información de Contoso](#contosos-information-barrier-policies) en este artículo).
 
@@ -256,11 +256,11 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 
 |Para ver este  |Haga esto  |
 |---------|---------|
-|Cuentas de usuario     |Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros Identity. <p>Consta `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*. <p>(También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
+|Cuentas de usuario     |Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros Identity. <p>Consta `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria* y *alexw* para *Alex*. <p>(También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
 |Mismos     |Use el cmdlet **Get-OrganizationSegment** .<p>Consta `Get-OrganizationSegment` <p>Se mostrará una lista de todos los segmentos definidos para la organización.         |
 |Directivas de barrera de información     |Use el cmdlet **Get-InformationBarrierPolicy** . <p> Consta `Get-InformationBarrierPolicy` <p>Se mostrará una lista de las directivas de barrera de información definidas y su estado.       |
 |La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta `Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
-|Todas las aplicaciones de directiva de barrera de información|Use `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
+|Todas las aplicaciones de directiva de barrera de información|Use `Get-InformationBarrierPoliciesApplicationStatus -All`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
