@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262243"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941371"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -75,7 +75,7 @@ Puede ver una descripción general de todas las eliminaciones pendientes en la p
 
 ![Disposiciones pendientes en la información general de Administración de registros](../media/dispositions-overview.png)
 
-Al seleccionar **Ver todas las eliminaciones pendientes**, se le dirigirá a la página **Eliminación**. Por ejemplo:
+Al seleccionar **Ver todas las eliminaciones pendientes** , se le dirigirá a la página **Eliminación**. Por ejemplo:
 
 ![Página Eliminaciones en el Centro de cumplimiento de Microsoft 365](../media/disposition-tab.png)
 
@@ -92,7 +92,7 @@ En la página **Definir la configuración de retención** de una etiqueta de ret
 
 ![Configuración de retención para una etiqueta](../media/disposition-review-option.png)
  
-Después de seleccionar la opción **Desencadenar una revisión para eliminación**, especifique los revisores de eliminación en la siguiente página del asistente:
+Después de seleccionar la opción **Desencadenar una revisión para eliminación** , especifique los revisores de eliminación en la siguiente página del asistente:
 
 ![Especificar revisores de eliminación](../media/disposition-reviewers.png)
 
@@ -132,10 +132,12 @@ Los elementos que se muestran en la pestaña **Elementos eliminados** para etiqu
 
 > [!NOTE]
 > Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.
-    
+
+Para la auditoría, busque **Archivo eliminado marcado como un registro**.
+
 ## <a name="filter-and-export-the-views"></a>Filtrar y exportar las vistas
 
-Al seleccionar una etiqueta de retención de la página **Eliminación**, la pestaña **Pendiente de eliminación** (si procede) y la pestaña **Elementos eliminados** le permiten filtrar las vistas para facilitar la búsqueda de elementos. 
+Al seleccionar una etiqueta de retención de la página **Eliminación** , la pestaña **Pendiente de eliminación** (si procede) y la pestaña **Elementos eliminados** le permiten filtrar las vistas para facilitar la búsqueda de elementos. 
 
 Para las eliminaciones pendientes, el intervalo de tiempo se basa en la fecha de expiración. En el caso de los elementos eliminados, el intervalo de tiempo se basa en la fecha de eliminación.
   

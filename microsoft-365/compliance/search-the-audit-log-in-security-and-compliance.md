@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846309"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941457"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -438,7 +438,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado|FileDeleted|El usuario elimina un documento de un sitio.|
 |Archivo eliminado de la papelera de reciclaje|FileDeletedFirstStageRecycleBin|El usuario elimina un archivo de la papelera de reciclaje de un sitio.|
 |Archivo eliminado de la papelera de reciclaje de segundo nivel|FileDeletedSecondStageRecycleBin|El usuario elimina un archivo de la papelera del segundo nivel de la papelera de reciclaje de un sitio.|
-|Política de cumplimiento de etiqueta borrada|ComplianceRecordDelete|Se eliminó un documento que se marcó como un registro. Un documento se considera un registro cuando se le aplica una etiqueta de retención que marca el contenido como un registro.|
+|Archivo eliminado marcado como un registro|RecordDelete|Se eliminó un documento que se marcó como un registro. Un documento se considera un registro cuando se le aplica una etiqueta de retención que marca el contenido como un registro.|
 |Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de mayor prioridad que la que se aplica al sitio. Por ejemplo, un documento con la etiqueta Confidential se carga en un sitio con la etiqueta General. <br/><br/> Este evento no se activa si el documento tiene una etiqueta de confidencialidad de menor prioridad que la que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta General se carga en un sitio con la etiqueta Confidential. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, vea [prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) la extracción del repositorio de un archivo. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba extraído del repositorio se descarta y no se guarda en la versión del documento de la biblioteca de documentos.|
