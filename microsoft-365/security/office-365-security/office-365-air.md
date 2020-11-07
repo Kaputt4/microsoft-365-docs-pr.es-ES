@@ -1,5 +1,5 @@
 ---
-title: Introducción a la investigación y la respuesta automatizadas en Microsoft defender para Office 365
+title: Investigación y respuesta automatizadas en Microsoft defender para Office 365
 keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
 f1.keywords:
 - NOCSH
@@ -21,14 +21,14 @@ description: Empiece a usar las capacidades de investigación y respuesta automa
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 5a7995e0aeba0f29efb1a085a04a299b1e709b1f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931941"
+ms.locfileid: "48941468"
 ---
-# <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Introducción al uso de investigación y respuesta automatizadas (AIR) en Microsoft defender para Office 365
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -140,7 +140,7 @@ Las licencias [de Microsoft defender para Office 365 plan 2](https://docs.micros
 
 - [Revisar y aprobar acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigación y corrección automáticas en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

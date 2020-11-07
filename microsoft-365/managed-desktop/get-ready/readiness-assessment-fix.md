@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931917"
+ms.locfileid: "48941414"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar problemas encontrados por la herramienta de evaluación de preparación
 
@@ -308,20 +308,20 @@ Tiene los valores predeterminados de seguridad activados. Desactivar los valores
 
 ### <a name="self-service-password-reset"></a>Restablecimiento de contraseña de autoservicio
 
-El restablecimiento de contraseña de autoservicio (SSPR) debe estar habilitado para todos los usuarios. Si no es así, las cuentas de servicio de escritorio administradas de Microsoft no pueden funcionar. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+El restablecimiento de contraseña de autoservicio (SSPR) debe estar habilitado para todos los usuarios, excepto las cuentas de servicio de escritorio administradas de Microsoft. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Consejo**
 
-Asegúrese de que la configuración de SSPR **seleccionada** incluye dispositivos de escritorio administrados por Microsoft.
+Asegúrese de que la configuración de SSPR **seleccionada** incluye dispositivos de escritorio administrados por Microsoft, pero excluye las cuentas de servicio de escritorio administradas por Microsoft. Las cuentas de servicio de escritorio administradas de Microsoft no pueden funcionar como se esperaba cuando SSPR está habilitado.  
 
 
 ### <a name="standard-user-role"></a>Rol de usuario estándar
 
-Los usuarios de escritorio administrados de Microsoft deben ser usuarios estándar sin privilegios de administrador local. Se les asignará un rol de usuario estándar cuando inicien su dispositivo de escritorio administrado por Microsoft.
+Excepto los usuarios a los que se han asignado roles de Azure AD de administrador global y de administrador de dispositivos, los usuarios de escritorio administrados de Microsoft serán usuarios estándar sin privilegios de administrador local. A todos los demás usuarios se les asignará una función de usuario estándar cuando inicien su dispositivo de escritorio administrado por Microsoft.
 
 **Consejo**
 
-Los usuarios de escritorio administrado de Microsoft no deben tener privilegios de administrador local antes de inscribirse.
+Los usuarios de escritorio administrados de Microsoft no tendrán privilegios de administrador local en sus dispositivos de escritorio administrados por Microsoft tras la inscripción.
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 

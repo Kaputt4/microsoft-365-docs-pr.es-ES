@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950372"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941446"
 ---
 # <a name="windows-security-update-insights"></a>Información de actualización de seguridad de Windows
 En esta vista se proporciona información general sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. 
@@ -23,11 +23,11 @@ Para ver los datos de uso, seleccione la pestaña <strong>actualizaciones de seg
 
 ## <a name="device-status"></a>Estado del dispositivo
 
-Para que los dispositivos se actualicen mediante Windows Update, deben estar conectados a Internet y no hibernar durante un mínimo de seis horas, dos de los cuales deben ser continuos. Siempre que un dispositivo esté conectado y no esté en hibernación, se considerará que está "en uso". Aunque es posible que se actualice un dispositivo que no cumple estos requisitos, los dispositivos que los cumplen tendrán la probabilidad más alta de que se actualicen. 
+Para que los dispositivos se actualicen mediante Windows Update, deben estar conectados a Internet y no hibernar durante un mínimo de seis horas, dos de los cuales deben ser continuos. Aunque es posible que se actualice un dispositivo que no cumple estos requisitos, los dispositivos que los cumplen tendrán la probabilidad más alta de que se actualicen. 
 
 Clasificamos la actividad de los dispositivos en el contexto de Windows Update con estos términos:
 
-- <strong>Activo:</strong> Dispositivos que cumplen los criterios de uso mínimos (seis horas, dos continuas) para la versión de actualización de seguridad más reciente y que se han protegido con Microsoft Intune como mínimo cada cinco días
+- <strong>Activo:</strong> Dispositivos que cumplen los criterios de actividad mínima (seis horas, dos continuas) para la versión de actualización de seguridad más reciente y que se han protegido con Microsoft Intune como mínimo cada cinco días
 - <strong>Sincronizado:</strong> Dispositivos que se han protegido con Intune en los últimos 28 días
 - No <strong>sincronizado:</strong> Dispositivos que <i>no</i> se han protegido con Intune en los últimos 28 días
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841877"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941480"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -336,7 +336,7 @@ Están disponibles las siguientes vistas:
 
 - **Desglose por: tecnología de detección** y **ver datos por: \> malware de correo electrónico** : se muestra la siguiente información:
 
-  - **Reputación de archivo generada por ATP**<sup>1</sup>: toda la reputación de archivos malintencionados generada por detonaciones de ATP.
+  - **Reputación de archivo generada por ATP**<sup>1</sup>: toda la reputación de archivos malintencionados generada por defender para Office 365 detonaciones.
   - **Motor de antimalware**<sup>1</sup>: detección de motores antimalware.
   - **Bloqueo de tipo de archivo de directiva antimalware** : son mensajes de correo electrónico filtrados debido al tipo de archivo malintencionado identificado en el mensaje.
   - **Detonación de archivo**<sup>1</sup>: la detonación de archivos se detecta mediante datos adjuntos seguros.  

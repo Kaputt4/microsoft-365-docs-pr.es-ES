@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845685"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941492"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -53,7 +53,7 @@ Con este informe, puede:
 > [!NOTE]
 > La característica de etiquetas de usuario está en versión preliminar, no está disponible para todos los usuarios y está sujeta a cambios. Para obtener información sobre la programación de versiones, consulte el plan de desarrollo de Microsoft 365.
 
-Las etiquetas de usuario son identificadores para grupos de usuarios específicos en Microsoft defender para Office 365. Para obtener más información acerca de las etiquetas, licencias y configurarlas, vea [etiquetas de usuario en defender para Office 365](user-tags.md).
+Las etiquetas de usuario son identificadores para grupos de usuarios específicos en Microsoft defender para Office 365. Para obtener más información sobre las etiquetas, las etiquetas de licencias y la configuración, vea [etiquetas de usuario](user-tags.md).
 
 En el explorador de amenazas, puede ver información sobre las etiquetas del usuario en las siguientes experiencias:
 
@@ -199,7 +199,7 @@ Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actual
 
 ### <a name="filter-by-user-tags"></a>Filtrar por etiquetas de usuario
 
-Ahora puede ordenar y filtrar por etiquetas de sistema o de usuario personalizadas para captar rápidamente el ámbito de las amenazas. Vea [etiquetas de usuario en Office 365 ATP](user-tags.md) para obtener más información.
+Ahora puede ordenar y filtrar por etiquetas de sistema o de usuario personalizadas para captar rápidamente el ámbito de las amenazas. Consulte [etiquetas de usuario](user-tags.md) para obtener más información.
 
 > [!IMPORTANT]
 > El filtrado y la ordenación por etiquetas de usuario se encuentra actualmente en versión preliminar pública.
