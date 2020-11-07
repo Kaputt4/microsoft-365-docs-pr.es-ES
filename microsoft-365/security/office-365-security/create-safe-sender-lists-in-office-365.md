@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para permitir los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 0ab0a636cb70d98aa7c17ffe6aaec66ae1f4ecc7
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600326"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945347"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -57,17 +57,17 @@ Las reglas de flujo de correo de Exchange Online y EOP independiente usan condic
 
 En el siguiente ejemplo se supone que necesita correo electrónico de contoso.com para omitir el filtrado de correo no deseado. Para ello, configure las siguientes opciones:
 
-1. **Condición**: **el dominio del remitente** \> **es** \> contoso.com.
+1. **Condición** : **el dominio del remitente** \> **es** \> contoso.com.
 
 2. Configure cualquiera de las siguientes opciones:
 
-   - **Condición de regla de flujo de correo**: **un encabezado** \> **de mensaje incluye cualquiera de estas palabras** \> **encabezado nombre**: `Authentication-Results` \> **valor de encabezado**: `dmarc=pass` o `dmarc=bestguesspass` .
+   - **Condición de regla de flujo de correo** : **un encabezado** \> **de mensaje incluye cualquiera de estas palabras** \> **encabezado nombre** : `Authentication-Results` \> **valor de encabezado** : `dmarc=pass` o `dmarc=bestguesspass` .
 
-     Esta condición comprueba el estado de autenticación del remitente del dominio de correo electrónico de envío para asegurarse de que el dominio de envío no se está falsificando. Para obtener más información acerca de la autenticación de correo electrónico, consulte [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md).
+     Esta condición comprueba el estado de autenticación de correo electrónico del dominio de envío de correo electrónico para asegurarse de que el dominio de envío no se está falsificando. Para obtener más información acerca de la autenticación de correo electrónico, consulte [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md).
 
-   - Lista de direcciones IP **permitidas**: especifique la dirección IP o el intervalo de direcciones de origen en la Directiva de filtro de conexión.
+   - Lista de direcciones IP **permitidas** : especifique la dirección IP o el intervalo de direcciones de origen en la Directiva de filtro de conexión.
   
-     Use esta configuración si el dominio de envío no tiene autenticación. Sea lo más restrictivo posible cuando se trata de las direcciones IP de origen en la lista de direcciones IP permitidas. Se recomienda un intervalo de direcciones IP de/24 o menos (menos es mejor). No use intervalos de direcciones IP que pertenezcan a servicios de consumidor (por ejemplo, outlook.com) o infraestructuras compartidas.
+     Use esta configuración si el dominio de envío no usa la autenticación de correo electrónico. Sea lo más restrictivo posible cuando se trata de las direcciones IP de origen en la lista de direcciones IP permitidas. Se recomienda un intervalo de direcciones IP de/24 o menos (menos es mejor). No use intervalos de direcciones IP que pertenezcan a servicios de consumidor (por ejemplo, outlook.com) o infraestructuras compartidas.
 
    > [!IMPORTANT]
    >
@@ -77,17 +77,17 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
    >
    > - Si permite una dirección IP que está detrás de una puerta de enlace de traducción de direcciones de red (NAT), debe conocer los servidores que participan en el grupo de NAT para conocer el ámbito de la lista de direcciones IP permitidas. Las direcciones IP y los participantes de NAT pueden cambiar. Debe comprobar periódicamente sus entradas de la lista de direcciones IP permitidas como parte de los procedimientos de mantenimiento estándar.
 
-3. **Condiciones opcionales**:
+3. **Condiciones opcionales** :
 
-   - **El remitente** \> **es interno/externo** \> **Fuera de la organización**: esta condición es implícita, pero es correcto usarla para tener en cuenta los servidores de correo electrónico locales que podrían no estar configurados correctamente.
+   - **El remitente** \> **es interno/externo** \> **Fuera de la organización** : esta condición es implícita, pero es correcto usarla para tener en cuenta los servidores de correo electrónico locales que podrían no estar configurados correctamente.
 
    - **El asunto o el cuerpo** \> el **asunto o el cuerpo incluye cualquiera de estas palabras** \> \<keywords\>: Si puede restringir aún más los mensajes por palabras clave o frases en la línea de asunto o en el cuerpo del mensaje, puede usar esas palabras como condición.
 
-4. **Acción**: configure ambas acciones en la regla:
+4. **Acción** : configure ambas acciones en la regla:
 
    a. **Modificación de las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
 
-   b. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre de encabezado**: \<CustomHeaderName\> **valor de encabezado**: \<CustomHeaderValue\> .
+   b. **Modificación de las propiedades** \> del mensaje **establecer un encabezado de mensaje** : **establezca el encabezado del mensaje** \<CustomHeaderName\> **en el valor** \<CustomHeaderValue\> .
 
       Por ejemplo, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si tiene más de un dominio en la regla, puede personalizar el texto del encabezado según corresponda.
 
@@ -105,7 +105,7 @@ Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de
 
 Si no puede usar reglas de flujo de correo como se ha descrito anteriormente, la siguiente mejor opción es agregar el servidor o servidores de correo electrónico de origen a la lista de direcciones IP permitidas en la Directiva de filtro de conexión. Para obtener más información, vea [configurar el filtrado de conexiones en EOP](configure-the-connection-filter-policy.md).
 
-**Notas**:
+**Notas** :
 
 - Es importante que mantenga el número mínimo de direcciones IP permitidas, por lo que debe evitar usar intervalos de direcciones IP completos siempre que sea posible.
 

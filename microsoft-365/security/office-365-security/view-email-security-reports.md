@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 738ae55fac5677a1b4f78e4c67506e85d5975090
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941480"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945359"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -129,7 +129,7 @@ Si hace clic en **ver tabla de detalles** , la información que se muestra depen
   - **Date**
   - **Dominio del destinatario**
   - **Número de mensajes**
-  
+
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
 - **Fecha de inicio** y **fecha de finalización**
@@ -270,9 +270,11 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El informe de **Estado de protección contra amenazas** está disponible en EOP y en Microsoft defender para Office 365; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados por ATP para SharePoint, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md).
+El informe de **Estado de protección contra amenazas** está disponible en EOP y en Microsoft defender para Office 365; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre los archivos malintencionados detectados por [ATP para SharePoint, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-El informe proporciona el número de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y defender para Office 365 características como [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [anti-phishing](set-up-anti-phishing-policies.md). Puede usar esta información para identificar tendencias o determinar si es necesario ajustar las directivas de la organización. Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
+El informe proporciona el número de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y defender para Office 365 características como [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [anti-phishing](set-up-anti-phishing-policies.md). Puede usar esta información para identificar tendencias o determinar si es necesario ajustar las directivas de la organización.
+
+**Nota** : es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
 
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
@@ -297,8 +299,8 @@ Están disponibles las siguientes vistas:
 
 - **Ver datos por: contenido \> Malware**<sup>1</sup>: se muestra la siguiente información para las organizaciones de Microsoft Defender para Office 365:
 
-  - **Motor antimalware** : captura de archivos malintencionados en SharePoint Online, OneDrive y Teams mediante antimalware.
-  - **Detonación de archivos** : detonación de archivos malintencionados en SharePoint Online, OneDrive y Microsoft Teams con datos adjuntos seguros.
+  - **Motor antimalware** : archivos malintencionados detectados en SharePoint, OneDrive y Microsoft Teams mediante la [detección de virus integrada en Microsoft 365](virus-detection-in-spo.md).
+  - **Detonación de archivo** : archivos malintencionados detectados por [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
   ![Vista de malware de contenido en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,7 +320,7 @@ Están disponibles las siguientes vistas:
 
 - **Desglose por: tecnología de detección** y **ver datos por: \> phishing email** : se muestra la siguiente información:
 
-  - **Reputación de dirección URL generada por ATP**<sup>1</sup>: reputación de dirección URL malintencionada generada desde defender para Office 365 detonaciones en otros defender para Office 365 clientes.
+  - **Reputación de dirección URL generada por ATP**<sup>1</sup>: reputación de dirección URL malintencionada generada desde defender para Office 365 detonaciones en otros clientes de Microsoft 365.
   - **Filtro de phish avanzado** : señales de suplantación de identidad basadas en aprendizaje automático.
   - **Anti-spoofing-error de dMarc** : error de autenticación de dMarc en los mensajes.
   - **Anti-spoofing-intra-org** : el remitente está intentando imitar el dominio del destinatario.
@@ -326,7 +328,7 @@ Están disponibles las siguientes vistas:
   - **Suplantación de marca** : suplantación de marcas conocidas basadas en remitentes.
   - **Suplantación de dominio**<sup>1</sup>: suplantación de dominios que el cliente posee o define.
   - **Reputación de dirección URL de EOP** : reputación de dirección URL malintencionada.
-  - **Filtro de phish general** : señales de suplantación de identidad basadas en reglas de analista. 
+  - **Filtro de phish general** : señales de suplantación de identidad basadas en reglas de analista.
   - **Otros**
   - **Zap de phish**<sup>2</sup>: no hay ningún mensaje de suplantación automática de purga de horas.
   - **Detonación de dirección URL**<sup>1</sup>
@@ -339,7 +341,7 @@ Están disponibles las siguientes vistas:
   - **Reputación de archivo generada por ATP**<sup>1</sup>: toda la reputación de archivos malintencionados generada por defender para Office 365 detonaciones.
   - **Motor de antimalware**<sup>1</sup>: detección de motores antimalware.
   - **Bloqueo de tipo de archivo de directiva antimalware** : son mensajes de correo electrónico filtrados debido al tipo de archivo malintencionado identificado en el mensaje.
-  - **Detonación de archivo**<sup>1</sup>: la detonación de archivos se detecta mediante datos adjuntos seguros.  
+  - **Detonación de archivo**<sup>1</sup>: detección por datos adjuntos seguros.
   - **Reputación de archivos malintencionados**
   - **Zap de malware**<sup>2</sup>
   - **Otros**
@@ -377,26 +379,28 @@ Están disponibles las siguientes vistas:
 
 Si hace clic en **filtros** , los filtros disponibles dependen del gráfico que esté consultando:
 
-En el caso del **\> malware de contenido** , puede modificar el informe por la **fecha de inicio** y la **fecha de finalización** , y por el valor de **detección** .
+- Para **ver los datos por: \> malware de contenido** , puede modificar el informe por la **fecha de inicio** y la **fecha de finalización** , y por el valor de **detección** .
 
-Para la **invalidación de mensajes** , puede modificar el informe con los siguientes filtros:
+- Para **ver los datos por: reemplazo de mensaje** , puede modificar el informe con los siguientes filtros:
 
-- **Fecha de inicio** y **fecha de finalización**
-- **Motivo de la invalidación**
-- **Etiqueta** : filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
-- **Dominio**
+  - **Fecha de inicio** y **fecha de finalización**
+  - **Motivo de la invalidación**
+  - **Tag** : filtrar los resultados por usuarios o grupos a los que se aplicó la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+  - **Dominio**
 
-Para todas las demás vistas, puede modificar el informe con los siguientes filtros:
+- Para todas las demás vistas, puede modificar el informe con los siguientes filtros:
 
-- **Fecha de inicio** y **fecha de finalización**
-- **Detección**
-- **Protegido por** : **ATP** o **EOP**
-- **Etiqueta** : filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
-- **Dominio**
+  - **Fecha de inicio** y **fecha de finalización**
+  - **Detección**
+  - **Protegido por** : **ATP** o **EOP**
+  - **Tag** : filtrar los resultados por usuarios o grupos a los que se aplicó la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+  - **Dominio**
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>Vista de tabla de detalles para el informe de estado de protección contra amenazas
 
 Si hace clic en **ver tabla de detalles** , la información que se muestra depende del gráfico que estaba viendo:
+
+- **Ver datos por: información general** : no hay disponible ningún botón **tabla de detalles** de la vista.
 
 - **Ver datos por: contenido \> Malware** :
 
@@ -405,7 +409,7 @@ Si hace clic en **ver tabla de detalles** , la información que se muestra depen
   - **Dirigida por**
   - **Nombre del malware**
 
-Si hace clic en **filtros** en esta vista, puede modificar el informe por **fecha de inicio** y **fecha de finalización** , y por el valor de **detección** .
+  Si hace clic en **filtros** en esta vista, puede modificar el informe por **fecha de inicio** y **fecha de finalización** , y por el valor de **detección** .
 
 - **Ver datos por: invalidación de mensaje** :
 
@@ -418,15 +422,13 @@ Si hace clic en **filtros** en esta vista, puede modificar el informe por **fech
   - **Origen de la intromisión**
   - **Tags**
 
-Si hace clic en **filtros** en esta vista, puede modificar el informe con los siguientes filtros:
+  Si hace clic en **filtros** en esta vista, puede modificar el informe con los siguientes filtros:
 
-- **Fecha de inicio** y **fecha de finalización**
-- **Motivo de la invalidación**
-- **Etiqueta** : filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
-- **Dominio**
-- **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
-
-**Ver datos por: información general** : no hay disponible ningún botón **tabla de detalles** de la vista.
+  - **Fecha de inicio** y **fecha de finalización**
+  - **Motivo de la invalidación**
+  - **Tag** : filtrar los resultados por usuarios o grupos a los que se aplicó la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+  - **Dominio**
+  - **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
 
 - Todos los demás gráficos:
 
@@ -439,14 +441,14 @@ Si hace clic en **filtros** en esta vista, puede modificar el informe con los si
   - **Origen de la intromisión**
   - **Tags**
 
-Si hace clic en **filtros** , puede modificar el informe con los siguientes filtros:
+  Si hace clic en **filtros** , puede modificar el informe con los siguientes filtros:
 
-- **Fecha de inicio** y **fecha de finalización**
-- **Detección**
-- **Protegido por** : **Defender para Office 365** o **EOP**
-- **Etiqueta** : filtrar por etiqueta para devolver usuarios o grupos a los que se ha aplicado una etiqueta específica. Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
-- **Dominio**
-- **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
+  - **Fecha de inicio** y **fecha de finalización**
+  - **Detección**
+  - **Protegido por** : **Defender para Office 365** o **EOP**
+  - **Tag** : filtrar los resultados por usuarios o grupos a los que se aplicó la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+  - **Dominio**
+  - **Destinatarios** (tenga en cuenta que esta propiedad filterable solo está disponible en la vista de tabla de detalles)
 
 ## <a name="top-malware-report"></a>Informe de malware principal
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros.
-ms.openlocfilehash: 47fa49f1253ee5e5b5ee4546a7243a529b6105a1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2aa413400d9d60b759b35d04175b674cedb0a733
+ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920715"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48930193"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisitos normativos para la gobernanza de información y la administración de registros
 
@@ -28,17 +28,17 @@ ms.locfileid: "48920715"
 
 Use los recursos de esta página como ayuda para cumplir los requisitos normativos específicos para la gobernanza de información y la administración de registros en Microsoft 365. Todas las secciones de este documento se centran en una o varias normativas relacionadas y en ellas se incluyen las evaluaciones de terceros o instrucciones existentes sobre cómo configurar Microsoft 365 para ayudarle a cumplir los requisitos descritos.
 
-Puede descargar esos recursos en la página [Recursos de protección de datos, preguntas frecuentes y notas del producto](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) del Portal de confianza de servicios.
+Puede descargar esos recursos en la página [Recursos de protección de datos, preguntas frecuentes y notas del producto](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) del Portal de confianza de servicios.
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f), FINRA 4511(c) y CFTC 1.31(c)-(d)
 
-**Evaluación de Cohasset, Microsoft 365, regla SEC 17a-4(f): almacenamiento inmutable para SharePoint, OneDrive, Teams, Exchange y Skype**
+**Evaluación de Cohasset, Microsoft 365, regla SEC 17a-4(f): almacenamiento inmutable para SharePoint, OneDrive, Teams, Exchange y Skype** - [Descargar evaluación](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 Cargas de trabajo aplicables: SharePoint, OneDrive, Teams, Exchange y Skype Empresarial
 
-Publicado el 2020 de noviembre, este informe se elaboró en colaboración con Cohasset Associates, Inc. (Cohasset) para evaluar las capacidades de los servicios de Microsoft 365 para registrar, almacenar y administrar los requisitos de los registros electrónicos, tal y como se especifica en:  
+Publicado en octubre de 2020, este informe se elaboró en colaboración con Cohasset Associates, Inc. (Cohasset) para evaluar las capacidades de los servicios de Microsoft 365 para registrar, almacenar y administrar los requisitos de los registros electrónicos, tal y como se especifica en:  
 
-- Comisión de bolsa y valores (SEC) en 17 CFR § 240.17a-4(f), que regula a los miembros, corredores y agentes financieros.  
+- Comisión de Bolsa y Valores (SEC) en 17 CFR § 240.17a-4(f), que regula a los miembros, corredores y agentes financieros.  
 
 - Regla 4511(c) de la autoridad regulatoria del sector financiero (FINRA), que se remite a los requisitos de medios y formato de la regla SEC 17a-4(f).  
 
