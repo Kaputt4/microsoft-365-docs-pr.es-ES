@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos 365 de Microsoft y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843133"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944309"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Seguridad de Microsoft 365 para responsables de decisiones empresariales
 
@@ -30,6 +30,8 @@ Este artículo está organizado por prioridad de trabajo, comenzando con la prot
 [![Imagen en miniatura de la hoja de cálculo recomendaciones de seguridad de Microsoft 365 BDM](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft le proporciona la herramienta de puntuación segura dentro de su espacio empresarial para analizar automáticamente su postura de seguridad en función de sus actividades habituales, asignar una puntuación y proporcionar recomendaciones para mejorar la seguridad. Antes de llevar a cabo las acciones recomendadas en este artículo, anote el resultado actual y sus recomendaciones. Las acciones que se recomiendan en este artículo aumentarán su puntuación. El objetivo no es conseguir la puntuación máxima, sino que debe tener en cuenta las oportunidades para proteger su entorno de manera que no afecte negativamente a la productividad de los usuarios. Consulte [calificación segura de Microsoft](mtp/microsoft-secure-score.md).
+
+![Siga estos pasos para mitigar los riesgos para su empresa.](../media/security/security-for-bdms-overview.png)
 
 Otra cosa antes de empezar. . . Asegúrese de [activar el registro de auditoría](../compliance/search-the-audit-log-in-security-and-compliance.md). Necesitará estos datos más adelante, en caso de que necesite investigar un incidente o una infracción. 
 
