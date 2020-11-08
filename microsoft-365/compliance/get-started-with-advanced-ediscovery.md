@@ -17,18 +17,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: 64c8681a47c21a7a6bfa9d67677405f74d75a96f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398499"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944338"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a eDiscovery avanzado
 
-EDiscovery avanzado en Microsoft 365 proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar datos que responden a las investigaciones internas y externas de su organización. No se necesita nada para implementar la exhibición avanzada de documentos electrónicos, pero hay algunas tareas de requisitos previos que debe realizar un administrador de ti y un administrador de exhibición de documentos electrónicos antes de que su organización pueda empezar a crear y usar casos de eDiscovery avanzados para administrar las investigaciones.
+EDiscovery avanzado en Microsoft 365 proporciona un [flujo de trabajo de un extremo a otro](overview-ediscovery-20.md#advanced-ediscovery-architecture) para preservar, recopilar, revisar, analizar y exportar datos que responden a las investigaciones internas y externas de su organización. No se necesita nada para implementar la exhibición avanzada de documentos electrónicos, pero hay algunas tareas de requisitos previos que debe realizar un administrador de ti y un administrador de exhibición de documentos electrónicos antes de que su organización pueda empezar a crear y usar casos de eDiscovery avanzados para administrar las investigaciones.
 
 En este artículo se describen los pasos necesarios para configurar la exhibición avanzada de documentos electrónicos. Esto incluye garantizar las licencias adecuadas necesarias para acceder a la exhibición de documentos electrónicos avanzada y agregar custodios a los casos, así como asignar permisos a su equipo legal y de investigación para que puedan acceder a los casos y administrarlos. En este artículo también se proporciona una introducción de alto nivel sobre el uso de casos para administrar el flujo de trabajo de eDiscovery avanzado para una investigación legal.
 
@@ -110,7 +109,7 @@ El siguiente paso es crear un caso y empezar a usar la exhibición avanzada de d
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de la cuenta de usuario a la que se le han asignado los permisos de eDiscovery adecuados. Los miembros del grupo de roles administración de la organización también pueden crear casos de eDiscovery avanzados.
 
-2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo**y, a continuación, en **eDiscovery > avanzadas**.
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, en **eDiscovery > avanzadas**.
 
 3. En la página **EDiscovery avanzado** , haga clic en la pestaña **casos** y, a continuación, haga clic en **crear un caso**.
 
@@ -120,11 +119,11 @@ El siguiente paso es crear un caso y empezar a usar la exhibición avanzada de d
 
    Se crea el nuevo caso y se muestra la pestaña **configuración** en el nuevo caso. 
 
-6. En el cuadro **permisos de acceso &** de la ficha **configuración** , haga clic en **seleccionar**y, a continuación, haga clic en **Actualizar**.
+6. En el cuadro **permisos de acceso &** de la ficha **configuración** , haga clic en **seleccionar** y, a continuación, haga clic en **Actualizar**.
 
 7. Haga clic en **Actualizar**.
 
-8. En la página desplegable **administrar este caso** , en **administrar miembros**, haga clic en **Agregar** para agregar miembros al caso.
+8. En la página desplegable **administrar este caso** , en **administrar miembros** , haga clic en **Agregar** para agregar miembros al caso.
 
 9. En la lista de personas, active la casilla de verificación situada junto a los nombres de las personas que desea agregar al caso. Como se ha explicado anteriormente, asegúrese de que a las personas que agregue al caso se les haya asignado el permiso de eDiscovery adecuado.
 
@@ -144,7 +143,7 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
    - Los datos del buzón de correo de Exchange, la cuenta de OneDrive y los grupos de Microsoft Teams o Yammer a los que pertenece el custodio pueden "marcarse" como datos de apoyo en el caso.
   
-   - Los datos de custodios se reindizan (por un proceso denominado *indización avanzada*). Esto ayuda a optimizar la búsqueda en el paso siguiente.
+   - Los datos de custodios se reindizan (por un proceso denominado *indización avanzada* ). Esto ayuda a optimizar la búsqueda en el paso siguiente.
   
    - Puede poner una retención en los datos de custodios. Así se conservan los datos que puedan ser relevantes para el caso durante la investigación.
   
