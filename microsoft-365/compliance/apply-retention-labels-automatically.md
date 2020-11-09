@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920024"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931984"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -180,17 +180,8 @@ Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en 
 ProgID:Media AND ProgID:Meeting
 ```
 
-En el caso de esta etiqueta de retención, también tiene que publicarla en los sitios de SharePoint o en las cuentas de OneDrive de los usuarios relevantes mediante la creación de una directiva de etiqueta. La mayoría de las veces, las grabaciones de reuniones se guardan en OneDrive, pero, en el caso de las reuniones de canal, las grabaciones se guardan en SharePoint.
+La mayoría del tiempo, las grabaciones de reuniones se guardan en OneDrive. Pero para las reuniones de canales, se guardan en SharePoint.
 
-Cuando haya guardado la directiva de etiqueta de retención de aplicación automática:
-
-1. Seleccione la pestaña **Directivas de etiqueta** > **Publicar etiquetas**
-
-2. Cuando se le pida que seleccione una etiqueta, elija la misma etiqueta que ha seleccionado para aplicar la directiva de aplicación automática que identifica las grabaciones de reuniones de Teams.
-
-3. Cuando se le pida seleccionar la ubicación, elija **Sitios de SharePoint** y **Cuentas de OneDrive**. A continuación, puede mantener el valor predeterminado de **Todo** o especificar ubicaciones individuales. Por ejemplo, puede incluir o excluir cuentas de OneDrive específicas.
-
-4. Complete el asistente y guarde esta directiva de etiqueta.
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
@@ -216,7 +207,7 @@ Si aplica automáticamente las etiquetas de retención, puede tardar hasta siete
 
 Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el Centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Ejecute el siguiente comando:
     
@@ -234,8 +225,8 @@ Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar alg
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Bloquear la directiva para impedir que se realicen cambios
 
-Si necesita asegurarse de que nadie pueda desactivar la directiva, eliminar la directiva o hacer que sea menos restrictiva, consulte [Usar el Bloqueo de conservación para restringir los cambios en directivas de retención y directivas de etiquetas de retención](retention-preservation-lock.md).
+Si necesita asegurarse de que nadie pueda inhabilitar la directiva, eliminar la directiva o hacer que sea menos restrictiva, consulte [Usar el Bloqueo de conservación para restringir los cambios en directivas de retención y directivas de etiquetas de retención](retention-preservation-lock.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Consulte [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para obtener un escenario de ejemplo que usa una directiva de etiqueta de retención de aplicación automática con propiedades administradas en SharePoint y una retención basada en eventos para iniciar el período de retención.
