@@ -1,5 +1,5 @@
 ---
-title: Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 Endpoint (versión preliminar)
+title: Obtenga más información sobre la prevención de pérdida de datos en punto de conexión de Microsoft 365 (versión preliminar)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La prevención de pérdida de datos de Microsoft 365 Endpoint amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se exponen en las soluciones del Centro de cumplimiento de Microsoft 365 '
+description: 'La prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se exponen en las soluciones del Centro de cumplimiento de Microsoft 365 '
 ms.openlocfilehash: 3dedf8f3134dbdd00c45e6b0aed741a3b3173984
 ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
@@ -58,7 +58,7 @@ La administración de dispositivos es la funcionalidad que permite la colección
 > [!div class="mx-imgBorder"]
 > ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-La incorporación y la retirada se controlan mediante scripts que se descargan desde el centro de la administración de dispositivos. El centro tiene scripts personalizados para cada uno de estos métodos de implementación:
+La incorporación y la retirada se controlan mediante scripts que se descargan desde el Centro de administración de dispositivos. El centro tiene scripts personalizados para cada uno de estos métodos de implementación:
 
 - script local (hasta 10 equipos)
 - Directiva de grupo
@@ -69,16 +69,16 @@ La incorporación y la retirada se controlan mediante scripts que se descargan d
 > [!div class="mx-imgBorder"]
 > ![página de incorporación de dispositivos](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- Use los procedimientos descritos en la [Introducción a la DLP en Microsoft 365 Endpoint](endpoint-dlp-getting-started.md) para incorporar dispositivos.
+ Use los procedimientos descritos en la [Introducción a la DLP en punto de conexión en Microsoft 365](endpoint-dlp-getting-started.md) para incorporar dispositivos.
 
 Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/), estos dispositivos se mostrarán automáticamente en la lista de dispositivos.
 
 > [!div class="mx-imgBorder"]
 > ![lista de dispositivos administrados](../media/endpoint-dlp-learn-about-2-device-list.png)
 
-### <a name="viewing-endpoint-dlp-data"></a>Visualizar datos sobre la DLP de Endpoint
+### <a name="viewing-endpoint-dlp-data"></a>Visualizar datos sobre la DLP en punto de conexión
 
- DLP de Endpoint supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. En la versión preliminar pública, se inspeccionan los siguientes archivos:
+ DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. En la versión preliminar pública, se inspeccionan los siguientes archivos:
 
 - archivos de Word
 - archivos de PowerPoint
@@ -96,14 +96,14 @@ Si incorporó dispositivos a través de [Protección contra amenazas avanzada de
 - archivos .java
 
 > [!NOTE]
-> La DLP de Endpoint evalúa todos los tipos de archivo anteriores según la directiva DLP y aplica las acciones de protección correspondientes. Todos los archivos que coinciden con una directiva DLP, estén o no bloqueados, se auditan para todas las acciones admitidas. Además, la actividad de archivo que se lleva a cabo en cualquier archivo de Word, PowerPoint, Excel, PDF o archivo .csv se audita de forma predeterminada, independientemente de si existe una directiva DLP o si estos archivos coinciden.
+> La DLP en punto de conexión evalúa todos los tipos de archivo anteriores según la directiva DLP y aplica las acciones de protección correspondientes. Todos los archivos que coinciden con una directiva DLP, estén o no bloqueados, se auditan para todas las acciones admitidas. Además, la actividad de archivo que se lleva a cabo en cualquier archivo de Word, PowerPoint, Excel, PDF o archivo .csv se audita de forma predeterminada, independientemente de si existe una directiva DLP o si estos archivos coinciden.
 
 Una vez que se incorpora un dispositivo, la información sobre las actividades auditadas fluye al explorador de actividad, incluso antes de que configure e implemente alguna directivas DLP que tenga dispositivos como ubicación.
 
 > [!div class="mx-imgBorder"]
-> ![eventos de DLP de Endpoint en el explorador de actividad](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![eventos de DLP en punto de conexión en el explorador de actividad](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
-DLP de Endpoint recopila información exhaustiva sobre la actividad auditada.
+DLP en punto de conexión recopila información exhaustiva sobre la actividad auditada.
 
 Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atributos en los detalles de actividad:
 
