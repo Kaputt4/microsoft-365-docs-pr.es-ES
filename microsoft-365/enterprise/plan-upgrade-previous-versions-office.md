@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene recursos para usuarios que usan Office 2007 u Office 2010 para ayudarles a planear la actualización.
-ms.openlocfilehash: 4fa340f2dfa8091aba962da475f5ffb883ba4e3f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920272"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951144"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planear la actualización desde servidores y clientes de Office 2007 o 2010
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo se aplica a Microsoft 365 para empresas y Office 365 para empresas.*
 
 Si su organización usa versiones anteriores de productos y servidores de Office, ahora es un buen momento para empezar a planear la actualización. Los productos y servicios de Office 2007 han llegado al [final del soporte técnico](upgrade-from-office-2007-servers-and-products.md). Para los productos y servicios de Office 2010:
 
@@ -47,9 +47,9 @@ Microsoft 365 es la forma de transformar digitalmente su empresa con la mejora c
 |Recurso|Descripción|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenga información sobre las versiones de Microsoft 365.|
-|[Documentación de Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)|Obtenga información detallada acerca de la versión de Microsoft 365 para pequeñas y medianas empresas.|
-|[Documentación de Microsoft 365 Education](https://docs.microsoft.com/microsoft-365/education/)|Obtenga información detallada acerca de la versión de Microsoft 365 para organizaciones educativas.|
-|[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/)|Obtenga información detallada acerca de la versión de Microsoft 365 para organizaciones empresariales.|
+|[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/business/)|Obtenga información detallada acerca de la versión de Microsoft 365 para pequeñas y medianas empresas.|
+|[Documentación de Microsoft 365 para el ámbito educativo](https://docs.microsoft.com/microsoft-365/education/)|Obtenga información detallada acerca de la versión de Microsoft 365 para organizaciones educativas.|
+|[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/enterprise/)|Obtenga información detallada acerca de la versión de Microsoft 365 para organizaciones empresariales.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>¿Qué sucede si no actualizo?
@@ -107,7 +107,7 @@ Si está usando Office 2007 u Office 2010 en el hogar, tenga en cuenta las sigui
 
 Si decide no actualizar ahora, las aplicaciones de Office seguirán ejecutándose de acuerdo con las [escalas de tiempo](https://support.microsoft.com/lifecycle/search/13615). Sin embargo, para obtener actualizaciones de seguridad o características nuevas y mejoradas, debe actualizar.
    
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Actualizar los clientes y servidores de Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Actualizar los clientes y servidores de Office 2010](upgrade-from-office-2010-servers-and-products.md)

@@ -1,5 +1,5 @@
 ---
-title: Obtener información mediante el entrenamiento de la simulación de ataques
+title: Obtenga información a través de la formación de simulación de ataques
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -10,15 +10,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Obtenga información sobre cómo el curso de simulación de ataques de los empleados del efecto centro de seguridad de Microsoft 365 y obtenga información de los resultados de la simulación y el entrenamiento.
-ms.openlocfilehash: 180ddc773b5a299692e40ddc558d3b3a89f4093b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+description: Obtenga información sobre cómo la formación de simulación de ataques en el centro de seguridad 365 de Microsoft afecta a los empleados y información sobre los resultados de simulación y formación.
+ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944533"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950988"
 ---
-# <a name="gain-insights-through-attack-simulation-training"></a>Obtener información mediante el entrenamiento de la simulación de ataques
+# <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
 En el curso de la simulación de ataques, Microsoft le proporciona información sobre la base de los resultados de las simulaciones y los empleados de formación que han pasado. Esta información le ayudará en el progreso de los empleados en cuanto a la disponibilidad de amenazas, así como recomendar pasos a seguir para preparar mejor a sus empleados y su entorno para los ataques.
 
@@ -38,14 +38,20 @@ En el gráfico, puede ver:
 
 Además, `<number> less susceptible to phishing` refleja la diferencia entre el número real de empleados que corre el ataque y la tasa de compromiso pronosticada. Es menos probable que este número de empleados se vea comprometido por ataques similares en el futuro, a la vez que `<percent%> better than predicted rate` indica el modo en que los empleados en general se comparan con la tasa de compromiso pronosticada.
 
-![Tarjeta de impacto del comportamiento en información general de formación sobre simulación de ataques](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![Tarjeta de impacto del comportamiento en información general de formación sobre simulación de ataques](../../media/attack-sim-preview-behavior-impact-card.png)
 
 Para ver un informe más detallado, haga clic en **Ver simulaciones y entrenar la eficacia del informe** , que proporciona la misma información con contexto adicional de la propia simulación, como la técnica de simulación y el total de usuarios a los que se destina.
 
 ## <a name="recommended-actions"></a>Acciones recomendadas
 
-En la [pestaña **simulaciones**](https://security.microsoft.com/attacksimulator?viewid=simulations) , la selección de una de las simulaciones le llevará a los detalles de la simulación. A continuación, encontrará la sección **acciones recomendadas** .
+En la [pestaña **simulaciones**](https://security.microsoft.com/attacksimulator?viewid=simulations), al seleccionar cualquiera de las simulaciones, se mostrarán detalles de simulación. A continuación, encontrará la sección **acciones recomendadas** .
 
 En la sección acciones recomendadas se detallan las recomendaciones disponibles en [calificación segura de Microsoft](../mtp/microsoft-secure-score.md). Estas recomendaciones se basan en la carga que se usa en la simulación y le ayudarán a proteger a sus empleados y su entorno. Al hacer clic en cada acción de mejora irá a sus detalles.
 
-![Sección acciones de recomendación en el aprendizaje de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![Sección acciones de recomendación en el aprendizaje de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)
+
+## <a name="related-links"></a>Vínculos relacionados
+
+**Simulador de ataque** [cree una simulación de ataque de suplantación de identidad](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) y [cree una carga para entrenar a sus usuarios](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)

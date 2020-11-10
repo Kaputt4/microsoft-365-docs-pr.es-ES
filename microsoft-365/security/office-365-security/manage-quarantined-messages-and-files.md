@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft defender para Office 365 también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: b6f6f47dc227d3bada425d02784a8aff5da8b3d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842933"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951052"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -127,14 +127,6 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
    Cuando haya introducido los criterios de búsqueda, haga clic en ![Botón actualizar](../../media/scc-quarantine-refresh.png) **Actualizar** para filtrar los resultados.
 
 Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje para ver los detalles del mismo y para realizar una acción (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
-
-#### <a name="export-message-results"></a>Exportar los resultados de los mensajes
-
-1. Seleccione los mensajes que le interesan y haga clic en **Exportar resultados**.
-
-2. Haga clic en **Sí** en el mensaje de confirmación que le advierte de que debe mantener abierta la ventana del explorador.
-
-3. Cuando la exportación esté lista, puede elegir el nombre y la ubicación de descarga del archivo .csv.
 
 #### <a name="view-quarantined-message-details"></a>Ver detalles de mensajes en cuarentena
 
@@ -255,14 +247,6 @@ En las organizaciones con defender para Office 365, los administradores pueden a
    - **Tipo de directiva**
 
 Una vez que haya encontrado un archivo en cuarentena específico, seleccione el archivo para ver los detalles del mismo y para realizar acciones en él (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
-
-#### <a name="export-file-results"></a>Resultados de la exportación de archivos
-
-1. Seleccione los archivos que le interesan y haga clic en **exportar resultados**.
-
-2. Haga clic en **Sí** en el mensaje de confirmación que le advierte de que debe mantener abierta la ventana del explorador.
-
-3. Cuando la exportación esté lista, puede elegir el nombre y la ubicación de descarga del archivo .csv.
 
 #### <a name="view-quarantined-file-details"></a>Ver detalles de archivo en cuarentena
 
