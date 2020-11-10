@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 22f279eaccaed20984a59b9b3ae5655df00b2ae3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024730"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951093"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -69,7 +69,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 2. Elija Directiva de **prevención de pérdida de datos**  >  **Policy**.
 
-3. Seleccione una directiva y, junto a **configuración de directiva**, elija **Editar**.
+3. Seleccione una directiva y, junto a **configuración de directiva** , elija **Editar**.
 
 4. Puede crear una nueva regla o editar una regla existente para la Directiva.<br/>![Edición de una regla para una directiva](../media/dlp-teams-editrule.png)<br/>
 
@@ -89,13 +89,13 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 2. Elija Directiva de **prevención de pérdida de datos**  >  **Policy**.
 
-3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams**, ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams** , ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
 
 4. En la columna **Estado** , active la Directiva para **los mensajes de chat y de canal de Microsoft Teams**.<br/>![DLP para los chats y canales de Microsoft Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
 5. Conserve la configuración predeterminada de todas las cuentas o especifique las cuentas que se van a incluir o excluir.
 
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
 
 Espere aproximadamente una hora para que los cambios funcionen en el centro de datos y sincronicen las cuentas de usuario.
 <!-- again, why user accounts? -->
@@ -111,21 +111,46 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 4. En la pestaña Nombre de la **Directiva** , especifique un nombre y una descripción para la Directiva y, a continuación, elija **siguiente**.
 
-5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas**y, después, haga clic en **siguiente**.<br/>Si ha elegido ubicaciones específicas, selecciónelas para su Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas** y, después, haga clic en **siguiente**.<br/>Si ha elegido ubicaciones específicas, selecciónelas para su Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Si desea asegurarse de que los documentos que contienen información confidencial no se compartan incorrectamente en Teams, asegúrese de que los **sitios de SharePoint** y **las cuentas de OneDrive** están activados, junto con **los mensajes de chat y de canal de Teams**.
 
 <br/>
 
-6. En la **pestaña Configuración de directiva** , en **personalizar el tipo de contenido que quiere proteger**, mantenga la configuración sencilla predeterminada o elija **Usar configuración avanzada**y, a continuación, elija **siguiente**. Si elige la configuración avanzada, puede crear o editar reglas para la Directiva. (Para obtener ayuda, consulte [Configuración sencilla frente a configuración avanzada](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)).
+6. En la **pestaña Configuración de directiva** , en **personalizar el tipo de contenido que quiere proteger** , mantenga la configuración sencilla predeterminada o elija **Usar configuración avanzada** y, a continuación, elija **siguiente**. Si elige la configuración avanzada, puede crear o editar reglas para la Directiva. (Para obtener ayuda, consulte [Configuración sencilla frente a configuración avanzada](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)).
 
-7.  En la pestaña **configuración de directiva** , en **¿qué desea hacer si se detecta información confidencial?**, revise la configuración. (Aquí puede elegir mantener las [sugerencias de directiva y notificaciones de correo electrónico](use-notifications-and-policy-tips.md)predeterminadas o personalizarlas).<br/>![Configuración de directivas de DLP con sugerencias y notificaciones](../media/dlp-teams-policysettings-tipsemails.png)<br/>Cuando haya terminado de revisar o editar la configuración, elija **siguiente**.
+7.  En la pestaña **configuración de directiva** , en **¿qué desea hacer si se detecta información confidencial?** , revise la configuración. (Aquí puede elegir mantener las [sugerencias de directiva y notificaciones de correo electrónico](use-notifications-and-policy-tips.md)predeterminadas o personalizarlas).<br/>![Configuración de directivas de DLP con sugerencias y notificaciones](../media/dlp-teams-policysettings-tipsemails.png)<br/>Cuando haya terminado de revisar o editar la configuración, elija **siguiente**.
 
-8. En la **pestaña Configuración de directiva** , en **¿desea activar la Directiva o probar la primera?**, elija si desea activar la Directiva, [probarla primero](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)o dejarla desactivada por ahora y, a continuación, elija **siguiente**.<br/>![Especificar si se va a activar la Directiva](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. En la **pestaña Configuración de directiva** , en **¿desea activar la Directiva o probar la primera?** , elija si desea activar la Directiva, [probarla primero](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)o dejarla desactivada por ahora y, a continuación, elija **siguiente**.<br/>![Especificar si se va a activar la Directiva](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. En la pestaña **revisar la configuración** , revise la configuración de la nueva Directiva. Elija **Editar** para realizar cambios. Cuando haya terminado, elija **crear**.
 
 Espere aproximadamente una hora para que la nueva Directiva funcione a través del centro de datos y sincronice las cuentas de usuario.
+
+## <a name="prevent-external-access-to-sensitive-documents"></a>Impedir el acceso externo a documentos confidenciales
+
+Para garantizar que los invitados externos no puedan obtener acceso a los documentos de SharePoint que contienen información confidencial, ya sea de forma predeterminada desde SharePoint o Teams, seleccione lo siguiente:
+
+- Puede asegurarse de que los documentos estén protegidos hasta que DLP los analice y los marque como seguros para compartirlos [marcando nuevos archivos como confidenciales de forma predeterminada](https://docs.microsoft.com/sharepoint/sensitive-by-default)
+- Estructura recomendada de la Directiva DLP
+    - **Condiciones**
+        - El contenido contiene cualquiera de estos tipos de información confidencial: [seleccionar todos los que se aplican]
+        - El contenido se comparte desde Microsoft 365 con personas de fuera de mi organización
+        <br/>![Condiciones de DLP para detectar el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-condition.png)<br/>
+
+
+    - **Acciones**
+        - Restringir el acceso al contenido para los usuarios externos
+        - Notificar a los usuarios con sugerencias de directivas y correo electrónico
+        - Enviar informes de incidentes al administrador    
+        <br/>![Acción DLP para bloquear el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-action.png)<br/>
+
+Directiva DLP en acción al intentar compartir un documento en SharePoint que contiene información confidencial con un invitado externo:
+<br/>![Uso compartido externo bloqueado](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
+
+
+Directiva DLP en acción cuando el invitado intenta abrir un documento en Microsoft Teams con bloquear externo:
+<br/>![Acceso externo bloqueado](../media/dlp-teams-external-sharing/external-access-blocked.png)<br/>
 
 ## <a name="related-articles"></a>Artículos relacionados
 

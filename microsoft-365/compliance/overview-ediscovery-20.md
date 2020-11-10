@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se proporciona una introducción a la exhibición avanzada de documentos electrónicos en Microsoft 365, una herramienta para investigaciones internas y externas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 2ef61c8c60cb2cd7114798969dce14c7dce0a2fd
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944348"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951161"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -72,11 +72,13 @@ Este es un diagrama de arquitectura de eDiscovery avanzado que muestra el flujo 
 
 Para obtener más información acerca del flujo de trabajo de un extremo a otro en la exhibición avanzada de documentos electrónicos, vea este [vídeo de Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133).
 
-En las secciones siguientes se describe cada paso del flujo de trabajo integrado en eDiscovery avanzado.
+En las secciones siguientes se describe cada paso del flujo de trabajo integrado en la exhibición avanzada de documentos electrónicos. En la siguiente captura de pantalla se muestra la ficha **información general** de un caso denominado *2020.11.03-contoso v. fabrikam*.
+
+![Pestañas en el flujo de trabajo de eDiscovery avanzado integrado](../media/AeD-Case-Screenshot1.png)
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>Administración de custodios y orígenes de datos que no son de privación
 
-Use la pestaña **orígenes** para agregar y administrar las personas que identificó como personas de interés en el caso y otros orígenes de datos que pueden no estar asociados a un custodio. Cuando se agregan custodios o fuentes de datos que no son de privación, puede realizar acciones rápidamente, como poner en retención legal en custodios y orígenes de datos que no son de privación, comunicarse con custodios y buscar en los orígenes de datos que no sean de custodia y recopilar contenido que sea relevante para el caso. A medida que avanza el caso, es fácil agregar nuevos custodios o fuentes de fecha no coprivate o liberarlos del caso. Para obtener más información, consulte [work with custodios in Advanced eDiscovery](managing-custodians.md).
+Use la pestaña **orígenes de datos** para agregar y administrar las personas que ha identificado como personas de interés en el caso y otros orígenes de datos que no se pueden asociar con un custodio. Cuando se agregan custodios o fuentes de datos que no son de privación, puede realizar acciones rápidamente, como poner en retención legal en custodios y orígenes de datos que no son de privación, comunicarse con custodios y buscar en los orígenes de datos que no sean de custodia y recopilar contenido que sea relevante para el caso. A medida que avanza el caso, es fácil agregar nuevos custodios o fuentes de fecha no coprivate o liberarlos del caso. Para obtener más información, consulte [work with custodios in Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Administración de notificaciones de retención legal
 
@@ -84,7 +86,7 @@ Use la pestaña **comunicaciones** para administrar el proceso de comunicación 
 
 ## <a name="managing-content-preservation"></a>Administración de la conservación de contenido
 
-Cuando agrega un custodio a un caso, puede poner una retención en los datos de Private. Use la pestaña **suspensiones** para administrar la suspensión creada al agregar custodios y para administrar otras retenciones legales asociadas con el caso; por ejemplo, puede identificar y poner una retención en orígenes de datos que no sean de Private. También puede editar cualquier suspensión en el caso y convertirlo en una retención basada en consulta para conservar solo el contenido que coincida con la consulta. Por ejemplo, puede Agregar un intervalo de fechas a la suspensión para que solo se conserve el contenido creado en un intervalo de fechas específico. También puede obtener estadísticas de contenido que está en suspensión, quitar la retención después de que ya no sea relevante para el caso o eliminarla. Para obtener más información, consulte [Administrar suspensiones en EDiscovery avanzado](managing-holds.md).
+Cuando agrega un custodio a un caso, puede poner una retención en los datos de Private. Use la pestaña **suspender** para administrar la suspensión creada al agregar custodios y para administrar otras retenciones legales asociadas con el caso; por ejemplo, puede identificar y poner una retención en orígenes de datos que no sean de Private. También puede editar cualquier suspensión en el caso y convertirlo en una retención basada en consulta para conservar solo el contenido que coincida con la consulta. Por ejemplo, puede Agregar un intervalo de fechas a la suspensión para que solo se conserve el contenido creado en un intervalo de fechas específico. También puede obtener estadísticas de contenido que está en suspensión, quitar la retención después de que ya no sea relevante para el caso o eliminarla. Para obtener más información, consulte [Administrar suspensiones en EDiscovery avanzado](managing-holds.md).
 
 ## <a name="indexing-custodian-data"></a>Indización de datos del custodio
 
