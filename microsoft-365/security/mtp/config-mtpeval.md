@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844109"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984955"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configuración de los pilares de 365 defender de Microsoft para el entorno de prueba o el entorno piloto
 
@@ -33,7 +33,7 @@ ms.locfileid: "48844109"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 
 La creación de un entorno de prueba de Microsoft 365 defender o un entorno piloto y su implementación es un proceso de tres fases:
@@ -68,10 +68,10 @@ La preparación es fundamental para todas las implementaciones correctas. En est
 ## <a name="microsoft-365-defender-pillars"></a>Pilares de 365 defender de Microsoft
 Microsoft 365 defender consta de cuatro pilares. Aunque un pilar ya puede proporcionar valor a la seguridad de su organización de red, la habilitación de los cuatro pilares de Microsoft 365 defender dará mayor valor a su organización.
 
-![Imagen of_Microsoft solución de 365 defender para usuarios, Microsoft defender para identidad, para extremos Microsoft defender para Endpoint, para aplicaciones en la nube, Microsoft Cloud App Security y para datos, Microsoft defender para Office 365](../../media/mtp-eval-31.png)
+![Imagen of_Microsoft solución de 365 defender para usuarios, Microsoft defender para identidad, para extremos Microsoft defender para Endpoint, para aplicaciones en la nube, Microsoft Cloud App Security y para datos, Microsoft defender para Office 365](../../media/mtp/m365pillars.png)
 
 Esta sección le guiará para configurar:
--   Microsoft defender para Office 365
+-   Microsoft Defender para Office 365
 -   Microsoft Defender for Identity 
 -   Microsoft Cloud App Security
 -   Microsoft Defender para punto de conexión
@@ -288,7 +288,7 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 
     ![Botón de preferencias de of_Save de imagen en el que debe hacer clic](../../media/mtp-eval-72.png)
 
-## <a name="start-the-microsoft-365-defender-service"></a>Inicio del servicio Microsoft 365 defender
+## <a name="start-the-microsoft-365-defender-service"></a>Iniciar el servicio de Microsoft 365 Defender
 
 >[!NOTE]
 >A partir del 1 de junio de 2020, Microsoft habilita automáticamente las características de Microsoft 365 defender para todos los inquilinos elegibles. Consulte este [artículo de la comunidad tecnológica de Microsoft sobre la elegibilidad de licencias](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) para obtener más información. 

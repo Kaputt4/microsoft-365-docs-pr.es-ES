@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar las características de alertas del centro de seguridad & cumplimiento de Office 365 para ver y administrar alertas, incluida la administración de alertas avanzadas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447052"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984893"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Alertas del centro de seguridad & cumplimiento
 
@@ -40,7 +40,7 @@ Las alertas se encuentran en el centro de seguridad & cumplimiento. Esta es la m
 
 ### <a name="to-go-directly-to-the-security--compliance-center"></a>Para ir directamente al centro de seguridad & cumplimiento
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a <https://protection.office.com>.
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
@@ -52,7 +52,7 @@ Las alertas se encuentran en el centro de seguridad & cumplimiento. Esta es la m
 
 2. Haga clic en el iniciador de aplicaciones en la esquina superior izquierda y, a continuación, haga clic en **seguridad & cumplimiento**.
 
-    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Office 365 disponibles para usted. Ahí podrá buscar una aplicación específica.
+   ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Office 365 disponibles para usted. Ahí podrá buscar una aplicación específica.
 
 3. En el panel izquierdo, haga clic en **alertas** para ver las características de las alertas.
 
@@ -64,6 +64,6 @@ En la tabla siguiente se describen las herramientas disponibles en **alertas** d
 
 |Herramienta|Descripción|
 |---|---|
-|[Administrar alertas](../../compliance/create-activity-alerts.md)|Use alertas de actividad para enviar notificaciones de correo electrónico a usted mismo o a otros administradores cuando los usuarios realizan actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento en el que se haya creado una alerta.|
-|[Administración de alertas avanzadas ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Use la característica **Administrar alertas avanzadas** de Office 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Office 365. Una vez que se le haya notificado, puede investigar situaciones que puedan ser problemáticas y, si es necesario, tomar medidas para solucionar los problemas de seguridad.|
+|[Administrar alertas](../../compliance/create-activity-alerts.md)|Use alertas de actividad para enviar notificaciones de correo electrónico a usted mismo o a otros administradores cuando los usuarios realizan actividades específicas en Microsoft 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento en el que se haya creado una alerta.|
+|[Administración de alertas avanzadas](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Use la característica **Administrar alertas avanzadas** de Microsoft 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Microsoft 365. Una vez que se le haya notificado, puede investigar situaciones que puedan ser problemáticas y, si es necesario, tomar medidas para solucionar los problemas de seguridad.|
 |
