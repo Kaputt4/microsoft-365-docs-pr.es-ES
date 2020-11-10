@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad de los usuarios de Microsoft Teams y obtenga información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637072"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988475"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de los usuarios de Microsoft Teams
 
@@ -44,9 +44,9 @@ Puede ver la actividad de usuario en el informe de Microsoft Teams seleccionando
 
 Seleccione **elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. El formato exportado para el tiempo de **audio**, la **hora de vídeo** y el **tiempo de uso compartido de pantalla** sigue el formato de duración ISO8601.
+También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. El formato exportado para el tiempo de **audio** , la **hora de vídeo** y el **tiempo de uso compartido de pantalla** sigue el formato de duración ISO8601.
 
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |
@@ -59,5 +59,5 @@ También puede exportar los datos del informe a un archivo. csv de Excel; para e
 |Reuniones organizadas por ad hoc <br/> |Número de reuniones no programadas en el calendario que el usuario organizó durante el período de tiempo especificado. <br/>|
 |Reuniones organizadas programadas  <br/> |Número de reuniones programadas que un usuario organizó durante el período de tiempo especificado.  <br/> |
 |Tiene licencia |Seleccionado si el usuario tiene licencia para usar Teams.|
-|Otra actividad|el usuario se considera activo pero tiene un valor de cero para los mensajes de chat, llamadas de 1:1, mensajes de canal, reuniones totales y reuniones organizadas de valores métricos. Las acciones de ejemplo son cuando un usuario abre una entrada de mensaje de canal, pero no responde o cuando se recibe un mensaje privado y se lee pero no responde. |
+|Otra actividad|El usuario está activo, pero ha realizado otras actividades que los tipos de acción expuestos que se ofrecen en el informe (envío o respuesta a mensajes de canal y mensajes de chat, programación o participación en llamadas y reuniones de 1:1). Las acciones de ejemplo son cuando un usuario cambia el estado de los equipos o el mensaje de estado de Teams o abre una entrada de mensaje de canal pero no responde. |
 |||

@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la administración del conocimiento en Project Cortex.
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906946"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988847"
 ---
 # <a name="knowledge-management-overview-preview"></a>Introducción a la administración del conocimiento (vista previa)
 
@@ -75,7 +75,7 @@ Los controles de administración en el centro de administración de Microsoft 36
 - Controlar qué usuarios pueden confirmar o rechazar temas en el centro de temas.
 - Controlar qué usuarios pueden crear y editar temas en el centro de temas.
 
-Consulte [Manage Your Knowledge Network](manage-knowledge-network.md) para obtener más información. 
+Consulte [Manage Your Knowledge Network](topic-experiences-discovery.md) para obtener más información. 
 
 ## <a name="topic-curation--feedback"></a>Tema curation & comentarios
 
@@ -87,5 +87,5 @@ Además, los usuarios con los permisos adecuados pueden etiquetar elementos como
 
 
 ## <a name="see-also"></a>Recursos adicionales
-[Configuración de la administración del conocimiento](set-up-knowledge-network.md)</br>
+[Configuración de la administración del conocimiento](set-up-topic-experiences.md)</br>
 [Información general sobre el centro de temas](topic-center-overview.md)

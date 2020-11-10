@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906924"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988743"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>Trabajar con temas en el centro de temas (versión preliminar)
 
@@ -28,7 +28,7 @@ En el centro de temas, un administrador de información puede revisar temas que 
 
 ## <a name="requirements"></a>Requirements
 
-Para poder trabajar en el centro de temas, necesita tener los permisos necesarios. Su administrador puede agregarlo durante la configuración de la administración de la [información](set-up-knowledge-network.md)o [posteriormente](give-user-permissions-to-the-topic-center.md)se pueden agregar nuevos usuarios.
+Para poder trabajar en el centro de temas, necesita tener los permisos necesarios. Su administrador puede agregarlo durante la configuración de la administración de la [información](set-up-topic-experiences.md)o [posteriormente](give-user-permissions-to-the-topic-center.md)se pueden agregar nuevos usuarios.
 
 Los usuarios del centro de temas pueden recibir dos conjuntos de permisos:
 
@@ -72,7 +72,7 @@ Para revisar un tema confirmado:
 3. También puede rechazarla.
 
 ## <a name="review-published-topics"></a>Revisar los temas publicados
-Se han editado los temas publicados para que la información de speific aparezca siempre a quien encuentre la página. Los temas creados manualmente se muestran aquí.
+Se han editado los temas publicados para que la información específica aparezca siempre a quien encuentre la página. Los temas creados manualmente se muestran aquí.
 
    
 ## <a name="create-a-new-topic"></a>Crear un tema nuevo
@@ -101,7 +101,7 @@ Para crear un nuevo tema:
 
     ![Nueva página del tema](../media/content-understanding/k-new-topic-page.png)
     
-3. Si necesita agregar otros componentes a la página, como texto, imágenes, elementos Web, vínculos, etc., seleccione el icono lienzo en la parte central de la página para buscarlos y agregarlos.
+3. Si necesita agregar otros componentes a la página, como texto, imágenes, elementos Web, vínculos, etc., seleccione el icono de lienzo en la parte central de la página para buscarlos y agregarlos.
 
     ![Agregar elementos a la página](../media/content-understanding/static-icon.png)
 
@@ -124,7 +124,7 @@ Las páginas de temas existentes se pueden encontrar en la página **páginas** 
 4. Realice los cambios necesarios en la página. Esto incluye actualizaciones para los siguientes campos:
 
     1. Nombres alternativos
-    1. Descripción
+    1. Description
     1. Personas
     1. Archivos y páginas
     1. Sitios

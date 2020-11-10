@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar simulador de ataques para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft defender para Office 365 (plan 2).
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846001"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988569"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft defender para Office 365
 
@@ -35,6 +35,9 @@ Si su organización tiene Microsoft defender para Office 365 plan 2, que incluye
 
 > [!NOTE]
 > La simulación de ataques y los datos relacionados con la formación se almacenan con otros datos de clientes para los servicios 365 de Microsoft. Para obtener más información, vea [ubicaciones de datos de Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
+
+> [!TIP]
+> La formación para la simulación de ataques está disponible para la versión preliminar pública en el centro de seguridad de Microsoft 365. Consulte [Simulate an phishing Attack with Microsoft defender for Office 365](attack-simulation-training.md) para obtener más información.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
