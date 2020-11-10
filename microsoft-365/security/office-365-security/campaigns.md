@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Obtenga información sobre las vistas de campañas en Microsoft defender para Office 365.
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941360"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948486"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campañas en Microsoft defender para Office 365
 
@@ -115,9 +115,9 @@ El filtrado más básico que puede hacer es la fecha y hora de inicio y la fecha
 
 Para filtrar más la vista, puede hacer una sola propiedad con varios valores al filtrar haciendo clic en el botón **tipo de campaña** , haciendo su selección y, a continuación, haciendo clic en **Actualizar**.
 
-Las propiedades de la campaña disponibles se describen en la siguiente lista:
+En la lista siguiente se describen las propiedades de campaña filtrable que están disponibles en el botón **tipo de campaña** :
 
-- Basic
+- **Basic** :
   - **Tipo de campaña** : seleccione **malware** o **phish**. Si se quitan las selecciones, se obtiene el mismo resultado que al seleccionar ambas.
   - **Nombre de la campaña**
   - **Subtipo de campaña**
@@ -127,23 +127,26 @@ Las propiedades de la campaña disponibles se describen en la siguiente lista:
   - **Asunto**
   - **Nombres de archivos adjuntos**
   - **Familia de malware**
+  - **Etiquetas** : usuarios o grupos a los que se ha aplicado la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+  - **Invalidaciones del sistema**
   - **Acción de entrega**
+  - **Acción adicional**
+  - **Directionality**
   - **Tecnología de detección**
-  - **Tags**
+  - **Ubicación de entrega original**
+  - **Última ubicación de entrega**
   - **Invalidaciones del sistema**
 
-- Advanced
+- **Avanzado** :
   - **Identificador del mensaje de Internet** : disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
   - **Identificador de mensaje de red** : un valor GUID que está disponible en el campo de encabezado **X-MS-Exchange-Organization-Network-Message-ID** en el encabezado del mensaje.
   - **IP del remitente**
   - **Datos adjuntos SHA256** : para buscar el valor de hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
-
   - **IDENTIFICADOR de clúster**
-
   - **IDENTIFICADOR de la Directiva de alertas**
+  - **Señal de dirección URL ZAP**
 
-- Direcciones URL
-
+- **Direcciones URL** :
   - **Dominio de dirección URL**
   - **Dominio y ruta de acceso de dirección URL**
   - **URL**
@@ -209,7 +212,7 @@ El diagrama contiene la información siguiente:
 
   ****
 
-  |Valor|Veredicto de filtro de correo no deseado|Descripción|
+  |Valor|Veredicto de filtro de correo no deseado|Description|
   |---|---|---|
   |**Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, un mensaje se marcó como no correo no deseado mediante una regla de flujo de correo (también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, por una regla de flujo de correo.|

@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas encontrados por la herramienta de evaluación de preparación
+title: Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 description: Acciones detalladas que se deben realizar para cada problema que encuentra la herramienta
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941414"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948414"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar problemas encontrados por la herramienta de evaluación de preparación
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
 Para cada comprobación, la herramienta notificará uno de los cuatro resultados posibles:
 
@@ -242,7 +242,7 @@ Tiene una directiva "actualizar anillo" que tiene como objetivo todos los dispos
 
 **Consejo**
 
-Asegúrese de que todas las directivas de Update Ring que tiene excluyan el **lugar de trabajo moderno: todos los grupos de** Azure ad. Para conocer los pasos, consulte [administrar las actualizaciones de software de Windows 10 en Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Los **dispositivos modernos del área de trabajo: todos los** grupos de Azure ad son un grupo dinámico que creamos al inscribirse en el escritorio administrado de Microsoft, por lo que tendrá que volver a excluir este grupo después de la inscripción.
+Asegúrese de que las directivas de Update Ring que tenga no contengan los **dispositivos modernos Workplace-todos los grupos de** Azure ad. Si ha asignado un grupo de usuarios de Azure AD a estas directivas, asegúrese de que todas las directivas de Update Ring también han excluido el **lugar de trabajo moderno: todo grupo de** Azure ad que incluya a los usuarios de escritorio administrados por Microsoft. Para conocer los pasos, consulte [administrar las actualizaciones de software de Windows 10 en Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). Tanto los **dispositivos modernos de área de trabajo-todos** los grupos de Azure ad como todos los **grupos de Azure** ad están asignados a grupos que creamos al inscribirse en el escritorio administrado de Microsoft, por lo que tendrá que volver a excluir este grupo después de la inscripción.
 
 
 ## <a name="azure-active-directory-settings"></a>Configuración de Azure Active Directory

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941492"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948498"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -45,7 +45,6 @@ Con este informe, puede:
 - [Inicie un proceso de investigación y respuesta automatizado desde una vista del explorador (solo en el](#start-automated-investigation-and-response) caso de defender para Office 365 plan 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones en tiempo real
 
 ### <a name="tags-in-threat-explorer"></a>Etiquetas en el explorador de amenazas
@@ -65,6 +64,7 @@ La columna etiquetas que se muestra en la cuadrícula de correo electrónico con
 > ![Filtrar etiquetas en la vista de cuadrícula de correo electrónico](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>Filtrado
+
 Ahora tenemos etiquetas como filtro para que pueda buscar con las cuentas de prioridad o con escenarios específicos de etiquetas de usuario (e incluso excluir los resultados con determinadas etiquetas como parte de esta experiencia). La combinación de estos con los otros varios filtros proporcionados le ayudará a limitar el ámbito de investigación
 
 [![Etiquetas ](../../media/tags-filter-normal.png) de filtro](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ En el control flotante de correo electrónico: > pestaña detalles, ahora podrí
 
 Además de identificar todos los eventos de entrega y posterior a la entrega, la vista escala de tiempo también proporciona información sobre la amenaza identificada en ese punto de tiempo para un subconjunto de estos eventos. También proporciona más información sobre acciones adicionales (por ejemplo, ZAP, corrección manual) junto con el resultado de esa acción. La vista escala de tiempo contiene información sobre la entrega original y, posteriormente, los eventos posteriores a la entrega que se realizan en un correo electrónico.
 
--   Origen: puede ser administrador/sistema o usuario basado en el origen del evento.
--   Evento: Esto incluye eventos de nivel superior como la entrega original, corrección manual, ZAP, envíos y entrega dinámica.
--   Acción: abarca la acción específica que se realizó como parte de la acción de ZAP o de administración (por ejemplo, eliminación temporal).
--   Amenazas: cubre las amenazas (malware, phish, correo no deseado) identificadas en ese momento.
--   Resultado/detalles: cubre más información sobre el resultado de la acción, si se realizó como parte de la acción de ZAP o de administración.
+- Origen: puede ser administrador/sistema o usuario basado en el origen del evento.
+- Evento: Esto incluye eventos de nivel superior como la entrega original, corrección manual, ZAP, envíos y entrega dinámica.
+- Acción: abarca la acción específica que se realizó como parte de la acción de ZAP o de administración (por ejemplo, eliminación temporal).
+- Amenazas: cubre las amenazas (malware, phish, correo no deseado) identificadas en ese momento.
+- Resultado/detalles: cubre más información sobre el resultado de la acción, si se realizó como parte de la acción de ZAP o de administración.
 
 ### <a name="original-and-latest-delivery-location"></a>Ubicación de entrega original y última
 
@@ -170,15 +170,15 @@ Las invalidaciones del sistema son un método para realizar excepciones a la ubi
 
 El conjunto de mejoras centradas en los datos de clics de URL y de URL incluyen:
 
- - Que muestra la dirección URL completa de clics (incluidos los parámetros de consulta que forman parte de la dirección URL) dentro de la sección clics del elemento emergente de dirección URL. Actualmente, se muestra el dominio y la ruta de acceso de la dirección URL en la barra de título. Esta información se amplía para mostrar la dirección URL completa.
+- Que muestra la dirección URL completa de clics (incluidos los parámetros de consulta que forman parte de la dirección URL) dentro de la sección clics del elemento emergente de dirección URL. Actualmente, se muestra el dominio y la ruta de acceso de la dirección URL en la barra de título. Esta información se amplía para mostrar la dirección URL completa.
 
- - Correcciones en los filtros de direcciones URL (URL vs dominio URL vs de URL vs): hemos realizado actualizaciones en torno a la búsqueda de mensajes que contienen un veredicto de URL o clic. Como parte de esto, hemos habilitado la compatibilidad con búsquedas agnósticos de protocolo (lo que significa que puede buscar directamente una dirección URL sin http). De forma predeterminada, la búsqueda de direcciones URL se asigna a http, a menos que se especifique explícitamente. Por ejemplo:
+- Correcciones en los filtros de direcciones URL (URL vs dominio URL vs de URL vs): hemos realizado actualizaciones en torno a la búsqueda de mensajes que contienen un veredicto de URL o clic. Como parte de esto, hemos habilitado la compatibilidad con búsquedas agnósticos de protocolo (lo que significa que puede buscar directamente una dirección URL sin http). De forma predeterminada, la búsqueda de direcciones URL se asigna a http, a menos que se especifique explícitamente. Por ejemplo:
 
-   1. Busque con y sin el `http://` prefijo en los campos de filtro "dirección URL", "dominio de dirección URL" y "dominio de dirección URL y ruta de acceso". Este comportamiento es coherente y debe mostrar el mismo resultado.
+  1. Busque con y sin el `http://` prefijo en los campos de filtro "dirección URL", "dominio de dirección URL" y "dominio de dirección URL y ruta de acceso". Este comportamiento es coherente y debe mostrar el mismo resultado.
 
-   1. Busque el `https://` prefijo en "URL". Cuando no está presente, `http://` se presupone el prefijo.
+  1. Busque el `https://` prefijo en "URL". Cuando no está presente, `http://` se presupone el prefijo.
 
-   1. `/` al principio y al final de los campos "ruta de dirección URL", "dominio de dirección URL", "dominio y ruta de dirección URL" se omite. `/` al final del campo "dirección URL" se omite.
+  1. `/` al principio y al final de los campos "ruta de dirección URL", "dominio de dirección URL", "dominio y ruta de dirección URL" se omite. `/` al final del campo "dirección URL" se omite.
 
 ### <a name="phish-confidence-level"></a>Nivel de confianza de phish
 
@@ -247,12 +247,13 @@ También podrá exportar la lista de usuarios de destino hasta un límite de 300
 > [!div class="mx-imgBorder"]
 > ![Usuarios de destino principales](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Reglas de transporte de Exchange
+
 Como parte del enriquecimiento de datos, también debe poder ver todas las distintas reglas de transporte que se aplicaron a un mensaje. Esta información estará presente en la vista de cuadrícula de correo electrónico (para ver esto, seleccione Opciones de columna en la cuadrícula y agregar regla de transporte de Exchange desde las opciones de columna en la cuadrícula), así como el control flotante en el correo electrónico.
 Podrá ver tanto el GUID como el nombre de las reglas de transporte que se aplicaron al mensaje. Además, podrá buscar los mensajes con el nombre de la regla de transporte. Esto sería una búsqueda "contiene", lo que significa que también podrá realizar búsquedas mediante búsquedas parciales.
 
 #### <a name="important-note"></a>Nota importante:
+
 La búsqueda de ETR y la disponibilidad de nombres dependerán de la función específica que se le haya asignado. Deberá disponer de uno de los siguientes roles/permisos para poder ver los nombres y la búsqueda de ETR.  Si no tiene ninguna de las siguientes funciones asignadas, no podrá ver los nombres de las reglas de transporte y buscar los mensajes con los nombres de ETR. Sin embargo, podrá ver la etiqueta ETR y la información GUID dentro de los detalles de correo electrónico. Las otras experiencias en la visualización de registros en las cuadrículas de correo electrónico, los controles flotantes de correo electrónico, los filtros y la exportación no se ven afectados.
 
 - Solo EXO-prevención de pérdida de datos: ALL

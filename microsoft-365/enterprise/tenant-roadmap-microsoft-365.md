@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: La guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753971"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948402"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mapa de ruta del espacio empresarial para Microsoft 365
 
@@ -33,7 +33,7 @@ Para preparar al inquilino para el usuario, los grupos, las licencias y las apli
 
 Una vez que haya comprobado que la red está optimizada para el acceso a Microsoft 365 tanto para trabajadores locales como remotos, las próximas grandes tareas planean y configuran el espacio empresarial de Microsoft 365 para los nombres de dominio DNS, los servicios comunes y para esa infraestructura de identidad que admita el inicio de sesión de usuario seguro.
 
-### <a name="plan"></a>Planear
+### <a name="plan"></a>Plan
 
 Para planear la implementación del espacio empresarial:
 
@@ -66,7 +66,7 @@ Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Mic
 
 Para obtener más información, vea [Microsoft 365 multi-geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>Administrar varios inquilinos de Microsoft 365 
+## <a name="manage-multiple-microsoft-365-tenants"></a>Administrar varios inquilinos de Microsoft 365 
 
 Aunque tener un único inquilino para su oganization es ideal, puede ser una de las muchas organizaciones que tienen varios inquilinos. Los motivos pueden incluir fusiones y adquisiciones, desear el aislamiento administrativo o tener una descentralizada.
 

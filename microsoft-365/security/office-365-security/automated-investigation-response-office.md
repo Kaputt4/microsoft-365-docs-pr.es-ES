@@ -1,5 +1,5 @@
 ---
-title: Cómo funciona la investigación y la respuesta automatizadas (AIR) en Microsoft defender para Office 365
+title: Cómo funciona la investigación y la respuesta automatizadas en Microsoft defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,14 +21,14 @@ description: Vea cómo funcionan las capacidades de investigación y respuesta a
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931963"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948438"
 ---
-# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación y la respuesta automatizadas (AIR) en Microsoft defender para Office 365
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación y la respuesta automatizadas en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -91,7 +91,7 @@ Las funcionalidades de AIR de Microsoft defender para Office 365 incluyen [infor
 
 Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea las alertas de phish notificadas por el usuario que ya se procesaron por vía aérea. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, vea blog de la [comunidad tecnológica: mejorar la efectividad de su SOC con Microsoft defender para Office 365 y la API de administración de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Empezar a usar AIR](office-365-air.md)
 
