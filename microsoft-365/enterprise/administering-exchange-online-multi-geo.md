@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Obtenga información sobre cómo administrar la configuración multigeográfica de Exchange online en su entorno de Microsoft 365 con PowerShell.
-ms.openlocfilehash: ea7090cd65634138f9677960beab7770825a6e86
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950681"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993381"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 
@@ -93,11 +93,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 El cmdlet **Get-Mailbox** en el PowerShell de Exchange Online muestra las siguientes propiedades multigeográficas en buzones:
 
-- **Database**: Las tres primeras letras del nombre de la base de datos corresponden al código geográfico, que indica dónde se encuentra el buzón. Para los buzones de archivo en línea, podría usarse la propiedad **ArchiveDatabase**.
+- **Database** : Las tres primeras letras del nombre de la base de datos corresponden al código geográfico, que indica dónde se encuentra el buzón. Para los buzones de archivo en línea, podría usarse la propiedad **ArchiveDatabase**.
 
-- **MailboxRegion**: Especifica el código de ubicación geográfica definido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
+- **MailboxRegion** : Especifica el código de ubicación geográfica definido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
 
-- **MailboxRegionLastUpdateTime**: Indica cuándo se actualizó MailboxRegion por última vez (de forma automática o manual).
+- **MailboxRegionLastUpdateTime** : Indica cuándo se actualizó MailboxRegion por última vez (de forma automática o manual).
 
 Para ver estas propiedades de un buzón, use la siguiente sintaxis:
 
@@ -160,21 +160,39 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 >   - La cantidad de buzones que se migrarán.
 >   - La disponibilidad de recursos de migración.
 
-### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Mover buzones deshabilitados que se encuentran en Retención por juicio
+### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Mover un buzón inactivo a un área geográfica específica
 
-Los buzones deshabilitados en Retención por juicio que se conservan para eDiscovery no se pueden mover cambiando el valor de **PreferredDataLocation** en el estado deshabilitado. Para mover un buzón deshabilitado en Retención por juicio:
+No puede mover buzones inactivos que se conservan con fines de cumplimiento (por ejemplo, buzones en retención por juicio) cambiando su valor **PreferredDataLocation** . Para mover un buzón inactivo a una geo diferente, siga estos pasos:
 
-1. Asigne temporalmente una licencia al buzón.
+1. Recupere el buzón inactivo. Para obtener instrucciones, consulte [recuperar un buzón inactivo](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox).
 
-2. Cambie el valor de **PreferredDataLocation**.
+2. Evite que el Asistente para carpeta administrada procese el buzón recuperado reemplazando por \<MailboxIdentity\> el nombre, el alias, la cuenta o la dirección de correo electrónico del buzón y ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
 
-3. Elimine la licencia del buzón después de moverlo a la ubicación geográfica seleccionada para volver a definir el estado de deshabilitado.
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+    ```
+
+3. Asigne una licencia de **plan 2 de Exchange Online** al buzón de correo recuperado. Este paso es necesario para volver a poner el buzón en retención por juicio. Para obtener instrucciones, consulte [asignar licencias a usuarios](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+
+4. Configure el valor **PreferredDataLocation** en el buzón como se describe en la sección anterior.
+
+5. Una vez que haya confirmado que el buzón de correo se ha movido a la nueva ubicación geográfica, vuelva a colocar el buzón recuperado en retención por juicio. Para obtener instrucciones, vea [poner un buzón de correo en retención por juicio](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
+
+6. Después de comprobar que la retención por juicio está implementada, permita que el Asistente de carpetas administradas procese el buzón de nuevo; para ello, reemplace \<MailboxIdentity\> con el nombre, el alias, la cuenta o la dirección de correo electrónico del buzón y ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+    ```
+
+7. Vuelva a poner el buzón en inactivo quitando la cuenta de usuario asociada con el buzón. Para obtener instrucciones, consulte [eliminar un usuario de la organización](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). Este paso también libera la licencia de Exchange Online (plan 2) para otros usos.
+
+**Nota** : al mover un buzón inactivo a una ubicación geográfica distinta, puede afectar a los resultados de la búsqueda de contenido o a la capacidad de buscar en el buzón de correo desde la primera ubicación geográfica. Para obtener más información, consulte [búsqueda y exportación de contenido en entornos multigeográfico](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Crear nuevos buzones basados en la nube en una ubicación geográfica específica
 
 Para crear un nuevo buzón en una ubicación geográfica específica, debe realizar uno de estos pasos:
 
-- Configurar el valor de **PreferredDataLocation** como se describe en la sección anterior *antes* de crear el buzón en Exchange Online. Por ejemplo, configure el valor de **PreferredDataLocation** de un usuario antes de asignarle una licencia.
+- Configure el valor **PreferredDataLocation** como se describe en la sección anterior [mover un buzón de solo nube existente a una ubicación geográfica específica](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) *antes* de crear el buzón en Exchange Online. Por ejemplo, configure el valor **PreferredDataLocation** en un usuario antes de asignar una licencia.
 
 - Asignar una licencia al mismo tiempo que se define el valor de **PreferredDataLocation**.
 
@@ -190,7 +208,7 @@ Este ejemplo crea una cuenta de usuario para Elizabeth Brunner con los valores s
 - Nombre: Elizabeth
 - Apellido: Brunner
 - Nombre para mostrar: Elizabeth Brunner
-- Contraseña: Se genera de forma aleatoria y se muestra en los resultados del comando (debido a que no se usa el parámetro *contraseña*)
+- Contraseña: Se genera de forma aleatoria y se muestra en los resultados del comando (debido a que no se usa el parámetro *contraseña* )
 - Licencia: `contoso:ENTERPRISEPREMIUM` (E5)
 - Ubicación: Australia (AUS)
 
@@ -201,7 +219,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 Para obtener más información sobre cómo crear nuevas cuentas de usuario y cómo encontrar valores de LicenseAssignment en el PowerShell de Azure AD, consulte [Crear cuentas de usuario con PowerShell](create-user-accounts-with-microsoft-365-powershell.md) y [Ver licencias y servicios con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 > [!NOTE]
-> Si usa el PowerShell de Exchange Online para habilitar un buzón y necesita que este se cree directamente en la ubicación geográfica especificada en **PreferredDataLocation**, debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente con el servicio basado en la nube. Si usa el cmdlet **Enable-RemoteMailbox** en el entorno local de Exchange PowerShell, el buzón se creará en la ubicación geográfica central.
+> Si usa el PowerShell de Exchange Online para habilitar un buzón y necesita que este se cree directamente en la ubicación geográfica especificada en **PreferredDataLocation** , debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente con el servicio basado en la nube. Si usa el cmdlet **Enable-RemoteMailbox** en el entorno local de Exchange PowerShell, el buzón se creará en la ubicación geográfica central.
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Incorporar buzones existentes en el entorno local a una ubicación geográfica específica
 

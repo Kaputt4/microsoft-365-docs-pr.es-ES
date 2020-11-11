@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919781"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993359"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -97,7 +97,7 @@ La siguiente configuración de suplantación de identidad está disponible en an
   > [!NOTE]
   >
   > - La protección contra la suplantación de identidad (phishing) está habilitada de forma predeterminada en la Directiva antiphishing predeterminada y en las nuevas directivas de suplantación de identidad (phishing) personalizadas que cree.
-  > 
+  >
   > - No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, se habilita el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Para los mensajes de los remitentes suplantados bloqueados, también puede especificar la acción que se llevará a cabo en los mensajes:
@@ -158,7 +158,10 @@ La siguiente configuración de suplantación solo está disponible en las direct
   Puede usar usuarios protegidos para agregar direcciones de correo electrónico de remitentes internos y externos para protegerse de la suplantación. Esta lista de **remitentes** protegidos de la suplantación del usuario es diferente de la lista de **destinatarios** a los que se aplica la Directiva (todos los destinatarios de la directiva predeterminada; destinatarios específicos tal como se ha configurado en la configuración de **aplicado a** en la sección [configuración de directiva](#policy-settings) ).
 
   > [!NOTE]
-  > El número máximo de usuarios protegidos (direcciones de correo electrónico del remitente) que puede definir en todas las directivas antiphishing es de 60. En otras palabras, puede tener 60 usuarios protegidos en una directiva, 12 usuarios protegidos en 5 directivas, etc.
+  >
+  > - En cada Directiva contra la suplantación de identidad (phishing), puede especificar un máximo de 60 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas.
+  >
+  > - La protección de suplantación del usuario no funciona si el remitente y el destinatario se comunicaron previamente mediante correo electrónico. Si el remitente y el destinatario nunca se han comunicado a través del correo electrónico, el mensaje se identificará como un intento de suplantación.
 
   De forma predeterminada, no hay ninguna dirección de correo electrónico de remitente configurada para la protección de suplantación en **los usuarios para** su protección. Por lo tanto, de manera predeterminada, ninguna dirección de correo electrónico del remitente está cubierta por la protección de suplantación, ya sea en la directiva predeterminada o en las directivas personalizadas.
 
@@ -167,7 +170,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 - **Dominios para proteger** : impide que los dominios especificados se suplanten **en el dominio del remitente del mensaje**. Por ejemplo, todos los dominios que son de su propiedad ([dominios aceptados](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o dominios específicos (dominios que posee o dominios asociados). Esta lista de **dominios de remitente** protegidos de la suplantación es diferente de la lista de **destinatarios** a los que se aplica la Directiva (todos los destinatarios de la directiva predeterminada; destinatarios específicos tal como se ha configurado en la configuración de **aplicado a** en la sección [configuración de directiva](#policy-settings) ).
 
   > [!NOTE]
-  > El número máximo de dominios protegidos que puede definir en todas las directivas antiphishing es de 50. En otras palabras, puede tener 50 dominios protegidos en una directiva, 10 dominios protegidos en 5 directivas, etc.
+  > El número máximo de dominios protegidos que puede definir en todas las directivas antiphishing es de 50.
 
   De forma predeterminada, no hay ningún dominio de remitente configurado para la protección de suplantación en los **dominios que se protegen**. Por lo tanto, de manera predeterminada, ningún dominio del remitente está cubierto por la protección de suplantación, ya sea en la directiva predeterminada o en las directivas personalizadas.
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Microsoft defender para Office 365.
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920661"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993393"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra la suplantación de identidad en Microsoft defender para Office 365
 
@@ -170,7 +170,10 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
      Para editar una entrada existente, seleccione el usuario protegido en la lista.
 
      > [!NOTE]
-     > Puede tener un máximo de 60 usuarios en todas las directivas contra la suplantación de identidad (phishing). En otras palabras, puede tener 60 usuarios protegidos en una directiva, 12 usuarios protegidos en 5 directivas, etc.
+     >
+     > - En cada Directiva contra la suplantación de identidad (phishing), puede especificar un máximo de 60 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas.
+     >
+     > - La protección de suplantación del usuario no funciona si el remitente y el destinatario se comunicaron previamente mediante correo electrónico. Si el remitente y el destinatario nunca se han comunicado a través del correo electrónico, el mensaje se identificará como un intento de suplantación.
 
    - **Agregar dominios para proteger** : configure una o ambas de las siguientes opciones:
 
@@ -178,7 +181,7 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
      - **Incluir dominios personalizados** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado** y, en el cuadro **Agregar dominios** , escriba el nombre de dominio (por ejemplo, contoso.com), presione entrar y repita lo mismo según sea necesario.
 
      > [!NOTE]
-     > Puede tener un máximo de 50 dominios en todas las directivas contra la suplantación de identidad (phishing). En otras palabras, puede tener 50 usuarios protegidos en una directiva, 10 usuarios protegidos en 5 directivas, etc.
+     > Puede tener un máximo de 50 dominios en todas las directivas contra la suplantación de identidad (phishing).
 
    - **Acciones** : haga clic en **Editar**
 
