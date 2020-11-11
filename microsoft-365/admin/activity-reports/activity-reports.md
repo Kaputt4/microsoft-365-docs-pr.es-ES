@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779125"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988463"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -48,13 +48,13 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso** .
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso** .
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a> de vaya a la página **informes** \> **uso**.
 
 ::: moniker-end
 
@@ -96,10 +96,14 @@ Según la suscripción, estos son los informes disponibles.
   
 - [Uso de aplicaciones de correo electrónico](email-apps-usage.md)
 
-- [Actividad de formularios](forms-activity.md)
+- [Actividad de formularios](forms-activity-ww.md)
 
-- [Actividad de Forms Pro](forms-pro-activity.md)
+- [Actividad de Forms para el gobierno de los Estados Unidos](forms-activity.md)
+
+- [Actividad de telefonía de clientes de Dynamics 365](forms-pro-activity-ww.md)
   
+- [Actividad de telefonía de clientes de Dynamics 365 para el gobierno de los Estados Unidos](forms-pro-activity.md)
+
 - [Grupos de Microsoft 365](office-365-groups.md)
   
 - [Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity-ww.md)

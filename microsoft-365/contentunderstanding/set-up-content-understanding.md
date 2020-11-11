@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469726"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988689"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -43,18 +43,18 @@ Como administrador, también puede realizar cambios en la configuración selecci
 
 1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y luego vea la sección **Archivos y contenido**.
 
-2. En la sección **Archivos y contenido**, seleccione **Automatizar la comprensión del contenido**.<br/>
+2. En la sección **Archivos y contenido** , seleccione **Automatizar la comprensión del contenido**.<br/>
 
-3. En la página para **Automatizar la comprensión del contenido**, haga clic en **Introducción** para recorrer el proceso de configuración.<br/>
+3. En la página para **Automatizar la comprensión del contenido** , haga clic en **Introducción** para recorrer el proceso de configuración.<br/>
 
     > [!div class="mx-imgBorder"]
     > ![Iniciar la instalación](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. En la página **Configurar el procesamiento** de formularios, puede elegir si desea que los usuarios puedan crear modelos de procesamiento de formularios en bibliotecas de documentos específicos de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
  
-     Para **Qué bibliotecas de SharePoint debe mostrar la opción de crear un modelo de procesamiento de formularios**, puede seleccionar:</br>
+     Para **Qué bibliotecas de SharePoint debe mostrar la opción de crear un modelo de procesamiento de formularios** , puede seleccionar:</br>
       - **Todas las bibliotecas de SharePoint** para que estén disponibles para todas las bibliotecas de SharePoint de su organización.</br>
-      - **Sólo las bibliotecas de los sitios seleccionados**, y luego seleccione los sitios en los que desea que esté disponible o cargue una lista de hasta 50 sitios.</br>
+      - **Sólo las bibliotecas de los sitios seleccionados** , y luego seleccione los sitios en los que desea que esté disponible o cargue una lista de hasta 50 sitios.</br>
       - **No hay bibliotecas de SharePoint** si no quiere que esté disponible para ningún sitio (puede cambiar esto después de la configuración).
 
    > [!div class="mx-imgBorder"]
@@ -63,9 +63,9 @@ Como administrador, también puede realizar cambios en la configuración selecci
    > [!Note]
    > Quitando un sitio después de incluirlo no afecta a los modelos existentes aplicados a las bibliotecas de ese sitio ni a la capacidad de aplicar modelos de comprensión de documentos a una biblioteca. 
     
-5. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos.
+5. En la página **Crear centro de contenido** , puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos.
 
-    1. Para el **Nombre del sitio**, escriba el nombre que quiere darle a su sitio de centro de contenido.
+    1. Para el **Nombre del sitio** , escriba el nombre que quiere darle a su sitio de centro de contenido.
     
     1. La **Dirección del sitio** mostrará el URL de su sitio, basado en lo que usted seleccionó para el nombre del sitio. Si desea cambiar la configuración, haga clic en **Editar**.
 
@@ -74,7 +74,7 @@ Como administrador, también puede realizar cambios en la configuración selecci
 
        Seleccione **Siguiente**.
 
-6. En la página **Revisar y finalizar**, puede mirar el ajuste seleccionado y elegir hacer cambios. Si está de acuerdo con las selecciones, seleccione **Activar**.
+6. En la página **Revisar y finalizar** , puede mirar el ajuste seleccionado y elegir hacer cambios. Si está de acuerdo con las selecciones, seleccione **Activar**.
 
 7. En la página de confirmación, haga clic en **Listo**.
 
@@ -86,13 +86,13 @@ Una vez que haya configurado SharePoint Syntex, debe asignar licencias para los 
 
 Para asignar licencias:
 
-1. En el Centro de administración de Microsoft 365, en **Usuarios**, haga clic en **Usuarios activos**.
+1. En el Centro de administración de Microsoft 365, en **Usuarios** , haga clic en **Usuarios activos**.
 
 2. Seleccione los usuarios a los que desea conceder licencias y haga clic en **Administrar licencias de productos**.
 
 3. Seleccione **Asignar más**.
 
-4. Seleccione **Intelligent Content Services**. En **Aplicaciones**, asegúrese de que estén seleccionados **Common Data Service** e **Intelligent Content Services**.
+4. Seleccione **SharePoint Syntex**. En **Aplicaciones** , asegúrese de estén seleccionadas las opciones **Servicio de datos común para SharePoint Syntex** , **SharePoint Syntex** y **SharePoint Syntex: tipo SPO**.
 
     > [!div class="mx-imgBorder"]
     > ![Licencias de SharePoint Syntex en el Centro de administración de Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
