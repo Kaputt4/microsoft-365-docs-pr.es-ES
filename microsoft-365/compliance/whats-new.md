@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Independientemente de si va a agregar nuevas soluciones al centro de cumplimiento, a actualizar características existentes en función de sus comentarios o a la actualización de documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847806"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988858"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -34,7 +34,7 @@ Tanto si va a agregar nuevas soluciones en el [centro de cumplimiento de microso
 
 
 > [!TIP]
-> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
 
 ## <a name="august-2020"></a>Agosto de 2020
@@ -100,7 +100,7 @@ La actividad de administración relacionada con la retención ahora se registra 
 
 Para ayudarle a comprender qué soluciones de cumplimiento se usan para proteger y regir los datos confidenciales de su organización, hemos creado dos nuevas páginas de aterrizaje con una visión general de cómo funcionan las soluciones en conjunto para lograr esos objetivos, incluidos los vínculos a documentos relacionados para que pueda profundizar aún más.
 
-[Protección de la información de Microsoft en Microsoft 365](protect-information.md)<br>
+[Protección de la información de Microsoft en Microsoft 365](information-protection.md)<br>
 [Gobierno de información de Microsoft en Microsoft 365](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Exhibición avanzada de documentos electrónicos: agregar orígenes de datos que no sean de Private a sus casos

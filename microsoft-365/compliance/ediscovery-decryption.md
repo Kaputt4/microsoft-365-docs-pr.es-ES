@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 eDiscovery Tools administra documentos cifrados adjuntos a mensajes de correo electrónico.
-ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 91d5689bfb64d272c896c0e92422ce1f45fd5f72
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951123"
+ms.locfileid: "48984904"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en las herramientas de eDiscovery de Microsoft 365
 
@@ -32,11 +32,11 @@ Para ejecutar tareas de eDiscovery comunes en contenido cifrado, los administrad
 Para facilitar la administración del contenido cifrado en el flujo de trabajo de eDiscovery, las herramientas de eDiscovery de 365 de Microsoft incorporan ahora el descifrado de los archivos cifrados que se adjuntan a los mensajes de correo electrónico y se envían a Exchange Online. Antes de esta nueva capacidad, solo se descifraron el contenido de un mensaje de correo electrónico protegido por la administración de derechos (y no los archivos adjuntos). Ahora, si un archivo cifrado con una tecnología de cifrado de Microsoft se adjunta a un mensaje de correo electrónico que coincide con los criterios de búsqueda, el archivo cifrado se descifrará cuando los resultados de la búsqueda se hayan preparado para la revisión. Esto permite a los administradores de eDiscovery ver el contenido de los datos adjuntos de correo electrónico cifrados al obtener una vista previa de los resultados de búsqueda y revisarlos una vez que se han agregado a un conjunto de revisión en eDiscovery avanzado.
 
 > [!NOTE]
-> A partir de entonces, las herramientas de exhibición de documentos electrónicos de Microsoft 365 admitirán documentos cifrados almacenados en SharePoint Online y OneDrive para la empresa.
+> A partir de entonces, las herramientas de eDiscovery de Microsoft 365 admitirán documentos cifrados almacenados en SharePoint Online y OneDrive para la empresa. Esto incluirá los documentos que se cifran como resultado de las etiquetas de confidencialidad que se les aplican.
 
 ## <a name="supported-encryption-technologies"></a>Tecnologías de cifrado admitidas
 
-Las herramientas de eDiscovery de Microsoft admiten elementos cifrados con tecnologías de cifrado de Microsoft. Estas tecnologías incluyen el cifrado de mensajes de Office, la protección de información de Microsoft (próximamente) y Azure Rights Management. Para obtener más información acerca de las tecnologías de cifrado de Microsoft, vea [Encryption](encryption.md). No se admite el contenido cifrado por tecnologías de cifrado de terceros. Esto no incluye compatibilidad para obtener una vista previa o exportación de contenido cifrado con tecnologías que no son de Microsoft.
+Las herramientas de eDiscovery de Microsoft admiten elementos cifrados con tecnologías de cifrado de Microsoft. Estas tecnologías incluyen el cifrado de mensajes de Office y Azure Rights Management. Para obtener más información acerca de las tecnologías de cifrado de Microsoft, vea [Encryption](encryption.md). No se admite el contenido cifrado por tecnologías de cifrado de terceros. Esto no incluye compatibilidad para obtener una vista previa o exportación de contenido cifrado con tecnologías que no son de Microsoft.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>actividades de eDiscovery que admiten elementos cifrados
 

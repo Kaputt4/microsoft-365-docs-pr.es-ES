@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1cb707c47594b59bcb762aac5c25eaa03b33dbf1
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198363"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988580"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -46,7 +46,7 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 - [Prevención de pérdida de datos](data-loss-prevention-policies.md): detecta contenido confidencial mientras se usa y se comparte en la organización, en la nube y en dispositivos, y ayuda a evitar la pérdida de datos accidental.
 - [Gobierno](manage-information-governance.md)de la información: administra el ciclo de vida del contenido mediante soluciones para importar, almacenar y clasificar los datos críticos para el negocio de modo que pueda conservar lo que necesita y eliminar lo que no.
-- [Protección](protect-information.md)de la información: detecta, clasifica y protege contenido crítico y empresarial importante durante su ciclo de vida en toda la organización.
+- [Protección](information-protection.md)de la información: detecta, clasifica y protege contenido crítico y empresarial importante durante su ciclo de vida en toda la organización.
 - [Administración de registros](records-management.md): usa una clasificación inteligente para automatizar y simplificar la programación de retención para los registros normativos, legales y empresariales de la organización.
 
 ## <a name="insider-risk-management-section"></a>Sección de administración de riesgos de Insider
@@ -91,16 +91,16 @@ Siempre estamos trabajando para agregar nuevas funciones al centro de cumplimien
 
 Si está buscando una solución de cumplimiento existente y no está disponible en el centro de cumplimiento de Microsoft 365, puede acceder a las soluciones en el centro de cumplimiento de seguridad existente &amp; yendo a [https://protection.office.com](https://protection.office.com) . Como alternativa, puede hacer clic en la pestaña **más recursos** en el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento de Office 365.  
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- **Visite el administrador de cumplimiento de Microsoft**, que le ayudará a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [Administrador de cumplimiento](compliance-manager.md).
+- **Visite el administrador de cumplimiento de Microsoft** , que le ayudará a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [Administrador de cumplimiento](compliance-manager.md).
 
 - **Configure las directivas de administración de riesgos de Insider** para ayudar a minimizar los riesgos internos y permitirle detectar, investigar y emprender acciones para actividades arriesgadas en su organización. Consulte [Administración de riesgos de Insider](insider-risk-management.md).
 
 - **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente las infracciones de directivas corporativas sobre código de conducta. Consulte [cumplimiento](communication-compliance.md)de la comunicación.
 
-- **Microsoft Information Protection**, obtenga información sobre cómo las soluciones de Microsoft 365 le ayudarán a descubrir, clasificar y proteger información confidencial en cualquier lugar en que se encuentre o viaje.
+- **Microsoft Information Protection** , obtenga información sobre cómo las soluciones de Microsoft 365 le ayudarán a descubrir, clasificar y proteger información confidencial en cualquier lugar en que se encuentre o viaje.
     - **Familiarícese con y configure Microsoft Cloud App Security**. Consulte [QuickStart: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
     - Empezar **a trabajar con clasificadores**. Clasificar el contenido y, a continuación, etiquetarlo para que se pueda proteger y administrar correctamente es el punto de partida de la disciplina de protección de la información. Vea [más información sobre los clasificadores que se capacitan (versión preliminar)](classifier-learn-about.md).
 
-- **Visite con frecuencia el catálogo de soluciones de Microsoft 365**y asegúrese de revisar las nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, seleccione **Catálogo** en el panel de navegación izquierdo.
+- **Visite con frecuencia el catálogo de soluciones de Microsoft 365** y asegúrese de revisar las nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, seleccione **Catálogo** en el panel de navegación izquierdo.
