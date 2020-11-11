@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Germany.
-ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843335"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995862"
 ---
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
 
@@ -43,7 +43,7 @@ Las necesidades de los clientes se han desplazado y el aislamiento de Office 365
 
 Las ofertas de planes de Office 365 Germany están alineadas con las ofertas globales tanto como sea posible en este entorno aislado. Sin embargo, se excluyen los planes relacionados con Yammer, los que finalizarán su ciclo de vida en breve y los planes disponibles a través de programas sin ánimo de lucro. Office 365 E5, SPE y otros servicios estarán disponibles después de la disponibilidad general de Office 365 Germany. 
   
-Los siguientes servicios y características están disponibles en algunos [planes de suscripción de Office 365 Germany](https://go.microsoft.com/fwlink/p/?linkid=839016). Vea también los [términos de servicios en línea](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
+Los siguientes servicios y características están disponibles en algunos [planes de suscripción de Office 365 Germany](https://go.microsoft.com/fwlink/p/?linkid=839016). Vea también los [términos de servicios en línea](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
 - Microsoft 365 apps for Enterprise, Office 2016 y Office 2013<sup>1</sup>. Tenga en cuenta que Office 2013 requiere el [uso de la autenticación moderna de office 365 con clientes de Office](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
     
@@ -61,7 +61,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Vídeo de Microsoft 365
     
-- Project para la web
+- Project para la Web
     
 - Visio para la web
     
@@ -73,7 +73,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Exhibición avanzada de documentos electrónicos
     
-- Microsoft defender para Office 365
+- Microsoft Defender para Office 365
     
 - Inteligencia de amenazas de Office 365
     
@@ -85,11 +85,11 @@ Los siguientes servicios y características están disponibles en algunos [plane
     
 - Delve
     
-<sup>1</sup> Los planes de Office 365 Germany incluyen aplicaciones de software cliente que se instalan y ejecutan en un dispositivo del usuario final ("aplicaciones de software cliente"), como Microsoft 365 apps for Enterprise, Office 2013 y Office 2016. Dichas aplicaciones no funcionan exclusivamente en los centros de datos de Alemania, y puede que permitan a los usuarios finales acceder a servicios en línea que no son [servicios en línea alemanes](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). A efectos de su contrato con Microsoft, las aplicaciones de software cliente no se consideran [servicios en línea alemanes](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). Los compromisos de residencia de datos alemanes y el control de acceso por parte del administrador de datos alemán se aplican únicamente a los [servicios en línea alemanes](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
+<sup>1</sup> Los planes de Office 365 Germany incluyen aplicaciones de software cliente que se instalan y ejecutan en un dispositivo del usuario final ("aplicaciones de software cliente"), como Microsoft 365 apps for Enterprise, Office 2013 y Office 2016. Dichas aplicaciones no funcionan exclusivamente en los centros de datos de Alemania, y puede que permitan a los usuarios finales acceder a servicios en línea que no son [servicios en línea alemanes](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). A efectos de su contrato con Microsoft, las aplicaciones de software cliente no se consideran [servicios en línea alemanes](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). Los compromisos de residencia de datos alemanes y el control de acceso por parte del administrador de datos alemán se aplican únicamente a los [servicios en línea alemanes](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58).
   
 ## <a name="general-information"></a>Información general
 
-|Item|Información|
+|Elemento|Información|
 |-----|-----|
 |Portal de inicio de sesión  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Suscripciones, facturación y soporte técnico  <br/> |Asistencia basada en Alemania disponible en alemán e inglés para obtener información detallada, consulte [Contact Support for Business Products: ayuda para administradores](../contact-support-for-business-products.md).  <br/> |
