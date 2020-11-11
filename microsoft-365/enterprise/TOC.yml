@@ -469,8 +469,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: "Project Server\_2010"
               href: project-server-2010-end-of-support.md
-- name: Seguridad y cumplimiento
-  href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap'
+- name: Seguridad
+  href: 'https://docs.microsoft.com/microsoft-365/security/'
+- name: Cumplimiento
+  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
 - name: Servicios en la nube
   items:
     - name: Guía básica
