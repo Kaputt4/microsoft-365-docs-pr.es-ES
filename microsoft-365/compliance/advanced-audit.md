@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950999"
+ms.locfileid: "48988672"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
-La funcionalidad de [auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 le proporciona visibilidad a las organizaciones en los distintos tipos de actividades de auditoría de diversos servicios de Microsoft 365. La Auditoría avanzada ayuda a las organizaciones a realizar investigaciones forenses y de cumplimiento al incrementar la retención de registros de auditoría necesaria para realizar la investigación, proporcionando acceso a los eventos fundamentales que ayudan a determinar el alcance del compromiso y agilizando el acceso a la API de Actividad de administración de Office 365.
+La funcionalidad de [auditoría unificada](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 proporciona  a las organizaciones visibilidad en los distintos tipos de actividades de auditoría de diversos servicios de Microsoft 365. La auditoría avanzada ayuda a las organizaciones a realizar investigaciones forenses y de cumplimiento al incrementar la retención de registros de auditoría necesarios para realizar la investigación, proporcionando acceso a los eventos fundamentales que ayudan a determinar el alcance de los datos comprometidos y agilizando el acceso a la API de Actividad de administración de Office 365.
 
 > [!NOTE]
-> La Auditoría avanzada está disponible para las organizaciones que tengan una suscripción de Office 365 E5 o Microsoft 365 Enterprise E5. Además, también puede asignarse una licencia de Cumplimiento de Microsoft 365 E5 o y una licencia de complemento de Auditoría E5 de eDiscovery a los usuarios, cuando se requiera una licencia por usuario para las características de Auditoría avanzada, como es el caso de la retención a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones. Para obtener más información acerca de las licencias, consulte la [guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> La Auditoría avanzada está disponible para las organizaciones que tengan una suscripción de Office 365 E5/G5 o Microsoft 365 EnterpriseE5/G5. Además, también puede asignarse una licencia de Cumplimiento de Microsoft 365 E5 o y una licencia de complemento de Auditoría E5 de eDiscovery a los usuarios, cuando se requiera una licencia por usuario para las características de Auditoría avanzada, como es el caso de la retención a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones. Para obtener más información acerca de las licencias, consulte la [guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 Este artículo ofrece una visión general de las funciones de la Auditoría avanzada.
 
