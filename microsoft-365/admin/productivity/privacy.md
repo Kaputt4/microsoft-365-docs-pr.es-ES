@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo se protege la privacidad con la puntuación de productividad.
-ms.openlocfilehash: 4978039d99704c0658fe22f3725167ac31276dcd
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804752"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999411"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controles de privacidad para la puntuación de productividad
 
-La puntuación de productividad ayuda a las organizaciones a transformar la manera en que se realiza el trabajo con métricas que le ayudarán a medir y mejorar las personas y las experiencias tecnológicas. Ayuda a obtener una visibilidad sobre cómo funciona la organización, proporciona métricas que le ayudarán a centrarse en la habilitación de experiencias mejoradas.  También puede conectar las métricas a acciones para ayudarle a actualizar las habilidades y los sistemas de modo que todos los usuarios puedan trabajar mejor. La puntuación refleja el rendimiento de su organización y también le permite comparar de forma segura su puntuación con otras organizaciones como la suya.  Para obtener más información, consulte [información general sobre la puntuación de productividad](productivity-score.md).
+La puntuación de productividad ayuda a las organizaciones a transformar la manera en que se realiza el trabajo con métricas que le ayudarán a evaluar y mejorar las experiencias de personal y tecnología. Ayuda a obtener visibilidad sobre cómo funciona la organización y ofrece métricas que le ayudarán a centrarse en la habilitación de experiencias mejoradas.  También puede conectar las métricas a acciones para ayudarle a actualizar las habilidades y los sistemas de modo que todos los usuarios puedan trabajar mejor. La puntuación refleja el rendimiento de su organización y también le permite comparar de forma segura su puntuación con otras organizaciones como la suya.  Para obtener más información, consulte [información general sobre la puntuación de productividad](productivity-score.md).
 
 Su privacidad es importante para nosotros. Para obtener información sobre cómo protegemos su privacidad, consulte la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement). Puntuación de productividad proporciona información vital sobre la forma en que los usuarios de las organizaciones trabajan junto con los controles para asegurarse de que la información se puede accionar sin poner en peligro la confianza que se pone en Microsoft.
 
@@ -54,7 +54,7 @@ Para ver toda la puntuación de productividad, incluidas las métricas a nivel d
 
 Asigne el rol de lector de informes a cualquier persona responsable de la administración y la adopción de los cambios. Este rol les da acceso a la experiencia completa, incluidas las métricas de nivel de inquilino y los detalles de nivel por usuario.
 
-Informe de experiencias de personas contiene detalles de actividad por usuario para cada página de detalles de la categoría. Asigne un rol personalizado denominado lector de informes de Resumen de uso (disponible a partir del 29 de octubre de 2020) para permitir el acceso solo a las métricas de las experiencias de personas. Este rol tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el centro de administración de Microsoft en 11/15/2020.
+El informe de experiencias de personas contiene detalles de actividad por usuario para cada página de detalles de categoría. Asigne un rol personalizado denominado lector de informes de Resumen de uso (disponible a partir del 29 de octubre de 2020) para permitir el acceso solo a las métricas de las experiencias de personas. Este rol tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el centro de administración de Microsoft en 11/15/2020.
 
 Para asignar el rol lector de informes de Resumen de uso con PowerShell:
 
@@ -72,22 +72,22 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="Página comunicaciones en los informes de productividad.":::
 
-## <a name="de-identification-of-user-level-metrics"></a>Desidentificación de métricas de nivel de usuario
+## <a name="de-identification-of-user-level-metrics"></a>Desidentificación de métricas en el nivel de usuario
 
 Para hacer anónimos los datos que se recopilan para todos los informes, debe ser un administrador global. Esta acción ocultará la información identificable, como los nombres de usuario, grupo y sitio, en todos los informes, incluida la puntuación de productividad y el uso de 365 de Microsoft.
 
-1. En el centro de administración, vaya a configuración **de la**   >   **organización** y, en la ficha **servicios** , elija **informes** .
-2. Seleccione  **informes** y, a continuación, elija  **Mostrar identificadores anónimos para los nombres de usuario, grupo y sitio en informes de uso y puntuación de productividad** . Esta configuración se aplica tanto a los informes de uso como a la aplicación de plantilla.
-3. Seleccione  **Guardar cambios** .
+1. En el centro de administración, vaya a configuración **de la**   >   **organización** y, en la ficha **servicios** , elija **informes**.
+2. Seleccione  **informes** y, a continuación, elija  **Mostrar identificadores anónimos para los nombres de usuario, grupo y sitio en informes de uso y puntuación de productividad**. Esta configuración se aplica tanto a los informes de uso como a la aplicación de plantilla.
+3. Seleccione  **Guardar cambios**.
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Página comunicaciones en los informes de productividad.":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="Hacer que la información de usuario sea anónima para los informes.":::
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Capacidad para dejar de participar en experiencias de personas
 
 Cuando la puntuación de productividad esté disponible por lo general, también podrá optar por el área experiencias de personas de la puntuación de productividad. Si opta por no participar, nadie de la organización podrá ver estas métricas y su organización se quitará de los cálculos relacionados con la comunicación, las reuniones, el trabajo en equipo, la colaboración de contenido y la movilidad.
 
-1. En el centro de administración, vaya a configuración **de la**   >   **organización** y, en la ficha **servicios** , elija **informes** .
-2. Seleccione **informes** y, a continuación, desactive la casilla de verificación permitir que los **datos de uso de Microsoft 365 se usen para personas experimenta información.** Para comprender cómo modificar la configuración de uso compartido de datos para el análisis de extremos en Intune Configuration Manager, haga clic en **más información** .
-3. Seleccione  **Guardar cambios** .
+1. En el centro de administración, vaya a configuración **de la**   >   **organización** y, en la ficha **servicios** , elija **informes**.
+2. Seleccione  **informes** y, a continuación, desactive la casilla de verificación permitir que los  **datos de uso de Microsoft 365 se usen para personas experimenta** información. Para comprender cómo modificar la configuración de uso compartido de datos para el análisis de extremos en Intune Configuration Manager, haga clic en **más información**.
+3. Seleccione  **Guardar cambios**.
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Página comunicaciones en los informes de productividad.":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="Página de configuración de la organización en la que puede rechazar experiencias de personas.":::
