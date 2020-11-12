@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Los movimientos de datos son operaciones back-end que se producen cuando Microsoft mueve servicios y datos asociados para el inquilino a un nuevo centro de datos geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 63536a46e28f264f49e8071710221b0847f62414
+ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333705"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48997796"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante y después del movimiento de datos
 
@@ -45,9 +45,9 @@ Vea el centro de mensajes de Microsoft 365 para confirmar si se han completado l
 |Sudáfrica  <br/> |1 de julio de 2022  <br/> |
 |Suiza, Liechtenstein  <br/> |1 de julio de 2022  <br/> |
 |Noruega  <br/> |1 de noviembre de 2022  <br/> |
-|Alemania  <br/> |1 de abril de 2023  <br/> |
+|Alemania  <br/> |1 de mayo de 2023  <br/> |
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 Dado que el tiempo de traslado de cada usuario a la nueva geo de centro de recursos es necesario, algunos usuarios seguirán estando en la geografía del centro de recursos antiguo durante la transferencia, mientras que otros se encontrarán en la nueva geografía del centro de recursos. Esto significa que algunas características que implican el acceso a varios buzones de correo pueden no funcionar completamente durante un período del proceso de traslado, que puede durar semanas. Estas características se describen en las secciones siguientes.
   
