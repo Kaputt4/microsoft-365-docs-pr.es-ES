@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9a0878e513b48b7c6d5ca95cc9399918e1998af0
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304820"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995903"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -31,10 +31,10 @@ El reglamento general de protección de datos (RGPD), añade nuevas normas organ
 
 Definiciones útiles de los términos del RGPD utilizados en este documento:
 
-- **Controlador de datos (controlador)**: una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determinan el propósito y el medio del procesamiento de datos personales.  
-- **Datos personales  e interesado**: cualquier información relacionada con una persona física identificada o una persona natural identificable (interesado), una persona física identificable es la que puede identificarse, directa o indirectamente.  
-- **Procesador**: una persona física o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
-- **Datos de clientes**: Datos producidos y almacenados en las operaciones diarias de su empresa.
+- **Controlador de datos (controlador)** : una persona jurídica, autoridad pública, agencia u otro organismo, que por sí solos o conjuntamente con otras personas, determinan el propósito y el medio del procesamiento de datos personales.  
+- **Datos personales  e interesado** : cualquier información relacionada con una persona física identificada o una persona natural identificable (interesado), una persona física identificable es la que puede identificarse, directa o indirectamente.  
+- **Procesador** : una persona física o jurídica, entidad pública, agencia u otro organismo que procese datos personales en nombre del controlador.  
+- **Datos de clientes** : Datos producidos y almacenados en las operaciones diarias de su empresa.
 
 ## <a name="what-is-the-gdpr"></a>¿Qué es el RGPD?
 
@@ -212,7 +212,7 @@ Los Términos de GDPR de Microsoft reflejan los compromisos exigidos a los proce
 
 **¿Sobre qué base facilita Microsoft la transferencia de datos personales fuera de la Unión Europea?**
 
-Microsoft aplica desde hace largo tiempo las cláusulas contractuales estándar (también conocidas como las cláusulas modelo) como base para la transferencia de datos para sus servicios en línea para empresas. Las cláusulas contractuales estándar son términos estándar proporcionadas por la Comisión Europea que pueden usarse para transferir datos fuera del Espacio Económico Europeo de manera apropiada. Microsoft ha incorporado las cláusulas contractuales estándar en todos nuestros contratos de licencias por volumen mediante los [términos de servicios en línea](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). El Grupo de trabajo del Artículo 29 ha determinado que la aplicación por parte de Microsoft de las cláusulas contractuales estándar son compatibles. Además, cuando Privacy Shield entre EE. UU. y la UE estuvo disponible, Microsoft fue la primera empresa en obtener certificación. Consulte la[Certificación de Microsoft en el Escudo de privacidad](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active) y lea los [términos de los servicios en línea](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Privacy Shield permite a los clientes que deseen transferir sus datos al estadounidense hacerlo de manera coherente con las obligaciones en materia de protección de datos.
+Microsoft aplica desde hace largo tiempo las cláusulas contractuales estándar (también conocidas como las cláusulas modelo) como base para la transferencia de datos para sus servicios en línea para empresas. Las cláusulas contractuales estándar son términos estándar proporcionadas por la Comisión Europea que pueden usarse para transferir datos fuera del Espacio Económico Europeo de manera apropiada. Microsoft ha incorporado las cláusulas contractuales estándar en todos nuestros contratos de licencias por volumen mediante los [términos de servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). El Grupo de trabajo del Artículo 29 ha determinado que la aplicación por parte de Microsoft de las cláusulas contractuales estándar son compatibles. Además, cuando Privacy Shield entre EE. UU. y la UE estuvo disponible, Microsoft fue la primera empresa en obtener certificación. Consulte la[Certificación de Microsoft en el Escudo de privacidad](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active) y lea los [términos de los servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Privacy Shield permite a los clientes que deseen transferir sus datos al estadounidense hacerlo de manera coherente con las obligaciones en materia de protección de datos.
 
 **¿Qué más ofrece Microsoft en materia de cumplimiento?**
 
@@ -222,12 +222,12 @@ Como empresa global con clientes en casi todos los países del mundo, Microsoft 
 
 El RGPD impone una amplia variedad de requisitos a las organizaciones que recopilan o procesan datos personales, incluido el requisito de cumplir con seis principios clave:
 
-- *Transparencia*, *equidad* y *legitimidad* en el manejo y uso de datos personales. Deberá ser claro con las personas sobre cómo se usan los datos personales y también necesitará una "base legítima" para procesar dichos datos.
-- Limitar el procesamiento de datos personales a los propósitos *especificados*, *explícitos* y *legitimados*. No podrá volver a usar ni revelar datos personales para propósitos que no sean "compatibles" con el propósito para el que los datos se recopilaron originalmente.
+- *Transparencia* , *equidad* y *legitimidad* en el manejo y uso de datos personales. Deberá ser claro con las personas sobre cómo se usan los datos personales y también necesitará una "base legítima" para procesar dichos datos.
+- Limitar el procesamiento de datos personales a los propósitos *especificados* , *explícitos* y *legitimados*. No podrá volver a usar ni revelar datos personales para propósitos que no sean "compatibles" con el propósito para el que los datos se recopilaron originalmente.
 - *Minimizar la recogida y el almacenamiento de datos personales* hasta lo apropiado y relevante para la finalidad prevista.
 - Asegurar la *precisión de los datos personales* y permitir que sean *eliminados o rectificados*. Tendrá que tomar medidas para asegurarse de que los datos personales que contiene son precisos y se pueden corregir si se producen errores.
 - *Limitar el almacenamiento de datos personales*. Deberá asegurarse de que los datos personales se conserven solo durante el tiempo necesario para lograr el propósito para el que se recopilan los datos.
-- Garantizar la *seguridad*, la *integridad* y la *confidencialidad de los datos personales*. Su organización debe realizar las acciones necesarias para proteger los datos personales con medidas de seguridad técnicas y organizacionales.
+- Garantizar la *seguridad* , la *integridad* y la *confidencialidad de los datos personales*. Su organización debe realizar las acciones necesarias para proteger los datos personales con medidas de seguridad técnicas y organizacionales.
 
 Tendrá que entender cuáles son las obligaciones específicas de su organización para con la GDPR y cómo las cumplirá, aunque Microsoft está aquí para ayudarle en su viaje a la GDPR.
 
@@ -317,7 +317,7 @@ En caso de que existan fundamentos legítimos para el procesamiento continuado y
 
 El cifrado se identifica en el RGPD como medida de protección que hace los datos ininteligibles cuando se ven afectados por una infracción. Por lo tanto, tanto si se usa como si no, el cifrado puede afectar a los requisitos de notificación de infracción de datos personales. El RGPD también señala el cifrado como medida técnica u organizativa apropiada en determinados casos, en función del riesgo. El cifrado es también un requisito en el Estándar de Seguridad de Datos del Sector de Tarjetas de Pago y está incluido en las estrictas directivas de cumplimiento específicas para el sector de servicios financieros. Los productos y servicios de Microsoft, como Azure, Dynamics 365, Enterprise Mobility + Security, Office Microsoft 365, SQL Server/Azure SQL Database y Windows 10 proporcionan un potente cifrado para datos en tránsito y estacionarios.
 
-** ¿Cómo cambia la respuesta de una organización a las violaciones de los datos personales?**
+**¿Cómo cambia la respuesta de una organización a las violaciones de los datos personales?**
 
 El RGPD cambiará los requisitos de protección de datos e impondrá obligaciones más estrictas a los procesadores y controladores en cuanto a la notificación de infracciones de datos personales. De conformidad con el nuevo reglamento, el procesador debe notificar al controlador de los datos sobre la violación de datos personales una vez tenga conocimiento de ello y sin demoras indebidas. Una vez que tenga conocimiento de la infracción de los datos personales, el controlador debe notificar a la autoridad de protección de datos correspondiente dentro de 72 horas. Si es probable que la infracción suponga un alto riesgo para los derechos y libertades de las personas, el controlador también deberá notificar a las personas afectadas sin demoras indebidas. El Grupo de trabajo del Artículo 29 de la UE está elaborando orientaciones adicionales sobre este tema.
 

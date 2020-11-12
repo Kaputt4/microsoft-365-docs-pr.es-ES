@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6e8291f4fc21b0a1d3aaee74b47760fca3a4b220
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919704"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995883"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Commission Securities and Exchange Commission (SEC) Rule 17a-4 (f) Estados Unidos
 
@@ -40,9 +40,9 @@ El almacenamiento de blobs inmutable de Microsoft Azure con bloqueo de directiva
 Para evaluar el cumplimiento de Azure y Office 365 con la regla SEC 17a-4 (f), Microsoft reservó una empresa de evaluación independiente que se especializa en la administración de registros y el gobierno de la información, Cohasset Associates. En el informe resultante para:
 
 - **Azure** : [SEC 17a-4 (f) Compliance Assessment: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validó que [Azure inmutable Storage BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) con la opción de bloqueo de Directiva, cuando se usa para conservar blobs basados en tiempo en un formato de no reescritura y no regrabable (Worm), cumple los requisitos de almacenamiento inmutables de la regla de la SEC. Cada BLOB (registro) está protegido contra modificaciones, sobrescritos o eliminaciones hasta que haya expirado el período de retención requerido y se hayan lanzado todas las retenciones legales asociadas. Los proveedores de software y los asociados con cargas de trabajo confidenciales ahora pueden confiar en Azure inmutable BLOB Storage como una solución de nube de OneStop-Shop para la retención de registros y el almacenamiento inmutable. Las instituciones financieras ahora pueden crear sus propias aplicaciones aprovechando estas características a la vez que cumplen con los requisitos restantes.
-- **Microsoft 365** : [17a-4 (f), FINRA 4511 (c) y CFTC 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d), Cohasset valida que Microsoft 365 incluye características de archivado que permiten a los clientes regulados, incluidos los distribuidores de agentes, almacenar datos de manera que les ayuden a cumplir con los requisitos de la SEC para la retención de registros. Las características de retención de Microsoft 365 ayudan a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Microsoft 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no borrable y no regrabable.
+- **Microsoft 365** : [17a-4 (f)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d), Cohasset validó que Microsoft 365 incluye características de archivado que permiten a los clientes regulados, incluidos los distribuidores de agentes, almacenar datos de manera que les ayuden a cumplir con los requisitos de la SEC para la retención de registros. Las características de retención de Microsoft 365 ayudan a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Microsoft 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

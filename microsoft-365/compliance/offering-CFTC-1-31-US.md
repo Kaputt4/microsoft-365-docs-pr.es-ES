@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3026c2490c88d03cda948e6da972d8663c4d6d5c
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920402"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995873"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 de reglas de la Comisión comercial de ventas de futuros (CFTC) (c-d) Estados Unidos
 
@@ -39,13 +39,11 @@ Los clientes de servicios financieros, que representan una de las industrias reg
 
 Para evaluar el cumplimiento de Azure con CFTC regla 1.31 (c-d), Microsoft reservó una empresa de evaluación independiente que se especializa en la administración de registros y el gobierno de la información, Cohasset Associates. En el informe resultante, [CFTC 1,31 (c) – (d) Compliance Assessment: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validó que [Azure inmutable Storage BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) con la opción de bloqueo de Directiva, cuando se usa para conservar los blobs basados en tiempo en un formato de no reescritura y no regrabable (Worm), cumple con los requisitos basados en los principios de la regla CFTC. Cada BLOB (registro) está protegido contra modificaciones, sobrescritos o eliminaciones hasta que haya expirado el período de retención requerido y se hayan lanzado todas las retenciones legales asociadas. Los proveedores de software y los asociados con cargas de trabajo confidenciales ahora pueden confiar en Azure inmutable BLOB Storage como una solución de nube de tienda de un solo punto para la retención de registros. Las instituciones financieras ahora pueden crear sus propias aplicaciones aprovechando estas características a la vez que cumplen con los requisitos restantes.
 
-### <a name="microsoft-office-365"></a>Microsoft Office 365
+### <a name="microsoft-365"></a>Microsoft 365
 
-Para evaluar el cumplimiento de Office 365 con la regla de CFTC 1.31 (c-d), Microsoft contrató a un bufete de derecho independiente y líder que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el [archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4](https://go.microsoft.com/fwlink/?linkid=830440), Covington valida que [Office 365 con bloqueo de preservación](retention-preservation-lock.md) incluye características de archivado que permiten a los clientes regulados almacenar datos de una manera que les ayude a cumplir con los requisitos de CFTC para la retención de registros.
+Para los requisitos de [CFTC 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) , Cohasset validó que Microsoft 365 incluye características de archivado que permiten a los clientes regulados, incluidos los distribuidores de agentes, almacenar datos de manera que les ayuden a cumplir con los requisitos de la SEC para la retención de registros. Las características de retención de Microsoft 365 ayudan a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Microsoft 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
-El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
