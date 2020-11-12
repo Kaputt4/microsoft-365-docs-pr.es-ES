@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948414"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002422"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -214,7 +214,7 @@ Revise las aplicaciones que desea que tengan los usuarios de escritorio administ
 
 **Consejo**
 
-Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de escritorio administrado por Microsoft. Asegúrese de que estas aplicaciones se pueden implementar con Intune. Para obtener más información, vea [aplicaciones en el escritorio administrado de Microsoft](apps.md).
+Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de escritorio administrado por Microsoft. Dado que estas aplicaciones deben implementarse con Intune, evalúe volver a usar las aplicaciones de Intune existentes. Considere la posibilidad de usar el portal de la compañía (consulte [install Intune Company Portal on Devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Enrollment status Page (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea [aplicaciones en el escritorio administrado de Microsoft](apps.md) y [experiencia de primera ejecución con AutoPilot y la página de estado de inscripción](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Puede pedir a su representante de su cuenta de Microsoft una consulta en Microsoft Endpoint Configuration Manager para identificar las aplicaciones que están preparadas para la migración a Intune o el ajuste necesario.
 
@@ -289,9 +289,8 @@ Los usuarios con determinados roles de seguridad deben tener los asignados en Mi
 
 **Consejo**
 
-Si tiene cualquiera de estos roles asignados en su organización de Azure AD, asegúrese de que también tengan estos roles asignados en Microsoft defender para el punto de conexión. De lo contrario, los administradores con estos roles no podrán obtener acceso al portal de administración.
+Si tiene usuarios asignados a cualquiera de estos roles en su organización de Azure AD, asegúrese de que también tengan estos roles asignados en Microsoft defender para el punto de conexión. De lo contrario, los administradores con estos roles no podrán obtener acceso al portal de administración.
 
-- Lector de seguridad
 - Operador de seguridad
 - Lector global
 
@@ -308,7 +307,7 @@ Tiene los valores predeterminados de seguridad activados. Desactivar los valores
 
 ### <a name="self-service-password-reset"></a>Restablecimiento de contraseña de autoservicio
 
-El restablecimiento de contraseña de autoservicio (SSPR) debe estar habilitado para todos los usuarios, excepto las cuentas de servicio de escritorio administradas de Microsoft. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+El restablecimiento de contraseña de autoservicio (SSPR) debe estar habilitado para todos los usuarios de escritorio administrados de Microsoft, excepto las cuentas de servicio de escritorio administradas por Microsoft. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Consejo**
 
@@ -325,11 +324,11 @@ Los usuarios de escritorio administrados de Microsoft no tendrán privilegios de
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
-### <a name="onedrive-for-business"></a>OneDrive para la Empresa
+### <a name="onedrive"></a>OneDrive
 
 La opción **permitir sincronización solo en equipos Unidos a dominios específicos** entrará en conflicto con el escritorio administrado de Microsoft.
 
 **Consejo**
 
-Está usando la opción **permitir sincronización solo en equipos Unidos a dominios específicos** . Esta configuración no funcionará con Microsoft Managed Desktop. Deshabilite esta opción y, en su lugar, configure OneDrive para la empresa para usar una directiva de acceso condicional. Consulte [planear una implementación de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) para obtener ayuda.
+Está usando la opción **permitir sincronización solo en equipos Unidos a dominios específicos** . Esta configuración no funcionará con Microsoft Managed Desktop. Deshabilite esta configuración y, en su lugar, configure OneDrive para usar una directiva de acceso condicional. Consulte [planear una implementación de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) para obtener ayuda.
 

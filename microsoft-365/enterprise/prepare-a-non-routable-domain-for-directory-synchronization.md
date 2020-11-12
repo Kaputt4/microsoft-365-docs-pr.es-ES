@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Obtenga información sobre qué hacer si tiene un dominio no routale asociado a los usuarios locales antes de sincronizar con Microsoft 365.
-ms.openlocfilehash: 835beffb77c495179991fbb4388ecd9ee804ec91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696526"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002386"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
 Al sincronizar el directorio local con Microsoft 365, debe tener un dominio comprobado en Azure Active Directory (Azure AD). Solo se sincronizan los nombres principales de usuario (UPN) asociados con el dominio local. Sin embargo, cualquier UPN que contenga un dominio no enrutable, por ejemplo,. local (como billa@contoso. local), se sincronizará con un dominio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
@@ -42,7 +42,7 @@ Azure AD Connect sincroniza el UPN y la contraseña de los usuarios para que los
   
 ### <a name="change-your-primary-domain"></a>**Cambiar el dominio principal**
 
-Cambie el dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. A continuación, se actualiza a contoso.com todos los usuarios que tengan el dominio contoso. local. Para obtener instrucciones, vea [Cómo funciona el cambio de nombre de dominio](https://go.microsoft.com/fwlink/p/?LinkId=624174). Sin embargo, este proceso es muy complicado y en la siguiente sección se describe una solución más sencilla.
+Cambie el dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. A continuación, se actualiza a contoso.com todos los usuarios que tengan el dominio contoso. local. Sin embargo, este proceso es muy complicado y en la siguiente sección se describe una solución más sencilla.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Agregar sufijos UPN y actualizar a los usuarios a ellos**
 
@@ -60,7 +60,7 @@ Una vez que haya actualizado los UPN para usar el dominio comprobado, estará pr
     
     ![Elija dominios y confianzas de Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. En la ventana **dominios y confianzas de Active** Directory, haga clic con el botón secundario en **dominios y confianzas de Active**Directory y, a continuación, elija **propiedades**.
+2. En la ventana **dominios y confianzas de Active** Directory, haga clic con el botón secundario en **dominios y confianzas de Active** Directory y, a continuación, elija **propiedades**.
     
     ![Haga clic con el botón secundario en dominios y confianzas de Active Directory y seleccione Propiedades.](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
