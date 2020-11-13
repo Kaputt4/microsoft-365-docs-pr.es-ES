@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad del marco de Microsoft Informatio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f29ba461cb3ae8cc79ff90b7b129e82f7401e187
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754100"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988868"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -97,6 +97,8 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     Algunas, aunque no todas las aplicaciones admiten marcas dinámicas mediante el uso de variables. Por ejemplo, inserte el nombre de la etiqueta o el nombre del documento en el encabezado, pie de página o marca de agua. Para obtener más información, vea [Marcadores dinámicos con variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
     
+    Aunque puede configurar un nombre de fuente personalizado para las marcas de contenido y una amplia variedad de colores de fuente que incluyan un código RGB personalizado, estas configuraciones solo se admiten en el [cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2). Cuando usa la etiqueta integrada, la configuración del nombre de la fuente es ignorada y solo se admiten los siguientes colores: negro, amarillo, azul, verde y rojo. Si selecciona un color que no es admitido, el negro se usa de forma predeterminada.
+
     Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
 - **Proteja el contenido de los contenedores como sitios y grupos** cuando habilita la capacidad de [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md).
@@ -127,7 +129,7 @@ En las páginas que no tengan opciones disponibles, seleccione **Siguiente** par
 
 ### <a name="label-priority-order-matters"></a>Prioridad de etiqueta (el orden importa)
 
-Al crear las etiquetas de confidencialidad en el centro de administración, éstas aparecen en una lista en la pestaña **Confidencialidad** en la página de **Etiquetas** . En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior** .
+Al crear las etiquetas de confidencialidad en el centro de administración, éstas aparecen en una lista en la pestaña **Confidencialidad** en la página de **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
 
 Solo puede aplicar una etiqueta de confidencialidad a un elemento, como un documento, un correo electrónico o un contenedor. Si configura una opción que exige a los usuarios proporcionar una justificación para cambiar una etiqueta a una clasificación inferior, el orden de esta lista identifica las clasificaciones más bajas. Sin embargo, esta opción no se aplica a las subetiquetas.
 
@@ -192,7 +194,7 @@ No hay límite en el número de etiquetas de confidencialidad que puede crear y 
 
 ### <a name="label-policy-priority-order-matters"></a>Prioridad de etiquetas de directivas (el orden importa)
 
-Para que los usuarios dispongan de sus etiquetas de confidencialidad, puede publicarlas en una directiva de etiqueta de confidencialidad, que se muestra en una lista en la pestaña de **Directivas de confidencialidad** en la página **Directivas de etiqueta** . Al igual que las etiquetas de confidencialidad (consulte [la sección anterior](#label-priority-order-matters) (el orden importa)), el orden de las directivas de etiqueta de confidencialidad es importante, puesto que refleja su prioridad. La directiva de etiqueta de menor prioridad se muestra en la parte **superior** , mientras que la directiva de mayor prioridad se muestra en la parte **inferior** .
+Para que los usuarios dispongan de sus etiquetas de confidencialidad, puede publicarlas en una directiva de etiqueta de confidencialidad, que se muestra en una lista en la pestaña de **Directivas de confidencialidad** en la página **Directivas de etiqueta**. Al igual que las etiquetas de confidencialidad (consulte [la sección anterior](#label-priority-order-matters) (el orden importa)), el orden de las directivas de etiqueta de confidencialidad es importante, puesto que refleja su prioridad. La directiva de etiqueta de menor prioridad se muestra en la parte **superior** , mientras que la directiva de mayor prioridad se muestra en la parte **inferior**.
 
 Una directiva de etiqueta consiste en lo siguiente:
 
@@ -202,7 +204,7 @@ Una directiva de etiqueta consiste en lo siguiente:
 
 Puede incluir un usuario en varias políticas de etiquetas, y el usuario verá todas las etiquetas de confidencialidad de esas políticas. Sin embargo, el usuario conseguirá las configuraciones de directiva solo de la directiva de etiqueta de mayor prioridad.
 
-Si no ve la configuración de la etiqueta o la configuración de la directiva de la etiqueta que esperaba para un usuario o un grupo, y ha esperado 30 minutos, compruebe el orden de las directivas de etiqueta de confidencialidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba** .
+Si no ve la configuración de la etiqueta o la configuración de la directiva de la etiqueta que esperaba para un usuario o un grupo, y ha esperado 30 minutos, compruebe el orden de las directivas de etiqueta de confidencialidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
 
 ![Opción Mover en la página de directivas de etiquetas de confidencialidad](../media/sensitivity-label-policy-priority.png)
 
@@ -215,7 +217,7 @@ Si ha implementado etiquetas con Azure Information Protection, utilice las secci
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 
 > [!NOTE]
-> La gestión de etiquetas para las etiquetas de Azure Information Protection en Microsoft Azure Portal quedará en desuso el **31 de marzo de 2021** . Más información en la página oficial [notificación de desuso](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+> La gestión de etiquetas para las etiquetas de Azure Information Protection en Microsoft Azure Portal quedará en desuso el **31 de marzo de 2021**. Más información en la página oficial [notificación de desuso](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
 Si utiliza etiquetas de protección de información azul porque su inquilino aún no está en la[ plataforma de etiquetado unificado](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), le recomendamos que evite crear etiquetas de confidencialidad hasta que active el etiquetado unificado. En este escenario, las etiquetas que se muestran en el Azure Portal son etiquetas de Azure Information Protection en lugar de etiquetas de confidencialidad. El cliente de Azure Information Protection (clásico) puede usar estas etiquetas en los equipos con Windows, pero no los dispositivos que ejecuten macOS, iOS o Android. Para resolver este problema, [migre estas etiquetas](/azure/information-protection/configure-policy-migrate-labels) a etiquetas de confidencialidad. 
 
