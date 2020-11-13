@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a actualizar un registro de Servicio de nombres de dominio (DNS) para usar el marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
-ms.openlocfilehash: 20943f38dab436b48ff734753e951db4342d24ac
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350692"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021066"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
@@ -53,7 +53,7 @@ Recopile esta información:
 
 - Registro TXT de SPF actual para su dominio personalizado. Para obtener instrucciones, vea [Recopilar la información necesaria para crear los registros de DNS de Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
-- Direcciones IP externas de todos los servidores de mensajería de las instalaciones. Por ejemplo,**131.107.2.200**.
+- Direcciones IP externas de todos los servidores de mensajería de las instalaciones. Por ejemplo, **131.107.2.200**.
 
 - Nombres de dominio que se usarán para todos los dominios de terceros que necesita incluir en el registro TXT de SPF. Algunos proveedores de correo masivo tienen configurados subdominios para sus clientes. Por ejemplo, la empresa MailChimp tiene configurado **servers.mcsv.net**.
 
@@ -105,7 +105,7 @@ Es importante tener en cuenta que necesita crear un registro independiente para 
 Se necesita un registro de SPF (`*.`) comodín adicional para todos los dominios y subdominios para evitar que los atacantes envíen mensajes de correo electrónico desde subdominios inexistentes. Por ejemplo:
 
 ```text
-*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+*.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
 ## <a name="more-information-about-spf"></a>Más información sobre SPF

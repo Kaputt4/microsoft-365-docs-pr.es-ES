@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845557"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020896"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -83,8 +83,8 @@ En la tabla siguiente se describe cuándo están disponibles los informes y los 
 |Tipo de informe|Datos disponibles (período retrospectivo)|Latencia|
 |---|---|---|
 |Informes de Resumen de protección de correo|90 días|La agregación de datos de mensajes se completa casi por completo en 24-48 horas. Se pueden producir algunos pequeños cambios agregados incrementales durante un período de hasta 5 días.|
-|Informes de detalles de protección de correo|90 días|Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días. <br/><br/> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.|
-|Datos de seguimiento de mensajes|90 días|Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.<br/><br/> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.|
+|Informes de detalles de protección de correo|90 días|Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días. <p> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.|
+|Datos de seguimiento de mensajes|90 días|Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.<p> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.|
 |
 
 > [!NOTE]

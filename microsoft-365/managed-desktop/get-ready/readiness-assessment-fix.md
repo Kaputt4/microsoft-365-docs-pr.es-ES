@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002422"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021090"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -29,6 +29,8 @@ Para cada comprobación, la herramienta notificará uno de los cuatro resultados
 |Error | El rol de Azure Active Director (AD) que está usando no tiene permisos suficientes para ejecutar esta comprobación. |
 
 ## <a name="microsoft-intune-settings"></a>Configuración de Microsoft Intune
+
+Puede obtener acceso a la configuración de Intune en el [centro de administración](https://endpoint.microsoft.com)de Microsoft Endpoint Manager.
 
 ### <a name="autopilot-deployment-profile"></a>Perfil de implementación de piloto automático
 
@@ -214,7 +216,7 @@ Revise las aplicaciones que desea que tengan los usuarios de escritorio administ
 
 **Consejo**
 
-Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de escritorio administrado por Microsoft. Dado que estas aplicaciones deben implementarse con Intune, evalúe volver a usar las aplicaciones de Intune existentes. Considere la posibilidad de usar el portal de la compañía (consulte [install Intune Company Portal on Devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Enrollment status Page (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea [aplicaciones en el escritorio administrado de Microsoft](apps.md) y [experiencia de primera ejecución con AutoPilot y la página de estado de inscripción](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
+Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de escritorio administrado por Microsoft. Como Intune debe implementar estas aplicaciones, evalúe volver a usar las aplicaciones de Intune existentes. Considere la posibilidad de usar el portal de la compañía (consulte [install Intune Company Portal on Devices](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) and Enrollment status Page (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea [aplicaciones en el escritorio administrado de Microsoft](apps.md) y [experiencia de primera ejecución con AutoPilot y la página de estado de inscripción](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run).
 
 Puede pedir a su representante de su cuenta de Microsoft una consulta en Microsoft Endpoint Configuration Manager para identificar las aplicaciones que están preparadas para la migración a Intune o el ajuste necesario.
 
@@ -247,6 +249,7 @@ Asegúrese de que las directivas de Update Ring que tenga no contengan los **dis
 
 ## <a name="azure-active-directory-settings"></a>Configuración de Azure Active Directory
 
+Puede obtener acceso a la configuración de Azure Active Directory en [Azure portal](https://portal.azure.com).
 
 ### <a name="ad-hoc-subscriptions"></a>Suscripciones ad hoc
 
@@ -326,7 +329,7 @@ Los usuarios de escritorio administrados de Microsoft no tendrán privilegios de
 
 ### <a name="onedrive"></a>OneDrive
 
-La opción **permitir sincronización solo en equipos Unidos a dominios específicos** entrará en conflicto con el escritorio administrado de Microsoft.
+La opción **permitir sincronización solo en equipos Unidos a dominios específicos** entrará en conflicto con el escritorio administrado de Microsoft. Puede obtener acceso a la configuración de OneDrive en el [centro de administración](https://admin.onedrive.com)de onedrive.
 
 **Consejo**
 

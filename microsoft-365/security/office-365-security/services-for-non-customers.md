@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199582"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021030"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para envío de correo de no clientes a Microsoft 365
 
@@ -38,7 +38,7 @@ En esta información general se proporciona información sobre los beneficios qu
 
 |Servicio|Ventajas|
 |---|---|
-|En este contenido de la Ayuda en línea|se ofrece: <br/> Un punto de partida para las preguntas relacionadas con la entrega de comunicaciones a los usuarios de EOP. <br/><br/> Incluye una sencilla guía en línea con nuestras directivas y requisitos. <br/><br/> Información general sobre los filtros de correo no deseado y las tecnologías de autenticación empleadas por Microsoft.|
+|En este contenido de la Ayuda en línea|se ofrece: <ul><li>Un punto de partida para las preguntas relacionadas con la entrega de comunicaciones a los usuarios de EOP.</li><li>Incluye una sencilla guía en línea con nuestras directivas y requisitos.</li><li>Información general sobre los filtros de correo no deseado y las tecnologías de autenticación empleadas por Microsoft.</li><ul>|
 |[Soporte técnico de Microsoft](#microsoft-support)|Proporciona soporte de autoayuda y escalamiento para problemas de entrega.|
 |[Portal de eliminación de la lista de direcciones IP contra correo no deseado](#anti-spam-ip-delist-portal)|Una herramienta para enviar solicitudes de eliminación de IP de la lista. Antes de enviar esta solicitud, es responsabilidad del remitente asegurarse de que cualquier otro mensaje procedente de la dirección IP en cuestión no es abusivo ni malintencionado.|
 |[Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Evita que el correo no deseado y el correo no deseado se envíen desde Exchange Online y se amontonan en Internet y en el sistema de correo.|

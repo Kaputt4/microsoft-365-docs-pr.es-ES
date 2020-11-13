@@ -1,5 +1,5 @@
 ---
-title: Introducción a la prevención de pérdida de datos de Microsoft 365 Endpoint (versión preliminar)
+title: Introducción a la prevención de pérdida de datos de Microsoft 365 Endpoint
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
+ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842044"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48990555"
 ---
-# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introducción a la prevención de pérdida de datos de Endpoint (versión preliminar)
+# <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
-La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md). Para obtener más información sobre la DLP de Endpoint, consulte [Obtener más información sobre la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-learn-about.md)
+La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que puede usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md). Para obtener más información sobre la DLP de Endpoint, consulte [Obtener más información sobre la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP le permite supervisar dispositivos con Windows 10 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
 
@@ -44,6 +44,7 @@ Antes de empezar con Endpoint DLP, debe confirmar la [Suscripción a Microsoft 3
 - Cumplimiento de Microsoft 365 A5
 - Gobierno y protección de información de Microsoft 365 E5
 - Gobierno y protección de información de Microsoft 365 A5
+
 
 ### <a name="permissions"></a>Permisos
 
@@ -94,7 +95,9 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
 
 4. Todos los dispositivos deben estar [unidos a Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
 
-5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Vea, [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+6. Si está en el canal mensual de la empresa de las versiones 2004 a 2008 de Aplicaciones de Microsoft 365, hay un problema conocido con el punto de conexión de DLP que clasifica el contenido de Office y tendrá que actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para obtener más información sobre este problema, vea la sección Office Suite de [Notas de la versión para obtener las versiones del canal actuales en 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
 
 ## <a name="onboarding-devices-into-device-management"></a>Incorporación de dispositivos a la administración de dispositivos
 
