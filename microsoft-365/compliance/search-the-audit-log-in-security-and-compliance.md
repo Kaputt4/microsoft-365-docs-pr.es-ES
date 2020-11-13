@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941457"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999514"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -140,7 +140,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 ## <a name="search-the-audit-log"></a>Búsquedas en el registro de auditoría
 
 > [!NOTE]
-> Actualmente estamos investigando un problema debido al cual no hay actividades de Azure AD disponibles en la herramienta de búsqueda en el registro de auditoría. Este problema comenzó en torno al 26 de octubre de 2020. Entre estas actividades, se incluyen las actividades de administración de usuarios de Azure AD, las actividades de administración de grupos, las actividades de administración de aplicaciones, las actividades de administración de roles y las actividades de administración de directorios. Se informará cuando se solucione el problema.
+> Hubo un problema con las actividades de Azure AD que no están disponibles en la herramienta de búsqueda de registros de auditoría desde el 22 de octubre de 2020 hasta el 6 de noviembre de 2020. Entre estas actividades, se incluyen las actividades de administración de usuarios de Azure AD, las actividades de administración de grupos, las actividades de administración de aplicaciones, las actividades de administración de roles y las actividades de administración de directorios. Los eventos que faltan para el período de impacto estarán disponibles en los próximos días, y está previsto que se completen a más tardar el 20 de noviembre de 2020. En algunos casos, los clientes podrían notar la duplicación de datos de eventos para eventos generados entre el 26 de octubre, el 2020 y el 05 de noviembre de 2020.
     
 Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 

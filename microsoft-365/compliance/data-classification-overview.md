@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 503235ad2ee35760a03cb2427d1e84f5f3639b9f
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379225"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999400"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
@@ -49,14 +49,9 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:
+Un numero de diferentes suscripciones admite punto de conexión DLP. Para ver las opciones de licencia para el punto de conexión DLP, vea [Concesión de licencias de protección de la información para obtener instrucciones](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- Complemento de cumplimiento avanzado (E5)
-- Complemento de inteligencia de amenazas avanzado (E5)
-
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>Permisos
 
  Para obtener acceso a la página de clasificación de datos, una cuenta debe tener asignada una suscripción en cualquiera de estos roles o grupos de roles.
 
