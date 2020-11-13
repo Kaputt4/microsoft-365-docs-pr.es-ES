@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre cómo usar los complementos centralizados para implementar complementos para los usuarios y grupos de su organización.
-ms.openlocfilehash: 6339858871834637c0b8fdd1b16c17b534026de9
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5521b01e059ca8ae4a97ecb094f9aa1198263701
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48207891"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071482"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -58,10 +58,10 @@ Considere la posibilidad de eliminar un complemento si no lo está usando ya. Po
 
 También puede eliminar un complemento que se ha implementado.
 
-1. En el centro de administración, vaya a **Settings**la página de los  >  **Complementos &** de los servicios de configuración.
+1. En el centro de administración, vaya a **Settings** la página de los  >  **Complementos &** de los servicios de configuración.
 
      > [!NOTE]
-    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración**de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
+    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración** de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
 
 2. Seleccione el complemento implementado.
 
@@ -73,14 +73,14 @@ También puede eliminar un complemento que se ha implementado.
 
 Después de la implementación, los administradores también pueden administrar el acceso de los usuarios a los complementos.
 
-1. En el centro de administración, vaya a **Settings**la página de los  >  **Complementos &** de los servicios de configuración.
+1. En el centro de administración, vaya a **Settings** la página de los  >  **Complementos &** de los servicios de configuración.
 
      > [!NOTE]
-    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración**de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
+    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración** de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
 
 2. Seleccione el complemento implementado.
 
-3. Haga clic en **Editar** en la sección **¿quién tiene acceso**?
+3. Haga clic en **Editar** en la sección **¿quién tiene acceso** ?
 
 4. Guarde los cambios.
 
@@ -96,7 +96,7 @@ Como organización, puede que quiera impedir la descarga de nuevos complementos 
 1. En el centro de administración, vaya a la página **Configuración** \>[de servicios &amp;complementos](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración**de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
+    > El centro de administración se actualiza a la experiencia de implementación con aplicaciones integradas. Si no ve los pasos anteriores, vaya a configuración de la sección Implementación centralizada en **configuración** de  >  **aplicaciones integradas**. En la parte superior de la página **aplicaciones integradas** , elija **Complementos**.
     
 3. Seleccione **aplicaciones y servicios de propiedad del usuario**.
     
@@ -133,6 +133,9 @@ Esto no impide que un administrador use la implementación centralizada para asi
   
 Para evitar que un usuario inicie sesión con una cuenta de Microsoft, puede restringir el inicio de sesión para usar solo la cuenta de la organización. Para obtener más información, vea [identidad, autenticación y autorización en Office 2016](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx).  
 
+> [!NOTE]
+> Impedir que los usuarios obtengan acceso a la tienda Office también les impedirá [transferir complementos de Office para realizar pruebas](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).
+
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Más información sobre la experiencia del usuario final con los complementos
 
 Después de implementar un complemento, los usuarios finales pueden empezar a usarlo en sus aplicaciones de Office (consulte [empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). El complemento aparece en todas las plataformas admitidas por el complemento.
@@ -157,7 +160,7 @@ Si el complemento implementado no es compatible con los comandos de complemento 
   
 2. Seleccione **administrada por el administrador** en el panel de navegación izquierdo. 
 
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 [Implementar complementos en el centro de administración](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 

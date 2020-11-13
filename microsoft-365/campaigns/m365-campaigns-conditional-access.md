@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo requerir MFA y configurar directivas de acceso condicional para Microsoft 365 para empresas.
-ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527203"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071506"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir la autenticación multifactor y configurar directivas de acceso condicional
 
@@ -60,7 +60,7 @@ Para requerir que todos los usuarios inicien sesión con un segundo formulario d
 
 
     ![Haga que el inicio de sesión sea una tarjeta más segura.](../media/setupmfa.png)
-3. En la página hacer que **el inicio de**sesión sea más seguro, elija introducción.
+3. En la página hacer que **el inicio de** sesión sea más seguro, elija introducción.
  
 4. En el panel reforzar la seguridad de inicio de sesión, active las casillas situadas junto a **requerir autenticación multifactor para administradores** y **requerir que los usuarios se registren para la autenticación multifactor y bloquear el acceso si se detecta un riesgo**.
     Asegúrese de excluir la cuenta de administrador de [emergencia](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) o "ruptura de cristal" del requisito de MFA en el cuadro **Buscar usuarios** .
@@ -71,16 +71,16 @@ Para requerir que todos los usuarios inicien sesión con un segundo formulario d
 
 ## <a name="set-up-baseline-policies"></a>Configurar directivas de línea base
 
-1. Vaya a [Azure portal](https://portal.azure.com)y navegue a **Azure Active Directory** \> **Conditional Access**.
-    
-    Las directivas de línea base se enumeran en la página y puede ver que **requieren MFA para los administradores** y la **protección del usuario final** ya están habilitados después de completar los pasos de [requerir MFA](#require-mfa).
+1. Vaya a [Azure portal](https://portal.azure.com)y, a continuación, navegue a **Azure Active Directory** \> **Conditional Access** para crear una **nueva Directiva**.
 
-    ![Página donde se enumeran las directivas de línea base para el acceso condicional.](../media/casettings.png)
-2. Consulte las siguientes instrucciones específicas para cada directiva:
-
-    - [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-    - [Requerir MFA para los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+Consulte las siguientes instrucciones específicas para cada directiva: <br>
+    - [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Requerir MFA para los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
     - [Requerir MFA para la administración de servicios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    
+> [!NOTE]
+> Las directivas de vista previa ya no existen y los usuarios tendrán que crear sus propias directivas.
+
 
 Puede configurar directivas adicionales, como requerir aplicaciones cliente aprobadas. Para obtener más información, consulte la [documentación de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/).

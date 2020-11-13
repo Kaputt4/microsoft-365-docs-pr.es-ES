@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 7e40a5eb7144fef3d330e0e8fc3c711af15d4c49
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327061"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071448"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Pasos para que los Socios puedan registrar dispositivos
 
@@ -46,7 +46,7 @@ Una vez que haya establecido la relación con sus clientes, puede aprovechar el 
 >[!NOTE]
 > Debe haber recibido este archivo. csv con la compra de su dispositivo. Si no recibió un archivo. csv, puede crear uno solo si sigue los pasos que se indican en [Agregar dispositivos a Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). El script de Windows PowerShell es diferente del que se usa para el [portal de administración de escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash). Los partners deben usar [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) para registrar dispositivos para dispositivos de escritorio administrados por Microsoft en el centro de asociados.
 
-Si recibe un mensaje de error al intentar cargar el archivo. csv, compruebe el formato del archivo. Puede usar solo el hash de hardware, el nombre de OEM, el número de serie y el modelo (en ese orden de columnas) o el identificador de producto de Windows. También puede usar el archivo. csv de ejemplo que se proporciona en el vínculo junto a **Agregar dispositivos** para crear una lista de dispositivos. 
+Si recibe un mensaje de error al intentar cargar el archivo. csv, compruebe el formato del archivo. Asegúrese de que el orden de las columnas coincida con lo descrito en [usar perfiles de Windows AutoPilot en dispositivos nuevos para personalizar la experiencia rápida de un cliente](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account). También puede usar el archivo. csv de ejemplo que se proporciona en el vínculo junto a **Agregar dispositivos** para crear una lista de dispositivos. 
 
 Para obtener más información acerca de AutoPilot en escenarios de asociados, consulte [Agregar dispositivos a una cuenta de cliente](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account).
 
