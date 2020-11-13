@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración de la tarea, conversación y documentación con los invitados en Microsoft Teams.
-ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906864"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030034"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -175,7 +176,7 @@ Para invitar a invitados a un equipo
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

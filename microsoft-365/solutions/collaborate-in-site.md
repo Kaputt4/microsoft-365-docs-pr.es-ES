@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
-ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: df9068ef4b4eb35f946b78d8f7fefa01c254c79c
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409041"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029998"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -54,7 +55,7 @@ Para establecer la configuración de colaboración externa
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
-Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados**, seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
+Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados** , seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Microsoft 365 Groups
 
@@ -83,8 +84,8 @@ Si desea permitir el uso compartido de archivos y carpetas sin autenticar, elija
 
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, en **directivas**, haga clic en **uso compartido**.
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración** , haga clic en **SharePoint**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, en **directivas** , haga clic en **uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -93,11 +94,11 @@ Para establecer la configuración de uso compartido en el nivel de la organizaci
 El siguiente paso es crear el sitio que va a usar para colaborar con los invitados.
 
 Para crear un sitio
-1. En el Centro de administración de SharePoint, en **Sitios**, haga clic en **Sitios activos**.
+1. En el Centro de administración de SharePoint, en **Sitios** , haga clic en **Sitios activos**.
 2. Haga clic en **Crear**.
 3. Haga clic en **sitio de grupo**.
 4. Escriba un nombre de sitio y escriba un nombre para el propietario del grupo (propietario del sitio).
-5. En **Configuración avanzada**, elija si desea que este sitio sea público o privado.
+5. En **Configuración avanzada** , elija si desea que este sitio sea público o privado.
 6. Haga clic en **Siguiente**.
 7. Haga clic en **Finalizar**.
 
@@ -105,9 +106,9 @@ Invitaremos a los usuarios más adelante. A continuación, es importante comprob
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido en el nivel de sitio de SharePoint
 
-Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este sitio. Por ejemplo, si establece la configuración de nivel de organización en **cualquiera**, pero desea que todos los invitados se autentiquen en este sitio, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
+Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este sitio. Por ejemplo, si establece la configuración de nivel de organización en **cualquiera** , pero desea que todos los invitados se autentiquen en este sitio, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
 
-Tenga en cuenta que no se puede compartir el sitio con personas no autenticadas (configuración de**cualquier persona** ), pero puede que los archivos y las carpetas individuales.
+Tenga en cuenta que no se puede compartir el sitio con personas no autenticadas (configuración de **cualquier persona** ), pero puede que los archivos y las carpetas individuales.
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -131,7 +132,7 @@ Para invitar a usuarios internos a un grupo
 No se pueden agregar usuarios invitados desde el sitio. Debe agregarlos mediante Outlook en la Web. Por lo tanto, como requisito previo para agregar e invitar invitados a un grupo, haga clic en la dirección URL del sitio en la columna **dirección URL**  para ir a la página específica del sitio. En esta página, haga clic en el icono del **iniciador de aplicaciones** y seleccione **Outlook**. Esta es la pantalla desde la que puede invitar a los invitados a un grupo, para qué procedimiento se describe a continuación.
 
 Para invitar a invitados a un grupo
-1. En **grupos**, haga clic en el grupo al que desea invitar a los invitados.
+1. En **grupos** , haga clic en el grupo al que desea invitar a los invitados.
 2. Abra la tarjeta de contacto de grupo y haga clic en vínculo de **miembros** en la esquina superior derecha (el vínculo que indica el recuento de miembros).
 3. Haga clic en **Agregar miembros**.
 4. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.

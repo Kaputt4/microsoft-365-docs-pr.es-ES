@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo crear un sitio o un equipo de extranet B2B con usuarios invitados administrados desde una organización asociada.
-ms.openlocfilehash: 83252241833f3dfe663cc70eae28a5df1214cce0
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b052598f86072776f69e538c70a6bd56d79c3f81
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949389"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030058"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 
@@ -55,7 +56,7 @@ Para agregar una organización conectada
 5. Escriba un nombre y una descripción para la organización y, a continuación, haga clic en **siguiente: Directory + Domain**.
 6. Haga clic en **Agregar directorio + dominio**.
 7. Escriba el dominio de la organización a la que desea conectarse y, a continuación, haga clic en **Agregar**.
-8. Haga clic en **conectar**y, a continuación, haga clic en **siguiente: patrocinadores**.
+8. Haga clic en **conectar** y, a continuación, haga clic en **siguiente: patrocinadores**.
 9. Agregue personas de su organización o de la organización a la que se va a conectar a quién desea aprobar el acceso para los usuarios invitados.
 10. Haga clic en **siguiente: revisión + crear**.
 11. Revise la configuración que eligió y, a continuación, haga clic en **crear**.
@@ -78,7 +79,7 @@ Para crear un catálogo
 Una vez creado el catálogo, agregue el sitio o equipo de SharePoint que desea compartir con la organización asociada.
 
 Para agregar recursos a un catálogo
-1. En el gobierno de identidad de Azure AD, haga clic en **catálogos**y, a continuación, haga clic en el catálogo en el que desea agregar recursos.
+1. En el gobierno de identidad de Azure AD, haga clic en **catálogos** y, a continuación, haga clic en el catálogo en el que desea agregar recursos.
 2. Haga clic en **recursos** y, a continuación, en **Agregar recursos**.
 3. Seleccione los equipos o sitios de SharePoint que desea incluir en la extranet y, a continuación, haga clic en **Agregar**.
 
@@ -87,19 +88,19 @@ Para agregar recursos a un catálogo
 Una vez que haya definido los recursos que desea compartir, el siguiente paso consiste en crear un paquete de acceso, que define el tipo de acceso que se concede a los usuarios asociados y el proceso de aprobación para los nuevos usuarios asociados que solicitan acceso.
 
 Para crear un paquete de Access
-1. En el gobierno de identidad de Azure AD, haga clic en **catálogos**y, a continuación, haga clic en el catálogo en el que desea crear un paquete de acceso.
-2. Haga clic en **paquetes de Access**y, a continuación, en **nuevo paquete de acceso**.
+1. En el gobierno de identidad de Azure AD, haga clic en **catálogos** y, a continuación, haga clic en el catálogo en el que desea crear un paquete de acceso.
+2. Haga clic en **paquetes de Access** y, a continuación, en **nuevo paquete de acceso**.
 3. Escriba un nombre y una descripción para el paquete de Access y, a continuación, haga clic en **siguiente: roles de recursos**.
 4. Elija los recursos del catálogo que desea usar para la extranet.
 5. Para cada recurso, en la columna **rol** , elija el rol de usuario que desea conceder a los usuarios invitados que usan la extranet.
 6. Haga clic en **siguiente: solicitudes**.
-7. En **usuarios que pueden solicitar acceso**, elija **para los usuarios que no están en el directorio**.
+7. En **usuarios que pueden solicitar acceso** , elija **para los usuarios que no están en el directorio**.
 8. Asegúrese de que la opción **organizaciones conectadas específicas** está seleccionada y, a continuación, haga clic en **Agregar directorios**.
 9. Elige la organización conectada que agregaste anteriormente y, a continuación, haz clic en **seleccionar**
-10. En **aprobación**, elija **sí** para **requerir aprobación**.
-11. En **primer aprobador**, elija uno de los patrocinadores que agregó anteriormente o elija un usuario específico.
+10. En **aprobación** , elija **sí** para **requerir aprobación**.
+11. En **primer aprobador** , elija uno de los patrocinadores que agregó anteriormente o elija un usuario específico.
 12. Haga clic en **Agregar suplencia** y seleccione un aprobador de reserva.
-13. En **Habilitar**, elija **sí**.
+13. En **Habilitar** , elija **sí**.
 14. Haga clic en **siguiente: ciclo de vida**.
 15. Elija la configuración de caducidad y revisión de Access que desea usar y, a continuación, haga clic en **siguiente: revisión + crear**.
 16. Revise la configuración y, a continuación, haga clic en **crear**.
@@ -109,9 +110,9 @@ Para crear un paquete de Access
 Si está asociando con una organización de gran tamaño, es posible que quiera ocultar el paquete de Access. Si el paquete está oculto, los usuarios de la organización asociada no podrán ver el paquete en su portal de *acceso* . En su lugar, se deben enviar a un vínculo directo para registrarse en el paquete. Ocultar el paquete de acceso puede reducir el número de solicitudes de acceso inadecuadas y también puede ayudar a mantener los paquetes de acceso disponibles en el portal de la organización asociada.
 
 Para establecer un paquete de Access en oculto
-1. En Azure AD control de identidad, haga clic en **paquetes de acceso**y, después, haga clic en el paquete de acceso.
+1. En Azure AD control de identidad, haga clic en **paquetes de acceso** y, después, haga clic en el paquete de acceso.
 2. En la página **información general** , haga clic en **Editar**.
-3. En **propiedades**, elija **sí** para **ocultar**y, a continuación, haga clic en **Guardar**.
+3. En **propiedades** , elija **sí** para **ocultar** y, a continuación, haga clic en **Guardar**.
 
    ![Captura de pantalla de una pantalla Editar propiedades del paquete de Access](../media/identity-governance-access-package-hidden.png)
 
@@ -120,13 +121,13 @@ Para establecer un paquete de Access en oculto
 Si establece el paquete de Access en oculto, deberá enviar un vínculo directo a la organización asociada para que pueda solicitar acceso a su sitio o equipo.
 
 Para buscar el vínculo del portal de Access
-1. En Azure AD control de identidad, haga clic en **paquetes de acceso**y, después, haga clic en el paquete de acceso.
+1. En Azure AD control de identidad, haga clic en **paquetes de acceso** y, después, haga clic en el paquete de acceso.
 2. En la página **información general** , haga clic en el vínculo **copiar al portapapeles** del **vínculo del portal de acceso**.
 
    ![Captura de pantalla de las propiedades del paquete de Access con el vínculo del portal de Access](../media/identity-governance-access-portal-link.png)
 
 Una vez que haya copiado el vínculo, puede compartirlo con su contacto en la organización asociada y puede enviarlo a los usuarios de su equipo de colaboración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)

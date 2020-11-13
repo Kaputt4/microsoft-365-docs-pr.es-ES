@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: En este artículo, aprenderá a colaborar con invitados en un documento de SharePoint y OneDrive.
-ms.openlocfilehash: 022811be642a79c07c632cefcc67a27f19e3af4f
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e3492732756aecb176eb21f0bdfd0d394013975e
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422610"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030010"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -54,7 +55,7 @@ Para establecer la configuración de colaboración externa
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
-Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados**, seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
+Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados** , seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>Configuración de uso compartido en el nivel de la organización de SharePoint
 
@@ -71,8 +72,8 @@ Para SharePoint, elija la configuración más permisiva que necesitará cualquie
 
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
-2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, en **directivas**, haga clic en **uso compartido**.
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración** , haga clic en **SharePoint**.
+2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, en **directivas** , haga clic en **uso compartido**.
 3. Asegúrese de que el uso compartido externo para SharePoint o OneDrive está establecido en **cualquiera** o **invitados nuevos o existentes**. (Tenga en cuenta que la configuración de OneDrive no puede ser más permisiva que la configuración de SharePoint).
 4. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -94,7 +95,7 @@ Elija un vínculo en cualquiera de los siguientes tipos que, a continuación, se
 Para establecer la configuración de vínculos predeterminados de nivel de organización de SharePoint y OneDrive
 
 1. Vaya a la página de uso compartido en el centro de administración de SharePoint.
-2. En **vínculos de archivos y carpetas**, seleccione el vínculo de uso compartido predeterminado que desee usar.
+2. En **vínculos de archivos y carpetas** , seleccione el vínculo de uso compartido predeterminado que desee usar.
 3. Si ha realizado cambios, haga clic en **Guardar**.
 
 Para establecer el permiso para el vínculo para compartir, en **elegir el permiso que está seleccionado de forma predeterminada para los vínculos para compartir.**

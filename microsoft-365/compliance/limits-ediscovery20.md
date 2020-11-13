@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de mayúsculas y minúsculas, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: abc93acb5f32ea1fdae607d8e1053adc59ad6cea
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446257"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020967"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -62,10 +62,10 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |:-----|:-----|
 |Número máximo de buzones o sitios en los que se puede buscar en una sola búsqueda.  <br/> |Sin límite  <br/> |
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo.  <br/> |Sin límite  <br/> | 
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10    <br/> | 
-|Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones).  <br/> |**Buzones de correo**: 10.000<br/>**Sitios**: 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
-|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3  <br/> |  
-|Número máximo de variantes devueltas al usar el carácter comodín de prefijo para buscar una frase exacta o al usar un carácter comodín de prefijo y el operador booleano **Near** .  <br/> |10.000 <sup>3</sup> <br/> |
+|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10   <br/> | 
+|Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones).  <br/> |**Buzones de correo** : 10.000<br/>**Sitios** : 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
+|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo, * _ o *un \** _*conjunto \**_. <br/> |3   <br/> |  
+|Número máximo de variantes que se devuelven al usar el carácter comodín de prefijo para buscar una frase exacta o al usar un carácter comodín de prefijo y el operador booleano _ *Near* *.  <br/> |10.000 <sup>3</sup> <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.   <br/> |100  <br/> |
 |Número máximo de elementos de todos los buzones mostrados en la página de vista previa para las búsquedas.  <br/> |1,000  <br/> |
 |Número máximo de buzones en los que se puede obtener una vista previa de los resultados de búsqueda.  Si hay más de 1000 buzones de correo que contienen elementos que coinciden con la consulta de búsqueda, solo los principales buzones de correo de 1.000 con más resultados están disponibles para la vista previa.<br/> |1,000  <br/> |
@@ -79,15 +79,27 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 ## <a name="viewer-limits"></a>Límites del visor
 
 |**Descripción del límite**|**Límite**|
-  |:-----|:-----|
-  |Tamaño máximo del archivo de Excel que se puede ver en el visor nativo.  <br/> |4 MB  <br/> |
+|:-----|:-----|
+|Tamaño máximo del archivo de Excel que se puede ver en el visor nativo.  <br/> |4 MB  <br/> |
+|||
+
+## <a name="export-limits"></a>Límites de exportación
+
+|**Descripción del límite**|**Límite**|
+|:-----|:-----|
+|Tamaño máximo de una sola exportación.|3 millones documentos o 100 GB, lo que sea más pequeño|
+|Cantidad máxima de datos en un solo día. | 2 TB |
+|Exportaciones simultáneas máximas en su organización. | 10 <sup>4</sup> |
+|Exportaciones simultáneas máximas por usuario. | 3  |
+|Tamaño máximo de un único archivo PST. | 10 GB |
+|Número máximo de exportaciones simultáneas por conjunto de revisiones. | 1  |
 |||
 
 ## <a name="review-set-download-limits"></a>Revisión del conjunto de límites de descarga
 
 |**Descripción del límite**|**Límite**|
 |:-----|:-----|
-|Tamaño total de archivo o número máximo de documentos descargados de un conjunto de revisión.  <br/> |3 MB o 50 documentos <sup>4</sup>|
+|Tamaño total de archivo o número máximo de documentos descargados de un conjunto de revisión.  <br/> |3 MB o 50 documentos <sup>5</sup>|
 |||
 
 <br/>
@@ -96,6 +108,7 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 > [!NOTE]
 > <sup>1</sup> cualquier elemento que supere un solo límite de archivo se mostrará como un error de procesamiento.<br/>
 > <sup>2</sup> al buscar ubicaciones de SharePoint y OneDrive para la empresa, los caracteres de las direcciones URL de los sitios en los que se está realizando la búsqueda cuentan en este límite.<br/>
-> <sup>3</sup> para las consultas que no son de frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto indica que se produce una palabra en un documento, pero no donde se produce en el documento. Para realizar una consulta de frases (un valor de palabra clave con comillas dobles), debemos comparar la posición del documento con las palabras de la frase. Esto significa que no podemos usar el índice de prefijos para las consultas de frases. En este caso, la consulta se expande internamente con todas las palabras posibles a las que se expande el prefijo; por ejemplo, **el \* tiempo** se puede expandir a **"tiempo, temporizadores u horas o Timex o timeboxed o..."**. El límite de 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior.<br/>
-> <sup>4</sup> este límite se aplica a la descarga de documentos seleccionados de un conjunto de revisión. No se aplica a la exportación de documentos de un conjunto de revisión. Para obtener más información sobre cómo descargar y exportar documentos, vea [exportar datos de casos en EDiscovery avanzado](exporting-data-ediscover20.md). <br/>
+> <sup>3</sup> para las consultas que no son de frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto indica que se produce una palabra en un documento, pero no donde se produce en el documento. Para realizar una consulta de frases (un valor de palabra clave con comillas dobles), debemos comparar la posición del documento con las palabras de la frase. Esto significa que no podemos usar el índice de prefijos para las consultas de frases. En este caso, la consulta se expande internamente con todas las palabras posibles a las que se expande el prefijo; por ejemplo, **Time \* *_ se puede expandir a _* "tiempo o temporizador u horas o Timex o timeboxed o..."**. El límite de 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior.<br/>
+> <sup>4</sup> este límite se comparte en todas las herramientas de eDiscovery. Esto significa que las exportaciones simultáneas en la búsqueda de contenido, la exhibición de documentos electrónicos principal y la exhibición avanzada de documentos electrónicos se aplican en este límite. <br/>
+> <sup>5</sup> este límite se aplica a la descarga de documentos seleccionados de un conjunto de revisión. No se aplica a la exportación de documentos de un conjunto de revisión. Para obtener más información sobre cómo descargar y exportar documentos, vea [exportar datos de casos en EDiscovery avanzado](exporting-data-ediscover20.md). <br/>
 
