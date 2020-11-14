@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: Preparar certificados y perfiles de red
           href: get-ready/certs-wifi-lan.md
+        - name: Requisitos previos para cuentas de invitados
+          href: get-ready/guest-accounts.md
         - name: Preparar recursos de impresión
           href: get-ready/printing.md
         - name: Preparar aplicaciones
