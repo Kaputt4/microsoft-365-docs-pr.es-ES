@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo identificar, supervisar y proteger automáticamente la información confidencial de su organización en Office 365.
-ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984944"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999502"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -55,11 +55,11 @@ Con una directiva DLP, puede:
     
     Puede educar a sus usuarios acerca de las directivas DLP y ayudar a que sigan manteniendo el cumplimiento normativo sin bloquear su trabajo. Por ejemplo, si un usuario intenta compartir un documento que contiene información confidencial, una directiva DLP puede enviarle una notificación por correo electrónico y mostrarle una sugerencia de directiva en el contexto de la biblioteca de documentos que le permite invalidar la directiva si tiene una justificación comercial. Las mismas sugerencias de directiva también aparecen en Outlook en la Web, Outlook, Excel, PowerPoint y Word.
     
-- **Ver informes de DLP con contenido que coincida con las directivas DLP de su organización.**
+- **Ver alertas e informes de DLP con contenido que coincida con las directivas DLP de su organización.**
     
-    Para evaluar si la organización está cumpliendo con una directiva DLP, puede ver cuántas coincidencias tiene la directiva y la regla a lo largo del tiempo. Si una directiva DLP permite a los usuarios invalidar una sugerencia de directiva y notificar un falso positivo, también puede ver sobre qué han informado los usuarios.
+    Para ver las alertas y los metadatos relacionados con las directivas DLP, puede usar el [Panel de administración de alertas de DLP](dlp-configure-view-alerts-policies.md). También puede ver los informes de coincidencias de directivas para evaluar cómo su organización cumple con una directiva DLP. Si una directiva DLP permite a los usuarios invalidar una sugerencia de directiva y notificar un falso positivo, también puede ver sobre qué han informado los usuarios.
     
-Para crear y administrar las directivas DLP, vaya a la página sobre la prevención de pérdida de datos del Centro de seguridad y cumplimiento de Microsoft 365.
+Para crear y administrar las directivas DLP, vaya a la página sobre la prevención de pérdida de datos del Centro de cumplimiento de Microsoft 365.
   
 ![Página de prevención de pérdida de datos en el Centro de seguridad&amp; y cumplimiento de Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
@@ -194,15 +194,17 @@ Así es como se muestra una sugerencia de directiva en una cuenta de OneDrive pa
   
 ![Sugerencia de directiva para un documento de una cuenta de OneDrive](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- Para obtener más información sobre las notificaciones de usuario y las sugerencias de directiva en directivas DLP, Vea [usar las notificaciones y las sugerencias de directiva](use-notifications-and-policy-tips.md).
+ Para obtener más información sobre las notificaciones de usuario y las sugerencias de directiva en directivas DLP, vea [Usar las notificaciones y las sugerencias de directiva](use-notifications-and-policy-tips.md).
 
-#### <a name="incident-reports"></a>Informes de incidentes
+#### <a name="alerts-and-incident-reports"></a>Alertas e informes de incidentes
 
-Cuando una regla coincide, puede enviar un informe de incidentes a su responsable de cumplimento normativo (o a la persona que elija) con los detalles del evento. Este informe incluye información sobre el elemento que ha coincidido, el contenido que ha coincidido con la regla y el nombre de la persona que ha modificado el contenido por última vez. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
+Cuando una regla coincide, puede enviar un correo de alerta a su responsable de cumplimento normativo (o a la persona que elija) con los detalles de la alerta. Este correo electrónico de alerta contendrá un vínculo del [Panel de administración de alertas DLP](dlp-configure-view-alerts-policies.md) el que el funcionario encargado de la conformidad pueda ir para ver los detalles de los eventos y las alertas. El panel contiene detalles del evento que activó la alerta, junto con detalles de la Directiva DLP que coincide y el contenido confidencial detectado.
+
+Además, también puede enviar un informe de incidentes con detalles sobre el evento. Este informe incluye información sobre el elemento que ha coincidido, el contenido real que ha coincidido con la regla y el nombre de la persona que ha modificado el contenido por última vez. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
   
-![Página para configurar informes de incidentes](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Página para configurar informes de incidentes](../media/Alerts-and-incident-report.png)
 
-DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP * *_no_* _configurarlas o buscar elementos de correo electrónico existentes que estén almacenados en un buzón o archivo.
+DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes y una alerta cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP * *_no_* _configurarlas o buscar elementos de correo electrónico existentes que estén almacenados en un buzón o archivo.
   
 ## <a name="grouping-and-logical-operators"></a>Operadores lógicos y de agrupación
 

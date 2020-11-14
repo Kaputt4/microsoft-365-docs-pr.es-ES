@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990555"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999422"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -173,7 +173,14 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 > [!NOTE]
 >Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
+### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Visualizar alertas de DLP del punto de conexión en el panel de administración de alertas de DLP
+
+1. Abra la página sobre la prevención de pérdida de datos en el Centro de cumplimiento de Microsoft 365 y elija Alertas.
+
+2. Consulte los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
+
+
+### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de DLP del punto de conexión en el explorador de actividad
 
 1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija Explorador de actividad.
 
