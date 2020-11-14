@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Ver el estado de mantenimiento de los servicios 365 de Microsoft antes de llamar al soporte técnico para ver si hay una interrupción del servicio activo.
-ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
-ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
+ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134080"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072764"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -39,7 +39,8 @@ ms.locfileid: "48134080"
 
 Puede ver el estado de los servicios de Microsoft, incluidos Office en la web, Yammer, Microsoft Dynamics CRM y los servicios en la nube de administración de dispositivos móviles, en la página **Estado del servicio** en el centro de [administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Si experimenta algún problema con un servicio en la nube, antes de llamar al soporte técnico o de invertir tiempo intentando solucionarlo, puede comprobar el estado del servicio para determinar si se trata de un problema conocido que ya tenga una resolución en curso.
 
-Si no puede iniciar sesión en el portal de servicios, puede usar la [Página estado del servicio](https://status.office365.com) para comprobar problemas conocidos que impiden que inicie sesión en su inquilino.
+Si no puede iniciar sesión en el centro de administración, puede usar la [Página estado del servicio](https://status.office365.com) para comprobar si hay problemas conocidos que impiden iniciar sesión en su inquilino.  Además, Regístrese para seguir en [@MSFT365status](https://twitter.com/MSFT365Status) en Twitter para ver la información sobre determinados eventos.
+
   
 ### <a name="how-to-check-service-health"></a>Cómo comprobar el estado del servicio
 
@@ -50,7 +51,7 @@ Si no puede iniciar sesión en el portal de servicios, puede usar la [Página es
   
 2. Si no usa el nuevo centro de administración, en la página **principal** , seleccione el botón de alternancia **probar el nuevo centro de administración** en la esquina superior derecha.
 
-3. Para ver el estado del servicio, en el centro de administración, vaya al estado del servicio de **mantenimiento**  >  **Service health**o seleccione la tarjeta de **Estado del servicio** en el **Panel de inicio**. La tarjeta del panel indica si hay un problema de servicio activo y se vincula a la página de estado detallado del **servicio** .
+3. Para ver el estado del servicio, en el centro de administración, vaya al estado del servicio de **mantenimiento**  >  **Service health** o seleccione la tarjeta de **Estado del servicio** en el **Panel de inicio**. La tarjeta del panel indica si hay un problema de servicio activo y se vincula a la página de estado detallado del **servicio** .
   
 4. En la página **Estado del servicio** , el estado de mantenimiento de cada servicio en la nube se muestra en un formato de tabla.
 
@@ -62,11 +63,11 @@ Para filtrar la vista a los servicios que actualmente están experimentando un i
 
 La ficha **historial** muestra el historial de incidentes y avisos que se han resuelto.
 
-Si tiene un problema con un servicio de Microsoft 365 y no lo ve en la página de **Estado del servicio** , comuníquese con nosotros seleccionando **informar de un problema**y completando el formulario corto. Analizaremos los datos y los informes relacionados de otras organizaciones para ver el alcance del problema y si se ha originado con nuestro servicio. Si lo hizo, lo agregaremos como un nuevo aviso o aviso en la página **Estado del servicio** , donde puede realizar el seguimiento de su resolución. Si no aparece en la lista en unos 30 minutos, considere la posibilidad de ponerse en contacto con el soporte técnico para resolver el problema.
+Si tiene un problema con un servicio de Microsoft 365 y no lo ve en la página de **Estado del servicio** , comuníquese con nosotros seleccionando **informar de un problema** y completando el formulario corto. Analizaremos los datos y los informes relacionados de otras organizaciones para ver el alcance del problema y si se ha originado con nuestro servicio. Si lo hizo, lo agregaremos como un nuevo aviso o aviso en la página **Estado del servicio** , donde puede realizar el seguimiento de su resolución. Si no aparece en la lista en unos 30 minutos, considere la posibilidad de ponerse en contacto con el soporte técnico para resolver el problema.
 
-Para personalizar la vista de los servicios que se muestran en el panel, seleccione **preferencias**de  >  **vista personalizada**y desactive las casillas correspondientes a los servicios que desea filtrar de la vista del panel de estado del servicio. Asegúrese de que la casilla de verificación está activada para cada servicio que desea supervisar.    
+Para personalizar la vista de los servicios que se muestran en el panel, seleccione **preferencias** de  >  **vista personalizada** y desactive las casillas correspondientes a los servicios que desea filtrar de la vista del panel de estado del servicio. Asegúrese de que la casilla de verificación está activada para cada servicio que desea supervisar.    
 
-Para suscribirse a notificaciones de correo electrónico de nuevos incidentes que afecten al espacio empresarial y a los cambios de estado de un incidente activo, seleccione **preferencias**de  >  **correo electrónico**, haga clic en **enviarme notificaciones de estado del servicio en el correo electrónico**y, a continuación, especifique:
+Para suscribirse a notificaciones de correo electrónico de nuevos incidentes que afecten al espacio empresarial y a los cambios de estado de un incidente activo, seleccione **preferencias** de  >  **correo electrónico** , haga clic en **enviarme notificaciones de estado del servicio en el correo electrónico** y, a continuación, especifique:
 
 - Hasta dos direcciones de correo electrónico.
 - Si desea que las notificaciones de incidentes o avisos
@@ -103,7 +104,7 @@ Como las explicaciones del estado del servicio se publican en tiempo real, no se
   
 1. Vaya a [Traductor](https://www.bing.com/translator/).
 
-2. En la página **Estado del servicio**, seleccione un incidente o un aviso. En **Mostrar detalles**, copie el texto sobre el problema.
+2. En la página **Estado del servicio** , seleccione un incidente o un aviso. En **Mostrar detalles** , copie el texto sobre el problema.
 
 3. En el traductor, pegue el texto y elija **Traducir**.
 
@@ -125,7 +126,7 @@ La mayoría de las veces, los servicios aparecerán como correctos sin más info
 
 | Estado | Definición |
 |:-----|:-----|
-|**Investigando** | Somos conscientes de que existe un problema potencial y estamos recopilando más información sobre lo que sucede y el ámbito de impacto. |
+|**Investigating** | Somos conscientes de que existe un problema potencial y estamos recopilando más información sobre lo que sucede y el ámbito de impacto. |
 |**Degradación del servicio** | Hemos confirmado que existe un problema que puede afectar al uso de un servicio o una característica. Es posible que vea este estado si un servicio está funcionando más lento de lo normal, si hay interrupciones intermitentes o si una característica no funciona, por ejemplo. |
 |**Interrupción del servicio** | Verá este estado si se determina que un problema afecta a posibilidad de los usuarios de obtener acceso al servicio. En este caso, el problema es importante y se puede reproducir de forma coherente. |
 |**Restaurando el servicio** | Se ha identificado la causa del problema, sabemos qué acción correctiva debemos aplicar y estamos en proceso de restablecer el servicio a un estado correcto. |

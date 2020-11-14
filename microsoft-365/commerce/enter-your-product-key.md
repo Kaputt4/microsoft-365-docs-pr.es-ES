@@ -15,34 +15,30 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
-description: Obtenga información sobre cómo canjear una clave de producto de Microsoft 365 Business estándar que se ha comprado en una tienda minorista.
+description: Obtenga información sobre cómo canjear una clave de producto de Microsoft 365 empresa estándar que se ha comprado en una tienda minorista.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638368"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072752"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba su clave de producto para Microsoft 365 Business Standard
 
-Si compró el estándar comercial de Microsoft 365 desde una tienda minorista, este artículo le ayudará a activar la suscripción. 
+Si compró el estándar comercial de Microsoft 365 desde una tienda minorista, este artículo le ayudará a activar la suscripción.
   
  **¿Necesita algo más?**
- **Para obtener ayuda con la familia de 365 o con microsoft 365 personal**, consulte [using Product Keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Para obtener ayuda con la familia de 365 o con microsoft 365 personal** , consulte [using Product Keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **¿Cliente de licencias por volumen?** Si compró Microsoft 365 para empresas a través de un [programa de Microsoft Open License](https://go.microsoft.com/fwlink/p/?LinkID=613298), vea el artículo, [Escriba la clave de producto que ha comprado de Microsoft abierta](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activar una nueva suscripción
 
-1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/SetupKey</a>.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
 2. Escriba la clave de producto y, a continuación, seleccione **siguiente**.
 
@@ -59,7 +55,7 @@ Si compró el estándar comercial de Microsoft 365 desde una tienda minorista, e
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Ampliar la fecha de expiración o agregar una licencia a una suscripción existente
 
-Para usar una clave de producto para ampliar la fecha de expiración o agregar una licencia a la suscripción de Microsoft 365 Business Standard, necesita una clave nueva y no usada para el mismo plan de Microsoft 365. La especificación de la clave de producto de Microsoft 365 original no funcionará porque una clave que ya se ha canjeado no se puede volver a usar. Consulte [Agregar licencias a o ampliar una suscripción pagada para usar una clave de producto](licenses/add-licenses-using-product-key.md).
+Para ampliar la fecha de expiración o agregar una licencia a la suscripción existente de Microsoft 365 Business Standard, use una clave nueva y no usada para el mismo plan de Microsoft 365. La especificación de la clave de producto de Microsoft 365 original no funcionará porque una clave que ya se ha canjeado no se puede volver a usar. Consulte [Agregar licencias a o ampliar una suscripción pagada para usar una clave de producto](licenses/add-licenses-using-product-key.md).
 
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 

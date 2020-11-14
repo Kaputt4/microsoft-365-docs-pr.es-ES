@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 19e121ce3f85dc31c3bf81c4750300c4016b1222
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846453"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072776"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -35,8 +35,9 @@ En esta guía se explica cómo implementar las directivas recomendadas en un ent
 
 El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el nivel de protección al que se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas o a ambas categorías de dispositivos. También indica dónde se configuran estas directivas.
 
-[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Directivas comunes para configurar el acceso a los dispositivos e identidades](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+[Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Este es un resumen de PDF de una página con vínculos a las directivas individuales:
 
@@ -192,7 +193,7 @@ En la segunda sección **asignaciones** :
 
 | Tipo | Propiedades | Valores                  | Action |
 |:-----|:-----------|:------------------------|:------|
-| Access | **Permitir acceso** |  | Select  |
+| Acceso | **Permitir acceso** |  | Select  |
 |      |     | **Exigir cambio de contraseña** | Check  |
 |||||
 
@@ -301,7 +302,7 @@ Para la **seguridad del sistema** , vea esta tabla.
 
 |Tipo|Propiedades|Valor|Action|
 |:---|:---------|:-----|:----|
-|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
+|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
 ||Contraseñas sencillas|Bloquear|Select|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Select|
 ||Longitud mínima de la contraseña|6 |Tipo|
