@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos de Microsoft 365 Endpoint amplía la supervisión de las actividades de archivo y las acciones de protección para estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999473"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072979"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -147,13 +147,13 @@ Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atri
 
 Ahora que ya conoce DLP en punto de conexión, estos son los pasos siguientes:
 
-1) [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft (versión preliminar)](endpoint-dlp-getting-started.md)
-2) [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft (versión preliminar)](endpoint-dlp-using.md)
+1) [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft ](endpoint-dlp-getting-started.md)
+2) [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft (versión preliminar)](endpoint-dlp-getting-started.md)
-- [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft (versión preliminar)](endpoint-dlp-using.md)
+- [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-getting-started.md)
+- [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)

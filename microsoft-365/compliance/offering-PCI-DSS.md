@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 00f9832eadb55b3056ca3fcd3a79ee12afe83034
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cb4d1a4c4632763506fd2d3b05431acb9233f744
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841889"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071975"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)
 
@@ -37,9 +37,9 @@ Los clientes que quieran desarrollar un entorno de titulares de tarjetas o un se
 
 Es importante entender que el estado de cumplimiento del DSS PCI para Azure, OneDrive para la Empresa y SharePoint Online no se traduce automáticamente en la certificación PCI DSS para los servicios que los clientes crean u hospedan en estas plataformas. Los clientes son responsables de garantizar que se logre cumplir con los requisitos del DSS PCI.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft en el ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
+- [Azure y Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Microsoft Cloud App Security
 - El servicio de nube de Flow como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Microsoft Graph
@@ -58,7 +58,7 @@ Es importante entender que el estado de cumplimiento del DSS PCI para Azure, One
 
 Cree e implemente la solución DSS PCI en la nube de forma más rápida con el Plano técnico de seguridad y cumplimiento de Azure para DSS PCI. Obtenga arquitecturas de referencia, instrucciones de implementación, asignaciones de control de implementación, scripts automatizados y mucho más. [Empezar a usar el Plano técnico de Azure para el DSS PCI](https://aka.ms/pciblueprint).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué dice la página de portada de la Atestación de Cumplimiento (AoC) "Junio de 2018"?**
 
@@ -72,9 +72,9 @@ El paquete Azure AoC tiene AoCs correspondientes a Azure público, Alemania y la
 
 El Estándar de seguridad de datos para las aplicaciones de pago (DSS PA) es un conjunto de requerimientos que cumplen con el DSS PCI, que reemplaza a las Mejores prácticas para las aplicaciones de pagos de Visa y consolida los requerimientos de cumplimiento de los otros emisores principales de tarjetas. El PA DSS ayuda a los proveedores de software a desarrollar aplicaciones de terceros que almacenan, procesan o transmiten datos de pago del titular de la tarjeta como parte de un proceso de autorización o liquidación de tarjeta. Los distribuidores deben usar aplicaciones certificadas con el DSS PA para lograr el cumplimiento eficaz de su DSS PCI. El PA DSS no es aplicable a Azure.
 
-**¿Qué es un adquiriente y Azure usa uno?**
+**¿Qué es un adquiriente? ¿Azure usa uno?**
 
-Un adquirente es un banco u otra entidad que procesa transacciones con tarjetas de pago. Azure no ofrece el procesamiento de tarjetas de pago como servicio y, por lo tanto, no usa una empresa adquirente.
+Un adquirente es un banco u otra entidad que procesa transacciones con tarjetas de pago. Azure no ofrece el procesamiento de tarjetas de pago como servicio y, por lo tanto, no usa adquirente.
 
 **¿A qué organizaciones y comerciantes se aplica el DSS PCI ?**
 
@@ -88,7 +88,7 @@ El cumplimiento implica varios factores, entre los que se incluyen la evaluació
 
 **¿Hay planes para que OneDrive para la Empresa y SharePoint Online sean compatibles con el DSS PCI fuera de Estados Unidos?**
 
-Actualmente OneDrive para la Empresa y SharePoint Online solo son compatibles con PCI DSS dentro de Estados Unidos (US). Microsoft evaluará los requisitos y plazos para las regiones fuera de Estados Unidos y ofrecerá actualizaciones en caso de que se agreguen otras regiones al plan de desarrollo.
+Actualmente, OneDrive para la Empresa y SharePoint Online solo son compatibles con PCI DSS dentro de Estados Unidos (US). Microsoft evaluará los requisitos y plazos para las regiones fuera de Estados Unidos, y ofrecerá actualizaciones en caso de que se agreguen otras regiones al plan de desarrollo.
 
 **¿Qué abarcan OneDrive para la Empresa y SharePoint Online?**
 
@@ -96,7 +96,7 @@ En la actualidad, solo los archivos y documentos cargados en OneDrive para la Em
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Usar el Administrador de cumplimiento de Microsoft para evaluar el riesgo
 
-[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Busque la plantilla en la página **plantillas de evaluación** en el Administrador de cumplimiento. Obtenga información sobre cómo [crear evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
+[El Administrador de cumplimiento de Microsoft](compliance-manager.md) es una característica en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de su organización en relación con el cumplimiento normativo y a tomar medidas para contribuir a reducir los riesgos. El Administrador de cumplimiento ofrece una plantilla premium para crear una evaluación de esta normativa. Puede encontrar la plantilla en la página **Plantillas de evaluación** , en el Administrador de cumplimiento. Obtenga información acerca de cómo [Compilar evaluaciones en el Administrador de cumplimiento](compliance-manager-assessments.md).
 
 ## <a name="resources"></a>Recursos
 
