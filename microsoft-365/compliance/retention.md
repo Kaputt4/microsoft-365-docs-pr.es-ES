@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920530"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073141"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -204,14 +204,7 @@ Solo se puede asignar una etiqueta de retención al contenido (como un correo el
     
 - Si hay varias reglas que asignan una etiqueta de aplicación automática y el contenido cumple las condiciones de varias reglas, se asignará la etiqueta de retención de la regla más antigua (según la fecha de creación).
     
-Para comprender cómo y por qué se aplica una etiqueta de retención en lugar de otra, es útil comprender la diferencia entre asignar explícitamente una etiqueta y asignar implícitamente una etiqueta:
-
-- Las etiquetas de retención aplicadas desde una directiva de etiqueta se asignan explícitamente
-- Las etiquetas de retención que se aplican automáticamente desde una directiva de aplicación automática se asignan implícitamente
-
-Una etiqueta de retención asignada explícitamente tiene prioridad sobre una etiqueta de retención asignada implícitamente. Para más información, consulte la sección [Los principios de la retención, ¿o qué tiene prioridad?](retention.md#the-principles-of-retention-or-what-takes-precedence)en esta página.
-
-Para SharePoint, las etiquetas de retención también se pueden asignar implícitamente al configurar una etiqueta predeterminada para todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint. En este escenario, una etiqueta de aplicación automática tiene prioridad sobre una etiqueta predeterminada. Si desea comprender todos los resultados cuando se usa una etiqueta predeterminada, vea la información de la sección [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set). 
+Si desea comprender todos los resultados cuando se usa una etiqueta predeterminada, vea la información de la sección [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
 #### <a name="monitoring-retention-labels"></a>Supervisar las etiquetas de retención
 

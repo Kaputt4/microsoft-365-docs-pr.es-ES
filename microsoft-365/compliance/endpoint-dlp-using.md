@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 6de6443dc0d276c862db43963ac28bd762e3756f
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 64cdfeab4b527dd3b84e7586d1419e5bf8b383df
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984924"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073109"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -31,7 +31,7 @@ Este artículo le guiará a través de tres escenarios donde puede crear y modif
 
 ## <a name="dlp-settings"></a>Configuración DLP
 
-Antes de empezar, configure las opciones de configuración DLP que se aplican a todas las directivas DLP para dispositivos. Debe configurarlas si tiene previsto crear directivas que cumplan con lo siguiente:
+Antes de empezar, configure las opciones de configuración DLP que se aplican a todas las directivas DLP para dispositivos. Debe configurarlas si quiere crear directivas que cumplan con lo siguiente:
 
 - restricciones de salida de la nube
 - restricciones de aplicaciones no permitidas
@@ -45,7 +45,7 @@ O bien
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
-Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DLP y aplicación de directivas DLP en sus dispositivos, ya sea porque tienen demasiado ruido o no contienen archivos que le interesan. Los archivos en esas ubicaciones no se auditarán y los archivos que se creen o modifiquen en esas ubicaciones no se someterán a la aplicación de directivas DLP. Puede configurar exclusiones de ruta en configuración DLP.
+Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DLP y aplicación de directivas DLP en los dispositivos, ya sea porque tienen demasiado ruido o no contienen archivos que le interesen. Los archivos en esas ubicaciones no se auditarán y los archivos que se creen o modifiquen en esas ubicaciones no se someterán a la aplicación de directivas DLP. Puede configurar exclusiones de ruta en configuración DLP.
 
 Puede usar esta lógica para crear sus rutas de exclusión:
 
@@ -73,7 +73,7 @@ Si el modo de lista está configurado en **Permitir** , los usuarios podrán car
 
 ### <a name="unallowed-apps"></a>Aplicaciones no permitidas
 
-Cuando la configuración de _ *Acceso por parte de aplicaciones y exploradores no permitidos* de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará, y los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
+Cuando la configuración de _ *Acceso por parte de aplicaciones y exploradores no permitidos* * de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará, y los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
 
 ### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
@@ -113,29 +113,29 @@ Para ayudarle a familiarizarse con las características de DLP de los puntos de 
 
 ### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Escenario 1: crear una directiva a partir de una plantilla, solo auditoría
 
-Estos escenarios requieren que ya tenga dispositivos incorporados y que presenten informes al Explorador de actividades. Si todavía no incorpora sus dispositivos, consulte [Introducción a la prevención de pérdida de datos de los puntos de conexión (versión preliminar)](endpoint-dlp-getting-started.md).
+Estos escenarios requieren que ya tenga dispositivos incorporados y que presenten informes al Explorador de actividades. [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md).
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
-2. Elija **Crear directiva (versión preliminar)**.
+2. Elija **Crear directiva**.
 
 3. Para este escenario, elija **Privacidad** , después **Datos de información de identificación personal (PII) de Estados Unidos** , y elija **Siguiente**.
 
-4. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos**. Elija **Siguiente**.
+4. Desactive el campo **Estado** para todas las ubicaciones, excepto para **Dispositivos**. A continuación, elija **Siguiente**.
 
 5. Acepte la selección predeterminada **Revisar y personalizar la configuración a partir de la plantilla** y elija **Siguiente**.
 
 6. Acepte los valores predeterminados **Acciones de protección** y elija **Siguiente**.
 
-7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. Elija **Siguiente**.
+7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. A continuación, elija **Siguiente**.
 
-8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. Elija **Siguiente**.
+8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. A continuación, elija **Siguiente**.
 
 9. Revise la configuración y elija **Enviar**.
 
 10. La nueva directiva DLP se mostrará en la lista de directivas.
 
-11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
+11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
 
 12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
 
@@ -147,7 +147,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 2. Elija la directiva **Datos de información de identificación personal (PII) de Estados Unidos** que creó en el escenario 1.
 
-3. Elija **editar directiva (versión preliminar)**.
+3. Elija **editar directiva**.
 
 4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
 
@@ -172,7 +172,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 2. Elija la directiva **Datos de información de identificación personal (PII) de Estados Unidos** que creó en el escenario 1.
 
-3. Elija **editar directiva (versión preliminar)**.
+3. Elija **editar directiva**.
 
 4. Vaya a la página **Reglas de DLP avanzadas** y edite el **Bajo volumen de contenido detectado en la información de identificación personal de Estados Unidos**.
 
@@ -198,8 +198,8 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 ## <a name="see-also"></a>Consulte también
 
-- [Obtenga más información sobre la prevención de pérdida de datos de los puntos de conexión (versión preliminar)](endpoint-dlp-learn-about.md)
-- [Introducción a la prevención de pérdida de datos de los puntos de conexión (versión preliminar)](endpoint-dlp-getting-started.md)
+- [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
+- [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)

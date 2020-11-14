@@ -8,35 +8,35 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e4065fc992305976a1309b05a473e15e1f03f09c
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304904"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070884"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Servicio de tratamiento de datos de solicitudes de interesados de Windows Enterprise para el RGPD y la CCPA 
 
 >[!NOTE]
->Este tema está dirigido a los participantes en el servicio de tratamiento de datos para el programa de vista previa de Windows Enterprise y requiere aceptar condiciones específicas de uso. Para obtener más información sobre el programa y aceptar las condiciones de uso, consulte [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
+>Este tema está dirigido a los participantes del servicio de tratamiento de datos del programa de vista previa de Windows Enterprise y requiere aceptar condiciones específicas de uso. Para saber más sobre el programa y aceptar las condiciones de uso, consulte [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Introducción a las solicitudes de los interesados (DSR) 
-El Reglamento General de Protección de Datos (RGPD) otorga derechos a las personas (denominadas _interesados_ en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (denominado _responsable de los datos_ o simplemente _responsable_). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina _Solicitud del interesado_ o DSR. 
+El Reglamento General de Protección de Datos (RGPD) otorga derechos a las personas (denominadas _interesados_ en el reglamento) para administrar los datos personales recopilados por una empresa u otro tipo de agencia u organización (denominado _responsable de los datos_ o simplemente _responsable_ ). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina _Solicitud del interesado_ o DSR. 
 
 De forma similar, la Ley de Privacidad del Consumidor de California (CCPA) proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los Derechos del interesado del RGPD, como el derecho a eliminar sus datos personales, obtener acceso a ellos y recibirlos (portabilidad). La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
 En esta guía se explica cómo usar los productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes que sean responsables de los datos a encontrar datos personales y actuar sobre ellos para responder a solicitudes de interesado. En concreto, esto abarca cómo encontrar datos personales hospedados en la nube de Microsoft, cómo tener acceso a ellos y cómo actuar en consecuencia. Este es un breve resumen de los procedimientos descritos en esta guía: 
 
-1. **Acceder**: recupere datos personales alojados en la nube de Microsoft y, si se le pide, realice una copia que puede estar a disposición del interesado. 
-2. **Eliminar**: eliminar de forma permanente los datos personales que residen en la nube de Microsoft. 
-3. **Exportar**: enviar una copia electrónica (en un formato legible) de datos personales al interesado. La información personal de acuerdo con la CCPA es cualquier información relacionada con una persona identificada o identificable.
+1. **Acceder** : recupere datos personales alojados en la nube de Microsoft y, si se le pide, realice una copia que puede estar a disposición del interesado. 
+2. **Eliminar** : eliminar de forma permanente los datos personales que residen en la nube de Microsoft. 
+3. **Exportar** : enviar una copia electrónica (en un formato legible) de datos personales al interesado. La información personal de acuerdo con la CCPA es cualquier información relacionada con una persona identificada o identificable.
 
 La información personal bajo la CCPA es cualquier información relacionada con una persona identificada o identificable. No hay distinción entre los roles privados, públicos o laborales de una persona. La definición del término "información personal" es, a grandes rasgos, similar a la que el RGPD da al término "datos personales". Sin embargo, la CCPA también incluye datos domésticos y familiares. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
@@ -52,9 +52,9 @@ En la siguiente lista, se proporcionan definiciones de términos relevantes para
 
 * _Encargado de los datos:_ una persona física o jurídica, una autoridad pública, una agencia u otro organismo que procesa datos personales en nombre del responsable. 
 
-* _Datos de cliente_: todos los datos, incluidos el software y todos los archivos de texto, sonido, vídeo o imagen, proporcionados a Microsoft por un cliente o en su representación mediante el uso del servicio empresarial. 
+* _Datos de cliente_ : todos los datos, incluidos el software y todos los archivos de texto, sonido, vídeo o imagen, proporcionados a Microsoft por un cliente o en su representación mediante el uso del servicio empresarial. 
 
-* _Datos de diagnóstico de Windows_: datos técnicos vitales de los dispositivos Windows sobre el dispositivo y sobre el funcionamiento de Windows y el software relacionado. Se usan para mantener Windows actualizado, seguro, fiable y con un buen rendimiento, y mejoran Windows mediante el análisis agregado del uso de Windows. Algunos ejemplos de datos de diagnóstico de Windows son el tipo de hardware que se usa, las aplicaciones que hay instaladas y el uso que se les da, y la información de confiabilidad sobre los controladores de dispositivos. Algunos componentes y aplicaciones de Windows se conectan directamente a servicios Microsoft, pero los datos que intercambian no son datos de diagnóstico de Windows. Por ejemplo, intercambiar la ubicación de un usuario para obtener la información local del tiempo o las noticias locales no es un ejemplo de datos de diagnóstico de Windows. 
+* _Datos de diagnóstico de Windows_ : datos técnicos vitales de los dispositivos Windows sobre el dispositivo y sobre el funcionamiento de Windows y el software relacionado. Se usan para mantener Windows actualizado, seguro, fiable y con un buen rendimiento, y mejoran Windows mediante el análisis agregado del uso de Windows. Algunos ejemplos de datos de diagnóstico de Windows son el tipo de hardware que se usa, las aplicaciones que hay instaladas y el uso que se les da, y la información de confiabilidad sobre los controladores de dispositivos. Algunos componentes y aplicaciones de Windows se conectan directamente a servicios Microsoft, pero los datos que intercambian no son datos de diagnóstico de Windows. Por ejemplo, intercambiar la ubicación de un usuario para obtener la información local del tiempo o las noticias locales no es un ejemplo de datos de diagnóstico de Windows. 
 
 ## <a name="how-to-use-this-guide"></a>Uso de esta guía 
 
