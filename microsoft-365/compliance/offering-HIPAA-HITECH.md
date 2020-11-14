@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6e0f8e2661692930469aff85e0a7eeef2dd647e0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: bdfb99531035054e0d6a27bc2c8b82c7f641ff2d
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948391"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071946"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -114,5 +114,5 @@ Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
-- [Ejemplo de HITRUST de Blueprint de Azure HIPAA](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+- [Ejemplo de HITRUST de Blueprint de Azure HIPAA](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust-9-2)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

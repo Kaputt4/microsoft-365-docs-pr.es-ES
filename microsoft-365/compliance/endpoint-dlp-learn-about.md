@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos de Microsoft 365 Endpoint amplía la supervisión de las actividades de archivo y las acciones de protección para estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 966e201acb8038d85f0d06c0800c9845fd79097e
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984934"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999473"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -97,6 +97,14 @@ Si incorporó dispositivos a través de [Protección contra amenazas avanzada de
 
 > [!NOTE]
 > DLP en punto de conexión evalúa los archivos de todos los tipos anteriores en la directiva de DLP y aplica las acciones de protección correspondientes. Todos los archivos que coinciden con una directiva de DLP se auditan para todas las acciones admitidas, aunque no estén bloqueados. Además, la actividad de archivos que se lleva a cabo en cualquier archivo Word, PowerPoint, Excel, PDF y .csv se audita de forma predeterminada, independientemente de si una directiva de DLP existe o coincide con estos archivos.
+
+Puede ver las alertas relacionadas con las directivas DLP ejecutadas en los dispositivos de punto de conexión si va al [Panel de administración de alertas de DLP](dlp-configure-view-alerts-policies.md).
+
+![Información de la alerta](../media/Alert-info-1.png)
+
+También puede ver los detalles del evento asociado con metadatos enriquecidos en el mismo panel
+
+![información del evento](../media/Event-info-1.png)
 
 Una vez que se incorpora un dispositivo, la información sobre las actividades auditadas fluye hacia el explorador de actividades incluso antes de configurar e implementar cualquier directiva de DLP que tenga dispositivos como ubicación.
 

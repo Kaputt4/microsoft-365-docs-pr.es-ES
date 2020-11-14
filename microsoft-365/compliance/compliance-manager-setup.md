@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y los roles de usuario de Microsoft Compliance Manager y configure las pruebas automatizadas de las acciones. Administrar el historial del usuario y filtrar la vista del panel.
-ms.openlocfilehash: 141ddc8ac371b1a36c69ee79b5438408f8da19e8
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791898"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072895"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
-**En este artículo:** Este artículo le ayudará a configurar el administrador de cumplimiento. Obtenga información sobre cómo **obtener acceso** al administrador de cumplimiento, **establecer roles y permisos** y configurar la **prueba automática de acciones de mejora** . Recorra el **panel del administrador de cumplimiento** y comprenda las páginas principales: la página acciones de mejora, la página soluciones, la página evaluaciones y la página plantillas de evaluación.
+**En este artículo:** Este artículo le ayudará a configurar el administrador de cumplimiento. Obtenga información sobre cómo **obtener acceso** al administrador de cumplimiento, **establecer roles y permisos** y configurar la **prueba automática de acciones de mejora**. Recorra el **panel del administrador de cumplimiento** y comprenda las páginas principales: la página acciones de mejora, la página soluciones, la página evaluaciones y la página plantillas de evaluación.
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede obtener acceso al administrador de cumplimiento
 
-El administrador de cumplimiento está disponible para las organizaciones con las licencias de Office 365 y Microsoft 365. La disponibilidad y las capacidades de administración de la evaluación dependen del contrato de licencia.  [Ver los detalles](https://go.microsoft.com/fwlink/?linkid=2132371)de la descripción del servicio.
+El administrador de cumplimiento está disponible para las organizaciones con las licencias de Office 365 y Microsoft 365 y para los clientes moderados de la nube de la comunidad de administración de Estados Unidos (GCC). La disponibilidad y las capacidades de administración de la evaluación dependen del contrato de licencia.  [Ver los detalles](https://go.microsoft.com/fwlink/?linkid=2132371)de la descripción del servicio.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -61,13 +61,13 @@ Para establecer permisos y asignar roles desde dentro del centro de cumplimiento
 
 4. En el panel flotante de ese grupo, seleccione **Editar** en el encabezado **miembros** .
 
-5. Seleccione **elegir miembros** . Aparecerá otra ventana de flotante.
+5. Seleccione **elegir miembros**. Aparecerá otra ventana de flotante.
 
 6. Seleccione **+ Agregar** para elegir uno o más usuarios para agregar al grupo.
 
 7. Active la casilla de verificación situada junto a los nombres que desea agregar y, a continuación, seleccione el botón **Agregar** en la parte inferior.
 
-8. Cuando termine de asignar usuarios, seleccione **listo** , seleccione **Guardar** y, después, **cerrar** .
+8. Cuando termine de asignar usuarios, seleccione **listo** , seleccione **Guardar** y, después, **cerrar**.
 
 ##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Más información sobre el centro de cumplimiento de & de Office 365 secruity
 
@@ -110,7 +110,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 1. Seleccione **configuración** en la navegación izquierda desde cualquier lugar del [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
-2. En la página Configuración, seleccione **Administrador de cumplimiento** .
+2. En la página Configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **prueba automatizada** desde el panel de navegación izquierdo.
 
@@ -132,7 +132,7 @@ La configuración del historial del usuario también le permite reasignar todas 
 
 1. Seleccione configuración en la navegación izquierda desde cualquier lugar del [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
-2. En la página Configuración, seleccione **Administrador de cumplimiento** .
+2. En la página Configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **administrar el historial del usuario** desde el panel de navegación izquierdo.
 
@@ -150,13 +150,13 @@ El informe refleja el estado de la acción de mejora a partir de su fecha de cre
 
 1. Seleccione **configuración** en la navegación izquierda desde cualquier lugar del [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
-2. En la página Configuración, seleccione **Administrador de cumplimiento** .
+2. En la página Configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **administrar el historial del usuario** en la navegación de la izquierda.
 
 4. Busque el usuario deseado en la lista de direcciones de correo electrónico o seleccione **Buscar** y escriba la dirección de correo electrónico del usuario.
 
-5. En el menú desplegable **seleccionar** , elija **exportar Informe** .
+5. En el menú desplegable **seleccionar** , elija **exportar Informe**.
 
 6. Una vez que se haya generado el archivo de Excel del informe, puede abrirlo y guardarlo en el equipo local.
 
@@ -168,19 +168,19 @@ Puede reasignar acciones de mejora de un usuario a otro. Cuando se reasigna una 
 
 1. Seleccione **configuración** en la navegación izquierda desde cualquier lugar del [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
-2. En la página Configuración, seleccione **Administrador de cumplimiento** .
+2. En la página Configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **administrar el historial del usuario** en la navegación de la izquierda.
 
 4. Busque un usuario en la lista de direcciones de correo electrónico o seleccione **Buscar** y escriba la dirección de correo electrónico del usuario.
 
-5. En el menú desplegable **seleccionar** , elija **reasignar acciones de mejora** . Aparecerá el panel flotante **acciones de mejora** para volver a asignar.
+5. En el menú desplegable **seleccionar** , elija **reasignar acciones de mejora**. Aparecerá el panel flotante **acciones de mejora** para volver a asignar.
 
 6. En el campo **Buscar usuarios** , escriba el nombre o la dirección de correo electrónico del usuario *al* que desea asignar las acciones de mejora.
 
-7. Cuando vea el nombre del usuario previsto en acciones de **mejora se asignará a** , seleccione el usuario y, a continuación, seleccione **asignar acciones** .
+7. Cuando vea el nombre del usuario previsto en acciones de **mejora se asignará a** , seleccione el usuario y, a continuación, seleccione **asignar acciones**.
 
-8. Una vez completada la reasignación, verá un mensaje de confirmación en el panel de flotante en el que se confirma que se han reasignado todas las acciones de mejora del usuario anterior al nuevo usuario. Si recibe un aviso de error de reasignación, cierre la ventana y vuelva a intentarlo. Para cerrar el panel de flotante, seleccione **listo** .
+8. Una vez completada la reasignación, verá un mensaje de confirmación en el panel de flotante en el que se confirma que se han reasignado todas las acciones de mejora del usuario anterior al nuevo usuario. Si recibe un aviso de error de reasignación, cierre la ventana y vuelva a intentarlo. Para cerrar el panel de flotante, seleccione **listo**.
 
 El nuevo encargado recibe un correo electrónico que se le ha asignado a una acción de mejora. El correo electrónico contiene un vínculo directo en la página de detalles de la acción de mejora.
  
@@ -195,15 +195,15 @@ Para eliminar el historial de un usuario, siga los pasos que se indican a contin
 
 1. Seleccione **configuración** en la navegación izquierda desde cualquier lugar del [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
 
-2. En la página Configuración, seleccione **Administrador de cumplimiento** .
+2. En la página Configuración, seleccione **Administrador de cumplimiento**.
 
 3. Seleccione **administrar el historial del usuario** en la navegación de la izquierda.
 
 4. Busque un usuario en la lista de direcciones de correo electrónico o seleccione **Buscar** y escriba la dirección de correo electrónico del usuario.
 
-5. En el menú desplegable **seleccionar** , elija **eliminar historial** .
+5. En el menú desplegable **seleccionar** , elija **eliminar historial**.
 
-6. Aparecerá una ventana en la que se le pedirá que confirme la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **eliminar historial** . Para salir sin eliminar el historial, seleccione **Cancelar** .
+6. Aparecerá una ventana en la que se le pedirá que confirme la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **eliminar historial**. Para salir sin eliminar el historial, seleccione **Cancelar**.
 
 7. Volverá a la página **administrar historial de usuarios** con un mensaje de confirmación en la parte superior en el que se eliminó el historial del usuario.
 
@@ -243,14 +243,14 @@ Puede filtrar la vista del panel para ver solo los elementos relacionados con no
 Para aplicar filtros:
 
 1. Seleccione **filtrar** en la parte superior derecha del panel.
-2. Seleccione los criterios de filtro en el panel desplegable **filtros** y, después, seleccione **aplicar** .
+2. Seleccione los criterios de filtro en el panel desplegable **filtros** y, después, seleccione **aplicar**.
 
 Después de aplicar un filtro, verá su puntuación ajustada en tiempo real. El porcentaje de puntuación de cumplimiento e información desglosada, y las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si cierre sesión en el administrador de cumplimiento, la vista filtrada permanecerá cuando vuelva a iniciar sesión.
 
 Para quitar filtros:
 
 - En el encabezado de **filtros aplicados** encima de la puntuación de cumplimiento, seleccione la **X** junto al filtro individual que quiera quitar; o
-- Seleccione **filtrar** en la parte superior derecha del panel y, a continuación, en el panel flotante de **filtros** , seleccione **Borrar filtros** .
+- Seleccione **filtrar** en la parte superior derecha del panel y, a continuación, en el panel flotante de **filtros** , seleccione **Borrar filtros**.
 
 ## <a name="improvement-actions-page"></a>Página acciones de mejora
 
@@ -264,7 +264,7 @@ La página acciones de mejora muestra todas las acciones de mejora que administr
 
 Si tiene una larga lista de acciones en la página acciones de mejora, puede resultar útil filtrar la vista. Seleccione **filtro** en la esquina superior derecha de la lista acciones. Cuando aparezca el panel desplegable **filtros** , seleccione los criterios en función de las regulaciones y los estándares, la solución y el grupo. También puede personalizar la vista seleccionando **Grupo** en la esquina superior derecha. En el menú desplegable, seleccione Ver por grupo, solución, categoría, tipo de acción o estado.
 
-La vista predeterminada de esta página no muestra acciones de mejora con el estado de prueba **aprobado** . Para ver las acciones que han superado la prueba, active la casilla **aprobado** en el panel flotante de filtros. Solo acciones con un estado de prueba de recuento **aprobado** hacia su calificación. Algunas acciones pueden mostrar una **etiqueta de actualización pendiente.** Obtenga más información sobre [las actualizaciones de las acciones de mejora](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
+La vista predeterminada de esta página no muestra acciones de mejora con el estado de prueba **aprobado**. Para ver las acciones que han superado la prueba, active la casilla **aprobado** en el panel flotante de filtros. Solo acciones con un estado de prueba de recuento **aprobado** hacia su calificación. Algunas acciones pueden mostrar una **etiqueta de actualización pendiente.** Obtenga más información sobre [las actualizaciones de las acciones de mejora](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 La página acciones de mejora muestra los siguientes puntos de datos para cada acción de mejora:
 
@@ -312,7 +312,7 @@ Hay dos formas de realizar acciones en esta pantalla:
 
 1. En la fila de la solución deseada, en la columna **acciones restantes** , seleccione el número de hipervínculo. Verá una vista filtrada de la pantalla acciones de mejora que muestra acciones de mejora no probadas para dicha solución.
 
-2. En la fila de la solución deseada, en la columna **Abrir solución** , seleccione **abrir** . Verá la solución o la ubicación en los centros de seguridad y cumplimiento de Microsoft 365 y Office 365 donde puede llevar a cabo la acción recomendada.
+2. En la fila de la solución deseada, en la columna **Abrir solución** , seleccione **abrir**. Verá la solución o la ubicación en los centros de seguridad y cumplimiento de Microsoft 365 y Office 365 donde puede llevar a cabo la acción recomendada.
 
 ## <a name="assessments-page"></a>Página evaluaciones
 

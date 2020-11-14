@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1523e80f187cd7df6d8e44b91b85c39608e2f49c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6eb8bf91f5af60658686066b75b33b7a8dabe6bc
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416494"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070874"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorador de contenido de administración de riesgos de Insider
 
-El explorador de contenido de administración de riesgos de Insider permite a los usuarios que tengan asignado el rol de **investigadores de administración de riesgos de Insider** examinar el contexto y los detalles de las comunicaciones capturadas en alertas. Para todas las alertas, las copias de los datos y los archivos de mensajes se archivan como instantánea en el tiempo de los elementos, a la vez que mantienen los archivos y mensajes originales en los orígenes de almacenamiento. La copia de datos y mensajes es transparente para el usuario asociado a la alerta y para el propietario del contenido. La configuración de permisos y los derechos de acceso de los datos se mantienen para el contenido y los mensajes copiados, y los analistas de riesgos y investigadores necesitan estos permisos y derechos si necesitan abrir y ver los archivos. A cada archivo y mensaje se le asigna automáticamente un identificador de archivo único en el caso de administración de riesgos de Insider con fines de administración. Los documentos asociados con actividades de indicador de dispositivo no se incluyen en el explorador de contenido.
+El explorador de contenido de administración de riesgos de Insider permite a los usuarios que tengan asignado el rol de *investigadores de administración de riesgos de Insider* examinar el contexto y los detalles de contenido asociado a la actividad en las alertas. Para todas las alertas que se confirman en un caso, las copias de los datos y los archivos de mensajes se archivan como instantánea en el tiempo de los elementos, a la vez que mantienen los archivos y los mensajes originales en los orígenes de almacenamiento. La copia de datos y mensajes es transparente para el usuario asociado a la alerta y para el propietario del contenido. Si el contenido incluye permisos de Information Rights Management, estos permisos se mantienen para el contenido que se ha copiado y los usuarios a los que se les ha asignado el rol de *investigadores de administración de riesgos de Insider* necesitarán estos permisos y derechos si necesitan abrir y ver los archivos. A cada archivo y mensaje se les asigna automáticamente un identificador de archivo único en el caso de administración de riesgos de Insider con fines de administración. Los documentos asociados con actividades de indicador de dispositivo no se incluyen en el explorador de contenido.
 
 ![Explorador de contenido de administración de riesgos de Insider](../media/insider-risk-content-explorer.png)
 
@@ -44,7 +44,7 @@ Para agregar o quitar encabezados de columna de la cola de contenido, use el con
 | **Tema dominante** | Tema dominante como se calcula para el análisis. |
 | **IDENTIFICADOR de conjunto de correo electrónico** | IDENTIFICADOR de grupo para todos los mensajes en el mismo conjunto de correo electrónico. |
 | **IDENTIFICADOR de familia** | ID de familia agrupa todos los elementos; para el correo electrónico, esta columna incluye el mensaje y todos los datos adjuntos; para los documentos, esta columna incluye el documento y los elementos incrustados. |
-| **Clase File** | Para contenido de SharePoint y OneDrive: **documento**; para contenido de Exchange: * * correo electrónico o **datos adjuntos**. |
+| **Clase File** | Para contenido de SharePoint y OneDrive: **documento** ; para contenido de Exchange: * * correo electrónico o **datos adjuntos**. |
 | **IDENTIFICADOR de archivo** | Identificador del documento único en el caso. |
 | **Icono de tipo de archivo** | La extensión de un archivo; por ejemplo, docx, One, pptx o XLSX. Este campo es la misma propiedad que la propiedad de sitio FileExtension. |
 | **Id.** | Identificador GUID del archivo. |
@@ -65,7 +65,7 @@ Para agregar o quitar encabezados de columna de la cola de contenido, use el con
 | **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico. |
 | **Asunto/título** | Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se ha explicado anteriormente, la propiedad title es metadatos especificados en los documentos de Microsoft Office. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de OR. |
 | **Lista de temas** | Lista de temas tal y como se calcula para el análisis. |
-| **Título** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
+| **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
 | **To** | El destinatario de un mensaje de correo electrónico en el campo para. |
 
 ## <a name="advanced-search-conditions"></a>Condiciones de búsqueda avanzadas
@@ -127,7 +127,7 @@ En la tabla siguiente se enumeran las condiciones de propiedad de mensaje de cor
 | **Participante** | Todos los campos de personas en un mensaje de correo electrónico. Estos campos son de, para, CC y CCO. |
 | **Received** | La fecha en la que un destinatario recibió un mensaje de correo electrónico. |
 | **Dominios de destinatarios** | Lista de todos los dominios de los destinatarios de un mensaje. |
-| **Sender** | Campo de remitente (de) para los tipos de mensaje.  Format es **displayName \<SmtpAddress> **. |
+| **Sender** | Campo de remitente (de) para los tipos de mensaje.  Format es **displayName \<SmtpAddress>**. |
 | **Dominio del remitente** | Dominio del remitente. |
 | **Asunto** | El texto en la línea de asunto de un mensaje de correo electrónico.  <br/> **Nota:** Cuando se usa la propiedad Subject en una consulta, la búsqueda devuelve todos los mensajes en los que la línea de asunto contiene el texto que se está buscando. En otras palabras, la consulta no devuelve solo los mensajes que tienen una coincidencia exacta. Por ejemplo, si busca `subject:"Quarterly Financials"` , los resultados incluirán los mensajes con el asunto "Quarterly financials 2018". |
 | **To** | El campo Para de un mensaje de correo electrónico. |
@@ -148,7 +148,7 @@ En la siguiente tabla se enumeran las condiciones de propiedad de documentos dis
 | **Custodian** | Nombre del custodio al que estaba asociado el elemento. |
 | **Tema dominante** | Tema dominante como se calcula para el análisis. |
 | **IDENTIFICADOR de familia** | ID de familia agrupa todos los elementos; para el correo electrónico, este campo incluye el mensaje y todos los datos adjuntos; para los documentos, este campo incluye el documento y los elementos incrustados. |
-| **Clase File** | Para contenido de SharePoint y OneDrive: **documento**; para contenido de Exchange: * * correo electrónico o **datos adjuntos**. |
+| **Clase File** | Para contenido de SharePoint y OneDrive: **documento** ; para contenido de Exchange: * * correo electrónico o **datos adjuntos**. |
 | **Tipos de archivo** | La extensión de un archivo; por ejemplo, docx, One, pptx o XLSX. |
 | **Tiene un participante abogado** | True cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es false. |
 | **Identificador inmutable** | Identificador inmutable tal y como se almacena en Office 365. |
@@ -170,6 +170,6 @@ En la siguiente tabla se enumeran las condiciones de propiedad de documentos dis
 | **IDENTIFICADOR representativo** | Identificador numérico de cada conjunto de duplicados exactos. |
 | **Tags** | Etiquetas aplicadas en un conjunto de revisión. |
 | **Lista de temas** | Lista de temas tal y como se calcula para el análisis. |
-| **Título** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
+| **Title** | El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento. |
 | **Se corrigió** | True si el elemento se ha corregido; en caso contrario, false. |
 | **Conteo de palabras** | Número de palabras en un archivo. |

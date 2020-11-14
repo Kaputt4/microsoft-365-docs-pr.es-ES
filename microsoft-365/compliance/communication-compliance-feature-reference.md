@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cb1afe0d8983943b83661880b4b41a6138703ad
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: e8ce5a144c7361cd483a903dc3e287a4a51a508b
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930213"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073077"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -58,7 +58,7 @@ En función de cómo desee administrar las directivas y alertas de comunicación
 
 Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
 
-|**Rol**|**Permisos de funciones**|
+|**Grupo de funciones**|**Permisos de grupo de roles**|
 |:-----|:-----|
 | **Cumplimiento de la comunicación** | Use este grupo de roles para administrar el cumplimiento de la comunicación de su organización en un único grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un único grupo. Este grupo de roles contiene todos los roles de permisos de cumplimiento de comunicaciones. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes. |
 | **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y posteriormente para separar los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver los mensajes de alerta. |
@@ -241,7 +241,7 @@ La protección de la privacidad de los usuarios que tienen coincidencias de dire
 
 Para los usuarios con una coincidencia de cumplimiento de la comunicación, puede elegir una de las siguientes opciones en **configuración de cumplimiento** de la comunicación:
 
-- **Mostrar anonimizan versiones de** los nombres de usuario: los nombres de usuario son anonimizan para evitar que los administradores, analistas, investigadores de datos y revisores vean a quién está asociado con las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. La información de Perfil de usuario en los detalles de alerta de cumplimiento de comunicaciones no estará disponible cuando se seleccione esta opción. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si elige desactivar esta opción, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
+- **Mostrar anonimizan versiones de** los nombres de usuario: los nombres de usuario se anonimizan para evitar que los usuarios del grupo de funciones *Analista de cumplimiento de comunicaciones* puedan ver quién está asociado a las alertas de directiva. Los usuarios del grupo de funciones de *investigador de cumplimiento de comunicaciones* siempre verán los nombres de usuario, no las versiones de anonimizan. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. La información de Perfil de usuario en los detalles de alerta de cumplimiento de comunicaciones no estará disponible cuando se seleccione esta opción. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si elige desactivar esta opción, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
 - **No mostrar anonimizan versiones de nombres de** usuario: los nombres de usuario se muestran en todas las coincidencias de directivas actuales y pasadas para las alertas de cumplimiento de comunicaciones. La información del perfil de usuario (el nombre, el cargo, el alias y la organización o departamento) se muestra al usuario para todas las alertas de cumplimiento de comunicación.
 
 ## <a name="notice-templates"></a>Plantillas de aviso

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791812"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072939"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791812"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novedades: la versión de disponibilidad general del administrador de cumplimiento
 
-Actualmente, el administrador de cumplimiento está disponible (GA) como una solución de administración de cumplimiento de un extremo a otro dentro del [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md). Con esta versión, el administrador de cumplimiento completa la transición desde su ubicación anterior en el portal de confianza de servicios de Microsoft.
+Actualmente, el administrador de cumplimiento está disponible (GA) como una solución de administración de cumplimiento de un extremo a otro dentro del [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md). Con esta versión, el administrador de cumplimiento completa la transición desde su ubicación anterior en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento ahora también está disponible para los clientes moderados de la comunidad de administración de Estados Unidos (GCC).
 
 Lo que comenzó a medida que la versión preliminar pública de la puntuación de cumplimiento ha evolucionado a una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de disponibilidad general ofrece una mayor colección de evaluaciones predefinidas para ayudarle a escalar las actividades de cumplimiento.
 

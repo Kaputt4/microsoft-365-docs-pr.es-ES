@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del administrador de cumplimiento para ayudarle en el recorrido de la comprensión, la configuración y el uso del administrador de cumplimiento.
-ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791796"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071978"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
@@ -43,6 +43,7 @@ La [Página de introducción al administrador de cumplimiento](compliance-manage
 - [Filtrar la vista del panel](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Obtener información sobre las acciones de mejora](compliance-manager-setup.md#improvement-actions-page)
 - [Descripción de las evaluaciones](compliance-manager.md#assessments)
+- [Realizar un análisis rápido del entorno mediante el administrador de configuración de cumplimiento de Microsoft](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Rampa en marcha: configurar el administrador de cumplimiento para administrar las actividades de cumplimiento
 

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f4cd713abdda0eba20e0b783ff89653ae02efb72
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: b9d7655377b1bb5ff4810fd469efd092bd7a5f67
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464090"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072929"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -65,7 +65,7 @@ En función de cómo desee administrar las directivas y alertas de comunicación
 
 Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
 
-|**Rol**|**Permisos de funciones**|
+| Función | Permisos de funciones |
 |:-----|:-----|
 | **Cumplimiento de la comunicación** | Use este grupo de roles para administrar el cumplimiento de la comunicación de su organización en un único grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un único grupo. Este grupo de roles contiene todos los roles de permisos de cumplimiento de comunicaciones. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes. |
 | **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y posteriormente para separar los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver los mensajes de alerta. |
@@ -85,7 +85,7 @@ Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la
 
 5. Seleccione **Agregar** y, a continuación, marque la casilla para todos los usuarios que quiera agregar al grupo de funciones *cumplimiento de comunicaciones* .
 
-6. Seleccione **Agregar**y haga clic en **listo**.
+6. Seleccione **Agregar** y haga clic en **listo**.
 
 7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **cerrar** para completar los pasos
 
@@ -103,7 +103,7 @@ Use esta opción para asignar usuarios a grupos de roles específicos para segme
 
 5. Seleccione **Agregar** y, a continuación, marque la casilla de verificación para todos los usuarios que desee agregar al grupo de roles.
 
-6. Seleccione **Agregar**y haga clic en **listo**.
+6. Seleccione **Agregar** y haga clic en **listo**.
 
 7. Seleccione **Guardar** para agregar los usuarios al grupo de roles.
 
@@ -125,10 +125,10 @@ Para obtener instrucciones paso a paso para activar la auditoría, vea [activar 
 
 Use el siguiente gráfico para ayudarle a configurar los grupos de su organización para las directivas de cumplimiento de comunicaciones:
 
-| **Miembro de la Directiva** | **Grupos admitidos** | **Grupos no admitidos** |
+| Miembro de la Directiva | Grupos admitidos | Grupos no admitidos |
 |:-----|:-----|:-----|
-|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos |
-| Reviewers | None | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
+|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
+| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
   
 Cuando se asigna un grupo de distribución en la Directiva, la Directiva supervisa todos los correos electrónicos y chats de cada usuario en el grupo de distribución. Cuando se asigna un grupo de Microsoft 365 en la Directiva, la Directiva supervisa todos los correos electrónicos y los chats de equipo enviados a ese grupo, no los correos electrónicos y chats individuales recibidos por cada miembro del grupo.
 
@@ -140,11 +140,11 @@ Si es una organización con una implementación local de Exchange o un proveedor
 Para obtener más información acerca de la configuración de grupos, vea:
 
 - [Crear y administrar grupos de distribución](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Información general de los grupos de 365 de Microsoft](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Información general de los grupos de 365 de Microsoft](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Paso 4 (opcional): comprobar que el inquilino de Yammer está en modo nativo
 
-En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online. El inquilino de Yammer debe estar en modo nativo para que las directivas de cumplimiento de comunicaciones analicen e identifiquen conversaciones peligrosas en mensajes privados y conversaciones de la comunidad en Yammer.
+En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (Azure AD), todos los grupos son grupos de Office 365 y todos los archivos se almacenan en SharePoint Online. El inquilino de Yammer debe estar en modo nativo para que las directivas de cumplimiento de comunicaciones analicen e identifiquen conversaciones peligrosas en mensajes privados y conversaciones de la comunidad en Yammer.
 
 Para obtener más información acerca de la configuración de Yammer en modo nativo, consulte:
 
@@ -167,25 +167,36 @@ Para obtener más información acerca de la configuración de Yammer en modo nat
     Si elige una plantilla de directiva para crear una directiva, deberá:
 
     - Confirme o actualice el nombre de la Directiva. Los nombres de las directivas no se pueden cambiar una vez creada la Directiva.
+    
     - Elija los usuarios o grupos que desea supervisar, incluida la elección de los usuarios o grupos que quiera excluir.
+    
     - Elija los revisores para la Directiva. Los revisores son usuarios individuales y todos los revisores deben tener buzones hospedados en Exchange Online. Los revisores agregados aquí son los revisores que puede elegir al escalar una alerta en el flujo de trabajo de investigación y corrección. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la Directiva y proporciona vínculos a la información sobre el proceso de revisión.
+    
     - Elija un campo de condición limitada, normalmente un tipo de información confidencial o un diccionario de palabras clave que se aplicará a la Directiva.
 
     Si decide usar el Asistente para directivas para crear una directiva personalizada, deberá:
 
     - Asigne un nombre y una descripción a la Directiva. Los nombres de las directivas no se pueden cambiar una vez creada la Directiva.
+    
     - Elija los usuarios o grupos que desea supervisar, incluidos todos los usuarios de la organización, usuarios y grupos específicos, u otros usuarios y grupos que quiera excluir.
+    
     - Elija los revisores para la Directiva. Los revisores son usuarios individuales y todos los revisores deben tener buzones hospedados en Exchange Online. Los revisores agregados aquí son los revisores que puede elegir al escalar una alerta en el flujo de trabajo de investigación y corrección. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la Directiva y proporciona vínculos a la información sobre el proceso de revisión.
+    
     - Elija los canales de comunicación para analizar, incluidos Exchange, Microsoft Teams, Yammer o Skype empresarial. También elige analizar los orígenes de terceros si ha configurado un conector en Microsoft 365.
+    
     - Elija la dirección de comunicación que se va a supervisar, incluidas las comunicaciones entrantes, salientes o internas.
+    
     - Definir las [condiciones](communication-compliance-feature-reference.md#ConditionalSettings)de la Directiva de cumplimiento de comunicaciones. Puede elegir entre la dirección del mensaje, la palabra clave, los tipos de archivo y las condiciones de coincidencia de tamaño.
+    
     - Elija si le gustaría incluir tipos de información confidencial. En este paso puede seleccionar los tipos de información confidencial predeterminada y personalizado. Elija entre los tipos de información confidencial existentes o los diccionarios de palabras clave personalizados en el Asistente para la Directiva de cumplimiento de comunicaciones. Puede crear estos elementos antes de ejecutar el asistente si es necesario. También puede crear nuevos tipos de información confidencial desde el Asistente para directivas de cumplimiento de comunicaciones.
-    - Elija si le gustaría habilitar los clasificadores. Los clasificadores pueden detectar lenguaje e imágenes inapropiados que se envían o reciben en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *amenaza*, *blasfemia*, *acoso dirigido*, *imágenes para adultos*, imágenes de *racy*e imágenes de *Gory*.
+    
+    - Elija si le gustaría habilitar los clasificadores. Los clasificadores pueden detectar lenguaje e imágenes inapropiados que se envían o reciben en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *amenaza* , *blasfemia* , *acoso dirigido* , *imágenes para adultos* , imágenes de *racy* e imágenes de *Gory*.
 
-    >[!CAUTION]
-    >Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar en su lugar los clasificadores integrados **Threats**, **blasfemias**y los de **acoso específicos** .
+      > [!CAUTION]
+      > Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar en su lugar los clasificadores integrados **Threats** , **blasfemias** y los de **acoso específicos** .
 
     - Definir el porcentaje de comunicaciones que se van a revisar.
+    
     - Revise las selecciones de la Directiva y cree la Directiva.
 
 5. Seleccione **crear Directiva** al usar las plantillas o **Enviar** cuando se use el Asistente para directivas personalizadas.
@@ -206,7 +217,7 @@ También puede optar por habilitar anonymization para los nombres de usuario mos
 
 4. Para habilitar anonymization, seleccione **Mostrar anonimizan versiones de los nombres de usuario**.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 6. Vaya a la ficha **plantillas de notificación** y, a continuación, seleccione **Crear plantilla de notificación**.
 
@@ -227,17 +238,18 @@ Después de crear una directiva de cumplimiento de comunicaciones, es una buena 
 Siga estos pasos para probar la Directiva de cumplimiento de la comunicación:
 
 1. Abra un cliente de correo electrónico, Microsoft Teams o Yammer mientras ha iniciado sesión como un usuario supervisado definido en la Directiva que desea probar.
+
 2. Envíe un correo electrónico, un chat de Microsoft Teams o un mensaje de Yammer que cumpla los criterios que haya definido en la Directiva de cumplimiento de la comunicación. Esta prueba puede ser una palabra clave, el tamaño de los datos adjuntos, el dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la Directiva es demasiado restrictiva o demasiado flexible.
 
     > [!NOTE]
-    > Las comunicaciones en todos los canales de origen pueden tardar hasta 24 horas en procesarse completamente en una directiva.
+    > Los mensajes de correo electrónico pueden tardar hasta 24 horas en procesarse por completo en una directiva. Las comunicaciones de Microsoft Teams, Yammer y las plataformas de terceros pueden tardar hasta 48 horas en procesarse completamente en una directiva.
 
 3. Inicie sesión en Microsoft 365 como revisor designado en la Directiva de cumplimiento de la comunicación. Navegue a **Communication compliance**  >  **alertas** de cumplimiento de comunicaciones para ver las alertas de las directivas.
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta se haya resuelto correctamente.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-Una vez que haya completado estos pasos para crear su primera Directiva de cumplimiento de comunicaciones, empezará a recibir alertas de los indicadores de actividad después de unas 24 horas. Configure directivas adicionales según sea necesario siguiendo las instrucciones del paso 5 de este artículo.
+Una vez que haya completado estos pasos para crear su primera Directiva de cumplimiento de comunicaciones, empezará a recibir alertas de los indicadores de actividad tras 24-48 horas. Configure directivas adicionales según sea necesario siguiendo las instrucciones del paso 5 de este artículo.
 
 Para obtener más información sobre cómo investigar las alertas de cumplimiento de comunicaciones, consulte [investigar y corregir las alertas de cumplimiento de comunicaciones](communication-compliance-investigate-remediate.md).

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 7edea0d36c85fba7bda31effdcdff08cd59a1174
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390190"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002434"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -42,13 +42,13 @@ Solo puede crear un modelo de procesamiento de formularios en las bibliotecas de
 
 ## <a name="step-1-create-a-form-processing-model"></a>Paso 1: crear un modelo de procesamiento de formularios
 
-El primer paso para crear un modelo de procesamiento de formularios es asignarle un nombre, crear la definición, crear el nuevo tipo de contenido y crear una nueva vista de la biblioteca de documentos.
+El primer paso para crear un modelo de procesamiento de formularios es asignarle un nombre, crear la definición, crear el nuevo tipo de contenido y crear una nueva vista de la biblioteca de documentos para este.
 
-1. En la biblioteca de documentos, seleccione el menú **Automatizar**, seleccione **AI Builder** y, después elija **Crear un modelo de procesamiento de formularios**.
+1. En la biblioteca de documentos, seleccione el menú **Automatizar** , seleccione **AI Builder** y, después elija **Crear un modelo de procesamiento de formularios**.
 
     ![Crear un modelo](../media/content-understanding/create-ai-builder-model.png)</br>
 
-2. En el panel **Nuevo modelo de procesamiento de formularios**, en el campo **Nombre**, escriba el nombre del modelo (por ejemplo, *Pedidos de compra*).
+2. En el panel **Nuevo modelo de procesamiento de formularios** , en el campo **Nombre** , escriba el nombre del modelo (por ejemplo, *Pedidos de compra* ).
 
     ![Nuevo modelo de procesamiento de formularios](../media/content-understanding/new-form-model.png)</br> 
 
@@ -69,7 +69,7 @@ Después de crear el nuevo modelo de procesamiento de formularios, el explorador
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
-1. Seleccione **Agregar documentos** para comenzar a agregar documentos de ejemplo analizados para determinar los pares de valores nombrados que se pueden extraer. A continuación, puede elegir **Cargar desde almacenamiento local**, **SharePoint** o **Azure Blob Storage**. Debe usar al menos cinco archivos para el entrenamiento.
+1. Seleccione **Agregar documentos** para comenzar a agregar documentos de ejemplo analizados para determinar los pares de valores nombrados que se pueden extraer. A continuación, puede elegir **Cargar desde almacenamiento local** , **SharePoint** o **Azure Blob Storage**. Debe usar al menos cinco archivos para el entrenamiento.
 
 2. Después de agregar archivos, seleccione **Analizar** para comprobar si hay información común en todos los archivos. Esta acción puede tardar varios minutos en completarse.</br> 
  
@@ -87,7 +87,7 @@ Después de analizar los documentos para los campos, puede ver los campos que en
 
     ![Página seleccionar campos](../media/content-understanding/select-fields-page.png)</br> 
 
-2. Seleccione los campos que quiere guardar y marque la casilla para confirmar la selección. Por ejemplo, en el modelo de pedido de compra, elija para seleccionar los campos *Fecha*, *OC*, y *Total*.  Tenga en cuenta que también puede elegir cambiar el nombre de un campo. </br>
+2. Seleccione los campos que quiere guardar y marque la casilla para confirmar la selección. Por ejemplo, en el modelo de pedido de compra, elija para seleccionar los campos *Fecha* , *OC* , y *Total*.  Tenga en cuenta que también puede elegir cambiar el nombre de un campo. </br>
 
     ![Seleccionar OC#](../media/content-understanding/po.png)</br> 
 
@@ -97,25 +97,25 @@ Después de analizar los documentos para los campos, puede ver los campos que en
  
     ![Confirmar campos después de seleccionar campos](../media/content-understanding/confirm-fields.png)</br> 
  
-5. La página **Seleccionar los campos de formulario que quiere guardar**, muestra el número de campos que ha seleccionado. Seleccione **Listo**.
+5. La página **Seleccionar los campos de formulario que quiere guardar** , muestra el número de campos que ha seleccionado. Seleccione **Listo**.
 
 ## <a name="step-4-train-and-test-your-model"></a>Paso 4: entrenar y probar el modelo
 
 Después de seleccionar los campos que quiere guardar, la página **Resumen del modelo** le permite entrenar y probar el modelo.
 
-1. En la página **Resumen del modelo**, los campos guardados se mostrarán en la sección **Seleccionar campos**. Seleccione **Entrenar** para comenzar el entrenamiento en sus archivos de ejemplo. Tenga en cuenta que esta acción puede tardar unos minutos en completarse.</br>
+1. En la página **Resumen del modelo** , los campos guardados se mostrarán en la sección **Seleccionar campos**. Seleccione **Entrenar** para comenzar el entrenamiento en sus archivos de ejemplo. Tenga en cuenta que esta acción puede tardar unos minutos en completarse.</br>
 
      ![Seleccionar campos de entrenamiento](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Cuando vea la notificación de que el entrenamiento ha finalizado, seleccione **Ir a la página de detalles**. 
 
-3. En la página **Detalles del modelo**, puede elegir probar el funcionamiento del modelo seleccionando **Prueba rápida**. Esto le permite arrastrar y soltar archivos a la página y ver si se detectan los campos.
+3. En la página **Detalles del modelo** , puede elegir probar el funcionamiento del modelo seleccionando **Prueba rápida**. Esto le permite arrastrar y soltar archivos a la página y ver si se detectan los campos.
 
     ![Confirmar campos](../media/content-understanding/select-fields-train.png)</br> 
 
 2. Cuando vea la notificación de que el entrenamiento ha finalizado, seleccione **Ir a la página de detalles**. 
 
-3. En la página **Detalles del modelo**, elija probar cómo funciona el modelo seleccionando **Prueba rápida**. Esto le permite arrastrar y soltar archivos a la página y ver si se detectan los campos.
+3. En la página **Detalles del modelo** , elija probar cómo funciona el modelo seleccionando **Prueba rápida**. Esto le permite arrastrar y soltar archivos a la página y ver si se detectan los campos.
 
 ## <a name="step-5-publish-your-model"></a>Paso 5: publicar el modelo
 

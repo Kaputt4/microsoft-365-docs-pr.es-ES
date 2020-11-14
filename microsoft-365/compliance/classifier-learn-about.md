@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 7abfbe101508d24e58464ff38b14ab87447001f0
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d26e33efea09c2afb33c2b5e5ade264cb8bfaee6
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379307"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072949"
 ---
 # <a name="learn-about-classifiers-preview"></a>Obtener información sobre los clasificadores (versión preliminar)
 
@@ -68,10 +68,10 @@ Las etiquetas de confidencialidad pueden usar clasificadores como condiciones, v
 Microsoft 365 incluye cinco clasificadores preparados previamente:
 
 > [!CAUTION]
-> Estamos dejando de usar el clasificador preentrenado por **idioma ofensivo** porque ha producido un gran número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar en su lugar los clasificadores de **amenazas**, **blasfemias**y **acoso** previamente entrenados.
+> Estamos dejando de usar el clasificador preentrenado por **idioma ofensivo** porque ha producido un gran número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar en su lugar los clasificadores de **amenazas** , **blasfemias** y **acoso** previamente entrenados.
 
-- **Currículos**: detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
-- **Código de origen**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación usados del equipo en github
+- **Currículos** : detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
+- **Código de origen** : detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación usados del equipo en github
     - Código
     - C
     - C#
@@ -99,11 +99,11 @@ Microsoft 365 incluye cinco clasificadores preparados previamente:
 > [!NOTE]
 > El código fuente está entrenado para detectar cuando la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
 
-- **Acosar**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con la conducta ofensiva dirigida a uno o varios individuos en función de los siguientes rasgos: raza, étnico, religión, origen nacional, sexo, orientación sexual, edad, discapacidad
-- **Blasfemias**: detecta una categoría específica de elementos de texto de lenguaje ofensivo que contiene expresiones que avergonzan a la mayoría de las personas
-- **Amenaza**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para confirmar violencia o daño físico o daño a una persona o propiedad
+- **Acosar** : detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con la conducta ofensiva dirigida a uno o varios individuos en función de los siguientes rasgos: raza, étnico, religión, origen nacional, sexo, orientación sexual, edad, discapacidad
+- **Blasfemias** : detecta una categoría específica de elementos de texto de lenguaje ofensivo que contiene expresiones que avergonzan a la mayoría de las personas
+- **Amenaza** : detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para confirmar violencia o daño físico o daño a una persona o propiedad
 
-Estos aparecen en la vista clasificación de datos del **centro de cumplimiento de Microsoft 365**  >  **(versión preliminar)**  >  vista de**clasificadores** que tienen el estado de `Ready to use` .
+Estos aparecen en la vista clasificación de datos del **centro de cumplimiento de Microsoft 365**  >  **(versión preliminar)**  >  vista de **clasificadores** que tienen el estado de `Ready to use` .
 
 ![Clasificadores: preexperto: clasificadores](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -113,9 +113,6 @@ Estos aparecen en la vista clasificación de datos del **centro de cumplimiento 
 ### <a name="custom-classifiers"></a>Clasificadores personalizados
 
 Cuando los clasificadores preparados de antemano no satisfagan sus necesidades, puede crear y entrenar sus propios clasificadores. Hay mucho más trabajo en lo que se refiere a la creación de los suyos, pero estarán más adaptados a las necesidades de su organización.
-
-> [!IMPORTANT]
-> De forma predeterminada, solo el usuario que crea un clasificador personalizado puede entrenar y revisar las predicciones realizadas por ese clasificador. Si desea que otros usuarios puedan entrenar y revisar las predicciones del clasificador, consulte [conceder a otros entrenar y revisar derechos](classifier-get-started-with.md#give-others-train-and-review-rights).
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>Flujo de proceso para crear clasificadores personalizados
 
