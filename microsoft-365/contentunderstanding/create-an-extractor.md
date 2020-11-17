@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338654"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087468"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -25,7 +26,7 @@ ms.locfileid: "48338654"
 
 </br> 
 
-Antes o después de crear un modelo de clasificación para automatizar la identificación y la clasificación de tipos de documentos específicos, puede optar por agregar extractores a su modelo para extraer información específica de estos documentos. Por ejemplo, es posible que desee que su modelo no sólo identifique todos los documentos de *Renovación de contrato* agregados a su biblioteca de documentos, sino que también muestre la *Fecha inicial del servicio*de cada documento como un valor de columna en la biblioteca de documentos.
+Antes o después de crear un modelo de clasificación para automatizar la identificación y la clasificación de tipos de documentos específicos, puede optar por agregar extractores a su modelo para extraer información específica de estos documentos. Por ejemplo, es posible que desee que su modelo no sólo identifique todos los documentos de *Renovación de contrato* agregados a su biblioteca de documentos, sino que también muestre la *Fecha inicial del servicio* de cada documento como un valor de columna en la biblioteca de documentos.
 
 Es necesario crear un extractor para cada entidad del documento que se desea extraer. En nuestro ejemplo, queremos extraer la  **Fecha inicial del servicio**  para cada  **Renovación de contrato**  de contrato identificado por el modelo. Queremos tener la posibilidad de tener una visión en la biblioteca de documentos de todos los documentos de  **Renovación de contratos** , con una columna que muestre el valor de la fecha de **Inicio del servicio** de cada documento. 
 
@@ -82,7 +83,7 @@ Para crear explicaciones para elementos como las fechas, es más fácil [utiliza
 
 Para la muestra de la *Fecha de inicio del servicio*, es más eficiente usar la explicación pre generada para *Fecha* en la biblioteca de explicaciones:
 
-1. En la sección de **Explicación**, seleccione **Nuevo**, y luego seleccione**Desde la biblioteca de explicaciones**.
+1. En la sección de **Explicación**, seleccione **Nuevo**, y luego seleccione **Desde la biblioteca de explicaciones**.
 2. En la biblioteca de explicación, seleccione **Fecha**. Puede ver todas las variaciones de fecha que son reconocidas
 3. Seleccione **Agregar**.</br>
 

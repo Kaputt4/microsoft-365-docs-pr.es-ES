@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295531"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087084"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)
 
@@ -217,7 +217,7 @@ Muestra la vibración UDP medida, que debe ser inferior a **30ms**.
 
 Se prueba la conectividad HTTP desde la ubicación de la oficina del usuario hasta todos los puntos de conexión de red de Microsoft 365 necesarios. Se publican en [https://aka.ms/o365ip](https://aka.ms/o365ip) . Se muestra un conocimiento de red para cualquier punto de conexión de red necesario al que no se pueda conectar.
 
-La conectividad de Ay será bloqueada por un servidor proxy, un firewall u otro dispositivo de seguridad de red en el perímetro de red de la empresa o en uso como proxy en la nube.
+La conectividad puede estar bloqueada por un servidor proxy, un firewall u otro dispositivo de seguridad de red en el perímetro de la red de la empresa. La conectividad con el puerto TCP 80 se prueba con una solicitud HTTP y la conectividad con el puerto TCP 443 se comprueba con una solicitud HTTPS. Si no hay respuesta, el FQDN se marca como un error. Si hay un código de respuesta HTTP 407, el FQDN se marca como un error. Si hay un código de respuesta HTTP 403, se comprueba el atributo de servidor de la respuesta y si parece ser un servidor proxy que se marca como un error. Puede simular las pruebas que realizamos con la herramienta de línea de comandos de Windows curl.exe.
 
 Probamos el certificado SSL en cada punto de conexión de red de Microsoft 365 necesario que se encuentra en la categoría optimizar o permitir como se define en [https://aka.ms/o365ip](https://aka.ms/o365ip) . Si alguna de las pruebas no encuentra un certificado SSL de Microsoft, la red cifrada conectada debe haber sido interceptada por un dispositivo de red intermediario. Se muestra un conocimiento de red en cualquier punto de conexión de red cifrado interceptado.
 
@@ -239,7 +239,7 @@ Esto muestra los problemas de salud significativos con la red global de Microsof
 
 ![Estado de mantenimiento de la red](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>Preguntas frecuentes
+## <a name="faq"></a>Preguntas más frecuentes
 
 Estas son las respuestas a algunas de las preguntas más frecuentes.
 

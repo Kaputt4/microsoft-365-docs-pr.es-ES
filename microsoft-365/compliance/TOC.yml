@@ -914,6 +914,8 @@
           href: compliance-manager-improvement-actions.md
         - name: Cómo se calcula su puntuación de cumplimiento
           href: compliance-score-calculation.md
+        - name: Herramienta de análisis de configuración de cumplimiento
+          href: compliance-manager-mcca.md
         - name: Preguntas más frecuentes (P+F)
           href: compliance-manager-faq.md
         - name: Administrador de cumplimiento (clásico)

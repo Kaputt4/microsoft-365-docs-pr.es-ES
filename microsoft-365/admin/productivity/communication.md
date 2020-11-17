@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la puntuación de la experiencia comunicación-personas.
-ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804660"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123456"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
@@ -57,8 +57,8 @@ Microsoft 365 proporciona a los usuarios la flexibilidad necesaria para ajustar 
 3. **Visualización del estado actual:**
     - Barra horizontal donde la parte azul representa el porcentaje expresado en el encabezado
     - Resalta el (numerador/denominador) que se usa para calcular el porcentaje expresado en el encabezado:
-      - **Numerador** : n.º de personas que usan más de un modo de comunicación en los últimos 28 días
-      - **Denominador** : n.º de personas marcadas como habilitadas para más de un producto de comunicación en los últimos 28 días
+      - **Numerador**: n.º de personas que usan más de un modo de comunicación en los últimos 28 días
+      - **Denominador**: n.º de personas marcadas como habilitadas para más de un producto de comunicación en los últimos 28 días
     - El valor de **Referencia del mismo nivel** de la métrica clave también se muestra como un porcentaje.
 
 1. **Ver recursos de comunicación:** Haga clic aquí para incluir todo el contenido de soporte en forma de vídeos/artículos relacionados con la comunicación. Desde estos, puede navegar a la lista de reproducción personalizada para comunicarse y, posteriormente, para todas las categorías de puntuación de productividad.
@@ -67,7 +67,7 @@ Microsoft 365 proporciona a los usuarios la flexibilidad necesaria para ajustar 
 
  Este gráfico proporciona la tendencia del numerador de la métrica clave en el conocimiento principal, es decir, el número de personas que usan más de un modo de comunicación durante los últimos 180 días. Aquí, el valor Daily es un agregado del número de personas que usan varias formas de comunicación en los últimos 28 días.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Información principal sobre los modos de comunicación.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Gráfico que muestra el número de personas que usan más de un modo para comunicarse frente a tiempo.":::
 
 ### <a name="scoring-model"></a>Modelo de resultados
 
@@ -79,17 +79,17 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 
 ### <a name="breakdown-of-communication-by-modes"></a>Desglose de la comunicación por modos
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="Información principal sobre los modos de comunicación.":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Desglose de los modos de comunicación]":::
 
 1. **Encabezado:** Destaca el objetivo de la visión para proporcionar un desglose detallado de los distintos modos de comunicación que se consideran en la comunicación.
 2. **Cuerpo:** Proporciona información sobre el valor de usar distintos modos de uso compartido de conocimientos.
 3. **Visualización:** El desglose representa el UES para cada modo. La parte coloreada y la fracción en cada barra representan el número de personas que envían mensajes de correo electrónico, mensajes o publicaciones de la comunidad como un porcentaje del número de personas habilitadas para ese modo:
       - **Personas que envían correos electrónicos:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Exchange que envían mensajes de correo electrónico. Esta fracción se construye a partir de:
-          - **Numerador** : personas que envían mensajes de correo electrónico en los últimos 28 días
-          - **Denominador** : personas habilitadas para Exchange en los últimos 28 días
+          - **Numerador**: personas que envían mensajes de correo electrónico en los últimos 28 días
+          - **Denominador**: personas habilitadas para Exchange en los últimos 28 días
       - **Personas que envían mensajes en Microsoft Teams:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Microsoft teams que envían mensajes. Esta fracción se construye a partir de:
-          - **Numerador** : personas que envían mensajes en Microsoft Teams en los últimos 28 días
-          - **Denominador** : personas habilitadas para Microsoft Teams en los últimos 28 días
+          - **Numerador**: personas que envían mensajes en Microsoft Teams en los últimos 28 días
+          - **Denominador**: personas habilitadas para Microsoft Teams en los últimos 28 días
       - **Publicación de personas en las comunidades:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Yammer que se publican en comunidades. Esta fracción se construye a partir de:
           - **Numerador:** Publicaciones de personas en comunidades de Yammer en los últimos 28 días
           - **Denominador:** Personas habilitadas para Yammer en los últimos 28 días
@@ -97,15 +97,15 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 
 ### <a name="mentions-in-emails"></a>@mentions en los correos electrónicos
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="Información principal sobre los modos de comunicación.":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="! [Correos electrónicos con menciones.]":::
 
 1. **Encabezado:** Resalta el aumento de la tasa de respuesta para nuevos subprocesos de correo electrónico iniciados en los últimos 28 días cuando contienen @mentions
 2. **Cuerpo:** Proporciona información sobre el valor de usar @mentions en los correos electrónicos. Además, las personas que usan @mentions se expresan como un porcentaje de todos los usuarios que han enviado un correo electrónico en los últimos 28 días.
 3. **Visualización:** Desglosa la tasa de respuesta de los nuevos subprocesos de correo electrónico en función de si @mentions o no:
-      - **Respuestas a correos electrónicos con @mentions:** La parte coloreada y la fracción representan la tasa de respuesta para los nuevos hilos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
+      - **Respuestas a correos electrónicos con \@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta para nuevos hilos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
           - **Numerador:** Nuevos subprocesos de correo electrónico que contienen @mentions que se han iniciado y que también recibieron una respuesta en los últimos 28 días.
           - **Denominador:** Nuevos subprocesos de correo electrónico que contienen @mentions que se iniciaron en los últimos 28 días
-      - **Respuestas a correos electrónicos sin @mentions:** La parte coloreada y la fracción representan la tasa de respuesta para los nuevos hilos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
+      - **Respuestas a correos electrónicos sin \@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta para nuevos hilos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
           - **Numerador:** Nuevos subprocesos de correo electrónico que no contienen @mentions, que se han iniciado y que también recibieron una respuesta en los últimos 28 días.
           - **Denominador:** Nuevos subprocesos de correo electrónico que no contienen @mentions que se iniciaron en los últimos 28 días.
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de la ayuda relacionada.
@@ -113,7 +113,7 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Desglose de mensajes por tipo en Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="Información principal sobre los modos de comunicación.":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Tipos de mensajes de Teams]":::
 
 1. **Encabezado:** Resalta las personas que enviaron los mensajes de canal como un porcentaje de las personas que enviaron cualquier tipo de mensaje (incluidos los mensajes de chat y de canal) en los últimos 28 días.
 2. **Cuerpo:** Proporciona información sobre el valor del uso de mensajes de canal en Microsoft Teams
@@ -128,7 +128,7 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 
 ### <a name="questions-and-answers-in-yammer"></a>Preguntas y respuestas en Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="Información principal sobre los modos de comunicación.":::
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Preguntas y respuestas en Yammer]":::
 
 1. **Encabezado:** Destaca las publicaciones marcadas como preguntas en Yammer que han recibido una respuesta marcada como &quot; la mejor respuesta &quot; como porcentaje de todas las publicaciones que se han marcado como preguntas en Yammer en los últimos 28 días.
 2. **Cuerpo:** Proporciona información sobre el valor de la utilización de preguntas y respuestas en Yammer para compartir conocimientos.
@@ -158,7 +158,7 @@ En esta sección se proporcionan detalles a nivel de usuario de las actividades 
 - **Días expuestos en Yammer:** Número de días que el usuario publicó en Yammer en los últimos 28 días.
 - **Días usados @mention en el correo electrónico:** Número de días que el usuario envió un correo electrónico que contiene un @mention en los últimos 28 días.
 
-También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo exportar **botón** exportar. Tenga en cuenta que puede personalizar el conjunto de columnas de la vista seleccionando las columnas requeridas después de hacer clic en **elegir columnas** .
+También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo exportar **botón** exportar. Tenga en cuenta que puede personalizar el conjunto de columnas de la vista seleccionando las columnas requeridas después de hacer clic en **elegir columnas**.
 
 ## <a name="related-content"></a>Contenido relacionado
 

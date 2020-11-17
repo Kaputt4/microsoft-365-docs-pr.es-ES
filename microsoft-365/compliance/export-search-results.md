@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3703216c28a5122f163e646942d3fac651e0ef29
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920324"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087337"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -92,12 +92,12 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 4. En la página **búsqueda de contenido** , seleccione una búsqueda. 
   
-5. En el panel de detalles, en **Exportar resultados a un equipo** , haga clic en **Iniciar la exportación**.
+5. En el panel de detalles, en **Exportar resultados a un equipo**, haga clic en **Iniciar la exportación**.
   
     > [!NOTE]
     > Si los resultados de una búsqueda son de hace más de 7 días, se le solicitará que actualice los resultados de búsqueda. Si esto ocurre, cancele la exportación, haga clic en **Actualizar los resultados de búsqueda** en el panel de detalles para la búsqueda seleccionada y, a continuación, inicie la exportación de nuevo después de que se actualicen los resultados.  
   
-6. En la página **exportar los resultados de búsqueda** , en **Opciones de salida** , elija una de las siguientes opciones:
+6. En la página **exportar los resultados de búsqueda** , en **Opciones de salida**, elija una de las siguientes opciones:
   
     - Todos los elementos, excluidos los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos
   
@@ -107,11 +107,11 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
     Vea la sección [más información](#more-information) para obtener una descripción de cómo se exportan los elementos indizados parcialmente. Para obtener más información acerca de los elementos parcialmente indizados, vea [elementos parcialmente indizados en la búsqueda de contenido](partially-indexed-items-in-content-search.md).
   
-7. En **exportar contenido de Exchange como** , elija una de las siguientes opciones:
+7. En **exportar contenido de Exchange como**, elija una de las siguientes opciones:
   
     - **Un archivo pst para cada buzón de correo:** Exporta un archivo PST para cada buzón de usuario que contiene resultados de búsqueda. Los resultados del buzón de archivo del usuario se incluyen en el mismo archivo PST. Esta opción reproduce la estructura de carpetas del buzón de correo de origen.
   
-    - **Un archivo pst que contiene todos los mensajes:** Exporta un solo archivo PST (denominado *Exchange. pst* ) que contiene los resultados de búsqueda de todos los buzones de origen incluidos en la búsqueda. Esta opción reproduce la estructura de carpetas del buzón para cada mensaje.
+    - **Un archivo pst que contiene todos los mensajes:** Exporta un solo archivo PST (denominado *Exchange. pst*) que contiene los resultados de búsqueda de todos los buzones de origen incluidos en la búsqueda. Esta opción reproduce la estructura de carpetas del buzón para cada mensaje.
   
     - **Un archivo pst que contenga todos los mensajes en una sola carpeta:** Exporta los resultados de la búsqueda a un único archivo PST donde todos los mensajes se encuentran en una sola carpeta de nivel superior. Esta opción permite a los revisores revisar los elementos en orden cronológico (los elementos se ordenan por fecha de envío) sin tener que navegar por la estructura de carpetas del buzón original para cada elemento.
   
@@ -128,9 +128,9 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 10. Haga clic en la casilla **exportar archivos en una carpeta comprimida (en zip)** para exportar los resultados de la búsqueda a carpetas comprimidas. Esta opción solo está disponible cuando elige exportar elementos de Exchange como mensajes individuales y cuando los resultados de la búsqueda incluyen documentos de SharePoint o de OneDrive. Esta opción se usa principalmente para evitar el límite de caracteres de 260 en los nombres de ruta de acceso de los archivos de Windows cuando se exportan elementos. Consulte los "nombres de archivo de los elementos exportados" en la sección [más información](#more-information) . 
   
-11. Haga clic en **Iniciar la exportación**.
-  
-    Los resultados de la búsqueda se preparan para la descarga, lo que significa que se cargan en la ubicación de almacenamiento de Azure en la nube de Microsoft. Cuando los resultados de búsqueda están listos para la descarga, el vínculo **Descargar resultados exportados** se muestra en **Exportar resultados a un equipo** en el panel de detalles. 
+11. Haga clic en **Iniciar la exportación**. Los resultados de la búsqueda se preparan para la descarga, lo que significa que se cargan en una ubicación de almacenamiento de Azure en la nube de Microsoft. Esto podría llevar varios minutos.
+
+Consulte la sección siguiente para obtener instrucciones para descargar los resultados de la búsqueda exportados.
   
 ## <a name="step-2-download-the-search-results"></a>Paso 2: Descargar los resultados de búsqueda
 
@@ -138,34 +138,23 @@ El siguiente paso es descargar los resultados de la búsqueda desde la ubicació
   
 Como se ha explicado anteriormente, puede aumentar la velocidad de descarga configurando una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. En el panel de detalles de la búsqueda para la que inició la exportación, en **Exportar resultados a un equipo** , haga clic en **Descargar resultados exportados**.
+1. En la página **búsqueda de contenido** , haga clic en la pestaña **exportaciones** . 
   
-    La ventana **Descargar resultados exportados** se muestra y contiene la siguiente información sobre los resultados de la búsqueda que se descargarán en el equipo. 
+   Puede que tenga que hacer clic en **Actualizar** para actualizar la lista de trabajos de exportación para que muestre el trabajo de exportación que ha creado. Los trabajos de exportación tienen el mismo nombre que la búsqueda correspondiente con **_Export** anexado al nombre de búsqueda.
   
-    - El número de elementos que se descargarán.
-  
-    - El tamaño total estimado de los elementos que se descargarán.
-  
-    - Si los elementos indexados o sin indexar se exportarán. Los elementos sin indexar son elementos que tienen un formato reconocido, están cifrados o no se indizaron por otros motivos. Para obtener más información, consulte [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
-  
-    - Si se descargarán las versiones de los documentos de SharePoint.
-  
-    - El estado del proceso de preparación de la exportación. Puede iniciar la descarga de los resultados de búsqueda incluso si la preparación de los datos no está completa.
-  
-2. En **Clave de exportación** , haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 5 para descargar los resultados de la búsqueda.
-  
-    > [!NOTE]
-    > Dado que cualquier persona puede instalar e iniciar la herramienta de exportación de exhibición de documentos electrónicos y después usar esta clave para descargar los resultados de búsqueda, asegúrese de tomar precauciones para proteger esta clave como protegería las contraseñas u otra información relacionada con la seguridad. 
-  
-3. Haga clic en **Descargar resultados**.
+2. Seleccione el trabajo de exportación que creó en el paso 1.
 
-4. Si se le pide que instale la **herramienta de exportación de exhibición** de documentos electrónicos, haga clic en **instalar**.
+3. En la página flotante, en **clave de exportación**, haga clic en **copiar al portapapeles**. Esta clave se usa en el paso 6 para descargar los resultados de la búsqueda.
+  
+4. Haga clic en **Descargar resultados**.
 
-5. En la **herramienta de exportación de exhibición** de documentos electrónicos, haga lo siguiente:
+5. Si se le pide que instale la **herramienta de exportación de exhibición** de documentos electrónicos, haga clic en **instalar**.
+
+6. En la **herramienta de exportación de exhibición** de documentos electrónicos, haga lo siguiente:
 
    ![Herramienta de exportación de exhibición de documentos electrónicos](../media/eDiscoveryExportTool.png)
 
-   1. Pegue la clave de exportación que ha copiado en el paso 2 en el cuadro correspondiente.
+   1. Pegue la clave de exportación que ha copiado en el paso 3 en el cuadro correspondiente.
   
    2. Haga clic en **Examinar** para especificar la ubicación en la que desea descargar los archivos de los resultados de la búsqueda.
   
@@ -268,7 +257,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
 
     Además, tenga en cuenta que en el ejemplo anterior (cuando se exportan elementos indizados y indizados parcialmente, o se exportan solo elementos indexados), el informe de **Resumen de exportación** incluido en los resultados de la búsqueda exportados mostraría 1.000 elementos estimados y 1.000 elementos descargados por las mismas razones que anteriormente se describió. 
 
-- Si la búsqueda desde la que está exportando resultados es una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de su organización, solo se exportarán las ubicaciones de contenido de los elementos parciales que contienen elementos que coinciden con los criterios de búsqueda. Es decir, si no se encuentran resultados de búsqueda en un buzón de correo o en un sitio, no se exportarán los elementos parcialmente indizados de ese buzón o sitio. El motivo es que exportar los elementos parcialmente indizados de muchos lugares de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo que se tarda en exportar y descargar los resultados de la búsqueda.
+- Si la búsqueda desde la que está exportando resultados es una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de su organización, solo se exportarán los elementos parciales de las ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. Es decir, si no se encuentran resultados de búsqueda en un buzón de correo o en un sitio, no se exportarán los elementos parcialmente indizados de ese buzón o sitio. El motivo es que exportar los elementos parcialmente indizados de muchos lugares de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo que se tarda en exportar y descargar los resultados de la búsqueda.
 
     Para exportar elementos parcialmente indizados de todas las ubicaciones de contenido de una búsqueda, configure la búsqueda para devolver todos los elementos (quitando las palabras clave de la consulta de búsqueda) y, a continuación, exporte solo los elementos parcialmente indizados cuando exporte los resultados de la búsqueda.
 

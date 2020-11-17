@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumen: Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell.'
-ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754321"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087032"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell
 
@@ -56,7 +56,7 @@ Antes de poder administrar todo Microsoft 365 desde una sola instancia de Window
     
   - Windows Server 2008 R2 SP1*
     
-    \* Debe instalar Microsoft .NET Framework 4.5. *x* y, después, Windows Management Framework 3.0 o 4.0. Para obtener más información, vea [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
+    \* Debe instalar Microsoft .NET Framework 4.5.*x* y, después, Windows Management Framework 3.0 o 4.0. Para obtener más información, vea [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7).
     
     Debe usar una versión de 64 bits de Windows para cumplir los requisitos del módulo Skype Empresarial Online y uno de los módulos de Microsoft 365.
     
@@ -68,7 +68,7 @@ Antes de poder administrar todo Microsoft 365 desde una sola instancia de Window
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Descripción de PowerShell para Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  PowerShell debe configurarse para ejecutar scripts firmados en Skype empresarial Online y en el Centro de seguridad &amp; cumplimiento. Ejecutar el siguiente comando en una sesión de PowerShell con privilegios elevados (una sesión de PowerShell que se abre seleccionando **Ejecutar como administrador** ).
+-  PowerShell debe configurarse para ejecutar scripts firmados en Skype empresarial Online y en el Centro de seguridad &amp; cumplimiento. Ejecutar el siguiente comando en una sesión de PowerShell con privilegios elevados (una sesión de PowerShell que se abre seleccionando **Ejecutar como administrador**).
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -76,7 +76,7 @@ Antes de poder administrar todo Microsoft 365 desde una sola instancia de Window
 
 ## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online y Centro de seguridad &amp; cumplimiento con el módulo de Exchange Online PowerShell V2
 
-Los procedimientos en este artículo utilizan el módulo PowerShell V2 de Exchange Online para conectarse tanto a Exchange Online como al Centro de seguridad &amp; cumplimiento. Pero actualmente no puede conectarse a ambos *en la misma ventana de PowerShell* . Así que tiene que elegir conectarse a uno u otro cuando configura una ventana de PowerShell para varios servicios de Microsoft 365.
+Los procedimientos en este artículo utilizan el módulo PowerShell V2 de Exchange Online para conectarse tanto a Exchange Online como al Centro de seguridad &amp; cumplimiento. Pero actualmente no puede conectarse a ambos *en la misma ventana de PowerShell*. Así que tiene que elegir conectarse a uno u otro cuando configura una ventana de PowerShell para varios servicios de Microsoft 365.
 
 ## <a name="connection-steps-when-using-just-a-password"></a>Pasos de conexión al usar solo una contraseña
 
@@ -109,7 +109,7 @@ Siga estos pasos para conectarse a todos los servicios en una única ventana de 
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
 5. Ejecute estos comandos para conectarse a Skype empresarial online. Se mostrará una advertencia sobre cómo aumentar el valor `WSMan NetworkDelayms` la primera vez que se conecte. Omítalo.
@@ -152,7 +152,7 @@ Siga estos pasos para conectarse a todos los servicios en una única ventana de 
    ```
   
    > [!Note]
-   > Para conectarse a nubes de Microsoft Teams que no sean *mundiales* , consulte [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > Para conectarse a nubes de Microsoft Teams que no sean *mundiales*, consulte [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell para el módulo de Graph

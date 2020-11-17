@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804737"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123494"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -88,7 +88,7 @@ Para ver la puntuación de productividad de su organización, debe tener uno de 
 - Lector global 
 - Lector de informes 
 
-Puede tener acceso a la experiencia desde la Página principal de administración de Microsoft 365 en **Reports**  >  **score score** .
+Puede tener acceso a la experiencia desde la Página principal de administración de Microsoft 365 en **Reports**  >  **score score**.
 
 ## <a name="interpreting-productivity-score"></a>Interpretación de la puntuación de productividad 
 

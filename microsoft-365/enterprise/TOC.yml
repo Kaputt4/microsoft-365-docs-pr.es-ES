@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: "Project Server\_2010"
               href: project-server-2010-end-of-support.md
-- name: Seguridad
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: Cumplimiento
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: Seguridad
+  href: ../security/index.yml
 - name: Servicios en la nube
   items:
     - name: Guía básica
@@ -564,7 +564,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: Recursos de la comunidad de PowerShell
           href: microsoft-365-powershell-community-resources.md
-    - name: 'Administrar cuentas de usuario, licencias y grupos con PowerShell'
+    - name: 'Administrar cuentas de usuario, contraseñas, licencias y grupos con PowerShell'
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: Cuentas de usuario
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: Bloquear
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: Contraseñas
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: Licencias y servicios
           items:
             - name: Ver licencias y servicios
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Grupos
           items:
+            - name: Administración de grupos de seguridad
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: Mantener la pertenencia al grupo de seguridad
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Administrar grupos de Microsoft 365
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: Resumen de seguridad
       href: contoso-security-summary.md
-- name: Cumplimiento de Microsoft 365
-  href: ../compliance/index.yml
-- name: Seguridad de Microsoft 365
-  href: ../security/index.yml
 - name: Arquitectura y soluciones de Microsoft 365
   href: ../solutions/index.yml
 - name: Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube

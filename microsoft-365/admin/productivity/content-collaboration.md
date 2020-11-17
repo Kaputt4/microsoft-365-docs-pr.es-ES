@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la colaboración del contenido-los usuarios experimentan una puntuación de productividad.
-ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 99f5a897dc372a45be31a8c01379c6fe4c980de9
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999433"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123457"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
-La puntuación de productividad ayuda a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas que las admiten. La puntuación refleja el rendimiento de su organización&#39;s para personas y experiencias tecnológicas y compara su puntuación con organizaciones como la suya. La colaboración de contenido es una de las medidas que caen en la experiencia de personas. Consulte la  [información general sobre la puntuación de productividad](productivity-score.md).
+La puntuación de productividad ayuda a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas que las admiten. La puntuación refleja el rendimiento de su organización&#39;s para personas y experiencias tecnológicas y compara su puntuación con organizaciones como la suya. La colaboración de contenido es una de las medidas que caen en la experiencia de personas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md).
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Por qué la organización&#39;s puntuación de colaboración de contenido es importante
 
@@ -140,11 +140,11 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
         - Denominador: número total de personas que han tenido acceso a OneDrive o SharePoint para al menos 1 de los últimos 28 días.
 4. **Vínculo a recursos:** Seleccione este vínculo para ver el contenido de la ayuda.
 
-### <a name="intensity-of-files-collaborated-on"></a>Intensidad de los archivos colabored en
+### <a name="number-of-files-collaborated-on"></a>Número de archivos cocolaborados en
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Gráfico que muestra el número de archivos en los que se ha colaborado más.":::
 
-1. **Encabezado:** Esto resalta el porcentaje de personas que tienen acceso a OneDrive o SharePoint y que colaboran en 4 o más archivos.
+1. **Encabezado:** Esto resalta el porcentaje de personas que tienen acceso a OneDrive o SharePoint y colaboran en 4 o más archivos.
 2. **Cuerpo:** Esto proporciona información sobre cómo los usuarios pueden aprovechar los archivos en línea para una mejor colaboración.
 3. **Visualización:** Esto muestra una distribución de las personas que tienen acceso a OneDrive o SharePoint, en función del número de archivos en los que colaboran. Esto se muestra en las siguientes 4 categorías (para cada uno, la parte azul de la barra y la fracción representan el porcentaje de personas que tienen acceso a OneDrive o SharePoint que se incluyen en dicha categoría):
       - **Sin colaboración:**
@@ -169,11 +169,11 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 1. **Encabezado:** Resalta el porcentaje de dispositivos que se han probado en todas las pruebas que tienen una conexión de red deficiente con OneDrive y SharePoint. 
 2. **Cuerpo:** Proporciona información sobre por qué es importante el rendimiento de conexión de red para la colaboración. 
 3. **Visualización:** muestra un porcentaje de dispositivos con diferentes niveles de rendimiento de conectividad de red con respecto a OneDrive y SharePoint:
-      - **80-100 (mejor)** : la parte oscura de color verde (de color) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
-      - **60-80** : la parte verde (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
-      - **40-60** : la parte naranja (de color) de la barra representa el porcentaje de dispositivos con puntuación de rendimiento de red entre 40-60. 
-      - **20-40** : la parte roja (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20-40. 
-      - **0-20** : la parte oscura de color rojo (de color) de la barra representa el porcentaje de dispositivos con peor puntuación de rendimiento de red entre 0-20. 
+      - **80-100 (mejor)**: la parte oscura de color verde (de color) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
+      - **60-80**: la parte verde (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
+      - **40-60**: la parte naranja (de color) de la barra representa el porcentaje de dispositivos con puntuación de rendimiento de red entre 40-60. 
+      - **20-40**: la parte roja (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20-40. 
+      - **0-20**: la parte oscura de color rojo (de color) de la barra representa el porcentaje de dispositivos con peor puntuación de rendimiento de red entre 0-20. 
 
 ### <a name="people-in-your-organization"></a>Personas de su organización
 
@@ -183,12 +183,12 @@ Las siguientes columnas se presentan en la tabla en el nivel de usuario:
 
 - **Username**  es la dirección de correo electrónico del usuario.
 - **Nombre para mostrar**  es el nombre completo del usuario.
-- **Fecha de la última actividad**  hace referencia a la última vez que el usuario realizó una actividad relacionada con cualquiera de las perspectivas dentro de la colaboración de contenido en los últimos 28 días
+- **Fecha de la última actividad**  hace referencia a la última vez que el usuario realizó una actividad relacionada con cualquiera de las perspectivas dentro de la colaboración de contenido en los últimos 28 días.
 - **Departamento:** El usuario&#39;Departamento, tal y como se define en Azure Active Directory (AAD).
-- **Compañía:** La empresa&#39;s, tal y como se define en AAD
-- **País:** El usuario&#39;país, tal como se define en AAD
-- **Estado:** El estado del usuario&#39;s, como se define en AAD
-- **City:** La ciudad del usuario&#39;s, tal y como se define en AAD
+- **Compañía:** El usuario&#39;s compañía, como se define en AAD.
+- **País:** El usuario&#39;país, tal como se define en AAD.
+- **Estado:** El estado del usuario&#39;s, como se define en AAD.
+- **City:** La ciudad del usuario&#39;s, tal como se define en AAD.
 - **OneDrive:** Valor booleano que indica si la persona tenía acceso a la OneDrive para al menos 1 de los últimos 28 días.
 - **SharePoint:** Valor booleano que indica si la persona tenía acceso toSharePoint para al menos 1 de los últimos 28 días.
 - **Archivos de Office a los que ha tenido acceso:** Valor booleano que indica si la persona ha tenido acceso a los archivos a través de Microsoft Word, Excel, PowerPoint o OneNote en los últimos 28 días.

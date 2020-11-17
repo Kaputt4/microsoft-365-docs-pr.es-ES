@@ -8,15 +8,16 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337234"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087516"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción de Microsoft SharePoint Syntex: introducción
 
@@ -127,7 +128,7 @@ Priorizar los escenarios según el impacto y la facilidad de implementación. Ha
 | SharePoint/administrador de conocimiento | Administrador de plataforma de energía | Administrador de conocimiento | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
 | Rol de AAD| Agregar rol | Rol de AAD | Expertos: |
-| Configurar el procesamiento de formularios | Configuración del entorno de servicio de datos comunes para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso de negocio |
+| Configurar el procesamiento del formulario | Configuración del entorno de servicio de datos comunes para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso de negocio |
 | Administración de centros de contenido y permisos| Comprar y asignar créditos AIB | Establecimiento de procedimientos recomendados y revisión del análisis de modelos | Creación y aplicación de modelos |
 
 El administrador de conocimiento, el propietario del proceso empresarial y el propietario del modelo de contenido crean modelos de ejemplo y la adopción de campeóns en la organización.
@@ -155,7 +156,7 @@ Trabaje con las partes interesadas para asegurarse de que están alineadas con l
 
 Identifique a las partes interesadas del proyecto.
 
-|Función |Responsibilities |Department |
+|Role |Responsibilities |Department |
 |:-------|:-------|:--------|
 | Patrocinadores ejecutivos   | Comunicar la visión y los valores de alto nivel a la empresa   |  Liderazgo ejecutivo   |
 | Jefes de proyecto | Supervisar todo el proceso de ejecución e implementación de inicio | Administración de proyectos |

@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: Aprenda a crear un clasificador
-ms.openlocfilehash: 97a7b28d45499a46d72029d47b422d2c32696a54
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 478b4253f7bb888323c2a873f3ab295cc841e193
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804820"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087684"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Crear un clasificador en Microsoft SharePoint Syntex
 
@@ -49,9 +50,9 @@ Para crear un clasificador, es necesario:
 
 El primer paso para crear el modelo es nombrarlo:
 
-1. En el centro de contenido, seleccione **Nuevo** y, a continuación, **Crear un modelo** .
-2. En el panel **Documento nuevo comprender el modelo** en el campo **Nombre** escriba el nombre del modelo. Por ejemplo, si desea identificar documentos de renovación de contratos, puede nombrar al modelo *Renovación de contratos* .
-3. Seleccione **Crear** . Esto crea una página principal para el modelo.</br>
+1. En el centro de contenido, seleccione **Nuevo** y, a continuación, **Crear un modelo**.
+2. En el panel **Documento nuevo comprender el modelo** en el campo **Nombre** escriba el nombre del modelo. Por ejemplo, si desea identificar documentos de renovación de contratos, puede nombrar al modelo *Renovación de contratos*.
+3. Seleccione **Crear**. Esto crea una página principal para el modelo.</br>
 
     ![Página principal de modelo de clasificador](../media/content-understanding/model-home.png)
 
@@ -81,9 +82,9 @@ Asegúrese de usar al menos cinco ejemplos positivos y al menos un ejemplo negat
 
 Para añadir archivos de ejemplo:
 
-1. En la Página principal del modelo, en el cuadro **Añadir archivos de ejemplo** haga clic en **Añadir archivos** .
+1. En la Página principal del modelo, en el cuadro **Añadir archivos de ejemplo** haga clic en **Añadir archivos**.
 2. En la página **seleccionar archivos de ejemplo para el modelo** seleccione los archivos de ejemplo de la biblioteca de archivos de aprendizaje en el centro de contenido. Si aún no se han cargado allí, elija cargarlos ahora haciendo clic en **Cargar** para copiarlos a la biblioteca de archivos de aprendizaje.
-3. Después de seleccionar los archivos de ejemplo que se usarán para entrenar el modelo, haga clic en **Añadir** .
+3. Después de seleccionar los archivos de ejemplo que se usarán para entrenar el modelo, haga clic en **Añadir**.
 
     ![Seleccionar archivos de ejemplo:](../media/content-understanding/select-sample.png) 
 
@@ -91,9 +92,9 @@ Para añadir archivos de ejemplo:
 
 Después de agregar los archivos de ejemplo, debe etiquetarlos como ejemplos positivos o negativos.
 
-1. En la página principal del modelo, en el cuadro **Clasificar archivos y ejecutar el entrenamiento** haga clic en **Clasificador de documentos** .
+1. En la página principal del modelo, en el cuadro **Clasificar archivos y ejecutar el entrenamiento** haga clic en **Clasificador de documentos**.
    Esto muestra la página de etiquetas que contiene un listado de sus archivos de ejemplo, con el primer archivo visible en el visor.
-2. En el visor, en la parte superior del primer archivo de ejemplo, debería ver un texto que pregunta si el archivo es un ejemplo del modelo que acaba de crear. Si es un ejemplo positivo, seleccione **sí** . Si es un ejemplo negativo, seleccione **no** .
+2. En el visor, en la parte superior del primer archivo de ejemplo, debería ver un texto que pregunta si el archivo es un ejemplo del modelo que acaba de crear. Si es un ejemplo positivo, seleccione **sí**. Si es un ejemplo negativo, seleccione **no**.
 3. En la lista **Ejemplos etiquetados** en la parte izquierda, seleccione los archivos adicionales que desea usar como ejemplos y asígneles etiquetas. 
 
     ![Página principal del Clasificador](../media/content-understanding/classifier-home-page.png) 
@@ -113,16 +114,16 @@ Para crear una explicación:
 
 1. En la Página principal del modelo, seleccione la pestaña **Entrenar** para ir a la página de entrenamiento.
 2. En la página entrenamiento, en la sección **archivos entrenados** debería ver una lista de los archivos de ejemplo que etiquetó anteriormente. Seleccione uno de los archivos positivos de la lista, y se mostrará en el visor.
-3. En la sección de Explicación, seleccione **Nuevo** y después **En blanco** .
+3. En la sección de Explicación, seleccione **Nuevo** y después **En blanco**.
 4. En la **página** Crear una explicación:</br>
     a. Escriba el **Nombre** (por ejemplo, "bloque de divulgación").</br>
-    b. Seleccione el **Tipo** . Para la muestra, seleccione **Lista de frases** ,ya que se añade una cadena de texto.</br>
-    c. En el cuadro **Escriba aquí** , escriba la cadena. Agregue "solicitud para divulgación adicional" para el ejemplo. Puede seleccionar **Distinguir mayúsculas de minúsculas** si la cadena tiene que distinguir mayúsculas de minúsculas.</br>
-    d. Haga clic en **Guardar** .
+    b. Seleccione el **Tipo**. Para la muestra, seleccione **Lista de frases**,ya que se añade una cadena de texto.</br>
+    c. En el cuadro **Escriba aquí**, escriba la cadena. Agregue "solicitud para divulgación adicional" para el ejemplo. Puede seleccionar **Distinguir mayúsculas de minúsculas** si la cadena tiene que distinguir mayúsculas de minúsculas.</br>
+    d. Haga clic en **Guardar**.
 
     ![Crear una explicación](../media/content-understanding/explanation.png) 
     
-5. El centro de contenido ahora comprueba si la explicación que ha creado es lo suficientemente completa como para identificar el resto de los archivos de ejemplo con etiquetas correctamente, como ejemplos positivos y negativos. En la sección archivos entrenados, Compruebe la columna **Evaluación** una vez completada la formación para ver los resultados. Los archivos muestran el valor **Coincidencia** , si las explicaciones que ha creado son suficientes como para coincidir con la etiquetada como positiva o negativa.
+5. El centro de contenido ahora comprueba si la explicación que ha creado es lo suficientemente completa como para identificar el resto de los archivos de ejemplo con etiquetas correctamente, como ejemplos positivos y negativos. En la sección archivos entrenados, Compruebe la columna **Evaluación** una vez completada la formación para ver los resultados. Los archivos muestran el valor **Coincidencia**, si las explicaciones que ha creado son suficientes como para coincidir con la etiquetada como positiva o negativa.
 
     ![Valor de coincidencia](../media/content-understanding/match.png) 
 
@@ -132,8 +133,8 @@ Si recibe una **No coincidencia** en los archivos etiquetados, es posible que te
 
 Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede probar su modelo en los archivos de muestra no etiquetados restantes.  Se trata de un paso opcional, pero resulta útil para evaluar la idoneidad del modelo o determinar si está preparado antes de usarlo, y para ello se prueba en archivos que el modelo no ha visto antes.
 
-1. En la página principal del modelo, haga clic en la pestaña **Probar** . Esto ejecuta el modelo en sus archivos de muestra sin etiquetar.
-2. En la lista **archivos de prueba** , sus archivos de ejemplo se muestran e indican si el modelo predijo que fueran positivos o negativos. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
+1. En la página principal del modelo, haga clic en la pestaña **Probar**. Esto ejecuta el modelo en sus archivos de muestra sin etiquetar.
+2. En la lista **archivos de prueba**, sus archivos de ejemplo se muestran e indican si el modelo predijo que fueran positivos o negativos. Utilice esta información para ayudar a determinar la eficacia de su clasificador en la identificación de sus documentos.
 
     ![Probar archivos sin etiquetar](../media/content-understanding/test-on-files.png) 
 

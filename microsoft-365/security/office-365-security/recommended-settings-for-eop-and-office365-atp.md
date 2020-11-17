@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa defender para Office 365?
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001530"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123482"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft defender para Office 365 Security
 
@@ -81,21 +81,21 @@ Le recomendamos que **desactive esta configuración ASF** para niveles **estánd
 
 |Nombre de la característica de seguridad|Comentario|
 |---|---|
-|**Vínculos de imagen a sitios remotos** ( _IncreaseScoreWithImageLinks_ )||
-|**Dirección IP numérica en la dirección URL** ( _IncreaseScoreWithNumericIps_ )||
-|**Redireccionamiento UL a otro puerto** ( _IncreaseScoreWithRedirectToOtherPort_ )||
-|**Dirección URL de los sitios Web. BIZ o. info** ( _IncreaseScoreWithBizOrInfoUrls_ )||
-|**Mensajes vacíos** ( _MarkAsSpamEmptyMessages_ )||
-|**JavaScript o VBScript en HTML** ( _MarkAsSpamJavaScriptInHtml_ )||
-|**Etiquetas frame o iframe en HTML** ( _MarkAsSpamFramesInHtml_ )||
-|**Etiquetas de objeto en HTML** ( _MarkAsSpamObjectTagsInHtml_ )||
-|**Etiquetas embed en HTML** ( _MarkAsSpamEmbedTagsInHtml_ )||
-|**Etiquetas de formulario en HTML** ( _MarkAsSpamFormTagsInHtml_ )||
-|**Web bugs en HTML** ( _MarkAsSpamWebBugsInHtml_ )||
-|**Aplicar lista de palabras confidenciales** ( _MarkAsSpamSensitiveWordList_ )||
-|**Registro de SPF: error grave** ( _MarkAsSpamSpfRecordHardFail_ )||
-|**Filtrado de identificador de remitente condicional: error grave** ( _MarkAsSpamFromAddressAuthFail_ )||
-|**Retrodispersión de NDR** ( _MarkAsSpamNdrBackscatter_ )||
+|**Vínculos de imagen a sitios remotos** (_IncreaseScoreWithImageLinks_)||
+|**Dirección IP numérica en la dirección URL** (_IncreaseScoreWithNumericIps_)||
+|**Redireccionamiento UL a otro puerto** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**Dirección URL de los sitios Web. BIZ o. info** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Mensajes vacíos** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript o VBScript en HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Etiquetas frame o iframe en HTML** (_MarkAsSpamFramesInHtml_)||
+|**Etiquetas de objeto en HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Etiquetas embed en HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Etiquetas de formulario en HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Web bugs en HTML** (_MarkAsSpamWebBugsInHtml_)||
+|**Aplicar lista de palabras confidenciales** (_MarkAsSpamSensitiveWordList_)||
+|**Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_)||
+|**Filtrado de identificador de remitente condicional: error grave** (_MarkAsSpamFromAddressAuthFail_)||
+|**Retrodispersión de NDR** (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Configuración de la Directiva de correo no deseado de EOP
@@ -122,7 +122,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 
 |Nombre de la característica de seguridad|Predeterminada|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Acción_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
+|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
 |**Filtro de tipos de datos adjuntos comunes** <p> _EnableFileFilter_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta opción pone en cuarentena los mensajes que contienen datos adjuntos ejecutables basados en el tipo de archivo, independientemente del contenido de datos adjuntos.|
 |**Purga automática de cero horas de malware** <p> _ZapEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |**Notificar a los remitentes internos** del mensaje no entregado <p> _EnableInternalSenderNotifications_|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`||
@@ -148,7 +148,7 @@ Los beneficios de seguridad adicionales vienen con una suscripción de Microsoft
 
 > [!IMPORTANT]
 >
-> - La Directiva antiphishing predeterminada de Microsoft defender para Office 365 proporciona [protección falsa](set-up-anti-phishing-policies.md#spoof-settings) para todos los destinatarios. Sin embargo, la configuración de [protección de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponible para determinados remitentes o dominios de remitentes no está configurada o habilitada en la directiva predeterminada. Para habilitar la protección de suplantación, configure la directiva predeterminada o cree directivas antiphishing adicionales en defender para Office 365.
+> - La Directiva antiphishing predeterminada de Microsoft defender para Office 365 proporciona [protección contra la suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad y la inteligencia de buzones para todos los destinatarios. Sin embargo, las demás características de [protección de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) disponibles y la [Configuración avanzada](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) no están configuradas o habilitadas en la directiva predeterminada. Para habilitar todas las características de protección, modifique la Directiva antiphishing predeterminada o cree otras directivas contra suplantación de identidad.
 >
 > - No hay directivas de vínculos seguros predeterminadas ni directivas de datos adjuntos seguros que protejan automáticamente a todos los destinatarios de la organización. Para obtener las protecciones, debe crear al menos una directiva de vínculos seguros y una directiva de datos adjuntos seguros.
 >
@@ -168,9 +168,9 @@ Para obtener más información acerca de estas opciones, vea [configuración de 
 
 |Nombre de la característica de seguridad|Predeterminada|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|Usuarios protegidos: **Agregar usuarios para protegerlos** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Desactivado <p> `$false` <p> ninguno|Activado <p> `$true` <p> \<list of users\>|Activado <p> `$true` <p> \<list of users\>|Según la organización, se recomienda agregar usuarios (remitentes de mensajes) en los roles clave. Internamente, los remitentes protegidos podrían ser su CEO, CFO y otros líderes senior. Externamente, los remitentes protegidos podrían incluir miembros del Consejo o su Consejo de administración.|
+|Usuarios protegidos: **Agregar usuarios para protegerlos** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Desactivado <p> `$false` <p> none|Activado <p> `$true` <p> \<list of users\>|Activado <p> `$true` <p> \<list of users\>|Según la organización, se recomienda agregar usuarios (remitentes de mensajes) en los roles clave. Internamente, los remitentes protegidos podrían ser su CEO, CFO y otros líderes senior. Externamente, los remitentes protegidos podrían incluir miembros del Consejo o su Consejo de administración.|
 |Dominios protegidos: **incluir automáticamente los dominios de su propiedad** <p> _EnableOrganizationDomainsProtection_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
-|Dominios protegidos: **incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> ninguno|Activado <p> `$true` <p> \<list of domains\>|Activado <p> `$true` <p> \<list of domains\>|En función de la organización, se recomienda agregar dominios (dominios de remitente) que no son de su propiedad, pero con la que interactúan con frecuencia.|
+|Dominios protegidos: **incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> none|Activado <p> `$true` <p> \<list of domains\>|Activado <p> `$true` <p> \<list of domains\>|En función de la organización, se recomienda agregar dominios (dominios de remitente) que no son de su propiedad, pero con la que interactúan con frecuencia.|
 |Usuarios protegidos: **si un usuario suplantado envía un correo electrónico** <p> _TargetedUserProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |Dominios protegidos: **si un dominio suplantado envía un correo electrónico** <p> _TargetedDomainProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |**Mostrar sugerencia para usuarios suplantados** <p> _EnableSimilarUsersSafetyTips_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
@@ -280,14 +280,14 @@ En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](https://docs.micro
 
 |Nombre de la característica de seguridad|Predeterminada|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Datos adjuntos seguros respuesta de malware desconocida** <p> _Acción_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
-|**Redirigir datos adjuntos en detección** : **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y ninguna dirección de correo electrónico especificada. <p> `$true` <p> ninguno|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
+|**Datos adjuntos seguros respuesta de malware desconocida** <p> _Action_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
+|**Redirigir datos adjuntos en detección** : **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y ninguna dirección de correo electrónico especificada. <p> `$true` <p> none|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplique la selección anterior si se produce un error de análisis de malware para archivos adjuntos o errores.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- ¿Necesita procedimientos recomendados para **las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte** )? Consulte los [procedimientos recomendados para configurar reglas de flujo de correo en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- ¿Necesita procedimientos recomendados para **las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte**)? Consulte los [procedimientos recomendados para configurar reglas de flujo de correo en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Los administradores y los usuarios pueden enviar falsos positivos (correo electrónico bueno marcado como no válido) y falsos negativos (se permite correo electrónico incorrecto) a Microsoft para su análisis. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 

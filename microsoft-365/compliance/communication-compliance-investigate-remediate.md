@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f39b374926ef714a32cfce4a625cc1387bb68097
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: f214c1fcfa8a68695ca0c32a9807972a71ba7612
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104481"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087165"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -81,7 +81,7 @@ Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticam
 
 6. Seleccione uno o más mensajes para corregir los controles de acción de estos mensajes.
 
-7. Seleccione **resolver**, **notificar**, **remitir a escalar**o **Descargar** para aplicar la acción a los mensajes duplicados seleccionados como filtro predeterminado.
+7. Seleccione **resolver**, **notificar**, **remitir a escalar** o **Descargar** para aplicar la acción a los mensajes duplicados seleccionados como filtro predeterminado.
 
 8. Seleccione **cerrar** después de completar las acciones de corrección en los mensajes.
 
@@ -102,7 +102,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 Después de revisar los conceptos básicos de los mensajes, es el momento de abrir un mensaje para examinar los detalles y determinar las acciones de corrección adicionales. Seleccione un mensaje para ver la información del cuerpo y el encabezado del mensaje completo. Hay disponibles varias vistas diferentes para ayudarle a decidir el curso adecuado de acción:
 
 - **Vista de código fuente**: esta vista es la vista de mensajes estándar que normalmente se ve en la mayoría de las plataformas de mensajería basadas en Web. La información de encabezado tiene el formato normal y el cuerpo del mensaje admite archivos gráficos incrustados y texto con ajuste de texto.
-- **Vista**de texto: la vista de texto muestra una vista de texto con numeración de líneas del mensaje e incluye un resaltado de palabras clave para los términos que coinciden en la Directiva de cumplimiento de comunicación asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente los mensajes largos del área de interés. Los archivos incrustados no se muestran y la numeración de las líneas esta vista resulta útil para hacer referencia a detalles relevantes entre varios revisores.
+- **Vista** de texto: la vista de texto muestra una vista de texto con numeración de líneas del mensaje e incluye el resaltado de palabras clave en mensajes y datos adjuntos para los términos que coinciden en la Directiva de cumplimiento de comunicación asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente los mensajes largos y datos adjuntos del área de interés. En algunos casos, el texto resaltado puede estar solo en datos adjuntos para las condiciones de la Directiva de coincidencia de mensajes. Los archivos incrustados no se muestran y la numeración de las líneas esta vista resulta útil para hacer referencia a detalles relevantes entre varios revisores.
 - **Vista de anotar**: esta vista permite a los revisores agregar anotaciones directamente en el mensaje que se guardan en la vista del mensaje.
 - **Historial del usuario**: la vista historial del usuario muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de la comunicación para el usuario que envía el mensaje.
 - **Vista de detalles del mensaje**: vista avanzada de metadatos de mensajes e información de configuración.
@@ -117,11 +117,11 @@ Ahora que ha revisado los detalles del mensaje de la alerta, puede elegir varias
 - **Resolve**: al seleccionar el control **resolver** , el mensaje se quita inmediatamente de la cola de **alertas pendientes** y no se pueden realizar más acciones en el mensaje. Al seleccionar **resolver**, básicamente ha cerrado la alerta sin más clasificación y no se puede volver a abrir para acciones adicionales. Todos los mensajes resueltos se muestran en la pestaña **resueltos** .
 - **Falso positivo**: siempre puede resolver un mensaje como falso positivo en cualquier momento durante el flujo de trabajo de revisión de mensajes. Falso positivo significa que la alerta no es accionable o que el proceso de alerta ha generado la alerta incorrectamente. No se puede volver a abrir el mensaje y se muestran todos los mensajes falsos positivos en la ficha **resueltos** .
 - **Automated Power (versión preliminar)**: Use un flujo de automatización automatizada para automatizar tareas de proceso para un mensaje de alerta. De forma predeterminada, el cumplimiento de la comunicación incluye al *Administrador de notificaciones cuando un usuario tiene una* plantilla de flujo de alerta de cumplimiento de comunicaciones que los revisores pueden usar para automatizar el proceso de notificación para los usuarios con alertas de mensajes. Para obtener más información acerca de la creación y administración de la automatización de la alimentación de flujos en el cumplimiento de comunicaciones, consulte el artículo de referencia de la [característica cumplimiento de comunicaciones](communication-compliance-feature-reference.md#power-automate-flows-preview) .
-- **Etiqueta como**: etiquete el mensaje como *compatible*, *no compatible*o tan *dudoso* como relacionado con las directivas y los estándares de su organización. Agregar etiquetas y comentarios de etiquetado ayuda a microfiltrar las alertas de las directivas para las escalaciones o como parte de otros procesos internos de revisión. Una vez finalizado el etiquetado, también puede optar por resolver el mensaje para moverlo de la cola de revisión pendiente.
+- **Etiqueta como**: etiquete el mensaje como *compatible*, *no compatible* o tan *dudoso* como relacionado con las directivas y los estándares de su organización. Agregar etiquetas y comentarios de etiquetado ayuda a microfiltrar las alertas de las directivas para las escalaciones o como parte de otros procesos internos de revisión. Una vez finalizado el etiquetado, también puede optar por resolver el mensaje para moverlo de la cola de revisión pendiente.
 - **Notify**: puede usar el control **Notify** para asignar una plantilla de notificación personalizada a la alerta y para enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada configurada en el área **configuración de cumplimiento de comunicaciones** y seleccione **Enviar** a correo electrónico un aviso al usuario que envió el mensaje y para resolver el problema.
 - **Escalar**: con el control **remitir** a, puede elegir quién más de la organización debe revisar el mensaje. Elija de una lista de revisores configurados en la Directiva de cumplimiento de comunicaciones para enviar una notificación de correo electrónico para solicitar una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación de correo electrónico para ir directamente a los elementos que se han remitido a ellos para que los revisen.
 - **Escalar para investigación**: con el control **escalar para investigación** , puede crear un nuevo [caso de eDiscovery avanzado](overview-ediscovery-20.md) para uno o varios mensajes. Proporcionará un nombre y notas para el nuevo caso, y el usuario que envió el mensaje que coincida con la Directiva se asigna automáticamente como custodio de caso. No es necesario ningún permiso adicional para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje. Puede seleccionar un total de 100 mensajes al crear un caso de exhibición avanzada de documentos electrónicos durante el proceso de corrección. Se admiten los mensajes de todos los canales de comunicación supervisados por el cumplimiento de la comunicación. Por ejemplo, puede seleccionar 50 chats de Microsoft Teams, 25 mensajes de correo electrónico de Exchange Online y 25 mensajes de Yammer al abrir un nuevo caso de exhibición avanzada de documentos electrónicos para un usuario.
-- **Mejorar clasificación (versión preliminar)**: las alertas creadas a partir de coincidencias de tipo de clasificador pueden necesitar comentarios para ayudar a minimizar los falsos positivos en la organización. Use el control de mejora de la **clasificación** para proporcionar comentarios sobre si la clasificación de cumplimiento de la comunicación es válida o para sugerir otros clasificadores que se puedan entrenar para este tipo de coincidencia. Puede confirmar que los clasificadores son una *coincidencia* o que *no*coinciden, o bien sugerir otros clasificados que se pueden asociar con este tipo de actividad de alerta en el futuro.
+- **Mejorar clasificación (versión preliminar)**: las alertas creadas a partir de coincidencias de tipo de clasificador pueden necesitar comentarios para ayudar a minimizar los falsos positivos en la organización. Use el control de mejora de la **clasificación** para proporcionar comentarios sobre si la clasificación de cumplimiento de la comunicación es válida o para sugerir otros clasificadores que se puedan entrenar para este tipo de coincidencia. Puede confirmar que los clasificadores son una *coincidencia* o que *no* coinciden, o bien sugerir otros clasificados que se pueden asociar con este tipo de actividad de alerta en el futuro.
 
     1. Seleccione un mensaje de la lista de alertas.
     2. Elija los puntos suspensivos y seleccione **mejorar clasificación**.

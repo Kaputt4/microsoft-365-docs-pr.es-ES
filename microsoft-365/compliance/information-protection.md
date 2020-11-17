@@ -1,5 +1,5 @@
 ---
-title: Protección de la información de Microsoft en Microsoft 365
+title: Microsoft Information Protection en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -9,67 +9,66 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: High
+localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.collection:
 - m365solution-mip
 - m365initiative-compliance
-ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Implemente Microsoft Information Protection (MIP) para ayudarle a proteger la información confidencial donde vive o se desplaza.
-ms.openlocfilehash: 89a11a8b94d38978a48fbc414ab5fe47fcf977a5
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
-ms.translationtype: MT
+description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
+ms.openlocfilehash: 4f98adbcee2b3daf4b347a16137d61cc0e790486
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990545"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087197"
 ---
-# <a name="microsoft-information-protection-in-microsoft-365"></a>Protección de la información de Microsoft en Microsoft 365
+# <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
->*[Licencias para el cumplimiento de & de seguridad de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+>*[Licencias para el Centro de seguridad y cumplimiento de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implemente Microsoft Information Protection (MIP) para ayudarle a descubrir, clasificar y proteger información confidencial donde vive o se desplaza.
+Implemente Microsoft Information Protection (MIP) para descubrir, clasificar y proteger la información confidencial donde esta resida o hacia donde se transfiera.
 
-Las funcionalidades de MIP se incluyen con el cumplimiento de Microsoft 365 y le proporcionan las herramientas necesarias para [conocer sus datos](#know-your-data), [proteger sus datos](#protect-your-data)y [evitar la pérdida de datos](#prevent-data-loss).
+Las características de MIP se incluyen con el Centro de cumplimiento de Microsoft 365 y proporcionan las herramientas necesarias para [conocer](#know-your-data), [proteger](#protect-your-data) y [evitar la pérdida](#prevent-data-loss) de sus datos.
 
-![Imagen de cómo MIP ayuda a descubrir, clasificar y proteger datos confidenciales](../media/powered-by-intelligent-platform.png)
+![Imagen de cómo MIP le ayuda a descubrir, clasificar y proteger los datos confidenciales](../media/powered-by-intelligent-platform.png)
 
-Para obtener información sobre el control de los datos, vea [Microsoft Information Governance en microsoft 365](manage-Information-governance.md).
+Para obtener información sobre la gobernanza de los datos, consulte [Gobernanza de información de Microsoft en Microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Conocer los datos
 
-Para comprender su panorama de datos e identificar datos importantes en todo el entorno híbrido, use las siguientes capacidades:
+Para tener una visión general de sus datos e identificar aquellos más importantes en todo su entorno híbrido, utilice las funciones siguientes:
  
-|Funcionalidad|¿Qué problemas soluciona?|Introducción|
+|Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|:--------------------|:-----------------------------|
-|[Tipos de información confidencial](sensitive-information-type-entity-definitions.md)| Identifica los datos confidenciales mediante expresiones regulares integradas o personalizadas o una función, junto con evidencias corroboradoras que incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
-|[Clasificadores capacitados (versión preliminar)](classifier-learn-about.md)| Clasifica datos para usted, usando uno de los clasificadores integrados o entrena un clasificador con su propio contenido | [Introducción a los clasificadores que se pueden entrenar (versión preliminar)](classifier-get-started-with.md) |
-|[Clasificación de datos](data-classification-overview.md) | Identifica los elementos que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado como un tipo de información confidencial en la organización y las acciones que los usuarios están tomando en ellos.  | [Introducción al explorador de contenido](data-classification-content-explorer.md)<br /><br /> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
+|[Tipos de información confidencial](sensitive-information-type-entity-definitions.md)| Identifica datos confidenciales mediante expresiones regulares integradas o personalizadas, o con una función, junto con pruebas confirmatorias que incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
+|[Clasificadores que se pueden entrenar (versión preliminar)](classifier-learn-about.md)| Clasifica datos con uno de los clasificadores predefinidos o entrena un clasificador con el contenido que usted posea. | [Introducción a los clasificadores que se pueden entrenar (versión preliminar)](classifier-get-started-with.md) |
+|[Clasificación de datos](data-classification-overview.md) | Identifica elementos que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado como un tipo de información confidencial en la organización y las acciones que sus usuarios realizan con ellos.  | [Introducción al explorador de contenido](data-classification-content-explorer.md)<br /><br /> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Proteger los datos
 
-Para aplicar acciones de protección flexibles que incluyan cifrado, restricciones de acceso y marcadores visuales, use las siguientes capacidades:
+Para aplicar acciones de protección flexibles entre las que se incluyen el cifrado, las restricciones de acceso y las marcas visuales, utilice las funcionalidades siguientes:
 
-|Funcionalidad|¿Qué problemas soluciona?|Introducción|
+|Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|---------------------|:----------------------------|
-|[Etiquetas de confidencialidad](sensitivity-labels.md)| Una única solución en aplicaciones, servicios y dispositivos para etiquetar y proteger los datos a medida que viajan dentro y fuera de la organización. <br /><br />Escenario de ejemplo: [aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se exportan](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) |
-|[Cliente de etiquetación unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Para los equipos Windows, extiende las etiquetas de confidencialidad para las características y funciones adicionales que incluyen el etiquetado y la protección de todos los tipos de archivo desde el explorador de archivos y PowerShell<br /><br /> Ejemplo de características adicionales: [configuraciones personalizadas para el cliente de etiquetado Unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guía del administrador del cliente de etiqueta unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[Cifrado de claves doble](double-key-encryption.md)| En todos los casos, solo usted puede descifrar el contenido protegido o los requisitos normativos deben mantener las claves de cifrado dentro de un límite geográfico | [Implementar el cifrado de doble clave](double-key-encryption.md#deploy-dke)|
-|[Office 365 cifrado de mensajes (OEM)](ome.md)| Cifra los mensajes de correo electrónico y los documentos adjuntos que se envían a cualquier usuario en cualquier dispositivo, de modo que solo los destinatarios autorizados puedan leer la información de correo electrónico.  <br /><br />Escenario de ejemplo: [revocar correo electrónico cifrado por el cifrado de mensajes avanzado](revoke-ome-encrypted-mail.md) | [Configurar las nuevas capacidades de cifrado de mensajes](set-up-new-message-encryption-capabilities.md)|
-|[Cifrado de servicio con clave de cliente](customer-key-overview.md) | Protege contra la visualización de datos por parte de sistemas o sistemas no autorizados y complementa el cifrado de disco de BitLocker en centros de datos de Microsoft. | [Configurar Clave de cliente de Office 365](customer-key-set-up.md)|
-|[Administración de derechos de la información (IRM) de SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protege las listas y bibliotecas de SharePoint de modo que, cuando un usuario desproteja un documento, el archivo descargado esté protegido para que solo los usuarios autorizados puedan ver y usar el archivo de acuerdo con las directivas que especifique. | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md).|
-[Conector Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protección: solo para implementaciones locales existentes que usan Exchange o SharePoint Server, o servidores de archivos que ejecutan Windows Server y la infraestructura de clasificación de archivos (FCI). | [Pasos para implementar el conector RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
-|[Escáner de etiquetación unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Detecta, etiqueta y protege información confidencial que reside en almacenes de datos que están en local | [Configuración e instalación del escáner de etiquetación unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
-|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Detecta, etiqueta y protege información confidencial que reside en almacenes de datos que están en la nube | [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Amplía las etiquetas de confidencialidad a servicios y aplicaciones de terceros  <br /><br /> Escenario de ejemplo: [establecer y obtener una etiqueta de confidencialidad (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Instalación y configuración del SDK de Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+|[Etiquetas de confidencialidad](sensitivity-labels.md)| Una solución única para todas aplicaciones, servicios y dispositivos con el fin de etiquetar y proteger los datos cuando se transfieren dentro y fuera de la organización. <br /><br />Situación de ejemplo: [Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se exportan](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Empezar a usar las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) |
+|[Cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| En el caso de los equipos con Windows, amplía las etiquetas de confidencialidad a otras características y funciones que incluyen etiquetar y proteger todos los tipos de archivos, desde el explorador de archivos a PowerShell<br /><br /> Ejemplo de características adicionales: [Configuración personalizada para el cliente de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guía del administrador para cliente de etiquetado unificado de Azure Information Protection ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[Cifrado de doble clave](double-key-encryption.md)| Bajo cualquier circunstancia, solo usted podrá descifrar el contenido protegido, si bien, para requisitos normativos, puede que deba mantener las claves de cifrado en un límite geográfico | [Implementar el cifrado de doble clave](double-key-encryption.md#deploy-dke)|
+|[Cifrado de mensajes de Office 365 (OME)](ome.md)| Cifra los mensajes de correo electrónico y los documentos adjuntos que se envían a cualquier usuario en cualquier dispositivo, de modo que solo los destinatarios autorizados puedan leer la información de correo electrónico  <br /><br />Escenario de ejemplo: [Revocar el correo electrónico cifrado mediante el Cifrado de mensajes avanzado](revoke-ome-encrypted-mail.md) | [Configurar las nuevas capacidades de cifrado de mensajes](set-up-new-message-encryption-capabilities.md)|
+|[Cifrado de servicio con clave de cliente](customer-key-overview.md) | Protege frente a la visualización de los datos por parte de sistemas o equipos no autorizados y complementa el cifrado de disco BitLocker en centros de datos de Microsoft. | [Configurar clave de cliente de Office 365](customer-key-set-up.md)|
+|[Information Rights Management (IRM) de SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protege las listas y bibliotecas de SharePoint para que, cuando un usuario desproteja un documento (en el sentido de que solo lo pueda editar él), el archivo descargado esté protegido, de modo que solo los usuarios autorizados puedan ver y usar el archivo en función de las directivas que usted especifique. | [Configurar Information Rights Management (IRM) en el Centro de administración de SharePoint](set-up-irm-in-sp-admin-center.md)|
+[Conector de administración de derechos](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Modo de solo protección para implementaciones locales existentes que usan Exchange o SharePoint Server, o servidores de archivos que ejecutan Windows Server y la Infraestructura de Clasificación de Archivos (FCI). | [Pasos para implementar el conector RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
+|[Escáner de etiquetas unificadas de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos locales. | [Configuración e instalación del escáner de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos en la nube. | [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Amplía las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.  <br /><br /> Escenario de ejemplo: [Establecer y obtener una etiqueta de confidencialidad (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Instalación y configuración del SDK de Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
 
 ## <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
 
-Para ayudar a evitar el reuso accidental de información confidencial, use las siguientes funciones:
+Para ayudar a evitar el uso compartido accidental de información confidencial, utilice las funciones siguientes:
 
 
-|Funcionalidad|¿Qué problemas soluciona?|Introducción|
+|Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)| Ayuda a impedir el uso compartido involuntaria de elementos confidenciales <br /><br />Escenario de ejemplo: [proteger información confidencial en mensajes de chat y de canal de Microsoft Teams](dlp-microsoft-teams.md) | [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)|
-|[Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)| Amplía las capacidades de DLP a los elementos que se usan y comparten en equipos con Windows 10 | [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)|
+|[Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)| Permite evitar el uso compartido no intencionado de elementos confidenciales. <br /><br />Escenario de ejemplo: [Proteger la información confidencial en mensajes de chat y canales de Microsoft Teams](dlp-microsoft-teams.md) | [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)|
+|[Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)| Amplía las capacidades DLP a los elementos que se usan y comparten en equipos con Windows 10. | [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)|

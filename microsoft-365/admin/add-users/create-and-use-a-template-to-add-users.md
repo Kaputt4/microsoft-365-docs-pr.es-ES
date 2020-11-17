@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración cuando se agregan varios usuarios.
-ms.openlocfilehash: 92d3bd68a57291586da27eb2d578a26c53d20d78
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: aef5085da603c38b37544b76c5336c9bfe4edd24
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245862"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123422"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
@@ -33,7 +33,7 @@ Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configura
 
 ## <a name="create-a-template"></a>Creación de una plantilla
 
-Las plantillas son fáciles de crear puede &mdash; seleccionar **a los**usuarios usuarios  >  **activos**  >  **plantillas de usuario**y, a continuación, seleccionar **Agregar una plantilla** de la lista desplegable o puede Agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como una plantilla.
+Las plantillas son fáciles de crear puede &mdash; seleccionar **a los** usuarios usuarios  >  **activos**  >  **plantillas de usuario** y, a continuación, seleccionar **Agregar una plantilla** de la lista desplegable o puede Agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como una plantilla.
 
 Al crear una plantilla después de agregar un usuario, los valores que elija para la siguiente configuración se guardan en la plantilla:
 
@@ -43,8 +43,8 @@ Al crear una plantilla después de agregar un usuario, los valores que elija par
 - Ubicación de la licencia
 - Opciones de licencia
 - Opciones de aplicación
-- Función
-- La mayoría de la información del perfil, como el **Perfil del trabajo**, el **Departamento**, la **Oficina**, el teléfono de la **Oficina**y la **dirección postal** 
+- Role
+- La mayoría de la información del perfil, como el **Perfil del trabajo**, el **Departamento**, la **Oficina**, el teléfono de la **Oficina** y la **dirección postal** 
 
 La siguiente información es específica del usuario y no se guarda en la plantilla:
 
@@ -64,23 +64,23 @@ Para usar una plantilla existente para agregar un usuario:
 
 1. En el centro de administración, seleccione usuarios activos de **usuarios**  >  **Active users**.
 
-2. Seleccione **plantillas de usuario**y, a continuación, seleccione una plantilla en la lista desplegable. (La lista solo contendrá las plantillas que ha creado, no las creadas por otros administradores).
+2. Seleccione **plantillas de usuario** y, a continuación, seleccione una plantilla en la lista desplegable. (La lista solo contendrá las plantillas que ha creado, no las creadas por otros administradores).
 
- > [!NOTE]
- > También puede usar una plantilla para agregar un usuario seleccionando **plantillas de usuario**  >  **administrar plantillas**, seleccionando una plantilla y, a continuación, haciendo clic en **Usar plantilla**.
+   > [!NOTE]
+   > También puede usar una plantilla para agregar un usuario seleccionando **plantillas de usuario**  >  **administrar plantillas**, seleccionando una plantilla y, a continuación, haciendo clic en **Usar plantilla**.
 
 3. Siga los pasos para crear un usuario a partir de la plantilla que ha seleccionado.
 
-> [!NOTE]
-> Si no dispone de licencias suficientes para un usuario que agregue, y la información de pago está disponible, intentaremos comprar otra licencia con la información de pago existente. Si la información de pago no está disponible, el usuario se creará como un usuario sin licencia.
+   > [!NOTE]
+   > Si no dispone de licencias suficientes para un usuario que agregue, y la información de pago está disponible, intentaremos comprar otra licencia con la información de pago existente. Si la información de pago no está disponible, el usuario se creará como un usuario sin licencia.
 
 ## <a name="manage-templates"></a>Administración de plantillas
 
-Puede eliminar fácilmente las plantillas que ya no necesite y agregar otras nuevas. Para eliminar una plantilla:
+Solo se pueden eliminar las plantillas que ya no se necesiten y agregar otras nuevas. Para eliminar una plantilla:
 
 1. En el centro de administración, seleccione usuarios activos de **usuarios**  >  **Active users**.
 
-2. Seleccione **plantillas**y, a continuación, seleccione **administrar plantillas** en la lista desplegable.
+2. Seleccione **plantillas** y, a continuación, seleccione **administrar plantillas** en la lista desplegable.
 
 3. Aparecerá una lista de las plantillas. Para eliminar una plantilla, realice uno de los procedimientos siguientes:
     - Seleccione una o más plantillas y, a continuación, seleccione **eliminar**. 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft defender para Office 365 plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Microsoft defender para Office 365 para identificar rápidamente los usuarios etiquetados.
-ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945323"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123624"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft defender para Office 365
 
@@ -29,8 +29,8 @@ ms.locfileid: "48945323"
 
 Las etiquetas de usuario son identificadores para grupos de usuarios específicos en [Microsoft defender para Office 365](office-365-atp.md). Hay dos tipos de etiquetas de usuario:
 
-- **Etiquetas del sistema** : Actualmente, [cuentas prioritarias](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) es el único tipo de etiqueta de sistema.
-- **Etiquetas personalizadas** : usted mismo crea estas etiquetas de usuario.
+- **Etiquetas del sistema**: Actualmente, [cuentas prioritarias](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) es el único tipo de etiqueta de sistema.
+- **Etiquetas personalizadas**: usted mismo crea estas etiquetas de usuario.
 
 Si su organización tiene defender for Office 365 plan 2 (incluido en su suscripción o como complemento), puede crear etiquetas de usuario personalizadas además de usar la etiqueta accounts Priority.
 
@@ -40,6 +40,7 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Vistas de campañas](campaigns.md)
+- Para las cuentas prioritarias, puede usar el [Informe problemas de correo electrónico para cuentas prioritarias](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) en el centro de administración de Exchange (EAC).
 
 En este artículo se explica cómo configurar etiquetas de usuario en el centro de seguridad & cumplimiento. No hay cmdlets en el centro de seguridad & cumplimiento para administrar las etiquetas de usuario.
 
@@ -47,7 +48,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **etiquetas de usuario** , Abra <https://protection.office.com/userTags> .
 
-- Para crear, modificar o quitar **etiquetas de usuario personalizadas** , debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Para crear, modificar o quitar **etiquetas de usuario personalizadas**, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - Para configurar las cuentas prioritarias (etiquetas del sistema), debe ser [administrador global](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o [Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
 
@@ -60,17 +61,14 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 2. En la página **etiquetas de usuario** que se abre, haga clic en **crear etiqueta**.
 
 3. El Asistente para **crear etiquetas** se abre en una nueva volar hacia fuera. En la página **definir etiqueta** , configure las siguientes opciones:
-
-   - **Name** : escriba un nombre único y descriptivo para la etiqueta. Este es el valor que verás y usarás.
-
-   - **Descripción** : escriba una descripción opcional para la etiqueta.
+   - **Name**: escriba un nombre único y descriptivo para la etiqueta. Este es el valor que verás y usarás.
+   - **Descripción**: escriba una descripción opcional para la etiqueta.
 
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **asignar buzones** , siga uno de estos pasos:
 
    - Haga clic en **Agregar buzones**. En la volar hacia fuera que aparece, realice uno de los siguientes pasos para agregar grupos o usuarios individuales:
-
      - Haga clic en el cuadro y desplácese por la lista para seleccionar un usuario o grupo.
      - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario o grupo.
      - Para agregar más valores, haga clic en un área vacía del cuadro.
@@ -109,7 +107,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>Usar el centro de seguridad para quitar etiquetas de usuario
 
-**Nota** : no se puede quitar la etiqueta de **cuenta** integrada con prioridad.
+**Nota**: no se puede quitar la etiqueta de **cuenta** integrada con prioridad.
 
 1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
 

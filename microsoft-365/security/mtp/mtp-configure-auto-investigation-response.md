@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846501"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123612"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configuración de capacidades de investigación y respuesta automatizadas en Microsoft 365 defender
 
@@ -91,13 +91,13 @@ Configuración de seguridad en Office 365 ayudar a proteger el correo electróni
 
 1. Vaya al centro de seguridad 365 de Microsoft ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 
-2. En el panel de navegación, busque **incidentes** , **centro de actividades** y **búsqueda** , como se muestra en la siguiente imagen:
+2. En el panel de navegación, busque **incidentes**, **centro de actividades** y **búsqueda**, como se muestra en la siguiente imagen:
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP activado":::
 
-   - Si ve **incidentes** , **centro de actividades** y **caza** , Microsoft 365 defender está activado. Continúe con el procedimiento siguiente, [revise o cambie el nivel de automatización de los grupos de dispositivos](#review-or-change-the-automation-level-for-device-groups).
+   - Si ve **incidentes**, **centro de actividades** y **caza**, Microsoft 365 defender está activado. Vea el procedimiento, [revisión o cambio del nivel de automatización para grupos de dispositivos](#review-or-change-the-automation-level-for-device-groups) (en este artículo).
 
-   - Si *no* ve **incidentes** , el **centro de actividades** o la **caza** , es posible que Microsoft 365 defender no esté activado. En este caso, continúe con el paso siguiente.
+   - Si *no* ve **incidentes**, el **centro de actividades** o la **caza**, es posible que Microsoft 365 defender no esté activado. En este caso, continúe con el paso siguiente ([Revise las acciones pendientes y completadas](#review-pending-and-completed-actions-in-the-action-center), en este artículo).
 
 3. En el panel de navegación, elija **configuración** de  >  **Microsoft 365 defender**. Confirme que Microsoft 365 defender está activado. 
 
