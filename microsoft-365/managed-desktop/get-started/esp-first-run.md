@@ -1,5 +1,5 @@
 ---
-title: Experiencia de primera ejecución con AutoPilot y la página de estado de inscripción
+title: Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 description: Cómo implementar la experiencia de ESP, la configuración usada y los cambios de configuración
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305275"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126630"
 ---
-# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con AutoPilot y la página de estado de inscripción
+# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 
 Microsoft Managed Desktop usa tanto [Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) como la página de [Estado de inscripción (ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) de Microsoft Intune para proporcionar la mejor experiencia de primera ejecución posible a los usuarios.
 
@@ -34,7 +34,7 @@ Una vez que los dispositivos estén registrados con el servicio, puede habilitar
 Microsoft Managed Desktop usa esta configuración en el perfil de AutoPilot usado para los dispositivos de los usuarios:
 
 
-|Configuración  |Valor  |
+|Setting  |Valor  |
 |---------|---------|
 |Modo de implementación |  Controlada por el usuario       |
 |Unirse a Azure AD como     |  Unido a Azure AD       |
@@ -56,7 +56,7 @@ Microsoft Managed Desktop usa esta configuración en el perfil de AutoPilot usad
 Microsoft Managed Desktop usa esta configuración para la experiencia de la página de estado de inscripción:
 
 
-|Configuración  |Valor  |
+|Setting  |Valor  |
 |---------|---------|
 |Mostrar el progreso de configuración de la aplicación y el perfil     | Sí        |
 |Mostrar un error cuando la instalación tarda más tiempo que el número de minutos especificado     |  60       |
@@ -95,7 +95,7 @@ Si la configuración que usa el escritorio administrado por Microsoft no se ajus
 
 ### <a name="autopilot-settings-change"></a>Cambio de la configuración de AutoPilot
 
-Es posible que desee solicitar una plantilla de nombre de dispositivo diferente. Sin embargo, no puede cambiar el modo de implementación, unirse a Azure como, configuración de privacidad o tipo de cuenta de usuario.
+Es posible que desee solicitar una plantilla de nombre de dispositivo diferente. Sin embargo, no puede cambiar el modo de implementación, unirse a Azure AD como, la configuración de privacidad o el tipo de cuenta de usuario.
 
 ### <a name="enrollment-status-page-settings-change"></a>Cambio de configuración de página de estado de inscripción
 

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener el informe de uso del buzón de correo para conocer las actividades de los usuarios con un buzón de usuario.
-ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949137"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126572"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de buzones
 
@@ -37,8 +37,8 @@ El **Informe de uso del buzón** de correo proporciona información acerca de lo
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
-    
-2. En la lista desplegable **seleccionar un informe** , seleccione **Exchange** \> **uso de buzones**de Exchange.
+2. Seleccione **Ver más** en **usuarios activos-servicios de 365 de Microsoft**. 
+3. En la lista desplegable **usuarios activos** , seleccione uso **Exchange** de \> **buzones** de Exchange.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretar el informe de uso del buzón
 
@@ -57,4 +57,3 @@ Para obtener una vista del **Uso del buzón** de la organización, consulte los 
 |9.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** .  <br/> |
 |||
    
-
