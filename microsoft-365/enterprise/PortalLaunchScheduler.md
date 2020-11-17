@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo puede iniciar el portal mediante el programador de inicio del portal
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087672"
+ms.locfileid: "49123588"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Iniciar el portal mediante el programador de inicio del portal
 
 Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que emplean el contenido en el sitio. El inicio del portal en ondas es una parte importante de la garantía de que los usuarios tienen una experiencia sin problemas y de forma eficaz para obtener acceso a un nuevo portal de SharePoint Online. 
 
-El lanzamiento en ondas es una forma clave de implementar el portal, como se detalla en [planear el plan de implementación de lanzamiento de portal en SharePoint Online](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). El programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de lanzamiento en fases o oleada administrando las redirecciones para el nuevo portal. Durante cada una de las ondas, puede recopilar los comentarios de los usuarios y supervisar el rendimiento durante cada una de las ondas de implementación. Esto tiene la ventaja de presentar lentamente el portal, lo que le ofrece la posibilidad de pausar y resolver problemas antes de continuar con la siguiente ola y, en última instancia, garantizar una experiencia positiva para los usuarios. 
+El lanzamiento en ondas es una forma clave de implementar el portal, como se detalla en [planear el plan de implementación de lanzamiento de portal en SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). El programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de lanzamiento en fases o oleada administrando las redirecciones para el nuevo portal. Durante cada una de las ondas, puede recopilar los comentarios de los usuarios y supervisar el rendimiento durante cada una de las ondas de implementación. Esto tiene la ventaja de presentar lentamente el portal, lo que le ofrece la posibilidad de pausar y resolver problemas antes de continuar con la siguiente ola y, en última instancia, garantizar una experiencia positiva para los usuarios. 
 
 Hay dos tipos de redirección: 
 - bidireccional: iniciar un nuevo portal moderno de SharePoint Online para reemplazar un portal clásico o moderno de SharePoint existente 
