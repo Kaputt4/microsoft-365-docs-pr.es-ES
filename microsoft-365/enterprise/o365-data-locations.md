@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493690"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135996"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -127,6 +127,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | País | Ciudad |
 | --- | --- |
 | Australia | Sídney, Melbourne |
+| Brasil | Rio, Campinas |
 | Canadá | Quebec City, Toronto |
 | Unión Europea | Austria (Viena), Finlandia (Helsinki), Francia (París, Marsella), Irlanda (Dublín), Países Bajos (Ámsterdam) |
 | Francia | Paris, Marsella |
@@ -892,19 +893,19 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 
 | Servicio | Ubicación |
 | --- | --- |
-| Exchange Online | Geografía global 3: América |
-| OneDrive para la Empresa | Geografía global 3: América |
-| SharePoint Online | Geografía global 3: América |
+| Exchange Online | Brasil |
+| OneDrive para la Empresa | Brasil |
+| SharePoint Online | Brasil |
 | Skype Empresarial | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
-| Office Online y Office Mobile | Geografía global 3: América |
-| EOP | Geografía global 3: América |
+| Microsoft Teams | Brasil |
+| Office Online y &amp; Mobile | Brasil |
+| EOP | Brasil |
 | Intune | Estados Unidos |
-| MyAnalytics | Geografía global 3: América |
+| MyAnalytics | Brasil |
 | Planner | Estados Unidos |
 | Sway | Estados Unidos |
 | Yammer | Estados Unidos |
-| Servicios de OneNote | Geografía global 3: América |
+| Servicios de OneNote | Brasil |
 | Stream | Estados Unidos |
 | Whiteboard | Estados Unidos |
 | Formularios | Estados Unidos |
