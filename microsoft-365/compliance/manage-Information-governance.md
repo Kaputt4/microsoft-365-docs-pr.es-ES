@@ -13,13 +13,13 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Implemente las funciones de Gobierno de la información de Microsoft en Microsoft 365 para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: c85fd74f0e3259c40f16bc2faa766b3313239134
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: Implemente las funciones de Gobierno de la información de Microsoft para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
+ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071471"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087119"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de la información de Microsoft en Microsoft 365
 
@@ -29,7 +29,7 @@ Use las funciones de Gobierno de la información de Microsoft (a veces abreviado
 
 ![Gobierne los datos: información de gobierno y administración de registros](../media/information-governance-records-management.png)
 
-¿Quiere saber cómo proteger los datos? Obtenga información sobre la [Microsoft Information Protection en Microsoft 365](information-protection.md).
+¿Desea proteger sus datos? Obtenga información sobre [Microsoft Information Protection en Microsoft 365](information-protection.md).
 
 ## <a name="information-governance"></a>Información de gobierno
 

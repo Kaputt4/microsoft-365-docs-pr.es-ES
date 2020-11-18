@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906828"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135984"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
-Si su suscripción termina, ya sea porque expira o porque decide cancelarla, el acceso a los servicios, aplicaciones y datos de clientes de Microsoft 365 va a través de varios Estados antes de que la suscripción esté completamente desactivada o sin *aprovisionar*. Si tiene constancia de esta progresión, estará mejor preparado para devolver la suscripción a un estado activo antes de que sea demasiado tarde o, si está abandonando Microsoft 365, realice una copia de seguridad de los datos antes de que se eliminen en último término.
+Si su suscripción termina, ya sea porque expira o porque decide cancelarla, el acceso a los servicios, aplicaciones y datos de clientes de Microsoft 365 pasa por varios Estados antes de que la suscripción se haya desactivado o *eliminado* por completo. Si tiene constancia de esta progresión, estará mejor preparado para devolver la suscripción a un estado activo antes de que sea demasiado tarde o, si está abandonando Microsoft 365, realice una copia de seguridad de los datos antes de que se eliminen en último término.
 
 Lea esta información importante antes de ponerse en contacto [con el soporte técnico de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>¿Qué pasa con los datos cuando expira una suscripción?
 
-- Si su suscripción expira, pasa por las siguientes fases: caducada/deshabilitada/desaprovisionada. La fase expirada comienza inmediatamente después de que la suscripción ha alcanzado la fecha de finalización.
+- Si su suscripción expira, pasa por las siguientes fases: expirado/deshabilitado/eliminado. La fase expirada comienza inmediatamente después de que la suscripción ha alcanzado la fecha de finalización.
 - Si desactiva la facturación recurrente en su suscripción anual, pasa por las mismas fases que una suscripción expirada. La primera etapa comienza es el aniversario de la suscripción anual, no a partir de la fecha en que se ha desactivado la configuración de facturación recurrente de la suscripción.
 - Si cancela la suscripción mensual, se deshabilita inmediatamente (en la fecha de cancelación). Esto significa que los usuarios no tienen acceso a los activos de Microsoft 365 de forma inmediata y solo los administradores tienen acceso a los datos durante los próximos 90 días.
 
 En la siguiente tabla se explica qué se puede esperar cuando expire una suscripción de pago de Microsoft 365 para empresas.
 
-| **Active**                                                             | **Expirado <br/> (30 días \* )**                                                | **Deshabilitado <br/> (90 días \* )**                                               | **Desaprovisionada**                                                                         |
+| Activo | Expiradas <br/>(30 días \* ) | Deshabilitado <br/>(90 días \* ) | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Datos accesibles para todos los*                                               | *Datos accesibles para todos los*                                                     | *Datos accesibles solo para administradores*                                             | **Se quitan los datos eliminados <br/> de Azure Active Directory, si otros servicios no los usan** |
 | Los usuarios tienen acceso normal a Microsoft 365, archivos y aplicaciones.   | Los usuarios tienen acceso normal a Microsoft 365, archivos y aplicaciones.              | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                        | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                                     |
@@ -192,16 +192,16 @@ En esta fase, el acceso se limita de forma significativa. Los usuarios no pueden
 
 Como administrador global o de facturación, puede [reactivar la suscripción](reactivate-your-subscription.md) y seguir usando Microsoft 365 con todos los datos de cliente intactos. Si elige no reactivar, [haga una copia de seguridad de los datos](back-up-data-before-switching-plans.md).
 
-### <a name="state-deprovisioned"></a>Estado: desaprovisioned
+### <a name="state-deleted"></a>Estado: eliminado
   
- **Qué es lo que va a pasar:** si no reactiva la suscripción mientras esta está en gracia o desactivada, la suscripción quedará con aprovisionamiento anulado.
+ **Qué esperar:** Si no reactiva la suscripción mientras está en período de gracia o deshabilitada, la suscripción se elimina.
   
 Los administradores y usuarios ya no tienen acceso a los servicios ni aplicaciones de Office incluidos en la suscripción. Todos los datos de los clientes, desde los datos de usuario hasta los documentos y el correo electrónico, se eliminan permanentemente y no se recuperan.
   
 A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como administrador global o de facturación, aún puede tener acceso al centro de administración para administrar otras suscripciones o para comprar nuevas suscripciones para satisfacer sus necesidades empresariales.
   
 > [!NOTE]
-> Si agrega una nueva suscripción del mismo tipo cuyo aprovisionamiento se ha anulado no se restauran los datos asociados a la suscripción con aprovisionamiento anulado.
+> Al agregar una nueva suscripción del mismo tipo que se ha eliminado no se restauran los datos asociados con la suscripción eliminada.
 
 
 > [!NOTE]
