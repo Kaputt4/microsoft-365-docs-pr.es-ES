@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202980"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131078"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202980"
 
 La autenticación de correo electrónico (conocida también como validación de correo electrónico) es un grupo de normas que intentan detener la suplantación (mensajes de correo electrónico de remitentes falsos). En todas las organizaciones de Microsoft 365, EOP usa estos estándares para comprobar el correo electrónico entrante:
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -175,9 +175,9 @@ Para permitir que este remitente envíe correos electrónicos sin autenticar, ca
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creación de una entrada de permiso para el par de remitente y destinatario
 
-Para omitir el filtrado de correo no deseado, algunas partes del filtrado de suplantación de identidad, pero no el filtrado de malware de remitentes específicos, consulte [Creación de listas de remitentes seguros en Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Para omitir el filtrado de correo no deseado, algunas partes del filtrado de phishing, pero no el filtrado de malware de remitentes específicos, consulte [Creación de listas de remitentes seguros en Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Solicitar al remitente que configure de la autenticación de correo electrónico para los dominios que no son de su propiedad
+### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Solicitar al remitente que configure la autenticación de correo electrónico para los dominios que no son de su propiedad
 
 Por el problema del correo no deseado y la suplantación de identidad, Microsoft recomienda la autenticación de correo electrónico para todas las organizaciones de correo electrónico. En lugar de configurar anulaciones manuales en la organización, puede solicitar a un administrador del dominio remitente que configure los registros de autenticación de correo electrónico.
 
@@ -188,7 +188,7 @@ Por el problema del correo no deseado y la suplantación de identidad, Microsoft
 - Si usan remitentes en masa para enviar mensajes de correo electrónico en su nombre, compruebe que el dominio de la dirección De (si les pertenece) se alinee con el dominio que supera el SPF o el DMARC.
 
 - Compruebe que las siguientes ubicaciones (si las usan) se incluyen en el registro de SPF:
-  
+
   - Servidores de correo electrónico locales.
   - Correo electrónico enviado desde un proveedor de software como servicio (SaaS).
   - Correo electrónico enviado desde un servicio de hospedaje en la nube (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services, etc.).

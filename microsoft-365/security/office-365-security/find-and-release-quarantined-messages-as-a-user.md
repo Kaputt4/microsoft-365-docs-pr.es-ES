@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
-ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600350"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130858"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -54,27 +54,16 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 2. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
    - **Recibido**<sup>\*</sup>
-
    - **Remitente**<sup>\*</sup>
-
    - **Asunto**<sup>\*</sup>
-
    - **Motivo de la cuarentena**<sup>\*</sup>
-
    - **¿Liberado?**<sup>\*</sup>
-
    - **Tipo de directiva**<sup>\*</sup>
-
    - **Expira**<sup>\*</sup>
-
    - **Destinatario**
-
    - **Id. de mensaje**
-
    - **Nombre de la directiva**
-
    - **Tamaño**
-
    - **Dirección**
 
    Cuando haya terminado, haga clic en **Guardar** o en **Establecer como predeterminado**.
@@ -82,29 +71,21 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 3. Para filtrar los resultados, haga clic en **Filtrar**. Los filtros disponibles son:
 
    - **Hora de expiración**: Filtrar los mensajes según cuando expiran de la cuarentena:
-
      - **Hoy**
-
      - **Próximos 2 días**
-
      - **Próximos 7 días**
-
      - **Personalizado**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
 
    - **Hora de recepción**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
 
    - **Motivo de la cuarentena**:
-
      - **Masivo**
-
      - **Correo no deseado**
-
      - **Suplantación de identidad**
-     
+
    - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
      - **Política Antiphishing**
-     - **Directiva de filtro de contenido alojado**
-     
+     - **Directiva de filtro de contenido alojado** (directiva anti-spam)
 
    Para borrar el filtro, haga clic en **Borrar**. Para ocultar el control flotante del filtro, haga clic de nuevo en **Filtrar**.
 
@@ -113,7 +94,7 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
    - **Id. de mensaje**: El identificador único global del mensaje. Si selecciona un mensaje de la lista, el valor **Id. de mensaje** aparece en el panel flotante **Detalles** que aparece. Los administradores pueden usar [seguimiento de mensajes](message-trace-scc.md) para buscar mensajes y los valores de Id. de mensaje correspondientes.
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
-   
+
    - **Nombre de directiva**: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    - **Dirección de correo electrónico del destinatario**: Una única dirección de correo electrónico de destinatario.
@@ -165,9 +146,7 @@ Después de seleccionar un mensaje, dispone opciones con respecto a qué hacer c
 - **Ver encabezado del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar los campos y valores del encabezado en profundidad y luego elija **Analizador de encabezados de mensaje de Microsoft** para desplazarse hasta el Analizador de conectividad remota (haga clic con el botón derecho y elija **Abrir en una nueva pestaña** si no desea que Microsoft 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione **Analizar encabezados**:
 
 - **Vista previa del mensaje**: En el panel flotante que aparece, elija una de las siguientes opciones:
-
   - **Vista de código fuente**: Muestra la versión HTML del cuerpo del mensaje con todos los vínculos desactivados.
-  
   - **Vista de texto**: Muestra el cuerpo del mensaje como texto sin formato.
 
 - **Descargar mensaje**: En el panel de flotante que aparece, seleccione **Entiendo los riesgos de descargar este mensaje** para guardar una copia local del mensaje en formato .eml.
@@ -180,9 +159,9 @@ Si no libera o elimina el mensaje, se eliminará cuando expire el período de re
 
 #### <a name="take-action-on-multiple-quarantined-email-messages"></a>Realice una acción en varios mensajes de correo electrónico en cuarentena
 
-Al seleccionar varios mensajes en cuarentena de la lista (hasta 100), se mostrará el panel de control flotante**Acciones en masa**, donde puede realizar las acciones siguientes:
+Al seleccionar varios mensajes en cuarentena de la lista (hasta 100), se mostrará el panel de control flotante **Acciones en masa**, donde puede realizar las acciones siguientes:
 
-- **Liberar mensajes**: Las opciones son las mismas que cuando libera un único mensaje, salvo que no puede seleccionar **Liberar mensajes para destinatarios específicos**; solo puede seleccionar**Liberar mensaje para todos los destinatarios** o **Liberar mensajes para otras personas**.
+- **Liberar mensajes**: Las opciones son las mismas que cuando libera un único mensaje, salvo que no puede seleccionar **Liberar mensajes para destinatarios específicos**; solo puede seleccionar **Liberar mensaje para todos los destinatarios** o **Liberar mensajes para otras personas**.
 
 - **Eliminar mensajes**: Después de hacer clic en **Sí** en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
 
