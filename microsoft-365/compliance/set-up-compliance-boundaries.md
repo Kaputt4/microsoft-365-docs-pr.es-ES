@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que puede buscar un administrador de exhibición de documentos electrónicos en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370406"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131135"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de eDiscovery
 
@@ -219,6 +219,8 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |JPN  <br/> |Asia Pacífico  <br/> |
     |IND  <br/> |Asia Pacífico  <br/> |
     |LAM  <br/> |Infórmenos  <br/> |
+    |NIEVE  <br/> |Europa |
+    |BRA  <br/> |Centros de recursos norteamericanos |
     |||
 
    Si no especifica el parámetro **Region** para un filtro de permisos de búsqueda, se buscará en la región de SharePoint principal de la organización. Los resultados de la búsqueda se exportan al centro de recursos más cercano.
@@ -298,9 +300,9 @@ Tenga en cuenta las siguientes limitaciones al administrar casos de eDiscovery e
 
 - No se recomienda usar filtros de exclusión (como `-not()` el uso de en un filtro de permisos de búsqueda) para un límite de cumplimiento basado en el contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente. 
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
-**Quién puede crear y administrar filtros de permisos de búsqueda (con los cmdlets New-ComplianceSecurityFilter y set-ComplianceSecurityFilter)?**
+**¿Quién puede crear y administrar filtros de permisos de búsqueda (mediante cmdlets de New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter)?**
   
 Para crear, ver y modificar los filtros de permisos de búsqueda, debe ser miembro del grupo de roles administración de la organización en el centro de seguridad & cumplimiento.
   

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: 59537499ed52f44a9d32b8921fd297c5cd7c0d3f
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 13a4bfac34201e81ba13b76791e097891409dd0b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944338"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130845"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a eDiscovery avanzado
 
@@ -68,7 +68,7 @@ Complete los siguientes pasos para agregar usuarios al grupo de roles eDiscovery
 
 3. En la página desplegable administrador de exhibición de documentos electrónicos, haga clic en **Editar** junto a la sección **Administrador de exhibición** de documentos electrónicos.
 
-4. En la página **elegir administrador de exhibición** de documentos electrónicos del asistente editar grupo de roles, haga clic en **elegir administrador de detección**.
+4. En la página **elegir administrador de exhibición** de documentos electrónicos del asistente editar grupo de roles, haga clic en **elegir administrador de exhibición** de documentos electrónicos.
 
 5. Haga clic en **Agregar** y, a continuación, active la casilla de verificación para todos los usuarios que desee agregar al grupo de roles.
 
@@ -107,7 +107,7 @@ Para obtener más información acerca de la configuración y el uso del modelo d
 
 El siguiente paso es crear un caso y empezar a usar la exhibición avanzada de documentos electrónicos. Complete los siguientes pasos para crear un caso y agregar miembros. El usuario que crea el caso se agrega automáticamente como miembro.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de la cuenta de usuario a la que se le han asignado los permisos de eDiscovery adecuados. Los miembros del grupo de roles administración de la organización también pueden crear casos de eDiscovery avanzados.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con una cuenta de usuario a la que se le hayan asignado los permisos de eDiscovery apropiados. Los miembros del grupo de roles administración de la organización también pueden crear casos de eDiscovery avanzados.
 
 2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, en **eDiscovery > avanzadas**.
 
@@ -117,13 +117,13 @@ El siguiente paso es crear un caso y empezar a usar la exhibición avanzada de d
 
 5. Haga clic en **Guardar** para crear el caso.
 
-   Se crea el nuevo caso y se muestra la pestaña **configuración** en el nuevo caso. 
+   Se crea el nuevo caso y se muestra la pestaña **configuración** en el nuevo caso.
 
 6. En el cuadro **permisos de acceso &** de la ficha **configuración** , haga clic en **seleccionar** y, a continuación, haga clic en **Actualizar**.
 
 7. Haga clic en **Actualizar**.
 
-8. En la página desplegable **administrar este caso** , en **administrar miembros** , haga clic en **Agregar** para agregar miembros al caso.
+8. En la página desplegable **administrar este caso** , en **administrar miembros**, haga clic en **Agregar** para agregar miembros al caso.
 
 9. En la lista de personas, active la casilla de verificación situada junto a los nombres de las personas que desea agregar al caso. Como se ha explicado anteriormente, asegúrese de que a las personas que agregue al caso se les haya asignado el permiso de eDiscovery adecuado.
 
@@ -143,7 +143,7 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
    - Los datos del buzón de correo de Exchange, la cuenta de OneDrive y los grupos de Microsoft Teams o Yammer a los que pertenece el custodio pueden "marcarse" como datos de apoyo en el caso.
   
-   - Los datos de custodios se reindizan (por un proceso denominado *indización avanzada* ). Esto ayuda a optimizar la búsqueda en el paso siguiente.
+   - Los datos de custodios se reindizan (por un proceso denominado *indización avanzada*). Esto ayuda a optimizar la búsqueda en el paso siguiente.
   
    - Puede poner una retención en los datos de custodios. Así se conservan los datos que puedan ser relevantes para el caso durante la investigación.
   
@@ -161,18 +161,18 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
 3. **[Agregar datos a un conjunto de revisión](add-data-to-review-set.md)**. Una vez que haya configurado y comprobado que una búsqueda devuelve los datos deseados, el siguiente paso consiste en agregar los resultados de la búsqueda a un conjunto de revisión. Cuando se agregan datos a un conjunto de revisión, los elementos se copian de su ubicación original en una ubicación de almacenamiento segura de Azure. Los datos se vuelven a indizar de nuevo para optimizarlos para realizar búsquedas exhaustivas y rápidas al revisar y analizar elementos en el conjunto de revisiones. Además, también puede [Agregar datos que no son de Office 365 a un conjunto de revisión](load-non-office-365-data-into-a-review-set.md).
 
-   También hay un tipo especial de conjunto de revisión al que puede agregar datos, denominados un *conjunto de revisión de conversación*. Estos tipos de revisión proporcionan capacidades de reconstrucción de conversaciones para reconstruir, revisar y exportar conversaciones encadenadas como las de Microsoft Teams. Para obtener más información, vea [revisar conversaciones en EDiscovery avanzado](conversation-review-sets.md).
+   También hay un tipo especial de conjunto de revisión al que puede agregar datos, denominados un *conjunto de revisión de conversación*. Estos tipos de configuración de revisión proporcionan capacidades de reconstrucción de conversaciones para reconstruir, revisar y exportar conversaciones encadenadas como las de Microsoft Teams. Para obtener más información, vea [revisar conversaciones en EDiscovery avanzado](conversation-review-sets.md).
 
 4. **Revisar y analizar los datos de un conjunto de revisión**. Ahora que los datos están en un conjunto de revisión, puede usar una amplia variedad de herramientas y capacidades para ver y analizar los datos de casos con el objetivo de reducir el conjunto de datos a lo más relevante para el caso que está investigando. Esta es una lista de algunas herramientas y capacidades que puede usar durante este proceso.
 
    - [Ver documentos](view-documents-in-review-set.md). Esto incluye ver los metadatos de cada documento en un conjunto de revisión y ver el documento en su versión nativa o de texto.
 
-   - [Crear consultas y filtros](review-set-search.md). Las consultas de búsqueda se crean con diversos criterios de búsqueda (incluida la capacidad de buscar en todas [las propiedades de los metadatos de archivo](document-metadata-fields-in-advanced-ediscovery.md)) para refinar y refinar los datos de casos a lo que sea más relevante para el caso. También puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a los resultados de una consulta de búsqueda para restringir aún más los resultados. 
+   - [Crear consultas y filtros](review-set-search.md). Las consultas de búsqueda se crean con diversos criterios de búsqueda (incluida la capacidad de buscar en todas [las propiedades de los metadatos de archivo](document-metadata-fields-in-advanced-ediscovery.md)) para refinar y refinar los datos de casos a lo que sea más relevante para el caso. También puede usar la revisión Set filters para aplicar rápidamente condiciones adicionales a los resultados de una consulta de búsqueda para restringir aún más los resultados.
 
    - [Cree y use etiquetas](tagging-documents.md). Puede aplicar etiquetas a los documentos en un conjunto de revisiones para identificar los que responden (o que no responden a las mayúsculas y minúsculas) y, a continuación, usar esas etiquetas al crear consultas de búsqueda para incluir o excluir los documentos etiquetados. También puede etiquetar para determinar los documentos que se van a exportar.
 
-   - [Anotar y censurar documentos](view-documents-in-review-set.md#annotate-view). Puede usar la herramienta de anotación en una revisión para anotar documentos y censurar el contenido de los documentos como producto de trabajo. Durante la revisión, se genera una versión en PDF de un documento anotado o redactado para reducir el riesgo de exportar la versión nativa no censurada del documento.
+   - [Anotar y censurar documentos](view-documents-in-review-set.md#annotate-view). Puede usar la herramienta de anotación en una revisión para anotar documentos y censurar el contenido de los documentos como producto de trabajo. Se genera una versión en PDF de un documento anotado o redactado durante la revisión para reducir el riesgo de exportar la versión nativa no censurada del documento.
 
-   - [Analizar datos de casos](analyzing-data-in-review-set.md). La funcionalidad de análisis en eDiscovery avanzado es eficaz. Después de ejecutar análisis en los datos del conjunto de revisiones, realizaremos análisis como la detección de duplicados, el procesamiento de mensajes de correo electrónico y los temas que pueden ayudarle a reducir el volumen de documentos que tiene que revisar. También se genera un informe de análisis que resume el resultado de la ejecución de análisis. Como se explicó anteriormente, la ejecución de análisis también ejecuta [el modelo de detección de privilegios de clientes de abogados](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
+   - [Analizar datos de casos](analyzing-data-in-review-set.md). La funcionalidad de análisis en eDiscovery avanzado es eficaz. EDiscovery avanzado proporciona una serie de herramientas para analizar los documentos para reducir aún más el volumen de documentos que se van a revisar en un conjunto de revisión. También se generan informes de análisis que resumen el resultado de la ejecución de análisis. Como se explicó anteriormente, la ejecución de análisis también ejecuta [el modelo de detección de privilegios de clientes de abogados](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
 5. **Exportar y descargar datos de casos**. Un paso final después de recopilar, revisar y analizar los datos de casos es exportarlos de la exhibición de documentos electrónicos avanzada para su revisión externa o su revisión por parte de personas ajenas al equipo de investigación. La exportación de datos es un proceso de dos pasos. El primer paso consiste en [exportar](export-documents-from-review-set.md) los datos del conjunto de revisión y copiarlo en una ubicación de almacenamiento de Azure diferente (una proporcionada por Microsoft o una administrada por la organización). A continuación, se usa el explorador de Azure Storage para [Descargar](download-export-jobs.md) los datos en un equipo local. Además de los archivos de datos exportados, los Contains del paquete de exportación también contienen un informe de exportación, un informe de Resumen y un informe de errores.

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: edef506074faa1c2104069e6042ee58111d5e367
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877482"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130904"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuario
 
@@ -76,27 +76,27 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
 
 2. En la página **envíos de usuarios** que aparece, seleccione una de las siguientes opciones:
 
-   1. **Habilitar la característica de mensaje de informe para Outlook (recomendado)** : Seleccione esta opción si usa el complemento de mensajes de informe o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
+   1. **Habilitar la característica de mensaje de informe para Outlook (recomendado)**: Seleccione esta opción si usa el complemento de mensajes de informe o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
-      - **Personalizar el mensaje de confirmación del usuario final** : haga clic en este vínculo. En el control flotante **personalizar mensaje de confirmación** que aparece, configure las siguientes opciones:
+      - **Personalizar el mensaje de confirmación del usuario final**: haga clic en este vínculo. En el control flotante **personalizar mensaje de confirmación** que aparece, configure las siguientes opciones:
 
-      - **Antes de enviar** : en los cuadros de mensaje **título** y **confirmación** , escriba el texto descriptivo que verán los usuarios antes de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío (correo no deseado, correo deseado, phish, etc.).
+      - **Antes de enviar**: en los cuadros de mensaje **título** y **confirmación** , escriba el texto descriptivo que verán los usuarios antes de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío (correo no deseado, correo deseado, phish, etc.).
 
         Como se indicó, si selecciona una opción que envía los mensajes notificados a Microsoft, también se agregará el siguiente texto a la notificación:
 
         > El correo electrónico se enviará tal cual a Microsoft para su análisis. Algunos mensajes de correo electrónico pueden contener información personal o confidencial.
 
-      - **Después del envío** : haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) . En los cuadros de texto **título** y **confirmación** , escriba el texto descriptivo que los usuarios verán después de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío.
+      - **Después del envío**: haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) . En los cuadros de texto **título** y **confirmación** , escriba el texto descriptivo que los usuarios verán después de que informen de un mensaje mediante el complemento de mensajes de informe. Puede usar la variable% Type% para incluir el tipo de envío.
 
       Cuando haya terminado, haga clic en **Guardar**. Para borrar estos valores, haga clic en **restaurar** de nuevo en la página **envíos de usuarios** .
 
-      - **Enviar los mensajes notificados a** : realice una de las siguientes selecciones:
+      - **Enviar los mensajes notificados a**: realice una de las siguientes selecciones:
 
-        - **Microsoft (recomendado)** : no se usa el buzón de envíos de usuario (todos los mensajes que se han informado van a Microsoft).
+        - **Microsoft (recomendado)**: no se usa el buzón de envíos de usuario (todos los mensajes que se han informado van a Microsoft).
 
-        - **Microsoft y un buzón personalizado** : en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Los envíos de usuarios Irán a Microsoft para su análisis y al buzón de correo personalizado para que los analice el administrador o el equipo de operaciones de seguridad.
+        - **Microsoft y un buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Los envíos de usuarios Irán a Microsoft para su análisis y al buzón de correo personalizado para que los analice el administrador o el equipo de operaciones de seguridad.
 
-        - **Buzón personalizado** : en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador los reenvíe por sí mismos.
+        - **Buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador los reenvíe por sí mismos.
 
         > [!NOTE]
         > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas. 
@@ -106,7 +106,7 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
       > [!CAUTION]
       > Si ha [deshabilitado la notificación de correo no deseado en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) con directivas de buzón de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán informar de los mensajes a Microsoft en Outlook en la web mediante el complemento de mensajes de informe.
 
-   - **Deshabilitar la característica de mensaje de informe para Outlook** : Seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento de mensajes de informe o la creación de informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
+   - **Deshabilitar la característica de mensaje de informe para Outlook**: Seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento de mensajes de informe o la creación de informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
       Seleccione **usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón existente que ya esté en Office 365. Debe ser un buzón existente en Exchange online que pueda recibir correo electrónico.
 
@@ -121,17 +121,17 @@ Los mensajes que se envían a los buzones personalizados deben seguir un formato
 donde SafetyAPIAction es uno de los siguientes valores enteros:
 
 - 1: correo no deseado
-- 2: NotJunk
-- 3: phish
+- 2: correo deseado
+- 3: suplantación de identidad
 
 En el siguiente ejemplo:
 
-- El mensaje se está notificando como phish.
+- El mensaje se está notificando como suplantación de identidad.
 - El identificador de mensaje de red es 49871234-6dc6-43e8-ABCD-08d797f20abe.
 - La IP del remitente es 167.220.232.101.
 - La dirección de es test@contoso.com.
-- La línea de asunto del mensaje es "test phish Submission"
+- La línea de asunto del mensaje es "probar el envío de suplantación de identidad"
 
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Los mensajes que no siguen este formato no se mostrarán correctamente en el portal de envíos.

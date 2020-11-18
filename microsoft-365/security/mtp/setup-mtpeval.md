@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 47f4ceeebd50784b1880a028ebe2698012c406da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 503b7a6a6b3ad6394293e9f70dbdd336f6bee9dd
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844829"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131314"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configurar el entorno del laboratorio de prueba de Microsoft 365 defender 
 
@@ -31,35 +31,15 @@ ms.locfileid: "48844829"
 
 
 **Se aplica a:**
-- Microsoft 365 defender 
+- Microsoft 365 Defender 
 
 
 La creación de un entorno de prueba de Microsoft 365 defender o un entorno piloto y su implementación es un proceso de tres fases:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Preparar el entorno piloto o el laboratorio de evaluación de Microsoft 365 defender" />
-      <br/>Fase 1: preparación </a><br>
-    </td>
-     <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 defender" />
-      <br/>Fase 2: configuración </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
-Configure cada pilar de Microsoft 365 defender para su laboratorio de prueba de Microsoft 365 defender o entorno piloto y incorpore los puntos de conexión." />
-      <br/>Fase 3: configurar & incorporado </a><br>
-</td>
+|[![Fase 1: preparación](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fase 1: preparación](prepare-mtpeval.md) |![Fase 2: configurar](../../media/phase-diagrams/setup.png)<br/>Fase 2: configurar |[![Fase 3: incorporada](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fase 3: incorporada](config-mtpeval.md) | [![Volver a la prueba piloto](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Volver a la guía piloto](mtp-pilot.md) |
+|--|--|--|--|
+||*Ya está aquí.*  | | |
 
-
-  </tr>
-</table>
 
 Actualmente está en la fase de configuración. Siga los pasos iniciales para acceder al centro de seguridad 365 de Microsoft y, a continuación, configure el entorno de prueba o el entorno piloto.
 
@@ -178,5 +158,5 @@ En esta fase, se le guiará a:
 
 
 ## <a name="next-step"></a>Paso siguiente
-|![Fase 3: configurar & incorporado](../../media/config-onboard.png) <br>[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada pilar de Microsoft 365 defender para su laboratorio de prueba de Microsoft 365 defender o entorno piloto y incorpore los puntos de conexión.
+|[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada pilar de Microsoft 365 defender para su laboratorio de prueba de Microsoft 365 defender o entorno piloto y incorpore los puntos de conexión.
 |:-------|:-----|

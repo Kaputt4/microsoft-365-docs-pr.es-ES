@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845473"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131326"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -39,7 +39,7 @@ Si su suscripción incluye a Microsoft defender para Office 365, puede usar [Off
 
 - [Datos adjuntos seguros de Microsoft defender para Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Directivas antiphishing en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo** , **más agresivo** o **más agresivo**.
+- [Directivas antiphishing en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo**, **más agresivo** o **más agresivo**.
 
 Compruebe que las características de defender para Office 365 están activadas.
 
@@ -51,21 +51,21 @@ Informar de los mensajes de suplantación de identidad resulta útil para ajusta
 
 Puede examinar los encabezados del mensaje de suplantación de identidad (phishing) para ver si hay algo que puede hacer usted mismo para evitar que lleguen más mensajes de suplantación de identidad. En otras palabras, el examen de los encabezados de los mensajes puede ayudarle a identificar cualquier configuración de su organización que sea responsable de permitir los mensajes de suplantación de identidad (phishing) en.
 
-En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report** en los encabezados de mensaje para ver si hay indicios de correo no deseado o de filtrado de phish en el valor de veredicto de filtrado de correo no deseado (SFV). Los mensajes que omiten el filtrado tendrán una entrada de `SCL:-1` , lo que significa que una de las configuraciones ha permitido este mensaje mediante la anulación del correo no deseado o los veredictos que el servicio ha determinado. Para obtener más información sobre cómo obtener los encabezados de los mensajes y la lista completa de todos los encabezados de mensajes contra correo no deseado y antiphishing disponibles, vea [encabezados de mensajes de correo no deseado en Microsoft 365](anti-spam-message-headers.md).
+En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report** de los encabezados de mensaje para ver indicaciones sobre el filtrado de correo no deseado o de suplantación de identidad en el valor de veredicto de filtrado de correo no deseado (SFV). Los mensajes que omiten el filtrado tendrán una entrada de `SCL:-1` , lo que significa que una de las configuraciones ha permitido este mensaje mediante la invalidación de los pedidos de correo no deseado o de suplantación de identidad (phishing) determinados por el servicio. Para obtener más información sobre cómo obtener los encabezados de los mensajes y la lista completa de todos los encabezados de mensajes contra correo no deseado y contra phishing disponibles, vea [encabezados de mensajes de correo no deseado en Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Procedimientos recomendados para mantener la protección
 
 - En una base mensual, ejecute [calificación segura](../mtp/microsoft-secure-score.md) para evaluar la configuración de seguridad de la organización.
 
-- Para los mensajes que acaben en cuarentena por error o para los mensajes que se permitan, le recomendamos que los busque en [el explorador de amenazas y en las detecciones en tiempo real](threat-explorer.md). Puede buscar por remitente, destinatario o identificador de mensaje. Una vez que encuentre el mensaje, haga clic en el tema para ver los detalles. Para un mensaje en cuarentena, Compruebe cómo se encuentra la "tecnología de detección" para poder usar el método adecuado para invalidar. Para un mensaje permitido, mire para ver qué directiva permitió el mensaje. 
+- Para los mensajes que acaben en cuarentena por error o para los mensajes que se permitan, le recomendamos que los busque en [el explorador de amenazas y en las detecciones en tiempo real](threat-explorer.md). Puede buscar por remitente, destinatario o identificador de mensaje. Una vez que encuentre el mensaje, haga clic en el tema para ver los detalles. Para un mensaje en cuarentena, Compruebe cómo se encuentra la "tecnología de detección" para poder usar el método adecuado para invalidar. Para un mensaje permitido, mire para ver qué directiva permitió el mensaje.
 
-- El correo falsificado se etiqueta como phish en defender para Office 365. A veces la suplantación de identidad es benigna y, a veces, los usuarios no quieren estar en cuarentena. Para minimizar el impacto en los usuarios, revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md). Una vez que haya revisado y realizado las invalidaciones necesarias, puede confiar en [configurar la inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para poner en **cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
+- El correo falsificado se etiqueta como phishing en defender para Office 365. A veces la suplantación de identidad es benigna y, a veces, los usuarios no quieren estar en cuarentena. Para minimizar el impacto en los usuarios, revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md). Una vez que haya revisado y realizado las invalidaciones necesarias, puede confiar en [configurar la inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para poner en **cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
 
 - Puede repetir el paso anterior para la suplantación (dominio o usuario). El informe de suplantación se encuentra en información sobre el panel de **Administración de amenazas** \> **Dashboard** \> **Insights**.
 
 - Revise periódicamente el [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).
 
-- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en la lista Permitir remitente o permitir dominio en las directivas contra correo no deseado. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente bloquearía el correo no deseado y los filtros de phish. En lugar de permitir el dominio, debe corregir el problema subyacente.
+- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en la lista Permitir remitente o permitir dominio en las directivas contra correo no deseado. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente se bloquearían mediante los filtros de correo no deseado o de suplantación de identidad (phishing). En lugar de permitir el dominio, debe corregir el problema subyacente.
 
   La mejor forma de tratar con los mensajes legítimos que están bloqueados por Microsoft 365 (falsos positivos) que implican a los remitentes de su dominio es configurar completamente y por completo los registros de DMARC, DKIM y DMARC en DNS para _todos_ los dominios de correo electrónico:
 
@@ -74,7 +74,7 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
   - Usar el error de hardware ( \- todos) para asegurarse de que los sistemas de correo electrónico que están configurados para ello rechacen a los remitentes no autorizados. Puede usar [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para identificar a los remitentes que usan su dominio para que pueda incluir remitentes de terceros autorizados en su registro de SPF.
 
   Para obtener instrucciones de configuración, consulte:
-  
+
   - [Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado](use-dkim-to-validate-outbound-email.md)

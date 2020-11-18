@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 240ffd7ec8d46da33c43ec2f9cb50cf59c89f11b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984955"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131302"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configuración de los pilares de 365 defender de Microsoft para el entorno de prueba o el entorno piloto
 
@@ -38,29 +38,11 @@ ms.locfileid: "48984955"
 
 La creación de un entorno de prueba de Microsoft 365 defender o un entorno piloto y su implementación es un proceso de tres fases:
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Preparar el entorno piloto o el laboratorio de prueba de Microsoft 365 defender" />
-      <br/>Fase 1: preparación </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="Configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 defender" />
-      <br/>Fase 2: configuración </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="Configurar cada pilar de Microsoft 365 defender para su laboratorio de prueba de Microsoft 365 defender o entorno piloto y los extremos incorporados" />
-      <br/>Fase 3: configurar & incorporado </a><br>
-</td>
-  </tr>
-</table>
+|[![Fase 1: preparación](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fase 1: preparación](prepare-mtpeval.md) |[![Fase 2: configurar](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[Fase 2: configurar](setup-mtpeval.md) |![Fase 3: incorporada](../../media/phase-diagrams/onboard.png)<br/>Fase 3: incorporada | [![Volver a la prueba piloto](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Volver a la guía piloto](mtp-pilot.md) |
+|--|--|--|--|
+|| |*Ya está aquí.* | |
 
 Actualmente se encuentra en la fase de configuración.
-
 
 La preparación es fundamental para todas las implementaciones correctas. En este artículo, se le guiará en los puntos que debe tener en cuenta a la hora de preparar la implementación de Microsoft defender para el punto de conexión.
 
@@ -88,7 +70,7 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
 
    ![Página de la Directiva de administración de amenazas de seguridad of_Office 365 de & de seguridad del centro de cumplimiento](../../media/mtp-eval-32.png)
  
-2. Haga clic en **anti-phishing** , seleccione **crear** y rellene el nombre y la descripción de la Directiva. Haga clic en **Siguiente**.
+2. Haga clic en **anti-phishing**, seleccione **crear** y rellene el nombre y la descripción de la Directiva. Haga clic en **Siguiente**.
 
    ![Página de la Directiva de la Directiva antiphishing del centro de cumplimiento de la & de seguridad of_Office 365, donde puede asignar un nombre a la Directiva](../../media/mtp-eval-33.png)
 
@@ -200,7 +182,7 @@ Hay un módulo de PowerShell denominado analizador de configuración de la *prot
    > [!NOTE]
    > Si no ve este mensaje, puede significar que ya se ha habilitado Microsoft defender para la integración de datos de identidad. Sin embargo, si no está seguro, póngase en contacto con su administrador de TI para confirmarlo. 
 
-3. Vaya a **configuración** , active el botón de alternancia **de Microsoft defender para integración de identidades** y, a continuación, haga clic en **Guardar**. 
+3. Vaya a **configuración**, active el botón de alternancia **de Microsoft defender para integración de identidades** y, a continuación, haga clic en **Guardar**. 
 
    ![Página de configuración de of_the de imágenes donde debe activar el botón de alternancia de Microsoft defender para la integración de identidades y, a continuación, haga clic en guardar](../../media/mtp-eval-55.png)
    
@@ -308,5 +290,5 @@ Para obtener una guía más completa, consulte [Activar Microsoft 365 defender](
 A continuación, puede simular un ataque y ver cómo las capacidades cruzadas del producto detectan, crean alertas y responden automáticamente a un ataque de archivos no deseados en un extremo.
 
 ## <a name="next-step"></a>Paso siguiente
-|![Fase de simulación de ataques](../../media/mtp/run-sim.png) <br>[Fase de simulación de ataques](mtp-pilot-simulate.md) | Ejecute la simulación de ataques para su entorno piloto de Microsoft 365 defender.
+|[Fase de simulación de ataques](mtp-pilot-simulate.md) | Ejecute la simulación de ataques para su entorno piloto de Microsoft 365 defender.
 |:-------|:-----|

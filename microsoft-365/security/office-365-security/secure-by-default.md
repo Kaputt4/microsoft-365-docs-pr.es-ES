@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información acerca de la configuración de seguridad de forma predeterminada en Exchange Online Protection (EOP)
-ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126666"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131102"
 ---
 # <a name="secure-by-default-in-office-365"></a>Seguro de forma predeterminada en Office 365
 
@@ -41,7 +41,7 @@ Microsoft 365 organizaciones con buzones de correo en Exchange online están pro
 1. El correo electrónico con el malware sospechoso se pondrá en cuarentena automáticamente y se notificará a los destinatarios. Vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 1. El correo electrónico de suplantación de identidad identificado como "alta confianza" se controlará de acuerdo con la acción contra la Directiva contra correo no deseado. Consulte [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
-Debido a que Microsoft desea mantener a nuestros clientes seguros de forma predeterminada, algunos invalidaciones de los inquilinos no se aplican a malware o phish de confianza alta. Estas invalidaciones incluyen:
+Debido a que Microsoft desea mantener a nuestros clientes seguros de forma predeterminada, algunos invalidaciones de los inquilinos no se aplican para el malware o la suplantación de identidad de confianza alta. Estas invalidaciones incluyen:
 
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
 - Remitentes seguros de Outlook

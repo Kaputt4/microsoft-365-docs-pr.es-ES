@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842067"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131350"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ejecutar las simulaciones de ataque de Microsoft 365 defender  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Se aplica a:**
-- Microsoft 365 defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="Planeación de un proyecto piloto de Microsoft 365 defender" />
-      <br/>Pensado </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Preparar el entorno piloto o el laboratorio de prueba de Microsoft 365 defender" />
-      <br/>Párelo </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Ejecutar las simulaciones de ataque de Microsoft 365 defender" />
-      <br/>Simular ataque </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Cierre y resuma el piloto de Microsoft 365 defender" />
-      <br/>Cerrar y resumir </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![Planificación](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planeación](mtp-pilot-plan.md) |[![Preparación](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Declaración](prepare-mtpeval.md) | ![Simular ataque](../../media/phase-diagrams/3-simluate.png)<br/>Simular ataque| [![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[Cerrar y resumir](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*Ya está aquí.* | |
 
 Actualmente está en la fase de simulación de ataques.
 
@@ -369,9 +331,9 @@ Hay un solo buzón interno y un dispositivo necesarios para este escenario. Tamb
 
     1.  Mire los resultados y vea si puede identificar el correo electrónico que ha abierto.  El mensaje puede tardar hasta dos horas en aparecer en la caza avanzada. Si el entorno de correo electrónico es grande y hay muchos resultados, es posible que desee usar la **opción Mostrar filtros** para buscar el mensaje. 
 
-   En el ejemplo, el correo electrónico se envió desde una cuenta de Yahoo. Haga clic en el **+** icono situado junto a **Yahoo.com** en la sección SenderFromDomain y, a continuación, haga clic en **aplicar** para agregar el dominio seleccionado a la consulta.  Use el dominio o la cuenta de correo electrónico que se usó para enviar el mensaje de prueba en el paso 1 de ejecutar la simulación para filtrar los resultados.  Vuelva a ejecutar la consulta para obtener un conjunto de resultados más pequeños para comprobar que se ve el mensaje de la simulación.
+           En el ejemplo, el correo electrónico se envió desde una cuenta de Yahoo. Haga clic en el **+** icono situado junto a **Yahoo.com** en la sección SenderFromDomain y, a continuación, haga clic en **aplicar** para agregar el dominio seleccionado a la consulta.  Use el dominio o la cuenta de correo electrónico que se usó para enviar el mensaje de prueba en el paso 1 de ejecutar la simulación para filtrar los resultados.  Vuelva a ejecutar la consulta para obtener un conjunto de resultados más pequeños para comprobar que se ve el mensaje de la simulación.
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![Captura de pantalla de los filtros. Use filtros para restringir la búsqueda y encontrar lo que está buscando más rápido.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -394,7 +356,7 @@ Hay un solo buzón interno y un dispositivo necesarios para este escenario. Tamb
 
 5.  A continuación, incluya la información sobre los datos adjuntos (por ejemplo, el nombre de archivo, los hash) en el conjunto de resultados. Para ello, únase a la tabla **EmailAttachmentInfo** . Los campos comunes que se usan para la combinación, en este caso son **NetworkMessageId** y **RecipientObjectId**.
 
-La siguiente consulta también incluye una línea adicional "| **Project-Rename EmailTimestamp = timestamp** "que le ayudarán a identificar qué marca de tiempo está relacionada con el correo electrónico frente a las marcas de tiempo relacionadas con acciones de archivo que agregará en el paso siguiente.
+    La siguiente consulta también incluye una línea adicional "| **Project-Rename EmailTimestamp = timestamp**"que le ayudarán a identificar qué marca de tiempo está relacionada con el correo electrónico frente a las marcas de tiempo relacionadas con acciones de archivo que agregará en el paso siguiente.
 
     ```console
     EmailEvents 
@@ -473,9 +435,9 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
     ![Captura de pantalla de la página reglas de detección que muestra la regla y los detalles de ejecución](../../media/mtp/fig27b.png) 
 
-En esta página, puede seleccionar la regla de detección, que abrirá una página de detalles. 
+    En esta página, puede seleccionar la regla de detección, que abrirá una página de detalles. 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![Captura de pantalla de la página datos adjuntos de correo electrónico donde puede ver el estado de la ejecución de la regla, desencadenar alertas y acciones, editar la detección, etc.](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ejercicios adicionales tutoriales de búsqueda avanzada
 
@@ -484,7 +446,7 @@ Para obtener más información acerca de la búsqueda avanzada, las siguientes d
 >[!NOTE]
 >Prepárese con su propia cuenta de GitHub para ejecutar las consultas de la caza en el entorno del laboratorio de pruebas piloto.  
 
-|  El título  |  Description  |  Descargar MP4  |  Ver en YouTube  |  CSL archivo que usar  |
+|  El título  |  Descripción  |  Descargar MP4  |  Ver en YouTube  |  CSL archivo que usar  |
 |:-----|:-----|:-----|:-----|:-----|
 | Episodio 1: conceptos básicos de KQL | Trataremos los conceptos básicos de las funcionalidades de búsqueda avanzada en Microsoft 365 defender. Obtenga información sobre los datos de búsqueda avanzada disponibles y la sintaxis y los operadores de KQL básicos. | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [Episodio 1: archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episodio 2: combinaciones | Seguiremos aprendiendo sobre los datos de la búsqueda avanzada y cómo combinar tablas. Obtenga información sobre las combinaciones internas, externas, únicas y semicombinadas, así como los matices del Kusto de innerunique predeterminado. | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [Episodio 2: archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

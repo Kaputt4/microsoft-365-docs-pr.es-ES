@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087756"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131206"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -334,7 +334,7 @@ Están disponibles las siguientes vistas:
   - **Reputación de dirección URL de EOP**: reputación de dirección URL malintencionada.
   - **Filtro de phish general**: señales de suplantación de identidad basadas en reglas de analista.
   - **Otros**
-  - **Zap de phish**<sup>2</sup>: no hay ningún mensaje de suplantación automática de purga de horas.
+  - **Zap de phish**<sup>2</sup>: purga automática de cero horas de mensajes de suplantación de identidad.
   - **Detonación de dirección URL**<sup>1</sup>
   - **Suplantación de usuario**<sup>1</sup>: suplantación de usuarios definida por el administrador o aprendida a través de la inteligencia de buzones.
 

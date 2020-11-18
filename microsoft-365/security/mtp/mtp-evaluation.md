@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846489"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130887"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Crear un entorno piloto o un laboratorio de prueba de Microsoft 365 defender 
 
@@ -33,7 +33,7 @@ ms.locfileid: "48846489"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 La finalidad de crear este entorno de prueba o un entorno piloto es ilustrar las capacidades completas e integradas de Microsoft 365 defender. Experimente cómo esta solución de seguridad inteligente detecta, evita, investiga automáticamente y responde a las amenazas avanzadas de su organización. 
 
@@ -54,11 +54,13 @@ Esta guía le ayudará a:
 
 Hay tres fases para crear un entorno de laboratorio de prueba de Microsoft 365 defender e implementarlo:
 
-|Fase | Description | 
+![Fases de implementación: preparación, configuración, incorporación](../../media/phase-diagrams/deployment-phases.png)
+
+|Fase | Descripción | 
 |:-------|:-----|
-| ![Fase 1: preparación](../../media/prepare.png)<br>[Fase 1: preparación](prepare-mtpeval.md)| Obtenga información sobre lo que debe tener en cuenta al implementar Microsoft 365 defender en un laboratorio de pruebas o un entorno piloto: <br><br>-Partes interesadas y la firma <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración
-|  ![Fase 2: configuración](../../media/setup.png) <br>[Fase 2: configuración](setup-mtpeval.md)|  Siga los pasos iniciales para acceder al centro de seguridad de Microsoft 365 para configurar el entorno piloto o el laboratorio de pruebas de Microsoft 365 defender. Se le guiará a:<br><br>-Inscríbase en la versión de prueba de Microsoft 365 E5 <br>  -Configurar dominio<br>-Asignar licencias de Microsoft 365 E5<br>-Completar el Asistente de configuración en el portal|
-|  ![Fase 3: configurar & incorporado](../../media/config-onboard.png) <br>[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada uno de los puntos de conexión y los pilares de 365 defender de Microsoft. Se le guiará a:<br><br>-Configurar Microsoft defender para Office 365<br>-Configurar Microsoft Cloud App Security<br>-Configurar Microsoft defender para identidad<br>-Configurar Microsoft defender para el punto de conexión
+|[Fase 1: preparación](prepare-mtpeval.md)| Obtenga información sobre lo que debe tener en cuenta al implementar Microsoft 365 defender en un laboratorio de pruebas o un entorno piloto: <br><br>-Partes interesadas y la firma <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración
+|[Fase 2: configuración](setup-mtpeval.md)|  Siga los pasos iniciales para acceder al centro de seguridad de Microsoft 365 para configurar el entorno piloto o el laboratorio de pruebas de Microsoft 365 defender. Se le guiará a:<br><br>-Inscríbase en la versión de prueba de Microsoft 365 E5 <br>  -Configurar dominio<br>-Asignar licencias de Microsoft 365 E5<br>-Completar el Asistente de configuración en el portal|
+|[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada uno de los puntos de conexión y los pilares de 365 defender de Microsoft. Se le guiará a:<br><br>-Configurar Microsoft defender para Office 365<br>-Configurar Microsoft Cloud App Security<br>-Configurar Microsoft defender para identidad<br>-Configurar Microsoft defender para el punto de conexión
 
 
 ## <a name="in-scope"></a>En el ámbito
@@ -71,7 +73,7 @@ Las siguientes tareas se encuentran en el ámbito de esta guía:
     -   Asignar licencias de Microsoft 365 E5
     -   Finalización del Asistente para la instalación en el portal
 -   Configurar todos los pilares de 365 defender de Microsoft según los procedimientos recomendados
-    -   Microsoft defender para Office 365
+    -   Microsoft Defender para Office 365
     -   Microsoft Defender for Identity
     -   Microsoft Cloud App Security
     -   Microsoft Defender para punto de conexión
@@ -84,5 +86,5 @@ Las siguientes opciones están fuera del ámbito de esta guía de implementació
 -   Pruebas de penetración en el entorno de producción
 
 ## <a name="next-step"></a>Paso siguiente
-![Fase 1: preparación](../../media/prepare.png) <br>[Fase 1: preparación](prepare-mtpeval.md) 
+[Fase 1: preparación](prepare-mtpeval.md) 
 <br> Preparar el entorno piloto o el laboratorio de prueba de Microsoft 365 defender
