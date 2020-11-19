@@ -212,6 +212,19 @@
           href: activity-reports/activity-reports.md
         - name: Supervisar la productividad de los usuarios mediante la calificación de Productividad
           href: productivity/productivity-score.md
+          items:
+            - name: Colaboración de contenido
+              href: productivity/content-collaboration.md
+            - name: Comunicación
+              href: productivity/communication.md
+            - name: Movilidad
+              href: productivity/mobility.md
+            - name: Trabajo en equipo
+              href: productivity/teamwork.md
+            - name: Estado de las Aplicaciones de Microsoft 365
+              href: productivity/apps-health.md
+            - name: Crear registros DNS en cualquier host DNS
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: Cambiar la información de contacto de la organización
           href: manage/change-address-contact-and-more.md
         - name: Actualizar la información de contacto de administrador
