@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre el nuevo Office 365 Datacenter GEOS y cómo usar la opción de residencia de datos para solicitar un movimiento de los datos principales a un nuevo geográfico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333717"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349249"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Movimiento de datos básicos a un nuevo centro de datos de Microsoft 365 GEOS
 
@@ -48,6 +48,7 @@ Los clientes existentes que tienen sus datos de clientes principales almacenados
 |**Suiza, Liechtenstein**| Unión Europea | Suiza | Diciembre de 2019 |
 |**Alemania**| Unión Europea | Alemania | Diciembre de 2019 |
 |**Noruega**| Unión Europea | Noruega | Abril de 2020 |
+|**Brasil**| América | Brasil | Noviembre de 2020 |
 
 A partir del 1 de octubre de 2020, los clientes con una suscripción a Office 365 Education incluida en el inquilino no tienen derecho a la migración.
 

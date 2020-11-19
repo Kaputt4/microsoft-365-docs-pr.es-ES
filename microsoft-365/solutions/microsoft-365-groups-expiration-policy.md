@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377228"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350717"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
@@ -34,7 +34,7 @@ Cuando un grupo expira, se "elimina temporalmente", lo que significa que todaví
 Los administradores pueden especificar un período de expiración y los grupos inactivos que alcanzan el final de dicho período, y no se renuevan, se eliminarán. (Esto incluye a los equipos archivados). El período de expiración comienza cuando se crea el grupo o en la fecha en que se renovó por última vez. A los propietarios de grupos se les enviará automáticamente un correo electrónico antes de la expiración que les permite renovar el grupo para otro intervalo de expiración. Los usuarios de Microsoft Teams verán las notificaciones persistentes en Teams.
 
 Los grupos que se están usando activamente se renuevan automáticamente. Cualquiera de las acciones siguientes renovará automáticamente un grupo:
-- SharePoint: ver, editar, descargar, mover, compartir o cargar archivos.
+- SharePoint: ver, editar, descargar, mover, compartir o cargar archivos. (Ver una página de SharePoint no se cuenta como una acción para la renovación automática).
 - Outlook: unirse a un grupo, leer o escribir un mensaje de grupo del grupo y como un mensaje (Outlook en la web).
 - Microsoft Teams: visitar un canal de Teams.
 
@@ -48,14 +48,14 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>¿Quién puede configurar y usar la Directiva de expiración de grupos de 365 de Microsoft?
 
-|Función|Qué pueden hacer|
+|Role|Qué pueden hacer|
 |---------|---------|
 |Office 365 administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de 365 de Microsoft.|
 |Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
-Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la Directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarla, vaya **Azure Active Directory**a  >  **Groups**  >  **expiración**de grupos de Azure Active Directory. Aquí puede establecer la vigencia predeterminada del grupo y especificar la antelación con la que desea que las notificaciones de expiración primero y segundo vayan al propietario del grupo.
+Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la Directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarla, vaya a **Azure Active Directory**  >  **Groups**  >  **expiración** de grupos de Azure Active Directory. Aquí puede establecer la vigencia predeterminada del grupo y especificar la antelación con la que desea que las notificaciones de expiración primero y segundo vayan al propietario del grupo.
 
 La duración del grupo se especifica en días y se puede establecer en 180, 365 o en un valor personalizado especificado por el usuario. El valor personalizado tiene que ser de al menos 30 días.
 

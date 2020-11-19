@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos.
-ms.openlocfilehash: 400c2373ea9c1f6c19e5481c620a657df2c22aa8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842150"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350750"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -94,7 +94,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
 
   Cuando se produce una actividad que coincide con las condiciones de la Directiva de alertas, la alerta que se genera se etiqueta con la categoría definida en esta configuración. Esto le permite realizar un seguimiento y administrar las alertas que tienen la misma configuración de categoría en la página **Ver alertas** en el centro de seguridad y cumplimiento porque puede ordenar y filtrar las alertas basándose en la categoría.
 
-- **Gravedad** de la alerta: similar a la categoría de alerta, asigna un atributo de gravedad ( **bajo** , **medio** , **alto** o **informativo** ) a las directivas de alerta. Al igual que la categoría de alerta, cuando se produce una actividad que coincide con las condiciones de la Directiva de alerta, la alerta que se genera se etiqueta con el mismo nivel de gravedad que se ha establecido para la Directiva de alerta. De nuevo, esto le permite realizar un seguimiento y administrar las alertas que tienen la misma configuración de gravedad en la página **Ver alertas** . Por ejemplo, puede filtrar la lista de alertas para que solo se muestren las alertas con una gravedad **alta** .
+- **Gravedad** de la alerta: similar a la categoría de alerta, asigna un atributo de gravedad (**bajo**, **medio**, **alto** o **informativo**) a las directivas de alerta. Al igual que la categoría de alerta, cuando se produce una actividad que coincide con las condiciones de la Directiva de alerta, la alerta que se genera se etiqueta con el mismo nivel de gravedad que se ha establecido para la Directiva de alerta. De nuevo, esto le permite realizar un seguimiento y administrar las alertas que tienen la misma configuración de gravedad en la página **Ver alertas** . Por ejemplo, puede filtrar la lista de alertas para que solo se muestren las alertas con una gravedad **alta** .
 
     > [!TIP]
     > Al configurar una directiva de alerta, considere la posibilidad de asignar una gravedad más alta a las actividades que puedan dar como resultado consecuencias negativas, como la detección de malware tras la entrega a los usuarios, la visualización de datos confidenciales o clasificados, el uso compartido de datos con usuarios externos u otras actividades que puedan provocar la pérdida de datos o las amenazas de seguridad. Esto puede ayudarle a priorizar las alertas y las acciones que realiza para investigar y resolver las causas subyacentes.
@@ -109,7 +109,7 @@ En la tabla siguiente se enumeran y describen las directivas de alertas predeter
 
 La tabla también indica el plan Office 365 Enterprise y Office 365 US Government, que se requiere para cada uno. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción complementaria correspondiente además de una suscripción a E1/F1/G1 o E3/G3.
 
-| Directiva de alertas predeterminada | Description | Categoría | Suscripción de Office 365 Enterprise |
+| Directiva de alertas predeterminada | Descripción | Categoría | Suscripción de Office 365 Enterprise |
 |:-----|:-----|:-----|:-----|
 |**Se ha detectado un clic en una dirección URL potencialmente malintencionada**|Genera una alerta cuando un usuario protegido mediante [vínculos a prueba](../security/office-365-security/atp-safe-links.md) de errores de la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft defender para Office 365 identifica los cambios en la dirección URL o cuando los usuarios invalidan las páginas de vínculos seguros (en función de la Directiva de vínculos seguros de Microsoft 365 de la organización). Esta directiva de alerta tiene una configuración de gravedad **alta** . Para defender para Office 365 P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Para obtener más información acerca de los eventos que desencadenan esta alerta, consulte [configurar directivas de vínculos seguros](../security/office-365-security/set-up-atp-safe-links-policies.md).|Administración de amenazas|Suscripción complementaria E5/G5 o defender para Office 365 P2|
 |**Resultado de envío de administración completado**|Genera una alerta cuando un [envío del administrador](../security/office-365-security/admin-submission.md) completa el nuevo análisis de la entidad enviada. Se desencadenará una alerta cada vez que se represente un resultado de nuevo análisis a partir de un envío de administración. Estas alertas están destinadas a recordarle que debe [revisar los resultados de](https://protection.office.com/reportsubmission)los envíos anteriores, enviar mensajes de usuario notificados para obtener la comprobación de la directiva más reciente y volver a examinar los veredictos, y determinar si las directivas de filtrado de su organización tienen el impacto previsto. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|E1/F1, E3 o E5|
@@ -134,7 +134,7 @@ La tabla también indica el plan Office 365 Enterprise y Office 365 US Governmen
 |**Volumen inusual de eliminación de archivo**|Genera una alerta cuando se elimina un número inusualmente grande de archivos en SharePoint o OneDrive en un breve período de tiempo. Esta directiva tiene una configuración de gravedad **media** .|Gobierno de la información|E5/G5, defender para Office 365 P2 o la suscripción complementaria Microsoft 365 E5|
 |**Aumento inusual de correo electrónico notificado como phish**|Genera una alerta cuando hay un aumento significativo en el número de personas de la organización mediante el complemento de mensajes de informe en Outlook para notificar los mensajes como phishing mail. Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información sobre este complemento, vea [use the Report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Administración de amenazas|Suscripción complementaria E5/G5 o defender para Office 365 P2|
 |**Suplantación de usuario phish entregada a la bandeja de entrada/carpeta**<sup>1,</sup><sup>2</sup>|Genera una alerta cuando Microsoft detecta que una invalidación de usuario o administrador ha permitido la entrega de un mensaje de suplantación de identidad de usuario a la bandeja de entrada (o a otra carpeta de acceso del usuario) de un buzón. Algunos ejemplos de invalidaciones son una regla de bandeja de entrada o de flujo de correo que permite mensajes de un remitente o dominio específicos, o una directiva contra correo no deseado que permite mensajes de determinados remitentes o dominios. Esta directiva tiene una configuración de gravedad **media** .|Administración de amenazas|Suscripción complementaria E5/G5 o defender para Office 365 P2|
-|**El usuario restringió el envío de correo electrónico**|Genera una alerta cuando una persona de la organización tiene restringido el envío de correo saliente. Normalmente, esto se produce cuando una cuenta se ve comprometida y el usuario aparece en la página **usuarios restringidos** del centro de seguridad & cumplimiento. (Para obtener acceso a esta página, vaya a **Administración de amenazas > revise > usuarios restringidos** ). Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información acerca de los usuarios restringidos, consulte [quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
+|**El usuario restringió el envío de correo electrónico**|Genera una alerta cuando una persona de la organización tiene restringido el envío de correo saliente. Normalmente, esto se produce cuando una cuenta se ve comprometida y el usuario aparece en la página **usuarios restringidos** del centro de seguridad & cumplimiento. (Para obtener acceso a esta página, vaya a **Administración de amenazas > revise > usuarios restringidos**). Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información acerca de los usuarios restringidos, consulte [quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
 |||||
 
 > [!NOTE]
@@ -222,7 +222,7 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 |Administración de dispositivos|||||||
 |Administración de disposición|||||||
 |Administración de cumplimiento de DLP||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Exportar|||||||
+|Export|||||||
 |Hold|||||||
 |Administrar alertas||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configuración de la organización||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -263,7 +263,7 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 
 Una vez que se han generado y mostrado las alertas en la página **Ver alertas** del centro de seguridad y cumplimiento, puede clasificarlas, investigarlas y resolverlas. Estas son algunas de las tareas que puede realizar para administrar las alertas.
 
-- **Asigne un estado a alertas.** Puede asignar uno de los siguientes Estados a Alerts: **Active** (el valor predeterminado), **investigando** , **resuelto** o **desechado**. A continuación, puede filtrar según esta configuración para que se muestren las alertas con la misma configuración de estado. Esta configuración de estado puede ayudar a realizar un seguimiento del proceso de administración de alertas.
+- **Asigne un estado a alertas.** Puede asignar uno de los siguientes Estados a Alerts: **Active** (el valor predeterminado), **investigando**, **resuelto** o **desechado**. A continuación, puede filtrar según esta configuración para que se muestren las alertas con la misma configuración de estado. Esta configuración de estado puede ayudar a realizar un seguimiento del proceso de administración de alertas.
 
 - **Ver detalles de alertas.** Puede seleccionar una alerta para mostrar una página de control flotante con detalles sobre la alerta. La información detallada depende de la Directiva de alerta correspondiente, pero normalmente incluye lo siguiente: nombre de la operación real que ha desencadenado la alerta (por ejemplo, un cmdlet), una descripción de la actividad que desencadenó la alerta, el usuario (o la lista de usuarios) que desencadenó la alerta y el nombre (y vincular a) de la correspondiente directiva de alertas.
 
@@ -281,7 +281,7 @@ Una vez que se han generado y mostrado las alertas en la página **Ver alertas**
 
 - **Suprimir notificaciones de correo electrónico.** Puede desactivar (o suprimir) las notificaciones de correo electrónico de la página de control flotante para una alerta. Cuando se suprimen las notificaciones de correo electrónico, Microsoft no enviará notificaciones cuando se realicen actividades o eventos que cumplan las condiciones de la Directiva de alertas. Pero las alertas se desencadenarán cuando las actividades realizadas por los usuarios cumplan las condiciones de la Directiva de alertas. También puede desactivar las notificaciones de correo electrónico editando la Directiva de alertas.
 
-- **Resolver las alertas.** Puede marcar una alerta como resuelta en la página de control flotante para una alerta (que establece el estado de la alerta como **resuelto** ). A menos que cambie el filtro, las alertas resueltas no se mostrarán en la página **Ver alertas** .
+- **Resolver las alertas.** Puede marcar una alerta como resuelta en la página de control flotante para una alerta (que establece el estado de la alerta como **resuelto**). A menos que cambie el filtro, las alertas resueltas no se mostrarán en la página **Ver alertas** .
 
 ## <a name="viewing-cloud-app-security-alerts"></a>Visualización de alertas de Cloud App Security
 
