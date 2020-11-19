@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: En este artículo se describe cómo puede iniciar el portal mediante el programador de inicio del portal
-ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123588"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356672"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Iniciar el portal mediante el programador de inicio del portal
 
@@ -34,7 +34,7 @@ Hay dos tipos de redirección:
 - bidireccional: iniciar un nuevo portal moderno de SharePoint Online para reemplazar un portal clásico o moderno de SharePoint existente 
 - redirección de página temporal: iniciar un nuevo portal moderno de SharePoint Online sin SharePoint Portal existente
 
-El programador de inicio del portal solo está disponible para iniciar portales modernos de SharePoint Online, como sitios de comunicación y sitios de grupo modernos. Los lanzamientos deben programarse al menos 7 días antes. El número de ondas necesario se determina según el número de usuarios previsto. Antes de programar un inicio del portal, debe ejecutarse la [herramienta diagnósticos de página para SharePoint](https://aka.ms/perftool) para comprobar que la Página principal del portal está en buen estado. Al final del inicio del portal, todos los usuarios con permisos para el sitio podrán tener acceso al nuevo sitio. 
+El programador de inicio del portal solo está disponible para iniciar los portales modernos de SharePoint Online (es decir, los sitios de comunicación). Los lanzamientos deben programarse al menos 7 días antes. El número de ondas necesario se determina según el número de usuarios previsto. Antes de programar un inicio del portal, debe ejecutarse la [herramienta diagnósticos de página para SharePoint](https://aka.ms/perftool) para comprobar que la Página principal del portal está en buen estado. Al final del inicio del portal, todos los usuarios con permisos para el sitio podrán tener acceso al nuevo sitio. 
 
 Para obtener más información acerca de cómo iniciar correctamente un portal, siga los principios básicos, prácticas y recomendaciones detalladas para [crear, iniciar y mantener un portal saludable](https://docs.microsoft.com/sharepoint/portal-health). 
 
@@ -66,9 +66,11 @@ El número de ondas necesarias depende del tamaño de inicio previsto.
 - 30K + a 100 a 100 usuarios: 5 ondas
 - Más de 100 k usuarios: 5 ondas y póngase en contacto con el equipo de la cuenta de Microsoft
 
-### <a name="steps-for-bi-directional-redirection"></a>Pasos para la redirección bidireccional
+### <a name="steps-for-bidirectional-redirection"></a>Pasos para la redirección bidireccional
 
-La redirección bidireccional consiste en iniciar un nuevo portal moderno de SharePoint Online para reemplazar un portal clásico o moderno de SharePoint existente. Los usuarios de ondas activas se redirigirán al nuevo sitio independientemente de si navegan hasta el sitio antiguo o el nuevo. Los usuarios de una onda no iniciada que intenten obtener acceso al nuevo sitio se redirigirán de vuelta al sitio antiguo hasta que se inicie la onda. Si tiene administradores o propietarios que necesitan tener acceso a los sitios antiguos y nuevos sin redirigirse, asegúrese de que aparecen en la lista mediante el `WaveOverrideUsers` parámetro. 
+La redirección bidireccional consiste en iniciar un nuevo portal moderno de SharePoint Online para reemplazar un portal clásico o moderno de SharePoint existente. Los usuarios de ondas activas se redirigirán al nuevo sitio independientemente de si navegan hasta el sitio antiguo o el nuevo. Los usuarios de una onda no iniciada que intenten obtener acceso al nuevo sitio se redirigirán de vuelta al sitio antiguo hasta que se inicie la onda. 
+
+Si tiene administradores o propietarios que necesitan tener acceso a los sitios antiguos y nuevos sin redirigirse, asegúrese de que aparecen en la lista mediante el `WaveOverrideUsers` parámetro. Solo se admite la redirección entre la Página principal predeterminada del sitio antiguo y la Página principal predeterminada en el nuevo sitio.
 
 Para migrar los usuarios de un sitio de SharePoint existente a un nuevo sitio de SharePoint de forma escalonada:
 

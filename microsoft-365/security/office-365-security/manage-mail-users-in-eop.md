@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Obtenga información sobre cómo administrar usuarios de correo en Exchange Online Protection (EOP), incluido el uso de la sincronización de directorios, el EAC y PowerShell para administrar usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201788"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356732"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
 
@@ -63,7 +63,7 @@ Para organizaciones independientes de EOP con un pequeño número de usuarios, p
 
    - **Apellidos**
 
-   - <sup>\*</sup>**Nombre para mostrar**: de forma predeterminada, este cuadro muestra los valores de los cuadros **nombre**, **iniciales**y **Apellido** . Puede aceptar este valor o cambiarlo. El valor debe ser único y tener una longitud máxima de 64 caracteres.
+   - <sup>\*</sup>**Nombre para mostrar**: de forma predeterminada, este cuadro muestra los valores de los cuadros **nombre**, **iniciales** y **Apellido** . Puede aceptar este valor o cambiarlo. El valor debe ser único y tener una longitud máxima de 64 caracteres.
 
    - <sup>\*</sup>**Alias**: escriba un alias único, con un máximo de 64 caracteres, para el usuario
 
@@ -115,7 +115,7 @@ Use la ficha **información de contacto** para ver o cambiar la información de 
 
   - **Office**
   - **Teléfono particular**
-  - **Página web   **
+  - **Página web**
   - **Notas**
 
 #### <a name="organization"></a>Organización
@@ -258,11 +258,11 @@ En EOP independiente, la sincronización de directorios está disponible para lo
 
 - Se recomienda usar la sincronización de directorios con las siguientes características:
 
-  - Listas de remitentes **seguros de Outlook y listas de remitentes bloqueados**: cuando se sincronizan con el servicio, estas listas tienen prioridad sobre el filtrado de correo no deseado en el servicio. Esto permite a los usuarios administrar su propia lista de remitentes seguros y la lista de remitentes bloqueados con entradas individuales de remitente y dominio. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listas de remitentes **seguros de Outlook y listas de remitentes bloqueados**: cuando se sincronizan con el servicio, estas listas tienen prioridad sobre el filtrado de correo no deseado en el servicio. Esto permite a los usuarios administrar su propia lista de remitentes seguros y la lista de remitentes bloqueados con entradas individuales de remitente y dominio. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Bloqueo perimetral basado en directorios (DBEB)**: para obtener más información sobre DBEB, vea [use Directory based Edge blocking to Reject messages sent to invalid Recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Acceso de usuario final a cuarentena**: para obtener acceso a los mensajes en cuarentena, los destinatarios deben tener un identificador de usuario y una contraseña válidos en el servicio. Para obtener más información acerca de la cuarentena, vea [Buscar y liberar mensajes en cuarentena como un usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+  - **Acceso de usuario final a cuarentena**: para obtener acceso a los mensajes en cuarentena, los destinatarios deben tener un identificador de usuario y una contraseña válidos en el servicio. Para obtener más información acerca de la cuarentena, vea [Buscar y liberar mensajes en cuarentena como un usuario](find-and-release-quarantined-messages-as-a-user.md).
 
   - **Reglas de flujo de correo (también conocidas como reglas de transporte)**: cuando se usa la sincronización de directorios, los usuarios y grupos existentes de Active Directory se cargan automáticamente en la nube y, a continuación, se pueden crear reglas de flujo de correo dirigidas a usuarios o grupos específicos sin tener que agregarlos manualmente en el servicio. Tenga en cuenta que los [grupos de distribución dinámicos](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) no se pueden sincronizar mediante la sincronización de directorios.
 

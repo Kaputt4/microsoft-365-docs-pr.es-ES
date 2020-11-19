@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos híbridos y independientes.
-ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 997f157432dced474ccc17bf47cf9af68f4b8c08
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842409"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356720"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -28,9 +28,9 @@ ms.locfileid: "48842409"
 
 Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. EOP se incluye en todas las organizaciones de Microsoft 365 con buzones de correo de Exchange Online. Sin embargo, EOP también está disponible en los siguientes escenarios locales:
 
-- **En un escenario independiente** : EOP proporciona protección de correo electrónico basada en la nube para su organización de Exchange local o para cualquier otra solución de correo SMTP local.
+- **En un escenario independiente**: EOP proporciona protección de correo electrónico basada en la nube para su organización de Exchange local o para cualquier otra solución de correo SMTP local.
 
-- **En una implementación híbrida** : EOP se puede configurar para proteger su entorno de correo electrónico y controlar el enrutamiento de correo cuando tiene una mezcla de buzones locales y en la nube.
+- **En una implementación híbrida**: EOP se puede configurar para proteger su entorno de correo electrónico y controlar el enrutamiento de correo cuando tiene una mezcla de buzones locales y en la nube.
 
 En estos escenarios, EOP puede simplificar la administración de su entorno de correo electrónico y aliviar muchas de las cargas que se incluyen en el mantenimiento de hardware y software local.
 
@@ -42,13 +42,13 @@ Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el c
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico de correo electrónico de Internet o comentarios de clientes que entran en EOP y a través de la conexión, antimalware, reglas de flujo de correo y filtrado de contenido, antes de que se muestre el veredicto de correo no deseado o de cuarentena, o la entrega de correo del usuario final.":::
 
-- Cuando un mensaje entrante entra en EOP, inicialmente pasa por el filtrado de conexiones, que comprueba la reputación del remitente. En este punto, la mayoría de los correos no deseados se interrumpen y se rechazan mediante EOP. Para obtener más información, consulte [Configurar filtrado de la conexión](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide).
+- Cuando un mensaje entrante entra en EOP, inicialmente pasa por el filtrado de conexiones, que comprueba la reputación del remitente. En este punto, la mayoría de los correos no deseados se interrumpen y se rechazan mediante EOP. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
 
-- A continuación, se inspecciona el mensaje para detectar indicios de malware. Si se encuentra malware en el mensaje o los datos adjuntos, el mensaje se enruta a un almacén de cuarentena solo de administrador. Puede obtener más información sobre cómo configurar el antimalware [aquí](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide).
+- A continuación, se inspecciona el mensaje para detectar indicios de malware. Si se encuentra malware en el mensaje o los datos adjuntos, el mensaje se enruta a un almacén de cuarentena solo de administrador. Puede obtener más información sobre cómo configurar el antimalware [aquí](configure-anti-malware-policies.md).
 
 - Los mensajes continúan a través del filtrado de directivas, donde se evalúan de acuerdo con las reglas de flujo de correo personalizadas (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. Las comprobaciones de prevención de pérdida de datos (DLP) también ocurren en este punto (Exchange Enterprise CAL con servicios).
 
-- A continuación, el mensaje pasa por el filtrado de contenido (también conocido como anti-spam). Un mensaje que indica que este filtro es correo no deseado *o phish* puede enviarse a cuarentena o la carpeta de correo no deseado de un usuario, entre otras opciones. Para obtener más información, consulte [Configure anti-spam Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) y [Configure anti-phishing Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide).
+- A continuación, el mensaje pasa por el filtrado de contenido (también conocido como anti-spam). Un mensaje que indica que este filtro es correo no deseado *o phish* puede enviarse a cuarentena o la carpeta de correo no deseado de un usuario, entre otras opciones. Para obtener más información, consulte [Configure anti-spam Policies](configure-your-spam-filter-policies.md) y [Configure anti-phishing Policies](configure-anti-phishing-policies-eop.md).
 
 Cualquier mensaje que pase todas estas capas de protección se entrega correctamente al destinatario.
 
@@ -58,11 +58,11 @@ Para obtener más información, consulte [Order and Precedence of email Protecti
 
 Los planes de suscripción de EOP disponibles son los siguientes:
 
-- **EOP independiente** : debe inscribirse en EOP para proteger su organización de correo electrónico local.
+- **EOP independiente**: debe inscribirse en EOP para proteger su organización de correo electrónico local.
 
-- **Características de EOP en Exchange Online** : cualquier suscripción que incluya Exchange Online (independiente o como parte de Microsoft 365) utiliza EOP para proteger los buzones de correo de Exchange Online.
+- **Características de EOP en Exchange Online**: cualquier suscripción que incluya Exchange Online (independiente o como parte de Microsoft 365) utiliza EOP para proteger los buzones de correo de Exchange Online.
 
-- **Exchange Enterprise cal con servicios** : Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
+- **Exchange Enterprise cal con servicios**: Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
 
 Para obtener información acerca de los requisitos, límites importantes y disponibilidad de características en todos los planes de suscripción de EOP, vea la [Descripción del servicio protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
@@ -96,7 +96,7 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 El contenido de la Ayuda para administradores de EOP consta de las siguientes categorías principales:
 
-- [Configure EOP, día 1, para Microsoft defender para office 365 Admins](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): configure EOP Protection and Detection Tools en el centro de Microsoft defender para Office 365.
+- [Configure EOP, día 1, para Microsoft defender para office 365 Admins](protect-against-threats.md): configure EOP Protection and Detection Tools en el centro de Microsoft defender para Office 365.
 
 - [Características de EOP](eop-features.md): proporciona una lista de las características que están disponibles en EOP.
 

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Obtenga información sobre cómo la formación de simulación de ataques en el centro de seguridad 365 de Microsoft afecta a los empleados y información sobre los resultados de simulación y formación.
-ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 6a8ee15f14475a1cebb169ab49bdb0f490c81345
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950988"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357356"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
@@ -54,4 +54,4 @@ En la sección acciones recomendadas se detallan las recomendaciones disponibles
 
 ## <a name="related-links"></a>Vínculos relacionados
 
-**Simulador de ataque** [cree una simulación de ataque de suplantación de identidad](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) y [cree una carga para entrenar a sus usuarios](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)
+**Simulador de ataque** [cree una simulación de ataque de suplantación de identidad](attack-simulation-training.md) y [cree una carga para entrenar a sus usuarios](attack-simulation-training-payloads.md)

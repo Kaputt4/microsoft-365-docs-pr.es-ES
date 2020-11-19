@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846693"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357616"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Información general sobre los incidentes en Microsoft 365 defender
 
@@ -34,8 +34,10 @@ ms.locfileid: "48846693"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
+> ¿Quiere experimentar Microsoft 365 defender? Puede [evaluarlo en un entorno de laboratorio](https://aka.ms/mtp-trial-lab) o [ejecutar el proyecto piloto en producción](https://aka.ms/m365d-pilotplaybook).
+>
 
 
 Los incidentes se basan en alertas relacionadas. Las alertas se crean cuando se detecta un evento o una actividad maliciosa en la red. Las alertas individuales proporcionan pistas valiosas sobre un ataque en curso. Sin embargo, los ataques suelen usar varios vectores y técnicas para llevar a cabo una infracción. Las pistas individuales de Piecing juntas pueden ser complicadas y laboriosas.
@@ -57,7 +59,7 @@ Los defensores de la seguridad también pueden cambiar el nombre de los incident
 
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulta también
 - [Priorizar incidentes](incident-queue.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

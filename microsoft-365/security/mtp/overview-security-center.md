@@ -17,18 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 70fd278dd4cdeadd5e8911705ac3f87d981a3de0
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906848"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356876"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> ¿Quiere experimentar Microsoft 365 defender? Puede [evaluarlo en un entorno de laboratorio](https://aka.ms/mtp-trial-lab) o [ejecutar el proyecto piloto en producción](https://aka.ms/m365d-pilotplaybook).
+>
 La administración de la seguridad de su empresa para proteger contra un panorama de amenazas en constante evolución plantea muchos retos. Es posible que tenga demasiadas soluciones de seguridad con varios lugares para configurar un gran número de controles. Es posible que tenga que lidiar con conocer qué controles son los más eficaces y que presentarán nuevos retos para los empleados. Los equipos de seguridad pueden tener dificultades para encontrar el equilibrio adecuado de seguridad y productividad.
 
 Escriba Microsoft 365 Security Center: el nuevo hogar para la supervisión y administración de la seguridad en las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura de Microsoft. Aquí puede ver fácilmente el estado de seguridad de su organización, actuar para configurar dispositivos, usuarios y aplicaciones, y obtener alertas para actividades sospechosas. El centro de seguridad de Microsoft 365 está diseñado para ayudar a los administradores de seguridad y a los equipos de operaciones de seguridad a administrar y proteger su organización.
@@ -74,6 +75,6 @@ Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidade
 - [Buscar de forma proactiva amenazas](advanced-hunting-overview.md) de intentos de intrusión y actividad de infracciones que afectan el correo electrónico, los datos, los dispositivos y las cuentas
 - [Comprenda las campañas y técnicas de ataque más recientes con el](latest-attack-campaigns.md) análisis de amenazas
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulta también
 
 - [Portales de seguridad de Microsoft](portals.md)

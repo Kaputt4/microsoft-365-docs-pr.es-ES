@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 56b712c73d63bfcb06d5d35d627facb229668c59
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: fa22d445b0e4517bedd1c04378271e561ecb6703
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464149"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357508"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -63,17 +63,17 @@ Estos son los servicios dependientes que se deben incluir en la asignación de a
 En esta tabla se enumeran las directivas que deben revisitarse y los vínculos a cada directiva en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md), que tienen la directiva más amplia para todas las aplicaciones de Office.
 
 |Nivel de protección|Directivas|Información adicional para la implementación de Teams|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo.|
-|        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir equipos y servicios dependientes en la asignación de aplicaciones en la nube.|
-|        |[Los usuarios de riesgo alto tienen que cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
-|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
-|        |[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
-|        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir equipos y servicios dependientes en esta Directiva.|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir equipos y servicios dependientes en la asignación de aplicaciones en la nube.|
+||[Los usuarios de riesgo alto tienen que cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
+||[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
+||[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
+||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir equipos y servicios dependientes en esta Directiva.|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo. Incluir equipos y servicios dependientes en esta Directiva.|
-|         |[Requerir equipos *y* dispositivos móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir equipos y servicios dependientes en esta Directiva.|
+||[Requerir equipos *y* dispositivos móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir equipos y servicios dependientes en esta Directiva.|
 |**Extremadamente regulado**|[Requerir *siempre* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Independientemente de la identidad del usuario, la organización usará la MFA. Incluir equipos y servicios dependientes en esta Directiva. |
-| | |
+|
 
 ## <a name="teams-dependent-services-architecture"></a>Arquitectura de servicios dependientes de Teams
 
@@ -94,27 +94,27 @@ Microsoft Teams define lo siguiente:
 Las directivas de acceso condicional solo se aplican al acceso de invitado en Microsoft Teams porque hay una cuenta B2B de Azure AD correspondiente.
 
 <!--
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
---> 
+-->
 
 Para las directivas recomendadas que permitan el acceso de invitados y usuarios externos con una cuenta B2B de Azure AD, vea [directivas para permitir el acceso a cuentas de B2B y de invitado externo](identity-access-policies-guest-access.md).
 
 ### <a name="guest-access-in-teams"></a>Acceso de invitado a Teams
 
-Además de las directivas para los usuarios que son internos a su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir, de forma individual para cada usuario, que los usuarios externos a su empresa u organización obtengan acceso a los recursos de Microsoft Teams e interactúen con personas internas para cosas como conversaciones de grupo, chat y reuniones. 
+Además de las directivas para los usuarios que son internos a su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir, de forma individual para cada usuario, que los usuarios externos a su empresa u organización obtengan acceso a los recursos de Microsoft Teams e interactúen con personas internas para cosas como conversaciones de grupo, chat y reuniones.
 
 Para obtener más información sobre el acceso de invitado y cómo implementarlo, vea  [Team Guest Access](https://docs.microsoft.com/microsoftteams/guest-access).
 
 ### <a name="external-access-in-teams"></a>Acceso externo en Microsoft Teams
 
-El acceso externo se confunde a veces con el acceso de invitado, por lo que es importante estar claro que estos dos mecanismos de acceso no interno son muy diferentes en realidad. 
+El acceso externo se confunde a veces con el acceso de invitado, por lo que es importante estar claro que estos dos mecanismos de acceso no interno son muy diferentes en realidad.
 
 El acceso externo es una forma de que los usuarios de Microsoft Teams de un dominio externo puedan buscar, llamar, chatear y configurar reuniones con los usuarios de Microsoft Teams. Los administradores de Microsoft Teams configuran el acceso externo en el nivel de organización. Para obtener más información, consulte [administrar el acceso externo en Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access).
 
 Los usuarios de acceso externo tienen menos acceso y funcionalidad que una persona que se ha agregado mediante el acceso de invitado. Por ejemplo, los usuarios de acceso externo pueden chatear con los usuarios internos con Microsoft Teams, pero no pueden tener acceso a los canales, archivos u otros recursos del equipo.
 
-El acceso externo no usa las cuentas de usuario B2B de Azure AD y, por lo tanto, no usa directivas de acceso condicional. 
+El acceso externo no usa las cuentas de usuario B2B de Azure AD y, por lo tanto, no usa directivas de acceso condicional.
 
 ## <a name="teams-policies"></a>Directivas de Microsoft Teams
 
@@ -142,7 +142,7 @@ Teams también le permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información sobre las directivas de permisos de la aplicación, consulte [Manage App Permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ![Paso 4: directivas para las aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
@@ -150,4 +150,3 @@ Configure las directivas de acceso condicional para:
 
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-

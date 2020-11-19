@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6ac5b67d589db57d449ba61f07668b10b32706d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845725"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356684"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -36,25 +36,25 @@ Esta es una guía de inicio rápido que rompe la configuración de defender para
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 ### <a name="subscriptions"></a>Suscripciones
 
 Las características de protección contra amenazas se incluyen en *todas las* suscripciones de Microsoft u Office 365; sin embargo, algunas suscripciones tienen características avanzadas. En la tabla siguiente se enumeran las características de protección que se incluyen en este artículo junto con los requisitos mínimos de suscripción.
 
 > [!TIP]
-> Tenga en cuenta que, aparte de las instrucciones para activar la auditoría, *los pasos* inician anti-malware, anti-phishing y anti-spam, que están marcados como parte de Office 365 Exchange Online Protection ( **EOP** ). Esto puede parecer extraño en un artículo de defender para Office 365 hasta que recuerde ( **defender para office 365** ) contiene y se basa en EOP.
+> Tenga en cuenta que, aparte de las instrucciones para activar la auditoría, *los pasos* inician anti-malware, anti-phishing y anti-spam, que están marcados como parte de Office 365 Exchange Online Protection (**EOP**). Esto puede parecer extraño en un artículo de defender para Office 365 hasta que recuerde (**defender para office 365**) contiene y se basa en EOP.
 
 ****
 
 |Tipo de protección|Requisito de suscripción|
 |---|---|
 |Registro de auditoría (para fines de informes)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Protección antimalware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) ( **EOP** )|
+|Protección antimalware|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protección contra phishing|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra correo no deseado|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purgado automático de cero horas (para correo electrónico)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[Defender para Office 365 ](atp-for-spo-odb-and-teams.md)|
 |Protección contra suplantación de identidad avanzada|[Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
@@ -125,7 +125,7 @@ El siguiente procedimiento describe cómo configurar una directiva contra la sup
 
    - En la ficha **acciones** , elija **poner en cuarentena el mensaje**.
 
-   - **Guardar** en la pestaña **revisar la configuración** una vez que haya revisado los cambios. (Si no realizó ningún cambio, **Cancelar** ).
+   - **Guardar** en la pestaña **revisar la configuración** una vez que haya revisado los cambios. (Si no realizó ningún cambio, **Cancelar**).
 
 5. Cierre la página Configuración de directiva predeterminada.
 
@@ -139,7 +139,7 @@ Para obtener más información acerca de las opciones de la Directiva antiphishi
 
 2. En la pestaña **personalizado** , active la configuración personalizada.
 
-3. Expanda **directiva predeterminada de filtro de correo no deseado** , haga clic en **Editar Directiva** y especifique la siguiente configuración:
+3. Expanda **directiva predeterminada de filtro de correo no deseado**, haga clic en **Editar Directiva** y especifique la siguiente configuración:
 
    - En la sección **correo electrónico no deseado y acciones en masa** , establezca el umbral en un valor de 5 o 6.
 
@@ -169,7 +169,7 @@ Para configurar [datos adjuntos seguros](atp-safe-attachments.md), cree al menos
 
      Haga clic en **Siguiente**.
 
-3. En la página **aplicado a** , haga clic en **Agregar una condición** , elija **aplicado si: el dominio del destinatario es** , haga clic en **Agregar** , seleccione su dominio o dominios, haga clic en **Agregar** , haga clic en **listo** y, a continuación, haga clic en **siguiente**.
+3. En la página **aplicado a** , haga clic en **Agregar una condición**, elija **aplicado si: el dominio del destinatario es**, haga clic en **Agregar**, seleccione su dominio o dominios, haga clic en **Agregar**, haga clic en **listo** y, a continuación, haga clic en **siguiente**.
 
 4. Revise la configuración y, a continuación, haga clic en **Finalizar**.
 
@@ -177,11 +177,11 @@ Para configurar [datos adjuntos seguros](atp-safe-attachments.md), cree al menos
 
 Para configurar [vínculos seguros](atp-safe-links.md), revise y modifique la configuración global para vínculos seguros y cree al menos una directiva de vínculos seguros.
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas** ,  >  **Policy**  >  **vínculos seguros ATP** y haga clic en **configuración global** y, a continuación, configure las siguientes opciones:
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas**,  >  **Policy**  >  **vínculos seguros ATP** y haga clic en **configuración global** y, a continuación, configure las siguientes opciones:
 
    - Compruebe **usar vínculos seguros en: Office 365 aplicaciones** está activada: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
-   - **No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros** : Desactive esta opción para hacer un seguimiento de los clics del usuario: desactivar ![ ](../../media/scc-toggle-off.png) .
-   - **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original** : comprobar que esta configuración está activada: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros**: Desactive esta opción para hacer un seguimiento de los clics del usuario: desactivar ![ ](../../media/scc-toggle-off.png) .
+   - **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original**: comprobar que esta configuración está activada: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Cuando haya terminado, haga clic en **Guardar**.
 
@@ -192,8 +192,8 @@ Para configurar [vínculos seguros](atp-safe-links.md), revise y modifique la co
    - En el cuadro **nombre** , escriba un nombre, como `Safe Links` y, a continuación, haga clic en **siguiente**.
 
    - En la página **configuración** , configure las siguientes opciones:
-     - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** : elija **activado**.
-     - **Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams** : elija **activado**.
+     - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: elija **activado**.
+     - **Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams**: elija **activado**.
      - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**
      - **Esperar a que se complete el análisis de URL antes de entregar el mensaje**
      - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**
@@ -201,7 +201,7 @@ Para configurar [vínculos seguros](atp-safe-links.md), revise y modifique la co
 
      Haga clic en **Siguiente**.
 
-4. En la página **aplicado a** , haga clic en **Agregar una condición** , elija **aplicado si: el dominio del destinatario es** , haga clic en **Agregar** , seleccione su dominio o dominios, haga clic en **Agregar** , haga clic en **listo** y, a continuación, haga clic en **siguiente**.
+4. En la página **aplicado a** , haga clic en **Agregar una condición**, elija **aplicado si: el dominio del destinatario es**, haga clic en **Agregar**, seleccione su dominio o dominios, haga clic en **Agregar**, haga clic en **listo** y, a continuación, haga clic en **siguiente**.
 
 5. Revise la configuración y, a continuación, haga clic en **Finalizar**.
 
@@ -209,12 +209,12 @@ Para más información, consulte [Configurar directivas de vínculos seguros](se
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5: comprobar que ATP para SharePoint, OneDrive y Microsoft Teams está activado
 
-Se crean cargas de trabajo como SharePoint, OneDrive y Microsoft Teams para la colaboración. El uso de defender para Office 365 ayuda en el bloqueo y la detección de archivos identificados como malintencionados en los sitios de grupo y las bibliotecas de documentos. Puede leer más sobre cómo funciona [aquí](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).
+Se crean cargas de trabajo como SharePoint, OneDrive y Microsoft Teams para la colaboración. El uso de defender para Office 365 ayuda en el bloqueo y la detección de archivos identificados como malintencionados en los sitios de grupo y las bibliotecas de documentos. Puede leer más sobre cómo funciona [aquí](atp-for-spo-odb-and-teams.md).
 
 > [!IMPORTANT]
 > **Antes de comenzar este procedimiento, asegúrese de que el registro de auditoría ya esté activado en su entorno de Microsoft 365**. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas** :  >  **Policy**  >  **datos adjuntos seguros ATP** y, a continuación, haga clic en **configuración global**.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione Directiva de **Administración de amenazas**:  >  **Policy**  >  **datos adjuntos seguros ATP** y, a continuación, haga clic en **configuración global**.
 
 2. Compruebe que el botón **activar o desactivar ATP para SharePoint, OneDrive y Microsoft Teams** esté a la derecha: ![ alternar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) y, a continuación, haga clic en **Guardar**.
 

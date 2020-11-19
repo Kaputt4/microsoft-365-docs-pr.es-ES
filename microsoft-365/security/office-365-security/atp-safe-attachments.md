@@ -19,18 +19,18 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la característica datos adjuntos seguros de Microsoft defender para Office 365.
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020956"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357225"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Datos adjuntos seguros de Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Datos adjuntos seguros en [Microsoft defender para Office 365](office-365-atp.md) proporciona una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por [protección antimalware en Exchange Online Protection (EOP)](anti-malware-protection.md). En concreto, los datos adjuntos seguros usan un entorno virtual para comprobar los datos adjuntos en los mensajes de correo electrónico antes de que se entreguen a los destinatarios (un proceso conocido como _detonación_ ).
+Datos adjuntos seguros en [Microsoft defender para Office 365](office-365-atp.md) proporciona una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido examinados por [protección antimalware en Exchange Online Protection (EOP)](anti-malware-protection.md). En concreto, los datos adjuntos seguros usan un entorno virtual para comprobar los datos adjuntos en los mensajes de correo electrónico antes de que se entreguen a los destinatarios (un proceso conocido como _detonación_).
 
 Las directivas de datos adjuntos seguros controlan la protección de los datos adjuntos seguros de los mensajes de correo. No hay una directiva de datos adjuntos seguros predeterminada, **por lo que para obtener la protección de datos adjuntos seguros, debe crear una o más directivas de datos adjuntos seguros**. Para obtener instrucciones, consulte [configurar directivas de datos adjuntos seguros en defender para Office 365](set-up-atp-safe-attachments-policies.md).
 
@@ -59,7 +59,7 @@ El análisis de datos adjuntos seguros tiene lugar en la misma región en la que
 
 En esta sección se describe la configuración en directivas de datos adjuntos seguros:
 
-- **Datos adjuntos seguros respuesta de malware desconocida** : esta opción controla la acción para el análisis de malware de datos adjuntos seguros en mensajes de correo electrónico. En la tabla siguiente se describen las opciones disponibles:
+- **Datos adjuntos seguros respuesta de malware desconocida**: esta opción controla la acción para el análisis de malware de datos adjuntos seguros en mensajes de correo electrónico. En la tabla siguiente se describen las opciones disponibles:
 
   ****
 
@@ -69,24 +69,24 @@ En esta sección se describe la configuración en directivas de datos adjuntos s
   |**Monitor**|Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que ocurre con malware detectado. <p> La entrega de mensajes seguros puede retrasarse debido al análisis de datos adjuntos seguros.|Vea dónde se detecta el malware detectado en su organización.|
   |**Bloquear**|Impide la entrega de mensajes con datos adjuntos de malware detectados. <p> Los mensajes se [ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <p> La entrega de mensajes seguros puede retrasarse debido al análisis de datos adjuntos seguros.|Protege a su organización de ataques repetidos con los mismos datos adjuntos de malware. <p> Este es el valor predeterminado y el valor recomendado en las directivas de seguridad estándar y estrictas [preestablecidas](preset-security-policies.md).|
   |**Replace**|Quita los datos adjuntos de malware detectados. <p> Notifica a los destinatarios que se han quitado los datos adjuntos. <p>  Los mensajes se [ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> La entrega de mensajes seguros puede retrasarse debido al análisis de datos adjuntos seguros.|Eleva la visibilidad a los destinatarios de que se quitaron los datos adjuntos debido al malware detectado.|
-  |**Entrega dinámica**|Entrega los mensajes inmediatamente, pero reemplaza los datos adjuntos con marcadores de posición hasta que se complete el análisis de datos adjuntos seguros. <p> Para obtener más información, consulte la sección [directivas de entrega dinámica en datos adjuntos seguros](#dynamic-delivery-in-safe-attachments-policies) , más adelante en este tema.|Evitar retrasos en los mensajes al proteger a los destinatarios de archivos malintencionados <br/> <br/> Permitir a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se lleva a cabo el análisis|
+  |**Entrega dinámica**|Entrega los mensajes inmediatamente, pero reemplaza los datos adjuntos con marcadores de posición hasta que se complete el análisis de datos adjuntos seguros. <p> Para obtener más información, consulte la sección [directivas de entrega dinámica en datos adjuntos seguros](#dynamic-delivery-in-safe-attachments-policies) , más adelante en este tema.|Evite los retrasos de mensajes mientras protege a los destinatarios de archivos malintencionados. <p> Permita a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se realiza el análisis.|
   |
 
-- **Redirigir datos adjuntos en detección: habilitar redirección** y **enviar los datos adjuntos a la siguiente dirección de correo electrónico** : para las acciones **bloquear** , **supervisar** o **reemplazar** , envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para el análisis y la investigación.
+- **Redirigir datos adjuntos en detección: habilitar redirección** y **enviar los datos adjuntos a la siguiente dirección de correo electrónico**: para las acciones **bloquear**, **supervisar** o **reemplazar** , envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para el análisis y la investigación.
 
   La recomendación para la configuración de directivas estándar y estricta es habilitar la redirección. Para obtener más información, consulte [configuración de datos adjuntos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
-- **Aplicar la selección anterior si el análisis de malware para archivos adjuntos se agota el tiempo de espera o error** : la acción especificada por la **respuesta de malware de datos adjuntos seguros** no se realiza en los mensajes, incluso cuando no se completa el análisis de datos adjuntos seguros. Seleccione siempre esta opción si selecciona **Habilitar redirección**. De lo contrario, los mensajes podrían perderse.
+- **Aplicar la selección anterior si el análisis de malware para archivos adjuntos se agota el tiempo de espera o error**: la acción especificada por la **respuesta de malware de datos adjuntos seguros** no se realiza en los mensajes, incluso cuando no se completa el análisis de datos adjuntos seguros. Seleccione siempre esta opción si selecciona **Habilitar redirección**. De lo contrario, los mensajes podrían perderse.
 
-- **Filtros de destinatarios** : debe especificar las condiciones y excepciones de destinatarios que determinan a quién se aplica la Directiva. Puede usar estas propiedades para las condiciones y excepciones:
+- **Filtros de destinatarios**: debe especificar las condiciones y excepciones de destinatarios que determinan a quién se aplica la Directiva. Puede usar estas propiedades para las condiciones y excepciones:
 
   - **El destinatario es**
   - **El dominio del destinatario es**
   - **El destinatario es un miembro de**
 
-  Solo se puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+  Solo se puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-- **Prioridad** : Si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
+- **Prioridad**: Si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
   Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 

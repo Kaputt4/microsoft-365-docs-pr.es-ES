@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 para empresas.
-ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754673"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356996"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para Enterprise para contoso Corporation
 
@@ -67,6 +67,12 @@ Vea los siguientes artículos para obtener más información:
 
   Contoso usa el espectro completo de características de seguridad de Microsoft 365 para la administración de identidades y acceso, la protección contra amenazas, la protección de la información y la administración de seguridad.
 
+Vea estos escenarios y configuraciones de ti adicionales:
+
+- [Respuesta e infraestructura de COVID-19 para un personal híbrido](../solutions/contoso-hybrid-workforce.md)
+
+  Obtenga información sobre cómo contoso actualizó su infraestructura de acceso remoto para el COVID-19 Pandemic y sus nuevas instalaciones y actualiza la infraestructura para un personal híbrido.
+
 - [Equipo para un proyecto secreto](../solutions/contoso-team-for-top-secret-project.md)
 
   Para crear un entorno de colaboración seguro para un proyecto de clave secreta principal, contoso usó un equipo con aislamiento de seguridad.
@@ -80,7 +86,7 @@ Vea los siguientes artículos para obtener más información:
 Obtenga información [sobre contoso Corporation](contoso-overview.md) y las consideraciones de diseño que se trataron al implementar Microsoft 365 para empresas.
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulta también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

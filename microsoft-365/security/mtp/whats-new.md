@@ -1,5 +1,5 @@
 ---
-title: Novedades de Microsoft 365 defender
+title: Novedades de Microsoft 365 Defender
 description: Enumera las nuevas características y funciones de Microsoft 365 defender
 keywords: Novedades en protección contra amenazas de Microsoft, GA, disponibilidad general, capacidades disponibles, nueva
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844709"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357324"
 ---
-# <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 defender
+# <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> ¿Quiere experimentar Microsoft 365 defender? Puede [evaluarlo en un entorno de laboratorio](https://aka.ms/mtp-trial-lab) o [ejecutar el proyecto piloto en producción](https://aka.ms/m365d-pilotplaybook).
+>
 
 Las siguientes características están generalmente disponibles (GA) en la versión más reciente de Microsoft 365 defender.
 
@@ -35,6 +37,9 @@ Fuente RSS: obtener una notificación cuando se actualice esta página copiando 
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> ¿Quiere experimentar Microsoft 365 defender? Puede [evaluarlo en un entorno de laboratorio](https://aka.ms/mtp-trial-lab) o [ejecutar el proyecto piloto en producción](https://aka.ms/m365d-pilotplaybook) .
+>
+
 ## <a name="september-2020"></a>Septiembre de 2020
 - [Tabla IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Buscar eventos relacionados con un controlador de dominio local que ejecuta Active Directory (AD). Esta tabla de esquema de [caza avanzado](advanced-hunting-overview.md) cubre una amplia variedad de eventos relacionados con la identidad y del sistema en el controlador de dominio.
 - [Función AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md) <br> Use esta función en sus consultas de búsqueda avanzada para obtener rápidamente las direcciones IP más recientes asignadas a un dispositivo o las direcciones IP más recientes de una hora específica.

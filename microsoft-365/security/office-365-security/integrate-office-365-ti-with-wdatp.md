@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Use Microsoft defender para Office 365 junto con Microsoft defender para el punto de conexión para obtener información más detallada sobre las amenazas contra sus dispositivos y contenido de correo electrónico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b8bec8d3ebe52de9b4e1b919b2aceee20b5b5b0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842361"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357784"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Usar Microsoft defender para Office 365 junto con Microsoft defender para el punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) se puede configurar para que funcione con [Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection).
+[Microsoft defender para Office 365](office-365-atp.md) se puede configurar para que funcione con [Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection).
 
 La integración de Microsoft defender para Office 365 con Microsoft defender para el punto de conexión puede ayudar a su equipo de operaciones de seguridad a supervisar y emprender acciones rápidamente si los dispositivos de los usuarios están expuestos. Por ejemplo, una vez habilitada la integración, el equipo de operaciones de seguridad podrá ver los dispositivos potencialmente afectados por un mensaje de correo electrónico detectado, así como el número de alertas recientes que se generaron para esos dispositivos en Microsoft defender para el punto de conexión. 
 
@@ -43,7 +43,7 @@ En este ejemplo, puede ver que los destinatarios del mensaje de correo electrón
 > [!TIP]
 > **[Obtenga más información sobre el centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (también conocido como Microsoft defender for Endpoint portal).
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 - Su organización debe tener Microsoft defender para Office 365 (o Office 365 E5) y Microsoft defender para extremo.
     
@@ -65,7 +65,7 @@ La integración de Microsoft defender para Office 365 con Microsoft defender par
     
 5. Vaya al centro de seguridad de Microsoft defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
-6. En la barra de navegación, elija **configuración**. A continuación, en **General** , elija **características avanzadas**.
+6. En la barra de navegación, elija **configuración**. A continuación, en **General**, elija **características avanzadas**.
 
 7. Desplácese hacia abajo hasta **conexión de inteligencia de amenazas de 365 de Office** y active la conexión.<br/>![Conexión de inteligencia de amenazas de Office 365](../../media/mdatp-oatptoggle.png)<br>
 
@@ -73,6 +73,6 @@ La integración de Microsoft defender para Office 365 con Microsoft defender par
 
 [Capacidades de investigación y respuesta de amenazas en Office 365](office-365-ti.md)
   
-[Microsoft defender para Office 365](office-365-atp.md)
+[Microsoft Defender para Office 365](office-365-atp.md)
   
 [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection)

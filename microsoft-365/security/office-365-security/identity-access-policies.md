@@ -18,20 +18,20 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 19e121ce3f85dc31c3bf81c4750300c4016b1222
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072776"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357844"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
-En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube de Microsoft 365, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory (Azure AD). 
+En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube de Microsoft 365, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory (Azure AD).
 
-En esta guía se explica cómo implementar las directivas recomendadas en un entorno recién aprovisionado. La configuración de estas directivas en un entorno de laboratorio independiente permite comprender y evaluar las directivas recomendadas antes de ensayar la implementación en los entornos de preproducción y producción. El entorno recién aprovisionado puede ser solo de nube o híbrido para reflejar las necesidades de evaluación.  
+En esta guía se explica cómo implementar las directivas recomendadas en un entorno recién aprovisionado. La configuración de estas directivas en un entorno de laboratorio independiente permite comprender y evaluar las directivas recomendadas antes de ensayar la implementación en los entornos de preproducción y producción. El entorno recién aprovisionado puede ser solo de nube o híbrido para reflejar las necesidades de evaluación.
 
-## <a name="policy-set"></a>Conjunto de directivas 
+## <a name="policy-set"></a>Conjunto de directivas
 
 El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el nivel de protección al que se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas o a ambas categorías de dispositivos. También indica dónde se configuran estas directivas.
 
@@ -41,35 +41,34 @@ El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el 
 
 Este es un resumen de PDF de una página con vínculos a las directivas individuales:
 
-[![Imagen en miniatura para la protección de identidades y dispositivos para el documento de Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Ver como PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
+[![Imagen en miniatura para la protección de identidades y dispositivos para el documento de Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Ver como PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
-En el resto de este artículo se describe cómo configurar estas directivas. 
+En el resto de este artículo se describe cómo configurar estas directivas.
 
->[!Note]
->Se recomienda requerir el uso de la autenticación multifactor (MFA) antes de inscribir dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. Debe inscribir los dispositivos en Intune para poder aplicar directivas de cumplimiento de dispositivos.
->
+> [!NOTE]
+> Se recomienda requerir el uso de la autenticación multifactor (MFA) antes de inscribir dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. Debe inscribir los dispositivos en Intune para poder aplicar directivas de cumplimiento de dispositivos.
 
 Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las directivas de línea de base en el orden que se indica en esta tabla. Sin embargo, las directivas de MFA para niveles de protección confidenciales y altamente regulados se pueden implementar en cualquier momento.
 
 |Nivel de protección|Directivas|Más información|
-|:---------------|:-------|:----------------|
-|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-modern-authentication)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquearlos.|
-|        |[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|
-|        |[Aplicar directivas de protección de datos de aplicaciones](#apply-app-data-protection-policies)|Una directiva de protección de aplicaciones de Intune por plataforma (Windows, iOS/iPad, Android).|
-|        |[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Habilita la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPados o Android.|
-|        |[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|
-|        |[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Aplica la administración de Intune de los equipos con Windows o MacOS.|
-|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión sea *bajo* , *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
-|         |[Requerir equipos *y* dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos PC (Windows o Mac OS) y teléfonos o tabletas (iOS, iPados o Android).|
+|---|---|---|
+|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-modern-authentication)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquearlos.|
+||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|
+||[Aplicar directivas de protección de datos de aplicaciones](#apply-app-data-protection-policies)|Una directiva de protección de aplicaciones de Intune por plataforma (Windows, iOS/iPad, Android).|
+||[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Habilita la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPados o Android.|
+||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|
+||[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Aplica la administración de Intune de los equipos con Windows o MacOS.|
+|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión sea *bajo*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||
+||[Requerir equipos *y* dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos PC (Windows o Mac OS) y teléfonos o tabletas (iOS, iPados o Android).|
 |**Extremadamente regulado**|[Requerir *siempre* MFA](#require-mfa-based-on-sign-in-risk)|
-| | | |
+|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Asignar directivas a grupos y usuarios
 
-Antes de configurar directivas, identifique los grupos de Azure AD que está usando para cada nivel de protección. Normalmente, la protección de línea de base se aplica a todos los de la organización. Un usuario que se incluya para la protección de línea base y sensible tendrá todas las directivas de línea de base aplicadas, además de las directivas confidenciales. La protección es acumulativa y se aplica la directiva más restrictiva. 
+Antes de configurar directivas, identifique los grupos de Azure AD que está usando para cada nivel de protección. Normalmente, la protección de línea de base se aplica a todos los de la organización. Un usuario que se incluya para la protección de línea base y sensible tendrá todas las directivas de línea de base aplicadas, además de las directivas confidenciales. La protección es acumulativa y se aplica la directiva más restrictiva.
 
-Una práctica recomendada es crear un grupo de Azure AD para la exclusión de acceso condicional. Agregue este grupo a todas las directivas de acceso condicional en el valor **excluir** de la opción **usuarios y grupos** de la sección **asignaciones** . Esto le proporciona un método para proporcionar acceso a un usuario mientras se solucionan problemas de acceso. Solo se recomienda como solución temporal. Supervise si hay cambios en este grupo y asegúrese de que el grupo de exclusión solo se usa como se esperaba. 
+Una práctica recomendada es crear un grupo de Azure AD para la exclusión de acceso condicional. Agregue este grupo a todas las directivas de acceso condicional en el valor **excluir** de la opción **usuarios y grupos** de la sección **asignaciones** . Esto le proporciona un método para proporcionar acceso a un usuario mientras se solucionan problemas de acceso. Solo se recomienda como solución temporal. Supervise si hay cambios en este grupo y asegúrese de que el grupo de exclusión solo se usa como se esperaba.
 
 A continuación, se muestra un ejemplo de asignación de grupo y exclusiones para requerir MFA.
 
@@ -87,7 +86,7 @@ Estos son los resultados:
 
   En este caso, los miembros del grupo de proyecto X superior secreto coinciden con las directivas de acceso condicional de línea base y altamente reguladas. Se combinan los controles de acceso de ambas directivas. Como el control de acceso de la Directiva de acceso condicional altamente regulado es más restrictivo, se utiliza.
 
-Tenga cuidado al aplicar más niveles de protección a grupos y usuarios. Por ejemplo, los miembros del grupo de proyecto X superior secreto deberán usar MFA cada vez que inicien sesión, aunque no estén trabajando en el contenido altamente regulado para el proyecto X.  
+Tenga cuidado al aplicar más niveles de protección a grupos y usuarios. Por ejemplo, los miembros del grupo de proyecto X superior secreto deberán usar MFA cada vez que inicien sesión, aunque no estén trabajando en el contenido altamente regulado para el proyecto X.
 
 Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es importante para la implementación de las etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint.
 
@@ -108,34 +107,34 @@ En las tablas siguientes se describen las opciones de configuración de directiv
 
 En la sección **asignaciones** :
 
-|Configuración|Propiedades|Valores|Notas|
-|:---|:---------|:-----|:----|
-|Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos** : seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
-||Excluir| **Usuarios y grupos** : seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
-|Aplicaciones o acciones en la nube| **Las aplicaciones en la nube > incluyen** | **Seleccione aplicaciones** : seleccione las aplicaciones a las que quiere aplicar esta Directiva. Por ejemplo, seleccione Exchange Online.||
-|Condiciones| | |Configure las condiciones específicas de su entorno y necesidades.|
+|Setting|Propiedades|Valores|Notas|
+|---|---|---|---|
+|Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino.|Comience con el grupo que incluye las cuentas de usuario piloto.|
+||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
+|Aplicaciones o acciones en la nube|**Las aplicaciones en la nube > incluyen**|**Seleccione aplicaciones**: seleccione las aplicaciones a las que quiere aplicar esta Directiva. Por ejemplo, seleccione Exchange Online.||
+|Condiciones|||Configure las condiciones específicas de su entorno y necesidades.|
 ||Riesgo de inicio de sesión||Vea las instrucciones de la tabla siguiente.|
-|||||
+|
 
-**Configuración de las condiciones de riesgo de inicio de sesión**
+### <a name="sign-in-risk-condition-settings"></a>Configuración de las condiciones de riesgo de inicio de sesión
 
 Aplique la configuración del nivel de riesgo en función del nivel de protección de destino.
 
 |Nivel de protección|Valores de nivel de riesgo necesarios|Action|
-|:---------|:-----|:----|
+|---|---|---|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alta, media, baja|Compruebe los tres.|
-|Extremadamente regulado| |Deje todas las opciones desactivadas para exigir siempre la MFA.|
-||||
+|Extremadamente regulado||Deje todas las opciones desactivadas para exigir siempre la MFA.|
+|
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Action|
-|:---|:---------|:-----|:----|
-|Conceder|**Conceder acceso**| | Select |
-|||**Requerir multi-factor Authentication**| Check |
-||**Exigir todos los controles seleccionados** ||Select|
-|||||
+|Setting|Propiedades|Valores|Action|
+|---|---|---|---|
+|Conceder|**Conceder acceso**||Select|
+|||**Requerir multi-factor Authentication**|Check|
+||**Exigir todos los controles seleccionados**||Select|
+|
 
 Elija **seleccionar** para guardar la configuración de **concesión** .
 
@@ -151,21 +150,21 @@ Consulte [este artículo](../../enterprise/microsoft-365-client-support-modern-a
 
 En la sección **asignaciones** :
 
-|Configuración|Propiedades|Valores|Notas|
-|:---|:---------|:-----|:----|
-|Usuarios y grupos|Incluir| **Seleccione usuarios y grupos > usuarios y grupos** : seleccione grupos específicos que contengan cuentas de usuario de destino. |Comience con el grupo que incluye las cuentas de usuario piloto.|
-||Excluir| **Usuarios y grupos** : seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
-|Aplicaciones o acciones en la nube|**Las aplicaciones en la nube > incluyen**| **Seleccione aplicaciones** : seleccione las aplicaciones correspondientes a los clientes que no admiten la autenticación moderna.||
-|Condiciones| **Aplicaciones cliente** | Elija **sí** para **configurar** <br> Desactivar las marcas de verificación para **exploradores** y **aplicaciones móviles y clientes de escritorio** | |
-||||
+|Setting|Propiedades|Valores|Notas|
+|---|---|---|---|
+|Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino.|Comience con el grupo que incluye las cuentas de usuario piloto.|
+||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
+|Aplicaciones o acciones en la nube|**Las aplicaciones en la nube > incluyen**|**Seleccione aplicaciones**: seleccione las aplicaciones correspondientes a los clientes que no admiten la autenticación moderna.||
+|Condiciones|**Aplicaciones cliente**|Elija **sí** para **configurar** <br/> Desactivar las marcas de verificación para **exploradores** y **aplicaciones móviles y clientes de escritorio**||
+|
 
 En la sección **controles de acceso** :
 
-|Configuración|Propiedades|Valores|Action|
-|:---|:---------|:-----|:----|
-|Conceder|**Bloquear acceso**| | Select |
-||**Exigir todos los controles seleccionados** ||Select|
-|||||
+|Setting|Propiedades|Valores|Action|
+|---|---|---|---|
+|Conceder|**Bloquear acceso**||Select|
+||**Exigir todos los controles seleccionados**||Select|
+|
 
 Elija **seleccionar** para guardar la configuración de **concesión** .
 
@@ -184,18 +183,18 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 En la sección **asignaciones** :
 
 |Tipo|Propiedades|Valores|Action|
-|:---|:---------|:-----|:----|
+|---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Select|
-|Riesgo de usuario| **Alto**||Select|
-|||||
+|Riesgo de usuario|**Alto**||Select|
+|
 
 En la segunda sección **asignaciones** :
 
-| Tipo | Propiedades | Valores                  | Action |
-|:-----|:-----------|:------------------------|:------|
-| Acceso | **Permitir acceso** |  | Select  |
-|      |     | **Exigir cambio de contraseña** | Check  |
-|||||
+|Tipo|Propiedades|Valores|Action|
+|---|---|---|---|
+|Access|**Permitir acceso**||Select|
+|||**Exigir cambio de contraseña**|Check|
+|
 
 Elija **listo** para guardar la configuración de **acceso** .
 
@@ -207,32 +206,33 @@ Use esta directiva junto con [configurar la protección con contraseña de Azure
 
 ## <a name="apply-app-data-protection-policies"></a>Aplicar directivas de protección de datos de aplicaciones
 
-Las directivas de protección de aplicaciones (aplicación) definen qué aplicaciones están permitidas y las acciones que pueden llevar a cabo con los datos de la organización. Las opciones disponibles en la aplicación permiten a las organizaciones adaptar la protección a sus necesidades específicas. Para algunos, puede que no sea obvio qué configuración de directiva es necesaria para implementar un escenario completo. Para ayudar a las organizaciones a priorizar la protección de extremos de extremos de cliente móvil, Microsoft ha lanzado una taxonomía para el marco de protección de datos de aplicaciones para iOS y la administración de aplicaciones móviles de Android. 
+Las directivas de protección de aplicaciones (aplicación) definen qué aplicaciones están permitidas y las acciones que pueden llevar a cabo con los datos de la organización. Las opciones disponibles en la aplicación permiten a las organizaciones adaptar la protección a sus necesidades específicas. Para algunos, puede que no sea obvio qué configuración de directiva es necesaria para implementar un escenario completo. Para ayudar a las organizaciones a priorizar la protección de extremos de extremos de cliente móvil, Microsoft ha lanzado una taxonomía para el marco de protección de datos de aplicaciones para iOS y la administración de aplicaciones móviles de Android.
 
-El marco de protección de datos de la aplicación está organizado en tres niveles de configuración distintos, donde cada nivel se basa en el nivel anterior: 
+El marco de protección de datos de la aplicación está organizado en tres niveles de configuración distintos, donde cada nivel se basa en el nivel anterior:
 
-- **Enterprise Basic Data Protection** (nivel 1) garantiza que las aplicaciones están protegidas con PIN y se cifran y realizan operaciones selectivas de borrado. Para dispositivos Android, este nivel valida la atestación del dispositivo de Android. Se trata de una configuración de nivel de entrada que proporciona un control de protección de datos similar en las directivas de buzones de correo de Exchange Online y lo presenta y el llenado del usuario a la aplicación. 
-- La **protección de datos mejorada** de la empresa (nivel 2) introduce los mecanismos de prevención de fugas de datos de aplicaciones y los requisitos mínimos del sistema operativo. Esta es la configuración que se aplica a la mayoría de los usuarios móviles que tienen acceso a datos de trabajo o escuela. 
-- La **alta protección de datos empresariales** (nivel 3) introduce mecanismos avanzados de protección de datos, configuración mejorada de PIN y defensa para la amenaza de aplicaciones móviles. Esta configuración es preferible para los usuarios que tienen acceso a datos de alto riesgo. 
+- **Enterprise Basic Data Protection** (nivel 1) garantiza que las aplicaciones están protegidas con PIN y se cifran y realizan operaciones selectivas de borrado. Para dispositivos Android, este nivel valida la atestación del dispositivo de Android. Se trata de una configuración de nivel de entrada que proporciona un control de protección de datos similar en las directivas de buzones de correo de Exchange Online y lo presenta y el llenado del usuario a la aplicación.
+- La **protección de datos mejorada** de la empresa (nivel 2) introduce los mecanismos de prevención de fugas de datos de aplicaciones y los requisitos mínimos del sistema operativo. Esta es la configuración que se aplica a la mayoría de los usuarios móviles que tienen acceso a datos de trabajo o escuela.
+- La **alta protección de datos empresariales** (nivel 3) introduce mecanismos avanzados de protección de datos, configuración mejorada de PIN y defensa para la amenaza de aplicaciones móviles. Esta configuración es preferible para los usuarios que tienen acceso a datos de alto riesgo.
 
-Para ver las recomendaciones específicas para cada nivel de configuración y las aplicaciones mínimas que deben protegerse, revise el [marco de protección de datos con directivas de protección de aplicaciones](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
+Para ver las recomendaciones específicas para cada nivel de configuración y las aplicaciones mínimas que deben protegerse, revise el [marco de protección de datos con directivas de protección de aplicaciones](https://docs.microsoft.com/mem/intune/apps/app-protection-framework).
 
 Mediante el uso de los principios descritos en [configuraciones de identidad y acceso a dispositivos](microsoft-365-policies-configurations.md), los niveles de protección base y confidencial se asignan estrechamente con la configuración de protección de datos mejorada de nivel 2. El nivel de protección altamente regulado se asigna estrechamente a la configuración de la protección de datos de nivel 3 Enterprise High.
 
-|Nivel de protección |Directiva de protección de aplicaciones  |Más información  |
-|---------|---------|---------|
-|Línea base     | [Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | La configuración de la Directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 1.         |
-|Confidencial     | [Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | La configuración de la Directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 1.        |
-|Altamente regulado     | [Nivel 3 de protección empresarial alta para la información](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | La configuración de la Directiva que se aplica en el nivel 3 incluye todas las configuraciones de directiva recomendadas para los niveles 1 y 2 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 2.        |
+|Nivel de protección|Directiva de protección de aplicaciones|Más información|
+|---|---|---|
+|Línea base|[Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de la Directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 1.|
+|Confidencial|[Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de la Directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 1.|
+|Altamente regulado|[Nivel 3 de protección empresarial alta para la información](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|La configuración de la Directiva que se aplica en el nivel 3 incluye todas las configuraciones de directiva recomendadas para los niveles 1 y 2 y solo agrega o actualiza la configuración de directivas siguiente para implementar más controles y una configuración más sofisticada que el nivel 2.|
+|
 
 Para crear una nueva Directiva de protección de aplicaciones para cada plataforma (iOS y Android) en Microsoft Endpoint Manager con la configuración del marco de protección de datos, puede:
 
-1. Cree manualmente las directivas siguiendo los pasos de [Cómo crear e implementar directivas de protección de aplicaciones con Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies). 
+1. Cree manualmente las directivas siguiendo los pasos de [Cómo crear e implementar directivas de protección de aplicaciones con Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-protection-policies).
 2. Importe las [plantillas JSON del marco de configuración de la Directiva de protección de aplicaciones de Intune](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) de ejemplo con los [scripts de PowerShell de Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## <a name="require-approved-apps-and-app-protection"></a>Requerir aplicaciones aprobadas y protección de aplicaciones
 
-Para aplicar las directivas de protección de aplicaciones que ha aplicado en Intune, debe crear una directiva de acceso condicional que requiera aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de aplicaciones. 
+Para aplicar las directivas de protección de aplicaciones que ha aplicado en Intune, debe crear una directiva de acceso condicional que requiera aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de aplicaciones.
 
 La aplicación de directivas de protección de aplicaciones requiere un conjunto de directivas que se describen en en [requerir la Directiva de protección de aplicaciones para Cloud Access Access con acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
 
@@ -283,53 +283,53 @@ Para obtener instrucciones paso a paso sobre cómo crear directivas de cumplimie
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Configuración recomendada para Windows 10 y versiones posteriores
 
-Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y versiones posteriores, tal como se ha configurado en el **paso 2: configuración de cumplimiento** , del proceso de creación de la Directiva.
+Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y versiones posteriores, tal como se ha configurado en el **paso 2: configuración de cumplimiento**, del proceso de creación de la Directiva.
 
-Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows** , vea esta tabla.
+Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows**, vea esta tabla.
 
 |Propiedades|Valor|Action|
-|:---------|:-----|:----|
-|Requerir BitLocker|Obligatoria| Select |
-|Requerir el arranque seguro para habilitarse en el dispositivo|Obligatoria| Select |
-|Requerir integridad de código|Obligatoria| Select |
-||||
+|---|---|---|
+|Requerir BitLocker|Obligatoria|Select|
+|Requerir el arranque seguro para habilitarse en el dispositivo|Obligatoria|Select|
+|Requerir integridad de código|Obligatoria|Select|
+|
 
-Para **las propiedades de dispositivo** , especifique los valores adecuados para las versiones de sistema operativo en función de las directivas de seguridad y de ti.
+Para **las propiedades de dispositivo**, especifique los valores adecuados para las versiones de sistema operativo en función de las directivas de seguridad y de ti.
 
-Para el **cumplimiento del administrador de configuración** , seleccione **requerir**.
+Para el **cumplimiento del administrador de configuración**, seleccione **requerir**.
 
-Para la **seguridad del sistema** , vea esta tabla.
+Para la **seguridad del sistema**, vea esta tabla.
 
 |Tipo|Propiedades|Valor|Action|
-|:---|:---------|:-----|:----|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria| Select |
+|---|---|---|---|
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Select|
 ||Contraseñas sencillas|Bloquear|Select|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Select|
 ||Longitud mínima de la contraseña|6 |Tipo|
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Tipo <br>Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores.|
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Tipo <br/> Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores.|
 ||Expiración de contraseña (días)|41|Tipo|
 ||Número de contraseñas anteriores para impedir la reutilización|5 |Tipo|
 ||Requerir contraseña cuando el dispositivo vuelve del estado de inactividad (móvil y holográfica)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
 |Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria|Select|
 |Seguridad del dispositivo|Éste|Obligatoria|Select|
 ||Antivirus|Obligatoria|Select|
-||Actualizados|Obligatoria|Select <br> Esta configuración requiere una solución anti-spyware registrada en el centro de seguridad de Windows.|
+||Actualizados|Obligatoria|Select <br/> Esta configuración requiere una solución anti-spyware registrada en el centro de seguridad de Windows.|
 |Defender|Antimalware de Microsoft defender|Obligatoria|Select|
-||Versión mínima de antimalware de Microsoft defender||Tipo <br> Solo se admite en el escritorio de Windows 10. Microsoft recomienda no tener más de cinco versiones de la versión más reciente.|
+||Versión mínima de antimalware de Microsoft defender||Tipo <br/> Solo se admite en el escritorio de Windows 10. Microsoft recomienda no tener más de cinco versiones de la versión más reciente.|
 ||La firma antimalware de Microsoft defender actualizada|Obligatoria|Select|
-||Protección en tiempo real|Obligatoria|Select <br>Solo se admite en el escritorio de Windows 10|
-|||||
+||Protección en tiempo real|Obligatoria|Select <br/> Solo se admite en el escritorio de Windows 10|
+|
 
-**Microsoft Defender para punto de conexión**
+#### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
 |Tipo|Propiedades|Valor|Action|
-|:---|:---------|:-----|:----|
+|---|---|---|---|
 |Microsoft defender para reglas de extremo|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano|Select|
-|||||
+|
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
 
-Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir los dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado. 
+Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir los dispositivos en Intune para asegurarse de que el dispositivo está en la posesión del usuario deseado.
 
 Para requerir equipos compatibles:
 
@@ -338,23 +338,22 @@ Para requerir equipos compatibles:
 3. En la lista **administrar** , elija **seguridad** y, después, elija **acceso condicional**.
 4. Elija **nueva Directiva** y escriba el nombre de la nueva Directiva.
 
-5. En **tareas** , elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
+5. En **tareas**, elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
 
-6. En **tareas** , elija **aplicaciones o acciones en la nube**.
+6. En **tareas**, elija **aplicaciones o acciones en la nube**.
 
-7. Para **incluir** , elija **seleccionar aplicaciones > seleccionar** y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
+7. Para **incluir**, elija **seleccionar aplicaciones > seleccionar** y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
 
-8. Para requerir equipos compatibles (pero no teléfonos y tabletas compatibles), en **asignaciones** , elija **condiciones > plataformas de dispositivos**. Seleccione **sí** para **configurar**. Elija  **seleccionar plataformas de dispositivos** , seleccione **Windows** y **MacOS** y, a continuación, elija **listo**.
+8. Para requerir equipos compatibles (pero no teléfonos y tabletas compatibles), en **asignaciones**, elija **condiciones > plataformas de dispositivos**. Seleccione **sí** para **configurar**. Elija  **seleccionar plataformas de dispositivos**, seleccione **Windows** y **MacOS** y, a continuación, elija **listo**.
 
-9. En **controles de acceso** , elija **conceder** .
+9. En **controles de acceso**, elija **conceder** .
 
-10. Elija **conceder acceso** y, a continuación, compruebe que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**. Cuando termine, elija **seleccionar**. 
+10. Elija **conceder acceso** y, a continuación, compruebe que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**. Cuando termine, elija **seleccionar**.
 
-10. Seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
+11. Seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
 
->[!Note]
->Asegúrese de que el dispositivo es compatible antes de habilitar esta Directiva. De lo contrario, podría obtener el bloqueo y no podrá cambiar esta Directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.
->
+> [!NOTE]
+> Asegúrese de que el dispositivo es compatible antes de habilitar esta Directiva. De lo contrario, podría obtener el bloqueo y no podrá cambiar esta Directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.
 
 ## <a name="require-compliant-pcs-and-mobile-devices"></a>Requerir equipos *y* dispositivos móviles compatibles
 
@@ -365,21 +364,20 @@ Para requerir el cumplimiento de todos los dispositivos:
 3. En la lista **administrar** , elija **seguridad** y, después, elija **acceso condicional**.
 4. Elija **nueva Directiva** y escriba el nombre de la nueva Directiva.
 
-5. En **tareas** , elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
+5. En **tareas**, elija **usuarios y grupos** e incluya a quién desea que se aplique la Directiva. También excluya el grupo de exclusión de acceso condicional.
 
-6. En **tareas** , elija **aplicaciones o acciones en la nube**.
+6. En **tareas**, elija **aplicaciones o acciones en la nube**.
 
-7. Para **incluir** , elija **seleccionar aplicaciones > seleccionar** y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
+7. Para **incluir**, elija **seleccionar aplicaciones > seleccionar** y, a continuación, seleccione las aplicaciones que desee en la lista de **aplicaciones de nube** . Por ejemplo, seleccione Exchange Online. Elija **seleccionar** cuando haya terminado.
 
-8. En **controles de acceso** , elija **conceder** .
+8. En **controles de acceso**, elija **conceder** .
 
-9. Elija **conceder acceso** y, a continuación, compruebe que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**. Cuando termine, elija **seleccionar**. 
+9. Elija **conceder acceso** y, a continuación, compruebe que el **dispositivo esté marcado como compatible**. Para varios controles, seleccione **requerir todos los controles seleccionados**. Cuando termine, elija **seleccionar**.
 
 10. Seleccione **activado** para **Habilitar Directiva** y, a continuación, elija **crear**.
 
->[!Note]
->Asegúrese de que el dispositivo es compatible antes de habilitar esta Directiva. De lo contrario, podría obtener el bloqueo y no podrá cambiar esta Directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.
->
+> [!NOTE]
+> Asegúrese de que el dispositivo es compatible antes de habilitar esta Directiva. De lo contrario, podría obtener el bloqueo y no podrá cambiar esta Directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.
 
 ## <a name="next-step"></a>Paso siguiente
 

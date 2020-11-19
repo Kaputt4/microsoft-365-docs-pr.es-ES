@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Use esta guía paso a paso de implementación para crear y configurar un sitio de grupo aislado de SharePoint Online en Microsoft Office 365.
-ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9e8482238c7da4d10b6299b0f8a997734edbb13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203136"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356912"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
@@ -112,7 +112,7 @@ Si administra cuentas de usuario y grupos a través de Office 365, puede usar el
   
 En el centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar las cuentas de usuario y los grupos adecuados a los grupos de acceso apropiados.
   
-Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 A continuación, use el siguiente bloque de comandos para agregar una cuenta de usuario individual a un grupo de acceso:
   
@@ -170,7 +170,7 @@ En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
 
 3. En el centro de administración de SharePoint, expanda **sitios** y haga clic en **sitios activos**.
 
-4. Haga clic en **crear**y, a continuación, elija **otras opciones**.
+4. Haga clic en **crear** y, a continuación, elija **otras opciones**.
 
 5. En la lista **Elija una plantilla** , elija **sitio de grupo**.
    
@@ -190,11 +190,11 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
 
 4. Establezca **permitir solicitudes de acceso** en **desactivado**.
 
-5. Haga clic en **Guardar **.
+5. Haga clic en **Guardar**.
     
 6. En el panel **permisos** , haga clic en **Configuración avanzada de permisos**.
     
-7. En la pestaña **permisos** del explorador, haga clic en ** \<site name> miembros** en la lista.
+7. En la pestaña **permisos** del explorador, haga clic en **\<site name> miembros** en la lista.
     
 8. En **Personas y grupos**, haga clic en **Nuevo**.
     
@@ -202,7 +202,7 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
     
 10. Haga clic en el botón Atrás del explorador.
     
-11. Haga clic en ** \<site name> propietarios** en la lista.
+11. Haga clic en **\<site name> propietarios** en la lista.
     
 12. En **Personas y grupos**, haga clic en **Nuevo**.
     
@@ -210,7 +210,7 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
     
 14. Haga clic en el botón Atrás del explorador.
     
-15. Haga clic en ** \<site name> visitantes** en la lista.
+15. Haga clic en **\<site name> visitantes** en la lista.
     
 16. En **Personas y grupos**, haga clic en **Nuevo**.
     
@@ -220,11 +220,11 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
     
 Los resultados de esta configuración de permisos son los siguientes:
   
-- El grupo de SharePoint de ** \<site name> propietarios** contiene el grupo de acceso de administradores del sitio, en el que todos los miembros tienen el nivel de permisos **control total** .
+- El grupo de SharePoint de **\<site name> propietarios** contiene el grupo de acceso de administradores del sitio, en el que todos los miembros tienen el nivel de permisos **control total** .
     
-- El grupo de SharePoint de ** \<site name> miembros** contiene el grupo de acceso de miembros del sitio, en el que todos los miembros tienen el nivel de permisos **Editar** .
+- El grupo de SharePoint de **\<site name> miembros** contiene el grupo de acceso de miembros del sitio, en el que todos los miembros tienen el nivel de permisos **Editar** .
     
-- El grupo de SharePoint ** \<site name> visitantes** contiene el grupo de acceso de visores del sitio, en el que todos los miembros tienen el nivel de permisos de **lectura** .
+- El grupo de SharePoint **\<site name> visitantes** contiene el grupo de acceso de visores del sitio, en el que todos los miembros tienen el nivel de permisos de **lectura** .
     
 - La capacidad de los miembros para invitar a otros miembros o para que los usuarios no miembros soliciten el acceso está deshabilitada.
     

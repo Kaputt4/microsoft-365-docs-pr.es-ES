@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información acerca de la configuración de seguridad de forma predeterminada en Exchange Online Protection (EOP)
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131102"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357868"
 ---
 # <a name="secure-by-default-in-office-365"></a>Seguro de forma predeterminada en Office 365
 
@@ -47,7 +47,7 @@ Debido a que Microsoft desea mantener a nuestros clientes seguros de forma prede
 - Remitentes seguros de Outlook
 - Lista de direcciones IP permitidas (filtrado de la conexión)
 
-Puede encontrar más información sobre estas invalidaciones en [crear listas de remitentes seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365).
+Puede encontrar más información sobre estas invalidaciones en [crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md).
 
 Seguro de forma predeterminada esta es una configuración que puede activarse o desactivarse, pero el modo en que nuestro filtrado funciona de forma predeterminada para conservar los mensajes potencialmente peligrosos o no deseados de los buzones. El malware y la suplantación de identidad de confianza alta deben enviarse a cuarentena. Solo los administradores pueden administrar mensajes que se pusieron en cuarentena como malware o una suplantación de identidad de confianza alta y también pueden informar de falsos positivos a Microsoft desde allí. Para obtener más información, consulte [administrar mensajes en cuarentena y archivos como un administrador en EOP](manage-quarantined-messages-and-files.md) .
 

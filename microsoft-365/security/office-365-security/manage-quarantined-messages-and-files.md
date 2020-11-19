@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft defender para Office 365 también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349285"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357138"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -165,7 +165,7 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
   - Elija una de las siguientes opciones:
     - **Liberar mensajes para todos los destinatarios**
     - **Liberar mensajes a destinatarios específicos**
-    - **Liberar mensajes para otros usuarios**
+    - **Liberar mensajes para otros usuarios**: no se admite la liberación de mensajes de malware a otros usuarios que no sean destinatarios originales. 
 
   Cuando haya terminado, haga clic en **Liberar mensajes**.
 
@@ -208,7 +208,7 @@ Al seleccionar varios mensajes en cuarentena de la lista (hasta 100), se mostrar
   > [!NOTE]
   > Considere el siguiente escenario: john@gmail.com envía un mensaje a faith@contoso.com y john@subsidiary.contoso.com. Gmail bifurca este mensaje en dos copias que se enrutan a la cuarentena como phishing en Microsoft. Un administrador libera ambos mensajes en admin@contoso.com. El primer mensaje lanzado que llega al buzón de administración se entrega. El segundo mensaje lanzado se identifica como entrega duplicada y se omite. El mensaje se identifica como duplicados si tienen el mismo identificador de mensaje y la misma hora de recepción.
 
-- **Eliminar mensajes**: Después de hacer clic en **Sí** en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
+- **Eliminar mensajes**: después de hacer clic en **sí** en la advertencia que aparece, los mensajes se eliminan inmediatamente sin que se envíen a los destinatarios originales.
 
 Cuando haya terminado, haga clic en **Cerrar**.
 

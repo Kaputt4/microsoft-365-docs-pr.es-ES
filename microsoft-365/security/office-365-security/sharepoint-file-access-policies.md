@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 653bd90fb68eb42423d5f32633736bba4b5943b4
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464317"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357532"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
 En este artículo se describe cómo implementar la identidad recomendada y las directivas de acceso a dispositivos para proteger SharePoint y OneDrive para la empresa. Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md).
 
-Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para los archivos de SharePoint que se pueden aplicar en función de la granularidad de sus necesidades: **línea base**, **confidencial**y **altamente regulable**. Puede obtener más información sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que se hace referencia en estas recomendaciones en [la introducción](microsoft-365-policies-configurations.md).
+Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para los archivos de SharePoint que se pueden aplicar en función de la granularidad de sus necesidades: **línea base**, **confidencial** y **altamente regulable**. Puede obtener más información sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que se hace referencia en estas recomendaciones en [la introducción](microsoft-365-policies-configurations.md).
 
 Además de implementar esta guía, asegúrese de configurar los sitios de SharePoint con la cantidad adecuada de protección, incluida la configuración de los permisos adecuados para contenido confidencial y altamente regulado.
 
@@ -47,17 +47,18 @@ Las nuevas directivas implementan la protección de dispositivos para contenido 
 En la siguiente tabla se enumeran las directivas que debe revisar y actualizar o crear una nueva para SharePoint. Las directivas comunes vinculan a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
 |Nivel de protección|Directivas|Más información|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
-|        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
-|        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que todas las aplicaciones recomendadas se incluyen en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows).|
-|        |[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir SharePoint en la lista de aplicaciones en la nube.|
-|        |[Usar restricciones de aplicación forzada en SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Agregar esta nueva Directiva. Esto indica a Azure Active Directory (Azure AD) que use la configuración especificada en SharePoint. Esta Directiva se aplica a todos los usuarios, pero solo afecta al acceso a los sitios incluidos en las directivas de acceso de SharePoint.|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
+||[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que todas las aplicaciones recomendadas se incluyen en la lista de aplicaciones. Asegúrese de actualizar la Directiva para cada plataforma (iOS, Android, Windows).|
+||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir SharePoint en la lista de aplicaciones en la nube.|
+||[Usar restricciones de aplicación forzada en SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Agregar esta nueva Directiva. Esto indica a Azure Active Directory (Azure AD) que use la configuración especificada en SharePoint. Esta Directiva se aplica a todos los usuarios, pero solo afecta al acceso a los sitios incluidos en las directivas de acceso de SharePoint.|
 |**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluya SharePoint en las asignaciones de aplicaciones en la nube.|
-|         |[Requerir equipos *y* dispositivos móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluya SharePoint en la lista de aplicaciones en la nube.|
+||[Requerir equipos *y* dispositivos móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluya SharePoint en la lista de aplicaciones en la nube.|
 ||[Directiva de control de acceso de SharePoint](#sharepoint-access-control-policies): permitir el acceso solo del explorador a sitios específicos de SharePoint desde dispositivos no administrados.|Esto evita la edición y descarga de archivos. Usar PowerShell para especificar sitios.|
 |**Extremadamente regulado**|[Requerir *siempre* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluya SharePoint en la asignación de aplicaciones en la nube.|
 ||[Directiva de control de acceso de SharePoint](#use-app-enforced-restrictions-in-sharepoint): bloquear el acceso a sitios específicos de SharePoint desde dispositivos no administrados.|Usar PowerShell para especificar sitios.|
+|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Usar restricciones de aplicación forzada en SharePoint
 
@@ -98,4 +99,3 @@ Configure las directivas de acceso condicional para:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-
