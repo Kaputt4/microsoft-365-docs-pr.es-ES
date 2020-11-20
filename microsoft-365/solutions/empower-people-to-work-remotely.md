@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Asegúrese de tener habilitadas todas las características de Microsoft 365 para maximizar la productividad de los trabajadores remotos y mantener un acceso seguro a sus servidores, datos y nubes.
-ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906744"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357042"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
@@ -113,3 +113,5 @@ Siga estos pasos para asegurar y optimizar el acceso a los servidores y servicio
 [![Los pasos para proporcionar Microsoft 365 a los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 Para obtener la información más reciente de Microsoft sobre el soporte para trabajadores remotos, consulte [Habilitar trabajo remoto con el sitio Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+
+Para ver cómo una organización multinacional ficticia pero representativa ha habilitado a los trabajadores remotos, consulte [Infraestructura y respuesta a la COVID-19 de Contoso para un híbrido de recursos](contoso-hybrid-workforce.md).
