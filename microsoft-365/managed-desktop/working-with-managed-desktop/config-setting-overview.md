@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530240"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371495"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones configurables: Escritorio administrado de Microsoft
 
@@ -22,7 +22,7 @@ Microsoft Managed Desktop implementa la configuración y las directivas que se a
 
 Las opciones configurables del escritorio administrado de Microsoft proporcionan a los administradores de ti una forma de personalizar e implementar la configuración que es única para su organización y las necesidades empresariales. Estas opciones de configuración se agregan a la configuración de dispositivos y a las directivas administradas por el escritorio administrado por Microsoft.  
 
-Los cambios de configuración configurables se realizan en la nube y se aplican a los dispositivos de escritorio administrados por Microsoft en los grupos de implementación definidos. Este proceso es similar al modo en que Microsoft Managed Desktop administra los cambios en las directivas y la configuración de configuruation de dispositivos definidas y administradas por el servicio. Si usa el mismo proceso que Microsoft Managed Desktop usa para implementar cambios, sigue adelante con las prácticas modernas de administración de TI para avanzar la organización.
+Los cambios de configuración configurables se realizan en la nube y se aplican a los dispositivos de escritorio administrados por Microsoft en los grupos de implementación definidos. Este proceso es similar al modo en que Microsoft Managed Desktop administra los cambios en las directivas y opciones de configuración de dispositivos definidas y administradas por el servicio. Si usa el mismo proceso que Microsoft Managed Desktop usa para implementar cambios, sigue adelante con las prácticas modernas de administración de TI para avanzar la organización.
 
 ## <a name="when-to-use-configurable-settings"></a>¿Cuándo se deben usar las opciones configurables?
 
@@ -64,7 +64,7 @@ Configure y almacene los cambios en el portal de administración de escritorio a
 Todas las opciones de configuración que se pueden configurar se administran mediante el portal de administración de escritorio administrado de Microsoft. Para obtener más información, vea [implementar cambios](config-setting-deploy.md). 
 
 **Paso 5: control de cambios** : realice un seguimiento del progreso de los cambios en el estado de la implementación. Para cada configuración, puede:
-- **Seguimiento del progreso** : realice un seguimiento del estado después de implementar el cambio. El estado cambiará a **en curso**y, a continuación, se **completará**o **no**. Si se produce un error en la implementación, se abre automáticamente una solicitud de soporte técnico para las operaciones de escritorio administradas de Microsoft para investigar el problema.  
+- **Seguimiento del progreso** : realice un seguimiento del estado después de implementar el cambio. El estado cambiará a **en curso** y, a continuación, se **completará** o **no**. Si se produce un error en la implementación, se abre automáticamente una solicitud de soporte técnico para las operaciones de escritorio administradas de Microsoft para investigar el problema.  
 - **Ver versión implementada** : cada cambio implementado tiene un número de versión.
 - **Revertir cambios** : la reversión de un cambio detiene la implementación actual y revierte todos los grupos a los últimos cambios que se implementaron en todos los grupos. Va a revertir al valor de configuración de última configuración buena conocida.
 - **Validar cambios** : una vez completada la implementación, valide que los cambios se han aplicado como se esperaba.  

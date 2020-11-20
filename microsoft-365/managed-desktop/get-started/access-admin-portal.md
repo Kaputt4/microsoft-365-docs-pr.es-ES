@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379297"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371675"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -37,7 +37,7 @@ Cada una de las funciones siguientes se puede asignar para proporcionar diferent
 |Administrador global     | Los administradores con este rol tendrán **permisos de lectura y escritura para todas las características** del portal de administración de escritorio administrado de Microsoft.         |
 |Lector global     | Los administradores con este rol tendrán **permisos de solo lectura para todas las características** del portal de administración de escritorio administrado de Microsoft.         |
 |Administrador de servicios de Intune     |  Los administradores con este rol tendrán **permisos de lectura y escritura para las características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.       |
-|Administrador de soporte de servicio     | Los administradores con este rol tendrán **permisos de lectura y escritura para las características no relacionadas con la seguridad** en el portal de administración de escritorio administrado de Microsoft.         |
+|Administrador de soporte de servicio     | Los administradores con este rol tendrán **permisos de solo lectura para las características no relacionadas** con los permisos de seguridad y **escritura para administrar las solicitudes de soporte técnico** en el portal de administración de escritorio administrado de Microsoft.         |
 |Administrador de seguridad | Los administradores con este rol tendrán **permisos de solo lectura para todas las características** y **permisos de escritura de las características relacionadas con la seguridad** en el escritorio administrado de Microsoft en el portal de administración. |
 |Lector de seguridad |Los administradores con este rol tendrán **permisos de solo lectura para todas las características** del portal de administración de escritorio administrado de Microsoft.|
 

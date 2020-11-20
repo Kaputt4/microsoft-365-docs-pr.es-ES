@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 para empresas.
-ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356996"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371617"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para Enterprise para contoso Corporation
 
@@ -69,9 +69,9 @@ Vea los siguientes artículos para obtener más información:
 
 Vea estos escenarios y configuraciones de ti adicionales:
 
-- [Respuesta e infraestructura de COVID-19 para un personal híbrido](../solutions/contoso-hybrid-workforce.md)
+- [Respuesta e infraestructura de COVID-19 para trabajos remotos y en el sitio](../solutions/contoso-remote-onsite-work.md)
 
-  Obtenga información sobre cómo contoso actualizó su infraestructura de acceso remoto para el COVID-19 Pandemic y sus nuevas instalaciones y actualiza la infraestructura para un personal híbrido.
+  Obtenga información sobre cómo contoso actualizó su infraestructura de acceso remoto para el COVID-19 Pandemic y sus nuevas instalaciones y actualiza la infraestructura para el trabajo remoto y en el sitio.
 
 - [Equipo para un proyecto secreto](../solutions/contoso-team-for-top-secret-project.md)
 
@@ -86,7 +86,7 @@ Vea estos escenarios y configuraciones de ti adicionales:
 Obtenga información [sobre contoso Corporation](contoso-overview.md) y las consideraciones de diseño que se trataron al implementar Microsoft 365 para empresas.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

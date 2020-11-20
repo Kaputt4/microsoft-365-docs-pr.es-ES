@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Describe cómo preparar el aprovisionamiento de usuarios a Microsoft 365 mediante la sincronización de directorios y las ventajas a largo plazo del uso de este método.
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773990"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371629"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepararse para la sincronización de directorios de Microsoft 365
 
@@ -127,7 +127,7 @@ A continuación se enumeran los atributos que debe preparar:
     Tenga en cuenta que los caracteres no válidos se aplican a los caracteres que siguen al delimitador de tipo y ":", de modo que SMTP:User@contso.com está permitido, pero SMTP:user:M@contoso.com no lo es.
 
     > [!IMPORTANT]
-    > Todas las direcciones de Protocolo simple de transferencia de correo (SMTP) deben cumplir con los estándares de mensajería de correo electrónico. Si hay direcciones duplicadas o no deseadas, consulte el tema [de la ayuda quitar direcciones proxy duplicadas y no deseadas en Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > Todas las direcciones de Protocolo simple de transferencia de correo (SMTP) deben cumplir con los estándares de mensajería de correo electrónico. Quite las direcciones duplicadas o no deseadas si existen.
 
 - **sAMAccountName**
 
@@ -161,7 +161,7 @@ A continuación se enumeran los atributos que debe preparar:
   - Caracteres permitidos: A – Z, a-z, 0 – 9, '. - _ ! # ^ ~
   - Las Letras con marcas diacríticas, como diéresis, acentos y tildes, son caracteres no válidos.
   - El carácter @ es necesario en cada valor **userPrincipalName** .
-  - El carácter @ no puede ser el primer carácter de cada valor **userPrincipalName** .
+  - El carácter @ no puede ser el primer carácter de cada valor **userPrincipalName**.
   - El nombre de usuario no puede terminar con un punto (.), un signo de y comercial ( &amp; ), un espacio o un signo de arroba (@).
   - El nombre de usuario no puede contener espacios.
   - Deben usarse dominios enrutables; por ejemplo, no se pueden usar dominios locales o internos.
@@ -170,7 +170,7 @@ A continuación se enumeran los atributos que debe preparar:
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. preparar el atributo userPrincipalName
 
-Active Directory está diseñado para permitir que los usuarios finales de la organización inicien sesión en su directorio mediante **samAccountName** o **userPrincipalName** . De forma similar, los usuarios finales pueden iniciar sesión en Microsoft 365 mediante el nombre principal de usuario (UPN) de su cuenta profesional o educativa. La sincronización de directorios intenta crear nuevos usuarios en Azure Active Directory con el mismo UPN que se encuentra en AD DS. El UPN tiene el mismo formato que una dirección de correo electrónico.
+Active Directory está diseñado para permitir que los usuarios finales de la organización inicien sesión en su directorio mediante **samAccountName** o **userPrincipalName**. De forma similar, los usuarios finales pueden iniciar sesión en Microsoft 365 mediante el nombre principal de usuario (UPN) de su cuenta profesional o educativa. La sincronización de directorios intenta crear nuevos usuarios en Azure Active Directory con el mismo UPN que se encuentra en AD DS. El UPN tiene el mismo formato que una dirección de correo electrónico.
 
 En Microsoft 365, el UPN es el atributo predeterminado que se usa para generar la dirección de correo electrónico. Es fácil obtener **userPrincipalName** (en AD DS y en Azure ad) y la dirección de correo electrónico principal en **proxyAddresses** se establece en valores diferentes. Cuando se establecen en valores diferentes, puede haber confusión para los administradores y los usuarios finales.
 
@@ -188,6 +188,6 @@ Si ya ha configurado la sincronización de directorios, es posible que el UPN de
 
 Consulte también [Cómo preparar un dominio no enrutable (como un dominio. local) para la sincronización de directorios](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si ha realizado los pasos 1 a 5 anteriores, consulte [configurar la sincronización de directorios](set-up-directory-synchronization.md).
