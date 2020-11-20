@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846278"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357449"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -57,7 +57,7 @@ En función de la estructura del equipo de administración del cumplimiento, tie
 
 En función de cómo planee implementar las directivas de administración de riesgos de Insider, necesitará tener las suscripciones de licencias de Microsoft 365 adecuadas y comprender y planear algunos requisitos previos de la solución.
 
-**Licencias:** La administración de riesgos de Insider está disponible como parte de la amplia selección de suscripciones de licencias de Microsoft 365. Para obtener más información, vea el artículo [Introducción a la administración de riesgos de Insider](insider-risk-management-configure.md#before-you-begin) .
+**Licencias:** La administración de riesgos de Insider está disponible como parte de la amplia selección de suscripciones de licencias de Microsoft 365. Para obtener más información, vea el artículo [Introducción a la administración de riesgos de Insider](insider-risk-management-configure.md#subscriptions-and-licensing) .
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a la suscripción existente o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 

@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos.
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350750"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367183"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -33,7 +33,7 @@ Puede usar la Directiva de alertas y las herramientas del panel de alertas en lo
 Las directivas de alerta permiten clasificar las alertas desencadenadas por una directiva, aplicar la Directiva a todos los usuarios de la organización, establecer un nivel de umbral para cuando se desencadene una alerta y decidir si se recibirán notificaciones por correo electrónico cuando se desencadenen alertas. También hay una página **Ver alertas** en el centro de seguridad y cumplimiento donde puede ver y filtrar las alertas, establecer un estado de alerta que le ayude a administrar las alertas y, a continuación, descartar las alertas después de resolver o resolver el incidente subyacente.
 
 > [!NOTE]
-> Las directivas de alerta están disponibles para las organizaciones con una suscripción de Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funcionalidad avanzada solo está disponible para las organizaciones con una suscripción a E5/G5 o para organizaciones con una suscripción a E1/F1/G1 o E3/G3 y una suscripción de Microsoft defender para Office 365 P2 o Microsoft 365 E5 Compliance o Microsoft 365 E5 eDiscovery y un complemento de auditoría. En este tema se resalta la funcionalidad que requiere una suscripción a E5/G5 o un complemento. Además, tenga en cuenta que las directivas de alerta están disponibles en los entornos de Office 365 GCC, GCC High y DoD estadounidense Government.
+> Las directivas de alerta están disponibles para las organizaciones con una suscripción de Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funcionalidad avanzada solo está disponible para las organizaciones con una suscripción a E5/G5 o para organizaciones con una suscripción a E1/F1/G1 o E3/G3 y Microsoft defender para Office 365 P2 o un cumplimiento de Microsoft 365 E5 o una suscripción a la exhibición de documentos electrónicos de E5 y de auditoría. En este tema se resalta la funcionalidad que requiere una suscripción a E5/G5 o un complemento. Además, tenga en cuenta que las directivas de alerta están disponibles en los entornos de Office 365 GCC, GCC High y DoD estadounidense Government.
 
 ## <a name="how-alert-policies-work"></a>Cómo funcionan las directivas de alertas
 
@@ -76,7 +76,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
     Si selecciona la configuración en función de una actividad inusual, Microsoft establece un valor de línea base que define la frecuencia normal para la actividad seleccionada. El establecimiento de esta línea base tarda hasta siete días en el que no se generarán alertas. Una vez establecida la línea base, se desencadena una alerta cuando la frecuencia de la actividad a la que se realiza el seguimiento por parte de la Directiva de alerta supera en gran medida el valor de línea base. Para actividades relacionadas con la auditoría (como actividades de archivos y carpetas), puede establecer una línea base basada en un único usuario o en función de todos los usuarios de la organización; para actividades relacionadas con el malware, puede establecer una línea base en una única familia de malware, un solo destinatario o todos los mensajes de la organización.
 
     > [!NOTE]
-    > La capacidad de configurar directivas de alerta basadas en un umbral o en una actividad inusual requiere una suscripción a E5/G5 o una suscripción a E1/F1/G1 o E3/G3 con Microsoft defender para Office 365 P2, el cumplimiento de Microsoft 365 E5 o la suscripción a Microsoft 365 eDiscovery y del complemento de auditoría. Las organizaciones con una suscripción a E1/F1/G1 y E3/G3 solo pueden crear directivas de alerta en las que se desencadene una alerta cada vez que se produzca una actividad.
+    > La capacidad de configurar directivas de alerta basadas en un umbral o en una actividad inusual requiere una suscripción a E5/G5, o una suscripción a E1/F1/G1 o E3/G3 con Microsoft defender para Office 365 P2, el cumplimiento de Microsoft 365 E5 o la suscripción a Microsoft 365 eDiscovery y de auditoría. Las organizaciones con una suscripción a E1/F1/G1 y E3/G3 solo pueden crear directivas de alerta en las que se desencadene una alerta cada vez que se produzca una actividad.
 
 - **Categoría de alerta** : para ayudar con el seguimiento y la administración de las alertas generadas por una directiva, puede asignar una de las siguientes categorías a una directiva.
 
@@ -109,7 +109,7 @@ En la tabla siguiente se enumeran y describen las directivas de alertas predeter
 
 La tabla también indica el plan Office 365 Enterprise y Office 365 US Government, que se requiere para cada uno. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción complementaria correspondiente además de una suscripción a E1/F1/G1 o E3/G3.
 
-| Directiva de alertas predeterminada | Descripción | Categoría | Suscripción de Office 365 Enterprise |
+| Directiva de alertas predeterminada | Description | Categoría | Suscripción de Office 365 Enterprise |
 |:-----|:-----|:-----|:-----|
 |**Se ha detectado un clic en una dirección URL potencialmente malintencionada**|Genera una alerta cuando un usuario protegido mediante [vínculos a prueba](../security/office-365-security/atp-safe-links.md) de errores de la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft defender para Office 365 identifica los cambios en la dirección URL o cuando los usuarios invalidan las páginas de vínculos seguros (en función de la Directiva de vínculos seguros de Microsoft 365 de la organización). Esta directiva de alerta tiene una configuración de gravedad **alta** . Para defender para Office 365 P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Para obtener más información acerca de los eventos que desencadenan esta alerta, consulte [configurar directivas de vínculos seguros](../security/office-365-security/set-up-atp-safe-links-policies.md).|Administración de amenazas|Suscripción complementaria E5/G5 o defender para Office 365 P2|
 |**Resultado de envío de administración completado**|Genera una alerta cuando un [envío del administrador](../security/office-365-security/admin-submission.md) completa el nuevo análisis de la entidad enviada. Se desencadenará una alerta cada vez que se represente un resultado de nuevo análisis a partir de un envío de administración. Estas alertas están destinadas a recordarle que debe [revisar los resultados de](https://protection.office.com/reportsubmission)los envíos anteriores, enviar mensajes de usuario notificados para obtener la comprobación de la directiva más reciente y volver a examinar los veredictos, y determinar si las directivas de filtrado de su organización tienen el impacto previsto. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|E1/F1, E3 o E5|

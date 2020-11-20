@@ -20,18 +20,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b9d7655377b1bb5ff4810fd469efd092bd7a5f67
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072929"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357195"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
 Use las directivas de cumplimiento de comunicaciones para identificar las comunicaciones de los usuarios con el fin de examinarlas por los revisores externos o internos. Para obtener más información sobre cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md). Si desea revisar cómo contoso ha configurado rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en Microsoft Teams, Exchange Online y Yammer Communications, consulte este [caso práctico](communication-compliance-case-study.md).
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
 Antes de empezar con el cumplimiento de la comunicación, debe confirmar la [suscripción de Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y los complementos. Para acceder y usar el cumplimiento de las comunicaciones, su organización debe tener una de las siguientes suscripciones o complementos:
 
@@ -65,7 +65,7 @@ En función de cómo desee administrar las directivas y alertas de comunicación
 
 Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
 
-| Función | Permisos de funciones |
+| Role | Permisos de funciones |
 |:-----|:-----|
 | **Cumplimiento de la comunicación** | Use este grupo de roles para administrar el cumplimiento de la comunicación de su organización en un único grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un único grupo. Este grupo de roles contiene todos los roles de permisos de cumplimiento de comunicaciones. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes. |
 | **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y posteriormente para separar los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver los mensajes de alerta. |
@@ -190,10 +190,10 @@ Para obtener más información acerca de la configuración de Yammer en modo nat
     
     - Elija si le gustaría incluir tipos de información confidencial. En este paso puede seleccionar los tipos de información confidencial predeterminada y personalizado. Elija entre los tipos de información confidencial existentes o los diccionarios de palabras clave personalizados en el Asistente para la Directiva de cumplimiento de comunicaciones. Puede crear estos elementos antes de ejecutar el asistente si es necesario. También puede crear nuevos tipos de información confidencial desde el Asistente para directivas de cumplimiento de comunicaciones.
     
-    - Elija si le gustaría habilitar los clasificadores. Los clasificadores pueden detectar lenguaje e imágenes inapropiados que se envían o reciben en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *amenaza* , *blasfemia* , *acoso dirigido* , *imágenes para adultos* , imágenes de *racy* e imágenes de *Gory*.
+    - Elija si le gustaría habilitar los clasificadores. Los clasificadores pueden detectar lenguaje e imágenes inapropiados que se envían o reciben en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *amenaza*, *blasfemia*, *acoso dirigido*, *imágenes para adultos*, imágenes de *racy* e imágenes de *Gory*.
 
       > [!CAUTION]
-      > Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar en su lugar los clasificadores integrados **Threats** , **blasfemias** y los de **acoso específicos** .
+      > Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar en su lugar los clasificadores integrados **Threats**, **blasfemias** y los de **acoso específicos** .
 
     - Definir el porcentaje de comunicaciones que se van a revisar.
     
