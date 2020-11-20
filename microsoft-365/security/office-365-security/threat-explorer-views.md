@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar el explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83fa2d89c74b5ec1e2de7e65457313f20bbf2681
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844325"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367194"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -113,9 +113,9 @@ Seleccione un elemento de la lista para ver más detalles.
 Para ver este informe, en el explorador, elija **Ver**  >  **Email**  >  **todos los correos** electrónicos. En esta vista se muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a suplantación de identidad (phishing) o malware, así como a todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo).
 
 > [!NOTE]
-> Si recibe un error que lee **demasiados datos para mostrar** , agregue un filtro y, si es necesario, restrinja el intervalo de fechas que está viendo.
+> Si recibe un error que lee **demasiados datos para mostrar**, agregue un filtro y, si es necesario, restrinja el intervalo de fechas que está viendo.
 
-Para aplicar un filtro, elija **remitente** , seleccione un elemento de la lista y, a continuación, haga clic en el botón actualizar. En nuestro ejemplo, utilizamos la **tecnología de detección** como filtro (hay varias opciones disponibles). Ver información por remitente, dominio del remitente, destinatarios, asunto, nombre de archivo de datos adjuntos, familia de malware, estado de protección (acciones llevadas a cabo por las directivas y las directivas de protección contra amenazas en Office 365), la tecnología de detección (cómo se detectó el malware) y mucho más.
+Para aplicar un filtro, elija **remitente**, seleccione un elemento de la lista y, a continuación, haga clic en el botón actualizar. En nuestro ejemplo, utilizamos la **tecnología de detección** como filtro (hay varias opciones disponibles). Ver información por remitente, dominio del remitente, destinatarios, asunto, nombre de archivo de datos adjuntos, familia de malware, estado de protección (acciones llevadas a cabo por las directivas y las directivas de protección contra amenazas en Office 365), la tecnología de detección (cómo se detectó el malware) y mucho más.
 
 ![Ver los datos sobre el correo electrónico detectado mediante la tecnología de detección](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 

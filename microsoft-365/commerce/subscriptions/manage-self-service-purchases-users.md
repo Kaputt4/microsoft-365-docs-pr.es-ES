@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus adquisiciones de autoservicio.
-ms.openlocfilehash: 7a5b52c0378e4d8f2a48ce7cdb56fb1901c25472
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546611"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367160"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -39,12 +39,12 @@ Su administrador tiene una vista de solo lectura en las suscripciones que compre
 
 Puede ver una lista de todas las suscripciones compradas por Self-Service que compró.
 
-1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **productos** , seleccione el icono filtrar y, a continuación, seleccione **autoservicio**.
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Cómo comprar más o reducir las licencias
 
-1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **productos** , seleccione la suscripción para la que desea comprar más o reducir las licencias.
 3. Elija **comprar licencias** o **quitar licencias**.
 4. En el panel derecho, en el cuadro **licencias totales** , escriba el número total de licencias que desea para esta suscripción y, a continuación, elija **Guardar**. Por ejemplo, si tiene 100 licencias y desea agregar 5 más, escriba 105.
@@ -53,17 +53,17 @@ Puede ver una lista de todas las suscripciones compradas por Self-Service que co
 
 ### <a name="to-assign-licenses"></a>Para asignar licencias
 
-1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
+1. En el centro de administración, vaya a **Billing** la  >  página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 2. Elija la suscripción para la que desea asignar licencias.
 3. Elija **asignar licencias**.
 4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
     > [!NOTE]
     > Solo puede asignar licencias a personas de su organización.
-5. Elija **asignar**y, después, haga clic en **cerrar**.
+5. Elija **asignar** y, después, haga clic en **cerrar**.
 
 ### <a name="to-unassign-licenses"></a>Para cancelar la asignación de licencias
 
-1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
+1. En el centro de administración, vaya a **Billing** la  >  página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 2. Elija el producto para el que desea cancelar la asignación de licencias.
 3. Elija los usuarios de los que desea cancelar la asignación de licencias.
 4. Elija **Cancelar asignación de licencias**.
@@ -71,36 +71,36 @@ Puede ver una lista de todas las suscripciones compradas por Self-Service que co
 
 ## <a name="cancel-a-subscription"></a>Cancelar una suscripción
 
-1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
-2. En la pestaña **productos** , busque la suscripción que desea cancelar. Seleccione **más acciones** (tres puntos) y, a continuación, seleccione **Cancelar suscripción**.
-3. En el panel **Cancelar suscripción** , elija un motivo por el que va a cancelar. Si lo desea, puede proporcionar cualquier comentario que tenga.
-4. Seleccione **Guardar**.
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
+3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Si lo desea, puede proporcionar cualquier comentario que tenga.
+4. Haga clic en **Guardar**.
 
 ## <a name="manage-your-payment-details"></a>Administrar los detalles de pago
 
-1. En el centro de administración, vaya a **la**  >  página**facturas & pagos**de facturación  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> .
+1. En el centro de administración, vaya a **la**  >  página **facturas & pagos** de facturación  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> .
 2. Seleccione un perfil de facturación de la lista.
-3. En la página Detalles del perfil de facturación, en **método de pago**, elija una de las siguientes opciones: \
+3. En la página Detalles del perfil de facturación, en **método de pago**, elija una de las siguientes opciones:
     - Si desea actualizar un método de pago existente, seleccione **Editar**.
     - Si desea agregar un nuevo método de pago, seleccione **reemplazar**.
 4. En el panel derecho, escriba los detalles de la tarjeta y, a continuación, elija **Guardar**.
 
 ### <a name="update-an-existing-payment-method"></a>Actualizar un método de pago existente
 
-1. En el centro de administración, vaya a **la**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
+1. En el centro de administración, vaya a **la**  >  página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
 2. En la pestaña **métodos de pago** , elija un método de pago existente de la lista.
 3. En el panel derecho, elija **Editar**. Puede cambiar el código de seguridad, la fecha de caducidad, el nombre de la tarjeta y la dirección.
 4. Realice los cambios necesarios y, a continuación, elija **Guardar**.
 
 ### <a name="add-a-new-payment-method"></a>Adición de un nuevo método de pago
 
-1. En el centro de administración, vaya a **la**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
+1. En el centro de administración, vaya a **la**  >  página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
 2. En la pestaña **métodos de pago** , elija **Agregar un método de pago**.
 3. En el panel **Agregar un método de pago** , escriba la información del nuevo método de pago y, a continuación, elija **Agregar**.
 
 ## <a name="view-your-invoices"></a>Ver las facturas
 
-1. En el centro de administración, vaya **a la**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
+1. En el centro de administración, vaya **a la**  >  página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> .
 2. En la pestaña **facturas** , seleccione la factura que desea ver. Si no hay facturas visibles, cambie los **3** últimos meses a los **6 últimos meses** o **Especifique un intervalo de fechas**.
 
 ## <a name="need-help-contact-us"></a>¿Necesita ayuda? Póngase en contacto con nosotros.

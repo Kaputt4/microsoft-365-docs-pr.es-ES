@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: 2b15d20e3ae1ad0bef871b139e61abf3ba260729
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071435"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367063"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa Premium a Microsoft 365 E3
 
@@ -50,7 +50,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Característica    | Soporte en Microsoft 365 Business Premium    | Soporte técnico de Microsoft 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
+| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
 | Aplicaciones de Office *    | [Aplicaciones de Microsoft 365 para negocios](#office-365-business)    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
@@ -136,7 +136,7 @@ Windows 10 Enterprise E3 también incluye administración empresarial del aislam
 
 No es necesario realizar ningún cambio en la configuración de Intune actual antes de la migración, lo que incluye los dispositivos inscritos y la configuración de dispositivos y aplicaciones.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business Premium incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 

@@ -20,18 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0ba3d7a5e46f7e0f8677ce2844c5551bf70739e3
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843821"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367120"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md).
+
+## <a name="november-2020"></a>Noviembre de 2020
+
+### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron 3 acciones de mejora relacionadas con los servicios para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
+
+- Corregir la ruta del servicio sin comillas para los servicios de Windows
+- Cambiar la ruta de acceso del ejecutable del servicio a una ubicación común protegida
+- Cambiar la cuenta de servicio para evitar la contraseña almacenada en caché en el registro de Windows
 
 ## <a name="october-2020"></a>Octubre de 2020
 
