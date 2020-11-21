@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135996"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376520"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,16 +29,17 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos del cliente de Microsoft 365?
 
-En las tablas siguientes, se muestra dónde se almacenan los datos en reposo de los clientes de los servicios de Microsoft 365 en todas las ubicaciones de nube globales de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
+En las tablas siguientes, se muestra dónde se almacenan los datos del cliente en reposo de los servicios de Microsoft 365 en todas las ubicaciones en la nube globales de Microsoft. Expanda la ubicación de su país de facturación para averiguar dónde se guardarán los datos de los clientes de cada servicio.
 
-Los clientes deberían ver la información de ubicación de los datos específica del espacio empresarial en el Centro de administración de Microsoft 365 en **Configuración | Configuración de la organización | Perfil de la organización | Ubicación de datos**.
+Si su empresa se encuentra en la Unión Europea, consulte [Ubicaciones de datos para la Unión Europea](EU-data-storage-locations.md) para obtener más información. 
+
+Los clientes deberían ver la información de ubicación de los datos específica del espacio empresarial en el Centro de Administración de Microsoft 365, en **Configuración | Configuración de la organización | Perfil de la organización | Ubicación de datos**.
 
 Los nuevos espacios empresariales de Microsoft 365 se asocian, de forma predeterminada, en función de la geoárea de la transacción asociada a la primera suscripción de ese espacio empresarial.
 
 Obtenga información acerca de los compromisos contractuales para la ubicación de almacenamiento de los datos de clientes en reposo en los [términos de servicios en línea de Microsoft (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
-
 
 Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de Europa o Norteamérica y guardar Datos de los clientes en reposo en cualquier parte de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el Cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de la Unión Europea y guardar Datos de los clientes en reposo en cualquier parte de la Unión Europea.
 
