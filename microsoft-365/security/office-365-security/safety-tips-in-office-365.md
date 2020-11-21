@@ -18,23 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo EOP y Office 365 protegen contra el correo no deseado, el phishing y la prevención de malware al agregar una sugerencia de seguridad a la parte superior de los correos electrónicos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948462"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376624"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sugerencias de seguridad en mensajes de correo electrónico
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 Exchange Online Protection (EOP) y Microsoft 365 protegen el correo no deseado, el phishing y la prevención de malware. Hoy en día, algunos de estos ataques están tan bien diseñados que parecen legítimos. No siempre es suficiente enviar mensajes a la carpeta correo electrónico no deseado. Ahora, cuando revise el correo electrónico en Outlook o en Outlook en la web o en cualquier cliente de correo electrónico, EOP comprueba automáticamente el remitente y agrega una sugerencia de seguridad en la parte superior del correo electrónico.
 
 Las sugerencias de seguridad de Outlook no dependen de la versión de Outlook que está usando, ya que la sugerencia de seguridad se ha averiguado abierto e insertado directamente en el cuerpo del mensaje. Esto significa que la sugerencia de seguridad se mostrará en cualquier cliente de correo electrónico que esté usando. Se realiza en el nivel de filtro de correo electrónico y no se representa en el nivel de cliente de correo, por lo que no solo se muestra en ninguna versión de Outlook, sino que también se muestra en cualquier cliente de correo electrónico.
 
-La sugerencia de seguridad (un mensaje codificado por colores) le avisará de los mensajes potencialmente perjudiciales. La mayoría de los mensajes de la bandeja de entrada no tienen una sugerencia de seguridad. Solo las verá cuando EOP y Microsoft 365 tienen información que necesita para evitar los ataques de correo no deseado, de suplantación de identidad (phishing) y de malware. Si se muestran sugerencias de seguridad en la bandeja de entrada, puede usar los siguientes ejemplos para obtener más información sobre cada tipo de sugerencia de seguridad.
+La sugerencia de seguridad, un mensaje codificado por colores, le avisará de los mensajes potencialmente perjudiciales. La mayoría de los mensajes de la bandeja de entrada no tienen una sugerencia de seguridad. Solo las verá cuando EOP y Microsoft 365 tienen información que necesita para evitar los ataques de correo no deseado, de suplantación de identidad (phishing) y de malware. Si se muestran sugerencias de seguridad en la bandeja de entrada, puede usar los siguientes ejemplos para obtener más información sobre cada tipo de sugerencia de seguridad.
 
 - Correo sospechoso (sugerencia de seguridad roja).
 

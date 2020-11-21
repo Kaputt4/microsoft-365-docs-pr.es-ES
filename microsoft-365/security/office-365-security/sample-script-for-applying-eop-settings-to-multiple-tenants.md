@@ -14,27 +14,38 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar PowerShell para aplicar opciones de configuración a los inquilinos en Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 6e33ceb6a9daa88bfefd4ec08ac9f2a9f34a942f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbb4135c89ac8d351c40bd7d9ce5301500a9b81b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198684"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376572"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Script de ejemplo para aplicar la configuración de EOP a varios inquilinos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-El script de ejemplo siguiente permite a los administradores de Microsoft Exchange Online Protection (EOP) que administran varios inquilinos (compañías) aplicar en estos opciones de configuración con Windows PowerShell.
+El siguiente script de ejemplo permite que los administradores de Microsoft Exchange Online Protection (EOP) que administran varios inquilinos (empresas) usen Exchange Online PowerShell para ver o aplicar opciones de configuración a sus inquilinos.
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Para ejecutar un script o un cmdlet en varios inquilinos:
 
-1. Cree un archivo .csv (por ejemplo, c:\scripts\inputfile.csv) con una aplicación como Excel:
+1. Si aún no lo ha hecho, [Instale el módulo Exchange Online versión 2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-2. En este archivo, especifique dos nombres de columna: UserName y Cmdlet.
+2. Con una aplicación de hoja de cálculo (por ejemplo, Excel), cree un archivo. csv con los siguientes detalles:
 
-3. En cada fila del archivo .csv, agregue el nombre de administrador del inquilino en la columna UserName y el cmdlet que debe ejecutarse para dicho inquilino en la columna Cmdlet. Por ejemplo, admin@contoso.com y Get-AcceptedDomain.
+   - Columna UserName: la cuenta que usará para conectarse (por ejemplo, `admin@contoso.onmicrosoft.com` ).
+   - Columna de cmdlet: cmdlet o comando que se va a ejecutar (por ejemplo, `Get-AcceptedDomain` o `Get-AcceptedDomain | FT Name` ).
+
+   El archivo tendrá un aspecto similar al siguiente:
+
+   ```text
+   UserName,Cmdlet
+   admin@contoso.onmicrosoft.com,Get-AcceptedDomain | FT Name
+   admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
+   ```
+
+3. Guarde el archivo. csv en una ubicación fácil de encontrar (por ejemplo, c:\scripts\inputfile.csv).
 
 4. Copie el script [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) en el Bloc de notas y, a continuación, guarde el archivo en una ubicación que sea fácil de encontrar (por ejemplo, c:\Scripts).
 
@@ -54,34 +65,46 @@ El script de ejemplo siguiente permite a los administradores de Microsoft Exchan
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
+> [!NOTE]
+> Es posible que deba modificar la `Connect-IPPSSession` línea del script para que sea igual que la del entorno. Por ejemplo, Office 365 Germany requiere un valor _ConnectionUri_ diferente del valor actual en un script. Para obtener más información, vea Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
+#
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #
 # .csv input file sample:
+#
 # UserName,Cmdlet
-# admin@contoso.com,Get-AcceptedDomain | ft Name
-# URI for connecting to remote Windows PowerShell
-$URI = "https://ps.protection.outlook.com/powershell-liveid/"
+# admin@contoso.onmicrosoft.com,Get-AcceptedDomain | FT Name
+# admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
+
 # Get the .csv file name as an argument to this script.
 $FilePath = $args[0]
+
 # Import the UserName and Cmdlet values from the .csv file.
 $CompanyList = Import-CSV $FilePath
+
+# Load the EXO V2 module
+Import-Module ExchangeOnlineManagement
+
 # Loop through each entry from the .csv file.
 ForEach ($Company in $CompanyList) {
+  
 # Get the current entry's UserName.
 $UserName = $Company.UserName
+
 # Get the current entry's Cmdlet.
 $Cmdlet = $Company.Cmdlet
-# Create a PowerShell credential object by using the current entry's UserName. Prompt for the password.
-$UserCredential = Get-Credential -username $UserName
-# Log on to a new Windows PowerShell session.
-$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $URI -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session
+
+# Connect to EOP PowerShell by using the current entry's UserName. Prompt for the password.
+Connect-IPPSSession -UserPrincipalName $UserName -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/
+
 # Here's where the script to be run on the tenant goes.
 # In this example, the cmdlet in the .csv file runs.
 Invoke-Expression $Cmdlet
+
 # End the current PowerShell session.
-Remove-PsSession -Session $Session
+Disconnect-ExchangeOnline -Confirm:$false
 }
 ```
