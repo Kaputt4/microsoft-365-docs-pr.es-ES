@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre el administrador de cumplimiento de Microsoft, que ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 91b5957d843a2e3fba22a1a9f1e630fbfede8713
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9bf20b74e26f1231630d4a45856813177deb55c7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087073"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376541"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Preguntas más frecuentes del administrador de cumplimiento
 
@@ -73,7 +73,7 @@ El administrador de cumplimiento es una solución de un extremo a otro en el cen
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>¿Hay requisitos de licencia para usar el administrador de cumplimiento?
 
-Sí. La versión GA del administrador de cumplimiento contiene nuevos términos de licencia. Todas las organizaciones con las licencias de Office 365 y Microsoft 365 y los clientes moderados de la comunidad de administración de Estados Unidos (GCC) tienen acceso al administrador de cumplimiento. Sin embargo, las evaluaciones disponibles para la organización y la forma en que se administran las plantillas de evaluación dependen del contrato de licencia. Para obtener más información, visite la [Guía de licencias de 365 de Microsoft para seguridad y cumplimiento](https://go.microsoft.com/fwlink/?linkid=2132371) .
+Sí. La versión GA del administrador de cumplimiento contiene nuevos términos de licencia. Todas las organizaciones con licencias de Office 365 y Microsoft 365, y los clientes de la comunidad de administración de EEUU (GCC) moderado y GCC, tienen acceso al administrador de cumplimiento. Sin embargo, las evaluaciones disponibles para la organización y la forma en que se administran las plantillas de evaluación dependen del contrato de licencia. Para obtener más información, visite la [Guía de licencias de 365 de Microsoft para seguridad y cumplimiento](https://go.microsoft.com/fwlink/?linkid=2132371) .
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si tengo una puntuación alta, ¿significa que estoy completamente conforme?
 

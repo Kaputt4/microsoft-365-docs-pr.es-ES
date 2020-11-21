@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072939"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376551"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072939"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novedades: la versión de disponibilidad general del administrador de cumplimiento
 
-Actualmente, el administrador de cumplimiento está disponible (GA) como una solución de administración de cumplimiento de un extremo a otro dentro del [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md). Con esta versión, el administrador de cumplimiento completa la transición desde su ubicación anterior en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento ahora también está disponible para los clientes moderados de la comunidad de administración de Estados Unidos (GCC).
+Actualmente, el administrador de cumplimiento está disponible (GA) como una solución de administración de cumplimiento de un extremo a otro dentro del [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md). Con esta versión, el administrador de cumplimiento completa la transición desde su ubicación anterior en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento ahora también está disponible para clientes de la comunidad de administración de Estados Unidos (GCC) moderado y GCC.
 
 Lo que comenzó a medida que la versión preliminar pública de la puntuación de cumplimiento ha evolucionado a una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de disponibilidad general ofrece una mayor colección de evaluaciones predefinidas para ayudarle a escalar las actividades de cumplimiento.
 
@@ -83,9 +83,9 @@ Un control es un requisito de una regla, un estándar o una directiva. Define c�
 
 El administrador de cumplimiento realiza un seguimiento de los siguientes tipos de controles:
 
-1. **Controles administrados de Microsoft** : controles para los servicios en la nube de Microsoft, que Microsoft es responsable de implementar
-2. **Sus controles** : a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
-3. **Controles compartidos** : son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
+1. **Controles administrados de Microsoft**: controles para los servicios en la nube de Microsoft, que Microsoft es responsable de implementar
+2. **Sus controles**: a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
+3. **Controles compartidos**: son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
 
 ##### <a name="learn-more"></a>Más información
 
@@ -99,10 +99,10 @@ Una evaluación es la agrupación de los controles de una normativa, estándar o
 
 Las evaluaciones tienen varios componentes:
 
-- **Servicios en el ámbito** : el conjunto específico de servicios de Microsoft que se aplican a la evaluación
-- **Controles administrados de Microsoft** : controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
-- **Sus controles** : a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
-- **Controles compartidos** : son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
+- **Servicios en el ámbito**: el conjunto específico de servicios de Microsoft que se aplican a la evaluación
+- **Controles administrados de Microsoft**: controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
+- **Sus controles**: a veces denominados controles administrados por el cliente, son controles implementados y administrados por su organización
+- **Controles compartidos**: son controles que tanto su organización como la responsabilidad de Microsoft comparten la responsabilidad de implementar
 - **Puntuación** de la evaluación: muestra el progreso en la obtención de los puntos totales posibles de las acciones de la evaluación administradas por la organización y por Microsoft.
 
 Al crear evaluaciones, deberá asignarlas a un grupo. Puede configurar los grupos de la forma más lógica para su organización. Por ejemplo, puede agrupar las evaluaciones por año de auditoría, región, solución, Teams dentro de su organización o de algún otro modo. Una vez creados los grupos, puede [filtrar el panel del administrador de cumplimiento](compliance-manager-setup.md#filtering-your-dashboard-view) para ver la puntuación de uno o varios grupos.

@@ -18,28 +18,30 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Use la búsqueda de contenido en el centro de cumplimiento de & de seguridad para realizar colecciones de destino, que garantizan que los elementos se encuentran en un buzón o carpeta de sitio específicos.
-ms.openlocfilehash: 7257ae669e7d325140af546466fb3e6a8a8a17fe
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Use la búsqueda de contenido en el centro de cumplimiento de Microsoft 365 para realizar colecciones de destino, que garantizan que los elementos se encuentran en un buzón o carpeta de sitio específicos.
+ms.openlocfilehash: 0908b8262942e7a1c4d80bc511d4b8cbcc6dc646
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357660"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376597"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar búsqueda de contenido para colecciones específicas
 
-La característica de búsqueda de contenido en el centro de seguridad y &amp; cumplimiento no ofrece una forma directa en la interfaz de usuario para buscar en carpetas específicas de los buzones de Exchange o de los sitios de SharePoint y OneDrive para la empresa. Sin embargo, es posible buscar carpetas específicas (denominadas *colección de destino*) especificando la propiedad ID de la carpeta para la propiedad email o path (DocumentLink) de los sitios de la sintaxis de la consulta de búsqueda real. Usar la búsqueda de contenido para realizar una colección de destino es útil cuando tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Puede usar el script de este artículo para obtener el identificador de carpeta para las carpetas de buzón o la ruta de acceso (DocumentLink) para las carpetas de un sitio de SharePoint y OneDrive para la empresa. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos que se encuentran en la carpeta.
+La característica de búsqueda de contenido en el centro de cumplimiento de Microsoft 365 no ofrece una forma directa en la interfaz de usuario para buscar en carpetas específicas de los buzones de Exchange o de los sitios de SharePoint y OneDrive para la empresa. Sin embargo, es posible buscar carpetas específicas (denominadas *colección de destino*) especificando la propiedad ID de la carpeta para la propiedad email o path (DocumentLink) de los sitios de la sintaxis de la consulta de búsqueda real. Usar la búsqueda de contenido para realizar una colección de destino es útil cuando tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Puede usar el script de este artículo para obtener el identificador de carpeta para las carpetas de buzón o la ruta de acceso (DocumentLink) para las carpetas de un sitio de SharePoint y OneDrive para la empresa. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos que se encuentran en la carpeta.
 
 > [!NOTE]
 > Para devolver contenido que se encuentra en una carpeta de un sitio de SharePoint o de OneDrive para la empresa, el script de este tema usa la propiedad administrada DocumentLink en lugar de la propiedad path. La propiedad DocumentLink es más robusta que la propiedad path porque devolverá todo el contenido de una carpeta, mientras que la propiedad path no devolverá algunos archivos multimedia.
 
 ## <a name="before-you-run-a-targeted-collection"></a>Antes de ejecutar una colección de destino
 
-- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para ejecutar el script en el paso 1. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento para ejecutar el script en el paso 1. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
-    Además, debe tener asignado el rol destinatarios de correo en su organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics** , que se incluye en el script en el paso 1. De forma predeterminada, la función destinatarios de correo se asigna a los grupos de funciones administración de la organización y administración de destinatarios en Exchange Online. Para obtener más información acerca de la asignación de permisos en Exchange Online, consulte [Manage role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). También puede crear un grupo de funciones personalizado, asignarle el rol destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?linkid=730688).
+    Además, debe tener asignado el rol destinatarios de correo en su organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics** , que se incluye en el script. De forma predeterminada, la función destinatarios de correo se asigna a los grupos de funciones administración de la organización y administración de destinatarios en Exchange Online. Para obtener más información acerca de la asignación de permisos en Exchange Online, consulte [Manage role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). También puede crear un grupo de funciones personalizado, asignarle el rol destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?linkid=730688).
 
-- Cada vez que ejecute el script en el paso 1, se creará una nueva sesión de PowerShell remoto. Por lo tanto, puede usar todas las sesiones de PowerShell remoto disponibles. Para evitar que esto suceda, puede ejecutar el siguiente comando para desconectar las sesiones remotas de PowerShell activas.
+- La secuencia de comandos de este artículo admite la autenticación moderna. Puede usar el script tal cual si es Microsoft 365 o una organización de Microsoft 365 GCC. Si es una organización de Office 365 Germany, una organización de Microsoft 365 GCC o una organización DoD de Microsoft 365, tendrá que editar el script para que se ejecute correctamente. Concretamente, tiene que editar la línea `Connect-ExchangeOnline` y usar el parámetro *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a PowerShell de Exchange Online.  Además, tiene que editar la línea `Connect-IPPSSession` y usar los parámetros *ConnectionUri* y *AzureADAuthorizationEndpointUri* (y los valores apropiados para el tipo de organización) para conectarse a PowerShell del centro de cumplimiento de & de seguridad. Para obtener más información, vea los ejemplos de [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) y [conectarse al centro de seguridad & cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+
+- Cada vez que se ejecuta el script, se crea una nueva sesión de PowerShell remoto. Esto significa que puede usar todas las sesiones de PowerShell remoto disponibles. Para evitar que esto suceda, ejecute el siguiente comando para desconectar las sesiones remotas de PowerShell activas.
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -57,18 +59,18 @@ El script que se ejecuta en el primer paso devolverá una lista de carpetas de b
   
 - Dirección de **correo electrónico o dirección URL del sitio**: escriba una dirección de correo electrónico del custodio para devolver una lista de las carpetas de buzones y los identificadores de carpetas de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la empresa para devolver una lista de rutas de la ubicación del sitio especificado. Aquí le mostramos otros ejemplos:
 
-  - **Exchange**: stacig@contoso.onmicrosoft.com 
+  - **Exchange**: stacig@contoso. en Microsoft <spam> <spam> . com
 
-  - **SharePoint**: https://contoso.sharepoint.com/sites/marketing 
+  - **SharePoint**: https <span>://</span>contoso.SharePoint.com/sites/marketing 
 
-  - **OneDrive para la empresa**: https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
+  - **OneDrive para la empresa**: https <span>://</span>contoso-My.SharePoint.com/personal/stacig_contoso_onmicrosoft_com 
 
-- **Sus credenciales de usuario**: el script usará sus credenciales para conectarse a Exchange Online y al centro de seguridad & cumplimiento con PowerShell remoto. Como se ha explicado anteriormente, tiene que asignar los permisos adecuados para que este script se ejecute correctamente.
+- **Sus credenciales de usuario**: el script usará sus credenciales para conectarse a PowerShell de Exchange Online PowerShell o el PowerShell del centro de cumplimiento de & de seguridad usando la autenticación moderna. Como se ha explicado anteriormente, debe tener asignados los permisos adecuados para ejecutar correctamente este script.
 
 Para mostrar una lista de las carpetas del buzón o los nombres de documentlink (ruta de acceso) del sitio:
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `GetFolderSearchParameters.ps1` .
-    
+
    ```powershell
    #########################################################################################################
    # This PowerShell script will prompt you for:                                #
@@ -91,19 +93,15 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
    # Collect the target email address or SharePoint Url
    $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
    # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
-   if (!$credentials)
-   {
-      $credentials = Get-Credential
-   }
    if ($addressOrSite.IndexOf("@") -ige 0)
    {
       # List the folder Ids for the target mailbox
       $emailAddress = $addressOrSite
-      # Authenticate with Exchange Online
+      # Connect to Exchange Online PowerShell
       if (!$ExoSession)
       {
-          $ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $credentials -Authentication Basic -AllowRedirection
-          Import-PSSession $ExoSession -AllowClobber -DisableNameChecking
+          Import-Module ExchangeOnlineManagement
+          Connect-ExchangeOnline
       }
       $folderQueries = @()
       $folderStatistics = Get-MailboxFolderStatistics $emailAddress
@@ -132,11 +130,11 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security & Compliance Center
+      # Connect to Security & Compliance Center PowerShell
       if (!$SccSession)
       {
-          $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
-          Import-PSSession $SccSession -AllowClobber -DisableNameChecking
+          Import-Module ExchangeOnlineManagement
+          Connect-IPPSSession
       }
       # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
@@ -197,7 +195,7 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
   
 ### <a name="script-output-for-mailbox-folders"></a>Salida de script para carpetas de buzón
 
-Si está obteniendo identificadores de carpeta de buzón de correo, el script se conecta a Exchange online mediante PowerShell remoto, ejecuta el cmdlet **Get-MailboxFolderStatisics** y, a continuación, muestra la lista de las carpetas del buzón especificado. Para cada carpeta del buzón, el script muestra el nombre de la carpeta en la columna **folderPath** y el identificador de la carpeta en la columna **FolderQuery** . Además, el script agrega el prefijo de **folderId** (que es el nombre de la propiedad Mailbox) al identificador de la carpeta. Dado que la propiedad **folderId** es una propiedad que se puede buscar, usará  `folderid:<folderid>` en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. El script muestra un máximo de 100 carpetas de buzón de correo.
+Si está obteniendo identificadores de carpeta de buzón de correo, el script se conecta a Exchange Online PowerShell, ejecuta el cmdlet **Get-MailboxFolderStatisics** y, a continuación, muestra la lista de las carpetas del buzón especificado. Para cada carpeta del buzón, el script muestra el nombre de la carpeta en la columna **folderPath** y el identificador de la carpeta en la columna **FolderQuery** . Además, el script agrega el prefijo de **folderId** (que es el nombre de la propiedad Mailbox) al identificador de la carpeta. Dado que la propiedad **folderId** es una propiedad que se puede buscar, usará  `folderid:<folderid>` en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. El script muestra un máximo de 100 carpetas de buzón de correo.
 
 > [!IMPORTANT]
 > El script de este artículo incluye la lógica de codificación que convierte los valores de identificador de carpeta de 64 caracteres devueltos por **Get-MailboxFolderStatistics** en el mismo formato de 48 caracteres que se indexa para la búsqueda. Si solo ejecuta el cmdlet **Get-MailboxFolderStatistics** en PowerShell para obtener un identificador de carpeta (en lugar de ejecutar el script de este artículo), se producirá un error en una consulta de búsqueda que use ese valor de ID de carpeta. Tiene que ejecutar el script para obtener los identificadores de carpeta con formato correcto que se pueden usar en una búsqueda de contenido.
@@ -210,7 +208,7 @@ El ejemplo del paso 2 muestra la consulta utilizada para buscar en la subcarpeta
   
 ### <a name="script-output-for-site-folders"></a>Salida de script para carpetas de sitio
 
-Si va a obtener la ruta de acceso de la propiedad **documentlink** de los sitios de SharePoint o de OneDrive para la empresa, el script se conecta al centro de seguridad & cumplimiento con PowerShell remoto, crea una nueva búsqueda de contenido que busca carpetas en el sitio y, a continuación, muestra una lista de las carpetas que se encuentran en el sitio especificado. El script muestra el nombre de cada carpeta y agrega el prefijo de **documentlink** a la dirección URL de la carpeta. Como la propiedad **documentlink** es una propiedad que se puede buscar, use el `documentlink:<path>` par Property: value en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. El script muestra un máximo de 200 carpetas del sitio. Si hay más de 200 carpetas de sitio, se muestran las más recientes.
+Si va a obtener la ruta de acceso de la propiedad **documentlink** de los sitios de SharePoint o de OneDrive para la empresa, el script se conecta a seguridad & cumplimiento de las normas de seguridad, crea una nueva búsqueda de contenido que busca carpetas en el sitio y, a continuación, muestra una lista de las carpetas que se encuentran en el sitio especificado. El script muestra el nombre de cada carpeta y agrega el prefijo de **documentlink** a la dirección URL de la carpeta. Como la propiedad **documentlink** es una propiedad que se puede buscar, use el `documentlink:<path>` par Property: value en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. El script muestra un máximo de 200 carpetas del sitio. Si hay más de 200 carpetas de sitio, se muestran las más recientes.
   
 A continuación, se muestra un ejemplo de los resultados devueltos por el script para las carpetas del sitio.
   
@@ -218,33 +216,29 @@ A continuación, se muestra un ejemplo de los resultados devueltos por el script
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Paso 2: usar un identificador de carpeta o documentlink para realizar una colección de destino
 
-Después de ejecutar el script para recopilar una lista de identificadores de carpeta o vínculos de documentos para un usuario específico, siga el paso siguiente para ir al centro de seguridad & cumplimiento y crear una nueva búsqueda de contenido para buscar en una carpeta específica. Use el  `folderid:<folderid>`  `documentlink:<path>` par propiedad o: valor de la consulta de búsqueda que configure en el cuadro palabra clave de búsqueda de contenido (o como el valor para el parámetro  *ContentMatchQuery*  si usa el cmdlet **New-ComplianceSearch** ). Puede combinar la  `folderid` propiedad o  `documentlink` con otros parámetros de búsqueda o condiciones de búsqueda. Si solo incluye la  `folderid` propiedad o  `documentlink` en la consulta, la búsqueda devolverá todos los elementos que se encuentran en la carpeta especificada.
+Una vez que haya ejecutado el script para recopilar una lista de identificadores de carpeta o vínculos de documentos para un usuario específico, siga el paso siguiente para ir al centro de cumplimiento de Microsoft 365 y crear una nueva búsqueda de contenido para buscar en una carpeta específica. Use el  `folderid:<folderid>`  `documentlink:<path>` par propiedad o: valor de la consulta de búsqueda que configure en el cuadro palabra clave de búsqueda de contenido (o como el valor para el parámetro  *ContentMatchQuery*  si usa el cmdlet **New-ComplianceSearch** ). Puede combinar la  `folderid` propiedad o  `documentlink` con otros parámetros de búsqueda o condiciones de búsqueda. Si solo incluye la  `folderid` propiedad o  `documentlink` en la consulta, la búsqueda devolverá todos los elementos que se encuentran en la carpeta especificada.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con la cuenta y las credenciales que usó para ejecutar el script en el paso 1.
 
-2. Inicie sesión con la cuenta y las credenciales que usó para ejecutar el script en el paso 1.
+2. En el panel izquierdo del centro de cumplimiento, haga clic en **Mostrar**  >  **búsqueda de contenido** y, a continuación, haga clic en **nueva búsqueda**.
 
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de contenido de **búsqueda** \> **Content search**y, a continuación, en **nuevo** ![ icono Agregar ](../media/O365-MDM-CreatePolicy-AddIcon.gif) .
-
-4. En la página **Búsqueda nueva**, escriba un nombre para la búsqueda de contenido. Este nombre debe ser único en la organización. 
-
-5. En **¿dónde desea**que se vean?, realice una de las siguientes acciones, en función de si está buscando en una carpeta de buzón de correo o en una carpeta de sitio:
-
-    - Haga clic en **elegir buzones específicos para buscar** y, a continuación, agregue el mismo buzón que especificó cuando ejecutó el script en el paso 1.
-
-      O bien:
-
-    - Haga clic en **elegir sitios específicos para buscar** y, a continuación, agregue la dirección URL del sitio que especificó cuando ejecutó el script en el paso 1.
-
-6. Haga clic en **Siguiente**.
-
-7. En el cuadro palabra clave de la página **¿qué desea que busquemos?** , pegue el  `folderid:<folderid>`  `documentlink:<path>` valor o devuelto por el script en el paso 1. 
+3. En el cuadro **palabras clave** , pegue `folderid:<folderid>` el  `documentlink:<path>` valor o devuelto por el script en el paso 1.
 
     Por ejemplo, en la siguiente captura de pantalla se buscará cualquier elemento de la subcarpeta depuraciones en la carpeta elementos recuperables del usuario (el valor de la `folderid` propiedad de la subcarpeta purgas se muestra en la captura de pantalla del paso 1):
 
-    ![Pegue el folderId o documentlink en el cuadro de palabras clave de la consulta de búsqueda](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
-  
-8. Haga clic en **Buscar** para iniciar la búsqueda de colección de destino. 
+    ![Pegue el folderId o documentlink en el cuadro de palabras clave de la consulta de búsqueda](../media/FolderIDSearchQuery.png)
+
+4. En **ubicaciones**, seleccione **ubicaciones específicas** y, a continuación, haga clic en **modificar**.
+
+5. Realice una de las siguientes acciones, en función de si está buscando en una carpeta de buzón de correo o en una carpeta de sitio:
+
+    - Junto a **correo electrónico de Exchange**, haga clic en **elegir usuarios, grupos o equipos** y, a continuación, agregue el mismo buzón que especificó cuando ejecutó el script en el paso 1.
+
+      O bien
+
+    - Junto a **sitios de SharePoint**, haga clic en **elegir sitios** y, a continuación, agregue la dirección URL del sitio que especificó al ejecutar el script en el paso 1.
+
+6. Una vez guardada la ubicación de contenido para realizar la búsqueda, haga clic en **guardar & ejecutar**, escriba un nombre para la búsqueda de contenido y, a continuación, haga clic en **Guardar** para iniciar la búsqueda de colección de destino. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Ejemplos de consultas de búsqueda para colecciones dirigidas
 

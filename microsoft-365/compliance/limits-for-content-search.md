@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites en vigor para la característica de búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, como el número máximo de búsquedas simultáneas.
-ms.openlocfilehash: 678f3c9613096291b5c27d89ac2d756148dd7608
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: d43f0772c587dbdb49abdf9cf59fe02446f3d3a7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269389"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371530"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Límites de búsqueda de contenido en el centro de seguridad & cumplimiento
 
 > [!NOTE]
-> Los límites de este tema son distintos de los límites actuales para la exhibición de documentos electrónicos local en Exchange Online y para el centro de exhibición de documentos electrónicos en SharePoint Online.
+> Los límites de este tema son distintos de los límites actuales para In-Place eDiscovery en Exchange Online y para el centro de exhibición de documentos electrónicos en SharePoint Online.
   
 Se aplican varios límites a la característica de búsqueda de contenido en el centro de seguridad & cumplimiento. Esto incluye las búsquedas que se ejecutan en la página de **búsqueda de contenido** y las búsquedas asociadas a un caso de exhibición de documentos electrónicos. Estos límites ayudan a mantener la salud y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indización de mensajes de correo electrónico en Exchange Online para la búsqueda. No puede modificar los límites de indexación de contenido o de correo electrónico, pero debe conocerlos para que pueda tener en cuenta estos límites al planear, ejecutar y solucionar los problemas de las búsquedas de contenido.
   
@@ -35,7 +35,7 @@ Se aplican varios límites a la característica de búsqueda de contenido en el 
 
 En la siguiente tabla se enumeran los límites de búsqueda en el centro de seguridad & cumplimiento.
   
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
 |:-----|:-----|
 |El número máximo de buzones o sitios en los que se puede buscar en una sola búsqueda de contenido  <br/> |Sin límite <sup>1</sup> <br/> |
 |El número máximo de búsquedas de contenido que se pueden ejecutar al mismo tiempo en la organización.  <br/> |semestre  <br/> |
@@ -52,6 +52,7 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 |Número máximo de variantes devueltas al usar un carácter comodín de prefijo para buscar una frase exacta en una consulta de búsqueda o cuando se usa un carácter comodín de prefijo y el operador booleano **Near** .  <br/> |10.000 <sup>3</sup> <br/> |
 |El número mínimo de caracteres alfabéticos para los caracteres comodín de prefijo; por ejemplo,  `time*` ,  `one*` o  `set*` .  <br/> |3  <br/> |
 |El número máximo de buzones en una búsqueda de contenido en la que se pueden eliminar elementos mediante una acción "buscar y purgar" (mediante el comando **New-ComplianceSearchAction-Purge** ). Si la búsqueda de contenido en la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de las búsquedas y depuración, consulte [Buscar y eliminar mensajes de correo electrónico de la organización](search-for-and-delete-messages-in-your-organization.md).  <br/> |50 000  <br/> |
+|El número máximo de buzones en una búsqueda de contenido desde la que puede exportar elementos. Si la búsqueda de contenido que está exportando tiene más buzones de origen que este límite, se producirá un error en la exportación. Para obtener más información, vea [exportar resultados](export-search-results.md)de la búsqueda de contenido.  <br/> |100 000  <br/> |
 
 > [!NOTE]
 > <sup>1</sup> aunque puede buscar en un número ilimitado de buzones de correo en una sola búsqueda, solo puede descargar los resultados de la búsqueda exportados de un máximo de 100.000 buzones mediante la herramienta de exportación de exhibición de documentos electrónicos de Office 365 Security & Compliance Center o el centro de cumplimiento de Microsoft 365. Para descargar los resultados de búsqueda de más de 100.000 buzones, tiene que usar el PowerShell del centro de cumplimiento de & de seguridad. Para obtener más información y un script de ejemplo, consulte [exportar resultados de más de 100.000 buzones](export-search-results.md#exporting-results-from-more-than-100000-mailboxes). <br/><br/> <sup>2</sup> al buscar ubicaciones de SharePoint y OneDrive para la empresa, los caracteres de las direcciones URL de los sitios en los que se busca se cuentan en este límite. <br/><br/> <sup>3</sup> para las consultas que no son de frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto indica que se produce una palabra en un documento, pero no donde se produce en el documento. Para realizar una consulta de frases (un valor de palabra clave con comillas dobles), debemos comparar la posición del documento con las palabras de la frase. Esto significa que no podemos usar el índice de prefijos para las consultas de frases. En este caso, la consulta se expande internamente con todas las palabras posibles a las que se expande el prefijo; por ejemplo,  `"time*"` se puede expandir a  `"time OR timer OR times OR timex OR timeboxed OR …"` . 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior. 
@@ -60,14 +61,14 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 
 En la tabla siguiente se describen los límites de indización que podrían dar como resultado la devolución de un mensaje de correo electrónico como un elemento no indizado o un elemento parcialmente indizado en los resultados de una búsqueda de contenido.
   
-|**Límite de indización**|**Notas**|**Descripción**|
+| Límite de indización | Valor máximo | Descripción |
 |:-----|:-----|:-----|
 |Tamaño máximo de datos adjuntos|150 MB  <br/> |El tamaño máximo de datos adjuntos de correo electrónico que se analizarán para la indización. Los datos adjuntos que superen este límite no se analizarán para la indización y el mensaje con los datos adjuntos se marcará como parcialmente indizado.  <br/> <br/>**Nota:** El análisis es el proceso en el que el servicio de indización extrae el texto de los datos adjuntos, quita los caracteres innecesarios, como la puntuación y los espacios, y divide el texto en palabras (en un proceso denominado "tokenización"), que se almacenan en el índice.           |
 |Número máximo de datos adjuntos  <br/> |250  <br/> |El número máximo de archivos adjuntos a un mensaje de correo electrónico que se analizará para la indización. Si un mensaje tiene más de 250 datos adjuntos, se analizan e indizan los primeros 250, y el mensaje se marca como parcialmente indizado porque tenía datos adjuntos adicionales que no se analizaron.  <br/> |
 |Profundidad máxima de datos adjuntos  <br/> |semestre  <br/> |El número máximo de datos adjuntos anidados que se analizan. Por ejemplo, si un mensaje de correo electrónico tiene otro mensaje adjunto y el mensaje adjunto tiene un documento de Word adjunto, se indizará el documento de Word y el mensaje adjunto. Este comportamiento seguirá hasta 30 archivos adjuntos anidados.  <br/> |
 |Número máximo de imágenes adjuntas  <br/> |comprendi  <br/> |El analizador omite una imagen que se adjunta a un mensaje de correo electrónico y no se indiza.  <br/> |
 |Tiempo máximo empleado en el análisis de un elemento  <br/> |30 segundos  <br/> |Se dedica un máximo de 30 segundos a analizar un elemento para la indización. Si el tiempo de análisis supera los 30 segundos, el elemento se marca como parcialmente indizado.  <br/> |
-|Salida máxima del analizador  <br/> |2 millones de caracteres  <br/> |La cantidad máxima de salida de texto del analizador que se indiza. Por ejemplo, si el analizador extrajo 8 millones caracteres de un documento, solo se indizarán los primeros 2 millones de caracteres.  <br/> |
+|Salida máxima del analizador  <br/> |2 millones de caracteres  <br/> |La cantidad máxima de salida de texto del analizador que se indiza. Por ejemplo, si el analizador extrajo 8 millones caracteres de un documento, solo se indizan los primeros 2 millones caracteres.  <br/> |
 |Tokens de anotación máximos  <br/> |2 millones  <br/> |Cuando se indiza un mensaje de correo electrónico, se anota cada palabra con diferentes instrucciones de procesamiento que especifican cómo debe indizarse esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad de servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.  <br/> |
 |Tamaño máximo del cuerpo en el índice  <br/> |67 millones caracteres  <br/> |El número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indiza un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y en todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indizada es de 67 millones caracteres.  <br/> |
 |Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase  `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
@@ -76,7 +77,7 @@ En la tabla siguiente se describen los límites de indización que podrían dar 
 
 Existen límites adicionales relacionados con los distintos aspectos de la búsqueda de contenido, como la exportación de resultados de búsqueda y la indización de contenido. Para obtener una descripción de estos límites, vea los siguientes temas:
   
-- [Exportar resultados del Contenido de búsqueda](export-search-results.md#export-limits)
+- [Exportar resultados de la búsqueda de contenido](export-search-results.md#export-limits)
 
 - [Elementos parcialmente indizados en la búsqueda de contenido](partially-indexed-items-in-content-search.md)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y los roles de usuario de Microsoft Compliance Manager y configure las pruebas automatizadas de las acciones. Administrar el historial del usuario y filtrar la vista del panel.
-ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072895"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376561"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072895"
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede obtener acceso al administrador de cumplimiento
 
-El administrador de cumplimiento está disponible para las organizaciones con las licencias de Office 365 y Microsoft 365 y para los clientes moderados de la nube de la comunidad de administración de Estados Unidos (GCC). La disponibilidad y las capacidades de administración de la evaluación dependen del contrato de licencia.  [Ver los detalles](https://go.microsoft.com/fwlink/?linkid=2132371)de la descripción del servicio.
+El administrador de cumplimiento está disponible para las organizaciones con las licencias de Office 365 y Microsoft 365, así como para los clientes moderados y GCC de la nube de la comunidad de administración de Estados Unidos (GCC). La disponibilidad y las capacidades de administración de la evaluación dependen del contrato de licencia.  [Ver los detalles](https://go.microsoft.com/fwlink/?linkid=2132371)de la descripción del servicio.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -51,6 +51,9 @@ El administrador de cumplimiento usa un modelo de permisos de control de acceso 
 
 La persona que asume el rol de administrador global de su organización puede establecer permisos de usuario en el centro de cumplimiento de Microsoft 365, así como en Azure Active Directory (Azure AD).
 
+> [!NOTE]
+> Clientes en entornos de la comunidad de administración de Estados Unidos (GCC) los entornos altos solo pueden establecer permisos de usuario y roles para el administrador de cumplimiento en Azure AD. Consulte a continuación para obtener las definiciones de tipo de rol y de Azure AD.
+
 Para establecer permisos y asignar roles desde dentro del centro de cumplimiento de Microsoft 365, siga los pasos que se indican a continuación:
 
 1. Seleccione **permisos** en el panel de navegación izquierdo desde cualquier lugar del [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/).
@@ -67,7 +70,7 @@ Para establecer permisos y asignar roles desde dentro del centro de cumplimiento
 
 7. Active la casilla de verificación situada junto a los nombres que desea agregar y, a continuación, seleccione el botón **Agregar** en la parte inferior.
 
-8. Cuando termine de asignar usuarios, seleccione **listo** , seleccione **Guardar** y, después, **cerrar**.
+8. Cuando termine de asignar usuarios, seleccione **listo**, seleccione **Guardar** y, después, **cerrar**.
 
 ##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Más información sobre el centro de cumplimiento de & de Office 365 secruity
 
@@ -98,6 +101,9 @@ En la tabla siguiente se muestran las funciones permitidas por cada función en 
 
 La configuración del administrador de cumplimiento en el centro de cumplimiento de Microsoft 365 permite habilitar y deshabilitar la prueba automática de acciones de mejora. La configuración también le permite administrar los datos de los usuarios asociados a las acciones de mejora, incluida la capacidad de reasignar acciones de mejora a un usuario diferente.  Solo las personas con un administrador global o un rol de administrador del administrador de cumplimiento pueden tener acceso a la configuración del administrador de cumplimiento.
 
+> [!NOTE]
+> La característica de pruebas automatizadas no está disponible para los clientes en los entornos de GCC High, ya que la puntuación segura no está disponible en estos entornos. Los clientes altos de GCC deberán implementar y probar manualmente sus acciones de mejora.
+
 ### <a name="set-up-automated-testing"></a>Configurar pruebas automatizadas
 
 Las acciones de mejora del administrador de cumplimiento también se supervisan con la [puntuación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). Puede configurar la prueba automatizada de las acciones que se supervisan conjuntamente, lo que significa que cuando se prueba y se actualiza una acción en calificación segura, los resultados se sincronizan con las mismas acciones en el administrador de cumplimiento y se recuentan hacia la puntuación de cumplimiento.
@@ -116,7 +122,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 4. Seleccione el botón aplicable para activar las pruebas automáticas para todas las acciones de mejora, desactivarlas para todas las acciones o activarlas por acción individual.
 
-5. Si selecciona **activar por acción de mejora** , una lista mostrará todas las acciones de mejora disponibles que puede elegir.  Active la casilla junto a cualquier acción que desee que se pruebe automáticamente.
+5. Si selecciona **activar por acción de mejora**, una lista mostrará todas las acciones de mejora disponibles que puede elegir.  Active la casilla junto a cualquier acción que desee que se pruebe automáticamente.
 
 6. Seleccione **Guardar** para guardar la configuración. Recibirá un mensaje de confirmación en la parte superior de la pantalla en el que se guardó la selección. Si recibe un aviso de error, inténtelo de nuevo.
 
@@ -178,7 +184,7 @@ Puede reasignar acciones de mejora de un usuario a otro. Cuando se reasigna una 
 
 6. En el campo **Buscar usuarios** , escriba el nombre o la dirección de correo electrónico del usuario *al* que desea asignar las acciones de mejora.
 
-7. Cuando vea el nombre del usuario previsto en acciones de **mejora se asignará a** , seleccione el usuario y, a continuación, seleccione **asignar acciones**.
+7. Cuando vea el nombre del usuario previsto en acciones de **mejora se asignará a**, seleccione el usuario y, a continuación, seleccione **asignar acciones**.
 
 8. Una vez completada la reasignación, verá un mensaje de confirmación en el panel de flotante en el que se confirma que se han reasignado todas las acciones de mejora del usuario anterior al nuevo usuario. Si recibe un aviso de error de reasignación, cierre la ventana y vuelva a intentarlo. Para cerrar el panel de flotante, seleccione **listo**.
 
@@ -233,8 +239,8 @@ En esta sección se destacan soluciones que contienen acciones de mejora que pue
 
 En esta sección se ofrece una vista más detallada de su puntuación de dos maneras diferentes:
 
-- **Categorías** : muestra el porcentaje de la puntuación general dentro de las categorías de protección de datos, como "proteger la información" o "administrar dispositivos".
-- **Evaluaciones** : muestra el porcentaje de su progreso en la administración de las evaluaciones para normas, regulaciones o leyes de protección de datos y cumplimiento en particular, como RGPD o NIST 800-53.
+- **Categorías**: muestra el porcentaje de la puntuación general dentro de las categorías de protección de datos, como "proteger la información" o "administrar dispositivos".
+- **Evaluaciones**: muestra el porcentaje de su progreso en la administración de las evaluaciones para normas, regulaciones o leyes de protección de datos y cumplimiento en particular, como RGPD o NIST 800-53.
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrar la vista del panel
 
@@ -268,12 +274,12 @@ La vista predeterminada de esta página no muestra acciones de mejora con el est
 
 La página acciones de mejora muestra los siguientes puntos de datos para cada acción de mejora:
 
-- **Puntos logrados** : el número de puntos que se obtiene del total disponible al completar la acción.
-- **Regulaciones** : normas o normas relativas a la acción
-- **Grupo** : el grupo al que asignó la acción
-- **Soluciones** : la solución en la que puede realizar la acción.
-- **Evaluaciones** : las evaluaciones que contienen la acción
-- **Categorías** : categoría de protección de datos relacionada (por ejemplo, proteger la información, administrar dispositivos, etc.)
+- **Puntos logrados**: el número de puntos que se obtiene del total disponible al completar la acción.
+- **Regulaciones**: normas o normas relativas a la acción
+- **Grupo**: el grupo al que asignó la acción
+- **Soluciones**: la solución en la que puede realizar la acción.
+- **Evaluaciones**: las evaluaciones que contienen la acción
+- **Categorías**: categoría de protección de datos relacionada (por ejemplo, proteger la información, administrar dispositivos, etc.)
 - **Estado** de la prueba:
     - **None** : no se ha grabado ninguna actualización del estado
     - **No evaluado: no** se han iniciado las pruebas
@@ -320,18 +326,18 @@ La página evaluaciones enumera todas las [evaluaciones](compliance-manager-asse
 
 La página evaluaciones resume la información clave de cada evaluación:
 
-- **Evaluación** : nombre de la evaluación
-- **Estado** :
+- **Evaluación**: nombre de la evaluación
+- **Estado**:
     - **Completo** : todos los controles tienen un estado de "Passed" o al menos uno se pasa y el resto están "fuera de ámbito"
     - **Incompleto** : al menos un control tiene un estado de "error"
     - **Ninguno** : no se han probado todos los controles
     - Las acciones **de mejora del progreso** tienen cualquier otro Estado, incluidos "en curso" "crédito parcial" o "no detectado
 - **Progreso** de la evaluación: porcentaje del trabajo realizado hasta la finalización, medido por el número de controles correctamente probados
-- Las **acciones de mejora** : el número de acciones completadas para satisfacer la implementación de los controles
-- **Acciones de Microsoft** : el número de acciones completadas para satisfacer la implementación de los controles de Microsoft
-- **Grupo** : nombre del grupo al que pertenece la evaluación
-- **Producto** : servicio de Microsoft 365 asociado
-- **Reglamento** : el estándar normativo, la política o la legislación que se aplica a la evaluación
+- Las **acciones de mejora**: el número de acciones completadas para satisfacer la implementación de los controles
+- **Acciones de Microsoft**: el número de acciones completadas para satisfacer la implementación de los controles de Microsoft
+- **Grupo**: nombre del grupo al que pertenece la evaluación
+- **Producto**: servicio de Microsoft 365 asociado
+- **Reglamento**: el estándar normativo, la política o la legislación que se aplica a la evaluación
 
 ### <a name="filtering-your-assessments-view"></a>Filtrar la vista de evaluaciones
 

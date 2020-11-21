@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo realizar implementaciones y pruebas en los controles del administrador de cumplimiento de Microsoft. Asignar trabajo, almacenar documentación y exportar informes.
-ms.openlocfilehash: 99b08ca1336c3f347764230896af47fe1486d4b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204534"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376531"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Asignar y completar acciones de mejora en el administrador de cumplimiento
 
-**En este artículo:** En este artículo se explica cómo **administrar el flujo de trabajo de cumplimiento** con acciones de mejora. Obtenga información sobre cómo **asignar acciones de mejora** para implementar y probar, **administrar actualizaciones**y exportar **informes**.
+**En este artículo:** En este artículo se explica cómo **administrar el flujo de trabajo de cumplimiento** con acciones de mejora. Obtenga información sobre cómo **asignar acciones de mejora** para implementar y probar, **administrar actualizaciones** y exportar **informes**.
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Administrar flujos de trabajo de cumplimiento con acciones de mejora
 
@@ -56,7 +56,7 @@ Una vez que haya identificado al destinatario de la asignación, asegúrese de q
 
 2. En el panel de control flotante Editar estado, seleccione el cuadro **asignado a** para mostrar una lista de usuarios **sugeridos** para las personas. Puede seleccionar el usuario de la lista o escribir la dirección de correo electrónico de la persona a la que desea asignarlo.
 
-3. Seleccione **Guardar y cerrar**. El usuario asignado recibirá un correo electrónico en el que se explica que se ha asignado la acción de mejora, con un vínculo directo a la acción de mejora.
+3. Seleccione **Guardar y cerrar**. El usuario asignado recibirá un correo electrónico en el que se explica que se ha asignado la acción de mejora, con un vínculo directo a la acción de mejora. (Nota: US Government Community (GCC) los altos clientes no recibirán un correo electrónico cuando se les asignen acciones.)
 
 A continuación, el usuario asignado puede realizar las acciones recomendadas.
 
@@ -69,7 +69,7 @@ La sección de **notas y documentación** contiene los campos para los documento
 #### <a name="uploaded-documents"></a>Documentos cargados
 
 - Seleccione **administrar documentos** para cargar los archivos relevantes.
-- Cuando se abra el panel desplegable administrar documentos, seleccione **Agregar documento**y, a continuación, seleccione el archivo en el sistema. Tipos de archivos aceptados:
+- Cuando se abra el panel desplegable administrar documentos, seleccione **Agregar documento** y, a continuación, seleccione el archivo en el sistema. Tipos de archivos aceptados:
     - Documentos (. doc,. xls,. ppt,. txt,. pdf)
     - Imágenes (. jpg,. png)
     - Vídeo (. mkv)
@@ -98,7 +98,7 @@ Para editar el estado de una acción de mejora, seleccione **Editar estado** en 
     - **Planificada** : se planea la acción para la implementación
     - **Fuera de ámbito** – la acción no es relevante para su organización y no contribuye a su calificación
 - **Fecha de implementación**: disponible para seleccionar Cuándo el estado de implementación es "implementado" o "implementación alternativa"
-- **Estado**de la prueba: disponible para seleccionar Cuándo el estado de implementación es "implementado" o "implementación alternativa":
+- **Estado** de la prueba: disponible para seleccionar Cuándo el estado de implementación es "implementado" o "implementación alternativa":
     - **No evaluado: no** se ha probado la acción
     - La implementación que se ha **aprobado** ha sido comprobada por un asesor
     - Error en la prueba de **riesgo bajo** , riesgo bajo

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131113"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371698"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Una vez [publicadas](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) las etiquetas de confidencialidad del centro de cumplimiento de Microsoft 365 o del centro de etiquetas equivalente, comienzan a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos cuando se crean o editan.
 
@@ -258,6 +258,41 @@ Cuando configure una etiqueta de confidencialidad para los marcados de contenido
 
 > [!NOTE]
 > La sintaxis de estas variables distingue mayúsculas de minúsculas.
+
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Configuración de diferentes marcadores visuales para Word, Excel, PowerPoint y Outlook
+
+Como variable adicional, puede configurar los marcados visuales por tipo de aplicación de Office usando una instrucción variable "If. app" en la cadena de texto e identificar el tipo de aplicación con los valores **Word**, **Excel**, **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción if. app.
+
+> [!NOTE]
+> Por integridad, se incluyen instrucciones para Outlook, aunque actualmente solo se admiten en el cliente de etiquetado Unificado de Azure Information Protection.
+
+Utilice la sintaxis siguiente:
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+Al igual que ocurre con los demás marcados visuales dinámicos, la sintaxis distingue mayúsculas de minúsculas.
+
+Ejemplos:
+
+- **Establecer texto de encabezado solo para documentos de Word:**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    En los encabezados de documento de Word, la etiqueta aplica el texto de encabezado "este documento de Word es confidencial". No se aplica ningún texto de encabezado a otras aplicaciones de Office.
+
+- **Establecer texto de pie de página para Word, Excel y Outlook y texto de pie de página diferente para PowerPoint:**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    En Word, Excel y Outlook, la etiqueta aplica el texto de pie de página "este contenido es confidencial". En PowerPoint, la etiqueta aplica el texto de pie de página "esta presentación es confidencial".
+
+- **Establecer un texto de marca de agua específica para Word y PowerPoint y, a continuación, texto de marca de agua para Word, Excel y PowerPoint:**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "este contenido es confidencial". En Excel, la etiqueta aplica el texto de marca de agua "confidencial". En Outlook, la etiqueta no aplica ningún texto de marca de agua porque las marcas de agua como marcadores visuales no son compatibles con Outlook.
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 
