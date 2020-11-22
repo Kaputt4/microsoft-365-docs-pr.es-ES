@@ -860,7 +860,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Administrar las auditorías y las directivas de alerta
   items:
-    - name: Auditoría unificada
+    - name: Auditoría básica
       items:
         - name: Búsquedas en el registro de auditoría
           href: search-the-audit-log-in-security-and-compliance.md
