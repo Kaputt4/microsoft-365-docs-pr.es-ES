@@ -18,16 +18,16 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Asegúrese de tener habilitadas todas las características de Microsoft 365 para maximizar la productividad de los trabajadores remotos y mantener un acceso seguro a sus servidores, datos y nubes.
-ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357042"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371507"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
-Es posible que su empresa necesite habilitar el acceso seguro a los recursos, herramientas e información locales y basados en la nube de la organización para que los empleados puedan trabajar desde sus casas. Permitir que los empleados trabajen de manera remota es importante en muchas organizaciones para lo siguiente:
+Es posible que su empresa necesite habilitar el acceso seguro a los recursos, herramientas e información locales y basados en la nube de la organización para que los empleados puedan trabajar desde sus casas. Permitir que los trabajadores trabajen fuera de la oficina es importante para muchas organizaciones para:
 
 - Ahorrar en espacio de oficina.
 - Contratar y conservar trabajadores que no estén dispuestos a reubicarse.
@@ -69,7 +69,7 @@ Esta solución proporciona estas funciones clave.
 
   - Tareas y flujos de trabajo compartidos para dividir el trabajo y terminarlo de forma más efectiva. 
 
-Para una experiencia de inicio de sesión perfecta, las cuentas de usuario de Active Directory Domain Services (AD DS) locales se deben sincronizar con Azure Active Directory (Azure AD). Para proteger sus dispositivos con Windows 10, deben estar inscritos en Intune. Aquí se muestra una vista general de la infraestructura.
+Para una experiencia de inicio de sesión perfecta, las cuentas de usuario de Active Directory Domain Services (AD DS) locales se deben sincronizar con Azure Active Directory (Azure AD). Para proteger sus dispositivos con Windows 10, deben estar inscritos en Intune. Aquí se muestra una vista de alto nivel de la infraestructura.
 
 ![La infraestructura básica para trabajadores remotos con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
@@ -112,6 +112,6 @@ Siga estos pasos para asegurar y optimizar el acceso a los servidores y servicio
 
 [![Los pasos para proporcionar Microsoft 365 a los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Para obtener la información más reciente de Microsoft sobre el soporte para trabajadores remotos, consulte [Habilitar trabajo remoto con el sitio Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
+Para obtener la información más reciente de Microsoft sobre el soporte para trabajadores remotos, consulte [Habilitar trabajo remoto con el sitio de Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
 
-Para ver cómo una organización multinacional ficticia pero representativa ha habilitado a los trabajadores remotos, consulte [Infraestructura y respuesta a la COVID-19 de Contoso para un híbrido de recursos](contoso-hybrid-workforce.md).
+Para ver cómo una organización multinacional ficticia pero representativa ha habilitado a los trabajadores remotos, consulte [Infraestructura y respuesta de Contoso a la COVID-19 para trabajo remoto e in situ](contoso-remote-onsite-work.md).
