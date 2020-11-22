@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que quiera y elimine lo que no.
-ms.openlocfilehash: 83f438b6a32ad56f1f239858d2f3fad61875c460
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357345"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376583"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -99,7 +99,7 @@ Puede que una directiva de retención aplicada a los grupos de Microsoft 365, a 
 ### <a name="retention-policy-for-yammer-locations"></a>Directiva de retención para ubicaciones de Yammer
 
 > [!NOTE]
-> Las directivas de retención de Yammer se están implementando en versión preliminar. Si aún no ve las nuevas ubicaciones de Yammer, inténtelo de nuevo en unos días.
+> Las directivas de retención de Yammer se están implementando en versión preliminar. Si aún no ve las nuevas ubicaciones de Yammer, inténtelo de nuevo en unas semanas.
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
@@ -191,9 +191,9 @@ Para comprobar la sintaxis de su espacio empresarial e identificar las direccion
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 
-Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente denominado grupo de Office 365), use la ubicación de **Grupos de Microsoft 365**. Si bien un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación del **Correo electrónico de Exchange** no incluirá contenido en los buzones de grupo de Microsoft 365. Además, aunque la **ubicación de correo electrónico de Exchange** permite inicialmente especificar un buzón de grupo que quiere incluir o excluir, al intentar guardar la directiva de retención, recibirá un error que indica que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
+Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente denominado grupo de Office 365), use la ubicación de **Grupos de Microsoft 365**. Aunque un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación del **Correo electrónico de Exchange** no incluirá contenido en los buzones de grupo de Microsoft 365. Además, aunque la **ubicación de correo electrónico de Exchange** permite inicialmente especificar un buzón de grupo que quiere incluir o excluir, al intentar guardar la directiva de retención, recibirá un error que indica que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
-Una directiva de retención aplicada a un grupo de Microsoft 365 incluye el buzón del grupo y el sitio de los equipos de SharePoint. Los archivos guardados en el sitios de equipos de SharePoint están cubiertos por esta ubicación, pero no lo están los chats de Teams o los mensajes de canal de Teams, que cuentan con sus propias ubicaciones de directiva de retención.
+Una directiva de retención aplicada a un grupo de Microsoft 365 incluye el buzón del grupo y el sitio de equipo de SharePoint. Los archivos almacenados en el sitio de equipos de SharePoint se tratan en esta ubicación, pero no los mensajes de chats ni canales de Teams que tienen sus propias ubicaciones de directivas de retención.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Información de configuración de Skype Empresarial
 
