@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: ea67d5942f5134e4e34c3add9bdfc48771201e2d
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920344"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385192"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -97,7 +97,7 @@ Publique etiquetas de retención para que los usuarios puedan usarlas en aplicac
     
     Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea la sección [Etiquetas de retención y ubicaciones](retention.md#retention-label-policies-and-locations). 
 
-Para editar una directiva de etiqueta de retención existente (el tipo de directiva es **Publicar** ), selecciónela y después seleccione la opción **Editar** para iniciar la directiva de Editar retención. Este asistente le permite cambiar la descripción de la directiva y cualquier [configuración elegible](#updating-retention-labels-and-their-policies) del paso 2.
+Para editar una directiva de etiqueta de retención existente (el tipo de directiva es **Publicar**), selecciónela y después seleccione la opción **Editar** para iniciar la directiva de Editar retención. Este asistente le permite cambiar la descripción de la directiva y cualquier [configuración elegible](#updating-retention-labels-and-their-policies) del paso 2.
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas
@@ -271,7 +271,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
