@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que quiera y elimine lo que no.
-ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376583"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385256"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -99,7 +99,7 @@ Puede que una directiva de retención aplicada a los grupos de Microsoft 365, a 
 ### <a name="retention-policy-for-yammer-locations"></a>Directiva de retención para ubicaciones de Yammer
 
 > [!NOTE]
-> Las directivas de retención de Yammer se están implementando en versión preliminar. Si aún no ve las nuevas ubicaciones de Yammer, inténtelo de nuevo en unas semanas.
+> Las directivas de retención de Yammer se implementan en versión preliminar. Si aún no ve las nuevas ubicaciones de Yammer, inténtelo de nuevo en unas semanas.
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
@@ -191,9 +191,9 @@ Para comprobar la sintaxis de su espacio empresarial e identificar las direccion
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Información de configuración para los Grupos de Microsoft 365
 
-Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente denominado grupo de Office 365), use la ubicación de **Grupos de Microsoft 365**. Aunque un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación del **Correo electrónico de Exchange** no incluirá contenido en los buzones de grupo de Microsoft 365. Además, aunque la **ubicación de correo electrónico de Exchange** permite inicialmente especificar un buzón de grupo que quiere incluir o excluir, al intentar guardar la directiva de retención, recibirá un error que indica que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
+Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente denominado grupo de Office 365), use la ubicación de **Grupos de Microsoft 365**. Si bien un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación del **Correo electrónico de Exchange** no incluirá contenido en los buzones de grupo de Microsoft 365. Además, aunque la **ubicación de correo electrónico de Exchange** permite inicialmente especificar un buzón de grupo que quiere incluir o excluir, al intentar guardar la directiva de retención, recibirá un error que indica que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
-Una directiva de retención aplicada a un grupo de Microsoft 365 incluye el buzón del grupo y el sitio de equipo de SharePoint. Los archivos almacenados en el sitio de equipos de SharePoint se tratan en esta ubicación, pero no los mensajes de chats ni canales de Teams que tienen sus propias ubicaciones de directivas de retención.
+Una directiva de retención aplicada a un grupo de Microsoft 365 incluye el buzón del grupo y el sitio de los equipos de SharePoint. Los archivos guardados en el sitios de equipos de SharePoint están cubiertos por esta ubicación, pero no lo están los chats de Teams o los mensajes de canal de Teams, que cuentan con sus propias ubicaciones de directiva de retención.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Información de configuración de Skype Empresarial
 
@@ -227,7 +227,7 @@ Cuando se configura una directiva de retención, puede elegir retener los elemen
 
 Al configurar una directiva de retención, puede elegir retener contenido de forma indefinida o durante un número específico de días, meses o años. El período de retención no se calcula desde el momento en el que se aplica la directiva de retención, sino en función de la antigüedad del contenido.
 
-Para iniciar el período de retención, también puede elegir cuándo se creó el contenido o, solo en el caso de los archivos y las ubicaciones de SharePoint, OneDrive y Office 365, cuándo se modificó el contenido por última vez.
+Para iniciar el período de retención, también puede elegir cuándo se creó el contenido o, solo en el caso de los archivos y los grupos de SharePoint, OneDrive y Microsoft 365, cuándo se modificó el contenido por última vez.
 
 Ejemplos:
 
@@ -279,6 +279,9 @@ Para usar la configuración opcional para definir el ámbito de la configuració
 > En este escenario, deshabilite la ubicación si no quiere que la opción **Todos** de la ubicación esté sujeta a la directiva de retención. Como alternativa, especifique lo que se debe excluir de la aplicación de la directiva.
 
 ## <a name="updating-retention-policies"></a>Actualización de las directivas de retención
+
+Después de crear y guardar la directiva de retención, no se pueden cambiar algunas opciones de configuración, entre las que se incluyen:
+- El nombre de la directiva de retención y la configuración de retención, excepto el período de retención, y cuándo iniciar el período de retención.
 
 Si edita una directiva de retención y el contenido ya está sujeto a la configuración original de su directiva de retención, la configuración actualizada se aplicará automáticamente a estos elementos, además de los elementos identificados recientemente.
 
