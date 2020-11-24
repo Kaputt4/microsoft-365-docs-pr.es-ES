@@ -1,5 +1,5 @@
 ---
-title: Revisar las amenazas detectadas y emprender acciones
+title: Revisar las amenazas detectadas y actuar al respecto
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtén información sobre cómo revisar y administrar las amenazas detectadas por el antivirus de Microsoft defender en los dispositivos con Windows 10.
-ms.openlocfilehash: 21830b91bfbb88fdd5d5139ee07c4dfb35f5b875
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376707"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385245"
 ---
-# <a name="review-detected-threats-and-take-action"></a>Revisar las amenazas detectadas y emprender acciones
+# <a name="review-detected-threats-and-take-action"></a>Revisar las amenazas detectadas y actuar al respecto
 
 En cuanto se detecta un archivo malintencionado o software, antivirus de Microsoft defender lo bloquea e impide que se ejecute. Y con la protección entregada en la nube activada, se agregan amenazas recientemente detectadas al motor antivirus y antimalware para que también se protejan los demás dispositivos y usuarios.
 
@@ -58,7 +58,7 @@ El siguiente procedimiento se aplica a los clientes que tienen Microsoft 365 emp
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>Administración de detecciones de amenazas en la página **amenazas activas**
 
-El siguiente procedimiento se aplica a los clientes que tienen Microsoft 365 Business. Los [dispositivos Windows 10 deben estar protegidos](/microsoft-365/business/secure-win-10-pcs) e [inscritos en Intune](/mem/intune/enrollment/windows-enrollment-methods).
+El siguiente procedimiento se aplica a los clientes que tienen Microsoft 365 empresa Premium. Los [dispositivos Windows 10 deben estar protegidos](/microsoft-365/business/secure-win-10-pcs) e [inscritos en Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
 > [!NOTE]
 > La página de la tarjeta **antivirus de Microsoft defender** y las **amenazas activas** se están implementando en fases, por lo que es posible que no tenga acceso inmediato a ellas.
