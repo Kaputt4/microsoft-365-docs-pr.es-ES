@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073141"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385276"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -38,7 +38,7 @@ Para la mayoría de las organizaciones, el volumen y la complejidad de los datos
     
 - **Ayudar a su organización a compartir los conocimientos de manera eficaz y ser más ágil** al asegurarse de que los usuarios trabajan solo con contenido actualizado y relevante para ellos. 
     
-Las opciones de retención que configure pueden ayudarle a lograr todos estos objetivos. Por lo general, administrar el contenido requiere dos acciones:
+La configuración de retención que aplique puede ayudarle a lograr todos estos objetivos. Administrar el contenido suele requerir dos acciones:
   
 - **Conservar** contenido para que no pueda eliminarse de forma permanente antes del fin del período de retención. 
     
@@ -51,11 +51,11 @@ Con estas dos acciones de retención, puede establecer la configuración de rete
 - Solo eliminar: elimine el contenido al cabo de un determinado período de tiempo.
 - Conservar y, después, eliminar el contenido: conserve el contenido durante un determinado período de tiempo y, a continuación, elimínelo.
 
-Esta configuración de retención funciona con contenido local y le ahorra los costes generales adicionales de crear y configurar almacenamiento añadido cuando necesita conservar contenido por motivos de cumplimiento. Además, no es necesario implementar procesos personalizados para copiar y sincronizar estos datos.
+Esta configuración de retención funciona con contenido local y le ahorra los costes generales adicionales de crear y configurar almacenamiento añadido cuando necesita conservar contenido por motivos de cumplimiento. Además, no tiene que implementar procesos personalizados para copiar y sincronizar estos datos.
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 
-Cuando se establece la configuración de retención, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado. Sin embargo, si modifican o eliminan el contenido incluido en la directiva de retención, se retendrá automáticamente una copia del contenido.
+Cuando se incluye en una directiva de retención una ubicación como un sitio o buzón, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado, pero si modifican o eliminan contenido que esté incluido en la directiva, se conservará una copia del mismo tal como era cuando se aplicó la directiva.
   
 - Para sitios de SharePoint y OneDrive: la copia se conserva en la biblioteca de **Suspensión para conservación**.
 
@@ -64,9 +64,9 @@ Cuando se establece la configuración de retención, el contenido permanece en s
 - Para mensajes de Teams y Yammer: la copia se conserva en una carpeta oculta llamada **SubstrateHolds** dentro de la carpeta **Elementos recuperables** de Exchange.
 
 > [!NOTE]
-> La biblioteca de Suspensión para conservación consume almacenamiento que no está exento de la cuota de almacenamiento de un sitio. Es posible que tenga que aumentar el almacenamiento al usar la configuración de retención para los grupos de Microsoft 365 y SharePoint.
+> La Biblioteca de suspensión para conservación consume almacenamiento que no está exento de la cuota de almacenamiento de un sitio. Es posible que deba aumentar el almacenamiento al usar la configuración de retención para los grupos de SharePoint y de Microsoft 365.
 > 
-Ni estas ubicaciones seguras ni el contenido retenido son visibles para la mayoría de los usuarios. En la mayoría de los casos, ni siquiera es necesario que los usuarios sepan que su contenido está sujeto a la configuración de retención.
+La mayoría de los usuarios no pueden ver las ubicaciones seguras y el contenido retenido. En la mayoría de los casos, no es necesario que los usuarios sepan que el contenido está sujeto a la configuración de retención.
 
 Para obtener información más detallada sobre cómo funciona la configuración de retención con distintas cargas de trabajo, consulte los artículos siguientes:
 
@@ -81,9 +81,9 @@ Puede usar tanto las directivas de retención como las etiquetas de retención p
 
 Use una directiva de retención para asignar la misma configuración de retención al contenido en el nivel de sitio o buzón y use una etiqueta de retención para asignar la configuración de retención en el nivel de elemento (carpeta, documento o correo electrónico).
 
-Por ejemplo, si es necesario conservar todos los documentos de un sitio de SharePoint durante cinco años, es más eficaz usar una directiva de retención que aplicar la misma etiqueta de retención a todos los documentos del sitio. Sin embargo, si algunos documentos del sitio se deben conservar durante cinco años y otros durante diez años, no es posible hacerlo con una directiva de retención. Cuando tenga que especificar la configuración de retención en el nivel de elemento, use etiquetas de retención. 
+Por ejemplo, si todos los documentos de un sitio de SharePoint se deben conservar durante 5 años, resulta más eficaz usar una directiva de retención que aplicar la misma etiqueta de retención a todos los documentos de ese sitio. Sin embargo, si algunos documentos de ese sitio se deben conservar durante 5 años y otros durante 10 años, una directiva de retención no puede hacerlo. Cuando necesite especificar la configuración de retención a nivel de elemento, use las etiquetas de retención. 
 
-A diferencia de las directivas de retención, la configuración de retención de las etiquetas de retención se mantendrá con el contenido si se copia o se mueve a una ubicación diferente dentro del espacio empresarial de Microsoft 365. Además, las etiquetas de retención tienen las siguientes funcionalidades que no son compatibles con las directivas de retención: 
+A diferencia de las directivas de retención, la configuración de retención de las etiquetas de retención se mantendrá con el contenido si se copia o se mueve a una ubicación diferente dentro del espacio empresarial de Microsoft 365. Además, las etiquetas de retención son las siguientes funciones que no son compatibles con las directivas de retención: 
  
 - Opciones para iniciar el período de retención desde el momento en que se etiquetó el contenido o en función de un evento, en lugar de la antigüedad del contenido o cuando se modificó por última vez.
 
@@ -110,6 +110,8 @@ Las directivas de retención se pueden aplicar a las siguientes ubicaciones:
 - Mensajes privados de Yammer
 
 Puede aplicar una sola directiva en varias ubicaciones, o bien en determinadas ubicaciones o usuarios.
+
+Para iniciar el período de retención, puede elegir cuándo se creó el contenido o, solo en el caso de los archivos y las ubicaciones de SharePoint, OneDrive y Grupos de Microsoft 365, cuándo se modificó el contenido por última vez.
 
 Los elementos heredan la configuración de retención de su contenedor especificado en la directiva de retención. Si se mueven fuera del contenedor cuando la directiva está configurada para conservar el contenido, se conservará una copia de ese elemento en la ubicación segura de la carga de trabajo. Sin embargo, la configuración de retención no viaja con el contenido a su nueva ubicación. Si es necesario, use las etiquetas de retención en lugar de las directivas de retención.
 
@@ -138,7 +140,7 @@ Con las etiquetas de retención, puede:
 
 - **Iniciar el período de retención desde el momento en que se etiquetó el contenido** para los documentos de los sitios de SharePoint y las cuentas de OneDrive, así como para elementos de correo electrónico salvo los elementos de calendario. Si aplica una etiqueta de retención con esta configuración a un elemento del calendario, el período de retención comienza desde el momento en que se envía.
 
-- **Iniciar el período de retención cuando se produzca un evento** , por ejemplo, cuando los empleados abandonan la organización o cuando vencen los contratos.
+- **Iniciar el período de retención cuando se produzca un evento**, por ejemplo, cuando los empleados abandonan la organización o cuando vencen los contratos.
 
 - **Aplicar una etiqueta de retención predeterminada a una biblioteca, carpeta o conjunto de documentos** en SharePoint, de modo que todos los documentos almacenados en esa ubicación hereden la etiqueta de retención predeterminada.
 
@@ -215,7 +217,7 @@ Posteriormente, podrá profundizar en los detalles mediante el [explorador de co
 > [!TIP]
 >Considere la posibilidad de usar cierta información sobre la clasificación de datos, como los clasificadores capacitados y los tipos de información confidencial, para ayudarle a identificar el contenido que podría necesitar retener, eliminar o administrar como registro.
 
-El Centro de seguridad y cumplimiento de Office 365 tiene la información general equivalente para las etiquetas de retención de **Gobierno de información** > **Panel** , así como información más detallada sobre el **Gobierno de información** > **Explorador de actividad de etiquetas**. Para obtener más información acerca de cómo supervisar las etiquetas de retención de este antiguo centro de administración, consulte la siguiente documentación:
+El Centro de seguridad y cumplimiento de Office 365 tiene la información general equivalente para las etiquetas de retención de **Gobierno de información** > **Panel**, así como información más detallada sobre el **Gobierno de información** > **Explorador de actividad de etiquetas**. Para obtener más información acerca de cómo supervisar las etiquetas de retención de este antiguo centro de administración, consulte la siguiente documentación:
 - [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
 - [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 - [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
@@ -224,7 +226,7 @@ El Centro de seguridad y cumplimiento de Office 365 tiene la información genera
 
 Después de asignar las etiquetas de retención al contenido (ya sea a través de los usuarios o aplicadas automáticamente), puede usar la Búsqueda de contenido para encontrar todo los elementos clasificados bajo una etiqueta de retención específica.
 
-Cuando cree una búsqueda de contenido, elija la condición de **Etiqueta de retención** , y luego introduzca el nombre completo de la etiqueta de retención o parte del nombre de la etiqueta y utilice un comodín. Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de Contenido](keyword-queries-and-search-conditions.md).
+Cuando cree una búsqueda de contenido, elija la condición de **Etiqueta de retención**, y luego introduzca el nombre completo de la etiqueta de retención o parte del nombre de la etiqueta y utilice un comodín. Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de Contenido](keyword-queries-and-search-conditions.md).
   
 ![Condición de la etiqueta de retención](../media/retention-label-condition.png)
 
@@ -243,7 +245,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Presencia de interfaz de usuario para usuarios finales | No | Sí |
 |Se mantiene si el contenido se mueve | No | Sí, dentro de su espacio empresarial de Microsoft 365 |
 |Declara el elemento como un registro| No | Sí |
-|Iniciar el período de retención: <br /> - Cuando se crearon o modificaron elementos por última vez<br /> - Cuando se etiquetó o se basó en un evento | <br />Sí <br />No | <br />Sí <br /> Sí |
+|Inicio del período de retención cuando se etiqueta o basado en un evento | No | Sí |
 |Revisión para eliminación | No| Sí |
 |Prueba de eliminación durante un máximo de 7 años | No |Sí, cuando el elemento se declara como registro|
 |Auditoría de las actividades administrativas| Sí | Sí|
