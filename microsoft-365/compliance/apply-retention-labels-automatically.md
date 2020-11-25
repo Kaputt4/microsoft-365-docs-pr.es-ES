@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
+ms.openlocfilehash: ebfd088dd6dc3205f02e563e31f6fb25372608ad
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931984"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385266"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -99,7 +99,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes locaciones:
     
-    - Si utiliza la administración de registros: **Gobierno de información** :
+    - Si utiliza la administración de registros:**Gobierno de información**:
         - **Soluciones** > **Administración de registros** > pestaña de **Directivas de etiquetas** > **Aplicar etiqueta automáticamente**
     
     - Si no está utilizando la administración de registros:
@@ -128,7 +128,7 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Aplicar automáticamente etiquetas a los contenidos con tipos específicos de información sensible
 
-Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. Por ejemplo, la plantilla que se muestra aquí busca los números de ITIN, SSN y pasaporte de Estados Unidos de la categoría **Privacidad** y de la **Plantilla de datos de identificación personal (PII) de Estados Unidos** :
+Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. Por ejemplo, la plantilla que se muestra aquí busca los números de ITIN, SSN y pasaporte de Estados Unidos de la categoría **Privacidad** y de la **Plantilla de datos de identificación personal (PII) de Estados Unidos**:
 
 ![Plantillas de directiva con tipos de información confidencial](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -136,14 +136,18 @@ Para obtener más información sobre los tipos de información confidencial, con
 
 Después de seleccionar una plantilla de directiva, puede agregar o quitar cualquier tipo de información confidencial y cambiar el recuento de instancias y la precisión de coincidencia. En el recorte de pantalla de ejemplo que se muestra a continuación, solo se aplicará la etiqueta de retención automáticamente cuando:
   
-- El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o nivel de confianza) de al menos 75. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere más pruebas para ser encontrado (por ejemplo, palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos pruebas. Cuanto menor sea la precisión de coincidencia **mín** , más fácil será que el contenido coincida con la condición.
+- El tipo de información confidencial que se detecta tiene una precisión de coincidencia (o nivel de confianza) de al menos 75. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una mayor precisión de coincidencia requiere más pruebas para ser encontrado (por ejemplo, palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior requiere menos pruebas. Cuanto menor sea la precisión de coincidencia **mín**, más fácil será que el contenido coincida con la condición.
 
 - El contenido tenga entre 1 y 9 instancias de cualquiera de estos tres tipos de información confidencial. Puede eliminar el valor **hasta** para cambiarlo a **Cualquiera**.
 
 Para obtener más información sobre estas opciones, consulte las siguientes instrucciones de la documentación DLP: [Ajustar las reglas para que sea más o menos fácil que coincidan](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
 ![Opciones para identificar tipos de información confidencial](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
-  
+
+Que debe tener en cuenta al usar tipos de información confidencial para aplicar las etiquetas de retención automáticamente:
+
+- Se pueden usar etiquetas automáticamente para los elementos nuevos y modificados.
+
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
 Puede aplicar etiquetas automáticamente al contenido mediante una consulta que contenga palabras, frases o valores de propiedades que permiten búsquedas específicos. Puede restringir la consulta con operadores de búsqueda como Y, O y NO.
@@ -152,29 +156,77 @@ Puede aplicar etiquetas automáticamente al contenido mediante una consulta que 
 
 Para obtener más información sobre la sintaxis de consulta que usa el Lenguaje de consultas de palabras clave (KQL), vea [Referencia de la sintaxis del Lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Las etiquetas basadas en consultas usan el índice de búsqueda para identificar contenido. Para obtener más información sobre las propiedades que permiten búsquedas que puede usar, vea:
+Las directivas de aplicación automática basadas en consultas usan el mismo índice de búsqueda que la búsqueda de contenido en eDiscovery para identificar el contenido. Para obtener más información sobre las propiedades utilizables en búsqueda que puede usar, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
 
-- [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
-- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+Aspectos que debe tener en cuenta al usar palabras clave o propiedades utilizables en búsqueda para las etiquetas de retención de aplicación automática:
 
-> [!NOTE]
-> Aunque las propiedades administradas de SharePoint admiten alias, no los utilice cuando configure las etiquetas de retención. Siempre debe especificar el nombre real de la propiedad administrada, por ejemplo, "RefinableString01".
+- Los elementos nuevos, modificados y existentes se etiquetarán automáticamente para SharePoint, OneDrive y Exchange.
+
+- Para SharePoint, las propiedades rastreadas y las propiedades personalizadas no son compatibles con estas consultas KQL y solo debe usar propiedades administradas predefinidas. Sin embargo, puede usar las asignaciones en el nivel de espacio empresarial con las propiedades administradas predefinidas que se habilitan como refinadores de forma predeterminada (RefinableDate00-19, RefinableString00-99, RefinableInt00-49, RefinableDecimals00-09 y RefinableDouble00-09). Para obtener más información, vea [Información general de propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview) y para obtener instrucciones, consulte [Crear una nueva propiedad administrada](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property).
+
+- Si asigna una propiedad personalizada a una de las propiedades de refinador, espere 24 horas antes de usarla en la consulta de KQL para una etiqueta de retención.
+
+- Aunque se puede cambiar el nombre de las propiedades administradas de SharePoint mediante alias, no los use para las consultas de KQL en las etiquetas. Siempre debe especificar el nombre real de la propiedad administrada, por ejemplo, "RefinableString01".
+
+- Para buscar valores que contengan espacios o caracteres especiales, use comillas dobles (`" "`) en la frase. Por ejemplo, `subject:"Financial Statements"`.
+
+- Use la propiedad *DocumentLink* en lugar de *Path* para hacer coincidir un elemento basándose en su URL. 
+
+- No se admiten las búsquedas con caracteres comodín de sufijo (como `*cat`) o las búsquedas con caracteres comodín de subcadena (como `*cat*`). Sin embargo, se admiten las búsquedas comodín de prefijo (como `cat*`).
+
+- Tenga en cuenta que los elementos parcialmente indexados pueden causar que no se etiquete los elementos que espera, o que se etiquete los elementos que esperaba excluir de la etiquetación cuando use el operador NOT. Para más información, vea [Elementos parcialmente indexados en la Búsqueda de contenido](partially-indexed-items-in-content-search.md).
+
 
 Consultas de ejemplos:
 
 | Carga de trabajo | Ejemplo |
 |:-----|:-----|
-|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
-|SharePoint | `contenttype:contract` |
-|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+|SharePoint | `contenttype:document` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:document`|
+|Exchange o SharePoint | `"customer information" OR "private"`|
+
+Ejemplos más complejos:
+
+La siguiente consulta para SharePoint identifica documentos de Word u hojas de cálculo de Excel cuando contienen las palabras clave **contraseña**, **contraseñas** o **clave**:
+
+```
+(password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
+```
+
+La siguiente consulta para Exchange identifica cualquier documento de Word o PDF que contenga la palabra **nda** o la frase **acuerdo de no divulgación** cuando estos documentos se adjuntan a un correo electrónico:
+
+```
+(nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
+```
+
+La siguiente consulta para SharePoint identifica documentos que contienen un número de tarjeta de crédito: 
+
+```
+sensitivetype:"credit card number"
+```
+
+La siguiente consulta contiene algunas de las palabras clave típicas para identificar documentos o correos electrónicos que incluyan contenido legal válido:
+
+```
+ACP OR (Attorney Client Privilege*) OR (AC Privilege)
+```
+
+La siguiente consulta contiene palabras clave típicas para identificar documentos o correos electrónicos para recursos humanos: 
+
+```
+(resume AND staff AND employee AND salary AND recruitment AND candidate)
+```
+
+Tenga en cuenta que este último ejemplo usa el procedimiento recomendado para incluir siempre operadores entre palabras clave. Usar un espacio entre palabras clave (o dos expresiones propiedad:valor) es igual que usar AND. Al ir agregando los operadores, resulta más fácil ver que esta consulta de ejemplo identifica solo contenido que incluya todas las palabras clave, y no contenido con solo alguna de ellas. Si su intención es identificar el contenido que incluya alguna de las palabras clave, especifique OR en lugar de AND. Como se muestra en este ejemplo, al especificar siempre los operadores, es más fácil interpretarlos correctamente. 
 
 ##### <a name="microsoft-teams-meeting-recordings"></a>Grabaciones de reuniones de Microsoft Teams
 
 > [!NOTE]
-> La posibilidad de conservar y eliminar las grabaciones de reuniones de Teams se está implementando en la versión preliminar y no funcionará antes de guardar las grabaciones en OneDrive o SharePoint. Para más información, consulte [Usar OneDrive para la Empresa y SharePoint Online o Stream para las grabaciones de reuniones](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
+> La posibilidad de conservar y eliminar las grabaciones de reuniones de Teams está en la versión preliminar y no funcionará antes de guardar las grabaciones en OneDrive o SharePoint. Para más información, consulte [Usar OneDrive para la Empresa y SharePoint Online o Stream para las grabaciones de reuniones](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change).
 
-Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave** :
+Para identificar las grabaciones de reuniones de Microsoft Teams almacenadas en cuentas de OneDrive de los usuarios o en SharePoint, especifique lo siguiente para el **Editor de consultas de palabras clave**:
 
 ``` 
 ProgID:Media AND ProgID:Meeting
@@ -185,12 +237,12 @@ La mayoría del tiempo, las grabaciones de reuniones se guardan en OneDrive. Per
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
-Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **Currículum** , **Código fuente** , **Código fuente** , **Acoso selectivo** , **Amenazas** :
+Si elige la opción para un clasificador que se puede entrenar, puede seleccionar uno de los clasificadores integrado o un clasificador personalizado. Los clasificadores integrados incluyen **Currículum**, **Código fuente**, **Código fuente**, **Acoso selectivo**, **Amenazas**:
 
 ![Elegir clasificador que se puede entrenar](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de **Acoso selectivo** , **Blasfemias** , **Amenazas**
+> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de **Acoso selectivo**, **Blasfemias**, **Amenazas**
 
 Para aplicar una etiqueta automáticamente usando esta opción, los buzones y sitios de SharePoint deben tener al menos 10 MB de datos.
 
@@ -198,6 +250,10 @@ Para más información sobre los clasificadores capacitados, consulte [Introducc
 
 > [!TIP]
 > Si usa clasificadores capacitados para Exchange, consulte [Cómo volver a entrenar a un clasificador en el explorador de contenido (versión preliminar)](classifier-how-to-retrain-content-explorer.md) recientemente lanzado.
+
+Que debe tener en cuenta al usar clasificadores que se pueden entrenar para aplicar las etiquetas de retención automáticamente:
+
+- Se pueden usar etiquetas automáticamente para los elementos nuevos y modificados, y los elementos existentes de los últimos seis meses.
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>Tiempo que tardan las etiquetas de retención en aplicarse
 
@@ -220,7 +276,7 @@ Si las etiquetas que esperaba no aparecen después de siete días, compruebe el 
 Si edita una etiqueta de retención o una directiva de aplicación automática y la etiqueta de retención ya se aplica al contenido, la configuración actualizada se aplicará automáticamente a este contenido, además de al contenido recién identificado.
 
 Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar algunas opciones de configuración, entre las que se incluyen:
-- La configuración de retención excepto el período de retención, a menos que haya configurado la etiqueta para conservar o eliminar el contenido en función de cuándo se creó.
+- El nombre de la etiqueta de retención, la directiva de retención, y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en la etiqueta de los elementos.
 - La opción de marcar los elementos como un registro.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Bloquear la directiva para impedir que se realicen cambios
