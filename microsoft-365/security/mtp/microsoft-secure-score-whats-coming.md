@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374012"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409238"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
 
@@ -33,6 +33,17 @@ Se puede encontrar la puntuación segura de Microsoft en https://security.micros
 ## <a name="proposed-changes"></a>Cambios propuestos
 
 Estamos realizando algunos cambios en un futuro próximo para hacer que [Microsoft califique](microsoft-secure-score.md) con seguridad una mejor representativo de su postura de seguridad y mejorar el uso. Su puntuación y la puntuación máxima posible pueden cambiar.
+
+### <a name="december-2020"></a>2020 de diciembre
+
+Adición de 6 acciones de mejora relacionadas con las cuentas para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
+
+- Establezca ' longitud mínima de contraseña ' en ' 14 o más caracteres '
+- Establezca ' exigir historial de contraseñas ' en ' 24 contraseñas ' o más (s)
+- Establezca "vigencia máxima de la contraseña" en "60 o menos días, pero no es 0"
+- Establezca ' vigencia mínima de la contraseña ' en ' 1 o más días '
+- Deshabilitar la cuenta integrada de administrador
+- Deshabilitar la cuenta de invitado integrada
 
 ### <a name="november-2020"></a>Noviembre de 2020
 

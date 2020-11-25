@@ -1,6 +1,6 @@
 ---
 title: Priorizar incidentes en Microsoft 365 defender
-description: Obtenga información sobre cómo priorizar incidentes de la cola de incidentes en Microsoft 365 defender
+description: Obtenga información sobre cómo filtrar incidentes de la cola de incidentes en Microsoft 365 defender
 keywords: incidente, cola, información general, dispositivos, identidades, usuarios, buzón, correo electrónico, incidentes
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877224"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409260"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 defender
 
@@ -34,11 +34,11 @@ ms.locfileid: "48877224"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 
 
-Microsoft 365 defender aplica análisis de correlación y agrega todas las alertas y investigaciones relacionadas de distintos productos en un incidente. Microsoft 365 defender también desencadena alertas únicas en actividades que solo se pueden identificar como malintencionadas dado la visibilidad de un extremo a otro que Microsoft 365 defender tiene en toda la población y en el conjunto de productos. Al hacerlo, Microsoft 365 defender narra la historia de ataque más amplio, lo que permite a un analista de operaciones de seguridad comprender y tratar amenazas complejas en toda la organización.
+Microsoft 365 defender aplica análisis de correlación y agrega todas las alertas y investigaciones relacionadas de distintos productos en un incidente. Microsoft 365 defender también desencadena alertas únicas en actividades que solo se pueden identificar como malintencionadas dado la visibilidad de un extremo a otro que Microsoft 365 defender tiene en toda la población y en el conjunto de productos. Esta vista ofrece a los analistas de operaciones de seguridad la experiencia de ataque más amplia, lo que les ayuda a comprender mejor y tratar amenazas complejas en toda la organización.
 
 
 La **cola de incidentes** muestra un conjunto de incidentes que se han marcado desde diferentes dispositivos, usuarios y buzones de correo. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada.
@@ -100,8 +100,7 @@ La gravedad de un incidente indica el impacto que puede tener en los activos. Cu
 ### <a name="status"></a>Estado
 Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos.
 
->[!IMPORTANT]
->Los filtros de clasificación, grupo de dispositivos, estado de investigación y plataforma de SO solo están disponibles actualmente en la versión preliminar pública.
+
 
 
 ## <a name="next-steps"></a>Siguientes pasos
@@ -109,7 +108,7 @@ Una vez que haya determinado qué incidente tiene mayor prioridad, puede seguir 
 - [Investigar incidentes](investigate-incidents.md)
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)
