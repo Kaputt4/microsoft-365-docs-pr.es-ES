@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aa47cc0c460e77a6faadd5cb2ff7d46c62ed88ab
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: b27ba2ff9343599dc35b1bae8cd5656197497bea
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376659"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409271"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -438,8 +438,8 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado|FileDeleted|El usuario elimina un documento de un sitio.|
 |Archivo eliminado de la papelera de reciclaje|FileDeletedFirstStageRecycleBin|El usuario elimina un archivo de la papelera de reciclaje de un sitio.|
 |Archivo eliminado de la papelera de reciclaje de segundo nivel|FileDeletedSecondStageRecycleBin|El usuario elimina un archivo de la papelera del segundo nivel de la papelera de reciclaje de un sitio.|
-|Archivo eliminado marcado como un registro|RecordDelete|Se ha eliminado un documento marcado como registro. Un documento se considera un registro cuando se aplica una etiqueta de retención que marca el contenido como un registro en el documento.|
-|Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de sensibilidad con mayor prioridad que la etiqueta de sensibilidad que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta Confidential se carga en un sitio con la etiqueta general. <br/><br/> Este evento no se activa si el documento tiene una etiqueta de sensibilidad de menor prioridad que la etiqueta de sensibilidad que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta general se carga en un sitio denominado confidencial. Para obtener más información sobre la prioridad de las etiquetas de sensibilidad, vea [prioridad de etiqueta (pedir asuntos)](sensitivity-labels.md#label-priority-order-matters).|
+|Archivo eliminado marcado como un registro|RecordDelete|Se ha eliminado un documento o mensaje correo electrónico marcado como registro. Un documento se considera un registro cuando se aplica al contenido una etiqueta de retención que marca el los elementos como un registro.|
+|Error de coincidencia de confidencialidad del documento detectado|DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de sensibilidad con mayor prioridad que la etiqueta de sensibilidad que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta Confidential se carga en un sitio con la etiqueta general. <br/><br/> Este evento no se activa si el documento tiene una etiqueta de sensibilidad de menor prioridad que la etiqueta de sensibilidad que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta general se carga en un sitio denominado confidencial. Para obtener más información sobre la prioridad de las etiquetas de sensibilidad, vea [prioridad de etiqueta (pedir asuntos)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) un archivo extraído. Esto significa que los cambios que realice en el archivo cuando se desprotegieron se descartan y no se guardan en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
@@ -581,7 +581,7 @@ La siguiente tabla enumera la sincronización de archivos de actividades en Shar
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es un miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la Sincronización de Microsoft OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
+|Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la Sincronización de Microsoft OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
 |Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde un equipo que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros*) que puede tener acceso a las bibliotecas de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario está bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.<br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la Sincronización de Microsoft OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
 |Archivos descargados al equipo|FileSyncDownloadedFull|El usuario establece una relación de sincronización y descarga archivos correctamente la primera vez a su equipo desde la biblioteca de documentos.|
 |Cambios de archivos descargados al equipo|FileSyncDownloadedPartial|El usuario descarga correctamente cualquier cambio a los archivos de una biblioteca de documentos. Esta actividad indica que cualquier cambio que se realice en los archivos de la biblioteca de documentos se descarga en el equipo del usuario. Solo se descargaron los cambios porque la biblioteca de documentos se había descargado anteriormente por el usuario (como se indica en la actividad **Archivos descargados al equipo**).|
@@ -872,7 +872,7 @@ En la tabla siguiente se enumeran las actividades del explorador de contenido qu
 
 ### <a name="quarantine-activities"></a>Actividades de cuarentena
 
-En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información sobre la cuarentena, vea [Mnsajes de correo electrónico en cuarentena en Office 365](../security/office-365-security/quarantine-email-messages.md).
+En la siguiente tabla se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información sobre la cuarentena, vea [Mensajes de correo electrónico en cuarentena en Office 365](../security/office-365-security/quarantine-email-messages.md).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
