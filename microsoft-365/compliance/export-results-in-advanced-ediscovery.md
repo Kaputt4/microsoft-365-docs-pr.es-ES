@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado, incluido el procedimiento para especificar parámetros para un lote de exportación. '
-ms.openlocfilehash: 4d94b7d1f1d475916e7b0b44a98dd878a1bd5fde
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 252a4a52cc505914b379ea2c0fbfd832ca18deeb
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616004"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422889"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Exportar resultados en eDiscovery avanzado (clásico)
 
@@ -60,7 +60,7 @@ Por ejemplo, supongamos que se ha importado un caso y se han analizado sus datos
 ## <a name="set-up-batch-export-parameters"></a>Configurar parámetros de exportación de lote
 <a name="BK_SetUpExport"> </a>
 
-La herramienta de exportación de exhibición de documentos electrónicos se usa para exportar los resultados de búsqueda de eDiscovery avanzado en el equipo local. Para aumentar el rendimiento de la transferencia de datos y acelerar el proceso de exportación, puede configurar una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Si quiere aumentar la velocidad de descarga, configure la configuración del registro antes de configurar los parámetros de exportación. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+La herramienta de exportación de exhibición de documentos electrónicos se usa para exportar los resultados de búsqueda de eDiscovery avanzado en el equipo local.
   
 1. En eDiscovery avanzado, seleccione un caso y haga clic en **exportar** \> **configuración**.
     
@@ -68,18 +68,18 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
     - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-    - Para exportar a un nuevo lote, haga **Add** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+    - Para exportar a un nuevo lote, haga clic en **Agregar** ![ icono Agregar ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
-    - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
+    - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga clic en **Editar** ![ icono Editar ](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png) y, a continuación, modifique los campos.
     
       > [!NOTE]
       > Después de ejecutar sesiones para un lote de exportación, no se pueden eliminar. Además, solo algunos parámetros pueden editarse una vez ejecutada la primera sesión. 
   
-    - Para crear un lote de exportación duplicado, elija **duplicar** ![lote de exportación cree un](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
+    - Para crear un lote de exportación duplicado, elija **duplicar** lote de exportación ![ cree un icono de exportación de lote duplicado ](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) y escriba un nombre y una descripción para el lote duplicado en el panel. 
     
-    - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - Para eliminar un lote de exportación, elija **eliminar** ![ eliminar lote de exportación ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) .
     
-    - Para ver el historial de un lote, seleccione icono ![](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
+    - Para ver el historial de un lote, seleccione icono de historial de vista de **historial por lotes** ![ ](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg) .
     
 2. En **rellenar**, seleccione **incluir solo los archivos por encima de la puntuación de recorte de relevancia** o **refinar el lote de exportación** si desea ajustar la configuración del lote de exportación. 
     
@@ -131,7 +131,7 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
       - **Inclusivas**: un correo electrónico inclusivo es el último correo electrónico de un hilo y contiene todos los demás mensajes del hilo.
     
-      - **Inclusivas y copias inclusivas**inclusivas: copias inclusivas e inclusivas con el mismo asunto, cuerpo y datos adjuntos; las copias inclusivas exclusivas son copias únicas de estos correos electrónicos.
+      - **Inclusivas y copias inclusivas** inclusivas: copias inclusivas e inclusivas con el mismo asunto, cuerpo y datos adjuntos; las copias inclusivas exclusivas son copias únicas de estos correos electrónicos.
     
     - En **documentos**, seleccione los documentos que desea exportar. 
     
@@ -149,7 +149,7 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
       - **Datos adjuntos únicos en el nivel del conjunto de correo electrónico**: archivos adjuntos únicos en el caso de correo electrónico especificado.
     
-   - En**Micellaneous**, puede optar por **tratar los datos adjuntos como documentos**, **tratar los correos electrónicos como documentos**o **expandir para incluir archivos de la familia**. Si elige **expandir para incluir los archivos**de la familia, para cada archivo que se marque para revisión, todos los archivos de la misma familia también se marcarán.
+   - En **Micellaneous**, puede optar por **tratar los datos adjuntos como documentos**, **tratar los correos electrónicos como documentos** o **expandir para incluir archivos de la familia**. Si elige **expandir para incluir los archivos** de la familia, para cada archivo que se marque para revisión, todos los archivos de la misma familia también se marcarán.
     
 7. Elija **Guardar** para guardar la configuración. 
     
@@ -167,9 +167,9 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
     ![Herramienta de exportación de exhibición de documentos electrónicos](../media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
-11. En la **herramienta de exportación de exhibición**de documentos electrónicos:
+11. En la **herramienta de exportación de exhibición** de documentos electrónicos:
     
-    -  En **pegar la firma de acceso compartido que se usará para conectarse al origen**, pegue la clave de exportación que youcopied en el Portapapeles del paso 7.
+    -  En **pegar la firma de acceso compartido que se usará para conectarse al origen**, pegue la clave de exportación que ha copiado en el portapapeles en el paso 7.
     
     - Haga clic en **examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargados en el equipo local. 
     
@@ -190,7 +190,7 @@ En la siguiente tabla se enumeran los archivos de salida que se generan al ejecu
 |Archivos de entrada o nativos  <br/> |Carpeta de archivos  <br/> |Carpeta que contiene los archivos nativos y de entrada de los archivos exportados.  <br/> |
 |Exportar lista  <br/> |xlsx  <br/> |Metadatos de archivos exportados en formato xlsx. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar. Si es necesario, se crean varios archivos, cada uno de los cuales contiene 100 150K filas. Si un valor determinado contiene más caracteres de los que puede contener una celda de Excel (actualmente, el límite es de 32.767 caracteres), el valor se recortará hasta la longitud máxima permitida. Si se recorta un valor, el color de fondo de la celda es rojo para indicarlo al usuario. " Los participantes del correo electrónico "son un ejemplo de un campo que puede superar el límite de longitud, si el correo electrónico se envió a una distribución grande. Consulte [exportar campos de informe](export-report-fields-in-advanced-ediscovery.md) para obtener más información sobre los campos de salida.  <br/> |
 |Cargar archivo  <br/> |CSV  <br/> |Metadatos de archivos exportados en formato CSV para cargar en una aplicación diferente. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar.  <br/> |
-|Indicador de operación correcta  <br/> |txt  <br/> |Solo se crea al exportar a un BLOB de Azure de terceros. Si la exportación se realizó completamente, se creará el archivo. En caso de error, o parcialmente correcta, no se creará el archivo. El archivo se creará en la carpeta raíz, lo que permite el seguimiento automatizado en diferentes Estados de sesiones y lotes de exportación. Se trata de un archivo vacío. Su nombre es: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
+|Indicador de operación correcta  <br/> |txt  <br/> |Solo se crea al exportar a un BLOB de Azure de terceros. Si la exportación se realizó completamente, se creará el archivo. En caso de error, o parcialmente correcta, no se creará el archivo. El archivo se creará en la carpeta raíz, lo que permite el seguimiento automatizado en diferentes Estados de sesiones y lotes de exportación. Se trata de un archivo vacío. Su nombre es: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt.  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -201,6 +201,3 @@ En la siguiente tabla se enumeran los archivos de salida que se generan al ejecu
 [Configuración rápida de eDiscovery avanzado](quick-setup-for-advanced-ediscovery.md)
 
 [Exportar campos de informes](export-report-fields-in-advanced-ediscovery.md)
-  
-[Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
-

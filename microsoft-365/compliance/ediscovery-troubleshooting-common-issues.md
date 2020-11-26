@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede realizar para resolver problemas comunes en la exhibición de documentos electrónicos de Office 365.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545958"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422869"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar problemas y resolver problemas comunes de eDiscovery
 
@@ -113,25 +113,25 @@ Al exportar resultados de búsqueda de eDiscovery o búsqueda de contenido en el
 
 ### <a name="resolution"></a>Solución
 
-1. Pruebe a usar los pasos que se indican en el artículo [aumentar la velocidad de descarga](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
-
-2. Si sigue teniendo problemas, conéctese a [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
+1. Conéctese a [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. Busque la cantidad de datos que se van a descargar en los parámetros SearchResults y SearchStatistics.
+2. Busque la cantidad de datos que se van a descargar en los parámetros SearchResults y SearchStatistics.
 
-4. Ejecute el siguiente comando:
+3. Ejecute el siguiente comando:
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-5. En el campo resultados, busque los datos que se han exportado y vea los errores encontrados.
+4. En el campo resultados, busque los datos que se han exportado y vea los errores encontrados.
 
-6. Consulte el archivo trace. log que se encuentra en el directorio al que exportó el contenido para ver si hay errores.
+5. Consulte el archivo trace. log que se encuentra en el directorio al que exportó el contenido para ver si hay errores.
+
+6. Si sigue teniendo problemas, considere la posibilidad de dividir las búsquedas que devuelven un conjunto grande de resultados en búsquedas más pequeñas. Por ejemplo, puede usar intervalos de fechas en las consultas de búsqueda para devolver un conjunto más pequeño de resultados que se pueden descargar con mayor rapidez.
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Error/problema: "se ha producido un error interno del servidor (500)"
 

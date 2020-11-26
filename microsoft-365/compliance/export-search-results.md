@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
+description: Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087337"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422879"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -57,7 +57,9 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda con un explorador no compatible con extensiones de terceros o complementos.<br/>
   > <sup>2</sup> como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, consulte [use la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Cuando descargue los resultados de la búsqueda (descritos en el paso 2), puede aumentar la velocidad de descarga configurando una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+- Se recomienda descargar los resultados de la búsqueda en un equipo local. Sin embargo, para evitar que la infraestructura de proxy o firewall de su empresa cause problemas al descargar resultados de búsqueda, puede considerar la posibilidad de descargar los resultados de la búsqueda en un escritorio virtual fuera de la red. Esto puede reducir los tiempos de espera que se producen en las conexiones de datos de Azure al exportar un gran número de archivos. Para obtener más información acerca de los escritorios virtuales, vea [escritorio virtual de Windows](https://azure.microsoft.com/services/virtual-desktop). 
+
+- Para mejorar el rendimiento al descargar los resultados de la búsqueda, considere la posibilidad de dividir las búsquedas que devuelven un conjunto grande de resultados en búsquedas más pequeñas. Por ejemplo, puede usar intervalos de fechas en las consultas de búsqueda para devolver un conjunto más pequeño de resultados que se pueden descargar con mayor rapidez.
   
 - Cuando se exportan los resultados de búsqueda, los datos se almacenan temporalmente en una ubicación de almacenamiento de Azure proporcionada por Microsoft en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es **\* . BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de almacenamiento de Azure dos semanas después de su creación. 
   
@@ -135,8 +137,6 @@ Consulte la sección siguiente para obtener instrucciones para descargar los res
 ## <a name="step-2-download-the-search-results"></a>Paso 2: Descargar los resultados de búsqueda
 
 El siguiente paso es descargar los resultados de la búsqueda desde la ubicación de Azure Storage a su equipo local.
-  
-Como se ha explicado anteriormente, puede aumentar la velocidad de descarga configurando una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
 1. En la página **búsqueda de contenido** , haga clic en la pestaña **exportaciones** . 
   
