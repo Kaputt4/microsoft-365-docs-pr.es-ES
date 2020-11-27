@@ -141,7 +141,9 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 'Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades'
                       href: mtp/advanced-hunting-query-emails-devices.md
-                    - name: Transición de Microsoft Defender a punto de conexión
+                    - name: Buscar ransomware
+                      href: mtp/advanced-hunting-find-ransomware.md
+                    - name: Microsoft Defender para punto de conexión
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: Trabajar con resultados de consulta
                   href: mtp/advanced-hunting-query-results.md
