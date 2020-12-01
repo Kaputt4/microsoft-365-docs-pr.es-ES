@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a1429d93d6716fe5db31f0da2a77a68dcf98cd6e
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087408"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519675"
 ---
 # <a name="form-processing-overview"></a>Información general del procesamiento de formularios
 
@@ -35,8 +35,6 @@ Por ejemplo, puede crear un modelo de procesamiento de formularios que identifiq
 ![Vista de la biblioteca de documentos](../media/content-understanding/doc-lib-done.png)</br>  
 
 Use archivos de ejemplo para entrenar el modelo y definir la información que se extrae del formulario. El diseño del documento viene se aprende al entrenar el modelo. Solo necesita cinco documentos de formulario para empezar. El generador de IA analizará los archivos de ejemplo para pares de clave y valor, y también puede identificar manualmente los que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
-
-Necesita un mínimo de cinco documentos de formulario para empezar. La creación de IA analiza los archivos de ejemplo para buscar pares de clave-valor e identifica manualmente los que es posible que no se hayan detectado.  El generador de IA le permite probar la precisión de su modelo en los archivos de ejemplo.
 
 Una vez que haya entrenado y publicado el modelo, el modelo crea un [flujo de Power Automate](https://docs.microsoft.com/power-automate/getting-started). El flujo se ejecuta cuando se carga un archivo en la biblioteca de documentos de SharePoint y se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931929"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519826"
 ---
 # <a name="readiness-assessment-tool"></a>Herramienta de evaluación de preparación
 
@@ -22,7 +22,7 @@ Para obtener la mejor experiencia posible al inscribirse en el escritorio admini
 
 La herramienta comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para garantizar que funcionarán con el escritorio administrado por Microsoft. Microsoft Managed Desktop mantiene los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecutó una protección en su organización (inquilino) de Azure AD. Después de 12 meses, lo mantenemos en un formulario de identificación.  Puede optar por eliminar los datos recopilados.
 
-Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones (los[conectores de certificados](readiness-assessment-fix.md#certificate-connectors) y [la autenticación multifactor](readiness-assessment-fix.md#multi-factor-authentication) requieren permisos adicionales.
+Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones ([directivas de acceso condicional](readiness-assessment-fix.md#conditional-access-policies) y [autenticación multifactor](readiness-assessment-fix.md#multi-factor-authentication) requieren permisos adicionales).
  
 La herramienta de evaluación comprueba estos elementos:
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo se protege la privacidad con la puntuación de productividad.
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999411"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519358"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controles de privacidad para la puntuación de productividad
 
@@ -54,7 +54,7 @@ Para ver toda la puntuación de productividad, incluidas las métricas a nivel d
 
 Asigne el rol de lector de informes a cualquier persona responsable de la administración y la adopción de los cambios. Este rol les da acceso a la experiencia completa, incluidas las métricas de nivel de inquilino y los detalles de nivel por usuario.
 
-El informe de experiencias de personas contiene detalles de actividad por usuario para cada página de detalles de categoría. Asigne un rol personalizado denominado lector de informes de Resumen de uso (disponible a partir del 29 de octubre de 2020) para permitir el acceso solo a las métricas de las experiencias de personas. Este rol tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el centro de administración de Microsoft en 11/15/2020.
+El informe de experiencias de personas contiene detalles de actividad por usuario para cada página de detalles de categoría. Asigne un rol personalizado denominado lector de informes de Resumen de uso (disponible a partir del 29 de octubre de 2020) para permitir el acceso solo a las métricas de las experiencias de personas. Este rol tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el centro de administración de Microsoft más adelante este año.
 
 Para asignar el rol lector de informes de Resumen de uso con PowerShell:
 
@@ -62,6 +62,7 @@ Para asignar el rol lector de informes de Resumen de uso con PowerShell:
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>

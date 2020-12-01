@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681629"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519370"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -45,7 +45,7 @@ Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para tod
   
 ## <a name="requirements"></a>Requirements
 
-La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para Microsoft 365 para empresas o Microsoft 365 para la empresa (y que hayan iniciado sesión en Office con su identificador de organización), y que tengan buzones de Exchange Online y activos de Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
+La implementación centralizada de complementos requiere que los usuarios usen las SKU de Microsoft 365 Enterprise: E3/E5/F3 o SKU de negocio: Business Basic, Business Standard, Business Premium (y han iniciado sesión en Office con su identificador de organización) y tienen buzones de Exchange Online y Exchange Online activos. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
 Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
@@ -55,17 +55,17 @@ La implementación centralizada no es compatible con lo siguiente:
 - Implementación de complementos en un buzón de correo local de Exchange
 - Implementación de complemento a SharePoint  
 - Aplicaciones de Teams
-- Implementación complementos de modelo de objetos componentes (COM) o de Visual Studio Tools para Office (VSTO)
-- Implementaciones de Microsoft 365 que no incluyen Exchange, como Microsoft 365 apps for Business
+- Implementación de complementos del modelo de objetos componentes (COM) o de Visual Studio Tools para Office (VSTO).
+- Implementaciones de Microsoft 365 que no incluyen Exchange Online, como SKU: Microsoft 365 apps for Business y Microsoft 365 apps for Enterprise.
 
 ### <a name="office-requirements"></a>Requisitos de Office
 
 - Para los complementos de Word, Excel y PowerPoint, los usuarios deben usar una de las siguientes opciones:
-  - En un dispositivo Windows, versión 1704 o posterior de Microsoft 365 aplicaciones para Microsoft 365 para empresas o Microsoft 365 para la empresa.
+  - En un dispositivo Windows, versión 1704 o posterior de Microsoft 365 Enterprise SKU: E3/E5/F3 o SKU de negocio: Business Basic, Business Standard, empresa Premium.
   - En un equipo Mac, versión 15,34 o posterior.
 
 - Para Outlook, los usuarios deben usar una de las siguientes opciones: 
-  - Versión 1701 o posterior de las aplicaciones de Microsoft 365 para Microsoft 365 para empresas o Microsoft 365 para la empresa.
+  - Versión 1701 o posterior de Microsoft 365 Enterprise SKU: E3/E5/F3 o SKU de negocio: Business Basic, Business Standard, Business Premium.
   - La versión 1808 o posterior de Office Professional Plus 2019 u Office Standard 2019.
   - Versión 16.0.4494.1000 o posterior de Office Professional Plus 2016 (MSI) u Office Standard 2016 (MSI)\*
   - Versión 15.0.4937.1000 o posterior de Office Professional Plus 2013 (MSI) u Office Standard 2013 (MSI)\*
@@ -74,20 +74,6 @@ La implementación centralizada no es compatible con lo siguiente:
 - Versión 2.2.145 o posterior de Outlook Mobile para Android 
     
     * Las versiones MSI de Outlook muestran complementos instalados por el administrador en la cinta de Outlook correspondiente, no en la sección "mis complementos".
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Averiguar si Microsoft 365 apps for Enterprise está instalado
-
-Para usar las aplicaciones de Microsoft 365 para empresas, un usuario debe tener una cuenta de Microsoft 365 y debe tener una licencia asignada. Para obtener más información, vea [información general de las aplicaciones de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?linkid=846328).
-
-La forma más sencilla de detectar si un usuario tiene Microsoft 365 apps for Enterprise instalado y lo ha usado recientemente es usar el informe de activaciones de Microsoft Office, que está disponible en el centro de administración de Microsoft 365. El informe proporciona una lista de todos los usuarios que han activado Microsoft 365 apps for Enterprise en los últimos 7 días, 30 días, 90 días o 180 días. Con fines de implementación centralizada, las activaciones de escritorio para Windows o Mac son las columnas importantes del informe. Puede exportar el informe a Excel. Para obtener más información acerca del informe, vea [informes de microsoft 365 en el centro de administración: activaciones de Microsoft Office](../activity-reports/microsoft-office-activations.md).
-  
-Si no desea usar el informe de activaciones, puede pedir a un usuario que abra una aplicación de Office, como Word en su equipo y, a continuación, elija cuenta de **archivo** \> **Account**. En **información del producto**, verá que el **producto de suscripción** y **Microsoft 365 para empresas**, o Microsoft 365 empresa Premium, son similares a lo que se muestra en la siguiente imagen.
-
-![Información de producto en una aplicación de Office](../../media/product-information-microsoft-365-enterprise.png)
-  
-Para obtener ayuda con Microsoft 365 apps for Enterprise, vea [Troubleshooting Tips for microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
-
 
 ### <a name="exchange-online-requirements"></a>Requisitos de Exchange Online
 

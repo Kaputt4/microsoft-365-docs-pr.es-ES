@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371675"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519334"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -59,7 +59,7 @@ Cada una de las funciones siguientes se puede asignar para proporcionar diferent
 Si necesita ayuda para asignar roles de Azure Active Directory, consulte [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 Para facilitar la administración de las funciones integradas, se ha creado un grupo de seguridad para cada rol personalizado (por ejemplo, "funciones del área de trabajo modernas – administrador de seguridad"). Para asignar usuarios a uno de los grupos de seguridad, siga estos pasos:
-1.  Vaya al portal de Azure y navegue hasta la hoja Azure Active Directory.
+1.  Ir al portal de Microsoft Endpoint Manager
 2.  Seleccione grupos en el lado izquierdo.
 3.  Busque funciones modernas del área de trabajo y, a continuación, seleccione el grupo asociado con el rol que desea asignar. 
 4.  Seleccione miembros en la parte izquierda y, a continuación, seleccione + Agregar miembros en la barra de comandos.

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171415"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519627"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de entorno de implementación de Windows y Office
 
@@ -34,9 +34,9 @@ Este kit es muy recomendable para las organizaciones que se preparan para las ac
 
 El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de forma automática, en el que se incluyen clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El laboratorio contiene las últimas versiones de evaluación de los siguientes productos:
 
-  - ¡NUEVO! Windows 10 Enterprise, versión 2004
+  - ¡NUEVO! Windows 10 Enterprise, versión 20H2
   - Windows 7 Enterprise
-  - ¡NUEVO! Microsoft Endpoint Configuration Manager, versión 2002
+  - Microsoft Endpoint Configuration Manager, versión 2002
   - Windows Assessment and Deployment Kit para Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -90,11 +90,11 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 ### <a name="deploy-windows-virtual-desktop"></a>Implementar el escritorio virtual de Windows  
 - Preparación, implementación, optimización
  
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Descargar el kit de laboratorio de implementación de Office y Windows
+## <a name="download-the-windows-and-office-deployment-lab-kit"></a>Descargar el kit de laboratorio de implementación de Office y Windows
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible. El laboratorio expira el 5 de diciembre de 2020. Se publicará una nueva versión antes de la expiración.*
+* Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 300 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible. El laboratorio expira febrero de 2020. Se publicará una nueva versión antes de la expiración.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

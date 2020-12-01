@@ -24,18 +24,18 @@ f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007, ya que la compatibilidad con Office 2007 ha finalizado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3dc33d03c32880627f3c85d6212756f45548ce0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28fa1d56ef66297eaf69d2d11b720e3de2d668f7
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693594"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519791"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos que le ayudarán a actualizar desde los servidores y clientes de Office 2007
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Si usa productos y servicios de Office 2007, la compatibilidad con estas aplicaciones ha finalizado. Mientras planea la actualización, este es un buen momento para considerar migrar a la nube de Microsoft, empezando con Microsoft 365. Use este artículo como punto de partida para revisar las opciones y planear la actualización.
+Si usa productos y servicios de Office 2007, tenga en cuenta que el soporte para estas aplicaciones ha finalizado. Considere la posibilidad de migrar a la nube de Microsoft, empezando con Microsoft 365. Use este artículo como punto de partida para revisar las opciones y planear la actualización.
       
 ## <a name="office-2007-planning-roadmaps"></a>Guías básicas de planeación de Office 2007
   
@@ -50,7 +50,13 @@ Se ha finalizado el soporte de productos y servicios de Office 2007. Las guías 
 |[Actualización desde Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 de enero de 2018  <br/> |
 |[Plan de fin del soporte técnico de PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 de enero de 2018  <br/> |
    
-Cuando finaliza el soporte técnico de un producto de Microsoft, no hay nuevas actualizaciones de seguridad, actualizaciones no relacionadas con la seguridad, opciones de soporte técnico asistido o gratuito (incluidos los contratos de soporte técnico personalizados) ni actualizaciones de contenido técnico en línea. Tanto si es una organización empresarial como si es un usuario particular individual, tiene varias opciones que debe tener en cuenta:
+Una vez finalizado el soporte para un producto de Microsoft, no hay más:
+- Nuevas actualizaciones de seguridad
+- Nuevas actualizaciones no relacionadas con la seguridad
+- Opciones de soporte técnico asistido gratuitos o de pago disponibles (incluidos los acuerdos de soporte técnico personalizados)
+- Nuevas actualizaciones de contenido técnico en línea
+
+Tanto si es una organización empresarial como si es un usuario particular individual, tiene varias opciones que debe tener en cuenta.
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Soy un usuario doméstico. ¿Qué hago?
 
@@ -64,4 +70,3 @@ Si está usando productos y aplicaciones de Office 2007 en casa, vea [esta infor
 
 [Planear la actualización desde servidores y clientes de Office 2007 o 2010](plan-upgrade-previous-versions-office.md)
   
-

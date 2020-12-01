@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7674777214cb5684bb02039f739458352bc701ad
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262284"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519615"
 ---
 # <a name="compliance"></a>Cumplimiento
 
@@ -24,17 +24,17 @@ Cuando usa Microsoft Managed Desktop IT as-a-Service, Microsoft le proporciona u
 
 Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 
-- [Estándares de administración de seguridad de la información ISO 27001 (declaración 27001:2013)](../../compliance/offering-ISO-27001.md)
-- [Sistema de administración de información de privacidad ISO 27701 (PIMS)](../../compliance/offering-iso-27701.md)
-- [ISO 27017 código de prácticas para controles de seguridad de la información](../../compliance/offering-ISO-27017.md)
-- [ISO 27018 código de prácticas para la protección de datos personales en la nube](../../compliance/offering-ISO-27018.md)
-- [Estándares de sistemas de administración de calidad ISO 9001](../../compliance/offering-ISO-9001.md)
-- [Administración del servicio de tecnología de la información ISO 20000-1](../../compliance/offering-ISO-20000-1-2011.md)
-- [Estándar de administración de continuidad empresarial ISO 22301](../../compliance/offering-ISO-22301.md)
-- [Certificación STAR de Cloud Security Alliance (CSA)](../../compliance/offering-CSA-STAR-Attestation.md)
-- [Certificación Cloud Security Alliance (CSA) STAR](../../compliance/offering-CSA-Star-Certification.md)
-- [Controles de la organización de servicios (SOC) 1, 2, 3](../../compliance/offering-SOC.md)
-- [Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)](../../compliance/offering-PCI-DSS.md)
+- [Estándares de administración de seguridad de la información ISO 27001 (declaración 27001:2013)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
+- [Sistema de administración de información de privacidad ISO 27701 (PIMS)](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
+- [ISO 27017 código de prácticas para controles de seguridad de la información](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
+- [ISO 27018 código de prácticas para la protección de datos personales en la nube](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
+- [Estándares de sistemas de administración de calidad ISO 9001](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
+- [Administración del servicio de tecnología de la información ISO 20000-1](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
+- [Estándar de administración de continuidad empresarial ISO 22301](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
+- [Certificación STAR de Cloud Security Alliance (CSA)](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
+- [Certificación Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
+- [Controles de la organización de servicios (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Informes de auditor y certificados de cumplimiento
 
