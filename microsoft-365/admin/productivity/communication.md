@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la puntuación de la experiencia comunicación-personas.
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123456"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527506"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
@@ -119,9 +119,9 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 2. **Cuerpo:** Proporciona información sobre el valor del uso de mensajes de canal en Microsoft Teams
 3. **Visualización:** Desglosa el uso de mensajes de chat y de canal:
       - **Personas que envían mensajes de chat:** La parte coloreada y la fracción representan el uso de mensajes de chat dentro de las personas que enviaron mensajes en Microsoft Teams. La fracción se construye a partir de:
-        - **Numerador:** Personas que enviaron mensajes de chat en Microsoft Teams en los últimos 28 días
-        - **Denominador:** Personas que enviaron mensajes en Microsoft Teams en los últimos 28 días
-      - **Personas que envían mensajes de chat:** La parte coloreada y la fracción representan el uso de mensajes de canal dentro de personas que envían mensajes en Microsoft Teams. La fracción se construye a partir de:
+        - **Numerador:** Personas que enviaron mensajes de chat en Microsoft Teams en los últimos 28 días.
+        - **Denominador:** Personas que enviaron mensajes en Microsoft Teams en los últimos 28 días.
+      - **Personas que envían mensajes de canal:** La parte coloreada y la fracción representan el uso de mensajes de canal dentro de personas que envían mensajes en Microsoft Teams. La fracción se construye a partir de:
         - **Numerador:** Personas que enviaron mensajes de chat en Microsoft Teams en los últimos 28 días.
         - **Denominador:** Personas que enviaron mensajes en Microsoft Teams en los últimos 28 días.
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de la ayuda relacionada.

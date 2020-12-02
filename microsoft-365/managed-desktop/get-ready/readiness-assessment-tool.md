@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519826"
+ms.locfileid: "49527714"
 ---
 # <a name="readiness-assessment-tool"></a>Herramienta de evaluación de preparación
 
@@ -22,7 +22,7 @@ Para obtener la mejor experiencia posible al inscribirse en el escritorio admini
 
 La herramienta comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para garantizar que funcionarán con el escritorio administrado por Microsoft. Microsoft Managed Desktop mantiene los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecutó una protección en su organización (inquilino) de Azure AD. Después de 12 meses, lo mantenemos en un formulario de identificación.  Puede optar por eliminar los datos recopilados.
 
-Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones ([directivas de acceso condicional](readiness-assessment-fix.md#conditional-access-policies) y [autenticación multifactor](readiness-assessment-fix.md#multi-factor-authentication) requieren permisos adicionales).
+Cualquier usuario con al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones ([directivas de acceso condicional](readiness-assessment-fix.md#conditional-access-policies) y [autenticación multifactor](readiness-assessment-fix.md#multifactor-authentication) requieren permisos adicionales).
  
 La herramienta de evaluación comprueba estos elementos:
 
@@ -39,7 +39,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Página de estado de inscripción     | Confirma que la página de estado de inscripción no está habilitada      |
 |Inscripción de Intune     | Comprueba que los dispositivos Windows 10 de la organización de Azure AD se inscriben automáticamente en Intune.         |
 |Microsoft Store para Empresas     | Confirma que Microsoft Store for Business está habilitado y sincronizado con Intune        |
-|Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a las cuentas de servicio de escritorio administradas de Microsoft.
+|Autenticación multifactor | Comprueba que la autenticación con varios factores no se aplica a las cuentas de servicio de escritorio administradas de Microsoft.
 |Scripts de PowerShell     | Comprueba que los scripts de Windows PowerShell *no* se asignan de una manera que se dirija a los dispositivos de escritorio administrados por Microsoft    |
 |Región     | Comprueba que la región sea compatible con el escritorio administrado por Microsoft        |
 |Líneas de base de seguridad     | Comprueba que el perfil de línea base de seguridad no tiene como objetivo todos los usuarios o todos los dispositivos (las directivas de línea de base de seguridad *no* deben dirigir ningún dispositivo de escritorio administrado por Microsoft).       |
@@ -55,7 +55,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Suscripciones "ad hoc" para la itinerancia del estado de la empresa     | Aconseja comprobar una opción que (si se establece en "false") impedir que la itinerancia del estado de la empresa funcione correctamente  |
 |Enterprise State Roaming     | Aconseja comprobar que la itinerancia del estado de la empresa está habilitada       |
 |Licencias     | Comprueba que ha obtenido las [licencias](prerequisites.md#more-about-licenses) necesarias         |
-|Autenticación multifactor     | Comprueba que la autenticación multifactor no se aplica a todos los usuarios (la autenticación multifactor no se debe aplicar por accidente a las cuentas de servicio de escritorio administradas de Microsoft).|
+|Autenticación multifactor     | Comprueba que la autenticación multifactor no se aplica a todos los usuarios (la autenticación con varios factores no se debe aplicar por accidente a las cuentas de servicio de escritorio administradas de Microsoft).|
 |Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entra en conflicto con los que Microsoft administró las reservas de escritorio para uso propio.        |
 |Roles de administrador de seguridad     | Confirma que los usuarios con roles de lector de seguridad, operador de seguridad o lector global han sido asignados a estos roles en Microsoft defender para el punto de conexión.         |
 |Valores predeterminados de seguridad | Comprueba si la organización de Azure AD tiene los valores predeterminados de seguridad habilitados en Azure Active Directory |
@@ -79,3 +79,7 @@ Para cada comprobación, la herramienta notificará uno de los cuatro resultados
 |Consejo    | Siga los pasos de la herramienta para obtener la mejor experiencia con la inscripción y para los usuarios. *Puede* completar la inscripción, pero debe solucionar estos problemas antes de implementar el primer dispositivo.        |
 |No preparado | *Se producirá un error* en la inscripción si no soluciona estos problemas. Siga los pasos de la herramienta para resolverlos.        |
 |Error | El rol de Azure Active Director (AD) que está usando no tiene permisos suficientes para ejecutar esta comprobación. |
+
+## <a name="after-enrollment"></a>Después de la inscripción
+
+Una vez completada la inscripción en el escritorio administrado de Microsoft, recuerde volver a ajustar algunas opciones de Intune y Azure AD. Para obtener más información, consulte [ajustar la configuración tras la inscripción](../get-started/conditional-access.md).

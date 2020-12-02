@@ -2,8 +2,8 @@
 title: Configurar Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Obtenga información acerca de cómo configurar su suscripción de Microsoft Empresa Premium, Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Básico, Aplicaciones de Microsoft 365 para negocios u Office 365 Educación.
-ms.openlocfilehash: f832272aff5ba9c657eb8a6f58f3d9c330d7700c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c44f0046bc1f0a81ecee85de5c59ddbc854f33ac
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644452"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551813"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurar Microsoft 365 para empresas
 

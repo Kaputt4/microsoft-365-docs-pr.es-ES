@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Obtenga información sobre qué hacer si tiene un dominio no routale asociado a los usuarios locales antes de sincronizar con Microsoft 365.
-ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: f38f6143b6e26b2849c174f74c94d009ddea73cd
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002386"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527726"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
 Al sincronizar el directorio local con Microsoft 365, debe tener un dominio comprobado en Azure Active Directory (Azure AD). Solo se sincronizan los nombres principales de usuario (UPN) asociados con el dominio local. Sin embargo, cualquier UPN que contenga un dominio no enrutable, por ejemplo,. local (como billa@contoso. local), se sincronizará con un dominio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
@@ -91,7 +91,7 @@ Una vez que haya actualizado los UPN para usar el dominio comprobado, estará pr
 
 Si tiene muchos usuarios que actualizar, es más fácil usar Windows PowerShell. En el siguiente ejemplo, se usan los cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) y [set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) para cambiar todos los sufijos contoso. local a contoso.com. 
 
-Opuestos ejemplo, podría ejecutar los siguientes comandos de Windows PowerShell para actualizar todos los sufijos contoso. local a contoso.com:
+Por ejemplo, podría ejecutar los siguientes comandos de Windows PowerShell para actualizar todos los sufijos contoso. local a contoso.com:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null

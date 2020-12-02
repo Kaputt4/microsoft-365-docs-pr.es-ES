@@ -2,8 +2,8 @@
 title: Configurar el reenvío de correo electrónico
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configure el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office365.
-ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645532"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551839"
 ---
 # <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -45,7 +45,7 @@ Como administrador de una organización, es posible que los requisitos de la com
 
  Antes de configurar el reenvío de correo electrónico, tenga en cuenta lo siguiente: 
 
-- Una vez que haya configurado el reenvío de correo electrónico, solo se fowarded los correos electrónicos **nuevos** enviados al buzón  *de*  correo. 
+- Una vez que haya configurado el reenvío de correo electrónico, solo se reenviarán los correos electrónicos **nuevos** que se envíen al buzón  *de*  . 
     
 - El reenvío de correo electrónico requiere que la cuenta  *de*  tiene una licencia. Si está configurando el reenvío de correo electrónico porque el usuario ha abandonado la organización, otra opción es [convertir su buzón en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md). De este modo, varias personas pueden tener acceso a ella. Sin embargo, un buzón compartido no puede superar los 50 GB. 
     
@@ -75,7 +75,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
     
 2. Seleccione el nombre del usuario cuyo correo electrónico desea reenviar para abrir la página de propiedades. 
 
-3. Expanda **configuración de correo**y, a continuación, en la sección **reenvío de correo electrónico** , seleccione **Editar**.
+3. Expanda **configuración de correo** y, a continuación, en la sección **reenvío de correo electrónico** , seleccione **Editar**.
 
 4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
     
@@ -93,7 +93,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
     
 2. Seleccione el nombre del usuario cuyo correo electrónico desea reenviar para abrir la página de propiedades. 
 
-3. Expanda **configuración de correo**y, a continuación, en la sección **reenvío de correo electrónico** , seleccione **Editar**.
+3. Expanda **configuración de correo** y, a continuación, en la sección **reenvío de correo electrónico** , seleccione **Editar**.
 
 4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
     

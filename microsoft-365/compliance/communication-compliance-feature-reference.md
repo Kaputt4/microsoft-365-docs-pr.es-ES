@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e8ce5a144c7361cd483a903dc3e287a4a51a508b
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 009ed10cb9d005757a786d3a3b2c0bba2c8e6d44
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073077"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527643"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -79,9 +79,9 @@ Para ayudarle en la planeación de la migración, tenga en cuenta el siguiente e
 
 Para actualizar los roles de estos usuarios para la nueva estructura de grupo de roles y separar los permisos de acceso y de administración de los usuarios, puede considerar tres grupos nuevos y las nuevas asignaciones de grupos de roles asociadas:
 
-- **Administradores de ti** : asignados al nuevo grupo de roles de *Administración de cumplimiento de comunicaciones* .
-- **Clasificación** : asignada al grupo de funciones *Analista de cumplimiento de comunicaciones* .
-- **Revisores** : asignados al nuevo grupo de roles de *investigador de cumplimiento de comunicaciones* .
+- **Administradores de ti**: asignados al nuevo grupo de roles de *Administración de cumplimiento de comunicaciones* .
+- **Clasificación**: asignada al grupo de funciones *Analista de cumplimiento de comunicaciones* .
+- **Revisores**: asignados al nuevo grupo de roles de *investigador de cumplimiento de comunicaciones* .
 
 ## <a name="supervised-users"></a>Usuarios supervisados
 
@@ -106,26 +106,26 @@ La adición de grupos y listas de distribución a las directivas de cumplimiento
 
 Con las directivas de cumplimiento de la comunicación, puede elegir analizar los mensajes en una o varias de las plataformas de comunicación siguientes como un grupo o como orígenes independientes. Las comunicaciones capturadas en estas plataformas se conservan durante siete años para cada directiva de forma predeterminada, incluso si los usuarios dejan la organización y sus buzones de correo se eliminan.
 
-- **Microsoft Teams** : se pueden analizar las comunicaciones de chat en los canales públicos y privados de Microsoft Teams y en los chats individuales. Cuando se asignan usuarios a una directiva de cumplimiento de la comunicación con la cobertura de Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se supervisan automáticamente en todos los equipos de Microsoft en los que los usuarios son miembros. La cobertura de Microsoft Teams se incluye automáticamente para las plantillas de directiva predefinidas y está seleccionada de forma predeterminada en la plantilla de directiva personalizada. Equipos chats la coincidencia de las condiciones de la Directiva de cumplimiento de comunicaciones puede tardar hasta 24 horas en procesarse. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
+- **Microsoft Teams**: se pueden analizar las comunicaciones de chat en los canales públicos y privados de Microsoft Teams y en los chats individuales. Cuando se asignan usuarios a una directiva de cumplimiento de la comunicación con la cobertura de Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se supervisan automáticamente en todos los equipos de Microsoft en los que los usuarios son miembros. La cobertura de Microsoft Teams se incluye automáticamente para las plantillas de directiva predefinidas y está seleccionada de forma predeterminada en la plantilla de directiva personalizada. Microsoft chats la coincidencia de las condiciones de la Directiva de cumplimiento de comunicaciones puede tardar hasta 48 horas en procesarse. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
 
     - **Para las comunicaciones de chat de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
     - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Microsoft 365 que desee analizar que contenga un usuario específico a la Directiva de cumplimiento de la comunicación. Si agrega el mismo usuario a otros canales de Microsoft Teams o a grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de cumplimiento de la comunicación.
-    - **Para las comunicaciones de chat de Microsoft Teams con entornos de correo electrónico híbridos** : el cumplimiento de la comunicación puede supervisar los mensajes de chat para los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para los usuarios con buzones locales o externos para supervisar. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de **usuarios y grupos supervisados** en el Asistente para directivas.
+    - **Para las comunicaciones de chat de Microsoft Teams con entornos de correo electrónico híbridos**: el cumplimiento de la comunicación puede supervisar los mensajes de chat para los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para los usuarios con buzones locales o externos para supervisar. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de **usuarios y grupos supervisados** en el Asistente para directivas.
 
     >[!IMPORTANT]
     >Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams en los buzones de correo basados en la nube para los usuarios locales.
 
-- **Correo electrónico de Exchange** : los buzones hospedados en Exchange online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de la comunicación son los mismos que los [tipos de archivo compatibles con las visitas de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Correo electrónico de Exchange**: los buzones hospedados en Exchange online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de la comunicación son los mismos que los [tipos de archivo compatibles con las visitas de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-- **Yammer** : se pueden examinar mensajes privados y conversaciones públicas y datos adjuntos asociados en comunidades de Yammer. Cuando se agrega un usuario a una directiva de cumplimiento de la comunicación que incluye Yammer como un canal definido, las comunicaciones de todas las comunidades de Yammer a las que pertenece el usuario se incluyen en el proceso de detección. Chats y datos adjuntos de Yammer que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Yammer debe estar en [modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) para las directivas de cumplimiento de comunicaciones para supervisar las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
+- **Yammer**: se pueden examinar mensajes privados y conversaciones públicas y datos adjuntos asociados en comunidades de Yammer. Cuando se agrega un usuario a una directiva de cumplimiento de la comunicación que incluye Yammer como un canal definido, las comunicaciones de todas las comunidades de Yammer a las que pertenece el usuario se incluyen en el proceso de detección. Chats y datos adjuntos de Yammer que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Yammer debe estar en [modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) para las directivas de cumplimiento de comunicaciones para supervisar las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
 
-- **Skype empresarial online** : las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online la coincidencia de las condiciones de la Directiva de cumplimiento de comunicaciones puede tardar hasta 24 horas en procesarse. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
+- **Skype empresarial online**: las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online la coincidencia de las condiciones de la Directiva de cumplimiento de comunicaciones puede tardar hasta 24 horas en procesarse. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
 
-    - **Para las comunicaciones de chat de Skype empresarial online** : asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
+    - **Para las comunicaciones de chat de Skype empresarial online**: asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
 
-- **Orígenes de terceros** : puede examinar las comunicaciones de los datos importados a los buzones de la organización de Microsoft 365 desde orígenes de terceros como, por ejemplo, [Bloomberg](archive-instant-bloomberg-data.md), el [margen de demora](archive-slack-data.md), el [zoom](archive-zoommeetings-data.md), SMS y muchos otros. Para obtener una lista completa de los conectores compatibles con el cumplimiento de comunicaciones, vea [archivar datos de terceros](archiving-third-party-data.md).
+- **Orígenes de terceros**: puede examinar las comunicaciones de los datos importados a los buzones de la organización de Microsoft 365 desde orígenes de terceros como, por ejemplo, [Bloomberg](archive-instant-bloomberg-data.md), el [margen de demora](archive-slack-data.md), el [zoom](archive-zoommeetings-data.md), SMS y muchos otros. Para obtener una lista completa de los conectores compatibles con el cumplimiento de comunicaciones, vea [archivar datos de terceros](archiving-third-party-data.md).
 
     Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **orígenes de terceros** del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
@@ -149,9 +149,9 @@ Tiene la opción de seleccionar **todos los usuarios** o de definir usuarios esp
 
 De forma predeterminada, la condición **es la dirección** se muestra y no se puede quitar. La configuración de la dirección de la comunicación en una directiva se eligen de forma individual o conjunta:
 
-- **Entrante** : puede elegir **entrante** para revisar las comunicaciones enviadas **a** las personas que haya elegido supervisar.
-- **Saliente** : puede elegir **saliente** si desea revisar las comunicaciones enviadas **por** las personas que ha elegido supervisar.
-- **Interno** : puede elegir **interna** para revisar las comunicaciones enviadas **entre** las personas que identificó en la Directiva.
+- **Entrante**: puede elegir **entrante** para revisar las comunicaciones enviadas **a** las personas que haya elegido supervisar.
+- **Saliente**: puede elegir **saliente** si desea revisar las comunicaciones enviadas **por** las personas que ha elegido supervisar.
+- **Interno**: puede elegir **interna** para revisar las comunicaciones enviadas **entre** las personas que identificó en la Directiva.
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
@@ -174,14 +174,14 @@ Los clasificadores globales y con formación integradas integrados examinan los 
 
 Cumplimiento en la comunicación los clasificadores globales y que se integran en el ámbito de la comunicación examinan las comunicaciones de términos, imágenes y sentimientos para los siguientes tipos de idiomas y contenido:
 
-- **Amenaza** : busca amenazas para confirmar violencia o daño físico a una persona o propiedad.
-- **Acoso dirigido** : explora los objetivos ofensivos de las personas relacionadas con la raza, el color, la religión y el origen nacional.
-- **Blasfemias** : explora las expresiones irreverentes que avergonzan a la mayoría de las personas.
-- **Imágenes de adultos** : explora imágenes que tienen una naturaleza sexualmente explícita.
-- **Imágenes de racy** : explora imágenes que son de naturaleza sexual, pero contienen contenido menos explícito que las imágenes que se consideran adultas.
-- **Imágenes de Gory** : explora imágenes que describen violencia y Gore.
+- **Amenaza**: busca amenazas para confirmar violencia o daño físico a una persona o propiedad.
+- **Acoso dirigido**: explora los objetivos ofensivos de las personas relacionadas con la raza, el color, la religión y el origen nacional.
+- **Blasfemias**: explora las expresiones irreverentes que avergonzan a la mayoría de las personas.
+- **Imágenes de adultos**: explora imágenes que tienen una naturaleza sexualmente explícita.
+- **Imágenes de racy**: explora imágenes que son de naturaleza sexual, pero contienen contenido menos explícito que las imágenes que se consideran adultas.
+- **Imágenes de Gory**: explora imágenes que describen violencia y Gore.
 
-Los clasificadores de imágenes de *adultos* , *racy* y *Gory* digitalizan archivos en. JPEG,. PNG,. GIF y. Formatos BMP. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser superiores a 50x50 píxeles y superiores a 50 kilobytes (KB) para que la imagen pueda calificarse para la evaluación. La identificación de imagen es compatible con los mensajes de correo electrónico de Exchange Online y los canales y chats de Microsoft Teams.
+Los clasificadores de imágenes de *adultos*, *racy* y *Gory* digitalizan archivos en. JPEG,. PNG,. GIF y. Formatos BMP. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser superiores a 50x50 píxeles y superiores a 50 kilobytes (KB) para que la imagen pueda calificarse para la evaluación. La identificación de imagen es compatible con los mensajes de correo electrónico de Exchange Online y los canales y chats de Microsoft Teams.
 
 Los clasificadores globales y capacitados integrados no proporcionan una lista exhaustiva de términos o imágenes en estas áreas. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho de actualizar los clasificadores según su criterio. Aunque los clasificadores pueden ayudar a su organización a supervisar estas áreas, los clasificadores no están destinados a proporcionar a los únicos medios de la organización la supervisión o el direccionamiento de dicho idioma o imagen. La organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con el idioma y las imágenes de supervisión, análisis y bloqueo en estas áreas, incluido el cumplimiento de la privacidad local y de otras leyes vigentes. Microsoft anima a la consultoría con asesores legales antes de su implementación y uso.
 
@@ -207,13 +207,13 @@ La siguiente tabla explica más sobre cada condición.
 | **El mensaje contiene alguna de estas palabras**  <br><br> **El mensaje no contiene ninguna de estas palabras** | Para aplicar la Directiva cuando se incluyan o excluyan ciertas palabras o frases en un mensaje, escriba cada palabra separada por una coma. Para las frases de dos palabras o más, use comillas alrededor de la frase. Cada palabra o frase que escriba se aplica por separado (solo se debe aplicar una palabra para que la Directiva se aplique al mensaje). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **Los datos adjuntos contienen alguna de estas palabras**  <br><br> **Los datos adjuntos no contienen ninguna de estas palabras** | Para aplicar la Directiva cuando se incluyan o excluyan ciertas palabras o frases en un adjunto de mensaje (por ejemplo, un documento de Word), escriba cada palabra separada por una coma. Para las frases de dos palabras o más, use comillas alrededor de la frase. Cada palabra o frase que escriba se aplica por separado (solo se debe aplicar una palabra para que la Directiva se aplique a los datos adjuntos). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **Los datos adjuntos son cualquiera de estos tipos de archivo**  <br><br> **Datos adjuntos no es ninguno de estos tipos de archivo** | Para supervisar las comunicaciones que incluyan o excluyan tipos de datos adjuntos específicos, escriba las extensiones de archivo (por ejemplo,. exe o. pdf). Si desea incluir o excluir varias extensiones de archivo, indíquela en líneas separadas. Para que se aplique la Directiva, solo debe coincidir una extensión de datos adjuntos.|
-| **El tamaño del mensaje es mayor que**  <br><br> **El tamaño del mensaje no es mayor que** | Para revisar los mensajes según un tamaño determinado, use estas condiciones para especificar el tamaño máximo o mínimo que puede tener un mensaje antes de que se someta a revisión. Por ejemplo, si especifica que **el tamaño del mensaje es superior a** \> **1,0 MB** , todos los mensajes que tengan 1,01 MB o más, estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
-| **El dato adjunto es mayor que**  <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** a \> **2,0 MB** , todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
+| **El tamaño del mensaje es mayor que**  <br><br> **El tamaño del mensaje no es mayor que** | Para revisar los mensajes según un tamaño determinado, use estas condiciones para especificar el tamaño máximo o mínimo que puede tener un mensaje antes de que se someta a revisión. Por ejemplo, si especifica que **el tamaño del mensaje es superior a** \> **1,0 MB**, todos los mensajes que tengan 1,01 MB o más, estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
+| **El dato adjunto es mayor que**  <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** a \> **2,0 MB**, todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Coincidencia de palabras y frases para mensajes de correo electrónico o datos adjuntos
 <a name="Matchwords"> </a>
 
-Cada palabra que escriba y separe con una coma se aplica por separado (solo se debe aplicar una palabra para que la condición de la Directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, el **mensaje contiene cualquiera de estas palabras** , con las palabras clave "Banker", "Confidential" y "Insider comercia" separadas por una coma (Banker, Confidential, "transacciones de Insiders"). La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker", "Confidential" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
+Cada palabra que escriba y separe con una coma se aplica por separado (solo se debe aplicar una palabra para que la condición de la Directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, el **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Banker", "Confidential" y "Insider comercia" separadas por una coma (Banker, Confidential, "transacciones de Insiders"). La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker", "Confidential" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
 
 >[!IMPORTANT]
 >Al importar un archivo de diccionario personalizado, cada palabra o frase debe separarse con un retorno de carro y en una línea independiente. <br> Por ejemplo: <br><br>
@@ -221,15 +221,15 @@ Cada palabra que escriba y separe con una coma se aplica por separado (solo se d
 >*confidencial* <br>
 >*Comercio de Insiders*
 
-Para analizar los mensajes de correo electrónico y los datos adjuntos de las mismas palabras clave, cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un diccionario de [palabras clave personalizado](create-a-keyword-dictionary.md) para los términos que desee analizar en los mensajes. Esta configuración de directiva identifica las palabras clave definidas que aparecen en el mensaje de correo electrónico **o** en los datos adjuntos del correo electrónico. El uso de la configuración de directivas condicionales estándar (el *mensaje contiene alguna de estas palabras* y *datos adjuntos contiene alguna de estas palabras* ) para **identificar los términos** de los mensajes y en los datos adjuntos requiere que los términos estén presentes en el mensaje y los datos adjuntos.
+Para analizar los mensajes de correo electrónico y los datos adjuntos de las mismas palabras clave, cree una [Directiva de prevención de pérdida de datos](create-test-tune-dlp-policy.md) con un diccionario de [palabras clave personalizado](create-a-keyword-dictionary.md) para los términos que desee analizar en los mensajes. Esta configuración de directiva identifica las palabras clave definidas que aparecen en el mensaje de correo electrónico **o** en los datos adjuntos del correo electrónico. El uso de la configuración de directivas condicionales estándar (el *mensaje contiene alguna de estas palabras* y *datos adjuntos contiene alguna de estas palabras*) para **identificar los términos** de los mensajes y en los datos adjuntos requiere que los términos estén presentes en el mensaje y los datos adjuntos.
   
 #### <a name="enter-multiple-conditions"></a>Escribir varias condiciones
 
 Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma conjunta para determinar cuándo debe aplicarse la Directiva de cumplimiento de comunicaciones a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. En este ejemplo, las tres condiciones se definirían de la siguiente manera:
   
-- El **mensaje contiene cualquiera de estas palabras** , con la palabra clave "Trade"
-- El **tamaño del mensaje es mayor que** , con el valor de 2 MB
-- El **mensaje no contiene ninguna de estas palabras** , con las palabras clave "aprobado por el equipo financiero de Contoso"
+- El **mensaje contiene cualquiera de estas palabras**, con la palabra clave "Trade"
+- El **tamaño del mensaje es mayor que**, con el valor de 2 MB
+- El **mensaje no contiene ninguna de estas palabras**, con las palabras clave "aprobado por el equipo financiero de Contoso"
 
 ### <a name="review-percentage"></a>Porcentaje de revisión
 
@@ -255,7 +255,7 @@ Las plantillas de notificaciones son plantillas de correo electrónico personali
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo Notify durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o más usuarios o grupos que envían el mensaje al usuario con una coincidencia de Directiva, seleccionada en Active Directory de la suscripción. |
 | **Direcciones CC y CCO** | No | Que los usuarios o grupos opcionales reciban una notificación de la coincidencia de la Directiva, seleccionada en Active Directory de la suscripción. |
-| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite texto o valores HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -292,11 +292,11 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Recipient** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
-| **Tamaño** | El tamaño del mensaje en KB. |
+| **Size** | El tamaño del mensaje en KB. |
 | **Asunto/título** | El asunto del mensaje o el título del chat. |
-| **Tags** | Las etiquetas asignadas a un mensaje, ya sea *dudosa* , *compatible* o *no compatible*. |
+| **Tags** | Las etiquetas asignadas a un mensaje, ya sea *dudosa*, *compatible* o *no compatible*. |
 | **Remitir a** | El nombre de usuario de la persona incluida como parte de una acción de elevación de mensajes. |
-| **Clasificadores** | El nombre de los clasificadores integrados y personalizados que se aplican al mensaje. Algunos ejemplos son el *lenguaje ofensivo* , el *acoso dirigido* , la *blasfemia* , la *amenaza* y mucho más.
+| **Clasificadores** | El nombre de los clasificadores integrados y personalizados que se aplican al mensaje. Algunos ejemplos son el *lenguaje ofensivo*, el *acoso dirigido*, la *blasfemia*, la *amenaza* y mucho más.
 
 ## <a name="alert-policies"></a>Directivas de alerta
 
@@ -346,14 +346,14 @@ Los clientes con suscripciones de Microsoft 365 que incluyen el cumplimiento de 
 
 La siguiente plantilla de autoautomatización se proporciona a los clientes para que admitan la automatización de procesos para las alertas de cumplimiento de comunicaciones:
 
-- **Notificar al administrador cuando un usuario tiene una alerta de cumplimiento de comunicaciones** : es posible que algunas organizaciones necesiten una notificación de administración inmediata cuando un usuario tiene una alerta de cumplimiento de la comunicación. Cuando se configura y se selecciona este flujo, se envía un mensaje de correo electrónico al administrador del caso al usuario con la siguiente información sobre todas las alertas:
+- **Notificar al administrador cuando un usuario tiene una alerta de cumplimiento de comunicaciones**: es posible que algunas organizaciones necesiten una notificación de administración inmediata cuando un usuario tiene una alerta de cumplimiento de la comunicación. Cuando se configura y se selecciona este flujo, se envía un mensaje de correo electrónico al administrador del caso al usuario con la siguiente información sobre todas las alertas:
     - Directiva aplicable para la alerta
     - Fecha y hora de la alerta
     - Nivel de gravedad de la alerta
 
 ### <a name="create-a-power-automate-flow"></a>Crear un flujo de automatización de potencia
 
-Para crear un flujo de automatización de la potencia desde una plantilla predeterminada recomendada, use la opción **administrar flujos de automatización** **del control** automatizado cuando trabaje directamente en una alerta. Para crear un flujo de automatización automatizada con **administrar flujos de alimentación automatizada** , debe ser miembro de, al menos, un grupo de funciones de cumplimiento de la comunicación.
+Para crear un flujo de automatización de la potencia desde una plantilla predeterminada recomendada, use la opción **administrar flujos de automatización** **del control** automatizado cuando trabaje directamente en una alerta. Para crear un flujo de automatización automatizada con **administrar flujos de alimentación automatizada**, debe ser miembro de, al menos, un grupo de funciones de cumplimiento de la comunicación.
 
 Complete los pasos siguientes para crear un flujo de automatización de eficacia desde una plantilla predeterminada:
 

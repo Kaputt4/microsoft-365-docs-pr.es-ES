@@ -2,8 +2,8 @@
 title: Personalización de un sitio de grupo de SharePoint para el almacenamiento y el uso compartido de archivos
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Obtenga información sobre cómo personalizar, organizar y administrar el sitio de grupo de SharePoint con las bibliotecas de documentos, las listas y los concentradores.
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906494"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525538"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
 
@@ -93,11 +93,11 @@ Para obtener información sobre cómo agregar sitios a un sitio concentrador, ve
   
 ## <a name="sharing-files-with-the-team"></a>Uso compartido de archivos con el equipo
 
-Aunque el almacenamiento de archivos y la administración de documentos es un inicio, también es importante compartir el equipo y los clientes externos. Estos son algunos vínculos a temas que le ayudarán a administrar los usuarios y a compartir sus datos.
+Aunque el almacenamiento de archivos y la administración de documentos es un inicio, también es importante compartir el equipo y los clientes externos. Los siguientes artículos le ayudarán a administrar usuarios y compartir sus datos:
   
-Para compartir archivos con su equipo, vea [compartir archivos o carpetas de SharePoint en Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+- Para compartir archivos con su equipo, vea [compartir archivos o carpetas de SharePoint en Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
-Para comprender el uso compartido fuera de su equipo, vea [external Sharing Overview](/sharepoint/external-sharing-overview).
+- Para comprender el uso compartido fuera de su equipo, vea [external Sharing Overview](/sharepoint/external-sharing-overview).
   
 ## <a name="managing-users-and-groups"></a>Administración de usuarios y grupos
 
@@ -109,9 +109,9 @@ Para agregar usuarios a un grupo de Microsoft 365, consulte [Agregar usuarios y 
   
 Obtenga información sobre cómo controlar solicitudes de acceso con [configurar y administrar solicitudes de acceso](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>Otros temas que podrían interesarle
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>Aquí tiene más artículos que podría interesarle
 
-- **Configurar las aplicaciones de Office en tabletas y teléfonos**. Tiene que realizar esta acción para poder editar los archivos almacenados en el sitio de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
+- **Configurar las aplicaciones de Office en tabletas y teléfonos**. Debe hacerlo para poder editar los archivos que se almacenan en el sitio de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
     
   - [Instalar y configurar Office en un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

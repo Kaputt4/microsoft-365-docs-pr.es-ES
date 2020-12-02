@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: be2fc8e41e3b53923b0297f30dfb102bbabd7489
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877272"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527750"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -52,7 +52,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar sobre contenido sospechoso a Microsoft
 
-1. En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions** , compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
+1. En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions**, compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
 
 2. Use el nuevo control flotante de **envío** que aparece para enviar el mensaje, la dirección URL o los datos adjuntos, tal como se describe en las siguientes secciones.
 
@@ -60,9 +60,12 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 1. En la sección **tipo de objeto** , seleccione **correo electrónico**. En la sección **formato de envío** , use una de las siguientes opciones:
 
-   - **Identificador de mensaje de red** : es un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-ID** del mensaje.
+   - **Identificador de mensaje de red**: es un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-ID** del mensaje.
 
-   - **Archivo** : haga clic en **elegir archivo**. En el cuadro de diálogo que se abre, busque y seleccione el archivo. eml o. msg y, a continuación, haga clic en **abrir**.
+   - **Archivo**: haga clic en **elegir archivo**. En el cuadro de diálogo que se abre, busque y seleccione el archivo. eml o. msg y, a continuación, haga clic en **abrir**.
+   
+   > [!NOTE]
+   > Los administradores con defender para Office 365 plan 1 o plan 2 pueden enviar mensajes con una antigüedad de 30 días. Otros administradores solo podrán retroceder 7 días.
 
 2. En la sección **destinatarios** , especifique uno o más destinatarios con los que desee ejecutar una comprobación de directiva. La comprobación de la Directiva determinará si se ha omitido el análisis del correo electrónico debido a las directivas del usuario o la organización.
 
@@ -70,13 +73,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
    - **No se debe haber bloqueado**
 
-   - **Debe haberse bloqueado** : seleccione **correo no deseado** , **phishing** o **malware**. Si no está seguro, use su mejor criterio.
+   - **Debe haberse bloqueado**: seleccione **correo no deseado**, **phishing** o **malware**. Si no está seguro, use su mejor criterio.
 
-4. Si se ha omitido el filtro debido a las directivas tras el envío, verá información sobre esa Directiva.
-
-   Si no se ha omitido el filtro debido a una o más directivas, el análisis se completará en varios minutos. Para ver más información sobre el envío, haga clic en el vínculo estado. Esto incluye los resultados de la comprobación de la Directiva y el veredicto de reescaneo. Nota: esto no ejecuta el correo electrónico a través de la pila de filtros completos de Microsoft defender para Office 365, sino que ejecuta un nuevo análisis parcial en función de determinados atributos del correo, la dirección URL o el archivo.
-
-5. Cuando haya terminado, haga clic en el botón **Enviar** .
+4. Cuando haya terminado, haga clic en el botón **Enviar** .
 
 ![Ejemplo de envío de dirección URL](../../media/submission-flyout-email.PNG)
 
@@ -88,7 +87,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
    - **No se debe haber bloqueado**
 
-   - **Debe haberse bloqueado** : seleccione **suplantación de identidad (phishing)** o **malware**.
+   - **Debe haberse bloqueado**: seleccione **suplantación de identidad (phishing)** o **malware**.
 
 3. Cuando haya terminado, haga clic en el botón **Enviar** .
 
@@ -104,7 +103,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
    - **No se debe haber bloqueado**
 
-   - **Debe haberse bloqueado** : el **malware** es la única opción y se selecciona automáticamente..
+   - **Debe haberse bloqueado**: el **malware** es la única opción y se selecciona automáticamente..
 
 4. Cuando haya terminado, haga clic en el botón **Enviar** .
 
@@ -112,7 +111,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="view-admin-submissions"></a>Ver envíos de administración
 
-En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions** , compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
+En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions**, compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
 
 Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **identificador de envío** (un valor de GUID asignado a cada envío) introduciendo un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -137,7 +136,7 @@ Haga clic en la pestaña **correo electrónico** .
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
 - **Date**
-- **Identificador de envío** : un valor de GUID que se asigna a cada envío.
+- **Identificador de envío**: un valor de GUID que se asigna a cada envío.
 - **Enviado por**<sup>\*</sup>
 - **Asunto**<sup>\*</sup>
 - **Sender**
@@ -145,10 +144,19 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 - **Tipo de envío**
 - **Motivo de la entrega**
 - **Estatus**<sup>\*</sup>
-- **Tipo de control**
-- **Origen del control**
 
   <sup>\*</sup> Si hace clic en este valor, se muestra información detallada en un control flotante.
+
+#### <a name="admin-submission-rescan-details"></a>Detalles de reexamen de envío de administración
+
+Los mensajes que se envían en los envíos de administración se vuelven a examinar y los resultados que se muestran en el flotante de detalles:
+
+- Si se produjo un error en la autenticación de correo electrónico del remitente en el momento de la entrega.
+- Información sobre las visitas de directivas que podrían haber afectado o invalidar el veredicto de un mensaje.
+- Detonaciones actuales resultados para ver si las direcciones URL o los archivos contenidos en el mensaje eran malintencionados o no.
+- Comentarios de los evaluadores.
+
+Si se encontró una invalidación, el nuevo examen debe completarse en varios minutos. Si no ha habido un problema en la autenticación de correo electrónico o la entrega no se ve afectada por un reemplazo, los comentarios de los evaluadores podrían tardar hasta un día.
 
 ### <a name="view-admin-url-submissions"></a>Ver envíos de direcciones URL de administración
 
@@ -204,7 +212,7 @@ Cerca de la parte superior de la página, puede escribir una fecha de inicio, un
 Para cambiar los criterios de filtro, haga clic en el botón **remitente** y elija uno de los siguientes valores:
 
 - **Dominio del remitente**
-- **Asunto**
+- **Subject**
 - **Enviado por**
 - **Tipo de envío**
 - **IP del remitente**

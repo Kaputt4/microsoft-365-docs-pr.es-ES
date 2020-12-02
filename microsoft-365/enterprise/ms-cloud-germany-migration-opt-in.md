@@ -3,7 +3,7 @@ title: Cómo participar en la migración de Microsoft Cloud Alemania (Microsoft 
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: '
-ms.openlocfilehash: 41f3e928bde0b366b17f698c30f33359a471e757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327194"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552092"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Cómo participar en la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -62,10 +62,27 @@ Los términos de servicios en línea han cambiado para incluir los términos que
 
 Se recomienda a los administradores de inquilinos de clientes y asociados de la suscripción para la migración en el centro de administración, de modo que el proceso de migración pueda comenzar tan pronto como sea posible.
 
+
+## <a name="next-step"></a>Paso siguiente
+
+[Comprender la experiencia del cliente durante la migración](ms-cloud-germany-transition-experience.md)
+
 ## <a name="more-information"></a>Más información
 
-- [Asistencia para la migración a Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
-- [Programa de migración de Office 365 para clientes de Microsoft Cloud Deutschland](https://aka.ms/office365germanymove)
-- [Programa de migración de Dynamics 365 para clientes de Microsoft Cloud Deutschland](https://aka.ms/d365ceoptin)
-- [Programa de migración de Power BI para clientes de Microsoft Cloud Deutschland](https://aka.ms/pbioptin)
-- Envíe preguntas con el vínculo "¿Necesita ayuda?" del [Centro de administración de Microsoft 365](https://portal.office.de/)
+Introducción:
+
+- [Migración desde Microsoft Cloud Alemania a Office 365 Services en las nuevas regiones del centro de administración de Office en alemán](ms-cloud-germany-transition.md)
+- [Asistencia para la migración a Microsoft Cloud Alemania](https://aka.ms/germanymigrateassist)
+- [Experiencia del cliente durante la migración](ms-cloud-germany-transition-experience.md)
+
+Desplazarse por la transición:
+
+- [Impacto y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
+- [Pre-trabajo adicional](ms-cloud-germany-transition-add-pre-work.md)
+- Información adicional para [servicios](ms-cloud-germany-transition-add-general.md), [dispositivos](ms-cloud-germany-transition-add-devices.md), [experiencias](ms-cloud-germany-transition-add-experience.md)y [AD FS](ms-cloud-germany-transition-add-adfs.md).
+
+Aplicaciones en la nube:
+
+- [Información del programa de migración de Dynamics 365](https://aka.ms/d365ceoptin)
+- [Información del programa de migración de Power BI](https://aka.ms/pbioptin)
+- [Introducción a su actualización de Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

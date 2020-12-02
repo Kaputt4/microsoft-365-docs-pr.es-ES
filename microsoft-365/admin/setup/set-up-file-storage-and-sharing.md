@@ -2,8 +2,8 @@
 title: Configurar el almacenamiento y el uso compartido de archivos
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: aa85789b950965a33c07214b5eaebf827ed8cc92
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906398"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525574"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos en Microsoft 365
 
@@ -71,7 +71,7 @@ Estas son algunas recomendaciones sobre lo que se debe almacenar en cada ubicaci
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>Los miembros del equipo pueden almacenar sus propios archivos en OneDrive
 
-Cada persona de su empresa que tenga una licencia de Microsoft 365 asignada (y SharePoint Online seleccionada) obtiene almacenamiento en la nube de OneDrive. Pueden almacenar archivos relacionados con la empresa para obtener acceso desde cualquier dispositivo y solo están disponibles para ese usuario. Por ejemplo, podrían almacenar un proyecto de propuesta, sus notas de reuniones o el texto de una presentación que vayan a realizar.
+Cada persona de su empresa con una licencia de Microsoft 365 asignada (y SharePoint Online seleccionada) obtiene almacenamiento en la nube de OneDrive. Pueden almacenar archivos relacionados con la empresa para obtener acceso desde cualquier dispositivo y solo están disponibles para ese usuario. Por ejemplo, podrían almacenar un proyecto de propuesta, sus notas de reuniones o el texto de una presentación que vayan a realizar.
   
 Los empleados también pueden compartir archivos y carpetas de OneDrive. Si un empleado está ausente o abandona la compañía, otros usuarios pueden tener acceso a los archivos compartidos almacenados en OneDrive (uso compartido de la carpeta de equipo de OneDrive).
   
@@ -117,7 +117,7 @@ Estos son los pasos para agregar archivos:
   
 5. Puede eliminar los archivos del equipo. En el paso siguiente, [sincronice los archivos en línea con su PC o Mac](#sync-online-files-with-your-pc-or-mac), creará una nueva ubicación para estos archivos en el equipo.
 
-    Si tiene un gran número de archivos o archivos de gran tamaño que quiere subir al sitio de grupo, lea estas sugerencias sobre [cómo subir un gran número de archivos o archivos de gran tamaño a una biblioteca](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
+    Si tiene muchos archivos o archivos de gran tamaño para cargarlos en el sitio de grupo, lea estas sugerencias sobre [Cómo cargar archivos grandes o demasiados en una biblioteca](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     Si necesita más espacio de almacenamiento, vea [Cambiar el espacio de almacenamiento de la suscripción](../../commerce/add-storage-space.md).
 
@@ -158,11 +158,11 @@ Estas son algunas sugerencias para obtener el máximo provecho de OneDrive o de 
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>Recomendaciones sobre almacenamiento de archivos y colaboración para otros tipos de pequeñas empresas
 
-- **Proprietorships** : Use OneDrive para almacenar sus propios archivos y compartirlos con clientes en cada caso.
+- **Proprietorships**: Use OneDrive para almacenar sus propios archivos y compartirlos con clientes en cada caso.
 
-- **Copropiedades** : los propietarios usan OneDrive y comparten los archivos hacia delante y hacia atrás.
+- **Copropiedades**: los propietarios usan OneDrive y comparten los archivos hacia delante y hacia atrás.
 
-- **Empresas con clientes externos o asociados que necesitan acceso a los archivos** : cree un nuevo sitio de grupo para almacenar y compartir documentos destinados a un cliente específico. Configure el sitio para permitir el acceso solo a ese cliente. A continuación, no es necesario preocuparse de que un cliente obtenga acceso a la información destinada a otro cliente de forma accidental.
+- **Empresas con clientes externos o asociados que necesitan acceso a los archivos**: cree un nuevo sitio de grupo para almacenar y compartir documentos destinados a un cliente específico. Configure el sitio para permitir el acceso solo a ese cliente. A continuación, no es necesario preocuparse de que un cliente obtenga acceso a la información destinada a otro cliente de forma accidental.
 
 ### <a name="keep-private-files-private"></a>Establecer que los archivos privados sigan siéndolo
 

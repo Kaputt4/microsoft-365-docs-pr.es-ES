@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357195"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527529"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -45,6 +45,7 @@ Antes de empezar con el cumplimiento de la comunicación, debe confirmar la [sus
 - Suscripción a Microsoft 365 G5 + complemento de cumplimiento de Microsoft 365 G5
 - Suscripción a Microsoft 365 G5 + complemento de administración de riesgos de Insider de Microsoft 365 G5
 - Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
+- Suscripción a Office 365 A5 (versión de pago o de prueba)
 - Office 365 Enterprise E3 subscription + el complemento Office 365 Advanced Compliance (ya no está disponible para las nuevas suscripciones, vea note)
 
 Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
@@ -52,7 +53,7 @@ Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben
 >[!IMPORTANT]
 >Office 365 Advanced Compliance ya no se vende como una suscripción independiente. Cuando expiren las suscripciones actuales, los clientes deben pasar a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o más.
 
-Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a la suscripción existente o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Office 365 Enterprise E5.
+Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar el cumplimiento de la comunicación, puede [Agregar Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a la suscripción existente o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Office 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): habilitar permisos para el cumplimiento de la comunicación
 
@@ -125,10 +126,10 @@ Para obtener instrucciones paso a paso para activar la auditoría, vea [activar 
 
 Use el siguiente gráfico para ayudarle a configurar los grupos de su organización para las directivas de cumplimiento de comunicaciones:
 
-| Miembro de la Directiva | Grupos admitidos | Grupos no admitidos |
+| **Miembro de la Directiva** | **Grupos admitidos** | **Grupos no admitidos** |
 |:-----|:-----|:-----|
-|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
-| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
+|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos <br> Grupos de distribución anidados <br> Grupos de seguridad habilitados para correo |
+| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de distribución anidados <br> Grupos de seguridad habilitados para correo |
   
 Cuando se asigna un grupo de distribución en la Directiva, la Directiva supervisa todos los correos electrónicos y chats de cada usuario en el grupo de distribución. Cuando se asigna un grupo de Microsoft 365 en la Directiva, la Directiva supervisa todos los correos electrónicos y los chats de equipo enviados a ese grupo, no los correos electrónicos y chats individuales recibidos por cada miembro del grupo.
 
@@ -217,7 +218,7 @@ También puede optar por habilitar anonymization para los nombres de usuario mos
 
 4. Para habilitar anonymization, seleccione **Mostrar anonimizan versiones de los nombres de usuario**.
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 6. Vaya a la ficha **plantillas de notificación** y, a continuación, seleccione **Crear plantilla de notificación**.
 
@@ -248,7 +249,7 @@ Siga estos pasos para probar la Directiva de cumplimiento de la comunicación:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta se haya resuelto correctamente.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya completado estos pasos para crear su primera Directiva de cumplimiento de comunicaciones, empezará a recibir alertas de los indicadores de actividad tras 24-48 horas. Configure directivas adicionales según sea necesario siguiendo las instrucciones del paso 5 de este artículo.
 

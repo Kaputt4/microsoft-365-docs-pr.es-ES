@@ -1,5 +1,5 @@
 ---
-title: Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos principal en el centro de seguridad & cumplimiento
+title: Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos principal
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo ejecutar un script para agregar buzones de correo & sitios de OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Obtenga información sobre cómo ejecutar un script para agregar buzones de correo & sitios de OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de cumplimiento de Microsoft 365.
+ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357680"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525619"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos principal
 
-El centro de seguridad & cumplimiento proporciona cmdlets de PowerShell que le permiten automatizar tareas que llevan mucho tiempo relacionadas con la creación y la administración de casos de eDiscovery. Actualmente, el uso de la herramienta de casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento para realizar un gran número de ubicaciones de contenido de custodios en espera lleva tiempo y preparación. Por ejemplo, antes de crear una retención, tiene que recopilar la dirección URL de cada sitio de OneDrive para la empresa que quiera poner en retención. A continuación, para cada usuario que quiera poner en retención, tiene que agregar su buzón y su sitio de OneDrive para la empresa a la retención. En futuras versiones del centro de seguridad & cumplimiento, esto le resultará más sencillo. Hasta entonces, puede usar el script de este artículo para automatizar este proceso.
+Centro de seguridad & cumplimiento PowerShell proporciona cmdlets que le permiten automatizar tareas que llevan mucho tiempo relacionadas con la creación y la administración de casos de eDiscovery. Actualmente, al usar el caso del centro de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento para realizar un gran número de ubicaciones de contenido de custodio en retención, se lleva tiempo y preparación. Por ejemplo, antes de crear una retención, tiene que recopilar la dirección URL de cada sitio de OneDrive para la empresa que quiera poner en retención. A continuación, para cada usuario que quiera poner en retención, tiene que agregar su buzón y su sitio de OneDrive para la empresa a la retención. Puede usar el script de este artículo para automatizar este proceso.
   
-El script le pedirá el nombre del dominio de mi sitio de su organización (por ejemplo, **contoso** en la dirección URL https://contoso-my.sharepoint.com) , el nombre de un caso de eDiscovery existente, el nombre de la nueva retención asociada con el caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda para usar si desea crear una suspensión basada en consulta. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio de OneDrive para la empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva suspensión.
+El script le pedirá el nombre del dominio de mi sitio de su organización (por ejemplo, `contoso` en la dirección URL https://contoso-my.sharepoint.com) , el nombre de un caso de eDiscovery existente, el nombre de la nueva retención asociada con el caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda para usar si desea crear una suspensión basada en consulta. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio de OneDrive para la empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva suspensión.
   
 Estos son los pasos para que esto suceda:
   
@@ -51,7 +51,9 @@ Estos son los pasos para que esto suceda:
 
 - La secuencia de comandos agrega la lista de usuarios a una nueva retención asociada a un caso existente. Asegúrese de que el caso con el que desea asociar la retención se ha creado antes de ejecutar el script.
 
-- Cada vez que ejecute el script, se crearán nuevas sesiones de seguridad & cumplimiento de PowerShell y SharePoint Online PowerShell. Por lo tanto, puede usar todas las sesiones de PowerShell disponibles. Para evitar que esto suceda, puede ejecutar los siguientes comandos para desconectar las sesiones activas de PowerShell.
+- El script de este artículo admite la autenticación moderna cuando se conecta al centro de seguridad & cumplimiento del centro de cumplimiento. Puede usar el script tal cual si es Microsoft 365 o una organización de Microsoft 365 GCC. Si es una organización de Office 365 Germany, una organización de Microsoft 365 GCC o una organización DoD de Microsoft 365, tendrá que editar el script para que se ejecute correctamente. En concreto, tiene que editar la línea `Connect-IPPSSession` y usar los parámetros *ConnectionUri* y *AzureADAuthorizationEndpointUri* (y los valores apropiados para el tipo de organización) para conectarse a PowerShell del centro de cumplimiento de & de seguridad. Para obtener más información, vea los ejemplos en [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+
+- Cada vez que ejecute el script, se crearán nuevas sesiones de seguridad & cumplimiento de PowerShell y el shell de administración de SharePoint Online. Por lo tanto, puede usar todas las sesiones de PowerShell disponibles. Para evitar que esto suceda, puede ejecutar los siguientes comandos para desconectar las sesiones activas de PowerShell.
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -115,21 +117,20 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
 
    ```powershell
    #script begin
-   " " 
+   " "
    write-host "***********************************************"
    write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
    write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
    write-host "***********************************************"
-   " " 
-   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-   $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
-   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-   $a = Import-PSSession $s -AllowClobber
-       if (!$s)
-       {
-           Write-Error "Couldn't create PowerShell session."
-           return;
-       }
+   " "
+   # Connect to SCC PowerShell using modern authentication
+   if (!$SccSession)
+   {
+     Import-Module ExchangeOnlineManagement
+     Connect-IPPSSession
+   }
+   # Get user credentials to connect to SPO Management Shell
+   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
    if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -296,7 +297,7 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
 
 4. Escriba la información que el script le pide.
 
-   El script se conecta al centro de seguridad & PowerShell del centro de cumplimiento y, a continuación, crea la nueva retención en caso de exhibición de documentos electrónicos y agrega los buzones y OneDrive para la empresa a los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento para ver la nueva suspensión. 
+   El script se conecta al centro de seguridad & PowerShell del centro de cumplimiento y, a continuación, crea la nueva retención en caso de exhibición de documentos electrónicos y agrega los buzones y OneDrive para la empresa a los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento para ver la nueva suspensión.
 
 Una vez finalizada la ejecución del script, se crean los siguientes archivos de registro y se guardan en la carpeta en la que se encuentra el script.
   

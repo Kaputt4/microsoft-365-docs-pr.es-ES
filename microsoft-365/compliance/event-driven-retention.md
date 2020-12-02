@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: 1572995909f370c5c3a544cb3f85e20c35629f88
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
+ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816909"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477629"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
@@ -143,6 +143,7 @@ Cuando se produzca una instancia específica de ese tipo de evento, como cuando 
 
 ![Crear un evento para desencadenar el inicio de la retención para las etiquetas de retención basadas en eventos](../media/create-event-records-management.png)
 
+Se admiten hasta 1 millón de eventos por espacio empresarial.
 
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Paso 6: seleccionar el mismo tipo de evento usado por la etiqueta en el paso 2
 

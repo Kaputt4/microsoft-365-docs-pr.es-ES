@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519627"
+ms.locfileid: "49527460"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de entorno de implementación de Windows y Office
 
@@ -36,7 +36,7 @@ El laboratorio proporciona un entorno de laboratorio virtual aprovisionado de fo
 
   - ¡NUEVO! Windows 10 Enterprise, versión 20H2
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, versión 2002
+  - Microsoft Endpoint Configuration Manager, versión 2010 *
   - Windows Assessment and Deployment Kit para Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -94,7 +94,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 300 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible. El laboratorio expira febrero de 2020. Se publicará una nueva versión antes de la expiración.
+* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante la actualización en la consola. Use un ancho de banda amplio para descargar este contenido para mejorar la experiencia de descarga y permitir 30-45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 de espacio libre en el disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria y 300 GB de espacio disponible. El laboratorio expira el 7 de febrero de 2021. Se publicará una nueva versión antes de la expiración.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646708"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527518"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
@@ -44,7 +44,7 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
 
 - Configurar características de buzón de correo, como la Directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otras personas fuera de la organización.
 
-- Configure delegados "[Enviar como](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" y "enviar como" de[abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)para el buzón de una persona. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre.
+- Configure delegados "[Enviar como](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" y "[enviar en nombre](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)de" para el buzón de un usuario. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre.
 
 - [Crear un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común.
 
@@ -58,7 +58,7 @@ Si tiene una organización grande, es posible que el administrador de Exchange d
   
  Por ejemplo, el administrador de Exchange podría asignar a un usuario al grupo de roles de administración de detección para que pueda realizar búsquedas en los buzones de datos que cumplan determinados criterios. Para obtener más información, consulte [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) y [Manage role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-role"></a>Obtener información sobre otro rol de administrador
+## <a name="learn-about-other-admin-roles"></a>Obtener información sobre otros roles de administrador
 
 - [Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
 

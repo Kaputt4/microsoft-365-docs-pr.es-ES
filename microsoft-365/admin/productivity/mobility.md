@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la movilidad: la calificación de productividad de personas.'
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804786"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551868"
 ---
 # <a name="mobility--people-experiences"></a>Movilidad: experiencias de personas
 
-La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas auxiliares. La puntuación refleja el rendimiento de su organización&#39;s de personas y categorías de experiencia de tecnología y compara su puntuación con organizaciones como la suya. La categoría trabajo en equipo forma parte de las medidas que caen en la experiencia de personas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md) para obtener más información.
+La puntuación de productividad admite el trayecto a la transformación digital con información sobre cómo utiliza su organización Microsoft 365 y su tecnología. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica, y se puede comparar con los benchmarks de organizaciones de tamaño similar a los suyos. La categoría de movilidad forma parte de las experiencias de personas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md) para obtener más información.
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Por qué su organización&#39;la puntuación de movilidad de s en cuestión
 
@@ -56,19 +56,20 @@ Microsoft 365 permite a las personas trabajar de manera flexible entre aplicacio
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Visualización de tendencias de la visión principal
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="Gráfico que muestra el conocimiento principal para movilidad: personas experimenta la puntuación de productividad.":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="Gráfico que muestra el número de personas que usan más de una plataforma frente a la hora.":::
 
 Este gráfico muestra la línea de tendencia, donde el numerador es el número de personas que han usado las aplicaciones en los últimos 180 días. Cada punto de datos del gráfico de líneas es un agregado de actividad para los últimos 28 días. Cada punto de datos proporciona un recuento de todas las personas que usan una aplicación en al menos dos plataformas en los últimos 28 días para cada fecha en el eje x.
 
 ### <a name="scoring-framework"></a>Marco de resultados
 
-La puntuación de movilidad mide si los usuarios usan aplicaciones de Microsoft 365: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype a través de diferentes plataformas: escritorio, Web y móvil.
+La puntuación de movilidad para la organización mide en un nivel de organización (agregado) tanto si los usuarios usan aplicaciones de Microsoft 365: Outlook, Microsoft Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype en las distintas plataformas: escritorio, Web y móvil.
+Los resultados no se proporcionan en el nivel de usuario individual.
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>Descubra cómo funciona su organización en todas las plataformas y ubicaciones
 
 ### <a name="use-of-outlook-across-platforms"></a>Uso de Outlook en todas las plataformas
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Gráfico que muestra el conocimiento principal para movilidad: personas experimenta la puntuación de productividad.":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Gráfico que muestra el número de personas que usan Outlook en varias plataformas.":::
 
 1. **Encabezado:** Muestra el porcentaje de personas activas en Outlook que usan Outlook en varias plataformas.
 2. **Cuerpo:** Proporciona información sobre el valor de usar Outlook en dispositivos móviles para ayudarle a permanecer conectado desde cualquier lugar del correo electrónico.
@@ -89,7 +90,7 @@ La puntuación de movilidad mide si los usuarios usan aplicaciones de Microsoft 
 
 ### <a name="use-of-teams-across-platforms"></a>Uso de Teams en todas las plataformas
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Gráfico que muestra el conocimiento principal para movilidad: personas experimenta la puntuación de productividad.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Gráfico que muestra el número de personas que usan Teams en más de una o una sola plataforma.":::
 
 1. **Encabezado:** Muestra qué porcentaje de las personas que están activas en Microsoft teams la usan en varias plataformas.
 2. **Cuerpo:** Proporciona información sobre el valor de la utilización de Teams en dispositivos móviles para ayudar a los usuarios a mantenerse al día en los mensajes mientras se trabaja desde cualquier ubicación.
@@ -110,7 +111,7 @@ La puntuación de movilidad mide si los usuarios usan aplicaciones de Microsoft 
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>Uso de aplicaciones de Microsoft 365 en todas las plataformas
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Gráfico que muestra el conocimiento principal para movilidad: personas experimenta la puntuación de productividad.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Gráfico que muestra el número de personas que usan aplicaciones de Microsoft 365 en varias plataformas o en una sola.":::
 
 1. **Encabezado:** Muestra el porcentaje de personas activas en aplicaciones de Microsoft 365 (Word, Excel, PowerPoint y OneNote) en varias plataformas.
 2. **Cuerpo:** Proporciona información sobre el valor de proporcionar a las personas de su organización la flexibilidad de tener acceso a sus archivos desde cualquier lugar.
@@ -123,7 +124,7 @@ La puntuación de movilidad mide si los usuarios usan aplicaciones de Microsoft 
 
 ### <a name="remote-work"></a>Trabajo remoto
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="Gráfico que muestra el conocimiento principal para movilidad: personas experimenta la puntuación de productividad.":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="Gráfico que muestra el número de personas que trabajan de forma remota, en el sitio o en ambas.":::
 
 1. **Encabezado:** Muestra el porcentaje de personas que trabajan solo de la casa o de la ubicación fuera de la red de su empresa&#39;s.
 2. **Cuerpo:** Destaca la importancia de facilitar el trabajo remoto para las personas que no tienen acceso a las oficinas físicas&#39;s de la organización.

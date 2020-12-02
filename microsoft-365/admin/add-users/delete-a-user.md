@@ -2,8 +2,8 @@
 title: Elimine un usuario de su organización
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario. Decida qué hacer con el correo electrónico y el contenido de OneDrive del usuario. Y decida si desea mantener la licencia del producto o dejar de pagar por ella.
-ms.openlocfilehash: bcccaa13614114c9588c43d857336bce44a84147
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 45cf8b9173a3a4260fe664b809f47ab14b57d9fe
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324565"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551381"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -47,7 +47,7 @@ Si es un administrador global, al eliminar un usuario, también puede conceder a
 
 Antes de empezar, piense en lo que desea hacer con el correo electrónico del usuario y en el contenido de OneDrive, y si desea mantener la licencia o dejar de pagar por ella.
   
-|Elemento | Description |
+|Item | Descripción |
 |:-----|:-----|
 |Licencias de producto  <br/> |Puede quitar la licencia del usuario y quitarla de sus suscripciones para dejar de pagar por esa licencia. Si selecciona esta opción, la licencia se quitará automáticamente de sus suscripciones.  <br/><br/> **No puede quitar la licencia si la** compró a través de un partner o un licencia por volumen. Si va a pagar por un plan anual o si se encuentra en medio de un ciclo de facturación, no podrá quitar la licencia de la suscripción hasta que se complete el compromiso.  <br/> |
 |Contenido de OneDrive  <br/> |Si el usuario guardó sus archivos en OneDrive, puede conceder a otro usuario acceso a estos archivos.  <br/><br/> Deberá mover los archivos que quiera conservar dentro del período de retención establecido para los archivos de OneDrive. **De forma predeterminada, el período de retención es de 30 días.** Si no mueve los archivos dentro del período de retención después de eliminar el usuario, el contenido de OneDrive se eliminará permanentemente. Para aumentar el número de días que se conservan los archivos de OneDrive para las cuentas eliminadas, consulte [Set the onedrive Retention for Deleted users](https://docs.microsoft.com/onedrive/set-retention).  <br/><br/> **¡Importante!** Si el usuario eliminado usó un equipo personal para descargar archivos de SharePoint y OneDrive, no hay forma de borrar los archivos almacenados en el equipo. Seguirán teniendo acceso a todos los archivos que se hayan sincronizado desde OneDrive.           |

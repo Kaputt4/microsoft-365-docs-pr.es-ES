@@ -20,12 +20,12 @@ description: Aprenda a verificar su dominio y a crear registros DNS en cualquier
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 6c2359cbf2da24fa7e2cd579d61216d948e0cb83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645376"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519298"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -43,7 +43,7 @@ Si no agrega el dominio, los integrantes de la organización usarán el dominio 
 
 En primer lugar, tiene que demostrar que es el propietario del dominio que quiere agregar a Microsoft 365.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) y seleccione**Mostrar todo** > **Configuración** > **Dominios**.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) y seleccione **Mostrar todo** > **Configuración** > **Dominios**.
 2. En una nueva pestaña o ventana del explorador, inicie sesión en su proveedor de host DNS y, después, busque el lugar donde administra la configuración de DNS (por ejemplo, Configuración del archivo de zona, Administrar dominios, Administrador de dominios, Administrador de DNS).
 3. Vaya a la página del administrador de DNS de su proveedor y agregue a su dominio el registro TXT indicado en el centro de administración.
 
@@ -62,7 +62,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 Si su registrador no permite agregar registros TXT, puede agregar un registro MX para comprobarlo.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) y seleccione**Mostrar todo** > **Configuración** > **Dominios**.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com/) y seleccione **Mostrar todo** > **Configuración** > **Dominios**.
 2. En una nueva pestaña o ventana del explorador, inicie sesión en su proveedor de host DNS y, después, busque el lugar donde administra la configuración de DNS (por ejemplo, Configuración del archivo de zona, Administrar dominios, Administrador de dominios, Administrador de DNS).
 3. Vaya a la página del administrador de DNS de su proveedor y agregue a su dominio el registro MX indicado en el centro de administración.
 
@@ -155,7 +155,7 @@ Algunos proveedores de host imponen restricciones en los valores de los campos d
 Si el proveedor de host no permite configurar este campo en **@**, déjelo en blanco. Use esta estrategia *solo* cuando el proveedor de host tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación.
 
 ##### <a name="service-and-protocol"></a>Servicio y protocolo
-Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificar los valores de**Servicio** y **Protocolo** en el campo de **Nombre** del registro. (Nota: dependiendo de su proveedor de host, el campo de **Nombre** puede llamarse de otra forma, como: **Host**, **Nombre de host** o **Subdominio**). Para agregar estos valores, cree una sola cadena, separando los valores con un punto. 
+Si el proveedor de host no ofrece estos campos para los registros SRV, debe especificar los valores de **Servicio** y **Protocolo** en el campo de **Nombre** del registro. (Nota: dependiendo de su proveedor de host, el campo de **Nombre** puede llamarse de otra forma, como: **Host**, **Nombre de host** o **Subdominio**). Para agregar estos valores, cree una sola cadena, separando los valores con un punto. 
 
 Ejemplo: `_sip._tls`
 

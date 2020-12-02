@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información acerca de la configuración de seguridad de forma predeterminada en Exchange Online Protection (EOP)
-ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1a68c14a2d37f1fc3bfb032c4d3ca34c09a89890
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357868"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527774"
 ---
 # <a name="secure-by-default-in-office-365"></a>Seguro de forma predeterminada en Office 365
 
@@ -59,5 +59,5 @@ Las invalidaciones solo deben usarse para:
 
 - Simulaciones de suplantación de identidad (phishing): los ataques simulados pueden ayudar a identificar los usuarios vulnerables antes de que un ataque real afecte a su organización.
 - Buzones de seguridad/SecOps: buzones dedicados usados por los equipos de seguridad para obtener mensajes no filtrados (buenos y no válidos). Los equipos pueden revisar para ver si contienen contenido malintencionado.
-- Filtros de terceros: algunos proveedores de terceros recomiendan desactivar EOP (SCL =-1), ya que el filtro de terceros administrará el filtrado de correo. Microsoft no recomienda desactivar EOP como EOP es necesario para defender para Office 365.
+- Filtros de terceros: algunos proveedores de terceros recomendarán que se desactive EOP (SCL =-1), ya que el filtro de terceros administrará el filtrado de correo. Microsoft no recomienda desactivar EOP como EOP es necesario para defender para Office 365. En su lugar, la recomendación es activar el [filtrado mejorado para los conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) en su lugar.
 - Falsos positivos: es posible que desee permitir determinados mensajes que Microsoft todavía está analizando mediante los [envíos de administración](admin-submission.md). Como con todas las invalidaciones, se recomienda que sean temporales.

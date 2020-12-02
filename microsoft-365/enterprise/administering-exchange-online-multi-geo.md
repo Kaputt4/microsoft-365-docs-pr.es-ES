@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Obtenga información sobre cómo administrar la configuración multigeográfica de Exchange online en su entorno de Microsoft 365 con PowerShell.
-ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993381"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552012"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 
@@ -37,7 +37,9 @@ En concreto, debe agregar el `?email=<emailaddress>` valor al final del valor _C
 
 Los clientes de Microsoft 365 o Microsoft 365 GCC no suelen tener que usar el parámetro _ConnectionUri_ para conectarse a PowerShell de Exchange Online. Pero, para conectarse a una ubicación geográfica específica, debe usar el parámetro _ConnectionUri_ para poder usarlo `?email=<emailaddress>` en el valor.
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>Conectarse a una ubicación geográfica en Exchange Online PowerShell con multi-factor Authentication (MFA)
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Conectarse a una ubicación geográfica en Exchange Online PowerShell
+
+Las siguientes instrucciones de conexión funcionan para las cuentas que están o no están configuradas para la autenticación multifactor (MFA).
 
 1. En una ventana de Windows PowerShell, cargue el módulo EXO V2 ejecutando el comando siguiente:
 
@@ -47,31 +49,11 @@ Los clientes de Microsoft 365 o Microsoft 365 GCC no suelen tener que usar el pa
 
 2. En el siguiente ejemplo, admin@contoso.onmicrosoft.com es la cuenta de administrador y la ubicación geográfica de destino es donde reside el buzón olga@contoso.onmicrosoft.com.
 
-  ```powershell
-  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-  ```
-
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>Conectarse a una ubicación geográfica en Exchange Online PowerShell sin usar MFA
-
-1. En una ventana de Windows PowerShell, cargue el módulo EXO V2 ejecutando el comando siguiente:
-
    ```powershell
-   Import-Module ExchangeOnlineManagement
+   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-2. Ejecute el siguiente comando:
-
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-   En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell** que aparece, escriba el usuario de su cuenta profesional o educativa y la contraseña, y luego haga clic en **Aceptar**.
-
-3. En el siguiente ejemplo, la ubicación geográfica de destino es donde reside el buzón de correo olga@contoso.onmicrosoft.com.
-
-   ```powershell
-   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
+3. Escriba la contraseña de admin@contoso.onmicrosoft.com en el mensaje que se muestra. Si la cuenta está configurada para MFA, también debe especificar el código de seguridad.
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Ver las ubicaciones geográficas disponibles configuradas en su organización de Exchange Online
 
@@ -93,11 +75,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 El cmdlet **Get-Mailbox** en el PowerShell de Exchange Online muestra las siguientes propiedades multigeográficas en buzones:
 
-- **Database** : Las tres primeras letras del nombre de la base de datos corresponden al código geográfico, que indica dónde se encuentra el buzón. Para los buzones de archivo en línea, podría usarse la propiedad **ArchiveDatabase**.
+- **Database**: Las tres primeras letras del nombre de la base de datos corresponden al código geográfico, que indica dónde se encuentra el buzón. Para los buzones de archivo en línea, podría usarse la propiedad **ArchiveDatabase**.
 
-- **MailboxRegion** : Especifica el código de ubicación geográfica definido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
+- **MailboxRegion**: Especifica el código de ubicación geográfica definido por el administrador (sincronizado desde **PreferredDataLocation** en Azure AD).
 
-- **MailboxRegionLastUpdateTime** : Indica cuándo se actualizó MailboxRegion por última vez (de forma automática o manual).
+- **MailboxRegionLastUpdateTime**: Indica cuándo se actualizó MailboxRegion por última vez (de forma automática o manual).
 
 Para ver estas propiedades de un buzón, use la siguiente sintaxis:
 
@@ -186,7 +168,7 @@ No puede mover buzones inactivos que se conservan con fines de cumplimiento (por
 
 7. Vuelva a poner el buzón en inactivo quitando la cuenta de usuario asociada con el buzón. Para obtener instrucciones, consulte [eliminar un usuario de la organización](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). Este paso también libera la licencia de Exchange Online (plan 2) para otros usos.
 
-**Nota** : al mover un buzón inactivo a una ubicación geográfica distinta, puede afectar a los resultados de la búsqueda de contenido o a la capacidad de buscar en el buzón de correo desde la primera ubicación geográfica. Para obtener más información, consulte [búsqueda y exportación de contenido en entornos multigeográfico](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
+**Nota**: al mover un buzón inactivo a una ubicación geográfica distinta, puede afectar a los resultados de la búsqueda de contenido o a la capacidad de buscar en el buzón de correo desde la primera ubicación geográfica. Para obtener más información, consulte [búsqueda y exportación de contenido en entornos multigeográfico](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Crear nuevos buzones basados en la nube en una ubicación geográfica específica
 
@@ -208,7 +190,7 @@ Este ejemplo crea una cuenta de usuario para Elizabeth Brunner con los valores s
 - Nombre: Elizabeth
 - Apellido: Brunner
 - Nombre para mostrar: Elizabeth Brunner
-- Contraseña: Se genera de forma aleatoria y se muestra en los resultados del comando (debido a que no se usa el parámetro *contraseña* )
+- Contraseña: Se genera de forma aleatoria y se muestra en los resultados del comando (debido a que no se usa el parámetro *contraseña*)
 - Licencia: `contoso:ENTERPRISEPREMIUM` (E5)
 - Ubicación: Australia (AUS)
 
@@ -219,7 +201,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 Para obtener más información sobre cómo crear nuevas cuentas de usuario y cómo encontrar valores de LicenseAssignment en el PowerShell de Azure AD, consulte [Crear cuentas de usuario con PowerShell](create-user-accounts-with-microsoft-365-powershell.md) y [Ver licencias y servicios con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 > [!NOTE]
-> Si usa el PowerShell de Exchange Online para habilitar un buzón y necesita que este se cree directamente en la ubicación geográfica especificada en **PreferredDataLocation** , debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente con el servicio basado en la nube. Si usa el cmdlet **Enable-RemoteMailbox** en el entorno local de Exchange PowerShell, el buzón se creará en la ubicación geográfica central.
+> Si usa el PowerShell de Exchange Online para habilitar un buzón y necesita que este se cree directamente en la ubicación geográfica especificada en **PreferredDataLocation**, debe usar un cmdlet de Exchange Online como **Enable-Mailbox** o **New-Mailbox** directamente con el servicio basado en la nube. Si usa el cmdlet **Enable-RemoteMailbox** en el entorno local de Exchange PowerShell, el buzón se creará en la ubicación geográfica central.
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Incorporar buzones existentes en el entorno local a una ubicación geográfica específica
 

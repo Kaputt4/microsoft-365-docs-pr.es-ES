@@ -1,5 +1,5 @@
 ---
-title: Solucionar los problemas detectados por la herramienta de evaluación de la preparación
+title: Solucionar problemas encontrados por la herramienta de evaluación de preparación
 description: Acciones detalladas que se deben realizar para cada problema que encuentra la herramienta
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021090"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527738"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar problemas encontrados por la herramienta de evaluación de preparación
 
 Para cada comprobación, la herramienta notificará uno de los cuatro resultados posibles:
 
@@ -141,7 +141,7 @@ Los dispositivos con Windows 10 en la organización de Azure AD deben inscribirs
 
 **Consejo**
 
-Asegúrese de que el ámbito de usuario de MDM esté establecido en **alguno** o en **todos** , no en **ninguno**. Si elige **algunos** , vuelva atrás después de la inscripción y seleccione el **lugar de trabajo moderno: todos los** grupos de Azure ad para los **grupos**.
+Asegúrese de que el ámbito de usuario de MDM esté establecido en **alguno** o en **todos**, no en **ninguno**. Si elige **algunos**, vuelva atrás después de la inscripción y seleccione el **lugar de trabajo moderno: todos los** grupos de Azure ad para los **grupos**.
 
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store para Empresas
@@ -152,14 +152,14 @@ Usamos Microsoft Store for Business para que pueda descargar el portal de la emp
 
 Microsoft Store para empresas ya no está habilitado o no está sincronizado con Intune. Para obtener más información, consulte [How to Manage Volume adquiried apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) e [install Intune Company Portal in on Devices](../get-started/company-portal.md).
 
-### <a name="multi-factor-authentication"></a>Autenticación multifactor
+### <a name="multifactor-authentication"></a>Autenticación multifactor
 
 La autenticación multifactor no se debe aplicar por accidente a las cuentas de servicio de escritorio administradas por Microsoft.
 
 
 **No preparado**
 
-Tiene algunas directivas de multi-factor Authentication (MFA) establecidas como "necesarias" para las directivas de acceso condicional asignadas a todos los usuarios. Cambie la Directiva para usar una asignación que tenga como destino un grupo específico de Azure AD que no incluya ningún dispositivo de escritorio administrado por Microsoft. Para obtener más información, consulte [directivas de acceso condicional](#conditional-access-policies) y [acceso condicional: solicitar MFA para todos los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+Tiene algunas directivas de autenticación multifactor (MFA) configuradas como "necesarias" para las directivas de acceso condicional asignadas a todos los usuarios. Cambie la Directiva para usar una asignación que tenga como destino un grupo específico de Azure AD que no incluya ningún dispositivo de escritorio administrado por Microsoft. Para obtener más información, consulte [directivas de acceso condicional](#conditional-access-policies) y [acceso condicional: solicitar MFA para todos los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
 
 **Consejo**
 

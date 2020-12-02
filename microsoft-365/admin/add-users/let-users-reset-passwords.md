@@ -2,8 +2,8 @@
 title: Permitir que los usuarios puedan restablecer sus propias contraseñas
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo restablecer las contraseñas con la herramienta de restablecimiento de contraseña de autoservicio.
-ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646684"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551925"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -65,13 +65,13 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **configuración** de \> ** &amp; privacidad de seguridad** .
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **configuración** de \> **&amp; privacidad de seguridad** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página configuración **de configuración de** \> **Settings** \> ** &amp; privacidad de seguridad** .
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página configuración **de configuración de** \> **Settings** \> **&amp; privacidad de seguridad** .
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 4. En **autoservicio de restablecimiento de contraseñas**, seleccione **ir a Azure portal para activar el restablecimiento de contraseña de autoservicio**.
 
-5. En el panel de navegación izquierdo, seleccione **usuarios**y, a continuación, en la sección **usuarios | Página todos los usuarios** , seleccione **restablecimiento de contraseña**.
+5. En el panel de navegación izquierdo, seleccione **usuarios** y, a continuación, en la sección **usuarios | Página todos los usuarios** , seleccione **restablecimiento de contraseña**.
   
 6. En la página de **propiedades** , seleccione **todos** para habilitarlo para todos los usuarios de su empresa y, a continuación, seleccione **Guardar**.
   

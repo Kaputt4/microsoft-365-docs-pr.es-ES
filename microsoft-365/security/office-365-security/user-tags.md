@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft defender para Office 365 plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Microsoft defender para Office 365 para identificar rápidamente los usuarios etiquetados.
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123624"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552024"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft defender para Office 365
 
@@ -66,9 +66,9 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
    Cuando termine, haga clic en **Siguiente**.
 
-4. En la página **asignar buzones** , siga uno de estos pasos:
+4. En la página **asignar usuarios** , realice uno de los pasos siguientes:
 
-   - Haga clic en **Agregar buzones**. En la volar hacia fuera que aparece, realice uno de los siguientes pasos para agregar grupos o usuarios individuales:
+   - Haga clic en **Agregar usuarios**. En la volar hacia fuera que aparece, realice uno de los siguientes pasos para agregar grupos o usuarios individuales:
      - Haga clic en el cuadro y desplácese por la lista para seleccionar un usuario o grupo.
      - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario o grupo.
      - Para agregar más valores, haga clic en un área vacía del cuadro.
