@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4b1e0d30d37ec9bc7a333216854e8eb602e07cc1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376520"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519732"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Obtenga información acerca de los compromisos contractuales para la ubicación 
 
 Para las ubicaciones de datos de Azure Active Directory, visite [Mapa de datos de AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
-Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de Europa o Norteamérica y guardar Datos de los clientes en reposo en cualquier parte de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el Cliente tiene una suscripción a Microsoft Office 365 para el ámbito educativo, independientemente de la sección "Ubicación de datos de clientes en reposo para servicios en línea principales" del OST, Microsoft puede aprovisionar el espacio empresarial de Office 365, transferir Datos de los clientes a cualquier parte de la Unión Europea y guardar Datos de los clientes en reposo en cualquier parte de la Unión Europea.
+Si la dirección de facturación del cliente está fuera de Europa y el cliente tiene una suscripción a Office 365 Education, a pesar de la sección "Ubicación de los datos del cliente en reposo para los servicios principales en línea" de OST, Microsoft puede proporcionar el espacio empresarial de Office 365 del cliente, transferir y almacenar los datos del cliente en reposo en cualquier lugar de Europa o Norteamérica.  Si la dirección de facturación del cliente está en Europa y el cliente tiene una suscripción a Office 365 Education, a pesar de la sección "Ubicación de los datos del cliente en reposo para los servicios principales en línea" de OST, Microsoft puede proporcionar el espacio empresarial de Office 365 del cliente, transferir y almacenar los datos del cliente en reposo en cualquier lugar de la Unión Europea.
 
 
 
@@ -50,35 +50,35 @@ Si la dirección de facturación del cliente está fuera de Europa y el cliente 
 
 ### <a name="how-does-microsoft-define-data"></a>¿Cómo define Microsoft los datos?
 
-Revise las [definiciones de los distintos tipos de datos](https://go.microsoft.com/fwlink/p/?linkid=864390) en el centro de confianza de Microsoft. En los [Términos de servicios en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403), Microsoft realiza compromisos contractuales respecto a los datos de los clientes y sus datos. Nos referimos a los datos de clientes centrales como los datos de los clientes que se han comprometido a almacenarse solo en su región de acuerdo con los [términos de servicios en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403).
+Revise nuestras [definiciones para diferentes tipos de datos](https://go.microsoft.com/fwlink/p/?linkid=864390) en el Centro de Confianza de Microsoft. En los [Términos de los servicio en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403), Microsoft se compromete legalmente en lo que se refiere a los datos del cliente, es decir sus datos. Nos referimos a los datos principales del cliente, como los datos del cliente que se deben almacenar en reposo sólo dentro de su región de acuerdo con los [Términos de los servicios en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403).
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>¿Dónde están las direcciones exactas de los centros de datos?
 
-Microsoft no revela las direcciones exactas de los centros de datos. Establecimos esta directiva para proteger nuestros centros de datos.  Sin embargo, enumeramos las ubicaciones de las ciudades. Consulte [Ubicaciones de los centros de datos](o365-data-locations.md#data-center-locations) para obtener más información.
+Microsoft no revela las direcciones exactas de sus centros de datos. De esta manera, ayudamos a proteger las instalaciones de nuestros centros de datos. Sin embargo, sí indicamos las ubicaciones de las ciudades. Para saber más, vea [Ubicaciones de centros de datos](o365-data-locations.md#data-center-locations).
 
-### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>¿Afecta la ubicación de los datos de los clientes a la experiencia de los usuarios finales?
+### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>¿La ubicación de los datos del cliente afecta a la experiencia de los usuarios finales?
 
-El rendimiento de Microsoft 365 no solo es proporcional a la distancia de un usuario a las ubicaciones de los centros de datos. Las inversiones continuas de Microsoft en su red en la nube global, infraestructura de su nube global, y la arquitectura de los servicios de Microsoft 365 proporcionan a los usuarios una experiencia consistente y única, donde sea que estén almacenados los datos en reposo de los clientes. Si los usuarios están experimentando problemas de rendimiento, debe analizarlos en profundidad. Microsoft ha publicado instrucciones dirigidas hacia los clientes de Microsoft 365 para planear y optimizar el rendimiento de los usuarios finales en el [sitio web de soporte técnico de Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
+El rendimiento de Microsoft 365 no es simplemente proporcional a la distancia de un usuario de las ubicaciones de los centros de datos. Las continuas inversiones de Microsoft en su red de nube global, su infraestructura de nube global y la arquitectura de servicios de Microsoft 365 ayudan a proporcionar a los usuarios una experiencia singular y consistente, independientemente de dónde se almacenen los datos del cliente en reposo. Si los usuarios están experimentando problemas de rendimiento, debe solucionarlos a fondo. Microsoft ha publicado una guía para que los clientes de Microsoft 365 planifiquen y optimicen el rendimiento del usuario final en el [sitio web de soporte de Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>¿Cómo me ayuda Microsoft a cumplir los reglamentos nacionales, regionales y específicos del sector?
 
-Con el fin de ayudarle a cumplir los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos de personas, Microsoft 365 le ofrece el conjunto más completo de ofertas de cumplimiento que cualquier proveedor de productividad global en la nube. Consulte [nuestras ofertas de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=864391) y más detalles en la sección [Cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) en el centro de confianza de Microsoft. Asimismo, algunos planes de Microsoft 365 ofrecen soluciones de cumplimiento adicionales para ayudarle a administrar sus datos, cumplir los requisitos legales y regulatorios, y supervisar las acciones realizadas en sus datos.
+Para ayudarle a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de los datos de los individuos, Microsoft 365 ofrece el conjunto más completo de ofertas de cumplimiento de cualquier proveedor de productividad en la nube global. Revise [nuestras ofertas de cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=864391) y más detalles en la sección [Cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) del Centro de confianza de Microsoft. Además, ciertos planes de Microsoft 365 ofrecen más soluciones de cumplimiento para ayudarle a gestionar sus datos, cumplir con los requisitos legales y reglamentarios y supervisar las medidas que se han tomado para sus datos.
 
-### <a name="who-can-access-your-data-and-according-to-what-rules"></a>¿Quién puede obtener acceso a los datos y en función de qué reglas?
+### <a name="who-can-access-your-data-and-according-to-what-rules"></a>¿Quién puede tener acceso a los datos y en función de qué reglas?
 
- Microsoft implementa medidas fuertes para ayudar a proteger los datos de los clientes frente a un acceso inadecuado o el uso por parte de personas no autorizadas. Esto incluye la restricción del acceso del personal de Microsoft y de los subcontratistas, y la definición cuidadosa de los requisitos para responder a las solicitudes de administración pública para datos de clientes. Sin embargo, puede obtener acceso a sus propios datos de cliente en cualquier momento y por cualquier motivo. Puede obtener más información en el [centro de confianza de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
+ Microsoft implementa rigurosas medidas para ayudar a proteger los datos del cliente del acceso o uso inapropiado por parte de personas no autorizadas. Esto incluye la restricción del acceso por parte del personal de Microsoft y los subcontratistas, y una definición precisa de los requisitos para responder a las solicitudes del gobierno de datos del cliente. Sin embargo, puede obtener acceso a sus propios datos de cliente en cualquier momento y por cualquier motivo. Encontrará más detalles en el [Centro de confianza de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
 
 ### <a name="does-microsoft-access-your-data"></a>¿Microsoft accede a sus datos?
 
-Microsoft automatiza la mayoría de las operaciones de Microsoft 365 y, a la par, limita de forma intencionada su propio acceso a los datos de los clientes. Esto nos ayuda a administrar Microsoft 365 a gran escala y a abordar los riesgos de las amenazas internas a los datos de los clientes. De manera predeterminada, los ingenieros de Microsoft no cuentan con privilegios administrativos permanentes ni acceso permanente a los datos de los clientes en Microsoft 365. Un ingeniero de Microsoft puede tener un acceso limitado y registrado a los datos de los clientes durante un período de tiempo limitado, pero solo cuando sea necesario para las operaciones de servicio normal y solo cuando lo apruebe un miembro de la administración ejecutiva de Microsoft (y, en el caso de los clientes que tengan una licencia para la característica de Caja de seguridad del cliente, el cliente).
+Microsoft automatiza la mayoría de las operaciones de Microsoft 365 y, a la vez, limita intencionadamente su propio acceso a los datos del cliente. Esto nos ayuda a gestionar Microsoft 365 a escala y a hacer frente a los riesgos de amenazas internas a los datos del cliente. De forma predeterminada, los ingenieros de Microsoft no tienen privilegios administrativos permanentes ni acceso permanente a los datos del cliente en Microsoft 365. Un ingeniero de Microsoft puede tener acceso limitado y registrado a los datos del cliente durante un tiempo limitado, pero sólo cuando sea necesario para operaciones de servicio normales y sólo cuando lo apruebe un miembro de la administración ejecutiva de Microsoft (y el cliente, en el caso de clientes con licencia para la función de Caja de seguridad del cliente).
 
 ### <a name="how-does-microsoft-secure-your-data"></a>¿Cómo protege Microsoft los datos?
 
-Microsoft tiene directivas, controles y sistemas sólidos integrados en Microsoft 365 para ayudarle a proteger su información. Para obtener más información, consulte la [sección Seguridad de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) en el centro de confianza de Microsoft.
+Microsoft tiene directivas, controles y sistemas rigurosos incorporados en Microsoft 365 para ayudar a mantener su información segura. Revise la [Sección de seguridad de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) del Centro de confianza de Microsoft para obtener más información.
 
 ### <a name="does-microsoft-365-encrypt-your-data"></a>¿Microsoft 365 cifra los datos?
 
-Microsoft 365 usa tecnologías del lado del servidor que cifran los datos en reposo y en tránsito de los clientes. En el caso de los datos en reposo de los clientes, Microsoft 365 usa el cifrado de disco y el cifrado por archivo. En el caso de los datos en tránsito de los clientes, Microsoft 365 usa varias tecnologías de cifrado para las comunicaciones entre centros de datos, y entre clientes y servidores, como la Seguridad de la capa de transporte (TLS) y el protocolo de seguridad de Internet (IPsec). Microsoft 365 también incluye características de cifrado administradas por el cliente.
+Microsoft 365 usa tecnologías de servicio que encriptan los datos del cliente en reposo y en tránsito. Para los datos del cliente en reposo, Microsoft 365 usa un cifrado a nivel de volumen y a nivel de archivo. Para los datos del cliente en tránsito, Microsoft 365 usa varias tecnologías de cifrado para las comunicaciones entre los centros de datos y entre los clientes y los servidores, como la Seguridad de la capa de transporte (TLS) y la Seguridad del protocolo de Internet (IPsec). Microsoft 365 también incluye características de cifrado administradas por el cliente.
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>¿Dónde puedo encontrar información de residencia de datos para Microsoft Azure?
 
@@ -90,30 +90,30 @@ Consulte la página [productos disponibles por región](https://go.microsoft.com
 
 ### <a name="what-services-support-multi-geo"></a>¿Qué servicios son compatibles con Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive y SharePoint Online. Microsoft está examinando Multi-Geo para su funcionamiento en otros servicios de Microsoft 365.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) está disponible para Exchange Online, OneDrive y SharePoint Online. Microsoft está investigando usar Multi-Geo con otros servicios de Microsoft 365.
 
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>¿Cuáles son las excepciones para las ubicaciones de datos de Intune?
 
-Microsoft no almacenará los datos en reposo de los clientes de Intune que se encuentren fuera de la geoárea indicada, excepto si:
+Microsoft no almacenará los datos del cliente de Intune en reposo fuera de la zona geográfica indicada. Excepto si:
 
 - Es necesario que Microsoft proporcione asistencia al cliente, solucione problemas del servicio o cumpla los requisitos legales.
 - El cliente configura una cuenta para permitir dicho almacenamiento de datos de clientes, incluido el uso de los siguientes:
 
-  - Características diseñadas para funcionar de forma global, como Content Delivery Network (CDN), que proporciona un servicio de almacenamiento en caché global y almacena datos de clientes en ubicaciones periféricas en todo el mundo.
+  - Características diseñadas para funcionar de forma global, como la Red de entrega de contenido (CDN), que proporciona un servicio de almacenamiento en caché global y almacena datos de clientes en ubicaciones periféricas en todo el mundo.
 
-  - Azure Active Directory (Azure AD), que puede almacenar datos de directorio de forma global. Esto no es válido en las implementaciones de Azure AD en Estados Unidos (donde los datos de Azure AD se almacenan únicamente en Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o Estados Unidos).
+  - Azure Active Directory (Azure AD), que puede almacenar datos de directorios a nivel mundial. Esto no aplica a las implementaciones de Azure AD en Estados Unidos (donde los datos de Azure AD se almacenan únicamente en los Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o en Estados Unidos).
    
-  - Versión preliminar, beta u otros servicios preliminares, que, por lo general, almacenan datos de clientes en Estados Unidos, pero pueden almacenarlos de forma global.
+  - Versión preliminar, beta u otros servicios preliminares, que, por lo general, almacenan datos del cliente en Estados Unidos, pero pueden almacenarlos de forma global.
 
 En cualquier caso, Microsoft no controla ni limita la geoárea desde la cual los clientes o usuarios finales pueden tener acceso a los datos de los clientes. 
 
 ## <a name="data-center-locations"></a>Ubicaciones de los centros de datos
 
-En la tabla siguiente se define la ubicación de los datos para varios servicios. Para determinar las ubicaciones del servicio, consulte estas tablas.
+En la tabla a continuación se define la ubicación de los datos para diversos servicios. Consulte estas tablas para determinar las ubicaciones de servicios.
 
 ### <a name="data-center-geographies"></a>Ubicaciones geográficas de los centros de datos
 
-Las siguientes ubicaciones geográficas globales pueden almacenar datos en reposo. Las ubicaciones en las que se almacenan los datos de los clientes pueden cambiar. 
+Las siguientes áreas geográficas globales pueden almacenar datos en reposo. Las ubicaciones donde se pueden almacenar los datos del cliente pueden cambiar. 
 
 | Ubicaciones geográficas globales | Ubicaciones en las que se almacenan los datos de los clientes |
 | --- | --- |
@@ -141,9 +141,9 @@ Para los centros de datos específicos de su país o región, a continuación se
 | Suiza | Ginebra, Zúrich |
 | Emiratos Árabes Unidos | Dubái, Abu Dabi |
 | Reino Unido | Durham, Londres, Cardiff |
-| Estados Unidos |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
+| Estados Unidos |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San José |
 
-Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterminada en función de la geoárea de la dirección de facturación asociada a la primera suscripción de ese espacio empresarial. Para confirmar dónde se almacenan los datos de los clientes para los servicios de Office 365 existentes, vea la información de la ubicación de los datos específica del espacio empresarial en el Centro de administración de Office 365, en Configuración | Perfil de la organización | Tarjeta de ubicación de datos. También puede, en la siguiente lista, expandir el país o región donde está ubicada su empresa para averiguar dónde se almacenarían los datos de los clientes en caso de empezar a usar un servicio de Microsoft 365 en la actualidad.
+La ubicación predeterminada de los nuevos espacios empresariales de Microsoft 365 se basa en el país de la dirección de facturación asociada a la primera suscripción de ese espacio empresarial. Para confirmar dónde se almacenan los datos del cliente para los servicios de Office 365 existentes, consulte la información de ubicación de datos específica del espacio empresarial en el Centro de administración de Office 365, en Configuración, Configuración de organización, Perfil de organización, Tarjeta de ubicación de datos. Como alternativa, amplíe el país en el que se encuentra su empresa, en la lista que aparece a continuación, para averiguar dónde se almacenarían los datos del cliente si empezara a usar un servicio de Microsoft 365 hoy mismo.
 
 ## <a name="afghanistan"></a>Afganistán
 <details><summary>Haga clic para expandir</summary><p>
