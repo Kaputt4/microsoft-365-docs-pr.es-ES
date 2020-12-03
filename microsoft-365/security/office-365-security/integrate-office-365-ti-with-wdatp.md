@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Use Microsoft defender para Office 365 junto con Microsoft defender para el punto de conexión para obtener información más detallada sobre las amenazas contra sus dispositivos y contenido de correo electrónico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357784"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561224"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Usar Microsoft defender para Office 365 junto con Microsoft defender para el punto de conexión
 
@@ -43,11 +43,11 @@ En este ejemplo, puede ver que los destinatarios del mensaje de correo electrón
 > [!TIP]
 > **[Obtenga más información sobre el centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (también conocido como Microsoft defender for Endpoint portal).
   
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 - Su organización debe tener Microsoft defender para Office 365 (o Office 365 E5) y Microsoft defender para extremo.
     
-- Debe ser administrador global o tener un rol de administrador de seguridad (como administrador de seguridad) asignado en el [centro de seguridad y &amp; cumplimiento](https://protection.office.com). (Consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md))
+- Debe ser administrador global o tener un rol de administrador de seguridad (como administrador de seguridad) asignado en el [centro de seguridad & cumplimiento](https://protection.office.com). (Consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md))
     
 - Debe tener acceso a [exploradores (o detecciones en tiempo real)](threat-explorer.md) en el centro de seguridad & cumplimiento y el centro de seguridad de Microsoft defender.
     
@@ -73,6 +73,6 @@ La integración de Microsoft defender para Office 365 con Microsoft defender par
 
 [Capacidades de investigación y respuesta de amenazas en Office 365](office-365-ti.md)
   
-[Microsoft Defender para Office 365](office-365-atp.md)
+[Microsoft defender para Office 365](office-365-atp.md)
   
-[Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft defender para extremo](https://docs.microsoft.com/windows/security/threat-protection)

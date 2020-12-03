@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Busque y use informes de Microsoft defender para Office 365 en el centro de seguridad y &amp; cumplimiento.
+description: Busque y use informes de Microsoft defender para Office 365 en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087723"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561732"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>Ver informes de Microsoft defender para Office 365
 
@@ -35,7 +35,7 @@ Microsoft defender para Office 365 organizaciones (por ejemplo, suscripciones a 
 
 ![Panel informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Informe de tipos de archivo de Microsoft Defender para Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Informe de tipos de archivo de defender para Office 365
 
 El informe **de la defender para Office 365 del informe de tipos de archivo** muestra el tipo de archivos detectados como malintencionados por [datos adjuntos seguros](atp-safe-attachments.md).
 
@@ -92,7 +92,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: archivo**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
@@ -105,12 +105,12 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: mensaje**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Asunto**
+  - **Subject**
 
   Si hace clic en **filtros**, puede modificar los resultados con los siguientes filtros:
 
@@ -119,7 +119,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 Para volver a la vista informes, haga clic en **Ver informe**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Informe de eliminación de mensajes de Microsoft Defender para Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Informe de disposición de mensajes de defender para Office 365
 
 El informe de **disposición de mensajes de ATP** muestra las acciones que se tomaron para los mensajes de correo electrónico que se detectaron con contenido malintencionado.
 
@@ -174,12 +174,12 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: mensaje**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Asunto**
+  - **Subject**
 
   Si hace clic en **filtros**, puede modificar los resultados con los siguientes filtros:
 
@@ -188,7 +188,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 - **Ver datos por: archivo**:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del destinatario**
   - **Dirección del remitente**
   - **Id. de mensaje**
@@ -245,7 +245,7 @@ Si hace clic en la pestaña **90 percentiles** o la ficha **percentiles de 99th*
 
 La siguiente información se muestra en la vista de tabla de detalles:
 
-- **Fecha**
+- **Date**
 - **Percentiles**
 - **Número de mensajes**
 - **Latencia general**
@@ -313,7 +313,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 - **Haga clic en hora**
 - **Usuario**
 - **URL**
-- **Action**
+- **Acción**
 - **App**
 
 Si hace clic en **filtros** en la vista de tabla de detalles, puede filtrar por los mismos criterios que en la vista de informe y también por **dominios** o **destinatarios** separados por comas.
@@ -338,7 +338,7 @@ Además de los informes descritos en este tema, hay varios otros informes dispon
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver los informes de defender para Office 365?
 
-Para poder ver y usar los informes descritos en este tema, **debe tener asignada una función adecuada para el centro de seguridad &amp; y cumplimiento y el centro de administración de Exchange**.
+Para poder ver y usar los informes descritos en este tema, **debe tener asignada una función adecuada para el centro de seguridad & cumplimiento y el centro de administración de Exchange**.
 
 - Para el centro de seguridad & cumplimiento, debe tener asignada una de las siguientes funciones:
 

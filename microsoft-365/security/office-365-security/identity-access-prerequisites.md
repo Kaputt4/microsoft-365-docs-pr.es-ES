@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357808"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558555"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
@@ -45,7 +45,7 @@ En la siguiente tabla se detallan las características de los requisitos previos
 |[Configurar PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe estar habilitado para detectar las credenciales perdidas y actuar sobre ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si su organización usa la autenticación federada.|Solo de nube|
 |[Habilitar el inicio de sesión único sin problemas](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) para que los usuarios puedan iniciar sesión de forma automática en cuando están en sus dispositivos de la organización conectados a la red de la organización.|Solo en la nube y federado|
 |[Configurar redes con nombre](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection recopila y analiza todos los datos de sesión disponibles para generar una puntuación de riesgo. Le recomendamos que especifique los intervalos de direcciones IP públicas de su organización para la red en la configuración de redes con nombre de Azure AD. El tráfico que proviene de estos intervalos recibe una puntuación de riesgo reducida y el tráfico externo al entorno de la organización recibe una puntuación de riesgo mayor.||
-|[Registrar todos los usuarios para el restablecimiento de contraseña de autoservicio (SSPR) y la autenticación multifactor (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Le recomendamos que registre a los usuarios para la autenticación multifactor de Azure con antelación. Azure AD Identity Protection hace uso de la autenticación multifactor de Azure para realizar comprobaciones de seguridad adicionales. Además, para la mejor experiencia de inicio de sesión, recomendamos a los usuarios que instalen la [aplicación Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Microsoft Company Portal en sus dispositivos. Se pueden instalar desde la tienda de aplicaciones para cada plataforma.||
+|[Registrar todos los usuarios para el restablecimiento de contraseña de autoservicio (SSPR) y la autenticación multifactor (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Le recomendamos que registre los usuarios para la autenticación multifactor de Azure AD con antelación. Azure AD Identity Protection hace uso de la autenticación multifactor de Azure AD para realizar comprobaciones de seguridad adicionales. Además, para la mejor experiencia de inicio de sesión, recomendamos a los usuarios que instalen la [aplicación Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Microsoft Company Portal en sus dispositivos. Se pueden instalar desde la tienda de aplicaciones para cada plataforma.||
 |[Habilitar el registro automático de dispositivos de equipos con Windows Unidos a un dominio](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). El acceso condicional garantizará que los dispositivos que se conectan a las aplicaciones estén compatibles o Unidos a un dominio. Para permitir esto en equipos Windows, el dispositivo debe estar registrado con Azure AD.  En este artículo se explica cómo configurar el registro automático de dispositivos.|Solo de nube|
 |**Preparar el equipo de soporte técnico**. Tenga preparado un plan para los usuarios que no puedan completar MFA. Esto podría ser agregarlos a un grupo de exclusión de directivas o registrar información nueva de MFA para ellos. Antes de realizar cualquiera de estos cambios relativos a la seguridad, debe asegurarse de que el usuario real esté realizando la solicitud. Un paso eficaz es exigir a los administradores de los usuarios que ayuden con la aprobación.||
 |[Configurar la escritura diferida de contraseñas en AD local](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). La escritura diferida de contraseña permite que Azure AD requiera que los usuarios cambien su contraseña local cuando se detecte una cuenta de riesgo elevado. Puede habilitar esta característica con Azure AD Connect de una de estas dos maneras: habilitar la **escritura diferida de contraseñas** en la pantalla características opcionales del Asistente para la instalación de Azure ad Connect, o bien habilitarla a través de Windows PowerShell.|Solo de nube|
@@ -93,11 +93,11 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|[Cliente de sincronización de OneDrive](https://docs.microsoft.com/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 8.1|Compatible|Compatible|N/D|N/D|Compatible|
-|Windows 10|Compatible|Compatible|N/D|N/D|Compatible|
-|Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
-|macOS|Compatible|Compatible|N/D|N/D|No compatible|
+|Windows 8.1|Compatible.|Compatible.|N/D|N/D|Compatible.|
+|Windows 10|Compatible.|Compatible.|N/D|N/D|Compatible.|
+|Android|Compatible.|Compatible.|Compatible.|Compatible.|No aplicable|
+|iOS|Compatible.|Compatible.|Compatible.|Compatible.|No aplicable|
+|macOS|Compatible.|Compatible.|N/D|N/D|No compatible|
 |Linux|No admitido|No admitido|No admitido|No admitido|No admitido|
 |
 

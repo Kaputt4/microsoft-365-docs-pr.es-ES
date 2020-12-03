@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo controlar el acceso en grupos de Microsoft 365, Teams y SharePoint.
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377574"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558227"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Controlar el acceso a los grupos de Microsoft 365, Teams y SharePoint
 
@@ -28,14 +28,14 @@ Hay muchos controles que le permiten controlar la forma en que los usuarios obti
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de acceso disponibles en Microsoft 365. En las siguientes secciones se proporciona información adicional.
 
-|Categoría|Description|Referencia|
+|Categoría|Descripción|Referencia|
 |:-------|:----------|:--------|
 |Pertenencia|||
 ||Detección de equipos privados|[Administrar la detección de equipos privados en Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|
 ||Pertenencia a grupos dinámicos basada en reglas|[Crear o actualizar un grupo dinámico en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Controlar quién puede compartir archivos, carpetas y sitios.|[Configurar y administrar solicitudes de acceso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Acceso condicional|||
-||Autenticación multifactor|[Autenticación multifactor de Azure](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Autenticación multifactor|[Autenticación multifactor de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Controlar el acceso a los dispositivos en función de la confidencialidad del sitio, equipo o grupo.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Limitar el acceso al sitio para dispositivos no administrados.|[Controlar el acceso a SharePoint desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Controlar el acceso al sitio según la ubicación|[Controlar el acceso a los datos de SharePoint y OneDrive en función de la ubicación de red](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ Los sitios de SharePoint proporcionan la capacidad de agregar propietarios, miem
 
 Con Microsoft 365, puede requerir multi-factor Authentication para los usuarios de dentro y fuera de la organización. Hay muchas opciones para las circunstancias en las que se pide a los usuarios un segundo factor de autenticación. Se recomienda encarecidamente implementar la autenticación multifactor para su organización:
 
-- [Autenticación multifactor de Azure](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Autenticación multifactor de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 Si tiene información confidencial en algunos de los grupos y equipos, puede aplicar directivas de administración de dispositivos en función de la etiqueta de confidencialidad de un grupo o un equipo. Puede bloquear el acceso por completo desde dispositivos no administrados o permitir el acceso limitado web solo:
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357439"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558204"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -92,8 +92,6 @@ Para obtener instrucciones paso a paso para activar la auditoría, vea [activar 
 ## <a name="step-3-configure-prerequisites-for-templates"></a>Paso 3: configurar los requisitos previos para las plantillas
 
 La mayoría de las plantillas de administración de riesgos de Insider tienen requisitos previos que deben configurarse para que los indicadores de directiva generen alertas de actividad relevantes. Configure los requisitos previos adecuados en función de las directivas que tenga previsto configurar para su organización.
-
-Si está configurando una directiva con el *idioma ofensivo en la plantilla de directiva de correo electrónico* , puede omitir este paso y pasar directamente al **paso 4**.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configuración del conector de 365 de RRHH de Microsoft
 
@@ -208,7 +206,7 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
 11. Seleccione **siguiente** para continuar.
 12. En la página **revisión** , revise la configuración que ha elegido para la Directiva. Seleccione **Editar** para cambiar cualquiera de los valores de la Directiva o seleccione **Enviar** para crear y activar la Directiva.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya completado estos pasos para crear su primera Directiva de administración de riesgos de Insider, empezará a recibir alertas de los indicadores de actividad después de aproximadamente 24 horas. Configure directivas adicionales según sea necesario mediante las instrucciones del paso 4 de este artículo o los pasos en [Create a Insider Risk Policy](insider-risk-management-policies.md#create-a-new-policy).
 

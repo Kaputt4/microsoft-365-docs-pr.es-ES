@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Preguntas más frecuentes de Microsoft bookings.
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445456"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561560"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft bookings
 
@@ -29,7 +29,7 @@ Las reservas son un servicio en línea, por lo que no es necesario descargar nad
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>¿Quién tiene acceso a Microsoft bookings?
 
-Bookings está disponible y activo de forma predeterminada para los clientes de Microsoft 365 Business Premium, a3, A5, E3 y E5 en todo el mundo. Las reservas también están disponibles en Office 365 operado por 21Vianet.
+Bookings está disponible y activo de forma predeterminada para los clientes de Microsoft 365 Business Premium, Microsoft 365 Business Standard, a3, A5, E3 y E5 en todo el mundo. Las reservas también están disponibles en Office 365 operado por 21Vianet.
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>¿Mis clientes verán mi calendario personal o de negocio?
 
@@ -37,7 +37,7 @@ Los clientes solo verán el calendario de reservas que publique en línea para l
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>¿Cómo acceden los usuarios finales a la aplicación de reservas?
 
-Los usuarios con licencia para Microsoft 365 Business Premium, a3, A5, E3, E5 o se agregan como miembros del personal en los roles de administrador o visor pueden obtener acceso a reservas en el selector de aplicaciones dentro de la experiencia web de Microsoft 365. También hay una aplicación complementaria disponible para iOS y Android.
+Los usuarios con licencia para Microsoft 365 Business Premium, Microsoft 365 Business Standard, a3, A5, E3, E5 o se agregan como miembros del personal en los roles de administrador o visor pueden obtener acceso a reservas en el selector de aplicaciones dentro de la experiencia web de Microsoft 365. También hay una aplicación complementaria disponible para iOS y Android.
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>¿Puedo usar reservas en mi propio sitio web?
 
@@ -49,9 +49,9 @@ Sí. Se proporciona un vínculo a la página de reserva en la pestaña de la **P
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>¿Puede nuestro Departamento de ti controlar si los usuarios finales pueden acceder a reservas?
 
-Las reservas están disponibles de forma predeterminada en los inquilinos de empresa Premium, M365 A3/A5 y E3/E5, pero los administradores pueden desactivarla en el centro de administración de Microsoft 365, si así lo deciden. Para ello, [siga estas instrucciones](turn-bookings-on-or-off.md).
+Las reservas están disponibles en los inquilinos Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 y E3/E5 de forma predeterminada, pero los administradores pueden desactivarla en el centro de administración de Microsoft 365, si así lo deciden. Para ello, [siga estas instrucciones](turn-bookings-on-or-off.md).
 
-Si un cliente desea deshabilitar el acceso a las reservas para determinadas licencias elegibles en su inquilino, puede que el usuario tenga una directiva de grupo para restringir las licencias o implementar una directiva de buzón de OWA que restrinja los usuarios que pueden crear calendarios de reservas nuevos.
+Si un cliente desea deshabilitar el acceso a las reservas para determinadas licencias elegibles en su inquilino, puede usar una directiva de grupo para restringir las licencias o implementar una directiva de buzón de correo de OWA que restringirá quién puede crear calendarios de reservas nuevos.
 
 Si usa una directiva de buzón de OWA para deshabilitar el acceso a las reservas, todos los usuarios tendrán una licencia de reservas, pero cuando intenten acceder a la aplicación, solo tendrán éxito si forman parte de la Directiva o si se han agregado a un calendario de reservas existente como personal. Detalles [aquí](turn-bookings-on-or-off.md) en la sección "permitir solo a los usuarios seleccionados para crear calendarios de reservas".
 
@@ -114,7 +114,7 @@ Las reservas son una solución ideal tanto para los clientes empresariales como 
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>¿Cómo obtengo Microsoft bookings?
 
-Las reservas están disponibles en Microsoft 365 para los clientes con licencias de Business Premium, a3, A5, E3 y E5, junto con una aplicación complementaria de iOS y Android. Las reservas no están disponibles como una aplicación independiente. Outlook Web App u Outlook en la web deben estar habilitados para usar reservas, ya que almacena datos en Outlook.
+Las reservas están disponibles en Microsoft 365 para los clientes con licencias de Microsoft 365 Business Premium, Microsoft 365 Business Standard, a3, A5, E3 y E5, junto con una aplicación complementaria de iOS y Android. Las reservas no están disponibles como una aplicación independiente. Outlook Web App u Outlook en la web deben estar habilitados para usar reservas, ya que almacena datos en Outlook.
 
 Una licencia de reservas proporciona funcionalidad completa al producto, incluida la creación y la administración de calendarios. También permite a los usuarios ver y editar los calendarios existentes, cuando dichos usuarios se agregan como personal en un rol de administrador o visor.
 
@@ -172,9 +172,9 @@ Una configuración llamada plazo **máximo** determina la más lejana (medida en
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>¿Cómo funcionan las reservas en zonas horarias?
 
-Todas las horas se encuentran en la zona horaria comercial (la zona horaria local) de forma predeterminada. Esto significa que cualquier configuración que configure para un calendario de reservas, como horas laborables, aparecerá en esta zona horaria. La página de autoservicio tiene la capacidad de mostrar todas las horas de las citas en la zona horaria del usuario final, lo que se puede desactivar si se desea.Si **siempre mostrar las franjas temporales en la zona horaria comercial** permanece desactivada en la pestaña de la página de reservas, las personas que visiten la página verán las franjas horarias en sus propias zonas horarias locales.
+Todas las horas se encuentran en la zona horaria comercial (la zona horaria local) de forma predeterminada. Esto significa que cualquier configuración que configure para un calendario de reservas, como horas laborables, aparecerá en esta zona horaria. La página de autoservicio tiene la capacidad de mostrar todas las horas de las citas en la zona horaria del usuario final, lo que se puede desactivar si se desea. Si **siempre mostrar las franjas temporales en la zona horaria comercial** permanece desactivada en la pestaña de la página de reservas, las personas que visiten la página verán las franjas horarias en sus propias zonas horarias locales.
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="Programación en reservas":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="Configuración de zona horaria y región de reservas":::
 
 No hay ninguna disposición para establecer la zona horaria para el personal en las reservas. La zona horaria del personal y, por lo tanto, el horario comercial, estará en la zona horaria comercial.
 
@@ -202,7 +202,7 @@ Sí, tenemos una funcionalidad de reservas de grupo que permite que varias perso
 
 Sí. Hay una casilla de verificación en la pestaña de la página de reserva en la aplicación web: **requerir una cuenta de Microsoft 365 o de Office 365 de mi organización para reservar un libro**. Al activar esta casilla de verificación, se restringe el acceso a páginas de autoservicio solo a los que se encuentran en el espacio empresarial. El calendario de reservas que se encuentra dentro de la aplicación web para la creación y la administración solo pueden obtener acceso los usuarios agregados como personal a la página con roles de administrador o visor.
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Programación en reservas":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Control de acceso a la página de reserva en reservas":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>¿Con qué frecuencia se actualiza la Página principal?
 
@@ -250,7 +250,7 @@ Cada calendario de reservas se mantiene de forma independiente. No hay ninguna v
 
 El acceso a la aplicación Web de reservas implica la autenticación mediante la autenticación normal de Azure Active Directory (AAD). La página de reserva de autoservicio se puede poner a disposición de todos los usuarios con el vínculo de la Página Web. Sin embargo, cuando la opción **requerir una cuenta de Microsoft 365 u Office 365 de mi organización** al libro está seleccionada, la página está restringida para usarse solo dentro del inquilino de Microsoft 365 (mediante la autenticación de AAD).
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Programación en reservas":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Control de acceso a la página de reserva en reservas":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>¿Los datos de cliente abandonan el sistema de producción por algún motivo?
 
@@ -303,18 +303,20 @@ Para que los pedidos se sincronicen correctamente con los calendarios de los mie
 
 1. Inicie sesión en Microsoft 365 y, a continuación, seleccione **Outlook** desde el iniciador de aplicaciones.
 
-   ![Imagen de Outlook en el iniciador de aplicaciones](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![Imagen de Outlook en el iniciador de aplicaciones](../media/bookings-applauncher-outlook.png)
 
 1. En la parte superior de la página, seleccione **compartir** \> **calendario**.
 
    ![Imagen del menú de uso compartido de calendarios](../media/bookings-share-calendar.png)
 
-1. En la sección **personas dentro de la organización** , active la casilla desplegable situada junto a **mi organización**y, a continuación, seleccione **puede ver cuando estoy ocupado**.
+1. En la sección **personas dentro de la organización** , active la casilla desplegable situada junto a **mi organización** y, a continuación, seleccione **puede ver cuando estoy ocupado**.
 
-> [!NOTE]
-> Esta opción comparte la información de disponibilidad con reservas y con otros usuarios de la organización. No incluye ninguna otra información, como el tipo de cita que ha programado, la persona con la que ha programado la cita o la ubicación.
+   > [!NOTE]
+   > Esta opción comparte la información de disponibilidad con reservas y con otros usuarios de la organización. No incluye ninguna otra información, como el tipo de cita que ha programado, la persona con la que ha programado la cita o la ubicación.
 
-   ![Imagen de la pantalla de uso compartido de calendarios con el puede ver cuando estoy ocupado habilitado](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Imagen de la pantalla de uso compartido de calendarios con el puede ver cuando estoy ocupado habilitado](../media/bookings-view-busy.png)
 
 1. Seleccione **Listo**.
 
@@ -335,7 +337,7 @@ Si un empleado abandonó la compañía y la ha quitado de su organización de Mi
 
 Para comprobar si tiene más de un calendario, en el menú de la izquierda, seleccione la flecha desplegable junto al nombre de la compañía y, a continuación, seleccione **abrir**. Si solo tiene un calendario, solo verá la opción para agregar un calendario de reserva. En este ejemplo se muestra que hay un segundo calendario denominado "Contoso CO".
 
-   ![Imagen de elegir una pantalla de calendario con un segundo calendario mostrado](../media/bookings-choose-calendar.png)
+![Imagen de elegir una pantalla de calendario con un segundo calendario mostrado](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>Hay un error de sincronización que no se puede identificar
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en el plan 365 de Microsoft defender para Office.
-ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845797"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561260"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -33,12 +33,13 @@ ms.locfileid: "48845797"
 
 
 La investigación de amenazas y las capacidades de respuesta de [Microsoft defender para Office 365](office-365-atp.md) ayudan a los analistas de seguridad y los administradores a proteger los usuarios de Microsoft 365 para su organización a los usuarios de la empresa por:
+
 - Facilitar la identificación, el seguimiento y la comprensión de cyberattacks
 - Ayuda para solucionar rápidamente amenazas en Exchange Online, SharePoint Online, OneDrive para la empresa y Microsoft Teams
 - Proporciona información y conocimientos para ayudar a las operaciones de seguridad a evitar cyberattacks contra su organización
 - Uso de [investigación y respuesta automatizadas en Office 365](automated-investigation-response-office.md) para amenazas críticas basadas en correo electrónico
-    
-Las capacidades de investigación y respuesta de amenazas proporcionan información sobre amenazas y acciones de respuesta relacionadas que están disponibles en el centro de seguridad y &amp; cumplimiento. Esta información puede ayudar al equipo de seguridad de su organización a proteger a los usuarios de ataques basados en archivos o en correo electrónico. Las capacidades ayudan a supervisar las señales y recopilar datos de varios orígenes, como la actividad de los usuarios, la autenticación, el correo electrónico, los equipos comprometidos y los incidentes de seguridad. Los responsables de la toma de decisiones empresariales y el equipo de operaciones de seguridad pueden usar esta información para comprender y responder a las amenazas contra su organización y proteger su propiedad intelectual.
+
+Las capacidades de investigación y respuesta de amenazas proporcionan información sobre amenazas y acciones de respuesta relacionadas que están disponibles en el centro de seguridad & cumplimiento. Esta información puede ayudar al equipo de seguridad de su organización a proteger a los usuarios de ataques basados en archivos o en correo electrónico. Las capacidades ayudan a supervisar las señales y recopilar datos de varios orígenes, como la actividad de los usuarios, la autenticación, el correo electrónico, los equipos comprometidos y los incidentes de seguridad. Los responsables de la toma de decisiones empresariales y el equipo de operaciones de seguridad pueden usar esta información para comprender y responder a las amenazas contra su organización y proteger su propiedad intelectual.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizarse con las herramientas de investigación y respuesta de amenazas
 
@@ -53,19 +54,19 @@ La exposición de amenazas y las capacidades de respuesta del centro de segurida
 ### <a name="threat-dashboard"></a>Panel de amenazas
 
 Use el panel de amenazas (también se conoce como el [Panel de seguridad](security-dashboard.md)) para ver rápidamente las amenazas que se han tratado y como forma visual de informar a los responsables de las decisiones empresariales sobre cómo los servicios de Microsoft 365 protegen su empresa.
-  
+
 ![Panel de amenazas](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-  
-Para ver y usar este panel, en el centro de seguridad &amp; y cumplimiento, vaya a **Threat Management** \> **Dashboard**.
-  
+
+Para ver y usar este panel, en el centro de seguridad & cumplimiento, vaya a panel de **Administración de amenazas** \> **Dashboard**.
+
 ### <a name="threat-explorer"></a>Explorador de amenazas
 
 Use el [Explorador de amenazas (y las detecciones en tiempo real)](threat-explorer.md) para analizar las amenazas, ver el volumen de ataques a lo largo del tiempo y analizar los datos por familias de amenazas, la infraestructura del atacante, etc. El explorador de amenazas (también conocido como explorador) es el punto de partida del flujo de trabajo de la investigación del analista de seguridad.
 
 ![Explorador de amenazas](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
-  
-Para ver y usar este informe, en el centro de seguridad &amp; y cumplimiento, vaya a **Threat Management** \> **Explorer**.
-  
+
+Para ver y usar este informe, en el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Explorer**.
+
 ### <a name="incidents"></a>Incidentes
 
 Use la lista incidentes (también denominada investigaciones) para ver una lista de los incidentes de seguridad de vuelo. Los incidentes se usan para realizar un seguimiento de las amenazas como los mensajes de correo electrónico sospechosos y para llevar a cabo una mayor investigación y corrección.
@@ -101,7 +102,7 @@ Microsoft defender para Office 365 usa el control de acceso basado en roles. Los
 > [!TIP]
 > Aunque algunos roles, como el administrador de seguridad, se pueden asignar en el centro de seguridad & cumplimiento, considere la posibilidad de usar el centro de administración de Microsoft 365 o bien Azure Active Directory en su lugar. Para obtener información acerca de los roles, grupos de roles y permisos, vea los siguientes recursos:
 >
-> - [Permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md)
+> - [Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)
 >
 > - [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 

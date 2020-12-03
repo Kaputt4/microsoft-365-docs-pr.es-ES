@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356684"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561212"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -36,7 +36,7 @@ Esta es una guía de inicio rápido que rompe la configuración de defender para
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -54,9 +54,9 @@ Las características de protección contra amenazas se incluyen en *todas las* s
 |Protección contra phishing|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra correo no deseado|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purgado automático de cero horas (para correo electrónico)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[Defender para Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Protección contra suplantación de identidad avanzada|[Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Protección contra suplantación de identidad avanzada|[Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
 
@@ -71,7 +71,7 @@ Para configurar defender para las directivas de Office 365, debe tener asignado 
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-Para obtener más información, consulte [permisos en el &amp; centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Antes de empezar, active el registro de auditoría para los informes y la investigación
 

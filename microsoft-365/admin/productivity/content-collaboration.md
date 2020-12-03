@@ -19,38 +19,38 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la colaboración del contenido-los usuarios experimentan una puntuación de productividad.
-ms.openlocfilehash: 99f5a897dc372a45be31a8c01379c6fe4c980de9
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 2637debe41cd32093c378a4665af6dc5185b0e5e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123457"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561664"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
-La puntuación de productividad ayuda a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas que las admiten. La puntuación refleja el rendimiento de su organización&#39;s para personas y experiencias tecnológicas y compara su puntuación con organizaciones como la suya. La colaboración de contenido es una de las medidas que caen en la experiencia de personas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md).
+La puntuación de productividad proporciona información sobre el recorrido de la transformación digital de la organización mediante el uso de Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones similares a la suya. La categoría de colaboración de contenido forma parte de las medidas de las personas que experimenta. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Por qué la organización&#39;s puntuación de colaboración de contenido es importante
 
-Un pilar fundamental para la productividad organizativa es cómo los usuarios colaboran en los archivos. Con el contenido de Microsoft 365, los usuarios obtienen acceso, crean, modifican y colaboran en el contenido con otras personas desde cualquier lugar. La investigación muestra que cuando los usuarios colaboran con archivos en línea, cada persona ahorra un promedio de 100 minutos por semana. [Vea la evidencia](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Un aspecto clave de la transformación digital es cómo los usuarios colaboran en los archivos. Con el contenido de Microsoft 365, los usuarios obtienen acceso, crean, modifican y colaboran en el contenido con otras personas desde cualquier lugar. La investigación muestra que cuando los usuarios colaboran con archivos en línea, cada persona ahorra un promedio de 100 minutos por semana. [Vea la evidencia](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Cómo se calcula la puntuación de colaboración de contenido
 
-Proporcionamos un conocimiento principal que contiene las métricas clave para la colaboración de contenido. A continuación, se usa un marco de resultados que se detalla a continuación para estas métricas para calcular su puntuación.
+Proporcionamos un conocimiento principal que contiene las métricas clave para la colaboración de contenido en su organización. A continuación, se usa un marco de resultados que se detalla a continuación para estas métricas para calcular la puntuación de su organización.
 
 ### <a name="primary-insight"></a>Información principal
 
-Microsoft OneDrive para la empresa y SharePoint permiten que los usuarios creen, lean y descubran fácilmente su contenido individual y compartido en Microsoft 365 desde dispositivos y aplicaciones. También permiten que los usuarios compartan y colaboren en el contenido de forma segura. El conocimiento principal contiene información de todos los usuarios que pueden usar OneDrive para la empresa y SharePoint. Además, desglosa los detalles sobre el número de personas que leen, crean y colaboran en el contenido almacenado en OneDrive para la empresa y SharePoint.
+Microsoft OneDrive para la empresa y SharePoint ayudan a los usuarios a crear, leer y descubrir fácilmente su contenido individual y compartido en Microsoft 365 desde distintos dispositivos y aplicaciones. También permiten que los usuarios compartan y colaboren en el contenido de forma segura. El conocimiento principal contiene información de todos los usuarios que pueden usar OneDrive para la empresa y SharePoint. Además, desglosa los detalles sobre el número de personas que leen, crean y colaboran en el contenido almacenado en OneDrive para la empresa y SharePoint.
 
 :::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Información principal de la puntuación de colaboración en comunicación.":::
 
 
 Entre los tipos considerados para esta información se incluyen archivos de Word, Excel, PowerPoint, OneNote y PDF.
 
-1. **Encabezado:** Muestra el porcentaje de personas que tienen acceso a OneDrive o SharePoint que están colaborando en el contenido.
+1. **Encabezado:** Muestra el porcentaje de personas de su organización que tienen acceso a OneDrive o SharePoint que están colaborando en el contenido.
 2. **Cuerpo:** Proporciona más información sobre cómo el comportamiento de la lectura y la creación de archivos en línea están vinculados a la colaboración en archivos.
 3. **Visualización (estado actual):**
-    - Barras horizontales en las que las partes de color azul representan el porcentaje de personas habilitadas para la colaboración de archivos a través de OneDrive o SharePoint que son **lectores, creadores** o **colaboradores** en archivos en línea en los últimos 28 días.
+    - Barras horizontales en las que las partes de color azul representan el porcentaje de personas habilitadas para la colaboración de archivos a través de OneDrive o SharePoint que han sido **lectores, creadores** o **colaboradores** en archivos en línea en los últimos 28 días.
 
         Están definidos de la siguiente manera:</br>
         **Lectores:** Usuarios que obtienen acceso o descargan archivos en OneDrive o SharePoint.</br>
@@ -60,7 +60,7 @@ Entre los tipos considerados para esta información se incluyen archivos de Word
         > [!NOTE]
         > Los archivos considerados en la visualización son archivos de Word, Excel, PowerPoint, OneNote o PDF que están en línea y se guardan en OneDrive o SharePoint. 
 
-    - Resalte el (numerador/denominador) de la fracción utilizada para calcular el porcentaje expresado en cada una de las barras horizontales.
+    - El resaltado (numerador/denominador) de la fracción se utiliza para calcular el porcentaje expresado en cada una de las barras horizontales.
     
       - **Los**</br>
           - Numerador: número de personas que acceden o descargan archivos en línea en OneDrive o SharePoint en los últimos 28 días</br>
@@ -79,19 +79,22 @@ Entre los tipos considerados para esta información se incluyen archivos de Word
 
 #### <a name="trend-visualization-of-primary-insight"></a>Visualización de tendencias de la información principal
 
-El gráfico de visualizaciones de tendencias muestra la línea de tendencia de las métricas principales de Insight para lectores, creadores y colaboradores en los últimos 180 días. Cada punto de datos del gráfico es un agregado de actividad para los últimos 28 días. Cada punto de datos del creador proporciona un recuento de todas las personas que se han etiquetado como creadores en los últimos 28 días para cada fecha en el eje x.
+El gráfico visualizaciones de tendencias muestra la línea de tendencia de las métricas principales de Insight para lectores, creadores y colaboradores en los últimos 180 días. Cada punto de datos del gráfico es un agregado de actividad para los últimos 28 días. Cada punto de datos del creador proporciona un recuento de todas las personas que se han etiquetado como creadores en los últimos 28 días para cada fecha en el eje x.
 
 :::image type="content" source="../../media/trendvisualization.jpg" alt-text="Gráfico con tendencias para la información principal de colaboración.":::
 
 ### <a name="scoring-framework"></a>Marco de resultados
 
-La puntuación de colaboración de contenido mide si las personas están leyendo, creando o colaborando de forma coherente archivos de Office en línea, como Word, Excel, PowerPoint, OneNote o PDF, en OneDrive o SharePoint.
+La puntuación de colaboración de contenido para la organización mide en un nivel de agregado (organización), independientemente de que las personas lean, creen o colaboren de forma coherente en archivos de Office en línea, como Word, Excel, PowerPoint, OneNote o PDF, o en OneDrive o SharePoint.
+
+Los resultados no se proporcionan en el nivel de usuario individual.
+
 
 ## <a name="explore-how-your-organization-collaborates"></a>Explorar el modo en que su organización se colaboración
 
-También le proporcionamos información que le ayude a mejorar la visibilidad de la forma en que las personas de su organización colaboran en el contenido. Estas métricas adicionales no contribuyen directamente a la puntuación de productividad, sino que le ayudan a crear un plan de acción para optimizar la forma en que los usuarios trabajan.
+También le proporcionamos información que le ayudará a obtener una visibilidad de la forma en que su organización colabore en el contenido. Estas métricas adicionales no contribuyen directamente a la puntuación de productividad, sino que le ayudan a crear un plan de acción como parte de la transformación digital para ayudarle a optimizar la forma en que los usuarios trabajan.
 
-### <a name="creating-files-to-onedrive-or-sharepoint"></a>Crear archivos en OneDrive o SharePoint
+### <a name="creating-files-in-onedrive-or-sharepoint"></a>Crear archivos en OneDrive o SharePoint
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Gráfico que muestra el número de personas que crean archivos en OneDrive o SharePoint":::
 
@@ -115,14 +118,14 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 2. **Cuerpo:** Proporciona información acerca del valor de los vínculos para compartir a archivos en línea desde una perspectiva de colaboración y seguridad.
 3. **Visualización:** El desglose en la visualización está pensado para representar en qué medida los usuarios que adquieren contenido en los correos electrónicos usan distintos modos (archivos que no se encuentran en OneDrive o SharePoint; vínculos a archivos en línea; y vínculos incrustados en el correo electrónico):
       - **Adjuntar archivos:** La parte azul (de color) de la barra y la fracción (numerador/denominador) de la barra representa el porcentaje de usuarios que usan datos adjuntos en los correos electrónicos.
-        - Numerador: el número de personas que adjuntan archivo a correo electrónico que no se guardaron en OneDrive o SharePoint en los últimos 28 días
-        - Denominador: número de personas que usan datos adjuntos en cualquier formulario en correos electrónicos en los últimos 28 días.
+        - Numerador: el número de personas que adjuntan archivos a correos electrónicos que no se guardaron en OneDrive o SharePoint en los últimos 28 días.
+        - Denominador:  denominador: el número de personas que han tenido acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
       - **Vínculos a archivos en línea:** La parte azul (de color) de la barra y la fracción (numerador/denominador) de la barra representan el porcentaje de usuarios que usan datos adjuntos y adjuntando vínculos a los archivos de los correos electrónicos.
-        - Numerador: el número de personas que se adjuntan a los correos electrónicos vínculos a archivos en línea (guardados en OneDrive o SharePoint) en los últimos 28 días.
-        - Denominador: el número de personas que usan datos adjuntos en cualquier formulario en correos electrónicos en los últimos 28 días.
+        - Numerador: el número de personas que adjuntan vínculos a archivos en línea (guardados en OneDrive o SharePoint) en correos electrónicos en los últimos 28 días.
+        - Denominador:  denominador: el número de personas que tienen acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
       - **Insertar vínculos en el correo electrónico:** La parte azul (de color) de la barra y la fracción de la barra representan el porcentaje de personas que incrustan vínculos en el cuerpo de los correos electrónicos.
-        - Numerador: el número de personas que incrustan vínculos en mensajes de correo electrónico de archivos en línea (guardados en OneDrive o SharePoint) con en los últimos 28 días
-        - Denominador: número de personas que usan datos adjuntos en cualquier formulario en correos electrónicos en los últimos 28 días.
+        - Numerador: el número de personas que incrustan vínculos en el cuerpo de los mensajes de correo electrónico en los archivos en línea (guardados en OneDrive o SharePoint) en los últimos 28 días.
+        - Denominador:  denominador: el número de personas que tienen acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
 4. **Vínculo a recursos:** Seleccione este vínculo para ver el contenido de la ayuda.
 
 ### <a name="sharing-of-online-files"></a>Uso compartido de archivos en línea
@@ -151,7 +154,7 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
         - **Numerador:** El número de personas que no colaboran en ningún archivo de los últimos 28 días
         - **Denominador:** El número total de personas que tienen acceso a OneDrive o SharePoint para al menos 1 de los últimos 28 días.
       - **Colaboración en archivos de 1-3:**
-        - **Numerador:** El número de personas que colaboran en 1-3 archivos en los últimos 28 días
+        - **Numerador:** El número de personas que colaboran en 1-3 archivos en los últimos 28 días.
         - **Denominador:** El número total de personas que han tenido acceso a OneDrive o SharePoint para al menos 1 de los últimos 28 días.
       - **Colaboración en archivos de 4-10:**
         - **Numerador:** El número de personas que colaboran en 4-10 archivos en los últimos 28 días
@@ -168,40 +171,12 @@ También le proporcionamos información que le ayude a mejorar la visibilidad de
 
 1. **Encabezado:** Resalta el porcentaje de dispositivos que se han probado en todas las pruebas que tienen una conexión de red deficiente con OneDrive y SharePoint. 
 2. **Cuerpo:** Proporciona información sobre por qué es importante el rendimiento de conexión de red para la colaboración. 
-3. **Visualización:** muestra un porcentaje de dispositivos con diferentes niveles de rendimiento de conectividad de red con respecto a OneDrive y SharePoint:
-      - **80-100 (mejor)**: la parte oscura de color verde (de color) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
-      - **60-80**: la parte verde (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
-      - **40-60**: la parte naranja (de color) de la barra representa el porcentaje de dispositivos con puntuación de rendimiento de red entre 40-60. 
-      - **20-40**: la parte roja (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20-40. 
+3. **Visualización:** muestra un porcentaje de dispositivos con diferentes niveles de rendimiento de conectividad de red relacionados con OneDrive y SharePoint:
+      - **81-100 (mejor)**: la parte oscura de color verde (de color) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
+      - **61-80**: la parte verde (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
+      - **41-60**: la parte naranja (de color) de la barra representa el porcentaje de dispositivos con puntuación de rendimiento de red entre 40-60. 
+      - **21-40**: la parte roja (de color) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20-40. 
       - **0-20**: la parte oscura de color rojo (de color) de la barra representa el porcentaje de dispositivos con peor puntuación de rendimiento de red entre 0-20. 
-
-### <a name="people-in-your-organization"></a>Personas de su organización
-
-Esta sección le ayudará a tomar medidas sobre las métricas con las que desea centrarse proporcionando detalles de nivel de usuario de las actividades relacionadas con todas las perspectivas que se muestran.
-
-Las siguientes columnas se presentan en la tabla en el nivel de usuario:
-
-- **Username**  es la dirección de correo electrónico del usuario.
-- **Nombre para mostrar**  es el nombre completo del usuario.
-- **Fecha de la última actividad**  hace referencia a la última vez que el usuario realizó una actividad relacionada con cualquiera de las perspectivas dentro de la colaboración de contenido en los últimos 28 días.
-- **Departamento:** El usuario&#39;Departamento, tal y como se define en Azure Active Directory (AAD).
-- **Compañía:** El usuario&#39;s compañía, como se define en AAD.
-- **País:** El usuario&#39;país, tal como se define en AAD.
-- **Estado:** El estado del usuario&#39;s, como se define en AAD.
-- **City:** La ciudad del usuario&#39;s, tal como se define en AAD.
-- **OneDrive:** Valor booleano que indica si la persona tenía acceso a la OneDrive para al menos 1 de los últimos 28 días.
-- **SharePoint:** Valor booleano que indica si la persona tenía acceso toSharePoint para al menos 1 de los últimos 28 días.
-- **Archivos de Office a los que ha tenido acceso:** Valor booleano que indica si la persona ha tenido acceso a los archivos a través de Microsoft Word, Excel, PowerPoint o OneNote en los últimos 28 días.
-- **Archivos creados en OneDrive:** Valor booleano que indica si la persona creó, modificó, cargó, sincronizó, protegid, copió o movió archivos en línea (en Microsoft Word, Excel, PowerPoint o OneNote) en OneDrive en los últimos 28 días.
-- **Archivos creados en SharePoint:** Valor booleano que indica si la persona creó, modificó, cargó, sincronizó, protegid, copió o movió archivos en línea (en Microsoft Word, Excel, PowerPoint o OneNote) en SharePoint en los últimos 28 días.
-- **Días como lector:** El número de días que la persona ha tenido acceso o ha descargado archivos en línea (en Microsoft Word, Excel, PowerPoint, OneNote o PDF) en OneDrive o SharePoint en los últimos 28 días.
-- **Días como creador:** El número de días que la persona creó, modificó, cargó, sincronizó, protegió, copió o movió archivos en línea (en Microsoft Word, Excel, PowerPoint, OneNote o PDF) en OneDrive o SharePoint en los últimos 28 días.
-- **Archivos cocolaborados en:** El número de archivos en línea en OneDrive o SharePoint en los que la persona colaboró en los últimos 28 días.
-- **Archivos compartidos internamente:** El número de archivos en línea en OneDrive o SharePoint la persona que se compartió con otras personas dentro de la organización en los últimos 28 días.
-- **Archivos compartidos de forma externa:** El número de archivos en línea en OneDrive o SharePoint la persona que se compartió con otras personas externas a la organización en los últimos 28 días.
-- **Archivos adjuntos de archivo de correo electrónico:** Valor booleano que indica si la persona envió el correo electrónico con archivos (no en OneDrive o SharePoint) como datos adjuntos en los últimos 28 días.
-- **Archivos adjuntos en línea del correo electrónico:** Valor booleano que indica si la persona envió el correo electrónico con vínculos a archivos en línea (en OneDrive o SharePoint) como datos adjuntos en los últimos 28 días.
-- **Insertar vínculo a archivo en línea:** Valor booleano que indica si la persona envió un correo electrónico con vínculos a archivos en línea (en OneDrive o SharePoint) incrustado en el cuerpo del correo electrónico en los últimos 28 días.
 
 ## <a name="related-content"></a>Contenido relacionado
 

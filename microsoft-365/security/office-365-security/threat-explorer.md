@@ -16,14 +16,14 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
+description: Obtenga información sobre cómo usar Explorer y detecciones en tiempo real en el centro de seguridad & cumplimiento para investigar y responder a las amenazas de forma eficaz y eficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021126"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561404"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -289,7 +289,7 @@ Estas nuevas características se describen a continuación.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo
 
-La posibilidad de obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico son nuevas características disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y mensajes de correo electrónico descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *vista previa* , debe agregarse a otro grupo de roles (como operaciones de seguridad o administrador de seguridad) para poder descargar los correos electrónicos y obtener una vista previa de los encabezados en la vista de todos los mensajes de correo electrónico.
+La posibilidad de obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico son nuevas características disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y mensajes de correo electrónico descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *vista previa*, debe agregarse a otro grupo de roles (como operaciones de seguridad o administrador de seguridad) para poder descargar los correos electrónicos y obtener una vista previa de los encabezados en la vista de todos los mensajes de correo electrónico.
 
 Pero el explorador (y las detecciones en tiempo real) también agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los mensajes de correo electrónico. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 
@@ -318,13 +318,13 @@ Y esto es lo que el usuario puede ver y lo que no puede:
 
 Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores posibles de la ubicación de entrega:
 
-- **Bandeja de entrada o carpeta** : el correo electrónico está en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
-- **Local o externa** : el buzón no existe en la nube pero es local.
-- **Carpeta de correo no deseado** : el correo electrónico está en la carpeta de correo no deseado de un usuario.
-- **Carpeta elementos eliminados** : el correo electrónico en la carpeta elementos eliminados de un usuario.
-- **Quarantine** : el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
-- **Error** : el correo electrónico no pudo llegar al buzón.
-- **Quitado** : el correo electrónico se pierde en algún lugar del flujo de correo.
+- **Bandeja de entrada o carpeta**: el correo electrónico está en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
+- **Local o externa**: el buzón no existe en la nube pero es local.
+- **Carpeta de correo no deseado**: el correo electrónico está en la carpeta de correo no deseado de un usuario.
+- **Carpeta elementos eliminados**: el correo electrónico en la carpeta elementos eliminados de un usuario.
+- **Quarantine**: el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
+- **Error**: el correo electrónico no pudo llegar al buzón.
+- **Quitado**: el correo electrónico se pierde en algún lugar del flujo de correo.
 
 ### <a name="email-timeline"></a>Escala de tiempo de correo electrónico
 
@@ -354,7 +354,7 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 
 Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Microsoft 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
 2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware**.
 
@@ -381,14 +381,14 @@ Supongamos que desea ver los intentos de suplantación de identidad mediante dir
 
 Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use la vista de [correo electrónico > phish](threat-explorer-views.md#email--phish) de detecciones en tiempo real.
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
 2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![Ver el menú del explorador en el contexto de suplantación de identidad](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Haga clic en **remitente** y, a continuación, elija **direcciones URL** ,  >  **haga clic en veredicto**.
+3. Haga clic en **remitente** y, a continuación, elija **direcciones URL**,  >  **haga clic en veredicto**.
 
 4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado** y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
@@ -415,20 +415,20 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 En los controles flotantes de dirección URL o de correo electrónico, los clics principales, así como en nuestras experiencias de filtrado, verá valores de clic diferentes como parte de su experiencia de búsqueda. A continuación se muestran los valores posibles de los veredictos de clic y su interpretación:
 
-- **None** : no se ha podido capturar el veredicto para la dirección URL. Es posible que el usuario haya acpulsado a través de la dirección URL.
-- Se **permite** : el usuario tiene permiso para navegar a la dirección URL.
-- **Bloqueado** : se ha bloqueado el usuario para navegar a la dirección URL.
-- **Veredicto pendiente** : se presentó el usuario con la página detonación pendiente.
-- **Bloqueado invalidado** : se ha bloqueado al usuario para que navegue a la dirección URL; sin embargo, el usuario overrode el bloque para desplazarse a la dirección URL.
-- Se **omite el veredicto pendiente** : se ha presentado la página de detonación al usuario. sin embargo, el usuario overrode? a la p? gina para navegar a la direcci? n URL.
-- **Error** : se ha presentado al usuario la página de error. Esto también puede significar que se ha producido un error al capturar el veredicto.
-- **Error** : se ha producido una excepción desconocida al capturar el veredicto. Es posible que el usuario haya acpulsado a través de la dirección URL.
+- **None**: no se ha podido capturar el veredicto para la dirección URL. Es posible que el usuario haya acpulsado a través de la dirección URL.
+- Se **permite**: el usuario tiene permiso para navegar a la dirección URL.
+- **Bloqueado**: se ha bloqueado el usuario para navegar a la dirección URL.
+- **Veredicto pendiente**: se presentó el usuario con la página detonación pendiente.
+- **Bloqueado invalidado**: se ha bloqueado al usuario para que navegue a la dirección URL; sin embargo, el usuario overrode el bloque para desplazarse a la dirección URL.
+- Se **omite el veredicto pendiente**: se ha presentado la página de detonación al usuario. sin embargo, el usuario overrode? a la p? gina para navegar a la direcci? n URL.
+- **Error**: se ha presentado al usuario la página de error. Esto también puede significar que se ha producido un error al capturar el veredicto.
+- **Error**: se ha producido una excepción desconocida al capturar el veredicto. Es posible que el usuario haya acpulsado a través de la dirección URL.
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
 Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico > vista de envíos](threat-explorer-views.md#email--submissions) del explorador (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real** ). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
 2. En el menú **Ver** , elija **Email**  >  **envíos** de correo electrónico.
 
@@ -473,7 +473,7 @@ Debe tener [Microsoft defender para Office 365](office-365-atp.md) para obtener 
 
 Para ver y usar el explorador o las detecciones en tiempo real, debe tener los permisos adecuados, como los que se han concedido a un administrador de seguridad o un lector de seguridad.
 
-- Para el centro de seguridad &amp; y cumplimiento, debe tener asignada una de las siguientes funciones:
+- Para el centro de seguridad & cumplimiento, debe tener asignada una de las siguientes funciones:
 
   - Administración de la organización
   - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -488,7 +488,7 @@ Para ver y usar el explorador o las detecciones en tiempo real, debe tener los p
 
 Para obtener más información acerca de los roles y los permisos, vea los siguientes recursos:
 
-- [Permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md)
+- [Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)
 - [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Algunas diferencias entre el explorador de amenazas y las detecciones en tiempo real

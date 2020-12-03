@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evitar que los ataques actuales y emergentes, como los ataques malintencionados o los vínculos maliciosos, interrumpan la productividad de los empleados y la seguridad empresarial.
-ms.openlocfilehash: c9b31ff91521b6badda31b6eb3202f370769a0fd
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021078"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561440"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Protección de aplicaciones para Office (vista previa pública) para administradores
 
@@ -29,8 +29,8 @@ ms.locfileid: "49021078"
 
 **Se aplica a:** Word, Excel y PowerPoint para Microsoft 365, Windows 10 Enterprise
 
->[!IMPORTANT]
->Parte de la información se refiere a un producto previamente lanzado que se puede modificar de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> Parte de la información se refiere a un producto previamente lanzado que se puede modificar de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 La protección de aplicaciones de Microsoft defender para Office (protección de aplicaciones para Office) ayuda a impedir que los archivos que no son de confianza tengan acceso a los recursos de confianza, manteniendo la empresa a salvo de nuevos ataques nuevos y emergentes. En este artículo se recorre a los administradores a través de la configuración de dispositivos para obtener una vista previa de protección de aplicaciones para Office. Proporciona información sobre los requisitos del sistema y los pasos de instalación para habilitar la protección de aplicaciones de Office en un dispositivo.
 
@@ -38,15 +38,15 @@ La protección de aplicaciones de Microsoft defender para Office (protección de
 
 ### <a name="minimum-hardware-requirements"></a>Requisitos mínimos de hardware
 
-* **CPU** : 64 bits, 4 núcleos (físicos o virtuales), extensiones de virtualización (Intel VT-x o AMD-V), principales i5 equivalentes o superiores recomendados
-* **Memoria física** : 8 GB de RAM
-* **Disco duro** : 10 GB de espacio libre en la unidad del sistema (se recomienda SSD)
+* **CPU**: 64 bits, 4 núcleos (físicos o virtuales), extensiones de virtualización (Intel VT-x o AMD-V), principales i5 equivalentes o superiores recomendados
+* **Memoria física**: 8 GB de RAM
+* **Disco duro**: 10 GB de espacio libre en la unidad del sistema (se recomienda SSD)
 
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
-* **Windows 10** : Windows 10 Enterprise Edition, versión de compilación de cliente 2004 (20H1) compilación 19041
-* **Office** : versión de compilación de canal de office beta 2008 16.0.13212 o posterior
-* **Paquete de actualización** : actualizaciones de seguridad mensual acumuladas de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Windows 10**: Windows 10 Enterprise Edition, versión de compilación de cliente 2004 (20H1) compilación 19041
+* **Office**: versión de compilación de canal de office beta 2008 16.0.13212 o posterior
+* **Paquete de actualización**: actualizaciones de seguridad mensual acumuladas de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Para obtener información detallada sobre los requisitos del sistema, consulte [requisitos del sistema para la protección de aplicaciones de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Para obtener más información sobre las versiones de Office Insider Preview, consulte Introducción a la [implementación de las compilaciones de Office Insider](https://insider.office.com/business/deploy).
 
@@ -90,7 +90,7 @@ Este paso garantiza que los datos necesarios para identificar y solucionar los p
 
    ![Menú Inicio](../../media/ag05-diagnostic.png)
 
-2. En **configuración de Windows** , seleccione **privacidad**.
+2. En **configuración de Windows**, seleccione **privacidad**.
 
    ![Menú de configuración de Windows](../../media/ag06-diagnostic.png)
 
@@ -128,7 +128,7 @@ Office admite las siguientes directivas que le permitirán configurar las capaci
 > Estas directivas estarán disponibles próximamente.
 > Además, la configuración de estas directivas puede deshabilitar algunas funcionalidades para los archivos abiertos en protección de aplicaciones para Office.
 
-|Directiva|Descripción|
+|Policy|Descripción|
 |---|---|
 |Deshabilitar la protección de aplicaciones para Office|Al habilitar esta Directiva, Word, Excel y PowerPoint usarán el contenedor de aislamiento de vista protegida en lugar de la protección de aplicaciones de Office. Esta Directiva se puede usar para deshabilitar temporalmente la protección de aplicaciones de Office cuando hay problemas para dejarla habilitada para el servidor perimetral.|
 |Deshabilitar la copia y pegado de los documentos abiertos en la protección de aplicaciones|Al habilitar esta Directiva, impedirá que un usuario copie y pegue contenido de un documento abierto en la protección de aplicaciones de Office a un documento abierto fuera de él.|

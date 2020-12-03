@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business Premium desde Office 365 E3.
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842168"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558266"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 empresa Premium 
 
@@ -53,7 +53,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | **Protección contra amenazas**        | | | 
 | Defender para Office 365 plan 1 | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**        | | | 
-| Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    |  | 
+| Restablecimiento de contraseñas de autoservicio para las cuentas híbridas de Azure Active Directory (Azure AD), la autenticación multifactor de Azure AD (MFA), el acceso condicional y la escritura diferida de contraseñas para las identidades locales|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    |  | 
 | **Administración de dispositivos y aplicaciones**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    |  |
 | Activación en equipos compartidos|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png)| 

@@ -14,19 +14,19 @@ search.appverid: MET150
 description: Corrección de amenazas
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350739"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561296"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-La corrección supone llevar a cabo una acción recomendada contra una amenaza. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, a través de la depuración automática de cero horas (ZAP) o por parte de los equipos de seguridad mediante acciones de corrección como *mover a la bandeja de entrada*, *desplazarse a correo no deseado*, *mover a elementos eliminados*, *eliminar temporalmente* o *eliminar permanentemente*. Microsoft defender para Office 365 P2/E5 permite a los equipos de seguridad corregir amenazas en el correo electrónico y la funcionalidad de colaboración mediante la investigación manual y automatizada.
+La corrección supone llevar a cabo una acción recomendada contra una amenaza. El sistema puede limpiar el correo electrónico malintencionado enviado a la organización, a través de la depuración automática de cero horas (ZAP) o por parte de los equipos de seguridad mediante acciones de corrección como *mover a la bandeja de entrada*, *desplazarse a correo no deseado*, *mover a elementos eliminados*, *eliminar temporalmente* o *eliminar permanentemente*. Microsoft defender para Office 365 P2/E5 permite a los equipos de seguridad corregir amenazas en el correo electrónico y la funcionalidad de colaboración mediante la investigación manual y automatizada.
 
 > [!NOTE]
 > Para corregir el correo electrónico malintencionado, los equipos de seguridad necesitan la función de *búsqueda y depuración* que tienen asignada. La asignación de roles se realiza a través de permisos en el centro de seguridad y cumplimiento.
@@ -85,7 +85,7 @@ Abra cualquier elemento de corrección para ver los detalles del mismo, como su 
       > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
   - **No se puede accionar**: los correos electrónicos en las siguientes ubicaciones no se pueden actuar o mover en acciones de corrección:
-    - Quarantine
+    - Cuarentena
     - Carpeta eliminada permanentemente
     - Local/externo
     - Error/interrumpido

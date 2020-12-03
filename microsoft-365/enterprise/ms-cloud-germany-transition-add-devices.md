@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información de dispositivos adicional sobre los servicios al cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de datos en alemán.'
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551958"
+ms.locfileid: "49560867"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional de dispositivos para la migración desde la nube de Microsoft Alemania
 
@@ -136,6 +136,12 @@ El dispositivo se une automáticamente a Azure AD sin la intervención del usuar
 
 
 ## <a name="windows-azure-ad-join"></a>Combinación de Windows Azure AD
+
+**Importante:** La entidad de servicio de Intune se habilitará después de la migración de Commerce, lo que implica la activación del registro de dispositivos de Azure AD. Si ha bloqueado el registro de dispositivos de Azure AD antes de la migración, debe deshabilitar la entidad de servicio de Intune con PowerShell para deshabilitar el registro de dispositivos de Azure AD con el portal de Azure AD de nuevo. Puede deshabilitar la entidad de servicio de Intune con este comando en el módulo Azure Active Directory PowerShell para Graph.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>Unjoin
 

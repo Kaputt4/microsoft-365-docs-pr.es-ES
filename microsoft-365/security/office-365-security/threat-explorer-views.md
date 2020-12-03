@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Obtenga información sobre cómo usar el explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el centro de seguridad y &amp; cumplimiento.
+description: Obtenga información sobre cómo usar el explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367194"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561236"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367194"
 
 ![Explorador de amenazas](../../media/ThreatExplorerFirstOpened.png)
 
-El [Explorador de amenazas](threat-explorer.md) (y el informe de detecciones en tiempo real) es una herramienta eficaz, casi en tiempo real, que ayuda a los equipos de operaciones de seguridad a investigar y responder a amenazas en el centro de seguridad y &amp; cumplimiento. Explorer (y el informe de detecciones en tiempo real) muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización.
+El [Explorador de amenazas](threat-explorer.md) (y el informe de detecciones en tiempo real) es una herramienta eficaz, casi en tiempo real, que ayuda a los equipos de operaciones de seguridad a investigar y responder a amenazas en el centro de seguridad & cumplimiento. Explorer (y el informe de detecciones en tiempo real) muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización.
 
 - Si tiene [Microsoft defender para Office 365](office-365-atp.md) plan 2, tendrá Explorer.
 - Si tiene Microsoft defender para Office 365 plan 1, tendrá detecciones en tiempo real.

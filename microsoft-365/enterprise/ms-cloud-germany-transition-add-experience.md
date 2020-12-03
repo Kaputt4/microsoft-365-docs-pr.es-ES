@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional de la experiencia del usuario al cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de datos en alemán.'
-ms.openlocfilehash: b282a12966e7a6dc8a1a331409834322c5087a10
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 1eef8be624a92bf2dcaba8f0df2147697202be3a
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551880"
+ms.locfileid: "49560843"
 ---
 # <a name="additional-experience-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información de la experiencia adicional para la migración desde la nube de Microsoft Alemania 
 
@@ -52,13 +52,13 @@ En las siguientes secciones se proporciona información adicional sobre las expe
 [Reference: Experience – During Migration] [Azure] 
 -->
 
-### <a name="exchange-online"></a>Exchange en línea
+### <a name="exchange-online"></a>Exchange Online
 
 Si está usando **set-UserPhoto**:
 
 | Pasos (s) | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| La nueva región de Alemania se agrega a la configuración de la organización existente y los buzones de correo se mueven a los servicios de Office 365. | La configuración de Exchange Online agrega la nueva región alemana go-local a la organización de transición. Esta región de servicios de Office 365 está configurada como predeterminada, lo que permite que el servicio de equilibrio de carga interno redistribuya los buzones de correo a la región predeterminada adecuada en los servicios de Office 365. En esta transición, los usuarios de cada lado (los servicios de Alemania o Office 365) están en la misma organización y pueden usar cualquier punto de conexión de dirección URL. |  Exchange en línea | Si se ha migrado un buzón de usuario pero no se ha migrado un buzón de administrador, o viceversa, los administradores no podrán ejecutar **set-UserPhoto**, un cmdlet de PowerShell. En esta situación, el administrador debe pasar una cadena adicional `ConnectionUri` durante la conexión configurada mediante la siguiente sintaxis: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> donde `<user_email>` es el marcador de posición para el identificador de correo electrónico del usuario cuya foto tiene que cambiarse mediante **set-UserPhoto**. |
+| La nueva región de Alemania se agrega a la configuración de la organización existente y los buzones de correo se mueven a los servicios de Office 365. | La configuración de Exchange Online agrega la nueva región alemana go-local a la organización de transición. Esta región de servicios de Office 365 está configurada como predeterminada, lo que permite que el servicio de equilibrio de carga interno redistribuya los buzones de correo a la región predeterminada adecuada en los servicios de Office 365. En esta transición, los usuarios de cada lado (los servicios de Alemania o Office 365) están en la misma organización y pueden usar cualquier punto de conexión de dirección URL. |  Exchange Online | Si se ha migrado un buzón de usuario pero no se ha migrado un buzón de administrador, o viceversa, los administradores no podrán ejecutar **set-UserPhoto**, un cmdlet de PowerShell. En esta situación, el administrador debe pasar una cadena adicional `ConnectionUri` durante la conexión configurada mediante la siguiente sintaxis: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> donde `<user_email>` es el marcador de posición para el identificador de correo electrónico del usuario cuya foto tiene que cambiarse mediante **set-UserPhoto**. |
 |||||
 
 <!--
@@ -101,7 +101,7 @@ Si está usando una implementación híbrida local:
 
 | Pasos (s) | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| Clientes, Office Online durante el traslado del cliente de Office, Azure AD finaliza el ámbito del inquilino para apuntar a los servicios de Office 365.<!--v-gmoor: What?--> | Este cambio de configuración permite a los clientes de Office actualizar y apuntar a los puntos de conexión de servicios de Office 365. | Todos los clientes de Office | -Quitar MSOID CName del DNS de propiedad del cliente, si existe. <br><br> -Notifique a los usuarios que deben cerrar _todas las_ aplicaciones de Office y, a continuación, volver a iniciar sesión (o forzar a los clientes a reiniciarse y usuarios que inicien sesión) para permitir que los clientes de Office recojan el cambio. <br><br> -Notificar a los usuarios y al personal del servicio de asistencia que los usuarios *pueden* ver un banner de Office que les pide que reactiven las aplicaciones de Office en un plazo de 72 horas a partir del traslado. <br><br> -Todas las aplicaciones de Office en equipos personales deben estar cerradas y los usuarios deben cerrar sesión de nuevo. En la barra de activación amarilla, inicie sesión para reactivarlo con los servicios de Office 365. <br><br> -Los equipos compartidos requerirán acciones similares a las de los equipos personales y no requerirán un procedimiento especial. <br><br> -En dispositivos móviles, los usuarios deben cerrar la sesión de las aplicaciones, cerrarlas y, a continuación, volver a iniciar sesión. |
+| Clientes, Office Online durante el traslado del cliente de Office, Azure AD finaliza el ámbito del inquilino para apuntar a los servicios de Office 365. | Este cambio de configuración permite a los clientes de Office actualizar y apuntar a los puntos de conexión de servicios de Office 365. | Todos los clientes de Office | -Quitar MSOID CName del DNS de propiedad del cliente, si existe. <br><br> -Notifique a los usuarios que deben cerrar _todas las_ aplicaciones de Office y, a continuación, volver a iniciar sesión (o forzar a los clientes a reiniciarse y usuarios que inicien sesión) para permitir que los clientes de Office recojan el cambio. <br><br> -Notificar a los usuarios y al personal del servicio de asistencia que los usuarios *pueden* ver un banner de Office que les pide que reactiven las aplicaciones de Office en un plazo de 72 horas a partir del traslado. <br><br> -Todas las aplicaciones de Office en equipos personales deben estar cerradas y los usuarios deben cerrar sesión de nuevo. En la barra de activación amarilla, inicie sesión para reactivarlo con los servicios de Office 365. <br><br> -Los equipos compartidos requerirán acciones similares a las de los equipos personales y no requerirán un procedimiento especial. <br><br> -En dispositivos móviles, los usuarios deben cerrar la sesión de las aplicaciones, cerrarlas y, a continuación, volver a iniciar sesión. |
 |||||
 
 <!--
@@ -111,13 +111,13 @@ Si está usando una implementación híbrida local:
 ## <a name="during-migration"></a>Durante la migración
 
 
-### <a name="exchange-online"></a>Exchange en línea
+### <a name="exchange-online"></a>Exchange Online
 
 Para la exhibición de documentos electrónicos:
 
 | Pasos (s) | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| Durante la migración, se producirá un error en las búsquedas de eDiscovery o se devolverán 0 resultados para las ubicaciones de SharePoint Online, OneDrive para la empresa y Exchange online que se hayan migrado. | Durante la migración, los clientes pueden seguir creando casos, suspensiones, búsquedas y exportaciones en el centro de cumplimiento de & de seguridad, incluida la búsqueda de contenido.  Sin embargo, las búsquedas en SharePoint Online, OneDrive para la empresa y las ubicaciones de Exchange online que se han migrado devolverán 0 resultados o producirá un error. Para la corrección, vea la columna _impacto_ . | Todos los clientes que usan eDiscovery |  En el caso de que una búsqueda devuelva 0 resultados o un error durante la migración, realice la siguiente acción para SharePoint Online: <br><br>  Descargue sitios directamente desde el sitio de SharePoint Online o OneDrive para la empresa siguiendo las instrucciones de [descargar archivos y carpetas de onedrive o SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05). Este método requerirá permisos de administrador de SharePoint Online o permisos de solo lectura en el sitio. <br><br> Si se superan los límites, tal y como se explica en [descargar archivos y carpetas de onedrive o SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05), los clientes pueden usar el cliente de sincronización de onedrive para la empresa siguiendo las instrucciones de [sincronización de archivos de SharePoint y Teams con el equipo](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88). <br><br> -Exchange Online <br><br> - [Exhibición de documentos electrónicos local en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| Durante la migración, se producirá un error en las búsquedas de eDiscovery o se devolverán 0 resultados para las ubicaciones de SharePoint Online, OneDrive para la empresa y Exchange online que se hayan migrado. | Durante la migración, los clientes pueden seguir creando casos, suspensiones, búsquedas y exportaciones en el [centro de cumplimiento de & de seguridad](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations), incluida la búsqueda de [contenido](https://docs.microsoft.com/microsoft-365/compliance/search-for-content).  Sin embargo, las búsquedas en SharePoint Online, OneDrive para la empresa y las ubicaciones de Exchange online que se han migrado devolverán 0 resultados o producirá un error. Para la corrección, vea la columna _impacto_ . | Todos los clientes que usan eDiscovery |  En el caso de que una búsqueda devuelva 0 resultados o un error durante la migración, realice la siguiente acción para SharePoint Online: <br><br>  Descargue sitios directamente desde el sitio de SharePoint Online o OneDrive para la empresa siguiendo las instrucciones de [descargar archivos y carpetas de onedrive o SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05). Este método requerirá permisos de administrador de SharePoint Online o permisos de solo lectura en el sitio. <br><br> Si se superan los límites, tal y como se explica en [descargar archivos y carpetas de onedrive o SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05), los clientes pueden usar el cliente de sincronización de onedrive para la empresa siguiendo las instrucciones de [sincronización de archivos de SharePoint y Teams con el equipo](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88). <br><br> -Exchange Online <br><br> - [Exhibición de documentos electrónicos local en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
 <!--
@@ -207,7 +207,7 @@ Para servicios de terceros para los extremos de servicios de Office 365:
  [Reference: Experience – Post Migration][]
 --> 
 
-### <a name="exchange-online"></a>Exchange en línea
+### <a name="exchange-online"></a>Exchange Online
 
 Si está usando una configuración híbrida de Exchange:
 

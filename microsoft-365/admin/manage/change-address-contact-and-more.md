@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Obtenga información sobre cómo realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645112"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560864"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
 
@@ -73,14 +73,15 @@ Como administrador, puede cambiar la dirección de correo electrónico alternati
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a>.
 
-2. En el encabezado, seleccione el icono de su perfil y, después, seleccione **mi cuenta**.
+2. En el encabezado, seleccione el icono de su perfil y, después, seleccione **Ver cuenta**.
 
-3. En la parte izquierda, seleccione **información personal**.
+3. En la parte izquierda, seleccione **información de seguridad**.
 
-4. En la ficha **detalles de contacto** , seleccione **Editar**.
+4. En la sección correo electrónico, seleccione **cambiar** .
 
-5. Edite la dirección en el cuadro **correo electrónico alternativo** y, a continuación, seleccione **Guardar**.
+5. Edite la dirección en el cuadro **correo electrónico alternativo** y, a continuación, seleccione **siguiente**.
 
+6. Escriba el código enviado a la dirección de correo electrónico alternativa y seleccione **Aceptar** para comprobar el cambio.
 Para obtener información sobre cómo cambiar otra información de perfil, consulte [cambiar las preferencias de contacto](change-contact-preferences.md) o [cambiar el idioma para mostrar](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### <a name="email-signatures"></a>Firmas de correo electrónico

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Microsoft 365.
-ms.openlocfilehash: 637b610d0dd621e6d922d23354aead8e3824ad6a
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445536"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561428"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
@@ -39,13 +39,13 @@ Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes con
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 
-> 550 5.7.606-649 Acceso denegado, prohibido enviar IP [_IP address_]; para solicitar la eliminación de esta lista, visite https://sender.office.com/ y siga las instrucciones. Para más información, consulte [Informes de no entrega de correo electrónico en Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Acceso denegado, prohibido enviar IP [_IP address_]; para solicitar la eliminación de esta lista, visite <https://sender.office.com/> y siga las instrucciones. Para más información, consulte [Informes de no entrega de correo electrónico en Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el servidor de correo.
 
 ### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Para usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
-1. En un explorador web, vaya a [https://sender.office.com](https://sender.office.com).
+1. En un explorador web, vaya a <https://sender.office.com>.
 
 2. Siga las instrucciones que se indican en la página. Asegúrese de que usa la dirección de correo electrónico a la que se envió el mensaje de error, así como la dirección IP especificada en el mensaje de error. Solo se puede especificar una dirección de correo electrónico y una dirección IP por visita.
 

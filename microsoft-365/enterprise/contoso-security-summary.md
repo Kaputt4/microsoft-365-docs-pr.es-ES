@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920423"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558399"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 para la seguridad empresarial de Contoso Corporation
 
@@ -56,7 +56,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Cuentas de administrador global dedicadas con MFA y PIM
 
-  En lugar de asignar el rol de administrador global a las cuentas de usuario diarias, contoso ha creado tres cuentas de administrador global dedicadas con contraseñas seguras. Las cuentas están protegidas por Azure multi-factor Authentication (MFA) y Azure Active Directory (Azure AD) privileged Identity Management (PIM). *PIM solo está disponible con Microsoft 365 E5.*
+  En lugar de asignar el rol de administrador global a las cuentas de usuario diarias, contoso ha creado tres cuentas de administrador global dedicadas con contraseñas seguras. Las cuentas están protegidas por Azure AD multi-factor Authentication (MFA) y Azure Active Directory (Azure AD) privileged Identity Management (PIM). *PIM solo está disponible con Microsoft 365 E5.*
 
   El inicio de sesión con una cuenta de administrador global solo se realiza para tareas administrativas específicas. Las contraseñas solo las conoce el personal designado y solo se pueden usar en un período de tiempo configurado en el PIM de Azure AD.
 

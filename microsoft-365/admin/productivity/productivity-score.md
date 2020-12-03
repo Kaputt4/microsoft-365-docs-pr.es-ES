@@ -19,30 +19,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: f1edc1a66763562b233455609f3381e3f4fbfa98
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123494"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561483"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
-La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con información sobre cómo los usuarios usan Microsoft 365 y las experiencias tecnológicas que los admiten. La puntuación refleja el rendimiento de su organización con respecto a los usuarios y a las experiencias tecnológicas, y compara su puntuación con organizaciones como la suya.
+La puntuación de productividad admite el trayecto a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones de tamaño similar a la suya.
 
-La puntuación incluye:
+Proporciona lo siguiente:
 
-- **Métricas** que le ayudarán a ver cómo los usuarios usan productos de 365 de Microsoft para colaborar, comunicarse y trabajar en todas las plataformas.
-- **Información acerca de** los datos para ayudarle a identificar las oportunidades para mejorar la productividad y la satisfacción de los empleados.
-- **Acciones recomendadas** que puede llevar a cabo para ayudar a las personas de su organización a usar los productos de Microsoft 365 de forma eficaz para que todos los usuarios puedan realizar su mejor trabajo.
+- **Métricas** que le ayudarán a saber dónde se encuentra en el viaje de transformación digital.
+- **Información acerca de** los datos para ayudarle a identificar las oportunidades para mejorar la productividad y la satisfacción en su organización.
+- **Acciones recomendadas** que puede realizar para ayudar a su organización a usar los productos de Microsoft 365 de forma eficiente.
 
-Proporcionamos datos, información y recomendaciones en dos áreas: 
+Proporcionamos métricas, información y recomendaciones en dos áreas: 
 
-- **Experiencias de personas:** Mide cómo colaboran los usuarios en el contenido, cómo usan los productos de 365 de Microsoft para comunicarse y si usan Microsoft 365 en varias plataformas. 
+- **Experiencias de personas:** Cuantifica la forma en que la organización trabaja con las categorías de Microsoft 365 como colaboración de contenido, movilidad, comunicación, reuniones y trabajo en equipo.  
 
-    Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo y, con la libertad de trabajar en cualquier dispositivo, su productividad es más productiva y satisfactoria. La capacidad de comunicarse de una manera flexible hace que los usuarios sean más eficientes, capaces de formar mejores relaciones, por lo que su organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Para cada una de las categorías mencionadas, nos centramos en la investigación pública para identificar algunos procedimientos recomendados y ventajas asociadas en forma de eficacia organizacional. Por ejemplo, [Forrester] ( https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf Research ha mostrado que cuando los usuarios colaboran y comparten contenido en la nube (en lugar de enviar correos electrónicos adjuntos), pueden ahorrar hasta 100 minutos a la semana. Además, se cuantifica el uso de estos procedimientos recomendados en su organización para ayudarle a ver dónde se encuentra en el viaje de transformación digital. 
 
-- **Experiencias tecnológicas:** La productividad de su equipo depende de una tecnología fiable y con buen rendimiento, así como del uso eficaz de Microsoft 365. El [análisis de extremos](https://aka.ms/endpointanalytics) le ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y el software. Las acciones recomendadas ayudan a solucionar estos problemas. La información de conectividad de red 365 de Microsoft le ayudará a solucionar problemas de conectividad para su organización.
+- **Experiencias tecnológicas:** Su organización depende de una tecnología fiable y con buen rendimiento, así como del uso eficaz de Microsoft 365. [Endpoint Analytics](https://aka.ms/endpointanalytics) le ayuda a comprender cómo su organización puede verse afectada por problemas de rendimiento y estado con el hardware y el software. El estado de Microsoft 365 apps le ayuda a comprender si los dispositivos de su organización ejecutan aplicaciones de Microsoft 365 en los canales recomendados.
 
 Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -63,22 +63,22 @@ La puntuación de productividad se basa en los resultados combinados de las cate
 - Estado de las aplicaciones de 365 de Microsoft (100 puntos)
 - **Total posible = 800 puntos**
  
- En cada categoría de puntuación, identificamos patrones para actividades clave que son indicadores sobre cómo los usuarios usan los productos de 365 de Microsoft para colaborar, comunicarse y trabajar en todas las plataformas. Proporcionamos vistas de las actividades clave de 28 días y 180 días. También proporcionamos métricas auxiliares que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar los comportamientos y configuraciones subyacentes que puede solucionar.
+ En cada categoría de puntuación, se cuantifican los indicadores clave sobre cómo su organización usa Microsoft 365 en su recorrido hacia la transformación digital. Proporcionamos vistas de las actividades clave de 28 días y 180 días. También proporcionamos métricas auxiliares que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar las estadísticas y configuraciones de uso subyacentes que puede solucionar.
 
 ### <a name="products-included-in-productivity-score"></a>Productos incluidos en la puntuación de productividad 
 
 La puntuación de productividad incluye datos de Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer y Skype.
 
-La puntuación se actualiza diariamente y refleja las acciones del usuario completadas en el último 28 (incluido el día actual).
+La puntuación de su organización se actualiza diariamente y refleja las acciones del usuario completadas en el último 28 (incluido el día actual).
 
 
 ## <a name="pre-requisites"></a>Requisitos previos 
 
-Para los datos de experiencias de personas, necesitará una suscripción de Microsoft 365 para empresas o Office 365 para empresas. Para los datos de análisis de extremos de su espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre Microsoft Intune. 
+Para los datos de experiencias de personas, necesitará una suscripción de Microsoft 365 para empresas o Office 365 para empresas. Para los datos de análisis de extremos de su espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
 > No se necesita una licencia para el análisis de Workplace para obtener las características de puntuación de productividad.
 
-Para ver la puntuación de productividad de su organización, debe tener uno de los siguientes roles: 
+La puntuación de productividad solo está disponible en el centro de administración de Microsoft 365 y solo pueden obtener acceso los profesionales de ti que tienen una de las siguientes funciones:  
 
 - Administrador global 
 - Administradores de Exchange
@@ -88,17 +88,21 @@ Para ver la puntuación de productividad de su organización, debe tener uno de 
 - Lector global 
 - Lector de informes 
 
+Tenga en cuenta que la información solo está pensada para usarse con el fin de realizar una transformación digital con Microsoft 365 y que, por lo tanto, debe compartirse con prudencia. 
+
+Microsoft se compromete a proteger la privacidad individual. En este [documento de privacidad](privacy.md)  se explican los controles que le proporcionamos, como administrador de TI de su organización, para garantizar que la información sea accionable sin poner en peligro la confianza que coloque en Microsoft.
+
 Puede tener acceso a la experiencia desde la Página principal de administración de Microsoft 365 en **Reports**  >  **score score**.
 
-## <a name="interpreting-productivity-score"></a>Interpretación de la puntuación de productividad 
+## <a name="interpreting-your-organizations-productivity-score"></a>Interpretación de la puntuación de productividad de su organización 
 
-La página de inicio de la puntuación de productividad muestra el historial de puntuación y la puntuación totales y la información principal de cada categoría.
+La página de inicio de la puntuación de productividad muestra el historial de puntuación y la puntuación total de su organización y la visión principal de cada categoría.
 
 :::image type="content" source="../../media/prodscore-landing.png" alt-text="Página de puntuación de productividad en informes.":::
 
-**La puntuación** se muestra como un valor porcentual y en puntos. Puede ver los puntos en el numerador y los puntos máximos posibles en el denominador.
+**La puntuación de su organización** se muestra como un valor porcentual y en puntos. Puede ver los puntos en el numerador y los puntos máximos posibles en el denominador.
 
-Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación con organizaciones como la suya. La referencia del mismo nivel para las categorías de experiencias de personas se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto de organizaciones se compone de organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
+Las pruebas comparativas del **mismo nivel** le permiten comparar la puntuación de su organización con organizaciones como la suya. La referencia del mismo nivel para las categorías de experiencias de personas se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto de organizaciones se compone de organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
 
 El punto de referencia del punto de conexión del análisis de extremos incluye objetivos para el rendimiento de inicio de dispositivo y la configuración de software recomendada en función de los valores de la mediana agregada en todos los inquilinos.
 
@@ -126,7 +130,7 @@ Las páginas de detalles son:
 
 El informe de continuidad empresarial es un informe de inteligencia de trabajo limitado disponible para todos los clientes de Microsoft 365 para ayudarles a guiar a sus organizaciones durante este difícil tiempo.  
 
-Este informe ayuda a los líderes de negocios a comprender: 
+Este informe ayuda a las organizaciones a comprender: 
 
 - Modo en que la colaboración y la comunicación se ven afectadas por el cambio al trabajo remoto. 
 
@@ -140,4 +144,4 @@ Este informe ayuda a los líderes de negocios a comprender:
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 
-Comparta sus ideas sobre la puntuación de productividad y sus ideas sobre cómo mejorarla. Use las secciones de **comentarios** del producto y/o póngase en contacto con el equipo de puntuación de productividad en ProductivityScorePreview@service.microsoft.com.
+Comparta sus ideas sobre la puntuación de productividad y sus ideas sobre cómo mejorarla. Use las secciones de **comentarios** del producto y/o póngase en contacto con el equipo de puntuación de productividad en prodscorefeedback@microsoft.com.

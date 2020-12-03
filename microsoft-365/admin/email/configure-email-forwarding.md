@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configure el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office365.
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551839"
+ms.locfileid: "49560797"
 ---
 # <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551839"
 ::: moniker-end
   
 Como administrador de una organización, es posible que los requisitos de la compañía configuren el reenvío de correo electrónico para el buzón de un usuario. El reenvío de correo electrónico le permite reenviar mensajes de correo electrónico enviados al buzón de un usuario al buzón de otro usuario dentro o fuera de la organización.
+
+> [!IMPORTANT]
+> Puede usar las directivas de filtro de correo no deseado saliente para controlar el reenvío automático a los destinatarios externos. Para obtener más información, consulte [controlar el reenvío de correo externo automático en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
   
 ## <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
@@ -102,5 +105,6 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
      O bien, en el centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [Agréguele las direcciones](add-user-or-contact-to-distribution-list.md)y, a continuación, configure el reenvío para que apunte a la DL siguiendo las instrucciones de este artículo.
     
 5. No elimine la cuenta del usuario que es el correo electrónico que está reenviando o quite su licencia.  Si lo hace, se detendrá el reenvío de correo electrónico. 
+
 
 ::: moniker-end 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo contoso usa las características de protección de la información de Microsoft 365 para empresas para proteger sus activos digitales en la nube.
-ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754610"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558509"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -34,14 +34,14 @@ Contoso realizó un análisis de sus datos y determinó los siguientes niveles d
 
 | Nivel 1: Base de referencia | Nivel 2: Confidencial | Nivel 3: Altamente regulado |
 |:-------|:-----|:-----|
-| Los datos están cifrados y solo están disponibles para los usuarios autenticados.<BR> <BR> Se proporciona para todos los datos almacenados de forma local y en las cargas de trabajo y el almacenamiento basado en la nube. Los datos se cifran mientras residen en el servicio y en tránsito entre el servicio y los dispositivos de cliente. <BR><BR>Algunos ejemplos de datos de nivel 1 son las comunicaciones empresariales normales (correo electrónico) y los archivos de empleados administrativos, de ventas y de soporte técnico. | Nivel 1 más autenticación segura y protección contra la pérdida de datos.<BR> <BR> La autenticación segura incluye la Azure Multi-Factor Authentication con validación de SMS. La prevención de pérdida de datos garantiza que la información confidencial o importante no viaja fuera de la nube de Microsoft.<BR><BR>Algunos ejemplos de datos de nivel 2 son la información jurídica y financiera, y los datos de investigación y desarrollo de productos nuevos. | Características del nivel 2 además de los niveles más altos de cifrado, autenticación y auditoría.<BR><BR>Los niveles más altos de cifrado de datos en reposo y en la nube, conformes con la normativa regional, combinados con MFA con tarjetas inteligentes y alertas y auditoría pormenorizada.<BR> <BR>Algunos ejemplos de datos de nivel 3 son la información personal de clientes y Partners, las especificaciones de ingeniería de productos y las técnicas de fabricación propietarias.  |
+| Los datos están cifrados y solo están disponibles para los usuarios autenticados.<BR> <BR> Se proporciona para todos los datos almacenados de forma local y en las cargas de trabajo y el almacenamiento basado en la nube. Los datos se cifran mientras residen en el servicio y en tránsito entre el servicio y los dispositivos de cliente. <BR><BR>Algunos ejemplos de datos de nivel 1 son las comunicaciones empresariales normales (correo electrónico) y los archivos de empleados administrativos, de ventas y de soporte técnico. | Nivel 1 más autenticación segura y protección contra la pérdida de datos.<BR> <BR> La autenticación segura incluye la autenticación multifactor de Azure AD (MFA) con la validación SMS. La prevención de pérdida de datos garantiza que la información confidencial o importante no viaja fuera de la nube de Microsoft.<BR><BR>Algunos ejemplos de datos de nivel 2 son la información jurídica y financiera, y los datos de investigación y desarrollo de productos nuevos. | Características del nivel 2 además de los niveles más altos de cifrado, autenticación y auditoría.<BR><BR>Los niveles más altos de cifrado de datos en reposo y en la nube, conformes con la normativa regional, combinados con MFA con tarjetas inteligentes y alertas y auditoría pormenorizada.<BR> <BR>Algunos ejemplos de datos de nivel 3 son la información personal de clientes y Partners, las especificaciones de ingeniería de productos y las técnicas de fabricación propietarias.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Directivas de información de Contoso
 En la siguiente tabla se enumeran las directivas de información de contoso.
 
 
-| Valor | Access | Retención de datos | Protección de la información |
+| Valor | Acceso | Retención de datos | Protección de la información |
 |:-------|:-----|:-----|:-----|
 | Valor empresarial bajo (Nivel 1: Básico) | Permitir el acceso a todo.  | 6 meses | Se usa el cifrado. |
 | Valor empresarial medio (Nivel 2: Confidencial) | Permitir el acceso a los empleados, subcontratistas y socios de contoso. <BR><BR> Se usa MFA, seguridad de la capa de transporte (TLS) y administración de aplicaciones móviles (MAM). | 2 años  | Se usan valores de hash para la integridad de datos.  |
@@ -115,7 +115,7 @@ Esta es la configuración resultante de la protección de la información de con
 
 Obtenga información sobre cómo contoso usa las [características de seguridad de Microsoft 365 para empresas](contoso-security-summary.md) para la administración de identidad y acceso, la protección contra amenazas, la protección de la información y la administración de la seguridad.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Plan de seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 

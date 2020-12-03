@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367063"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558252"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa Premium a Microsoft 365 E3
 
@@ -50,7 +50,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Característica    | Soporte en Microsoft 365 Business Premium    | Soporte técnico de Microsoft 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
+| Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
 | Aplicaciones de Office *    | [Aplicaciones de Microsoft 365 para negocios](#office-365-business)    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
@@ -62,7 +62,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Capacidades de reducción de superficie de ataques    | [Vea esta lista](#threat-protection) | Administración empresarial del aislamiento basado en hardware para Microsoft Edge | 
 | Defender para Office 365 plan 1 | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | No se incluye, pero puede agregarse en | 
 | **Administración de identidades**        | | | 
-| Restablecimiento de contraseña de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), Azure multi-factor Authentication (MFA), acceso condicional, escritura diferida de contraseñas para identidades locales|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| Restablecimiento de contraseñas de autoservicio para las cuentas híbridas de Azure Active Directory (Azure AD), la autenticación multifactor de Azure AD (MFA), el acceso condicional y la escritura diferida de contraseñas para las identidades locales|     ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Detección de aplicaciones en la nube, Azure AD Connect Health    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 de un solo Sign-On de aplicaciones (SSO): 10 aplicaciones por usuario (Galería de aplicaciones SaaS como Salesforce) * | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO: sin límite (aplicaciones locales a través de proxy de aplicación de Azure AD y aplicaciones que no son de galería con las plantillas de integración de aplicaciones de Self-Service)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
@@ -136,7 +136,7 @@ Windows 10 Enterprise E3 también incluye administración empresarial del aislam
 
 No es necesario realizar ningún cambio en la configuración de Intune actual antes de la migración, lo que incluye los dispositivos inscritos y la configuración de dispositivos y aplicaciones.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Microsoft 365 Business Premium incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 

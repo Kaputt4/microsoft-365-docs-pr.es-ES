@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información general adicional sobre los servicios al cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de datos en alemán.'
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551787"
+ms.locfileid: "49558435"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información general adicional para la migración desde la nube de Microsoft Alemania
 
@@ -49,14 +49,14 @@ Hay tres condiciones previas para actualizar la autoridad de inicio de sesión:
 
 Una aplicación puede ser una de las siguientes:
 
-- Aplicación de una sola página (SPA)
-- Aplicación web que inicia sesión en los usuarios
-- Aplicación web que llama a las API Web
-- API Web protegida
-- API Web que llama a las API Web
-- Aplicación de escritorio
-- Aplicación demonio
-- Aplicación para móviles
+- [Aplicación de una sola página (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Aplicación web que inicia sesión en los usuarios](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Aplicación web que llama a las API Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [API Web protegida](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [API Web que llama a las API Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Aplicación de escritorio](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [Aplicación demonio](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [Aplicación móvil](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > Cuando una aplicación cambia a usar `login.microsoftonline.com` como su autoridad, los tokens serán firmados por esta nueva entidad de certificación. Si hospeda aplicaciones de recursos en las que otras aplicaciones llaman, deberá permitir la validación de tokens LAX. Esto significa que la aplicación debe permitir tokens que estén firmados por las nubes públicas de Azure AD Alemania y Azure AD. Esta validación de token de LAX es necesaria hasta que todas las aplicaciones cliente que llaman a su servicio se migren por completo a la nube pública de Azure AD. Después de la migración, la aplicación de recursos solo necesita aceptar tokens firmados por la nube pública de Azure AD.
@@ -76,10 +76,10 @@ Una aplicación puede ser una de las siguientes:
 
 5. Actualice los parámetros de entorno para que sean `AzurePublic` (en lugar de `AzureGermany` ) en las herramientas de administración y los scripts para:
 
-    - Azure PowerShell
-    - PowerShell de Azure AD (MSOnline)
-    - PowerShell de Azure AD (AzureAD)
-    - Azure CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [PowerShell de Azure AD (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [PowerShell de Azure AD (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **¿Qué ocurre con las aplicaciones que se publican?**
 
@@ -123,7 +123,7 @@ Estas son algunas consideraciones adicionales para Azure AD:
 
 - Se mostrará una advertencia sobre la versión de Azure AD Connect en el portal de Office 365 Germany y en el portal de Office 365 una vez que el inquilino se encuentra en la migración. Esto puede pasarse por alto si la advertencia de versión ya no muestra la advertencia una vez finalizada la migración. Si hay una advertencia, ya sea antes o después de la migración, en cualquier portal, debe actualizarse Azure AD Connect. El mensaje de advertencia dice: "se detectó que está usando una herramienta de sincronización de directorios obsoleta. Le recomendamos que vaya al centro de descarga de Microsoft para obtener la versión más reciente de Azure AD Connect. "
 
-## <a name="exchange-online"></a>Exchange en línea 
+## <a name="exchange-online"></a>Exchange Online 
 
 - `myaccount.msft.com` solo funcionará después del traslado de Office 365. Los vínculos producirán mensajes de error "se ha producido un problema" hasta esa fecha.
 

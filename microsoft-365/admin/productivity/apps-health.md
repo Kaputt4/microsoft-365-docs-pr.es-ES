@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Los detalles de la tecnología de estado de Microsoft 365 apps experimentan una puntuación de productividad.
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123516"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562948"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Experiencias de tecnología de Microsoft 365, estado de las aplicaciones
 
-La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con métricas sobre cómo los usuarios usan las aplicaciones de Microsoft 365 y las experiencias tecnológicas auxiliares. La puntuación refleja el rendimiento de su organización&#39;s de personas y categorías de experiencia de tecnología y compara su puntuación con organizaciones como la suya. La categoría de estado de las aplicaciones forma parte de las medidas que caen dentro de las experiencias tecnológicas. Consulte la [información general sobre la puntuación de productividad](productivity-score.md) para obtener más información.
+La puntuación de productividad proporciona información sobre el recorrido de la transformación digital de la organización mediante el uso de Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones similares a la suya. La categoría de estado de las aplicaciones forma parte de las medidas que caen dentro de las experiencias tecnológicas. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Por qué su organización&#39;s puntuación de estado de aplicaciones de Microsoft 365 es importante
 
@@ -101,11 +101,11 @@ Este gráfico muestra la línea de tendencia de los dispositivos que ejecutan ve
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Gráfico que Showa el número de dispositivos que ejecutan las versiones más recientes y compatibles de las aplicaciones a lo largo del tiempo.":::
 
-## <a name="people-in-your-organization"></a>Personas de su organización
+## <a name="devices-in-your-organization"></a>Dispositivos de la organización
 
 Esta sección le ayudará a actuar sobre las métricas que desea centrar proporcionando información relevante a todas las métricas de experiencias de tecnología de estado de Microsoft 365 apps.
 
-Las siguientes columnas se presentan en la tabla en el nivel de usuario:
+Las siguientes columnas se presentan en la tabla en el nivel de canal/versión:
 
 - **Canal** : canal actual de aplicaciones de Microsoft 365 en los dispositivos.
 - **Estado:**   La compatibilidad con aplicaciones de Microsoft 365 el estado de los dispositivos según el canal y la versión actuales.

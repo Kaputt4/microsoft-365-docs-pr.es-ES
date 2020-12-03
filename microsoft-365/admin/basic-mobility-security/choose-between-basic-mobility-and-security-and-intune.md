@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básica forman parte de los planes de Microsoft 365.
-ms.openlocfilehash: b9568d0aad03fc3c8a5c81d02f98f5b238124a82
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930170"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561500"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre la movilidad básica y la seguridad o Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "48930170"
  
 Tanto la movilidad básica como la seguridad y la Intune se incluyen en diversos planes, que se describen en la tabla siguiente.
 
-|**Planear**|**Movilidad y seguridad básica**|**Microsoft Intune**|
+| Plan | Movilidad y seguridad básica | Microsoft Intune |
 |:-----|:-----|:-----|
 |Aplicaciones de Microsoft 365|Sí|No|
 |Microsoft 365 Empresa Básico|Sí|No|
@@ -64,11 +64,11 @@ Microsoft Intune y la movilidad y la seguridad básicas integradas ofrecen la po
 >[!NOTE]
 >Puede administrar los usuarios y sus dispositivos móviles con la tecnología de Intune y la movilidad básica y la seguridad en la misma organización de Microsoft 365 Business Standard *al configurar la movilidad y la seguridad básicas en primer lugar y, a continuación, agregar Microsoft Intune*. Esto le permite elegir la movilidad y la seguridad básicas o la solución de Intune con mayor número de características. Asigne una licencia de Intune para habilitar las características de Intune.
 
-|**Área de característica**|**Características destacadas**|**Movilidad y seguridad básica**|**Microsoft Intune**|
+| Área de característica | Características destacadas | Movilidad y seguridad básica | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |Tipos de dispositivo|Administración de diferentes plataformas de sistemas operativos y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, iPad OS|
 |Cumplimiento de dispositivos|Establecer y administrar directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones de los dispositivos Android 9 y versiones posteriores. Vea los [detalles](capabilities.md). |Sí|
-|Acceso condicional según el cumplimiento del dispositivo |Evite que los dispositivos que no cumplen el acceso al correo electrónico y a los datos corporativos desde la nube. |No se admite en Windows 10.<br/>Se limita a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |No |
+|Acceso condicional según el cumplimiento del dispositivo |Evite que los dispositivos que no cumplen el acceso al correo electrónico y a los datos corporativos desde la nube. |No se admite en Windows 10.<br/>Se limita a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Sí |
 |Configuración de dispositivos  |Configurar las opciones del dispositivo (por ejemplo, deshabilitar la cámara)|Cumplimiento de dispositivos|Establecer y administrar directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones de los dispositivos Android 9 y versiones posteriores. Vea los [detalles](capabilities.md). |Sí|
  |Conjunto limitado de opciones de configuración. |Sí|
 |Perfiles de correo electrónico  |Aprovisione un perfil de correo electrónico nativo en el dispositivo. |Sí|Sí|

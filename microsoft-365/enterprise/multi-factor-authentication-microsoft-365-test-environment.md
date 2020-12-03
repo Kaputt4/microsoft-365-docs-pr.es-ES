@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: Configure multi-factor Authentication mediante mensajes de texto enviados a un smartphone en su Microsoft 365 para el entorno de prueba de la empresa.
-ms.openlocfilehash: f41fe7ad933f85c4b44a1e90529a998651412191
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4c59405c1ce59cafaf0309e2314e5cbfa4eb080a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487145"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558447"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticación multifactor para el entorno de prueba de Microsoft 365 para empresas
 
 *Esta guía del entorno de pruebas se puede usar tanto para entornos de prueba empresariales de Microsoft 365 para empresas como para Office 365.*
 
-Para obtener un nivel adicional de seguridad para iniciar sesión en Microsoft 365 o cualquier servicio o aplicación que use el inquilino de Azure AD para su suscripción, puede habilitar la autenticación multifactor de Azure, que requiere más que un nombre de usuario y una contraseña para comprobar una cuenta.
+Para obtener un nivel adicional de seguridad para iniciar sesión en Microsoft 365 o cualquier servicio o aplicación que use el inquilino de Azure AD para su suscripción, puede habilitar la autenticación multifactor de Azure AD, que requiere más que un nombre de usuario y una contraseña para comprobar una cuenta.
 
 Con la autenticación multifactor, los usuarios deben confirmar una llamada telefónica, escribir un código de comprobación enviado en un mensaje de texto o verificar la autenticación con una aplicación en su smartphone, después de escribir correctamente sus contraseñas. Solo pueden iniciar sesión después de que se cumpla este segundo factor de autenticación.
   
@@ -110,25 +110,25 @@ A continuación, cree un nuevo grupo denominado MFAUsers y agréguele la cuenta 
 
 1. En la pestaña **centro de administración de 365 de Microsoft** , seleccione **grupos** en el panel de navegación izquierdo y, a continuación, seleccione **grupos**.
 2. Seleccione **Agregar un grupo**.
-3. En el panel **elegir un tipo de grupo** , seleccione **seguridad**y, a continuación, seleccione **siguiente**.
-4. En el panel **configurar conceptos básicos** , seleccione **Crear grupo**y, a continuación, haga clic en **cerrar**.
-5. En el panel **revisar y finalizar agregar grupo** , escriba **MFAUsers**y, a continuación, seleccione **siguiente**.
+3. En el panel **elegir un tipo de grupo** , seleccione **seguridad** y, a continuación, seleccione **siguiente**.
+4. En el panel **configurar conceptos básicos** , seleccione **Crear grupo** y, a continuación, haga clic en **cerrar**.
+5. En el panel **revisar y finalizar agregar grupo** , escriba **MFAUsers** y, a continuación, seleccione **siguiente**.
 6. En la lista de grupos, seleccione el grupo **MFAUsers** .
-7. En el panel **MFAUsers** , seleccione **miembros**y, a continuación, seleccione **Ver todos y administrar miembros**.
+7. En el panel **MFAUsers** , seleccione **miembros** y, a continuación, seleccione **Ver todos y administrar miembros**.
 8. En el panel **MFAUsers** , seleccione **Agregar miembros**, seleccione la cuenta de **usuario 3** y, a continuación, seleccione **Guardar**  >  **cerrar**  >  **Close**.
 
 A continuación, cree una directiva de acceso condicional para exigir la autenticación multifactor para los miembros del grupo MFAUsers.
 
 1. En una pestaña nueva del explorador, vaya a [https://portal.azure.com](https://portal.azure.com) .
-2. Seleccione **Azure Active Directory**  >  **Security**  >  **acceso condicional**de seguridad de Azure Active Directory.
+2. Seleccione **Azure Active Directory**  >  **Security**  >  **acceso condicional** de seguridad de Azure Active Directory.
 3. En el panel **acceso condicional-directivas** , seleccione **nueva Directiva**.
 4. En el panel **nuevo** , escriba **MFA para las cuentas de usuario** en el cuadro **nombre** .
 5. En la sección **asignaciones** , seleccione **usuarios y grupos**.
-6. En la ficha **incluir** del panel **usuarios y grupos** , seleccione **Seleccionar usuarios y**grupos, seleccione usuarios y  >  **grupos**  >  **Select**.
+6. En la ficha **incluir** del panel **usuarios y grupos** , seleccione **Seleccionar usuarios y** grupos, seleccione usuarios y  >  **grupos**  >  **Select**.
 7. En el panel de **selección** , seleccione el grupo **MFAUsers** y, a continuación, seleccione **seleccionar**  >  **listo**.
 8. En la sección **controles de acceso** del panel **nuevo** , seleccione **conceder**.
-9. En el panel **conceder** , seleccione **requerir autenticación multifactor**y, a continuación, seleccione **seleccionar**.
-10. En el panel **nuevo** , seleccione **activado** para **Habilitar Directiva**y, a continuación, seleccione **crear**.
+9. En el panel **conceder** , seleccione **requerir autenticación multifactor** y, a continuación, seleccione **seleccionar**.
+10. En el panel **nuevo** , seleccione **activado** para **Habilitar Directiva** y, a continuación, seleccione **crear**.
 11. Cierre las pestañas **Azure portal** y **centro de administración de Microsoft 365** .
 
 Para probar esta Directiva, cierre sesión e inicie sesión con la cuenta de usuario 3. Se le pedirá que configure la MFA. Esto demuestra que se está aplicando la Directiva MFAUsers.

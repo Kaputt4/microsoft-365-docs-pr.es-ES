@@ -2,8 +2,8 @@
 title: Búsqueda y etiquetado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: En eDiscovery avanzado, el módulo de búsqueda y etiquetado le permite buscar, obtener una vista previa y organizar los documentos en su caso. Actualmente, este módulo está en versión beta.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7afa106d07e60dfc297b90c25965dafeeb7337a7
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818899"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562937"
 ---
 # <a name="search-and-tagging"></a>Búsqueda y etiquetado
 
@@ -64,9 +64,9 @@ En la siguiente tabla se enumeran las propiedades que se pueden buscar con una c
 |**relevancetag_ [tagName]**\*\* <br/> | Si un elemento se ha etiquetado manualmente para la relevancia, la etiqueta definida por [tagName]. <br/> |
 |||
 
-\*Solo está disponible si se ha ejecutado el módulo de temas.
+\* Solo está disponible si se ha ejecutado el módulo de temas.
 
-\*\*Solo está disponible si se ha ejecutado el módulo de relevancia.
+\*\* Solo está disponible si se ha ejecutado el módulo de relevancia.
 
 Como alternativa, puede usar una tarjeta de condición en la herramienta de búsqueda de eDiscovery avanzada para agregar una condición (para las propiedades seleccionadas) a una consulta de búsqueda. En la siguiente captura de pantalla se muestran las condiciones que se pueden agregar a una consulta. La columna **Grupo** indica si la propiedad se aplica al correo electrónico, a los documentos del sitio o a ambos (indicado por el valor *Common*). Esta columna también identifica las propiedades que se pueden buscar y que están disponibles después de ejecutar el módulo relevancia.
 
