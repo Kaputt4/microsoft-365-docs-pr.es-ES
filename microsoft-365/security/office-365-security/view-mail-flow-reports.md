@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357928"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572806"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -76,7 +76,7 @@ Si hace clic en **filtros** en una vista de informe, puede especificar un interv
 
 Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección y nombre del conector**
 - **Tipo de conector**
 - **¿TLS forzado?**: el valor **true** o **false**.
@@ -132,24 +132,24 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: reglas de transporte de Exchange**:
 
-  - **Fecha**
+  - **Date**
   - **Regla de transporte**
-  - **Asunto**
+  - **Subject**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
-  - **Dirección**
+  - **Direction**
 
 - **Ver datos por: reglas de transporte de DLP de Exchange**:
 
-  - **Fecha**
+  - **Date**
   - **Directiva DLP**
   - **Regla de transporte**
-  - **Asunto**
+  - **Subject**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
-  - **Dirección**
+  - **Direction**
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -240,7 +240,7 @@ Puede cambiar estos filtros haciendo clic en **filtrar** o haciendo clic en un v
 
 La tabla de datos contiene la siguiente información:
 
-- **Dirección**
+- **Direction**
 - **Tipo**
 - **24 horas**
 - **3 días**
@@ -318,7 +318,7 @@ Para ver el correo electrónico filtrado por EOP o defender para Office 365 por 
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Protección perimetral**
 - **Anti-malware, reputación de archivo, bloque de tipo de archivo**:
@@ -387,7 +387,7 @@ Cuando desplaza el puntero sobre una categoría del gráfico, puede ver el núme
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-- **Fecha**
+- **Date**
 - **Correo electrónico total**
 - **Borde filtrado**
 - **Motor antimalware, datos adjuntos seguros, regla filtrado**:
@@ -463,7 +463,7 @@ Si hace clic en **ver tabla de detalles** en el cuadro **desglosar por: direcci�
 
 - **Fecha (UTC)**
 - **Tipo**
-- **Dirección**
+- **Direction**
 - **Número de mensajes**
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
@@ -535,19 +535,16 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
-Para ver y usar los informes, debe ser miembro del grupo de roles especificado en el centro de seguridad & cumplimiento **y** en Exchange Online.
+Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
 
-- En el centro de seguridad & cumplimiento, debe ser miembro de uno de los siguientes grupos de roles:
+- **Administración de organizaciones**
+- **Administrador de seguridad**
+- **Lector de seguridad**
+- **Lector global**
 
-  -Organization Management-administrador de seguridad (también puede hacerlo en el [centro de administración de Azure Active Directory](https://aad.portal.azure.com) -lector de seguridad
+Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-
-- En Exchange Online, debe ser miembro de uno de los siguientes grupos de roles:
-
-  -Administración de la organización: administración de la organización de solo vista-destinatarios de solo vista-administración de cumplimiento
-
-Para obtener más información, consulte [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) y [Manage role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="related-topics"></a>Temas relacionados
 

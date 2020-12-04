@@ -1,5 +1,5 @@
 ---
-title: El gobierno primero
+title: Crear el plan de gobierno de colaboración
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: El gobierno primero
-ms.openlocfilehash: 7f6104997028434b9c8aeab946ac6e1f06a61c84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Obtenga información sobre cómo crear su plan de gobierno de colaboración
+ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377430"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568287"
 ---
-# <a name="governance-first"></a>El gobierno primero
+# <a name="create-your-collaboration-governance-plan"></a>Crear el plan de gobierno de colaboración
 
 Siempre es mejor empezar a pasar a Microsoft 365 con una visión clara:
 
@@ -34,9 +34,9 @@ Siempre es mejor empezar a pasar a Microsoft 365 con una visión clara:
 
 Una visión clara proporciona una orientación fundamental a las desventajas de decisiones inevitables que tendrá que tener en cuenta en relación con el plan de gobierno. El grado de formalidad y la profundidad que necesita para documentar el plan de gobierno deben alinearse con los resultados que desea obtener. Por lo tanto, la visión proporciona un marco de trabajo tanto para el contexto como para la inversión en el gobierno.
 
-La nube de Microsoft 365 crea nuevos paradigmas para tecnologías que admiten la empresa. Estos nuevos paradigmas cambian la forma en que se adoptan, administran y rigen estas tecnologías. 
+Microsoft 365 crea nuevos paradigmas para tecnologías que admiten la empresa. Estos nuevos paradigmas cambian la forma en que se adoptan, administran y rigen estas tecnologías. 
 
-El gobierno de Microsoft 365 debe complementar las directivas existentes que rigen los entornos locales.  Pero, dado que la nube permite nuevas oportunidades para apoyar la empresa, es importante comprender estas oportunidades y pensar en un enfoque de gobierno que cree un equilibrio adecuado entre los objetivos del usuario, el riesgo empresarial y los requisitos de la industria y la normativa.
+El gobierno de Microsoft 365 debe complementar las directivas existentes que rigen los entornos locales. Pero, dado que la nube permite nuevas oportunidades para apoyar la empresa, es importante comprender estas oportunidades y pensar en un enfoque de gobierno que cree un equilibrio adecuado entre los objetivos del usuario, el riesgo empresarial y los requisitos de la industria y la normativa.
 
 Pensar en el gobierno es, en primer lugar, comenzar el recorrido a la nube con algunas decisiones clave para que la mejor posición sea correcta para el éxito general. Algunas de estas decisiones son:
 
@@ -58,11 +58,11 @@ La planeación de gobierno para Microsoft 365 se ocupa de garantizar que se prot
 
 - **Garantía** de los resultados: los propietarios de los sitios o de los equipos están habilitados en la dirección adecuada para obtener resultados empresariales. El aseguramiento de los resultados se refiera en gran medida a la orientación a los autores de contenido y a los propietarios de grupos y equipos, garantizando que esté disponible la formación adecuada para garantizar que saben cómo tomar las decisiones adecuadas para obtener los resultados deseados en las prácticas y estándares generales de la organización.
 
-La planeación de los controles debe ir en primer lugar, pero el gobierno debe volver a visitarlo continuamente en un proceso iterativo. Como su inmueble de datos cambia con el tiempo, querrá volver a visitar las decisiones de gobierno para adaptarse a las necesidades empresariales cambiantes y a la disponibilidad de características. Es posible que necesite una supervisión mayor para garantizar la conformidad. Es posible que necesite menos supervisión para fomentar una aplicación más creativa de las características principales. Es posible que tenga que actualizar los roles y las responsabilidades para reflejar los cambios en la solución o los cambios en la forma en que los usuarios usan aplicaciones diferentes.
+La planeación de los controles debe ir en primer lugar, pero el control debe ser un proceso que se vuelve a revisar continuamente en un proceso iterativo. Como su inmueble de datos cambia con el tiempo, querrá volver a visitar las decisiones de gobierno para adaptarse a las necesidades empresariales cambiantes y a la disponibilidad de características. Es posible que necesite una supervisión mayor para garantizar la conformidad. Es posible que necesite menos supervisión para fomentar una aplicación más creativa de las características principales. Es posible que tenga que actualizar los roles y las responsabilidades para reflejar los cambios en la solución o los cambios en la forma en que los usuarios usan aplicaciones diferentes.
 
-Por ejemplo, una de las capacidades clave que permiten a Microsoft 365 es la capacidad de trabajar fácilmente en colaboración con usuarios y organizaciones externos. Algunas organizaciones de algunas industrias eligen bloquear todo el uso compartido externo. Otros permiten el uso compartido externo en escenarios específicos o con organizaciones específicas. No hay una decisión de gobierno correcta o incorrecta en relación con el uso compartido externo – y hay muchos escenarios diferentes en los que puede habilitar diferentes configuraciones en Microsoft 365 para permitir el uso compartido en algunos casos y bloquearlo en otros. Sin embargo, si solo comienza el recorrido desde un entorno local a la nube, es importante que piense en las decisiones sobre el uso compartido externo y que comprenda las ventajas y los riesgos asociados con las diferentes opciones disponibles.
+Por ejemplo, una de las capacidades clave que permiten a Microsoft 365 es la capacidad de trabajar fácilmente en colaboración con personas de fuera de la organización. Algunas organizaciones de algunas industrias eligen bloquear todo el uso compartido externo. Otros permiten el uso compartido externo en escenarios específicos o con organizaciones específicas. No hay una decisión de gobierno correcta o incorrecta en relación con el uso compartido externo – y hay muchos escenarios diferentes en los que puede habilitar diferentes configuraciones en Microsoft 365 para permitir el uso compartido en algunos casos y bloquearlo en otros. Sin embargo, si solo comienza el recorrido desde un entorno local a la nube, es importante que piense en las decisiones sobre el uso compartido externo y que comprenda las ventajas y los riesgos asociados con las diferentes opciones disponibles.
 
-## <a name="why-think-about-governance-first"></a>¿Por qué pensar en el gobierno primero?
+## <a name="think-about-governance-first"></a>Piense primero en el gobierno
 
 Su inversión en Microsoft 365 es tan solo tan buena como el valor del contenido y de las experiencias que habilita, por lo que pensar en el gobierno al principio del recorrido garantiza que no se bloqueará ni habilitará demasiado antes de que haya tenido la oportunidad de comprender y evaluar las implicaciones de cada decisión. Hay varios "botones y" diales "que puede activar en el centro de administración de Microsoft 365 y para sitios y equipos individuales. Un plan de gobierno eficaz es crítico para lograr los objetivos empresariales, pero el gobierno se ocupa del equilibrio entre los riesgos y las ventajas. Si se bloquea todo, los usuarios encontrarán una forma de trabajar con las reglas si lo necesitan para realizar su trabajo.
 
@@ -130,7 +130,7 @@ En última instancia, el éxito de los esfuerzos de planeación del gobierno dep
 
 - ¿Debe crear una certificación y una nueva certificación para los propietarios de sitios y equipos?
 
-- ¿Puede crear un programa de Microsoft 365 Champions para su organización? Además, considere la posibilidad de unirse al programa Worldwide Champions de Microsoft 365 para obtener ideas y enfoques para su propio programa de campeones y para conectarse con personas afines y con líderes de pensamiento dentro y alrededor de Microsoft.
+- ¿Puede crear un programa de Microsoft 365 Champions para su organización? Además, considere la posibilidad de unirse al [programa Worldwide Champions de Microsoft 365](https://aka.ms/O365Champions) para obtener ideas y enfoques para su propio programa de campeones y para conectarse con personas afines y con líderes de pensamiento dentro y alrededor de Microsoft.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -139,3 +139,5 @@ En última instancia, el éxito de los esfuerzos de planeación del gobierno dep
 [Información general sobre el gobierno de SharePoint](https://docs.microsoft.com/sharepoint/governance-overview)
 
 [Planeación del gobierno de la organización y el ciclo de vida para servicios de grupos](plan-organization-lifecycle-governance.md)
+
+[Colaboración de archivos en SharePoint con Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)

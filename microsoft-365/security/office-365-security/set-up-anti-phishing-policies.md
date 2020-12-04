@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376351"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568579"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -200,11 +200,10 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **Dominios suplantados**: la dirección de contiene un dominio protegido.
   - **Caracteres inusuales**: la dirección de contiene juegos de caracteres inusuales (por ejemplo, símbolos matemáticos y texto o una combinación de letras mayúsculas y minúsculas) en un dominio o remitente protegido.
 
-> [!IMPORTANT]
->
-> Incluso cuando se desactivan las sugerencias de seguridad de suplantación, **se recomienda** usar una regla de flujo de correo (también denominada regla de transporte) para agregar un encabezado de mensaje denominado **X-MS-Exchange-EnableFirstContactSafetyTip** a los mensajes. Se mostrarán sugerencias de seguridad específicas para notificar a los destinatarios que a menudo no reciben correo electrónico del remitente o en casos en los que el destinatario recibe un correo por primera vez del remitente.
->:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="El texto de la sugerencia de seguridad para la protección de suplantación con varios destinatarios.":::
-<p>
+  > [!IMPORTANT]
+  >
+  > Incluso cuando se desactivan las sugerencias de seguridad de suplantación, se **recomienda** usar una regla de flujo de correo (también denominada regla de transporte) para agregar un encabezado de mensaje denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con el valor **Habilitar** en los mensajes. Una sugerencia de seguridad notificará a los destinatarios la primera vez que reciban un mensaje del remitente o si no suelen recibir mensajes del remitente.
+  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="El texto de la sugerencia de seguridad para la protección de suplantación con varios destinatarios.":::
 
 - **Inteligencia de buzones**: habilita o deshabilita la inteligencia artificial (AI) que determina los patrones de correo electrónico del usuario con sus contactos frecuentes. Esta configuración ayuda a los AI a distinguir los correos electrónicos legítimos y falsos de los contactos. La inteligencia de buzones solo está disponible para buzones de Exchange Online.
 

@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087084"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569992"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Herramienta de prueba de conectividad de red 365 de Microsoft (versión preliminar)
 
 La herramienta de prueba de conectividad de red de Microsoft 365 se encuentra en <https://connectivity.office.com> . Se trata de una herramienta de Adjunct a la información de evaluación de red y de información de red disponible en el centro de administración de Microsoft 365 en el área **mantenimiento | Menú conectividad** .
+
+> [!IMPORTANT]
+> Es importante iniciar sesión en su inquilino de Microsoft 365, ya que todos los informes de pruebas se comparten con el administrador y se cargan en el inquilino mientras haya iniciado sesión.
 
 ![Herramienta de prueba de conectividad](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
@@ -173,7 +176,7 @@ Muestra las ubicaciones de las puertas de las puertas de los servicios de Exchan
 
 Muestra el nombre DNS y la dirección IP del servidor de la puerta de servicio de Exchange al que se dirigió. Se proporciona solo para información y no hay ningún conocimiento de la red asociado.
 
-### <a name="sharepoint-online"></a>SharePoint Online
+### <a name="sharepoint-online"></a>SharePoint en linea
 
 En esta sección se muestran los resultados de pruebas relacionados con SharePoint Online y OneDrive.
 

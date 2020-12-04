@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Microsoft defender para Office 365
-ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845737"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572782"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en EOP y Microsoft defender para Office 365
 
@@ -44,32 +44,32 @@ Además, el orden de prioridad es importante si se aplican varias directivas de 
 
 Un perfil determina el nivel de protección. Están disponibles los siguientes perfiles:
 
-- **Protección estándar** : Perfil de protección de línea de base adecuado para la mayoría de los usuarios.
-- **Protección estricta** : un perfil de protección más agresivo para los usuarios seleccionados (objetivos de valor alto o usuarios con prioridad).
+- **Protección estándar**: Perfil de protección de línea de base adecuado para la mayoría de los usuarios.
+- **Protección estricta**: un perfil de protección más agresivo para los usuarios seleccionados (objetivos de valor alto o usuarios con prioridad).
 
 Las reglas se usan con condiciones y excepciones que determinan a quién se aplican o qué perfiles.
 
-Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
 Las condiciones y excepciones disponibles son:
 
-- **Los destinatarios son** : buzones de correo, usuarios de correo o contactos de correo de su organización.
-- **Los destinatarios son miembros de** : grupos de su organización.
-- **Los dominios de destinatarios son** : dominios aceptados que están configurados en Microsoft 365.
+- **Los destinatarios son**: buzones de correo, usuarios de correo o contactos de correo de su organización.
+- **Los destinatarios son miembros de**: grupos de su organización.
+- **Los dominios de destinatarios son**: dominios aceptados que están configurados en Microsoft 365.
 
 ### <a name="policies-in-preset-security-policies"></a>Directivas en directivas de seguridad predefinidas
 
 Las directivas de seguridad preestablecidas usan las directivas correspondientes de las diversas características de protección de EOP y Microsoft defender para Office 365. Estas directivas se crean _después_ de asignar directivas de seguridad de **protección estándar** o de **protección estricta** a los usuarios. No puede modificar estas directivas.
 
-- **Directivas de Exchange Online Protection (EOP)** : Esto incluye a Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de EOP sin buzones de Exchange Online:
+- **Directivas de Exchange Online Protection (EOP)**: Esto incluye a Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de EOP sin buzones de Exchange Online:
   
   - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md) que se denominan **Directiva de seguridad preestablecida estándar** y **estricta**.
   - [Directivas antimalware](configure-anti-malware-policies.md) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida**.
   - [Las directivas de suplantación de identidad de EOP](set-up-anti-phishing-policies.md#spoof-settings) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida** (configuración de falsificación).
 
-- **Directivas de Microsoft defender para office 365** : Esto incluye a las organizaciones con las suscripciones complementarias de Microsoft 365 E5 o defender para Office 365:
+- **Directivas de Microsoft defender para office 365**: Esto incluye a las organizaciones con las suscripciones complementarias de Microsoft 365 E5 o defender para Office 365:
 
-  - Directivas antiphishing en Microsoft defender para Office 365 denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida** , que incluye:
+  - Directivas antiphishing en Microsoft defender para Office 365 denominada **Directiva de seguridad predeterminada estándar** y **estricta Directiva de seguridad preestablecida**, que incluye:
 
     - La misma [configuración de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad que están disponibles en las directivas de protección contra suplantación de EOP.
     - [Configuración de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -104,28 +104,21 @@ En otras palabras, la configuración de la Directiva de **protección estricta**
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para poder realizar los procedimientos de este tema, deberá tener asignados los permisos necesarios:
+- Debe tener permisos asignados para poder realizar los procedimientos descritos en este artículo:
 
-  - Para configurar directivas de seguridad preestablecidas, debe pertenecer a uno de los siguientes grupos de roles:
+  - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los roles administración de la **organización** o **Administrador de seguridad** en el centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-    - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-
-  - Para obtener acceso de solo lectura a directivas de seguridad preestablecidas, debe ser miembro de uno de los siguientes grupos de roles:
-
-    - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Lector global** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Para obtener acceso de solo lectura a directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **lector global** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Usar el centro de seguridad & cumplimiento para asignar directivas de seguridad preestablecidas a los usuarios
 
 1. En el centro de seguridad & cumplimiento, vaya **Threat management** a directivas de \> **Policy** \> **seguridad preestablecidas** de directiva de administración de amenazas.
 
-2. En **protección estándar** o **protección estricta** , haga clic en **Editar**.
+2. En **protección estándar** o **protección estricta**, haga clic en **Editar**.
 
 3. Se inicia el Asistente para **aplicar protección estándar** o **aplicar protección estricta** . En las **protecciones de EOP se aplican al** paso, identifique los destinatarios internos a los que se aplican las [protecciones de EOP](#policies-in-preset-security-policies) :
 
-   1. Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si** :
+   1. Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si**:
 
       - **Los destinatarios son**
       - **Los destinatarios son miembros de**

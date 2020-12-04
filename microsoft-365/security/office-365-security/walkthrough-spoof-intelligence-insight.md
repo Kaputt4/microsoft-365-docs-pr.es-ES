@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo funciona el conocimiento de inteligencia de suplantación de identidad. Pueden determinar rápidamente qué remitentes están enviando de forma legítima correo electrónico a sus organizaciones desde dominios que no pasan comprobaciones de autenticación de correo electrónico (SPF, DKIM o DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920483"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572746"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Tutorial: información sobre inteligencia de inteligencia contra la simulación en Microsoft defender para Office 365
 
@@ -44,12 +44,13 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
   Puede ver la información de inteligencia de inteligencia de suplantación de más de un panel en el centro de seguridad & cumplimiento. Independientemente del panel que esté mirando, la visión proporciona los mismos detalles y le permite realizar rápidamente las mismas tareas.
 
-- Debe tener permisos asignados para poder realizar los procedimientos de este tema. Para usar el conocimiento de inteligencia de suplantación de identidad, debe pertenecer a uno de los siguientes grupos de roles:
+- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+  - **Administración de organizaciones**
+  - **Administrador de seguridad**
+  - **Lector de seguridad**
+  - **Lector global**
 
-  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
-  - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 - Puede habilitar y deshabilitar inteligencia simulada en directivas antiphishing en Microsoft defender para Office 365. Para obtener más información, vea [Configure anti-phishing policies in Microsoft defender for Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -61,8 +62,8 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
 2. En la fila **información** , busque uno de los siguientes elementos:
 
-   - **Inteligencia de identidad habilitada** : la información se denomina **dominios falseados que no superaron la autenticación de los últimos 30 días**. Este valor es predeterminado.
-   - La **inteligencia de identidad está deshabilitada** : la información de la **habilitación de la protección contra** la suplantación de identidad y al hacer clic en ella le permite habilitar la inteligencia de identidad.
+   - **Inteligencia de identidad habilitada**: la información se denomina **dominios falseados que no superaron la autenticación de los últimos 30 días**. Este valor es predeterminado.
+   - La **inteligencia de identidad está deshabilitada**: la información de la **habilitación de la protección contra** la suplantación de identidad y al hacer clic en ella le permite habilitar la inteligencia de identidad.
 
 3. El conocimiento del panel muestra la siguiente información:
 
@@ -70,9 +71,9 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
    Esta visión tiene dos modos:
 
-   - **Modo Insight** : Si la inteligencia de identidad está habilitada, el conocimiento le muestra cuántos mensajes se vieron afectados por nuestras capacidades de inteligencia empresarial de suplantación en los últimos 30 días.
+   - **Modo Insight**: Si la inteligencia de identidad está habilitada, el conocimiento le muestra cuántos mensajes se vieron afectados por nuestras capacidades de inteligencia empresarial de suplantación en los últimos 30 días.
 
-   - **Mode if** : Si la inteligencia de identidad está deshabilitada, la información muestra el número de mensajes que se *verían* afectados por nuestras capacidades de inteligencia de suplantación en los últimos 30 días.
+   - **Mode if**: Si la inteligencia de identidad está deshabilitada, la información muestra el número de mensajes que se *verían* afectados por nuestras capacidades de inteligencia de suplantación en los últimos 30 días.
 
    En cualquier caso, los dominios suplantados que se muestran en la información se separan en dos categorías: **pares de dominios sospechosos** y **pares de dominios no sospechosos**. Estas categorías se subdividen en tres diferentes recipientes para su revisión.
 
@@ -84,11 +85,11 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
    Los **pares de dominios sospechosos** incluyen:
 
-   - **Suplantación de confianza alta** : según los patrones de envío históricos y la puntuación de reputación de los dominios, tenemos muy seguros que los dominios son suplantación de identidad y que los mensajes de estos dominios son más propensos a ser malintencionados.
+   - **Suplantación de confianza alta**: según los patrones de envío históricos y la puntuación de reputación de los dominios, tenemos muy seguros que los dominios son suplantación de identidad y que los mensajes de estos dominios son más propensos a ser malintencionados.
 
-   - **Simulación de confianza moderada** : según los patrones de envío históricos y la puntuación de reputación de los dominios, estamos muy seguros de que los dominios son suplantación de identidad y que los mensajes enviados desde estos dominios son legítimos. Los falsos positivos son más probables en esta categoría que la suplantación de confianza alta.
+   - **Simulación de confianza moderada**: según los patrones de envío históricos y la puntuación de reputación de los dominios, estamos muy seguros de que los dominios son suplantación de identidad y que los mensajes enviados desde estos dominios son legítimos. Los falsos positivos son más probables en esta categoría que la suplantación de confianza alta.
 
-   - **Pares de dominios no sospechosos** (incluye la **suplantación de identidad recuperada** ): el dominio no pudo comprobar la autenticación de correo electrónico explícita [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md). Sin embargo, el dominio pasó nuestras comprobaciones de autenticación de correo electrónico IMPLÍCITAS ([autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, no se ha llevado a cabo ninguna acción contra la suplantación de identidad en el mensaje.
+   - **Pares de dominios no sospechosos** (incluye la **suplantación de identidad recuperada**): el dominio no pudo comprobar la autenticación de correo electrónico explícita [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md). Sin embargo, el dominio pasó nuestras comprobaciones de autenticación de correo electrónico IMPLÍCITAS ([autenticación compuesta](email-validation-and-authentication.md#composite-authentication)). Como resultado, no se ha llevado a cabo ninguna acción contra la suplantación de identidad en el mensaje.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Ver información detallada sobre los pares de dominios sospechosos desde el conocimiento de inteligencia de suplantación
 
@@ -119,7 +120,7 @@ Permitir un par de dominios solo permite la combinación del dominio falso *y* l
 
 Por ejemplo, permite que el siguiente par de dominios envíe mensajes falsos a su organización:
 
-- *Dominio falso* : gmail.com "
+- *Dominio falso*: gmail.com "
 - *Infraestructura de envío* `tms.mx.com` :
 
 Solo se permitirá la suplantación a correo electrónico de ese par de dominios. No se permiten otros remitentes que intenten imitar gmail.com. La inteligencia de identidad comprueba los mensajes de otros dominios de tms.mx.com.

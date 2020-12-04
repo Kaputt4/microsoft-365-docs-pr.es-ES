@@ -1,5 +1,5 @@
 ---
-title: Crear un sitio de comunicaciones
+title: Crear un sitio de comunicación
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un sitio de comunicaciones para la campaña.
-ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5bd0dd36188f5ec1d550c9baa875e18debd99528
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165726"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569968"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Crear un sitio de comunicaciones para la campaña
 
@@ -42,7 +42,7 @@ Incluya los siguientes elementos en el sitio de comunicaciones:
 2. Lidere con su estrategia, mensaje, documentos importantes, un directorio y preguntas frecuentes en un **elemento Web de Hero**.
 3. Incluya una instrucción candidata para el equipo en un **elemento Web de texto**.
 4. Agregue eventos de campaña a un **elemento Web Events** para que todos los usuarios puedan ver lo próximo.
-5. Agregue fotos que los usuarios pueden usar o compartir con un **elemento Web**de la galería de imágenes.
+5. Agregue fotos que los usuarios pueden usar o compartir con un **elemento Web** de la galería de imágenes.
 
 ![Diagrama de una página de comunicaciones de SharePoint con espacio para los elementos comunes que necesitará una campaña](../media/m365-democracy-comms-site.png)
 
@@ -51,7 +51,7 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 
 [![Imagen para el sitio de comunicaciones infografía](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
-[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | de[PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)
+[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 
 ## <a name="set-it-up"></a>Configúrelo

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón de correo compartido.
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445704"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568299"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -42,7 +42,7 @@ Antes [de crear un buzón compartido](create-a-shared-mailbox.md), aquí le indi
 
 - **Usuarios externos:** No puede conceder acceso a su buzón compartido a personas ajenas a la empresa (como personas con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, vea [Create a Microsoft 365 Group in the admin Center](../create-groups/create-groups.md).
 
--  **Usar con Outlook:** Además de usar Outlook en la web desde el explorador para acceder a los buzones de correo compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, consulte <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Agregar un buzón compartido a Outlook Mobile</a>. Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar grupos](../create-groups/compare-groups.md).  
+- **Usar con Outlook:** Además de usar Outlook en la web desde el explorador para acceder a los buzones de correo compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, consulte [Agregar un buzón compartido a Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar grupos](../create-groups/compare-groups.md).
 
 - **Cifrado:** No se puede cifrar el correo electrónico enviado desde un buzón compartido. Esto se debe a que un buzón compartido no tiene su propio contexto de seguridad (nombre de usuario/contraseña), por lo que no se le puede asignar una clave. Si más de una persona es miembro de y envían o reciben mensajes de correo electrónico cifrados con sus propias claves, es posible que otros miembros puedan leer el correo electrónico y otros no, en función de la clave pública con la que se cifró el correo electrónico.
 

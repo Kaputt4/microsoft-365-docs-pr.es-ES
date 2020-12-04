@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527750"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568595"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -60,10 +60,10 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 1. En la sección **tipo de objeto** , seleccione **correo electrónico**. En la sección **formato de envío** , use una de las siguientes opciones:
 
-   - **Identificador de mensaje de red**: es un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-ID** del mensaje.
+   - **Identificador de mensaje de red**: es un valor GUID que está disponible en el encabezado **x-MS-Exchange-Organization-Network-Message-ID** del mensaje, o en el encabezado **x-MS-Office365-Filtering-Correlation-ID** en los mensajes en cuarentena.
 
    - **Archivo**: haga clic en **elegir archivo**. En el cuadro de diálogo que se abre, busque y seleccione el archivo. eml o. msg y, a continuación, haga clic en **abrir**.
-   
+
    > [!NOTE]
    > Los administradores con defender para Office 365 plan 1 o plan 2 pueden enviar mensajes con una antigüedad de 30 días. Otros administradores solo podrán retroceder 7 días.
 
@@ -244,7 +244,7 @@ Para exportar los resultados, haga clic en **exportar** cerca de la parte superi
 
 ## <a name="undo-user-submissions"></a>Deshacer envíos de usuario
 
-Una vez que un usuario envía un correo electrónico sospechoso al buzón personalizado, el usuario y el administrador no tienen la opción de deshacer el envío. Si el usuario desea recuperar el correo electrónico, estará disponible para su recuperación en las carpetas elementos eliminados o correo electrónico no deseado. 
+Una vez que un usuario envía un correo electrónico sospechoso al buzón personalizado, el usuario y el administrador no tienen la opción de deshacer el envío. Si el usuario desea recuperar el correo electrónico, estará disponible para su recuperación en las carpetas elementos eliminados o correo electrónico no deseado.
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Enviar mensajes a Microsoft desde el buzón personalizado
 

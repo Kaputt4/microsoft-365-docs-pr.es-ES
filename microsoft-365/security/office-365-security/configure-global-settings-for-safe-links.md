@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo ver y configurar las opciones globales (la lista "bloquear las siguientes direcciones URL" y la protección de las aplicaciones de Office 365) para obtener vínculos seguros en Microsoft defender para Office 365.
-ms.openlocfilehash: 655fba35bf3675bfd571c8e4923a00fbeba85304
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842433"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572434"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Establecer la configuración global para vínculos seguros en Microsoft defender para Office 365
 
@@ -42,7 +42,7 @@ Sin embargo, vínculos seguros también usa la configuración global que se apli
 
 Puede establecer la configuración global de vínculos seguros en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para las organizaciones de Microsoft 365 con buzones de correo en Exchange Online; independiente de EOP para organizaciones sin buzones de Exchange Online, pero con Microsoft defender para Office 365 para las suscripciones complementarias).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Las características que proporciona la configuración global para vínculos seguros solo se aplican a los usuarios que se incluyen en las directivas de vínculos seguros activos. No hay una directiva de vínculos a prueba de errores integrada o predeterminada, por lo que debe crear al menos una directiva de vínculos seguros para que esta configuración global esté activa. Para obtener instrucciones, consulte [configurar directivas de vínculos seguros en Microsoft defender para Office 365](set-up-atp-safe-links-policies.md).
 
@@ -50,10 +50,16 @@ Puede establecer la configuración global de vínculos seguros en el centro de s
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Para ver y configurar las opciones globales de vínculos seguros, debe ser miembro de uno de los siguientes grupos de roles:
+- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+  - Para establecer la configuración global de vínculos seguros, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** .
+  - Para tener acceso de solo lectura a la configuración global de vínculos seguros, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
-  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **Administración** de la organización en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+  **Notas**:
+
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles administración de la **organización de solo vista** de [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para conocer los valores recomendados para la configuración global de vínculos seguros, consulte [configuración de vínculos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).
 
@@ -114,11 +120,11 @@ La protección de vínculos seguros para las aplicaciones de Office 365 se aplic
 
 2. En la **Directiva de vínculos a prueba de errores de la organización** hacia fuera que aparece, configure las siguientes opciones en la sección **configuración que se aplica a contenido, excepto correo electrónico** :
 
-   - **Aplicaciones de office 365** : Compruebe que el botón de alternancia sea el derecho para habilitar vínculos seguros para las aplicaciones de Office 365 compatibles: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Aplicaciones de office 365**: Compruebe que el botón de alternancia sea el derecho para habilitar vínculos seguros para las aplicaciones de Office 365 compatibles: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **No realizar seguimiento cuando los usuarios hacen clic en vínculos seguros** : mueva el botón de alternancia a la izquierda para realizar un seguimiento de los clics de usuario relacionados con direcciones URL bloqueadas en aplicaciones de Office 365 compatibles: desactivar ![ ](../../media/scc-toggle-off.png) .
+   - **No realizar seguimiento cuando los usuarios hacen clic en vínculos seguros**: mueva el botón de alternancia a la izquierda para realizar un seguimiento de los clics de usuario relacionados con direcciones URL bloqueadas en aplicaciones de Office 365 compatibles: desactivar ![ ](../../media/scc-toggle-off.png) .
 
-   - **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original** : Compruebe que el botón de alternancia es hacia la derecha para impedir que los usuarios hagan clic a través de la URL bloqueada original en aplicaciones admitidas de Office 365: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original**: Compruebe que el botón de alternancia es hacia la derecha para impedir que los usuarios hagan clic a través de la URL bloqueada original en aplicaciones admitidas de Office 365: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
    Cuando haya terminado, haga clic en **Guardar**.
 
@@ -146,7 +152,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Para comprobar que ha configurado correctamente la configuración global para vínculos seguros (la lista **bloquear las siguientes direcciones URL** y la configuración de protección de aplicaciones de Office 365), siga uno de estos pasos:
 
-- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links** , haga clic en **configuración global** y Compruebe la configuración de la volar hacia fuera que aparece.
+- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**, haga clic en **configuración global** y Compruebe la configuración de la volar hacia fuera que aparece.
 
 - En PowerShell de Exchange Online PowerShell o Exchange Online Protection, ejecute el siguiente comando y Compruebe la configuración:
 

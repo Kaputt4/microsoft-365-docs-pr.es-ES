@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se proporciona información para solucionar problemas con el envío de correo electrónico a los buzones de correo de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a los clientes de Microsoft 365.
-ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201748"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568559"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
@@ -51,9 +51,7 @@ Para obtener instrucciones acerca de cómo crear y mantener registros DNS, inclu
 No podemos aceptar correo electrónico de los remitentes que no logran una búsqueda de DNS inverso. En algunos casos, los remitentes legítimos se anuncian incorrectamente como IP no enrutable de Internet cuando se intenta abrir una conexión a EOP. Las direcciones IP reservadas para una red privada (no enrutable) incluyen:
 
 - 192.168.0.0/16 (o 192.168.0.0 - 192.168.255.255)
-
 - 10.0.0.0/8 (o 10.0.0.0 - 10.255.255.255)
-
 - 172.16.0.0/11 (o 172.16.0.0 - 172.31.255.255)
 
 ## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Ha recibido un informe de no entrega (NDR) al enviar un correo electrónico a un usuario en Office 365

@@ -1,5 +1,5 @@
 ---
-title: Ver informes para defender para Office 365
+title: Ver los informes de defender para Office 365 en el panel de informes
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Busque y use informes de Microsoft defender para Office 365 en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561732"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572494"
 ---
-# <a name="view-reports-for-microsoft-defender-for-office-365"></a>Ver informes de Microsoft defender para Office 365
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Ver los informes de defender para Office 365 en el panel de informes del centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -338,27 +338,16 @@ Además de los informes descritos en este tema, hay varios otros informes dispon
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver los informes de defender para Office 365?
 
-Para poder ver y usar los informes descritos en este tema, **debe tener asignada una función adecuada para el centro de seguridad & cumplimiento y el centro de administración de Exchange**.
+Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
 
-- Para el centro de seguridad & cumplimiento, debe tener asignada una de las siguientes funciones:
+- **Administración de organizaciones**
+- **Administrador de seguridad**
+- **Lector de seguridad**
+- **Lector global**
 
-  - Administración de la organización
-  - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Operador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
-  - Lector de seguridad
+Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-- Para Exchange Online, debe tener una de las siguientes funciones asignadas en el centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) o con cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
-
-  - Administración de la organización
-  - Administración de organización de solo lectura
-  - Rol Destinatarios con permiso de vista
-  - Administración de cumplimiento
-
-Para obtener más información, consulte los siguientes recursos:
-
-- [Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)
-
-- [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración de vínculos seguros globales en Microsoft defender para Office 365.
-ms.openlocfilehash: ed95c72c98e0c9d59b9860e89843c5f9b4970c8e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846441"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572722"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos a prueba de errores en Microsoft defender para Office 365
 
@@ -39,8 +39,8 @@ Puede configurar directivas de vínculos seguros en el centro de seguridad & cum
 
 Los elementos básicos de una directiva de vínculos seguros son los siguientes:
 
-- **La Directiva de vínculos seguros** : activar la protección de vínculos seguros, activar el análisis de URL en tiempo real, especificar si se debe esperar a que se complete la detección en tiempo real antes de entregar el mensaje, activar el examen de mensajes internos, especificar si se realiza un seguimiento de los clics del usuario en las direcciones URL y especificar si se permite a los usuarios hacer clic en el valle.
-- **La regla de vínculos seguros** : especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva).
+- **La Directiva de vínculos seguros**: activar la protección de vínculos seguros, activar el análisis de URL en tiempo real, especificar si se debe esperar a que se complete la detección en tiempo real antes de entregar el mensaje, activar el examen de mensajes internos, especificar si se realiza un seguimiento de los clics del usuario en las direcciones URL y especificar si se permite a los usuarios hacer clic en el valle.
+- **La regla de vínculos seguros**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva).
 
 La diferencia entre estos dos elementos no es obvia cuando se administran directivas de vínculos seguros en el centro de seguridad & cumplimiento:
 
@@ -59,10 +59,16 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Para ver, crear, modificar y eliminar directivas de vínculos a prueba de errores, debe pertenecer a uno de los siguientes grupos de roles:
+- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+  - Para crear, modificar y eliminar directivas de vínculos a prueba de errores, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** .
+  - Para el acceso de solo lectura a las directivas de vínculos a prueba de errores, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
-  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **Administración** de la organización en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+  **Notas**:
+
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles administración de la **organización de solo vista** de [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para conocer la configuración recomendada para las directivas de vínculos seguros, consulte [configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -80,29 +86,29 @@ La creación de una directiva de vínculos seguros personalizada en el centro de
 
 3. Se abre el Asistente para **nueva Directiva de vínculos seguros** . En la página **asigne un nombre a la Directiva** , configure las siguientes opciones:
 
-   - **Nombre** : escriba un nombre único y descriptivo para la directiva.
+   - **Nombre**: escriba un nombre único y descriptivo para la directiva.
 
-   - **Descripción** : escriba una descripción opcional para la directiva.
+   - **Descripción**: escriba una descripción opcional para la directiva.
 
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página de **configuración** que aparece, configure las siguientes opciones:
 
-   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** : seleccione **activado** para habilitar la protección de vínculos seguros para vínculos en mensajes de correo electrónico.
+   - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: seleccione **activado** para habilitar la protección de vínculos seguros para vínculos en mensajes de correo electrónico.
 
-   - **Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams** : seleccione **activado** para habilitar la protección de vínculos seguros para vínculos en Microsoft Teams.
+   - **Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams**: seleccione **activado** para habilitar la protección de vínculos seguros para vínculos en Microsoft Teams.
 
-   - **Aplique un análisis de URL en tiempo real en busca de vínculos y vínculos sospechosos que apunten a archivos** : Seleccione esta opción para habilitar el análisis en tiempo real de vínculos en mensajes de correo electrónico.
+   - **Aplique un análisis de URL en tiempo real en busca de vínculos y vínculos sospechosos que apunten a archivos**: Seleccione esta opción para habilitar el análisis en tiempo real de vínculos en mensajes de correo electrónico.
 
-   - **Espere a que se complete el análisis de URL antes de entregar el mensaje** : Seleccione esta opción para esperar a que se complete el análisis de URL en tiempo real antes de entregar el mensaje.
+   - **Espere a que se complete el análisis de URL antes de entregar el mensaje**: Seleccione esta opción para esperar a que se complete el análisis de URL en tiempo real antes de entregar el mensaje.
 
-   - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización** : Seleccione esta opción para aplicar la Directiva de vínculos seguros a los mensajes entre los remitentes internos y los destinatarios internos.
+   - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: Seleccione esta opción para aplicar la Directiva de vínculos seguros a los mensajes entre los remitentes internos y los destinatarios internos.
 
-   - **No hacer un seguimiento de los clics del usuario** : deje esta opción sin seleccionar para permitir que el seguimiento del usuario haga clic en direcciones URL en mensajes de correo electrónico.
+   - **No hacer un seguimiento de los clics del usuario**: deje esta opción sin seleccionar para permitir que el seguimiento del usuario haga clic en direcciones URL en mensajes de correo electrónico.
 
-   - **No permita que los usuarios hagan clic a través de la dirección URL original** : Seleccione esta opción para impedir que los usuarios hagan clic a través de la dirección URL original en [las páginas de advertencia](atp-safe-links.md#warning-pages-from-safe-links).
+   - **No permita que los usuarios hagan clic a través de la dirección URL original**: Seleccione esta opción para impedir que los usuarios hagan clic a través de la dirección URL original en [las páginas de advertencia](atp-safe-links.md#warning-pages-from-safe-links).
 
-   - **No vuelva a escribir las siguientes direcciones URL** : permite el acceso a las direcciones URL especificadas que, de lo contrario, bloquearían mediante vínculos seguros.
+   - **No vuelva a escribir las siguientes direcciones URL**: permite el acceso a las direcciones URL especificadas que, de lo contrario, bloquearían mediante vínculos seguros.
 
      En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en ![Icono Agregar botón](../../media/ITPro-EAC-AddIcon.png).
 
@@ -118,13 +124,13 @@ La creación de una directiva de vínculos seguros personalizada en el centro de
 
 5. En la página **aplicado a** que aparece, identifique los destinatarios internos a los que se aplica la Directiva.
 
-   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si** :
+   Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si**:
 
-   - **El destinatario es** : especifica uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
-   - **El destinatario es un miembro de** : especifica uno o más grupos de la organización.
-   - **El dominio del destinatario es** : especifica los destinatarios en uno o varios de los dominios aceptados configurados en su organización.
+   - **El destinatario es**: especifica uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
+   - **El destinatario es un miembro de**: especifica uno o más grupos de la organización.
+   - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en su organización.
 
    Después de seleccionar la condición, aparece la lista desplegable correspondiente con una **de estas** casillas.
 
@@ -182,7 +188,7 @@ Para obtener más información sobre el orden de prioridad y cómo se evalúan y
 
 Las directivas de vínculos seguros se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0).
 
-**Nota** : en el centro de seguridad & cumplimiento, solo puede cambiar la prioridad de la Directiva de vínculos seguros después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (que puede afectar a la prioridad de las reglas existentes).
+**Nota**: en el centro de seguridad & cumplimiento, solo puede cambiar la prioridad de la Directiva de vínculos seguros después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla de vínculos seguros (que puede afectar a la prioridad de las reglas existentes).
 
 Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista (no puede modificar directamente el número de **Prioridad** en el Centro de seguridad y cumplimiento).
 
@@ -194,7 +200,7 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
    - La Directiva de vínculos seguros con el valor de **prioridad** **0** sólo tiene disponible el botón **disminuir prioridad** .
 
-   - La Directiva de vínculos seguros con el valor de **prioridad** más bajo (por ejemplo, **3** ) solo tiene el botón **aumentar prioridad** disponible.
+   - La Directiva de vínculos seguros con el valor de **prioridad** más bajo (por ejemplo, **3**) solo tiene el botón **aumentar prioridad** disponible.
 
    - Si tiene tres o más directivas de vínculos seguros, las directivas entre los valores de prioridad mayor y menor tienen los botones **aumentar prioridad** y **disminuir prioridad** disponibles.
 
@@ -227,14 +233,14 @@ La creación de una directiva de vínculos seguros en PowerShell es un proceso d
 1. Cree la Directiva de vínculos seguros.
 2. Cree la regla de vínculos seguros que especifica la Directiva de vínculos a prueba de errores a la que se aplica la regla.
 
- **Notas** :
+ **Notas**:
 
 - Puede crear una nueva regla de vínculos seguros y asignarle una directiva de vínculos seguros existente no asociada. No se puede asociar una regla de vínculos seguros con más de una directiva de vínculos seguros.
 
 - Puede configurar las siguientes opciones en nuevas directivas de vínculos a prueba de errores en PowerShell que no están disponibles en el centro de seguridad & cumplimiento hasta que se crea la Directiva:
 
-  - Cree la nueva directiva como deshabilitada ( _habilitada_ `$false` en el cmdlet **New-SafeLinksRule** ).
-  - Establezca la prioridad de la Directiva durante la creación ( _prioridad_ _\<Number\>_ ) en el cmdlet **New-SafeLinksRule** ).
+  - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-SafeLinksRule** ).
+  - Establezca la prioridad de la Directiva durante la creación (_prioridad_ _\<Number\>_ ) en el cmdlet **New-SafeLinksRule** ).
 
 - Una nueva Directiva de vínculos seguros que se crea en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que se asigna la Directiva a una regla de vínculos seguros.
 
@@ -246,7 +252,7 @@ Para crear una directiva de vínculos seguros, use esta sintaxis:
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Notas** :
+**Notas**:
 
 - Para obtener información detallada sobre la sintaxis de entrada que se debe usar para el parámetro _DoNotRewriteUrls_ , vea [la sintaxis de entrada de la lista "no reescribir las siguientes direcciones URL"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
@@ -416,7 +422,7 @@ Este ejemplo establece la prioridad de la regla denominada Marketing Department 
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Nota** : para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-SafeLinksRule** en su lugar.
+**Nota**: para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-SafeLinksRule** en su lugar.
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
 

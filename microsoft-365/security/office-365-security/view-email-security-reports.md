@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357940"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572566"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -61,7 +61,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
 - **Hora de creación**
 - **Nombre de usuario**
-- **Action**
+- **Acción**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
 
@@ -117,16 +117,16 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Dividir por: método de cifrado** o **desglosar por: plantilla de cifrado**: se muestra la siguiente información:
 
-  - **Fecha**
+  - **Date**
   - **Dirección del remitente**
   - **Plantilla de cifrado**
   - **Método de cifrado**
   - **Dirección del destinatario**
-  - **Asunto**
+  - **Subject**
 
 - **Ver datos por: los 5 dominios de destinatarios principales**:
 
-  - **Fecha**
+  - **Date**
   - **Dominio del destinatario**
   - **Número de mensajes**
 
@@ -162,11 +162,11 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
-- **Asunto**
+- **Subject**
 - **Filename**
 - **Nombre del malware**
 
@@ -224,12 +224,12 @@ Si hace clic en **filtros** en una vista de informe, puede modificar los resulta
 
 Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se mostrará la siguiente información:
 
-- **Fecha**
+- **Date**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
-- **Action**
-- **Asunto**
+- **Acción**
+- **Subject**
 
 Si hace clic en **filtros** en una tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -263,11 +263,11 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
-- **Fecha**
+- **Date**
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
-- **Action**
+- **Acción**
 - **Número de mensajes**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
@@ -408,7 +408,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: contenido \> Malware**:
 
-  - **Fecha**
+  - **Date**
   - **Location**
   - **Dirigida por**
   - **Nombre del malware**
@@ -417,8 +417,8 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - **Ver datos por: invalidación de mensaje**:
 
-  - **Fecha**
-  - **Asunto**
+  - **Date**
+  - **Subject**
   - **Remitente**
   - **Destinatarios**
   - **Detectado por**
@@ -436,8 +436,8 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 - Todos los demás gráficos:
 
-  - **Fecha**
-  - **Asunto**
+  - **Date**
+  - **Subject**
   - **Remitente**
   - **Destinatarios**
   - **Detectado por**
@@ -498,19 +498,16 @@ Para ver este informe, en el [centro de seguridad & cumplimiento](https://protec
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
-Para ver y usar los informes, debe ser miembro del grupo de roles especificado en el centro de seguridad & cumplimiento **y** en Exchange Online.
+Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
 
-- En el centro de seguridad & cumplimiento, debe ser miembro de uno de los siguientes grupos de roles:
+- **Administración de organizaciones**
+- **Administrador de seguridad**
+- **Lector de seguridad**
+- **Lector global**
 
-  -Organization Management-administrador de seguridad (también puede hacerlo en el [centro de administración de Azure Active Directory](https://aad.portal.azure.com) -lector de seguridad
+Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-
-- En Exchange Online, debe ser miembro de uno de los siguientes grupos de roles:
-
-  -Administración de la organización: administración de la organización de solo vista-destinatarios de solo vista-administración de cumplimiento
-
-Para obtener más información, consulte [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) y [Manage role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

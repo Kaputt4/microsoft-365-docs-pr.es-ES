@@ -17,87 +17,87 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: bdd15f7c2e74a2e30b2e4c5296cfde5e59bfb378
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561286"
+ms.locfileid: "49568461"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Las capacidades de [investigación y respuesta de amenazas de Office 365](office-365-ti.md) permiten que el equipo de seguridad de su organización Descubra y actúe en contra de las amenazas de Cybersecurity. Las capacidades de investigación y respuesta de amenazas de Office 365 incluyen características de seguimiento de amenazas, incluidos los seguimientos dignos de ser interesantes. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes. 
+Las capacidades de [investigación y respuesta de amenazas de Office 365](office-365-ti.md) permiten que el equipo de seguridad de su organización Descubra y actúe en contra de las amenazas de Cybersecurity. Las capacidades de investigación y respuesta de amenazas de Office 365 incluyen características de seguimiento de amenazas, incluidos los seguimientos dignos de ser interesantes. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes.
 
 > [!IMPORTANT]
 > Office 365 Threat Intelligence es ahora Microsoft defender para Office 365 plan 2, junto con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios de Microsoft defender para office 365](https://products.office.com/exchange/advance-threat-protection) y la [Descripción del servicio Microsoft defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
-  
+
 ## <a name="what-are-threat-trackers"></a>¿Qué son los rastreadores de amenazas?
 
 Los rastreadores de amenazas son widgets y vistas informativas que le proporcionan inteligencia sobre diferentes problemas de Cybersecurity que pueden afectar a su empresa. Por ejemplo, puede ver información sobre las campañas de malware de tendencias mediante los rastreadores de amenazas.
-  
+
 ![Ejemplo de rastreador de amenazas que muestra campañas de malware](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
-  
-La mayoría de las páginas de Tracker incluyen números de tendencia que se actualizan periódicamente, widgets para ayudarle a comprender qué problemas son los más grandes o que han crecido más y un vínculo rápido en la columna **acciones** que le conduce al explorador, donde puede ver información más detallada. 
-  
+
+La mayoría de las páginas de Tracker incluyen números de tendencia que se actualizan periódicamente, widgets para ayudarle a comprender qué problemas son los más grandes o que han crecido más y un vínculo rápido en la columna **acciones** que le conduce al explorador, donde puede ver información más detallada.
+
 ![Ejemplo de información de la campaña en el explorador](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
-  
+
 Los rastreadores son solo algunas de las numerosas características de gran calidad que obtiene con [Microsoft defender para Office 365 plan 2](office-365-ti.md). Los rastreadores de amenazas incluyen [Noteworth](#noteworthy-trackers), rastreadores de [tendencias](#trending-trackers), [consultas de seguimiento](#tracked-queries)y [consultas guardadas](#saved-queries).
-  
+
 Para ver y usar los rastreadores de amenazas en su organización, vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) y elija Threat **Management** \> **Threat Tracker**.
-  
+
 > [!NOTE]
-> Para usar los rastreadores de amenazas, debe ser administrador global, administrador de seguridad o lector de seguridad. Consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). 
-  
+> Para usar los rastreadores de amenazas, debe ser administrador global, administrador de seguridad o lector de seguridad. Consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
 ### <a name="noteworthy-trackers"></a>Seguimientos dignos de destacar
 
 Las marcas de revisión destacadas son donde encontrará las amenazas y los riesgos grandes y pequeños que pensamos que debe conocer. Los rastreadores dignos de ayuda le ayudan a averiguar si estos problemas existen en su entorno de Microsoft 365, además de un vínculo a los artículos (como este) que le ofrecen más detalles sobre lo que está sucediendo y cómo afectarán al uso que hace su organización de Office 365. Si se trata de una nueva amenaza importante (por ejemplo, Wannacry, Petya) o una amenaza existente que pudiera crear algunos nuevos retos (como nuestro otro inaugural el artículo Nemucod), aquí es donde encontrará elementos importantes nuevos que usted y su equipo de seguridad deben revisar y examinar periódicamente.
-  
+
 Por lo general, los rastreadores dignos de opinión se publicarán por un par de semanas cuando identificamos nuevas amenazas y creemos que podría necesitar la visibilidad adicional que proporciona esta característica. Una vez que haya superado el mayor riesgo de una amenaza, quitaremos ese elemento destacado. De este modo, podemos mantener la lista actualizada y actualizada con otros elementos nuevos relevantes.
-  
+
 ### <a name="trending-trackers"></a>Rastreadores de tendencias
 
 Los rastreadores de tendencias (anteriormente denominados campañas) resaltan nuevas amenazas recibidas en el correo electrónico de la organización de la semana pasada.
-  
+
 ![Ejemplo de widget de campañas de malware de tendencias](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
-  
+
 Los rastreadores de tendencias le proporcionan una idea de las nuevas amenazas que debe revisar para asegurarse de que su entorno corporativo más amplio esté preparado contra los ataques.
-  
+
 ### <a name="tracked-queries"></a>Consultas con seguimiento
 
 Las consultas con seguimiento aprovechan las consultas guardadas para evaluar periódicamente la actividad de Microsoft 365 en su organización. Esto le ofrece tendencias de eventos, con más que venir en los próximos meses. Las consultas con seguimiento se ejecutan automáticamente y proporcionan información actualizada sin tener que acordarse de volver a ejecutar las consultas.
-  
+
 ![Ejemplo de consultas con seguimiento con una seleccionada](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
-  
+
 ### <a name="saved-queries"></a>Consultas guardadas
 
 Las consultas guardadas también se encuentran en la sección de rastreadores. Puede usar consultas guardadas para almacenar las búsquedas comunes del explorador que desea volver a volver más rápido y de forma repetida, sin tener que volver a crear la búsqueda cada vez.
-  
+
 ![Ejemplo de consultas guardadas con una seleccionada](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
-  
-Siempre puede guardar una consulta de seguimiento de forma notable o cualquiera de sus propias consultas del explorador mediante el botón **Guardar consulta** en la parte superior de la página del explorador. Cualquier elemento guardado en la lista de **consultas guardadas** se mostrará en la página rastreador. 
-  
+
+Siempre puede guardar una consulta de seguimiento de forma notable o cualquiera de sus propias consultas del explorador mediante el botón **Guardar consulta** en la parte superior de la página del explorador. Cualquier elemento guardado en la lista de **consultas guardadas** se mostrará en la página rastreador.
+
 ## <a name="trackers-and-explorer"></a>Rastreadores y explorador
 
 Ya sea que esté revisando el correo electrónico, el contenido o las actividades de Office (próximamente), el explorador y los rastreadores funcionan conjuntamente para ayudarle a investigar y realizar un seguimiento de los riesgos y las amenazas de seguridad. Todos juntos, los rastreadores le proporcionan información para proteger a los usuarios al resaltar los problemas nuevos, destacados y de búsqueda frecuente, lo que garantiza que su empresa estará mejor protegida mientras se desplaza a la nube.
-  
+
 Y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras características de seguridad de Microsoft 365 haciendo clic en el botón **comentarios** en la esquina inferior derecha de la [información general del centro de seguridad & cumplimiento](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
-  
+
 ![Centro de seguridad y cumplimiento](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
-  
+
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Rastreadores y Microsoft defender para Office 365
 
 Con nuestra amenaza de inaugural de confianza, se destacan las amenazas de malware avanzadas detectadas por [datos adjuntos seguros](atp-safe-attachments.md). Si es cliente de Office 365 Enterprise E5 y no está usando [Microsoft defender para Office 365](office-365-atp.md), debe estar incluido en la suscripción. Defender para Office 365 proporciona valor incluso si tiene otras herramientas de seguridad filtrando el flujo de correo electrónico con los servicios de Office 365. Sin embargo, las características contra correo electrónico no deseado y [vínculos seguros](atp-safe-links.md) funcionan mejor cuando la solución principal de seguridad de correo electrónico es a través de Office 365.
-  
+
 ![Microsoft defender para Office 365 en el centro de seguridad & cumplimiento](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
-  
+
 En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware tradicionales significa que no está protegido lo suficiente como para evitar los ataques. Los atacantes más sofisticados de hoy usan las herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores de antimalware tradicionales basados en firmas. La característica de datos adjuntos seguros tiene archivos adjuntos de correo y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Tanto si se trata de un archivo PDF, un archivo comprimido o un documento de Office, el código malintencionado se puede ocultar en un archivo, activando una vez que la víctima la abre en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, la funcionalidad de defender para Office 365 encuentra estas amenazas en función de los comportamientos, la reputación del archivo y una serie de reglas heurísticas.
-  
+
 El filtro de nueva amenaza notable resalta los elementos detectados recientemente mediante datos adjuntos seguros. Estas detecciones representan elementos que son nuevos archivos malintencionados, que 365 Microsoft no ha encontrado previamente en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la función de datos adjuntos seguros: este Tracker importante incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
-  
-## <a name="next-steps"></a>Pasos siguientes
+
+## <a name="next-steps"></a>Siguientes pasos
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
 
