@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Microsoft defender para Office 365.
-ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: ae8c87a0bfb7f975328d8283f0b62aa12c1d5e2b
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993393"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572410"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra la suplantación de identidad en Microsoft defender para Office 365
 
@@ -35,8 +35,8 @@ Para obtener información acerca de la configuración de las directivas antiphis
 
 Los elementos básicos de una directiva contra la suplantación de identidad (phishing) son los siguientes:
 
-- **La Directiva ANTIPHISH** : especifica las protecciones de suplantación de identidad (phishing) que se deben habilitar o deshabilitar y las acciones para aplicar opciones.
-- **La regla anti-phish** : especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva) para una directiva antiphishing.
+- **La Directiva ANTIPHISH**: especifica las protecciones de suplantación de identidad (phishing) que se deben habilitar o deshabilitar y las acciones para aplicar opciones.
+- **La regla anti-phish**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva) para una directiva antiphishing.
 
 La diferencia entre estos dos elementos no es obvia cuando administra directivas antiphishing en el centro de seguridad & cumplimiento:
 
@@ -60,17 +60,17 @@ Para aumentar la eficacia de la protección contra la suplantación de identidad
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Debe tener permisos asignados para poder realizar los procedimientos descritos en este artículo:
+- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+  - Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** .
+  - Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro de los grupos de roles **lector global** o **lector** de seguridad <sup>\*</sup> .
 
-  - Para agregar, modificar y eliminar directivas antiphishing, debe pertenecer a uno de los siguientes grupos de roles:
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-    - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notas**:
 
-  - Para el acceso de solo lectura a las directivas antiphishing, debe pertenecer a uno de los siguientes grupos de roles:
-
-    - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - La adición de usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles administración de la **organización de solo vista** de [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica <sup>\*</sup> .
+  - <sup>\*</sup> En el centro de seguridad & cumplimiento, el acceso de solo lectura permite a los usuarios ver la configuración de las directivas antiphishing personalizadas. Solo lectura los usuarios no pueden ver la configuración de la Directiva de suplantación de identidad (phishing) predeterminada.
 
 - Para conocer la configuración recomendada para las directivas antiphishing en Microsoft defender para Office 365, consulte [anti-phishing Policy in defender for office 365 Settings](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
@@ -90,21 +90,21 @@ Cuando se crea una directiva antiphishing, solo se puede especificar el nombre d
 
 3. Se abrirá el Asistente para **crear una nueva Directiva antiphishing** . En la página **asigne un nombre a la Directiva** , configure las siguientes opciones:
 
-   - **Nombre** : escriba un nombre único y descriptivo para la directiva.
+   - **Nombre**: escriba un nombre único y descriptivo para la directiva.
 
-   - **Descripción** : escriba una descripción opcional para la directiva.
+   - **Descripción**: escriba una descripción opcional para la directiva.
 
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **aplicado a** que aparece, identifique los destinatarios internos a los que se aplica la Directiva.
 
-   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-   Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si** :
+   Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si**:
 
-   - **El destinatario es** : especifica uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
-   - **El destinatario es un miembro de** : especifica uno o más grupos de la organización.
-   - **El dominio del destinatario es** : especifica los destinatarios en uno o varios de los dominios aceptados configurados en la organización.
+   - **El destinatario es**: especifica uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
+   - **El destinatario es un miembro de**: especifica uno o más grupos de la organización.
+   - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en la organización.
 
    Después de seleccionar la condición, aparece la lista desplegable correspondiente con una **de estas** casillas.
 
@@ -142,7 +142,7 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    - Después de hacer clic en **Editar** en una sección, la configuración disponible se presenta en un formato de asistente, pero puede saltar dentro de las páginas en cualquier orden y puede hacer clic en **Guardar** en cualquier página (o en **Cancelar** o **cerrar** el ![ icono cerrar ](../../media/scc-remove-icon.png) para volver a la página **editar la directiva \<name\>** ) (no es necesario visitar la última página del Asistente para guardarla o dejarla).
 
-4. **Configuración de directiva** : haga clic en **Editar** para modificar la misma configuración que estaba disponible cuando [creó la Directiva](#use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) en la sección anterior:
+4. **Configuración de directiva**: haga clic en **Editar** para modificar la misma configuración que estaba disponible cuando [creó la Directiva](#use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) en la sección anterior:
 
    - **Nombre**
    - **Descripción**
@@ -151,19 +151,19 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    Cuando haya terminado, haga clic en **Guardar** en cualquier página.
 
-5. **Suplantación** : haga clic en **Editar** para modificar los remitentes protegidos y los dominios protegidos en la Directiva. Esta configuración es una condición para la Directiva que identifica a los remitentes suplantados para que busquen (de forma individual o por dominio) en la dirección de de los mensajes entrantes. Para obtener más información, vea [configuración de suplantación en directivas antiphishing en Microsoft defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+5. **Suplantación**: haga clic en **Editar** para modificar los remitentes protegidos y los dominios protegidos en la Directiva. Esta configuración es una condición para la Directiva que identifica a los remitentes suplantados para que busquen (de forma individual o por dominio) en la dirección de de los mensajes entrantes. Para obtener más información, vea [configuración de suplantación en directivas antiphishing en Microsoft defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Agregar usuarios para proteger** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado** y, a continuación, haga clic en el botón **Agregar usuario** que aparece.
+   - **Agregar usuarios para proteger**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado** y, a continuación, haga clic en el botón **Agregar usuario** que aparece.
 
      En el control flotante **Agregar usuario** que aparece, configure los siguientes valores:
 
-     - **Dirección de correo electrónico** :
+     - **Dirección de correo electrónico**:
 
        - Haga clic en el cuadro y desplácese por la lista de usuarios que desea seleccionar.
        - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario.
        - Para quitar una entrada, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en el usuario.
 
-     - **Nombre** : este valor se rellena en función de la dirección de correo electrónico que haya seleccionado, pero puede cambiarlo.
+     - **Nombre**: este valor se rellena en función de la dirección de correo electrónico que haya seleccionado, pero puede cambiarlo.
 
      Cuando haya terminado, haga clic en **Guardar** en cualquier página.
 
@@ -175,17 +175,17 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
      >
      > - La protección de suplantación del usuario no funciona si el remitente y el destinatario se comunicaron previamente mediante correo electrónico. Si el remitente y el destinatario nunca se han comunicado a través del correo electrónico, el mensaje se identificará como un intento de suplantación.
 
-   - **Agregar dominios para proteger** : configure una o ambas de las siguientes opciones:
+   - **Agregar dominios para proteger**: configure una o ambas de las siguientes opciones:
 
-     - **Incluir automáticamente los dominios que tengo** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
-     - **Incluir dominios personalizados** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado** y, en el cuadro **Agregar dominios** , escriba el nombre de dominio (por ejemplo, contoso.com), presione entrar y repita lo mismo según sea necesario.
+     - **Incluir automáticamente los dominios que tengo**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
+     - **Incluir dominios personalizados**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado** y, en el cuadro **Agregar dominios** , escriba el nombre de dominio (por ejemplo, contoso.com), presione entrar y repita lo mismo según sea necesario.
 
      > [!NOTE]
      > Puede tener un máximo de 50 dominios en todas las directivas contra la suplantación de identidad (phishing).
 
-   - **Acciones** : haga clic en **Editar**
+   - **Acciones**: haga clic en **Editar**
 
-     - **Si un usuario suplantado envía un correo electrónico** : configure una de las siguientes acciones para los mensajes en los que el remitente falso sea uno de los usuarios protegidos que ha especificado en **Agregar usuarios para proteger** :
+     - **Si un usuario suplantado envía un correo electrónico**: configure una de las siguientes acciones para los mensajes en los que el remitente falso sea uno de los usuarios protegidos que ha especificado en **Agregar usuarios para proteger**:
 
        - **No aplicar ninguna acción**
        - **Redirigir un mensaje a otras direcciones de correo electrónico**
@@ -194,7 +194,7 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de su entrega**
 
-     - **Si un dominio suplantado envía un correo electrónico** : configure una de las siguientes acciones para los mensajes en los que el remitente falso esté en uno de los dominios protegidos que ha especificado en **Agregar dominios para proteger** :
+     - **Si un dominio suplantado envía un correo electrónico**: configure una de las siguientes acciones para los mensajes en los que el remitente falso esté en uno de los dominios protegidos que ha especificado en **Agregar dominios para proteger**:
 
        - **No aplicar ninguna acción**
        - **Redirigir un mensaje a otras direcciones de correo electrónico**
@@ -205,19 +205,19 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    - Haga clic en **Activar sugerencias de seguridad de suplantación** y configure cualquiera de las siguientes opciones:
 
-     - **Mostrar sugerencia para usuarios suplantados** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
-     - **Mostrar sugerencia para dominios suplantados** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
-     - **Mostrar sugerencia para caracteres inusuales** : el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
+     - **Mostrar sugerencia para usuarios suplantados**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
+     - **Mostrar sugerencia para dominios suplantados**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
+     - **Mostrar sugerencia para caracteres inusuales**: el valor predeterminado es **desactivado**. Para activarla, deslice el botón de alternancia a **activado**.
 
      Cuando haya terminado, haga clic en **Guardar**.
 
-   - **Inteligencia de buzones de correo** :
+   - **Inteligencia de buzones de correo**:
 
-     - **¿Habilitar la inteligencia de buzones?** : el valor predeterminado es **activado**. Para desactivarla, deslice el botón de alternancia a **desactivado**.
+     - **¿Habilitar la inteligencia de buzones?**: el valor predeterminado es **activado**. Para desactivarla, deslice el botón de alternancia a **desactivado**.
 
-     - **¿Habilitar la protección de suplantación basada en buzones de correo?** : esta opción solo está disponible si **Habilitar inteligencia de buzones de correo?** es **activado**.
+     - **¿Habilitar la protección de suplantación basada en buzones de correo?**: esta opción solo está disponible si **Habilitar inteligencia de buzones de correo?** es **activado**.
 
-       En **si un usuario suplantado envía un correo electrónico** , puede especificar una de las siguientes acciones para que se realicen en los mensajes que no superen la inteligencia del buzón (las mismas acciones que están disponibles para los usuarios protegidos y los dominios protegidos):
+       En **si un usuario suplantado envía un correo electrónico**, puede especificar una de las siguientes acciones para que se realicen en los mensajes que no superen la inteligencia del buzón (las mismas acciones que están disponibles para los usuarios protegidos y los dominios protegidos):
 
        - **No aplicar ninguna acción**
        - **Redirigir un mensaje a otras direcciones de correo electrónico**
@@ -226,17 +226,17 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de su entrega**
 
-   - **Agregue los remitentes y dominios de confianza** : especifique las excepciones de la Directiva:
+   - **Agregue los remitentes y dominios de confianza**: especifique las excepciones de la Directiva:
 
-     - **Remitentes de confianza** :
+     - **Remitentes de confianza**:
 
        - Haga clic en el cuadro y desplácese por la lista de usuarios que desea seleccionar.
        - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un usuario.
        - Para quitar una entrada, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en el usuario.
 
-     - **Dominios de confianza** : escriba el nombre del dominio (por ejemplo, contoso.com), presione entrar y repita el procedimiento según sea necesario.
+     - **Dominios de confianza**: escriba el nombre del dominio (por ejemplo, contoso.com), presione entrar y repita el procedimiento según sea necesario.
 
-   - **Revise la configuración** : en lugar de hacer clic en cada paso individual, la configuración se muestra en un resumen.
+   - **Revise la configuración**: en lugar de hacer clic en cada paso individual, la configuración se muestra en un resumen.
 
      - Puede hacer clic en **Editar** en cada sección para volver a la página correspondiente.
      - Puede activar o **desactivar** la siguiente configuración **directamente en esta** página:
@@ -248,25 +248,25 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    Cuando haya terminado, haga clic en **Guardar** en cualquier página.
 
-6. **Suplantación de identidad** : haga clic en **Editar** para activar o desactivar la inteligencia de suplantación, activar o desactivar la identificación del remitente sin autenticar en Outlook y configurar la acción para aplicar a los mensajes de los remitentes suplantados bloqueados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
+6. **Suplantación de identidad**: haga clic en **Editar** para activar o desactivar la inteligencia de suplantación, activar o desactivar la identificación del remitente sin autenticar en Outlook y configurar la acción para aplicar a los mensajes de los remitentes suplantados bloqueados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
 
    Tenga en cuenta que esta misma configuración también está disponible en las directivas antiphishing en EOP.
 
-   - **Configuración del filtro de suplantación de identidad** : el valor predeterminado es **activado** y se recomienda que lo deje activado. Para desactivarla, deslice el botón de alternancia a **desactivado**. Para obtener más información, vea [Configure outsimulate Intelligence in EOP](learn-about-spoof-intelligence.md).
+   - **Configuración del filtro de suplantación de identidad**: el valor predeterminado es **activado** y se recomienda que lo deje activado. Para desactivarla, deslice el botón de alternancia a **desactivado**. Para obtener más información, vea [Configure outsimulate Intelligence in EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, se habilita el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Habilitar la característica de remitente sin autenticar** : el valor predeterminado es **activado**. Para desactivarla, deslice el botón de alternancia a **desactivado**.
+   - **Habilitar la característica de remitente sin autenticar**: el valor predeterminado es **activado**. Para desactivarla, deslice el botón de alternancia a **desactivado**.
 
-   - **Acciones** : especificar la acción que se realizará en los mensajes que no superen la inteligencia de identidad:
+   - **Acciones**: especificar la acción que se realizará en los mensajes que no superen la inteligencia de identidad:
 
-     **Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** :
+     **Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio**:
 
      - **Mover mensaje a las carpetas de correo no deseado de los destinatarios**
      - **Poner en cuarentena el mensaje**
 
-   - **Revise la configuración** : en lugar de hacer clic en cada paso individual, la configuración se muestra en un resumen.
+   - **Revise la configuración**: en lugar de hacer clic en cada paso individual, la configuración se muestra en un resumen.
 
      - Puede hacer clic en **Editar** en cada sección para volver a la página correspondiente.
      - Puede activar o **desactivar** la siguiente configuración **directamente en esta** página:
@@ -275,16 +275,16 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    Cuando haya terminado, haga clic en **Guardar** en cualquier página.
 
-7. **Configuración avanzada** : haga clic en **Editar** para configurar los umbrales de suplantación de identidad avanzada. Para obtener más información, consulte [umbrales de suplantación de identidad avanzada en directivas antiphishing en Microsoft defender para Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+7. **Configuración avanzada**: haga clic en **Editar** para configurar los umbrales de suplantación de identidad avanzada. Para obtener más información, consulte [umbrales de suplantación de identidad avanzada en directivas antiphishing en Microsoft defender para Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Umbrales de suplantación de identidad avanzada** : Seleccione uno de los siguientes valores:
+   - **Umbrales de suplantación de identidad avanzada**: Seleccione uno de los siguientes valores:
 
    - **1-estándar** (este es el valor predeterminado).
    - **2-agresivo**
    - **3-más agresivo**
    - **4: más agresivo**
 
-   - **Revise la configuración** : haga clic en **Editar** para volver a la página **umbrales de suplantación de identidad avanzada** .
+   - **Revise la configuración**: haga clic en **Editar** para volver a la página **umbrales de suplantación de identidad avanzada** .
 
    Cuando haya terminado, haga clic en **Guardar** en cualquiera de las páginas.
 
@@ -332,7 +332,7 @@ Para obtener más información sobre el orden de prioridad y cómo se evalúan y
 
 Las directivas de suplantación de identidad personalizadas se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0). La Directiva antiphishing predeterminada denominada Office365 ANTIPHISH predeterminada tiene el valor de prioridad personalizado **más bajo** y no se puede cambiar.
 
- **Nota** : en el centro de seguridad & cumplimiento, solo puede cambiar la prioridad de la Directiva contra el suplantación de identidad (phishing) después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla antiphishing (que puede afectar a la prioridad de las reglas existentes).
+ **Nota**: en el centro de seguridad & cumplimiento, solo puede cambiar la prioridad de la Directiva contra el suplantación de identidad (phishing) después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla antiphishing (que puede afectar a la prioridad de las reglas existentes).
 
 Para cambiar la prioridad de una directiva, haga clic en **aumentar prioridad** o **disminuir prioridad** en las propiedades de la Directiva (no puede modificar directamente el número de **prioridad** en el centro de seguridad & cumplimiento). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
 
@@ -344,7 +344,7 @@ Para cambiar la prioridad de una directiva, haga clic en **aumentar prioridad** 
 
    - La Directiva antiphishing personalizada con el valor **Priority** de prioridad **0** solo tiene el botón **disminuir prioridad** disponible.
 
-   - La Directiva antiphishing personalizada con el valor de **prioridad** más bajo (por ejemplo, **3** ) solo tiene el botón **aumentar prioridad** disponible.
+   - La Directiva antiphishing personalizada con el valor de **prioridad** más bajo (por ejemplo, **3**) solo tiene el botón **aumentar prioridad** disponible.
 
    - Si tiene tres o más directivas de suplantación de identidad personalizadas, las directivas entre los valores de prioridad mayor y menor tienen los botones **aumentar prioridad** y **disminuir prioridad** disponibles.
 
@@ -391,14 +391,14 @@ La creación de una directiva contra la suplantación de identidad (phishing) en
 1. Cree la Directiva contra phish.
 2. Cree la regla ANTIPHISH que especifica la Directiva antiphishing a la que se aplica la regla.
 
- **Notas** :
+ **Notas**:
 
 - Puede crear una nueva regla antiphishing y asignarle una directiva ANTIPHISH existente no asociada. Una regla antiphishing no puede asociarse con más de una directiva antiphishing.
 
 - Puede configurar las siguientes opciones en nuevas directivas antiphishing en PowerShell que no están disponibles en el centro de seguridad & cumplimiento hasta que se crea la Directiva:
 
-  - Cree la nueva directiva como deshabilitada ( _habilitada_ `$false` en el cmdlet **New-AntiPhishRule** ).
-  - Establezca la prioridad de la Directiva durante la creación ( _prioridad_ _\<Number\>_ ) en el cmdlet **New-AntiPhishRule** ).
+  - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-AntiPhishRule** ).
+  - Establezca la prioridad de la Directiva durante la creación (_prioridad_ _\<Number\>_ ) en el cmdlet **New-AntiPhishRule** ).
 
 - Una nueva Directiva antiphishing que cree en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que asigna la Directiva a una regla antiphishing.
 
@@ -570,7 +570,7 @@ Este ejemplo establece la prioridad de la regla denominada Marketing Department 
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Notas** :
+**Notas**:
 
 - Para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-AntiPhishRule** en su lugar.
 

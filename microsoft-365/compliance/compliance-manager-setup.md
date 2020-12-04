@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y los roles de usuario de Microsoft Compliance Manager y configure las pruebas automatizadas de las acciones. Administrar el historial del usuario y filtrar la vista del panel.
-ms.openlocfilehash: bcb75943df88578b30063d8e35877cb2e3e6250b
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376561"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572399"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -72,7 +72,7 @@ Para establecer permisos y asignar roles desde dentro del centro de cumplimiento
 
 8. Cuando termine de asignar usuarios, seleccione **listo**, seleccione **Guardar** y, después, **cerrar**.
 
-##### <a name="more-about-the-office-365-secruity--compliance-center"></a>Más información sobre el centro de cumplimiento de & de Office 365 secruity
+##### <a name="more-about-the-office-365-security--compliance-center"></a>Más información sobre el centro de cumplimiento de & de seguridad de Office 365
 
 Obtenga más información sobre [los permisos en el centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 

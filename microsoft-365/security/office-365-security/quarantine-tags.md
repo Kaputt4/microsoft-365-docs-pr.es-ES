@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Los administradores pueden aprender a usar las etiquetas de cuarentena para controlar lo que los usuarios pueden hacer a sus mensajes en cuarentena.
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357652"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572674"
 ---
 # <a name="quarantine-tags"></a>Etiquetas de cuarentena
 
@@ -62,9 +62,7 @@ Puede crear y asignar etiquetas de cuarentena en el centro de seguridad & cumpli
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Para ver, crear, modificar o quitar etiquetas de cuarentena, debe pertenecer a uno de los siguientes grupos de roles:
-  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+- Para ver, crear, modificar o quitar etiquetas de cuarentena, debe ser miembro de los roles administración de la **organización** o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>Paso 1: crear etiquetas de cuarentena en el centro de seguridad & cumplimiento
 
@@ -131,13 +129,13 @@ En la tabla siguiente se describen el orden y los valores necesarios para cada p
 
 |Permiso|Sin acceso|Acceso limitado|Acceso completo|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|comprendi|comprendi|1|
-|PermissionToBlockSender|comprendi|1|1|
-|PermissionToDelete|comprendi|1|1|
+|PermissionToAllowSender|comprendi|comprendi|1 |
+|PermissionToBlockSender|comprendi|1 |1 |
+|PermissionToDelete|comprendi|1 |1 |
 |PermissionToDownload<sup>\*</sup>|comprendi|comprendi|comprendi|
-|PermissionToPreview|comprendi|1|1|
-|PermissionToRelease<sup>\*\*</sup>|comprendi|comprendi|1|
-|PermissionToRequestRelease<sup>\*\*</sup>|comprendi|1|comprendi|
+|PermissionToPreview|comprendi|1 |1 |
+|PermissionToRelease<sup>\*\*</sup>|comprendi|comprendi|1 |
+|PermissionToRequestRelease<sup>\*\*</sup>|comprendi|1 |comprendi|
 |PermissionToViewHeader<sup>\*</sup>|comprendi|comprendi|comprendi|
 |Valor binario|00000000|01101010|11101100|
 |Valor decimal que se va a usar|comprendi|106|236|
@@ -491,7 +489,7 @@ El permiso **bloquear remitente** (_PermissionToBlockSender_) controla el acceso
 
 Para obtener más información acerca de la lista de remitentes bloqueados, vea [bloquear mensajes de alguien](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) y [usar Exchange Online PowerShell para configurar la colección de listas seguras en un buzón](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
-#### <a name="delete-permission"></a>Permiso de eliminación
+#### <a name="delete-permission"></a>Eliminar permiso
 
 El permiso de **eliminación** (_PermissionToDelete_) controla la capacidad de los usuarios de eliminar sus mensajes (mensajes en los que el usuario es un destinatario) de la cuarentena.
 
