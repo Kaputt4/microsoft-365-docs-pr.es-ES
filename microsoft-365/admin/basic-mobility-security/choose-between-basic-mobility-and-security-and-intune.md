@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básica forman parte de los planes de Microsoft 365.
-ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561500"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580666"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre la movilidad básica y la seguridad o Intune
 
@@ -69,8 +69,7 @@ Microsoft Intune y la movilidad y la seguridad básicas integradas ofrecen la po
 |Tipos de dispositivo|Administración de diferentes plataformas de sistemas operativos y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>Mac OS, iPad OS|
 |Cumplimiento de dispositivos|Establecer y administrar directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones de los dispositivos Android 9 y versiones posteriores. Vea los [detalles](capabilities.md). |Sí|
 |Acceso condicional según el cumplimiento del dispositivo |Evite que los dispositivos que no cumplen el acceso al correo electrónico y a los datos corporativos desde la nube. |No se admite en Windows 10.<br/>Se limita a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Sí |
-|Configuración de dispositivos  |Configurar las opciones del dispositivo (por ejemplo, deshabilitar la cámara)|Cumplimiento de dispositivos|Establecer y administrar directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones de los dispositivos Android 9 y versiones posteriores. Vea los [detalles](capabilities.md). |Sí|
- |Conjunto limitado de opciones de configuración. |Sí|
+|Configuración de dispositivos  |Configurar las opciones del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de opciones de configuración.|Sí|Cumplimiento de dispositivos|Establecer y administrar directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones de los dispositivos Android 9 y versiones posteriores. Vea los [detalles](capabilities.md). |Sí|
 |Perfiles de correo electrónico  |Aprovisione un perfil de correo electrónico nativo en el dispositivo. |Sí|Sí|
 |Perfiles de WiFi |Aprovisione un perfil WiFi nativo en el dispositivo. |No|Sí|
 |Perfiles de VPN |Aprovisione un perfil de VPN nativo en el dispositivo. |No|Sí|

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 9497dfb5793ddbfc3d6845ec1efba91ad972ea38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646660"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580642"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
@@ -107,6 +107,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> Las cuentas de usuario configuradas con el `-PasswordPolicies DisablePasswordExpiration` parámetro vigencia aún en función del `pwdLastSet` atributo. Según el `pwdLastSet` atributo, si cambia la expiración a `-PasswordPolicies None` , todas las contraseñas que tienen un pwdLastSet de más de 90 días requieren que el usuario los cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.
+
 ### <a name="set-a-password-to-expire"></a>Establecer una contraseña de expiración
 
 Ejecute uno de los siguientes comandos:
@@ -122,9 +125,6 @@ Ejecute uno de los siguientes comandos:
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> Cuentas de usuario configuradas con el `-PasswordPolicies DisablePasswordExpiration` parámetro vigencia aún en función del atributo de la `pwdLastSet` cuenta de usuario. Por ejemplo, si establece contraseñas de usuario para que nunca expiren y, a continuación, 90 o más días, las contraseñas seguirán expirando. Según el `pwdLastSet` atributo de la cuenta de usuario, para las cuentas de usuario configuradas con el `-PasswordPolicies None` parámetro, todas las contraseñas con una `pwdLastSet` antigüedad superior a 90 días requieren que el usuario las cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Obtenga información sobre cómo cambiar el tema predeterminado de Microsoft 365 y personalizarlo para que se ajuste al logotipo o al logotipo de su compañía. '
-ms.openlocfilehash: f3ba6021205289426ee78f16c7d0678e4b81ef75
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 7392ea43c32635a9852b0fbceed80475d99c9d64
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779862"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580690"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el tema de 365 de Microsoft para su organización
 
-Como administrador de su suscripción de Microsoft 365 para empresas, puede cambiar el tema predeterminado que aparece en la barra de navegación superior para todos los usuarios de la organización: 
+Como administrador de su suscripción de Microsoft 365 para empresas, puede cambiar el tema predeterminado que aparece en la barra de navegación superior para todos los usuarios de la organización:
 
 - Agregue el logotipo de su compañía.
-- Cambie los colores para que se ajusten al resto de la marca. 
-- Agregar un vínculo de destino: los usuarios se desplazan al seleccionar su logotipo. 
+- Cambie los colores para que se ajusten al resto de la marca.
+- Agregar un vínculo de destino: los usuarios se desplazan al seleccionar su logotipo.
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Personalizar el tema en el centro de administración
 
@@ -42,20 +42,20 @@ Como administrador de su suscripción de Microsoft 365 para empresas, puede camb
 2. En la pestaña Perfil de la **organización** , elija **temas personalizados**.
 
 3. En el panel **temas de aduana** , cambie los elementos del tema que desee para su organización:
-    
+
     - **Usar una imagen de logotipo personalizada**: elija si desea usar una imagen de una dirección URL o cargar una imagen. Si usa una dirección URL, asegúrese de que la dirección URL use HTTPS y de que la imagen tenga 200 x 30 píxeles de cualquier formato de cualquier tamaño. Puede cargar un logotipo de menos de 10 KB de 200 x 30 píxeles en formato JPG, PNG, GIF o SVG.
 
       > [!NOTE]
       > Para que el logotipo aparezca en la aplicación móvil de SharePoint, use solo imágenes SVG. Las imágenes que se cargan en cualquier otro formato no se muestran en la aplicación. No se pueden hacer clic en los logotipos en la aplicación móvil de SharePoint.
 
-    - **Hacer que el logotipo haga clic**en: puede usar su logotipo en la barra de navegación como un vínculo a cualquier recurso de la empresa. Puede escribir la dirección URL del logotipo aquí, comenzando con http://o https://. Esto es opcional.
+    - **Hacer que el logotipo haga clic** en: puede usar su logotipo en la barra de navegación como un vínculo a cualquier recurso de la empresa. Puede escribir la dirección URL del logotipo aquí, comenzando con http://o https://. Esto es opcional.
 
     - **Seleccionar imagen de fondo**: seleccione la imagen y cargue su propio archivo jpg, PNG o GIF con una resolución de 1366 x 50 píxeles, no superior a 15 KB. La imagen de fondo se mostrará en la barra de navegación superior de todas las páginas.
 
       > [!NOTE]
-      > Es posible que las imágenes que contienen texto no se muestren como se esperaba. Los elementos integrados que aparecen en los lados derecho e izquierdo de la barra de navegación pueden variar entre los servicios y el texto podría estar oculto por esos elementos. 
+      > Es posible que las imágenes que contienen texto no se muestren como se esperaba. Los elementos integrados que aparecen en los lados derecho e izquierdo de la barra de navegación pueden variar entre los servicios y el texto podría estar oculto por esos elementos.
 
-    - **Color**de la barra de navegación: Seleccione un color para usarlo en el fondo de la barra de navegación. La barra de navegación aparece en la parte superior de cada página.
+    - **Color** de la barra de navegación: Seleccione un color para usarlo en el fondo de la barra de navegación. La barra de navegación aparece en la parte superior de cada página.
 
     - **Texto e iconos**: seleccione un color para usarlo para el texto y los iconos de la barra de navegación superior.
 
@@ -64,9 +64,9 @@ Como administrador de su suscripción de Microsoft 365 para empresas, puede camb
     - **Impedir que los usuarios reemplacen el tema**: voltee este botón de alternancia para evitar que los usuarios elijan su propio tema desde nuestra selección de temas. Esto no impide que los usuarios puedan establecer un tema de contraste alto.
 
     - **Mostrar el nombre de usuario**: elija si desea mostrar el nombre completo de un usuario en el punto de entrada al administrador de cuentas en la parte superior derecha de la página cuando el usuario haya iniciado sesión. De forma predeterminada, los usuarios ven su foto o sus iniciales, si no se ha cargado ninguna foto.
-    
+
 4. Seleccione **Guardar cambios**.
-    
+
 Puede ver el tema nuevo en el centro de administración inmediatamente. Después de un breve retraso, puede verlo en Microsoft 365, incluido en las páginas de Outlook, SharePoint, [aplicación móvil de SharePoint para iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)y [aplicación móvil de SharePoint para Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284).
 
 Podrá quitar el icono o los colores personalizados en cualquier momento. Simplemente vuelva a la página tema y seleccione **quitar temas personalizados**.
@@ -77,12 +77,10 @@ Podrá quitar el icono o los colores personalizados en cualquier momento. Simple
 
 - **Colores personalizados**: elija un **color de fondo** para la barra de navegación con una alta relación de contraste con la **imagen de logotipo** que ha seleccionado. Elija un color de **texto e iconos** con una alta relación de contraste en el color de fondo de la **barra de navegación** para que todo el texto y los iconos estén claramente visibles.
 
-- **Color de énfasis**: elija uno que se muestre bien en fondo blanco o claro. El color de énfasis se usa para colorear algunos botones y vínculos que se muestran en un fondo blanco o claro. Por ejemplo, el color de énfasis se usa para colorear los elementos en la bandeja de entrada de un usuario y en su página de portal de Office.com. 
+- **Color de énfasis**: elija uno que se muestre bien en fondo blanco o claro. El color de énfasis se usa para colorear algunos botones y vínculos que se muestran en un fondo blanco o claro. Por ejemplo, el color de énfasis se usa para colorear los elementos en la bandeja de entrada de un usuario y en su página de portal de Office.com.
   
 - **Relación de contraste**: la relación de contraste recomendada entre el color del texto, el icono o el botón y el color de fondo es 4,5:1.
   
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Agregar iconos personalizados a la página Mis aplicaciones y al iniciador de aplicaciones](../manage/customize-the-app-launcher.md)
-  
-  
