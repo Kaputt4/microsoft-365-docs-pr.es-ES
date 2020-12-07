@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79dc57e545c3063cae641bab2603e3011c5a1769
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398847"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568606"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -93,6 +93,8 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se exportan|[Cómo aplicar etiquetas de confidencialidad en Power BI](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |Supervisar y comprender cómo se usan las etiquetas de confidencialidad en la organización|[Información general sobre la clasificación de datos](data-classification-overview.md) <br /><br /> [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)|
 |Amplíe las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.|[SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Amplíe las etiquetas de confidencialidad en todo el contenido de Azure Blob Storage, archivos de Azure, Azure Data Lake Storage Gen1 y Azure Data Lake Storage Gen12|[Etiquete automáticamente su contenido en Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentación de usuario final para las etiquetas de confidencialidad
 

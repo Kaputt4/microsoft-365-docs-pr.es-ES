@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4afc73b5a2cefe88d2e3af5fd6665ec64e5c0ee3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519815"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568322"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -37,6 +37,9 @@ Las características de MIP se incluyen con el Centro de cumplimiento de Microso
 Para obtener información sobre la gobernanza de los datos, consulte [Gobernanza de información de Microsoft en Microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Conocer los datos
+
+> [!NOTE]
+> Para información sobre cómo clasificar y etiquetar datos en Azure Purview, actualmente en versión preliminar, consulte [Etiquetar automáticamente su contenido en Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label)
 
 Para tener una visión general de sus datos e identificar aquellos más importantes en todo su entorno híbrido, utilice las funciones siguientes:
  
@@ -62,6 +65,7 @@ Para aplicar acciones de protección flexibles entre las que se incluyen el cifr
 |[Escáner de etiquetas unificadas de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos locales. | [Configuración e instalación del escáner de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Descubre, etiqueta y protege la información confidencial que reside en almacenes de datos en la nube. | [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencial almacenada en la nube](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Amplía las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.  <br /><br /> Escenario de ejemplo: [Establecer y obtener una etiqueta de confidencialidad (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Instalación y configuración del SDK de Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
 
 ## <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
 
