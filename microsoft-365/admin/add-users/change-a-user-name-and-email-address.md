@@ -2,8 +2,8 @@
 title: Cambiar un nombre de usuario y una dirección de correo electrónico
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global puede cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario. '
-ms.openlocfilehash: 82284f653675ee4f8c89fe52d75bbc0a0efe2e2b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646696"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551513"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -40,9 +40,9 @@ Vea un vídeo corto sobre el cambio de la dirección de correo electrónico de u
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="change-a-users-email-address"></a>Cambiar la dirección de correo electrónico de un usuario
-
 Para poder realizar estos pasos, debe ser [Administrador global](about-admin-roles.md). 
+
+## <a name="change-a-users-email-address"></a>Cambiar la dirección de correo electrónico de un usuario
 
 ::: moniker range="o365-worldwide"
  

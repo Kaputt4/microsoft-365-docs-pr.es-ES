@@ -11,23 +11,25 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 821bfbac12e01f73fa3fbb52be9f95165bb3dd1b
-  ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+  ms.openlocfilehash: f9bb89aa0f42f487abcd0d44785c257184024941
+  ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "48804568"
+  ms.lasthandoff: 12/03/2020
+  ms.locfileid: "49562926"
 landingContent:
 - title: Supervisar el estado del servicio
   linkLists:
+  - linkListType: overview
+    links:
+    - text: 'Informes de uso de Microsoft 365: información general'
+      url: ../activity-reports/activity-reports.md
+    - text: 'Puntuación de productividad: información general'
+      url: ../productivity/productivity-score.md
+    - text: 'Análisis de uso de Microsoft 365: PowerBI'
+      url: ../usage-analytics/usage-analytics.md
   - linkListType: how-to-guide
     links:
-    - text: Supervisar la actividad de los usuarios mediante informes
-      url: ../activity-reports/activity-reports.md
-    - text: Supervisar la productividad de los usuarios mediante la calificación de Productividad
-      url: ../productivity/productivity-score.md
-    - text: Supervisar el análisis de uso
-      url: ../usage-analytics/usage-analytics.md
     - text: Habilitar el análisis de uso
       url: ../usage-analytics/enable-usage-analytics.md
     - text: Cambiar la información de contacto de la organización

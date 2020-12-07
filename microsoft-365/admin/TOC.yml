@@ -121,6 +121,8 @@
               href: create-groups/compare-groups.md
             - name: Crear un grupo
               href: create-groups/create-groups.md
+            - name: Explicar grupos
+              href: create-groups/explain-groups-knowledge-worker.md
             - name: Administrar grupos
               href: create-groups/manage-groups.md
             - name: Agregar o quitar miembros del grupo
@@ -208,9 +210,9 @@
     - name: Administrar los datos y servicios
       href: manage/index.yml
       items:
-        - name: Supervisar la actividad de los usuarios mediante informes
+        - name: Supervisar la actividad de Microsoft 365 mediante informes
           href: activity-reports/activity-reports.md
-        - name: Supervisar la productividad de los usuarios mediante la calificación de Productividad
+        - name: 'Puntuación de productividad de Microsoft: información general'
           href: productivity/productivity-score.md
           items:
             - name: Colaboración de contenido
