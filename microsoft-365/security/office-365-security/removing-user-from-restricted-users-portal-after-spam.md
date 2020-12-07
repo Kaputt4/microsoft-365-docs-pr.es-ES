@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo quitar usuarios del portal de Usuarios restringidos en Office 365. Se agregan usuarios al portal de Usuarios restringidos para el envío correo no deseado saliente, normalmente porque la cuenta se ha visto comprometida.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201560"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572446"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Office 365
 
@@ -43,19 +43,18 @@ Los administradores pueden quitar usuarios del portal de Remitentes restringidos
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Vaya directamente a la página **Usuarios restringidos**, use <https://protection.office.com/restrictedusers>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para poder realizar los procedimientos de este tema, deberá tener asignados los permisos necesarios:
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento para poder realizar los procedimientos de este artículo:
+  - Para quitar usuarios del portal de Usuarios restringidos, debe ser miembro de los grupos de roles **Administración de la organización** o **Administrador de seguridad**.
+  - Para obtener acceso de solo lectura al portal de Usuarios restringidos, tiene que ser miembro de los grupos de roles **Lector global** o **Lector de seguridad**.
 
-  - Para quitar usuarios en el portal de Usuarios restringidos, debe ser miembro de uno de los siguientes grupos de funciones:
+  Para más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-    - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  **Notas**:
 
-  - Para obtener acceso de solo lectura al portal de Usuarios restringidos, deberá ser miembro de uno de los siguientes grupos de funciones:
-
-    - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Un remitente que supera los límites de correo electrónico saliente es un indicador de una cuenta comprometida. Antes de quitar el usuario del portal de Usuarios restringidos, asegúrese de seguir los pasos necesarios para recuperar el control de su cuenta. Para obtener más información, consulte [Responder a una cuenta de correo electrónico comprometida en Office 365](responding-to-a-compromised-email-account.md).
 
@@ -65,9 +64,9 @@ Los administradores pueden quitar usuarios del portal de Remitentes restringidos
 
 2. Busque y seleccione al usuario que desee desbloquear. En la columna **Acciones**, haga clic en **Desbloquear**.
 
-3. Una reaparición irá en los detalles de la cuenta cuyo envío está restringido. Debe revisar las recomendaciones para asegurarse de que está llevando a cabo las acciones adecuadas en caso de que la cuenta se ponga en peligro. Seleccione **Siguiente**cuando termine.
+3. Una reaparición irá en los detalles de la cuenta cuyo envío está restringido. Debe revisar las recomendaciones para asegurarse de que está llevando a cabo las acciones adecuadas en caso de que la cuenta se ponga en peligro. Seleccione **Siguiente** cuando termine.
 
-4. En la siguiente pantalla encontrará recomendaciones para evitar comprometer el futuro. Habilitar la autenticación multi factor (MFA) y cambiar las contraseñas es una buena defensa. Haga clic **desbloquear usuario**cuando haya finalizado.
+4. En la siguiente pantalla encontrará recomendaciones para evitar comprometer el futuro. Habilitar la autenticación multi factor (MFA) y cambiar las contraseñas es una buena defensa. Haga clic **desbloquear usuario** cuando haya finalizado.
 
 5. Haga clic en **Sí** para confirmar el cambio.
 
