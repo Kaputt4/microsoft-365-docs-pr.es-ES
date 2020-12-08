@@ -18,24 +18,24 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (o desindizados) de Exchange, SharePoint y OneDrive para la empresa en su organización.
-ms.openlocfilehash: bbf234e2051cd103d1b99ab75b8e5c15365762a9
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 132a174f0c163c75939b75906baa3833c6387fa7
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920002"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588567"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indizados en eDiscovery
 
 Una búsqueda de exhibición de documentos electrónicos que se ejecuta desde el centro de cumplimiento de Microsoft 365 incluye automáticamente elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indizan correctamente porque entran dentro de los [límites de indización de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indización y se indizarán parcialmente. Estas son otras razones por las que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
-- Los mensajes de correo electrónico tienen un archivo adjunto sin un controlador válido, como archivos de imagen; Esta es la causa más común de los elementos de correo electrónico parcialmente indizados
+- Los mensajes de correo electrónico tienen un archivo adjunto sin un controlador válido, como archivos de imagen; Esta es la causa más común de los elementos de correo electrónico parcialmente indizados.
 
-- Demasiados archivos adjuntos a un mensaje de correo electrónico
+- Se han adjuntado demasiados archivos a un mensaje de correo electrónico.
 
-- Un archivo adjunto a un mensaje de correo electrónico es demasiado grande
+- Un archivo adjuntado a un mensaje de correo electrónico es demasiado grande.
 
-- Se admite el tipo de archivo para la indización, pero se produjo un error de indización en un archivo específico.
+- El tipo de archivo se admite para indización pero se produjo un error de indización en un archivo específico.
 
 Aunque varía, la mayoría de los clientes de organizaciones tienen menos del 1% de contenido en volumen y menos del 12% de contenido en el tamaño que se indexa parcialmente. El motivo de la diferencia entre el volumen y el tamaño es que los archivos más grandes tienen una probabilidad mayor de contenido que no se puede indizar completamente.
   
@@ -45,10 +45,10 @@ Después de ejecutar una búsqueda de exhibición de documentos electrónicos, e
   
 - Si un elemento se indiza parcialmente y coincide con la consulta de búsqueda, se incluye tanto en el recuento como en el tamaño de los elementos de resultados de búsqueda y en los elementos parcialmente indizados. Sin embargo, cuando se exportan los resultados de esa misma búsqueda, el elemento solo se incluye con un conjunto de resultados de búsqueda; no se incluye como elemento parcialmente indizado.
 
-- Si especifica un intervalo de fechas para una consulta de búsqueda (al incluirla en la consulta de palabras clave o mediante una condición), los elementos parcialmente indizados que no coinciden con el intervalo de fechas no se incluyen en el recuento de elementos parcialmente indizados. Sólo los elementos parcialmente indizados que se encuentran en el intervalo de fechas se incluyen en el recuento de elementos parcialmente indizados.
+- Si especifica un intervalo de fechas para una consulta de búsqueda (al incluirla en la consulta de palabras clave o mediante una condición), los elementos parcialmente indizados que no coinciden con el intervalo de fechas no se incluyen en el recuento de elementos parcialmente indizados. Solo los elementos parcialmente indizados que se encuentran en el intervalo de fechas se incluyen en el recuento de elementos indizados.
 
-> [!NOTE]
-> Los elementos parcialmente indizados ubicados en los sitios de SharePoint y OneDrive *no se* incluyen en la estimación de los elementos parcialmente indizados que se muestran en las estadísticas detalladas de la búsqueda. Sin embargo, los elementos parcialmente indizados se pueden exportar al exportar los resultados de una búsqueda de exhibición de documentos electrónicos. Por ejemplo, si solo busca sitios, el número estimado de elementos parcialmente indizados será cero.
+  > [!NOTE]
+  > Los elementos parcialmente indizados ubicados en los sitios de SharePoint y OneDrive *no se* incluyen en la estimación de los elementos parcialmente indizados que se muestran en las estadísticas detalladas de la búsqueda. Sin embargo, los elementos parcialmente indizados se pueden exportar al exportar los resultados de una búsqueda de exhibición de documentos electrónicos. Por ejemplo, si solo busca sitios, el número estimado de elementos parcialmente indizados será cero.
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Cálculo de la proporción de elementos parcialmente indizados en la organización
 
@@ -87,17 +87,17 @@ Cuando se exportan resultados de la búsqueda de eDiscovery o un informe de bús
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Errores relacionados con elementos parcialmente indizados
 
-Las etiquetas de error constan de dos fragmentos de información, el error y el tipo de archivo. Por ejemplo, en este par de errores/filetype:
+Las etiquetas de error constan de dos fragmentos de información, el error y el tipo de archivo. Por ejemplo, en este par error/tipo de archivo:
 
 ```text
  parseroutputsize_xls
 ```
 
- `parseroutputsize` es el error y `xls` es el tipo de archivo del archivo en el que se produjo el error. En casos en los que el tipo de archivo no se reconoció o el tipo de archivo no se ha aplicado al error, verá el valor `noformat` en vez del tipo de archivo.
+ `parseroutputsize` es el error y `xls` es el tipo de archivo del archivo en el que se produjo el error. En los casos en que no se haya reconocido el tipo de archivo o no se haya aplicado el tipo de archivo al error, verá el valor `noformat` en lugar del tipo de archivo.
   
 A continuación se muestra una lista de errores de indización y una descripción de la posible causa del error.
   
-|**Etiqueta error**|**Descripción**|
+| Etiqueta error | Descripción |
 |:-----|:-----|
 | `attachmentcount` <br/> |Un mensaje de correo electrónico tenía demasiados datos adjuntos y algunos de estos datos adjuntos no se procesaron.  <br/> |
 | `attachmentdepth` <br/> |El analizador de contenido y el analizador de documentos encontraron demasiados niveles de datos adjuntos anidados dentro de otros datos adjuntos. Algunos de estos datos adjuntos no se procesaron.  <br/> |
@@ -108,7 +108,7 @@ A continuación se muestra una lista de errores de indización y una descripció
 | `parserencrypted` <br/> |El contenido de los datos adjuntos o del mensaje de correo electrónico se cifra y Microsoft 365 no pudo descodificar el contenido.  <br/> |
 | `parsererror` <br/> |Se ha producido un error desconocido durante el análisis. Esto suele deberse a un error de software o a un bloqueo del servicio.  <br/> |
 | `parserinputsize` <br/> |Los datos adjuntos son demasiado grandes para que el analizador los controle y el análisis de los datos adjuntos no se ha realizado o no se ha completado.  <br/> |
-| `parsermalformed` <br/> |Un archivo adjunto tenía un formato incorrecto y el analizador no pudo administrarlo. Esto puede dar como resultado antiguos formatos de archivo, archivos creados por software incompatible o virus que pretenden ser algo distinto de lo que se ha solicitado.  <br/> |
+| `parsermalformed` <br/> |Un archivo adjunto tenía un formato incorrecto y el analizador no pudo administrarlo. Este resultado puede deberse a formatos de archivo antiguos, a archivos creados por software incompatible o a virus que pretenden ser algo que no sea reclamar.  <br/> |
 | `parseroutputsize` <br/> |El resultado del análisis de datos adjuntos era demasiado grande y tuvo que truncarse.  <br/> |
 | `parserunknowntype` <br/> |Los datos adjuntos tenían un tipo de archivo que Microsoft 365 no pudo detectar.  <br/> |
 | `parserunsupportedtype` <br/> |Los datos adjuntos tenían un tipo de archivo que Office 365 podría detectar, pero el análisis de ese tipo de archivo no es compatible.  <br/> |

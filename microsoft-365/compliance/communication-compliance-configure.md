@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527529"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585310"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -137,6 +137,35 @@ Si es una organización con una implementación local de Exchange o un proveedor
 
 >[!IMPORTANT]
 >Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que necesite supervisar a todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de cumplimiento de comunicaciones global para el grupo asignado. Esto le permite supervisar miles de usuarios con una sola directiva y mantener la Directiva de cumplimiento de la comunicación actualizada a medida que los empleados nuevos se unen a su organización.
+
+1. Cree un [grupo de distribución](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) dedicado para la Directiva de cumplimiento de comunicaciones global con las siguientes propiedades: Asegúrese de que este grupo de distribución no se use para otros fines u otros servicios de Office 365.
+
+    - **MemberDepartRestriction = cerrado**. Garantiza que los usuarios no puedan quitar a sí mismos del grupo de distribución.
+    - **MemberJoinRestriction = cerrado**. Garantiza que los usuarios no pueden agregarse a sí mismos al grupo de distribución.
+    - **ModerationEnabled = true**. Garantiza que todos los mensajes enviados a este grupo están sujetos a aprobación y que el grupo no se está usando para comunicarse fuera de la configuración de la Directiva de cumplimiento de comunicaciones.
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. Seleccione un [atributo personalizado de Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) sin usar para realizar un seguimiento de los usuarios agregados a la Directiva de cumplimiento de comunicaciones en su organización.
+
+3. Ejecute el siguiente script de PowerShell en una programación recurrente para agregar usuarios a la Directiva de cumplimiento de la comunicación:
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
 
 Para obtener más información acerca de la configuración de grupos, vea:
 
