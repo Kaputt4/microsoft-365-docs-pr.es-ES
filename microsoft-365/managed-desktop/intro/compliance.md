@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519615"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586678"
 ---
 # <a name="compliance"></a>Cumplimiento
 
-Cuando usa Microsoft Managed Desktop IT as-a-Service, Microsoft le proporciona un conjunto completo de ofertas de cumplimiento. Este esfuerzo ayuda a su organización a cumplir con los diversos requisitos de cumplimiento.
+Cuando usa el escritorio administrado de Microsoft, Microsoft le proporciona un conjunto completo de ofertas de cumplimiento. Este esfuerzo ayuda a su organización a cumplir con los diversos requisitos de cumplimiento.
 
 ## <a name="compliance-coverage"></a>Cobertura de cumplimiento
 
@@ -35,6 +35,9 @@ Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 - [Certificación Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Controles de la organización de servicios (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
+- [Ley de transferencia y responsabilidad de seguros de salud (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
+- [Programa de evaluación de la seguridad de la información del gobierno australiano (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Informes de auditor y certificados de cumplimiento
 
@@ -45,4 +48,4 @@ Puede encontrar información relevante, incluidos los requisitos de control y t�
 
 ## <a name="shared-responsibility"></a>Responsabilidad compartida
 
-El cumplimiento de los servicios en la nube es una responsabilidad compartida entre los proveedores de servicios de la nube y sus clientes. Para obtener más información, vea [Perresponsabilidades compartidas para Cloud Computing](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) en la galería de TechNet.
+El cumplimiento de los servicios en la nube es una responsabilidad compartida entre los proveedores de servicios de la nube y sus clientes. Para obtener más información, vea [responsabilidades compartidas para la informática en la nube](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
