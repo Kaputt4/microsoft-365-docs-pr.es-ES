@@ -125,9 +125,6 @@
           items:
             - name: Informe de inventario de dispositivos
               href: working-with-managed-desktop/device-inventory-report.md
-        - name: Trabajar con ideas
-          href: working-with-managed-desktop/insights.md
-          items:
             - name: Información sobre el uso
               href: working-with-managed-desktop/usage-insights.md
             - name: Información sobre la confiabilidad

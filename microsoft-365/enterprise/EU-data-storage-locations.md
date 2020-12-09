@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determine dónde se almacenan los datos del cliente de Microsoft 365 dentro de la Unión Europea
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376737"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527690"
 ---
 # <a name="data-locations-for-the-european-union"></a>Ubicaciones de datos en la Unión Europea
 
@@ -63,10 +63,12 @@ Tenemos ubicaciones para los centros de datos en Alemania y Francia, que le perm
 ||||| 
 
 >[!Note]
->Si tiene una suscripción a Microsoft Office 365 para el ámbito educativo con una dirección de facturación en Francia o Alemania, sus datos se pueden almacenar en nuestros centros de datos regionales de la Unión Europea. 
+>Si tiene una suscripción a Microsoft Office 365 para el ámbito educativo con una dirección de facturación en Francia o Alemania, sus datos se pueden almacenar en nuestros centros de datos regionales de la Unión Europea. Para conocer las ubicaciones de los datos del espacio empresarial fuera de la UE, consulte [Dónde se almacenan los datos de sus clientes de Microsoft 365](o365-data-locations.md).
 >
 
-### <a name="where-eu-data-is-computed"></a>Dónde se calculan los datos en la Unión Europea
+
+
+### <a name="where-eu-data-is-computed"></a>Dónde se procesan los datos en la Unión Europea
 
 Cuando usted comienza a usar cualquiera de los servicios anteriores, los cálculos necesarios para proporcionar el servicio para sus datos almacenados en uno de los centros de datos regionales europeos (o en su país) tendrán lugar dentro de esos mismos límites geográficos, a menos que se necesite una transferencia de datos temporal para realizar el cálculo en un centro de datos de Microsoft que se encuentre más lejos. 
 

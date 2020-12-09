@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentación del Escritorio administrado de Microsoft
-summary: Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.
+summary: Escritorio administrado de Microsoft es una solución ITaaS única que combina la administración de puntos de conexión y la supervisión de seguridad de una manera que brinda a los usuarios una experiencia de dispositivo segura y productiva en la que los profesionales de TI pueden confiar.
 metadata:
   title: Documentación del Escritorio administrado de Microsoft
   description: Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.date: 07/13/2020
-  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
-  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.date: 12/04/2020
+  ms.openlocfilehash: 59d8d4ae0986af58c086ea08f486feca5cb23f71
+  ms.sourcegitcommit: 9d5ddfc856926ce6919498c9c42a7421fef78328
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "46564148"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "49576780"
 landingContent:
 - title: Sobre el Escritorio administrado de Microsoft
   linkLists:
@@ -33,21 +33,33 @@ landingContent:
       url: get-started/index.md
     - text: Trabajar con el Escritorio administrado de Microsoft
       url: /microsoft-365/managed-desktop/working-with-managed-desktop/
-- title: Nuevos artículos y publicaciones del blog
+- title: Artículos y publicaciones del blog
   linkLists:
-  - linkListType: whats-new
+  - linkListType: learn
     links:
-    - text: '[Guía básica] La guía básica completa del Escritorio administrado de Microsoft'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-    - text: '[Notas del producto] Estudio: creciente demanda de servicios de Escritorio administrado'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-    - text: '[Libro electrónico] Deleite a su empresa con un espacio de trabajo moderno'
-      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-- title: Vídeos
+    - text: '[Blog] Los dispositivos de trabajo son los nuevos "snacks gratis"'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+    - text: '[Documento oficial] Estudio: El Escritorio administrado de Microsoft ahorra tiempo y costes'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+    - text: '[Documento oficial] El Escritorio administrado de Microsoft puede ayudar a impulsar la participación'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+    - text: '[Documento oficial] SA Power Networks implementa el Escritorio administrado de Microsoft para satisfacer las necesidades cambiantes de los usuarios'
+      url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
+- title: Ventajas y aspectos destacados
   linkLists:
   - linkListType: video
     links:
-    - text: Obtenga más información sobre las ventajas del Escritorio administrado de Microsoft del Director de ingeniería en Lloyds Banking Group.
+    - text: 'Escritorio administrado de Microsoft: experiencia de administración de TI'
+      url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+    - text: Qué les gusta a las empresas del Escritorio administrado de Microsoft
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+    - text: 'Escritorio administrado de Microsoft: experiencias de dispositivo fantásticas'
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+    - text: 'Escritorio administrado de Microsoft: operaciones de seguridad'
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: 'Escritorio administrado de Microsoft: proceso de versiones y cambios'
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: 'Shiproom / IGM / episodio 29: Establecer prioridades en la experiencia de usuario con la seguridad'
+      url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+    - text: 'Shiproom / Grupo de banca Lloyds / episodio 25: liderazgo durante una rápida transformación'
       url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-    - text: Puntos destacados del Escritorio administrado de Microsoft en la Conferencia anual de Ignite
-      url: /microsoft-365/managed-desktop/service-description

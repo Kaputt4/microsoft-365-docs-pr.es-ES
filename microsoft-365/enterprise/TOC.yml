@@ -119,12 +119,12 @@
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Acceso condicional
               href: microsoft-365-client-support-conditional-access.md
-            - name: Elegir entre la Seguridad de Movilidad Básica e Intune
-              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
             - name: Autenticación moderna
               href: microsoft-365-client-support-modern-authentication.md
             - name: Inicio de sesión único
               href: microsoft-365-client-support-single-sign-on.md
+            - name: Elegir entre la Seguridad de Movilidad Básica e Intune
+              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
         - name: Autenticación moderna híbrida
           items:
             - name: Requisitos previos para Skype Empresarial Server y Exchange Server
@@ -185,86 +185,8 @@
               href: microsoft-365-isolation-in-microsoft-365-search.md
             - name: Aislamiento del inquilino en Microsoft Video
               href: microsoft-365-isolation-in-microsoft-365-video.md
-            - name: Aislamiento del inquilino en Office Graph y Delve
+            - name: Aislamiento del espacio empresarial en Office Graph y Delve
               href: microsoft-365-isolation-in-graph-and-delve.md
-        - name: Garantía de servicio
-          items:
-            - name: Garantía del servicio en el Centro de seguridad y cumplimiento
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/service-assurance'
-            - name: Controles de acceso administrativo
-              href: microsoft-365-administrative-access-controls-overview.md
-              items:
-                - name: Auditoría y supervisión de controles de acceso
-                  href: microsoft-365-monitoring-and-auditing-access-controls.md
-                - name: Controles de aislamiento
-                  href: microsoft-365-isolation-controls.md
-                - name: Controles de personal
-                  href: microsoft-365-personnel-controls.md
-                - name: Controles de tecnología
-                  href: microsoft-365-technology-controls.md
-                - name: Controles de acceso de Yammer Enterprise
-                  href: microsoft-365-yammer-enterprise-access-controls.md
-            - name: Auditoría y creación de informes
-              href: microsoft-365-auditing-and-reporting-overview.md
-              items:
-                - name: Características de creación de informes
-                  href: microsoft-365-reporting-features.md
-                - name: Características de búsqueda e eDiscovery
-                  href: microsoft-365-ediscovery-and-search-features.md
-                - name: Registro interno para la ingeniería de Microsoft 365
-                  href: microsoft-365-internal-logging.md
-                - name: Migraciones de buzón
-                  href: microsoft-365-mailbox-migrations.md
-                - name: API de actividad de administración
-                  href: microsoft-365-management-activity-api.md
-            - name: Resistencia de datos
-              href: microsoft-365-data-resiliency-overview.md
-              items:
-                - name: Trabajar con datos dañados
-                  href: microsoft-365-dealing-with-data-corruption.md
-                - name: Resistencia de datos en Exchange Online
-                  href: microsoft-365-exchange-data-resiliency.md
-                - name: Protección de malware y Ransomware
-                  href: microsoft-365-malware-and-ransomware-protection.md
-                - name: Supervisión y recuperación automática
-                  href: microsoft-365-monitoring-and-self-healing.md
-            - name: 'Retención, eliminación y destrucción de datos'
-              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
-              items:
-                - name: Destrucción de datos
-                  href: microsoft-365-data-destruction.md
-                - name: Inmutabilidad
-                  href: microsoft-365-data-immutability.md
-                - name: Eliminación de datos en Exchange Online
-                  href: microsoft-365-exchange-online-data-deletion.md
-                - name: Eliminación de datos en SharePoint Online
-                  href: microsoft-365-sharepoint-online-data-deletion.md
-                - name: Eliminación de datos en Skype Empresarial
-                  href: microsoft-365-skype-data-deletion.md
-            - name: Defensa contra ataques por denegación de servicio
-              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
-              items:
-                - name: Estrategia de defensa contra denegación de servicio de Microsoft
-                  href: microsoft-365-microsoft-dos-defense-strategy.md
-                - name: Principios básicos de defensa contra ataques por denegación de servicio
-                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
-            - name: Cifrado en Microsoft Cloud
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview'
-              items:
-                - name: Cifrado de servicio de Microsoft 365
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption'
-                - name: Cifrado de datos en tránsito
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit'
-                - name: Características de cifrado administradas por el cliente
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features'
-                - name: Riesgos y protección de cifrado
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections'
-                - name: 'Cifrado para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online'
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange'
-                - name: Cifrado en Microsoft Dynamics 365
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365'
-                - name: Cifrado en Azure
-                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption'
     - name: Implementar
       items:
         - name: Agregar un dominio
@@ -273,6 +195,8 @@
       items:
         - name: Estado de mantenimiento del servicio de Microsoft 365
           href: microsoft-365-service-health.md
+        - name: Supervisión de Exchange Online
+          href: microsoft-365-exchange-monitoring.md
         - name: Guías de configuración
           href: setup-guides-for-microsoft-365.md
     - name: Varios inquilinos
@@ -350,6 +274,22 @@
               href: ms-cloud-germany-transition.md
             - name: Participar en la migración
               href: ms-cloud-germany-migration-opt-in.md
+            - name: Experiencia del cliente
+              href: ms-cloud-germany-transition-experience.md
+            - name: Impactos y acciones de las fases de migración
+              href: ms-cloud-germany-transition-phases.md
+            - name: Información adicional
+              items:
+                - name: General
+                  href: ms-cloud-germany-transition-add-general.md
+                - name: Dispositivos
+                  href: ms-cloud-germany-transition-add-devices.md
+                - name: Tarea previa
+                  href: ms-cloud-germany-transition-add-pre-work.md
+                - name: Experiencia
+                  href: ms-cloud-germany-transition-add-experience.md
+                - name: Pasos de la migración de AD FS
+                  href: ms-cloud-germany-transition-add-adfs.md
 - name: Identidad
   items:
     - name: Guía básica

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 64cdfeab4b527dd3b84e7586d1419e5bf8b383df
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073109"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561687"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -31,7 +31,7 @@ Este artículo le guiará a través de tres escenarios donde puede crear y modif
 
 ## <a name="dlp-settings"></a>Configuración DLP
 
-Antes de empezar, configure las opciones de configuración DLP que se aplican a todas las directivas DLP para dispositivos. Debe configurarlas si quiere crear directivas que cumplan con lo siguiente:
+Antes de empezar, configure las opciones de configuración DLP que se aplican a todas las directivas DLP para dispositivos. Debe configurarlas si tiene previsto crear directivas que cumplan con lo siguiente:
 
 - restricciones de salida de la nube
 - restricciones de aplicaciones no permitidas
@@ -45,7 +45,7 @@ O bien
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
-Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DLP y aplicación de directivas DLP en los dispositivos, ya sea porque tienen demasiado ruido o no contienen archivos que le interesen. Los archivos en esas ubicaciones no se auditarán y los archivos que se creen o modifiquen en esas ubicaciones no se someterán a la aplicación de directivas DLP. Puede configurar exclusiones de ruta en configuración DLP.
+Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DLP y aplicación de directivas DLP en sus dispositivos, ya sea porque tienen demasiado ruido o no contienen archivos que le interesan. Los archivos en esas ubicaciones no se auditarán y los archivos que se creen o modifiquen en esas ubicaciones no se someterán a la aplicación de directivas DLP. Puede configurar exclusiones de ruta en configuración DLP.
 
 Puede usar esta lógica para crear sus rutas de exclusión:
 
@@ -63,24 +63,36 @@ Puede usar esta lógica para crear sus rutas de exclusión:
 
 - Una combinación de todas las anteriores. <br/>Por ejemplo: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
-### <a name="service-domains"></a>Dominios de servicio
-
-Puede agregar dominios a esta lista que servirá como referencia para Edge Chromium cuando aplique la restricción de acceso de carga en la nube de la directiva DLP de los puntos de conexión. 
-
-Si el modo de lista está configurado en **Bloquear** , el usuario no podrá cargar elementos confidenciales a esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
-
-Si el modo de lista está configurado en **Permitir** , los usuarios podrán cargar elementos confidenciales * *_solo_* _ a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
-
 ### <a name="unallowed-apps"></a>Aplicaciones no permitidas
 
-Cuando la configuración de _ *Acceso por parte de aplicaciones y exploradores no permitidos* * de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará, y los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
+Cuando la configuración de **Acceso por aplicaciones y exploradores no permitidos** de una directiva esté activada y los usuarios intenten usar estas aplicaciones para acceder a un archivo protegido, la actividad se permitirá, se bloqueará, o se bloqueará pero los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
 
-### <a name="unallowed-browsers"></a>Exploradores no permitidos
+> [!IMPORTANT]
+> No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
+
+
+### <a name="browser-and-domain-restrictions"></a>Restricciones del dominio y del explorador:
+Restrinja el uso compartido de los archivos confidenciales que coincidan con las directivas con dominios de servicio en la nube sin restricciones.
+
+#### <a name="service-domains"></a>Dominios de servicio
+
+Puede controlar si los archivos confidenciales protegidos por sus directivas se pueden cargar en dominios de servicio específicos de Microsoft Edge.
+
+Si el modo de lista está configurado en **Bloquear**, el usuario no podrá cargar elementos confidenciales a esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
+
+Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_* _ a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
+
+#### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
 Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
 
-[!IMPORTANT]
-No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
+### <a name="always-audit-file-activity-from-onboarded-devices"></a>Auditar siempre la actividad de archivos de los dispositivos integrados
+
+Controle si la actividad DLP de Office, los archivos PDF y CSV se auditan automáticamente y están disponibles para su revisión en la telemetría de auditoría y en el explorador de actividad de los dispositivos integrados. 
+
+Si está activado (predeterminado), la actividad de archivo siempre se audita en los dispositivos integrados, independientemente de si están o no incluidos en una directiva DLP activa.
+Si está desactivado, la actividad de archivo se audita en los dispositivos integrados, solo si están incluidos en una directiva DLP activa. 
+
 
 ## <a name="tying-dlp-settings-together"></a>Vincular las opciones de configuración DLP
 
@@ -94,7 +106,7 @@ Para usar esta restricción, tendrá que configurar tres partes importantes:
 
 2. Agregue los exploradores que no tienen permitido acceder a ciertos elementos confidenciales cuando se produzca una coincidencia de directiva DLP.
 
-3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido**.
+3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando _ *Cargar en los servicios en la nube** y **Acceso desde un explorador no permitido**.
 
 Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
 
@@ -113,29 +125,29 @@ Para ayudarle a familiarizarse con las características de DLP de los puntos de 
 
 ### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Escenario 1: crear una directiva a partir de una plantilla, solo auditoría
 
-Estos escenarios requieren que ya tenga dispositivos incorporados y que presenten informes al Explorador de actividades. [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md).
+Estos escenarios requieren que ya tenga dispositivos incorporados y que presenten informes al Explorador de actividades. Si todavía no ha incorporado sus dispositivos, consulte [Introducción a la prevención de pérdida de datos de los puntos de conexión](endpoint-dlp-getting-started.md).
 
-1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+1. Abra la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
 2. Elija **Crear directiva**.
 
-3. Para este escenario, elija **Privacidad** , después **Datos de información de identificación personal (PII) de Estados Unidos** , y elija **Siguiente**.
+3. Para este escenario, elija **Privacidad**, después **Datos de información de identificación personal (PII) de Estados Unidos**, y elija **Siguiente**.
 
-4. Desactive el campo **Estado** para todas las ubicaciones, excepto para **Dispositivos**. A continuación, elija **Siguiente**.
+4. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos**. Elija **Siguiente**.
 
 5. Acepte la selección predeterminada **Revisar y personalizar la configuración a partir de la plantilla** y elija **Siguiente**.
 
 6. Acepte los valores predeterminados **Acciones de protección** y elija **Siguiente**.
 
-7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. A continuación, elija **Siguiente**.
+7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. Elija **Siguiente**.
 
-8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. A continuación, elija **Siguiente**.
+8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. Elija **Siguiente**.
 
 9. Revise la configuración y elija **Enviar**.
 
 10. La nueva directiva DLP se mostrará en la lista de directivas.
 
-11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
+11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al explorador de actividades](data-classification-activity-explorer.md), de ser necesario. 
 
 12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
 
