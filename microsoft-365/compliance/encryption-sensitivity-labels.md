@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446172"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561721"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -43,15 +43,15 @@ Cuando se encripta un documento o correo electrónico, el acceso al contenido es
 Por último, como administrador, al configurar una etiqueta de confidencialidad para aplicar el cifrado, puede elegir entre:
 
 - **Asignar permisos ahora** para que determine exactamente los permisos para el contenido con esa etiqueta y los usuarios que los obtendrán.
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
+- **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo.
 
 La configuración de cifrado está disponible cuando se [crea una etiqueta de confidencialidad](create-sensitivity-labels.md) en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento.
 
 ## <a name="understand-how-the-encryption-works"></a>Entender cómo funciona el cifrado
 
-Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+El cifrado usa el servicio Azure Rights Management (Azure RMS) de Azure Information Protection. Esta solución de protección usa directivas de cifrado, identidades y de autorización. Para obtener más información, consulte [¿qué es Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) en la documentación de Azure Information Protection. 
 
-When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+Cuando usa esta solución de cifrado, la característica de **superusuario** garantiza que los usuarios y los servicios autorizados siempre puedan leer e inspeccionar los datos que se han cifrado para la organización. Si es necesario, el cifrado puede quitarse o modificarse. Para obtener más información, consulte [configuración de superusuarios para Azure Information Protection y servicios de detección y de recuperación de datos de Azure](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Cómo configurar una etiqueta para el cifrado
 
@@ -63,7 +63,7 @@ When you use this encryption solution, the **super user** feature ensures that a
     
     ![Opciones de protección de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/protection-options-sensitivity-label.png)
 
-4.  En la página**Cifrado **del asistente, seleccione una de las siguientes opciones:
+4.  En la página **Cifrado** del asistente, seleccione una de las siguientes opciones:
     
     - **Quitar el cifrado si el archivo está cifrado**: para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied). Es importante tener en cuenta que esta configuración puede dar lugar a que los usuarios no puedan aplicar una etiqueta de confidencialidad cuando no tienen permisos suficientes.
     
@@ -85,7 +85,7 @@ Sin embargo, es posible que el contenido ya esté cifrado. Por ejemplo, otro usu
 
 En la tabla siguiente se identifica lo que ocurre con el cifrado existente cuando se aplica una etiqueta de confidencialidad al contenido:
 
-| |**Cifrado: no seleccionado**|**Cifrado: configurado**|**Cifrado: quitar**|
+| | Cifrado: no seleccionado | Cifrado: configurado | Cifrado: quitar |
 |:-----|:-----|:-----|:-----|
 |**Permisos especificados por un usuario**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 |**Plantilla de protección**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
@@ -108,7 +108,7 @@ Los documentos que ya están cifrados y se agregan como datos adjuntos siempre c
 
 ## <a name="configure-encryption-settings"></a>Configurar opciones de cifrado
 
-Cuando seleccione**Establecer la configuración de cifrado**, en la página **Cifrado** del asistente para crear o editar una etiqueta de confidencialidad, elija una de las siguientes opciones:
+Cuando seleccione **Establecer la configuración de cifrado**, en la página **Cifrado** del asistente para crear o editar una etiqueta de confidencialidad, elija una de las siguientes opciones:
 
 - **Asignar permisos ahora** para que pueda determinar exactamente qué permisos obtienen los distintos usuarios para el contenido que tenga aplicada la etiqueta. Para obtener más información, vea la sección siguiente [Asignar permisos ahora](#assign-permissions-now).
 - **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo. Para obtener más información, vea la sección [Permitir a los usuarios asignar permisos](#let-users-assign-permissions) en esta página.
@@ -385,7 +385,9 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Los archivos cifrados pueden tardar más en abrirse en las aplicaciones de Office (Windows, Mac, Android y iOS).
 
-- Las siguientes acciones para archivos cifrados no son compatibles con las aplicaciones de Office (Windows, Mac, Android y iOS), y los usuarios ven un mensaje de error que indica que se ha producido un problema. Sin embargo, la funcionalidad de SharePoint se puede usar como alternativa:
+- Si se agrega una etiqueta que aplica el cifrado a través de una aplicación de Office, cuando el documento está [extraído en SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) y el usuario descarta la desprotección, el documento permanece etiquetado y cifrado.
+
+- Las siguientes acciones para archivos cifrados no son compatibles con las aplicaciones de Office (Windows, Mac, Android y iOS) y los usuarios ven un mensaje de error que indica que se ha producido un problema. Sin embargo, la funcionalidad de SharePoint se puede usar como alternativa:
 
   - Ver, restaurar y guardar las copias de versiones anteriores. Como alternativa, los usuarios pueden realizar estas acciones mediante Office en la web cuando [habilita y configura las versiones para una lista o biblioteca](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Cambiar el nombre o la ubicación de los archivos. Como alternativa, los usuarios pueden [cambiar el nombre de un archivo, carpeta o vínculo de una biblioteca de documentos](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) en SharePoint.

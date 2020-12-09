@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126678"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560889"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -130,6 +130,9 @@ Para configurar DKIM, deberá completar estos pasos:
 
 Para cada dominio para el que quiera agregar una firma DKIM en DNS, necesita publicar dos registros CNAME.
 
+> [!NOTE]
+> Si no ha leído el artículo completo, es posible que se haya perdido esta información de conexión de PowerShell para ahorrar tiempo: [Conectarse a cargas de trabajo de Office 365 a través de PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (El cmdlet viene de Exchange Online). 
+
 Ejecute los siguientes comandos para crear los registros del selector:
 
 ```powershell
@@ -187,8 +190,6 @@ TTL:                3600
 > [!NOTE]
 > Es importante crear el segundo registro, pero solo uno de los selectores puede estar disponible en el momento de la creación. En esencia, el segundo selector podría apuntar a una dirección que aún no ha sido creada. Aun así, recomendamos crear el segundo registro CNAME, ya que la rotación de las teclas será perfecta.
 
-> [!CAUTION]
-> La rotación automática de clave se ha deshabilitado temporalmente porque implementamos algunos cambios de diseño en cómo hemos creado claves. Es recomendable tener varias claves para que pueda rotarlas periódicamente. Aunque es difícil de averiguar, sigue siendo una estrategia práctica para protegerse frente a cosas como la suplantación. Puede seguir el documento [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) para aprender a hacerlo en su organización. Esperamos que la rotación automática se vuelva a habilitar en agosto de 2020.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>Habilitar la firma DKIM para su dominio personalizado
 <a name="EnableDKIMinO365"> </a>
@@ -350,3 +351,7 @@ Por ejemplo, el registro DKIM tendría el siguiente aspecto:
 <a name="DKIMNextSteps"> </a>
 
 Aunque DKIM está diseñado para ayudar a evitar la suplantación de identidad, DKIM funciona mejor con SPF y DMARC. Cuando haya configurado DKIM, si todavía no ha configurado SPF, debería hacerlo. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [Configuración de SPF en Microsoft 365 para evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para comprender en detalle cómo Microsoft 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) (Cómo Microsoft 365 usa el marco de directivas permanente [SPF] para evitar la suplantación de identidad). Después, consulte [Uso de DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md). Los [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Microsoft 365 para efectuar comprobaciones de DKIM.
+
+## <a name="more-information"></a>Más información
+
+Rotación de clave mediante PowerShell [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)

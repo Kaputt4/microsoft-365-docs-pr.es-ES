@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 7f8337d368c5c9de7cf1d9ff90831777c0811b87
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600475"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527575"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -32,6 +32,7 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clas
 
 - Privacidad (pública o privada) de los sitios de equipos y Grupos de Microsoft 365
 - Acceso de usuarios externos
+- Uso compartido externo desde sitios de SharePoint (en versión preliminar)
 - Acceso desde dispositivos no administrados
 
 > [!IMPORTANT]
@@ -83,7 +84,7 @@ Habilitar las etiquetas de confidencialidad para contenedores significa que ahor
 2. A continuación, en la página **Definir configuración de protección para grupos y sitios**, seleccione una o ambas opciones disponibles:
     
     - **Configuración de privacidad y acceso de usuarios externos** para establecer las opciones de configuración de **Privacidad** y **Acceso de usuarios externos**. 
-    - **Configuración de acceso al dispositivo y uso compartido externo** para establecer la configuración del **Acceso desde dispositivos no administrados**.
+    - **Configuración de acceso al dispositivo y uso compartido externo** para establecer la configuración del **Control de uso compartido externo desde sitios etiquetados de SharePoint** y **Acceso desde dispositivos no administrados**.
 
 3. Si seleccionó **Configuración de privacidad y acceso de usuarios externos**, configure las siguientes opciones:
     
@@ -98,6 +99,8 @@ Habilitar las etiquetas de confidencialidad para contenedores significa que ahor
     - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
 4. Si seleccionó **Configuración de acceso al dispositivo y uso compartido externo**, configure las siguientes opciones:
+    
+    - **Controlar el uso compartido externo desde sitios de SharePoint etiquetados**: actualmente en versión preliminar, seleccione esta opción para luego seleccionar el uso compartido externo para cualquier persona, invitados nuevos y existentes, invitados existentes o solo personas de su organización. Para más información sobre esta configuración y opciones, consulte la documentación de SharePoint [Activar o desactivar el uso compartido externo de un sitio](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
     
     - **Acceso a dispositivos no administrados**: esta opción emplea la característica de SharePoint que usa el acceso condicional de Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices) en la documentación de SharePoint. La opción que especifique para esta configuración de etiqueta constituye el equivalente a ejecutar un comando de PowerShell para un sitio, tal y como se describe en los pasos 3-5 en la sección de instrucciones de SharePoint [Bloquear o limitar el acceso a un sitio específico de SharePoint o a OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
         
@@ -356,7 +359,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 ## <a name="auditing-sensitivity-label-activities"></a>Auditar actividades de etiqueta de confidencialidad
 
 > [!IMPORTANT]
-> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios**para las etiquetas que protegen los contenedores: debido al evento de auditoría y correo electrónico **Desfase detectado de la confidencialidad del documento**descrito en esta sección, considere [ordenar esas etiquetas](sensitivity-labels.md#label-priority-order-matters)antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
+> Si usa la separación de etiquetas seleccionando solo el ámbito **Grupos y sitios** para las etiquetas que protegen los contenedores: debido al evento de auditoría y correo electrónico **Desfase detectado de la confidencialidad del documento** descrito en esta sección, considere [ordenar esas etiquetas](sensitivity-labels.md#label-priority-order-matters)antes de que tengan un ámbito para **Archivos y mensajes de correo electrónico**. 
 
 Si alguien carga un documento en un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) que la etiqueta de confidencialidad que se aplica al sitio, esta acción no está bloqueada. Por ejemplo, aplicó la etiqueta **general** a un sitio de SharePoint y alguien carga en este sitio un documento etiquetado como **confidencial**. Debido a que una etiqueta de confidencialidad con mayor prioridad identifica el contenido que es más confidencial que el contenido que tiene un orden de menor prioridad, esta situación podría ser un problema de seguridad.
 
