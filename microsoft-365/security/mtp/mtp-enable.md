@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: fbe98b814b253551432ea35102f2bd6eeba921f8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920507"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602096"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 defender
 
@@ -52,13 +52,13 @@ Microsoft 365 defender agrega datos de los diversos servicios compatibles que ya
 Para obtener la mejor protección y optimizar Microsoft 365 defender, se recomienda implementar todos los servicios admitidos aplicables en la red. Para obtener más información, [Consulte acerca de la implementación de servicios compatibles](deploy-supported-services.md).
 
 ## <a name="before-starting-the-service"></a>Antes de iniciar el servicio
-Antes de activar el servicio, el centro de seguridad 365 de Microsoft ( [Security.Microsoft.com](https://security.microsoft.com)) muestra la página de configuración de Microsoft 365 defender al seleccionar **incidentes** , **centro de actividades** o **caza** en el panel de navegación. Estos elementos de navegación no se muestran si no es elegible para usar Microsoft 365 defender.
+Antes de activar el servicio, el centro de seguridad 365 de Microsoft ([Security.Microsoft.com](https://security.microsoft.com)) muestra la página de configuración de Microsoft 365 defender al seleccionar **incidentes**, **centro de actividades** o **caza** en el panel de navegación. Estos elementos de navegación no se muestran si no es elegible para usar Microsoft 365 defender.
 
 ![Imagen de la página de configuración de Microsoft 365 defender que se muestra si no se activó la configuración de Microsoft 365 defender ](../../media/mtp-enable/mtp-settings.png)
  *365 en Microsoft 365 Security Center*
 
 ## <a name="starting-the-service"></a>Inicio del servicio
-Para activar Microsoft 365 defender, simplemente seleccione **Activar microsoft 365 defender** y aplicar el cambio. También puede tener acceso a esta opción si selecciona **configuración** ( [Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) en el panel de navegación y, a continuación, selecciona **Microsoft 365 defender**.
+Para activar Microsoft 365 defender, simplemente seleccione **Activar microsoft 365 defender** y aplicar el cambio. También puede tener acceso a esta opción si selecciona **configuración** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) en el panel de navegación y, a continuación, selecciona **Microsoft 365 defender**.
 
 >[!NOTE]
 >Si no ve la **configuración** en el panel de navegación o no pudo obtener acceso a la página, compruebe los permisos y las licencias.
@@ -84,11 +84,6 @@ Una vez que recibe el servicio, este agrega:
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Obtención de Microsoft defender para datos de identidad
 Para compartir Microsoft defender para obtener datos de identidad con Microsoft 365 defender, asegúrese de que la opción Microsoft Cloud App Security y Microsoft defender para la integración de identidades están activadas. [Infórmese de esta integración](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
-
-## <a name="turn-off-microsoft-365-defender"></a>Desactivar Microsoft 365 defender
-Para dejar de usar Microsoft 365 defender, vaya a **configuración**  >  **Microsoft 365 defender**  >  **participar/participar** en el centro de seguridad de Microsoft 365. Desactive **Activar Microsoft 365 defender** y aplicar los cambios.
-
-Se quitarán las características correspondientes del centro de seguridad de Microsoft 365.
 
 ## <a name="get-assistance"></a>Cómo recibir asistencia
 

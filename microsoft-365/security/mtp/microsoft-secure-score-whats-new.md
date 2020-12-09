@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374000"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604388"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md).
+Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md)
 
 Se puede encontrar la puntuación segura de Microsoft en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
-## <a name="november-2020"></a>Noviembre de 2020
+## <a name="november-2020"></a>2020 de noviembre
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Se ha quitado la capacidad de crear vales de ServiceNow a través de la puntuación segura 
+
+La capacidad de crear vales de ServiceNow a través de la calificación segura yendo a **compartir > ServiceNow** ya no está disponible. Gracias por sus comentarios y el soporte técnico continuo mientras determinamos los siguientes pasos.
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron 3 acciones de mejora relacionadas con los servicios para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
 
@@ -43,7 +47,7 @@ Se puede encontrar la puntuación segura de Microsoft en https://security.micros
 - Cambiar la ruta de acceso del ejecutable del servicio a una ubicación común protegida
 - Cambiar la cuenta de servicio para evitar la contraseña almacenada en caché en el registro de Windows
 
-## <a name="october-2020"></a>Octubre de 2020
+## <a name="october-2020"></a>2020 de octubre
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Quitar la acción de mejora relacionada con Microsoft defender para el punto de conexión
 

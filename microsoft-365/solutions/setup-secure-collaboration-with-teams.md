@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar la colaboración segura de contenido en Microsoft Teams para proteger los datos en función de su sensibilidad.
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906804"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602078"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración moderna con Microsoft 365
 
@@ -60,11 +60,11 @@ La información esencial para el éxito de la organización o que tenga requisit
 
 Para todos los escenarios mencionados anteriormente, puede usar Teams en Microsoft Teams para almacenar, compartir y colaborar en la información. 
 
-Para configurar Collabration seguras, use estas funciones y características de Microsoft 365.
+Para configurar una colaboración segura, use estas funciones y características de Microsoft 365.
 
 | Producto o componente | Funcionalidad o característica | Licencias |
 |:-------|:-----|:-------|
-| Microsoft Defender para Office 365 | Datos adjuntos seguros para SPO, OneDrive y Teams; Documentos seguros; Vínculos seguros para Microsoft Teams    | Microsoft 365 E1, E3 y E5 |
+| Microsoft defender para Office 365 | Datos adjuntos seguros para SPO, OneDrive y Teams; Documentos seguros; Vínculos seguros para Microsoft Teams    | Microsoft 365 E1, E3 y E5 |
 | SharePoint    | Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos para compartir, solicitudes de acceso, configuración de uso compartido del invitado del sitio | Microsoft 365 E1, E3 y E5 |
 | Microsoft Teams   | Acceso de invitado, equipos privados, canales privados | Microsoft 365 E1, E3 y E5 |
 | Cumplimiento de Microsoft 365  | Etiquetas de confidencialidad    | Microsoft 365 E3 y E5 |
@@ -76,9 +76,9 @@ Para administrar el acceso a la información con diferentes sensitivities, hemos
 ![Imagen en miniatura para el póster de la arquitectura lógica de Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Estos niveles: *línea base* , *sensible* y *extremadamente sensible* : aumentan gradualmente las protecciones que ayudan a evitar el uso compartido y la fuga potencial de información, como se muestra en la siguiente tabla.
+Estos niveles: *línea base*, *sensible* y *extremadamente sensible* : aumentan gradualmente las protecciones que ayudan a evitar el uso compartido y la fuga potencial de información, como se muestra en la siguiente tabla.
 
-||**Nivel de línea base**|**Nivel confidencial**|**Nivel muy confidencial**|
+|-|**Nivel de línea base**|**Nivel confidencial**|**Nivel muy confidencial**|
 |:--|:-----------|:------------|:-------------------|
 |Equipo público o privado|Ambos|Private|Private|
 |Uso compartido no autenticado|Blocked|Blocked|Blocked|
@@ -127,7 +127,7 @@ Cuando esté listo para implementar esta solución, continúe con estos pasos:
 1. Configure los [tres niveles de protección distintos para Microsoft Teams](configure-teams-three-tiers-protection.md).
 2. Configure las opciones para [compartir información de cualquier importancia con personas de fuera de la organización](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
 

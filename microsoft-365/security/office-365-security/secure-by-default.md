@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información acerca de la configuración de seguridad de forma predeterminada en Exchange Online Protection (EOP)
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558519"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602046"
 ---
 # <a name="secure-by-default-in-office-365"></a>Seguro de forma predeterminada en Office 365
 
@@ -40,6 +40,8 @@ Microsoft 365 organizaciones con buzones de correo en Exchange online están pro
 
 - El correo electrónico con el malware sospechoso se pondrá en cuarentena automáticamente y se notificará a los destinatarios. Vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 - El correo electrónico identificado como una identidad de confianza alta se controlará de acuerdo con la acción de la Directiva contra correo no deseado. Consulte [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
+
+Para obtener más información acerca de EOP, consulte [Exchange Online Protection Overview](exchange-online-protection-overview.md).
 
 Debido a que Microsoft desea mantener a nuestros clientes seguros de forma predeterminada, algunos invalidaciones de los inquilinos no se aplican para el malware o la suplantación de identidad de confianza alta. Estas invalidaciones incluyen:
 
@@ -65,5 +67,5 @@ Solo debe considerar la posibilidad de usar reemplazos en los siguientes escenar
 
 - Simulaciones de suplantación de identidad (phishing): los ataques simulados pueden ayudar a identificar los usuarios vulnerables antes de que un ataque real afecte a su organización.
 - Buzones de seguridad/SecOps: buzones dedicados usados por los equipos de seguridad para obtener mensajes no filtrados (buenos y no válidos). Los equipos pueden revisar para ver si contienen contenido malintencionado.
-- Filtros de terceros: algunos proveedores de terceros recomendarán que se desactive EOP (SCL =-1), ya que el filtro de terceros administrará el filtrado de correo. Microsoft no recomienda desactivar EOP como EOP es necesario para defender para Office 365. En su lugar, la recomendación es activar el [filtrado mejorado para los conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- Filtros de terceros: algunos proveedores de terceros recomendarán que se desactive EOP (SCL =-1), ya que el filtro de terceros administrará el filtrado de correo. Microsoft no recomienda desactivar EOP como EOP es necesario para [Microsoft defender para Office 365](office-365-atp.md). En su lugar, la recomendación es activar el [filtrado mejorado para los conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 - Falsos positivos: es posible que desee permitir temporalmente determinados mensajes que Microsoft todavía está analizando [a través de los envíos de administración](admin-submission.md). Como con todas las invalidaciones, se recomienda que sean temporales.

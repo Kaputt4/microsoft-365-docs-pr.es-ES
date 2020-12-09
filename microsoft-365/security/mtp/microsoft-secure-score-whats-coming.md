@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409238"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604400"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
 
@@ -44,14 +44,6 @@ Adición de 6 acciones de mejora relacionadas con las cuentas para Microsoft def
 - Establezca ' vigencia mínima de la contraseña ' en ' 1 o más días '
 - Deshabilitar la cuenta integrada de administrador
 - Deshabilitar la cuenta de invitado integrada
-
-### <a name="november-2020"></a>Noviembre de 2020
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Eliminación de la capacidad de crear vales de ServiceNow a través de la puntuación segura 
-
-La capacidad de crear vales de ServiceNow a través de la calificación segura yendo a **compartir > ServiceNow** se quitará.
-
-El período de versión preliminar del conector de ServiceNow está finalizando. Esta capacidad ya no estará disponible al final del 2020. Gracias por sus comentarios y el soporte técnico continuo mientras determinamos los siguientes pasos.
 
 ## <a name="related-resources"></a>Recursos relacionados
 

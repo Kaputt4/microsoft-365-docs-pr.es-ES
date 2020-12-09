@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo se protege la privacidad con la puntuación de productividad.
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561519"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604331"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controles de privacidad para la puntuación de productividad
 
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Capacidad para dejar de participar en experiencias de personas
 
-También puede optar por no participar en el área de experiencias de personas de la puntuación de productividad. Si opta por no participar, nadie de su organización podrá ver estas métricas y su organización se quitará de los cálculos relacionados con la comunicación, las reuniones, el trabajo en equipo, la colaboración de contenido y la movilidad.
+También puede optar por no participar en el área de experiencias de personas de la puntuación de productividad. Si opta por no participar, nadie de su organización podrá ver estas métricas y su organización se quitará de los cálculos relacionados con la comunicación, las reuniones, el trabajo en equipo, la colaboración de contenido y la movilidad. Debe ser un administrador global para que su organización pueda optar por los informes de experiencias de personas.
 
 Para opt put:
 
