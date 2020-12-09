@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Obtenga información sobre los pasos básicos de solución de problemas que puede realizar para resolver problemas comunes en la exhibición de documentos electrónicos de Office 365.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422869"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602041"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar problemas y resolver problemas comunes de eDiscovery
 
@@ -58,8 +58,7 @@ Compruebe si hay usuarios duplicados o una lista de distribución con el mismo i
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>Error/problema: la búsqueda produce un error en ubicaciones específicas
 
-Una exhibición de documentos electrónicos o búsqueda de contenido puede producir el siguiente error:
->Esta búsqueda se completó con errores (#).  ¿Desea volver a intentar la búsqueda en las ubicaciones con errores?
+Una exhibición de documentos electrónicos o búsqueda de contenido puede producir el siguiente error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Captura de pantalla del error de la ubicación específica de búsqueda con errores](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -195,6 +194,14 @@ error de distribución de sincronización de la Directiva de suspensión de caso
 
 4. Ponerse en contacto con el soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Error: "la condición especificada con encabezados HTTP condicionales no se cumple"
+
+Al descargar los resultados de la búsqueda mediante la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` este es un error transitorio, que suele producirse en la ubicación de almacenamiento de Azure.
+
+### <a name="resolution"></a>Solución
+
+Para resolver este problema, vuelva a intentar [descargar los resultados](export-search-results.md#step-2-download-the-search-results)de la búsqueda, lo que reiniciará la herramienta de exportación de exhibición de documentos electrónicos.
+
+## <a name="see-also"></a>Consulte también
 
 - [Sugerencias para evitar errores de ubicación de contenido](retry-failed-content-search.md#tips-to-avoid-content-location-errors)

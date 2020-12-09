@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422879"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602057"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -345,6 +345,8 @@ Los mensajes de correo electrónico protegidos por derechos (protegidos por RMS)
 
 ### <a name="miscellaneous"></a>Varios
   
+- Al descargar los resultados de la búsqueda mediante la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` este es un error transitorio, que suele producirse en la ubicación de almacenamiento de Azure. Para resolver este problema, vuelva a intentar [descargar los resultados](#step-2-download-the-search-results)de la búsqueda, lo que reiniciará la herramienta de exportación de exhibición de documentos electrónicos.
+
 - Todos los resultados de búsqueda y los informes de exportación se incluyen en una carpeta que tiene el mismo nombre que en la búsqueda de contenido. Los mensajes de correo electrónico que se exportaron se ubican en una carpeta denominada **Exchange**. Los documentos se ubican en una carpeta denominada **SharePoint**.
 
 - Los metadatos del sistema de archivos para los documentos de los sitios de SharePoint y OneDrive para la empresa se mantienen cuando los documentos se exportan a su equipo local. Eso significa que las propiedades del documento, como la fecha de creación y la fecha en la que se modificó por última vez, no cambian cuando se exportan los documentos.

@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 22f279eaccaed20984a59b9b3ae5655df00b2ae3
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951093"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604364"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
 > [!NOTE]
-> Las funciones de prevención de pérdida de datos se han agregado recientemente a los mensajes de conversaciones y canales de Microsoft Teams para usuarios con licencia de Cumplimiento avanzado de Office 365, que está disponible como opción independiente y se incluye en Cumplimiento de Microsoft 365 E5 y Office 365 E5. Office 365 y Microsoft 365 E3 incluyen la protección DLP para SharePoint Online, OneDrive y Exchange Online. Esto también incluye los archivos que se comparten a través de Teams, ya que Microsoft Teams usa SharePoint Online y OneDrive para compartir archivos.
+> Las capacidades de prevención de pérdida de datos se han agregado recientemente a los mensajes de chat y de canal de Microsoft Teams para los usuarios con licencia para Office 365 E5/A5, Microsoft 365 E5/A5, protección de la información de Microsoft 365 y gobernanza o Office 365 Advanced Compliance. Office 365 y Microsoft 365 E3 incluyen la protección DLP para SharePoint Online, OneDrive y Exchange Online. Esto también incluye los archivos que se comparten a través de Teams, ya que Microsoft Teams usa SharePoint Online y OneDrive para compartir archivos.
 La compatibilidad con la protección DLP en el chat de Microsoft Teams requiere E5.
 Para obtener más información sobre los requisitos de licencias, consulte [Instrucciones de licencias de Microsoft 365 del nivel de espacio empresarial](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
@@ -69,7 +69,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 2. Elija Directiva de **prevención de pérdida de datos**  >  **Policy**.
 
-3. Seleccione una directiva y, junto a **configuración de directiva** , elija **Editar**.
+3. Seleccione una directiva y, junto a **configuración de directiva**, elija **Editar**.
 
 4. Puede crear una nueva regla o editar una regla existente para la Directiva.<br/>![Edición de una regla para una directiva](../media/dlp-teams-editrule.png)<br/>
 
@@ -89,7 +89,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 2. Elija Directiva de **prevención de pérdida de datos**  >  **Policy**.
 
-3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams** , ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
+3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams**, ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
 
 4. En la columna **Estado** , active la Directiva para **los mensajes de chat y de canal de Microsoft Teams**.<br/>![DLP para los chats y canales de Microsoft Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
@@ -117,11 +117,11 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 <br/>
 
-6. En la **pestaña Configuración de directiva** , en **personalizar el tipo de contenido que quiere proteger** , mantenga la configuración sencilla predeterminada o elija **Usar configuración avanzada** y, a continuación, elija **siguiente**. Si elige la configuración avanzada, puede crear o editar reglas para la Directiva. (Para obtener ayuda, consulte [Configuración sencilla frente a configuración avanzada](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)).
+6. En la **pestaña Configuración de directiva** , en **personalizar el tipo de contenido que quiere proteger**, mantenga la configuración sencilla predeterminada o elija **Usar configuración avanzada** y, a continuación, elija **siguiente**. Si elige la configuración avanzada, puede crear o editar reglas para la Directiva. (Para obtener ayuda, consulte [Configuración sencilla frente a configuración avanzada](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)).
 
-7.  En la pestaña **configuración de directiva** , en **¿qué desea hacer si se detecta información confidencial?** , revise la configuración. (Aquí puede elegir mantener las [sugerencias de directiva y notificaciones de correo electrónico](use-notifications-and-policy-tips.md)predeterminadas o personalizarlas).<br/>![Configuración de directivas de DLP con sugerencias y notificaciones](../media/dlp-teams-policysettings-tipsemails.png)<br/>Cuando haya terminado de revisar o editar la configuración, elija **siguiente**.
+7.  En la pestaña **configuración de directiva** , en **¿qué desea hacer si se detecta información confidencial?**, revise la configuración. (Aquí puede elegir mantener las [sugerencias de directiva y notificaciones de correo electrónico](use-notifications-and-policy-tips.md)predeterminadas o personalizarlas).<br/>![Configuración de directivas de DLP con sugerencias y notificaciones](../media/dlp-teams-policysettings-tipsemails.png)<br/>Cuando haya terminado de revisar o editar la configuración, elija **siguiente**.
 
-8. En la **pestaña Configuración de directiva** , en **¿desea activar la Directiva o probar la primera?** , elija si desea activar la Directiva, [probarla primero](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)o dejarla desactivada por ahora y, a continuación, elija **siguiente**.<br/>![Especificar si se va a activar la Directiva](../media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. En la **pestaña Configuración de directiva** , en **¿desea activar la Directiva o probar la primera?**, elija si desea activar la Directiva, [probarla primero](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)o dejarla desactivada por ahora y, a continuación, elija **siguiente**.<br/>![Especificar si se va a activar la Directiva](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. En la pestaña **revisar la configuración** , revise la configuración de la nueva Directiva. Elija **Editar** para realizar cambios. Cuando haya terminado, elija **crear**.
 
