@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el Bloqueo de conservación con las directivas de retención y las directivas de etiquetas de retención para ayudar a cumplir los requisitos normativos y protegerse frente a administradores no autorizados.
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920716"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612992"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
 
@@ -30,16 +30,25 @@ El Bloqueo de conservación bloquea una directiva de retención o directiva de e
 
 Cuando una directiva de retención está bloqueada:
 
-- Nadie puede apagarlo
+- Nadie puede deshabilitar la directiva ni eliminarla
 - Las ubicaciones se pueden agregar pero no quitar
-- Puede ampliar un período de retención, pero no disminuirlo
+- Puede ampliar el período de retención, pero no disminuirlo
+
+Cuando una directiva de etiquetas de retención está bloqueada:
+
+- Nadie puede deshabilitar la directiva ni eliminarla
+- Las ubicaciones se pueden agregar pero no quitar
+- Las etiquetas se pueden agregar pero no quitar
 
 En resumen, una directiva bloqueada se puede incrementar o ampliar, pero no se puede reducir ni desactivar.
-  
+
 > [!IMPORTANT]
 > Antes de bloquear una directiva de retención o una directiva de etiquetas de retención, es importante que comprenda el impacto y confirme si es necesario para la organización. Por ejemplo, es posible que se necesite para cumplir los requisitos normativos. Los administradores no podrán deshabilitar ni eliminar esas directivas cuando se haya aplicado el Bloqueo de conservación.
 
 Configure el Bloqueo de conservación después de crear una [directiva de retención](create-retention-policies.md)o una directiva de etiquetas de retención que se vaya a [publicar](create-apply-retention-labels.md) o [aplicar automáticamente](apply-retention-labels-automatically.md). 
+
+> [!NOTE]
+> El bloqueo de una directiva no impide que un administrador pueda reducir el período de retención de una etiqueta que esté incluida en la directiva bloqueada. Ese requisito, con otras restricciones, puede satisfacerse si se configura una etiqueta para marcar elementos como un [registro normativo](records-management.md#records).
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>Cómo bloquear una directiva de retención o una directiva de etiquetas de retención
 
@@ -63,7 +72,7 @@ Todas las directivas de retención, con cualquier configuración, admiten el Blo
     
     ![Parámetro RestrictiveRetention de PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     Cuando se le solicite, lea y acepte las restricciones que se incluyen en esta configuración y elija **Sí** :
+     Cuando se le solicite, lea y acepte las restricciones que se incluyen en esta configuración y elija **Sí**:
     
    ![Preguntar para confirmar que desea bloquear una directiva de retención en PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
