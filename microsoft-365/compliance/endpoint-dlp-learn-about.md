@@ -1,5 +1,5 @@
 ---
-title: Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
+title: Obtenga más información sobre la Prevención de pérdida de datos de Microsoft 365 de punto de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La prevención de pérdida de datos de Microsoft 365 Endpoint amplía la supervisión de las actividades de archivo y las acciones de protección para estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
+ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072979"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604320"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
-Puede usar la prevención de la pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se realizan en elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido no intencionado de estos elementos. Para obtener más información sobre DLP, vea [información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md).
+Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se realizan en elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido accidental de estos elementos. Para obtener más información sobre DLP, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md).
 
-**Prevención de la pérdida de datos en punto de conexión** (DLP en punto de conexión) amplía las funciones de supervisión y protección de la actividad de DLP a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están integrados en las soluciones de cumplimiento de Microsoft 365, la información sobre lo que los usuarios llevan a cabo con elementos confidenciales se hace visible en el [Explorador de actividades](data-classification-activity-explorer.md) y puede aplicar acciones de protección a estos elementos mediante las [Directivas DLP](create-test-tune-dlp-policy.md).
+**La prevención de pérdida de datos en punto de conexión** (Endpoint DLP) amplía la supervisión de la actividad y las capacidades de protección de DLP a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 
-Microsoft Endpoint DLP le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10. Se incluye lo siguiente:
+DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10. Esto incluye:
 
 
 |actividad en el elemento |auditable/restringible  |
@@ -53,12 +53,12 @@ Debe tener en cuenta algunos conceptos adicionales antes de profundizar en DLP e
 
 ### <a name="enabling-device-management"></a>Habilitar la administración de dispositivos
 
-La administración de dispositivos es la funcionalidad que permite la recopilación de telemetría de dispositivos y la incluye en las soluciones de cumplimiento de Microsoft 365 como el Endpoint DLP y la [Administración de riesgos de Insider](insider-risk-management.md). Necesitará incorporar todos los dispositivos que quiera usar como ubicaciones en directivas DLP.
+La administración de dispositivos es la funcionalidad que permite la colección de telemetría desde dispositivos y la incluye en las soluciones de cumplimiento de Microsoft 365 como DLP en punto de conexión y la [administración de riesgos internos](insider-risk-management.md). Necesitará incorporar todos los dispositivos que quiera usar como ubicaciones en directivas DLP.
 
 > [!div class="mx-imgBorder"]
 > ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-La incorporación y retirada se controla mediante scripts que descarga desde el centro de administración de dispositivos. El centro tiene scripts personalizados para cada uno de estos métodos de implementación:
+La incorporación y la retirada se controlan mediante scripts que se descargan desde el centro de administración de dispositivos. El centro tiene scripts personalizados para cada uno de estos métodos de implementación:
 
 - script local (hasta 10 equipos)
 - Directiva de grupo
@@ -69,16 +69,16 @@ La incorporación y retirada se controla mediante scripts que descarga desde el 
 > [!div class="mx-imgBorder"]
 > ![página de incorporación de dispositivos](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- Use los procedimientos descritos en la [Introducción a la DLP en punto de conexión en Microsoft 365](endpoint-dlp-getting-started.md) para incorporar dispositivos.
+ Use los procedimientos descritos en [Introducción a DLP en punto de conexión de Microsoft 365](endpoint-dlp-getting-started.md) para incorporar dispositivos.
 
 Si incorporó dispositivos a través de [Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/), estos dispositivos se mostrarán automáticamente en la lista de dispositivos.
 
 > [!div class="mx-imgBorder"]
 > ![lista de dispositivos administrados](../media/endpoint-dlp-learn-about-2-device-list.png)
 
-### <a name="viewing-endpoint-dlp-data"></a>Visualizar datos sobre la DLP en punto de conexión
+### <a name="viewing-endpoint-dlp-data"></a>Visualizar datos de DLP en punto de conexión
 
- DLP en punto de conexión supervisa actividad basada en un tipo MIME, por lo que las actividades se capturarán aunque se cambie la extensión de archivo. En la vista previa pública, vigila todas las siguientes:
+ DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. Actualmente, se admiten los siguientes tipos de archivo:
 
 - archivos de Word
 - archivos de PowerPoint
@@ -96,7 +96,7 @@ Si incorporó dispositivos a través de [Protección contra amenazas avanzada de
 - archivos .java
 
 > [!NOTE]
-> DLP en punto de conexión evalúa los archivos de todos los tipos anteriores en la directiva de DLP y aplica las acciones de protección correspondientes. Todos los archivos que coinciden con una directiva de DLP se auditan para todas las acciones admitidas, aunque no estén bloqueados. Además, la actividad de archivos que se lleva a cabo en cualquier archivo Word, PowerPoint, Excel, PDF y .csv se audita de forma predeterminada, independientemente de si una directiva de DLP existe o coincide con estos archivos.
+> La DLP en punto de conexión evalúa todos los tipos de archivo anteriores según la directiva DLP y aplica las acciones de protección correspondientes. Todos los archivos que coinciden con una directiva DLP, estén o no bloqueados, se auditan para todas las acciones admitidas. Además, la actividad de archivo que se lleva a cabo en cualquier archivo de Word, PowerPoint, Excel, PDF o archivo .csv se audita de forma predeterminada, independientemente de si existe una directiva DLP o si estos archivos coinciden.
 
 Puede ver las alertas relacionadas con las directivas DLP ejecutadas en los dispositivos de punto de conexión si va al [Panel de administración de alertas de DLP](dlp-configure-view-alerts-policies.md).
 
@@ -106,7 +106,7 @@ También puede ver los detalles del evento asociado con metadatos enriquecidos e
 
 ![información del evento](../media/Event-info-1.png)
 
-Una vez que se incorpora un dispositivo, la información sobre las actividades auditadas fluye hacia el explorador de actividades incluso antes de configurar e implementar cualquier directiva de DLP que tenga dispositivos como ubicación.
+Una vez que se incorpora un dispositivo, la información sobre las actividades auditadas fluye al explorador de actividad, incluso antes de que configure e implemente las directivas DLP que tienen dispositivos como ubicación.
 
 > [!div class="mx-imgBorder"]
 > ![eventos de DLP en punto de conexión en el explorador de actividad](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
@@ -143,7 +143,7 @@ Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atri
 > [!div class="mx-imgBorder"]
 > ![copiar a los atributos de actividad del USB](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ya conoce DLP en punto de conexión, estos son los pasos siguientes:
 

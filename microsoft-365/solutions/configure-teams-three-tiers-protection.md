@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: 5a3449294c6e64355961d10d84750c53715366ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906888"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602012"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -49,7 +49,7 @@ Para más información sobre estos niveles y capacidades recomendadas para cada 
 
 En la tabla siguiente se resumen las configuraciones para cada nivel. Use estas configuraciones como punto de partida y ajuste las configuraciones para satisfacer las necesidades de la organización. Es posible que no necesite todos los niveles.
 
-||Línea de base (pública)|Línea de base (privada)|Confidencial|Altamente confidencial|
+|-|Línea de base (pública)|Línea de base (privada)|Confidencial|Altamente confidencial|
 |:-----|:-----|:-----|:-----|:-----|
 |Equipo privado o público|Público|Private|Private|Private|
 |¿Quién tiene acceso?|Todos los usuarios de la organización, incluidos los usuarios B2B.|Solo los miembros del equipo. Otros usuarios pueden solicitar acceso al sitio asociado.|Solo los miembros del equipo.|Solo los miembros del equipo.|
