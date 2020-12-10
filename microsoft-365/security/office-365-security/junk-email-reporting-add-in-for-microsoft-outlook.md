@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo instalar y usar el complemento de notificación de correo no deseado de Microsoft para informar a Microsoft de mensajes de correo no deseado, de correo no deseado o de suplantación de identidad.
-ms.openlocfilehash: 6e4c16ed8efd781a6e8ecea422fe55fb6723209c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6f08c72ae797825695c443848429dcfd2cd485a2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877554"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616433"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook
 
@@ -33,7 +33,7 @@ El complemento de notificación de correo no deseado para Microsoft Outlook perm
 
 En este tema se explica cómo instalar y usar el complemento de notificación de correo no deseado.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Para instalar el complemento de notificación de correo no deseado, consulte la sección [instalar el complemento de notificación de correo no deseado](#install-the-junk-email-reporting-add-in) más adelante en este tema.
 
@@ -70,7 +70,7 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
    - Se ha movido a la carpeta de correo no deseado si se ha notificado como correo no deseado.
    - Se elimina si se notificó como suplantación de identidad (phishing).
-   
+
    Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Use el complemento de notificación de correo no deseado para informar de mensajes de suplantación de identidad y de correo no deseado de la carpeta correo no deseado
@@ -108,8 +108,8 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
 - Vaya a <https://www.microsoft.com/download/details.aspx?id=18275> y descargue el archivo. msi adecuado para su versión de Office en una ubicación que sea fácil de encontrar:
 
-  - **32 bits** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64 bits** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Para Outlook 2013 o versiones posteriores, el único requisito previo es Microsoft .NET Framework 2,0. En Windows 10, no se instala .NET Framework 2,0 desde una descarga.
 
@@ -121,7 +121,7 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
 3. Busque el archivo. msi que ha descargado y haga doble clic en él.
 
-4. En la página de **bienvenida a la instalación del complemento de notificación de correo no deseado de Microsoft** , haga clic en **Siguiente**.
+4. En la página de **bienvenida a la instalación del complemento de notificación de correo no deseado de Microsoft**, haga clic en **Siguiente**.
 
 5. Revise el contrato de licencia, haga clic en **acepto los términos del contrato de licencia** si está de acuerdo con los términos y, a continuación, haga clic en **siguiente**.
 
@@ -209,27 +209,27 @@ Para comprobar que ha instalado correctamente el complemento de notificación de
 
 Después de cerrar Outlook, use cualquiera de los siguientes procedimientos para desinstalar el complemento de notificación de correo no deseado:
 
-- **Panel de control** : Presione la tecla Windows + R. En el cuadro de diálogo **Ejecutar** que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar**.
+- **Panel de control**: Presione la tecla Windows + R. En el cuadro de diálogo **Ejecutar** que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar**.
 
   Busque y seleccione el **complemento de notificación de correo no deseado de Microsoft** en la lista y, a continuación, haga clic en **desinstalar**.
 
-- **Paquete de Windows Installer** : busque o descargue el archivo. msi correspondiente y haga doble clic en él.
+- **Paquete de Windows Installer**: busque o descargue el archivo. msi correspondiente y haga doble clic en él.
 
-  - **32 bits** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64 bits** : `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
   En el cuadro de diálogo que aparece, seleccione **quitar el complemento de notificación de correo no deseado de Microsoft para Outlook** y, a continuación, haga clic en **siguiente**.
 
-- **Modo silencioso** : busque o descargue el archivo. msi correspondiente. En una ventana del símbolo del sistema, reemplace \<PathToFile\> por la ubicación del archivo. msi y ejecute uno de los siguientes comandos:
+- **Modo silencioso**: busque o descargue el archivo. msi correspondiente. En una ventana del símbolo del sistema, reemplace \<PathToFile\> por la ubicación del archivo. msi y ejecute uno de los siguientes comandos:
 
-  - **32 bits** :
+  - **32 bits**:
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64 bits** :
+  - **64 bits**:
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
@@ -245,7 +245,7 @@ En ocasiones, es posible que experimente problemas con Outlook después de agreg
 
 Experimenta uno o varios de los siguientes problemas:
 
-- Al hacer clic en **Informar de correo electrónico no deseado** , no ocurre ninguna acción.
+- Al hacer clic en **Informar de correo electrónico no deseado**, no ocurre ninguna acción.
 - Outlook deja de responder después de seleccionar un mensaje de correo electrónico.
 - El correo no deseado notificado no se puede entregar debido a una respuesta de "no se puede entregar".
 
@@ -263,7 +263,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, consulte [i
 
 1. Compruebe o establezca la `LoggingLevel` clave del registro en el valor "verbose":
 
-   - **Outlook de 32 bits en Windows de 32 bits** :
+   - **Outlook de 32 bits en Windows de 32 bits**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, consulte [i
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook de 32 bits en Windows de 64 bits** :
+   - **Outlook de 32 bits en Windows de 64 bits**:
 
      ```text
      Windows Registry Editor Version 5.00

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568579"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615773"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -129,7 +129,6 @@ Para evitar que el signo de interrogación o la etiqueta Via se agreguen a los m
 - Permitir que el remitente suplante la Directiva de inteligencia empresarial de suplantación de identidad. Esta acción evitará que la etiqueta Via aparezca en los mensajes del remitente cuando la identificación de remitente sin autenticar esté deshabilitada. Para obtener instrucciones, consulte [configurar inteligencia simulada en Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configurar la autenticación de correo electrónico](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) para el dominio del remitente.
-  
   - Para el signo de interrogación de la foto del remitente, SPF o DKIM son los más importantes.
   - Para la etiqueta Via, confirme el dominio en la firma DKIM o la coincidencia de la dirección **de correo de** (o es un subdominio de) el dominio en la dirección de from.
 

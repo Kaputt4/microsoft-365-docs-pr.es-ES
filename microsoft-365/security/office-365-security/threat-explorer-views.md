@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar el explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: b7300f8c87b100a38117b0cc4bee1bb95c9584c6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561236"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615713"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -56,7 +56,7 @@ Una vez que haya seleccionado una vista, puede aplicar filtros y configurar cons
 
 ## <a name="email--malware"></a>Correo electrónico > malware
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver**  >  malware de **correo electrónico**  >  **Malware**. Esta vista muestra información sobre los mensajes de correo electrónico que se identificaron como que contenían malware.
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> malware de **correo electrónico** \> . Esta vista muestra información sobre los mensajes de correo electrónico que se identificaron como que contenían malware.
 
 ![Ver datos sobre el correo electrónico identificado como malware](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -72,7 +72,7 @@ Debajo del gráfico, vea más detalles sobre mensajes específicos. Al seleccion
 
 ## <a name="email--phish"></a>Correo electrónico > phish
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver**  >  phishing de **correo electrónico**  >  **Phish**. Esta vista muestra los mensajes de correo electrónico identificados como intentos de suplantación de identidad.
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \> phishing de **correo electrónico** \> . Esta vista muestra los mensajes de correo electrónico identificados como intentos de suplantación de identidad.
 
 ![Ver datos sobre correo electrónico identificado como intentos de suplantación de identidad](../../media/ThreatExplorerEmailPhish.png)
 
@@ -92,13 +92,13 @@ Cuando se selecciona un elemento de la lista, como una dirección URL detectada,
 
 ## <a name="email--submissions"></a>Envíos de > de correo electrónico
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver**  >  **Email**  >  **envíos** de correo electrónico. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad.
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \>  \> **envíos** de correo electrónico. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad.
 
 ![Mensajes de correo electrónico notificados por los usuarios](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Haga clic en **remitente** para abrir la lista de opciones de visualización. Use esta lista para ver información por remitente, destinatarios, tipo de informe (la determinación del usuario de que el correo electrónico era correo no deseado, correo deseado o phish), entre otros.
 
-Por ejemplo, para ver información sobre los mensajes de correo electrónico que se han notificado **Sender** como intentos de suplantación de identidad, haga clic en  >  **tipo de informe** de remitente, seleccione **phish** y, a continuación, haga clic en el botón actualizar.
+Por ejemplo, para ver información sobre los mensajes de correo electrónico que se han notificado  como intentos de suplantación de identidad, haga clic en \> **tipo de informe** de remitente, seleccione **phish** y, a continuación, haga clic en el botón actualizar.
 
 ![Phish seleccionado para filtro de tipo de informe](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -110,7 +110,7 @@ Seleccione un elemento de la lista para ver más detalles.
 
 ## <a name="email--all-email"></a>Correo electrónico > todo el correo electrónico
 
-Para ver este informe, en el explorador, elija **Ver**  >  **Email**  >  **todos los correos** electrónicos. En esta vista se muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a suplantación de identidad (phishing) o malware, así como a todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo).
+Para ver este informe, en el explorador, elija **Ver** \>  \> **todos los correos** electrónicos. En esta vista se muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a suplantación de identidad (phishing) o malware, así como a todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo).
 
 > [!NOTE]
 > Si recibe un error que lee **demasiados datos para mostrar**, agregue un filtro y, si es necesario, restrinja el intervalo de fechas que está viendo.
@@ -123,7 +123,7 @@ Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico
 
 ## <a name="content--malware"></a>Contenido > malware
 
-Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver**  >  **Content**  >  **malware** de contenido. Esta vista muestra los archivos que Microsoft defender identificó como malintencionados [para Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** \>  \> **malware** de contenido. Esta vista muestra los archivos que Microsoft defender identificó como malintencionados [para Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams).
 

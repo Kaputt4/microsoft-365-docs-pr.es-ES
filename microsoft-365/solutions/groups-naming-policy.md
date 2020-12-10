@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Microsoft 365.
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377610"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613507"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Directiva de nomenclatura de grupos de 365 de Microsoft
 
@@ -45,7 +45,7 @@ El uso de la Directiva de nomenclatura de Azure AD para los grupos de Microsoft 
 
 Esto también es necesario para el administrador que crea la Directiva de nomenclatura de grupos.
 
-## <a name="prefix-suffix-naming-policy"></a>Directiva de nomenclatura prefix-Suffix
+## <a name="prefix-suffix-naming-policy"></a>Directiva de nomenclatura de Prefix-Suffix
 
 Los prefijos y los sufijos pueden ser cadenas fijas o atributos de usuario.
 
@@ -94,7 +94,7 @@ Puede escribir una lista separada por comas de palabras bloqueadas que se bloque
 
 No se realizan búsquedas de subcadenas; concretamente, se necesita una coincidencia exacta entre el nombre del usuario especificado y las palabras bloqueadas personalizadas para desencadenar un error.
 
-**Aspectos que se deben tener en**cuentan:
+**Aspectos que se deben tener en** cuentan:
 
 - Las palabras bloqueadas no distinguen mayúsculas de minúsculas.
 
@@ -132,5 +132,9 @@ Para configurar una directiva de nomenclatura:
 ![Captura de pantalla de la configuración de la Directiva de nomenclatura de grupos en Azure Active Directory](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>Temas relacionados
+
+[Paso a paso de la planeación del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
 [Cmdlets de Azure Active Directory para configurar configuraciones de grupo](https://go.microsoft.com/fwlink/?linkid=868341)

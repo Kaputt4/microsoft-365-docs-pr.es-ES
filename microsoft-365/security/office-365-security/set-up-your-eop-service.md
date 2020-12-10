@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Los administradores pueden aprender a configurar la protección independiente de Exchange Online (EOP) para proteger los entornos de correo electrónico locales.
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197172"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615677"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurar el servicio independiente de EOP
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197172"
 En este tema se explica cómo configurar la protección independiente de Exchange Online (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> Se asume que tiene buzones locales y quiere protegerlos con EOP, lo que se conoce como un escenario independiente. Si desea hospedar todos los buzones de correo en la nube con Exchange Online, no es necesario completar todos los pasos indicados en este tema. Vaya a [comparar los planes de Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) para registrarse y comprar buzones en la nube. Si quiere hospedar algunos buzones de correo de forma local y otros en la nube, esto se considera un escenario híbrido. Requiere configuraciones de flujo de correo más avanzadas. [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explica el flujo de correo híbrido y contiene vínculos a recursos que muestran cómo configurarlo.
+> Se asume que tiene buzones locales y quiere protegerlos con EOP, lo que se conoce como un escenario independiente. Si desea hospedar todos los buzones de correo en la nube con Exchange Online, no es necesario completar todos los pasos indicados en este tema. Vaya a [comparar los planes de Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) para registrarse y comprar buzones en la nube.
+>
+> Si quiere hospedar algunos buzones de correo de forma local y otros en la nube, esto se considera un escenario híbrido. Requiere configuraciones de flujo de correo más avanzadas. [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explica el flujo de correo híbrido y contiene vínculos a recursos que muestran cómo configurarlo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
@@ -96,4 +98,6 @@ En este punto, ha comprobado la entrega del servicio para un conector local sali
 - Si quiere ejecutar una prueba de correo electrónico saliente, puede enviar un mensaje de correo electrónico de un usuario de su organización a una cuenta de correo electrónico basada en web y confirmar si se recibe el mensaje.
 
 > [!TIP]
-> Una vez completada la configuración, no es necesario realizar pasos adicionales para que EOP Quite el correo no deseado y el malware. EOP elimina el correo no deseado y el malware automáticamente. Sin embargo, puede ajustar la configuración en función de los requisitos empresariales. Para obtener más información, vea [protección contra correo electrónico no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md) y [configurar la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md). <br/><br/> Ahora que el servicio está en ejecución, se recomienda leer los [procedimientos recomendados para configurar EOP](best-practices-for-configuring-eop.md), que describe la configuración y las consideraciones recomendadas para después de configurar EOP.
+> Una vez completada la configuración, no es necesario realizar pasos adicionales para que EOP Quite el correo no deseado y el malware. EOP elimina el correo no deseado y el malware automáticamente. Sin embargo, puede ajustar la configuración en función de los requisitos empresariales. Para obtener más información, vea [protección contra correo electrónico no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md) y [configurar la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).
+>
+> Ahora que el servicio está en ejecución, se recomienda leer los [procedimientos recomendados para configurar EOP](best-practices-for-configuring-eop.md), que describe la configuración y las consideraciones recomendadas para después de configurar EOP.

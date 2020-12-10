@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se proporciona información para solucionar problemas con el envío de correo electrónico a los buzones de correo de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a los clientes de Microsoft 365.
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568559"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615413"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
@@ -92,11 +92,11 @@ El Asunto debe ser un breve resumen del contenido del mensaje y el cuerpo del me
 
 Correcto:
 
-> De: marketing@shoppershandbag.com <br/> Asunto: ¡ Catálogo actualizado para la temporada de Navidad!
+> De: marketing@shoppershandbag.com <br> Asunto: ¡ Catálogo actualizado para la temporada de Navidad!
 
 Incorrecto:
 
-> De: someone@outlook.com <br/> Asunto: Catálogos
+> De: someone@outlook.com <br> Asunto: Catálogos
 
 Cuanto más fácil sea que las personas sepan quién es usted y lo que hace, menos problemas tendrá para entregar correctamente sus mensajes a través de la mayoría de los filtros de correo electrónico no deseado.
 

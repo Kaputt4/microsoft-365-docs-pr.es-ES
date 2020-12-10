@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en el plan 365 de Microsoft defender para Office.
-ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561260"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614779"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
@@ -57,7 +57,7 @@ Use el panel de amenazas (también se conoce como el [Panel de seguridad](securi
 
 ![Panel de amenazas](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
 
-Para ver y usar este panel, en el centro de seguridad & cumplimiento, vaya a panel de **Administración de amenazas** \> **Dashboard**.
+Para ver y usar este panel, en el centro de seguridad & cumplimiento, vaya a panel de **Administración de amenazas** \> .
 
 ### <a name="threat-explorer"></a>Explorador de amenazas
 
@@ -73,7 +73,7 @@ Use la lista incidentes (también denominada investigaciones) para ver una lista
 
 ![Lista de incidentes de amenazas actuales en Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Para ver la lista de incidentes actuales de su organización, en el centro de seguridad & cumplimiento, vaya a incidentes de revisión de **Administración de amenazas** \> **Review** \> **Incidents**.
+Para ver la lista de incidentes actuales de su organización, en el centro de seguridad & cumplimiento, vaya a incidentes de revisión de **Administración de amenazas** \>  \> .
 
 ![En el centro de seguridad & cumplimiento, elija revisión de administración de amenazas. \>](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -110,11 +110,11 @@ Microsoft defender para Office 365 usa el control de acceso basado en roles. Los
 
 |Actividad|Roles y permisos|
 |---|---|
-|Usar el panel de amenazas (o el nuevo [Panel de seguridad](security-dashboard.md))<br/> <br/>Ver información acerca de las amenazas recientes o actuales|Uno de los siguientes: <br/>- **Administrador global**  <br/> - **Administrador de seguridad** <br/>- **Lector de seguridad** <br/> <br/>Estos roles se pueden asignar en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Usar [el explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md) para analizar las amenazas|Uno de los siguientes: <br/>- **Administrador global**  <br/> - **Administrador de seguridad** <br/>- **Lector de seguridad** <br/> <br/>Estos roles se pueden asignar en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Ver incidentes (también conocidos como investigaciones) <br/> Agregar mensajes de correo electrónico a un incidente|Uno de los siguientes: <br/>- **Administrador global**  <br/> - **Administrador de seguridad** <br/>- **Lector de seguridad** <br/> <br/>Estos roles se pueden asignar en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).|
-|Desencadenar acciones de correo electrónico en un incidente <br/> <br/> Buscar y eliminar mensajes de correo electrónico sospechosos|Uno de los siguientes: <br/>- **Administrador global**  <br/> - **Administrador de seguridad** , además de la función de **búsqueda y depuración**<br/><br/>Los roles de administrador **global** y **Administrador de seguridad** se pueden asignar en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ). <br/><br/>La función de **búsqueda y depuración** debe asignarse en el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ).|
-|Integración de Microsoft defender para Office 365 plan 2 con Microsoft defender para el punto de conexión  <br/><br/> Integración de Microsoft defender para Office 365 plan 2 con un servidor SIEM|El **administrador global** o el rol de **Administrador de seguridad** asignado en Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) o en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ).<br/>--- **Asimismo** ---<br/>Una función adecuada asignada en aplicaciones adicionales (como el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor de Siem)|
+|Usar el panel de amenazas (o el nuevo [Panel de seguridad](security-dashboard.md)) <p> Ver información acerca de las amenazas recientes o actuales|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ).|
+|Usar [el explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md) para analizar las amenazas|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ).|
+|Ver incidentes (también conocidos como investigaciones) <p> Agregar mensajes de correo electrónico a un incidente|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ).|
+|Desencadenar acciones de correo electrónico en un incidente <p> Buscar y eliminar mensajes de correo electrónico sospechosos|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad** , además de la función de **búsqueda y depuración**</li></ul> <p> Los roles de administrador **global** y **Administrador de seguridad** se pueden asignar en Azure Active Directory ( <https://portal.azure.com> ) o en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ). <p> La función de **búsqueda y depuración** debe asignarse en el centro de seguridad & cumplimiento ( <https://protection.office.com> ).|
+|Integración de Microsoft defender para Office 365 plan 2 con Microsoft defender para el punto de conexión  <p> Integración de Microsoft defender para Office 365 plan 2 con un servidor SIEM|El **administrador global** o el rol de **Administrador de seguridad** asignado en Azure Active Directory ( <https://portal.azure.com> ) o en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ). <p> --- **Asimismo** --- <p> Una función adecuada asignada en aplicaciones adicionales (como el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor de Siem).|
 |
 
 ## <a name="next-steps"></a>Pasos siguientes

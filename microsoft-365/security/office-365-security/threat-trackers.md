@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568461"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615461"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -46,7 +46,7 @@ La mayoría de las páginas de Tracker incluyen números de tendencia que se act
 
 Los rastreadores son solo algunas de las numerosas características de gran calidad que obtiene con [Microsoft defender para Office 365 plan 2](office-365-ti.md). Los rastreadores de amenazas incluyen [Noteworth](#noteworthy-trackers), rastreadores de [tendencias](#trending-trackers), [consultas de seguimiento](#tracked-queries)y [consultas guardadas](#saved-queries).
 
-Para ver y usar los rastreadores de amenazas en su organización, vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) y elija Threat **Management** \> **Threat Tracker**.
+Para ver y usar los rastreadores de amenazas en su organización, vaya al centro de seguridad & cumplimiento ( <https://protection.office.com> ) y elija Threat **Management** \> **Threat Tracker**.
 
 > [!NOTE]
 > Para usar los rastreadores de amenazas, debe ser administrador global, administrador de seguridad o lector de seguridad. Consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
@@ -97,12 +97,12 @@ En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware t
 
 El filtro de nueva amenaza notable resalta los elementos detectados recientemente mediante datos adjuntos seguros. Estas detecciones representan elementos que son nuevos archivos malintencionados, que 365 Microsoft no ha encontrado previamente en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la función de datos adjuntos seguros: este Tracker importante incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
 
 - Asegúrese de que el equipo de seguridad tiene asignados los roles y permisos correctos. Debe ser administrador global o tener el rol de administrador de seguridad o de búsqueda y depuración asignado en el centro de seguridad & cumplimiento. Consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-- Vea los nuevos rastreadores para que se muestren en su entorno de Microsoft 365. Cuando esté disponible, encontrará los seguimientos [aquí](https://protection.office.com/). Vaya a **Threat management** los \> **rastreadores de amenazas** de administración de amenazas.
+- Vea los nuevos rastreadores para que se muestren en su entorno de Microsoft 365. Cuando esté disponible, encontrará los seguimientos [aquí](https://protection.office.com/). Vaya a  los \> **rastreadores de amenazas** de administración de amenazas.
 
 - Si aún no lo ha hecho, obtenga más información sobre cómo configurar [Microsoft defender para Office 365](office-365-atp.md) para su organización, incluidos [vínculos seguros](atp-safe-links.md) y [datos adjuntos seguros](atp-safe-attachments.md).

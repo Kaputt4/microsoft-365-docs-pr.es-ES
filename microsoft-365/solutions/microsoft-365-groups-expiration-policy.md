@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
-ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350717"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613659"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
@@ -51,11 +51,11 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 |Role|Qué pueden hacer|
 |---------|---------|
 |Office 365 administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de 365 de Microsoft.|
-|Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
+|User|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
-Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la Directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarla, vaya a **Azure Active Directory**  >  **Groups**  >  **expiración** de grupos de Azure Active Directory. Aquí puede establecer la vigencia predeterminada del grupo y especificar la antelación con la que desea que las notificaciones de expiración primero y segundo vayan al propietario del grupo.
+Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la Directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarla, vaya a   >    >  **expiración** de grupos de Azure Active Directory. Aquí puede establecer la vigencia predeterminada del grupo y especificar la antelación con la que desea que las notificaciones de expiración primero y segundo vayan al propietario del grupo.
 
 La duración del grupo se especifica en días y se puede establecer en 180, 365 o en un valor personalizado especificado por el usuario. El valor personalizado tiene que ser de al menos 30 días.
 
@@ -81,7 +81,11 @@ Si, por algún motivo, ninguno de los propietarios o administradores renuevan el
 
 Si tiene un grupo que ya no tiene previsto usar, pero desea conservar su contenido, vea [Archive Groups, Teams, and Yammer](end-life-cycle-groups-teams-sites-yammer.md) para obtener información sobre cómo exportar información de los diferentes servicios de grupos.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-topics"></a>Temas relacionados
+
+[Paso a paso de la planeación del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
 [Información general sobre las directivas de retención](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 

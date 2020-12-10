@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580743"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613624"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -138,7 +138,7 @@ Si necesita convertir plantillas de protección existentes en etiquetas, use Azu
 
 Las etiquetas de confidencialidad que configure para aplicar el cifrado eliminan la complejidad de los usuarios para especificar su propia configuración de cifrado. En muchas aplicaciones de Office, los usuarios pueden seguir configurando manualmente estas configuraciones de cifrado individuales mediante las opciones de Information Rights Management (IRM). Por ejemplo, para aplicaciones de Windows:
 
-- Para un documento: información sobre el **archivo**  >  **Info**  >  **proteger documento**  >  **restringir acceso**
+- Para un documento: información sobre el **archivo**  >    >  **proteger documento**  >  **restringir acceso**
 - para un correo electrónico: en la pestaña **opciones** > **cifrar** 
   
 Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, siempre pueden invalidar las opciones de configuración de la etiqueta con su propia configuración de cifrado. Por ejemplo:
@@ -254,12 +254,12 @@ Cuando configure una etiqueta de confidencialidad para los marcados de contenido
 
 | Variable | Descripción | Ejemplo cuando se aplica una etiqueta |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nombre para mostrar de la etiqueta actual | **General**|
-| `${Item.Name}` | Nombre de archivo actual o asunto de correo electrónico | **Sales.docx** |
-| `${Item.Location}` | Ruta de acceso y nombre de archivo actuales del documento, o el asunto del correo electrónico de un correo electrónico | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nombre para mostrar del usuario actual  | **Richard Simone** |
-| `${User.PrincipalName}` | Nombre principal de usuario (UPN) de Azure AD del usuario actual | **rsimone \@ contoso.com** |
-| `${Event.DateTime}` | Fecha y hora actuales de la zona horaria local | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Nombre para mostrar de la etiqueta aplicada| **General**|
+| `${Item.Name}` | Nombre de archivo o asunto de correo electrónico del contenido que se va a etiquetar | **Sales.docx** |
+| `${Item.Location}` | Ruta de acceso y nombre de archivo del documento que se va a etiquetar o el asunto del correo electrónico para un correo electrónico que se etiqueta | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nombre para mostrar del usuario que aplica la etiqueta| **Richard Simone** |
+| `${User.PrincipalName}` | Nombre principal de usuario (UPN) de Azure AD del usuario que aplica la etiqueta | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | Fecha y hora en que se ha etiquetado el contenido, en la zona horaria local del usuario que aplica la etiqueta | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > La sintaxis de estas variables distingue mayúsculas de minúsculas.
@@ -321,7 +321,7 @@ Ejemplos:
     `${If.App.WP}This content is ${If.End}Confidential`
 
     En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "este contenido es confidencial". En Excel, la etiqueta aplica el texto de marca de agua "confidencial". En Outlook, la etiqueta no aplica ningún texto de marca de agua porque las marcas de agua como marcadores visuales no son compatibles con Outlook.
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 

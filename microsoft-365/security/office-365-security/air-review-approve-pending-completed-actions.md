@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre las acciones de corrección en la investigación automatizada y las capacidades de respuesta de Microsoft defender para Office 365 plan 2.
-ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844565"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615197"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Ver acciones de corrección pendientes o realizadas tras una investigación automatizada en Office 365
 
@@ -39,17 +39,17 @@ Mientras ve los [detalles de una investigación](air-view-investigation-results.
 > [!IMPORTANT]
 > Es necesario disponer de los permisos adecuados para aprobar o rechazar acciones de corrección. Consulte [permisos necesarios para usar la funcionalidad de Air](office-365-air.md#required-permissions-to-use-air-capabilities).
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
+1. Vaya a <https://protection.office.com> e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
 
-2. Vaya a investigaciones de **Administración de amenazas**  >  **Investigations**.
+2. Vaya a investigaciones de **Administración de amenazas** \> .
 
-3. En la lista de investigaciones, seleccione un elemento en la columna **ID** . 
+3. En la lista de investigaciones, seleccione un elemento en la columna **ID** .
 
 4. Seleccione la ficha **acciones** .
 
 5. Seleccione un elemento de la lista. (Esto activa los botones aprobar y rechazar).
 
-6. Revise la información disponible de los elementos seleccionados y, a continuación, apruebe o rechace las acciones. 
+6. Revise la información disponible de los elementos seleccionados y, a continuación, apruebe o rechace las acciones.
    - **APPROVE** permite que se inicie la corrección.
    - **Rechazar** no realiza ninguna acción adicional
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Las principales recomendaciones del equipo de Cybersecurity de Microsoft para implementar las funciones de seguridad para proteger el entorno de Microsoft 365. '
-ms.openlocfilehash: d62db9206a98078ae5adaad220a7c9b53ff116cd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 452ce2a303f02cadfcdcbe12310f2538d33a24e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561704"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615809"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Plan de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá
 
@@ -49,7 +49,7 @@ Estas recomendaciones de plan de desarrollo se almacenan en tres fases en un ord
 |Período de tiempo|Resultados|
 |---|---|
 |30 días|Configuración rápida: <ul><li>Protecciones básicas de administración.</li><li>Registro y análisis.</li><li>Protecciones de identidad básicas.</li></ul> <p> Configuración del espacio empresarial. <p> Prepare las partes interesadas.|
-|90 días|Protecciones avanzadas: <ul><li>Cuentas de administrador.</li><li>Datos y cuentas de usuario.</li></ul> <p> Visibilidad del cumplimiento, la amenaza y las necesidades de los usuarios. <p> Adapte y implemente directivas y protecciones predeterminadas.|
+|90 días|Protecciones avanzadas: <ul><li>Cuentas de administrador.</li><li>Datos y cuentas de usuario.</li></ul> <p> Visibilidad del cumplimiento, la amenaza y las necesidades de los usuarios. <p> Adapte y implemente directivas y protecciones predeterminadas.|
 |Más allá|Ajustar y refinar directivas y controles clave. <p> Ampliar las protecciones a las dependencias locales. <p> Integración con procesos de seguridad y negocios (legal, amenaza interna, etc.).|
 |
 
@@ -77,7 +77,7 @@ Estas tareas necesitan un poco más de tiempo para planearlas e implementarlas, 
 
 |Área|Task|
 |---|---|
-|Administración de seguridad|<ul><li>Compruebe la puntuación segura de las acciones recomendadas para su entorno ( [https://securescore.office.com](https://securescore.office.com) ).</li><li>Continúe revisando regularmente los paneles e informes en el centro de seguridad 365 de Microsoft, la seguridad de aplicaciones en la nube y las herramientas SIEM.</li><li>Busque e implemente actualizaciones de software.</li><li>Realizar simulaciones de ataque para ataques de suplantación de identidad (phishing), rociado por contraseña y fuerza bruta mediante [simulador de ataques](attack-simulator.md) (incluido en la [inteligencia sobre amenazas de Office 365](office-365-ti.md)).</li><li>Busque el riesgo de uso compartido mediante la revisión de los informes integrados en Cloud App Security (en la pestaña investigar).</li><li>Compruebe el [Administrador de cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) para revisar el estado de las regulaciones que se aplican a su organización (como RGPD, NIST 800-171).</li></ul>|
+|Administración de seguridad|<ul><li>Compruebe la puntuación segura de las acciones recomendadas para su entorno ( <https://securescore.office.com> ).</li><li>Continúe revisando regularmente los paneles e informes en el centro de seguridad 365 de Microsoft, la seguridad de aplicaciones en la nube y las herramientas SIEM.</li><li>Busque e implemente actualizaciones de software.</li><li>Realizar simulaciones de ataque para ataques de suplantación de identidad (phishing), rociado por contraseña y fuerza bruta mediante [simulador de ataques](attack-simulator.md) (incluido en la [inteligencia sobre amenazas de Office 365](office-365-ti.md)).</li><li>Busque el riesgo de uso compartido mediante la revisión de los informes integrados en Cloud App Security (en la pestaña investigar).</li><li>Compruebe el [Administrador de cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) para revisar el estado de las regulaciones que se aplican a su organización (como RGPD, NIST 800-171).</li></ul>|
 |Protección contra amenazas|Implementar protecciones mejoradas para cuentas de administrador: <ul><li>Configure las [estaciones de acceso con privilegios](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (huellas) para la actividad de administración.</li><li>Configurar [Azure ad privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>Configure una herramienta de administración de eventos e información de seguridad (SIEM) para recopilar datos de registro de Office 365, Cloud App Security y otros servicios, incluido AD FS. El registro de auditoría almacena los datos de solo 90 días. La captura de estos datos en la herramienta SIEM le permite almacenar datos durante un período más largo.</li></ul>|
 |Administración de identidad y acceso|<ul><li>Habilitar y aplicar MFA para todos los usuarios.</li><li>Implementar un conjunto de [acceso condicional y directivas relacionadas](microsoft-365-policies-configurations.md).</li></ul>|
 |Protección de la información| Adaptar e implementar directivas de protección de la información. Estos recursos incluyen ejemplos: <ul><li>[Information Protection de Office 365 para RGPD](https://aka.ms/o365gdpr)</li><li>[Configurar Teams con tres niveles de protección](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Use las directivas de prevención de pérdida de datos y las herramientas de supervisión en Microsoft 365 para los datos almacenados en Microsoft 365 (en lugar de Cloud App Security). <p> Use Cloud App Security con Microsoft 365 para obtener características de alerta avanzadas (distintas de la prevención de pérdida de datos).|

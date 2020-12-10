@@ -2,7 +2,7 @@
 title: Configurar la colaboración moderna con Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar la colaboración segura de contenido en Microsoft Teams para proteger los datos en función de su sensibilidad.
-ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602078"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613589"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración moderna con Microsoft 365
 
@@ -127,7 +127,7 @@ Cuando esté listo para implementar esta solución, continúe con estos pasos:
 1. Configure los [tres niveles de protección distintos para Microsoft Teams](configure-teams-three-tiers-protection.md).
 2. Configure las opciones para [compartir información de cualquier importancia con personas de fuera de la organización](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
 

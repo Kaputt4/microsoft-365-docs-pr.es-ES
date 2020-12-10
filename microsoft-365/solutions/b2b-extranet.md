@@ -2,7 +2,7 @@
 title: Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,19 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Obtenga información sobre cómo crear un sitio o un equipo de extranet B2B con usuarios invitados administrados desde una organización asociada.
-ms.openlocfilehash: b052598f86072776f69e538c70a6bd56d79c3f81
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+description: Obtenga información sobre cómo crear un sitio o un equipo de extranet B2B con invitados administrados de una organización asociada.
+ms.openlocfilehash: cfb7cc4310cb83f9ce7761c95f021724b7d75faf
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030058"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613601"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 
 Puede usar la [Administración de derechos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) para crear una extranet B2B para colaborar con una organización asociada que use Azure Active Directory. Esto permite a los usuarios inscribirse por sí mismos en el sitio o equipo de extranet y recibir acceso a través de un flujo de trabajo de aprobación.
 
-Con este método de compartir recursos para colaboración, la organización asociada puede ayudarle a mantener y aprobar a los usuarios invitados en su extremo, lo que reduce la carga en el Departamento de ti y permite que los usuarios más familiarizados con el acuerdo de colaboración administren el acceso de los usuarios.
+Con este método de uso compartido de recursos para colaboración, la organización asociada puede ayudarle a mantener y a aprobar los invitados a su extremo, lo que reduce la carga de su Departamento de ti y permite a los usuarios más familiarizados con el acuerdo de colaboración administrar el acceso de los usuarios.
 
 En este artículo se describen los pasos para crear un paquete de recursos (en este caso, un sitio o un equipo) que puede compartir con una organización asociada a través de un modelo de registro de acceso sin ayuda de autoservicio. 
 
@@ -57,7 +57,7 @@ Para agregar una organización conectada
 6. Haga clic en **Agregar directorio + dominio**.
 7. Escriba el dominio de la organización a la que desea conectarse y, a continuación, haga clic en **Agregar**.
 8. Haga clic en **conectar** y, a continuación, haga clic en **siguiente: patrocinadores**.
-9. Agregue personas de su organización o de la organización a la que se va a conectar a quién desea aprobar el acceso para los usuarios invitados.
+9. Agregue personas de su organización o la organización a la que se va a conectar con quién desea aprobar el acceso para los invitados.
 10. Haga clic en **siguiente: revisión + crear**.
 11. Revise la configuración que eligió y, a continuación, haga clic en **crear**.
 
@@ -92,15 +92,15 @@ Para crear un paquete de Access
 2. Haga clic en **paquetes de Access** y, a continuación, en **nuevo paquete de acceso**.
 3. Escriba un nombre y una descripción para el paquete de Access y, a continuación, haga clic en **siguiente: roles de recursos**.
 4. Elija los recursos del catálogo que desea usar para la extranet.
-5. Para cada recurso, en la columna **rol** , elija el rol de usuario que desea conceder a los usuarios invitados que usan la extranet.
+5. Para cada recurso, en la columna **rol** , elija el rol de usuario que desea conceder a los invitados que usen la extranet.
 6. Haga clic en **siguiente: solicitudes**.
-7. En **usuarios que pueden solicitar acceso** , elija **para los usuarios que no están en el directorio**.
+7. En **usuarios que pueden solicitar acceso**, elija **para los usuarios que no están en el directorio**.
 8. Asegúrese de que la opción **organizaciones conectadas específicas** está seleccionada y, a continuación, haga clic en **Agregar directorios**.
 9. Elige la organización conectada que agregaste anteriormente y, a continuación, haz clic en **seleccionar**
-10. En **aprobación** , elija **sí** para **requerir aprobación**.
-11. En **primer aprobador** , elija uno de los patrocinadores que agregó anteriormente o elija un usuario específico.
+10. En **aprobación**, elija **sí** para **requerir aprobación**.
+11. En **primer aprobador**, elija uno de los patrocinadores que agregó anteriormente o elija un usuario específico.
 12. Haga clic en **Agregar suplencia** y seleccione un aprobador de reserva.
-13. En **Habilitar** , elija **sí**.
+13. En **Habilitar**, elija **sí**.
 14. Haga clic en **siguiente: ciclo de vida**.
 15. Elija la configuración de caducidad y revisión de Access que desea usar y, a continuación, haga clic en **siguiente: revisión + crear**.
 16. Revise la configuración y, a continuación, haga clic en **crear**.
@@ -112,7 +112,7 @@ Si está asociando con una organización de gran tamaño, es posible que quiera 
 Para establecer un paquete de Access en oculto
 1. En Azure AD control de identidad, haga clic en **paquetes de acceso** y, después, haga clic en el paquete de acceso.
 2. En la página **información general** , haga clic en **Editar**.
-3. En **propiedades** , elija **sí** para **ocultar** y, a continuación, haga clic en **Guardar**.
+3. En **propiedades**, elija **sí** para **ocultar** y, a continuación, haga clic en **Guardar**.
 
    ![Captura de pantalla de una pantalla Editar propiedades del paquete de Access](../media/identity-governance-access-package-hidden.png)
 

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357844"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615161"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -41,7 +41,7 @@ El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el 
 
 Este es un resumen de PDF de una página con vínculos a las directivas individuales:
 
-[![Imagen en miniatura para la protección de identidades y dispositivos para el documento de Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [Ver como PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Imagen en miniatura para la protección de identidades y dispositivos para el documento de Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Ver como PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 En el resto de este artículo se describe cómo configurar estas directivas.
 
@@ -107,7 +107,7 @@ En las tablas siguientes se describen las opciones de configuración de directiv
 
 En la sección **asignaciones** :
 
-|Setting|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino.|Comience con el grupo que incluye las cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
@@ -120,7 +120,7 @@ En la sección **asignaciones** :
 
 Aplique la configuración del nivel de riesgo en función del nivel de protección de destino.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
 |---|---|---|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alta, media, baja|Compruebe los tres.|
@@ -129,7 +129,7 @@ Aplique la configuración del nivel de riesgo en función del nivel de protecci�
 
 En la sección **controles de acceso** :
 
-|Setting|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Select|
 |||**Requerir multi-factor Authentication**|Check|
@@ -150,17 +150,17 @@ Consulte [este artículo](../../enterprise/microsoft-365-client-support-modern-a
 
 En la sección **asignaciones** :
 
-|Setting|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario de destino.|Comience con el grupo que incluye las cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicaciones).|La pertenencia debe modificarse en función de las necesidades temporales.|
 |Aplicaciones o acciones en la nube|**Las aplicaciones en la nube > incluyen**|**Seleccione aplicaciones**: seleccione las aplicaciones correspondientes a los clientes que no admiten la autenticación moderna.||
-|Condiciones|**Aplicaciones cliente**|Elija **sí** para **configurar** <br/> Desactivar las marcas de verificación para **exploradores** y **aplicaciones móviles y clientes de escritorio**||
+|Condiciones|**Aplicaciones cliente**|Elija **sí** para **configurar** <p> Desactivar las marcas de verificación para **exploradores** y **aplicaciones móviles y clientes de escritorio**||
 |
 
 En la sección **controles de acceso** :
 
-|Setting|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Select|
 ||**Exigir todos los controles seleccionados**||Select|
@@ -182,7 +182,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la sección **asignaciones** :
 
-|Tipo|Propiedades|Valores|Action|
+|Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Select|
 |Riesgo de usuario|**Alto**||Select|
@@ -190,9 +190,9 @@ En la sección **asignaciones** :
 
 En la segunda sección **asignaciones** :
 
-|Tipo|Propiedades|Valores|Action|
+|Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Access|**Permitir acceso**||Select|
+|Acceso|**Permitir acceso**||Select|
 |||**Exigir cambio de contraseña**|Check|
 |
 
@@ -275,7 +275,7 @@ Debe crear una directiva para cada plataforma de PC, teléfono o tableta:
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
 
-Para crear directivas de cumplimiento de dispositivos, inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com) con sus credenciales de administrador y, a continuación, navegue a directivas de directivas de cumplimiento de **dispositivos**  >  **Compliance policies**  >  **Policies**. Seleccione **crear Directiva**.
+Para crear directivas de cumplimiento de dispositivos, inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com) con sus credenciales de administrador y, a continuación, navegue a directivas de directivas de cumplimiento de **dispositivos** \>  \> . Seleccione **crear Directiva**.
 
 Para que se implementen las directivas de cumplimiento de dispositivos, se deben asignar a grupos de usuarios. Una directiva se asigna después de crearla y guardarla. En el centro de administración, seleccione la Directiva y, a continuación, seleccione **asignaciones**. Después de seleccionar los grupos que desea que reciban la Directiva, seleccione **Guardar** para guardar esa asignación de grupo e implementar la Directiva.
 
@@ -287,7 +287,7 @@ Se recomiendan los siguientes valores para equipos que ejecutan Windows 10 y ver
 
 Para el **Estado del dispositivo > reglas de evaluación del servicio de atestación de estado de Windows**, vea esta tabla.
 
-|Propiedades|Valor|Action|
+|Propiedades|Valor|Acción|
 |---|---|---|
 |Requerir BitLocker|Obligatoria|Select|
 |Requerir el arranque seguro para habilitarse en el dispositivo|Obligatoria|Select|
@@ -300,29 +300,29 @@ Para el **cumplimiento del administrador de configuración**, seleccione **reque
 
 Para la **seguridad del sistema**, vea esta tabla.
 
-|Tipo|Propiedades|Valor|Action|
+|Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Select|
+|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Select|
 ||Contraseñas sencillas|Bloquear|Select|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Select|
 ||Longitud mínima de la contraseña|6 |Tipo|
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Tipo <br/> Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores.|
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Tipo <p> Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores.|
 ||Expiración de contraseña (días)|41|Tipo|
 ||Número de contraseñas anteriores para impedir la reutilización|5 |Tipo|
 ||Requerir contraseña cuando el dispositivo vuelve del estado de inactividad (móvil y holográfica)|Obligatoria|Disponible para Windows 10 y versiones posteriores|
 |Cifrado|Cifrado del almacenamiento de datos en el dispositivo|Obligatoria|Select|
 |Seguridad del dispositivo|Éste|Obligatoria|Select|
 ||Antivirus|Obligatoria|Select|
-||Actualizados|Obligatoria|Select <br/> Esta configuración requiere una solución anti-spyware registrada en el centro de seguridad de Windows.|
+||Actualizados|Obligatoria|Select <p> Esta configuración requiere una solución anti-spyware registrada en el centro de seguridad de Windows.|
 |Defender|Antimalware de Microsoft defender|Obligatoria|Select|
-||Versión mínima de antimalware de Microsoft defender||Tipo <br/> Solo se admite en el escritorio de Windows 10. Microsoft recomienda no tener más de cinco versiones de la versión más reciente.|
+||Versión mínima de antimalware de Microsoft defender||Tipo <p> Solo se admite en el escritorio de Windows 10. Microsoft recomienda no tener más de cinco versiones de la versión más reciente.|
 ||La firma antimalware de Microsoft defender actualizada|Obligatoria|Select|
-||Protección en tiempo real|Obligatoria|Select <br/> Solo se admite en el escritorio de Windows 10|
+||Protección en tiempo real|Obligatoria|Select <p> Solo se admite en el escritorio de Windows 10|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-|Tipo|Propiedades|Valor|Action|
+|Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
 |Microsoft defender para reglas de extremo|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano|Select|
 |

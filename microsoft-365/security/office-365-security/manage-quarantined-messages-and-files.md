@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft defender para Office 365 también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357138"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616781"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -93,17 +93,17 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Motivo de la cuarentena**:
      - **Directiva**: el mensaje coincide con las condiciones de una regla de flujo de correo (también denominada regla de transporte).
-     - **Masivo**
+     - **Correo masivo**
      - **Phish**: el filtro de correo no deseado el veredicto fue **phishing email** o anti-phishing Protection en cuarentena del mensaje ([configuración de falsificación](set-up-anti-phishing-policies.md#spoof-settings) o [protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Correo no deseado**
      - **Phish de confianza alta**
 
-   - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
+   - **Tipo de directiva**: filtrar mensajes por tipo de directiva:
      - **Directiva antimalware**
      - **Directiva de datos adjuntos seguros**
-     - **Política Antiphishing**
-     - **Directiva de filtro de contenido alojado** (directiva anti-spam)
+     - **Directiva contra phish**
+     - **Directiva de filtro de contenido hospedado** (Directiva contra correo no deseado)
      - **Regla de transporte**
 
    - **Destinatario de correo electrónico**: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
@@ -118,12 +118,12 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
 
-   - **Nombre de directiva**: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
+   - **Nombre** de la Directiva: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    - **Dirección de correo electrónico del destinatario**: Una única dirección de correo electrónico de destinatario.
 
    - **Asunto**: Use el asunto completo del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
-  
+
    - **Nombre** de la Directiva: nombre de la Directiva que era responsable de poner en cuarentena el mensaje.
 
    Cuando haya introducido los criterios de búsqueda, haga clic en ![Botón actualizar](../../media/scc-quarantine-refresh.png) **Actualizar** para filtrar los resultados.
@@ -165,7 +165,7 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
   - Elija una de las siguientes opciones:
     - **Liberar mensajes para todos los destinatarios**
     - **Liberar mensajes a destinatarios específicos**
-    - **Liberar mensajes para otros usuarios**: no se admite la liberación de mensajes de malware a otros usuarios que no sean destinatarios originales. 
+    - **Liberar mensajes para otros usuarios**: no se admite la liberación de mensajes de malware a otros usuarios que no sean destinatarios originales.
 
   Cuando haya terminado, haga clic en **Liberar mensajes**.
 

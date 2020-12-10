@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131326"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615389"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -61,7 +61,7 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - El correo falsificado se etiqueta como phishing en defender para Office 365. A veces la suplantación de identidad es benigna y, a veces, los usuarios no quieren estar en cuarentena. Para minimizar el impacto en los usuarios, revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md). Una vez que haya revisado y realizado las invalidaciones necesarias, puede confiar en [configurar la inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para poner en **cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
 
-- Puede repetir el paso anterior para la suplantación (dominio o usuario). El informe de suplantación se encuentra en información sobre el panel de **Administración de amenazas** \> **Dashboard** \> **Insights**.
+- Puede repetir el paso anterior para la suplantación (dominio o usuario). El informe de suplantación se encuentra en información sobre el panel de **Administración de amenazas** \>  \> .
 
 - Revise periódicamente el [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).
 

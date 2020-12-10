@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Microsoft defender para Office 365
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572782"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616049"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en EOP y Microsoft defender para Office 365
 
@@ -62,7 +62,7 @@ Las condiciones y excepciones disponibles son:
 Las directivas de seguridad preestablecidas usan las directivas correspondientes de las diversas características de protección de EOP y Microsoft defender para Office 365. Estas directivas se crean _después_ de asignar directivas de seguridad de **protección estándar** o de **protección estricta** a los usuarios. No puede modificar estas directivas.
 
 - **Directivas de Exchange Online Protection (EOP)**: Esto incluye a Microsoft 365 organizaciones con buzones de Exchange Online y organizaciones independientes de EOP sin buzones de Exchange Online:
-  
+
   - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md) que se denominan **Directiva de seguridad preestablecida estándar** y **estricta**.
   - [Directivas antimalware](configure-anti-malware-policies.md) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida**.
   - [Las directivas de suplantación de identidad de EOP](set-up-anti-phishing-policies.md#spoof-settings) denominadas **Directiva de seguridad preestablecida estándar** y **estricta Directiva de seguridad preestablecida** (configuración de falsificación).
@@ -102,7 +102,7 @@ En otras palabras, la configuración de la Directiva de **protección estricta**
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **directivas de seguridad preestablecidas** , use <https://protection.office.com/presetSecurityPolicies> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener permisos asignados para poder realizar los procedimientos descritos en este artículo:
 
@@ -112,7 +112,7 @@ En otras palabras, la configuración de la Directiva de **protección estricta**
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Usar el centro de seguridad & cumplimiento para asignar directivas de seguridad preestablecidas a los usuarios
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a directivas de \> **Policy** \> **seguridad preestablecidas** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a directivas de \>  \> **seguridad preestablecidas** de directiva de administración de amenazas.
 
 2. En **protección estándar** o **protección estricta**, haga clic en **Editar**.
 

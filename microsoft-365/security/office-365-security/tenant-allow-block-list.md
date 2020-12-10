@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar entradas de direcciones URL en la lista de permitidos y bloqueados del centro de seguridad & cumplimiento.
-ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572651"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614969"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Administrar direcciones URL en la lista de permitidos y bloqueados del espacio empresarial
 
@@ -60,14 +60,14 @@ En este tema se describe cómo configurar entradas en la lista de permitidos/blo
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - El grupo de roles administración de la **organización de solo vista** de [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Usar el centro de seguridad & cumplimiento para crear entradas de dirección URL en la lista de permitidos/bloqueados de espacio empresarial
 
 Para obtener información detallada sobre la sintaxis de las entradas de dirección URL, vea la [Sintaxis de la dirección URL de la sección lista de permitidos/bloqueados de inquilino](#url-syntax-for-the-tenant-allowblock-list) más adelante en este tema.
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \> **Policy** \> **las listas de permitidos y bloqueados del inquilino**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \>  \> **las listas de permitidos y bloqueados del inquilino**.
 
 2. En la página **lista de permitidos/bloqueados del inquilino** , compruebe que la ficha **direcciones URL** está seleccionada y, a continuación, haga clic en **Agregar** .
 
@@ -91,7 +91,7 @@ Para obtener información detallada sobre la sintaxis de las entradas de direcci
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Usar el centro de seguridad & cumplimiento para ver las entradas de la lista de permitidos y bloqueados del inquilino
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \> **Policy** \> **las listas de permitidos y bloqueados del inquilino**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \>  \> **las listas de permitidos y bloqueados del inquilino**.
 
 2. Seleccione la ficha **direcciones URL** .
 
@@ -125,7 +125,7 @@ Para borrar los filtros existentes, haga clic en **filtrar** y, en el control fl
 
 El valor de la dirección URL no se puede modificar. En su lugar, debe eliminar la entrada y volver a crearla.
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \> **Policy** \> **las listas de permitidos y bloqueados del inquilino**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \>  \> **las listas de permitidos y bloqueados del inquilino**.
 
 2. Seleccione la ficha **direcciones URL** .
 
@@ -149,7 +149,7 @@ El valor de la dirección URL no se puede modificar. En su lugar, debe eliminar 
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Usar el centro de seguridad & cumplimiento para quitar entradas de la lista de permitidos y bloqueados del inquilino
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \> **Policy** \> **las listas de permitidos y bloqueados del inquilino**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \>  \> **las listas de permitidos y bloqueados del inquilino**.
 
 2. Seleccione la ficha **direcciones URL** .
 
@@ -296,7 +296,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
   - test.com/q=contoso.com
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 - **Coincidencia de bloque**:
 
   - contoso.com
@@ -324,7 +324,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Escenario: comodín derecho en la parte superior de la ruta de acceso
 
 **Entrada**: `contoso.com/a/*`
@@ -341,7 +341,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
   - contoso.com/a
   - www.contoso.com
   - www. contoso. com/q = a@contoso. com
-  
+
 #### <a name="scenario-left-tilde"></a>Escenario: tilde izquierda
 
 **Entrada**: `~contoso.com`

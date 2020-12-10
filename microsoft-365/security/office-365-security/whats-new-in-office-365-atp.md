@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357242"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615557"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft defender para Office 365
 
@@ -34,14 +34,14 @@ ms.locfileid: "49357242"
 
 **Se aplica a:**
 
-- [Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft defender para Office 365](office-365-atp.md)
 
 En este artículo se enumeran las nuevas características de la versión más reciente de Microsoft defender para Office 365. Las características que se encuentran actualmente en versión preliminar se indican con **(versión preliminar)**.
 
 > [!TIP]
 > ¿Todavía no tiene Microsoft defender para Office 365? [Póngase en contacto con sales para iniciar una versión de prueba](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
-## <a name="november-2020"></a>Noviembre de 2020
+## <a name="november-2020"></a>2020 de noviembre
 
 - Se actualizaron los límites de exportación en > centro de actividades > corrección a partir del envío de correo y el registro de acciones (defender para Office 365 plan 2)
 
@@ -56,7 +56,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020
 
 - [Experimente las mejoras de la experiencia de búsqueda](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (Microsoft defender para Office 365 plan 1 o plan 2)
-- [Aplicar fácilmente la configuración recomendada mediante directivas de seguridad predeterminadas](preset-security-policies.md) 
+- [Aplicar fácilmente la configuración recomendada mediante directivas de seguridad predeterminadas](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Marzo/abril de 2020
 
@@ -71,7 +71,7 @@ En este artículo se enumeran las nuevas características de la versión más re
   - Avanzados no filtros (son opciones de filtrado avanzadas que incluyen no contiene, no incluye, etc.)
   - Filtros de tiempo granulares (día, hora, media hora)
 
-- El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento, vaya a **Administración**  >  de amenazas. **Revisión**). (Microsoft defender para Office 365 plan 2)
+- El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento, vaya a **Administración** \> de amenazas. **Revisión**). (Microsoft defender para Office 365 plan 2)
 
 - [Documentos seguros en Microsoft 365](safe-docs.md) **(versión preliminar)**
 
@@ -105,11 +105,11 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 - [Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft defender para Office 365 plan 1 o plan 2)
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Plan 1 y Plan 2 de Microsoft Defender para Office 365
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft defender para Office 365 plan 1 y plan 2
 
 ¿Sabía que Microsoft defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

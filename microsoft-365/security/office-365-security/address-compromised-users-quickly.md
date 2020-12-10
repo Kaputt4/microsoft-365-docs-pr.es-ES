@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Obtenga información acerca de cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con capacidades automatizadas de investigación y respuesta en Microsoft defender para Office 365 plan 2.
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357916"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616742"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Dirigir las cuentas de usuario en peligro con investigación y respuesta automatizadas
 
@@ -63,11 +63,11 @@ Cuando una cuenta de usuario se ve comprometida, se desencadenan alertas. Y, en 
 
 ### <a name="view-and-investigate-restricted-users"></a>Ver e investigar usuarios restringidos
 
-Tiene algunas opciones para desplazarse a una lista de usuarios restringidos. Por ejemplo, en el centro de seguridad & cumplimiento, puede ir a **Threat management**  >  **Review**  >  **los usuarios restringidos** de revisión de administración de amenazas. El siguiente procedimiento describe la navegación mediante el panel de **alertas** , que es una buena forma de ver los distintos tipos de alertas que se pueden haber desencadenado.
+Tiene algunas opciones para desplazarse a una lista de usuarios restringidos. Por ejemplo, en el centro de seguridad & cumplimiento, puede ir a  \>  \> **los usuarios restringidos** de revisión de administración de amenazas. El siguiente procedimiento describe la navegación mediante el panel de **alertas** , que es una buena forma de ver los distintos tipos de alertas que se pueden haber desencadenado.
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión.
+1. Vaya a <https://protection.office.com> e inicie sesión.
 
-2. En el panel de navegación, elija Panel de **alertas**  >  **Dashboard**.
+2. En el panel de navegación, elija Panel de **alertas** \> .
 
 3. En el widget **otras alertas** , seleccione **usuarios restringidos**.
 
@@ -81,7 +81,7 @@ Tiene algunas opciones para desplazarse a una lista de usuarios restringidos. Po
 
 ### <a name="view-details-about-automated-investigations"></a>Ver detalles sobre las investigaciones automatizadas
 
-Una vez iniciada una investigación automatizada, puede ver los detalles y los resultados en el centro de seguridad & cumplimiento. Vaya a investigaciones de **Administración de amenazas**  >  **Investigations** y, a continuación, seleccione una investigación para ver sus detalles.
+Una vez iniciada una investigación automatizada, puede ver los detalles y los resultados en el centro de seguridad & cumplimiento. Vaya a investigaciones de **Administración de amenazas** \> y, a continuación, seleccione una investigación para ver sus detalles.
 
 Para obtener más información, consulte [Ver detalles de una investigación](air-view-investigation-results.md).
 
@@ -93,7 +93,7 @@ Para obtener más información, consulte [Ver detalles de una investigación](ai
 
 - **No confíe en una alerta de inicio de sesión sospechosa como el único indicador**. Cuando una cuenta de usuario está en peligro, puede o no activar una alerta de inicio de sesión sospechosa. A veces, es la serie de actividades que se producen después de que se haya comprometido una cuenta que desencadena una alerta. ¿Desea saber más sobre las alertas? Consulte [directivas de alerta](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar los permisos necesarios para usar la funcionalidad de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Integre el servidor SIEM de su organización con Microsoft defender para Office 365 y eventos relacionados con amenazas en la API de administración de actividad de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6253ed0133bf53bdbeca71bb595a850e25441311
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 93ff1606130c60ceb46087d28bb26f9a6d27d330
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561710"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615665"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Integración de SIEM con Microsoft defender para Office 365
 
@@ -61,7 +61,9 @@ En la tabla siguiente se resumen los valores de **AuditLogRecordType** relevante
 |
 
 > [!IMPORTANT]
-> Debe ser administrador global o tener asignado el rol de administrador de seguridad para el centro de seguridad & cumplimiento para configurar la integración de SIEM con Microsoft defender para Office 365.<br/>El registro de auditoría debe estar activado para su entorno de Microsoft 365. Para obtener ayuda, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
+> Debe ser administrador global o tener asignado el rol de administrador de seguridad para el centro de seguridad & cumplimiento para configurar la integración de SIEM con Microsoft defender para Office 365.
+>
+> El registro de auditoría debe estar activado para su entorno de Microsoft 365. Para obtener ayuda, consulte [activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="see-also"></a>Vea también
 

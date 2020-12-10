@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Obtenga información sobre cómo crear una carga personalizada para la simulación de ataques en Microsoft defender para Office 365.
-ms.openlocfilehash: ffb5397d9b39a35b4cb8bd0fdb3301cd156896e1
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: a8366e6cbf703ef1e1a14e216ada71200668cd14
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944597"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616277"
 ---
-# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Crear una carga personalizada para la simulación de ataques de formación
+# <a name="create-a-custom-payload-for-attack-simulation-training"></a>Crear una carga personalizada para la simulación de ataques formación
 
 Microsoft ofrece un catálogo de carga sólida para diversas técnicas de ingeniería social que se deben emparejar con la formación de simulación de ataques. Sin embargo, es posible que desee crear cargas personalizadas que funcionen mejor para su organización. A continuación, se describe cómo crear una carga en el aprendizaje de simulación de ataques a través de Microsoft defender para Office 365.
 
@@ -60,7 +60,7 @@ Agregue una descripción personalizada para describir el indicador y haga clic e
 
 ## <a name="review-payload"></a>Revisión de la carga
 
-Ya ha terminado de crear la carga útil. Ahora es el momento de revisar los detalles y ver una vista previa de su carga. La vista previa incluirá todos los indicadores que haya creado. Puede editar cada parte de la carga de este paso. Una vez que se haya satisfecho, **envíe** la carga. 
+Ya ha terminado de crear la carga útil. Ahora es el momento de revisar los detalles y ver una vista previa de su carga. La vista previa incluirá todos los indicadores que haya creado. Puede editar cada parte de la carga de este paso. Una vez que se haya satisfecho, **envíe** la carga.
 
 > [!IMPORTANT]
 > Las cargas que ha creado requerirán que el **inquilino** se establezca como su origen. Al seleccionar cargas, asegúrese de que no hay ningún **inquilino** filtrado.

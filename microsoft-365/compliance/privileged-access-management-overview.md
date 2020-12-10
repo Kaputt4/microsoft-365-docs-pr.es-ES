@@ -1,12 +1,13 @@
 ---
-title: Privileged Access Management
-f1.keywords:
-- NOCSH
+title: Obtenga más información sobre la administración del acceso con privilegios
+description: En este artículo se proporciona información general sobre la administración del acceso con privilegios en Microsoft 365, incluidas las respuestas a las preguntas más frecuentes (p + f).
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: En este artículo se proporciona información general sobre la administración del acceso con privilegios en Microsoft 365, incluidas las respuestas a las preguntas más frecuentes (p + f).
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341238"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613334"
 ---
-# <a name="privileged-access-management"></a>Privileged Access Management
+# <a name="learn-about-privileged-access-management"></a>Obtenga más información sobre la administración del acceso con privilegios
 
 La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger a su organización de las infracciones que usan cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o al acceso a las opciones de configuración críticas. La administración de acceso privilegiado requiere que los usuarios soliciten acceso puntual para completar las tareas elevadas y privilegiadas a través de un flujo de trabajo de aprobación limitado por el ámbito y de gran alcance. Esta configuración proporciona a los usuarios un acceso suficiente para realizar la tarea a mano, sin arriesgar la exposición de los datos confidenciales o las opciones de configuración críticas. La habilitación de la administración de acceso privilegiada en Microsoft 365 permite que su organización opere con privilegios que no tienen ningún derecho y proporciona un nivel de defensa contra las vulnerabilidades de acceso administrativo.
 

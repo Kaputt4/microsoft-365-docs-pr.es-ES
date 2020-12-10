@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: Busque y use informes de Microsoft defender para Office 365 en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572494"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615581"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Ver los informes de defender para Office 365 en el panel de informes del centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Microsoft defender para Office 365 organizaciones (por ejemplo, suscripciones a Microsoft 365 E5 o Microsoft defender para Office 365 plan 1 o Microsoft defender para Office 365 plan 2 complementos) contienen una variedad de informes relacionados con la seguridad. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), puede ver estos informes en el centro de seguridad & cumplimiento desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
+Microsoft defender para Office 365 organizaciones (por ejemplo, suscripciones a Microsoft 365 E5 o Microsoft defender para Office 365 plan 1 o Microsoft defender para Office 365 plan 2 complementos) contienen una variedad de informes relacionados con la seguridad. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), puede ver estos informes en el centro de seguridad & cumplimiento desde el panel de **informes** \> . Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
 
 ![Panel informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -41,7 +41,7 @@ El informe **de la defender para Office 365 del informe de tipos de archivo** mu
 
  La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite 10 días de filtrado.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **defender para Office 365 tipos de archivo**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ATPFileReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **defender para Office 365 tipos de archivo**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ATPFileReport> .
 
 ![Defender para Office 365 widget tipos de archivo en el panel de informes](../../media/atp-file-types-report-widget.png)
 
@@ -123,7 +123,7 @@ Para volver a la vista informes, haga clic en **Ver informe**.
 
 El informe de **disposición de mensajes de ATP** muestra las acciones que se tomaron para los mensajes de correo electrónico que se detectaron con contenido malintencionado.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **defender para Office 365 disposición de mensajes**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ATPMessageReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **defender para Office 365 disposición de mensajes**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ATPMessageReport> .
 
 ![Widget de disposición del mensaje de defender para Office 365 en el panel de informes](../../media/atp-message-disposition-report-widget.png)
 
@@ -211,7 +211,7 @@ El **Informe de latencia de correo** muestra una vista agregada de la entrega de
 
 No se incluye la latencia de la red y del cliente.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione informe de **latencia de correo**. Para ir directamente al informe, Abra <https://protection.office.com/mailLatencyReport?viewid=P50> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione informe de **latencia de correo**. Para ir directamente al informe, Abra <https://protection.office.com/mailLatencyReport?viewid=P50> .
 
 ![Widget de informe de latencia de correo en el panel informes](../../media/mail-latency-report-widget.png)
 
@@ -313,7 +313,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 - **Haga clic en hora**
 - **Usuario**
 - **URL**
-- **Acción**
+- **Action**
 - **App**
 
 Si hace clic en **filtros** en la vista de tabla de detalles, puede filtrar por los mismos criterios que en la vista de informe y también por **dominios** o **destinatarios** separados por comas.
@@ -347,7 +347,7 @@ Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno
 
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
@@ -356,5 +356,5 @@ Si no ve datos en sus informes de defender para Office 365, compruebe que las di
 ## <a name="related-topics"></a>Temas relacionados
 
 [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
-  
+
 [Permisos de funciones (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

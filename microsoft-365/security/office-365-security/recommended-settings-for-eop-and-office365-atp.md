@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa defender para Office 365?
-ms.openlocfilehash: ee450c8da346d5815710afe2622f8f2c600132d4
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367218"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615965"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft defender para Office 365 Security
 
@@ -52,7 +52,7 @@ Para crear y configurar directivas contra correo no deseado, vea [configurar dir
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |Acción de detección de **correo no deseado** <p> _SpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |Acción de detección de **correo no deseado de confianza alta** <p> _HighConfidenceSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
@@ -106,7 +106,7 @@ Para obtener más información acerca de los límites de envío predeterminados 
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Número máximo de destinatarios por usuario: límite horario externo** <p> _RecipientLimitExternalPerHour_|comprendi|500|400|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
 |**Número máximo de destinatarios por usuario: límite interno por hora** <p> _RecipientLimitInternalPerHour_|comprendi|1000|800|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
@@ -120,7 +120,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
 |**Filtro de tipos de datos adjuntos comunes** <p> _EnableFileFilter_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta opción pone en cuarentena los mensajes que contienen datos adjuntos ejecutables basados en el tipo de archivo, independientemente del contenido de datos adjuntos.|
@@ -135,7 +135,7 @@ Para obtener más información acerca de estas opciones, consulte Configuración
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Habilitación de la protección contra la suplantación de identidad** <p> _EnableAntispoofEnforcement_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |**Habilitar remitente sin autenticar** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
@@ -166,11 +166,11 @@ Para obtener más información acerca de estas opciones, vea [configuración de 
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|Usuarios protegidos: **Agregar usuarios para protegerlos** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Desactivado <p> `$false` <p> none|Activado <p> `$true` <p> \<list of users\>|Activado <p> `$true` <p> \<list of users\>|Según la organización, se recomienda agregar usuarios (remitentes de mensajes) en los roles clave. Internamente, los remitentes protegidos podrían ser su CEO, CFO y otros líderes senior. Externamente, los remitentes protegidos podrían incluir miembros del Consejo o su Consejo de administración.|
+|Usuarios protegidos: **Agregar usuarios para protegerlos** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Desactivado <p> `$false` <p> ninguno|Activado <p> `$true` <p> \<list of users\>|Activado <p> `$true` <p> \<list of users\>|Según la organización, se recomienda agregar usuarios (remitentes de mensajes) en los roles clave. Internamente, los remitentes protegidos podrían ser su CEO, CFO y otros líderes senior. Externamente, los remitentes protegidos podrían incluir miembros del Consejo o su Consejo de administración.|
 |Dominios protegidos: **incluir automáticamente los dominios de su propiedad** <p> _EnableOrganizationDomainsProtection_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
-|Dominios protegidos: **incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> none|Activado <p> `$true` <p> \<list of domains\>|Activado <p> `$true` <p> \<list of domains\>|En función de la organización, se recomienda agregar dominios (dominios de remitente) que no son de su propiedad, pero con la que interactúan con frecuencia.|
+|Dominios protegidos: **incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> ninguno|Activado <p> `$true` <p> \<list of domains\>|Activado <p> `$true` <p> \<list of domains\>|En función de la organización, se recomienda agregar dominios (dominios de remitente) que no son de su propiedad, pero con la que interactúan con frecuencia.|
 |Usuarios protegidos: **si un usuario suplantado envía un correo electrónico** <p> _TargetedUserProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |Dominios protegidos: **si un dominio suplantado envía un correo electrónico** <p> _TargetedDomainProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |**Mostrar sugerencia para usuarios suplantados** <p> _EnableSimilarUsersSafetyTips_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
@@ -189,7 +189,7 @@ Tenga en cuenta que estos son los mismos valores de configuración que están di
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|---|---|---|---|
 |**Habilitación de la protección contra la suplantación de identidad** <p> _EnableAntispoofEnforcement_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |**Habilitar remitente sin autenticar** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
@@ -202,7 +202,7 @@ Para obtener más información acerca de esta configuración, consulte [umbrales
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Umbrales de suplantación de identidad avanzada** <p> _PhishThresholdLevel_|**1-estándar** <p> `1`|**2-agresivo** <p> `2`|**3-más agresivo** <p> `3`||
 |
@@ -219,7 +219,7 @@ En PowerShell, use el cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/p
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Usar vínculos seguros en: aplicaciones de Office 365** <p> _EnableSafeLinksForO365Clients_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Use vínculos seguros en aplicaciones compatibles con Office 365 Desktop y Mobile (iOS y Android). Para obtener más información, vea [configuración de vínculos seguros para aplicaciones de Office 365](atp-safe-links.md#safe-links-settings-for-office-365-apps).|
 |**No realizar seguimiento cuando los usuarios hagan clic en vínculos seguros** <p> _TrackClicks_|Activada <p> `$false`|Desactivada <p> `$true`|Desactivado <p> `$true`|Si se desactiva esta configuración (al establecer _TrackClicks_ en), se hace `$true` un seguimiento de los clics del usuario en las aplicaciones de Office 365 compatibles.|
@@ -237,7 +237,7 @@ En PowerShell, se usan los cmdlets [New-SafeLinksPolicy](https://docs.microsoft.
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** <p> _IsEnabled_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
 |**Seleccione la acción para direcciones URL potencialmente malintencionadas o desconocidas en Microsoft Teams** <p> _EnableSafeLinksForTeams_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
@@ -260,11 +260,11 @@ En PowerShell, use el cmdlet [set-AtpPolicyForO365](https://docs.microsoft.com/p
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Activar ATP para SharePoint, OneDrive y Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Activado <p> `$true`|Activado <p> `$true`||
-|**Activar documentos seguros para clientes de Office**<bt/><br/> _EnableSafeDocs_|Activado <p> `$true`|Activado <p> `$true`|Esta configuración solo está disponible con las licencias de seguridad de Microsoft 365 E5 o Microsoft 365 E5. Para obtener más información, vea [documentos seguros en Microsoft defender para Office 365](safe-docs.md).|
-|**Permitir que los usuarios haga clic a través de la vista protegida, incluso si los documentos seguros identificaron el archivo como malintencionado**<bt/><br/> _AllowSafeDocsOpen_|Desactivado <p> `$false`|Desactivado <p> `$false`|Esta configuración está relacionada con documentos seguros.|
+|**Activar documentos seguros para clientes de Office** <p> _EnableSafeDocs_|Activado <p> `$true`|Activado <p> `$true`|Esta configuración solo está disponible con las licencias de seguridad de Microsoft 365 E5 o Microsoft 365 E5. Para obtener más información, vea [documentos seguros en Microsoft defender para Office 365](safe-docs.md).|
+|**Permitir que los usuarios haga clic a través de la vista protegida, incluso si los documentos seguros identificaron el archivo como malintencionado** <p> _AllowSafeDocsOpen_|Desactivado <p> `$false`|Desactivado <p> `$false`|Esta configuración está relacionada con documentos seguros.|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>Configuración de la Directiva de datos adjuntos seguros
@@ -278,10 +278,10 @@ En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](https://docs.micro
 
 ****
 
-|Nombre de la característica de seguridad|Predeterminada|Standard|Estricta|Comentario|
+|Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Datos adjuntos seguros respuesta de malware desconocida** <p> _Action_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
-|**Redirigir datos adjuntos en detección** : **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y ninguna dirección de correo electrónico especificada. <p> `$true` <p> none|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
+|**Redirigir datos adjuntos en detección** : **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y ninguna dirección de correo electrónico especificada. <p> `$true` <p> ninguno|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplique la selección anterior si se produce un error de análisis de malware para archivos adjuntos o errores.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración de filtro de correo no deseado avanzada (ASF) que está disponible en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: f9295de6fb524cff16394d305ca9247d9f7ce07b
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020932"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615257"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración de filtro de correo no deseado avanzado (ASF) en EOP
 
@@ -50,25 +50,25 @@ En las siguientes secciones se describe la configuración y las opciones de ASF 
 
 Para cada configuración ASF, las siguientes opciones están disponibles en las directivas contra correo no deseado:
 
-- **On** : ASF agrega el campo de encabezado X correspondiente al mensaje y marca el mensaje como **correo no deseado** (SCL 5 o 6 para [aumentar la configuración de puntuación de correo no deseado](#increase-spam-score-settings)) o **correo no deseado de alta confianza** (SCL 9 para [marcarlo como correo no deseado](#mark-as-spam-settings)).
+- **On**: ASF agrega el campo de encabezado X correspondiente al mensaje y marca el mensaje como **correo no deseado** (SCL 5 o 6 para [aumentar la configuración de puntuación de correo no deseado](#increase-spam-score-settings)) o **correo no deseado de alta confianza** (SCL 9 para [marcarlo como correo no deseado](#mark-as-spam-settings)).
 
-- **Desactivado** : la configuración ASF está deshabilitada. Este es el valor predeterminado y le recomendamos que no lo cambie.
+- **Desactivado**: la configuración ASF está deshabilitada. Este es el valor predeterminado y le recomendamos que no lo cambie.
 
-- **Test** : ASF agrega el campo de encabezado X correspondiente al mensaje. El valor de **las opciones del modo de prueba** ( *TestModeAction* ) determina lo que ocurre con el mensaje:
+- **Test**: ASF agrega el campo de encabezado X correspondiente al mensaje. El valor de **las opciones del modo de prueba** (*TestModeAction*) determina lo que ocurre con el mensaje:
 
-  - **None** : la entrega de mensajes no se ve afectada por la detección de ASF. El mensaje sigue sujeto a otros tipos de filtrado y reglas en EOP.
+  - **None**: la entrega de mensajes no se ve afectada por la detección de ASF. El mensaje sigue sujeto a otros tipos de filtrado y reglas en EOP.
 
-  - **Agregar texto de encabezado x predeterminado ( *AddXHeader* )** : el valor del encabezado x `X-CustomSpam: This message was filtered by the custom spam filter option` se agrega al mensaje. Puede usar este valor en reglas de la bandeja de entrada o en reglas de flujo de correo (también conocidas como reglas de transporte) para afectar a la entrega del mensaje.
+  - **Agregar texto de encabezado x predeterminado (*AddXHeader*)**: el valor del encabezado x `X-CustomSpam: This message was filtered by the custom spam filter option` se agrega al mensaje. Puede usar este valor en reglas de la bandeja de entrada o en reglas de flujo de correo (también conocidas como reglas de transporte) para afectar a la entrega del mensaje.
 
-  - **Enviar mensaje CCO ( *BccMessage* )** : las direcciones de correo electrónico especificadas (el valor del parámetro *TestModeBccToRecipients* en PowerShell) se agregan al campo BCC del mensaje y el mensaje se entrega a los destinatarios CCO adicionales. En el centro de seguridad & cumplimiento, separe varias direcciones de correo electrónico con punto y coma (;). En PowerShell, se separan varias direcciones de correo electrónico por comas.
+  - **Enviar mensaje CCO (*BccMessage*)**: las direcciones de correo electrónico especificadas (el valor del parámetro *TestModeBccToRecipients* en PowerShell) se agregan al campo BCC del mensaje y el mensaje se entrega a los destinatarios CCO adicionales. En el centro de seguridad & cumplimiento, separe varias direcciones de correo electrónico con punto y coma (;). En PowerShell, se separan varias direcciones de correo electrónico por comas.
 
-  **Notas** :
+  **Notas**:
 
   - El modo de prueba no está disponible para los siguientes valores de ASF:
 
-    - **Filtrado de identificador de remitente condicional: error grave** ( *MarkAsSpamFromAddressAuthFail* )
-    - **Retrodispersión de NDR** ( *MarkAsSpamNdrBackscatter* )
-    - **Registro de SPF: error grave** ( *MarkAsSpamSpfRecordHardFail* )
+    - **Filtrado de identificador de remitente condicional: error grave** (*MarkAsSpamFromAddressAuthFail*)
+    - **Retrodispersión de NDR**(*MarkAsSpamNdrBackscatter*)
+    - **Registro de SPF: error grave** (*MarkAsSpamSpfRecordHardFail*)
 
   - Se aplica la misma acción de modo de prueba a *todos los* valores de ASF establecidos para la **prueba**. No se pueden configurar distintas acciones del modo de prueba para la configuración de ASF diferente.
 
@@ -100,9 +100,9 @@ La siguiente configuración ASF establece el SCL de los mensajes detectados en 9
 |**Etiquetas Object en HTML** <p> *MarkAsSpamObjectTagsInHtml*|Los mensajes que contienen `<object>` etiquetas HTML se marcan como correo no deseado de confianza alta. <p> Esta etiqueta permite ejecutar complementos o aplicaciones en una ventana HTML.|`X-CustomSpam: Object tag in html`|
 |**Etiquetas Embed en HTML** <p> *MarkAsSpamEmbedTagsInHtml*|Los mensajes que contienen `<embed>` etiquetas HTML están marcados como correo no deseado de confianza alta. <p> Esta etiqueta permite la incrustación de distintos tipos de documentos en un documento HTML (por ejemplo, sonidos, vídeos o imágenes).|`X-CustomSpam: Embed tag in html`|
 |**Etiquetas Form en HTML** <p> *MarkAsSpamFormTagsInHtml*|Los mensajes que contienen `<form>` etiquetas HTML se marcan como correo no deseado de confianza alta. <p> Esta etiqueta se usa para crear formularios de sitios Web. Los anuncios en correo electrónico a menudo incluyen esa etiqueta con el fin de solicitar información del destinatario.|`X-CustomSpam: Form tag in html`|
-|**Errores web en HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *Web Bug* (también conocido como *baliza web* ) es un elemento gráfico (a menudo con un tamaño de un píxel en un píxel) que se usa en los mensajes de correo electrónico para determinar si el destinatario leyó el mensaje. <p> Los mensajes que contienen Web bugs están marcados como correo no deseado de confianza alta. <p> Los boletines legítimos podrían usar bugs Web, aunque muchos consideran la invasión de la privacidad. |`X-CustomSpam: Web bug`|
+|**Errores web en HTML** <p> *MarkAsSpamWebBugsInHtml*|Un *Web Bug* (también conocido como *baliza web*) es un elemento gráfico (a menudo con un tamaño de un píxel en un píxel) que se usa en los mensajes de correo electrónico para determinar si el destinatario leyó el mensaje. <p> Los mensajes que contienen Web bugs están marcados como correo no deseado de confianza alta. <p> Los boletines legítimos podrían usar bugs Web, aunque muchos consideran la invasión de la privacidad. |`X-CustomSpam: Web bug`|
 |**Aplicar lista de palabras confidenciales** <p> *MarkAsSpamSensitiveWordList*|Microsoft mantiene una lista de palabras dinámicas pero no editables que están asociadas a mensajes potencialmente ofensivos. <p> Los mensajes que contienen palabras de la lista de palabras confidenciales en el asunto o el cuerpo del mensaje están marcados como correo no deseado de alta confianza.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Registro de SPF: error** <p> *MarkAsSpamSpfRecordHardFail*|Los mensajes enviados desde una dirección IP que no se especifica en el registro de marco de directivas de remitente (SPF) de SPF en DNS para el dominio de correo electrónico de origen se marcan como correo no deseado de confianza alta. <p> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrado de identificador del remitente condicional: error** <p> *MarkAsSpamFromAddressAuthFail*|Mensajes que un error grave se marca una comprobación de identificador de remitente condicional como correo no deseado. <p> Esta opción combina una comprobación SPF con una comprobación del identificador de remitente para ayudar a protegerse contra los encabezados de mensaje que contienen remitentes falsificados. <p> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: SPF From Record Fail`|
-|**Reenvío masivo de correo electrónico no deseado de NDR** <p> *MarkAsSpamNdrBackscatter*|La *indispersión* es inútil los informes de no entrega (también conocidos como NDR o mensajes de devolución) causados por los remitentes falsificados en mensajes de correo electrónico. Para obtener más información, vea [mensajes de reenvío masivo y EOP](backscatter-messages-and-eop.md). <p> No es necesario configurar esta opción en los siguientes entornos, ya que se entregan NDR legítimos y la dispersión se marca como correo no deseado: <ul><li>Microsoft 365 organizaciones con buzones de correo de Exchange Online.</li><li>Organizaciones de correo electrónico locales donde enrutar el correo electrónico *saliente* a través de EOP.</li></ul><br/> En entornos de EOP independientes que protegen el correo electrónico entrante a los buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **On** : se entregan NDR legítimos y la dispersión se marca como correo no deseado.</li><li>**Desactivado** : los NDR legítimos y el indispersión pasan por el filtrado de correo no deseado normal. La mayoría de los NDR legítimos se entregarán al remitente del mensaje original. Algunas, pero no todas, la dispersión se marcan como correo no deseado de confianza alta. Por definición, la función de multidifusión solo se puede entregar al remitente suplantado, no al remitente original.</li></ul><br/> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: Backscatter NDR`|
+|**Reenvío masivo de correo electrónico no deseado de NDR** <p> *MarkAsSpamNdrBackscatter*|La *indispersión* es inútil los informes de no entrega (también conocidos como NDR o mensajes de devolución) causados por los remitentes falsificados en mensajes de correo electrónico. Para obtener más información, vea [mensajes de reenvío masivo y EOP](backscatter-messages-and-eop.md). <p> No es necesario configurar esta opción en los siguientes entornos, ya que se entregan NDR legítimos y la dispersión se marca como correo no deseado: <ul><li>Microsoft 365 organizaciones con buzones de correo de Exchange Online.</li><li>Organizaciones de correo electrónico locales donde enrutar el correo electrónico *saliente* a través de EOP.</li></ul> <p> En entornos de EOP independientes que protegen el correo electrónico entrante a los buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **On**: se entregan NDR legítimos y la dispersión se marca como correo no deseado.</li><li>**Desactivado**: los NDR legítimos y el indispersión pasan por el filtrado de correo no deseado normal. La mayoría de los NDR legítimos se entregarán al remitente del mensaje original. Algunas, pero no todas, la dispersión se marcan como correo no deseado de confianza alta. Por definición, la función de multidifusión solo se puede entregar al remitente suplantado, no al remitente original.</li></ul> <p> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: Backscatter NDR`|
 |

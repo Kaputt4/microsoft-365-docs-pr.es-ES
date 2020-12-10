@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo crear su plan de gobierno de colaboración
-ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568287"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613301"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Crear el plan de gobierno de colaboración
 
@@ -133,6 +133,8 @@ En última instancia, el éxito de los esfuerzos de planeación del gobierno dep
 - ¿Puede crear un programa de Microsoft 365 Champions para su organización? Además, considere la posibilidad de unirse al [programa Worldwide Champions de Microsoft 365](https://aka.ms/O365Champions) para obtener ideas y enfoques para su propio programa de campeones y para conectarse con personas afines y con líderes de pensamiento dentro y alrededor de Microsoft.
 
 ## <a name="related-topics"></a>Temas relacionados
+
+[Paso a paso de la planeación del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Gobernanza en el marco de adopción de la nube de Microsoft para Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 

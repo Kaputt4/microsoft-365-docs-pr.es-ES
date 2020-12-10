@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844469"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615437"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -105,9 +105,9 @@ Puede enviar una notificación a la dirección de correo electrónico especifica
 
 Sí. Aunque le recomendamos que apunte su registro MX a Microsoft, sabemos que hay razones empresariales legítimas para redirigir el correo electrónico a otro lugar que no sea Microsoft en primer lugar.
 
-- **Entrante** : cambie los registros MX para que apunten al proveedor de terceros y, a continuación, redirija los mensajes a EOP para un procesamiento adicional. Para obtener más información, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- **Entrante**: cambie los registros MX para que apunten al proveedor de terceros y, a continuación, redirija los mensajes a EOP para un procesamiento adicional. Para obtener más información, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **Saliente** : configurar el enrutamiento de host inteligente desde Microsoft 365 al proveedor de terceros de destino.
+- **Saliente**: configurar el enrutamiento de host inteligente desde Microsoft 365 al proveedor de terceros de destino.
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>¿Tiene Microsoft alguna documentación sobre cómo puedo protegerme de las estafas de suplantación de identidad?
 
@@ -124,7 +124,7 @@ Las pautas presentadas a continuación son los procedimientos recomendados para 
 - **El dominio de correo electrónico de origen debe resolverse en DNS.**
 
   Por ejemplo, si el remitente es user@fabrikam, el dominio Fabrikam se resuelve en la dirección IP 192.0.43.10.
-  
+
   Si un dominio de envío no tiene registro A ni registro MX en DNS, el servicio enrutará el mensaje a través de su grupo de entrega de mayor riesgo, independientemente de si el contenido del mensaje es correo no deseado o no. Para obtener más información acerca del grupo de entrega de mayor riesgo, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **El correo saliente eServer debe tener una entrada DNS (PTR) inversa.**
@@ -155,11 +155,11 @@ Las pautas presentadas a continuación son los procedimientos recomendados para 
 
   El cuerpo del mensaje debe tener un indicación clara de la oferta, el servicio o el producto. Por ejemplo, si el remitente envía correo masivamente para la empresa Contoso, los campos De y Asunto del correo electrónico deberían ser parecidos a lo siguiente:
 
-  > De: marketing@contoso.com <br/> Asunto: ¡Nuevo catálogo actualizado para la temporada de Navidad!
+  > De: marketing@contoso.com <br> Asunto: ¡Nuevo catálogo actualizado para la temporada de Navidad!
 
   A continuación, se muestra un ejemplo de qué no se debe hacer porque no es descriptivo:
 
-  > De: user@hotmail.com <br/> Asunto: Catálogos
+  > De: user@hotmail.com <br> Asunto: Catálogos
 
 - **Si se envía correo masivo a muchos destinatarios y el mensaje tiene formato de boletín, debe haber una manera de cancelar la suscripción en la parte inferior del mensaje.**
 

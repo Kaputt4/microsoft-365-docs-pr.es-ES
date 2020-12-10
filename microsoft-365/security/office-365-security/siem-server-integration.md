@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Obtenga información general sobre la integración de la información de seguridad y la administración de eventos (SIEM) con sus aplicaciones y servicios en la nube de Microsoft 365
-ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 851b27769badb2629b7e9fb1c93992c76828a633
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919769"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615653"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de información de seguridad y administración de eventos (SIEM) con los servicios y aplicaciones de Microsoft 365
 
@@ -52,8 +52,8 @@ Un servidor de SIEM puede recibir datos de una amplia variedad de aplicaciones y
 
 |Servicio o aplicación de Microsoft 365|Entradas y métodos del servidor SIEM|Recursos para obtener más información|
 |---|---|---|
-|[Microsoft Defender para Office 365](office-365-atp.md)|Registros de auditoría|[Integración de SIEM con Microsoft defender para Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <br/>API REST|[Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft defender para Office 365](office-365-atp.md)|Registros de auditoría|[Integración de SIEM con Microsoft defender para Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <p> API REST|[Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Integración de registros|[Integración de SIEM con Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 

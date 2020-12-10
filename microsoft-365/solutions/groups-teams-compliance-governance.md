@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 Groups, Teams y SharePoint Collaboration.
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377538"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613635"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 Groups, Teams y SharePoint Collaboration
 
@@ -28,7 +28,7 @@ Microsoft 365 ofrece un conjunto completo de herramientas para mantener el cumpl
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de cumplimiento disponibles en Microsoft 365. En las siguientes secciones se proporciona información adicional.
 
-|Categoría|Description|Referencia|
+|Categoría|Descripción|Referencia|
 |:-------|:----------|:--------|
 |Retención de la información|||
 ||Conservar los grupos de contenido de correo y SharePoint|[Más información sobre las directivas de retención para SharePoint y OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|
@@ -80,11 +80,11 @@ Puede usar las etiquetas de confidencialidad para cifrar archivos, lo que permit
 
 - [Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
-- [Configuración de un equipo con aislamiento de seguridad](https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation)
+- [Configurar un equipo con aislamiento de seguridad](https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation)
 
 Recursos adicionales:
 
-- [Más información sobre las etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+- [Información sobre las etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
 
 ## <a name="information-protection"></a>Protección de la información
@@ -113,8 +113,10 @@ Con las barreras de la información, puede segmentar los datos y los usuarios pa
 
 ## <a name="related-topics"></a>Temas relacionados
 
+[Paso a paso de la planeación del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
+
 [Seguridad y cumplimiento de Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [Proteger la información](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

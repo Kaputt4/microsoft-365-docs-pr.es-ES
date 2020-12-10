@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Microsoft 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202812"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616613"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
@@ -35,7 +35,7 @@ Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimi
 
 Para obtener más información acerca de los distintos permisos que puede conceder a los usuarios en el centro de seguridad & cumplimiento, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Debe ser un administrador global o miembro del grupo de funciones OrganizationManagement en el centro de seguridad & cumplimiento para completar los pasos de este artículo.
 
@@ -53,13 +53,13 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 3. En la página de propiedades del grupo de roles, en **miembros**, haga clic en **Agregar** ![ icono de agregar ](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
 
-4. Cuando haya seleccionado todos los usuarios que desee agregar al grupo de roles, haga clic en **agregar \> ** y, a continuación, en **Aceptar**.
+4. Cuando haya seleccionado todos los usuarios que desee agregar al grupo de roles, haga clic en **agregar \>** y, a continuación, en **Aceptar**.
 
 5. Cuando haya terminado, haga clic en **Guardar**.
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar el PowerShell del centro de cumplimiento de & de seguridad para proporcionar a otro usuario acceso al centro de seguridad & cumplimiento
 
-1. [Conectarse al Centro de seguridad y cumplimiento PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilice la sintaxis siguiente:
 
@@ -81,7 +81,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Para comprobar que se ha concedido correctamente el acceso al centro de seguridad & cumplimiento, siga uno de estos pasos:
 
-- En el centro de seguridad & cumplimiento, vaya a **permisos** y seleccione el grupo de roles. En el control flotante detalles que se abre, compruebe los miembros del grupo de roles. 
+- En el centro de seguridad & cumplimiento, vaya a **permisos** y seleccione el grupo de roles. En el control flotante detalles que se abre, compruebe los miembros del grupo de roles.
 
 - En el PowerShell del centro de cumplimiento de & de seguridad, reemplace \<RoleGroupName\> por el nombre del grupo de roles y ejecute el siguiente comando:
 

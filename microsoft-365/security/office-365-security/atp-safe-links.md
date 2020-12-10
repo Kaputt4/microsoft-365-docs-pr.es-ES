@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos seguros en defender para Office 365 para proteger su organización del phishing y otros ataques que usan direcciones URL malintencionadas.
-ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846061"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616325"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft defender para Office 365
 
@@ -44,7 +44,7 @@ Vínculos seguros es una característica de [defender para Office 365](office-36
 
 La protección de vínculos seguros está disponible en las siguientes ubicaciones:
 
-- **Mensajes de correo electrónico** : la protección de vínculos seguros para vínculos en mensajes de correo electrónico se controla mediante directivas de vínculos seguros. No hay ninguna directiva de vínculos a prueba de errores predeterminada, **por lo que para obtener la protección de vínculos seguros en los mensajes de correo electrónico, debe crear una o varias directivas de vínculos a prueba** de errores. Para obtener instrucciones, consulte [configurar directivas de vínculos seguros en Microsoft defender para Office 365](set-up-atp-safe-links-policies.md).
+- **Mensajes de correo electrónico**: la protección de vínculos seguros para vínculos en mensajes de correo electrónico se controla mediante directivas de vínculos seguros. No hay ninguna directiva de vínculos a prueba de errores predeterminada, **por lo que para obtener la protección de vínculos seguros en los mensajes de correo electrónico, debe crear una o varias directivas de vínculos a prueba** de errores. Para obtener instrucciones, consulte [configurar directivas de vínculos seguros en Microsoft defender para Office 365](set-up-atp-safe-links-policies.md).
 
   Para obtener más información acerca de la protección de vínculos seguros para los mensajes de correo electrónico, consulte la sección [configuración de vínculos seguros para los mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este artículo.
 
@@ -52,7 +52,7 @@ La protección de vínculos seguros está disponible en las siguientes ubicacion
 
   Para obtener más información acerca de la protección de vínculos seguros en Teams, consulte la sección [configuración de vínculos seguros para Microsoft Teams](#safe-links-settings-for-microsoft-teams) más adelante en este tema.
 
-- **Office 365 apps** : la protección de vínculos seguros para aplicaciones de Office 365 está disponible en los AP de escritorio, móviles y Web admitidos. Puede **configurar** la protección de vínculos seguros para las aplicaciones de Office 365 en la configuración global que se encuentran **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [configurar las opciones globales de configuración de vínculos seguros en Microsoft defender para Office 365](configure-global-settings-for-safe-links.md).
+- **Office 365 apps**: la protección de vínculos seguros para aplicaciones de Office 365 está disponible en los AP de escritorio, móviles y Web admitidos. Puede **configurar** la protección de vínculos seguros para las aplicaciones de Office 365 en la configuración global que se encuentran **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, consulte [configurar las opciones globales de configuración de vínculos seguros en Microsoft defender para Office 365](configure-global-settings-for-safe-links.md).
 
   Pero, la protección de vínculos seguros para las aplicaciones de Office 365 solo se **aplica** a los usuarios que se incluyen en las directivas de vínculos seguros activos. Si un usuario no está incluido en una directiva de vínculos seguros activa, el usuario no obtiene protección de vínculos seguros en las aplicaciones de Office 365 compatibles.
 
@@ -60,13 +60,13 @@ La protección de vínculos seguros está disponible en las siguientes ubicacion
 
 En este artículo se incluyen descripciones detalladas de los siguientes tipos de configuración de vínculos a prueba de errores:
 
-- **Configuración en directivas de vínculos seguros** : esta configuración solo se aplica a los usuarios que están incluidos en las directivas específicas y la configuración puede ser diferente en las directivas. Estas opciones de configuración incluyen:
+- **Configuración en directivas de vínculos seguros**: esta configuración solo se aplica a los usuarios que están incluidos en las directivas específicas y la configuración puede ser diferente en las directivas. Estas opciones de configuración incluyen:
 
   - [Configuración de vínculos seguros para los mensajes de correo electrónico](#safe-links-settings-for-email-messages)
   - [Configuración de vínculos seguros para Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [Listas "no volver a escribir las siguientes direcciones URL" en directivas de vínculos a prueba de errores](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Configuración de vínculos seguros globales** : estas opciones se configuran globalmente, no en las directivas de vínculos a prueba de errores. Pero la configuración se aplica únicamente a los usuarios que se incluyen en las directivas de vínculos seguros activos. Estas opciones de configuración incluyen:
+- **Configuración de vínculos seguros globales**: estas opciones se configuran globalmente, no en las directivas de vínculos a prueba de errores. Pero la configuración se aplica únicamente a los usuarios que se incluyen en las directivas de vínculos seguros activos. Estas opciones de configuración incluyen:
 
   - [Configuración de vínculos seguros para aplicaciones de Office 365](#safe-links-settings-for-office-365-apps)
   - [Lista "bloquear las siguientes direcciones URL" para vínculos seguros](#block-the-following-urls-list-for-safe-links)
@@ -77,9 +77,9 @@ En la tabla siguiente se describen los escenarios de vínculos a prueba de error
 
 |Escenario|Resultado|
 |---|---|
-|Jean es miembro del Departamento de marketing. La protección de vínculos seguros para las aplicaciones de Office 365 está activada en la configuración global de vínculos seguros y existe una directiva de vínculos seguros que se aplica a los miembros del Departamento de marketing. Jean abre una presentación de PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL de la presentación.|Jean está protegido por vínculos seguros. <br/><br/> Jean se incluye en una directiva de vínculos seguros y la protección de vínculos seguros para las aplicaciones de Office 365 está activada. <br/><br/> Para obtener más información acerca de los requisitos para la protección de vínculos seguros en las aplicaciones de Office 365, vea la sección [configuración de vínculos seguros para office 365 apps](#safe-links-settings-for-office-365-apps) más adelante en este artículo.|
-|La organización Microsoft 365 E5 de Carlos no tiene configurada ninguna directiva de vínculos seguros. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio Web malintencionado en el que se hace clic en último término.|Carlos no está protegido por vínculos seguros. <br/><br/> Un administrador debe crear al menos una directiva de vínculos seguros para que cualquiera obtenga protección de vínculos seguros en los mensajes de correo electrónico entrantes. Chris debe incluirse en las condiciones de la Directiva para obtener protección de vínculos seguros.|
-|En la organización de Pat, ningún administrador ha creado ninguna directiva de vínculos a prueba de errores, pero la protección de vínculos seguros para las aplicaciones de Office 365 está activada. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.|Pat no está protegido por vínculos seguros. <br/><br/> Aunque la protección de vínculos seguros para las aplicaciones de Office 365 está activada globalmente, Pat no se incluye en ninguna directiva de vínculos a prueba de errores, por lo que no se puede aplicar la protección.|
+|Jean es miembro del Departamento de marketing. La protección de vínculos seguros para las aplicaciones de Office 365 está activada en la configuración global de vínculos seguros y existe una directiva de vínculos seguros que se aplica a los miembros del Departamento de marketing. Jean abre una presentación de PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL de la presentación.|Jean está protegido por vínculos seguros. <p> Jean se incluye en una directiva de vínculos seguros y la protección de vínculos seguros para las aplicaciones de Office 365 está activada. <p> Para obtener más información acerca de los requisitos para la protección de vínculos seguros en las aplicaciones de Office 365, vea la sección [configuración de vínculos seguros para office 365 apps](#safe-links-settings-for-office-365-apps) más adelante en este artículo.|
+|La organización Microsoft 365 E5 de Carlos no tiene configurada ninguna directiva de vínculos seguros. Chris recibe un correo electrónico de un remitente externo que contiene una dirección URL a un sitio Web malintencionado en el que se hace clic en último término.|Carlos no está protegido por vínculos seguros. <p> Un administrador debe crear al menos una directiva de vínculos seguros para que cualquiera obtenga protección de vínculos seguros en los mensajes de correo electrónico entrantes. Chris debe incluirse en las condiciones de la Directiva para obtener protección de vínculos seguros.|
+|En la organización de Pat, ningún administrador ha creado ninguna directiva de vínculos a prueba de errores, pero la protección de vínculos seguros para las aplicaciones de Office 365 está activada. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.|Pat no está protegido por vínculos seguros. <p> Aunque la protección de vínculos seguros para las aplicaciones de Office 365 está activada globalmente, Pat no se incluye en ninguna directiva de vínculos a prueba de errores, por lo que no se puede aplicar la protección.|
 |En la organización de Lee, `https://tailspintoys.com` se configura en la lista **bloquear las siguientes direcciones URL** en la configuración global para vínculos seguros. Ya existe una directiva de vínculos a prueba de errores que incluye Lee. Lee recibe un mensaje de correo electrónico que contiene la dirección URL `https://tailspintoys.com/aboutus/trythispage` . Lee hace clic en la dirección URL.|Es posible que la dirección URL se bloquee automáticamente para Lucas; depende de la entrada de la dirección URL de la lista y del cliente de correo electrónico Lee que se usa. Para obtener más información, vea la [lista "bloquear las siguientes direcciones URL"](#block-the-following-urls-list-for-safe-links) en la sección vínculos seguros más adelante en este tema.|
 |Jamie y Julia trabajan para contoso.com. Hace mucho tiempo, los administradores configuraron directivas de vínculos a prueba de errores que se aplican a Pablo y Julia. Pablo envía un correo electrónico a Julia, pero no sabe que el correo electrónico contiene una dirección URL malintencionada.|Julia protege los vínculos a prueba de errores **si** la Directiva de vínculos seguros que se aplica a ella está configurada para aplicarse a los mensajes entre los destinatarios internos. Para obtener más información, vea la sección [configuración de vínculos seguros para los mensajes de correo electrónico](#safe-links-settings-for-email-messages) más adelante en este tema.|
 
@@ -91,41 +91,41 @@ Después de que los vínculos seguros reescriben una dirección URL, la direcci�
 
 Las opciones de configuración de las directivas de vínculos a prueba de errores que se aplican a los mensajes de correo electrónico se describen en la siguiente lista:
 
-- **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes** : habilita o deshabilita el análisis de vínculos seguros en los mensajes de correo electrónico. El valor recomendado es **on**. Al activar esta configuración, se producen las siguientes acciones.
+- **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: habilita o deshabilita el análisis de vínculos seguros en los mensajes de correo electrónico. El valor recomendado es **on**. Al activar esta configuración, se producen las siguientes acciones.
 
   - La exploración de vínculos seguros está habilitada en Outlook (C2R) en Windows.
   - Las direcciones URL se reescriben y los usuarios se redirigen a través de la protección de vínculos seguros cuando hacen clic en direcciones URL en los mensajes.
   - Cuando se hace clic en ellas, las direcciones URL se comprueban con una lista de direcciones URL malintencionadas conocidas y la [lista "bloquear las siguientes direcciones URL"](#block-the-following-urls-list-for-safe-links).
   - Las direcciones URL que no tienen una reputación válida se superponen de forma asíncrona en segundo plano.
 
-- **Aplique un análisis de URL en tiempo real de vínculos y vínculos sospechosos que apunten a archivos** : permite el análisis en tiempo real de vínculos, incluidos los vínculos de los mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado está habilitado.
+- **Aplique un análisis de URL en tiempo real de vínculos y vínculos sospechosos que apunten a archivos**: permite el análisis en tiempo real de vínculos, incluidos los vínculos de los mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado está habilitado.
 
-  - **Espere a que se complete el análisis de URL antes de entregar el mensaje** :
+  - **Espere a que se complete el análisis de URL antes de entregar el mensaje**:
 
     - Habilitado: los mensajes que contienen direcciones URL se conservan hasta que finaliza el examen. Los mensajes solo se entregan después de que las direcciones URL se confirmen como seguras. Este es el valor recomendado.
     - Deshabilitado: Si no se puede completar el análisis de direcciones URL, entregar el mensaje de todos modos.
 
-- **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización** : habilita o deshabilita el análisis de vínculos seguros en los mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma organización de Exchange Online. El valor recomendado está habilitado.
+- **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**: habilita o deshabilita el análisis de vínculos seguros en los mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma organización de Exchange Online. El valor recomendado está habilitado.
 
-- **No hacer un seguimiento de los clics del usuario** : habilita o deshabilita el almacenamiento de vínculos seguros haga clic en datos de direcciones URL en mensajes de correo electrónico. El valor recomendado es dejar esta configuración desactivada (para hacer un seguimiento de los clics del usuario).
+- **No hacer un seguimiento de los clics del usuario**: habilita o deshabilita el almacenamiento de vínculos seguros haga clic en datos de direcciones URL en mensajes de correo electrónico. El valor recomendado es dejar esta configuración desactivada (para hacer un seguimiento de los clics del usuario).
 
   Dirección URL haga clic en seguimiento para los vínculos de los mensajes de correo electrónico enviados entre los remitentes internos y los destinatarios internos no se admite actualmente.
 
-- **No permita que los usuarios hagan clic a través de la dirección URL original** : permite o bloquea que los usuarios hagan clic en la [Página de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor recomendado está habilitado.
+- **No permita que los usuarios hagan clic a través de la dirección URL original**: permite o bloquea que los usuarios hagan clic en la [Página de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor recomendado está habilitado.
 
 - **No reescriba las siguientes direcciones** URL: deja las direcciones URL tal y como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis. La lista es única para cada directiva de vínculos seguros. Para obtener más información acerca de la lista no **reescribir las siguientes direcciones URL** , vea las [listas "no reescribir las siguientes direcciones URL" en la sección directivas de vínculos seguros](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) , más adelante en este artículo.
 
 Para obtener más información acerca de los valores recomendados para la configuración estándar y estricta de las directivas de vínculos a prueba de errores, vea [configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
-- **Filtros de destinatarios** : debe especificar las condiciones y excepciones de destinatarios que determinan a quién se aplica la Directiva. Puede usar estas propiedades para las condiciones y excepciones:
+- **Filtros de destinatarios**: debe especificar las condiciones y excepciones de destinatarios que determinan a quién se aplica la Directiva. Puede usar estas propiedades para las condiciones y excepciones:
 
   - **El destinatario es**
   - **El dominio del destinatario es**
   - **El destinatario es un miembro de**
 
-  Solo se puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+  Solo se puede usar una condición o excepción una vez, pero la condición o excepción puede contener varios valores. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-- **Prioridad** : Si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
+- **Prioridad**: Si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
   Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
@@ -204,11 +204,11 @@ Puede configurar la protección de vínculos seguros para las aplicaciones de Of
 
 Están disponibles las siguientes opciones de configuración de vínculos seguros para las aplicaciones de Office 365:
 
-- **Aplicaciones de office 365** : habilita o deshabilita el análisis de vínculos seguros en aplicaciones de Office 365 compatibles. El valor predeterminado y el valor recomendado es **on**.
+- **Aplicaciones de office 365**: habilita o deshabilita el análisis de vínculos seguros en aplicaciones de Office 365 compatibles. El valor predeterminado y el valor recomendado es **on**.
 
-- **No realizar seguimiento cuando los usuarios hacen clic en vínculos seguros** : habilita o deshabilita el almacenamiento de vínculos seguros haga clic en datos de direcciones URL en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor recomendado es **OFF** , lo que significa que se realiza un seguimiento de los clics del usuario.
+- **No realizar seguimiento cuando los usuarios hacen clic en vínculos seguros**: habilita o deshabilita el almacenamiento de vínculos seguros haga clic en datos de direcciones URL en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor recomendado es **OFF**, lo que significa que se realiza un seguimiento de los clics del usuario.
 
-- **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original** : permite o bloquea que los usuarios hagan clic en la [Página de advertencia](#warning-pages-from-safe-links) en la dirección URL original en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor predeterminado y el valor recomendado es **on**.
+- **No permita que los usuarios hagan clic en los vínculos seguros a la dirección URL original**: permite o bloquea que los usuarios hagan clic en la [Página de advertencia](#warning-pages-from-safe-links) en la dirección URL original en las versiones de escritorio Word, Excel, PowerPoint y Visio. El valor predeterminado y el valor recomendado es **on**.
 
 Para configurar las opciones de vínculos seguros para las aplicaciones de Office 365, consulte [Configure Safe links Protection for office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
 
@@ -228,7 +228,7 @@ En un nivel alto, aquí se muestra cómo funciona la protección de vínculos se
 
    - Si la dirección URL apunta a un sitio web que se ha determinado que es malintencionado, se abre una página de [Advertencia de sitio Web malintencionado](#malicious-website-warning) (o una página de advertencia diferente).
 
-   - Si la dirección URL apunta a un archivo descargable y la Directiva de vínculos seguros que se aplica al usuario está configurada para analizar los vínculos a contenido descargable ( **aplicar un análisis de URL en tiempo real para vínculos sospechosos y vínculos que señalan a archivos** ), se comprueba el archivo descargable.
+   - Si la dirección URL apunta a un archivo descargable y la Directiva de vínculos seguros que se aplica al usuario está configurada para analizar los vínculos a contenido descargable (**aplicar un análisis de URL en tiempo real para vínculos sospechosos y vínculos que señalan a archivos**), se comprueba el archivo descargable.
 
    - Si la dirección URL se considera segura, el usuario se dirigirá al sitio Web.
 
@@ -249,7 +249,7 @@ Cuando un usuario de una directiva de vínculos seguros activa hace clic en un v
 
 Configure la lista de direcciones URL en la configuración global para vínculos seguros. Para obtener instrucciones, consulte [configurar la lista "bloquear las siguientes direcciones URL"](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-**Notas** :
+**Notas**:
 
 - Para obtener una lista verdaderamente universal de las direcciones URL que están bloqueadas en todas partes, consulte [administrar direcciones URL en la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md).
 
@@ -274,7 +274,7 @@ En la tabla siguiente, se describen ejemplos de los valores que puede escribir y
 
 |Valor|Resultado|
 |---|---|
-|`contoso.com` <br/> o <br/> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de los. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y `https://contoso.com/abc` se bloquean.|
+|`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de los. Por ejemplo, `https://www.contoso.com` , `https://sub.contoso.com` y `https://contoso.com/abc` se bloquean.|
 |`https://contoso.com/a`|Bloques, `https://contoso.com/a` pero no subtrazados adicionales como `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y subrutas adicionales como `https://contoso.com/a/b` .|
 |`https://toys.contoso.com*`|Bloquea un subdominio ( `toys` en este ejemplo) pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com` ).|
@@ -289,7 +289,7 @@ Cada directiva de vínculos seguros contiene una lista no **reescribir las sigui
 
 Para agregar entradas a la lista en las directivas de vínculos seguros nuevos o existentes, consulte [crear directivas de vínculos seguros](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o [modificar directivas de vínculos seguros](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-**Notas** :
+**Notas**:
 
 - Los siguientes clientes no reconocen la lista no **reescribir las siguientes direcciones URL** en las directivas de vínculos a prueba de errores. Se puede bloquear el acceso de los usuarios incluidos en las directivas a las direcciones URL en función de los resultados del análisis de vínculos seguros en estos clientes:
 
@@ -313,7 +313,7 @@ En la tabla siguiente, se describen ejemplos de los valores que puede escribir y
 |Valor|Resultado|
 |---|---|
 |`contoso.com`|Permite el acceso, `https://contoso.com` pero no los subdominios o las rutas de acceso.|
-|`*.contoso.com/*`|Permite el acceso a un dominio, subdominios y rutas de acceso (por ejemplo,,, `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` ). <br/><br/> Esta entrada es intrínsecamente mejor que `*contoso.com*` , porque no permite sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
+|`*.contoso.com/*`|Permite el acceso a un dominio, subdominios y rutas de acceso (por ejemplo,,, `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` ). <p> Esta entrada es intrínsecamente mejor que `*contoso.com*` , porque no permite sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Permite el acceso `https://contoso.com/a` , pero no los subtrazados como `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Permite el acceso `https://contoso.com/a` y las subrutas como `https://contoso.com/a/b`|
 |

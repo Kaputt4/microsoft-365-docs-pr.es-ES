@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920435"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614863"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -62,7 +62,7 @@ Para obtener más información sobre cómo el soporte Premier puede ayudar a su 
 
 1. Inicie sesión en el centro de administración de Microsoft 365.
 
-2. Para problemas generales de productos, vaya a **soporte** técnico \> **solicitar asistencia al cliente** \> **Call technical support**.
+2. Para problemas generales de productos, vaya a **soporte** técnico \> **solicitar asistencia al cliente** \> .
 
    Para las preguntas relacionadas con la compra de EOP, facturación o suscripciones, vaya a **Soporte**\> **Solicitar soporte técnico**\> **Llamar a soporte de facturación y suscripción**.
 
@@ -76,13 +76,13 @@ Microsoft proporciona números de teléfono locales o gratuitos para el soporte 
 
 |País o región|Preguntas previas a la compra y de facturación|Preguntas de soporte técnico|
 |---|---|---|
-|Brasil|Gratuito: 08007621146 <br/> Local: 1147001999|Mismo|
-|Francia|Gratuito: 0805 540 594 <br/> Local: 01 57 32 42 97|Mismo|
-|Alemania|Gratuito: 0800 589 2332 <br/>  Local: 069 380 789 508|Mismo|
-|Japón|Gratuito: 0120-628860 <br/> Local: 343326257|Gratuito: 0120-996680 <br/> Local: 357679793|
-|Corea|Gratuito: 080-495-0880 <br/> Local: 234831937|Mismo|
-|España|Gratuito: 900 814 197 <br/> Local: 912 718 160|Mismo|
-|Reino Unido|Gratuito: 0800 032 6417 <br/> Local: 0203 450 6455|Mismo|
+|Brasil|Gratuito: 08007621146 <br> Local: 1147001999|Mismo|
+|Francia|Gratuito: 0805 540 594 <br> Local: 01 57 32 42 97|Mismo|
+|Alemania|Gratuito: 0800 589 2332 <br>  Local: 069 380 789 508|Mismo|
+|Japón|Gratuito: 0120-628860 <br> Local: 343326257|Gratuito: 0120-996680 <br> Local: 357679793|
+|Corea|Gratuito: 080-495-0880 <br> Local: 234831937|Mismo|
+|España|Gratuito: 900 814 197 <br> Local: 912 718 160|Mismo|
+|Reino Unido|Gratuito: 0800 032 6417 <br> Local: 0203 450 6455|Mismo|
 |Estados Unidos|Gratuito: 1-877-913-2707|Gratuito: 1-800-865-9408|
 |
 

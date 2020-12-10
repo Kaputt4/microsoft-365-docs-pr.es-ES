@@ -21,12 +21,12 @@ description: Empiece a usar las capacidades de investigación y respuesta automa
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357748"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614839"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft defender para Office 365
 
@@ -124,7 +124,7 @@ Los permisos se conceden a través de determinadas funciones, como las que se de
 |Task|Roles necesarios|
 |---|---|
 |Configurar características de AIR|Una de las siguientes funciones: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).|
-|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Una de las siguientes funciones, asignada en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Lector de seguridad <br/>--- y ---</li><li>Búsqueda y depuración (este rol solo se asigna en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Es posible que tenga que crear un nuevo grupo de funciones y agregar el rol de búsqueda y depuración al nuevo grupo de roles.</li></ul>|
+|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Una de las siguientes funciones, asignada en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Búsqueda y depuración (este rol solo se asigna en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Es posible que tenga que crear un nuevo grupo de funciones y agregar el rol de búsqueda y depuración al nuevo grupo de roles.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Licencias necesarias
@@ -135,13 +135,13 @@ Las licencias [de Microsoft defender para Office 365 plan 2](office-365-atp.md#m
 - El equipo de operaciones de seguridad de la organización (incluidos los lectores de seguridad y los que tienen el rol de **búsqueda y depuración** )
 - Usuarios finales
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](air-view-investigation-results.md#view-details-of-an-investigation)
 
 - [Revisar y aprobar acciones pendientes](air-remediation-actions.md)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Investigación y corrección automáticas en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual del uso de varios servicios de Microsoft 365.  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841380"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611453"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -153,7 +153,7 @@ En esta tabla se proporcionan datos de adopción de mes a mes en términos de us
 |Product  <br/> |Nombre de los productos para los que se resume la información de uso. El valor 365 de Microsoft en la columna producto representa la actividad en cualquiera de los productos.  <br/> |
 |Timeframe  <br/> |Valor del mes. Verá una fila por producto y mes para los últimos 12 meses, incluido el mes parcial actual.  <br/> |
 |EnabledUsers  <br/> |Número de usuarios habilitados para usar el producto para el valor del período de tiempo, si se ha habilitado un usuario para la parte del mes, todavía se cuentan.  <br/> |
-|ActiveUsers  <br/> |Número de usuarios que realizaron una actividad intencionada en el producto para el valor del período de tiempo.  <br/> Un usuario se contabiliza como activo para un producto en un mes específico si realizó una de las actividades más importantes en el producto. Las actividades más importantes están disponibles en la tabla **Actividad de producto de espacio empresarial** .  <br/> |
+|ActiveUsers  <br/> |Número de usuarios que realizaron una actividad intencionada en el producto para el valor del período de tiempo.  <br/> Un usuario se contabiliza como activo para un producto en un mes específico si realizó una de las actividades más importantes en el producto. Las actividades más importantes están disponibles en la tabla **Actividad de producto de espacio empresarial**.  <br/> |
 |CumulativeActiveUsers  <br/> |Número de usuarios habilitados para usar un producto y que usaron el producto hasta el mes del período de tiempo como mínimo una vez desde que se inició la recopilación de datos en el nuevo sistema de uso.  <br/> |
 |MoMReturningUsers  <br/> |Número de usuarios que estuvieron activos en el mes del período de tiempo y que también estuvieron activos en el mes anterior.  <br/> |
 |FirstTimeUsers  <br/> |Número de usuarios que estuvieron activos por primera vez en el período de tiempo desde la recopilación de datos el nuevo sistema de uso.  <br/> Un usuario se contabiliza como nuevo en un mes específico si detectamos su actividad por primera vez desde el inicio de la recopilación de datos en este nuevo sistema de informes. Una vez que se ha contado como usuario por primera vez, incluso si este usuario tiene un gran espacio en su actividad, nunca se recontará de nuevo como usuario por primera vez.  <br/> |
@@ -215,8 +215,8 @@ Esta tabla consiste en los datos de resumen de mes a mes sobre el uso o la activ
 |DocumentCount  <br/> |Número total de documentos que existían en el sitio al final del período de tiempo.  <br/> |
 |Con diplanas  <br/> |Suma del total de almacenamiento usado en todos los sitios al final del período de tiempo.  <br/> |
 |ActivityType  <br/> |Número de sitios que registraron los diferentes tipos de actividad de archivos (cualquiera/archivos activos/archivos compartidos ext. o int./archivos sincronizados).  <br/> Representa cualquier actividad de archivo que se realizó.  <br/> |
-|SitesWithOwnerActivities  <br/> |Número de sitios activos donde el propietario del sitio realizó una actividad de archivos específica en sus propios sitios.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Número de sitios activos sumados del mes donde los usuarios distintos al propietario del sitio realizaron una actividad de archivos específica en los sitios.  <br/> |
+|SitesWithOwnerActivities  <br/> |Número de sitios activos donde el propietario del sitio realizó una actividad de archivos específica en sus propios sitios. Puede obtener el propietario del sitio desde el comando de PowerShell **Get-sposite**. Se trata de la persona responsable del sitio.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Número de sitios activos sumados del mes donde los usuarios distintos al propietario del sitio realizaron una actividad de archivos específica en los sitios. Puede obtener el propietario del sitio desde el comando de PowerShell **Get-sposite**. Se trata de la persona responsable del sitio. <br/> |
 |ActivityTotalSites  <br/> |Número de sitios donde se registró una actividad durante el período de tiempo. Aunque un sitio tuviera actividad anteriormente en el período de tiempo y se eliminara al final del período de tiempo, seguiría contabilizándose en el total de sitios activos para ese período de tiempo.  <br/> |
 |Timeframe  <br/> |Esta columna tiene el valor de fecha. Se usa como una relación de varios a uno para la tabla Calendario.  <br/> |
 |ContentDate  <br/> |Si en el período de tiempo se muestra el mes actual, este valor representará la fecha más reciente del mes actual para los que están disponibles los datos.  <br/> Si en el período de tiempo se muestra el mes anterior, este valor representará la última fecha del mes del período de tiempo.  <br/> |

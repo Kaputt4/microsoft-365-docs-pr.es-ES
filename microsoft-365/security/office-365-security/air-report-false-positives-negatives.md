@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357404"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616181"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -34,7 +34,7 @@ ms.locfileid: "49357404"
 
 
 **Se aplica a:**
-- Microsoft Defender para Office 365
+- Microsoft defender para Office 365
 
 ¿Las [capacidades de investigación y respuesta automatizadas (Air) de Office 365](automated-investigation-response-office.md) pierden o detectaron algo erróneamente? Hay pasos que puede llevar a cabo para solucionarlo. Puede:
 
@@ -79,9 +79,9 @@ Con el explorador de amenazas, el equipo de operaciones de seguridad puede encon
 
 En el centro de actividades, puede ver las acciones de corrección que se han realizado y, potencialmente, deshacer la acción.
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
+1. Vaya a <https://protection.office.com> e inicie sesión. Esto le llevará al centro de seguridad & cumplimiento.
 
-2. Vaya a investigaciones de **Administración de amenazas**  >  **Investigations**.
+2. Vaya a investigaciones de **Administración de amenazas** \> .
 
 3. En la lista de investigaciones, seleccione el icono **abrir en ventana nueva** junto al identificador de un elemento.
 
@@ -93,6 +93,6 @@ En el centro de actividades, puede ver las acciones de corrección que se han re
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Microsoft Defender para Office 365](office-365-atp.md)
+[Microsoft defender para Office 365](office-365-atp.md)
 
 [AIR en Microsoft defender para Office 365](office-365-air.md)

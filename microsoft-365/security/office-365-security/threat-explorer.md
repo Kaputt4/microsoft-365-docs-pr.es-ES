@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo usar Explorer y detecciones en tiempo real en el centro de seguridad & cumplimiento para investigar y responder a las amenazas de forma eficaz y eficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561404"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615569"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -67,7 +67,7 @@ La columna etiquetas que se muestra en la cuadrícula de correo electrónico con
 
 Ahora tenemos etiquetas como filtro para que pueda buscar con las cuentas de prioridad o con escenarios específicos de etiquetas de usuario (e incluso excluir los resultados con determinadas etiquetas como parte de esta experiencia). La combinación de estos con los otros varios filtros proporcionados le ayudará a limitar el ámbito de investigación
 
-[![Etiquetas ](../../media/tags-filter-normal.png) de filtro](../../media/tags-filter-normal.png#lightbox)
+[![Etiquetas de filtro](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![No filtrar etiquetas](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ Las acciones adicionales constan de las acciones que se han aplicado después de
 > - Habrá nuevos campos y valores para tecnologías de detección y acciones adicionales (especialmente para los escenarios de ZAP). Evalúe las consultas guardadas y las consultas de seguimiento existentes para asegurarse de que funcionan con los nuevos valores.
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![Acciones adicionales en el explorador](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Invalidaciones del sistema
 
@@ -161,10 +161,10 @@ Las invalidaciones del sistema son un método para realizar excepciones a la ubi
 - Bloqueado por la Directiva de la organización: esto se debe a que los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo para bloquear a los remitentes, dominios, idiomas de mensajes o direcciones IP de origen para los usuarios de su organización. También puede tratarse de un conjunto de usuarios o de toda la organización.
 - Extensión de archivo bloqueada por la Directiva de la organización: esto se debe a que los equipos de seguridad de una organización bloquean la extensión del tipo de archivo mediante la configuración de la Directiva antimalware. Estos valores se mostrarán ahora en detalles de correo electrónico para ayudar con las investigaciones. Secops Teams también puede filtrar las extensiones de archivos bloqueados mediante la funcionalidad de filtrado enriquecido.
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![Invalidaciones del sistema en el explorador](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![El sistema invalida la cuadrícula en el explorador](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>Mejoras en torno a la experiencia de clics
 
@@ -184,7 +184,7 @@ El conjunto de mejoras centradas en los datos de clics de URL y de URL incluyen:
 
 Nivel de confianza de phish ayuda a identificar el grado de confianza con el que un correo electrónico se ha clasificado como phish. Los dos valores posibles son alta y normal. En las fases iniciales, este filtro solo estará disponible en la vista phish del explorador de amenazas.
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Nivel de confianza de phish en el explorador](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>Señal de dirección URL ZAP
 
@@ -354,14 +354,14 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 
 Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Microsoft 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( <https://protection.office.com> ), elija **Threat Management** \> **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware**.
+2. En el menú **Ver** , elija malware de **correo electrónico** \> .
 
    > [!div class="mx-imgBorder"]
    > ![Menú Ver para el explorador](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Haga clic en **remitente** y, a continuación, elija tecnología de **Basic**  >  **detección** básica.
+3. Haga clic en **remitente** y, a continuación, elija tecnología de  \> **detección** básica.
 
    Las tecnologías de detección están ahora disponibles como filtros para el informe.
 
@@ -381,14 +381,14 @@ Supongamos que desea ver los intentos de suplantación de identidad mediante dir
 
 Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use la vista de [correo electrónico > phish](threat-explorer-views.md#email--phish) de detecciones en tiempo real.
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( <https://protection.office.com> ), elija **Threat Management** \> **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish**.
+2. En el menú **Ver** , elija phishing de **correo electrónico** \> .
 
    > [!div class="mx-imgBorder"]
    > ![Ver el menú del explorador en el contexto de suplantación de identidad](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Haga clic en **remitente** y, a continuación, elija **direcciones URL**,  >  **haga clic en veredicto**.
+3. Haga clic en **remitente** y, a continuación, elija **direcciones URL** , \> **haga clic en veredicto**.
 
 4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado** y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
@@ -428,14 +428,14 @@ En los controles flotantes de dirección URL o de correo electrónico, los clics
 
 Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico > vista de envíos](threat-explorer-views.md#email--submissions) del explorador (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( <https://protection.office.com> ), elija **Threat Management** \> **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija **Email**  >  **envíos** de correo electrónico.
+2. En el menú **Ver** , elija  \> **envíos** de correo electrónico.
 
    > [!div class="mx-imgBorder"]
    > ![Menú Ver para el explorador de correo electrónico](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Haga clic en **remitente** y, a continuación, elija tipo de **Basic**  >  **Informe** básico.
+3. Haga clic en **remitente** y, a continuación, elija tipo de  \> **Informe** básico.
 
 4. Seleccione una opción, como **phish** y, a continuación, haga clic en el botón **Actualizar** .
 
@@ -476,14 +476,14 @@ Para ver y usar el explorador o las detecciones en tiempo real, debe tener los p
 - Para el centro de seguridad & cumplimiento, debe tener asignada una de las siguientes funciones:
 
   - Administración de la organización
-  - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( <https://aad.portal.azure.com> )
   - Lector de seguridad
 
-- Para Exchange Online, debe tener una de las siguientes funciones asignadas en el centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) o con cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+- Para Exchange Online, debe tener una de las siguientes funciones asignadas en el centro de administración de Exchange ( <https://admin.protection.outlook.com/ecp/> ) o [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
   - Administración de la organización
-  - Administración de organización de solo lectura
-  - Rol Destinatarios con permiso de vista
+  - Administración de la organización de solo visualización
+  - Destinatarios con permiso de vista
   - Administración de cumplimiento
 
 Para obtener más información acerca de los roles y los permisos, vea los siguientes recursos:

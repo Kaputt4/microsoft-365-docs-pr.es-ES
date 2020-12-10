@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a mover dominios y opciones de configuración de una organización de Microsoft Exchange Online Protection (EOP) a otra.
-ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200508"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614827"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Mover dominios y opciones de configuración de una organización de EOP a otra
 
@@ -29,7 +29,10 @@ ms.locfileid: "48200508"
 El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización. El movimiento desde una organización de EOP a una segunda organización de EOP puede ser todo un desafío, pero con unos pocos scripts básicos de Windows PowerShell remoto y un poco de preparación, esto se puede lograr con una ventana de mantenimiento relativamente pequeña.
 
 > [!NOTE]
-> Las opciones de configuración se pueden mover de forma segura desde una organización de EOP independiente (Standard) a otra organización de EOP Standard o una organización de Exchange Enterprise CAL con Services (EOP Premium), o desde una organización de EOP Premium a otra organización de EOP Premium. Debido a que algunas características Premium no son compatibles con las organizaciones estándar de EOP, el traslado de una organización de EOP Premium a una organización estándar de EOP podría no ser correcta. <br><br> Estas instrucciones son para las organizaciones de solo filtrado de EOP. Existen consideraciones adicionales al moverse desde una organización de Exchange Online hacia otra organización de Exchange Online. Las organizaciones de Exchange Online están fuera del alcance de estas instrucciones.
+>
+> - Las opciones de configuración se pueden mover de forma segura desde una organización de EOP independiente (Standard) a otra organización de EOP Standard o una organización de Exchange Enterprise CAL con Services (EOP Premium), o desde una organización de EOP Premium a otra organización de EOP Premium. Debido a que algunas características Premium no son compatibles con las organizaciones estándar de EOP, el traslado de una organización de EOP Premium a una organización estándar de EOP podría no ser correcta.
+>
+> - Estas instrucciones son para las organizaciones de solo filtrado de EOP. Existen consideraciones adicionales al moverse desde una organización de Exchange Online hacia otra organización de Exchange Online. Las organizaciones de Exchange Online están fuera del alcance de estas instrucciones.
 
 En el ejemplo siguiente, Contoso, Ltd. se ha fusionado con Contoso Suites. La imagen siguiente muestra el proceso de mover los dominios, los usuarios y grupos de correo, y la configuración desde la organización de EOP de origen (contoso.onmicrosoft.com) hacia la organización de EOP de destino (contososuites.onmicrosoft.com):
 
@@ -42,21 +45,14 @@ El desafío en mover dominios desde una organización hasta otra es que no puede
 Para volver a crear la organización de origen en la organización de destino, asegúrese de recopilar y almacenar la siguiente información sobre la organización de origen:
 
 - Dominios
-
 - Usuarios de correo
-
 - Grupos
-
 - Contra correo electrónico no deseado
-
   - Directivas contra correo no deseado (también conocidas como directivas de filtro de contenido)
   - Directivas de filtro de correo no deseado saliente
   - Directivas de filtros de conexión
-
 - Directivas antimalware
-
 - Conectores
-
 - Reglas de flujo de correo (también conocidas como reglas de transporte)
 
   > [!NOTE]
@@ -186,7 +182,7 @@ Ahora puede revisar y recopilar la información del centro de administración de
 
 2. Haga clic en **Dominios**.
 
-   Si no ve dominios, haga clic en **personalizar navegación**, seleccione **configuración**y, a continuación, haga clic en **Guardar**.
+   Si no ve dominios, haga clic en **personalizar navegación**, seleccione **configuración** y, a continuación, haga clic en **Guardar**.
 
 3. Haga clic en cada vínculo **Iniciar configuración** y continúe con el asistente para la instalación.
 
@@ -252,7 +248,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Paso 5: comprobar dominios para la organización de destino
 
-1. Inicie sesión en el centro de administración de [https://portal.office.com](https://portal.office.com) .
+1. Inicie sesión en el centro de administración de <https://portal.office.com> .
 
 2. Haga clic en **Dominios**.
 

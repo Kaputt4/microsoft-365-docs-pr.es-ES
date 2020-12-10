@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados principales.
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357290"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615149"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -53,13 +53,13 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
 
-1. Vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) e inicie sesión.
+1. Vaya al centro de seguridad & cumplimiento ( <https://protection.office.com> ) e inicie sesión.
 
 2. Realice una de las siguientes acciones:
 
-    - Vaya al panel de **Administración de amenazas** \> **Dashboard**. Esto le llevará al [Panel de seguridad](security-dashboard.md). Los widgets de AIR aparecen en la parte superior del [Panel de seguridad](security-dashboard.md). Seleccione un widget, como un **Resumen de investigaciones**.
+    - Vaya al panel de **Administración de amenazas** \> . Esto le llevará al [Panel de seguridad](security-dashboard.md). Los widgets de AIR aparecen en la parte superior del [Panel de seguridad](security-dashboard.md). Seleccione un widget, como un **Resumen de investigaciones**.
 
-    - Vaya a investigaciones de **Administración de amenazas** \> **Investigations**.
+    - Vaya a investigaciones de **Administración de amenazas** \> .
 
     Cualquiera de estos métodos le lleva a una lista de investigaciones.
 
@@ -77,9 +77,9 @@ Ciertos tipos de alertas desencadenan la investigación automatizada en Microsof
 
 Use el siguiente procedimiento para ver los detalles de una alerta asociada a una investigación automatizada.
 
-1. Vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) e inicie sesión.
+1. Vaya al centro de seguridad & cumplimiento ( <https://protection.office.com> ) e inicie sesión.
 
-2. Vaya a investigaciones de **Administración de amenazas** \> **Investigations**.
+2. Vaya a investigaciones de **Administración de amenazas** \> .
 
 3. En la lista de investigaciones, seleccione un elemento en la columna **ID** .
 
@@ -290,6 +290,6 @@ Puede:
 - Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar y aprobar acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

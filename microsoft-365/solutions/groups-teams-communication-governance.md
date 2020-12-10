@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre los escenarios de colaboración del gobierno de comunicaciones.
-ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b60f0be3cde23330880d652bc62110cf4e55175
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377526"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613683"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gobierno de comunicaciones para escenarios de colaboración
 
@@ -28,7 +28,7 @@ Microsoft 365 ofrece una serie de controles para ayudarle a controlar la comunic
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de comunicaciones disponibles en Microsoft 365. En las siguientes secciones se proporciona información adicional.
 
-|Categoría|Description|Referencia|
+|Categoría|Descripción|Referencia|
 |:-------|:----------|:--------|
 |Mensajería |||
 ||Administre lo que pueden hacer los usuarios mientras se mensajería en Microsoft Teams.|[Administrar directivas de mensajería de Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
@@ -67,6 +67,10 @@ El cumplimiento de la comunicación en Microsoft 365 permite examinar las comuni
 [Cumplimiento de la comunicación en Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
 
 ## <a name="related-topics"></a>Temas relacionados
+
+[Paso a paso de la planeación del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
 [Administrar la configuración de Microsoft Teams para la organización](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 

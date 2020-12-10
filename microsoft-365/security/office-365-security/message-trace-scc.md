@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 1e9f5e21655e55f711997defcb7ace0319ff4be6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197542"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616757"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -41,7 +41,7 @@ El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el se
 
 1. Abra el centro de seguridad & cumplimiento en <https://protection.office.com> .
 
-2. Expanda **flujo de correo**y, a continuación, haga clic en **seguimiento de mensajes**.
+2. Expanda **flujo de correo** y, a continuación, haga clic en **seguimiento de mensajes**.
 
 ## <a name="message-trace-page"></a>Página de seguimiento de mensajes
 
@@ -66,7 +66,10 @@ Los valores predeterminados son **todos los remitentes** y **todos los destinata
 - **A estas personas**: haga clic en este campo para seleccionar uno o más destinatarios de la organización.
 
 > [!NOTE]
-> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo, `*@contoso.com` ), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo. <br/><br/> Puede pegar varias listas de remitentes o destinatarios separados por punto y coma ( `;` ). espacios ( `\s` ), retornos de carro ( `\r` ) o líneas siguientes ( `\n` ).
+>
+> - También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo, `*@contoso.com` ), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.
+>
+> - Puede pegar varias listas de remitentes o destinatarios separados por punto y coma ( `;` ). espacios ( `\s` ), retornos de carro ( `\r` ) o líneas siguientes ( `\n` ).
 
 ### <a name="time-range"></a>Intervalo de tiempo
 
@@ -134,7 +137,7 @@ Los tipos de informes disponibles son:
 
 - **Resumen**: disponible si el intervalo de tiempo es inferior a 10 días y no requiere opciones de filtrado adicionales. Los resultados estarán disponibles casi inmediatamente después de hacer clic en **Buscar**. El informe devuelve hasta 20000 resultados.
 
-- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al**identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \* @contoso. com). El informe de resumen mejorado devuelve hasta 50000 resultados. El informe extendido devuelve hasta 1000 resultados.
+- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al** identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \* @contoso. com). El informe de resumen mejorado devuelve hasta 50000 resultados. El informe extendido devuelve hasta 1000 resultados.
 
 **Notas**:
 
@@ -160,7 +163,7 @@ El informe de Resumen contiene la siguiente información:
 
 - **Fecha**: la fecha y hora en que el servicio recibió el mensaje con la zona horaria UTC configurada.
 
-- **Sender**: la dirección de correo electrónico del remitente (dominio de*alias* @ *domain*).
+- **Sender**: la dirección de correo electrónico del remitente (dominio de *alias* @ ).
 
 - **Recipient**: la dirección de correo electrónico del destinatario o los destinatarios. Para un mensaje enviado a varios destinatarios, hay una línea por destinatario. Si el destinatario es un grupo de distribución, un grupo de distribución dinámico o un grupo de seguridad habilitado para correo, el grupo será el primer destinatario y, a continuación, cada miembro del Grupo estará en una línea independiente.
 
@@ -174,7 +177,7 @@ Puede hacer clic en los encabezados de columna para ordenar los resultados por l
 
 Puede hacer clic en **filtrar resultados** para filtrar los resultados por una o más columnas.
 
-Puede exportar los resultados después de haber seleccionado una o más filas haciendo clic en **exportar resultados** y seleccionando **exportar todos los resultados**, **exportar resultados cargados**o **exportar seleccionados**.
+Puede exportar los resultados después de haber seleccionado una o más filas haciendo clic en **exportar resultados** y seleccionando **exportar todos los resultados**, **exportar resultados cargados** o **exportar seleccionados**.
 
 #### <a name="find-related-records-for-this-message"></a>Buscar registros relacionados para este mensaje
 
@@ -236,7 +239,7 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 - **origin_timestamp** <sup>*</sup> : fecha y hora en que el servicio recibió inicialmente el mensaje con la zona horaria UTC configurada.
 
-- **sender_address**: la dirección de correo electrónico del remitente (dominio de*alias* @ *domain*).
+- **sender_address**: la dirección de correo electrónico del remitente (dominio de *alias* @ ).
 
 - **Recipient_status**: el estado de la entrega del mensaje al destinatario. Si el mensaje se envió a varios destinatarios, se mostrarán todos los destinatarios y el estado correspondiente para cada uno, en el formato: \<*email address*\> ## \<*status*\> . Por ejemplo:
 
@@ -260,9 +263,9 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 - **connector_id**: el nombre del conector de origen o de destino. Para obtener más información acerca de los conectores de Exchange Online, vea [Configure mail Flow Using Connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority** <sup>*</sup> : indica si el mensaje se envió con prioridad **alta**, **baja**o **normal** .
+- **delivery_priority** <sup>*</sup> : indica si el mensaje se envió con prioridad **alta**, **baja** o **normal** .
 
-<sup>*</sup>Estas propiedades solo están disponibles en los informes de Resumen mejorados.
+<sup>*</sup> Estas propiedades solo están disponibles en los informes de Resumen mejorados.
 
 ### <a name="extended-reports"></a>Informes extendidos
 
@@ -332,7 +335,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 #### <a name="custom_data-values"></a>valores de custom_data
 
-**custom_data** `AGENTINFO` Varios agentes de Exchange Online usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
+ `AGENTINFO` Varios agentes de Exchange Online usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
 
 #### <a name="spam-filter-agent"></a>Agente de filtro de correo no deseado
 

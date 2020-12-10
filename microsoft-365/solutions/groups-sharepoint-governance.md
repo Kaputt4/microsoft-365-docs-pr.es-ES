@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre las interacciones de configuración entre los grupos de Microsoft 365 y SharePoint
-ms.openlocfilehash: e8d4189c2d945d5a6d2aa78bd7ea980a77360ce0
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a00e863fead8e74cf0f169471ebb36f9539ed103
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377562"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613495"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Interacciones de configuración entre los grupos de Microsoft 365 y SharePoint
 
@@ -30,7 +30,7 @@ Algunas configuraciones para los grupos de Microsoft 365 y SharePoint en Microso
 
 ## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Efectos de la configuración de SharePoint en grupos de 365 de Microsoft
 
-|Configuración de SharePoint|Description|Efecto en los grupos de 365 de Microsoft|Recomendación|
+|Configuración de SharePoint|Descripción|Efecto en los grupos de 365 de Microsoft|Recomendación|
 |:-----------------|:----------|:-----------------------------|:-------------|
 |Uso compartido externo de la organización y el sitio|Determina si se pueden compartir sitios, archivos y carpetas con personas de fuera de la organización.|Si la configuración de SharePoint y los grupos no coinciden, es posible que los invitados del grupo tengan bloqueado el acceso al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, Compruebe la configuración de los grupos y de los sitios de SharePoint para los sitios de grupo conectados a un grupo.<br><br>Consulte [colaborar con invitados en un sitio](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site).|
 |Permitir/bloquear dominio|Permite o impide que el contenido se comparta con los dominios especificados.|Los grupos no reconocen las listas permitir o bloquear de SharePoint. Los usuarios de los dominios no permitidos en SharePoint podrían obtener acceso a SharePoint a través de un grupo.|Administre las listas de permitidos y bloqueados de dominio conjuntamente para Azure AD y SharePoint. Crear un proceso de gobierno para toda la organización para permitir y bloquear dominios.<br><br>Ver la [configuración de dominio de SharePoint](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) y la configuración de dominio de [Azure ad](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
@@ -40,7 +40,7 @@ Algunas configuraciones para los grupos de Microsoft 365 y SharePoint en Microso
 
 ## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>Efectos de la configuración de grupos de 365 de Microsoft en SharePoint
 
-|Configuración de Microsoft 365 Groups|Description|Efecto en SharePoint|Recomendación|
+|Configuración de Microsoft 365 Groups|Descripción|Efecto en SharePoint|Recomendación|
 |:---------------------------|:----------|:-------------------|:-------------|
 |Directivas de nomenclatura|Especifica los prefijos y los sufijos de nombre de grupo, y las palabras bloqueadas para la creación de grupos|Las directivas se aplican a los usuarios que crean sitios de grupo conectados a un grupo, pero no a sitios o sitios de comunicación con otras plantillas.|Cree una guía de nomenclatura separada para los sitios de comunicación si es necesario.|
 |Acceso de invitado de grupo|Especifica si las personas de fuera de la organización se pueden agregar a los grupos.|Si la configuración de SharePoint y los grupos no coinciden, es posible que los invitados del grupo tengan bloqueado el acceso al sitio o que el acceso externo esté disponible en el sitio, pero no en el grupo.|Al cambiar la configuración de uso compartido, Compruebe la configuración de los grupos y de los sitios de SharePoint para los sitios de grupo conectados a un grupo.<br><br>Consulte [colaborar con invitados en un sitio](https://docs.microsoft.com/microsoft-365/solutions/collaborate-in-site)|
@@ -48,6 +48,10 @@ Algunas configuraciones para los grupos de Microsoft 365 y SharePoint en Microso
 |Directiva de expiración de grupos|Especifica un período de tiempo tras el cual los grupos que no se usan de forma activa se eliminarán automáticamente.|Cuando se elimina el grupo, también se elimina el sitio de SharePoint asociado. Se conserva el contenido protegido por las directivas de retención.|Use directivas de expiración para evitar la proliferación de grupos y sitios sin usar.|
 
 ## <a name="related-topics"></a>Temas relacionados
+
+[Paso a paso de la planeación del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
 [Colaborar con personas fuera de la organización](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 

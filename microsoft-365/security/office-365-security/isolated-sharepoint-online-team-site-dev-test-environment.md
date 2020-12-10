@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno de pruebas y desarrollo de Microsoft 365.'
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199666"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616493"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -35,9 +35,7 @@ Los sitios de grupo de SharePoint Online en Microsoft 365 son ubicaciones de col
 El acceso a los sitios de grupo de SharePoint Online y lo que los usuarios pueden hacer está controlado por grupos y niveles de permisos de SharePoint. De forma predeterminada, los sitios de SharePoint Online cuentan con tres niveles de acceso:
 
 - **Miembros**, que pueden ver, crear y modificar los recursos del sitio.
-
 - **Propietarios**, que tienen un control total sobre el sitio y pueden cambiar los permisos.
-
 - **Visitantes**, que únicamente pueden ver los recursos del sitio.
 
 En este artículo, se indican los pasos que se deben seguir para configurar un sitio de grupo de SharePoint Online aislado para un proyecto de investigación secreto, que llamaremos ProyectoX. Los requisitos de acceso son los siguientes:
@@ -135,15 +133,15 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 Obtener
 
-- El grupo de acceso de miembros del ProyectoX contiene las cuentas de usuario del investigador principal y el responsable del investigador
+- El grupo de acceso de ProjectX-Members contiene las cuentas de usuario de responsable de diseño e investigador
 
-- El grupo de acceso de administradores del ProyectoX contiene la cuenta de administrador global para su suscripción de prueba
+- El grupo de acceso de ProjectX-Admins contiene la cuenta de administrador global de la suscripción de prueba.
 
-- El grupo de acceso de visores del ProyectoX contiene la cuenta de usuario del Vicepresidente de desarrollo
+- El grupo de acceso ProjectX-Viewers contiene la cuenta de usuario del Vicepresidente de desarrollo.
 
 En la figura 1 se muestran los grupos de acceso y su pertenencia.
 
-**Figura 1**
+**Figura 1**:
 
 ![Los grupos de Microsoft 365 y su pertenencia a un sitio de grupo de SharePoint Online aislado](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,7 +149,7 @@ En la figura 1 se muestran los grupos de acceso y su pertenencia.
 
 Para crear un sitio de grupo de SharePoint Online para ProyectoX, siga estos pasos:
 
-1. Con un explorador en el equipo local (configuración ligera) o en cliente1 (configuración de empresa simulada), inicie sesión en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) con su cuenta de administrador global.
+1. Con un explorador en el equipo local (configuración ligera) o en cliente1 (configuración de empresa simulada), inicie sesión en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ) con su cuenta de administrador global.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -197,11 +195,11 @@ Para crear un sitio de grupo de SharePoint Online para ProyectoX, siga estos pas
 
 A continuación se indican los resultados de la configuración de permisos:
 
-- El grupo de SharePoint de miembros del ProyectoX contiene solo el grupo de acceso de los miembros del ProyectoX (que solo contiene las cuentas de usuario del diseñador inicial y el responsable del investigador) y el grupo del ProyectoX (que solo contiene la cuenta de usuario de administrador global).
+- El grupo de SharePoint de miembros del ProyectoX contiene solo el grupo de acceso ProjectX-Members (que solo contiene las cuentas de usuario del diseñador inicial y el responsable del investigador) y el grupo del ProyectoX (que solo contiene la cuenta de usuario de administrador global).
 
-- El grupo de SharePoint de propietarios del ProyectoX contiene solo el grupo de acceso de administradores del ProyectoX (que solo contiene la cuenta de usuario de administrador global).
+- El grupo de SharePoint de propietarios del ProyectoX contiene solo el grupo de acceso ProjectX-Admins (que solo contiene la cuenta de usuario de administrador global).
 
-- El grupo de SharePoint visitantes del ProyectoX contiene solo el grupo de acceso de los visores del ProyectoX (que solo contiene la cuenta de usuario del Vicepresidente de desarrollo).
+- El grupo de SharePoint visitantes del ProyectoX contiene solo el grupo de acceso ProjectX-Viewers (que solo contiene la cuenta de usuario del Vicepresidente de desarrollo).
 
 - Los miembros no pueden modificar los permisos del nivel del sitio (solo los miembros del grupo “Administradores del ProyectoX” pueden realizar esta acción).
 
@@ -219,7 +217,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 2. Haga clic en el nombre de su administrador global y, a continuación, en **Cerrar sesión**.
 
-3. Inicie sesión en el centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) utilizando el nombre de cuenta del responsable de diseño y su contraseña.
+3. Inicie sesión en el centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ) utilizando el nombre de cuenta del responsable de diseño y su contraseña.
 
 4. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -249,7 +247,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del Vicepresidente de desarrollo:
 
-1. Inicie sesión en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) con el nombre de cuenta del Vicepresidente de desarrollo y su contraseña.
+1. Inicie sesión en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ) con el nombre de cuenta del Vicepresidente de desarrollo y su contraseña.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -265,7 +263,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del Vicepres
 
 Ahora vamos a mostrar cómo acceder con una cuenta de usuario que no tiene permisos:
 
-1. Inicie sesión en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) con el nombre de cuenta usuario 3 y su contraseña.
+1. Inicie sesión en el centro de administración de 365 de Microsoft ( <https://admin.microsoft.com> ) con el nombre de cuenta usuario 3 y su contraseña.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 

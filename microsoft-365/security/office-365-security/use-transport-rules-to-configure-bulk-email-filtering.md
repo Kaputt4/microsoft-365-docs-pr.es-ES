@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo (reglas de transporte) para identificar y filtrar correo masivo (correo gris) en Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600314"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615641"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usar reglas de flujo de correo para filtrar correo electrónico masivo en EOP
 
@@ -39,7 +39,7 @@ En este tema se explica cómo crear estas reglas de flujo de correo en el centro
 - Debe tener permisos asignados para poder realizar estos procedimientos:
 
   - En Exchange Online, consulte el entrada "flujo de correo" en [Feature Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
-  
+
   - En EOP independiente, necesita el rol reglas de transporte, que se asigna a los roles OrganizationManagement, ComplianceManagement y RecordsManagement de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Para abrir el EAC en un EOP independiente, consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
@@ -149,7 +149,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, vea
 
 Para comprobar que ha configurado reglas de flujo de correo para filtrar el correo masivo, siga estos pasos:
 
-- En el EAC, vaya a reglas de **flujo de correo** \> **Rules** \> Seleccione la regla \> haga clic en **Editar** ![ icono ](../../media/ITPro-EAC-EditIcon.png) de edición y Compruebe la configuración.
+- En el EAC, vaya a reglas de **flujo de correo** \>  \> Seleccione la regla \> haga clic en **Editar** ![ icono ](../../media/ITPro-EAC-EditIcon.png) de edición y Compruebe la configuración.
 
 - En PowerShell, reemplace \<Rule Name\> por el nombre de la regla y ejecute el siguiente comando para comprobar la configuración:
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Seguridad en Office 365, de EOP a defender para Office 365 planes 1 y 2, configuraciones de seguridad estándar frente a estrictas y mucho más. Comprenda lo que tiene y cómo proteger sus propiedades.
-ms.openlocfilehash: 008488149a403fdafef9de0b0f64a9a43616debe
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357760"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616253"
 ---
 # <a name="office-365-security-overview"></a>Introducción a la seguridad de Office 365
 
@@ -124,16 +124,16 @@ Esta referencia rápida le ayudará a comprender las funcionalidades que se incl
 
 |Defender para Office 365 plan 1|Defender para Office 365 plan 2|
 |---|---|
-|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](atp-safe-attachments.md)</li><li>[Vínculos seguros](atp-safe-links.md)</li><li>[ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protección contra suplantación de identidad (phishing) en defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades de defender para Office 365 plan 1<br/>--- además ---<br/>Funcionalidades de automatización, investigación, corrección y educación:</li><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
+|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](atp-safe-attachments.md)</li><li>[Vínculos seguros](atp-safe-links.md)</li><li>[ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protección contra suplantación de identidad (phishing) en defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades de defender para Office 365 plan 1 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft defender para Office 365 plan 2 se incluye en Office 365 E5, Office 365 A5 y Microsoft 365 E5.
 
-- El Plan 1 de Microsoft Defender para Office 365 está incluido en Microsoft 365 Empresa Premium.
+- Microsoft defender para Office 365 el plan 1 se incluye en Microsoft 365 empresa Premium.
 
 - Microsoft defender para Office 365 plan 1 y defender para Office 365 plan 2 están disponibles como complementos para determinadas suscripciones. Para obtener más información, he aquí otra disponibilidad de la característica de vínculos [en los planes de Microsoft defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- La característica [Documentos seguros](safe-docs.md) solo está disponible para los usuarios con las licencias de Microsoft 365 E5 o Seguridad de Microsoft 365 E5 (no se incluye en los planes de Microsoft Defender para Office 365).
+- La característica de [documentos seguros](safe-docs.md) solo está disponible para los usuarios con las licencias de seguridad Microsoft 365 E5 o Microsoft 365 E5 (no incluidas en los planes de Microsoft defender para Office 365).
 
 - Si su suscripción actual no incluye Microsoft defender para Office 365 y lo desea, [póngase en contacto con sales para iniciar una prueba](https://go.microsoft.com/fwlink/p/?LinkId=518644)y descubra cómo Microsoft defender para Office 365 puede funcionar en su organización.
 

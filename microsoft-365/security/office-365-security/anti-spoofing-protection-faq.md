@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra la suplantación de identidad en Exchange Online Protection (EOP).
-ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f567c7bc0c6a6efed7621cec86c5db4e616290b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844397"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616745"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Preguntas frecuentes sobre la protección contra la suplantación de identidad
 
@@ -71,12 +71,12 @@ Lamentablemente, no. Los atacantes se adaptarán a usar otras técnicas (por eje
 
 Casi todos los servicios de correo electrónico grandes implementan las comprobaciones tradicionales de SPF, DKIM y DMARC. Algunos servicios tienen otras comprobaciones más estrictas, pero pocos en lo que se refieren a EOP para bloquear el correo no autenticado y tratarlos como mensajes falsificados. Sin embargo, la industria está cada vez más consciente de los problemas con el correo no autenticado, especialmente debido al problema de la suplantación de identidad.
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>¿Necesito habilitar la configuración avanzada de filtro de correo no deseado "registro SPF: error grave" ( _MarkAsSpamSpfRecordHardFail_ ) si habilito la suplantación de identidad (phishing)?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>¿Necesito habilitar la configuración avanzada de filtro de correo no deseado "registro SPF: error grave" (_MarkAsSpamSpfRecordHardFail_) si habilito la suplantación de identidad (phishing)?
 
-No. Esta configuración de ASF ya no es necesaria. La protección contra la suplantación de identidad considera el disco duro SPF produce un error y un conjunto de criterios mucho más amplio. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** ( _MarkAsSpamSpfRecordHardFail_ ), es probable que reciba más falsos positivos.
+No. Esta configuración de ASF ya no es necesaria. La protección contra la suplantación de identidad considera el disco duro SPF produce un error y un conjunto de criterios mucho más amplio. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_), es probable que reciba más falsos positivos.
 
 Le recomendamos que deshabilite esta característica ya que proporciona casi ninguna ventaja para detectar correo no deseado o de suplantación de identidad (phishing) y, en cambio, generará principalmente falsos positivos. Para obtener más información, vea [configuración del filtro de correo no deseado avanzado (ASF) en EOP](advanced-spam-filtering-asf-options.md).
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>¿Ayuda el esquema de reescritura de remitentes a corregir el correo electrónico reenviado?
 
-SRS solo soluciona parcialmente el problema del correo electrónico reenviado. Al volver a escribir el **correo SMTP desde** , SRS puede asegurarse de que el mensaje reenviado pasa SPF en el siguiente destino. Sin embargo, como la suplantación de identidad se basa en la dirección **from** en combinación con el dominio **de firma de correo** electrónico o de firma DKIM (u otras señales), no es suficiente evitar que el correo electrónico reenviado por SRS se marque como falso.
+SRS solo soluciona parcialmente el problema del correo electrónico reenviado. Al volver a escribir el **correo SMTP desde**, SRS puede asegurarse de que el mensaje reenviado pasa SPF en el siguiente destino. Sin embargo, como la suplantación de identidad se basa en la dirección **from** en combinación con el dominio **de firma de correo** electrónico o de firma DKIM (u otras señales), no es suficiente evitar que el correo electrónico reenviado por SRS se marque como falso.

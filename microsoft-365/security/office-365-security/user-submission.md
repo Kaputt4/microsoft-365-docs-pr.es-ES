@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130904"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615629"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuario
 
@@ -72,7 +72,7 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Usar el centro de seguridad & cumplimiento para configurar el buzón de envíos de usuarios
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **envíos de usuarios** de la Directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **envíos de usuarios** de la Directiva de administración de amenazas.
 
 2. En la página **envíos de usuarios** que aparece, seleccione una de las siguientes opciones:
 
@@ -99,7 +99,7 @@ Una vez que haya comprobado que el buzón cumple todos los requisitos previos ap
         - **Buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador los reenvíe por sí mismos.
 
         > [!NOTE]
-        > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas. 
+        > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas.
 
       Cuando haya terminado, haga clic en **confirmar**.
 
