@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130834"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616721"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -84,13 +84,13 @@ Microsoft distingue entre dos tipos de mensajes falsificados:
 - **Suplantación de identidad en la organización**: también conocida como _suplantación de identidad propia_. Por ejemplo:
 
   - El remitente y el destinatario están en el mismo dominio:
-    > De: jose@contoso.com <br/> Para: carla@contoso.com
+    > De: jose@contoso.com <br> Para: carla@contoso.com
 
   - El remitente y el destinatario están en subdominios del mismo dominio:
-    > De: laura@marketing.fabrikam.com <br/> Para: julia@engineering.fabrikam.com
+    > De: laura@marketing.fabrikam.com <br> Para: julia@engineering.fabrikam.com
 
   - El remitente y el destinatario están en dominios diferentes que pertenecen a la misma organización (es decir, los dos dominios están configurados como [dominios aceptados](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) en la misma organización):
-    > De: remitente @ microsoft.com <br/> Para: destinatario @ bing.com
+    > De: remitente @ microsoft.com <br> Para: destinatario @ bing.com
 
     Los espacios se usan en las direcciones de correo electrónico para evitar la recolección de bots de correo no deseado.
 
@@ -105,7 +105,7 @@ Microsoft distingue entre dos tipos de mensajes falsificados:
   - SFTY es el nivel de seguridad del mensaje. 9 indica suplantación de identidad (phishing), .11 indica suplantación dentro de la organización.
 
 - **Suplantación entre dominios**: los dominios del remitente y el destinatario son distintos, y no tienen ninguna relación entre sí (también conocidos como dominios externos). Por ejemplo:
-    > De: jose@contoso.com <br/> Para: carla@tailspintoys.com
+    > De: jose@contoso.com <br> Para: carla@tailspintoys.com
 
   Los mensajes que producen un error de [autenticación compuesta](email-validation-and-authentication.md#composite-authentication) debido a la suplantación de identidad entre dominios contienen los siguientes valores en los encabezados:
 
@@ -133,11 +133,11 @@ Se sabe que las listas de correo (también conocidas como listas de discusión) 
 
 Por ejemplo, Gabriela Laureano (glaureano@contoso.com) está interesada en la observación de aves, se une a la lista de correo observadoresdeaves@fabrikam.com y envía el siguiente mensaje a la lista:.
 
-> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br/> **Asunto:** Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?
 
 El servidor de la lista de distribución de correo recibe el mensaje, modifica su contenido y lo reproduce para los miembros de la lista. El mensaje reproducido tiene la misma dirección De: (glaureano@contoso.com), pero se han agregado una etiqueta en la línea de asunto y un pie de página en la parte inferior del mensaje. Este tipo de modificación es común en las listas de distribución de correo y puede producir falsos positivos de suplantación de identidad.
 
-> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br/> **Asunto:** [OBSERVADORESDEAVES] Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier? <p> Este mensaje se envió a la lista de discusión de observadores de aves. Puede cancelar la suscripción en cualquier momento.
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br> **Asunto:** [OBSERVADORESDEAVES] Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <p> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier? <p> Este mensaje se envió a la lista de discusión de observadores de aves. Puede cancelar la suscripción en cualquier momento.
 
 Para ayudar a que los mensajes de la lista de distribución de correo pasen las comprobaciones contra la suplantación, siga los pasos siguientes en función de si controla la lista de distribución de correo:
 
