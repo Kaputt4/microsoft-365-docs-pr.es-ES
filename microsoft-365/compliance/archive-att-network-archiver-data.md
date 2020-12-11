@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de teleservicio para importar y archivar datos de SMS y MMS desde la red móvil de&T. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: ba728a690db4d4c31158ad68fc853c29218226cc
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408978"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620126"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configurar un conector para archivar en&T SMS/MMS Data
 
@@ -53,8 +53,6 @@ Algunos de los pasos de implementación necesarios para archivar en&T datos de r
 
 - Los empleados deben tener teléfonos móviles que sean responsables de la empresa y de la empresa en la red móvil de&T. Los mensajes de archivado en Microsoft 365 no están disponibles para los dispositivos de propiedad del empleado o "traer sus propios dispositivos (BYOD).
 
-- La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de buzones de la organización. Tendrá que proporcionar este consentimiento cuando cree el conector. Para dar su consentimiento a esta solicitud, vaya a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), inicie sesión con las credenciales de Microsoft 365 global admin y, a continuación, acepte la solicitud. Debe completar este paso para poder crear correctamente un conector de red en&T.
-
 - El usuario que crea un conector de red AT&T debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Esto es necesario para agregar conectores en la página **conectores de datos** en el centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
 ## <a name="create-a-att-network-connector"></a>Crear un conector de red AT&T
@@ -77,13 +75,9 @@ Una vez que haya completado los requisitos previos descritos en la sección ante
 
 6. En la página **asignación de usuarios** , habilite la asignación automática de usuarios. Para habilitar la asignación personalizada, cargue un archivo CSV que contenga la información de asignación de usuarios y, a continuación, haga clic en **siguiente**.
 
-7. Proporcione el consentimiento del administrador y haga clic en **siguiente**.
+7. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 
-   Para proporcionar el consentimiento del administrador, debe haber iniciado sesión con las credenciales de un administrador global de Office 365 y, a continuación, aceptar la solicitud de consentimiento. Si no ha iniciado sesión como administrador global, puede ir a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) e iniciar sesión con las credenciales de administrador global para aceptar la solicitud. 
-
-8. Revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
-
-9. Vaya a la pestaña **conectores** en la página **conectores de datos** en el centro de cumplimiento para ver el progreso del proceso de importación del nuevo conector.
+8. Vaya a la pestaña **conectores** en la página **conectores de datos** en el centro de cumplimiento para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

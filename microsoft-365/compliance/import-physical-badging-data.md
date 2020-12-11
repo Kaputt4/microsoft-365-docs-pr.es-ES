@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos del sistema de distintivos físico de la organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos de Insider para ayudarle a detectar el acceso a sus edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 7e745b42d0df79f5c39f9fa02cb1b63f164ec2a5
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816653"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620136"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos de distintivos (versión preliminar)
 
@@ -39,8 +39,6 @@ La configuración de un conector de distintivos físico consta de las siguientes
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de la organización. Para dar su consentimiento a esta solicitud, vaya a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), inicie sesión con las credenciales de un administrador global de Microsoft 365 y, a continuación, acepte la solicitud. Debe completar este paso para poder crear correctamente el conector de distintivos físico en el paso 3.
-
 - El usuario que crea el conector de distintivos físico en el paso 3 debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
 - Debe determinar cómo recuperar o exportar los datos del sistema de distintivos físico de la organización (cada día) y crear un archivo JSON que se describe en el paso 2. El script que ejecutó en el paso 4 hará que los datos del archivo JSON se inserten en el punto de conexión de la API.
@@ -51,11 +49,11 @@ La configuración de un conector de distintivos físico consta de las siguientes
 
 El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector físico de distintivos que ha creado en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique la solicitud de inserción de la carga útil de JSON que contiene datos de distintivos físicos. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente* )
+- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente*)
 
-- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente* )
+- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente*)
 
-- Identificador de inquilino (también denominado *identificador de directorio* )
+- Identificador de inquilino (también denominado *identificador de directorio*)
 
 Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, vea [registrar una aplicación con la plataforma de identidad de Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -71,7 +69,7 @@ El archivo JSON debe cumplir con la definición de esquema que necesita el conec
 |AssetId|IDENTIFICADOR de referencia del activo físico o del punto de acceso físico.| Cadena alfanumérica|
 |AssetName|El nombre descriptivo del activo físico o del punto de acceso físico.|Cadena alfanumérica|
 |EventTime|Marca de tiempo de acceso.|Fecha y hora en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`| String|
+|AccessStatus|Valor de `Success` o `Failed`| Cadena|
 |||
 
 A continuación, se muestra un ejemplo de un archivo JSON que se ajusta al esquema necesario:
@@ -137,11 +135,11 @@ El siguiente paso es crear un conector de distintivos físico en el centro de cu
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **conectores de datos** , en **distintivos físicos** , haga clic en **Ver** .
+2. En la página **conectores de datos** , en **distintivos físicos**, haga clic en **Ver**.
 
-3. En la página **distintivos física** , haga clic en **Agregar conector** .
+3. En la página **distintivos física** , haga clic en **Agregar conector**.
 
-4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente** :
+4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente**:
   
    1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que ha creado en el paso 1.
   
@@ -155,7 +153,7 @@ El siguiente paso es crear un conector de distintivos físico en el centro de cu
 
    La página de estado también contiene un vínculo a la secuencia de comandos. Consulte este script para saber cómo exponer el archivo JSON en el punto de conexión de la API.
 
-7. Haga clic en **Listo** .
+7. Haga clic en **Listo**.
 
    El nuevo conector se muestra en la lista de la ficha **conectores** .
 
@@ -222,7 +220,7 @@ Después de crear el conector de distintivos físico y de insertar los datos de 
 
    ![Página de control flotante de estado para conector de distintivos físico](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. En **última importación** , haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft.
+3. En **última importación**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft.
 
    ![El archivo de registro del conector de distintivos físico muestra las filas de número del archivo JSON que se cargó](..\media\PhysicalBadgingConnectorLogFile.png)
 
@@ -236,15 +234,15 @@ Para asegurarse de que los datos de distintivos físicos más recientes de su or
 
 Puede usar la aplicación programador de tareas de Windows para ejecutar el script de forma automática cada día.
 
-1. En el equipo local, haga clic en el botón **Inicio** de Windows y, a continuación, escriba **programador de tareas** .
+1. En el equipo local, haga clic en el botón **Inicio** de Windows y, a continuación, escriba **programador de tareas**.
 
 2. Haga clic en la aplicación **programador de tareas** para abrirla.
 
-3. En la sección **acciones** , haga clic en **crear tarea** .
+3. En la sección **acciones** , haga clic en **crear tarea**.
 
-4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, el **script de conector de distintivos físico** . También puede Agregar una descripción opcional.
+4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, el **script de conector de distintivos físico**. También puede Agregar una descripción opcional.
 
-5. En **Opciones de seguridad** , haga lo siguiente:
+5. En **Opciones de seguridad**, haga lo siguiente:
 
    1. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
 
@@ -252,11 +250,11 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
 6. Seleccione la pestaña **desencadenadores** , haga clic en **nuevo** y, a continuación, realice las siguientes acciones:
 
-   1. En **configuración** , seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
+   1. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
 
-   2. En **Configuración avanzada** , asegúrese de que esté activada la casilla de verificación **habilitado** .
+   2. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
 
-   3. Haga clic en **Aceptar** .
+   3. Haga clic en **Aceptar**.
 
 7. Seleccione la pestaña **acciones** , haga clic en **nueva** y, a continuación, realice las siguientes acciones:
 
@@ -264,7 +262,7 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
    1. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
 
-   2. En el cuadro **programa/script** , haga clic en **examinar** , vaya a la siguiente ubicación y selecciónela para mostrar la ruta de acceso en el cuadro: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
+   2. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para mostrar la ruta de acceso en el cuadro: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
    3. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9"-appId "c12823b7-b55a-4989-FABA-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 

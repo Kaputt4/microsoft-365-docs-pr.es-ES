@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 7bbd4a2f4a5b9c35695b5e0630020a0f39224324
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 5e8675c1cc6e1df4c22e55648e1655798bae5e5b
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624782"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -67,7 +67,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
 
 2. Inicie sesión con su cuenta de administrador global.
     
-3. En el centro de seguridad & cumplimiento, vaya al archivo de **gobierno de información** \> **Archive**.
+3. En el centro de seguridad & cumplimiento, vaya al archivo de **gobierno de información** \> .
 
     Se muestra una lista de los buzones de correo de la organización y si el buzón de archivo correspondiente está habilitado o deshabilitado.
 
@@ -76,7 +76,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
     > [!TIP]
     > En este paso se presupone que no hay buzones de archivo habilitados. Si tiene buzones con el archivo habilitado, mantenga presionada la tecla **Ctrl** y haga clic en cada buzón de correo que tenga un buzón de archivo deshabilitado. O puede hacer clic en el encabezado de la columna **buzón de archivo** para ordenar las filas en función de si el buzón de archivo está habilitado o deshabilitado para facilitar la selección de buzones.
   
-5. En el panel de detalles, en **edición en masa** , haga clic en **Habilitar**.
+5. En el panel de detalles, en **edición en masa**, haga clic en **Habilitar**.
 
     Se muestra una advertencia que indica que los elementos que tienen más de dos años se moverán al nuevo buzón de archivo. Esto se debe a que la Directiva de retención predeterminada asignada a un nuevo buzón de usuario cuando se crea tiene una etiqueta de directiva de archivado predeterminada con una antigüedad de retención de 2 años. La etiqueta de directiva predeterminada de archivo personalizado que creará en el paso 2 tiene una antigüedad de retención de 3 años. Esto significa que los elementos de 3 años o más se moverán al buzón de archivo.
 
@@ -102,7 +102,7 @@ Para crear nuevas etiquetas de retención, debe usar el centro de administració
   
 1. Vaya a [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) e inicie sesión con sus credenciales.
   
-2. En el EAC, vaya a **Compliance management**  >  **etiquetas de retención** de administración de cumplimiento.
+2. En el EAC, vaya a   >  **etiquetas de retención** de administración de cumplimiento.
 
     Se muestra una lista de las etiquetas de retención de la organización.
 
@@ -178,13 +178,13 @@ La última etiqueta de retención que creará es una etiqueta de directiva de re
 
 Después de crear las etiquetas de retención personalizadas, el siguiente paso consiste en crear una nueva Directiva de retención y agregar las etiquetas de retención. Agregará las tres etiquetas de retención personalizadas que creó en el paso 2 y las etiquetas integradas mencionadas en la primera sección. En el paso 4, asignará esta nueva Directiva de retención a los buzones de usuario.
   
-1. En el EAC, vaya a directivas de retención de **Administración de cumplimiento**  >  **Retention policies**.
+1. En el EAC, vaya a directivas de retención de **Administración de cumplimiento**  >  .
 
 2. En la página **directivas de retención** , haga clic en **nuevo** ![ icono nuevo ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
 
 3. En el cuadro **nombre** , escriba un nombre para la nueva Directiva de retención; por ejemplo, **Directiva de archivo y eliminación de Alpine House**.
 
-4. En **etiquetas de retención** , haga clic en **Agregar** ![ nuevo icono ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
+4. En **etiquetas de retención**, haga clic en **Agregar** ![ nuevo icono ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
 
     Se muestra una lista de las etiquetas de retención de la organización. Nota se muestran las etiquetas personalizadas que creó en el paso 2.
 
@@ -207,15 +207,15 @@ Después de crear las etiquetas de retención personalizadas, el siguiente paso 
 
 Cuando se crea un nuevo buzón de correo, se le asigna de forma predeterminada una directiva de retención denominada Directiva de MRM predeterminada. En este paso, reemplazará esta directiva de retención (porque un buzón solo puede tener asignada una directiva de retención) asignando la nueva Directiva de retención que ha creado en el paso 3 a los buzones de usuario de la organización. En este paso se supone que asignará la nueva Directiva a todos los buzones de la organización.
   
-1. En el EAC, vaya a **Recipients**  >  **buzones de correo** de destinatarios.
+1. En el EAC, vaya a   >  **buzones de correo** de destinatarios.
 
     Se muestra una lista de todos los buzones de usuario de la organización.
 
 2. Para seleccionar todos los buzones, haga clic en el primero de la lista, mantenga presionada la tecla **MAYÚS** y, a continuación, haga clic en el último de la lista. 
 
-3. En el panel de detalles de la parte derecha del EAC, en **edición en masa** , haga clic en **más opciones**.
+3. En el panel de detalles de la parte derecha del EAC, en **edición en masa**, haga clic en **más opciones**.
 
-4. En **Directiva de retención** , haga clic en **Actualizar**.
+4. En **Directiva de retención**, haga clic en **Actualizar**.
 
 5. En la página **Directiva de retención de asignación masiva** , en la lista desplegable **seleccionar Directiva** de retención, seleccione la Directiva de retención que ha creado en el paso 3; por ejemplo, **Directiva de archivo y retención de Alpine House**.
 
@@ -252,7 +252,7 @@ Estos son los pasos para conectarse a PowerShell de Exchange Online y, a continu
 Y eso es todo. Ha configurado una directiva de archivo y eliminación para la organización de Alpine House.
 
 > [!NOTE]
-> Como se mencionó anteriormente, el Asistente para carpeta administrada procesa los buzones al menos una vez cada 7 días. Por lo tanto, es posible que el Asistente de carpetas administradas pueda procesar un buzón con más frecuencia. Además, los administradores no pueden predecir la próxima vez que el Asistente para carpetas administradas procesa un buzón, que es una de las razones por las que quizás desee ejecutarlo manualmente. Sin embargo, si desea evitar temporalmente que el Asistente para carpeta administrada aplique la nueva configuración de retención a un buzón de correo, puede ejecutar el `Set-Mailbox -ElcProcessingDisabled $true` comando para deshabilitar temporalmente el Asistente para carpeta administrada del procesamiento de un buzón. Para volver a habilitar el Asistente para carpeta administrada para un buzón, ejecute el `Set-Mailbox -ElcProcessingDisabled $false` comando.
+> Como se mencionó anteriormente, el Asistente para carpeta administrada procesa los buzones al menos una vez cada 7 días. Por lo tanto, es posible que el Asistente de carpetas administradas pueda procesar un buzón con más frecuencia. Además, los administradores no pueden predecir la próxima vez que el Asistente para carpetas administradas procesa un buzón, que es una de las razones por las que quizás desee ejecutarlo manualmente. Sin embargo, si desea evitar temporalmente que el Asistente para carpeta administrada aplique la nueva configuración de retención a un buzón de correo, puede ejecutar el `Set-Mailbox -ElcProcessingDisabled $true` comando para deshabilitar temporalmente el Asistente para carpeta administrada del procesamiento de un buzón. Para volver a habilitar el Asistente para carpeta administrada para un buzón, ejecute el `Set-Mailbox -ElcProcessingDisabled $false` comando. Por último, si un usuario de buzón tiene una cuenta deshabilitada, no se procesará la acción mover elementos a archivo para ese buzón.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Opcional Paso 6: convertir la nueva Directiva de retención en la opción predeterminada para su organización
 
@@ -268,7 +268,7 @@ En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones e
 
     Anote el plan de buzón que se establece como predeterminado.
 
-3. Ejecute el siguiente comando para asignar la nueva Directiva de retención que creó en el paso 3 (por ejemplo, la **Directiva de archivo y retención de Alpine House** ) al plan de buzón de correo predeterminado. En este ejemplo se supone que el nombre del plan de buzón predeterminado es **ExchangeOnlineEnterprise**.
+3. Ejecute el siguiente comando para asignar la nueva Directiva de retención que creó en el paso 3 (por ejemplo, la **Directiva de archivo y retención de Alpine House**) al plan de buzón de correo predeterminado. En este ejemplo se supone que el nombre del plan de buzón predeterminado es **ExchangeOnlineEnterprise**.
 
     ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"

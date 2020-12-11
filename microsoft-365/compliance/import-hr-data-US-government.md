@@ -15,20 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 28f4c77ec626e2035451ec6e7c9562c5bf20f101
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 80998422eba32fe7f9118166f76a61d2d4bd8894
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816845"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619926"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en el gobierno de Estados Unidos
 
 Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar los datos de recursos humanos (HR) a la organización de US Government. Los datos relacionados con recursos humanos incluyen la fecha en que un empleado envió su retirada y la fecha del último día del empleado. Estos datos de recursos humanos pueden usarse en las soluciones de protección de la información de Microsoft, como la [solución de administración de riesgos de Insider](insider-risk-management.md), para ayudar a proteger su organización de la actividad malintencionada o del robo de datos dentro de la organización. La configuración de un conector de recursos humanos consiste en la creación de una aplicación en Azure Active Directory que se usa para la autenticación por conector, la creación de archivos de asignación CSV que contienen los datos de recursos humanos, la creación de un conector de datos en el centro de cumplimiento y la ejecución de un script (en forma de base programada) que recopila los datos de recursos humanos del archivo A continuación, la herramienta de administración de riesgos de Insider usa el conector de datos para tener acceso a los datos de recursos humanos que se importaron a la organización de Microsoft 365 US Government.
 
 ## <a name="before-you-begin"></a>Antes de empezar
-
-- La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de la organización. Para dar su consentimiento a esta solicitud, vaya a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), inicie sesión con las credenciales de un administrador global de Microsoft 365 y, a continuación, acepte la solicitud. Debe completar este paso para poder crear correctamente el conector de recursos humanos en el paso 3.
 
 - El usuario que crea el conector de recursos humanos en el paso 3 debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
@@ -40,11 +38,11 @@ Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 
 
 El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RRHH que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RRHH cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que ejecutó en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente* )
+- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente*)
 
-- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente* )
+- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente*)
 
-- Identificador de inquilino (también denominado *identificador de directorio* )
+- Identificador de inquilino (también denominado *identificador de directorio*)
 
 Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, vea [registrar una aplicación con la plataforma de identidad de Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
@@ -77,17 +75,17 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
-2. En la página **conectores de datos** en **HR** , haga clic en **Ver** .
+2. En la página **conectores de datos** en **HR**, haga clic en **Ver**.
 
-3. En la página **RRHH** , haga clic en **Agregar conector** .
+3. En la página **RRHH** , haga clic en **Agregar conector**.
 
-4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente** :
+4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente**:
 
    1. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que ha creado en el paso 1.
 
    1. Escriba un nombre para el conector de recursos humanos.
 
-5. En la página **asignación de archivos** , escriba los nombres de los tres encabezados de columna (también denominados *parámetros* ) del archivo CSV que creó en el paso 2 en cada uno de los cuadros correspondientes. Los nombres no distinguen mayúsculas de minúsculas. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de los parámetros en el archivo CSV. Por ejemplo, en la siguiente captura de pantalla se muestran los nombres de parámetro del ejemplo del archivo CSV de ejemplo que se muestra en el paso 2.
+5. En la página **asignación de archivos** , escriba los nombres de los tres encabezados de columna (también denominados *parámetros*) del archivo CSV que creó en el paso 2 en cada uno de los cuadros correspondientes. Los nombres no distinguen mayúsculas de minúsculas. Como se ha explicado anteriormente, los nombres que escriba en estos cuadros deben coincidir con los nombres de los parámetros en el archivo CSV. Por ejemplo, en la siguiente captura de pantalla se muestran los nombres de parámetro del ejemplo del archivo CSV de ejemplo que se muestra en el paso 2.
 
    ![Los nombres de encabezado de columna coinciden con los del archivo CSV](../media/HRConnectorWizard3.png)
 
@@ -101,7 +99,7 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
    
    1. **Vínculo al script de ejemplo.** Haga clic en **este vínculo para** ir al sitio de Github y acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para poder copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para que pueda tener acceso de nuevo en el paso 4. Este vínculo también está disponible en la página de control flotante de conectores.
 
-7. Haga clic en **Listo** .
+7. Haga clic en **Listo**.
 
    El nuevo conector se muestra en la lista de la ficha **conectores** . 
 
@@ -109,7 +107,7 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
    ![Página de control flotante para nuevo conector de recursos humanos](../media/HRConnectorWizard7.png)
 
-   Si aún no lo ha hecho, puede copiar los valores del identificador de la **aplicación de Azure** y del identificador de trabajo del **conector** . Necesitará estos para ejecutar el script en el paso siguiente. También puede descargar el script de la página flotante (o descargarlo con el vínculo en el paso siguiente).
+   Si aún no lo ha hecho, puede copiar los valores del identificador de la **aplicación de Azure** y del identificador de trabajo del **conector**. Necesitará estos para ejecutar el script en el paso siguiente. También puede descargar el script de la página flotante (o descargarlo con el vínculo en el paso siguiente).
 
    También puede hacer clic en **Editar** para cambiar el identificador de la aplicación de Azure o los nombres de encabezado de columna que ha definido en la página **asignación de archivos** .
 
@@ -167,7 +165,7 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
    ![Página de control flotante de conector de RRHH con propiedades y estado](../media/HRConnectorFlyout1.png)
 
-3. En **curso** , haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft. 
+3. En **curso**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre cada vez que se ejecuta el script y carga los datos del archivo CSV a la nube de Microsoft. 
 
    ![El archivo de registro del conector de recursos humanos muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
 
@@ -181,15 +179,15 @@ Para asegurarse de que los datos de recursos humanos más recientes de su organi
 
 Puede usar la aplicación programador de tareas de Windows para ejecutar el script de forma automática cada día.
 
-1. En el equipo local, haga clic en el botón **Inicio** de Windows y, a continuación, escriba **programador de tareas** .
+1. En el equipo local, haga clic en el botón **Inicio** de Windows y, a continuación, escriba **programador de tareas**.
 
 2. Haga clic en la aplicación **programador de tareas** para abrirla.
 
-3. En la sección **acciones** , haga clic en **crear tarea** .
+3. En la sección **acciones** , haga clic en **crear tarea**.
 
-4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector de recursos humanos** . También puede Agregar una descripción opcional.
+4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector de recursos humanos**. También puede Agregar una descripción opcional.
 
-5. En **Opciones de seguridad** , haga lo siguiente:
+5. En **Opciones de seguridad**, haga lo siguiente:
 
    1. Determine si desea ejecutar el script solo cuando haya iniciado sesión en el equipo o ejecutarlo cuando haya iniciado sesión o no.
    
@@ -197,11 +195,11 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
 6. Seleccione la pestaña **desencadenadores** , haga clic en **nuevo** y, a continuación, realice las siguientes acciones:
 
-   1. En **configuración** , seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
+   1. En **configuración**, seleccione la opción **diariamente** y, a continuación, elija una fecha y hora para ejecutar el script por primera vez. El script será cada día a la misma hora especificada.
    
-   1. En **Configuración avanzada** , asegúrese de que esté activada la casilla de verificación **habilitado** .
+   1. En **Configuración avanzada**, asegúrese de que esté activada la casilla de verificación **habilitado** .
    
-   1. Haga clic en **Aceptar** .
+   1. Haga clic en **Aceptar**.
 
 7. Seleccione la pestaña **acciones** , haga clic en **nueva** y, a continuación, realice las siguientes acciones:
 
@@ -209,7 +207,7 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
    1. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
 
-   1. En el cuadro **programa/script** , haga clic en **examinar** , vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el cuadro: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
+   1. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el cuadro: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
    1. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

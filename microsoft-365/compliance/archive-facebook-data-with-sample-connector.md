@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Aprenda a configurar & usar un conector en el centro de cumplimiento de Microsoft 365 para importar & datos de archivo de las páginas de empresa de Facebook a Microsoft 365.
-ms.openlocfilehash: 747f98ff084eaa8536c10b2f4edefcc20d11d7f9
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: db1d11f461125e7ea1d749fd273f8bc8622a8d77
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255857"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620437"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurar un conector para archivar datos de Facebook (versión preliminar)
 
 Use un conector en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de las páginas de empresa de Facebook a Microsoft 365. Una vez que haya configurado y configurado el conector, se conecta a la página de empresa de Facebook (de forma programada), convierte el contenido de los elementos de Facebook a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón en Microsoft 365.
 
-Una vez importados los datos de Facebook, puede aplicar las características de cumplimiento de Microsoft 365, como la retención por juicio, la búsqueda de contenido, el archivado local, la auditoría, el cumplimiento de comunicaciones y las directivas de retención de Microsoft 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en retención por juicio o se asigna a una directiva de retención, los datos de Facebook se conservan. Puede buscar datos de terceros mediante la búsqueda de contenido o asociar el buzón en el que se almacenan los datos de Facebook con un custodio en un caso de exhibición avanzada de documentos electrónicos. El uso de un conector para importar y archivar datos de Facebook en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
+Una vez importados los datos de Facebook, puede aplicar las características de cumplimiento de Microsoft 365, como la retención por juicio, la búsqueda de contenido, el archivado In-Place, la auditoría, el cumplimiento de comunicaciones y las directivas de retención de Microsoft 365 a los datos de Facebook. Por ejemplo, cuando un buzón se coloca en retención por juicio o se asigna a una directiva de retención, los datos de Facebook se conservan. Puede buscar datos de terceros mediante la búsqueda de contenido o asociar el buzón en el que se almacenan los datos de Facebook con un custodio en un caso de exhibición avanzada de documentos electrónicos. El uso de un conector para importar y archivar datos de Facebook en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Requisitos previos para configurar un conector para páginas empresariales de Facebook
 
@@ -42,8 +42,6 @@ Complete los siguientes requisitos previos para poder configurar y configurar un
 
     > [!NOTE]
     > La [suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) que se incluye con la suscripción a Microsoft 365 no es compatible con los conectores del centro de seguridad & cumplimiento.
-
-- La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de buzones de la organización. Para dar su consentimiento a esta solicitud, vaya a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), inicie sesión con las credenciales de un administrador global y, después, acepte la solicitud.
 
 - El usuario que configura el conector personalizado en el centro de cumplimiento de Microsoft 365 (en el paso 5) debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones  [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
@@ -109,7 +107,7 @@ Al finalizar este paso (siguiendo las instrucciones paso a paso), se proporciona
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>Paso 5: configurar un conector de páginas empresariales de Facebook en el centro de cumplimiento de Microsoft 365
 
-El último paso consiste en configurar el conector en el centro de cumplimiento de Microsoft 365 que importará datos de las páginas de empresa de Facebook a un buzón específico en Microsoft 365. Después de completar este paso, el servicio de importación de Office 365 empezará a importar datos de las páginas de empresa de Facebook a Microsoft 365.
+El último paso consiste en configurar el conector en el centro de cumplimiento de Microsoft 365 que importará datos de las páginas de empresa de Facebook a un buzón específico en Microsoft 365. Después de completar este paso, el servicio de importación de Microsoft 365 se iniciará importando datos de las páginas de empresa de Facebook a Microsoft 365.
 
 Para obtener instrucciones paso a paso, consulte [STEP 5: set up a Facebook Connector in the Microsoft 365 Compliance Center](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center). 
 
