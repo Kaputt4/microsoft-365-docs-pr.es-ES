@@ -1,5 +1,5 @@
 ---
-title: Aplicar automáticamente una etiqueta de confidencialidad al contenido
+title: Aplicar automáticamente una etiqueta de confidencialidad al contenido de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,22 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 2cfe509e61737cde77dbf865d4d56d9e7f8d0d33
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
+ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407354"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568504"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Cuando crea una etiqueta de confidencialidad, puede asignar automáticamente dicha etiqueta al contenido cuando se cumplan las condiciones especificadas.
+> [!NOTE]
+> Para obtener información sobre cómo aplicar automáticamente una etiqueta de confidencialidad en Azure Purview (versión preliminar), consulte [Etiquetar automáticamente el contenido en Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+
+Cuando crea una etiqueta de confidencialidad, puede asignar automáticamente dicha etiqueta a archivos o correos electrónicos cuando se cumplan las condiciones especificadas.
 
 La capacidad de aplicar automáticamente etiquetas de confidencialidad al contenido es importante por estos motivos:
 
@@ -37,9 +40,11 @@ La capacidad de aplicar automáticamente etiquetas de confidencialidad al conten
 
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
 
-Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confidencialidad:
+Si el contenido se ha etiquetado manualmente, dicha etiqueta nunca se reemplazará por el etiquetado automático. Sin embargo, el etiquetado automático puede reemplazar una [etiqueta de menor prioridad](sensitivity-labels.md#label-priority-order-matters) que se aplicó automáticamente.
 
-- **Etiquetado del lado del cliente cuando los usuarios editan documentos o redactan mensajes de correo electrónico (y responden a ellos o los reenvían)**: use una etiqueta configurada para el etiquetado automático para las aplicaciones de Office (Word, Excel, PowerPoint y Outlook). 
+Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confidencialidad en contenido de Microsoft 365:
+
+- **Etiquetado del lado del cliente cuando los usuarios editan documentos o redactan mensajes de correo electrónico (y responden a ellos o los reenvían)**: use una etiqueta configurada para el etiquetado automático para archivos o correos electrónicos (Word, Excel, PowerPoint y Outlook). 
     
     Este método permite recomendar una etiqueta a los usuarios, así como aplicar una etiqueta automáticamente. Pero en ambos casos, el usuario decide si acepta o rechaza la etiqueta, para ayudar a garantizar el etiquetado correcto del contenido. Este etiquetado del lado del cliente tiene un retraso mínimo para los documentos porque la etiqueta se puede aplicar incluso antes de que se guarde el documento. Sin embargo, no todas las aplicaciones cliente son compatibles con el etiquetado automático. Esta funcionalidad es compatible con el cliente de etiquetado unificado de Azure Information Protection y [algunas versiones de Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
@@ -73,7 +78,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
 
 Use la siguiente tabla para ayudarle a identificar las diferencias en el comportamiento de los dos métodos de etiquetado automático complementarios:
 
-|Característica o comportamiento|Configuración de etiqueta: etiquetado automático para aplicaciones de Office |Directiva: etiquetado automático|
+|Característica o comportamiento|Configuración de etiqueta: etiquetado automático para archivos y mensajes de correo electrónico  |Directiva: etiquetado automático|
 |:-----|:-----|:-----|
 |Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No\* |
 |Restringir por ubicación|No |Sí |
@@ -87,9 +92,6 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |Etiquetar correo electrónico entrante|No |Sí (no se aplicó cifrado) |
 
 \*El etiquetado automático no está disponible actualmente en todas las regiones. Si su espacio empresarial no es compatible con esta funcionalidad, la pestaña etiquetado automático no se puede ver en el centro de etiquetado de administración.
-
-> [!NOTE]
-> Si el contenido se ha etiquetado manualmente, dicha etiqueta nunca se reemplazará por el etiquetado automático. Sin embargo, las directivas de etiquetado automático pueden reemplazar una [etiqueta de prioridad más baja](sensitivity-labels.md#label-priority-order-matters) que se aplicó con el etiquetado automático para las aplicaciones de Office.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
 
@@ -111,7 +113,7 @@ Los ajustes de etiquetado automático para las aplicaciones de Office están dis
 
 ![Opciones de ámbito de etiquetas de confidencialidad para archivos y mensajes de correo electrónico](../media/filesandemails-scope-options-sensitivity-label.png)
 
-A medida que se desplace por el asistente, verá la página **Etiquetado automático para las aplicaciones de Office**, en la que puede elegir entre una lista de tipos de información confidencial o clasificadores capacitados:
+A medida que se desplace por el asistente, verá la página **Etiquetado automático para archivos y mensajes de correo electrónico**, en la que puede elegir entre una lista de tipos de información confidencial o clasificadores que se pueden entrenar:
 
 ![Condiciones de etiquetado para el etiquetado automático en las aplicaciones de Office](../media/sensitivity-labels-conditions.png)
 
