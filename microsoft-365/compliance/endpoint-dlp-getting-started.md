@@ -19,24 +19,24 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 7dbceb97b7ccb542a0a4933f3e3cccf5a38026ea
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371606"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604268"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
-La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que puede usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md). Para más información sobre la DLP de Endpoint, consulte [Obtener más información sobre la prevención de pérdida de datos de Endpoint](endpoint-dlp-learn-about.md)
+La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md). Para más información sobre la DLP de punto de conexión, consulte [Obtener información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md)
 
 Microsoft Endpoint DLP le permite supervisar dispositivos con Windows 10 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-### <a name="skusubscriptions-licensing"></a>Licencias de SKU y suscripciones
+### <a name="skusubscriptions-licensing"></a>Licencias de SKU/suscripciones
 
-Antes de empezar con Endpoint DLP, debe confirmar la [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) y a cualquier complemento. Para acceder y usar la funcionalidad Endpoint DLP, debe tener una de estas suscripciones o complementos.
+Antes de empezar con Endpoint DLP, debe confirmar la [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) y cualquier complemento. Para acceder y usar la funcionalidad Endpoint DLP, debe tener una de estas suscripciones o complementos.
 
 - Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
@@ -71,7 +71,7 @@ Si desea usar una cuenta personalizada para activar o desactivar la supervisión
 - Administrador global
 - Administrador de cumplimiento
 
-Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-classification-activity-explorer.md). Hay cuatro roles que conceden permisos al explorador de actividad, y la cuenta que use para acceder a los datos debe pertenecer a uno de ellos.
+Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-classification-activity-explorer.md). Hay cuatro roles que conceden permisos al explorador de actividad; la cuenta que use para acceder a los datos debe pertenecer a uno de ellos.
 
 - Administrador global
 - Administrador de cumplimiento
@@ -86,26 +86,26 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
 
 2. La versión del cliente antimalware es 4.18.2009.7 o posterior. Para comprobar la versión actual, abra la aplicación de Seguridad de Windows, seleccione el icono Configuración y, a continuación, Acerca de. El número de versión aparece en la versión del cliente antimalware. Instale Windows Update KB4052623 para actualizar a la última versión del cliente antimalware. Nota: no es necesario que ninguno de los componentes de Seguridad de Windows estén activos; puede ejecutar DLP en punto de conexión independiente del estado de Seguridad de Windows.
 
-3. Se instalan las as siguientes actualizaciones de Windows. Nota: estas actualizaciones no son un requisito previo para incorporar un dispositivo a Endpoint DLP, pero contienen correcciones de problemas importantes y, por lo tanto, deben instalarse antes de usar el producto.
+3. Se instalan las siguientes actualizaciones de Windows. Nota: estas actualizaciones no son un requisito previo para incorporar un dispositivo a DLP en punto de conexión, pero contienen correcciones de problemas importantes y, por lo tanto, deben instalarse antes de usar el producto.
 
-    - Para Windows 10 1809 - KB4559003, KB4577069, KB4580390
+    - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
     - Para Windows 10 1903 o 1909 - KB4559004, KB4577062, KB4580386
     - For Windows 10 2004 - KB4568831, KB4577063
     - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063 
 
 4. Todos los dispositivos deben estar [unidos a Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
 
-5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para la actividad de cargar en la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
-6. Si está en el canal mensual de la empresa de las versiones 2004 a 2008 de Aplicaciones de Microsoft 365, hay un problema conocido con el punto de conexión de DLP que clasifica el contenido de Office y tendrá que actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) para versiones actuales. Para obtener más información sobre este problema, vea la sección del conjunto de aplicaciones de Office sobre [Notas de la versión para obtener las versiones del canal actual en 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
+6. Si está en el canal mensual de la empresa de las versiones 2004 a 2008 de Aplicaciones de Microsoft 365, hay un problema conocido con el punto de conexión de DLP que clasifica el contenido de Office y tendrá que actualizar a la versión 2009 o posterior. Vea [Historial de actualizaciones de las Aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) las versiones actuales. Para obtener más información sobre este problema, vea la sección Office Suite de [Notas de la versión para obtener las versiones del canal actuales en 2020](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27).
 
 ## <a name="onboarding-devices-into-device-management"></a>Incorporación de dispositivos a la administración de dispositivos
 
-Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal del centro de cumplimiento de Microsoft 365.
+Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
 
 Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, descargue el script apropiado y, luego, impleméntelo en esos dispositivos. Siga los pasos del [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
 
-Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de conexión (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), estos aparecerán en la lista de dispositivos administrados. Siga el [Procedimiento con dispositivos incorporados en Microsoft Defender para punto de conexión](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint).
+Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de conexión (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), estos aparecerán en la lista de dispositivos administrados. Siga el [procedimiento con dispositivos incorporados en Microsoft Defender para punto de conexión](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint).
 
 ### <a name="onboarding-devices"></a>Incorporar dispositivos
 
@@ -180,7 +180,7 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 2. Consulte los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
 
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de DLP del punto de conexión en el explorador de actividad
+### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
 
 1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija Explorador de actividad.
 
@@ -196,8 +196,8 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 
 ## <a name="see-also"></a>Consulte también
 
-- [Obtenga más información sobre la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-learn-about.md)
-- [Uso de la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-using.md)
+- [Obtenga información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
+- [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
