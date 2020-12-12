@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft defender para Office 365 también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616781"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659991"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -44,14 +44,21 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener permisos asignados para poder administrar la cuarentena como administrador. Los permisos se controlan mediante el rol **cuarentena** en el centro de seguridad & cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles administración de la **organización** (administradores globales), **Administrador de cuarentena** y administrador de **seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
+  - Para realizar acciones en mensajes en cuarentena para todos los usuarios, debe ser miembro de los grupos de roles administración de la **organización**, **Administrador de seguridad** o administrador de **cuarentena** <sup>\*</sup> .
+  - Para que todos los usuarios tengan acceso de solo lectura a los mensajes en cuarentena, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
+
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+  **Notas**:
+
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+  - <sup>\*</sup> Los miembros del grupo de roles de **Administrador de cuarentena** también deben ser miembros del grupo de funciones de administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) para poder realizar procedimientos de cuarentena en Exchange Online PowerShell.
 
 - Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado antes de que se eliminen automáticamente:
-
   - 30 días para los mensajes puestos en cuarentena por las directivas contra correo no deseado (correo no deseado, phishing y correo electrónico masivo). Este es el valor predeterminado y máximo. Para configurar (menos) este valor, vea [Configure anti-spam Policies](configure-your-spam-filter-policies.md).
-
   - 15 días para los mensajes que contienen malware.
-
   - 15 días para los archivos en cuarentena por ATP para SharePoint, OneDrive y Microsoft Teams en defender para Office 365.
 
   Cuando un mensaje expira de la cuarentena, no puede recuperarlo.
@@ -93,17 +100,17 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Motivo de la cuarentena**:
      - **Directiva**: el mensaje coincide con las condiciones de una regla de flujo de correo (también denominada regla de transporte).
-     - **Correo masivo**
+     - **Masivo**
      - **Phish**: el filtro de correo no deseado el veredicto fue **phishing email** o anti-phishing Protection en cuarentena del mensaje ([configuración de falsificación](set-up-anti-phishing-policies.md#spoof-settings) o [protección de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Correo no deseado**
      - **Phish de confianza alta**
 
-   - **Tipo de directiva**: filtrar mensajes por tipo de directiva:
+   - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
      - **Directiva antimalware**
      - **Directiva de datos adjuntos seguros**
-     - **Directiva contra phish**
-     - **Directiva de filtro de contenido hospedado** (Directiva contra correo no deseado)
+     - **Política Antiphishing**
+     - **Directiva de filtro de contenido alojado** (directiva anti-spam)
      - **Regla de transporte**
 
    - **Destinatario de correo electrónico**: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
@@ -118,7 +125,7 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
 
-   - **Nombre** de la Directiva: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
+   - **Nombre de directiva**: Use el nombre de la Directiva completa del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
    - **Dirección de correo electrónico del destinatario**: Una única dirección de correo electrónico de destinatario.
 

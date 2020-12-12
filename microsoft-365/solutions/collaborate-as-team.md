@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración de la tarea, conversación y documentación con los invitados en Microsoft Teams.
-ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030034"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659611"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -36,15 +36,15 @@ En este vídeo se muestran los pasos de configuración que se describen en este 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
+## <a name="azure-external-collaboration-settings"></a>Configuración de colaboración externa de Azure
 
-El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
+El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de colaboración externa B2B en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
 
-Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
+Compruebe la configuración de la configuración de colaboración externa de B2B para asegurarse de que no se bloquee el uso compartido con invitados.
 
 ![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Para establecer la configuración de relación organizativa
+Para establecer la configuración de colaboración externa
 
 1. Inicie sesión en Azure Active Directory en [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
@@ -55,7 +55,7 @@ Para establecer la configuración de relación organizativa
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
-Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados** , seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
+Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad para obtener acceso a los datos del directorio. Esto impedirá que vean quién más es un invitado en el directorio. Para ello, en **restricciones de acceso de usuarios invitados**, seleccione **los usuarios invitados tienen restringido el acceso a las propiedades y la pertenencia de los objetos de directorio la configuración** o **el acceso de usuario invitado está restringido a las propiedades y pertenencia de sus propios objetos de directorio**.
 
 ## <a name="teams-guest-access-settings"></a>Configuración de acceso de invitado de Microsoft Teams
 
@@ -69,10 +69,12 @@ Para establecer la configuración de acceso de invitados de Teams
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todo**.
-3. En **Centros de administración** , haga clic en **Teams**.
+3. En **Centros de administración**, haga clic en **Teams**.
 4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **configuración de toda la organización** y haga clic en **acceso de invitado**.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
+
+Una vez que se activa el acceso de invitado de Teams, puede controlar opcionalmente el acceso de invitado a equipos individuales y a sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para obtener más información, consulte [usar las etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de microsoft 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > La configuración de invitado de Teams puede tardar hasta 24 horas en activa una vez que la activa.
@@ -105,7 +107,7 @@ Si desea permitir el uso compartido de archivos y carpetas con personas sin aute
 
 Para establecer la configuración de uso compartido en el nivel de la organización de SharePoint
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración** , haga clic en **SharePoint**.
+1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, en **centros de administración**, haga clic en **SharePoint**.
 2. En el centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **directivas** y, a continuación, haga clic en **compartir**.
 3. Asegúrese de que el uso compartido externo para SharePoint está establecido en **todos** o en **invitados nuevos o existentes**.
 4. Si ha realizado cambios, haga clic en **Guardar**.
@@ -129,7 +131,7 @@ Elija uno de los siguientes tipos de vínculo que se seleccionarán de forma pre
 Para establecer la configuración de vínculos predeterminados de nivel de organización de SharePoint
 
 1. Vaya a la página de uso compartido en el centro de administración de SharePoint.
-2. En **vínculos de archivos y carpetas** , seleccione el vínculo de uso compartido predeterminado que desee usar.
+2. En **vínculos de archivos y carpetas**, seleccione el vínculo de uso compartido predeterminado que desee usar.
 3. Si ha realizado cambios, haga clic en **Guardar**.
 
 ## <a name="create-a-team"></a>Crear un equipo
@@ -148,10 +150,9 @@ Invitaremos a los usuarios más adelante. A continuación, es importante comprob
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido en el nivel de sitio de SharePoint
 
-Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este equipo. Por ejemplo, si establece la configuración en el nivel de la organización en **cualquiera** , pero desea que todos los invitados se autentiquen para este equipo, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
+Compruebe la configuración de uso compartido de nivel de sitio para asegurarse de que permite el tipo de acceso que desea para este equipo. Por ejemplo, si establece la configuración en el nivel de la organización en **cualquiera**, pero desea que todos los invitados se autentiquen para este equipo, asegúrese de que la configuración de uso compartido de nivel de sitio esté establecida en **invitados nuevos y existentes**.
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
-
 
 Para establecer la configuración de uso compartido de nivel de sitio
 1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **sitios** y haga clic en **sitios activos**.

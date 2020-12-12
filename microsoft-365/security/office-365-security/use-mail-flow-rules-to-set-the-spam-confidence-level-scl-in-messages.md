@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo crear reglas de flujo de correo (reglas de transporte) para identificar mensajes y establecer el nivel de confianza contra correo no deseado (SCL) de los mensajes en Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 791e6747e1ffa92d54e7d4f4a6c257c3aad4c0d9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 447333eb968ba7d91a1673c57b11afdb16b90469
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659842"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL) en los mensajes en EOP
 
@@ -35,11 +35,19 @@ Si desea marcar determinados mensajes como correo no deseado antes de que se ana
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Debe tener asignados permisos en Exchange Online para poder realizar estos procedimientos. En concreto, debe tener asignado el rol **reglas de transporte** , que se asigna a las **funciones administración**de la organización, **Administración del cumplimiento**y administración de **registros** de forma predeterminada. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- Debe tener asignados permisos en Exchange online o Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. En concreto, necesita el **rol reglas de transporte** , que se asigna a los grupos de roles administración de la **organización**, administración de **cumplimiento** (administradores globales) y administración de **registros** de forma predeterminada.
 
-- Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  Para obtener más información, consulte los siguientes temas:
 
-- Para obtener más información acerca de las reglas de flujo de correo en Exchange Online, consulte [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) .
+  - [Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Permisos en EOP independiente](feature-permissions-in-eop.md)
+  - [Usar el EAC modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+
+- Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Para abrir el EAC en un EOP independiente, consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
+
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+
+- Para obtener más información acerca de las reglas de flujo de correo en Exchange Online y Exchange Online Protection, consulte [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) .
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Usar el EAC para crear una regla de flujo de correo que establezca el SCL de un mensaje
 
@@ -72,4 +80,4 @@ Si desea marcar determinados mensajes como correo no deseado antes de que se ana
 
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
-Para comprobar que este procedimiento funciona correctamente, envíe un mensaje de correo electrónico a una persona de su organización y compruebe que la acción que se realiza en el mensaje sea como se esperaba. Por ejemplo, si **establece el nivel de confianza de correo no deseado (SCL)** en **Omitir el filtrado de correo no deseado**, el mensaje debe enviarse a la bandeja de entrada del destinatario especificado. Sin embargo, si **establece el nivel de confianza contra correo no deseado (SCL)** en **9**y la acción de **correo no deseado de confianza alta** para las directivas contra correo no deseado aplicable es mover el mensaje a la carpeta de correo electrónico no deseado, el mensaje debe enviarse a la carpeta de correo electrónico no deseado del destinatario especificado.
+Para comprobar que este procedimiento funciona correctamente, envíe un mensaje de correo electrónico a una persona de su organización y compruebe que la acción que se realiza en el mensaje sea como se esperaba. Por ejemplo, si **establece el nivel de confianza de correo no deseado (SCL)** en **Omitir el filtrado de correo no deseado**, el mensaje debe enviarse a la bandeja de entrada del destinatario especificado. Sin embargo, si **establece el nivel de confianza contra correo no deseado (SCL)** en **9** y la acción de **correo no deseado de confianza alta** para las directivas contra correo no deseado aplicable es mover el mensaje a la carpeta de correo electrónico no deseado, el mensaje debe enviarse a la carpeta de correo electrónico no deseado del destinatario especificado.

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar entradas de direcciones URL en la lista de permitidos y bloqueados del centro de seguridad & cumplimiento.
-ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614969"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660003"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Administrar direcciones URL en la lista de permitidos y bloqueados del espacio empresarial
 
@@ -28,7 +28,7 @@ ms.locfileid: "49614969"
 
 
 > [!NOTE]
-> Las características descritas en este tema están en versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
+> Las características descritas en este artículo se encuentran en versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un buen mensaje puede marcarse como incorrecto (un falso positivo) o puede que se permita el acceso a un mensaje incorrecto (un falso negativo).
 
@@ -40,7 +40,7 @@ En este tema se describe cómo configurar entradas en la lista de permitidos/blo
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de la **lista de permitidos/bloqueados de inquilino** , use <https://protection.office.com/tenantAllowBlockList> .
 
-- Los valores de dirección URL disponibles se describen en la sintaxis de la [dirección URL de la sección lista de permitidos/bloqueados de inquilino](#url-syntax-for-the-tenant-allowblock-list) más adelante en este tema.
+- Los valores de dirección URL disponibles se describen en la sintaxis de la [dirección URL de la sección lista de permitidos/bloqueados de inquilino](#url-syntax-for-the-tenant-allowblock-list) más adelante en este artículo.
 
 - La lista de permitidos/bloqueados de inquilino permite un máximo de 500 entradas para las direcciones URL.
 
@@ -52,7 +52,7 @@ En este tema se describe cómo configurar entradas en la lista de permitidos/blo
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
   - Para agregar y quitar valores de la lista de permitidos/bloqueados de inquilino, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** .
   - Para obtener acceso de solo lectura a la lista de permitidos/bloqueados de inquilino, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
@@ -65,7 +65,7 @@ En este tema se describe cómo configurar entradas en la lista de permitidos/blo
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Usar el centro de seguridad & cumplimiento para crear entradas de dirección URL en la lista de permitidos/bloqueados de espacio empresarial
 
-Para obtener información detallada sobre la sintaxis de las entradas de dirección URL, vea la [Sintaxis de la dirección URL de la sección lista de permitidos/bloqueados de inquilino](#url-syntax-for-the-tenant-allowblock-list) más adelante en este tema.
+Para obtener información detallada sobre la sintaxis de las entradas de dirección URL, vea la [Sintaxis de dirección URL para la sección lista de permitidos/bloqueados de inquilino](#url-syntax-for-the-tenant-allowblock-list) más adelante en este artículo.
 
 1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** para \>  \> **las listas de permitidos y bloqueados del inquilino**.
 

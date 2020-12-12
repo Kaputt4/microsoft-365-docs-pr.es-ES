@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración de filtro de correo no deseado avanzada (ASF) que está disponible en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ac2b45cc03327f47bd73efe54e78312cbda4bb6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 92d5e58937b539bf2be8d6d2c541f985562b7007
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615257"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659623"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración de filtro de correo no deseado avanzado (ASF) en EOP
 
@@ -42,7 +42,7 @@ En todas las organizaciones de Microsoft 365, la configuración de filtro de cor
 >
 > - La presencia de mensajes filtrados en cuarentena.
 >
-> - Los `X-CustomSpam:` campos de encabezado X específicos que se agregan a los mensajes, tal y como se describe en este tema.
+> - Los `X-CustomSpam:` campos de encabezado X específicos que se agregan a los mensajes tal y como se describe en este artículo.
 
 En las siguientes secciones se describe la configuración y las opciones de ASF que están disponibles en las directivas contra correo no deseado en el centro de seguridad & cumplimiento y en Exchange Online PowerShell o en Windows EOP independiente ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) y [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
@@ -78,7 +78,7 @@ La siguiente configuración ASF establece el nivel de confianza contra correo no
 
 ****
 
-|Configuración de la Directiva contra correo no deseado|Descripción|Encabezado X agregado|
+|Configuración de la Directiva contra correo no deseado|Description|Encabezado X agregado|
 |---|---|---|
 |**Vínculos de imagen a sitios remotos** <p> *IncreaseScoreWithImageLinks*|Los mensajes que contienen `<Img>` vínculos de etiquetas HTML a sitios remotos (por ejemplo, mediante http) se marcan como correo no deseado.|`X-CustomSpam: Image links to remote sites`|
 |**Redireccionamiento de direcciones URL a otro puerto** <p> *IncreaseScoreWithRedirectToOtherPort*|Los mensajes que contienen hipervínculos que se redirigen a puertos TCP distintos de 80 (HTTP), 8080 (HTTP alternativo) o 443 (HTTPS) se marcan como correo no deseado.|`X-CustomSpam: URL redirect to other port`|
@@ -92,7 +92,7 @@ La siguiente configuración ASF establece el SCL de los mensajes detectados en 9
 
 ****
 
-|Configuración de la Directiva contra correo no deseado|Descripción|Encabezado X agregado|
+|Configuración de la Directiva contra correo no deseado|Description|Encabezado X agregado|
 |---|---|---|
 |**Mensajes vacíos** <p> *MarkAsSpamEmptyMessages*|Los mensajes sin asunto, sin contenido en el cuerpo del mensaje y sin datos adjuntos, no se marcan como correo no deseado de confianza alta.|`X-CustomSpam: Empty Message`|
 |**JavaScript o VBScript en HTML** <p> *MarkAsSpamJavaScriptInHtml*|Los mensajes que utilizan JavaScript o Visual Basic Script Edition en HTML están marcados como correo no deseado de alta confianza. <p> Estos lenguajes de scripting se usan en los mensajes de correo electrónico para que se produzcan acciones específicas automáticamente.|`X-CustomSpam: Javascript or VBscript tags in HTML`|

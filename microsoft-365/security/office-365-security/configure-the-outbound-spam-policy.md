@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 237703d9ad6ed652a3feb4dda57a7af0e99240f7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659707"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -51,7 +51,7 @@ La diferencia entre estos dos elementos no es obvia cuando se administran las di
 - Cuando se modifica una directiva, la configuración relacionada con los filtros nombre, prioridad, habilitado o deshabilitado y destinatario modifica la regla de filtro de correo no deseado saliente. Todas las demás opciones modifican la Directiva de filtro de correo no deseado saliente asociada.
 - Al quitar una directiva, se quita la regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada.
 
-En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, consulte la sección [usar Exchange Online PowerShell o Standalone EOP PowerShell para configurar directivas de correo no deseado saliente](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) más adelante en este tema.
+En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, consulte la sección [usar Exchange Online PowerShell o Standalone EOP PowerShell para configurar las directivas de correo no deseado saliente](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) , más adelante en este artículo.
 
 Cada organización tiene integrada una directiva de correo no deseado saliente denominada predeterminada que tiene estas propiedades:
 
@@ -67,7 +67,7 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
   - Para agregar, modificar y eliminar directivas de correo no deseado saliente, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas de correo no deseado saliente, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
@@ -158,7 +158,7 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
 
      - **No se realiza ninguna acción, solo alerta**: se envían notificaciones por correo electrónico.
 
-6. Opcional Expanda la sección **desvío automático** para controlar el reenvío automático de correo electrónico de los usuarios a remitentes externos. Para obtener más información acerca del reenvío automático, consulte [configurar el reenvío de correo electrónico](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
+6. Opcional Expanda la sección **desvío automático** para controlar el reenvío automático de correo electrónico de los usuarios a remitentes externos. Para obtener más información, consulte [controlar el reenvío de correo externo automático en Microsoft 365](external-email-forwarding.md).
 
    > [!NOTE]
    >
@@ -166,7 +166,7 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
    >
    > - Esta configuración solo se aplica a los buzones basados en la nube.
    >
-   > - Cuando el reenvío automático está deshabilitado, el destinatario recibirá un informe de no entrega (también conocido como un mensaje NDR o de devolución) si los remitentes externos envían correo electrónico a un buzón que se ha reenviado en su ubicación. Si un remitente interno envía el correo electrónico, el remitente recibirá el NDR.
+   > - Cuando el reenvío automático está deshabilitado, el destinatario recibirá un informe de no entrega (también conocido como un mensaje NDR o de devolución) si los remitentes externos envían correo electrónico a un buzón que se ha reenviado en su ubicación. Si el mensaje lo envía un remitente interno **y** el método de reenvío es el [reenvío de buzón](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (también conocido como _reenvío SMTP_), el remitente interno recibirá el NDR. El remitente interno no obtiene un NDR si el reenvío se ha realizado debido a una regla de la bandeja de entrada.
 
    Los valores disponibles son los siguientes:
 
@@ -396,7 +396,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Usar PowerShell para modificar las directivas de filtro de correo no deseado saliente
 
-La misma configuración está disponible cuando modifica una directiva de filtro de malware en PowerShell como cuando crea la Directiva tal como se describe en la sección [paso 1: usar PowerShell para crear una directiva de filtro de correo no deseado saliente](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) anteriormente en este tema.
+La misma configuración está disponible cuando modifica una directiva de filtro de malware en PowerShell como cuando crea la Directiva tal como se describe en la sección [paso 1: usar PowerShell para crear una directiva de filtro de correo no deseado saliente](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) anteriormente en este artículo.
 
 > [!NOTE]
 > No se puede cambiar el nombre de una directiva de filtro de correo no deseado saliente (el cmdlet **set-HostedOutboundSpamFilterPolicy** no tiene ningún parámetro _Name_ ). Al cambiar el nombre de una directiva de correo no deseado saliente en el centro de seguridad & cumplimiento, sólo cambia el nombre de la _regla_ de filtro de correo no deseado saliente.
@@ -413,7 +413,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 El único valor que no está disponible cuando se modifica una regla de filtro de correo no deseado saliente en PowerShell es el parámetro _Enabled_ que permite crear una regla deshabilitada. Para habilitar o deshabilitar las reglas de filtro de correo no deseado saliente existentes, consulte la siguiente sección.
 
-De lo contrario, no hay opciones de configuración adicionales disponibles cuando se modifica una regla de filtro de correo no deseado saliente en PowerShell. La misma configuración está disponible cuando se crea una regla tal y como se describe en la sección [paso 2: usar PowerShell para crear una regla de filtro de correo no deseado saliente](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) anteriormente en este tema.
+De lo contrario, no hay opciones de configuración adicionales disponibles cuando se modifica una regla de filtro de correo no deseado saliente en PowerShell. La misma configuración está disponible cuando se crea una regla tal y como se describe en la sección [paso 2: usar PowerShell para crear una regla de filtro de correo no deseado saliente](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) anteriormente en este artículo.
 
 Para modificar una regla de filtro de correo no deseado saliente, use esta sintaxis:
 

@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico que aceptan o rechazan Exchange Online Protection (EOP) y Outlook.com para ayudar a evitar la suplantación de identidad (phishing).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659659"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección from para evitar la suplantación de identidad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema. Esta aplicación se habilitó en noviembre de 2017.
+Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este artículo. Esta aplicación se habilitó en noviembre de 2017.
 
 **Notas**:
 
-- Si recibe regularmente correo electrónico de organizaciones que tienen direcciones de formato incorrecto como se describe en este tema, Anime a estas organizaciones a que actualicen sus servidores de correo electrónico para cumplir con los estándares de seguridad modernos.
+- Si recibe regularmente correo electrónico de organizaciones que tienen direcciones de formato incorrecto como se describe en este artículo, Anime a estas organizaciones a que actualicen sus servidores de correo electrónico para cumplir con los estándares de seguridad modernos.
 
 - El campo de remitente relacionado (usado por el envío en nombre y las listas de correo) no se ve afectado por estos requisitos. Para obtener más información, vea la siguiente entrada de blog: [¿qué queremos decir cuando hacemos referencia al "remitente" de un correo electrónico?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -44,7 +44,7 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre d
 
 - La `5321.MailFrom` dirección (también conocida como **correo de** la dirección de, P1 Sender o Envelope Sender) es la dirección de correo electrónico que se usa en la transmisión SMTP del mensaje. Esta dirección de correo electrónico suele registrarse en el campo de encabezado **Return-Path** del encabezado del mensaje (aunque es posible que el remitente designe otra dirección **de correo electrónico de ruta de regreso** ).
 
-- El `5322.From` (también conocido como dirección de de o remitente P2) es la dirección de correo electrónico que aparece en el campo **de encabezado de** y es la dirección de correo electrónico del remitente que se muestra en los clientes de correo electrónico. La dirección de es el centro de los requisitos de este tema.
+- El `5322.From` (también conocido como dirección de de o remitente P2) es la dirección de correo electrónico que aparece en el campo **de encabezado de** y es la dirección de correo electrónico del remitente que se muestra en los clientes de correo electrónico. La dirección de es la que se centra en los requisitos de este artículo.
 
 La dirección de se define en detalle en varias RFC (por ejemplo, las secciones RFC 5322 3.2.3, 3,4, 3.4.1 y [rfc 3696](https://tools.ietf.org/html/rfc3696)). Hay muchas variaciones en el direccionamiento y lo que se considera válido o no válido. Para simplificarlo, le recomendamos el siguiente formato y las siguientes definiciones:
 

@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bd775e201f5fec556941ae0e8e7b025744da0419
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659719"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisitos de la aplicación de escritorio administrada de Microsoft
 
@@ -22,7 +22,7 @@ ms.locfileid: "46529438"
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop requiere que administremos los dispositivos con un enfoque específico para garantizar el rendimiento, la confiabilidad y la capacidad de servicio de los dispositivos. Si está seguro de que el enfoque que adopta el escritorio administrado de Microsoft para las áreas siguientes no funcionará para usted, puede solicitar una [excepción al plan de servicio](customizing.md).
+Microsoft Managed Desktop requiere que administremos los dispositivos con un enfoque específico para garantizar el rendimiento, la confiabilidad y la capacidad de servicio de los dispositivos.
 
 
 |Área de administración  |Enfoque del escritorio administrado de Microsoft  |
@@ -41,6 +41,4 @@ Microsoft Managed Desktop requiere que administremos los dispositivos con un enf
 
 
 
-Microsoft Managed Desktop puede supervisar otro software que se ejecuta en dispositivos administrados. Si afecta negativamente a la seguridad, el rendimiento o la confiabilidad del sistema, es posible que necesite solicitar una excepción al plan de servicio.
-
-
+Microsoft Managed Desktop puede supervisar otro software que se ejecuta en dispositivos administrados. Si afecta negativamente a la administración de dispositivos, la seguridad de los dispositivos, el rendimiento o la confiabilidad, es posible que deba solicitar una [excepción al plan de servicio](customizing.md).

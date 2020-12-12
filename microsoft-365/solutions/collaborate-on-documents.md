@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: En este artículo, aprenderá a colaborar con invitados en un documento de SharePoint y OneDrive.
-ms.openlocfilehash: bb97beaacf6a433e4fc5c38a897327d1e359ffb1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 1b2fe003902b69e4c0c58852af67862ce6f2eb34
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613519"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663516"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -34,15 +34,13 @@ En este vídeo se muestran los pasos de configuración que se describen en este 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Configuración de las relaciones de organización de Azure
+## <a name="azure-external-collaboration-settings"></a>Configuración de colaboración externa de Azure
 
-El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de relaciones organizativas en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
+El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de colaboración externa B2B en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido de invitado está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
 
-Compruebe la configuración de relaciones de organización para asegurarse de que no se bloquee el uso compartido con invitados.
+Compruebe la configuración de colaboración externa B2B para asegurarse de que no se bloquee el uso compartido con invitados.
 
 ![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
-
-Para establecer la configuración de relación organizativa
 
 Para establecer la configuración de colaboración externa
 
@@ -109,11 +107,11 @@ Para establecer permisos para vínculos que permiten el uso compartido con cualq
 
 1. En **estos vínculos puede conceder estos permisos:** subpanel, 
     1. En la lista desplegable **archivos** , 
-        1. Seleccione **ver y editar** si desea permitir que los usuarios no autenticados realicen cambios en los archivos.
-        2. Seleccione **Ver** si no desea que los usuarios no autenticados realicen cambios en los archivos.
+        - Seleccione **ver y editar** si desea permitir que los usuarios no autenticados realicen cambios en los archivos.
+        - Seleccione **Ver** si no desea que los usuarios no autenticados realicen cambios en los archivos.
     2. En la lista desplegable **carpetas** ,
-        1. Seleccione **ver, editar y cargar** si desea permitir que los usuarios no autenticados realicen cambios en las carpetas.
-        2. Seleccione **Ver** si no desea que los usuarios no autenticados realicen cambios en las carpetas.
+        - Seleccione **ver, editar y cargar** si desea permitir que los usuarios no autenticados realicen cambios en las carpetas.
+        - Seleccione **Ver** si no desea que los usuarios no autenticados realicen cambios en las carpetas.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido en el nivel de sitio de SharePoint
 

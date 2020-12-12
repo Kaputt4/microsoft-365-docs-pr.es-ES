@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento para investigar Cuándo los usuarios de la organización reenvían mensajes a nuevos dominios.
-ms.openlocfilehash: 22bbd762b221fae151a489aa1e9485dfc7baf06a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: cf1852169279e19ac00e5e29dd1c26e155936039
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357278"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660022"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento
 
@@ -31,11 +31,11 @@ Esta información sólo aparece cuando se detecta el problema y aparece en la p�
 
 ![Información de nuevos usuarios que reenvían correo electrónico](../../media/mfi-new-users-forwarding-email.png)
 
-Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al [Informe de modificaciones de reenvío](#forwarding-modifications-report) tal y como se describe más adelante en este tema.
+Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al [Informe de modificaciones de reenvío](#forwarding-modifications-report) tal y como se describe más adelante en este artículo.
 
 ![Control flotante de detalles que aparece después de hacer clic en los nuevos usuarios Reenviar información sobre el correo electrónico](../../media/mfi-new-users-forwarding-email-details.png)
 
-También puede obtener acceso a esta página de detalles si selecciona la información después de hacer clic en **ver todo** en el área de **recomendaciones &** información sobre (**Reports** \> **Panel** de informes o <https://protection.office.com/insightdashboard> ).
+También puede obtener acceso a esta página de detalles si selecciona la información después de hacer clic en **ver todo** en el área de **recomendaciones &** información sobre ( \> **Panel** de informes o <https://protection.office.com/insightdashboard> ).
 
 Puede hacer clic en el vínculo **Ver informe asociado con conocimiento** para ir al **Informe de modificaciones de reenvío** , como se describe en la siguiente sección.
 

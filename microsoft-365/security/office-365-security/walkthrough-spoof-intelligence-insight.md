@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo funciona el conocimiento de inteligencia de suplantación de identidad. Pueden determinar rápidamente qué remitentes están enviando de forma legítima correo electrónico a sus organizaciones desde dominios que no pasan comprobaciones de autenticación de correo electrónico (SPF, DKIM o DMARC).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9139a2b4c3c7ed8262f3d75b445defb869371d07
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 665745e940ea9547d57a1d7c47ff54eaae3756b7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602114"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659695"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Tutorial: información sobre inteligencia de inteligencia contra la simulación en Microsoft defender para Office 365
 
@@ -42,13 +42,15 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página del **Panel de seguridad** , use <https://protection.office.com/searchandinvestigation/dashboard> .
 
-  Puede ver la información de inteligencia de inteligencia de suplantación de más de un panel en el centro de seguridad & cumplimiento. Independientemente del panel que esté mirando, la visión proporciona los mismos detalles y le permite realizar rápidamente las mismas tareas.
+  Puede ver la información de inteligencia de inteligencia de suplantación de más de un panel en el centro de seguridad & cumplimiento. Independientemente del panel que esté examinando, la información proporciona los mismos detalles y le permite hacer rápidamente las mismas tareas.
 
-- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
   - **Administración de organizaciones**
   - **Administrador de seguridad**
   - **Lector de seguridad**
   - **Lector global**
+
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
   **Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 

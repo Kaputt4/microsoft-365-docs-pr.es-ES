@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659866"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -84,7 +84,7 @@ Las siguientes opciones de configuración de directivas están disponibles en an
     - **El dominio del destinatario es**
 
   > [!NOTE]
-  > La opción **aplicado a** es necesaria en las directivas antiphishing personalizadas para identificar a los **destinatarios** del mensaje a <u>los que se aplica la Directiva</u>. Las directivas antiphishing en Microsoft defender para Office 365 también tienen [configuraciones de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en las que puede especificar direcciones de correo electrónico de remitentes individuales o dominios de remitentes <u>que recibirán la protección de suplantación</u> , como se describe más adelante en este tema.
+  > La opción **aplicado a** es necesaria en las directivas antiphishing personalizadas para identificar a los **destinatarios** del mensaje a <u>los que se aplica la Directiva</u>. Las directivas antiphishing en Microsoft defender para Office 365 también tienen [configuraciones de suplantación](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) en las que puede especificar direcciones de correo electrónico de remitentes individuales o dominios de remitentes <u>que recibirán la protección de suplantación</u> , como se describe más adelante en este artículo.
 
 ## <a name="spoof-settings"></a>Configuración de suplantación
 

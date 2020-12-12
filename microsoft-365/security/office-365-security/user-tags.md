@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft defender para Office 365 plan 2. El filtrado de etiquetas está disponible a través de alertas, informes e investigaciones en Microsoft defender para Office 365 para identificar rápidamente los usuarios etiquetados.
-ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552024"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663612"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft defender para Office 365
 
@@ -48,15 +48,23 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **etiquetas de usuario** , Abra <https://protection.office.com/userTags> .
 
-- Para crear, modificar o quitar **etiquetas de usuario personalizadas**, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
+  - Para crear, modificar y eliminar etiquetas de usuario, debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de seguridad** .
+  - Para agregar y quitar miembros de las etiquetas de usuario existentes, debe ser miembro de los grupos de funciones de administración de la **organización**, **Administrador de seguridad** o operador de **seguridad** .
+  - Para obtener acceso de solo lectura a las etiquetas del usuario, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
-- Para configurar las cuentas prioritarias (etiquetas del sistema), debe ser [administrador global](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) o [Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-  También puede administrar y supervisar cuentas prioritarias en el centro de administración de Microsoft 365. Para obtener instrucciones, consulte [Manage and monitor Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+  **Notas**:
+
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - La administración de etiquetas de usuario está controlada por las funciones **lector** de etiquetas, **colaborador de etiquetas** y **Administrador de etiquetas** .
+
+- También puede administrar y supervisar cuentas prioritarias en el centro de administración de Microsoft 365. Para obtener instrucciones, consulte [Manage and monitor Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Usar el centro de seguridad para crear etiquetas de usuario
 
-1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> .
 
 2. En la página **etiquetas de usuario** que se abre, haga clic en **crear etiqueta**.
 
@@ -87,7 +95,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>Usar el centro de seguridad para ver las etiquetas de usuario
 
-1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> .
 
 2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea ver (no haga clic en la casilla de verificación).
 
@@ -97,7 +105,7 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>Usar el centro de seguridad para modificar las etiquetas de usuario
 
-1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> .
 
 2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea ver y, a continuación, haga clic en **Editar etiqueta**.
 
@@ -109,6 +117,6 @@ En este artículo se explica cómo configurar etiquetas de usuario en el centro 
 
 **Nota**: no se puede quitar la etiqueta de **cuenta** integrada con prioridad.
 
-1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> **User tags**.
+1. En el centro de seguridad, vaya a etiquetas de usuario de administración de **amenazas** \> .
 
 2. En la página **etiquetas de usuario** que se abre, seleccione la etiqueta de usuario que desea quitar, haga clic en **Eliminar etiqueta** y, a continuación, seleccione **sí, quitar** en la advertencia que aparece.

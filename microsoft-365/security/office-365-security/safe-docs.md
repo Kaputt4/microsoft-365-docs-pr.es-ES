@@ -1,5 +1,5 @@
 ---
-title: Documentos seguros en Microsoft defender para Office 365
+title: Documentos seguros en Microsoft Defender para Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659878"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -29,7 +29,7 @@ ms.locfileid: "48845485"
 
 Documentos seguros es una característica de la seguridad de Microsoft 365 E5 o Microsoft 365 E5 que usa [Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar documentos y archivos que se abren en la [vista protegida](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Documentos seguros solo está disponible para los usuarios con licencias de seguridad de *microsoft 365 E5* o *Microsoft 365 E5* . Estas licencias no se incluyen en los planes de Microsoft defender para Office 365.
 
@@ -37,9 +37,18 @@ Documentos seguros es una característica de la seguridad de Microsoft 365 E5 o 
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com>. Para ir directamente a la página **datos adjuntos seguros de ATP** , Abra <https://protection.office.com/safeattachmentv2> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Debe tener permisos asignados para poder llevar a cabo los procedimientos de este tema. Para habilitar y configurar documentos seguros, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
+  - Para establecer la configuración de los documentos seguros, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** .
+  - Para tener acceso de solo lectura a la configuración de documentos seguros, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
+
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+  **Notas**:
+
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ### <a name="how-does-microsoft-handle-your-data"></a>¿Cómo administra Microsoft sus datos?
 
@@ -49,13 +58,13 @@ Los archivos enviados por documentos seguros no se conservan en defender más al
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Usar el centro de seguridad & cumplimiento para configurar documentos seguros
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** \> **Policy** \> **datos adjuntos seguros de ATP** y haga clic en **configuración global**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** \>  \> **datos adjuntos seguros de ATP** y haga clic en **configuración global**.
 
 2. En la **configuración global** vuela hacia fuera que aparece, configure las siguientes opciones:
 
-   - **Active los documentos seguros para los clientes de Office** : mueva el botón de alternancia a la derecha para activar la característica: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Active los documentos seguros para los clientes de Office**: mueva el botón de alternancia a la derecha para activar la característica: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
 
-   - **Permitir que los usuarios haga clic a través de la vista protegida incluso si documentos seguros identifica el archivo como malintencionado** : le recomendamos que deje esta opción desactivada (deje el botón de alternancia a la izquierda: ![ desactivar ](../../media/scc-toggle-off.png) ).
+   - **Permitir que los usuarios haga clic a través de la vista protegida incluso si documentos seguros identifica el archivo como malintencionado**: le recomendamos que deje esta opción desactivada (deje el botón de alternancia a la izquierda: ![ desactivar ](../../media/scc-toggle-off.png) ).
 
    Cuando haya terminado, haga clic en **Guardar**.
 
@@ -84,7 +93,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Para comprobar que ha habilitado y configurado documentos seguros, siga uno de estos pasos:
 
-- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** : \> **Policy** \> **datos adjuntos seguros de ATP** , haga clic en **configuración global** y compruebe los documentos de seguridad **Activar documentos seguros para clientes de Office** y **permitir que los usuarios haga clic en la vista protegida, incluso si documentos seguros identifica el archivo como configuración malintencionada** .
+- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** : \>  \> **datos adjuntos seguros de ATP**, haga clic en **configuración global** y compruebe los documentos de seguridad **Activar documentos seguros para clientes de Office** y **permitir que los usuarios haga clic en la vista protegida, incluso si documentos seguros identifica el archivo como configuración malintencionada** .
 
 - Ejecute el siguiente comando en Exchange Online PowerShell y compruebe los valores de propiedad:
 

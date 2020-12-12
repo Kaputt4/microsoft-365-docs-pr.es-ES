@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la interfaz de administración web en la protección independiente de Exchange Online (EOP).
-ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202956"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659671"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
 
@@ -54,7 +54,7 @@ Los clientes de EOP independientes pueden tener acceso al EAC mediante los méto
 
 En esta sección se describen los elementos de la interfaz de usuario del EAC.
 
-![EOP: AdminCenter](../../media/EOP-AdminCenter.png)
+![Centro de administración de Exchange en Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Panel de características
 
@@ -107,16 +107,12 @@ Cuando seleccione un objeto de la vista de lista, la información acerca del obj
 
 ### <a name="me-tile-and-help"></a>Mosaico Yo y Ayuda
 
-El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. Desde el menú desplegable en **Ayuda**![Icono de ayuda](../../media/ITPro-EAC-HelpIcon.gif), puede realizar las siguientes acciones:
+El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. En el  ![ menú desplegable del icono ayuda de la ayuda ](../../media/ITPro-EAC-HelpIcon.gif) , puede realizar las siguientes acciones:
 
 - **Ayuda**: haga clic en ![ el icono ayuda ](../../media/ITPro-EAC-HelpIcon.gif) para ver el contenido de la ayuda en línea.
-
 - **Comentarios**: dejar comentarios.
-
 - **Comunidad**: publique una pregunta para encontrar respuestas en los foros de la comunidad.
-
 - **Deshabilitar la burbuja de ayuda**: la burbuja de ayuda muestra la ayuda contextual de los campos cuando se crea o edita un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.
-
 - **Mostrar registro de comandos**: se abre una nueva ventana que muestra los comandos de PowerShell equivalentes en función de lo que haya configurado en el EAC.
 
 ## <a name="supported-browsers"></a>Exploradores compatibles
