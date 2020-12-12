@@ -18,8 +18,32 @@
       href: compliance-extensibility.md
 - name: Administrar riesgos internos
   items:
+    - name: Soluciones de riesgos internos de Microsoft 365
+      href: insider-risk-solution-overview.md
+    - name: Cumplimiento de comunicaciones
+      items:
+        - name: Información general
+          href: communication-compliance-solution-overview.md
+        - name: Obtener más información sobre el cumplimiento de las comunicaciones
+          href: communication-compliance.md
+        - name: Planear el cumplimiento de las comunicaciones
+          href: communication-compliance-plan.md
+        - name: Introducción al cumplimiento de las comunicaciones
+          href: communication-compliance-configure.md
+        - name: Investigar y corregir las alertas de cumplimiento de las comunicaciones
+          href: communication-compliance-investigate-remediate.md
+        - name: Referencia de características para el cumplimiento de las comunicaciones
+          href: communication-compliance-feature-reference.md
+        - name: 'Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo'
+          href: communication-compliance-case-study.md
+        - name: Directivas de supervisión en Office 365
+          href: supervision-policies.md
+        - name: Configurar directivas de supervisión para Office 365
+          href: configure-supervision-policies.md
     - name: Administración de riesgos internos
       items:
+        - name: Información general
+          href: insider-risk-management-solution-overview.md
         - name: Información sobre riesgos internos de Microsoft
           href: insider-risk-management.md
         - name: Planificar la administración de riesgos internos
@@ -40,27 +64,12 @@
           href: insider-risk-management-users.md
         - name: Crear plantillas de aviso de riesgos internos
           href: insider-risk-management-notices.md
-    - name: Cumplimiento de las comunicaciones
-      items:
-        - name: Obtener más información sobre el cumplimiento de las comunicaciones
-          href: communication-compliance.md
-        - name: Planear el cumplimiento de las comunicaciones
-          href: communication-compliance-plan.md
-        - name: Introducción al cumplimiento de las comunicaciones
-          href: communication-compliance-configure.md
-        - name: Investigar y corregir las alertas de cumplimiento de las comunicaciones
-          href: communication-compliance-investigate-remediate.md
-        - name: Referencia de características para el cumplimiento de las comunicaciones
-          href: communication-compliance-feature-reference.md
-        - name: 'Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo'
-          href: communication-compliance-case-study.md
-        - name: Directivas de supervisión en Office 365
-          href: supervision-policies.md
-        - name: Configurar directivas de supervisión para Office 365
-          href: configure-supervision-policies.md
     - name: Barreras de información
-      href: information-barriers.md
       items:
+        - name: Información general
+          href: information-barriers-solution-overview.md
+        - name: Más información acerca de las barreras de información
+          href: information-barriers.md
         - name: Definir directivas de barreras de información
           href: information-barriers-policies.md
         - name: Atributos para las directivas de barreras de información
@@ -71,6 +80,8 @@
           href: information-barriers-edit-segments-policies.md
     - name: Administración del acceso con privilegios
       items:
+        - name: Información general
+          href: privileged-access-management-solution-overview.md
         - name: Obtenga más información sobre la administración del acceso con privilegios
           href: privileged-access-management-overview.md
         - name: Introducción a la administración del acceso con privilegios
@@ -346,7 +357,7 @@
               href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
-            - name: FX Connect
+            - name: Conectar FX
               href: archive-fxconnect-data.md
             - name: Jive
               href: archive-jive-data.md
@@ -364,11 +375,11 @@
               href: archive-slack-data.md
             - name: Symphony
               href: archive-symphony-data.md
-            - name: Delimitado por texto
+            - name: Texto delimitado
               href: archive-text-delimited-data.md
             - name: Páginas web
               href: archive-webpagecapture-data.md
-            - name: Equipos WebEx
+            - name: Teams de Webex
               href: archive-webexteams-data.md
             - name: Área de trabajo de Facebook
               href: archive-workplacefromfacebook-data.md
@@ -870,7 +881,7 @@
           href: export-view-audit-log-records.md
         - name: Usar el registro de auditoría para investigar problemas habituales
           href: auditing-troubleshooting-scenarios.md
-        - name: Usar la auditoría de uso compartido en el registro de auditoría
+        - name: Usar el uso compartido de auditoría en el registro de auditoría
           href: use-sharing-auditing.md
         - name: API de Actividad de administración de Office 365
           items:
@@ -918,7 +929,7 @@
           href: compliance-manager-faq.md
         - name: Administrador de cumplimiento (clásico)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
-    - name: Portal de confianza de servicios Microsoft
+    - name: Portal de confianza del Servicio Microsoft
       href: get-started-with-service-trust-portal.md
     - name: Pautas específicas por sectores
       items:

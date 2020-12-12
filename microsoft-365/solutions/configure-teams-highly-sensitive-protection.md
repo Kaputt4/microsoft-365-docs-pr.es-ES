@@ -3,7 +3,7 @@ title: Configuración de equipos con protección de datos con un nivel de confid
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 92defdf5d06788f4a4cbefeb5e81308611966bec
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527819"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612969"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -68,8 +68,8 @@ Crear una etiqueta de confidencialidad
 6. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
 7. En **Asignar permisos a usuarios y grupos específicos**, haga clic en **Asignar permisos**.
 8. Haga clic en **Agregar todos los usuarios y grupos de su organización**.
-9. Si hay usuarios invitados que deben tener permisos para descifrar los archivos, haga clic en **Agregar usuarios o grupos** y agréguelos.
-10.  Haga clic en **Guardar**y después en **Siguiente**.
+9. Si existen invitados que deben tener permisos para descifrar los archivos, haga clic en **Agregar usuarios o grupos** y agréguelos.
+10.  Haga clic en **Guardar** y después en **Siguiente**.
 11. En la página **Marcado de contenido**, active la marcación del contenido si quiere agregar automáticamente un encabezado, un pie de página o una marca de agua a los archivos clasificados con esta etiqueta.
 12. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.
 13. En el menú desplegable **Privacidad de los sitios de equipo conectados a grupos de Office 365**, elija **Privado: solo los miembros pueden acceder al sitio**.

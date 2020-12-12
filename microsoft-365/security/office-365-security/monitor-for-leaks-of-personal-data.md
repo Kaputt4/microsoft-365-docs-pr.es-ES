@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202704"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616385"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -117,7 +117,6 @@ La segunda directiva bloquea las descargas de archivos en cualquier dispositivo 
 Estos tipos de atributo estarán pronto disponibles en Cloud App Security:
 
 - Tipos de información confidencial
-
 - Etiquetas unificadas en Microsoft 365 y Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Panel de Cloud App Security
@@ -142,69 +141,24 @@ Más información:
 
 Envíe una alerta cuando se comparte un archivo que contiene un número de tarjeta de crédito desde una aplicación de nube autorizada.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Control</strong></th>
-<th align="left"><strong>Configuración</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Tipo de directiva</td>
-<td align="left">Directiva de archivo</td>
-</tr>
-<tr class="even">
-<td align="left">Plantilla de directiva</td>
-<td align="left">Sin plantilla</td>
-</tr>
-<tr class="odd">
-<td align="left">Gravedad de directiva</td>
-<td align="left">Alta</td>
-</tr>
-<tr class="even">
-<td align="left">Categoría</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">Configuración del filtro</td>
-<td align="left"><p>Nivel de acceso = público (Internet), público, externo</p>
-<p>Aplicación = &lt;seleccione aplicaciones&gt; (use esta opción si desea limitar la supervisión a aplicaciones SaaS específicas)</p></td>
-</tr>
-<tr class="even">
-<td align="left">Aplicar a</td>
-<td align="left">Todos los archivos, todos los propietarios</td>
-</tr>
-<tr class="odd">
-<td align="left">Control de contenido</td>
-<td align="left"><p>Incluye los archivos que coinciden con una expresión actual: Todos los países: Finanzas: Número de tarjeta de crédito</p>
-<p>No requerir contexto relevante: desactivado (esto coincidirá con palabras clave, así como regex)</p>
-<p>Incluir archivos con al menos 1 coincidencia</p>
-<p>Quitar máscara de los últimos 4 caracteres de la infracción: activada</p></td>
-</tr>
-<tr class="even">
-<td align="left">Alertas</td>
-<td align="left"><p>Crear una alerta para cada archivo coincidente: activada</p>
-<p>Límite de alertas diario: 1000</p>
-<p>Seleccionar una alerta como correo electrónico: activada</p>
-<p>Para: infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Gobierno</td>
-<td align="left"><p>Microsoft OneDrive para la Empresa</p>
-<p>Hacer privado: comprobar Quitar usuarios externos</p>
-<p>Resto de opciones: desactivadas</p>
-<p>Microsoft SharePoint Online</p>
-<p>Hacer privado: comprobar Quitar usuarios externos</p>
-<p>Resto de opciones: desactivadas</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Control|Configuración|
+|---|---|
+|Tipo de directiva|Directiva de archivo|
+|Plantilla de directiva|Sin plantilla|
+|Gravedad de directiva|Alta|
+|Categoría|DLP|
+|Configuración del filtro|Nivel de acceso = público (Internet), público, externo <p> Aplicación = \<select apps\> (use esta opción si desea limitar la supervisión a aplicaciones SaaS específicas)|
+|Aplicar a|Todos los archivos, todos los propietarios|
+|Control de contenido|Incluye los archivos que coinciden con una expresión actual: Todos los países: Finanzas: Número de tarjeta de crédito <p> No requerir contexto relevante: desactivado (esto coincidirá con palabras clave, así como regex) <p> Incluir archivos con al menos 1 coincidencia <p> Quitar máscara de los últimos 4 caracteres de la infracción: activada|
+|Alertas|Crear una alerta para cada archivo coincidente: activada <p> Límite de alertas diario: 1000 <p> Seleccionar una alerta como correo electrónico: activada <p> Para: infosec@contoso.com|
+|Gobierno|Microsoft OneDrive para la Empresa <p> Hacer privado: comprobar Quitar usuarios externos <p> Resto de opciones: desactivadas <p> Microsoft SharePoint Online <p> Hacer privado: comprobar Quitar usuarios externos <p> Resto de opciones: desactivadas|
+|
 
 Directivas similares:
 
 - Detectar el uso compartido de archivos que contengan DCP: dirección de correo electrónico
-
 - Detectar el uso compartido de archivos que contengan DCP: número de pasaporte
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Detectar Datos de recursos humanos o Datos de cliente en Box o OneDrive para la Empresa
@@ -214,64 +168,23 @@ Envía una alerta cuando se carga un archivo etiquetado como Datos de recursos h
 Notas:
 
 - La supervisión de Box requiere un conector configurado con el SDK API Connector.
-
 - Esta directiva requiere funcionalidades que actualmente están en versión preliminar privada.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Control</strong></th>
-<th align="left"><strong>Configuración</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Tipo de directiva</td>
-<td align="left">Directiva de actividad</td>
-</tr>
-<tr class="even">
-<td align="left">Plantilla de directiva</td>
-<td align="left">Sin plantilla</td>
-</tr>
-<tr class="odd">
-<td align="left">Gravedad de directiva</td>
-<td align="left">Alta</td>
-</tr>
-<tr class="even">
-<td align="left">Categoría</td>
-<td align="left">Control de uso compartido</td>
-</tr>
-<tr class="odd">
-<td align="left">Actúa en</td>
-<td align="left">Actividad única</td>
-</tr>
-<tr class="even">
-<td align="left">Configuración del filtro</td>
-<td align="left"><p>Tipo de actividad = cargar archivo</p>
-<p>Aplicación = Microsoft OneDrive para la Empresa y Box</p>
-<p>Etiqueta de clasificación (actualmente en versión preliminar privada): Azure Information Protection = datos del cliente, recursos humanos (datos de salario, recursos humanos), datos de empleado</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Alertas</td>
-<td align="left"><p>Crear una alerta: activada</p>
-<p>Límite de alertas diario: 1000</p>
-<p>Seleccionar una alerta como correo electrónico: activada</p>
-<p>Para: infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">Gobierno</td>
-<td align="left"><p>Todas las aplicaciones</p>
-<p>Poner el usuario en cuarentena: comprobar</p>
-<p>Resto de opciones: desactivadas</p>
-<p>Office 365</p>
-<p>Poner el usuario en cuarentena: comprobar</p>
-<p>Resto de opciones: desactivadas</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|Control|Configuración|
+|---|---|
+|Tipo de directiva|Directiva de actividad|
+|Plantilla de directiva|Sin plantilla|
+|Gravedad de directiva|Alta|
+|Categoría|Control de uso compartido|
+|Actúa en|Actividad única|
+|Configuración del filtro|Tipo de actividad = cargar archivo <p> Aplicación = Microsoft OneDrive para la Empresa y Box <p> Etiqueta de clasificación (actualmente en versión preliminar privada): Azure Information Protection = datos del cliente, recursos humanos (datos de salario, recursos humanos), datos de empleado|
+|Alertas|Crear una alerta: activada <p> Límite de alertas diario: 1000 <p> Seleccionar una alerta como correo electrónico: activada <p> Para: infosec@contoso.com|
+|Gobierno|Todas las aplicaciones <p> Poner el usuario en cuarentena: comprobar <p> Resto de opciones: desactivadas <p> Office 365 <p> Poner el usuario en cuarentena: comprobar <p> Resto de opciones: desactivadas|
+|
 
 Directivas similares:
 
 - Detectar descargas grandes de Datos de clientes o Datos de recursos humanos: envía una alerta cuando se detecta que un solo usuario está descargando un gran número de archivos que contienen datos de recursos humanos o de clientes en un breve período de tiempo.
-
 - Detectar el uso compartido de Datos de clientes y Datos de recursos humanos: envía una alerta cuando se comparten archivos con Datos de clientes o de recursos humanos.

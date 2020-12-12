@@ -3,7 +3,7 @@ title: Configure equipos con la protección de base de referencia
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845305"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613447"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -51,7 +51,7 @@ Para establecer la configuración de acceso de invitados de Teams
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todos**.
-3. En **Centros de administración** , haga clic en **Teams**.
+3. En **Centros de administración**, haga clic en **Teams**.
 4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **Configuración de toda la organización** y haga clic en **Acceso de invitado**.
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
@@ -67,8 +67,8 @@ Para reducir el riesgo de compartir accidentalmente archivos o carpetas con pers
 
 Para cambiar el vínculo para compartir predeterminado
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Directivas** , haga clic en **Uso compartido**.
-3. En **Vínculos de archivos y carpetas** , seleccione **Solo personas de la organización**.
+2. En **Directivas**, haga clic en **Uso compartido**.
+3. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
 4. Haga clic en **Guardar**.
 
 Para disfrutar de la mejor experiencia de uso compartido de invitados, también le recomendamos que habilite la [Integración de SharePoint y OneDrive con B2B de Azure AD](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
@@ -87,14 +87,14 @@ Para actualizar la configuración de uso compartido del sitio
 1. En la barra de herramientas del equipo, haga clic en **Archivos**.
 2. Haga clic en **Abrir en SharePoint**.
 3. En la barra de herramientas de SharePoint, haga clic en el icono de configuración y luego en **Permisos del sitio**.
-4. En el panel **Permisos del sitio** , en **Configuración de uso compartido** , haga clic en **Cambiar configuración de uso compartido**.
-5. En **Permisos de uso compartido** , elija **Los propietarios y miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios de sitios pueden compartir el sitio** y haga clic en **Guardar**.
+4. En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
+5. En **Permisos de uso compartido**, elija **Los propietarios y miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios de sitios pueden compartir el sitio** y haga clic en **Guardar**.
 
 ## <a name="additional-protections"></a>Protecciones adicionales
 
 Microsoft 365 ofrece otros métodos para proteger el contenido. Considere si las siguientes opciones ayudarían a mejorar la seguridad de su organización.
 
-- Hacer que los usuarios invitados acepten los [términos de uso](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Hacer que los invitados acepten las [condiciones de uso](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configurar una [directiva de tiempo de espera de sesión](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
 - Crear [tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) y usar [protección de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para establecer directivas en relación con el acceso a información confidencial.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
-ms.openlocfilehash: 4ff2c93e420957714815100243a6502e7ea087a7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446376"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615341"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -191,7 +191,7 @@ DMARC se puede implementar gradualmente sin que esto afecte al resto del flujo d
 3. Solicitar que los sistemas de correo externos no aceptan mensajes que no superen las pruebas de DMARC
 
     El último paso es implementar una directiva de rechazo. Una directiva de rechazo es un registro TXT de DMARC con una directiva establecida en reject (p=reject). Al hacerlo, pedimos a los receptores DMARC que no acepten los mensajes que no pasan las comprobaciones de DMARC.
-    
+
 4. ¿Cómo configuro DMARC para un subdominio?
 
 DMARC se implementa al publicar una directiva como un registro TXT en DNS y es jerárquico (por ejemplo, una directiva publicada para contoso.com se aplicará a sub.domain.contoso.com a menos que se defina explícitamente una directiva diferente para el subdominio). Esto es útil para que las organizaciones puedan especificar un número más reducido de registros de DMARC de alto nivel para mayor alcance. Se debe prestar especial atención a la configuración de registros de DMARC de subdominios explícitos en los que no quiere que los subdominios hereden el registro de DMARC del dominio de nivel superior.
@@ -249,7 +249,7 @@ Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso
 
 - Los [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Microsoft 365 para efectuar comprobaciones de DMARC.
 
-- Siga la [Serie de aprendizaje de DMARC](https://www.m3aawg.org/activities/training/dmarc-training-series) from M <sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
+- Siga la [Serie de aprendizaje de DMARC](https://www.m3aawg.org/activities/training/dmarc-training-series) de M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
 
 - Use la lista de comprobación que verá en [dmarcian](https://space.dmarcian.com/deployment/).
 

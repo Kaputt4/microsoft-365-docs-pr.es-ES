@@ -3,7 +3,7 @@ title: Configuración de un equipo con aislamiento de seguridad
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487487"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616301"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -50,7 +50,7 @@ Vea este vídeo para obtener información general del proceso.
 
 [![Póster de aislamiento de seguridad de Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-También puede descargar este póster en [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
+También puede descargar este póster en los formatos [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) o [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 ## <a name="initial-protections"></a>Protecciones iniciales
 
@@ -211,7 +211,7 @@ Si ha agregado personas con permiso de espectador en la etiqueta de confidencial
 
 Para agregar a usuarios al sitio
 1. En el sitio, haga clic en el icono de configuración y luego en **Permisos del sitio**.
-2. Haga clic en **Invitar a personas**y, después, en **Compartir solo el sitio**.
+2. Haga clic en **Invitar a personas** y, después, en **Compartir solo el sitio**.
 3. Escriba los nombres de los usuarios y grupos a los que desea invitar.
 4. Para cada persona o grupo que agregue, cambie sus permisos de **Edición** a **Lectura**.
 5. Elija si quiere enviarles un correo electrónico con un vínculo al sitio.
@@ -221,7 +221,7 @@ Para agregar a usuarios al sitio
 
 Microsoft 365 ofrece otros métodos para proteger el contenido. Considere si las siguientes opciones ayudarían a mejorar la seguridad de su organización.
 
-- Hacer que los usuarios invitados acepten los [términos de uso](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
+- Hacer que los invitados acepten los [términos de uso](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
 - Configurar una [directiva de tiempo de espera de sesión](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
 - Crear [tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) y usar [protección de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para establecer directivas en relación con el acceso a información confidencial.
 - Use revisiones de [acceso de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) para revisar periódicamente el acceso al equipo y la afiliación.

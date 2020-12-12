@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988463"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611357"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -90,9 +90,13 @@ Según la suscripción, estos son los informes disponibles.
     
 - [Uso del buzón](mailbox-usage.md)
     
-- [Activaciones de Office](microsoft-office-activations.md)
+- [Activaciones de Office](microsoft-office-activations-ww.md)
 
-- [Usuarios activos](active-users.md)
+- [Activaciones de Office para el Gobierno de Estados Unidos](microsoft-office-activations.md)
+
+- [Usuarios activos](active-users-ww.md)
+
+- [Usuarios activos para el Gobierno de Estados Unidos](active-users.md)
   
 - [Uso de aplicaciones de correo electrónico](email-apps-usage.md)
 
@@ -104,7 +108,9 @@ Según la suscripción, estos son los informes disponibles.
   
 - [Actividad de telefonía de clientes de Dynamics 365 para el gobierno de los Estados Unidos](forms-pro-activity.md)
 
-- [Grupos de Microsoft 365](office-365-groups.md)
+- [Grupos de Microsoft 365](office-365-groups-ww.md)
+
+- [Grupos de Microsoft 365 para el Gobierno de Estados Unidos](office-365-groups.md)
   
 - [Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ Según la suscripción, estos son los informes disponibles.
 
 - [Uso de OneDrive para la Empresa para el gobierno de Estados Unidos](onedrive-for-business-usage.md)
 
-- [Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage.md)
+- [Uso de las Aplicaciones de Microsoft 365](microsoft365-apps-usage-ww.md)
+
+- [Uso de las Aplicaciones de Microsoft 365 para el Gobierno de Estados Unidos](microsoft365-apps-usage.md)
   
 - [Uso del sitio de SharePoint](sharepoint-site-usage-ww.md)
 
@@ -202,7 +210,9 @@ Según la suscripción, estos son los informes disponibles.
 
 Use los informes de servicio para buscar cuánto utiliza un servicio un usuario en concreto. Por ejemplo, para ver cuánto espacio de almacenamiento del buzón ha consumido un usuario en concreto, abra el informe de uso del buzón y ordene los usuarios por nombre. Si tiene miles de usuarios, exporte el informe a Excel para filtrar la lista rápidamente.
   
-No puede generar un informe en el que especifique una cuenta de usuario y, a continuación, obtener una lista de los servicios que están utilizando y la cuota de uso.
+No puede generar un informe en el que especifique una cuenta de usuario, y después obtener una lista de los servicios que están utilizando y el tiempo de uso.
+
+En ocasiones, los nuevos usuarios aparecen como **desconocido**. Esto suele pasar debido a demoras al crear los perfiles de usuario.  
   
 ## <a name="hide-user-details-in-the-reports"></a>Ocultar detalles de usuario en los informes
 
@@ -212,7 +222,7 @@ Si desea ocultar la información de nivel de usuario cuando está generando sus 
 
 2. Select **Informes** 
   
-3. En el panel **informes** , seleccione las opciones que desee y, a continuación, guarde los cambios.
+3. En el panel **informes**, seleccione las opciones que desee y, a continuación, guarde los cambios.
   
 La lista de usuarios será similar a la siguiente:
   
