@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre cómo ver y buscar el registro de auditoría de administración en Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659446"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Ver el registro de auditoría de administrador en EOP independiente
 
@@ -32,7 +32,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 >
 > - El registro de auditoría de administración está habilitado de forma predeterminada y no se puede deshabilitar.
 >
-> - El registro de auditoría de administrador no registra las acciones basadas en los cmdlets que comienzan con los verbos **Get**, **Search**o **Test**.
+> - El registro de auditoría de administrador no registra las acciones basadas en los cmdlets que comienzan con los verbos **Get**, **Search** o **Test**.
 >
 > - Las entradas de los registros de auditoría se conservan durante 90 días. Cuando una entrada tiene más de 90 días, se elimina
 
@@ -42,16 +42,16 @@ El registro de auditoría de administrador registra acciones específicas, basad
 
 - Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol registros de auditoría o registros de auditoría con permiso de vista, que se asignan a los grupos de roles ComplianceManagement, OrganizationManagement (administradores globales) y SecurityAdministrator de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Debe tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. En concreto, necesita el **rol registros de auditoría o registros** **de auditoría con permiso de vista** , que se asignan a los grupos de roles administración de la **organización**, **Administración de cumplimiento** y **Administrador de seguridad** de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este artículo, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Usar el EAC para ver el registro de auditoría de administración
 
-1. En el EAC, vaya a auditoría de **Administración de cumplimiento** \> **Auditing**y, a continuación, elija **ejecutar el registro de auditoría de administrador**.
+1. En el EAC, vaya a auditoría de **Administración de cumplimiento** \> y, a continuación, elija **ejecutar el registro de auditoría de administrador**.
 
 2. En la página **Buscar cambios en los grupos de roles de administrador** que se abre, elija una fecha de **Inicio** y una **fecha de finalización** (el intervalo predeterminado es las últimas dos semanas) y, a continuación, elija **Buscar**. Todos los cambios de configuración realizados durante el período de tiempo especificado se muestran y se pueden ordenar, mediante la siguiente información:
 
@@ -112,7 +112,7 @@ Para obtener información más detallada acerca de la sintaxis y los parámet
 
 ### <a name="view-details-of-audit-log-entries"></a>Ver los detalles de las entradas del registro de auditoría
 
-El cmdlet **Search-AdminAuditLog** devuelve los campos descritos en la sección [contenido del registro de auditoría](#audit-log-contents) , más adelante en este tema. De los campos devueltos por el cmdlet, dos campos, **CmdletParameters** y **ModifiedProperties**, contienen información adicional que no se devuelve de forma predeterminada.
+El cmdlet **Search-AdminAuditLog** devuelve los campos descritos en la sección [contenido del registro de auditoría](#audit-log-contents) , más adelante en este artículo. De los campos devueltos por el cmdlet, dos campos, **CmdletParameters** y **ModifiedProperties**, contienen información adicional que no se devuelve de forma predeterminada.
 
 Para ver el contenido de los campos **CmdletParameters** y **ModifiedProperties** siga los pasos que se describen a continuación.
 
@@ -143,7 +143,7 @@ Todas las entradas del registro de auditoría contienen la información que se d
 
 ****
 
-|Field|Descripción|
+|Campo|Description|
 |---|---|
 |`RunspaceId`|Este campo se usa de forma interna en EOP.|
 |`ObjectModified`|Este campo contiene el objeto modificado por el cmdlet especificado en el `CmdletName` campo.|

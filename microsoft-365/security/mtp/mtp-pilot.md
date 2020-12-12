@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659326"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Ejecutar el proyecto piloto de Microsoft 365 defender 
 
@@ -35,7 +35,13 @@ ms.locfileid: "49131285"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Para determinar con eficacia el beneficio y la adopción de Microsoft 365 defender, puede ejecutar un proyecto piloto. Antes de habilitar Microsoft 365 defender en su entorno de producción e iniciar los casos de uso, es mejor planear las tareas que se deben realizar para el proyecto piloto y establecer los criterios de éxito. 
+
+Esta guía le ayudará a ejecutar un proyecto piloto proporcionando punteros para garantizar que tiene un plan bien estructurado, que le guiará por el uso de la característica de simulación de ataques y, finalmente, que concluya el piloto con puntos clave para que los refleje y documente los resultados.
+
+![Fases de la ejecución de un piloto de Microsoft 365 defender](../../media/pilotphases.png)
+
+
+La ejecución de un proyecto piloto ayuda a determinar eficazmente las ventajas de adoptiing Microsoft 365 defender. Antes de habilitar Microsoft 365 defender en su entorno de producción e iniciar los casos de uso, es mejor planear las tareas que se deben realizar para el proyecto piloto y establecer los criterios de éxito. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Cómo usar esta guía del piloto
@@ -52,7 +58,7 @@ Microsoft 365 defender es un conjunto unificado de defensa de la empresa, antes 
 
 Con la solución integrada Microsoft 365 defender, los profesionales de seguridad pueden combinar las señales de amenaza que Microsoft defender para el punto de conexión, Microsoft defender para Office 365, Microsoft defender para la identidad y la recepción de seguridad de aplicaciones en la nube de Microsoft reciben, y determinar el alcance completo y el impacto de la amenaza, cómo se introdujo en el entorno, cómo se ve afectado y cómo afecta actualmente a Microsoft 365 defender realiza acciones automáticas para evitar o detener el ataque y Autocorregir los buzones de correo, los extremos y las identidades de usuario afectados. Consulte la [información general de Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) para obtener más información.
 
-![Fases de la ejecución de un piloto de Microsoft 365 defender](../../media/pilotphases.png)
+
 
 La siguiente escala de tiempo de ejemplo varía en función de la necesidad de disponer de los recursos adecuados en el entorno. Es posible que algunas detecciones y flujos de trabajo necesiten más tiempo de aprendizaje que los otros.
 
@@ -66,7 +72,7 @@ La siguiente escala de tiempo de ejemplo varía en función de la necesidad de d
 
 Hay cuatro fases para ejecutar un piloto de Microsoft 365 defender:
 
-|Fase | Descripción | 
+|Fase | Description | 
 |:-------|:-----|
 | [Planeación](mtp-pilot-plan.md)<br> ~ 1 día| Obtenga información sobre lo que debe tener en cuenta antes de ejecutar el proyecto piloto de Microsoft 365 defender: <br><br>-Scope <br> Casos de uso de <br>- Requisitos <br>-Plan de pruebas <br> -Criterios de éxito <br> -Cuadro de mandos 
 | [Declaración](mtp-evaluation.md) <br>~ 2 días|  Obtenga acceso al centro de seguridad 365 de Microsoft para configurar su entorno piloto de Microsoft 365 defender. Se le guiará a:<br><br>-Identificar las partes interesadas y buscar la firma para el proyecto piloto <br> Consideraciones del entorno <br>Acceso a <br>-Instalación de Azure Active Directory <br> -Orden de configuración <br> -Inscríbase en la versión de prueba de Microsoft 365 E5 <br> -Configurar dominio <br>-Asignar licencias de Microsoft 365 E5 <br> -Completar el Asistente de configuración en el portal|

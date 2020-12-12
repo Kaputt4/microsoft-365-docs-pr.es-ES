@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores de organizaciones independientes de Exchange Online Protection (EOP) pueden obtener información sobre cómo crear, modificar y quitar grupos de distribución y grupos de seguridad habilitados para correo en el centro de administración de Exchange (EAC) y en PowerShell de Exchange Online Protection (EOP) independientes.
-ms.openlocfilehash: a395c0738093a00c0225aea22a6e556863eebee5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5ff7c61d51ded039b06d1faa98ba6390939b3413
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658850"
 ---
 # <a name="manage-groups-in-eop"></a>Administrar grupos en EOP
 
@@ -46,11 +46,11 @@ Puede administrar los grupos en el centro de administración de Exchange (EAC) y
 
 - Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Al administrar grupos en PowerShell independiente de EOP, puede encontrarse con limitaciones. Los procedimientos de PowerShell de este tema usan un método de procesamiento por lotes que da como resultado un retraso en la propagación de unos minutos antes de que los resultados de los comandos estén visibles.
+- Al administrar grupos en PowerShell independiente de EOP, puede encontrarse con limitaciones. Los procedimientos de PowerShell de este artículo usan un método de procesamiento por lotes que da como resultado un retraso en la propagación de unos minutos antes de que los resultados de los comandos estén visibles.
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol grupos de distribución, que se asigna a los grupos de roles OrganizationManagement (administradores globales) y RecipientManagement de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Debe tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. En concreto, necesita el rol **grupos de distribución** , que se asigna a los grupos de roles administración de la **organización** y **Administración de destinatarios** de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este artículo, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
@@ -59,7 +59,7 @@ Puede administrar los grupos en el centro de administración de Exchange (EAC) y
 
 ### <a name="use-the-eac-to-create-groups"></a>Usar el EAC para crear grupos
 
-1. En el EAC, vaya a grupos de **destinatarios** \> **Groups**.
+1. En el EAC, vaya a grupos de **destinatarios** \> .
 
 2. Haga clic en **nuevo** ![ icono nuevo ](../../media/ITPro-EAC-AddIcon.png) y, a continuación, seleccione una de las siguientes opciones:
 
@@ -93,7 +93,7 @@ Puede administrar los grupos en el centro de administración de Exchange (EAC) y
 
 ### <a name="use-the-eac-to-modify-distribution-groups"></a>Usar el EAC para modificar grupos de distribución
 
-1. En el EAC, vaya a grupos de **destinatarios** \> **Groups**.
+1. En el EAC, vaya a grupos de **destinatarios** \> .
 
 2. En la lista de grupos, seleccione el grupo de distribución o grupo de seguridad habilitado para correo que desea modificar y, a continuación, haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-AddIcon.png) .
 
@@ -133,7 +133,7 @@ Para quitar un miembro, selecciónelo y, a continuación, haga clic en **quitar*
 
 ### <a name="use-the-eac-to-remove-groups"></a>Usar el EAC para quitar grupos
 
-1. En el EAC, vaya a grupos de **destinatarios** \> **Groups**.
+1. En el EAC, vaya a grupos de **destinatarios** \> .
 
 2. En la lista de grupos, seleccione el grupo de distribución que desea quitar y, a continuación, haga clic en **quitar** ![ icono quitar ](../../media/ITPro-EAC-RemoveIcon.gif) .
 
@@ -229,7 +229,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Para comprobar que ha creado, modificado o quitado correctamente un grupo de distribución o un grupo de seguridad habilitado para correo, siga uno de estos pasos:
 
-- En el EAC, vaya a grupos de **destinatarios** \> **Groups**. Compruebe que el grupo aparece (o no aparece en la lista) y compruebe el valor del **tipo de grupo** . Seleccione el grupo y vea la información en el panel de detalles o haga clic en **Editar** ![ icono Editar ](../../media/ITPro-EAC-AddIcon.png) para ver la configuración.
+- En el EAC, vaya a grupos de **destinatarios** \> . Compruebe que el grupo aparece (o no aparece en la lista) y compruebe el valor del **tipo de grupo** . Seleccione el grupo y vea la información en el panel de detalles o haga clic en **Editar** ![ icono Editar ](../../media/ITPro-EAC-AddIcon.png) para ver la configuración.
 
 - En PowerShell independiente de EOP, ejecute el siguiente comando para comprobar que el grupo aparece (o no aparece en la lista):
 

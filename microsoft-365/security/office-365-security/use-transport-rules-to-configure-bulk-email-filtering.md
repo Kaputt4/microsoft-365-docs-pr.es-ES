@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo (reglas de transporte) para identificar y filtrar correo masivo (correo gris) en Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658642"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usar reglas de flujo de correo para filtrar correo electrónico masivo en EOP
 
@@ -36,11 +36,13 @@ En este tema se explica cómo crear estas reglas de flujo de correo en el centro
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Debe tener permisos asignados para poder realizar estos procedimientos:
+- Debe tener asignados permisos en Exchange online o Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. En concreto, necesita el **rol reglas de transporte** , que se asigna a los grupos de roles administración de la **organización**, administración de **cumplimiento** (administradores globales) y administración de **registros** de forma predeterminada.
 
-  - En Exchange Online, consulte el entrada "flujo de correo" en [Feature Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  Para obtener más información, consulte los siguientes temas:
 
-  - En EOP independiente, necesita el rol reglas de transporte, que se asigna a los roles OrganizationManagement, ComplianceManagement y RecordsManagement de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+  - [Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Permisos en EOP independiente](feature-permissions-in-eop.md)
+  - [Usar el EAC modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Para abrir el EAC en Exchange Online, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Para abrir el EAC en un EOP independiente, consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden obtener información sobre cómo asignar o quitar permisos en el centro de administración de Exchange (EAC) en Exchange Online Protection.
-ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659302"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Administrar grupos de roles en EOP independiente
 
@@ -34,9 +34,9 @@ Para obtener más información acerca de los roles y los grupos de roles, consul
 
 - Para abrir PowerShell independiente de EOP, consulte [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita la función de administración de funciones, que se asigna al grupo de funciones OrganizationManagement (administrador global) de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Debe tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. En concreto, necesita el rol de **Administración de roles** , que se asigna al grupo de roles administración de la **organización** de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este artículo, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
@@ -45,15 +45,15 @@ Para obtener más información acerca de los roles y los grupos de roles, consul
 
 ### <a name="use-the-eac-to-view-role-groups"></a>Usar el EAC para ver grupos de roles
 
-1. En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos. Aquí aparecen todos los grupos de roles de la organización.
+1. En el EAC, vaya a  \> **roles de administrador** de permisos. Aquí aparecen todos los grupos de roles de la organización.
 
-2. Seleccione un grupo de roles. El panel de detalles muestra el **nombre**, la **Descripción**, los **roles asignados**y los **administrados por** el grupo de funciones. También puede ver esta información si hace clic en **Editar** ![ icono Editar ](../../media/ITPro-EAC-EditIcon.png) .
+2. Seleccione un grupo de roles. El panel de detalles muestra el **nombre**, la **Descripción**, los **roles asignados** y los **administrados por** el grupo de funciones. También puede ver esta información si hace clic en **Editar** ![ icono Editar ](../../media/ITPro-EAC-EditIcon.png) .
 
 ### <a name="use-the-eac-to-create-role-groups"></a>Usar el EAC para crear grupos de roles
 
 Cuando se crea un nuevo grupo de roles, puede configurar usted mismo todas las opciones de configuración (durante la creación del grupo o después). O bien, puede copiar un grupo de roles existente y modificarlo.
 
-1. En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos y, a continuación, siga uno de estos pasos:
+1. En el EAC, vaya a  \> **roles de administrador** de permisos y, a continuación, siga uno de estos pasos:
 
    - **Cree manualmente un nuevo grupo de funciones**: haga clic en **Agregar** ![ icono Agregar ](../../media/ITPro-EAC-AddIcon.png) .
 
@@ -65,15 +65,15 @@ Cuando se crea un nuevo grupo de roles, puede configurar usted mismo todas las o
 
     - **Descripción**: escriba una descripción opcional para el grupo de roles.
 
-    - **Roles**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) o **quitar** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) para seleccionar o modificar los roles asignados al grupo de roles.
+    - **Roles**: haga clic en **Agregar** icono ![ ](../../media/ITPro-EAC-AddIcon.png) o **quitar** icono ![ quitar ](../../media/ITPro-EAC-RemoveIcon.gif) para seleccionar o modificar los roles asignados al grupo de roles.
 
-    - **Miembros**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) o **quitar** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) para modificar la pertenencia al grupo de roles.
+    - **Miembros**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) o **quitar** icono ![ quitar ](../../media/ITPro-EAC-RemoveIcon.gif) para modificar la pertenencia al grupo de roles.
 
 3. Cuando haya terminado, haga clic en **Guardar** para crear el grupo de roles.
 
 ### <a name="use-the-eac-to-modify-role-groups"></a>Usar el EAC para modificar grupos de roles
 
-En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) .
+En el EAC, vaya a  \> **roles de administrador** de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) .
 
 Las mismas opciones están disponibles cuando se modifican grupos de roles como cuando se crean grupos de roles. Puede:
 
@@ -87,7 +87,7 @@ Las mismas opciones están disponibles cuando se modifican grupos de roles como 
 
 #### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Usar el EAC modificar la lista de miembros de los grupos de roles
 
-1. En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) .
+1. En el EAC, vaya a  \> **roles de administrador** de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) .
 
 2. En la página de propiedades del grupo de roles que se abre, en la sección **miembros** , siga uno de estos pasos:
 
@@ -104,7 +104,7 @@ Las mismas opciones están disponibles cuando se modifican grupos de roles como 
 
 No puede quitar los grupos de roles integrados, pero puede quitar los grupos de roles personalizados que haya creado.
 
-1. En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos.
+1. En el EAC, vaya a  \> **roles de administrador** de permisos.
 
 2. Seleccione el grupo de roles que desee quitar y, a continuación, haga clic en **eliminar** ![ icono de eliminación ](../../media/ITPro-EAC-DeleteIcon.png) .
 
@@ -241,7 +241,7 @@ Para obtener información más detallada acerca de la sintaxis y los parámetros
 
 Para comprobar que el grupo de roles se copió correctamente, siga uno de estos pasos:
 
-- En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos y compruebe que el grupo de roles aparece (o no aparece en la lista). Seleccione el grupo de roles y Compruebe la configuración en el panel de detalles o haga clic en el icono **Editar** ![ Edición ](../../media/ITPro-EAC-EditIcon.png) para comprobar la configuración.
+- En el EAC, vaya a  \> **roles de administrador** de permisos y compruebe que el grupo de roles aparece (o no aparece en la lista). Seleccione el grupo de roles y Compruebe la configuración en el panel de detalles o haga clic en el icono **Editar** ![ Edición ](../../media/ITPro-EAC-EditIcon.png) para comprobar la configuración.
 
 - En Exchange Online PowerShell, reemplace \<Role Group Name\> por el nombre del grupo de roles y ejecute el siguiente comando para comprobar que el grupo de roles existe (o no existe) y Compruebe la configuración:
 

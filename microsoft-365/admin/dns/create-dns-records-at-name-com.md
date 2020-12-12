@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en name.com para Microsoft.
-ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657832"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Crear registros DNS en name.com para Microsoft
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Si name.com es su proveedor de hosting DNS, siga los pasos de este artículo para comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
   
@@ -87,11 +87,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     
   
-3. En la página de **Configuración**, elija ** Iniciar configuración**.
+3. En la página de **Configuración**, elija **Iniciar configuración**.
     
     
   
-4. En la página**verificar dominio**, seleccione **verificar**.
+4. En la página **verificar dominio**, seleccione **verificar**.
     
     
   
@@ -235,8 +235,8 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Tipo**|**Servicio**|**Grosor**|**TTL**|**Prio**|**Protocolo**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|Use el valor predeterminado (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
-    |SRV|sipfederationtls|1|Use el valor predeterminado (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
+    |SRV|sip|1 |Use el valor predeterminado (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
+    |SRV|sipfederationtls|1 |Use el valor predeterminado (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
    
    ![Nombre-BP-configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

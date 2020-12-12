@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: f636b9e6afc1e910a6b0c01a58a4e69127c80772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658616"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
@@ -42,7 +42,7 @@ ms.locfileid: "48645520"
 
  *Para agregar, modificar o quitar dominios, **debe** ser **administrador global** de un [plan empresarial o](https://products.office.com/business/office)empresarial. Estos cambios afectan a todo el espacio empresarial, los *administradores personalizados* o *los usuarios normales* no podrán realizar estos cambios.*  
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Iniciar sesión y ir a configuración \> dominios \> comprar un dominio
 
@@ -128,6 +128,6 @@ Después de registrar su dominio (en un registrador de dominios), inicie sesión
 
 [Agregar un dominio a Microsoft 365](../setup/add-domain.md)
 
-[Preguntas más frecuentes de dominios](../setup/domains-faq.md)
+[Preguntas más frecuentes de dominios](../setup/domains-faq.yml)
 
 [Actualice los registros DNS para mantener su sitio web con su proveedor de hospedaje actual](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

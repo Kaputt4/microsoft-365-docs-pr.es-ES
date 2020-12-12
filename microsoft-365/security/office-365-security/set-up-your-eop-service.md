@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Los administradores pueden aprender a configurar la protección independiente de Exchange Online (EOP) para proteger los entornos de correo electrónico locales.
-ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659422"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurar el servicio independiente de EOP
 
@@ -29,7 +29,7 @@ ms.locfileid: "49615677"
 En este tema se explica cómo configurar la protección independiente de Exchange Online (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> Se asume que tiene buzones locales y quiere protegerlos con EOP, lo que se conoce como un escenario independiente. Si desea hospedar todos los buzones de correo en la nube con Exchange Online, no es necesario completar todos los pasos indicados en este tema. Vaya a [comparar los planes de Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) para registrarse y comprar buzones en la nube.
+> Se asume que tiene buzones locales y quiere protegerlos con EOP, lo que se conoce como un escenario independiente. Si quiere hospedar todos los buzones en la nube con Exchange Online, no tiene que completar todos los pasos descritos en este artículo. Vaya a [comparar los planes de Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) para registrarse y comprar buzones en la nube.
 >
 > Si quiere hospedar algunos buzones de correo de forma local y otros en la nube, esto se considera un escenario híbrido. Requiere configuraciones de flujo de correo más avanzadas. [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) explica el flujo de correo híbrido y contiene vínculos a recursos que muestran cómo configurarlo.
 
@@ -37,11 +37,11 @@ En este tema se explica cómo configurar la protección independiente de Exchang
 
 - Tiempo estimado para completar esta tarea: 1 hora
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol dominios remotos y aceptados, que se asigna a los grupos de funciones MailFlowAdministrator y OrganizationManagement (administradores globales) de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Debe tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. En concreto, se necesita el rol **dominios remotos y aceptados** , que se asigna de forma predeterminada a los grupos de roles administración de la **organización** (administradores globales) y **Administrador de flujo de correo** . Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Si no se ha suscrito a EOP, visite [Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection) y elija si quiere comprar o probar el servicio.
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este artículo, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .

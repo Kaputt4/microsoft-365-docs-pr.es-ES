@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572566"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659482"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Hay disponibles varios informes en el centro de [seguridad & cumplimiento](https://protection.office.com) para ayudarle a ver cómo las características de seguridad del correo electrónico, como las características contra correo electrónico no deseado, antimalware y de cifrado de Microsoft 365 están protegiendo su organización. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el centro de seguridad & cumplimiento desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
+Hay disponibles varios informes en el centro de [seguridad & cumplimiento](https://protection.office.com) para ayudarle a ver cómo las características de seguridad del correo electrónico, como las características contra correo electrónico no deseado, antimalware y de cifrado de Microsoft 365 están protegiendo su organización. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el centro de seguridad & cumplimiento desde el panel de **informes** \> . Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
 
 ![Panel de informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -45,7 +45,7 @@ El informe de **usuarios comprometedos** muestra el número de cuentas de usuari
 
 La vista agregada muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **usuarios comprometidos**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **usuarios comprometidos**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=CompromisedUsers> .
 
 Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **filtros** y seleccionando uno o más de los siguientes valores:
 
@@ -61,7 +61,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
 - **Hora de creación**
 - **Nombre de usuario**
-- **Acción**
+- **Action**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
 
@@ -75,7 +75,7 @@ El **Informe de cifrado** está disponible en EOP (suscripciones con buzones en 
 
 La vista agregada permite filtrar los últimos 90 días, mientras que la vista de detalles permite el filtrado durante 10 días.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **Informe de cifrado**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=EncryptionReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **Informe de cifrado**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Para obtener más información sobre el cifrado, consulte [cifrado de correo electrónico en Microsoft 365](../../compliance/email-encryption.md).
 
@@ -122,7 +122,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
   - **Plantilla de cifrado**
   - **Método de cifrado**
   - **Dirección del destinatario**
-  - **Subject**
+  - **Asunto**
 
 - **Ver datos por: los 5 dominios de destinatarios principales**:
 
@@ -148,7 +148,7 @@ El informe **de detecciones de malware en el informe de correo electrónico** mu
 
  El filtro de vista agregado permite 90 días, mientras que el filtro de tabla de detalles sólo permite 10 días.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **detecciones de malware en correo electrónico**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=MalwareDetections> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **detecciones de malware en correo electrónico**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=MalwareDetections> .
 
 ![Detecciones de malware en el widget de correo electrónico en el panel informes](../../media/malware-detections-widget.png)
 
@@ -166,7 +166,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
-- **Subject**
+- **Asunto**
 - **Filename**
 - **Nombre del malware**
 
@@ -186,7 +186,7 @@ El informe de **detecciones de correo no deseado** muestra mensajes de correo el
 
 La vista agregada permite el filtrado de 90 días, mientras que la tabla de detalles permite el filtrado de 10 días.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **detecciones de correo no deseado**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=SpamDetections> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **detecciones de correo no deseado**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=SpamDetections> .
 
 ![Widget de detecciones de correo no deseado en el panel informes](../../media/spam-detections-report-widget.png)
 
@@ -228,8 +228,8 @@ Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se most
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
-- **Acción**
-- **Subject**
+- **Action**
+- **Asunto**
 
 Si hace clic en **filtros** en una tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -245,7 +245,7 @@ El informe de **detecciones de suplantación de identidad** muestra el número d
 
 La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles sólo permite diez días de filtrado.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **detecciones de suplantación de identidad**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=SpoofMailReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **detecciones de suplantación de identidad**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=SpoofMailReport> .
 
 ![Widget detecciones de suplantación en el panel de informes](../../media/spoof-detections-widget.png)
 
@@ -267,7 +267,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
-- **Acción**
+- **Action**
 - **Número de mensajes**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
@@ -280,7 +280,7 @@ El informe proporciona el número de mensajes de correo electrónico con conteni
 
 **Nota**: es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
 - Microsoft defender para Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -418,7 +418,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 - **Ver datos por: invalidación de mensaje**:
 
   - **Date**
-  - **Subject**
+  - **Asunto**
   - **Remitente**
   - **Destinatarios**
   - **Detectado por**
@@ -437,7 +437,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 - Todos los demás gráficos:
 
   - **Date**
-  - **Subject**
+  - **Asunto**
   - **Remitente**
   - **Destinatarios**
   - **Detectado por**
@@ -458,7 +458,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
 El informe de **malware más alto** muestra los distintos tipos de malware detectados por la [protección antimalware en EOP](anti-malware-protection.md).
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **malware principal**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=TopMalware> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **malware principal**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=TopMalware> .
 
 ![Widget de malware principal en el panel de informes](../../media/top-malware-report-widget.png)
 
@@ -487,9 +487,9 @@ Hay más detalles disponibles para cada mensaje, incluidos el motivo de la entre
 
 Para ver este informe, en el [centro de seguridad & cumplimiento](https://protection.office.com), realice una de las siguientes acciones:
 
-- Vaya a **Threat management** \> **Dashboard** \> **mensajes de los que ha informado el usuario del panel de administración de** amenazas.
+- Vaya a  \>  \> **mensajes de los que ha informado el usuario del panel de administración de** amenazas.
 
-- Vaya a **Threat management** \> **Review** \> **los mensajes de revisión de administración de amenazas que ha informado el usuario**.
+- Vaya a  \>  \> **los mensajes de revisión de administración de amenazas que ha informado el usuario**.
 
 ![En el centro de seguridad & cumplimiento, seleccione \> \> mensajes notificados por el usuario de revisión de administración de amenazas](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
@@ -498,7 +498,7 @@ Para ver este informe, en el [centro de seguridad & cumplimiento](https://protec
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
-Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
+Para poder ver y usar los informes descritos en este artículo, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
 
 - **Administración de organizaciones**
 - **Administrador de seguridad**
@@ -507,7 +507,7 @@ Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno
 
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

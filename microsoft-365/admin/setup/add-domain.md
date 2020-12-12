@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Agregue su dominio a Microsoft 365 en el centro de administración de Microsoft 365 agregando un registro DNS en su host DNS. El Asistente para la instalación le guiará por el proceso.
-ms.openlocfilehash: 3a4cd31a37eb01570f58e9cdb83940640768a273
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658056"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "48644620"
 
 ::: moniker-end
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](domains-faq.yml)** si no encuentra lo que busca. 
   
  *Para agregar, modificar o quitar dominios, **debe** ser **administrador global** de un [plan empresarial o](https://products.office.com/business/office)empresarial. Estos cambios afectan a todo el espacio empresarial, los *administradores personalizados* o *los usuarios normales* no podrán realizar estos cambios.*  
 
@@ -75,7 +75,7 @@ ms.locfileid: "48644620"
 
 ::: moniker-end
     
-2. Vaya a la página **configuración**de  >  **dominios** . 
+2. Vaya a la página **configuración** de  >  **dominios** . 
 
 3. Seleccione **Agregar dominio**.
     
@@ -100,7 +100,7 @@ ms.locfileid: "48644620"
     
     Si no conoce el proveedor de host DNS o el registrador de dominios de su dominio, vea [Encuentre su registrador de dominios o proveedor de host DNS](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Si desea esperar más adelante, anule la selección de todos los servicios y haga clic en **continuar**o bien, en el paso anterior de la conexión de dominio, elija **más opciones** y seleccione **omitir esta por ahora**.
+    Si desea esperar más adelante, anule la selección de todos los servicios y haga clic en **continuar** o bien, en el paso anterior de la conexión de dominio, elija **más opciones** y seleccione **omitir esta por ahora**.
     
 8. Haga clic en **Finalizar** (ya está listo).
 
@@ -110,7 +110,7 @@ Siga los pasos a continuación para agregar un registro personalizado para un si
 
 1. Inicie sesión en el centro de administración de Microsoft en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Vaya a la página **configuración**de   >  **dominios** .
+2. Vaya a la página **configuración** de   >  **dominios** .
 
 3. En la página **Dominios**, seleccione un dominio. 
     
@@ -151,7 +151,7 @@ Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ah
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Preguntas más frecuentes de dominios](domains-faq.md)
+[Preguntas más frecuentes de dominios](domains-faq.yml)
 
 [¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md)
 

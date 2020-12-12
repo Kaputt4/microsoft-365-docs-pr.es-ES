@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Freenom para Microsoft.
-ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657880"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Crear registros DNS en Freenom para Microsoft
 
-[Consulte preguntas más frecuentes acerca de los dominios ](../setup/domains-faq.md) si no encuentra lo que está buscando. 
+[Consulte preguntas más frecuentes acerca de los dominios ](../setup/domains-faq.yml) si no encuentra lo que está buscando. 
   
 > [!CAUTION]
 > El sitio web de Freenom no admite los registros SRV, lo que significa que no funcionarán varias características de Skype empresarial online y Outlook Web App. Independientemente del plan de Microsoft que use, hay importantes limitaciones de servicio y es posible que quiera cambiar a un proveedor de host DNS diferente. 
@@ -53,7 +53,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
     ![Inicio de sesión de Freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Seleccione **servicios**y, a continuación, seleccione **mis dominios**.
+2. Seleccione **servicios** y, a continuación, seleccione **mis dominios**.
     
     ![Freenom seleccionar servicios y mis dominios](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
@@ -94,11 +94,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     
   
-3. En la página de **Configuración**, elija ** Iniciar configuración**.
+3. En la página de **Configuración**, elija **Iniciar configuración**.
     
     
   
-4. En la página**verificar dominio**, seleccione **verificar**.
+4. En la página **verificar dominio**, seleccione **verificar**.
     
     
   
@@ -112,7 +112,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Inicio de sesión de Freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Seleccione **servicios**y, a continuación, seleccione **mis dominios**.
+2. Seleccione **servicios** y, a continuación, seleccione **mis dominios**.
     
     ![Freenom seleccionar servicios y mis dominios](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
@@ -120,7 +120,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Freenom seleccione administrar dominio](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Establezca el nombre para el dominio en los servidores de nombres Freenom predeterminados. Seleccione **herramientas de administración**y, a continuación, seleccione **servidores de nombres**.
+4. Establezca el nombre para el dominio en los servidores de nombres Freenom predeterminados. Seleccione **herramientas de administración** y, a continuación, seleccione **servidores de nombres**.
     
     ![Configuración de los servidores de nombres Freenom](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
@@ -140,7 +140,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre**|**Tipo**|**TTL**|**Target**|**Prioridad**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |MX (intercambiador de correo)  <br/> |3600 (segundos)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Nota:** Obtén tu  *\<domain-key\>*  cuenta de Microsoft.   [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(se deja en blanco)  <br/> |MX (intercambiador de correo)  <br/> |3600 (segundos)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Nota:** Obtén tu  *\<domain-key\>*  cuenta de Microsoft.   [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Registro MX de Freenom](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -157,7 +157,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Inicio de sesión de Freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Seleccione **servicios**y, a continuación, seleccione **mis dominios**.
+2. Seleccione **servicios** y, a continuación, seleccione **mis dominios**.
     
     ![Freenom seleccionar servicios y mis dominios](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
@@ -203,7 +203,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![Inicio de sesión de Freenom](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Seleccione **servicios**y, a continuación, seleccione **mis dominios**.
+2. Seleccione **servicios** y, a continuación, seleccione **mis dominios**.
     
     ![Freenom seleccionar servicios y mis dominios](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   

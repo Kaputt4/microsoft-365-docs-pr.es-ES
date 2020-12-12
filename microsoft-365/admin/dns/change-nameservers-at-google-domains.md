@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Obtenga información sobre cómo configurar Microsoft para que administre los registros DNS de su dominio personalizado en Google Domains.
-ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e475e222b6f1c9717008a49b172b0ecac5ec6fc7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646432"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658445"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Cambiar los servidores DNS para configurar Microsoft con Google Domains
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Siga estas instrucciones si desea que Microsoft administre los registros DNS por usted. (Si lo prefiere, puede [administrar todos los registros DNS en Google Domains](create-dns-records-at-google-domains.md)).
   
@@ -74,9 +74,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
 2. En la página **Dominios**, elija el dominio que está verificando. 
     
-3. En la página de **Configuración**, elija ** Iniciar configuración**.
+3. En la página de **Configuración**, elija **Iniciar configuración**.
     
-4. En la página**Verificar dominio**, elija **Verificar**.
+4. En la página **Verificar dominio**, elija **Verificar**.
     
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -146,7 +146,7 @@ Para completar la configuración de su dominio con Microsoft, debe cambiar los r
 1. Si en la lista se muestran otros servidores DNS, seleccione **Editar**.
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Es decir, elimine solo los servidores DNS actuales que  *no*  tengan el nombre **ns1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Es decir, elimine solo los servidores DNS actuales que  *no*  tengan el nombre **ns1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** o **NS4.BDM.microsoftonline.com**). 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   

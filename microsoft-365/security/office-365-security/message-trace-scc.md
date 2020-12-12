@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658993"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -85,7 +85,7 @@ El valor predeterminado es de **2 días**, pero puede especificar intervalos de 
 
   Durante 10 días o menos, los resultados están disponibles al instante como un informe de **Resumen** . Si especifica un intervalo de tiempo que es incluso ligeramente mayor que 10 días, los resultados se retrasarán, ya que solo están disponibles como archivo CSV descargable ( **Resumen mejorado** o informes **extendidos** ).
 
-  Para obtener más información acerca de los diferentes tipos de informes, vea la sección [Choose Report Type](#choose-report-type) de este tema.
+  Para obtener más información acerca de los diferentes tipos de informes, vea la sección [Choose Report Type](#choose-report-type) de este artículo.
 
   **Nota**: el resumen mejorado y los informes extendidos se preparan con datos de seguimiento de mensajes archivados y puede tardar varias horas antes de que el informe esté disponible para su descarga. En función de cuántos otros administradores hayan enviado solicitudes de informe alrededor del mismo tiempo, es posible que también perciba un retraso antes de que se inicie el procesamiento para la solicitud en cola.
 
@@ -185,7 +185,7 @@ Los registros de mensajes relacionados son registros que compartieron el mismo i
 
 Después de seleccionar la casilla de verificación de una fila, puede buscar registros relacionados del mensaje haciendo clic en el botón **Buscar relacionado** que aparece o seleccionando **más opciones** ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **para buscar registros relacionados para este mensaje**.
 
-Para obtener más información acerca del identificador de mensaje, vea la sección identificador de mensaje anteriormente en este tema.
+Para obtener más información acerca del identificador de mensaje, vea la sección identificador de mensaje anteriormente en este artículo.
 
 #### <a name="message-trace-details"></a>Detalles del seguimiento de mensajes
 
@@ -225,7 +225,7 @@ Los detalles del seguimiento de mensajes contienen la siguiente información adi
 
 - **Más información**: esta sección contiene los siguientes detalles:
 
-  - **Identificador del mensaje**: este valor se describe en la sección [identificador de mensaje](#message-id) anteriormente en este tema. Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **Identificador del mensaje**: este valor se describe en la sección [identificador de mensaje](#message-id) anteriormente en este artículo. Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Tamaño del mensaje**
 
@@ -253,7 +253,7 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 - **total_bytes**: el tamaño del mensaje en bytes, incluidos los datos adjuntos.
 
-- **message_id**: este valor se describe en la sección [identificador de mensaje](#message-id) anteriormente en este tema. Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: este valor se describe en la sección [identificador de mensaje](#message-id) anteriormente en este artículo. Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: un valor de identificador de mensaje único que persiste en todas las copias del mensaje que se pueden crear debido a la bifurcación o a la expansión del grupo de distribución. Un valor de ejemplo es `1341ac7b13fb42ab4d4408cf7f55890f` .
 
@@ -343,7 +343,7 @@ Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de c
 
 ****
 
-|Valor|Descripción|
+|Valor|Description|
 |---|---|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El mensaje se marcó como correo no deseado por un filtrado contra correo electrónico no deseado (también conocido como filtrado de contenido).|
@@ -373,7 +373,7 @@ Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de m
 
 ****
 
-|Valor|Descripción|
+|Valor|Description|
 |---|---|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM` indica que el malware podría haber sido detectado por cualquier número de motores. `EV` indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -399,7 +399,7 @@ Un valor de **custom_data** que empieza por `S:TRA` es del agente de reglas de t
 
 ****
 
-|Valor|Descripción|
+|Valor|Description|
 |---|---|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

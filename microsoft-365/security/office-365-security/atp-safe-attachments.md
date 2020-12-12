@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la característica datos adjuntos seguros de Microsoft defender para Office 365.
-ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659204"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Datos adjuntos seguros de Microsoft defender para Office 365
 
@@ -65,11 +65,11 @@ En esta sección se describe la configuración en directivas de datos adjuntos s
 
   |Opción|Efecto|Se usa cuando se desea:|
   |---|---|---|
-  |**Desactivar**|Datos adjuntos seguros no se examinan los datos adjuntos de malware. La [protección antimalware en EOP](anti-malware-protection.md)sigue examinando los mensajes en busca de malware.|Desactivar el análisis para los destinatarios seleccionados. <p> Evitar retrasos innecesarios en el correo interno de enrutamiento. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros para los destinatarios que solo reciben mensajes de remitentes de confianza.**|
+  |**Desactivado**|Datos adjuntos seguros no se examinan los datos adjuntos de malware. La [protección antimalware en EOP](anti-malware-protection.md)sigue examinando los mensajes en busca de malware.|Desactivar el análisis para los destinatarios seleccionados. <p> Evitar retrasos innecesarios en el correo interno de enrutamiento. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros para los destinatarios que solo reciben mensajes de remitentes de confianza.**|
   |**Monitor**|Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que ocurre con malware detectado. <p> La entrega de mensajes seguros puede retrasarse debido al análisis de datos adjuntos seguros.|Vea dónde se detecta el malware detectado en su organización.|
   |**Bloquear**|Impide la entrega de mensajes con datos adjuntos de malware detectados. <p> Los mensajes se [ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <p> La entrega de mensajes seguros puede retrasarse debido al análisis de datos adjuntos seguros.|Protege a su organización de ataques repetidos con los mismos datos adjuntos de malware. <p> Este es el valor predeterminado y el valor recomendado en las directivas de seguridad estándar y estrictas [preestablecidas](preset-security-policies.md).|
   |**Replace**|Quita los datos adjuntos de malware detectados. <p> Notifica a los destinatarios que se han quitado los datos adjuntos. <p>  Los mensajes se [ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> La entrega de mensajes seguros puede retrasarse debido al análisis de datos adjuntos seguros.|Eleva la visibilidad a los destinatarios de que se quitaron los datos adjuntos debido al malware detectado.|
-  |**Entrega dinámica**|Entrega los mensajes inmediatamente, pero reemplaza los datos adjuntos con marcadores de posición hasta que se complete el análisis de datos adjuntos seguros. <p> Para obtener más información, consulte la sección [directivas de entrega dinámica en datos adjuntos seguros](#dynamic-delivery-in-safe-attachments-policies) , más adelante en este tema.|Evite los retrasos de mensajes mientras protege a los destinatarios de archivos malintencionados. <p> Permita a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se realiza el análisis.|
+  |**Entrega dinámica**|Entrega los mensajes inmediatamente, pero reemplaza los datos adjuntos con marcadores de posición hasta que se complete el análisis de datos adjuntos seguros. <p> Para obtener más información, vea la sección [directivas de entrega dinámica en datos adjuntos seguros](#dynamic-delivery-in-safe-attachments-policies) , más adelante en este artículo.|Evite los retrasos de mensajes mientras protege a los destinatarios de archivos malintencionados. <p> Permita a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se realiza el análisis.|
   |
 
 - **Redirigir datos adjuntos en detección: habilitar redirección** y **enviar los datos adjuntos a la siguiente dirección de correo electrónico**: para las acciones **bloquear**, **supervisar** o **reemplazar** , envíe mensajes que contengan datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para el análisis y la investigación.

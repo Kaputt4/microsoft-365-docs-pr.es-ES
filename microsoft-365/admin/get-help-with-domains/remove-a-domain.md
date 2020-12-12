@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: 4eb44914daf500ac48f140bd999a2cf783a9bf83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655535"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
 
@@ -38,7 +38,7 @@ ms.locfileid: "48645292"
 
 ::: moniker-end
   
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 ¿Está eliminando su dominio porque quiere agregarlo a un plan de suscripción de Microsoft 365 diferente? ¿O solo quiere cancelar su suscripción? Puede [cambiar su plan o suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md), o bien [cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -100,9 +100,9 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>.
 
-2. Vaya a **usuarios** \> **activos**y seleccione su cuenta de la lista.
+2. Vaya a **usuarios** \> **activos** y seleccione su cuenta de la lista.
 
-3. En la pestaña **cuenta** , seleccione **administrar nombre de usuario**y, a continuación, elija un dominio diferente.
+3. En la pestaña **cuenta** , seleccione **administrar nombre de usuario** y, a continuación, elija un dominio diferente.
   
 4. En la parte superior, selecciona el nombre de la cuenta y, a continuación, selecciona **Cerrar sesión**.
 
@@ -114,9 +114,9 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. Vaya a **usuarios** \> **activos**y seleccione su nombre en la lista.
+1. Vaya a **usuarios** \> **activos** y seleccione su nombre en la lista.
 
-2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
+2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar** y, a continuación, elija un dominio diferente.
 
 3. Seleccione **establecer como principal** > **Guardar** > **cierre**.
   
@@ -130,9 +130,9 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya a **usuarios** \> **activos**y seleccione su nombre en la lista.
+1. Vaya a **usuarios** \> **activos** y seleccione su nombre en la lista.
 
-2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
+2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar** y, a continuación, elija un dominio diferente.
 
 3. Seleccione **establecer como principal** > **Guardar** > **cierre**.
   
@@ -148,7 +148,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
+1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> .
   
 2. Seleccione el nombre del grupo y, a continuación, en la pestaña **General** , en **dirección de correo electrónico,** haga clic en **Editar**.
 
@@ -160,7 +160,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos > **Groups** .
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos >  .
 
 2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
 
@@ -172,7 +172,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos > **Groups** .
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos >  .
 
 2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
 
@@ -227,7 +227,7 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Preguntas más frecuentes de dominios](../setup/domains-faq.md)
+[Preguntas más frecuentes de dominios](../setup/domains-faq.yml)
 
 [Cambiar a otro plan de Microsoft 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

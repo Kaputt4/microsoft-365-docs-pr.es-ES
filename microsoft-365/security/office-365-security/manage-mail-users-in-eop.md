@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Obtenga información sobre cómo administrar usuarios de correo en Exchange Online Protection (EOP), incluido el uso de la sincronización de directorios, el EAC y PowerShell para administrar usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356732"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658838"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
 
@@ -30,9 +30,9 @@ En las organizaciones independientes de Exchange Online Protection (EOP) sin buz
 > [!NOTE]
 > Al crear un usuario de correo, la cuenta de usuario correspondiente está disponible en el centro de administración de Microsoft 365. Cuando se crea una cuenta de usuario en el centro de administración de Microsoft 365, no se puede usar esa cuenta para crear un usuario de correo.
 
-El método recomendado para crear y administrar usuarios de correo en EOP independiente es usar la sincronización de directorios, tal como se describe en la sección [usar la sincronización de directorios para administrar usuarios de correo](#use-directory-synchronization-to-manage-mail-users) , más adelante en este tema.
+El método recomendado para crear y administrar usuarios de correo en EOP independiente es usar la sincronización de directorios, tal como se describe en la sección [usar la sincronización de directorios para administrar usuarios de correo](#use-directory-synchronization-to-manage-mail-users) , más adelante en este artículo.
 
-Para organizaciones independientes de EOP con un pequeño número de usuarios, puede Agregar y administrar usuarios de correo en el centro de administración de Exchange (EAC) o en PowerShell independiente de EOP, tal y como se describe en este tema.
+Para organizaciones independientes de EOP con un pequeño número de usuarios, puede Agregar y administrar usuarios de correo en el centro de administración de Exchange (EAC) o en PowerShell independiente de EOP, tal como se describe en este artículo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -42,9 +42,9 @@ Para organizaciones independientes de EOP con un pequeño número de usuarios, p
 
 - Al crear usuarios de correo en el PowerShell de EOP, es posible que se encuentre con limitaciones. Además, los cmdlets de PowerShell de EOP usan un método de procesamiento por lotes que da como resultado un retraso en la propagación de unos minutos antes de que los resultados de los comandos estén visibles.
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita los roles creación de destinatarios de correo (crear) y destinatarios de correo (modificar), que se asignan a los grupos de roles OrganizationManagement (administradores globales) y RecipientManagement de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Debe tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. En concreto, necesita los roles **creación de destinatarios de correo** (crear) y **destinatarios de correo** (modificar), que se asignan a los grupos de roles administración de destinatarios (administrador global) y  **destinatarios** de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este artículo, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Solicite ayuda en los foros de Exchange. Visite el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
@@ -53,7 +53,7 @@ Para organizaciones independientes de EOP con un pequeño número de usuarios, p
 
 ### <a name="use-the-eac-to-create-mail-users"></a>Usar el EAC para crear usuarios de correo
 
-1. En el EAC, vaya a contactos de **destinatarios** \> **Contacts** .
+1. En el EAC, vaya a contactos de **destinatarios** \>  .
 
 2. Haga clic en **nuevo** ![ icono nuevo ](../../media/ITPro-EAC-AddIcon.png) . En la página **nuevo usuario de correo** que se abre, configure las siguientes opciones. La configuración marcada con un <sup>\*</sup> es obligatorio.
 

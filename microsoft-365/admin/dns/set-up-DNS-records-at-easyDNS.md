@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en easyDNS para Microsoft.
-ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a971a722f071ef5df9ce0fba387cfacfeb409f5b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656824"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Crear registros DNS en easyDNS para Microsoft
 
-[Consulte preguntas más frecuentes acerca de los dominios ](../setup/domains-faq.md) si no encuentra lo que está buscando. 
+[Consulte preguntas más frecuentes acerca de los dominios ](../setup/domains-faq.yml) si no encuentra lo que está buscando. 
   
 Deberá agregar todos los registros DNS siguientes al sitio web del registrador para enrutar el correo a Microsoft, usar su dominio para Teams y Skype empresarial, y así sucesivamente.
   
@@ -63,7 +63,7 @@ Nota: Actualmente, los registros SRV no están disponibles en todos los paquetes
     
 11. En la página **configuración** , seleccione **Iniciar configuración.**
     
-12. En la página**Verificar dominio**, elija **Verificar**. 
+12. En la página **Verificar dominio**, elija **Verificar**. 
     
 ## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Agregar un registro MX para redirigir el correo electrónico a Microsoft
 
@@ -140,8 +140,8 @@ Nota: Actualmente, los registros SRV no están disponibles en easyDNS ' dominio 
     
     |**SERVICIO**|**Protocolo**|**HOST**|**PRIORIDAD**|**WGT**|**PUERTO**|**DESTINO (debe terminar con ".")**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Seleccione **siguiente**. 
     

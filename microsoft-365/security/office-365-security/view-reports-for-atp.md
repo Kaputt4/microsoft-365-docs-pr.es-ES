@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Busque y use informes de Microsoft defender para Office 365 en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659458"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Ver los informes de defender para Office 365 en el panel de informes del centro de seguridad & cumplimiento
 
@@ -35,7 +35,7 @@ Microsoft defender para Office 365 organizaciones (por ejemplo, suscripciones a 
 
 ![Panel informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Informe de tipos de archivo de defender para Office 365
+## <a name="defender-for-office-365-file-types-report"></a>Informe de tipos de archivo de Microsoft Defender para Office 365
 
 El informe **de la defender para Office 365 del informe de tipos de archivo** muestra el tipo de archivos detectados como malintencionados por [datos adjuntos seguros](atp-safe-attachments.md).
 
@@ -110,7 +110,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Subject**
+  - **Asunto**
 
   Si hace clic en **filtros**, puede modificar los resultados con los siguientes filtros:
 
@@ -119,7 +119,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 Para volver a la vista informes, haga clic en **Ver informe**.
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Informe de disposición de mensajes de defender para Office 365
+## <a name="defender-for-office-365-message-disposition-report"></a>Informe de eliminación de mensajes de Microsoft Defender para Office 365
 
 El informe de **disposición de mensajes de ATP** muestra las acciones que se tomaron para los mensajes de correo electrónico que se detectaron con contenido malintencionado.
 
@@ -179,7 +179,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Subject**
+  - **Asunto**
 
   Si hace clic en **filtros**, puede modificar los resultados con los siguientes filtros:
 
@@ -322,7 +322,7 @@ Para volver a la vista informes, haga clic en **Ver informe**.
 
 ## <a name="additional-reports-to-view"></a>Informes adicionales para ver
 
-Además de los informes descritos en este tema, hay varios otros informes disponibles, tal como se describe en la tabla siguiente:
+Además de los informes descritos en este artículo, hay disponibles varios informes más, como se describe en la tabla siguiente:
 
 ****
 
@@ -338,7 +338,7 @@ Además de los informes descritos en este tema, hay varios otros informes dispon
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver los informes de defender para Office 365?
 
-Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
+Para poder ver y usar los informes descritos en este artículo, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
 
 - **Administración de organizaciones**
 - **Administrador de seguridad**

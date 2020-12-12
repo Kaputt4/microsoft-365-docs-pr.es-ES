@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4b2c53ee8535c2e99acb83060a2ee04d8f5033db
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658946"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de escritorio administrado por Microsoft
 
@@ -60,8 +60,9 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 |Libreta de superficie 2| 256 GB/Intel i5/8 GB de RAM | Ninguno | **16 de noviembre de 2022** |
 |Surface Go| 128 GB/Intel 4415Y/8 GB de RAM | Ninguno | **2 de agosto de 2023** |
 |Portátil Surface| 256 GB/Intel i5/8 GB de RAM | Ninguno | **20 de mayo de 2022** |
+|Portátil Surface 2| 128 GB/Intel i5/8 GB de RAM | Ninguno | **16 de octubre de 2023** |
 |Surface Pro| 256 GB/Intel i5/8 GB de RAM | Ninguno | **15 de junio de 2022** |
-
+|Surface Pro 6| 128 GB/Intel i5/8 GB de RAM | Ninguno | **16 de octubre de 2023** |
 
 Además, el dispositivo también debe:
 

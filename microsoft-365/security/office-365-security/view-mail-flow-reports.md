@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659470"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572806"
 
 Además de los informes de flujo de correo que están disponibles en el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento, hay disponible una variedad de informes de flujo de correo adicionales en el panel de informes para ayudarle a supervisar su organización de 365 de Microsoft.
 
-Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el [centro de seguridad & cumplimiento](https://office.protection.com) desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
+Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el [centro de seguridad & cumplimiento](https://office.protection.com) desde el panel de **informes** \> . Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
 
 ![Panel de informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -40,7 +40,7 @@ Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the
 
 El **Informe de conectores** muestra la actividad de flujo de correo en los [conectores entrantes y](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) salientes que están configurados para su organización.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **Informe de conector**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ConnectorReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **Informe de conector**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ConnectorReport> .
 
 ![Widget de informe de conectores en el panel de informes](../../media/connector-report-widget.png)
 
@@ -94,7 +94,7 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 El **Informe de reglas de transporte de Exchange** muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione regla de **transporte de Exchange**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione regla de **transporte de Exchange**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
 ![Widget de regla de transporte de Exchange en el panel informes](../../media/transport-rule-report-widget.png)
 
@@ -134,22 +134,22 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
 
   - **Date**
   - **Regla de transporte**
-  - **Subject**
+  - **Asunto**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
-  - **Direction**
+  - **Dirección**
 
 - **Ver datos por: reglas de transporte de DLP de Exchange**:
 
   - **Date**
   - **Directiva DLP**
   - **Regla de transporte**
-  - **Subject**
+  - **Asunto**
   - **Dirección del remitente**
   - **Dirección del destinatario**
   - **Gravedad**
-  - **Direction**
+  - **Dirección**
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
 
@@ -163,7 +163,7 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 El **Informe de reenvío** muestra los mensajes reenviados automáticamente de la organización a dominios externos de los buzones de Exchange Online. Los mensajes reenviados pueden suponer un riesgo de seguridad o de cumplimiento, y pueden indicar una cuenta en peligro.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **reenviar Informe**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=MailFlowForwarding> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **reenviar Informe**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
 ![Reenvío del widget de informe en el panel informes](../../media/forwarding-report-widget.png)
 
@@ -210,7 +210,7 @@ Para volver a la vista informes, haga clic en **Ver informe**.
 ## <a name="mailflow-status-report"></a>Informe de estado de flujo de notificación
 
 El **Informe de estado de flujo** de correo es similar al [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report), con información adicional sobre el correo electrónico permitido o bloqueado en el servidor perimetral. Este es el único informe que contiene información sobre la protección perimetral y muestra la cantidad de correo electrónico que se bloquea antes de que se permita el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione informe de **Estado de flujo** de información. Para ir directamente al **Informe de estado del flujo de correo**, Abra <https://protection.office.com/mailflowStatusReport> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione informe de **Estado de flujo** de información. Para ir directamente al **Informe de estado del flujo de correo**, Abra <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget de informe de estado de flujo de registros en el panel informes](../../media/mail-flow-status-report-widget.png)
 
@@ -240,7 +240,7 @@ Puede cambiar estos filtros haciendo clic en **filtrar** o haciendo clic en un v
 
 La tabla de datos contiene la siguiente información:
 
-- **Direction**
+- **Dirección**
 - **Tipo**
 - **24 horas**
 - **3 días**
@@ -420,7 +420,7 @@ El informe de **correo electrónico enviado y recibido** es un informe inteligen
 
 La vista agregada y la vista de detalles del informe permiten 90 días de filtrado.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **correo electrónico enviado y recibido**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **correo electrónico enviado y recibido**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=SentAndReceivedMailATP> .
 
 ![Widget de correo electrónico enviado y recibido en el panel de informes](../../media/sent-and-received-email-report-widget.png)
 
@@ -463,7 +463,7 @@ Si hace clic en **ver tabla de detalles** en el cuadro **desglosar por: direcci�
 
 - **Fecha (UTC)**
 - **Tipo**
-- **Direction**
+- **Dirección**
 - **Número de mensajes**
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede modificar los resultados con los filtros siguientes:
@@ -478,7 +478,7 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 El informe de **remitentes y destinatarios principales** es un gráfico circular que muestra los principales remitentes y destinatarios de correo electrónico.
 
-Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **principales remitentes y destinatarios**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya  al \> **Panel** informes y seleccione **principales remitentes y destinatarios**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
 
 ![Widgets principales remitentes y destinatarios en el panel informes](../../media/top-senders-and-recipients-widget.png)
 
@@ -535,7 +535,7 @@ Para volver a la vista de informe, haga clic en **Ver informe**.
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
-Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
+Para poder ver y usar los informes descritos en este artículo, debe pertenecer a uno de los siguientes grupos de roles en el centro de seguridad & cumplimiento:
 
 - **Administración de organizaciones**
 - **Administrador de seguridad**
@@ -544,7 +544,7 @@ Para poder ver y usar los informes descritos en este tema, debe pertenecer a uno
 
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Nota**: agregar usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="related-topics"></a>Temas relacionados
 

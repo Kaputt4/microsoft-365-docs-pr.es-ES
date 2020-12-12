@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en CloudFlare para Microsoft.
-ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657965"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Crear registros DNS en CloudFlare para Microsoft
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Si CloudFlare es su proveedor de host DNS, siga los pasos de este artículo para comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online, etc.
   
@@ -84,7 +84,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 3. En la página **información general** del dominio, seleccione **DNS**.
 
   
-4. En la página **Administración de DNS** , haga clic en **Agregar registro**y, a continuación, seleccione los valores de la tabla siguiente. 
+4. En la página **Administración de DNS** , haga clic en **Agregar registro** y, a continuación, seleccione los valores de la tabla siguiente. 
     
     |**Tipo**|**Nombre**|**TTL automático**|**Contenido**|
     |:-----|:-----|:-----|:----|
@@ -107,11 +107,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     
   
-3. En la página de **Configuración**, elija ** Iniciar configuración**.
+3. En la página de **Configuración**, elija **Iniciar configuración**.
     
     
   
-4. En la página**verificar dominio**, seleccione **verificar**.
+4. En la página **verificar dominio**, seleccione **verificar**.
     
     
   
@@ -128,11 +128,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 3. En la página **información general** del dominio, seleccione **DNS**.
 
   
-4. En la página **Administración de DNS** , haga clic en **Agregar registro**y, a continuación, seleccione los valores de la tabla siguiente. 
+4. En la página **Administración de DNS** , haga clic en **Agregar registro** y, a continuación, seleccione los valores de la tabla siguiente. 
     
     |**Tipo**|**Nombre**|**Servidor de correo**|**Prioridad**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga su  *\<domain-key\>*  cuenta de Microsoft 365.   [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 minutos  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga su  *\<domain-key\>*  cuenta de Microsoft 365.   [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 minutos  <br/> |
    
 
   
@@ -156,7 +156,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 4. Agregue el primero de los cinco registros CNAME.
     
-    En la página **Administración de DNS** , haga clic en **Agregar registro**y, a continuación, seleccione los valores de la tabla siguiente.
+    En la página **Administración de DNS** , haga clic en **Agregar registro** y, a continuación, seleccione los valores de la tabla siguiente.
     
     
     |**Tipo**|**Nombre**|**Destino**|**TTL**|
@@ -190,7 +190,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 3. En la página **información general** del dominio, seleccione **DNS**.
 
   
-4. En la página **Administración de DNS** , haga clic en **Agregar registro**y, a continuación, seleccione los valores de la tabla siguiente.  
+4. En la página **Administración de DNS** , haga clic en **Agregar registro** y, a continuación, seleccione los valores de la tabla siguiente.  
     
     |**Tipo**|**Nombre**|**TTL**|**Contenido**|
     |:-----|:-----|:-----|:-----|
@@ -215,12 +215,12 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 4. Agregue el primero de los dos registros SRV.
 
-    En la página **Administración de DNS** , haga clic en **Agregar registro**y, a continuación, seleccione los valores de la primera fila de la tabla siguiente.
+    En la página **Administración de DNS** , haga clic en **Agregar registro** y, a continuación, seleccione los valores de la primera fila de la tabla siguiente.
         
     |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**TTL**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Use su *domain_name*; por ejemplo, contoso.com  |30 minutos | 100|1 |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1 |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Use su *domain_name*; por ejemplo, contoso.com  |30 minutos | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. Seleccione **Guardar**.

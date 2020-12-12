@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5339bf2117a87cd940c4b96b3d00b7b8ba78a1da
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658862"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
@@ -27,7 +27,7 @@ ms.locfileid: "48877806"
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar los mensajes de correo electrónico de EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentando la entrega de cada mensaje durante 24 horas. Transcurridas las 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
 
-Microsoft 365 genera un error cuando no se puede entregar un mensaje con un conector. Los errores más comunes y sus soluciones se describen en este tema. Colectivamente, los errores de cola y de notificación para los mensajes no entregados que se envían a través de conectores se conocen como _inteligencia de flujo de correo_.
+Microsoft 365 genera un error cuando no se puede entregar un mensaje con un conector. Los errores más comunes y sus soluciones se describen en este artículo. Colectivamente, los errores de cola y de notificación para los mensajes no entregados que se envían a través de conectores se conocen como _inteligencia de flujo de correo_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Código de error: error de consulta DNS de 450 4.4.312
 
@@ -71,7 +71,7 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
   - En el [centro de administración de Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center), deshabilite o elimine el conector que entrega el correo electrónico de Microsoft 365 a su entorno de correo electrónico local:
 
-    1. En el EAC, vaya a conectores de **flujo de correo** \> **Connectors**.
+    1. En el EAC, vaya a conectores de **flujo de correo** \> .
 
     2. Seleccione el conector con el valor **de del** **Office 365** y el valor **para** el **servidor de correo electrónico de su organización** , y siga uno de estos pasos:
 
@@ -81,7 +81,7 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
   - Cambie el dominio aceptado en Microsoft 365 que está asociado con su entorno de correo electrónico local de **retransmisión interna** a **autorizado**. Para obtener instrucciones, vea [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Nota** : normalmente, estos cambios tardan entre 30 minutos y una hora en surtir efecto. Después de una hora, compruebe que ya no recibe el error.
+  **Nota**: normalmente, estos cambios tardan entre 30 minutos y una hora en surtir efecto. Después de una hora, compruebe que ya no recibe el error.
 
 - Si el error procede de la organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.
 

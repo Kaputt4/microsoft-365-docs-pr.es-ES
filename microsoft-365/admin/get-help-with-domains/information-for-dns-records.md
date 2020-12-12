@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Aprenda a encontrar los valores y la información que necesita para crear registros DNS para Microsoft 365. '
-ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658512"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Recopilar la información necesaria para crear los registros DNS
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Paso 1: buscar el valor del registro TXT y comprobar
 
@@ -57,7 +57,7 @@ ms.locfileid: "48645316"
     
 2. En la página **dominios** , seleccione su dominio y, a continuación, seleccione **Iniciar configuración**. Volverá al asistente de configuración de dominios para ver el valor específico que debe agregar.
     
-3. En la página **comprobar dominio** , seleccione **Agregar un registro TXT**y, a continuación, haga clic en **siguiente**.
+3. En la página **comprobar dominio** , seleccione **Agregar un registro TXT** y, a continuación, haga clic en **siguiente**.
     
 4. Copie el **valor txt** que se muestra. Tiene este aspecto: **MS = msXXXXXXXX**. 
     

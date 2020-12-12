@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en web.com para Microsoft.
-ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656896"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Crear registros DNS en web.com para Microsoft
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Si web.com es su proveedor de host DNS, siga los pasos de este artículo para comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online, etc.
   
@@ -84,7 +84,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 3. En * * administrar * mi dominio * * *, seleccione **Editar registros DNS avanzados**.
 
   
-4. En la página **nombres de dominio** , en **texto (registros txt)**, haga clic en **Editar registros txt**y, a continuación, seleccione los valores de la tabla siguiente. 
+4. En la página **nombres de dominio** , en **texto (registros txt)**, haga clic en **Editar registros txt** y, a continuación, seleccione los valores de la tabla siguiente. 
     
     |**Host**|**TTL**|**Texto**|
     |:-----|:-----|:----|
@@ -107,11 +107,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     
   
-3. En la página de **Configuración**, elija ** Iniciar configuración**.
+3. En la página de **Configuración**, elija **Iniciar configuración**.
     
     
   
-4. En la página**verificar dominio**, seleccione **verificar**.
+4. En la página **verificar dominio**, seleccione **verificar**.
     
     
   
@@ -127,16 +127,16 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 3. En * * administrar * mi dominio * * *, seleccione **Editar registros DNS avanzados**.
 
-4. En **servidores de correo (registros MX)**, haga clic en **Editar registros MX**y, a continuación, seleccione los valores de la tabla siguiente. 
+4. En **servidores de correo (registros MX)**, haga clic en **Editar registros MX** y, a continuación, seleccione los valores de la tabla siguiente. 
     
     |**Prioridad**|**TTL**|**Servidor de correo**|
     |:-----|:-----|:-----|
-    |1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtén tu  *\<domain-key\>*  cuenta de Microsoft.   [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) |
+    |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtén tu  *\<domain-key\>*  cuenta de Microsoft.   [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Seleccione **Guardar**.
   
-6. Si hay otros registros MX enumerados en la sección **registros MX** , active la casilla situada junto al registro en **eliminar**y seleccione **Guardar**. 
+6. Si hay otros registros MX enumerados en la sección **registros MX** , active la casilla situada junto al registro en **eliminar** y seleccione **Guardar**. 
   
 7. En la pantalla de confirmación, seleccione **Guardar cambios**. 
 
@@ -152,7 +152,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 4. Agregue el primero de los seis registros CNAME.
     
-    En **alias de host (registros CNAME)**, haga clic en **Editar registros CNAME**y, a continuación, seleccione los valores de la tabla siguiente.
+    En **alias de host (registros CNAME)**, haga clic en **Editar registros CNAME** y, a continuación, seleccione los valores de la tabla siguiente.
     
     
     |**Alias**|**TTL**|**Referencia a nombre de host**|**Otro host**|
@@ -184,7 +184,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 3. En * * administrar * mi dominio * * *, seleccione **Editar registros DNS avanzados**.
 
   
-4. En la página **nombres de dominio** , en **texto (registros txt)**, haga clic en **Editar registros txt**y, a continuación, seleccione los valores de la tabla siguiente.   
+4. En la página **nombres de dominio** , en **texto (registros txt)**, haga clic en **Editar registros txt** y, a continuación, seleccione los valores de la tabla siguiente.   
     
     |**Host**|**TTL**|**Texto**|
     |:-----|:-----|:-----|
@@ -211,12 +211,12 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 4. Agregue el primero de los dos registros SRV.
 
-    En **servicio (registros SRV)**, haga clic en **Editar registros SRV**y, a continuación, seleccione los valores de la tabla siguiente. 
+    En **servicio (registros SRV)**, haga clic en **Editar registros SRV** y, a continuación, seleccione los valores de la tabla siguiente. 
         
     |**Servicio**|**Protocolo**|**TTL**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1 |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1 |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. Agregue el otro registro SRV; para ello, elija los valores de la segunda fila de la tabla. 

@@ -22,21 +22,21 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Aprenda a realizar un seguimiento de los problemas que se produzcan al configurar un dominio personalizado asegurándose de que los registros DNS están configurados correctamente.
-ms.openlocfilehash: ce5aa65601a4fac763616cb67c6a4c466083a4c0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645340"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658524"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Buscar y corregir problemas después de agregar el dominio o los registros DNS
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Conseguir que su dominio esté configurado para trabajar con Microsoft 365 puede ser un reto. El sistema DNS puede ser un poco enrevesado y la configuración DNS de su dominio afecta a importantes actividades empresariales, como el correo electrónico.
 
 > [!NOTE]
-> Puede comprobar si hay problemas en el dominio comprobando su estado. Vaya a **configuración**  >  de**dominios** y vea las notificaciones en la columna **Estado** . Si ve un problema, seleccione más acciones (tres puntos) y, a continuación, elija **comprobar estado**. El panel que se abre describirá los problemas que se produzcan en su dominio.
+> Puede comprobar si hay problemas en el dominio comprobando su estado. Vaya a **configuración**  >  de **dominios** y vea las notificaciones en la columna **Estado** . Si ve un problema, seleccione más acciones (tres puntos) y, a continuación, elija **comprobar estado**. El panel que se abre describirá los problemas que se produzcan en su dominio.
   
 ## <a name="whats-going-on"></a>¿Qué sucede?
 
