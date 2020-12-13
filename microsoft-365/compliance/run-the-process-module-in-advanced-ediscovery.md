@@ -2,8 +2,8 @@
 title: Ejecutar el módulo de proceso en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: Obtenga información sobre las directrices para preparar archivos de casos de datos para el análisis con eDiscovery avanzado.
-ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 3773833d9d0af993b4ccb35bcd18276800c4081f
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936203"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662815"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso en la exhibición avanzada de documentos electrónicos (Classic)
 
-Los archivos de casos se cargan en la exhibición avanzada de documentos electrónicos durante el proceso de **preparación** \> **Process**. 
+Los archivos de casos se cargan en la exhibición avanzada de documentos electrónicos durante el proceso de **preparación** \> . 
   
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -48,7 +48,7 @@ Los archivos de casos se cargan en la exhibición avanzada de documentos electr�
     
   - Compruebe que los nombres de archivo tengan un nombre significativo y que las rutas sean correctas.
     
-- **Ruta**de acceso al archivo: eDiscovery avanzado puede cargar archivos con longitudes de ruta de hasta 400 caracteres.
+- **Ruta** de acceso al archivo: eDiscovery avanzado puede cargar archivos con longitudes de ruta de hasta 400 caracteres.
     
 - **Extracción de texto**: al extraer texto de archivos nativos, además del texto normal, también se extraen los siguientes elementos: texto oculto (Excel y. doc), columnas ocultas (Excel), control de cambios (. doc), notas del orador (. ppt), objetos incrustados (por ejemplo, objetos de Excel en a. ppt). Se pueden ver en el editor de texto.
     

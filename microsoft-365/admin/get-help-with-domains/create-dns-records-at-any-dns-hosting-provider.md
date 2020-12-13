@@ -20,12 +20,12 @@ description: Aprenda a verificar su dominio y a crear registros DNS en cualquier
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655605"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -35,7 +35,7 @@ Tras finalizar estos pasos, el dominio seguirá registrado en el host en el que 
 
 Si no agrega el dominio, los integrantes de la organización usarán el dominio onmicrosoft.com para las direcciones de correo electrónico hasta que lo agregue. Es importante que agregue el dominio antes de agregar usuarios, para evitar tener que configurarlo dos veces.
 
-[Consulte las preguntas frecuentes sobre los dominios](../setup/domains-faq.md) si no encuentra lo que busca debajo.
+[Consulte las preguntas frecuentes sobre los dominios](../setup/domains-faq.yml) si no encuentra lo que busca debajo.
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Paso 1: Agregar un registro TXT o MX para comprobar que es el propietario del dominio
 

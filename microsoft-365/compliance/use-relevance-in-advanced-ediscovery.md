@@ -2,8 +2,8 @@
 title: Usar el módulo de relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: Obtenga información sobre el módulo de relevancia en la exhibición avanzada de documentos electrónicos, incluido un flujo de trabajo y instrucciones y pasos para la revisión de archivos y aprendizaje.
-ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 0319ac378fb891d96437f53931213429b111d61d
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936613"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663289"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Usar el módulo de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 

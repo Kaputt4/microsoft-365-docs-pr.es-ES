@@ -1,5 +1,5 @@
 ---
-title: Cifrado de doble clave (DKE)
+title: Cifrado de clave doble (DKE)
 description: DKE permite proteger datos extremadamente confidenciales y mantener el control total de la clave.
 author: kccross
 ms.author: krowley
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 39d7933014f1dc71f8c94e467954d36ede4fb451
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9607b095ba073229edae43c1d2f0e893db07c634
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277536"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663095"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de doble clave para Microsoft 365
 
@@ -57,7 +57,7 @@ Si las organizaciones tienen alguno de los siguientes requisitos, puede usar DKE
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisitos de licencia y sistema para DKE
 
-El **cifrado de doble clave para microsoft 365** incluye Microsoft 365 E5 y Office 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [versión de prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información acerca de estas licencias, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+El **cifrado de doble clave para microsoft 365** incluye Microsoft 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [versión de prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información acerca de estas licencias, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere Azure Information Protection.
 
@@ -246,7 +246,7 @@ La configuración de clave y de inquilino de DKE se encuentra en el **appsetting
 Busque el `JwtAudience` . Reemplace `<yourhostname>` por el nombre de host del equipo en el que se ejecutará el servicio DKE. Por ejemplo:
 
   > [!IMPORTANT]
-  > El valor de `JwtAudience` debe coincidir *exactamente*con el nombre de su host. Puede usar **localhost: 5001** durante la depuración. Sin embargo, cuando haya terminado la depuración, asegúrese de actualizar este valor al nombre de host del servidor.
+  > El valor de `JwtAudience` debe coincidir *exactamente* con el nombre de su host. Puede usar **localhost: 5001** durante la depuración. Sin embargo, cuando haya terminado la depuración, asegúrese de actualizar este valor al nombre de host del servidor.
 
 - `TestKeys:Name`. Escriba un nombre para la clave. Por ejemplo: `TestKey1`
 - `TestKeys:Id`. Cree un GUID y escríbalo como el `TestKeys:ID` valor. Por ejemplo, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Puede usar un sitio como el [generador de GUID en línea](https://guidgenerator.com/) para generar un GUID de forma aleatoria.
@@ -378,13 +378,13 @@ Para publicar el almacén de claves, debe crear una instancia de Azure App Servi
 
     - Escriba el nombre de host del equipo en el que desea instalar el servicio DKE. Asegúrese de que es el mismo nombre que el definido para la configuración JwtAudience en el [**appsettings.jsen**](#tenant-and-key-settings) el archivo. El valor que se proporciona para el nombre también es WebAppInstanceName.
 
-    - Para **publicar**, seleccionar **código**y, para **pila en tiempo de ejecución**, seleccione **.net Core 3,1**.
+    - Para **publicar**, seleccionar **código** y, para **pila en tiempo de ejecución**, seleccione **.net Core 3,1**.
 
     Por ejemplo:
 
    ![Agregar el servicio de aplicaciones](../media/dke-azure-add-app-service.png)
 
-3. En la parte inferior de la página, seleccione **revisar + crear**y, a continuación, seleccione **Agregar**.
+3. En la parte inferior de la página, seleccione **revisar + crear** y, a continuación, seleccione **Agregar**.
 
 4. Realice una de las siguientes acciones para publicar las claves generadas:
 
@@ -416,7 +416,7 @@ DKE está implementado y puede ir a las claves de prueba que ha creado. Siga [va
 
 1. Conéctese al App Service que creó [anteriormente](#deploy-the-dke-service-and-publish-the-key-store).
 
-    En el explorador, vaya a: **Azure portal**  >  **App Service**  >  **Deployment Center**  >  **manual de implementación**de  >  **FTP**  >  **Dashboard**.
+    En el explorador, vaya a: **Azure portal**  >  **App Service**  >  **Deployment Center**  >  **manual de implementación** de  >  **FTP**  >  .
 
 2. Copie las cadenas de conexión que se muestran en un archivo local. Usaremos estas cadenas para conectar con el servicio de la aplicación web y cargar archivos a través de FTP.
 
@@ -460,9 +460,9 @@ Los siguientes pasos le permiten registrar el servicio de DKE. El registro del s
 
 Para registrar el servicio DKE:
 
-1. En el explorador, abra el [portal de Microsoft Azure](https://ms.portal.azure.com/)y vaya a **todos los** registros de la aplicación de \> **identidad** de servicios \> **App Registrations**.
+1. En el explorador, abra el [portal de Microsoft Azure](https://ms.portal.azure.com/)y vaya a **todos los** registros de la aplicación de \> **identidad** de servicios \> .
 
-2. Seleccione **nuevo registro**y escriba un nombre significativo.
+2. Seleccione **nuevo registro** y escriba un nombre significativo.
 
 3. Seleccione un tipo de cuenta en las opciones que se muestran.
 
@@ -494,7 +494,7 @@ Para registrar el servicio DKE:
 
 10. Seleccione **Guardar** para guardar los cambios.
 
-11. En el panel izquierdo, seleccione **exponer una API**y, a continuación, junto a URI de identificador de aplicación, seleccione **establecer**.
+11. En el panel izquierdo, seleccione **exponer una API** y, a continuación, junto a URI de identificador de aplicación, seleccione **establecer**.
 
 12. Aún en la página **exponer una API** , en el área **ámbitos definidos por esta API** , seleccione **Agregar un ámbito**. En el nuevo ámbito:
 

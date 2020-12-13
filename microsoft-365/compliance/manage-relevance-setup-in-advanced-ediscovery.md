@@ -2,8 +2,8 @@
 title: Administrar la configuración de la relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery avanzado con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
-ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528146"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662875"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestionar la configuración de la relevancia en Advanced eDiscovery (clásico)
 

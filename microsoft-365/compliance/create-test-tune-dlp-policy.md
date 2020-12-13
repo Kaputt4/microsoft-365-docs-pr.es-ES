@@ -19,28 +19,26 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de su organización.
-ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9b43899969ab0fdc5d67b051db36c0b245f7811e
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546940"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663197"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
-La prevención de pérdida de datos (DLP) es una característica de cumplimiento diseñada para ayudar a su organización a evitar la exposición accidental o accidental de información confidencial a partes no deseadas. DLP tiene sus raíces en Exchange Server y Exchange Online, y también es aplicable en SharePoint Online y OneDrive para la empresa.
+La prevención de pérdida de datos (DLP) ayuda a impedir el uso compartido no intencionado o accidental de información confidencial.
 
-DLP utiliza un motor de análisis de contenido para examinar el contenido de los mensajes de correo electrónico y los archivos, en busca de información confidencial, como los números de tarjetas de crédito y la información de identificación personal (PII). La información confidencial no suele enviarse en el correo electrónico ni se puede incluir en documentos, sin necesidad de realizar pasos adicionales, como cifrar el mensaje o los archivos de correo electrónico. Con DLP puede detectar información confidencial y emprender acciones como:
+DLP examina los mensajes de correo electrónico y los archivos en busca de información confidencial, como un número de tarjeta de crédito. Con DLP puede detectar información confidencial y emprender acciones como:
 
 - Registrar el evento con fines de auditoría
 - Mostrar una advertencia al usuario final que está enviando el correo electrónico o compartiendo el archivo
 - Bloquear activamente el correo electrónico o el uso compartido de archivos sin tener lugar
 
-A veces, los clientes descartan DLP porque no consideran que ellos mismos tienen el tipo de datos que necesitan protección. La suposición es que los datos confidenciales, como los registros médicos o la información financiera, solo existen para las industrias como la atención médica o para las empresas que ejecutan tiendas en línea. Sin embargo, cualquier empresa puede manejar información confidencial de forma periódica, incluso si no la tiene en cuenta. Una hoja de cálculo con los nombres y las fechas de los empleados es tan importante como una hoja de cálculo con los nombres de los clientes y los detalles de las tarjetas de crédito. Además, este tipo de información tiende a flotar más de lo que esperaba, ya que los empleados se centran en silencio en las tareas cotidianas, pensando en nada de exportar un archivo CSV de un sistema y enviarlo por correo electrónico a alguien. También podría sorprenderse con la frecuencia con la que los empleados envían correos electrónicos que contienen datos de tarjetas de crédito o banca sin tener en cuenta las consecuencias.
+## <a name="permissions"></a>Permissions
 
-## <a name="permissions"></a>Permisos
-
-Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el Centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios acceso al Centro de seguridad y cumplimiento, sin darles todos los permisos de un administrador de espacios empresariales. Para hacerlo, le recomendamos:
+Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso a los responsables de cumplimiento normativo y a otros usuarios. Siga estos pasos:
   
 1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
     
@@ -50,34 +48,34 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
     
 4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
 
-También puede crear un grupo de roles solo con privilegios de lectura para las directivas DLP y los informes DLP asignando el rol de **Administración de cumplimiento DLP de solo lectura**.
+Use el rol de **Administración de cumplimiento de DLP de solo vista** para crear un grupo de roles con privilegios de solo vista para las directivas de DLP y los informes de DLP.
 
 Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La aplicación de directivas no requiere acceso al contenido.
+Estos permisos son necesarios para crear y aplicar una directiva DLP que no se apliquen las directivas.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo se detecta la información confidencial mediante DLP
 
-La información confidencial se identifica mediante coincidencia de patrón de expresiones regulares (RegEx), en combinación con otros indicadores, como la proximidad de determinadas palabras clave a los patrones coincidentes. Un ejemplo de esto son los números de tarjeta de crédito. Un número de tarjeta de crédito VISA tiene 16 dígitos. Sin embargo, estos dígitos pueden escribirse de varias maneras, como 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
+DLP busca información confidencial por coincidencia de patrón de expresiones regulares (RegEx), en combinación con otros indicadores, como la proximidad de determinadas palabras clave a los patrones coincidentes. Por ejemplo, un número de tarjeta de crédito VISA tiene 16 dígitos. Pero estos dígitos pueden escribirse de varias maneras, como 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
 
 Cualquier cadena de 16 dígitos no es necesariamente un número de tarjeta de crédito, puede ser un número de incidencia de un sistema de asistencia o un número de serie de un componente de hardware. Para identificar la diferencia entre un número de tarjeta de crédito y una cadena de 16 dígitos inofensivo, se realiza un cálculo (suma de comprobación) para confirmar que los números coinciden con un patrón conocido de las diversas marcas de tarjeta de crédito.
 
-Además, la proximidad de palabras clave como "VISA" o "AMEX", junto con los valores de proximidad a la fecha que pueden ser la fecha de expiración de la tarjeta de crédito, también se considera como una decisión sobre si los datos son un número de tarjeta de crédito o no.
+Si DLP encuentra palabras clave como "VISA" o "AMEX", valores de fecha cercanos que pueden ser la fecha de expiración de la tarjeta de crédito, DLP también usa esos datos para ayudarle a decidir si la cadena es un número de tarjeta de crédito o no.
 
-Es decir, DLP suele ser lo suficientemente inteligente como para reconocer la diferencia entre estos dos textos en un correo electrónico:
+Es decir, la DLP es lo suficientemente inteligente como para reconocer la diferencia entre estas dos cadenas de texto en un correo electrónico:
 
 - "¿Puede solicitarme un nuevo portátil. Usar mi VISAdo número 1111-1111-1111-1111, expirar 11/22 y enviarme la fecha de entrega estimada cuando la tiene. "
 - "El número de serie del portátil es 2222-2222-2222-2222 y se compró en 11/2010. Por cierto, ¿se aprobó todavía mi visado de viajes? "
 
-Una buena referencia para conservar marcadores es [definiciones de entidad de tipo información confidencial](sensitive-information-type-entity-definitions.md) que explican cómo se detecta cada tipo de información.
+Vea [información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md) que explica cómo se detecta cada tipo de información.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Dónde comenzar con prevención de pérdida de datos
 
 Cuando los riesgos de la filtración de datos no son totalmente obvios, es difícil averiguar dónde se debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas de DLP se pueden ejecutar en el "modo de prueba", lo que le permite evaluar su eficacia y precisión antes de activarlas.
 
-Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará directivas DLP en la Directiva de **prevención de pérdida de datos**  >  **Policy**. Haga clic en **crear una directiva** para iniciar.
+Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará las directivas DLP en la Directiva de **prevención de pérdida de datos**  >  . Elija **crear una directiva** para iniciar.
 
-Microsoft 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas de DLP. Supongamos que es un negocio australiano. Puede filtrar las plantillas de directiva para mostrar solo las que son relevantes para Australia, que entran en las categorías generales de finanzas, médicos y salud y privacidad.
+Microsoft 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Supongamos que es un negocio australiano. Puede filtrar las plantillas en Australia y elegir la privacidad, la salud y la financiación.
 
 ![Opción para elegir el país o la región](../media/DLP-create-test-tune-choose-country.png)
 
@@ -93,11 +91,11 @@ Elija las ubicaciones a las que se aplicará la Directiva. Las directivas DLP se
 
 ![Opción para elegir todas las ubicaciones](../media/DLP-create-test-tune-choose-locations.png)
 
-En el primer paso de configuración de la **Directiva** , basta con aceptar los valores predeterminados por el momento. Hay una gran cantidad de personalización que puede hacer en las directivas de DLP, pero los valores predeterminados son un punto muy bueno para empezar.
+En el primer paso de configuración de la **Directiva** , simplemente acepte los valores predeterminados por el momento. Puede personalizar las directivas de DLP, pero los valores predeterminados son un buen punto de partida.
 
 ![Opciones para personalizar el tipo de contenido que se va a proteger](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Después de hacer clic en **siguiente** , se le mostrará una página de **configuración de directivas** adicional con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
+Después de hacer clic en siguiente, * * aparecerá una página **configuración de directivas** adicional con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
 
 - He desactivado las sugerencias de Directiva por ahora, que es un paso razonable que debe realizar si solo está probando cosas y no quiere mostrar nada a los usuarios todavía. Las sugerencias de directiva muestran advertencias a los usuarios de que están a punto de infringir una directiva de DLP. Por ejemplo, un usuario de Outlook verá una advertencia que indica que el archivo que ha adjuntado contiene números de tarjeta de crédito y que se rechazará el correo electrónico. El objetivo de las sugerencias de directiva es detener el comportamiento no compatible antes de que ocurra.
 - También se ha reducido el número de instancias de 10 a 1, por lo que esta directiva detectará cualquier uso compartido de datos PII australianos, no solo el uso compartido de datos de forma masiva.
@@ -210,7 +208,7 @@ Otra opción es simplemente aumentar el recuento de instancias, de modo que un b
 
 Además de cambiar el recuento de instancias, también puede ajustar la precisión de coincidencia (o nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de la coincidencia en la regla para que la regla coincida solo con modelos específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puede establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Comprender cómo se calcula el nivel de confianza es un poco complicado (y más allá del alcance de esta publicación), pero esta es una buena explicación de [Cómo usar el nivel de confianza para ajustar las reglas](data-loss-prevention-policies.md#match-accuracy).
 
-Por último, si desea obtener un poco más avanzado, puede personalizar cualquier tipo de información confidencial, por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el número de [permiso de conducción de Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)para eliminar el falso positivo que se ha activado. Para obtener información sobre cómo hacerlo con XML y PowerShell, vea este tema sobre la [Personalización de un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md).
+Por último, si desea obtener un poco más avanzado, puede personalizar cualquier tipo de información confidencial, por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el número de [permiso de conducción de Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)para eliminar el falso positivo que se ha activado. Para obtener información sobre cómo hacerlo con XML y PowerShell, consulte [Personalización de un tipo de información confidencial integrada](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activar una directiva DLP
 

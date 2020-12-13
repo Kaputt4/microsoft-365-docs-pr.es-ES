@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Compare las opciones de cifrado de Microsoft 365, incluido el Cifrado de mensajes de Office (OME), S/MIME e Information Rights Management (IRM), y obtenga más información sobre la Seguridad de capa de transporte (TLS).
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Compare las opciones de cifrado de Microsoft 365, incluido el Cifrado de mensajes de Office 365 (OME), S/MIME e Information Rights Management (IRM), y obtenga más información sobre la Seguridad de la capa de transporte (TLS).
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580713"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663025"
 ---
 # <a name="email-encryption"></a>Cifrado de correo electrónico
 
-Este articulo compara las opciones de cifrado en Microsoft 365, incluido el Cifrado de mensajes de Office 365 (OME), S/MIME e Information Rights Management (IRM), y presenta la Seguridad de capa de transporte (TLS).
+Este articulo compara las opciones de cifrado en Microsoft 365, incluido el Cifrado de mensajes de Office (OME), S/MIME e Information Rights Management (IRM), y presenta la Seguridad de capa de transporte (TLS).
   
 Microsoft 365 le ofrece varias opciones de cifrado para ayudar a satisfacer las necesidades que tiene su empresa para la seguridad del correo electrónico. Este artículo contiene tres formas de cifrar el correo electrónico en Office 365. Si quiere obtener más información acerca de todas las características de seguridad en Office 365, visite el [Centro de confianza de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=282470). Este artículo presenta los tres tipos de cifrado disponibles para los administradores de Microsoft 365 con el propósito de ayudar a proteger el correo electrónico en Office 365:
   
@@ -38,7 +38,7 @@ Microsoft 365 le ofrece varias opciones de cifrado para ayudar a satisfacer las
 
 - Information Rights Management (IRM).
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>Cifrado de correo electrónico y cómo lo usa Microsoft 365
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>¿Qué es el cifrado de correo electrónico y cómo lo usa Microsoft 365?
 
 El cifrado es el proceso por el que se codifica la información para que solo un destinatario autorizado pueda descodificar y consumir la información. Microsoft 365 usa el cifrado de dos maneras: en el servicio y como control de cliente. En el servicio, el cifrado se usa de manera predeterminada en Microsoft 365. no es necesario configurar nada. Por ejemplo, Microsoft 365 usa Seguridad de capa de transporte (TLS) para cifrar la conexión, o sesión, entre dos servidores. 
   
@@ -68,16 +68,11 @@ Vea este vídeo para una introducción [al cifrado en Office 365](https://www.yo
 |Recomendaciones y escenarios de ejemplo|Se recomienda usar OME cuando desea enviar información empresarial confidencial a personas fuera de su organización, ya sean consumidores u otras empresas. Por ejemplo:  <br/>  Un empleado bancario que envía extractos de tarjeta de crédito a los clientes  <br/>  Un consultorio que envía registros médicos a un paciente  <br/>  Un abogado que envía información legal confidencial a otro abogado|Se recomienda usar IRM para aplicar restricciones de uso y también cifrado. Por ejemplo:  <br/>  Un administrador que envía detalles confidenciales a su equipo sobre un nuevo producto aplica la opción “No reenviar”.  <br/>  Un ejecutivo necesita compartir una propuesta de oferta con otra compañía, que incluye datos adjuntos de un socio que usa Office 365, y requieren que el correo electrónico y los datos adjuntos estén protegidos.|Se recomienda usar S/MIME cuando su organización o la organización del destinatario requieran un auténtico cifrado de punto a punto.  <br/>  Normalmente se usa S/MIME en los siguientes escenarios:  <br/>  Autoridades gubernamentales que se comunican con otras autoridades gubernamentales  <br/>  Una empresa que se comunica con una autoridad gubernamental|
 ||
 
-En caso de utilizar tanto [Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) como el cifrado de correo electrónico para proteger los datos, tenga en cuenta lo siguiente:
-- Las etiquetas de confidencialidad se pueden usar con OME y el cifrado IRM. Para más detalles, consulte [Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied).
-- Las etiquetas de confidencialidad se pueden aplicar a los mensajes de correo electrónicos firmados digitalmente con S/MIME.
-- Las etiquetas de confidencialidad no se pueden aplicar a los mensajes de correo electrónico cifrados con S/MIME, porque los mensajes protegidos con el cifrado de un extremo a otro no se procesan con directivas.
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>Opciones de cifrado disponibles para mi suscripción de Microsoft 365
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>¿Qué opciones de cifrado están disponibles para mi suscripción de Microsoft 365?
 
 Para obtener más información sobre las opciones de cifrado de correo electrónico para su suscripción de Microsoft 365, vea la [descripción del servicio Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Aquí encontrará información sobre las siguientes características de cifrado:
-
-- Azure RMS, incluidas tanto las capacidades IRM y las nuevas capacidades OME
+  
+- Azure RMS, incluidas las capacidades IRM y OME
 
 - S/MIME
 

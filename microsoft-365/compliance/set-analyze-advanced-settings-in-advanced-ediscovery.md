@@ -2,8 +2,8 @@
 title: Establecer la configuración avanzada de ANALYZE en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: Obtenga información acerca de cómo configurar las opciones avanzadas, incluidos los mensajes casi duplicados, los subprocesos de correo electrónico y los temas, para analizar el proceso en eDiscovery avanzado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39d99609cfff92dcd6e6d2f4483076b8bfe808be
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: ac1300eb26338691722d9ccd15269ccf7f964f58
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936757"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663495"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Establecer la configuración avanzada de ANALYZE en eDiscovery avanzado
 
@@ -45,7 +45,7 @@ EDiscovery avanzado proporciona parámetros avanzados predeterminados para la co
     
 3. En **los parámetros de los temas**, active la casilla **incluir números en el análisis del tema** para incluir números en el procesamiento de temas durante el análisis. 
     
-4. Haga clic en **Guardar **. 
+4. Haga clic en **Guardar**. 
     
 ## <a name="related-topics"></a>Temas relacionados
 

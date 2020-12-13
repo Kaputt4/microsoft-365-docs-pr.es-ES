@@ -2,8 +2,8 @@
 title: Ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para acceder a la exhibición de documentos electrónicos avanzada y ejecutar el módulo de proceso para un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64172c0198418dbb0ba4d01a5adbd5aaef4c3a3b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936163"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662845"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -44,7 +44,7 @@ Realice los siguientes pasos para ejecutar el proceso.
   
 1. [Abrir la seguridad &amp; Centro de cumplimiento](go-to-the-securitycompliance-center.md) . 
     
-2. Vaya a la exhibición de documentos electrónicos de ** &amp; investigación** \> **eDiscovery** y haga clic en **ir a exhibición avanzada**de documentos electrónicos.
+2. Vaya a la exhibición de documentos electrónicos de **&amp; investigación** \>  y haga clic en **ir a exhibición avanzada** de documentos electrónicos.
     
 3. En la exhibición avanzada de documentos electrónicos, seleccione el caso apropiado en la página **casos** mostrados y haga clic en **ir al caso**.
     
@@ -78,7 +78,7 @@ Realice los siguientes pasos para ejecutar el proceso.
     
 6. Para empezar, haga clic en **procesar**. Una vez finalizado, se muestran los resultados del proceso.
     
-7. Opcional Si necesita asignar orígenes de datos a un custodio específico, puede Agregar y editar nombres de custodios en los **custodios** \> **administre** y asigne custodios en asignación de **custodios** \> **Assign**. 
+7. Opcional Si necesita asignar orígenes de datos a un custodio específico, puede Agregar y editar nombres de custodios en los **custodios** \> **administre** y asigne custodios en asignación de **custodios** \> . 
     
 Si agrega al caso, puede volver a procesar.
   

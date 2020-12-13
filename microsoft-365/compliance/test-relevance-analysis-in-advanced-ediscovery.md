@@ -2,8 +2,8 @@
 title: Probar el análisis de relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: Obtenga información sobre cómo usar la pestaña prueba tras el cálculo del lote en la exhibición avanzada de documentos electrónicos para probar, comparar y validar la calidad general de procesamiento.
-ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936213"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663423"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Análisis de relevancia de prueba en eDiscovery avanzado (Classic)
 
@@ -48,7 +48,7 @@ Esta prueba proporciona estadísticas y una comparación entre el conjunto de re
     
     ![Resultados de Probar el resto de relevancia](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. En **nombre**de la prueba y **Descripción**, escriba el nombre y la descripción.
+3. En **nombre** de la prueba y **Descripción**, escriba el nombre y la descripción.
     
 4. En la lista **tipo de prueba** , seleccione **probar el resto**
     
@@ -58,11 +58,11 @@ Esta prueba proporciona estadísticas y una comparación entre el conjunto de re
     
 7. En el **% lectura**, acepte el valor predeterminado o seleccione un valor para la puntuación de relevancia de corte. 
     
-8. En **establecer tamaño**o aceptar el valor predeterminado. Tenga en cuenta que los iconos de restauración restaurarán los valores predeterminados.
+8. En **establecer tamaño** o aceptar el valor predeterminado. Tenga en cuenta que los iconos de restauración restaurarán los valores predeterminados.
     
 9. Haga clic en **iniciar etiquetado**. Se genera una muestra de prueba.
     
-10. Revise y etiquete cada uno de los archivos en la pestaña ** \> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**.
+10. Revise y etiquete cada uno de los archivos en la pestaña **\> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**.
     
 11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. En la siguiente figura se muestra un ejemplo. 
     
@@ -106,7 +106,7 @@ La prueba "probar el sector" realiza una prueba similar a la prueba "probar el r
     
 9. Haga clic en **iniciar etiquetado**. Se genera una muestra de prueba.
     
-10. Revise y etiquete cada uno de los archivos en la pestaña ** \> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**. 
+10. Revise y etiquete cada uno de los archivos en la pestaña **\> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**. 
     
 11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. 
     

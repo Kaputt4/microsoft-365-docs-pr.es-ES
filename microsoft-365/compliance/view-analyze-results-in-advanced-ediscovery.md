@@ -2,8 +2,8 @@
 title: Ver los resultados de ANALYZE en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: Comprenda dónde ver los resultados del proceso de análisis en la exhibición avanzada de documentos electrónicos, incluidas las definiciones de las opciones de tarea mostradas.
-ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 64c91cb5929a7a74e53d653faff98d5792d3f131
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936953"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663264"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Ver los resultados de ANALYZE en eDiscovery avanzado (clásico)
 
@@ -50,7 +50,7 @@ Las tareas mostradas pueden variar en función de las opciones seleccionadas.
     
 - **Temas: cálculo de temas**: ejecuta el análisis de temas. (Solo se muestra si está seleccionado).
     
-- **Estado**de la tarea: esta línea se muestra después de la finalización de la tarea. Mientras se ejecutan las tareas, se muestra la duración de ejecución.
+- **Estado** de la tarea: esta línea se muestra después de la finalización de la tarea. Mientras se ejecutan las tareas, se muestra la duración de ejecución.
     
 > [!NOTE]
 > Los resultados del análisis de casi duplicados y subprocesos de correo electrónico (ND y ED) se aplican al número de documentos que se van a procesar. No incluye los archivos duplicados exactos. 

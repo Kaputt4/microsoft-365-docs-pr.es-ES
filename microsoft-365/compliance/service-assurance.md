@@ -1,5 +1,5 @@
 ---
-title: Garantía del servicio en el centro de seguridad & cumplimiento
+title: Garantía del servicio en el Centro de seguridad y cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: d2805ae3532ee01a2515693cac6eb52da209022d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 915f9040fe5320c905de420f08efa17087987ac3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165931"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655524"
 ---
-# <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
+# <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
 
 Use la garantía del servicio en el centro de seguridad & cumplimiento para obtener acceso a documentos que describen una variedad de temas, entre los que se incluyen: 
   
@@ -47,24 +47,9 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
   
  **Los clientes existentes de Microsoft 365 para empresas** pueden obtener acceso al servicio de garantía del servicio. Si usted es el administrador global (a veces llamado administrador de la empresa) de su organización, ya tendrá acceso a la garantía del servicio y podrá incorporar otros. Si no es el administrador global de su organización y necesita obtener acceso a garantía del servicio, pídale al administrador que le agregue al grupo de roles de usuario de garantía del servicio. 
   
- De forma predeterminada, los **miembros de suscripción de O365** pueden obtener acceso a la sección Garantía del servicio en el centro de protección de Office365 si no se ha implementado el acceso basado en roles del servicio de seguridad en la suscripción. Garantía del servicio proporciona informes y documentos que describen los procedimientos de seguridad de Microsoft para los datos de clientes almacenados en Office 365. También proporciona informes de auditoría de terceros independientes en Office 365. 
+ De forma predeterminada, los **miembros de suscripción de O365** pueden acceder a la sección Service Assurance del centro de protección de Office 365. Garantía del servicio proporciona informes y documentos que describen los procedimientos de seguridad de Microsoft para los datos de clientes almacenados en Office 365. También proporciona informes de auditoría de terceros independientes en Office 365.
   
-> [!NOTE]
-> Si su empresa ha implementado acceso basado en roles de garantía de servicio en su suscripción de Microsoft 365 (que puede ser si su organización tiene acceso a informes personalizados) y necesita acceso a la garantía del servicio, pero no se incluye en el panel izquierdo del centro de seguridad & cumplimiento, consulte a su administrador de Office 365 para que le agregue al grupo de roles de usuario de **garantía del servicio** . Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
-  
- **Acceso basado en roles de servicios de garantía de servicio: usuarios aprovisionados** Si su empresa ha implementado el acceso basado en roles de garantía de servicios, puede proporcionar acceso al servicio de seguridad a todo el personal de seguridad y cumplimiento, incluidos los equipos y el personal de seguridad de la información, la administración de riesgos, el cumplimiento y la auditoría de la organización. Para obtener más información, consulte [incorporar otros usuarios o grupos de garantía del servicio](service-assurance.md#addother).
-  
-La garantía del servicio es accesible mediante el centro de seguridad & cumplimiento. Esta es la manera de acceder a.
-  
-1. Vaya a [https://protection.office.com](https://protection.office.com).
-    
-2. Inicie sesión con su cuenta profesional o educativa. 
-    
-3. En el panel izquierdo, seleccione **garantía del servicio**. A continuación, [Elija la configuración regional y del sector](service-assurance.md#Chooseyourindustryregional) y [incorpore otros grupos o usuarios de garantía del servicio](service-assurance.md#addother).
-    
-    > [!NOTE]
-    > Si necesita tener acceso a la garantía del servicio y no se incluye en el panel izquierdo del centro de seguridad & cumplimiento, pida al administrador de Office 365 que le agregue al grupo de roles de usuario de garantía del servicio en la página **permisos** . 
-  
+ 
 ## <a name="choose-your-industry-and-regional-settings"></a>Elegir la configuración regional y del sector
 <a name="Chooseyourindustryregional"> </a>
 
@@ -109,32 +94,11 @@ Seleccione el informe que desee descargar y seleccione **Guardar** para descarga
 |Controles auditados  <br/> |Estándares y normativas globales que Office 365 ha implementado.  <br/> | Ayuda con la evaluación de riesgos cuando está evaluando, incorporando o usando los servicios de Office 365. Descúbrelo:  <br/> <br/>-Cómo los controles de Office 365 cumplen los requisitos de seguridad, cumplimiento y privacidad.  <br/>-Acerca de la prueba de controles en Office 365, los resultados de estas pruebas y cuándo se completaron.  <br/> |
    
 En función de su configuración específica, las opciones incluidas en la vista pueden tener algunas diferencias.
-  
-## <a name="onboard-other-service-assurance-users-or-groups"></a>Otros usuarios o grupos de garantía del servicio incorporados
-<a name="addother"> </a>
-
-Para obtener acceso a los informes predeterminados que están disponibles en general en todas las suscripciones a la nube de Microsoft, no es necesario que implemente el modelo de acceso basado en roles de garantía de servicios y puede omitir este paso. Sin embargo, si se ha proporcionado a su organización acceso a los informes personalizados, agregue otros usuarios o grupos a los roles de garantía del servicio. Para agregar otros usuarios o grupos:
-  
-1. En el centro de seguridad & cumplimiento, seleccione **permisos** en el panel izquierdo, tal y como se muestra en la siguiente captura de pantalla. 
     
-    ![Menú &amp; permisos de cumplimiento de seguridad](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
-  
-2. En el panel derecho, seleccione **usuario de garantía del servicio**y, a continuación, seleccione **Editar Grupo de roles**y, en la sección **miembros** , seleccione **Editar** para agregar miembros al rol de usuario de garantía del servicio, como se muestra en la siguiente captura de pantalla. 
-    
-    ![Usuario de garantía del servicio: agregar](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
-  
-3. En el cuadro de diálogo siguiente, busque y elija individuos o grupos que necesiten ver los informes de cumplimiento de garantía del servicio y los recursos de confianza y, a continuación, seleccione **Agregar** para cada selección que realice y haga clic en la **X** en la esquina superior derecha del panel cuando haya terminado. 
-    
-    ![Usuario de garantía del servicio: elegir usuario](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
-  
-4. Cada usuario o grupo que agregó al rol de usuario de garantía del servicio puede encontrar ahora garantía del servicio y descargar informes y otros documentos en el centro de seguridad & cumplimiento.
-    
-Vuelva a la página de **permisos** en cualquier momento para agregar más usuarios o quitar otros existentes. 
-  
 ## <a name="get-help-with-service-assurance"></a>Obtener ayuda con la garantía del servicio
 <a name="addother"> </a>
 
-[Póngase en contacto con soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+[Contactar con el soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
   
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 <a name="addother"> </a>

@@ -2,8 +2,8 @@
 title: Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar la formación de relevancia en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 7cd244ba1ba516c2b7376b71e809b4c01ff5df8b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936821"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663485"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -116,7 +116,7 @@ Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguie
     
     A continuación, puede etiquetar archivos y ejecutar una operación de cálculo. El etiquetado permite que la relevancia determine si las cargas son similares o distintas, y le permite seguir trabajando en el nuevo conjunto de archivos.
     
-7. Una vez revisado el conjunto de la puesta en marcha, vea el ** \> seguimiento** de la relevancia de los resultados de la puesta al día. 
+7. Una vez revisado el conjunto de la puesta en marcha, vea el **\> seguimiento** de la relevancia de los resultados de la puesta al día. 
     
 1. Si se agregó la nueva carga de archivos durante el entrenamiento de relevancia (es decir, el problema todavía no ha pasado por el cálculo del lote), **continúe con el aprendizaje** en el paso siguiente, independientemente de los resultados de la puesta en marcha. 
     

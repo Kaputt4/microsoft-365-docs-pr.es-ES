@@ -4,7 +4,7 @@ description: Preguntas más frecuentes sobre el cifrado de doble clave para Micr
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 98c61e66155e21624e8ecba460ebc3041e72ada5
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 32686e76018d8b6a361ea99e6b00271b9547ed95
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277663"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663065"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Preguntas más frecuentes sobre el cifrado de doble clave
 
@@ -33,7 +33,7 @@ DKE ayuda a cumplir los requisitos normativos en varias regulaciones y estándar
 
 ## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>¿Se puede usar el cifrado de doble clave con la etiqueta de confidencialidad integrada de Microsoft Office?
 
-Deberá usar el cliente de etiquetado Unificado de Azure Information Protection para proteger documentos con cifrado doble de clave. Actualmente, no puede usar la etiqueta de confidencialidad integrada de Microsoft Office. 
+Deberá usar el cliente de etiquetado Unificado de Azure Information Protection para proteger documentos con cifrado doble de clave. Actualmente, no puede usar la etiqueta de confidencialidad integrada de Microsoft Office.
 
 ## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>¿Qué aplicaciones de Microsoft 365 puedo usar con DKE?
 

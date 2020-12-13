@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
-ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d5e5360e9851aee8eab27fc7c39e266e0332411
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659890"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -181,7 +181,7 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 
 1. Asegúrese de comprobar los elementos enviados. Puede que tenga que informar a los usuarios de la lista de contactos de que su cuenta está comprometida. El atacante puede haberles pedido dinero fingiendo, por ejemplo, que estaba perdido en un país distinto y necesitaba dinero, o el atacante puede enviarles un virus para obtener acceso también a sus equipos.
 
-2. Cualquier otro servicio que use esta cuenta de Exchange como cuenta de correo electrónico alternativa puede haberse comprometido también. En primer lugar, siga estos pasos para la suscripción de Microsoft 365 y, a continuación, siga estos pasos para otras cuentas.
+2. Cualquier otro servicio que use esta cuenta de Exchange como cuenta de correo electrónico alternativa puede haberse comprometido también. En primer lugar, siga estos pasos para la suscripción de Microsoft 365 y, a continuación, siga estos pasos para sus otras cuentas.
 
 3. Asegúrese de que la información de contacto, como los números de teléfono y direcciones, es correcta.
 

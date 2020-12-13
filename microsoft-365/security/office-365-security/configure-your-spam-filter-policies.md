@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658654"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -45,7 +45,7 @@ La diferencia entre estos dos elementos no es obvia cuando administra directivas
 - Al modificar una directiva contra correo no deseado, las opciones de configuración relacionadas con el nombre, la prioridad, el activado o desactivado y los filtros de destinatarios modifican la regla de filtro de correo no deseado. Todas las demás opciones modifican la directiva de filtro de correo no deseado asociada.
 - Cuando se quita una directiva contra correo no deseado, se elimina la regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada.
 
-En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para más información, consulte la sección [Uso de Exchange Online PowerShell o EOP PowerShell independiente para configurar directivas contra correo no deseado](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies), que se muestra más adelante en este mismo tema.
+En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para más información, consulte la sección [Uso de Exchange Online PowerShell o EOP PowerShell independiente para configurar directivas contra correo no deseado](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies), que se muestra más adelante en este mismo artículo.
 
 Cada organización tiene una directiva contra correo no deseado integrada que se denomina Predeterminada, que tiene estas propiedades:
 
@@ -86,7 +86,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Nombre**: escriba un nombre único y descriptivo para la directiva. No use los siguientes caracteres: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
 
-      Si previamente creó directivas contra correo no deseado en el Centro de admin. de Exchange (EAC) que contiene estos caracteres, debe cambiar el nombre de la directiva contra correo no deseado en PowerShell. Para obtener instrucciones, consulte la sección [Uso de PowerShell para modificar las reglas de filtro de correo no deseado](#use-powershell-to-modify-spam-filter-rules) más adelante en este tema.
+      Si previamente creó directivas contra correo no deseado en el Centro de admin. de Exchange (EAC) que contiene estos caracteres, debe cambiar el nombre de la directiva contra correo no deseado en PowerShell. Para obtener instrucciones, consulte la sección [Uso de PowerShell para modificar las reglas de filtro de correo no deseado](#use-powershell-to-modify-spam-filter-rules) más adelante en este artículo.
 
    - **Descripción**: escriba una descripción opcional para la directiva.
 
@@ -382,7 +382,7 @@ La diferencia entre las directivas de filtro de correo no deseado y las reglas d
 
 Las siguientes opciones de configuración de directivas contra correo no deseado solo están disponibles en PowerShell:
 
-- El parámetro _MarkAsSpamBulkMail_ que es `On` de forma predeterminada. Los efectos de esta opción se explicaron anteriormente en este tema, en la sección [Uso del Centro de seguridad y cumplimiento para crear directivas contra correo no deseado](#use-the-security--compliance-center-to-create-anti-spam-policies).
+- El parámetro _MarkAsSpamBulkMail_ que es `On` de forma predeterminada. Los efectos de esta opción se explicaron anteriormente en este artículo, en la sección [Uso del Centro de seguridad y cumplimiento para crear directivas contra correo no deseado](#use-the-security--compliance-center-to-create-anti-spam-policies).
 
 - Las siguientes opciones de configuración del correo no deseado para el usuario final ponen las notificaciones en cuarentena:
 
@@ -513,7 +513,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Uso de PowerShell para modificar directivas de filtro de correo no deseado
 
-Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de correo no deseado en PowerShell como cuando rea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este tema.
+Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de correo no deseado en PowerShell como cuando crea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este artículo.
 
 - El conmutador _MakeDefault_ que convierte la directiva especificada en la predeterminada (se aplica a todos los usuarios, siempre tiene la prioridad **Mínima** y no se puede eliminar) solo está disponible cuando se modifica una directiva de filtro de correo no deseado en PowerShell.
 

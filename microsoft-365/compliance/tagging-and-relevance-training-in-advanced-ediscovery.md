@@ -2,8 +2,8 @@
 title: Identificación y aprendizaje de relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de eDiscovery avanzado.
-ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936676"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663455"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Aprendizaje de la etiqueta y la relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -50,7 +50,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
 |-----|-----|-----|-----|
 |R  <br/> |Metabolito  <br/> |Z  <br/> |Mayús + Z  <br/> |
 |Nº  <br/> |No relevante  <br/> |X  <br/> |Mayús + X  <br/> |
-|Skip  <br/> |Skip  <br/> |C  <br/> |Mayús + A  <br/> |
+|Avanzar  <br/> |Avanzar  <br/> |C  <br/> |Mayús + A  <br/> |
    
   - Cuando hay varios problemas para un archivo, después de marcar un problema, la selección se mueve al siguiente problema (si lo hay). 
     
@@ -76,7 +76,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
     
 ## <a name="working-with-the-sample-files-list"></a>Trabajar con la lista de archivos de ejemplo
 
-La lista de archivos de muestra le permite ver una lista de los archivos en un ejemplo de aprendizaje y realizar diversas acciones en uno o más archivos. En la **Relevance** \> ficha **etiqueta** de relevancia, el panel **archivos de ejemplo** izquierdo muestra una lista de archivos de ejemplo para el procesamiento con procesos de evaluación, formación, puesta en marcha e incoherencias. 
+La lista de archivos de muestra le permite ver una lista de los archivos en un ejemplo de aprendizaje y realizar diversas acciones en uno o más archivos. En la  \> ficha **etiqueta** de relevancia, el panel **archivos de ejemplo** izquierdo muestra una lista de archivos de ejemplo para el procesamiento con procesos de evaluación, formación, puesta en marcha e incoherencias. 
   
 1. En la **ficha \> etiqueta de relevancia** , seleccione los archivos de ejemplo en la lista desplegable del panel izquierdo. Los archivos de ejemplo se muestran en el panel izquierdo. 
     
@@ -90,13 +90,13 @@ La lista de archivos de muestra le permite ver una lista de los archivos en un e
     
   - Desplácese entre los archivos del ejemplo actual mediante las opciones de la barra de menús inferior. Además, los métodos abreviados de teclado de navegación están disponibles:
     
-    Para desplazarse al primer archivo del ejemplo: Mayús + Ctrl +\<
+    Para desplazarse al primer archivo del ejemplo: Mayús + Ctrl + \<
     
-    Para ir al archivo anterior en el ejemplo: Mayús +\<
+    Para ir al archivo anterior en el ejemplo: Mayús + \<
     
-    Para ir al siguiente archivo del ejemplo: Mayús +\>
+    Para ir al siguiente archivo del ejemplo: Mayús + \>
     
-    Para navegar hasta el último archivo del ejemplo: Mayús + Ctrl +\>
+    Para navegar hasta el último archivo del ejemplo: Mayús + Ctrl + \>
     
 ## <a name="see-also"></a>Vea también
 

@@ -21,24 +21,24 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información sobre cómo los administradores globales de Office 365 pueden aplicar la personalización de marca de su organización a mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: 6ec13a9d986019e6eb91d1b7a395f1c6199fe12a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 77fd5e08afa1a4d8ae5f6386fa65b88b6ea2be4d
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818663"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663237"
 ---
-# <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregue la marca de su organización a los mensajes cifrados de cifrado de mensajes de Microsoft 365 para empresas
 
-Como administrador de Exchange online o Exchange Online Protection, puede aplicar la personalización de marca de la empresa para personalizar la apariencia de los mensajes de correo electrónico de Microsoft 365 para cifrado de mensajes empresariales y el contenido del portal de cifrado. Con los cmdlets de Windows PowerShell Get-OMEConfiguration y set-OMEConfiguration, puede personalizar los siguientes aspectos de la experiencia de visualización para los destinatarios de los mensajes de correo electrónico cifrados:
+Puede aplicar la personalización de marca de la empresa para personalizar la apariencia de los mensajes de correo electrónico de su organización y del portal de cifrado. Tendrá que aplicar permisos de administrador global a su cuenta profesional o educativa antes de empezar. Una vez que tenga estos permisos, use los cmdlets de Windows PowerShell Get-OMEConfiguration y Set-OMEConfiguration para personalizar estas partes de los mensajes de correo electrónico cifrados:
   
-- Texto de introducción del correo electrónico que contiene el mensaje cifrado
+- Texto de introducción
 
-- Texto de declinación de responsabilidades del correo electrónico que contiene el mensaje cifrado
+- Disclaimer text
 
 - Dirección URL de la declaración de privacidad de la organización
 
-- Texto que aparece en el portal de OME
+- Texto en el portal de OME
 
 - Logotipo que aparece en el portal de mensajes de correo electrónico y OME, o bien si se va a usar un logotipo
 
@@ -46,13 +46,13 @@ Como administrador de Exchange online o Exchange Online Protection, puede aplica
 
 También puede volver a la apariencia predeterminada en cualquier momento.
 
-Si desea tener más control, puede usar el cifrado de mensajes avanzado de Office 365 y crear varias plantillas para los mensajes de correo electrónico cifrados que se originan en la organización. Mediante el uso de estas plantillas, puede controlar algo más que la apariencia de los mensajes de correo electrónico, pero también controlar partes de la experiencia del usuario final. Por ejemplo, puede especificar si los destinatarios de correo a los que se aplica esta plantilla y si usan cuentas de Google, Yahoo y Microsoft pueden usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365. Puede usar plantillas para cumplir varios casos de uso, como:
+Si desea tener más control, use el cifrado avanzado de mensajes de Office 365 para crear varias plantillas para los correos electrónicos cifrados que se originan en la organización. Use estas plantillas para controlar las partes de la experiencia del usuario final. Por ejemplo, especifique si los destinatarios pueden usar cuentas de Google, Yahoo y Microsoft para iniciar sesión en el portal de cifrado. Use plantillas para cumplir varios casos de uso, como:
 
-- Plantillas para cada departamento, como finanzas, ventas, etc.
+- Departamentos individuales, como finanzas, ventas, etc.
 
-- Plantillas para diferentes productos
+- Diferentes productos
 
-- Plantillas para diferentes regiones geográficas o países
+- Regiones o países geográficos diferentes
 
 - Si desea permitir que se revoquen los mensajes de correo electrónico
 
@@ -62,7 +62,7 @@ Una vez que haya creado las plantillas, puede aplicarlas a los correos electrón
 
 ## <a name="work-with-ome-branding-templates"></a>Trabajar con plantillas de personalización de marca OME
 
-Puede modificar varias características dentro de una plantilla de personalización de marca. Puede modificar la plantilla predeterminada, pero no quitarla. Si tiene cifrado de mensajes avanzado, también puede crear, modificar y quitar plantillas personalizadas. Use Windows PowerShell para trabajar con una plantilla de personalización de marca cada vez. Necesitará una cuenta profesional o educativa que tenga permisos de administrador global en su organización para usar estos cmdlets.
+Puede modificar varias características dentro de una plantilla de personalización de marca. Puede modificar la plantilla predeterminada, pero no quitarla. Si tiene cifrado de mensajes avanzado, también puede crear, modificar y quitar plantillas personalizadas. Use Windows PowerShell para trabajar con una plantilla de personalización de marca cada vez.
 
 - [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-omeconfiguration) -modificar la plantilla de personalización de marca predeterminada o una plantilla de personalización de marca personalizada creada.
 - [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) -crea una nueva plantilla de personalización de marca, solo cifrado de mensajes avanzado.
@@ -74,13 +74,13 @@ Use Windows PowerShell para modificar una plantilla de personalización de marca
 
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Modifique la plantilla con el cmdlet Set-OMEConfiguration como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) o use el siguiente gráfico y tabla para obtener instrucciones.
+2. Use el cmdlet Set-OMEConfiguration como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) o use la siguiente tabla y gráfico para obtener instrucciones.
 
 ![Elementos de correo electrónico personalizables](../media/ome-template-breakout.png)
 
 |**Para personalizar esta característica de la experiencia de cifrado**|**Use estos comandos**|
 |:-----|:-----|
-|Color de fondo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> Para obtener más información acerca de los colores de fondo, vea la sección [colores de fondo](#background-color-reference) más adelante en este tema.|
+|Color de fondo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> Para obtener más información acerca de los colores de fondo, vea la sección [colores de fondo](#background-color-reference) más adelante en este artículo.|
 |Logotipo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 píxeles. Si la imagen supera estas dimensiones, el servicio cambia el tamaño del logotipo para mostrarlo en el portal. El servicio no modifica el archivo gráfico en sí. Para obtener los mejores resultados, use el tamaño óptimo.|
 |Texto junto al nombre y la dirección de correo electrónico del remitente|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Texto que aparece en el botón "leer mensaje"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
@@ -105,7 +105,7 @@ Para crear una nueva plantilla de personalización de marca personalizada:
    New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
-   For example,
+   Por ejemplo,
 
    ```powershell
    New-OMEConfiguration -Identity "Custom branding template"
@@ -117,13 +117,13 @@ Para quitar todas las modificaciones de la plantilla predeterminada, incluidas l
   
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Use el cmdlet **set-OMEConfiguration** como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""` . Para todos los valores de imagen, como el logotipo, establezca el valor en `"$null"` .
+2. Use el cmdlet **set-OMEConfiguration** como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""` . Para todos los valores de imagen, como el logotipo, establezca el valor en  `"$null"` .
 
    En la tabla siguiente se describen los valores predeterminados de la opción de personalización de cifrado.
 
    **Para revertir esta característica de la experiencia de cifrado de nuevo a la imagen y el texto predeterminados**|**Use estos comandos**|
    |:-----|:-----|
-   |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |Texto predeterminado incluido con los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |Texto que aparece en la parte superior del portal de visualización de correo cifrado|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |Logotipo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
@@ -144,7 +144,7 @@ Para quitar una plantilla de personalización de marca personalizada:
    Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
-   For example,
+   Por ejemplo,
 
    ```powershell
    Remove-OMEConfiguration -Identity "Branding template 1"
@@ -156,7 +156,7 @@ Para quitar una plantilla de personalización de marca personalizada:
 
 Una vez que haya modificado la plantilla predeterminada o creado nuevas plantillas de personalización de marca, puede crear reglas de flujo de correo de Exchange para aplicar la personalización de marca personalizada según ciertas condiciones. Dicha regla aplicará la personalización de marca personalizada en los siguientes escenarios:
 
-- Si el usuario final cifró manualmente el correo electrónico desde los clientes de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App)
+- Si el usuario final cifró manualmente el correo electrónico mediante Outlook o Outlook en la web, anteriormente Outlook Web App
 
 - Si el correo electrónico se cifró automáticamente mediante una regla de flujo de correo de Exchange o una directiva de prevención de pérdida de datos
 
@@ -168,21 +168,21 @@ Para obtener información sobre cómo crear una regla de flujo de correo de Exch
 
 3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
 
-4. En el EAC, vaya a reglas de **flujo de correo** \> **Rules** y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a reglas de **flujo de correo** \>  y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como la personalización de marca del Departamento de ventas.
 
-6. En **aplicar esta regla si**, seleccione la condición en que **el remitente se encuentra dentro de la organización** , así como las demás condiciones que desee en la lista de condiciones disponibles. Por ejemplo, es posible que desee aplicar una plantilla de personalización de marca determinada a:
+6. En **aplicar esta regla si**, seleccione la condición en que **el remitente se encuentra dentro de la organización** y otras condiciones que desee en la lista de condiciones disponibles. Por ejemplo, es posible que desee aplicar una plantilla de personalización de marca determinada a:
 
    - Todos los mensajes de correo electrónico cifrados enviados desde miembros del Departamento de finanzas
    - Mensajes de correo electrónico cifrados enviados con una palabra clave determinada, como "external" o "Partner"
    - Mensajes de correo electrónico cifrados enviados a un dominio en particular
 
-7. En **hacer lo siguiente**, seleccione **modificar la seguridad de mensajes**aplicar personalización de  >  **marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca de las que ha creado o modificado.
+7. En **hacer lo siguiente**, seleccione **modificar la seguridad de mensajes** aplicar personalización de \> **marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca.
 
-8. Opcional Si desea que la regla de flujo de correo aplique el cifrado además de la personalización de marca, **haga lo siguiente**, seleccione **modificar la seguridad de los mensajes**y, a continuación, elija **aplicar el cifrado de mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar**y, después, haga clic en **Aceptar**.
+8. Opcional Puede configurar la regla de flujo de correo para aplicar el cifrado y la personalización de marca. En **hacer lo siguiente**, seleccione **modificar la seguridad de los mensajes** y, a continuación, elija **aplicar el cifrado de mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar** y, después, haga clic en **Aceptar**.
   
-   La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como las plantillas personalizadas que haya creado para su uso por parte de Office 365. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones, tal como se describe en [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción no **reenviar** , vea la [opción no reenviar para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   La lista de plantillas incluye las plantillas y opciones predeterminadas, así como las plantillas personalizadas que se creen. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones. Para obtener instrucciones, vea [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción no **reenviar** , vea la [opción no reenviar para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Elija **Agregar acción** si desea especificar otra acción.
 
@@ -195,144 +195,144 @@ En la tabla siguiente se describen los nombres de color de fondo disponibles y s
 |||
 |---|---|
 |**Nombre del color**|**Código de color**|
-|aliceblue|#f0f8ff|
-|antiquewhite|#faebd7|
-|aguamarina|#00ffff|
-|aguamarina|#7fffd4|
-|Azure|#f0ffff|
-|beige|#f5f5dc|
-|bisque|#ffe4c4|
-|black|#000000|
-|blanchedalmond|#ffebcd|
-|azul|#0000ff|
-|blueviolet|#8a2be2|
-|Ruiz|#a52a2a|
-|burlywood|#deb887|
-|cadetblue|#5f9ea0|
-|chartreuse|#7fff00|
-|chocolate|#d2691e|
-|Coral|#ff7f50|
-|cornflowerblue|#6495ed|
-|cornsilk|#fff8dc|
-|rojo|#dc143c|
-|azulado|#00ffff|
-|darkblue|#00008b|
-|darkcyan|#008b8b|
-|darkgoldenrod|#b8860b|
-|darkgray|#a9a9a9|
-|darkgreen|#006400|
-|darkkhaki|#bdb76b|
-|darkmagenta|#8b008b|
-|darkolivegreen|#556b2f|
-|darkorange|#ff8c00|
-|darkorchid|#9932cc|
-|darkred|#8b0000|
-|darksalmon|#e9967a|
-|darkseagreen|#8fbc8f|
-|darkslateblue|#483d8b|
-|darkslategray|#2f4f4f|
-|darkturquoise|#00ced1|
-|darkviolet|#9400d3|
-|deeppink|#ff1493|
-|deepskyblue|#00bfff|
-|dimgray|#696969|
-|dodgerblue|#1e90ff|
-|firebrick|#b22222|
-|floralwhite|#fffaf0|
-|forestgreen|#228b22|
-|fucsia|#ff00ff|
-|gainsboro|#dcdcdc|
-|ghostwhite|#f8f8ff|
-|máximo|#ffd700|
-|ocre|#daa520|
-|neutro|#808080|
-|verde|#008000|
-|greenyellow|#adff2f|
-|Rocío|#f0fff0|
-|hotpink|#ff69b4|
-|indianred|#cd5c5c|
-|Indigo|#4b0082|
-|d'ivoire|#fffff0|
-|caqui|#f0e68c|
-|lavanda|#e6e6fa|
-|lavenderblush|#fff0f5|
-|lawngreen|#7cfc00|
-|lemonchiffon|#fffacd|
-|lightblue|#add8e6|
-|lightcoral|#f08080|
-|lightcyan|#e0ffff|
-|lightgoldenrodyellow|#fafad2|
-|lightgray|#d3d3d3|
-|lightgrey|#d3d3d3|
-|lightgreen|#90ee90|
-|lightpink|#ffb6c1|
-|lightsalmon|#ffa07a|
-|lightseagreen|#20b2aa|
-|lightskyblue|#87cefa|
-|lightslategray|#778899|
-|lightsteelblue|#b0c4de|
-|lightyellow|#ffffe0|
-|cal|#00ff00|
-|limegreen|#32cd32|
-|cama|#faf0e6|
-|ese|#ff00ff|
-|granate|#800000|
-|mediumaquamarine|#66cdaa|
-|mediumblue|#0000cd|
-|mediumorchid|#ba55d3|
-|mediumpurple|#9370db|
-|mediumseagreen|#3cb371|
-|mediumslateblue|#7b68ee|
-|mediumspringgreen|#00fa9a|
-|mediumturquoise|#48d1cc|
-|mediumvioletred|#c71585|
-|midnightblue|#191970|
-|mintcream|#f5fffa|
-|mistyrose|#ffe4e1|
-|moccasin|#ffe4b5|
-|navajowhite|#ffdead|
-|azul marino|#000080|
-|oldlace|#fdf5e6|
-|mesa|#808000|
-|olivedrab|#6b8e23|
-|naranja|#ffa500|
-|orangered|#ff4500|
-|Orquídea|#da70d6|
-|palegoldenrod|#eee8aa|
-|palegreen|#98fb98|
-|paleturquoise|#afeeee|
-|palevioletred|#db7093|
-|papayawhip|#ffefd5|
-|peachpuff|#ffdab9|
-|Perú|#cd853f|
-|Rosas|#ffc0cb|
-|ciruela|#dda0dd|
-|powderblue|#b0e0e6|
-|púrpura|#800080|
-|rojo|#ff0000|
-|rosybrown|#bc8f8f|
-|royalblue|#4169e1|
-|saddlebrown|#8b4513|
-|salmón|#fa8072|
-|sandybrown|#f4a460|
-|seagreen|
-|seashell|#fff5ee|
-|sienna|#a0522d|
-|duplica|#c0c0c0|
-|skyblue|#87ceeb|
-|slateblue|#6a5acd|
-|slategray|#708090|
-|muñeco|#fffafa|
-|springgreen|#00ff7f|
-|steelblue|#4682b4|
-|bronce|#d2b48c|
-|verde|#008080|
-|thistle|#d8bfd8|
-|espontánea|#ff6347|
-|turquesa|#40e0d0|
-|violáceo|#ee82ee|
-|trigo|#f5deb3|
-|white|#ffffff|
-|whitesmoke|#f5f5f5|
-|amarillo|#ffff00|
-|yellowgreen|#9acd32|
+|`aliceblue`|#f0f8ff|
+|`antiquewhite`|#faebd7|
+|`aqua`|#00ffff|
+|`aquamarine`|#7fffd4|
+|`azure`|#f0ffff|
+|`beige`|#f5f5dc|
+|`bisque`|#ffe4c4|
+|`black`|#000000|
+|`blanchedalmond`|#ffebcd|
+|`blue`|#0000ff|
+|`blueviolet`|#8a2be2|
+|`brown`|#a52a2a|
+|`burlywood`|#deb887|
+|`cadetblue`|#5f9ea0|
+|`chartreuse`|#7fff00|
+|`chocolate`|#d2691e|
+|`coral`|#ff7f50|
+|`cornflowerblue`|#6495ed|
+|`cornsilk`|#fff8dc|
+|`crimson`|#dc143c|
+|`cyan`|#00ffff|
+|`darkblue`|#00008b|
+|`darkcyan`|#008b8b|
+|`darkgoldenrod`|#b8860b|
+|`darkgray`|#a9a9a9|
+|`darkgreen`|#006400|
+|`darkkhaki`|#bdb76b|
+|`darkmagenta`|#8b008b|
+|`darkolivegreen`|#556b2f|
+|`darkorange`|#ff8c00|
+|`darkorchid`|#9932cc|
+|`darkred`|#8b0000|
+|`darksalmon`|#e9967a|
+|`darkseagreen`|#8fbc8f|
+|`darkslateblue`|#483d8b|
+|`darkslategray`|#2f4f4f|
+|`darkturquoise`|#00ced1|
+|`darkviolet`|#9400d3|
+|`deeppink`|#ff1493|
+|`deepskyblue`|#00bfff|
+|`dimgray`|#696969|
+|`dodgerblue`|#1e90ff|
+|`firebrick`|#b22222|
+|`floralwhite`|#fffaf0|
+|`forestgreen`|#228b22|
+|`fuchsia`|#ff00ff|
+|`gainsboro`|#dcdcdc|
+|`ghostwhite`|#f8f8ff|
+|`gold`|#ffd700|
+|`goldenrod`|#daa520|
+|`gray`|#808080|
+|`green`|#008000|
+|`greenyellow`|#adff2f|
+|`honeydew`|#f0fff0|
+|`hotpink`|#ff69b4|
+|`indianred`|#cd5c5c|
+|`indigo`|#4b0082|
+|`ivory`|#fffff0|
+|`khaki`|#f0e68c|
+|`lavender`|#e6e6fa|
+|`lavenderblush`|#fff0f5|
+|`lawngreen`|#7cfc00|
+|`lemonchiffon`|#fffacd|
+|`lightblue`|#add8e6|
+|`lightcoral`|#f08080|
+|`lightcyan`|#e0ffff|
+|`lightgoldenrodyellow`|#fafad2|
+|`lightgray`|#d3d3d3|
+|`lightgrey`|#d3d3d3|
+|`lightgreen`|#90ee90|
+|`lightpink`|#ffb6c1|
+|`lightsalmon`|#ffa07a|
+|`lightseagreen`|#20b2aa|
+|`lightskyblue`|#87cefa|
+|`lightslategray`|#778899|
+|`lightsteelblue`|#b0c4de|
+|`lightyellow`|#ffffe0|
+|`lime`|#00ff00|
+|`limegreen`|#32cd32|
+|`linen`|#faf0e6|
+|`magenta`|#ff00ff|
+|`maroon`|#800000|
+|`mediumaquamarine`|#66cdaa|
+|`mediumblue`|#0000cd|
+|`mediumorchid`|#ba55d3|
+|`mediumpurple`|#9370db|
+|`mediumseagreen`|#3cb371|
+|`mediumslateblue`|#7b68ee|
+|`mediumspringgreen`|#00fa9a|
+|`mediumturquoise`|#48d1cc|
+|`mediumvioletred`|#c71585|
+|`midnightblue`|#191970|
+|`mintcream`|#f5fffa|
+|`mistyrose`|#ffe4e1|
+|`moccasin`|#ffe4b5|
+|`navajowhite`|#ffdead|
+|`navy`|#000080|
+|`oldlace`|#fdf5e6|
+|`olive`|#808000|
+|`olivedrab`|#6b8e23|
+|`orange`|#ffa500|
+|`orangered`|#ff4500|
+|`orchid`|#da70d6|
+|`palegoldenrod`|#eee8aa|
+|`palegreen`|#98fb98|
+|`paleturquoise`|#afeeee|
+|`palevioletred`|#db7093|
+|`papayawhip`|#ffefd5|
+|`peachpuff`|#ffdab9|
+|`peru`|#cd853f|
+|`pink`|#ffc0cb|
+|`plum`|#dda0dd|
+|`powderblue`|#b0e0e6|
+|`purple`|#800080|
+|`red`|#ff0000|
+|`rosybrown`|#bc8f8f|
+|`royalblue`|#4169e1|
+|`saddlebrown`|#8b4513|
+|`salmon`|#fa8072|
+|`sandybrown`|#f4a460|
+|`seagreen`|#00ff00|
+|`seashell`|#fff5ee|
+|`sienna`|#a0522d|
+|`silver`|#c0c0c0|
+|`skyblue`|#87ceeb|
+|`slateblue`|#6a5acd|
+|`slategray`|#708090|
+|`snow`|#fffafa|
+|`springgreen`|#00ff7f|
+|`steelblue`|#4682b4|
+|`tan`|#d2b48c|
+|`teal`|#008080|
+|`thistle`|#d8bfd8|
+|`tomato`|#ff6347|
+|`turquoise`|#40e0d0|
+|`violet`|#ee82ee|
+|`wheat`|#f5deb3|
+|`white`|#ffffff|
+|`whitesmoke`|#f5f5f5|
+|`yellow`|#ffff00|
+|`yellowgreen`|#9acd32|

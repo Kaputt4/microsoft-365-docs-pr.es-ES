@@ -2,8 +2,8 @@
 title: Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: Obtenga información detallada sobre cómo ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en eDiscovery avanzado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b142c5d582b9a7bb84dd518325369e4b1adccf69
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 054fa4a88d8c61751b4064b3535de66881655631
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936193"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663279"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado (clásico)
 
@@ -65,7 +65,7 @@ El cuadro de diálogo historial de exportación proporciona información detalla
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
-[Exportar resultados](export-results-in-advanced-ediscovery.md)
+[Exportar resultados ](export-results-in-advanced-ediscovery.md)
 
 [Exportar campos de informes](export-report-fields-in-advanced-ediscovery.md)
 

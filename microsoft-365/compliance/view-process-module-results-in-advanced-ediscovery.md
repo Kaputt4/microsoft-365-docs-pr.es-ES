@@ -2,8 +2,8 @@
 title: Ver los resultados del módulo de proceso en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: Obtenga información sobre cómo encontrar los resultados de un módulo de proceso ejecutado en la exhibición avanzada de documentos electrónicos, incluido el estado de la tarea y el resumen del proceso.
-ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 73699d77e305055f6c2dc444fff00fb714b458cd
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936173"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663269"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Ver los resultados del módulo de proceso en eDiscovery avanzado (clásico)
 
-Una **Prepare** vez iniciado el \> **proceso** de preparación, puede ver el progreso y los resultados. 
+Una  vez iniciado el \> **proceso** de preparación, puede ver el progreso y los resultados. 
   
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>Procesar el estado de la tarea
 
-En **preparar** los resultados del \> **proceso** \> **Results**, la página muestra el estado actual (si el proceso se está ejecutando actualmente) o el estado de la tarea de estado de proceso último como se muestra en el siguiente ejemplo.
+En **preparar** los resultados del \> **proceso** \> , la página muestra el estado actual (si el proceso se está ejecutando actualmente) o el estado de la tarea de estado de proceso último como se muestra en el siguiente ejemplo.
   
 ![Estado de la tarea del módulo de proceso](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -68,7 +68,7 @@ En preparar \> \> \> Resumen de proceso de resultados del proceso, se muestra un
   
 Los paneles presentan una representación gráfica de las estadísticas del archivo importado, de la siguiente manera:
   
-- **Resumen de proceso acumula**d: todos los archivos en el caso.
+- **Resumen de proceso acumula** d: todos los archivos en el caso.
     
 - **Resumen del proceso en último lugar**: archivos cargados desde la última sesión o acción. 
     

@@ -2,8 +2,8 @@
 title: Establecer opciones de análisis en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: Revise los pasos para configurar las opciones del proceso de análisis en eDiscovery avanzado, incluidos los elementos casi duplicados, los subprocesos de correo electrónico y los temas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d622e06cdfe9a46f470be46d1a5b9df98347cc0a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 1ff51402cd79f2966730677a982fa5173b7e9b98
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936887"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663505"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Establecer las opciones de análisis en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -33,7 +33,7 @@ En la exhibición avanzada de documentos electrónicos, establezca las opciones 
   
 ## <a name="set-analyze-options"></a>Establecer opciones de análisis
 
-Abra **preparar \> ** la \> **instalación**de Analyze. Se muestra la siguiente ventana.
+Abra **preparar \>** la \> **instalación** de Analyze. Se muestra la siguiente ventana.
   
 ![Establecer las opciones de análisis](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -83,7 +83,7 @@ Una vez establecidas estas opciones, haga clic en **analizar** para ejecutar. Se
   
 [Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Establecer omitir texto](set-ignore-text-in-advanced-ediscovery.md)
+[Establecer omitir texto ](set-ignore-text-in-advanced-ediscovery.md)
   
 [Establecer la configuración avanzada del análisis](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   

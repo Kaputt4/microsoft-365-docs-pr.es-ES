@@ -2,8 +2,8 @@
 title: Usar herramientas de eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: Obtenga información sobre las utilidades en eDiscovery avanzado, incluidos registro de casos, datos claros, errores de proceso, modificación de relevancia y análisis de transparencia.
-ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 745b81609d73ec88525c3348cc4d582c7d5d7b30
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936623"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663299"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Usar herramientas de eDiscovery avanzado
 
@@ -38,7 +38,7 @@ El archivo de registro también se puede descargar en el equipo del cliente. La 
   
 1. En la barra de menús, haga clic en el icono de **cogwheel** . 
     
-2. En la pestaña ** \> utilidades de configuración y utilidades** , seleccione ** \> configuración del registro de casos**.
+2. En la pestaña **\> utilidades de configuración y utilidades** , seleccione **\> configuración del registro de casos**.
     
 3. Seleccione el **nivel de registro** de la siguiente manera: 
     
@@ -77,13 +77,13 @@ En esta sección se describe cómo omitir o revertir un ejemplo de relevancia.
   
 1. En la barra de menús, haga clic en el icono de **cogwheel** . 
     
-2. En la ficha ** \> utilidades de configuración y utilidades** , seleccione **modificar relevancia**.
+2. En la ficha **\> utilidades de configuración y utilidades** , seleccione **modificar relevancia**.
     
 3. Seleccione una de las opciones: 
     
-  - **Omitir el ejemplo actual: para el usuario actual**: Esto hará **que se**etiqueten todos los archivos sin etiquetar en el ejemplo de caso abierto del usuario que ejecuta la herramienta. El procesamiento de relevancia no se realizará en los archivos etiquetados como **SKIP**.
+  - **Omitir el ejemplo actual: para el usuario actual**: Esto hará **que se** etiqueten todos los archivos sin etiquetar en el ejemplo de caso abierto del usuario que ejecuta la herramienta. El procesamiento de relevancia no se realizará en los archivos etiquetados como **SKIP**.
     
-  - **Omitir el ejemplo actual: todas las muestras abiertas**: Esto hará **que se**etiqueten todos los archivos sin etiquetar en todas las muestras abiertas para todos los usuarios. Esta opción no se recomienda si los usuarios están etiquetando ejemplos en este momento.
+  - **Omitir el ejemplo actual: todas las muestras abiertas**: Esto hará **que se** etiqueten todos los archivos sin etiquetar en todas las muestras abiertas para todos los usuarios. Esta opción no se recomienda si los usuarios están etiquetando ejemplos en este momento.
     
   - **Revertir último ejemplo**: se revertirá el último ejemplo de entrenamiento de relevancia completado, independientemente de si es anterior o posterior al proceso de "cálculo". No se permite revertir una muestra de puesta al día.
     
@@ -99,7 +99,7 @@ En un escenario de casos de varios problemas, se puede generar un informe de an�
   
 1. En la barra de menús, haga clic en el icono de **cogwheel** . 
     
-2. En la ficha ** \> utilidades de configuración y utilidades** , seleccione ** \> configuración de análisis de transparencia**.
+2. En la ficha **\> utilidades de configuración y utilidades** , seleccione **\> configuración de análisis de transparencia**.
     
 3. En * * ID de archivo * *, escriba el identificador de archivo del archivo que se va a procesar.
     

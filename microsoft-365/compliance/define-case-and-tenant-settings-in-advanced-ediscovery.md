@@ -2,8 +2,8 @@
 title: Definir la configuración de casos y espacios empresariales en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: Obtenga información sobre las etiquetas, los módulos cruzados y la configuración de inquilino que puede definir en el nivel de escenario en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e2f46a9339e2c134be505138aac6886cb1a2dd9a
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936427"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663055"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Definir la configuración de casos y espacios empresariales en eDiscovery avanzado (Classic)
 
@@ -52,7 +52,7 @@ Las siguientes opciones de configuración de varios módulos son opciones de may
     
   - **Página casos**
     
-3. Haga clic en **Guardar **.
+3. Haga clic en **Guardar**.
     
 ## <a name="tenant-settings"></a>Configuración de espacios empresariales
 
@@ -68,7 +68,7 @@ El registro de eventos proporciona metadatos sobre el procesamiento avanzado de 
   
 1. Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** . 
     
-2. En la pestaña Configuración de ** \> inquilinos de configuración y utilidades** , seleccione **registro de eventos**. Se muestran los datos del registro de eventos.
+2. En la pestaña Configuración de **\> inquilinos de configuración y utilidades** , seleccione **registro de eventos**. Se muestran los datos del registro de eventos.
     
   - Para filtrar la salida del registro en un caso, seleccione el caso en la lista **casos** . 
     
@@ -84,7 +84,7 @@ La información del sistema de versión de eDiscovery avanzada y las tareas acti
   
 1. Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** . 
     
-2. En la pestaña Configuración de ** \> inquilinos de configuración y utilidades** , seleccione **información del sistema**. Se muestra la información de la versión.
+2. En la pestaña Configuración de **\> inquilinos de configuración y utilidades** , seleccione **información del sistema**. Se muestra la información de la versión.
     
 La visualización se puede actualizar haciendo clic en el icono de **actualización** debajo de la información del espacio empresarial. 
   

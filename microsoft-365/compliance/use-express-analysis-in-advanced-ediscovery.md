@@ -2,8 +2,8 @@
 title: Usar el análisis rápido en eDiscovery avanzado
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de eDiscovery avanzado y luego exportar los resultados.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: de637df426d38da2863a65eea67c65a3f66953a7
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034312"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663329"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Usar el análisis rápido en eDiscovery avanzado (clásico) 
 
@@ -59,7 +59,7 @@ Puede usar el análisis rápido para calcular los subprocesos de correo electró
     > [!NOTE]
     > Actualmente, el token de SAS expira después de un mes. Si intenta descargar después de más de un mes, deshaga la última sesión y, a continuación, vuelva a exportar. 
   
-4. Para iniciar el análisis de Express con la configuración predeterminada, elija **análisis rápido**y aparecerá la página estado de la **tarea** . 
+4. Para iniciar el análisis de Express con la configuración predeterminada, elija **análisis rápido** y aparecerá la página estado de la **tarea** . 
     
     En la **Página estado** de la tarea, puede ampliar las pestañas **proceso**, **analizar** y **exportar** para mostrar detalles sobre la ejecución rápida. 
     
@@ -105,20 +105,20 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
   - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-  - Para exportar a un nuevo lote, haga **Add** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+  - Para exportar a un nuevo lote, haga clic en **Agregar** ![ icono Agregar ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
-  - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
+  - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga clic en **Editar** ![ icono Editar ](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png) y, a continuación, modifique los campos.
     
     > [!NOTE]
     > Después de ejecutar sesiones para un lote de exportación, no se pueden eliminar. Además, solo algunos parámetros pueden editarse una vez ejecutada la primera sesión. 
   
-  - Para crear un lote de exportación duplicado, elija **duplicar** ![lote de exportación cree un](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
+  - Para crear un lote de exportación duplicado, elija **duplicar** lote de exportación ![ cree un icono de exportación de lote duplicado ](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) y escriba un nombre y una descripción para el lote duplicado en el panel. 
     
-  - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+  - Para eliminar un lote de exportación, elija **eliminar** ![ eliminar lote de exportación ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) .
     
-  - Para ver el historial de un lote, seleccione icono ![](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
+  - Para ver el historial de un lote, seleccione icono de historial de vista de **historial por lotes** ![ ](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg) .
     
-2. En definir p? **opulation:** seleccione **incluir sólo los archivos que superen la puntuación de recorte de relevancia** o **refinar el lote de exportación** si desea ajustar la configuración del lote de exportación. Si selecciona **incluir sólo los archivos de la puntuación de recorte**de la relevancia, el **problema** está habilitado y, si la puntuación de relevancia del archivo es superior a la puntuación de corte para el problema seleccionado, el archivo se exportará. El archivo se exportará a menos que el filtro " **para revisión** " lo excluya. Si selecciona **refinar lote de exportación**, los botones **de opción desduplicación** y **filtrar por "para revisión"** están habilitados. Si elige **desduplicación**, los archivos duplicados se filtrarán de acuerdo con la Directiva definida: [nivel de caso (predeterminado): de cada conjunto de archivos duplicados en todo el caso, se desduplicarán todos los archivos menos uno. Nivel de custodio: de cada conjunto de archivos duplicados del mismo custodio, se desduplicarán todos menos un archivo. Hay disponible un registro de todos los archivos duplicados en la salida de la exportación. Si elige **filtrar por ' para revisión '** , seleccione **modificar en metadatos** para escribir la configuración del campo **' para revisión '**. Seleccione **incluir archivos de entrada**para incluir los archivos de origen en el contenido del paquete. Puede desactivar esta opción para acelerar el proceso de exportación. Tenga en cuenta que los archivos nativos se exportarán en cualquier caso.
+2. En definir p? **opulation:** seleccione **incluir sólo los archivos que superen la puntuación de recorte de relevancia** o **refinar el lote de exportación** si desea ajustar la configuración del lote de exportación. Si selecciona **incluir sólo los archivos de la puntuación de recorte** de la relevancia, el **problema** está habilitado y, si la puntuación de relevancia del archivo es superior a la puntuación de corte para el problema seleccionado, el archivo se exportará. El archivo se exportará a menos que el filtro " **para revisión** " lo excluya. Si selecciona **refinar lote de exportación**, los botones **de opción desduplicación** y **filtrar por "para revisión"** están habilitados. Si elige **desduplicación**, los archivos duplicados se filtrarán de acuerdo con la Directiva definida: [nivel de caso (predeterminado): de cada conjunto de archivos duplicados en todo el caso, se desduplicarán todos los archivos menos uno. Nivel de custodio: de cada conjunto de archivos duplicados del mismo custodio, se desduplicarán todos menos un archivo. Hay disponible un registro de todos los archivos duplicados en la salida de la exportación. Si elige **filtrar por ' para revisión '** , seleccione **modificar en metadatos** para escribir la configuración del campo **' para revisión '**. Seleccione **incluir archivos de entrada** para incluir los archivos de origen en el contenido del paquete. Puede desactivar esta opción para acelerar el proceso de exportación. Tenga en cuenta que los archivos nativos se exportarán en cualquier caso.
     
 3. En **definir metadatos**, seleccione una de las siguientes opciones de la lista **exportar plantilla** (una vez por sesión). 
     
@@ -128,9 +128,9 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
   - **Problemas**: seleccione **todos los problemas** o seleccione un asunto concreto que haya creado. 
     
-Elija **Aceptar**para guardar la configuración avanzada, **restaurar los valores predeterminados** para usar los valores predeterminados o **Cancelar** para cancelar la configuración avanzada. 
+Elija **Aceptar** para guardar la configuración avanzada, **restaurar los valores predeterminados** para usar los valores predeterminados o **Cancelar** para cancelar la configuración avanzada. 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 <a name="BK_AdvancedSettings"> </a>
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)

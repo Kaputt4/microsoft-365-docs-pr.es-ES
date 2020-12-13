@@ -2,8 +2,8 @@
 title: Definir problemas y asignar usuarios en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Obtenga información sobre cómo agregar o editar un problema, incluida la asignación de usuarios a este o la eliminación de un problema para un caso de exhibición de documentos electrónicos en eDiscovery avanzado.
-ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1bdcb6f6562b0a431f1645d4006b3392d90a9f87
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630663"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663075"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Definir problemas y asignar usuarios en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -31,7 +31,7 @@ En la exhibición avanzada de documentos electrónicos, se pueden definir uno o 
   
 ## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Adición o edición de un problema y asignación de usuarios
 
-1. En la pestaña \> configuración de **relevancia de relevancia \> ** , seleccione **problemas**.
+1. En la **pestaña \> configuración de relevancia de relevancia** , \> Seleccione **problemas**.
     
     ![Problemas de configuración de relevancia](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
