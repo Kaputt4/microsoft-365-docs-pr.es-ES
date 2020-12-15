@@ -98,7 +98,7 @@ Para conectarse a Azure Active Directory (Azure AD) para la suscripción de Micr
 | Office 365 U.S. Government DoD y Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-En el cuadro de diálogo **Inicie sesión en su cuenta** , escriba su nombre de usuario y contraseña de la cuenta profesional o educativa de Microsoft 365 y seleccione **Aceptar**.
+En el cuadro de diálogo **Inicie sesión en su cuenta**, escriba su nombre de usuario y contraseña de la cuenta profesional o educativa de Microsoft 365 y seleccione **Aceptar**.
 
 Si está usando la autenticación multifactor, siga las instrucciones para proporcionar información de autenticación adicional, como un código de comprobación.
 
@@ -138,7 +138,7 @@ Para conectarse a Azure AD para su suscripción de Microsoft 365 con un nombre d
 | Office 365 U.S. Government DoD y Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-En el cuadro de diálogo **Inicie sesión en su cuenta** , escriba su nombre de usuario y contraseña de la cuenta profesional o educativa de Microsoft 365 y seleccione **Aceptar**.
+En el cuadro de diálogo **Inicie sesión en su cuenta**, escriba su nombre de usuario y contraseña de la cuenta profesional o educativa de Microsoft 365 y seleccione **Aceptar**.
 
 Si está usando la autenticación multifactor, siga las instrucciones para proporcionar información de autenticación adicional, como un código de comprobación.
 
@@ -165,11 +165,11 @@ Si recibe un mensaje de error, compruebe los siguientes problemas:
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Si el número de versión devuelto es menor que *1.0.8070.2* , desinstale el Módulo Microsoft Azure Active Directory para Windows PowerShell e instale de nuevo siguiendo el [Paso 1](#step-1-install-the-required-software) descrito anteriormente.
+    Si el número de versión devuelto es menor que *1.0.8070.2*, desinstale el Módulo Microsoft Azure Active Directory para Windows PowerShell e instale de nuevo siguiendo el [Paso 1](#step-1-install-the-required-software) descrito anteriormente.
 
-- **Si recibe un mensaje de error de conexión** , consulte el [Error "Connect-MsolService: se produjo una excepción de tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Si recibe un mensaje de error de conexión**, consulte el [Error "Connect-MsolService: se produjo una excepción de tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-- **Si recibe un mensaje de error "Obtener elemento: no se encontró la ruta de acceso"** , utilice este comando:
+- **Si recibe un mensaje de error "Obtener elemento: no se encontró la ruta de acceso"**, utilice este comando:
 
 
    ```powershell

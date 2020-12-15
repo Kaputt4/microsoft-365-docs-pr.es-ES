@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e25d687ea22c70ba36f7c183b1fd8e578f7fa13
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659707"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683336"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -230,7 +230,7 @@ Vea las secciones siguientes para habilitar o deshabilitar una directiva, establ
 
    Mueva el botón de alternancia a la izquierda para deshabilitar la directiva: ![Deshabilitar](../../media/scc-toggle-off.png)
 
-   Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Habilitar](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Habilitar](../../media/scc-toggle-on.png)
 
 No se puede deshabilitar la Directiva de correo no deseado saliente predeterminada.
 

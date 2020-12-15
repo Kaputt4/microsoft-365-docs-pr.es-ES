@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659866"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683054"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -43,12 +43,12 @@ En la tabla siguiente se describen las diferencias de alto nivel entre las direc
 
 |Característica|Directivas antiphishing en EOP|Directivas antiphishing en Microsoft defender para Office 365|
 |---|:---:|:---:|
-|Directiva predeterminada creada automáticamente|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Crear directivas personalizadas|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuración de Directiva<sup>\*</sup>|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuración de suplantación||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuración de suplantación|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Umbrales de suplantación de identidad avanzada||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Directiva predeterminada creada automáticamente|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Crear directivas personalizadas|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Configuración de Directiva<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Configuración de suplantación||![Marca de verificación](../../media/checkmark.png)|
+|Configuración de suplantación|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|Umbrales de suplantación de identidad avanzada||![Marca de verificación](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> En la directiva predeterminada, el nombre y la descripción de la Directiva son de solo lectura (la descripción está en blanco) y no se puede especificar a quién se aplica la Directiva (la directiva predeterminada se aplica a todos los destinatarios).

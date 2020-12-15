@@ -29,7 +29,7 @@ Use las funciones de Gobierno de la información de Microsoft (a veces abreviado
 
 ![Gobierne los datos: información de gobierno y administración de registros](../media/information-governance-records-management.png)
 
-¿Desea proteger sus datos? Obtenga información sobre [Microsoft Information Protection en Microsoft 365](information-protection.md).
+¿Quiere saber cómo proteger los datos? Obtenga información sobre la [Microsoft Information Protection en Microsoft 365](information-protection.md).
 
 ## <a name="information-governance"></a>Información de gobierno
 

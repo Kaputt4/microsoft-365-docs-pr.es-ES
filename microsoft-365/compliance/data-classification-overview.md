@@ -51,7 +51,7 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 
 Un numero de diferentes suscripciones admite punto de conexión DLP. Para ver las opciones de licencia para el punto de conexión DLP, vea [Concesión de licencias de protección de la información para obtener instrucciones](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
-### <a name="permissions"></a>Permisos
+### <a name="permissions"></a>Permissions
 
  Para obtener acceso a la página de clasificación de datos, una cuenta debe tener asignada una suscripción en cualquiera de estos roles o grupos de roles.
 

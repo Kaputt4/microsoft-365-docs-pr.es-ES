@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Los administradores pueden aprender a usar las etiquetas de cuarentena para controlar lo que los usuarios pueden hacer a sus mensajes en cuarentena.
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616013"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683072"
 ---
 # <a name="quarantine-tags"></a>Etiquetas de cuarentena
 
@@ -44,12 +44,12 @@ En la tabla siguiente se describen los permisos individuales disponibles y lo qu
 
 |Permiso|Sin acceso|Acceso limitado|Acceso completo|
 |---|:---:|:---:|:---:|
-|**Permitir remitente** (_PermissionToAllowSender_)|||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Bloquear remitente** (_PermissionToBlockSender_)||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Eliminar** (_PermissionToDelete_)||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Vista previa** (_PermissionToPreview_)||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Permitir que los destinatarios liberen un mensaje de la cuarentena** (_PermissionToRelease_)|||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Permitir que los destinatarios soliciten que se libere un mensaje de la cuarentena** (_PermissionToRequestRelease_)||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**Permitir remitente** (_PermissionToAllowSender_)|||![Marca de verificación](../../media/checkmark.png)|
+|**Bloquear remitente** (_PermissionToBlockSender_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|**Eliminar** (_PermissionToDelete_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|**Vista previa** (_PermissionToPreview_)||![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|
+|**Permitir que los destinatarios liberen un mensaje de la cuarentena** (_PermissionToRelease_)|||![Marca de verificación](../../media/checkmark.png)|
+|**Permitir que los destinatarios soliciten que se libere un mensaje de la cuarentena** (_PermissionToRequestRelease_)||![Marca de verificación](../../media/checkmark.png)||
 |
 
 Si no le gustan los permisos predeterminados en los grupos de permisos preestablecidos, puede usar permisos personalizados cuando cree o modifique etiquetas de cuarentena personalizadas. Para obtener más información acerca de lo que hace cada permiso, consulte la sección detalles de permisos de la [etiqueta de cuarentena](#quarantine-tag-permission-details) más adelante en este artículo.

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 55a84fa8ba31cfd4f981f2820811b541ae340a27
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357628"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683240"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Directivas para permitir el acceso de B2B y de invitado externo
 
@@ -63,8 +63,6 @@ Microsoft Teams define lo siguiente:
 - El **acceso externo** es para un usuario externo que no tiene una cuenta B2B. El acceso externo puede incluir invitaciones y participación en las llamadas, chats y reuniones, pero no incluye la pertenencia al equipo ni el acceso a los recursos del equipo.
 
 Para obtener más información, consulte la [comparación entre Guest y external Access for Teams](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
-
-Las directivas de acceso condicional solo se aplican al acceso de invitado en Microsoft Teams porque hay una cuenta B2B de Azure AD correspondiente.
 
 Consulte [recomendaciones de directivas para proteger los equipos chats, grupos y archivos](teams-access-policies.md) para obtener más información sobre cómo proteger las directivas de acceso a dispositivos e identidades para Teams.
 

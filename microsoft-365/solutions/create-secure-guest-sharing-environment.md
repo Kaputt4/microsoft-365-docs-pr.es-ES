@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558193"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667710"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -162,7 +162,7 @@ Puede limitar sus zonas vulnerables a un ataque y facilitar las tareas de admini
 
 Para Grupos de Microsoft 365 y Teams, esto se realiza mediante una directiva de acceso condicional de Azure AD. En el caso de SharePoint, se configura en el Centro de administración de SharePoint. (También puede [usar etiquetas de confidencialidad para restringir el acceso de invitados a solo web](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites))
 
-Cómo restringir el acceso de los invitados a solo web para grupos y equipos
+Cómo restringir el acceso de los invitados a solo web para Grupos y Equipos:
 
 1. Vaya a [directivas de acceso condicional de Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 2. En la hoja **Acceso condicional - Directivas**, seleccione **Nueva directiva**.

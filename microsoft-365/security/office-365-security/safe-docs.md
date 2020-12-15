@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659878"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682942"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -62,7 +62,7 @@ Los archivos enviados por documentos seguros no se conservan en defender más al
 
 2. En la **configuración global** vuela hacia fuera que aparece, configure las siguientes opciones:
 
-   - **Active los documentos seguros para los clientes de Office**: mueva el botón de alternancia a la derecha para activar la característica: ![ activar o desactivar ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) .
+   - **Active los documentos seguros para los clientes de Office**: mueva el botón de alternancia a la derecha para activar la característica: ![ activar o desactivar ](../../media/scc-toggle-on.png) .
 
    - **Permitir que los usuarios haga clic a través de la vista protegida incluso si documentos seguros identifica el archivo como malintencionado**: le recomendamos que deje esta opción desactivada (deje el botón de alternancia a la izquierda: ![ desactivar ](../../media/scc-toggle-off.png) ).
 

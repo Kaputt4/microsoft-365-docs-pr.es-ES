@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que está en conflicto con una directiva DLP.
-ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4f8855e3dce2adaf457b9a2453ca9dd827de5bcd
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819310"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682953"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -45,9 +45,9 @@ En el centro de seguridad &amp; y cumplimiento, al crear una directiva DLP, pued
     
   - Para el correo electrónico en Outlook en la web y Outlook 2013 y versiones posteriores, la sugerencia de directiva aparece en la parte superior de un mensaje encima de los destinatarios mientras se redacta el mensaje.
     
-  - Para los documentos de una cuenta de OneDrive para la empresa o un sitio de SharePoint Online, la sugerencia de Directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar un elemento y, a continuación **Information** , elegir ![ el icono del panel ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) de información de información en la esquina superior derecha de la página para abrir el panel de detalles. 
+  - Para los documentos de una cuenta de OneDrive para la empresa o un sitio de SharePoint Online, la sugerencia de Directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar un elemento y, a continuación  , elegir ![ el icono del panel ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) de información de información en la esquina superior derecha de la página para abrir el panel de detalles. 
     
-  - Para los documentos de Excel, PowerPoint y Word que se almacenan en un sitio de OneDrive para la empresa o un sitio de SharePoint Online que se incluye en la Directiva DLP, la sugerencia de directiva aparece en la barra de mensajes y en la vista Backstage (información del menú **archivo** \> **Info**).
+  - Para los documentos de Excel, PowerPoint y Word que se almacenan en un sitio de OneDrive para la empresa o un sitio de SharePoint Online que se incluye en la Directiva DLP, la sugerencia de directiva aparece en la barra de mensajes y en la vista Backstage (información del menú **archivo** \> ).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Agregar notificaciones de usuario a una directiva DLP
 
@@ -57,7 +57,7 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
     
 2. Inicie sesión con su cuenta profesional o educativa. Ahora está en el centro de seguridad y &amp; cumplimiento.
     
-3. En la Directiva de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad &amp; \> izquierdo \> **Data loss prevention** \> **Policy** \> **+ crear una directiva**.
+3. En la Directiva de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad &amp; \> izquierdo \>  \>  \> **+ crear una directiva**.
     
     ![Botón crear una directiva](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
@@ -79,7 +79,7 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
     
 7. Elija **Usar configuración avanzada** a \> **continuación**.
     
-8. Seleccione **+ nueva regla**.
+8. Elija **+ Nueva regla**.
     
 9. En el editor de reglas, en **notificaciones de usuario**, cambie el estado a.
     
@@ -169,7 +169,7 @@ Cuando un documento de un sitio de OneDrive para la empresa o un sitio de ShareP
     
    ![Iconos de sugerencia de directiva en los documentos de una cuenta de OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Para realizar una acción en un documento, puede seleccionar un elemento \> elegir **Information** ![ el icono del panel ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) de información de información en la esquina superior derecha de la página para abrir el panel de detalles \> **ver la sugerencia de directiva**.
+Para realizar una acción en un documento, puede seleccionar un elemento \> elegir  ![ el icono del panel ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) de información de información en la esquina superior derecha de la página para abrir el panel de detalles \> **ver la sugerencia de directiva**.
   
 La sugerencia de directiva enumera los problemas con el contenido y, si las sugerencias de directiva están configuradas con estas opciones, puede elegir **Resolver** y luego **Invalidar** la sugerencia de directiva o **Informar** de un falso positivo. 
   
@@ -203,7 +203,7 @@ Las sugerencias de directiva funcionan independientemente de si la información 
   
 ![Sugerencia de directiva que muestra que un archivo adjunto entra en conflicto con una directiva DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-Si las sugerencias de directiva están configuradas para permitir invalidar, puede elegir **Mostrar detalles** \> **omitir** \> especificar una justificación del negocio o informar de una \> **anulación**de falso positivo.
+Si las sugerencias de directiva están configuradas para permitir invalidar, puede elegir **Mostrar detalles** \> **omitir** \> especificar una justificación del negocio o informar de una \> **anulación** de falso positivo.
   
 ![Sugerencia de directiva en mensaje ampliado para mostrar opción de anulación](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -247,6 +247,9 @@ Cuando las personas trabajan con contenido confidencial en las versiones de escr
 - El sitio se incluye en una directiva DLP configurada para usar sugerencias de directiva.
     
 Los programas de escritorio de Office sincronizan automáticamente las directivas DLP directamente desde Office 365 y, a continuación, examinan los documentos para asegurarse de que no entran en conflicto con las directivas DLP y muestran sugerencias de directivas en tiempo real.
+
+> [!NOTE]
+> Las aplicaciones de escritorio de Office examinan los documentos para determinar si se deben mostrar las sugerencias de directivas de DLP; no muestran sugerencias de directiva que los sitios de SharePoint Online o OneDrive para la empresa ya han determinado que se deben mostrar en un archivo. Como resultado, es posible que no siempre vea una sugerencia de directiva DLP en las aplicaciones de escritorio que ve en los sitios de SharePoint Online o OneDrive para la empresa. Por el contrario, las aplicaciones de Office en web solo muestran sugerencias de directivas de DLP que los sitios de SharePoint Online o OneDrive para la empresa ya han determinado que se deben mostrar.
   
 En función de cómo se configuran las sugerencias de directiva en la directiva DLP, los usuarios pueden optar por simplemente ignorar la sugerencia de directiva, invalidar la directiva con o sin una justificación del negocio o informar de un falso positivo.
   

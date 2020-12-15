@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración de vínculos seguros globales en Microsoft defender para Office 365.
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675246"
+ms.locfileid: "49683168"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos a prueba de errores en Microsoft defender para Office 365
 
@@ -178,7 +178,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
    - Mueva el botón de alternancia a la izquierda para deshabilitar la directiva: ![Desactivar Directiva](../../media/scc-toggle-off.png).
 
-   - Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Activar la Directiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - Mueva el botón de alternancia a la derecha para habilitar la directiva: ![Activar la Directiva](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Establecer la prioridad de las directivas de vínculos a prueba de errores
 

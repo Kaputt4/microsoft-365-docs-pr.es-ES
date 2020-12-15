@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f81ac5a87fad99689f7cfa36c044d3de765f4520
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682611"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -77,16 +77,16 @@ En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición
   
 |**Rol**|**Administrador de cumplimiento**|**Administrador de exhibición de documentos electrónicos & administrador**|**Administración de organizaciones**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Administración de casos <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Comunicación <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Búsqueda de cumplimiento <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Custodian <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Exportar <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Revisar <br/>  | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|Descifrado de RMS <br/>  ||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|Administración de casos <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
+|Comunicación <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Búsqueda de cumplimiento <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
+|Custodian <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Exportar <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
+|Preview <br/>  | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Revisar <br/>  | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> |
+|Descifrado de RMS <br/>  ||![Marca de verificación](../media/checkmark.png) <br/> |||
+|Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](../media/checkmark.png)           <br/> | <br/> |
 ||||
   
 En las secciones siguientes se describe cada uno de los roles RBAC relacionados con la exhibición de documentos electrónicos que aparecen en la tabla anterior.
@@ -145,10 +145,10 @@ Este rol permite a los usuarios ver una lista de elementos devueltos de una bús
 
 ### <a name="review"></a>Revisar
 
-Esta función permite a los usuarios acceder a datos de casos en [eDiscovery avanzado (Classic)](office-365-advanced-ediscovery.md) (también conocido como *eDiscovery avanzado v1* ). El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición de documentos electrónicos (Classic) avanzada. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos (Classic). Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
+Esta función permite a los usuarios acceder a datos de casos en [eDiscovery avanzado (Classic)](office-365-advanced-ediscovery.md) (también conocido como *eDiscovery avanzado v1*). El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición de documentos electrónicos (Classic) avanzada. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos (Classic). Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
 
 > [!NOTE]
-> En este momento, los usuarios a los que se les asigna la función Review (o que es miembro del grupo de roles Reviewer) no pueden obtener acceso a datos en [eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md) (también conocido como *eDiscovery avanzado v 2.0* ). Para agregar miembros a un caso en eDiscovery avanzado v 2.0 para que puedan revisar los datos de caso, un usuario debe ser miembro del grupo de roles eDiscovery Manager.
+> En este momento, los usuarios a los que se les asigna la función Review (o que es miembro del grupo de roles Reviewer) no pueden obtener acceso a datos en [eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md) (también conocido como *eDiscovery avanzado v 2.0*). Para agregar miembros a un caso en eDiscovery avanzado v 2.0 para que puedan revisar los datos de caso, un usuario debe ser miembro del grupo de roles eDiscovery Manager.
 
 ### <a name="rms-decrypt"></a>Descifrado de RMS
 

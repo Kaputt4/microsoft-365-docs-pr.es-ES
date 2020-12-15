@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920541"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683348"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la postura de seguridad con calificación segura de Microsoft
 
@@ -36,10 +36,8 @@ La calificación segura de Microsoft es una medida de la postura de seguridad de
 Para ayudarle a la información que necesita con mayor rapidez, las acciones de mejora de Microsoft se organizan en grupos:
 
 * Identity (cuentas de Azure Active Directory & roles)
-* Datos (no hay acciones de mejora por ahora)
 * Dispositivo (Microsoft defender para el punto de conexión, conocido como [calificación segura de Microsoft para dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * Aplicación (aplicaciones de correo electrónico y nube, incluidos Office 365 y Microsoft Cloud App Security)
-* Infraestructura (no hay acciones de mejora por ahora)
 
 >[!NOTE]
 >En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado que ha hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de la identidad y la API de Graph. [Ver detalles](microsoft-secure-score-whats-new.md)
@@ -56,9 +54,9 @@ Además, si selecciona el botón **incluir** junto a su puntuación, podrá eleg
 
 Los siguientes son los resultados que puede Agregar a su vista de la puntuación general para proporcionarle una imagen más completa de su puntuación general:
 
-- **Puntuación planificada** : Mostrar calificación proyectada cuando se completen las acciones planeadas
-- **Puntuación de la licencia actual** : Mostrar la puntuación que se puede lograr con su licencia actual de Microsoft
-- **Puntuación viable** : Mostrar la puntuación que se puede lograr con las licencias de Microsoft y la aceptación de riesgos actual
+- **Puntuación planificada**: Mostrar calificación proyectada cuando se completen las acciones planeadas
+- **Puntuación de la licencia actual**: Mostrar la puntuación que se puede lograr con su licencia actual de Microsoft
+- **Puntuación viable**: Mostrar la puntuación que se puede lograr con las licencias de Microsoft y la aceptación de riesgos actual
 
 Esta vista es el aspecto que tendrá si ha incluido todas las vistas de puntuación posibles:
 
@@ -114,7 +112,7 @@ En la sección **implementación** se muestran los requisitos previos, paso a pa
 
 Los requisitos previos incluyen las licencias que se deben obtener o las acciones que deben realizarse antes de que se solucione la acción de mejora. Asegúrese de que tiene suficientes plazas en la licencia para completar la acción de mejora y de que esas licencias se aplican a los usuarios necesarios.  
 
-## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
+## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
 Si tiene algún problema, háganoslo saber mediante la publicación de la comunidad de [seguridad, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y le proporcionaremos ayuda.
 

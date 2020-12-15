@@ -36,7 +36,7 @@ Para otras cargas de trabajo, vea:
 - [Más información sobre la retención para Yammer](retention-policies-yammer.md)
 - [Más información sobre las directivas de retención de Exchange](retention-policies-exchange.md)
 
-## <a name="whats-included-for-retention-and-deletion"></a>¿Qué se incluye para la retención y eliminación?
+## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
 Los siguientes elementos de Teams se pueden retener y eliminar mediante directivas de retención para Teams: mensajes de chats y mensajes de canal, incluidas imágenes insertadas, tablas, vínculos de hipertexto y vínculos a otros mensajes y archivos de Teams. Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
 
@@ -65,14 +65,14 @@ Cuando la directiva de retención es retener y luego eliminar:
 
 Para las dos rutas en el diagrama:
 
-1. Si el usuario **edita o elimina un mensaje del chat o canal** durante el período de retención, el mensaje original se copia (si se edita) o se traslada (si se elimina) a la carpeta SubstrateHolds en un plazo de 21 días. El mensaje se almacena hasta que finaliza el período de retención y luego se elimina de forma permanente en 24 horas.
+1. Si el usuario **edita o elimina un mensaje del chat o canal** durante el período de retención, el mensaje original se copia (si se edita) o se traslada (si se elimina) a la carpeta SubstrateHolds en un plazo de 21 días. El mensaje se almacena hasta que finaliza el período de retención y, luego, se elimina de forma permanente en 24 horas.
 
-2. **Si no se elimina un mensaje del chat o canal**, o, en el caso de los mensajes actuales, después de editarlo, el mensaje se traslada a la carpeta SubstrateHolds después de que el período de retención caduque. Esta acción tarda hasta 7 días después de la fecha de expiración. Cuando el mensaje está en la carpeta SubstrateHolds, se elimina permanentemente dentro de las 24 horas siguientes. 
+2. **Si no se elimina un mensaje del chat o de los canales**, o, en el caso de los mensajes actuales, después de editarlo, el mensaje se traslada a la carpeta SubstrateHolds después de que el período de retención caduca. Esta acción tarda hasta 7 días después de la fecha de expiración. El mensaje se elimina de forma permanente durante las 24 horas siguientes después de que se traslada a la carpeta SubstrateHolds. 
 
 > [!NOTE]
 > Los mensajes de la carpeta SubstrateHolds se pueden buscar con las herramientas de eDiscovery. Hasta que los mensajes se eliminen permanentemente de esta carpeta SubstrateHolds, las herramientas de eDiscovery pueden buscarlos.
 
-Cuando la directiva de retención es de solo retención o de solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar.
+Cuando la directiva de retención es de solo retención, o solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar.
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo retención
 

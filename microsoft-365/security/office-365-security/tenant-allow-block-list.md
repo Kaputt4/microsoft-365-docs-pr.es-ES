@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar entradas de direcciones URL en la lista de permitidos y bloqueados del centro de seguridad & cumplimiento.
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660003"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683216"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>Administrar direcciones URL en la lista de permitidos y bloqueados del espacio empresarial
 
@@ -83,7 +83,7 @@ Para obtener información detallada sobre la sintaxis de las entradas de direcci
 
      o
 
-     - Mueva el botón de alternancia a la derecha para configurar las entradas para que no expiren nunca: ![Habilitar](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Mueva el botón de alternancia a la derecha para configurar las entradas para que no expiren nunca: ![Habilitar](../../media/scc-toggle-on.png).
 
    - **Opcional Nota**: escriba un texto descriptivo para las entradas.
 
@@ -111,7 +111,7 @@ Haga clic en **filtro**. En el control flotante de **filtro** que aparece, confi
 
 - **Acción**: seleccione **permitir**, **bloquear** o ambos.
 
-- **Nunca expire**: seleccione Desactivado (desactivado ![ ](../../media/scc-toggle-off.png) ) o activado ( ![ alternar en ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ).
+- No **expira nunca**: seleccione Desactivado: ![ alternar desactivado ](../../media/scc-toggle-off.png) o activado: activar o desactivar ![ ](../../media/scc-toggle-on.png) .
 
 - **Última actualización**: Seleccione una fecha de inicio (desde), una fecha **de** finalización (**hasta**) o ambas.
 
@@ -141,7 +141,7 @@ El valor de la dirección URL no se puede modificar. En su lugar, debe eliminar 
 
      o
 
-     - Mueva el botón de alternancia a la derecha para configurar que la entrada nunca expire: ![Habilitar](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - Mueva el botón de alternancia a la derecha para configurar que la entrada nunca expire: ![Habilitar](../../media/scc-toggle-on.png).
 
    - **Opcional Nota**: escriba un texto descriptivo para la entrada.
 

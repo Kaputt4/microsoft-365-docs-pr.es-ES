@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a14f5a22795fc08b76165466d8e44ee38d8a2d81
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 9105e7ed9e9bc376b3d86cd846d8c1d6eae8deea
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572647"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682918"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de datos adjuntos seguros en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen [Microsoft defender para Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre el análisis de datos adjuntos en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre el análisis de datos adjuntos en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Datos adjuntos seguros es una característica de [Microsoft defender para Office 365](office-365-atp.md) que usa un entorno virtual para comprobar los datos adjuntos en los mensajes de correo electrónico entrantes después de que hayan sido examinados por la [protección antimalware en Exchange Online Protection (EOP)](anti-malware-protection.md), pero antes de entregarlos a los destinatarios. Para obtener más información, consulte [datos adjuntos seguros en Microsoft defender para Office 365](atp-safe-attachments.md).
 
@@ -59,7 +59,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
   - Para crear, modificar y eliminar directivas de datos adjuntos seguros, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas de datos adjuntos seguros, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
@@ -67,8 +67,8 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - El grupo de roles administración de la **organización de solo vista** de [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para conocer la configuración recomendada para las directivas de datos adjuntos seguros, consulte [configuración de datos adjuntos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).
 
@@ -78,7 +78,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 La creación de una directiva de datos adjuntos seguros personalizada en el centro de seguridad & cumplimiento crea la regla de datos adjuntos seguros y la Directiva de datos adjuntos seguros asociada al mismo tiempo con el mismo nombre para ambas.
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
 
 2. En la página **datos adjuntos seguros** , haga clic en **crear**.
 
@@ -125,7 +125,7 @@ La creación de una directiva de datos adjuntos seguros personalizada en el cent
    - Haga clic en el cuadro y desplácese por la lista de valores que desea seleccionar.
    - Haga clic en el cuadro y comience a escribir para filtrar la lista y seleccionar un valor.
    - Para agregar más valores, haga clic en un área vacía del cuadro.
-   - Para quitar entradas individuales, haga **Remove** clic en ![ el icono quitar quitar del ](../../media/scc-remove-icon.png) valor.
+   - Para quitar entradas individuales, haga  clic en ![ el icono quitar quitar del ](../../media/scc-remove-icon.png) valor.
    - Para quitar toda la condición, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en la condición.
 
    Para agregar una condición adicional, haga clic en **Agregar condición** y seleccione un valor restante en **aplicado si**.
@@ -140,7 +140,7 @@ La creación de una directiva de datos adjuntos seguros personalizada en el cent
 
 ## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>Usar el centro de seguridad & cumplimiento para ver directivas de datos adjuntos seguros
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
 
 2. En la página **datos adjuntos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -148,7 +148,7 @@ La creación de una directiva de datos adjuntos seguros personalizada en el cent
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>Usar el centro de seguridad & cumplimiento para modificar directivas de datos adjuntos seguros
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
 
 2. En la página **datos adjuntos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -160,13 +160,13 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Habilitar o deshabilitar las directivas de datos adjuntos seguros
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
 
 2. Observe el valor de la columna **Estado** :
 
    - Mover el botón de alternancia a la izquierda ![Desactivar Directiva](../../media/scc-toggle-off.png) para deshabilitar la Directiva.
 
-   - Mover el botón de alternancia a la derecha ![Activar la Directiva](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) para habilitar la Directiva.
+   - Mover el botón de alternancia a la derecha ![Activar la Directiva](../../media/scc-toggle-on.png) para habilitar la Directiva.
 
 ### <a name="set-the-priority-of-safe-attachments-policies"></a>Establecer la prioridad de las directivas de datos adjuntos seguros
 
@@ -180,7 +180,7 @@ Las directivas de datos adjuntos seguros se muestran en el orden en que se proce
 
 Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista (no puede modificar directamente el número de **Prioridad** en el Centro de seguridad y cumplimiento).
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
 
 2. En la página **datos adjuntos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -198,7 +198,7 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>Usar el centro de seguridad & cumplimiento para quitar directivas de datos adjuntos seguros
 
-1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas.
 
 2. En la página **datos adjuntos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -438,7 +438,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Para comprobar que las directivas de datos adjuntos seguras se crearon, modificaron o quitaron correctamente, siga uno de estos pasos:
 
-- En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Policy** \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas. Compruebe la lista de directivas, sus valores de **Estado** y sus valores de **prioridad** . Para ver más detalles, seleccione la Directiva de la lista y vea los detalles en la lista desplegable.
+- En el centro de seguridad & cumplimiento, vaya  a \>  \> **datos adjuntos seguros de ATP** de directiva de administración de amenazas. Compruebe la lista de directivas, sus valores de **Estado** y sus valores de **prioridad** . Para ver más detalles, seleccione la Directiva de la lista y vea los detalles en la lista desplegable.
 
 - En PowerShell de Exchange Online PowerShell o Exchange Online Protection, reemplace \<Name\> por el nombre de la Directiva o regla, ejecute el siguiente comando y Compruebe la configuración:
 

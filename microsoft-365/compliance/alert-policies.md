@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos.
-ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 5749b38ca9b72c859e9c553ccbb4fe6a44be9754
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367183"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682963"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -56,7 +56,7 @@ A continuación, se presenta una introducción rápida sobre cómo funcionan las
 
 Una directiva de alertas consiste en un conjunto de reglas y condiciones que definen la actividad de usuario o de administrador que genera una alerta, una lista de los usuarios que desencadenan la alerta si realizan la actividad y un umbral que define cuántas veces tiene que producirse la actividad antes de que se desencadene una alerta. También puede clasificar la Directiva y asignarle un nivel de gravedad. Estas dos opciones de configuración ayudan a administrar las directivas de alerta (y las alertas que se desencadenan cuando se cumplen las condiciones de la Directiva) porque se puede filtrar en estas opciones cuando se administran directivas y se ven alertas en el centro de seguridad y cumplimiento. Por ejemplo, puede ver las alertas que coinciden con las condiciones de la misma categoría o ver alertas con el mismo nivel de gravedad.
 
-Para ver y crear directivas de alerta, vaya a [https://protection.office.com](https://protection.office.com) y, a continuación, seleccione directivas de alertas de **alertas** \> **Alert policies**.
+Para ver y crear directivas de alerta, vaya a [https://protection.office.com](https://protection.office.com) y, a continuación, seleccione directivas de alertas de **alertas** \> .
 
 ![En el centro de seguridad y cumplimiento, seleccione alertas y, a continuación, seleccione directivas de alerta para ver y crear directivas de alerta.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -109,7 +109,7 @@ En la tabla siguiente se enumeran y describen las directivas de alertas predeter
 
 La tabla también indica el plan Office 365 Enterprise y Office 365 US Government, que se requiere para cada uno. Algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción complementaria correspondiente además de una suscripción a E1/F1/G1 o E3/G3.
 
-| Directiva de alertas predeterminada | Description | Categoría | Suscripción de Office 365 Enterprise |
+| Directiva de alertas predeterminada | Descripción | Categoría | Suscripción de Office 365 Enterprise |
 |:-----|:-----|:-----|:-----|
 |**Se ha detectado un clic en una dirección URL potencialmente malintencionada**|Genera una alerta cuando un usuario protegido mediante [vínculos a prueba](../security/office-365-security/atp-safe-links.md) de errores de la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Microsoft defender para Office 365 identifica los cambios en la dirección URL o cuando los usuarios invalidan las páginas de vínculos seguros (en función de la Directiva de vínculos seguros de Microsoft 365 de la organización). Esta directiva de alerta tiene una configuración de gravedad **alta** . Para defender para Office 365 P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air). Para obtener más información acerca de los eventos que desencadenan esta alerta, consulte [configurar directivas de vínculos seguros](../security/office-365-security/set-up-atp-safe-links-policies.md).|Administración de amenazas|Suscripción complementaria E5/G5 o defender para Office 365 P2|
 |**Resultado de envío de administración completado**|Genera una alerta cuando un [envío del administrador](../security/office-365-security/admin-submission.md) completa el nuevo análisis de la entidad enviada. Se desencadenará una alerta cada vez que se represente un resultado de nuevo análisis a partir de un envío de administración. Estas alertas están destinadas a recordarle que debe [revisar los resultados de](https://protection.office.com/reportsubmission)los envíos anteriores, enviar mensajes de usuario notificados para obtener la comprobación de la directiva más reciente y volver a examinar los veredictos, y determinar si las directivas de filtrado de su organización tienen el impacto previsto. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|E1/F1, E3 o E5|
@@ -213,37 +213,37 @@ En la siguiente tabla se enumeran las funciones necesarias para ver las alertas 
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla de la sección [directivas de alertas predeterminadas](#default-alert-policies) .
 
-|Role|Gobierno de la información|Prevención de pérdida de datos|Flujo de correo|Permisos|Administración de amenazas|Otros|
+|Función|Gobierno de la información|Prevención de pérdida de datos|Flujo de correo|Permisos|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||
-|Administrador de cumplimiento|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Administrador de cumplimiento|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|
 |Búsqueda de cumplimiento|||||||
 |Administración de dispositivos|||||||
 |Administración de disposición|||||||
-|Administración de cumplimiento de DLP||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Export|||||||
+|Administración de cumplimiento de DLP||![Marca de verificación](../media/checkmark.png)|||||
+|Exportar|||||||
 |Hold|||||||
-|Administrar alertas||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configuración de la organización||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
+|Configuración de la organización||||||![Marca de verificación](../media/checkmark.png)|
 |Preview|||||||
-|Administración de registros|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Administración de retención|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Administración de registros|![Marca de verificación](../media/checkmark.png)||||||
+|Administración de retención|![Marca de verificación](../media/checkmark.png)||||||
 |Revisar|||||||
 |Descifrado de RMS|||||||
-|Administración de funciones||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Administración de funciones||||![Marca de verificación](../media/checkmark.png)|||
 |Búsqueda y depuración|||||||
-|Administrador de seguridad||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Lector de seguridad||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Administrador de seguridad||![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
+|Lector de seguridad||![Marca de verificación](../media/checkmark.png)||![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)
 |Vista de garantía del servicio|||||||
 |Administrador de revisión de supervisión|||||||
 |View-Only registros de auditoría|||||||
 |Administración de dispositivos View-Only|||||||
-|View-Only la administración de cumplimiento de DLP||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|View-Only administrar alertas||||||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Destinatarios con permiso de vista|||  ![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Administración de registros de View-Only|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Administración de la retención de View-Only|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|View-Only la administración de cumplimiento de DLP||![Marca de verificación](../media/checkmark.png)|||||
+|View-Only administrar alertas||||||![Marca de verificación](../media/checkmark.png)|
+|Destinatarios con permiso de vista|||![Marca de verificación](../media/checkmark.png)||||
+|Administración de registros de View-Only|![Marca de verificación](../media/checkmark.png)||||||
+|Administración de la retención de View-Only|![Marca de verificación](../media/checkmark.png)||||||
 |||||||
 
 > [!TIP]

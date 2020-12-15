@@ -177,7 +177,7 @@ Para permitir que este remitente envíe correos electrónicos sin autenticar, ca
 
 Para omitir el filtrado de correo no deseado, algunas partes del filtrado de phishing, pero no el filtrado de malware de remitentes específicos, consulte [Creación de listas de remitentes seguros en Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Solicitar al remitente que configure la autenticación de correo electrónico para los dominios que no son de su propiedad
+### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Solicitar al remitente que configure de la autenticación de correo electrónico para los dominios que no son de su propiedad
 
 Por el problema del correo no deseado y la suplantación de identidad, Microsoft recomienda la autenticación de correo electrónico para todas las organizaciones de correo electrónico. En lugar de configurar anulaciones manuales en la organización, puede solicitar a un administrador del dominio remitente que configure los registros de autenticación de correo electrónico.
 

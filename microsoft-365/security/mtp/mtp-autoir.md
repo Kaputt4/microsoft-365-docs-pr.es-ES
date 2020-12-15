@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356708"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683312"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 defender
 
@@ -39,21 +39,20 @@ ms.locfileid: "49356708"
 > ¿Quiere experimentar Microsoft 365 defender? Puede [evaluarlo en un entorno de laboratorio](https://aka.ms/mtp-trial-lab) o [ejecutar el proyecto piloto en producción](https://aka.ms/m365d-pilotplaybook).
 >
 
+## <a name="how-automated-investigation-and-self-healing-works"></a>Cómo funciona la investigación automática y la Autorrecuperación
+
 A medida que se activen las alertas de seguridad, el equipo de operaciones de seguridad será el encargado de consultar esas alertas y tomar las medidas necesarias para proteger su organización. El establecimiento de prioridades y la investigación de las alertas pueden llevar mucho tiempo, sobre todo cuando siguen apareciendo nuevas alertas mientras se está realizando una investigación. Los equipos de operaciones de seguridad pueden sentirse abrumados por el gran volumen de amenazas que deben supervisar y ante las que deben protegerse. Las capacidades de investigación y respuesta automatizadas, con autorreparación, en Microsoft 365 defender pueden ser de ayuda.
 
 Vea el siguiente vídeo para ver cómo funciona la característica de reparación automática:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-En Microsoft 365 defender, la investigación y la respuesta automatizadas con capacidades de recuperación automática funcionan en los dispositivos, el correo electrónico & el contenido y las identidades. Microsoft 365 defender combina capacidades de: 
-- [Investigación y corrección automáticas en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Investigación y respuesta automatizadas en Microsoft defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Detección de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+En Microsoft 365 defender, la investigación y la respuesta automatizadas con capacidades de recuperación automática funcionan en los dispositivos, el correo electrónico & el contenido y las identidades.
  
-En este artículo se describe cómo funciona la investigación y la respuesta automatizadas. Para configurar estas funciones, consulte [Configure Automated Investigation and Response Capabilities in Microsoft 365 defender](mtp-configure-auto-investigation-response.md).
+> [!TIP]
+> En este artículo se describe cómo funciona la investigación y la respuesta automatizadas. Para configurar estas funciones, consulte [Configure Automated Investigation and Response Capabilities in Microsoft 365 defender](mtp-configure-auto-investigation-response.md).
 
-## <a name="your-virtual-analyst"></a>Su analista virtual
+## <a name="your-own-virtual-analyst"></a>Su propio Analista virtual
 
 Imagínese tener un analista virtual en su equipo de operaciones de seguridad de nivel 1/nivel 2. El analista virtual imita los pasos más idóneos que llevarían a cabo las operaciones de seguridad para investigar y solucionar las amenazas. El asistente virtual podría funcionar de forma permanente y con capacidad ilimitada realizando una carga considerable de investigación y corrección de amenazas. Ese asistente virtual podría reducir el tiempo de respuesta considerablemente, lo que permitiría al equipo de operaciones de seguridad trabajar en otros proyectos estratégicos importantes. Si este escenario suena como ciencia ficción, no lo es. Este analista virtual forma parte de su conjunto de aplicaciones de Microsoft 365 defender y su nombre es *investigación y respuesta automatizadas*.
 
@@ -83,7 +82,7 @@ Durante la ejecución de una investigación, todas las demás alertas relacionad
 > No todas las alertas activan una investigación automatizada, y no todas las investigaciones dan como resultado acciones de corrección automatizadas; todo esto depende de cómo esté configurada la respuesta y la investigación automatizadas para su organización. Consulte [Configure Automated Investigation and Response Capabilities in Microsoft 365 defender](mtp-configure-auto-investigation-response.md).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Vea los requisitos previos para la investigación y la respuesta automatizadas en Microsoft 365 defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurar la investigación y la respuesta automatizadas para su organización](mtp-configure-auto-investigation-response.md)
