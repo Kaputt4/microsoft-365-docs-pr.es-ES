@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561687"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667815"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -85,13 +85,6 @@ Si el modo de lista está configurado en **Permitir**, los usuarios podrán carg
 #### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
 Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
-
-### <a name="always-audit-file-activity-from-onboarded-devices"></a>Auditar siempre la actividad de archivos de los dispositivos integrados
-
-Controle si la actividad DLP de Office, los archivos PDF y CSV se auditan automáticamente y están disponibles para su revisión en la telemetría de auditoría y en el explorador de actividad de los dispositivos integrados. 
-
-Si está activado (predeterminado), la actividad de archivo siempre se audita en los dispositivos integrados, independientemente de si están o no incluidos en una directiva DLP activa.
-Si está desactivado, la actividad de archivo se audita en los dispositivos integrados, solo si están incluidos en una directiva DLP activa. 
 
 
 ## <a name="tying-dlp-settings-together"></a>Vincular las opciones de configuración DLP

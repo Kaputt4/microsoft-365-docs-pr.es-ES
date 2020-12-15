@@ -8,7 +8,7 @@
       href: try-or-buy-microsoft-365.md
     - name: Ampliar el periodo de prueba
       href: extend-your-trial.md
-    - name: Comprar o editar un complemento
+    - name: Comprar o administrar complementos
       href: buy-or-edit-an-add-on.md
     - name: Agregar espacio de almacenamiento
       href: add-storage-space.md
@@ -56,7 +56,7 @@
       href: billing-and-payments/change-payment-method.md
     - name: Cambiar la frecuencia de facturación
       href: billing-and-payments/change-payment-frequency.md
-    - name: Administrar perfiles de facturación
+    - name: Entender los perfiles de facturación
       href: billing-and-payments/manage-billing-profiles.md
     - name: Cambiar las direcciones de facturación
       href: billing-and-payments/change-your-billing-addresses.md
