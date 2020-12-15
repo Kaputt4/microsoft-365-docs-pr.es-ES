@@ -8,6 +8,8 @@
       href: work-with-topics.md
     - name: Conceder a los usuarios permisos para el centro de temas
       href: give-user-permissions-to-the-topic-center.md
+    - name: Preparar el entorno
+      href: topic-experiences-get-ready.md
 - name: Configuración y administración
   items:
     - name: Seguridad del tema
@@ -24,3 +26,7 @@
       href: topic-experiences-user-permissions.md
     - name: Cambiar el nombre del centro de temas
       href: topic-experiences-administration.md
+- name: Adopción
+  items:
+    - name: Empezar a impulsar la adopción
+      href: topics-adoption-getstarted.md
