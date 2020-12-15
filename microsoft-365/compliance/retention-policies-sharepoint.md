@@ -117,17 +117,17 @@ Este no es el caso de las etiquetas de retención cuando el contenido está suje
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización
 
-**SharePoint** :
+**SharePoint**:
 
 Cuando un usuario deja la organización, no se verá afectado el contenido creado por el usuario, ya que SharePoint se considera un entorno de colaboración, al contrario que el buzón de un usuario o la cuenta de OneDrive.
 
-**OneDrive** :
+**OneDrive**:
 
 Si un usuario abandona su organización, cualquier archivo que esté sujeto a una directiva de retención o que tenga una etiqueta de retención permanecerá durante la duración de la directiva o la etiqueta. Durante ese período de tiempo, todo el acceso para compartir sigue funcionando. Cuando expire el período de retención, el contenido se mueve a la papelera de reciclaje de la colección de sitios y no es accesible para nadie excepto el administrador. Si un documento está marcado con una etiqueta de retención como registro, el documento no se eliminará hasta que finalice el período de retención, tras lo cual el contenido se eliminará de forma permanente.
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
 - [Crear y configurar directivas de retención](create-retention-policies.md)

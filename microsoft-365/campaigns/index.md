@@ -35,7 +35,7 @@ ms.locfileid: "48897298"
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 para Campañas
 ===========================
 
-En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas de política, consultorios médicos y jurídicos, y muchas otras empresas. Microsoft 365 para Campañas incluye un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, incluso si no está en ninguna campaña.
+En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas de política, consultorios médicos y jurídicos, y muchas otras empresas. Microsoft 365 para Campañas incluye un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, incluso si no está en una campaña.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
@@ -48,7 +48,7 @@ Es una configuración segura recomendada incluida en Microsoft 365 Empresa Premi
 - Proteger sus archivos de trabajo en todos sus dispositivos iOS, Android y Windows 10 con una seguridad de nivel empresarial que es fácil de administrar.
 - Aplicar protección adicional para cuentas de usuario e identidades.
 
-![Microsoft 365 Empresa Premium protege sus herramientas de productividad, sus herramientas de colaboración, el almacenamiento de archivos, el correo electrónico, los dispositivos y su identidad](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Empresa Premium protege sus herramientas de productividad, herramientas de colaboración, almacenamiento de archivos, correo electrónico, dispositivos e identidades](../media/M365-WhatIsIt-SecurityFocus.png)
 
 Aunque las campañas para las elecciones federales de los Estados Unidos pueden optar a precios especiales de Microsoft 365 Empresa Premium, todas las organizaciones con este plan pueden aprovechar esta guía para configurar una mayor seguridad y obtener información sobre cómo colaborar de forma segura.
 
@@ -74,15 +74,15 @@ Para empezar, siga estos pasos:
 
 Después de configurar el entorno seguro de Microsoft 365, puede usar las soluciones siguientes para ponerse en marcha:
 
-| Crear equipos de colaboración | Configurar reuniones en línea |
+| Crear equipos para colaboración | Configurar reuniones en línea |
 | ------------- | ------------- |
-| ![un sitio de comunicación de SharePoint](../media/sm-m365-democracy-teams-collab.png) | ![una reunión en línea](../media/m365-democracy-teams-meetings.png) |
+| ![Un sitio de comunicación de SharePoint](../media/sm-m365-democracy-teams-collab.png) | ![Una reunión en línea](../media/m365-democracy-teams-meetings.png) |
 | Colabore con equipos determinados para el personal clave, todos los miembros del personal y los socios o proveedores. [Cree su equipo](create-teams-for-collaboration.md) | Programe una reunión con audio, vídeo y uso compartido con Microsoft Teams. [Configurar una reunión](set-up-meetings.md) |
 
-| Cifrar o etiquetar su correo electrónico confidencial | Crear un sitio de comunicaciones |
+| Cifre o etiquete su correo electrónico confidencial | Crear un sitio de comunicaciones |
 | ------------- | ------------- |
-| ![Correo electrónico cifrado y etiquetado](../media/sm-m365-campaign-email-encrypt.png) | ![un sitio de comunicaciones de SharePoint](../media/sm-m365-democracy-comms-site.png) |
-| Use etiquetas de confidencialidad y cifrado para proteger el correo electrónico que contenga información confidencial o sensible. [Enviar correo electrónico cifrado](send-encrypted-email.md) | Comparta eventos, mensajes, imágenes y mucho más con su equipo en un sitio de comunicaciones interno creado con SharePoint. [Cree su sitio](create-communications-site.md) |
+| ![Correo electrónico cifrado y etiquetado](../media/sm-m365-campaign-email-encrypt.png) | ![Un sitio de comunicaciones de SharePoint](../media/sm-m365-democracy-comms-site.png) |
+| Use etiquetas de confidencialidad y cifrado para proteger el correo electrónico que contiene información confidencial. [Enviar correo electrónico cifrado](send-encrypted-email.md) | Comparta eventos, mensajes e imágenes, entre otras cosas, con su equipo en un sitio de comunicaciones interno creado con SharePoint. [Cree su sitio](create-communications-site.md) |
 
 | Compartir archivos y vídeos |
 | ------------- |
