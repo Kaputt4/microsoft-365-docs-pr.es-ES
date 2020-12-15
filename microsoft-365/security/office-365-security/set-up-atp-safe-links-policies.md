@@ -17,23 +17,26 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de vínculos seguros y la configuración de vínculos seguros globales en Microsoft defender para Office 365.
-ms.openlocfilehash: 550be48d5f1cae490c53c8f4a9fcedb0b9f21f73
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
+ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572722"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675246"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos a prueba de errores en Microsoft defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen [Microsoft defender para Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre Safelinks en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre Safelinks en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Vínculos seguros es una característica de [Microsoft defender para Office 365](office-365-atp.md) que proporciona análisis de URL de los mensajes de correo electrónico entrantes en el flujo de correo y la hora de la comprobación de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, vea [vínculos a prueba de errores en Microsoft defender para Office 365](atp-safe-links.md).
 
 No hay ninguna directiva de vínculos a prueba de errores integrada o predeterminada. Para obtener vínculos a prueba de errores de las direcciones URL, debe crear una o más directivas de vínculos seguros, como se describe en este artículo.
+
+> [!NOTE]
+> La configuración global de la protección de vínculos seguros se establece **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, vea [Configure global Settings for Safe links in Microsoft defender for Office 365](configure-global-settings-for-safe-links.md).
 
 Puede configurar directivas de vínculos seguros en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para las organizaciones de Microsoft 365 con buzones de correo en Exchange Online; PowerShell de EOP independiente para las organizaciones sin buzones de Exchange Online, pero con Microsoft defender para Office 365 para las suscripciones complementarias).
 
@@ -50,16 +53,13 @@ La diferencia entre estos dos elementos no es obvia cuando se administran direct
 
 En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, vea la sección [usar Exchange Online PowerShell o Standalone EOP PowerShell para configurar directivas de vínculos seguros](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) , más adelante en este artículo.
 
-> [!NOTE]
-> La configuración global de la protección de vínculos seguros se establece **fuera** de las directivas de vínculos seguros. Para obtener instrucciones, vea [Configure global Settings for Safe links in Microsoft defender for Office 365](configure-global-settings-for-safe-links.md).
-
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **vínculos seguros** , use <https://protection.office.com/safelinksv2> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener asignados permisos en el centro de seguridad & cumplimiento antes de poder llevar a cabo los procedimientos de este artículo:
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
   - Para crear, modificar y eliminar directivas de vínculos a prueba de errores, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas de vínculos a prueba de errores, debe ser miembro de los grupos de roles **lector global** o **lector de seguridad** .
 
@@ -67,8 +67,8 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
   **Notas**:
 
-  - La adición de usuarios al rol correspondiente de Azure Active Directory en el centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios en el centro de seguridad & cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - El grupo de roles administración de la **organización de solo vista** de [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para conocer la configuración recomendada para las directivas de vínculos seguros, consulte [configuración de directivas de vínculos seguros](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).
 
@@ -80,7 +80,7 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 
 La creación de una directiva de vínculos seguros personalizada en el centro de seguridad & cumplimiento crea la regla de vínculos seguros y la Directiva de vínculos seguros asociada al mismo tiempo con el mismo nombre para ambas.
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**.
 
 2. En la página **vínculos seguros** , haga clic en **crear**.
 
@@ -137,7 +137,7 @@ La creación de una directiva de vínculos seguros personalizada en el centro de
    - Haga clic en el cuadro y desplácese por la lista de valores que desea seleccionar.
    - Haga clic en el cuadro y comience a escribir para filtrar la lista y seleccionar un valor.
    - Para agregar más valores, haga clic en un área vacía del cuadro.
-   - Para quitar entradas individuales, haga **Remove** clic en ![ el icono quitar quitar del ](../../media/scc-remove-icon.png) valor.
+   - Para quitar entradas individuales, haga  clic en ![ el icono quitar quitar del ](../../media/scc-remove-icon.png) valor.
    - Para quitar toda la condición, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en la condición.
 
    Para agregar una condición adicional, haga clic en **Agregar condición** y seleccione un valor restante en **aplicado si**.
@@ -152,7 +152,7 @@ La creación de una directiva de vínculos seguros personalizada en el centro de
 
 ## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para ver las directivas de vínculos a prueba de errores
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**.
 
 2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -160,7 +160,7 @@ La creación de una directiva de vínculos seguros personalizada en el centro de
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para modificar las directivas de vínculos a prueba de errores
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**.
 
 2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -172,7 +172,7 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Habilitar o deshabilitar las directivas de vínculos a prueba de errores
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**.
 
 2. Observe el valor de la columna **Estado** :
 
@@ -192,7 +192,7 @@ Las directivas de vínculos seguros se muestran en el orden en que se procesan (
 
 Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista (no puede modificar directamente el número de **Prioridad** en el Centro de seguridad y cumplimiento).
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**.
 
 2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -210,7 +210,7 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Usar el centro de seguridad & cumplimiento para quitar directivas de vínculos a prueba de errores
 
-1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**.
+1. En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**.
 
 2. En la página **vínculos seguros** , seleccione una directiva de la lista y haga clic en ella (no active la casilla de verificación).
 
@@ -468,7 +468,7 @@ Para comprobar que vínculos seguros está examinando los mensajes, consulte los
 
 Para comprobar que las directivas de vínculos seguros se crearon, modificaron o quitaron correctamente, siga uno de estos pasos:
 
-- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \> **Policy** \> **ATP Safe links**. Compruebe la lista de directivas, sus valores de **Estado** y sus valores de **prioridad** . Para ver más detalles, seleccione la Directiva de la lista y vea los detalles en la lista desplegable.
+- En el centro de seguridad & cumplimiento, vaya a la Directiva de **Administración de amenazas** de \>  \> **ATP Safe links**. Compruebe la lista de directivas, sus valores de **Estado** y sus valores de **prioridad** . Para ver más detalles, seleccione la Directiva de la lista y vea los detalles en la lista desplegable.
 
 - En PowerShell de Exchange Online PowerShell o Exchange Online Protection, reemplace \<Name\> por el nombre de la Directiva o regla, ejecute el siguiente comando y Compruebe la configuración:
 

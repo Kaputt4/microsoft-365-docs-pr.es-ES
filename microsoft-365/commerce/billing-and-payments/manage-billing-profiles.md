@@ -1,5 +1,5 @@
 ---
-title: Administrar perfiles de facturación
+title: Descripción de los perfiles de facturación
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,25 +12,27 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- Commerce
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
-keywords: Perfil de facturación, facturas, cargos, cargos administrados
-ms.openlocfilehash: de6d6cd65d9e83e7211bcdc33f1774aaec3d1729
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 708096b624caa9c23a40df4842ccfce856db048d
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638452"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667782"
 ---
-# <a name="manage-billing-profiles"></a>Administrar perfiles de facturación
+# <a name="understand-billing-profiles"></a>Descripción de los perfiles de facturación
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -52,7 +54,7 @@ Durante la primera compra, se creará automáticamente un perfil de facturación
 
 Los roles en perfiles de facturación tienen permisos para controlar las compras y ver y administrar las facturas. Asigne estos roles a los usuarios que realizan un seguimiento, organizan y pagan facturas, como los miembros del equipo de compras de su organización.
 
-| Role                          | Descripción                                                                       |
+| Función                          | Descripción                                                                       |
 |-----------------------------  |---------------------------------------------------------------------------------  |
 | Propietario del perfil de facturación         | Administrar todo para un perfil de facturación                                           |
 | Colaborador de Perfil de facturación   | Administrar todo excepto permisos en un perfil de facturación                         |
@@ -63,7 +65,7 @@ Los roles en perfiles de facturación tienen permisos para controlar las compras
 
 1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 
-2. Elija **perfiles de facturación**y, después, elija un perfil de facturación de la lista.
+2. Elija **perfiles de facturación** y, después, elija un perfil de facturación de la lista.
 
     - En la ficha **información general** , puede editar los detalles del perfil de facturación y activar o desactivar el envío de facturas por correo electrónico.
 

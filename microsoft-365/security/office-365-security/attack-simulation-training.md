@@ -1,7 +1,7 @@
 ---
-title: Simule un ataque de suplantación de identidad con Microsoft defender para
-ms.author: daniha
-author: danihalfin
+title: Simular un ataque de suplantación de identidad con Microsoft defender para Office 365
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -10,23 +10,23 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Obtenga información sobre cómo simular ataques de suplantación de identidad y entrenar a los usuarios en la prevención de suplantación de identidad con la formación de simulación de ataques en Microsoft defender para Office 365.
-ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Los administradores pueden obtener información sobre cómo simular ataques de suplantación de identidad y entrenarles a sus usuarios en la prevención de suplantación de identidad mediante la simulación de ataques en Microsoft defender para Office 365.
+ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616109"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667580"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simular un ataque de suplantación de identidad
 
-El aprendizaje del simulador de ataque a través de Microsoft defender para Office 365 le permite realizar simulaciones de ataque cibernéticos benignas en su organización para probar las directivas y prácticas de seguridad, así como entrenar a los empleados de su organización para aumentar su conciencia y reducir la susceptibilidad a los ataques. A continuación, se explica cómo simular un ataque de suplantación de identidad mediante el aprendizaje del simulador de ataques.
+El aprendizaje del simulador de ataques en Microsoft defender para Office 365 le permite ejecutar simulaciones benignas de ciberataque en su organización para probar las directivas y prácticas de seguridad, así como entrenar a sus empleados para aumentar su conocimiento y reducir la susceptibilidad a los ataques. En este artículo se explica cómo crear un ataque simulado de suplantación de identidad mediante el aprendizaje de simulación de ataques.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Para iniciar un ataque simulado de suplantación de identidad, navegue al [centro de seguridad de Microsoft 365](https://security.microsoft.com/). En **correo electrónico & colaboración** , haga clic en **simulador de ataque** y cambie a la pestaña [**simulaciones**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
+Para iniciar un ataque simulado de suplantación de identidad (phishing), abra el [centro de seguridad de Microsoft 365](https://security.microsoft.com/), vaya a **correo electrónico &** \> el **simulador de ataque** de colaboración y cambie a la pestaña [**simulaciones**](https://security.microsoft.com/attacksimulator?viewid=simulations) .
 
-En **simulaciones** , seleccione **+ iniciar una simulación**.
+En **simulaciones**, seleccione **+ iniciar una simulación**.
 
 ![Iniciar un botón de simulación en el centro de seguridad 365 de Microsoft](../../media/attack-sim-preview-launch.png)
 
@@ -35,19 +35,19 @@ En **simulaciones** , seleccione **+ iniciar una simulación**.
 
 ## <a name="selecting-a-social-engineering-technique"></a>Selección de una técnica de ingeniería social
 
-Seleccione cuatro técnicas distintas, creados de la [Mitre de ATT&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Hay diferentes cargas disponibles para distintas técnicas.
+Seleccione cuatro técnicas distintas, creados de la [Mitre de ATT&CK® Framework](https://attack.mitre.org/techniques/enterprise/). Hay diferentes cargas disponibles para distintas técnicas:
 
-- La **cosecha de credenciales** intenta recopilar las credenciales de los empleados al llevarlos a un sitio web de aspecto conocido con cuadros de entrada para enviar un nombre de usuario y una contraseña.
-- Los **datos adjuntos de malware** agregan datos adjuntos malintencionados a un mensaje. Cuando se abre, estos datos adjuntos ejecutarán código arbitrario que ayudará al atacante a poner en peligro el dispositivo de destino.
+- La **cosecha de credenciales** intenta recopilar las credenciales poniendo a los usuarios en un sitio web de aspecto conocido con cuadros de entrada para enviar un nombre de usuario y una contraseña.
+- Los **datos adjuntos de malware** agregan datos adjuntos malintencionados a un mensaje. Cuando el usuario abre los datos adjuntos, se ejecuta código arbitrario que ayudará al atacante a poner en peligro el dispositivo del destino.
 - El **vínculo en datos adjuntos** es un tipo de una implementación híbrida de cosecha de credenciales. Un atacante inserta una dirección URL en un archivo adjunto de correo electrónico. La dirección URL dentro de los datos adjuntos sigue la misma técnica que la cosecha de credenciales.
-- **Vínculo a malware** ejecutará código arbitrario de un archivo hospedado en un sitio de uso compartido de archivos conocido. Se agrega un vínculo a este archivo malintencionado en el mensaje que se envía al destino y se hace clic en él para ejecutar el archivo y ayudar al atacante a poner en peligro el dispositivo del destino.
+- El **vínculo a malware** ejecutará código arbitrario de un archivo hospedado en un conocido servicio de uso compartido de archivos. El mensaje enviado al usuario contendrá un vínculo a este archivo malintencionado. Abrir el archivo y ayudar al atacante a poner en peligro el dispositivo de destino.
 
 > [!TIP]
-> Al hacer clic en **Ver detalles** en la descripción de cada técnica se mostrará más información sobre la técnica, así como los pasos de simulación para dicha técnica.
+> Al hacer clic en **Ver detalles** en la descripción de cada técnica se mostrará más información y los pasos de simulación para la técnica.
 >
 > ![Pasos de simulación para la recopilación de credenciales en la simulación de ataques en el centro de seguridad de Microsoft 365](../../media/attack-sim-preview-sim-steps.png)
 
-Una vez que haya seleccionado la técnica y haga clic en el **siguiente** , asigne un nombre a su simulación y, opcionalmente, una descripción.
+Una vez que haya seleccionado la técnica y haya hecho clic en **siguiente**, dé un nombre a su simulación y, opcionalmente, una descripción.
 
 ## <a name="selecting-a-payload"></a>Selección de una carga
 
@@ -56,7 +56,7 @@ A continuación, tendrá que seleccionar una carga del catálogo de carga existe
 Las cargas tienen varios puntos de datos para ayudarle a elegir:
 
 - Los **tipos de tasa de clics** tienen en cuenta cuántos usuarios hacen clic en esta carga.
-- La **tasa de compromiso pronosticada predice** el porcentaje de personas que se verán comprometidas con esta carga según los datos históricos de esta carga en Microsoft defender para Office 365 clientes.
+- La **tasa de compromiso pronosticada** pronostica el porcentaje de personas que se verán comprometidas con esta carga en función de los datos históricos de la carga en Microsoft defender para Office 365 clientes.
 - **Simulations lanzadas** cuenta el número de veces que se usó esta carga en otras simulaciones.
 - La **complejidad**, disponible a través de **filtros**, se calcula en función del número de indicadores dentro de la carga en los que se encuentra un ataque a los objetivos de una pista. Más indicadores conducen a una complejidad más baja.
 - **Origen**, disponible a través de **filtros**, indica si la carga se creó en su inquilino o forma parte del catálogo de carga existente (global) de Microsoft.

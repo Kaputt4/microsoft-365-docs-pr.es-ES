@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847481"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667654"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -32,7 +32,7 @@ ms.locfileid: "48847481"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 
 
@@ -52,6 +52,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
 | `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor antimalware, reputación de archivos, datos adjuntos seguros |
+| `SenderDisplayName` | string | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre determinado o de un nombre, una inicial del segundo nombre y un apellido o un apellido |
+| `SenderObjectId` | string | Identificador único de la cuenta del remitente en Azure AD |
+| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico de si el correo electrónico contiene malware, suplantación de identidad (phishing) u otras amenazas |
+| `ThreatNames` | string | Nombre de detección de malware u otras amenazas encontradas |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo agregar usuarios y asignar licencias a Microsoft 365 al mismo tiempo.
 ms.date: 07/01/2020
-ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 5df0db1cb782cc55bcf3e2b599430a98ea88750c
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948801"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671000"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
@@ -41,7 +41,7 @@ Los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar ses
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, una licencia o un administrador de usuarios para agregar usuarios y asignar licencias. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, una licencia o un administrador de usuarios para agregar usuarios y asignar licencias. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-admin-center"></a>Ver: agregar usuarios en el centro de administración
 
@@ -55,7 +55,7 @@ Debe ser un administrador global, una licencia o un administrador de usuarios pa
 ::: moniker range="o365-worldwide"
 
 1. Vaya al Centro de administración en <https://admin.microsoft.com>.
-2. Vaya a **usuarios** > **activos**y seleccione **Agregar un usuario**.
+2. Vaya a **usuarios** > **activos** y seleccione **Agregar un usuario**.
 3. En el panel **configurar los conceptos básicos** , rellene la información básica del usuario y, a continuación, seleccione **siguiente**.
     - **Nombre** de Rellene el nombre y el apellido, el nombre para mostrar y el nombre de usuario.
     - **Dominio** Elija el dominio para la cuenta de usuario. Por ejemplo, si el nombre de usuario del usuario es Jakob y el dominio es contoso.com, iniciará sesión con jakob@contoso.com.
@@ -64,14 +64,14 @@ Debe ser un administrador global, una licencia o un administrador de usuarios pa
     - Elija si desea enviar la contraseña por correo electrónico cuando se agregue el usuario.
 4. En el panel **asignar licencias de producto** , seleccione la ubicación y la licencia correspondiente para el usuario. Si no cuenta con ninguna licencia disponible, todavía puede agregar un usuario y comprar licencias adicionales. Expande **aplicaciones** y selecciona o anula la selección de aplicaciones para limitar las aplicaciones para las que el usuario tiene una licencia. Seleccione **Siguiente**.
 5. En el panel **configuración opcional** , expanda **roles** para que el usuario sea administrador. Expanda **información de perfil** para agregar información adicional acerca del usuario.
-6. Seleccione **siguiente**, revise la configuración del nuevo usuario, realice los cambios que quiera y, después, haga clic en **Finalizar agregar**y luego en **cerrar**.
+6. Seleccione **siguiente**, revise la configuración del nuevo usuario, realice los cambios que quiera y, después, haga clic en **Finalizar agregar** y luego en **cerrar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Vaya al Centro de administración en <https://portal.office.de/adminportal>.
-2. Vaya a **usuarios** > **activos**y seleccione **Agregar un usuario**.
+2. Vaya a **usuarios** > **activos** y seleccione **Agregar un usuario**.
 3. En el panel **nuevo usuario** , rellene la siguiente información. Cuando haya terminado, seleccione **Agregar**.
     - **Nombre** Rellene el nombre, apellido, nombre para mostrar y nombre de usuario.
     - **Dominio** Por ejemplo, si el nombre de usuario del usuario es Jakob y el dominio es contoso.com, se iniciará sesión en escribiendo jakob@contoso.com.
@@ -85,7 +85,7 @@ Debe ser un administrador global, una licencia o un administrador de usuarios pa
 ::: moniker range="o365-21vianet"
 
 1. Vaya al Centro de administración en <https://portal.partner.microsoftonline.cn>.
-2. Vaya a **usuarios** > **activos**y seleccione **Agregar un usuario**.
+2. Vaya a **usuarios** > **activos** y seleccione **Agregar un usuario**.
 3. En el panel **nuevo usuario** , rellene la siguiente información. Cuando haya terminado, seleccione **Agregar**.
     - **Nombre** Rellene el nombre, apellido, nombre para mostrar y nombre de usuario.
     - **Dominio** Por ejemplo, si el nombre de usuario del usuario es Jakob y el dominio es contoso.com, se iniciará sesión en escribiendo jakob@contoso.com.
@@ -105,7 +105,7 @@ Puede usar cualquiera de los métodos siguientes para agregar varios usuarios al
 - **¿Usa ActiveDirectory?** [Configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Use la herramienta de Azure AD Connect para replicar cuentas de usuario de Active Directory (y otros objetos de Active Directory) en Microsoft 365. La sincronización solo agrega las cuentas de usuario. Debe asignar licencias a los usuarios sincronizados para poder usar el correo electrónico y otras aplicaciones de Office.
 - **¿Va a migrar desde Exchange?** Consulte [formas de migrar varias cuentas de correo electrónico a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Al migrar varios buzones a Microsoft 365 mediante transferencia, por fases o mediante un método híbrido de Exchange, los usuarios se agregan automáticamente como parte de la migración. La migración solo agrega las cuentas de usuario. Debe asignar licencias a los usuarios para que puedan usar el correo electrónico y otras aplicaciones de Office. Si no asigna una licencia a un usuario, su buzón se deshabilita tras un período de gracia de 30 días. Obtenga información sobre cómo [asignar licencias a usuarios](../manage/assign-licenses-to-users.md) en el centro de administración de Microsoft 365.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya agregado un usuario, recibirá una notificación por correo electrónico de Microsoft. El correo electrónico contiene el identificador de usuario y la contraseña de la persona para que puedan iniciar sesión en Microsoft 365. Use el proceso habitual para comunicar nuevas contraseñas. Comparta la [Guía de inicio rápido de empleado](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) con los nuevos usuarios para configurar elementos como, por ejemplo, cómo [Descargar e instalar aplicaciones de Office en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) y cómo [configurar las aplicaciones de Office y el correo electrónico en un dispositivo móvil](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 

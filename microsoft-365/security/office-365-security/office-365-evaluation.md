@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614803"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49668078"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evalúe Microsoft defender para Office 365
 
@@ -62,8 +62,8 @@ Con la experiencia de configuración simplificada, puede centrarse en:
 
 Para obtener acceso a la evaluación, deberá cumplir con los requisitos de licencia. Funcionará cualquiera de las siguientes licencias:
 
-- Microsoft defender para Office 365 plan 1
-- Microsoft defender para Office 365 plan 2
+- Plan 1 de Microsoft Defender para Office 365
+- Plan 2 de Microsoft Defender para Office 365
 - Microsoft 365 E5, Microsoft 365 E5 Security
 - Office 365 E5
 
@@ -81,7 +81,7 @@ Tendrá un período de 30 días con la evaluación para supervisar y crear infor
 
 Las funciones de Exchange online son necesarias para configurar defender para Office 365 en modo de evaluación. Se necesitan los siguientes roles:
 
-|Task|Role|
+|Task|Función|
 |---|---|
 |Obtenga una prueba gratuita o compre Microsoft defender para Office 365 (plan 2)|Rol de administrador de facturación o rol de administrador global|
 |Crear una directiva de evaluación|Rol dominios remotos y aceptados; Rol de administrador de seguridad|

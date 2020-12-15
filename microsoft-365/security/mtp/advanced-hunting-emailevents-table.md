@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842637"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667642"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48842637"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 
 
@@ -71,6 +71,17 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AttachmentCount` | entero | Número de datos adjuntos en el correo electrónico. |
 | `UrlCount` | entero | Número de URL insertadas en el correo electrónico. |
 | `EmailLanguage` | cadena | Lenguaje detectado en el contenido del correo electrónico. |
+| `OrgLevelAction` | string | Acción tomada en el correo electrónico en respuesta a las coincidencias con una directiva definida en el nivel de organización |
+| `OrgLevelPolicy` | string | Directiva de la organización que desencadenó la acción realizada en el correo electrónico |
+| `UserLevelAction` | string | Acción tomada en el correo electrónico en respuesta a las coincidencias con una directiva de buzón definida por el destinatario |
+| `UserLevelPolicy` | string | Directiva de buzones de usuario final que desencadenaron la acción realizada en el correo electrónico |
+| `Connectors` | string | Instrucciones personalizadas que definen el flujo de correo de la organización y cómo se enrutó el correo electrónico |
+| `SenderDisplayName` | string | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre determinado o de un nombre, una inicial del segundo nombre y un apellido o un apellido |
+| `SenderObjectId` | string |Identificador único de la cuenta del remitente en Azure AD |
+| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico de si el correo electrónico contiene malware, suplantación de identidad (phishing) u otras amenazas |
+| `ThreatNames` | string |Nombre de detección de malware u otras amenazas encontradas |
+| `DetectionMethods` | string | Métodos usados para detectar malware, suplantación de identidad (phishing) u otras amenazas que se encuentran en el correo electrónico |
+
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

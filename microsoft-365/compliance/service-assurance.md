@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: 915f9040fe5320c905de420f08efa17087987ac3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655524"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671011"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el Centro de seguridad y cumplimiento
 
@@ -43,12 +43,9 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>¿Quién puede tener acceso a la garantía del servicio de Office 365 y cómo?
 
- **Nuevos clientes y clientes que evalúen Microsoft Online Services** puede tener acceso a la garantía del servicio que se incluye en los planes de Office 365 Enterprise E3 y E5 (tanto suscripciones de prueba como de pago). Si no tiene uno de estos planes y desea probar el servicio de garantía, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
-  
- **Los clientes existentes de Microsoft 365 para empresas** pueden obtener acceso al servicio de garantía del servicio. Si usted es el administrador global (a veces llamado administrador de la empresa) de su organización, ya tendrá acceso a la garantía del servicio y podrá incorporar otros. Si no es el administrador global de su organización y necesita obtener acceso a garantía del servicio, pídale al administrador que le agregue al grupo de roles de usuario de garantía del servicio. 
+ **Nuevos clientes y clientes que evalúen Microsoft Online Services** puede tener acceso a la garantía del servicio que se incluye en los planes de Office 365 Enterprise E3 y E5 (tanto suscripciones de prueba como de pago). Si no tiene uno de estos planes y desea probar el servicio de garantía, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
  De forma predeterminada, los **miembros de suscripción de O365** pueden acceder a la sección Service Assurance del centro de protección de Office 365. Garantía del servicio proporciona informes y documentos que describen los procedimientos de seguridad de Microsoft para los datos de clientes almacenados en Office 365. También proporciona informes de auditoría de terceros independientes en Office 365.
-  
  
 ## <a name="choose-your-industry-and-regional-settings"></a>Elegir la configuración regional y del sector
 <a name="Chooseyourindustryregional"> </a>

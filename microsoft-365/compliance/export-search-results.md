@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 3250690d6699e5d39f7fa5ae01a2733595340ca1
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602057"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667793"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -90,7 +90,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 2. Inicie sesión con su cuenta profesional o educativa.
   
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de contenido de **búsqueda** \> **Content search**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de contenido de **búsqueda** \> .
   
 4. En la página **búsqueda de contenido** , seleccione una búsqueda. 
   
@@ -191,7 +191,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
 
   - Puede exportar un máximo de 2 TB de datos a partir de una sola búsqueda de contenido. Si los resultados de la búsqueda tienen más de 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda.
   
-  - Su organización puede exportar un máximo de 2 TB de datos durante un solo día.
+  - Su organización puede exportar un máximo de 2 TB de datos durante un solo día. La cuota se restablecerá diariamente a las 12:00AM UTC.
   
   - Puede tener un máximo de 10 exportaciones ejecutándose a la vez dentro de su organización.
 

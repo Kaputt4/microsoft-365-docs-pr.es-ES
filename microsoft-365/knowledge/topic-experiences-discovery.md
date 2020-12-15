@@ -1,143 +1,97 @@
 ---
-title: 'Administración de la red de administración de conocimientos (vista previa) '
-description: Cómo configurar la administración del conocimiento.
+title: Administrar la detección de temas en Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: 265816a8d3d04b8d10b529f1ea1a0b658aa2931d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: Obtenga información sobre cómo administrar la detección de temas en Microsoft 365.
+ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48989034"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667895"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>Administración de la red de administración de conocimientos (vista previa)
+# <a name="manage-topic-discovery-in-microsoft-365"></a>Administrar la detección de temas en Microsoft 365
 
-> [!Note] 
-> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
+Puede administrar la configuración de detección de temas en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Debe ser administrador global o administrador de SharePoint para realizar estas tareas.
 
+## <a name="to-access-topics-management-settings"></a>Para acceder a la configuración de administración de temas:
 
-Después de [configurar la administración de conocimiento](set-up-topic-experiences.md), en cualquier momento, un administrador puede realizar ajustes en los valores de configuración a través del centro de administración 365 de Microsoft.
+1. En el centro de administración de Microsoft 365, haga clic en **configuración** y, a continuación, en configuración de la **organización**.
+2. En la pestaña **servicios** , haga clic en **red de conocimiento**.
 
-Por ejemplo, es posible que deba ajustar la configuración para cualquiera de las siguientes opciones:
-- Agregar nuevos orígenes de SharePoint a los temas de mío.
-- Cambiar los usuarios que tendrán acceso a los temas.
-- Cambiar los usuarios que tienen permisos para realizar tareas en el centro de temas.
-- Cambiar el nombre del centro de temas
+    ![Conectar a personas con el conocimiento](../media/admin-org-knowledge-options-completed.png) 
 
+3. Seleccione la pestaña **detección de temas** . Consulte las secciones siguientes para obtener información sobre cada configuración.
 
-## <a name="requirements"></a>Requirements 
-Debe tener permisos de administrador global o de administrador de SharePoint para poder obtener acceso al centro de administración de 365 de Microsoft y administrar las tareas de conocimiento de la organización.
+    ![información: configuración de la red](../media/knowledge-network-settings-topic-discovery.png) 
 
+## <a name="select-sharepoint-topic-sources"></a>Seleccionar orígenes de temas de SharePoint
 
-## <a name="to-access-knowledge-management-settings"></a>Para obtener acceso a la configuración de administración de conocimiento:
+Puede cambiar los sitios de SharePoint de la organización que se rastrearán en busca de temas.
 
-1. En el centro de administración de Microsoft 365, seleccione **instalación** y, a continuación, ver la sección de conocimientos de la **organización** .
-2. En la sección conocimientos de la **organización** , haga clic en **conectar personas con el conocimiento**.<br/>
+Si desea incluir o excluir una lista específica de sitios, puede usar la siguiente plantilla. csv:
 
-    ![Conectar a personas con el conocimiento](../media/content-understanding/admin-org-knowledge-options.png) </br>
+``` csv
+Site name,URL
+```
 
-3. En la página **conectar personas a los conocimientos** , seleccione **administrar** para abrir el panel Configuración de la red de **conocimientos** .<br/>
+Si agrega sitios con el selector de sitios, se agregan a la lista de sitios existente para incluir o excluir. Si carga un archivo. csv, se sobrescribirá cualquier lista existente. Si anteriormente ha incluido o excluido sitios específicos, puede descargar la lista como un archivo. csv, realizar cambios y cargar la lista nueva.
 
-    ![información: configuración de la red](../media/content-understanding/knowledge-network-settings.png) </br>
+Para elegir sitios para la detección de temas
 
-## <a name="change-how-the-knowledge-network-can-find-topics"></a>Cambiar el modo en que la red de conocimiento puede encontrar temas
+1. En la pestaña **detección de temas** , en **seleccionar orígenes de temas de SharePoint**, seleccione **Editar**.
+2. En la página **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Esto incluye:
+    - **Todos los sitios**: todos los sitios de SharePoint de su espacio empresarial. Esto captura los sitios actuales y futuros.
+    - **Todos, excepto los sitios seleccionados**: escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios que desea excluir de la detección. Los sitios que se creen en el futuro se incluirán como orígenes para la detección de temas. 
+    - **Solo sitios seleccionados**: escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios que se creen en el futuro no se incluirán como orígenes para la detección de temas.
+    - **Sin sitios**: los temas no se generan ni se actualizan automáticamente con contenido de SharePoint. Los temas existentes permanecen en el centro de temas.
 
-Seleccione la pestaña **detección de temas** si desea actualizar las opciones para los orígenes de temas de SharePoint. Esta opción le permite seleccionar los sitios de SharePoint de su inquilino que se rastrearán y expondrán para temas.
-
-1. En la pestaña **detección de temas** , en **seleccionar orígenes de temas de SharePoint** , seleccione **Editar**.
-2. En la página **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Esto incluye:</br>
-    a. **Todos los sitios** : todos los sitios de SharePoint de su espacio empresarial. Esto captura los sitios actuales y futuros.</br>
-    b. **Todos, excepto los sitios seleccionados** : escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios que desea excluir de la detección. Los sitios que se creen en el futuro se incluirán como orígenes para la detección de temas. </br>
-    c. **Solo sitios seleccionados** : escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios que se creen en el futuro no se incluirán como orígenes para la detección de temas. </br>
-
-    ![Elegir cómo buscar temas](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![Captura de pantalla de la interfaz de usuario de orígenes de temas de SharePoint](../media/k-manage-select-topic-source.png)
    
-    Si tiene un número de sitios que desea excluir (si selecciona **todos, excepto los sitios seleccionados** ) o incluir (si seleccionó **solo sitios seleccionados** ), puede elegir cargar un archivo CSV con los nombres de sitio y las direcciones URL. Puede descargar la **plantilla del sitio download. csv** si desea usar el archivo de plantilla CSV.
-
 3. Haga clic en **Guardar**.
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>Cambiar quién puede ver los temas de la organización
+## <a name="exclude-topics-by-name"></a>Excluir temas por nombre
 
-Seleccione la pestaña **detección de temas** si desea actualizar quién en su organización puede ver temas descubiertos en los resultados de la búsqueda y cuándo los temas están resaltados en contenido, como las páginas de SharePoint.
+Puede excluir los temas de la detección cargando una lista usando un archivo. csv. Si ya ha excluido los temas, puede descargar. csv, realizar cambios y cargarlo de nuevo.
 
-1. En la pestaña **detección de temas** , en **quién puede ver los temas de la red de conocimiento** , seleccione **Editar**.
-2. En la página **quién puede ver los temas en la red de conocimiento** , elija quién tendrá acceso a los detalles del tema, como temas resaltados, tarjetas de temas, respuestas de temas en la búsqueda y páginas de temas. Puede seleccionar:</br>
-    a. **Todos en su organización**</br>
-    b. **Solo personas seleccionadas o grupos de seguridad**</br>
-    c. **No hay nadie**</br>
+1. En la pestaña **detección** de temas, en **excluir temas**, seleccione **Editar**.
+2. Haga clic en **excluir temas por nombre**.
+3. Si necesita crear una lista, descargue la plantilla. csv y agregue los temas que desea excluir (consulte *trabajar con la plantilla. csv* a continuación). Cuando el archivo esté listo, haga clic en **examinar** y cargue el archivo. Si hay una lista existente, puede descargar el archivo. csv que contiene la lista.
+4. Haga clic en **Guardar**.
 
-    ![Quién puede ver los temas](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. Haga clic en **Guardar**.  
- 
-> [!Note] 
-> Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan licencias de administración de conocimiento podrán ver los temas.
+    ![Captura de pantalla de la interfaz de usuario de temas de exclusión](../media/km-manage-exclude-topics.png)
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a>Cambiar quién tiene permisos para realizar tareas en el centro de temas
+### <a name="working-with-the-csv-template"></a>Trabajar con la plantilla. csv
 
-Seleccione la pestaña **permisos de temas** si desea actualizar quién tiene permisos para hacer lo siguiente en la página centro de temas:
+Puede copiar la plantilla CSV a continuación:
 
-- Qué usuarios pueden crear y editar temas: crear temas nuevos que no se encontraron durante la detección o editar los detalles de la página del tema existente.
-- Qué usuarios pueden administrar temas: confirmar o rechazar temas descubiertos.
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
-Para actualizar quién tiene permisos para crear y editar temas:
+En la plantilla CSV, escriba la siguiente información sobre los temas que desea excluir:
 
-1. En la ficha **permisos de tema** , en **quién puede crear y editar temas** , seleccione **Editar**.</br>
-2. En la página **quién puede crear y editar temas** , puede seleccionar:</br>
-    a. **Todos en su organización**</br>
-    b. **Solo personas seleccionadas o grupos de seguridad**</br>
+- **Name**: escriba el nombre del tema que desea excluir. Puede realizar esto de dos maneras:
+    - Coincidencia exacta: puede incluir el acrónimo o el nombre exacto (por ejemplo, *contoso* o *ATL*).
+    - Coincidencia parcial: puede excluir todos los temas que contengan una palabra específica.  Por ejemplo, *arco* excluirá todos los temas que contengan la palabra *Arc* , como *círculo arco*, *soldadura de arco de plasma* o arco de *formación*. Tenga en cuenta que no se excluirán los temas en los que se incluya el texto como parte de una palabra, como la *arquitectura*.
+- **Significa (opcional)**: Si desea excluir un acrónimo, escriba las palabras que representa el acrónimo.
+- **MatchType-Exact/Partial**: escriba si el nombre que ha escrito es un tipo de coincidencia *exacta* o *parcial* .
 
-    ![Creación y edición de temas](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
+    ![Excluir temas en la plantilla CSV](../media/exclude-topics-csv.png) 
 
-3. Haga clic en **Guardar**.</br>
+## <a name="see-also"></a>Vea también
 
-Para actualizar quién tiene permisos para administrar temas:
+[Administrar la visibilidad de los temas en Microsoft 365](topic-experiences-knowledge-rules.md)
 
-1. En la ficha **permisos de tema** , en **¿quién puede administrar temas** ?, seleccione **Editar**.</br>
-2. En la página **quién puede administrar temas** , puede seleccionar:</br>
-    a. **Todos en su organización**</br>
-    b. **Personas o grupos de seguridad seleccionados**</br>
+[Administrar los permisos de temas en Microsoft 365](topic-experiences-user-permissions.md)
 
-    ![Administrar temas](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. Haga clic en **Guardar**.</br>
-
-
-##  <a name="update-your-topic-center-name"></a>Actualizar el nombre del centro de temas
-
-Seleccione la pestaña **centro de temas** si desea actualizar el nombre del centro de temas. 
-
-1. En la pestaña **centro de temas** , en nombre del centro de **temas** , seleccione **Editar**.
-2. En la página **Editar nombre del centro de temas** , en el cuadro Nombre del centro de **temas** , escriba el nuevo nombre del centro de temas.
-3. Seleccione **Guardar**.
-
-    ![Editar nombre del centro de temas](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
-
-## <a name="see-also"></a>Consulte también
-
-
-
-  
-
-
-
-
-
+[Cambiar el nombre del centro de temas en Microsoft 365](topic-experiences-administration.md)
 
