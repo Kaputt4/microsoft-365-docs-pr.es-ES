@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c2c01278831433c02e5c869dba83f223eea57d27
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 376845d8e3657b91b9efe0357e94f4bec3a84078
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683240"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688290"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Directivas para permitir el acceso de B2B y de invitado externo
 
@@ -44,7 +44,7 @@ En la siguiente tabla se enumeran las directivas que es necesario crear y actual
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
-|**Baseline**|[Requerir MFA siempre para los usuarios externos y invitados](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Crear esta nueva Directiva y configurar: <ul><li> Para las **asignaciones > usuarios y grupos > incluir**, elija **Seleccionar usuarios y grupos** y, a continuación, seleccione **todos los usuarios externos y invitados**. </li><li> Para **las asignaciones > condiciones > inicio de sesión**, deje todas las opciones desactivadas para exigir siempre la autenticación multifactor (MFA).</li>|
+|**Baseline**|[Requerir MFA siempre para los usuarios externos y invitados](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Crear esta nueva Directiva y configurar: <ul><li>Para las **asignaciones > usuarios y grupos > incluir**, elija **Seleccionar usuarios y grupos** y, a continuación, seleccione **todos los usuarios externos y invitados**.</li><li>Para **las asignaciones > condiciones > inicio de sesión**, deje todas las opciones desactivadas para exigir siempre la autenticación multifactor (MFA).</li></ul>|
 ||[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifique esta directiva para excluir usuarios externos y invitados.|
 ||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifique esta directiva para excluir usuarios externos y invitados.|
 

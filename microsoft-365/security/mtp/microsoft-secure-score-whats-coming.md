@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604400"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688046"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
 
@@ -34,16 +34,7 @@ Se puede encontrar la puntuación segura de Microsoft en https://security.micros
 
 Estamos realizando algunos cambios en un futuro próximo para hacer que [Microsoft califique](microsoft-secure-score.md) con seguridad una mejor representativo de su postura de seguridad y mejorar el uso. Su puntuación y la puntuación máxima posible pueden cambiar.
 
-### <a name="december-2020"></a>2020 de diciembre
-
-Adición de 6 acciones de mejora relacionadas con las cuentas para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
-
-- Establezca ' longitud mínima de contraseña ' en ' 14 o más caracteres '
-- Establezca ' exigir historial de contraseñas ' en ' 24 contraseñas ' o más (s)
-- Establezca "vigencia máxima de la contraseña" en "60 o menos días, pero no es 0"
-- Establezca ' vigencia mínima de la contraseña ' en ' 1 o más días '
-- Deshabilitar la cuenta integrada de administrador
-- Deshabilitar la cuenta de invitado integrada
+### <a name="no-planned-changes"></a>No hay cambios planeados
 
 ## <a name="related-resources"></a>Recursos relacionados
 
