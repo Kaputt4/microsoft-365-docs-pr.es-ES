@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de gran valor para obligaciones legales, comerciales o de reglamentación, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919858"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682727"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -49,9 +49,9 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-for-records-management"></a>Permisos necesarios para la administración de registros
 
-Los miembros de su equipo de cumplimiento responsables de la administración de registros necesitan permisos en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder el acceso a los responsables de cumplimiento y a otros usuarios sin darles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administración de registros** , que concede el rol **RecordManagement**.
+Los miembros de su equipo de cumplimiento responsables de la administración de registros necesitan permisos en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede dar acceso a los oficiales de cumplimiento y a otras personas sin otorgarles todos los permisos de un administrador de espacio empresarial. Para otorgar permisos para esta administración limitada, recomendamos que agregue usuarios al grupo de funciones de administrador de **Administración de registros**, que otorga permisos para todas las funciones relacionadas con la administración de registros, incluida la [revisión y verificación de la disposición](disposition.md). 
 
-Entre los permisos que se incluyen en este grupo de roles no se incluyen los permisos necesarios para [revisión para eliminación y comprobación](disposition.md), e incluso un administrador global no tiene estos permisos de forma predeterminada. Para administrar la eliminación, utilice el rol de **Administración de eliminación** , mediante la creación de un grupo de roles personalizado o mediante el uso de un grupo de roles predeterminado que incluya este rol (por ejemplo, **Administrador de cumplimiento** ).
+En el caso de los roles de solo lectura, puede crear un nuevo grupo de roles y agregar el rol de **Administración de registros de solo vista** a este grupo. 
 
 Para más información sobre estos roles y grupos de roles, vea [Permisos en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
 

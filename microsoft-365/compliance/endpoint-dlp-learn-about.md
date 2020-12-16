@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604320"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682631"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -34,18 +34,19 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 
-DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10. Esto incluye:
+DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10.
 
 
-|actividad en el elemento |auditable/restringible  |
-|---------|---------|
-|creado    | auditable      |
-|nombre cambiado    |  auditable       |
-|se copió a un medio extraíble o se creó en un medio extraíble     |     auditable y restringible|
-|se copió al recurso compartido de red, por ejemplo \\my-server\fileshare   |     auditable y restringible    |
-|impreso |    auditable y restringible       |
-|se copió en la nube a través de Chromium Edge    |   auditable y restringible        |
-|se accedió mediante aplicaciones y exploradores no permitidos    |  auditable y restringible       |
+|actividad |description  | auditables/restictable|
+|---------|---------|---------|
+|cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de cromo. Por último, cromo puede permitir o bloquear la carga o el acceso en función de la configuración de la Directiva DLP.         |auditable y restringible|
+|copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.         | auditable y restringible|
+|copiar en un medio extraíble USB |Detecta cuando un usuario intenta copiar un elemento o información en un medio extraíble o un dispositivo USB.         | auditable y restringible|
+|Copiar en un recurso compartido de red    |Detecta cuando un usuario intenta copiar un elemento en un recurso compartido de red o en una unidad de red asignada         |auditable y restringible|
+|imprimir un documento    |Detecta cuando un usuario intenta imprimir un elemento protegido en una impresora local o de red.| auditable y restringible         |
+|crear un elemento|Detecta cuándo un usuario crea un elemento| auditable|
+|cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento| auditable|
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>¿Qué es diferente en DLP en punto de conexión?
 
