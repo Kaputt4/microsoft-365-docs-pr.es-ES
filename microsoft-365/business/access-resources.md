@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtenga información sobre cómo obtener acceso a recursos locales como líneas de aplicaciones empresariales, recursos compartidos de archivos e impresoras desde un dispositivo Windows 10 conectado a Azure Active Directory.
-ms.openlocfilehash: 2144268f5cbab67c39d5902622c61c0c35e6481c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 22edf0c23d6318e1f70bcb21b2cd697ea0a75da4
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295318"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688241"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 empresa Premium
 
@@ -63,4 +63,4 @@ Si el dispositivo de Windows al que se unió Azure-AD se unió anteriormente a u
 
 - Los usuarios no podrán autenticarse en las aplicaciones que dependen de la autenticación de Active Directory. Evalúe la aplicación heredada y considere la posibilidad de actualizarla a una aplicación que use la autenticación moderna, si es posible.
 
-- La detección de impresoras de Active Directory no funcionará. Puede proporcionar rutas de impresora directas para todos los usuarios o usar [impresión de nube híbrida](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+- La detección de impresoras de Active Directory no funcionará. Puede proporcionar rutas de impresora directas para todos los usuarios o usar la [impresión universal](https://aka.ms/UPDocs).

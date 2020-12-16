@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a realizar la transición de archivos heredados a Office 365 cifrado de mensajes (OME) para su organización.
-ms.openlocfilehash: ecf4723df9afdf09d63150a3ec7564df44dd9808
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 23f287fd01949d710c5cc5c65f0c36c6055d3a57
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408998"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688437"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -75,7 +75,7 @@ Para obtener más información acerca de cómo crear reglas de flujo de correo d
 
 3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
 
-4. En el EAC, vaya a reglas de **flujo de correo** \> **Rules** y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a reglas de **flujo de correo** \>  y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
 
@@ -91,9 +91,9 @@ Para obtener más información acerca de cómo crear reglas de flujo de correo d
 
 7. Para agregar más condiciones, elija **más opciones** y, a continuación, seleccione **Agregar condición** y seleccione en la lista.
 
-   Por ejemplo, para aplicar la regla solo si el destinatario está fuera de la organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es externo o interno** \> **fuera de la organización** \> **OK**.
+   Por ejemplo, para aplicar la regla solo si el destinatario está fuera de la organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es externo o interno** \> **fuera de la organización** \> .
 
-8. Para habilitar el cifrado sin usar las nuevas funciones de OME, en **hacer lo siguiente**, seleccione **modificar la seguridad** \> **de mensajes aplique la versión anterior de OME**y, a continuación, elija **Guardar**.
+8. Para habilitar el cifrado sin usar las nuevas funciones de OME, en **hacer lo siguiente**, seleccione **modificar la seguridad** \> **de mensajes aplique la versión anterior de OME** y, a continuación, elija **Guardar**.
 
    Si recibe un error que indica que las licencias de IRM no están habilitadas, no está usando OME heredados.
 
@@ -131,7 +131,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
 
-4. En el EAC, vaya a reglas de **flujo de correo** \> **Rules** y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a reglas de **flujo de correo** \>  y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como quitar el cifrado del correo entrante.
 
@@ -250,7 +250,7 @@ No, los mensajes cifrados se conservan en el sistema de correo electrónico del 
   
  **P. ¿Puedo personalizar los mensajes de correo electrónico cifrado con mi marca?**
   
-Sí. Puede usar cmdlets de Windows PowerShell para personalizar el texto predeterminado que aparece en la parte superior de los mensajes de correo electrónico cifrados, el texto de aviso de declinación de responsabilidades y el logotipo que quiera usar para el mensaje de correo electrónico y el portal de cifrado. Para más información, consulte [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Sí. Puede usar cmdlets de Windows PowerShell para personalizar el texto predeterminado que aparece en la parte superior de los mensajes de correo electrónico cifrados, el texto de aviso de declinación de responsabilidades y el logotipo que quiera usar para el mensaje de correo electrónico y el portal de cifrado. Esta característica ahora está disponible en OMEv2. Para más información, consulte [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
   
  **P. ¿Requiere el servicio una licencia para cada usuario de la organización?**
   

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información de dispositivos adicional sobre los servicios al cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de datos en alemán.'
-ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560867"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688660"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional de dispositivos para la migración desde la nube de Microsoft Alemania
 
@@ -247,7 +247,7 @@ Para anular el registro y volver a registrar el dispositivo en Android desde el 
 3.  En el menú de puntos suspensivos (tres puntos), seleccione **quitar dispositivo** y complete la eliminación mediante la confirmación en el cuadro de diálogo.
 4.  Ahora debe haber cerrado la sesión de la aplicación portal de empresa. Seleccione **iniciar sesión** para volver a registrar el dispositivo.
 
-Para obtener más información acerca de las acciones necesarias durante la fase de migración de esta carga de trabajo, o el impacto en la administración o la utilización, revise la información sobre Azure Active Directory en [información general adicional para la migración desde la nube de Microsoft Alemania](ms-cloud-germany-transition-add-general.md#azure-active-directory).
+Para obtener más información acerca de las acciones necesarias durante la fase de migración de esta carga de trabajo, o el impacto en la administración o la utilización, revise la información sobre Azure Active Directory (Azure AD) en [información adicional de Azure ad para la migración desde la nube de Microsoft Alemania](ms-cloud-germany-transition-azure-ad.md).
 
 ## <a name="ios"></a>iOS
 
@@ -281,9 +281,9 @@ Introducción:
 
 Desplazarse por la transición:
 
-- [Impacto y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
+- [Impactos y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
 - [Pre-trabajo adicional](ms-cloud-germany-transition-add-pre-work.md)
-- Información adicional para [servicios](ms-cloud-germany-transition-add-general.md), [dispositivos](ms-cloud-germany-transition-add-devices.md), [experiencias](ms-cloud-germany-transition-add-experience.md)y [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Información adicional para [Azure ad](ms-cloud-germany-transition-azure-ad.md), [dispositivos](ms-cloud-germany-transition-add-devices.md), [experiencias](ms-cloud-germany-transition-add-experience.md)y [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Aplicaciones en la nube:
 

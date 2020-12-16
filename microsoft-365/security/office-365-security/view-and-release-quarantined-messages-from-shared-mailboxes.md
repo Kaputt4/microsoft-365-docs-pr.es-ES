@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: Los usuarios pueden obtener información sobre cómo ver y actuar en los mensajes en cuarentena que se enviaron a los buzones compartidos para los que tienen permisos.
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570966"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688034"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Ver y liberar mensajes en cuarentena de buzones compartidos
 
@@ -47,16 +47,6 @@ Independientemente del método, los usuarios pueden evitar la confusión al incl
 ## <a name="things-to-keep-in-mind"></a>Aspectos importantes
 
 - El primer usuario que actúe en el mensaje en cuarentena decide el destino del mensaje para todos los usuarios que usen el buzón compartido. Por ejemplo, si 10 usuarios acceden a un buzón compartido y un usuario decide eliminar el mensaje en cuarentena, el mensaje se elimina para los 10 usuarios. Del mismo modo, si un usuario decide liberar el mensaje, éste se publica en el buzón compartido y es accesible para todos los demás usuarios del buzón compartido.
-
-- Actualmente, si un usuario selecciona varios mensajes en cuarentena que se enviaron al buzón compartido, se devuelven los siguientes errores de confusión cuando el usuario hace clic en **mensajes de liberación** o **elimina mensajes** en el control flotante **acciones en masa** :
-
-  > No tiene permiso para liberar todos los mensajes en cuarentena seleccionados.
-  >
-  > No tiene permiso para eliminar todos los mensajes en cuarentena seleccionados.
-
-  Independientemente del error, la acción se lleva a cabo en los mensajes y el error se puede omitir.
-
-  ![Error false al liberar o eliminar en masa los mensajes en cuarentena enviados a un buzón compartido.](../../media/quarantine-bulk-action-error.png)
 
 - Actualmente, el botón **bloquear remitente** no está disponible en el control flotante de **detalles** para los mensajes en cuarentena que se enviaron al buzón compartido.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Aprenda a administrar mensajes del centro de mensajes para ayudarle con la administración de cambios.
-ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 9f64be8396900db3377505fea3e144fffbb3b096
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005827"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688283"
 ---
 # <a name="manage-messages-in-message-center"></a>Administrar mensajes en el centro de mensajes
 
@@ -33,7 +33,7 @@ Las publicaciones del centro de mensajes son anuncios importantes sobre las cara
   
 ## <a name="read-a-message"></a>Leer un mensaje
 
-Para ir al centro de mensajes, vaya al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)y seleccione Centro de mensajes de **mantenimiento**  >  **Message center**. 
+Para ir al centro de mensajes, vaya al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)y seleccione Centro de mensajes de **mantenimiento**  >  . 
 
 Seleccione un título de mensaje para abrirlo en el panel de lectura. Cada mensaje contiene un resumen del cambio, una declaración de cómo puede afectar el cambio a usted, información sobre cómo puede preparar a su organización para el cambio y, en la mayoría de los casos, un vínculo a información adicional donde puede obtener más información. La información adicional sigue estando disponible, incluso después de que expire un mensaje.
 
@@ -171,7 +171,7 @@ Si ve un mensaje que no le pertenece a usted o quizá ya ha actuado en él, pued
   
 1. Seleccione la pestaña **mensajes archivados** en la parte superior del centro de mensajes. Aparece una lista de mensajes archivados. 
 
-2. Seleccione el mensaje, seleccione **restaurar**y el mensaje se restaurará a mensajes activos.
+2. Seleccione el mensaje, seleccione **restaurar** y el mensaje se restaurará a mensajes activos.
 
 ::: moniker-end
 
@@ -206,6 +206,11 @@ Hay dos formas de archivar un mensaje.
 2. Seleccione **restaurar** a la derecha del identificador del mensaje y el mensaje se restaurará a mensajes activos.
 
 ::: moniker-end
+
+## <a name="track-your-message-center-tasks-in-planner"></a>Seguir las tareas del Centro de mensajes en Planner
+
+En el Centro de mensajes de Microsoft 365 no deja de llegarle información útil sobre los cambios en los servicios de Microsoft 365. Puede resultar difícil realizar un seguimiento de los cambios que requieren tareas que realizar, Cuándo y quién, y para realizar un seguimiento de cada tarea hasta su finalización. También puede ser útil anotar algo y etiquetarlo para mirarlo en otro momento. Puede hacer todo esto y más cuando sincronice los mensajes desde el centro de administración de Microsoft 365 a Microsoft Planner. Para obtener más información, consulte [realizar un seguimiento de las tareas del centro de mensajes en Planner](https://docs.microsoft.comoffice365/planner/track-message-center-tasks-planner).
+
 
 Para obtener información general sobre el centro de mensajes, consulte [Message Center en Microsoft 365](message-center.md). O bien, para obtener información sobre cómo configurar las preferencias de idioma para habilitar la traducción automática de publicaciones del centro de mensajes, consulte [traducción de idiomas para las publicaciones del centro de mensajes](language-translation-for-message-center-posts.md). Si desea programar una forma alternativa de obtener información de estado del servicio en tiempo real y comunicaciones del centro de mensajes, consulte la información general de la [API de comunicaciones de servicio de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

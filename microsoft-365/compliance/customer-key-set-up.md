@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841291"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688427"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -31,9 +31,9 @@ Debe configurar Azure antes de poder usar la clave de cliente de Office 365. En 
   
 ## <a name="before-you-set-up-customer-key"></a>Antes de configurar la clave de cliente
 
-Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles.
+Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. Use una suscripción de Azure facturada y pagada mediante un contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure adquiridas mediante planes de pago a cuenta o con una tarjeta de crédito no se admiten para la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles.
 
-Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización y de que su cuenta se factura y no se le paga con una tarjeta de crédito. Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [inquilino de Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [inquilino de Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack solo se usa para recopilar la información de configuración de servicio y el inquilino necesario que se usa para registrar la clave de cliente. Las ofertas de clave de cliente se publican a través de FastTrack para que sea conveniente para usted y para nuestros partners enviar la información necesaria con el mismo método. FastTrack también facilita el archivado de los datos facilitados en la oferta.
   
@@ -141,9 +141,9 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
 3. Póngase en contacto con Microsoft para finalizar el proceso. Para el equipo de SharePoint y OneDrive para la empresa, póngase en contacto con [Spock@microsoft.com](mailto:spock@microsoft.com). Para Exchange Online y Skype empresarial, póngase en contacto con [exock@microsoft.com](mailto:exock@microsoft.com). Incluya lo siguiente en su correo electrónico:
 
-   **Asunto** : clave de cliente de \<*Your tenant's fully-qualified domain name*\>
+   **Asunto**: clave de cliente de \<*Your tenant's fully-qualified domain name*\>
 
-   **Cuerpo** : identificadores de suscripción para los que desea finalizar el período de retención obligatorio.
+   **Cuerpo**: identificadores de suscripción para los que desea finalizar el período de retención obligatorio.
    El resultado de Get-AzProviderFeature para cada suscripción.
 
    El contrato de nivel de servicio (SLA) para completar este proceso es cinco días hábiles después de que Microsoft haya notificado (y comprobado) que ha registrado sus suscripciones para usar un período de retención obligatorio.
@@ -254,7 +254,7 @@ Para habilitar la eliminación temporal en los almacenes clave, siga estos pasos
    Set-AzResource -ResourceId $r.ResourceId -Properties $r.Properties
    ```
 
-3. Confirme que la eliminación de software está configurada para el almacén de claves mediante la ejecución del cmdlet **Get-AzKeyVault** . Si la eliminación temporal está configurada correctamente para el almacén de claves, la propiedad _eliminación temporal habilitada_ devuelve un valor **true** :
+3. Confirme que la eliminación de software está configurada para el almacén de claves mediante la ejecución del cmdlet **Get-AzKeyVault** . Si la eliminación temporal está configurada correctamente para el almacén de claves, la propiedad _eliminación temporal habilitada_ devuelve un valor **true**:
 
    ```powershell
    Get-AzKeyVault -VaultName <vault name> | fl
@@ -307,7 +307,7 @@ Para comprobar el nivel de recuperación de una clave, en Azure PowerShell, ejec
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Si la propiedad _nivel de recuperación_ devuelve cualquier cosa que no sea un valor **recuperable + ProtectedSubscription** , tendrá que revisar este tema y asegurarse de que ha seguido todos los pasos necesarios para poner la suscripción en la lista no cancelar y que tiene habilitada la eliminación temporal en cada uno de los almacenes clave.
+Si la propiedad _nivel de recuperación_ devuelve cualquier cosa que no sea un valor **recuperable + ProtectedSubscription**, tendrá que revisar este tema y asegurarse de que ha seguido todos los pasos necesarios para poner la suscripción en la lista no cancelar y que tiene habilitada la eliminación temporal en cada uno de los almacenes clave.
   
 ### <a name="back-up-azure-key-vault"></a>Copia de seguridad de Azure Key Vault
 

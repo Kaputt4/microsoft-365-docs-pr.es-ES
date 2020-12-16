@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: comprender la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán'
-ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551539"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688646"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migración desde Microsoft Cloud Alemania a Office 365 Services en las nuevas regiones del centro de administración de Office en alemán
 
@@ -71,7 +71,7 @@ La migración se ejecuta en fases que se inician al [participar en la migración
 
 La migración no comienza inmediatamente cuando se produce la suscripción. La organización se agrega a la lista de inquilinos programados para la migración posterior. Puede comenzar las fases previas al trabajo ahora, ya que son críticas para garantizar una migración y un uso correctos al finalizar:
 
-- [Impacto y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
+- [Impactos y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
 - [Pre-trabajo adicional](ms-cloud-germany-transition-add-pre-work.md)
 
 Una semana antes del inicio de la migración de inquilino, recibirá un aviso en el servicio de centro de mensajes como una advertencia final de que deben completarse todos los requisitos previos.
@@ -288,9 +288,9 @@ Introducción:
 
 Desplazarse por la transición:
 
-- [Impacto y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
+- [Impactos y acciones de las fases de migración](ms-cloud-germany-transition-phases.md)
 - [Pre-trabajo adicional](ms-cloud-germany-transition-add-pre-work.md)
-- Información adicional para [servicios](ms-cloud-germany-transition-add-general.md), [dispositivos](ms-cloud-germany-transition-add-devices.md), [experiencias](ms-cloud-germany-transition-add-experience.md)y [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Información adicional para [Azure ad](ms-cloud-germany-transition-azure-ad.md), [dispositivos](ms-cloud-germany-transition-add-devices.md), [experiencias](ms-cloud-germany-transition-add-experience.md)y [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Aplicaciones en la nube:
 

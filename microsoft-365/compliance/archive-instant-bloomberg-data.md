@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector de datos para importar y archivar los datos de la herramienta instantánea de chat de Bloomberg en Microsoft 365.
-ms.openlocfilehash: 7203af3a45529b0e5cc635a8d0cd460d13b73c20
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: c2a56feb80f6772462fae47eb2a020e951f246e6
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620016"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688495"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurar un conector para archivar datos de Instant Bloomberg
 
@@ -65,6 +65,8 @@ Algunos de los pasos de implementación necesarios para archivar datos Instant B
   - Dirección URL para el sitio de SFTP de Bloomberg (por ejemplo, sftp.bloomberg.com)
 
   - Número de puerto para el sitio de SFTP de Bloomberg
+
+- El conector para Bloomberg instantáneo puede importar un total de 200.000 elementos en un solo día. Si hay más de 200.000 elementos en un día presente en el sitio de SFTP, ninguno de estos elementos se importará a Microsoft 365.
 
 - El usuario que crea un conector para Bloomberg instantáneo en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Esto es necesario para agregar conectores en la página **conectores de datos** en el centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 

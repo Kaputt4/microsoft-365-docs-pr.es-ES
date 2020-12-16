@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604388"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688416"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación segura de Microsoft
 
@@ -35,7 +35,18 @@ Para convertir la puntuación segura de Microsoft en un mejor representante de s
 
 Se puede encontrar la puntuación segura de Microsoft en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
-## <a name="november-2020"></a>2020 de noviembre
+## <a name="december-2020"></a>Diciembre de 2020
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se han agregado 6 acciones de mejora relacionadas con las cuentas para Microsoft defender para el extremo (ATP anterior de Microsoft defender):
+
+- Establezca ' longitud mínima de contraseña ' en ' 14 o más caracteres '
+- Establezca ' exigir historial de contraseñas ' en ' 24 contraseñas ' o más (s)
+- Establezca "vigencia máxima de la contraseña" en "60 o menos días, pero no es 0"
+- Establezca ' vigencia mínima de la contraseña ' en ' 1 o más días '
+- Deshabilitar la cuenta integrada de administrador
+- Deshabilitar la cuenta de invitado integrada
+
+## <a name="november-2020"></a>Noviembre de 2020
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Se ha quitado la capacidad de crear vales de ServiceNow a través de la puntuación segura 
 
@@ -47,7 +58,7 @@ La capacidad de crear vales de ServiceNow a través de la calificación segura y
 - Cambiar la ruta de acceso del ejecutable del servicio a una ubicación común protegida
 - Cambiar la cuenta de servicio para evitar la contraseña almacenada en caché en el registro de Windows
 
-## <a name="october-2020"></a>2020 de octubre
+## <a name="october-2020"></a>Octubre de 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Quitar la acción de mejora relacionada con Microsoft defender para el punto de conexión
 
@@ -81,7 +92,7 @@ En el tiempo, la calificación de identidad segura y la API de Graph adoptarán 
 * Administrar hacia sus metas futuras mediante proyecciones de puntuación y acciones planeadas
 * Y mucho más.
 
-## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
+## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
 Si tiene algún problema, háganoslo saber mediante la publicación de la comunidad de [seguridad, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y le proporcionaremos ayuda.
 
