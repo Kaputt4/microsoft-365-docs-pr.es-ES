@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Aprenda a aplicar un modelo publicado a una biblioteca de documentos de SharePoint
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087492"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701146"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
@@ -77,6 +77,9 @@ Si bien un modelo aplicado procesa todos los archivos cargados en la biblioteca 
 3. Los archivos que seleccionó se agregarán a la cola para su procesamiento.
 
       ![Clasificar y extraer](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> Puede copiar archivos individuales a una biblioteca y aplicarlos a un modelo, pero no carpetas.
 
 ## <a name="see-also"></a>Consulte también
 [Crear un clasificador](create-a-classifier.md)

@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087468"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701134"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -37,7 +37,9 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 
 1. En la página de inicio del modelo, en el ícono **Crear y entrenar extractores**, haga clic en **Entrenar extractor**.
 2. En la pantalla del extractor de **Nueva entidad**, escriba el nombre de su extractor en el campo **Nombre del nuevo extractor**. Por ejemplo, llámelo **Fecha de inicio del servicio** si desea extraer la fecha de inicio del servicio de cada documento de renovación de contrato. También puede optar por reutilizar una columna creada previamente (por ejemplo, una columna de metadatos administrados).
-3. Haga clic en **Crear**.
+> [!NOTE]
+> Si crea un nuevo extractor, seleccione **Nuevo tipo de columna** y elija **Una línea de texto**, el límite máximo de caracteres es 255. Cualquier carácter que escriba que exceda el límite se trunca. 
+3. Cuando termine, haga clic en **Crear**.
 
 ## <a name="add-a-label"></a>Agregar una etiqueta
 
