@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409217"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682673"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -35,16 +35,16 @@ Para administrar las revisiones de eliminación y confirmar que los registros se
 
 ### <a name="permissions-for-disposition"></a>Permisos para la eliminación
 
-Para acceder de forma satisfactoria a la pestaña **Eliminación** en el Centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de administrador de **Administración de eliminación**. Este rol está incluido en los grupos de roles de administrador predeterminados, **Administrador de cumplimiento** y **Administrador de datos de cumplimiento**.
-
-Para conceder a los usuarios este rol de Administración de eliminación, agréguelos a uno de los grupos de roles predeterminados o cree un grupo de roles personalizado (por ejemplo, denominado "Revisores de eliminación") y conceda a este grupo el rol de Administración de eliminación.  
+Para acceder de forma satisfactoria a la pestaña **Eliminación** en el Centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de administrador de **Administración de eliminación**. Desde diciembre de 2020, este rol está ahora incluido en el grupo de roles de administrador predeterminado **Administración de registros**.
 
 > [!NOTE]
-> Incluso un administrador global necesita que se le otorgue el rol de **Administración de eliminación**. 
+> De lmanera predeterminada, un administrador global no tiene concedido el rol de **Administración de eliminación**. 
+
+Para conceder a los usuarios solo los permisos que necesitan para las revisiones de disposición sin concederles permisos para ver y configurar otras características para la retención y la gestión de registros, cree un grupo de funciones personalizado (por ejemplo, denominado "Revisores de disposición") y conceda a este grupo la función de gestión de disposición.
 
 Además, para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios a los dos grupos de roles siguientes: **Visor de contenido del explorador de contenido** y **Visor de listas del explorador de contenido**. Si los usuarios no tienen los permisos para estos grupos de roles, aún pueden seleccionar una acción de revisión de eliminación para completar la revisión de eliminación, pero deberán hacerlo sin poder ver el contenido del elemento desde el centro de cumplimiento.
 
-Para obtener instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener instrucciones sobre la configuración de estos permisos, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Habilitar auditoría
 
@@ -133,7 +133,7 @@ Use la pestaña **Eliminación** en la página **Administración de registros** 
 Los elementos que se muestran en la pestaña **Elementos eliminados** para etiquetas de registro se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría [se habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se capturaren los eventos correspondientes.
+> Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.
 
 En el caso de la auditoría, se debe buscar **Archivo eliminado marcado como registro** en la categoría **Actividades de archivos y páginas**. Este evento de auditoría se aplica a documentos y mensajes de correo electrónico.
 

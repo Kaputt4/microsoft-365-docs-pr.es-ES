@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658677"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698401"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -108,6 +108,11 @@ La configuración y la configuración de la clasificación basada en EDM incluye
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definir el esquema de la base de datos de información confidencial
 
+Si, por razones técnicas o de negocios, prefiere no usar PowerShell o la línea de comandos para crear el esquema y el tipo de información confidencial de EDM Patter (paquete de reglas), puede usar el [Asistente de tipo de información confidencial y esquema de coincidencia de datos](sit-edm-wizard.md) para crearlos. Cuando termine de crear el esquema y el patrón de tipo de información confidencial de EDM, vuelva a completar todos los pasos necesarios para que su tipo de información confidencial basado en EDM esté disponible para su uso.
+
+> [!NOTE]
+> El esquema de coincidencia exacta de datos y el Asistente para tipos de información confidencial solo están disponibles para las nubes en todo el mundo y GCC.
+
 1. Defina el esquema de la base de datos de información confidencial en formato XML (similar al siguiente ejemplo). Dé un nombre a este archivo de esquema **edm.xml** y configúrelo para que por cada columna de la base de datos haya una línea que use la sintaxis: 
 
       `\<Field name="" searchable=""/\>`.
@@ -160,7 +165,7 @@ Al incluir el campo **_ignoredDelimiters_*_ con caracteres compatibles, EDM pasa
 - \; 
 
 - El indicador `ignoredDelimiters` no es compatible con:
-- Los caracteres 0-9
+- caracteres 0-9
 - A-Z
 - a-z
 - \"
@@ -253,7 +258,7 @@ En este ejemplo, donde se usan tanto `caseInsensitive` como `ignoredDelimiters`,
       </RulePackage>
       ```
 
-1. Cargue el paquete de reglas ejecutando, uno a la vez, los siguientes cmdlets de PowerShell:
+2. Cargue el paquete de reglas ejecutando, uno a la vez, los siguientes cmdlets de PowerShell:
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -361,7 +366,10 @@ El algoritmo hash y la carga se pueden realizar con un equipo o puede separar el
 
 Si desea aplicar un algoritmo hash y cargar desde un equipo, tendrá que hacerlo desde un equipo que pueda conectarse directamente a su espacio empresarial de Microsoft 365. Esto requiere que los archivos de datos confidenciales de texto no cifrado se encuentren en el equipo para la aplicación del algoritmo hash.
 
-Si no desea que se muestre el archivo de datos confidenciales de texto no cifrado, puede aplicar un algoritmo hash en un equipo en una ubicación segura y, a continuación, copiar el archivo hash y el archivo de sal en un equipo que pueda conectarse directamente a su espacio empresarial de Microsoft 365 para cargarlo. En este escenario, necesitará el EDMUploadAgent en ambos equipos. 
+Si no desea que se muestre el archivo de datos confidenciales de texto no cifrado, puede aplicar un algoritmo hash en un equipo en una ubicación segura y, a continuación, copiar el archivo hash y el archivo de sal en un equipo que pueda conectarse directamente a su espacio empresarial de Microsoft 365 para cargarlo. En este escenario, necesitará el EDMUploadAgent en ambos equipos.
+
+> [!IMPORTANT]
+> Si usó el esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial con el fin de crear los archivos de esquema y de patrón, **_debe_* descargar el esquema para este procedimiento.
 
 #### <a name="prerequisites"></a>Requisitos previos
 
@@ -372,10 +380,11 @@ Si no desea que se muestre el archivo de datos confidenciales de texto no cifrad
     - el archivo de elementos confidenciales en formato CSV **RegistrosPacientes.csv** en nuestros ejemplos
     -  los archivos hash y de sal de salida
     - el nombre del almacén de datos del archivo **edm.xml** que para este ejemplo es `PatientRecords`
+- Si ha usado el [esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial](sit-edm-wizard.md) entonces **_debe_* _ descargarlo
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configuración de la cuenta de usuario y del grupo de seguridad personalizado
 
-1. Como administrador global, vaya al Centro de administración mediante el [vínculo apropiado para su suscripción](#portal-links-for-your-subscription) y [cree un grupo de seguridad](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)llamado **EDM\_DataUploaders**.
+1. Como administrador global, vaya al Centro de administración mediante el [vínculo apropiado para su suscripción](#portal-links-for-your-subscription) y [cree un grupo de seguridad](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) llamado _*EDM\_DataUploaders**.
 
 2. Agregue uno o más usuarios al grupo de seguridad **EDM\_DataUploaders**. (Estos usuarios administrarán la base de datos de información confidencial).
 
@@ -420,6 +429,10 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 
 3. Inicie sesión con su cuenta profesional o educativa de Microsoft 365 que se ha agregado al grupo de seguridad de EDM_DataUploaders. La información de inquilino se extrae de la cuenta de usuario para establecer una conexión.
 
+OPCIONAL: Si usó el esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial con el fin de crear los archivos de esquema y de patrón, ejecute el siguiente comando en una ventana de símbolo del sistema:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. Para crear un hash y cargar los datos confidenciales, ejecute el siguiente comando en la ventana del Símbolo del sistema:
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -439,6 +452,10 @@ Verifique que el estado se encuentre en **ProcesamientoEnCurso**. Verifique nuev
 #### <a name="separate-hash-and-upload"></a>Separe el hash y cargue
 
 Aplique el algoritmo hash en un equipo en un entorno seguro.
+
+OPCIONAL: Si usó el esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial con el fin de crear los archivos de esquema y de patrón, ejecute el siguiente comando en una ventana de símbolo del sistema:
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. Ejecute el siguiente comando en la ventana del Símbolo del sistema:
 

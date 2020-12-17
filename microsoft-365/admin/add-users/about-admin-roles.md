@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador del servicio puede abrir tickets de soporte técnico a través del centro de administración.
-ms.openlocfilehash: 5ee8f5732d67ee3913ac7de5bcb7328065b0c8ba
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445468"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682662"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
-Su suscripción a Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización usando el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a una función empresarial común y da permisos a los usuarios de su organización para realizar tareas específicas en los centros de administración.
+La suscripción a Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización usando el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a una función empresarial común y da permisos a los usuarios de su organización para realizar tareas específicas en los centros de administración.
 
 El Centro de administración de Microsoft 365 le permite administrar roles de Azure AD y de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure AD y en el centro de administración de Intune.
 

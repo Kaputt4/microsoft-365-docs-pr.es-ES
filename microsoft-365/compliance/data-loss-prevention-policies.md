@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo identificar, supervisar y proteger automáticamente la información confidencial de su organización en Office 365.
-ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999502"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682803"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -61,7 +61,7 @@ Con una directiva DLP, puede:
     
 Para crear y administrar las directivas DLP, vaya a la página sobre la prevención de pérdida de datos del Centro de cumplimiento de Microsoft 365.
   
-![Página de prevención de pérdida de datos en el Centro de seguridad&amp; y cumplimiento de Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Página de prevención de pérdida de datos en el Centro de seguridad y cumplimiento de Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Qué contiene una directiva DLP
 
@@ -117,7 +117,7 @@ Estos son los componentes de una regla, explicados detalladamente a continuació
 
 Las condiciones son importantes porque determinan los tipos de información que está buscando y cuándo se debe realizar una acción. Por ejemplo, puede optar por omitir el contenido que contiene números de pasaporte a menos que el contenido contenga más de 10 de esos números y se comparta con personas fuera de la organización.
   
-Las condiciones se centran en el **contenido** , como el tipo de información confidencial que está buscando, y también en el **contexto** , como con quién se comparte el documento. Puede usar condiciones para asignar acciones diferentes a distintos niveles de riesgo. Por ejemplo, el contenido confidencial compartido internamente podría ser de menor riesgo y necesitar menos acciones que el contenido confidencial compartido con personas de fuera de la organización. 
+Las condiciones se centran en el **contenido**, como el tipo de información confidencial que está buscando, y también en el **contexto**, como con quién se comparte el documento. Puede usar condiciones para asignar acciones diferentes a distintos niveles de riesgo. Por ejemplo, el contenido confidencial compartido internamente podría ser de menor riesgo y necesitar menos acciones que el contenido confidencial compartido con personas de fuera de la organización. 
   
 ![Lista que muestra las condiciones de DLP disponibles](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -194,17 +194,17 @@ Así es como se muestra una sugerencia de directiva en una cuenta de OneDrive pa
   
 ![Sugerencia de directiva para un documento de una cuenta de OneDrive](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- Para obtener más información sobre las notificaciones de usuario y las sugerencias de directiva en directivas DLP, vea [Usar las notificaciones y las sugerencias de directiva](use-notifications-and-policy-tips.md).
+ Para obtener más información sobre las notificaciones de usuario y las sugerencias de directiva en directivas DLP, Vea [usar las notificaciones y las sugerencias de directiva](use-notifications-and-policy-tips.md).
 
 #### <a name="alerts-and-incident-reports"></a>Alertas e informes de incidentes
 
 Cuando una regla coincide, puede enviar un correo de alerta a su responsable de cumplimento normativo (o a la persona que elija) con los detalles de la alerta. Este correo electrónico de alerta contendrá un vínculo del [Panel de administración de alertas DLP](dlp-configure-view-alerts-policies.md) el que el funcionario encargado de la conformidad pueda ir para ver los detalles de los eventos y las alertas. El panel contiene detalles del evento que activó la alerta, junto con detalles de la Directiva DLP que coincide y el contenido confidencial detectado.
 
-Además, también puede enviar un informe de incidentes con detalles sobre el evento. Este informe incluye información sobre el elemento que ha coincidido, el contenido real que ha coincidido con la regla y el nombre de la persona que ha modificado el contenido por última vez. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
+Además, también puede enviar un informe de incidentes con detalles sobre el evento. Este informe incluye información sobre el elemento que ha coincidido, el contenido que ha coincidido con la regla y el nombre de la persona que ha modificado el contenido por última vez. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
   
 ![Página para configurar informes de incidentes](../media/Alerts-and-incident-report.png)
 
-DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes y una alerta cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP * *_no_* _configurarlas o buscar elementos de correo electrónico existentes que estén almacenados en un buzón o archivo.
+DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes y una alerta cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP **_no_* _configurarlas o buscar elementos de correo electrónico existentes que estén almacenados en un buzón o archivo.
   
 ## <a name="grouping-and-logical-operators"></a>Operadores lógicos y de agrupación
 
@@ -240,9 +240,9 @@ Puede agregar rápidamente un grupo, que puede tener sus propias condiciones y o
 
 Entre los grupos, puede elegir si se deben cumplir las condiciones de un solo grupo o de todos los grupos para que el contenido coincida con la regla.
   
-Por ejemplo, la directiva incorporada _ *HIPAA* * de Estados Unidos tiene una regla que usa un **Y** un operador entre los grupos para identificar el contenido que contiene lo siguiente: 
+Por ejemplo, la directiva incorporada _ *HIPAA** de Estados Unidos tiene una regla que usa un **Y** un operador entre los grupos para identificar el contenido que contiene lo siguiente: 
   
-- Desde el grupo **Identificadores PII** (por lo menos un número de SSN **O** número DEA) 
+- del grupo **Identificadores PII** (por lo menos un número de SSN **O** número DEA) 
     
     **Y**
     
@@ -353,21 +353,21 @@ Por estas razones, las instrucciones para crear reglas con diferentes precisione
 Al usar una [etiqueta de retención](retention.md#retention-labels) que haya creado y publicado con anterioridad como condición en una directiva DLP, debe tener en cuenta lo siguiente:
 
 - Antes de intentar usarla como una condición en una directiva DLP, debe haber creado, publicado y aplicado previamente la etiqueta de retención.
-- Las etiquetas de retención publicadas pueden tardar de uno a siete días en sincronizarse. Para obtener más información, vea [¿Cuándo están disponibles las etiquetas de retención para su aplicación?](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) para las etiquetas de retención publicadas en una directiva de retención y [¿Cuánto tardarán las etiquetas de retención en surtir efecto?](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) para las etiquetas de retención que se publiquen automáticamente.
+- Las etiquetas de retención publicadas pueden tardar de uno a siete días en sincronizarse. Para obtener más información, consulte [¿Cuándo están disponibles las etiquetas de retención para su aplicación?](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) para las etiquetas de retención publicadas en una directiva de retención y [¿Cuánto tardarán las etiquetas de retención en surtir efecto?](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) para las etiquetas de retención que se publiquen automáticamente.
 - El uso de una etiqueta de retención en una directiva **solo es compatible con los elementos de SharePoint y OneDrive**.
 
   ![Etiquetas como una condición](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   Es posible que quiera usar una etiqueta de retención en una directiva DLP si tiene elementos en retención y eliminación, y también desea aplicarles otros controles, por ejemplo:
 
-  - Publicó una etiqueta de retención denominada año fiscal 2018, que, cuando es aplicada a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de su organización, lo que puede hacer con una directiva DLP.
+  - Publicó una etiqueta de retención denominada año fiscal 2018, que, cuando es aplicada a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de la organización, lo que puede hacer con una directiva DLP.
 
   > [!IMPORTANT]
   > Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: **"No se admite la protección del contenido etiquetado en mensajes de correo electrónico y de Teams. Quite la etiqueta siguiente o desactive Exchange y Teams como una ubicación".** Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
 
-### <a name="support-for-sensitivity-labels-is-coming"></a>La compatibilidad con las etiquetas de confidencialidad estará disponible próximamente
+### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de confidencialidad como condición en una directiva DLP
 
-Actualmente, solo puede usar una etiqueta de retención como condición, pero no una [etiqueta de confidencialidad](sensitivity-labels.md). Actualmente, estamos trabajando en la compatibilidad para usar una etiqueta de confidencialidad en esta condición.
+La etiqueta de confidencialidad como condición en las directivas DLP actualmente es una versión preliminar. [Más información](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition).
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Cómo esta característica se relaciona con otras características
 
@@ -441,7 +441,7 @@ Si está creando directivas DLP con un gran impacto potencial, se recomienda seg
 
     ![Opciones para desactivar una regla de una directiva](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    También puede cambiar la prioridad de varias reglas en una directiva. Para hacerlo, abra una directiva para editarla. En una fila de una regla, elija el signo de puntos suspensivos ( **...** ) y elija una opción, como **Bajar** o **Llevar al final**. 
+    También puede cambiar la prioridad de varias reglas en una directiva. Para hacerlo, abra una directiva para editarla. En una fila de una regla, elija el signo de puntos suspensivos (**...**) y elija una opción, como **Bajar** o **Llevar al final**. 
 
     ![Establecer la prioridad de la regla](../media/dlp-set-rule-priority.png)
   

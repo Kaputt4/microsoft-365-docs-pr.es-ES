@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919868"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682535"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -38,7 +38,7 @@ ms.locfileid: "48919868"
     
     Como parte de esta valoración, determine si usará la [administración de registros](records-management.md).
 
-3. **Cree directivas de retención y etiquetas de retención** , en función de la configuración de retención y de las acciones que haya identificado.
+3. **Cree directivas de retención y etiquetas de retención**, en función de la configuración de retención y de las acciones que haya identificado.
     
     Para las etiquetas de retención, puede que le resulte útil usar el [plan de archivos](file-plan-manager.md) para definir y delimitar las etiquetas de retención en una hoja de cálculo. A continuación, importe la hoja de cálculo para crear las etiquetas.
     
@@ -52,7 +52,13 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Permisos necesarios para crear y administrar directivas de retención y etiquetas de retención
 
-Los miembros de su equipo de cumplimiento que crearán y administrarán las directivas de retención y las etiquetas de retención necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios el acceso sin concederles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administrador de cumplimiento normativo**. Para instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Los miembros de su equipo de cumplimiento que crearán y administrarán las directivas de retención y las etiquetas de retención necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios el acceso sin concederles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administrador de cumplimiento normativo**.
+
+De manera alternativa al uso de estos roles predeterminados, puede crear un nuevo grupo de roles y agregar el rol de **Administración de retención** a este grupo. Para el rol de solo vista, use **Administración de retención de solo vista**. 
+
+Para más información sobre estos roles y grupos de roles, vea [Permisos en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+Para obtener instrucciones sobre cómo agregar usuarios a grupos de roles y asignar roles, vea [Proporcionar acceso a los usuarios al Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas y directivas de retención. La persona que configura estas etiquetas y directivas no requiere acceso al contenido.
 
@@ -69,7 +75,7 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 |Permitir a los administradores aplicar acciones de retención y eliminación en un documento con información sobre el modelo, para que sean aplicado automáticamente a los documentos identificados en una biblioteca de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
 |Aplicar acciones de retención y eliminación automáticamente a documentos y mensajes de correo electrónico |[Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)|
 |Inicie el período de retención cuando tenga lugar un evento, por ejemplo, cuando:  <br />- Algún empleado abandone la organización <br />- Algún contrato expire <br />- Finalice la duración de un producto| [Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
-|Restrinja los cambios en las directivas para ayudar a cumplir los requisitos normativos o como protección frente a administradores no autorizados| [Usar el Bloqueo de conservación para restringir los cambios en directivas de retención y directivas de etiquetas de retención](retention-preservation-lock.md)
+|Restrinja los cambios de las directivas para ayudar a cumplir los requisitos reglamentarios o medidas de seguridad frente a administradores no autorizados| [Usar el Bloqueo de conservación para restringir los cambios en directivas de retención y directivas de etiquetas de retención](retention-preservation-lock.md)
 |Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |
 | Supervise cómo y cuándo se aplican las opciones de conservar y eliminar la configuración de los elementos | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |
 |Utilice una única solución de administración de registros para documentos y mensajes de correo electrónico |[Más información sobre la administración de registros](records-management.md) |
