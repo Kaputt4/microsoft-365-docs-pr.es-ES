@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295039"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688222"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -39,6 +39,8 @@ Puede realizar pruebas piloto de Microsoft 365 con estos requisitos y limitacion
 - Los administradores no pueden administrar todas las cuentas de usuario desde una sola ubicación.
 
 - Es posible que los usuarios no puedan usar el filtrado de correo no deseado de Microsoft 365.
+
+- Se recomienda para todos los números de usuarios pequeños y los que solo apliquen al uso del correo electrónico para un piloto.
 
 ## <a name="set-up-a-microsoft-365-pilot"></a>Configurar una prueba piloto de Microsoft 365
 
@@ -81,7 +83,7 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 > [!NOTE]
 > Desbloquear el servidor de correo electrónico existente permite que el spam que llega a través del servidor original llegue a los buzones de Microsoft 365, por lo que no se puede evaluar la eficacia de Microsoft 365 para evitar el spam.
 
-1. En el panel de navegación del Centro de administración de Exchange, seleccione **Protección**y, a continuación, seleccione **Filtro de conexión**.
+1. En el panel de navegación del Centro de administración de Exchange, seleccione **Protección** y, a continuación, seleccione **Filtro de conexión**.
 
 2. En la **Lista de direcciones IP permitidas**, seleccione **+**, y agregue la dirección IP para el servidor de correo electrónico a su proveedor de correo electrónico actual. 
 
@@ -95,7 +97,7 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 
     Para asegurarse de que el correo electrónico de un usuario siga siendo el mismo, el campo **Nombre de usuario** tiene que coincidir con la dirección de correo electrónico actual del usuario.
 
-3. Elija la licencia adecuada, haga clic en **Siguiente**y, después, haga clic en **Finalizar la agregación**. 
+3. Elija la licencia adecuada, haga clic en **Siguiente** y, después, haga clic en **Finalizar la agregación**. 
 
 4. Junto a **Nombre de usuario**, seleccione su nombre de dominio personalizado de la lista desplegable. 
 
@@ -189,4 +191,3 @@ Como va a mover solo dos usuarios de prueba, y el usuario A y el usuario B usan 
 
 Una vez que se importan a las ubicaciones adecuadas en el buzón de correo de Microsoft 365, se puede acceder a ellos desde cualquier dispositivo y en cualquier lugar.
 
-Cuando haya más buzones involucrados, o si los empleados no están usando Outlook, puede usar las herramientas de migración disponibles en el Centro de administración de Exchange. Para empezar, vaya al Centro de administración de Exchange y siga las instrucciones que encontrará en [Migrar el correo electrónico desde un servidor IMAP a los buzones de correo de Exchange Online](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
