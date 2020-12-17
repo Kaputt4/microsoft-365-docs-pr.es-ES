@@ -274,20 +274,20 @@
               href: ms-cloud-germany-transition.md
             - name: Participar en la migración
               href: ms-cloud-germany-migration-opt-in.md
-            - name: Experiencia del cliente
+            - name: Qué ha cambiado
               href: ms-cloud-germany-transition-experience.md
-            - name: Impactos y acciones de las fases de migración
+            - name: Tarea previa
+              href: ms-cloud-germany-transition-add-pre-work.md
+            - name: Acciones y repercusiones de las fases de la migración (general)
               href: ms-cloud-germany-transition-phases.md
+            - name: Acciones y repercusiones de las fases de la migración (avanzado)
+              href: ms-cloud-germany-transition-add-experience.md
             - name: Información adicional
               items:
-                - name: General
-                  href: ms-cloud-germany-transition-add-general.md
+                - name: Azure AD
+                  href: ms-cloud-germany-transition-azure-ad.md
                 - name: Dispositivos
                   href: ms-cloud-germany-transition-add-devices.md
-                - name: Tarea previa
-                  href: ms-cloud-germany-transition-add-pre-work.md
-                - name: Experiencia
-                  href: ms-cloud-germany-transition-add-experience.md
                 - name: Pasos de la migración de AD FS
                   href: ms-cloud-germany-transition-add-adfs.md
 - name: Identidad
