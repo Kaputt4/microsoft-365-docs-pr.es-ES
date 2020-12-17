@@ -1,12 +1,11 @@
-### YamlMime:Hub
+### YamlMime:Landing
 title: Centro de soluciones y arquitectura de Microsoft 365
-summary: Obtenga información sobre cómo diseñar la solución y la arquitectura adecuadas para su organización.
-brand: m365
+summary: Este centro de soluciones y arquitectura ofrece tanto las instrucciones técnicas necesarias para entenderlo, como planes y la implementación de soluciones integradas de Microsoft 365 para planificar recursos de empresas y compatible con una colaboración moderna.
 metadata:
   title: Centro de soluciones y arquitectura de Microsoft 365
   description: Con este centro de ayuda obtendrá información de TI y de cómo diseñar la solución y la arquitectura adecuadas para su organización.
   ms.service: o365-solutions
-  ms.topic: hub-page
+  ms.topic: landing-page
   ms.collection:
   - m365-security-compliance
   author: samanro
@@ -15,66 +14,96 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ROBOTS: NOINDEX
-  ms.openlocfilehash: 57180d6807ebbc129d68f91d178e9c31724a98a4
-  ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+  ms.openlocfilehash: e77bf6ee7d28e8da4df471487f531b68cc27f5e0
+  ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/10/2020
-  ms.locfileid: "48990522"
-highlightedContent:
-  items:
-  - title: Proporcionar Microsoft 365 a los trabajadores remotos
-    itemType: whats-new
-    url: empower-people-to-work-remotely.md
-  - title: Configurar la colaboración moderna con Microsoft 365
-    itemType: get-started
-    url: setup-secure-collaboration-with-teams.md
-  - title: Implementación de protección contra amenazas en Microsoft 365
-    itemType: get-started
-    url: deploy-threat-protection.md
-productDirectory:
-  items:
-  - title: Soluciones fundamentales de Microsoft 365
-    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: Obtenga una guía completa para un problema o una necesidad empresarial concretos, desde la planificación hasta la implementación y la adopción.
-    url: foundation-solutions-overview.md
-  - title: Guía de escenarios y soluciones de carga de trabajo
-    imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: Agregue estos escenarios a las soluciones básicas para agregar funcionalidades a su entorno.
-    url: workload-solutions-scenarios-overview.md
-  - title: Ilustraciones de soluciones y arquitectura
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: Vea o descargue estas ilustraciones para comprender las funcionalidades y la arquitectura de los servicios de Microsoft 365.
-    url: productivity-illustrations.md
-  - title: Pautas específicas para el sector
-    imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
-    summary: Busque instrucciones diseñadas específicamente para su sector.
-    url: industry-specific-guidance-overview.md
-  - title: Principios de diseño empresarial
-    imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: Conozca los principios clave que necesita para comprender las arquitecturas de red, identidad, seguridad y multinacional.
-    url: design-principles.md
-  - title: Mapa de ruta de implementación y recursos
-    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: Recursos para configurar la colaboración, además de protección de la información y seguridad.
-    url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
-additionalContent:
-  sections:
-  - title: Más recursos para Microsoft 365
-    items:
-    - title: Centro de ayuda de Microsoft 365 para administradores y profesionales de TI
-      summary: Busque más recursos para profesionales de TI en la página de Microsoft 365
-      url: https://docs.microsoft.com/microsoft-365
-    - title: Entrenamiento para administradores y profesionales de TI
-      summary: Busque recursos de aprendizaje para administrar Microsoft 365
-      url: https://docs.microsoft.com/learn/m365/
-    - title: Entrenamiento para usuarios finales
-      summary: Ayude a los usuarios finales a aprender a usar Microsoft 365
-      url: https://support.office.com/modernworkplace
-    - title: Comunidad tecnológica de Microsoft 365
-      summary: Participar en la comunidad tecnológica
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-    - title: Recursos para desarrolladores
-      summary: Obtenga más información sobre cómo desarrollar para Microsoft 365
-      url: https://developer.microsoft.com/microsoft-365
+  ms.lasthandoff: 12/16/2020
+  ms.locfileid: "49688540"
+landingContent:
+- title: Instrucciones de soluciones fundamentales
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Proporcionar Microsoft 365 a los trabajadores remotos
+      url: empower-people-to-work-remotely.md
+    - text: Configurar la colaboración moderna con Microsoft 365
+      url: setup-secure-collaboration-with-teams.md
+    - text: Implementación de protección contra amenazas en Microsoft 365
+      url: deploy-threat-protection.md
+    - text: Implementación de protección de la información para las normativas de privacidad de los datos
+      url: information-protection-deploy.md
+- title: Ilustraciones de arquitectura y diseños principales
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Modelos de arquitectura de la nube de Microsoft
+      url: cloud-architecture-models.md
+    - text: Ilustraciones de productividad de Microsoft 365
+      url: productivity-illustrations.md
+    - text: 'Pósteres de arquitectura de Teams '
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/teams-architecture-solutions-posters?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Principios de diseño
+      url: design-principles.md
+- title: Recursos para la carga de trabajo
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Casos prácticos de Contoso
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: Guías del laboratorio de pruebas
+      url: test-lab-guides-overview-solutions.md
+- title: Instrucciones de soluciones para trabajar en equipo y colaborar
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Planear e implementar una solución de voz de Teams
+      url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: Gobierno de colaboración
+      url: collaboration-governance-overview.md
+    - text: Colaboración de archivos
+      url: https://docs.microsoft.com/en-us/sharepoint/deploy-file-collaboration?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Intranet inteligente
+      url: https://docs.microsoft.com/en-us/sharepoint/intranet-overview?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Guía de OneDrive para empresas
+      url: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+- title: Instrucciones de soluciones para la seguridad y el cumplimiento
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa
+      url: https://docs.microsoft.com/en-us/microsoft-365/security/top-security-tasks-for-remote-work?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide.md
+    - text: Seguridad de Microsoft 365 para los responsables de la toma de decisiones de la empresa (los BDM)
+      url: https://docs.microsoft.com/en-us/microsoft-365/security/microsoft-365-security-for-bdm?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Implementar la protección contra amenazas avanzada de Microsoft Defender
+      url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+  - linkListType: reference
+    links:
+    - text: 'ISO: plan de acción recomendado'
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/iso-action-plan?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 'NIST: plan de acción recomendado'
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/nist-action-plan?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 'CCPA: plan de acción recomendado'
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/ccpa-faq?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 'RGPD: plan de acción recomendado'
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+- title: Pautas específicas por sectores
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Seguridad y cumplimiento normativo para servicios financieros
+      url: financial-services-secure-collaboration.md
+    - text: Seguridad y cumplimiento normativo para los servicios de energía y utilidades
+      url: energy-secure-collaboration.md
+    - text: Teams para el cuidado de la salud
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Teams para el ámbito educativo
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Teams para la Administración Pública
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Dar soporte a trabajadores remotos de la Administración Pública con Teams
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
