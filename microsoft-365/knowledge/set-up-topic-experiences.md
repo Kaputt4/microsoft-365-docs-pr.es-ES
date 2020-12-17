@@ -11,16 +11,16 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo configurar experiencias de tema en Microsoft 365
-ms.openlocfilehash: cc157463c8c85f25ba232c344294ef3e0fabba23
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668012"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698560"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Configurar experiencias de tema en Microsoft 365
 
-Puede usar el centro de administración de Microsoft 365 para instalar y configurar las experiencias de los [temas](knowledge-management-overview.md). 
+Puede usar el centro de administración de Microsoft 365 para instalar y configurar las experiencias de los [temas](topic-experiences-overview.md). 
 
 Es importante planear la mejor forma de configurar y configurar temas en el entorno. Asegúrese de leer las [experiencias del tema del plan](plan-topic-experiences.md) antes de comenzar con los procedimientos de este artículo.
 
@@ -39,7 +39,7 @@ Para configurar experiencias de tema en Microsoft 365
 
     ![Introducción](../media/k-get-started.png) 
 
-4. En la página **elegir el modo en que la red de conocimiento puede buscar temas** , se configurará la detección de temas. En la sección **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Seleccione entre:
+4. En la página **elegir el modo en que la red de conocimiento puede buscar temas** , se configurará la detección de temas. En la sección **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Elija entre:
     - **Todos los sitios**: todos los sitios de SharePoint de la organización. Esto incluye los sitios actuales y futuros.
     - **Todos, excepto los sitios seleccionados**: escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios que desea excluir de la detección. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. 
     - **Solo sitios seleccionados**: escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios que se creen en el futuro no se incluirán como orígenes para la detección de temas.
@@ -144,4 +144,4 @@ Una vez que haya configurado las experiencias de los temas, puede cambiar la con
 
 ## <a name="see-also"></a>Vea también
 
-[Información general sobre la administración del conocimiento](knowledge-management-overview.md)
+[Información general sobre las experiencias de temas](topic-experiences-overview.md)

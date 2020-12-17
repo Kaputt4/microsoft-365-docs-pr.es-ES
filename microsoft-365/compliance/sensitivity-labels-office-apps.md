@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655432"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698423"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -39,20 +39,22 @@ Para usar las etiquetas de confidencialidad con estas ediciones independientes d
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con funcionalidades de etiqueta de confidencialidad en las aplicaciones
 
-Para cada funcionalidad, en las tablas siguientes se muestra la versión mínima de Office que necesita para que la aplicación admita etiquetas de confidencialidad mediante el uso de etiquetas integradas. O bien, si la capacidad de la etiqueta está en versión preliminar pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener detalles sobre versiones futuras.
+Para cada funcionalidad, en las tablas siguientes se muestra la versión mínima de Office que necesita para admitir las etiquetas de confidencialidad mediante el uso de etiquetas integradas. O bien, si la capacidad de la etiqueta está en versión preliminar pública o en revisión para una versión futura. Use el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener detalles sobre versiones futuras.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para obtener más información, incluido cómo configurar el canal de actualización para que pueda probar una nueva capacidad de etiquetado que le interese, vea [Overview of Update Channels for Microsoft 365 apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Las nuevas funciones que se encuentran en la versión preliminar privada no se incluyen en la tabla, pero es posible que pueda unirse a estas vistas previas nombrando a su organización para el [programa de vista previa de la información privada de Microsoft Information Protection](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > Los nombres de los canales de actualización para las aplicaciones de Office han cambiado recientemente. Por ejemplo, el canal mensual es ahora el canal actual y Office Insider es ahora el canal beta. Para obtener más información, consulte [cambios en los canales de actualización de las aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/update-channels-changes).
 
+Office para iOS y Office para Android: las etiquetas de confidencialidad están integradas en la [aplicación de Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+
 Hay disponibles capacidades adicionales al instalar el cliente de etiquetado Unificado de Azure Information Protection, que se ejecuta solo en equipos con Windows. Para obtener información detallada, consulte [Compare The Labeling clients for Windows Computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Capacidades de la etiqueta de confidencialidad en Word, Excel y PowerPoint
 
-Para iOS y Android: cuando se muestran las versiones mínimas, también se admite la capacidad de la etiqueta de confidencialción con la [aplicación de Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+Los números enumerados son la versión mínima de la aplicación de Office necesaria para cada funcionalidad.
 
-|Funcionalidad                                                                                                        |Escritorio de Windows |Escritorio de Mac |iOS    |Android      |Web                                                         |
+|Funcionalidad                                                                                                        |Windows |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Aplicar, cambiar o quitar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -74,7 +76,9 @@ Para iOS y Android: cuando se muestran las versiones mínimas, también se admit
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Capacidades de la etiqueta de confidencialidad en Outlook
 
-|Funcionalidad                                                                                                        |Outlook en el escritorio de Windows |Escritorio de Outlook en Mac  |Outlook en iOS |Outlook en Android |Outlook en la Web |
+Los números enumerados son la versión mínima de la aplicación de Office necesaria para cada funcionalidad.
+
+|Funcionalidad                                                                                                        |Outlook para Windows |Outlook para Mac |Outlook en iOS |Outlook en Android |Outlook en la Web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Aplicar, cambiar o quitar manualmente la etiqueta](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
 |[Aplicar una etiqueta predeterminada](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
@@ -159,8 +163,9 @@ Para obtener una experiencia de etiqueta más coherente con informes significati
     - **Confidencial \ todos los empleados**
     - **Confidencial \ cualquiera (sin cifrado)**
 
-> [!NOTE]
-> Si los usuarios quitan manualmente el cifrado de un documento con etiquetas que se almacena en SharePoint o OneDrive y se [habilitan las etiquetas de confidencialidad para los archivos de Office en SharePoint y onedrive](sensitivity-labels-sharepoint-onedrive-files.md), el cifrado de etiqueta se restaurará automáticamente la próxima vez que se acceda al documento o se descargue. 
+  > [!NOTE]
+  > Si los usuarios quitan manualmente el cifrado de un documento con etiquetas que se almacena en SharePoint o OneDrive y se [habilitan las etiquetas de confidencialidad para los archivos de Office en SharePoint y onedrive](sensitivity-labels-sharepoint-onedrive-files.md), el cifrado de etiqueta se restaurará automáticamente la próxima vez que se acceda al documento o se descargue. 
+
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Aplicar etiquetas de confidencialidad a archivos, mensajes de correo electrónico y datos adjuntos
 

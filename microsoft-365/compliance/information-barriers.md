@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 73a76e67fdb96f89dbd11daf4b2ef12f6590f92a
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613102"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701009"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Obtenga información sobre las barreras de la información en Microsoft 365
 
@@ -72,7 +72,7 @@ Las barreras de información se están implementando ahora y se incluyen en las 
 - Microsoft 365 cumplimiento E5/A5
 - Administración de riesgos de Insider de Microsoft 365
 
-Para obtener más información, consulte [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
+Para obtener más información, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 Para [definir o editar directivas de barrera de información](information-barriers-policies.md), debe tener asignado uno de los siguientes roles:
 
@@ -81,7 +81,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 - Administrador de cumplimiento
 - IB Compliance Management (este es un nuevo rol)
 
-(Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md)).
+(Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)).
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 

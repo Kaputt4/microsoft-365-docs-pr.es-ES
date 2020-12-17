@@ -1,5 +1,6 @@
 ---
-title: Recomendaciones de Microsoft para EOP y defender para la configuración de seguridad de Office 365, recomendaciones, marco de directivas de remitente, informes de mensajes basados en dominio y conformidad, correo identificado por DomainKeys, pasos, cómo funciona, Security Baselines, Baselines for EOP, Baselines for defender for Office 365, set up defender for Office 365, set up EOP, configure defender for Office 365, configurar EOP, configuración de seguridad
+title: Recomendaciones de Microsoft para EOP y defender para la configuración de seguridad de Office 365
+keywords: Office 365 recomendaciones de seguridad, marco de directivas de remitente, informes de mensajes basados en dominio y cumplimiento normativo, correo identificado por DomainKeys, pasos, cómo funciona, Security Baselines, Baselines for EOP, Baselines for defender for Office 365, set up defender for Office 365, set up EOP, configure defender for Office 365, configurar EOP, configuración de seguridad
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa defender para Office 365?
-ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615965"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698692"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft defender para Office 365 Security
 
@@ -122,7 +123,7 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
+|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Acción_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
 |**Filtro de tipos de datos adjuntos comunes** <p> _EnableFileFilter_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta opción pone en cuarentena los mensajes que contienen datos adjuntos ejecutables basados en el tipo de archivo, independientemente del contenido de datos adjuntos.|
 |**Purga automática de cero horas de malware** <p> _ZapEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |**Notificar a los remitentes internos** del mensaje no entregado <p> _EnableInternalSenderNotifications_|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`||
@@ -168,9 +169,9 @@ Para obtener más información acerca de estas opciones, vea [configuración de 
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|Usuarios protegidos: **Agregar usuarios para protegerlos** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Desactivado <p> `$false` <p> ninguno|Activado <p> `$true` <p> \<list of users\>|Activado <p> `$true` <p> \<list of users\>|Según la organización, se recomienda agregar usuarios (remitentes de mensajes) en los roles clave. Internamente, los remitentes protegidos podrían ser su CEO, CFO y otros líderes senior. Externamente, los remitentes protegidos podrían incluir miembros del Consejo o su Consejo de administración.|
+|Usuarios protegidos: **Agregar usuarios para protegerlos** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Desactivado <p> `$false` <p> none|Activado <p> `$true` <p> \<list of users\>|Activado <p> `$true` <p> \<list of users\>|Según la organización, se recomienda agregar usuarios (remitentes de mensajes) en los roles clave. Internamente, los remitentes protegidos podrían ser su CEO, CFO y otros líderes senior. Externamente, los remitentes protegidos podrían incluir miembros del Consejo o su Consejo de administración.|
 |Dominios protegidos: **incluir automáticamente los dominios de su propiedad** <p> _EnableOrganizationDomainsProtection_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
-|Dominios protegidos: **incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> ninguno|Activado <p> `$true` <p> \<list of domains\>|Activado <p> `$true` <p> \<list of domains\>|En función de la organización, se recomienda agregar dominios (dominios de remitente) que no son de su propiedad, pero con la que interactúan con frecuencia.|
+|Dominios protegidos: **incluir dominios personalizados** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Desactivado <p> `$false` <p> none|Activado <p> `$true` <p> \<list of domains\>|Activado <p> `$true` <p> \<list of domains\>|En función de la organización, se recomienda agregar dominios (dominios de remitente) que no son de su propiedad, pero con la que interactúan con frecuencia.|
 |Usuarios protegidos: **si un usuario suplantado envía un correo electrónico** <p> _TargetedUserProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |Dominios protegidos: **si un dominio suplantado envía un correo electrónico** <p> _TargetedDomainProtectionAction_|**No aplicar ninguna acción** <p> `NoAction`|**Poner en cuarentena el mensaje** <p> `Quarantine`|**Poner en cuarentena el mensaje** <p> `Quarantine`||
 |**Mostrar sugerencia para usuarios suplantados** <p> _EnableSimilarUsersSafetyTips_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
@@ -280,8 +281,8 @@ En PowerShell, se usan los cmdlets [New-SafeAttachmentPolicy](https://docs.micro
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Datos adjuntos seguros respuesta de malware desconocida** <p> _Action_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
-|**Redirigir datos adjuntos en detección** : **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y ninguna dirección de correo electrónico especificada. <p> `$true` <p> ninguno|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
+|**Datos adjuntos seguros respuesta de malware desconocida** <p> _Acción_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
+|**Redirigir datos adjuntos en detección** : **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y ninguna dirección de correo electrónico especificada. <p> `$true` <p> none|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|En y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplique la selección anterior si se produce un error de análisis de malware para archivos adjuntos o errores.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |
 

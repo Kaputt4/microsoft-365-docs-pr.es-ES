@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para permitir los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659909"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698704"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -97,6 +97,9 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
 ## <a name="use-outlook-safe-senders"></a>Usar remitentes seguros de Outlook
 
+> [!CAUTION]
+> Este método crea un alto riesgo de que los atacantes entreguen correo electrónico a la bandeja de entrada correctamente que, de lo contrario, se filtraría; sin embargo, las listas de remitentes seguros o de dominios seguros del usuario no impiden que se filtren los mensajes de suplantación de identidad de malware o de confianza alta.
+
 En lugar de una configuración de la organización, los usuarios o los administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros en el buzón. Para obtener instrucciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Esto no es aconsejable en la mayoría de las situaciones, ya que los remitentes omitirán las partes de la pila de filtrado. Aunque confíe en el remitente, el remitente todavía puede estar en peligro y enviar contenido malintencionado. Es mejor dejar que los filtros hagan lo que se necesita para comprobar todos los mensajes y, a continuación, [informar del falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) si nuestros filtros no se han realizado correctamente. Omitir la pila de filtrado también interfiere con [Zap](zero-hour-auto-purge.md).
 
 Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes seguros de un usuario, el campo de encabezado **X-Forefront-antispam-Report** contendrá el valor `SFV:SFE` , lo que indica que se omitirán los filtros de correo no deseado, suplantación de identidad (phishing).
@@ -114,7 +117,7 @@ Si no puede usar reglas de flujo de correo como se ha descrito anteriormente, la
 - Revise periódicamente las entradas de la lista de direcciones IP permitidas y quite las entradas que ya no necesite.
 
 > [!CAUTION]
-> Sin una comprobación adicional, como las reglas de flujo de correo, el correo electrónico de las fuentes de la lista de direcciones IP permitidas omite el filtrado de correo no deseado y las comprobaciones de autenticación de remitente (SPF, DKIM y DMARC). Esto crea un riesgo alto de que los atacantes entreguen correctamente el correo electrónico a la bandeja de entrada que, de lo contrario, se filtraría.
+> Sin una comprobación adicional, como las reglas de flujo de correo, el correo electrónico de las fuentes de la lista de direcciones IP permitidas omite el filtrado de correo no deseado y las comprobaciones de autenticación de remitente (SPF, DKIM y DMARC). Esto crea un riesgo alto de que los atacantes entreguen correo electrónico a la bandeja de entrada correctamente que, de lo contrario, se filtraría; sin embargo, la lista de direcciones IP permitidas no impide que se filtren los mensajes de suplantación de identidad (malware) o de confianza alta.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Usar listas de remitentes permitidos o listas de dominios permitidas
 
@@ -124,7 +127,7 @@ El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque s
 
 > [!CAUTION]
 >
-> - Este método crea un riesgo alto de que los atacantes entreguen correo electrónico a la bandeja de entrada que, de lo contrario, se filtraría.
+> - Este método crea un alto riesgo de que los atacantes entreguen correo electrónico a la bandeja de entrada correctamente que, de lo contrario, se filtraría; sin embargo, las listas de remitentes permitidos o de dominios permitidos no impiden que se filtre el malware o la mensajes de suplantación de identidad de confianza alta.
 >
 > - No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) en listas de dominios permitidos.
 

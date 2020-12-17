@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que puedan tener acceso varios usuarios. '
-ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445692"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698289"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
@@ -45,7 +45,7 @@ Cuando se convierte el buzón de un usuario en un buzón compartido, se conserva
  
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
-2. Seleccione **Recipients** \> **buzones**de destinatarios.
+2. Seleccione  \> **buzones** de destinatarios.
 
 3. Seleccione el buzón de usuario. En **convertir a buzón compartido**, seleccione **convertir**.
 
@@ -93,13 +93,17 @@ Supongamos que ha eliminado una cuenta de usuario y ahora desea convertir su buz
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertir el buzón de un usuario en un entorno híbrido
 
-Si este buzón compartido se encuentra en un entorno híbrido, se recomienda **encarecidamente** (casi necesario) que mueva el buzón de usuario de nuevo a local, convierta el buzón de correo del usuario en un buzón de correo compartido y, a continuación, vuelva a mover el buzón compartido a la nube. 
+> [!NOTE] 
+> A partir del 11 de octubre de 2018, la implementación híbrida de Exchange admite la creación de buzones compartidos remotos a partir de la actualización acumulativa 21 para Exchange Server 2013 y la actualización acumulativa 10 para Exchange Server 2016 en un entorno de Exchange Server local. Puede crear o modificar directamente un buzón compartido remoto mediante el parámetro New _-Shared_ . Para obtener más información, visite [cmdlets de para crear o modificar un buzón compartido remoto en un entorno de Exchange local](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange).
+
+Si este buzón compartido se encuentra en un entorno híbrido y no cae en el escenario anterior, recomendamos **encarecidamente** (casi requerimos) que mueva el buzón de usuario de nuevo a local, convierta el buzón de correo del usuario en un buzón de correo compartido y, a continuación, vuelva a mover el buzón compartido a la nube. 
 
 Este es el motivo: Si convierte el buzón de correo en la nube, se puede convertir, pero local todavía considera que el buzón de correo es el buzón del usuario, porque la nueva realidad no se sincroniza de nuevo en local.
 
 Normalmente esto no es un problema, pero hay algunos escenarios en los que los atributos locales (que consideran que el buzón de correo del usuario) pueden sobrescribir las nuevas versiones en la nube de esos atributos y, como resultado, el buzón de correo puede volver a convertirse. Se trata de un problema porque los buzones de usuario requieren licencias **o se eliminan de forma Soft transcurridos 30 días**.
 
 Hemos tratado la mayoría de los motivos por los que esto ocurre pero sigue teniendo lugar, aunque no con frecuencia. Es mejor estar seguro y volver a mover el buzón de correo a local, convertirlo y, a continuación, volver a mover el buzón compartido a la nube. Esta solución recomendada no infringe el contrato de licencia de entornos híbridos porque la existencia de buzón de usuario local es solo temporal. Infringirá su licencia si mantuvo el buzón de correo del usuario o el buzón compartido en su organización local y no lo devolvió a la nube.
+
 
 > [!NOTE]
 > Si es miembro del grupo de funciones administración de la organización o administración de destinatarios, puede usar el shell de administración de Exchange para cambiar el buzón de un usuario a un buzón compartido local. Por ejemplo, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.

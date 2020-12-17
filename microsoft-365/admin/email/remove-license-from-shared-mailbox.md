@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445500"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698308"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
@@ -45,6 +45,7 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 > 1. El buzón compartido tiene más de 50 GB de almacenamiento en uso.
 > 2. El buzón de correo compartido usa el archivado local.
 > 3. El buzón compartido se coloca en retención por juicio.
+> 4. El buzón de correo compartido tiene asignada una licencia de Microsoft defender.
 
   
 ## <a name="remove-the-license"></a>Quitar la licencia
@@ -79,7 +80,7 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 
@@ -98,13 +99,15 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 
 6. Todavía está pagando por la licencia. Para dejar de pagar por ella, [Quite la licencia de la suscripción](../../commerce/licenses/remove-licenses-from-subscription.md).
 
 ::: moniker-end 
+
+ 
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Microsoft 365.
-ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613507"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698680"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Directiva de nomenclatura de grupos de 365 de Microsoft
 
@@ -115,8 +115,6 @@ Algunos administradores están exentos de estas directivas, en todas las cargas 
 - Soporte técnico de nivel 2 del asociado
 
 - Administrador de cuentas de usuario
-
-- Escritores de directorios
 
 ## <a name="how-to-set-up-the-naming-policy"></a>Cómo configurar la Directiva de nomenclatura
 

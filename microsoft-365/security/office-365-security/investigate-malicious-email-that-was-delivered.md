@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/09/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616529"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698584"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Investigue el correo electrónico malintencionado que se entregó en Office 365
 
@@ -58,18 +58,21 @@ Para llevar a cabo determinadas acciones, como ver los encabezados de mensajes o
 |---|---|---|
 |Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas |Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
 |Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como para obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena|Administrador global <p> Administrador de seguridad <p> Lector de seguridad|No|
-|Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Preview|Sí|
+|Usar el explorador de amenazas para ver encabezados, vista previa de correo electrónico (solo en la página entidad de correo electrónico) y descargar mensajes de correo electrónico entregados en buzones|Administrador global <p> Administrador de seguridad <p> Lector de seguridad <p> Preview|Sí|
 |
 
 > [!NOTE]
-> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. La función de administrador global se asigna al centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ) y el administrador de seguridad y los roles de lector de seguridad se asignan en el centro de seguridad & cumplimiento ( <https://protection.office.com> ). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365 (at [https://protection.office.com](https://protection.office.com) ). Vaya a **permisos** y, a continuación, edite un grupo de roles existente o agregue un nuevo grupo de roles con la función de **vista previa** asignada.
+> La función de administrador global se asigna al centro de administración de Microsoft 365 ( <https://admin.microsoft.com> ) y el administrador de seguridad y los roles de lector de seguridad se asignan en el centro de seguridad & cumplimiento ( <https://protection.office.com> ). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+Sabemos que la vista previa y la descarga del correo electrónico son actividades confidenciales y, por lo tanto, la auditoría está habilitada para estos. Una vez que un administrador realiza estas actividades en los mensajes de correo electrónico, los registros de auditoría se generan para el mismo y pueden verse en el centro de seguridad & cumplimiento de Office 365 ( [https://protection.office.com](https://protection.office.com) ). Vaya a búsqueda de registro de auditoría de **búsqueda**  >   y filtre por el nombre de administrador en la sección de búsqueda. Los resultados filtrados mostrarán **AdminMailAccess** de actividades. Seleccione una fila para ver los detalles en la sección **más información** sobre el correo electrónico que se ha descargado o de la vista previa.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Buscar correo electrónico sospechoso entregado
 
 El explorador de amenazas es un informe eficaz que puede servir para varios propósitos, como buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una mayor investigación. El siguiente procedimiento se centra en usar el explorador para buscar y eliminar correo electrónico malintencionado de los buzones de los destinatarios.
 
 > [!NOTE]
-> Las búsquedas predeterminadas en el explorador no incluyen elementos zapped en este momento.  Esto se aplica a todas las vistas, por ejemplo, las vistas de malware o phish. Para incluir elementos de zapped, debe agregar una "acción de entrega" establecida en incluir "eliminado por ZAP". Si incluye todas las opciones, verá todos los resultados de las acciones de entrega, incluidos los elementos zapped.
+> Las búsquedas predeterminadas en el explorador no incluyen elementos zapped en este momento.  Esto se aplica a todas las vistas, por ejemplo, las vistas de malware o phish. Para incluir elementos de zapped, debe agregar un conjunto de **acciones de entrega** para incluir **quitado por el Zap**. Si incluye todas las opciones, verá todos los resultados de las acciones de entrega, incluidos los elementos zapped.
 
 1. **Vaya a Threat Explorer**: vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de seguridad & cumplimiento.
 
@@ -200,7 +203,7 @@ La **escala de tiempo de correo electrónico** es un campo en el explorador de a
 
 [Corregir el correo electrónico malintencionado entregado en Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Microsoft defender para Office 365](office-365-ti.md)
+[Microsoft Defender para Office 365](office-365-ti.md)
 
 [Protección contra amenazas en Office 365](protect-against-threats.md)
 

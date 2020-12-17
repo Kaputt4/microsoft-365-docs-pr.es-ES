@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo planear la seguridad y privacidad de los temas en Microsoft 365
-ms.openlocfilehash: 7b88e5bbc8158ebd7dea65b2ecbf77085651b439
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668253"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698502"
 ---
 # <a name="topic-experiences-security-and-privacy"></a>Tema experiencias de seguridad y privacidad
 
@@ -26,7 +26,7 @@ La configuración de la red de conocimiento no modifica los controles de acceso 
 
 En este artículo se describe cómo funciona la experiencia del tema desde el punto de vista de la seguridad y las opciones que los administradores de conocimientos y los administradores del conocimiento tienen para controlar la visibilidad de los temas. Lea este artículo como parte de la [planeación de experiencias en el tema](plan-topic-experiences.md).
 
-Debe estar familiarizado con las [experiencias](knowledge-management-overview.md)de temas, el [centro de temas](topic-center-overview.md)y la forma de [trabajar con temas en el centro de](work-with-topics.md) temas antes de leer este artículo.
+Debe estar familiarizado con las [experiencias](topic-experiences-overview.md)de temas, el [centro de temas](topic-center-overview.md)y la forma de [trabajar con temas en el centro de](manage-topics.md) temas antes de leer este artículo.
 
 ## <a name="what-users-can-see-in-topics"></a>Lo que los usuarios pueden ver en los temas
 

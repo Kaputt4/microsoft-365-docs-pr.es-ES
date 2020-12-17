@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la guía de inicio rápido del administrador de cumplimiento para ayudarle en el recorrido de la comprensión, la configuración y el uso del administrador de cumplimiento.
-ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071978"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698433"
 ---
 # <a name="compliance-manager-quickstart"></a>Inicio rápido del Administrador de cumplimiento
 
 **En este artículo:** Use esta guía de inicio rápido para ayudarle con el recorrido por el uso del administrador de cumplimiento de Microsoft para administrar el cumplimiento de la organización con respecto a las normativas, las directivas y los estándares.
 
-El administrador de cumplimiento proporciona datos inteligentes y que se requieren para la primera visita. El administrador de cumplimiento también tiene capacidades avanzadas para escalar su cumplimiento cuando esté listo. Todos los clientes pueden usar la [evaluación de línea base de protección de datos](compliance-manager-assessments.md#data-protection-baseline-default-assessment) para asegurarse de que está protegiendo los datos críticos. Con Microsoft 365 E5, puede usar más de 150 evaluaciones predefinidas para ayudarle a cumplir las regulaciones en la industria y la región, y usar evaluaciones personalizadas para ampliar el administrador de cumplimiento en todos sus activos.
+El administrador de cumplimiento proporciona datos inteligentes y que se requieren para la primera visita. El administrador de cumplimiento también tiene capacidades avanzadas para escalar su cumplimiento cuando esté listo. Las evaluaciones disponibles dependen del contrato de licencias; obtener [más información](https://go.microsoft.com/fwlink/?linkid=2132371).
 
 Si es la primera vez que se va a establecer el administrador de cumplimiento, o si está listo para usar algunas de las características avanzadas, esta guía le puede ayudar a través del recorrido.
 
