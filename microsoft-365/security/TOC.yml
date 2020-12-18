@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: Configurar la directiva contra phishing predeterminada en EOP
+                - name: Configuración de directivas contra phishing en EOP
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: Configurar un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md

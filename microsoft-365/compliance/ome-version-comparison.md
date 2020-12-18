@@ -17,27 +17,23 @@ search.appverid:
 - MET150
 description: En este artículo se explican las diferencias entre las distintas versiones de Office 365 cifrado de mensajes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f8052272cfa4951cae132f0f66b0d9f84e05b168
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754134"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709667"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
 En este artículo se compara el cifrado de mensajes de Office 365 heredado (OME) con las nuevas capacidades de OME y el cifrado avanzado de mensajes de Office 365. Las nuevas funciones son una fusión y una versión más reciente tanto de OME como de Information Rights Management (IRM). También se describen las características únicas de la implementación en GCC High. Los dos pueden coexistir en la organización. Para obtener información sobre cómo funcionan las nuevas funciones, vea [Office 365 Message Encryption (OME)](ome.md).
 
-||
-|:-----|
-|Este artículo forma parte de una amplia serie de artículos sobre el cifrado de mensajes de Office 365. Este artículo está destinado a los administradores y ITPros. Si solo está buscando información sobre cómo enviar o recibir un mensaje cifrado, vea la lista de artículos en el [cifrado de mensajes de Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades. |
-||
+Este artículo forma parte de una amplia serie de artículos sobre el cifrado de mensajes de Office 365. Este artículo está destinado a los administradores y ITPros. Si solo está buscando información sobre cómo enviar o recibir un mensaje cifrado, vea la lista de artículos en el [cifrado de mensajes de Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades.
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparación en paralelo de las características y capacidades
 
-|                                   |Características antiguas       |                   |Características nuevas              |
+|           **Situación**           | **OME heredado**    | **IRM**           | **Nuevas funciones de OME** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Función**                     | **OME heredado**    | **IRM**           | **Nuevas funciones de OME** |
 |*Enviar un correo cifrado*        |Mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde un equipo de escritorio de Outlook o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la web; a través de reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y prevención de pérdida de datos (DLP)|
 |*Plantilla de administración de derechos*       |   N/D      |No reenviar opciones y plantillas personalizadas|Opción no reenviar, Encrypt-Only opción y plantillas personalizadas|
 |*Tipo de destinatario*                   |Destinatarios internos y externos|Solo destinatarios internos         |Destinatarios internos y externos|

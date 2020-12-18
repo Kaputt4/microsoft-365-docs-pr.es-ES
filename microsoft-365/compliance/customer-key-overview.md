@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre cómo funciona el cifrado de servicios con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408988"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709532"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
-Microsoft 365 proporciona una línea base, cifrado de nivel de volumen habilitado a través de BitLocker y el administrador de claves distribuidas (DKM). Microsoft 365 ofrece una capa agregada de cifrado en el nivel de la aplicación para el contenido. Este contenido incluye datos de los archivos de Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y Microsoft Teams. Esta capa de cifrado agregada se denomina cifrado de servicio.
+Microsoft 365 proporciona una línea base, cifrado de nivel de volumen habilitado a través de BitLocker y el administrador de claves distribuidas (DKM). Microsoft 365 ofrece una capa agregada de cifrado en el nivel de aplicación para el contenido. Este contenido incluye datos de los archivos de Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y Microsoft Teams. Esta capa de cifrado agregada se denomina cifrado de servicio.
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Cómo funcionan juntos el cifrado de servicios, BitLocker y la clave de cliente
 
-El cifrado del servicio garantiza que el contenido en reposo se cifre en el nivel de la aplicación. **Los datos siempre se cifran en REST en el servicio de Microsoft 365 con BitLocker y DKM**. Para obtener más información, vea "información de seguridad, privacidad y cumplimiento", y [Cómo Exchange Online protege sus secretos de correo electrónico](exchange-online-secures-email-secrets.md). La clave de cliente proporciona protección adicional contra la visualización de datos por parte de sistemas o sistemas no autorizados y complementa el cifrado de disco de BitLocker en los centros de datos de Microsoft. El cifrado del servicio no pretende impedir que el personal de Microsoft tenga acceso a los datos de los clientes. El objetivo principal es ayudar a los clientes a cumplir las obligaciones regulatorias o de cumplimiento normativo para controlar las claves raíz. Los clientes autorizan explícitamente los servicios de O365 para usar sus claves de cifrado para proporcionar servicios en la nube de valor agregado, como la exhibición de documentos electrónicos, anti-malware, contra correo no deseado, la indización de búsqueda, etc.
+El cifrado de servicio garantiza que el contenido en reposo se cifre en la capa de servicio. **Los datos siempre se cifran en REST en el servicio de Microsoft 365 con BitLocker y DKM**. Para obtener más información, vea "información de seguridad, privacidad y cumplimiento", y [Cómo Exchange Online protege sus secretos de correo electrónico](exchange-online-secures-email-secrets.md). La clave de cliente proporciona protección adicional contra la visualización de datos por parte de sistemas o sistemas no autorizados y complementa el cifrado de disco de BitLocker en los centros de datos de Microsoft. El cifrado del servicio no pretende impedir que el personal de Microsoft tenga acceso a los datos de los clientes. El objetivo principal es ayudar a los clientes a cumplir las obligaciones regulatorias o de cumplimiento normativo para controlar las claves raíz. Los clientes autorizan explícitamente los servicios de O365 para usar sus claves de cifrado para proporcionar servicios en la nube de valor agregado, como la exhibición de documentos electrónicos, anti-malware, contra correo no deseado, la indización de búsqueda, etc.
 
 La clave de cliente se basa en el cifrado del servicio y le permite proporcionar y controlar las claves de cifrado. Microsoft 365 usa estas claves para cifrar los datos en reposo, tal y como se describe en los [términos de servicios en línea (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx). Customer Key le ayuda a cumplir con las obligaciones de cumplimiento, ya que controla las claves de cifrado que Microsoft 365 usa para cifrar y descifrar datos.
   

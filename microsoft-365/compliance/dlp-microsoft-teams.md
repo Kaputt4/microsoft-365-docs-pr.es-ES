@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604364"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709542"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -28,6 +28,9 @@ ms.locfileid: "49604364"
 > Las capacidades de prevención de pérdida de datos se han agregado recientemente a los mensajes de chat y de canal de Microsoft Teams para los usuarios con licencia para Office 365 E5/A5, Microsoft 365 E5/A5, protección de la información de Microsoft 365 y gobernanza o Office 365 Advanced Compliance. Office 365 y Microsoft 365 E3 incluyen la protección DLP para SharePoint Online, OneDrive y Exchange Online. Esto también incluye los archivos que se comparten a través de Teams, ya que Microsoft Teams usa SharePoint Online y OneDrive para compartir archivos.
 La compatibilidad con la protección DLP en el chat de Microsoft Teams requiere E5.
 Para obtener más información sobre los requisitos de licencias, consulte [Instrucciones de licencias de Microsoft 365 del nivel de espacio empresarial](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP para Teams solo se admite cuando el usuario tiene un buzón de correo en Exchange Online.
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Información general de DLP para Microsoft Teams
 
@@ -67,7 +70,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 1. Vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) e inicie sesión.
 
-2. Elija Directiva de **prevención de pérdida de datos**  >  **Policy**.
+2. Elija Directiva de **prevención de pérdida de datos**  >  .
 
 3. Seleccione una directiva y, junto a **configuración de directiva**, elija **Editar**.
 
@@ -87,7 +90,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 1. Vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) e inicie sesión.
 
-2. Elija Directiva de **prevención de pérdida de datos**  >  **Policy**.
+2. Elija Directiva de **prevención de pérdida de datos**  >  .
 
 3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams**, ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,7 +108,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 1. Vaya al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ) e inicie sesión.
 
-2. Elegir **Data loss prevention**  >  **Directiva**  >  **de prevención de pérdida de datos + crear una directiva**.
+2. Elegir   >  **Directiva**  >  **de prevención de pérdida de datos + crear una directiva**.
 
 3. Elija una [plantilla](data-loss-prevention-policies.md#dlp-policy-templates)y, a continuación, elija **siguiente**.<br/>En nuestro ejemplo, elegimos la plantilla de datos de información de identificación personal de Estados Unidos.<br/>![Plantilla de privacidad para la Directiva DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información sobre cómo los administradores globales de Office 365 pueden aplicar la personalización de marca de su organización a mensajes de correo electrónico cifrados & contenido del portal de cifrado.
-ms.openlocfilehash: 77fd5e08afa1a4d8ae5f6386fa65b88b6ea2be4d
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 56b948fc941da4fb221d929ecd59c5300b135e39
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663237"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709502"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Agregue la marca de su organización a los mensajes cifrados de cifrado de mensajes de Microsoft 365 para empresas
 
@@ -192,9 +192,8 @@ Los nombres de color que puede usar para el color de fondo son limitados. En lug
 
 En la tabla siguiente se describen los nombres de color de fondo disponibles y sus valores de código hexadecimal correspondientes.
 
-|||
-|---|---|
 |**Nombre del color**|**Código de color**|
+|---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|
 |`aqua`|#00ffff|

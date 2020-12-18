@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Con Office 365, el contenido está cifrado en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 0cd440549cd038ec9b5f69233e7faa18d9bcee1e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663015"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709574"
 ---
 # <a name="encryption"></a>Cifrado
 
@@ -89,6 +89,6 @@ Para obtener más información, consulte los siguientes recursos:
 
 [Planeación de las capacidades de protección de información y seguridad de Microsoft 365](plan-for-security-and-compliance.md)
 
-[Las diez formas principales de proteger los planes de Microsoft 365 para empresas](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[Las diez formas principales de proteger los planes de Microsoft 365 para empresas](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Flujo de reproducción y cifrado a nivel de vídeo de Microsoft Stream](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)
