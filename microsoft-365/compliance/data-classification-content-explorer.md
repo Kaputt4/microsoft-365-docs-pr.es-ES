@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379217"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701157"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -39,6 +39,9 @@ Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben
 - Office 365 (E5)
 - Complemento de cumplimiento avanzado (E5)
 - Complemento de inteligencia de amenazas avanzado (E5)
+- Gobernanza y protección de la información de Microsoft 365 E5/A5
+- Cumplimiento de Microsoft 365 E5/A5 
+
 
 ### <a name="permissions"></a>Permisos
 
@@ -98,7 +101,7 @@ Una [etiqueta de retención](retention.md) le permite definir durante cuánto ti
 
 ### <a name="how-to-use-content-explorer"></a>Cómo usar el explorador de contenido
 
-1. Abra **Centro de cumplimiento de Microsoft 365 **  > **de la clasificación de datos ** > **El explorador de contenido**.
+1. Abra **Centro de cumplimiento de Microsoft 365**  > **de la clasificación de datos** > **El explorador de contenido**.
 2. Si sabe el nombre de la etiqueta o el tipo de información confidencial, puede escribirlo en el cuadro de filtro.
 3. De forma alternativa, puede buscar el elemento expandiendo el tipo de etiqueta y seleccionando la etiqueta de la lista.
 4. Seleccione una ubicación en **todas las ubicaciones** y profundice en la estructura de carpetas hasta el elemento.
@@ -141,7 +144,7 @@ Puede buscar en:
 
 ## <a name="see-also"></a>Recursos adicionales
 
-- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
