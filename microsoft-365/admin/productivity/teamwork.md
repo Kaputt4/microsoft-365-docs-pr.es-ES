@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la puntuación de productividad de la experiencia de los usuarios de trabajo en equipo.
-ms.openlocfilehash: 2be98b904131e8ac7cd5f6215faf41fd69ee1837
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561548"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712560"
 ---
 # <a name="teamwork--people-experiences"></a>Trabajo en equipo: experiencias de personas
 
 La puntuación de productividad proporciona información sobre el recorrido de la transformación digital de la organización mediante el uso de Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones similares a la suya. La categoría trabajo en equipo forma parte de las medidas que caen en la experiencia de personas. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Para empezar a trabajar con el trabajo en equipo, las personas de su organización deben tener licencia para:
+
+- Microsoft Teams
+- SharePoint
+- Exchange Online
+
+Para obtener más información, vea [asignar licencias a usuarios](../manage/assign-licenses-to-users.md).
+
+Una vez que los usuarios hayan estado activos en los productos anteriores al menos una vez en los últimos 28 días, empezará a ver la información.
 
 ## <a name="why-your-orgs-teamwork-score-matters"></a>Por qué la calificación de trabajo en equipo de su organización es importante
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Microsoft defender para Office 365.
-ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683054"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709709"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -99,6 +99,8 @@ La siguiente configuración de suplantación de identidad está disponible en an
   > - La protección contra la suplantación de identidad (phishing) está habilitada de forma predeterminada en la Directiva antiphishing predeterminada y en las nuevas directivas de suplantación de identidad (phishing) personalizadas que cree.
   >
   > - No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, se habilita el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  >
+  > - La deshabilitación de la protección contra la suplantación de identidad solo deshabilita la protección implícita de imitación de las comprobaciones de [autenticación](email-validation-and-authentication.md#composite-authentication) . Si el remitente no supera las comprobaciones explícitas de [DMARC](use-dmarc-to-validate-email.md) en las que la Directiva está configurada en cuarentena o en rechazar, el mensaje sigue en cuarentena o se rechaza.
 
   Para los mensajes de los remitentes suplantados bloqueados, también puede especificar la acción que se llevará a cabo en los mensajes:
 

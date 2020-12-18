@@ -19,16 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de las reuniones-personas experimenta la puntuación de productividad.
-ms.openlocfilehash: b9dfd59643d38531d1eb4ff9fdc24fdc2a54f382
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 09b0682593c0e5a623e9b17712754c4bea2a6672
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561652"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712548"
 ---
 # <a name="meetings--people-experiences"></a>Reuniones: experiencias de personas
 
 La puntuación de productividad proporciona información sobre el recorrido de la transformación digital de la organización mediante el uso de Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones similares a la suya. La categoría reuniones forma parte de las medidas de la experiencia de los usuarios. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Para empezar a trabajar con reuniones, los usuarios de su organización deben tener licencia para:
+
+- Microsoft Teams
+
+Para obtener más información, vea [asignar licencias a usuarios](../manage/assign-licenses-to-users.md).
+
+Una vez que los usuarios han estado activos en Teams al menos una vez en los últimos 28 días, empezará a ver la información.
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>Por qué la puntuación de las reuniones de su organización es importante
 

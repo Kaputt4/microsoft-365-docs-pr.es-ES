@@ -19,16 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la movilidad: la calificación de productividad de personas.'
-ms.openlocfilehash: 04651cfee4ac2e67c4099c47bfe6d8c07b41ba83
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561582"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712572"
 ---
 # <a name="mobility--people-experiences"></a>Movilidad: experiencias de personas
 
 La puntuación de productividad proporciona información sobre el recorrido de la transformación digital de la organización mediante el uso de Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones similares a la suya. La categoría de movilidad forma parte de las medidas de la experiencia de los usuarios. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Para empezar a usar Mobility Insights, los usuarios de su organización deben tener licencia para:
+
+- Microsoft Teams
+- Exchange Online
+- Word
+- Excel
+- PowerPoint
+- OneNote
+
+Para obtener más información, vea [asignar licencias a usuarios](../manage/assign-licenses-to-users.md).
+
+Una vez que los usuarios hayan estado activos en los productos anteriores al menos una vez en los últimos 28 días, empezará a ver la información.
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>Por qué su organización&#39;la puntuación de movilidad de s en cuestión
 

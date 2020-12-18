@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la colaboración del contenido-los usuarios experimentan una puntuación de productividad.
-ms.openlocfilehash: 2637debe41cd32093c378a4665af6dc5185b0e5e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 62486511be7e085401e4a2934ce3742a15729e1f
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561664"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712596"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
 La puntuación de productividad proporciona información sobre el recorrido de la transformación digital de la organización mediante el uso de Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones similares a la suya. La categoría de colaboración de contenido forma parte de las medidas de las personas que experimenta. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Para empezar a usar información de colaboración de contenido, las personas de su organización deben tener una licencia para:
+
+- OneDrive para la Empresa
+- SharePoint
+- Exchange Online
+
+Para obtener más información, vea [asignar licencias a usuarios](../manage/assign-licenses-to-users.md).
+
+ Una vez que los usuarios hayan estado activos en los productos anteriores al menos una vez en los últimos 28 días, empezará a ver la información.
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Por qué la organización&#39;s puntuación de colaboración de contenido es importante
 

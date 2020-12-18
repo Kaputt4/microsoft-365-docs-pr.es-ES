@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: En este artículo, aprenderá a ampliar su presencia de Microsoft 365 a varias regiones geográficas con Microsoft 365 multigeográfico.
-ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580702"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712502"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -50,7 +50,7 @@ Estos son los términos clave utilizados para describir Microsoft 365 Multi-Geo:
 
 ## <a name="licensing"></a>Licencias
 
-Microsoft 365 Multi-Geo está disponible como complemento en los siguientes planes de suscripción de Microsoft 365 para los clientes de EA con un mínimo de 250 puestos de Microsoft 365 en su espacio empresarial y un mínimo del 5% de estos puestos con un entorno multigeográfico. Póngase en contacto con el equipo de su cuenta de Microsoft para obtener más información.
+Microsoft 365 multigeográfico está disponible como complemento para los siguientes planes de suscripción de Microsoft 365 para los clientes de contratos Enterprise con un mínimo de 250 plazas de Microsoft 365 en su espacio empresarial y un mínimo del 5% de los puestos con multigeográfico. Las licencias de suscripción de usuario deben estar en el mismo acuerdo empresarial que las licencias de servicios multigeográfico. Póngase en contacto con el equipo de su cuenta de Microsoft para obtener más información.
 
 - Microsoft 365 F1, F3, E3 o E5
 - Office 365 F3, E1, E3 o E5
@@ -70,7 +70,7 @@ Siga estos pasos para empezar a usar Multi-Geo:
 
 1. Trabaje con el equipo de cuentas para agregar el plan de servicio _Funciones multigeográficas en Microsoft 365_. Le guiará para agregar el número de licencias necesarias. La característica multigeográfica está disponible actualmente para los clientes EA con un mínimo de 250 suscripciones a Microsoft 365.
 
-   Antes de empezar a usar Microsoft 365 Multi-Geo, Microsoft necesita configurar el espacio empresarial de Exchange Online para la compatibilidad con Multi-Geo. Este proceso de configuración única se activa después de pedir el plan de servicio de las *Capacidades multigeográficas de Microsoft 365* y después de que las licencias se muestren en el espacio empresarial. Recibirá notificaciones específicas de carga de trabajo en el [centro de mensajes de Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) una vez que el inquilino haya completado el proceso de configuración para cada carga de trabajo y, a continuación, podrá empezar a configurar y usar las capacidades multigeográficas de Microsoft 365. El tiempo necesario para configurar un inquilino para la compatibilidad multigeográfica varía entre el inquilino y el inquilino, pero la mayoría de los inquilinos finalizan en un mes después de recibir las licencias de características. Los inquilinos más grandes o más complejos pueden requerir más tiempo para completar el proceso de configuración. Póngase en contacto con su equipo de cuentas para obtener detalles sobre su inquilino específico en caso de que lo necesite.
+   Antes de empezar a usar Microsoft 365 Multi-Geo, Microsoft necesita configurar el espacio empresarial de Exchange Online para la compatibilidad con Multi-Geo. Este proceso de configuración única se activa después de pedir el plan de servicio de las *Capacidades multigeográficas de Microsoft 365* y después de que las licencias se muestren en el espacio empresarial. Recibirá notificaciones específicas de la carga de trabajo en el [centro de mensajes de Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) una vez que el inquilino haya completado el proceso de configuración para cada carga de trabajo y, a continuación, podrá empezar a configurar y usar las capacidades multigeográficas de Microsoft 365. El tiempo necesario para configurar un inquilino para la compatibilidad multigeográfica varía entre el inquilino y el inquilino, pero la mayoría de los inquilinos finalizan en un mes después de recibir las licencias de características. Los inquilinos más grandes o más complejos pueden requerir más tiempo para completar el proceso de configuración. Póngase en contacto con su equipo de cuentas para obtener detalles sobre su inquilino específico en caso de que lo necesite.
 
 2. Lea [Planificar el entorno multigeográfico](plan-for-multi-geo.md).
 

@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Detalles de la puntuación de la experiencia comunicación-personas.
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585321"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712584"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
-La puntuación de productividad admite el trayecto a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las medidas de los usuarios y la experiencia tecnológica y se puede comparar con los benchmarks de organizaciones de tamaño similar a la suya. La categoría de comunicación forma parte de las medidas de la experiencia de los usuarios. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad admite el trayecto a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones la experiencia tecnológica y de los usuarios, y se puede comparar con los puntos de referencia de empresas de igual tamaño que la suya. La categoría de comunicación forma parte de las medidas de la experiencia de los usuarios. Para obtener más información, consulte la [información general sobre la puntuación de productividad](productivity-score.md) y lea la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Para empezar a trabajar con información de comunicación, los usuarios de la organización deben tener licencia para:
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+Para obtener más información, vea [asignar licencias a usuarios](../manage/assign-licenses-to-users.md).
+
+Una vez que los usuarios hayan estado activos en los productos anteriores al menos una vez en los últimos 28 días, empezará a ver la información.
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Por qué es importante la puntuación de comunicación de su organización 
 
