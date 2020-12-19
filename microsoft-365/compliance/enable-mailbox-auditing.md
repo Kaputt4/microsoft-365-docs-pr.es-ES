@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: El registro de auditoría de buzones de correo está activado de forma predeterminada en Microsoft 365 (también denominado auditoría de buzones de correo predeterminada o auditoría de buzones de correo de forma predeterminada). Esto significa que determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 8b199f2fe63f0304e705f32bab8191a966e63fce
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 3a65fcb3f7a908b8c63b3ba494d5ea74ffab4e5a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682554"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718513"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -121,6 +121,7 @@ En la tabla siguiente se describen las acciones de buzón de correo que están d
 |**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Un elemento etiquetado como registro se eliminó de forma Soft (se movió a la carpeta elementos recuperables). Los elementos etiquetados como registros no se pueden eliminar de forma permanente (se purgan de la carpeta elementos recuperables).|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Nota**: aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. Es decir, no use este valor.||||
+|**Send**|El usuario envía un mensaje de correo electrónico, responde a un mensaje de correo electrónico o reenvía un mensaje de correo electrónico. Este valor solo está disponible para los usuarios de la suscripción del complemento de cumplimiento E5 o E5. Para obtener más información, consulte [acceso a eventos vitales para las investigaciones](advanced-audit.md#access-to-crucial-events-for-investigations).|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|

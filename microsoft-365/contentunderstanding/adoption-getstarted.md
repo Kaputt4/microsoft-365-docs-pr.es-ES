@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087516"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717024"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adopción de Microsoft SharePoint Syntex: introducción
 
@@ -32,8 +32,8 @@ Con los nuevos servicios y capacidades de AI, puede crear aplicaciones de clasif
 |Entrada manual| Procesamiento de formularios | Descripción de los documentos |
 |:-------|:--------|:--------|
 | Entrada de datos y trabajo intensivo en cualquier contenido | Procesar contenido digital: fotos, análisis, recibos, tarjetas de presentación, vídeos con texto & OCR |  Capturar tipos de contenido y metadatos de contratos, currículos y otros documentos estructurados |
-| Interactive   | Predefinido y automatizado   | Personalizado y asistido   | Personalizado, compatible |
-| Personas que trabajan | Impartidos por sus expertos en la materia (SME). Capturar tipos de contenido y metadatos de contratos, currículos y otros documentos no estructurados. | Las PYME están menos involucradas. de pedidos de compra, aplicaciones, otros documentos semiestructurados y estructurados |
+| Interactive   | Predefinido y automatizado   | Personalizado y asistido  |
+| Personas que trabajan | Impartidos por sus expertos en la materia (SME). Capturar tipos de contenido y metadatos de contratos, currículos y otros documentos estructurados. | Las PYME están menos involucradas. de pedidos de compra, aplicaciones, otros documentos semiestructurados y estructurados |
 
 En la tabla siguiente se explican los elementos que se obtienen al usar SharePoint Syntex:
 

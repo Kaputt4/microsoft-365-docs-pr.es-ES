@@ -19,90 +19,87 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6fc1ff730994f03aa500ad9a4559b66970e32d87
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844841"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719409"
 ---
 # <a name="update-incidents-api"></a>Actualizar la API de incidentes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
-- Microsoft 365 defender
 
->[!IMPORTANT] 
->Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 365 Defender
 
+> [!IMPORTANT]
+> Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## <a name="api-description"></a>Descripción de la API
-Actualiza las propiedades de un incidente existente.
-<br>Las propiedades actualizables son: ```status``` ,, ```determination``` ```classification``` ```assignedTo``` y ```tags``` .
 
+Actualiza las propiedades de un incidente existente. Las propiedades actualizables son: ```status``` , ```determination``` , ```classification``` , ```assignedTo``` y ```tags``` .
 
-## <a name="limitations"></a>Limitaciones
-1. Las limitaciones de frecuencia de esta API son 50 llamadas por minuto y 1500 llamadas por hora.
-2. Puede establecer la ```determination``` sola si la clasificación se establece en TruePositive.
+### <a name="quotas-resource-allocation-and-other-constraints"></a>Cuotas, asignación de recursos y otras restricciones
 
+1. Puede realizar hasta 50 llamadas por minuto o 1500 llamadas por hora antes de alcanzar el umbral de limitación.
+2. Puede establecer la `determination` propiedad solo si `classification` está establecida en TruePositive.
+
+Si se limita la solicitud, se devolverá un `429` código de respuesta. El cuerpo de la respuesta indicará la hora en la que puede empezar a realizar nuevas llamadas.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [acceso a las API de Microsoft 365 defender](api-access.md).
 
-Tipo de permiso |   Permiso  |   Nombre para mostrar del permiso
-:---|:---|:---
-Aplicación |   Incident. ReadWrite. All |    ' Leer y escribir todos los incidentes '
-Delegado (cuenta profesional o educativa) | Incident. ReadWrite | ' Incidentes de lectura y escritura '
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
+-|-|-
+Aplicación | Incident. ReadWrite. All | Leer y escribir todos los incidentes
+Delegado (cuenta profesional o educativa) | Incident. ReadWrite | Leer y escribir incidentes
 
->[!NOTE]
-> Al obtener un token con credenciales de usuario:
->- El usuario debe tener permiso para actualizar el incidente en el portal.
-
+> [!NOTE]
+> Al obtener un token con credenciales de usuario, el usuario debe tener permiso para actualizar el incidente en el portal.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-```
+```HTTP
 PATCH /api/incidents/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 Nombre | Tipo | Descripción
-:---|:---|:---
+-|-|-
 Authorization | Cadena | {Token} de portador. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse.
-<br>Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. 
-<br>Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-Propiedad | Tipo | Description
-:---|:---|:---
-status | Enum | Especifica el estado actual de la alerta. Los valores posibles son ```Active``` : ```Resolved``` y ```Redirected``` .
-assignedTo | string | Propietario del incidente.
+En el cuerpo de la solicitud, proporcione los valores de los campos que se deben actualizar. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud conservarán sus valores, a menos que se deban volver a calcular debido a cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
+
+Propiedad | Tipo | Descripción
+-|-|-
+status | Enum | Especifica el estado actual de la alerta. Los valores posibles son: ```Active``` , ```Resolved``` y ```Redirected``` .
+assignedTo | cadena | Propietario del incidente.
 classification | Enum | Especificación de la alerta. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
 cálculo | Enum | Especifica la determinación de la alerta. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | Lista de cadenas | Lista de etiquetas de incidente.
 
-
-
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve 200 OK y la entidad Incident en el cuerpo de la respuesta con las propiedades actualizadas. Si no se ha encontrado el incidente con el identificador especificado-404 no se encuentra.
 
+Si se ejecuta correctamente, este método devuelve `200 OK` . El cuerpo de la respuesta contendrá la entidad incidente con propiedades actualizadas. Si no se ha encontrado un incidente con el identificador especificado, el método devuelve `404 Not Found` .
 
 ## <a name="example"></a>Ejemplo
 
 **Solicitud**
 
-Aquí tiene un ejemplo de la solicitud.
+Este es un ejemplo de la solicitud.
 
-```
+```HTTP
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
+
+**Respuesta**
 
 ```json
 {
@@ -114,7 +111,11 @@ Aquí tiene un ejemplo de la solicitud.
 }
 ```
 
+## <a name="related-articles"></a>Artículos relacionados
 
-## <a name="related-topic"></a>Tema relacionado
+- [Acceso a las API de Microsoft 365 defender](api-access.md)
+- [Obtenga información sobre los límites de API y las licencias](api-terms.md)
+- [Descripción de los códigos de error](api-error-codes.md)
 - [API de incidentes](api-incident.md)
 - [Lista de Incidentes](api-list-incidents.md)
+- [Información general sobre incidentes](incidents-overview.md)

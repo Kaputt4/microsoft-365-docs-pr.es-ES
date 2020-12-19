@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: comprenda las acciones de fases de migración y los efectos de cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de administración de información en alemán.'
-ms.openlocfilehash: 4a032ab88704cfb46b3f451d939a784d222cbb40
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688634"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719397"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Acciones y impacto de las fases de migración para la migración de Microsoft Cloud Alemania (general)
 
@@ -83,7 +83,7 @@ Consideraciones adicionales:
 
 | Pasos (s) | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| Migración de Skype empresarial a Microsoft Teams. | Los clientes existentes de Skype empresarial se migran a los servicios de Office 365 en Europa y, a continuación, se pasan a Microsoft Teams en la región de Alemania de los servicios de Office 365. | Clientes de Skype empresarial | -Los usuarios no podrán iniciar sesión en Skype empresarial en la fecha de migración. Diez días antes de la migración, notificaremos a los usuarios finales a través de la banda en el cliente de Skype empresarial que se van a actualizar a Microsoft Teams. También publicaremos en el centro de administración que estos cambios ocurrirán después de los 10 días. <br><br> -Se migra la configuración de la Directiva. <br><br> -Los usuarios se migrarán a teams y ya no tendrán Skype empresarial después de la migración. <br><br> -Los usuarios deben tener instalado el cliente de escritorio de Microsoft Teams. La instalación se llevará a cabo durante los diez días a través de la Directiva de la infraestructura de Skype empresarial, pero si se produce un error, los usuarios aún tendrán que descargar el cliente o conectarse con un explorador compatible. <br><br> -Los contactos y las reuniones se migrarán a teams. <br><br> -Los usuarios no podrán iniciar sesión en Skype empresarial entre las transiciones del servicio de tiempo a los servicios de Office 365 y no hasta que se completen las entradas de DNS del cliente. <br><br> -Los contactos y las reuniones existentes seguirán funcionando como reuniones de Skype empresarial. |
+| Migración de Skype empresarial a Microsoft Teams. | Los clientes existentes de Skype empresarial se migran a los servicios de Office 365 en Europa y, a continuación, se pasan a Microsoft Teams en la región de Alemania de los servicios de Office 365. | Clientes de Skype empresarial | -Los usuarios no podrán iniciar sesión en Skype empresarial en la fecha de migración. Diez días antes de la migración, publicaremos en el centro de administración para informarle sobre cuándo tendrá lugar la migración y Cuándo comenzará la migración. <br><br> -Se migra la configuración de la Directiva. <br><br> -Los usuarios se migrarán a teams y ya no tendrán Skype empresarial después de la migración. <br><br> -Los usuarios deben tener instalado el cliente de escritorio de Microsoft Teams. La instalación se llevará a cabo durante los diez días a través de la Directiva de la infraestructura de Skype empresarial, pero si se produce un error, los usuarios aún tendrán que descargar el cliente o conectarse con un explorador compatible. <br><br> -Los contactos y las reuniones se migrarán a teams. <br><br> -Los usuarios no podrán iniciar sesión en Skype empresarial entre las transiciones del servicio de tiempo a los servicios de Office 365 y no hasta que se completen las entradas de DNS del cliente. <br><br> -Los contactos y las reuniones existentes seguirán funcionando como reuniones de Skype empresarial. |
 |||||
 
 ## <a name="office-services"></a>Servicios de Office

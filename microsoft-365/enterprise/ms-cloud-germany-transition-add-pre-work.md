@@ -3,7 +3,7 @@ title: Trabajo previo para la migración desde la nube de Microsoft Alemania
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 12/18/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: trabajo previo al cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de administración de servicios (alemanes).'
-ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688460"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717036"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Trabajo previo para la migración desde la nube de Microsoft Alemania
 
@@ -115,6 +115,7 @@ Si está usando un servicio de terceros o aplicaciones de línea de negocio (LOB
 
 | Pasos (s) | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
+| Agregar un identificador para el inicio de sesión único (SSO) a una relación de confianza para usuario autenticado existente y deshabilitar las actualizaciones automáticas de metadatos de AD FS. | Debe agregarse un identificador a la relación de confianza para usuario autenticado de AD FS antes de iniciar la migración. Para evitar la eliminación accidental del identificador del usuario de confianza, deshabilite la actualización automática para las actualizaciones de metadatos. <br><br> Ejecute este comando en el servidor de AD FS: <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | Organizaciones de autenticación federada | Acción necesaria. La inacción dará como resultado un impacto en el servicio durante la migración.  |
 | Generar la relación de confianza para usuario autenticado para los puntos de conexión globales de Azure AD. | Los clientes deben crear manualmente una relación de confianza para usuario autenticado (RPT) en los extremos [globales](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) . Para ello, se agrega un nuevo RPT mediante GUI aprovechando la dirección URL de metadatos de Federación global y, a continuación, se usan [las reglas de notificación de Azure ad RPT](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (en la ayuda de AD FS) para generar las reglas de notificación e importarlas en la RPT. | Organizaciones de autenticación federada | Acción necesaria. La inacción dará como resultado un impacto en el servicio durante la migración. |
 |||||
 

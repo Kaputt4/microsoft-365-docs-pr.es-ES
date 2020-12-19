@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624771"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719207"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones de correo entre espacios empresariales (versión preliminar)
 
@@ -99,20 +99,20 @@ Prepare el inquilino de origen:
 
     | Parámetro | Valor | Obligatorio u opcional
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | Dominio de inquilino de origen, como fabrikam.onmicrosoft.com. | Necesario |
-    | -ResourceTenantAdminEmail                   | Dirección de correo electrónico del administrador del inquilino de origen. Este es el administrador de inquilinos de origen que contratará el uso de la aplicación de migración de buzones de correo enviada desde el administrador de destino. Este es el administrador que recibirá la invitación por correo electrónico para la aplicación. | Necesario |
-    | -TargetTenantDomain                         | Dominio de inquilino de destino, como contoso.onmicrosoft.com. | Necesario |
-    | -ResourceTenantId                           | IDENTIFICADOR de la organización del espacio empresarial de origen (GUID). | Necesario |
-    | -SubscriptionId                             | La suscripción de Azure que se va a usar para crear recursos. | Necesario |
-    | -ResourceGroup                              | Nombre del grupo de recursos de Azure que contiene o contendrá el almacén de claves. | Necesario |
-    | -KeyVaultName                               | Instancia de Azure Key Vault que almacenará el secreto o certificado de la aplicación de migración de buzones. | Necesario |
-    | -CertificateName                            | Nombre del certificado al generar o buscar un certificado en el almacén de claves. | Necesario |
-    | -CertificateSubject                         | Nombre del firmante del certificado de Azure Key Vault, como CN = contoso_fabrikam. | Necesario |
-    | -ExistingApplicationId                      | Aplicación de migración de correo para usar si ya se creó una. | Optional |
-    | -AzureAppPermissions                        | Los permisos que se deben dar a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones de correo, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al espacio empresarial de recursos). | Necesario |
-    | -UseAppAndCertGeneratedForSendingInvitation | Parámetro de uso de la aplicación creada para la migración que se va a usar para enviar la invitación del vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se le pedirá a las credenciales del administrador de destino que se conecten al administrador de invitaciones de Azure y que envíen la invitación como administrador de destino. | Optional |
-    | -KeyVaultAuditStorageAccountName            | La cuenta de almacenamiento en la que se almacenarán los registros de auditoría del almacén clave. | Optional |
-    | -KeyVaultAuditStorageResourceGroup          | El grupo de recursos que contiene la cuenta de almacenamiento para almacenar los registros de auditoría de bóveda clave. | Optional |
+    | -TargetTenantDomain                         | Dominio de inquilino de destino, como contoso \. onmicrosoft.com. | Obligatorio |
+    | -ResourceTenantDomain                       | Dominio de inquilino de origen, como Fabrikam \. onmicrosoft.com. | Obligatorio |
+    | -ResourceTenantAdminEmail                   | Dirección de correo electrónico del administrador del inquilino de origen. Este es el administrador de inquilinos de origen que contratará el uso de la aplicación de migración de buzones de correo enviada desde el administrador de destino. Este es el administrador que recibirá la invitación por correo electrónico para la aplicación. | Obligatorio |
+    | -ResourceTenantId                           | IDENTIFICADOR de la organización del espacio empresarial de origen (GUID). | Obligatorio |
+    | -SubscriptionId                             | La suscripción de Azure que se va a usar para crear recursos. | Obligatorio |
+    | -ResourceGroup                              | Nombre del grupo de recursos de Azure que contiene o contendrá el almacén de claves. | Obligatorio |
+    | -KeyVaultName                               | Instancia de Azure Key Vault que almacenará el secreto o certificado de la aplicación de migración de buzones. | Obligatorio |
+    | -CertificateName                            | Nombre del certificado al generar o buscar un certificado en el almacén de claves. | Obligatorio |
+    | -CertificateSubject                         | Nombre del firmante del certificado de Azure Key Vault, como CN = contoso_fabrikam. | Obligatorio |
+    | -ExistingApplicationId                      | Aplicación de migración de correo para usar si ya se creó una. | Opcional |
+    | -AzureAppPermissions                        | Los permisos que se deben dar a la aplicación de migración de buzones de correo, como Exchange o MSGraph (Exchange para mover buzones de correo, MSGraph para usar esta aplicación para enviar una invitación de vínculo de consentimiento al espacio empresarial de recursos). | Obligatorio |
+    | -UseAppAndCertGeneratedForSendingInvitation | Parámetro de uso de la aplicación creada para la migración que se va a usar para enviar la invitación del vínculo de consentimiento al administrador del espacio empresarial de origen. Si no está presente, se le pedirá a las credenciales del administrador de destino que se conecten al administrador de invitaciones de Azure y que envíen la invitación como administrador de destino. | Opcional |
+    | -KeyVaultAuditStorageAccountName            | La cuenta de almacenamiento en la que se almacenarán los registros de auditoría del almacén clave. | Opcional |
+    | -KeyVaultAuditStorageResourceGroup          | El grupo de recursos que contiene la cuenta de almacenamiento para almacenar los registros de auditoría de bóveda clave. | Opcional |
     ||||
 
     >[!Note]
@@ -187,10 +187,10 @@ Se ha completado la configuración de administración de destino.
     | Parámetro | Valor |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | Grupo de seguridad habilitado para correo electrónico creado por el inquilino de origen para las identidades y los buzones que están en el ámbito de la migración. |
-    | -ResourceTenantDomain | Nombre de dominio del inquilino de origen, como fabrikam.onmicrosoft.com. |
-    | -TargetTenantDomain | Nombre de dominio del inquilino de destino, como contoso.onmicrosoft.com. |
+    | -ResourceTenantDomain | Nombre de dominio del inquilino de origen, como Fabrikam \. onmicrosoft.com. |
     | -ApplicationId | IDENTIFICADOR de la aplicación de Azure (GUID) de la aplicación usada para la migración. IDENTIFICADOR de la aplicación disponible a través de Azure portal (Azure AD, aplicaciones empresariales, nombre de la aplicación, identificador de la aplicación) o incluido en el correo electrónico de invitación.  |
-    | -TargetTenantId | IDENTIFICADOR de inquilino del inquilino de destino. Por ejemplo, el identificador de inquilino de Azure AD del inquilino contoso.onmicrosoft.com. |
+    | -TargetTenantDomain | Nombre de dominio del inquilino de destino, como contoso \. onmicrosoft.com. |
+    | -TargetTenantId | IDENTIFICADOR de inquilino del inquilino de destino. Por ejemplo, el identificador de inquilino de Azure AD de Contoso \. onmicrosoft.com tenant. |
     |||
 
     Aquí le mostramos un ejemplo.
@@ -284,6 +284,7 @@ Los usuarios que migren deben estar presentes en el inquilino de destino y en el
 Debe asegurarse de que los siguientes objetos y atributos se establecen en la organización de destino.  
 
 1. Para los buzones que se mueven de una organización de origen, debe aprovisionar un objeto MailUser en la organización de destino: 
+
    - El MailUser de destino debe tener estos atributos del buzón de origen o asignarse con el nuevo objeto de usuario:
       - ExchangeGUID (flujo directo desde el origen hasta el destino): el GUID del buzón debe coincidir. El proceso de traslado no continuará si no está presente en el objeto de destino. 
       - ArchiveGUID (flujo directo desde el origen hasta el destino): el GUID de archivo debe coincidir. El proceso de traslado no continuará si no está presente en el objeto de destino. (Solo es necesario si el buzón de origen está habilitado para el archivo). 
@@ -293,40 +294,40 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
       - TargetAddress/ExternalEmailAddress – MailUser hará referencia al buzón actual del usuario hospedado en el inquilino de origen (por ejemplo, user@contoso.onmicrosoft.com). Al asignar este valor, compruebe que también está asignando PrimarySMTPAddress o que este valor establecerá PrimarySMTPAddress, lo que provocará errores de movimiento. 
       - No puede agregar direcciones proxy SMTP heredadas desde el buzón de origen al usuario MailUser. Por ejemplo, no puede mantener contoso.com en la unidad MEU en los objetos de inquilino de fabrikam.onmicrosoft.com). Los dominios están asociados solo a un inquilino de Azure AD o Exchange Online.
  
-    Ejemplo de objeto de MailUser de **destino** :
+     Ejemplo de objeto de MailUser de **destino** :
  
-    | Atributo             | Valor                                                                                                                    |
-    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | Alias                 | LaraN                                                                                                                    |
-    | RecipientType         | MailUser                                                                                                                 |
-    | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
-    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = First Organization/ou = grupo administrativo de Exchange                                                                   |
-    |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | EmailAddresses        | x500:/o = primera organización o unidad organizativa = grupo administrativo de Exchange (FYDIBOHF23SPDLT)/CN = destinatarios/CN = d11ec1a2cacd4f81858c8190  |
-    |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
-    |||
+     | Atributo             | Valor                                                                                                                    |
+     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                                                                    |
+     | RecipientType         | MailUser                                                                                                                 |
+     | RecipientTypeDetails  | MailUser                                                                                                                 |
+     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou = grupo administrativo de Exchange                                                                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = 74e5385fce4b46d19006876949855035Lara                                                  |
+     | EmailAddresses        | x500:/o = primera organización o unidad organizativa = grupo administrativo de Exchange (FYDIBOHF23SPDLT)/CN = destinatarios/CN = d11ec1a2cacd4f81858c8190  |
+     |                       | 7273f1f9-Lara                                                                                                            |
+     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |||
 
-   Ejemplo de objeto de buzón de **origen** :
+     Ejemplo de objeto de buzón de **origen** :
 
-   | Atributo             | Valor                                                                    |
-   |-----------------------|--------------------------------------------------------------------------|
-   | Alias                 | LaraN                                                                    |
-   | RecipientType         | UserMailbox                                                              |
-   | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = First Organization/ou = grupo administrativo de Exchange                   |
-   |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
-   |                       | SMTP:Lara.Newton@contoso.com          |
-   |||
+     | Atributo             | Valor                                                                    |
+     |-----------------------|--------------------------------------------------------------------------|
+     | Alias                 | LaraN                                                                    |
+     | RecipientType         | UserMailbox                                                              |
+     | RecipientTypeDetails  | UserMailbox                                                              |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou = grupo administrativo de Exchange                   |
+     |                       | (FYDIBOHF23SPDLT)/CN = Recipients/CN = d11ec1a2cacd4f81858c81907273f1f9Lara  |
+     | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+     |                       | SMTP:Lara.Newton@contoso.com          |
+     |||
 
    - Es posible que ya se incluyan atributos adicionales en Exchange Hybrid Writer back. Si no es así, se deben incluir. 
    - msExchBlockedSendersHash – escribe datos de remitentes seguros y bloqueados en línea de los clientes en una implementación local de Active Directory.
@@ -350,7 +351,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
     > [!Note]
     > Cuando se aplica una licencia en un objeto Mailbox o MailUser, todos los tipos de SMTP proxyAddresses se borran para garantizar que solo los dominios comprobados se incluyen en la matriz de EmailAddresses de Exchange. 
 
-5. Debe asegurarse de que el MailUser de destino no tiene un ExchangeGuid anterior que no coincide con el ExchangeGuid de origen. Esto puede ocurrir si la MEU de destino fue previamente autorizada para Exchange Online y ha aprovisionado un buzón de correo. Si el MailUser de destino ha sido previamente autorizado para o tenía un ExchangeGuid que no coincide con el ExchangeGuid de origen, debe realizar una limpieza de la unidad MEU de la nube. Para estos MEU en la nube, puede ejecutar el `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` comando.  
+5. Debe asegurarse de que el MailUser de destino no tiene un ExchangeGuid anterior que no coincide con el ExchangeGuid de origen. Esto puede ocurrir si la MEU de destino fue previamente autorizada para Exchange Online y ha aprovisionado un buzón de correo. Si el MailUser de destino ha sido previamente autorizado para o tenía un ExchangeGuid que no coincide con el ExchangeGuid de origen, debe realizar una limpieza de la unidad MEU de la nube. Para estos MEU en la nube, puede ejecutar `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` .  
 
     > [!Caution]
     > Este proceso es irreversible. Si el objeto tiene un buzón de softDeleted, no se podrá restaurar después de este punto. Sin embargo, una vez desactivada, puede sincronizar el ExchangeGuid correcto con el objeto de destino y MRS conectará el buzón de origen al buzón de destino recién creado. (Consulte el blog de EHLO de referencia en el nuevo parámetro).  
@@ -413,7 +414,7 @@ El envío por lotes de migración también se admite desde el nuevo centro de ad
 
 Una vez que el buzón de correo se mueve del origen al destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualizan con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del traslado?**
 
@@ -508,7 +509,7 @@ Los movimientos de buzones de correo de Exchange con MRS diseñan el targetAddre
 
 Los permisos de buzón incluyen enviar en nombre de y acceso al buzón: 
 
-- Enviar en nombre de (AD: publicDelegates) almacena el DN de los destinatarios con acceso al buzón de un usuario como delegado. Este valor se almacena en Active Directory y actualmente no se mueve como parte de la transición del buzón de correo. Si el buzón de origen tiene un grupo publicDelegates, deberá volver a estampar publicDelegates en el buzón de destino una vez que la conversión de la unidad MEU a la del buzón de correo se complete en el entorno de destino con el `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` comando. 
+- Enviar en nombre de (AD: publicDelegates) almacena el DN de los destinatarios con acceso al buzón de un usuario como delegado. Este valor se almacena en Active Directory y actualmente no se mueve como parte de la transición del buzón de correo. Si el buzón de origen tiene publicDelegates, deberá volver a sellar el publicDelegates en el buzón de destino una vez que la conversión de la unidad MEU a la del buzón de correo se complete en el entorno de destino al ejecutar `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` . 
  
 - Los permisos de buzón que se almacenan en el buzón se moverán con el buzón cuando la entidad de destino y el delegado se muevan al sistema de destino. Por ejemplo, al usuario TestUser_7 se le concede FullAccess al buzón TestUser_8 en el inquilino SourceCompany.onmicrosoft.com. Una vez que el movimiento del buzón se haya completado a TargetCompany.onmicrosoft.com, se configuran los mismos permisos en el directorio de destino. A continuación, se muestran ejemplos que usan *Get-MailboxPermission* para TestUser_7 en los inquilinos de origen y de destino. Los cmdlets de Exchange llevan el prefijo de origen y destino en consecuencia. 
  
@@ -656,7 +657,7 @@ Recuerde que esta característica se encuentra actualmente en versión prelimina
 
    - Cuando msExchRemoteRecipientType se establece en 8 (DeprovisionMailbox), para la MailUsers local que se migra al espacio empresarial de destino, la lógica de limpieza de proxy en Azure quitará los dominios no propietarios y restablecerá el primarySMTP en un dominio propietario. Al borrar msExchRemoteRecipientType en el MailUser local, la lógica de limpieza de proxy ya no se aplica. <br/><br>A continuación se muestra el conjunto completo de los planes de servicio posibles que incluyen Exchange Online.
 
-   | Nombre                                              |
+   | Name                                              |
    |---------------------------------------------------|
    | Almacenamiento avanzado de eDiscovery (500 GB)               |
    | Caja de seguridad del cliente                                  |
