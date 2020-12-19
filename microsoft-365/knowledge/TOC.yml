@@ -1,32 +1,44 @@
-- name: Introducción a la administración de conocimiento
+- name: Empieza con experiencias temáticas
   items:
-    - name: Información general sobre la administración del conocimiento
-      href: knowledge-management-overview.md
-    - name: Información general sobre el centro de temas
-      href: topic-center-overview.md
-    - name: Trabajar con temas en el centro de temas
-      href: work-with-topics.md
-    - name: Conceder a los usuarios permisos para el centro de temas
-      href: give-user-permissions-to-the-topic-center.md
+    - name: Introducción a las experiencias temáticas
+      href: index.md
+    - name: Información general de las experiencias temáticas
+      href: topic-experiences-overview.md
+    - name: Descubrir experiencias temáticas y conservar
+      href: topic-experiences-discovery-curation.md
+    - name: Roles de las experiencias temáticas
+      href: topic-experiences-roles.md
     - name: Preparar el entorno
       href: topic-experiences-get-ready.md
 - name: Configuración y administración
   items:
-    - name: Seguridad del tema
+    - name: Seguridad por tema
       href: topic-experiences-security-privacy.md
-    - name: Planeación de experiencias de temas
+    - name: Plan de las experiencias temáticas
       href: plan-topic-experiences.md
-    - name: Configurar experiencias de tema
+    - name: Configurar las experiencias temáticas
       href: set-up-topic-experiences.md
-    - name: Administrar la detección de temas
+    - name: Administrar el descubrimiento por temas
       href: topic-experiences-discovery.md
-    - name: Administrar la visibilidad del tema
+    - name: Administrar la visibilidad por temas
       href: topic-experiences-knowledge-rules.md
-    - name: Administrar los permisos de temas
+    - name: Administrar los permisos por temas
       href: topic-experiences-user-permissions.md
     - name: Cambiar el nombre del centro de temas
       href: topic-experiences-administration.md
+- name: Trabajar con temas
+  items:
+    - name: Información general del Centro de temas
+      href: topic-center-overview.md
+    - name: Administrar temas en el Centro de temas
+      href: manage-topics.md
+    - name: Cree un equipo nuevo
+      href: create-a-topic.md
+    - name: Editar un tema.
+      href: edit-a-topic.md
+    - name: Reducción de seguridad
+      href: topic-experiences-security-trimming.md
 - name: Adopción
   items:
-    - name: Empezar a impulsar la adopción
+    - name: Introducción a la adopción guiada
       href: topics-adoption-getstarted.md
