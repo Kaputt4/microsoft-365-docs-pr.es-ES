@@ -12,12 +12,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9709bec9b6e59ef05903f9c04909c796eb4127f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683466"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698536"
 ---
 # <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Empezar a impulsar la adopción de experiencias en temas (versión preliminar)
 
@@ -33,7 +33,7 @@ Antes de empezar con la adopción, debe comprender los conceptos relacionados co
 - **Identificación**: con Microsoft Graph y el conocimiento y las personas de inteligencia artificial (AI) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint se indiza con contenido de seguridad.
 - **Extensión**: con los conectores de contenido de Microsoft Graph (próximamente), puede ingestar el conocimiento de los servicios externos y de los repositorios de datos.
 
-Para obtener más información, puede revisar la [información general](knowledge-management-overview.md) de una introducción.
+Para obtener más información, puede revisar la [información general](topic-experiences-overview.md) de una introducción.
 
 Tenga en cuenta que:
 
@@ -107,7 +107,7 @@ Elija un par de escenarios clave para centrarse en principio, trabajar con los p
 
 Identifique a las partes interesadas del proyecto. Las funciones clave son el Patrocinador Ejecutivo, el propietario del éxito y los expertos.
 
-|Función |Responsibilities |Department |
+|Role |Responsibilities |Department |
 |:-------|:-------|:--------|
 | Patrocinadores ejecutivos   | Comunicar la visión y los valores de alto nivel a la empresa   |  Liderazgo ejecutivo   |
 | Jefes de proyecto | Supervisar todo el proceso de ejecución e implementación de inicio | Administración de proyectos |
@@ -158,7 +158,7 @@ Ahora que ya está listo para implementarlo, desea asegurarse de que está fomen
 - Hospede periódicamente eventos adicionales para compartir artículos o introducir nuevas características.
 - Establecer desafíos para las personas y ejecutar convocatorias.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Cuando esté listo para implementar las experiencias de los temas, necesitará obtener personas involucradas.
 

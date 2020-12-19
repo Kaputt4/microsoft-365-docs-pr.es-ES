@@ -4,81 +4,80 @@ description: Obtenga información sobre el centro de temas.
 author: efrene
 ms.author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: ea0e3ba186956e35a7c7b619b1cd032726f7952f
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988835"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698640"
 ---
 # <a name="topic-center-overview-preview"></a>Información general sobre el centro de temas (vista previa)
 
 > [!Note] 
 > El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
-El centro del tema es un sitio de SharePoint moderno que sirve como centro de conocimientos para su organización. Se crea durante la [configuración de administración del conocimiento](set-up-topic-experiences.md) en el centro de administración de Microsoft 365.
+El centro del tema es un sitio de SharePoint moderno que sirve como centro de conocimientos para su organización. Se crea durante el [tema configuración de experiencias](set-up-topic-experiences.md) en el centro de administración de Microsoft 365.
 
-El centro del tema tiene una página principal predeterminada en la que puede ver los temas a los que se ha conectado o que se recomienda que estén conectados. Los usuarios con los permisos adecuados también pueden:
+El centro de temas tiene una página principal predeterminada (mis temas) donde todos los usuarios de la experiencia del tema pueden ver los temas con los que tienen una conexión. 
 
-- Crear una nueva página del tema
-- Confirmar o rechazar temas sugeridos
-- Editar y publicar cambios en una página de tema
+Aunque todos los usuarios con licencia que puedan ver temas tendrán acceso al centro de temas, los administradores de información también podrán administrar los temas a través de la página **administrar temas** . La ficha administrar temas solo se mostrará a los usuarios que tengan los permisos **administrar temas** . 
 
-> [!Note] 
-> Puede obtener más información sobre cada tarea en [trabajar con temas en el centro de temas](work-with-topics.md).
+## <a name="where-is-my-topic-center"></a>¿Dónde está mi centro de temas?
 
-## <a name="where-is-the-topic-center"></a>Donde es el centro del tema
+El centro de temas se crea durante la configuración de la experiencia del tema. Una vez finalizada la instalación, un administrador puede encontrar la dirección URL en la [Página de administración del centro de temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
 
-El centro de temas se crea durante la configuración de administración del conocimiento. Una vez finalizada la instalación, un administrador puede encontrar la dirección URL en la [Página de administración del centro de información](topic-experiences-discovery.md).
 
-1. En el centro de administración de Microsoft 365, seleccione **configuración** en el panel de navegación y, en la sección **información** de la organización, seleccione **conectar personas con el conocimiento**.
+1. En el centro de administración de Microsoft 365, haga clic en **configuración** y, a continuación, en configuración de la **organización**.
+2. En la pestaña **servicios** , haga clic en **red de conocimiento**.
 
-   ![Conectar a personas con el conocimiento](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
+    ![Conectar a personas con el conocimiento](../media/admin-org-knowledge-options-completed.png) </br>
 
-2. En la página **conectar personas a los conocimientos** , en la sección **de un vistazo** , vea **dirección del centro de temas** para la dirección URL del sitio.
+3. Seleccione la pestaña **centro de temas** . En **dirección del sitio** es un vínculo a su centro de temas.
+
+    ![información: configuración de la red](../media/knowledge-network-settings-topic-center.png) </br>
+
+
 
 ## <a name="home-page"></a>Página principal
 
-Para ver el centro de temas, necesita tener permisos para ver los temas y el tema experiencias. El administrador puede asignar estos permisos a los usuarios durante la [configuración de administración del conocimiento](set-up-topic-experiences.md), o el administrador puede [agregar posteriormente](give-user-permissions-to-the-topic-center.md) nuevos usuarios a través del centro de administración de Microsoft 365.
+En la Página principal del centro de temas, puede ver los temas de su organización a los que tiene una conexión.
 
-En la Página principal 
-- **Ver temas** : ver experiencias de temas. Por lo tanto, puede ver los temas de la organización y proporcionar comentarios sobre los temas a los que se ha conectado:
-1. Conexiones sugeridas: son temas en los que se ha sugerido mi conexión
-2. Conexiones confirmadas: Estos son los temas donde estoy anclado al tema o he confirmado que los temas de conexión se desplazarán de la sección sugerido a confirmado cuando confirmo una conexión sugerida.
-Una vez que esté anclado, las modificaciones realizadas en la página del tema pueden realizarse para Curate mi conexión.
+- Conexiones sugeridas: verá temas que se sugieren en la sección **que hemos enumerado en estos temas. ¿Lo hemos hecho bien?**. Estos son temas en los que se ha sugerido la conexión al tema a través de AI. Por ejemplo, puede ser el propietario de un archivo o sitio relacionado. En los temas sugeridos se le pedirá que confirme la conexión al tema.
 
-- **Crear y editar temas** : el tema nuevo está disponible y puede editar páginas
+   ![Conexiones sugeridas](../media/knowledge-management/my-topics.png) </br>
+ 
+- Conexiones confirmadas: Estos son los temas en los que se ancla el tema por otro usuario o se le ha confirmado la conexión al tema. Los temas se desplazarán de la sección sugerida a confirmada al confirmar una conexión sugerida.
+ 
+   ![Temas confirmados](../media/knowledge-management/my-topics-confirmed.png) </br>
+
+Una vez que un usuario confirma su conexión a un tema, el usuario puede realizar modificaciones en la página del tema para Curate su conexión. Por ejemplo, pueden proporcionar más información sobre su conexión al tema.
 
 
-## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>Permisos para usar el centro de temas de capacidad administrar temas
+## <a name="manage-topics-page"></a>Página administrar temas
 
-Para trabajar en la sección administrar temas del centro de temas, necesita tener los permisos necesarios. El administrador puede asignar estos permisos a los usuarios durante la [configuración de administración del conocimiento](set-up-topic-experiences.md), o el administrador puede [agregar posteriormente](give-user-permissions-to-the-topic-center.md) nuevos usuarios a través del centro de administración de Microsoft 365.
+Para trabajar en la sección **administrar temas** del centro de temas, debe disponer de los permisos necesarios para *administrar temas* necesarios para el rol de administrador del conocimiento. El administrador puede asignar estos permisos a los usuarios durante la [configuración de administración del conocimiento](set-up-topic-experiences.md), o el administrador puede [agregar posteriormente](topic-experiences-knowledge-rules.md) nuevos usuarios a través del centro de administración de Microsoft 365.
 
-Los usuarios del centro de temas pueden recibir dos conjuntos de permisos:
-
-- **Administración de temas** : Use el panel de temas para revisar los temas de la organización. Los usuarios pueden realizar acciones como confirmar y rechazar los temas no confirmados.
-
-Un usuario puede tener configurados ambos conjuntos de permisos o solo uno si es necesario. 
-
-## <a name="reviewing-topics-in-the-topic-dashboard"></a>Revisar temas en el panel de temas
-
-En el panel del tema se muestran los temas que se han extraído de las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se detectó el tema y si se ha proporcionado algún comentario. Un usuario al que se haya asignado el permiso **administrar temas** puede revisar los temas no confirmados y elegir:
+En la página Administrar temas, el panel del tema muestra los temas que se identificaron desde las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se detectó el tema y si se ha proporcionado algún comentario. Un usuario al que se haya asignado el permiso **administrar temas** puede revisar los temas no confirmados y elegir:
 - Confirmar el tema: resalta el tema a los usuarios que tienen acceso y les permite ver la ficha de temas y la página de temas asociados.
-- Rechace el tema: hace que el tema no esté disponible para los usuarios. El tema se mueve a la pestaña **rechazado** y se puede confirmar más adelante, si es necesario.
+- Rechace el tema: hace que el tema no esté disponible para los usuarios. El tema se mueve a la pestaña **rechazado** y se puede confirmar más adelante si es necesario. un administrador de información puede guiarle 
+
+> [!Note] 
+> Consulte [administrar temas](manage-topics.md) para obtener más información acerca del tema Administración de temas en la página Administrar temas.
+
 
 ## <a name="create-or-edit-a-topic"></a>Crear o editar un tema
 
-Si tiene los permisos **crear y editar temas** , puede elegir entre:
+Si tiene los permisos **crear y editar temas** , podrá:
 
-- Editar temas existentes: puede realizar cambios en las páginas de temas existentes creadas mediante detección.
-- Crear nuevos temas: puede crear temas nuevos para los que no se han encontrado a través de la detección o si las herramientas de AI no encontraron suficientes pruebas para crear un tema.
+- [Editar temas existentes](edit-a-topic.md): puede realizar cambios en las páginas de temas existentes creadas mediante detección.
+- [Crear nuevos temas](create-a-topic.md): puede crear temas nuevos para los que no se han encontrado a través de la detección o si las herramientas de AI no encontraron suficientes pruebas para crear un tema.
 
 
 
