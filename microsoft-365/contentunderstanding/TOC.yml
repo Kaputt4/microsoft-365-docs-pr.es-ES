@@ -1,4 +1,4 @@
-- name: Obtenga información sobre Microsoft SharePoint Syntex
+- name: Más información sobre Microsoft SharePoint Syntex
   items:
     - name: "Introducción a SharePoint\_Syntex"
       href: index.md
@@ -8,9 +8,9 @@
       href: form-processing-overview.md
     - name: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
       href: difference-between-document-understanding-and-form-processing-model.md
-- name: Introducción a los modelos
+- name: Empezar a usar los modelos
   items:
-    - name: Obtenga información sobre los modelos en el modelo de ejemplo
+    - name: Obtenga información sobre los modelos mediante el modelo de ejemplo
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: Crear un centro de contenido
       href: create-a-content-center.md
@@ -44,7 +44,7 @@
       href: import-term-set-skos.md
     - name: Referencia de formato SKOS
       href: skos-format-reference.md
-    - name: Insertar tipo de contenido en el concentrador
+    - name: Insertar tipos de contenido en un centro
       href: push-content-type-to-hub.md
     - name: Informes del almacén de términos
       href: term-store-analytics.md
