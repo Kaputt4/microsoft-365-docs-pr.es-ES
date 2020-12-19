@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: 59f57c920f2b753994f2335a6f2ed9ac5b7b77d1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 2a1ec47ce888dc6d31868d65f9c4c113fa9b968c
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613092"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709512"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -59,7 +59,7 @@ Para aplicar acciones de protección flexibles entre las que se incluyen el cifr
 
 |Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|---------------------|:----------------------------|
-|[Etiquetas de confidencialidad](sensitivity-labels.md)| Una solución única para todas aplicaciones, servicios y dispositivos con el fin de etiquetar y proteger los datos cuando se transfieren dentro y fuera de la organización. <br /><br />Situación de ejemplo: [Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se exportan](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Empezar a usar las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) |
+|[Etiquetas de confidencialidad](sensitivity-labels.md)| Una solución única para todas aplicaciones, servicios y dispositivos con el fin de etiquetar y proteger los datos cuando se transfieren dentro y fuera de la organización. <br /><br />Escenario de ejemplo: [Aplicar y ver las etiquetas en Power BI y proteger los datos cuando se exportan](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[Empezar a usar las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) |
 |[Cliente de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| En el caso de los equipos con Windows, amplía las etiquetas de confidencialidad a otras características y funciones que incluyen etiquetar y proteger todos los tipos de archivos, desde el explorador de archivos a PowerShell<br /><br /> Ejemplo de características adicionales: [Configuración personalizada para el cliente de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guía del administrador para cliente de etiquetado unificado de Azure Information Protection ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Cifrado de doble clave](double-key-encryption.md)| Bajo cualquier circunstancia, solo usted podrá descifrar el contenido protegido, si bien, para requisitos normativos, puede que deba mantener las claves de cifrado en un límite geográfico | [Implementar el cifrado de doble clave](double-key-encryption.md#deploy-dke)|
 |[Cifrado de mensajes de Office 365 (OME)](ome.md)| Cifra los mensajes de correo electrónico y los documentos adjuntos que se envían a cualquier usuario en cualquier dispositivo, de modo que solo los destinatarios autorizados puedan leer la información de correo electrónico  <br /><br />Escenario de ejemplo: [Revocar el correo electrónico cifrado mediante el Cifrado de mensajes avanzado](revoke-ome-encrypted-mail.md) | [Configurar las nuevas capacidades de cifrado de mensajes](set-up-new-message-encryption-capabilities.md)|
