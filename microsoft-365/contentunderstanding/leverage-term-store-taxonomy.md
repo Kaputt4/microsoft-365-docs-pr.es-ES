@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: Saque el máximo partido de la taxonomía al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: a8078e6ff2d2ecd0f98c22b602a54675f7d62816
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701100"
+ms.locfileid: "49709553"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor
 
@@ -25,7 +25,7 @@ ms.locfileid: "49701100"
 
 </br>
 
-Cuando se crea un extractor en el modelo de comprensión de documentos en SharePoint Syntex, puede aprovechar la taxonomía del almacén de términos de los [Servicios de metadatos administrados](https://docs.microsoft.com/sharepoint/managed-metadata#terms) para mostrar los términos preferidos para los datos que extraerá.  
+Cuando se crea un extractor en el modelo de comprensión de documentos en SharePoint Syntex, puede aprovechar los conjuntos de términos globales en el [almacén de términos](https://docs.microsoft.com/sharepoint/managed-metadata) para mostrar los términos preferidos para los datos que extraiga.  
 
 Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato** cargados en la biblioteca de documentos.  Además, el modelo también extrae un valor de **Servicio de contrato** de cada contrato, y lo mostrará en una columna de la vista de la biblioteca. Entre los distintos valores de Servicios de contrato en los contratos, hay varios valores anteriores que la empresa ya no usa y a los que se les ha cambiado el nombre. Por ejemplo, todas las referencias a los términos de los servicios de contratos *Diseño*, *Gráficos* o *Topografía* ahora deberían llamarse *Creativo*. Siempre que el modelo extrae uno de los términos desactualizado de un documento de contrato, quiere que muestre el término actual, "Creativo", en la vista de la biblioteca. En el ejemplo siguiente, al entrenar el modelo, observamos que un documento de muestra contiene el término desactualizado de *Diseño*.
 
@@ -36,9 +36,6 @@ Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato
 Los conjuntos de términos están configurados en el almacén de términos de los servicios de metadatos administrados (MMS) en el Centro de Administración de SharePoint. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) se configura para incluir un número de términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
 
    ![Conjunto de términos](../media/content-understanding/term-store.png)</br>
-
-> [!NOTE]
->  Los conjuntos de términos son configurados como globales en el campo MMS del centro de contenido.
 
 Puede haber varios motivos por los que quiera usar un sinónimo en el conjunto de términos. Por ejemplo, es posible que haya términos no actualizados, términos con nombre cambiado o variaciones en la denominación entre los departamentos de su organización.
 
