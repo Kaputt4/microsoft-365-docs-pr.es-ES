@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: e2833d966fb8a1fcc15cbeb02b781d9c0325b9c1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519381"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709677"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -178,7 +178,7 @@ Cuando se publican las etiquetas de retención, se incluyen en una directiva de 
 
 - También puede incluirse una sola ubicación en numerosas directivas de etiquetas de retención.
 
-Además de las directivas de etiquetas de retención, también puede crear una o varias directivas de aplicación automática, cada una con una sola etiqueta de retención. Con esta directiva, se aplica una etiqueta de retención automáticamente cuando se cumplan las condiciones especificadas en la directiva. 
+Además de las directivas de etiquetas de retención, también puede crear una o varias directivas de aplicación automática, cada una con una sola etiqueta de retención. Con esta directiva, se aplica una etiqueta de retención automáticamente cuando se cumplan las condiciones especificadas en la directiva.
 
 #### <a name="retention-label-policies-and-locations"></a>Ubicaciones y directivas de etiquetas de retención
 
@@ -249,7 +249,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Configuración de retención que puede conservar y, después, eliminar, solo conservar o solo eliminar. |Sí |Sí |
 |Cargas de trabajo compatibles: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Grupos de Microsoft 365 <br />- Skype Empresarial <br />- Teams<br />- Yammer|<br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí <br /> Sí | <br /> Sí, excepto carpetas públicas <br /> Sí <br /> Sí <br /> Sí <br /> No <br /> No <br /> No |
 |Retención aplicada automáticamente | Sí | Sí |
-|La retención aplicada se basa en las condiciones <br /> : tipos de información confidencial, consultas KQL y clasificadores que se pueden entrenar| No | Sí |
+|La retención aplicada se basa en las condiciones <br /> - tipos de información confidencial, consultas KQL y palabras clave, clasificadores de aprendizaje| No | Sí |
 |Retención aplicada manualmente | No | Sí |
 |Presencia de interfaz de usuario para usuarios finales | No | Sí |
 |Se mantiene si el contenido se mueve | No | Sí, dentro de su espacio empresarial de Microsoft 365 |
@@ -270,28 +270,86 @@ Para obtener más información acerca de cómo funcionan las directivas de reten
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene precedencia
 
-Es posible o incluso probable que el contenido tenga varias etiquetas y directivas de retención aplicadas, cada una con una acción (conservar, eliminar o conservar y, después, eliminar) y un período de retención diferentes. ¿Qué tiene prioridad? 
+A diferencia de las etiquetas de retención, puede aplicar más de una directiva de retención al mismo contenido. Cada directiva de retención puede resultar en una acción de retención y una acción de eliminación. Además, ese elemento también podría estar sujeto a estas acciones desde una etiqueta de retención.
 
-A grandes rasgos, la retención siempre tiene prioridad sobre la eliminación y después tiene prioridad el período de retención más largo. 
+En este escenario, cuando los elementos pueden estar sujetos a la configuración de retención múltiple que pueden entrar en conflicto entre sí, ¿qué es lo que tiene prioridad para determinar el resultado?
 
-Sin embargo, hay algunos factores más a tener en cuenta. El siguiente flujo le ayudará a entender el resultado; cada nivel actúa como un separador de nivel superior a inferior: si el resultado está determinado por el primer nivel, no es necesario pasar al nivel siguiente y así sucesivamente. El flujo se desplaza al siguiente nivel para determinar el resultado para el que la configuración de retención tiene prioridad solo si las reglas del nivel anterior no pueden determinar el resultado.
+El resultado no es qué directiva de retención única o etiqueta de retención gana, sino cuánto tiempo se conserva un elemento (si corresponde) y cuándo se elimina un elemento (si corresponde). Estas dos acciones se calculan de forma independiente entre sí, a partir de todas las configuraciones de retención aplicadas a un elemento.
+
+Por ejemplo, un elemento se puede sujetar a una directiva de retención configurada para una acción de solo eliminación y otra directiva de retención configurada para conservar y, después, eliminar. Para determinar el resultado, este elemento tiene solo una acción de retener, pero dos acciones de eliminación. La retención y eliminación pueden estar en conflicto entre sí y las dos acciones de eliminación podrían tener una fecha en conflicto.
+
+A grandes rasgos, la retención siempre tiene prioridad sobre la eliminación y después tiene prioridad el período de retención más largo. Estas dos reglas sencillas siempre deciden durante cuánto tiempo se conservará un elemento.
+
+Hay otros factores que determinan cuándo se eliminará un elemento, que incluyen que la acción de eliminación de una etiqueta de retención siempre tiene prioridad sobre la acción de eliminación de una directiva de retención.
+
+Use el siguiente flujo para comprender los resultados de la retención y eliminación de un solo elemento, donde cada nivel actúa como un disyuntor de arriba a abajo.
+
+> [!IMPORTANT]
+> Si usa etiquetas de retención: antes de usar este flujo para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
 
 ![Diagrama de los principios de retención](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Explicación de los cuatro niveles diferentes:
   
-1. **La retención gana a la eliminación.** Suponga que una directiva de retención está configurada para eliminar el correo electrónico de Exchange después de tres años, pero otra directiva de retención está configurada para que se conserve el correo electrónico de Exchange durante cinco años y después se elimine. Todo el contenido que llegue a tres años de antigüedad se eliminará y quedará oculto de la vista de los usuarios, pero se mantendrá en la carpeta elementos recuperables hasta que llegue a la antigüedad de cinco años, cuando se elimine de forma permanente. 
+1. **La retención gana a la eliminación.** El contenido no se eliminará permanentemente cuando también tenga configuraciones de retención para conservarlo.  
+    
+    Ejemplo: un mensaje de correo electrónico está sujeto a una directiva de retención para Exchange que está configurada para eliminar elementos después de tres años y también tiene una etiqueta de retención aplicada que está configurada para conservar los elementos durante cinco años.
+    
+    El mensaje de correo electrónico se conserva durante cinco años, ya que esta acción de retención tiene prioridad sobre la eliminación. El mensaje de correo electrónico se elimina al final de los cinco años debido a la acción de eliminación diferida.
+
 2. **El período de retención más largo gana**. Si el contenido está sujeto a varias configuraciones de retención que conservan contenido durante distintos períodos de tiempo, el contenido se conservará hasta el final del período de retención más largo.
     
-3. **La inclusión explícita gana a la inclusión implícita**. Esto significa que: 
+    Ejemplo: los documentos del sitio de SharePoint de marketing están sujetos a dos directivas de retención. La primera directiva de retención está configurada para que todos los sitios de SharePoint conserven los elementos durante cinco años. La segunda directiva de retención está configurada para que ciertos sitios de SharePoint conserven los elementos durante diez años.
     
-    1. Si un usuario asigna manualmente una etiqueta de retención con configuración de retención a un elemento, como un correo electrónico de Exchange o un documento de OneDrive, esa etiqueta de retención tiene prioridad sobre una directiva de retención asignada en el nivel de sitio o buzón y una etiqueta de retención predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta de retención explícita está configurada para conservar el contenido durante diez años, pero una directiva de retención asignada al sitio está configurada para que la conservación sea de solo cinco años, la etiqueta de retención tendrá prioridad.
-    
-    2. Si una directiva de retención incluye una ubicación específica, como el buzón de un usuario específico o una cuenta de OneDrive, esa directiva de retención tiene prioridad sobre otra directiva de retención que se aplica a los buzones de todos los usuarios o a las cuentas de OneDrive pero que no incluye específicamente el buzón de ese usuario.
-    
-4. **El período de eliminación más corto gana.** De forma similar, si el contenido está sujeto a varias configuraciones de retención que eliminan contenido sin un período de retención, se eliminará el contenido al final del período de retención más corto. 
+    Los documentos de este sitio de SharePoint de marketing se conservan durante diez años, ya que este es el período de retención más largo.
 
-Por último, una directiva o etiqueta de retención no puede eliminar permanentemente ningún contenido que esté en espera para eDiscovery. Cuando se libera la retención, el contenido vuelve a ser apto para el proceso de limpieza descrito anteriormente.
+3. **Lo explícito sobre lo implícito.** Se aplica para determinar cuándo se eliminarán los elementos: 
+    
+    1. Una etiqueta de retención (sin importar cómo se haya aplicado) ofrece una retención explícita en comparación con las directivas de retención, ya que la configuración de retención se aplica a un elemento individual en lugar de asignarse implícitamente desde un contenedor. Esto significa que una acción de eliminación de una etiqueta de retención siempre tiene prioridad sobre una acción de eliminación de cualquier directiva de retención.
+        
+        Ejemplo: un documento está sujeto a dos directivas de retención que tienen una acción de eliminación de cinco años y diez años respectivamente, y también una etiqueta de retención con una acción de eliminación de siete años.
+        
+        El documento se elimina después de siete años porque la acción de eliminación de la etiqueta de retención tiene prioridad.
+    
+    2. Cuando tenga solo directivas de retención: si una directiva de retención para una ubicación tiene como ámbito el utilizar una configuración de inclusión (como usuarios específicos para el correo electrónico de Exchange), esa directiva de retención tiene prioridad sobre las directivas de retención sin ámbito para la misma ubicación.
+        
+        Una directiva de retención sin ámbito es el lugar donde se selecciona una ubicación sin especificar instancias específicas. Por ejemplo, el **correo electrónico de Exchange** y la configuración predeterminada de **todos los destinatarios** es una directiva de retención sin ámbito. O bien, los **sitios de SharePoint** y la configuración predeterminada de **todos los sitios**. Cuando las directivas de retención tienen ámbito establecido, tienen la misma prioridad en este nivel.
+        
+        Ejemplo 1: un mensaje de correo electrónico está sujeto a dos directivas de retención. La primera directiva de retención no tiene ámbito y elimina los elementos después de diez años. La segunda directiva de retención tiene como ámbito buzones específicos y elimina los elementos después de cinco años.
+        
+        El mensaje de correo electrónico se elimina después de cinco años porque la acción de eliminación de la directiva de retención con ámbito tiene prioridad sobre la directiva de retención sin ámbito.
+        
+        Ejemplo 2: un documento en la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
+        
+        En este nivel, no se puede determinar cuándo se eliminará este documento porque ambas directivas de retención tienen un ámbito.
+
+4. **El período de eliminación más corto gana.** Se aplica para determinar cuándo se eliminarán los elementos de las directivas de retención y el resultado no se pudo resolver desde el nivel anterior: el contenido se elimina al final del período de retención más corto.
+    
+    Ejemplo: un documento en la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
+    
+    Este documento se eliminará después de siete años ya que este es el período de retención más corto para el ámbito de estas dos directivas de retención.
+
+Tenga en cuenta que los elementos sujetos a la retención de eDiscovery también se incluyen en el primer principio de retención; no se pueden eliminar mediante ninguna directiva de retención o etiqueta de retención. Cuando se suspende esa retención, los principios de retención continúan aplicándose a ellos. Por ejemplo, podrían estar sujetas a un período de retención vigente o una acción de eliminación diferida.
+
+Ejemplos más complejos que combinan acciones de retención y eliminación:
+
+1. Se aplicó la siguiente configuración de retención a un elemento:
+    
+    - Una directiva de retención que elimina después de cinco años
+    - Una directiva de retención para conservar durante tres años y, después, eliminar
+    - Una etiqueta de retención para conservar durante siete años
+    
+    **Resultado**: el elemento se conserva durante siete años porque la retención tiene prioridad sobre la eliminación y siete años es el período de retención más largo. Al final del período de retención, el elemento se elimina por la acción de eliminación de las directivas de retención que se difirió mientras el elemento se conservó.
+    
+    Aunque las dos directivas de retención tienen fechas distintas para las acciones de eliminación, lo más pronto que se puede eliminar el elemento es al final del período de retención más largo, por lo que no hay ningún conflicto que resolver.
+
+2.  Se aplicó la siguiente configuración de retención a un elemento:
+    
+    - Una directiva de retención sin ámbito que elimina después de diez años
+    - Una directiva de retención con ámbito para conservar durante cinco años y, después, eliminar
+    - Una etiqueta de retención para conservar durante tres años y, después, eliminar
+    
+    **Resultado**: el elemento se conserva durante cinco años, ya que este es el período de retención más largo. Al final del período de retención, el elemento se elimina por la acción de eliminación de tres años de la etiqueta de retención que se difirió mientras el elemento se conservó. La acción de eliminar de las etiquetas de retención tiene prioridad sobre la acción de eliminar de todas las directivas de retención.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas
 
