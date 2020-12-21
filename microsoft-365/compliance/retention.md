@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709677"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719350"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -276,7 +276,7 @@ En este escenario, cuando los elementos pueden estar sujetos a la configuración
 
 El resultado no es qué directiva de retención única o etiqueta de retención gana, sino cuánto tiempo se conserva un elemento (si corresponde) y cuándo se elimina un elemento (si corresponde). Estas dos acciones se calculan de forma independiente entre sí, a partir de todas las configuraciones de retención aplicadas a un elemento.
 
-Por ejemplo, un elemento se puede sujetar a una directiva de retención configurada para una acción de solo eliminación y otra directiva de retención configurada para conservar y, después, eliminar. Para determinar el resultado, este elemento tiene solo una acción de retener, pero dos acciones de eliminación. La retención y eliminación pueden estar en conflicto entre sí y las dos acciones de eliminación podrían tener una fecha en conflicto.
+Por ejemplo, un elemento puede estar sujeto a una directiva de retención configurada para una acción de solo eliminación y otra directiva de retención configurada para conservar y, después, eliminar. En consecuencia, este elemento tiene solo una acción de retención, pero dos acciones de eliminación. Las acciones de retención y eliminación podrían estar en conflicto entre sí y las dos acciones de eliminación podrían tener una fecha en conflicto. Para calcular el resultado, debe aplicar los principios de retención.
 
 A grandes rasgos, la retención siempre tiene prioridad sobre la eliminación y después tiene prioridad el período de retención más largo. Estas dos reglas sencillas siempre deciden durante cuánto tiempo se conservará un elemento.
 
