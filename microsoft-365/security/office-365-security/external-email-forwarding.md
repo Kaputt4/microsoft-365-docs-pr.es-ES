@@ -14,18 +14,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 76cd560c3b97bb67d25d2e4ff2c219669c3d4f0d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f75504941e8481d35458ad2ae6b5e8a72c5e8c8c
+ms.sourcegitcommit: a49338bde6923b13132c7b9e4c6bb75c14163c72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658886"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49728193"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío de correo electrónico externo automático en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Como administrador, puede tener los requisitos de la compañía para restringir o controlar los mensajes reenviados automáticamente a los destinatarios externos (destinatarios fuera de la organización). El reenvío de correo electrónico puede resultar útil, pero también puede suponer un riesgo de seguridad debido a la posible revelación de información. Los atacantes podrían usar esta información para atacar a su organización o a sus socios.
+Como administrador, puede tener los requisitos de la compañía para restringir o controlar los mensajes reenviados automáticamente a los destinatarios externos (destinatarios fuera de la organización). El reenvío de correo electrónico puede ser una característica útil, pero también puede suponer un riesgo para la seguridad debido a la posible revelación de información. Los atacantes podrían usar esta información para atacar a su organización o a sus socios.
 
 Los siguientes tipos de reenvío automático están disponibles en Microsoft 365:
 
