@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719350"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725181"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -282,7 +282,7 @@ A grandes rasgos, la retención siempre tiene prioridad sobre la eliminación y 
 
 Hay otros factores que determinan cuándo se eliminará un elemento, que incluyen que la acción de eliminación de una etiqueta de retención siempre tiene prioridad sobre la acción de eliminación de una directiva de retención.
 
-Use el siguiente flujo para comprender los resultados de la retención y eliminación de un solo elemento, donde cada nivel actúa como un disyuntor de arriba a abajo.
+Use el siguiente flujo para comprender los resultados de la retención y eliminación de un solo elemento, donde cada nivel actúa para remediar conflictos, de arriba a abajo. Si el resultado lo determina el primer nivel debido a que no existen conflictos, no es necesario pasar al siguiente nivel, y así sucesivamente.
 
 > [!IMPORTANT]
 > Si usa etiquetas de retención: antes de usar este flujo para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
@@ -341,7 +341,7 @@ Ejemplos más complejos que combinan acciones de retención y eliminación:
     
     **Resultado**: el elemento se conserva durante siete años porque la retención tiene prioridad sobre la eliminación y siete años es el período de retención más largo. Al final del período de retención, el elemento se elimina por la acción de eliminación de las directivas de retención que se difirió mientras el elemento se conservó.
     
-    Aunque las dos directivas de retención tienen fechas distintas para las acciones de eliminación, lo más pronto que se puede eliminar el elemento es al final del período de retención más largo, por lo que no hay ningún conflicto que resolver.
+    Aunque las dos directivas de retención tienen fechas distintas para las acciones de eliminación, lo más pronto que se puede eliminar el elemento es al final del período de retención más largo, que es más largo que ambas fechas de eliminación. En este ejemplo, no hay ningún conflicto que resolver para las fechas de eliminación, de modo que todos los conflictos se resuelven en el segundo nivel.
 
 2.  Se aplicó la siguiente configuración de retención a un elemento:
     
@@ -349,7 +349,7 @@ Ejemplos más complejos que combinan acciones de retención y eliminación:
     - Una directiva de retención con ámbito para conservar durante cinco años y, después, eliminar
     - Una etiqueta de retención para conservar durante tres años y, después, eliminar
     
-    **Resultado**: el elemento se conserva durante cinco años, ya que este es el período de retención más largo. Al final del período de retención, el elemento se elimina por la acción de eliminación de tres años de la etiqueta de retención que se difirió mientras el elemento se conservó. La acción de eliminar de las etiquetas de retención tiene prioridad sobre la acción de eliminar de todas las directivas de retención.
+    **Resultado**: el elemento se conserva durante cinco años, ya que este es el período de retención más largo. Al final del período de retención, el elemento se elimina por la acción de eliminación de tres años de la etiqueta de retención que se difirió mientras el elemento se conservó. La acción de eliminar de las etiquetas de retención tiene prioridad sobre la acción de eliminar de todas las directivas de retención. En este ejemplo, todos los conflictos se resuelven antes del tercer nivel.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas
 
