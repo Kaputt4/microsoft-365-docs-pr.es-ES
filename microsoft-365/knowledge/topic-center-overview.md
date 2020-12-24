@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ea0e3ba186956e35a7c7b619b1cd032726f7952f
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 3e6a0e8e6917b62c1789ebcd689ba7dc1e64e9e0
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698640"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731384"
 ---
 # <a name="topic-center-overview-preview"></a>Información general sobre el centro de temas (vista previa)
 
@@ -46,6 +46,13 @@ El centro de temas se crea durante la configuración de la experiencia del tema.
 
 
 ## <a name="home-page"></a>Página principal
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]  
+
+</br>
+
 
 En la Página principal del centro de temas, puede ver los temas de su organización a los que tiene una conexión.
 

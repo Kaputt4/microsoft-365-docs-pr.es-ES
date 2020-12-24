@@ -11,14 +11,20 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo configurar experiencias de tema en Microsoft 365
-ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698560"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731372"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>Configurar experiencias de tema en Microsoft 365
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
 
 Puede usar el centro de administración de Microsoft 365 para instalar y configurar las experiencias de los [temas](topic-experiences-overview.md). 
 
@@ -26,7 +32,7 @@ Es importante planear la mejor forma de configurar y configurar temas en el ento
 
 Debe ser administrador global o administrador de SharePoint para tener acceso al centro de administración de Microsoft 365 y configurar las experiencias de los temas.
 
-## <a name="set-up-topic-experiences"></a>Configurar experiencias de tema
+## <a name="set-up-topic-experiences"></a>Configurar las experiencias temáticas
 
 Para configurar experiencias de tema en Microsoft 365
 
@@ -37,7 +43,7 @@ Para configurar experiencias de tema en Microsoft 365
 
 3. En la página **conectar personas a los conocimientos** , **haga clic en introducción para** guiarlo en el proceso de configuración.
 
-    ![Introducción](../media/k-get-started.png) 
+    ![Comenzar](../media/k-get-started.png) 
 
 4. En la página **elegir el modo en que la red de conocimiento puede buscar temas** , se configurará la detección de temas. En la sección **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Elija entre:
     - **Todos los sitios**: todos los sitios de SharePoint de la organización. Esto incluye los sitios actuales y futuros.
@@ -142,6 +148,6 @@ Una vez que haya configurado las experiencias de los temas, puede cambiar la con
 - [Administrar los permisos de temas en Microsoft 365](topic-experiences-user-permissions.md)
 - [Cambiar el nombre del centro de temas en Microsoft 365](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Información general sobre las experiencias de temas](topic-experiences-overview.md)

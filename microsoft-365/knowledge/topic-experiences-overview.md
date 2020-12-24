@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre las experiencias de los temas.
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699042"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731332"
 ---
 # <a name="topic-experiences-overview-preview"></a>Información general sobre las experiencias de temas (versión preliminar)
 
@@ -26,7 +26,11 @@ ms.locfileid: "49699042"
 
 El tema experiencias usa la tecnología Microsoft AI, Microsoft 365, Delve, Microsoft Graph, búsqueda y otros componentes y servicios para crear una red de conocimiento en el entorno de Microsoft 365. 
 
-   ![Flujo de administración de conocimiento](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 Su objetivo es convertir la información en conocimiento y entregarla a los usuarios en las aplicaciones que usan diariamente, como las páginas modernas de SharePoint y Microsoft Search.
 
