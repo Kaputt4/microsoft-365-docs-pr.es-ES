@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
-ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
+ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49725181"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730181"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -465,7 +465,7 @@ Si ha configurado los sitios de SharePoint para directivas de tipo de contenido 
 - [Límites y especificaciones para Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración de registros y el gobierno de información](retention-regulatory-requirements.md)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="configuration-guidance"></a>Instrucciones de configuración
 
 Si está listo para crear directivas de retención, vea [Crear y configurar directivas de retención](create-retention-policies.md).
 

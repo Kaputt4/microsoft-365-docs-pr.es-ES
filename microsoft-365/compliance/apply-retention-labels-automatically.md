@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree etiquetas de retención y directivas de etiquetado automático para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519458"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730161"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -55,8 +55,9 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 > [!NOTE]
 > Las directivas automáticas emplean etiquetado del lado del servicio con condiciones para aplicar etiquetas de retención automáticamente. También puede aplicar automáticamente una etiqueta de retención con una directiva de etiqueta al hacer lo siguiente: 
 >
-> - Aplicar una etiqueta de retención predeterminada para SharePoint y Outlook, de modo que el contenido sin etiqueta se etiquete automáticamente
->- Aplicar automáticamente una etiqueta de retención al correo electrónico mediante el uso de reglas
+> - Puede aplicar fácilmente una etiqueta de retención a un modelo de comprensión mediante documentos en SharePoint Syntex.
+> - Aplicar una etiqueta de retención predeterminada para SharePoint y Outlook
+>- Aplicar una etiqueta de retención al correo electrónico mediante el uso de reglas de Outlook
 >
 > Para estos escenarios, consulte [Crear y aplicar etiquetas de retención en aplicaciones](create-apply-retention-labels.md).
 
