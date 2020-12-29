@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo asignar las licencias a los usuarios.
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645136"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735803"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
@@ -163,7 +163,7 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Asignar una licencia a un usuario invitado
 
-Puede invitar a usuarios invitados a colaborar con su organización en el centro de administración de Azure Active Directory. Para obtener más información sobre los usuarios invitados, vea [¿Qué es el acceso de usuarios invitados en Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Si no tiene usuarios invitados, vea [Inicio rápido: agregar usuarios invitados al directorio de Azure Portal](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+Puede invitar a usuarios para colaborar con su organización en el centro de administración de Azure Active Directory. Para obtener más información sobre los usuarios invitados, vea [¿Qué es el acceso de usuarios invitados en Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b). Si no tiene usuarios invitados, vea [Inicio rápido: agregar usuarios invitados al directorio de Azure Portal](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Para poder realizar estos pasos, debe ser un administrador global.
