@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688416"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737992"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación segura de Microsoft
 
@@ -37,7 +37,7 @@ Se puede encontrar la puntuación segura de Microsoft en https://security.micros
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
-### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se han agregado 6 acciones de mejora relacionadas con las cuentas para Microsoft defender para el extremo (ATP anterior de Microsoft defender):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se han agregado seis acciones de mejora relacionadas con las cuentas para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
 
 - Establezca ' longitud mínima de contraseña ' en ' 14 o más caracteres '
 - Establezca ' exigir historial de contraseñas ' en ' 24 contraseñas ' o más (s)
@@ -52,7 +52,7 @@ Se puede encontrar la puntuación segura de Microsoft en https://security.micros
 
 La capacidad de crear vales de ServiceNow a través de la calificación segura yendo a **compartir > ServiceNow** ya no está disponible. Gracias por sus comentarios y el soporte técnico continuo mientras determinamos los siguientes pasos.
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron 3 acciones de mejora relacionadas con los servicios para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron tres acciones de mejora relacionadas con los servicios para Microsoft defender para el punto de conexión (ATP anterior de Microsoft defender):
 
 - Corregir la ruta del servicio sin comillas para los servicios de Windows
 - Cambiar la ruta de acceso del ejecutable del servicio a una ubicación común protegida

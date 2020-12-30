@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682576"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738004"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -65,7 +65,6 @@ La puntuación se actualiza en tiempo real para reflejar la información que se 
 - [Comparar su calificación con organizaciones como la suya](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [Ver acciones de mejora y decidir un plan de acción](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Iniciar flujos de trabajo para investigar o implementar](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 Security Center and ServiceNow Integration](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>Cómo se puntuan las acciones de mejora
 
@@ -75,7 +74,15 @@ Por ejemplo, los Estados de acción de mejora obtienen 10 puntos al proteger a t
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure Active Directory, Microsoft defender para extremo, Microsoft defender para identidad y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
+Actualmente hay recomendaciones para los siguientes productos:
+
+- Microsoft 365 (incluido Exchange Online)
+- Azure Active Directory
+- Microsoft Defender para punto de conexión
+- Microsoft Defender for Identity
+- Cloud App Security
+
+Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
@@ -117,7 +124,7 @@ Con acceso de solo lectura, no puede editar el estado o las notas para una acci�
 
 ## <a name="risk-awareness"></a>Conocimiento de riesgos
 
-La puntuación segura de Microsoft es un resumen numérico de la postura de seguridad en función de la configuración del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad. No es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft que pueden ayudar a compensar el riesgo de infracción. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
+La puntuación segura de Microsoft es un resumen numérico de la postura de seguridad en función de la configuración del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad. No es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft que pueden ayudar a compensar el riesgo de infracción. Ningún servicio en línea es inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 

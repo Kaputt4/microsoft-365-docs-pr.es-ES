@@ -20,17 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769249"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738048"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir los objetivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 La [calificación segura de Microsoft](microsoft-secure-score.md) es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Puede encontrarse en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
@@ -56,7 +55,7 @@ En la ficha **métricas & tendencias** , hay varios gráficos y gráficos para p
 * **Tendencia de regresión** : una escala de tiempo de puntos que se han regresivo debido a cambios en la configuración, el usuario o el dispositivo.  
 * **Tendencia de comparación** : cómo la puntuación segura de su organización se compara con otras personas a lo largo del tiempo. Esta vista puede incluir líneas que representan la media de puntuación de organizaciones con recuento de asientos similar y una vista de comparación personalizada que puede establecer.
 * **Tendencia de aceptación de riesgos** : escala de tiempo de acciones de mejora marcadas como "riesgo aceptado".
-* **Cambios de puntuación** : el número de puntos alcanzados, los puntos Recon regresión, junto con el cambio de puntuación subsiguiente, en el intervalo de fechas especificado.
+* **Cambios de puntuación** : el número de puntos alcanzados, los puntos retrasdos y los cambios en su puntuación en el intervalo de fechas especificado.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparar su calificación con organizaciones como la suya
 
@@ -64,18 +63,18 @@ Hay dos lugares para ver cómo se compara su puntuación con las organizaciones 
 
 #### <a name="comparison-bar-chart"></a>Gráfico de barras de comparación
 
-El gráfico de barras de comparación es la ficha **información general** . Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de comparación son anonimizan, por lo que no sabemos exactamente qué otros inquilinos hay en la combinación.
+El gráfico de barras de comparación es la ficha **información general** . Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de la comparación son anonimizan, por lo que no sabemos exactamente qué otros inquilinos hay en la combinación.
 
 ![Gráfico de barras de calificaciones de una organización similar](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **Organizaciones como la suya** : le ofrecemos una puntuación media de otros inquilinos (siempre que tenga al menos 5 o más inquilinos para comparar) que cumplan con los siguientes criterios:
+- **Organizaciones como la suya**: una puntuación media de otros inquilinos (siempre que tenga al menos cinco o más inquilinos para comparar) que cumplan los siguientes criterios:
     1. Misma industria
     2. Mismo tamaño de organización
     3. Todas las regiones
     4. Los productos de Microsoft usados son de un 80% similar
     5. Oportunidad (puntuación máxima que se puede lograr por licencia actual) dentro de un 20% de intervalo desde el espacio empresarial
 
-- **Comparación personalizada** : es necesario configurar primero la configuración seleccionando **administrar la comparación** (solo si encontramos 5 o más inquilinos) en función de los siguientes criterios:
+- **Comparación personalizada**: debe configurarse seleccionando **administrar la comparación** en función de los criterios siguientes:
     1. Industria (es) seleccionada (s)
     2. Tamaño de la organización seleccionada (es)
     3. Región o regiones seleccionadas
@@ -83,7 +82,7 @@ El gráfico de barras de comparación es la ficha **información general** . Man
     5. Los productos de Microsoft usados son de un 80% similar
     6. Oportunidad (puntuación máxima que se puede lograr por licencia actual) dentro de un 20% de intervalo desde el espacio empresarial
 
-Si no ha realizado una selección para la selección personalizada del resultado de la selección al obtener menos de 5 otros inquilinos con los que se pueda comparar, verá "no disponible debido a los datos limitados".
+Si ha realizado una selección personalizada pero los resultados tienen menos de cinco inquilinos con los que se puede comparar, verá "no disponible debido a datos limitados".
 
 #### <a name="comparison-trend"></a>Tendencia de comparación
 
@@ -91,7 +90,7 @@ En la ficha **métricas & tendencias** , vea cómo la puntuación segura de su o
 
 ![Gráfico de líneas de calificaciones similares a lo largo del tiempo](../../media/secure-score/secure-score-comparison-trend.png)
 
-## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
+## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
 Si tiene algún problema, háganoslo saber mediante la publicación de la comunidad de [seguridad, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y le proporcionaremos ayuda.
 

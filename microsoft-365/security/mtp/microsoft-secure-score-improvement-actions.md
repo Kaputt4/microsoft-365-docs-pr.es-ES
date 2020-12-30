@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683348"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738016"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la postura de seguridad con calificación segura de Microsoft
 
@@ -48,7 +48,7 @@ En la página información general sobre la calificación segura de Microsoft, v
 
 ## <a name="check-your-current-score"></a>Comprobar el resultado actual
 
-Para comprobar el resultado actual, vaya a la página información general sobre la calificación segura de Microsoft y busque el icono que indica **su puntuación segura**. La puntuación se mostrará como un porcentaje, junto con el número de puntos que ha obtenido de un total de puntos posibles.
+Para comprobar el resultado actual, vaya a la página información general sobre la calificación segura de Microsoft y busque el icono que indica **su puntuación segura**. La puntuación se mostrará como un porcentaje, junto con el número de puntos que ha obtenido de los puntos totales posibles.
 
 Además, si selecciona el botón **incluir** junto a su puntuación, podrá elegir distintas vistas de la puntuación. Estas vistas de puntuación diferentes se mostrarán en el gráfico en el mosaico de puntuación y en el gráfico de desglose de puntos.
 
@@ -74,14 +74,15 @@ La clasificación se basa en el número de puntos que quedan para lograr, la dif
 
 Al seleccionar una acción de mejora específica, aparece un elemento flotante de página completa.  
 
-![Ejemplo de control flotante de acción de mejora ](../../media/secure-score/secure-score-improvement-action-details.png)
- *figura 2: ejemplo de control flotante de acción de mejora*
+![Ejemplo de control flotante de acción de mejora](../../media/secure-score/secure-score-improvement-action-details.png)
 
 Para completar la acción, tiene algunas opciones:
 
-* Seleccione **administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrá los puntos que merece la acción, visible en el vuelo hacia fuera. Generalmente, los puntos tardan unas 24 horas en actualizarse.
+- Seleccione **administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrá los puntos que merece la acción, visible en el vuelo hacia fuera. Generalmente, los puntos tardan unas 24 horas en actualizarse.
 
-* Seleccione **compartir** para copiar el vínculo directo a la acción de mejora. También puede elegir la plataforma para compartir el vínculo, como correo electrónico, Microsoft Teams, Microsoft Planner o ServiceNow. La selección de ServiceNow le permitirá crear un vale de cambio que será visible en ServiceNow y en la Página principal del centro de seguridad de Microsoft 365. Para obtener más información, consulte [Microsoft 365 Security Center and ServiceNow Integration](tickets-security-center.md).
+- Seleccione **compartir** para copiar el vínculo directo a la acción de mejora. También puede elegir la plataforma para compartir el vínculo, como correo electrónico, Microsoft Teams, Microsoft Planner o ServiceNow. La selección de ServiceNow le permitirá crear un vale de cambio que será visible en ServiceNow y en la Página principal del centro de seguridad de Microsoft 365. Para obtener más información, consulte [Microsoft 365 Security Center and ServiceNow Integration](tickets-security-center.md).
+
+Agregue **notas** para realizar un seguimiento del progreso o cualquier otro elemento al que quiera agregar un comentario. Si agrega sus propias **etiquetas** a la acción de mejora, puede filtrar por esas etiquetas.
 
 ### <a name="choose-an-improvement-action-status"></a>Elegir un estado de acción de mejora
 
@@ -94,23 +95,23 @@ Elija los Estados y anote las notas específicas para la acción de mejora.
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Acciones de mejora de la administración de amenazas & vulnerabilidad
 
-Para las acciones de mejora en la categoría "dispositivo", no podrá elegir los Estados. En su lugar, se le dirigirá a la [recomendación de seguridad asociada & Vulnerability Management (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) en el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) para tomar medidas. La excepción que elija y justifique que escriba será específica de ese portal. No estará presente en el portal de calificación segura de Microsoft.
+Para acciones de mejora en la categoría "dispositivo", no puede elegir Estados. En su lugar, se le dirigirá a la [recomendación de seguridad de administración de vulnerabilidades y amenazas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) asociada en el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) para tomar medidas. La excepción que elija y justifique que escriba será específica de ese portal. No estará presente en el portal de calificación segura de Microsoft.
 
 #### <a name="completed-improvement-actions"></a>Acciones de mejora completadas
 
-Las acciones de mejora tienen el estado "completado" una vez que se han logrado todos los puntos posibles para la acción de mejora. Las acciones de mejora completadas se confirman a través de datos de Microsoft y no podrá cambiar el estado.
+Las acciones de mejora tienen el estado "completado" una vez que se han logrado todos los puntos posibles para la acción de mejora. Las acciones de mejora completadas se confirman a través de datos de Microsoft y no se puede cambiar el estado.
 
 ### <a name="assess-information-and-review-user-impact"></a>Evaluar la información y revisar el impacto del usuario
 
 La sección a la que se ha llamado **de un vistazo** le dirá la categoría, los ataques con los que puede protegerse y el producto.
 
-El **impacto del usuario** muestra lo que los usuarios experimentarán si se le aplica la acción de mejora y **los usuarios afectados** muestran quién la experimentará.
+El impacto en el **usuario** es lo que experimentarán los usuarios si se aplica la acción de mejora y **los usuarios afectados** son las personas que se verán afectadas.
 
 ### <a name="implement-the-improvement-action"></a>Implementar la acción de mejora
 
 En la sección **implementación** se muestran los requisitos previos, paso a paso para completar la acción de mejora, el estado de implementación actual de la acción de mejora y cualquier otro vínculo más información.
 
-Los requisitos previos incluyen las licencias que se deben obtener o las acciones que deben realizarse antes de que se solucione la acción de mejora. Asegúrese de que tiene suficientes plazas en la licencia para completar la acción de mejora y de que esas licencias se aplican a los usuarios necesarios.  
+Los requisitos previos incluyen las licencias necesarias o las acciones que deben realizarse antes de que se solucione la acción de mejora. Asegúrese de que tiene suficientes plazas en la licencia para completar la acción de mejora y de que esas licencias se aplican a los usuarios necesarios.  
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
