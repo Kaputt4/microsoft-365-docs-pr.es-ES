@@ -589,7 +589,7 @@
           items:
             - name: Agregar administradores a un caso
               href: add-custodians-to-case.md
-            - name: Agregar en masa administradores a un caso
+            - name: Importar múltiples custodios a un caso
               href: bulk-add-custodians.md
             - name: Administrar los administradores
               href: manage-new-custodians.md
