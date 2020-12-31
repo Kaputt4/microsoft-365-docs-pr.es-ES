@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 4b95d81114e60c9d805b90b007d40d4c1a2e62b1
+ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682611"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739793"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -41,7 +41,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   
   - Administrar cualquier caso de exhibición de documentos electrónicos después de que se agreguen como miembro del caso.
   
-  Consulte la sección [More Information](#more-information) para ver los motivos por los que puede desear que los administradores de eDiscovery de su organización.
+  Para ver los motivos por los que es posible que quiera administradores de eDiscovery en su organización, consulte [más información](#more-information).
 
 > [!NOTE]
 > Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5 o Microsoft 365 E5. Como alternativa, a los usuarios con una licencia de Office 365 E1 o Office 365 o Microsoft 365 E3 se les puede asignar una licencia de Microsoft 365 E5 Compliance o Microsoft 365 eDiscovery y una licencia del complemento de auditoría. Los administradores, los responsables de cumplimiento normativo o el personal jurídico asignado a los casos como miembros y usan la exhibición avanzada de documentos electrónicos para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información sobre las licencias de eDiscovery avanzadas, vea Introducción [a la exhibición avanzada de](get-started-with-advanced-ediscovery.md)documentos electrónicos.
@@ -50,7 +50,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 
 - Debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de roles para asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
 
-- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Para obtener información detallada, consulte la sección [más información](#more-information) . 
+- Puede usar el cmdlet [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) en seguridad & PowerShell del centro de cumplimiento para agregar un grupo de seguridad habilitado para correo como miembro del subgrupo administradores de eDiscovery en el grupo de roles eDiscovery Manager. Sin embargo, no puede Agregar un grupo de seguridad habilitado para correo al subgrupo administradores de eDiscovery. Para obtener información detallada, consulte [más información](#more-information). 
   
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -69,13 +69,13 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para que un usuario sea administrador de exhibición de documentos electrónicos. Sin embargo, al usuario se le debe asignar el rol de administración de casos antes de que pueda usar este cmdlet para convertirlo en Administrador de exhibición de documentos electrónicos. Para obtener más información, vea [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-En la página **permisos** del centro de seguridad & cumplimiento, también puede asignar permisos relacionados con la exhibición de documentos electrónicos agregándolos a los grupos de roles administrador de cumplimiento, administración de la organización y revisor. Para obtener una descripción de los roles RBAC relacionados con la exhibición de documentos electrónicos asignados a cada uno de estos grupos de roles, consulte la sección [roles de RBAC relacionados con la exhibición](#rbac-roles-related-to-ediscovery) de documentos electrónicos.
+En la página **permisos** del centro de seguridad & cumplimiento, también puede asignar permisos relacionados con la exhibición de documentos electrónicos agregándolos a los grupos de roles administrador de cumplimiento, administración de la organización y revisor. Para obtener una descripción de los roles RBAC relacionados con la exhibición de documentos electrónicos asignados a cada uno de estos grupos de roles, consulte [roles RBAC relacionados con la exhibición](#rbac-roles-related-to-ediscovery)de documentos electrónicos.
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>Roles RBAC relacionados con la exhibición de documentos electrónicos
 
 En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento e indica los grupos de roles integrados a los que se asigna cada rol de forma predeterminada.
   
-|**Rol**|**Administrador de cumplimiento**|**Administrador de exhibición de documentos electrónicos & administrador**|**Administración de organizaciones**|**Reviewer**|
+| Role | Administrador de cumplimiento | Administrador de exhibición de documentos electrónicos & administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> |
 |Comunicación <br/> | <br/> |![Marca de verificación](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -137,7 +137,7 @@ Para obtener más información acerca de las suspensiones, consulte:
 
 - [Crear una suspensión en la exhibición de documentos electrónicos principal](create-ediscovery-holds.md) 
 
-- [Crear una retención en eDiscovery avanzado](add-custodians-to-case.md#step-4-place-custodians-on-hold)
+- [Crear una retención en eDiscovery avanzado](add-custodians-to-case.md)
 
 ### <a name="preview"></a>Preview
 
@@ -172,7 +172,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Los grupos de distribución de Exchange y los grupos de Microsoft 365 no son compatibles. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell con el `New-DistributionGroup -Type Security` comando. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede tardar hasta 60 minutos después de crear una nueva seguridad habilitada para correo que esté disponible para agregarla al grupo de roles eDiscovery Managers. 
+    Los grupos de distribución de Exchange y los grupos de Microsoft 365 no son compatibles. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell mediante la ejecución de `New-DistributionGroup -Type Security` . También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede tardar hasta 60 minutos después de crear una nueva seguridad habilitada para correo que esté disponible para agregarla al grupo de roles eDiscovery Managers. 
 
     Además, como se mencionó anteriormente, no puede hacer que un grupo de seguridad habilitado para correo sea un administrador de eDiscovery usando el cmdlet **Add-eDiscoveryCaseAdmin** en el PowerShell del centro de cumplimiento de & de seguridad. Solo puede Agregar usuarios individuales como administradores de exhibición de documentos electrónicos.
 

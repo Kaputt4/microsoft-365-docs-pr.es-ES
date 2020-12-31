@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver detalles, editar y editar en bloque la lista de custodios en un caso de eDiscovery avanzado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
+ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024810"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "49739873"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar los custodios en un caso de eDiscovery avanzado
 
@@ -60,7 +60,7 @@ Para ver los detalles sobre un custodio, haga clic en el custodio en la lista de
 
   - **Estado de retención** : indica si el custodio se ha puesto en retención. 
 
-  - **Estado de comunicación**: indica si el custodio ha emitido un aviso de retenciones. Si se ha emitido un aviso al custodio, se **publica**este valor de esta propiedad. Si no se ha emitido un aviso al custodio, el estado no se **publica**. 
+  - **Estado de comunicación**: indica si el custodio ha emitido un aviso de retenciones. Si se ha emitido un aviso al custodio, se **publica** este valor de esta propiedad. Si no se ha emitido un aviso al custodio, el estado no se **publica**. 
 
   - **Estado** : el estado del custodio en el caso. Un estado de **activo** indica que el custodio forma parte del caso. Si se ha lanzado un custodio desde un caso, el estado cambia a **lanzado**. 
 
@@ -77,7 +77,7 @@ A medida que avanza el caso, es posible que descubra que puede haber orígenes d
 
 Para actualizar los orígenes de datos asociados a un custodio:
 
-1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
+1. Vaya a  **ediscovery > eDiscovery avanzado** y abra el caso.
   
 2. Haga clic en la pestaña **orígenes** .
   
@@ -89,7 +89,7 @@ Para actualizar los orígenes de datos asociados a un custodio:
   
 5. Haga clic en la pestaña **seleccionar orígenes de datos adicionales** para agregar o quitar los buzones de correo de Microsoft Teams, SharePoint o Exchange asociados con el custodio. 
 
-    Para obtener más información acerca de los orígenes de datos asociados a un custodio, consulte "paso 3: asociar orígenes de datos adicionales a un custodio" en [Agregar custodios a un caso](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
+    Para obtener más información acerca de los orígenes de datos asociados a un custodio, consulte [Add custodios to a case](add-custodians-to-case.md). 
   
 6. Haga clic en **realizar suspensiones de custodia** para habilitar o deshabilitar la retención para el custodio.
 
@@ -101,7 +101,7 @@ Cuando se agrega un custodio a un caso, los datos ubicados en los orígenes de d
 
 Para desencadenar el proceso de reindización para tratar los elementos parcialmente indizados:
 
-1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
+1. Vaya a  **ediscovery > eDiscovery avanzado** y abra el caso.
 
 2. Haga clic en la pestaña **orígenes** .
 
@@ -127,7 +127,7 @@ Si libera un custodio después de que se publique un aviso de retención, se env
 
 Para liberar un custodio: 
 
-1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
+1. Vaya a  **ediscovery > eDiscovery avanzado** y abra el caso.
 
 2. Haga clic en la pestaña **orígenes** .
 

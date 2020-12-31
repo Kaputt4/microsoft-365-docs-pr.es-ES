@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar Redtail datos de voz de Globanet a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar las características de cumplimiento, como directivas de retención legal, búsqueda de contenido y retención para administrar datos de terceros.
-ms.openlocfilehash: 546298288e69746856a1250cc4b87643dd479c91
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: ee1e5c63d8990d5847241dc0ab4a88ed19e3215f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49723012"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740297"
 ---
-# <a name="set-up-a-connector-to-archive-redtail-speak-data-preview"></a>Configurar un conector para archivar Redtail datos de voz (versión preliminar)
+# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configurar un conector para archivar datos de Redtail Speak
 
 Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de la Redtail hable con los buzones de usuario de su organización 365 de Microsoft. Globanet proporciona un conector de [voz Redtail](https://globanet.com/redtail/) que está configurado para capturar elementos del servidor SFTP de la organización donde se reciben los elementos de Redtail. El conector convierte el contenido de Redtail hable a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
@@ -31,7 +31,7 @@ La información general siguiente explica el proceso de uso de un conector para 
 
 ![Flujo de trabajo de archivado para Redtail datos de voz](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. Su organización trabaja con Redtail hable para configurar y configurar una puerta de enlace SMTP en la que los mensajes diarios se reenvían desde Redtail hablan al servidor SFTP de su organización.
+1. Su organización trabaja con Redtail hable para configurar y configurar una puerta de enlace SMTP en la que los mensajes se reenvían desde Redtail hablan al servidor de SFTP de la organización a diario.
 
 2. Una vez cada 24 horas, los elementos Redtail Speak se copian en el sitio Merge1 de Globanet. El conector también convierte los elementos Speak Redtail en un formato de mensaje de correo electrónico.
 
@@ -43,7 +43,7 @@ La información general siguiente explica el proceso de uso de un conector para 
 
 - Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para crear una cuenta, póngase en contacto [con el soporte técnico de Globanet](https://globanet.com/contact-us/). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
 
-- En el paso, debe especificar el servidor SFTP de su organización. Esto es necesario para que Globanet Merge1 pueda ponerse en contacto con él para recopilar datos Redtail leer a través de SFTP.
+- En el paso 2, debe especificar el servidor SFTP de su organización. Esto es necesario para que Globanet Merge1 pueda ponerse en contacto con él para recopilar datos Redtail leer a través de SFTP.
 
 - El usuario que crea el conector del importador leer de Redtail en el paso 1 (y lo completa en el paso 3) debe asignarse a la función importación y exportación de buzones de correo en Exchange Online. Este rol es necesario para agregar conectores en la página conectores de datos del centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 

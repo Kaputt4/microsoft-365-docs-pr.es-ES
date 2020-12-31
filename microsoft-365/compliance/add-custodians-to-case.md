@@ -17,99 +17,101 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodios integrada en eDiscovery avanzado para coordinar sus flujos de trabajo e identificar los orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5b64bb288e94c345cc373b0d800bc0349895f7d3
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9468fb889e9115b3652d1dba8a6c6632bb367fe3
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024717"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740347"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un caso de eDiscovery avanzado
 
-Use la herramienta de administración de custodios integrada en eDiscovery avanzado para coordinar sus flujos de trabajo en la administración de custodios y para identificar los orígenes de datos relevantes y relevantes asociados a un caso. Cuando se agrega un custodio, el sistema puede identificar y retener automáticamente el buzón de Exchange y la cuenta de OneDrive para la empresa. Durante el proceso de detección de la investigación, también puede identificar orígenes de datos adicionales (como buzones, sitios o equipos) a los que un custodio ha tenido acceso o ha contribuido. En esta situación, puede usar la herramienta de administración de custodios para asociar esos orígenes de datos a un custodio específico. Después de agregar custodios a un caso y asociar otro origen de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de las privaciones.
+Use la herramienta de administración de custodios integrada en eDiscovery avanzado para coordinar sus flujos de trabajo en la administración de custodios y para identificar los orígenes de datos relevantes y relevantes asociados a un caso. Cuando se agrega un custodio, el sistema puede identificar y retener automáticamente el buzón de Exchange y la cuenta de OneDrive para la empresa. Durante el proceso de detección de la investigación, también puede identificar otros orígenes de datos (como buzones, sitios o equipos) a los que un custodio ha tenido acceso o ha contribuido. En esta situación, puede usar la herramienta de administración de custodios para asociar esos orígenes de datos a un custodio específico. Después de agregar custodios a un caso y asociar otro origen de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de las privaciones.
 
-Use el siguiente flujo de trabajo para agregar y administrar custodios en casos avanzados de eDiscovery.
+Puede Agregar y administrar custodios en casos de eDiscovery avanzados en cuatro pasos:
 
-![Ficha orígenes en caso de exhibición avanzada de documentos electrónicos](../media/AeD-Sources-Tab.png)
+1. Identificar a los custodios.
+
+2. Elija ubicaciones de datos de custodios.
+
+3. Configurar opciones de retención.
+
+4. Revise los custodios y complete el proceso.
+
+   [![Ficha orígenes en caso ](../media/AeD-Sources-Tab.png) de exhibición avanzada de documentos electrónicos](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Asegúrese de que tiene los permisos necesarios
 
-Para agregar custodios a un caso, debe ser miembro del grupo de roles eDiscovery Manager. Esto le proporcionará los permisos necesarios para agregar custodios a un caso y realizar una retención en los orígenes de datos de Private.
+Para agregar custodios a un caso, debe ser miembro del grupo de roles eDiscovery Manager. Esto le proporcionará los permisos necesarios para agregar custodios a un caso y realizar una retención en los orígenes de datos de Private. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
 
-## <a name="step-1-add-potential-custodians"></a>Paso 1: agregar custodios potenciales
+## <a name="step-1-identify-custodians"></a>Paso 1: identificar los custodios
 
-El primer paso es identificar y agregar custodios al caso.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con una cuenta de usuario a la que se le hayan asignado los permisos de eDiscovery apropiados.
 
-1. En la Página principal de **EDiscovery avanzado** , haga clic en el caso al que desea agregar custodios. 
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** y, a continuación, en **eDiscovery > avanzadas**.
 
-2. Haga clic en la pestaña **orígenes** y, a continuación, en **Agregar custodios**.
+3. En la página **exhibición avanzada** de documentos electrónicos, haga clic en la pestaña **casos** y, a continuación, seleccione el caso al que desea agregar custodios.
 
-3. Busque los custodios que se agregarán al caso. Escriba la primera parte del nombre de una persona para mostrar a los usuarios de Azure Active Directory de la organización. Cuando encuentre la persona correcta, haga clic en su nombre para agregarla a la lista.
+4. Haga clic en la pestaña **orígenes** de datos y, a continuación, haga clic en **Agregar origen de datos**  >  **agregar nuevos custodios**.
 
-   ![Identificar custodios potenciales](../media/AddCustodianStep1.png)
+5. Agregue uno o más usuarios de la organización como custodios al caso; para ello, escriba la primera parte del alias o el nombre de una persona. Una vez que haya encontrado la persona correcta, seleccione su nombre para agregarla a la lista.
 
-4. Una vez que haya agregado todos los custodios pertinentes, haga clic en **siguiente** para seleccionar los orígenes de datos principales de los custodios.
-  
-## <a name="step-2-select-custodian-data-sources"></a>Paso 2: seleccionar orígenes de datos custodios
+## <a name="step-2-choose-custodian-data-locations"></a>Paso 2: elegir ubicaciones de datos de custodios
 
-Una vez agregados los custodios, la herramienta de custodio le ayudará a identificar los orígenes de datos principales que pertenecen a cada custodio. Estas ubicaciones de datos son el buzón de Exchange y la cuenta de OneDrive del custodio. 
+Después de seleccionar custodios, el sistema intenta identificar y verificar estos usuarios y sus orígenes de datos de forma automática. Después de agregar custodios a la lista, la herramienta incluye automáticamente el buzón principal y la cuenta de OneDrive para cada custodio. Puede elegir no incluir estos orígenes de datos al agregar custodios al caso.
 
-Para identificar los orígenes de datos de custodios:
+Además del buzón de un custodio y de la cuenta de OneDrive, también puede asociar otras ubicaciones de datos a un custodio, como un sitio de SharePoint o un equipo de Microsoft en el que el custodio es miembro. Esto le permite preservar, recopilar, analizar y revisar el contenido de otros orígenes de datos asociados con los custodios del caso.
 
-1. Para seleccionar el buzón de Exchange para todos los custodios, active la casilla de verificación **Exchange** en la parte superior de la columna. A continuación, puede desactivar la casilla de cualquier custodio específico para quitar un buzón de correo como una ubicación de privación. Como alternativa, puede dejar la casilla de verificación **Exchange** en la parte superior de la columna desactivada y, a continuación, activar la casilla para los custodios individuales. 
+Para anular la selección del buzón de correo principal y la cuenta de OneDrive para un custodio:
 
-   ![Seleccionar orígenes de datos de Private](../media/AddCustodianStep2.png)
+1. Expanda el custodio para ver las ubicaciones de datos principales que se han asociado automáticamente a cada custodio.
 
-2. Repita lo mismo para las cuentas de OneDrive de los custodios. 
+2. Seleccione **Borrar** junto a **buzón** o **onedrive** para quitar que el buzón o la cuenta de onedrive de un custodio se asocie como una ubicación de datos para este custodio.
 
-    Después de seleccionar los orígenes de datos de custodios, el sistema intenta identificar y comprobar de forma automática estos orígenes de datos y, a continuación, los agrega al caso como orígenes de datos asociados con los custodios.
+   ![Configurar ubicaciones para asociar a un custodio](../media/ConfigureCustodianLocations.png)
 
-3. Haga clic en **siguiente** para empezar a asociar orígenes de datos adicionales a los custodios en el caso.
+Para asociar otros buzones de correo, sitios, equipos o grupos de Yammer a un custodio específico:
 
-## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Paso 3: asociar orígenes de datos adicionales a un custodio
+1. Expanda un custodio para mostrar los siguientes servicios para asociar las ubicaciones de datos con el custodio. Haga clic en **Editar** junto a un servicio para agregar una ubicación de datos.
 
-Según el caso que esté investigando, es posible que también necesite buscar (y conservar contenido en) buzones de correo a los que puede tener acceso un custodio específico, los grupos de Microsoft 365 a los que un custodio es actualmente miembro o los sitios a los que también se tiene acceso a un custodio. Por lo tanto, además de los principales orígenes de datos de custodios que especificó en el paso anterior, también puede asociar otros orígenes de datos de Microsoft con un custodio en el caso. 
+   - **Exchange**: se usa para asociar otros buzones al custodio. Escriba en el cuadro de búsqueda el nombre o el alias (un mínimo de tres caracteres) de los buzones de usuario o los grupos de distribución. Seleccione los buzones que desea asignar al custodio y, a continuación, haga clic en **Agregar**.
 
-Para asignar buzones de correo, sitios o equipos a un custodio específico:
+   - **SharePoint**: Use para asociar sitios de SharePoint con el custodio. Seleccione un sitio de la lista o busque un sitio escribiendo una dirección URL en el cuadro de búsqueda. Seleccione los sitios que desea asignar al custodio y, a continuación, haga clic en **Agregar**.
 
-1. En la página **seleccionar orígenes de datos adicionales** , haga clic en **Agregar** en la fila del custodio específico. 
-  
-   ![Asignar orígenes de datos adicionales](../media/AddCustodianStep3.PNG)
+   - **Teams**: usar para asignar a Microsoft Teams el custodio es actualmente miembro de. Seleccione los equipos que desee asignar a custodio y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio de SharePoint y el buzón de grupo asociados a dicho equipo y los asigna al custodio.
 
-2. En la página de flotante, puede especificar un origen de datos de cualquiera de los siguientes servicios:
-  
-   -  **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Use el cuadro de búsqueda para encontrar los buzones de correo que desea asociar con el custodio. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   - **Yammer**: Use para asignar los grupos de Yammer en los que el custodio es actualmente miembro. Seleccione los grupos que desee asignar a custodio y, a continuación, haga clic en **Agregar**. Después de agregar un equipo, el sistema identifica y localiza automáticamente el sitio de SharePoint y el buzón de grupo asociados a ese grupo y los asigna al custodio.
 
-        > [!NOTE]
-        > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar un buzón de correo a esta lista, escriba un nombre o alias (un mínimo de 3 caracteres) en el cuadro de búsqueda.
-     
-     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para mostrar una lista de los sitios de SharePoint de la organización. Para asociar un sitio con el custodio, puede seleccionar un sitio de la lista o puede escribir la dirección URL de un sitio diferente o de un sitio asociado con un grupo de Microsoft 365, un equipo de Microsoft o una cuenta de OneDrive.
-     
-     - **Teams** : haga clic en **elegir** Teams y, a continuación, haga clic en **elegir Teams** de nuevo para mostrar una lista de Microsoft Teams a la que pertenece actualmente el custodio. Seleccione los equipos que quiera agregar a su custodio. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
+   > [!NOTE]
+   > Puede usar los selectores de ubicación de **Exchange** y **SharePoint** para asociar otros equipos o grupos de Yammer (que un custodio no es miembro de) a un custodio. Para ello, tiene que agregar el buzón de correo y el sitio asociados con cada grupo de equipo o de Yammer.
 
-       ![Orígenes de datos de asignación](../media/AddCustodianStep4.PNG)
-        
-      > [!NOTE]
-      > Para asociar un equipo adicional con un custodio, debe agregar por separado el buzón y el sitio asociados con el equipo mediante el **correo de Exchange** y las ubicaciones de los **sitios de SharePoint** .
+2. Puede ver el número total de buzones de correo, sitios, equipos y grupos de Yammer asignados a cada custodio expandiendo cada custodio en la tabla. Una vez finalizadas las ubicaciones de datos asignadas para cada custodio, estas asociaciones se mantendrán y se usarán durante las fases de recopilación, procesamiento y revisión del flujo de trabajo avanzado de eDiscovery.
 
-Una vez que haya terminado de asociar los orígenes de datos adicionales con los custodios, puede ver el número total de buzones de correo, sitios y equipos asociados a cada custodio en la **página seleccionar orígenes de datos adicionales**. Cuando haya finalizado los orígenes de datos relevantes para un custodio específico, esta asociación se mantendrá y se usará durante las fases de recopilación, procesamiento y revisión del flujo de trabajo de eDiscovery.
+3. Después de agregar custodios y configurar sus ubicaciones de datos, haga clic en **siguiente** para ir a la página **configuración de retención** .  
 
-## <a name="step-4-place-custodians-on-hold"></a>Paso 4: poner los custodios en espera
+## <a name="step-3-configure-hold-settings"></a>Paso 3: configurar opciones de retención
 
-Una vez que haya finalizado los custodios y los orígenes de datos que se deben agregar al caso, también puede poner algunos o todos los custodios en retención. Cuando se pone un custodio en espera, todo el contenido de todas las ubicaciones de contenido que están asociados con el custodio se conserva hasta que se quita la retención o se libera el custodio de la retención. En algunos casos, es posible que quiera agregar custodios a un caso sin ponerlos en retención.
+ Una vez que haya finalizado los custodios y sus ubicaciones de datos, puede poner algunos o todos los custodios en retención. Cuando se pone un custodio en espera, todo el contenido de todas las ubicaciones de contenido que están asociados con el custodio se conserva hasta que se quita la retención o se libera el custodio de la retención. En algunos casos, es posible que quiera agregar custodios a un caso sin ponerlos en retención.
 
 Para poner los custodios y los orígenes de datos en espera:
 
-1. En la página **poner una retención en la página de custodios seleccionada** , active la casilla de verificación **suspender** situada en la parte superior de la columna para poner todos los custodios en retención. A continuación, puede desactivar la casilla de cualquier custodio específico para quitarlo de la suspensión. Como alternativa, puede dejar la casilla **mantener** en la parte superior de la columna desactivada y, a continuación, activar la casilla para custodios individuales.
+1. En la página **configuración de suspensión** , puede aplicar una retención a los custodios individuales activando la casilla en la columna **retención** .
 
-   ![Retenciones de posición](../media/AddCustodianStep5.PNG)
+   Como alternativa, puede retener todos los custodios seleccionando la casilla " **suspender** " en la parte superior de la columna.
 
-2. Compruebe las selecciones de retención de custodios y haga clic en **Finalizar**.
+2. Compruebe las selecciones de retención de custodios y haga clic en **siguiente**.
 
-Si no coloca una retención en un custodio, el custodio y sus orígenes de datos asociados se agregarán al caso, pero el contenido de los orígenes de datos no se pondrá en retención.
+   > [!NOTE]
+   > Si no pone una retención en un custodio, el custodio y sus orígenes de datos asociados se agregarán al caso, pero el contenido de dichos orígenes de datos no se mantendrá en la retención asociada con el caso.
 
-Una vez que un custodio se coloca en retención, se creará automáticamente una directiva de retención de custodios que contiene todas las fuentes de la Private. Para ver esta directiva:
+## <a name="step-4-review-the-custodians-and-complete-the-process"></a>Paso 4: revisar los custodios y completar el proceso
 
-1. En la página **principal** del caso, haga clic en la pestaña **suspensiones** y, a continuación, haga clic en **CustodianHold-GUID**  
+Antes de agregar realmente los custodios al caso, puede revisar la lista de custodios, las ubicaciones de datos que tienen asignadas y la configuración de retención.
 
-2. En la página flotante, haga clic en **Editar suspensión** para ver todos los orígenes de datos de custodios que se encuentran en suspensión.
+1. Compruebe y Revise todos los recuentos de los orígenes de datos y la configuración de retención asociada a cada custodio de la tabla. Si es necesario, vuelva a la página identificar la **configuración** de **custodios** o de suspensión para realizar cambios.
+
+2. Haga clic en **Enviar** para agregar custodios y sus ubicaciones de datos al caso y aplicar toda la configuración de retención.
+
+   Los nuevos custodios se agregan al caso y se muestran en la pestaña **orígenes de datos** .
+
+   [![Custodios que aparecen en la pestaña ](../media/DataSourcesTab.png) orígenes de datos](../media/DataSourcesTab.png#lightbox)
