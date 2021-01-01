@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4c731869d1ec1740f8c9173705f9af72b0e2fe53
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
+ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844757"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49741062"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Características de vista previa de Microsoft 365 defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "48844757"
 >Las versiones preliminares se proporcionan sin un contrato de nivel de servicio y no se recomienda para las cargas de trabajo de producción. Es posible que algunas características no se admitan o que tengan capacidades restringidas.
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 El servicio Microsoft 365 defender se actualiza constantemente para incluir nuevas funciones y mejoras de características.
 
@@ -62,6 +62,8 @@ Sabrá que tiene activada la versión preliminar de las características cuando 
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
 - **[API de microsoft 365 defender](api-overview.md)** : las API de lop de 365 de nivel de Microsoft le permitirán automatizar flujos de trabajo en función de las tablas de búsqueda avanzada y de incidentes compartidos. 
-- **[Emprender acciones en la búsqueda avanzada](advanced-hunting-take-action.md)** : contención de las amenazas o informarte de los activos comprometidos en [la búsqueda avanzada.](advanced-hunting-overview.md)
-- **[Referencia del esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia incluye los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
+- **[Emprender acciones en la búsqueda avanzada](advanced-hunting-take-action.md)**: contención de las amenazas o informarte de los activos comprometidos en [la búsqueda avanzada.](advanced-hunting-overview.md)
+- **[Referencia del esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: Obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia incluye los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
+- **[Función DeviceFromIP ()](advanced-hunting-devicefromip-function.md)**: Obtenga información acerca de los dispositivos a los que se les ha asignado una dirección IP o direcciones específicas en un intervalo de tiempo determinado.
+
 
