@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Cuando se inicia sesión con cuentas de trabajo o escuela válidas, los usuarios pueden obtener servicios de asistencia basados en la nube con Cortana en experiencias de Microsoft 365 que cumplan con las promesas de seguridad y privacidad de nivel empresarial de Office 365.
-ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: bd296b19d0e21abb39fe39e2a0bb92d0d84d9034
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785543"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751340"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana en Microsoft 365
 
@@ -37,7 +37,7 @@ Al avanzar, estamos enfocando a Cortana la productividad empresarial.
 
 - Al igual que otros servicios de Office 365, Cortana Enterprise Services cumple con las mismas promesas de privacidad, seguridad y cumplimiento en el nivel de empresa que se reflejan en los [términos de servicios en línea (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- Las nuevas experiencias de Microsoft 365, como el mensaje informativo y reproducir mis mensajes de correo electrónico, se habilitarán mediante los servicios de Cortana Enterprise Services y cumplirán todas esas promesas. Estas características están actualmente disponibles en el mercado inglés (Estados Unidos) para los usuarios con buzones de correo en el área geográfica estadounidense y para los empleados de corporaciones multinacionales con buzones de correo basados en Estados Unidos. Para obtener más información sobre cómo buscar la ubicación de uso, consulte [ver valores de propiedades adicionales para cuentas](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
+- Las nuevas experiencias de Microsoft 365, como el mensaje informativo y reproducir mis mensajes de correo electrónico, se habilitarán mediante los servicios de Cortana Enterprise Services y cumplirán todas esas promesas. Estas características están actualmente disponibles en todo el mundo (multiinquilino estándar). Para obtener más información sobre cómo buscar la ubicación de uso, consulte [ver valores de propiedades adicionales para cuentas](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Los usuarios pueden conectarse a los servicios empresariales de Cortana que se describen aquí a través de Cortana en Windows 10 (versión 2004 y posteriores), así como aplicaciones cliente, como Outlook para iOS y Android, sujetos a términos de licencia independientes. 
 
@@ -95,11 +95,11 @@ Los usuarios individuales pueden probar la asistencia de voz de Cortana en la ap
 
 1. Abra la aplicación móvil Teams o vaya a la pantalla ambiente (Inicio) de la pantalla de Microsoft Teams.
 
-2. En la aplicación móvil de Microsoft Teams, vaya a **configuración** . En la pantalla de Microsoft Teams, seleccione el avatar del usuario y, a continuación, seleccione Configuración. Si Cortana está habilitada, por ejemplo &#8220;Cortana, ve a configuración. &#8221;
+2. En la aplicación móvil de Microsoft Teams, vaya a **configuración**. En la pantalla de Microsoft Teams, seleccione el avatar del usuario y, a continuación, seleccione Configuración. Si Cortana está habilitada, por ejemplo &#8220;Cortana, ve a configuración. &#8221;
 
-3. Selecciona **Cortana** .
+3. Selecciona **Cortana**.
 
-4. Mueva el botón de alternancia a **activado** o **desactivado** , en función de si desea la asistencia de voz Cortana en el dispositivo.
+4. Mueva el botón de alternancia a **activado** o **desactivado**, en función de si desea la asistencia de voz Cortana en el dispositivo.
 
 [Obtenga más información sobre la asistencia de voz de Cortana en Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
@@ -115,9 +115,9 @@ Los usuarios individuales pueden optar por jugar a mis correos electrónicos sig
 
 1. Abra Outlook Mobile.
 
-2. Vaya a **configuración** .
+2. Vaya a **configuración**.
   
-3. Seleccione **reproducir mis mensajes de correo electrónico** .
+3. Seleccione **reproducir mis mensajes de correo electrónico**.
 
 4. Mueva el botón de alternancia a desactivado en las cuentas que desea deshabilitar.
 
@@ -141,7 +141,7 @@ Seguiremos introduciendo más experiencias como las anteriores para ayudar a aum
 
 Estas son las dos maneras de considerar cómo funciona Cortana en su empresa:
 
-**Nuevas experiencias para organizaciones con los servicios empresariales de Cortana** : los servicios de Cortana Enterprise Services están diseñados para satisfacer las necesidades de seguridad y cumplimiento de las organizaciones: 
+**Nuevas experiencias para organizaciones con los servicios empresariales de Cortana**: los servicios de Cortana Enterprise Services están diseñados para satisfacer las necesidades de seguridad y cumplimiento de las organizaciones: 
 
 1. Se trata de un nuevo servicio que se describe aquí en este documento.
 
@@ -151,7 +151,7 @@ Estas son las dos maneras de considerar cómo funciona Cortana en su empresa:
 
 4. Los administradores de ti siempre tendrán controles para experiencias opcionales conectadas a Cortana, similares a las experiencias conectadas opcionales mientras usan aplicaciones de Office ProPlus.  
 
-**Servicios existentes para consumidores** : los servicios conectados opcionales de Cortana están diseñados principalmente para experiencias de los consumidores y actualmente se proporcionan en Windows 10 (versión 1909 y anteriores) y la aplicación Cortana en iOS y Android.
+**Servicios existentes para consumidores**: los servicios conectados opcionales de Cortana están diseñados principalmente para experiencias de los consumidores y actualmente se proporcionan en Windows 10 (versión 1909 y anteriores) y la aplicación Cortana en iOS y Android.
 
 1. Estas experiencias permiten características como el tiempo, las noticias y el tráfico.
 
@@ -159,10 +159,10 @@ Estas son las dos maneras de considerar cómo funciona Cortana en su empresa:
 
 Desactivar el acceso de Cortana a los datos hospedados de Microsoft de la organización
 
-1. En el centro de administración de Microsoft 365, seleccione **configuración** de la  >  **organización** y seleccione **Cortana** .
+1. En el centro de administración de Microsoft 365, seleccione **configuración** de la  >  **organización** y seleccione **Cortana**.
 
 2. Desactive la casilla **permitir Cortana en Windows 10 (versión 1909 y anteriores) y la aplicación Cortana en iOS y Android, para acceder a los datos hospedados por Microsoft en nombre de las personas de su organización** para deshabilitar las experiencias conectadas de Cortana.
 
-3. Seleccione **Guardar cambios** .
+3. Seleccione **Guardar cambios**.
 
 Para los servicios controlados por el [contrato de servicios de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) y la declaración de privacidad de [Microsoft](https://privacy.microsoft.com/privacystatement), Microsoft es el controlador de datos. Como el controlador de datos, Microsoft usa datos para mejorar los productos y servicios conforme a la [declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).

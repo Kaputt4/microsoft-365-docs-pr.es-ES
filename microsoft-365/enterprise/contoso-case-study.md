@@ -14,16 +14,16 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia pero representativa adoptó Microsoft 365 para empresas.
-ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371617"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749571"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 para Enterprise para contoso Corporation
 
-Microsoft 365 para empresas es la oferta de Microsoft Premier Cloud que combina servicios y aplicaciones de productividad locales y basadas en la nube con Windows 10 Enterprise y características de seguridad avanzadas. Se trata de una solución inteligente y completa que permite a todo el mundo trabajar de forma creativa y segura.
+Microsoft 365 para empresas es la oferta de Microsoft Premier Cloud que combina servicios y aplicaciones de productividad locales y basadas en la nube con Windows 10 Enterprise y características de seguridad avanzadas. Se trata de una solución completa e inteligente que permite a todo el mundo trabajar de forma creativa y segura.
 
 Contoso Corporation es un conglomerado de fabricación global ficticio pero representativo con su sede en París. La compañía implementó Microsoft 365 para empresas y dirigió las decisiones de diseño principales y los detalles de implementación para redes, identidad, Windows 10 Enterprise, Microsoft 365 apps for Enterprise, administración de dispositivos móviles, protección de la información y seguridad.
 
@@ -69,7 +69,7 @@ Vea los siguientes artículos para obtener más información:
 
 Vea estos escenarios y configuraciones de ti adicionales:
 
-- [Respuesta e infraestructura de COVID-19 para trabajos remotos y en el sitio](../solutions/contoso-remote-onsite-work.md)
+- [Infraestructura y respuesta a COVID-19 para trabajo remoto e in situ](../solutions/contoso-remote-onsite-work.md)
 
   Obtenga información sobre cómo contoso actualizó su infraestructura de acceso remoto para el COVID-19 Pandemic y sus nuevas instalaciones y actualiza la infraestructura para el trabajo remoto y en el sitio.
 
@@ -86,7 +86,7 @@ Vea estos escenarios y configuraciones de ti adicionales:
 Obtenga información [sobre contoso Corporation](contoso-overview.md) y las consideraciones de diseño que se trataron al implementar Microsoft 365 para empresas.
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

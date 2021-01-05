@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo (también conocidas como reglas de transporte) para recibir copias de mensajes que los usuarios notifican a Microsoft.
-ms.openlocfilehash: 0f3046c9d1962366ffd75353347b6cf7b72afd14
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: ec7145b68548bb5e1d6841387a18e86b74ec2a78
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659861"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751576"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 
@@ -69,7 +69,7 @@ Puede crear la regla de flujo de correo en el centro de administración de Excha
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
-     - `false_positive@messaging.microsoft.com`
+     - `not_junk@office365.microsoft.com`
 
      Para editar una entrada, selecciónela y haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) . Para quitar una entrada, selecciónela y haga clic en **quitar** ![ icono quitar ](../../media/ITPro-EAC-DeleteIcon.png) .
 

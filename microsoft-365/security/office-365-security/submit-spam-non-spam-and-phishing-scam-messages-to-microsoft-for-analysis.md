@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores y los usuarios finales pueden obtener información sobre cómo realizar análisis a los mensajes de correo electrónico (se permite el correo marcado como correo incorrecto o malo) a Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877710"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751564"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
 
@@ -48,9 +48,9 @@ Si recibe un mensaje que pasa a través del filtrado de correo no deseado que de
 
 1. Cree un mensaje de correo electrónico nuevo en blanco con uno de los siguientes destinatarios:
 
-   - **Correo no deseado** : `junk@office365.microsoft.com`
+   - **Correo no deseado**: `junk@office365.microsoft.com`
 
-   - **Suplantación de identidad** : `phish@office365.microsoft.com`
+   - **Suplantación de identidad**: `phish@office365.microsoft.com`
 
 2. Arrastre y coloque el mensaje no deseado o de suplantación de identidad en el nuevo mensaje. Se guardará el mensaje no deseado o de suplantación de identidad (phishing) como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
@@ -90,6 +90,10 @@ Si un mensaje se identificó incorrectamente como correo no deseado, puede envia
 
 > [!TIP]
 > Los administradores tienen varias formas diferentes de permitir que mensajes específicos omitan el filtrado de correo no deseado. Para obtener más información, consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md).
+
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>¿Dónde se almacenan los datos de los envíos a Microsoft?
+
+Los datos residen en el límite de cumplimiento de Office 365 en los centros de datos norteamericanos. Los datos son revisados por los analistas en el equipo de ingeniería para ayudar a mejorar la eficacia de los filtros.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Crear una regla de flujo de correo para recibir copias de mensajes que se notifican a Microsoft
 

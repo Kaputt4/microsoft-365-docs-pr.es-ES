@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Información sobre la experiencia del usuario de SharePoint, OneDrive y Exchange en un entorno multigeográfico para Microsoft 365.
-ms.openlocfilehash: c94fc5569a5444ca6361712f57460cf0c977b18e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693785"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749580"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiencia del usuario en un entorno multigeográfico
 
@@ -44,7 +44,7 @@ Las aplicaciones de Office tales como Word, Excel y PowerPoint detectarán autom
 
 ## <a name="onedrive-for-business-sync-client"></a>Cliente de sincronización de OneDrive para la Empresa
 
-El cliente de sincronización de OneDrive para la Empresa (versión 17.3.6943.0625 y versiones posteriores) detectará automáticamente la ubicación geográfica correcta de OneDrive para la Empresa del usuario. La compatibilidad con clientes de sincronización incluye la posibilidad de sincronizar sitios basados en grupos independientemente de su ubicación geográfica. Tenga en cuenta que el cliente de sincronización de Groove no es compatible con las capacidades multigeográficas. 
+El cliente de sincronización de OneDrive para la Empresa (versión 17.3.6943.0625 y versiones posteriores) detectará automáticamente la ubicación geográfica correcta de OneDrive para la Empresa del usuario. La compatibilidad con el cliente de sincronización incluye la capacidad de sincronizar sitios basados en grupos independientemente de su ubicación geográfica. Tenga en cuenta que el cliente de sincronización de Groove no es compatible con las capacidades multigeográficas. 
 
 ## <a name="onedrive-for-business-location"></a>Ubicación de la instancia de OneDrive para la Empresa
 

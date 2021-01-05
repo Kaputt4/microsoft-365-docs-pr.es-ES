@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La guía básica para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398966"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749544"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
@@ -29,7 +29,7 @@ Microsoft 365 para empresas incluye características que ayudan a administrar lo
 Hay dos opciones para la administración de dispositivos:
 
 - [Microsoft Intune](#microsoft-intune)
-- [Movilidad y seguridad básica](#basic-mobility-and-security)
+- [Movilidad y seguridad básicas](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -39,7 +39,7 @@ Es posible que los usuarios con sus propios dispositivos personales no deseen in
 
 También determinará cómo va a administrar los dispositivos personales y los dispositivos de propiedad de la organización. Es posible que quiera tratar los dispositivos de forma diferente, en función de sus usos.
 
-## <a name="basic-mobility-and-security"></a>Movilidad y seguridad básica
+## <a name="basic-mobility-and-security"></a>Movilidad y seguridad básicas
 
 Esto está integrado en Microsoft 365 y le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhone, iPad, Android y Windows Phone. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
@@ -49,8 +49,8 @@ Para ayudarle a evaluar mejor qué opción de administración de dispositivos es
 
 En función de la evaluación, empiece a administrar sus dispositivos con:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
-- [Movilidad y seguridad básicas](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd).
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Movilidad y seguridad básicas](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 

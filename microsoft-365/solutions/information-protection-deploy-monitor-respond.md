@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use las directivas de auditoría y alerta y las solicitudes de sujetos de datos para supervisar y responder a los incidentes de datos personales.
-ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377204"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749592"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisar y responder a los incidentes de privacidad de los datos de la organización
 
 Las características de Microsoft 365 están disponibles para ayudarle a supervisar, investigar y responder a los incidentes de privacidad de los datos de su organización a medida que opera las capacidades relacionadas. Tener procesos, procedimientos y otra documentación para cada uno de ellos también puede ser importante para demostrar el cumplimiento de los organismos reguladores.
 
-Entre ellos se incluyen: 
+Entre ellas se incluyen: 
 
 - Directivas de auditoría y alerta
 - Solicitudes de los interesados (incluida la búsqueda de contenido y eDiscovery)
@@ -78,9 +78,6 @@ Consulte [solicitudes de interesados de datos para RGPD y CCPA](../compliance/gd
 
 Para Microsoft Stream, cuando se elimina un usuario de Azure Active Directory (Azure AD), si su nombre estaba asociado con un vídeo de transmisión por secuencias anterior a ese punto, su dirección de correo electrónico permanece asociada al vídeo. Consulte [administrar usuarios eliminados de Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) para quitarlo.
 
-## <a name="additional-investigative-tools"></a>Herramientas de investigación adicionales
+## <a name="insider-risk-management-as-an-investigative-tool"></a>Administración de riesgos de Insider como herramienta de investigación
 
-A continuación se muestran dos herramientas adicionales que podrían ser útiles para supervisar, investigar y corregir incidentes relacionados con la privacidad de los datos en su organización:
-
-- [Administración de riesgos de Insider en microsoft 365](../compliance/insider-risk-management.md), una característica del centro de administración de cumplimiento de Microsoft para ayudar a minimizar el riesgo interno, ya que permite detectar, investigar y realizar acciones en actividades de riesgo de la organización.
-- [Investigaciones de datos en microsoft 365](../compliance/overview-data-investigations.md), una característica del centro de administración de cumplimiento de Microsoft para buscar datos confidenciales, malintencionados o mal colocados en Microsoft 365 y, a continuación, investigar qué ocurrió para llevar a cabo las acciones adecuadas para corregir el incidente.
+La [Administración de riesgos de Insider en microsoft 365](../compliance/insider-risk-management.md) es una característica del centro de administración de cumplimiento de Microsoft que le ayuda a minimizar el riesgo interno, ya que permite detectar, investigar y realizar acciones en actividades de riesgo de la organización.

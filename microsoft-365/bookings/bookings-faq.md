@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Preguntas más frecuentes de Microsoft bookings.
-ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561560"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751386"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Preguntas más frecuentes sobre Microsoft bookings
 
@@ -34,6 +34,10 @@ Bookings está disponible y activo de forma predeterminada para los clientes de 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>¿Mis clientes verán mi calendario personal o de negocio?
 
 Los clientes solo verán el calendario de reservas que publique en línea para los servicios, las horas y el personal que decida registrar.
+
+### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>¿Cómo puedo cambiar un atributo bookable en Manage staff?
+
+Cuando se agregaron miembros del personal, habrían recibido un correo electrónico para aceptar o rechazar la solicitud. Pueden abrir el mismo correo electrónico y seleccionar "rechazar" para que no bookable. Actualmente no hay ninguna forma de cambiar esto desde el interior de la aplicación.
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>¿Cómo acceden los usuarios finales a la aplicación de reservas?
 
@@ -324,7 +328,7 @@ Para que los pedidos se sincronicen correctamente con los calendarios de los mie
 
 Si un empleado abandonó la compañía y la ha quitado de su organización de Microsoft 365 u Office 365, aún tendrá que quitar ese usuario de reservas para que no aparezca en el calendario y para evitar que los clientes reserven citas con ellos.
 
-1. Inicie sesión en Microsoft 365 y, a continuación, vaya al personal de **reservas** \> **Staff**.
+1. Inicie sesión en Microsoft 365 y, a continuación, vaya al personal de **reservas** \> .
 
 1. Sitúe el cursor del mouse sobre el nombre del miembro del personal. Los iconos **Editar** y **eliminar** aparecen a la derecha de la columna **teléfono** .
 
@@ -354,11 +358,11 @@ Si sigue viendo este error después de un período de tiempo prolongado o si lo 
 
   - [Empezar a usar Microsoft bookings](get-access.md)
 
-  - [Activar o desactivar Microsoft bookings](turn-bookings-on-or-off.md)
+  - [Activa o desactiva Microsoft Bookings](turn-bookings-on-or-off.md)
 
   - [Agregar usuarios individualmente o de forma masiva](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [Agregar personal a las reservas](add-staff.md)
+  - [Agregar personal a Bookings](add-staff.md)
 
   - [Componentes de la API para automatizar una vez que se ha definido la plantilla](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 
