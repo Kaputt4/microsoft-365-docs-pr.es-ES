@@ -1,5 +1,5 @@
 ---
-title: Cómo recapacitar un clasificador en el cumplimiento de comunicaciones (versión preliminar)
+title: Cómo recapacitar un clasificador en el cumplimiento de comunicaciones
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,22 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo proporcionar comentarios a un clasificador capacitado en el cumplimiento de comunicaciones.
-ms.openlocfilehash: 1466c211e3a4958f58a7c1f1a6a5a77bed881d60
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: cdb8787715c3e022dfa0aa17cd83cc405aeef955
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132358"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752654"
 ---
-# <a name="how-to-retrain-a-classifier-in-communications-compliance-preview"></a>Cómo recapacitar un clasificador en el cumplimiento de comunicaciones (versión preliminar)
+# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>Cómo recapacitar un clasificador en el cumplimiento de comunicaciones
 
 Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. Una vez preparado, puede usarlo para identificar el elemento para la aplicación de las etiquetas de confidencialidad de Office, las directivas de cumplimiento de comunicaciones y las directivas de etiquetas de retención.
 
 En este artículo se muestra cómo mejorar el rendimiento de los clasificadores que se puede entrenar de forma personalizada y algunos clasificadores previamente entrenados proporcionándoles comentarios adicionales.
 
-Para obtener más información acerca de los diferentes tipos de clasificadores, consulte [información sobre los clasificadores que se puedan entrenar (versión preliminar)](classifier-learn-about.md).
+Para obtener más información acerca de los diferentes tipos de clasificadores, consulte [información sobre los clasificadores](classifier-learn-about.md)que se puedan entrenar.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Para acceder a los clasificadores en el centro de cumplimiento de Microsoft 365:
 
@@ -52,7 +52,7 @@ Para obtener más información sobre el flujo de trabajo general de volver a ent
 > [!NOTE]
 > Un clasificador ya debe estar publicado y en uso antes de que se pueda volver a entrenar.
 
-## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies-preview"></a>Cómo recapacitar un clasificador en directivas de cumplimiento de comunicaciones (versión preliminar)
+## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies"></a>Cómo recapacitar un clasificador en directivas de cumplimiento de comunicaciones
 
 1. Abra la Directiva de cumplimiento de comunicaciones que usa un clasificador como condición y elija uno de los elementos identificados de la lista **pendiente** .
 2. Elija los puntos suspensivos y **mejore la clasificación**.
@@ -68,7 +68,7 @@ Para obtener más información sobre el flujo de trabajo general de volver a ent
 > Esta información va al clasificador en el espacio empresarial, no **se vuelve a Microsoft**.
 
 6.  Abra la página **clasificación de datos** en el centro de cumplimiento de **Microsoft 365**.
-7. Abra clasificadores que se van a **entrenar (versión preliminar)**.
+7. Abra **clasificadores** que se van a entrenar.
 8. El clasificador que se usó en la Directiva de cumplimiento de comunicaciones aparecerá en el encabezado **de reentrenamiento** .
 
 ![clasificador en estado de reaprendizaje](../media/classifier-retraining.png)
@@ -94,5 +94,5 @@ Comparamos los números de rendimiento en ambos conjuntos de elementos del clasi
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener información sobre los clasificadores capacitados (versión preliminar)](classifier-learn-about.md)
+- [Obtener información sobre los clasificadores capacitados](classifier-learn-about.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

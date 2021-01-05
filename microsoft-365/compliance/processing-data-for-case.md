@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Información general sobre el procesamiento de varios formularios de datos en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285246"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751517"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Trabajar con errores de procesamiento en eDiscovery avanzado
 
@@ -33,10 +33,10 @@ Cuando se agregan los orígenes de datos de custodios y no custodios a un caso e
 
 La pestaña **procesamiento** en eDiscovery avanzado proporciona información sobre el estado de la indización avanzada para diferentes escenarios de procesamiento.
 
-Para obtener más información, consulte los siguientes artículos:
+Para más información, consulte los siguientes artículos:
 
 - [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 
-- [Corrección de errores al procesar los datos](error-remediation.md)
+- [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Corrección de errores de un único elemento](single-item-error-remediation.md)

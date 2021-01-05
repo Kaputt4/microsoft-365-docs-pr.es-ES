@@ -1,5 +1,5 @@
 ---
-title: Clave de cliente de Microsoft 365 en el nivel de inquilino (vista previa pública)
+title: Clave de cliente para Microsoft 365 en el nivel de espacio empresarial (versión preliminar pública)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para todos los datos de su inquilino de Microsoft 365.
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712534"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751276"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Información general sobre la clave de cliente para Microsoft 365 en el nivel de espacio empresarial (vista previa pública)
 
@@ -59,7 +59,7 @@ Completará la mayoría de estas tareas conectándose de forma remota a Azure Po
 Antes de empezar, asegúrese de lo siguiente:
 
 - Deberá usar una cuenta profesional o educativa que tenga el rol de administrador de cumplimiento para configurar la clave de cliente en el nivel de inquilino.
-- Asegúrese de que dispone de la licencia adecuada para su organización. Use una suscripción de Azure facturada y pagada mediante un contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure adquiridas mediante planes de pago a cuenta o con una tarjeta de crédito no se admiten para la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles. Aunque el servicio se puede habilitar con un mínimo de una licencia en el inquilino con la licencia adecuada, debe asegurarse de que todos los usuarios que se beneficien del servicio tengan las licencias adecuadas. Necesitará una de las siguientes licencias:
+- Asegúrese de que dispone de la licencia adecuada para su organización. Use una suscripción de Azure facturada y pagada mediante un contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure adquiridas mediante planes de pago a cuenta o con una tarjeta de crédito no se admiten para la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles. Aunque el servicio se puede habilitar con un mínimo de una licencia en el inquilino con la licencia adecuada, debe asegurarse de que todos los usuarios que se beneficien del servicio tengan las licencias adecuadas.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Crear dos nuevas suscripciones de Azure
 
@@ -314,7 +314,7 @@ Parámetros:
 
 | Nombre | Descripción | Opcional (s/N) |
 |--|--|--|
-|Name|Nombre descriptivo de la Directiva de cifrado de datos|N|
+|Nombre|Nombre descriptivo de la Directiva de cifrado de datos|N|
 |AzureKeyIDs|Especifica dos valores de URI de las claves de Azure Key Vault, separados por una coma, para asociar con la Directiva de cifrado de datos|N|
 |Descripción|Descripción de la Directiva de cifrado de datos|N|
 

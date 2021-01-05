@@ -17,26 +17,26 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de exhibición avanzada de documentos electrónicos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033824"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751375"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en eDiscovery avanzado
 
 Cuando el número de documentos recopilados es grande, puede ser difícil revisarlos todos. EDiscovery avanzado proporciona una serie de herramientas para analizar los documentos para reducir el volumen de documentos que se van a revisar sin ninguna pérdida de información y para ayudarle a organizar los documentos de forma coherente. Para obtener más información acerca de estas funciones, consulte:
 
-- [Detección de semiduplicados](near-duplicates.md)
+- [Detección de semiduplicados](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [Subprocesos de correo electrónico](email-threading.md)
+- [Subprocesos de correo electrónico](email-threading-in-advanced-ediscovery.md)
 
-- [Temas](themes.md)
+- [Temas](themes-in-advanced-ediscovery.md)
 
 Para analizar los datos de un conjunto de revisión:
 
-1. Configure las opciones de análisis en su caso. Para obtener más información, vea [Configure Search and Analytics Settings](configure-search-analytics-settings.md).
+1. Configure las opciones de análisis en su caso. Para obtener más información, vea [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
 
 2. Abra el conjunto de revisiones que desee analizar.
 

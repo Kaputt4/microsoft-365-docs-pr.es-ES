@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso de eDiscovery avanzado, cualquier contenido que se considere indizado parcialmente se reprocesa para que se pueda buscar por completo.
-ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527560"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750761"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
@@ -43,7 +43,7 @@ Una vez completado el proceso de indización avanzado, puede comprender la efect
 
 Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para obtener más información, vea:
 
-- [Corrección de errores al procesar los datos](error-remediation.md)
+- [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Corrección de errores de un único elemento](single-item-error-remediation.md)
 

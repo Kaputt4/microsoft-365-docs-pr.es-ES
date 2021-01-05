@@ -1,5 +1,5 @@
 ---
-title: Cómo recapacitar un clasificador en el explorador de contenido (versión preliminar)
+title: Cómo recapacitar un clasificador en el explorador de contenido
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,22 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo enviar comentarios a un clasificador capacitado en el explorador de contenido.
-ms.openlocfilehash: 0fbce595894cbbf2a017fc1bf657b14a5b812e29
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 786ebb682e9cdd96c0c6503294bd4f316f777f68
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132359"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752628"
 ---
-# <a name="how-to-retrain-a-classifier-in-content-explorer-preview"></a>Cómo recapacitar un clasificador en el explorador de contenido (versión preliminar)
+# <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo recapacitar un clasificador en el explorador de contenido
 
 Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. Una vez preparado, puede usarlo para identificar el elemento para la aplicación de las etiquetas de confidencialidad de Office, las directivas de cumplimiento de comunicaciones y las directivas de etiquetas de retención.
 
 En este artículo se muestra cómo mejorar el rendimiento de los clasificadores que se puede entrenar de forma personalizada y algunos clasificadores previamente entrenados proporcionándoles comentarios adicionales.
 
-Para obtener más información acerca de los diferentes tipos de clasificadores, consulte [información sobre los clasificadores que se puedan entrenar (versión preliminar)](classifier-learn-about.md).
+Para obtener más información acerca de los diferentes tipos de clasificadores, consulte [información sobre los clasificadores](classifier-learn-about.md)que se puedan entrenar.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Para acceder a los clasificadores en el centro de cumplimiento de Microsoft 365:
 
@@ -52,10 +52,10 @@ Para obtener más información sobre el flujo de trabajo general de volver a ent
 > [!NOTE]
 > Un clasificador ya debe estar publicado y en uso antes de que se pueda volver a entrenar.
 
-## <a name="how-to-retrain-a-classifier-in-content-explorer-preview"></a>Cómo recapacitar un clasificador en el explorador de contenido (versión preliminar)
+## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Cómo recapacitar un clasificador en el explorador de contenido
 
-1. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y abra el explorador de contenido de clasificación de datos del **centro de cumplimiento de Microsoft 365**  >  **Data classification**  >  **Content explorer**. 
-2. En la lista **filtrar por etiquetas, tipos de información o categorías** , expanda **clasificadores**que se pueden entrenar.
+1. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y abra el explorador de contenido de clasificación de datos del **centro de cumplimiento de Microsoft 365**  >    >  . 
+2. En la lista **filtrar por etiquetas, tipos de información o categorías** , expanda **clasificadores** que se pueden entrenar.
 
 > [!IMPORTANT]
 > Los elementos agregados pueden tardar hasta ocho días en aparecer en el encabezado clasificadores capacitados.
@@ -78,7 +78,7 @@ Para obtener más información sobre el flujo de trabajo general de volver a ent
 > [!IMPORTANT]
 > Esta información va al clasificador en el espacio empresarial, no **se vuelve a Microsoft**.
 
-9. Abra clasificadores que se van a **entrenar (versión preliminar)**.
+9. Abra **clasificadores** que se van a entrenar.
 10. El clasificador que se usó en la Directiva de cumplimiento de comunicaciones aparecerá en el encabezado **de reentrenamiento** .
 
 ![clasificador en estado de reaprendizaje](../media/classifier-retraining.png)
@@ -104,5 +104,5 @@ Comparamos los números de rendimiento en ambos conjuntos de elementos del clasi
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener información sobre los clasificadores capacitados (versión preliminar)](classifier-learn-about.md)
+- [Obtener información sobre los clasificadores capacitados](classifier-learn-about.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

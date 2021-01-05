@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Aprenda a establecer la directiva de expiración de contraseñas para su organización en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787527"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751506"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -56,18 +56,18 @@ Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuar
 > [!IMPORTANT]
 > Solo los [administradores globales](../add-users/about-admin-roles.md) pueden realizar estos pasos.
   
-1. En el centro de administración, vaya a **Configuración** \> **Ajustes de organización** .
+1. En el centro de administración, vaya a **Configuración** \> **Ajustes de organización**.
 
 2. Vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">seguridad y privacidad</a>.
  Si no es administrador global, no verá la opción de seguridad y privacidad.
   
 3. Establecer la **directiva de expiración de contraseña**
   
-4. Cuando no desee que los usuarios tengan que cambiar de contraseña, seleccione la casilla de verificación situada junto a **establecer que las contraseñas de usuario nunca expiren tras un cierto número de días** .
+4. Si no desea que los usuarios tengan que cambiar de contraseña, anule la selección de la casilla situada junto a **Establecer que las contraseñas de usuario nunca expiren tras un cierto número de días**.
   
 5. Escriba la frecuencia en la que deben expirar las contraseñas. Elija un número de días entre 14 y 730.
   
-6. Escriba en la segunda casilla cuándo se debe informar a los usuarios sobre la expiración de su contraseña y luego seleccione **guardar** . Elija una cantidad de días entre 1 y 30.
+6. Escriba en la segunda casilla cuándo se debe informar a los usuarios sobre la expiración de su contraseña y luego seleccione **guardar**. Elija una cantidad de días entre 1 y 30.
 
 7. Cuando la contraseña del usuario expira, recibirá una notificación que aparece en la esquina inferior derecha de la pantalla.
   

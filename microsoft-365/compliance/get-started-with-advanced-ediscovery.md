@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: dd3ddb3e5ef3a46fc0b7b4925b639975167c15d2
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 45443620f294489c3afb4392376c9fe999fa098b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350728"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751097"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a eDiscovery avanzado
 
@@ -153,7 +153,7 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
 2. **[Buscar orígenes de datos de apoyo para datos relevantes para el caso](collecting-data-for-ediscovery.md)**. Después de agregar custodios a un caso, use la herramienta de búsqueda integrada para buscar en las ubicaciones de datos del custodio los datos que puedan ser relevantes para el caso. Se usan palabras clave, propiedades y condiciones para [crear consultas de búsqueda](building-search-queries.md) que devuelven los resultados de la búsqueda con los datos que es más probable que sean relevantes para el caso. También puede:
 
-   - Ver las [estadísticas de búsqueda](search-statistics.md) que pueden ayudarle a refinar una consulta de búsqueda para restringir los resultados.
+   - Ver las [estadísticas de búsqueda](search-statistics-in-advanced-ediscovery.md) que pueden ayudarle a refinar una consulta de búsqueda para restringir los resultados.
 
    - Obtenga una vista previa de los resultados de la búsqueda para comprobar rápidamente si se encuentran los datos relevantes.
 

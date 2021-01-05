@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo identificar un conjunto de documentos para su revisión en una investigación mediante la herramienta de búsqueda en eDiscovery avanzado.
 ms.custom: seo-marvel-2020
-ms.openlocfilehash: 725c289324a8e4d5bd4d7a7b9ddd9e091b6d6241
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: b69127f1a372a9b843b9c7dac1b2909dd80b2988
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956203"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751277"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Recopilar datos para un caso en eDiscovery avanzado
 
@@ -44,9 +44,9 @@ Una vez completada la estimación de la búsqueda, seleccione la búsqueda para 
 
 - Resumen
 - Principales ubicaciones
-- Queries
+- Consultas
 
-Para obtener más información acerca de las estadísticas de búsqueda, vea [estadísticas de búsqueda](search-statistics.md).
+Para obtener más información acerca de las estadísticas de búsqueda, vea [estadísticas de búsqueda](search-statistics-in-advanced-ediscovery.md).
 
 Una vez completada la vista previa, el botón **vista previa** estará activo. Selecciónelo para obtener una vista previa de un subconjunto muestreado de los resultados.
 

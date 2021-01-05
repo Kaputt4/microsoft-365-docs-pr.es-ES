@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos en la exhibición avanzada de documentos electrónicos que podría impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8ada53dd6339541fc39b37903a0f58fd4ad84c8c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c6ef1076e44fca0d060d766fc85a435550c40059
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035914"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750803"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -79,7 +79,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
     Si se descargan varios archivos, cada uno de ellos se descarga en una subcarpeta que se nombra con el identificador de archivo.
 
     > [!IMPORTANT]
-    > Al cargar archivos en el paso 9 y el paso 10, los archivos corregidos deben tener el mismo nombre de archivo y estar ubicados en la misma estructura de subcarpetas. La subcarpeta y los nombres de archivo se usan para asociar el archivo corregido con el archivo de errores original. Si se modifica la estructura de la carpeta o los nombres de archivo, recibirá el `Cannot apply Error Remediation to the current Workingset`siguiente error:. Para evitar problemas, le recomendamos que conserve los archivos corregidos en la misma estructura de carpetas primarias y subcarpetas.
+    > Al cargar archivos en el paso 9 y el paso 10, los archivos corregidos deben tener el mismo nombre de archivo y estar ubicados en la misma estructura de subcarpetas. La subcarpeta y los nombres de archivo se usan para asociar el archivo corregido con el archivo de errores original. Si se modifica la estructura de la carpeta o los nombres de archivo, recibirá el siguiente error: `Cannot apply Error Remediation to the current Workingset` . Para evitar problemas, le recomendamos que conserve los archivos corregidos en la misma estructura de carpetas primarias y subcarpetas.
 
 7. Después de descargar los archivos, puede corregirlos con una herramienta adecuada. Para los archivos protegidos con contraseña, hay varias herramientas de averiguación de contraseñas que puede usar. Si conoce las contraseñas de los archivos, puede abrirlas y quitar la protección con contraseña.
 
@@ -93,7 +93,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en caso
 
 10. Copie el comando predefinido; para ello, haga clic en **copiar al portapapeles**. Abra un símbolo del sistema de Windows, pegue el comando AzCopy y, a continuación, presione **entrar**. cargar los archivos.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![Resultados de la carga correcta de archivos corregidos en Azcopy](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Después de ejecutar el comando AzCopy, haga clic en **siguiente: procesar archivos**.
 
@@ -105,7 +105,7 @@ En situaciones en las que la exhibición de documentos electrónicos avanzado no
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Corrección de errores mediante la carga del texto extraído
 
-A veces no es posible corregir un archivo en formato nativo que la exhibición avanzada de documentos electrónicos pueda interpretar. Sin embargo, puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado " *superposición de texto*"). Para ello, siga los pasos que se describen en este artículo, pero, en lugar de corregir el archivo original en formato nativo, debe crear un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargar el archivo de texto con el nombre de archivo original anexado con un sufijo. txt. Por ejemplo, puede descargar un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. Abra el archivo en la aplicación nativa, copie el texto y, a continuación, péguelo en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. txt. Al hacerlo, asegúrese de quitar el archivo original en formato nativo de la ubicación de archivos corregidos en el equipo local antes de cargar el archivo de texto corregido en la exhibición avanzada de documentos electrónicos.
+A veces no es posible corregir un archivo en formato nativo que la exhibición avanzada de documentos electrónicos pueda interpretar. Sin embargo, puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado " *superposición de texto*"). Para ello, siga los pasos que se describen en este artículo, pero, en lugar de corregir el archivo original en formato nativo, debe crear un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargar el archivo de texto con el nombre de archivo original anexado con un sufijo. txt. Por ejemplo, puede descargar un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. El archivo se abre en la aplicación nativa, se copia el texto y, a continuación, se pega en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Al hacerlo, asegúrese de quitar el archivo original en formato nativo de la ubicación de archivos corregidos en el equipo local antes de cargar el archivo de texto corregido en la exhibición avanzada de documentos electrónicos.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Qué sucede cuando se corrigen los archivos
 
@@ -121,4 +121,4 @@ Cuando se cargan los archivos corregidos, se conservan los metadatos originales 
 - WordCount
 - WorkingsetId
 
-Para obtener una definición de todos los campos de metadatos en eDiscovery avanzado, consulte [campos de metadatos del documento](document-metadata-fields.md).
+Para obtener una definición de todos los campos de metadatos en eDiscovery avanzado, consulte [campos de metadatos del documento](document-metadata-fields-in-advanced-ediscovery.md).

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure las opciones avanzadas de eDiscovery que se aplican a todo el conjunto de revisiones en un caso. Esto incluye la configuración de los análisis y el reconocimiento óptico de caracteres.
-ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277090"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751307"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en la exhibición avanzada de documentos electrónicos
 
@@ -50,7 +50,7 @@ Para configurar las opciones de búsqueda y análisis para un caso:
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicación cercana y subprocesamiento de correo electrónico
 
-En esta sección, puede establecer parámetros para la detección de duplicados, la detección de mensajes casi duplicados y el hilo de correo electrónico. Para obtener más información, vea cerca de la [detección de duplicados](near-duplicates.md) y el [procesamiento de correo electrónico](email-threading.md).
+En esta sección, puede establecer parámetros para la detección de duplicados, la detección de mensajes casi duplicados y el hilo de correo electrónico. Para obtener más información, vea cerca de la [detección de duplicados](near-duplicate-detection-in-advanced-ediscovery.md) y el [procesamiento de correo electrónico](email-threading-in-advanced-ediscovery.md).
 
 - **Subprocesos Near duplicados/correo electrónico:** Cuando se activa, la detección de duplicados, la detección de duplicados Near y el procesamiento de correo electrónico se incluyen como parte del flujo de trabajo al ejecutar análisis en los datos de un conjunto de revisión.
 

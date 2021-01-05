@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1cb707c47594b59bcb762aac5c25eaa03b33dbf1
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 7d1d52356bd3b165c24f10a20a57373a6171b8b3
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988580"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751475"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
@@ -69,7 +69,6 @@ La sección de **& respuesta de detección** de la Página principal muestra de 
 Desde aquí, verá tarjetas para las siguientes soluciones:
 
 - [Audit](search-the-audit-log-in-security-and-compliance.md): registra la actividad de usuario y de administrador de su organización para que pueda buscar en el registro de auditoría e investigar una lista completa de actividades en todas las ubicaciones y servicios.
-- [Investigaciones de datos](overview-data-investigations.md): busca en las ubicaciones de contenido para identificar datos confidenciales, malintencionados o mal colocados en ubicaciones de Microsoft 365, de modo que pueda investigar y corregir cualquier incidente, como la derramación de datos.
 - [Solicitudes de interesados de datos](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): busca y exporta los datos personales de un usuario para ayudarle a responder a las solicitudes del interesado para RGPD.
 - [Exhibición de documentos electrónicos (eDiscovery)](manage-legal-investigations.md)
     - [Exhibición](ediscovery-cases.md)de documentos electrónicos principal: busca en las ubicaciones de contenido para identificar, conservar y exportar datos en respuesta a solicitudes de descubrimiento legal y casos de exhibición de documentos electrónicos.
@@ -79,7 +78,7 @@ Desde aquí, verá tarjetas para las siguientes soluciones:
 
 Para visitar el catálogo de soluciones de 365 de Microsoft, vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la Página principal del catálogo.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué no veo el catálogo de soluciones de Microsoft 365?**
 
@@ -93,13 +92,13 @@ Si está buscando una solución de cumplimiento existente y no está disponible 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- **Visite el administrador de cumplimiento de Microsoft** , que le ayudará a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [Administrador de cumplimiento](compliance-manager.md).
+- **Visite el administrador de cumplimiento de Microsoft**, que le ayudará a comprender el estado de cumplimiento de la organización con respecto a los estándares y regulaciones clave. Proporciona las acciones recomendadas que puede realizar para fortalecer su postura general de cumplimiento y proporciona funciones de flujo de trabajo que le ayudarán a llevar a cabo esas acciones de manera eficaz. Para obtener más información, consulte [Administrador de cumplimiento](compliance-manager.md).
 
 - **Configure las directivas de administración de riesgos de Insider** para ayudar a minimizar los riesgos internos y permitirle detectar, investigar y emprender acciones para actividades arriesgadas en su organización. Consulte [Administración de riesgos de Insider](insider-risk-management.md).
 
 - **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente las infracciones de directivas corporativas sobre código de conducta. Consulte [cumplimiento](communication-compliance.md)de la comunicación.
 
-- **Microsoft Information Protection** , obtenga información sobre cómo las soluciones de Microsoft 365 le ayudarán a descubrir, clasificar y proteger información confidencial en cualquier lugar en que se encuentre o viaje.
+- **Microsoft Information Protection**, obtenga información sobre cómo las soluciones de Microsoft 365 le ayudarán a descubrir, clasificar y proteger información confidencial en cualquier lugar en que se encuentre o viaje.
     - **Familiarícese con y configure Microsoft Cloud App Security**. Consulte [QuickStart: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
     - Empezar **a trabajar con clasificadores**. Clasificar el contenido y, a continuación, etiquetarlo para que se pueda proteger y administrar correctamente es el punto de partida de la disciplina de protección de la información. Vea [más información sobre los clasificadores que se capacitan (versión preliminar)](classifier-learn-about.md).
 

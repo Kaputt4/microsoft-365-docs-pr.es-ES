@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612969"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750814"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -63,23 +63,28 @@ Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Le sugerimos **Confidencialidad alta**, pero puede elegir otro nombre si ya está en uso.
-5. Agregue información sobre herramientas y haga clic en **Siguiente**.
-6. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
-7. En **Asignar permisos a usuarios y grupos específicos**, haga clic en **Asignar permisos**.
-8. Haga clic en **Agregar todos los usuarios y grupos de su organización**.
-9. Si existen invitados que deben tener permisos para descifrar los archivos, haga clic en **Agregar usuarios o grupos** y agréguelos.
-10.  Haga clic en **Guardar** y después en **Siguiente**.
-11. En la página **Marcado de contenido**, active la marcación del contenido si quiere agregar automáticamente un encabezado, un pie de página o una marca de agua a los archivos clasificados con esta etiqueta.
-12. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.
-13. En el menú desplegable **Privacidad de los sitios de equipo conectados a grupos de Office 365**, elija **Privado: solo los miembros pueden acceder al sitio**.
-14. Si desea permitir el acceso de invitado, seleccione la casilla de verificación **Permitir que los propietarios del grupo de Office 365 agreguen personas ajenas a la organización al grupo**. 
-15. En **Equipos no administrados**, elija **Bloquear el acceso**.
-16. Haga clic en **Siguiente**.
-17. En la página **Etiquetado automático para las aplicaciones de Office**, haga clic en **Siguiente**.
-18. Haga clic en **Enviar** y después en **Listo**.
+4. Asigne un nombre a la etiqueta. Le sugerimos **confidencial**, pero puede elegir otro nombre si ya está en uso.
+5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
+6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
+7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.
+8. En la página **Cifrado**, elija **Configurar opciones de cifrado**.
+9. En **Asignar permisos a usuarios y grupos específicos**, haga clic en **Asignar permisos**.
+10. Haga clic en **Agregar todos los usuarios y grupos de su organización**.
+11. Si existen invitados que deben tener permisos para descifrar los archivos, haga clic en **Agregar usuarios o grupos** y agréguelos.
+12.  Haga clic en **Guardar** y después en **Siguiente**.
+13. En la página *Etiquetado automático para archivos y mensajes de correo electrónico**, haga clic en **Siguiente**.
+14. En la página **Definir la configuración de protección de los sitios y grupos**, seleccione **Configuración de privacidad y acceso de usuarios externo** y **Configuración de acceso de dispositivo y uso compartido externo** y haga clic en **Siguiente**.
+15. En la página **Definir privacidad y acceso a usuarios externos**, en **Privacidad**, seleccione la opción **Privado**.
+16. Si desea permitir el acceso de invitado, en **Acceso de usuarios externos**, seleccione **Permitir que los propietarios del grupo de Microsoft 365 agreguen personas de fuera de su organización al grupo como invitados**.
+17. Haga clic en **Siguiente**.
+18. En la página **Definir el uso compartido externo y el acceso al dispositivo**, seleccione **Controlar el uso compartido externo en sitios de SharePoint etiquetados**.
+19. En **El contenido se puede compartir con**, elija **Invitados nuevos y existentes** si va a permitir el acceso de invitado o **Solo los usuarios de su organización** en caso contrario.
+20. En **Equipos no administrados**, elija **Bloquear el acceso**.
+21. Haga clic en **Siguiente**.
+22. En la página **Etiquetado automático para las columnas de la base de datos**, haga clic en **Siguiente**.
+23. Haga clic en **Crear etiqueta** y después en **Listo**.
 
-Una vez que haya creado la etiqueta, debe publicarla para los usuarios que la van a usar. Para la protección confidencial, haremos que la etiqueta esté disponible para todos los usuarios. Publique la etiqueta en el Centro de cumplimiento de Microsoft 365, en la pestaña **Directivas de etiqueta** de la página **Protección de la información**. Si tiene una directiva existente que se aplica a todos los usuarios, agregue esta etiqueta a esa directiva. Si necesita crear una directiva nueva, vea [Publicar etiquetas de confidencialidad creando una directiva de etiqueta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van a usar. Para la protección confidencial, haremos que la etiqueta esté disponible para todos los usuarios. Publique la etiqueta en el Centro de cumplimiento de Microsoft 365, en la pestaña **Directivas de etiqueta** de la página **Protección de la información**. Si tiene una directiva existente que se aplica a todos los usuarios, agregue esta etiqueta a esa directiva. Si necesita crear una directiva nueva, vea [Publicar etiquetas de confidencialidad creando una directiva de etiqueta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Crear un equipo
 
@@ -92,7 +97,7 @@ Para crear un equipo para información con un nivel de confidencialidad alto
 4. En la lista **Confidencialidad**, elija la etiqueta **Confidencialidad alta** que acaba de crear.
 5. En **Privacidad**, haga clic en **Privado**.
 6. Escriba un nombre para el equipo y haga clic en **Crear**.
-7. Agregue usuarios al equipo y haga clic en **Cerrar**.
+7. Agregue usuarios al equipo y, después, haga clic en **Cerrar**.
 
 ## <a name="private-channel-settings"></a>Configuración de canal privado
 
@@ -103,7 +108,7 @@ Para restringir la creación de un canal privado
 2. En la pestaña **Configuración**, expanda **Permisos de los miembros**.
 3. Desactive la casilla de verificación **Permitir a los miembros crear canales privados**.
 
-También puede usar [directivas de equipos](https://docs.microsoft.com/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
+También puede usar [Directivas de equipos](https://docs.microsoft.com/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
 
 ## <a name="sharepoint-settings"></a>Configuración de SharePoint
 
@@ -114,7 +119,7 @@ Cada vez que cree un nuevo equipo con la etiqueta de confidencialidad alta, debe
 
 ### <a name="site-guest-sharing-settings"></a>Configuración de uso compartido de invitado del sitio
 
-La configuración de uso compartido de invitado que eligió al crear la etiqueta (que solo afecta a la pertenencia al equipo) debe coincidir con la configuración de uso compartido de invitado para el sitio de SharePoint asociado de la siguiente manera:
+La configuración de uso compartido de invitado que eligió al crear la etiqueta (que solo afecta a la pertenencia al equipo) debe coincidir con la configuración de uso compartido de invitados para el sitio de SharePoint asociado de la siguiente manera:
 
 |Configuración de etiqueta|Configuración del sitio de SharePoint|
 |:------------|:----------------------|
@@ -132,7 +137,7 @@ Para actualizar la configuración del sitio
 
 Si quiere realizar scripts como parte del proceso de creación de su equipo, puede usar [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) con los parámetros siguientes:
 
-- `-SharingCapability Disabled` para desactivar el uso compartido de invitado (activado de forma predeterminada)
+- `-SharingCapability Disabled` para desactivar el uso compartido de invitados (está activado de forma predeterminada)
 - `-DefaultSharingLinkType Internal` para cambiar el vínculo para compartir predeterminado a *Usuarios específicos*
 
 #### <a name="private-channels"></a>Canales privados

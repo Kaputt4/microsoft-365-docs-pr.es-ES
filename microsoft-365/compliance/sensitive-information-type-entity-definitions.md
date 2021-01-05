@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698513"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751287"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -871,7 +871,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>Número de pasaporte de Austria
-Esta entidad de tipo de información confidencial solo está disponible en el tipo sensitiveinformation de número de pasaporte de la UE.
 
 ### <a name="format"></a>Formato
 
@@ -891,26 +890,42 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_austria_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_austria_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_austria_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_austria_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_austria_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Passport Number -->
+      <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_austria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -933,8 +948,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passnummer
 - reisepässe
 
-## <a name="austria-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Austria o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
+
+## <a name="austria-social-security-number"></a>Número de la seguridad social de Austria
 
 ### <a name="format"></a>Formato
 
@@ -955,43 +970,56 @@ Sí
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función ' Func_austria_eu_
-- _or_equivalent "busca contenido que coincide con el patrón. 
+- La función  `Func_austria_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
 - se encuentra una palabra clave de  `Keywords_austria_eu_ssn_or_equivalent` . 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función  `Func_austria_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Social Security Number -->
+      <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
         </Pattern>
-<Pattern confidenceLevel="75">
-            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
-          </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_austria_eu_telephone_number" />
+            <Match idRef="Keywords_austria_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
+- SSN austriaco
+- número de EHIC
+- EHIC no
+- código de seguro
+- insurancecode #
+- número de seguro
+- Nº seguro
+- krankenkassennummer
+- krankenversicherung
+- socialsecurityno
+- socialsecurityno #
 - n.º de seguridad social
 - social security number
 - social security code
-- número de seguro
-- SSN austriaco
+- sozialversicherungsnummer
+- sozialversicherungsnummer #
+- soziale sicherheit kein
+- sozialesicherheitkein #
 - SSN #
 - SSN
-- código de seguro
-- código de seguro #
-- socialsecurityno #
-- sozialversicherungsnummer
-- soziale sicherheit kein
+- versicherungscode
 - versicherungsnummer
+- zdravstveno zavarovanje
 
 ## <a name="austria-tax-identification-number"></a>Número de identificación fiscal de Austria
 
@@ -1877,7 +1905,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - / #
 
 ## <a name="belgium-passport-number"></a>Número de pasaporte de Bélgica
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -1893,26 +1920,44 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
+ Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_belgium_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_belgium_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date2` encuentra la fecha en el formato DD MM AA o una palabra clave de `Keywords_eu_passport_date` o `Keywords_belgium_eu_passport_number` se encuentra
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_belgium_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_belgium_eu_passport_number` .
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_belgium_eu_passport_number` found. 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Passport Number -->
+      <Entity id="d7b1315b-21ca-4774-a32a-596010ff78fd" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+            <Match idRef="Keywords_belgium_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_belgium_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -1937,66 +1982,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Pass-Nr
 - Passnummer
 - reisepass kein
-
-## <a name="belgium-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Bélgica o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
-
-### <a name="format"></a>Formato
-
-11 dígitos sin espacios ni delimitadores
-  
-### <a name="pattern"></a>Patrón
-
-11 dígitos
-  
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
-- La función  `Func_belgium_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_belgium_eu_ssn_or_equivalent` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_belgium_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_belgium_eu_ssn_or_equivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
-
-- número nacional belga
-- número nacional
-- social security number
-- nationalnumber #
-- SSN #
-- SSN
-- nationalnumber
-- bnn #
-- bnn
-- número de identificación personal
-- personalidnumber #
-- numéro nacional
-- numéro de sécurité
-- numéro d'assuré
-- Nacional del identificador
-- identifiantnational #
-- numéronational #
 
 
 ## <a name="belgium-value-added-tax-number"></a>Número del impuesto sobre el valor añadido de Bélgica
@@ -2534,7 +2519,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="bulgaria-passport-number"></a>Número de pasaporte de Bulgaria
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -2550,25 +2534,41 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_bulgaria_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_bulgaria_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_bulgaria_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_bulgaria_eu_passport_number` o `Keywords_eu_passport_number_common` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_bulgaria_eu_passport_number` found. 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Passport Number -->
+      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_bulgaria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -2586,6 +2586,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - номер на паспорта
 - номер на паспорт
 - паспорт no
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
 
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
 
@@ -3820,7 +3825,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="croatia-passport-number"></a>Número de pasaporte de Croacia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -3836,21 +3840,37 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_croatia_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_croatia_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_croatia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_croatia_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_croatia_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Passport Number -->
+      <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_croatia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>Palabras clave
 
@@ -3946,68 +3966,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - n.º de estaño
 - / #
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Croacia o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
 
-### <a name="format"></a>Formato
-
-11 dígitos sin espacios y delimitadores
-  
-### <a name="pattern"></a>Patrón
-
-11 dígitos:
-  
-- diez dígitos
-- un dígito de control
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
-- La función  `Func_croatia_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_croatia_eu_ssn_or_equivalent` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
-- La función  `Func_croatia_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- número de identificación personal
-- número de ciudadano principal
-- national identification number
-- social security number
-- nationalnumber #
-- SSN #
-- SSN
-- nationalnumber
-- bnn #
-- bnn
-- número de identificación personal
-- personalidnumber #
-- OIB
-- osobni identifikacijski broj
-
-   
 ## <a name="cyprus-drivers-license-number"></a>Número de licencia de controladores de Chipre
 
 ### <a name="format"></a>Formato
@@ -4220,7 +4179,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="cyprus-passport-number"></a>Número de pasaporte de Chipre
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -4236,21 +4194,37 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_cyprus_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_cyprus_eu_passport_number` found. 
+- La expresión regular `Regex_cyprus_eu_passport_date` encuentra la fecha en el formato dd/mm/aaaa o se encuentra una palabra clave de `Keywords_cyprus_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_cyprus_eu_passport_number` busca contenido que coincide con el patrón.
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_cyprus_eu_passport_number` found. 
+- La expresión regular  `Regex_cyprus_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_cyprus_eu_passport_number` found.  
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Passport Number -->
+      <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_cyprus_eu_passport_date" />
+            <Match idRef="Keywords_cyprus_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_cyprus_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -4281,6 +4255,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - pasaport numarası
 - Pasaport no.
 - Αρ. Διαβατηρίου
+
+#### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
+
+- expira el
+- emitida el
+
 
 ## <a name="cyprus-tax-identification-number"></a>Número de identificación fiscal de Chipre
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -4529,7 +4509,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="czech-passport-number"></a>Número de pasaporte Checo
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -4545,21 +4524,37 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_czech_republic_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_czech_republic_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_czech_republic_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Czech Republic Passport Number -->
+      <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_czech_republic_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -4584,6 +4579,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - cestovní pasu
 - passeport no
 - čísla pasu
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
 
 
 ## <a name="czech-personal-identity-number"></a>Número de identidad personal en Checo
@@ -4684,68 +4684,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - n.º de estaño
 - / #
 - número de identificación único
-
-
-## <a name="czech-social-security-number-or-equivalent-identification"></a>Número de la seguridad social en Checo o identificación equivalente
-
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
-
-### <a name="format"></a>Formato
-
-diez dígitos y una barra diagonal inversa en el patrón especificado
-  
-### <a name="pattern"></a>Patrón
-
-diez dígitos y una barra diagonal inversa:
-  
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD): 
-- una barra diagonal inversa
-- tres dígitos que corresponden a un número de serie que separa a los empleados nacidos en la misma fecha.
-- un dígito de control
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_czech_republic_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_czech_republic_eu_ssn_or_equivalent` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_czech_republic_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- número de nacimiento
-- national identification number
-- número de identificación personal
-- social security number
-- nationalnumber #
-- SSN #
-- SSN
-- número nacional
-- número de identificación personal
-- personalidnumber #
-- rč
-- rodné číslo
-- rodne cislo
 
 
 ## <a name="denmark-drivers-license-number"></a>Número de permiso de conducción de Dinamarca
@@ -4911,7 +4849,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="denmark-passport-number"></a>Número de pasaporte de Dinamarca
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -4927,21 +4864,38 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_denmark_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_denmark_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date2` busca una fecha con el formato dd mm yy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_denmark_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_denmark_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_denmark_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Passport Number -->
+      <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_denmark_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -4964,6 +4918,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - pasnummer
 - Passeport n °
 - pasnumre
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
 
 
 ## <a name="denmark-personal-identification-number"></a>Número de identificación personal de Dinamarca
@@ -5081,64 +5040,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - sygesikringskortnummer
 - sygesikringsnr
 - sygesikringsnummer
-
-
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Dinamarca o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
-
-### <a name="format"></a>Formato
-
-diez dígitos y un guión en el patrón especificado
-  
-### <a name="pattern"></a>Patrón
-
-diez dígitos y un guión:
-  
-- seis dígitos que corresponden a la fecha de nacimiento (DDMMAA) 
-- un guión
-- cuatro dígitos que corresponden a un número de secuencia
-
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_denmark_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_denmark_eu_ssn_or_equivalent` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_denmark_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- número de identificación personal
-- national identification number
-- social security number
-- nationalnumber #
-- SSN #
-- SSN
-- número nacional
-- número de identificación personal
-- personalidnumber #
-- CPR-Nummer
-- personnummer
 
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Número de la Agencia para la imposición de drogas (DEA)
@@ -5454,7 +5355,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="estonia-passport-number"></a>Número de pasaporte de Estonia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -5470,21 +5370,37 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_estonia_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_estonia_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_estonia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_estonia_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_estonia_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Passport Number -->
+      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_estonia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -5505,6 +5421,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
 Eesti kodaniku Pass Passi passinumbrid número de documento de número de documento dokumendi NR
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
 
@@ -5961,19 +5883,19 @@ Estas son las entidades de la información confidencial de los números de pasap
 
 Estas son las entidades que se encuentran en el número de la seguridad social de la UE o el tipo de información confidencial de identificación equivalente.
 
-- [Austria](#austria-social-security-number-or-equivalent-identification)
-- [Bélgica](#belgium-social-security-number-or-equivalent-identification)
-- [Croacia](#croatia-social-security-number-or-equivalent-identification)
-- [Checo](#czech-social-security-number-or-equivalent-identification)
-- [Dinamarca](#denmark-social-security-number-or-equivalent-identification)
-- [Finlandia](#finland-social-security-number-or-equivalent-identification)
+- [Austria](#austria-social-security-number)
+- [Bélgica](#belgium-national-number)
+- [Croacia](#croatia-personal-identification-oib-number)
+- [Checo](#czech-personal-identity-number)
+- [Dinamarca](#denmark-personal-identification-number)
+- [Finlandia](#finland-national-id)
 - [Francia](#france-social-security-number-insee-or-equivalent-identification)
 - [Alemania](#germany-identity-card-number)
 - [Grecia](#greece-national-id-card)
-- [Hungría](#hungary-social-security-number-or-equivalent-identification)
+- [Hungría](#hungary-social-security-number-taj)
 - [Portugal](#portugal-citizen-card-number)
 - [España](#spain-social-security-number-ssn)
-- [Suecia](#sweden-social-security-number-or-equivalent-identification)
+- [Suecia](#sweden-national-id)
 
 
 ## <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
@@ -6339,7 +6261,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="finland-passport-number"></a>Número de pasaporte de Finlandia
-Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial de la UE número de pasaporte y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 combinación de nueve letras y dígitos
@@ -6395,78 +6316,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passen numero.
 - Passi #
 - número de pase
-
-
-## <a name="finland-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Finlandia o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
-
-### <a name="format"></a>Formato
-
-Una combinación de 11 caracteres en el formato especificado
-  
-### <a name="pattern"></a>Patrón
-
-una combinación de 11 caracteres en el formato especificado:
-  
-- seis dígitos 
-- una instancia de una de las siguientes opciones:
-  - símbolo más
-  - símbolo menos
-  - la letra "A" (sin distinción entre mayúsculas y minúsculas)
-- tres dígitos
-- una letra o un dígito
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_finland_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_finland_eu_ssn_or_equivalent` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_finland_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_finland_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_finland_eu_ssn_or_equivalent"></a>Keywords_finland_eu_ssn_or_equivalent
-
-- identification number
-- identificador personal
-- número de identidad
-- número de identificación nacional finlandesa
-- personalidnumber #
-- national identification number
-- número de identificador
-- n.º de identificación nacional
-- número de identificación nacional
-- identificador no
-- tunnistenumero
-- henkilötunnus
-- yksilöllinen henkilökohtainen tunnistenumero
-- ainutlaatuinen henkilökohtainen tunnus
-- identiteetti numero
-- suomen kansallinen henkilötunnus
-- henkilötunnusnumero #
-- kansallisen tunnistenumero
-- tunnusnumero
-- kansallinen tunnus numero
-- hetu
 
 
 ## <a name="france-drivers-license-number"></a>Número de permiso de conducción de Francia
@@ -7249,7 +7098,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 
 ## <a name="germany-passport-number"></a>Número de pasaporte de Alemania
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial de la UE número de pasaporte y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -7271,12 +7119,12 @@ Sí
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_german_passport encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de `Keyword_german_passport` .
+- Palabra clave from `Keyword_german_passport` o `Keywords_eu_passport_number_common` found.
 - Se supera la suma de comprobación.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_german_passport_data encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave de `Keyword_german_passport` .
+- Palabra clave from `Keyword_german_passport` o `Keywords_eu_passport_number_common` found.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -7284,11 +7132,17 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
     </Entity>
 ```
@@ -7306,6 +7160,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - reisepässe
 - passeport no.
 - passeport no
+
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- passport number
+- passportnumbers
+- números de pasaporte
+
 
 ## <a name="germany-tax-identification-number"></a>Número de identificación fiscal de Alemania
 
@@ -7669,8 +7537,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ## <a name="greece-passport-number"></a>Número de pasaporte de Grecia
 
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
-
 ### <a name="format"></a>Formato
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
@@ -7685,27 +7551,42 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_greece_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_greece_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number` found. 
+- La expresión regular `Regex_greece_eu_passport_date` busca una fecha con el formato dd mmm AA (ejemplo-28 ago 19) o se encuentra una palabra clave from `Keywords_greece_eu_passport_date`
+
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_greece_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Passport Number -->
+      <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_greece_eu_passport_date" />
+            <Match idRef="Keywords_greece_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_greece_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -7723,6 +7604,65 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - αριθμός διαβατηρίου
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
+
+
+## <a name="greece-social-security-number-amka"></a>Número de la seguridad social de Grecia (AMKA)
+Este tipo de información confidencial solo está disponible para su uso en:
+- directivas de prevención de pérdida de datos
+- directivas de cumplimiento de comunicaciones
+- Gobierno de la información
+- administración de registros
+- Microsoft Cloud App Security
+
+### <a name="format"></a>Formato
+
+Once dígitos sin espacios y delimitadores
+  
+### <a name="pattern"></a>Patrón
+
+- 6 dígitos como fecha de nacimiento AAMMDD
+- 4 dígitos
+- un dígito de control
+  
+### <a name="checksum"></a>Suma de comprobación
+
+Sí
+  
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función  `Func_greece_eu_ssn` busca contenido que coincide con el patrón. 
+- Se encuentra una palabra clave de  `Keywords_greece_eu_ssn_or_equivalent` . 
+    
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función  `Func_greece_eu_ssn` busca contenido que coincide con el patrón. 
+
+```xml
+      <!-- Greece Social Security Number (AMKA) -->
+      <Entity id="e39b03f4-50ea-41ae-af7a-a4b9539596ad" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+          <Match idRef="Keywords_greece_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
+
+- SSN
+- SSN #
+- n.º de seguridad social
+- socialsecurityno #
+- social security number
+- amka
+- a.m.k.a.
+- Αριθμού Μητρώου Κοινωνικής Ασφάλισης
+
 
 ## <a name="greece-tax-identification-number"></a>Número de identificación fiscal de Grecia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -8112,8 +8052,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="hungary-passport-number"></a>Número de pasaporte de Hungría
 
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
-
 ### <a name="format"></a>Formato
 
 Dos letras seguidas por seis u siete dígitos sin espacios ni delimitadores
@@ -8128,26 +8066,41 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_hungary_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_hungary_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_hungary_eu_passport_number` found. 
+- La expresión regular `Regex_hungary_eu_passport_date` busca una fecha con el formato dd mmm/MMM AA (ejemplo-01 MÁR/Mar 12) o se encuentra una palabra clave from `Keywords_eu_passport_date`
+
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_hungary_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_hungary_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Passport Number -->
+      <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_hungary_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_hungary_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -8166,9 +8119,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Útlevelek száma
 - útlevél szám
 
-## <a name="hungary-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Hungría o identificación equivalente
 
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
+## <a name="hungary-social-security-number-taj"></a>Número de seguridad social de Hungría (TAJ)
 
 ### <a name="format"></a>Formato
 
@@ -8194,16 +8146,16 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - La función  `Func_hungary_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungarian Social Security Number (TAJ) -->
+      <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_hungary_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
+        </Pattern>
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -8885,8 +8837,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="ireland-passport-number"></a>Número de pasaporte de Irlanda
 
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
-
 ### <a name="format"></a>Formato
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
@@ -8904,22 +8854,37 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_ireland_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_ireland_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_ireland_eu_passport_number` found. 
+- La expresión regular `Regex_ireland_eu_passport_date` busca Date con el formato dd mmm/MMM YYYY (example-01 BEA/MAY 1988) o se encuentra una palabra clave from `Keywords_eu_passport_date`
+
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_ireland_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_ireland_eu_passport_number` found.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Passport Number -->
+      <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_ireland_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_ireland_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -8946,6 +8911,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - uimhreacha PAS
 - uimhir cárta
 - uimhir chárta
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de servicio público personal (PPS) de Irlanda
 
@@ -9282,7 +9253,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="italy-passport-number"></a>Número de pasaporte de Italia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -9301,21 +9271,37 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_italy_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_italy_eu_passport_number` found. 
+- La expresión regular `Regex_italy_eu_passport_date` busca Date con el formato dd mmm/MMM YYYY (example-01 gen/JAN 1988) o se encontró una palabra clave from `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_italy_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_italy_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_italy_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Passport Number -->
+      <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_italy_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_italy_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -9342,6 +9328,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Numero di Passaporto
 - número del Passaporto
 - passeport italien
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="italy-value-added-tax-number"></a>Número de impuesto sobre el valor añadido de Italia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -10204,7 +10196,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de votantes
 
 ## <a name="latvia-passport-number"></a>Número de pasaporte de Letonia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -10223,21 +10214,37 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_latvia_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_latvia_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_latvia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_latvia_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_latvia_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Passport Number -->
+      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_latvia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
@@ -10263,6 +10270,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - pases NR
 - passeport no
 - n° du passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="lithuania-drivers-license-number"></a>Número de permiso de conducción de Lituania
 
@@ -10516,7 +10529,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - uniqueidentityno #
 
 ## <a name="lithuania-passport-number"></a>Número de pasaporte de Lituania
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -10532,26 +10544,42 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_lithuania_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_lithuania_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date3` encuentra la fecha en el formato dd mm aaaa o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_lithuania_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_lithuania_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_lithuania_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Passport Number -->
+      <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_lithuania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -10569,6 +10597,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - numeración paso
 - paso numeriai
 - paso NR
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="luxemburg-drivers-license-number"></a>Número de permiso de conducción de Luxemburgo
 
@@ -10808,7 +10842,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - uniqueidkey #
 
 ## <a name="luxemburg-passport-number"></a>Número de pasaporte de Luxemburgo
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -10824,28 +10857,76 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_luxemburg_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_luxemburg_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date3` encuentra la fecha en el formato dd mm aaaa o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_nation_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_nation_eu_passport_number` . 
+- La expresión regular  `Regex_luxemburg_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_luxemburg_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_nation_eu_passport_number" />
-          <Match idRef="Keywords_nation_eu_passport_number" />
+      <!-- Luxemburg Passport Number -->
+      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport number
-- número de pasaporte de letón
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
 - n.º de pasaporte
+- passportnumber
+- passport number
+- passportnumbers
+- números de pasaporte
+
+#### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
+- ausweisnummer
+- Luxemburgo Pass
+- Luxemburgo passeport
+- Luxemburgo Passport
+- no de passeport
+- no-reisepass
+- Nr-reisepass
+- numéro de passeport
+- red de paso
+- paso NR
 - passnummer
+- nombre passeport
+- reisepässe
+- reisepass-NR
+- reisepassnummer
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Luxemburgo número de identificación nacional (personas no físicas)
 
@@ -11240,7 +11321,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 
 ## <a name="malta-passport-number"></a>Número de pasaporte de Malta
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -11256,26 +11336,39 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_malta_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_malta_eu_passport_number` found. 
+- Se encuentra una palabra clave de `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_malta_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_malta_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Passport Number -->
+      <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
+          <Match idRef="Keywords_eu_passport_date" />
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_malta_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -11293,6 +11386,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - numru tal-passaport
 - numri tal-passaport
 - NRU tal-passaport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="malta-tax-identification-number"></a>Número de identificación fiscal de Malta
 
@@ -11613,7 +11712,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 
 ## <a name="netherlands-passport-number"></a>Número de pasaporte de Holanda
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -11629,31 +11727,57 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_netherlands_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_netherlands_eu_passport_number` found. 
+- La expresión regular `Regex_netherlands_eu_passport_date` busca Date con el formato dd mmm/MMM YYYY (ejemplo-26 Maa/MAR 2012)
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_netherlands_eu_passport_number` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_netherlands_eu_passport_number` . 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_netherlands_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Passport Number -->
+      <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_netherlands_eu_passport_number" />
+          <Match idRef="Regex_netherlands_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_passport_number" />
-          <Match idRef="Keywords_netherlands_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
+
+- usuarios #
+- usuarios #
+- passportid
+- passports
+- passportno
+- n.º de pasaporte
+- passportnumber
+- passport number
+- passportnumbers
+- números de pasaporte
+
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- número de pasaporte holandés
-- passport number
-- número de pasaporte de Holanda
-- nederlanden paspoort nummer
-- paspoort
-- nederlanden paspoortnummer
+- paspoort nummer
+- paspoortnummers
 - paspoortnummer
+- paspoort NR
 
 ## <a name="netherlands-tax-identification-number"></a>Número de identificación fiscal de países bajos
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -12932,7 +13056,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Carta de condução
 
 ## <a name="portugal-passport-number"></a>Número de pasaporte de Portugal
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -12951,26 +13074,42 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_portugal_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_portugal_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_portugal_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_portugal_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_portugal_eu_passport_number` found.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Passport Number -->
+      <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_portugal_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -12995,6 +13134,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - pasaportes de Portugal
 - número Passaporte
 - números Passaporte
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="portugal-tax-identification-number"></a>Número de identificación fiscal de Portugal
 
@@ -13331,7 +13476,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - uniqueidentityno
 
 ## <a name="romania-passport-number"></a>Número de pasaporte de Rumanía
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -13347,26 +13491,42 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_romania_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_romania_eu_passport_number` found. 
+- La expresión regular `Regex_romania_eu_passport_date` busca una fecha con el formato dd mmm/MMM AA (ejemplo-01 Feb/Feb 10) o se encuentra una palabra clave from `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_romania_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_romania_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_romania_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Passport Number -->
+      <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_romania_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_romania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -13382,6 +13542,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
 numărul pașaportului numarul pasaportului numerele pașaportului Pașaport NR
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia nacional
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -13864,7 +14030,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - / #
 
 ## <a name="slovakia-passport-number"></a>Número de pasaporte Eslovaquia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -13880,26 +14045,42 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovakia_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_slovakia_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovakia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_slovakia_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_slovakia_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Passport Number -->
+      <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovakia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -13919,6 +14100,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - PAS č.
 - Passeport n °
 - n° passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="slovenia-drivers-license-number"></a>Número de permiso de conducción de Eslovenia
 
@@ -14163,7 +14350,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Número de pasaporte de Eslovenia
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -14183,26 +14369,42 @@ No
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovenia_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_slovenia_eu_passport_number` found. 
+- La expresión regular `Regex_eu_passport_date1` encuentra una fecha con el formato DD. mm. yyyy o se encuentra una palabra clave de. `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovenia_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_slovenia_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_slovenia_eu_passport_number` found. 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Passport Number -->
+      <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovenia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -14223,6 +14425,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - rojstva de datos de referencia
 - lista potni
 - številke potnih listov
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="slovenia-tax-identification-number"></a>Número de identificación fiscal de Eslovenia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -14336,7 +14544,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- Id.
+- ID
 - Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del sur
@@ -14665,7 +14873,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - UniqueID #
 
 ## <a name="spain-passport-number"></a>Número de pasaporte de España
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de pasaporte de UE.
 
 ### <a name="format"></a>Formato
 
@@ -14685,26 +14892,42 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_spain_eu_passport_number` busca contenido que coincide con el patrón. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_spain_eu_passport_number` found. 
+- La expresión regular `Regex_spain_eu_passport_date` encuentra una fecha con el formato dd-mm-yyyy o se encuentra una palabra clave de `Keywords_eu_passport_date`
+
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_spain_eu_passport_number` busca contenido que coincide con el patrón. 
-- Palabra clave from  `Keywords_eu_passport_number_common` o `Keywords_spain_eu_passport_number` found. 
+- Palabra clave from  `Keywords_eu_passport_number` o `Keywords_spain_eu_passport_number` found.
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Passport Number -->
+      <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_spain_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_spain_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - usuarios #
 - usuarios #
@@ -14732,9 +14955,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - pasaporte n °
 - pasaporte de España
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- fecha de emisión
+- fecha de expiración
+
 
 ## <a name="spain-social-security-number-ssn"></a>Número de la seguridad social de España (NSS)
-Esta entidad de tipo de información confidencial se incluye en el número de la seguridad social de la UE o en el tipo de información confidencial del identificador equivalente y está disponible como entidad de tipo independiente de información confidencial.
 
 ### <a name="format"></a>Formato
 
@@ -15268,66 +15495,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - PasseportNon 
 - Passeportn ° 
 
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Suecia o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente.
-
-### <a name="format"></a>Formato
-
-12 dígitos sin espacios y delimitadores
-  
-### <a name="pattern"></a>Patrón
-
-12 dígitos:
-  
-- ocho dígitos que corresponden a la fecha de nacimiento (AAAAMMDD) 
-- tres dígitos que corresponden a un número de serie en el que: 
-  - el último dígito del número de serie indica el sexo por la asignación de un número impar para macho y un número par para hembras
-  - hasta 1990, la asignación de número de serie que se corresponde con el condado en el que nació el portador del número o (si nació antes de 1947) donde estuvo viviendo, de acuerdo con los registros fiscales, el 1 de enero de 1947, con un código especial (por lo general, 9 como el séptimo dígito) para Immigrants 
-- un dígito de control
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_sweden_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-- Se encuentra una palabra clave de  `Keywords_sweden_eu_ssn_or_equivalent` . 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_sweden_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- número de identificación personal
-- identification number
-- número de identificación personal
-- n.º de identidad
-- n.º de identificación
-- n.º de identificación personal
-- identificador personnummer
-- personligt ID-Nummer
-- unikt ID-Nummer
-- personnummer
-- identifikationsnumret
-- personnummer #
-- identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Número de identificación fiscal de Suecia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -16231,7 +16398,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- Id. 
+- ID 
 - Falta 
 - LISTAS # 
 - DISTRIBUCIÓN # 

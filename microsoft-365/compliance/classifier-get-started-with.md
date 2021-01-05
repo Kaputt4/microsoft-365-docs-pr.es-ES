@@ -1,5 +1,5 @@
 ---
-title: Introducción a los clasificadores que se pueden entrenar (versión preliminar)
+title: Introducción a los clasificadores que se capacitan
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,20 +18,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bca1de5edc3efd38f943b02091c3f47d832e6a19
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072969"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752664"
 ---
-# <a name="get-started-with-trainable-classifiers-preview"></a>Introducción a los clasificadores que se pueden entrenar (versión preliminar)
+# <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se capacitan
 
 Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. Una vez preparado, puede usarlo para identificar el elemento para la aplicación de las etiquetas de confidencialidad de Office, las directivas de cumplimiento de comunicaciones y las directivas de etiquetas de retención.
 
 La creación de un clasificador personalizado personalizado en primer lugar implica dar a los ejemplos que se seleccionan y que cumplen de forma positiva la categoría. A continuación, después de procesarlos, pruebe la capacidad de los clasificadores para predecir dándole una mezcla de muestras positivas y negativas. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo mejorar el rendimiento de los clasificadores capacitados personalizados y los clasificadores preparados previamente durante su ciclo de vida mediante la formación.
 
-Para obtener más información acerca de los diferentes tipos de clasificadores, consulte [información sobre los clasificadores que se puedan entrenar (versión preliminar)](classifier-learn-about.md).
+Para obtener más información acerca de los diferentes tipos de clasificadores, consulte [información sobre los clasificadores](classifier-learn-about.md)que se puedan entrenar.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -39,12 +39,12 @@ Para obtener más información acerca de los diferentes tipos de clasificadores,
 
 Los clasificadores son una característica de cumplimiento de Microsoft 365 E5 o E5. Debe tener una de estas suscripciones para poder usarla.
 
-### <a name="permissions"></a>Permisos
+### <a name="permissions"></a>Permissions
 
 Para acceder a los clasificadores en la interfaz de usuario: 
 
 - el administrador global debe participar en el inquilino para crear clasificadores personalizados.
-- El rol de administrador de cumplimiento o de investigación de datos es necesario para entrenar a un clasificador.
+- El rol de administrador de cumplimiento es necesario para entrenar a un clasificador.
 
 Necesitará cuentas con estos permisos para usar clasificadores en estos escenarios:
 
@@ -101,7 +101,7 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
    > [!TIP]
    > Si crea un sitio y una carpeta nuevos para los datos de inicialización, deje que se indexe al menos una hora para que esa ubicación se Indice antes de crear el clasificador que va a entrenar que usará esos datos de inicialización.
 
-3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y abra el **centro de cumplimiento** de Microsoft 365 o la clasificación de datos del **centro de seguridad de Microsoft 365**  >  **Data classification**.
+3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y abra el **centro de cumplimiento** de Microsoft 365 o la clasificación de datos del **centro de seguridad de Microsoft 365**  >  .
 
 4. Elija la pestaña **clasificadores** que se puede entrenar.
 

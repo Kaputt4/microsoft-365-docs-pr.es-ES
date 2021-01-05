@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre los clasificadores entrenables (versión preliminar)
+title: Obtener información sobre los clasificadores capacitados
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 77ebefe338f393a916f0a6844b42b16e3d011d49
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620166"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752644"
 ---
-# <a name="learn-about-classifiers-preview"></a>Obtener información sobre los clasificadores (versión preliminar)
+# <a name="learn-about-classifiers"></a>Obtener información sobre los clasificadores
 
 La clasificación y la etiqueta del contenido para que se pueda proteger y administrar correctamente es el punto de partida de la disciplina de protección de la información. Microsoft 365 tiene tres formas de clasificar el contenido.
 
@@ -103,7 +103,7 @@ Microsoft 365 incluye cinco clasificadores preparados previamente:
 - **Blasfemias**: detecta una categoría específica de elementos de texto de lenguaje ofensivo que contiene expresiones que avergonzan a la mayoría de las personas
 - **Amenaza**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionados con amenazas para confirmar violencia o daño físico o daño a una persona o propiedad
 
-Estos aparecen en la vista clasificación de datos del **centro de cumplimiento de Microsoft 365**  >  **(versión preliminar)**  >  vista de **clasificadores** que tienen el estado de `Ready to use` .
+Estos aparecen en la vista clasificador de datos del **centro de cumplimiento de 365 de Microsoft**  >  y de clasificación de **datos**  >   con el estado de `Ready to use` .
 
 ![Clasificadores: preexperto: clasificadores](../media/classifiers-ready-to-use-classifiers.png)
 

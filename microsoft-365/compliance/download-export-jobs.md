@@ -17,12 +17,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Instale y use el explorador de Azure Storage para descargar documentos que se exportaron desde un conjunto de revisión en eDiscovery avanzado.
-ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 094dcb4ecc8b1ca73a7ec0238ed20b27d4c16e72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399167"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751297"
 ---
 # <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Descargar trabajos de exportación en un caso de exhibición avanzada de documentos electrónicos
 
@@ -88,7 +88,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
    La carpeta exportar trabajo contiene los siguientes elementos. Los elementos reales de la carpeta de exportación se determinan mediante las opciones de exportación configuradas cuando se creó el trabajo de exportación. Para obtener más información, vea [exportar documentos de un conjunto de revisión](export-documents-from-review-set.md).
 
-    - Export_load_file.csv: este archivo CSV es un informe de exportación detallado que contiene información sobre cada documento exportado. El archivo consta de una columna para cada propiedad de metadatos de un documento. Para obtener una lista y una descripción de los metadatos que se incluyen en este informe, consulte la columna **nombre de campo exportados** en la tabla en [campos de metadatos del documento en eDiscovery avanzado](document-metadata-fields.md).
+    - Export_load_file.csv: este archivo CSV es un informe de exportación detallado que contiene información sobre cada documento exportado. El archivo consta de una columna para cada propiedad de metadatos de un documento. Para obtener una lista y una descripción de los metadatos que se incluyen en este informe, consulte la columna **nombre de campo exportados** en la tabla en [campos de metadatos del documento en eDiscovery avanzado](document-metadata-fields-in-advanced-ediscovery.md).
     
     - Summary.txt: un archivo de texto que contiene un resumen de la exportación, incluidas las estadísticas de exportación.
     
