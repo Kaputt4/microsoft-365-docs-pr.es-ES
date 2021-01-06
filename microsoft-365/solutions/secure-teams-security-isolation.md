@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616301"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751148"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -101,33 +101,36 @@ Para configurar un equipo de aislamiento de seguridad, usaremos una etiqueta de 
 
 Si tiene un partner interno o un grupo de accionistas que debería poder ver los documentos codificados, pero no editarlos, puede agregarlos a la etiqueta con permisos de solo vista. Después, puede agregar estos usuarios al sitio de SharePoint del equipo con permisos de lector y tendrán acceso de solo lectura al sitio en el que se almacenan los documentos, pero no al equipo.
 
+
 Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Escriba un nombre para la etiqueta que sea similar al nombre del equipo. Por ejemplo, **Confidencialidad alta: Proyecto Saturno**.
-5. Agregue información sobre herramientas y haga clic en **Siguiente**.
-6. En la página **Cifrado**, en el menú desplegable **Cifrado**, elija **Aplicar**.
-7. Para agregar los permisos de equipo:<br>
-  a. Haga clic en **Asignar permisos**<br>
-  b. Haga clic en **Agregar usuarios o grupos**, seleccione el equipo que ha creado y haga clic en **Agregar**.<br>
-  c. Haga clic en **Elegir permisos**.<br>
-  d. Elija **coautoría** de la lista desplegable y, después, haga clic en **Guardar**.<br>
-8. Si desea incluir usuarios o grupos con acceso de solo lectura a los archivos con la etiqueta:<br>
-  a. Haga clic en **Asignar permisos**<br>
-  b. Haga clic en **Agregar usuarios o grupos**, seleccione los usuarios o grupos que desea agregar, y después haga clic en **Agregar**.<br>
-  c. Haga clic en **Elegir permisos**.<br>
-  d. Elija **Espectador** de la lista desplegable y, después, haga clic en **Guardar**.<br>
-  e. Haga clic en **Guardar**.
-9. Haga clic en **Siguiente**.
-10. En la página **Marcado de contenido**, active la marcación del contenido si quiere agregar automáticamente un encabezado, un pie de página o una marca de agua a los archivos clasificados con esta etiqueta.
-11. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.
-12. En el menú desplegable **Privacidad de los sitios de equipo conectados a grupos de Office 365**, elija **Privado: solo los miembros pueden acceder al sitio**.
-13. Si desea permitir el acceso de invitado, seleccione la casilla de verificación **Permitir que los propietarios del grupo de Office 365 agreguen personas ajenas a la organización al grupo**. 
-14. En **Equipos no administrados**, elija **Bloquear el acceso**.
-15. Haga clic en **Siguiente**.
-16. En la página **Etiquetado automático para las aplicaciones de Office**, haga clic en **Siguiente**.
-17. Haga clic en **Enviar** y después en **Listo**.
+4. Asigne un nombre a la etiqueta. Le sugerimos **confidencial**, pero puede elegir otro nombre si ya está en uso.
+5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
+6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
+7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.
+8. En la página **Cifrado**, elija **Configurar opciones de cifrado**.
+9. Haga clic en **Agregar usuarios o grupos**, seleccione el equipo que ha creado y haga clic en **Agregar**.
+10. Haga clic en **Elegir permisos**.
+11. Elija **coautoría** de la lista desplegable y, después, haga clic en **Guardar**.
+12. Si desea incluir usuarios o grupos con acceso de solo lectura a los archivos con la etiqueta:
+    1. Haga clic en **Asignar permisos**
+    1. Haga clic en **Agregar usuarios o grupos**, seleccione los usuarios o grupos que desea agregar, y después haga clic en **Agregar**.
+    1. Haga clic en **Elegir permisos**.
+    1. Elija **Espectador** de la lista desplegable y, después, haga clic en **Guardar**.
+13.  Haga clic en **Guardar** y después en **Siguiente**.
+14. En la página *Etiquetado automático para archivos y mensajes de correo electrónico**, haga clic en **Siguiente**.
+15. En la página **Definir la configuración de protección de los sitios y grupos**, seleccione **Configuración de privacidad y acceso de usuarios externo** y **Configuración de acceso de dispositivo y uso compartido externo** y haga clic en **Siguiente**.
+16. En la página **Definir privacidad y acceso a usuarios externos**, en **Privacidad**, seleccione la opción **Privado**.
+17. Si desea permitir el acceso de invitado, en **Acceso de usuarios externos**, seleccione **Permitir que los propietarios del grupo de Microsoft 365 agreguen personas de fuera de su organización al grupo como invitados**.
+18. Haga clic en **Siguiente**.
+19. En la página **Definir el uso compartido externo y el acceso al dispositivo**, seleccione **Controlar el uso compartido externo en sitios de SharePoint etiquetados**.
+20. En **El contenido se puede compartir con**, elija **Invitados nuevos y existentes** si va a permitir el acceso de invitado o **Solo los usuarios de su organización** en caso contrario.
+21. En **Equipos no administrados**, elija **Bloquear el acceso**.
+22. Haga clic en **Siguiente**.
+23. En la página **Etiquetado automático para las columnas de la base de datos**, haga clic en **Siguiente**.
+24. Haga clic en **Crear etiqueta** y después en **Listo**.
 
 Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van a usar. En este caso, haremos que la etiqueta esté disponible solo para las personas del equipo.
 

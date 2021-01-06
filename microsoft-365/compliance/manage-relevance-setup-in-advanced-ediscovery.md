@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery avanzado con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662875"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760214"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestionar la configuración de la relevancia en Advanced eDiscovery (clásico)
 
@@ -69,15 +70,4 @@ Los parámetros descritos en esta sección están disponibles en eDiscovery avan
 
 - Defina y organice asuntos cuidadosamente, ya que esto puede afectar a los resultados de entrenamiento de Relevancia.
 
-Después de establecer los parámetros, el revisor o experto puede empezar a entrenar los archivos en la pestaña **Relevancia**. 
-  
-## <a name="see-also"></a>Vea también
-
-[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
-  
-[Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
-  
-[Configurar cargas para agregar archivos importados](set-up-loads-to-add-imported-files.md)
-  
-[Definir palabras clave resaltadas y opciones avanzadas](define-highlighted-keywords-and-advanced-options.md)
-
+Después de establecer los parámetros, el revisor o experto puede empezar a entrenar los archivos en la pestaña **Relevancia**.
