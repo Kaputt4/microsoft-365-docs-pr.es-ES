@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: comprenda las acciones de fases de migración y los efectos de cambiar de Microsoft Cloud Germany (Microsoft Cloud Alemania) a Office 365 Services en la nueva región del centro de administración de información en alemán.'
-ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 940ad0799aca7ead20d226cfcf3cc4b7b21c6cdb
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719397"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760203"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Acciones y impacto de las fases de migración para la migración de Microsoft Cloud Alemania (general)
 
@@ -77,6 +77,10 @@ Consideraciones adicionales:
 - Si su organización sigue utilizando flujos de trabajo de SharePoint 2010, dejarán de funcionar después del 31 de diciembre de 2021. Los flujos de trabajo de SharePoint 2013 seguirán siendo compatibles, aunque están desactivados de forma predeterminada para los nuevos inquilinos a partir del 1 de noviembre de 2020. Una vez finalizada la migración al servicio de SharePoint Online, le recomendamos que se mueva a Power Automate u otras soluciones compatibles.
 
 - Una vez finalizada la migración de OneDrive a la región alemana, los índices de datos se vuelven a generar. Las características que dependen de los índices de búsqueda pueden verse afectadas mientras el reindizado está en curso.
+
+- Microsoft Cloud Alemania los clientes cuya instancia de SharePoint Online no se haya migrado todavía necesitan permanecer en el módulo de PowerShell de SharePoint Online/Microsoft. SharePointOnline. CSOM versión 16.0.20616.12000 o inferior. De lo contrario, se producirá un error en las conexiones a SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente.
+
+- Microsoft Cloud Alemania los clientes cuya instancia de SharePoint Online se migren deben actualizar el módulo de PowerShell de SharePoint Online o Microsoft. SharePointOnline. CSOM a la versión 16.0.20717.12000 o posterior. De lo contrario, se producirá un error en las conexiones a SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente.
 
 
 ## <a name="skype-for-business-online"></a>Skype Empresarial Online

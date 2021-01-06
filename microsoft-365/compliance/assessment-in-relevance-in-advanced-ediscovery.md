@@ -16,13 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en la exhibición avanzada de documentos electrónicos de Microsoft 365.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28bbe15a6e3f5611041cf446bd053f59de395d54
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663085"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759926"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Descripción de la evaluación en relevancia en eDiscovery avanzado (Classic)
 
@@ -52,19 +53,4 @@ Cada problema tiene su propia riqueza, el margen actual de error y, como resulta
 Puede aceptar las recomendaciones de relevancia o ajustar el margen de error actual de acuerdo con sus necesidades. El margen actual predeterminado del error se determina para la recuperación como igual o superior al 75%.
   
 > [!NOTE]
-> La fase de evaluación se puede omitir, en la pestaña **\> seguimiento de relevancia** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema 
-  
-## <a name="related-topics"></a>Temas relacionados
-
-[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
-  
-[Etiquetado y evaluación](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Aprendizaje de etiquetas y relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decisiones basadas en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
-
+> La fase de evaluación se puede omitir, en la pestaña **\> seguimiento de relevancia** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema.

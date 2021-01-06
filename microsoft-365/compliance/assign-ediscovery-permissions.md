@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b95d81114e60c9d805b90b007d40d4c1a2e62b1
-ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
+ms.openlocfilehash: 4d4be264791c4f3d37d7a88cb3d12d1023b3c347
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "49739793"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759894"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -145,10 +145,7 @@ Este rol permite a los usuarios ver una lista de elementos devueltos de una bús
 
 ### <a name="review"></a>Revisar
 
-Esta función permite a los usuarios acceder a datos de casos en [eDiscovery avanzado (Classic)](office-365-advanced-ediscovery.md) (también conocido como *eDiscovery avanzado v1*). El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición de documentos electrónicos (Classic) avanzada. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos (Classic). Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
-
-> [!NOTE]
-> En este momento, los usuarios a los que se les asigna la función Review (o que es miembro del grupo de roles Reviewer) no pueden obtener acceso a datos en [eDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md) (también conocido como *eDiscovery avanzado v 2.0*). Para agregar miembros a un caso en eDiscovery avanzado v 2.0 para que puedan revisar los datos de caso, un usuario debe ser miembro del grupo de roles eDiscovery Manager.
+Este rol permite a los usuarios acceder a los conjuntos de revisión en [EDiscovery avanzado](overview-ediscovery-20.md). Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la exhibición de documentos electrónicos **> página avanzadas** del centro de cumplimiento de Microsoft 365 del que son miembros. Una vez que el usuario obtiene acceso a un caso de exhibición avanzada de documentos electrónicos, puede seleccionar los **conjuntos de revisión** para obtener acceso a los datos de caso. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de recopilación asociada con el caso o realizar otras tareas de búsqueda o de administración de casos. Los usuarios con este rol solo pueden tener acceso a los datos de un conjunto de revisión.
 
 ### <a name="rms-decrypt"></a>Descifrado de RMS
 

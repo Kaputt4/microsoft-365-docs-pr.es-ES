@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa defender para Office 365?
-ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698692"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760235"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft defender para Office 365 Security
 
@@ -138,7 +138,7 @@ Para obtener más información acerca de estas opciones, consulte Configuración
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Habilitación de la protección contra la suplantación de identidad** <p> _EnableAntispoofEnforcement_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
+|**Habilitación de la protección contra la suplantación de identidad** <p> _EnableSpoofIntelligence_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |**Habilitar remitente sin autenticar** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
 |**Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** <p> _AuthenticationFailAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a los remitentes bloqueados en [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
 |
@@ -192,7 +192,7 @@ Tenga en cuenta que estos son los mismos valores de configuración que están di
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricta|Comentario|
 |---|---|---|---|---|
-|**Habilitación de la protección contra la suplantación de identidad** <p> _EnableAntispoofEnforcement_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
+|**Habilitación de la protección contra la suplantación de identidad** <p> _EnableSpoofIntelligence_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |**Habilitar remitente sin autenticar** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
 |**Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** <p> _AuthenticationFailAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a los remitentes bloqueados en [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
 |

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo exportar y descargar contenido desde un caso de exhibición de documentos electrónicos principal.
-ms.openlocfilehash: e0d4315c48a0d0878b8052265ff8663cd1987169
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 30fc30943bd570cf4d79ce88b5bef5836b3dfe14
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551479"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760304"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exportar contenido de un caso de eDiscovery principal
 
-Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda. Al exportar los resultados de la búsqueda, los elementos del buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office y otros documentos. También se exporta un archivo Results. csv que contiene información sobre todos los elementos que se exportan y un archivo de manifiesto (en formato XML) que contiene información sobre cada resultado de la búsqueda.
+Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda. Al exportar los resultados de la búsqueda, los elementos del buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office y otros documentos. También se exporta un archivo de Results.csv que contiene información sobre todos los elementos que se exportan y un archivo de manifiesto (en formato XML) que contiene información sobre cada resultado de la búsqueda.
   
 Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export-the-results-of-a-single-search) o puede exportar los resultados de [varias búsquedas asociadas a un caso](#export-the-results-of-multiple-searches).
   
@@ -34,7 +34,7 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de la cuenta de usuario a la que se le han asignado los permisos de eDiscovery adecuados.
 
-2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todos**y, a continuación, en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todos** y, a continuación, en **eDiscovery > Core**.
 
 3. En la página **principal de eDiscovery** , seleccione el caso desde el que desea exportar los resultados de la búsqueda y, a continuación, haga clic en **abrir caso**.
 
@@ -70,7 +70,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda asoci
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de la cuenta de usuario a la que se le han asignado los permisos de eDiscovery adecuados.
 
-2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todos**y, a continuación, en **eDiscovery > Core**.
+2. En el panel de navegación izquierdo del centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todos** y, a continuación, en **eDiscovery > Core**.
 
 3. En la página **principal de eDiscovery** , seleccione el caso desde el que desea exportar los resultados de la búsqueda y, a continuación, haga clic en **abrir caso**.
 
@@ -105,5 +105,3 @@ Como alternativa a la exportación de los resultados de una sola búsqueda asoci
 - Si reinicia la exportación, los cambios en las consultas de las búsquedas que componen el trabajo de exportación no afectarán a los resultados de la búsqueda que se recuperan. Cuando se reinicia una exportación, se ejecutará de nuevo el mismo trabajo de consulta de búsqueda combinado que se ejecutó al crear el trabajo de exportación.
 
 - Además, si reinicia una exportación, los resultados de la búsqueda que se copian en la ubicación de almacenamiento de Azure sobrescribirán los resultados anteriores. Los resultados anteriores que se han copiado no estarán disponibles para su descarga.
-
-- La preparación de los resultados de varias búsquedas para el análisis en la exhibición avanzada de documentos electrónicos (Classic) no está disponible. Solo puede preparar los resultados de una sola búsqueda para el análisis en la exhibición avanzada de documentos electrónicos (Classic).

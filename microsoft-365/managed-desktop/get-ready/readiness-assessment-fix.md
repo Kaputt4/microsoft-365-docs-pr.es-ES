@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas encontrados por la herramienta de evaluación de preparación
+title: Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 description: Acciones detalladas que se deben realizar para cada problema que encuentra la herramienta
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527738"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760129"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar problemas encontrados por la herramienta de evaluación de preparación
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
 Para cada comprobación, la herramienta notificará uno de los cuatro resultados posibles:
 
@@ -27,6 +27,9 @@ Para cada comprobación, la herramienta notificará uno de los cuatro resultados
 |Consejo    | Siga los pasos de la herramienta o este artículo para obtener la mejor experiencia con la inscripción y para los usuarios. *Puede* completar la inscripción, pero debe solucionar estos problemas antes de implementar el primer dispositivo.        |
 |No preparado | *Se producirá un error en la inscripción si no soluciona estos problemas.* Siga los pasos de la herramienta o este artículo para resolverlos.        |
 |Error | El rol de Azure Active Director (AD) que está usando no tiene permisos suficientes para ejecutar esta comprobación. |
+
+> [!NOTE]
+> Los resultados notificados por esta herramienta reflejan el estado de la configuración solo en el momento en que se ejecutó. Si más adelante realiza cambios en las directivas de Microsoft Intune, Azure Active Directory o Microsoft 365, los elementos "listos" se pueden "no estar preparados". Para evitar problemas con las operaciones de escritorio administradas de Microsoft, Compruebe la configuración específica que se describe en este artículo antes de cambiar las directivas.
 
 ## <a name="microsoft-intune-settings"></a>Configuración de Microsoft Intune
 

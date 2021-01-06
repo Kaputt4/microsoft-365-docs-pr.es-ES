@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de eDiscovery avanzado.
-ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: cedac19ee04053e19b5dac1537b57d576e2e0354
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663455"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760370"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Aprendizaje de la etiqueta y la relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -98,17 +99,3 @@ La lista de archivos de muestra le permite ver una lista de los archivos en un e
     
     Para navegar hasta el último archivo del ejemplo: Mayús + Ctrl + \>
     
-## <a name="see-also"></a>Vea también
-
-[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
-  
-[Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Etiquetado y evaluación](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decisiones basadas en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
-

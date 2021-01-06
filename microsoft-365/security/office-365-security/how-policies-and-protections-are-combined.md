@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349273"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760571"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección del correo electrónico
 
@@ -40,9 +40,9 @@ Hay dos factores principales que determinan la Directiva que se aplica a un mens
 
   |Priority|Protección de correo electrónico|Categoría|Dónde administrar|
   |---|---|---|---|
-  |1|Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
-  |segundo|Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-  |3|Correo no deseado de alta confianza|CAT: HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |1 |Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
+  |2 |Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |3 |Correo no deseado de alta confianza|CAT: HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar inteligencia de identidades en EOP](learn-about-spoof-intelligence.md)|
   |2,5<sup>\*</sup>|Suplantación del usuario (usuarios protegidos)|UIMP|[Configurar directivas contra la suplantación de identidad en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md)|
   |6,5<sup>\*</sup>|Suplantación de dominio (dominios protegidos)|DIMP|[Configurar directivas contra la suplantación de identidad en Microsoft defender para Office 365](configure-atp-anti-phishing-policies.md)|
@@ -62,11 +62,11 @@ Por ejemplo, considere las siguientes directivas antiphishing en Microsoft defen
 
   |Nombre de directiva|Priority|Suplantación de usuario|Directiva contra la suplantación|
   |---|---|---|---|
-  |Directiva A|1|Activada|Desactivada|
-  |Directiva B|segundo|Desactivada|Activada|
+  |Directiva A|1 |Activada|Desactivada|
+  |Directiva B|2 |Desactivada|Activada|
   |
 
-1. El mensaje se marca y se trata como falso, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación del usuario (8).
+1. El mensaje se marca y se trata como falso, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación del usuario (5).
 2. La Directiva A se aplica a los usuarios porque tiene una prioridad más alta que la Directiva B.
 3. En función de la configuración de la Directiva A, no se lleva a cabo ninguna acción en el mensaje, ya que la suplantación de identidad está desactivada en la Directiva.
 4. Se detiene el procesamiento de la Directiva, por lo que la Directiva B nunca se aplica a los usuarios.

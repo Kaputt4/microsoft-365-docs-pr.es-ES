@@ -19,22 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprenda por qué los resultados de búsqueda reales y estimados pueden variar en las búsquedas ejecutadas con herramientas de eDiscovery en Office 365.
-ms.openlocfilehash: 2c127077552b831d5bd890e03772b137338e1674
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a5a66e070bf41cf6b3263dbae1e6ac5d136d9465
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357650"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760258"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 
-Este tema se aplica a las búsquedas que se pueden ejecutar con una de las siguientes herramientas de eDiscovery de Microsoft: 
+Este tema se aplica a las búsquedas que se pueden ejecutar mediante una de las siguientes herramientas de eDiscovery de Microsoft 365: 
 
-- Búsqueda de contenido en el centro de seguridad & cumplimiento  <br/>  
-- Exhibición de documentos electrónicos local en el centro de administración de Exchange (EAC)  <br/>  
-- Centro de exhibición de documentos electrónicos en SharePoint Online  <br/> 
+- Búsqueda de contenido
+- eDiscovery principal 
    
-Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, la herramienta que se está usando devolverá una estimación del número de elementos (y su tamaño total) que cumplan los criterios de búsqueda. Por ejemplo, cuando se ejecuta una búsqueda en el centro de seguridad & cumplimiento, los resultados de búsqueda estimados se muestran en el panel de detalles de la búsqueda seleccionada.
+Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, la herramienta que se está usando devolverá una estimación del número de elementos (y su tamaño total) que cumplan los criterios de búsqueda. Por ejemplo, cuando se ejecuta una búsqueda en el centro de cumplimiento de Microsoft 365, los resultados de la búsqueda estimados se muestran en la página flotante para la búsqueda seleccionada.
   
 ![Cálculo de resultados que se muestra en el panel de detalles de la búsqueda seleccionada](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
@@ -60,9 +59,9 @@ Estos son algunos de los motivos de estas diferencias:
 
    Aunque rara vez, incluso en el caso de que se aplica una retención, el mantenimiento de los elementos del calendario integrados (que el usuario no puede editar, pero que se incluyen en muchos resultados de la búsqueda) puede que se eliminen de vez en cuando. Esta eliminación periódica de los elementos del calendario tendrá como resultado menos elementos que se exportarán.
 
-- **Elementos sin indexar**. Los elementos que no se indizan para la búsqueda pueden causar diferencias entre los resultados de búsqueda reales y estimados. Por ejemplo, la exhibición de documentos electrónicos local en Exchange y el centro de exhibición de documentos electrónicos de SharePoint no incluyen elementos sin indexar (que no cumplen los criterios de búsqueda) cuando se ejecuta una búsqueda para estimar los resultados de la búsqueda. Pero puede incluir elementos sin indexar al exportar los resultados de la búsqueda. Si incluye elementos sin indexar al exportar los resultados de la búsqueda, es posible que haya más elementos que se exportan. Esto hará que se produzca una diferencia entre los resultados de búsqueda estimados y exportados.
+- **Elementos sin indexar**. Los elementos que no se indizan para la búsqueda pueden causar diferencias entre los resultados de búsqueda reales y estimados. Puede incluir elementos sin indexar al exportar los resultados de la búsqueda. Si incluye elementos sin indexar al exportar los resultados de la búsqueda, es posible que haya más elementos que se exportan. Esto hará que se produzca una diferencia entre los resultados de búsqueda estimados y exportados.
 
-    Al usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento, tiene la opción de incluir elementos sin indexar en la estimación de la búsqueda. El número de elementos sin indexar devueltos por la búsqueda se muestra en el panel de detalles junto con los demás resultados de búsqueda estimados. Los elementos sin indexar también se incluirán en el tamaño total de los resultados de búsqueda estimados. Al exportar los resultados de la búsqueda, tiene la opción de incluir o no los elementos no indexados. La forma en que se configuran estas opciones puede dar lugar a diferencias entre los resultados de búsqueda reales y estimados que se descargan.
+    Al usar la herramienta de búsqueda de contenido, tiene la opción de incluir elementos sin indexar en la estimación de búsqueda. El número de elementos sin indexar devueltos por la búsqueda se muestra en la página de flotante junto con los demás resultados de búsqueda estimados. Los elementos sin indexar también se incluirán en el tamaño total de los resultados de búsqueda estimados. Al exportar los resultados de la búsqueda, tiene la opción de incluir o no los elementos no indexados. La forma en que se configuran estas opciones puede dar lugar a diferencias entre los resultados de búsqueda reales y estimados que se descargan.
 
 - **Exportar los resultados de una búsqueda de contenido que incluya todas las ubicaciones de contenido**. Si la búsqueda desde la que está exportando resultados es una búsqueda de todas las ubicaciones de contenido de la organización, se exportarán solo los elementos sin indexar de las ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Sin embargo, los elementos no indexados de todas las ubicaciones de contenido (incluso los que no contienen elementos que coinciden con la consulta de búsqueda) se incluirán en los resultados de búsqueda estimados.
 
@@ -77,12 +76,6 @@ Estos son algunos de los motivos de estas diferencias:
 - **Desduplicación**. Para los elementos de Exchange, la desduplicación reduce el número de elementos que se exportan. Tiene la opción de desduplicar los resultados de la búsqueda al exportarlos. Para los mensajes de Exchange, esto significa que solo se exporta una instancia de un mensaje, aunque ese mensaje se pueda encontrar en varios buzones. Los resultados de búsqueda estimados incluyen todas las instancias de un mensaje. Por lo tanto, si elige la opción de desduplicación al exportar los resultados de la búsqueda, el número real de elementos que se exportan podría ser considerablemente menor que el número estimado de elementos.
 
     Otra cosa que debe tener en cuenta si elige la opción de desduplicación es que todos los elementos de Exchange se exportan en un único archivo PST y la estructura de carpetas de los buzones de origen no se conserva. El archivo PST exportado solo contiene los elementos de correo electrónico. Sin embargo, un informe de resultados de búsqueda contiene una entrada para cada mensaje exportado que identifica el buzón de origen donde se encuentra el mensaje. Esto le ayuda a identificar todos los buzones que contienen un mensaje duplicado. Si no habilita la desduplicación, se exportará un archivo PST independiente por cada buzón incluido en la búsqueda. 
-
-## <a name="exporting-unindexed-items-from-the-ediscovery-center-in-sharepoint-online"></a>Exportar elementos sin indexar desde el centro de exhibición de documentos electrónicos en SharePoint Online
-
-En el centro de eDiscovery de SharePoint Online, tiene la opción de incluir contenido no indizado (de Exchange y SharePoint) al exportar los resultados de una búsqueda de exhibición de documentos electrónicos. Para ello, seleccione la opción **incluir elementos que están cifrados o que tienen una opción de formato no reconocida** . Los elementos sin indexar (también denominados no rastreables en SharePoint) son elementos de Exchange y SharePoint que, por algún motivo, no se indizaron para la búsqueda. Los elementos de Exchange no indizados aparecen en el informe de **errores de índice de Exchange** que se incluyen al exportar los resultados de búsqueda. De forma similar, los elementos de SharePoint no indizados se muestran en el informe de **errores de índice de SharePoint** . Cuando se exportan elementos sin indexar, se descargan en una carpeta denominada no **rastreable**. Los elementos de Exchange no indizados se incluyen en un archivo PST; se descarga también cada documento sin indexar de SharePoint. El número de elementos sin indexar (si hay alguno) se muestra en cada informe de errores de índice. El número de elementos sin indexar en los informes debe coincidir con el número de elementos sin indexar que se descargan.
-  
- **¿Cuáles son los motivos por los que el número de elementos sin indexar exportados no coincide con el número de elementos en el informe de errores de índice?** Como se explicó anteriormente, es posible que se hayan purgado los elementos de Microsoft 365 entre el momento en que se ejecutó la estimación de la búsqueda y el momento en que se exportaron los resultados de la búsqueda. Una discrepancia similar puede producirse para los elementos sin indexar. Por ejemplo, el índice de búsqueda podría ser fecha de salida cuando se exportan los resultados de la búsqueda. Esto significa que un elemento no indexado que se exportó con los resultados de la búsqueda podría no aparecer en el informe de errores de índice porque el elemento no se indizó en el momento en que se exportaron los resultados de la búsqueda. Esto daría como resultado que se exportan más elementos sin indexar que los enumerados en el informe de errores de índice. De forma similar, un elemento no indizado que aparece en el informe de errores de índice se podría haber purgado de Microsoft 365 antes de que se actualizara el índice de búsqueda. Esto da como resultado menos elementos no indizados exportados de los que aparecen en el informe de errores de índice.
-  
+ 
 > [!NOTE]
 > Si no selecciona la opción **incluir elementos cifrados o con formato no reconocido** al exportar los resultados de la búsqueda o simplemente descargar los informes, se descargan los informes de errores de índice pero no tienen ninguna entrada. Esto no significa que no haya errores de indización. Solo significa que los elementos sin indexar no se incluyeron en la exportación. 

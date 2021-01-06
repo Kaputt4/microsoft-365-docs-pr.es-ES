@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 9f826c836337ecf7a8479e7d824ff8ad9e737e97
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663465"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760380"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Etiquetado y evaluación en eDiscovery avanzado (Classic)
 
@@ -123,17 +124,3 @@ En ausencia de estabilización basada en estadísticas, habrá resultados con un
 > [!TIP]
 > En la **pestaña \> seguimiento de relevancia** , la visualización de problemas expandida, están disponibles las siguientes opciones de visualización: > el paso siguiente recomendado, como **paso siguiente:** se puede omitir el etiquetado (por problema) haciendo clic en el botón **modificar** situado a su derecha y, a continuación, seleccionando un paso diferente en el **paso siguiente**. Cuando no se haya completado el indicador de progreso de la evaluación, la evaluación será la siguiente opción recomendada, para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > puede cambiar el margen de error y evaluar su impacto; para ello, haga clic en **modificar** y, en el **cuadro de diálogo nivel de evaluación**, cambie el **margen de error de destino para RECALL estimaciones** y haga clic en **actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas haciendo clic en **avanzadas**. > puede ver estadísticas del nivel de evaluación adicional y su impacto haciendo clic en **Ver**. En el cuadro de diálogo resultados detallados mostrados, las estadísticas están disponibles por problema, cuando hay al menos 500 archivos de evaluación etiquetada y al menos 18 archivos se etiquetan como pertinentes para el problema. 
   
-## <a name="see-also"></a>Vea también
-
-[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
-  
-[Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Aprendizaje de etiquetas y relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decisiones basadas en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
-

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo usar la pestaña prueba tras el cálculo del lote en la exhibición avanzada de documentos electrónicos para probar, comparar y validar la calidad general de procesamiento.
-ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 52198dc5218c49598403c3f1ece201fc4f00dd47
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663423"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760326"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Análisis de relevancia de prueba en eDiscovery avanzado (Classic)
 
@@ -109,18 +110,3 @@ La prueba "probar el sector" realiza una prueba similar a la prueba "probar el r
 10. Revise y etiquete cada uno de los archivos en la pestaña **\> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**. 
     
 11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. 
-    
-## <a name="see-also"></a>Vea también
-
-[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
-  
-[Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Etiquetado y evaluación](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Aprendizaje de etiquetas y relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Decisiones basadas en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
-

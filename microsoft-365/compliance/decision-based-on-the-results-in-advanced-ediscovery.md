@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Obtenga información sobre cómo la pestaña decidir en eDiscovery avanzado proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos.
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: 0423a21520375f1d9de8e2eaeca142b979ff1883
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562971"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759872"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -54,17 +55,3 @@ Esta pestaña incluye los siguientes componentes:
     
 El panel de detalles expandido muestra detalles adicionales. Los archivos de las figuras de la colección no incluyen archivos vacíos o Nebulous. Las figuras de los archivos de familia representan los archivos que no se cargan en relevancia, aunque todavía se cuentan como parte de la familia.
   
-## <a name="related-topics"></a>Temas relacionados
-
-[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
-  
-[Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[Etiquetado y evaluación](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[Realizar entrenamiento de relevancia](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
-

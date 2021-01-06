@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Microsoft 365 y conversaciones de Skype empresarial.
-ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: a6708bdf012d2cfbb182d624c8c889de5fb51c7f
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148130"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760224"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery en Microsoft 365
 
@@ -31,12 +31,9 @@ Microsoft 365 proporciona las siguientes herramientas de eDiscovery:
   
 - [Búsqueda de contenido](#content-search)
 
-- [Core eDiscovery](#core-ediscovery)
+- [eDiscovery principal](#core-ediscovery)
 
 - [eDiscovery avanzado](#advanced-ediscovery)
-
-> [!NOTE]
-> La exhibición avanzada de documentos electrónicos (Classic) (también denominada *eDiscovery avanzado v 1.0*), que es la versión de eDiscovery avanzado disponible en un caso principal de eDiscovery al hacer clic en **cambiar a exhibición avanzada**de documentos electrónicos, se está retirando. Su funcionalidad se ha reemplazado por la solución de exhibición de documentos electrónicos avanzada en Microsoft 365. Para obtener más información acerca de la retirada de eDiscovery avanzado v 1.0, consulte [jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).
 
 ## <a name="content-search"></a>Búsqueda de contenido
 
@@ -52,12 +49,12 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar la herrami
 |[Exportar un informe de búsqueda de contenido](export-a-content-search-report.md) <br/> |Obtenga información sobre cómo descargar el informe de exportación sin tener que exportar los resultados de la búsqueda real.  <br/> |
 |[Límites de búsqueda de contenido](limits-for-content-search.md) <br/> |Obtenga información sobre los límites de la herramienta de búsqueda de contenido, como el número máximo de búsquedas que se pueden ejecutar a la vez.  <br/> |
 |[Elementos sin indexar en la búsqueda de contenido](partially-indexed-items-in-content-search.md) <br/> |Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en las estadísticas de resultados de búsqueda estimadas al ejecutar una búsqueda. También puede incluir elementos sin indexar al exportar los resultados de la búsqueda.  <br/> |
-|[Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messages-in-your-organization.md) <br/> |Obtenga información sobre cómo usar la búsqueda de contenido para buscar y eliminar un mensaje de correo electrónico de *todos los* buzones de la organización. Esto puede ayudarle a encontrar y eliminar mensajes de correo electrónico potencialmente dañinos o de alto riesgo.  <br/> |
+|[Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messages-in-your-organization.md) <br/> |Obtenga información sobre cómo usar la búsqueda de contenido para buscar y eliminar un mensaje de correo electrónico de  *todos los*  buzones de la organización. Esto puede ayudarle a encontrar y eliminar mensajes de correo electrónico potencialmente dañinos o de alto riesgo.  <br/> |
 |[Usar la búsqueda de contenido para buscar una lista de usuarios en el buzón y en las cuentas de OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Obtenga información sobre cómo usar un script para buscar en el buzón y un sitio de una unidad de negocio para un grupo de usuarios. Vea [crear una lista de todas las ubicaciones de OneDrive](https://docs.microsoft.com/onedrive/list-onedrive-urls) para obtener los pasos sobre cómo generar rápidamente una lista de direcciones de correo electrónico que puede usar para las ubicaciones de contenido de origen cuando crea y ejecuta búsquedas de contenido.  <br/> |
 |[Usar búsqueda de contenido para colecciones específicas](use-content-search-for-targeted-collections.md) <br/> |Obtenga información sobre cómo usar el script de Windows PowerShell de este artículo para realizar colecciones de destino con la búsqueda de contenido. Una colección de destino significa que desea buscar en una carpeta determinada porque está seguro de que los elementos que responden a un caso (o a elementos con privilegios) se encuentran en esa carpeta. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.  <br/> |
 |||
   
-## <a name="core-ediscovery"></a>Core eDiscovery
+## <a name="core-ediscovery"></a>eDiscovery principal
 
 La tabla siguiente contiene vínculos a temas que le ayudarán a usar los casos de eDiscovery principales. Puede usar los casos de eDiscovery principales para agregar administradores de exhibición de documentos electrónicos que puedan tener acceso al caso, realizar una retención de eDiscovery en ubicaciones de contenido relevantes para el caso, buscar contenido y exportar los resultados de la búsqueda desde el caso.
   
@@ -89,6 +86,6 @@ La solución de eDiscovery avanzada de Microsoft 365 (también denominada *eDisc
 |[Exportar datos de casos](exporting-data-ediscover20.md)|Obtenga información sobre cómo exportar datos de un caso para una revisión externa.|
 |||
 
-## <a name="roadmap"></a>Hoja de ruta
+## <a name="roadmap"></a>Guía básica
 
 Para ver qué características de eDiscovery se han iniciado, están implementando o están en desarrollo, visite el plan de desarrollo de [Microsoft 365](https://aka.ms/eDiscoRoadMap).

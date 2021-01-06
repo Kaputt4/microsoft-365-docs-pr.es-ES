@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se proporciona información para solucionar problemas con el envío de correo electrónico a los buzones de correo de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a los clientes de Microsoft 365.
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615413"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760487"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
@@ -128,7 +128,7 @@ Igual de importante que la forma en que se envían los mensajes de correo electr
 
 - Los redireccionamientos que se incluyen en el cuerpo del mensaje deben ser similares y coherentes, y no múltiples ni variados. Un redireccionamiento en este contexto es cualquier cosa que apunta fuera del mensaje, como vínculos y documentos. Si tiene mucha publicidad o vínculos de cancelación de suscripción o de actualización de perfiles, todo debe apuntar al mismo dominio. Por ejemplo:
 
-  Correcto:
+  Correcto (todos los dominios son los mismos):
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ Igual de importante que la forma en que se envían los mensajes de correo electr
 
   `options.bulkmailer.com`
 
-  Incorrecto:
+  Incorrecto (todos los dominios son diferentes):
 
   `unsubscribe.bulkmailer.com`
 
