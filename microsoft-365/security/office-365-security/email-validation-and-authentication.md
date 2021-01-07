@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
-ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 6a0bf6fd7958f44a9cfbe7ae0600aeb064170437
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131078"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760523"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -145,7 +145,7 @@ Puede usar este método para resolver la suplantación de identidad dentro de la
 
 - [Puede configurar los registros DMARC](use-dmarc-to-validate-email.md) para su dominio para determinar la lista de remitentes legítimos.
 
-Microsoft no proporciona instrucciones detalladas de implementación para los registros SPF, DKIM y DMARC. Sin embargo, hay una gran cantidad de información disponible en línea. También hay compañías de terceros dedicadas a ayudar a su organización a configurar los registros de autenticación de correo electrónico.
+Microsoft no proporciona instrucciones detalladas de implementación para los registros SPF, DKIM y DMARC. Sin embargo, hay una gran cantidad de información disponible en línea. También existen compañías de terceros dedicadas a ayudar a su organización a configurar los registros de autenticación de correo electrónico.
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>No conoce todas las fuentes del correo electrónico
 
