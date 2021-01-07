@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 titleSuffix: Office 365
-ms.date: 09/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -18,17 +18,14 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en la exhibición avanzada de documentos electrónicos de Microsoft 365.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 8930f362d217ed87fc0e16b88b7588ab781164e8
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759926"
+ms.locfileid: "49769281"
 ---
-# <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Descripción de la evaluación en relevancia en eDiscovery avanzado (Classic)
-
-> [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+# <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Evaluación en el módulo de relevancia en eDiscovery avanzado
   
 La exhibición avanzada de documentos electrónicos permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. EDiscovery avanzado permite al experto tomar decisiones sobre un enfoque adoptado y aplicar estas decisiones al proyecto de revisión del documento.
   
@@ -43,14 +40,14 @@ Las estadísticas, que se presentan en las pestañas realizar seguimiento y deci
 Una vez que el experto revisa un conjunto de evaluación inicial de 500 archivos, la relevancia puede determinar el margen actual de error de los valores de recuperación. La relevancia también recomienda un margen de error predeterminado para llegar a la optimización del conjunto de evaluación. Aquí le mostramos otros ejemplos:
   
 - Si el conjunto de evaluación ya ha dado como resultado un margen de error de más o menos el 10%, la relevancia le recomendará pasar a la formación (no es necesaria ninguna revisión de evaluación adicional). 
-    
+
 - Si el conjunto de evaluación produjo un margen de error de más o menos el 13%, la relevancia puede recomendar la revisión de otro conjunto de archivos de evaluación para alcanzar un margen más pequeño. 
-    
+
 - Si la riqueza es extremadamente baja, la relevancia podría recomendar la detención de la evaluación, aunque el margen de error sea grande (lo que no resulta práctico), ya que el conjunto de evaluación necesario para alcanzar un margen de error útil es demasiado grande.
-    
+
 Cada problema tiene su propia riqueza, el margen actual de error y, como resultado, el número estimado de archivos de evaluación adicionales. El siguiente conjunto de evaluación se crea de acuerdo con el número máximo de archivos (hasta 1.000 en un único conjunto).
   
 Puede aceptar las recomendaciones de relevancia o ajustar el margen de error actual de acuerdo con sus necesidades. El margen actual predeterminado del error se determina para la recuperación como igual o superior al 75%.
   
 > [!NOTE]
-> La fase de evaluación se puede omitir, en la pestaña **\> seguimiento de relevancia** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema.
+> La fase de evaluación se puede omitir, en la pestaña **\> seguimiento de relevancia** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Como resultado, no habrá estadísticas para este problema. Sólo se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema.

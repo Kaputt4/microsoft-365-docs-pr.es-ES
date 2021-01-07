@@ -14,36 +14,36 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: fbd2672986046a4f6d25c47b011eaef0a87d90e1
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024780"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777062"
 ---
 # <a name="service-encryption"></a>Cifrado de servicio
 
 Además de usar el cifrado de nivel de volumen, Exchange Online, Skype empresarial, SharePoint Online y OneDrive para la empresa también usan el cifrado de servicio para cifrar los datos de los clientes. El cifrado del servicio permite dos opciones de administración de claves:
 
-## <a name="microsoft-managed-keys"></a>Claves administradas de Microsoft
-Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado del servicio. Esta opción está disponible actualmente en SharePoint Online y OneDrive para la empresa. Esta opción se está implementando actualmente para Exchange Online. Las claves administradas de Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarse con la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos se cifran con las claves administradas de Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
+## <a name="microsoft-managed-keys"></a>Claves administradas por Microsoft
+Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado del servicio. Esta opción está actualmente habilitada de forma predeterminada para Exchange Online, SharePoint Online, OneDrive para la empresa. Las claves administradas por Microsoft proporcionan un cifrado de servicio predeterminado a menos que decida incorporarse con la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos se cifran con las claves administradas por Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
 
 ## <a name="customer-key"></a>Clave de cliente
 Debe proporcionar las claves raíz que se usan con el cifrado de servicio y administrarlas con Azure Key Vault. Microsoft administra todas las demás claves. Esta opción se denomina clave de cliente y actualmente está disponible para Exchange Online, SharePoint Online y OneDrive para la empresa. (Anteriormente denominado cifrado avanzado con BYOK. Consulte [mejorar la transparencia y el control para clientes de Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) para el anuncio original).
 
-El cifrado de servicio ofrece varias ventajas. Por ejemplo, clave de cliente:
+El cifrado de servicio ofrece varias ventajas:
 
-- Proporciona características de protección y administración de derechos sobre la protección de cifrado de alta seguridad.
+- Proporciona una capa de protección agregada en la parte superior de BitLocker.
+
+- Proporciona la separación de los administradores del sistema operativo Windows del acceso a los datos de aplicación almacenados o procesados por el sistema operativo.
 
 - Incluye una opción de clave de cliente que permite que los servicios multiinquilinos proporcionen administración de claves por espacio empresarial.
 
-- Proporciona la separación de los administradores del sistema operativo Windows del acceso a los datos de clientes almacenados o procesados por el sistema operativo.
-
-- Mejora la capacidad de Microsoft 365 para satisfacer las demandas de los clientes que tienen requisitos de cumplimiento relacionados con el cifrado.
+- Mejora la capacidad de Microsoft 365 para satisfacer las demandas de los clientes que tienen requisitos de cumplimiento específicos en relación con el cifrado.
 
 Mediante la clave de cliente, puede generar sus propias claves criptográficas mediante un módulo de servicio de hardware (HSM) local o Azure Key Vault (AKV). Independientemente de cómo genere la clave, use AKV para controlar y administrar las claves criptográficas que usa Office 365. Una vez que las claves se almacenan en AKV, se pueden usar como la raíz de una de las llaves que cifran los archivos o datos de buzones de correo.
 
-Otra ventaja de la clave de cliente es el control que tiene sobre la posibilidad de que Microsoft procese sus datos. Si desea quitar datos de Office 365, por ejemplo, si desea finalizar el servicio con Microsoft o quitar una parte de los datos almacenados en la nube, puede hacerlo y usar la clave de cliente como control técnico. Esto garantiza que nadie, incluido Microsoft, puede tener acceso a los datos o procesarlos. La clave de cliente es adicional y complemental a la caja de caja del cliente que se usa para controlar el acceso a los datos por parte del personal de Microsoft.
+Otra ventaja de la clave de cliente es el control que tiene sobre la posibilidad de que Microsoft procese sus datos. Si desea quitar datos de Office 365, por ejemplo, si desea finalizar el servicio con Microsoft o quitar una parte de los datos almacenados en la nube, puede hacerlo y usar la clave de cliente como control técnico. La eliminación de datos garantiza que nadie, incluido Microsoft, puede tener acceso a los datos o procesarlos. La clave de cliente es adicional y complemental a la caja de caja del cliente que se usa para controlar el acceso a los datos por parte del personal de Microsoft.
 
 Para obtener información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, incluidos los sitios de grupo y OneDrive para la empresa, consulte estos artículos:
 

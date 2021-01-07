@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9b48321693f883e40a100e29e5e1ec3c5203caa2
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846153"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771864"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48846153"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 La `DeviceFileEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre la creación, modificación y otros eventos del sistema de archivos. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -83,6 +83,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SensitivityLabel` | string | Etiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarlo para la protección de la información |
 | `SensitivitySubLabel` | string | Subetiqueta aplicada a un correo electrónico, un archivo u otro contenido para clasificarlo para la protección de la información; las subetiquetas de confidencialidad se agrupan en las etiquetas de confidencialidad, pero se tratan de manera independiente |
 | `IsAzureInfoProtectionApplied` | boolean | Indica si Azure Information Protection ha cifrado el archivo |
+
+>[!NOTE]
+> La información de hash de archivo siempre se mostrará cuando esté disponible. Sin embargo, existen varios motivos posibles por los que no se puede calcular un SHA1, SHA256 o MD5. Por ejemplo, el archivo podría estar ubicado en almacenamiento remoto, bloqueado por otro proceso, comprimido o marcado como virtual. En estos escenarios, la información de hash de archivo aparece vacía.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

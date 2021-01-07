@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda de contenido para permitir que un administrador de eDiscovery busque solo en un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28afbf65678e74e087365518bd07ceaae0e40e8a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5abf50988f40a3de833583543beb3b1c49e4e520
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358552"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777093"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurar el filtrado de permisos para Búsqueda de contenido
 
@@ -46,58 +46,48 @@ El filtrado de permisos de búsqueda es compatible con la característica de bú
 ## <a name="requirements-to-configure-permissions-filtering"></a>Requisitos para configurar el filtrado de permisos
 
 - Para ejecutar los cmdlets de filtro de seguridad de cumplimiento, debe ser miembro del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-    
-- Tiene que conectar Windows PowerShell al centro de seguridad & cumplimiento y a la organización de Exchange Online para usar los cmdlets de filtro de seguridad de cumplimiento. Esto es necesario porque estos cmdlets necesitan acceso a las propiedades del buzón, que es por qué tiene que conectarse a Exchange Online. Vea los pasos en la sección siguiente. 
-    
-- Consulte la sección [More information](#more-information) para obtener información adicional acerca de los filtros de permisos de búsqueda. 
-    
-- El filtrado de permisos de búsqueda se aplica a los buzones inactivos, lo que significa que puede usar el filtrado de contenido de buzones y buzones para limitar quién puede buscar en un buzón inactivo. Consulte la sección [More Information](#more-information) para obtener información adicional acerca del filtrado de permisos y de los buzones inactivos. 
-    
--  El filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en las carpetas públicas de Exchange. 
-    
-- No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Pero el rendimiento de la búsqueda se verá afectado cuando haya más de 100 filtros de permisos de búsqueda. Para mantener el número de filtros de permisos de búsqueda en la organización tan pequeños como sea posible, cree filtros que combinen las reglas para Exchange, SharePoint y OneDrive en un único filtro siempre que sea posible.
-    
-## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Conectarse al centro de seguridad & cumplimiento y a Exchange online en una única sesión de PowerShell en remoto
 
-1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de **. PS1**. Por ejemplo, puede guardarlo en un archivo denominado **ConnectEXO-CC.ps1**.
-    
+- Debe conectarse a PowerShell del centro de cumplimiento de Exchange Online y seguridad & para usar los cmdlets de filtro de seguridad de cumplimiento. Esto es necesario porque estos cmdlets necesitan tener acceso a las propiedades del buzón, que es la razón por la que tiene que conectarse a Exchange Online PowerShell. Vea los pasos en la sección siguiente.
+
+- Consulte la sección [More information](#more-information) para obtener información adicional acerca de los filtros de permisos de búsqueda.
+
+- El filtrado de permisos de búsqueda se aplica a los buzones inactivos, lo que significa que puede usar el filtrado de contenido de buzones y buzones para limitar quién puede buscar en un buzón inactivo. Consulte la sección [More Information](#more-information) para obtener información adicional acerca del filtrado de permisos y de los buzones inactivos.
+
+- El filtrado de permisos de búsqueda no se puede usar para limitar quién puede buscar en las carpetas públicas de Exchange.
+
+- No hay ningún límite en el número de filtros de permisos de búsqueda que se pueden crear en una organización. Pero el rendimiento de la búsqueda se verá afectado cuando haya más de 100 filtros de permisos de búsqueda. Para mantener el número de filtros de permisos de búsqueda en la organización tan pequeños como sea posible, cree filtros que combinen las reglas para Exchange, SharePoint y OneDrive en un único filtro siempre que sea posible.
+
+## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>Conectarse a PowerShell de Exchange Online y el centro de cumplimiento de & de seguridad en una sola sesión
+
+Para poder ejecutar correctamente el script de esta sección, debe descargar e instalar el módulo Exchange Online PowerShell V2. Para obtener más información, consulte [About the Exchange Online PowerShell V2 Module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de **. PS1**. Por ejemplo, puede guardarlo en un archivo denominado **ConnectEXO-SCC.ps1**.
+
     ```powershell
+    Import-Module ExchangeOnlineManagement
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -AllowClobber -DisableNameChecking
+    Connect-ExchangeOnline -Credential $UserCredential
+    Connect-IPPSSession -Credential $UserCredential
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
 2. En el equipo local, abra Windows PowerShell, vaya a la carpeta en la que se encuentra el script creado en el paso anterior y, a continuación, ejecute el script. por ejemplo:
-    
-    ```powershell
-    .\ConnectEXO-CC.ps1
-    ```
-
-¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets del centro de seguridad & cumplimiento y Exchange Online se importan a la sesión local de Windows PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del centro de cumplimiento de & de seguridad y un cmdlet de Exchange Online. Por ejemplo, puede ejecutar **install-UnifiedCompliancePrerequisite** y **Get-Mailbox**. 
-  
-Si surgen errores, compruebe los requisitos siguientes:
-  
-- Un problema habitual es una contraseña incorrecta. Vuelva a realizar los dos pasos y preste especial atención al nombre de usuario y la contraseña que escriba en el paso 1.
-    
-- Compruebe que la cuenta tiene permiso para obtener acceso al centro de seguridad & cumplimiento. Para obtener más información, vea [conceder acceso a los usuarios al centro de seguridad & cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-    
-- Para evitar que se produzcan ataques por denegación de servicio (DoS), solo se pueden tener abiertas tres conexiones remotas de PowerShell al centro de seguridad & cumplimiento.
-    
-- Windows PowerShell debe estar configurado para ejecutar scripts. Esto solo tiene que realizarse una vez, no cada vez que se conecte. Para hacer que Windows PowerShell ejecute scripts firmados, ejecute el siguiente comando en una ventana de Windows PowerShell con permisos elevados (o sea, una ventana de Windows PowerShell que se abre seleccionando **Ejecutar como administrador**).
 
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
+    .\ConnectEXO-SCC.ps1
     ```
 
-- Debe abrir el tráfico del puerto TCP 80 entre su equipo local y Office 365. Probablemente esté abierto, pero es un aspecto que se debe tener en cuenta si la directiva de acceso a Internet de su organización es restrictiva.
+¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets de Exchange Online y Security & Compliance PowerShell se importan a la sesión local de Windows PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del centro de seguridad & cumplimiento de Exchange Online. Por ejemplo, puede ejecutar y **Get-Mailbox** y **Get-ComplianceSearch**.
 
-  
+Para solucionar los errores de conexión de PowerShell, consulte:
+
+- [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
+
+- [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
-El **New-ComplianceSecurityFilter** se usa para crear un filtro de permisos de búsqueda. En la siguiente tabla se describen los parámetros de este cmdlet. Todos los parámetros son necesarios para crear un filtro de seguridad de cumplimiento. 
+El **New-ComplianceSecurityFilter** se usa para crear un filtro de permisos de búsqueda. En la siguiente tabla se describen los parámetros de este cmdlet. Todos los parámetros son necesarios para crear un filtro de seguridad de cumplimiento.
   
 |**Parámetro**|**Descripción**|
 |:-----|:-----|
@@ -144,7 +134,7 @@ Este ejemplo permite al usuario annb@contoso.com realizar todas las acciones de 
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'" -Action All
 ```
 
-En este ejemplo se permite que los usuarios ' donh y suzanf busquen solo los buzones que tienen el valor ' Marketing ' para la propiedad de buzón CustomAttribute1.
+En este ejemplo se permite que los usuarios donh y suzanf busquen solo en los buzones con el valor 'Marketing' para la propiedad de buzón CustomAttribute1.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
@@ -227,7 +217,7 @@ El **set-ComplianceSecurityFilter** se usa para modificar un filtro de permisos 
 |:-----|:-----|
 | _Action_| El parámetro  _Action_ especifica el tipo de acción de búsqueda al que se aplica el filtro. Las acciones de Búsqueda de contenido posibles son: <br/><br/> **Exportar:** El filtro se aplica al exportar los resultados de la búsqueda.  <br/> **Vista previa:** El filtro se aplica al obtener una vista previa de los resultados de búsqueda.  <br/> **Purgar:** El filtro se aplica cuando se depuran los resultados de búsqueda.  <br/> **Búsqueda:** El filtro se aplica cuando se ejecuta una búsqueda.  <br/> **Todo:** El filtro se aplica a todas las acciones de búsqueda.  <br/> |
 | _FilterName_|El parámetro  _filtername_ especifica el nombre del filtro de permisos. |
-| _Filtros_| El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear dos tipos diferentes de filtros: <br/><br/>**Filtrado de buzones:** Este tipo de filtro especifica los buzones que pueden buscar los usuarios asignados (especificados por el parámetro  _users_ ). La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad de buzón que se usa para establecer el ámbito de los buzones que se pueden buscar. Por ejemplo, el filtro de buzón  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` permitiría al usuario asignado a este filtro buscar solo los buzones que tengan el valor "OttawaUsers" en la propiedad CustomAttribute10.  Se puede usar cualquier propiedad de destinatario filtrable admitida para la propiedad  _MailboxPropertyName_ . Para obtener una lista de las propiedades admitidas, vea [filterable Properties for the-RecipientFilter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName: Value_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda de contenido. Por ejemplo, el filtro de contenido buzón  `MailboxContent_recipients:contoso.com` permite que el usuario asignado a este filtro solo busque mensajes enviados a destinatarios en el dominio contoso.com.  Para obtener una lista de las propiedades de los mensajes que permiten búsquedas, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md). <br/><br/>**Filtrado de sitio y contenido de sitio:** Hay dos filtros relacionados con el sitio de SharePoint y OneDrive para la empresa que puede usar para especificar el sitio o el contenido del sitio que los usuarios asignados pueden buscar: <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent**_*SearchableSiteProperty*<br/><br/>Estos dos filtros son intercambiables. Por ejemplo,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` y  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` devuelve los mismos resultados. Pero para ayudarle a identificar lo que hace un filtro, puede usar  `Site_` para especificar propiedades relacionadas con el sitio (como una dirección URL del sitio) y  `SiteContent_` para especificar propiedades relacionadas con el contenido (como tipos de documentos. Por ejemplo, el filtro  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` permite que el usuario asignado a este filtro solo busque contenido en la https://contoso.spoppe.com/sites/doctors colección de sitios. El filtro  `"SiteContent_FileExtension -eq 'docx'"` permitiría que el usuario asignado a este filtro sólo buscara documentos de Word (Word 2007 y versiones posteriores).  <br/><br/>Para obtener una lista de las propiedades de sitio que permiten búsquedas, vea [información general sobre las propiedades administradas y rastreadas en SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Las propiedades marcadas con **sí** en la columna **consultable** se pueden usar para crear un filtro de contenido de sitio o sitio. <br/><br/>          |
+| _Filtros_| El parámetro  _Filters_ especifica los criterios de búsqueda para el filtro de seguridad de cumplimiento. Puede crear dos tipos diferentes de filtros: <br/><br/>**Filtrado de buzones:** Este tipo de filtro especifica los buzones que pueden buscar los usuarios asignados (especificados por el parámetro  _users_ ). La sintaxis de este tipo de filtro es **Mailbox_** _MailboxPropertyName_, donde  _MailboxPropertyName_ especifica una propiedad de buzón que se usa para establecer el ámbito de los buzones que se pueden buscar. Por ejemplo, el filtro de buzón  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` permitiría al usuario asignado a este filtro buscar solo los buzones que tengan el valor "OttawaUsers" en la propiedad CustomAttribute10.  Se puede usar cualquier propiedad de destinatario filtrable admitida para la propiedad  _MailboxPropertyName_ . Para obtener una lista de las propiedades admitidas, vea [filterable Properties for the-RecipientFilter Parameter](https://go.microsoft.com/fwlink/p/?LinkId=784903). <br/><br/>**Filtrado de contenido de buzones:** Este tipo de filtro se aplica al contenido que se puede buscar. Especifica el contenido del buzón que los usuarios asignados pueden buscar. La sintaxis de este tipo de filtro es **MailboxContent_** _SearchablePropertyName: Value_, donde  _SearchablePropertyName_ especifica una propiedad de lenguaje de consulta de palabras clave (KQL) que se puede especificar en una búsqueda de contenido. Por ejemplo, el filtro de contenido buzón  `MailboxContent_recipients:contoso.com` permite que el usuario asignado a este filtro solo busque mensajes enviados a destinatarios en el dominio contoso.com.  Para obtener una lista de las propiedades de los mensajes que permiten búsquedas, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md). <br/><br/>**Filtrado de sitio y contenido de sitio:** Hay dos filtros relacionados con el sitio de SharePoint y OneDrive para la empresa que puede usar para especificar el sitio o el contenido del sitio que los usuarios asignados pueden buscar: <br/><br/>- **Site_** *SearchableSiteProperty* <br/>- **SiteContent** _ *SearchableSiteProperty*<br/><br/>Estos dos filtros son intercambiables. Por ejemplo,  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` y  `"SiteContent_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` devuelve los mismos resultados. Pero para ayudarle a identificar lo que hace un filtro, puede usar  `Site_` para especificar propiedades relacionadas con el sitio (como una dirección URL del sitio) y  `SiteContent_` para especificar propiedades relacionadas con el contenido (como tipos de documentos. Por ejemplo, el filtro  `"Site_Path -like 'https://contoso.spoppe.com/sites/doctors*'"` permite que el usuario asignado a este filtro solo busque contenido en la https://contoso.spoppe.com/sites/doctors colección de sitios. El filtro  `"SiteContent_FileExtension -eq 'docx'"` permitiría que el usuario asignado a este filtro sólo buscara documentos de Word (Word 2007 y versiones posteriores).  <br/><br/>Para obtener una lista de las propiedades de sitio que permiten búsquedas, vea [información general sobre las propiedades administradas y rastreadas en SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Las propiedades marcadas con **sí** en la columna **consultable** se pueden usar para crear un filtro de contenido de sitio o sitio. <br/><br/>          |
 | _Usuarios_|El parámetro  _users_ especifica los usuarios que obtienen este filtro aplicado a sus búsquedas de contenido. Como se trata de una propiedad de varios valores, especificar un usuario o un grupo de usuarios con este parámetro sobrescribe la lista de usuarios existente. Vea los siguientes ejemplos para ver la sintaxis para agregar y quitar usuarios seleccionados. <br/><br/>También puede usar el parámetro  _users_ para especificar un grupo de funciones del centro de cumplimiento de & de seguridad. Así, podrá crear un grupo de roles personalizado y, a continuación, asignar a ese grupo de roles un filtro de permisos de búsqueda. Por ejemplo, supongamos que tiene un grupo de roles personalizado para los administradores de exhibición de documentos electrónicos de la sede en los Estados Unidos de una compañía multinacional. Puede usar el parámetro  _users_ para especificar este grupo de funciones (mediante la propiedad Name del grupo de funciones) y, a continuación, usar el parámetro  _Filter_ para permitir que solo se busque en los buzones de los Estados Unidos. <br/><br/>Con este parámetro no es posible especificar grupos de distribución. |
 
 ## <a name="examples-of-changing-search-permissions-filters"></a>Ejemplos de cambio de filtros de permisos de búsqueda
@@ -268,7 +258,7 @@ Se usa **Remove-ComplianceSecurityFilter** para eliminar un filtro de búsqueda.
   
 ## <a name="more-information"></a>Más información
 
-- **¿Cómo funciona el filtrado de permisos de búsqueda? ** El filtro de permisos se agrega a la consulta de búsqueda cuando se ejecuta una búsqueda de contenido. El filtro de permisos se une a la consulta de búsqueda por el operador booleano **and** . Por ejemplo, tiene un filtro de permisos que permite a Bob realizar todas las acciones de búsqueda en los buzones de los miembros del grupo de distribución de trabajadores. A continuación, Bob ejecuta una búsqueda de contenido en todos los buzones de la organización con la consulta de búsqueda  `sender:jerry@adatum.com` . Dado que el filtro de permisos y la consulta de búsqueda se combinan lógicamente mediante un operador **and** , la búsqueda devuelve cualquier mensaje enviado por Jerry@adatum.com a cualquier miembro del grupo de distribución de trabajadores. 
+- **¿Cómo funciona el filtrado de permisos de búsqueda?** El filtro de permisos se agrega a la consulta de búsqueda cuando se ejecuta una búsqueda de contenido. El filtro de permisos se une a la consulta de búsqueda por el operador booleano **and** . Por ejemplo, tiene un filtro de permisos que permite a Bob realizar todas las acciones de búsqueda en los buzones de los miembros del grupo de distribución de trabajadores. A continuación, Bob ejecuta una búsqueda de contenido en todos los buzones de la organización con la consulta de búsqueda  `sender:jerry@adatum.com` . Dado que el filtro de permisos y la consulta de búsqueda se combinan lógicamente mediante un operador **and** , la búsqueda devuelve cualquier mensaje enviado por Jerry@adatum.com a cualquier miembro del grupo de distribución de trabajadores. 
     
 - **¿Qué sucede si tiene varios filtros de permisos de búsqueda?** En una consulta de búsqueda de contenido, varios **filtros de permisos se combinan mediante operadores** booleanos. Por lo tanto, se devolverán resultados si alguno de los filtros es true. En una búsqueda de contenido, todos los filtros (combinados mediante operadores **or** ) se combinan con la consulta de búsqueda por el operador **and** . Vamos a echar el ejemplo anterior, en el que un filtro de búsqueda permite a Bob buscar sólo en los buzones de los miembros del grupo de distribución de trabajadores. A continuación, creamos otro filtro que impida que Bob busque el buzón de correo de Phil ("Mailbox_Alias-ne" Phil ""). Además, supongamos que Phil es un miembro del grupo de trabajadores. Cuando Bob ejecuta una búsqueda de contenido (del ejemplo anterior) en todos los buzones de la organización, los resultados de la búsqueda se devuelven para el buzón de Phil, aunque haya aplicado el filtro para evitar que Bob busque en el buzón de Phil. Esto se debe a que el primer filtro, que permite a Bob buscar en el grupo de trabajadores, es verdadero. Y debido a que Phil es miembro del grupo de trabajadores, Bob puede buscar el buzón de correo de Phil. 
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ebf4626a6106a9bebc62c8bca1be825c645d60fd
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698423"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777083"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -64,10 +64,10 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Marcas dinámicas con variables](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | En revisión |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | En revisión   | En revisión         | En revisión                                                        |
-|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión            | En revisión        | En revisión   | En revisión         | Afirma <sup>\*</sup>                                                        |
-|[Pedir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](sensitivity-labels.md#what-label-policies-can-do)   | Vista previa: [canal beta](https://office.com/insider)             | Vista previa: [canal beta](https://office.com/insider)         | Vista previa: [canal beta](https://office.com/insider)   | En revisión         | En revisión                                            
+|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | Vista previa: [canal actual (versión preliminar)](https://office.com/insider)            | Vista previa: [canal actual (versión preliminar)](https://office.com/insider)        | En revisión   | En revisión         | Afirma <sup>\*</sup>                                                        |
+|[Pedir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](sensitivity-labels.md#what-label-policies-can-do)   | Vista previa: implementación en el [canal actual (versión preliminar)](https://office.com/insider)             | Vista previa: implementación en el [canal actual (versión preliminar)](https://office.com/insider)         | En revisión   | Vista previa: [canal beta](https://office.com/insider)         | En revisión                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Vista previa de Word y PowerPoint: implementación en el [canal actual (versión preliminar)](https://office.com/insider) | En revisión | En revisión | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Compatibilidad con [autoguardado](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) y [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) en documentos con y sin etiquetas | En revisión | En revisión | En revisión | En revisión | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Admitir [autoguardado](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) y [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) en documentos etiquetados y cifrados | En revisión | En revisión | En revisión | En revisión | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Nota**
@@ -88,8 +88,8 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Marcas dinámicas con variables](#dynamic-markings-with-variables)                                              | En revisión                     | En revisión                 | En revisión         | En revisión           | En revisión               |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Sí               |
-|[Pedir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vista previa: [canal beta](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Sí                |
-|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión                       | En revisión                    | En revisión           | En revisión               | Sí               |
+|[Pedir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vista previa: [canal actual (versión preliminar)](https://office.com/insider))                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | Sí                |
+|[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | Vista previa: [canal actual (versión preliminar)](https://office.com/insider)                       | Vista previa: [canal actual (versión preliminar)](https://office.com/insider)                    | En revisión           | En revisión               | Sí               |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009 +                      | En revisión                    | En revisión           | En revisión               | Sí |
 |
 
