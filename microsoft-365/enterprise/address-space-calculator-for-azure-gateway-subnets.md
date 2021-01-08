@@ -3,7 +3,7 @@ title: Calculadora de espacio de direcciones para subredes de puerta de enlace d
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 01/07/2021
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -16,27 +16,27 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: 'Resumen: calcule el espacio de direcciones de una subred de puerta de enlace de Azure con C3, Python o PowerShell.'
-ms.openlocfilehash: 5e119f1ddefb5877886042b835ffdd093a34f0f8
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332800"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780573"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a><span data-ttu-id="63853-103">Calculadora de espacio de direcciones para subredes de puerta de enlace de Azure</span><span class="sxs-lookup"><span data-stu-id="63853-103">Address space calculator for Azure gateway subnets</span></span>
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a><span data-ttu-id="254f2-103">Calculadora de espacio de direcciones para subredes de puerta de enlace de Azure</span><span class="sxs-lookup"><span data-stu-id="254f2-103">Address space calculator for Azure gateway subnets</span></span>
 
-<span data-ttu-id="63853-104">Una red virtual (VNet) en los servicios de infraestructura de Azure que está conectado a otras redes debe tener una subred de puerta de enlace.</span><span class="sxs-lookup"><span data-stu-id="63853-104">A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet.</span></span> <span data-ttu-id="63853-105">Los procedimientos recomendados para definir esta subred son los siguientes:</span><span class="sxs-lookup"><span data-stu-id="63853-105">The best practices for defining this subnet are the following:</span></span>
+<span data-ttu-id="254f2-104">Una red virtual (VNet) en servicios de infraestructura de Azure que esté conectada a otras redes debe tener una subred de puerta de enlace.</span><span class="sxs-lookup"><span data-stu-id="254f2-104">A virtual network (VNet) in Azure infrastructure services that is connected to other networks must have a gateway subnet.</span></span> <span data-ttu-id="254f2-105">Los procedimientos recomendados para definir la subred de puerta de enlace son:</span><span class="sxs-lookup"><span data-stu-id="254f2-105">The best practices for defining the gateway subnet are:</span></span>
 
-- <span data-ttu-id="63853-106">La longitud de prefijo de la subred de la puerta de enlace puede tener una longitud máxima de 29 (por ejemplo, 10.119.255.248/29), pero la recomendación actual es que se usa una longitud de prefijo de 27 (por ejemplo, 10.119.255.224/27).</span><span class="sxs-lookup"><span data-stu-id="63853-106">The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).</span></span>
-- <span data-ttu-id="63853-107">Al definir el espacio de direcciones de la subred de la puerta de enlace, use la última parte del espacio de direcciones de la red virtual.</span><span class="sxs-lookup"><span data-stu-id="63853-107">When defining the address space of the gateway subnet, use the very last part of the VNet address space.</span></span>
+- <span data-ttu-id="254f2-106">La longitud del prefijo de la subred de puerta de enlace puede tener una longitud máxima de prefijo de 29 (por ejemplo, 10.119.255.248/29), pero la recomendación actual es que use una longitud de prefijo de 27 (por ejemplo, 10.119.255.224/27).</span><span class="sxs-lookup"><span data-stu-id="254f2-106">The prefix length of the gateway subnet can have a maximum prefix length of 29 (for example, 10.119.255.248/29), but the current recommendation is that you use a prefix length of 27 (for example, 10.119.255.224/27).</span></span>
+- <span data-ttu-id="254f2-107">Al definir el espacio de direcciones de la subred de puerta de enlace, use la última parte del espacio de direcciones de la red virtual.</span><span class="sxs-lookup"><span data-stu-id="254f2-107">When defining the address space of the gateway subnet, use the last part of the VNet address space.</span></span>
 
-<span data-ttu-id="63853-108">Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de la puerta de enlace estableciendo los bits usados para la subred de la puerta de enlace en 0 y los bits variables restantes en el espacio de direcciones de red virtual en 1.</span><span class="sxs-lookup"><span data-stu-id="63853-108">For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining variable bits in the VNet address space to 1.</span></span> <span data-ttu-id="63853-109">Para calcular rápidamente el espacio de direcciones de la subred de la puerta de enlace sin tener que convertir a binario y volver al decimal, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.</span><span class="sxs-lookup"><span data-stu-id="63853-109">To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.</span></span>
+<span data-ttu-id="254f2-108">Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de puerta de enlace estableciendo los bits usados para la subred de puerta de enlace en 0 y los bits restantes en el espacio de direcciones de VNET en 1.</span><span class="sxs-lookup"><span data-stu-id="254f2-108">For the second recommendation, you can determine the address space of the gateway subnet by setting the bits used for the gateway subnet to 0 and the remaining bits in the VNet address space to 1.</span></span> <span data-ttu-id="254f2-109">Para calcular rápidamente el espacio de direcciones de la subred de puerta de enlace sin tener que convertir a binario y volver a decimales, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.</span><span class="sxs-lookup"><span data-stu-id="254f2-109">To quickly calculate the gateway subnet address space without having to convert to binary and back to decimal, you can use a console application written in C# or Python or with a PowerShell command block.</span></span>
 
-<span data-ttu-id="63853-110">Este artículo contiene bloques de código de C#, Python y PowerShell que recopilan cinco enteros (los valores de w.x.y. z/n para el prefijo de dirección de la red virtual y la longitud del prefijo de subred de la puerta de enlace) y calcula el espacio de direcciones de la subred de la puerta de enlace.</span><span class="sxs-lookup"><span data-stu-id="63853-110">This article contains C#, Python and PowerShell code blocks that collect five integers—the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length—and calculates the gateway subnet address space.</span></span>
+<span data-ttu-id="254f2-110">Este artículo contiene bloques de código de C#, Python y PowerShell que calculan el espacio de direcciones de la subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de la red virtual y la longitud del prefijo de subred de puerta de enlace.</span><span class="sxs-lookup"><span data-stu-id="254f2-110">This article contains C#, Python, and PowerShell code blocks that calculate the gateway subnet address space based on the values of w.x.y.z/n for the VNet address prefix and the gateway subnet prefix length.</span></span>
 
-## <a name="c-code-block"></a><span data-ttu-id="63853-111">Bloque de código de C#</span><span class="sxs-lookup"><span data-stu-id="63853-111">C# code block</span></span>
+## <a name="c-code-block"></a><span data-ttu-id="254f2-111">Bloque de código C#</span><span class="sxs-lookup"><span data-stu-id="254f2-111">C# code block</span></span>
 
-<span data-ttu-id="63853-112">Use este bloque de código para crear una aplicación de consola en C#.</span><span class="sxs-lookup"><span data-stu-id="63853-112">Use this code block to create a console app in C#.</span></span>
+<span data-ttu-id="254f2-112">Usa este bloque de código para crear una aplicación de consola en C#.</span><span class="sxs-lookup"><span data-stu-id="254f2-112">Use this code block to create a console app in C#.</span></span>
 
 ```c#
 using System; 
@@ -62,8 +62,8 @@ namespace ConsoleApplication1
  
             // Get the five values needed from the keyboard. 
             Console.WriteLine("**************************************************************************"); 
-            Console.WriteLine("*** Gateway subnet address space calculator for Azure virtual networks ***");             
-            Console.WriteLine("**************************************************************************");  
+            Console.WriteLine("**_ Gateway subnet address space calculator for Azure virtual networks _*_");             
+            Console.WriteLine("_*************************************************************************");  
             Console.WriteLine(); 
             Console.WriteLine("Please supply your virtual network address space in the form of w.x.y.z/n."); 
             Console.WriteLine(); 
@@ -108,16 +108,16 @@ namespace ConsoleApplication1
 } 
 ```
 
-## <a name="python-code-block"></a><span data-ttu-id="63853-113">Bloque de código de Python</span><span class="sxs-lookup"><span data-stu-id="63853-113">Python code block</span></span>
+## <a name="python-code-block"></a><span data-ttu-id="254f2-113">Bloque de código de Python</span><span class="sxs-lookup"><span data-stu-id="254f2-113">Python code block</span></span>
 
-<span data-ttu-id="63853-114">Use este bloque de código para crear una aplicación de consola en Python.</span><span class="sxs-lookup"><span data-stu-id="63853-114">Use this code block to create a console app in Python.</span></span>
+<span data-ttu-id="254f2-114">Usa este bloque de código para crear una aplicación de consola en Python.</span><span class="sxs-lookup"><span data-stu-id="254f2-114">Use this code block to create a console app in Python.</span></span>
 
 ```python
 import math 
 # Collect the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet 
 print("**************************************************************************")  
-print("*** Gateway subnet address space calculator for Azure virtual networks ***")  
-print("**************************************************************************\n")   
+print("**_ Gateway subnet address space calculator for Azure virtual networks _*_")  
+print("_*************************************************************************\n")   
 print("Please supply your virtual network address space in the form of w.x.y.z/n.");  
 w=int(input("w = ")) 
 x=int(input("x = ")) 
@@ -147,9 +147,9 @@ print(gwAddrPref)
 ```
 
 
-## <a name="powershell-command-block"></a><span data-ttu-id="63853-115">Bloque de comandos de PowerShell</span><span class="sxs-lookup"><span data-stu-id="63853-115">PowerShell command block</span></span>
+## <a name="powershell-command-block"></a><span data-ttu-id="254f2-115">Bloque de comandos de PowerShell</span><span class="sxs-lookup"><span data-stu-id="254f2-115">PowerShell command block</span></span>
 
-<span data-ttu-id="63853-116">Rellene los valores y ejecute el bloque de comandos resultante en una ventana de PowerShell o en PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="63853-116">Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell ISE.</span></span>
+<span data-ttu-id="254f2-116">Rellene los valores y ejecute el bloque de comandos resultante en una ventana de PowerShell o en el Entorno de scripts integrado (ISE) de PowerShell.</span><span class="sxs-lookup"><span data-stu-id="254f2-116">Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell Integrated Script Environment (ISE).</span></span>
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -177,7 +177,6 @@ $dx= [string]$w2 + "." + [string]$x2 + "." + [string]$y2 + "." + [string]$z2 + "
 Write-Host "Your gateway address prefix is: " $dx
 ```
     
-## <a name="related-topics"></a><span data-ttu-id="63853-117">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="63853-117">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="254f2-117">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="254f2-117">Related topics</span></span>
 
-[<span data-ttu-id="63853-118">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="63853-118">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
-
+[<span data-ttu-id="254f2-118">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="254f2-118">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
