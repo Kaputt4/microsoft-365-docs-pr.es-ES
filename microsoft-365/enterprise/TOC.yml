@@ -24,7 +24,7 @@
       items:
         - name: Agregar un dominio
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: Configurar la inclusión en la lista blanca del punto de conexión de M365E
+        - name: Configurar los puntos de conexión a omitir
           items:
             - name: Dirección IP de Office 365 y servicio web de URL
               href: microsoft-365-ip-web-service.md
