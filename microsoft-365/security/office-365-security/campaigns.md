@@ -1,5 +1,5 @@
 ---
-title: Vistas de campañas en Microsoft defender para Office 365 plan
+title: Vistas de campaña en El plan de Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,20 +17,20 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Obtenga información sobre las vistas de campañas en Microsoft defender para Office 365.
-ms.openlocfilehash: 82dbccabe4917b8b90f67456fbac1c673bad3286
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
+ms.openlocfilehash: 8e5c49c9a45d1578da1eea33a560da611fb74155
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357664"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788020"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campañas en Microsoft defender para Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Vistas de campañas es una característica de Microsoft defender para Office 365 plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento de defender para Office 365 plan 2). Vistas de campañas en el centro de seguridad & cumplimiento identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
+Vistas de campaña es una característica de Microsoft Defender para Office 365 Plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento defender para Office 365 Plan 2). Las vistas de campaña en el Centro de & de seguridad identifican y clasifican los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
 
 - Investigar y responder eficazmente a los ataques de suplantación de identidad.
 - Entender mejor el alcance del ataque.
@@ -40,165 +40,165 @@ La característica Vistas de la campaña le permite obtener una perspectiva gene
 
 ## <a name="what-is-a-campaign"></a>¿Qué es una campaña?
 
-Una campaña es un ataque de correo electrónico coordinado contra una o varias organizaciones. Los ataques de correo electrónico que roban credenciales y datos de la empresa son un sector importante y lucrativo. A medida que las tecnologías aumentan en un esfuerzo por detener los ataques, los atacantes modifican sus métodos en un esfuerzo para garantizar un éxito continuo.
+Una campaña es un ataque de correo electrónico coordinado contra una o varias organizaciones. Los ataques de correo electrónico que roban credenciales y datos de la empresa son un sector grande y a gran tamaño. A medida que las tecnologías aumentan para detener los ataques, los atacantes modifican sus métodos para garantizar un éxito continuo.
 
-Microsoft aprovecha la gran cantidad de datos contra phishing, contra correo electrónico no deseado y antimalware en todo el servicio para ayudarle a identificar las campañas. Analizamos y clasificamos la información de ataques de acuerdo con varios factores. Por ejemplo:
+Microsoft aprovecha la gran cantidad de datos contra suplantación de identidad, correo no deseado y antimalware en todo el servicio para ayudar a identificar las campañas. Analizamos y clasificamos la información de ataque según varios factores. Por ejemplo:
 
-- **Origen del ataque**: las direcciones IP de origen y los dominios de correo electrónico del remitente.
-- **Propiedades del mensaje**: el contenido, el estilo y el tono de los mensajes.
-- **Destinatarios del mensaje**: cómo se relacionan los destinatarios. Por ejemplo, dominios de destinatarios, funciones de trabajo de destinatarios (administradores, ejecutivos, etc.), tipos de empresas (grandes, pequeñas, públicas, privadas, etc.) y sectores.
-- **Carga de ataques**: vínculos malintencionados, datos adjuntos u otras cargas en los mensajes.
+- **Origen de ataque:** las direcciones IP de origen y los dominios de correo electrónico del remitente.
+- **Propiedades del** mensaje: el contenido, el estilo y el tono de los mensajes.
+- **Destinatarios del mensaje:** cómo se relacionan los destinatarios. Por ejemplo, dominios de destinatarios, funciones de trabajo de destinatarios (administradores, ejecutivos, etc.), tipos de compañía (grandes, pequeñas, públicas, privadas, etc.) y sectores.
+- **Carga de ataque:** vínculos malintencionados, datos adjuntos u otras cargas en los mensajes.
 
-Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Es posible que se inicie una campaña en su organización específica o que la organización forme parte de una campaña más grande en varias compañías.
+Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Es posible que se haya iniciado una campaña en una organización específica o que la organización sea parte de una campaña más grande en varias empresas.
 
-## <a name="campaign-views-in-the-security--compliance-center"></a>Vistas de campaña en el centro de seguridad & cumplimiento
+## <a name="campaign-views-in-the-security--compliance-center"></a>Vistas de la campaña en el Centro de & cumplimiento
 
-Las vistas de campaña están disponibles en el [centro de seguridad & cumplimiento](https://protection.office.com) en las campañas de **Administración de amenazas** \> **Campaigns**, o directamente en <https://protection.office.com/campaigns> .
+Vistas de la campaña está disponible en  el Centro [de & cumplimiento en](https://protection.office.com) las \> **campañas** de administración de amenazas o directamente en <https://protection.office.com/campaigns> .
 
 ![Información general de las campañas en el Centro de seguridad y cumplimiento](../../media/campaigns-overview.png)
 
-También puede obtener acceso a las vistas de campañas desde:
+También puedes acceder a vistas de campaña desde:
 
-- **Administración** \> de amenazas **Explorador** \> **Ver** \> **Campañas**
-- **Administración** \> de amenazas **Explorador** \> **Ver** \> **Todo el correo electrónico** \> Ficha **campaña**
-- **Administración** \> de amenazas **Explorador** \> **Ver** \> **Phish** \> Ficha **campaña**
-- **Administración** \> de amenazas **Explorador** \> **Ver** \> **Malware** \> Ficha **campaña**
+- **Administración de amenazas** \> **Explorador** \> **Vista** \> **Campañas**
+- **Administración de amenazas** \> **Explorador** \> **Vista** \> **Todo el correo electrónico** \> **Pestaña Campaña**
+- **Administración de amenazas** \> **Explorador** \> **Vista** \> **Phishing** \> **Pestaña Campaña**
+- **Administración de amenazas** \> **Explorador** \> **Vista** \> **Malware** \> **Pestaña Campaña**
 
-Para tener acceso a las vistas de campaña, debe ser miembro de los grupos de roles administración de la **organización**, **Administrador de seguridad** o **lector** de seguridad en el centro de seguridad & cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener acceso a vistas de campaña, debe ser miembro  de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el Centro de seguridad & Cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="campaigns-overview"></a>Información general sobre campañas
+## <a name="campaigns-overview"></a>Introducción a las campañas
 
-La página información general muestra información sobre todas las campañas.
+La página de información general muestra información sobre todas las campañas.
 
-En la ficha **campaña** predeterminada, el área **tipo de campaña** muestra un gráfico de barras que muestra el número de destinatarios por día. De forma predeterminada, el gráfico muestra los datos de **phish** y **malware** .
+En la pestaña **Campaña** predeterminada, el área Tipo **de** campaña muestra un gráfico de barras que muestra el número de destinatarios por día. De forma predeterminada, el gráfico muestra los datos **de phishing** **y malware.**
 
 > [!TIP]
-> Si no ve ningún dato de la campaña, pruebe a cambiar el intervalo de fechas o los [filtros](#filters-and-settings).
+> Si no ve ningún dato de campaña, pruebe a cambiar el intervalo de fechas o [filtros.](#filters-and-settings)
 
-El resto de la página de información general muestra la siguiente información en la pestaña **campaña** :
+El resto de la página de información general muestra la siguiente información en la **pestaña Campaña:**
 
 - **Nombre**
 
 - **Asunto de ejemplo**: línea de asunto de uno de los mensajes de la campaña. Tenga en cuenta que todos los mensajes de la campaña no tendrán necesariamente el mismo asunto.
 
-- **Destino**: porcentaje calculado por: (el número de destinatarios de la campaña de la organización)/(el número total de destinatarios en la campaña en todas las organizaciones del servicio). Este valor indica el grado al que se dirige la campaña sólo a la organización (un valor superior) en comparación con otras organizaciones del servicio (un valor inferior).
+- **Dirigido:** porcentaje calculado por: (el número de destinatarios de la campaña de la organización) / (el número total de destinatarios de la campaña en todas las organizaciones del servicio). Este valor indica el grado al que se dirige la campaña solo a su organización (un valor superior) frente a otras organizaciones en el servicio (un valor inferior).
 
-- **Tipo**: este valor puede ser **phish** o **malware**.
+- **Tipo:** este valor es **Phish** o **Malware.**
 
-- **Subtipo**: este valor contiene más información sobre la campaña. Por ejemplo:
-  - **Phish**: donde esté disponible, la marca que se está suplantando en esta campaña. Por ejemplo,,,, `Microsoft` `365` `Unknown` `Outlook` o `DocuSign` .
-  - **Malware**: por ejemplo, `HTML/PHISH` o `HTML/<MalwareFamilyName>` .
+- **Subtipo:** este valor contiene más detalles sobre la campaña. Por ejemplo:
+  - **Suplantación** de identidad : si está disponible, la marca que esta campaña está suplantación de identidad. Por ejemplo, `Microsoft` , , , o `365` `Unknown` `Outlook` `DocuSign` .
+  - **Malware:** por ejemplo, `HTML/PHISH` o `HTML/<MalwareFamilyName>` .
 
-  Donde esté disponible, la marca que está en phish a la campaña. Cuando la detección está controlada por defender para la tecnología de Office 365, el prefijo **ATP-** se agrega al valor SubType.
+  Cuando esté disponible, la marca que esta campaña está suplantada. Cuando la detección está controlada por la tecnología Defender para Office 365, el prefijo **ATP-** se agrega al valor de subtipo.
 
 - **Destinatarios**: el número de usuarios a los que se ha dirigido esta campaña.
 
-- **Bandeja de entrada**: el número de usuarios que recibieron mensajes de esta campaña en su bandeja de entrada (no se entregaron a la carpeta de correo electrónico no deseado).
+- **Bandeja de entrada:** el número de usuarios que recibieron mensajes de esta campaña en su Bandeja de entrada (no entregados a su carpeta de correo no deseado).
 
-- **Haga clic en**: el número de usuarios que hizo clic en la dirección URL o abrieron los datos adjuntos en el mensaje de suplantación de identidad.
+- **Clicked**: The number of users that clicked on the URL or opened the attachment in the phishing message.
 
-- **Tasa de clic**: porcentaje calculado con "se ha **pulsado en** la  /  **bandeja de entrada**". Este valor es un indicador de la efectividad de la campaña. Es decir, si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y no han hecho clic en la dirección URL de carga.
+- **Tasa de clics:** porcentaje calculado por "**Bandeja** de entrada en la que se  /  **hizo clic".** Este valor es un indicador de la efectividad de la campaña. En otras palabras, si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y si no han hecho clic en la dirección URL de carga.
 
-  Tenga en cuenta que la **tasa de clics** no se usa en las campañas de malware.
+  Ten en cuenta **que la tasa de** clics no se usa en campañas de malware.
 
-- **Visitado**: el número de usuarios que se han realizado realmente a través del sitio web de carga. Si hay valores en los que se ha **pulsado** , pero los vínculos seguros han bloqueado el acceso al sitio web, este valor será cero.
+- **Visitado:** cuántos usuarios llegaron realmente al sitio web de carga. Si hay valores **clicked,** pero vínculos seguros bloquean el acceso al sitio web, este valor será cero.
 
-La pestaña origen de la **campaña** muestra los orígenes del mensaje en un mapa del mundo.
+La **pestaña Origen de** la campaña muestra los orígenes de mensajes en un mapa del mundo.
 
 ### <a name="filters-and-settings"></a>Filtros y configuración
 
-En la parte superior de la página vistas de campañas, hay varios filtros y configuraciones de consulta para ayudarle a encontrar y aislar campañas específicas.
+En la parte superior de la página Vistas de campaña, hay varias opciones de filtro y consulta que te ayudarán a encontrar y aislar campañas específicas.
 
 ![Filtros de campaña](../../media/campaign-filters-and-settings.png)
 
 El filtrado más básico que puede hacer es la fecha y hora de inicio y la fecha y hora de finalización.
 
-Para filtrar más la vista, puede hacer una sola propiedad con varios valores al filtrar haciendo clic en el botón **tipo de campaña** , haciendo su selección y, a continuación, haciendo clic en **Actualizar**.
+Para filtrar aún más la vista, puede hacer una  sola propiedad con varios valores filtrando haciendo clic en el botón Tipo de campaña, realizando la selección y, a continuación, haciendo clic en **Actualizar**.
 
-En la lista siguiente se describen las propiedades de campaña filtrable que están disponibles en el botón **tipo de campaña** :
+Las propiedades de campaña filtrables que están disponibles en el **botón Tipo de** campaña se describen en la siguiente lista:
 
-- **Basic**:
-  - **Tipo de campaña**: seleccione **malware** o **phish**. Si se quitan las selecciones, se obtiene el mismo resultado que al seleccionar ambas.
+- **Básico:**
+  - **Tipo de campaña:** Seleccionar **malware** o **suplantación de identidad**. Borrar las selecciones tiene el mismo resultado que seleccionar ambas.
   - **Nombre de la campaña**
-  - **Subtipo de campaña**
+  - **Subtipo campaña**
   - **Remitente**
   - **Destinatarios**
   - **Dominio del remitente**
   - **Asunto**
   - **Nombres de archivos adjuntos**
   - **Familia de malware**
-  - **Etiquetas**: usuarios o grupos a los que se ha aplicado la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [etiquetas de usuario](user-tags.md).
+  - **Etiquetas:** usuarios o grupos a los que se ha aplicado la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario.](user-tags.md)
   - **Invalidaciones del sistema**
   - **Acción de entrega**
   - **Acción adicional**
   - **Directionality**
   - **Tecnología de detección**
   - **Ubicación de entrega original**
-  - **Última ubicación de entrega**
+  - **Ubicación de entrega más reciente**
   - **Invalidaciones del sistema**
 
-- **Avanzado**:
-  - **Identificador del mensaje de Internet**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
-  - **Identificador de mensaje de red**: un valor GUID que está disponible en el campo de encabezado **X-MS-Exchange-Organization-Network-Message-ID** en el encabezado del mensaje.
+- **Avanzadas:**
+  - **Identificador de mensaje de Internet:** disponible en el **campo de encabezado Id.** de mensaje en el encabezado del mensaje. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (tenga en cuenta los corchetes angulares).
+  - **Id. de mensaje** de red: valor GUID que está disponible en el campo de encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el encabezado del mensaje.
   - **IP del remitente**
-  - **Datos adjuntos SHA256**: para buscar el valor de hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
-  - **IDENTIFICADOR de clúster**
-  - **IDENTIFICADOR de la Directiva de alertas**
-  - **Señal de dirección URL ZAP**
+  - **Datos adjuntos SHA256**: Para encontrar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
+  - **Id. de clúster**
+  - **Id. de directiva de alerta**
+  - **Señal de DIRECCIÓN URL de ZAP**
 
-- **Direcciones URL**:
+- **Direcciones URL:**
   - **Dominio de dirección URL**
-  - **Dominio y ruta de acceso de dirección URL**
+  - **Ruta de acceso y dominio de dirección URL**
   - **URL**
-  - **Ruta de dirección URL**
-  - **Haga clic en veredicto**
+  - **Ruta de acceso de dirección URL**
+  - **Veredicto de clic**
 
-Para un filtrado más avanzado, incluido el filtrado por varias propiedades, puede hacer clic en el botón **filtro avanzado** para crear una consulta. Están disponibles las mismas propiedades de la campaña, pero con las siguientes mejoras:
+Para obtener un filtrado más avanzado, incluido el filtrado por varias propiedades, puede hacer clic en el botón Filtro **avanzado** para crear una consulta. Las mismas propiedades de campaña están disponibles, pero con las siguientes mejoras:
 
-- Puede hacer clic en **Agregar condición** para seleccionar varias condiciones.
-- Puede elegir el operador **y** u **o** entre las condiciones.
-- Puede seleccionar el elemento de **grupo de condición** en la parte inferior de la lista de condiciones para crear condiciones compuestas complejas.
+- Puede hacer clic **en Agregar una condición** para seleccionar varias condiciones.
+- Puede elegir el **operador And** o **Or** entre condiciones.
+- Puede seleccionar el elemento **de grupo Condición** en la parte inferior de la lista de condiciones para formar condiciones compuestas complejas.
 
-Cuando haya terminado, haga clic en el botón **consulta** .
+Cuando haya terminado, haga clic en el **botón** Consulta.
 
-Después de crear un filtro básico o avanzado, puede guardarlo con **Guardar consulta** o **Guardar consulta como**. Más adelante, cuando vuelva a las vistas de campañas, puede cargar un filtro guardado haciendo clic en **configuración de consulta guardada**.
+Después de crear un filtro básico o avanzado, puede guardarlo mediante Guardar consulta **o** **Guardar consulta como**. Más adelante, cuando vuelva a vistas de campaña, puede cargar un filtro guardado haciendo clic en **Configuración de consulta guardada.**
 
-Para exportar el gráfico o la lista de campañas, haga clic en **exportar** y seleccione **exportar datos de gráfico** o **Exportar lista de campañas**.
+Para exportar el gráfico o la lista de campañas, haga clic en Exportar **y** seleccione Exportar **datos del** gráfico o Exportar lista **de campañas.**
 
-Si tiene una suscripción a Microsoft defender for Endpoint, puede hacer clic en **WDATP** para conectar o desconectar la información de las campañas con Microsoft defender para el punto de conexión. Para obtener más información, consulte [integrar Microsoft defender para Office 365 con Microsoft defender para el punto de conexión](integrate-office-365-ti-with-wdatp.md).
+Si tienes una suscripción de Microsoft Defender para puntos de conexión, puedes hacer clic en Configuración de **MDE** para conectar o desconectar la información de campañas con Microsoft Defender para Endpoint. Para obtener más información, vea [Integrar Microsoft Defender para Office 365 con Microsoft Defender para endpoint.](integrate-office-365-ti-with-wdatp.md)
 
 ## <a name="campaign-details"></a>Detalles de la campaña
 
-Al hacer clic en el nombre de una campaña, los detalles de la campaña aparecen en un control flotante.
+Al hacer clic en el nombre de una campaña, los detalles de la campaña aparecen en un menú desplegable.
 
 ### <a name="campaign-information"></a>Información de la campaña
 
-En la parte superior de la vista detalles de la campaña, está disponible la siguiente información de la campaña:
+En la parte superior de la vista de detalles de la campaña, está disponible la siguiente información de campaña:
 
-- **ID**: el identificador único de la campaña.
+- **Identificador:** identificador de campaña único.
 
-- **Iniciado** y **finalizado**: fecha de inicio y fecha de finalización de la campaña. Tenga en cuenta que estas fechas pueden extenderse más allá de las fechas de filtro que ha seleccionado en la página información general.
+- **Iniciado y** **finalizado:** la fecha de inicio y la fecha de finalización de la campaña. Tenga en cuenta que estas fechas pueden extenderse más allá de las fechas de filtro que seleccionó en la página de información general.
 
-- **Impacto**: esta sección contiene los datos siguientes para el filtro de intervalo de fechas que haya seleccionado (o que seleccione en la escala de tiempo):
+- **Impacto:** esta sección contiene los siguientes datos para el filtro de intervalo de fechas que seleccionó (o que seleccione en la escala de tiempo):
   - Número total de destinatarios.
-  - El número de mensajes que se han "bandeja de entrada" (es decir, que se entregan a la bandeja de entrada y no a la carpeta de correo electrónico no deseado).
-  - El número de usuarios que hizo clic en la carga de la URL en el mensaje de suplantación de identidad.
-  - Howe muchos usuarios visitaron la dirección URL.
+  - El número de mensajes que se enviaron "Bandeja de entrada" (es decir, entregados a la Bandeja de entrada, no a la carpeta Correo no deseado).
+  - Cuántos usuarios han hecho clic en la carga de la dirección URL en el mensaje de suplantación de identidad.
+  - Cuántos usuarios visitaron la dirección URL.
 
-- **Destino**: porcentaje calculado por: (el número de destinatarios de la campaña de la organización)/(el número total de destinatarios en la campaña en todas las organizaciones del servicio). Tenga en cuenta que este valor se calcula en toda la duración de la campaña y no cambia en función de los filtros de fecha.
+- **Dirigido:** porcentaje calculado por: (el número de destinatarios de la campaña de la organización) / (el número total de destinatarios de la campaña en todas las organizaciones del servicio). Ten en cuenta que este valor se calcula durante toda la duración de la campaña y no cambia en función de los filtros de fecha.
 
-- Escala de tiempo interactiva de la actividad de la campaña: la escala de tiempo muestra la actividad durante toda la duración de la campaña. De forma predeterminada, el área sombreada incluye el filtro de intervalo de fechas que ha seleccionado en la información general. Puede hacer clic y arrastrar para seleccionar un punto inicial y un punto final específicos, <u>que cambiarán los datos que se muestran en el área de **impacto** y el resto de la página, tal y como se describe en las siguientes secciones</u>.
+- Una escala de tiempo interactiva de la actividad de la campaña: la escala de tiempo muestra la actividad durante toda la duración de la campaña. De forma predeterminada, el área sombreada incluye el filtro de intervalo de fechas que seleccionó en la información general. Puede hacer clic y arrastrar para seleccionar un punto inicial y un punto final específicos, lo que cambiará los datos que se muestran en el área de impacto y en el resto de la página, como se describe en las secciones <u>siguientes.  </u>
 
-En la barra de título, puede hacer clic en el icono de descarga de la campaña de descarga del botón de instalación de la **campaña** ![ para descargar ](../../media/download-campaign-write-up-button.png) los detalles de la campaña en un documento de Word (de forma predeterminada, con el nombre CampaignReport.docx). Tenga en cuenta que la descarga contiene detalles sobre toda la duración de la campaña (no solo las fechas de filtro seleccionadas).
+En la barra de título, puedes hacer clic en el botón Descargar escritura de campaña descargar el icono de escritura de campaña para descargar los detalles de la campaña en un documento de Word (de forma predeterminada, denominado  ![ ](../../media/download-campaign-write-up-button.png) CampaignReport.docx). Ten en cuenta que la descarga contiene detalles durante toda la duración de la campaña (no solo las fechas de filtro que seleccionaste).
 
 ![Información de la campaña](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>Flujo de la campaña
 
-En la parte central de la vista detalles de la campaña, los detalles importantes sobre la campaña se presentan en la sección **flujo** en un diagrama de flujo horizontal (conocido como diagrama _Sankey_ ). Estos detalles pueden ayudarle a comprender los elementos de la campaña y su posible impacto en la organización.
+En medio de la vista de detalles de la  campaña, se presentan detalles importantes sobre la campaña en la sección Flujo en un diagrama de flujo horizontal (conocido como diagrama _de Sankey)._ Estos detalles pueden ayudarle a comprender los elementos de la campaña y su posible impacto en la organización.
 
 > [!TIP]
-> La información que se muestra en el diagrama de **flujo** está controlada por el intervalo de fechas sombreado de la escala de tiempo tal como se describe en la sección anterior.
+> La información que se muestra en el diagrama de **flujo** se controla mediante el intervalo de fechas sombreado en la escala de tiempo, tal como se describe en la sección anterior.
 
 ![Detalles de la campaña que no contienen clics del usuario en la URL.](../../media/campaign-details-no-recipient-actions.png)
 
@@ -208,32 +208,32 @@ El diagrama contiene la información siguiente:
 
 - **IP de remitentes**
 - **Dominios de remitente**
-- **Filtrar veredictos**: los valores de veredicto están relacionados con los veredictos de filtrado de suplantación de identidad y correo no deseado disponibles, como se describe en [encabezados de mensajes de correo no deseado](anti-spam-message-headers.md). En la tabla siguiente se describen los valores disponibles:
+- **Veredictos de** filtro: los valores de veredicto están relacionados con los veredictos de filtrado de correo no deseado y de suplantación de identidad disponibles, tal como se describe en los encabezados de mensajes contra correo [no deseado.](anti-spam-message-headers.md) Los valores disponibles se describen en la tabla siguiente:
 
   ****
 
   |Valor|Veredicto de filtro de correo no deseado|Descripción|
   |---|---|---|
-  |**Permitido**|`SFV:SKN` <p> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, un mensaje se marcó como no correo no deseado mediante una regla de flujo de correo (también denominada regla de transporte). <p> El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
+  |**Permitido**|`SFV:SKN` <p> `SFV:SKI`|El mensaje se marcó como correo no deseado o omitió el filtrado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, una regla de flujo de correo (también conocida como regla de transporte) marcó el mensaje como correo no deseado. <p> El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
   |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, por una regla de flujo de correo.|
   |**Detectados**|`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtro de correo no deseado.|
-  |**No detectado**|`SFV:NSPM`|El mensaje se marcó como no correo no deseado por el filtrado de correo no deseado.|
-  |**Exento**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
-  |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
-  |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
-  |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros del usuario.|
-  |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados del usuario.|
-  |**ZAP**|No aplicable|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta de correo electrónico no deseado o a la cuarentena. La acción se configura en la Directiva contra correo no deseado.|
+  |**No detectado**|`SFV:NSPM`|El mensaje se marcó como correo no deseado mediante el filtrado de correo no deseado.|
+  |**Publicado**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se soltó de la cuarentena.|
+  |**Espacio empresarial permitido**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
+  |**Bloque de inquilinos**<sup>\*\*</sup>|`SFV:SKA`|El filtrado de correo no deseado bloqueó el mensaje debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
+  |**User Allow**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros de un usuario.|
+  |**Bloqueo de usuarios**<sup>\*\*</sup>|`SFV:BLK`|El filtrado de correo no deseado bloqueó el mensaje porque el remitente estaba en la lista de remitentes bloqueados de un usuario.|
+  |**ZAP**|No aplicable|[La purga automática (ZAP) de](zero-hour-auto-purge.md) cero horas movió el mensaje entregado a la carpeta o cuarentena de correo no deseado. La acción se configura en la directiva contra correo no deseado.|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
 
-  <sup>\*\*</sup> Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregados.
+  <sup>\*\*</sup> Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregarse.
 
-- **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea a la bandeja de entrada o a la carpeta de correo electrónico no deseado), incluso si los usuarios no han hecho clic en la dirección URL de carga en el mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
+- Ubicaciones de **entrega:** es probable que desee investigar los mensajes que se entregaron a los destinatarios (ya sea a la bandeja de entrada o a la carpeta Correo no deseado), incluso si los usuarios no han hecho clic en la dirección URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP.](quarantine-email-messages.md)
   - **Carpeta eliminada**
-  - **Sombra**
-  - **Externos**: el destinatario se encuentra en su organización de correo electrónico local en entornos híbridos.
+  - **Dropped**
+  - **Externo:** el destinatario se encuentra en la organización de correo electrónico local en entornos híbridos.
   - **Failed**
   - **Reenviado**
   - **Bandeja de entrada**
@@ -241,50 +241,50 @@ El diagrama contiene la información siguiente:
   - **Cuarentena**
   - **Desconocido**
 
-- **Clics de dirección URL**: estos valores se describen en la siguiente sección.
+- **Clics de dirección URL:** estos valores se describen en la siguiente sección.
 
 > [!NOTE]
-> En todas las capas que contienen más de 10 elementos, se muestran los 10 elementos principales, mientras que el resto se agrupan en **otros**.
+> En todas las capas que contienen más de 10 elementos, se muestran los 10 elementos superiores, mientras que el resto se agrupan en **Otros**.
 
 #### <a name="url-clicks"></a>Clics de URL
 
-Cuando un mensaje de suplantación de identidad se entrega a la bandeja de entrada o a la carpeta de correo no deseado del destinatario, siempre existe la posibilidad de que el usuario haga clic en la dirección URL de la carga. No hacer clic en la dirección URL es una pequeña medida del éxito, pero debe determinar por qué el mensaje de suplantación de identidad se entregó hasta el buzón.
+Cuando se entrega un mensaje de suplantación de identidad (phishing) a la bandeja de entrada o a la carpeta de correo no deseado de un destinatario, siempre existe la posibilidad de que el usuario haga clic en la dirección URL de carga. No hacer clic en la dirección URL es una pequeña medida de éxito, pero debe determinar por qué el mensaje de suplantación de identidad se entregó incluso al buzón.
 
-Si un usuario hace clic en la dirección URL de carga en el mensaje de suplantación de identidad (phishing), las acciones se muestran en el área de **clics de la dirección URL** del diagrama en la vista detalles de la campaña.
+Si un usuario hizo clic en la dirección URL de carga en el mensaje de suplantación de identidad( phishing), las acciones se muestran en el área de **clics** de url del diagrama en la vista de detalles de la campaña.
 
 - **Permitido**
-- **BlockPage**: el destinatario hizo clic en la dirección URL de carga, pero su acceso al sitio Web malintencionado fue bloqueado por una directiva de [vínculos seguros](atp-safe-links.md) en su organización.
-- **BlockPageOverride**: el destinatario hizo clic en la dirección URL de carga en el mensaje, los vínculos seguros intentaron detenerlos, pero podían invalidar el bloque. Revise sus [directivas de vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar con el sitio Web malintencionado.
-- **PendingDetonationPage**: los datos adjuntos seguros de Microsoft defender para Office 365 están en proceso de apertura e investigación de la URL de carga en un entorno de equipo virtual.
-- **PendingDetonationPageOverride**: el destinatario tuvo permiso para invalidar el proceso de detonación de carga y abrir la dirección URL sin esperar los resultados.
+- **BlockPage:** el destinatario hizo clic en la dirección URL de carga, pero su acceso al sitio web malintencionado fue bloqueado por una directiva [de](atp-safe-links.md) vínculos seguros de su organización.
+- **BlockPageOverride:** el destinatario hizo clic en la dirección URL de carga del mensaje, Vínculos seguros intentó detenerlos, pero se les permitió invalidar el bloque. Inspeccione las [directivas de vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar hasta el sitio web malintencionado.
+- **PendingDetonationPage:** Datos adjuntos seguros en Microsoft Defender para Office 365 está en proceso de abrir e investigar la dirección URL de carga en un entorno de equipo virtual.
+- **PendingDetonationPageOverride:** se permitió al destinatario invalidar el proceso de detonación de carga y abrir la dirección URL sin esperar los resultados.
 
 ### <a name="tabs"></a>Pestañas
 
-Las pestañas de la vista detalles de la campaña le permiten investigar más detalladamente la campaña.
+Las pestañas de la vista de detalles de la campaña te permiten investigar aún más la campaña.
 
 > [!TIP]
-> La información que se muestra en las pestañas se controla mediante el intervalo de fechas sombreado en la escala de tiempo como se describe en la sección información de la [campaña](#campaign-information) .
+> La información que se muestra en las pestañas se controla mediante el intervalo de fechas sombreado en la escala de tiempo, tal como se describe en la sección Información [de la](#campaign-information) campaña.
 
-- **Clics en dirección URL**: si los usuarios no han hecho clic en la dirección URL de la carga en el mensaje, esta sección estará en blanco. Si un usuario pudo hacer clic en la dirección URL, se rellenarán los siguientes valores:
+- **Clics en la** dirección URL: si los usuarios no han hecho clic en la dirección URL de carga del mensaje, esta sección estará en blanco. Si un usuario pudo hacer clic en la dirección URL, se rellenarán los siguientes valores:
   - **Usuario**<sup>\*</sup>
   - **URL**<sup>\*</sup>
-  - **Haga clic en hora**
-  - **Haga clic en veredicto**
+  - **Hora de clic**
+  - **Veredicto de clic**
 
 - **IP de remitentes**
   - **IP del remitente**<sup>\*</sup>
   - **Recuento total**
-  - **En la bandeja de entrada**
+  - **Bandeja de entrada**
   - **Sin bandeja de entrada**
-  - **SPF superado**: el [marco de directivas de remitente (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)autenticó el remitente. Un remitente que no pasa la validación SPF indica que un remitente no está autenticado o que el mensaje está suplantando a un remitente legítimo.
+  - **SPF pasado:** el remitente se autenticó mediante el marco [de directivas de remitente (SPF).](how-office-365-uses-spf-to-prevent-spoofing.md) Un remitente que no pasa la validación de SPF indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
 
 - **Remitentes**
-  - **Sender**: esta es la dirección del remitente real en el comando SMTP mail from, que no tiene que ser necesariamente la dirección de correo electrónico que los usuarios ven en sus clientes de correo electrónico.
+  - **Remitente:** es la dirección de remitente real en el comando SMTP MAIL FROM, que no es necesariamente la dirección de correo electrónico De: que los usuarios ven en sus clientes de correo electrónico.
   - **Recuento total**
-  - **En la bandeja de entrada**
+  - **Bandeja de entrada**
   - **Sin bandeja de entrada**
-  - **DKIM pasado**: el remitente ha sido autenticado por el [correo identificado por claves de dominio (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un remitente que no pasa la validación de DKIM indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
-  - **DMARC pasada**: el remitente ha sido autenticado por la [autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC)](use-dmarc-to-validate-email.md). Un remitente que no pasa la validación de DMARC indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
+  - **DKIM pasado:** el remitente se autenticó mediante el correo identificado de claves de dominio [(DKIM).](support-for-validation-of-dkim-signed-messages.md) Un remitente que no pasa la validación DKIM indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
+  - **DMARC pasado:** el remitente se autenticó mediante autenticación de mensajes basada en dominio, informes y [conformidad (DMARC).](use-dmarc-to-validate-email.md) Un remitente que no pasa la validación de DMARC indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
 
 - **Attachments**
   - **Filename**
@@ -303,4 +303,4 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
 Los botones de la vista de detalles de la campaña le permiten usar todo el potencial del Explorador de amenazas para investigar más a fondo la campaña.
 
 - **Explorar campaña**: abre una nueva pestaña de búsqueda del Explorador de amenazas con el valor **Id. de campaña** como filtro de búsqueda.
-- **Explorar mensajes** de la bandeja de entrada: abre una nueva ficha de búsqueda del explorador de amenazas usando el identificador de la **campaña** y la **Ubicación de entrega: bandeja de entrada** como filtro de búsqueda.
+- **Explorar mensajes en bandeja de entrada:** abre  una nueva pestaña de búsqueda del Explorador de amenazas con el identificador de campaña y la ubicación de **entrega: Bandeja** de entrada como filtro de búsqueda.
