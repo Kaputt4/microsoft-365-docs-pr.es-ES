@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 12338c1679a8e0c5921ec3f4f05df85989413ccd
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.openlocfilehash: 8cd67c9c188c97256ddddcdd57479f519bd33929
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784315"
+ms.locfileid: "49787967"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -46,9 +46,9 @@ Los mensajes de correo electrónico y los archivos que use con Teams no son incl
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Cómo funciona la retención con Microsoft Teams
 
-Puede usar una directiva de retención para retener los chats y canalizar los mensajes en Teams. Los chats de Teams se almacenan en una carpeta oculta en el buzón de cada usuario incluido en el chat, y los mensajes de los canales de Teams se almacenan en una carpeta oculta similar en el buzón de correo del grupo del equipo.
+Puede usar una directiva de retención para retener datos de chats y de mensajes de los canales en Teams. Los datos de los chats de Teams se almacenan en una carpeta oculta en el buzón de cada usuario incluido en el chat, y los datos de los mensajes de los canales de Teams se almacenan en una carpeta oculta similar en el buzón de correo de grupo del equipo.
 
-Es importante entender que Teams utilizan un servicio de chat impulsado por Azure que también almacena estos datos, y por defecto este servicio almacena los datos indefinidamente. Por esta razón, le recomendamos que cree una directiva de retención que utilice las ubicaciones de Teams para conservar y eliminar los datos de Teams. Esta directiva de retención puede eliminar los datos de manera permanente tanto de los buzones de Exchange como del servicio subyacente de chat con tecnología Azure. Para obtener más información, consulte[Seguridad y cumplimiento en Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258)y específicamente, la sección [Arquitectura de protección de la información](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Es importante entender que Teams utilizan un servicio de chat impulsado por Azure que también almacena estos datos, y por defecto este servicio almacena los datos indefinidamente. Por esta razón, le recomendamos que cree una directiva de retención que utilice las ubicaciones de Teams para conservar y eliminar los datos de Teams. Esta directiva de retención puede eliminar estos datos de manera permanente, tanto de los buzones de Exchange como del servicio subyacente de chat con tecnología de Azure. Para obtener más información, consulte[Seguridad y cumplimiento en Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258)y específicamente, la sección [Arquitectura de protección de la información](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
 Los chats de Teams y los mensajes de los canales no se ven afectados por las directivas de retención que se configuran para los buzones de los usuarios o grupos. Aunque los chats de Teams y los mensajes de los canales se almacenan en Exchange, estos datos de Teams se incluyen sólo por una directiva de retención que está configurada para los **mensajes de los canales de Teams** y las ubicaciones de los **chats de Teams**.
 

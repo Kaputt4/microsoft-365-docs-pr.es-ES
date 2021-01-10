@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730181"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788000"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -166,19 +166,15 @@ Para obtener más información, vea [Usar una etiqueta de retención como condic
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>Etiquetas de retención y directivas que se aplican a ellas
 
-Las etiquetas de retención son bloques de creación independientes y reutilizables. La finalidad principal de una directiva de etiqueta es agrupar un conjunto de etiquetas de retención y especificar las ubicaciones donde quiere que aparezcan. Luego, los administradores y usuarios pueden aplicar esas etiquetas al contenido de estas ubicaciones.
-  
-![Diagrama de etiquetas, directivas de etiquetas y ubicaciones](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-Cuando se publican las etiquetas de retención, se incluyen en una directiva de etiqueta de retención que permite a los administradores y usuarios realizar ciertas selecciones:
+Cuando se publican las etiquetas de retención, se incluyen en una **directiva de etiqueta de retención** que permite que los administradores y usuarios las apliquen al contenido. Como muestra el siguiente diagrama:
 
-- Se puede incluir una única etiqueta de retención en varias directivas de etiquetas de retención.
+1. Se puede incluir una única etiqueta de retención en varias directivas de etiquetas de retención.
 
-- Las directivas de etiquetas de retención especifican las ubicaciones donde se publicarán las etiquetas de retención.
+2. Las directivas de etiquetas de retención especifican las ubicaciones donde se publicarán las etiquetas de retención. La misma ubicación se puede incluir en varias directivas de etiquetas de retención.
 
-- También puede incluirse una sola ubicación en numerosas directivas de etiquetas de retención.
+![Cómo se pueden agregar las etiquetas de retención a las directivas de etiquetas que especifican ubicaciones](../media/retention-labels-and-policies.png)
 
-Además de las directivas de etiquetas de retención, también puede crear una o varias directivas de aplicación automática, cada una con una sola etiqueta de retención. Con esta directiva, se aplica una etiqueta de retención automáticamente cuando se cumplan las condiciones especificadas en la directiva.
+También puede crear una o varias **directivas de etiquetas de retención de aplicación automática**, cada una con una sola etiqueta de retención. Con esta directiva, se aplica una etiqueta de retención automáticamente cuando se cumplan las condiciones especificadas en la directiva.
 
 #### <a name="retention-label-policies-and-locations"></a>Ubicaciones y directivas de etiquetas de retención
 
@@ -190,7 +186,7 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
 |Se aplica automáticamente en función de los tipos de información confidencial o clasificadores que se pueden entrenar  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
 |Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
    
-En Exchange, las etiquetas de aplicación automática solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial y clasificadores que se pueden entrenar solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar buzones concretos.
+En Exchange, las etiquetas de retención que aplica de manera automática solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial y clasificadores que se pueden entrenar solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar buzones concretos.
   
 Las carpetas públicas de Exchange y los mensajes de Skype, Teams y Yammer no admiten etiquetas de retención. Para conservar y eliminar contenido de estas ubicaciones, use en cambio directivas de retención.
 
@@ -287,7 +283,7 @@ Use el siguiente flujo para comprender los resultados de la retención y elimina
 > [!IMPORTANT]
 > Si usa etiquetas de retención: antes de usar este flujo para determinar el resultado de varias opciones de retención en el mismo elemento, asegúrese de saber que [etiqueta de retención se aplica](#only-one-retention-label-at-a-time).
 
-![Diagrama de los principios de retención](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagrama de los principios de retención](../media/principles-of-retention.png)
   
 Explicación de los cuatro niveles diferentes:
   

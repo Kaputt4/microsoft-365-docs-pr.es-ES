@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730171"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790206"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -103,11 +103,13 @@ Mensaje que ve el usuario si intenta eliminar un documento con etiquetas en Shar
 >[!IMPORTANT] 
 > La diferencia más importante que supone un registro normativo es que, una vez que se aplica al contenido, nadie, ni siquiera un administrador global, puede quitar la etiqueta. 
 >
-> Además, las etiquetas de retención configuradas para los registros normativos tienen las siguientes restricciones de administrador:
+> Las etiquetas de retención configuradas para los registros normativos también tienen las siguientes restricciones de administrador:
 > - El período de retención no se puede reducir después de guardar la etiqueta, solo se puede extender.
 > - Estas etiquetas no son compatibles con las directivas de etiquetado automático y deben aplicarse mediante [directivas de etiqueta de retención](create-apply-retention-labels.md). 
+>
+> Además, no se puede aplicar una etiqueta normativa a un documento que está desprotegido en SharePoint.
 > 
-> Dado que se trata de acciones irreversibles, asegúrese de que realmente necesita usar registros normativos antes de seleccionar esta opción para las etiquetas de retención. Para evitar la configuración accidental, esta opción no está disponible de forma predeterminada, sino que primero se debe habilitar con PowerShell. Las instrucciones se incluyen en [Declarar registros mediante etiquetas de retención](declare-records.md).
+> Dado que se trata de acciones irreversibles y restricciones, asegúrese de que realmente necesita usar registros normativos antes de seleccionar esta opción para las etiquetas de retención. Para evitar la configuración accidental, esta opción no está disponible de forma predeterminada, sino que primero se debe habilitar con PowerShell. Las instrucciones se incluyen en [Declarar registros mediante etiquetas de retención](declare-records.md).
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
