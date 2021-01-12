@@ -1,6 +1,6 @@
 ---
-title: Investigación y respuesta automatizadas en Microsoft defender para Office 365
-keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
+title: Investigación y respuesta automatizadas en Microsoft Defender para Office 365
+keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzada, amenaza, protección
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,133 +16,133 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-description: Empiece a usar las capacidades de investigación y respuesta automatizadas en Microsoft defender para Office 365.
+- m365initiative-defender-office365
+description: Introducción al uso de capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614839"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794549"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft defender para Office 365
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizada (AIR) en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft defender para Office 365](office-365-atp.md) incluye capacidades de investigación y respuesta automáticas (Air) eficaces que pueden ahorrar tiempo y esfuerzo en el equipo de operaciones de seguridad. A medida que se activen las alertas, el equipo de operaciones de seguridad debe revisar, priorizar y responder a esas alertas. Mantener el volumen de las alertas entrantes puede ser abrumador. Automatizar algunas de estas tareas puede resultar útil.
+[Microsoft Defender para Office 365](office-365-atp.md) incluye potentes capacidades de investigación y respuesta automatizadas (AIR) que pueden ahorrar tiempo y esfuerzo al equipo de operaciones de seguridad. A medida que se desencadenan las alertas, el equipo de operaciones de seguridad debe revisar, priorizar y responder a dichas alertas. Mantenerse al día con el volumen de alertas entrantes puede ser abrumador. Automatizar algunas de estas tareas puede ser de ayuda.
 
-AIR permite que el equipo de operaciones de seguridad funcione de forma más eficiente y eficaz. Las capacidades de AIR incluyen procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen en la actualidad. Acciones de corrección adecuadas esperando la aprobación, lo que permite que el equipo de operaciones de seguridad responda con eficacia a las amenazas detectadas. Con AIR, el equipo de operaciones de seguridad puede centrarse en las tareas de mayor prioridad sin perder la vista de las alertas importantes que se desencadenan.
+AIR permite que el equipo de operaciones de seguridad funcione de forma más eficaz y eficaz. Las capacidades de AIR incluyen procesos de investigación automatizados en respuesta a amenazas conocidas que existen actualmente. Las acciones de corrección apropiadas esperan la aprobación, lo que permite al equipo de operaciones de seguridad responder eficazmente a las amenazas detectadas. Con AIR, el equipo de operaciones de seguridad puede centrarse en tareas de mayor prioridad sin perder de vista las alertas importantes que se desencadenan.
 
 Este artículo describe:
 
-- El [flujo general de aire](#the-overall-flow-of-air);
-- [Cómo obtener aire](#how-to-get-air); y
-- Los [permisos necesarios](#required-permissions-to-use-air-capabilities) para configurar o usar las funcionalidades de Air.
+- El [flujo general de AIR;](#the-overall-flow-of-air)
+- [Cómo obtener AIR;](#how-to-get-air) y
+- Los [permisos necesarios para](#required-permissions-to-use-air-capabilities) configurar o usar las funcionalidades de AIR.
 
-En este artículo también se incluyen [los pasos siguientes](#next-steps)y recursos para obtener más información.
+En este artículo también [se incluyen los siguientes pasos](#next-steps)y recursos para obtener más información.
 
-## <a name="the-overall-flow-of-air"></a>Flujo general de aire
+## <a name="the-overall-flow-of-air"></a>Flujo general de AIR
 
-Se desencadena una alerta y una guía de seguridad inicia una investigación automatizada, lo que da como resultado conclusiones y acciones recomendadas. Este es el flujo de aire general, paso a paso:
+Se desencadena una alerta y un libro de estrategias de seguridad inicia una investigación automatizada, lo que da como resultado resultados y acciones recomendadas. Este es el flujo general de AIR, paso a paso:
 
 1. Una investigación automatizada se inicia de una de las siguientes maneras:
 
-   - Una [alerta se activa](#which-alert-policies-trigger-automated-investigations) por algo sospechoso en el correo electrónico (como un mensaje, datos adjuntos, una dirección URL o una cuenta de usuario en peligro). Se crea un incidente y se inicia una investigación automatizada.
+   - Una [alerta se desencadena por](#which-alert-policies-trigger-automated-investigations) un mensaje sospechoso en el correo electrónico (como un mensaje, datos adjuntos, dirección URL o una cuenta de usuario comprometida). Se crea un incidente y comienza una investigación automatizada.
 
      --- o ---
 
-   - Un analista de seguridad [inicia una investigación automatizada](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) mientras utiliza el [Explorador de amenazas](threat-explorer.md).
+   - Un analista de [seguridad inicia una investigación automatizada](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) mientras usa el Explorador de [amenazas.](threat-explorer.md)
 
-2. Mientras se ejecuta una investigación automatizada, recopila datos adicionales sobre el correo electrónico en cuestión y las entidades relacionadas con ese correo electrónico. Estas entidades pueden incluir archivos, direcciones URL y destinatarios.  El ámbito de la investigación puede aumentar a medida que se desencadenen alertas nuevas y relacionadas.
+2. Mientras se ejecuta una investigación automatizada, recopila datos adicionales sobre el correo electrónico en cuestión y las entidades relacionadas con ese correo electrónico. Estas entidades pueden incluir archivos, direcciones URL y destinatarios.  El ámbito de la investigación puede aumentar a medida que se desencadenan alertas nuevas y relacionadas.
 
-3. Durante y después de una investigación automatizada, [los detalles y los resultados](air-view-investigation-results.md) están disponibles para su visualización. Los resultados incluyen [acciones recomendadas](air-remediation-actions.md) que se pueden realizar para responder a cualquier amenaza que se detectó y solucionarlo. Además, hay disponible un registro de la [Guía](air-view-investigation-results.md#playbook-log) que realiza un seguimiento de la actividad de la investigación.
+3. Durante y después de una investigación automatizada, [los detalles y los resultados](air-view-investigation-results.md) están disponibles para verlos. Los [resultados incluyen acciones recomendadas](air-remediation-actions.md) que se pueden realizar para responder y corregir las amenazas encontradas. Además, hay disponible un [registro de playbook](air-view-investigation-results.md#playbook-log) que realiza un seguimiento de toda la actividad de investigación.
 
-4. El equipo de operaciones de seguridad revisa los resultados de la [investigación y las recomendaciones](air-view-investigation-results.md)y [aprueba o rechaza acciones de corrección](air-review-approve-pending-completed-actions.md).
+4. El equipo de operaciones de seguridad revisa los [resultados de la](air-view-investigation-results.md)investigación y las recomendaciones, y [aprueba o rechaza las acciones de corrección.](air-review-approve-pending-completed-actions.md)
 
-5. Como las acciones de corrección pendientes son aprobadas (o rechazadas), se completa la investigación automatizada.
+5. A medida que se aprueban (o rechazan) las acciones correctivas pendientes, se completa la investigación automatizada.
 
 > [!IMPORTANT]
-> En Microsoft defender para Office 365, no se realiza ninguna acción de corrección automáticamente. Solo se realizan acciones de corrección tras obtener la aprobación del equipo de seguridad de su organización.
+> En Microsoft Defender para Office 365, no se realiza ninguna acción de corrección automáticamente. Solo se realizan acciones de corrección tras obtener la aprobación del equipo de seguridad de su organización.
 >
-> Las funcionalidades de AIR guardan el tiempo del equipo de operaciones de seguridad mediante la identificación de acciones de corrección y la entrega de los detalles necesarios para tomar una decisión informada.
+> Las capacidades de AIR ahorran tiempo al equipo de operaciones de seguridad al identificar acciones correctivas y proporcionar los detalles necesarios para tomar una decisión fundamentada.
 
 Durante y después de cada investigación automatizada, el equipo de operaciones de seguridad puede:
 
-- [Ver los detalles de una alerta relacionada con una investigación](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
+- [Ver detalles sobre una alerta relacionada con una investigación](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
 
 - [Ver los detalles de los resultados de una investigación](air-view-investigation-results.md#view-details-of-an-investigation)
 
-- [Revisión y aprobación de acciones como resultado de una investigación](air-review-approve-pending-completed-actions.md)
+- [Revisar y aprobar acciones como resultado de una investigación](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
-> Para obtener información más detallada, consulte [how Air Operations](automated-investigation-response-office.md)(en inglés).
+> Para obtener información general más detallada, consulte [Cómo funciona AIR.](automated-investigation-response-office.md)
 
-## <a name="how-to-get-air"></a>Cómo obtener aire
+## <a name="how-to-get-air"></a>Cómo obtener AIR
 
-Las funcionalidades de AIR se incluyen en [Microsoft defender para Office 365](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2), siempre que se configuran las directivas y las alertas. Si desea obtener ayuda, siga las instrucciones de protección [contra amenazas](protect-against-threats.md) para configurar o configurar las siguientes opciones de protección:
+Las funcionalidades de AIR se incluyen [en Microsoft Defender para Office 365,](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)siempre que se configuren las directivas y las alertas. Si desea obtener ayuda con esto, [](protect-against-threats.md) siga las instrucciones de Protección contra amenazas para configurar o configurar las siguientes opciones de protección:
 
 1. [Registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) (debe estar activado)
 
 2. [Directivas antimalware](protect-against-threats.md#part-1---anti-malware-protection)
 
-3. [Protección contra la suplantación de identidad](protect-against-threats.md#part-2---anti-phishing-protection)
+3. [Protección antiphishing](protect-against-threats.md#part-2---anti-phishing-protection)
 
-4. [Protección contra correo electrónico no deseado](protect-against-threats.md#part-3---anti-spam-protection).
+4. [Protección contra correo no deseado.](protect-against-threats.md#part-3---anti-spam-protection)
 
-5. [Vínculos seguros y datos adjuntos seguros](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365).
+5. [Vínculos seguros y datos adjuntos seguros.](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-6. [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](protect-against-threats.md#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on).
+6. [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.](protect-against-threats.md#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 
-7. [Purga automática de cero horas para el correo electrónico](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop).
+7. [Purga automática de cero horas para el correo electrónico.](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
-Además, asegúrese de revisar las [directivas de alertas de la organización](https://docs.microsoft.com/microsoft-365/compliance/alert-policies), especialmente las [directivas predeterminadas de la categoría administración de amenazas](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies).
+Además, asegúrese de revisar [las](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)directivas de alerta de su organización, especialmente las directivas predeterminadas en la categoría de administración [de amenazas.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies)
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>¿Qué directivas de alerta desencadenan investigaciones automatizadas?
 
-Microsoft 365 proporciona muchas directivas de alertas integradas que ayudan a identificar los permisos de administrador de Exchange, la actividad de malware, las amenazas potenciales externas y externas y los riesgos de control de la información. Varias de las [directivas de alerta predeterminadas](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la tabla siguiente se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el centro de seguridad 365 de Microsoft y cómo se generan:
+Microsoft 365 proporciona muchas directivas de alerta integradas que ayudan a identificar el abuso de permisos de administrador de Exchange, la actividad de malware, las posibles amenazas internas y externas, y los riesgos de gobierno de la información. Varias de las [directivas de alerta predeterminadas](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la siguiente tabla se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el Centro de seguridad de Microsoft 365 y cómo se generan:
 
 |Alerta|Severity|Cómo se genera la alerta|
 |---|---|---|
-|Se ha detectado un clic en una dirección URL potencialmente malintencionada|**Alto**|Esta alerta se genera cuando se produce alguna de las siguientes situaciones: <ul><li>Un usuario protegido por [vínculos seguros](atp-safe-links.md) en su organización hace clic en un vínculo malintencionado</li><li>Los cambios de veredicto para las direcciones URL se identifican por Microsoft defender para Office 365</li><li>Los usuarios reemplazan las páginas de advertencia de vínculos seguros (según la [Directiva de vínculos seguros](set-up-atp-safe-links-policies.md)de la organización).</li></ul> <p> Para obtener más información acerca de los eventos que desencadenan esta alerta, consulte [configurar directivas de vínculos seguros](set-up-atp-safe-links-policies.md).|
-|Un usuario ha notificado un mensaje de correo electrónico como malware o phish|**Informativo**|Esta alerta se genera cuando los usuarios de la organización notifican mensajes como correo electrónico de suplantación de identidad mediante el [complemento de mensajes de informe](enable-the-report-message-add-in.md).|
-|Los mensajes de correo electrónico que contienen malware se eliminan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes de correo electrónico que contienen malware se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo de Exchange online mediante la [purga automática de cero horas](zero-hour-auto-purge.md).|
-|Los mensajes de correo electrónico que contienen direcciones URL de phish se eliminan después de la entrega|**Informativo**|Esta alerta se genera cuando se entregan mensajes que contienen phish a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo de Exchange online mediante la [purga automática de cero horas](zero-hour-auto-purge.md).|
-|Se detectan patrones de envío de correo sospechoso|**Medio**|Esta alerta se genera cuando alguien de su organización ha enviado correo electrónico sospechoso y está en riesgo de que no pueda enviar correo electrónico. Se trata de una advertencia temprana para el comportamiento que podría indicar que la cuenta está en peligro, pero que no es lo suficientemente grave como para restringir al usuario. <p> Aunque es raro, una alerta generada por esta Directiva puede ser una anomalía. Sin embargo, es una buena idea [comprobar si la cuenta de usuario está comprometida](responding-to-a-compromised-email-account.md).|
-|Se ha restringido el envío de correo electrónico a un usuario|**Alto**|Esta alerta se genera cuando una persona de su organización tiene restringido el envío de correo saliente. Normalmente, esto se produce cuando una [cuenta de correo electrónico se ve comprometida](responding-to-a-compromised-email-account.md). <p> Para obtener más información acerca de los usuarios restringidos, consulte [quitar usuarios bloqueados del portal de usuarios restringidos en Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
+|Se detectó un clic de dirección URL potencialmente malintencionado|**Alto**|Esta alerta se genera cuando se produce cualquiera de las siguientes situaciones: <ul><li>Un usuario protegido por [vínculos seguros](atp-safe-links.md) de su organización hace clic en un vínculo malintencionado</li><li>Microsoft Defender identifica los cambios de veredicto de las direcciones URL para Office 365</li><li>Los usuarios invalidan las páginas de advertencia de Vínculos seguros (en función de la directiva de [vínculos seguros de su organización).](set-up-atp-safe-links-policies.md)</li></ul> <p> Para obtener más información sobre los eventos que desencadenan esta alerta, vea [Configurar directivas de vínculos seguros.](set-up-atp-safe-links-policies.md)|
+|Un usuario notifica un mensaje de correo electrónico como malware o phishing|**Informativo**|Esta alerta se genera cuando los usuarios de su organización informan de mensajes como correo electrónico de suplantación de identidad mediante el [complemento Mensaje de informe.](enable-the-report-message-add-in.md)|
+|Los mensajes de correo electrónico que contienen malware se eliminan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes de correo electrónico que contienen malware se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de Exchange Online mediante purga automática [de cero horas.](zero-hour-auto-purge.md)|
+|Los mensajes de correo electrónico que contienen direcciones URL de suplantación de identidad se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes que contienen suplantación de identidad se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de Exchange Online mediante la purga automática [de hora cero.](zero-hour-auto-purge.md)|
+|Se detectan patrones sospechosos de envío de correo electrónico|**Medio**|Esta alerta se genera cuando alguien de su organización ha enviado correo electrónico sospechoso y corre el riesgo de que se le restringa el envío de correo electrónico. Se trata de una advertencia anticipada para el comportamiento que podría indicar que la cuenta está en peligro, pero no lo suficientemente grave como para restringir al usuario. <p> Aunque es raro, una alerta generada por esta directiva puede ser una anomalía. Sin embargo, es una buena idea comprobar [si la cuenta de usuario está en peligro.](responding-to-a-compromised-email-account.md)|
+|Un usuario tiene restricciones para enviar correo electrónico|**Alto**|Esta alerta se genera cuando alguien de su organización tiene restricciones para enviar correo saliente. Esto suele ocurrir cuando una [cuenta de correo electrónico está en peligro.](responding-to-a-compromised-email-account.md) <p> Para obtener más información acerca de los usuarios restringidos, vea Quitar usuarios bloqueados del portal de usuarios restringidos [en Microsoft 365.](removing-user-from-restricted-users-portal-after-spam.md)|
 |
 
 > [!TIP]
-> Para obtener más información acerca de las directivas de alerta o editar la configuración predeterminada, consulte [Alert policies en el centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+> Para obtener más información sobre las directivas de alerta o editar la configuración predeterminada, consulte Directivas de alerta en el Centro de cumplimiento de [Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-## <a name="required-permissions-to-use-air-capabilities"></a>Permisos necesarios para usar capacidades de AIR
+## <a name="required-permissions-to-use-air-capabilities"></a>Permisos necesarios para usar las funcionalidades de AIR
 
-Los permisos se conceden a través de determinadas funciones, como las que se describen en la tabla siguiente:
+Los permisos se conceden a través de determinados roles, como los que se describen en la tabla siguiente:
 
-|Task|Roles necesarios|
+|Tarea|Roles requeridos|
 |---|---|
-|Configurar características de AIR|Una de las siguientes funciones: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).|
-|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Una de las siguientes funciones, asignada en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Búsqueda y depuración (este rol solo se asigna en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Es posible que tenga que crear un nuevo grupo de funciones y agregar el rol de búsqueda y depuración al nuevo grupo de roles.</li></ul>|
+|Configurar las características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de & [cumplimiento.](permissions-in-the-security-and-compliance-center.md)|
+|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar las acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de & [cumplimiento:](permissions-in-the-security-and-compliance-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Búsqueda y depuración (este rol solo se asigna en el Centro de & [cumplimiento.](permissions-in-the-security-and-compliance-center.md) Es posible que tenga que crear un nuevo grupo de roles allí y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Licencias necesarias
 
-Las licencias [de Microsoft defender para Office 365 plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) se deben asignar a:
+[Las licencias de Microsoft Defender para Office 365 Plan 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) deben asignarse a:
 
 - Administradores de seguridad (incluidos los administradores globales)
-- El equipo de operaciones de seguridad de la organización (incluidos los lectores de seguridad y los que tienen el rol de **búsqueda y depuración** )
+- El equipo de operaciones de seguridad de la organización (incluidos los lectores de seguridad y los que tienen el rol **Desa** cabo de búsqueda y depuración)
 - Usuarios finales
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Ver los detalles y los resultados de una investigación automatizada](air-view-investigation-results.md#view-details-of-an-investigation)
+- [Ver detalles y resultados de una investigación automatizada](air-view-investigation-results.md#view-details-of-an-investigation)
 
 - [Revisar y aprobar acciones pendientes](air-remediation-actions.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Investigación y corrección automáticas en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Investigación y corrección automatizadas en Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Investigación y respuesta automatizadas en Microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Investigación y respuesta automatizadas en Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -9,37 +9,51 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e78f0123c909c90ff90be913e8775cc1e5b30313
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777104"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794393"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajustar la configuración después de la inscripción
 
-Una vez completada la inscripción en el escritorio administrado de Microsoft, debe ajustar la configuración de Microsoft Intune y Azure Active Directory (Azure AD) especificada en este artículo para permitir la administración y mantener la seguridad. Establezca la siguiente configuración para excluir grupos de Azure AD específicos que contengan usuarios y dispositivos de escritorio administrados por Microsoft. Para conocer los pasos para excluir grupos, consulte [acceso condicional: usuarios y grupos](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users).
+Después de completar la inscripción en el Escritorio administrado de Microsoft, es posible que deba ajustarse alguna configuración de administración. Para comprobar y ajustar si es necesario, siga estos pasos:
+
+1. Revise la configuración de Microsoft Intune y Azure Active Directory que se describe en la sección siguiente.
+2. Si alguno de los elementos se aplica a su entorno, realice los ajustes descritos.
+3. Si desea comprobar de nuevo que todas las configuraciones [](https://aka.ms/mmdart) son correctas, puede volver a ejecutar la herramienta de evaluación de preparación para asegurarse de que nada entre en conflicto con el Escritorio administrado de Microsoft.
 
 > [!NOTE]
-> Si realiza cambios después de la inscripción a directivas en Microsoft Intune, Azure Active Directory o Microsoft 365, es posible que el escritorio administrado de Microsoft deje de funcionar correctamente. Para evitar problemas con las operaciones de escritorio administradas de Microsoft, Compruebe la configuración específica que se describe en [solucionar problemas encontrados por la herramienta Readiness Assessment antes de](../get-ready/readiness-assessment-fix.md) cambiar las directivas.
+> A medida que las operaciones continúen en los meses siguientes, si realiza cambios después de la inscripción en las directivas de Microsoft Intune, Azure Active Directory o Microsoft 365 que afectan al Escritorio administrado de Microsoft, es posible que el Escritorio administrado de Microsoft deje de funcionar correctamente. Para evitar problemas con el servicio, compruebe la configuración específica descrita en [Corregir](../get-ready/readiness-assessment-fix.md) problemas encontrados por la herramienta de evaluación de preparación antes de cambiar las directivas enumeradas allí. También puede volver a ejecutar la herramienta de evaluación de preparación en cualquier momento.
 
 
 ## <a name="microsoft-intune-settings"></a>Configuración de Microsoft Intune
 
-- Perfil de implementación de AutoPilot: para los perfiles de AutoPilot creados por los administradores de su empresa, excluya los **dispositivos modernos Workplace-todos los** grupos de Azure ad. Para conocer los pasos, vea [inscribir dispositivos Windows en Intune mediante Windows AutoPilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). No excluya los **dispositivos modernos Workplace-todos los** grupos de Azure ad de las directivas de implementación creadas por el escritorio administrado por Microsoft que tengan "espacio de trabajo moderno" en el nombre (por ejemplo, **Perfil del área de trabajo autopiloto moderna**). 
-- Directivas de acceso condicional: para directivas de acceso condicional creadas por administradores en su empresa, excluya el grupo de Azure AD de las **cuentas de servicio del lugar de trabajo moderno** . Para conocer los pasos, consulte el [acceso condicional: usuarios y grupos](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups). No excluya los **dispositivos del área de trabajo modernos-todos los** grupos de Azure ad de las directivas creadas por el escritorio administrado por Microsoft que tengan "espacio de trabajo moderno" en el nombre (por ejemplo, **estación de trabajo segura de trabajo moderno**).
-- Autenticación multifactor: Asegúrese de que las directivas de acceso condicional creadas por los administradores de la compañía que requieren la autenticación multifactor excluyan el grupo de Azure AD de las **cuentas de servicio del lugar de trabajo moderno** . Para obtener más información, consulte [directivas de acceso condicional](../get-ready/readiness-assessment-fix.md#conditional-access-policies) y [acceso condicional: solicitar MFA para todos los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
-- Baseline Security: para las directivas de línea base de seguridad creadas por los administradores de su empresa, excluya los **dispositivos modernos Workplace-todos los**  grupos de Azure ad. Para conocer los pasos, consulte [usar líneas de base de seguridad para configurar dispositivos Windows 10 en Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). No excluya los **dispositivos modernos Workplace-todos los** grupos de Azure ad de las directivas creadas por el escritorio administrado por Microsoft que tengan "espacio de trabajo moderno" en el nombre (por ejemplo, **línea base de seguridad del área de trabajo moderna**).
-- Windows 10 Update ring: para las directivas de Windows 10 Update Ring creadas por los administradores en su empresa, excluya los **dispositivos modernos Workplace-todos los**  grupos de Azure ad. Para conocer los pasos, consulte [administrar las actualizaciones de software de Windows 10 en Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). No excluya los **dispositivos modernos Workplace-todos los** grupos de Azure ad de las directivas creadas por el escritorio administrado por Microsoft que tengan "espacio de trabajo moderno" en el nombre (por ejemplo, la directiva **moderna de actualización del espacio de trabajo** ).
+- Perfil de implementación de Autopilot: si usas alguna directiva de Autopilot, actualiza cada una para excluir el grupo **Modern Workplace Devices -All** Azure AD. Para actualizarlos,  en la sección Grupos excluidos en Asignaciones, seleccione el grupo **Dispositivos modernos** de Área de trabajo **:Todos** los grupos de Azure AD que se crearon durante la inscripción a Escritorio administrado de Microsoft. Escritorio administrado de Microsoft también habrá creado un perfil de Autopilot, que tendrá "Modern Workplace" en el nombre (el perfil **de Modern Workplace Autopilot**). Al actualizar sus propios perfiles de  Autopilot, asegúrese de no excluir el grupo Dispositivos de Área de trabajo modernos **:Todos** los grupos de Azure AD del perfil de Modern **Workplace Autopilot** creado por Escritorio administrado de Microsoft.
+
+- Directivas de acceso condicional: para las directivas de acceso condicional que ha creado, excluya el grupo cuentas de servicio de Área de trabajo **modernas** de Azure AD. Para ver los pasos, [vea Acceso condicional: usuarios y grupos.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Escritorio administrado de Microsoft también habrá creado algunas directivas de acceso condicional, todas las cuales tendrán "Modern Workplace" en el nombre (por ejemplo, Estación de trabajo segura De **trabajo moderna).** Cuando actualice sus propias directivas de  acceso condicional, asegúrese de no excluir el grupo Dispositivos de área de trabajo modernos **:Todos** los grupos de Azure AD de las directivas creadas por el Escritorio administrado de Microsoft.
+
+- Autenticación multifactor: asegúrese de que cualquiera de las directivas de acceso condicional que requieran autenticación multifactor excluyan el grupo de **Cuentas** de servicio de Área de trabajo modernas de Azure AD. Para obtener más información, vea [Directivas de acceso condicional](../get-ready/readiness-assessment-fix.md#conditional-access-policies) y Acceso [condicional: Requerir MFA para todos los usuarios.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+
+- Anillo de actualización de Windows 10: para cualquier directiva de anillo de actualización de Windows 10 que hayas creado, excluye los dispositivos de Área de trabajo modernos: todos los grupos de **Azure** AD de cada directiva. Para ver los pasos, [consulta Crear y asignar anillos de actualización.](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) El Escritorio administrado de Microsoft también habrá creado algunas directivas de anillo de actualización, todas las cuales tendrán "Área de trabajo moderna" en el nombre (por ejemplo, Directiva de actualización de área de trabajo moderna **[Amplia]**, Directiva de actualización de área de trabajo **moderna [Rápido]**, Directiva de actualización de área de **trabajo moderna [Primero]** y Directiva de actualización de área de trabajo **moderna [Prueba]**). Al actualizar sus propias directivas,  asegúrese de no excluir el grupo Dispositivos de Área de trabajo modernos **:todos** los grupos de Azure AD de los que creó Escritorio administrado de Microsoft.
 
 
 ## <a name="azure-active-directory-settings"></a>Configuración de Azure Active Directory
 
-Autoservicio de restablecimiento de contraseña: elija la opción **seleccionado** y seleccione **dispositivos de área de trabajo modernos: todos los grupos de** Azure ad. Para obtener más información, vea [Tutorial: permitir a los usuarios desbloquear su cuenta o restablecer contraseñas con el restablecimiento de contraseña de autoservicio de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Restablecimiento de contraseña de autoservicio: si usa el restablecimiento de contraseña de autoservicio para todos los usuarios, ajuste la asignación para excluir las cuentas de servicio de Escritorio administrado de Microsoft. Para ajustar esta asignación, cree un grupo dinámico de Azure AD para todos los usuarios excepto las cuentas de servicio de Escritorio administrado de *Microsoft* y, a continuación, use ese grupo para la asignación en lugar de "todos los usuarios".
+
+Para ayudarle a buscar y excluir las cuentas de servicio, este es un ejemplo de una consulta dinámica que puede usar:
+
+```Console
+(user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
+```
+
+En esta consulta, reemplace @TENANT por el nombre de dominio del espacio empresarial.
 
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a usar el Escritorio administrado de Microsoft
 
 1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. Ajustar la configuración después de la inscripción (este artículo)
