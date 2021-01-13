@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas DLP a los chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 25ba5850f496c188c2a38d6cc5b68960a85e5e5f
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: a34a094a3c0440933a3d44e0125939a02b4ae202
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790164"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840587"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -97,7 +97,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 4. En la **columna Estado,** active la directiva para los mensajes **de canal y chat de Teams.**<br/>![DLP para chats y canales de Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. En **la** pestaña Elegir ubicaciones, mantenga la configuración  predeterminada de todas las cuentas o seleccione Permitir que elija ubicaciones específicas y especifique qué cuentas, listas de distribución o grupos de seguridad para la inclusión y exclusión. A continuación, elija **Siguiente**.
+5. En la **pestaña Elegir ubicaciones,** mantenga la configuración  predeterminada de todas las cuentas o seleccione Permitir que elija ubicaciones específicas y especifique qué cuentas incluir o excluir. A continuación, elija **Siguiente**.
 
 6. Haga clic en **Guardar**.
 
@@ -116,7 +116,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 4. En la **pestaña Nombre de la** directiva, especifique un nombre y una descripción para la directiva y, a continuación, elija **Siguiente**.
 
-5. En **la** pestaña Elegir ubicaciones, mantenga la configuración  predeterminada de todas las cuentas o seleccione Permitir que elija ubicaciones específicas y especifique qué cuentas, listas de distribución o grupos de seguridad para la inclusión y exclusión. A continuación, elija **Siguiente**.
+5. En la **pestaña Elegir ubicaciones,** mantenga la configuración  predeterminada de todas las cuentas o seleccione Permitir que elija ubicaciones específicas y especifique qué cuentas incluir o excluir. A continuación, elija **Siguiente**.
 
 ![Ubicaciones de directivas DLP](../media/dlp-teams-selectlocationsnewpolicy.png)
 

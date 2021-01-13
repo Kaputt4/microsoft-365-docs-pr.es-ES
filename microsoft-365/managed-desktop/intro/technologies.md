@@ -1,6 +1,6 @@
 ---
 title: Tecnologías del Escritorio administrado de Microsoft
-description: En este tema se enumeran las tecnologías y aplicaciones usadas en el escritorio administrado por Microsoft.
+description: En este artículo se enumeran las tecnologías y aplicaciones usadas en el Escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -9,45 +9,45 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9ec6f73996b2626ef62d33435ed88fb08dfc1a16
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: cb368939e87ddbbfc8f5386c6fc5d6bff110a7ec
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126584"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840906"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
-En este tema se enumeran las tecnologías y aplicaciones usadas en el escritorio administrado por Microsoft.
+En este artículo se enumeran las tecnologías y aplicaciones usadas en el Escritorio administrado de Microsoft.
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-La licencia de Microsoft 365 Enterprise es necesaria para todos los usuarios de escritorio administrados por Microsoft. Para obtener más información sobre los requisitos de licencia para el servicio, consulte [requisitos previos para el escritorio administrado de Microsoft](../get-ready/prerequisites.md).
+Las licencias de Microsoft 365 Enterprise son necesarias para todos los usuarios de Escritorio administrado de Microsoft. Para obtener más información sobre los requisitos de licencia para el servicio, vea [Requisitos previos para escritorio administrado de Microsoft.](../get-ready/prerequisites.md)
 
-En este tema se resumen los componentes incluidos en las licencias Enterprise necesarias, con una descripción del modo en que el servicio usa cada componente con dispositivos de escritorio administrados por Microsoft. Las funciones y responsabilidades específicas para cada área se detallan en toda la documentación del escritorio administrado de Microsoft. 
+En este artículo se resumen los componentes incluidos en las licencias enterprise necesarias, con una descripción de cómo el servicio usa cada componente con dispositivos de Escritorio administrado de Microsoft. Los roles y responsabilidades específicos de cada área se detallan en toda la documentación de Escritorio administrado de Microsoft. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 o E5
  |
  --- | ---
-Microsoft 365 apps for Enterprise (64 bits) | Estas aplicaciones de Office se entregarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de las aplicaciones de Microsoft 365 para empresas, el escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune y grupos de seguridad predeterminados que puede usar para implementar estas aplicaciones en usuarios con licencia. Para obtener más información, vea [instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](../get-started/project-visio.md).
-OneDrive |El inicio de sesión único de Azure Active Directory está habilitado para los usuarios al iniciar sesión en OneDrive por primera vez.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "escritorio", "documento" y "imágenes"; habilitado y configurado por el escritorio administrado por Microsoft.
-Aplicaciones de la Tienda |    Microsoft Sway y Power BI no se entregan con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
-Aplicaciones Win32 |    Teams no se incluye con el dispositivo, sino que es empaquetado y proporcionado por Microsoft para dispositivos de escritorio administrados por Microsoft. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetarlo para su implementación.
-Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se incluyen en el dispositivo. Los usuarios pueden tener acceso a la versión Web de estas aplicaciones con un explorador.
+Aplicaciones de Microsoft 365 para empresas (64 bits) | Estas aplicaciones de Office se enviarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial y OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Aplicaciones de Microsoft 365 para empresas, Escritorio administrado de Microsoft ha creado implementaciones predeterminadas de Microsoft Intune y grupos de seguridad que puede usar para implementar estas aplicaciones en usuarios con licencia. Para obtener más información, vea [Instalar Microsoft Project o Microsoft Visio en dispositivos de Escritorio administrado de Microsoft.](../get-started/project-visio.md)
+OneDrive |El inicio de sesión único de Azure Active Directory está habilitado para los usuarios cuando inician sesión por primera vez en OneDrive.<br><br>Se incluye el redireccionamiento de carpetas conocidas para las carpetas "Escritorio", "Documento" e "Imágenes"; habilitado y configurado por escritorio administrado de Microsoft.
+Aplicaciones de la Tienda |    Microsoft Sway y Power BI no se envían con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
+Aplicaciones de Win32 |    Teams no se incluye con el dispositivo, pero microsoft los empaqueta y proporciona para los dispositivos de escritorio administrado de Microsoft. El cliente de Azure Information Protection no se incluye con el dispositivo, pero se puede empaquetar para su implementación.
+Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
 
 
-## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft defender para el punto de conexión
+## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft Defender para puntos de conexión
 
  |
  --- | ---
-Virtualización de aplicaciones (App-V) |    Los clientes pueden implementar paquetes de App-V con el cliente de administración de aplicaciones Win32 de Intune.
-Microsoft Defender para punto de conexión |    Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
+Virtualización de aplicaciones (App-V) |    Los clientes pueden implementar paquetes de App-V con el cliente de administración de aplicaciones de Intune Win32.
+Microsoft Defender para punto de conexión |    Escritorio administrado de Microsoft usa este producto para supervisar la seguridad del dispositivo. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
  |
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Puede usar todas las características de Enterprise Mobility + Security E3 y Azure Active Directory Premium P2 para administrar los dispositivos MDM.
-Microsoft Cloud App Security |  Puede usar esta característica opcional con Microsoft Managed Desktop.
-Azure Information Protection P2  | Puede usar esta característica opcional con Microsoft Managed Desktop.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Puedes usar todas las características de Enterprise Mobility + Security E3 y Azure Active Directory Premium P2 para administrar dispositivos MDM.
+Microsoft Cloud App Security |  Puede usar esta característica opcional con escritorio administrado de Microsoft.
+Azure Information Protection P2  | Puede usar esta característica opcional con escritorio administrado de Microsoft.

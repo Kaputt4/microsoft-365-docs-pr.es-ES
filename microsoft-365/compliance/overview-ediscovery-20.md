@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
+title: Información general sobre la solución de eDiscovery avanzado en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,88 +17,96 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: En este artículo se proporciona una introducción a la exhibición avanzada de documentos electrónicos en Microsoft 365, una herramienta para investigaciones internas y externas.
+description: Obtenga información sobre la solución de eDiscovery avanzado en Microsoft 365. En este artículo se proporciona información general sobre eDiscovery avanzado en Microsoft 365, una herramienta que le ayudará a administrar investigaciones internas y externas. También se enmarcan los motivos empresariales para usar eDiscovery avanzado para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6225411bcd3051c19e22fcb205cc7dee92f99f82
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 1b2fa0b42a7f439aa65ae53e76e377ded92f97b7
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131033"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840883"
 ---
-# <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
+# <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Información general sobre eDiscovery avanzado de Microsoft 365
 
-La solución Advanced eDiscovery de Microsoft 365 se basa en las capacidades existentes de eDiscovery y de análisis en Office 365. Esta nueva solución, denominada *exhibición avanzada* de documentos electrónicos, proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. También permite a los equipos jurídicos administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores involucrados en un caso. 
+La solución de eDiscovery avanzado de Microsoft 365 se basa en las capacidades de análisis y exhibición de documentos electrónicos de Microsoft existentes. EDiscovery avanzado proporciona un flujo de trabajo completo para conservar, recopilar, analizar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de su organización. También permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores implicados en un caso.
 
-> [!NOTE]
-> EDiscovery avanzado requiere una suscripción de Office 365 o Microsoft 365 E5 Enterprise. Para obtener más información sobre las licencias de eDiscovery avanzadas, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
+La exhibición avanzada de documentos electrónicos puede ayudar a su organización a responder a asuntos legales o investigaciones internas mediante la detección de datos donde reside. Puede administrar sin problemas los flujos de trabajo de exhibición de documentos electrónicos mediante la identificación de personas de interés y sus orígenes de datos, aplicar sin problemas retenciones para conservar los datos y, a continuación, administrar el proceso de comunicación de retención legal. Al recopilar datos del origen, puede buscar en la plataforma de Microsoft 365 en directo para encontrar rápidamente lo que necesita. Las capacidades inteligentes de aprendizaje automático, como la indización profunda, los subprocesos de correo electrónico y la detección casi duplicada, también le ayudan a reducir grandes volúmenes de datos a un conjunto de datos relevante.
 
-## <a name="alignment-with-edrm"></a>Alineación con EDRM
+En las secciones siguientes se describe cómo estas funcionalidades de eDiscovery avanzado pueden ayudar a su organización.
 
-El flujo de trabajo integrado de eDiscovery avanzado se alinea con el proceso de eDiscovery descrito por el modelo de referencia de detección electrónica (EDRM). 
+## <a name="discover-and-collect-data-in-place"></a>Descubrir y recopilar datos en el lugar
 
-![Modelo de referencia de detección electrónica (EDRM)](../media/EDRMv1.png)
+Tradicionalmente, las organizaciones que dependen de varias soluciones de exhibición de documentos electrónicos de terceros requieren copiar grandes volúmenes de datos de Microsoft 365 para procesar y tener que hospedar datos duplicados. Esta necesidad aumenta el tiempo necesario para encontrar datos relevantes y el riesgo, costo y complejidad de administrar varias soluciones.
 
-(Origen de la imagen por cortesía de edrm.net. La imagen de origen estaba disponible en la licencia no desported de Creative Commons Atribution 3,0.)
+EDiscovery avanzado en Microsoft 365 le permite descubrir datos en el origen y permanecer dentro de los límites de seguridad y cumplimiento de Microsoft 365.  Al recopilar datos locales del sistema dinámico, eDiscovery avanzado reduce la fricción de volver al origen y reduce el trabajo innecesario de tener que buscar contenido que falta, lo que a menudo sucede cuando el registro en diario se encuentra en las soluciones tradicionales de exhibición de documentos electrónicos.
 
-En un nivel alto, a continuación se muestra cómo la exhibición avanzada de documentos electrónicos admite el flujo de trabajo EDRM:
+Las capacidades nativas de búsqueda y recopilación de datos en Teams, Yammer, SharePoint Online, OneDrive para la Empresa y Exchange Online mejoran aún más la detección de datos. Por ejemplo, eDiscovery avanzado:
 
-- **Determinación.** Después de identificar las posibles personas de interés en una investigación, puede agregarlas como custodios (también denominadas *custodios de datos*, ya que pueden tener información relevante para la investigación) a un caso avanzado de eDiscovery. Después de identificar a los custodios y agregarlos a un caso, puede preservar, recopilar, revisar y analizar fácilmente los datos de las privaciones asociados.
+- Reconstruye las conversaciones de Teams (en lugar de devolver mensajes individuales de las conversaciones).
 
-- **Buena.** Para preservar y proteger los datos relevantes para una investigación, eDiscovery avanzado le permite realizar una retención legal en los orígenes de datos asociados con los custodios en un caso. También puede poner los datos no coprivate en suspensión (normalmente recursos de grupo compartidos, como sitios de SharePoint o canales de Teams compartidos). EDiscovery avanzado también tiene un flujo de trabajo de comunicaciones integrado para que pueda enviar notificaciones de retención legal a los custodios y realizar un seguimiento de sus confirmaciones.
+- Recopila contenido basado en la nube compartido con usuarios mediante vínculos o datos adjuntos modernos en mensajes de correo electrónico y chats de Teams.
 
-- **Colección.** Una vez que haya identificado (y conservado) los orígenes de datos relevantes para la investigación, puede usar la herramienta de búsqueda integrada en eDiscovery avanzado para buscar y recopilar datos en directo de los orígenes de datos de Private (y de los orígenes de datos que no sean de privación, si procede) que puedan ser relevantes para el caso.
+- Tiene compatibilidad integrada con cientos de tipos de archivo que no son de Microsoft 365.
 
-- **Procesar.** Una vez que haya recopilado todos los datos relevantes para el caso, el siguiente paso es procesarlo para la revisión y el análisis adicionales. En la exhibición avanzada de documentos electrónicos, los datos locales identificados en la fase de recopilación se copian en una ubicación de almacenamiento de Azure (denominada *conjunto de revisión*), que proporciona una vista estática de los datos de caso.
+- Recopila datos de orígenes de terceros (como Bloomberg, Facebook, Slack y Zoom Meetings) que los [](archiving-third-party-data.md)conectores de datos importan y archivan en Microsoft 365.
 
-- **Comprueba.** Una vez agregados los datos a un conjunto de revisión, puede ver documentos específicos y ejecutar consultas adicionales en el conjunto de revisión para reducir los datos a los documentos más relevantes. También puede anotar y etiquetar documentos específicos.
+## <a name="manage-ediscovery-workflow-in-one-platform"></a>Administrar el flujo de trabajo de exhibición de documentos electrónicos en una plataforma
 
-- **Analice.** EDiscovery avanzado proporciona un eficaz conjunto de herramientas de análisis integradas que le ayudarán a deseleccionar de manera inteligente los datos irrelevantes del conjunto de revisión, lo que le ahorra los costos de revisión legal mediante la reducción eficaz del volumen de datos relevantes para la producción.
+EDiscovery avanzado puede ayudarle a reducir el número de soluciones de exhibición de documentos electrónicos en las que necesita confiar. Proporciona un flujo de trabajo sencillo de un extremo a otro, todo lo que se produce en Microsoft 365. La exhibición avanzada de documentos electrónicos ayuda a reducir la fricción de identificar y recopilar posibles orígenes de información relevante asignando automáticamente orígenes de datos únicos y compartidos a la persona de interés (conocido como administrador) y proporcionando informes y análisis de datos potencialmente relevantes antes de recopilarlo para su análisis y *revisión.*
 
-- **Producción** y **presentación.** Cuando esté listo, puede exportar documentos de un conjunto de revisiones para revisión legal. Puede exportar documentos en su formato especificado por el EDRM para que puedan importarse en aplicaciones de revisión de terceros.
+Además, las API de Microsoft Graph pueden ayudarle a automatizar el flujo de trabajo de exhibición de documentos electrónicos y ampliar eDiscovery avanzado para soluciones personalizadas.
 
-## <a name="advanced-ediscovery-architecture"></a>Arquitectura avanzada de eDiscovery
+## <a name="cull-data-intelligently"></a>Datos Cull de forma inteligente
 
-Este es un diagrama de arquitectura de eDiscovery avanzado que muestra el flujo de trabajo de un extremo a otro en un entorno de un solo geográfico y un entorno multigeográfico. El flujo de datos de un extremo a otro está alineado con el EDRM.
+Las capacidades inteligentes de aprendizaje automático en eDiscovery avanzado le ayudan a reducir la cantidad de datos que hay que revisar. Estas funcionalidades inteligentes le ayudan a reducir y reducir grandes volúmenes de datos a un conjunto relevante. Por ejemplo, una consulta de conjunto de revisión integrada ayuda a filtrar solo por contenido único mediante la identificación de duplicados cercanos. Esta funcionalidad puede reducir considerablemente la cantidad de datos que se revisarán.
 
-[![Póster de modelos: arquitectura avanzada de exhibición de documentos electrónicos en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+Otras capacidades de aprendizaje automático pueden refinar e identificar datos relevantes mediante etiquetas inteligentes y herramientas de revisión asistida por tecnología, como los módulos de relevancia.
 
-[Ver como imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+## <a name="advanced-ediscovery-architecture"></a>Arquitectura avanzada de exhibición de documentos electrónicos
+
+Este es un diagrama de arquitectura de eDiscovery avanzado que muestra el flujo de trabajo de un extremo a otro en un entorno de [](advanced-ediscovery-edrm.md) una sola geo y en un entorno multigemico, y el flujo de datos de un extremo a otro alineado con el modelo de referencia de detección electrónica (EDRM).
+
+[![Póster del modelo: Arquitectura avanzada de eDiscovery en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Descargar como archivo PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
 [Descargar como archivo de Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
-Para obtener más información acerca del flujo de trabajo de un extremo a otro en la exhibición avanzada de documentos electrónicos, vea este [vídeo de Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133).
+Para obtener más información sobre el flujo de trabajo de un extremo a otro en eDiscovery avanzado, vea este [vídeo de Microsoft Mechanics.](https://go.microsoft.com/fwlink/?linkid=2066133)
 
-En las secciones siguientes se describe cada paso del flujo de trabajo integrado en la exhibición avanzada de documentos electrónicos. En la siguiente captura de pantalla se muestra la ficha **información general** de un caso denominado *2020.11.03-contoso v. fabrikam*.
+## <a name="advanced-ediscovery-workflow"></a>Flujo de trabajo avanzado de exhibición de documentos electrónicos
+
+En las secciones siguientes se describe cada paso del flujo de trabajo integrado en la herramienta eDiscovery avanzado en el Centro de cumplimiento de Microsoft 365. La siguiente captura  de pantalla muestra la pestaña Información general de un caso denominado *2020.11.03 - Contoso v. Fabrikam*.
 
 ![Pestañas en el flujo de trabajo de eDiscovery avanzado integrado](../media/AeD-Case-Screenshot1.png)
 
-## <a name="managing-custodians-and-non-custodial-data-sources"></a>Administración de custodios y orígenes de datos que no son de privación
+Para obtener información más detallada, vea [Administrar el flujo de trabajo de eDiscovery avanzado.](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
 
-Use la pestaña **orígenes de datos** para agregar y administrar las personas que ha identificado como personas de interés en el caso y otros orígenes de datos que no se pueden asociar con un custodio. Cuando se agregan custodios o fuentes de datos que no son de privación, puede realizar acciones rápidamente, como poner en retención legal en custodios y orígenes de datos que no son de privación, comunicarse con custodios y buscar en los orígenes de datos que no sean de custodia y recopilar contenido que sea relevante para el caso. A medida que avanza el caso, es fácil agregar custodios nuevos o fuentes de datos que no sean de privación o liberarlos del caso. Para obtener más información, consulte [work with custodios in Advanced eDiscovery](managing-custodians.md).
+### <a name="managing-custodians-and-non-custodial-data-sources"></a>Administración de administradores y orígenes de datos no administradores
 
-## <a name="managing-legal-hold-notifications"></a>Administración de notificaciones de retención legal
+Use la **pestaña Orígenes** de datos para agregar y administrar las personas que ha identificado como personas de interés en el caso y otros orígenes de datos que pueden no estar asociados con un administrador. Al agregar administradores o orígenes de datos no administradores, puede realizar rápidamente acciones como poner una retención legal en los orígenes de datos de administrador y no custodial, comunicarse con los administradores y buscar orígenes de datos de administrador y no custodia para recopilar contenido que sea relevante para el caso. A medida que el caso avanza, es fácil agregar nuevos administradores o orígenes de fechas que no son de custodia o liberarlos del caso. Para obtener más información, [vea Trabajar con administradores.](managing-custodians.md)
 
-Use la pestaña **comunicaciones** para administrar el proceso de comunicación con los custodios en el caso. Un aviso de suspensión legal instruye a los custodios para que conserven el contenido relevante para el caso. Los equipos jurídicos deben realizar un seguimiento de los avisos recibidos, leídos y confirmados por los custodios. El flujo de trabajo de comunicaciones en eDiscovery avanzado permite crear y enviar notificaciones iniciales, recordatorios, avisos de versión y escalamientos si los custodios no reconocen una notificación de retención. Para obtener más información, consulte [trabajar con comunicaciones en la exhibición avanzada de](managing-custodian-communications.md)documentos electrónicos.
+### <a name="managing-legal-hold-notifications"></a>Administración de notificaciones de retención legal
 
-## <a name="managing-content-preservation"></a>Administración de la conservación de contenido
+Use la **pestaña** Comunicaciones para administrar el proceso de comunicación con los administradores en el caso. Un aviso de retención legal indica a los administradores que conserven cualquier contenido que sea relevante para el caso. Los equipos legales deben poder realizar un seguimiento de los avisos recibidos, leídos y reconocidos por los administradores. El flujo de trabajo de comunicaciones de eDiscovery avanzado le permite crear y enviar notificaciones iniciales, avisos, avisos de lanzamiento y escalaciones si los administradores no reconocen una notificación de retención. Para obtener más información, vea [Trabajar con comunicaciones.](managing-custodian-communications.md)
 
-Cuando agrega un custodio a un caso, puede poner una retención en los datos de Private. Use la pestaña **suspender** para administrar la suspensión creada al agregar custodios y administrar otras retenciones legales asociadas con el caso; por ejemplo, puede identificar y poner una retención en orígenes de datos que no sean de Private. También puede editar cualquier suspensión en el caso y convertirlo en una retención basada en consulta para conservar solo el contenido que coincida con la consulta. Por ejemplo, puede Agregar un intervalo de fechas a la suspensión para que solo se conserve el contenido creado en un intervalo de fechas específico. También puede obtener estadísticas de contenido que está en suspensión, quitar la retención después de que ya no sea relevante para el caso o eliminarla. Para obtener más información, consulte [Administrar suspensiones en EDiscovery avanzado](managing-holds.md).
+### <a name="managing-content-preservation"></a>Administración de la conservación de contenido
 
-## <a name="indexing-custodian-data"></a>Indización de datos del custodio
+Cuando agrega un administrador a un caso, puede colocar una retención en los datos de custodia. Use la **pestaña** Retención para administrar la retención creada al agregar administradores y para administrar otras retenciones legales asociadas al caso; por ejemplo, puede identificar y colocar una retención en orígenes de datos que no son de custodia. También puede editar cualquier retención en el caso y convertirla en una retención basada en consulta para conservar solo el contenido que coincida con la consulta. Por ejemplo, puede agregar un intervalo de fechas a la retención para que solo se conserve el contenido creado dentro de un intervalo de fechas específico. También puede obtener estadísticas sobre el contenido que está en retención, quitar la retención después de que ya no sea relevante para el caso o eliminarla. Para obtener más información, vea [Administrar retenciones.](managing-holds.md)
 
-Cuando se agrega un custodio y los orígenes de datos Private correspondientes a un caso, un proceso denominado *indización avanzada* reindiza los elementos parcialmente indizados de un origen de datos de custodios. Esto permite que el contenido de apoyo como imágenes, tipos de archivo no admitidos y otro contenido no indexado se pueda buscar por completo al ejecutar búsquedas para recopilar datos en el caso. Use la ficha **procesamiento** para supervisar el estado de la indización avanzada y corregir los errores de procesamiento mediante un proceso denominado *corrección de errores*. Para obtener más información, vea [corregir errores de procesamiento en la exhibición avanzada de](processing-data-for-case.md)documentos electrónicos.
+### <a name="indexing-custodian-data"></a>Indización de datos de administrador
 
-## <a name="collecting-case-data"></a>Recopilar datos de casos
+Cuando agrega un administrador y los orígenes de datos de custodia correspondientes a un caso, cualquier elemento parcialmente indizado de un origen de datos de administrador se vuelve a indexar mediante un proceso denominado indización *avanzada*. Esto permite que el contenido de custodia, como imágenes, tipos de archivo no admitidos y otro contenido potencialmente no indexado, se pueda buscar completamente al ejecutar búsquedas para recopilar datos para el caso. Use la **pestaña Procesamiento** para supervisar el estado de indización avanzada y corregir errores de procesamiento mediante un proceso denominado *corrección de errores.* Para obtener más información, vea [Corregir errores de procesamiento.](processing-data-for-case.md)
 
-Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes de datos de la custodia y no Private de los contenidos relevantes para el caso. Puede crear y ejecutar búsquedas basadas en consultas (usando palabras clave y condiciones) para identificar un conjunto de mensajes de correo electrónico y documentos relevantes para el caso y que desee revisar y analizar con más detalle en los siguientes pasos del flujo de trabajo de eDiscovery. Puede crear una o más búsquedas asociadas con el caso. También puede usar la herramienta de búsqueda para obtener una vista previa de los documentos de ejemplo y ver estadísticas de búsqueda para ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que haya buscado y recopilado todos los datos relevantes para el caso, puede Agregar los resultados de la búsqueda a un conjunto de revisión para la revisión, el análisis y la selección adicionales. Para obtener más información, vea [recopilar datos para un caso en EDiscovery avanzado](collecting-data-for-ediscovery.md).
+### <a name="collecting-case-data"></a>Recopilar datos de casos
 
-## <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
+Use la **pestaña Búsquedas** para crear búsquedas para buscar contenido relevante para el caso en los orígenes de datos locales y no administradores. Puede crear y ejecutar búsquedas basadas en consultas (con palabras clave y condiciones) para identificar un conjunto de mensajes de correo electrónico y documentos que son relevantes para el caso y que desea revisar y analizar en pasos posteriores en el flujo de trabajo de exhibición de documentos electrónicos. Puede crear una o más búsquedas asociadas con el caso. También puede usar la herramienta de búsqueda para obtener una vista previa de documentos de ejemplo y ver estadísticas de búsqueda para ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que esté satisfecho con que los resultados de la búsqueda contienen todos los datos relevantes para el caso, agregue los resultados de la búsqueda a un conjunto de revisión para su posterior revisión, análisis y selección. Para obtener más información, vea [Recopilar datos para un caso.](collecting-data-for-ediscovery.md)
 
-Use la ficha de **Review sets** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisión* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, datos que no son de Private) que recopiló en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso para extraer los archivos de los contenedores, extraer los metadatos y extraer el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como la identificación de la duplicación de documentos, el procesamiento de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para más información, vea:
+### <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
+
+Usa la **pestaña Conjuntos de** revisión para revisar y analizar el contenido que has recopilado del sistema dinámico y agregado a un conjunto de revisión. Un  conjunto de revisión es una colección estática de los datos (es decir, una copia sin conexión de datos) de datos de custodia (y, si procede, datos que no son de custodia) que recopiló en la fase anterior del flujo de trabajo de exhibición de documentos electrónicos. Al agregar resultados de búsqueda a un conjunto de revisión, se desencadena un proceso para extraer archivos de contenedores, extraer metadatos y extraer texto. Una vez completado este proceso, el sistema crea un nuevo índice de todos los datos recopilados de los administradores y los agrega al conjunto de revisión. Después de agregar los datos al conjunto de revisión, puede ejecutar más consultas para restringir los datos de casos, ver los datos como texto o en el formato de archivo nativo y anotar, redactar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Después de haber seleccionado los datos solo para lo que es relevante para el caso, puede descargar documentos directamente o exportarlos junto con metadatos de archivo, anotaciones y cualquier etiqueta. Para obtener más información, vea:
 
 - [Ver documentos de un conjunto de revisión](view-documents-in-review-set.md)
 
@@ -108,14 +116,20 @@ Use la ficha de **Review sets** para revisar y analizar el contenido que ha reco
 
 - [Analizar datos en un conjunto de revisión](analyzing-data-in-review-set.md)
 
-## <a name="exporting-data-for-review-and-presentation"></a>Exportar datos para revisión y presentación
+### <a name="exporting-data-for-review-and-presentation"></a>Exportación de datos para revisión y presentación
 
-Después de exportar los datos de un conjunto de revisión, use la pestaña **exportaciones** para administrar un trabajo de exportación y descargar datos de un conjunto de revisión. Al exportar un conjunto de revisión, los datos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft (o en una ubicación de almacenamiento de Azure administrada por la organización). Una vez que se carga en Azure, es posible descargarla en un equipo local. Puede obtener la clave de acceso de almacenamiento necesaria para descargar los datos exportados en la ficha **Exports** . Para obtener más información, vea [exportar datos de casos en EDiscovery avanzado](exporting-data-ediscover20.md).
+Después de exportar los datos de  un conjunto de revisión, use la pestaña Exportaciones para administrar un trabajo de exportación y descargar datos de un conjunto de revisión. Al exportar un conjunto de revisión, los datos se cargan en una ubicación de Azure Storage proporcionada por Microsoft (o en una ubicación de Azure Storage administrada por su organización). Después de cargarla en Azure, estará disponible para su descarga en un equipo local. Puede obtener la clave de evaluación de almacenamiento necesaria para descargar los datos exportados en la **pestaña Exportaciones.** Para obtener más información, vea [Exportar datos de casos.](exporting-data-ediscover20.md)
 
-## <a name="managing-jobs"></a>Administración de trabajos
+### <a name="managing-jobs"></a>Administración de trabajos
 
-Use la ficha **trabajos** para supervisar procesos de ejecución prolongada para las tareas relacionadas con casos que haya iniciado. Algunos ejemplos de trabajos son los relacionados con la reindización, la búsqueda y la exportación de datos de casos. Por ejemplo, si crea una búsqueda en la ficha **búsquedas** que incluye muchos orígenes de datos, el estado de este proceso de búsqueda se mostrará en la ficha **trabajos** . Para obtener más información, consulte [administrar trabajos en EDiscovery avanzado](managing-jobs-ediscovery20.md).
+Use la **pestaña Trabajos** para supervisar los procesos de larga ejecución para las tareas relacionadas con mayúsculas y minúsculas que ha iniciado. Algunos ejemplos de trabajos son los relacionados con la reindexación, la búsqueda y la exportación de datos de casos. Por ejemplo, si crea una  búsqueda en la ficha Búsquedas que incluye muchos orígenes de datos, el estado de este proceso de búsqueda se mostrará en la pestaña **Trabajos.** Para obtener más información, vea [Administrar trabajos.](managing-jobs-ediscovery20.md)
 
-## <a name="configuring-case-settings"></a>Configuración de los casos
+### <a name="configuring-case-settings"></a>Configuración de mayúsculas y minúsculas
 
-Use la pestaña **configuración** para establecer la configuración de casos. Esto incluye agregar miembros a un caso, cerrar o eliminar un caso y configurar las opciones de búsqueda y análisis.
+Use la **pestaña Configuración** para configurar las opciones para todos los casos. Esto incluye agregar miembros a un caso, cerrar o eliminar un caso y configurar opciones de búsqueda y análisis. Para obtener más información, vea:
+
+- [Agregar miembros a un caso](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+
+- [Cerrar o eliminar un caso](close-or-delete-case.md)
+
+- [Establecer la configuración de búsqueda y análisis](configure-search-and-analytics-settings-in-advanced-ediscovery.md)

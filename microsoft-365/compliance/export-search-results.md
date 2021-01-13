@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportar los resultados de la búsqueda de una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido de los sitios de SharePoint y OneDrive para la Empresa se exporta como documentos nativos de Office.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09f3ed5684338616ef20036e4fded400bd106c44
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796188"
+ms.locfileid: "49799707"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -54,14 +54,14 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   - Microsoft Internet Explorer 10 y versiones posteriores
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft no fabrica extensiones o complementos de terceros para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
+  > <sup>1</sup> Microsoft no fabrica extensiones ni complementos de terceros para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
   > <sup>2</sup> Como resultado de los cambios recientes en Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo habilitar ClickOnce en Edge, vea Usar la herramienta de exportación de exhibición de documentos [electrónicos en Microsoft Edge.](configure-edge-to-export-search-results.md)
   
 - Se recomienda descargar los resultados de la búsqueda en un equipo local. Sin embargo, para evitar que el firewall o la infraestructura de proxy de su empresa causen problemas al descargar los resultados de la búsqueda, puede considerar la posibilidad de descargar los resultados de la búsqueda en un escritorio virtual fuera de la red. Esto puede disminuir los tiempos de espera que se producen en las conexiones de datos de Azure al exportar un gran número de archivos. Para obtener más información acerca de los escritorios virtuales, vea [Windows Virtual Desktop.](https://azure.microsoft.com/services/virtual-desktop) 
 
 - Para mejorar el rendimiento al descargar resultados de búsqueda, considere la posibilidad de dividir las búsquedas que devuelven un gran conjunto de resultados en búsquedas más pequeñas. Por ejemplo, puede usar intervalos de fechas en consultas de búsqueda para devolver un conjunto más pequeño de resultados que se pueden descargar más rápido.
   
-- Al exportar los resultados de la búsqueda, los datos se almacenan temporalmente en una ubicación de Azure Storage proporcionada por Microsoft en la nube de Microsoft antes de que se descarguen en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión de Azure, que es **\* .blob.core.windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de Azure Storage dos semanas después de su creación. 
+- Al exportar los resultados de la búsqueda, los datos se almacenan temporalmente en una ubicación de Azure Storage proporcionada por Microsoft en la nube de Microsoft antes de que se descarguen en el equipo local. Asegúrese de que su organización puede conectarse al punto de conexión de Azure, que es **\* .blob.core.windows.net** (el comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de Azure Storage dos semanas después de su creación. 
   
 - Si su organización usa un servidor proxy para comunicarse con Internet, debe definir la configuración del servidor proxy en el equipo que usa para exportar los resultados de la búsqueda (para que el servidor proxy pueda autenticar la herramienta de exportación). Para ello, abre el archivo  *machine.config*  en la ubicación que coincida con tu versión de Windows. 
   
@@ -101,7 +101,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 6. En la **página Exportar los resultados de** búsqueda, en Opciones de **salida,** elija una de las siguientes opciones:
   
-    - Todos los elementos, excepto los que tienen un formato no reconocido, están cifrados o no se indexaron por otros motivos.
+    - Todos los elementos, excepto los que tienen un formato no reconocido, se cifran o no se indexaron por otros motivos.
   
     - Todos los elementos, incluidos los que tienen un formato no reconocido, están cifrados o no se indexaron por otros motivos.
   
@@ -128,7 +128,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 9. Haga clic **en la casilla Incluir versiones para documentos de SharePoint** para exportar todas las versiones de documentos de SharePoint. Esta opción solo aparece si los orígenes de contenido de la búsqueda incluyen sitios de SharePoint o OneDrive para la Empresa. 
   
-10. Haga clic en la casilla Exportar archivos en una carpeta comprimida **(comprimida)** para exportar los resultados de la búsqueda a carpetas comprimidas. Esta opción solo está disponible cuando elige exportar elementos de Exchange como mensajes individuales y cuando los resultados de la búsqueda incluyen documentos de SharePoint o OneDrive. Esta opción se usa principalmente para evitar el límite de 260 caracteres en los nombres de ruta de acceso de archivo de Windows cuando se exportan los elementos. Consulte los "Nombres de archivo de los elementos exportados" en la [sección Más](#more-information) información. 
+10. Haga clic en la casilla Exportar archivos en una carpeta comprimida **(comprimida)** para exportar los resultados de la búsqueda a carpetas comprimidas. Esta opción solo está disponible cuando elige exportar elementos de Exchange como mensajes individuales y cuando los resultados de la búsqueda incluyen documentos de SharePoint o OneDrive. Esta opción se usa principalmente para evitar el límite de 260 caracteres en los nombres de ruta de acceso de archivos de Windows cuando se exportan elementos. Consulte "Nombres de archivo de los elementos exportados" en la [sección Más](#more-information) información. 
   
 11. Haga clic en **Iniciar la exportación**. Los resultados de la búsqueda están preparados para su descarga, lo que significa que se cargan en una ubicación de Azure Storage en la nube de Microsoft. Esto podría llevar varios minutos.
 
@@ -144,11 +144,11 @@ El siguiente paso es descargar los resultados de la búsqueda desde la ubicació
   
 2. Seleccione el trabajo de exportación que creó en el paso 1.
 
-3. En la página desplegable de la **tecla Exportar**, haga clic en Copiar en **el Portapapeles.** Use esta clave en el paso 6 para descargar los resultados de la búsqueda.
+3. En la página desplegable de la tecla **Exportar**, haga clic **en Copiar en el Portapapeles.** Use esta clave en el paso 6 para descargar los resultados de la búsqueda.
   
 4. Haga clic en **Descargar resultados**.
 
-5. Si se le pide que instale la herramienta de exportación de exhibición de documentos **electrónicos,** haga clic **en Instalar**.
+5. Si se le pide que instale la herramienta de exportación de **exhibición** de documentos electrónicos, haga clic **en Instalar.**
 
 6. En la herramienta de exportación de exhibición **de documentos electrónicos,** haga lo siguiente:
 
@@ -159,7 +159,7 @@ El siguiente paso es descargar los resultados de la búsqueda desde la ubicació
    2. Haga clic en **Examinar** para especificar la ubicación en la que desea descargar los archivos de los resultados de la búsqueda.
   
       > [!NOTE]
-      > Debido a la gran cantidad de actividad de disco (lecturas y escrituras), debes descargar los resultados de la búsqueda en una unidad de disco local; no los descargue en una unidad de red asignada u otra ubicación de red. 
+      > Debido a la gran cantidad de actividad de disco (lecturas y escrituras), debe descargar los resultados de la búsqueda en una unidad de disco local; no los descargue en una unidad de red asignada u otra ubicación de red. 
   
 6. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo.
   
@@ -187,20 +187,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
   
 ### <a name="export-limits"></a>Límites de exportación
 
-Estos límites también se aplican al exportar resultados de búsqueda en un caso de exhibición de documentos electrónicos principal.
-
-|Descripción del límite|Límite|
-|:-----|:-----|
-|Cantidad máxima de datos exportables de una sola búsqueda de contenido  <br/><br/> **Nota:** Si los resultados de la búsqueda son superiores a 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda. <br/>  |2 TB  <br/> | 
-|Máximo que una organización puede exportar en un solo día <br/><br/> **Nota:** Este límite se restablece diariamente a las 12:00 UTC <br/> |2 TB <br/> |
-|Máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo en la organización <br/><br/> **Nota:** La ejecución de **una exportación de solo** informe cuenta con respecto al total de exportaciones simultáneas de la organización. Si tres usuarios realizan 3 exportaciones cada uno, solo se puede realizar una exportación más. Independientemente de si exporta un informe o resultados de búsqueda, no se pueden realizar otras exportaciones hasta que se haya completado una.   <br/> |10  <br/> |
-|Máximo de exportaciones que puede ejecutar un solo usuario <br/> |3  <br/> |
-|Se puede descargar la cantidad máxima de resultados de búsqueda de buzones mediante la herramienta de exportación de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365  <br/><br/> **Nota:** Para descargar los resultados de la búsqueda de más de 100 000 buzones, debe usar PowerShell del Centro de seguridad & cumplimiento. Para obtener instrucciones, consulte Exportar resultados de más de [100 000 buzones.](#exporting-results-from-more-than-100000-mailboxes) <br/> | 100,000 <br/>|
-|Tamaño máximo del archivo PST que se puede exportar <br/><br/> **Nota:** Si los resultados de la búsqueda del buzón de un usuario tienen más de 10 GB, los resultados de la búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de la búsqueda en un único archivo PST, el archivo PST se mostrará en archivos PST adicionales si el tamaño total de los resultados de la búsqueda es superior a 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el Registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Vea Cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda [de exhibición de documentos electrónicos.](change-the-size-of-pst-files-when-exporting-results.md) Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un único buzón sea de más de 10 GB. Si decidió exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes en una sola carpeta y los resultados de la búsqueda sean superiores a 10 GB, los elementos siguen organizados en orden cronológico, por lo que se mostrarán en archivos PST adicionales en función de la fecha de envío.<br/> | 10 GB <br/> |
-|Tasa a la que se cargan los resultados de búsqueda de buzones y sitios en una ubicación de Azure Storage proporcionada por Microsoft. |Máximo de 2 GB por hora|
-|||
-
-Para obtener información acerca de otros límites, vea [Límites de búsqueda de contenido.](limits-for-content-search.md) 
+Para obtener información acerca de los límites al exportar resultados de búsqueda de contenido, vea la sección "Límites de exportación" [en Límites para la búsqueda de contenido.](limits-for-content-search.md#export-limits)
 
 ### <a name="export-reports"></a>Exportar informes
   
@@ -222,7 +209,7 @@ Para obtener información acerca de otros límites, vea [Límites de búsqueda d
 
     - Si el mensaje es un mensaje duplicado si habilitó la opción de desduplicación al exportar los resultados de la búsqueda. Los mensajes duplicados tienen un valor en la **columna Duplicar** a elemento que identifica el mensaje como duplicado. El valor de la **columna Duplicar a elemento** contiene la identidad del elemento del mensaje que se exportó. Para obtener más información, vea [Desduplicación en los resultados de búsqueda de exhibición de documentos electrónicos.](de-duplication-in-ediscovery-search-results.md)
 
-      Para documentos de sitios de SharePoint y OneDrive para la Empresa, el registro de resultados contiene información sobre cada documento, incluidos:
+      Para los documentos de sitios de SharePoint y OneDrive para la Empresa, el registro de resultados contiene información sobre cada documento, incluidos:
 
       - La dirección URL del documento.
 
@@ -236,7 +223,7 @@ Para obtener información acerca de otros límites, vea [Límites de búsqueda d
 
   - **Errores y advertencias** Contiene errores y advertencias para los archivos encontrados durante la exportación. Vea la columna Detalles del error para obtener información específica de cada error o advertencia individual.
 
-  - **Elementos omitido** Al exportar resultados de búsqueda de sitios de SharePoint y OneDrive para la Empresa, la exportación normalmente incluirá un informe de elementos omitido (SkippedItems.csv). Los elementos mencionados en este informe suelen ser elementos que no se descargarán, como una carpeta o un conjunto de documentos. No exportar estos tipos de elementos es por diseño. Para otros elementos que se omitieron, el campo "Tipo de error" y "Detalles del error" en el informe de elementos omitido muestra el motivo por el que se omitió el elemento y no se descargó con los demás resultados de la búsqueda.
+  - **Elementos omitido** Al exportar resultados de búsqueda de sitios de SharePoint y OneDrive para la Empresa, la exportación normalmente incluirá un informe de elementos omitido (SkippedItems.csv). Los elementos mencionados en este informe suelen ser elementos que no se descargarán, como una carpeta o un conjunto de documentos. No exportar estos tipos de elementos es por diseño. Para otros elementos que se omitieron, el campo "Tipo de error" y "Detalles del error" en el informe de elementos omitido muestra el motivo por el que se omitió el elemento y no se descargó con los otros resultados de la búsqueda.
 
   - **Registro de seguimiento** Contiene información de registro detallada sobre el proceso de exportación y puede ayudar a descubrir problemas durante la exportación.
   
@@ -247,11 +234,11 @@ Para obtener información acerca de otros límites, vea [Límites de búsqueda d
   
 - Si exporta elementos de buzón de una búsqueda de contenido que devuelve todos los elementos de buzón de los resultados de la búsqueda (porque no se incluyen palabras clave en la consulta de búsqueda), los elementos parcialmente indizados no se copiarán en el archivo PST que contiene los elementos no indexados. Esto se debe a que todos los elementos, incluidos los elementos parcialmente indizados, se incluyen automáticamente en los resultados de búsqueda normales. Esto significa que los elementos parcialmente indizados se incluirán en un archivo PST (o como mensajes individuales) que contenga los otros elementos indizados.
 
-    Si exporta los elementos indizados y parcialmente indizados o si exporta solo los elementos indizados de una búsqueda de contenido que devuelve todos los elementos, se descargará el mismo número de elementos. Esto sucede aunque los resultados de búsqueda estimados para la búsqueda de contenido (que se muestran en las estadísticas de búsqueda en el Centro de seguridad & cumplimiento) incluirán una estimación independiente para el número de elementos parcialmente indizados. Por ejemplo, supongamos que la estimación de una búsqueda que incluye todos los elementos (sin palabras clave en la consulta de búsqueda) muestra que se encontraron 1.000 elementos y que también se encontraron 200 elementos parcialmente indizados. En este caso, los 1.000 elementos incluyen los elementos parcialmente indizados porque la búsqueda devuelve todos los elementos. En otras palabras, la búsqueda devuelve un total de 1.000 elementos y no 1.200 elementos (como puede esperar). Si exporta los resultados de esta búsqueda y elige exportar elementos indizados y parcialmente indizados (o exportar solo elementos parcialmente indizados), se descargarán 1.000 elementos. De nuevo, esto se debe a que los elementos parcialmente indizados se incluyen con los resultados normales (indizados) cuando se usa una consulta de búsqueda en blanco para devolver todos los elementos. En este mismo ejemplo, si decide exportar solo elementos parcialmente indizados, solo se descargarán los 200 elementos no indexados.
+    Si exporta los elementos indizados y parcialmente indizados o si exporta solo los elementos indizados de una búsqueda de contenido que devuelve todos los elementos, se descargará el mismo número de elementos. Esto sucede aunque los resultados de búsqueda estimados para la búsqueda de contenido (que se muestran en las estadísticas de búsqueda en el Centro de seguridad & cumplimiento) incluirán una estimación independiente para el número de elementos parcialmente indizados. Por ejemplo, supongamos que la estimación de una búsqueda que incluye todos los elementos (sin palabras clave en la consulta de búsqueda) muestra que se encontraron 1.000 elementos y que también se encontraron 200 elementos parcialmente indizados. En este caso, los 1.000 elementos incluyen los elementos parcialmente indizados porque la búsqueda devuelve todos los elementos. En otras palabras, la búsqueda devuelve un total de 1.000 elementos y no 1.200 elementos (como puede esperar). Si exporta los resultados de esta búsqueda y elige exportar elementos indizados y parcialmente indizados (o exportar solo elementos parcialmente indizados), se descargarán 1.000 elementos. De nuevo, esto se debe a que los elementos parcialmente indizados se incluyen con los resultados normales (indizados) cuando se usa una consulta de búsqueda en blanco para devolver todos los elementos. En este mismo ejemplo, si decide exportar solo elementos parcialmente indizados, solo se descargarían los 200 elementos no indexados.
 
     Tenga en cuenta también que en el ejemplo anterior (al exportar elementos indizados  y parcialmente indizados o exportar solo elementos indizados), el informe De resumen de exportación incluido con los resultados de búsqueda exportados enumeraría 1.000 elementos estimados y 1.000 elementos descargados por los mismos motivos descritos anteriormente. 
 
-- Si la búsqueda de la que exporta los resultados fue una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de la organización, solo se exportarán los elementos parciales de las ubicaciones de contenido que contengan elementos que coincidan con los criterios de búsqueda. En otras palabras, si no se encuentran resultados de búsqueda en un buzón o sitio, no se exportarán los elementos parcialmente indizados de ese buzón o sitio. El motivo de esto es que exportar elementos parcialmente indizados desde muchas ubicaciones de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo necesario para exportar y descargar los resultados de la búsqueda.
+- Si la búsqueda de la que exporta los resultados era una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de la organización, solo se exportarán los elementos parciales de las ubicaciones de contenido que contengan elementos que coincidan con los criterios de búsqueda. En otras palabras, si no se encuentran resultados de búsqueda en un buzón o sitio, no se exportarán los elementos parcialmente indizados de ese buzón o sitio. El motivo de esto es que exportar elementos parcialmente indizados desde muchas ubicaciones de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo necesario para exportar y descargar los resultados de la búsqueda.
 
     Para exportar elementos parcialmente indizados de todas las ubicaciones de contenido de una búsqueda, configure la búsqueda para que devuelva todos los elementos (quitando las palabras clave de la consulta de búsqueda) y, a continuación, exporte solo elementos parcialmente indizados al exportar los resultados de la búsqueda.
 
@@ -305,7 +292,7 @@ Para obtener información acerca de otros límites, vea [Límites de búsqueda d
 
 ### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments"></a>Descifrar mensajes de correo electrónico protegidos por RMS y datos adjuntos de archivos cifrados
 
-Los mensajes de correo electrónico protegidos por derechos (protegidos por RMS) incluidos en los resultados de una búsqueda de contenido se descifrarán al exportarlos. Además, cualquier archivo cifrado con una tecnología de cifrado de [Microsoft](encryption.md) y adjunto a un mensaje de correo electrónico que se incluye en los resultados de la búsqueda también se descifrará cuando se exporte. Esta funcionalidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles administrador de exhibición de documentos electrónicos. Esto se debe a que la función de administración Descifrar RMS se asigna a este grupo de funciones de forma predeterminada. Tenga en cuenta lo siguiente al exportar mensajes de correo electrónico cifrados y datos adjuntos:
+Los mensajes de correo electrónico protegidos por derechos (protegidos por RMS) incluidos en los resultados de una búsqueda de contenido se descifrarán al exportarlos. Además, cualquier archivo que se cifra con una tecnología de cifrado de [Microsoft](encryption.md) y se adjunta a un mensaje de correo electrónico que se incluye en los resultados de la búsqueda también se descifrará cuando se exporte. Esta funcionalidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles administrador de exhibición de documentos electrónicos. Esto se debe a que la función de administración Descifrar RMS se asigna a este grupo de funciones de forma predeterminada. Tenga en cuenta lo siguiente al exportar mensajes de correo electrónico cifrados y datos adjuntos:
   
 - Como se ha explicado anteriormente, para descifrar mensajes protegidos por RMS al exportarlos, debe exportar los resultados de la búsqueda como mensajes individuales. Si exporta los resultados de la búsqueda a un archivo PST, los mensajes protegidos por RMS permanecen cifrados.
 
@@ -331,18 +318,18 @@ Los mensajes de correo electrónico protegidos por derechos (protegidos por RMS)
 
     Para ayudar a mitigar este problema, considere la posibilidad de descargar los resultados de la búsqueda en una ubicación con un nombre de ruta de acceso corto; por ejemplo, descargar los resultados de la búsqueda en una carpeta con nombre agregaría menos caracteres a los nombres de ruta de acceso de los elementos exportados que descargarlos  `C:\Results` en una carpeta denominada  `C:\Users\Admin\Desktop\Results` .
 
-- Al exportar documentos del sitio, también es posible que se modifique el nombre de archivo original de un documento. Esto sucede específicamente para los documentos que se han eliminado de un sitio de SharePoint o de OneDrive para la Empresa que se ha colocado en retención. Después de eliminar un documento que está en un sitio que está en conservación, el documento eliminado se mueve automáticamente a la biblioteca de conservación de documentos del sitio (que se creó cuando el sitio se colocó en retención). Cuando el documento eliminado se mueve a la biblioteca de conservación de documentos, se anexa un identificador único y generado aleatoriamente al nombre de archivo original del documento. Por ejemplo, si el nombre de archivo de un documento es y ese documento se elimina más adelante y se mueve a la biblioteca de conservación de documentos, el nombre de archivo del documento que se mueve a la biblioteca de conservación de documentos se modifica a un valor como  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Si un documento de la biblioteca de conservación de documentos coincide con la consulta de una búsqueda de contenido y exporta los resultados de esa búsqueda, el archivo exportado tiene el nombre de archivo modificado; en este ejemplo, el nombre de archivo del documento exportado sería  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- Al exportar documentos del sitio, también es posible que se modifique el nombre de archivo original de un documento. Esto sucede específicamente para los documentos que se han eliminado de un sitio de SharePoint o de OneDrive para la Empresa que se ha puesto en retención. Después de eliminar un documento que está en un sitio que está en conservación, el documento eliminado se mueve automáticamente a la biblioteca de conservación de documentos del sitio (que se creó cuando el sitio se colocó en retención). Cuando el documento eliminado se mueve a la biblioteca de conservación de documentos, se anexa un identificador único y generado aleatoriamente al nombre de archivo original del documento. Por ejemplo, si el nombre de archivo de un documento es y ese documento se elimina más adelante y se mueve a la biblioteca de conservación de documentos, el nombre de archivo del documento que se mueve a la biblioteca de conservación de documentos se modifica a un valor como  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Si un documento de la biblioteca de conservación de documentos coincide con la consulta de una búsqueda de contenido y exporta los resultados de esa búsqueda, el archivo exportado tiene el nombre de archivo modificado; en este ejemplo, el nombre de archivo del documento exportado sería  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
 
-    Cuando se modifica un documento de un sitio que está en conservación (y se ha habilitado el control de versiones para la biblioteca de documentos del sitio), se crea automáticamente una copia del archivo en la biblioteca de conservación de documentos. En este caso, también se anexa un identificador único y generado aleatoriamente al nombre de archivo del documento que se copia en la biblioteca de conservación de documentos.
+    Cuando se modifica un documento de un sitio que está en retención (y se ha habilitado el control de versiones para la biblioteca de documentos del sitio), se crea automáticamente una copia del archivo en la biblioteca de conservación de documentos. En este caso, también se anexa un identificador único y generado aleatoriamente al nombre de archivo del documento que se copia en la biblioteca de conservación de documentos.
 
-    La razón por la que los nombres de archivo de los documentos que se mueven o copian a la biblioteca de conservación de documentos es evitar nombres de archivo en conflicto. Para obtener más información acerca de cómo colocar una retención en sitios y la biblioteca de conservación de documentos, vea Información general sobre la conservación local en [SharePoint Server 2016.](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95)
+    El motivo por el que los nombres de archivo de los documentos que se mueven o copian a la biblioteca de conservación de documentos es evitar nombres de archivo en conflicto. Para obtener más información acerca de cómo colocar una retención en sitios y la biblioteca de conservación de documentos, vea Información general sobre la conservación local en [SharePoint Server 2016.](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95)
 
 ### <a name="miscellaneous"></a>Varios
   
-- Al descargar los resultados de búsqueda con la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: este es un error transitorio, que normalmente se produce en la ubicación de `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage. Para resolver este problema, vuelva a intentar [descargar los resultados](#step-2-download-the-search-results)de la búsqueda, que reiniciarán la herramienta de exportación de exhibición de documentos electrónicos.
+- Al descargar los resultados de búsqueda con la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: este es un error transitorio, que normalmente se produce en la ubicación de `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage. Para resolver este problema, vuelva a intentar [descargar los resultados](#step-2-download-the-search-results)de la búsqueda, lo que reiniciará la herramienta de exportación de exhibición de documentos electrónicos.
 
 - Todos los resultados de búsqueda y los informes de exportación se incluyen en una carpeta que tiene el mismo nombre que en la búsqueda de contenido. Los mensajes de correo electrónico que se exportaron se ubican en una carpeta denominada **Exchange**. Los documentos se ubican en una carpeta denominada **SharePoint**.
 
-- Los metadatos del sistema de archivos para documentos en sitios de SharePoint y OneDrive para la Empresa se mantienen cuando los documentos se exportan al equipo local. Eso significa que las propiedades del documento, como la fecha de creación y la fecha en la que se modificó por última vez, no cambian cuando se exportan los documentos.
+- Los metadatos del sistema de archivos para documentos en sitios de SharePoint y OneDrive para la Empresa se mantienen cuando los documentos se exportan a su equipo local. Eso significa que las propiedades del documento, como la fecha de creación y la fecha en la que se modificó por última vez, no cambian cuando se exportan los documentos.
 
-- Si los resultados de la búsqueda incluyen un elemento de lista de SharePoint que coincide con la consulta de búsqueda, todas las filas de la lista se exportarán además del elemento que coincida con la consulta de búsqueda y los datos adjuntos de la lista. El motivo de este comportamiento es proporcionar un contexto para los elementos de lista que se devuelven en los resultados de la búsqueda. Tenga en cuenta también que los datos adjuntos y los elementos de lista adicionales pueden hacer que el recuento de elementos exportados sea diferente de la estimación original de los resultados de búsqueda.
+- Si los resultados de la búsqueda incluyen un elemento de lista de SharePoint que coincide con la consulta de búsqueda, todas las filas de la lista se exportarán además del elemento que coincida con la consulta de búsqueda y los datos adjuntos de la lista. El motivo de este comportamiento es proporcionar un contexto para los elementos de lista que se devuelven en los resultados de la búsqueda. Tenga en cuenta también que los datos adjuntos y los elementos de lista adicionales pueden hacer que el recuento de elementos exportados sea diferente de la estimación original de los resultados de la búsqueda.

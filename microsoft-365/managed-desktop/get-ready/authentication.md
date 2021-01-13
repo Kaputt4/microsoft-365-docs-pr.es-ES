@@ -1,6 +1,6 @@
 ---
 title: Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
-description: Pasos importantes para asegurarse de que Azure AD pueda comunicarse con AD local para proporcionar autenticación
+description: Pasos importantes para asegurarse de que Azure AD puede comunicarse con AD local para proporcionar autenticación
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -9,71 +9,71 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c1732dc17188427f9a181d1c47abe71bb8f39584
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289584"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841416"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
 
-En el escritorio administrado de Microsoft, los dispositivos se unen automáticamente a Azure Active Directory (Azure AD). Esto significa que si usa un Active Directory local, tendrá que comprobar algunas cosas para asegurarse de que los dispositivos Unidos a Azure AD puedan comunicarse con su Active Directory local. 
+En el Escritorio administrado de Microsoft, los dispositivos se unen automáticamente a Azure Active Directory (Azure AD). Por este motivo, si usa un Active Directory local, tendrá que comprobar algunas cosas para asegurarse de que los dispositivos unidos a Azure AD se puedan comunicar con su Active Directory local. 
 
 > [!NOTE]  
-> *Entorno híbrido* El escritorio administrado de Microsoft no admite Azure AD join.
+> *Híbrido* La unión a Azure AD no es compatible con el Escritorio administrado de Microsoft.
 
-Azure Active Directory permite a los usuarios aprovechar el inicio de sesión único (SSO), lo que significa que, por lo general, no tendrá que proporcionar credenciales cada vez que usen recursos.
+Azure Active Directory permite a los usuarios aprovechar las ventajas del Sign-On único (SSO), lo que significa que normalmente no tendrán que proporcionar credenciales cada vez que usen recursos.
 
-Para obtener información sobre cómo unirse a Azure Active Directory, consulte [How to: Plan Your Azure ad join Implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Para obtener información general sobre el inicio de sesión único (SSO) en dispositivos Unidos a Azure AD, vea [Cómo SSO a los recursos locales funciona en dispositivos Unidos a Azure ad](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works).
-
-
-En este tema se explican las cosas que debe comprobar para asegurarse de que las aplicaciones y otros recursos que dependen de la conectividad local de Active Directory funcionarán sin problemas con el escritorio administrado de Microsoft.
+Para obtener información sobre cómo unirse a Azure Active Directory, consulte [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Para obtener información general sobre Sign-On de inicio de sesión único (SSO) en dispositivos unidos a Azure AD, vea cómo funciona el SSO en recursos locales en dispositivos unidos a [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
-## <a name="single-sign-on-for-on-premises-resources"></a>Inicio de sesión único para recursos locales
+En este artículo se explican los aspectos que debe comprobar para asegurarse de que las aplicaciones y otros recursos que dependen de la conectividad local de Active Directory funcionarán sin problemas con el Escritorio administrado de Microsoft.
 
-El inicio de sesión único (SSO) mediante UPN y la contraseña están habilitados de forma predeterminada en los dispositivos de escritorio administrados por Microsoft. Pero los usuarios también pueden usar Windows Hello para empresas, que requiere algunos pasos de configuración adicionales. 
 
-### <a name="single-sign-on-by-using-upn-and-password"></a>Inicio de sesión único con UPN y contraseña
+## <a name="single-sign-on-for-on-premises-resources"></a>Único Sign-On para recursos locales
 
-En la mayoría de las organizaciones, los usuarios podrán usar SSO para autenticar por UPN y contraseña en dispositivos de escritorio administrados por Microsoft. Sin embargo, para asegurarse de que funcione correctamente, debe comprobar lo siguiente:
+Single Sign-On (SSO) by using UPN and password is enabled by default on Microsoft Managed Desktop Devices. Pero los usuarios también pueden usar Windows Hello para empresas, lo que requiere algunos pasos de configuración adicionales. 
 
-- Confirme que Azure AD Connect está configurado y usa un servidor local de Active Directory que ejecuta Windows Server 2008 R2 o versiones posteriores.
-- Confirme que Azure AD Connect se ejecuta en una versión compatible y está configurado para sincronizar estos tres atributos con Azure AD: 
-    - Nombre de dominio DNS de Active Directory local (donde se encuentran los usuarios)
-    - NetBIOS de su Active Directory local (donde se encuentran los usuarios)
+### <a name="single-sign-on-by-using-upn-and-password"></a>Configuración Sign-On con UPN y contraseña
+
+En la mayoría de las organizaciones, los usuarios podrán usar SSO para autenticarse mediante UPN y contraseña en dispositivos de escritorio administrados de Microsoft. Sin embargo, para asegurarse de que esta función funcione, debe comprobar dos veces lo siguiente:
+
+- Confirme que Azure AD Connect está configurado y usa un servidor de Active Directory local que ejecute Windows Server 2008 R2 o posterior.
+- Confirma que Azure AD Connect ejecuta una versión compatible y está configurado para sincronizar estos tres atributos con Azure AD: 
+    - Nombre de dominio DNS del Active Directory local (donde se encuentran los usuarios)
+    - NetBIOS del Active Directory local (donde se encuentran los usuarios)
     - Nombre de cuenta SAM del usuario
 
 
-### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Inicio de sesión único con Windows Hello para empresas
+### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Single Sign-On by using Windows Hello for Business
 
-Los dispositivos de escritorio administrados por Microsoft también ofrecen a los usuarios una experiencia rápida y no con contraseñas al usar Windows Hello para empresas. Para garantizar que Windows Hello para empresas funcione sin que los usuarios tengan que proporcionar el UPN y la contraseña respectivos, visite [configurar los dispositivos Unidos a Azure ad para el inicio de sesión único local con Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) para comprobar los requisitos y, a continuación, siga los pasos que se indican allí.
+Los dispositivos de Escritorio administrado de Microsoft también ofrecen a los usuarios una experiencia rápida y sin contraseñas mediante el uso de Windows Hello para empresas. Para asegurarte de que Windows Hello para empresas funcionará sin que los usuarios tengan que proporcionar el UPN y la contraseña respectivos, visita Configurar dispositivos unidos a Azure AD para Single-Sign En el uso de [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) para empresas para comprobar los requisitos y, a continuación, sigue los pasos proporcionados allí.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>Aplicaciones y recursos que usan la autenticación
 
-Consulte [comprender las consideraciones de aplicaciones y recursos](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) en el conjunto de contenido de Azure para obtener instrucciones completas sobre cómo configurar las aplicaciones para que funcionen con Azure Active Directory. En Resumen:
+Consulte Comprender [las consideraciones para aplicaciones y](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) recursos en el conjunto de contenido de Azure para obtener instrucciones detalladas sobre cómo configurar aplicaciones para que funcionen con Azure Active Directory. En resumen:
 
 
-- Si usa **aplicaciones basadas en la nube**, como las que se agregan a la galería de aplicaciones de Azure ad, la mayoría no necesitará más preparación para trabajar con el escritorio administrado de Microsoft. Sin embargo, cualquier aplicación Win32 que no use el administrador de cuentas web (WAM) podría seguir solicitando a los usuarios la autenticación.
+- Si **usas** aplicaciones basadas en la nube, como las que se agregan a la galería de aplicaciones de Azure AD, la mayoría no requieren ninguna preparación adicional para trabajar con escritorio administrado de Microsoft. Sin embargo, cualquier aplicación de Win32 que no use el Administrador de cuentas web (WAM) puede pedir autenticación a los usuarios.
 
-- Para las aplicaciones **hospedadas localmente**, asegúrese de agregar esas aplicaciones a la lista de sitios de confianza en sus exploradores. Esto permitirá que la autenticación de Windows funcione sin problemas, sin que se soliciten las credenciales a los usuarios. Para ello, consulte sitios de [confianza](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) en la [referencia configurable Settings](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref).
+- Para las aplicaciones **hospedadas localmente,** asegúrese de agregar esas aplicaciones a la lista de sitios de confianza en los exploradores. Este paso permitirá que la autenticación de Windows funcione sin problemas, sin que se pidan credenciales a los usuarios. Para agregar aplicaciones, consulte Sitios [de confianza en](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) la referencia de configuración [configurable.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)
 
-- Si usa los servicios federados de Active Directory, compruebe que el SSO esté habilitado mediante los pasos de [Verify and Manage Single Sign-on with AD FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
+- Si usa servicios federados de Active Directory, compruebe que SSO esté habilitado mediante los pasos descritos en Comprobar y administrar el inicio de sesión único [con AD FS.](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)) 
 
-- Para las aplicaciones que son **locales y usan protocolos más antiguos**, no se necesita ninguna configuración adicional, siempre y cuando los dispositivos tengan acceso a un controlador de dominio local para autenticarse. Sin embargo, para proporcionar acceso seguro a estas aplicaciones, debe implementar el proxy de aplicación de Azure AD. Para obtener más información, vea [acceso remoto a aplicaciones locales a través del proxy de aplicación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- Para las aplicaciones que son locales y usan protocolos más **antiguos,** no se requiere ninguna configuración adicional, siempre y cuando los dispositivos tengan acceso a un controlador de dominio local para autenticarse. Sin embargo, para proporcionar acceso seguro a estas aplicaciones, debes implementar Azure AD Application Proxy. Para obtener más información, vea Acceso remoto a aplicaciones locales a través del Proxy de aplicación [de Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
 
-- Las aplicaciones que se ejecutan **de forma local y dependen de la autenticación del equipo** no son compatibles, por lo que se recomienda reemplazarlas por versiones más recientes.
+- Las aplicaciones que **se ejecutan localmente y dependen** de la autenticación del equipo no son compatibles, por lo que debes considerar reemplazarlas por versiones más recientes.
 
 ### <a name="network-shares-that-use-authentication"></a>Recursos compartidos de red que usan autenticación
 
-No es necesario realizar ninguna configuración adicional para que los usuarios tengan acceso a recursos compartidos de red, siempre que los dispositivos tengan acceso a un controlador de dominio local mediante una ruta UNC.
+No se requiere ninguna configuración adicional para que los usuarios tengan acceso a recursos compartidos de red, siempre y cuando los dispositivos tengan acceso a un controlador de dominio local mediante una ruta de acceso UNC.
 
 ### <a name="printers"></a>Impresoras
 
-Los dispositivos de escritorio administrados por Microsoft no se pueden conectar a impresoras publicadas en Active Directory local a menos que haya configurado [la nube híbrida](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
+Los dispositivos de escritorio administrado de Microsoft no pueden conectarse a impresoras que se publican en active directory local a menos que haya configurado [la impresión en la nube híbrida.](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)
 
-Aunque las impresoras no se detectan automáticamente en un entorno solo de nube, los usuarios pueden usar las impresoras locales con la ruta de la impresora o la ruta de la cola de impresión, siempre que los dispositivos tengan acceso a un controlador de dominio local.
+Aunque las impresoras no se pueden detectar automáticamente en un entorno de solo nube, los usuarios pueden usar impresoras locales mediante la ruta de impresora o la ruta de la cola de impresora, siempre y cuando los dispositivos tengan acceso a un controlador de dominio local.
 
 <!--add fuller material on printers when available-->

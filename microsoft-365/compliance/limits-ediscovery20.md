@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indización y los límites de búsqueda en vigor para la solución de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 051c1ce916fcb59ade19120bc25496101d501138
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 8238a86df2d4e6b487571a3c0f9a380d90607729
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796178"
+ms.locfileid: "49799687"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -31,7 +31,7 @@ En este artículo se describen los límites de la solución de eDiscovery avanza
 
 En la tabla siguiente se enumeran los límites de casos y conjuntos de revisión en eDiscovery avanzado.
 
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
 |:-----|:-----|
 |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión de un caso).  <br/> |3 millones <br/> |
 |Tamaño total de archivo por conjunto de carga. Esto incluye la carga que no es de Office 365 en un conjunto de revisión.  <br/> |300 GB <br/> |
@@ -46,7 +46,7 @@ En la tabla siguiente se enumeran los límites de casos y conjuntos de revisión
 
 En la tabla siguiente se enumeran los límites de indización en eDiscovery avanzado.
 
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de caracteres extraídos de un único archivo.  <br/> |10 millones<sup>1</sup> <br/> |
   |Tamaño máximo de un único archivo.   <br/> |100 MB<sup>1</sup> <br/> |
@@ -59,19 +59,19 @@ En la tabla siguiente se enumeran los límites de indización en eDiscovery avan
 
 Los límites descritos en esta sección están  relacionados con el uso de la herramienta de búsqueda en la pestaña Búsquedas para recopilar datos para un caso. Para obtener más información, [vea Recopilar datos para un caso en eDiscovery avanzado.](collecting-data-for-ediscovery.md)
 
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
 |:-----|:-----|
 |Número máximo de buzones o sitios que se pueden buscar en una sola búsqueda.  <br/> |Sin límite  <br/> |
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo.  <br/> |Sin límite  <br/> | 
 |Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10   <br/> | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos operadores y condiciones).  <br/> |**Buzones:** 10.000<br/>**Sitios:** 4.000 al buscar en todos los sitios o 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
-|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo **uno \** _ o _*set \**_. <br/> |3   <br/> |  
+|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **one \** _ o _*set \**_. <br/> |3   <br/> |  
 |Número máximo de variantes devueltas al usar caracteres comodín de prefijo para buscar una frase exacta o cuando se usa un carácter comodín de prefijo y el operador booleano _ *NEAR**.  <br/> |10 000 <sup>3</sup> <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.   <br/> |100  <br/> |
 |Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.  <br/> |1,000  <br/> |
 |Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.<br/> |1,000  <br/> |
 |Número máximo de elementos de sitios de SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa para búsquedas. Se muestran los elementos más recientes.  <br/> |200  <br/> |
-|Número máximo de sitios de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los primeros 200 sitios con más resultados están disponibles para la vista previa.  <br/> |200  <br/> |
+|Número máximo de sitios de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los 200 sitios principales con más resultados están disponibles para la vista previa.  <br/> |200  <br/> |
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas.  <br/> |100  <br/> |
 |Número máximo de elementos encontrados en todos los elementos de buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas.  <br/> |200  <br/> |
 |Número máximo de buzones de carpetas públicas que se pueden obtener una vista previa de los resultados de la búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen elementos que coinciden con la consulta de búsqueda, solo los 500 buzones con más resultados están disponibles para la vista previa.  <br/> |500  <br/> |
@@ -79,14 +79,14 @@ Los límites descritos en esta sección están  relacionados con el uso de la he
 
 ## <a name="viewer-limits"></a>Límites de visor
 
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
 |:-----|:-----|
 |Tamaño máximo del archivo de Excel que se puede ver en el visor nativo.  <br/> |4 MB  <br/> |
 |||
 
 ## <a name="export-limits"></a>Límites de exportación
 
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
 |:-----|:-----|
 |Tamaño máximo de una única exportación.|3 millones de documentos o 100 GB, lo que sea más pequeño|
 |Cantidad máxima de datos en un solo día. | 2 TB |
@@ -98,7 +98,7 @@ Los límites descritos en esta sección están  relacionados con el uso de la he
 
 ## <a name="review-set-download-limits"></a>Revisar los límites de descarga establecidos
 
-|**Descripción del límite**|**Límite**|
+| Descripción del límite | Límite |
 |:-----|:-----|
 |Tamaño total del archivo o número máximo de documentos descargados de un conjunto de revisión.  <br/> |3 MB o 50 documentos <sup>5</sup>|
 |||
@@ -107,10 +107,14 @@ Los límites descritos en esta sección están  relacionados con el uso de la he
 <br/>
 
 > [!NOTE]
-> <sup>1 Cualquier</sup> elemento que supere un único límite de archivos se mostrará como un error de procesamiento.<br/>
-> <sup>2</sup> Al buscar en ubicaciones de SharePoint y OneDrive para la Empresa, los caracteres de las direcciones URL de los sitios en los que se busca tienen en cuenta este límite.<br/>
-> <sup>3</sup> Para consultas que no son frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto nos indica que una palabra se produce en un documento, pero no donde se produce en el documento. Para realizar una consulta de frase (un valor de palabra clave con comillas dobles), debemos comparar la posición dentro del documento de las palabras de la frase. Esto significa que no podemos usar el índice de prefijo para las consultas de frases. En este caso, ampliamos internamente la consulta con todas las palabras posibles a las que se expande el prefijo; por ejemplo, **la hora _ puede \* *expandirse a _*"hora O temporizador O horas O horaX O timeboxed OR ..."**. El límite de 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior.<br/>
-> <sup>4</sup> Este límite se comparte en todas las herramientas de exhibición de documentos electrónicos. Esto significa que las exportaciones simultáneas en búsqueda de contenido, eDiscovery principal y eDiscovery avanzado se aplican a este límite. <br/>
-> <sup>5</sup> Este límite se aplica a la descarga de documentos seleccionados desde un conjunto de revisión. No se aplica a la exportación de documentos desde un conjunto de revisión. Para obtener más información acerca de cómo descargar y exportar documentos, vea Exportar datos [de casos en eDiscovery avanzado.](exporting-data-ediscover20.md) <br/>
-> <sup>6 Límites</sup> de indización por organización y día. Como solución alternativa, puede seleccionar varios administradores y, a continuación, hacer clic en Actualizar índice para evitar crear un trabajo de índice independiente para cada administrador.  <br/>
-
+> <sup>1 Cualquier</sup> elemento que supere un único límite de archivos se mostrará como un error de procesamiento.
+>
+> <sup>2</sup> Al buscar en ubicaciones de SharePoint y OneDrive para la Empresa, los caracteres de las direcciones URL de los sitios en los que se busca tienen en cuenta este límite.
+>
+> <sup>3</sup> Para consultas que no son frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto nos indica que una palabra se produce en un documento, pero no donde se produce en el documento. Para realizar una consulta de frase (un valor de palabra clave con comillas dobles), debemos comparar la posición dentro del documento de las palabras de la frase. Esto significa que no podemos usar el índice de prefijo para las consultas de frases. En este caso, ampliamos internamente la consulta con todas las palabras posibles a las que se expande el prefijo; por ejemplo, **la hora _ puede \* *expandirse a _*"hora O temporizador O horas O horaX O timeboxed OR ..."**. El límite de 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior.
+>
+> <sup>4</sup> Este límite se comparte en todas las herramientas de exhibición de documentos electrónicos. Esto significa que las exportaciones simultáneas en búsqueda de contenido, eDiscovery principal y eDiscovery avanzado se aplican a este límite.
+>
+> <sup>5 Este</sup> límite se aplica a la descarga de documentos seleccionados desde un conjunto de revisión. No se aplica a la exportación de documentos desde un conjunto de revisión. Para obtener más información acerca de cómo descargar y exportar documentos, vea Exportar datos [de casos en eDiscovery avanzado.](exporting-data-ediscover20.md)
+>
+> <sup>6 Límites</sup> de indización por organización y día. Como solución alternativa, puede seleccionar varios  administradores en la pestaña  Orígenes de datos en un caso y, a continuación, hacer clic en Actualizar índice para evitar crear un trabajo de índice independiente para cada administrador. 
