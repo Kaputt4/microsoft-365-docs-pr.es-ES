@@ -1,5 +1,5 @@
 ---
-title: Trabajar con plantillas de evaluación en el administrador de cumplimiento de Microsoft
+title: Trabajar con plantillas de evaluación en el Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,218 +13,225 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Aprenda a usar y administrar plantillas para crear evaluaciones en el administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo de Excel con formato.
-ms.openlocfilehash: cc3092e486e4f25fa1edad1ff64e638410cf3a63
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en el Administrador de cumplimiento de Microsoft. Crear y modificar plantillas con un archivo de Excel con formato.
+ms.openlocfilehash: 34adb79392b235152cc0e00f5b7d661e90c9005e
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791816"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849614"
 ---
-# <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el administrador de cumplimiento
+# <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
-**En este artículo:** Comprenda **Cómo funcionan las plantillas** y **Cómo administrarlas** desde la página de plantillas de evaluación. Obtenga instrucciones para **crear** plantillas nuevas, **modificar** plantillas existentes, **dar formato a los datos de plantilla con Excel** y exportar **informes** de plantillas.
+**En este artículo:** Comprenda **cómo funcionan las plantillas** y cómo **administrarlas desde** la página de plantillas de evaluación. Obtenga instrucciones para **crear nuevas** plantillas, modificar **plantillas** existentes, dar formato a los datos de la plantilla con **Excel** y exportar informes de **plantillas.**
 
 > [!IMPORTANT]
-> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](https://go.microsoft.com/fwlink/?linkid=2132371).
+> Las plantillas de evaluación que están disponibles para su organización dependen de su contrato de licencia. [Revise los detalles.](https://go.microsoft.com/fwlink/?linkid=2132371)
 
-## <a name="templates-overview"></a>Información general de plantillas
+## <a name="templates-overview"></a>Introducción a las plantillas
 
-Una plantilla es un marco para crear una evaluación en el administrador de cumplimiento. Contienen los controles para cumplir con los requisitos de una certificación que usa un producto determinado. El administrador de cumplimiento proporciona un conjunto completo de plantillas para ayudar a su organización a cumplir con los requisitos nacionales, regionales y de la industria que rigen la recopilación y el uso de los datos.
+Una plantilla es un marco para crear una evaluación en el Administrador de cumplimiento. Contienen los controles para cumplir los requisitos de una certificación mediante un producto determinado. El Administrador de cumplimiento proporciona un conjunto completo de plantillas para ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
 
 ## <a name="list-of-pre-built-templates-for-assessments"></a>Lista de plantillas predefinidas para evaluaciones
 
-El administrador de cumplimiento proporciona plantillas para crear evaluaciones que le ayuden a cumplir con diversas regulaciones y estándares. Ver la [lista de plantillas](compliance-manager-templates-list.md) que proporciona el administrador de cumplimiento. Las plantillas nuevas se agregan de forma regular, así que consulte la lista con frecuencia.
+El Administrador de cumplimiento proporciona plantillas para crear evaluaciones que le ayudarán a cumplir con diversas normativas y estándares. Ver la [lista de plantillas proporcionada](compliance-manager-templates-list.md) por el Administrador de cumplimiento. Las nuevas plantillas se agregan con regularidad, por lo que consulta la lista con frecuencia.
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Visualización y administración de plantillas desde la página plantillas de evaluación
 
-La página plantillas de evaluación del administrador de cumplimiento muestra una lista de plantillas y los detalles clave. La lista incluye las plantillas proporcionadas por el administrador de cumplimiento, así como todas las plantillas que la organización haya modificado o creado. Puede aplicar filtros para buscar una plantilla basada en la certificación, el ámbito del producto, el país, la industria, el usuario que la ha creado y si la plantilla está habilitada para la creación de la evaluación.
+La página plantillas de evaluación del Administrador de cumplimiento muestra una lista de plantillas y detalles clave. La lista incluye plantillas proporcionadas por el Administrador de cumplimiento, así como cualquier plantilla que la organización haya modificado o creado. Puede aplicar filtros para buscar una plantilla basada en la certificación, el ámbito del producto, el país, la industria, quién la creó y si la plantilla está habilitada para la creación de evaluaciones.
 
-Seleccione una plantilla de la fila para que aparezca la página de detalles. Esta página contiene una descripción de la plantilla e información adicional acerca de los detalles de certificación, ámbito y controles. En esta página, puede seleccionar los botones apropiados para crear una evaluación, exportar los datos de la plantilla a Excel o modificar la plantilla.
+Seleccione una plantilla de su fila para mostrar su página de detalles. Esta página contiene una descripción de la plantilla y más información sobre la certificación, el ámbito y los detalles de los controles. En esta página puede seleccionar los botones adecuados para crear una evaluación, exportar los datos de plantilla a Excel o modificar la plantilla.
 
-## <a name="creating-and-modifying-templates-overview"></a>Información general sobre la creación y modificación de plantillas
+## <a name="creating-and-modifying-templates-overview"></a>Introducción a la creación y modificación de plantillas
 
-Para modificar una plantilla existente o crear una nueva, use una hoja de cálculo de Excel con formato especial ([Descargue un ejemplo](https://go.microsoft.com/fwlink/?linkid=2124865)) para ensamblar los datos de control necesarios. Después de completar la hoja de cálculo, debe importarla en el administrador de cumplimiento durante el proceso de creación o modificación de una plantilla.
+Para modificar una plantilla existente o crear su propia plantilla nueva, usará una hoja de cálculo de Excel con formato especial[(descargue](https://go.microsoft.com/fwlink/?linkid=2124865)un ejemplo) para ensamblar los datos de control necesarios. Después de completar la hoja de cálculo, se importa al Administrador de cumplimiento durante el proceso de creación o modificación de una plantilla.
 
 > [!NOTE]
-> La hoja de cálculo tiene un formato y un esquema específicos que deben usarse, o no se importará correctamente en el administrador de cumplimiento. Las [instrucciones de formato](#formatting-your-template-data-with-excel) se encuentran a continuación.
+> La hoja de cálculo tiene un formato y un esquema específicos que deben usarse o no se importarán correctamente en el Administrador de cumplimiento. A [continuación se muestran las instrucciones de](#formatting-your-template-data-with-excel) formato.
 
-**Roles necesarios**
+**Roles obligatorios**
 
-Solo los usuarios que tienen un rol de administrador global o de administrador de cumplimiento pueden crear y modificar plantillas. Obtenga más información sobre [los roles y los permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Solo los usuarios que tienen un rol de administrador global o de administración del Administrador de cumplimiento pueden crear y modificar plantillas. Obtenga más información [sobre roles y permisos.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
 
 ## <a name="create-a-new-template"></a>Crear una nueva plantilla
 
-Para crear su propia plantilla (que se usa para crear evaluaciones personalizadas), siga los pasos que se indican a continuación.
+Para crear su propia plantilla (usada para crear evaluaciones personalizadas), siga los pasos siguientes.
 
-1. Vaya a la página de **plantillas de evaluación** en el administrador de cumplimiento.
-2. Seleccione **crear nueva plantilla** . Se abrirá un asistente para la creación de plantillas.
-3. Elija el tipo de plantilla que desea crear. En este caso, seleccione **crear una plantilla personalizada** y, a continuación, seleccione **siguiente** .
-4. En la pantalla **Cargar archivo** , seleccione **examinar** para buscar y cargar el archivo de Excel con formato que contiene todos los datos de plantilla necesarios (consulte las [instrucciones para aplicar el formato adecuado al archivo](#formatting-your-template-data-with-excel)).
-5. Si no hay problemas con el archivo, se mostrará el nombre del archivo cargado. Seleccione **siguiente** para continuar. (Si necesita cambiar el archivo, seleccione **cargar un archivo diferente** ).
-    - Si hay un error en el archivo, un mensaje de error en la parte superior explica lo que es incorrecto. Deberá corregir el archivo y cargarlo de nuevo. Se producirán errores si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos (consulte de nuevo las [instrucciones de formato](#formatting-your-template-data-with-excel)).  
+1. Vaya a la página **plantillas de evaluación** en el Administrador de cumplimiento.
+2. Seleccione **Crear nueva plantilla.** Se abrirá un asistente para la creación de plantillas.
+3. Elija el tipo de plantilla que desea crear. En este caso, seleccione **Crear una plantilla personalizada** y, a continuación, seleccione **Siguiente**.
+4. En la **pantalla Cargar** archivo, seleccione Examinar para buscar y cargar el archivo de Excel con formato que contiene todos los datos de plantilla necesarios (vea las instrucciones para dar el formato [correcto al archivo).](#formatting-your-template-data-with-excel) 
+5. Si no hay problemas con el archivo, se mostrará el nombre del archivo cargado. Seleccione **Siguiente** para continuar. (Si necesita cambiar el archivo, seleccione **Cargar un archivo diferente).**
+    - Si hay un error en el archivo, un mensaje de error en la parte superior explica el problema. Tendrás que corregir el archivo y cargarlo de nuevo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos (consulte de nuevo las instrucciones [de formato).](#formatting-your-template-data-with-excel)  
     
-6. La pantalla **revisión y finalización** muestra el número de acciones de mejora y los controles y la puntuación máxima para la plantilla. Cuando esté listo para aprobar, seleccione **Crear plantilla.** (Si necesita realizar cambios, seleccione **atrás** ).
-7. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **listo** para salir del asistente.
-8. Llegará a la página de detalles de la nueva plantilla, donde podrá [crear la evaluación](compliance-manager-assessments.md#create-your-own-custom-assessment).
+6. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Crear plantilla.** (Si necesita realizar cambios, seleccione **Atrás).**
+7. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
+8. You'll arrive at your new template's details page, where you can [create your assessment](compliance-manager-assessments.md#create-your-own-custom-assessment).
 
 ## <a name="formatting-your-template-data-with-excel"></a>Dar formato a los datos de la plantilla con Excel
 
-La hoja de cálculo de Excel utilizada para crear plantillas contiene cuatro pestañas, tres de las cuales son necesarias:
+La hoja de cálculo de Excel usada para crear plantillas contiene cuatro pestañas, tres de las cuales son necesarias:
 
 1. [Plantilla](#template-tab) (obligatorio)
 2. [ControlFamily](#controlfamily-tab) (obligatorio)
 3. [Acciones](#actions-tab) (obligatorio)
 4. [Dimensiones](#dimensions-tab) (opcional)
 
-Al rellenar la hoja de cálculo con datos de plantilla, la hoja  **de cálculo debe incluir las pestañas en el orden indicado anteriormente** ; de lo contrario, los datos no se importarán correctamente a una plantilla.
+Al rellenar la hoja de cálculo con datos de plantilla, la hoja de cálculo debe incluir las  **pestañas** en el orden indicado anteriormente; de lo contrario, los datos no se importarán correctamente a una plantilla.
 
-##### <a name="template-tab"></a>Ficha plantilla
+##### <a name="template-tab"></a>Pestaña Plantilla
 
-La ficha **plantilla** es obligatoria. La información de esta ficha proporciona metadatos sobre la plantilla. Hay cuatro columnas obligatorias. Las columnas deben conservar el orden en la hoja de cálculo de Excel como se indica a continuación. Puede agregar su propia columna **después** de las cuatro columnas para proporcionar sus propias dimensiones. Si hace esto, asegúrese de agregarlos a la pestaña **dimensiones** siguiendo las instrucciones que se [indican a continuación](#dimensions-tab).
+La **pestaña** Plantilla es obligatoria. La información de esta pestaña proporciona metadatos sobre la plantilla. Hay cuatro columnas necesarias. Las columnas deben conservar el orden en la hoja de Excel, como se muestra a continuación. Puede agregar su propia columna después **de las** cuatro columnas para proporcionar sus propias dimensiones. Si hace esto, asegúrese de agregarlos a la pestaña **Dimensiones** con las [instrucciones siguientes.](#dimensions-tab)
 
-- **title** : el título de la plantilla, que debe ser único. No puede compartir un nombre con otra plantilla que tenga en el administrador de cumplimiento, incluidas sus propias plantillas o una plantilla del administrador de cumplimiento.
+- **title:** este es el título de la plantilla, que debe ser único. No puede compartir un nombre con otra plantilla que tenga en el Administrador de cumplimiento, incluidas sus propias plantillas o una plantilla del Administrador de cumplimiento.
 
-- **producto** : es una dimensión requerida. Enumerar el producto asociado a la plantilla.
+- **product:** se trata de una dimensión necesaria. Enumerar el producto asociado a la plantilla.
 
-- **certificación** : esta es la regla que está usando para la plantilla.
+- **certificación:** este es el reglamento que usa para la plantilla.
 
-- **inScopeServices** : Estos son los servicios del producto que trata esta evaluación (por ejemplo, si ha incluido Office 365 como producto, Microsoft Teams podría ser un servicio dentro del ámbito). Puede enumerar varios servicios separados por dos puntos y comas.
+- **inScopeServices:** estos son los servicios del producto que se abordan en esta evaluación (por ejemplo, si enumeró Office 365 como el producto, Microsoft Teams podría ser un servicio en el ámbito). Puede enumerar varios servicios separados por dos puntos y coma.
 
 > [!NOTE]
-> Los datos que se insertan en las celdas **producto** y **certificación** no se pueden editar después de importar la hoja de cálculo para crear o personalizar una plantilla. Además, un grupo no puede contener dos evaluaciones que tengan la misma combinación **producto/certificación** . Puede tener varias plantillas con la misma combinación producto/certificación.
+> Los datos que inserte  en el producto **y** las celdas de certificación no se pueden editar después de importar la hoja de cálculo para crear o personalizar una plantilla. Además, un grupo no puede contener dos evaluaciones que tengan la misma combinación **de producto y** certificación. Puede tener varias plantillas con la misma combinación de producto y certificación.
 
 ##### <a name="controlfamily-tab"></a>Pestaña ControlFamily
 
-La ficha **ControlFamily** es obligatoria.  Las columnas necesarias en esta ficha, que deben seguir el orden proporcionado en la hoja de cálculo de muestra, son:
+Se **requiere la pestaña ControlFamily.**  Las columnas necesarias de esta pestaña, que deben seguir el orden proporcionado en la hoja de cálculo de ejemplo, son:
 
-- **nombrecontrol** : es el nombre del control de la certificación, el estándar o la regla, que suele ser algún tipo de identificador. Los nombres de los controles deben ser únicos dentro de una plantilla. No puede tener varios controles con el mismo nombre en la hoja de cálculo.
+- **controlName:** este es el nombre del control de la certificación, estándar o reglamento, que suele ser algún tipo de identificador. Los nombres de control deben ser únicos dentro de una plantilla. No puede tener varios controles con el mismo nombre en la hoja de cálculo.
 
-- **controlFamily** : proporcione una palabra o frase para controlFamily, que identifica una amplia agrupación de controles. Un controlFamily no tiene que ser único; puede aparecer más de una vez en una hoja de cálculo. El mismo controlFamily también puede aparecer en varias plantillas, aunque no tienen relación entre sí. Cada controlFamily debe asignarse a al menos un control.
+- **controlFamily:** proporciona una palabra o frase para el controlFamily, que identifica una amplia agrupación de controles. Un controlFamily no tiene que ser único; puede aparecer más de una vez en una hoja de cálculo. El mismo controlFamily también se puede enumerar en varias plantillas, aunque no tienen relación entre sí. Cada controlFamily debe asignarse a al menos un control.
 
-- **controlTitle** : proporcione un título para el control. Mientras que nombrecontrol es un código de referencia, el título es un formato de texto enriquecido que normalmente aparece en las regulaciones.
+- **controlTitle**: proporcionar un título para el control. Mientras que controlName es un código de referencia, el título es un formato de texto enriquecido que normalmente se ve en las regulaciones.
 
-- **controlDescription** : proporcione una descripción del control.
+- **controlDescription:** proporcionar una descripción del control.
 
-- **controlActionTitle** : es el título de una acción que desea relacionar con este control. Puede agregar varias acciones separando dos puntos y coma sin espacio entre ellas. Cada control que lista debe incluir al menos una acción y la acción debe existir (lo que significa que puede enumerar una acción que se enumera en la ficha **acciones** de la misma hoja de cálculo, una acción que existe en otra plantilla o una acción creada por Microsoft). Los diferentes controles pueden hacer referencia a la misma acción.
+- **controlActionTitle:** este es el título de una acción que desea relacionar con este control. Puede agregar varias acciones separando dos puntos y coma sin espacio entre ellos. Cada control que enumera debe incluir al menos una acción y la acción debe existir  (lo que significa que puede enumerar una acción que se muestra en la ficha Acciones de la misma hoja de cálculo, una acción que existe en una plantilla diferente o una acción creada por Microsoft). Diferentes controles pueden hacer referencia a la misma acción.
 
-##### <a name="actions-tab"></a>Ficha acciones
+##### <a name="actions-tab"></a>Pestaña Acciones
 
-La ficha **acciones** es obligatoria.  Designa acciones de mejora administradas por la organización y no las de Microsoft, que ya existen en el administrador de cumplimiento. Las columnas necesarias para esta ficha, que deben seguir el orden proporcionado en la hoja de cálculo de muestra, son:
+La **pestaña** Acciones es obligatoria.  Designa las acciones de mejora administradas por su organización y no las de Microsoft, que ya existen en el Administrador de cumplimiento. Las columnas necesarias para esta pestaña, que deben seguir el orden proporcionado en la hoja de cálculo de ejemplo, son:
 
-- **actionTitle** : se trata del título de la acción y es un campo obligatorio. El título que proporcione debe ser único. **Importante** : Si hace referencia a una acción que ya existe (como en otra plantilla) y modifica cualquiera de sus elementos en las columnas siguientes, dichos cambios se propagarán a la misma acción en otras plantillas.
+- **actionTitle:** este es el título de la acción y es un campo obligatorio. El título que proporciones debe ser único. **Importante:** si hace referencia a una acción de su propiedad que ya existe (como en otra plantilla) y modifica cualquiera de sus elementos en las columnas posteriores, esos cambios se propagarán a la misma acción en otras plantillas.
 
-- **implementationType** : en este campo obligatorio, enumere uno de los tres tipos de implementación siguientes:
-    - Acciones **operativas** implementadas por personas y procesos para proteger la confidencialidad, la integridad y la disponibilidad de los sistemas, los datos y el personal de la organización (ejemplo: reconocimiento y formación de seguridad)
-    - Acciones **técnicas** realizadas mediante el uso de tecnología y mecanismos contenidos en los componentes de hardware, software o firmware del sistema de información para proteger la confidencialidad, la integridad y la disponibilidad de los datos y sistemas de la organización (ejemplo: multi-factor Authentication)
-    - **Documentación** : acciones que se implementan mediante directivas y procedimientos documentados que establecen y definen los controles necesarios para proteger la confidencialidad, integridad y disponibilidad de los sistemas, datos y personal de la organización (ejemplo: una directiva de seguridad de la información)
+- **implementationType:** en este campo obligatorio, enumera uno de los tres tipos de implementación siguientes:
+    - **Operativo:** acciones implementadas por personas y procesos para proteger la confidencialidad, integridad y disponibilidad de los sistemas, activos, datos y personal de la organización (por ejemplo, formación y reconocimiento de seguridad)
+    - **Técnicas:** acciones realizadas mediante el uso de tecnología y mecanismos contenidos en los componentes de hardware, software o firmware del sistema de información para proteger la confidencialidad, integridad y disponibilidad de los datos y sistemas organizativos (ejemplo: autenticación multifactor)
+    -  Documentación: acciones implementadas a través de directivas y procedimientos documentados que establecen y definen los controles necesarios para proteger la confidencialidad, integridad y disponibilidad de los sistemas, activos, datos y personal de la organización (por ejemplo, una directiva de seguridad de la información)
 
-- **actionScore** : en este campo obligatorio, especifique un valor de puntuación numérica para la acción. Debe ser un número entero comprendido entre 1 y 99; no puede ser 0, nulo o en blanco. Cuanto mayor sea el número, mayor será su valor hacia la mejora de la postura de cumplimiento. La imagen siguiente muestra cómo el administrador de cumplimiento puntúa los controles:
+- **actionScore:** en este campo obligatorio, proporcione un valor de puntuación numérico para la acción. Debe ser un número entero que va de 1 a 99; no puede ser 0, nulo o en blanco. Cuanto mayor sea el número, mayor será su valor para mejorar la posición de cumplimiento. La siguiente imagen muestra cómo el Administrador de cumplimiento puntua los controles:
 
-![Valores de punto de controles del administrador de cumplimiento](../media/compliance-score-action-scoring.png "Valores de punto de controles del administrador de cumplimiento")
+![El Administrador de cumplimiento controla los valores de puntos](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
 
-- **actionDescriptionTitle** : es el título de la descripción y es obligatorio. Este título de Descripción le permite tener la misma acción en varias plantillas y exponer una descripción diferente en cada plantilla.  Este campo ayuda a clarificar a qué plantilla hace referencia la descripción. En la mayoría de los casos, puede poner el nombre de la plantilla que está creando en este campo.
+- **actionDescriptionTitle**: este es el título de la descripción y es obligatorio. Este título de descripción te permite tener la misma acción en varias plantillas y mostrar una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar la plantilla a la que hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que está creando en este campo.
 
-- **actionDescription** : proporcione una descripción de la acción. Puede aplicar formato como texto en negrita e hipervínculos. Este campo es obligatorio.
+- **actionDescription:** proporcione una descripción de la acción. Puede aplicar formato, como texto en negrita e hipervínculos. Este campo es obligatorio.
 
-- **dimensión-acción propósito** : este es un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "Dimension-". Las dimensiones que incluya aquí se utilizarán como filtros en el administrador de cumplimiento y aparecerán en la página de detalles de acciones de mejora en el administrador de cumplimiento.
+- **dimension-Action Purpose:** este es un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "dimension-". Las dimensiones que incluya aquí se usarán como filtros en el Administrador de cumplimiento y aparecerán en la página de detalles de acciones de mejora en el Administrador de cumplimiento.
 
-##### <a name="dimensions-tab"></a>Pestaña dimensiones
+##### <a name="dimensions-tab"></a>Pestaña Dimensiones
 
-La pestaña **dimensiones** es opcional. Sin embargo, si hace referencia a una dimensión en otro lugar, debe especificarla aquí si no existe en una plantilla que ya ha creado o en una plantilla de Microsoft. A continuación se enumeran las columnas de esta pestaña:
+La **pestaña Dimensiones** es opcional. Sin embargo, si hace referencia a una dimensión en otro lugar, debe especificarla aquí si no existe en una plantilla que ya ha creado o en una plantilla de Microsoft. Las columnas de esta pestaña se enumeran a continuación:
 
-- **dimensionKey** : List como "producto", "certificaciones", "propósito de la acción"
-- **dimensionValue** : ejemplos: Office 365, HIPPA, preventivo, detective
+- **dimensionKey:** list as "product", "certifications", "action purpose"
+- **dimensionValue**: ejemplos: Office 365, HIPPA, Preventative, Inspector
 
-Puede ver las dimensiones existentes yendo a administración de **inquilinos** y seleccionando la pestaña **dimensiones** . Además, cada vez que exporte una plantilla existente, la hoja de cálculo exportada tendrá la ficha **dimensiones** , que enumera todas las dimensiones utilizadas en la plantilla.
+Para ver las dimensiones existentes, vaya a **Administración de** inquilinos y seleccione la **pestaña** Dimensiones. Además, cada vez que exporte una plantilla  existente, la hoja de cálculo exportada tendrá la pestaña Dimensiones, que enumera todas las dimensiones usadas en la plantilla.
 
 ## <a name="modify-a-template"></a>Modificar una plantilla
 
-Es posible que desee modificar una plantilla que ya ha creado, como agregar controles o agregar o quitar acciones de mejora. El proceso es similar al proceso de creación de plantillas en el que se cargará un archivo de Excel con formato con los datos de la plantilla.
+Es posible que desee modificar una plantilla que ya ha creado, como agregar controles, o agregar o quitar acciones de mejora. El proceso es similar al proceso de creación de plantillas, ya que cargará un archivo de Excel con formato con los datos de la plantilla.
 
-Sin embargo, hay detalles específicos que debe tener en cuenta a medida que da formato al archivo con los cambios realizados en los datos de la plantilla existente. **Le recomendamos que revise atentamente estas instrucciones para asegurarse de no sobrescribir los datos existentes que desee conservar.**
+Sin embargo, hay detalles concretos que debe tener en cuenta al dar formato al archivo con cambios en los datos de plantilla existentes. **Te recomendamos que revises estas instrucciones cuidadosamente para asegurarte de que no sobrescriba los datos existentes que quieras conservar.**
 
-### <a name="template-modification-process-steps"></a>Pasos del proceso de modificación de plantillas
+### <a name="template-modification-process-steps"></a>Pasos del proceso de modificación de plantilla
 
-Para modificar una plantilla, siga los pasos que se indican a continuación:
+Para modificar una plantilla, siga los pasos siguientes:
 
-1. En la página de **plantillas de evaluación** , seleccione la plantilla que desea modificar, que mostrará la página de detalles.
-2. Seleccione **exportar a Excel** . Se descargará un archivo de Excel con todos los datos de la plantilla. Guarde el archivo en el equipo local.
-3. Haga los cambios en la plantilla [modificando el archivo de Excel siguiendo las instrucciones que se indican a continuación](#formatting-your-excel-file-to-modify-a-template).
+1. En la **página de plantillas de** evaluación, seleccione la plantilla que desea modificar, que mostrará su página de detalles.
+2. Seleccione **Exportar a Excel**. Se descargará un archivo de Excel con todos los datos de la plantilla. Guarda el archivo en el equipo local.
+3. Realice los cambios de plantilla [modificando el archivo de Excel con las instrucciones siguientes.](#formatting-your-excel-file-to-modify-a-template)
 4. Cuando haya terminado de realizar cambios en el archivo de Excel, guarde el archivo.
-5. En la página de detalles de la plantilla, seleccione **modificar plantilla** para iniciar el Asistente para modificación. 
-6. En la pantalla **Cargar archivo** , seleccione **examinar** para buscar y cargar el archivo de Excel.
-7. Si no hay problemas con el archivo, en la pantalla siguiente se muestra el nombre del archivo cargado. Seleccione **siguiente** para continuar (si necesita cambiar el archivo, seleccione **cargar un archivo diferente** ).
-    - Si hay un problema con el archivo, un mensaje de error en la parte superior explica lo que es incorrecto. Deberá corregir el archivo y cargarlo de nuevo. Se producirán errores si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
+5. En la página de detalles de la plantilla, seleccione **Modificar plantilla** para iniciar el asistente para modificación. 
+6. En la **pantalla Cargar archivo,** seleccione **Examinar** para buscar y cargar el archivo de Excel.
+7. Si no hay problemas con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, seleccione **Cargar un archivo diferente).**
+    - Si hay un problema con el archivo, un mensaje de error en la parte superior explica el problema. Tendrás que corregir el archivo y cargarlo de nuevo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
 
-8. La pantalla **revisión y finalización** muestra el número de acciones de mejora y los controles y la puntuación máxima para la plantilla. Cuando esté listo para aprobar, seleccione **siguiente** .
-9. La última pantalla confirma que se ha modificado la plantilla. Seleccione **listo** para salir del asistente.
+8. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**.
+9. La última pantalla confirma que se ha modificado la plantilla. Seleccione **Listo** para salir del asistente.
 
-La plantilla incluirá ahora los cambios realizados. Las evaluaciones que usen esta plantilla modificada mostrarán ahora actualizaciones pendientes y tendrá que aceptar las actualizaciones de las evaluaciones para reflejar los cambios realizados en la plantilla. Obtenga más información sobre [las actualizaciones a las evaluaciones](compliance-manager-assessments.md#accepting-updates-to-assessments).
+La plantilla incluirá ahora los cambios realizados. Las evaluaciones que usen esta plantilla modificada ahora mostrarán actualizaciones pendientes y tendrás que aceptar las actualizaciones de las evaluaciones para reflejar los cambios realizados en la plantilla. Obtenga más información sobre [las actualizaciones de las evaluaciones.](compliance-manager-assessments.md#accepting-updates-to-assessments)
 
 > [!NOTE]
-> Si usa el administrador de cumplimiento en un idioma que no sea el inglés, se dará cuenta de que parte del texto aparece en inglés cuando se exporta una plantilla a Excel. Los títulos de las acciones (tanto las acciones de mejora como las acciones de Microsoft) deben estar en inglés para que las reconozcan los controles. Si realiza cambios en un título de acción, asegúrese de escribirlo en inglés para que el archivo se importe correctamente.
+> Si usa el Administrador de cumplimiento en un idioma distinto del inglés, observará que parte del texto aparece en inglés al exportar una plantilla a Excel. Los títulos de las acciones (tanto las acciones de mejora como las acciones de Microsoft) deben estar en inglés para que los controles los reconozcan. Si realiza cambios en un título de acción, asegúrese de escribirlo en inglés para que el archivo se importe correctamente.
 
 ### <a name="formatting-your-excel-file-to-modify-a-template"></a>Dar formato al archivo de Excel para modificar una plantilla
 
-Saltar a una sección a continuación para encontrar rápidamente las instrucciones necesarias:
+Vaya a una sección a continuación para encontrar rápidamente las instrucciones que necesita:
 
-- [Edición de los atributos principales de la plantilla](#edit-the-main-template-attributes)
-- [Adición de una acción de mejora](#add-an-improvement-action)
+- [Editar los atributos de la plantilla principal](#edit-the-main-template-attributes)
+- [Agregar una acción de mejora](#add-an-improvement-action)
 - [Editar la información de una acción de mejora](#edit-an-improvement-actions-information)
 - [Cambiar el nombre de una acción de mejora](#change-an-improvement-actions-name)
 - [Quitar una acción de mejora](#remove-an-improvement-action)
 - [Quitar un control](#remove-a-control)
 
-#### <a name="edit-the-main-template-attributes"></a>Edición de los atributos principales de la plantilla
+#### <a name="edit-the-main-template-attributes"></a>Editar los atributos de la plantilla principal
 
-En la ficha **plantillas** , puede modificar cualquier cosa en la columna **título** , la columna **inScopeServices** y en cualquier otra columna que haya agregado. Sin embargo, no puede editar nada en las columnas **producto** o **certificación** .
+En la **pestaña** Plantillas, puede  editar cualquier elemento de la columna de título, la columna **inScopeServices** y cualquier otra columna que haya agregado. Sin embargo, no puede editar nada en las columnas **de** producto **o** certificación.
 
-#### <a name="add-an-improvement-action"></a>Adición de una acción de mejora
+#### <a name="add-an-improvement-action"></a>Agregar una acción de mejora
 
-1. Vaya a la ficha **acciones** . Agregue la información en los campos obligatorios de la primera fila vacía debajo de las acciones existentes.
-2. Vaya a la pestaña **ControlFamily** . Busque la fila que contiene el control al que se asigna la acción de mejora. Agregue la nueva acción a la columna **controlActionTitle** de esa fila (Recuerde que debe separar varias acciones en este campo con dos puntos y comas, sin espacio entre ellas).
+1. Vaya a la **pestaña** Acciones. Agregue la información en los campos obligatorios de la primera fila vacía debajo de las acciones existentes.
+2. Ve a la **pestaña ControlFamily.** Busca la fila que contiene el control al que se asigna la acción de mejora. Agregue la nueva acción a la **columna controlActionTitle** de esa fila (recuerde separar varias acciones en este campo con dos puntos y coma, sin espacio entre ellos).
 3. Guarde la hoja de cálculo.
 
 #### <a name="edit-an-improvement-actions-information"></a>Editar la información de una acción de mejora
 
-Puede cambiar la información de la acción de mejora *excepto el título* . Puede editar cualquier celda de las columnas B o o cuando vuelva a importar el archivo a la plantilla, las acciones de mejora de esa plantilla ahora contendrán los datos actualizados.
+Puede cambiar la información de cualquier acción de mejora *excepto por su título.* Puede editar cualquier celda de las columnas B en adelante y, al importar el archivo de nuevo a la plantilla, las acciones de mejora de esa plantilla ahora contendrán los datos actualizados.
 
-No se puede editar la **actionTitle** (columna A) porque, si lo hace, el administrador de cumplimiento considera que esta es una nueva acción de mejora. Si desea cambiar el nombre de una acción de mejora, consulte las instrucciones que se indican a continuación.
+No puede editar **actionTitle** (columna A) porque, si lo hace, el Administrador de cumplimiento considera que se trata de una nueva acción de mejora. Si desea cambiar el nombre de una acción de mejora, vea las instrucciones que aparecen inmediatamente a continuación.
 
 #### <a name="change-an-improvement-actions-name"></a>Cambiar el nombre de una acción de mejora
 
 Si desea cambiar el nombre de una acción de mejora, debe designar explícitamente en la hoja de cálculo que va a reemplazar un nombre existente por un nombre nuevo. Siga estos pasos:
 
-1. En la ficha **acciones** de la hoja de cálculo, agregue una nueva columna a la hoja de cálculo después de la columna a.
-2. En esta nueva columna, que ahora es la columna B, Put como encabezado en la fila 1: **oldActionTitle** .
-3. Copie el contenido de la columna A y péguelos en la columna B. Esto hace que los títulos de acciones de mejora existentes, que son lo que desea cambiar, se coloquen en la columna B.
-4. En la columna A, **actionTitle** , elimine el nombre antiguo y reemplácelo con el nuevo nombre para la acción de mejora.
+1. En la **pestaña Acciones** de la hoja de cálculo, agregue una nueva columna a la hoja de cálculo después de la columna A.
+2. En esta nueva columna, que ahora es la columna B, se coloca como su encabezado en la fila 1: **oldActionTitle**.
+3. Copie el contenido de la columna A y péguelo en la columna B. Esto coloca los títulos de acción de mejora existentes, que son los que desea cambiar, en la columna B.
+4. En la columna A, **actionTitle**, elimine el nombre antiguo y reempláelo por el nuevo nombre de la acción de mejora.
 
-Tenga en cuenta que los títulos de acción, tanto para las acciones de mejora como para las acciones de Microsoft, deben escribirse en inglés para que se reconozcan cuando se haga referencia a ellos en los controles.
+Ten en cuenta que los títulos de las acciones, tanto para las acciones de mejora como para las acciones de Microsoft, deben escribirse en inglés para que se puedan reconocer cuando se haga referencia a él en los controles.
 
 #### <a name="remove-an-improvement-action"></a>Quitar una acción de mejora
 
-La eliminación de una acción de mejora de una fila en **una hoja de cálculo no quita** la acción de la plantilla que se está editando. En su lugar, siga el proceso siguiente:
+Para quitar una acción de mejora de una plantilla, deberá quitarla de cada control que haga referencia a ella. Siga los pasos siguientes para modificar la hoja de cálculo:
 
-1. En la ficha **acciones** , inserte una nueva columna como la columna a y la **operación** put en la fila de encabezado, que es la fila número uno.
-2. En la fila de la acción de mejora que desea quitar, coloque **eliminar** en la columna a para esa fila.
-3. Asegúrese de que ya no se hace referencia a esta acción de mejora mediante un control. Vaya a la pestaña **ControlFamily** y busque el título de la acción de mejora en la columna F, que es **controlActionTitle** .
-4. Cuando encuentre la acción de mejora que aparece en la columna **controlActionTitle** , elimínela.
-5. Guarde la hoja de cálculo.
+1. En la **pestaña ControlFamily,** busque el título de la acción de mejora que desea quitar.
+2. Elimine el título de la acción de mejora en las celdas donde aparece. Si la acción de mejora es la única acción de esa fila, elimine toda la fila (que quita el control).
+3. En la **pestaña** Acciones, elimine la fila que contiene la acción de mejora que va a eliminar.
+4. Guarde la hoja de cálculo.
 
-Cuando vuelva a importar la hoja de cálculo a la plantilla, la acción se quitará de la plantilla. Quitar una acción de una plantilla no quita completamente la acción. Todavía puede hacer referencia a esa acción en otra plantilla.
+Al volver a importar la hoja de cálculo a la plantilla, la acción de mejora se quitará de la plantilla.
 
-Si va a quitar la última acción de mejora a la que hace referencia un control, debe quitar el control.
+Quitar una acción de mejora de una plantilla no elimina completamente la acción de mejora del Administrador de cumplimiento. Otra plantilla aún puede hacer referencia a esa acción.
 
 #### <a name="remove-a-control"></a>Quitar un control
 
-Para quitar un control, siga el mismo proceso para quitar una acción de mejora, como se ha descrito anteriormente. En la pestaña **ControlFamily** , agregue una columna **Operation** y coloque **eliminar** junto al control que desea quitar.
+Para quitar un control, modifique la hoja de cálculo siguiendo los pasos siguientes y vuelva a importar la hoja de cálculo:
+
+1. En la **pestaña ControlFamily,** busque el control que desea quitar en la **columna controlName.**
+2. Elimine la fila de ese control.
+    - Si este control eliminado contiene acciones de mejora a las que no hace referencia ningún otro control, deberá quitar esas acciones de mejora de la **pestaña** Acciones. De lo contrario, recibirá un error de validación.
+
+3. Guarde la hoja de cálculo.
+
+Al volver a importar la hoja de cálculo a la plantilla, el control se quitará de la plantilla.
 
 ## <a name="export-a-template"></a>Exportar una plantilla
 
-Puede exportar un archivo de Excel que contenga todos los datos de una plantilla. Deberá exportar una plantilla para modificar la plantilla, ya que será el archivo de Excel que edite y cargue en el [proceso de modificación](#modify-a-template).
+Puede exportar un archivo de Excel que contenga todos los datos de una plantilla. Deberá exportar una plantilla para modificarla, ya que este será el archivo de Excel que edite y cargue en el [proceso de modificación.](#modify-a-template)
 
-Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el botón **exportar a Excel** .
+Para exportar la plantilla, vaya a la página de detalles de la plantilla y seleccione el botón Exportar **a Excel.**
 
-Tenga en cuenta que, al exportar una plantilla que ha ampliado desde una plantilla del administrador de cumplimiento, el archivo exportado solo contendrá los atributos que agregó a la plantilla. El archivo exportado no incluirá los datos de plantilla originales proporcionados por Microsoft. Para obtener un informe de este tipo, consulte las instrucciones para [exportar un informe de evaluación](compliance-manager-assessments.md#export-an-assessment-report).
+Tenga en cuenta que al exportar una plantilla que extendió desde una plantilla del Administrador de cumplimiento, el archivo exportado solo contendrá los atributos que agregó a la plantilla. El archivo exportado no incluirá los datos de plantilla originales proporcionados por Microsoft. Para obtener un informe de este tipo, vea las instrucciones para [exportar un informe de evaluación.](compliance-manager-assessments.md#export-an-assessment-report)
