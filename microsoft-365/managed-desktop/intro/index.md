@@ -1,6 +1,6 @@
 ---
 title: ¿Es el Escritorio administrado de Microsoft adecuado para usted?
-description: ''
+description: Orientación sobre lo que es el servicio y accesos directos a artículos para distintos públicos
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269378"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840940"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -71,9 +71,9 @@ También se supervisa el estado de los dispositivos y se proporciona informació
 ## <a name="need-more-details"></a>¿Quiere más detalles?
 Para más información sobre el valor de Escritorio administrado de Microsoft, incluidos casos de clientes, consulte [Escritorio administrado de Microsoft](https://aka.ms/mmd). Los puntos más útiles para empezar son el [Mapa de ruta](https://aka.ms/AA6jiam), un [caso práctico de impacto económico total de Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf) y un [resumen de una sola página para descargar](https://aka.ms/AA6ob3h). Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd) del Escritorio administrado de Microsoft.
 
-Si Escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en la documentación adicional que explica más detalladamente el servicio, cómo preparar su organización para inscribirse, cómo empezar a usar el servicio y otras operaciones continuas a partir de entonces, entre las que se incluye cómo usted y sus usuarios pueden obtener fácilmente ayuda si es necesario. Si ya está listo para empezar, empiece por ponerse en contacto con su [equipo de cuentas local](https://pages.email.office.com/contactmmd/).
+Si Escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en documentación adicional que explica más detalladamente el servicio, cómo preparar su organización para inscribirse, cómo empezar a usar el servicio y otras operaciones continuas a partir de entonces, entre las que se incluye cómo usted y sus usuarios pueden obtener fácilmente ayuda si es necesario. Si ya está listo para empezar, empiece por ponerse en contacto con su [equipo de cuentas local](https://pages.email.office.com/contactmmd/).
 
-**Más información general y de contexto** Principalmente para responsables de la toma de decisiones técnicas y empresariales, en estos temas se detalla la división de los roles y las responsabilidades entre su organización y Microsoft, más información sobre las tecnologías que se usan en Escritorio administrado de Microsoft y cómo el servicio encaja en una estrategia más amplia como parte de la estructura de ITIL.
+**Más información general y de contexto** Principalmente para responsables de la toma de decisiones técnicas y empresariales, en estos artículos se detalla la división de los roles y las responsabilidades entre su organización y Microsoft, más información sobre las tecnologías que se usan en Escritorio administrado de Microsoft y cómo el servicio encaja en una estrategia más amplia como parte de la estructura de ITIL.
 
 - [Roles y responsabilidades del Escritorio administrado de Microsoft](roles-and-responsibilities.md)
 - [Tecnologías del Escritorio administrado de Microsoft](technologies.md)

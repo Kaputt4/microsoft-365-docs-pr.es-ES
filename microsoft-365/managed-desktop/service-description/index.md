@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289476"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840318"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio Escritorio administrado de Microsoft
 
@@ -29,7 +29,7 @@ Escritorio administrado de Microsoft es un servicio que proporciona a los usuari
 - Soporte técnico de TI para usuarios
 - Soporte operacional para profesionales de TI
 
-Para más información sobre los servicios específicos incluidos en el Escritorio administrado de Microsoft, vea otros temas en esta sección. Si ya ha decidido que Escritorio administrado de Microsoft es para usted, los temas de [Prepararse para la inscripción en el Escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) le proporcionan los pasos necesarios para preparar unirse al servicio.
+Para más información sobre los servicios específicos incluidos en el Escritorio administrado de Microsoft, vea otros artículos en esta sección. Si ya ha decidido que Escritorio administrado de Microsoft es para usted, los artículos de [Prepararse para la inscripción en el Escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) le proporcionan los pasos necesarios para prepararse para unirse al servicio.
 
 - [Regiones e idiomas admitidos para Escritorio administrado de Microsoft](regions-languages.md) explica qué idiomas y regiones son compatibles con el servicio.
 - Para garantizar la mejor experiencia para los usuarios, Escritorio administrado de Microsoft solo admite ciertos dispositivos. [Dispositivos de programa](device-list.md) especifica los modelos de dispositivos y configuraciones exactas que puede usar con el servicio, independientemente de si usted los proporciona o de si trabaja con un partner.
