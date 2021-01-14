@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad para la validación de mensajes firmados con DKIM
+title: Compatibilidad con la validación de mensajes firmados de claves de dominio identificadas con correo (DKIM)
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,23 +14,27 @@ search.appverid:
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre la validación de mensajes firmados con DKIM en Exchange Online Protection y Exchange Online
-ms.openlocfilehash: e2e91fe426348487fa4dfa8ef929d2d8129ffddc
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Obtenga información sobre la validación de mensajes firmados por DKIM en Exchange Online Protection y Exchange Online
+ms.openlocfilehash: 91a01f89bb633a38d27ddd3f2945b8707643d7e9
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202142"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845064"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Compatibilidad para la validación de mensajes firmados con DKIM
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+Exchange Online Protection (EOP) y Exchange Online admiten la validación entrante de los mensajes de correo identificado con claves de dominio[(DKIM).](https://www.rfc-editor.org/rfc/rfc6376.txt)
 
-Exchange Online Protection (EOP) y Exchange Online admiten la validación de entrada de mensajes de Correo identificado con claves de dominio ([DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)). DKIM es un método para validar que un mensaje se envió desde el dominio donde dice que se originó, y que no ha sido suplantado por otra persona. Enlaza un mensaje de correo con la organización responsable de enviarlo. La comprobación de DKIM se usa automáticamente para todos los mensajes enviados a través de comunicaciones IPv6. Microsoft 365 también admite DKIM cuando se envía correo a través de IPv4. (Para obtener más información acerca de la compatibilidad con IPv6, consulte [Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)).
+DKIM valida que un mensaje de correo electrónico no fue *suplantado* por otra persona y se envió desde el dominio del que *dice* que es de. Vincula un mensaje de correo electrónico a la organización que lo envió. La verificación DKIM se usa automáticamente para todos los mensajes enviados con IPv6. Microsoft 365 también admite DKIM cuando se envía correo a través de IPv4. (Para obtener más información acerca de la compatibilidad con IPv6, consulte [Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)).
 
-DKIM valida un mensaje firmado digitalmente que aparece en el encabezado DKIM-Signature, en los encabezados de los mensajes. Los resultados de la validación de DKIM-Signature se estampan en el encabezado Authentication-Results que cumple la norma RFC 7001 ([Campo de encabezado de mensaje para indicar el estado de autenticación del mensaje](https://www.rfc-editor.org/rfc/rfc7001.txt)). El texto del encabezado del mensaje tiene un aspecto similar al siguiente (donde contoso.com es el remitente):
+DKIM valida un mensaje firmado digitalmente que aparece en el DKIM-Signature de los encabezados del mensaje. Los resultados de una DKIM-Signature validación se marcan en el Authentication-Results encabezado. El texto del encabezado del mensaje tiene un aspecto similar al siguiente (donde contoso.com es el remitente):
 
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
 
-Los administradores pueden crear [reglas de flujo de correo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de Exchange (también conocidas como reglas de transporte) en los resultados de una validación de DKIM para filtrar o enrutar los mensajes según sea necesario.
+> [!NOTE]
+> Para obtener más información acerca del encabezado Authentication-Results, vea RFC 7001 (campo de encabezado de mensaje para indicar el estado de[autenticación de mensajes).](https://www.rfc-editor.org/rfc/rfc7001.txt) La implementación dkim de Microsoft se ajusta a esta RFC.
+
+Los administradores pueden crear reglas [de flujo de](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo de Exchange (también conocidas como reglas de transporte) en los resultados de la validación dkim. Estas reglas de flujo de correo permitirán a los administradores filtrar o enrutar mensajes según sea necesario.

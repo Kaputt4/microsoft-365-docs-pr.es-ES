@@ -1,5 +1,5 @@
 ---
-title: Iniciar el portal mediante el programador de inicio del portal
+title: Iniciar el portal mediante el Programador de inicio del portal
 ms.author: jhendr
 author: jhendr
 manager: pamgreen
@@ -16,32 +16,32 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: En este artículo se describe cómo puede iniciar el portal mediante el programador de inicio del portal
-ms.openlocfilehash: 7e488caba5e4df47bb3f51f195e093891565d95c
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+description: En este artículo se describe cómo iniciar el portal mediante el Programador de inicio del portal
+ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367206"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864881"
 ---
-# <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Iniciar el portal mediante el programador de inicio del portal
+# <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Iniciar el portal mediante el Programador de inicio del portal
 
-Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que emplean el contenido en el sitio. El inicio del portal en ondas es una parte importante de la garantía de que los usuarios tienen una experiencia sin problemas y de forma eficaz para obtener acceso a un nuevo portal de SharePoint Online. 
+Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que emplean el contenido en el sitio. El inicio del portal en oleadas es una parte importante de garantizar que los usuarios tengan una experiencia fluida y de rendimiento al obtener acceso a un nuevo portal de SharePoint Online. 
 
-El lanzamiento en ondas es una forma clave de implementar el portal, como se detalla en [planear el plan de implementación de lanzamiento de portal en SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). El programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de lanzamiento en fases o oleada administrando las redirecciones para el nuevo portal. Durante cada una de las ondas, puede recopilar los comentarios de los usuarios y supervisar el rendimiento durante cada una de las ondas de implementación. Esto tiene la ventaja de presentar lentamente el portal, lo que le ofrece la posibilidad de pausar y resolver problemas antes de continuar con la siguiente ola y, en última instancia, garantizar una experiencia positiva para los usuarios. 
+Iniciar en oleadas es una forma clave de lanzar el portal, como se detalla en la planeación del plan de lanzamiento de lanzamiento del [portal en SharePoint Online.](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) El Programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de implementación por fases o oleadas mediante la administración de redireccionamientos para el nuevo portal. Durante cada una de las oleadas, puedes recopilar comentarios de los usuarios y supervisar el rendimiento durante cada oleada de implementación. Esto tiene la ventaja de introducir lentamente el portal, darle la opción de pausar y resolver problemas antes de continuar con la siguiente oleada y, en última instancia, garantizar una experiencia positiva para los usuarios. 
 
 Hay dos tipos de redirección: 
-- bidireccional: iniciar un nuevo portal moderno de SharePoint Online para reemplazar un portal clásico o moderno de SharePoint existente 
-- redirección de página temporal: iniciar un nuevo portal moderno de SharePoint Online sin SharePoint Portal existente
+- bidireccional: inicie un nuevo portal de SharePoint Online moderno para reemplazar un portal moderno o clásico de SharePoint existente 
+- redirección de página temporal: inicie un nuevo portal de SharePoint Online moderno sin ningún portal de SharePoint existente
 
-El programador de inicio del portal solo está disponible para iniciar los portales modernos de SharePoint Online, es decir, los sitios de comunicación y los sitios de grupo modernos. Los lanzamientos deben programarse al menos 7 días antes. El número de ondas necesario se determina según el número de usuarios previsto. Antes de programar un inicio del portal, debe ejecutarse la [herramienta diagnósticos de página para SharePoint](https://aka.ms/perftool) para comprobar que la Página principal del portal está en buen estado. Al final del inicio del portal, todos los usuarios con permisos para el sitio podrán tener acceso al nuevo sitio. 
+El programador de inicio del portal solo está disponible para iniciar portales modernos de SharePoint Online (es decir, sitios de comunicación). Los inicios deben programarse con al menos 7 días de antelación. El número de oleadas requerido está determinado por el número esperado de usuarios. Antes de programar el inicio de un portal, debe ejecutarse la herramienta Diagnóstico de páginas para [SharePoint](https://aka.ms/perftool) para comprobar que la página principal del portal está en buen estado. Al final del inicio del portal, todos los usuarios con permisos para el sitio podrán acceder al nuevo sitio. 
 
-Para obtener más información acerca de cómo iniciar correctamente un portal, siga los principios básicos, prácticas y recomendaciones detalladas para [crear, iniciar y mantener un portal saludable](https://docs.microsoft.com/sharepoint/portal-health). 
+Para obtener más información sobre cómo iniciar un portal correcto, siga los principios, prácticas y recomendaciones básicos detallados en Crear, iniciar y mantener [un portal en buen estado.](https://docs.microsoft.com/sharepoint/portal-health) 
 
 > [!NOTE]
-> Esta característica no está disponible para los planes de Office 365 Germany, Office 365 operado por 21Vianet (China) o Microsoft 365 US Government.
+> Esta característica no está disponible para los planes de Office 365 Germany, Office 365 operado por 21Vianet (China) o Microsoft 365 Us Government.
 
-## <a name="app-setup-and-connecting-to-sharepoint-online"></a>Configuración de aplicaciones y conexión a SharePoint Online
+## <a name="app-setup-and-connecting-to-sharepoint-online"></a>Configuración de la aplicación y conexión a SharePoint Online
 1. [Descargue el Shell de administración de SharePoint Online más reciente](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
@@ -52,29 +52,29 @@ Para obtener más información acerca de cómo iniciar correctamente un portal, 
 
 ## <a name="view-any-existing-portal-launch-setups"></a>Ver las configuraciones de inicio del portal existentes
 
-Para ver si hay configuraciones de inicio del portal existentes:
+Para ver si hay configuraciones de inicio de portal existentes:
 
    ```PowerShell
    Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
    ```
 
-## <a name="schedule-a-portal-launch-on-the-site"></a>Programar un inicio del portal en el sitio
+## <a name="schedule-a-portal-launch-on-the-site"></a>Programar el inicio de un portal en el sitio
 
-El número de ondas necesarias depende del tamaño de inicio previsto. 
-- Menos de 10.000 usuarios: 1 ola
-- de 10 k a 30K: 3 ondas 
-- 30K + a 100 a 100 usuarios: 5 ondas
-- Más de 100 k usuarios: 5 ondas y póngase en contacto con el equipo de la cuenta de Microsoft
+El número de oleadas necesarias depende del tamaño de inicio esperado. 
+- Menos de 10.000 usuarios: 1 oleada
+- De 10.000 a 30.000 usuarios: 3 oleadas 
+- De 30.000 a 100.000 usuarios: 5 oleadas
+- Más de 100.000 usuarios: 5 oleadas y póngase en contacto con su equipo de cuentas de Microsoft
 
-### <a name="steps-for-bidirectional-redirection"></a>Pasos para la redirección bidireccional
+### <a name="steps-for-bidirectional-redirection"></a>Pasos para el redireccionamiento bidireccional
 
-La redirección bidireccional consiste en iniciar un nuevo portal moderno de SharePoint Online para reemplazar un portal clásico o moderno de SharePoint existente. Los usuarios de ondas activas se redirigirán al nuevo sitio independientemente de si navegan hasta el sitio antiguo o el nuevo. Los usuarios de una onda no iniciada que intenten obtener acceso al nuevo sitio se redirigirán de vuelta al sitio antiguo hasta que se inicie la onda. 
+La redirección bidireccional implica el inicio de un nuevo portal de SharePoint Online moderno para reemplazar un portal moderno o clásico de SharePoint existente. Los usuarios de las oleadas activas serán redirigidos al nuevo sitio independientemente de si navegan al sitio antiguo o nuevo. Los usuarios de una oleada no iniciada que intenten obtener acceso al nuevo sitio serán redirigidos de nuevo al sitio antiguo hasta que se inicia su oleada. 
 
-Solo se admite la redirección entre la Página principal predeterminada del sitio antiguo y la Página principal predeterminada en el nuevo sitio. Si tiene administradores o propietarios que necesitan tener acceso a los sitios antiguos y nuevos sin redirigirse, asegúrese de que aparecen en la lista mediante el `WaveOverrideUsers` parámetro. Si tiene administradores o propietarios que necesitan tener acceso a los sitios antiguos y nuevos sin redirigirse, asegúrese de que aparecen en la lista mediante el `WaveOverrideUsers` parámetro. Solo se admite la redirección entre la Página principal predeterminada del sitio antiguo y la Página principal predeterminada en el nuevo sitio.
+Solo se admite el redireccionamiento entre la página principal predeterminada del sitio antiguo y la página principal predeterminada en el nuevo sitio. Si tiene administradores o propietarios que necesitan tener acceso a los sitios antiguos y nuevos sin ser redirigidos, asegúrese de que aparecen con el `WaveOverrideUsers` parámetro.
 
-Para migrar los usuarios de un sitio de SharePoint existente a un nuevo sitio de SharePoint de forma escalonada:
+Para migrar usuarios de un sitio de SharePoint existente a un nuevo sitio de SharePoint de forma por fases:
 
-1. Ejecute el siguiente comando para designar las ondas de lanzamiento del portal.
+1. Ejecute el siguiente comando para designar las oleadas de inicio del portal.
    
    ```PowerShell
     New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
@@ -88,13 +88,13 @@ Ejemplo:
 {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
-2. Validación completa. El redireccionamiento puede tardar 5-10 minutos en completarse para completar su configuración en el servicio. 
+2. Validación completa. El redireccionamiento puede tardar entre 5 y 10 minutos en completar su configuración en todo el servicio. 
 
-### <a name="steps-for-redirection-to-temporary-page"></a>Pasos para redirigir a la página temporal
+### <a name="steps-for-redirection-to-temporary-page"></a>Pasos para la redirección a la página temporal
 
-La redirección de página temporal debe usarse cuando no exista portal de SharePoint existente. Los usuarios se dirigen a un nuevo portal moderno de SharePoint Online de forma escalonada. Si un usuario está en una onda que no se ha iniciado, se le redirigirá a una página temporal (cualquier dirección URL). 
+El redireccionamiento temporal de páginas debe usarse cuando no exista ningún portal de SharePoint existente. Los usuarios se dirigen a un nuevo portal de SharePoint Online moderno de forma por fases. Si un usuario está en una oleada que no se ha iniciado, se le redirigirá a una página temporal (cualquier dirección URL). 
 
-1. Ejecute el siguiente comando para designar las ondas de lanzamiento del portal.
+1. Ejecute el siguiente comando para designar las oleadas de inicio del portal.
    
       ```PowerShell
     New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
@@ -108,37 +108,34 @@ Ejemplo:
 {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
-2. Validación completa. El redireccionamiento puede tardar 5-10 minutos en completarse para completar su configuración en el servicio. 
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+2. Validación completa. El redireccionamiento puede tardar entre 5 y 10 minutos en completar su configuración en todo el servicio. 
 
 ## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Pausar o reiniciar el inicio de un portal en el sitio
 
-1. Para pausar un inicio del portal en curso y evitar temporalmente los próximos progresos de onda, ejecute el siguiente comando:
+1. Para pausar el inicio de un portal en curso y evitar temporalmente que se produzcan las próximas progresión de oleadas, ejecute el siguiente comando:
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
    ```
-2. Compruebe que todos los usuarios se redirigen al sitio anterior. 
+2. Valide que todos los usuarios sean redirigidos al sitio antiguo. 
 
-3. Para reiniciar un inicio del portal que se ha pausado, ejecute el siguiente comando:
+3. Para reiniciar un inicio de portal que se ha pausado, ejecute el siguiente comando:
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
    ```
    
-4. Valida que la redirección ya se haya restaurado. 
+4. Valide que el redireccionamiento ya está restaurado. 
 
-## <a name="delete-a-portal-launch-on-the-site"></a>Eliminar un inicio del portal en el sitio
-1. Cree una onda de lanzamiento de portal.
-  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+## <a name="delete-a-portal-launch-on-the-site"></a>Eliminar un inicio de portal en el sitio
 
-2. Ejecute el siguiente comando para eliminar un inicio del portal programado o en curso para un sitio.
+1. Ejecute el siguiente comando para eliminar un inicio del portal programado o en curso para un sitio.
 
    ```PowerShell
    Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
    ```
 
-3. Validar que no se produzca ninguna redirección para todos los usuarios.
+2. Valide que no se produce ningún redireccionamiento para todos los usuarios.
 
 ## <a name="learn-more"></a>Más información
-[Planeación del lanzamiento del portal del plan de implementación en SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+[Planeación del plan de implementación del lanzamiento del portal en SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
