@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: Obtenga información sobre los sitios de grupo aislados de SharePoint Online incluidos usos, requisitos y características con los que se pueden usar.
-ms.openlocfilehash: e4e45c8adffcf86d56a71e5b9935e634f2de9254
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 55bdf2999610310babb60b6938afb97732e5a7a0
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616457"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845096"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Sitios de grupo de SharePoint Online aislados
 
@@ -32,9 +32,9 @@ ms.locfileid: "49616457"
 
  **Resumen:** obtenga información sobre los usos de sitios de grupo de SharePoint Online aislados.
 
-Los sitios de grupo de SharePoint Online son una forma sencilla de crear rápidamente un espacio para la colaboración en notas, documentos, artículos, calendarios y otros recursos en Microsoft Office 365. Los sitios de grupo de SharePoint Online se basan en un grupo de Microsoft 365 y tienen un modelo de administración simplificado para permitir la colaboración abierta con un conjunto privado de miembros del grupo o con toda la organización. Un sitio de grupo predeterminado de SharePoint Online permite a los miembros del grupo de Microsoft 365 invitar a otros usuarios y controlar la configuración de los permisos.
+Los sitios de grupo de SharePoint Online son una forma sencilla de crear rápidamente un espacio para la colaboración. Los usuarios pueden colaborar en notas, documentos, artículos, calendarios y otros recursos en Microsoft Office 365. Los sitios de grupo de SharePoint Online se basan en un grupo de Microsoft 365 y tienen un modelo de administración simplificado para permitir la colaboración abierta con un conjunto privado de miembros del grupo o con toda la organización. Un sitio de grupo predeterminado de SharePoint Online permite a los miembros del grupo de Microsoft 365 invitar a otros usuarios y controlar la configuración de los permisos.
 
-Pero, en algunos casos, puede que quiera crear un sitio de grupo de SharePoint Online para colaborar en el que los permisos del sitio se controlen de forma más estricta con pertenencia a grupos y niveles de permisos de SharePoint Online, que solo pueden controlar los administradores de SharePoint. Esto se denomina un sitio aislado, que está aislado para el conjunto de usuarios que colaboran, visualizan sus contenidos o administran el sitio. Puede que necesite usar un sitio aislado en estos casos:
+Sin embargo, en ocasiones necesitará que el acceso al sitio esté controlado por pertenencias a grupos y que los niveles de permiso de SharePoint Online sean gestionados por administradores de SharePoint. Esto se llama sitio aislado, y es aislado al conjunto de usuarios que colaboran, ven los contenidos o administran el sitio. Puede que necesite un sitio aislado por los siguientes motivos:
 
 - Un proyecto secreto en su organización.
 
