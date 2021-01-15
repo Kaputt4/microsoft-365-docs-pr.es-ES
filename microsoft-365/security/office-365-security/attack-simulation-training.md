@@ -11,20 +11,22 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios sobre la prevención de suplantación de identidad mediante la formación de simulación de ataques en Microsoft Defender para Office 365.
-ms.openlocfilehash: e7582b1f74266d988ecdf8f6dac49019699e2bc1
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: dfdd3c93afb1b0fb30cc5b5affc040a369c29447
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794261"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870972"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simular un ataque de suplantación de identidad
 
-El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 le permite ejecutar simulaciones de ciberataques benignos en su organización para probar las directivas y prácticas de seguridad, así como entrenar a sus empleados para aumentar su concienciación y reducir su susceptibilidad a los ataques. Este artículo le guiará a través de la creación de un ataque de suplantación de identidad simulado mediante el entrenamiento de simulación de ataques.
+La formación de simulación de ataques en Microsoft Defender para Office 365 le permite ejecutar simulaciones de ciberataques benignos en su organización para probar las directivas y prácticas de seguridad, así como entrenar a sus empleados para aumentar su concienciación y reducir su susceptibilidad a los ataques. Este artículo le guiará a través de la creación de un ataque de suplantación de identidad simulado mediante el entrenamiento de simulación de ataques.
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Para iniciar un ataque de suplantación de identidad simulado, abra el Centro de seguridad de [Microsoft 365,](https://security.microsoft.com/)vaya & formación de simulación de ataques de colaboración de Correo electrónico y cambie **a** la pestaña \>  [**Simulaciones.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
+Para obtener información de introducción sobre el aprendizaje de simulación de ataques, consulta Introducción [al entrenamiento de simulación de ataques.](attack-simulation-training-get-started.md)
+
+Para iniciar un ataque de suplantación de identidad simulado, abra el Centro de seguridad de [Microsoft 365,](https://security.microsoft.com/)vaya a Formación de simulación de ataques de colaboración de correo electrónico & y cambie **a** la pestaña \>  [**Simulaciones.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
 
 En **Simulaciones,** seleccione **+ Iniciar una simulación.**
 
@@ -35,11 +37,11 @@ En **Simulaciones,** seleccione **+ Iniciar una simulación.**
 
 ## <a name="selecting-a-social-engineering-technique"></a>Selección de una técnica de ingeniería social
 
-Selecciona entre 4 técnicas diferentes, seleccionadas en el marco de trabajo&[CK ® MITRE ATT.](https://attack.mitre.org/techniques/enterprise/) Hay diferentes cargas disponibles para diferentes técnicas:
+Seleccione entre 4 técnicas diferentes, conservadas en el marco de trabajo&[CK ® MITRE ATT.](https://attack.mitre.org/techniques/enterprise/) Hay diferentes cargas disponibles para diferentes técnicas:
 
 - **La recolección de** credenciales intenta recopilar credenciales llevando a los usuarios a un sitio web de aspecto conocido con cuadros de entrada para enviar un nombre de usuario y una contraseña.
 - **Los datos adjuntos** de malware agregan datos adjuntos malintencionados a un mensaje. Cuando el usuario abre los datos adjuntos, se ejecuta código arbitrario que ayudará al atacante a poner en peligro el dispositivo del destino.
-- **El vínculo en los datos** adjuntos es un tipo de recolección híbrida de credenciales. Un atacante inserta una dirección URL en un archivo adjunto de correo electrónico. La dirección URL dentro de los datos adjuntos sigue la misma técnica que la recolección de credenciales.
+- **El vínculo en los datos** adjuntos es un tipo de recolección de credenciales híbrida. Un atacante inserta una dirección URL en un archivo adjunto de correo electrónico. La dirección URL dentro de los datos adjuntos sigue la misma técnica que la recolección de credenciales.
 - **El vínculo al malware** ejecutará código arbitrario desde un archivo hospedado en un servicio de uso compartido de archivos conocido. El mensaje enviado al usuario contendrá un vínculo a este archivo malintencionado. Abrir el archivo y ayudar al atacante a poner en peligro el dispositivo del destino.
 
 > [!TIP]
@@ -53,12 +55,12 @@ Después de seleccionar la técnica y hacer clic **en** Siguiente, asigne a la s
 
 A continuación, tendrás que seleccionar una carga del catálogo de carga ya existente.
 
-Las cargas tienen varios puntos de datos que le ayudarán a elegir:
+Las cargas de trabajo tienen una serie de puntos de datos que le ayudarán a elegir:
 
 - **La tasa de clics** cuenta cuántas personas han hecho clic en esta carga.
-- **La tasa de peligro** previsto predice el porcentaje de personas que se verán comprometidas por esta carga en función de los datos históricos de la carga en Microsoft Defender para los clientes de Office 365.
-- **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.
-- **La** complejidad, disponible **a través de** filtros, se calcula en función del número de indicadores dentro de la carga en la que se dirige la pista en que se trata de un ataque. Más indicadores llevan a una complejidad menor.
+- **La tasa de compromiso** previsto predice el porcentaje de personas que se verán comprometidas por esta carga en función de los datos históricos de la carga en Microsoft Defender para los clientes de Office 365.
+- **Las simulaciones iniciadas** cuentan el número de veces que esta carga se usó en otras simulaciones.
+- **La** complejidad, disponible **a través de** filtros, se calcula en función del número de indicadores dentro de la carga en la que se dirige la pista en que se trata de un ataque. Si hay más indicadores, la complejidad es menor.
 - **Source**, available through **filters**, indicates whether the payload was created on your tenant or is a part of Microsoft's pre-existing payload catalog (global).
 
 ![Carga seleccionada dentro de la formación de simulación de ataques en el Centro de seguridad de Microsoft 365](../../media/attack-sim-preview-select-payload.png)
@@ -69,7 +71,7 @@ Si quieres crear tu propia carga, lee crear una carga [para el entrenamiento de 
 
 ## <a name="audience-targeting"></a>Identificación de audiencia
 
-Ahora es el momento de seleccionar la audiencia de esta simulación. Puede elegir incluir **todos los usuarios de su organización** o incluir solo usuarios y grupos **específicos.**
+Ahora es el momento de seleccionar la audiencia de esta simulación. Puede elegir incluir todos **los usuarios de su** organización o incluir solo usuarios y grupos **específicos.**
 
 Si elige incluir **solo usuarios y** grupos específicos, puede:
 
@@ -88,14 +90,14 @@ Seleccione la **fecha de vencimiento del aprendizaje** para asegurarse de que lo
 > [!NOTE]
 > Si decide seleccionar cursos y módulos usted mismo, podrá ver el contenido recomendado, así como todos los cursos y módulos disponibles.
 >
-> ![Agregar formación recomendada dentro de la formación de simulación de ataques en el Centro de seguridad de Microsoft 365](../../media/attack-sim-preview-add-training.png)
+> ![Adición de formación recomendada dentro de la formación de simulación de ataques en el Centro de seguridad de Microsoft 365](../../media/attack-sim-preview-add-training.png)
 
-En los pasos siguientes,  deberá agregar cursos de aprendizaje si optó por seleccionarlo usted mismo y personalizar la página de aterrizaje de la formación. Podrá obtener una vista previa de la página de aterrizaje del entrenamiento, así como cambiar el encabezado y el cuerpo de la página.
+En los pasos siguientes,  tendrá que agregar cursos de aprendizaje si optó por seleccionarlo usted mismo y personalizar la página de aterrizaje de la formación. Podrás obtener una vista previa de la página de aterrizaje del entrenamiento, así como cambiar el encabezado y el cuerpo de la página.
 
 ## <a name="launch-details-and-review"></a>Detalles de inicio y revisión
 
 Ahora que todo está configurado, puede iniciar esta simulación inmediatamente o programarla para una fecha posterior. También tendrá que elegir cuándo finalizar esta simulación. Dejaremos de capturar la interacción con esta simulación más allá de la hora seleccionada.
 
-**Habilita la entrega de zona horaria consciente de** la región para entregar mensajes de ataque simulado a los empleados durante sus horas de trabajo en función de su región.
+**Habilitar la entrega de zona horaria consciente de** la región para entregar mensajes de ataque simulado a los empleados durante sus horas de trabajo en función de su región.
 
 Una vez que haya terminado, haga clic en **Siguiente** y revise los detalles de la simulación. Haga clic **en Editar** en cualquiera de los elementos para volver atrás y cambiar los detalles que necesiten cambiar. Una vez hecho esto, haga clic **en Enviar**.

@@ -19,21 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el simulador de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
-ms.openlocfilehash: 2ffec891f7b1021f3c6c51b003c78aacb0ec0d6a
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794537"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871102"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación y respuesta de [amenazas,](office-365-ti.md)puede usar el Simulador de ataques en el Centro de seguridad & Cumplimiento para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real repercuta en la línea inferior. Lea este artículo para obtener más información.
-
-> [!NOTE]
-> La simulación de ataques y los datos relacionados con la formación se almacenan con otros datos de clientes para los servicios de Microsoft 365. Para obtener más información, [vea ubicaciones de datos de Microsoft 365.](/microsoft-365/enterprise/o365-data-locations)
 
 > [!TIP]
 > La formación de simulación de ataques está disponible para la versión preliminar pública en el Centro de seguridad de Microsoft 365. Consulte [Simular un ataque de suplantación de identidad con Microsoft Defender para Office 365](attack-simulation-training.md) para obtener más información.
@@ -42,7 +39,7 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 - Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataques está disponible en **el simulador de** \> **ataques de administración de amenazas.** Vaya directamente al simulador de ataques, abra <https://protection.office.com/attacksimulator> .
 
-- Para obtener más información sobre la disponibilidad del Simulador de ataques en distintas suscripciones de Microsoft 365, vea la descripción del servicio [de Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Para obtener más información sobre la disponibilidad del Simulador de ataques en distintas suscripciones de Microsoft 365, vea la descripción del servicio de [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de** seguridad. Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -50,11 +47,13 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 - Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
+- La simulación de ataques y los datos relacionados con la formación se almacenan con otros datos de clientes para los servicios de Microsoft 365. Para obtener más información, [vea ubicaciones de datos de Microsoft 365.](/microsoft-365/enterprise/o365-data-locations)
+
 - No hay ningún cmdlet de PowerShell correspondiente para el Simulador de ataques.
 
 ## <a name="spear-phishing-campaigns"></a>Campañas de suplantación de identidad
 
-*La suplantación* de identidad es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. La suplantación de identidad *(phishing)* es un ataque de suplantación de identidad dirigido que usa contenido centrado y personalizado que se adapta específicamente a los destinatarios de destino (normalmente, después del reconocimiento del atacante a los destinatarios).
+*La suplantación* de identidad es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. La suplantación de identidad *(phishing)* es un ataque de suplantación de identidad dirigido que usa contenido centrado y personalizado que se adapta específicamente a los destinatarios de destino (normalmente, después de que el atacante los reconoce).
 
 En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de suplantación de identidad de lanza:
 
@@ -62,7 +61,7 @@ En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de
 
   - Una página predeterminada que explica que se trata de una prueba y ofrece sugerencias para reconocer mensajes de suplantación de identidad.
 
-    ![Qué ven los usuarios si hacen clic en el vínculo de suplantación de identidad (phishing) y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
+    ![Qué verán los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
 
   - Una página personalizada (URL) que especifique.
 
@@ -73,7 +72,7 @@ En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de
 
 ### <a name="create-a-spear-phishing-campaign"></a>Crear una campaña de suplantación de identidad
 
-Una parte importante de cualquier campaña de phishing de lanza es la apariencia del mensaje de correo electrónico que se envía a los destinatarios de destino. Para crear y configurar el mensaje de correo electrónico, tiene estas opciones:
+Una parte importante de cualquier campaña de suplantación de identidad (phishing) de lanza es la apariencia del mensaje de correo electrónico que se envía a los destinatarios de destino. Para crear y configurar el mensaje de correo electrónico, tiene estas opciones:
 
 - **Use una plantilla de correo electrónico** integrada: hay disponibles dos plantillas integradas: **Giveaway y** Payroll **Update**. Puede personalizar aún más algunas, todas o ninguna de las propiedades de correo electrónico de la plantilla al crear e iniciar la campaña.
 
@@ -120,7 +119,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
      >
      > Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad.
 
-   - **Dirección URL de la página de** aterrizaje personalizada: escriba una página de aterrizaje opcional en la que se toman los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene formación interna de reconocimiento, puede especificar esa dirección URL aquí.
+   - **Dirección URL de la página de** aterrizaje personalizada: escriba una página de aterrizaje opcional donde se toman los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene formación interna de reconocimiento, puede especificar esa dirección URL aquí.
 
    - **Categoría:** actualmente, no se usa esta configuración (se omite todo lo que escriba).
 
@@ -146,15 +145,15 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
 
 2. En la **página Simular ataques,** realiza una de las siguientes selecciones en función del tipo de campaña que quieras crear:
 
-   - En la sección Phishing de lanza **(recolección** de credenciales), haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** de \> **ataque.**
+   - En la sección Phishing de lanza **(recolección** de credenciales), haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** \> **de ataque.**
 
-   - En la sección Phishing de lanza **(datos adjuntos),** haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** de \> **ataque.**
+   - En la sección Phishing de lanza **(datos adjuntos),** haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** \> **de ataque.**
 
 3. El **Asistente para configurar ataques de** suplantación de identidad se inicia en un nuevo menú desplegable. En el **paso** Inicio, siga uno de estos pasos:
 
    - En el **cuadro** Nombre, escriba un nombre para mostrar único para la campaña. No haga clic en **Usar plantilla** porque creará el mensaje de correo electrónico más adelante en el asistente.
 
-   - Haga **clic en Usar plantilla** y seleccione una plantilla de correo electrónico integrada o personalizada. Después de seleccionar la plantilla, **el** cuadro Nombre se rellena automáticamente en función de la plantilla, pero puede cambiar el nombre.
+   - Haga **clic en Usar** plantilla y seleccione una plantilla de correo electrónico integrada o personalizada. Después de seleccionar la plantilla, **el** cuadro Nombre se rellena automáticamente en función de la plantilla, pero puede cambiar el nombre.
 
    ![Página de inicio de suplantación de identidad](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
@@ -197,13 +196,13 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
      >
      > - Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad.
      >
-     > - Debe seleccionar una dirección URL. En el caso de las campañas de **phishing (datos adjuntos),** puede quitar el vínculo del  cuerpo del mensaje en el siguiente paso (de lo contrario, el mensaje contendrá un vínculo y un archivo adjunto).
+     > - Debe seleccionar una dirección URL. Para **campañas de phishing (datos adjuntos),** puede quitar el vínculo del cuerpo del mensaje en  el siguiente paso (de lo contrario, el mensaje contendrá un vínculo y un archivo adjunto).
 
    - **Tipo de datos** adjuntos: esta configuración solo está disponible en las campañas **de phishing (datos adjuntos).** Haga clic en la lista desplegable y seleccione **. DOCX** o **. PDF** de la lista.
 
-   - **Nombre de los datos** adjuntos: esta configuración solo está disponible en las campañas **de phishing (datos adjuntos).** Escriba un nombre de archivo para los datos adjuntos .docx o .pdf.
+   - **Nombre de los datos adjuntos:** esta configuración solo está disponible en las campañas **de phishing (datos adjuntos).** Escriba un nombre de archivo para los datos adjuntos .docx o .pdf.
 
-   - **Dirección URL de la página de** aterrizaje personalizada: escriba una página de aterrizaje opcional en la que se toman los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene formación interna de reconocimiento, puede especificar esa dirección URL aquí.
+   - **Dirección URL de la página de** aterrizaje personalizada: escriba una página de aterrizaje opcional donde se toman los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene formación interna de reconocimiento, puede especificar esa dirección URL aquí.
 
    - **Asunto:** el **campo Asunto** del mensaje de correo electrónico.
 
@@ -215,7 +214,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
 
    - `${username}` inserta el nombre del destinatario.
 
-   - `${loginserverurl}` inserta el valor de **la dirección URL del servidor de inicio de sesión de suplantación de** identidad .
+   - `${loginserverurl}` inserta el valor de **la dirección URL del servidor de inicio de sesión de suplantación de** identidad ( Phishing Login Server).
 
    En el caso de las campañas de **phishing (datos adjuntos),** debe quitar el  vínculo del cuerpo del mensaje (de lo contrario, el mensaje contendrá un vínculo y datos adjuntos, y los clics de vínculo no se realizarán en una campaña de datos adjuntos).
 
@@ -231,11 +230,11 @@ Un *ataque de contraseña* intenta adivinar las contraseñas de las cuentas de u
 
 En el Simulador de ataques, hay dos tipos diferentes de campañas de ataque de contraseñas disponibles para probar la complejidad de las contraseñas de los usuarios:
 
-- Contraseña de fuerza bruta (ataque  de **diccionario):** un ataque de fuerza bruta o diccionario usa un archivo de diccionario grande de contraseñas en una cuenta de usuario con la expectativa de que una de ellas funcione (muchas contraseñas en una cuenta).  Los bloqueos de contraseña incorrectos ayudan a disuadir los ataques de contraseña por fuerza bruta.
+- Contraseña de fuerza bruta (ataque  de **diccionario):** una fuerza bruta o un ataque de diccionario usa un archivo de diccionario grande de contraseñas en una cuenta de usuario con la expectativa de que una de ellas funcione (muchas contraseñas en una cuenta).  Los bloqueos de contraseña incorrectos ayudan a disuadir los ataques de contraseña por fuerza bruta.
 
   Para el ataque de diccionario, puede especificar una o varias contraseñas para probar (introducidas manualmente o en un archivo cargado) y puede especificar uno o varios usuarios.
 
-- **Ataque de aspersión** de contraseña: un ataque de *aspersión* de contraseña usa la misma contraseña que se considera cuidadosamente en una lista de cuentas de usuario (una contraseña frente a muchas cuentas). Los ataques de distribución de contraseñas son más difíciles de detectar que los ataques de contraseña por fuerza bruta (la probabilidad de éxito aumenta cuando un atacante intenta una contraseña en decenas o cientos de cuentas sin el riesgo de que se desenlace el bloqueo de contraseña incorrecto del usuario).
+- **Ataque de aspersión** de contraseña: un ataque de *aspersión* de contraseña usa la misma contraseña que se considera cuidadosamente en una lista de cuentas de usuario (una contraseña contra muchas cuentas). Los ataques de aspersión de contraseña son más difíciles de detectar que los ataques de contraseña por fuerza bruta (la probabilidad de éxito aumenta cuando un atacante intenta una contraseña en decenas o cientos de cuentas sin el riesgo de que el usuario no pueda bloquear la contraseña incorrecta).
 
   Para el ataque de aspersión de contraseña, solo puede especificar una contraseña para probar y puede especificar uno o varios usuarios.
 
@@ -266,11 +265,11 @@ En el Simulador de ataques, hay dos tipos diferentes de campañas de ataque de c
 
    - **Contraseña de fuerza bruta (ataque de diccionario):** siga uno de estos pasos:
 
-     - **Escriba contraseñas manualmente:** en el cuadro **Presione Entrar** para agregar una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
+     - **Escriba las contraseñas manualmente:** en el **cuadro Presione Entrar para agregar** una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
 
      - **Cargar contraseñas desde un archivo de diccionario:** haga clic en Cargar para importar un archivo de texto existente que contenga una contraseña en cada línea y una última línea en blanco.  El archivo de texto debe tener un tamaño de 10 MB o menos y no puede contener más de 30000 contraseñas.
 
-   - **Ataque de aspersión** de contraseña: en las **contraseñas que se usarán en** el cuadro de ataque, escriba una contraseña.
+   - **Ataque de aspersión** de contraseña: en **las contraseñas que se usarán** en el cuadro de ataque, escriba una contraseña.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -290,9 +289,9 @@ Cuando finaliza la campaña, el estado cambia a **Ataque completado.** Puedes ve
 
 Cualquiera de las acciones anteriores te llevará a una página denominada **Detalles de ataque.** La información disponible en esta página para cada tipo de campaña se describe en las secciones siguientes.
 
-### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Resultados de la campaña de phishing (recolección de credenciales)
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Resultados de la campaña de phishing de punta (recolección de credenciales)
 
-La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
+La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -300,25 +299,25 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 - **Intentos correctos:** el número de usuarios que han hecho clic en el vínculo y han **escrito** sus credenciales (cualquier *valor* de nombre de usuario y contraseña).
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
+- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
 
 - **Clic más rápido:** cuánto tiempo tardó el primer usuario en hacer clic en el vínculo después de iniciar la campaña.
 
-- **Promedio de clic:** la suma del tiempo que tardó todo el mundo en hacer clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
+- **Promedio de clic:** la suma de cuánto tiempo tardó todo el mundo en hacer clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
 
-- **Porcentaje de éxito de** clic: porcentaje calculado por (número de usuarios que han hecho clic en el vínculo) / **Total de usuarios a los que se ha dirigido**.
+- **Porcentaje de éxito de** clics: porcentaje calculado por (número de usuarios que han hecho clic en el vínculo) / **Total de usuarios a los** que se ha dirigido .
 
 - **Credenciales más rápidas:** cuánto tiempo tardó el primer usuario en escribir sus credenciales después de iniciar la campaña.
 
-- **Credenciales promedio:** la suma del tiempo que todos tardaron en escribir sus credenciales divididas por el número de usuarios que especificaron sus credenciales.
+- **Promedio de credenciales:** la suma del tiempo que todos tardaron en escribir sus credenciales divididas por el número de usuarios que especificaron sus credenciales.
 
 - **Porcentaje de éxito de credenciales:** porcentaje calculado por (número de usuarios que especificaron sus credenciales) / **Total de usuarios a los** que se ha dirigido .
 
-- Gráfico de barras que muestra el vínculo en el que se **hizo** clic y los números proporcionados **por credenciales** por día.
+- Gráfico de barras que muestra el vínculo en el que se **hizo** clic y los números **proporcionados por credenciales** por día.
 
-- Gráfico de círculo que muestra los porcentajes Vínculo en el que se **hizo** clic, **Credencial** proporcionada y **Ninguno** para la campaña.
+- Gráfico de círculo que muestra el vínculo en el que se **hizo** clic, **la** credencial proporcionada y los **porcentajes** ninguno de la campaña.
 
-- La **sección Usuarios en peligro** muestra los detalles de los usuarios que han hecho clic en el vínculo:
+- La **sección Usuarios comprometidos** muestra los detalles de los usuarios que han hecho clic en el vínculo:
 
   - La dirección de correo electrónico del usuario
 
@@ -332,7 +331,7 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 ### <a name="spear-phishing-attachment-campaign-results"></a>Resultados de la campaña de phishing (datos adjuntos)
 
-La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
+La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -340,17 +339,17 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 - **Intentos** correctos: el número de usuarios que abrieron, descargaron y abrieron los datos adjuntos (la vista previa no cuenta).
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
+- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
 
-- **Tiempo de apertura de datos** adjuntos más rápido: cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
+- **Tiempo de apertura de datos adjuntos más** rápido: cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
 
-- **Tiempo medio de** apertura de datos adjuntos: la suma del tiempo que todos tardaron en abrir los datos adjuntos dividido por el número de usuarios que abrieron los datos adjuntos.
+- **Tiempo medio de** apertura de datos adjuntos: la suma de cuánto tiempo tardó todo el mundo en abrir los datos adjuntos dividido por el número de usuarios que abrieron los datos adjuntos.
 
 - **Tasa de éxito de** apertura de datos adjuntos: porcentaje calculado por (número de usuarios que abrieron los datos adjuntos) / Total de usuarios a los que **se ha dirigido**.
 
 ### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Resultados de la campaña de fuerza bruta de contraseña (ataque de diccionario)
 
-La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
+La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -358,13 +357,13 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 - **Intentos** correctos: el número de usuarios que se encontraron con una de las contraseñas especificadas.
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
+- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
 
 - En **la sección Usuarios comprometidos** se enumeran las direcciones de correo electrónico de los usuarios afectados. Puede hacer clic **en Exportar** para exportar los resultados a un archivo CSV.
 
 ### <a name="password-spray-attack-campaign-results"></a>Resultados de la campaña de ataques por aspersión de contraseñas
 
-La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
+La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -372,4 +371,4 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 - **Intentos** correctos: el número de usuarios que se encontraron con la contraseña especificada.
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
+- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
