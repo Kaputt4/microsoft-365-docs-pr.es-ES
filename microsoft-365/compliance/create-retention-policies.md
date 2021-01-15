@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 6816905155feb321ae9821c2f0dd47a271a382c9
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: d79a505731eea8b48e19507ff6ae9558cb9a78b2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604252"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840873"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -257,17 +257,20 @@ Por ejemplo, si la directiva incluye todo el correo electrónico de Exchange y t
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 
-Deben tenerse en cuenta ciertos límites únicamente si utiliza la configuración opcional para definir el ámbito de la configuración de retención para usuarios específicos, grupos específicos de Microsoft 365 o determinados sitios: 
+Deben tenerse en cuenta ciertos límites por directiva únicamente si usa la configuración opcional para definir el ámbito de la configuración de retención para usuarios específicos, grupos específicos de Microsoft 365 o determinados sitios: 
 
 - Números máximos para una directiva de retención:
-  - 1 000 buzones de usuario
+  - 1000 buzones de correo (buzones de usuario o de grupo)
   - Grupos de Microsoft 365 1 000.
   - 1 000 usuarios para chats privados de Teams
   - 100 sitios (OneDrive o SharePoint)
 
-Asimismo, hay un número máximo de directivas que se admiten para un inquilino: 10.000. Sin embargo, para Exchange Online, el número máximo es 1.800. Estos números máximos incluyen directivas de retención, directivas de etiquetas de retención y directivas de retención de aplicación automática.
+Estas limitaciones son por directiva, por lo que si necesita usar inclusiones o exclusiones específicas por las que se superan estos números, puede crear otras directivas de retención con la misma configuración de retención. Vea la siguiente sección con [algunos escenarios de ejemplo y soluciones](#examples-of-using-inclusions-and-exclusions) que usan varias directivas de retención por este motivo. Las varias directivas de retención generan más sobrecargas administrativas, por lo que siempre debe preguntarse si necesita realmente inclusiones y exclusiones. Recuerde que la configuración predeterminada que se aplica a toda la ubicación no tiene ninguna limitación y esta opción de configuración puede ser una solución mejor que la creación y el mantenimiento de varias directivas.
 
-Si cree probable que sus directivas de retención estén sujetas a estas limitaciones, utilice la configuración predeterminada que se aplica a toda la ubicación, ya que estas directivas no tienen ninguna limitación.
+> [!TIP]
+> Si necesita crear y mantener varias directivas de retención para este escenario, considere la posibilidad de usar [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) para una configuración más eficaz.
+
+Asimismo, hay un número máximo de directivas que se admiten para un inquilino: 10.000. Sin embargo, para Exchange Online, el número máximo es 1.800. Estos números máximos incluyen directivas de retención, directivas de etiquetas de retención y directivas de retención de aplicación automática.
 
 Para usar la configuración opcional para definir el ámbito de la configuración de retención, asegúrese de que el **Estado** de esa ubicación esté **Activado** y, a continuación, use los vínculos para incluir o excluir determinados usuarios, grupos de Microsoft 365 o sitios.
 
@@ -277,6 +280,28 @@ Para usar la configuración opcional para definir el ámbito de la configuració
 > Por ejemplo, si especifica un sitio de SharePoint para incluirlo en su directiva de retención que está configurada para eliminar datos y, a continuación, quita el sitio en concreto, todos los sitios de SharePoint quedarán sujetos de forma predeterminada a la directiva de retención que elimina de forma permanente los datos. Esto mismo se aplica a las inclusiones de destinatarios de Exchange, cuentas de OneDrive, usuarios de chat de Teams, etc.
 >
 > En este escenario, deshabilite la ubicación si no quiere que la opción **Todos** de la ubicación esté sujeta a la directiva de retención. También puede especificar exclusiones para que estén exentas de la directiva.
+
+#### <a name="examples-of-using-inclusions-and-exclusions"></a>Ejemplos de uso de inclusiones y exclusiones
+
+Los ejemplos siguientes proporcionan algunas soluciones de diseño para cuando no pueda especificar solo la ubicación de una directiva de retención y debe tener en cuenta las limitaciones de la sección anterior.
+
+Ejemplo de Exchange:
+
+- **Requisito**: en una organización con más de 40.000 buzones de usuario, la mayoría de los usuarios deben tener su correo electrónico retenido durante 7 años, pero un subconjunto de usuarios identificados (425) debe tener su correo electrónico retenido solo durante 5 años.
+
+- **Solución**: cree una directiva de retención para el correo electrónico de Exchange con un período de retención de 7 años y excluya el subconjunto de usuarios. Luego, cree una segunda directiva de retención para el correo electrónico de Exchange con un período de retención de 5 años e incluya el subconjunto de usuarios. 
+    
+    En ambos casos, el número de inclusiones y exclusiones se encuentra por debajo del número máximo de buzones especificados para una sola directiva, y el subconjunto de usuarios tiene que excluirse explícitamente de la primera directiva, ya que tiene un período de retención [más largo](retention.md#the-principles-of-retention-or-what-takes-precedence) que la segunda directiva. Si el subconjunto de usuarios necesita una directiva de retención más larga, no tendrá que excluirlos de la primera directiva.
+     
+    Con esta solución, si alguien nuevo se une a la organización, su buzón se incluirá automáticamente en la primera directiva durante 7 años y no hay ningún impacto en el número máximo de admitidos. Pero los nuevos usuarios que requieran el período de retención de 5 años se agregarán a los números de inclusiones y exclusiones, cuyo límite es 1000.
+
+Ejemplo de SharePoint:
+
+- **Requisito**: una organización tiene varios miles de sitios de SharePoint, pero solo 2000 sitios requieren un período de retención de 10 años y 8000 requieren un período de retención de 4 años.
+
+- **Solución**: cree 20 directivas de retención para SharePoint con un período de retención de 10 años que incluya 100 sitios específicos y cree 80 directivas de retención para SharePoint con un período de retención de 4 años que incluya 100 sitios específicos.
+    
+    Como es necesario retener todos los sitios de SharePoint, debe crear directivas de retención que especifiquen los sitios específicos. Como una directiva de retención no admite más de 100 sitios específicos, debe crear varias directivas para los dos períodos de retención. Estas directivas de retención tienen el número máximo de sitios incluidos, por lo que el siguiente sitio nuevo que necesita retenerse requerirá una nueva directiva de retención, independientemente del periodo de retención.
 
 ## <a name="updating-retention-policies"></a>Actualización de las directivas de retención
 
