@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750814"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870856"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -33,7 +33,7 @@ Para este nivel de protección, se crea una etiqueta de sensibilidad que puede u
 
 El nivel de confidencialidad alto ofrece las siguientes protecciones adicionales al nivel de línea base:
 
-- Una etiqueta de confidencialidad para el equipo que le permite activar o desactivar el uso compartido de invitado y limita el acceso a contenido de SharePoint a solo web para dispositivos no administrados. Esta etiqueta también se puede usar para clasificar y cifrar archivos.
+- Una etiqueta de confidencialidad para el equipo que le permite activar o desactivar el uso compartido de invitado y bloquea el acceso a contenido de SharePoint para dispositivos no administrados. Esta etiqueta también se puede usar para clasificar y cifrar archivos.
 - Un tipo de vínculo para compartir predeterminado más restrictivo
 - Solo los propietarios del equipo podrán crear canales privados.
 - Las solicitudes de acceso para el sitio de SharePoint asociado están desactivadas.
@@ -63,7 +63,7 @@ Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Le sugerimos **confidencial**, pero puede elegir otro nombre si ya está en uso.
+4. Asigne un nombre a la etiqueta. Le sugerimos **Confidencialidad alta**, pero puede elegir otro nombre si ya está en uso.
 5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.

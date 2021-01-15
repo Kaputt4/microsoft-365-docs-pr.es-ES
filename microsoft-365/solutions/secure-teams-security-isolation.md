@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751148"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870984"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -106,7 +106,7 @@ Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Le sugerimos **confidencial**, pero puede elegir otro nombre si ya está en uso.
+4. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con el que lo vaya a emplear.
 5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.

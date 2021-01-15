@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador del servicio puede abrir tickets de soporte técnico a través del centro de administración.
-ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682662"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867987"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -88,9 +88,9 @@ Si está trabajando con un partner de Microsoft, puede asignarle roles de admini
   
 Un partner puede asignar estos roles: 
   
-- **Administración completa** Tiene privilegios equivalentes a los de un administrador global, con la excepción de administrar la autenticación multifactor mediante el Centro de Partners.
+- **Agente de administración** Tiene privilegios equivalentes a los de un administrador global, con la excepción de administrar la autenticación multifactor mediante el Centro de Partners.
 
-- **Administración limitada** Tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
+- **Agente del departamento de soporte técnico** Tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
 
 Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   
