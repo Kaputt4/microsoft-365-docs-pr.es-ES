@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Habilitar el complemento Notificar mensajes
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Habilitar el complemento Informe de suplantación de identidad (phishing)
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: Instalar y usar el complemento de Notificación de correo no deseado
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Reglas de flujo de correo (reglas de transporte) en EOP independiente
