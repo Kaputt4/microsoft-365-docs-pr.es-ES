@@ -1,5 +1,5 @@
 ---
-title: Solución de problemas de movilidad y seguridad básicas
+title: Solucionar problemas de movilidad y seguridad básicas
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,62 +13,62 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Pruebe estos pasos para realizar un seguimiento de los problemas básicos de la movilidad y la seguridad
-ms.openlocfilehash: 43e7533e598f769dd5f2bcae28c4252f96a9be76
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: Pruebe estos pasos para realizar un seguimiento de los problemas de movilidad y seguridad básicas
+ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430299"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876857"
 ---
-# <a name="troubleshoot-basic-mobility-and-security"></a>Solución de problemas de movilidad y seguridad básicas
+# <a name="troubleshoot-basic-mobility-and-security"></a>Solucionar problemas de movilidad y seguridad básicas
 
-Si tiene problemas al intentar inscribir un dispositivo en la movilidad y la seguridad básica, siga los pasos que se indican a continuación para realizar un seguimiento del problema. Si los pasos generales no solucionan el problema, consulte una de las secciones posteriores con pasos específicos para el tipo de dispositivo.
+Si tiene problemas al intentar inscribir un dispositivo en Movilidad y Seguridad básica, siga estos pasos para realizar un seguimiento del problema. Si los pasos generales no solucionan el problema, consulta una de las secciones posteriores con pasos específicos para el tipo de dispositivo.
 
 ## <a name="steps-to-try-first"></a>Pasos para probar primero
 
 Para empezar, compruebe lo siguiente:
 
-- Asegúrese de que el dispositivo todavía no está inscrito con otro proveedor de administración de dispositivos móviles, como Intune.
-    
-- Asegúrese de que el dispositivo está configurado con la fecha y hora correctas.
-    
-- Cambia a otra red de telefonía móvil o Wi-Fi en el dispositivo.
-    
-- Para dispositivos Android o iOS, desinstale y vuelva a instalar la aplicación del portal de empresa de Intune en el dispositivo. 
+- Asegúrate de que el dispositivo no esté inscrito con otro proveedor de administración de dispositivos móviles, como Intune.
 
-## <a name="ios-phone-or-tablet"></a>tableta o teléfono iOS
+- Asegúrate de que el dispositivo está establecido en la fecha y hora correctas.
 
-- Asegúrese de que ha configurado un certificado de APNs. Para obtener más información, vea [crear un certificado de APNs para dispositivos iOS](create-an-apns-certificate-for-ios-devices.md).
-    
-- En **configuración**   >  **General**de   >  **perfil (o administración de dispositivos)**, asegúrese de que ya hay un perfil de Administración instalado. Si es así, quítela.
-    
-- Si ve el mensaje de error "el dispositivo no pudo inscribirse", inicie sesión en Microsoft 365 y asegúrese de que se haya asignado una licencia que incluya Exchange Online al usuario que ha iniciado sesión en el dispositivo.
-    
-- Si aparece el mensaje de error "no se pudo instalar el perfil", pruebe una de las siguientes opciones:
-    
+- Cambia a otra red WIFI o de telefonía móvil en el dispositivo.
+
+- Para dispositivos Android o iOS, desinstale y vuelva a instalar la aplicación Portal de empresa de Intune en el dispositivo. 
+
+## <a name="ios-phone-or-tablet"></a>Teléfono o tableta iOS
+
+- Asegúrese de que ha configurado un certificado de APNs. Para obtener más información, consulta [Crear un certificado APNs para dispositivos iOS.](create-an-apns-certificate-for-ios-devices.md)
+
+- En **Configuración** de perfil general (o administración de   >  ****   >  **dispositivos),** asegúrese de que un perfil de administración no esté instalado todavía. Si es así, quítela.
+
+- Si ve el mensaje de error "El dispositivo no se inscribió", inicie sesión en Microsoft 365 y asegúrese de que se haya asignado una licencia que incluya Exchange Online al usuario que ha iniciado sesión en el dispositivo.
+
+- Si aparece el mensaje de error "No se pudo instalar el perfil", pruebe uno de los siguientes procedimientos:
+
     - Asegúrese de que Safari es el explorador predeterminado en el dispositivo y de que las cookies no están deshabilitadas.
-    
-    - Reinicie el dispositivo y, a continuación, vaya a portal.manage.microsoft.com. Inicie sesión con su identificador de usuario y contraseña de Microsoft 365 e intente instalar el perfil de forma manual.    
+
+    - Reinicia el dispositivo y, a continuación, navega a portal.manage.microsoft.com. Inicie sesión con su identificador de usuario y contraseña de Microsoft 365 e intente instalar el perfil manualmente.
 
 ## <a name="windows-rt"></a>Windows RT
 
-- Asegúrese de que su dominio está configurado en Microsoft 365 para trabajar con la movilidad y la seguridad básicas. Para obtener más información, consulte [set up Basic Mobility and Security](set-up.md).
+- Asegúrese de que su dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad y seguridad básicas.](set-up.md)
     
-- Asegúrese de que el usuario está seleccionando **activar en**   lugar de elegir **unirse**.    
+- Asegúrese de que el usuario está eligiendo **Activar en** lugar de   elegir **Unirse.**
 
-## <a name="windows-10-pc"></a>PC con Windows 10
+## <a name="windows-10-pc"></a>Windows 10 PC
 
-- Asegúrese de que su dominio está configurado en Microsoft 365 para trabajar con la movilidad y la seguridad básicas. Para obtener más información, consulte [set up Basic Mobility and Security](set-up.md).
+- Asegúrese de que su dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad y seguridad básicas.](set-up.md)
     
-- A menos que tenga Azure Active Directory Premium, asegúrese de que el usuario solo está seleccionando **inscribirse en la administración de dispositivos**en   lugar de elegir **conectar**.
+- A menos que tenga Azure Active Directory Premium, **** asegúrese de que el usuario elija Inscribirse solo en la administración de dispositivos en lugar de   elegir **Conectar.**
 
-## <a name="android-phone-or-tablet"></a>Tableta o teléfono Android
+## <a name="android-phone-or-tablet"></a>Teléfono o tableta Android
 
-- Asegúrese de que el dispositivo está ejecutando Android 4,4 o posterior.
-    
-- Asegúrese de que Chrome está actualizado y establecido como explorador predeterminado.
-    
-- Si ve el mensaje de error "no se pudo inscribir este dispositivo", inicie sesión en Microsoft 365 y asegúrese de que se haya asignado una licencia que incluya Exchange Online al usuario que ha iniciado sesión en el dispositivo.
-    
-- Compruebe el área de notificación en el dispositivo para ver si hay acciones del usuario final necesarias y, si es así, complete las acciones.
+- Asegúrate de que el dispositivo ejecuta Android 4.4 o posterior.
+
+- Asegúrese de que Chrome esté actualizado y esté configurado como explorador predeterminado.
+
+- Si ve el mensaje de error "No hemos podido inscribir este dispositivo", inicie sesión en Microsoft 365 y asegúrese de que se haya asignado una licencia que incluya Exchange Online al usuario que ha iniciado sesión en el dispositivo.
+
+- Comprueba el área de notificación del dispositivo para ver si hay alguna acción necesaria del usuario final pendiente y, si es así, completa las acciones.

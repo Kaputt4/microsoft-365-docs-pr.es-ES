@@ -17,117 +17,117 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Configurar la movilidad y la seguridad básicas para proteger y administrar los dispositivos móviles de los usuarios.
-ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: Configure la movilidad y la seguridad básicas para proteger y administrar los dispositivos móviles de los usuarios.
+ms.openlocfilehash: 38f122141b370468bc591df49b3e1891a8a66a43
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545813"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876869"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurar la Seguridad de Movilidad Básica
 
-La tecnología integrada de movilidad y seguridad básica de Microsoft 365 ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhone, iPad, Androids y Windows Phone. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
+La movilidad y seguridad básica integrada para Microsoft 365 le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhone, iPad, Android y teléfonos Windows. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
-¿Tiene preguntas? Para obtener preguntas más frecuentes que ayuden a resolver preguntas comunes, vea preguntas más frecuentes sobre [seguridad y movilidad básicas (FAQ)](frequently-asked-questions.md). Tenga en cuenta que no puede usar una cuenta de administrador delegada para administrar la seguridad y la movilidad básicas. Para obtener más información, consulte [Partners: oferta de administración delegada](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+¿Tiene preguntas? Para obtener preguntas más frecuentes para ayudar a resolver preguntas comunes, consulte preguntas más frecuentes (P+F) sobre movilidad [y seguridad básicas.](frequently-asked-questions.md) Tenga en cuenta que no puede usar una cuenta de administrador delegada para administrar la movilidad y la seguridad básicas. Para obtener más información, consulta [Partners: Ofrecer administración delegada.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
-La administración de dispositivos forma parte del centro de seguridad & cumplimiento, por lo que tendrá que ir allí para iniciar la instalación de MDM.
+La administración de dispositivos forma parte del Centro de seguridad & cumplimiento, por lo que tendrá que ir allí para iniciar la configuración básica de movilidad y seguridad.
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Activación del servicio básico de movilidad y seguridad
 
 1. Inicie sesión en Microsoft 365 con su cuenta de administrador global.
 
-2. Vaya a [activar la movilidad y la seguridad básicas](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
+2. Vaya a [Activar movilidad y seguridad básicas.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)
 
-   Puede tardar algún tiempo en activar la movilidad y la seguridad básicas. Cuando termine, recibirá un correo electrónico en el que se explican los siguientes pasos que debe seguir.
+   La movilidad y la seguridad básicas pueden tardar algún tiempo en activarse. Cuando termine, recibirá un correo electrónico que explica los siguientes pasos que debe realizar.
 
 ## <a name="set-up-mobile-device-management"></a>Configurar la administración de dispositivos móviles
 
-Cuando el servicio esté listo, complete los siguientes pasos para finalizar la instalación.
+Cuando el servicio esté listo, siga los pasos siguientes para finalizar la instalación.
 
-### <a name="step-1-required-configure-domains-for-mdm"></a>Paso 1: (obligatorio) configurar dominios para MDM
+### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Paso 1: (Obligatorio) Configurar dominios para movilidad y seguridad básicas
 
-Si no tiene un dominio personalizado asociado con Microsoft 365 o si no está administrando dispositivos Windows, puede omitir esta sección. De lo contrario, tendrá que agregar registros DNS para el dominio en su host DNS. Si ya ha agregado los registros, como parte de la configuración de su dominio con Microsoft 365, ya está todo configurado. Después de agregar los registros, los usuarios de Microsoft 365 de la organización que inician sesión en su dispositivo de Windows con una dirección de correo electrónico que usa su dominio personalizado se redirigen para inscribirse en la movilidad y la seguridad básicas.
+Si no tiene un dominio personalizado asociado a Microsoft 365 o si no está administrando dispositivos Windows, puede omitir esta sección. De lo contrario, deberá agregar registros DNS para el dominio en el host DNS. Si ya ha agregado los registros, como parte de la configuración de su dominio con Microsoft 365, está todo configurado. Después de agregar los registros, los usuarios de Microsoft 365 de su organización que inicien sesión en su dispositivo Windows con una dirección de correo electrónico que use su dominio personalizado se redirigirán para inscribirse en Movilidad y seguridad básicas.
 
-¿Necesita ayuda para configurar los registros? Busque el registrador de dominios y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista que se proporciona en [agregar registros DNS para conectar el dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Use esas instrucciones para crear registros CNAME descritos en [simplificar la inscripción de Windows sin Azure ad Premium](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
+¿Necesita ayuda para configurar los registros? Busque su registrador de dominios y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista proporcionada en Agregar registros DNS para conectar [su dominio.](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Usa esas instrucciones para crear registros CNAME descritos en Simplificar la inscripción [de Windows sin Azure AD Premium.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
 
-Después de agregar los dos registros CNAME, vuelva al centro de seguridad & cumplimiento y vaya a administración de dispositivos de **prevención de pérdida de datos**  >  **Device management**   para completar el paso siguiente.
+Después de agregar los dos registros CNAME, vuelva al Centro de seguridad y cumplimiento de & y vaya a Administración de **dispositivos** de prevención de pérdida de datos para  >     completar el paso siguiente.
 
-### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Paso 2: (obligatorio) configurar un certificado de APNs para dispositivos iOS
+### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Paso 2: (Obligatorio) Configurar un certificado APNs para dispositivos iOS
 
-Para administrar dispositivos iOS como iPad y iPhone, debe crear un certificado de APNs.
+Para administrar dispositivos iOS como iPad y iPhone, debe crear un certificado APNs.
 
 1. Inicie sesión en Microsoft 365 con su cuenta de administrador global.
 
-2. En el explorador, escriba:  [https://protection.office.com](https://protection.office.com/) .
+2. En el tipo de explorador:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Seleccione **Data loss prevention**   >  **Administración de dispositivos**de prevención de pérdida de datos y elija **certificado de APNs para dispositivos iOS**.
+3. Seleccione  **Administración de dispositivos de prevención** de pérdida de   > datos y elija Certificado **de APNs para dispositivos iOS.** ****
 
-4. En la página Configuración del certificado de notificación de inserción de Apple, elija **siguiente**.
+4. En la página Configuración del certificado de notificación de inserción de Apple, elija **Siguiente.**
 
-5. Seleccione **descargar el archivo CSR**   y guardar la solicitud de firma de certificado en algún lugar del equipo que recuerde. Seleccione **siguiente**.
+5. Seleccione **Descargar el archivo CSR y** guarde la solicitud de firma de certificado en algún lugar del equipo que   recuerde. Seleccione **Siguiente**.
 
-6. En la página crear un certificado de APNs:
+6. En la página Crear un certificado de APNs:
 
-   - Seleccione portal de APNS de Apple para abrir el portal de certificados push de Apple.
+   - Seleccione Apple APNS Portal para abrir el Portal de certificados de inserción de Apple.
    - Sign in with an Apple ID.
 
      > [!IMPORTANT]
      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-   - Seleccione crear un certificado y acepte los términos de uso.
-   - Vaya a la solicitud de firma de certificado que descargó en el equipo de Microsoft 365 y selectUpload.
+   - Seleccione Crear un certificado y acepte los Términos de uso.
+   - Vaya a la solicitud de firma de certificado que descargó en su equipo desde Microsoft 365 y seleccioneUpload.
    - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
 
      > [!TIP]
      > If you're having trouble downloading the certificate, refresh your browser.
 
-7. Vuelva a Microsoft 365 y seleccione **siguiente**.
+7. Vuelva a Microsoft 365 y seleccione **Siguiente.**
 
 8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
 9. Seleccione  **Finalizar**.
 
-### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Paso 3: (recomendado) configurar la autenticación multifactor
+### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Paso 3: (Recomendado) Configurar la autenticación multifactor
 
-MFA ayuda a proteger el inicio de sesión en Microsoft 365 para la inscripción de dispositivos móviles requiriendo una segunda forma de autenticación. Los usuarios deben confirmar una llamada telefónica, mensaje de texto o notificación de la aplicación en el dispositivo móvil después de escribir correctamente su contraseña de cuenta de trabajo. Pueden inscribir su dispositivo solo después de que se complete esta segunda forma de autenticación. Una vez inscritos los dispositivos de usuario en la movilidad y la seguridad básica, los usuarios pueden tener acceso a los recursos de 365 de Microsoft con su cuenta profesional.
+MFA ayuda a proteger el inicio de sesión en Microsoft 365 para la inscripción de dispositivos móviles al requerir una segunda forma de autenticación. Los usuarios deben confirmar una llamada telefónica, un mensaje de texto o una notificación de la aplicación en su dispositivo móvil después de escribir correctamente la contraseña de su cuenta de trabajo. Solo pueden inscribir su dispositivo después de que se complete este segundo formulario de autenticación. Después de que los dispositivos de usuario se inscriban en movilidad y seguridad básicas, los usuarios pueden acceder a los recursos de Microsoft 365 solo con su cuenta profesional.
 
-Para obtener información sobre cómo activar la MFA en el portal de Azure AD, vea [set up multi-factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=519255).
+Para obtener información sobre cómo activar MFA en el portal de Azure AD, vea [Configurar la autenticación multifactor.](https://go.microsoft.com/fwlink/p/?LinkId=519255)
 
-Una vez configurada la MFA, vuelva al centro de cumplimiento de & de seguridad y navegue a directivas de dispositivos de administración de dispositivos de **prevención de pérdida de datos**   >  **Device management**   >  **Device policies**   para completar el paso siguiente.
+Después de configurar MFA, vuelva al Centro de seguridad y cumplimiento de & y vaya a directivas de dispositivos de administración de **dispositivos** de prevención de pérdida de datos para   >     >  ****   completar el paso siguiente.
 
-### <a name="step-4-recommended-manage-device-security-policies"></a>Paso 4: (recomendado) administrar directivas de seguridad de dispositivos
+### <a name="step-4-recommended-manage-device-security-policies"></a>Paso 4: (Recomendado) Administrar directivas de seguridad de dispositivos
 
-El siguiente paso es crear e implementar directivas de seguridad de dispositivo para ayudar a proteger los datos de la organización 365 de Microsoft. Por ejemplo, puede ayudar a evitar la pérdida de datos si un usuario pierde su dispositivo mediante la creación de una directiva para bloquear dispositivos tras cinco minutos de inactividad y borrar los dispositivos después de tres errores de inicio de sesión.
+El siguiente paso es crear e implementar directivas de seguridad de dispositivos para ayudar a proteger los datos de la organización de Microsoft 365. Por ejemplo, puedes ayudar a evitar la pérdida de datos si un usuario pierde su dispositivo mediante la creación de una directiva para bloquear dispositivos después de cinco minutos de inactividad y borrar dispositivos después de tres errores de inicio de sesión.
 
 1. Inicie sesión en Microsoft 365 con su cuenta de administrador global.
 
-2. Seleccione [activar la administración de dispositivos móviles](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Si el servicio está activado, en lugar de los pasos de activación, verá un vínculo para [administrar dispositivos](https://admin.microsoft.com/adminportal/home#/MifoDevices)   .
+2. Seleccione [Activar administración de dispositivos móviles.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx) Si el servicio está activado, en su lugar, los pasos de activación verás un vínculo a [Administrar dispositivos.](https://admin.microsoft.com/adminportal/home#/MifoDevices)  
 
-3. Vaya a **directivas de dispositivo**.
+3. Ve a **Directivas de dispositivo.**
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la Directiva de seguridad y movilidad":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración de directiva de movilidad y seguridad básica":::
 
-4. Cree e implemente directivas de seguridad de dispositivos adecuadas para su organización siguiendo los pasos descritos en [Create Device Security policies in Basic Mobility and Security](create-device-security-policies.md).
+4. Cree e implemente directivas de seguridad de dispositivos adecuadas para su organización siguiendo los pasos descritos en Crear directivas de seguridad de [dispositivos en Movilidad y seguridad básicas.](create-device-security-policies.md)
 
 > [!TIP]
 >
-> - Al crear una nueva Directiva, es posible que desee establecer la Directiva para permitir la infracción del acceso y de la Directiva de informes en la que un dispositivo de usuario no es compatible con la Directiva. Esto le permite ver cuántos dispositivos móviles se ven afectados por la Directiva sin bloquear el acceso a Microsoft 365.
+> - Al crear una nueva directiva, es posible que quieras establecer la directiva para permitir el acceso y notificar la infracción de la directiva cuando un dispositivo de usuario no cumple con la directiva. Esto le permite ver cuántos dispositivos móviles se ven afectados por la directiva sin bloquear el acceso a Microsoft 365.
 >
-> - Antes de implementar una nueva Directiva para todos los usuarios de la organización, le recomendamos que la pruebe en los dispositivos usados por un pequeño número de usuarios.
+> - Antes de implementar una nueva directiva para todos los usuarios de la organización, te recomendamos que la pruebes en los dispositivos usados por un número reducido de usuarios.
 >
-> - Además, antes de implementar directivas, permita a su organización saber los posibles impactos de inscribir un dispositivo en la movilidad y la seguridad básicas. En función de cómo configure las directivas, se podría bloquear el acceso a Microsoft 365 a los dispositivos que no se ajustan a las directivas (dispositivos no compatibles). Los dispositivos no compatibles también pueden tener aplicaciones instaladas, fotos y otra información personal que, en un dispositivo inscrito, podría eliminarse si el dispositivo se ha borrado. Para obtener más información, consulte [borrar un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
+> - Además, antes de implementar directivas, haga que su organización conozca las posibles consecuencias de inscribir un dispositivo en movilidad y seguridad básicas. Según cómo configure las directivas, los dispositivos que no cumplan con las directivas (dispositivos no compatibles) podrían bloquearse para que no tengan acceso a Microsoft 365. Los dispositivos no compatibles también pueden tener aplicaciones instaladas, fotos y otra información personal que, en un dispositivo inscrito, podrían eliminarse si se elimina el dispositivo. Para obtener más información, consulta [Borrar un dispositivo móvil en Movilidad y seguridad básicas.](wipe-mobile-device.md)
 
 ## <a name="make-sure-users-enroll-their-devices"></a>Asegurarse de que los usuarios inscriban sus dispositivos
 
-Después de crear e implementar una directiva de administración de dispositivos móviles, todos los usuarios de Microsoft 365 con licencia de la organización a los que se aplica la Directiva de dispositivo reciben un mensaje de inscripción la próxima vez que inicien sesión en Microsoft 365 desde su dispositivo móvil. Deben completar los pasos de inscripción y activación para poder acceder a correo electrónico y documentos de Microsoft 365. Para obtener más información, vea [inscribir un dispositivo móvil con la seguridad y la movilidad básicos](enroll-your-mobile-device.md).
+Después de crear e implementar una directiva de administración de dispositivos móviles, cada usuario con licencia de Microsoft 365 de su organización que aplique la directiva de dispositivo recibirá un mensaje de inscripción la próxima vez que inicie sesión en Microsoft 365 desde su dispositivo móvil. Deben completar los pasos de inscripción y activación para poder acceder al correo electrónico y los documentos de Microsoft 365. Para obtener más información, consulta [Inscribir el dispositivo móvil con movilidad y seguridad básicas.](enroll-your-mobile-device.md)
 
 > [!IMPORTANT]
-> Si el proceso de inscripción no admite el idioma preferido de un usuario, es posible que los usuarios reciban notificaciones de inscripción y los pasos en sus dispositivos móviles en otro idioma. Actualmente no se admiten todos los idiomas admitidos en Microsoft 365 para el proceso de inscripción en dispositivos móviles.
+> Si el proceso de inscripción no admite el idioma preferido de un usuario, es posible que los usuarios reciban notificaciones de inscripción y pasos en sus dispositivos móviles en otro idioma. Actualmente, no todos los idiomas admitidos en Microsoft 365 son compatibles con el proceso de inscripción en dispositivos móviles.
 
-Los usuarios con dispositivos Android o iOS son necesarios para instalar la aplicación portal de empresa como parte del proceso de inscripción.
+Los usuarios con dispositivos Android o iOS deben instalar la aplicación Portal de empresa como parte del proceso de inscripción.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Capacidades de movilidad y seguridad básicas](capabilities.md)<br/>
-[Crear directivas de seguridad de dispositivos en la movilidad y la seguridad básicas](create-device-security-policies.md)
+[Capacidades de Movilidad y seguridad básicas](capabilities.md)<br/>
+[Crear directivas de seguridad de dispositivos en Movilidad y seguridad básicas](create-device-security-policies.md)

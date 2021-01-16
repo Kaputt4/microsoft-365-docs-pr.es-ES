@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender cómo el aprendizaje de simulación de ataques en el Centro de seguridad de Microsoft 365 afecta a los empleados y puede obtener información a partir de resultados de simulación y aprendizaje.
-ms.openlocfilehash: c283819550872691d8dd23d3921c22cb23637633
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870960"
+ms.locfileid: "49877145"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
 Dentro del entrenamiento de simulación de ataques, Microsoft proporciona información basada en los resultados de simulaciones y cursos que los empleados han pasado. Estas conclusiones te ayudarán a mantenerte informado sobre el progreso de preparación de amenazas de los empleados, así como a recomendar los siguientes pasos para preparar mejor a los empleados y a tu entorno para los ataques.
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Estamos trabajando continuamente en la expansión de las conclusiones que están disponibles para usted. El impacto en el comportamiento y las acciones recomendadas están disponibles actualmente. Para empezar, diríjase a la [formación de simulación de ataques en el Centro de seguridad de Microsoft 365.](https://security.microsoft.com/attacksimulator?viewid=overview)
 

@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para cuentas de prioridad en sus organizaciones de Microsoft 365.
-ms.openlocfilehash: acd2eba0acd533d0cd8223f2c433cc023fc23287
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 8a1d92ef12070a722a1b618bf51ab6d8130f49c0
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790131"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881804"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
 
-No todas las cuentas de usuario tienen acceso a la misma información de la compañía. Algunas cuentas tienen acceso a información confidencial, como datos financieros, información de desarrollo de productos, acceso de asociados a sistemas de compilación críticos y mucho más. Las cuentas que tienen acceso a información extremadamente confidencial representan una amenaza grave si se ponen en peligro. Llamamos a estos tipos de cuentas _cuentas de prioridad._ Entre las cuentas de prioridad se incluyen los directores ejecutivos, los COS, los directores de finanzas, las cuentas de administrador de infraestructura, las cuentas del sistema de compilación y mucho más.
+No todas las cuentas de usuario tienen acceso a la misma información de la compañía. Algunas cuentas tienen acceso a información confidencial, como datos financieros, información de desarrollo de productos, acceso de asociados a sistemas de compilación críticos y mucho más. Si se ponen en peligro, las cuentas que tienen acceso a información extremadamente confidencial representan una amenaza grave. Llamamos a estos tipos de cuentas _cuentas de prioridad._ Las cuentas de prioridad incluyen (pero no están limitadas a) los directores ejecutivos, los CCE, los directores de finanzas, las cuentas de administrador de infraestructura, las cuentas del sistema de compilación y mucho más.
 
 Para los atacantes, los ataques de suplantación de identidad comunes que convierten en una red aleatoria para usuarios comunes o desconocidos son ineficaces. Por otra parte, los ataques de suplantación de identidad _(phishing)_ o _whaling_ que tienen como objetivo cuentas de prioridad son muy enriquecedores para los atacantes. Por lo tanto, las cuentas de prioridad requieren una protección más sólida que la protección normal para ayudar a evitar que la cuenta se vea comprometida.
 
@@ -44,6 +44,7 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 |[Usar directivas de seguridad preestablecidas estrictas para cuentas de prioridad](#use-strict-preset-security-policies-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Aplicar etiquetas de usuario a cuentas de prioridad](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Supervisar cuentas de prioridad en alertas, informes y detecciones](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Entrenar a los usuarios](#train-users)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentar la seguridad de inicio de sesión para las cuentas de prioridad
@@ -99,6 +100,31 @@ Después de proteger y etiquetar a los usuarios prioritarios, puede usar los inf
 |Informe de problemas de correo electrónico para cuentas de prioridad|El **informe problemas de** correo electrónico para cuentas de prioridad en el Centro de administración de Exchange (EAC) contiene información sobre los mensajes no entregados y retrasados para las cuentas de **prioridad.** Para obtener más información, consulte [Problemas de correo electrónico para el informe de cuentas de prioridad.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
-## <a name="see-also"></a>Consulta también
+## <a name="train-users"></a>Entrenar a los usuarios
+
+La formación de usuarios con cuentas de prioridad puede ayudar a ahorrar mucho tiempo y frustración a esos usuarios y al equipo de operaciones de seguridad. Los usuarios expertos tienen menos probabilidades de abrir datos adjuntos o hacer clic en vínculos en mensajes de correo electrónico cuestionables, y es más probable que eviten sitios web sospechosos.
+
+El Manual [](https://www.belfercenter.org/CyberPlaybook) de campañas de ciberseguridad de la escuela de Phish proporciona una guía excelente para establecer una cultura sólida de reconocimiento de la seguridad dentro de su organización, incluida la formación a los usuarios para identificar ataques de suplantación de identidad.
+
+Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los usuarios de su organización:
+
+<br>
+
+****
+
+|Concepto|Recursos|Descripción|
+|---|---|---|
+|Microsoft 365|[Caminos de aprendizaje personalizables](https://docs.microsoft.com/office365/customlearning/)|Estos recursos pueden ayudarle a reunir formación para los usuarios de su organización.|
+|Seguridad de Microsoft 365|[Módulo de aprendizaje: proteger su organización con seguridad inteligente integrada de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para articular las ventajas de estas características de seguridad.|
+|Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
+|Aprendizaje de simulación de ataques|[Introducción al aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)|La formación de simulación de ataques en Microsoft Defender para Office 365 Plan 2 permite a los administradores configurar, iniciar y realizar un seguimiento de ataques de suplantación de identidad simulados contra grupos específicos de usuarios.|
+
+Además, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos [de hackers y malware.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Entre estas acciones se incluyen:
+
+- Uso de contraseñas seguras
+- Protección de dispositivos
+- Habilitación de características de seguridad en equipos Windows 10 y Mac (para dispositivos no administrados)
+
+## <a name="see-also"></a>Vea también
 
 [Anuncio de protección de cuentas de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
