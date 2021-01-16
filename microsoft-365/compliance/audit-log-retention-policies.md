@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: c2449ab90d04fd44909999d25b940ee4d2758b15
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: c106024e5426972f6637d6226b385d1179516d4d
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753339"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870949"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -36,10 +36,10 @@ Puede crear y administrar directivas de retención de registros de auditoría en
 
 ## <a name="default-audit-log-retention-policy"></a>Directivas de retención de registros de auditoría predeterminadas
 
-Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de registros de auditoría predeterminada para todas las organizaciones. Esta directiva conserva todos los registros de auditoría de Exchange, SharePoint y Azure Active Directory durante un año. Esta directiva predeterminada conserva registros de auditoría que contienen el valor de **AzureActiveDirectory** , **Exchange** o **SharePoint** de la propiedad **Carga de trabajo** (que es el servicio en el que se produjo la actividad). La directiva predeterminada no se puede modificar. Vea la sección [Más información](#more-information) en este artículo para obtener una lista de los tipos de registros para cada carga de trabajo que se incluye en la directiva predeterminada.
+Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de registros de auditoría predeterminada para todas las organizaciones. Esta directiva conserva todos los registros de auditoría de Exchange, SharePoint y Azure Active Directory durante un año. Esta directiva predeterminada conserva registros de auditoría que contienen el valor de **AzureActiveDirectory**, **Exchange** o **SharePoint** de la propiedad **Carga de trabajo** (que es el servicio en el que se produjo la actividad). La directiva predeterminada no se puede modificar. Vea la sección [Más información](#more-information) en este artículo para obtener una lista de los tipos de registros para cada carga de trabajo que se incluye en la directiva predeterminada.
 
 > [!NOTE]
-> La directiva de retención de registros de auditoría predeterminada solo se aplica a los registros de auditoría para la actividad realizada por usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5, o que tienen una licencia del complemento de Cumplimiento de Microsoft 365 E5 o de eDiscovery y Auditoría de Microsoft 365 E5 Si no tiene usuarios de E5 en su organización, los registros de auditoría correspondientes se conservarán durante 90 días.
+> La directiva de retención de registros de auditoría predeterminada solo se aplica a los registros de auditoría para la actividad realizada por usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5, o que tienen una licencia del complemento de Cumplimiento de Microsoft 365 E5 o de eDiscovery y Auditoría de Microsoft 365 E5 Si no tiene usuarios o invitados de E5 en su organización, los registros de auditoría correspondientes se conservarán durante 90 días.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Antes de crear una directiva de retención de registros de auditoría
 
@@ -55,13 +55,13 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con la cuenta de usuario que tenga asignado el rol de Configuración de la organización en el Centro de seguridad y cumplimiento.
 
-2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo** , y luego haga clic en **Auditoría** .
+2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Mostrar todo**, y luego haga clic en **Auditoría**.
 
-    Aparece la página **Auditoría** .
+    Aparece la página **Auditoría**.
 
     ![La página de Búsqueda en el registro de auditoría en el Centro de cumplimiento](../media/AuditLogRetentionPolicy1.png)
 
-3. Haga clic en **Crear directiva de retención de auditoría** , y después, complete los siguientes campos en la página flotante:
+3. Haga clic en **Crear directiva de retención de auditoría**, y después, complete los siguientes campos en la página flotante:
 
     ![Página flotante de la directiva de retención de auditoría](../media/AuditLogRetentionPolicy2.png)
 
@@ -69,9 +69,9 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
    2. **Descripción:** es opcional, pero le resultará útil para proporcionar información sobre la directiva (como el tipo de registro o la carga de trabajo, los usuarios especificados en la directiva y la duración).
 
-   3. **Usuarios:** seleccione uno o más usuarios para aplicar la directiva. Si deja este cuadro en blanco, la directiva se aplicará a todos los usuarios. Si deja en blanco **Tipo de registro** , deberá seleccionar un usuario.
+   3. **Usuarios:** seleccione uno o más usuarios para aplicar la directiva. Si deja este cuadro en blanco, la directiva se aplicará a todos los usuarios. Si deja en blanco **Tipo de registro**, deberá seleccionar un usuario.
 
-   4. **Tipo de registro:** el tipo de registro de auditoría al que se aplica la directiva. Si deja en blanco esta propiedad, debe seleccionar un usuario en el cuadro **Usuarios** . Puede seleccionar un único tipo de registro o varios tipos de registro:
+   4. **Tipo de registro:** el tipo de registro de auditoría al que se aplica la directiva. Si deja en blanco esta propiedad, debe seleccionar un usuario en el cuadro **Usuarios**. Puede seleccionar un único tipo de registro o varios tipos de registro:
 
    - Si selecciona un único tipo de registro, el campo **Actividades** se mostrará dinámicamente. Puede usar la lista desplegable para seleccionar las actividades del tipo de registro seleccionado a las que desea aplicar la directiva. Si no elige actividades específicas, la directiva se aplicará a todas las actividades del tipo de registro seleccionado.
 
@@ -79,7 +79,7 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
    5. **Duración:** es la cantidad de tiempo que se conservarán los registros de auditoría que cumplan los criterios de la directiva.
 
-   6. **Prioridad:** este valor determina el orden en el que se procesan las directivas de retención de registros de auditoría de su organización. Un valor más alto indica una prioridad mayor. Por ejemplo, una directiva con un valor de prioridad de **5** tendría prioridad sobre una directiva con un valor de prioridad de **0** . Como se ha explicado anteriormente, cualquier directiva de retención de registros de auditoría personalizada tiene prioridad sobre la directiva predeterminada para su organización.
+   6. **Prioridad:** este valor determina el orden en el que se procesan las directivas de retención de registros de auditoría de su organización. Un valor más alto indica una prioridad mayor. Por ejemplo, una directiva con un valor de prioridad de **5** tendría prioridad sobre una directiva con un valor de prioridad de **0**. Como se ha explicado anteriormente, cualquier directiva de retención de registros de auditoría personalizada tiene prioridad sobre la directiva predeterminada para su organización.
 
 4. Haga clic en **Guardar** para crear la nueva directiva de retención de registros de auditoría.
 
@@ -99,7 +99,7 @@ También puede usar PowerShell del Centro de seguridad y cumplimiento para crear
 
    - Una descripción de la directiva.
 
-   - Conserva todas las actividades de Microsoft Teams (definidas en el parámetro *RecordType* ).
+   - Conserva todas las actividades de Microsoft Teams (definidas en el parámetro *RecordType*).
 
    - Conserva los registros de auditoría de Microsoft Teams por 10 años.
 
@@ -128,7 +128,7 @@ Para obtener más información, consulte [Get-UnifiedAuditLogRetentionPolicy](ht
 
 ## <a name="some-audit-log-retention-policies-not-supported-in-the-ui"></a>Algunas directivas de retención de registros de auditoría no son compatibles con la UI
 
-Si usa el cmdlet **New-UnifiedAuditLogRetentionPolicy** , es posible crear una directiva de retención de registros de auditoría para las actividades y los tipos de registros que no están disponibles en la herramienta **Crear directivas de retención de auditoría** en el centro de cumplimiento de Microsoft 365. En este caso, no podrá editar la directiva (por ejemplo, cambiar la duración de la retención o agregar y quitar actividades) desde la pestaña **Directivas de retención de auditoría** en el centro de cumplimiento. Solo podrá ver y eliminar la directiva en el centro de cumplimiento. Para editar la Directiva, tendrá que usar el cmdlet **Set-UnifiedAuditLogRetentionPolicy** en el centro de seguridad y cumplimiento de PowerShell.
+Si usa el cmdlet **New-UnifiedAuditLogRetentionPolicy**, es posible crear una directiva de retención de registros de auditoría para las actividades y los tipos de registros que no están disponibles en la herramienta **Crear directivas de retención de auditoría** en el centro de cumplimiento de Microsoft 365. En este caso, no podrá editar la directiva (por ejemplo, cambiar la duración de la retención o agregar y quitar actividades) desde la pestaña **Directivas de retención de auditoría** en el centro de cumplimiento. Solo podrá ver y eliminar la directiva en el centro de cumplimiento. Para editar la Directiva, tendrá que usar el cmdlet **Set-UnifiedAuditLogRetentionPolicy** en el centro de seguridad y cumplimiento de PowerShell.
 
 ## <a name="more-information"></a>Más información
 

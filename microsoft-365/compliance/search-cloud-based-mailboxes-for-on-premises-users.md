@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilice la herramienta Búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de Teams de usuarios locales en un entorno híbrido de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60bb207463c360d98623caed4024bb87deb5fdfc
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277098"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868018"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 
@@ -70,7 +70,7 @@ Después de que se haga el cambio de ingeniería, el Soporte técnico de Microso
 
 Una vez implementada esta función en su organización, se realizan los siguientes cambios en la búsqueda de contenido y en las búsquedas asociadas a un caso de eDiscovery en el Centro de Seguridad y cumplimiento:
   
-- La casilla de verificación** Agregar contenido de aplicaciones de Office para usuarios locales** se agrega en la sección **Ubicaciones** en la Búsqueda de contenido.
+- La casilla de verificación **Agregar contenido de aplicaciones de Office para usuarios locales** se agrega en la sección **Ubicaciones** en la Búsqueda de contenido.
 
     ![La casilla de verificación "Agregar contenido de aplicaciones de Office para usuarios locales" se agrega a la interfaz de búsqueda de contenido](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
@@ -86,7 +86,7 @@ Una vez habilitada la función, puede utilizar la Búsqueda de contenido en el C
 
     Como se ha explicado anteriormente, la casilla de verificación **Agregar contenido de la aplicación de Office para usuarios locales** se muestra en la sección **Ubicaciones**. Está seleccionado de forma predeterminada.
 
-3. Crear la consulta de la palabra clave y añadir condiciones a la consulta de búsqueda si es necesario. Para buscar sólo los datos de los chats de Teams, puede añadir la siguiente consulta en el cuadro**Palabras clave**:
+3. Crear la consulta de la palabra clave y añadir condiciones a la consulta de búsqueda si es necesario. Para buscar sólo los datos de los chats de Teams, puede añadir la siguiente consulta en el cuadro **Palabras clave**:
 
     ```text
     kind:im
@@ -142,19 +142,19 @@ Para más información sobre el uso de estos cmdlets, consulte:
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
- **¿Dónde se ubica el almacenamiento en la nube de usuarios locales?**
+**¿Dónde se ubica el almacenamiento en la nube de usuarios locales?**
   
-El almacenamiento en la nube se aprovisiona en el mismo centro de datos que el de su organización.
+Los datos del chat de Teams se almacenan en la Ubicación de datos preferida (PDL) para un On-Premises User. La PDL respeta tanto los entornos Single-Geo y los Multi-Geo. Para más información, vea [Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo).
   
  **¿Existen otros requisitos además de la presentación de una solicitud de apoyo?**
   
- Como se ha explicado anteriormente, las identidades de los usuarios con buzones de correo electrónico local deben estar sincronizadas con su organización basada en la nube, de modo que se cree una cuenta de usuario de correo correspondiente para cada cuenta de usuario local en Office 365. Su organización también debe tener una suscripción empresarial a Office 365, como una suscripción a Office 365 Enterprise E1, E3 o E5.
+Como se ha explicado anteriormente, las identidades de los usuarios con buzones de correo electrónico local deben estar sincronizadas con su organización basada en la nube, de modo que se cree una cuenta de usuario de correo correspondiente para cada cuenta de usuario local en Office 365. Su organización también debe tener una suscripción empresarial a Office 365, como una suscripción a Office 365 Enterprise E1, E3 o E5.
   
  **¿Existe el riesgo de perder los datos del chat de los equipos si el buzón del usuario se migra a la nube?**
   
 No. Cuando migre el buzón principal de un usuario local a la nube, los datos de chat de los equipos de ese usuario se migrarán a su nuevo buzón principal basado en la nube.
   
- **¿Puedo aplicar una retención de eDiscovery o las directivas de retención a los usuarios locales? **
+ **¿Puedo aplicar una retención de eDiscovery o las directivas de retención a los usuarios locales?**
   
 Sí. Puede aplicar políticas de retención o retención de eDiscovery a los chats y mensajes de canales de los usuarios locales.
   

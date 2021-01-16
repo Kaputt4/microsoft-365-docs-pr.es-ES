@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614934"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868028"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -79,7 +79,7 @@ Habilitar las etiquetas de confidencialidad para contenedores significa que ahor
     
     Cuando solo este ámbito para la etiqueta esté seleccionado, la etiqueta no se mostrará en las aplicaciones de Office que admiten etiquetas de confidencialidad y no se podrá aplicar a archivos y mensajes de correo electrónico. Tener esta separación de etiquetas puede ser útil tanto para los usuarios como para los administradores, pero también puede aumentar la complejidad de la implementación de la etiqueta.
     
-    Por ejemplo, necesita revisar atentamente la [clasificación de etiquetas](sensitivity-labels.md#label-priority-order-matters), ya que SharePoint detecta cuándo se carga un documento con etiqueta en un sitio etiquetado. En este escenario, se genera automáticamente un evento de auditoría y un correo electrónico cuando el documento tiene una etiqueta de confidencialidad con mayor prioridad que la etiqueta del sitio. Para obtener más información, vea la sección [Auditoría de actividades de etiquetas de confidencialidad](#auditing-sensitivity-label-activities) en esta página. 
+    Por ejemplo, necesita revisar atentamente la [clasificación de etiquetas](sensitivity-labels.md#label-priority-order-matters), ya que SharePoint detecta cuándo se carga un documento con etiqueta en un sitio etiquetado. En este escenario, se generan automáticamente un evento de auditoría y un correo electrónico cuando el documento tiene una etiqueta de confidencialidad con mayor prioridad que la etiqueta del sitio. Para obtener más información, vea la sección [Auditoría de actividades de etiquetas de confidencialidad](#auditing-sensitivity-label-activities) en esta página. 
 
 2. A continuación, en la página **Definir configuración de protección para grupos y sitios**, seleccione una o ambas opciones disponibles:
     
@@ -277,9 +277,10 @@ Las siguientes aplicaciones y servicios son compatibles con etiquetas de confide
 
   - SharePoint
   - Teams
-  - Outlook en la Web y para Windows, Mac OS, iOS y Android
+  - Outlook en la Web y para Windows, macOS, iOS y Android
   - Forms
   - Stream
+  - Planner (lanzando) 
 
 Las siguientes aplicaciones y servicios actualmente no son compatibles con las etiquetas de confidencialidad establecidas para la configuración de sitios y grupos:
 
@@ -293,7 +294,6 @@ Las siguientes aplicaciones y servicios actualmente no son compatibles con las e
 
   - Dynamics 365
   - Yammer
-  - Planner
   - Project
   - Power BI
 
