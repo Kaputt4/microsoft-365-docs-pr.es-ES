@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870984"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881710"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -46,7 +46,7 @@ Vea este vídeo para obtener información general del proceso.
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> Para ver un resumen de dos páginas de este escenario, consulte el [Póster de aislamiento de seguridad de Microsoft Teams](../downloads/team-security-isolation-poster.pdf).
+<a name="poster"></a> Para ver un resumen de una página de este escenario, consulte el [Póster de aislamiento de seguridad de Microsoft Teams](../downloads/team-security-isolation-poster.pdf).
 
 [![Póster de aislamiento de seguridad de Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
