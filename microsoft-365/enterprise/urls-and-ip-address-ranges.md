@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumen: Office 365 necesita conectividad a Internet. Los siguientes puntos de conexión deben resultar accesibles para los clientes que usan planes de Office 365, incluida la nube de la comunidad de administración pública (GCC).'
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794405"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883341"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Intervalos de direcciones IP y direcciones URL de Office 365
 
@@ -62,7 +62,7 @@ Estas son columnas de datos que se muestran:
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->Para obtener recomendaciones sobre las direcciones URL y direcciones IP de Yammer, consulte [esta entrada de blog](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>Para obtener recomendaciones sobre direcciones IP y URL de Yammer, consulte [El uso de direcciones IP codificadas de forma rígida para Yammer no es recomendable](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) en el blog de Yammer.
 >
 
 ## <a name="related-topics"></a>Temas relacionados
@@ -71,7 +71,7 @@ Estas son columnas de datos que se muestran:
 
 [Puntos de conexión generales de Microsoft Stream](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Supervisar la conectividad de Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[Supervisar la conectividad de Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [Entidad de certificación raíz y el paquete de entidad de certificación intermedia en el sistema de aplicación de terceros](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Estas son columnas de datos que se muestran:
 [Rangos de IP de Microsoft Azure y etiquetas de servicio: Nube de China](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Espacio IP público de Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[Registro de nombre de servicio y número de puerto del protocolo de transporte](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
