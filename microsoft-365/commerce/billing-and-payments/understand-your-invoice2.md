@@ -79,7 +79,7 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
 |Días|Cada transacción de facturación está asociada a un período de servicio. La columna Días indica el número de días en ese período de servicio.|
 |Descuentos|La página 1 de la factura resume todos los descuentos para el período de facturación de esta. La página 2 muestra los descuentos detallados para cada suscripción.|
 |Fecha de vencimiento|La fecha en la que vence el pago de la factura. Si la suscripción se paga con tarjeta de crédito o cuenta bancaria, el cobro se efectuará en la tarjeta de crédito o en la cuenta bancaria el día siguiente a la fecha de facturación.<br/> **NOTA** El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.           |
-|Transferencia electrónica de fondos|Si ha seleccionado "factura" como el método de pago de la suscripción, la página 1 contiene la información de la cuenta bancaria de Microsoft para recibir pagos electrónicos (transferencia, ACH, SEPA, etc.). Por lo general, su banco tendrá un campo de referencia que completa cuando envía un pago. Haga referencia al número de factura que se muestra en este campo.|
+|Transferencia electrónica de fondos|Si ha seleccionado "factura" como el método de pago de la suscripción, la página 1 contiene la información de la cuenta bancaria de Microsoft para pagos electrónicos (transferencia, ACH, SEPA, etc.). Por lo general, su banco tendrá un campo de referencia que completa cuando envía un pago. Haga referencia al número de factura que se muestra en este campo.|
 |Total general|Esta fila incluye los importes totales de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para todas las suscripciones que aparecen en la factura.|
 |Fecha de la factura|La fecha en la que se creó la factura. La fecha de facturación es el día posterior al final de su período de facturación. Por ejemplo, si el período de facturación comprende del 15 de enero al 14 de febrero, la fecha de facturación es el 15 de febrero.|
 |Número de factura|El único número asignado a la factura. Haga referencia al número de factura en su pago.|
@@ -109,7 +109,7 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 2. Si se encuentra en la vista de **Tabla**, seleccione **Tarjetas** para cambiar entre las vistas.
 
-3. Busque la suscripción que desee cambiar. 
+3. Busque la suscripción que quiera cambiar.
 
 4. En la sección **Facturación**, junto a **factura**, seleccione **Editar**.
 
