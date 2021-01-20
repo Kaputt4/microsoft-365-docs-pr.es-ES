@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
-ms.openlocfilehash: dadb41e1f0ff9e18681b13ad3d265f3f436c2052
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: f1ffebbca2d3a77d1a0c10d14205e52108614043
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796199"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908358"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
@@ -92,7 +92,7 @@ La suplantación de identidad se da cuando la dirección De de un mensaje de cor
 
 La siguiente configuración de suplantación de identidad está disponible en las directivas contra suplantación de identidad en EOP y Microsoft Defender para Office 365:
 
-- **Protección contra la suplantación:** habilita o deshabilita la protección contra la suplantación. Le recomendamos que lo deje habilitado. La directiva **de inteligencia de suplantación** de identidad se usa para permitir o bloquear remitentes internos y externos suplantados específicos. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
+- **Protección contra la suplantación:** habilita o deshabilita la protección contra la suplantación. Le recomendamos que lo deje habilitado. La directiva **de inteligencia de suplantación de** identidad se usa para permitir o bloquear remitentes internos y externos suplantados específicos. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
   >
@@ -100,16 +100,16 @@ La siguiente configuración de suplantación de identidad está disponible en la
   >
   > - No es necesario deshabilitar la protección contra la suplantación si el registro MX no apunta a Microsoft 365; En su lugar, habilite el filtrado mejorado para conectores. Para obtener instrucciones, consulte [Filtrado mejorado para conectores en Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   >
-  > - Deshabilitar la protección contra la suplantación solo deshabilita la protección de suplantación implícita de las comprobaciones de [autenticación](email-validation-and-authentication.md#composite-authentication) compuesta. Si el remitente no supera las comprobaciones [de DMARC](use-dmarc-to-validate-email.md) explícitas en las que la directiva está establecida en cuarentena o rechazada, el mensaje se sigue cuarentenando o rechazando.
+  > - Deshabilitar la protección contra la suplantación solo deshabilita la protección de suplantación implícita de las comprobaciones [de autenticación](email-validation-and-authentication.md#composite-authentication) compuesta. Si el remitente no supera las comprobaciones [de DMARC](use-dmarc-to-validate-email.md) explícitas en las que la directiva está establecida en cuarentena o rechazada, el mensaje sigue en cuarentena o rechazado.
 
   Para los mensajes de remitentes suplantados bloqueados, también puede especificar la acción que se debe realizar en los mensajes:
 
-  - **Mover el mensaje a la carpeta correo no deseado:** este es el valor predeterminado. El mensaje se entrega en el buzón y se mueve a la carpeta correo no deseado. En Exchange Online, el mensaje se mueve a la carpeta correo no deseado si la regla de correo no deseado está habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, vea [Configurar las opciones de correo no deseado en buzones de Exchange Online en Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
+  - **Mover el mensaje a la carpeta de correo no deseado:** este es el valor predeterminado. El mensaje se entrega en el buzón y se mueve a la carpeta correo no deseado. En Exchange Online, el mensaje se mueve a la carpeta correo no deseado si la regla de correo no deseado está habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, vea [Configurar las opciones de correo no deseado en buzones de Exchange Online en Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 
   - **Poner en cuarentena el mensaje:** envía el mensaje a cuarentena en lugar de los destinatarios previstos. Para obtener información acerca de la cuarentena, vea los artículos siguientes:
 
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
-    - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como un usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - **Remitente no autenticado:** vea la información en la sección siguiente.
@@ -141,11 +141,11 @@ Para obtener más información, vea [Identificar mensajes sospechosos en Outlook
 En esta sección se describe la configuración de directiva que solo está disponible en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
 
 > [!NOTE]
-> La directiva contra suplantación de identidad predeterminada en [](set-up-anti-phishing-policies.md#spoof-settings) Microsoft Defender para Office 365 proporciona protección contra la suplantación de identidad e inteligencia de buzones para todos los destinatarios. Sin embargo, las otras características de [protección](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de suplantación disponibles y la configuración avanzada [no](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) están configuradas ni habilitadas en la directiva predeterminada. Para habilitar todas las características de protección, modifique la directiva contra suplantación de identidad predeterminada o cree directivas adicionales contra la suplantación de identidad.
+> La directiva contra suplantación de identidad predeterminada en [](set-up-anti-phishing-policies.md#spoof-settings) Microsoft Defender para Office 365 proporciona protección contra la suplantación de identidad e inteligencia de buzones para todos los destinatarios. Sin embargo, las otras características de [protección](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de suplantación disponibles y la configuración [avanzada](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) no están configuradas ni habilitadas en la directiva predeterminada. Para habilitar todas las características de protección, modifique la directiva contra suplantación de identidad predeterminada o cree directivas adicionales contra la suplantación de identidad.
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de suplantación en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
-La suplantación es donde el remitente o el dominio de correo electrónico del remitente en un mensaje es similar a un remitente o dominio real:
+La suplantación es donde el remitente o el dominio de correo electrónico del remitente en un mensaje tiene un aspecto similar a un remitente o dominio real:
 
 - Un ejemplo de suplantación del dominio contoso.com es ćóntoso.com.
 - Un ejemplo de suplantación del usuario michelle@contoso.com es michele@contoso.com.
@@ -160,7 +160,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
   > [!NOTE]
   >
-  > - En cada directiva contra la suplantación de identidad, puede especificar un máximo de 60 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas.
+  > - En cada directiva contra suplantación de identidad (phishing), puede especificar un máximo de 60 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas. Por lo tanto, independientemente de cuántas directivas se apliquen a un destinatario, el número máximo de usuarios protegidos (direcciones de correo electrónico del remitente) para cada destinatario individual es 60. Para obtener más información sobre la prioridad de la directiva y cómo se detiene el procesamiento de directivas después de aplicar la primera directiva, consulte Orden y [prioridad de protección de correo electrónico.](how-policies-and-protections-are-combined.md)
   >
   > - La protección de suplantación de usuario no funciona si el remitente y el destinatario se han comunicado previamente por correo electrónico. Si el remitente y el destinatario nunca se han comunicado por correo electrónico, el mensaje se identificará como un intento de suplantación.
 
@@ -188,7 +188,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
     - **Poner en cuarentena el mensaje:** envía el mensaje a cuarentena en lugar de los destinatarios previstos. Para obtener información acerca de la cuarentena, vea los artículos siguientes:
 
     - [Cuarentena en Microsoft 365](quarantine-email-messages.md)
-    - [Administrar mensajes y archivos en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como un usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - Entregar el mensaje y agregar otras direcciones a la línea **CCO:** entregar el mensaje a los destinatarios previstos y entregar el mensaje de forma silenciosa a los destinatarios especificados.
@@ -208,7 +208,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
 - **Inteligencia de buzones:** habilita o deshabilita la inteligencia artificial (IA) que determina los patrones de correo electrónico del usuario con sus contactos frecuentes. Esta configuración ayuda a la IA a distinguir entre el correo electrónico legítimo y el correo electrónico suplantado de esos contactos. La inteligencia de buzones solo está disponible para los buzones de Exchange Online.
 
-- **Protección de suplantación** basada en inteligencia de buzones: habilita o deshabilita los resultados de suplantación mejorados en función del mapa de remitentes individual de cada usuario. Esta inteligencia permite a Microsoft 365 personalizar la detección de suplantación de usuario y controlar mejor los falsos positivos. Cuando se detecta la suplantación de usuario, puede definir una acción específica para realizar en el mensaje:
+- **Protección de suplantación** basada en inteligencia de buzones: habilita o deshabilita los resultados de suplantación mejorados en función de la asignación de remitente individual de cada usuario. Esta inteligencia permite a Microsoft 365 personalizar la detección de suplantación de usuario y controlar mejor los falsos positivos. Cuando se detecta la suplantación de usuario, puede definir una acción específica para realizar en el mensaje:
 
   - **No aplicar ninguna acción**
   - **Redirigir el mensaje a otras direcciones de correo electrónico**
@@ -227,7 +227,7 @@ Los siguientes umbrales avanzados de suplantación de identidad solo están disp
 
 - **2 - Agresivo:** los mensajes identificados como suplantación de identidad con un alto grado de confianza se tratan como si se identificaron con un grado de confianza muy alto.
 
-- **3 - Más** agresivo: los mensajes identificados como suplantación de identidad con un grado de confianza medio o alto se tratan como si se identificaron con un grado de confianza muy alto.
+- **3 -** Más agresivo: los mensajes identificados como suplantación de identidad con un grado de confianza medio o alto se tratan como si se identificaron con un grado de confianza muy alto.
 
 - **4 -** Más agresivo: los mensajes identificados como suplantación de identidad con un grado de confianza bajo, medio o alto se tratan como si se identificaron con un grado de confianza muy alto.
 

@@ -18,16 +18,16 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Obtenga información sobre cómo administrar puntos de conexión de Office 365 para que funcionen con la arquitectura de red de su organización empresarial.
-ms.openlocfilehash: a616e5f45fee77a02e7b4df7e19ed9e1b0d31d22
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 41dceae78d80a78b023517e8b6c5c5c0d73da2ef
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787956"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905290"
 ---
 # <a name="managing-office-365-endpoints"></a>Administración de puntos de conexión de Office 365
 
-La mayoría de las organizaciones empresariales que tienen varias ubicaciones de oficina y una WAN de conexión necesitarán configurar la conectividad de red de Office 365. Puede optimizar su red mediante el envío de solicitudes a todas las redes de confianza de Office 365 directamente a través de su firewall, omitiendo así todos los procesos o inspecciones adicionales a nivel de paquetes. Esto reduce la latencia y los requisitos de capacidad perimetrales. Identificar el tráfico de red de Office 365 es el primer paso para ofrecer un rendimiento óptimo a los usuarios. Para obtener más información, consulte [Principios de conectividad de red de Office 365.](microsoft-365-network-connectivity-principles.md)
+La mayoría de las organizaciones empresariales que tienen varias ubicaciones de oficina y una WAN de conexión necesitarán configurar la conectividad de red de Office 365. Puede optimizar su red mediante el envío de solicitudes a todas las redes de confianza de Office 365 directamente a través de su firewall, omitiendo así todos los procesos o inspecciones adicionales a nivel de paquetes. Esto reduce la latencia y los requisitos de capacidad perimetrales. Identificar el tráfico de red de Office 365 es el primer paso para ofrecer un rendimiento óptimo a los usuarios. Para obtener más información, consulte Principios de conectividad de red [de Office 365.](microsoft-365-network-connectivity-principles.md)
 
 Microsoft le recomienda tener acceso a los puntos de conexión de red de Office 365 y realizar cambios continuos en ellos mediante la dirección IP de [Office 365](microsoft-365-ip-web-service.md)y el servicio web url.
 
@@ -39,7 +39,7 @@ La forma en que use los puntos de conexión de red de Office 365 dependerá de l
 
 En cada ubicación de sucursal, puede proporcionar un dispositivo SD-WAN que esté configurado para enrutar el tráfico de la categoría Optimizar puntos de conexión de Office 365, o bien las categorías Optimizar y Permitir, directamente a la red de Microsoft. Otro tráfico de red, incluido el tráfico local del centro de datos, el tráfico general de los sitios web de Internet y el tráfico a puntos de conexión de categoría predeterminada de Office 365 se envía a otra ubicación donde tiene un perímetro de red más importante.
 
-Microsoft está trabajando con proveedores SD-WAN para habilitar la configuración automatizada. Para más información, consulte [Programa para partners de redes de Office 365](microsoft-365-networking-partner-program.md).
+Microsoft está trabajando con proveedores de SD-WAN para habilitar la configuración automatizada. Para más información, consulte [Programa para partners de redes de Office 365](microsoft-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
 ## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Usar un archivo PAC para el enrutamiento directo del tráfico fundamental de Office 365
@@ -146,7 +146,7 @@ Solo proporcionamos direcciones IP para los servidores de Office 365 a los que d
 1. Compruebe si la dirección IP se incluye en un rango publicado mayor con una calculadora CIDR, como estas para [IPv4](https://www.ipaddressguide.com/cidr) o [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Por ejemplo, 40.96.0.0/13 incluye la dirección IP 40.103.0.1 a pesar de que 40.96 no coincide con 40.103.
 2. Compruebe si un partner es el propietario de la IP con una [consulta whois](https://dnsquery.org/). Si es propiedad de Microsoft, puede ser un partner interno. Se muestran muchos puntos de conexión de red de asociados que pertenecen a la categoría _predeterminada_, cuyas direcciones IP no se publican.
 3. Es posible que la dirección IP no pertenezca a Office 365 o a una dependencia. La publicación de puntos de conexión de red de Office 365 no incluye todos los puntos de conexión de red de Microsoft.
-4. Compruebe el certificado. Con un explorador, conéctese a la dirección IP mediante *HTTPS:// \<IP_ADDRESS\>* y compruebe los dominios enumerados en el certificado para comprender qué dominios están asociados a la dirección IP. Si es una dirección IP propiedad de Microsoft y no está en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una red CDN de Microsoft, como  *MSOCDN.NET*  u otro dominio de Microsoft sin información de IP publicada. Si encuentra que el dominio en el certificado es uno de los que afirmamos indicar la dirección IP, háganoslo saber.
+4. Compruebe el certificado. Con un explorador, conéctese a la dirección IP mediante *HTTPS:// \<IP_ADDRESS\>* y compruebe los dominios enumerados en el certificado para comprender qué dominios están asociados a la dirección IP. Si es una dirección IP propiedad de Microsoft y no está en la lista de direcciones IP de Office 365, es probable que la dirección IP esté asociada a una red CDN de Microsoft como  *MSOCDN.NET*  u otro dominio de Microsoft sin información de IP publicada. Si encuentra que el dominio en el certificado es uno de los que afirmamos indicar la dirección IP, háganoslo saber.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algunas direcciones URL de Office 365 apuntan a registros CNAME en lugar de a registros A de DNS. ¿Qué tengo que hacer con los registros CNAME?
@@ -161,7 +161,7 @@ Estas redirecciones de CNAME son una parte normal del DNS y son transparentes pa
 
 Un servidor proxy valida la dirección URL inicial, que en el ejemplo anterior es serviceA.office.com, y esta dirección URL se incluiría en la publicación de Office 365. El servidor proxy solicita la resolución DNS de esa dirección URL a una dirección IP y recibirá IP_1. No valida los registros del redireccionamiento CNAME de intermediarios.
 
-Las configuraciones codificadas de forma segura o permitir el tráfico basado en FQDN indirectos de Office 365 no se recomiendan, no son compatibles con Microsoft y se sabe que causan problemas de conectividad con el cliente. Las soluciones DNS que se bloquean en la redirección de CNAME o que, de otra forma, resuelven incorrectamente las entradas DNS de Office 365, se pueden solucionar a través del reenvío condicional de DNS (definido en el ámbito de los FQDN de Office 365 directamente) con la recursión de DNS habilitada. Muchos productos perimetrales de red de terceros integran de forma nativa la omisión de tráfico de extremo de Office 365 recomendada en su configuración mediante el servicio web url y la dirección [IP de Office 365.](microsoft-365-ip-web-service.md)
+Las configuraciones codificadas de forma segura o las listas blancas basadas en FQDN indirectos de Office 365 no se recomiendan, no son compatibles con Microsoft y se sabe que causan problemas de conectividad con el cliente. Las soluciones DNS que se bloquean en el redireccionamiento CNAME, o que resuelven incorrectamente las entradas DNS de Office 365, se pueden resolver a través de reenviadores DNS con recursión DNS habilitada o mediante sugerencias de raíz de DNS. Muchos productos perimetrales de red de terceros integran de forma nativa las listas blancas de puntos de conexión de Office 365 recomendadas en su configuración mediante el servicio web url y la dirección [IP de Office 365.](microsoft-365-ip-web-service.md)
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>¿Por qué veo nombres como nsatc.net o akadns.net en los nombres de dominio de Microsoft?
