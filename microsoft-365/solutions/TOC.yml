@@ -93,6 +93,22 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Escenarios y soluciones de carga de trabajo
   items:
+    - name: Información general
+      href: workload-solutions-scenarios-overview.md
+    - name: Administración de espacios empresariales
+      items:
+        - name: Información general
+          href: tenant-management-overview.md
+        - name: Paso 1. Sus espacios empresariales
+          href: tenant-management-tenants.md
+        - name: Paso 2. Redes óptimas
+          href: tenant-management-networking.md
+        - name: Paso 3. Identidad
+          href: tenant-management-identity.md
+        - name: Paso 4. Migración
+          href: tenant-management-migration.md
+        - name: Paso 5. Datos de administración de dispositivos y aplicaciones
+          href: tenant-management-device-management.md
     - name: Trabajar en equipo y colaborar
       items:
         - name: 'Pósteres de arquitectura de Teams '

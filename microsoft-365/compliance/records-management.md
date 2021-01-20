@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790206"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905239"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -85,7 +85,7 @@ Una etiqueta de retención estándar tiene opciones de retención y acciones, pe
 |Eliminar|Permitido<sup>1</sup> |**Bloqueado** |**Bloqueado**| **Bloqueado**|
 |Copiar|Permitido |Permitido | Permitido| Permitido|
 |Moverse dentro del contenedor<sup>2</sup>|Permitido |Permitido | Permitido| Permitido|
-|Moverse entre contenedores<sup>2</sup>|Permitido |Permitido si nunca se desbloquea | Permitido| **Bloqueado**|
+|Moverse entre contenedores<sup>2</sup>|Permitido |Permitido si nunca se desbloquea | **Bloqueado** | **Bloqueado**|
 |Abrir y leer|Permitido |Permitido | Permitido| Permitido|
 |Cambiar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor| **Bloqueado**
 |Quitar etiqueta|Permitido |Permitido: solo administradores del contenedor | Permitido: solo administradores del contenedor| **Bloqueado**
