@@ -6,7 +6,6 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Seguridad en Office 365, de EOP a Defender para Office 365 Planes 1 y 2, configuraciones de seguridad estándar frente a estrictas, etc. Comprenda lo que tiene y cómo proteger sus propiedades.
-ms.openlocfilehash: a24f71286a524c4057fd1354804b067497479493
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f83eef6a19e26f4b8f47a049e2b2959b32a92550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794525"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932555"
 ---
 # <a name="office-365-security-overview"></a>Introducción a la seguridad de Office 365
 
@@ -38,11 +39,11 @@ Cada suscripción a Office 365 incluye funcionalidades de seguridad. Los objetiv
 1. Microsoft Defender para Office 365 Plan 2 (Defender para Office P2)
 
 > [!NOTE]
-> Si compró su suscripción y necesita implantar características de seguridad _right ahora*, vaya a los pasos del artículo Proteger contra [amenazas.](protect-against-threats.md) Si no tiene experiencia con su suscripción y quiere conocer su licencia antes de empezar, busque Facturación > Sus productos en el Centro de administración de [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
+> Si compró su suscripción y necesita implantar características de seguridad _right ahora*, vaya a los pasos del artículo Proteger [contra amenazas.](protect-against-threats.md) Si no tiene experiencia con su suscripción y quiere conocer su licencia antes de empezar, busque Facturación > Sus productos en el Centro de administración de [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
 
 La seguridad de Office 365 se basa en las protecciones principales que ofrece EOP. EOP está presente en cualquier suscripción en la que se puedan encontrar buzones de Exchange Online (recuerde que todos los productos de seguridad que se analizan aquí están basados en la nube).
 
-Es posible que esté acostumbrado a ver estos tres componentes de esta manera:
+Tal vez esté acostumbrado a ver estos tres componentes de esta manera:
 
 |EOP|Microsoft Defender para Office 365 P1|Microsoft Defender para Office 365 P2|
 |---|---|---|
@@ -98,7 +99,7 @@ Mejoras con **Defender para Office 365, Plan 1** (hasta la fecha):
 |---|---|---|
 |Las tecnologías incluyen todo en EOP, además de:<u1><li>Datos adjuntos seguros</li><li>Vínculos seguros<li>Protección de Microsoft Defender para Office 365 para cargas de trabajo (por ejemplo, SharePoint Online, Teams, OneDrive para la Empresa)</li><li>Protección con el tiempo de clic en correo electrónico, clientes de Office y Teams</li><li>anti-phishing en Defender para Office 365</li><li>Protección de suplantación de usuario y dominio</li><li>Alertas y API de integración siem para alertas</li>|<li>API de integración de SIEM para detecciones</li><li>**Herramienta de detecciones en tiempo real**</li><li>Seguimiento de url</li>|<li>Mismo</li></u1>
 
-Por lo tanto, Microsoft Defender para Office 365 P1 se expande en el *_lado_* de prevención * de la casa y agrega formas adicionales de _*_detección._*_
+Por lo tanto, Microsoft Defender para Office 365 P1 se expande en el lado *_de_* prevención * de la casa y agrega formas adicionales de _*_detección._*_
 
 Microsoft Defender para Office 365 P1 también agrega _ *Detecciones* en tiempo real * para investigaciones. El nombre de esta herramienta de búsqueda de amenazas  está en negrita porque tenerla es una forma clara de saber que tiene Defender para Office 365 P1. No aparece en Defender para Office 365 P2.
 
@@ -116,15 +117,15 @@ En Microsoft Defender para Office 365 P2, la herramienta de búsqueda principal 
 Para entrar en los detalles de Microsoft Defender para Office 365 P1 y P2, vaya **[a este artículo.](office-365-atp.md)**
 
 > [!TIP]
-> EOP y Microsoft Defender para Office 365 también son diferentes en lo que respecta a los usuarios finales. En EOP y Defender para Office 365 P1, el foco es la concienciación y, por lo tanto, estos dos servicios incluyen el complemento de *Outlook* de mensaje de informe para que los usuarios puedan informar sobre correos electrónicos que encuentran sospechosos, para un análisis posterior. <p> En Defender para Office 365 P2 (que contiene todo en EOP y P1), el foco cambia a formación  adicional para los usuarios finales y, por lo tanto, el Centro de operaciones de seguridad tiene acceso a una herramienta eficaz del simulador de amenazas y a las métricas del usuario final que proporciona. 
+> EOP y Microsoft Defender para Office 365 también son diferentes en lo que respecta a los usuarios finales. En EOP y Defender para Office 365 P1, el foco es la concienciación y, por lo tanto, estos dos servicios incluyen el complemento de *Outlook* de mensaje de informe para que los usuarios puedan informar de los correos electrónicos que encuentran sospechosos, para un análisis posterior. <p> En Defender para Office 365 P2 (que contiene todo en EOP y P1), el foco cambia a formación  adicional para los usuarios finales y, por lo tanto, el Centro de operaciones de seguridad tiene acceso a una herramienta eficaz del simulador de amenazas y a las métricas del usuario final que proporciona. 
 
-## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Hoja de trucos de Microsoft Defender para Office 365 Plan 1 frente a Plan 2
+## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Hoja de trucos del Plan 1 de Microsoft Defender para Office 365 frente a plan 2
 
 Esta referencia rápida le ayudará a comprender qué funcionalidades se incluyen con cada suscripción de Microsoft Defender para Office 365. Cuando se combina con su conocimiento de las características de EOP, puede ayudar a los responsables de la toma de decisiones empresariales a determinar qué Microsoft Defender para Office 365 es mejor para sus necesidades.
 
 |Defender para Office 365 Plan 1|Defender para Office 365 Plan 2|
 |---|---|
-|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](atp-safe-attachments.md)</li><li>[Vínculos seguros](atp-safe-links.md)</li><li>[ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protección contra suplantación de identidad en Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades de Defender para Office 365 Plan 1 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
+|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](atp-safe-attachments.md)</li><li>[Vínculos seguros](atp-safe-links.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protección contra la suplantación de identidad en Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades de Defender para Office 365 Plan 1 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender para Office 365 Plan 2 se incluye en Office 365 E5, Office 365 A5 y Microsoft 365 E5.
@@ -138,7 +139,7 @@ Esta referencia rápida le ayudará a comprender qué funcionalidades se incluye
 - Si su suscripción actual no incluye Microsoft Defender para Office 365 y lo [desea,](https://go.microsoft.com/fwlink/p/?LinkId=518644)póngase en contacto con ventas para iniciar una prueba y descubra cómo puede funcionar Microsoft Defender para Office 365 en su organización.
 
 > [!TIP]
-> ***Sugerencia de Insider** _. Puede usar la tabla docs.microsoft.com contenido para obtener información sobre EOP y Microsoft Defender para Office 365. Vuelva a esta página, información general de seguridad de [Office 365,](https://docs.microsoft.com/microsoft-365/security/office-365-security)y observará que la organización de la tabla de contenido se encuentra en la barra lateral. Comienza con la implementación (incluida la migración) y, a continuación, continúa con la prevención, la detección, la investigación y la respuesta. <p> Esta estructura se divide para que los temas _ *Administración de seguridad** estén seguidos de los temas operaciones **de** seguridad. Si es un nuevo miembro de cualquiera de los roles de trabajo, use el vínculo de esta sugerencia y sus conocimientos sobre la tabla de contenido para ayudar a aprender el espacio. Recuerde usar *vínculos de comentarios* y *artículos de tasa* a medida que vaya. Los comentarios nos ayudan a mejorar lo que le ofrecemos.
+> ***Sugerencia de Insider** _. Puede usar la tabla docs.microsoft.com contenido para obtener información sobre EOP y Microsoft Defender para Office 365. Vuelva a esta página, información general de seguridad de [Office 365,](https://docs.microsoft.com/microsoft-365/security/office-365-security)y observará que la organización de la tabla de contenido se encuentra en la barra lateral. Comienza con la implementación (incluida la migración) y, a continuación, continúa con la prevención, la detección, la investigación y la respuesta. <p> Esta estructura se divide para que los temas _ *Administración de seguridad** estén seguidos de los temas operaciones **de** seguridad. Si es un nuevo miembro de cualquiera de los roles de trabajo, use el vínculo de esta sugerencia y su conocimiento de la tabla de contenido para ayudar a aprender el espacio. Recuerde usar *vínculos de comentarios* y *artículos de tasa* a medida que vaya. Los comentarios nos ayudan a mejorar lo que le ofrecemos.
 
 ## <a name="where-to-go-next"></a>Dónde ir a continuación
 

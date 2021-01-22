@@ -1,10 +1,10 @@
 ---
-title: Realizar acciones en los resultados de la consulta de búsqueda avanzada en Microsoft 365 defender
-description: Solucionar rápidamente las amenazas y los activos afectados en los resultados de la consulta de búsqueda avanzada
-keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, emprender acciones
+title: Tomar medidas sobre los resultados de la consulta de búsqueda avanzada en Microsoft 365 Defender
+description: Abordar rápidamente las amenazas y los activos afectados en los resultados de la consulta de búsqueda avanzada
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, tomar medidas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,68 +19,69 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 506af82ec08ad6cd8dbeece5c1c2741e09e4817a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 9e8ad544cfe17d0d8e5c895e208b42ec56555565
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842469"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932183"
 ---
-# <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados de la consulta de búsqueda avanzada
+# <a name="take-action-on-advanced-hunting-query-results"></a>Tomar medidas en los resultados de consulta de búsqueda avanzada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Puede contener amenazas o dirigir a los activos en peligro que encuentra en la [búsqueda avanzada](advanced-hunting-overview.md) con opciones de acción potentes y completas. Con estas opciones, puede:
+Puede contener rápidamente amenazas o solucionar activos comprometidos que encuentre en la búsqueda avanzada mediante opciones de acción eficaces y completas. [](advanced-hunting-overview.md) Con estas opciones, puede:
 
-- Realizar diversas acciones en los dispositivos
-- Archivos en cuarentena
+- Realizar diversas acciones en dispositivos
+- Cuarentena de archivos
 
 ## <a name="required-permissions"></a>Permisos necesarios
-Para poder emprender acciones a través de la búsqueda avanzada, necesita un rol de Microsoft defender para el punto de conexión con [permisos para enviar acciones de corrección en los dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). Si no puede emprender ninguna acción, póngase en contacto con un administrador global para obtener el siguiente permiso:
+Para poder tomar medidas a través de la búsqueda avanzada, necesita un rol en Microsoft Defender para Endpoint con permisos para enviar acciones de corrección [en dispositivos.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Si no puede tomar medidas, póngase en contacto con un administrador global para obtener el siguiente permiso:
 
-*Acciones de corrección activas > administración de amenazas y vulnerabilidades-control de correcciones*
+*Acciones de corrección activas > administración de amenazas y vulnerabilidades: control de corrección*
 
-## <a name="take-various-actions-on-devices"></a>Realizar diversas acciones en los dispositivos
-Puede realizar las siguientes acciones en los dispositivos identificados por la `DeviceId` columna de los resultados de la consulta:
+## <a name="take-various-actions-on-devices"></a>Realizar diversas acciones en dispositivos
+Puede realizar las siguientes acciones en dispositivos identificados por la `DeviceId` columna en los resultados de la consulta:
 
-- Aislar los dispositivos afectados para que contengan una infección o impedir que los ataques se muevan con posterioridad
+- Aislar los dispositivos afectados para contener una infección o evitar que los ataques se muevan lateralmente
 - Recopilar el paquete de investigación para obtener más información forense
-- Ejecutar un análisis antivirus para buscar y eliminar amenazas con las últimas actualizaciones de inteligencia sobre seguridad
-- Iniciar una investigación automatizada para comprobar y corregir las amenazas en el dispositivo y posiblemente en otros dispositivos afectados
-- Restringir la ejecución de la aplicación solo a archivos ejecutables firmados por Microsoft, evitando actividades posteriores de amenazas a través de malware u otros ejecutables que no son de confianza
+- Ejecutar un examen antivirus para buscar y quitar amenazas con las últimas actualizaciones de inteligencia de seguridad
+- Iniciar una investigación automatizada para comprobar y corregir las amenazas en el dispositivo y, posiblemente, en otros dispositivos afectados
+- Restringir la ejecución de la aplicación solo a archivos ejecutables firmados por Microsoft, evitando la actividad de amenaza posterior a través de malware u otros ejecutables que no son de confianza
 
-Para obtener más información sobre cómo estas acciones de respuesta se realizan a través de Microsoft defender para el punto de conexión, [vea acciones de respuesta en dispositivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Para obtener más información sobre cómo se realizan estas acciones de respuesta a través de Microsoft Defender para endpoint, lea acerca [de las acciones de respuesta en dispositivos.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
    
 ## <a name="quarantine-files"></a>Archivos en cuarentena
-Puede implementar la acción de *cuarentena* en los archivos para que se pongan en cuarentena automáticamente cuando se detecten. Al seleccionar esta acción, puede elegir entre las siguientes columnas para identificar los archivos de los resultados de la consulta que se pondrán en cuarentena:
+Puedes implementar la acción *de cuarentena* en los archivos para que se pongan automáticamente en cuarentena cuando se encuentren. Al seleccionar esta acción, puede elegir entre las siguientes columnas para identificar qué archivos de los resultados de la consulta se ponen en cuarentena:
 
-- `SHA1` (En la mayoría de las tablas de búsqueda avanzadas), es el SHA-1 del archivo que se ha visto afectado por la acción grabada. Por ejemplo, si se ha copiado un archivo, sería el archivo copiado.
-- `InitiatingProcessSHA1` (En la mayoría de las tablas de la caza avanzadas), es el archivo responsable de iniciar la acción grabada. Por ejemplo, si se inició un proceso secundario, sería el proceso principal. 
-- `SHA256` : Es el equivalente de SHA-256 del archivo identificado por la `SHA1` columna.
-- `InitiatingProcessSHA256` : Es el equivalente de SHA-256 del archivo identificado por la `InitiatingProcessSHA1` columna.
+- `SHA1` — En la mayoría de las tablas de búsqueda avanzadas, este es el SHA-1 del archivo que se ha visto afectado por la acción grabada. Por ejemplo, si se copió un archivo, este sería el archivo copiado.
+- `InitiatingProcessSHA1` — En la mayoría de las tablas de búsqueda avanzadas, este es el archivo responsable de iniciar la acción grabada. Por ejemplo, si se inicia un proceso secundario, este sería el proceso primario. 
+- `SHA256` Es el equivalente SHA-256 del archivo identificado por la `SHA1` columna.
+- `InitiatingProcessSHA256` Es el equivalente SHA-256 del archivo identificado por la `InitiatingProcessSHA1` columna.
 
-Para obtener más información sobre cómo se llevan a cabo las acciones de cuarentena y cómo se pueden restaurar los archivos, [vea acciones de respuesta en los archivos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
+Para obtener más información sobre cómo se toman las acciones de cuarentena y cómo se pueden restaurar los archivos, lea acerca de [las acciones de respuesta en los archivos.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
 
 >[!NOTE]
->Para buscar archivos y ponerlos en cuarentena, los resultados de la consulta también deben incluir `DeviceId` valores como identificadores de dispositivo.  
+>Para localizar archivos y ponerlos en cuarentena, los resultados de la consulta también deben incluir `DeviceId` valores como identificadores de dispositivo.  
 
-## <a name="take-action"></a>Emprender acciones
-Para realizar cualquiera de las acciones descritas, seleccione uno o más registros en los resultados de la consulta y, a continuación, seleccione **emprender acciones**. Un asistente le guiará por el proceso de selección y envío de las acciones preferidas.
+## <a name="take-action"></a>Tomar medidas
+Para realizar cualquiera de las acciones descritas, seleccione uno o más registros en los resultados de la consulta y, a continuación, **seleccione Realizar acciones.** Un asistente le guiará a través del proceso de selección y envío de las acciones preferidas.
 
 ![Imagen del registro seleccionado con panel para inspeccionar el registro](../../media/mtp-ah/ah-take-actions.png)
 
-## <a name="review-actions-taken"></a>Revisión de las acciones realizadas
-Cada acción se registra individualmente en el [centro de actividades](mtp-action-center.md) , en historial del **centro de actividades**  >  **History** ( [Security.Microsoft.com/Action-Center/History](https://security.microsoft.com/action-center/history)). Vaya al centro de actividades para comprobar el estado de cada acción.
+## <a name="review-actions-taken"></a>Revisar las acciones realizadas
+Cada acción se registra individualmente en el centro [de acciones en](mtp-action-center.md) Historial **del** centro de acciones  >   ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
  
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
-- [Información general del centro de actividades](mtp-action-center.md)
+- [Introducción al centro de actividades](mtp-action-center.md)

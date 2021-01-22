@@ -1,10 +1,10 @@
 ---
 title: Tabla DeviceTvmSecureConfigurationAssessmentKB en el esquema de búsqueda avanzada
-description: Obtenga información sobre los eventos de evaluación de seguridad en la tabla DeviceTvmSecureConfigurationAssessment del esquema de búsqueda avanzada. Estas amenazas & eventos de administración de vulnerabilidad proporcionan información de dispositivos, así como detalles de configuración de seguridad, impacto e información de cumplimiento.
-keywords: búsqueda avanzada, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, amenaza & la administración de vulnerabilidades, TVM, administración de dispositivos, configuración de seguridad, DeviceTvmSecureConfigurationAssessment
+description: Obtenga información sobre los eventos de evaluación de seguridad en la tabla DeviceTvmSecureConfigurationAssessment del esquema de búsqueda avanzada. Estos eventos & administración de vulnerabilidades proporcionan información del dispositivo, así como detalles de configuración de seguridad, impacto e información de cumplimiento.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, administración de vulnerabilidades de & amenazas, TVM, administración de dispositivos, configuración de seguridad, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: bfe63397d194567a7d71de703363083d2fd4fe75
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 6924bbc7a88a4f32d97534c72a180a1f1c4f7db6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847613"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931103"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -32,7 +33,7 @@ ms.locfileid: "48847613"
 
 
 **Aplica para:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 
 
@@ -51,9 +52,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ConfigurationSubcategory` | string | Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `IsCompliant` | booleano | Indica si la configuración o la directiva está configurada correctamente |
-| `IsApplicable` | boolean | Indica si la configuración o la Directiva se aplican al dispositivo. |
-| `Context` | string | Información contextual adicional acerca de la configuración o la Directiva |
-| `IsExpectedUserImpactCompliant` | boolean | Indica si habrá impacto en el usuario si se aplica la configuración o la Directiva. |
+| `IsApplicable` | boolean | Indica si la configuración o directiva se aplica al dispositivo |
+| `Context` | string | Información contextual adicional sobre la configuración o la directiva |
+| `IsExpectedUserImpactCompliant` | boolean | Indica si habrá impacto en el usuario si se aplica la configuración o la directiva |
 
 ## <a name="related-topics"></a>Temas relacionados
 

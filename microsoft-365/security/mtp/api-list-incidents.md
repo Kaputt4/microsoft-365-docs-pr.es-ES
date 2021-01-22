@@ -1,9 +1,9 @@
 ---
-title: API de lista de incidentes en Microsoft 365 defender
-description: Obtenga información sobre cómo enumerar la API de incidentes en Microsoft 365 defender
-keywords: lista, incidente, incidentes, API
+title: Enumerar la API de incidentes en Microsoft 365 Defender
+description: Obtenga información sobre cómo enumerar la API de incidentes en Microsoft 365 Defender
+keywords: lista, incidente, incidentes, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 13508d3ad9d61797517ccb55a27152883947843a
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 39a170a1845ab33f67d77b2de3d5f298f67fdc99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719433"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932075"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>API de lista de incidentes en Microsoft 365 defender
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,40 +37,40 @@ ms.locfileid: "49719433"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Parte de la información está relacionada con el producto de versión preliminar que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 ## <a name="api-description"></a>Descripción de la API
 
-La API de incidentes de lista permite ordenar los incidentes para crear una respuesta Cybersecurity informada. Expone una colección de incidentes que se marcaron en la red, dentro del intervalo de tiempo especificado en la Directiva de retención del entorno. Los incidentes más recientes se muestran en la parte superior de la lista. Cada incidente contiene una matriz de alertas relacionadas y sus entidades relacionadas.
+La API de incidentes de lista le permite ordenar los incidentes para crear una respuesta de ciberseguridad informada. Expone una colección de incidentes que se marcaron en la red, dentro del intervalo de tiempo especificado en la directiva de retención del entorno. Los incidentes más recientes se muestran en la parte superior de la lista. Cada incidente contiene una matriz de alertas relacionadas y sus entidades relacionadas.
 
-La API admite los siguientes operadores **OData** :
+La API admite los siguientes operadores **de OData:**
 
-- `$filter`en las `lastUpdateTime` propiedades,, `createdTime` `status` y `assignedTo`
+- `$filter` en `lastUpdateTime` , `createdTime` `status` y `assignedTo` las propiedades
 - `$top`, con un valor máximo de **100**
 - `$skip`
 
 ## <a name="limitations"></a>Limitaciones
 
-1. El tamaño máximo de página es de **100 incidentes**.
-2. La tasa de solicitudes máxima es de **50 llamadas por minuto** y **1500 de llamadas por hora**.
+1. El tamaño máximo de página **es de 100 incidentes.**
+2. La tasa máxima de solicitudes es **de 50 llamadas por** minuto y **1500 llamadas por hora.**
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Access Microsoft 365 API de defender](api-access.md)
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea Las API [de Access de Microsoft 365 Defender](api-access.md)
 
-Tipo de permiso | Permiso | Nombre para mostrar del permiso
+Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
-Aplicación | Incident. Read. All | Leer todos los incidentes
-Aplicación | Incident. ReadWrite. All | Leer y escribir todos los incidentes
-Delegado (cuenta profesional o educativa) | Incident. Read | Incidentes de lectura
-Delegado (cuenta profesional o educativa) | Incident. ReadWrite | Leer y escribir incidentes
+Aplicación | Incident.Read.All | Leer todos los incidentes
+Aplicación | Incident.ReadWrite.All | Leer y escribir todos los incidentes
+Delegado (cuenta profesional o educativa) | Incident.Read | Leer incidentes
+Delegado (cuenta profesional o educativa) | Incident.ReadWrite | Leer y escribir incidentes
 
 > [!Note]
 > Al obtener un token con credenciales de usuario:
 >
 > - El usuario debe tener permiso de visualización para incidentes en el portal.
-> - La respuesta solo incluirá los incidentes a los que el usuario está expuesto.
+> - La respuesta solo incluirá incidentes a los que se expone el usuario.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -81,7 +82,7 @@ GET /api/incidents
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | Cadena | {Token} de portador. **Required**
+Authorization | Cadena | Portador {token}. **Required**
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -90,103 +91,103 @@ Ninguna.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve `200 OK` y una lista de [incidentes](api-incident.md) en el cuerpo de la respuesta.
+Si se realiza correctamente, este método devuelve `200 OK` y una lista de incidentes [en](api-incident.md) el cuerpo de la respuesta.
 
-## <a name="schema-mapping"></a>Asignación del esquema
+## <a name="schema-mapping"></a>Asignación de esquema
 
-### <a name="incident-metadata"></a>Metadatos del incidente
+### <a name="incident-metadata"></a>Metadatos de incidentes
 
-Nombre del campo | Descripción | Valor de ejemplo
+Nombre del campo | Description | Valor de ejemplo
 -|-|-
-incidentId | Identificador único que representa el incidente | 924565
-redirectIncidentId | Solo se rellena en caso de que un incidente se agrupe con otro incidente, como parte de la lógica de procesamiento de incidentes. | 924569
+incidentId | Identificador único para representar el incidente | 924565
+redirectIncidentId | Solo se rellena en caso de que un incidente se esté agrupando junto con otro incidente, como parte de la lógica de procesamiento de incidentes. | 924569
 incidentName | Valor de cadena disponible para cada incidente. | Actividad de ransomware
-createdTime | Hora a la que se creó el incidente por primera vez. | 2020-09-06T14:46:57.0733333 Z
-lastUpdateTime | Hora en la que se actualizó por última vez el incidente en el back-end.<br /><br /> Este campo se puede usar al establecer el parámetro de solicitud para el intervalo de tiempo durante el que se recuperan los incidentes. | 2020-09-06T14:46:57.29 Z
-assignedTo | Propietario del incidente, o *null* si no hay ningún propietario asignado. | secop2@contoso.com
-classification | La especificación del incidente. Los valores de la propiedad son: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
-cálculo | Especifica la determinación del incidente. Los valores de la propiedad son: *NotAvailable*, *apt*, *malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *other* | NotAvailable
-status | Clasifique los incidentes (como *activos* o *resueltos*). Puede ayudarle a organizar y administrar la respuesta a incidentes. | Activo
-severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br /><br />Uno de los siguientes valores: *informativo*, *bajo*, * medio y *alto*. | Mediano
-tags | Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo, para marcar un grupo de incidentes con una característica común. | \[\]
-alerts | Matriz que contiene todas las alertas relacionadas con el incidente, además de otra información, como la gravedad, las entidades involucradas en la alerta y el origen de las alertas. | \[\] (consulte los detalles de los campos de alerta a continuación)
+createdTime | Hora en que se creó el incidente por primera vez. | 2020-09-06T14:46:57.0733333Z
+lastUpdateTime | Hora en que el incidente se actualizó por última vez en el back-end.<br /><br /> Este campo se puede usar al establecer el parámetro de solicitud para el intervalo de tiempo que se recuperan los incidentes. | 2020-09-06T14:46:57.29Z
+assignedTo | Propietario del incidente o *null* si no se asigna ningún propietario. | secop2@contoso.com
+classification | Especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
+determinación | Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
+status | Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar la respuesta a incidentes. | Activo
+severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br /><br />Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Mediano
+tags | Matriz de etiquetas personalizadas asociadas a un incidente, por ejemplo para marcar un grupo de incidentes con una característica común. | \[\]
+alerts | Matriz que contiene todas las alertas relacionadas con el incidente, además de otra información, como la gravedad, las entidades implicadas en la alerta y el origen de las alertas. | \[\] (consulta los detalles de los campos de alerta a continuación)
 
 ### <a name="alerts-metadata"></a>Metadatos de alertas
 
-Nombre del campo | Descripción | Valor de ejemplo
+Nombre del campo | Description | Valor de ejemplo
 -|-|-
-alertId | Identificador único que representa la alerta | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
-incidentId | Identificador único que representa el incidente al que está asociada esta alerta | 924565
-serviceSource | Servicio del que procede la alerta, como Microsoft defender para el punto de conexión, Microsoft Cloud App Security, Microsoft defender para identidad o Microsoft defender para Office 365. | MicrosoftCloudAppSecurity
-creationTime | Hora a la que se creó la alerta por primera vez. | 2020-09-06T14:46:55.7182276 Z
-lastUpdatedTime | Hora de la última actualización de la alerta en el back-end. | 2020-09-06T14:46:57.2433333 Z
-resolvedTime | Hora a la que se resolvió la alerta. | 2020-09-10T05:22:59Z
-firstActivity | Hora en que la alerta notificó por primera vez que se actualizó la actividad en el back-end.| 2020-09-04T05:22:59Z
+alertId | Identificador único para representar la alerta | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
+incidentId | Identificador único que representa el incidente con el que está asociada esta alerta | 924565
+serviceSource | Servicio desde el que se origina la alerta, como Microsoft Defender para Endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity o Microsoft Defender para Office 365. | MicrosoftCloudAppSecurity
+creationTime | Hora en que se creó la alerta por primera vez. | 2020-09-06T14:46:55.7182276Z
+lastUpdatedTime | Hora en que la alerta se actualizó por última vez en el back-end. | 2020-09-06T14:46:57.2433333Z
+resolvedTime | Hora en que se resolvió la alerta. | 2020-09-10T05:22:59Z
+firstActivity | Hora en la que la alerta informó por primera vez de que la actividad se actualizó en el back-end.| 2020-09-04T05:22:59Z
 title | Valor de cadena de identificación breve disponible para cada alerta. | Actividad de ransomware
-description | Valor de cadena que describe cada alerta. | El usuario de prueba user2 (testUser2@contoso.com) ha manipulado 99 archivos con varias extensiones que finalizan con la extensión no común *herunterladen*. Se trata de un número inusual de manipulaciones de archivos e indica un posible ataque de ransomware.
-categoría | Vista visual y numérica de cuánto ha progresado el ataque a lo largo de la cadena de eliminación. Se alinea a la [Mitre de ATT&CK™ Framework](https://attack.mitre.org/). | Impacto
-status | Clasifique las alertas (como *nuevas*, *activas* o *resueltas*). Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nuevo
-severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *informativo*, *bajo*, * medio y *alto*. | Mediano
-investigationId | El identificador de investigación automatizada desencadenada por esta alerta. | 1234
-investigationState | Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *terminated*, *SuccessfullyRemediated*, *benigno*, *failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated* *, TerminatedByUser,* *TerminatedBySystem*, *queued*, *InnerFailure*, *PreexistingAlert*, *unsupports*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
-classification | La especificación del incidente. Los valores de la propiedad son: *Unknown*, *FalsePositive*, *TruePositive* o *null* | Unknown
-cálculo | Especifica la determinación del incidente. Los valores de la propiedad son: *NotAvailable*, *apt*, *malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *other* o  *null* | Apt
-assignedTo | Propietario del incidente, o *null* si no hay ningún propietario asignado. | secop2@contoso.com
-actorName | El grupo de actividad, si lo hubiera, asociado con esta alerta. | BORO
+description | Valor de cadena que describe cada alerta. | El usuario Test User2 (testUser2@contoso.com) manipuló 99 archivos con varias extensiones que terminaron con la extensión poco común *herunterladen*. Este es un número inusual de manipulaciones de archivos y es una señal de un posible ataque de ransomware.
+categoría | Vista visual y numérica de cuánto ha progresado el ataque a lo largo de la cadena de eliminación. Alineado con el [marco mitre att&CK™ .](https://attack.mitre.org/) | Impacto
+status | Clasifice las *alertas (como Nueva,* *Activa* o *Resuelta).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nuevo
+severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Mediano
+investigationId | El id. de investigación automatizado desencadenado por esta alerta. | 1234
+investigationState | Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
+classification | La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* o *null* | Unknown
+determinación | Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* o  *null* | Apt
+assignedTo | Propietario del incidente o *null* si no se asigna ningún propietario. | secop2@contoso.com
+actorName | El grupo de actividades, si lo hay, el asociado a esta alerta. | BORON
 threatFamilyName | Familia de amenazas asociada a esta alerta. | nulo
-mitreTechniques | Las técnicas de ataque, que se alinean con el marco de [Mitre ATT&CK](https://attack.mitre.org/)™. | \[\]
-equipos | Todos los dispositivos en los que se enviaron alertas relacionadas con el incidente. | \[\] (vea los detalles de los campos de entidad a continuación)
+mitreTechniques | Las técnicas de ataque, tal como se alinean con el marco de trabajo&[CK ™ MITRE ATT.](https://attack.mitre.org/) | \[\]
+dispositivos | Todos los dispositivos en los que se enviaron alertas relacionadas con el incidente. | \[\] (consulta los detalles de los campos de entidad a continuación)
 
 ### <a name="device-format"></a>Formato de dispositivo
 
-Nombre del campo | Descripción | Valor de ejemplo
+Nombre del campo | Description | Valor de ejemplo
 -|-|-
-DeviceId | El identificador del dispositivo tal como se ha designado en ATP de Microsoft defender. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  El identificador de dispositivo tal como se ha designado en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis). Solo está disponible para los dispositivos Unidos a un dominio. | nulo
-deviceDnsName | Nombre de dominio completo del dispositivo. | user5cx.middleeast.corp.contoso.com
-osPlatform | La plataforma de sistema operativo que el dispositivo está ejecutando.| WindowsServer2016
-osBuild | La versión de compilación para el sistema operativo que el dispositivo está ejecutando. | 14393
-rbacGroupName | El grupo [de control de acceso basado en roles](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) asociado al dispositivo. | WDATP-Ring0
-firstSeen | Hora en que se ha visto el dispositivo por primera vez. | 2020-02-06T14:16:01.9330135 Z
+DeviceId | El id. de dispositivo como se designa en ATP de Microsoft Defender. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+aadDeviceId |  El id. de dispositivo como se ha designado [en Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) Solo está disponible para dispositivos unidos a un dominio. | nulo
+deviceDnsName | El nombre de dominio completo del dispositivo. | user5cx.middleeast.corp.contoso.com
+osPlatform | La plataforma del sistema operativo que está ejecutando el dispositivo.| WindowsServer2016
+osBuild | La versión de compilación del sistema operativo que está ejecutando el dispositivo. | 14393
+rbacGroupName | El [grupo de control de acceso basado en roles](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) asociado al dispositivo. | WDATP-Ring0
+firstSeen | Hora en que se vio el dispositivo por primera vez. | 2020-02-06T14:16:01.9330135Z
 healthStatus | El estado de mantenimiento del dispositivo. | Activo
-riskScore | La puntuación de riesgo para el dispositivo. | Alto
-organismos | Todas las entidades que se han identificado como parte de una alerta determinada o están relacionadas con ella. | \[\] (vea los detalles de los campos de entidad a continuación)
+riskScore | La puntuación de riesgo del dispositivo. | Alto
+entidades | Todas las entidades que se han identificado como parte o relacionadas con una alerta determinada. | \[\] (consulta los detalles de los campos de entidad a continuación)
 
-### <a name="entity-format"></a>Formato de la entidad
+### <a name="entity-format"></a>Formato de entidad
 
-Nombre del campo | Descripción | Valor de ejemplo
+Nombre del campo | Description | Valor de ejemplo
 -|-|-
-entityType | Entidades que se han identificado como parte de una alerta determinada o están relacionadas con ella.<br>Los valores de las propiedades son: *usuario*, *IP*, *dirección URL*, *archivo*, *proceso*, *buzón*, *MailMessage*, *MailCluster*, *registro* | Usuario
-SHA1 | Disponible si entityType es *File*.<br>Hash de archivo de alertas asociadas a un archivo o proceso. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-SHA256 | Disponible si entityType es *File*.<br>Hash de archivo de alertas asociadas a un archivo o proceso. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+entityType | Entidades que se han identificado como parte o relacionadas con una alerta determinada.<br>Los valores de las propiedades son: *User*, *Ip*, *Url*, *File*, *Process*, *MailBox*, *MailMessage*, *MailCluster*, *Registry* | User
+sha1 | Disponible si entityType es *File*.<br>El hash de archivo para las alertas asociadas a un archivo o proceso. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256 | Disponible si entityType es *File*.<br>El hash de archivo para las alertas asociadas a un archivo o proceso. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | Disponible si entityType es *File*.<br>El nombre de archivo de las alertas asociadas a un archivo o proceso | Detector.UnitTests.dll
-Rutaarchivo | Disponible si entityType es *File*.<br>La ruta de acceso del archivo para las alertas asociadas a un archivo o proceso | C: \\ \ agent_work_temp \deploy\system\2020-09-06 12_14_54 \ salida
-Idproceso | Disponible si entityType es *Process*. | 24348
+filePath | Disponible si entityType es *File*.<br>La ruta de acceso del archivo para las alertas asociadas a un archivo o proceso | C: \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+processId | Disponible si entityType es *Process*. | 24348
 processCommandLine | Disponible si entityType es *Process*. | "El archivo está listo para descargar \_1911150169.exe"
-processCreationTime | Disponible si entityType es *Process*. | 2020-07-18T03:25:38.5269993 Z
+processCreationTime | Disponible si entityType es *Process*. | 2020-07-18T03:25:38.5269993Z
 parentProcessId | Disponible si entityType es *Process*. | 16840
-parentProcessCreationTime | Disponible si entityType es *Process*. | 2020-07-18T02:12:32.8616797 Z
-ipAddress | Disponible si entityType es *IP*. <br>Dirección IP de alertas asociadas con eventos de red, como *la comunicación a un destino de red malintencionado*. | 62.216.203.204
-url | Disponible si entityType es *URL*. <br>Dirección URL de las alertas asociadas a eventos de red, como *la comunicación a un destino de red malintencionado*. | down.esales360.cn
+parentProcessCreationTime | Disponible si entityType es *Process*. | 2020-07-18T02:12:32.8616797Z
+ipAddress | Disponible si entityType es *Ip*. <br>Dirección IP para las alertas asociadas a eventos de red, como *la comunicación a un destino de red malintencionado.* | 62.216.203.204
+url | Disponible si entityType es *Url*. <br>Dirección URL de alertas asociadas a eventos de red, como la comunicación *a un destino de red malintencionado.* | down.esales360.cn
 accountName | Disponible si entityType es *User*. | testUser2
-domainName | Disponible si entityType es *User*. | Europa. Corp. contoso
+domainName | Disponible si entityType es *User*. | europe.corp.contoso
 userSid | Disponible si entityType es *User*. | S-1-5-21-1721254763-462695806-1538882281-4156657
 aadUserId | Disponible si entityType es *User*. | fc8f7484-f813-4db2-afab-bc1507913fb6
-userPrincipalName | Disponible si entityType es  / MailMessage de *buzón* de usuario / . | testUser2@contoso.com
-mailboxDisplayName | Disponible si entityType es *MailBox*. | prueba user2
-mailboxAddress | Disponible si entityType es  / MailMessage de *buzón* de usuario / . | testUser2@contoso.com
-clusterBy | Disponible si entityType es  *MailCluster*. | Titular P2SenderDomain; ContentType
-sender | Disponible si entityType es  / MailMessage de *buzón* de usuario / . | user.abc@mail.contoso.co.in
+userPrincipalName | Disponible si entityType es  / *MailBox* de usuario / *MailMessage*. | testUser2@contoso.com
+mailboxDisplayName | Disponible si entityType es *MailBox*. | usuario de prueba2
+mailboxAddress | Disponible si entityType es  / *MailBox* de usuario / *MailMessage*. | testUser2@contoso.com
+clusterBy | Disponible si entityType es  *MailCluster*. | Asunto; P2SenderDomain; ContentType
+sender | Disponible si entityType es  / *MailBox* de usuario / *MailMessage*. | user.abc@mail.contoso.co.in
 destinatario | Disponible si entityType es *MailMessage*. | testUser2@contoso.com
-subject | Disponible si entityType es *MailMessage*. | \[\]Atención externa
-deliveryAction | Disponible si entityType es *MailMessage*. | Pronuncia
+subject | Disponible si entityType es *MailMessage*. | \[Atención \] externa
+deliveryAction | Disponible si entityType es *MailMessage*. | Entregado
 securityGroupId | Disponible si entityType es  *SecurityGroup*. | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
 securityGroupName | Disponible si entityType es  *SecurityGroup*. | Operadores de configuración de red
-registryHive | Disponible si entityType es  *Registry*. | HKEY \_ local \_ Machine |
-Deleteinstance | Disponible si entityType es  *Registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Disponible si entityType es  *Registry*. | Cadena
-Deleteinstance | Disponible si entityType es  *Registry*. | 31-00-00-00
-deviceId | IDENTIFICADOR, si existe, del dispositivo relacionado con la entidad. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
+registryHive | Disponible si entityType es  *registry*. | HKEY \_ LOCAL \_ MACHINE |
+registryKey | Disponible si entityType es  *registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryValueType | Disponible si entityType es  *registry*. | Cadena
+registryValue | Disponible si entityType es  *registry*. | 31-00-00-00
+deviceId | El identificador, si lo hay, del dispositivo relacionado con la entidad. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>Ejemplo
 
@@ -713,9 +714,9 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Acceso a las API de Microsoft 365 defender](api-access.md)
-- [Obtenga información sobre los límites de API y las licencias](api-terms.md)
-- [Descripción de los códigos de error](api-error-codes.md)
+- [Obtener acceso a las API de Microsoft 365 Defender](api-access.md)
+- [Más información sobre los límites de la API y las licencias](api-terms.md)
+- [Comprender los códigos de error](api-error-codes.md)
 - [Información general sobre incidentes](incidents-overview.md)
 - [API de incidentes](api-incident.md)
-- [Actualizar la API de incidentes](api-update-incidents.md)
+- [ACTUALIZAR API de incidentes](api-update-incidents.md)

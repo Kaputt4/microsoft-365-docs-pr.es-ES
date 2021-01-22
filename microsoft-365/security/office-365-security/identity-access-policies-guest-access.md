@@ -1,7 +1,7 @@
 ---
-title: Directivas de acceso de dispositivos e identidades para permitir el acceso B2B de invitados y usuarios externos- Microsoft 365 para empresas | Microsoft Docs
+title: 'Directivas de acceso a dispositivos e identidades para permitir el acceso B2B de usuarios invitados y externos: Microsoft 365 para empresas | Microsoft Docs'
 description: Describe el acceso condicional recomendado y las directivas relacionadas para proteger el acceso de invitados y usuarios externos.
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -17,12 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4ee6cb93e5c943d704950e28ba4dc70a246429a6
-ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
+ms.technology: mdo
+ms.openlocfilehash: 2ef494f8e383f50f16b1e64f6387b6e5d62459c4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845100"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932615"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 
@@ -68,7 +69,7 @@ Para obtener más información sobre cómo proteger las directivas de acceso a d
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Requerir MFA siempre para usuarios invitados y externos
 
-Esta directiva solicita a los invitados que se registren para MFA en el inquilino, independientemente de si están registrados para MFA en su inquilino principal. Al obtener acceso a los recursos de su espacio empresarial, los invitados y los usuarios externos deben usar MFA para cada solicitud.
+Esta directiva solicita a los invitados que se registren para MFA en el inquilino, independientemente de si están registrados para MFA en su inquilino principal. Al obtener acceso a los recursos del espacio empresarial, los invitados y los usuarios externos deben usar MFA para cada solicitud.
 
 ### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>Exclusión de invitados y usuarios externos de MFA basada en riesgos
 
@@ -84,7 +85,7 @@ Solo una organización puede administrar un dispositivo. Si no excluye invitados
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-Configure las directivas de acceso condicional para:
+Configurar directivas de acceso condicional para:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)

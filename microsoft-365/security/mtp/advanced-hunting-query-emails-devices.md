@@ -1,10 +1,10 @@
 ---
-title: Buscar amenazas en dispositivos, mensajes de correo electrónico, aplicaciones e identidades con búsqueda avanzada
-description: Estudie los escenarios de búsqueda y las consultas de ejemplo comunes que cubren los dispositivos, los correos electrónicos, las aplicaciones y las identidades.
-keywords: características avanzadas de búsqueda, datos de Office365, dispositivos Windows, mensajes de correo electrónico de Office365, mensajes de correo electrónico, aplicaciones, identidades, caza de amenazas, búsqueda de amenazas en el ciberespacio, búsqueda, consulta, telemetría, Microsoft 365, protección contra amenazas de Microsoft
+title: Buscar amenazas en dispositivos, correos electrónicos, aplicaciones e identidades con búsqueda avanzada
+description: Estudiar escenarios de búsqueda comunes y consultas de ejemplo que cubren dispositivos, correos electrónicos, aplicaciones e identidades.
+keywords: búsqueda avanzada, datos de Office365, dispositivos Windows, normalizar los correos electrónicos de Office365, correos electrónicos, aplicaciones, identidades, búsqueda de amenazas, búsqueda de ciberamenazas, búsqueda, consulta, telemetría, Microsoft 365, Protección contra amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,43 +19,44 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: b408f574ab4b89806be9154394f49c00a7fd1e99
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847349"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932255"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas en dispositivos, mensajes de correo electrónico, aplicaciones e identidades
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Búsqueda de amenazas en dispositivos, correos electrónicos, aplicaciones e identidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
-La [búsqueda avanzada](advanced-hunting-overview.md) en Microsoft 365 defender le permite buscar de forma proactiva las amenazas en:
-- Dispositivos administrados por Microsoft defender para el punto de conexión
-- Mensajes de correo electrónico procesados por Microsoft 365
-- Actividades de la aplicación de nube, eventos de autenticación y actividades del controlador de dominio con seguimiento de Microsoft Cloud App Security y Microsoft defender para identidad
+[La búsqueda](advanced-hunting-overview.md) avanzada en Microsoft 365 Defender le permite buscar de forma proactiva amenazas en:
+- Dispositivos administrados por Microsoft Defender para endpoint
+- Correos electrónicos procesados por Microsoft 365
+- Actividades de aplicaciones en la nube, eventos de autenticación y actividades de controlador de dominio que realiza Microsoft Cloud App Security y Microsoft Defender for Identity
 
-Con este nivel de visibilidad, puede buscar rápidamente amenazas que atraviesan secciones de la red, incluidas las complejas intrusiones que llegan en el correo electrónico o en la web, elevan los privilegios locales, adquieren credenciales de dominio privilegiadas y se mueven al otro lado de sus dispositivos. 
+Con este nivel de visibilidad, puede buscar rápidamente las amenazas que atraviesan secciones de la red, incluidas las sofisticadas intrusiones que llegan al correo electrónico o a la web, elevar privilegios locales, adquirir credenciales de dominio con privilegios y moverse lateralmente a través de sus dispositivos. 
 
-Estas son las técnicas generales y las consultas de ejemplo basadas en diversos escenarios de caza que pueden ayudarle a aprender cómo puede crear consultas al buscar amenazas tan sofisticadas.
+Estas son técnicas generales y consultas de ejemplo basadas en diversos escenarios de búsqueda que pueden ayudarle a explorar cómo puede crear consultas al buscar amenazas sofisticadas.
 
-## <a name="get-entity-info"></a>Obtener información de la entidad
-Use estas consultas para saber cómo puede obtener rápidamente información sobre las cuentas de usuario, los dispositivos y los archivos. 
+## <a name="get-entity-info"></a>Obtener información de entidad
+Usa estas consultas para obtener información sobre cómo obtener rápidamente información sobre las cuentas de usuario, los dispositivos y los archivos. 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Obtener cuentas de usuario a través de las direcciones de correo electrónico
-Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario. Por lo general, puede hacerlo para la dirección del destinatario o del remitente mediante el *host local* desde la dirección de correo electrónico.
+Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario. Por lo general, puede hacerlo para la dirección del destinatario o del remitente mediante el *host local* de la dirección de correo electrónico.
 
-En el fragmento de código siguiente, usamos la función [ToString ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto para extraer el derecho de host local antes de las `@` direcciones de correo electrónico de destinatarios de la columna `RecipientEmailAddress` .
+En el fragmento de código siguiente, usamos la función [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto para extraer el host local justo antes de las direcciones de correo electrónico del destinatario de la `@` columna `RecipientEmailAddress` .
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
-La siguiente consulta muestra cómo se puede usar este fragmento de código:
+La consulta siguiente muestra cómo se puede usar este fragmento de código:
 
 ```kusto
 EmailEvents
@@ -65,7 +66,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Combinar la tabla IdentityInfo
 
-Puede obtener nombres de cuenta y otra información de la cuenta si combina o combina la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md). La siguiente consulta obtiene la lista de detecciones de suplantación de identidad (phishing) y malware de la [tabla EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, combina esa información con la `IdentityInfo` tabla para obtener información detallada acerca de cada destinatario. 
+Puede obtener nombres de cuenta y otra información de cuenta si combina o se une a la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md). La consulta siguiente obtiene la lista de detecciones de suplantación de identidad y malware de la tabla [EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, une esa información con la tabla para obtener información detallada sobre `IdentityInfo` cada destinatario. 
 
 ```kusto
 EmailEvents
@@ -82,10 +83,10 @@ Department, City, Country
 ```
 
 ### <a name="get-device-information"></a>Obtener información del dispositivo
-El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) proporciona una amplia información de dispositivos en varias tablas. Por ejemplo, la [tabla DeviceInfo](advanced-hunting-deviceinfo-table.md) proporciona información completa sobre dispositivos en función de los datos de eventos agregados con regularidad. Esta consulta usa la `DeviceInfo` tabla para comprobar si un usuario potencialmente comprometido ( `<account-name>` ) ha iniciado sesión en cualquier dispositivo y, a continuación, muestra las alertas que se han desencadenado en dichos dispositivos.
+El [esquema de búsqueda avanzada proporciona](advanced-hunting-schema-tables.md) información extensa del dispositivo en varias tablas. Por ejemplo, la [tabla DeviceInfo proporciona](advanced-hunting-deviceinfo-table.md) información completa del dispositivo en función de los datos de eventos agregados periódicamente. Esta consulta usa la tabla para comprobar si un usuario potencialmente comprometido ( ) ha iniciado sesión en algún dispositivo y, a continuación, enumera las alertas que se han desencadenado `DeviceInfo` `<account-name>` en esos dispositivos.
 
 >[!Tip]
-> Esta consulta usa `kind=inner` para especificar una [Unión interna](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que impide la desduplicación de los valores del lado izquierdo `DeviceId` .
+> Esta consulta se usa para especificar una combinación interna , que `kind=inner` evita la [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)desduplicación de los valores del lado izquierdo para `DeviceId` .
 
 ```kusto
 DeviceInfo
@@ -102,8 +103,8 @@ DeviceInfo
 
 ## <a name="hunting-scenarios"></a>Escenarios de búsqueda
 
-### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Enumerar las actividades de inicio de sesión de los usuarios que recibieron mensajes de correo electrónico que no se zapped correctamente
-[La depuración automática de cero horas (ZAP)](../office-365-security/zero-hour-auto-purge.md) redirige los correos electrónicos malintencionados después de que se hayan recibido. Si se produce un error en ZAP, el código malintencionado se podría ejecutar eventualmente en el dispositivo y dejar cuentas en peligro. Esta consulta comprueba la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que no se han tratado correctamente mediante ZAP.
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Enumerar las actividades de inicio de sesión de los usuarios que recibieron mensajes de correo electrónico que no se recortaron correctamente
+[La purga automática (ZAP)](../office-365-security/zero-hour-auto-purge.md) de cero horas resuelve los correos electrónicos malintencionados después de que se hayan recibido. Si se produce un error en ZAP, es posible que el código malintencionado se ejecute en el dispositivo y deje las cuentas en peligro. Esta consulta comprueba la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que ZAP no ha abordado correctamente.
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -119,8 +120,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Obtener intentos de inicio de sesión por cuentas de dominio dirigidas por el robo de credenciales
-Esta consulta identifica primero todas las alertas de acceso a credenciales en la `AlertInfo` tabla. A continuación, combina o une la `AlertEvidence` tabla, que analiza los nombres de las cuentas de destino y los filtros de las cuentas Unidas a un dominio únicamente. Por último, comprueba la `IdentityLogonEvents` tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino Unidas a un dominio.
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Obtener intentos de inicio de sesión por cuentas de dominio destinadas al robo de credenciales
+Esta consulta identifica primero todas las alertas de acceso a credenciales de la `AlertInfo` tabla. A continuación, combina o une la tabla, que analiza para los nombres de las cuentas de destino y filtra solo para las cuentas unidas `AlertEvidence` a un dominio. Por último, comprueba la tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino unidas `IdentityLogonEvents` al dominio.
 
 ```kusto
 AlertInfo
@@ -140,7 +141,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Compruebe si entre sus dispositivos se encuentran archivos de un remitente malintencionado conocido.
-Suponiendo que conoce una dirección de correo electrónico que envía archivos malintencionados ( `MaliciousSender@example.com` ), puede ejecutar esta consulta para determinar si existen archivos de este remitente en los dispositivos. Puede usar esta consulta, por ejemplo, para identificar los dispositivos afectados por una campaña de distribución de malware.
+Suponiendo que conoce una dirección de correo electrónico que envía archivos malintencionados ( ), puede ejecutar esta consulta para determinar si existen archivos de este remitente `MaliciousSender@example.com` en sus dispositivos. Puedes usar esta consulta, por ejemplo, para identificar los dispositivos afectados por una campaña de distribución de malware.
 
 ```kusto
 EmailAttachmentInfo
@@ -176,7 +177,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Revisar las actividades de PowerShell después de recibir mensajes de correo electrónico conocidos por parte del remitente malintencionado 
-Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales. Si conoce los mensajes de correo electrónico procedentes de un remitente malintencionado conocido ( `MaliciousSender@example.com` ), puede usar esta consulta para enumerar y revisar las actividades de PowerShell que se produjeron en un plazo de 30 minutos después de la recepción del correo electrónico del remitente.  
+Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales. Si conoce los correos electrónicos procedentes de un remitente malintencionado conocido ( ), puede usar esta consulta para enumerar y revisar las actividades de PowerShell que se produjeron en un plazo de 30 minutos después de recibir un correo electrónico del `MaliciousSender@example.com` remitente.  
 
 ```kusto
 //Define new table for emails from specific sender

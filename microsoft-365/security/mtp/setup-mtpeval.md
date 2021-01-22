@@ -1,10 +1,10 @@
 ---
-title: Configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 defender
-description: Obtenga acceso al centro de seguridad 365 de Microsoft y, a continuación, configure el entorno de prueba de Microsoft 365 defender
-keywords: Programa de instalación de Microsoft Threat Protection Trial, Microsoft Threat Protection Pilot Setup, pruebe Microsoft Threat Protection, instalación del laboratorio de evaluación de Microsoft Threat Protection
+title: Configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender
+description: Obtenga acceso al Centro de seguridad de Microsoft 365 y configure su entorno de laboratorio de prueba de Microsoft 365 Defender
+keywords: Configuración de prueba de Protección contra amenazas de Microsoft, configuración piloto de Protección contra amenazas de Microsoft, probar Protección contra amenazas de Microsoft, configuración del laboratorio de evaluación de Protección contra amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 503b7a6a6b3ad6394293e9f70dbdd336f6bee9dd
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.technology: m365d
+ms.openlocfilehash: 835adc5c2bf9fd1c9a14c2d53b17a032a89a6240
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131314"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932987"
 ---
-# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configurar el entorno del laboratorio de prueba de Microsoft 365 defender 
+# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configurar el entorno de laboratorio de prueba de Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,129 +35,129 @@ ms.locfileid: "49131314"
 - Microsoft 365 Defender 
 
 
-La creación de un entorno de prueba de Microsoft 365 defender o un entorno piloto y su implementación es un proceso de tres fases:
+Crear un entorno de prueba o piloto de Microsoft 365 Defender e implementarlo es un proceso de tres fases:
 
-|[![Fase 1: preparación](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fase 1: preparación](prepare-mtpeval.md) |![Fase 2: configurar](../../media/phase-diagrams/setup.png)<br/>Fase 2: configurar |[![Fase 3: incorporada](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fase 3: incorporada](config-mtpeval.md) | [![Volver a la prueba piloto](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Volver a la guía piloto](mtp-pilot.md) |
+|[![Fase 1: Preparar](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fase 1: Preparar](prepare-mtpeval.md) |![Fase 2: Configurar](../../media/phase-diagrams/setup.png)<br/>Fase 2: Configurar |[![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fase 3: Incorporación](config-mtpeval.md) | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Volver al libro de reproducción piloto](mtp-pilot.md) |
 |--|--|--|--|
-||*Ya está aquí.*  | | |
+||*¡Estás aquí!*  | | |
 
 
-Actualmente está en la fase de configuración. Siga los pasos iniciales para acceder al centro de seguridad 365 de Microsoft y, a continuación, configure el entorno de prueba o el entorno piloto.
+Actualmente está en la fase de configuración. Siga los pasos iniciales para acceder al Centro de seguridad de Microsoft 365 y, a continuación, configure el entorno de prueba o piloto.
 
-Regístrese para obtener una suscripción de Office 365 o Azure Active Directory para generar un inquilino *. onmicrosoft.com* que puede usar para registrarse en su licencia de Microsoft 365 E5. 
+Regístrese para obtener una suscripción a Office 365 o Azure Active Directory para generar un inquilino *.onmicrosoft.com* que puede usar para registrarse en su licencia de Microsoft 365 E5. 
 
 >[!NOTE]
->Si ya tiene una suscripción a Office 365 o Azure Active Directory existente, puede omitir los pasos de creación del inquilino de prueba de Office 365 E5 o piloto.
+>Si ya tiene una suscripción existente de Office 365 o Azure Active Directory, puede omitir los pasos de creación de inquilinos piloto o de prueba de Office 365 E5.
 
-En esta fase, se le guiará a:
+En esta fase, se te guiará a:
 - Crear un inquilino de prueba de Office 365 E5
 - Habilitar la suscripción de prueba de Microsoft 365
 
 
 ## <a name="create-an-office-365-e5-trial-tenant"></a>Crear un inquilino de prueba de Office 365 E5
 >[!NOTE]
->Si ya tiene una suscripción a Office 365 o Azure Active Directory existente, puede omitir los pasos de creación de inquilinos de prueba de Office 365 E5.
+>Si ya tiene una suscripción existente de Office 365 o Azure Active Directory, puede omitir los pasos de creación de inquilinos de prueba de Office 365 E5.
 
-1. Vaya al [portal de producto de Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) y seleccione **prueba gratuita**.
+1. Vaya al [portal de productos de Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) y seleccione Prueba **gratuita.**
 
-   ![Página de prueba gratuita de Image of_Office 365 E5](../../media/mtp-eval-9.png)
+   ![Imagen of_Office de prueba gratuita 365 E5](../../media/mtp-eval-9.png)
   
-2. Para completar el registro de prueba, escriba su dirección de correo electrónico (personal o Corporate). Haga clic en **configurar cuenta**.
+2. Complete el registro de prueba especificando su dirección de correo electrónico (personal o corporativa). Haga clic **en Configurar cuenta.**
 
-   ![Página de configuración de registro de prueba de of_Office de Image 365 E5](../../media/mtp-eval-10.png)
+   ![Página de of_Office configuración de registro de prueba de 365 E5](../../media/mtp-eval-10.png)
 
-3. Escriba su nombre, apellidos, número de teléfono del trabajo, nombre de la compañía, tamaño de la compañía y país o región.  
+3. Rellene el nombre, los apellidos, el número de teléfono de la empresa, el nombre de la compañía, el tamaño de la compañía y el país o región.  
 
-   ![Página de configuración del registro de prueba de of_Office de la imagen de 365 E5 que solicita el nombre, el teléfono y los detalles de la compañía](../../media/mtp-eval-11.png)
+   ![Imagen of_Office página de configuración de registro de prueba de 365 E5 que solicita el nombre, el teléfono y los detalles de la empresa](../../media/mtp-eval-11.png)
    
    > [!NOTE]
-   > El país o la región que establezca aquí determina la región del centro de datos donde se hospedará Office 365.
+   > El país o la región que establezca aquí determina la región del centro de datos en la que se hospedará Office 365.
   
-4. Elija su preferencia de comprobación: mediante un mensaje de texto o una llamada. Haga clic en **Enviar código de verificación**. 
+4. Elija su preferencia de verificación: a través de un mensaje de texto o una llamada. Haga clic **en Enviar código de verificación.** 
 
-   ![Página de configuración del registro de prueba de of_Office de imagen de 365 E5 que solicita preferencia de comprobación](../../media/mtp-eval-12.png)
+   ![Imagen of_Office página de configuración de registro de prueba de 365 E5 que solicita la preferencia de verificación](../../media/mtp-eval-12.png)
 
-5. Establezca el nombre de dominio personalizado para el inquilino y, a continuación, haga clic en **siguiente**.
+5. Establezca el nombre de dominio personalizado para su espacio empresarial y, a continuación, haga clic **en Siguiente.**
 
-   ![Página de configuración de registro de prueba de 365 E5 de Image of_Office E5, donde puede configurar su nombre de dominio personalizado](../../media/mtp-eval-13.png)
+   ![Página of_Office configuración de registro de prueba de 365 E5 en la que puede configurar el nombre de dominio personalizado](../../media/mtp-eval-13.png)
  
-6. Configure la primera identidad, que será un administrador global del espacio empresarial. Escriba un **nombre** y una **contraseña**. Haga clic en **Iniciar sesión**.
+6. Configure la primera identidad, que será un administrador global del inquilino. Rellene el **nombre y** la **contraseña.** Haga clic en **Iniciar sesión**.
 
-   ![Página de configuración de registro de prueba de 365 E5 de Image of_Office E5, donde puede configurar la identidad de la empresa](../../media/mtp-eval-14.png)
+   ![Página of_Office configuración de registro de prueba de 365 E5 en la que puede establecer su identidad empresarial](../../media/mtp-eval-14.png)
 
-7. Haga clic en **ir al programa de instalación** para completar el aprovisionamiento de inquilino de prueba de Office 365 E5.
+7. Haga **clic en Ir al programa de** instalación para completar el aprovisionamiento de inquilinos de prueba de Office 365 E5.
 
-   ![Imagen de la página de configuración del registro de prueba de Office 365 E5 solicitando hacer clic en el botón de configuración de Go](../../media/mtp-eval-15.png)
+   ![Imagen de la página de configuración del registro de prueba de Office 365 E5 en la que se le pide que haga clic en el botón Ir a la instalación](../../media/mtp-eval-15.png)
 
-8. Conecte el dominio corporativo al inquilino de Office 365. Opcional Elija **conectar un dominio que ya posee** y escriba el nombre de dominio. Haga clic en **Siguiente**.
+8. Conecte su dominio corporativo al inquilino de Office 365. [Opcional] Elija **Conectar un dominio que ya posee** y escriba su nombre de dominio. Haga clic en **Siguiente**.
 
-   ![Página de instalación de Image of_Office 365 E5 donde debe personalizar el inicio de sesión y el correo electrónico](../../media/mtp-eval-16.png)
+   ![Imagen of_Office página de instalación de 365 E5 donde debe personalizar el inicio de sesión y el correo electrónico](../../media/mtp-eval-16.png)
  
-9. Agregue un registro TXT o MX para validar la propiedad del dominio. Una vez que haya agregado el registro TXT o MX a su dominio, seleccione **comprobar**.
+9. Agregue un registro TXT o MX para validar la propiedad del dominio. Una vez que haya agregado el registro TXT o MX a su dominio, seleccione **Comprobar**.
 
-   ![Página de instalación de Image of_Office 365 E5 donde debe agregar un TXT del registro MX para comprobar su dominio](../../media/mtp-eval-17.png)
+   ![Imagen of_Office página de instalación de 365 E5 donde debe agregar un registro TXT de MX para comprobar el dominio](../../media/mtp-eval-17.png)
  
-10. Opcional Cree más cuentas de usuario para el inquilino. Puede omitir este paso haciendo clic en **siguiente**.
+10. [Opcional] Cree más cuentas de usuario para su espacio empresarial. Puede omitir este paso haciendo clic en **Siguiente**.
 
-    ![Página de instalación de Image of_Office 365 E5 donde puede agregar más usuarios](../../media/mtp-eval-18.png)
+    ![Página of_Office configuración de 365 E5 en la que puede agregar más usuarios](../../media/mtp-eval-18.png)
  
-11. Opcional Descargue las aplicaciones de Office. Haga clic en **siguiente** para omitir este paso. 
+11. [Opcional] Descargue las aplicaciones de Office. Haga **clic en** Siguiente para omitir este paso. 
 
-    ![Página de imagen of_Office 365 E5 donde puede instalar las aplicaciones de Office](../../media/mtp-eval-19.png)
+    ![Imagen of_Office página 365 E5 donde puede instalar las aplicaciones de Office](../../media/mtp-eval-19.png)
 
-12. Opcional Migrar mensajes de correo electrónico. De nuevo, puede omitir este paso.
+12. [Opcional] Migrar mensajes de correo electrónico. De nuevo, puede omitir este paso.
 
-    ![Image of_Office 365 E5 donde puede establecer si desea migrar los mensajes de correo electrónico o no.](../../media/mtp-eval-20.png)
+    ![Imagen of_Office 365 E5 donde puede establecer si desea migrar mensajes de correo electrónico o no](../../media/mtp-eval-20.png)
  
-13. Elija servicios en línea. Seleccione **Exchange** y haga clic en **siguiente**. 
+13. Elija servicios en línea. Seleccione **Exchange y** haga clic en **Siguiente.** 
 
-    ![Image of_Office 365 E5 donde puede elegir sus servicios en línea](../../media/mtp-eval-21.png)
+    ![Imagen of_Office 365 E5 donde puede elegir los servicios en línea](../../media/mtp-eval-21.png)
 
-14. Agregue los registros MX, CNAME y TXT a su dominio. Una vez completada, seleccione **comprobar**.
+14. Agregue registros MX, CNAME y TXT al dominio. Cuando se complete, seleccione **Comprobar**.
 
-    ![Image of_Office 365 E5 aquí puede agregar sus registros DNS](../../media/mtp-eval-22.png)
+    ![Imagen of_Office 365 E5 aquí puede agregar los registros DNS](../../media/mtp-eval-22.png)
  
 15. Enhorabuena, ha completado el aprovisionamiento de su inquilino de Office 365.
 
-    ![Página de confirmación de finalización de la instalación de Image of_Office 365 E5](../../media/mtp-eval-23.png)
+    ![Página de of_Office de finalización de instalación de 365 E5](../../media/mtp-eval-23.png)
 
 ## <a name="enable-microsoft-365-trial-subscription"></a>Habilitar la suscripción de prueba de Microsoft 365
 
 >[!NOTE]
->Al registrarse para obtener una prueba, se le da 25 licencias de usuario para usarla durante un mes. Consulte [probar o comprar una suscripción a M365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) para obtener más información.
+>Registrarse para obtener una versión de prueba le ofrece 25 licencias de usuario para usarlas durante un mes. Consulta [Probar o comprar una suscripción a M365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) para obtener más información.
 
-1. En [centro de administración de 365 de Microsoft](https://admin.microsoft.com/), haga clic en **facturación** y navegue a **servicios de compra**.
+1. En el Centro de administración de [Microsoft 365,](https://admin.microsoft.com/)haga clic en **Facturación** y, a continuación, vaya **a Servicios de compra.**
 
-2. Seleccione **Microsoft 365 E5** y haga clic en **iniciar prueba gratuita**. 
+2. Seleccione **Microsoft 365 E5 y** haga clic en Iniciar prueba **gratuita.** 
 
-   ![Página de prueba de inicio gratuito de Image of_Microsoft 365 E5](../../media/mtp-eval-24.png)
+   ![Página de of_Microsoft 365 E5 Start free trial](../../media/mtp-eval-24.png)
 
-3. Elija su preferencia de comprobación: mediante un mensaje de texto o una llamada. Una vez que haya decidido, escriba el número de teléfono, seleccione **texto me** o **llámeme** en función de la selección.
+3. Elija su preferencia de verificación: a través de un mensaje de texto o una llamada. Una vez que lo haya decidido, escriba el número de teléfono, seleccione **Enviarme** un mensaje de texto o **Llamarme** en función de su selección.
 
-   ![Image of_Microsoft 365 E5 página de prueba gratuita de inicio para solicitar detalles de contacto para enviar código para demostrar que no es un robot](../../media/mtp-eval-25.png)
+   ![Imagen of_Microsoft 365 E5 Página de prueba gratuita que pide detalles de contacto para enviar código para demostrar que no es un robot](../../media/mtp-eval-25.png)
  
-4. Escriba el código de verificación y haga clic en **iniciar la versión de prueba gratuita**.
+4. Escribe el código de verificación y haz clic **en Iniciar la prueba gratuita.**
 
-   ![Image of_Microsoft 365 E5 página de prueba gratuita de inicio, donde puede rellenar el código de verificación que el sistema ha enviado para demostrar que no es un robot](../../media/mtp-eval-26.png)
+   ![Imagen of_Microsoft página de prueba gratuita inicio 365 E5 donde puede rellenar el código de verificación que el sistema envió para demostrar que no es un robot](../../media/mtp-eval-26.png)
 
-5. Haga clic en **probar ahora** para confirmar la prueba de Microsoft 365 E5.
+5. Haga **clic en Probar ahora** para confirmar la versión de prueba de Microsoft 365 E5.
 
-   ![Página de prueba de inicio gratuita de Image of_Microsoft 365 E5 donde debe entrar en el botón probar ahora para iniciar](../../media/mtp-eval-27.png)
+   ![Imagen of_Microsoft 365 E5 Página de prueba gratuita en la que debería reloj el botón Probar ahora para iniciar](../../media/mtp-eval-27.png)
  
-6. Vaya a los usuarios activos del **centro de administración de Microsoft 365**  >  **Users**  >  **Active users**. Seleccione su cuenta de usuario, seleccione **administrar licencias de producto** y, a continuación, intercambie la licencia de Office 365 E5 a **Microsoft 365 E5**. Haga clic en **Guardar**.
+6. Vaya a los usuarios activos del Centro de administración de **Microsoft 365.**  >    >   Seleccione su cuenta de usuario, **seleccione** Administrar licencias de producto y, a continuación, cambie la licencia de Office 365 E5 a **Microsoft 365 E5.** Haga clic en **Guardar**.
 
-   ![Imagen of_Microsoft 365 página del centro de administración donde puede seleccionar la licencia de Microsoft 365 E5](../../media/mtp-eval-28.png)
+   ![Imagen of_Microsoft página del Centro de administración de 365 donde puede seleccionar la licencia de Microsoft 365 E5](../../media/mtp-eval-28.png)
  
-7. Seleccione la cuenta de administrador global de nuevo y haga clic en **administrar nombre de usuario**.
+7. Vuelva a seleccionar la cuenta de administrador global y, a continuación, haga **clic en Administrar nombre de usuario.**
 
-   ![Imagen of_Microsoft 365 página del centro de administración donde puede seleccionar cuenta y, a continuación, administrar el nombre de usuario](../../media/mtp-eval-29.png)
+   ![Imagen of_Microsoft página del Centro de administración de 365 donde puede seleccionar Cuenta y, a continuación, Administrar nombre de usuario](../../media/mtp-eval-29.png)
 
-8. Opcional Cambie el dominio de *onmicrosoft.com* a su propio dominio, en función de lo que elija en los pasos anteriores. Haga clic en **Guardar cambios**.
+8. [Opcional] Cambie el dominio de *onmicrosoft.com* a su propio dominio, en función de lo que haya elegido en los pasos anteriores. Haga clic en **Guardar cambios**.
 
-   ![Imagen of_Microsoft 365 página del centro de administración donde puede cambiar su preferencia de dominio](../../media/mtp-eval-30.png)
+   ![Imagen of_Microsoft página del Centro de administración de 365 donde puede cambiar su preferencia de dominio](../../media/mtp-eval-30.png)
 
 
 
 ## <a name="next-step"></a>Paso siguiente
-|[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada pilar de Microsoft 365 defender para su laboratorio de prueba de Microsoft 365 defender o entorno piloto y incorpore los puntos de conexión.
+|[Fase 3: Configurar & incorporación](config-mtpeval.md) | Configure cada pilar de Microsoft 365 Defender para su entorno piloto o laboratorio de prueba de Microsoft 365 Defender e incorpore sus puntos de conexión.
 |:-------|:-----|

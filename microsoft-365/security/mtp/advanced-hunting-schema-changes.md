@@ -1,10 +1,10 @@
 ---
 title: Cambios de nomenclatura en el esquema de búsqueda avanzada de Microsoft 365 Defender
-description: Seguimiento y revisión de las tablas y columnas de cambios de nomenclatura en el esquema de búsqueda avanzada
+description: Realizar un seguimiento y revisar las tablas y columnas de cambios de nomenclatura en el esquema de búsqueda avanzada
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos, cambios de nomenclatura, cambiar el nombre, Protección contra amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 0bef5f4abcaf0d57af9c160ff31f859c2536ccd2
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780828"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932207"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 

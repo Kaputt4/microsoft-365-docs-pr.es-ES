@@ -1,8 +1,8 @@
 ---
-title: Supervisión y visualización de informes-centro de seguridad
-description: Describe cómo el centro de seguridad 365 de Microsoft proporciona un resumen de la protección y el estado de la seguridad de un vistazo.
+title: Supervisar y ver informes- Centro de seguridad
+description: Describe cómo el Centro de seguridad de Microsoft 365 proporciona un resumen resumido de la protección y el estado de seguridad.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, estado
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,36 +17,37 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d52c401c4b2e995e5ec18895c158f77ce0fce746
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: m365d
+ms.openlocfilehash: 4667c39a8d416d7e186d41063d7057109758cd33
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356888"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930407"
 ---
-# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Supervisión y visualización de informes en el centro de seguridad 365 de Microsoft
+# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Supervisar y ver informes en el Centro de seguridad de Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> ¿Quiere experimentar Microsoft 365 defender? Puede [evaluarlo en un entorno de laboratorio](https://aka.ms/mtp-trial-lab) o [ejecutar el proyecto piloto en producción](https://aka.ms/m365d-pilotplaybook).
+> ¿Desea experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](https://aka.ms/mtp-trial-lab) ejecutar el proyecto piloto en [producción.](https://aka.ms/m365d-pilotplaybook)
 >
 
-El centro de seguridad 365 de Microsoft proporciona un resumen de los Estados de protección y seguridad en todo el entorno de Microsoft 365.
+El Centro de seguridad de Microsoft 365 proporciona un resumen de los estados de protección y seguridad en su entorno de Microsoft 365.
 
-El centro de seguridad incluye una sección de **informes** que presenta un host de tarjetas que abarcan una amplia variedad de áreas. Los analistas de seguridad y los administradores pueden realizar un seguimiento de las tarjetas como parte de sus operaciones cotidianas. En la obtención de detalles, las tarjetas proporcionan informes detallados y, en algunos casos, opciones de administración.
+El centro de seguridad incluye una **sección de** informes que incluye un gran número de tarjetas que cubren una variedad de áreas. Los analistas y administradores de seguridad pueden realizar un seguimiento de las tarjetas como parte de sus operaciones diarias. En la exploración en profundidad, las tarjetas proporcionan informes detallados y, en algunos casos, opciones de administración.
 
-## <a name="customize-views"></a>Personalización de vistas
+## <a name="customize-views"></a>Personalizar vistas
 
-De forma predeterminada, las tarjetas se agrupan en las siguientes categorías:
+De forma predeterminada, las tarjetas se agrupan en estas categorías:
   
-* [Identidades](monitor-and-report-identities.md) : cuentas de usuario y credenciales
-* [Datos](monitor-data.md) : correo electrónico y contenido de documentos
-* [Dispositivos](monitor-devices.md) : equipos, teléfonos móviles y otros dispositivos
-* [Aplicaciones](monitor-apps.md) : programas y servicios en línea adjuntos
+* [Identidades:](monitor-and-report-identities.md) cuentas de usuario y credenciales
+* [Datos:](monitor-data.md) contenido del correo electrónico y del documento
+* [Dispositivos:](monitor-devices.md) equipos, teléfonos móviles y otros dispositivos
+* [Aplicaciones:](monitor-apps.md) programas y servicios en línea adjuntos
 
 Cambie a **Agrupar por tema** para reorganizar las tarjetas y agruparlas en los siguientes temas:
 
-* Las tarjetas de **riesgo** que resaltan las entidades, como las cuentas y los dispositivos, que pueden estar en peligro. Estas tarjetas también resaltan posibles orígenes de riesgo, como nuevas campañas de amenazas y aplicaciones en la nube privilegiadas  
-* **Tendencias de detección** : tarjetas que resaltan nuevas detecciones de amenazas, anomalías e infracciones de directivas
-* **Configuración y** tarjetas de mantenimiento que cubren la configuración y la implementación de los controles de seguridad, incluidos los Estados de incorporación de dispositivos a los servicios de administración
-* **Otras** : todas las demás que no se hayan clasificado en otros temas
+* **Riesgo:** tarjetas que resaltan entidades, como cuentas y dispositivos, que podrían estar en riesgo. Estas tarjetas también resaltan posibles orígenes de riesgo, como nuevas campañas de amenazas y aplicaciones en la nube con privilegios  
+* **Tendencias de detección:** tarjetas que resaltan nuevas detecciones de amenazas, anomalías e infracciones de directivas
+* **Configuración y estado:** tarjetas que cubren la configuración y la implementación de controles de seguridad, incluidos los estados de incorporación de dispositivos a los servicios de administración
+* **Otras** tarjetas no clasificadas en otros temas

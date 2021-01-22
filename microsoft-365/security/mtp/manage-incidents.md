@@ -1,9 +1,9 @@
 ---
-title: Administración de incidentes en Microsoft 365 defender
+title: Administrar incidentes en Microsoft 365 Defender
 description: Obtenga información acerca de cómo asignar, actualizar el estado
 keywords: incidente, incidentes, alertas, alertas correlacionadas, asignar, actualizar, estado, administrar, clasificación, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,24 +21,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 90d9d397b8baf0ffdb9844a0f068f142a5c7fd48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846657"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930635"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>Administración de incidentes en Microsoft 365 defender
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
 
 
-La administración de incidentes es esencial para lidiar con las amenazas y poder contenerlas. En Microsoft 365 defender, tiene acceso a la administración de incidentes en dispositivos, usuarios y buzones de correo. 
+La administración de incidentes es esencial para lidiar con las amenazas y poder contenerlas. En Microsoft 365 Defender, tiene acceso a la administración de incidentes en dispositivos, usuarios y buzones. 
 
 
 Para administrar los incidentes, seleccione un incidente en la **Cola de incidentes**. 
@@ -48,9 +49,9 @@ Puede editar el nombre del incidente, resolverlo, y establecer su clasificación
 En los casos en los que, durante la investigación, quiera pasar las alertas de un incidente a otro, también puede hacerlo desde la pestaña Alertas. Así, puede crear un incidente mayor o menor que incluya todas las alertas relevantes.
 
 ## <a name="edit-incident-name"></a>Editar el nombre del incidente
-A los incidentes se les asigna automáticamente un nombre basado en atributos de alertas como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
+A los incidentes se les asigna automáticamente un nombre en función de los atributos de alerta, como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
 
-Por ejemplo: *incidente de varias fases en varios puntos de conexión que han sido notificados por varios orígenes.*
+Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificados por varios orígenes.*
 
 Puede modificar el nombre del incidente para adecuarlo al sistema de nomenclatura que prefiera.
 
@@ -64,7 +65,7 @@ Si aún no se ha asignado un incidente, puede seleccionar **Asignarme a mí** pa
 
 ## <a name="set-status-and-classification"></a>Establecer estado y clasificación
 ### <a name="incident-status"></a>Estado del incidente
-Puede categorizar los incidentes (por ejemplo, como **Activo** o **Resuelto** ) cambiando su estado a medida que progresa la investigación. Esto le ayuda a organizar y administrar la forma en que su equipo puede responder a incidencias.
+Puede categorizar los incidentes (por ejemplo, como **Activo** o **Resuelto**) cambiando su estado a medida que progresa la investigación. Esto le ayuda a organizar y administrar la forma en que su equipo puede responder a incidencias.
 
 Por ejemplo, su analista de SOC puede revisar los incidentes de urgencia clasificados como **Activo** durante el día y decidir asignárselos a sí mismo para investigarlos.
 

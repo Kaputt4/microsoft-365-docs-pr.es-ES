@@ -1,10 +1,10 @@
 ---
 title: 'Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades: Microsoft 365 para empresas | Microsoft Docs'
-description: En este artículo se describen los requisitos previos que debe cumplir para usar configuraciones y directivas de acceso de dispositivos e identidades.
+description: En este artículo se describen los requisitos previos que debe cumplir para usar configuraciones y directivas de acceso a dispositivos e identidades.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.date: 09/01/2020
 f1.keywords:
@@ -18,16 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: eb07fe45c169d81559e4676f86abde5c6600a185
-ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
+ms.technology: mdo
+ms.openlocfilehash: a479d1bf7fee95a7d8ba862674cd75bfd3c699c7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845089"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932567"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
-En este artículo se describen los requisitos previos que los administradores deben cumplir para usar directivas de acceso de dispositivo e identidad recomendadas, así como para usar el acceso condicional. También se analizan los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
+En este artículo se describen los requisitos previos que los administradores deben cumplir para usar directivas recomendadas de acceso a dispositivos e identidades, y para usar el acceso condicional. También se analizan los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -42,13 +43,13 @@ En la tabla siguiente se detallan las características de requisitos previos y s
 
 |Configuración|Exceptions|
 |---|:---:|
-|[Configurar PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar en ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si la organización usa la autenticación federada.|Solo de nube|
+|[Configurar PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar en ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si su organización usa la autenticación federada.|Solo de nube|
 |[Habilitar el inicio de sesión único sin](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) problemas para iniciar sesión automáticamente a los usuarios cuando se encuentran en sus dispositivos de la organización conectados a la red de la organización.|Solo en la nube y federada|
 |[Configurar redes con nombre](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal). Azure AD Identity Protection recopila y analiza todos los datos de sesión disponibles para generar una puntuación de riesgo. Se recomienda especificar los intervalos IP públicos de la organización para la red en la configuración de redes con nombre de Azure AD. El tráfico procedente de estos intervalos tiene una puntuación de riesgo reducida y el tráfico de fuera del entorno de la organización tiene una puntuación de riesgo más alta.||
-|[Registre todos los usuarios para el autoservicio de restablecimiento de contraseña (SSPR) y autenticación multifactor (MFA).](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Te recomendamos que registres usuarios para Azure AD Multi-Factor Authentication con antelación. Azure AD Identity Protection usa Azure AD Multi-Factor Authentication para realizar comprobaciones de seguridad adicionales. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la aplicación [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Portal de empresa de Microsoft en sus dispositivos. Estos se pueden instalar desde la tienda de aplicaciones para cada plataforma.||
+|[Registre todos los usuarios para el restablecimiento de contraseña de autoservicio (SSPR) y la autenticación multifactor (MFA).](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Te recomendamos que registres usuarios para Azure AD Multi-Factor Authentication con antelación. Azure AD Identity Protection usa Azure AD Multi-Factor Authentication para realizar comprobaciones de seguridad adicionales. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la aplicación [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Portal de empresa de Microsoft en sus dispositivos. Estos se pueden instalar desde la tienda de aplicaciones para cada plataforma.||
 |[Habilitar el registro automático de dispositivos de equipos Windows unidos a un dominio.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) El acceso condicional garantizará que los dispositivos que se conectan a las aplicaciones estén unidos a un dominio o sean compatibles. Para permitir esto en equipos Windows, el dispositivo debe estar registrado con Azure AD.  En este artículo se explica cómo configurar el registro automático de dispositivos.|Solo de nube|
 |**Preparar el equipo de soporte técnico**. Tenga preparado un plan para los usuarios que no puedan completar MFA. Esto podría ser agregarlos a un grupo de exclusión de directivas o registrar nueva información de MFA para ellos. Antes de realizar cualquiera de estos cambios confidenciales de seguridad, debe asegurarse de que el usuario real realiza la solicitud. Un paso eficaz es exigir a los administradores de los usuarios que ayuden con la aprobación.||
-|[Configurar la escritura diferida de contraseñas en AD local](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). La escritura reescribición de contraseñas permite que Azure AD requiera que los usuarios cambien sus contraseñas locales cuando se detecte un riesgo para la cuenta de alto riesgo. Puede habilitar esta característica con Azure AD Connect de  una de estas dos maneras: habilitar la escritura escritura por contraseña en la pantalla de características opcionales del Asistente para la configuración de Azure AD Connect o habilitarla a través de Windows PowerShell.|Solo de nube|
+|[Configurar la escritura diferida de contraseñas en AD local](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). La escritura reescribición de contraseñas permite a Azure AD requerir que los usuarios cambien sus contraseñas locales cuando se detecta un riesgo de cuenta de alto riesgo. Puede habilitar esta característica con Azure AD Connect de  una de estas dos maneras: habilitar la escritura escritura ante contraseñas en la pantalla de características opcionales del Asistente para la instalación de Azure AD Connect o habilitarla a través de Windows PowerShell.|Solo de nube|
 |[Configurar la protección con contraseña de Azure AD.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) La protección de contraseñas de Azure AD detecta y bloquea las contraseñas que son conocidas por ser vulnerables y sus variantes. Además, también puede bloquear los términos vulnerables adicionales que sean específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.||
 |[Habilite Azure Active Directory Identity Protection.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) Azure AD Identity Protection le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar una directiva de corrección automatizada para el riesgo de inicio de sesión bajo, medio y alto y el riesgo de usuario.||
 |**Habilite la autenticación** moderna [para Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) y para Skype Empresarial [Online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) La autenticación moderna es un requisito previo para usar MFA. La autenticación moderna está habilitada de forma predeterminada para los clientes de Office 2016 y 2019, SharePoint y OneDrive para la Empresa.||
@@ -60,7 +61,7 @@ En esta sección se describen las configuraciones de cliente de plataforma prede
 
 ### <a name="windows-devices"></a>Dispositivos Windows
 
-Se recomienda Windows 10 (versión 2004 o posterior), ya que Azure está diseñado para proporcionar la experiencia de SSO más fluida posible tanto para el entorno local como para Azure AD. Los dispositivos emitidos por el trabajo o la escuela deben configurarse para unirse a Azure AD directamente o si la organización usa la unión a un dominio local de AD, esos dispositivos deben configurarse para registrarse automáticamente y de forma silenciosa con [Azure AD.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
+Recomendamos Windows 10 (versión 2004 o posterior), ya que Azure está diseñado para proporcionar la experiencia de SSO más fluida posible tanto para el entorno local como para Azure AD. Los dispositivos emitidos por el trabajo o la escuela deben configurarse para unirse a Azure AD directamente o si la organización usa la unión a un dominio local de AD, esos dispositivos deben configurarse para registrarse automáticamente y de forma silenciosa con [Azure AD.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
 Para dispositivos WINDOWS BYOD, los usuarios pueden usar **Agregar cuenta de trabajo o escuela.** Ten en cuenta que los usuarios del explorador [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) Google Chrome en dispositivos Windows 10 necesitan instalar una extensión para obtener la misma experiencia de inicio de sesión sin problemas que los usuarios de Microsoft Edge. Además, si tu organización tiene dispositivos Windows 8 o 8.1 unidos a un dominio, puedes instalar Microsoft Workplace Join para equipos que no son windows 10. [Descarga el paquete para registrar los](https://www.microsoft.com/download/details.aspx?id=53554) dispositivos con Azure AD.
 
@@ -103,7 +104,7 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 
-Para obtener más información acerca de la compatibilidad con clientes en Microsoft 365, vea los artículos siguientes:
+Para obtener más información acerca de la compatibilidad con clientes en Microsoft 365, vea los siguientes artículos:
 
 - [Compatibilidad con aplicaciones cliente de Microsoft 365: acceso condicional](../../enterprise/microsoft-365-client-support-conditional-access.md)
 - [Compatibilidad con aplicaciones cliente de Microsoft 365: autenticación moderna](../../enterprise/microsoft-365-client-support-modern-authentication.md)
@@ -117,8 +118,8 @@ Para las ediciones de Microsoft 365 u Office 365 que [](https://docs.microsoft.c
 Estas son algunas recomendaciones adicionales:
 
 - Use [Azure AD Privileged Identity Management para](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) reducir el número de cuentas administrativas persistentes.
-- [Use la administración de acceso](../../compliance/privileged-access-management-overview.md) con privilegios para proteger su organización contra infracciones que pueden usar cuentas de administrador con privilegios existentes con acceso permanente a datos confidenciales o acceso a opciones de configuración críticas.
-- Cree y use cuentas independientes a las que se asignan roles de administrador de [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *solo para la administración.* Los administradores deben tener su propia cuenta de usuario para uso no administrativo normal y usar solo una cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de rol o trabajo.
+- [Use la administración de acceso](../../compliance/privileged-access-management-overview.md) con privilegios para proteger su organización de infracciones que pueden usar cuentas de administrador con privilegios existentes con acceso permanente a datos confidenciales o acceso a opciones de configuración críticas.
+- Cree y use cuentas independientes a las que se asignan roles de [administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *solo para la administración.* Los administradores deben tener su propia cuenta de usuario para uso no administrativo normal y usar solo una cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de rol o trabajo.
 - Siga [los procedimientos recomendados](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) para proteger cuentas con privilegios en Azure AD.
 
 ## <a name="next-step"></a>Paso siguiente

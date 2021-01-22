@@ -1,10 +1,10 @@
 ---
 title: Tabla AADSignInEventsBeta en el esquema de búsqueda avanzada
 description: Obtenga información sobre la información asociada con la tabla de eventos de inicio de sesión de Azure Active Directory del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, archivo, dirección IP, dispositivo, máquina, usuario, cuenta, identidad, AAD
+keywords: búsqueda avanzada, búsqueda de amenazas, ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, archivo, dirección IP, dispositivo, máquina, usuario, cuenta, identidad, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1830eeec674c4948bd6492780ef8a0a8039111b8
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784292"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931043"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,7 +35,7 @@ ms.locfileid: "49784292"
 
 >[!IMPORTANT]
 > La tabla está actualmente en versión beta y se ofrece a corto plazo para permitirle buscar eventos de inicio de sesión de `AADSignInEventsBeta` Azure Active Directory (AAD). Con el tiempo, moveremos toda la información del esquema de inicio de sesión a la `IdentityLogonEvents` tabla.<br><br>
-> Los clientes que pueden acceder a Microsoft 365 Defender a través de la solución integrada de Microsoft Defender para Endpoint del Centro de seguridad de Azure, pero que no tienen licencias para Microsoft Defender para Office, Microsoft Defender para Identity o Microsoft Cloud App Security, no podrán ver este esquema. 
+> Los clientes que pueden acceder a Microsoft 365 Defender a través de la solución integrada de Microsoft Defender para endpoint del Centro de seguridad de Azure, pero que no tienen licencias para Microsoft Defender para Office, Microsoft Defender para Identity o Microsoft Cloud App Security, no podrán ver este esquema. 
 
  
 
@@ -52,15 +53,15 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp`                       | datetime      | Fecha y hora en que se generó el registro                                                                                                                                         |
 | `Application`                     | cadena        | Aplicación que realizó la acción grabada                                                                                                                                       |
 | `ApplicationId`                   | string        | Identificador único de la aplicación                                                                                                                                               |
-| `LogonType`                       | string        | Tipo de sesión de inicio de sesión, específicamente interactiva, interactiva remota (RDP), red, lote y servicio                                                                              |
+| `LogonType`                       | string        | Tipo de sesión, específicamente interactiva, interactiva remota (RDP), red, lote y servicio                                                                              |
 | `ErrorCode`                       | entero        | Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> .                                     |
 | `CorrelationId`                   | string        | Identificador único del evento de inicio de sesión                                                                                                                                              |
 | `SessionId`                       | string        | Número único asignado a un usuario por el servidor de un sitio web durante la visita o sesión                                                                                     |
-| `AccountDisplayName`              | string        | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Por lo general, una combinación de un nombre o nombre, una inicial intermedia y un apellido o apellido.                             |
+| `AccountDisplayName`              | string        | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o nombre, una inicial intermedia y un apellido o apellido.                             |
 | `AccountObjectId`                 | string        | Identificador único de la cuenta en Azure AD                                                                                                                                       |
 | `AccountUpn`                      | string        | Nombre principal de usuario (UPN) de la cuenta                                                                                                                                            |
 | `IsExternalUser`                  | entero        | Indica si el usuario que ha iniciado sesión es externo. Valores posibles: -1 (no establecido), 0 (no externo), 1 (externo).                                                                   |
-| `IsGuestUser`                     | boolean       | Indica si el usuario que ha iniciado sesión es un invitado en el espacio empresarial                                                                                                                  |
+| `IsGuestUser`                     | boolean       | Indica si el usuario que ha iniciado sesión es un invitado en el espacio empresarial.                                                                                                                  |
 | `AlternateSignInName`             | string        | Nombre principal de usuario local (UPN) del usuario que inicia sesión en Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | datetime        | Fecha y hora en que el usuario que ha iniciado sesión ha cambiado su contraseña por última vez                                                                                                              |
 | `ResourceDisplayName`             | string        | Nombre para mostrar del recurso al que se ha accedido                                                                                                                                               |
