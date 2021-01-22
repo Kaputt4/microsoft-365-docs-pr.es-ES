@@ -1,10 +1,10 @@
 ---
 title: Tabla IdentityInfo en el esquema de búsqueda avanzada
-description: Información sobre la cuenta de usuario en la tabla IdentityInfo del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, AccountInfo, IdentityInfo, cuenta
+description: Obtenga información sobre la cuenta de usuario en la tabla IdentityInfo del esquema de búsqueda avanzada
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, AccountInfo, IdentityInfo, cuenta
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 0b21d23cfc97576304e949c597301716c72e6871
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 6604e6d48e277e840b87ddc461580bcb69dd1bc7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847445"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929915"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -32,12 +33,12 @@ ms.locfileid: "48847445"
 
 
 **Se aplica a:**
-- Microsoft 365 defender
+- Microsoft 365 Defender
 
-La `IdentityInfo` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre las cuentas de usuario obtenidas de varios servicios, incluido Azure Active Directory. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La tabla del esquema de búsqueda avanzada contiene información sobre las cuentas de usuario obtenidas de varios `IdentityInfo` servicios, incluido Azure Active Directory. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!NOTE]
->Se cambió el nombre de esta tabla de `AccountInfo` . Durante el cambio de nombre, se actualizan automáticamente todas las consultas guardadas en el portal. Compruebe las consultas que guardó en otra parte.
+>A esta tabla se le cambió el nombre `AccountInfo` de . Durante los cambios de nombre, todas las consultas guardadas en el portal se actualizan automáticamente. Compruebe las consultas que ha guardado en otro lugar.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -47,18 +48,18 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `OnPremSid` | string | Identificador de seguridad local (SID) de la cuenta |
 | `CloudSid` | string | Identificador de seguridad en la nube de la cuenta |
-| `GivenName` | string | Nombre especificado o nombre del usuario de la cuenta |
-| `Surname` | string | Apellidos, apellidos o familia del usuario de la cuenta |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente es una combinación de un nombre determinado o de un nombre, un inicio en el medio y un apellido o un apellido. |
-| `Department` | string | Nombre del Departamento al que pertenece el usuario de la cuenta |
+| `GivenName` | string | Nombre o nombre del usuario de la cuenta |
+| `Surname` | string | Apellidos, apellidos o apellidos del usuario de la cuenta |
+| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o nombre, una iniciación intermedia y un apellido o apellido. |
+| `Department` | string | Nombre del departamento al que pertenece el usuario de la cuenta |
 | `JobTitle` | string | Puesto del usuario de la cuenta |
 | `AccountName` | string | Nombre de usuario de la cuenta |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `EmailAddress` | string | Dirección SMTP de la cuenta |
-| `SipProxyAddress` | string | Dirección de protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
-| `City` | string | Ciudad en la que se encuentra el usuario de la cuenta |
+| `SipProxyAddress` | string | Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
+| `City` | string | Ciudad donde se encuentra el usuario de la cuenta |
 | `Country` | string | País o región donde se encuentra el usuario de la cuenta |
-| `IsAccountEnabled` | boolean | Indica si la cuenta está habilitada o no. |
+| `IsAccountEnabled` | boolean | Indica si la cuenta está habilitada o no |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

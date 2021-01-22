@@ -1,5 +1,5 @@
 ---
-title: Planeación de un evento con Microsoft Planner
+title: Planear un evento con Microsoft Planner
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo planear un evento con Microsoft Planner.
-ms.openlocfilehash: f5ee4e63579c2c5f6493e16d27b7102d3b99b6d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702677"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928105"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Usar Microsoft Planner para planear un evento
 
@@ -34,14 +35,14 @@ ms.locfileid: "49702677"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Use Microsoft Planner para planear un evento, como el seguimiento de un lanzamiento de un producto.
+Usa Microsoft Planner para planear un evento, como realizar un seguimiento del lanzamiento de un producto.
 
 ### <a name="work-with-buckets"></a>Trabajar con cubos
 
-Use buckets para ordenar las tareas por tipo, como planeación de eventos, marketing y material publicitario, y PR.
+Use cubos para ordenar tareas por tipo, como planeación de eventos, marketing y colateral de anuncios y PR.
 
-1. Seleccione  **Agregar nuevo cubo**  y escriba una nueva categoría de tarea.
-2. Seleccione  **+**  para agregar tareas a un cubo y escriba un nombre.
+1. Seleccione  **Agregar nuevo depósito y**  escriba una nueva categoría de tarea.
+2. Seleccione  **+**  esta opción para agregar tareas a un depósito y escriba un nombre.
 3. Seleccione  **Agregar tarea**.
 
 ### <a name="work-with-labels"></a>Trabajar con etiquetas
@@ -49,20 +50,20 @@ Use buckets para ordenar las tareas por tipo, como planeación de eventos, marke
 Use etiquetas para ver qué tareas necesitan su atención.
 
 1. Escriba los nombres de las etiquetas.
-2. Seleccione un cuadro coloreado para quitar o agregar una etiqueta a una tarea.
+2. Seleccione un cuadro de color para quitar o agregar una etiqueta a una tarea.
 
 ## <a name="add-a-comment"></a>Agregar un comentario
 
-Publique un comentario para discutir una tarea con las personas a las que está asignado.
+Publique un comentario para analizar una tarea con las personas a las que está asignada.
 
-1. Escriba un mensaje en el cuadro  **comentarios**  .
+1. Escriba un mensaje en  **el**  cuadro Comentarios.
 2. Seleccione  **Enviar**.
 
 ### <a name="keep-track-of-tasks"></a>Realizar un seguimiento de las tareas
 
-Use los  **gráficos**  y la vista de  **Panel**  para supervisar el progreso de cada miembro del equipo y el proyecto general, o para ordenar y organizar las tareas.
+Use  **gráficos**  **y vista**  de panel para supervisar el progreso de cada integrante del equipo y el proyecto general, o para ordenar y organizar las tareas.
 
-- Seleccione  **gráficos**, luego **Agrupar por** y, finalmente, **fecha de vencimiento**  para ver la tarea que vence a continuación.
-- Seleccione  **Panel**, **Agrupar por** y, por último, **progreso**  para ordenar las tareas por progreso.
+- Seleccione  **Gráficos,** a **continuación, Agrupar** por y, por último, Fecha de **vencimiento**  para ver qué tarea vence a continuación.
+- Seleccione  **Panel** y, **a continuación,** Agrupar por y, por último, **Progreso**  para ordenar las tareas por progreso.
 
-**Nota:**  Las tareas se organizan por  **no inicia**,  **en curso** y  **completado**  para saber cuándo está listo para iniciar el producto.
+**Nota:**  Las tareas se organizan por No  **iniciado,** **En** curso y Completado para que sepa cuándo está listo para iniciar el producto.

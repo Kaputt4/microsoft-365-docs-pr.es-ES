@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo migrar archivos de Google a Microsoft 365 para empresas mediante Mover.
-ms.openlocfilehash: a6f9dbf7803cb552c23b6c6abb13d13d6f3eda5d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794702"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928203"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrar archivos de Google a Microsoft 365 para empresas 
 
@@ -91,7 +92,7 @@ Todos los usuarios deben haber iniciado sesión en Microsoft 365 para empresas y
 
 1. Una vez que el archivo CSV esté listo, seleccione **Acciones de migración,** **Agregar** a migración, Elija un archivo **para cargar.**
 1. Navegue hasta el archivo CSV, selecciónelo y, a continuación, **elija Abrir**.
-1. Seleccione las unidades de usuario cuyos archivos desea migrar y, a continuación, elija **Iniciar la migración de usuarios.**
+1. Seleccione las unidades de usuario cuyos archivos desea migrar y, a continuación, elija **Iniciar migración de usuarios.**
 1. Revise la información de migración, elija cuándo iniciar la migración, acepte los Términos y **condiciones** y, a continuación, **seleccione Continuar**.
 
 La aplicación Mover le informará cuando se complete el proceso de migración.

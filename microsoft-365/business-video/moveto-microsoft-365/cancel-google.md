@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo cancelar la suscripción a Google Workspace pero mantener su dominio.
-ms.openlocfilehash: f4cbb09907da399ab3fed07e7826c0a217b494f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794691"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928263"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Cancelar suscripción a Google Workspace
 

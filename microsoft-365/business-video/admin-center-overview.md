@@ -1,5 +1,5 @@
 ---
-title: 'Centro de administración de Microsoft 365: introducción'
+title: 'Centro de administración de Microsoft 365: información general'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,39 +16,40 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga más información sobre el centro de administración de Microsoft 365.
-ms.openlocfilehash: 9d3b8c83429eec924e23ae1a63e57d6ed36f76b3
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga más información sobre el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703264"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927591"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-El centro de administración de 365 de Microsoft es donde administra su empresa en la nube. Puede realizar tareas como agregar y quitar usuarios, cambiar licencias y restablecer contraseñas. 
+El Centro de administración de Microsoft 365 es donde administra su empresa en la nube. Puede completar tareas como agregar y quitar usuarios, cambiar licencias y restablecer contraseñas. 
 
-Para acceder al centro de administración de 365 de Microsoft, vaya a [admin.Microsoft.com](https://admin.microsoft.com) o, si ya ha iniciado sesión, seleccione el iniciador de aplicaciones y elija **Administración**.
+Para ir al Centro de administración de Microsoft 365, vaya [a admin.microsoft.com](https://admin.microsoft.com) o, si ya ha iniciado sesión, seleccione el iniciador de aplicaciones y elija **Administrador.**
 
-En la Página principal, puede crear tarjetas para tareas que se realizan con frecuencia. Para agregar una tarjeta nueva, seleccione **Agregar tarjeta** y, a continuación, seleccione el signo más situado junto a la tarjeta que quiera agregar. Cuando termine, cierre la ventana. Puede reorganizar las tarjetas seleccionando y, a continuación, arrastrándolas hasta la ubicación que desee. Para quitar una tarjeta, seleccione **más acciones** y, a continuación, elija **quitar**.
+En la página principal, puede crear tarjetas para tareas que realice con frecuencia. Para agregar una tarjeta nueva, seleccione **Agregar tarjeta** y, a continuación, seleccione el signo más junto a la tarjeta que desea agregar. Cuando haya terminado, cierre la ventana. Puedes reorganizar las tarjetas seleccionando y arrastrándolas hasta donde quieras. Para quitar una tarjeta, seleccione **Más acciones** y, a continuación, **elija Quitar**.
 
-Para ver más tareas de administración, expanda el menú de navegación. Encontrará opciones de configuración avanzadas en los centros de administración adicionales en la parte inferior.
+Para ver más tareas de administración, expanda el menú de navegación. Encontrarás opciones de configuración avanzadas en los centros de administración adicionales en la parte inferior.
 
-Una tarea común que puede realizar en el centro de administración es agregar un usuario. Para ello, seleccione **usuarios**, **usuarios activos** y, a continuación, seleccione **Agregar un usuario**. Escriba el nombre del usuario y otra información y, a continuación, seleccione **siguiente**. Siga las instrucciones para terminar de agregar el usuario. Cuando haya terminado, seleccione **terminar de agregar** y, a continuación, haga clic en **cerrar**.
+Una tarea común que puede realizar en el centro de administración es agregar un usuario. Para ello, seleccione **Usuarios**, **Usuarios activos** y, a continuación, seleccione Agregar **un usuario.** Escriba el nombre del usuario y otra información y, a continuación, **seleccione Siguiente**. Siga las instrucciones para terminar de agregar el usuario. Cuando haya terminado, seleccione **Finalizar adición** y, a continuación, **seleccione Cerrar**.
 
-Puede ordenar los usuarios activos por columnas, como **el nombre para mostrar** o las **licencias**. Para agregar más columnas, seleccione **elegir columnas**, seleccione las columnas que desea agregar y, a continuación, seleccione **Guardar**.
+Puede ordenar los usuarios activos por columnas, como **Nombre para mostrar** o **Licencias.** Para agregar más columnas, seleccione **Elegir columnas,** seleccione las columnas que desea agregar y, a continuación, **seleccione Guardar**.
 
-Seleccione un usuario para ver más opciones, como la administración de licencias de productos.
+Seleccione un usuario para ver más opciones, como administrar sus licencias de producto.
 
-Para habilitar más características incluidas en la suscripción, seleccione **configurar**. Aquí puede activar la seguridad de inicio de sesión, la protección de aplicaciones móviles, DLP y otras características incluidas en la suscripción.
+Para habilitar más características que se incluyen con la suscripción, seleccione **Configurar.** Aquí puede activar la seguridad de inicio de sesión, la protección de aplicaciones móviles, DLP y otras características incluidas en su suscripción.
 
-Si necesita soporte técnico en cualquier momento, elija ¿ **necesita ayuda?**. Escriba su pregunta y, a continuación, revise los vínculos que aparecen. Si no recibe la respuesta aquí, elija **contactar con soporte técnico** para abrir una solicitud de servicio. 
+Si necesita soporte técnico en cualquier momento, elija **Necesita ayuda.** Escribe tu pregunta y, a continuación, echa un vistazo a los vínculos que aparecen. Si no obtiene la respuesta aquí, elija Ponerse en contacto con el soporte **técnico** para abrir una solicitud de servicio. 
 
-Para obtener más información sobre cómo administrar la facturación, las contraseñas, los usuarios y los administradores, consulte las otras lecciones de este curso.
+Para obtener más información sobre la administración de facturación, contraseñas, usuarios y administradores, vea las otras lecciones de este curso.

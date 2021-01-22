@@ -5,18 +5,19 @@ author: danihalfin
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear cargas personalizadas para la formación de simulación de ataques en Microsoft Defender para Office 365.
-ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.technology: mdo
+ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908346"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929195"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Crear una carga personalizada para la simulación de ataques formación
 
@@ -39,7 +40,7 @@ Ahora es el momento de crear la carga útil. Introduzca el nombre del remitente,
 
 Hay disponible un editor de texto enriquecido para crear la carga. También puedes importar un correo electrónico que hayas creado de antemano. A medida que cree el cuerpo del correo electrónico, aproveche las etiquetas dinámicas **para** personalizar el correo electrónico a sus destinos. Haga clic en el vínculo de suplantación de identidad **(phishing)** para agregar la dirección URL de suplantación de identidad previamente seleccionada en el cuerpo del mensaje.
 
-![Vínculo de suplantación de identidad y etiquetas dinámicas resaltadas en la creación de cargas útiles para Microsoft Defender para Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Vínculo de suplantación de identidad (phishing) y etiquetas dinámicas resaltadas en la creación de cargas útiles para Microsoft Defender para Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Para ahorrar tiempo, active la opción para reemplazar todos los vínculos del mensaje **de correo electrónico por el vínculo de suplantación de identidad**.
@@ -61,7 +62,7 @@ Agrega una descripción personalizada para describir el indicador y haz clic en 
 Has terminado de compilar la carga útil. Ahora es el momento de revisar los detalles y ver una vista previa de la carga. La vista previa incluirá todos los indicadores que hayas creado. Puedes editar cada parte de la carga a partir de este paso. Una vez satisfecho, puedes **enviar la** carga.
 
 > [!IMPORTANT]
-> Las cargas que haya creado tendrán **tenant** como origen. Al seleccionar cargas, asegúrese de no filtrar el espacio **empresarial.**
+> Las cargas que haya creado tendrán **tenant** como origen. Al seleccionar cargas, asegúrese de que no filtra el espacio **empresarial.**
 
 ## <a name="related-links"></a>Vínculos relacionados
 

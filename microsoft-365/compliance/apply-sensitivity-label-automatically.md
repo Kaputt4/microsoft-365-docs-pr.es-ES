@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: aa6b3ce2da8166cc2b33ae2b6056b54d76a0c634
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 40cb270ee7084b50ed9ef58b9598f16e76dffa36
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759960"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929496"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -210,7 +210,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
     - Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - En el momento en el que se ejecuta la directiva de etiquetado automático, el archivo no debe estar abierto por otro proceso o usuario. Un archivo desprotegido para edición entra en esta categoría.
 
-- Si tiene previsto usar [tipos de información confidencial personalizados](custom-sensitive-info-types.md) en lugar de los tipos de confidencialidad integrados: 
+- Si tiene previsto usar [tipos de información confidencial personalizados](sensitive-information-type-learn-about.md) en lugar de los tipos de confidencialidad integrados: 
     - Los tipos de información de confidencialidad personalizados se evalúan para el contenido que se agrega a OneDrive o SharePoint, después de que han sido guardados. 
     - Para probar los nuevos tipos de información confidencial, créelos antes de crear su directiva de etiquetado automático y, después, cree nuevos documentos con datos de ejemplo para probarlos.
 

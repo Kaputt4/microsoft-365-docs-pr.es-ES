@@ -1,5 +1,5 @@
 ---
-title: Migrar el correo electrónico y el calendario empresariales desde Google Workspace
+title: Migrar el calendario y el correo electrónico empresarial desde Google Workspace
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo migrar el correo electrónico, los contactos y el calendario de Google Workspace a Microsoft 365 para empresas.
-ms.openlocfilehash: ab70a43fb7c26c23ebc9024b1cd2803c164a0aa4
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: cb751b1d2f18b226021bb6f218b62f3ae426f6a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794710"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928251"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrar el correo electrónico y el calendario empresariales desde Google Workspace
 
@@ -58,7 +59,7 @@ El proceso de migración toma varios pasos y puede tardar de varias horas a un p
  
 1. Seleccione **Cerrar**. 
 
-### <a name="enable-api-usage-for-the-project"></a>Habilitar el uso de api para el proyecto
+### <a name="enable-api-usage-for-the-project"></a>Habilitar el uso de API para el proyecto
 
 1. Vaya a la [página API.](https://console.developers.google.com/apis/library) 
 1. En la barra de búsqueda, escriba **la API de Gmail.**
@@ -99,7 +100,7 @@ El proceso de migración toma varios pasos y puede tardar de varias horas a un p
 
     Estos cambios pueden tardar algún tiempo en tener efecto.  
 
-1. Vuelva al lugar donde lo dejó en el Centro de administración de **Microsoft 365** y seleccione **Continuar.** 
+1. Vuelva a donde lo dejó en el Centro de administración de **Microsoft 365** y seleccione **Continuar.** 
 
 Su dominio ya está configurado.  
 
@@ -120,7 +121,7 @@ Una vez que haya terminado, estará listo para migrar.
 
 1. En el panel de navegación izquierdo del Centro de administración de **Microsoft 365,** desplácese hacia abajo hasta centros de **administración** y seleccione **Exchange.** 
 1. En **destinatarios,** elija **migración**, seleccione **Nuevo**, Migrar a **Exchange Online**, elija Migración de G **Suite** y, a continuación, **Siguiente**. 
-1. Cree un archivo CSV con una lista de los buzones que desea migrar. Asegúrese de que el archivo tiene este formato: 
+1. Cree un archivo CSV con una lista de los buzones que desea migrar. Asegúrese de que el archivo sigue este formato: 
 
     ```CSV
     EmailAddress
@@ -145,4 +146,4 @@ Una vez que haya terminado, estará listo para migrar.
 1. Si lo desea, puede seleccionar Ver **detalles** para obtener más información sobre la migración. 
 1. Seleccione **Cerrar**. 
 1. Abra Outlook para comprobar que todos los correos electrónicos de Google Workspace se hayan migrado correctamente.
-Puede repetir esto también para elementos de calendario y contactos.
+Puede repetir esto también para los elementos de calendario y contactos.

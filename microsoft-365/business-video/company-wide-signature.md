@@ -1,5 +1,5 @@
 ---
-title: Crear una firma para toda la empresa
+title: Crear una firma de correo electrónico para toda la empresa
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo crear una firma de correo electrónico para toda la empresa.
-ms.openlocfilehash: 64c269abd25cab74ec5b0836975902e46a611c8c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre cómo crear una firma de correo electrónico en toda la empresa.
+ms.openlocfilehash: 3a9623837b3a68fa8cc0fb378293ec463d9bb789
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703029"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928311"
 ---
-# <a name="create-a-company-wide-email-signature"></a>Crear una firma de correo electrónico para toda la empresa
+# <a name="create-a-company-wide-email-signature"></a>Crear una firma de correo electrónico en toda la empresa
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
-Una firma de correo electrónico de toda la empresa aparece en todos los correos electrónicos enviados por los usuarios de la organización. Puede usarlo para mostrar detalles importantes, como la información de contacto de la empresa o una declinación de responsabilidades legal. 
+Aparece una firma de correo electrónico en toda la empresa en todos los correos electrónicos enviados por personas de su organización. Puede usarlo para mostrar detalles importantes, como la información de contacto de su empresa o un aviso de declinación de responsabilidades legales. 
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el centro de administración de Microsoft 365, seleccione **Exchange**.
-1. Seleccione **flujo de correo**.
-1. Seleccione **Agregar** y, a continuación, haga clic en **aplicar avisos de declinación de responsabilidad**.
-1. En la página **nueva regla** :
+1. En el Centro de administración de Microsoft 365, seleccione **Exchange**.
+1. Seleccione **Flujo de correo.**
+1. Seleccione **Agregar + y,** a continuación, **seleccione Aplicar avisos de declinación de responsabilidades.**
+1. En la **página Nueva regla:**
     1. Escriba un nombre para la regla.
-    1. En la lista desplegable **aplicar esta regla si** , seleccione **aplicar a todos los mensajes**.
-    1. En la lista desplegable **haga lo siguiente** , compruebe que anexar se muestra **la declinación de responsabilidades** .
-    1. En la parte derecha de la página, seleccione **escribir texto** y, a continuación, escriba el texto de la firma de correo electrónico en el cuadro de texto **especifique la declinación de responsabilidades** . Puede mejorar la apariencia de la firma aplicando formato al texto HTML.
-    1. Si desea que una imagen aparezca en su firma, deberá usar una dirección URL disponible públicamente para dicha imagen. Vaya a la imagen en la web, haga clic con el botón derecho en ella y seleccione **copiar dirección de imagen**. Pegue la dirección en el cuadro de texto **especifique la declinación de responsabilidades** . Seleccione **Aceptar** y, a continuación, desplácese hacia abajo.
-    1. Para asegurarse de que la firma funciona con los correos electrónicos cifrados, agregue una opción de reserva. En la parte derecha de la página, elija **seleccionar una**, elija **ajustar** y, a continuación, seleccione **Aceptar**.
-    1. Desplácese hacia abajo y deje el modo establecido en **exigir** y, a continuación, seleccione **Guardar**.
-1. Aparecerá un mensaje de advertencia. Seleccione **sí** para aplicar la regla a todos los mensajes futuros.
+    1. En la **lista desplegable Aplicar esta regla** si, seleccione Aplicar a todos los **mensajes.**
+    1. En la **lista desplegable Hacer lo siguiente,** compruebe que se muestra **Anexar** el aviso de declinación de responsabilidades.
+    1. En el lado derecho de la página, seleccione Escribir texto y, a continuación, escriba el texto de la firma de correo electrónico en el cuadro **de** texto Especificar declinación de responsabilidades. Puede mejorar el aspecto de la firma si formatear el texto con HTML.
+    1. Si quieres que una imagen aparezca en la firma, tendrás que usar una dirección URL disponible públicamente para esa imagen. Vaya a la imagen en la Web, haga clic con el botón secundario en ella y seleccione **Copiar dirección de imagen.** Pegue la dirección en el cuadro de texto Especificar **declinación** de responsabilidades. Seleccione **Aceptar** y, a continuación, desplácese hacia abajo.
+    1. Para asegurarse de que la firma funciona con correos electrónicos cifrados, agregue una opción de reserva. A la derecha de la página, elija **Seleccionar uno,** **ajuste** y, a continuación, seleccione **Aceptar**.
+    1. Desplácese hacia abajo y deje el modo establecido **en Aplicar** y, a continuación, **seleccione Guardar**.
+1. Aparecerá un mensaje de advertencia. Seleccione **Sí** para aplicar la regla a todos los mensajes futuros.
 
-    Se ha creado la firma. Cuando envíe el siguiente correo electrónico, no verá la firma que acaba de crear, pero los destinatarios de correo electrónico la verán.
+    Se ha creado la firma. Cuando envíe su siguiente correo electrónico, no verá la firma que acaba de crear, pero los destinatarios de correo electrónico la verán.

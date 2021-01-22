@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Bookings: información general'
+title: 'Microsoft Bookings: introducción'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,39 +16,40 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre Microsoft bookings.
-ms.openlocfilehash: a325dbb12d7442317ef5c3657ba4ab249d10ffe1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre Microsoft Bookings.
+ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702704"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928131"
 ---
-# <a name="overview-of-microsoft-bookings"></a>Información general de Microsoft bookings
+# <a name="overview-of-microsoft-bookings"></a>Información general sobre Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft bookings es una aplicación móvil y en línea para pequeñas empresas que proporcionan servicios a los clientes de acuerdo con las citas. Algunos ejemplos de negocios son el Salons, las oficinas dentales, la spas, las empresas de abogados, los proveedores de servicios financieros, los consultores y las tiendas automáticas.
+Microsoft Bookings es una aplicación móvil y en línea para pequeñas empresas que proporcionan servicios a los clientes con una cita. Entre los ejemplos de empresas se incluyen salones de salón, oficinas de sucursales, spas, firmas de abogados, proveedores de servicios financieros, consultores y tiendas de automóviles.
 
-## <a name="get-started-with-bookings"></a>Introducción a las reservas
+## <a name="get-started-with-bookings"></a>Introducción a Bookings
 
-1. Para empezar, inicie sesión en Microsoft 365 y seleccione **reservas** desde el iniciador de aplicaciones.
-1. Elija **obtener ahora** en la página de **reservas** .
-1. Agregue la información empresarial y ya está listo para empezar a usar reservas.
+1. Para empezar, inicie sesión en Microsoft 365 y seleccione **Bookings** en el iniciador de aplicaciones.
+1. Elija **Obtener ahora en** la página **Bookings.**
+1. Agregue la información de su empresa y está listo para empezar a usar Bookings.
 
-    Para administrar sus reservas en su dispositivo móvil, descargue las reservas desde la tienda de aplicaciones.
+    Para administrar las reservas en el dispositivo móvil, descarga Bookings desde la tienda de aplicaciones.
 
-## <a name="use-bookings"></a>Usar reservas
+## <a name="use-bookings"></a>Usar Bookings
 
-- En el panel de **reservas** , revise la dirección de la empresa, las horas y otra información empresarial, y actualice si es necesario.
-- En la página **calendario** , usted y su personal pueden agregar o actualizar citas de clientes. Puede ver su calendario por día, semana o mes.
-- En la página **clientes** , se pueden agregar o importar nuevos clientes de otras cuentas como Gmail o un dispositivo.
-- La página **personal** le permite agregar y administrar su personal. Es importante agregar sus direcciones de correo electrónico para que puedan recibir notificaciones inmediatas de nuevas citas.
-- La página **servicios** le permite agregar o administrar los servicios que los clientes eligen al reservar una cita.
-- Por último, en la página **reservas** , encontrará muchas opciones como la Directiva de programación, las notificaciones de correo electrónico, la configuración de zona horaria y mucho más.
+- En el **panel de Bookings,** revise la dirección comercial, las horas y otra información comercial y actualice si es necesario.
+- En la **página Calendario,** usted y su personal pueden agregar o actualizar citas de cliente. Puede ver el calendario por día, semana o mes.
+- En la **página** Clientes, los nuevos clientes se pueden agregar o importar desde otras cuentas como Gmail o un dispositivo.
+- La **página** Personal le permite agregar y administrar el personal. Es importante agregar sus direcciones de correo electrónico para que puedan recibir notificaciones inmediatas de nuevas citas.
+- La **página** Servicios le permite agregar o administrar los servicios que los clientes eligen al reservar una cita.
+- Por último, en la **página Bookings,** encontrará muchas opciones de configuración, como la directiva de programación, las notificaciones por correo electrónico, la configuración de zona horaria y mucho más.
 
-Una vez que haya guardado y publicado el calendario de reservas, se puede insertar en el sitio web de la empresa o en la página de Facebook.
+Una vez que haya guardado y publicado el calendario de Bookings, puede incrustarse en el sitio web de su empresa o en la página de Facebook.

@@ -16,30 +16,31 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información acerca de cómo permitir que los usuarios restablezcan sus propias contraseñas en Microsoft 365 empresa Premium.
-ms.openlocfilehash: 724658e48d532b6b7b9c14244fec93eeb17a62e5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre cómo permitir que los usuarios restablezcan sus propias contraseñas en Microsoft 365 Empresa Premium.
+ms.openlocfilehash: a1078f13bb4031427c5bdd655b095dbf8ed29bcb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702897"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927927"
 ---
-# <a name="set-up-self-service-password-reset"></a>Configurar el restablecimiento de contraseña de autoservicio
+# <a name="set-up-self-service-password-reset"></a>Configurar el restablecimiento de contraseña autoasistido
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S?autoplay=false]
 
-Para permitir que los usuarios restablezcan sus propias contraseñas sin tener que ponerse en contacto con usted cada vez, puede configurar el restablecimiento de contraseña de autoservicio en Microsoft 365 empresa Premium.
+Para permitir que los usuarios restablezcan sus propias contraseñas sin tener que ponerse en contacto con usted cada vez, puede configurar el autoservicio de restablecimiento de contraseña en Microsoft 365 Empresa Premium.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **configuración** y, a continuación, **seguridad & privacidad**.
-1. En **permitir que los usuarios restablezcan sus propias contraseñas**, seleccione **centro de administración de Azure ad**.
-1. En el panel de navegación izquierdo, seleccione **usuarios** y, a continuación, en la página **usuarios-todos los usuarios** , seleccione **restablecimiento de contraseña**.
-1. Seleccione **todos** para habilitar el restablecimiento de contraseña de autoservicio y, a continuación, seleccione **Guardar**.
+1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione Configuración y, a continuación, Seguridad **& privacidad.** 
+1. En **Permitir que los usuarios restablezcan sus propias contraseñas,** seleccione Centro de administración de Azure **AD.**
+1. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en la página Usuarios **: todos** los usuarios, seleccione **Restablecimiento de contraseña.**
+1. Seleccione **Todo** para habilitar el restablecimiento de contraseña de autoservicio y, a continuación, **seleccione Guardar**.
 
-La próxima vez que un usuario inicie sesión en su cuenta, se le pedirá el identificador de usuario y la contraseña. Seleccionan **siguiente** y, a continuación, elige si deseas autenticarse con el teléfono, el correo electrónico o ambos. Especifican el código que reciben, seleccionamos **Verify** y luego seleccionamos **Finalizar**. Cuando lo haya hecho, pueden restablecer su propia contraseña.
+La próxima vez que un usuario inicia sesión en su cuenta, se le pedirá su id. de usuario y contraseña. Seleccionan **Siguiente** y, a continuación, eligen si se autentican con su teléfono, correo electrónico o ambos. Escriben el código que reciben, **seleccionan Comprobar** y, a continuación, **seleccionan Finalizar.** Cuando terminen, podrán restablecer su propia contraseña.

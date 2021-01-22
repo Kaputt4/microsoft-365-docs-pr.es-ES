@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo configurar directivas de protección de Windows 10 con Microsoft 365 empresa Premium.
-ms.openlocfilehash: e2ef5c3c3d1dbc07e1c3705389eb757e720c9182
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Aprende a configurar directivas de protección de Windows 10 con Microsoft 365 Empresa Premium.
+ms.openlocfilehash: dadb24c5de46ef13ea64c4e164cf6edfd4592b35
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702634"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928011"
 ---
-# <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
+# <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
  
 ## <a name="try-it"></a>¿Se atreve?  
 
-Después de configurar la protección de dispositivos en Microsoft 365 Business, siga estos pasos para proteger los equipos con Windows 10.
+Después de configurar la protección de dispositivos en Microsoft 365 Empresa, siga estos pasos para proteger los equipos con Windows 10.
 
-1. En el centro de administración de Microsoft 365, elija  **instalar**.
-2. En  **proteger los equipos con Windows** , seleccione  **Ver**.
-3. Revise la información de la página  **proteja los equipos con Windows 10**  para conocer las directivas y la forma en que afectan a los usuarios.
-4. Seleccione  **Introducción**.
-5. En el panel de  **configuración de Windows 10**  , revise las opciones y ajuste si es necesario. Mantenga el mouse sobre la información sobre herramientas para obtener más información sobre una directiva.
-6. En ¿  **a quién debe aplicarse la Directiva?** , elija si las selecciones se aplicarán a todos los usuarios de su organización o a grupos de seguridad específicos.
-7. Seleccione  **Guardar cambios**.
+1. En el Centro de administración de Microsoft 365, elija **Configurar.**
+2. En  **Proteger los equipos Windows,** seleccione  **Ver**.
+3. Revisa la información de la página Proteger  **los equipos con Windows 10**  para que comprendas las directivas y cómo afectan a los usuarios.
+4. Seleccione **Introducción.**
+5. En el  **panel de configuración de Windows 10,**  revisa las opciones y ajusta si es necesario. Mantenga el puntero sobre la información sobre herramientas para obtener más información sobre una directiva.
+6. En  **¿A quién debe aplicarse la directiva?** , elija si las selecciones se aplicarán a todos los usuarios de la organización o a grupos de seguridad específicos.
+7. Seleccione **Guardar cambios.**
 
-Microsoft 365 Business ahora está ayudando a proteger los equipos con Windows 10.
+Microsoft 365 Empresa ahora ayuda a proteger los equipos con Windows 10.

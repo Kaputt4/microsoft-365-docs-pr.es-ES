@@ -16,43 +16,44 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar Outlook y Microsoft Teams para colaborar.
-ms.openlocfilehash: aac1782de441db7521f4f9b7da540b417cb25f14
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3d5ac6dd157b0469800a3dd6f841ec1a5c1d1ed9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703036"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927351"
 ---
 # <a name="use-outlook-and-teams-together"></a>Usar Outlook y Teams conjuntamente
 
-Cuando se comunique con sus empleados, socios, clientes y otras personas en su pequeña empresa, use Outlook y Teams en Microsoft 365. En Outlook, encontrará el correo electrónico, los calendarios, los contactos y las tareas, mientras que en Microsoft Teams encontrará conversaciones, archivos, reuniones y acceso rápido a Microsoft y aplicaciones de terceros. Este es un resumen de cómo puede usar cada uno en su empresa.
+Cuando se comunique con sus empleados, socios, clientes y otros usuarios de su pequeña empresa, use Outlook y Teams en Microsoft 365. En Outlook, encontrará correo electrónico, calendarios, contactos y tareas, mientras que en Teams encontrará conversaciones, archivos, reuniones y acceso rápido a Aplicaciones de Microsoft y de terceros. Este es un resumen de cómo puede usar cada uno en su empresa.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
-- Compruebe los mensajes de dentro y de fuera de la empresa, incluidos nuevos clientes potenciales para la empresa.
+- Compruebe los mensajes de dentro y fuera de la empresa, incluidos los nuevos clientes potenciales de su empresa.
 - Compruebe los calendarios, agregue citas y programe reuniones.
-- Agregue los nombres, los números y los correos electrónicos de las personas con las que trabaja como contactos.
-- Cree tareas, notas y otras formas de mantenerse en la parte superior de los proyectos a corto y largo plazo.
+- Agregue los nombres, números y correos electrónicos de las personas con las que trabaja como contactos.
+- Cree tareas, notas y otras formas de mantenerse al día de sus proyectos a corto y largo plazo.
 
-:::image type="content" source="../media/outlook-model.png" alt-text="Imagen estilizada de la Página principal de Outlook.":::
+:::image type="content" source="../media/outlook-model.png" alt-text="Imagen stylized de la página principal de Outlook.":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-- Tener conversaciones enriquecidas en tiempo real con su equipo e invitar a clientes o invitados a la conversación.
-- Tener chats o llamadas privadas y compartir la pantalla entre sí.
+- Tener conversaciones enriquecciones en tiempo real con su equipo e invitar a clientes o invitados a la conversación.
+- Tener chats o llamadas privados y compartir la pantalla entre sí.
 - Programar y unirse a reuniones con empleados e invitados.
-- Agregar o compartir archivos desde el sitio de SharePoint asociado o desde OneDrive para la empresa.
-- Agregue más aplicaciones como Planner, Power BI o GitHub a Microsoft Teams.
+- Agregar o compartir archivos desde el sitio de SharePoint asociado o OneDrive para la Empresa.
+- Agregue más aplicaciones como Planner, Power BI o GitHub a Teams.
 
-:::image type="content" source="../media/teams-model.png" alt-text="Imagen estilizada de la Página principal de Microsoft Teams."::: 
+:::image type="content" source="../media/teams-model.png" alt-text="Una imagen stylized de la página principal de Microsoft Teams."::: 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [¿Qué es Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Información general de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Introducción a Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)

@@ -4,7 +4,7 @@ description: Obtenga información sobre los eventos asociados con los correos el
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, id. de mensaje de red, remitente, destinatario, id. de datos adjuntos, nombre de datos adjuntos, veredicto de malware, veredicto de suplantación de identidad, recuento de datos adjuntos, recuento de vínculos, recuento de direcciones URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780277"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928991"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -62,7 +63,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeliveryAction` | cadena | Acción de entrega del correo electrónico: entregado, marcado como correo no deseado, bloqueado o reemplazado. |
 | `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
 | `PhishFilterVerdict` | cadena | Veredicto sobre la pila de correos electrónicos filtrados para determinar si el correo es para suplantar la identidad: suplantar identidad o no suplantar identidad. |
-| `PhishDetectionMethod` | cadena | Método usado para detectar el correo electrónico como suplantación de identidad: reputación de url malintencionada, detonación de url de vínculos seguros, filtro de suplantación de identidad avanzado, filtro de suplantación de identidad general, anti-suplantación de identidad: dentro de la organización, contra la suplantación de identidad: dominio externo, suplantación de dominio, suplantación de usuario, suplantación de marca |
+| `PhishDetectionMethod` | cadena | Método usado para detectar el correo electrónico como suplantación de identidad: reputación de la dirección URL malintencionada, detonación de url de vínculos seguros, filtro de suplantación de identidad avanzado, filtro de suplantación de identidad general, anti-suplantación de identidad: dentro de la organización, contra la suplantación de identidad: dominio externo, suplantación de dominio, suplantación de usuario, suplantación de marca |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
 | `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor de antimalware, reputación del archivo, datos adjuntos seguros |
 | `EmailAction` | cadena | Acción final tomada sobre el correo electrónico basada en el veredicto del filtro, las directivas y las acciones del usuario: mover el mensaje a la carpeta correo no deseado, agregar encabezado X, modificar el asunto, redirigir mensaje, eliminar mensaje, enviar a cuarentena, no realizar ninguna acción, enviar mensaje con CCO. |
@@ -80,7 +81,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SenderObjectId` | string |Identificador único de la cuenta del remitente en Azure AD |
 | `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
 | `ThreatNames` | string |Nombre de detección de malware u otras amenazas encontradas |
-| `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas que se encuentran en el correo electrónico |
+| `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
 
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -4,7 +4,7 @@ description: Obtenga información sobre la información asociada con la entidad 
 keywords: búsqueda avanzada, búsqueda de amenazas, ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, AlertInfo, alerta, entidades, evidencia, archivo, dirección IP, dispositivo, máquina, usuario, cuenta, identidad, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 42acf24ce9b941fffb1ce0ed4b67216bd8c1de47
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784304"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928623"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -38,7 +39,7 @@ ms.locfileid: "49784304"
 
 
 
-La tabla del esquema de búsqueda avanzada contiene información sobre la entidad de servicio de Azure Active Directory y los inicios de sesión de `AADSpnSignInEventsBeta` identidad administrada. Puede obtener más información sobre los distintos tipos de inicios de sesión en los informes de actividad de inicio de sesión [de Azure Active Directory : versión preliminar.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+La tabla del esquema de búsqueda avanzada contiene información sobre la entidad de servicio de Azure Active Directory y los inicios de sesión de `AADSpnSignInEventsBeta` identidad administrada. Puede obtener más información sobre los diferentes tipos de inicios de sesión en los informes de actividad de inicio de sesión [de Azure Active Directory : versión preliminar.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Use esta referencia para crear consultas que devuelvan información de la tabla.
 

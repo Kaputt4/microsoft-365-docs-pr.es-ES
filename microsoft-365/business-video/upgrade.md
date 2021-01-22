@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo actualizar Windows 10 Home a Windows 10 Pro.
-ms.openlocfilehash: 64393e1b5c3f6652835fe5f5cd5859a6f4cf4320
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Aprende a actualizar Windows 10 Home a Windows 10 Pro.
+ms.openlocfilehash: 3f775130728eb6f00b1adb008c697fb84254827b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703108"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927759"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Actualizar de Windows 10 Home a Windows 10 Pro
 
@@ -34,12 +35,12 @@ ms.locfileid: "49703108"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Microsoft 365 Business requiere Windows 10 Pro para ayudar a proteger los datos. Si tienes un equipo que ejecuta Windows 10 Home, sigue estos pasos para actualizar a Windows 10 Pro.
+Microsoft 365 Empresa requiere Windows 10 Pro para ayudar a proteger los datos. Si tienes un equipo que ejecuta Windows 10 Home, sigue estos pasos para actualizar a Windows 10 Pro.
 
-1. En el escritorio, elija el menú  **Inicio**  , busque  **Microsoft Store** y selecciónelo.
-2. En Microsoft Store, haga clic en la barra de búsqueda, escriba  **Windows 10 Pro** y, a continuación, elija  **actualizar a Windows 10 Pro**.
-3. En  **actualizar a Windows 10 Pro** , elija  **más** y, a continuación, elija  **comprar**.
-4. En el cuadro  **seguridad de Windows**  , escriba el PIN para comprobar su identidad.
-5. Revise la página pago, lea las condiciones de venta, realice los cambios en el método de pago si lo desea y, a continuación, elija  **comprar**.
-6. En  **actualizar a Windows 10 Pro** , elija  **instalar**.
-7. Guarde los archivos si es necesario y, a continuación, elija  **sí, deje que&#39;s vaya**  a la instalación de Windows.
+1. En el escritorio, elige el  **menú**  Inicio, busca  **Microsoft Store** y selecciónelo.
+2. En Microsoft Store, haz clic en la barra de búsqueda, escribe **Windows 10 Pro** y luego elige **Actualizar a Windows 10 Pro.**
+3. En **Actualizar a Windows 10 Pro,** elija Más **información** y, a continuación, **elija Comprar.**
+4. En el  **cuadro Seguridad de Windows,**  escribe el PIN para comprobar tu identidad.
+5. Revisa la página de pago, lee los términos de venta, realiza cambios en el método de pago si lo quieres y, a continuación, elige **Comprar.**
+6. En **Actualizar a Windows 10 Pro,** elija **Instalar.**
+7. Guarde los archivos si es necesario y, a  **continuación, elija Sí,&#39;a**  empezar a instalar Windows.
