@@ -70,11 +70,13 @@
           items:
             - name: Trabajar con los servicios de consultoría de Microsoft
               href: get-ready/apps-MCS.md
-        - name: Usar la herramienta de evaluación de la preparación
+        - name: Usar las herramientas de evaluación de preparación
           href: get-ready/readiness-assessment-tool.md
           items:
-            - name: Solucionar los problemas detectados por la herramienta de evaluación de la preparación
+            - name: Solucionar los problemas detectados por la herramienta de evaluación de preparación
               href: get-ready/readiness-assessment-fix.md
+            - name: Comprobador de la evaluación de preparación descargable
+              href: get-ready/readiness-assessment-downloadable.md
     - name: Introducción al Escritorio administrado de Microsoft
       href: get-started/index.md
       items:
