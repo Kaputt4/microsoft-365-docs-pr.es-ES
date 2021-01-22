@@ -1,5 +1,5 @@
 ---
-title: Mover archivos de la compañía a SharePoint
+title: Mover los archivos de la empresa a SharePoint
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,34 +16,35 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo mover archivos de la compañía a SharePoint.
-ms.openlocfilehash: c086bea07cee7aa40585653dbcc93189d181dc0d
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre cómo mover archivos de empresa a SharePoint.
+ms.openlocfilehash: 7e95e09dda5d2cd7131093e98d2965a55b42cd0a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702933"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927159"
 ---
 # <a name="move-files-to-sharepoint"></a>Mover archivos a SharePoint
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 
-Después de suscribirse a Microsoft 365 Business Premium,&#39;desea copiar los archivos de trabajo de la compañía en SharePoint. SharePoint es un buen punto de partida para almacenar los archivos de la compañía compartida a los que todos necesitan tener acceso. Normalmente, esto reemplaza el uso de un recurso compartido de archivos o una unidad de red.
+Después de registrarse en Microsoft 365 Empresa Premium,&#39;copiar los archivos de trabajo de su empresa en SharePoint. SharePoint es un buen lugar para almacenar archivos de empresa compartidos a los que todos necesitan acceso. Esto suele reemplazar el uso de un recurso compartido de archivos o una unidad de red.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Abra Microsoft Teams y, a continuación, abra un equipo al que tengan acceso todos los usuarios de su empresa.
-2. Seleccione  **archivos** y, a continuación, seleccione  **abrir en SharePoint**.
-3. Seleccione  **documentos** para ir a la ubicación en la que se almacena todo el sitio.
-4. Seleccione  **sincronizar** y, a continuación, haga clic en  **sí**. Esto sincroniza los archivos del sitio de SharePoint con el equipo.
-5. En el explorador de archivos,&#39;ll ahora verá la carpeta documentos sincronizados de su empresa&#39;sitio de SharePoint. Si sincroniza sitios de SharePoint adicionales, se mostrarán por encima o por debajo de este. Haga clic con el botón secundario en la carpeta documentos sincronizados y ábrala en una nueva ventana para verla en paralelo con los archivos de la compañía que desea mover.
-6. Seleccione todos los archivos que desee mover y, a continuación, arrástrelos a la carpeta de SharePoint sincronizada. Las flechas circulares azules situadas junto a los archivos significan que&#39;rán a sincronizar con el sitio de SharePoint. Cuando&#39;vuelva a realizar la sincronización, se mostrarán marcas de verificación verdes.
-7. Vuelva a su sitio de SharePoint para ver los archivos que se han sincronizado en la nube.
+1. Abra Microsoft Teams y, a continuación, abra un equipo al que todos los usuarios de su empresa puedan tener acceso.
+2. Seleccione **Archivos** y, a continuación, **seleccione Abrir en SharePoint.**
+3. Seleccione  **Documentos** para ir a la ubicación donde se almacena todo en el sitio.
+4. Seleccione  **Sincronizar** y, a continuación,  **seleccione Sí**. Esto sincroniza los archivos del sitio de SharePoint con el equipo.
+5. En el Explorador de archivos,&#39;ahora verá la carpeta de documentos sincronizados del sitio de SharePoint de&#39;empresa. Si sincroniza sitios de SharePoint adicionales, se mostrarán por encima o por debajo de este. Haga clic con el botón secundario en la carpeta de documentos sincronizados y ábrala en una nueva ventana para verla en paralelo con los archivos de la empresa que desea mover.
+6. Seleccione todos los archivos que desee mover y arrástrelos a la carpeta sincronizada de SharePoint. Las flechas circulares azules situadas junto a los archivos&#39;se sincronizan con el sitio de SharePoint. Cuando se&#39;la sincronización, se muestran las marcas de verificación verde.
+7. Vuelva al sitio de SharePoint para ver los archivos que se han sincronizado con la nube.
 
-Además de trabajar en los archivos directamente desde el equipo, puede tener acceso a ellos en un explorador Web de cualquier equipo.
+Además de trabajar en los archivos directamente desde el equipo, puede acceder a ellos en un explorador web en cualquier equipo.
 
-Ahora puede tener acceso a los archivos desde el sitio o los equipos de SharePoint.
+Ahora puede acceder a los archivos desde su sitio de SharePoint o Teams.

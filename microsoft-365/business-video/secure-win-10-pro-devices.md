@@ -1,5 +1,5 @@
 ---
-title: Administración de directivas de dispositivo de Windows 10 Pro con Microsoft 365 empresa Premium
+title: Administrar directivas de dispositivos windows 10 Pro con Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,37 +16,38 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo administrar las directivas de dispositivo de Windows 10 Pro con Microsoft 365 empresa Premium.
-ms.openlocfilehash: 9052859f03035a76bf69b7c8c23c75ae00353846
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtén información sobre cómo administrar directivas de dispositivos de Windows 10 Pro con Microsoft 365 Empresa Premium.
+ms.openlocfilehash: f42c175543ae16ae645c17997b20ed67aa5d705c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703192"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926011"
 ---
-# <a name="manage-windows-10-pro-device-policies"></a>Administrar directivas de dispositivo de Windows 10 Pro
+# <a name="manage-windows-10-pro-device-policies"></a>Administrar directivas de dispositivos Windows 10 Pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
-Puede usar Microsoft 365 Business para asegurarse de que el antivirus de Windows Defender está activado en dispositivos con Windows 10 y que las actualizaciones de Microsoft se descargan automáticamente en los dispositivos de los usuarios.
+Puede usar Microsoft 365 Empresa para asegurarse de que Windows Defender Antivirus está activado en dispositivos Windows 10 y que las actualizaciones de Microsoft se descargan automáticamente en los dispositivos de los usuarios.
 
 ## <a name="try-it"></a>¿Se atreve?
 
 1. Inicie sesión en el Centro de administración de Microsoft 365.
-1. En **directivas**, elija Agregar Directiva.
-1. En el panel **Agregar Directiva** , escriba un nombre en **nombre** de la Directiva y, a continuación, seleccione **configuración de dispositivo Windows 10** en **tipo de directiva**.
-1. Elija **proteger dispositivos Windows 10** para ver las configuraciones secundarias.
-1. Asegúrate de que **proteger los equipos PC contra virus y otras amenazas con el antivirus de Windows Defender** y **mantener los dispositivos con Windows 10 actualizados automáticamente** está activado.
-1. En ¿ **quién recibirá esta configuración?**, todos los usuarios están seleccionados de forma predeterminada, pero puede elegir **cambiar** para seleccionar los grupos de seguridad que haya creado.
-1. Para finalizar la creación de la Directiva, elija **Agregar**.
-1. En la página **Agregar Directiva** , elija **cerrar**.
-1. En la Página principal del centro de administración, confirme que se ha agregado la nueva Directiva eligiendo **directivas** y revisando la Directiva en la página **directivas** .
-1. Para comprobar que la Directiva ha surtido efecto, en el dispositivo Windows 10 de un usuario, vaya a Windows Update, elija **Opciones avanzadas** y confirme que la configuración está atenuada.
+1. En **Directivas,** elija Agregar directiva.
+1. En el **panel Agregar directiva,** escribe un nombre en **Nombre** de directiva y, a continuación, selecciona Configuración de dispositivo de **Windows 10** en **Tipo de directiva.**
+1. Elige **Proteger dispositivos Windows 10** para ver la sub configuración.
+1. Asegúrate de proteger los equipos de virus y otras amenazas con **Windows Defender Antivirus** y mantener los dispositivos **Windows 10** actualizados automáticamente.
+1. Under **Who will get these settings?**, all users are selected by default, but you can choose **Change** to select any security groups you've created.
+1. Para terminar de crear la directiva, elija **Agregar**.
+1. En la **página Agregar directiva,** elija **Cerrar**.
+1. En la página principal del centro de administración, confirme  que se ha agregado la nueva directiva eligiendo Directivas y revisando la directiva en la **página** Directivas.
+1. Para comprobar que la directiva ha tenido efecto, en el dispositivo Windows 10 de un usuario, ve a Windows Update, elige Opciones avanzadas y confirma que la configuración está atenuada. 
 
-    A continuación, haga clic en **elegir cómo se van a entregar las actualizaciones** y asegúrese de que la configuración está atenuada y aparece el mensaje siguiente: **algunas opciones de configuración están ocultas o están administradas por la organización**.
+    A **continuación,** haga clic en Elegir cómo se entregan las actualizaciones y confirme que la configuración está atenuada y aparece el siguiente mensaje: Algunas opciones de configuración están ocultas o **administradas por su organización.**
 

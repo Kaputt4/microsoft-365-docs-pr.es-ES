@@ -13,20 +13,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando mosaicos personalizados al iniciador de aplicaciones. '
-ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones. '
+ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552499"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926239"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -37,7 +39,7 @@ ms.locfileid: "46552499"
 
 ::: moniker-end
 
-En Microsoft 365, puede obtener acceso de forma rápida y sencilla a su correo electrónico, calendarios, documentos y aplicaciones mediante el iniciador de aplicaciones ([Obtenga más información](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Estas son aplicaciones que obtiene con Microsoft 365, así como aplicaciones personalizadas que se agregan desde la [tienda SharePoint](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure ad](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
+En Microsoft 365, puede acceder rápida y fácilmente a su correo electrónico, calendarios, documentos y aplicaciones mediante el iniciador de aplicaciones[(más información).](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) Estas son las aplicaciones que obtiene con Microsoft 365, así como las aplicaciones personalizadas que agrega desde la [Tienda SharePoint](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD.](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)
   
 Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a sitios de SharePoint, sitios externos, aplicaciones heredadas y mucho más. El icono personalizado aparece en **Todas** las aplicaciones del iniciador de aplicaciones, pero puede anclarlo a las aplicaciones del **Inicio** e indicar a los usuarios que hagan lo mismo. Esto le facilitará la tarea de buscar los sitios, aplicaciones y recursos necesarios para realizar su trabajo. En el ejemplo siguiente, se usa un icono personalizado denominado "Contoso Portal" para obtener acceso a un sitio de intranet de SharePoint de la organización. 
   
@@ -45,49 +47,49 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Agregar un icono personalizado en el iniciador de aplicaciones
 
-1. Inicie sesión en el centro de administración como administrador global, vaya a **configuración**  >  **de**la organización y elija la pestaña Perfil de la **organización** .
+1. Inicie sesión en el centro de administración como administrador global, vaya a Configuración de la organización  >  y elija la pestaña **Perfil de** la organización.
     
-2. En la pestaña Perfil de la **organización** , elija **ventanas del iniciador de aplicaciones personalizadas**.
+2. En la pestaña **Perfil de** organización, elija **Mosaicos personalizados del iniciador de aplicaciones.**
   
-3. Seleccione **Agregar un icono personalizado**. 
+3. Seleccione **Agregar un icono personalizado.** 
   
-4. Escriba un **nombre de icono** para el nuevo icono. El nombre aparecerá en el mosaico. 
+4. Escribe un **nombre de icono** para el nuevo icono. El nombre aparecerá en el mosaico. 
     
-5. Escriba la **dirección URL del sitio web** del icono. Esta es la ubicación a la que quiere que vayan los usuarios cuando seleccionen el icono en el iniciador de aplicaciones. Use HTTPS en la dirección URL.<br/>Sugerencia: Si está creando un icono para un sitio de SharePoint, vaya a ese sitio, copie la dirección URL y péguelo aquí. La dirección URL del sitio de grupo predeterminado tiene el siguiente aspecto:`https://<company_name>.sharepoint.com` 
+5. Escribe una **dirección URL del sitio web** para el icono. Esta es la ubicación a la que quieres que vayan los usuarios cuando seleccionen el icono en el iniciador de aplicaciones. Use HTTPS en la dirección URL.<br/>SUGERENCIA: Si va a crear un icono para un sitio de SharePoint, vaya a ese sitio, copie la dirección URL y péguela aquí. La dirección URL del sitio de grupo predeterminado tiene este aspecto: `https://<company_name>.sharepoint.com` 
   
-6. Escriba una **dirección URL de la imagen** para el icono. La imagen aparece en la página Mis aplicaciones y en el iniciador de aplicaciones.<br/>Sugerencia: la imagen debe ser de 60x60 píxeles y estar disponible para todos los usuarios de la organización sin necesidad de autenticación.
+6. Escribe una **dirección URL de la imagen** para el icono. La imagen aparece en la página Mis aplicaciones y en el iniciador de aplicaciones.<br/>SUGERENCIA: La imagen debe ser de 60 x 60 píxeles y estar disponible para todos los usuarios de la organización sin necesidad de autenticación.
 
-7. Introduzca una **Descripción** para el icono. Verá esto cuando seleccione el icono en la página Mis aplicaciones y seleccione detalles de la **aplicación**. 
+7. Introduzca una **Descripción** para el icono. Verá esto cuando seleccione el icono en la página Mis aplicaciones y seleccione **Detalles de la aplicación.** 
   
-8. Seleccione **Guardar cambios** para crear el icono personalizado. 
+8. Selecciona **Guardar cambios** para crear el icono personalizado. 
     
 El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **Todas** para sus usuarios y usted. 
   
-## <a name="promote-the-tile-to-app-launcher"></a>Subir el icono al iniciador de aplicaciones
+## <a name="promote-the-tile-to-app-launcher"></a>Promover el icono a la aplicación Selector
 
-1. Seleccione el icono del iniciador de aplicaciones y seleccione **todas las aplicaciones**. 
+1. Seleccione el icono del iniciador de aplicaciones y seleccione **Todas las aplicaciones.** 
     
-2. Busque el nuevo icono de la aplicación, seleccione los puntos suspensivos y elija **anclar a iniciador**.
+2. Busque el nuevo icono de la aplicación, seleccione los puntos suspensivos y elija **Anclar al iniciador.**
   
     > [!NOTE]
-    > Si no ve el icono personalizado que se creó en los pasos anteriores, asegúrese de que tiene un buzón de Exchange Online asignado a usted y de que ha iniciado sesión en su buzón al menos una vez. Estos pasos son necesarios para los mosaicos personalizados en Microsoft 365. 
+    > Si no ve el icono personalizado que se creó en los pasos anteriores, asegúrese de que tiene un buzón de Exchange Online asignado a usted y de que ha iniciado sesión en su buzón al menos una vez. Estos pasos son necesarios para los iconos personalizados de Microsoft 365. 
   
 > [!IMPORTANT]
 > Tanto usted como sus usuarios deben realizar estos pasos para promover los iconos personalizados desde la página Mis aplicaciones al iniciador de aplicaciones. 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el centro de administración, vaya a la pestaña **configuración**  >  **org configuración**de  >  **Perfil de organización** </a> .
+1. En el centro de administración, vaya a la **pestaña** Configuración de la organización de  >  **configuración**  >  **de la organización.** </a>
     
-2. En la página Perfil de la **organización** , junto a **Agregar iconos personalizados para la organización**, seleccione **Editar**.
+2. En la **página Perfil de** la organización, junto a Agregar iconos   **personalizados para su organización,** seleccione **Editar**.
 
 3. Actualice el valor de los campos **Nombre del icono**, **Dirección URL**, **Descripción** o **Dirección URL de la imagen** para el icono personalizado (consulte la [Agregar un icono personalizado en el iniciador de aplicaciones](#add-a-custom-tile-to-the-app-launcher)).
     
-4. Seleccione **Update** \> **cerrar**actualización. 
+4. Seleccione **Actualizar** \> **cerrar**. 
     
-Para eliminar un icono personalizado, en la ventana **mosaicos personalizados** , seleccione el icono, seleccione **quitar**  >  **eliminación**de mosaico. 
+Para eliminar un icono personalizado, en la **ventana Mosaicos** personalizados, seleccione el icono, **seleccione Eliminar**  >  **icono.** 
   
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
-Además de agregar mosaicos al iniciador de aplicaciones, puede Agregar mosaicos del iniciador de aplicaciones a la barra de navegación ([más información](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Para personalizar la apariencia de Microsoft 365 de manera que se ajuste a la marca de su organización, vea [customize the Microsoft 365 Theme](../setup/customize-your-organization-theme.md).
+Además de agregar iconos al iniciador de aplicaciones, puedes agregar iconos del iniciador de aplicaciones a la barra de navegación[(más información).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Para personalizar la apariencia de Microsoft 365 para que coincida con la marca de su organización, consulte Personalizar el tema [de Microsoft 365.](../setup/customize-your-organization-theme.md)
   

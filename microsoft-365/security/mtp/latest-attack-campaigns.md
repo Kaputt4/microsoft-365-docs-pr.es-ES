@@ -1,8 +1,8 @@
 ---
-title: Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas
-description: Use los informes interactivos de análisis de amenazas en Microsoft 365 para evaluar la resistencia y el nivel de seguridad de su organización frente a las amenazas emergentes.
-keywords: seguridad, malware, Microsoft 365, M365, Security Center, Threat Analytics, Microsoft defender ATP, Cyber, Security postura, amenazas emergentes
-ms.prod: microsoft-365-enterprise
+title: Comprender las últimas campañas y técnicas de ataque con análisis de amenazas
+description: Use informes interactivos de análisis de amenazas en Microsoft 365 para evaluar la posición de seguridad y la resistencia de su organización frente a las amenazas emergentes.
+keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, análisis de amenazas, ATP de Microsoft Defender, cibernética, posición de seguridad, amenazas emergentes
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -15,20 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8590f73b32e452c9d34d179db12c4db978df8e4d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: f02a469c40e964772703e9b0a4cf5bca208f1eea
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846705"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926839"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas 
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprender las últimas campañas y técnicas de ataque con análisis de amenazas 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Las amenazas de la Cyber son cada vez más frecuentes y sofisticadas. Es fundamental para las organizaciones evaluar rápidamente su postura de seguridad y resistencia frente a amenazas emergentes específicas.
+Las amenazas cibernéticas son cada vez más frecuentes y sofisticadas. Es fundamental que las organizaciones evalúen rápidamente su posición de seguridad y resistencia frente a amenazas emergentes específicas.
 
-**Threat Analytics** es un conjunto de informes interactivos publicados tan pronto como se identifican las amenazas emergentes (nuevas técnicas, campañas de ataque y brotes de malware). Los informes le ayudarán a evaluar el impacto de las amenazas en su entorno y a proporcionar acciones recomendadas para contener, aumentar la resistencia organizativa y evitar amenazas específicas.
+**El análisis de** amenazas es un conjunto de informes interactivos publicados en cuanto se identifican las amenazas emergentes (nuevas técnicas, campañas de ataques y ataques de malware). Los informes le ayudan a evaluar el impacto de las amenazas en su entorno y proporcionan acciones recomendadas para contener, aumentar la resistencia de la organización y evitar amenazas específicas.
 
-[Obtenga más información sobre Threat Analytics en Microsoft defender para el punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  
+[Obtenga más información sobre el análisis de amenazas en Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)  

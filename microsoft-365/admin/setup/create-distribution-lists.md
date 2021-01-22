@@ -21,19 +21,20 @@ ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
-description: Obtenga información sobre cómo crear grupos de distribución o listas en el centro de administración de 365 de Microsoft para que pueda enviar correos electrónicos a un grupo sin tener que escribir el nombre de cada destinatario.
-ms.openlocfilehash: c206e3eaa7987ba90d54daa55ae069d188908a0b
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+- okr_smb
+description: Obtenga información sobre cómo crear grupos de distribución o listas en el Centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin tener que escribir el nombre de cada destinatario.
+ms.openlocfilehash: ffdafb7ef74e908f340a9ac80db0abffb1841442
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906374"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926311"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el centro de administración de Microsoft 365
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el Centro de administración de Microsoft 365
   
-Se usa cuando desea enviar un correo electrónico a un grupo de personas sin tener que escribir el nombre de cada destinatario individual, los grupos de distribución (listas de distribución) están organizados por un asunto de discusión concreto (como "Marketing") o por usuarios que comparten trabajo común que requieren que se comuniquen con frecuencia. También proporcionan una forma de reenviar automáticamente el correo electrónico a varias direcciones de correo electrónico.
+Se usa cuando se desea enviar correo electrónico al grupo de personas sin tener que escribir el nombre de cada destinatario individual, los grupos de distribución (listas de distribución) se organizan por un tema de discusión determinado (como "Marketing") o por usuarios que comparten trabajo común que les requiere comunicarse con frecuencia. También proporcionan una forma de reenviar automáticamente el correo electrónico a varias direcciones de correo electrónico.
 
-Los grupos de distribución se denominan a veces listas de distribución.
+A veces, los grupos de distribución se denominan listas de distribución.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
   
@@ -59,20 +60,20 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 1. Seleccione el icono del iniciador de aplicaciones  y elija **Administrador**.
     
-    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles para usted. Ahí podrá buscar una aplicación específica. 
+    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, **selecciona Todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles. Ahí podrá buscar una aplicación específica. 
     
-2. Seleccione **grupos** \> **Groups** de grupos en el panel de navegación izquierdo y, a continuación, seleccione **Agregar un grupo**. 
+2. Seleccione **Grupos** \> **en el** panel de navegación izquierdo y, a continuación, seleccione Agregar un **grupo.** 
       
-3. En el campo **elegir un tipo de grupo** , elija **distribución** y, a continuación, elija **siguiente**.
+3. En el **campo Elegir un tipo de** grupo, elija **Distribución** y, a continuación, **elija Siguiente**.
   
-4. Escriba un nombre, una descripción y un alias de correo electrónico para el nuevo grupo y elija si desea que las personas ajenas a la organización envíen correo electrónico al grupo. 
+4. Escriba un nombre, una descripción y un alias de correo electrónico para el nuevo grupo y elija si desea que las personas de fuera de su organización envíen correo electrónico al grupo. 
     
-5. Haga clic en **Agregar** para crear un grupo y, a continuación, revise el grupo y elija **cerrar**. 
+5. Presione **Agregar** para crear un grupo y, a continuación, revise el grupo y elija **Cerrar**. 
     
-6. Para agregar usuarios a la lista de distribución, vea [Agregar un usuario o un contacto a un grupo de distribución](../email/add-user-or-contact-to-distribution-list.md).
+6. Para agregar usuarios a la lista de distribución, vea Agregar un usuario o [contacto a un grupo de distribución.](../email/add-user-or-contact-to-distribution-list.md)
     
-Consulte Cómo usar el grupo en Outlook 2016 y Outlook en la web en el tema [usar grupos de contactos (anteriormente listas de distribución) en Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) . 
+Consulte cómo usar grupos en Outlook 2016 y Outlook en la Web en el tema Usar grupos de contactos (anteriormente listas [de distribución) en Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
-Consulte los [problemas del grupo de distribución](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) para obtener ayuda con los problemas de listas de distribución. 
+Consulte los [problemas del grupo de distribución](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) para obtener ayuda con los problemas de la lista de distribución. 
   
 

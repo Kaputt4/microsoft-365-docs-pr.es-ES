@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo conectar su dominio a Microsoft 365.
-ms.openlocfilehash: c7827b93b56560579b31bd2abb5a852467565103
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 1bec66a43026321ddf1979c73902a533bee3a07b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794707"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925115"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Conectar su dominio a Microsoft 365 para empresas
 
@@ -44,7 +45,7 @@ Primero tendrá que eliminar los registros DNS existentes de Google y, a continu
 1. Desplácese hacia abajo **hasta Registros** de recursos personalizados y elimine los registros DNS existentes que aparezcan, incluidos los que haya creado anteriormente para Microsoft 365.
 1. Vaya al Centro [de administración de Microsoft 365.](https://admin.microsoft.com)
 1. En el panel de navegación izquierdo, elija Mostrar **todo**, **Configuración**, **Dominios**.
-1. A continuación, elija su dominio predeterminado.
+1. A continuación, elija el dominio predeterminado.
 1. Seleccione **Continuar configuración** y, a continuación, para conectar su dominio, elija  **Continuar**.
 1. Desplácese hacia abajo para ver los registros DNS que deben copiarse en Google.
 1. Abra **Registros MX** y, en Puntos para dirección o **valor,** copie el registro.

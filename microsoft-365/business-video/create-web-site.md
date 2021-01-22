@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear un sitio web de GoDaddy para su empresa.
-ms.openlocfilehash: db3a3133626577f9dc2665a61053cb587e9b7b3a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702567"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927339"
 ---
 # <a name="create-a-website"></a>Crear un sitio web
 
@@ -34,11 +35,11 @@ ms.locfileid: "49702567"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Microsoft 365 no incluye un sitio web público para su empresa. Para configurar un, considere la posibilidad de usar una empresa de hospedaje web como GoDaddy, Wix o WordPress.
+Microsoft 365 no incluye un sitio web público para su empresa. Para configurar uno, considere la posibilidad de usar una empresa de hospedaje web como GoDaddy, Wix o WordPress.
 
-1. Busque un proveedor de hospedaje web donde pueda crear su sitio Web.
+1. Busque un proveedor de hospedaje web donde pueda crear su sitio web.
 
-     Es posible que le resulte más fácil elegir el generador de sitios web en la misma empresa en la que está registrado el nombre de dominio.
-1. Diseñe el sitio web de su empresa, asegurándose de incluir el logotipo de la empresa, el propósito del negocio, el texto, las imágenes y los vínculos.
-1. Para integrar el sitio web con Microsoft 365, puede Agregar el correo electrónico de su empresa al sitio web y un vínculo a Microsoft Teams, SharePoint u otra herramienta de colaboración.
-1. Asegúrese de conectar el sitio web a su nombre de dominio, que también&#39;usar para el correo electrónico en Microsoft 365.
+     Es posible que le resulte más fácil elegir el generador de sitios web en la misma empresa donde está registrado su nombre de dominio.
+1. Diseñe su sitio web empresarial y asegúrese de incluir el logotipo de su empresa, propósito empresarial, texto, imágenes y vínculos.
+1. Para integrar el sitio web con Microsoft 365, puede agregar su correo electrónico empresarial al sitio web y un vínculo a Microsoft Teams, SharePoint u otra herramienta de colaboración.
+1. Asegúrese de conectar su sitio web a su nombre de dominio, que también&#39;usa para el correo electrónico en Microsoft 365.

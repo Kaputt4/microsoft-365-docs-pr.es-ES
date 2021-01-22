@@ -1,10 +1,10 @@
 ---
 title: Tabla EmailAttachmentInfo del esquema de búsqueda avanzada
 description: Obtenga más información sobre los datos adjuntos en la tabla de EmailAttachmentInfo del esquema de búsqueda avanzada.
-keywords: caza avanzado, cazar amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailAttachmentInfo, identificador de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre de archivo adjunto, veredicto de malware
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailAttachmentInfo, id. de mensaje de red, remitente, destinatario, id. de datos adjuntos, nombre de datos adjuntos, veredicto de malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.technology: m365d
+ms.openlocfilehash: c6cab4d813eba79e298d0082072888e3ef1ad1cd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667654"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927007"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -36,7 +37,7 @@ ms.locfileid: "49667654"
 
 
 
-La `EmailAttachmentInfo` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los datos adjuntos de los mensajes de correo electrónico procesados por Microsoft Defender para Office 365. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La tabla del esquema de búsqueda avanzada contiene información sobre los datos adjuntos de los correos electrónicos procesados por `EmailAttachmentInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -44,17 +45,17 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `AttachmentId` | cadena | Identificador único de datos adjuntos al correo electrónico |
-| `NetworkMessageId` | cadena | Identificador único del correo electrónico generado por Microsoft 365 |
+| `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
 | `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FileType` | cadena | Tipo de extensión de archivo |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
-| `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor antimalware, reputación de archivos, datos adjuntos seguros |
-| `SenderDisplayName` | string | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre determinado o de un nombre, una inicial del segundo nombre y un apellido o un apellido |
+| `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor de antimalware, reputación del archivo, datos adjuntos seguros |
+| `SenderDisplayName` | string | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre, una inicial intermedia y un apellido o apellido |
 | `SenderObjectId` | string | Identificador único de la cuenta del remitente en Azure AD |
-| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico de si el correo electrónico contiene malware, suplantación de identidad (phishing) u otras amenazas |
+| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
 | `ThreatNames` | string | Nombre de detección de malware u otras amenazas encontradas |
 
 ## <a name="related-topics"></a>Temas relacionados

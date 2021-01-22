@@ -1,5 +1,5 @@
 ---
-title: Detener el reenvío automático de correos electrónicos
+title: Detener el reenvío automático de mensajes de correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo detener el reenvío automático de correo electrónico.
-ms.openlocfilehash: 0683e133f6c261dc19cc098b13be298cd8086001
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre cómo detener el reenvío automático de mensajes de correo electrónico.
+ms.openlocfilehash: ebbe37ab5c4a60c6ac4b6ebf8877247199460fa1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702594"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925891"
 ---
 # <a name="stop-email-auto-forward"></a>Detener el reenvío automático de correo electrónico
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
-Si un pirata informático obtiene acceso al buzón de un usuario, puede reenviar automáticamente el correo electrónico del usuario a una dirección externa y robar información de propietario. Para detener esto, cree una regla de flujo de correo.
+Si un hacker obtiene acceso al buzón de un usuario, puede reenviar automáticamente el correo electrónico del usuario a una dirección externa y robar información propietaria. Puede detener esto creando una regla de flujo de correo.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el centro de administración de 365 de Microsoft, seleccione **Exchange**, **flujo de correo** y, en la ficha **reglas** , seleccione el signo más y elija **crear una nueva regla**.
-1. Seleccione **más opciones**. Asigne un nombre a la nueva regla.
-1. A continuación, abra la lista desplegable para **aplicar esta regla si**, seleccione **el remitente** y, a continuación, **es interno externo**.
-1. Seleccione **dentro de la organización** y, después, haga clic en **Aceptar**.
-1. Elija **Agregar condición**, abra la lista desplegable, seleccione **las propiedades del mensaje** y, a continuación, **incluya el tipo de mensaje**.
-1. Abra la lista desplegable **Seleccionar tipo de mensaje** , elija **reenvío automático** y **Aceptar**.
-1. Abra la lista desplegable **haga lo siguiente** , seleccione **bloquear el mensaje** y, a continuación, **rechazar el mensaje e incluir una explicación**.
-1. Escriba el texto del mensaje para su explicación y, después, seleccione **Aceptar**.
+1. En el Centro de administración de Microsoft 365,  seleccione **Exchange** **,** flujo de correo y, en la pestaña reglas, seleccione el signo más y elija crear una **nueva regla.**
+1. Seleccione **Más opciones.** Asigne un nombre a la nueva regla.
+1. A continuación, abra la lista desplegable para **aplicar esta regla si**, seleccione el **remitente** y, a continuación, sea **interno externo**.
+1. Seleccione **Dentro de la organización** y, a continuación, **Aceptar**.
+1. Elija **agregar condición,** abra la lista desplegable, seleccione **Las propiedades del mensaje** y, a continuación, incluya el tipo de **mensaje.**
+1. Abra la **lista desplegable seleccionar tipo** de mensaje, elija **Reenviar** automáticamente y, a continuación, **Aceptar.**
+1. Abra la **lista desplegable Hacer** lo siguiente, seleccione Bloquear **el** mensaje y, a continuación, **rechace el** mensaje e incluya una explicación.
+1. Escriba el texto del mensaje para su explicación y, a continuación, seleccione **Aceptar.**
 1. Desplácese hasta la parte inferior y seleccione **Guardar**.
 
     Se ha creado la regla y los hackers ya no podrán reenviar mensajes automáticamente.

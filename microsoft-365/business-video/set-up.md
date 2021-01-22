@@ -1,5 +1,5 @@
 ---
-title: Configuración de la suscripción a Microsoft 365 Business Premium
+title: Configurar la suscripción de Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo configurar Microsoft 365 empresa Premium.
-ms.openlocfilehash: 79f089e38979990c29156ea07201c8d902a51e80
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre cómo configurar Microsoft 365 Empresa Premium.
+ms.openlocfilehash: bda1326ebd905dece382c1513296739a39887976
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703144"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925951"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 
@@ -34,18 +35,18 @@ ms.locfileid: "49703144"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Inicie sesión en el centro de administración de Microsoft 365 y seleccione  **ir a configuración**. Se iniciará el Asistente para la instalación.
-2.  En la página  **instalar las aplicaciones de Office**  , puede optar por instalar las aplicaciones de Office en el equipo o seleccionar  **continuar**.
-3.  En la página  **su dominio es su identidad de empresa**  , escriba el nombre de dominio de su empresa y, a continuación, seleccione  **usar este dominio**. Si usa un registrador común como WordPress o GoDaddy, los registros se agregarán automáticamente en esta página.
-4. En la página  **comprobar el dominio**  , seleccione  **comprobar** para comprobar la propiedad de su dominio y, a continuación, inicie sesión en su cuenta de registrador de dominio. Para permitir que Microsoft agregue un registro TXT para la verificación de cuentas, seleccione  **confirmar**.
-5. En la página  **Agregar usuarios y asignar licencias**  , escriba los nombres, los apellidos y los nombres de usuario de los usuarios. A continuación, seleccione  **Agregar usuarios y asignar licencias**.
-6. En la página  **compartir información de inicio de sesión**  , escriba las direcciones de correo electrónico alternativas para los usuarios y seleccione  **Enviar correo electrónico y continuar**.
-7.  En la página  **Activar registros**  , haga clic en  **continuar**.
-8.  En la página  **agregar registros DNS**  , se recomienda dejar los servicios activados para el correo electrónico, los equipos y la seguridad de los dispositivos móviles. Seleccione  **configurar** y, a continuación, seleccione  **conectar** para confirmar los cambios con el registrador de dominios.
-9.  En la página **aumentar la protección de las amenazas de la Cyber avanzada** , deje la **protección contra amenazas avanzada de Office** en, revise qué se examinará y, a continuación, seleccione crear **directivas** de **protección contra amenazas avanzada**.   
-10.  Si lo desea, también puede instalar Outlook en sus dispositivos móviles. Seleccione  **continuar**.
-11. En la página  **ayudar a los usuarios a usar Microsoft Teams**  , elija si quiere enviar un correo electrónico a los usuarios de su organización sobre Microsoft Teams y seleccione  **continuar**.
-12. En la página  **proteger datos en Office para móviles**  , deje administración de aplicaciones móviles en, expanda la configuración y revise y, a continuación, seleccione  **crear Directiva de administración de aplicaciones móviles**.
-13. Una vez finalizada la configuración, vuelva al centro de administración de Microsoft. En el centro de administración, puede seguir configurando características como las directivas de Windows 10, DLP, etc. en la página de  **configuración**  .
+1. Inicie sesión en el Centro de administración de Microsoft 365 y seleccione **Ir a la configuración.** Se iniciará el Asistente para instalación.
+2.  On the  **Install your Office apps**  page, you can choose to install Office apps on your computer, or select  **Continue**.
+3.  En la **página Su dominio es su identidad empresarial,** escriba el nombre de dominio de su empresa y, a continuación, seleccione Usar este **dominio.** Si usa un registrador común como WordPress o GoDaddy, los registros se agregarán automáticamente en esta página.
+4. En la  **página Comprobar su dominio,**  seleccione  **Comprobar** para comprobar la propiedad del dominio y, a continuación, inicie sesión en su cuenta de registrador de dominios. Para permitir que Microsoft agregue un registro TXT para la comprobación de la cuenta, seleccione  **Confirmar**.
+5. En la  **página Agregar usuarios y asignar licencias,**  escriba los nombres de usuario, los apellidos y los nombres de usuario. A **continuación, seleccione Agregar usuarios y asigne licencias.**
+6. En la **página Compartir información de inicio de sesión,** escriba direcciones de correo electrónico alternativas para los usuarios y seleccione Enviar correo electrónico y **continúe.**
+7.  En la  **página Activar registros,**  haga clic  **en Continuar**.
+8.  En la  **página Agregar registros DNS,**  le recomendamos que deje los servicios activados para el correo electrónico, Teams y la seguridad de dispositivos móviles. Seleccione  **Configurar** y, a continuación,  **seleccione Conectar** para confirmar los cambios con el registrador de dominios.
+9.  On the  **Increase protection from advanced cyber threats**  page, leave Office Advanced Threat  **Protection**  on, review what will be scanned, and then select Create Advanced  **Threat Protection**   **policies**.
+10.  Si lo desea, opcionalmente puede instalar Outlook en sus dispositivos móviles. Seleccione  **Continuar**.
+11. En la **página Ayudar a los usuarios a usar Microsoft Teams,** elija si desea enviar un correo electrónico a los usuarios de su organización sobre Teams y seleccione **Continuar.**
+12. En la **página Proteger datos de Office** para dispositivos móviles, deje la administración de aplicaciones móviles, expanda la configuración y repase los datos y, a continuación, seleccione Crear directiva de administración de aplicaciones **móviles.**
+13. Una vez completada la configuración, vuelva al Centro de administración de Microsoft. En el centro de administración puede seguir configurando características como directivas de Windows 10, DLP, etc. en la  **página de**  instalación.
 
-La instalación se ha completado.
+La configuración se ha completado.

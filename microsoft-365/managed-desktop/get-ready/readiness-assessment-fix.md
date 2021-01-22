@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ada6bb8ef66e3414a375a151b45d4871e306e825
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f1af39a9b2a09908ecf5f5ff15b9fd6d764459d6
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841076"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921863"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -37,46 +37,46 @@ Puedes acceder a la configuración de Intune en el Centro de administración de 
 
 ### <a name="autopilot-deployment-profile"></a>Perfil de implementación de Autopilot
 
-No debe tener perfiles de Autopilot existentes destinados a grupos dinámicos o asignados usados por el Escritorio administrado de Microsoft. Escritorio administrado de Microsoft usa Autopilot para aprovisionar nuevos dispositivos.
+No debes tener ningún perfil de Autopilot existente destinado a grupos asignados o dinámicos con dispositivos de Escritorio administrado de Microsoft. Escritorio administrado de Microsoft usa Autopilot para aprovisionar nuevos dispositivos.
 
 **No preparado**
 
-Tienes un perfil de Autopilot asignado a todos los dispositivos. Para ver los pasos, [consulta Inscribir dispositivos Windows en Intune con Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Después de la inscripción en el Escritorio administrado de Microsoft, establece la directiva de Autopilot para excluir el grupo Dispositivos de Área de **trabajo modernos:todos los** grupos de Azure AD.
+Tienes un perfil de Autopilot asignado a todos los dispositivos. Para ver los pasos, [consulta Inscribir dispositivos Windows en Intune con Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Después de la inscripción en el Escritorio administrado de Microsoft, establece la directiva de Autopilot para excluir el grupo Dispositivos de Área de **trabajo modernos: todos los** grupos de Azure AD.
 
 **Aviso**
 
-Asegúrate de que los perfiles de Autopilot están destinados a un grupo de Azure AD asignado o dinámico que no incluya dispositivos de Escritorio administrado de Microsoft que se crearán durante la inscripción. Para ver los pasos, [consulta Inscribir dispositivos Windows en Intune con Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Después de la inscripción en el Escritorio administrado de Microsoft, establece la directiva de Autopilot para excluir el grupo Dispositivos de Área de **trabajo modernos:todos los** grupos de Azure AD.
+Asegúrate de que los perfiles de Autopilot están destinados a un grupo de Azure AD asignado o dinámico que no incluye dispositivos de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Inscribir dispositivos Windows en Intune con Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Después de la inscripción a Escritorio administrado de Microsoft, establece los perfiles de Autopilot para excluir el grupo Dispositivos de Área de **trabajo modernos: todos los** grupos de Azure AD.
 
 
 ### <a name="certificate-connectors"></a>Conectores de certificados
 
-Si tiene algún conector de certificado usado por los dispositivos que desea inscribir en el Escritorio administrado de Microsoft, los conectores no pueden tener ningún error. Solo uno de los siguientes avisos se aplicará a su situación, así que compróquelos cuidadosamente.
+Si tiene algún conector de certificado que usarán los dispositivos que desea inscribir en el Escritorio administrado de Microsoft, los conectores no deben tener ningún error. Solo uno de los siguientes avisos se aplicará a su situación, así que compróquelos cuidadosamente.
 
 **Aviso**
 
-No hay conectores de certificado presentes. Es posible que no necesite ningún conector, pero debe evaluar si puede necesitar algunos para la conectividad de red a los dispositivos de Escritorio administrado de Microsoft. Para obtener más información, vea Preparar certificados [y perfiles de red para escritorio administrado de Microsoft.](certs-wifi-lan.md)
+No hay conectores de certificado presentes. Es posible que no necesite ningún conector, pero debe evaluar si puede necesitar algunos para la conectividad de red en los dispositivos de Escritorio administrado de Microsoft. Para obtener más información, vea Preparar certificados [y perfiles de red para escritorio administrado de Microsoft.](certs-wifi-lan.md)
 
 **Aviso**
 
-Al menos un conector de certificado tiene un error. Si necesita este conector para la conectividad a dispositivos de Escritorio administrado de Microsoft, debe resolver el error. Para obtener más información, vea Preparar certificados [y perfiles de red para escritorio administrado de Microsoft.](certs-wifi-lan.md)
+Al menos un conector de certificado tiene un error. Si necesita este conector para proporcionar certificados a dispositivos de Escritorio administrado de Microsoft, debe resolver el error. Para obtener más información, vea Preparar certificados [y perfiles de red para escritorio administrado de Microsoft.](certs-wifi-lan.md)
 
 
 **Aviso**
 
-Tiene al menos un conector de certificado y no se notifican errores. Sin embargo, es posible que deba crear un perfil para volver a usar el conector para dispositivos de Escritorio administrado de Microsoft. Para obtener más información, vea Preparar certificados [y perfiles de red para escritorio administrado de Microsoft.](certs-wifi-lan.md)
+Tiene al menos un conector de certificado y no se notifican errores. Sin embargo, en preparación para la implementación, es posible que deba crear un perfil para volver a usar el conector para dispositivos de escritorio administrado de Microsoft. Para obtener más información, vea Preparar certificados [y perfiles de red para escritorio administrado de Microsoft.](certs-wifi-lan.md)
 
 
 ### <a name="conditional-access-policies"></a>Directivas de acceso condicional
 
-Las directivas de acceso condicional de la organización de Azure AD no deben dirigirse a ningún usuario de Microsoft Manage Desktop.
+Las directivas de acceso condicional de la organización de Azure AD no deben dirigirse a ninguna cuenta de servicio de Administración de escritorio de Microsoft.
 
 **No preparado**
 
-Tiene al menos una directiva de acceso condicional dirigida a todos los usuarios. Restablezca la directiva para dirigirse a un grupo específico de Azure AD que no incluya el grupo de Azure AD de las cuentas de servicio de Escritorio administrado de Microsoft que se crearán durante la inscripción. Para ver los pasos, [vea Acceso condicional: usuarios y grupos.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)
+Tiene al menos una directiva de acceso condicional dirigida a todos los usuarios. Modifique la directiva para dirigirse a un grupo específico de Azure AD que no incluya el grupo de Azure AD de cuentas de servicio de Escritorio administrado de Microsoft que se crearán durante la inscripción. Para ver los pasos, [vea Acceso condicional: usuarios y grupos.](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)
 
 **Aviso**
 
-Asegúrese de que todas las directivas de acceso condicional que tenga excluyan el grupo cuentas de servicio de Área de trabajo **modernas** de Azure AD. Para ver los pasos, vea [Ajustar el acceso condicional.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access) El **grupo cuentas de servicio de** Área de trabajo modernas de Azure AD es un grupo dinámico que creamos para el servicio cuando se inscribe. Tendrás que volver para excluir este grupo después de la inscripción. Para obtener más información acerca de estas cuentas de servicio, vea [Procedimientos operativos estándar.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Asegúrese de que las directivas de acceso condicional que tenga excluyan el grupo cuentas de servicio de Área de trabajo **modernas** de Azure AD. Para ver los pasos, vea [Ajustar el acceso condicional.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access) El **grupo cuentas de servicio de** área de trabajo modernas de Azure AD es un grupo dinámico que creamos para el servicio cuando se inscribe. Tendrás que volver para excluir este grupo después de la inscripción. Para obtener más información acerca de estas cuentas de servicio, vea [Procedimientos operativos estándar.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Error**
 
@@ -91,29 +91,29 @@ El rol de administrador de Intune no tiene permisos suficientes para esta compro
 
 ### <a name="device-compliance-policies"></a>Directivas de cumplimiento de dispositivos
 
-Las directivas de cumplimiento de dispositivos de Intune en la organización de Azure AD no deben dirigirse a ningún usuario de Escritorio administrado de Microsoft.
+Las directivas de cumplimiento de dispositivos de Intune en la organización de Azure AD pueden afectar a los dispositivos de Escritorio administrado de Microsoft.
 
 **No preparado**
 
-Tiene al menos una directiva de cumplimiento que está dirigida a todos los usuarios. Restablezca la directiva para dirigirse a un grupo específico de Azure AD que no incluya ningún usuario de Escritorio administrado de Microsoft. Para ver los pasos, [consulte Crear una directiva de cumplimiento en Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
+Tiene al menos una directiva de cumplimiento que está dirigida a todos los usuarios. Escritorio administrado de Microsoft incluye directivas de cumplimiento destinadas a los dispositivos de Escritorio administrado de Microsoft.  Cambie la directiva para dirigirse a un grupo específico de Azure AD que no incluya ningún dispositivo o usuario de Escritorio administrado de Microsoft. Para ver los pasos, [consulte Crear una directiva de cumplimiento en Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
 
 **Aviso**
 
-Asegúrese de que las directivas de cumplimiento que tenga no incluyan ningún usuario de Escritorio administrado de Microsoft. Para ver los pasos, [consulte Crear una directiva de cumplimiento en Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
+Asegúrese de que las directivas de cumplimiento que tenga no tengan como destino ningún usuario de Escritorio administrado de Microsoft. Para ver los pasos, [consulte Crear una directiva de cumplimiento en Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
 
 
 
-### <a name="device-configuration-policies"></a>Directivas de configuración de dispositivos
+### <a name="device-configuration-profiles"></a>Perfiles de configuración de dispositivos
 
-Las directivas de configuración de dispositivos de Intune en la organización de Azure AD no deben dirigirse a ningún dispositivo o usuario de Microsoft Manage Desktop.
+Los perfiles de configuración de dispositivos de Intune en la organización de Azure AD no deben dirigirse a ningún dispositivo o usuario de Microsoft Manage Desktop.
 
 **No preparado**
 
-Tiene al menos una directiva de configuración dirigida a todos los usuarios, todos los dispositivos o ambos. Restablezca la directiva para dirigirse a un grupo específico de Azure AD que no incluya ningún dispositivo de Escritorio administrado de Microsoft. Para ver los pasos, [consulte Crear una directiva de cumplimiento en Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Tiene al menos un perfil de configuración que está dirigido a todos los usuarios, todos los dispositivos o ambos. Restablezca el perfil para dirigirse a un grupo específico de Azure AD que no incluya ningún dispositivo de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Crear un perfil con configuración personalizada en Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 **Aviso**
 
-Asegúrese de que las directivas de cumplimiento que tenga no incluyan ningún dispositivo o usuario de Escritorio administrado de Microsoft. Para ver los pasos, [consulte Crear una directiva de cumplimiento en Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Asegúrese de que las directivas de configuración que tenga no incluyan ningún dispositivo o usuario de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Crear un perfil con configuración personalizada en Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 
 
@@ -123,12 +123,12 @@ Los dispositivos de Escritorio administrado de Microsoft deben tener permiso par
 
 **No preparado**
 
-Siga los pasos descritos en [Establecer restricciones de inscripción](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) para cambiar la configuración a **Permitir.**
+Actualmente tiene al menos una directiva de restricción de inscripción configurada para impedir que los dispositivos Windows se insinste en Intune. Sigue los pasos descritos en [Establecer restricciones](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) de inscripción para cada directiva de restricción de inscripción dirigida a los usuarios de Escritorio administrado de Microsoft y cambia la configuración de **Windows (MDM)** a **Permitir.** Sin embargo, puedes establecer cualquier dispositivo de **Windows (MDM)** de propiedad **personal** en **Bloquear.** 
 
 
 ### <a name="enrollment-status-page"></a>Página de estado de inscripción
 
-Actualmente tiene habilitada la página de estado de inscripción (ESP). Si participa en la vista previa pública de esta característica, puede omitir este elemento. Para obtener más información, consulta [la experiencia de primera ejecución con Autopilot y la página de estado de inscripción.](../get-started/esp-first-run.md)
+Actualmente tiene habilitada la página de estado de inscripción (ESP). Si desea participar en la vista previa pública de Escritorio administrado de Microsoft de esta característica, puede omitir este elemento. Para obtener más información, consulta [la experiencia de primera ejecución con Autopilot y la página de estado de inscripción.](../get-started/esp-first-run.md)
 
 **No preparado**
 
@@ -138,18 +138,9 @@ Tiene el perfil predeterminado ESP establecido en **Mostrar el progreso de la co
 
 Asegúrate de que los perfiles que tengan la configuración mostrar la aplicación y el progreso de la configuración de perfiles no estén asignados a ningún grupo de Azure AD que incluya dispositivos de Escritorio administrado de Microsoft.  Para obtener más información, consulta [Configurar la página de estado de inscripción.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
 
-### <a name="intune-enrollment"></a>Inscripción de Intune
-
-Los dispositivos Windows 10 de la organización de Azure AD deben inscribirse automáticamente en Intune.
-
-**Aviso**
-
-Asegúrate de que el ámbito de usuario de MDM esté establecido en **Algunos** o **todos,** no **en Ninguno.** Si elige **Algunos,** vuelva después de la inscripción y seleccione el grupo **Modern Workplace -All** Azure AD para **Grupos.**
-
-
 ### <a name="microsoft-store-for-business"></a>Microsoft Store para Empresas
 
-Usamos la Microsoft Store para Empresas para que puedas descargar el Portal de empresa para implementar algunas aplicaciones, como Microsoft Project y Microsoft Visio.
+Usamos la Microsoft Store para Empresas e implementamos la aplicación Portal de empresa en escritorio administrado de Microsoft para permitir a los usuarios instalar opcionalmente algunas aplicaciones, como Microsoft Project y Microsoft Visio (cuando se permite).
 
 **No preparado**
 
@@ -157,16 +148,16 @@ La Microsoft Store para Empresas no está habilitada o no está sincronizada con
 
 ### <a name="multifactor-authentication"></a>Autenticación multifactor
 
-La autenticación multifactor no se debe aplicar accidentalmente a las cuentas de servicio de Escritorio administrado de Microsoft.
+No se debe aplicar la autenticación multifactor a las cuentas de servicio de Escritorio administrado de Microsoft.
 
 
 **No preparado**
 
-Tiene algunas directivas de autenticación multifactor (MFA) establecidas como "necesarias" para las directivas de acceso condicional asignadas a todos los usuarios. Cambia la directiva para usar una asignación dirigida a un grupo específico de Azure AD que no incluya ningún dispositivo de Escritorio administrado de Microsoft. Para obtener más información, vea [Directivas de acceso condicional](#conditional-access-policies) y Acceso [condicional: Requerir MFA para todos los usuarios.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+Tiene algunas directivas de autenticación multifactor establecidas según **sea necesario** para las directivas de acceso condicional asignadas a todos los usuarios. Cambie la directiva para usar una asignación dirigida a un grupo específico de Azure AD que no incluya ninguna cuenta de servicio de Escritorio administrado de Microsoft. Para obtener más información, vea [Directivas de acceso condicional](#conditional-access-policies) y Acceso [condicional: Requerir MFA para todos los usuarios.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
 
 **Aviso**
 
-Asegúrese de que cualquier directiva de acceso condicional que requiera MFA excluya el **grupo Modern Workplace -All** Azure AD. Para obtener más información, vea [Directivas de acceso condicional](#conditional-access-policies) y Acceso [condicional: Requerir MFA para todos los usuarios.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) El **grupo Modern Workplace -All** Azure AD es un grupo dinámico que creamos cuando te inscribes en el Escritorio administrado de Microsoft, por lo que tendrás que volver para excluir este grupo después de la inscripción.
+Asegúrese de que cualquier directiva de acceso condicional que requiera autenticación multifactor excluya el grupo **Modern Workplace -All** Azure AD. Para obtener más información, vea [Directivas de acceso condicional](#conditional-access-policies) y acceso [condicional: Requerir MFA para todos los usuarios.](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) El **grupo Modern Workplace -All** Azure AD es un grupo dinámico que creamos cuando te inscribes en el Escritorio administrado de Microsoft, por lo que tendrás que volver para excluir este grupo después de la inscripción.
 
 **Error**
 
@@ -185,7 +176,7 @@ Windows PowerShell los scripts no se pueden asignar de forma que se desasigne a 
 
 **Aviso**
 
-Asegúrese de que Windows PowerShell scripts de la organización de Azure AD no se dirige a ningún dispositivo o usuario de Microsoft Manage Desktop. No asigne un script de PowerShell para dirigirse a todos los usuarios, todos los dispositivos o ambos. Cambia la directiva para usar una asignación dirigida a un grupo específico de Azure AD que no incluya ningún dispositivo de Escritorio administrado de Microsoft. Para obtener más información, vea [Usar scripts de PowerShell en dispositivos con Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
+Asegúrese de que Windows PowerShell scripts de la organización de Azure AD no se dirige a ningún dispositivo o usuario de Microsoft Manage Desktop. No asigne un script de PowerShell para dirigirse a todos los usuarios, todos los dispositivos o ambos. Cambie la directiva para usar una asignación dirigida a un grupo específico de Azure AD que no incluya ningún dispositivo o usuario de Escritorio administrado de Microsoft. Para obtener más información, consulta [Usar scripts de PowerShell en dispositivos windows 10 en Intune.](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)
 
 ### <a name="region"></a>Región
 
@@ -193,11 +184,11 @@ Su región debe ser compatible con el Escritorio administrado de Microsoft.
 
 **No preparado**
 
-La región de la organización de Azure AD no es compatible actualmente con escritorio administrado de Microsoft. Para obtener más información, vea [idiomas y regiones compatibles con](../service-description/regions-languages.md)Escritorio administrado de Microsoft.
+La región de la organización de Azure AD no es compatible actualmente con escritorio administrado de Microsoft. Para obtener más información, vea [idiomas y regiones compatibles con](../service-description/regions-languages.md)escritorio administrado de Microsoft.
 
 **Aviso**
 
-Uno o varios de los países donde se encuentra la organización de Azure AD no son compatibles con el Escritorio administrado de Microsoft. Para obtener más información, vea [idiomas y regiones compatibles con](../service-description/regions-languages.md)Escritorio administrado de Microsoft.
+Uno o varios de los países donde se encuentra la organización de Azure AD no es compatible con el Escritorio administrado de Microsoft. Para obtener más información, vea [idiomas y regiones compatibles con](../service-description/regions-languages.md)escritorio administrado de Microsoft.
 
 
 ### <a name="security-baselines"></a>Líneas base de seguridad
@@ -210,7 +201,7 @@ Tienes un perfil de línea base de seguridad dirigido a todos los usuarios, todo
 
 **Aviso**
 
-Asegúrese de que las directivas de línea base de seguridad que haya excluido los dispositivos de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Usar líneas base de seguridad para configurar dispositivos Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) El **grupo Dispositivos de área** de trabajo modernos: todos los grupos de Azure AD es un grupo dinámico que creamos cuando se inscribe en el Escritorio administrado de Microsoft, por lo que tendrá que volver para excluir este grupo después de la inscripción.
+Asegúrese de que las directivas de línea base de seguridad que haya excluido los dispositivos de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Usar líneas base de seguridad para configurar dispositivos Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) El **grupo Modern Workplace Devices -All** Azure AD es un grupo dinámico que creamos cuando te inscribes en el Escritorio administrado de Microsoft, por lo que tendrás que volver para excluir este grupo después de la inscripción.
 
 
 ### <a name="windows-apps"></a>Aplicaciones de Windows
@@ -219,7 +210,7 @@ Revise las aplicaciones que desea que tengan los usuarios de Escritorio administ
 
 **Aviso**
 
-Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de Escritorio administrado de Microsoft. Dado que Intune debe implementar estas aplicaciones, evalúa la reusación de las aplicaciones existentes de Intune. Considera la posibilidad de usar el Portal de empresa (consulta Instalar el Portal de empresa [de Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) en dispositivos y la página de estado de inscripción (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea Aplicaciones en escritorio administrado de [Microsoft](apps.md) y experiencia de primera ejecución [con Autopilot y la página estado de inscripción.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
+Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de Escritorio administrado de Microsoft. Dado que Intune debe implementar estas aplicaciones, evalúa volver a usar las aplicaciones existentes de Intune. Considera la posibilidad de usar el Portal de empresa (consulta Instalar el Portal de empresa [de Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) en dispositivos y la página de estado de inscripción (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea Aplicaciones en escritorio administrado de [Microsoft](apps.md) y experiencia de primera ejecución [con Autopilot y la página estado de inscripción.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
 
 Puedes solicitar al representante de tu cuenta de Microsoft una consulta en Microsoft Endpoint Configuration Manager para identificar las aplicaciones que están listas para migrar a Intune o que necesitan ajustes.
 
@@ -247,12 +238,21 @@ Tienes una directiva de "anillo de actualización" dirigida a todos los disposit
 
 **Aviso**
 
-Asegúrese de que cualquier directiva de anillo de actualización que tenga excluya el grupo Dispositivos de Área de **trabajo modernos: todos los** grupos de Azure AD. Si ha asignado un grupo de usuarios de Azure AD a estas directivas, asegúrese de que cualquier directiva de anillo de actualización que también haya excluido el grupo **Modern Workplace -All** Azure AD que incluya a los usuarios de Escritorio administrado de Microsoft. Para ver los pasos, consulta Administrar actualizaciones de software de [Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Tanto los dispositivos de área de trabajo modernos **-Todos** como los grupos de **Área** de trabajo moderna: todos los grupos de Azure AD se asignan a los grupos que creamos cuando se inscribe en el Escritorio administrado de Microsoft, por lo que tendrá que volver para excluir este grupo después de la inscripción.
+Asegúrese de que cualquier directiva de anillo de actualización que tenga excluya el grupo Dispositivos de Área de **trabajo modernos: todos los** grupos de Azure AD. Si has asignado grupos de usuarios de Azure AD a estas directivas, asegúrate de que cualquier directiva de anillo de actualización que también haya excluido el grupo **Modern Workplace -All** Azure AD al que agregas los usuarios de Escritorio administrado de Microsoft (o un grupo equivalente). Para ver los pasos, consulta Administrar actualizaciones de software de [Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Tanto los dispositivos de área de trabajo modernos **:todos** como los grupos de **Azure** AD son grupos que creamos cuando se inscribe en el escritorio administrado de Microsoft, por lo que tendrá que volver para excluir este grupo después de la inscripción.
 
 
 ## <a name="azure-active-directory-settings"></a>Configuración de Azure Active Directory
 
 Puede acceder a la configuración de Azure Active Directory en [Azure Portal.](https://portal.azure.com)
+
+### <a name="intune-enrollment"></a>Inscripción de Intune
+
+Los dispositivos Windows 10 de la organización de Azure AD deben poder inscribirse automáticamente en Intune.
+
+**Aviso**
+
+Asegúrate de que **el ámbito de usuario de MDM** esté establecido en **Algunos** o **todos,** no en **Ninguno.** Si elige **Algunos,** vuelva después de la inscripción y seleccione  el grupo **Modern Workplace -All** Azure AD para grupos o un grupo equivalente destinado a todos los usuarios de Escritorio administrado de Microsoft.  Consulta [Configurar la inscripción para dispositivos Windows con Microsoft Intune.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+
 
 ### <a name="ad-hoc-subscriptions"></a>Suscripciones ad hoc
 
@@ -277,7 +277,7 @@ Se requieren varias licencias para usar el Escritorio administrado de Microsoft.
 
 **No listo**
 
-No tiene todas las licencias que necesita para usar escritorio administrado de Microsoft. Para obtener más información, vea [Tecnologías de Escritorio administrado de Microsoft](../intro/technologies.md) y Más información sobre [licencias.](prerequisites.md#more-about-licenses)
+No tiene todas las licencias que necesita para usar el Escritorio administrado de Microsoft. Para obtener más información, vea [Tecnologías de Escritorio administrado de Microsoft](../intro/technologies.md) y Más información sobre las [licencias.](prerequisites.md#more-about-licenses)
 
 
 ### <a name="security-account-names"></a>Nombres de cuenta de seguridad
@@ -313,16 +313,16 @@ Tiene activados los valores predeterminados de seguridad. Desactive los valores 
 
 ### <a name="self-service-password-reset"></a>Autoservicio de restablecimiento de contraseña
 
-El autoservicio de restablecimiento de contraseña (SSPR) debe estar habilitado para todos los usuarios de Escritorio administrado de Microsoft, excepto las cuentas de servicio de Escritorio administrado de Microsoft. Para obtener más información, vea tutorial: Permitir a los usuarios desbloquear su cuenta o restablecer contraseñas mediante el restablecimiento de contraseña de autoservicio de [Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
+El autoservicio de restablecimiento de contraseña (SSPR) se puede habilitar para todos los usuarios de Escritorio administrado de Microsoft, excepto las cuentas de servicio de Escritorio administrado de Microsoft. Para obtener más información, vea tutorial: Permitir a los usuarios desbloquear su cuenta o restablecer contraseñas mediante el restablecimiento de contraseña de autoservicio de [Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
 
 **Aviso**
 
-Asegúrese de que la  configuración seleccionada del SSPR incluya dispositivos de Escritorio administrado de Microsoft, pero excluya las cuentas de servicio de Escritorio administrado de Microsoft. Las cuentas de servicio de Escritorio administrado de Microsoft no pueden funcionar como se esperaba cuando SSPR está habilitado.  
+Asegúrese de que la  configuración seleccionada de SSPR incluya usuarios de Escritorio administrado de Microsoft, pero excluya las cuentas de servicio de Escritorio administrado de Microsoft. Las cuentas de servicio de Escritorio administrado de Microsoft no pueden funcionar como se esperaba cuando SSPR está habilitado.  
 
 
 ### <a name="standard-user-role"></a>Rol de usuario estándar
 
-Aparte de los usuarios que tienen asignados roles de Administrador global y Administrador de dispositivos de Azure AD, los usuarios de Escritorio administrado de Microsoft serán usuarios estándar sin privilegios de administrador local. Al resto de usuarios se les asignará un rol de usuario estándar cuando inicien su dispositivo de Escritorio administrado de Microsoft.
+Aparte de los usuarios que tienen asignados roles de Administrador global y Administrador de dispositivos de Azure AD, los usuarios de Escritorio administrado de Microsoft serán usuarios estándar sin privilegios de administrador local. A todos los demás usuarios se les asignará un rol de usuario estándar cuando inicien su dispositivo de Escritorio administrado de Microsoft.
 
 **Aviso**
 

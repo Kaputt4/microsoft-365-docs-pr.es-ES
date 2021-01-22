@@ -1,5 +1,5 @@
 ---
-title: Crear firmas y avisos de declinación de responsabilidad en toda la organización
+title: Crear firmas y avisos de declinación de responsabilidades en toda la organización
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -18,33 +18,34 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Obtenga información sobre cómo administrar firmas de correo electrónico, incluidas las declinaciones legales o las declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: 9e438b42eb95dced4c3b99d21c66011365b180c9
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Aprenda a administrar firmas de correo electrónico, incluidos avisos de declinación de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
+ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906506"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926923"
 ---
-# <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidad en toda la organización
+# <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
- Puede administrar firmas de correo electrónico si agrega una firma de correo electrónico, un aviso de declinación de responsabilidades o una declaración de divulgación a los mensajes de correo electrónico que entran o salen de la organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
+ Puede administrar firmas de correo electrónico agregando una firma de correo electrónico, un aviso de declinación de responsabilidades legales o una declaración de divulgación a los mensajes de correo electrónico que entran o salen de la organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
 
- Vea un breve vídeo sobre cómo crear una firma de correo electrónico de toda la empresa. <br><br>
+ Vea un breve vídeo sobre la creación de una firma de correo electrónico en toda la empresa. <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Crear una firma que se aplique a todos los mensajes
 
 > [!TIP]
-> Las firmas de toda la organización se denominan "declinación de responsabilidad", independientemente de lo que incluyan. Por ejemplo, pueden ser simplemente una firma o incluir su dirección, la declinación de responsabilidades legal u otra información que desee.
+> Las firmas de toda la organización se denominan "avisos de declinación de responsabilidades", independientemente de lo que incluyan. Por ejemplo, solo pueden ser una firma o también incluir su dirección, aviso legal u otra información que desee.
     
 ::: moniker range="o365-worldwide"
 
@@ -64,33 +65,33 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 ::: moniker-end
 
-1. Seleccione el iniciador ![ de aplicaciones el icono del iniciador de aplicaciones ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y, a continuación, seleccione **Administración**.
+1. Seleccione el iniciador de ![ aplicaciones El icono del iniciador de aplicaciones ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y, a continuación, **seleccione Administrador.**
    
-    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles para usted. Ahí podrá buscar una aplicación específica. 
+    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, **selecciona Todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles. Ahí podrá buscar una aplicación específica. 
     
-2. Seleccione **centros de administración** y, a continuación, elija **Exchange**.
+2. Seleccione **Centros de administración** y, a continuación, elija **Exchange**.
     
-3. En flujo de correo, seleccione **reglas**.
+3. En Flujo de correo, seleccione **Reglas**.
     
-4. Seleccione el **+** icono (agregar) y elija **aplicar avisos de declinación de responsabilidad**.
+4. Seleccione el **+** icono (Agregar) y elija **Aplicar avisos de declinación de responsabilidades.**
     
 5. Asigne un nombre a la regla.
     
-6. En **aplicar esta regla** , seleccione **[aplicar a todos los mensajes]**.
+6. En **Aplicar esta regla,** seleccione **[Aplicar a todos los mensajes]**.
     
     > [!TIP]
     > [Obtenga más información](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sobre cómo especificar condiciones si no quiere que el aviso de declinación de responsabilidades se aplique a todos los mensajes. (Este artículo de ámbito es para Exchange Server, pero también se aplica a Microsoft 365). 
   
 7. En Realizar lo siguiente, deje la opción **Anexar el aviso de declinación de responsabilidades** seleccionada. 
     
-8.  Seleccione **escribir texto** y escriba el aviso de declinación de responsabilidades. 
+8.  Seleccione **Escribir texto y** escriba el aviso de declinación de responsabilidades. 
     
     > [!TIP]
     > [Obtenga más información](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sobre cómo aplicar formato a los avisos de declinación de responsabilidades. (Este artículo de formato es para Exchange Server, pero también se aplica a Microsoft 365). 
 
-9. Seleccione **seleccionar una** y elija **ajustar** como opción de reserva. Después, seleccione **Aceptar**. Esto significa que, si no se puede agregar el aviso de declinación de responsabilidades debido al cifrado o a otra configuración del correo, este se ajustará en un sobre de mensajes.
+9. Seleccione **Seleccionar una y** elija **Ajustar** como opción de reserva. Después, seleccione **Aceptar**. Esto significa que, si no se puede agregar el aviso de declinación de responsabilidades debido al cifrado o a otra configuración del correo, este se ajustará en un sobre de mensajes.
     
-10. Deje la opción **Auditar esta regla con nivel de gravedad** seleccionada. Después, elija qué opción quiere usar en el registro de mensajes: **Bajo** , **Medio** o **Alto**. 
+10. Deje la opción **Auditar esta regla con nivel de gravedad** seleccionada. Después, elija qué opción quiere usar en el registro de mensajes: **Bajo**, **Medio** o **Alto**. 
     
 11. Elija **Exigir** para activar el aviso de declinación de responsabilidades inmediatamente, a menos que quiera probarlo primero. 
     
@@ -102,16 +103,16 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 No puede hacer lo siguiente al administrar firmas de correo electrónico en Microsoft 365:
   
-- Insertar la firma directamente bajo la última respuesta de correo electrónico o reenvío
+- Insertar la firma directamente debajo de la respuesta o reenvío de correo electrónico más reciente
     
-- Mostrar firmas de correo electrónico del servidor en las carpetas de elementos enviados de los usuarios
+- Mostrar firmas de correo electrónico del lado servidor en las carpetas Elementos enviados de los usuarios
     
 - Insertar imágenes en firmas de correo electrónico
     
-- Saltar líneas que contienen variables que no se pudieron actualizar (por ejemplo, porque el valor no se proporcionó para un usuario)
+- Omitir líneas que contienen variables que no se pudieron actualizar (por ejemplo, porque no se proporcionó el valor para un usuario)
     
-Para obtener estas y otras funciones para administrar firmas de correo electrónico, use una herramienta de terceros. Realice una búsqueda en Internet de **software de firma de correo electrónico**. Varios de estos proveedores son Partners Gold de Microsoft y su software proporciona estas capacidades. 
+Para obtener estas y otras capacidades para administrar firmas de correo electrónico, use una herramienta de terceros. Realice una búsqueda en Internet del **software de firma de correo electrónico.** Varios de estos proveedores son socios Gold de Microsoft y su software proporciona estas capacidades. 
   
 ## <a name="more-resources"></a>Más recursos
 
-- Vea [avisos de declinación de responsabilidad de mensajes en toda la organización, firmas, pies de página o encabezados en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) para obtener información sobre el uso de PowerShell.
+- Consulte avisos de declinación de responsabilidades [de mensajes, firmas,](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) pies de página o encabezados en toda la organización en Exchange Online para obtener información sobre el uso de PowerShell.

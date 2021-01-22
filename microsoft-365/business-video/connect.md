@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aprende a conectar el equipo a Microsoft 365 empresa.
-ms.openlocfilehash: 715f20ecd8f10d3d21fbdfac2953369504f02dec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Aprende a conectar tu equipo a Microsoft 365 Empresa.
+ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49703024"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927315"
 ---
-# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Conectar el equipo a Microsoft 365 empresa Premium
+# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Conectar el equipo a Microsoft 365 Empresa Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>¿Se atreve?
-Después de configurar Microsoft 365 Business Premium (anteriormente conocido como Microsoft 365 Business), usted y sus empleados deben realizar algunos pasos para sacar el máximo provecho de sus características de seguridad y administración. Aquí&#39;s cómo.
+Después de configurar Microsoft 365 Empresa Premium (anteriormente conocido como Microsoft 365 Empresa), usted y sus empleados deben completar algunos pasos para aprovechar al máximo sus características de seguridad y administración. Aquí&#39;cómo hacerlo.
 
-En primer lugar, compruebe que tiene instalado Windows 10 Pro:
+En primer lugar, comprueba que tienes instalado Windows 10 Pro:
 
-1. Elija  **Inicio** , buscar  **Panel de control** y, a continuación, selecciónelo.
-2. Elija **sistema y seguridad**   >    , y confirme la edición de Windows.
+1. Elija  **Inicio,** busque  **el Panel de control** y selecciónelo.
+2. Elige **Sistema y Sistema de**   >   **seguridad** y confirma la edición de Windows.
 
-A continuación, conéctese a Microsoft 365 Business:
+A continuación, conéctese a Microsoft 365 Empresa:
 
-1. Seleccione  **Inicio** y, a continuación, seleccione el icono de  **configuración** .
-2. Seleccione **cuentas**  >   :**acceso a trabajo o escuela**   >   **Connect**.
-3. Seleccione  **unirse a este dispositivo a Azure Active Directory**.
-4. Escriba la dirección de correo electrónico de su cuenta de Microsoft 365 y seleccione  **siguiente**.
-5. Escriba su contraseña, seleccione  **iniciar sesión** y, a continuación, compruebe que se ha unido a la organización correcta.
-6. Seleccione  **unirse** y, después, haga clic en  **listo**.
+1. Seleccione  **Inicio** y, a continuación, seleccione el  **icono** Configuración.
+2. Seleccione   >   **Conectarse a la escuela o trabajo de Acceso a**   >   **cuentas.**
+3. Seleccione **Unir este dispositivo a Azure Active Directory.**
+4. Escriba la dirección de correo electrónico de su cuenta de Microsoft 365 y seleccione **Siguiente.**
+5. Escriba su contraseña, seleccione  **Iniciar sesión** y, a continuación, compruebe que se está uniendo a la organización correcta.
+6. Seleccione **Unirse** y, a continuación, **Seleccione Listo.**
 
-En función de cómo haya configurado su compañía Microsoft 365 Business, es posible que vea una notificación para cifrar el equipo. Para cifrar tu PC:
+Dependiendo de cómo la empresa configure Microsoft 365 Empresa, es posible que veas una notificación para cifrar el equipo. Para cifrar el equipo:
 
-1. Seleccione el mensaje de  **cifrado necesario**  .
-2. Seleccione  **no&#39;t ningún otro software de cifrado de disco instalado, cifre todos los discos** y, a continuación, seleccione  **sí**. Verá una ventana de  **Inicio de BitLocker**  con una barra de progreso.
-3. En la ventana  **elegir cómo desbloquear la unidad en el inicio**  , seleccione **escribir un PIN (recomendado)**.
-4. Escriba el PIN y, a continuación, vuelva a escribirlo para comprobarlo. Seleccione  **establecer PIN**.
-5. Elija un método para guardar una clave de recuperación de cifrado y, a continuación, seleccione  **siguiente**.
-6. Elige qué parte de la unidad deseas cifrar y, a continuación, selecciona  **siguiente**.
-7. Elija un modo de cifrado, seleccione  **siguiente** y, después, haga clic en  **continuar**. La unidad se cifrará ahora. Puede seguir trabajando durante el proceso de cifrado.
+1. Seleccione el  **mensaje de cifrado**  necesario.
+2. Seleccione No&#39;ningún otro software de cifrado de  **disco instalado,** cifre todos los discos y, a continuación, seleccione  **Sí**. Verás una ventana  **de Inicio de BitLocker**  con una barra de progreso.
+3. En la **ventana Elegir cómo desbloquear la unidad** en el inicio, seleccione Escribir un PIN **(recomendado).**
+4. Escribe el PIN y, a continuación, vuelve a escribirlo para comprobarlo. Seleccione **Establecer PIN.**
+5. Elija un método para guardar una clave de recuperación de cifrado y, a continuación, seleccione  **Siguiente**.
+6. Elija la cantidad de la unidad que desea cifrar y, a continuación, **seleccione Siguiente.**
+7. Elija un modo de cifrado,  **seleccione Siguiente** y, a continuación,  **seleccione Continuar**. La unidad se cifrará ahora. Puede seguir trabajando durante el proceso de cifrado.
 
-Su equipo ahora está protegido y administrado por Microsoft 365 Business.
+El equipo ahora está protegido y administrado por Microsoft 365 Empresa.

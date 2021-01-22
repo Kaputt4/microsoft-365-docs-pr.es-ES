@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Pruebe estas soluciones si experimenta problemas con los buzones compartidos.
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Pruebe estas soluciones si tiene problemas con buzones compartidos.
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445512"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926491"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 
-Si ve mensajes de error al crear o usar un buzón compartido, Pruebe estas soluciones posibles. 
+Si ve mensajes de error al crear o usar un buzón compartido, pruebe estas posibles soluciones. 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>Error al crear buzones compartidos
 <a name="bkmk_Fix"> </a>
 
-Si ve el mensaje de error, la dirección del proxy **"SMTP: <nombre del buzón compartido \> " ya está siendo usada por las direcciones de proxy o legacyExchangeDN de " \<name> ". Elija otra dirección de proxy**, significa que está intentando dar al buzón compartido un nombre que ya está en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Puede realizar esto de dos maneras:
+Si ve el mensaje de error, la dirección proxy "smtp:<shared mailbox name " ya está siendo utilizada por las direcciones proxy o **\> LegacyExchangeDN de " \<name> ". Please choose another proxy address**, it means you're trying to give the shared mailbox a name that's already in use. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Puede realizar esto de dos maneras:
 
-  - Use Windows PowerShell. Vea esta entrada de blog para obtener instrucciones: [crear buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Use Windows PowerShell. Consulte esta entrada de blog para obtener instrucciones: Crear buzones [compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Asigne al segundo buzón compartido un nombre distinto del inicio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que desee.
+  - Asigne al segundo buzón compartido un nombre diferente del principio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que desea que sea.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Error al no tener permisos de envío al usar un buzón compartido
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Error sobre no tener permisos de envío al usar un buzón compartido
 
-Si ha creado un buzón compartido y, a continuación, intenta enviarle un mensaje, es posible que obtenga esto:
+Si creó un buzón compartido y, a continuación, intenta enviar un mensaje desde él, es posible que obtenga esto:
 
 **No se pudo enviar este mensaje. No tiene permiso para enviar el mensaje en nombre del usuario especificado.**
 
-Este mensaje aparece cuando Microsoft 365 experimenta un problema de latencia de replicación. Debe desaparecer en una hora o por lo tanto, cuando la información sobre su nuevo buzón compartido (o usuario agregado) se replique en todos nuestros centros de datos. Espere una hora y vuelva a intentar enviar un mensaje.
+Este mensaje aparece cuando Microsoft 365 está experimentando un problema de latencia de replicación. Debería desaparecer en una hora aproximadamente, cuando la información sobre el nuevo buzón compartido (o usuario agregado) se replique en todos nuestros centros de datos. Espere una hora y vuelva a intentarlo para enviar un mensaje.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
