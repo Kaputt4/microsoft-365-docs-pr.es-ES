@@ -1,5 +1,5 @@
 ---
-title: Regístrese para obtener una suscripción a Microsoft 365 empresa Premium
+title: Registrarse para la suscripción a Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,34 +16,35 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo suscribirse a Microsoft 365 empresa Premium.
-ms.openlocfilehash: 8026213b630d444e3611808082cdce4b084136d5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Obtenga información sobre cómo registrarse en Microsoft 365 Empresa Premium.
+ms.openlocfilehash: a2b632d0adfa0cfaf0ae2cebc20ec2642a3ceb48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702597"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925903"
 ---
-# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a><span data-ttu-id="b6948-103">Regístrese para obtener una suscripción a Microsoft 365 empresa Premium</span><span class="sxs-lookup"><span data-stu-id="b6948-103">Sign up for Microsoft 365 Business Premium subscription</span></span>
+# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a><span data-ttu-id="b3e92-103">Registrarse para la suscripción a Microsoft 365 Empresa Premium</span><span class="sxs-lookup"><span data-stu-id="b3e92-103">Sign up for Microsoft 365 Business Premium subscription</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="b6948-104">¿Se atreve?</span><span class="sxs-lookup"><span data-stu-id="b6948-104">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="b3e92-104">¿Se atreve?</span><span class="sxs-lookup"><span data-stu-id="b3e92-104">Try it!</span></span>
 
-<span data-ttu-id="b6948-105">Siga estos pasos para registrarse en Microsoft 365 empresa Premium (anteriormente denominada Microsoft 365 Business):</span><span class="sxs-lookup"><span data-stu-id="b6948-105">Follow these steps to sign up for Microsoft 365 Business Premium (previously called Microsoft 365 Business):</span></span>
+<span data-ttu-id="b3e92-105">Siga estos pasos para registrarse en Microsoft 365 Empresa Premium (anteriormente denominado Microsoft 365 Empresa):</span><span class="sxs-lookup"><span data-stu-id="b3e92-105">Follow these steps to sign up for Microsoft 365 Business Premium (previously called Microsoft 365 Business):</span></span>
 
-1. <span data-ttu-id="b6948-106">Para suscribirse a Microsoft 365 empresa Premium, busque en línea y selecciónelo.</span><span class="sxs-lookup"><span data-stu-id="b6948-106">To sign up for Microsoft 365 Business Premium, search for it online, and select it.</span></span>
-2. <span data-ttu-id="b6948-107">Elija  **para empresas** y luego  **Compre ahora**.</span><span class="sxs-lookup"><span data-stu-id="b6948-107">Choose  **For business** , and then  **Buy now**.</span></span>
-3. <span data-ttu-id="b6948-108">Escriba su dirección de correo electrónico personal, seleccione  **siguiente** y, después,  **configurar cuenta**.</span><span class="sxs-lookup"><span data-stu-id="b6948-108">Enter your personal email address, select  **Next** , and then  **Set up account**.</span></span>
-4. <span data-ttu-id="b6948-109">Escriba su nombre, número de teléfono y nombre de la compañía.</span><span class="sxs-lookup"><span data-stu-id="b6948-109">Enter your name, phone number, and company name.</span></span> <span data-ttu-id="b6948-110">Si&#39;d como ayuda de un socio de Microsoft, active la casilla junto a  **me gustaría que Microsoft comparta mi información**.</span><span class="sxs-lookup"><span data-stu-id="b6948-110">If you&#39;d like help from a Microsoft partner, check the box next to  **I would like Microsoft to share my information**.</span></span> <span data-ttu-id="b6948-111">Seleccione  **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b6948-111">Select  **Next**.</span></span>
-5. <span data-ttu-id="b6948-112">Para comprobar su número de teléfono, seleccione  **Enviar código de verificación**.</span><span class="sxs-lookup"><span data-stu-id="b6948-112">To verify your phone number, select  **Send verification code**.</span></span> <span data-ttu-id="b6948-113">Escriba el código que recibió en el teléfono y seleccione  **comprobar**.</span><span class="sxs-lookup"><span data-stu-id="b6948-113">Enter the code you received on your phone, and select  **Verify**.</span></span>
-6. <span data-ttu-id="b6948-114">Si ya tiene un dominio, elija  **obtener un dominio de Microsoft por ahora** y escriba el nombre de la compañía.</span><span class="sxs-lookup"><span data-stu-id="b6948-114">If you already have a domain, choose  **Get a Microsoft domain for now**, and enter your company name.</span></span> <span data-ttu-id="b6948-115">Se convierte en su dirección de correo electrónico temporal.</span><span class="sxs-lookup"><span data-stu-id="b6948-115">This becomes your temporary email address.</span></span> <span data-ttu-id="b6948-116">También se convierte en una parte de las direcciones URL permanentes de SharePoint y OneDrive.</span><span class="sxs-lookup"><span data-stu-id="b6948-116">It also becomes a part of your permanent SharePoint and OneDrive URLs.</span></span> <span data-ttu-id="b6948-117">Seleccione  **comprobar disponibilidad** y, a continuación,  **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b6948-117">Select  **Check availability** , and then  **Next**.</span></span>
-7. <span data-ttu-id="b6948-118">Escriba su nombre de usuario, una contraseña, confirme la contraseña y, después, seleccione  **registrarse**  para crear su cuenta.</span><span class="sxs-lookup"><span data-stu-id="b6948-118">Enter your username, a password, confirm your password, and then select  **Sign up**  to create your account.</span></span>
-8. <span data-ttu-id="b6948-119">Escriba el número de usuarios, elija un plan de facturación y, después, seleccione  **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b6948-119">Enter the number of users, choose a billing plan, and then select  **Next**.</span></span>
-9.  <span data-ttu-id="b6948-120">Escriba la dirección de su empresa&#39;s y, a continuación,  **siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b6948-120">Enter your company&#39;s address, and then  **Next**.</span></span>
-10. <span data-ttu-id="b6948-121">Escriba la información de la tarjeta de crédito y  **realice el pedido**.</span><span class="sxs-lookup"><span data-stu-id="b6948-121">Enter your credit card information, and then  **Place order**.</span></span> <span data-ttu-id="b6948-122">Después de unos minutos, se creará la cuenta.</span><span class="sxs-lookup"><span data-stu-id="b6948-122">After a few moments, your account will be created.</span></span>
-11. <span data-ttu-id="b6948-123">En este momento, puede seleccionar  **continuar para configurar la cuenta** o puede iniciar sesión en el centro de administración de 365 de Microsoft y completar la configuración más adelante.</span><span class="sxs-lookup"><span data-stu-id="b6948-123">At this point you can select  **Continue to set up account** , or you can sign in to the Microsoft 365 admin center and complete setup later.</span></span>
+1. <span data-ttu-id="b3e92-106">Para registrarse en Microsoft 365 Empresa Premium, busque en línea y selecciónelo.</span><span class="sxs-lookup"><span data-stu-id="b3e92-106">To sign up for Microsoft 365 Business Premium, search for it online, and select it.</span></span>
+2. <span data-ttu-id="b3e92-107">Elija **Para empresas** y, a continuación, Comprar **ahora.**</span><span class="sxs-lookup"><span data-stu-id="b3e92-107">Choose  **For business** , and then  **Buy now**.</span></span>
+3. <span data-ttu-id="b3e92-108">Escriba su dirección de correo electrónico personal, seleccione **Siguiente** y, a continuación, **configure la cuenta.**</span><span class="sxs-lookup"><span data-stu-id="b3e92-108">Enter your personal email address, select  **Next** , and then  **Set up account**.</span></span>
+4. <span data-ttu-id="b3e92-109">Escriba su nombre, número de teléfono y nombre de la compañía.</span><span class="sxs-lookup"><span data-stu-id="b3e92-109">Enter your name, phone number, and company name.</span></span> <span data-ttu-id="b3e92-110">Si quiere&#39;ayuda de un partner de Microsoft, active la casilla situada junto a Me gustaría que **Microsoft compartiese mi información.**</span><span class="sxs-lookup"><span data-stu-id="b3e92-110">If you&#39;d like help from a Microsoft partner, check the box next to  **I would like Microsoft to share my information**.</span></span> <span data-ttu-id="b3e92-111">Seleccione  **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b3e92-111">Select  **Next**.</span></span>
+5. <span data-ttu-id="b3e92-112">Para comprobar el número de teléfono, seleccione **Enviar código de verificación.**</span><span class="sxs-lookup"><span data-stu-id="b3e92-112">To verify your phone number, select  **Send verification code**.</span></span> <span data-ttu-id="b3e92-113">Escriba el código que recibió en el teléfono y seleccione  **Comprobar**.</span><span class="sxs-lookup"><span data-stu-id="b3e92-113">Enter the code you received on your phone, and select  **Verify**.</span></span>
+6. <span data-ttu-id="b3e92-114">Si ya tiene un dominio, elija  **Obtener un dominio de Microsoft por ahora** y escriba el nombre de su compañía.</span><span class="sxs-lookup"><span data-stu-id="b3e92-114">If you already have a domain, choose  **Get a Microsoft domain for now**, and enter your company name.</span></span> <span data-ttu-id="b3e92-115">Se convierte en su dirección de correo electrónico temporal.</span><span class="sxs-lookup"><span data-stu-id="b3e92-115">This becomes your temporary email address.</span></span> <span data-ttu-id="b3e92-116">También se convierte en parte de las direcciones URL permanentes de SharePoint y OneDrive.</span><span class="sxs-lookup"><span data-stu-id="b3e92-116">It also becomes a part of your permanent SharePoint and OneDrive URLs.</span></span> <span data-ttu-id="b3e92-117">Seleccione  **Comprobar disponibilidad** y, a continuación,  **Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b3e92-117">Select  **Check availability** , and then  **Next**.</span></span>
+7. <span data-ttu-id="b3e92-118">Escriba su nombre de usuario, una contraseña, confirme la contraseña y, a continuación, seleccione  **Registrarse**  para crear su cuenta.</span><span class="sxs-lookup"><span data-stu-id="b3e92-118">Enter your username, a password, confirm your password, and then select  **Sign up**  to create your account.</span></span>
+8. <span data-ttu-id="b3e92-119">Escriba el número de usuarios, elija un plan de facturación y, a continuación,  **seleccione Siguiente**.</span><span class="sxs-lookup"><span data-stu-id="b3e92-119">Enter the number of users, choose a billing plan, and then select  **Next**.</span></span>
+9.  <span data-ttu-id="b3e92-120">Escriba la dirección&#39;de su empresa y, a **continuación, haga clic en Siguiente.**</span><span class="sxs-lookup"><span data-stu-id="b3e92-120">Enter your company&#39;s address, and then  **Next**.</span></span>
+10. <span data-ttu-id="b3e92-121">Escriba la información de su tarjeta de crédito y, a **continuación, haga un pedido.**</span><span class="sxs-lookup"><span data-stu-id="b3e92-121">Enter your credit card information, and then  **Place order**.</span></span> <span data-ttu-id="b3e92-122">Después de unos instantes, se creará tu cuenta.</span><span class="sxs-lookup"><span data-stu-id="b3e92-122">After a few moments, your account will be created.</span></span>
+11. <span data-ttu-id="b3e92-123">En este punto, puede seleccionar Continuar para configurar la cuenta  **o** puede iniciar sesión en el Centro de administración de Microsoft 365 y completar la configuración más adelante.</span><span class="sxs-lookup"><span data-stu-id="b3e92-123">At this point you can select  **Continue to set up account** , or you can sign in to the Microsoft 365 admin center and complete setup later.</span></span>

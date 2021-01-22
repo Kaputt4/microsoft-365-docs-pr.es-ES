@@ -1,9 +1,9 @@
 ---
-title: Proporcionar comentarios sobre Microsoft 365 defender
-description: Proporcionar comentarios sobre el producto en Microsoft 365 defender
-keywords: Comentarios, M365 Security, Security, 365, Capabilities
+title: Enviar comentarios sobre Microsoft 365 Defender
+description: Proporcionar comentarios del producto sobre Microsoft 365 Defender
+keywords: comentarios, seguridad m365, seguridad, 365, funcionalidades
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,27 +19,28 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: a06f7254a892b8fd9942940946699ecb23707387
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846739"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926743"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a><span data-ttu-id="5d2ab-104">Proporcionar comentarios sobre Microsoft 365 defender</span><span class="sxs-lookup"><span data-stu-id="5d2ab-104">Provide feedback on Microsoft 365 Defender</span></span>
+# <a name="provide-feedback-on-microsoft-365-defender"></a><span data-ttu-id="6a9b2-104">Enviar comentarios sobre Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6a9b2-104">Provide feedback on Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="5d2ab-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="5d2ab-105">**Applies to:**</span></span>
-- <span data-ttu-id="5d2ab-106">Microsoft 365 defender</span><span class="sxs-lookup"><span data-stu-id="5d2ab-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="6a9b2-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="6a9b2-105">**Applies to:**</span></span>
+- <span data-ttu-id="6a9b2-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6a9b2-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="5d2ab-107">Sus comentarios nos ayudarán a mejorar la protección del entorno contra ataques avanzados.</span><span class="sxs-lookup"><span data-stu-id="5d2ab-107">Your feedback helps us get better in protecting your environment from advanced attacks.</span></span> <span data-ttu-id="5d2ab-108">Comparta su experiencia, impresiones y solicitudes proporcionando Comentarios.</span><span class="sxs-lookup"><span data-stu-id="5d2ab-108">Share your experience, impressions, and  requests by providing feedback.</span></span>
+<span data-ttu-id="6a9b2-107">Sus comentarios nos ayudan a mejorar en la protección de su entorno frente a ataques avanzados.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-107">Your feedback helps us get better in protecting your environment from advanced attacks.</span></span> <span data-ttu-id="6a9b2-108">Comparta su experiencia, impresiones y solicitudes proporcionando comentarios.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-108">Share your experience, impressions, and  requests by providing feedback.</span></span>
 
-1. <span data-ttu-id="5d2ab-109">En cualquier parte del portal, seleccione **Enviar comentarios**.</span><span class="sxs-lookup"><span data-stu-id="5d2ab-109">From any part of the portal, select **Give feedback**.</span></span> 
+1. <span data-ttu-id="6a9b2-109">En cualquier parte del portal, seleccione **Enviar comentarios.**</span><span class="sxs-lookup"><span data-stu-id="6a9b2-109">From any part of the portal, select **Give feedback**.</span></span> 
 
-    ![Imagen del botón comentarios](../../media/feedback.png)
+    ![Imagen del botón de comentarios](../../media/feedback.png)
 
-2. <span data-ttu-id="5d2ab-111">Clasifique su experiencia y proporcione detalles sobre lo que le gusta o dónde puede realizarse la mejora.</span><span class="sxs-lookup"><span data-stu-id="5d2ab-111">Rate your experience and provide details on what you liked or where improvement can be made.</span></span> <span data-ttu-id="5d2ab-112">También puede elegir que se pongan en contacto con los comentarios.</span><span class="sxs-lookup"><span data-stu-id="5d2ab-112">You can also choose to be contacted about the feedback.</span></span> 
+2. <span data-ttu-id="6a9b2-111">Califica tu experiencia y proporciona detalles sobre lo que te gusta o dónde se puede realizar una mejora.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-111">Rate your experience and provide details on what you liked or where improvement can be made.</span></span> <span data-ttu-id="6a9b2-112">También puede optar por ponerse en contacto con usted sobre los comentarios.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-112">You can also choose to be contacted about the feedback.</span></span> 
 
-3. <span data-ttu-id="5d2ab-113">Seleccione **Enviar**.</span><span class="sxs-lookup"><span data-stu-id="5d2ab-113">Select **Submit**.</span></span>
+3. <span data-ttu-id="6a9b2-113">Seleccione **Enviar**.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-113">Select **Submit**.</span></span>
