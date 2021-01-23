@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Crear y administrar reglas de detección
                       href: mtp/custom-detection-rules.md
-            - name: Informes
-              items:
-                - name: Supervisar y ver informes
-                  href: mtp/monitoring-and-reporting.md
-                - name: Seguimiento de estado y generación de informes
-                  href: mtp/monitor-and-report-identities.md
-                - name: Supervisión e informes de datos
-                  href: mtp/monitor-data.md
-                - name: Supervisión e informes de dispositivo
-                  href: mtp/monitor-devices.md
-                - name: Supervisión e informes de aplicaciones
-                  href: mtp/monitor-apps.md
         - name: Referencia
           items:
             - name: Permisos y configuraciones
