@@ -18,12 +18,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 831b205d0839f6347ac887db0d3c3f0b1d9a4f3d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b47ec915bc9f5f51df8ed425e7bfd76966bb989e
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932831"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942783"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 
@@ -44,12 +44,20 @@ Visite el Centro de seguridad de Microsoft 365 en [https://security.microsoft.co
 > [!NOTE]
 > Debe tener asignado un rol adecuado, como administrador global, administrador de seguridad, operador de seguridad o lector de seguridad en Azure Active Directory para tener acceso al Centro de seguridad de Microsoft 365.
 
-
-## <a name="lets-take-a-closer-look"></a>Echemos un vistazo más de cerca
+## <a name="at-a-glance-view-of-your-microsoft-365-environment"></a>Vista rápida de su entorno de Microsoft 365
 
 La **página** principal muestra muchas de las tarjetas comunes que necesitan los equipos de seguridad. La composición de tarjetas y datos depende del rol de usuario. Dado que el Centro de seguridad de Microsoft 365 usa el control de acceso basado en roles, los distintos roles verán tarjetas que son más significativas para sus trabajos diarios.  
 
 Esta información de un vistazo le ayuda a mantenerse al día con las actividades más recientes de su organización. El Centro de seguridad de Microsoft 365 reúne señales de diferentes orígenes para presentar una vista holística de su entorno de Microsoft 365.
+
+De forma flexible, las tarjetas entran en estas categorías:
+
+- **Identidades:** supervise las identidades de su organización y realice un seguimiento de los comportamientos sospechosos o de riesgo. [Más información sobre la protección de identidades](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Datos:** ayude a realizar un seguimiento de la actividad del usuario que podría dar lugar a la divulgación de datos no autorizados.
+- **Dispositivos:** obtenga información actualizada sobre alertas, actividad de infracciones y otras amenazas en sus dispositivos.
+- **Aplicaciones:** obtenga información sobre cómo se usan las aplicaciones en la nube en su organización. [Más información sobre las aplicaciones detectadas de Cloud App Security](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## <a name="explore-what-the-security-center-has-to-offer"></a>Explorar lo que el centro de seguridad tiene que ofrecer
 
 Apartados del Centro de seguridad de Microsoft 365:
 
@@ -69,13 +77,13 @@ Apartados del Centro de seguridad de Microsoft 365:
 Explore estos temas sobre supervisión, revisión y respuesta a sus necesidades de seguridad:
 
 - Conectar los puntos en alertas a través [de incidentes](incident-queue.md)
-- Corregir automáticamente las amenazas mediante [investigación y corrección automatizadas](mtp-autoir.md)
+- Corregir automáticamente las amenazas mediante [la investigación y corrección automatizadas](mtp-autoir.md)
 - Revisar y mejorar la posición de seguridad de forma holística con [la puntuación de seguridad de Microsoft](microsoft-secure-score.md)
 - Ver [dispositivos](device-profile.md) en la red
 - [Notificar](monitoring-and-reporting.md) el estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura
-- [Búsqueda proactiva de amenazas por intentos](advanced-hunting-overview.md) de intrusiones y actividad de infracción que afecten al correo electrónico, los datos, los dispositivos y las cuentas
+- [Búsqueda proactiva de amenazas de intentos](advanced-hunting-overview.md) de intrusiones y actividad de infracción que afecten al correo electrónico, los datos, los dispositivos y las cuentas
 - [Comprender las últimas campañas y técnicas](latest-attack-campaigns.md) de ataque con análisis de amenazas
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 - [Portales de seguridad de Microsoft](portals.md)

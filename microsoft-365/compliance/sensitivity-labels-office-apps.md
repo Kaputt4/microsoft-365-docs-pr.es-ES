@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web, y qué aplicaciones admiten etiquetas de confidencialidad.
+description: Obtenga información sobre cómo trabajan los usuarios con etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web, y qué aplicaciones admiten etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17ded34d5e386c4de3c2241d0465b63381a11906
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: d84735cc51b26df6b4c28ffc3bf8fb99f896f1ae
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905279"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925700"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -88,7 +88,7 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Marcados dinámicos con variables](#dynamic-markings-with-variables)                                              | En revisión                     | En revisión                 | En revisión         | En revisión           | En revisión               |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
-|[Exigir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)                        | 16.43+                     | 4.57.0+            | 4.2037.4+                | Sí                |
+|[Exigir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)                        | 16.43+                     | En revisión            | En revisión                | Sí                |
 |[Ver el uso de etiquetas con análisis de](label-analytics.md) etiquetas y enviar datos para administradores                      | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)                       | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)                    | En revisión           | En revisión               | Sí               |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | En revisión           | En revisión               | Sí |
 |
@@ -110,11 +110,11 @@ Si se cumplen ambas condiciones, pero necesita desactivar el cliente de etiqueta
 
 2. Establecer **Usar la característica de confidencialidad en Office para aplicar y ver etiquetas de confidencialidad** en **0**. 
  
-Implemente esta configuración mediante la directiva de grupo o mediante el servicio de directivas [en la nube de Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) La configuración tiene efecto cuando se reinician las aplicaciones de Office.
+Implemente esta configuración mediante la directiva de grupo o mediante el servicio de directiva de nube [de Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) La configuración tiene efecto cuando se reinician las aplicaciones de Office.
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Cliente de etiquetado integrado de Office y cliente de Azure Information Protection
 
-Si los usuarios tienen uno de los clientes de Azure Information Protection instalado[(cliente](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) de etiquetado unificado o cliente [clásico),](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)de forma predeterminada, el cliente de etiquetado integrado se desactivará en sus aplicaciones de Office. 
+Si los usuarios tienen uno de los clientes de Azure Information Protection[instalados](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) (cliente de etiquetado unificado o cliente [clásico),](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)de forma predeterminada, el cliente de etiquetado integrado se desactivará en sus aplicaciones de Office. 
 
 Para usar el etiquetado integrado en lugar del cliente de Azure Information Protection para aplicaciones de Office, siga las instrucciones de la sección anterior, pero establezca la configuración de directiva de grupo Use la característica Confidencialidad de **Office** para aplicar y ver etiquetas de confidencialidad en **1.** 
 
@@ -155,16 +155,16 @@ Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, s
 
 Si el documento o correo electrónico ya está etiquetado, un usuario puede realizar cualquiera de estas acciones si el contenido aún no está cifrado o tiene el derecho de uso [Exportar](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) o Control total. 
 
-Para una experiencia de etiquetas más coherente con informes significativos, proporcione las etiquetas e instrucciones adecuadas para que los usuarios apliquen solo etiquetas para proteger documentos. Por ejemplo:
+Para una experiencia de etiquetas más coherente con informes significativos, proporcione etiquetas e instrucciones adecuadas para que los usuarios apliquen solo etiquetas para proteger documentos. Por ejemplo:
 
-- Para los casos de excepción en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que permiten a los usuarios [asignar sus propios permisos.](encryption-sensitivity-labels.md#let-users-assign-permissions) 
+- Para los casos de excepción en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que permiten a [los usuarios asignar sus propios permisos.](encryption-sensitivity-labels.md#let-users-assign-permissions) 
 
-- En lugar de quitar manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una alternativa de subetiqueta cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Por ejemplo:
+- En lugar de quitar manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una sub-etiqueta alternativa cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Por ejemplo:
     - **Confidencial \ Todos los empleados**
     - **Confidencial \ Cualquiera (sin cifrado)**
 
 > [!NOTE]
-> Si los usuarios quitan manualmente el cifrado de un documento con etiqueta que se almacena en SharePoint o OneDrive y ha habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y [OneDrive,](sensitivity-labels-sharepoint-onedrive-files.md)el cifrado de la etiqueta se restaurará automáticamente la próxima vez que se acceda o descargue el documento. 
+> Si los usuarios quitan manualmente el cifrado de un documento con etiqueta almacenado en SharePoint o OneDrive y ha habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y [OneDrive,](sensitivity-labels-sharepoint-onedrive-files.md)el cifrado de etiquetas se restaurará automáticamente la próxima vez que se acceda o descargue el documento. 
 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Aplicar etiquetas de confidencialidad a archivos, correos electrónicos y datos adjuntos
@@ -183,7 +183,7 @@ En caso contrario:
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad de etiquetas de confidencialidad
 
-Con aplicaciones con **RMS:** si abre un documento o correo electrónico con etiquetas y cifrados en una aplicación con [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) que no admite etiquetas de confidencialidad, la aplicación sigue obligando al cifrado y a la administración de derechos.
+Con aplicaciones con **RMS:** si abre un documento o correo electrónico con etiquetas y cifrados en una aplicación con [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) que no admite etiquetas de confidencialidad, la aplicación seguirá obligando al cifrado y a la administración de derechos.
 
 Con el cliente de **Azure Information Protection:** puede ver y cambiar las etiquetas de confidencialidad que se aplican a documentos y correos electrónicos con el cliente de etiquetado integrado de Office mediante el cliente de Azure Information Protection y al revés.
 
@@ -254,7 +254,7 @@ Entre los escenarios que incluyen la aplicación de una etiqueta de confidencial
 
 - Microsoft Cloud App Security
 
-Para estos escenarios, con sus aplicaciones de Office, un usuario con etiquetas integradas puede aplicar los marcados de contenido de la etiqueta quitando o reemplazando temporalmente la etiqueta actual y, a continuación, aplicando de nuevo la etiqueta original.
+Para estos escenarios, con sus aplicaciones de Office, un usuario con etiquetas integradas puede aplicar las marcas de contenido de la etiqueta quitando o reemplazando temporalmente la etiqueta actual y, a continuación, aplicando de nuevo la etiqueta original.
 
 ### <a name="dynamic-markings-with-variables"></a>Marcados dinámicos con variables
 
@@ -279,7 +279,7 @@ Al configurar una etiqueta de confidencialidad para las marcas de contenido, pue
 
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Establecer diferentes marcas visuales para Word, Excel, PowerPoint y Outlook
 
-Como variable adicional, puede configurar marcas visuales por tipo de aplicación de Office mediante una instrucción de variable "If.App" en la cadena de texto e identificar el tipo de aplicación con los valores **Word,** **Excel,** **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción If.App.
+Como variable adicional, puede configurar marcas visuales por tipo de aplicación de Office mediante una instrucción de variable "If.App" en la cadena de texto e identificar el tipo de aplicación con los valores **Word**, **Excel,** **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción If.App.
 
 > [!NOTE]
 > Para mayor integridad, se incluyen instrucciones para Outlook, aunque actualmente solo son compatibles con el cliente de etiquetado unificado de Azure Information Protection.
@@ -310,7 +310,7 @@ Ejemplos:
 
     `${If.App.WP}This content is ${If.End}Confidential`
 
-    En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "Este contenido es confidencial". En Excel, la etiqueta aplica el texto de marca de agua "Confidencial". En Outlook, la etiqueta no aplica ningún texto de marca de agua porque las marcas de agua como marcas de agua visuales no son compatibles con Outlook.
+    En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "Este contenido es confidencial". En Excel, la etiqueta aplica el texto de marca de agua "Confidencial". En Outlook, la etiqueta no aplica ningún texto de marca de agua porque no se admiten marcas de agua como marcas de agua visuales para Outlook.
 
 ## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Exigir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos
 
@@ -326,7 +326,7 @@ Cuando se selecciona esta configuración de directiva, los usuarios asignados a 
     - Para correos electrónicos (Outlook): en el momento en que los usuarios envían un mensaje sin etiquetar.
 
 - Para el etiquetado integrado en las aplicaciones de Office:
-    - Para documentos (Word, Excel, PowerPoint): cuando se abre o se guarda un documento sin etiquetar.
+    - Para documentos (Word, Excel, PowerPoint): cuando se abre o guarda un documento sin etiquetar.
     - Para correos electrónicos (Outlook): en el momento en que los usuarios envían un mensaje de correo electrónico sin etiquetar.
 
 Información adicional para el etiquetado integrado:

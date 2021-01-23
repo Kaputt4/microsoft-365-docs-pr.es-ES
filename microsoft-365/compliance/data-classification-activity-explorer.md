@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 0175f41ca3fbcfc685acf933cc0cd97af6aa61ad
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379199"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921638"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
@@ -45,12 +45,14 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:
+Todas las cuentas que tienen acceso a la clasificación de datos y la usan deben tener una licencia asignada de una de estas suscripciones:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Complemento de cumplimiento avanzado (E5)
 - Complemento de inteligencia de amenazas avanzado (E5)
+- Gobernanza y protección de la información de Microsoft 365 E5/A5
+- Cumplimiento de Microsoft 365 E5/A5 
 
 ### <a name="permissions"></a>Permisos
 
@@ -77,7 +79,7 @@ El valor de comprensión de las acciones que se toman con el contenido identific
 > El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.
 
 ## <a name="see-also"></a>Recursos adicionales
-- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 

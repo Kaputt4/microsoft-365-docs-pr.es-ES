@@ -18,20 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguridad incluye 80 tipos de información confidencial listos para su uso &amp; en las directivas DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 584e2fe2353c1f80545a3742a44163cb26ee2c29
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: b70f335fd0742e6bc34957058c6e695530e83507
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881789"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927136"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
-La prevención de pérdida de datos (DLP) en el Centro de cumplimiento incluye muchos tipos de información confidencial que están listos para usarse en las directivas DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos. Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Además, pueden usarse pruebas contundentes como palabras clave y sumas de comprobación para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
+Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Además, pueden usarse pruebas contundentes como palabras clave y sumas de comprobación para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
 
 Los tipos de información confidencial requieren una de estas suscripciones:
 - Microsoft 365 E3
 - Microsoft 365 E5
+
+Los tipos de información confidencial se usan en:
+
+- [Directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) 
+- [Etiquetas de confidencialidad](sensitivity-labels.md)
+- [Etiquetas de retención](retention.md)
+- [Cumplimiento de las comunicaciones](communication-compliance.md)
+- [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 ## <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
@@ -48,7 +56,7 @@ Con formato:
 - un guión
 - un dígito
 
-Sin formato: nueve dígitos consecutivos que empiezan por 0, 1, 2, 3, 6, 7 u 8 
+Sin formato: nueve dígitos consecutivos que comienzan por 0, 1, 2, 3, 6, 7 u 8 
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -56,11 +64,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_aba_routing encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ABA_Routing.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_aba_routing encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -119,7 +127,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_argentina_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_argentina_national_id.
 
@@ -168,12 +176,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_australia_bank_account_number.
 - La expresión regular Regex_australia_bank_account_number_bsb encuentra contenido que coincide con el patrón.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_australia_bank_account_number.
 
@@ -241,11 +249,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_australian_business_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_australian_business_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_australian_business_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -301,11 +309,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Australian_Company_Number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Australian_Company_Number búsqueda.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Australian_Company_Number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -361,7 +369,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_australia_drivers_license_number.
 - No se encuentra ninguna palabra clave de Keyword_australia_drivers_license_number_exclusions.
@@ -503,7 +511,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_australian_medical_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_Australia_Medical_Account_Number.
 - Se supera la suma de comprobación.
@@ -531,7 +539,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - credit card loan
 - department of human services
 - local service
-- tordo
+- dalo
 
    
 ## <a name="australia-passport-number"></a>Número de pasaporte de Australia
@@ -550,7 +558,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_passport_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_passport o Keyword_australia_passport_number búsqueda.
 
@@ -580,7 +588,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - passportnumber
 - パスポート
 - パスポート番号
-- (en la ポ de la ポ)
+- (en la ポ)
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -618,7 +626,7 @@ de ocho a nueve dígitos que normalmente se presentan con espacios de la siguien
 - un espacio opcional 
 - tres dígitos 
 - un espacio opcional 
-- de dos a tres dígitos en los que el último dígito es un dígito de comprobación
+- de dos a tres dígitos donde el último dígito es un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -626,7 +634,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_australian_tax_file_number encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de Keyword_Australia_Tax_File_Number ni Keyword_number_exclusions.
 - Se supera la suma de comprobación.
@@ -671,7 +679,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_austria_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_austria_eu_driver's_license_number` clave. 
@@ -795,7 +803,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -837,9 +845,9 @@ Una combinación de 24 caracteres de letras, dígitos y caracteres especiales
 
 24 caracteres:
   
--  22 letras (sin distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales o signos más 
+-  22 letras (no distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales o signos más 
     
-- dos letras (sin distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales, signos más o signos iguales
+- dos letras (no distinguen mayúsculas de minúsculas), dígitos, barras diagonales inversas, barras diagonales, signos más o signos iguales
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -847,7 +855,7 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_austria_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_austria_eu_national_id_card` clave de. 
@@ -868,7 +876,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - número de identidad
 - national id
-- personalausblis republik österreich
+- personalauslichs republik österreich
 
 ## <a name="austria-passport-number"></a>Número de pasaporte de Austria
 
@@ -890,12 +898,12 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_austria_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_austria_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_austria_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_austria_eu_passport_number` clave. 
     
@@ -969,11 +977,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_austria_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
 - se encuentra una  `Keywords_austria_eu_ssn_or_equivalent` palabra clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_austria_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -1018,7 +1026,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - ssn #
 - ssn
 - versiquemutscode
-- versiquemutsnummer
+- versálisissnummer
 - zdravstveno zavarovanje
 
 ## <a name="austria-tax-identification-number"></a>Número de identificación fiscal de Austria
@@ -1043,11 +1051,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_austria_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_austria_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_austria_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -1121,11 +1129,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Austria_Value_Added_Tax encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Austria_Value_Added_Tax búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Austria_Value_Added_Tax encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -1150,7 +1158,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - vat no.
 - vatno #
 - número de impuestos del valor agregado
-- vat de indeste
+- iva de resa lodo
 - mwst
 - umsatzsteuernummer
 - mwstnummer
@@ -1181,9 +1189,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureDocumentDBAuthKey encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no encuentra** contenido que coincida con el patrón.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1241,7 +1249,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureConnectionString encuentra contenido que coincide con el patrón.
 - La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
 
@@ -1301,9 +1309,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureIoTConnectionString encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no encuentra** contenido que coincida con el patrón.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1351,9 +1359,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzurePublishSettingPasswords encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no encuentra** contenido que coincida con el patrón.
 
 
 ```xml
@@ -1407,9 +1415,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureRedisCacheConnectionString encuentra contenido que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no encuentra** contenido que coincida con el patrón.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1461,7 +1469,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureSAS encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -1501,7 +1509,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureServiceBusConnectionString encuentra contenido que coincide con el patrón.
 - La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
 
@@ -1559,7 +1567,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureStorageAccountKey encuentra contenido que coincide con el patrón.
 - La expresión regular CEP_AzureEmulatorStorageAccountFilter **encuentra contenido** que coincide con el patrón.
 - La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
@@ -1603,7 +1611,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o signo más (+), precedida o seguida de los caracteres descritos en el siguiente patrón.
+Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o signo más (+), precedida o seguida de los caracteres descritos en el patrón siguiente.
 
 ### <a name="pattern"></a>Patrón
 
@@ -1617,7 +1625,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_AzureStorageAccountKeyGeneric encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -1644,7 +1652,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_belgium_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_belgium_eu_driver's_license_number` clave.
     
@@ -1736,7 +1744,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -1768,7 +1776,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -1821,12 +1829,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_belgium_national_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_belgium_national_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_belgium_national_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -1920,12 +1928,12 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
- Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+ Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_belgium_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_belgium_eu_passport_number` clave. 
 - La expresión regular `Regex_eu_passport_date2` encuentra la fecha con el formato DD MM AA o una palabra clave de o se `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` encuentra
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_belgium_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_belgium_eu_passport_number` clave. 
 
@@ -2017,11 +2025,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_belgium_value_added_tax_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_belgium_value_added_tax_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_belgium_value_added_tax_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -2078,12 +2086,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cpf encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_brazil_cpf.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cpf encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -2129,7 +2137,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - un punto 
 - tres dígitos 
 - un punto 
-- tres dígitos (estos ocho primeros dígitos son el número de registro) 
+- tres dígitos (estos primeros ocho dígitos son el número de registro) 
 - una barra diagonal 
 - número de rama de cuatro dígitos 
 - un guión 
@@ -2141,12 +2149,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cnpj encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_brazil_cnpj.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cnpj encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -2218,12 +2226,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_rg encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_brazil_rg.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_rg encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -2270,7 +2278,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_bulgaria_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_bulgaria_eu_driver's_license_number` clave. 
     
@@ -2393,7 +2401,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -2446,11 +2454,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_bulgaria_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_bulgaria_eu_national_id_card` clave de. 
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_bulgaria_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -2534,12 +2542,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_bulgaria_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_bulgaria_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_bulgaria_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_bulgaria_eu_passport_number` clave. 
 
@@ -2615,12 +2623,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_canada_bank_account_number.
 - La expresión regular Regex_canada_bank_account_transit_number encuentra contenido que coincide con el patrón.
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_canada_bank_account_number.
 
@@ -2682,7 +2690,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_[province_name]_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_[province_name]_drivers_license_name.
 - Se encuentra una palabra clave de Keyword_canada_drivers_license.
@@ -2900,7 +2908,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_health_service_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_canada_health_service_number.
 
@@ -2926,7 +2934,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - speciality services
 - automobile accident
 - patient hospital
-- indeste
+- desatraba
 - workers compensation
 - discapacidad
 
@@ -2947,7 +2955,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_passport_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_canada_passport_number o Keyword_passport búsqueda.
 
@@ -2989,7 +2997,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - パスポート
 - パスポート番号
 - (en la ポ de la ポ)
-- パスポート#
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
@@ -3015,7 +3023,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_phin encuentra contenido que coincide con el patrón.
 - Se encuentran al menos dos palabras clave Keyword_canada_phin o Keyword_canada_provinces búsqueda.
 
@@ -3093,7 +3101,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_canadian_sin encuentra contenido que coincide con el patrón.
 - Al menos dos de cualquier combinación de lo siguiente:
     - Se encuentra una palabra clave de Keyword_sin.
@@ -3101,7 +3109,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
     - La función Func_eu_date encuentra una fecha en el formato de fecha correcto.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_canadian_sin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_sin.
 - Se supera la suma de comprobación.
@@ -3158,7 +3166,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-de siete a ocho dígitos más delimitadores de un dígito de comprobación o una letra
+siete a ocho dígitos más delimitadores de un dígito de comprobación o una letra
 
 ### <a name="pattern"></a>Patrón
 
@@ -3177,12 +3185,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_chile_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_chile_id_card.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_chile_id_card encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3228,7 +3236,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Número de identidad de chileno
 - Identidad de chilena #
 - Registro de impuestos único
-- Rol exclusivo de rese?a
+- Rol único de reeste
 - Rol fiscal único
 - Número de reeste único
 - Número nacional único
@@ -3259,12 +3267,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_china_resident_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_china_resident_id.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_china_resident_id encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3301,7 +3309,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-De 14 a 16 dígitos con formato o sin formato (dd) y que deben superar la prueba de Luhn.
+De 14 a 16 dígitos que pueden tener formato o sin formato (dd) y que deben superar la prueba de Luhn.
 
 ### <a name="pattern"></a>Patrón
 
@@ -3313,7 +3321,7 @@ Sí, la suma de comprobación de Luhn
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_credit_card encuentra contenido que coincide con el patrón.
 - Una de las siguientes opciones es verdadera:
     - Se encuentra una palabra clave de Keyword_cc_verification.
@@ -3321,7 +3329,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
     - La función Func_expiration_date encuentra una fecha en el formato de fecha correcto.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_credit_card encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3410,7 +3418,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - validade
 - valor
 - vencimento
-- transacción
+- transaction
 - número de transacción
 - número de referencia
 - セキュリティコード
@@ -3566,17 +3574,17 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - No. do cartao
 - クレジットカード番号
 - クレジットカードナンバー
-- クレジットカード#
+- クレジットカード＃
 - クレジットカード
 - クレジット
 - クレカ
 - カード番号
 - カードナンバー
-- カード#
+- カード＃
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
-- Visa que se puede ver
+- Visa que se ha desatricido
 - Visa
 - マスターカード
 - マスター カード
@@ -3611,7 +3619,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_croatia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_croatia_eu_driver's_license_number` clave. 
@@ -3703,7 +3711,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -3735,7 +3743,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -3776,7 +3784,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_croatia_id_card.
 
@@ -3840,12 +3848,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_croatia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_croatia_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_croatia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_croatia_eu_passport_number` clave. 
     
@@ -3911,12 +3919,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_oib_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_croatia_eu_tax_file_number búsqueda.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_oib_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3983,7 +3991,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_cyprus_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_cyprus_eu_driver's_license_number` clave.
 
@@ -4074,7 +4082,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -4106,7 +4114,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -4152,7 +4160,7 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_cyprus_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_cyprus_eu_national_id_card` clave de. 
     
@@ -4170,7 +4178,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- número de tarjeta de identificación
+- id card number
 - número de tarjeta de identidad
 - kimlik karti
 - national identification number
@@ -4194,12 +4202,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_cyprus_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_cyprus_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_cyprus_eu_passport_date` DD/MM/YYYY o se encuentra una palabra clave de `Keywords_cyprus_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_cyprus_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_cyprus_eu_passport_number` clave.  
     
@@ -4288,11 +4296,11 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_cyprus_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_cyprus_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_cyprus_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -4349,7 +4357,7 @@ dos letras seguidas de seis dígitos
 
 ocho letras y dígitos:
   
-- letra "E" (no distingue mayúsculas de minúsculas)
+- letra 'E' (no distingue mayúsculas de minúsculas)
 - una carta
 - un espacio (opcional)
 - seis dígitos
@@ -4360,7 +4368,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_czech_republic_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_czech_republic_eu_driver's_license_number` clave. 
 
@@ -4451,7 +4459,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -4483,7 +4491,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -4524,12 +4532,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_czech_republic_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_czech_republic_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_czech_republic_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_czech_republic_eu_passport_number` clave. 
     
@@ -4610,13 +4618,13 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_czech_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_czech_id_card.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_czech_id_card_new_format encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
@@ -4702,7 +4710,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_denmark_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_denmark_eu_driver's_license_number` clave. 
     
@@ -4793,7 +4801,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -4825,7 +4833,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -4864,12 +4872,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_denmark_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_denmark_eu_passport_number` clave. 
 - La expresión regular `Regex_eu_passport_date2` encuentra la fecha con el formato DD MM AA o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_denmark_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_denmark_eu_passport_number` clave. 
     
@@ -4944,12 +4952,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_denmark_id.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -4975,7 +4983,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - civilt registreringssystem
 - cpr
 - cpr #
-- geheitskarte nummer
+- geheiheitskarte nummer
 - geheiheitsverskarkarte nummer
 - tarjeta de estado
 - número de tarjeta de seguro de salud
@@ -5061,12 +5069,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_dea_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra `Keyword_dea_number` clave de
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_dea_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -5096,7 +5104,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - dea
 - dea #
-- administración de la aplicación de antidrogas
+- administración de la aplicación de la ley antidrogas
 - agencia antidrogas
 
 
@@ -5119,7 +5127,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_estonia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_estonia_eu_driver's_license_number` clave. 
     
@@ -5210,7 +5218,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -5262,7 +5270,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver de s_license_number
 
 -- permis de conduire
-- juhilrovde desenlazadorrid
+- juhilrovde desenlacerid
 - número de juhiloa
 - juhilrov
 
@@ -5283,7 +5291,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos:
   
-- un dígito que corresponde al sexo y al siglo de nacimiento (número impar varón, número par femenil; 1-2: s. 19; 3-4: 20; 5-6: s. 21)
+- un dígito que corresponde al sexo y al siglo de nacimiento (número impar varón, número par femenil; 1-2: 19 del s. 19; 3-4: 20 del s. XX; 5-6: s. 21)
 - seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
 - tres dígitos que corresponden a un número de serie que separa a las personas que han nado en la misma fecha
 - un dígito de comprobación
@@ -5294,11 +5302,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_estonia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_estonia_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_estonia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -5370,12 +5378,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_estonia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_estonia_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_estonia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_estonia_eu_passport_number` clave. 
     
@@ -5444,7 +5452,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_eu_debit_card encuentra contenido que coincide con el patrón.
 - Al menos una de las siguientes opciones es verdadera:
     - Se encuentra una palabra clave de Keyword_eu_debit_card.
@@ -5953,7 +5961,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_finland_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_finland_eu_driver's_license_number` clave. 
     
@@ -6044,7 +6052,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -6076,7 +6084,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -6133,7 +6141,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - El elemento regex Regex_Finland_European_Health_Insurance_Number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Finland_European_Health_Insurance_Number búsqueda.
 
@@ -6187,12 +6195,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - la función Func_finnish_national_id encuentra contenido que coincide con el patrón
 - se encuentra una palabra clave Keyword_finnish_national_id búsqueda
 - la suma de comprobación pasa
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - la función Func_finnish_national_id encuentra contenido que coincide con el patrón
 - la suma de comprobación pasa
 
@@ -6230,7 +6238,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - id. personal
 - código de identidad personal
 - personalidnumber #
-- personbeteckning
+- personbetckning
 - personnummer
 - social security number
 - sosiaaliturvatunnus
@@ -6276,7 +6284,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_eu_passport_number_common o Keyword_finland_passport_number búsqueda.
 
@@ -6334,7 +6342,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - la función Func_french_drivers_license encuentra contenido que coincide con el patrón.
 - se encuentra una palabra clave Keyword_french_drivers_license búsqueda.
 
@@ -6422,7 +6430,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -6454,7 +6462,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -6507,8 +6515,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- el archivo regex Regex_France_Health_Insurance_Number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- el elemento regex Regex_France_Health_Insurance_Number encuentra contenido que coincide con el patrón.
 - se encuentra una palabra clave Keyword_France_Health_Insurance_Number búsqueda.
 
 ```xml
@@ -6545,7 +6553,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_france_cni encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_france_eu_national_id_card búsqueda.
 
@@ -6596,7 +6604,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_fr_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_passport.
 
@@ -6623,7 +6631,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - passportnumber
 - パスポート
 - パスポート番号
-- (en la ポ de la ポ)
+- (en la ポ)
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -6659,7 +6667,7 @@ Una directiva DLP está segura al 95% de que este tipo de información confidenc
 - Se encuentra una palabra clave de Keyword_fr_insee.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_french_insee o Func_fr_insee encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de Keyword_fr_insee.
 - Se supera la suma de comprobación.
@@ -6738,11 +6746,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_france_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_france_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_france_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -6802,7 +6810,7 @@ Patrón alfanumérico de 13 caracteres
 
 Patrón alfanumérico de 13 caracteres:
 
-- dos letras - FR (no se puede insensible a mayúsculas y minúsculas)
+- dos letras: FR (no se puede hacer mayúsculas de minúsculas)
 - un espacio opcional o un guión
 - dos letras o dígitos
 - un espacio opcional, punto, guión o coma
@@ -6818,11 +6826,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_france_value_added_tax_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_france_value_added_tax_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_france_value_added_tax_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -6874,7 +6882,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_german_drivers_license encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_german_drivers_license_number.
 - Se supera la suma de comprobación.
@@ -6993,7 +7001,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -7025,7 +7033,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -7047,7 +7055,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 desde el 1 de noviembre de 2010: nueve letras y dígitos
 
-desde el 1 de abril de 1987 hasta el 31 de octubre de 2010: 10 dígitos
+del 1 de abril de 1987 al 31 de octubre de 2010: 10 dígitos
 
 ### <a name="pattern"></a>Patrón
 
@@ -7064,7 +7072,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_germany_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_germany_id_card.
 
@@ -7117,12 +7125,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_german_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una `Keyword_german_passport` palabra clave o una palabra `Keywords_eu_passport_number_common` clave.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_german_passport_data encuentra contenido que coincide con el patrón.
 - Se encuentra una `Keyword_german_passport` palabra clave o una palabra `Keywords_eu_passport_number_common` clave.
 - Se supera la suma de comprobación.
@@ -7200,11 +7208,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_germany_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_germany_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_germany_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -7249,7 +7257,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - ztellonummer
 
 
-## <a name="germany-value-added-tax-number"></a>Número de impuestos sobre el valor agregado de Alemania
+## <a name="germany-value-added-tax-number"></a>Número de impuestos del valor agregado de Alemania
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -7280,11 +7288,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_germany_value_added_tax_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_germany_value_added_tax_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_germany_value_added_tax_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -7328,7 +7336,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_greece_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_greece_eu_driver's_license_number` clave. 
     
@@ -7419,7 +7427,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -7451,7 +7459,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -7501,11 +7509,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_greece_id_card.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -7551,12 +7559,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_greece_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_greece_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_greece_eu_passport_date` DD MMM AA (ejemplo: 28 de agosto 19) o se encuentra una palabra clave de `Keywords_greece_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_greece_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_greece_eu_passport_number` clave. 
     
@@ -7630,11 +7638,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_greece_eu_ssn` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_greece_eu_ssn_or_equivalent` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_greece_eu_ssn` encuentra contenido que coincide con el patrón. 
 
 ```xml
@@ -7686,7 +7694,7 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_greece_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_greece_eu_tax_file_number` clave de. 
@@ -7752,12 +7760,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_hong_kong_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_hong_kong_id_card.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_hong_kong_id_card encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -7836,7 +7844,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_hungary_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_hungary_eu_driver's_license_number` clave. 
@@ -7927,7 +7935,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -7959,7 +7967,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -8011,12 +8019,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La función  `Func_hungary_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_hungary_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La función  `Func_hungary_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
@@ -8066,12 +8074,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_hungary_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_hungary_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_hungary_eu_passport_date` DD MMM/MMM AA (ejemplo: 01 MÁR/MAR 12) o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_hungary_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_hungary_eu_passport_number` clave. 
     
@@ -8120,7 +8128,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - útlevél szám
 
 
-## <a name="hungary-social-security-number-taj"></a>Número de seguridad social de Hungría (TAJ)
+## <a name="hungary-social-security-number-taj"></a>Número de la seguridad social de Hungría (TAJ)
 
 ### <a name="format"></a>Formato
 
@@ -8136,12 +8144,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La función  `Func_hungary_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_hungary_eu_ssn_or_equivalent` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La función  `Func_hungary_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
     
@@ -8162,7 +8170,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- número de seguridad social húngaro
+- número de la seguridad social húngaro
 - social security number
 - socialsecuritynumber #
 - hssn #
@@ -8207,12 +8215,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La función  `Func_hungary_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_hungary_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La función  `Func_hungary_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
@@ -8262,7 +8270,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de iva
 
 
-## <a name="hungary-value-added-tax-number"></a>Número de impuestos sobre el valor agregado de Hungría
+## <a name="hungary-value-added-tax-number"></a>Número de impuestos del valor agregado de Hungría
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -8288,12 +8296,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_hungarian_value_added_tax_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_hungarian_value_added_tax_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_hungarian_value_added_tax_number encuentra contenido que coincide con el patrón.
 
@@ -8348,11 +8356,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_india_permanent_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_india_permanent_account_number.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_india_permanent_account_number encuentra contenido que coincide con el patrón.
 
 
@@ -8400,12 +8408,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_india_aadhaar encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_india_aadhar.
 - Se supera la suma de comprobación.
 - 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_india_aadhaar encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
@@ -8456,7 +8464,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La expresión regular Regex_indonesia_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_indonesia_id_card.
@@ -8504,7 +8512,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_iban encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
@@ -8538,12 +8546,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - Se encuentra una palabra clave Dictionary_icd_10_updated búsqueda.
 - Se encuentra una palabra clave Dictionary_icd_10_codes búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- Se encuentra una palabra clave Dictionary_icd_10_ se actualiza.
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- Se encuentra una palabra clave Dictionary_icd_10_ actualización.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -8560,9 +8568,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la clasificación internacional de enfermedades, la décima revisión, la modificación de la infección [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguros.
+Cualquier término del diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la clasificación internacional de enfermedades, la décima revisión, la modificación galo [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguros.
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la clasificación internacional de enfermedades, la décimo revisión, la modificación de la infección [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca códigos de seguros, no la descripción.
+Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la clasificación internacional de enfermedades, la décimo revisión, la modificación galo [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca códigos de seguros, no la descripción.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación internacional de enfermedades (ICD-9-CM)
 
@@ -8580,11 +8588,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - Se encuentra una palabra clave Dictionary_icd_9_updated búsqueda.
 - Se encuentra una palabra clave Dictionary_icd_9_codes búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - Se encuentra una palabra clave Dictionary_icd_9_updated búsqueda.
 
 ```xml
@@ -8623,7 +8631,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Para IPv6, una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Para IPv6, una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de Keyword_ipaddress.
 
@@ -8688,7 +8696,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
 - La expresión regular  `Regex_ireland_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_ireland_eu_driver's_license_number` clave. 
@@ -8780,7 +8788,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -8812,7 +8820,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -8854,12 +8862,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_ireland_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_ireland_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY (ejemplo: 01 BEA/MAYO 1988) o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_ireland_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_ireland_eu_passport_number` clave.
     
@@ -8925,7 +8933,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 Formato antiguo (hasta el 31 de diciembre de 2012):
 - siete dígitos seguidos de 1 a 2 letras 
 
-Nuevo formato (1 de enero de 2013 y 2013):
+Nuevo formato (1 de enero de 2013 y posterior):
 - siete dígitos seguidos de dos letras
 
 ### <a name="pattern"></a>Patrón
@@ -8934,9 +8942,9 @@ Formato antiguo (hasta el 31 de diciembre de 2012):
 - siete dígitos 
 - de una a dos letras (no distingue entre mayúsculas y minúsculas) 
 
-Nuevo formato (1 de enero de 2013 y 2013):
+Nuevo formato (1 de enero de 2013 y posterior):
 - siete dígitos 
-- una letra (no distingue entre mayúsculas y minúsculas) que es un dígito de comprobación alfabético 
+- una letra (no distingue mayúsculas de minúsculas) que es un dígito de comprobación alfabético 
 - Una letra opcional en el rango A-I o "W"
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -8945,12 +8953,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_ireland_pps encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_ireland_eu_national_id_card búsqueda.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_ireland_pps encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -9039,7 +9047,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_israel_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_israel_bank_account_number.
 
@@ -9080,7 +9088,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_israeli_national_id_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_Israel_National_ID.
 - Se supera la suma de comprobación.
@@ -9139,7 +9147,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_italy_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_italy_drivers_license_number.
 
@@ -9185,7 +9193,7 @@ Una combinación de 16 caracteres de letras y dígitos:
 - dos dígitos que corresponden a los últimos dígitos del año de nacimiento
 - una letra que corresponde a la letra del mes de nacimiento: las letras se usan en orden alfabético, pero solo se usan las letras A a E, H, L, M, P, R a T (por lo tanto, enero es A y octubre es R)
 - dos dígitos que corresponden al día del mes de nacimiento: para diferenciar entre sexos, se agregan 40 al día de nacimiento para mujer
-- cuatro dígitos que corresponden al código de área específico del territorio en el que la persona ha nazca (los códigos de todo el país se usan para países extranjeros)
+- cuatro dígitos que corresponden al código de área específico del territorio en el que ha nado la persona (los códigos de todo el país se usan para países extranjeros)
 - un dígito de paridad
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -9194,11 +9202,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_italy_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_italy_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_italy_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -9226,7 +9234,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - numero certificato personale
 - numero di identificazione fiscale
 - numero id personale
-- numero Personale
+- numero personale
 - número de certificado personal
 - código personal
 - código de identificación personal
@@ -9271,12 +9279,12 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_italy_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_italy_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_italy_eu_passport_date` DD MMM/MMM YYYY (ejemplo: 01 GEN/JAN 1988) o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_italy_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_italy_eu_passport_number` clave. 
     
@@ -9362,11 +9370,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_italy_value_added_tax_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_italy_value_added_tax_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_italy_value_added_tax_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -9414,14 +9422,14 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_bank_account encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_bank_account.
 - Una de las siguientes opciones es verdadera:
 - La función Func_jp_bank_account_branch_code encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_bank_branch_code.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_bank_account encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_bank_account.
 
@@ -9512,7 +9520,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_drivers_license_number.
 
@@ -9592,11 +9600,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_japanese_my_number_corporate encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_japanese_my_number_corporate búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_japanese_my_number_corporate encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -9656,11 +9664,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_japanese_my_number_personal encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_japanese_my_number_personal búsqueda.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_japanese_my_number_personal encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -9708,7 +9716,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_passport.
 
@@ -9733,11 +9741,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - パスポート
 - パスポート番号
 - パスポートナンバー
-- パスポート#
+- パスポート＃
 - パスポート #
 - )ademásポースNo.
 - 旅券番号
-- 旅券番号#
+- 旅券番号＃
 - 旅券番号♯
 - 旅券ナンバー
 
@@ -9761,7 +9769,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_jp_residence_card_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_jp_residence_card_number búsqueda.
 
@@ -9802,7 +9810,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_resident_registration_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_resident_registration_number.
 
@@ -9852,11 +9860,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_sin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_sin.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_sin_pre_1997 encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_sin.
 
@@ -9888,7 +9896,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- No保険.
+- el 保険.
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -9917,7 +9925,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_latvia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_latvia_eu_driver's_license_number` clave. 
     
@@ -10008,7 +10016,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -10040,7 +10048,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -10078,7 +10086,7 @@ Formato antiguo
   
 - seis dígitos que corresponden a la fecha de nacimiento (DDMMYY) 
 - un guión
-- un dígito que corresponde al siglo de nacimiento ("0" para el s. 19, "1" para el xx y "2" para el s. 21)
+- un dígito que corresponde al s. de nacimiento ("0" para el s. 19, "1" para el s. XX y "2" para el s. 21)
 - cuatro dígitos, generados aleatoriamente
 
 Nuevo formato
@@ -10094,11 +10102,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_latvia_eu_national_id_card` o regex `Regex_latvia_eu_national_id_card_new_format` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_latvia_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_latvia_eu_national_id_card` o regex `Regex_latvia_eu_national_id_card_new_format` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -10150,7 +10158,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - id-number
 - número individual
 - latvija alva
-- identificador de nacionālais
+- nacionālais id
 - national id
 - número de identificación nacional
 - número de identidad nacional
@@ -10214,12 +10222,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_latvia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_latvia_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_latvia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_latvia_eu_passport_number` clave. 
     
@@ -10293,7 +10301,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_lithuania_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_lithuania_eu_driver's_license_number` clave. 
     
@@ -10384,7 +10392,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -10416,7 +10424,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -10456,7 +10464,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos sin espacios y delimitadores:
   
-- un dígito (1-6) que corresponde al sexo y al siglo de nacimiento de la persona
+- un dígito (1-6) que corresponde al género y al siglo de nacimiento de la persona
 - seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
 - tres dígitos que corresponden al número de serie de la fecha de nacimiento
 - un dígito de comprobación
@@ -10467,11 +10475,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_lithuania_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_lithuania_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_lithuania_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -10544,12 +10552,12 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_lithuania_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_lithuania_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_eu_passport_date3` DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+- La expresión regular `Regex_eu_passport_date3` encuentra la fecha con el formato DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_lithuania_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_lithuania_eu_passport_number` clave. 
     
@@ -10620,7 +10628,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_luxemburg_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_luxemburg_eu_driver's_license_number` clave. 
     
@@ -10711,7 +10719,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -10743,7 +10751,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -10791,11 +10799,11 @@ sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_luxemburg_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_luxemburg_eu_national_id_card` clave de. 
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_luxemburg_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 
 
@@ -10857,12 +10865,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_luxemburg_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_luxemburg_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_eu_passport_date3` DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+- La expresión regular `Regex_eu_passport_date3` encuentra la fecha con el formato DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_luxemburg_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_luxemburg_eu_passport_number` clave. 
     
@@ -10953,11 +10961,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_luxemburg_eu_tax_file_number_non_natural` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_luxemburg_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_luxemburg_eu_tax_file_number_non_natural` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -11042,7 +11050,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_malaysia_id_card_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_malaysia_id_card_number.
 
@@ -11108,7 +11116,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_malta_eu_driver's_license_number` clave. 
     
@@ -11199,7 +11207,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -11231,7 +11239,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -11280,11 +11288,11 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_malta_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -11312,7 +11320,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz tao-ciónittadin
+- numru tas-servizz tas-ciónittadin
 - numru numru num-taxxa
 - código numérico personal
 - número de identificación único
@@ -11336,12 +11344,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_malta_eu_passport_number` clave. 
 - Se encuentra una palabra `Keywords_eu_passport_date` clave de
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_malta_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_malta_eu_passport_number` clave. 
     
@@ -11420,11 +11428,11 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión  `Regex_malta_eu_tax_file_number`  regular o encuentra contenido que coincide con el `Regex_malta_eu_tax_file_number_non_maltese_national` patrón. 
 - Se encuentra una palabra  `Keywords_malta_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión  `Regex_malta_eu_tax_file_number` regular o encuentra contenido que coincide con el `Regex_malta_eu_tax_file_number_non_maltese_national` patrón. 
     
 ```xml
@@ -11459,7 +11467,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz tao-ciónittadin
+- numru tas-servizz tas-ciónittadin
 - numru numru num-taxxa
 - código numérico personal
 - tax id
@@ -11503,7 +11511,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_netherlands_bsn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_netherlands_bsn.
 - Se supera la suma de comprobación.
@@ -11560,7 +11568,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_netherlands_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_netherlands_eu_driver's_license_number` clave. 
     
@@ -11651,7 +11659,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -11683,7 +11691,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -11727,12 +11735,12 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_netherlands_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_netherlands_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY (ejemplo: 26 MAA/MAR 2012)
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_netherlands_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_netherlands_eu_passport_number` clave. 
     
@@ -11801,11 +11809,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_netherlands_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_netherlands_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_netherlands_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -11831,7 +11839,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - hulandes impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
-- número de identificación fiscal
+- número de identificación del impuesto
 - número de impuesto
 - nederlands belasting id nummer
 - nederlands belasting identificatie
@@ -11839,9 +11847,9 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - nederlands belastingnummer
 - nederlandse belasting identificatie
 - identificación fiscal de países bajos
-- identificación fiscal de Herherland
-- tinta neerlandesa
-- tinta de Herherland
+- identificación fiscal de netherland
+- hoja de hoja de tinta de países bajos
+- hoja de hoja de herland
 - tax id
 - identificación fiscal no
 - número de identificación fiscal
@@ -11892,11 +11900,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_netherlands_value_added_tax_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_netherlands_value_added_tax_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_netherlands_value_added_tax_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -11947,7 +11955,7 @@ Patrón de 14 a 16 dígitos con delimitador opcional:
 - siete dígitos
 - un espacio o un guión opcional
 - de dos a tres dígitos
-- un guion de opciones o un espacio
+- un espacio o un guión de opciones
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -11955,11 +11963,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_new_zealand_bank_account_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_bank_account_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -12011,11 +12019,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_newzealand_driver_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_newzealand_driver_license_number búsqueda.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_newzealand_driver_license_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -12101,7 +12109,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - asociación de automóviles de Nueva Zelanda
 
 
-## <a name="new-zealand-inland-revenue-number"></a>Número de ingresos interior de Nueva Zelanda
+## <a name="new-zealand-inland-revenue-number"></a>Número de ingresos por el interior de Nueva Zelanda
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -12129,11 +12137,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_inland_revenue_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_new_zealand_inland_revenue_number búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_inland_revenue_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -12161,7 +12169,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - número de ingresos del interior
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Número de ministerio de salud de Nueva Zelanda
+## <a name="new-zealand-ministry-of-health-number"></a>Número de salud del ministerio de Salud de Nueva Zelanda
 
 ### <a name="format"></a>Formato
 
@@ -12179,12 +12187,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_ministry_of_health_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_nz_terms.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_ministry_of_health_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -12246,11 +12254,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_newzealand_social_welfare_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_newzealand_social_welfare_number búsqueda.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_newzealand_social_welfare_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -12271,10 +12279,10 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- social y social #
-- social y social #
-- social y social no.
-- número de social desadoba
+- social desa adoba #
+- social desa adoba #
+- social y social No.
+- número de redes sociales
 - swn #
 
    
@@ -12297,12 +12305,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_norway_id_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_norway_id_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_norway_id_numbe encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -12352,7 +12360,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_philippines_unified_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_philippines_id.
 
@@ -12398,7 +12406,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_poland_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_poland_eu_driver's_license_number` clave. 
     
@@ -12489,7 +12497,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -12521,7 +12529,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -12541,7 +12549,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver de s_license_number
 
-- prawo almudada
+- prawo langdy
 - prawa langdy
 
 ## <a name="poland-identity-card"></a>Tarjeta de identidad de Polonia
@@ -12560,7 +12568,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_polish_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_polish_national_id_passport_number.
 - Se supera la suma de comprobación.
@@ -12606,12 +12614,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_pesel_identification_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_pesel_identification_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_pesel_identification_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -12660,7 +12668,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_polish_passport_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_polish_national_id_passport_number.
 - Se supera la suma de comprobación.
@@ -12698,7 +12706,7 @@ número de nueve o 14 dígitos
 
 ### <a name="pattern"></a>Patrón
 
-número de nueve dígitos o 14 dígitos:
+número de nueve o 14 dígitos:
 
 - nueve dígitos o 
 - nueve dígitos
@@ -12711,11 +12719,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_polish_regon_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_polish_regon_number búsqueda.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_polish_regon_number encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -12772,7 +12780,7 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_poland_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_poland_eu_tax_file_number` clave de. 
     
@@ -12836,7 +12844,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_portugal_citizen_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_portugal_citizen_card.
 
@@ -12889,7 +12897,7 @@ Patrón 1: dos letras seguidas de 5/6 con caracteres especiales:
 - Un dígito
 
 Patrón 2: una letra seguida de 6/8 dígitos con caracteres especiales:
-- Una letra (no distingue entre mayúsculas y minúsculas)
+- Una letra (no distingue mayúsculas de minúsculas)
 - Un guión 
 - Seis u ocho dígitos
 - Un espacio
@@ -12902,7 +12910,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_portugal_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_portugal_eu_driver's_license_number` clave. 
     
@@ -12993,7 +13001,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -13025,7 +13033,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -13075,12 +13083,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_portugal_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_portugal_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_portugal_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_portugal_eu_passport_number` clave.
     
@@ -13162,11 +13170,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_portugal_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_portugal_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_portugal_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -13228,7 +13236,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_romania_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_romania_eu_driver's_license_number` clave. 
     
@@ -13319,7 +13327,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -13351,7 +13359,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -13392,7 +13400,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
   
 ### <a name="pattern"></a>Patrón
 
-- 1 dígito del 1 al 9
+- 1 dígito de 1 a 9
 - 6 dígitos que representan la fecha de nacimiento (AAMMDD)
 - 2 dígitos que pueden ser 01-52 o 99
 - 4 dígitos
@@ -13403,11 +13411,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_romania_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_romania_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_romania_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -13492,12 +13500,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_romania_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_romania_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha en el formato `Regex_romania_eu_passport_date` DD MMM/MMM YY (ejemplo: 01 FEB/FEB 10) o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_romania_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_romania_eu_passport_number` clave. 
     
@@ -13578,7 +13586,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - El elemento regex Regex_Russian_Passport_Number_Domestic encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Russian_Passport_Number búsqueda.
 
@@ -13638,7 +13646,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - El elemento regex Regex_Russian_Passport_Number_International encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Russian_Passport_Number búsqueda.
 
@@ -13688,7 +13696,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_saudi_arabia_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_saudi_arabia_national_id.
 
@@ -13733,12 +13741,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_singapore_nric encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_singapore_nric.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_singapore_nric encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -13787,7 +13795,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovakia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_slovakia_eu_driver's_license_number` clave. 
     
@@ -13878,7 +13886,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -13910,7 +13918,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -13960,11 +13968,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_slovakia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_slovakia_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_slovakia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -14046,12 +14054,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovakia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovakia_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovakia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovakia_eu_passport_number` clave. 
     
@@ -14124,7 +14132,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovenia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_slovenia_eu_driver's_license_number` clave. 
     
@@ -14215,7 +14223,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -14247,7 +14255,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -14273,7 +14281,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
 
-## <a name="slovenia-unique-master-citizen-number"></a>Número de ciudadano principal único de Eslovenia
+## <a name="slovenia-unique-master-citizen-number"></a>Número de ciudadano maestro único de Eslovenia
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -14291,7 +14299,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
   
 - siete dígitos que corresponden a la fecha de nacimiento (DDMMLLL) donde "LLL" corresponde a los tres últimos dígitos del año de nacimiento 
 - dos dígitos que corresponden al área de nacimiento "50"
-- tres dígitos que corresponden a una combinación de sexo y número de serie para las personas que han nazca el mismo día (000-499 para los hombres y 500-999 para las mujeres)
+- tres dígitos que corresponden a una combinación de sexo y número de serie para las personas que nazcan el mismo día (000-499 para los hombres y 500-999 para las mujeres)
 - un dígito de comprobación
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -14300,11 +14308,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_slovenia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_slovenia_eu_national_id_card` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_slovenia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -14370,12 +14378,12 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovenia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovenia_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_slovenia_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovenia_eu_passport_number` clave. 
     
@@ -14457,11 +14465,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_slovenia_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_slovenia_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_slovenia_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -14525,7 +14533,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_south_africa_identification_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_south_africa_identification_number.
 - Se supera la suma de comprobación.
@@ -14559,7 +14567,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 13 dígitos:
 - seis dígitos en el formato AAMMDD que son la fecha de nacimiento 
 - un guión 
-- un dígito determinado por el siglo y el sexo 
+- un dígito determinado por el siglo y el género 
 - código de región de nacimiento de cuatro dígitos 
 - un dígito usado para diferenciar a las personas para las que los números anteriores son idénticos 
 - un dígito de comprobación.
@@ -14570,12 +14578,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_south_korea_resident_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_south_korea_resident_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_south_korea_resident_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -14621,11 +14629,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_spain_eu_driver's_license_number` clave. 
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
     
 ```xml
@@ -14728,7 +14736,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -14760,7 +14768,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -14789,7 +14797,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - permisos de conducir
 - permisos conducir
 - carrón
-- zona de conducir
+- habat de conducir
 - licencia de manejo
 - licencia manejo
 
@@ -14819,11 +14827,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
 - Se encuentra una palabra  `Keywords_spain_eu_national_id_card"` clave de. 
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
 
     
@@ -14893,12 +14901,12 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_spain_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_spain_eu_passport_number` clave. 
 - La expresión regular encuentra la fecha con el formato `Regex_spain_eu_passport_date` DD-MM-YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_spain_eu_passport_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_spain_eu_passport_number` clave.
     
@@ -14983,7 +14991,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_spanish_social_security_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -15019,7 +15027,7 @@ Personas físicas de España con una tarjeta de identidad nacional de España:
 - ocho dígitos 
 - una letra mayúscula (distingue mayúsculas de minúsculas) 
     
-Españoles no residentes sin una tarjeta de identidad nacional de España
+Españoles no residentes sin un documento de identidad nacional de España
   
 - una letra mayúscula "L" (distingue mayúsculas de minúsculas)
 - siete dígitos
@@ -15027,7 +15035,7 @@ Españoles no residentes sin una tarjeta de identidad nacional de España
     
 Españoles residentes menores de 14 años sin una tarjeta de identidad nacional de España:
   
-- una letra mayúscula "K" (distingue mayúsculas de minúsculas)
+- una letra mayúscula"K" (distingue mayúsculas de minúsculas)
 - siete dígitos 
 - una letra mayúscula (distingue mayúsculas de minúsculas)
     
@@ -15049,11 +15057,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_spain_eu_tax_file_number` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_citizen` patrón. 
 - Se encuentra una palabra  `Keywords_spain_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_spain_eu_tax_file_number` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_citizen` patrón. 
     
 ```xml
@@ -15110,11 +15118,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - tin #
 
 
-## <a name="sql-server-connection-string"></a>SQL Server cadena de conexión
+## <a name="sql-server-connection-string"></a>SQL Server de conexión
 
 ### <a name="format"></a>Formato
 
-La cadena "User Id", "User ID", "uid" o "UserId" seguida de los caracteres y cadenas descritos en el patrón siguiente.
+La cadena "User Id", "User ID", "uid" o "UserId" seguida de los caracteres y cadenas descritos en el siguiente patrón.
 
 ### <a name="pattern"></a>Patrón
 
@@ -15132,11 +15140,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular CEP_Regex_SQLServerConnectionString encuentra contenido que coincide con el patrón.
 - No se encuentra CEP_GlobalFilter **palabra clave de la** página.
-- La expresión regular CEP_PasswordPlaceHolder **encuentra contenido** que coincide con el patrón.
-- La expresión regular CEP_CommonExampleKeywords **encuentra contenido** que coincide con el patrón.
+- La expresión regular CEP_PasswordPlaceHolder **no encuentra** contenido que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords **no encuentra** contenido que coincida con el patrón.
 
 ```sql
 <!---SQL Server Connection String>
@@ -15206,7 +15214,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular  `Regex_sweden_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_sweden_eu_driver's_license_number` clave. 
     
@@ -15297,7 +15305,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers lic #
 - drivers lics #
 - licencia de controladores #
-- licencias de controladores #
+- drivers licenses #
 - drivers licence #
 - drivers licences #
 - driver'lic #
@@ -15329,7 +15337,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - dlno #
 - driv lic
 - driv licen
-- licencia driv
+- driv license
 - driv licenses
 - driv licence
 - driv licences
@@ -15381,12 +15389,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función `Func_swedish_national_identifier` encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra `Keywords_swedish_national_identifier` clave de
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función `Func_swedish_national_identifier` encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -15442,7 +15450,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - la expresión regular Regex_sweden_passport_number encuentra contenido que coincide con el patrón.
 - se cumple una de las siguientes condiciones:
     - se encuentra una palabra clave Keyword_passport búsqueda.
@@ -15486,8 +15494,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - passportnumber 
 - パスポート 
 - パスポート番号 
-- (en la ポ de la ポ) 
-- パスポート# 
+- (en la ポ) 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -15516,7 +15524,7 @@ diez dígitos y un símbolo:
 - seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
 - un signo más o menos
 - tres dígitos que hacen que el número de identificación sea único, donde: 
-  - para los números emitidos antes de 1990, el séptimo y octavo dígito identifican el país de nacimiento o las personas que han nado en el exterior
+  - para números emitidos antes de 1990, el séptimo y octavo dígito identifican el país de nacimiento o las personas que han nado en el exterior
   - el dígito en la noveno posición indica el género por impar para el varón o incluso para la mujer
 - un dígito de comprobación
     
@@ -15526,11 +15534,11 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_sweden_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_sweden_eu_tax_file_number` clave de. 
     
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_sweden_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
     
 ```xml
@@ -15600,7 +15608,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_swift encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_swift.
 
@@ -15640,7 +15648,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - le numéro BIC
 - # <a name="bic"></a>BIC
 - code identificateur de banque
-- SWIFT
+- SWIFT(SWIFT)
 - SWIFT番号
 - BIC番号
 - BIC
@@ -15668,7 +15676,7 @@ Número de 13 dígitos
 
 Número de 13 dígitos:
 
-- tres dígitos : 756
+- tres dígitos - 756
 - un punto opcional
 - cuatro dígitos
 - un punto opcional
@@ -15682,11 +15690,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_swiss_social_security_number_ahv encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keywords_swiss_social_security_number_ahv búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_swiss_social_security_number_ahv encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -15718,7 +15726,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - uniqueidno #
 - identificación única no.
 - avs number
-- identidad personal no versiquemutsnummer
+- identidad personal no versálisissnummer
 - identifikationsnummer
 - einzigartige identität nicht
 - sozialversálisissnummer
@@ -15745,12 +15753,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_taiwanese_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_taiwanese_national_id.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_taiwanese_national_id encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -15807,7 +15815,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_taiwan_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_taiwan_passport.
 
@@ -15853,7 +15861,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_taiwan_resident_certificate encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_taiwan_resident_certificate.
 
@@ -15903,11 +15911,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Thai_Citizen_Id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Thai_Citizen_Id búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Thai_Citizen_Id encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -15950,11 +15958,11 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Turkish_National_Id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Turkish_National_Id búsqueda.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_Turkish_National_Id encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -15979,7 +15987,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Vatandaşlık nuanessı
 - Vatandaşlık no
 
-## <a name="uk-drivers-license-number"></a>Reino Unido número de licencia de controlador
+## <a name="uk-drivers-license-number"></a>Reino Unido número de licencia de conductor
 Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conductor de la UE y está disponible como una entidad independiente de tipo de información confidencial.
 
 ### <a name="format"></a>Formato
@@ -16001,7 +16009,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_drivers_license encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_uk_drivers_license.
 - Se supera la suma de comprobación.
@@ -16022,7 +16030,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - DVLA 
 - light vans 
-- quad quadiks 
+- quadiks 
 - motor cars 
 - 125 cco 
 - sidecar 
@@ -16040,7 +16048,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-dos letras seguidas de 1 a 4 dígitos
+dos letras seguidas de 1-4 dígitos
 
 ### <a name="pattern"></a>Patrón
 
@@ -16052,7 +16060,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_uk_electoral encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_uk_electoral.
 
@@ -16099,7 +16107,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_nhs_number encuentra contenido que coincide con el patrón.
 - Una de las siguientes opciones es verdadera:
     - Se encuentra una palabra clave de Keyword_uk_nhs_number.
@@ -16156,9 +16164,9 @@ siete caracteres o nueve caracteres separados por espacios o guiones
 
 dos patrones posibles:
 
-- dos letras (los NINO válidos solo usan ciertos caracteres en este prefijo, que este patrón valida; no distingue mayúsculas de minúsculas)
+- dos letras (los NINO válidos usan solo ciertos caracteres en este prefijo, que este patrón valida; no distingue entre mayúsculas y minúsculas)
 - seis dígitos
-- ya sea 'A', 'B', 'C' o 'D' (como el prefijo, solo se permiten determinados caracteres en el sufijo, no distinguen mayúsculas de minúsculas)
+- ya sea 'A', 'B', 'C' o 'D' (como el prefijo, solo se permiten ciertos caracteres en el sufijo, no distinguen mayúsculas de minúsculas)
 
 OR
 
@@ -16178,11 +16186,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_nino encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_uk_nino.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_nino encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -16246,7 +16254,7 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función  `Func_uk_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
 - Se encuentra una palabra  `Keywords_uk_eu_tax_file_number` clave de. 
     
@@ -16298,7 +16306,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_usa_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_usa_Bank_Account.
 
@@ -16362,12 +16370,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_york_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_[state_name]_drivers_license_name.
 - Se encuentra una palabra clave de Keyword_us_drivers_license.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_york_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_[state_name]_drivers_license_name.
 - Se encuentra una palabra clave de Keyword_us_drivers_license_abbreviations.
@@ -16525,15 +16533,15 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_formatted_itin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_itin.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_itin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_itin.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_formatted_itin o Func_unformatted_itin encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -16574,7 +16582,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - individual taxpayer 
 
 
-## <a name="us-social-security-number-ssn"></a>Número de la seguridad social (SSN) de EE. UU.
+## <a name="us-social-security-number-ssn"></a>Número de seguridad social (SSN) de EE. UU.
 
 ### <a name="format"></a>Formato
 
@@ -16598,15 +16606,15 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_ssn busca contenido que coincida con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
-Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_randomized_formatted_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
@@ -16671,7 +16679,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_usa_uk_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_passport.
 
@@ -16697,8 +16705,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - passportnumber 
 - パスポート 
 - パスポート番号 
-- (en la ポ de la ポ) 
-- パスポート# 
+- (en la ポ) 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -16729,7 +16737,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - El elemento regex Regex_Ukraine_Passport_Domestic encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Ukraine_Passport_Domestic búsqueda.
 
@@ -16769,7 +16777,7 @@ patrón alfanumérico de ocho caracteres
 
 ### <a name="pattern"></a>Patrón
 
-patrón alfanumérico de ocho caracteres:
+Patrón alfanumérico de ocho caracteres:
 - dos letras o dígitos
 - seis dígitos
 
@@ -16779,8 +16787,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- El archivo regex Regex_Ukraine_Passport_International encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El elemento regex Regex_Ukraine_Passport_International encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave Keyword_Ukraine_Passport_International búsqueda.
 
 ```xml

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: a0f4307cc0ed42a8ed53cdeefdb0a7b32eb36d35
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 39abcbde82c2902b091b42db3dbc8e1ee2cbd924
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930587"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942795"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -82,6 +82,7 @@ Actualmente hay recomendaciones para los siguientes productos:
 - Microsoft Defender para punto de conexión
 - Microsoft Defender for Identity
 - Cloud App Security
+- Microsoft Teams
 
 Próximamente se ofrece una serie de recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea base. También puedes marcar las acciones de mejora como cubiertas por un tercero o mitigación alternativa.
 
@@ -96,7 +97,7 @@ Si activas los valores predeterminados de seguridad, se te concederán puntos co
 - Habilitar la directiva para bloquear la autenticación heredada (7 puntos)
 
 >[!IMPORTANT]
->Los valores predeterminados de seguridad incluyen características de seguridad que proporcionan seguridad similar a las acciones de mejora de la "directiva de riesgo de inicio de sesión" y la "directiva de riesgo de usuario". En lugar de configurar estas directivas en función de los valores predeterminados de seguridad, se recomienda actualizar sus estados a "Resuelto mediante mitigación alternativa".
+>Los valores predeterminados de seguridad incluyen características de seguridad que proporcionan seguridad similar a las acciones de mejora de la "directiva de riesgo de inicio de sesión" y la "directiva de riesgo de usuario". En lugar de configurar estas directivas por encima de los valores predeterminados de seguridad, recomendamos actualizar sus estados a "Resuelto mediante mitigación alternativa".
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
@@ -125,7 +126,7 @@ Con el acceso de solo lectura, no es posible editar el estado o las notas de una
 
 ## <a name="risk-awareness"></a>Reconocimiento de riesgos
 
-Puntuación de seguridad de Microsoft es un resumen numérico de su posición de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad. No es una medida absoluta de la probabilidad de que se infracción el sistema o los datos. En su lugar, representa el grado en que ha adoptado controles de seguridad en su entorno de Microsoft que pueden ayudar a compensar el riesgo de que se infracción. Ningún servicio en línea es insocuo frente a las infracciones de seguridad y la puntuación de seguridad no debe interpretarse como una garantía contra las infracciones de seguridad de ninguna manera.
+Puntuación de seguridad de Microsoft es un resumen numérico de su posición de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad. No es una medida absoluta de la probabilidad de que se infracción el sistema o los datos. En su lugar, representa el grado en que ha adoptado controles de seguridad en su entorno de Microsoft que pueden ayudar a compensar el riesgo de que se infracción. Ningún servicio en línea es ileso de las infracciones de seguridad y la puntuación de seguridad no debe interpretarse como una garantía contra las infracciones de seguridad de ninguna manera.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
