@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870856"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921139"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -153,7 +153,7 @@ Para configurar el uso compartido del sitio solo para propietarios
 2. En la barra de herramientas del equipo, haga clic en **Archivos**.
 3. Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
 4. En la barra de herramientas, haga clic en el sitio de SharePoint subyacente, en el icono de configuración y, luego, en **Permisos del sitio**.
-5. En el panel Permisos del sitio, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
+5. En el panel **Permisos del sitio**, en **Uso compartido del sitio**, haga clic en **Cambiar cómo pueden compartir los miembros**.
 6. En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio**.
 7. Establezca **Permitir solicitudes de acceso** en **Desactivado** y, después, haga clic en **Guardar**.
 

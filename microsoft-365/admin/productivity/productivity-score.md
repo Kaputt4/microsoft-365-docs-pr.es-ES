@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688336"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921247"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -87,6 +87,9 @@ La Puntuación de productividad solo está disponible en el Centro de administra
 - Administrador de Teams 
 - Lector global 
 - Lector de informes 
+
+> [!NOTE]
+> Solo un profesional de TI con el rol de administrador global puede registrarse u inscribir un espacio empresarial para la Puntuación de productividad.
 
 Tenga en cuenta que la información está pensada para que se use solo para realizar transformaciones digitales con Microsoft 365 y, por lo tanto, es necesario compartirlas con prudencia. 
 
