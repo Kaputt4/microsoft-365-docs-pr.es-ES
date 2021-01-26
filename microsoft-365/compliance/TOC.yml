@@ -106,7 +106,6 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Crear tipos de información confidencial personalizados con coincidencia exacta de datos
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Introducción a los tipos de información confidencial personalizados
         - name: Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial
           href: sit-edm-wizard.md
         - name: Modificar el esquema de coincidencia de datos exacto para usar una coincidencia configurable
