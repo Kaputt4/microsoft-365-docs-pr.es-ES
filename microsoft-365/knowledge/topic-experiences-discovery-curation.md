@@ -1,5 +1,5 @@
 ---
-title: 'Tema experiencia y descubrimiento de temas de curation (versión preliminar) '
+title: 'Detección y conservación de temas de experiencias de tema (versión preliminar) '
 description: Información general sobre cómo se detectan los temas.
 ms.author: efrene
 author: efrene
@@ -8,49 +8,51 @@ audience: admin
 ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 2d885d841b280e345d90742fe003bb443160c21f
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ea0bbc1f7d34ff01fcf446bfa4bbd0b95f310c4c
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699059"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976172"
 ---
-# <a name="topic-experiences-discovery-and-curation-preview"></a>Tema experiencia de detección y curation (versión preliminar)
+# <a name="topic-experiences-discovery-and-curation-preview"></a>Detección y conservación de experiencias de tema (versión preliminar)
 
 > [!Note] 
-> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
+> El contenido de este artículo es para Project Cortex Private Preview. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
-El tema experiencias convierte la información de conocimiento a conocimiento en su entorno de Microsoft 365. Hemos experimentado mucha lectura a través de documentos y páginas de sitio donde nos encontramos con términos con los que no estamos familiarizados. Muchas veces detenemos lo que estamos haciendo para dedicar más tiempo a buscar más información.
+Experiencias de tema convierte la información de conocimiento en conocimientos en su entorno de Microsoft 365. Todos hemos experimentado la lectura a través de documentos y páginas del sitio donde encontramos términos con los que no estamos familiarizados. Muchas veces detenemos lo que estamos haciendo para dedicar mucho tiempo a buscar más información.
 
-Las experiencias del tema usan Microsoft Graph y AI para identificar los **temas** de la organización.  Un tema es una frase o término que tiene un significado específico para una organización, donde los usuarios se beneficiarían al ser capaces de ver una página de wiki. AI busca personas y contenido conectados al tema y, si ha descubierto lo suficiente, se convierte en un tema sugerido.
+Lo que hace Experiencias de tema es usar Microsoft Graph y AI para identificar **los temas** de su organización.  Un tema es una frase o término que tiene un significado específico para una organización, donde los usuarios se beneficiarían al poder ver una página wiki al respecto. La inteligencia artificial busca personas y contenido conectado al tema y, si es suficiente, se convierte en un tema sugerido.
 
-La información del tema generado de AI se agrega a una **página del tema**, que puede contener:
-- Una breve descripción del tema.
+La información de tema generada por la inteligencia artificial se agrega a una **página De tema,** que puede contener:
+- Breve descripción del tema.
 - Nombres alternativos para el tema.
-- Personas que podrían saber más sobre el tema.
-- Sitios, archivos y páginas que podrían estar relacionadas con el tema.
+- Personas que puedan conocer más sobre el tema.
+- Sitios, archivos y páginas que pueden estar relacionados con el tema.
 
-A continuación, se asegura de que todas las instancias de un tema se resaltan en todas las páginas de sitio modernas de SharePoint de su espacio empresarial. Cuando un usuario tiene curiosidad de obtener más información sobre un tema, puede seleccionar el tema resaltado para ver una tarjeta de **Resumen de temas** que proporcione una descripción breve. Y si desea obtener más información, puede seleccionar un vínculo de **detalles del tema** en el resumen para abrir la página del tema detallado.
+A continuación, las experiencias de tema se asegura de que todas las instancias de un tema se resaltan en todas las páginas de sitio modernas de SharePoint del espacio empresarial. Cuando un usuario tiene curiosidad por obtener más información sobre un  tema, puede seleccionar el tema resaltado para ver una tarjeta de resumen de tema que proporciona una breve descripción. Y si quieren obtener más información, pueden seleccionar un vínculo **Detalles** del tema en el resumen para abrir la página de temas detallada.
 
 ![Aspectos destacados del tema](../media/knowledge-management/saturn.png) </br>
 
-Además, los usuarios también podrán buscar temas a través de Microsoft Search.
+Además, los usuarios también podrán encontrar temas a través de Microsoft Search.
 
 
-## <a name="topic-curation"></a>Tema curation
+## <a name="topic-curation"></a>Curación de temas
 
-El tema experiencias de bienvenida "curation" humano para mejorar la calidad de los temas. Mientras que AI identifica y sugiere inicialmente los temas, ha realizado manualmente actualizaciones para el contenido de los colaboradores, la confirmación de los usuarios para el contenido generado por AI y los comentarios sobre la utilidad de los temas son fundamentales.
+Experiencias de tema agradece la "curación" humana para mejorar la calidad de sus temas. Aunque la inteligencia artificial identifica y sugiere temas inicialmente, las actualizaciones realizadas manualmente al contenido de los colaboradores, la confirmación de los usuarios sobre el contenido generado por la inteligencia artificial y los comentarios sobre la utilidad de los temas son fundamentales.
 
-- Los **administradores del conocimiento** de la organización pueden revisar los temas generados por AI ("temas sugeridos"). En la página Administrar temas del centro de temas, pueden optar por confirmarlos como válidos o rechazarlos para evitar que se vean.
+- Los administradores de conocimientos de su  organización pueden revisar los temas generados por IA ("temas sugeridos"). En la página Administrar temas del Centro de temas, pueden elegir confirmarlos como válidos o rechazarlos para evitar que se puedan ver.
 
-- Puede asignar los permisos *crear y editar temas* a cualquiera de los usuarios con licencia para que puedan realizar cambios en los temas existentes o crear temas nuevos cuando sea necesario. 
+- Puede asignar permisos de creación y *edición* de temas a cualquiera de los usuarios con licencia para que puedan realizar cambios en los temas existentes o crear nuevos temas cuando sea necesario. 
 
-- Incluso se pedirá a los usuarios que solo tienen acceso de lectura al tema (visores de temas) que comprueben la utilidad de temas específicos.
+- Incluso a los usuarios que solo tienen acceso de lectura a un tema (visores de temas) se les pedirá que comprueben la utilidad de temas específicos.
 
-Incluso con curation humanos, AI buscará continuamente más información sobre los temas y buscará la verificación humana. Por ejemplo, si AI cree que es una persona que debe anclarse como experto en un tema, le pedirá que confirme esto. 
+Incluso con la curación humana, la inteligencia artificial buscará continuamente más información sobre los temas y buscará la verificación humana. Por ejemplo, si AI cree que es una persona que debe estar anclada como experto en un tema, le pedirá que lo confirme. 
 
 
 

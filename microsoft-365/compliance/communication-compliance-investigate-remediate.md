@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61f92b5873497a75fd516900a7b7cd67a5d63b41
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: ea96780846507e7fc3edccb28e04055ce79261fa
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883679"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980103"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -33,21 +33,21 @@ Después de configurar las directivas de cumplimiento de comunicaciones, empezar
 
 El primer paso para investigar los problemas detectados por las directivas es revisar las alertas de cumplimiento de comunicaciones en el Centro de cumplimiento de Microsoft 365. Hay varias áreas en el área de solución de cumplimiento de comunicaciones que le ayudarán a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
 
-- **Página de directiva** de cumplimiento de comunicaciones: cuando inicie sesión con credenciales para una cuenta de administrador en su organización de [https://compliance.microsoft.com](https://compliance.microsoft.com) Microsoft 365, seleccione Cumplimiento de comunicaciones para mostrar la página Directiva de cumplimiento **de** comunicaciones.  Esta página muestra las directivas de cumplimiento de comunicaciones configuradas para su organización de Microsoft 365 y vínculos a plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos y el estado actual de la directiva. Al seleccionar una directiva, se muestran todas las alertas pendientes de coincidencias con la directiva, se selecciona una alerta específica para iniciar la página de detalles de la directiva y para iniciar acciones de corrección.
-- **Alertas:** vaya a **Alertas de cumplimiento** de comunicaciones para mostrar los últimos 30 días de alertas  >   agrupadas por coincidencias de directiva. Esta vista le permite ver rápidamente qué directivas de cumplimiento de comunicaciones generan la mayoría de las alertas ordenadas por gravedad. Para iniciar acciones de corrección, seleccione la directiva asociada a la alerta para iniciar la **página detalles de la** directiva. Desde  la página Detalles de la directiva, puede  revisar un resumen de las actividades  de la página Información general,  revisar y actuar sobre los mensajes de alerta en la página Pendiente o revisar el historial de alertas cerradas en la página Resuelto.
+- **Página de directiva** de cumplimiento de comunicaciones: cuando inicie sesión para usar credenciales para una cuenta de administrador en su organización de [https://compliance.microsoft.com](https://compliance.microsoft.com) Microsoft 365, seleccione Cumplimiento de comunicaciones para mostrar la página Directiva de cumplimiento **de** comunicaciones.  Esta página muestra las directivas de cumplimiento de comunicaciones configuradas para su organización de Microsoft 365 y vínculos a plantillas de directiva recomendadas. Cada directiva enumerada incluye el recuento de alertas que necesitan revisión, el número de elementos escalados y resueltos, el estado de la directiva y la fecha y hora del último examen de directiva. Al seleccionar una directiva, se muestran todas las alertas pendientes de coincidencias con la directiva, se selecciona una alerta específica para iniciar la página de detalles de la directiva y para iniciar acciones de corrección.
+- **Alertas:** vaya a **Alertas de cumplimiento** de comunicaciones para mostrar los últimos 30 días de alertas  >   agrupadas por coincidencias de directiva. Esta vista le permite ver rápidamente qué directivas de cumplimiento de comunicaciones generan la mayoría de las alertas ordenadas por gravedad. Para iniciar acciones de corrección, seleccione la directiva asociada a la alerta para iniciar la página de detalles **de la** directiva. Desde  la página Detalles de la directiva, puede  revisar un resumen de las actividades  de la página Información general,  revisar y actuar sobre los mensajes de alerta en la página Pendiente o revisar el historial de alertas cerradas en la página Resuelto.
 - **Informes:** vaya a Informes **de cumplimiento de**  >  **comunicaciones** para mostrar widgets de informes de cumplimiento de comunicaciones. Cada widget proporciona información general sobre las actividades y los estados de cumplimiento de las comunicaciones, incluido el acceso a información más detallada sobre las coincidencias de directivas y las acciones de corrección.
 
 ### <a name="using-filters"></a>Usar filtros
 
 El siguiente paso es ordenar los mensajes para que sea más fácil investigar alertas. Desde la **página Detalles de** la directiva, el cumplimiento de comunicaciones admite el filtrado de varios niveles para varios campos de mensajes para ayudarle a investigar y revisar rápidamente los mensajes con coincidencias de directiva. El filtrado está disponible para los elementos pendientes y resueltos para cada directiva configurada. Puede configurar consultas de filtro para una directiva o configurar y guardar consultas de filtro personalizadas y predeterminadas para su uso en cada directiva específica. Después de configurar campos para un filtro, verá los campos de filtro que se muestran en la parte superior de la cola de mensajes de alerta que puede configurar para valores de filtro específicos.
 
-Para obtener una lista completa de filtros y detalles de campo, consulte [Filtros](communication-compliance-feature-reference.md#filters) en el artículo de referencia de características.
+Para obtener una lista completa de filtros y detalles de campo, consulte [Filtros en](communication-compliance-feature-reference.md#filters) el artículo de referencia de características.
 
 #### <a name="to-configure-a-filter"></a>Para configurar un filtro
 
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización de Microsoft 365.
 
-2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones.**
+2. En el Centro de cumplimiento de Microsoft 365, vaya **a Cumplimiento de comunicaciones.**
 
 3. Seleccione la **pestaña Directivas** y, a continuación, seleccione una directiva para investigación y haga doble clic para abrir la **página** Directiva.
 
@@ -57,7 +57,7 @@ Para obtener una lista completa de filtros y detalles de campo, consulte [Filtro
 
 6. Selecciona una o más casillas para habilitar filtros para estas alertas. Puede elegir entre varios filtros, *incluidos Date*, *Sender*, *Subject/Title*, *Clasificadores* y mucho más.
 
-7. Si desea guardar el filtro seleccionado como filtro predeterminado, seleccione **Guardar como predeterminado.** Si desea usar este filtro como filtro guardado, seleccione **Listo**.
+7. Si desea guardar el filtro seleccionado como filtro predeterminado, seleccione **Guardar como predeterminado.** Si desea usar este filtro como filtro guardado, seleccione **Listo.**
 
 8. Si desea guardar los filtros seleccionados como una consulta de filtro, seleccione Guardar **el** control de consulta después de configurar al menos un valor de filtro. Escriba un nombre para la consulta de filtro y seleccione **Guardar**. Este filtro solo está disponible para esta directiva y aparece en la sección Consultas de **filtro guardadas** de la **página Detalles** de filtros.
 
@@ -71,7 +71,7 @@ Las directivas de cumplimiento de comunicaciones analizan automáticamente y agr
 
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización de Microsoft 365.
 
-2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones.**
+2. En el Centro de cumplimiento de Microsoft 365, vaya **a Cumplimiento de comunicaciones.**
 
 3. Seleccione la **pestaña Directivas** y, a continuación, seleccione una directiva para investigación y haga doble clic para abrir la **página** Directiva.
 
@@ -99,10 +99,10 @@ Independientemente de dónde empieces a revisar las alertas o el filtrado que co
 
 ### <a name="step-2-examine-the-message-details"></a>Paso 2: Examinar los detalles del mensaje
 
-Después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y determinar otras acciones de corrección. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay varias vistas diferentes disponibles para ayudarle a decidir el curso de acción correcto:
+Después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y determinar otras acciones de corrección. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay varias vistas diferentes disponibles para ayudarle a decidir el curso de acción adecuado:
 
 - **Vista de origen:** esta vista es la vista de mensajes estándar que se ve habitualmente en la mayoría de las plataformas de mensajería basadas en web. La información del encabezado tiene el formato de estilo normal y el cuerpo del mensaje admite archivos gráficos con formato y texto ajustado por palabras.
-- **Vista de** texto: la vista de texto muestra una vista de solo texto numerado de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para los términos coincidentes en la directiva de cumplimiento de comunicaciones asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente mensajes largos y datos adjuntos para el área de interés. En algunos casos, el texto resaltado puede estar solo en los datos adjuntos de los mensajes que coinciden con las condiciones de la directiva. Los archivos incrustados no se muestran y la numeración de líneas de esta vista es útil para hacer referencia a detalles pertinentes entre varios revisores.
+- **Vista de** texto: la vista de texto muestra una vista de solo texto numerado de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para los términos coincidentes en la directiva de cumplimiento de comunicaciones asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente mensajes largos y datos adjuntos para el área de interés. En algunos casos, el texto resaltado puede estar solo en los datos adjuntos de los mensajes que coinciden con las condiciones de la directiva. Los archivos incrustados no se muestran y la numeración de líneas de esta vista resulta útil para hacer referencia a detalles pertinentes entre varios revisores.
 - **Vista anotada:** esta vista permite a los revisores agregar anotaciones directamente en el mensaje que se guardan en la vista del mensaje.
 - **Historial de usuarios:** la vista Historial de usuarios muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de comunicaciones para el usuario que envía el mensaje.
 - **Vista de detalles del mensaje:** vista avanzada de los metadatos del mensaje y la información de configuración.
@@ -119,7 +119,7 @@ Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir vari
 - **Power Automate (versión preliminar):** use un flujo de Power Automate para automatizar las tareas de proceso de un mensaje de alerta. De forma predeterminada,  el cumplimiento de las comunicaciones incluye el administrador de notificaciones cuando un usuario tiene una plantilla de flujo de alertas de cumplimiento de comunicaciones que los revisores pueden usar para automatizar el proceso de notificación para los usuarios con alertas de mensajes. Para obtener más información acerca de la creación y administración de flujos de Power Automate en el cumplimiento de las comunicaciones, vea el artículo de referencia de la característica de [cumplimiento de comunicaciones.](communication-compliance-feature-reference.md#power-automate-flows)
 - **Etiqueta como:** etiquete el *mensaje* como *compatible,* no compatible o tan *cuestionable* como se relaciona con las directivas y estándares de su organización. Agregar etiquetas y comentarios de etiquetado le ayuda a microfiltrar alertas de directiva para escalaciones o como parte de otros procesos de revisión interna. Una vez completada la etiqueta, también puede decidir resolver el mensaje para moverlo fuera de la cola de revisión pendiente.
 - **Notificar:** puede usar el control **Notificar** para asignar una plantilla de aviso personalizada a la alerta y enviar un aviso de advertencia al usuario. Elija la plantilla de  aviso adecuada configurada  en el área de configuración de cumplimiento de comunicaciones y seleccione Enviar un aviso por correo electrónico al usuario que envió el mensaje y para resolver el problema.
-- **Escalar:** con el control **Escalar,** puede elegir quién más de su organización debe revisar el mensaje. Elija una lista de revisores configurados en la directiva de cumplimiento de comunicaciones para enviar una notificación por correo electrónico solicitando una revisión adicional de la alerta del mensaje. El revisor seleccionado puede usar un vínculo en la notificación por correo electrónico para ir directamente a los elementos escalados a ellos para su revisión.
+- **Escalar:** con el control **Escalar,** puede elegir quién más de su organización debe revisar el mensaje. Elija una lista de revisores configurados en la directiva de cumplimiento de comunicaciones para enviar una notificación por correo electrónico solicitando una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación por correo electrónico para ir directamente a los elementos escalados a ellos para su revisión.
 - **Escala para investigación:** con **el escalamiento** para el control de investigación, puede crear un nuevo caso de [eDiscovery](overview-ediscovery-20.md) avanzado para uno o varios mensajes. Proporcionará un nombre y notas para el nuevo caso, y el usuario que envió el mensaje que coincide con la directiva se asigna automáticamente como administrador del caso. No necesita ningún permiso adicional para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje. Puede seleccionar un total de 100 mensajes al crear un caso de eDiscovery avanzado durante el proceso de corrección. Se admiten los mensajes de todos los canales de comunicación supervisados por el cumplimiento de las comunicaciones. Por ejemplo, puede seleccionar 50 chats de Microsoft Teams, 25 mensajes de correo electrónico de Exchange Online y 25 mensajes de Yammer al abrir un nuevo caso de eDiscovery avanzado para un usuario.
 - **Mejorar la clasificación (versión preliminar):** es posible que las alertas creadas a partir de coincidencias de tipo clasificador necesiten comentarios para ayudar a minimizar los falsos positivos en la organización. Use el control **mejorar la** clasificación para proporcionar comentarios sobre si la clasificación de cumplimiento de comunicaciones es válida o para sugerir otros clasificadores que se pueden entrenar para este tipo de coincidencia. Puedes confirmar que los clasificadores  son una coincidencia o no una *coincidencia,* o sugerir otros clasificadores que se puedan entrenar para asociar con este tipo de actividad de alerta en el futuro.
 
@@ -131,12 +131,12 @@ Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir vari
     > [!TIP]
     > Puedes proporcionar comentarios sobre varios elementos simultáneamente eligiendo todos ellos y, a continuación, eligiendo **Proporcionar** comentarios detallados en la barra de comandos.
 
-    5. Elige **Enviar comentarios** para enviar tu  evaluación de las clasificaciones **de** coincidencia y no de coincidencia y sugerir otros clasificadores que se puedan entrenar. Cuando has proporcionado 30 instancias de comentarios a un clasificador, se vuelve a entrenar automáticamente. La readaptación puede tardar de 1 a 4 horas en completarse. Los clasificadores solo se pueden volver a entrenar dos veces al día.
+    5. Elige **Enviar comentarios** para enviar  tu  evaluación de las clasificaciones de coincidencia y no de coincidencia y sugerir otros clasificadores que se puedan entrenar. Cuando has proporcionado 30 instancias de comentarios a un clasificador, se vuelve a entrenar automáticamente. La readaptación puede tardar de 1 a 4 horas en completarse. Los clasificadores solo se pueden volver a entrenar dos veces al día.
 
     > [!IMPORTANT]
     > Esta información va al clasificador de su espacio empresarial, **no vuelve a Microsoft.**
 
-    Para obtener más información sobre el clasificador de reciclaje para el cumplimiento de las comunicaciones, vea el artículo Sobre cómo volver a entrenar un clasificador en el cumplimiento [de las](classifier-how-to-retrain-comms-compliance.md) comunicaciones.
+    Para obtener más información sobre el reentrenamiento de clasificadores para el cumplimiento de las comunicaciones, vea el artículo sobre cómo volver a entrenar un clasificador en el cumplimiento [de las](classifier-how-to-retrain-comms-compliance.md) comunicaciones.
 
     ![El cumplimiento de las comunicaciones mejora la clasificación](../media/communication-compliance-improve-classifier.png)
 

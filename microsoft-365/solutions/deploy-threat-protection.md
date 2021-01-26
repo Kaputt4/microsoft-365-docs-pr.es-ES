@@ -1,6 +1,6 @@
 ---
-title: Implementar la protección contra amenazas de seguridad de red en Microsoft 365
-description: Obtenga información sobre cómo implementar servicios de protección contra amenazas y capacidades de seguridad de red de IT en Microsoft 365 E5.
+title: Implementar capacidades de protección contra amenazas en Microsoft 365
+description: Obtenga información sobre cómo implementar los servicios de protección contra amenazas y las capacidades de seguridad en Microsoft 365 E5.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,18 +15,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 79352aca2012e6615f41b19f4a77fc5cf125f4c4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2da2ace96b731baedea9142e211e9301db69000d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926755"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976582"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Implementar capacidades de protección contra amenazas en Microsoft 365
 
-[El malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)y los ciberataques sofisticados, como las amenazas [sin](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)archivos, son una ocurrencia habitual. Las empresas deben protegerse a sí mismas y a sus clientes con capacidades de seguridad de red de IT eficaces. Estos ataques pueden causar problemas importantes para su organización, que van desde una pérdida de confianza hasta problemas financieros, tiempos de inactividad que causan problemas empresariales y mucho más. La protección contra las amenazas es importante, pero puede resultar difícil determinar dónde centrarse el tiempo, el esfuerzo y los recursos de su organización. 
+[El malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)y los ciberataques sofisticados, como las [amenazas sin](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)archivos, son una ocurrencia habitual. Las empresas deben protegerse a sí mismas y a sus clientes con capacidades de seguridad de IT eficaces. Los ciberataques pueden causar problemas importantes para su organización, desde una pérdida de confianza hasta problemas financieros, tiempos de inactividad que causan problemas empresariales y mucho más. La protección contra las amenazas es importante, pero puede resultar difícil determinar dónde centrarse el tiempo, el esfuerzo y los recursos de su organización. 
 
-Las soluciones de seguridad de Microsoft están integradas en nuestros productos y servicios. Las capacidades de automatización y aprendizaje automático reducen la carga en los equipos de seguridad para asegurarse de que se abordan los elementos adecuados. Y la solidez de las soluciones de seguridad de red de Microsoft se basa en trillones de señales que procesamos cada día en nuestro [Gráfico de seguridad inteligente.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Las soluciones de seguridad de [Microsoft 365 incluyen Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)una solución que reúne señales en su correo electrónico, datos, dispositivos e identidades para pintar una imagen de amenazas avanzadas contra su organización.
+Las soluciones de seguridad de Microsoft están integradas en nuestros productos y servicios. Las capacidades de automatización y aprendizaje automático reducen la carga en los equipos de seguridad para asegurarse de que se abordan los elementos adecuados. Y la solidez de las soluciones de seguridad de Microsoft se basa en billones de señales que procesamos cada día en nuestro [gráfico de seguridad inteligente.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Las soluciones de seguridad de [Microsoft 365 incluyen Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)una solución que reúne señales en su correo electrónico, datos, dispositivos e identidades para pintar una imagen de amenazas avanzadas contra su organización.
 
 
 Vea este vídeo para obtener información general del proceso.
@@ -54,7 +54,7 @@ En la siguiente ilustración se muestra una ruta de acceso recomendada para impl
 |Solución/funcionalidades  |Descripción  |
 |---------|---------|
 |Autenticación multifactor y acceso condicional     |Protegerse contra identidades y dispositivos en peligro. Comience con esta protección porque es fundamental. La configuración recomendada en esta guía incluye Azure AD Identity Protection como requisito previo.     |
-|Microsoft Defender for Identity     |  Una solución de seguridad basada en la nube que aprovecha las señales locales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Céntrate en Microsoft Defender para Identity a continuación porque protege tu infraestructura local y de nube, no tiene dependencias ni requisitos previos y puede proporcionar ventajas inmediatas.       | 
+|Microsoft Defender for Identity     |  Una solución de seguridad basada en la nube que aprovecha las señales locales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Céntrate en Microsoft Defender para Identity a continuación, ya que protege la infraestructura local y de la nube, no tiene dependencias ni requisitos previos y puede proporcionar ventajas inmediatas.       | 
 |Microsoft Defender para Office 365     | Protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración. Protecciones contra malware, phishing, suplantación de identidad y otros tipos de ataques. A continuación, se recomienda configurar Microsoft Defender para Office 365 porque el control de cambios, la migración de la configuración del sistema actual y otras consideraciones pueden tardar más en implementarse. <br><br>Nota: Asegúrese de configurar las capacidades de protección contra amenazas que se incluyen en todas las suscripciones de Office 365 (Exchange Online Protection).       |
 |Microsoft Defender para punto de conexión    | Una plataforma de protección de puntos de conexión que ayuda a prevenir, detectar, investigar y responder a amenazas avanzadas.  Defender for Endpoint puede tardar algún tiempo en implementarse, pero la configuración puede realizarse en paralelo con otras funcionalidades.   |
 |Microsoft Cloud App Security     |   Un agente de seguridad de acceso a la nube para la detección, investigación y gobierno. Puede habilitar Microsoft Cloud App Security pronto para empezar a recopilar datos y perspectivas. La implementación de información y otra protección dirigida en las aplicaciones SaaS implica la planeación y puede tardar más tiempo.       | 

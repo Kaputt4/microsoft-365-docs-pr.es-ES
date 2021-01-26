@@ -1,6 +1,6 @@
 ---
-title: 'Administrar temas en el centro de temas de experiencias de temas (vista previa) '
-description: Cómo administrar temas en el centro de temas.
+title: 'Administrar temas en el Centro de temas en Experiencias de temas (versión preliminar) '
+description: Cómo administrar temas en el Centro de temas.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -8,20 +8,22 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 371ccc16e787b331f42026dec48e5e3113b2b172
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731336"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976196"
 ---
-# <a name="manage-topics-in-the-topic-center-preview"></a>Administrar temas en el centro de temas (versión preliminar)
+# <a name="manage-topics-in-the-topic-center-preview"></a>Administrar temas en el Centro de temas (versión preliminar)
 
 > [!Note] 
-> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
+> El contenido de este artículo es para Project Cortex Private Preview. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -30,39 +32,39 @@ ms.locfileid: "49731336"
 </br>
 
 
-En el centro de temas, un administrador de información puede ver la página **administrar temas** para revisar los temas que se han identificado en ubicaciones de origen de SharePoint según lo especificado por su administrador de conocimientos.  
+En el Centro de temas,  un administrador de conocimientos puede ver la página Administrar temas para revisar los temas que se han identificado en ubicaciones de origen de SharePoint según lo especificado por su administrador de conocimientos.  
 
    ![Centro de temas](../media/knowledge-management/topic-center.png) </br> 
 
 
 
-Los administradores de conocimientos ayudan a guiar los temas detectados a través del ciclo de vida del tema en el que los temas son:
+Los administradores de conocimientos ayudan a guiar los temas detectados durante el ciclo de vida de los temas en los que se incluyen los siguientes temas:
 
-- Sugerido: un tema ha sido identificado por AI y tiene suficientes recursos, conexiones y propiedades auxiliares para cumplir el umbral del tema.
-- Confirmado: se valida un tema sugerido por AI. La validación se realiza mediante la confirmación de un administrador de conocimiento. Además, se puede confirmar un tema si al menos dos usuarios proporcionan comentarios positivos a través de comentarios de temas que el tema es válido.
-- Quitado: un administrador de conocimiento ha rechazado un tema y ya no será visible para los visores. El tema puede estar en cualquier estado cuando se quita (se sugiere o confirma). 
+- Sugerido: Un tema ha sido identificado por la inteligencia artificial y tiene suficientes recursos, conexiones y propiedades compatibles para cumplir el umbral del tema.
+- Confirmado: se valida un tema sugerido por AI. La validación se realiza mediante la confirmación de un administrador de conocimientos. Además, se puede confirmar un tema si al menos dos usuarios dan comentarios positivos a través de comentarios sobre el tema que el tema es válido.
+- Eliminado: un administrador de conocimientos rechaza un tema y ya no será visible para los espectadores. El tema puede estar en cualquier estado cuando se quita (sugerido o confirmado). 
 - Publicado: un tema confirmado que se ha actualizado manualmente.
 
-   ![Gráfico de ciclo de vida del tema](../media/knowledge-management/topic-lifecycle.png) </br> 
+   ![Gráfico de ciclo de vida de temas](../media/knowledge-management/topic-lifecycle.png) </br> 
 
 ## <a name="requirements"></a>Requisitos
 
-Para administrar temas en el centro de temas, debe:
-- Tener un tema de licencia de experiencia.
-- Tiene permisos para los [**usuarios que pueden administrar temas**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Los administradores de conocimiento pueden conceder a los usuarios este permiso en la configuración de permisos de temas de red de conocimientos. 
+Para administrar temas en el Centro de temas, debe:
+- Tener una licencia de Experiencias de tema.
+- Tener permisos para quién [**puede administrar temas.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Knowledge Network. 
 
-No podrá ver la página Administrar temas en el centro de temas a menos que tenga el permiso **quién puede administrar temas** .
+No podrá ver la página Administrar temas en el Centro de temas a menos que tenga el permiso **Quién puede administrar temas.**
 
-En el centro de temas, un administrador de información puede revisar los temas que se han identificado en las ubicaciones de origen de SharePoint especificadas y puede confirmarlos o rechazarlos. Un administrador de información también puede crear y publicar nuevas páginas de temas si no se encuentra ninguna en la detección de temas, o editar las existentes si es necesario actualizarlas.
+En el centro de temas, un administrador de conocimientos puede revisar los temas que se han identificado en las ubicaciones de origen de SharePoint que especificó y puede confirmarlos o rechazarlos. Un administrador de conocimientos también puede crear y publicar nuevas páginas de temas si no se encontró una en la detección de temas o editar las existentes si es necesario actualizarlas.
 
 
-## <a name="review-suggested-topics"></a>Revisión de temas sugeridos
+## <a name="review-suggested-topics"></a>Revisar los temas sugeridos
 
-En la página centro de temas de administración de temas, los temas que se detectaron en las ubicaciones de origen de SharePoint especificadas se enumerarán en la pestaña **sugerido** . Un administrador de información puede revisar los temas no confirmados y elegir confirmarlos o rechazarlos.
+En la página Administrar temas del Centro de temas, los temas que se detectaron en las ubicaciones de origen de SharePoint especificadas aparecerán en la **pestaña Sugerencias.** Un administrador de conocimientos puede revisar los temas no confirmados y elegir confirmarlos o rechazarlos.
 
 Para revisar un tema sugerido:
 
-1. En la página **administrar temas** , seleccione la pestaña **sugerido** , seleccione el tema para abrir la página del tema.</br>
+1. En la **página Administrar temas,** seleccione la **pestaña Sugerencias** y seleccione el tema para abrir la página del tema.</br>
 
 2. En la página del tema, revise la página del tema y seleccione **Editar** si necesita realizar cambios en la página.
 
@@ -72,26 +74,26 @@ Para revisar un tema sugerido:
     
    - Seleccione la **x** si desea rechazar el tema.
 
-    Los temas confirmados se quitarán de la lista de **sugerencias** y ahora se mostrarán en la lista **confirmada** .
+    Los temas confirmados se quitarán de la **lista Sugeridos** y ahora se mostrarán en la **lista Confirmados.**
 
-    Los temas rechazados se quitarán de la lista **sugerida** y ahora se mostrarán en la pestaña **eliminado** .
+    Los temas rechazados se quitarán de la **lista Sugeridos** y ahora se mostrarán en la **pestaña** Quitado.
 
    </br> 
 
 ## <a name="confirmed-topics"></a>Temas confirmados
 
-En la página Administrar temas, los temas que se detectaron en las ubicaciones de origen de SharePoint especificadas y que han sido confirmados por un administrador de conocimiento o "multitud de multitudes" confirmados por dos o más personas a través del mecanismo de comentarios de tarjetas se enumerarán en la pestaña **confirmada** . Si es necesario, un usuario con permisos para administrar temas puede revisar los temas confirmados y elegir rechazarlos.
+En la página Administrar temas, los temas que se detectaron en las ubicaciones de origen de SharePoint especificadas y que un administrador de  conocimientos confirmó o que confirmaron dos o más personas a través del mecanismo de comentarios de la tarjeta aparecerán en la pestaña Confirmado. Si es necesario, un usuario con permisos para administrar temas puede revisar los temas confirmados y elegir rechazarlos.
 
 Para revisar un tema confirmado:
 
-1. En la pestaña **confirmada** , seleccione el tema para abrir la página del tema.</br>
+1. En la **pestaña Confirmado,** seleccione el tema para abrir la página del tema.</br>
 
 2. En la página del tema, revise la página del tema y seleccione **Editar** si necesita realizar cambios en la página.
 
-Tenga en cuenta que todavía puede rechazar un tema confirmado.  Para ello, vaya al tema seleccionado en la lista confirmada y seleccione la **x** si desea rechazar el tema.
+Tenga en cuenta que aún puede optar por rechazar un tema confirmado.  Para ello, vaya al tema seleccionado en la lista Confirmados y seleccione la **x** si desea rechazar el tema.
 
 ## <a name="published-topics"></a>Temas publicados
-Se han editado los temas publicados para que la información específica aparezca siempre a quien encuentre la página. Aquí se muestran los temas creados manualmente.
+Los temas publicados se han editado para que siempre aparezca información específica para los usuarios que encuentren la página. Los temas creados manualmente se enumeran aquí.
 
 
 

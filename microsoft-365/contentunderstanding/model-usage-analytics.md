@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo aplicar una etiqueta de retención en un modelo de comprensión mediante documentos
-ms.openlocfilehash: b71f75006a856d4fd551bffe232cbe044f7726a5
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 793ae34fa5f033b10023811887af89c1785f7cda
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087142"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976404"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>Análisis de uso del modelo de comprensión mediante documentos
 
@@ -54,6 +56,6 @@ El gráfico de barras de los **Archivos procesados a lo largo del tiempo** no so
 
 [Crear un extractor](create-an-extractor.md)
 
-[Información general sobre la comprensión de los documentos](document-understanding-overview.md)
+[Información general de la comprensión mediante documentos ](document-understanding-overview.md)
 
 [Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)  

@@ -1,71 +1,73 @@
 ---
-title: 'Crear un nuevo tema en experiencias del tema (versión preliminar) '
-description: Cómo crear un nuevo tema en las experiencias del tema.
+title: 'Crear un nuevo tema en Experiencias de tema (versión preliminar) '
+description: Cómo crear un nuevo tema en Experiencias de tema.
 author: efrene
 ms.author: efrene
 manager: pamgreen
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b17bca88df4bc0db9569800df2c89e6246c88bf8
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49699072"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976356"
 ---
-# <a name="create-a-new-topic-preview"></a>Crear un tema nuevo (vista previa)
+# <a name="create-a-new-topic-preview"></a>Crear un nuevo tema (versión preliminar)
 
 > [!Note] 
-> El contenido de este artículo es para la versión preliminar privada de Project Cortex. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
+> El contenido de este artículo es para Project Cortex Private Preview. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
-En las experiencias de los temas, puede crear un nuevo tema si no se ha descubierto uno a través de la indexación o si la tecnología de AI no ha encontrado suficientes pruebas para establecerlo como un tema.
+En Experiencias de tema, puede crear un nuevo tema si no se ha detectado uno a través de la indización o si la tecnología de IA no encontró suficiente evidencia para establecerlo como un tema.
 
 ## <a name="requirements"></a>Requisitos
 
-Para crear un tema nuevo, debe:
-- Tener un tema de licencia de experiencia.
-- Tener permisos para los [**usuarios que pueden crear o editar temas**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Los administradores de conocimiento pueden conceder a los usuarios este permiso en la configuración de permisos de temas de red de conocimientos. 
+Para crear un nuevo tema, debe:
+- Tener una licencia de Experiencias de tema.
+- Tener permisos para [**quién puede crear o editar temas.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Knowledge Network. 
 
 > [!Note] 
-> Los usuarios que tienen permiso para administrar temas en el centro de temas (administradores de conocimiento) ya tienen permisos para crear y editar temas.
+> Los usuarios que tienen permiso para administrar temas en el Centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
 
-## <a name="to-create-a-new-topic"></a>Para crear un nuevo tema:
+## <a name="to-create-a-new-topic"></a>Para crear un tema nuevo:
 
-1. En la página centro de temas, seleccione **nuevo** y, a continuación, seleccione **Página de tema**. Si no puede ver la **nueva** opción en el centro de temas, es posible que no tenga los permisos necesarios.
+1. En la página Centro de temas, **seleccione Nuevo** y, a continuación, seleccione Página **de tema.** Si no puede ver la opción **Nuevo** en el Centro de temas, es posible que no tenga los permisos necesarios.
 
-    ![Tema nuevo](../media/knowledge-management/k-new-topic.png)
+    ![Nuevo tema](../media/knowledge-management/k-new-topic.png)
 
-2. En la página nuevo tema, puede rellenar la información de la nueva plantilla de tema:
+2. En la página de tema nuevo, puede rellenar la información de la nueva plantilla de tema:
 
-    - En la sección **nombre este tema** , escriba el nombre del nuevo tema.
+    - En la **sección Nombre de este** tema, escriba el nombre del nuevo tema.
     
-    - En la sección **Nombres alternativos** , escriba nombres o acrónimos que también se usan para hacer referencia al tema.
+    - En la **sección Nombres alternativos,** escriba nombres o acrónimos que también se usan para hacer referencia al tema.
     
-    - En la sección **Descripción breve** , escriba una descripción de una o dos frases del tema. Este texto se utilizará para la tarjeta de temas asociada.
+    - En la **sección Descripción** breve, escriba una o dos oraciones del tema. Este texto se usará para la tarjeta de tema asociada.
     
-    - En la sección **personas** , escriba los nombres de los expertos en la materia para el tema. Las personas que agregue manualmente al tema se mostrarán en la página del tema como **personas ancladas**.
+    - En la **sección** Personas, escriba los nombres de los expertos en la materia para el tema. Las personas que agregue manualmente al tema se mostrarán en la página del tema como **personas ancladas.**
     
-    - En la sección **archivos y páginas** , seleccione **Agregar** y, a continuación, en la página siguiente, puede seleccionar archivos de OneDrive asociados o páginas de SharePoint Online.
+    - En la **sección Archivos**  y páginas, seleccione Agregar y, a continuación, en la página siguiente, puede seleccionar archivos de OneDrive o páginas de SharePoint Online asociados.
     
-    - En la sección **sitios** , seleccione **Agregar**. En el panel  **sitios** que se muestra, seleccione los sitios asociados al tema.
+    - En la **sección** Sitios, seleccione **Agregar**. En el  **panel** Sitios que se muestra, seleccione los sitios asociados al tema.
 
-    ![Nueva página del tema](../media/knowledge-management/k-new-topic-page.png)
+    ![Página de tema nuevo](../media/knowledge-management/k-new-topic-page.png)
     
-3. Si necesita agregar otros componentes a la página, como texto, imágenes, elementos Web, vínculos, etc., seleccione el icono de lienzo en la parte central de la página para buscarlos y agregarlos.
+3. Si necesita agregar otros componentes a la página, como texto, imágenes, elementos web, vínculos, etc., seleccione el icono del lienzo en medio de la página para buscarlos y agregarlos.
 
     ![Agregar elementos a la página](../media/knowledge-management/static-icon.png)
 
-4. Cuando haya terminado, seleccione **publicar** para publicar la página del tema. Las páginas de temas publicadas se mostrarán en la ficha **páginas** .
+4. Cuando haya terminado, seleccione **Publicar para** publicar la página del tema. Las páginas de temas publicadas se mostrarán en la **pestaña** Páginas.
 
-Después de publicar el artículo, el nombre del tema, el nombre alternativo, la descripción y las personas ancladas se mostrarán a todos los usuarios con licencia que vean el artículo. Los archivos, las páginas y los sitios solo se mostrarán en la página del tema si el visor tiene permisos de Office 365 en el elemento. 
+Después de publicar el artículo, el nombre del tema, el nombre alternativo, la descripción y las personas ancladas se mostrarán a todos los usuarios con licencia que ven el artículo. Los archivos, las páginas y los sitios solo aparecerán en la página del tema si el visor tiene permisos de Office 365 para el elemento. 
 
-La página del nuevo tema se compone de elementos Web compatibles con la *red de conocimiento*. Esto significa que, a medida que AI recopila más información sobre el tema, la información de estos elementos Web se actualizará con sugerencias para hacer que la página sea más útil para los usuarios.
+La nueva página de tema está hecha de elementos web que son conscientes *de la red de conocimiento.* Esto significa que a medida que AI recopila más información sobre el tema, la información de estos elementos web se actualizará con sugerencias para que la página sea más útil para los usuarios.
 
 ## <a name="see-also"></a>Consulte también
 
