@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilice la herramienta Búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de Teams de usuarios locales en un entorno híbrido de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868018"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976207"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 
@@ -34,6 +34,8 @@ A continuación, se presentan los requisitos y limitaciones para habilitar el al
 - Las cuentas de usuario en su servicio de directorio local (como Active Directory) deben estar sincronizadas con Azure Active Directory, el servicio de directorio de Microsoft 365. Esto significa que se crea una cuenta de usuario de correo en Microsoft 365 y se asocia a un usuario cuyo buzón principal se encuentra en la organización local.
 
 - Al usuario cuyo buzón principal se encuentre en la organización local se le debe asignar una licencia de Microsoft Teams y un mínimo de una licencia de Exchange Online Plan 1.
+
+- Si su organización no tiene una implementación híbrida de Exchange, debe sincronizar el esquema de Exchange local con Azure Active Directory. En caso contrario, corre el riesgo de crear buzones duplicados basados en la nube en Exchange Online para aquellos usuarios que tengan un buzón en su organización de Exchange local.
 
 - Solo los datos de chat de Teams asociados a un usuario local se almacenan en el área de almacenamiento basada en la nube. Un usuario local no puede acceder de ninguna manera a esta área de almacenamiento.
 
