@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad que notifican los usuarios.
-ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865072"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988133"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuario
 
@@ -43,7 +44,7 @@ En las organizaciones de Microsoft 365 con buzones de Exchange Online, puede esp
 
 También puede configurar herramientas de informes de mensajes de terceros para reenviar mensajes al buzón que especifique.
 
-Entregar mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md)
+La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Requisitos previos de buzón personalizado
 
@@ -53,11 +54,11 @@ Use los siguientes artículos para configurar los requisitos previos necesarios 
 
 - Desactivar el examen de datos adjuntos en busca de malware en el buzón personalizado. Use Configurar directivas de datos adjuntos seguros en Defender para Office  [365](set-up-atp-safe-attachments-policies.md) para crear una directiva de datos adjuntos seguros con la configuración desactivada para la respuesta de malware desconocido de datos **adjuntos seguros.**
 
-- Desactive el examen de direcciones URL en los mensajes del buzón personalizado. Use Configurar directivas de vínculos seguros en Defender para [Office 365](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos seguros con la configuración desactivada para Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los **mensajes.** 
+- Desactive el examen de direcciones URL en los mensajes del buzón personalizado. Use Configurar directivas de vínculos seguros en Defender para [Office 365](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos seguros con la opción Desactivado para Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los **mensajes.** 
 
 - Crear una directiva antimalware para desactivar la purga automática de malware de hora cero. Vea Usar el Centro de seguridad & cumplimiento para crear directivas [antimalware](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) para establecer malware purga automática **de** hora cero en **desactivado.**
 
-- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática (ZAP) de cero horas para correo no deseado y suplantación de identidad en el buzón personalizado. Consulte [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas Activar para **ZAP** de correo no deseado y **ZAP de suplantación de identidad**.
+- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática (ZAP) de cero horas para correo no deseado y suplantación de identidad en el buzón personalizado. Consulte [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas On para **ZAP** y PHISH ZAP de correo **no** deseado.
 
 - Deshabilitar la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta  de correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover mensaje a la carpeta De correo no deseado o la colección de listas seguras del buzón.
 
@@ -72,6 +73,15 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
   - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
   - **Administración de la** organización [en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
+- Necesita obtener acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso a Exchange Online PowerShell, recibirá un error similar al siguiente al especificar el buzón de envío:
+
+  > Especificar una dirección de correo electrónico en el dominio
+
+  Para obtener más información acerca de cómo habilitar o deshabilitar el acceso a Exchange Online PowerShell, consulte los siguientes temas:
+
+  - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Reglas de acceso de cliente en Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Usar el Centro de & cumplimiento para configurar el buzón de envío de usuario
 
 1. En el Centro de & cumplimiento, vaya a Envíos **de** usuario de \> **directiva** de \> **administración de amenazas.**
@@ -80,7 +90,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
    1. Habilitar la característica de mensaje de informe para **Outlook (recomendado):** seleccione esta opción si usa el complemento Mensaje de informe, el complemento de suplantación de identidad de informes o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes opciones:
 
-      - **Personalice el mensaje de confirmación del usuario final:** haga clic en este vínculo. En el **menú desplegable Personalizar mensaje** de confirmación que aparece, configure las siguientes opciones:
+      - **Personalizar el mensaje de confirmación del usuario final:** haga clic en este vínculo. En el **menú desplegable Personalizar mensaje** de confirmación que aparece, configure las siguientes opciones:
 
       - **Antes del** envío:  en los cuadros de mensaje Título y Confirmación, escriba el texto descriptivo que verán los usuarios antes de informar de un mensaje mediante el complemento Mensaje de informe o el complemento Informar de suplantación de identidad.  Puedes usar la variable %type% para incluir el tipo de envío (correo no deseado, correo no deseado, phishing, etc.).
 
@@ -94,7 +104,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
       - **Envíe los mensajes notificados a:** Realice una de las siguientes selecciones:
 
-        - **Microsoft (recomendado): el** buzón de envío del usuario no se usa (todos los mensajes notificados van a Microsoft).
+        - **Microsoft (recomendado): no** se usa el buzón de envío del usuario (todos los mensajes notificados van a Microsoft).
 
         - **Microsoft y un buzón personalizado:** en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Los envíos de usuarios irán a Microsoft para su análisis y al buzón personalizado para que el administrador o el equipo de operaciones de seguridad lo analicen.
 
@@ -106,7 +116,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
       Cuando haya terminado, haga clic en **Confirmar**.
 
       > [!CAUTION]
-      > Si ha deshabilitado los informes de correo no deseado en Outlook en la [web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) mediante directivas de buzón de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán informar de los mensajes a Microsoft en Outlook en la Web mediante el complemento Mensaje de informe o el complemento Detección de suplantación de identidad de informes.
+      > Si ha deshabilitado los informes de correo no deseado en Outlook en la [Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) con las directivas de buzón de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán informar de los mensajes a Microsoft en Outlook en la Web mediante el complemento Mensaje de informe o el complemento Detección de suplantación de identidad de informes.
 
    - Deshabilitar la característica Mensaje de informe para **Outlook:** seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento de suplantación de identidad de informes o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes opciones:
 

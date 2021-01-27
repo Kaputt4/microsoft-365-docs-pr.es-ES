@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 99f39a10de6231a72220c5c2a90ec915b1a4e44a
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932087"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988121"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>API de búsqueda avanzada de Microsoft 365 Defender
 
@@ -46,11 +46,14 @@ Las siguientes condiciones se relacionan con todas las consultas.
 
 1. Las consultas exploran y devuelven datos de los últimos 30 días.
 2. Los resultados pueden devolver hasta 100 000 filas.
-3. Puede realizar hasta 10 llamadas por minuto por inquilino.
+3. Puede realizar hasta 15 llamadas por minuto por inquilino.
 4. Tiene 10 minutos de tiempo de ejecución por hora por inquilino.
-5. Tiene cuatro horas totales de tiempo de ejecución día por inquilino.
+5. Tiene cuatro horas totales de tiempo de ejecución por día por inquilino.
 6. Si una sola solicitud se ejecuta durante más de 10 minutos, agotará el tiempo de espera y devolverá un error.
-7. Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. El cuerpo de la respuesta incluirá el tiempo hasta que se restablezca la cuota alcanzada.
+7. Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. Lea el cuerpo de la respuesta para comprender el límite que ha alcanzado. 
+
+> [!NOTE]
+> Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de espacio empresarial. Estas cuotas son las mínimas.
 
 ## <a name="permissions"></a>Permisos
 
