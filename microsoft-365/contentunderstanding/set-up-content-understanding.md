@@ -7,16 +7,18 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604273"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976393"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -24,15 +26,15 @@ Los administradores pueden usar el Centro de administración de Microsoft 365 pa
 
 Considere lo siguiente antes de empezar:
 
-- ¿Qué sitios de SharePoint habilitarán el procesamiento de formularios? ¿Todos ellos, algunos, o seleccionar sitios?
-- ¿Qué nombre le pondrá a su centro de contenido predeterminado?
+- ¿En qué sitios de SharePoint se va a habilitar el procesamiento de formularios? ¿Todos ellos, algunos, o seleccionar sitios?
+- ¿Qué nombre le pondrá a su centro de contenido de forma predeterminada?
 
 Puede cambiar su configuración después de la configuración inicial en el Centro de administración de Microsoft 365.
 
-Antes de la configuración, asegúrese de planificar la mejor manera de configurar la comprensión del contenido en su entorno. Por ejemplo, es necesario hacer consideraciones sobre los siguientes nombres de:
+Antes de la configuración, asegúrese de planificar la mejor manera de configurar la comprensión del contenido en su entorno. Por ejemplo, hay que tomar las siguientes decisiones:
 
-- Los sitios de SharePoint que desea habilitar para el procesamiento de formularios: todos ellos, algunos, o sitios seleccionados
-- Su centro de contenido y el nombre del administrador principal del sitio
+- Los sitios de SharePoint en los que desea habilitar el procesamiento de formularios: todos, algunos o sitios seleccionados
+- El nombre y los administradores de su centro de contenido
 
 ## <a name="requirements"></a>Requirements 
 
@@ -55,8 +57,8 @@ Como administrador, también puede realizar cambios en la configuración selecci
 4. En la página **Configurar el procesamiento** de formularios, puede elegir si desea que los usuarios puedan crear modelos de procesamiento de formularios en bibliotecas de documentos específicos de SharePoint. En la cinta de opciones de la biblioteca de documentos estará disponible una opción de menú para **Crear un modelo de procesamiento de formularios** en las bibliotecas de documentos de SharePoint en las que esté habilitado.
  
      Para **Qué bibliotecas de SharePoint debe mostrar la opción de crear un modelo de procesamiento de formularios**, puede seleccionar:</br>
-      - **Todas las bibliotecas de SharePoint** para que estén disponibles para todas las bibliotecas de SharePoint de su organización.</br>
-      - **Sólo las bibliotecas de los sitios seleccionados**, y luego seleccione los sitios en los que desea que esté disponible o cargue una lista de hasta 50 sitios.</br>
+      - **Bibliotecas en todos los sitios de SharePoint** para que esté disponible en todas las bibliotecas de SharePoint de su organización.</br>
+      - **Bibliotecas en los sitios de SharePoint seleccionados**, y a luego, seleccione los sitios en los que desea que esté disponible o cargue una lista de hasta 50 sitios.</br>
       - **No hay bibliotecas de SharePoint** si no quiere que esté disponible para ningún sitio (puede cambiar esto después de la configuración).
 
    > [!div class="mx-imgBorder"]
@@ -114,4 +116,3 @@ Vaya al [Centro de administración de la Power Platform](https://admin.powerplat
 [Visión general del modelo de procesamiento de formularios](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [Paso a paso: cómo crear un modelo de comprensión de documentos (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
