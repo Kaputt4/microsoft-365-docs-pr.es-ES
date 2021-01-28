@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921247"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988073"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -80,13 +80,14 @@ Para los datos de experiencias de personas, necesitará una suscripción a Micro
 
 La Puntuación de productividad solo está disponible en el Centro de administración de Microsoft 365 y solo pueden obtener acceso los profesionales de TI que tengan uno de los roles siguientes:  
 
-- Administrador global 
+- Administrador global
 - Administrador de Exchange
-- Administrador de SharePoint 
-- Administrador de Skype Empresarial 
-- Administrador de Teams 
-- Lector global 
-- Lector de informes 
+- Administrador de SharePoint
+- Administrador de Skype Empresarial
+- Administrador de Teams
+- Lector global
+- Lector de informes
+- Resumen de uso de Lector de informes
 
 > [!NOTE]
 > Solo un profesional de TI con el rol de administrador global puede registrarse u inscribir un espacio empresarial para la Puntuación de productividad.
