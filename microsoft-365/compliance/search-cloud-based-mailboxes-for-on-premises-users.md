@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilice la herramienta Búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de Teams de usuarios locales en un entorno híbrido de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976207"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029720"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 
@@ -39,10 +39,8 @@ A continuación, se presentan los requisitos y limitaciones para habilitar el al
 
 - Solo los datos de chat de Teams asociados a un usuario local se almacenan en el área de almacenamiento basada en la nube. Un usuario local no puede acceder de ninguna manera a esta área de almacenamiento.
 
-- Debe enviar una solicitud al Soporte técnico de Microsoft para permitir que su organización pueda buscar los datos de chat de Teams de usuarios locales. Consulte [Presentar una solicitud al Soporte técnico de Microsoft para habilitar esta función](#filing-a-request-with-microsoft-support-to-enable-this-feature) en este artículo.
-
 > [!NOTE]
-> Las conversaciones del canal de los equipos siempre se almacenan en el buzón de correo en la nube asociado al equipo. Eso significa que puedes usar la Búsqueda de Contenido para buscar conversaciones de canal sin tener que presentar una solicitud de soporte. Para obtener más información sobre la búsqueda de conversaciones en los canales de los equipos, consulte [Búsqueda Microsoft Teams y Grupos de Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Las conversaciones del canal de Teams siempre se almacenan en el buzón de correo en la nube asociado al equipo, por lo que puede buscar conversaciones del canal. Para obtener más información sobre la búsqueda de conversaciones en los canales de los equipos, consulte [Búsqueda Microsoft Teams y Grupos de Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -54,20 +52,7 @@ El siguiente gráfico muestra el flujo de trabajo de cómo los datos del chat de
   
 Además de esta nueva capacidad, todavía puede utilizar la Búsqueda de contenido para buscar, previsualizar y exportar el contenido de Teams en el sitio SharePoint basado en la nube y el buzón de Exchange asociado con los datos de cada equipo de Microsoft y chat de 1xN Teams en el buzón de Exchange Online para los usuarios basados en la nube.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Presentar una solicitud al Soporte técnico de Microsoft para habilitar esta función
 
-Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Esta característica está disponible en el Centro de Seguridad y Cumplimiento PowerShell. No tiene que enviar una solicitud de soporte para usar PowerShell para buscar datos de chat de Teams para usuarios locales.
-  
-Incluya la siguiente información cuando envíe la solicitud al Soporte técnico de Microsoft:
-  
-- El nombre de dominio predeterminado de su organización.
-
-- El nombre del espacio empresarial y la identificación del espacio empresarial de su organización. Puede encontrarlos en el portal de Azure Active Directory (en **Administrar** \> **Propiedades**). Vea [Buscar la identificación del espacio empresarial de Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-- El siguiente título o descripción del propósito de la solicitud de apoyo: "Habilitar la búsqueda de contenido de la aplicación para usuarios locales". Esto ayuda a dirigir la solicitud al equipo de ingeniería de eDiscovery que implementará la solicitud.
-
-Después de que se haga el cambio de ingeniería, el Soporte técnico de Microsoft le enviará una fecha estimada de despliegue. El proceso de despliegue suele tardar de 2 a 3 semanas después de presentar la solicitud de apoyo.
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>¿Qué sucede después de que se activa esta función?
 
 Una vez implementada esta función en su organización, se realizan los siguientes cambios en la búsqueda de contenido y en las búsquedas asociadas a un caso de eDiscovery en el Centro de Seguridad y cumplimiento:

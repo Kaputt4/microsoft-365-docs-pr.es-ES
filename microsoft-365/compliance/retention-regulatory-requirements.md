@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros.
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941425"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032571"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisitos normativos para la gobernanza de información y la administración de registros
 
@@ -29,6 +29,18 @@ ms.locfileid: "48941425"
 Use los recursos de esta página como ayuda para cumplir los requisitos normativos específicos para la gobernanza de información y la administración de registros en Microsoft 365. Todas las secciones de este documento se centran en una o varias normativas relacionadas y en ellas se incluyen las evaluaciones de terceros o instrucciones existentes sobre cómo configurar Microsoft 365 para ayudarle a cumplir los requisitos descritos.
 
 Puede descargar esos recursos en la página [Recursos de protección de datos, preguntas frecuentes y notas del producto](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) del Portal de confianza de servicios.
+
+## <a name="new-zealand-public-records-act"></a>Ley de registros públicos de Nueva Zelanda
+
+**Microsoft 365 ayuda a satisfacer las obligaciones de cumplimiento de la Ley de Registros Públicos de Nueva Zelanda** - [Descargar](https://aka.ms/NZPRA)
+
+Cargas de trabajo aplicables: SharePoint, OneDrive, Teams, Exchange y Skype Empresarial
+
+Publicado en enero de 2021, este informe se elaboró en colaboración con Microsoft Nueva Zelanda para evaluar las capacidades de los servicios de Microsoft 365 para registrar, almacenar y administrar los requisitos de los registros electrónicos, tal y como se especifica en: 
+
+- Ley de Registros Públicos de Nueva Zelanda de 2005, que establece directrices para la conservación de archivos públicos y archivos de autoridades locales en Nueva Zelanda.
+
+Este informe le ayuda a comprender cómo se pueden lograr los aspectos del sistema de la Ley de Registros Públicos de Nueva Zelanda de 2005 (PRA) al usar Microsoft 365.
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f), FINRA 4511(c) y CFTC 1.31(c)-(d)
 

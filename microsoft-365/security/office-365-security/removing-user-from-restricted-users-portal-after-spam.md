@@ -72,7 +72,7 @@ Los administradores pueden quitar usuarios del portal de Remitentes restringidos
 5. Haga clic en **Sí** para confirmar el cambio.
 
    > [!NOTE]
-   > Puede que el usuario tarde hasta 24 horas en quitarse todas las restricciones.
+   > Puede que el usuario pasen hasta 24 horas hasta la eliminación de todas las restricciones del usuario.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Comprobar la configuración de alertas para usuarios restringidos
 
