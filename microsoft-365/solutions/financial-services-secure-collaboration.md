@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Conozca la forma en que las instituciones de servicios financieros pueden mantener el cumplimiento de la seguridad financiera y colaborar de forma eficaz al usar Microsoft 365 y Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558483"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029959"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave de cumplimiento y seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -319,7 +319,7 @@ Microsoft 365 presentó recientemente una solución de administración de riesgo
 
 Por ejemplo, la administración de riesgos internos de Microsoft 365 puede correlacionar señales en un equipo de escritorio de Windows 10 de un usuario, como copiar archivos a una unidad USB o enviar un correo electrónico a una cuenta personal, con actividades de servicios en línea como el correo electrónico de Office 365, SharePoint Online, Microsoft Teams, o OneDrive para la empresa, para identificar los patrones de exfiltración de datos. También puede correlacionar estas actividades con los empleados que abandonan una organización, que es un patrón común de exfiltración de datos. Puede supervisar varias actividades y comportamientos a lo largo del tiempo. Cuando surgen patrones comunes, se pueden generar alertas y ayudar a los investigadores a centrarse en las actividades clave para comprobar la violación de la directiva con un alto grado de confianza. La administración de riesgos internos puede anonimizar los datos de los investigadores para ayudar a cumplir con las normas de privacidad de datos, a la vez que se siguen realizando actividades clave que les ayudan a realizar investigaciones de forma eficaz. Permite que los investigadores empaqueten y envíen con seguridad datos de actividad clave a los departamentos de RR. HH. y jurídicos, siguiendo los flujos de trabajo de escalamiento comunes para establecer casos para acciones correctivas.
 
-La administración de riesgos internos de Microsoft 365 incrementa significativamente las funciones de las organizaciones para supervisar e investigar los riesgos internos, a la vez que permite a las organizaciones seguir satisfaciendo las normativas de privacidad de datos y seguir las rutas de escalación establecidas cuando los casos requieren una acción de nivel superior.
+La administración de riesgos internos de Microsoft 365 incrementa significativamente las funciones de las organizaciones para supervisar e investigar los riesgos internos, a la vez que permite a las organizaciones seguir satisfaciendo las normativas de privacidad de datos y seguir las rutas de escalación establecidas cuando los casos requieren una acción de nivel superior. Para obtener más información sobre la administración de riesgos internos en Microsoft 365, vea [Puntos de riesgo modernos y Flujo de trabajo en Administración de riesgos internos en Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide).
 
 ![Un trabajador de un centro de llamadas en un cubículo escribe mientras ve una pantalla.](../media/clo17-call-center-006.jpg)
  

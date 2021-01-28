@@ -19,6 +19,8 @@
           href: service-description/regions-languages.md
         - name: Ciclo de vida del producto
           href: service-description/device-lifecycle.md
+        - name: Requisitos del dispositivo
+          href: service-description/device-requirements.md
         - name: Dispositivos de programa
           href: service-description/device-list.md
           items:
