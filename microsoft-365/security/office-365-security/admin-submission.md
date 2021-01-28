@@ -3,7 +3,7 @@ title: Envíos de administrador
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -16,15 +16,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar el portal de envíos del Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos sospechosos de suplantación de identidad, correo no deseado y otros mensajes potencialmente perjudiciales, direcciones URL y archivos a Microsoft para su análisis.
+description: Los administradores pueden aprender a usar el portal de envíos del Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos sospechosos de suplantación de identidad, correo no deseado y otros mensajes potencialmente peligrosos, direcciones URL y archivos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: ed417db93bc2f3efa6b85b0ef97c10b5941cd8eb
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976608"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029519"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -57,13 +57,13 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
     Tenga en cuenta que es necesario pertenecer a este grupo de roles para ver los [envíos](#view-user-submissions-to-the-custom-mailbox) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
 
-- Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea Notificar mensajes [y archivos a Microsoft.](report-junk-email-messages-to-microsoft.md)
+- Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea Notificar mensajes y [archivos a Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Notificar contenido sospechoso a Microsoft
 
-1. En el Centro de seguridad &  cumplimiento, vaya a Envíos de administración de amenazas, compruebe que está en la pestaña Envíos de administración y, a continuación, haga clic en \>  **Nuevo envío.** 
+1. En el Centro de & cumplimiento,  vaya a Envíos de administración de amenazas, compruebe que está en la pestaña Envíos de administración y, a continuación, haga clic en \>  **Nuevo envío.** 
 
-2. Use **el menú desplegable Nuevo** envío que parece enviar el mensaje, la dirección URL o los datos adjuntos, como se describe en las secciones siguientes.
+2. Use **el menú desplegable Nuevo** envío que parece enviar el mensaje, la dirección URL o los datos adjuntos, tal como se describe en las secciones siguientes.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Enviar un correo electrónico cuestionable a Microsoft
 
@@ -92,7 +92,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 1. En la **sección Tipo de** objeto, seleccione Dirección **URL**. En el cuadro que aparece, escriba la dirección URL completa (por ejemplo, `https://www.fabrikam.com/marketing.html` ).
 
-2. En la **sección Motivo del** envío, selecciona una de las siguientes opciones:
+2. En la **sección Motivo del envío,** selecciona una de las siguientes opciones:
 
    - **No debería haber sido bloqueado**
 
@@ -108,7 +108,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 2. Haga clic **en Elegir archivo.** En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **Abrir**.
 
-3. En la **sección Motivo del envío,** selecciona una de las siguientes opciones:
+3. En la **sección Motivo del** envío, selecciona una de las siguientes opciones:
 
    - **No debería haber sido bloqueado**
 
@@ -120,7 +120,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="view-admin-submissions"></a>Ver envíos de administrador
 
-En el Centro de seguridad &  cumplimiento, vaya a Envíos de administración de amenazas, compruebe que está en la pestaña Envíos de administración y, a continuación, haga clic en \>  **Nuevo envío.** 
+En el Centro de & cumplimiento,  vaya a Envíos de administración de amenazas, compruebe que está en la pestaña Envíos de administración y, a continuación, haga clic en \>  **Nuevo envío.** 
 
 Cerca de la parte superior de la página, puede escribir una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por identificador de envío **(un** valor GUID asignado a cada envío) especificando un valor en el cuadro y haciendo clic en el botón Actualizar ![ ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -171,7 +171,7 @@ Si se encontró una invalidación, el nuevo análisis debe completarse en varios
 
 Haga clic en la **pestaña Dirección** URL.
 
-Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
+Puede hacer clic en el **botón Opciones de columna** situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
 - **Fecha**
 - **Id. de envío**
@@ -186,7 +186,7 @@ Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte 
 
 Haga clic en **la pestaña Datos** adjuntos.
 
-Puede hacer clic en el **botón Opciones de columna** situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
+Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
 - **Fecha**
 - **Id. de envío**
@@ -199,9 +199,9 @@ Puede hacer clic en el **botón Opciones de columna** situado cerca de la parte 
 
 ## <a name="view-user-submissions-to-microsoft"></a>Ver envíos de usuarios a Microsoft
 
-Si ha implementado el complemento mensaje de [](enable-the-report-phish-add-in.md) [informe,](enable-the-report-message-add-in.md)el complemento de suplantación de identidad de informes o los usuarios usan los informes integrados en Outlook en [la Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)puede ver qué usuarios están informando en la pestaña **Envíos** de usuarios.
+Si ha implementado el complemento Mensaje de [](enable-the-report-phish-add-in.md) [informe,](enable-the-report-message-add-in.md)el complemento de suplantación de identidad de informes o los usuarios usan los informes integrados en Outlook en [la Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)puede ver qué usuarios están informando en la pestaña **Envíos** de usuarios.
 
-1. En el Centro de & cumplimiento, vaya a **Envíos de** \> **administración de amenazas.**
+1. En el Centro de & cumplimiento, vaya a **Envíos de administración** \> **de amenazas.**
 
 2. Selecciona la **pestaña Envíos de** usuario y, a continuación, haz clic **en Nuevo envío.**
 
@@ -234,7 +234,7 @@ Para exportar los resultados, haga clic **en Exportar** cerca de la parte superi
 
 **Si** ha configurado un [buzón personalizado](user-submission.md) para recibir mensajes notificados por el usuario, puede ver y enviar también los mensajes que se entregaron al buzón de informes.
 
-1. En el Centro de & cumplimiento, vaya a **Envíos de** \> **administración de amenazas.**
+1. En el Centro de & cumplimiento, vaya a **Envíos de administración** \> **de amenazas.**
 
 2. Seleccione la **pestaña Buzón personalizado.**
 
@@ -266,4 +266,4 @@ En la **pestaña Buzón personalizado,** seleccione un  mensaje en la lista, hag
 - **Notificar malware**
 - **Notificar correo no deseado**
 
-![Opciones en el botón Acción](../../media/user-submission-custom-mailbox-action-button.png)
+![Opciones del botón Acción](../../media/user-submission-custom-mailbox-action-button.png)

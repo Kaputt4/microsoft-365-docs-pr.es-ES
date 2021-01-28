@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881778"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032662"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrado de Microsoft 
 
-Escritorio administrado de Microsoft evalúa periódicamente los dispositivos que se incluirán en el servicio. En este artículo se describen los requisitos para que un dispositivo se inscriba en el Escritorio administrado de Microsoft y se enumeran los dispositivos específicos que se admiten actualmente.
+Escritorio administrado de Microsoft evalúa periódicamente los dispositivos que se incluirán en el servicio. En este artículo se enumeran los dispositivos específicos que se admiten actualmente. Para obtener una declaración más general de los requisitos de dispositivo, consulta [Requisitos de dispositivo.](device-requirements.md)
 
 Para obtener más información sobre el Escritorio administrado de Microsoft, vea la documentación y los recursos del Escritorio [administrado de Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/) 
 

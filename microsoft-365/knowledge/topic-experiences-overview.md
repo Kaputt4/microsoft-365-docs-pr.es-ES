@@ -14,19 +14,19 @@ ms.collection:
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre las experiencias de tema.
-ms.openlocfilehash: decc1a3aa5535b4d8bc97dc7d6b010eedd395741
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: f01b28b8ca5b0352f05fecac810c3e651c663947
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976596"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029649"
 ---
 # <a name="topic-experiences-overview-preview"></a>Introducción a las experiencias de tema (versión preliminar)
 
 > [!Note] 
 > El contenido de este artículo es para Project Cortex Private Preview. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
 
-Las experiencias de tema usan la tecnología de IA de Microsoft, Microsoft 365, Delve, Microsoft Graph, Búsqueda y otros componentes y servicios para crear una red de conocimiento en su entorno de Microsoft 365. 
+Las experiencias de tema usan la tecnología de IA de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para crear una red de conocimiento en su entorno de Microsoft 365. 
 
 </br>
 
@@ -38,7 +38,7 @@ Su objetivo es convertir la información en conocimientos y entregarla a los usu
 
 Las experiencias de tema ayudan a solucionar un problema empresarial clave en muchas empresas, ya que proporcionan la información a los usuarios cuando la necesitan. Por ejemplo, los nuevos empleados necesitan aprender una gran cantidad de información nueva rápidamente y encontrar términos de los que no saben nada al leer la información de la empresa. Para obtener más información, es posible que el usuario deba alejarse de lo que está haciendo y dedicar tiempo valioso a buscar detalles, como información sobre cuál es el término, quién en la organización es experto en la materia y quizás sitios y documentos relacionados con el término.
 
-Las experiencias de tema usan la inteligencia artificial para buscar e identificar automáticamente **los temas** de la organización. Compila información sobre ellos, como una breve descripción, expertos en la materia sobre el tema y sitios, archivos y páginas relacionados con él. Un administrador de conocimientos o colaborador puede elegir actualizar la información del tema según sea necesario. Los temas están disponibles para los usuarios, lo que significa que para cada instancia del tema que aparece en un sitio de SharePoint moderno en noticias y páginas, se resaltará el texto. Los usuarios pueden elegir seleccionar el tema para obtener más información sobre él a través de los detalles del tema. Los temas también se pueden encontrar en La búsqueda de SharePoint.
+Las experiencias de tema usan la inteligencia artificial para buscar e identificar automáticamente **los temas** de la organización. Compila información sobre ellos, como una breve descripción, personas que trabajan en el tema y sitios, archivos y páginas relacionados con él. Un administrador de conocimientos o colaborador puede elegir actualizar la información del tema según sea necesario. Los temas están disponibles para los usuarios, lo que significa que para cada instancia del tema que aparece en un sitio de SharePoint moderno en noticias y páginas, se resaltará el texto. Los usuarios pueden elegir seleccionar el tema para obtener más información sobre él a través de los detalles del tema. Los temas también se pueden encontrar en La búsqueda de SharePoint.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Cómo se muestran los temas a los usuarios
@@ -65,13 +65,13 @@ Los administradores de conocimientos pueden elegir rastrear todos los sitios de 
 
 ## <a name="roles"></a>Roles
 
-Al usar experiencias de tema en el entorno de Microsoft 365, los usuarios tendrán los siguientes roles:
+Cuando use experiencias de tema en su entorno de Microsoft 365, los usuarios tendrán los siguientes roles:
 
 - Visor de temas: usuarios que podrán ver los puntos destacados del  tema en los sitios modernos de SharePoint a los que tienen al menos acceso de lectura y en Microsoft Search. Podrán seleccionar los resaltados de temas para ver los detalles del tema en las páginas del tema. Los visores de temas podrán proporcionar comentarios sobre lo útil que es un tema para ellos.
 
-- Colaboradores: usuarios que tienen derechos para editar temas existentes o crear otros nuevos. Los administradores de conocimientos asignan permisos de colaborador a los usuarios a través de la configuración de experiencias de tema en el Centro de administración de Microsoft 365. Tenga en cuenta que también puede conceder a todos los visores de temas permiso para editar y crear temas para que también puedan contribuir a los temas que ven.
+- Colaboradores: usuarios que tienen derechos para editar temas existentes o crear otros nuevos. Los administradores de conocimientos asignan permisos de colaborador a los usuarios a través de la configuración de experiencias de tema en el Centro de administración de Microsoft 365. Tenga en cuenta que también puede conceder a todos los visores de temas permiso para editar y crear temas para que todos puedan contribuir a los temas que ven.
 
-- Administradores de conocimientos: usuarios que guían los temas durante el ciclo de vida del tema. Los administradores  de conocimientos usan la página Administrar temas en el Centro de temas para confirmar o quitar temas sugeridos por IA, así como editar temas existentes o crear otros nuevos, y son los únicos usuarios que tienen acceso a él. Los administradores de conocimientos asignan permisos de administrador de conocimientos a los usuarios a través de la configuración de administración de experiencias de tema en el Centro de administración de Microsoft 365. 
+- Administradores de conocimientos: usuarios que guían los temas durante el ciclo de vida del tema. Los administradores  de conocimientos usan la página Administrar temas en el Centro de temas para confirmar temas sugeridos por IA, quitar temas que ya no son relevantes, así como editar temas existentes o crear otros nuevos, y son los únicos usuarios que tienen acceso a él. Los administradores de conocimientos asignan permisos de administrador de conocimientos a los usuarios a través de la configuración de administración de experiencias de tema en el Centro de administración de Microsoft 365. 
 
 - Administradores del conocimiento: los administradores de conocimientos establecen las experiencias de tema y las administran a través de los controles de administración en el Centro de administración de Microsoft 365. Actualmente, un administrador global o de SharePoint de Microsoft 365 puede actuar como administrador de conocimientos.
 
@@ -85,7 +85,7 @@ Aunque todos los usuarios con licencia podrán ver los temas con  los que están
 
 Los administradores de conocimientos podrán:
 
-- Confirme o rechace los temas que se detectaron en el espacio empresarial.
+- Confirme o quite los temas que se detectaron en su espacio empresarial.
 - Cree nuevos temas manualmente según sea necesario (por ejemplo, si no se proporcionó suficiente información para que se detectara a través de AI).
 - Editar páginas de temas existentes.</br>
 
@@ -107,9 +107,9 @@ Vea [asignar permisos de usuario,](https://docs.microsoft.com/microsoft-365/know
 
 ## <a name="topic-curation--feedback"></a>Comentarios sobre la & tema
 
-La IA funcionará continuamente para proporcionarle sugerencias para mejorar los temas a medida que se produzcan cambios en su entorno. 
+La inteligencia artificial trabajará continuamente para proporcionarle sugerencias para mejorar los temas a medida que se produzcan cambios en su entorno. 
 
-Es posible que se pregunte a los usuarios a los que permite tener acceso para ver los temas de su trabajo diario si les resultaba útil. La inteligencia artificial examina estas respuestas y las usa para ayudar a determinar lo que se muestra en los resúmenes de temas y en los detalles del tema.
+Es posible que se pregunte a los usuarios a los que permite tener acceso para ver los temas de su trabajo diario si les resultaba útil. El sistema examina estas respuestas y las usa para ayudar a determinar lo que se muestra en los resúmenes de temas y en los detalles del tema.
 
 Los usuarios con permisos de edición o creación de temas pueden realizar actualizaciones en las páginas de temas directamente si desean realizar correcciones o agregar información adicional. 
 

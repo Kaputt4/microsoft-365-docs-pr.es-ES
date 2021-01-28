@@ -3,11 +3,10 @@ title: Habilitar el complemento Notificar mensajes
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,13 +14,15 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo habilitar el complemento De mensaje de informe para Outlook y Outlook en la Web, para usuarios individuales o toda la organización.
-ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+description: Obtenga información sobre cómo habilitar el complemento De mensaje de informe para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865001"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029237"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
@@ -41,7 +42,7 @@ El complemento Mensaje de informe ofrece la opción de notificar mensajes de cor
 
 Si es un usuario individual, puede habilitar el complemento Mensaje [de informe para usted mismo.](#get-the-report-message-add-in-for-yourself)
 
-Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de informe para [su organización.](#get-and-enable-the-report-message-add-in-for-your-organization) El mensaje de Add-In ahora está disponible a través [de la implementación centralizada.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de [informe para su organización.](#get-and-enable-the-report-message-add-in-for-your-organization) El mensaje de informe Add-In ahora está disponible a través [de la implementación centralizada.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -52,13 +53,13 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
   - Outlook 2016 para Mac
   - Outlook incluido con aplicaciones de Microsoft 365 para empresas
 
-- El complemento De mensaje de informe no está disponible para los buzones de las organizaciones de Exchange locales.
+- El complemento De mensaje de informe no está disponible para buzones en organizaciones de Exchange locales.
 
 - Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, consulta [Directivas de envío de usuarios.](user-submission.md)
 
-- El explorador web existente debe funcionar con el complemento Mensaje de informe. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe un explorador diferente.
+- El explorador web existente debe funcionar con el complemento Mensaje de informe. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con un explorador diferente.
 
-- Para las instalación de la organización, la organización debe configurarse para usar la autenticación de OAuth. Para obtener más información, vea Determinar si la implementación centralizada de complementos [funciona para su organización.](../../admin/manage/centralized-deployment-of-add-ins.md)
+- Para las instalaciones organizativas, la organización debe configurarse para usar la autenticación de OAuth. Para obtener más información, vea Determinar si la implementación centralizada de complementos [funciona para su organización.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 - Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -86,28 +87,30 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
 Para obtener información sobre cómo usar el complemento, vea Usar el complemento De [mensaje de informe](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtener y habilitar el complemento Mensaje de informe para su organización
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtener y habilitar el complemento De mensaje de informe para su organización
 
 > [!NOTE]
 > El complemento puede tardar hasta 12 horas en aparecer en la organización.
 
-1. En el Centro de administración de Microsoft 365, vaya a Configuración, en la página Aplicaciones **integradas & Complementos** y, a continuación, haga clic en Implementar <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **complemento.**
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the Integrated **apps** page.
+
+2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
 
    ![Página servicios y complementos en el Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. En el **menú desplegable Implementar** un nuevo complemento que aparece, revise la información y, a continuación, haga clic en **Siguiente.**
+3. En el **menú desplegable Implementar** un nuevo complemento que aparece, revise la información y, a continuación, haga clic en **Siguiente.**
 
-3. En la página siguiente, haga clic **en Elegir en la Tienda.**
+4. En la página siguiente, haga clic **en Elegir en la Tienda.**
 
    ![Implementar una nueva página de complemento](../../media/NewAddInScreen2.png)
 
-4. En la **página Seleccionar complemento** que aparece, haga clic en el cuadro De búsqueda, escriba Mensaje de informe y, a continuación, haga clic en el icono Buscar    ![ ](../../media/search-icon.png) búsqueda. En la lista de resultados, busque **Mensaje de** informe y, a continuación, haga clic **en Agregar**.
+5. En la **página Seleccionar complemento** que aparece, haga clic en el cuadro De búsqueda, escriba Mensaje de informe y, a continuación, haga clic en el icono    ![ Buscar. ](../../media/search-icon.png) En la lista de resultados, busque **Mensaje de** informe y, a continuación, haga clic **en Agregar**.
 
    ![Seleccionar resultados de búsqueda de complementos](../../media/NewAddInScreen3.png)
 
-5. En el cuadro de diálogo que aparece, revise la información de licencia y privacidad y, a continuación, haga clic **en Continuar.**
+6. En el cuadro de diálogo que aparece, revise la información de licencia y privacidad y, a continuación, haga clic **en Continuar.**
 
-6. En la **página Configurar complemento que** aparece, configure las siguientes opciones:
+7. En la **página Configurar complemento que** aparece, configure las siguientes opciones:
 
    - **Usuarios asignados:** seleccione uno de los siguientes valores:
 
@@ -125,13 +128,13 @@ Para obtener información sobre cómo usar el complemento, vea Usar el complemen
 
    Cuando haya terminado, haga clic **en Implementar.**
 
-7. En la **página Implementar mensaje de** informe que aparece, verá un informe de progreso seguido de una confirmación de que el complemento se implementó. Después de leer la información, haga clic **en Siguiente**.
+8. En la **página Implementar mensaje de** informe que aparece, verá un informe de progreso seguido de una confirmación de que el complemento se implementó. Después de leer la información, haga clic **en Siguiente**.
 
    ![Página Implementar mensaje de informe](../../media/deploy-report-message-page.png)
 
-8. En la **página Anunciar complemento que** aparece, revise la información y, a continuación, haga clic en **Cerrar**.
+9. En la **página Anunciar complemento que** aparece, revise la información y, a continuación, haga clic en **Cerrar**.
 
-   ![Página Anunciar complemento](../../media/announce-add-in-page.png)
+   ![Anunciar página de complemento](../../media/announce-add-in-page.png)
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Obtenga información sobre cómo usar el complemento Mensaje de informe
 
@@ -145,11 +148,11 @@ Las personas que tengan asignado el complemento verán los siguientes iconos:
 
   ![Icono de complemento de mensaje de informe de Outlook en la Web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-Cuando notifique a los usuarios sobre el complemento Mensaje de informe, incluya un vínculo para usar el [complemento Mensaje de informe](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Cuando notifique a los usuarios sobre el complemento Mensaje de informe, incluya un vínculo para [Usar el complemento Mensaje de informe.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revisar o editar la configuración del complemento Mensaje de informe
 
-1. En el Centro de administración de Microsoft 365, vaya a la página servicios **& complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the Integrated **apps** page.
 
    ![Servicios y Add-Ins página en el nuevo Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -157,12 +160,12 @@ Cuando notifique a los usuarios sobre el complemento Mensaje de informe, incluya
 
 3. En el **control desplegable Editar mensaje** de informe que aparece, revise y edite la configuración según corresponda a su organización. Cuando haya terminado, haga clic en **Guardar**.
 
-   ![Configuración del complemento De mensaje de informe](../../media/EditReportMessageAddIn.png)
+   ![Configuración del complemento Mensaje de informe](../../media/EditReportMessageAddIn.png)
 
 ## <a name="view-and-review-reported-messages"></a>Ver y revisar los mensajes notificados
 
 Para revisar los mensajes que los usuarios envían a Microsoft, tiene estas opciones:
 
-- Usa el portal de envíos de administrador. Para obtener más información, vea [Ver envíos de usuarios a Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
+- Usa el portal de envíos de administrador. Para obtener más información, vea [Ver envíos de usuario a Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
 
 - Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte Usar reglas de flujo de correo para ver lo que los [usuarios están informando a Microsoft.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)

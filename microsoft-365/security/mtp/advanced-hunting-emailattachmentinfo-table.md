@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c6cab4d813eba79e298d0082072888e3ef1ad1cd
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3d4c72d78fc6a31ec3075d4e7a889e191e639829
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927007"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029379"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -44,19 +44,21 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `AttachmentId` | cadena | Identificador único de datos adjuntos al correo electrónico |
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
 | `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
+| `RecipientObjectId` | cadena | Identificador único para el destinatario de correo electrónico en Azure AD |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FileType` | cadena | Tipo de extensión de archivo |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
 | `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor de antimalware, reputación del archivo, datos adjuntos seguros |
-| `SenderDisplayName` | string | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre, una inicial intermedia y un apellido o apellido |
-| `SenderObjectId` | string | Identificador único de la cuenta del remitente en Azure AD |
-| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
-| `ThreatNames` | string | Nombre de detección de malware u otras amenazas encontradas |
+| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
+| `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre, una inicial intermedia y un apellido o apellido |
+| `SenderObjectId` | cadena | Identificador único de la cuenta del remitente en Azure AD |
+| `ThreatTypes` | cadena | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
+| `ThreatNames` | cadena | Nombre de detección de malware u otras amenazas encontradas |
+| `DetectionMethods` | cadena | Métodos usados para detectar malware, phishing u otras amenazas que se encuentran en el correo electrónico |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

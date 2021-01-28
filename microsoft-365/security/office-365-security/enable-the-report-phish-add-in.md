@@ -3,7 +3,7 @@ title: Habilitar el complemento de suplantación de identidad de informe
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -16,14 +16,14 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de suplantación de identidad de informes para Outlook y Outlook en la Web, para usuarios individuales o toda la organización.
-ms.openlocfilehash: 2ea6a9bf9b00fc844aede6daeb9fc11f23c81e4a
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: 6d86fdc710539bc3c74eb94f8931ca48a0c992c1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865287"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029143"
 ---
-# <a name="enable-the-report-phishing-add-in"></a>Habilitar el complemento de suplantación de identidad de informes
+# <a name="enable-the-report-phishing-add-in"></a>Habilitar el complemento Informe de suplantación de identidad (phishing)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,7 +41,7 @@ El complemento Report Phishing ofrece la opción de notificar solo mensajes de s
 
 Si es un usuario individual, puede habilitar el complemento de suplantación de identidad [de informes para usted mismo.](#get-the-report-phishing-add-in-for-yourself)
 
-Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento de suplantación de identidad de informes para [su organización.](#get-and-enable-the-report-phishing-add-in-for-your-organization) El informe de suplantación de Add-In ya está disponible a través [de la implementación centralizada.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+Si es un administrador global o un administrador de Exchange Online, y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento de suplantación de identidad de informes para [su organización.](#get-and-enable-the-report-phishing-add-in-for-your-organization) El informe de suplantación de Add-In ya está disponible a través [de la implementación centralizada.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -80,28 +80,30 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
 - En Outlook en la Web, el icono tiene este aspecto:
 
-  ![Icono de complemento de suplantación de identidad de informes de Outlook en la web](../../media/OWA-ReportPhishing.png)
+  ![Icono de complemento de suplantación de identidad de informes de Outlook en la Web](../../media/OWA-ReportPhishing.png)
 
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>Obtener y habilitar el complemento de suplantación de identidad de informes para su organización
 
 > [!NOTE]
 > El complemento puede tardar hasta 12 horas en aparecer en la organización.
 
-1. En el Centro de administración de Microsoft 365, vaya a Configuración, en la página Aplicaciones **integradas & Complementos** y, a continuación, haga clic en Implementar <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **complemento.**
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the Integrated **apps** page.
+
+2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
 
    ![Página servicios y complementos en el Centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. En el **menú desplegable Implementar** un nuevo complemento que aparece, revise la información y, a continuación, haga clic en **Siguiente.**
+3. En el **menú desplegable Implementar** un nuevo complemento que aparece, revise la información y, a continuación, haga clic en **Siguiente.**
 
-3. En la página siguiente, haga clic **en Elegir en la Tienda.**
+4. En la página siguiente, haga clic **en Elegir en la Tienda.**
 
    ![Implementar una nueva página de complemento](../../media/NewAddInScreen2.png)
 
-4. En la página **Seleccionar complemento** que aparece, haga clic en el cuadro De búsqueda, escriba Suplantación de identidad de informe y, a continuación, haga clic **en** el icono  ![ Buscar. ](../../media/search-icon.png) En la lista de resultados, busque **La suplantación** de identidad de informes y, a continuación, haga clic **en Agregar**.
+5. En la página **Seleccionar complemento** que aparece, haga clic en el cuadro De búsqueda, escriba Suplantación de identidad de informe y, a continuación, haga clic **en** el icono  ![ Buscar. ](../../media/search-icon.png) En la lista de resultados, busque **La suplantación** de identidad de informes y, a continuación, haga clic **en Agregar**.
 
-5. En el cuadro de diálogo que aparece, revise la información de licencia y privacidad y, a continuación, haga clic **en Continuar.**
+6. En el cuadro de diálogo que aparece, revise la información de licencia y privacidad y, a continuación, haga clic **en Continuar.**
 
-6. En la **página Configurar complemento que** aparece, configure las siguientes opciones:
+7. En la **página Configurar complemento que** aparece, configure las siguientes opciones:
 
    - **Usuarios asignados:** seleccione uno de los siguientes valores:
 
@@ -117,9 +119,9 @@ Después de instalar y habilitar el complemento, verá los siguientes iconos:
 
    Cuando haya terminado, haga clic **en Implementar.**
 
-7. En la **página Implementar suplantación** de identidad de informes que aparece, verá un informe de progreso seguido de una confirmación de que el complemento se implementó. Después de leer la información, haga clic **en Siguiente**.
+8. En la **página Implementar suplantación** de identidad de informes que aparece, verá un informe de progreso seguido de una confirmación de que el complemento se implementó. Después de leer la información, haga clic **en Siguiente**.
 
-8. En la **página Anunciar complemento que** aparece, revise la información y, a continuación, haga clic en **Cerrar**.
+9. En la **página Anunciar complemento que** aparece, revise la información y, a continuación, haga clic en **Cerrar**.
 
 ## <a name="learn-how-to-use-the-report-phishing-add-in"></a>Obtenga información sobre cómo usar el complemento de suplantación de identidad de informes
 
@@ -135,7 +137,7 @@ Las personas que tengan asignado el complemento verán los siguientes iconos:
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Revisar o editar la configuración del complemento de suplantación de identidad de informes
 
-1. En el Centro de administración de Microsoft 365, vaya a la página servicios **& complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> , If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the Integrated **apps** page.
 
 2. Busque y seleccione el **complemento Detección de suplantación** de identidad (Phishing) de informes.
 
@@ -147,4 +149,4 @@ Para revisar los mensajes que los usuarios envían a Microsoft, tiene estas opci
 
 - Usa el portal de envíos de administrador. Para obtener más información, vea [Ver envíos de usuarios a Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
 
-- Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte Usar reglas de flujo de correo para ver lo que los [usuarios están informando a Microsoft.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+- Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte Usar reglas de flujo de correo para ver lo que los [usuarios están informando a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

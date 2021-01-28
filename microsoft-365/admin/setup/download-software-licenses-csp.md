@@ -1,5 +1,5 @@
 ---
-title: Descargar claves de licencia de producto y software perpetuas
+title: Descargar claves de licencia de producto y software perpetuas compradas a través del programa Proveedor de soluciones en la nube (CSP)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - AdminSurgePortfolio
 description: Aprende a descargar las claves de licencia de software y producto para el software perpetua comprado a través del programa Proveedor de soluciones en la nube (CSP).
-ms.openlocfilehash: bd9584e6a160f713cdfbfbcdac876b2e18b94110
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877236"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029403"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Descargar claves de licencia de producto y software perpetuas
 

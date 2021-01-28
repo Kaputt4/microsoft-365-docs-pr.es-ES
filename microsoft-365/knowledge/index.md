@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Obtenga información sobre cómo encontrar recursos para experiencias de temas.
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976184"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029613"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Introducción a las experiencias de temas (versión preliminar)
 
@@ -43,9 +43,9 @@ Los recursos de esta sección le ayudarán a obtener más información sobre las
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Más información sobre la comprensión mediante documentos|[Introducción a las experiencias de tema](topic-experiences-overview.md)|
-|Obtenga información sobre cómo los temas se detectan y crean mediante la inteligencia artificial|[Detección de experiencias de tema](topic-experiences-discovery.md)|
-|Más información sobre la seguridad de los temas|[Seguridad y privacidad de experiencias de tema](topic-experiences-security-privacy.md)|
+|Obtenga más información sobre las experiencias de temas|[Introducción a las experiencias de tema](topic-experiences-overview.md)|
+|Obtenga información sobre cómo se detectan y sugieren los temas por IA|[Detección de experiencias de tema](topic-experiences-discovery.md)|
+|Más información sobre la seguridad de los temas|[Experiencias de tema seguridad y privacidad](topic-experiences-security-privacy.md)|
 
 
 ## <a name="adoption"></a>Adopción

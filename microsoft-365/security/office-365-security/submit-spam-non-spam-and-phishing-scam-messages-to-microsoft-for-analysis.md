@@ -3,12 +3,11 @@ title: Enviar manualmente mensajes a Microsoft para su análisis
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores y los usuarios finales pueden aprender a enviar mensajes de correo electrónico (correo bueno marcado como correo no deseado o no permitido) a Microsoft para su análisis.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94747b1d0a1aef746a63abada977aa47270ae4e2
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865085"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029589"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar manualmente mensajes a Microsoft para su análisis
 
@@ -65,12 +66,12 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
 3. Cuando haya terminado, haga clic en **Enviar**.
 
 > [!TIP]
-> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se están identificar erróneamente como correo no deseado. Para obtener más información, [vea Crear listas de remitentes bloqueados en EOP.](create-block-sender-lists-in-office-365.md)
+> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se están identificar erróneamente como correo no deseado. Para obtener más información, vea [Crear listas de remitentes bloqueados en EOP.](create-block-sender-lists-in-office-365.md)
 
 ## <a name="submit-false-positives-to-microsoft"></a>Enviar falsos positivos a Microsoft
 
 > [!TIP]
-> En lugar de usar los siguientes procedimientos para informar de falsos positivos, los usuarios de Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) pueden usar el complemento de mensaje de informe o el complemento de suplantación de identidad de informes. Para obtener información acerca de cómo [](enable-the-report-message-add-in.md) instalar y usar estas herramientas, vea Habilitar el complemento De informe de mensajes y Habilitar el complemento de suplantación de identidad [de informes.](enable-the-report-phish-add-in.md)
+> En lugar de usar los siguientes procedimientos para informar de falsos positivos, los usuarios de Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) pueden usar el complemento de mensaje de informe o el complemento de suplantación de identidad de informes. Para obtener información acerca de cómo [](enable-the-report-message-add-in.md) instalar y usar estas herramientas, vea Habilitar el complemento Mensaje de informe y Habilitar el complemento de suplantación de identidad [de informes.](enable-the-report-phish-add-in.md)
 
 
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviarlo al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán el mensaje y, según los resultados del análisis, los filtros de todo el servicio se pueden ajustar para permitir que pase el mensaje.
@@ -94,7 +95,7 @@ Si un mensaje se identificó incorrectamente como correo no deseado, puede envia
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>¿Dónde se almacenan los datos de los envíos a Microsoft?
 
-Los datos residen en el límite de cumplimiento de Office 365 en centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros.
+Los datos residen en el límite de cumplimiento de Office 365 en los centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Crear una regla de flujo de correo para recibir copias de los mensajes que se notifican a Microsoft
 

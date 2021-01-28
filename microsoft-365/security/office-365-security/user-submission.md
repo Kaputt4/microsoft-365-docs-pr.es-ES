@@ -3,7 +3,7 @@ title: Directiva de envíos de usuario
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad que notifican los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 28848908934057cc898eeca489cd2ee21f30692f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988133"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029767"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuario
 
@@ -52,15 +52,15 @@ Use los siguientes artículos para configurar los requisitos previos necesarios 
 
 - Omita el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de Exchange para establecer el nivel de confianza contra correo no deseado. Vea [Usar el EAC para crear una](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) regla de flujo de correo que establezca el SCL de un mensaje para establecer el SCL en **-1**.
 
-- Desactivar el examen de datos adjuntos en busca de malware en el buzón personalizado. Use Configurar directivas de datos adjuntos seguros en Defender para Office  [365](set-up-atp-safe-attachments-policies.md) para crear una directiva de datos adjuntos seguros con la configuración desactivada para la respuesta de malware desconocido de datos **adjuntos seguros.**
+- Desactive el examen de datos adjuntos en busca de malware en el buzón personalizado. Use Configurar directivas de datos adjuntos seguros en Defender para Office  [365](set-up-atp-safe-attachments-policies.md) para crear una directiva de datos adjuntos seguros con la configuración desactivada para la respuesta de malware desconocido de datos **adjuntos seguros.**
 
-- Desactive el examen de direcciones URL en los mensajes del buzón personalizado. Use Configurar directivas de vínculos seguros en Defender para [Office 365](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos seguros con la opción Desactivado para Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los **mensajes.** 
+- Desactive el examen de direcciones URL en los mensajes del buzón personalizado. Use Configurar directivas de vínculos seguros en Defender para [Office 365](set-up-atp-safe-links-policies.md) para crear una directiva de vínculos seguros con la configuración desactivada para Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los **mensajes.** 
 
-- Crear una directiva antimalware para desactivar la purga automática de malware de hora cero. Vea Usar el Centro de seguridad & cumplimiento para crear directivas [antimalware](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) para establecer malware purga automática **de** hora cero en **desactivado.**
+- Crear una directiva antimalware para desactivar la purga automática de malware en hora cero. Vea Usar el Centro de seguridad & cumplimiento para crear directivas [antimalware](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) para establecer malware purga automática **de** hora cero en **desactivado.**
 
-- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática (ZAP) de cero horas para correo no deseado y suplantación de identidad en el buzón personalizado. Consulte [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas On para **ZAP** y PHISH ZAP de correo **no** deseado.
+- Cree una directiva de filtro de correo no deseado para deshabilitar la purga automática (ZAP) de cero horas para el correo no deseado y la suplantación de identidad en el buzón personalizado. Consulte [Usar el Centro de seguridad & cumplimiento para](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)  crear directivas contra correo no deseado y desactive las casillas Activar para **ZAP** de correo no deseado y **ZAP de suplantación de identidad**.
 
-- Deshabilitar la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta  de correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover mensaje a la carpeta De correo no deseado o la colección de listas seguras del buzón.
+- Deshabilite la regla de correo no deseado en el buzón personalizado. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. Una vez deshabilitado, EOP no puede mover mensajes a la carpeta  de correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover mensaje a la carpeta De correo no deseado o la colección de listas seguras del buzón.
 
 Después de comprobar que el buzón cumple todos los requisitos previos aplicables, use el Centro de seguridad [& y](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) cumplimiento para configurar el buzón de envío de usuario (en este artículo).
 
@@ -90,7 +90,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
    1. Habilitar la característica de mensaje de informe para **Outlook (recomendado):** seleccione esta opción si usa el complemento Mensaje de informe, el complemento de suplantación de identidad de informes o los informes integrados en Outlook en la Web y, a continuación, configure las siguientes opciones:
 
-      - **Personalizar el mensaje de confirmación del usuario final:** haga clic en este vínculo. En el **menú desplegable Personalizar mensaje** de confirmación que aparece, configure las siguientes opciones:
+      - **Personalice el mensaje de confirmación del usuario final:** haga clic en este vínculo. En el **menú desplegable Personalizar mensaje** de confirmación que aparece, configure las siguientes opciones:
 
       - **Antes del** envío:  en los cuadros de mensaje Título y Confirmación, escriba el texto descriptivo que verán los usuarios antes de informar de un mensaje mediante el complemento Mensaje de informe o el complemento Informar de suplantación de identidad.  Puedes usar la variable %type% para incluir el tipo de envío (correo no deseado, correo no deseado, phishing, etc.).
 
