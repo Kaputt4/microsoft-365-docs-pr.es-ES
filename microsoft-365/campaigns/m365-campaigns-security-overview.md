@@ -1,5 +1,5 @@
 ---
-title: Protección de la seguridad de los golpes de la campaña
+title: Mejorar la protección de seguridad para su campaña o negocio
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo proteger su campaña al aumentar la seguridad con Microsoft 365 para las campañas.
-ms.openlocfilehash: 0be3a3ef766686c830ffffc8aaee451b67c0b81f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Obtenga información sobre cómo proteger su campaña o negocio aumentando la seguridad con Microsoft 365.
+ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527095"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044377"
 ---
-# <a name="bump-up-security-protection-for-your-campaign"></a>Protección de la seguridad de los golpes de la campaña
+# <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Mejorar la protección de seguridad para su campaña o negocio
 
 
 ## <a name="overview"></a>Información general 
-Vea este vídeo para ver cómo puede proteger su campaña:
+Vea este vídeo para ver cómo proteger su campaña o negocio:
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
 A continuación, siga los pasos para:
+
 - [Protección contra malware y otras amenazas](m365-campaigns-increase-protection.md)
-- [Proteger el acceso a los datos](m365-campaigns-conditional-access.md) de la campaña mediante la protección de sus cuentas y aplicaciones
+- [Proteger el acceso a los datos de la campaña](m365-campaigns-conditional-access.md) mediante la protección de las cuentas y aplicaciones
 - [Proteger cuentas de administrador](m365-campaigns-protect-admin-accounts.md)
 - [Configurar dispositivos móviles](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
-- [Proporcionar formación a los usuarios](m365-campaigns-users.md) 
-
+- [Proporcionar formación a los usuarios](m365-campaigns-users.md)

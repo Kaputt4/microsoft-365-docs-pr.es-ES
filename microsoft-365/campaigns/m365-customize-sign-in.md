@@ -21,31 +21,29 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Personalice su página de inicio de sesión con un aviso de privacidad y consentimiento para Microsoft 365 para las campañas.
-ms.openlocfilehash: 27d9ee496290c091c7bcdef4c59e0cc8df46b9b7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento para Microsoft 365.
+ms.openlocfilehash: 894686ac785e979b8491cd5943c9a071d3be9ee9
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526963"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044559"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 
-La campaña política puede hacer que sea más fácil para las agencias de cumplimiento normativo enviar cargos legales contra delincuentes en línea agregando un aviso de privacidad y consentimiento a la página de inicio de sesión.
+Su empresa o campaña puede facilitar a los organismos de seguridad presentar cargos legales contra los penales en línea agregando un aviso de privacidad y consentimiento a la página de inicio de sesión.
 
-Puede personalizar la página de inicio de sesión con la personalización de marca. También puede Agregar texto para ayudar a los usuarios a iniciar sesión o para indicar requisitos legales o restricciones para obtener acceso a Microsoft 365 para los recursos de campañas.
+Puede personalizar la página de inicio de sesión con la personalización de marca. También puede agregar texto para ayudar a los usuarios a iniciar sesión o para señalar requisitos legales o restricciones para obtener acceso a los recursos de Microsoft 365.
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a>Diseñar la personalización del texto de la página de inicio de sesión
+## <a name="design-customization-the-text-on-your-sign-in-page"></a>Personalización del diseño del texto en la página de inicio de sesión
 
-Para actualizar los elementos personalizables en la página de inicio de sesión, debe ser un administrador global. Para obtener instrucciones específicas, consulte Agregar artículo de [Personalización de marca de empresa](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) .
+Para actualizar los elementos personalizables en la página de inicio de sesión, debe ser administrador global. Para obtener instrucciones específicas, consulta [el artículo sobre cómo agregar personal de marca de la](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) empresa.
 
-Los elementos que puede actualizar son:
+Los elementos que puedes actualizar son:
 
-- **Texto de la página de inicio de sesión**
-
-     Un espacio sencillo para agregar la declaración de privacidad y consentimiento.
-- Imagen de fondo de la página de inicio de sesión
-- Logotipo del banner
+- **Texto de la página de inicio de sesión** Un lugar fácil para agregar la declaración de privacidad y consentimiento.
+- Imagen de fondo de página de inicio de sesión
+- Logotipo de banner
 - Sugerencia de nombre de usuario
 
-Para obtener ejemplos de avisos de privacidad y consentimiento, vea el Apéndice A en la [búsqueda y Asunción de equipos y la obtención de evidencias electrónicas en investigaciones criminales](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+Para obtener ejemplos de avisos de privacidad y consentimiento, consulte el Apéndice A de la búsqueda y la incación de equipos y la obtención de pruebas [electrónicas en investigaciones penales.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)

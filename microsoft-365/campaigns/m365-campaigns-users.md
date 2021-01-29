@@ -1,5 +1,5 @@
 ---
-title: Cómo Microsoft 365 para las campañas afecta a los usuarios
+title: Cómo afectan estas recomendaciones de seguridad a los usuarios
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,57 +23,63 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Obtenga información sobre cómo estas recomendaciones de seguridad para Microsoft 365 Empresa Premium afectan a los usuarios y protege sus datos.
+ms.openlocfilehash: 91f6b1fb9ddd5938eb8a788ce7594ec8ab9908c3
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845197"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044239"
 ---
-# <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
+# <a name="how-these-security-recommendations-affect-your-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios
 
-Microsoft 365 para las campañas dificulta que los hackers obtengan acceso a su entorno. El equilibrio es que los usuarios tendrán que saber cómo trabajar en este entorno más seguro. Sabemos que es necesario algo más de paciencia, pero merece la pena mantener la organización protegida.
+Las recomendaciones de seguridad para Microsoft 365 en esta solución hacen que sea mucho más difícil para los hackers obtener acceso a su entorno. El problema es que los usuarios tendrán que tener en cuenta cómo trabajar en este entorno más seguro. Sabemos que se necesita un poco más de paciencia, pero merece la pena mantener su organización protegida.
 
-![Ilustración que resume los puntos clave desde abajo para iPhone, dispositivos Android, Mac, Windows 10, uso compartido y personal clave](../media/M365-democracy-Users_700px.png)
+![Ilustración que resume los puntos clave de abajo para iPhone, dispositivos Android, Mac, Windows 10, uso compartido y personal de claves](../media/M365-democracy-Users_900px.png)
 
-## <a name="use-secure-email-practices"></a>Usar prácticas de correo electrónico seguro
-Todos los usuarios deben conocer y usar estos procedimientos de correo electrónico para ayudar a mantener seguro su correo electrónico:
-- Configurar el correo electrónico para usar la autenticación multifactor con la aplicación autenticadora.
-- Compruebe los mensajes de correo electrónico legítimos y busque sugerencias de seguridad de la protección contra phishing avanzada en defender para Office 365.
-- Abrir sólo vínculos seguros y datos adjuntos, tal y como lo comprueban los vínculos seguros y los datos adjuntos seguros.
+## <a name="use-secure-email-practices"></a>Usar prácticas seguras de correo electrónico
 
-Obtenga más información acerca de la [suplantación de identidad y otros ataques](m365-campaigns-phishing-and-attacks.md). 
+Todos los usuarios deben conocer y usar estas prácticas de correo electrónico para ayudar a mantener su correo electrónico seguro:
 
-Descargue una [infografía](m365-campaigns-protect-campaign-infographic.md) con sugerencias para usted y los miembros de su equipo de campaña.
+- Configurar el correo electrónico para usar la autenticación multifactor con la aplicación autenticador.
+- Compruebe los correos electrónicos legítimos y busque sugerencias de seguridad de suplantación de identidad avanzada en Defender para la Protección de Office 365.
+- Abra solo vínculos seguros y datos adjuntos, tal como lo comprueban los vínculos seguros y los datos adjuntos seguros.
+
+Obtenga más información [sobre la autenticación multifactor](m365-campaigns-multifactor-authenication.md) y [la suplantación de identidad y otros ataques.](m365-campaigns-phishing-and-attacks.md)
+
+Descargue una [infografía](m365-campaigns-protect-campaign-infographic.md) con sugerencias para usted y los miembros de su equipo.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurar dispositivos iPhone y Android
-Todos los usuarios que agregue a su entorno tardarán unos minutos en [configurar iPhones y dispositivos Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) para que funcionen correctamente:
-- Configurar dispositivos para usar la autenticación multifactor con la aplicación autenticadora.
-- Use aplicaciones móviles de Microsoft, como Outlook Mobile, Word, OneDrive y otras aplicaciones de Microsoft, desde la App Store. No se admiten las aplicaciones de correo nativo que se incluyen en iPhones y dispositivos Android. 
-- Requerir un PIN para que los usuarios puedan desbloquear el dispositivo.
 
-Una vez configuradas estas opciones, se les pedirá a los usuarios que usen la aplicación Authenticator cuando obtengan acceso a los datos de la organización en estos dispositivos, incluido el correo. 
+Todos los usuarios que agregue a su entorno tendrán que tardar unos minutos en configurar [dispositivos iPhone](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) y Android para que funcionen de forma segura:
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Mantener actualizados BYOD Mac y los equipos con Windows 10 
-También es importante que los usuarios mantengan actualizado el dispositivo de trabajo principal:
-- Instale las últimas versiones de las aplicaciones de escritorio de Office y manténgala actualizada con las actualizaciones, cuando se le solicite. 
-- Manténgase al tanto de las actualizaciones del sistema operativo, como actualizaciones de Windows.
+- Configura dispositivos para usar la autenticación multifactor con la aplicación autenticador.
+- Use aplicaciones móviles de Microsoft, como Outlook Mobile, Word, OneDrive y otras aplicaciones de Microsoft del almacén de aplicaciones. No se admiten las aplicaciones de correo nativas que se incluyen en dispositivos iPhone y Android. 
+- Requerir un PIN para que los usuarios desbloqueen su dispositivo.
 
-Para los [dispositivos Windows 10 y Mac no administrados](m365-campaigns-protect-pcs-macs.md), los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.
+Después de configurar estos, se pedirá a los usuarios que usen la aplicación autenticador al acceder a los datos de su organización en estos dispositivos, incluido el correo.
 
-**Habilitar las funciones de seguridad básicas en dispositivos Windows 10 y Mac de BYOD**
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Mantener los equipos MAC BYOD y Windows 10 nuevos
 
-||||
+También es importante que los usuarios mantengan actualizado su dispositivo de trabajo principal:
+
+- Instale las versiones más recientes de las aplicaciones de escritorio de Office y mantén las actualizaciones actualizadas cuando se le solicite.
+- Manténgase al tanto de las actualizaciones del sistema operativo, como las actualizaciones de Windows.
+
+Para [dispositivos Windows 10 y Mac](m365-campaigns-protect-pcs-macs.md)no administrados, los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.
+
+**Habilitar las funcionalidades de seguridad básicas en dispositivos BYOD con Windows 10 y Mac**
+
+| |**Windows 10**|**Mac**|
 |:-----|:-----|:------|
-||**Windows 10**|**Mac**|
-|Capacidades de seguridad|Activar la protección de dispositivos de BitLocker<p><p> Asegurarse de que Windows Defender permanece en <p>Activar Firewall de Windows| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus fiable <p>Activar la protección del firewall|
+|Capacidades de seguridad|Activar la protección de dispositivos BitLocker<p><p> Asegurarse Windows Defender permanece en <p>Activar Firewall de Windows| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus confiable <p>Activar la protección del firewall|
 
-Para obtener más información sobre estas recomendaciones, consulte [proteger la cuenta y los dispositivos de hackers y malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+Para obtener más información sobre estas recomendaciones, vea Proteger su cuenta y dispositivos [de hackers y malware.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Colaborar con Microsoft Teams, OneDrive, SharePoint Online y otras herramientas
-Es posible que los usuarios estén tentados a compartir y almacenar los archivos de la organización en lugares distintos de Microsoft 365. Microsoft 365 hace que sea tan fácil como sea posible colaborar y compartir de forma segura. Puede [compartir archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se encuentren en pérdidas. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización. 
 
+Es posible que los usuarios puedan tener la tentación de compartir y almacenar los archivos de su organización en lugares distintos de Microsoft 365. Microsoft 365 facilita la colaboración y el uso compartido de forma segura. Puede compartir [archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, Stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se filtre. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización.
 
-## <a name="set-up-managed-windows-10-devices"></a>Configurar dispositivos de Windows 10 administrados
-Le recomendamos que los miembros del personal más importantes usen los dispositivos Windows 10 que haya adquirido recientemente y que administre. Le mostraremos cómo [administrar y proteger estos dispositivos](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Esto garantiza que los miembros del personal que son el objetivo de valor más alto para los hackers reciban la mayor protección. 
+## <a name="set-up-managed-windows-10-devices"></a>Configurar dispositivos windows 10 administrados
+
+Te recomendamos que los miembros del personal más importantes usen dispositivos Windows 10 adquiridos recientemente que administres. Te mostraremos cómo administrar y proteger [estos dispositivos.](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Esto garantiza que los miembros del personal que son el objetivo de mayor valor para los hackers reciban la mayor protección.

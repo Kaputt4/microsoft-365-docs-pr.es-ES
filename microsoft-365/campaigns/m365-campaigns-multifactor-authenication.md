@@ -24,21 +24,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar la autenticación multifactor.
-ms.openlocfilehash: feb0a4be07b09ed3e8f00c6d19edca3355f374ab
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 35f96bc41eba9a903bdb3d377a523e2b82e8c428
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131959"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044437"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
-La autenticación multifactor proporciona más seguridad a su empresa. Una vez que su administrador necesite que use MFA, puede configurar la aplicación Microsoft Authenticator para que le permita iniciar sesión en las aplicaciones clave de forma segura con el teléfono. 
+La autenticación multifactor proporciona más seguridad para su empresa. Cuando el administrador le haya requerido que use MFA, puede configurar la aplicación Microsoft Authenticator para que pueda iniciar sesión en las aplicaciones clave de forma segura con el teléfono. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Para obtener más información, vea [set up multifactor Authentication en Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Consulte más información [en Configurar la autenticación multifactor en Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Usar la aplicación de Outlook en los dispositivos
+## <a name="use-the-outlook-app-in-your-devices"></a>Usar la aplicación outlook en sus dispositivos
 
-Después de que el administrador necesite usar MFA y configurar una aplicación autenticadora como segunda forma de autenticación, le recomendamos que instale y solo use la aplicación de Outlook para acceder a su correo electrónico de Microsoft 365 para campañas. Consulte [configurar dispositivos móviles](../business/set-up-mobile-devices.md) para instalar aplicaciones de Office, incluido Outlook, en su teléfono.
+Después de que el administrador le haya requerido que use MFA y haya configurado una aplicación autenticador como una segunda forma de autenticación, le recomendamos que instale y use solo la aplicación de Outlook para acceder al correo electrónico de Microsoft 365. Consulte [Configurar dispositivos móviles](../business/set-up-mobile-devices.md) para obtener información sobre cómo instalar aplicaciones de Office, incluido Outlook, en su teléfono.

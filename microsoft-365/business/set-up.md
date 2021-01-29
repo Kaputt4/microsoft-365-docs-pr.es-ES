@@ -29,21 +29,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Descubra los pasos de configuración para Microsoft 365 Business Premium, incluida la adición de un dominio y usuarios, la configuración de directivas de seguridad y mucho más.
-ms.openlocfilehash: cc20637d7a78bd34ecb61a4ed46eb06d564d63df
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: Descubra los pasos de configuración de Microsoft 365 Empresa Premium, como agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
+ms.openlocfilehash: e7ebe179c67077dc71ae4873b0711d0e810c701a
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324504"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044738"
 ---
-# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configuración de Microsoft 365 Business Premium en el Asistente para instalación
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurar Microsoft 365 Empresa Premium en el asistente de configuración
 
-Vea este vídeo para obtener información general sobre la configuración de Microsoft 365 empresa Premium.<br><br>
+Vea este vídeo para obtener información general sobre la configuración de Microsoft 365 Empresa Premium.<br><br>
 
-## <a name="add-your-domain-users-and-set-up-policies"></a>Agregar el dominio, usuarios y configurar directivas
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Al adquirir Microsoft 365 Business Premium, tiene la opción de usar un dominio de su propiedad o comprar uno durante el [registro](sign-up.md).
+## <a name="add-your-domain-users-and-set-up-policies"></a>Agregar el dominio, los usuarios y configurar directivas
+
+Al comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de su propiedad o de comprar uno durante [el registro.](sign-up.md)
 
 - Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a [Agregar usuarios y asignar licencias](#add-users-and-assign-licenses).
 
@@ -53,19 +55,19 @@ Al adquirir Microsoft 365 Business Premium, tiene la opción de usar un dominio 
 
 2. Para iniciar el asistente, seleccione **Ir a la configuración**.
 
-    ![Seleccione ir a la instalación.](../media/gotosetupinadmincenter.png)
+    ![Seleccione Ir a la configuración.](../media/gotosetupinadmincenter.png)
 
 3. En la página **Instalar sus aplicaciones de Office**, tendrá la opción de instalar las aplicaciones en su equipo.
     
 4. En el paso **Agregar dominio**, escriba el nombre de dominio que desee usar (como contoso.com).
 
     > [!IMPORTANT]
-    > Si adquirió un dominio durante el inicio de sesión, no verá el paso**Agregar dominio** aquí. Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
+    > Si adquirió un dominio durante el inicio de sesión, no verá el paso **Agregar dominio** aquí. Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
 
-    ![Captura de pantalla de la página Personalice su inicio de sesión.](../media/adddomain.png)
+    ![Captura de pantalla de la página Personalizar el inicio de sesión.](../media/adddomain.png)
 
     
-4. Siga los pasos del Asistente para [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) que compruebe que es el propietario del dominio. Si ya sabe cuál es el host del dominio, consulte también las [ instrucciones específicas para los hosts](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Siga los pasos del asistente para crear registros DNS en cualquier proveedor de host DNS para [Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) que compruebe que es el propietario del dominio. Si ya sabe cuál es el host del dominio, consulte también las [ instrucciones específicas para los hosts](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
     Si su proveedor de hospedaje es GoDaddy u otro host habilitado con [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), el proceso es sencillo y se le pedirá automáticamente que inicie sesión y que permita que Microsoft autentique en su nombre.
 
@@ -77,11 +79,11 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 #### <a name="add-users-in-the-wizard"></a>Agregar usuarios en el asistente
 
-Cualquier usuario que agregue en el asistente obtiene automáticamente una licencia de Microsoft 365 empresa Premium.
+A los usuarios que agregues en el asistente se les asignará automáticamente una licencia de Microsoft 365 Empresa Premium.
 
-![Captura de pantalla de la página agregar nuevos usuarios en el asistente](../media/addnewuserspage.png)
+![Captura de pantalla de la página Agregar nuevos usuarios en el asistente](../media/addnewuserspage.png)
 
-1. Si su suscripción a Microsoft 365 Business Premium tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), tendrá una opción para asignar licencias a ellos en este momento. Proceda y agrégueles licencias también.
+1. Si su suscripción a Microsoft 365 Empresa Premium tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), ahora obtiene una opción para asignarles licencias. Proceda y agrégueles licencias también.
 
 2. Una vez que haya agregado los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
 
@@ -92,42 +94,42 @@ Cualquier usuario que agregue en el asistente obtiene automáticamente una licen
   
 Para configurar servicios, es necesario actualizar algunos registros en su registrador de dominio o host DNS.
   
-1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, [cambie los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar). 
+1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no lo hace, [cambie los servidores dns para configurar Microsoft 365 con cualquier registrador de dominios.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) 
 
-    - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente**y elija **Autorizar** en la página del host DNS.
+    - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente** y elija **Autorizar** en la página del host DNS.
     - Si tiene registros DNS en otros hosts (que no están habilitados para usar la conexión de dominio), le recomendamos administrar sus propios registros DNS para asegurarse de que los servicios existentes permanezcan conectados. Para obtener más información, consulte [Conceptos básicos sobre DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics).
 
-        ![Active la página de registros.](../media/activaterecords.png)
+        ![Activar página de registros.](../media/activaterecords.png)
 
 2. Siga los pasos del asistente y se configurarán el correo electrónico y otros servicios.
 
 ### <a name="protect-your-organization"></a>Proteger la organización 
 
-Las directivas que configure en el asistente se aplican automáticamente a un [grupo de seguridad](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) denominado *todos los usuarios*. También puede crear grupos adicionales para asignar directivas en el centro de administración.
+Las directivas configuradas en el asistente se aplican automáticamente a un grupo [de seguridad](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) denominado Todos *los usuarios.* También puede crear grupos adicionales a los que asignar directivas en el centro de administración.
 
-1. En el **aumento de la protección frente a las amenazas avanzadas de Cyber**, se recomienda que acepte los valores predeterminados para permitir que la [protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) examine los archivos y vínculos de las aplicaciones de Office.
+1. En Aumentar **la protección** contra ciberamenazas avanzadas, se recomienda que acepte los valores predeterminados para permitir que la Protección contra amenazas avanzada de [Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) analice los archivos y vínculos en las aplicaciones de Office.
 
-    ![Captura de pantalla de la página aumentar protección.](../media/increasetreatprotection.png)
-
-
-2. En la página **evitar pérdidas de datos confidenciales** , acepte los valores predeterminados para activar la prevención de pérdida de datos (DLP) de Office 365 para realizar un seguimiento de los datos confidenciales de las aplicaciones de Office y evitar el uso compartido accidental de estos fuera de la organización.
-
-3. En la página **proteger datos en Office para móviles** , deje administración de aplicaciones móviles en, expanda la configuración y revise y, a continuación, seleccione **crear Directiva de administración de aplicaciones móviles**.
-
-    ![Captura de pantalla de la página proteger datos en Office para móviles.](../media/protectdatainmobile.png)
+    ![Captura de pantalla de la página Aumentar protección.](../media/increasetreatprotection.png)
 
 
-## <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
+2. En la página Evitar **pérdidas** de datos confidenciales, acepte los valores predeterminados para activar la Prevención de pérdida de datos (DLP) de Office 365 para realizar un seguimiento de los datos confidenciales en las aplicaciones de Office y evitar el uso compartido accidental de estos fuera de la organización.
 
-En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Inicio de sesión y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar. Consulte [proteger los equipos con Windows 10](secure-win-10-pcs.md) para obtener instrucciones completas.
+3. En la **página Proteger datos en Office** para dispositivos móviles, deje la administración de aplicaciones móviles, expanda la configuración y repase y, a continuación, seleccione Crear directiva de administración de aplicaciones **móviles.**
 
-## <a name="deploy-office-365-client-apps"></a>Implementación de aplicaciones cliente de Office 365
+    ![Captura de pantalla de la página Proteger datos en Office para móviles.](../media/protectdatainmobile.png)
 
-Si eligió instalar automáticamente las aplicaciones de Office durante la configuración, las aplicaciones se instalarán en los dispositivos con Windows 10 una vez que los usuarios hayan iniciado sesión en Azure AD desde sus dispositivos Windows, usando sus credenciales de trabajo.
 
-Para instalar Office en dispositivos móviles iOS o Android, consulte [configurar dispositivos móviles para los usuarios de Microsoft 365 empresa Premium](set-up-mobile-devices.md).
+## <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
 
-También puede instalar Office de forma individual. Consulte [instalar Office en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) para obtener instrucciones.
+En el panel de navegación izquierdo, seleccione **Configurar** y, a continuación, en Inicio de sesión y **seguridad,** elija Proteger los equipos con **Windows 10.** Elija **Ver** para empezar. Consulta [proteger los equipos con Windows 10](secure-win-10-pcs.md) para obtener instrucciones completas.
+
+## <a name="deploy-office-365-client-apps"></a>Implementar aplicaciones cliente de Office 365
+
+Si decidió instalar automáticamente las aplicaciones de Office durante la instalación, las aplicaciones se instalarán en los dispositivos Windows 10 una vez que los usuarios iniciaron sesión en Azure AD desde sus dispositivos Windows, con sus credenciales de trabajo.
+
+Para instalar Office en dispositivos móviles iOS o Android, vea Configurar dispositivos móviles para usuarios [de Microsoft 365 Empresa Premium.](set-up-mobile-devices.md)
+
+También puede instalar Office individualmente. Consulte [instalar Office en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) para obtener instrucciones.
 
 ## <a name="see-also"></a>Vea también
 

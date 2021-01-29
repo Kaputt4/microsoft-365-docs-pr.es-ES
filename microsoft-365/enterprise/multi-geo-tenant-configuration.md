@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693786"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040573"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -110,7 +110,10 @@ Se recomienda incluir el establecimiento de la ubicación de datos preferida del
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Aprovisionamiento de OneDrive y efecto de la PDL
 
-Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover la instancia de OneDrive de un usuario, vea [Transferencia geográfica de OneDrive para la Empresa](move-onedrive-between-geo-locations.md) y siga las instrucciones para mover OneDrive de una ubicación geográfica a otra. (Tenga en cuenta que el buzón de Exchange del usuario se mueve automáticamente al establecer la PDL del usuario)
+Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover el OneDrive de un usuario, vea [OneDrive para la Empresa Geo Move](move-onedrive-between-geo-locations.md).
+
+> [!NOTE]
+> Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multige geográfico.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
 
 Si el usuario no tiene un sitio de OneDrive en el espacio empresarial, se le aprovisionará OneDrive de acuerdo con el valor de PDL, suponiendo que la PDL del usuario coincida con una de las ubicaciones satélite de la empresa.
 
