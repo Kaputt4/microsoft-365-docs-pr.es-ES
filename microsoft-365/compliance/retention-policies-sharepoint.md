@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 0ce3a95754bcffd118d78b7919eb6773d3f14b54
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 253b4f2c09468b45b8e6102f585a8e4b7bbe4e4e
+ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49903995"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49992506"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -57,15 +57,23 @@ Para directivas de retención y directivas de etiqueta de aplicación automátic
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive
 
-Para admitir la retención, SharePoint y OneDrive crean una biblioteca de suspensión para conservación si no existe una. Puede ver esta biblioteca en la página **Contenidos del sitio** en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no puede ver la biblioteca de suspensión para conservación porque solo es visible para los administradores de la colección de sitios.
-  
-Si alguien intenta cambiar o eliminar un documento que está sujeto a la retención del contenido, se comprueba si el contenido se ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite a la persona cambiar o eliminar el contenido original. El contenido de una colección de sitios puede copiarse a la biblioteca de conservación de documentos, independientemente de la configuración de retención.
+Para almacenar el contenido que debe conservarse, SharePoint y OneDrive crean una biblioteca de suspensión para conservación si no existe una. Puede ver esta biblioteca en la página **Contenidos del sitio** en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no puede ver la biblioteca de suspensión para conservación porque solo es visible para los administradores de la colección de sitios.
+
+Los elementos de SharePoint que tienen una etiqueta de retención estándar (no declara el elemento como un registro) no necesitan la biblioteca de suspensión para conservación porque estos elementos permanecen en su ubicación original. SharePoint impide que los usuarios eliminen elementos cuando la etiqueta de retención aplicada está configurada para conservar el contenido, y el control de versiones de SharePoint conserva las versiones anteriores cuando se editan los elementos. Sin embargo, en otros casos, la biblioteca de suspensión para conservación se usa cuando los elementos tienen que conservarse:
+- Elementos de OneDrive que tienen etiquetas de retención estándar
+- Elementos de SharePoint o OneDrive que tienen etiquetas de retención que los declaran como un registro, si el elemento está desbloqueado para su edición
+- Elementos que están sujetos a directivas de retención
+
+Para conservar este contenido cuando un usuario intenta cambiarlo o eliminarlo, se comprueba si el contenido se ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite a la persona cambiar o eliminar el contenido original. El contenido de una colección de sitios puede copiarse a la biblioteca de conservación de documentos, independientemente de la configuración de retención.
   
 Un trabajo de temporizador limpia periódicamente la biblioteca de suspensión para conservación. Este trabajo compara todo el contenido de la biblioteca de conservación de documentos con todas las consultas empleadas en la configuración de retención para este contenido. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, y la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que el contenido puede tardar hasta siete días en eliminarse.
   
 Este comportamiento se aplica al contenido que existe cuando se aplica la configuración de retención. Además, en el caso de las directivas de retención, el contenido nuevo que se cree o se agregue a la colección de sitios después de que se incluya en la directiva se conservará después de la eliminación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el[control de versiones](#how-retention-works-with-document-versions).
   
-Un usuario recibe un error si intenta eliminar una biblioteca, lista, carpeta o sitio que está sujeto a una directiva de retención. Un usuario puede eliminar una carpeta, si primero se mueven o eliminan los archivos en la carpeta que están sujetos a la directiva. Asimismo, en esta fase se crea una biblioteca de conservación de documentos y no cuando se crea una directiva de retención o se aplica una etiqueta de retención. Esto significa que para probar la retención, en primer lugar debe editar o eliminar un documento de un sitio sujeto a una directiva de retención o que tenga una etiqueta de retención aplicada y, a continuación, vaya a la biblioteca de conservación de documentos para ver la copia retenida.
+Los usuarios ven un mensaje de error si intentan eliminar una biblioteca, lista, carpeta o sitio sujeto a retención. Pueden eliminar una carpeta si primero se mueven o eliminan los archivos en la carpeta que están sujetos a retención.
+
+> [!NOTE]
+> Dado que la biblioteca de suspensión para conservación se crea solo cuando es necesaria, y no cuando aplica una directiva de retención o una etiqueta de retención, para ver cómo funciona, primero debe editar o eliminar un elemento que esté sujeto a retención. Después, vaya a la biblioteca de suspensión para conservación para ver la copia conservada.
   
 Cuando se asigna el contenido de una cuenta de OneDrive o un sitio de SharePoint a la configuración de retención, dependen de si la configuración de retención debe retener, eliminar, solo retener o eliminar.
 

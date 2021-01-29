@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: e3cd36fe6a7f075516d7778094ff5dd29480bfd9
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ec5085b2d0a828300cb90fb260cb293eda4b9433
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794132"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988186"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -38,7 +38,10 @@ Para otras cargas de trabajo, vea:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
-Los siguientes elementos de Teams se pueden retener y eliminar mediante directivas de retención para Teams: mensajes de chats y mensajes de canal, incluidas imágenes insertadas, tablas, vínculos de hipertexto y vínculos a otros mensajes y archivos de Teams. Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
+Los siguientes elementos de Teams se pueden retener y eliminar mediante directivas de retención para Teams: mensajes de chats y mensajes de canal, incluidas imágenes insertadas, tablas, vínculos de hipertexto y vínculos a otros mensajes y archivos de Teams, y [contenido de tarjetas](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
+
+> [!NOTE]
+> La inclusión del contenido de tarjetas es una adición reciente y actualmente se está implementando en los inquilinos. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Los mensajes de Teams en canales privados no se incluyen, ni tampoco las reacciones de otras personas en forma de iconos gestuales.
 
