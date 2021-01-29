@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Obtenga información acerca de cómo usar el Administrador de cumplimiento en el Portal de confianza del servicio de Microsoft para satisfacer los requisitos normativos y de protección de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682813"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050404"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
 > [!IMPORTANT]
-> **El Administrador de cumplimiento ahora está disponible de forma general en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Recomendamos encarecidamente a los clientes que dejen de usar el Administrador de cumplimiento (clásico) y cambien al nuevo Administrador de cumplimiento para beneficiarse de su experiencia de usuario enriquecida y de la asignación de controles actualizados. Para más información, consulte la documentación del [Administrador de cumplimiento](compliance-manager.md) para configurar y empezar a usar el nuevo Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365.**
+> **El Administrador de cumplimiento (clásico) se quitará pronto del Portal de confianza de servicios de Microsoft.** Le recomendamos que haga la transición al nuevo [Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), que ofrece una experiencia de usuario mejorada y una asignación de controles actualizada. Los clientes que ya tengan evaluaciones en la versión clásica tendrán que crear nuevas evaluaciones en el nuevo Administrador de cumplimiento. Todos los datos existentes, incluidas las evaluaciones, controles y otros datos, no se transferirán al nuevo Administrador de cumplimiento. [Más información sobre la transición](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal)
 
 *El Administrador de cumplimiento no está disponible en Office 365 ofrecido por 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) u Office 365 Department of Defense.*
 
