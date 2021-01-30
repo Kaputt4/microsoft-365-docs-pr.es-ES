@@ -10,19 +10,19 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 09427d163b8b5e47911b6df26e5acf0fcd1f3524
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841356"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053852"
 ---
 # <a name="access-the-admin-portal"></a>Acceder al portal de administración
 
-La puerta de enlace al servicio de escritorio administrado de Microsoft es El portal de Microsoft [Azure.](https://portal.azure.com) Para obtener más información sobre cómo usar y personalizar la experiencia de Azure Portal en general, consulte la [documentación de Azure Portal.](https://docs.microsoft.com/azure/azure-portal/) Disponible en versión preliminar ahora, también puede encontrar escritorio administrado de Microsoft en [Microsoft Endpoint Manager.](https://endpoint.microsoft.com/) Si no estás familiarizado con las capacidades de este portal para la administración de dispositivos, consulta la documentación [de Microsoft Endpoint Manager.](https://docs.microsoft.com/mem/)
+La puerta de enlace al servicio de escritorio administrado de Microsoft es [Microsoft Endpoint Manager.](https://endpoint.microsoft.com/) Si no estás familiarizado con las capacidades de este portal para la administración de dispositivos, consulta la documentación [de Microsoft Endpoint Manager.](https://docs.microsoft.com/mem/)
 
 > [!NOTE]
-> Sin embargo, si decide acceder al Escritorio administrado de Microsoft, en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) o Azure [Portal,](https://portal.azure.com)se admiten los siguientes exploradores:
+> En [Microsoft Endpoint Manager se](https://endpoint.microsoft.com/) admiten los siguientes exploradores:
 > - Microsoft Edge (versión más reciente)
 > - Microsoft Internet Explorer 11
 > - Safari (versión más reciente, solo para Mac)

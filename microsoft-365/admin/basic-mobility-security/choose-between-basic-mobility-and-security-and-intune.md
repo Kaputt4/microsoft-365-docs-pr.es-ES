@@ -18,19 +18,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas forman parte de los planes de Microsoft 365.
-ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877097"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053806"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre movilidad y seguridad básicas o Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) es un producto independiente que se incluye con determinados planes de Microsoft 365, mientras que Movilidad y seguridad básica forma parte de los planes de Microsoft 365. 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) es un producto independiente que se incluye con determinados planes de Microsoft 365, mientras que Movilidad y seguridad básica forma parte de los planes de Microsoft 365.
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilidad de movilidad y seguridad básicas e Intune
- 
+
 La movilidad básica y la seguridad y Intune se incluyen en una variedad de planes, que se describen en la tabla siguiente.
 
 | Plan | Movilidad y seguridad básicas | Microsoft Intune |
