@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Asegúrese de que los trabajadores remotos puedan tener acceso a los recursos locales y optimizar el acceso a los servicios en la nube de Microsoft 365.
-ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908334"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055536"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Paso 2. Proporcionar acceso remoto a los servicios y aplicaciones locales
 
@@ -107,7 +107,7 @@ Para obtener más información, consulte [esta introducción a Windows Virtual D
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Proteja las conexiones de los servicios de escritorio remoto con la puerta de enlace de servicios de escritorio remoto
 
-Si usa los servicios de escritorio remoto (RDS) para permitir que los empleados se conecten a equipos con Windows de su red local, debería usar una puerta de enlace de servicios de escritorio remoto de Microsoft en su red perimetral. La puerta de enlace usa una capa de sockets seguros (SSL) para cifrar las comunicaciones y evitar que el sistema que hospeda los RDS se exponga directamente a Internet.
+Si usa los servicios de escritorio remoto (RDS) para permitir que los empleados se conecten a equipos con Windows de su red local, debería usar una puerta de enlace de servicios de escritorio remoto de Microsoft en su red perimetral. La puerta de enlace usa la Seguridad de la capa de transporte (TLS) para cifrar el tráfico e impide que el equipo local que hospeda RDS se exponga directamente a Internet.
 
 ![Conexiones de los servicios de escritorio remoto con la puerta de enlace de servicios de escritorio remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
