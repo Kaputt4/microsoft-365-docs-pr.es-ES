@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad de la capa de transporte (TLS) y secreto de reenvío (FS) para proteger las comunicaciones de correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058463"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066833"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Cómo Exchange Online usa TLS para proteger las conexiones del correo electrónico
 
@@ -31,7 +31,7 @@ Obtenga información sobre cómo Exchange Online y Microsoft 365 usan seguridad 
   
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Conceptos básicos de TLS para Microsoft 365 y Exchange Online
 
-TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos criptográficos que protegen la comunicación por red con certificados de seguridad que cifran una conexión entre equipos. TLS reemplaza la Capa de sockets seguros (SSL) y se suele denominar SSL 3.1. Para Exchange Online, usamos TLS para cifrar las conexiones entre nuestros servidores de Exchange y las conexiones entre nuestros servidores de Exchange y otros servidores, como los servidores de Exchange locales o los servidores de correo de los destinatarios. Una vez cifrada la conexión, todos los datos enviados a través de esa conexión se envían a través del canal cifrado. Sin embargo, si reenvía un mensaje que se envió a través de una conexión cifrada con TLS, ese mensaje no se cifra necesariamente. Esto se debe a que, en términos simples, TLS no cifra el mensaje, solo la conexión.
+TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos criptográficos que protegen la comunicación por red con certificados de seguridad que cifran una conexión entre equipos. TLS reemplaza la Capa de sockets seguros (SSL) y se suele denominar SSL 3.1. Para Exchange Online, usamos TLS para cifrar las conexiones entre nuestros servidores de Exchange y las conexiones entre nuestros servidores de Exchange y otros servidores, como los servidores de Exchange locales o los servidores de correo de los destinatarios. Una vez cifrada la conexión, todos los datos enviados a través de esa conexión se envían a través del canal cifrado. Sin embargo, si reenvía un mensaje que se envió a través de una conexión cifrada con TLS, ese mensaje no está necesariamente cifrado. Esto se debe a que, en términos simples, TLS no cifra el mensaje, solo la conexión.
   
 Si quiere cifrar el mensaje, necesita usar una tecnología de cifrado que cifre el contenido del mensaje (por ejemplo, Cifrado de mensajes de Office). Vea [Email encryption in Office 365](email-encryption.md) y [Office 365 Message Encryption (OME)](ome.md) para más información sobre las opciones de cifrado de mensajes de Office 365. 
   
@@ -45,7 +45,7 @@ Los servidores de Exchange Online siempre cifran las conexiones con otros servid
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Cómo Usa Microsoft 365 TLS entre Microsoft 365 y socios externos y de confianza
 
-De forma predeterminada, Exchange Online siempre usa TLS oportunista. Esto significa que Exchange Online siempre intenta cifrar primero las conexiones con la versión más segura de TLS y, luego, va bajando por la lista de cifrado TLS hasta que encuentra uno que puedan aceptar ambas partes. A menos que haya configurado Exchange Online para asegurarse de que los mensajes a ese destinatario solo se envían a través de conexiones seguras, el mensaje se enviará de forma predeterminada sin cifrar si la organización del destinatario no admite el cifrado TLS. TLS oportunista es suficiente para la mayoría de las empresas. Sin embargo, para las empresas que tienen requisitos de cumplimiento como organizaciones médicas, bancarias o gubernamentales, puede configurar Exchange Online para requerir o forzar TLS. Para obtener instrucciones, vea [Configurar el flujo de correo mediante conectores en Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
+De forma predeterminada, Exchange Online siempre usa TLS oportunista. Esto significa que Exchange Online siempre intenta cifrar primero las conexiones con la versión más segura de TLS y, luego, va bajando por la lista de cifrado TLS hasta que encuentra uno que puedan aceptar ambas partes. A menos que haya configurado Exchange Online para asegurarse de que los mensajes a ese destinatario solo se envían a través de conexiones seguras, el mensaje se enviará de forma predeterminada sin cifrar si la organización del destinatario no admite el cifrado TLS. TLS oportunista es suficiente para la mayoría de las empresas. Sin embargo, para las empresas que tienen requisitos de cumplimiento como organizaciones médicas, bancarias o gubernamentales, puede configurar Exchange Online para requerir o forzar TLS. Para obtener instrucciones, [vea Configurar el flujo de correo mediante conectores en Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
 Si decide configurar TLS entre su organización y una organización asociada de confianza, Exchange Online puede usar TLS forzado para crear canales de comunicación de confianza. TLS forzado necesita que la organización asociada autentique a Exchange Online con un certificado de seguridad para enviarle correo. Para hacerlo, el asociado tiene que administrar sus propios certificados. En Exchange Online, usamos conectores para proteger los mensajes que envía desde un acceso no autorizado antes de que lleguen al proveedor de correo electrónico del destinatario. Para obtener información sobre el uso de conectores para configurar el flujo de correo, vea Configurar el flujo de correo [mediante conectores en Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
@@ -55,15 +55,15 @@ Si administra una implementación híbrida de Exchange, el servidor exchange loc
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Configurar TLS forzado para Exchange Online en Office 365
 
-En el caso de los clientes de Exchange Online, para que TLS forzado pueda proteger todo el correo electrónico enviado y recibido, es necesario configurar más de un conector que exija TLS. Necesitará un conector para el correo electrónico enviado a los buzones de los usuarios y otro conector para el correo electrónico enviado desde los buzones de usuario. Cree esos conectores en el Centro de administración de Exchange en Office 365. Para obtener instrucciones, vea [Configurar el flujo de correo mediante conectores en Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
+En el caso de los clientes de Exchange Online, para que TLS forzado pueda proteger todo el correo electrónico enviado y recibido, es necesario configurar más de un conector que exija TLS. Necesitará un conector para el correo electrónico enviado a los buzones de los usuarios y otro conector para el correo electrónico enviado desde los buzones de usuario. Cree esos conectores en el Centro de administración de Exchange en Office 365. Para obtener instrucciones, [vea Configurar el flujo de correo mediante conectores en Office 365.](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Información de certificado TLS para Exchange Online
 
 En la tabla siguiente se describe la información del certificado usada por Exchange Online. Si su socio comercial configura TLS forzado en su servidor de correo electrónico, necesitará proporcionarle esta información. Tenga en cuenta que, por motivos de seguridad, nuestros certificados cambian ocasionalmente. Hemos lanzado una actualización de nuestro certificado dentro de nuestros centros de datos. El nuevo certificado es válido a partir del 3 de septiembre de 2018.
   
- **Información de certificado actual válida desde el 3 de septiembre de 2018**
+ **Información del certificado actual válida desde el 3 de septiembre de 2018**
   
-|**Atributo**|**Valor**|
+| Atributo | Valor |
 |:-----|:-----|
 |Emisor raíz de la autoridad de certificado  <br/> |GlobalSign Root CA – R1 <br/> |
 |Nombre del certificado  <br/> |mail.protection.outlook.com  <br/> |
@@ -73,11 +73,11 @@ En la tabla siguiente se describe la información del certificado usada por Exch
    
  **Información de certificado en desuso válida hasta el 3 de septiembre de 2018**
   
-Para ayudar a garantizar una transición sin problemas, seguiremos proporcionando la información del certificado antiguo para su referencia durante algún tiempo, pero debe usar la información del certificado actual a partir de ahora.
+Para ayudar a garantizar una transición sin problemas, seguiremos proporcionando la información de certificado antigua para su referencia durante algún tiempo, pero debe usar la información del certificado actual a partir de ahora.
   
 ****
 
-|**Atributo**|**Valor**|
+| Atributo | Valor |
 |:-----|:-----|
 |Emisor raíz de la autoridad de certificado  <br/> |Baltimore CyberTrust Root  <br/> |
 |Nombre del certificado  <br/> |mail.protection.outlook.com  <br/> |
@@ -93,15 +93,18 @@ El nuevo certificado requiere conectarse a los extremos de la nueva CA como part
 
 1. Conéctese a la Exchange Server local mediante Windows PowerShell y, a continuación, ejecute el siguiente comando:  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. En la ventana que aparece, elija **Recuperar**.
-3. Cuando la utilidad finaliza la comprobación, devuelve un estado. Si el estado muestra **Correcto,** el servidor de correo puede validar correctamente el nuevo certificado. Si no es así, debe determinar qué está provocando errores en las conexiones. Lo más probable es que necesite actualizar la configuración de un firewall. La lista completa de puntos de conexión a los que se debe tener acceso incluye:
-    - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
 
-Normalmente, recibes actualizaciones de los certificados raíz automáticamente a través de Windows Update. Sin embargo, algunas implementaciones tienen seguridad adicional que impide que estas actualizaciones se produzcan automáticamente. En estas implementaciones bloqueadas en las que Windows Update no puede actualizar automáticamente los certificados raíz, debes asegurarte de que el certificado de ca raíz correcto esté instalado completando estos pasos:
+1. En la ventana que aparece, elija **Recuperar**.
+
+1. Cuando la utilidad completa su comprobación, devuelve un estado. Si el estado muestra **Correcto,** el servidor de correo puede validar correctamente el nuevo certificado. Si no es así, debe determinar qué hace que las conexiones fallen. Lo más probable es que necesite actualizar la configuración de un firewall. La lista completa de puntos de conexión a los que se debe tener acceso incluye:
+    - ocsp.globalsign.com
+    - crl.globalsign.com
+    - secure.globalsign.com   
+
+Normalmente, recibes actualizaciones de los certificados raíz automáticamente a través de Windows Update. Sin embargo, algunas implementaciones tienen seguridad adicional que impide que estas actualizaciones se produzcan automáticamente. En estas implementaciones bloqueadas en las que Windows Update no puede actualizar automáticamente certificados raíz, debes asegurarte de que el certificado de entidad de certificación raíz correcto esté instalado completando estos pasos:
 1.  Conéctese a la Exchange Server local mediante Windows PowerShell y, a continuación, ejecute el siguiente comando:  
   `certmgr.msc`
+
 2. En Certificados o entidad de certificación raíz **de confianza,** confirme que se muestra el nuevo certificado.
 
 ## <a name="get-more-information-about-tls-and-microsoft-365"></a>Obtener más información sobre TLS y Microsoft 365

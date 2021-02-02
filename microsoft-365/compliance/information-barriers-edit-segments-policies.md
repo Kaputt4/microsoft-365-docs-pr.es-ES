@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 62e9910a1b94862ba23ecdc63c0fea1ec644043a
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980083"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071285"
 ---
 # <a name="manage-information-barrier-policies"></a>Administrar directivas de barreras de información
 
@@ -32,7 +32,7 @@ Una vez [definidas](information-barriers-policies.md)las directivas de barreras 
 | [Editar una directiva](#edit-a-policy) | Edite una directiva de barreras de información cuando desee cambiar el funcionamiento de una directiva.<br/>Por ejemplo, en lugar de bloquear las comunicaciones entre dos segmentos, puede decidir que desea permitir que las comunicaciones solo se produzcan entre ciertos segmentos. |
 | [Establecer una directiva en estado inactivo](#set-a-policy-to-inactive-status) |Establece una directiva en estado inactivo cuando quieras realizar cambios en una directiva o cuando no quieras que una directiva esté en vigor. |
 | [Quitar una directiva](#remove-a-policy) | Quite una directiva de barreras de información cuando ya no necesite una directiva concreta. |
-| [Detener una aplicación de directiva](#stop-a-policy-application) | Tome esta acción cuando desee detener el proceso de aplicación de directivas de barreras de información.<br/> La detención de una aplicación de directiva no es instantánea y no deshace directivas que ya se han aplicado a los usuarios. |
+| [Detener una aplicación de directiva](#stop-a-policy-application) | Tome esta acción cuando desee detener el proceso de aplicación de directivas de barreras de información.<br/> La detención de una aplicación de directiva no es instantánea y no deshace las directivas que ya se han aplicado a los usuarios. |
 | [Definir directivas para barreras de información](information-barriers-policies.md) | Defina una directiva de barreras de información cuando aún no tenga dichas directivas en su lugar y debe restringir o limitar las comunicaciones entre grupos de usuarios específicos. |
 | [Solución de problemas de barreras de información](information-barriers-troubleshooting.md) | Consulte este artículo cuando se tope con problemas inesperados con barreras de información. |
 
@@ -88,7 +88,7 @@ Cuando haya terminado de editar segmentos para su organización, puede definir [
 
 2. Use el cmdlet **Set-InformationBarrierPolicy** con un parámetro **Identity** y especifique los cambios que desea realizar.
 
-    Ejemplo: supongamos que se definió una directiva para impedir que el segmento *investigación* se comunique con los *segmentos* ventas *y marketing.* La directiva se definió con este cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    Ejemplo: supongamos que se definió una directiva para impedir que el segmento *investigación* se comunique con los segmentos *ventas* *y marketing.* La directiva se definió con este cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
     Supongamos que queremos cambiarlo para que los usuarios del segmento *Investigación* solo puedan comunicarse con personas del segmento *de RECURSOS* HUMANOS. Para realizar este cambio, usamos este cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
@@ -166,6 +166,8 @@ Una vez que haya comenzado a aplicar directivas de barreras de información, si 
 
 - [Obtener información general sobre las barreras de información](information-barriers.md)
 - [Definir directivas para barreras de información](information-barriers-policies.md)
-- [Más información sobre las barreras de información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Más información sobre las barreras de información en Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Obtenga más información sobre las barreras de información en SharePoint Online](/sharepoint/information-barriers)
+- [Más información sobre las barreras de información en OneDrive](/onedrive/information-barriers)
 - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
 - [Solución de problemas de barreras de información](information-barriers-troubleshooting.md)

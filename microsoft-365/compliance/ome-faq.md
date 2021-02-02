@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Busca una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058543"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066843"
 ---
 # <a name="message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes
 
@@ -62,7 +62,7 @@ Para obtener más información acerca de BYOK, vea [Planeación e implementació
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>¿OME y BYOK con Azure Information Protection cambian el enfoque de Microsoft para las solicitudes de datos de terceros, como las citaciones?
 
-No. OME y la opción de proporcionar y controlar sus propias claves de cifrado, denominadas BYOK, desde Azure Information Protection no se diseñaron para responder a las citaciones de las fuerzas del orden. OME, con BYOK para Azure Information Protection, se diseñó para clientes centrados en el cumplimiento. Microsoft se toma muy en serio las solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre estamos a favor de la privacidad de los datos de los clientes. En caso de obtener una citación, siempre intentamos redirigir al tercero al cliente para obtener la información. (Please read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Publicamos periódicamente información detallada de la solicitud que recibimos. Para obtener más información sobre las solicitudes de datos de terceros, vea Responder a solicitudes gubernamentales y de las [fuerzas](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) del orden para obtener acceso a los datos de clientes en el Centro de confianza de Microsoft. Vea también "Divulgación de datos de clientes" en los Términos [de Online Services (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+No. OME y la opción de proporcionar y controlar sus propias claves de cifrado, denominadas BYOK, desde Azure Information Protection no se diseñaron para responder a las citaciones de las fuerzas del orden. OME, con BYOK para Azure Information Protection, se diseñó para clientes centrados en el cumplimiento. Microsoft se toma muy en serio las solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre estamos a favor de la privacidad de los datos de los clientes. En caso de obtener una citación, siempre intentamos redirigir al tercero al cliente para obtener la información. (Please read Brad Smith's blog: [Protecting customer data from government snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Publicamos periódicamente información detallada de la solicitud que recibimos. Para obtener más información sobre las solicitudes de datos de terceros, vea Responder a solicitudes gubernamentales y de las [fuerzas](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) del orden para obtener acceso a los datos de los clientes en el Centro de confianza de Microsoft. Vea también "Divulgación de datos de clientes" en los Términos [de Online Services (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>¿Cómo está relacionada esta característica con las características heredadas de Cifrado de mensajes de Office 365 (OME) e Information Rights Management (IRM)?
 
@@ -70,7 +70,7 @@ Las nuevas capacidades para el cifrado de mensajes de Office 365 son una evoluci
   
 **Comparación de las funcionalidades OME, IRM y nuevas de OME heredadas**
 
-|**Función**|**Versiones anteriores de OME**|**IRM**|**Nuevas funcionalidades de OME**|
+| Funcionalidad | Versiones anteriores de OME | IRM | Nuevas funcionalidades de OME |
 |:-----|:-----|:-----|:-----|
 |**Enviar un correo electrónico cifrado**|Solo a través de reglas de flujo de correo de Exchange|Usuario final iniciado desde Outlook para Windows, Outlook para Mac o Outlook en la Web; o a través de reglas de flujo de correo de Exchange|Usuario final iniciado desde Outlook para Windows, Outlook para Mac o Outlook en la Web; o a través de reglas de flujo de correo|
 |**Administración de derechos**|-|Opciones no reenviar y plantillas personalizadas|Opción No reenviar, opción de solo cifrado, plantillas predeterminadas y personalizadas|
@@ -80,7 +80,7 @@ Las nuevas capacidades para el cifrado de mensajes de Office 365 son una evoluci
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>¿Cómo puedo habilitar las nuevas funcionalidades de OME para mi organización?
 
-Vea Configurar las nuevas capacidades de cifrado de mensajes [de Office 365.](set-up-new-message-encryption-capabilities.md)
+Consulte Configurar las nuevas capacidades de cifrado de mensajes [de Office 365.](set-up-new-message-encryption-capabilities.md)
   
 ## <a name="will-the-previous-version-of-ome-be-deprecated"></a>¿La versión anterior de OME estará en desuso?
 
@@ -92,7 +92,7 @@ No. Si usa Exchange Online con el servicio Active Directory Rights Management (A
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mi organización tiene una implementación híbrida de Exchange. ¿Puedo usar esta característica?
 
-Los usuarios locales pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online. Para ello, debe enrutar el correo electrónico a través de Exchange Online. Para obtener más información, vea la parte 2: Configurar el correo para que fluya desde el servidor de correo electrónico [a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
+Los usuarios locales pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online. Para ello, debe enrutar el correo electrónico a través de Exchange Online. Para obtener más información, vea la parte 2: Configurar el correo para que fluya desde el servidor [de correo electrónico a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>¿Qué cliente de correo electrónico necesito usar para crear un mensaje cifrado de OME? ¿Qué aplicaciones se admiten para enviar mensajes protegidos?
 
@@ -100,7 +100,7 @@ Puede crear mensajes protegidos desde Outlook 2016, Outlook 2013 para Windows y 
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>¿Qué clientes de correo electrónico se admiten para leer y responder mensajes de correo electrónico protegidos?
 
-Los usuarios de Microsoft 365 pueden leer y responder desde Outlook para Windows y Mac (2013 y 2016), Outlook en la Web y Outlook mobile (Android e iOS). También puede usar el cliente de correo nativo de iOS si su organización lo permite. Si no es un usuario de Microsoft 365, puede leer y responder mensajes cifrados en la web a través de su explorador web.
+Los usuarios de Microsoft 365 pueden leer y responder desde Outlook para Windows y Mac (2013 y 2016), Outlook en la Web y Outlook Mobile (Android e iOS). También puede usar el cliente de correo nativo de iOS si su organización lo permite. Si no es un usuario de Microsoft 365, puede leer y responder mensajes cifrados en la web a través de su explorador web.
 
 ## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>¿Qué clientes de correo electrónico admiten los correos electrónicos protegidos de solo cifrado?
 
@@ -108,7 +108,7 @@ Los usuarios de Microsoft 365 pueden usar Outlook para pc versiones 2019 y Micro
 
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>¿Hay un límite de tamaño para los mensajes que puede enviar con OME?
 
-Sí. El tamaño máximo de mensaje que puede enviar con OME, incluidos los datos adjuntos, es de 25 MB. Para obtener más información, vea [Límites de mensajes.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)
+Sí. El tamaño máximo del mensaje que puede enviar con OME, incluidos los datos adjuntos, es de 25 MB. Para obtener más información, vea [Límites de mensajes.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>¿Qué tipos de archivo se admiten como datos adjuntos en correos electrónicos protegidos? ¿Heredan los datos adjuntos las directivas de protección asociadas con los correos electrónicos protegidos?
 
@@ -118,7 +118,7 @@ Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint,
   
 ## <a name="are-pdf-file-attachments-supported"></a>¿Se admiten los datos adjuntos de archivos PDF?
 
-La respuesta breve es sí. El cifrado de PDF le permite proteger documentos PDF confidenciales a través de una comunicación segura o una colaboración segura. Al enviar correo electrónico, el servicio office 365 cifra los datos adjuntos de los archivos PDF, no el cliente de Outlook.
+La respuesta corta es sí. El cifrado de PDF le permite proteger documentos PDF confidenciales a través de una comunicación segura o una colaboración segura. Al enviar correo electrónico, el servicio office 365 cifra los datos adjuntos de los archivos PDF, no el cliente de Outlook.
 
 Para Outlook en la Web, Outlook para iOS y Outlook para Android, puede cifrar los archivos PDF que envíe sin pasos adicionales. Estos clientes admiten de forma nativa el cifrado pdf.
 
@@ -130,14 +130,14 @@ Para habilitar el cifrado de datos adjuntos en PDF, ejecute el siguiente comando
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-El cifrado de PDF le permite proteger documentos PDF confidenciales a través de una comunicación segura o una colaboración segura. Para todos los clientes de Outlook, los mensajes y los datos adjuntos PDF desprotegidos heredan la protección de OME de la directiva de prevención de pérdida de datos (DLP) o regla de flujo de correo en Exchange Online. Además, si un usuario de Outlook en la web adjunta un documento PDF desprotegido y aplica protección al mensaje, el mensaje hereda la protección del mensaje. Los usuarios solo pueden abrir los datos adjuntos cifrados en aplicaciones que admiten archivos PDF protegidos (por ejemplo, el Portal de OME y el Visor de Azure Information Protection).
+El cifrado de PDF le permite proteger documentos PDF confidenciales a través de una comunicación segura o una colaboración segura. Para todos los clientes de Outlook, los mensajes y los datos adjuntos PDF desprotegidos heredan la protección OME de la directiva de prevención de pérdida de datos (DLP) o regla de flujo de correo en Exchange Online. Además, si un usuario de Outlook en la web adjunta un documento PDF desprotegido y aplica protección al mensaje, el mensaje hereda la protección del mensaje. Los usuarios solo pueden abrir los datos adjuntos cifrados en aplicaciones que admiten archivos PDF protegidos (por ejemplo, el Portal de OME y el Visor de Azure Information Protection).
 
 > [!IMPORTANT]
-> El cliente de escritorio de Outlook no admite el cifrado de PDF.
+> El cliente de escritorio de Outlook no admite el cifrado pdf.
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>¿Se admiten los datos adjuntos de OneDrive para la Empresa?
 
-Not yet. No se admiten los datos adjuntos de OneDrive para la Empresa y los usuarios finales no pueden cifrar un correo que contiene datos adjuntos de OneDrive para la Empresa en la nube.
+Not yet. No se admiten los datos adjuntos de OneDrive para la Empresa y los usuarios finales no pueden cifrar un correo que contenga datos adjuntos de OneDrive para la Empresa en la nube.
   
 ## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>¿Qué clientes de correo electrónico admiten la vista previa de datos adjuntos cifrados en correos electrónicos protegidos?
 
@@ -180,7 +180,7 @@ Los administradores pueden configurar una regla de flujo de correo para quitar e
 
 No en este momento.
 
-## <a name="can-i-send-as-a-shared-mailbox-and-encrypt-emails"></a>¿Puedo enviar como un buzón compartido y cifrar mensajes de correo electrónico?
+## <a name="can-i-send-as-a-shared-mailbox-and-encrypt-emails"></a>¿Puedo enviar como un buzón compartido y cifrar correos electrónicos?
 
 Cuando alguien envía un mensaje de correo electrónico que coincide con una regla de flujo de correo de cifrado, el mensaje se cifra antes de que se envíe.
 
@@ -205,15 +205,15 @@ En la tabla siguiente se enumeran los clientes admitidos para buzones compartido
 
 Actualmente hay dos limitaciones conocidas:
 
-- No puede abrir datos adjuntos a los correos electrónicos que recibe en dispositivos móviles con Outlook Mobile.
+- No puede abrir datos adjuntos a los correos electrónicos que recibe en dispositivos móviles mediante Outlook Mobile.
 
-- No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico. Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido y que la asignación automática está habilitada para Exchange Online. La automapping está habilitada de forma predeterminada para Exchange Online.
+- No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico. Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido y que la asignación automática está habilitada para Exchange Online. La autoapping está habilitada de forma predeterminada para Exchange Online.
 
 **Para asignar un usuario al buzón compartido**
 
 1. [Conéctese a Exchange Online con PowerShell remoto.](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx)
 
-2. Ejecute el cmdlet Add-MailboxPermission con el parámetro Automapping. En este ejemplo se conceden permisos de acceso completo a Ayla a un buzón de soporte técnico.
+2. Ejecute el Add-MailboxPermission cmdlet con el parámetro Automapping. En este ejemplo se conceden permisos de acceso completo a Ayla a un buzón de soporte técnico.
 
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true

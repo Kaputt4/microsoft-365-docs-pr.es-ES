@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/16/2020
+ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Ver una lista completa de certificados raíz y autoridades de certificación (CA) en Microsoft 365.
-ms.openlocfilehash: 96499cbf2eae554ecddc9bc7bcf622db2515f980
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905269"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068946"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Cadenas de cifrado de Microsoft 365
 
@@ -56,7 +56,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Huella digital (SHA-256)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
 | **Pin (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
 
-### <a name="cnnic-root"></a>**RAÍZ DE LA**
+### <a name="cnnic-root"></a>**RAÍZ DE LA RAÍZ DE**
 
 | **Asunto** | CN=RAÍZ DE NICO<br>O=DICOIC<br>C=CN |
 | --- | --- |
@@ -118,7 +118,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-TRUST Root Class 3 CA 2 2009**
 
-| **Asunto** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust Vezh<br>C=DE |
+| **Asunto** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-TrustIk<br>C=DE |
 | --- | --- |
 | **Número de serie** | 09:83:F3 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -133,7 +133,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-TRUST Root Class 3 CA 2 EV 2009**
 
-| **Asunto** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust Vezh<br>C=DE |
+| **Asunto** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-TrustIk<br>C=DE |
 | --- | --- |
 | **Número de serie** | 09:83:F4 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -229,7 +229,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Identificador de clave de asunto** | ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
 | **Huella digital (SHA-1)** | F18B538D1BE903B6A6F056435B171589CAF36BF2 |
 | **Huella digital (SHA-256)** | 4B03F45807AD70F21BFC2CAE71C9FDE4604C064CF5FFB686BAE5DBAAD7FDD34C |
-| **Pin (SHA-256)** | GQbGEk27Q4V40A4GbVBUxsN/D6YCjAVUXgmU7drsjun= |
+| **Pin (SHA-256)** | GQbGEk27Q4V40A4GbVBUxsN/D6YCjAVUXgmU7drsguide= |
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign Class 3 Public Primary Certification Authority - G5**
 
@@ -249,14 +249,14 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="cnnic-sha256-ssl"></a>**SSL DE SHA256 DE SSL**
 
-| **Asunto** | CN=SSL SHA256 DE SSL <br>O=SSL DE SHA256 DE NICO <br>C=CN |
+| **Asunto** | CN=SSL SSL SHA256 DE SSL <br>O=SSL DE SHA256 DE NICO <br>C=CN |
 | --- | --- |
 | **Emisor** | CN=RAÍZ DE NICO <br>O=DICOIC <br>C=CN |
 | **Número de serie** | 49:33:00:7C |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
 | **Algoritmo de firma** | sha256RSA |
 | **Validez no anterior** | 18 de diciembre de 12:32:18 UTC |
-| **Validity Not After** | 18 de diciembre de 12:32:18 2024 UTC |
+| **Validity Not After** | 18 de diciembre 12:32:18 2024 UTC |
 | **Identificador de clave de asunto** | b7:d1:59:8b:8c:0d:06:28:47:23:00:3a:36:04:a5:ee:38:76:53:3c |
 | **Identificador de clave de autoridad** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
 | **Huella digital (SHA-1)** | FC844648FC708433921BE88B18C48787A3E2813E |
@@ -268,9 +268,9 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL Class 3 CA 1 2009**
 
-| **Asunto** | CN=D-TRUST SSL Class 3 CA 1 2009<br>O=D-Trust Vezh<br>C=DE |
+| **Asunto** | CN=D-TRUST SSL Class 3 CA 1 2009<br>O=D-TrustIk<br>C=DE |
 | --- | --- |
-| **Emisor** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust Vezh<br>C=DE |
+| **Emisor** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-TrustIk<br>C=DE |
 | **Nombre alternativo del sujeto** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
 | **Número de serie** | 09:90:63 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -287,9 +287,9 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL Class 3 CA 1 EV 2009**
 
-| **Asunto** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust Vezh<br>C=DE |
+| **Asunto** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-TrustIk<br>C=DE |
 | --- | --- |
-| **Emisor** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust Vezh<br>C=DE |
+| **Emisor** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-TrustIk<br>C=DE |
 | **Nombre alternativo del sujeto** | RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
 | **Número de serie** | 09:90:64 |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
@@ -313,7 +313,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Longitud de clave pública** | RSA 2048 bits |
 | **Algoritmo de firma** | sha256RSA |
 | **Validez no anterior** | Miércoles, 4 de marzo de 2020 4:04 a.m. |
-| **Validity Not Until** | Lunes, 4 de marzo de 2030 4:04 a.m. |
+| **Validez No hasta** | Lunes, 4 de marzo de 2030 4:04 a.m. |
 | **Identificador de clave de asunto** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
 | **Identificador de clave de autoridad** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Huella digital (SHA-1)** | 4D1FA5D1FB1AC3917C08E43F65015E6AEA571179 |
@@ -321,6 +321,23 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **DIRECCIONES URL de CRL** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **Direcciones URL de OCSP** | http://ocsp.digicert.cn |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
+
+| **Asunto** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **Emisor** | CN=Ca raíz global DigiCert<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Número de serie** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
+| **Longitud de clave pública** | RSA 2048 bits |
+| **Algoritmo de firma** | sha256RSA |
+| **Validez no anterior** | 4 de agosto de 2015 12:00 AM |
+| **Validez No hasta** | 4 de agosto de 2030 12:00 AM |
+| **Identificador de clave de asunto** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Identificador de clave de autoridad** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Huella digital (SHA-1)** | 81B68D6CD2f221F8F534E677523BB236BBA1DC56 |
+| **Huella digital (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
+| **Pin (SHA-256)** | UgpUVmk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
+| **DIRECCIONES URL de CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **Direcciones URL de OCSP** | http://ocsp.digicert.com |
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
@@ -330,19 +347,19 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Número de serie** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **Longitud de clave pública** | RSA 2048 bits |
 | **Algoritmo de firma** | sha256RSA |
-| **Validez no anterior** | Jueves, 24 de septiembre de 2020 17:00 |
-| **Validity Not Until** | Martes, 24 de septiembre de 2030 16:59 |
-| **Identificador de clave de asunto** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
-| **Identificador de clave de autoridad** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Validez no anterior** | 25 de septiembre de 2020 00:00 a.m. |
+| **Validity Not After** | 24 de septiembre de 2030 11:59 p.m. |
+| **Identificador de clave de asunto** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Identificador de clave de autoridad** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Huella digital (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
-| **Huella digital (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **Huella digital (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
 | **Pin (SHA-256)** | UgpUVmk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **DIRECCIONES URL de CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **Direcciones URL de OCSP** | http://ocsp.digicert.com |
+| **DIRECCIONES URL de CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **Direcciones URL de OCSP** | http://ocsp.digicert.com
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**Ca del servidor de validación extendida DigiCert SHA2**
 
-| **Asunto** | CN=Ca del servidor de validación extendida DigiCert SHA2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Asunto** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Emisor** | CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Número de serie** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
@@ -465,7 +482,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign Extended Validation CA - SHA256 - G2**
 
-| **Asunto** | CN=GlobalSign Extended Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
+| **Asunto** | CN=CA de validación extendida de GlobalSign - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **Emisor** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
 | **Número de serie** | 04:00:00:00:00:01:44:4E:F0:4A:55 |
@@ -501,7 +518,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign Organization Validation CA - SHA256 - G2**
 
-| **Asunto** | CN=Ca de validación de organización GlobalSign - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
+| **Asunto** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **Emisor** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | **Número de serie** | 04:00:00:00:00:01:31:89:C6:44:C9 |
@@ -519,7 +536,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign Organization Validation CA - SHA256 - G2**
 
-| **Asunto** | CN=Ca de validación de organización GlobalSign - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
+| **Asunto** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **Emisor** | CN=GlobalSign Root CA<br>OU=CA raíz<br>O=GlobalSign nv-sa<br>C=BE |
 | **Número de serie** | 04:00:00:00:00:01:44:4E:F0:42:47 |
@@ -614,7 +631,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Longitud de clave pública** | RSA 4096 bits |
 | **Algoritmo de firma** | sha384RSA |
 | **Validez no anterior** | Miércoles, 29 de julio de 2020 5:30 a.m. |
-| **Validity Not Until** | Jueves, 27 de junio de 2024 16:59 |
+| **Validez No hasta** | Jueves, 27 de junio de 2024 16:59 |
 | **Identificador de clave de asunto** | 00AB91FC216226979AA8791B61419060A96267FD |
 | **Identificador de clave de autoridad** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Huella digital (SHA-1)** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
@@ -631,7 +648,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Longitud de clave pública** | RSA 4096 bits |
 | **Algoritmo de firma** | sha384RSA |
 | **Validez no anterior** | Miércoles, 29 de julio de 2020 5:30 a.m. |
-| **Validity Not Until** | Jueves, 27 de junio de 2024 16:59 |
+| **Validez No hasta** | Jueves, 27 de junio de 2024 16:59 |
 | **Identificador de clave de asunto** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
 | **Identificador de clave de autoridad** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Huella digital (SHA-1)** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
@@ -688,7 +705,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Identificador de clave de autoridad** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Huella digital (SHA-1)** | 54D9D20239080C32316ED9FF980A48988F4ADF2D |
 | **Huella digital (SHA-256)** | 4E107C981B42ACBE41C01067E16D44DB64814D4193E572317EA04B87C79C475F |
-| **Pin (SHA-256)** | wBdPad95AU7OgLRs0FU/E6ELLO1MSCM84kJ9y0H+TT7s= |
+| **Pin (SHA-256)** | wBdPad95AU7OgLRs0FU/E6ILO1MSCM84kJ9y0H+TT7s= |
 | **DIRECCIONES URL de CRL** | http://crl3.digicert.com/Omniroot2025.crl |
 | **Direcciones URL de OCSP** | http://ocsp.digicert.com |
 
@@ -754,7 +771,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Longitud de clave pública** | RSA 4096 bits |
 | **Algoritmo de firma** | sha256RSA |
 | **Validez no anterior** | Martes, 21 de julio de 2020 16:00 |
-| **Validity Not Until** | Martes, 8 de octubre de 2024 12:00 |
+| **Validez No hasta** | Martes, 8 de octubre de 2024 12:00 |
 | **Identificador de clave de asunto** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
 | **Identificador de clave de autoridad** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Huella digital (SHA-1)** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
@@ -786,7 +803,7 @@ Expanda las secciones raíz e intermedia a continuación para ver detalles adici
 | **Asunto** | CN=Ca de servidor seguro clase Symantec 3 - G4<br>OU=Red de confianza de Symantec<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
 | **Emisor** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc.: solo para uso autorizado&quot;<br>OU=Red de confianza VeriSign<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
-| **Nombre alternativo del sujeto** | Dirección de directorio: CN=SymantecPKI-1-534 |
+| **Nombre alternativo del sujeto** | Dirección del directorio: CN=SymantecPKI-1-534 |
 | **Número de serie** | 51:3F:B9:74:38:70:B7:34:40:41:8D:30:93:06:99:FF |
 | **Longitud de clave pública** | RSA 2048 bits (e 65537) |
 | **Algoritmo de firma** | sha256RSA |
