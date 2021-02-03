@@ -232,57 +232,63 @@
     - name: Prevención de pérdida de datos (DLP)
       items:
         - name: Obtener información sobre DLP
-          href: data-loss-prevention-policies.md
-        - name: DLP y Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: Obtenga más información sobre la prevención de pérdida de datos en punto de conexión
-          href: endpoint-dlp-learn-about.md
-        - name: Introducción a la prevención de pérdida de datos en punto de conexión
-          href: endpoint-dlp-getting-started.md
-        - name: Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
-          href: endpoint-dlp-configure-proxy.md
-        - name: Uso de la prevención de pérdida de datos en punto de conexión
-          href: endpoint-dlp-using.md
-        - name: "Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows\_10"
           items:
-            - name: "Herramientas y métodos de incorporación para dispositivos Windows\_10"
-              href: dlp-configure-endpoints.md
-            - name: Incorporar dispositivos Windows 10 mediante la directiva de grupo
-              href: dlp-configure-endpoints-gp.md
-            - name: Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles
-              href: dlp-configure-endpoints-mdm.md
-            - name: Incorporar dispositivos Windows 10 con Configuration Manager
-              href: dlp-configure-endpoints-sccm.md
-            - name: Incorporar dispositivos Windows 10 mediante un script local
-              href: dlp-configure-endpoints-script.md
-            - name: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
-              href: dlp-configure-endpoints-vdi.md
-        - name: Introducción a la directiva predeterminada de DLP
-          href: get-started-with-the-default-dlp-policy.md
-        - name: Crear una directiva DLP a partir de una plantilla
-          href: create-a-dlp-policy-from-a-template.md
-        - name: 'Crear, probar y optimizar una directiva DLP'
-          href: create-test-tune-dlp-policy.md
-        - name: Usar notificaciones y sugerencias de directiva en directivas DLP
-          href: use-notifications-and-policy-tips.md
-        - name: Configurar y ver alertas para las directivas DLP (vista previa)
-          href: dlp-configure-view-alerts-policies.md
-        - name: Qué incluyen las plantillas de directiva DLP
-          href: what-the-dlp-policy-templates-include.md
-        - name: Crear una directiva DLP para proteger documentos con FCI u otras propiedades
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: Ver los informes DLP
-          href: view-the-dlp-reports.md
-        - name: Crear una consulta para buscar datos confidenciales almacenados en los sitios
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange
-          href: how-dlp-works-between-admin-centers.md
-        - name: Usar etiquetas de confidencialidad como condición en las directivas DLP (vista previa)
-          href: dlp-sensitivity-label-as-condition.md
-        - name: Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no sean de Microsoft
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: Excepciones y condiciones de la Directiva DLP (vista previa)
-          href: dlp-conditions-and-exceptions.md
+            - name: Obtener información sobre DLP
+              href: data-loss-prevention-policies.md
+            - name: Obtener información sobre la Prevención de pérdida de datos en punto de conexión
+              href: endpoint-dlp-learn-about.md
+        - name: Introducción a DLP
+          items:
+            - name: Introducción a la directiva predeterminada de DLP
+              href: get-started-with-the-default-dlp-policy.md
+            - name: Crear una directiva DLP a partir de una plantilla
+              href: create-a-dlp-policy-from-a-template.md
+            - name: 'Crear, probar y optimizar una directiva DLP'
+              href: create-test-tune-dlp-policy.md
+            - name: Introducción a la prevención de pérdida de datos en punto de conexión
+              href: endpoint-dlp-getting-started.md
+            - name: Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
+              href: endpoint-dlp-configure-proxy.md
+            - name: "Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows\_10"
+              items:
+                - name: "Herramientas y métodos de incorporación para dispositivos Windows\_10"
+                  href: dlp-configure-endpoints.md
+                - name: Incorporar dispositivos Windows 10 mediante la directiva de grupo
+                  href: dlp-configure-endpoints-gp.md
+                - name: Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles
+                  href: dlp-configure-endpoints-mdm.md
+                - name: Incorporar dispositivos Windows 10 con Configuration Manager
+                  href: dlp-configure-endpoints-sccm.md
+                - name: Incorporar dispositivos Windows 10 mediante un script local
+                  href: dlp-configure-endpoints-script.md
+                - name: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
+                  href: dlp-configure-endpoints-vdi.md
+        - name: Usar DLP
+          items:
+            - name: DLP y Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: Uso de la prevención de pérdida de datos en punto de conexión
+              href: endpoint-dlp-using.md
+            - name: Usar notificaciones y sugerencias de directiva en directivas DLP
+              href: use-notifications-and-policy-tips.md
+            - name: Qué incluyen las plantillas de directiva DLP
+              href: what-the-dlp-policy-templates-include.md
+            - name: Crear una directiva DLP para proteger documentos con FCI u otras propiedades
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: Ver los informes DLP
+              href: view-the-dlp-reports.md
+            - name: Crear una consulta para buscar datos confidenciales almacenados en los sitios
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange
+              href: how-dlp-works-between-admin-centers.md
+            - name: Configurar y ver alertas para las directivas DLP (versión preliminar)
+              href: dlp-configure-view-alerts-policies.md
+            - name: Usar etiquetas de confidencialidad como condición en las directivas DLP (vista previa)
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no sean de Microsoft
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: Excepciones y condiciones de la Directiva DLP (vista previa)
+              href: dlp-conditions-and-exceptions.md
 - name: Administrar el gobierno de información
   items:
     - name: Gobierno de datos
@@ -729,6 +735,8 @@
       items:
         - name: Búsquedas en el registro de auditoría
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Usar un script de PowerShell para buscar en el registro de auditoría
+          href: audit-log-search-script.md
         - name: Activar o desactivar la búsqueda de registros de auditoría
           href: turn-audit-log-search-on-or-off.md
         - name: Propiedades detalladas del registro de auditoría
