@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044750"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084681"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -227,9 +227,9 @@ Flujo de trabajo para una directiva de etiquetado automático:
 
 1. Crear y configurar una directiva de etiquetado automático.
 
-2. Ejecute la directiva en el modo de simulación y espere 24 horas, o bien, hasta que finalice la simulación.
+2. Ejecute la directiva en modo simulación, que puede tardar 48 horas en completarse.
 
-3. Revise los resultados y, si es necesario, perfeccione su directiva. Vuelva a ejecutar el modo de simulación y espere otras 24 horas o hasta que finalice la simulación.
+3. Revise los resultados y, si es necesario, perfeccione su directiva. Vuelva a ejecutar el modo de simulación y espere a que se complete de nuevo.
 
 4. Si es necesario, repita el paso 3.
 
