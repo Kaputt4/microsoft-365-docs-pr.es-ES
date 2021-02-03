@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Brinda una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846969"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068978"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 para empresas
 
@@ -85,7 +85,7 @@ Este póster de dos páginas es una forma rápida de hacer un inventario de la i
 
 El soporte de [Windows 7](https://aka.ms/win7upgrade) terminó el **14 de enero de 2020**.
 
-El soporte técnico para estos productos terminó el **13 de octubre de 2020** :
+El soporte técnico para estos productos terminó el **13 de octubre de 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
@@ -131,6 +131,24 @@ Para obtener un ejemplo de cómo una organización multinacional ficticia pero r
 - [Microsoft 365 y la Administración pública](https://www.microsoft.com/microsoft-365/government)
 
   Permita a los empleados del sector público de Estados Unidos trabajar juntos de forma segura.
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>Mejor con Surface y el explorador Microsoft Edge
+
+Optimice la productividad segura y integrada de su usuario con la combinación óptima de Microsoft 365 para empresas, dispositivos Microsoft Surface y el explorador Microsoft Edge. Esta integración entre productos proporciona:
+
+- Una infraestructura de seguridad de identidad e inicio de sesión común.
+- Aplicaciones locales y en la nube integradas para búsquedas, colaboración, productividad y cumplimiento.
+- Seguridad completa e integrada para el hardware, el explorador, las aplicaciones locales y las aplicaciones en la nube.
+- Una infraestructura común para la administración de TI de las instalaciones y actualizaciones.
+
+Este es un ejemplo para una organización empresarial.
+
+![Una organización empresarial con Microsoft 365, dispositivos Surface y el explorador Microsoft Edge](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+Para más información y ejemplos de configuración de una pequeña y mediana empresa y una institución educativa, descargue el [póster "Mejor juntos"](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
+
+[![Imagen del póster Mejor juntos con Surface y el explorador Microsoft Edge](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Formación de Microsoft 365
 
