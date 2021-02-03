@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928813"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080718"
 ---
 # <a name="custom-detections-overview"></a>Introducción a las detecciones personalizadas
 
@@ -33,7 +33,7 @@ ms.locfileid: "49928813"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Con las detecciones personalizadas, puede supervisar y responder de forma proactiva a diversos eventos y estados del sistema, incluidos la actividad sospechosa de infracciones y los puntos de conexión mal configurados. Esto es posible gracias a reglas de detección personalizables que desencadenan automáticamente alertas, así como acciones de respuesta.
+Con las detecciones personalizadas, puede supervisar y responder de forma proactiva a varios eventos y estados del sistema, incluidos la actividad sospechosa de infracciones y los puntos de conexión mal configurados. Esto es posible gracias a reglas de detección personalizables que desencadenan automáticamente alertas, así como acciones de respuesta.
 
 Las detecciones personalizadas funcionan con la búsqueda [avanzada,](advanced-hunting-overview.md)que proporciona un lenguaje de consulta eficaz y flexible que cubre un amplio conjunto de eventos e información del sistema de la red. Puedes configurarlos para que se ejecuten a intervalos regulares, generando alertas y llevando a cabo acciones de respuesta siempre que haya coincidencias.
 
@@ -41,6 +41,7 @@ Las detecciones personalizadas proporcionan:
 - Alertas para detecciones basadas en reglas creadas a partir de consultas de búsqueda avanzada
 - Acciones de respuesta automáticas
 
-## <a name="related-topic"></a>Tema relacionado
+## <a name="see-also"></a>Consulte también
 - [Crear y administrar reglas de detección personalizadas](custom-detection-rules.md)
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Migrar consultas de búsqueda avanzada de Microsoft Defender para endpoint](advanced-hunting-migrate-from-mdatp.md)

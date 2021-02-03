@@ -23,20 +23,18 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Obtenga información sobre cómo crear grupos de distribución o listas en el Centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin tener que escribir el nombre de cada destinatario.
-ms.openlocfilehash: ffdafb7ef74e908f340a9ac80db0abffb1841442
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7c416612fa241d7fec11a2e24a29e149594951e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926311"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080474"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el Centro de administración de Microsoft 365
   
 Se usa cuando se desea enviar correo electrónico al grupo de personas sin tener que escribir el nombre de cada destinatario individual, los grupos de distribución (listas de distribución) se organizan por un tema de discusión determinado (como "Marketing") o por usuarios que comparten trabajo común que les requiere comunicarse con frecuencia. También proporcionan una forma de reenviar automáticamente el correo electrónico a varias direcciones de correo electrónico.
 
 A veces, los grupos de distribución se denominan listas de distribución.
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
   
 ## <a name="create-a-distribution-group-list"></a>Crear un grupo de distribución (lista)
 

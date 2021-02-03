@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo definir directivas de datos adjunt
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 9343ce222f1deb84e900f0d6f18e7d55daa73372
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988085"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084618"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -61,8 +61,8 @@ En Exchange Online PowerShell o en un EOP PowerShell independiente, usted admini
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Deberá tener asignados permisos antes de poder realizar los procedimientos descritos en este artículo:
-  - Para crear, modificar y eliminar directivas de vínculos seguros, debe ser miembro de los grupos de  roles Administración de  la organización o Administrador de seguridad en el Centro de cumplimiento de & de seguridad y miembro del grupo de roles Administración de la organización en Exchange Online.  
-  - Para obtener acceso de solo lectura a las directivas de vínculos seguros, debe ser miembro de los grupos de roles Lector **global** o Lector de seguridad en el Centro de seguridad & cumplimiento. 
+  - Para crear, modificar y eliminar directivas de datos adjuntos  seguros, debe ser miembro de los grupos de roles  Administración de la organización o Administrador de seguridad en el Centro de seguridad & Cumplimiento y miembro del grupo de roles Administración de la organización en Exchange Online.  
+  - Para obtener acceso de solo lectura a las directivas de datos  adjuntos seguros, debe ser miembro de los grupos de roles Lector **global** o Lector de seguridad en el Centro de seguridad & cumplimiento.
 
   Para obtener más información, vea [Permisos en el Centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md) y permisos en Exchange [Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
@@ -103,7 +103,7 @@ La creación de una directiva de datos adjuntos seguros personalizada en el Cent
 
      Estos valores se explican en la configuración [de directiva de datos adjuntos seguros.](atp-safe-attachments.md#safe-attachments-policy-settings)
 
-   - Envíe los datos adjuntos a la siguiente dirección de correo **electrónico:** para los valores de  acción **Bloquear**, **Supervisar** o **Reemplazar**, puede seleccionar Habilitar redireccionamiento para enviar mensajes que contienen datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para su análisis e investigación.
+   - Envíe los datos adjuntos a la siguiente dirección de correo electrónico:  para los valores de acción **Bloquear,** **Supervisar** o **Reemplazar**, puede seleccionar Habilitar redireccionamiento para enviar mensajes que contienen datos adjuntos de malware a la dirección de correo electrónico interna o externa especificada para su análisis e investigación. 
 
      La recomendación para la configuración de directivas estándar y estricta es habilitar el redireccionamiento. Para obtener más información, vea [Configuración de datos adjuntos seguros.](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)
 
@@ -117,11 +117,11 @@ La creación de una directiva de datos adjuntos seguros personalizada en el Cent
 
    Haga **clic en Agregar una condición.** En la lista desplegable que aparece, seleccione una condición en **Aplicada si:**
 
-   - **El destinatario es**: especifica uno o varios buzones, usuarios de correo o contactos de correo de su organización.
+   - **El destinatario es**: especifica uno o varios buzones, usuarios de correo o contactos de correo de la organización.
    - **El destinatario es miembro de**: Especifica uno o más grupos de la organización.
    - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en su organización.
 
-   Después de seleccionar la condición, aparece una lista desplegable correspondiente con **uno de estos** cuadros.
+   Después de seleccionar la condición, aparece un desplegable correspondiente con **uno de estos** cuadros.
 
    - Haga clic en el cuadro y desplácese por la lista de valores que desea seleccionar.
    - Haga clic en el cuadro y empiece a escribir para filtrar la lista y seleccionar un valor.
@@ -189,7 +189,7 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
    - La directiva de datos adjuntos seguros con **el** valor **de prioridad 0** solo tiene disponible el **botón** Disminuir prioridad.
 
-   - La directiva de datos adjuntos seguros con el valor **de prioridad** más bajo (por ejemplo, **3)** solo tiene disponible **el** botón Aumentar prioridad.
+   - La directiva de datos adjuntos seguros con el valor **de prioridad** más bajo (por ejemplo, **3)** solo tiene el **botón Aumentar** prioridad disponible.
 
    - Si tiene tres o más directivas de datos adjuntos seguros,  las directivas entre los valores de mayor y menor prioridad tienen disponibles los botones Aumentar prioridad **y** Disminuir prioridad.
 
@@ -227,8 +227,8 @@ Crear una directiva de datos adjuntos seguros en PowerShell es un proceso de dos
 - Puede crear una nueva regla de datos adjuntos seguros y asignarle una directiva de datos adjuntos seguros existente y sin asociar. Una regla de datos adjuntos seguros no se puede asociar a más de una directiva de datos adjuntos seguros.
 
 - Puede configurar las siguientes opciones en las nuevas directivas de datos adjuntos seguros en PowerShell que no estén disponibles en el Centro de seguridad & Cumplimiento hasta después de crear la directiva:
-  - Cree la nueva directiva como deshabilitada _(habilitada_ `$false` en el cmdlet **New-SafeAttachmentRule).**
-  - Establezca la prioridad de la directiva durante la creación (_Prioridad_ ) en _\<Number\>_ el cmdlet **New-SafeAttachmentRule).**
+  - Cree la nueva directiva como deshabilitada _(habilitada en_ `$false` el cmdlet **New-SafeAttachmentRule).**
+  - Establezca la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_ ) en el cmdlet **New-SafeAttachmentRule).**
 
 - Una nueva directiva de datos adjuntos seguros que cree en PowerShell no será visible en el Centro de seguridad & Cumplimiento hasta que asigne la directiva a una regla de datos adjuntos seguros.
 
@@ -240,10 +240,10 @@ Para crear una directiva de datos adjuntos seguros, use esta sintaxis:
 New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
-En este ejemplo se crea una directiva de datos adjuntos segura denominada Contoso All con los siguientes valores:
+En este ejemplo se crea una directiva de datos adjuntos seguros denominada Contoso All con los siguientes valores:
 
 - Bloquear los mensajes que se encuentran que contienen malware mediante el examen de documentos seguros (no estamos usando el parámetro _Action_ y el valor predeterminado es `Block` ).
-- El redireccionamiento está habilitado y los mensajes que se encuentran que contienen malware se envían a sec-ops@contoso.com para su análisis e investigación.
+- La redirección está habilitada y los mensajes que se encuentran que contienen malware se envían a sec-ops@contoso.com para su análisis e investigación.
 - Si el análisis de datos adjuntos seguros no está disponible o encuentra errores, no entregue el mensaje (no estamos usando el parámetro _ActionOnError_ y el valor predeterminado es `$true` ).
 
 ```PowerShell
@@ -254,7 +254,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 #### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>Paso 2: Usar PowerShell para crear una regla de datos adjuntos segura
 
-Para crear una regla de datos adjuntos segura, use esta sintaxis:
+Para crear una regla de datos adjuntos seguros, use esta sintaxis:
 
 ```PowerShell
 New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
@@ -331,7 +331,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 No puede cambiar el nombre de una directiva de datos adjuntos seguros en PowerShell (el cmdlet **Set-SafeAttachmentPolicy** no tiene ningún _parámetro Name)._ Cuando cambia el nombre de una directiva de datos adjuntos seguros en el Centro de seguridad & cumplimiento, solo cambia el nombre de la regla de datos _adjuntos seguros._
 
-De lo contrario, la misma configuración está disponible al crear una directiva de datos adjuntos seguros, como se describe en el paso [1: Usar PowerShell](#step-1-use-powershell-to-create-a-safe-attachment-policy) para crear una sección de directiva de datos adjuntos seguros anteriormente en este artículo.
+De lo contrario, la misma configuración está disponible cuando se crea una directiva de datos adjuntos seguros como se describe en el paso [1: Usar PowerShell](#step-1-use-powershell-to-create-a-safe-attachment-policy) para crear una sección de directiva de datos adjuntos seguros anteriormente en este artículo.
 
 Para modificar una directiva de datos adjuntos seguros, use esta sintaxis:
 
@@ -395,7 +395,7 @@ Este ejemplo establece la prioridad de la regla denominada Marketing Department 
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Nota:** Para establecer la prioridad de una regla nueva al crearla, use el parámetro _Priority_ en el cmdlet **New-SafeAttachmentRule.**
+**Nota:** Para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-SafeAttachmentRule.**
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [consulte Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).
 
