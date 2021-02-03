@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701157"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080729"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -47,8 +47,6 @@ Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben
 
 Para obtener acceso a la pestaña del explorador de contenido, una cuenta debe tener asignada una suscripción en uno de estos roles o grupos de roles. 
 
-Una [directiva DLP](data-loss-prevention-policies.md) puede ayudar a proteger información confidencial, lo que se define como un **tipo de información confidencial**. Microsoft 365 incluye [definiciones para muchos tipos comunes de información confidencial](sensitive-information-type-entity-definitions.md), en muchas regiones diferentes y listas para su uso. Por ejemplo, un número de tarjeta de crédito, números de cuenta bancaria, números de identificación nacionales y números de servicio de Windows Live ID.
-
 **Grupos de roles de Microsoft 365**
 
 - Administrador global
@@ -66,7 +64,7 @@ El acceso al explorador de contenidos está altamente restringido porque permite
 > [!IMPORTANT]
 > Estos permisos reemplazan los permisos que se asignan a los elementos de forma local, lo que permite ver el contenido. 
 
-Hay dos roles que otorgan acceso al explorador de contenido:
+Hay dos roles que conceden acceso al explorador de contenido y se otorgan mediante el [Centro de seguridad y cumplimiento de Microsoft](https://protection.office.com/permissions):
 
 - **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación en la vista de lista. El rol `data classification list viewer` se ha asignado previamente a este grupo de roles.
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre los tipos de explicación en Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975960"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080613"
 ---
 # <a name="introduction-to-explanation-types"></a>Introducción a los tipos de explicación
 
@@ -123,6 +123,31 @@ Hay tres tokens en *(móvil)*:
 Configure la opción de proximidad para tener un intervalo de 0 a 3.
 
    ![Ejemplo, Proximity](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>Configurar dónde aparecen frases en el documento
+
+Cuando crea una explicación, de forma predeterminada se busca en todo el documento la frase que intenta extraer. Sin embargo, puede usar la opción avanzada <b>Dónde se aparezcan estas frases</b> para ayudar a aislar una ubicación específica del documento donde aparezca una frase. Esto es útil en situaciones en las que es posible que aparezcan instancias similares de una frase en otra parte del documento y quiera asegurarse de que se ha seleccionado la correcta. Si nos referimos a nuestro ejemplo de documento Derivación médica, siempre se menciona el **médico remitente** en el primer párrafo del documento. Con la opción <b>Dónde se aparezcan estas frases</b>, en este ejemplo puede configurar su explicación para que busque esta etiqueta solo en la sección inicial del documento o en cualquier otra ubicación en la que pueda aparecer.
+
+   ![Opción Dónde se aparezcan estas frases](../media/content-understanding/phrase-location.png)</br>
+
+Puede seleccionar una de las siguientes opciones para este valor:
+
+- En cualquier lugar del archivo: se busca la frase en todo el documento.
+- Principio del archivo: se busca en el documento desde el principio hasta la ubicación de la frase.</br> 
+   ![Principio del archivo](../media/content-understanding/beginning-of-file.png)</br>
+En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. El valor <b>Posición final</b> se actualizará para mostrar el número de tokens que incluye el área seleccionada. Tenga en cuenta que también puede actualizar el valor de la posición final para ajustar el área seleccionada.</br>
+   ![Cuadro de posición Principio del archivo](../media/content-understanding/beginning-box.png)</br>
+
+- Final del archivo: se busca en el documento desde el principio hasta la ubicación de la frase.</br> 
+   ![Final del archivo](../media/content-understanding/end-of-file.png)</br>
+En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. El valor <b>Posición inicial</b> se actualizará para mostrar el número de tokens que incluye el área seleccionada. Tenga en cuenta que también puede actualizar el valor Posición inicial para ajustar el área seleccionada.</br> 
+   ![Cuadro de posición Final del archivo](../media/content-understanding/end-box.png)</br>
+- Intervalo personalizado: se busca la ubicación de la frase en un intervalo especificado dentro del documento.</br> 
+   ![Intervalo personalizado](../media/content-understanding/custom-file.png)</br>
+En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición <b>Inicio</b> y una posición <b>Fin</b>. Estos valores representan el número de tokens desde el principio del documento. Aunque puede especificar estos valores manualmente, es más fácil ajustar manualmente el cuadro de selección en el visor.</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>Usar plantillas de explicación
 

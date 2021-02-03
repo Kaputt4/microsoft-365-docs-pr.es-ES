@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 1cb11573efcb23bbac7cf54e21ee457913b21f18
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058523"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084639"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -216,7 +216,7 @@ Una directiva de etiqueta consiste en lo siguiente:
 
 Puede incluir un usuario en varias directivas de etiquetas, y el usuario verá todas las etiquetas de confidencialidad de esas directiva. Sin embargo, el usuario conseguirá las configuraciones de directiva solo de la directiva de etiqueta de mayor prioridad.
 
-Si no ve la configuración de la etiqueta o la configuración de la directiva de la etiqueta que esperaba para un usuario o un grupo, y ha esperado 30 minutos, compruebe el orden de las directivas de etiqueta de confidencialidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
+Si no ve la configuración de la etiqueta o la configuración de la misma que esperaba para un usuario o un grupo, compruebe el orden de las directivas de etiqueta de sensibilidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
 
 ![Opción Mover en la página de directivas de etiquetas de confidencialidad](../media/sensitivity-label-policy-priority.png)
 
