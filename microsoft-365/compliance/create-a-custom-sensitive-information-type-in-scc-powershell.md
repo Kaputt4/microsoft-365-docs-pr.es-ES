@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 31badcb2ab0102584e3addf3ed4d1549afe78525
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929426"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080685"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -161,7 +161,7 @@ Una entidad es un tipo de información confidencial (como un número de tarjeta 
 ### <a name="name-the-entity-and-generate-its-guid"></a>Asignar un nombre a la entidad y generar su GUID
 
 1. En el editor XML que desee, agregue los elementos Rules y Entity.
-2. Luego, agregue un comentario que contenga el nombre de la entidad personalizada (en este caso, Employee ID). Posteriormente, asignará el nombre de la entidad a la sección de cadenas localizadas, y ese será el nombre que aparece en la interfaz de usuario al crear una directiva.
+2. Luego, agregue un comentario que contenga el nombre de la entidad personalizada (en este caso, Id. de empleado). Posteriormente, asignará el nombre de la entidad a la sección de cadenas localizadas, y ese será el nombre que aparece en la interfaz de usuario al crear una directiva.
 3. Después, genere un GUID para la entidad. Hay varias maneras de generar los GUID, pero puede hacerlo fácilmente en PowerShell escribiendo **[guid]:: NewGuid()**. Posteriormente, agregará también el GUID de la entidad a la sección de cadenas localizadas.
   
 ![Marcado XML donde se muestran los elementos Rules y Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -192,7 +192,7 @@ Puede usar el atributo minCount opcional para especificar el número de instanci
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Palabras clave [elementos Keyword, Group y Term, atributos matchStyle y caseSensitive]
 
-Al identificar información confidencial (como un id. de empleado), es habitual exigir palabras clave como pruebas corroboradoras. Por ejemplo, además de hacer coincidir un número de nueve dígitos, puede que quiera buscar palabras como "tarjeta", "identificación" o "id.". Para hacerlo, use el elemento Keyword. El elemento Keyword tiene un atributo "id." al que puede hacerse referencia mediante varios elementos Match en varios patrones o entidades.
+Al identificar información confidencial (como un Id. de empleado), es habitual exigir palabras clave como pruebas corroboradoras. Por ejemplo, además de hacer coincidir un número de nueve dígitos, puede que quiera buscar palabras como "tarjeta", "identificación" o "id.". Para hacerlo, use el elemento Keyword. El elemento Keyword tiene un atributo "id." al que puede hacerse referencia mediante varios elementos Match en varios patrones o entidades.
   
 Las palabras clave se incluyen como una lista de elementos Term en un elemento Group. El elemento Group tiene un atributo matchStyle con dos valores posibles:
   
@@ -428,6 +428,14 @@ Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML 
 - No puede tener un repetidor no enlazado (como "\*" o "+") en un grupo.
     
   Por ejemplo, "(xx)\*" y "(xx)+" no superarán la validación.
+  
+- Las contraseñas pueden tener 50 caracteres de longitud como máximo.  Si tiene una palabra clave dentro de un grupo que supere esto, una solución sugerida es crear el grupo de términos como un [diccionario de palabras clave](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary) y hacer referencia al GUID del diccionario de palabras clave en la estructura XML como parte de la entidad para Match o idMatch en el archivo.
+
+- Cada tipo de información confidencial personalizado puede tener un máximo de 2048 palabras clave total.
+
+- Al usar el cmdlet de PowerShell hay un tamaño máximo de retorno de los datos deserializados de aproximadamente 1 megabyte.   Esto afectará al tamaño del archivo XML. Mantenga el archivo cargado limitado a un máximo de 512 megabytes como límite sugerido para obtener resultados coherentes sin errores al procesarlo.
+
+- La estructura XML no requiere caracteres de formato como espacios, tabulaciones o entradas de retorno de carro o de avance de línea.  Anote esto al optimizar espacio en las cargas.
     
 Si un tipo personalizado de información confidencial contiene un problema que puede afectar al rendimiento, no se cargará y es posible que se muestre uno de estos mensajes de error:
   
