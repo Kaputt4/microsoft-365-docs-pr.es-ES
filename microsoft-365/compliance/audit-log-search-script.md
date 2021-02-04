@@ -1,0 +1,172 @@
+---
+title: Usar un script de PowerShell para buscar en el registro de auditoría
+f1.keywords:
+- NOCSH
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+audience: Admin
+ms.topic: how-to
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+ms.custom: seo-marvel-apr2020
+description: Usar un script de PowerShell, que ejecute el cmdlet Search-UnifiedAuditLog, para buscar en el registro de auditoría. El script ha sido optimizado para entregar un conjunto grande (hasta 50 000) de registros de auditoría. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
+ms.openlocfilehash: a91a54a6c35f96b90df156eaf4bc9735c911fc11
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084710"
+---
+# <a name="use-a-powershell-script-to-search-the-audit-log"></a><span data-ttu-id="f553a-105">Usar un script de PowerShell para buscar en el registro de auditoría</span><span class="sxs-lookup"><span data-stu-id="f553a-105">Use a PowerShell script to search the audit log</span></span>
+
+<span data-ttu-id="f553a-106">Hoy en día, la seguridad, el cumplimiento y la auditoría son la prioridad número 1 de los administradores de TI.</span><span class="sxs-lookup"><span data-stu-id="f553a-106">Security, compliance, and auditing have become a top priority for IT administrators in today’s world.</span></span> <span data-ttu-id="f553a-107">Microsoft 365 cuenta con varias capacidades integradas para ayudar a las organizaciones a administrar la seguridad, el cumplimiento y la auditoría.</span><span class="sxs-lookup"><span data-stu-id="f553a-107">Microsoft 365 has several built-in capabilities to help organizations manage security, compliance, and auditing.</span></span> <span data-ttu-id="f553a-108">En particular, un registro unificado de auditoría puede ayudarle a investigar incidentes de seguridad y problemas relacionados con el cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="f553a-108">In particular, unified audit logging can help you investigate security incidents and compliance issues.</span></span> <span data-ttu-id="f553a-109">Puede recuperar los registros de auditoría mediante los siguientes métodos:</span><span class="sxs-lookup"><span data-stu-id="f553a-109">You can retrieve audit logs by using the following methods:</span></span>
+
+- [<span data-ttu-id="f553a-110">API de Actividad de administración de Office 365</span><span class="sxs-lookup"><span data-stu-id="f553a-110">The Office 365 Management Activity API</span></span>](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+
+- <span data-ttu-id="f553a-111">La [herramienta de búsqueda en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md) en el Centro de cumplimiento de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="f553a-111">The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center</span></span>
+
+- <span data-ttu-id="f553a-112">El cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="f553a-112">The [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell</span></span>
+
+<span data-ttu-id="f553a-113">Si necesita recuperar registros de auditoría con regularidad, debería considerar una solución que utilice la API de Actividad de administración de Office 365, ya que puede ofrecer a grandes organizaciones la escalabilidad y el rendimiento necesarios para recuperar millones de registros de auditoría de manera continua.</span><span class="sxs-lookup"><span data-stu-id="f553a-113">If you need to retrieve audit logs on a regular basis, you should consider a solution that uses the Office 365 Management Activity API because it that can provide large organizations with the scalability and performance to retrieve millions of audit records on an ongoing basis.</span></span> <span data-ttu-id="f553a-114">Utilizar la herramienta de búsqueda en el registro de auditoría en el Centro de cumplimiento de Microsoft 365 es una manera rápida de encontrar registros de auditoría para operaciones específicas que puedan tener lugar en un intervalo de tiempo más corto.</span><span class="sxs-lookup"><span data-stu-id="f553a-114">Using the audit log search tool in Microsoft 365 compliance center is a good way to quickly find audit records for specific operations that occur in shorter time range.</span></span> <span data-ttu-id="f553a-115">Utilizar intervalos de tiempo mayores en la herramienta de búsqueda en el registro de auditoría, especialmente en el caso de grandes organizaciones, puede entregar un número de registros demasiado elevado como para poderlos administrar o exportar con facilidad.</span><span class="sxs-lookup"><span data-stu-id="f553a-115">Using longer time ranges in the audit log search tool, especially for large organizations, might return too many records to easily manage or export.</span></span>
+
+<span data-ttu-id="f553a-116">Cuando se den situaciones en las que necesite recuperar datos de auditoría de forma manual para una investigación o incidente en concreto, sobre todo en el caso de intervalos de fechas mayores en grandes organizaciones, puede que usar el cmdlet **Search-UnifiedAuditLog** sea la mejor opción.</span><span class="sxs-lookup"><span data-stu-id="f553a-116">When there are situations where you need to manually retrieve auditing data for a specific investigation or incident, particularly for longer date ranges in larger organizations, using the **Search-UnifiedAuditLog** cmdlet may be the best option.</span></span> <span data-ttu-id="f553a-117">Este artículo incluye un script de PowerShell que utiliza el cmdlet para recuperar hasta 50 000 registros de auditoría y, a continuación, exportarlos al archivo CSV al que puede dar formato mediante Power Query en Excel para ayudarle con la revisión.</span><span class="sxs-lookup"><span data-stu-id="f553a-117">This article includes a PowerShell script that uses the cmdlet to retrieve up to 50,000 audit records and then export them to a CSV file that you can format using Power Query in Excel to help with your review.</span></span> <span data-ttu-id="f553a-118">Asimismo, utilizar el script de este artículo minimiza la posibilidad de que se agote el tiempo de espera de búsquedas en grandes registros de auditoría en el servicio.</span><span class="sxs-lookup"><span data-stu-id="f553a-118">Using the script in this article also minimizes the chance that large audit log searches will time out in the service.</span></span>
+
+## <a name="before-you-run-the-script"></a><span data-ttu-id="f553a-119">Antes de ejecutar el script:</span><span class="sxs-lookup"><span data-stu-id="f553a-119">Before you run the script</span></span>
+
+- <span data-ttu-id="f553a-120">El registro de auditoría debe estar habilitado para su organización para poder utilizar correctamente el script para entregar registros de auditoría.</span><span class="sxs-lookup"><span data-stu-id="f553a-120">Audit logging has to be enabled for your organization to successfully use the script to return audit records.</span></span> <span data-ttu-id="f553a-121">El registro de auditoría está activado de forma predeterminada para organizaciones de Microsoft 365 y Office 365 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="f553a-121">Audit logging is turned on by default for Microsoft 365 and Office 365 enterprise organizations.</span></span> <span data-ttu-id="f553a-122">Para comprobar que la búsqueda de registros de auditoría está activada en su organización, puede ejecutar el comando siguiente en PowerShell de Exchange Online:</span><span class="sxs-lookup"><span data-stu-id="f553a-122">To verify that audit log search is turned on for your organization, you can run the following command in Exchange Online PowerShell:</span></span>
+
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  
+  <span data-ttu-id="f553a-123">El valor de `True` para la propiedad **UnifiedAuditLogIngestionEnabled** indica que la búsqueda de registros de auditoría está activada.</span><span class="sxs-lookup"><span data-stu-id="f553a-123">The value of `True` for the **UnifiedAuditLogIngestionEnabled** property indicates that audit log search is turned on.</span></span>
+
+- <span data-ttu-id="f553a-124">Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para ejecutar correctamente el script.</span><span class="sxs-lookup"><span data-stu-id="f553a-124">You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to run successfully the script.</span></span> <span data-ttu-id="f553a-125">De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página depermisosdel centro de administración de Exchange.</span><span class="sxs-lookup"><span data-stu-id="f553a-125">By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center.</span></span> <span data-ttu-id="f553a-126">Para más información, consulte la sección «Requisitos para buscar en el registro de auditoría» en [Buscar en el registro de auditoría en el Centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log).</span><span class="sxs-lookup"><span data-stu-id="f553a-126">For more information, see the "Requirements to search the audit log" section in [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log).</span></span>
+
+- <span data-ttu-id="f553a-127">Puede que el script tarde mucho tiempo en completarse.</span><span class="sxs-lookup"><span data-stu-id="f553a-127">It may take a long time for the script to complete.</span></span> <span data-ttu-id="f553a-128">El tiempo que tarde en ejecutarse dependerá del intervalo de fechas y el tamaño del intervalo que establezca en la configuración del script para recuperar registros de auditoría.</span><span class="sxs-lookup"><span data-stu-id="f553a-128">How long it takes to run depends on the date range and the size of the interval that you configure the script to retrieve audit records for.</span></span> <span data-ttu-id="f553a-129">Los intervalos grandes de fecha y los intervalos menores resultarán en un tiempo de ejecución mayor.</span><span class="sxs-lookup"><span data-stu-id="f553a-129">Larger date ranges and smaller intervals will result in a long running time.</span></span> <span data-ttu-id="f553a-130">Consulte la tabla en el Paso 2 para más información sobre los intervalos de fechas.</span><span class="sxs-lookup"><span data-stu-id="f553a-130">See the table in Step 2 for more information about the date range and intervals.</span></span>
+
+- <span data-ttu-id="f553a-131">El script de ejemplo que aparece en este artículo no es compatible con ningún programa o servicio de soporte técnico estándar de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f553a-131">The sample script provided in this article isn't supported under any Microsoft standard support program or service.</span></span> <span data-ttu-id="f553a-132">El script de ejemplo aparece "TAL CUAL", sin garantía de ningún tipo.</span><span class="sxs-lookup"><span data-stu-id="f553a-132">The sample script is provided AS IS without warranty of any kind.</span></span> <span data-ttu-id="f553a-133">Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito.</span><span class="sxs-lookup"><span data-stu-id="f553a-133">Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.</span></span> <span data-ttu-id="f553a-134">Cualquier riesgo resultante del uso o rendimiento del script y la documentación de ejemplo será únicamente responsabilidad suya.</span><span class="sxs-lookup"><span data-stu-id="f553a-134">The entire risk arising out of the use or performance of the sample script and documentation remains with you.</span></span> <span data-ttu-id="f553a-135">En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega del script será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.</span><span class="sxs-lookup"><span data-stu-id="f553a-135">In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the script be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample script or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
+
+## <a name="step-1-connect-to-exchange-online-powershell"></a><span data-ttu-id="f553a-136">Paso 1: Conectar con Exchange Online PowerShell</span><span class="sxs-lookup"><span data-stu-id="f553a-136">Step 1: Connect to Exchange Online PowerShell</span></span>
+
+<span data-ttu-id="f553a-137">El primer paso es conectar al PowerShell de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="f553a-137">The first step is to connect to Exchange Online PowerShell.</span></span> <span data-ttu-id="f553a-138">Puede conectarse con la autenticación moderna o con la autenticación multifactor (MFA).</span><span class="sxs-lookup"><span data-stu-id="f553a-138">You can connect using modern authentication or with multi-factor authentication (MFA).</span></span> <span data-ttu-id="f553a-139">Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="f553a-139">For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
+
+## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a><span data-ttu-id="f553a-140">Paso 2: modificar y ejecutar el script para recuperar registros de auditoría</span><span class="sxs-lookup"><span data-stu-id="f553a-140">Step 2: Modify and run the script to retrieve audit records</span></span>
+
+<span data-ttu-id="f553a-141">Una vez que se haya conectado a Exchange Online PowerShell, el siguiente paso será crear, modificar y ejecutar el script para recuperar los datos de auditoría.</span><span class="sxs-lookup"><span data-stu-id="f553a-141">After you've connected to Exchange Online PowerShell, the next step is to create, modify, and run the script to retrieve the auditing data.</span></span> <span data-ttu-id="f553a-142">Las primeras siete líneas del script de búsqueda en el registro de auditoría contienen las siguientes variables que puede modificar para configurar la búsqueda.</span><span class="sxs-lookup"><span data-stu-id="f553a-142">The first seven lines in the audit log search script contain the following variables that you can modify to configure your search.</span></span> <span data-ttu-id="f553a-143">Consulte la tabla del paso 2 para obtener una descripción de dichas variables.</span><span class="sxs-lookup"><span data-stu-id="f553a-143">See the table in step 2 for a description of these variables.</span></span>
+
+1. <span data-ttu-id="f553a-144">Guarde el siguiente texto en un script de Windows PowerShell mediante un sufijo de nombre de archivo de .ps1.</span><span class="sxs-lookup"><span data-stu-id="f553a-144">Save the following text to a Windows PowerShell script by using a filename suffix of .ps1.</span></span> <span data-ttu-id="f553a-145">Por ejemplo, SearchAuditLog.ps1.</span><span class="sxs-lookup"><span data-stu-id="f553a-145">For example, SearchAuditLog.ps1.</span></span>
+
+```powershell
+#Modify the values for the following variables to configure the audit log search.
+$logFile = "d:\AuditLogSearch\AuditLogSearchLog.txt"
+$outputFile = "d:\AuditLogSearch\AuditLogRecords.csv"
+[DateTime]$start = [DateTime]::UtcNow.AddDays(-1)
+[DateTime]$end = [DateTime]::UtcNow
+$record = "AzureActiveDirectory"
+$resultSize = 5000
+$intervalMinutes = 60
+
+#Start script
+[DateTime]$currentStart = $start
+[DateTime]$currentEnd = $start
+
+Function Write-LogFile ([String]$Message)
+{
+    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final | Out-File $logFile -Append
+}
+
+Write-LogFile "BEGIN: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize."
+Write-Host "Retrieving audit records for the date range between $($start) and $($end), RecordType=$record, ResultsSize=$resultSize"
+
+$totalCount = 0
+while ($true)
+{
+    $currentEnd = $currentStart.AddMinutes($intervalMinutes)
+    if ($currentEnd -gt $end)
+    {
+        $currentEnd = $end
+    }
+
+    if ($currentStart -eq $currentEnd)
+    {
+        break
+    }
+
+    $sessionID = [DateTime]::Now.ToString("s")
+    Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
+    Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
+    $currentCount = 0
+
+    $sw = [Diagnostics.StopWatch]::StartNew()
+    do
+    {
+        $results = Search-UnifiedAuditLog -StartDate $currentStart -EndDate $currentEnd -RecordType $record -SessionId $sessionID -SessionCommand ReturnLargeSet -ResultSize $resultSize
+
+        if (($results | Measure-Object).Count -ne 0)
+        {
+            $results | export-csv -Path $outputFile -Append -NoTypeInformation
+
+            $currentTotal = $results[0].ResultCount
+            $totalCount += $results.Count
+            $currentCount += $results.Count
+            Write-LogFile "INFO: Retrieved $($currentCount) audit records out of the total $($currentTotal)"
+
+            if ($currentTotal -eq $results[$results.Count - 1].ResultIndex)
+            {
+                $message = "INFO: Successfully retrieved $($currentTotal) audit records for the current time range. Moving on!"
+                Write-LogFile $message
+                Write-Host "Successfully retrieved $($currentTotal) audit records for the current time range. Moving on to the next interval." -foregroundColor Yellow
+                ""
+                break
+            } 
+        }
+    }
+    while (($results | Measure-Object).Count -ne 0)
+
+    $currentStart = $currentEnd
+}
+
+Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
+Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
+
+```
+
+2. <span data-ttu-id="f553a-146">Modifique las variables que se enumeran en la siguiente tabla para configurar los criterios de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="f553a-146">Modify the variables listed in the following table to configure the search criteria.</span></span> <span data-ttu-id="f553a-147">El script incluye valores de ejemplo de estas variables, pero debería cambiarlos (a menos que se indique lo contrario) para adaptarlos a sus requisitos específicos.</span><span class="sxs-lookup"><span data-stu-id="f553a-147">The script includes sample values for these variables, but you should change them (unless stated otherwise) to meet your specific requirements.</span></span>
+
+   |<span data-ttu-id="f553a-148">Variable</span><span class="sxs-lookup"><span data-stu-id="f553a-148">Variable</span></span>|<span data-ttu-id="f553a-149">Valor de ejemplo</span><span class="sxs-lookup"><span data-stu-id="f553a-149">Sample value</span></span>|<span data-ttu-id="f553a-150">Descripción</span><span class="sxs-lookup"><span data-stu-id="f553a-150">Description</span></span>|
+   |---|---|---|
+   |`$logFile`|<span data-ttu-id="f553a-151">"d:\temp\AuditSearchLog.txt"</span><span class="sxs-lookup"><span data-stu-id="f553a-151">"d:\temp\AuditSearchLog.txt"</span></span>|<span data-ttu-id="f553a-152">Especifica el nombre y la ubicación del archivo de registro que contiene información sobre el progreso de la búsqueda en el registro de auditoría realizada por el script.</span><span class="sxs-lookup"><span data-stu-id="f553a-152">Specifies the name and location for the log file that contains information about the progress of the audit log search performed by the script.</span></span>|
+   |`$outputFile`|<span data-ttu-id="f553a-153">"d:\temp\AuditRecords.csv"</span><span class="sxs-lookup"><span data-stu-id="f553a-153">"d:\temp\AuditRecords.csv"</span></span>|<span data-ttu-id="f553a-154">Especifica el nombre y la ubicación del archivo CSV que contiene los registros de auditoría devueltos por el script.</span><span class="sxs-lookup"><span data-stu-id="f553a-154">Specifies the name and location of the CSV file that contains the audit records returned by the script.</span></span>|
+   |<span data-ttu-id="f553a-155">`[DateTime]$start` y `[DateTime]$end`</span><span class="sxs-lookup"><span data-stu-id="f553a-155">`[DateTime]$start` and `[DateTime]$end`</span></span>|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|<span data-ttu-id="f553a-158">Especifica el intervalo de fechas para la búsqueda en el registro de auditoría.</span><span class="sxs-lookup"><span data-stu-id="f553a-158">Specifies the date range for the audit log search.</span></span> <span data-ttu-id="f553a-159">El script entregará registros de actividades de auditoría que tuvieron lugar entre del intervalo de fechas especificado.</span><span class="sxs-lookup"><span data-stu-id="f553a-159">The script will return records for audit activities that occurred within the specified date range.</span></span> <span data-ttu-id="f553a-160">Por ejemplo, para entregar actividades realizadas en enero de 2021, puede utilizar una fecha de inicio de `"2021-01-01"` y una fecha de finalización de `"2021-01-31"` (asegúrese de escribir los valores entre comillas dobles) El valor de muestra del script entrega registros de actividades realizadas en las últimas 24 horas.</span><span class="sxs-lookup"><span data-stu-id="f553a-160">For example, to return activities performed in January 2021, you can use a start date of `"2021-01-01"` and an end date of `"2021-01-31"` (be sure to surround the values in double-quotation marks) The sample value in the script returns records for activities performed in the previous 24 hours.</span></span> <span data-ttu-id="f553a-161">Si no incluye una marca de tiempo en el valor, la marca de tiempo predeterminada es 12:00 AM (medianoche) en la fecha especificada.</span><span class="sxs-lookup"><span data-stu-id="f553a-161">If you don't include a timestamp in the value, the default timestamp is 12:00 AM (midnight) on the specified date.</span></span>|
+   |`$record`|<span data-ttu-id="f553a-162">"AzureActiveDirectory"</span><span class="sxs-lookup"><span data-stu-id="f553a-162">"AzureActiveDirectory"</span></span>|<span data-ttu-id="f553a-163">Especifica el tipo de registro de las actividades de auditoría (también llamadas *operaciones*) para buscar.</span><span class="sxs-lookup"><span data-stu-id="f553a-163">Specifies the record type of the audit activities (also called *operations*) to search for.</span></span> <span data-ttu-id="f553a-164">Esta propiedad indica el servicio o la característica en la que se desencadenó una actividad.</span><span class="sxs-lookup"><span data-stu-id="f553a-164">This property indicates the service or feature that an activity was triggered in.</span></span> <span data-ttu-id="f553a-165">Para obtener una lista de los tipos de registro que puede usar para esta variable, consulte [Tipos de registro de auditoría](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).</span><span class="sxs-lookup"><span data-stu-id="f553a-165">For a list of record types that you can use for this variable, see [Audit log record type](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).</span></span> <span data-ttu-id="f553a-166">Puede utilizar el nombre de tipo de registro o valor ENUM.</span><span class="sxs-lookup"><span data-stu-id="f553a-166">You can use the record type name or ENUM value.</span></span> <br/><br/><span data-ttu-id="f553a-167">**Sugerencia:** Para obtener registros de auditoría para todos los tipos de registro, utilice el valor `$null` (sin usar comillas dobles).</span><span class="sxs-lookup"><span data-stu-id="f553a-167">**Tip:** To return audit records for all record types, use the value `$null` (without double-quotations marks).</span></span>|
+   |`$resultSize`|<span data-ttu-id="f553a-168">5000</span><span class="sxs-lookup"><span data-stu-id="f553a-168">5000</span></span>|<span data-ttu-id="f553a-169">Especifica el número de resultados entregados cada vez que el cmdlet **Search-UnifiedAuditLog** es llamado por el script (llamado *conjunto de resultados*).</span><span class="sxs-lookup"><span data-stu-id="f553a-169">Specifies the number of results returned each time the **Search-UnifiedAuditLog** cmdlet is called by the script (called a *result set*).</span></span> <span data-ttu-id="f553a-170">5 000 es el valor máximo que admite el cmdlet.</span><span class="sxs-lookup"><span data-stu-id="f553a-170">The value of 5,000 is the maximum value supported by the cmdlet.</span></span> <span data-ttu-id="f553a-171">Deje este valor sin modificar.</span><span class="sxs-lookup"><span data-stu-id="f553a-171">Leave this value as-is.</span></span>|
+   |`$intervalMinutes`|<span data-ttu-id="f553a-172">60</span><span class="sxs-lookup"><span data-stu-id="f553a-172">60</span></span>|<span data-ttu-id="f553a-173">Para ayudar a superar el límite de 5000 registros obtenidos, esta variable toma el intervalo de datos que especificó y lo divide en intervalos de tiempo menores.</span><span class="sxs-lookup"><span data-stu-id="f553a-173">To help overcome the limit of 5000 records returned, this variable takes the data range you specified and slices it up into smaller time intervals.</span></span> <span data-ttu-id="f553a-174">Ahora, cada intervalo, y no el intervalo de fechas completo, está sujeto al límite de 5000 registros que se pueden obtener del comando.</span><span class="sxs-lookup"><span data-stu-id="f553a-174">Now each interval, not the entire date range, is subject to the 5000 record output limit of the command.</span></span> <span data-ttu-id="f553a-175">El valor predeterminado de 5000 registros por intervalo de 60 minuto dentro del intervalo de fechas debería bastar para la mayoría de las organizaciones.</span><span class="sxs-lookup"><span data-stu-id="f553a-175">The default value of 5000 records per 60 minute interval within the date range should be sufficient for most organizations.</span></span> <span data-ttu-id="f553a-176">Sin embargo, si el script devuelve un error que dice `maximum results limitation reached`, reduzca el intervalo de tiempo (por ejemplo, a 30 minutos o incluso a 15) y, a continuación, vuelva a ejecutar el script.</span><span class="sxs-lookup"><span data-stu-id="f553a-176">But, if the script returns an error that says, `maximum results limitation reached`, decrease the time interval (for example, to 30 minutes or even 15 minutes) and rerun the script.</span></span>|
+   ||||
+
+   <span data-ttu-id="f553a-177">La mayoría de las variables enumeradas en la tabla anterior se corresponden con parámetros para el cmdlet **Search-UnifiedAuditLog**.</span><span class="sxs-lookup"><span data-stu-id="f553a-177">Most of the variables listed in the previous table correspond to parameters for the **Search-UnifiedAuditLog** cmdlet.</span></span> <span data-ttu-id="f553a-178">Para obtener más información acerca de estos parámetros, consulte [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog).</span><span class="sxs-lookup"><span data-stu-id="f553a-178">For more information about these parameters, see [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog).</span></span>
+
+3. <span data-ttu-id="f553a-179">En su equipo local, abra Windows PowerShell y vaya a la carpeta en la que guardó el script modificado.</span><span class="sxs-lookup"><span data-stu-id="f553a-179">On your local computer, open Windows PowerShell and go to the folder where you saved the modified script.</span></span>
+
+4. <span data-ttu-id="f553a-180">Ejecute el script en Exchange Online PowerShell, por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="f553a-180">Run the script in Exchange Online PowerShell; for example:</span></span>
+
+   ```powershell
+   .\SearchAuditLog.ps1
+   ```
+
+<span data-ttu-id="f553a-181">El script muestra mensajes de progreso durante la ejecución.</span><span class="sxs-lookup"><span data-stu-id="f553a-181">The script displays progress messages while it's running.</span></span> <span data-ttu-id="f553a-182">Una vez que el script haya terminado de ejecutarse, creará el archivo de registro y el archivo CSV que contiene los registros de auditoría y los guarda en las carpetas definidas por las variables `$logFile` y `$outputFile`.</span><span class="sxs-lookup"><span data-stu-id="f553a-182">After the script is finished running, it creates the log file and the CSV file that contains the audit records and saves them to the folders defined by the `$logFile` and `$outputFile` variables.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="f553a-183">Existe un límite de 50 000 registros de auditoría como máximo que se devuelven cada vez que ejecuta este script.</span><span class="sxs-lookup"><span data-stu-id="f553a-183">There is a 50,000 limit for the maximum number of audit records returned each time you run this script.</span></span> <span data-ttu-id="f553a-184">Si ejecuta este script y devuelve 50 000 resultados, es probable que no se incluyeran los registros de auditoría de las actividades que tuvieron lugar dentro del intervalo de fechas.</span><span class="sxs-lookup"><span data-stu-id="f553a-184">If you run this script and it returns 50,000 results, then it's likely that audit records for activities that occurred within the date range weren't included.</span></span> <span data-ttu-id="f553a-185">Si esto sucede, se recomienda que divida el intervalo de fechas en intervalos menores y que vuelva ejecutar el script para cada intervalo de fecha.</span><span class="sxs-lookup"><span data-stu-id="f553a-185">If this happens, we recommend that you divide the date range into smaller durations and then rerun the script for each date range.</span></span> <span data-ttu-id="f553a-186">Por ejemplo, si un intervalo de fechas de 90 días devuelve 50 000 resultados, puede volver a ejecutar el script dos veces; una vez para los primeros 45 días del intervalo de fechas y una segunda vez para los siguientes 45 días.</span><span class="sxs-lookup"><span data-stu-id="f553a-186">For example, if a date range of 90 days returns 50,000 results then you can rerun the script twice, once for the first 45 days in the date range and then again for the next 45 days.</span></span>
+
+## <a name="step-3-format-and-view-the-audit-records"></a><span data-ttu-id="f553a-187">Paso 3: Dar formato y visualizar los registros de auditoría</span><span class="sxs-lookup"><span data-stu-id="f553a-187">Step 3: Format and view the audit records</span></span>
+
+<span data-ttu-id="f553a-188">Una vez que haya ejecutado el script y exportado los registros de auditoría a un archivo CSV, puede que quiera dar formato al archivo CSV para que resulte más fácil revisar y analizar los registros de auditoría.</span><span class="sxs-lookup"><span data-stu-id="f553a-188">After you've run the script and exported the audit records to a CSV file, you may want to format the CSV to make easier to review and analyze the audit records.</span></span> <span data-ttu-id="f553a-189">Una manera de hacer esto es utilizar la característica transformar de Power Query JSON en Excel para dividir cada propiedad en el objeto JSON en la columna **AuditData** en su propia columna.</span><span class="sxs-lookup"><span data-stu-id="f553a-189">One way to do this is to the Power Query JSON transform feature in Excel to split each property in the JSON object in the **AuditData** column into its own column.</span></span> <span data-ttu-id="f553a-190">Para obtener instrucciones paso a paso, consulte «Paso 2: Dar formato al registro de auditoría exportado mediante el Editor de Power Query» en [Exportar, configurar y ver los archivos de registros de auditoría](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor). </span><span class="sxs-lookup"><span data-stu-id="f553a-190">For step-by-step instructions, see "Step 2: Format the exported audit log using the Power Query Editor" in [Export, configure, and view audit log records](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).</span></span>
