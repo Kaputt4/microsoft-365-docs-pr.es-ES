@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 85bac90085b47b5114db875c822d98aa1365cf97
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 7df6b1335c0ca45c06eee98eeff89f59b6365807
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558169"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097145"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
@@ -38,12 +38,12 @@ Existen tres formas de requerir que los usuarios usen MFA basándose en su plan 
 |---------|---------|
 |Todos los planes de Microsoft 365 (sin licencias de Azure AD Premium P1 o P2)     |[Habilitar los valores predeterminados de seguridad en Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Los valores predeterminados de seguridad en Azure AD incluyen MFA para los usuarios y administradores.   |
 |Microsoft 365 E3 (incluye las licencias de Azure AD Premium P1)     | Use [Directivas comunes de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las directivas siguientes: <br>- [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Requerir MFA para todos los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (incluye las licencias de Azure AD Premium P2)     | Aprovechando Azure AD Identity Protection, empiece a implementar el [conjunto recomendado de directivas de acceso condicional y relacionadas](../security/office-365-security/identity-access-policies.md) de Microsoft, creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquear a los clientes que no sean compatibles con la autenticación moderna](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (incluye las licencias de Azure AD Premium P2)     | Aprovechando Azure AD Identity Protection, empiece a implementar el [conjunto recomendado de directivas de acceso condicional y relacionadas](../security/office-365-security/identity-access-policies.md) de Microsoft, creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquear a los clientes que no sean compatibles con la autenticación moderna](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Valores predeterminados de seguridad
 
-Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen los valores predeterminados de seguridad activados, lo que **obliga a que todos los usuarios usen MFA con la aplicación Microsoft Authenticator**.
+Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen los valores predeterminados de seguridad activados, lo que ***obliga a que todos los usuarios usen MFA con la aplicación Microsoft Authenticator***.
  
 Los usuarios tienen 14 días para registrarse en MFA con la aplicación Microsoft Authenticator desde sus teléfonos inteligentes, que comienzan a contar desde la primera vez que inician sesión después de que se hayan habilitado los valores predeterminados de seguridad. Transcurridos 14 días, el usuario no podrá iniciar sesión hasta que el registro de MFA se haya completado.
 
@@ -91,7 +91,7 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 
 | Método | Habilitado | Deshabilitado | Método de autenticación adicional |
 |:-------|:-----|:-------|:-------|
-| _ *Valores predeterminados de seguridad**  | No se pueden usar directivas de acceso condicional | Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
+| **Valores predeterminados de seguridad**  | No se pueden usar directivas de acceso condicional | Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
 | **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
 ||||
 

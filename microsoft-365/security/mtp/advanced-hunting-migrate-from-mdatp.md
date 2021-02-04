@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e008488bdd733c9a7ce5b418fb838e0fe880d9d
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 521b5fc2a8efee83b6a2931e7dbc1c713bd63cd2
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080750"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094812"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrar consultas de búsqueda avanzada de Microsoft Defender para endpoint
 
@@ -96,7 +96,7 @@ Las consultas de Microsoft Defender para puntos de conexión funcionarán tal y 
 - Una las `AlertInfo` tablas y las tablas para obtener datos `AlertEvidence` `AlertId` equivalentes.
 
 ### <a name="original-query"></a>Consulta original
-La siguiente consulta usa `DeviceAlertEvents` Microsoft Defender para Endpoint para obtener las alertas que implican _powershell.exe:_
+La siguiente consulta usa `DeviceAlertEvents` Microsoft Defender para Endpoint para obtener las alertas que _implicanpowershell.exe:_
 
 ```kusto
 DeviceAlertEvents
@@ -114,64 +114,7 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## <a name="migrate-custom-detection-rules"></a>Migrar reglas de detección personalizadas
 
-Cuando se editan las reglas de Microsoft Defender para puntos de conexión en Microsoft 365 Defender, siguen funcionando como antes si la consulta resultante solo examina las tablas del dispositivo. Por ejemplo, las alertas generadas por reglas de detección personalizadas que consultan solo tablas de dispositivo se seguirán entregando a siem y generarán notificaciones por correo electrónico, en función de cómo las hayas configurado en Microsoft Defender para Endpoint. También se seguirán aplicando las reglas de supresión existentes en Defender para Endpoint.
-
-Una vez que edite una regla de Defender para extremo para que consulta las tablas de identidad y correo electrónico, que solo están disponibles en Microsoft 365 Defender, la regla se mueve automáticamente a Microsoft 365 Defender. 
-
-Alertas generadas por la regla migrada:
-
-- Ya no están visibles en el portal de Defender for Endpoint (Centro de seguridad de Microsoft Defender)
-- Deja de entregarse a siem o genera notificaciones por correo electrónico. Para evitar este cambio, configure las notificaciones a través de Microsoft 365 Defender para obtener las alertas. Puede usar la API de [Microsoft 365 Defender](api-incident.md) para recibir notificaciones de alertas de detección de clientes o incidentes relacionados.
-- Microsoft Defender no suprimirá las reglas de supresión de puntos de conexión. Para evitar que se generen alertas para determinados usuarios, dispositivos o buzones, modifique las consultas correspondientes para excluir esas entidades explícitamente.
-
-Si edita una regla de esta forma, se le pedirá confirmación antes de aplicar dichos cambios.
-
-Las nuevas alertas generadas por reglas de detección personalizadas en el portal de Microsoft 365 Defender se muestran en una página de alerta que proporciona la siguiente información:
-
-- Título y descripción de la alerta 
-- Activos afectados
-- Acciones tomadas en respuesta a la alerta
-- Resultados de la consulta que desencadenaron la alerta 
-- Información sobre la regla de detección personalizada 
- 
-![Imagen de la nueva página de alerta](../../media/newalertpage.png)
-
-## <a name="write-queries-without-devicealertevents"></a>Escribir consultas sin DeviceAlertEvents
-
-En el esquema de Microsoft 365 Defender, las tablas y las tablas se proporcionan para dar cabida al variado conjunto de información que acompaña a las alertas `AlertInfo` `AlertEvidence` de varios orígenes. 
-
-Para obtener la misma información de alerta que usó para obtener de la tabla en el esquema de Microsoft Defender para puntos de conexión, filtre la tabla y, a continuación, una cada identificador único con la tabla, que proporciona información detallada sobre eventos y `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` entidades. 
-
-Consulta de ejemplo a continuación:
-
-```kusto
-AlertInfo
-| where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender for Endpoint"
-| join AlertEvidence on AlertId
-```
-
-Esta consulta genera muchas más columnas que `DeviceAlertEvents` en el esquema de Microsoft Defender para puntos de conexión. Para que los resultados sean fáciles de administrar, úselos para obtener solo las columnas `project` que le interesan. En el ejemplo siguiente se muestran las columnas que pueden interesarle cuando la investigación detectó actividad de PowerShell:
-
-```kusto
-AlertInfo
-| where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender for Endpoint"
-    and AttackTechniques has "powershell"
-| join AlertEvidence on AlertId
-| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
-```
-
-Si desea filtrar por entidades específicas implicadas en las alertas, puede hacerlo especificando el tipo de entidad y el valor por el que `EntityType` desea filtrar. En el siguiente ejemplo se busca una dirección IP específica:
-
-```kusto
-AlertInfo
-| where Title == "Insert_your_alert_title"
-| join AlertEvidence on AlertId 
-| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
-```
 
 ## <a name="see-also"></a>Consulte también
 - [Activar Microsoft 365 Defender](advanced-hunting-query-language.md)

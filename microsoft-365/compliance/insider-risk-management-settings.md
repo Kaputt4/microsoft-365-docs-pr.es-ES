@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: dd72ded935b9108e4b2699f5ddb6d320f5c32e69
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: ba851a7ad6243b9b3b6bc69432bd2b3036d6b269
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841261"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094771"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos interno
 
-La configuración de administración de riesgos de Insider se aplica a todas las directivas de administración de riesgos internas, independientemente de la plantilla que elija al crear una directiva. Las opciones se configuran mediante el control de configuración de riesgos de **Insider** que se encuentra en la parte superior de todas las pestañas de administración de riesgos de Insider. Estos componentes de directiva de control de configuración para las siguientes áreas:
+La configuración de administración de riesgos de Insider se aplica a todas las directivas de administración de riesgos de Insider, independientemente de la plantilla que elijas al crear una directiva. Las opciones se configuran mediante el control de configuración de riesgos de **Insider** que se encuentra en la parte superior de todas las pestañas de administración de riesgos de Insider. Estos componentes de directiva de control de configuración para las siguientes áreas:
 
 - Privacidad
 - Indicadores
@@ -40,10 +40,10 @@ Antes de empezar y crear directivas de administración de riesgos internas, es i
 
 ## <a name="privacy"></a>Privacidad
 
-Proteger la privacidad de los usuarios que tienen coincidencias de directiva es importante y puede ayudar a promover la objectividad en la investigación de datos y las revisiones de análisis para alertas de riesgo interno. Para los usuarios con una coincidencia de directiva de riesgo interno, puede elegir una de las siguientes opciones:
+Proteger la privacidad de los usuarios que tienen coincidencias de directiva es importante y puede ayudar a promover la objectividad en la investigación de datos y las revisiones de análisis para alertas de riesgos de insider. Para los usuarios con una coincidencia de directiva de riesgo interno, puede elegir una de las siguientes opciones:
 
-- **Mostrar versiones anónimas** de nombres de usuario: los nombres de los usuarios se anonimizan para evitar que los administradores, investigadores de datos y revisores vean quién está asociado a las alertas de directiva. Por ejemplo, un usuario "Grace Grace" aparecería con un seudónimo aleatorizado como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. Al elegir esta opción, se anonimizan todos los usuarios con coincidencias de directiva actuales y pasadas y se aplica a todas las directivas. La información de perfil de usuario en la alerta de riesgo interno y los detalles del caso no estarán disponibles cuando se seleccione esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta opción, se mostrarán nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
-- **No mostrar versiones anónimas** de nombres de usuario: se muestran nombres de usuario para todas las coincidencias de directiva actuales y pasadas para alertas y casos. La información de perfil de usuario (el nombre, el título, el alias y la organización o el departamento) se muestra al usuario para todas las alertas y casos de administración de riesgos de Insider.
+- **Mostrar versiones anónimas** de nombres de usuario: los nombres de los usuarios se anonimizan para evitar que los administradores, investigadores de datos y revisores vean quién está asociado con las alertas de directiva. Por ejemplo, un usuario "Grace Grace" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. Al elegir esta opción, se anonimizan todos los usuarios con coincidencias de directiva actuales y pasadas y se aplica a todas las directivas. La información de perfil de usuario en la alerta de riesgo insider y los detalles del caso no estarán disponibles cuando se seleccione esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta opción, se mostrarán nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
+- **No mostrar versiones anónimas** de nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para alertas y casos. La información de perfil de usuario (el nombre, el título, el alias y la organización o el departamento) se muestra al usuario para todas las alertas y casos de administración de riesgos de Insider.
 
 ![Configuración de privacidad de la administración de riesgos de Insider](../media/insider-risk-settings-privacy.png)
 
@@ -53,24 +53,24 @@ Las plantillas de directiva de riesgos de Insider definen el tipo de actividades
 
 Las directivas desencadenan alertas cuando los usuarios realizan actividades relacionadas con indicadores de directiva que cumplen un umbral requerido. La administración de riesgos de Insider usa dos tipos de indicadores:
 
-- **Eventos desencadenamientos:** eventos que determinan si un usuario está activo para una directiva de administración de riesgos interno. Si un usuario se agrega a una directiva de administración de riesgos interno no tiene un evento desencadenante, la actividad del usuario no se evalúa mediante la directiva. Por ejemplo, el usuario A se agrega  a una directiva creada a partir del robo de datos al salir de la plantilla de directiva de usuarios y la directiva y el conector de RECURSOS de Microsoft 365 están configurados correctamente. Hasta que el conector de RECURSOS haya notificado la fecha de finalización del usuario A, las actividades del usuario A no se evalúan mediante esta directiva de administración de riesgos de Insider para el riesgo. Otro ejemplo de un evento desencadenante  es si un usuario tiene una alerta de directiva DLP de gravedad alta al usar *directivas de pérdida de* datos.
+- **Eventos desencadenamientos:** eventos que determinan si un usuario está activo para una directiva de administración de riesgos interno. Si un usuario se agrega a una directiva de administración de riesgos de Insider no tiene un evento desencadenante, la actividad del usuario no se evalúa mediante la directiva. Por ejemplo, el usuario A se agrega  a una directiva creada a partir del robo de datos al salir de la plantilla de directiva de usuarios y la directiva y el conector de RECURSOS de Microsoft 365 están configurados correctamente. Hasta que el usuario A tenga una fecha de finalización notificada por el conector de recursos humanos, las actividades del usuario A no se evalúan mediante esta directiva de administración de riesgos de Insider para el riesgo. Otro ejemplo de un evento desencadenante  es si un usuario tiene una alerta de directiva DLP de gravedad alta al usar *directivas de pérdida de* datos.
 - **Indicadores de directiva:** indicadores incluidos en las directivas de administración de riesgos internas que se usan para determinar una puntuación de riesgo para un usuario en el ámbito. Estos indicadores de directiva solo se activan después de que se produzca un evento desencadenante para un usuario. Algunos ejemplos de indicadores de directiva son cuando un usuario copia datos en servicios de almacenamiento en la nube personales o dispositivos de almacenamiento portátiles, o si un usuario comparte archivos y carpetas internos con partes externas no autorizadas.
 
-Los indicadores de directiva se segmentan en las siguientes áreas. Puede elegir los indicadores para activar y personalizar los límites de eventos de indicador para cada nivel de indicador al crear una directiva de riesgo interno:
+Los indicadores de directiva se segmentan en las siguientes áreas. Puedes elegir los indicadores para activar y personalizar los límites de eventos de indicador para cada nivel de indicador al crear una directiva de riesgo interno:
 
 - **Indicadores de Office:** estos incluyen indicadores de directiva para sitios de SharePoint, Teams y mensajería de correo electrónico.
-- **Indicadores de dispositivo:** incluyen indicadores de directiva para la actividad, como compartir archivos a través de la red o con dispositivos. Los indicadores incluyen actividad que implica Microsoft Office archivos, . Archivos CSV y . Archivos PDF. Si seleccionas **indicadores de dispositivo,** la actividad se procesa solo para dispositivos con Windows 10 Compilación 1809 o superior. Para obtener más información sobre cómo configurar dispositivos para la integración con riesgos de Insider, consulta la siguiente sección Habilitar indicadores [de dispositivos e incorporar dispositivos.](insider-risk-management-settings.md#OnboardDevices)
-- **Indicador de infracción** de directiva de seguridad: estos incluyen indicadores de Microsoft Defender para Endpoint relacionados con la instalación de software no aprobado o malintencionado u omitir los controles de seguridad. Para recibir alertas en la administración de riesgos interno, debes tener habilitada una licencia de Defender para endpoint activa e integración de riesgos de Insider. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar las características avanzadas de [Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
+- **Indicadores de dispositivo:** estos incluyen indicadores de directiva para la actividad, como compartir archivos a través de la red o con dispositivos. Los indicadores incluyen actividad que implica Microsoft Office archivos, . Archivos CSV y . Archivos PDF. Si seleccionas **indicadores de dispositivo,** la actividad solo se procesará para dispositivos con Windows 10 Compilación 1809 o superior. Para obtener más información sobre cómo configurar dispositivos para la integración con riesgos de Insider, consulta la siguiente sección Habilitar indicadores [de dispositivos e incorporar dispositivos.](insider-risk-management-settings.md#OnboardDevices)
+- **Indicador de infracción** de directiva de seguridad: estos incluyen indicadores de Microsoft Defender para Endpoint relacionados con la instalación de software no aprobada o malintencionada o la omisión de controles de seguridad. Para recibir alertas en la administración de riesgos de Insider, debes tener habilitada una licencia de Defender para endpoint activa e integración de riesgos de Insider. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar las características avanzadas de [Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
 - **Puntuación de riesgo: esto** incluye aumentar la puntuación de riesgo para actividades inusuales o infracciones de directivas pasadas. La habilitación de marcadores de puntuación de riesgo aumenta las puntuaciones de riesgo y la probabilidad de alertas para estos tipos de actividades. Los indicadores de puntuación de riesgo solo se pueden seleccionar si se seleccionan uno o más indicadores.
 
 ![Configuración del indicador de administración de riesgos de Insider](../media/insider-risk-settings-indicators.png)
 
-En algunos casos, es posible que desee limitar los indicadores de la directiva de riesgo interno que se aplican a las directivas de riesgo interno de su organización. Puedes desactivar los indicadores de directiva para áreas específicas deshabilitándolos de todas las directivas de riesgo interno. Los eventos desencadenamientos no se pueden modificar para las plantillas de directiva de riesgo interno.
+En algunos casos, es posible que desee limitar los indicadores de directiva de riesgo interno que se aplican a las directivas de riesgo interno de su organización. Puedes desactivar los indicadores de directiva para áreas específicas deshabilitándolos de todas las directivas de riesgo interno. Los eventos desencadenamientos no se pueden modificar para las plantillas de directiva de riesgo interno.
 
 Para definir los indicadores de directiva de riesgo interno que están habilitados en todas las directivas de riesgo de **Insider,** vaya a Indicadores de configuración de riesgo de Insider y seleccione uno o más indicadores  >   de directiva. Los indicadores seleccionados en la página Configuración de indicadores no se pueden configurar individualmente al crear o editar una directiva de riesgo interno en el asistente para directivas.
 
 >[!NOTE]
->Puede tardar varias horas en que los nuevos usuarios agregados manualmente aparezcan en el panel **Usuarios.** Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente,  seleccione el usuario en el panel Usuarios y abra la pestaña Actividad del usuario en el panel de detalles. 
+>Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente,  seleccione el usuario en el panel Usuarios y abra la pestaña Actividad del usuario en el panel de detalles. 
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>Habilitar indicadores de dispositivo e incorporar dispositivos
 <a name="OnboardDevices"> </a>
@@ -79,18 +79,18 @@ Para habilitar la supervisión de actividades de riesgo en dispositivos e inclui
 
 #### <a name="step-1-prepare-your-endpoints"></a>Paso 1: Preparar los puntos de conexión
 
-Asegúrate de que los dispositivos Windows 10 que planees para informar en la administración de riesgos interno cumplan estos requisitos.
+Asegúrate de que los dispositivos Windows 10 que planeas informar en la administración de riesgos de Insider cumplen estos requisitos.
 
-1. Debe ejecutar Windows 10 x64 compilación 1809 o posterior y debe haber instalado la actualización de Windows 10 (compilación del sistema operativo [17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) a partir del 20 de febrero de 2020.
+1. Debe ejecutar Windows 10 x64 compilación 1809 o posterior y debe tener instalada la actualización de Windows 10 (compilación del sistema operativo [17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) a partir del 20 de febrero de 2020.
 2. Todos los dispositivos deben estar [unidos a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
 3. Instala el explorador Microsoft Chromium Edge en el dispositivo del punto de conexión para supervisar las acciones de la actividad de carga en la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Paso 2: Incorporar dispositivos
 <a name="OnboardStep2"> </a>
 
-Debes habilitar la supervisión de dispositivos e incorporar los puntos de conexión para poder supervisar las actividades de administración de riesgos interno en un dispositivo. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
+Debes habilitar la supervisión de dispositivos e incorporar los puntos de conexión antes de poder supervisar las actividades de administración de riesgos de insider en un dispositivo. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
 
-Si quieres incorporar dispositivos que aún no se han incorporado, descargarás el script adecuado e implementarás como se indica en los pasos siguientes.
+Cuando quieras incorporar dispositivos que aún no se han incorporado, descargarás el script adecuado e implementarás como se indica en los pasos siguientes.
 
 Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de conexión (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), estos aparecerán en la lista de dispositivos administrados. Siga [el paso 3: Si tiene dispositivos incorporados](insider-risk-management-settings.md#OnboardStep3) en Microsoft Defender para Endpoint en la siguiente sección.
 
@@ -104,8 +104,8 @@ En este escenario de implementación, incorporarás dispositivos que aún no se 
 
 3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. La lista estará vacía hasta que haya incorporado dispositivos.
 4. Elija **Incorporación** para iniciar el proceso de incorporación.
-5. Elige la forma en que quieres implementar en estos más dispositivos de la lista **de métodos de** implementación y, a continuación, **descarga el paquete.**
-6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje donde puede obtener acceso a los procedimientos de Microsoft Defender para puntos de conexión que coincidan con el paquete de implementación que seleccionó en el paso 5:
+5. Elige la forma en que quieres implementar en estos dispositivos más de la lista **de métodos de** implementación y luego **descarga el paquete.**
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
@@ -120,14 +120,14 @@ Una vez hecho esto y se ha incorporado el punto de conexión, debe estar visible
 #### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Paso 3: Si tiene dispositivos incorporados en Microsoft Defender para endpoint
 <a name="OnboardStep3"> </a>
 
-Si Microsoft Defender para endpoint ya está implementado y hay puntos de conexión en los que se informa, todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puedes seguir incorporando nuevos dispositivos en la administración de riesgos interno para ampliar la cobertura mediante la sección [Paso 2: Incorporar dispositivos.](insider-risk-management-settings.md#OnboardStep2)
+Si Microsoft Defender para endpoint ya está implementado y hay puntos de conexión en los que se informa, todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puedes seguir incorporando nuevos dispositivos en la administración de riesgos de Insider para ampliar la cobertura mediante la sección [Paso 2: Incorporar dispositivos.](insider-risk-management-settings.md#OnboardStep2)
 
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
 2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
 3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a Microsoft Defender para punto de conexión.
 4. Elige **La incorporación** si necesitas incorporar más dispositivos.
 5. Elige la forma en que quieres implementar en estos más dispositivos de la lista **de métodos de** implementación y, a continuación, **descarga el paquete.**
-6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje donde puede obtener acceso a los procedimientos de Microsoft Defender para puntos de conexión que coincidan con el paquete de implementación que seleccionó en el paso 5:
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
@@ -141,33 +141,31 @@ Una vez hecho esto y se ha  incorporado el punto de conexión, debe estar visibl
 
 ### <a name="indicator-level-settings-preview"></a>Configuración del nivel de indicador (versión preliminar)
 
-Al crear una directiva en el asistente para directivas, puede configurar cómo el número diario de eventos de riesgo debe influir en la puntuación de riesgo para las alertas de riesgo de insider. Esta configuración de indicador le ayuda a controlar cómo el número de repeticiones de eventos de riesgo en su organización debe afectar a la puntuación de riesgo y, en consecuencia, a la gravedad de alerta asociada a estos eventos. Si lo prefiere, también puede optar por mantener los niveles de umbral de eventos predeterminados recomendados por Microsoft para todos los indicadores habilitados.
+Al crear una directiva en el asistente para directivas, puedes configurar cómo el número diario de eventos de riesgo debe influir en la puntuación de riesgo de las alertas de riesgo de Insider. Esta configuración de indicador le ayuda a controlar cómo el número de repeticiones de eventos de riesgo en su organización debe afectar a la puntuación de riesgo y, en consecuencia, a la gravedad de alerta asociada a estos eventos. Si lo prefiere, también puede optar por mantener los niveles de umbral de eventos predeterminados recomendados por Microsoft para todos los indicadores habilitados.
 
 Por ejemplo, decide habilitar los indicadores de SharePoint en la configuración de directiva de riesgo interno y establecer umbrales personalizados para eventos de SharePoint al configurar indicadores para una nueva directiva de pérdida *de* datos de riesgo interno. Mientras se encuentra en el Asistente para directivas de riesgo interno, puede configurar tres niveles de eventos diarios diferentes para cada indicador de SharePoint para influir en la puntuación de riesgo para las alertas asociadas a estos eventos.
 
 ![Configuración de indicadores personalizados de administración de riesgos de Insider](../media/insider-risk-custom-indicators.png)
 
-Para el primer nivel de evento diario, se establece el umbral en *10* o más eventos por día para un menor impacto en la puntuación de riesgo para los eventos, *20* o más eventos por día para un impacto medio en la puntuación de riesgo para los eventos y *30* o más eventos por día, un impacto mayor en la puntuación de riesgo para los eventos. Estas configuraciones significan de hecho:
+Para el primer nivel de evento diario, se establece el umbral en *10* o más eventos por día para un menor impacto en la puntuación de riesgo para los eventos, *20* o más eventos por día para un impacto medio en la puntuación de riesgo de los eventos y *30* o más eventos por día, un impacto mayor en la puntuación de riesgo para los eventos. Estas configuraciones significan de hecho:
 
 - Si hay de 1 a 9 eventos de SharePoint que tienen lugar después de desencadenar el evento, las puntuaciones de riesgo se verán mínimamente afectadas y tendrían a no generar una alerta.
-- Si hay de 10 a 19 eventos de SharePoint que tienen lugar después de un evento desencadenante, la puntuación de riesgo es inherentemente inferior y los niveles de gravedad de alerta tienden a estar en un nivel bajo.
+- Si hay entre 10 y 19 eventos de SharePoint que tienen lugar después de un evento desencadenante, la puntuación de riesgo es inherentemente inferior y los niveles de gravedad de alerta tienden a estar en un nivel bajo.
 - Si hay entre 20 y 29 eventos de SharePoint que tienen lugar después de una activación, la puntuación de riesgo es inherentemente mayor y los niveles de gravedad de alerta tienden a estar en un nivel medio.
-- Si hay 30 o más eventos de SharePoint que tienen lugar después de una activación, la puntuación de riesgo es inherentemente mayor y los niveles de gravedad de alerta tienden a ser de un nivel alto.
+- Si hay 30 o más eventos de SharePoint que tienen lugar después de una activación, la puntuación de riesgo es inherentemente mayor y los niveles de gravedad de alerta tienden a estar en un nivel alto.
 
 ## <a name="policy-timeframes"></a>Períodos de tiempo de directiva
 
 Los períodos de tiempo de directiva permiten definir períodos de revisión pasados y futuros que se desencadenan después de las coincidencias de directiva basadas en eventos y actividades para las plantillas de directiva de administración de riesgos de Insider. Según la plantilla de directiva que elija, están disponibles los siguientes períodos de tiempo de directiva:
 
-- **Ventana activación:** disponible para todas  las plantillas de directiva, la ventana Activación es el número definido de días que la ventana se **activa** después de un evento desencadenante. La ventana se activa de 1 a 30 días después de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos interno y ha establecido la ventana Activación *en* 30 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la ventana Activación y la directiva está activa para ese usuario durante 30 días después de que se produjo el evento desencadenante.
-- **Detección de** actividad pasada: disponible  para todas las plantillas de directiva, la  detección de actividad pasada es el número definido de días que se activa la ventana antes de que se desencadene un evento. La ventana se activa de 0 a 180 días antes de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos interno y ha establecido la detección de *actividad* pasada en 90 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la detección de actividad pasada y la directiva recopila actividades históricas para ese usuario durante 90 días antes del evento desencadenante.
+- **Ventana activación:** disponible para todas  las plantillas de directiva, la ventana Activación es el número definido de días que la ventana se **activa** después de un evento desencadenante. La ventana se activa de 1 a 30 días después de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos interno y ha establecido la *ventana* Activación en 30 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la ventana Activación y la directiva está activa para ese usuario durante 30 días después de que se produjo el evento desencadenante.
+- **Detección de actividad** pasada: disponible  para todas las plantillas de directiva, la  detección de actividad pasada es el número definido de días que se activa la ventana antes de que se desencadene un evento. La ventana se activa de 0 a 180 días antes de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos de Insider y ha establecido la detección de *actividad* pasada en 90 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la detección de actividad pasada y la directiva recopila actividades históricas para ese usuario durante 90 días antes del evento desencadenante.
 
 ![Configuración del período de tiempo de administración de riesgos de Insider](../media/insider-risk-settings-timeframes.png)
 
 ## <a name="intelligent-detections"></a>Detecciones inteligentes
 
-La configuración de detección inteligente ayuda a refinar cómo se procesan las detecciones de actividades de riesgo para las alertas. En determinadas circunstancias, es posible que deba definir tipos de archivos para omitir o que desee aplicar un nivel de detección para los archivos para ayudar a definir una barra mínima para las alertas. Al usar directivas de lenguaje ofensivo, es posible que deba aumentar o disminuir la sensibilidad de detección para controlar la cantidad de coincidencias de directivas notificadas. Usa esta configuración para controlar el volumen de alertas general, las exclusiones de tipos de archivo, los límites de volumen de archivos y la sensibilidad de detección de lenguaje ofensivo.
-
-![Configuración de detecciones inteligentes de administración de riesgos de Insider](../media/insider-risk-settings-detections.png)
+La configuración de detección inteligente ayuda a refinar cómo se procesan las detecciones de actividades de riesgo para las alertas. En determinadas circunstancias, es posible que deba definir tipos de archivos para omitir o que desee aplicar un nivel de detección para los archivos para ayudar a definir una barra mínima para las alertas. Usa esta configuración para controlar el volumen de alertas general, las exclusiones de tipos de archivo y los límites de volumen de archivos.
 
 ### <a name="anomaly-detections"></a>Detecciones de anomalías
 
@@ -176,28 +174,17 @@ Las detecciones anómalas incluyen la configuración de exclusiones de tipos de 
 - **Exclusiones de tipo de archivo:** para excluir tipos de archivo específicos de todas las coincidencias de directivas de administración de riesgos de Insider, escriba las extensiones de tipo de archivo separadas por comas. Por ejemplo, para excluir determinados tipos de archivos de música de **coincidencias** de directiva, puede escribir *aac,mp3,wav,wma* en el campo Exclusiones de tipo de archivo. Todas las directivas de administración de riesgos de Insider omitirían los archivos con estas extensiones.
 - **Límite de límite de volumen de archivos:** para definir un nivel de archivo mínimo antes de que se notifican alertas de actividad en directivas de riesgo interno, escriba el número de archivos. Por ejemplo, escribiría "10" si no desea generar alertas de riesgo interno cuando un usuario descargue 10 archivos o menos, incluso si las directivas consideran que esta actividad es una anomalía.
 
-### <a name="offensive-language-detections"></a>Detecciones de lenguaje ofensivo
-
->[!IMPORTANT]
->A partir del 16 de octubre de 2020, ya no podrá crear directivas con esta plantilla. Las directivas activas que usen esta plantilla funcionarán hasta que se quiten permanentemente en enero de 2021. Estamos desusando el clasificador integrado de lenguaje ofensivo que admite esta plantilla porque ha estado generando un gran número de falsos positivos. Para solucionar problemas de riesgo de lenguaje ofensivo, se recomienda usar directivas de cumplimiento de comunicaciones [de](communication-compliance.md) Microsoft 365. Para obtener más información acerca de los clasificadores integrados, vea [Introducción a los clasificadores que se pueden entrenar.](classifier-get-started-with.md)
-
-Para ajustar la confidencialidad del clasificador de idioma ofensivo para las directivas que usan el idioma *ofensivo* en la plantilla de correo electrónico, elige una de las siguientes opciones:
-
-- **Bajo:** el nivel de confidencialidad más bajo con el intervalo más amplio para la detección de opiniones y lenguaje ofensivo. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es elevada.
-- **Medio:** nivel de confidencialidad de nivel medio con un rango equilibrado para la detección de opiniones y lenguaje ofensivo. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es la media.
-- **Alto:** el nivel de confidencialidad más alto con un intervalo estrecho para la detección de opiniones y lenguaje ofensivo. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es baja.
-
 ### <a name="alert-volume"></a>Volumen de alertas
 
 A las actividades de usuario detectadas por las directivas de riesgo internas se les asigna una puntuación de riesgo específica, que a su vez determina la gravedad de la alerta (baja, media, alta). De forma predeterminada, generaremos una cierta cantidad de alertas de gravedad baja, media y alta, pero puedes aumentar o disminuir el volumen para adaptarlo a tus necesidades. Para ajustar el volumen de alertas para todas las directivas de administración de riesgos internas, elija una de las siguientes opciones:
 
 - **Menos alertas:** verás todas las alertas de gravedad alta, menos alertas de gravedad media y ninguna de gravedad baja. Este nivel de configuración significa que podría perderse algunos positivos reales.
 - **Volumen predeterminado:** verás todas las alertas de gravedad alta y una cantidad equilibrada de alertas de gravedad media y baja.
-- **Más alertas:** verás todas las alertas de gravedad media y alta y la mayoría de las alertas de gravedad baja. Este nivel de configuración puede dar lugar a más falsos positivos.
+- **Más alertas:** verás todas las alertas de gravedad media y alta y la mayoría de las alertas de gravedad baja. Este nivel de configuración puede dar como resultado más falsos positivos.
 
 ### <a name="microsoft-defender-for-endpoint-preview"></a>Microsoft Defender para endpoint (versión preliminar)
 
-[Microsoft Defender para endpoint es una](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) plataforma de seguridad de puntos de conexión empresarial diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para tener una mejor visibilidad de la infracción de seguridad en su organización, puede importar y filtrar alertas de Defender para puntos de conexión para actividades usadas en directivas creadas a partir de plantillas de directiva de infracción de seguridad de administración de riesgos internas.
+[Microsoft Defender para endpoint es](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) una plataforma de seguridad de puntos de conexión empresarial diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para tener una mejor visibilidad de la infracción de seguridad en su organización, puede importar y filtrar alertas de Defender para puntos de conexión para actividades usadas en directivas creadas a partir de plantillas de directiva de infracción de seguridad de administración de riesgos internas.
 
 Según los tipos de señales que te interesen, puedes elegir importar alertas a la administración de riesgos de Insider en función del estado de evaluación de alertas de Defender for Endpoint. Puede definir uno o varios de los siguientes estados de la triage de alertas en la configuración global que se va a importar:
 
@@ -206,16 +193,16 @@ Según los tipos de señales que te interesen, puedes elegir importar alertas a 
 - En curso
 - Resuelto
 
-Las alertas de Defender para Endpoint se importan diariamente. Según el estado de la triage que elijas, es posible que veas varias actividades de usuario para la misma alerta que el estado de la triage cambia en Defender for Endpoint.
+Las alertas de Defender para endpoint se importan diariamente. Según el estado de la triage que elijas, es posible que veas varias actividades de usuario para la misma alerta que el estado de la triage cambia en Defender for Endpoint.
 
-Por ejemplo, si selecciona Nuevo *,* En curso y Resuelto para esta configuración, cuando se genera una alerta de Microsoft Defender para endpoint y el estado es  *Nuevo*, se importa una actividad de alerta inicial para el usuario en riesgo interno. Cuando el estado de evaluación de Defender para extremo cambia a En *curso,* se importa una segunda actividad para esta alerta para el usuario en riesgo interno. Cuando se establece el estado final de evaluación de Defender para extremo de *Resuelto,* se importa una tercera actividad para esta alerta para el usuario en riesgo interno. Esta funcionalidad permite a los investigadores seguir el progreso de las alertas de Defender para puntos de conexión y elegir el nivel de visibilidad que requiere su investigación.
+Por ejemplo, si selecciona Nuevo *,* En curso y Resuelto para esta configuración, cuando se genera una alerta de Microsoft Defender para endpoint y el estado es  *Nuevo*, se importa una actividad de alerta inicial para el usuario en riesgo interno. Cuando el estado de evaluación de Defender para extremo cambia a En *curso,* se importa una segunda actividad para esta alerta para el usuario en riesgo interno. Cuando se establece el estado final de evaluación de Defender para extremo de *Resuelto,* se importa una tercera actividad para esta alerta para el usuario en riesgo interno. Esta funcionalidad permite a los investigadores seguir el progreso de las alertas de Defender for Endpoint y elegir el nivel de visibilidad que requiere su investigación.
 
 >[!IMPORTANT]
->Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos interno, consulta Configurar características avanzadas [en Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
+>Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
 
 ### <a name="domains-preview"></a>Dominios (versión preliminar)
 
-La configuración de dominio le ayuda a definir los niveles de riesgo para las comunicaciones con dominios específicos. Estas comunicaciones incluyen compartir archivos, mensajes de correo electrónico o descargar contenido. Al especificar dominios en esta configuración, puede aumentar o disminuir la puntuación de riesgo para la actividad que tiene lugar con estos dominios. Por ejemplo, para especificar contoso.com y sales.wingtiptoys.com como dominios permitidos, escriba "contoso.com sales.wingtiptoys.com" en el **campo Dominios permitidos.**
+La configuración de dominio le ayuda a definir los niveles de riesgo para las comunicaciones con dominios específicos. Estas comunicaciones incluyen compartir archivos, mensajes de correo electrónico o descargar contenido. Al especificar dominios en esta configuración, puede aumentar o disminuir la puntuación de riesgo para la actividad que tiene lugar con estos dominios. Por ejemplo, para especificar contoso.com y sales.wingtiptoys.com como dominios permitidos, escribirá "contoso.com sales.wingtiptoys.com" en el **campo Dominios permitidos.**
 
 Para cada una de las siguientes configuraciones de dominio, puede especificar hasta 500 dominios:
 
@@ -237,7 +224,7 @@ Para usar las API para revisar la información de alerta de riesgo interno:
 
 La información de alerta contiene información del esquema de alertas de seguridad y cumplimiento y el esquema común de la API de actividad de administración de Office 365.
 
-Los siguientes campos y valores se exportan para alertas de administración de riesgos interno para el esquema de alertas de seguridad & cumplimiento:
+Los siguientes campos y valores se exportan para las alertas de administración de riesgos interno para el esquema de alertas de seguridad & cumplimiento:
 
 | **Parámetro de alerta** | **Descripción** |
 |:------------------|:----------------|
@@ -245,7 +232,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 | AlertId | GUID de la alerta. Las alertas de administración de riesgos de Insider son mutables. A medida que cambia el estado de alerta, se genera un nuevo registro con el mismo AlertID. Este AlertID se puede usar para correlacionar las actualizaciones de una alerta. |
 | Categoría | La categoría de la alerta es *InsiderRiskManagement*. Esta categoría se puede usar para distinguir entre estas alertas y otras alertas de seguridad & cumplimiento. |
 | Comentarios | Comentarios predeterminados para la alerta. Los valores *son Nueva* alerta (registrada cuando se crea una alerta) y *Alerta actualizada* (registrada cuando hay una actualización de una alerta). Usa AlertID para correlacionar las actualizaciones de una alerta. |
-| Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal de usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
+| Datos | Los datos de la alerta incluyen el identificador de usuario único, el nombre principal del usuario y la fecha y hora (UTC) cuando el usuario se desencadenó en una directiva. |
 | Nombre | Nombre de la directiva de administración de riesgos interno que generó la alerta. |
 | PolicyId | GUID de la directiva de administración de riesgos de Insider que desencadenó la alerta. |
 | Severity | La gravedad de la alerta. Los valores *son High*, *Medium* o *Low*. |
@@ -266,7 +253,7 @@ Los siguientes campos y valores se exportan para alertas de administración de r
 
 ## <a name="priority-user-groups-preview"></a>Grupos de usuarios de prioridad (versión preliminar)
 
-Los usuarios de su organización pueden tener distintos niveles de riesgo en función de su posición, nivel de acceso a información confidencial o historial de riesgos. Priorizar el examen y la puntuación de las actividades de estos usuarios puede ayudarle a alertar sobre posibles riesgos que pueden tener consecuencias mayores para su organización. Los grupos de usuarios prioritarios en la administración de riesgos interno ayudan a definir los usuarios de la organización que necesitan una inspección más minuciosa y una puntuación de riesgos más confidencial. Junto con las infracciones de la directiva de seguridad por parte de los usuarios prioritarios y las pérdidas de datos por las plantillas de directiva de usuarios *prioritarios,* los usuarios agregados a un grupo de usuarios de prioridad tienen una mayor probabilidad de *alertas* de riesgo interno y alertas con niveles de gravedad más altos.
+Los usuarios de su organización pueden tener distintos niveles de riesgo en función de su posición, nivel de acceso a información confidencial o historial de riesgos. Priorizar el examen y la puntuación de las actividades de estos usuarios puede ayudarle a alertar sobre posibles riesgos que pueden tener consecuencias más altas para su organización. Los grupos de usuarios prioritarios en la administración de riesgos interno ayudan a definir los usuarios de la organización que necesitan una inspección más minuciosa y una puntuación de riesgos más confidencial. Junto con las infracciones de la directiva de seguridad por parte de los usuarios prioritarios y las pérdidas de datos por las plantillas de directiva de usuarios *prioritarios,* los usuarios agregados a un grupo de usuarios de prioridad tienen una mayor probabilidad de *alertas* de riesgo interno y alertas con niveles de gravedad más altos.
 
 ![Configuración del grupo de usuarios de prioridad de administración de riesgos de Insider](../media/insider-risk-settings-priority-users.png)
 
@@ -274,7 +261,7 @@ Por ejemplo, debe protegerse contra pérdidas de datos para un proyecto extremad
 
 ### <a name="create-a-priority-user-group"></a>Crear un grupo de usuarios de prioridad
 
-Para crear un nuevo grupo de usuarios prioritarios, usará la configuración de controles en la solución de administración de riesgos de **Insider** en el Centro de cumplimiento de Microsoft 365. Para crear un grupo de usuarios de prioridad, debes ser miembro del grupo de roles Administración de riesgos de *Insider* o Administrador de administración de riesgos de *Insider.*
+Para crear un nuevo grupo de usuarios prioritarios, usará la configuración de controles en la solución de administración de riesgos de **Insider** en el Centro de cumplimiento de Microsoft 365. Para crear un grupo de usuarios de prioridad, debes ser miembro del grupo de roles Administración de riesgos de *Insider* o Administración de riesgos *de Insider.*
 
 Siga estos pasos para crear un grupo de usuarios de prioridad:
 
@@ -294,7 +281,7 @@ Siga estos pasos para crear un grupo de usuarios de prioridad:
 
 Para actualizar un grupo de usuarios de prioridad existente, usará la configuración de controles en la solución de administración de riesgos de **Insider** en el Centro de cumplimiento de Microsoft 365. Para actualizar un grupo de usuarios de prioridad, debes ser miembro del grupo de roles Administración de riesgos de *Insider* o Administrador de administración de riesgos de *Insider.*
 
-Complete los pasos siguientes para editar un grupo de usuarios de prioridad:
+Complete los siguientes pasos para editar un grupo de usuarios de prioridad:
 
 1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione **Configuración de riesgos de Insider.**
 2. Seleccionar la pestaña **Grupos de usuarios de** prioridad
@@ -306,7 +293,7 @@ Complete los pasos siguientes para editar un grupo de usuarios de prioridad:
 
 ### <a name="delete-a-priority-user-group"></a>Eliminar un grupo de usuarios de prioridad
 
-Para eliminar un grupo de usuarios de prioridad existente, usará la configuración de controles en la solución de administración de riesgos de **Insider** en el Centro de cumplimiento de Microsoft 365. Para eliminar un grupo de usuarios de prioridad, debes ser miembro del grupo de roles Administración de riesgos de *Insider* o Administrador de administración de riesgos de *Insider.*
+Para eliminar un grupo de usuarios de prioridad existente, usará la configuración de controles en la solución de administración de riesgos de **Insider** en el Centro de cumplimiento de Microsoft 365. Para eliminar un grupo de usuarios de prioridad, debes ser miembro del grupo de roles Administración de riesgos de *Insider* o Administración de riesgos *de Insider.*
 
 >[!IMPORTANT]
 >Eliminar un grupo de usuarios de prioridad lo quitará de cualquier directiva activa a la que esté asignado. Si eliminas un grupo de usuarios de prioridad asignado a una directiva activa, la directiva no contendrá ningún usuario en el ámbito y estará inactiva y no creará alertas.
@@ -320,24 +307,24 @@ Complete los siguientes pasos para eliminar un grupo de usuarios de prioridad:
 
 ## <a name="priority-physical-assets-preview"></a>Activos físicos de prioridad (versión preliminar)
 
-La identificación del acceso a activos físicos prioritarios y la correlación de la actividad de acceso a los eventos de usuario es un componente importante de la infraestructura de cumplimiento. Estos activos físicos representan ubicaciones de prioridad en la organización, como edificios de empresas, centros de datos o salas de servidores. Las actividades de riesgo interno pueden asociarse con usuarios que trabajan horas inusuales, intentan acceder a estas áreas confidenciales o seguras no autorizadas y solicitan acceso a áreas de alto nivel sin necesidades legítimas.
+La identificación del acceso a activos físicos prioritarios y la correlación de la actividad de acceso a los eventos de usuario es un componente importante de la infraestructura de cumplimiento. Estos activos físicos representan ubicaciones de prioridad en su organización, como edificios empresariales, centros de datos o salas de servidores. Las actividades de riesgo interno pueden asociarse a usuarios que trabajan horas inusuales, intentar acceder a estas áreas confidenciales o seguras no autorizadas y solicitudes de acceso a áreas de alto nivel sin necesidades legítimas.
 
 Con los activos físicos prioritarios habilitados y el conector de datos de riesgo físico configurado, la administración de riesgos interno integra las señales de los sistemas de control físico y acceso con otras actividades de riesgo del usuario. [](import-physical-badging-data.md) Al examinar patrones de comportamiento en los sistemas de acceso físico y correlacionar estas actividades con otros eventos de riesgo interno, la administración de riesgos de Insider puede ayudar a los analistas y investigadores de cumplimiento a tomar decisiones de respuesta más fundamentadas para las alertas. El acceso a los activos físicos de prioridad se puntua y se identifica en la información de forma diferente al acceso a los activos no prioritarios.
 
 Por ejemplo, su organización tiene un sistema de gobierno para los usuarios que supervisa y aprueba el acceso físico a áreas normales de trabajo y proyectos confidenciales. Tiene varios usuarios trabajando en un proyecto confidencial y estos usuarios volverán a otras áreas de la organización cuando se complete el proyecto. A medida que el proyecto confidencial se acerca a su finalización, desea asegurarse de que el trabajo del proyecto sea confidencial y de que el acceso a las áreas del proyecto esté estrechamente controlado.
 
-Elija habilitar el conector de datos de administración física en Microsoft 365 para importar información de acceso desde su sistema de protección física y especificar activos físicos de prioridad en la administración de riesgos interno. Al importar información desde el sistema de incoación y correlacionar la información de acceso físico con otras actividades de riesgo identificadas en la administración de riesgos interno, observará que uno de los usuarios del proyecto obtiene acceso a las oficinas del proyecto después del horario laboral normal y también exporta grandes cantidades de datos a un servicio de almacenamiento en la nube personal desde su área de trabajo normal. Esta actividad de acceso físico asociada a la actividad en línea puede apuntar a posibles robos de datos y los analistas y investigadores de cumplimiento pueden tomar las medidas adecuadas según las circunstancias de este usuario.
+Elija habilitar el conector de datos de administración física en Microsoft 365 para importar información de acceso desde su sistema de administración de daños físicos y especificar activos físicos de prioridad en la administración de riesgos interno. Al importar información desde el sistema de incoación y correlacionar la información de acceso físico con otras actividades de riesgo identificadas en la administración de riesgos interno, observará que uno de los usuarios del proyecto obtiene acceso a las oficinas del proyecto después del horario laboral normal y también exporta grandes cantidades de datos a un servicio de almacenamiento en la nube personal desde su área de trabajo normal. Esta actividad de acceso físico asociada a la actividad en línea puede apuntar a posibles robos de datos y los analistas y investigadores de cumplimiento pueden tomar las medidas adecuadas según las circunstancias de este usuario.
 
 ### <a name="configure-priority-physical-assets"></a>Configurar activos físicos de prioridad
 
 Para configurar activos físicos de prioridad, configurará el conector de configuración física y usará controles de configuración en la solución de administración de riesgos de **Insider** en el Centro de cumplimiento de Microsoft 365. Para configurar activos físicos de prioridad, debe ser miembro del grupo de roles Administración de riesgos de *Insider* o Administración de riesgos *de Insider.*
 
-Siga estos pasos para configurar los activos físicos de prioridad:
+Complete los siguientes pasos para configurar activos físicos de prioridad:
 
 1. Siga los pasos de configuración para la administración de riesgos de Insider en el artículo Introducción a la administración de [riesgos de Insider.](insider-risk-management-configure.md) En el paso 3, asegúrese de configurar el conector de badging físico.
 
     >[!IMPORTANT]
-    >Para que las directivas de administración de riesgos internas usen y correlacionan los datos de señal relacionados con los usuarios que salen y terminan con los datos de eventos de las plataformas de control físico y acceso, también debe configurar el conector de Recursos Humanos de Microsoft 365. Si habilita el conector de protección física sin habilitar el conector de Recursos humanos de Microsoft 365, las directivas de administración de riesgos internas solo procesarán eventos para actividades de acceso físico para los usuarios de su organización.
+    >Para que las directivas de administración de riesgos internas usen y correlacionan los datos de señal relacionados con los usuarios que salen y terminan con los datos de eventos de las plataformas de control físico y acceso, también debe configurar el conector de Recursos Humanos de Microsoft 365. Si habilita el conector de protección física sin habilitar el conector de Recursos Humanos de Microsoft 365, las directivas de administración de riesgos internas solo procesarán eventos para actividades de acceso físico para los usuarios de su organización.
 
 2. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione Configuración de riesgos de **Insider** Activos físicos  >  **prioridad.**
 3. En **la** página Activos físicos de prioridad, puede agregar manualmente los IDs de activos físicos que desea supervisar para los eventos de activos importados por el conector de configuración física o importar un archivo . Archivo CSV de todos los identificadores de activos físicos importados por el conector de administración de activos físicos: a) Para agregar manualmente identificadores de activos físicos, elija Agregar activos físicos de **prioridad,** escriba un id. de activo físico y, a continuación, seleccione Agregar **.** Escribe otros IDs de activos físicos y, a continuación, selecciona **Agregar activos físicos de prioridad** para guardar todos los activos especificados.
@@ -348,7 +335,7 @@ Siga estos pasos para configurar los activos físicos de prioridad:
 
 ### <a name="delete-a-priority-physical-asset"></a>Eliminar un activo físico de prioridad
 
-Para eliminar un activo físico de prioridad existente, usará la configuración de controles en la solución de administración de riesgos de Insider en el Centro de cumplimiento de Microsoft 365. Para eliminar un activo físico de prioridad, debes ser miembro del grupo de roles Administración de riesgos de Insider o Administrador de administración de riesgos de Insider.
+Para eliminar un activo físico de prioridad existente, usará la configuración de controles en la solución de administración de riesgos de Insider en el Centro de cumplimiento de Microsoft 365. Para eliminar un activo físico de prioridad, debes ser miembro del grupo de roles Administración de riesgos de Insider o Administración de riesgos de Insider.
 
 >[!IMPORTANT]
 >La eliminación de un activo físico de prioridad lo elimina del examen por cualquier directiva activa a la que se incluyó anteriormente. Las alertas generadas por actividades asociadas con el activo físico de prioridad no se eliminan.
@@ -368,8 +355,8 @@ Los clientes con suscripciones de Microsoft 365 que incluyen la administración 
 Las siguientes plantillas de Power Automate se proporcionan a los clientes para admitir la automatización de procesos para usuarios y casos de administración de riesgos insider:
 
 - **Notificar** a los usuarios cuando se les agrega a una directiva de riesgos internos: esta plantilla es para las organizaciones que tienen directivas internas, privacidad o requisitos normativos que los usuarios deben recibir una notificación cuando están sujetos a directivas de administración de riesgos internos. Cuando este flujo se configura y selecciona para un usuario en la página de usuarios, los usuarios y sus administradores se envían un mensaje de correo electrónico cuando el usuario se agrega a una directiva de administración de riesgos de Insider. Esta plantilla también admite la actualización de una lista de SharePoint hospedada en un sitio de SharePoint para ayudar a realizar un seguimiento de los detalles de los mensajes de notificación como la fecha y hora y el destinatario del mensaje. Si ha elegido anonimizar a los usuarios en la configuración de **privacidad,** los flujos creados a partir de esta plantilla no funcionarán según lo previsto para que se mantenga la privacidad del usuario. Los flujos de Power Automate que usan esta plantilla están disponibles en el panel **Usuarios.**
-- Solicitar información de recursos humanos o empresariales sobre un usuario en un caso de riesgo interno: al actuar en un caso, es posible que los analistas de riesgos de Insider y los investigadores deban consultar **con** recursos humanos u otras partes interesadas para comprender el contexto de las actividades del caso. Cuando este flujo se configura y selecciona para un caso, los analistas e investigadores envían un mensaje de correo electrónico a las partes interesadas de recursos humanos y empresariales configuradas para este flujo. Cada destinatario recibe un mensaje con opciones de respuesta preconfiguradas o personalizables. Cuando los destinatarios seleccionan una opción de respuesta, la respuesta se registra como una nota de caso e incluye información de destinatario y fecha y hora. Si ha elegido anonimizar a los usuarios en la configuración de **privacidad,** los flujos creados a partir de esta plantilla no funcionarán según lo previsto para que se mantenga la privacidad del usuario. Los flujos de Power Automate que usan esta plantilla están disponibles en el panel **Casos.**
-- **Notificar al administrador cuando un usuario** tiene una alerta de riesgo interno: es posible que algunas organizaciones necesiten recibir una notificación de administración inmediata cuando un usuario tiene una alerta de administración de riesgos interno. Cuando se configura y selecciona este flujo, se envía un mensaje de correo electrónico al administrador del usuario del caso con la siguiente información sobre todas las alertas de caso:
+- Solicitar información de recursos humanos o empresariales sobre un usuario en un caso de riesgo **interno:** al actuar en un caso, es posible que los analistas de riesgos e investigadores de Insider deban consultar con recursos humanos u otras partes interesadas para comprender el contexto de las actividades del caso. Cuando este flujo se configura y selecciona para un caso, los analistas e investigadores envían un mensaje de correo electrónico a las partes interesadas de recursos humanos y empresariales configuradas para este flujo. Cada destinatario recibe un mensaje con opciones de respuesta preconfiguradas o personalizables. Cuando los destinatarios seleccionan una opción de respuesta, la respuesta se registra como una nota de caso e incluye información de destinatario y fecha y hora. Si ha elegido anonimizar a los usuarios en la configuración de **privacidad,** los flujos creados a partir de esta plantilla no funcionarán según lo previsto para que se mantenga la privacidad del usuario. Los flujos de Power Automate que usan esta plantilla están disponibles en el panel **Casos.**
+- **Notificar al administrador cuando un usuario** tiene una alerta de riesgo interno: es posible que algunas organizaciones necesiten tener una notificación de administración inmediata cuando un usuario tiene una alerta de administración de riesgos interno. Cuando se configura y selecciona este flujo, se envía un mensaje de correo electrónico al administrador del usuario del caso con la siguiente información sobre todas las alertas de caso:
     - Directiva aplicable para la alerta
     - Fecha y hora de la alerta
     - Nivel de gravedad de la alerta
@@ -393,7 +380,7 @@ Siga estos pasos para crear un flujo de Power Automate a partir de una plantilla
 4. De forma predeterminada, los flujos recomendados están preconfigurados con la administración de riesgos insider recomendada y los campos de datos de servicio de Microsoft 365 necesarios para completar la tarea asignada para el flujo. Si es necesario, personalice los componentes de flujo mediante el control **Mostrar** opciones avanzadas y configurando las propiedades disponibles para el componente de flujo.
 5. Si es necesario, agregue cualquier otro paso al flujo seleccionando el **botón Nuevo** paso. En la mayoría de los casos, esto no debe ser necesario para las plantillas predeterminadas recomendadas.
 6. Seleccione **Guardar borrador** para guardar el flujo para una configuración adicional o seleccione **Guardar** para completar la configuración del flujo.
-7. Seleccione **Cerrar para** volver a la página de flujo de Power **Automate.** La nueva plantilla aparecerá como un  flujo en las pestañas Mis  flujos y estará disponible automáticamente en el control desplegable Automatizar al trabajar con casos de administración de riesgos interno para el usuario que crea el flujo.
+7. Seleccione **Cerrar para** volver a la página de flujo de Power **Automate.** La nueva plantilla aparecerá como un  flujo en las pestañas Mis  flujos y estará disponible automáticamente en el control desplegable Automatizar al trabajar con casos de administración de riesgos insider para el usuario que crea el flujo.
 
 >[!IMPORTANT]
 >Si otros usuarios de la organización necesitan tener acceso al flujo, el flujo debe compartirse.
@@ -404,11 +391,11 @@ Algunos procesos y flujos de trabajo de su organización pueden estar fuera de l
 
 Complete los pasos siguientes para crear una plantilla de Power Automate personalizada para la administración de riesgos interno:
 
-1. **Compruebe su licencia de flujo de Power Automate:** para crear flujos personalizados de Power Automate que usen desencadenadores de administración de riesgos interno, necesitará una licencia de Power Automate. Las plantillas de flujo de administración de riesgos interno recomendadas no requieren licencias adicionales y se incluyen como parte de la licencia de administración de riesgos de Insider.
+1. **Compruebe su licencia de flujo de Power Automate:** para crear flujos personalizados de Power Automate que usen desencadenadores de administración de riesgos interno, necesitará una licencia de Power Automate. Las plantillas de flujo de administración de riesgos insider recomendadas no requieren licencias adicionales y se incluyen como parte de la licencia de administración de riesgos de Insider.
 2. **Crear un flujo automatizado:** cree un flujo que realice una o más tareas después de que se desencadene por un evento de administración de riesgos interno. Para obtener más información sobre cómo crear un flujo automatizado, vea [Crear un flujo en Power Automate.](https://docs.microsoft.com/power-automate/get-started-logic-flow)
-3. **Seleccione el conector de cumplimiento de Microsoft 365:** busque y seleccione el conector de cumplimiento de Microsoft 365. Este conector permite acciones y desencadenadores de administración de riesgos interno. Para obtener más información acerca de los conectores, vea el artículo de introducción [a la referencia del](https://docs.microsoft.com/connectors/connector-reference/) conector.
+3. **Seleccione el conector de cumplimiento de Microsoft 365:** busque y seleccione el conector de cumplimiento de Microsoft 365. Este conector permite acciones y desencadenadores de administración de riesgos interno. Para obtener más información acerca de los conectores, vea el artículo [de introducción a la referencia del](https://docs.microsoft.com/connectors/connector-reference/) conector.
 4. **Elige los desencadenadores de administración de** riesgos de Insider para tu flujo: la administración de riesgos de Insider tiene dos desencadenadores disponibles para flujos personalizados de Power Automate:
-    - **Para un caso de administración de** riesgos insider seleccionado: los flujos con este desencadenador se pueden seleccionar en la página del panel De casos de administración de riesgos de Insider.
+    - **Para un caso de administración de** riesgos insider seleccionado: los flujos con este desencadenador se pueden seleccionar en la página del panel de casos de administración de riesgos de Insider.
     - **Para un usuario de administración de** riesgos interno seleccionado: los flujos con este desencadenador se pueden seleccionar en la página del panel usuarios de administración de riesgos de Insider.
 5. Elija las acciones de administración de riesgos de Insider para su flujo: puede elegir entre varias acciones para que la administración de riesgos insider incluya en el flujo personalizado:
     - Obtener alerta de administración de riesgos interno
@@ -429,7 +416,7 @@ Siga estos pasos para compartir un flujo de Power Automate:
 2. En la página **Flujos de Power Automate,** seleccione la **pestaña Mis flujos** o **Flujos de** equipo.
 3. Seleccione el flujo que desea compartir y, a continuación, **seleccione Compartir** en el menú de opciones de flujo.
 4. En la página de uso compartido del flujo, escriba el nombre del usuario o grupo que desea agregar como propietario del flujo.
-5. En el **cuadro de diálogo** Conexión usada, seleccione **Aceptar** para confirmar que el usuario o grupo agregado tendrá acceso total al flujo.
+5. En el **cuadro de diálogo** Conexión usada, seleccione **Aceptar** para confirmar que el usuario o grupo agregado tendrá acceso completo al flujo.
 
 ### <a name="edit-a-power-automate-flow"></a>Editar un flujo de Power Automate
 

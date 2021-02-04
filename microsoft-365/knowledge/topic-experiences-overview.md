@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre las experiencias de tema.
-ms.openlocfilehash: f01b28b8ca5b0352f05fecac810c3e651c663947
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 46f98a9a247160d73e52c51df5f3001aa2f0f6e0
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029649"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094824"
 ---
 # <a name="topic-experiences-overview-preview"></a>Introducción a las experiencias de tema (versión preliminar)
 
@@ -36,7 +36,7 @@ Las experiencias de tema usan la tecnología de IA de Microsoft, Microsoft 365, 
 
 Su objetivo es convertir la información en conocimientos y entregarla a los usuarios en aplicaciones que usan todos los días, como páginas modernas de SharePoint y Búsqueda de Microsoft.
 
-Las experiencias de tema ayudan a solucionar un problema empresarial clave en muchas empresas, ya que proporcionan la información a los usuarios cuando la necesitan. Por ejemplo, los nuevos empleados necesitan aprender una gran cantidad de información nueva rápidamente y encontrar términos de los que no saben nada al leer la información de la empresa. Para obtener más información, es posible que el usuario deba alejarse de lo que está haciendo y dedicar tiempo valioso a buscar detalles, como información sobre cuál es el término, quién en la organización es experto en la materia y quizás sitios y documentos relacionados con el término.
+Las experiencias de tema ayudan a abordar un problema empresarial clave en muchas empresas, ya que proporcionan la información a los usuarios cuando la necesitan. Por ejemplo, los nuevos empleados necesitan aprender una gran cantidad de información nueva rápidamente y encontrar términos de los que no saben nada al leer la información de la empresa. Para obtener más información, es posible que el usuario deba alejarse de lo que está haciendo y dedicar tiempo valioso a buscar detalles, como información sobre cuál es el término, quién en la organización es experto en la materia y quizás sitios y documentos relacionados con el término.
 
 Las experiencias de tema usan la inteligencia artificial para buscar e identificar automáticamente **los temas** de la organización. Compila información sobre ellos, como una breve descripción, personas que trabajan en el tema y sitios, archivos y páginas relacionados con él. Un administrador de conocimientos o colaborador puede elegir actualizar la información del tema según sea necesario. Los temas están disponibles para los usuarios, lo que significa que para cada instancia del tema que aparece en un sitio de SharePoint moderno en noticias y páginas, se resaltará el texto. Los usuarios pueden elegir seleccionar el tema para obtener más información sobre él a través de los detalles del tema. Los temas también se pueden encontrar en La búsqueda de SharePoint.
 
@@ -52,22 +52,32 @@ Cuando se menciona un tema en el contenido de las noticias y páginas de SharePo
 
 Las experiencias de tema usan la tecnología de IA de Microsoft para identificar **temas** en su entorno de Microsoft 365.
 
-Un tema es una frase o término que es importante o importante para la organización. Tiene un significado específico para la organización y tiene recursos relacionados con ella que pueden ayudar a los usuarios a comprender qué es y encontrar más información al respecto.
+Un tema es una frase o término que es importante o importante para la organización. Tiene un significado específico para la organización y tiene recursos relacionados con ella que pueden ayudar a los usuarios a comprender lo que es y encontrar más información sobre ella. Hay muchos tipos diferentes de temas que serán importantes para su organización. Inicialmente, la tecnología de inteligencia artificial de Microsoft se centra en los siguientes tipos:
+- Project
+- Evento
+- Organización
+- Ubicación
+- Producto
+- Trabajo creativo
+- Campo de estudio
 
-Cuando se identifica un tema y la inteligencia artificial determina que tiene  suficiente información para que sea un tema sugerido, se crea una página de tema para él que contiene información que se recopila a través de la indización de temas, como:
+
+Cuando se identifica un tema y la inteligencia artificial determina que tiene  suficiente información para que sea un tema sugerido, una página de tema muestra la información que se recopila a través de la indización de temas, como:
 
 - Nombres alternativos o acrónimos.
 - Breve descripción del tema.
-- Usuarios que pueden tener conocimientos sobre el tema.
+- Personas que puedan tener conocimientos sobre el tema.
 - Archivos, páginas y sitios relacionados con el tema.
 
 Los administradores de conocimientos pueden elegir rastrear todos los sitios de SharePoint de su espacio empresarial para obtener temas o seleccionar solo algunos.
+
+Consulta [Detección y conservación de temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 ## <a name="roles"></a>Roles
 
 Cuando use experiencias de tema en su entorno de Microsoft 365, los usuarios tendrán los siguientes roles:
 
-- Visor de temas: usuarios que podrán ver los puntos destacados del  tema en los sitios modernos de SharePoint a los que tienen al menos acceso de lectura y en Microsoft Search. Podrán seleccionar los resaltados de temas para ver los detalles del tema en las páginas del tema. Los visores de temas podrán proporcionar comentarios sobre lo útil que es un tema para ellos.
+- Visores de temas: usuarios que podrán ver los puntos destacados del  tema en los sitios modernos de SharePoint a los que tienen al menos acceso de lectura y en Microsoft Search. Podrán seleccionar los resaltados de temas para ver los detalles del tema en las páginas del tema. Los visores de temas podrán proporcionar comentarios sobre lo útil que es un tema para ellos.
 
 - Colaboradores: usuarios que tienen derechos para editar temas existentes o crear otros nuevos. Los administradores de conocimientos asignan permisos de colaborador a los usuarios a través de la configuración de experiencias de tema en el Centro de administración de Microsoft 365. Tenga en cuenta que también puede conceder a todos los visores de temas permiso para editar y crear temas para que todos puedan contribuir a los temas que ven.
 
@@ -97,23 +107,25 @@ Vea [Administrar temas en el Centro de temas](manage-topics.md) para obtener má
 Los controles de administración del Centro de administración de Microsoft 365 le permiten administrar su red de conocimientos. Permiten que un administrador global o de SharePoint de Microsoft 365:
 
 - Controle qué usuarios de su organización pueden ver temas en páginas modernas de SharePoint o en resultados de búsqueda de SharePoint.
-- Controlar qué sitios de SharePoint se rastrearán para buscar temas.
-- Configurar la detección de temas para excluir temas específicos de la búsqueda.
+- Controlar qué sitios de SharePoint se rastrearán para identificar temas.
+- Excluir temas específicos de la búsqueda.
 - Controlar qué usuarios pueden administrar los temas en el centro de temas.
-- Controlar qué usuarios pueden crear y editar temas en el centro de temas.
+- Controlar qué usuarios pueden crear y editar temas.
 - Controlar qué usuario podrá ver los temas.
 
 Vea [asignar permisos de usuario,](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)administrar la [visibilidad de](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)temas y administrar la [detección de temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) para obtener más información acerca de los controles de administración.
 
 ## <a name="topic-curation--feedback"></a>Comentarios sobre la & tema
 
-La inteligencia artificial trabajará continuamente para proporcionarle sugerencias para mejorar los temas a medida que se produzcan cambios en su entorno. 
+La IA funcionará continuamente para proporcionarle sugerencias para mejorar los temas a medida que se produzcan cambios en su entorno. 
 
-Es posible que se pregunte a los usuarios a los que permite tener acceso para ver los temas de su trabajo diario si les resultaba útil. El sistema examina estas respuestas y las usa para ayudar a determinar lo que se muestra en los resúmenes de temas y en los detalles del tema.
+Los usuarios con permisos de edición o creación de temas pueden realizar actualizaciones en las páginas de temas directamente si desean realizar correcciones o agregar información adicional. También pueden agregar nuevos temas que la inteligencia artificial no pudo identificar. Si hay suficiente información sobre estos temas agregados manualmente y AI es capaz de identificar este tipo de tema, las sugerencias adicionales de AI pueden mejorar estos temas agregados manualmente 
 
-Los usuarios con permisos de edición o creación de temas pueden realizar actualizaciones en las páginas de temas directamente si desean realizar correcciones o agregar información adicional. 
+Es posible que se pregunte a los usuarios a los que permite tener acceso para ver los temas de su trabajo diario si el tema les resultaba útil. El sistema examina estas respuestas y las usa para mejorar el resaltado del tema y ayuda a determinar lo que se muestra en los resúmenes de temas y en los detalles del tema.
 
 Además, los usuarios con permisos adecuados pueden etiquetar elementos como la conversación de Yammer que son relevantes para un tema y agregarlos a un tema específico. 
+
+Consulta [Detección y conservación de temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 
 ## <a name="see-also"></a>Consulte también

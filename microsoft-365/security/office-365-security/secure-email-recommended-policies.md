@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f3654762bf4d4c28a82b1e93829094b9e0386a60
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926527"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097133"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -44,13 +44,13 @@ Para proteger el correo electrónico, en el siguiente diagrama se ilustran las d
 
 Tenga en cuenta la adición de una nueva directiva para Exchange Online para bloquear los clientes de ActiveSync. Esto fuerza el uso de Outlook Mobile.
 
-Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo tiene que crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas [en las directivas comunes de acceso a dispositivos e identidades.](identity-access-policies.md)
+Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo necesita crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas [en directivas comunes de acceso a dispositivos e identidades.](identity-access-policies.md)
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
-||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
-||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrate de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
 ||[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir Exchange Online en la lista de aplicaciones en la nube|
 ||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange Online en la lista de aplicaciones en la nube|
 ||[Bloquear clientes de ActiveSync](#block-activesync-clients)|Agregar esta nueva directiva|
@@ -93,11 +93,11 @@ Para ello, siga estos pasos:
 
    **Asignaciones** \> **Acciones o aplicaciones en la nube** \> **Aplicaciones en la nube** \> **Incluir** \> **Seleccionar aplicaciones:** seleccionar **Office 365 Exchange Online**
 
-   **Controles de acceso** \> **Sesión:** seleccionar **Usar restricciones aplicadas por la aplicación**
+   **Controles de acceso** \> **Sesión:** seleccione **Usar restricciones aplicadas por la aplicación**
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android deben usar Outlook
 
-Para asegurarse de que los usuarios de dispositivos iOS y Android solo puedan tener acceso al contenido del trabajo o escuela con Outlook para iOS y Android, necesita una directiva de acceso condicional dirigida a esos usuarios potenciales.
+Para asegurarse de que los usuarios de dispositivos iOS y Android solo puedan tener acceso al contenido de trabajo o escuela con Outlook para iOS y Android, necesita una directiva de acceso condicional dirigida a esos usuarios potenciales.
 
 Vea los pasos para configurar esta directiva en [Administrar el acceso de colaboración de mensajería mediante Outlook para iOS y Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
@@ -105,13 +105,13 @@ Vea los pasos para configurar esta directiva en [Administrar el acceso de colabo
 
 Con las nuevas funcionalidades de Cifrado de mensajes de Office 365 (OME), que aprovechan las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier persona en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Microsoft 365, así como con no clientes que usen Outlook.com, Gmail y otros servicios de correo electrónico.
 
-Para obtener más información, vea Configurar las nuevas capacidades de cifrado de [mensajes de Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
+Para obtener más información, vea Configurar nuevas capacidades de cifrado de [mensajes de Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-Configurar directivas de acceso condicional para:
+Configure las directivas de acceso condicional para:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)

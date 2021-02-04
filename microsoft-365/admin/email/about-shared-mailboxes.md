@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón compartido.
-ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058452"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094726"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -41,7 +41,7 @@ Antes de [crear un buzón compartido,](create-a-shared-mailbox.md)estos son algu
 
 - **Permisos de usuario:** Debe conceder a los usuarios permisos (pertenencia) para usar el buzón compartido. Solo las personas de dentro de su organización pueden usar un buzón compartido.
 
-- **Usuarios externos:** No puede dar acceso a su buzón compartido a personas ajenas a su empresa (como personas con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, consulte Crear un grupo de [Microsoft 365 en el Centro de administración.](../create-groups/create-groups.md)
+- **Usuarios externos:** No puede dar acceso a su buzón compartido a personas ajenas a su empresa (como personas con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, [consulte Crear un grupo de Microsoft 365 en el Centro de administración.](../create-groups/create-groups.md)
 
 - **Usar con Outlook:** Además de usar Outlook en la Web desde el explorador para tener acceso a buzones compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, vea [Agregar un buzón compartido a Outlook Mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar grupos](../create-groups/compare-groups.md).
 
@@ -53,15 +53,15 @@ Antes de [crear un buzón compartido,](create-a-shared-mailbox.md)estos son algu
 
 - **Requisitos de suscripción:** Para crear un buzón compartido, debe suscribirse a un plan de Microsoft 365 para empresas que incluya correo electrónico (el servicio Exchange Online). La suscripción a Aplicaciones de Microsoft 365 para empresas no incluye correo electrónico. Microsoft 365 Empresa Standard incluye correo electrónico.
 
-- **Iniciar sesión:** Un buzón compartido no está diseñado para el inicio de sesión directo por parte de su cuenta de usuario asociada. Siempre debe bloquear el inicio de sesión de la cuenta de buzón compartido y mantenerla bloqueada.
+- **Iniciar sesión:** Un buzón compartido no está diseñado para el inicio de sesión directo por su cuenta de usuario asociada. Siempre debe bloquear el inicio de sesión de la cuenta de buzón compartido y mantenerla bloqueada.
 
-- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido, pueden no conectarse a este buzón de forma intermitente. En este caso, puede considerar reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo de Microsoft 365 o una carpeta pública.
+- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido, es posible que no se conecten a este buzón de forma intermitente. En este caso, puede considerar reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo de Microsoft 365 o una carpeta pública.
 
-- **Eliminación de mensajes:** Desafortunadamente, no puede evitar que los usuarios eliminen mensajes en un buzón compartido. La única manera de evitar esto es crear un grupo de Microsoft 365 en lugar de un buzón compartido. Un grupo en Outlook es como un buzón compartido. Para obtener una comparación de los dos, vea [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, [vea Más información sobre los grupos.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+- **Eliminación de mensajes:** Unfortunately, you can't prevent people from deleting messages in a shared mailbox. La única manera de evitar esto es crear un grupo de Microsoft 365 en lugar de un buzón compartido. Un grupo en Outlook es como un buzón compartido. Para obtener una comparación de los dos, vea [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, [vea Más información sobre los grupos.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 
 > [!NOTE]
-> Para obtener acceso a un buzón compartido, un usuario debe tener una licencia de Exchange Online, pero el buzón compartido no requiere una licencia independiente. Sin una licencia, los buzones compartidos están limitados a 50 GB. Para aumentar el límite de tamaño a 100 GB, el buzón compartido debe tener asignada una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Archivad de Exchange Online. Esto también le permitirá habilitar el archivo de expansión automática para una cantidad ilimitada de capacidad de almacenamiento de archivos. Del mismo modo, si desea colocar un buzón compartido en retención por litigio, el buzón compartido debe tener una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Exchange Online Archiving. Si desea aplicar características avanzadas como Microsoft Defender para Office 365, eDiscovery avanzado o directivas de retención automática, el buzón compartido debe tener licencia para esas características.
+> Para obtener acceso a un buzón compartido, un usuario debe tener una licencia de Exchange Online, pero el buzón compartido no requiere una licencia independiente. Cada buzón compartido tiene una cuenta de usuario correspondiente. ¿Ha notado que no se le pidió que proporcionase una contraseña cuando creó el buzón de correo compartido? La cuenta tiene una contraseña, pero se ha generado por el sistema (desconocida). No debe usar la cuenta para iniciar sesión en el buzón compartido. Sin una licencia, los buzones compartidos están limitados a 50 GB. Para aumentar el límite de tamaño a 100 GB, el buzón compartido debe tener asignada una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Archivad de Exchange Online. Esto también le permitirá habilitar el archivo de expansión automática para una cantidad ilimitada de capacidad de almacenamiento de archivos. Del mismo modo, si desea colocar un buzón compartido en retención por litigio, el buzón compartido debe tener una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Exchange Online Archiving. Si desea aplicar características avanzadas como Microsoft Defender para Office 365, eDiscovery avanzado o directivas de retención automática, el buzón compartido debe tener una licencia para esas características.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

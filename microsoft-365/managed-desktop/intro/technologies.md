@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cb368939e87ddbbfc8f5386c6fc5d6bff110a7ec
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 4932a40455c8ed4d8fdfc0dfae99c8001e582ff4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840906"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094872"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
@@ -37,12 +37,35 @@ Aplicaciones de Win32 |    Teams no se incluye con el dispositivo, pero microsof
 Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se envían con el dispositivo. Los usuarios pueden acceder a la versión web de estas aplicaciones con un explorador.
 
 
-## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft Defender para puntos de conexión
 
+## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 o E3 con Microsoft Defender para puntos de conexión
+Recomendado
  |
  --- | ---
-Virtualización de aplicaciones (App-V) |    Los clientes pueden implementar paquetes de App-V con el cliente de administración de aplicaciones de Intune Win32.
-Microsoft Defender para punto de conexión |    Escritorio administrado de Microsoft usa este producto para supervisar la seguridad del dispositivo. 
+[Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) | Se recomienda a los clientes implementar Windows Hello para empresas para reemplazar contraseñas con autenticación segura en dos fases que se usa en dispositivos de Escritorio administrado de Microsoft.
+[Virtualización de aplicaciones](https://docs.microsoft.com/windows/application-management/app-v/appv-technical-reference) | Los clientes pueden implementar paquetes de virtualización de aplicaciones (App-V) con el cliente de administración de aplicaciones de Intune Win32.
+[Prevención de pérdida de datos de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about) | Se recomienda a los clientes implementar la prevención de pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se están haciendo en los elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido no intencionado de esos elementos.   
+
+Incluido y administrado en el servicio
+ |
+ --- | ---
+[Cifrado de unidad BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) | El cifrado de unidad BitLocker se usa para cifrar todas las unidades del sistema. 
+[Windows Defender System Guard]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) | Protege la integridad del sistema al iniciarse y valida que la integridad del sistema se haya mantenido realmente.
+[Credential Guard de Windows Defender]( https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) | Windows Defender Credential Guard usa la seguridad basada en virtualización para aislar secretos para que solo el software del sistema con privilegios pueda acceder a ellos.
+[Microsoft Defender para punto de conexión | Detección y respuesta de puntos de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) |     Las operaciones de seguridad de escritorio administrado de Microsoft responden a las alertas y toma medidas para corregir las amenazas mediante la detección y respuesta de puntos de conexión.
+[Microsoft Defender para punto de conexión | Expertos en amenazas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts) | Escritorio administrado de Microsoft se integra con información y datos de expertos en amenazas a través de notificaciones de ataques dirigidos. Los clientes deben proporcionar consentimiento adicional antes de habilitar este servicio.  
+[Microsoft Defender para punto de conexión | Administración de amenazas y vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) | Necesario para su uso futuro en el plan de servicio de Escritorio administrado de Microsoft.
+[Microsoft Defender para punto de conexión | Reducción de superficie de ataque](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) | La reducción de superficie de ataque se dirige a comportamientos de software de riesgo que a menudo son usados por atacantes.
+[Microsoft Defender para punto de conexión | Protección contra vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) | Protege contra el malware que usa vulnerabilidades de seguridad para infectar dispositivos y propagarse mediante la aplicación automática de técnicas de mitigación de vulnerabilidades a aplicaciones y procesos del sistema operativo.
+[Microsoft Defender para punto de conexión | Protección de red](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection) | Protección de red amplía el ámbito de SmartScreen de Microsoft Defender para bloquear todo el tráfico HTTP saliente que intenta conectarse a orígenes de baja reputación.
+[Protección contra alteraciones de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) | Protección contra alteraciones de Windows se usa para evitar que se cambie la configuración de seguridad, como la protección antivirus.
+[Protección antivirus basada en comportamiento, heurística y en tiempo real de Antivirus de Microsoft Defender]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) | Siempre en busca de amenazas de archivos y procesos que no se detecten como malware.
+[Protección de entrega en la nube del Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus) | Proporciona protección dinámica casi instantánea y automatizada contra amenazas nuevas y emergentes.
+[Bloqueo de Microsoft Defender a primera vista](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) | Proporciona detección y bloqueo de nuevo malware cuando Windows detecta un archivo sospechoso o desconocido.
+[Aplicaciones potencialmente no deseadas del Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) | Las aplicaciones potencialmente no deseadas (PUA) se usan para bloquear aplicaciones que pueden hacer que el equipo se ejecute lentamente, muestre anuncios inesperados o, en el peor de los casos, instale otro software que podría ser inesperado o no deseado.
+[Windows Defender Firewall con seguridad avanzada](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | El filtrado de tráfico de red doble basado en host para un dispositivo, Windows Defender Firewall bloquea el tráfico de red no autorizado que fluye dentro o fuera del dispositivo local.
+[Control de cuentas de usuario](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/how-user-account-control-works) | Control de cuentas de usuario cambia al Escritorio seguro cuando una tarea o una acción requiere el acceso de tipo de cuenta de administrador. A los usuarios de Escritorio administrado de Microsoft se les asigna acceso de usuario estándar durante la inscripción. 
+
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
