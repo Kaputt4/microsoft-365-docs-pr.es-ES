@@ -113,14 +113,16 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Soporte técnico de la aplicación cliente
+        - name: Compatibilidad con aplicaciones de cliente y servicios
           items:
+            - name: Compatibilidad con aplicaciones de cliente y servicios
+              href: microsoft-365-client-services-app-support.md
             - name: Autenticación basada en certificados
               href: microsoft-365-client-support-certificate-based-authentication.md
             - name: Acceso condicional
               href: microsoft-365-client-support-conditional-access.md
-            - name: Autenticación moderna
-              href: microsoft-365-client-support-modern-authentication.md
+            - name: Autenticación multifactor
+              href: microsoft-365-client-support-multi-factor-authentication.md
             - name: Inicio de sesión único
               href: microsoft-365-client-support-single-sign-on.md
             - name: Elegir entre la Seguridad de Movilidad Básica e Intune
