@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: ebf1efe99e57084e2384e7499b3f72dab2b872c2
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: efbdee1fd5ee3c8c48aca9cbaf9e5a85a107edb4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050394"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094693"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -43,7 +43,7 @@ Los siguientes elementos de Teams se pueden retener y eliminar mediante directiv
 > [!NOTE]
 > La inclusión del contenido de tarjetas es una adición reciente y actualmente se está implementando en los inquilinos. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Los mensajes de Teams en canales privados no se incluyen, ni tampoco las reacciones de otras personas en forma de iconos gestuales.
+Los mensajes de Teams en canales privados no se incluyen, ni tampoco los fragmentos de código ni las reacciones de otras personas en forma de emoticonos.
 
 Los mensajes de correo electrónico y los archivos que use con Teams no son incluidos en directivas de retención para Teams. Estos elementos tienen sus propias directivas de retención.
 

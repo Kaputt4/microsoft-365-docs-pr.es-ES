@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667815"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094801"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -80,11 +80,19 @@ Puede controlar si los archivos confidenciales protegidos por sus directivas se 
 
 Si el modo de lista está configurado en **Bloquear**, el usuario no podrá cargar elementos confidenciales a esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
 
-Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_* _ a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
+Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_** a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
 
 #### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
 Agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Edge Chromium.
+
+### <a name="business-justification-in-policy-tips"></a>Justificaciones empresariales en sugerencias de directivas
+
+Puede controlar cómo interactúan los usuarios con la opción de justificación empresarial en las notificaciones de sugerencias de directiva DLP. Esta opción aparece cuando los usuarios realizan una actividad que está protegida por la configuración **Bloquear con anulación** en una directiva DLP. Puede elegir entre una de las siguientes opciones:
+
+- De forma predeterminada, los usuarios pueden seleccionar una justificación integrada o introducir su propio texto.
+- Los usuarios solo pueden seleccionar una justificación integrada.
+- Los usuarios solo pueden introducir su propia justificación.
 
 
 ## <a name="tying-dlp-settings-together"></a>Vincular las opciones de configuración DLP
@@ -99,7 +107,7 @@ Para usar esta restricción, tendrá que configurar tres partes importantes:
 
 2. Agregue los exploradores que no tienen permitido acceder a ciertos elementos confidenciales cuando se produzca una coincidencia de directiva DLP.
 
-3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando _ *Cargar en los servicios en la nube** y **Acceso desde un explorador no permitido**.
+3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido**.
 
 Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
 

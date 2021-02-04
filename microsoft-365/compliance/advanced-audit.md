@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740367"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097156"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -116,7 +116,9 @@ Para buscar registros de auditoría de SearchQueryInitiatedExchange, puede busca
 También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
 > [!NOTE]
-> Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedExchange (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+> Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedExchange (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+En un entorno multigeográfico, debe ejecutar el comando **Set-Mailbox** en el bosque de dominio en el que se encuentra el buzón del usuario. Para identificar la ubicación del buzón del usuario, ejecute el siguiente comando: `Get-Mailbox <user identity> | FL MailboxLocations`.
+Si el comando `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` se ejecutó anteriormente en el bosque que es diferente al que se encuentra el buzón del usuario, debe quitar el valor SearchQueryInitiate del buzón del usuario (ejecutándo `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) y luego agregarlo al buzón del usuario en el bosque en el que se encuentra el buzón del usuario.
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -129,7 +131,9 @@ Para buscar registros de auditoría de SearchQueryInitiatedSharePoint, puede bus
 También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
 > [!NOTE]
-> Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedSharePoint (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+> Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedExchange (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+En un entorno multigeográfico, debe ejecutar el comando **Set-Mailbox** en el bosque de dominio en el que se encuentra el buzón del usuario. Para identificar la ubicación del buzón del usuario, ejecute el siguiente comando: `Get-Mailbox <user identity> | FL MailboxLocations`.
+Si el comando `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` se ejecutó anteriormente en el bosque que es diferente al que se encuentra el buzón del usuario, debe quitar el valor SearchQueryInitiate del buzón del usuario (ejecutándo `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) y luego agregarlo al buzón del usuario en el bosque en el que se encuentra el buzón del usuario.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Acceso de banda ancha a la API de Actividad de administración de Office 365
 
