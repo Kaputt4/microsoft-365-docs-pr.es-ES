@@ -20,21 +20,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a4d1fc1f136322c85c8c46563c448451501ac462
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: dd0d4c5e6629a5762505be6392d6b4c2ae5607e5
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904025"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109949"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Más información sobre el cumplimiento de las comunicaciones en Microsoft 365
 
-El cumplimiento de las comunicaciones es una solución de riesgo interno de Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes inapropiados en su organización. Las directivas predefinidas y personalizadas permiten examinar las comunicaciones internas y externas en busca de coincidencias de directivas para que puedan ser examinadas por revisores designados. Los revisores pueden investigar el correo electrónico examinado, Microsoft Teams, Yammer o las comunicaciones de terceros en su organización y realizar las acciones adecuadas para asegurarse de que cumplen con los estándares de mensajes de su organización.
+El cumplimiento de las comunicaciones es una solución de riesgo interno de Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. Las directivas predefinidas y personalizadas permiten examinar las comunicaciones internas y externas en busca de coincidencias de directivas para que puedan ser examinadas por revisores designados. Los revisores pueden investigar el correo electrónico examinado, Microsoft Teams, Yammer o las comunicaciones de terceros en su organización y tomar las medidas adecuadas para asegurarse de que cumplen con los estándares de mensajes de su organización.
 
-Las directivas de cumplimiento de comunicaciones de Microsoft 365 le ayudan a superar muchos desafíos modernos asociados con el cumplimiento normativo y las comunicaciones internas y externas, entre los que se incluyen:
+Las directivas de cumplimiento de comunicaciones de Microsoft 365 le ayudan a superar muchos desafíos modernos asociados con el cumplimiento y las comunicaciones internas y externas, entre las que se incluyen:
 
 - Exploración de tipos crecientes de canales de comunicación
-- El volumen cada vez mayor de datos de mensajes
+- El volumen creciente de datos de mensajes
 - Cumplimiento normativo y riesgo de multas
 
 Además, puede haber una separación de tareas entre los administradores de TI y el equipo de administración de cumplimiento. El cumplimiento de las comunicaciones admite la separación entre la configuración de las directivas y la investigación y revisión de los mensajes. Por ejemplo, el grupo de TI de su organización puede ser responsable de configurar los permisos de roles de cumplimiento de comunicaciones, los grupos y las directivas, y los investigadores y revisores pueden ser responsables de las acciones de evaluación, revisión y mitigación de mensajes.
@@ -55,7 +55,7 @@ Las directivas de cumplimiento de comunicaciones pueden ayudar a revisar los men
 
 - **Cumplimiento normativo**
 
-    La mayoría de las organizaciones deben cumplir con algún tipo de estándar de cumplimiento normativo como parte de sus procedimientos de funcionamiento normales. Estas normativas a menudo requieren que las organizaciones implementen algún tipo de proceso de supervisión o supervisión para la mensajería adecuada para su sector. La Regla 3110 de la Autoridad Reguladora de la Industria Financiera (FINRA) es un buen ejemplo de un requisito para que las organizaciones tengan procedimientos de supervisión para examinar las comunicaciones de los usuarios y los tipos de empresas en las que participa. Otro ejemplo puede ser la necesidad de revisar las comunicaciones de negociación de la organización para proteger contra posibles actividades de tráfico de dinero, tráfico interno, colusión o negociación. Las directivas de cumplimiento de comunicaciones pueden ayudar a su organización a cumplir estos requisitos proporcionando un proceso para analizar e informar sobre las comunicaciones corporativas. Para obtener más información sobre la compatibilidad con organizaciones [financieras,](../solutions/financial-services-secure-collaboration.md)vea Consideraciones clave de cumplimiento y seguridad para los mercados de capitales y la banca de Estados Unidos.
+    La mayoría de las organizaciones deben cumplir algún tipo de estándar de cumplimiento normativo como parte de sus procedimientos de funcionamiento normales. Estas normativas a menudo requieren que las organizaciones implementen algún tipo de proceso de supervisión o supervisión para la mensajería adecuada para su sector. La Regla 3110 de la Autoridad Reguladora de la Industria Financiera (FINRA) es un buen ejemplo de un requisito para que las organizaciones tengan procedimientos de supervisión para examinar las comunicaciones de los usuarios y los tipos de empresas en las que participa. Otro ejemplo puede ser la necesidad de revisar las comunicaciones de negociación de la organización para proteger contra posibles actividades de tráfico de dinero, tráfico interno, colusión o negociación. Las directivas de cumplimiento de comunicaciones pueden ayudar a su organización a cumplir estos requisitos proporcionando un proceso para analizar e informar sobre las comunicaciones corporativas. Para obtener más información sobre la compatibilidad con organizaciones [financieras,](../solutions/financial-services-secure-collaboration.md)vea Consideraciones clave de cumplimiento y seguridad para los mercados de capitales y la banca de Estados Unidos.
 
 ## <a name="key-feature-areas"></a>Áreas de características clave
 
@@ -77,7 +77,7 @@ Las plantillas personalizables inteligentes en el cumplimiento de las comunicaci
 
 ### <a name="flexible-remediation-workflows"></a>Flujos de trabajo de corrección flexibles
 
-Los flujos de trabajo de corrección integrados le permiten identificar y tomar medidas rápidamente en mensajes con coincidencias de directiva en su organización. Las siguientes nuevas características aumentan la eficacia de las actividades de investigación y corrección:
+Los flujos de trabajo de corrección integrados le permiten identificar y tomar medidas rápidamente en los mensajes con coincidencias de directiva de su organización. Las siguientes nuevas características aumentan la eficacia de las actividades de investigación y corrección:
 
 - Flujo de trabajo de corrección **flexible:** el nuevo flujo de trabajo de corrección le ayuda a tomar medidas rápidamente en las coincidencias de directiva, incluidas las nuevas opciones para escalar mensajes a otros revisores y enviar notificaciones por correo electrónico a los usuarios con coincidencias de directiva.
 - **Subprocesos de conversación:** los mensajes ahora se agrupan visualmente por mensaje original y todos los mensajes de respuesta asociados, lo que le ofrece un mejor contexto durante las acciones de investigación y corrección.
@@ -86,7 +86,8 @@ Los flujos de trabajo de corrección integrados le permiten identificar y tomar 
 - **Filtros nuevos:** investigue y corrija las alertas de directiva con mayor rapidez con filtros de mensajes para varios campos, incluidos el remitente, el destinatario, la fecha, los dominios y muchos más.
 - **Vistas de mensajes mejoradas:** las acciones de investigación y corrección ahora son más rápidas con nuevas vistas de origen, texto y anotación de mensajes. Ahora, los datos adjuntos de los mensajes se pueden ver para proporcionar un contexto completo al realizar acciones de corrección.
 - Vista de historial de **usuarios:** vista histórica de todas las actividades de corrección de mensajes de usuario, como notificaciones pasadas y escalaciones de coincidencias de directiva, ahora proporciona a los revisores más contexto durante el proceso de flujo de trabajo de corrección. Las instancias de coincidencias de directiva por primera vez o repetidas para los usuarios ahora se archivan y se pueden ver fácilmente.
-- **Notificación de patrón detectado (versión preliminar):** muchas acciones de acoso y acoso tienen lugar a lo largo del tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. El nuevo patrón detectado de notificación que se muestra en los detalles de alerta ayuda a llamar la atención sobre estas alertas y este tipo de comportamiento.
+- **Notificación de patrón detectado:** muchas acciones de acoso y acoso tienen lugar a lo largo del tiempo e implican instancias recurrentes del mismo comportamiento por parte de un usuario. El nuevo patrón detectado de notificación que se muestra en los detalles de alerta ayuda a llamar la atención sobre estas alertas y este tipo de comportamiento.
+- **Mostrar vista traducir:** investigue rápidamente los detalles del mensaje en otros idiomas mediante la compatibilidad con la traducción en el flujo de trabajo de corrección. Los mensajes en otros idiomas se convierten automáticamente al idioma para mostrar del revisor.
 
 ### <a name="actionable-insights"></a>Información que se puede tomar medidas
 
@@ -100,10 +101,10 @@ Los nuevos paneles interactivos para alertas, coincidencias de directivas, accio
 
 Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en varios canales de comunicación para ayudarle a revisar y corregir rápidamente los problemas de cumplimiento:
 
-- **Microsoft Teams:** las comunicaciones de chat para canales de [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) públicos y privados y chats individuales son compatibles con el cumplimiento de las comunicaciones como origen de canal independiente o con otros servicios de Microsoft 365. Deberá agregar manualmente usuarios individuales, grupos de distribución o canales específicos de Microsoft Teams cuando seleccione usuarios y grupos para supervisar en una directiva de cumplimiento de comunicaciones.
-- **Exchange Online:** todos los buzones hospedados en [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) en su organización de Microsoft 365 son aptos para el análisis. Los correos electrónicos y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones están disponibles al instante para la supervisión y los informes de cumplimiento. Exchange Online es ahora un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
-- **Yammer:** los mensajes privados y las conversaciones de la comunidad pública [en Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) son compatibles con las directivas de cumplimiento de comunicaciones. Yammer es un canal opcional y debe estar en modo [nativo para](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) admitir el examen de mensajes y datos adjuntos.
-- **Skype Empresarial Online:** las directivas de cumplimiento de comunicaciones admiten el análisis de las comunicaciones de chat y los datos adjuntos asociados [en Skype Empresarial Online.](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
+- **Microsoft Teams:** las comunicaciones de chat para canales de [Microsoft Teams](/MicrosoftTeams/Teams-overview) públicos y privados y chats individuales son compatibles con el cumplimiento de las comunicaciones como origen de canal independiente o con otros servicios de Microsoft 365. Deberá agregar manualmente usuarios individuales, grupos de distribución o canales específicos de Microsoft Teams cuando seleccione usuarios y grupos para supervisar en una directiva de cumplimiento de comunicaciones.
+- **Exchange Online:** todos los buzones hospedados en [Exchange Online](/Exchange/exchange-online) en su organización de Microsoft 365 son aptos para el análisis. Los correos electrónicos y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones están disponibles al instante para la supervisión y los informes de cumplimiento. Exchange Online es ahora un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
+- **Yammer:** los mensajes privados y las conversaciones de la comunidad pública [en Yammer](/yammer/yammer-landing-page) son compatibles con las directivas de cumplimiento de comunicaciones. Yammer es un canal opcional y debe estar en modo [nativo para](/yammer/configure-your-yammer-network/overview-native-mode) admitir el examen de mensajes y datos adjuntos.
+- **Skype Empresarial Online:** las directivas de cumplimiento de comunicaciones admiten el análisis de las comunicaciones de chat y los datos adjuntos asociados [en Skype Empresarial Online.](/SkypeForBusiness/skype-for-business-online)
 - **Orígenes de terceros:** puede examinar [](archiving-third-party-data.md) los mensajes de orígenes de terceros en busca de datos importados en los buzones de la organización de Microsoft 365. El cumplimiento de las comunicaciones admite conexiones a varias plataformas populares, como Instant Bloomberg y otras.
 
 Para obtener más información sobre la compatibilidad del canal de mensajería en las directivas de cumplimiento de [comunicaciones, vea los tipos de comunicación admitidos.](communication-compliance-feature-reference.md#supported-communication-types)
@@ -145,8 +146,8 @@ En este paso, se profundizará en los problemas detectados como coincidencias de
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 
-- **Resolver:** después de revisar un problema, puede solucionarlo resolviendo la alerta. La resolución de una alerta la quita de la cola de alertas pendientes y la acción se conserva como una entrada en la cola Resuelto para la directiva correspondiente. Las alertas se resuelven automáticamente después de marcar la alerta como falso positivo, enviar un aviso a un usuario sobre la alerta o abrir un nuevo caso para la alerta.
-- Etiquetar un **mensaje:** como parte de la resolución de un problema, puede etiquetar el mensaje detectado como compatible, no conforme o tan cuestionable como se relaciona con las directivas y estándares de su organización. El etiquetado puede ayudarle a microfiltrar alertas de directiva para escalaciones o como parte de otros procesos de revisión interna.
+- **Resolver:** después de revisar un problema, puede solucionarlo resolviendo la alerta. Al resolver una alerta, se quita de la cola de alertas pendientes y la acción se conserva como una entrada en la cola Resuelto para la directiva correspondiente. Las alertas se resuelven automáticamente después de marcar la alerta como falso positivo, enviar un aviso a un usuario sobre la alerta o abrir un nuevo caso para la alerta.
+- Etiquetar un **mensaje:** como parte de la resolución de un problema, puede etiquetar el mensaje detectado como compatible, no compatible o tan cuestionable como lo hace con las directivas y estándares de su organización. El etiquetado puede ayudarle a microfiltrar alertas de directiva para escalaciones o como parte de otros procesos de revisión interna.
 - **Notificar al usuario:** a menudo, los usuarios infringen accidentalmente o por error una directiva de cumplimiento de comunicaciones. Puede usar la característica de notificación para proporcionar un aviso de advertencia al usuario y resolver el problema.
 - **Escala a otro revisor: a** veces, el revisor inicial de un problema necesita la entrada de otros revisores para ayudar a resolver el incidente. Puede escalar fácilmente los problemas de mensajes a los revisores de otras áreas de la organización como parte del proceso de resolución.
 - **Marcar como falso positivo:** los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento se deslizarán ocasionalmente al proceso de revisión. Puedes marcar estos tipos de alertas como falsos positivos y resolver automáticamente el problema.

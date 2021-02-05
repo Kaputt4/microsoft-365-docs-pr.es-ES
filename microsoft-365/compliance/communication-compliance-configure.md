@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: 442f0dd13415c4ca435cdf69336d1fb07a9e045d
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883689"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109929"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
-Use directivas de cumplimiento de comunicaciones para identificar las comunicaciones de los usuarios para su examen por parte de revisores internos o externos. Para obtener más información acerca de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones de su organización, vea directivas de cumplimiento de [comunicaciones en Microsoft 365.](communication-compliance.md) Si desea revisar cómo Contoso configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en las comunicaciones de Microsoft Teams, Exchange Online y Yammer, consulte este caso [práctico.](communication-compliance-case-study.md)
+Use directivas de cumplimiento de comunicaciones para identificar las comunicaciones de los usuarios para su examen por parte de revisores internos o externos. Para obtener más información acerca de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones de su organización, vea directivas de cumplimiento de [comunicaciones en Microsoft 365.](communication-compliance.md) Si desea revisar cómo Contoso configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en las comunicaciones de Microsoft Teams, Exchange Online y Yammer, consulte este [caso](communication-compliance-case-study.md)práctico.
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
@@ -51,9 +51,9 @@ Antes de empezar con el cumplimiento de las comunicaciones, debe confirmar su su
 Los usuarios incluidos en las directivas de cumplimiento de comunicaciones deben tener asignada una de las licencias anteriores.
 
 >[!IMPORTANT]
->El cumplimiento avanzado de Office 365 ya no se vende como suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o características de cumplimiento adicionales.
+>El cumplimiento avanzado de Office 365 ya no se vende como suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o características adicionales.
 
-Si no tiene un plan existente de Office 365 Enterprise E5 y quiere probar el cumplimiento de las comunicaciones, puede agregar [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) su suscripción existente o registrarse para una prueba de Office 365 Enterprise E5.
+Si no tiene un plan existente de Office 365 Enterprise E5 y quiere probar el cumplimiento de las comunicaciones, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) su suscripción existente o registrarse para una prueba de Office 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Paso 1 (obligatorio): Habilitar permisos para el cumplimiento de las comunicaciones
 
@@ -62,7 +62,7 @@ Si no tiene un plan existente de Office 365 Enterprise E5 y quiere probar el cum
 
 Hay cinco grupos de roles que se usan para configurar permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de comunicaciones esté disponible como opción de menú en el Centro  de cumplimiento  de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a los grupos de roles Cumplimiento de comunicaciones o Administrador de cumplimiento de comunicaciones.  Para obtener acceso a las características de cumplimiento de comunicaciones y administrarlas después de la configuración inicial, los usuarios deben ser miembros de al menos un grupo de roles de cumplimiento de comunicaciones.
 
-En función de cómo quiera administrar las directivas y alertas de comunicación, deberá asignar usuarios a grupos de roles específicos. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O puede decidir asignar todas las cuentas de usuario para administradores designados, analistas, investigadores y visores al grupo de roles *Cumplimiento de* comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
+Dependiendo de cómo quiera administrar las directivas y alertas de comunicación, deberá asignar usuarios a grupos de roles específicos. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O puede decidir asignar todas las cuentas de usuario para administradores designados, analistas, investigadores y visores al grupo de roles *Cumplimiento de* comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
 
 Elija entre estas opciones de grupo de roles al configurar el cumplimiento de las comunicaciones:
 
@@ -80,7 +80,7 @@ Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la
 
 2. En el Centro &amp; de cumplimiento de seguridad, vaya a **Permisos.** Seleccione el vínculo para ver y administrar roles en Office 365.
 
-3. Seleccione el grupo *de roles Cumplimiento de* comunicaciones y, a continuación, seleccione Editar grupo de **funciones.**
+3. Seleccione el grupo *de roles Cumplimiento de* comunicaciones y, a continuación, seleccione Editar grupo de **roles.**
 
 4. Seleccione **Elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
 
@@ -138,9 +138,9 @@ Si es una organización con una implementación local de Exchange o un proveedor
 >[!IMPORTANT]
 >Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Para obtener más información, consulte Buscar buzones [basados en la nube para usuarios locales.](search-cloud-based-mailboxes-for-on-premises-users.md)
 
-Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que deba supervisar todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva global de cumplimiento de comunicaciones para el grupo asignado. Esto le permite supervisar a miles de usuarios con una única directiva y mantener actualizada la directiva de cumplimiento de comunicaciones a medida que los nuevos empleados se unen a su organización.
+Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que deba supervisar todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de cumplimiento de comunicaciones global para el grupo asignado. Esto le permite supervisar a miles de usuarios con una única directiva y mantener actualizada la directiva de cumplimiento de comunicaciones a medida que los nuevos empleados se unan a su organización.
 
-1. Cree un grupo de [distribución](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) dedicado para la directiva de cumplimiento de comunicaciones global con las siguientes propiedades: asegúrese de que este grupo de distribución no se usa para otros fines u otros servicios de Office 365.
+1. Cree un grupo de [distribución](/powershell/module/exchange/new-distributiongroup) dedicado para la directiva de cumplimiento de comunicaciones global con las siguientes propiedades: asegúrese de que este grupo de distribución no se usa para otros fines u otros servicios de Office 365.
 
     - **MemberDepartRestriction = Closed**. Garantiza que los usuarios no se puedan quitar del grupo de distribución.
     - **MemberJoinRestriction = Closed**. Garantiza que los usuarios no puedan agregarse al grupo de distribución.
@@ -150,7 +150,7 @@ Para administrar usuarios supervisados en grandes organizaciones empresariales, 
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. Seleccione un atributo personalizado de [Exchange sin usar para](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) realizar un seguimiento de los usuarios agregados a la directiva de cumplimiento de comunicaciones de su organización.
+2. Seleccione un atributo personalizado de [Exchange sin usar para](/Exchange/recipients/mailbox-custom-attributes) realizar un seguimiento de los usuarios agregados a la directiva de cumplimiento de comunicaciones de su organización.
 
 3. Ejecute el siguiente script de PowerShell en una programación periódica para agregar usuarios a la directiva de cumplimiento de comunicaciones:
 
@@ -169,8 +169,8 @@ Para administrar usuarios supervisados en grandes organizaciones empresariales, 
 
 Para obtener más información acerca de la configuración de grupos, vea:
 
-- [Crear y administrar grupos de distribución](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Información general sobre grupos de Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
+- [Crear y administrar grupos de distribución](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Introducción a los grupos de Microsoft 365](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Paso 4 (opcional): Comprobar que el inquilino de Yammer está en modo nativo
 
@@ -178,8 +178,8 @@ En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory
 
 Para obtener más información acerca de la configuración de Yammer en modo nativo, vea:
 
-- [Información general sobre el modo nativo de Yammer en Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
-- [Configurar su red de Yammer para el Modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+- [Información general sobre el modo nativo de Yammer en Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)
+- [Configurar su red de Yammer para el Modo nativo para Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Paso 5 (obligatorio): Crear una directiva de cumplimiento de comunicaciones
   
@@ -223,7 +223,7 @@ Para obtener más información acerca de la configuración de Yammer en modo nat
     - Elige si quieres habilitar clasificadores. Los clasificadores pueden detectar el idioma inapropiado y las imágenes enviadas o recibidas en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores *integrados:* Amenaza *,* blasfedad *,* acoso *dirigido,* imágenes para adultos, imágenes *racy* e *imágenes gory*.
 
       > [!CAUTION]
-      > Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debe quitar los procesos de negocio. Se recomienda usar en **su** lugar  los clasificadores integrados Amenaza, **Blasfez** y Hostigamiento dirigido.
+      > Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debe quitar los procesos de negocio. Se recomienda usar en **su** lugar  **los** clasificadores integrados Amenaza, Blasfez y Hostigamiento dirigido.
 
     - Definir el porcentaje de comunicaciones que se revisarán.
     
@@ -235,13 +235,13 @@ Para obtener más información acerca de la configuración de Yammer en modo nat
 
 ## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Paso 6 (opcional): Crear plantillas de aviso y configurar el anonimización de usuarios
 
-Si desea tener la opción de responder a una alerta de directiva enviando un aviso al usuario asociado, deberá crear al menos una plantilla de aviso en su organización. Los campos de plantilla de aviso se pueden editar antes de que se envíen como parte del proceso de corrección de alertas y se recomienda crear una plantilla de aviso personalizada para cada directiva de cumplimiento de comunicaciones.
+Si desea tener la opción de responder a una alerta de directiva enviando un aviso al usuario asociado, deberá crear al menos una plantilla de aviso en su organización. Los campos de plantilla de aviso son editables antes de que se envíen como parte del proceso de corrección de alertas y se recomienda crear una plantilla de aviso personalizada para cada directiva de cumplimiento de comunicaciones.
 
 También puedes habilitar la anonimización para los nombres de usuario mostrados al investigar coincidencias de directivas y tomar medidas en los mensajes.
 
 1. Inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de su organización de Microsoft 365.
 
-2. En el Centro de cumplimiento de Microsoft 365, vaya **a Cumplimiento de comunicaciones.**
+2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones.**
 
 3. Para configurar la anonimización de nombres de usuario, seleccione la **pestaña** Privacidad.
 
@@ -249,7 +249,7 @@ También puedes habilitar la anonimización para los nombres de usuario mostrado
 
 5. Haga clic en **Guardar**.
 
-6. Vaya a la **pestaña Plantillas de** aviso y, a continuación, seleccione Crear plantilla de **aviso.**
+6. Vaya a la pestaña **Plantillas de** aviso y, a continuación, seleccione Crear plantilla **de aviso.**
 
 7. En la **página Modificar una plantilla de aviso,** complete los siguientes campos:
 
@@ -263,13 +263,13 @@ También puedes habilitar la anonimización para los nombres de usuario mostrado
 
 ## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Paso 7 (opcional): Probar la directiva de cumplimiento de comunicaciones
 
-Después de crear una directiva de cumplimiento de comunicaciones, es una buena idea probarla para asegurarse de que la directiva aplica correctamente las condiciones definidas. Es posible que también desee probar las directivas de prevención de pérdida de datos [(DLP)](create-test-tune-dlp-policy.md) si las directivas de cumplimiento de comunicaciones incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas para que se activen de modo que se capturan las comunicaciones que desea probar.
+Después de crear una directiva de cumplimiento de comunicaciones, es una buena idea probarla para asegurarse de que la directiva aplica correctamente las condiciones definidas. También puede probar las directivas de prevención de pérdida de datos [(DLP)](create-test-tune-dlp-policy.md) si las directivas de cumplimiento de comunicaciones incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas para que se activen de modo que se capturan las comunicaciones que desea probar.
 
 Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 1. Abra un cliente de correo electrónico, Microsoft Teams o Yammer mientras ha iniciado sesión como un usuario supervisado definido en la directiva que desea probar.
 
-2. Envíe un correo electrónico, un chat de Microsoft Teams o un mensaje de Yammer que cumpla con los criterios definidos en la directiva de cumplimiento de comunicaciones. Esta prueba puede ser una palabra clave, un tamaño de datos adjuntos, un dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la directiva es demasiado restrictiva o demasiado lenienta.
+2. Envíe un mensaje de correo electrónico, chat de Microsoft Teams o Yammer que cumpla con los criterios definidos en la directiva de cumplimiento de comunicaciones. Esta prueba puede ser una palabra clave, un tamaño de datos adjuntos, un dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la directiva es demasiado restrictiva o demasiado lenienta.
 
     > [!NOTE]
     > Los mensajes de correo electrónico pueden tardar hasta 24 horas en procesarse completamente en una directiva. Las comunicaciones en plataformas de Microsoft Teams, Yammer y de terceros pueden tardar hasta 48 horas en procesarse completamente en una directiva.
@@ -282,4 +282,4 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 
-Para obtener más información sobre cómo investigar alertas de cumplimiento de comunicaciones, consulte Investigar y corregir alertas [de cumplimiento de comunicaciones.](communication-compliance-investigate-remediate.md)
+Para obtener más información sobre cómo investigar alertas de cumplimiento de comunicaciones, vea Investigar y corregir alertas de cumplimiento [de comunicaciones.](communication-compliance-investigate-remediate.md)

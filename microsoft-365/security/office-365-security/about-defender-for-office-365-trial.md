@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 70f5264671e16e5e7fb6138de055a7da942a57cf
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099815"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114900"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la versión de prueba de Microsoft Defender para Office 365
 
@@ -34,14 +34,14 @@ Microsoft Defender para Office 365 protege su organización contra las amenazas 
 - **Investigación de amenazas y capacidades de respuesta**: use las herramientas más avanzadas para investigar, entender, simular y evitar las amenazas.
 - **Investigación y respuestas automáticas**: ahorre tiempo y esfuerzo al investigar y mitigar amenazas.
 
-Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de probar las funcionalidades de Defender para Office 365 y configurarla solo requiere un par de clics. Una vez completada la configuración de prueba, todas las funciones de Defender para Office 365 Plan 1 y Plan 2 estarán disponibles en la organización durante un máximo de 90 días.
+Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de probar las funcionalidades de Defender para Office 365 y configurarla solo requiere un par de clics. Una vez completada la configuración de prueba, todas las funcionalidades de Defender para Office 365 Plan 1 y Plan 2 estarán disponibles en la organización durante un máximo de 90 días.
 
 > [!NOTE]
-> La configuración automatizada que se describe en este artículo se encuentra actualmente en versión preliminar pública y es posible que no esté disponible en su ubicación.
+> La configuración automatizada que se describe en este artículo se encuentra actualmente en la versión preliminar pública y es posible que no esté disponible en su ubicación.
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
-La versión de prueba de Defender para Office 365 está disponible durante 90 días y se puede iniciar para todos los usuarios. Para más información, vea <link to TOU>.
+La versión de prueba de Defender para Office 365 está disponible durante 90 días y se puede iniciar para todos los usuarios. Para obtener más información, vea los términos de uso de la versión de prueba de [Microsoft Defender para Office 365.](terms-of-use-defender-for-office-365-trial.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurar una versión de prueba de Defender para Office 365
 
@@ -63,7 +63,7 @@ Para iniciar o finalizar la prueba, debe ser miembro de los **roles** Administra
 
 Después de inscribirte en la versión de prueba, los cambios y las actualizaciones pueden tardar hasta 2 horas en estar disponibles. Además, los administradores deben cerrar sesión y volver a iniciarla para ver los cambios.
 
-Los administradores pueden deshabilitar la versión de prueba en cualquier momento yendo a la <> de prueba.
+Los administradores pueden deshabilitar la versión de prueba en cualquier momento yendo a la <> usuario.
 
 ## <a name="availability"></a>Disponibilidad
 
@@ -108,7 +108,7 @@ Las amplias capacidades de automatización y respuesta a incidentes amplían la 
 
 ### <a name="awareness-and-training"></a>Sensibilización y entrenamiento
 
-Las completas capacidades de simulación y aprendizaje, junto con las experiencias integradas dentro de las aplicaciones cliente, crean concienciación para los usuarios.
+Las completas capacidades de simulación y aprendizaje, junto con las experiencias integradas dentro de las aplicaciones cliente, crean el conocimiento de los usuarios.
 
 - [Introducción al uso de aprendizaje de simulación de ataques](attack-simulation-training-get-started.md)
 

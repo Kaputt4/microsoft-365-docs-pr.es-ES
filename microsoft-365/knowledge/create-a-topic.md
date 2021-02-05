@@ -1,9 +1,10 @@
 ---
-title: 'Crear un nuevo tema en Experiencias de tema (versión preliminar) '
-description: Cómo crear un nuevo tema en Experiencias de tema.
+title: Crear un nuevo tema en Temas de Microsoft Viva
+description: Cómo crear un nuevo tema en Temas de Microsoft Viva.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,61 +14,89 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976356"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107305"
 ---
-# <a name="create-a-new-topic-preview"></a>Crear un nuevo tema (versión preliminar)
+# <a name="create-a-new-topic"></a>Cree un equipo nuevo 
+
+En Temas Viva, puede crear un nuevo tema si no se detecta uno a través de la indización o si la tecnología de IA no encontró pruebas suficientes para establecerlo como un tema.
 
 > [!Note] 
-> El contenido de este artículo es para Project Cortex Private Preview. [Obtenga más información acerca del Project Cortex](https://aka.ms/projectcortex).
+> Aunque la información de un tema recopilado por la IA tiene recortes de [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la información de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
 
-En Experiencias de tema, puede crear un nuevo tema si no se ha detectado uno a través de la indización o si la tecnología de IA no encontró suficiente evidencia para establecerlo como un tema.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para crear un nuevo tema, debe:
-- Tener una licencia de Experiencias de tema.
-- Tener permisos para [**quién puede crear o editar temas.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Knowledge Network. 
+- Tener una licencia de Temas de Viva.
+- Tener permisos para [**quién puede crear o editar temas.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema Temas de Viva. 
 
 > [!Note] 
-> Los usuarios que tienen permiso para administrar temas en el Centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
+> Los usuarios que tienen permiso para administrar temas en el centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
 
 ## <a name="to-create-a-new-topic"></a>Para crear un tema nuevo:
 
-1. En la página Centro de temas, **seleccione Nuevo** y, a continuación, seleccione Página **de tema.** Si no puede ver la opción **Nuevo** en el Centro de temas, es posible que no tenga los permisos necesarios.
+1. En la **sección Nombre de este** tema, escriba el nombre del nuevo tema.
 
-    ![Nuevo tema](../media/knowledge-management/k-new-topic.png)
+    ![Asigne un nombre a este tema](../media/knowledge-management/k-new-topic-page.png) </br> 
 
-2. En la página de tema nuevo, puede rellenar la información de la nueva plantilla de tema:
 
-    - En la **sección Nombre de este** tema, escriba el nombre del nuevo tema.
+2. En la <b>sección Nombres</b> alternativos, escriba cualquier otro nombre al que se pueda hacer referencia al tema. 
+
+    ![Nombres alternativos](../media/knowledge-management/alt-names.png) </br> 
+3. En la <b>sección</b> Descripción, escriba un par de oraciones que describan el tema. 
+
+    ![Descripción del tema](../media/knowledge-management/description.png)</br>
+
+4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de</b> la lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
+ 
+    ![Personas ancladas](../media/knowledge-management/pinned-people.png)</br>
+
+
+5. En la sección de páginas <b>y archivos</b> anclados, puede agregar o "anclar" un archivo o página de sitio de SharePoint asociado al tema.
+
+   ![Páginas y archivos anclados](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    Para agregar un nuevo archivo, seleccione <b>Agregar</b>, seleccione el sitio de SharePoint de los sitios frecuentes o seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
+
+    También puede usar la opción <b>De un vínculo</b> para agregar un archivo o página proporcionando la dirección URL. 
+
+
+6.  La <b>sección Sitios relacionados</b> muestra los sitios que tienen información sobre el tema. 
+
+    ![Sección sitios relacionados](../media/knowledge-management/related-sites.png)</br>
+
+    Para agregar un sitio relacionado, seleccione Agregar y, a continuación, busque el sitio o selecciónelo en la lista de sitios frecuentes o recientes. <b></b></br>
     
-    - En la **sección Nombres alternativos,** escriba nombres o acrónimos que también se usan para hacer referencia al tema.
-    
-    - En la **sección Descripción** breve, escriba una o dos oraciones del tema. Este texto se usará para la tarjeta de tema asociada.
-    
-    - En la **sección** Personas, escriba los nombres de los expertos en la materia para el tema. Las personas que agregue manualmente al tema se mostrarán en la página del tema como **personas ancladas.**
-    
-    - En la **sección Archivos**  y páginas, seleccione Agregar y, a continuación, en la página siguiente, puede seleccionar archivos de OneDrive o páginas de SharePoint Online asociados.
-    
-    - En la **sección** Sitios, seleccione **Agregar**. En el  **panel** Sitios que se muestra, seleccione los sitios asociados al tema.
+    ![Seleccionar sitio](../media/knowledge-management/sites.png)</br>
 
-    ![Página de tema nuevo](../media/knowledge-management/k-new-topic-page.png)
-    
-3. Si necesita agregar otros componentes a la página, como texto, imágenes, elementos web, vínculos, etc., seleccione el icono del lienzo en medio de la página para buscarlos y agregarlos.
+7. La <b>sección Temas relacionados</b> muestra las conexiones que existen entre los temas. Puede agregar una conexión a otro tema seleccionando el botón Conectar a un tema relacionado y, <b>a</b> continuación, escribiendo el nombre del tema relacionado y seleccionándose en los resultados de la búsqueda. 
 
-    ![Agregar elementos a la página](../media/knowledge-management/static-icon.png)
+   ![Temas relacionados](../media/knowledge-management/related-topic.png)</br>  
 
-4. Cuando haya terminado, seleccione **Publicar para** publicar la página del tema. Las páginas de temas publicadas se mostrarán en la **pestaña** Páginas.
+    A continuación, puede proporcionar una descripción de cómo se relacionan los temas y seleccionar <b>Actualizar</b>.</br>
 
-Después de publicar el artículo, el nombre del tema, el nombre alternativo, la descripción y las personas ancladas se mostrarán a todos los usuarios con licencia que ven el artículo. Los archivos, las páginas y los sitios solo aparecerán en la página del tema si el visor tiene permisos de Office 365 para el elemento. 
+   ![Descripción de temas relacionados](../media/knowledge-management/related-topics-update.png)</br> 
 
-La nueva página de tema está hecha de elementos web que son conscientes *de la red de conocimiento.* Esto significa que a medida que AI recopila más información sobre el tema, la información de estos elementos web se actualizará con sugerencias para que la página sea más útil para los usuarios.
+   El tema relacionado que agregó se mostrará como un tema conectado.
+
+   ![Temas relacionados conectados](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+8. También puedes agregar elementos estáticos a la página (como texto, imágenes o vínculos) seleccionando el icono del lienzo, que puedes encontrar debajo de la breve descripción. Si lo selecciona, se abrirá el cuadro de herramientas de SharePoint desde el que puede elegir el elemento que desea agregar a la página.
+
+   ![Icono de lienzo](../media/knowledge-management/webpart-library.png)</br> 
+
+
+9. Seleccione **Publicar** para guardar los cambios. 
+
+Después de publicar la página, el nombre del tema, el nombre alternativo, la descripción y las personas ancladas se mostrarán a todos los usuarios con licencia que ven el tema. Los archivos, páginas y sitios específicos solo aparecerán en la página del tema si el visor tiene permisos de Office 365 para el elemento. 
+
+
 
 ## <a name="see-also"></a>Consulte también
 

@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926359"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114506"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo determinar si su organización puede 
 Para obtener más información sobre la administración de complementos después de la implementación, vea Administrar complementos [en el Centro de administración](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión a Microsoft 365 ni compatibilidad con complementos de SharePoint necesarios. Para que Outlook use el panel de control de Exchange para implementar en un entorno local sin conexión a Microsoft 365.
+>  Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión a Microsoft 365 o se requiere compatibilidad con complementos de SharePoint. Para que Outlook use el panel de control de Exchange para implementar en un entorno local sin conexión a Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar complementos de Office
 
@@ -61,14 +61,14 @@ Según el tamaño de la audiencia de destino, puede agregar o quitar pasos de im
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Implementar un complemento de Office con el Centro de administración
 
-Antes de empezar, vea Determinar si la implementación centralizada de complementos [funciona para su organización.](centralized-deployment-of-add-ins.md)
+Antes de empezar, vea Determinar si la implementación centralizada de complementos funciona [para su organización.](centralized-deployment-of-add-ins.md)
   
-1. En el centro de administración, vaya a **la** \> **página Complementos de** configuración. Si no ve la página **del** complemento,  vaya a la página Complementos de aplicaciones \>  \> **integradas de configuración.**
+1. En el centro de administración, vaya **a** la página \> **Complementos de configuración.** Si no ve la página **del** complemento,  vaya a la página Complementos de aplicaciones \>  \> **integradas de configuración.**
     
 2. Seleccione **Implementar complemento en** la parte superior de la página y, a continuación, seleccione **Siguiente**.
  
     > [!NOTE]
-    > El centro de administración se está actualizando a la experiencia de implementación con aplicaciones integradas. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo **a** Aplicaciones integradas  >  **de configuración.** En la parte superior de la **página Aplicaciones** **integradas,** elija Complementos.
+    > El centro de administración se está actualizando a la experiencia de implementación con aplicaciones integradas. Si no ves los pasos anteriores, ve a la sección Implementación centralizada yendo **a** Aplicaciones integradas  >  **de configuración.** En la parte superior de la **página Aplicaciones integradas,** elija **Complementos.**
     
 3. Seleccione una opción y siga las instrucciones.
   
@@ -136,7 +136,7 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
     
 - **Complemento de la Tienda Office:** si un administrador seleccionó un complemento de la Tienda Office y el complemento se actualiza en la Tienda Office, se actualizará más tarde en Implementación centralizada. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
   
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Obtén más información
 
 [Administrar complementos en el centro de administración](manage-addins-in-the-admin-center.md)
 
@@ -146,4 +146,4 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
   
 [Usar cmdlets de PowerShell de implementación centralizada para administrar complementos](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
-[Solución de problemas: el usuario no ve los complementos](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Solución de problemas: el usuario no ve complementos](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

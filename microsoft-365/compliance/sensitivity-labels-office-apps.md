@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web, y qué aplicaciones admiten etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 672d99ed4345ee27437cda66087de6e4e3f521bb
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: e9e3f73ad3756381a2ea6884d6ec65bc85063a10
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084595"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110023"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -35,11 +35,11 @@ Use la información de este artículo para ayudarle a administrar correctamente 
 
 Para usar etiquetas de confidencialidad integradas en las aplicaciones de escritorio de Office para Windows y Mac, debe usar una edición de suscripción de Office. Este cliente de etiquetado no admite ediciones independientes de Office, como Office 2016 u Office 2019.
 
-Para usar etiquetas de confidencialidad con estas ediciones independientes de Office en equipos windows, instale el cliente de etiquetado unificado [de Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)
+Para usar etiquetas de confidencialidad con estas ediciones independientes de Office en equipos Windows, instale el cliente de etiquetado unificado de [Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con funcionalidades de etiquetas de confidencialidad en aplicaciones
 
-Para cada funcionalidad, en las tablas siguientes se muestra la versión mínima de Office que necesita para admitir etiquetas de confidencialidad mediante el etiquetado integrado. O bien, si la funcionalidad de la etiqueta está en versión preliminar pública o en revisión para una versión futura. Use la guía [básica de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener más información sobre las versiones futuras.
+Para cada funcionalidad, en las tablas siguientes se muestra la versión mínima de Office que necesita para admitir etiquetas de confidencialidad mediante el etiquetado integrado. O bien, si la funcionalidad de la etiqueta está en versión preliminar pública o en revisión para una versión futura. Use la [guía básica de Microsoft 365](https://aka.ms/MIPC/Roadmap) para obtener más información sobre las versiones futuras.
 
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para obtener más información, incluido cómo configurar el canal de actualización para que pueda probar una nueva funcionalidad de etiquetado que le interesa, vea Información general sobre los canales de actualización de aplicaciones de [Microsoft 365.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Las nuevas funcionalidades que están en versión preliminar privada no se incluyen en la tabla, pero es posible que pueda unirse a estas vistas previas mediante la nominación de su organización para el programa de vista previa privada de [Microsoft Information Protection.](https://aka.ms/mip-preview)
 
@@ -122,7 +122,7 @@ Como alternativa, deshabilite o quite el complemento de Office, **Azure Informat
 
 Al deshabilitar o quitar este complemento de Office, el cliente de Azure Information Protection permanece instalado para que pueda seguir etiquetando archivos fuera de las aplicaciones de Office. Por ejemplo, mediante el Explorador de archivos o PowerShell.
 
-Para obtener información acerca de qué características son compatibles con los clientes de Azure Information Protection y el cliente de etiquetado integrado de Office, consulte La documentación de Azure Information Protection para elegir qué cliente de etiquetado usar para equipos [Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+Para obtener información sobre qué características son compatibles con los clientes de Azure Information Protection y el cliente de etiquetado integrado de Office, vea la documentación de Azure Information Protection para elegir qué cliente de etiquetado usar para equipos [Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
 
 ## <a name="office-file-types-supported"></a>Tipos de archivo de Office admitidos
 
@@ -159,7 +159,7 @@ Para una experiencia de etiquetas más coherente con informes significativos, pr
 
 - Para los casos de excepción en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que permiten a los usuarios [asignar sus propios permisos.](encryption-sensitivity-labels.md#let-users-assign-permissions) 
 
-- En lugar de quitar manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una sub-etiqueta alternativa cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Por ejemplo:
+- En lugar de quitar manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una alternativa de subetiqueta cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Por ejemplo:
     - **Confidencial \ Todos los empleados**
     - **Confidencial \ Cualquiera (sin cifrado)**
 
@@ -171,15 +171,15 @@ Para una experiencia de etiquetas más coherente con informes significativos, pr
 
 Los usuarios pueden aplicar solo una etiqueta a la vez para cada documento o correo electrónico.
 
-Al etiquetar un mensaje de correo electrónico que tiene datos adjuntos, los datos adjuntos no heredan la etiqueta con una excepción:
+Cuando etiqueta un mensaje de correo electrónico que tiene datos adjuntos, los datos adjuntos heredan la etiqueta solo si la etiqueta que se aplica al mensaje de correo electrónico aplica cifrado y los datos adjuntos son un documento de Office que aún no está cifrado. Dado que la etiqueta heredada aplica cifrado, los datos adjuntos se cifran recientemente.
 
-- Los datos adjuntos son un documento de Office con una etiqueta que no aplica cifrado y la etiqueta que se aplica al mensaje de correo electrónico aplica cifrado. En este caso, el documento de Office enviado por correo electrónico hereda la etiqueta del correo electrónico con su configuración de cifrado.
+Los datos adjuntos no heredan las etiquetas del mensaje de correo electrónico cuando la etiqueta aplicada al mensaje de correo electrónico no aplica cifrado o los datos adjuntos ya están cifrados.
 
-En caso contrario: 
+Ejemplos de herencia de etiquetas, donde la etiqueta **Confidencial** aplica cifrado y la etiqueta **General** no aplica cifrado:
 
-- Si los datos adjuntos tienen una etiqueta, mantienen su etiqueta aplicada originalmente.
-- Si los datos adjuntos se cifran sin una etiqueta, el cifrado permanece, pero no se etiquetan.
-- Si los datos adjuntos no tienen una etiqueta, permanecen sin etiquetar.
+- Un usuario crea un nuevo mensaje de correo electrónico y aplica la **etiqueta Confidencial** a este mensaje. A continuación, agregan un documento de Word que no está etiquetado ni cifrado. Como resultado de la herencia, el documento se acaba de etiquetar **Confidencial** y ahora se ha aplicado cifrado desde esa etiqueta.
+
+- Un usuario crea un nuevo mensaje de correo electrónico y aplica la **etiqueta Confidencial** a este mensaje. A continuación, agregan un documento de Word con la etiqueta **General** y este archivo no está cifrado. Como resultado de la herencia, el documento se vuelve a etiquetar como **Confidencial** y ahora se aplica cifrado desde esa etiqueta.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad de etiquetas de confidencialidad
 
@@ -217,7 +217,7 @@ Si los usuarios externos no tienen una cuenta en Azure Active Directory, pueden 
     
     La ventaja de esta opción es una sobrecarga administrativa mínima porque las cuentas se crean automáticamente y la configuración de etiquetas es más sencilla. Para este escenario, debe seleccionar la opción de cifrado [Agregar cualquier](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) usuario autenticado porque no conocerá las direcciones de correo electrónico por adelantado. La desventaja es que esta configuración no le permite restringir el acceso y los derechos de uso a usuarios específicos.
 
-Los usuarios externos también pueden usar una cuenta microsoft para documentos cifrados cuando usan Aplicaciones de Microsoft 365 (anteriormente aplicaciones de[Office 365)](https://docs.microsoft.com/deployoffice/name-change)en Windows y son compatibles recientemente con macOS (versión 16.42+), Android (versión 16.0.13029+) e iOS (versión 2.42+). Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica su dirección de correo electrónico de Gmail. Este usuario puede crear su propia cuenta de Microsoft que use su dirección de correo electrónico de Gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, según las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de tutorial de este escenario, vea [Abrir y editar el documento protegido.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
+Los usuarios externos también pueden usar una cuenta Microsoft para documentos cifrados cuando usan Aplicaciones de Microsoft 365 (anteriormente aplicaciones de[Office 365)](https://docs.microsoft.com/deployoffice/name-change)en Windows y son compatibles recientemente con macOS (versión 16.42+), Android (versión 16.0.13029+) e iOS (versión 2.42+). Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica su dirección de correo electrónico de Gmail. Este usuario puede crear su propia cuenta de Microsoft que use su dirección de correo electrónico de Gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, según las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de tutorial de este escenario, vea [Abrir y editar el documento protegido.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
 
 > [!NOTE]
 > La dirección de correo electrónico de la cuenta Microsoft debe coincidir con la dirección de correo electrónico especificada para restringir el acceso a la configuración de cifrado.
@@ -269,7 +269,7 @@ Al configurar una etiqueta de confidencialidad para los marcados de contenido, p
 | -------- | ----------- | ------- |
 | `${Item.Label}` | Nombre para mostrar de la etiqueta aplicada| **General**|
 | `${Item.Name}` | Nombre de archivo o asunto de correo electrónico del contenido que se va a etiquetar | **Sales.docx** |
-| `${Item.Location}` | Ruta de acceso y nombre de archivo del documento que se va a etiquetar, o el asunto de correo electrónico de un correo electrónico etiquetado. | **\\\Sales\2020\Q3\Report.docx**|
+| `${Item.Location}` | Ruta de acceso y nombre de archivo del documento que se va a etiquetar, o el asunto de correo electrónico de un correo electrónico etiquetado | **\\\Sales\2020\Q3\Report.docx**|
 | `${User.Name}` | Nombre para mostrar del usuario que aplica la etiqueta| **Richard Simón** |
 | `${User.PrincipalName}` | Nombre principal de usuario (UPN) de Azure AD del usuario que aplica la etiqueta | **rsimone \@ contoso.com** |
 | `${Event.DateTime}` | Fecha y hora en que se etiqueta el contenido, en la zona horaria local del usuario que aplica la etiqueta | **10/8/2020 13:30** |
@@ -279,7 +279,7 @@ Al configurar una etiqueta de confidencialidad para los marcados de contenido, p
 
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Establecer diferentes marcas visuales para Word, Excel, PowerPoint y Outlook
 
-Como variable adicional, puede configurar marcas visuales por tipo de aplicación de Office mediante una instrucción de variable "If.App" en la cadena de texto e identificar el tipo de aplicación con los valores **Word**, **Excel,** **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción If.App.
+Como variable adicional, puede configurar marcas visuales por tipo de aplicación de Office mediante una instrucción de variable "If.App" en la cadena de texto e identificar el tipo de aplicación con los valores **Word,** **Excel,** **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción If.App.
 
 > [!NOTE]
 > Para mayor integridad, se incluyen instrucciones para Outlook, aunque actualmente solo son compatibles con el cliente de etiquetado unificado de Azure Information Protection.

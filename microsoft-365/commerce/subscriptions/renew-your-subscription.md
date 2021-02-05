@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Obtenga información acerca de cómo renovar la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
-ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324309"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114614"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
 3. En la página Detalles de la suscripción, en **Configuración de suscripción y pago**, seleccione **Editar facturación periódica**.
-4. En el panel **Editar la configuración de facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez**o **Desactivar**.
+4. En el panel **Editar la configuración de facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez** o **Desactivar**.
 5. Seleccione **Guardar**.
 
     > [!NOTE]

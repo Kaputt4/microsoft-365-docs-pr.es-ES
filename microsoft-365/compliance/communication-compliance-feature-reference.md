@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7e76b7f694a5c2087cd77939b80bf9edf2f23e40
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: effe4bbcf381a717c03d9e3ace3ff7a7db8bd273
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066853"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110045"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de características de cumplimiento de comunicaciones
 
@@ -120,9 +120,9 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar los 
 
 Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams en los buzones de correo basados en la nube para los usuarios locales.
 
-- **Correo electrónico de Exchange:** todos los buzones hospedados en Exchange Online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los mensajes de correo electrónico y los datos adjuntos de Exchange que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de comunicaciones son los mismos que los tipos de archivo admitidos para las inspecciones de contenido de reglas [de flujo de correo de Exchange.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
+- **Correo electrónico de Exchange:** todos los buzones hospedados en Exchange Online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los mensajes de correo electrónico y los datos adjuntos de Exchange que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de comunicaciones son los mismos que los tipos de archivo admitidos para las inspecciones de contenido de reglas [de flujo de correo de Exchange.](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
 
-- **Yammer:** se pueden examinar los mensajes privados, las conversaciones públicas y los datos adjuntos asociados en las comunidades de Yammer. Cuando se agrega un usuario a la directiva de cumplimiento de comunicaciones que incluye Yammer como canal definido, las comunicaciones entre todas las comunidades de Yammer de las que el usuario es miembro se incluyen en el proceso de análisis. Los chats y datos adjuntos de Yammer que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Yammer debe estar en modo [nativo para que](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) las directivas de cumplimiento de comunicaciones supervisen las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
+- **Yammer:** se pueden examinar los mensajes privados, las conversaciones públicas y los datos adjuntos asociados en las comunidades de Yammer. Cuando se agrega un usuario a la directiva de cumplimiento de comunicaciones que incluye Yammer como canal definido, las comunicaciones entre todas las comunidades de Yammer de las que el usuario es miembro se incluyen en el proceso de análisis. Los chats y datos adjuntos de Yammer que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Yammer debe estar en modo [nativo para que](/yammer/configure-your-yammer-network/overview-native-mode) las directivas de cumplimiento de comunicaciones supervisen las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
 
 - **Skype Empresarial Online:** las comunicaciones de chat y los datos adjuntos asociados en Skype Empresarial Online se pueden supervisar. Los chats de Skype Empresarial Online que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Las conversaciones de chat supervisadas se encuentran en conversaciones [anteriores guardadas en Skype Empresarial Online.](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de usuario en Skype Empresarial Online:
 
@@ -290,7 +290,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar los men
 | **Fecha** | La fecha en que un usuario de la organización envió o recibió el mensaje. Para filtrar por un solo día, seleccione un intervalo de fechas que comience por el día para el que desea obtener los resultados y termine con el día siguiente. Por ejemplo, si desea filtrar los resultados del 20/9/2020, elegiría un intervalo de fechas de filtro del 20/9/2020-9/21/2020.|
 | **Clase de archivo** | La clase del mensaje en función del tipo de mensaje, ya sea *mensaje o* *datos adjuntos.* |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
-| **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensajes comunes, vea [Tipos de elementos y clases de mensajes.](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes) |
+| **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensajes comunes, vea [Tipos de elementos y clases de mensajes.](/office/vba/outlook/concepts/forms/item-types-and-message-classes) |
 | **Dominios de destinatario** | Dominio al que se envió el mensaje. Este dominio suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
 | **Recipient** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
@@ -338,7 +338,7 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alerta para u
 
 ## <a name="power-automate-flows"></a>Flujos de Power Automate
 
-[Microsoft Power Automate es](https://docs.microsoft.com/power-automate/getting-started) un servicio de flujo de trabajo que automatiza las acciones entre aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas a estas aplicaciones y servicios. Al habilitar los flujos de Power Automate para el cumplimiento de las comunicaciones, puede automatizar tareas importantes para alertas y usuarios. Puede configurar los flujos de Power Automate para notificar a los administradores cuando los usuarios tienen alertas de cumplimiento de comunicaciones y otras aplicaciones.
+[Microsoft Power Automate es](/power-automate/getting-started) un servicio de flujo de trabajo que automatiza las acciones entre aplicaciones y servicios. Mediante el uso de flujos de plantillas o creados manualmente, puede automatizar tareas comunes asociadas a estas aplicaciones y servicios. Al habilitar los flujos de Power Automate para el cumplimiento de las comunicaciones, puede automatizar tareas importantes para alertas y usuarios. Puede configurar los flujos de Power Automate para notificar a los administradores cuando los usuarios tienen alertas de cumplimiento de comunicaciones y otras aplicaciones.
 
 Los clientes con suscripciones de Microsoft 365 que incluyen cumplimiento de comunicaciones no necesitan licencias adicionales de Power Automate para usar la plantilla de Power Automate de cumplimiento de comunicaciones predeterminada recomendada. La plantilla predeterminada se puede personalizar para admitir su organización y cubrir los escenarios principales de cumplimiento de comunicaciones. Si decide usar las características premium de Power Automate en estas plantillas, crear una plantilla personalizada con el conector de cumplimiento de Microsoft 365 o usar plantillas de Power Automate para otras áreas de cumplimiento en Microsoft 365, es posible que necesite licencias adicionales de Power Automate.
 
@@ -450,7 +450,7 @@ Para ver las actividades de revisión de cumplimiento de  comunicaciones de una 
 | **Operations** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y separan por delimitadores de coma. |
 
-También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)
+También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog)
 
 Por ejemplo, en el siguiente ejemplo se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas):
 

@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones. '
-ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926239"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114194"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Agregar un icono personalizado en el iniciador de aplicaciones
 
-1. Inicie sesión en el centro de administración como administrador global, vaya a Configuración de la organización  >  y elija la pestaña **Perfil de** la organización.
+1. Inicie sesión en el centro de administración como administrador global, vaya a Configuración de la organización y  >  elija la pestaña **Perfil de** la organización.
     
 2. En la pestaña **Perfil de** organización, elija **Mosaicos personalizados del iniciador de aplicaciones.**
   
@@ -79,7 +79,7 @@ El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el centro de administración, vaya a la **pestaña** Configuración de la organización de  >  **configuración**  >  **de la organización.** </a>
+1. En el centro de administración, vaya a la **pestaña** Configuración del perfil de organización  >    >  **de configuración de la** </a> organización.
     
 2. En la **página Perfil de** la organización, junto a Agregar iconos   **personalizados para su organización,** seleccione **Editar**.
 
@@ -87,7 +87,7 @@ El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **
     
 4. Seleccione **Actualizar** \> **cerrar**. 
     
-Para eliminar un icono personalizado, en la **ventana Mosaicos** personalizados, seleccione el icono, **seleccione Eliminar**  >  **icono.** 
+Para eliminar un icono personalizado, en la **ventana Mosaicos** personalizados, seleccione el icono, seleccione **Eliminar**  >  **icono.** 
   
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 

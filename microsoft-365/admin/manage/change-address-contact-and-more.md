@@ -21,25 +21,25 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Obtenga información sobre cómo realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058440"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114230"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
   
 Puede realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono y el contacto técnico. **Debe ser un administrador global para actualizar esta información.**
   
-Para cambiar la dirección asociada a su factura o suscripción, consulte Cambiar las direcciones de facturación de [Microsoft 365 para empresas.](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+Para cambiar la dirección asociada a su factura o suscripción, consulte Cambiar las direcciones de facturación [de Microsoft 365 para empresas.](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 ## <a name="edit-organization-information"></a>Editar información de la organización
 
@@ -60,7 +60,7 @@ A continuación se proporciona una explicación de cada campo.
 
 |**Field**  |**Descripción**  |
 |---------|---------|
-|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Navegación de Yammer: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red de Yammer principal.  <br/> Cliente de sincronización de OneDrive: el nombre de la organización se muestra en el Explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el Centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no lo actualiza para los clientes configurados. <br/> MS Teams: el conmutador de organización en Teams muestra el nombre de la organización <br/>  |
+|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Navegación de Yammer: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red de Yammer principal.  <br/> Cliente de sincronización de OneDrive: el nombre de la organización se muestra en el Explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el Centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: el conmutador de organización en Teams muestra el nombre de la organización <br/>  |
 |Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección que se introduce aquí es la que verá en la factura, en "Vendido a": la dirección "Vendido a" de la factura es la misma que la dirección de su organización en la página de perfil (vea Comprender la factura de [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md)para empresas).  <br/>        |
 |País o región  <br/>    | Esto es el país o la región donde la compañía tiene su sede central. El país o la región que se seleccione determina los servicios disponibles, los impuestos y la moneda de facturación del país o la región, y la ubicación del centro de datos más cercano (vea las [restricciones de licencia de Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>NOTA: Una vez seleccionada, no se puede cambiar el país o la región. Si desea cambiar la selección, deberá cancelar la suscripción y registrarse de nuevo. Para obtener ayuda con este proceso, [póngase en contacto con el soporte técnico.](../contact-support-for-business-products.md)        |
 |Teléfono  <br/>     | Este es el número principal de la compañía. Por lo general, el número de la sede central de su empresa.  <br/>        |
@@ -75,11 +75,11 @@ Como administrador, puede cambiar su dirección de correo electrónico alternati
 
 2. En el encabezado, seleccione el icono de perfil y, a continuación, **seleccione Ver cuenta.**
 
-3. En la izquierda, seleccione Información **de seguridad.**
+3. A la izquierda, seleccione Información **de seguridad.**
 
 4. En la sección Correo electrónico, seleccione **Cambiar**
 
-5. Edite la dirección en el **cuadro De correo electrónico** alternativo y, a continuación, seleccione **Siguiente**.
+5. Edite la dirección en el **cuadro De correo electrónico** alternativo y, a continuación, seleccione **Siguiente.**
 
 6. Escriba el código enviado a la dirección de correo electrónico alternativa y seleccione **Aceptar** para comprobar el cambio.
 Para obtener información sobre cómo cambiar otra información de perfil, vea [Cambiar las preferencias de contacto](change-contact-preferences.md) o Cambiar el idioma para [mostrar.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)

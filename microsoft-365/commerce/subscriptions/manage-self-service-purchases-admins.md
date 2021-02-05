@@ -1,5 +1,5 @@
 ---
-title: Administración de las compras sin servicio (administradores)
+title: Administrar compras de autoservicio (administradores)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,105 +15,105 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 3e04f58c10b14aca8b356c064106b7107f144d91
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546679"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114698"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Como administrador, puede ver las compras de autoservicio realizadas por las personas de su organización. Verá el nombre del producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el precio de compra y los usuarios asignados para cada compra de servicio autónomo. Si la organización lo requiere, puede desactivar la opción de compra por parte del autoservicio por producto a través de PowerShell. Tiene las mismas directivas de administración y acceso de datos que los productos adquiridos a través de la compra de autoservicio o de forma centralizada.
+Como administrador, puede ver las compras de autoservicio realizadas por personas de su organización. Verá el nombre del producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el precio de compra y los usuarios asignados para cada compra de autoservicio. Si su organización lo requiere, puede desactivar las compras de autoservicio por producto a través de PowerShell. Tiene las mismas directivas de acceso y administración de datos en los productos comprados a través de la compra de autoservicio o de forma centralizada.
 
-También puede controlar si los usuarios de la organización pueden realizar compras sin servicio de asistencia. Para obtener más información, vea [usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce](allowselfservicepurchase-powershell.md).
+También puedes controlar si los usuarios de tu organización pueden realizar compras de autoservicio. Para obtener más información, [vea Usar AllowSelfServicePurchase para el módulo de PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
 
 ## <a name="view-self-service-subscriptions"></a>Ver suscripciones de autoservicio
 
-1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
-2. En la pestaña **productos** , seleccione el icono filtrar y, a continuación, seleccione **autoservicio**.
-3. Para ver más detalles sobre una suscripción, seleccione una de la lista.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+3. Para ver más detalles sobre una suscripción, elija una de la lista.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Ver quién tiene licencias para una suscripción de compra de autoservicio
 
-1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
-2. Seleccione el icono filtrar y, a continuación, elija **autoservicio**.
-3. Seleccione un producto para ver las licencias asignadas a los usuarios.
+1. En el centro de administración, vaya a la página  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias de</a> facturación.
+2. Seleccione el icono de filtro y, a continuación, **elija Autoservicio.**
+3. Seleccione un producto para ver las licencias asignadas a personas.
     > [!NOTE]
-    > Si hay varias compras para un producto, dicho producto solo aparece una vez y la columna **cantidad disponible** muestra el total de todas las suscripciones que ha comprado para ese producto.
-4. La lista de **usuarios** se agrupa por los nombres de las personas que realizaron compras sin servicio.
-5. Para exportar una lista de usuarios con licencias para estas suscripciones, elija las suscripciones que quiere exportar y, después, elija **exportar usuarios**.
+    > Si hay varias compras para un producto, ese producto  solo aparece una vez y la columna Cantidad disponible muestra el total de todas las suscripciones compradas para ese producto.
+4. La **lista** de usuarios se agrupa por los nombres de las personas que realizaron compras de autoservicio.
+5. Para exportar una lista de usuarios con licencias para estas suscripciones, elija las suscripciones que desea exportar y, a continuación, **elija Exportar usuarios.**
 
-## <a name="disable-or-enable-self-service-purchases"></a>Deshabilitación o habilitación de compras sin servicio
+## <a name="disable-or-enable-self-service-purchases"></a>Deshabilitar o habilitar compras de autoservicio
 
-Puede deshabilitar o habilitar las compras de autoservicio para los usuarios de su organización. El módulo de PowerShell **MSCommerce** incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras sin servicio y para qué productos.
+Puedes deshabilitar o habilitar compras de autoservicio para los usuarios de tu organización. El **módulo de PowerShell MSCommerce** incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que permite controlar si los usuarios de la organización pueden realizar compras de autoservicio y para qué productos.
 
-Puede usar el módulo de PowerShell **MSCommerce** para:
+Puede usar el módulo **de PowerShell MSCommerce** para:
 
-- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase** , ya sea que esté habilitado o deshabilitado por producto
-- Ver una lista de los productos aplicables y si la compra de servicios automáticos está habilitada o deshabilitada
+- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase,** independientemente de si está habilitado o deshabilitado por el producto
+- Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
-Para obtener más información, vea [usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce](allowselfservicepurchase-powershell.md).
+Para obtener más información, [vea Usar AllowSelfServicePurchase para el módulo de PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
 
 ## <a name="centralize-licenses-under-a-single-subscription"></a>Centralizar licencias en una sola suscripción
 
-Puede asignar licencias existentes o comprar suscripciones adicionales a través de acuerdos existentes para usuarios asignados a las compras de autoservicio. Después de asignar estas licencias adquiridas de forma centralizada, puede solicitar que los compradores cancelen sus suscripciones existentes.
+Puedes asignar licencias existentes o comprar suscripciones adicionales a través de contratos existentes para los usuarios asignados a compras de autoservicio. Después de asignar estas licencias compradas centralmente, puedes solicitar a los compradores que cancelen sus suscripciones existentes.
 
-1. En el centro de administración, vaya **Billing** a la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de facturación.
-2. Busque y seleccione el producto que desea comprar y, después, elija **comprar**.
+1. En el centro de administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
+2. Busque y elija el producto que desea comprar y, a continuación, **elija Comprar**.
 3. Complete los pasos restantes para completar la compra.
-4. Siga los pasos [que se indican en ver quién tiene licencias para una suscripción de autoservicio](#view-who-has-licenses-for-a-self-service-purchase-subscription) para exportar una lista de usuarios a la que hacer referencia en el siguiente paso.
-5. Asigne licencias a todos los usuarios que tengan una licencia en la otra suscripción. Para obtener los pasos completos, consulte [asignar licencias a usuarios](../../admin/manage/assign-licenses-to-users.md).
-6. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que la [cancele](manage-self-service-purchases-users.md#cancel-a-subscription).
+4. Siga los pasos descritos [en Ver](#view-who-has-licenses-for-a-self-service-purchase-subscription) quién tiene licencias para una suscripción comprada de autoservicio para exportar una lista de usuarios a los que hacer referencia en el paso siguiente.
+5. Asignar licencias a todos los usuarios que tienen una licencia en la otra suscripción. Para obtener los pasos [completos, vea Asignar licencias a los usuarios.](../../admin/manage/assign-licenses-to-users.md)
+6. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que [la cancele.](manage-self-service-purchases-users.md#cancel-a-subscription)
 
-## <a name="take-over-a-self-service-purchase-subscription"></a>Asumir una suscripción de compra de autoservicio
+## <a name="take-over-a-self-service-purchase-subscription"></a>Tomar el control de una suscripción de compra de autoservicio
 
-Puede asumir una suscripción de compra de autoservicio realizada por un usuario de la organización. Cuando asume una suscripción de compra de autoservicio, tiene dos opciones:
+Puede hacerse cargo de una suscripción de compra de autoservicio realizada por un usuario de su organización. Cuando se hace cargo de una suscripción de compra de autoservicio, tiene dos opciones:
 
-1. Mover a los usuarios a una suscripción diferente y cancelar la suscripción original.
-2. Cancelar la suscripción de compra de autoservicio y quitar las licencias de los usuarios asignados.
+1. Mueva los usuarios a otra suscripción y cancele la suscripción original.
+2. Cancele la suscripción de compra de autoservicio y quite las licencias de los usuarios asignados.
 
 ### <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
-Cuando se mueven usuarios a una suscripción diferente, la suscripción antigua se cancela automáticamente. El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.
+Cuando mueve usuarios a una suscripción diferente, la suscripción antigua se cancela automáticamente. El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.
 
 > [!NOTE]
-> Debe tener una licencia disponible para cada usuario que vaya a mover a la suscripción a la que va a mover usuarios.
+> Debe tener una licencia disponible para cada usuario al que se va a mover en la suscripción a la que va a mover a los usuarios.
 
-1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
-2. En la pestaña **productos** , seleccione el icono filtrar y, a continuación, seleccione **autoservicio**.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Seleccione la suscripción que desea asumir.
-4. En la sección **suscripciones y configuración** de la página Detalles de la suscripción, seleccione **asumir el control de esta suscripción**.
-5. En el panel derecho, seleccione **mover usuarios**.
-6. Seleccione el producto al que desea mover a los usuarios y, a continuación, seleccione **mover usuarios**.
-7. En el cuadro **mover usuarios a** , seleccione **mover usuarios**. El proceso de traslado puede durar varios minutos. No cierre el explorador mientras se ejecuta el proceso.
-8. Una vez finalizado el proceso de traslado, cierre el **Panel mover completado**.
-9. En la página Detalles de la suscripción, el **Estado de suscripción** de la suscripción comprada de autoservicio se muestra como **eliminado**.
+4. En la página de detalles de la suscripción, en la sección **Suscripciones** y configuración, seleccione **Tomar el control de esta suscripción.**
+5. En el panel derecho, seleccione **Mover usuarios.**
+6. Seleccione el producto al que desea mover los usuarios y, a continuación, **seleccione Mover usuarios.**
+7. En el **cuadro Mover usuarios a,** seleccione **Mover usuarios.** El proceso de movimiento puede tardar varios minutos. No cierre el explorador mientras se ejecuta el proceso.
+8. Cuando finalice el proceso de movimiento, cierre el **panel Mover completado.**
+9. En la página de detalles de la suscripción, el estado **de** la suscripción comprada por el autoservicio se muestra como **Eliminado.**
 
-### <a name="cancel-a-self-service-purchase-subscription"></a>Cancelación de una suscripción de compra de autoservicio
+### <a name="cancel-a-self-service-purchase-subscription"></a>Cancelar una suscripción de compra de autoservicio
 
 Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios con licencias pierden el acceso al producto. El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.
 
-1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
-2. En la pestaña **productos** , seleccione el icono filtrar y, a continuación, seleccione **autoservicio**.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Seleccione la suscripción que desea cancelar.
-4. En la sección **suscripciones y configuración** de la página Detalles de la suscripción, seleccione **asumir el control de esta suscripción**.
-5. En el panel derecho, seleccione **Cancelar suscripción**.
-6. Seleccione un motivo para su cancelación en la lista desplegable y, después, seleccione **Cancelar suscripción**.
-7. En el cuadro **¿está seguro de que desea cancelar?** , seleccione **Cancelar suscripción**.
+4. En la página de detalles de la suscripción, en la sección **Suscripciones** y configuración, seleccione **Tomar el control de esta suscripción.**
+5. En el panel derecho, seleccione **Cancelar suscripción.**
+6. Seleccione un motivo para la cancelación en la lista desplegable y, a continuación, **seleccione Cancelar suscripción.**
+7. En el **cuadro ¿Está seguro de que desea cancelar?** seleccione **Cancelar suscripción.**
 8. Cierre el panel derecho.
-9. En la página Detalles de la suscripción, el estado de la **suscripción** aparece como **eliminado**.
+9. En la página de detalles de la suscripción, el **estado de la** suscripción se muestra como **Eliminado.**
 
 ## <a name="need-help-contact-us"></a>¿Necesita ayuda? Póngase en contacto con nosotros.
 
-Para obtener preguntas comunes sobre las compras de autoservicio, consulte [preguntas más frecuentes](self-service-purchase-faq.md)sobre las compras sin ayuda.
+Para obtener preguntas comunes sobre las compras de autoservicio, consulta preguntas más frecuentes [sobre compras de autoservicio.](self-service-purchase-faq.md)
 
-Si tiene alguna pregunta o necesita ayuda con las compras de servicios de autoservicio, [póngase en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
+Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico.](../../admin/contact-support-for-business-products.md)

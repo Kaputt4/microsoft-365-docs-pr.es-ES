@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usar un script de PowerShell, que ejecute el cmdlet Search-UnifiedAuditLog, para buscar en el registro de auditoría. El script ha sido optimizado para entregar un conjunto grande (hasta 50 000) de registros de auditoría. El script exporta dichos registros a un archivo CSV que puede visualizar o transformar mediante Power Query en Excel.
-ms.openlocfilehash: a91a54a6c35f96b90df156eaf4bc9735c911fc11
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084710"
+ms.locfileid: "50094791"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usar un script de PowerShell para buscar en el registro de auditoría
 
@@ -149,7 +149,7 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`[DateTime]$start` y `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Especifica el intervalo de fechas para la búsqueda en el registro de auditoría. El script entregará registros de actividades de auditoría que tuvieron lugar entre del intervalo de fechas especificado. Por ejemplo, para entregar actividades realizadas en enero de 2021, puede utilizar una fecha de inicio de `"2021-01-01"` y una fecha de finalización de `"2021-01-31"` (asegúrese de escribir los valores entre comillas dobles) El valor de muestra del script entrega registros de actividades realizadas en las últimas 24 horas. Si no incluye una marca de tiempo en el valor, la marca de tiempo predeterminada es 12:00 AM (medianoche) en la fecha especificada.|
    |`$record`|"AzureActiveDirectory"|Especifica el tipo de registro de las actividades de auditoría (también llamadas *operaciones*) para buscar. Esta propiedad indica el servicio o la característica en la que se desencadenó una actividad. Para obtener una lista de los tipos de registro que puede usar para esta variable, consulte [Tipos de registro de auditoría](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Puede utilizar el nombre de tipo de registro o valor ENUM. <br/><br/>**Sugerencia:** Para obtener registros de auditoría para todos los tipos de registro, utilice el valor `$null` (sin usar comillas dobles).|
    |`$resultSize`|5000|Especifica el número de resultados entregados cada vez que el cmdlet **Search-UnifiedAuditLog** es llamado por el script (llamado *conjunto de resultados*). 5 000 es el valor máximo que admite el cmdlet. Deje este valor sin modificar.|
-   |`$intervalMinutes`|60|Para ayudar a superar el límite de 5000 registros obtenidos, esta variable toma el intervalo de datos que especificó y lo divide en intervalos de tiempo menores. Ahora, cada intervalo, y no el intervalo de fechas completo, está sujeto al límite de 5000 registros que se pueden obtener del comando. El valor predeterminado de 5000 registros por intervalo de 60 minuto dentro del intervalo de fechas debería bastar para la mayoría de las organizaciones. Sin embargo, si el script devuelve un error que dice `maximum results limitation reached`, reduzca el intervalo de tiempo (por ejemplo, a 30 minutos o incluso a 15) y, a continuación, vuelva a ejecutar el script.|
+   |`$intervalMinutes`|60|Para ayudar a superar el límite de 5000 registros obtenidos, esta variable toma el intervalo de datos que especificó y lo divide en intervalos de tiempo menores. Ahora, cada intervalo, y no el intervalo de fechas completo, está sujeto al límite del comando de 5000 resultados de registro. El valor predeterminado de 5000 registros por intervalo de 60 minutos dentro del intervalo de fechas debería bastar para la mayoría de las organizaciones. Sin embargo, si el script devuelve un error que dice `maximum results limitation reached`, reduzca el intervalo de tiempo (por ejemplo, a 30 minutos o incluso a 15 minutos) y vuelva a ejecutar el script.|
    ||||
 
    La mayoría de las variables enumeradas en la tabla anterior se corresponden con parámetros para el cmdlet **Search-UnifiedAuditLog**. Para obtener más información acerca de estos parámetros, consulte [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog).

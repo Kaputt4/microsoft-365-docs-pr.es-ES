@@ -24,24 +24,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Obtenga información sobre cómo actualizar sus direcciones de facturación para Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
-ms.openlocfilehash: d6083a170adddc6bd389e5f33a1050a7e048ad31
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Obtenga información sobre cómo actualizar las direcciones de facturación de Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico usada para recibir notificaciones de facturación.
+ms.openlocfilehash: a6019a72bff1e5f4a3d0e6fdc6bb8cf7b8344d26
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638488"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114876"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-La factura contiene tres direcciones:
+La factura o factura contiene tres direcciones:
   
 - **Dirección del solicitante** Su nombre y dirección de la empresa, como se muestra en el perfil de la organización.
 
@@ -53,75 +53,75 @@ En la mayoría de los casos, estas direcciones son las mismas. Si tiene que camb
   
 ::: moniker range="o365-worldwide"
 
-Para obtener más información acerca de su factura, consulte [ver su](view-your-bill-or-invoice.md) factura y [comprender su](understand-your-invoice2.md)factura.
+Para obtener más información sobre su factura, vea [Ver](view-your-bill-or-invoice.md) la factura y [Comprender la factura.](understand-your-invoice2.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Para obtener más información acerca de su factura, consulte [ver su](view-your-bill-or-invoice.md) factura y [comprender su factura orinvoice](understand-your-invoice2.md).
+Para obtener más información sobre su factura, vea [Ver](view-your-bill-or-invoice.md) la factura y [Comprender la factura.](understand-your-invoice2.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su factura u obtener Fapiaos para Office 365 operado por 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+Si usa Office 365 operado por 21Vianet en China, consulte Ver su factura u obtener Fapiaos para Office 365 operado por [21Vianet.](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)
 
 ::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Cambiar la dirección del solicitante
 
-1. En el centro de administración, vaya a **Billing** la \> Página cuentas de <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">facturación</a> de facturación.
+1. En el centro de administración, vaya a la página Cuentas **de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">facturación de</a> facturación.
 
-2. Seleccione **editar la información**de la cuenta de facturación.
+2. seleccione **Editar información de cuenta de facturación.**
 
-3. Actualice la información de la organización y seleccione **Guardar**.
+3. Actualice la información de su organización y, a **continuación, seleccione Guardar**.
   
 ## <a name="change-your-bill-to-address"></a>Cambiar la dirección de facturación
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Billing** la \> Página métodos de <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">pago</a> de facturación.
+1. En el centro de administración, vaya a la página **Métodos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">de pago de</a> facturación.
 
 2. Seleccione la tarjeta de crédito o cuenta bancaria que desea cambiar.
 
-3. En la página **detalles del método de pago** , seleccione **Editar**.
+3. En la **página Detalles del método de** pago, seleccione **Editar**.
 
-4. Actualice su dirección de facturación y, después, seleccione **Guardar** \> **listo**.
+4. Actualice la dirección de facturación y, a **continuación, seleccione Guardar** \> **listo.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
-2. Seleccione la suscripción que desea cambiar y, a continuación, seleccione **cambiar detalles de pago**.
+2. Seleccione la suscripción que desea cambiar y, a continuación, **seleccione Cambiar detalles de pago.**
 
     ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
   
-3. *Clientes de tarjetas de crédito y cuentas bancarias:*  En la página **cambiar detalles de pago** , seleccione la tarjeta de crédito o cuenta bancaria que desea actualizar, seleccione **editar detalles**, actualizar la dirección de facturación y, a continuación, seleccione **Enviar**.
+3. *Clientes de tarjetas de crédito y cuentas bancarias:*  En la **página Cambiar** detalles de pago, seleccione la tarjeta de crédito o cuenta bancaria que desea actualizar, seleccione Editar **detalles,** actualizar la dirección de facturación y, a continuación, **seleccione Enviar**.
   
     > [!NOTE]
-    > La capacidad para pagar por cuenta bancaria no está disponible en algunos países o regiones.
+    > La capacidad de pagar por cuenta bancaria no está disponible en algunos países o regiones.
 
-     *Clientes de factura:*  En la página **cambiar detalles de pago** , actualice su dirección de facturación y, después, haga clic en **Enviar**.
+     *Clientes de factura:*  En la **página Cambiar detalles de pago,** actualice la dirección de facturación y, a continuación, seleccione **Enviar**.
   
     > [!NOTE]
-    > La capacidad de pagar una factura por cheque no está disponible en algunos países o regiones.
+    > La capacidad de pagar una factura mediante cheque no está disponible en algunos países o regiones.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
-2. Seleccione la suscripción que desea cambiar y, a continuación, seleccione **cambiar detalles de pago**.
+2. Seleccione la suscripción que desea cambiar y, a continuación, **seleccione Cambiar detalles de pago.**
 
     ![The Payment method section of a Subscription card for a subscription that pays by invoice.](../../media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
   
-3. En la página **cambiar detalles de pago** , actualice su dirección de facturación y, después, haga clic en **Enviar**.
+3. En la **página Cambiar detalles de pago,** actualice la dirección de facturación y, a continuación, seleccione **Enviar**.
 
-    Puede [Change your payment method for Office 365 operated by 21Vianet](change-payment-method.md) (Cambiar el método de pago para Office 365 ofrecido por 21Vianet) de factura a pago en línea, o viceversa, mediante Alipay o China UnionPay.
+    Puede cambiar el método de pago de Office 365 operado por 21Vianet de factura a pago en línea con Alipay o China UnionPay, o viceversa.
 
 ::: moniker-end
 
@@ -129,50 +129,50 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
-3. En la página Detalles de la suscripción, en la sección **dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio**.
-4. En el panel **Editar dirección de uso del servicio** , actualice su dirección y, después, seleccione **Guardar**.
+3. En la página detalles de la suscripción, en la **sección Dirección de uso del** servicio, seleccione Editar dirección de uso del **servicio.**
+4. En el **panel Editar dirección de uso del** servicio, actualice la dirección y, a continuación, seleccione **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
-2. Seleccione la suscripción que desea cambiar, seleccione **más acciones**y, a continuación, elija **Editar dirección de uso del servicio**.
+2. Seleccione la suscripción que desea cambiar, seleccione **Más acciones** y, a continuación, elija Editar dirección de uso **del servicio.**
 
-    ![Se cierra el menú más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Cierre el menú Más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
-3. En el panel **editar la dirección de uso del servicio** , actualice su dirección y, después, haga clic en **Enviar**.
+3. En el **panel Editar la dirección de uso del** servicio, actualice la dirección y, a continuación, seleccione **Enviar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
-2. Seleccione la suscripción que desea cambiar, seleccione **más acciones**y, a continuación, elija **Editar dirección de uso del servicio**.
+2. Seleccione la suscripción que desea cambiar, seleccione **Más acciones** y, a continuación, elija Editar dirección de uso **del servicio.**
 
-    ![Se cierra el menú más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Cierre el menú Más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
-3. En el panel **editar la dirección de uso del servicio** , actualice su dirección y, después, haga clic en **Enviar**.
+3. En el **panel Editar la dirección de uso del** servicio, actualice la dirección y, a continuación, seleccione **Enviar**.
 
 ::: moniker-end
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Cambiar la dirección de correo electrónico alternativa a la que se envían las notificaciones de facturación
 
-De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
+De forma predeterminada, las notificaciones de facturación de su organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de su organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
   
-1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [obtenga información sobre cómo iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en Microsoft 365 con su cuenta de trabajo o escuela como administrador global. Obtenga información [sobre cómo iniciar sesión.](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
 
-2. Seleccione el **icono de usuario**y, a continuación, seleccione **mi cuenta**.
+2. Seleccione el **icono usuario y,** a continuación, **seleccione Mi cuenta.**
   
-3. Seleccione **información personal**.
+3. Seleccione **Información personal.**
   
-4. En el cuadro **detalles de contacto** , seleccione **Editar**.
+4. En el **cuadro Detalles del** contacto, seleccione **Editar**.
 
-5. En el cuadro **correo electrónico alternativo** , escriba la dirección de correo electrónico alternativa que quiera usar y, después, seleccione **Guardar**.
+5. En el **cuadro De correo** electrónico alternativo, escriba la dirección de correo electrónico alternativa que desea usar y, a continuación, seleccione **Guardar**.
   
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Cambiar la dirección de correo electrónico alternativa de otro administrador
 
@@ -192,13 +192,13 @@ También puede cambiar la dirección de correo electrónico alternativa de otros
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">notificaciones de facturación</a> de facturación.
+1. En el centro de administración, vaya a **la** página Notificaciones \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">de facturación de</a> facturación.
 
 ::: moniker-end
 
-2. En la página **notificaciones de facturación** , seleccione el administrador que desea cambiar.
+2. En la **página Notificaciones de facturación,** selecciona el administrador que quieras cambiar.
 
-3. En el panel **Editar roles de usuario** , escriba la dirección de correo electrónico alternativa que quiera usar y, después, seleccione **Guardar**.
+3. En el **panel Editar roles de** usuario, escriba la dirección de correo electrónico alternativa que desea usar y, a continuación, seleccione **Guardar**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
@@ -208,4 +208,4 @@ También puede cambiar la dirección de correo electrónico alternativa de otros
 
 [Pagar la suscripción](pay-for-your-subscription.md)
 
-[Suscripciones y facturación-ayuda para administradores](../index.yml)
+[Suscripciones y facturación: Ayuda para administradores](../index.yml)

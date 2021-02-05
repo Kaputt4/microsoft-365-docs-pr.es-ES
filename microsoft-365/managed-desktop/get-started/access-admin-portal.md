@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: d22cef41fb1d6dc3fde39681ad84edc510440b11
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068958"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110012"
 ---
 # <a name="access-the-admin-portal"></a>Acceder al portal de administración
 
@@ -59,9 +59,9 @@ Si necesita ayuda para asignar roles de Azure Active Directory, consulte Permiso
 > [!NOTE]
 > Las características de seguridad incluyen las comunicaciones relacionadas con la seguridad, la administración de contactos de seguridad, la administración de solicitudes de soporte técnico relacionadas con la seguridad y el acceso a informes relacionados con la seguridad. 
 
-### <a name="assigning-built-in-roles-to-administrators"></a>Asignación de roles integrados a los administradores
+### <a name="assigning-built-in-roles-to-user"></a>Asignación de roles integrados al usuario
 
-Para administrar los roles integrados, hay un grupo de seguridad para cada rol personalizado con el nombre "Roles de área de trabajo _modernos_- Nombre de rol" (por ejemplo, "Roles de área de trabajo modernos– Administrador de seguridad"). Para asignar usuarios a uno de estos grupos de seguridad, siga estos pasos:
+Para facilitar la administración de roles integrados, hay un grupo de seguridad para cada rol personalizado con el nombre "Roles de área de trabajo _modernos_- Nombre de rol" (por ejemplo, "Roles de área de trabajo modernos – Administrador de seguridad"). Para asignar usuarios a uno de estos grupos de seguridad, siga estos pasos:
 1.  Ve al portal de Microsoft Endpoint Manager.
 2.  Seleccione **Grupos** en el lado izquierdo.
 3.  Busque roles **de área de** trabajo modernas y, a continuación, seleccione el grupo asociado con el rol que desea asignar. 
@@ -71,3 +71,16 @@ Para administrar los roles integrados, hay un grupo de seguridad para cada rol p
 
 > [!NOTE]
 > Actualmente no se admite el anidamiento de grupos de seguridad para la asignación de roles. 
+
+### <a name="assigning-built-in-roles-to-groups"></a>Asignación de roles integrados a grupos
+
+Si necesita asignar uno o varios de los roles integrados a un grupo existente, siga estos pasos:
+1. Vaya a [portal.azure.com](https://portal.azure.com/).
+2. Buscar y abrir aplicaciones **de empresa.**
+3. Cambie el **filtro de tipo de** aplicación a Aplicaciones de _Microsoft_ y, a continuación, **seleccione Aplicar**.
+4. Busque y seleccione las API _de clientes de Modern Workplace._
+5. Seleccione **Usuarios y grupos en** el panel de la izquierda y, a continuación, seleccione + Agregar usuario o **grupo.**
+6. Busque el grupo que desee de **Usuarios y grupos.**
+7. Busque el rol aplicable en **Seleccionar un rol** y, a continuación, selecciónelo.
+8. Seleccione **Asignar**.
+ 

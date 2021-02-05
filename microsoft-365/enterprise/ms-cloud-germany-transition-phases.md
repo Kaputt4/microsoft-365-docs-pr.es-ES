@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: comprenda las acciones y los impactos de las fases de migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 0d508607877b86d6f6df6a6465fada67e385fba0
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029203"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110034"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland (general)
 
@@ -34,6 +34,26 @@ Las migraciones de inquilinos de Microsoft Cloud Deutschland a la región de Ale
 Las fases y sus acciones garantizan que los datos y experiencias críticos se migren a los servicios de Office 365. Después de agregar el inquilino a la cola de migración, cada carga de trabajo se completará como un conjunto de pasos que se ejecutan en el servicio back-end. Algunas cargas de trabajo pueden requerir acciones por parte del administrador (o usuario) o la migración puede afectar al uso de las fases que se ejecutan y se analizan en ¿Cómo se organiza la [migración?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
 Las secciones siguientes contienen acciones y efectos para las cargas de trabajo a medida que progresan a través de varias fases de la migración. Revise las tablas y determine qué acciones o efectos son aplicables a su organización. Asegúrese de que está preparado para ejecutar los pasos en las fases correspondientes según sea necesario. Si no se completan los pasos necesarios, se puede producir una interrupción del servicio y puede retrasar la finalización de la migración a los servicios de Office 365.
+
+## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (fase 4 de 9)
+
+| Pasos | Descripción | Se aplica a | Impacto |
+|:-------|:-----|:-------|:-------|
+| Se ha transición de SharePoint y OneDrive. | SharePoint y OneDrive se migran de Microsoft Cloud Deutschland a los servicios de Office 365 en esta fase. Se conservan las direcciones URL existentes de Microsoft Cloud Deutschland (por ejemplo, `contoso.sharepoint.de` ). Los tokens emitidos por Microsoft Cloud Deutschland u servicios de Office 365 son válidos durante la transición. | Clientes de SharePoint | - El contenido será de solo lectura durante dos breves períodos durante la migración. Durante este tiempo, espere un banner "no puede editar contenido" en SharePoint. <br><br> - El índice de búsqueda no se conservará y puede tardar hasta 10 días en volver a generarse. <br><br> - El contenido de SharePoint/OneDrive será de solo lectura durante dos breves períodos durante la migración. Los usuarios verán un banner "no se puede editar contenido" brevemente durante este tiempo. <br><br> - Es posible que el índice de búsqueda no esté disponible mientras se recompile el índice. Durante este período, es posible que las consultas de búsqueda no devuelvan resultados completos. <br><br> - Los sitios existentes se conservan. |
+|||||
+
+Consideraciones adicionales:
+
+- Cuando finalice la migración de SharePoint Online a la región alemana, se volverán a crear los índices de datos. Las características que dependen de los índices de búsqueda pueden verse afectadas mientras se completa la reindexación.
+
+- Si su organización aún usa flujos de trabajo de SharePoint 2010, ya no funcionarán después del 31 de diciembre de 2021. Los flujos de trabajo de SharePoint 2013 seguirán siendo compatibles, aunque desactivados de forma predeterminada para los nuevos inquilinos a partir del 1 de noviembre de 2020. Una vez completada la migración al servicio de SharePoint Online, le recomendamos que pase a Power Automate u otras soluciones compatibles.
+
+- Una vez completada la migración de OneDrive a la región alemana, se reconstruyen los índices de datos. Las características que dependen de índices de búsqueda pueden verse afectadas mientras la reindexación está en curso.
+
+- Los clientes de Microsoft Cloud Deutschland cuya instancia de SharePoint Online aún no se ha migrado deben permanecer en el módulo de PowerShell de SharePoint Online/Microsoft.SharePointOnline.CSOM versión 16.0.20616.12000 o inferior. De lo contrario, se producirá un error en las conexiones a SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente.
+
+- Los clientes de Microsoft Cloud Deutschland cuya instancia de SharePoint Online se migra deben actualizar el módulo de PowerShell de SharePoint Online/Microsoft.SharePointOnline.CSOM a la versión 16.0.20717.12000 o posterior. De lo contrario, se producirá un error en las conexiones a SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente.
+
 
 ## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (fase 5 de 9)
 
@@ -48,7 +68,7 @@ Consideraciones adicionales:
 
 - Se pedirá a los usuarios de Outlook Web App que tienen acceso a un buzón compartido en el otro entorno (por ejemplo, un usuario del entorno de Alemania tiene acceso a un buzón compartido en el entorno global) para que se autentiquen por segunda vez. El usuario debe autenticarse primero y tener acceso a su buzón en y, a continuación, abrir el buzón `outlook.office.de` compartido que se encuentra en `outlook.office365.com` . Necesitarán autenticarse una segunda vez al obtener acceso a los recursos compartidos hospedados en el otro servicio.
 
-- Para los clientes existentes de Microsoft Cloud Deutschland o los que están en transición, cuando se agrega un buzón compartido a Outlook mediante Archivo **> Información >** Agregar cuenta, es posible que se fallen los permisos de calendario (el cliente de Outlook intenta usar la API de `https://outlook.office.de/api/v2.0/Me/Calendars` Rest). Los clientes que quieran agregar una cuenta para ver los permisos de calendario pueden agregar la clave del Registro tal como se describe en Cambios en la experiencia del usuario para compartir un calendario en [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) con el fin de garantizar que esta acción se realice correctamente. Esta clave del Registro se puede implementar en toda la organización mediante la directiva de grupo.
+- Para los clientes existentes de Microsoft Cloud Deutschland o los que están en transición, cuando se agrega un buzón compartido a Outlook mediante Archivo **> Información >** Agregar cuenta, puede producirse un error al ver los permisos del calendario (el cliente de Outlook intenta usar la API de `https://outlook.office.de/api/v2.0/Me/Calendars` Rest). Los clientes que quieran agregar una cuenta para ver los permisos de calendario pueden agregar la clave del Registro tal como se describe en Cambios en la experiencia del usuario para compartir un calendario en [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) con el fin de garantizar que esta acción se realice correctamente. Esta clave del Registro se puede implementar en toda la organización mediante la directiva de grupo.
 
 - Durante la fase de migración, el uso de los cmdlets de PowerShell **New-migrationEndpoint**, **Set-MigrationEndpoint** y **Test-MigrationsServerAvailability** puede provocar errores (error en el proxy). Esto sucede cuando el buzón de arbitraje se ha migrado a todo el mundo, pero el buzón de administración no lo ha hecho o viceversa. Para resolver esto, al crear la sesión de PowerShell del inquilino, use el buzón de arbitraje como sugerencia de enrutamiento en **ConnectionUri**. Por ejemplo: `New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid?email=Migration.8f3e7716-2011-43e4-96b1-aba62d229136@TENANT.onmicrosoft.de" -Credential $UserCredential -Authentication Basic -AllowRedirection`
 
@@ -64,27 +84,9 @@ Las características back-end de Exchange Online Protection (EOP) se copian en l
 
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| Migración del enrutamiento de Exchange Online y detalles históricos de mensajes. | Exchange Online permite el enrutamiento desde hosts externos a Office 365. Los registros MX externos se transiciónn para enrutar al servicio EOP. Se migran la configuración del espacio empresarial y los detalles históricos. | Clientes de Exchange Online | - Las entradas DNS administradas por Microsoft se actualizan de Office 365 Germany EOP a los servicios de Office 365. <br><br> - Los clientes deben esperar 30 días después de la escritura dual de EOP para la migración de EOP. De lo contrario, puede haber una pérdida de datos. |
+| Migración del enrutamiento de Exchange Online y detalles históricos de los mensajes. | Exchange Online permite el enrutamiento desde hosts externos a Office 365. Los registros MX externos se transiciónn para enrutar al servicio EOP. Se migran la configuración del espacio empresarial y los detalles históricos. | Clientes de Exchange Online | - Las entradas DNS administradas por Microsoft se actualizan de Office 365 Germany EOP a los servicios de Office 365. <br><br> - Los clientes deben esperar 30 días después de la escritura dual de EOP para la migración de EOP. De lo contrario, puede haber una pérdida de datos. |
 |||||
 
-## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (fase 4 de 9)
-
-| Pasos | Descripción | Se aplica a | Impacto |
-|:-------|:-----|:-------|:-------|
-| Se ha transición de SharePoint y OneDrive. | SharePoint y OneDrive se migran de Microsoft Cloud Deutschland a los servicios de Office 365 en esta fase. Se conservan las direcciones URL existentes de Microsoft Cloud Deutschland (por ejemplo, `contoso.sharepoint.de` ). Los tokens emitidos por Microsoft Cloud Deutschland u servicios de Office 365 son válidos durante la transición. | Clientes de SharePoint | - El contenido será de solo lectura durante dos breves períodos durante la migración. Durante este tiempo, espere un banner "no puede editar contenido" en SharePoint. <br><br> - El índice de búsqueda no se conservará y puede tardar hasta 10 días en volver a generarse. <br><br> - El contenido de SharePoint/OneDrive será de solo lectura durante dos breves períodos durante la migración. Los usuarios verán un banner "no se puede editar contenido" brevemente durante este tiempo. <br><br> - Es posible que el índice de búsqueda no esté disponible mientras se recompile el índice. Durante este período, es posible que las consultas de búsqueda no devuelvan resultados completos. <br><br> - Los sitios existentes se conservan. |
-|||||
-
-Consideraciones adicionales:
-
-- Cuando finalice la migración de SharePoint Online a la región alemana, se volverán a crear los índices de datos. Las características que dependen de los índices de búsqueda pueden verse afectadas mientras se completa la reindexación.
-
-- Si su organización aún usa flujos de trabajo de SharePoint 2010, ya no funcionarán después del 31 de diciembre de 2021. Los flujos de trabajo de SharePoint 2013 seguirán siendo compatibles, aunque desactivados de forma predeterminada para los nuevos inquilinos a partir del 1 de noviembre de 2020. Una vez completada la migración al servicio de SharePoint Online, se recomienda pasar a Power Automate u otras soluciones compatibles.
-
-- Una vez completada la migración de OneDrive a la región alemana, se reconstruyen los índices de datos. Las características que dependen de índices de búsqueda pueden verse afectadas mientras la reindexación está en curso.
-
-- Los clientes de Microsoft Cloud Deutschland cuya instancia de SharePoint Online aún no se ha migrado deben permanecer en el módulo de PowerShell de SharePoint Online/Microsoft.SharePointOnline.CSOM versión 16.0.20616.12000 o posterior. De lo contrario, se producirá un error en las conexiones a SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente.
-
-- Los clientes de Microsoft Cloud Deutschland cuya instancia de SharePoint Online se migra deben actualizar el módulo de PowerShell de SharePoint Online/Microsoft.SharePointOnline.CSOM a la versión 16.0.20717.12000 o posterior. De lo contrario, se producirá un error en las conexiones a SharePoint Online a través de PowerShell o el modelo de objetos del lado cliente.
 
 
 ## <a name="skype-for-business-online-phase-7-of-9"></a>Skype Empresarial Online (fase 7 de 9)

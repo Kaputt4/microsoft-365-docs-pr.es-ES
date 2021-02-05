@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea agregar nuevas soluciones al centro de cumplimiento, actualizar las características existentes en función de sus comentarios o implementar documentación actualizada, Microsoft 365 le ayuda a mantenerse al día del cambiante panorama de cumplimiento. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066823"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113979"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -79,7 +79,7 @@ El grupo [de roles administración de](get-started-with-records-management.md#pe
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-- [Etiquetar automáticamente los datos en Azure Purview (versión preliminar).](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label) Ahora puede crear y aplicar automáticamente etiquetas de confidencialidad a los activos de Azure Purview, como archivos de Azure Blob Storage y columnas de base de datos en SQL Server.
+- [Etiquetar automáticamente los datos en Azure Purview (versión preliminar).](https://docs.microsoft.com/azure/purview/create-sensitivity-label) Ahora puede crear y aplicar automáticamente etiquetas de confidencialidad a los activos de Azure Purview, como archivos de Azure Blob Storage y columnas de base de datos en SQL Server.
 - [Requerir que los usuarios apliquen una etiqueta a los elementos](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Esta nueva opción, también conocida como "etiquetado obligatorio", requiere que los usuarios elijan y apliquen una etiqueta de confidencialidad en los escenarios específicos.
 
 ## <a name="november-2020"></a>Noviembre de 2020
@@ -159,7 +159,7 @@ Vea el vídeo siguiente para obtener información sobre cómo el Administrador d
 - [Flujos de Power Automate](insider-risk-management-settings.md#power-automate-flows-preview). Configura flujos para automatizar tareas importantes para casos y usuarios, como recuperar información de usuario, alerta e caso para compartir con las partes interesadas y otras aplicaciones, automatizar acciones como publicar notas de casos y mucho más.
 - [Explorador de actividades](insider-risk-management-alerts.md#activity-explorer-preview). Disponible al revisar alertas, el explorador de actividades proporciona a los investigadores y analistas una herramienta analítica completa para profundizar en cada alerta. Revise rápidamente una escala de tiempo de actividad de riesgo detectada e identifique y filtre todas las actividades de riesgo asociadas con las alertas.
 
-### <a name="retention-policies-and-retention-labels"></a>Directivas y etiquetas de retención
+### <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
 
 - [Compatibilidad con Yammer](retention-policies-yammer.md). Ahora puede usar directivas de retención para retener y eliminar mensajes de la comunidad de Yammer y mensajes privados.
 - [Aplicar etiquetas a las grabaciones de reuniones de Teams.](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings) Al crear una directiva de etiquetado automático, use el editor de consultas de palabras clave para identificar las grabaciones de reuniones de Teams almacenadas en las cuentas de OneDrive de los usuarios o en SharePoint.
