@@ -1,22 +1,22 @@
-- name: Empieza con experiencias temáticas
+- name: Introducción a Microsoft Viva
   items:
-    - name: Introducción a las experiencias temáticas
+    - name: Introducción a Microsoft Viva
       href: index.md
-    - name: Información general de las experiencias temáticas
+    - name: Información general de Microsoft Viva
       href: topic-experiences-overview.md
-    - name: Descubrir experiencias temáticas y conservar
+    - name: Detección y conservación de Microsoft Viva
       href: topic-experiences-discovery-curation.md
-    - name: Roles de las experiencias temáticas
+    - name: Roles de Microsoft Viva
       href: topic-experiences-roles.md
     - name: Preparar el entorno
       href: topic-experiences-get-ready.md
 - name: Configuración y administración
   items:
-    - name: Seguridad por tema
+    - name: Seguridad de Temas
       href: topic-experiences-security-privacy.md
-    - name: Plan de las experiencias temáticas
+    - name: Planear Temas
       href: plan-topic-experiences.md
-    - name: Configurar las experiencias temáticas
+    - name: Configurar Temas
       href: set-up-topic-experiences.md
     - name: Administrar el descubrimiento por temas
       href: topic-experiences-discovery.md
@@ -38,6 +38,8 @@
       href: edit-a-topic.md
     - name: Reducción de seguridad
       href: topic-experiences-security-trimming.md
+    - name: Buscar temas
+      href: search.md
 - name: Adopción
   items:
     - name: Introducción a la adopción guiada

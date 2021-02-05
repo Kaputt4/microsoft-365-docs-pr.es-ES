@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros.
-ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032571"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109939"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisitos normativos para la gobernanza de información y la administración de registros
 
@@ -34,7 +34,7 @@ Puede descargar esos recursos en la página [Recursos de protección de datos, p
 
 **Microsoft 365 ayuda a satisfacer las obligaciones de cumplimiento de la Ley de Registros Públicos de Nueva Zelanda** - [Descargar](https://aka.ms/NZPRA)
 
-Cargas de trabajo aplicables: SharePoint, OneDrive, Teams, Exchange y Skype Empresarial
+Cargas de trabajo aplicables: SharePoint, OneDrive, Teams y Exchange
 
 Publicado en enero de 2021, este informe se elaboró en colaboración con Microsoft Nueva Zelanda para evaluar las capacidades de los servicios de Microsoft 365 para registrar, almacenar y administrar los requisitos de los registros electrónicos, tal y como se especifica en: 
 
