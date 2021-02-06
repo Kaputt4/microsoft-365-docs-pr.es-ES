@@ -1,5 +1,5 @@
 ---
-title: Usuarios invitados en el centro de administración de 365 de Microsoft
+title: Usuarios invitados en el Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -15,51 +15,50 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo se rellena la lista de usuarios invitados en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 338b86d7f32eb2a2ecbacc3d7d1e00124c3804e4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: Obtenga información sobre cómo se rellena la lista de usuarios invitados en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 7610e22be5cf229c9c0b71dd1282f8138452fe67
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751441"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126098"
 ---
-# <a name="guest-users-in-microsoft-365-admin-center"></a><span data-ttu-id="d7d19-103">Usuarios invitados en el centro de administración de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="d7d19-103">Guest users in Microsoft 365 admin center</span></span>
+# <a name="guest-users-in-microsoft-365-admin-center"></a><span data-ttu-id="b18b8-103">Usuarios invitados en el Centro de administración de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="b18b8-103">Guest users in Microsoft 365 admin center</span></span>
 
-<span data-ttu-id="d7d19-104">Los invitados que agregue a Microsoft Teams, SharePoint o Azure Active Directory también se agregan a la lista de **usuarios invitados** en el centro de administración de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d7d19-104">Any guests you add to your Microsoft Teams, SharePoint, or Azure Active Directory are also added to the **Guest users** list in the Microsoft admin center.</span></span> <span data-ttu-id="d7d19-105">Los invitados pueden asistir a reuniones, ver los documentos y chatear en los equipos a los que están invitados.</span><span class="sxs-lookup"><span data-stu-id="d7d19-105">Guests can attend meetings, view documents and chat in Teams they're invited to.</span></span>
-<span data-ttu-id="d7d19-106">Una vez que un usuario se muestra en la lista de **usuarios invitados** , puede quitar el acceso a él.</span><span class="sxs-lookup"><span data-stu-id="d7d19-106">Once a user shows up in the **Guest users** list, you can remove their access there.</span></span>
+<span data-ttu-id="b18b8-104">Los invitados que agregue a Microsoft Teams, SharePoint o Azure  Active Directory también se agregarán a la lista de usuarios invitados en el Centro de administración de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b18b8-104">Any guests you add to your Microsoft Teams, SharePoint, or Azure Active Directory are also added to the **Guest users** list in the Microsoft admin center.</span></span> <span data-ttu-id="b18b8-105">Los invitados pueden asistir a reuniones, ver documentos y chatear en Teams al que están invitados.</span><span class="sxs-lookup"><span data-stu-id="b18b8-105">Guests can attend meetings, view documents and chat in Teams they're invited to.</span></span>
+<span data-ttu-id="b18b8-106">Una vez que un usuario aparece en la **lista de usuarios invitados,** puede quitar su acceso allí.</span><span class="sxs-lookup"><span data-stu-id="b18b8-106">Once a user shows up in the **Guest users** list, you can remove their access there.</span></span>
 
-<span data-ttu-id="d7d19-107">Para ver los usuarios invitados, en el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **usuarios** y, a continuación, elija **usuarios invitados**.</span><span class="sxs-lookup"><span data-stu-id="d7d19-107">To view guest users, in the Microsoft 365 admin center, in the left nav, expand **Users**, and then choose **Guest users**.</span></span>
+<span data-ttu-id="b18b8-107">Para ver usuarios invitados, en el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, expanda Usuarios **y,** a continuación, elija **Usuarios invitados.**</span><span class="sxs-lookup"><span data-stu-id="b18b8-107">To view guest users, in the Microsoft 365 admin center, in the left nav, expand **Users**, and then choose **Guest users**.</span></span>
 
-## <a name="add-guests-to-teams"></a><span data-ttu-id="d7d19-108">Agregar invitados a Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="d7d19-108">Add guests to Teams</span></span>
+## <a name="add-guests-to-teams"></a><span data-ttu-id="b18b8-108">Agregar invitados a Teams</span><span class="sxs-lookup"><span data-stu-id="b18b8-108">Add guests to Teams</span></span>
 
-<span data-ttu-id="d7d19-109">Para ver cómo agregar un invitado a Teams, vea el siguiente vídeo:</span><span class="sxs-lookup"><span data-stu-id="d7d19-109">To see how to add a guest to Teams, see the following video:</span></span> <br><br>
+<span data-ttu-id="b18b8-109">Para ver cómo agregar un invitado a Teams, vea el siguiente vídeo:</span><span class="sxs-lookup"><span data-stu-id="b18b8-109">To see how to add a guest to Teams, see the following video:</span></span> <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-## <a name="join-a-team-as-a-guest"></a><span data-ttu-id="d7d19-110">Unirse a un equipo como invitado</span><span class="sxs-lookup"><span data-stu-id="d7d19-110">Join a team as a guest</span></span>
+## <a name="join-a-team-as-a-guest"></a><span data-ttu-id="b18b8-110">Unirse a un equipo como invitado</span><span class="sxs-lookup"><span data-stu-id="b18b8-110">Join a team as a guest</span></span>
 
-<span data-ttu-id="d7d19-111">Para unirse a un equipo como invitado, vea el siguiente vídeo:</span><span class="sxs-lookup"><span data-stu-id="d7d19-111">To join a team as a guest, see the following video:</span></span><br><br>
+<span data-ttu-id="b18b8-111">Para unirse a un equipo como invitado, vea el siguiente vídeo:</span><span class="sxs-lookup"><span data-stu-id="b18b8-111">To join a team as a guest, see the following video:</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
-## <a name="add-guests-in-azure-active-directory"></a><span data-ttu-id="d7d19-112">Agregar invitados en Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="d7d19-112">Add guests in Azure Active Directory</span></span>
+## <a name="add-guests-in-azure-active-directory"></a><span data-ttu-id="b18b8-112">Agregar invitados en Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="b18b8-112">Add guests in Azure Active Directory</span></span>
 
-<span data-ttu-id="d7d19-113">Para agregar invitados a Azure Active Directory, consulte [Add guestd users](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).</span><span class="sxs-lookup"><span data-stu-id="d7d19-113">To add guests in the Azure Active Directory, see [add guest users](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).</span></span>
+<span data-ttu-id="b18b8-113">Para agregar invitados en Azure Active Directory, vea [agregar usuarios invitados.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)</span><span class="sxs-lookup"><span data-stu-id="b18b8-113">To add guests in the Azure Active Directory, see [add guest users](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).</span></span>
 
-<span data-ttu-id="d7d19-114">Después de agregar a un usuario, también puede asignarlos a un grupo o darles acceso a una aplicación de su organización.</span><span class="sxs-lookup"><span data-stu-id="d7d19-114">After you add a user you can also assign them to a group, or give them access to an app in your organization.</span></span> <span data-ttu-id="d7d19-115">Una vez que haya agregado un usuario en el portal de Azure AD, dicho usuario también aparecerá en la página **usuarios invitados** del centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="d7d19-115">Once you have added a user in the Azure AD portal, that user will also be listed on the **Guest users** page in the Microsoft 365 admin center.</span></span>
-<span data-ttu-id="d7d19-116">Una vez que un usuario se agrega a la lista de **usuarios invitados** , se puede [Agregar a los grupos](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) del centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="d7d19-116">After a user is added to the **Guest users** list, they can be [added to Groups](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="b18b8-114">Después de agregar un usuario, también puedes asignarlo a un grupo o darle acceso a una aplicación de la organización.</span><span class="sxs-lookup"><span data-stu-id="b18b8-114">After you add a user you can also assign them to a group, or give them access to an app in your organization.</span></span> <span data-ttu-id="b18b8-115">Una vez que haya agregado un usuario en el portal de  Azure AD, ese usuario también aparecerá en la página Usuarios invitados en el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b18b8-115">Once you have added a user in the Azure AD portal, that user will also be listed on the **Guest users** page in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="b18b8-116">Después de agregar un  usuario a la lista [](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) de usuarios invitados, se puede agregar a grupos en el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b18b8-116">After a user is added to the **Guest users** list, they can be [added to Groups](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="d7d19-117">Consulte [Agregar invitados de forma masiva](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) para invitar a varios invitados a colaborar con su organización.</span><span class="sxs-lookup"><span data-stu-id="d7d19-117">See [add guests in bulk](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.</span></span>
+<span data-ttu-id="b18b8-117">Vea [agregar invitados de forma masiva](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) para invitar a varios invitados a colaborar con su organización.</span><span class="sxs-lookup"><span data-stu-id="b18b8-117">See [add guests in bulk](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.</span></span>
 
 
-## <a name="remove-a-guest"></a><span data-ttu-id="d7d19-118">Quitar un invitado</span><span class="sxs-lookup"><span data-stu-id="d7d19-118">Remove a guest</span></span>
+## <a name="remove-a-guest"></a><span data-ttu-id="b18b8-118">Quitar un invitado</span><span class="sxs-lookup"><span data-stu-id="b18b8-118">Remove a guest</span></span>
 
-1. <span data-ttu-id="d7d19-119">En el centro de administración de Microsoft 365, expanda **usuarios** y, a continuación, elija **usuarios invitados**.</span><span class="sxs-lookup"><span data-stu-id="d7d19-119">In the Microsoft 365 admin center, expand **Users** and then choose **Guest users**.</span></span>
-1. <span data-ttu-id="d7d19-120">En la página **usuarios invitados** , elija el usuario que desea quitar y, a continuación, elija **eliminar un usuario**.</span><span class="sxs-lookup"><span data-stu-id="d7d19-120">On the **Guest users** page, choose the user you want to remove and then choose **Delete a user**.</span></span> 
+1. <span data-ttu-id="b18b8-119">En el Centro de administración de Microsoft 365, expanda **Usuarios** y elija **Usuarios invitados.**</span><span class="sxs-lookup"><span data-stu-id="b18b8-119">In the Microsoft 365 admin center, expand **Users** and then choose **Guest users**.</span></span>
+1. <span data-ttu-id="b18b8-120">En la **página Usuarios invitados,** elija el usuario que desea quitar y, a continuación, **elija Eliminar un usuario.**</span><span class="sxs-lookup"><span data-stu-id="b18b8-120">On the **Guest users** page, choose the user you want to remove and then choose **Delete a user**.</span></span> 
 
-<span data-ttu-id="d7d19-121">Para quitar usuarios en el portal de Azure AD, vea [quitar un usuario y recursos de invitado](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).</span><span class="sxs-lookup"><span data-stu-id="d7d19-121">To remove users in the Azure AD portal, see [remove a guest user and resources](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).</span></span>
+<span data-ttu-id="b18b8-121">Para quitar usuarios en el portal de Azure AD, vea [quitar un usuario invitado y recursos.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)</span><span class="sxs-lookup"><span data-stu-id="b18b8-121">To remove users in the Azure AD portal, see [remove a guest user and resources](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).</span></span>
