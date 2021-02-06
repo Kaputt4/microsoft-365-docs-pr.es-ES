@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 09e680d2bcf8f1e0fd5237adbf640349741c26fd
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126589"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -59,20 +59,20 @@ Además de los [permisos y licencias necesarios,](information-barriers.md#requir
 
 - Datos de directorio: asegúrese de que la estructura de su organización se refleja en los datos del directorio. Para realizar esta acción, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
   - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
-  - [Agregar o actualizar la información de perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [Agregar o actualizar la información de perfil de un usuario con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-- Búsqueda de directorios con ámbito: antes de definir la primera directiva de barreras de información de su organización, debe habilitar la búsqueda de directorios con ámbito [en Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search) Espere al menos 24 horas después de habilitar la búsqueda en directorios con ámbito antes de configurar o definir directivas de barreras de información.
+- Búsqueda de directorios con ámbito: antes de definir la primera directiva de barreras de información de su organización, debe habilitar la búsqueda de directorios con ámbito [en Microsoft Teams.](/MicrosoftTeams/teams-scoped-directory-search) Espere al menos 24 horas después de habilitar la búsqueda en directorios con ámbito antes de configurar o definir directivas de barreras de información.
 
 - Licencia EXO: las directivas DEC solo funcionan si se ha asignado una licencia EXO a los usuarios de destino.
 
 - Registro de auditoría: para buscar el estado de una aplicación de directiva, el registro de auditoría debe estar activado. Se recomienda habilitar la auditoría antes de empezar a definir segmentos o directivas. Para obtener más información, vea Activar o desactivar la búsqueda [del registro de auditoría.](turn-audit-log-search-on-or-off.md)
 
-- Sin directivas de libreta de direcciones: antes de definir y aplicar directivas de barreras de información, asegúrese de que no haya directivas de libreta de direcciones de Exchange. Las barreras de información se basan en directivas de libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de quitar primero [las directivas de la libreta de](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) direcciones. Una vez habilitadas las directivas de barreras de información y tiene habilitada la libreta [](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) jerárquica de direcciones, todos los usuarios *_*_* que no estén incluidos en un segmento de barreras de información verán la libreta jerárquica de direcciones en Exchange Online.
+- Sin directivas de libreta de direcciones: antes de definir y aplicar directivas de barreras de información, asegúrese de que no haya directivas de libreta de direcciones de Exchange. Las barreras de información se basan en directivas de libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de quitar primero [las directivas de la libreta de](/exchange/address-books/address-book-policies/remove-an-address-book-policy) direcciones. Una vez habilitadas las directivas de barreras  de información y tiene habilitada la [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) libreta jerárquica de direcciones, todos los usuarios que no estén incluidos en un segmento de barreras de información verán la libreta jerárquica de direcciones en Exchange Online.
 
 - PowerShell: actualmente, las directivas de barreras de información se definen y administran en el Centro de seguridad y & cumplimiento de Office 365 mediante cmdlets de PowerShell. Aunque en este artículo se proporcionan varios ejemplos, deberá familiarizarse con los cmdlets y parámetros de PowerShell. También necesitará el módulo de Azure PowerShell.
-    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
-    - [Instalar el módulo de Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
+    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
+    - [Instalar el módulo de Azure PowerShell](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Consentimiento de administrador para barreras de información en Microsoft Teams: cuando las directivas están en su lugar, las barreras de información pueden quitar a las personas de las sesiones de chat en las que no se supone que estén. Esta configuración ayuda a garantizar que la organización cumpla con las directivas y normativas. Use el siguiente procedimiento para permitir que las directivas de barreras de información funcionen según lo esperado en Microsoft Teams.
 
@@ -88,7 +88,7 @@ Además de los [permisos y licencias necesarios,](information-barriers.md#requir
 
    2. Cuando se le solicite, inicie sesión con su cuenta de trabajo o escuela para Office 365.
 
-   3. En el cuadro de diálogo _ *Permisos solicitados** , revise la información y, a continuación, **elija Aceptar**.
+   3. En el **cuadro de diálogo Permisos solicitados,** revise la información y, a continuación, elija **Aceptar**.
 
 Cuando se cumplan todos los requisitos previos, vaya a la siguiente sección.
 
@@ -118,7 +118,7 @@ Además de la lista inicial de directivas, haga una lista de segmentos para su o
 Determine qué atributos de los datos de directorio de su organización usará para definir segmentos. Puede usar *Department*, *MemberOf* o cualquiera de los atributos admitidos. Asegúrese de que tiene valores en el atributo que seleccione para los usuarios. [Vea la lista de atributos admitidos para barreras de información.](information-barriers-attributes.md)
 
 > [!IMPORTANT]
-> **Antes de continuar con la siguiente sección, asegúrese** de que los datos del directorio tienen valores para atributos que puede usar para definir segmentos. Si los datos del directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esa información antes de continuar con las barreras de información. Para obtener ayuda con esto, vea los siguientes recursos:<br/>- [Configurar las propiedades de la cuenta de usuario con PowerShell de Office 365](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Agregar o actualizar la información de perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Antes de continuar con la siguiente sección, asegúrese** de que los datos del directorio tienen valores para atributos que puede usar para definir segmentos. Si los datos del directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esa información antes de continuar con las barreras de información. Para obtener ayuda con esto, vea los siguientes recursos:<br/>- [Configurar las propiedades de la cuenta de usuario con PowerShell de Office 365](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Agregar o actualizar la información de perfil de un usuario con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definir segmentos con PowerShell
 

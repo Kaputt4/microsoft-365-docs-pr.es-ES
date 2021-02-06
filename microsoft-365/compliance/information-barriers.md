@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071275"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126547"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Más información sobre las barreras de información en Microsoft 365
 
@@ -47,7 +47,7 @@ Para obtener más información sobre la experiencia del usuario con barreras de 
 - [Barreras de información en OneDrive](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> Actualmente, las barreras de información no se aplican a las comunicaciones por correo electrónico. Además, las barreras de información son independientes de los [límites de cumplimiento.](set-up-compliance-boundaries.md)<p> Antes de definir y aplicar directivas de barreras de información, asegúrese de que su organización no tenga directivas de libreta de direcciones [de Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones).
+> Actualmente, las barreras de información no se aplican a las comunicaciones por correo electrónico. Además, las barreras de información son independientes de los [límites de cumplimiento.](set-up-compliance-boundaries.md)<p> Antes de definir y aplicar directivas de barreras de información, asegúrese de que su organización no tenga directivas de libreta de direcciones [de Exchange](/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones).
 
 ## <a name="what-happens-with-information-barriers"></a>Qué sucede con las barreras de información
 
@@ -88,7 +88,7 @@ Las barreras de información se están implementando ahora y se incluyen en las 
 - Cumplimiento E5/A5 de Microsoft 365
 - Administración de riesgos de Microsoft 365 Insider
 
-Para obtener más información, vea la guía [de licencias de Microsoft 365 para la seguridad y & cumplimiento.](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+Para obtener más información, vea la guía [de licencias de Microsoft 365 para la seguridad y & cumplimiento.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 Para [definir o editar directivas de barreras](information-barriers-policies.md)de información, debe tener asignado uno de los siguientes roles:
 

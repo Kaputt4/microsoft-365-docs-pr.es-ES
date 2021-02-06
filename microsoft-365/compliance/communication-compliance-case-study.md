@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5925ad7641370b26d0a272968a13028b74b81ef4
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126599"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo para las comunicaciones de Microsoft Teams, Exchange y Yammer
 
@@ -158,7 +158,7 @@ Los administradores de TI de Contoso revisan y completan las [instrucciones paso
 
 El cumplimiento de las comunicaciones requiere que el inquilino de Yammer de una organización esté en modo nativo para supervisar el lenguaje ofensivo en mensajes privados y conversaciones de la comunidad pública.
 
-Los administradores de TI de Contoso se asegura de que revisan la información del artículo Información general sobre el modo nativo de Yammer en [Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) y siguen los pasos para ejecutar la herramienta de migración en el artículo Configurar la red de Yammer para modo nativo para [Microsoft 365.](/yammer/configure-your-yammer-network/native-mode)
+Los administradores de TI de Contoso se asegura de que revisan la información del artículo Información general sobre el modo nativo de Yammer en [Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode) y siguen los pasos para ejecutar la herramienta de migración en el artículo Configurar la red de Yammer para modo nativo para [Microsoft 365.](/yammer/configure-your-yammer-network/native-mode)
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuración de un grupo para usuarios en el ámbito
 

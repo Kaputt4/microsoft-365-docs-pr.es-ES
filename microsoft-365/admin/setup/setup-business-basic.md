@@ -18,19 +18,18 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Microsoft 365 Empresa Básico.
-ms.openlocfilehash: b40b6a633c9c6c25daa4607c9e05178a1f418c51
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 43ae19b24058429c9276bd44dd4c3960c792ca0d
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126190"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurar Microsoft 365 Empresa Básico
 
@@ -69,7 +68,7 @@ Cuando compre una suscripción a Microsoft 365 Empresa Básico, tendrá la opci
 3. En el paso **Agregar dominio**, escriba el nombre de dominio que desee usar (como contoso.com).
 
     > [!IMPORTANT]
-    > Si adquirió un dominio durante el inicio de sesión, no verá el paso**Agregar dominio** aquí. Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
+    > Si adquirió un dominio durante el inicio de sesión, no verá el paso **Agregar dominio** aquí. Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
 
     
 4. Siga los pasos del asistente para [Crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) a fin de verificar que es el propietario del dominio. Si ya sabe cuál es el host del dominio, consulte también las [ instrucciones específicas para los hosts](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -99,7 +98,7 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
   
 1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, consulte [Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar). 
 
-    - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente**y elija **Autorizar** en la página del host DNS.
+    - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente** y elija **Autorizar** en la página del host DNS.
     - Si tiene registros DNS en otros hosts (que no están habilitados para usar la conexión de dominio), le recomendamos administrar sus propios registros DNS para asegurarse de que los servicios existentes permanezcan conectados. Para obtener más información, consulte [Conceptos básicos sobre DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics).
 
 2. Siga los pasos del asistente y se configurarán el correo electrónico y otros servicios.

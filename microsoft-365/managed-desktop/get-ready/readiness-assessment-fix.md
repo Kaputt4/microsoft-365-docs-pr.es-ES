@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: ff2ef15f93cef5255e8c8113facf51b833eff77d
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114924"
+ms.locfileid: "50122365"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Solucionar los problemas detectados por la herramienta de evaluación de la preparación
 
@@ -148,7 +148,7 @@ La Microsoft Store para Empresas no está habilitada o no está sincronizada con
 
 ### <a name="multifactor-authentication"></a>Autenticación multifactor
 
-La autenticación multifactor no debe impedir que el Escritorio administrado de Microsoft administre su organización de Azure AD (inquilino) en Intune y Azure AD.
+La autenticación multifactor no debe impedir que el Escritorio administrado de Microsoft administre la organización de Azure AD (inquilino) en Intune y Azure AD.
 
 
 **No preparado**
@@ -188,7 +188,7 @@ La región de la organización de Azure AD no es compatible actualmente con escr
 
 **Aviso**
 
-Uno o varios de los países donde se encuentra la organización de Azure AD no es compatible con el Escritorio administrado de Microsoft. Para obtener más información, vea [idiomas y regiones compatibles con](../service-description/regions-languages.md)escritorio administrado de Microsoft.
+Uno o varios de los países donde se encuentra la organización de Azure AD no son compatibles con el Escritorio administrado de Microsoft. Para obtener más información, vea [idiomas y regiones compatibles con](../service-description/regions-languages.md)escritorio administrado de Microsoft.
 
 
 ### <a name="security-baselines"></a>Líneas base de seguridad
@@ -197,7 +197,7 @@ Las directivas de línea base de seguridad no deben dirigirse a ningún disposit
 
 **No preparado**
 
-Tienes un perfil de línea base de seguridad dirigido a todos los usuarios, todos los dispositivos o ambos. Cambie la directiva para usar una asignación dirigida a un grupo específico de Azure AD que no incluya ningún dispositivo de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Usar líneas base de seguridad para configurar dispositivos Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la inscripción, aplicamos una nueva línea base de seguridad a todos los dispositivos de Escritorio administrado de Microsoft. Después de la inscripción, puedes revisar la directiva de línea base de seguridad de Escritorio administrado de Microsoft en el área **de** directiva de configuración de Microsoft Endpoint Manager.
+Tiene un perfil de línea base de seguridad dirigido a todos los usuarios, todos los dispositivos o ambos. Cambie la directiva para usar una asignación dirigida a un grupo específico de Azure AD que no incluya ningún dispositivo de Escritorio administrado de Microsoft. Para ver los pasos, [consulta Usar líneas base de seguridad para configurar dispositivos Windows 10 en Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la inscripción, aplicamos una nueva línea base de seguridad a todos los dispositivos de Escritorio administrado de Microsoft. Después de la inscripción, puedes revisar la directiva de línea base de seguridad de Escritorio administrado de Microsoft en el área **de** directiva de configuración de Microsoft Endpoint Manager.
 
 **Aviso**
 
@@ -210,7 +210,7 @@ Revise las aplicaciones que desea que tengan los usuarios de Escritorio administ
 
 **Aviso**
 
-Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de Escritorio administrado de Microsoft. Dado que Intune debe implementar estas aplicaciones, evalúa volver a usar las aplicaciones existentes de Intune. Considera la posibilidad de usar el Portal de empresa (consulta Instalar el Portal de empresa [de Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) en dispositivos y la página de estado de inscripción (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea Aplicaciones en escritorio administrado de [Microsoft](apps.md) y experiencia de primera ejecución [con Autopilot y la página estado de inscripción.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
+Debe preparar un inventario de las aplicaciones que desea que tengan los usuarios de Escritorio administrado de Microsoft. Dado que Intune debe implementar estas aplicaciones, evalúa la reusación de las aplicaciones existentes de Intune. Considera la posibilidad de usar el Portal de empresa (consulta Instalar el Portal de empresa [de Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) en dispositivos y la página de estado de inscripción (ESP) para distribuir aplicaciones a los usuarios. Para obtener más información, vea Aplicaciones en escritorio administrado de [Microsoft](apps.md) y experiencia de primera ejecución [con Autopilot y la página estado de inscripción.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
 
 Puedes solicitar al representante de tu cuenta de Microsoft una consulta en Microsoft Endpoint Configuration Manager para identificar las aplicaciones que están listas para migrar a Intune o que necesitan ajustes.
 
@@ -280,13 +280,13 @@ Se requieren varias licencias para usar el Escritorio administrado de Microsoft.
 No tiene todas las licencias que necesita para usar el Escritorio administrado de Microsoft. Para obtener más información, vea [Tecnologías de Escritorio administrado de Microsoft](../intro/technologies.md) y Más información sobre las [licencias.](prerequisites.md#more-about-licenses)
 
 
-### <a name="security-account-names"></a>Nombres de cuenta de seguridad
+### <a name="microsoft-managed-desktop-service-accounts"></a>Cuentas de servicio de Escritorio administrado de Microsoft
 
-Algunos nombres de cuenta de seguridad podrían estar en conflicto con los creados por escritorio administrado de Microsoft.
+Algunos nombres de cuenta podrían estar en conflicto con los nombres de cuenta creados por Escritorio administrado de Microsoft para administrar el servicio de Escritorio administrado de Microsoft.
 
 **No preparado**
 
-Tiene al menos un nombre de cuenta que entra en conflicto con los creados por el Escritorio administrado de Microsoft. Trabaje con su representante de cuenta de Microsoft para excluir estos nombres de cuenta.
+Tiene al menos un nombre de cuenta que entra en conflicto con los nombres de cuenta creados por el Escritorio administrado de Microsoft. Trabaje con su representante de cuenta de Microsoft para excluir estos nombres de cuenta. No enumeramos públicamente los nombres de cuenta para minimizar el riesgo de seguridad. 
 
 
 ### <a name="security-administrator-roles"></a>Roles de administrador de seguridad
@@ -305,7 +305,7 @@ Para obtener más información, vea [Crear y administrar roles para el control d
 
 ### <a name="security-default"></a>Valor predeterminado de seguridad
 
-Los valores predeterminados de seguridad en Azure Active Directory impedirán que el Escritorio administrado de Microsoft gestione sus dispositivos.
+Los valores predeterminados de seguridad en Azure Active Directory impedirán que el Escritorio administrado de Microsoft gestione los dispositivos.
 
 **No preparado**
 

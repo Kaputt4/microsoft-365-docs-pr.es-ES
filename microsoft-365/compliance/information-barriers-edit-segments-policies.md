@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126145"
 ---
 # <a name="manage-information-barrier-policies"></a>Administrar directivas de barreras de información
 
@@ -37,7 +37,7 @@ Una vez [definidas](information-barriers-policies.md)las directivas de barreras 
 | [Solución de problemas de barreras de información](information-barriers-troubleshooting.md) | Consulte este artículo cuando se tope con problemas inesperados con barreras de información. |
 
 > [!IMPORTANT]
-> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Administrador global de Microsoft 365 Enterprise<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de LAC (este es un nuevo rol)<br><br>Para obtener más información acerca de los requisitos previos para las barreras de información, consulte [Requisitos previos (para directivas de barreras de información).](information-barriers-policies.md#prerequisites)<br><br> Asegúrese de [conectarse a PowerShell del Centro & seguridad y cumplimiento.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Administrador global de Microsoft 365 Enterprise<br/>- Administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de LAC (este es un nuevo rol)<br><br>Para obtener más información acerca de los requisitos previos para las barreras de información, consulte [Requisitos previos (para directivas de barreras de información).](information-barriers-policies.md#prerequisites)<br><br> Asegúrese de [conectarse a PowerShell del Centro & seguridad y cumplimiento.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Editar atributos de cuenta de usuario
 
@@ -53,9 +53,9 @@ Use este procedimiento para editar atributos que se usan para segmentar usuarios
 
 3. Edite una o más cuentas de usuario para incluir valores para el atributo que seleccionó en el paso anterior. Para realizar esta acción, use uno de los siguientes procedimientos:
 
-    - Para editar una sola cuenta, vea Agregar o actualizar la información de perfil de un usuario [con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Para editar una sola cuenta, vea Agregar o actualizar la información de perfil de un usuario [con Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea Configurar las propiedades de la cuenta de usuario [con PowerShell de Office 365.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea Configurar las propiedades de la cuenta de usuario [con PowerShell de Office 365.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 ## <a name="edit-a-segment"></a>Editar un segmento
 

@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta de Microsoft 365 para empresas. '
-ms.openlocfilehash: afb576a0499577b910fe3ed14eff75ae0a52b394
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126410"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
 
@@ -80,7 +79,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
     
 6. Espere 24 horas para que los nuevos alias se rellenen en Microsoft 365.
     
-    El usuario tendrá ahora una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Aldán, Eliza@NodPublishers.com y su alias, Sales@NodPublishers.com, irán a la Bandeja de entrada de Eliza.
+    El usuario tendrá ahora una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Sele, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irán a la Bandeja de entrada de Eliza.
     
   
 7. **Cuando el usuario responda, la dirección *De*  será su alias de correo electrónico principal.** Por ejemplo, supongamos que se envía un mensaje a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Naiara responda al mensaje, su dirección de correo electrónico principal se mostrará como el remitente, en lugar de ventas@NodPublishers.com. 

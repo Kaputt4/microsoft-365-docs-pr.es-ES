@@ -13,18 +13,18 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e7815dbcfc6129685322a250351276476f8a9e3
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: c45a2733c1fa7cf6d05cff747a9cfcdba1b124cc
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126167"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Atributos para las directivas de barreras de información
 
 Algunos atributos de Azure Active Directory se pueden usar para segmentar usuarios. Una vez definidos los segmentos, estos pueden usarse como filtros para las directivas de barreras de información. Por ejemplo, puede usar **Departamento** para definir segmentos de usuarios por departamento dentro de su organización (suponiendo que ningún empleado trabaja para dos departamentos al mismo tiempo).
 
-En este artículo se describe cómo usar atributos con barreras de información y se proporciona una lista de atributos que se pueden usar. Para obtener más información acerca de las barreras de información, vea los siguientes recursos:
+En este artículo se describe cómo usar atributos con barreras de información y se proporciona una lista de atributos que se pueden usar. Para obtener más información sobre las barreras de información, vea los siguientes recursos:
 
 - [Barreras de información](information-barriers.md)
 - [Definir directivas para barreras de información en Microsoft Teams](information-barriers-policies.md)
@@ -38,9 +38,9 @@ Los atributos enumerados en este artículo se pueden usar para definir o editar 
 
 2. Asegúrese de que las cuentas de usuario tienen valores rellenados para los atributos que seleccionó en el paso 1. Vea los detalles de la cuenta de usuario y, si es necesario, edite las cuentas de usuario para incluir valores de atributo. 
 
-    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea Configurar las propiedades de la cuenta de usuario [con PowerShell de Office 365.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea Configurar las propiedades de la cuenta de usuario [con PowerShell de Office 365.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-    - Para editar una sola cuenta, vea Agregar o actualizar la información de perfil de un usuario [con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Para editar una sola cuenta, vea Agregar o actualizar la información de perfil de un usuario [con Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 3. [Defina segmentos con PowerShell,](information-barriers-policies.md#define-segments-using-powershell)similar a los ejemplos siguientes:
 

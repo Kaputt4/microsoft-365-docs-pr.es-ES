@@ -1,14 +1,31 @@
 ---
-title: "Manage which Office features appear in What's New" f1.keywords:
-- NOCSH ms.author: danbrown author: DHB-MSFT manager: scotv audience: Admin ms.topic: article ms.service: o365-administration localization_priority: Normal ms.collection:
+title: Administrar qué características de Office aparecen en Novedades
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC ms.custom: AdminScliePortfolio search.appverid:
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- Descripción de MOE150: "Decide qué características de Office mostrar u ocultar cuando un usuario elige ayuda > Novedades de su aplicación de Office en Windows mediante la característica "Novedades de Office" en el Centro de administración de Microsoft 365".
+- MOE150
+description: Decida qué características de Office mostrar u ocultar cuando un usuario elija ayuda > Novedades de su aplicación de Office en Windows mediante la característica "Novedades de Office" en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122353"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Administrar qué características de Office aparecen en Novedades
 
 Cuando se lanza una característica importante de Office, los usuarios recibirán un mensaje al respecto cuando elijan Ayuda novedades en su aplicación de  >   Office en Windows.

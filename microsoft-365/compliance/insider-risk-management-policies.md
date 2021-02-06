@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1093d664e58f77d94db9f6f922a1a5072f4d3982
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 9f8424beb7e4a078d14bce755fc399ecd41764d9
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094703"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126639"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -89,7 +89,7 @@ Al usar esta plantilla, también debe configurar un conector de Recursos Humanos
 
 En muchas organizaciones, los usuarios tienen permisos para instalar software en sus dispositivos o modificar la configuración del dispositivo para ayudar con sus tareas. Ya sea de forma involuntaria o con intención malintencionada, los usuarios pueden instalar malware o deshabilitar características de seguridad importantes que ayudan a proteger la información en su dispositivo o en los recursos de red. Esta plantilla de directiva usa alertas de seguridad de Microsoft Defender para Endpoint para empezar a puntuar estas actividades y la detección de foco y alertas en este área de riesgo. Use esta plantilla para proporcionar información sobre infracciones de directivas de seguridad en escenarios en los que los usuarios pueden tener un historial de infracciones de directivas de seguridad que pueden ser un indicador de riesgo interno.
 
-Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>Infracciones de directivas de seguridad al abandonar usuarios (versión preliminar)
 
@@ -97,13 +97,13 @@ La salida de usuarios, ya sea en términos positivos o negativos, puede ser un r
 
 Al usar esta plantilla, debe configurar un conector de Recursos Humanos de Microsoft 365 para importar periódicamente la información de fecha de dimisión y finalización de los usuarios de su organización. Consulte el [artículo Importar datos](import-hr-data.md) con el conector de RECURSOS humanos para obtener instrucciones paso a paso para configurar el conector de RRHH de Microsoft 365 para su organización.
 
-Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
 
 ### <a name="security-policy-violations-by-priority-users-preview"></a>Infracciones de directivas de seguridad por parte de usuarios prioritarios (versión preliminar)
 
 La protección contra las infracciones de seguridad de los usuarios de su organización puede depender de su posición, nivel de acceso a información confidencial o historial de riesgos. Dado que las infracciones de seguridad por parte de los usuarios prioritarios pueden tener un impacto sobresalido en las áreas críticas de la organización, esta plantilla de directiva empieza a puntuar en estos indicadores y usa Alertas de Microsoft Defender para puntos de conexión para proporcionar información sobre las actividades relacionadas con la seguridad de estos usuarios. Estos pueden incluir los usuarios prioritarios que instalan malware u otras aplicaciones potencialmente dañinas y deshabilitan las características de seguridad en sus dispositivos. Los usuarios con prioridad se definen en grupos de usuarios de prioridad configurados en el área de configuración de administración de riesgos interno.
 
-Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) Además, tendrá que asignar grupos de usuarios de prioridad creados en los grupos de usuarios de prioridad de configuración de administración de riesgos de **Insider**  >    >   a la directiva.
+Tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender para Endpoint para la integración de la administración de riesgos interno en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) Además, tendrá que asignar grupos de usuarios de prioridad creados en los grupos de usuarios de prioridad de configuración de administración de riesgos de **Insider**  >    >   a la directiva.
 
 ### <a name="security-policy-violations-by-disgruntled-users-preview"></a>Infracciones de directivas de seguridad por parte de usuarios descontentos (versión preliminar)
 
@@ -111,7 +111,7 @@ Los usuarios que experimentan factores de tensión laboral pueden tener un mayor
 
 Al usar esta plantilla, también debe configurar un conector de Recursos Humanos de Microsoft 365 para importar periódicamente notificaciones de mejora del rendimiento, estado de revisión de rendimiento deficiente o información de cambio de nivel de trabajo para los usuarios de su organización. Consulte el [artículo Importar datos](import-hr-data.md) con el conector de RECURSOS humanos para obtener instrucciones paso a paso para configurar el conector de RRHH de Microsoft 365 para su organización.
 
-También tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender for Endpoint para la integración de la administración de riesgos de Insider en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+También tendrás que configurar Microsoft Defender para Endpoint en tu organización y habilitar Defender for Endpoint para la integración de la administración de riesgos de Insider en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información sobre cómo configurar Defender para Endpoint para la integración de la administración de riesgos de Insider, consulta Configurar características avanzadas [en Defender para Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>Requisitos previos de la plantilla de directiva y eventos desencadenantes
 
@@ -125,9 +125,9 @@ En la siguiente tabla se enumeran los eventos desencadenantes y los requisitos p
 | Pérdidas de datos generales | Actividad de directiva de pérdida de datos que crea una alerta de gravedad alta | Directiva DLP configurada para alertas de gravedad alta |
 | Pérdidas de datos por usuarios prioritarios | Actividad de directiva de pérdida de datos que crea una alerta de gravedad alta | Directiva DLP configurada para alertas de gravedad alta <br><br> Grupos de usuarios de prioridad configurados en la configuración de riesgos interno |
 | Pérdidas de datos de usuarios descontentos | Mejora del rendimiento, rendimiento deficiente o indicadores de cambio de nivel de trabajo desde el conector de RECURSOS HUMANOS | Conector de Recursos Humanos de Microsoft 365 configurado para indicadores de descontento |
-| Infracciones de la directiva de seguridad general | Fraude de defensa de controles de seguridad o software no deseado detectado por Microsoft Defender para endpoint | Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado |
-| Infracciones de la directiva de seguridad al abandonar usuarios | Indicadores de fecha de dimisión o finalización del conector de RECURSOS HUMANOS | Conector de Recursos Humanos de Microsoft 365 configurado para indicadores de fecha de terminación y dimisión <br><br> Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado |
-| Infracciones de directivas de seguridad por parte de usuarios prioritarios | Fraude de defensa de controles de seguridad o software no deseado detectado por Microsoft Defender para endpoint | Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado <br><br> Grupos de usuarios de prioridad configurados en la configuración de riesgos interno |
+| Infracciones de la directiva de seguridad general | Fraude de defensa de controles de seguridad o software no deseado detectado por Microsoft Defender para Endpoint | Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado |
+| Infracciones de la directiva de seguridad al abandonar usuarios | Indicadores de fecha de dimisión o finalización del conector de RECURSOS humanos | Conector de Recursos Humanos de Microsoft 365 configurado para indicadores de fecha de terminación y dimisión <br><br> Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado |
+| Infracciones de directivas de seguridad por parte de usuarios prioritarios | Fraude de defensa de controles de seguridad o software no deseado detectado por Microsoft Defender para Endpoint | Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado <br><br> Grupos de usuarios de prioridad configurados en la configuración de riesgos interno |
 | Infracciones de la directiva de seguridad por parte de usuarios descontentos | Mejora del rendimiento, rendimiento deficiente o indicadores de cambio de nivel de trabajo desde el conector de RECURSOS HUMANOS | Conector de Recursos Humanos de Microsoft 365 configurado para indicadores de descontento <br><br> Suscripción de Active Microsoft Defender para puntos de conexión <br><br> Integración de Microsoft Defender para puntos de conexión con el Centro de cumplimiento de Microsoft 365 configurado |
 
 ## <a name="prioritize-content-in-policies"></a>Priorizar contenido en directivas
@@ -159,13 +159,13 @@ Complete los pasos siguientes para crear una nueva directiva:
     >La mayoría de las plantillas de directiva tienen requisitos previos que deben configurarse para que la directiva genere alertas relevantes. Si no ha configurado los requisitos previos de directiva aplicables, consulte Introducción a la administración de [riesgos de Insider.](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
 
 4. Seleccione **Siguiente** para continuar.
-5. En **la** página  Usuarios, seleccione  Agregar usuario o grupo o Elegir grupos de usuarios prioritarios para definir qué usuarios o grupos de usuarios de prioridad se incluyen en la directiva, en función de la plantilla de directiva que haya seleccionado. Active la casilla Todos los usuarios y grupos **habilitados** para correo si procede (si no ha seleccionado una plantilla basada en usuarios con prioridad). Seleccione **Siguiente** para continuar.
+5. En **la** página  Usuarios, seleccione  Agregar usuario o grupo o Elegir grupos de usuarios prioritarios para definir qué usuarios o grupos de usuarios de prioridad se incluyen en la directiva, en función de la plantilla de directiva que haya seleccionado. Active la casilla Todos los usuarios y grupos **habilitados** para correo si procede (si no ha seleccionado una plantilla basada en usuarios de prioridad). Seleccione **Siguiente** para continuar.
 6. En la **página Especificar qué contenido se debe priorizar (opcional),** puede asignar los orígenes para priorizar para obtener puntuaciones de riesgo más altas. Sin embargo, algunas actividades no generarán ninguna alerta a menos que el contenido relacionado contenga tipos de información confidencial integrados o personalizados o se haya especificado como prioridad en esta página:
     - **Sitios de SharePoint:** seleccione **Agregar sitio de SharePoint** y seleccione las organizaciones de SharePoint que desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1".*
-    - **Tipo de información confidencial:** selecciona **Agregar tipo de información confidencial** y selecciona los tipos de confidencialidad que quieres priorizar. Por ejemplo, *"Número de cuenta bancaria de* ESTADOS UNIDOS" y *"Número de tarjeta de crédito"*.
+    - **Tipo de información confidencial:** selecciona **Agregar tipo de información confidencial** y selecciona los tipos de confidencialidad que quieres priorizar. Por ejemplo, *"Número de cuenta* bancaria de ESTADOS UNIDOS" y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad:** seleccione **Agregar etiqueta de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto".*
 7. Seleccione **Siguiente** para continuar.
-8. En la **página Seleccionar** indicadores de [](insider-risk-management-settings.md#indicators) directiva, verás los indicadores que has definido como disponibles en la página Indicadores de configuración de riesgo de **Insider.**  >   Si seleccionó una *plantilla de* pérdida de datos al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable de directivas **DLP** para habilitar los indicadores desencadenantes de la directiva. Seleccione los indicadores que desea aplicar a la directiva. Si prefiere no usar la configuración de umbral de directiva predeterminada para estos indicadores, deshabilite los umbrales de uso predeterminados **recomendados** por Microsoft y escriba los valores de umbral para cada indicador seleccionado. Si ha seleccionado al menos un indicador de *Office* *o dispositivo,* seleccione los indicadores de puntuación de **riesgo** según corresponda. Los indicadores de puntuación de riesgo solo se aplican a los indicadores seleccionados.
+8. En la **página Seleccionar** indicadores de [](insider-risk-management-settings.md#indicators) directiva, verás los indicadores que has definido como disponibles en la página Indicadores de configuración de riesgo de **Insider.**  >   Si seleccionó una *plantilla de* pérdida de datos al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable de directivas **DLP** para habilitar los indicadores desencadenantes de la directiva. Seleccione los indicadores que desea aplicar a la directiva. Si prefiere no usar la configuración de umbral de directiva predeterminada para estos indicadores, deshabilite los umbrales de uso predeterminados **recomendados** por Microsoft y escriba los valores de umbral para cada indicador seleccionado. Si ha seleccionado al menos un indicador de *Office* *o dispositivo,* seleccione los indicadores de puntuación **de riesgo** según corresponda. Los indicadores de puntuación de riesgo solo se aplican a los indicadores seleccionados.
 
     >[!IMPORTANT]
     >Si los indicadores de esta página no se pueden seleccionar, deberás seleccionar los indicadores que quieras habilitar para todas las directivas en la página Indicadores de directiva de configuración de administración de riesgos   >    >  **de** Insider.
@@ -173,7 +173,7 @@ Complete los pasos siguientes para crear una nueva directiva:
 9. Seleccione **Siguiente** para continuar.
 10. En la **página Períodos de** tiempo [](insider-risk-management-settings.md#policy-timeframes) de directiva, verás las condiciones de la ventana de activación de la directiva que se encuentra en la página Períodos de tiempo de la directiva de configuración de riesgos de **Insider.**  >  
 11. Seleccione **Siguiente** para continuar.
-12. En la **página** Revisar, revise la configuración que ha elegido para la directiva. Seleccione **Editar** para cambiar cualquiera de los valores de directiva o **seleccione** Enviar para crear y activar la directiva.
+12. En la **página** Revisar, revisa la configuración que has elegido para la directiva. Selecciona **Editar** para cambiar cualquiera de los valores de directiva o **selecciona** Enviar para crear y activar la directiva.
 
 ## <a name="update-a-policy"></a>Actualizar una directiva
 
@@ -185,11 +185,11 @@ Siga estos pasos para administrar una directiva existente:
 2. En el panel de directivas, seleccione la directiva que desea administrar.
 3. En la página de detalles de la directiva, seleccione **Editar directiva**
 4. En el Asistente para directivas, no puede editar los campos siguientes:
-    - **Nombre:** nombre descriptivo de la directiva
+    - **Nombre:** el nombre descriptivo de la directiva
     - **Elegir plantilla de directiva:** plantilla que se usa para definir los tipos de indicadores de riesgo supervisados por la directiva.
 5. Escriba una nueva descripción para la directiva en el **campo** Descripción. 
 6. Seleccione **Siguiente** para continuar.
-7. En **la** página  Usuarios, seleccione  Agregar usuario o grupo o Elegir grupos de usuarios prioritarios para definir qué usuarios o grupos de usuarios de prioridad se incluyen en la directiva, en función de la plantilla de directiva que haya seleccionado. Active la casilla Todos los usuarios y grupos **habilitados** para correo si procede (si no ha seleccionado una plantilla basada en usuarios con prioridad). Seleccione **Siguiente** para continuar.
+7. En **la** página  Usuarios, seleccione  Agregar usuario o grupo o Elegir grupos de usuarios prioritarios para definir qué usuarios o grupos de usuarios de prioridad se incluyen en la directiva, en función de la plantilla de directiva que haya seleccionado. Active la casilla Todos los usuarios y grupos **habilitados** para correo si procede (si no ha seleccionado una plantilla basada en usuarios de prioridad). Seleccione **Siguiente** para continuar.
 8. En la **página Especificar qué contenido se debe priorizar (opcional),** puede asignar los orígenes para priorizar para obtener puntuaciones de riesgo más altas. Sin embargo, algunas actividades no generarán ninguna alerta a menos que el contenido relacionado contenga tipos de información confidencial integrados o personalizados o se haya especificado como prioridad en esta página:
     - **Sitios de SharePoint:** seleccione **Agregar sitio de SharePoint** y seleccione las organizaciones de SharePoint que desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1".*
     - **Tipo de información confidencial:** selecciona **Agregar tipo de información confidencial** y selecciona los tipos de confidencialidad que quieres priorizar. Por ejemplo, *"Número de cuenta* bancaria de ESTADOS UNIDOS" y *"Número de tarjeta de crédito"*.
@@ -208,7 +208,7 @@ Siga estos pasos para administrar una directiva existente:
 ## <a name="delete-a-policy"></a>Eliminar una directiva
 
 >[!NOTE]
->Al eliminar una directiva, no se eliminan las alertas activas o archivadas generadas desde la directiva.
+>La eliminación de una directiva no elimina las alertas activas o archivadas generadas desde la directiva.
 
 Para eliminar una directiva de administración de riesgos interno existente, siga estos pasos:
 
