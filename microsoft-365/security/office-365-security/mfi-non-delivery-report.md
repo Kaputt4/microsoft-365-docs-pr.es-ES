@@ -11,20 +11,24 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel de flujo de correo del Centro de seguridad & y cumplimiento para supervisar los códigos de error encontrados con más frecuencia en los informes de no entrega (también conocidos como NDRs o mensajes de de retorno) de remitentes de su organización.
+description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel de flujo de correo del Centro de seguridad & y cumplimiento para supervisar los códigos de error encontrados con más frecuencia en los informes de no entrega (también conocidos como NDRs o mensajes de de rebote) de remitentes de la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbd27fc818a46a983874a04f0e313c622e047ea5
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: af4beefb8ba15fd7d98b11ec2571eee65a99e4e3
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029839"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150164"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el Centro de & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 El  informe de no [](mail-flow-insights-v2.md) entrega en el panel de flujo de correo del Centro de seguridad y cumplimiento de [&](https://protection.office.com) muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDRs o mensajes de de retorno) para los usuarios de su organización. Este informe muestra los detalles de los NDRs para que pueda solucionar problemas de entrega de correo electrónico.
 
@@ -64,4 +68,4 @@ Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguien
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Para obtener información acerca de otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)
+Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

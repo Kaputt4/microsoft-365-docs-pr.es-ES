@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -20,16 +19,21 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre la investigación de amenazas y las capacidades de respuesta en El plan de Microsoft Defender para Office 365.
-ms.openlocfilehash: dc6a3dec096b6834d024cc4ff74a5b7600c33d45
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 32b23dca0d4cb70407ce91a652e458b729b3c12f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794237"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150741"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Aplicación**
+-    [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 
 Las capacidades de investigación y respuesta de amenazas en Microsoft Defender para [Office 365](office-365-atp.md) ayudan a los analistas y administradores de seguridad a proteger Microsoft 365 para usuarios empresariales de su organización mediante:
@@ -110,14 +114,14 @@ Microsoft Defender para Office 365 usa el control de acceso basado en roles. Los
 
 |Actividad|Roles y permisos|
 |---|---|
-|Usar el panel de amenazas (o el nuevo panel [de seguridad)](security-dashboard.md) <p> Ver información sobre amenazas recientes o actuales|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Usar el panel de amenazas (o el nuevo [panel de seguridad)](security-dashboard.md) <p> Ver información sobre amenazas recientes o actuales|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ).|
 |Usar [el Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md) para analizar amenazas|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ).|
 |Ver incidentes (también denominados investigaciones) <p> Agregar mensajes de correo electrónico a un incidente|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad**</li><li>**Lector de seguridad**</li></ul> <p> Estos roles se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ).|
-|Desencadenar acciones de correo electrónico en un incidente <p> Buscar y eliminar mensajes de correo electrónico sospechosos|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad** más el **rol Buscar y** purgar</li></ul> <p> Los **roles Administrador global** y Administrador **de** seguridad se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ). <p> El **rol de búsqueda y** depuración debe asignarse en el Centro de & cumplimiento ( <https://protection.office.com> ).|
+|Desencadenar acciones de correo electrónico en un incidente <p> Buscar y eliminar mensajes de correo electrónico sospechosos|Uno de los siguientes: <ul><li>**Administrador global**</li><li>**Administrador de seguridad** más el **rol Buscar y** purgar</li></ul> <p> Los **roles Administrador global** y Administrador **de** seguridad se pueden asignar en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ). <p> El **rol buscar y purgar** debe asignarse en el Centro de & cumplimiento ( <https://protection.office.com> ).|
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint  <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol Administrador  **global o** Administrador de seguridad asignado en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales (como el Centro de seguridad de [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 

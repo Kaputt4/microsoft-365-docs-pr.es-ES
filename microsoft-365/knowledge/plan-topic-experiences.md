@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear los temas de Planeación de Microsoft Viva
-ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107959"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150483"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de temas de Microsoft Viva
 
@@ -32,9 +32,9 @@ En este artículo analizaremos estas decisiones de planeación:
 
 Se respeta la seguridad y privacidad de los datos, y las experiencias de tema no conceden a los usuarios acceso adicional a los archivos a los que no tienen derechos. Le recomendamos que lea también la seguridad y privacidad de [Microsoft Viva Topics](topic-experiences-security-privacy.md) como parte de su proceso de planeación.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
-Debe ser administrador global o administrador de SharePoint para tener acceso al Centro de administración de Microsoft 365 y configurar temas.
+Debe estar suscrito a [Temas Viva](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para acceder al Centro de administración de Microsoft 365 y configurar Temas.
 
 Todos los usuarios que van a usar Temas requieren una licencia **de Experiencias de** tema. La asignación de licencias se trata [en Configurar temas de Microsoft Viva](set-up-topic-experiences.md).
 
@@ -67,7 +67,7 @@ Los permisos de usuario que especifique determinan qué personas de la organizac
 
 *Administrar temas*
 
-Los administradores de conocimientos supervisan la calidad de la información, su estructura y otros procedimientos recomendados en su organización. Pueden confirmar y rechazar temas.
+Los administradores de conocimientos supervisan la calidad de la información, cómo se estructura y otros procedimientos recomendados en su organización. Pueden confirmar y rechazar temas.
 
 Aunque puede especificar administradores de temas individuales, le recomendamos que cree un grupo de seguridad (o use uno existente) que contenga las personas que desea que sean administradores de conocimientos. Puede especificar este grupo de seguridad durante el proceso de instalación.
 
@@ -131,7 +131,7 @@ Al configurar experiencias de tema, necesitará los siguientes elementos a medid
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

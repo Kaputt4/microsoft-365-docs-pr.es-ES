@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3eba2459fd9a0af1963ca8d1446b22fc0b1bdb93
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145408"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -39,7 +39,7 @@ ms.locfileid: "49928623"
 
 
 
-La tabla del esquema de búsqueda avanzada contiene información sobre la entidad de servicio de Azure Active Directory y los inicios de sesión de `AADSpnSignInEventsBeta` identidad administrada. Puede obtener más información sobre los diferentes tipos de inicios de sesión en los informes de actividad de inicio de sesión [de Azure Active Directory : versión preliminar.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+La tabla del esquema de búsqueda avanzada contiene información sobre la entidad de servicio de Azure Active Directory y los inicios de sesión de `AADSpnSignInEventsBeta` identidad administrada. Puede obtener más información sobre los distintos tipos de inicios de sesión en los informes de actividad de inicio de sesión [de Azure Active Directory : versión preliminar.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Use esta referencia para crear consultas que devuelvan información de la tabla.
 
@@ -63,7 +63,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ResourceId`           | string        | Identificador único del recurso al que se ha accedido                                                                                                      |
 | `ResourceTenantId`     | string        | Identificador único del inquilino del recurso al que se ha accedido                                                                                        |
 | `IPAddress`            | string        | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas                                                              |
-| `CountryCode`          | string        | Código de dos letras que indica el país en el que se geolocalización la dirección IP del cliente                                                                |
+| `Country`          | string        | Código de dos letras que indica el país donde se geolocalización la dirección IP del cliente                                                                |
 | `State`                | string        | Estado donde se produjo el inicio de sesión, si está disponible                                                                                                  |
 | `City`                 | string        | Ciudad donde se encuentra el usuario de la cuenta                                                                                                          |
 | `Latitude`             | string        | Coordenadas de norte a sur de la ubicación de inicio de sesión                                                                                          |

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 376e54fb4bf5f07a1c821ff436ddc8ec7dd25812
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6bd0e4fe3173fa899b0b9c86d6f85d724b52be3a
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145012"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -52,15 +52,19 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RegistryValueType` | string | Tipo de datos, como binario o cadena, del valor del Registro al que se aplicó la acción grabada |
 | `RegistryValueName` | string | Nombre del valor del Registro al que se aplicó la acción grabada |
 | `RegistryValueData` | string | Datos del valor del Registro al que se aplicó la acción grabada |
+| `PreviousRegistryKey` | string | Clave del Registro original del valor del Registro antes de modificarla |
 | `PreviousRegistryValueName` | string | Nombre original del valor del Registro antes de modificarlo |
 | `PreviousRegistryValueData` | string | Datos originales del valor del Registro antes de modificarse |
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | string | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessMD5` | cadena | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
+| `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
 | `InitiatingProcessId` | entero | Identificador de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
@@ -68,7 +72,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessParentId` | entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el elemento principal del proceso responsable del evento |
-| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
+| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a procesos basados en determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
 | `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
 | `AppGuardContainerId` | string | Identificador del contenedor virtualizado usado por la Protección de aplicaciones para aislar la actividad del explorador |

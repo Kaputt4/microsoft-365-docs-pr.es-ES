@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7457084d49c5a9fef4ef79abc7702c6b473efcd2
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145306"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -46,7 +46,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ServiceSource` | string | Producto o servicio que proporcionaba la información de alerta |
 | `EntityType` | string | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
 | `EvidenceRole` | string | Cómo participa la entidad en una alerta, indicando si está afectada o simplemente relacionada |
-| `EvidenceDirection` | string | Indica si la entidad es el origen o el destino de una conexión de red |
+| `EvidenceDirection` | string | Indica si la entidad es el origen o el destino de una conexión de red. |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
@@ -59,6 +59,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure Active Directory |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `DeviceId` | string | Identificador único del dispositivo en el servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `LocalIP` | cadena | Dirección IP asignada al dispositivo local usado durante la comunicación |
@@ -68,6 +69,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Application` | string | Aplicación que realizó la acción grabada |
 | `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
+| `RegistryKey` |string | Clave del Registro a la que se aplicó la acción grabada |
+| `RegistryValueName` |string | Nombre del valor del Registro al que se aplicó la acción grabada |
+| `RegistryValueData` |string | Datos del valor del Registro al que se aplicó la acción grabada |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

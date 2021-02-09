@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: 09/08/2020
 search.appverid:
@@ -19,17 +18,23 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794441"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150717"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Esta es una guía de inicio rápido que divide la configuración de Defender para Office 365 en fragmentos. Si no está seguro de dónde empezar a usar las características de protección contra amenazas en Office 365, o si aprende mejor haciendo *esto,* use estas instrucciones como una lista de comprobación y un punto de partida.
 
@@ -55,7 +60,7 @@ Las características de protección contra amenazas se incluyen en *todas las* s
 |Protección contra correo no deseado|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purga automática de cero horas (para correo electrónico)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra archivos y direcciones URL malintencionadas en el correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Activar ATP para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[Defender para Office 365 ](atp-for-spo-odb-and-teams.md)|
+|Activar datos adjuntos seguros para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[Defender para Office 365 ](atp-for-spo-odb-and-teams.md)|
 |Protección contra suplantación de identidad avanzada|[Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
@@ -81,9 +86,9 @@ Inicie el registro de auditoría de forma anticipada. Necesitarás que la audito
 
 [La protección antimalware](anti-malware-protection.md) está disponible en las suscripciones que incluyen [EOP.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-1. En el [Centro de seguridad & cumplimiento,](https://protection.office.com)elija Directiva **antimalware de administración** de \>  \> **amenazas.**
+1. En el [Centro de & cumplimiento,](https://protection.office.com)elija **Directiva de administración de** \> **amenazas** \> **antimalware.**
 
-2. Haga doble clic en la **directiva** predeterminada y, a continuación, elija **configuración.**
+2. Haga doble clic en la **directiva** predeterminada y, a continuación, **elija configuración.**
 
 3. Especifique la siguiente configuración:
 
@@ -151,7 +156,7 @@ Para obtener más información sobre las opciones de directiva contra correo no 
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: Protección contra archivos y direcciones URL malintencionadas (vínculos seguros y datos adjuntos seguros en Defender para Office 365)
 
-La protección con el tiempo de clic contra archivos y direcciones URL malintencionadas está disponible en suscripciones que incluyen [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) Se configura a través de las directivas [de datos](atp-safe-attachments.md) adjuntos seguros [y vínculos](atp-safe-links.md) seguros.
+La protección con el tiempo de clic contra archivos y direcciones URL malintencionadas está disponible en suscripciones que incluyen [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) Se configura mediante directivas de datos [adjuntos seguros](atp-safe-attachments.md) [y vínculos](atp-safe-links.md) seguros.
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -175,7 +180,7 @@ Para configurar datos [adjuntos seguros,](atp-safe-attachments.md)cree al menos 
 
 ### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Directivas de vínculos seguros en Microsoft Defender para Office 365
 
-Para configurar [vínculos](atp-safe-links.md)seguros, revise y edite la configuración global de vínculos seguros y cree al menos una directiva de vínculos seguros.
+Para configurar [vínculos seguros,](atp-safe-links.md)revise y edite la configuración global de vínculos seguros y cree al menos una directiva de vínculos seguros.
 
 1. En el [Centro de & cumplimiento,](https://protection.office.com)elija Vínculos seguros de ATP de directiva de administración de amenazas, haga clic en Configuración global y, a  \>  \> continuación, configure las siguientes opciones: 
 
@@ -207,7 +212,7 @@ Para configurar [vínculos](atp-safe-links.md)seguros, revise y edite la configu
 
 Para más información, consulte [Configurar directivas de vínculos seguros](set-up-atp-safe-links-policies.md).
 
-## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5: comprobar que ATP para SharePoint, OneDrive y Microsoft Teams está activado
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Parte 5: Comprobar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams está activado
 
 Las cargas de trabajo como SharePoint, OneDrive y Teams se han creado para la colaboración. El uso de Defender para Office 365 ayuda a bloquear y detectar archivos identificados como malintencionados en sitios de grupo y bibliotecas de documentos. Puede obtener más información sobre cómo funciona [aquí.](atp-for-spo-odb-and-teams.md)
 
@@ -216,7 +221,7 @@ Las cargas de trabajo como SharePoint, OneDrive y Teams se han creado para la co
 
 1. En el [Centro de & cumplimiento,](https://protection.office.com)elija Datos adjuntos seguros de ATP de directiva de administración de amenazas y, a continuación, haga clic  \>  \> en **Configuración global.**
 
-2. Compruebe que la opción Activar ATP para **SharePoint, OneDrive** y Microsoft Teams está a la derecha: Activar y, a continuación, ![ haga clic en ](../../media/scc-toggle-on.png) **Guardar.**
+2. Compruebe que la opción Activar Defender para **Office 365 para SharePoint, OneDrive** y Microsoft Teams está a la derecha: Activar y, a continuación, haga clic en ![ ](../../media/scc-toggle-on.png) **Guardar.**
 
 3. Revise (y, según corresponda, edite) las directivas de datos adjuntos seguros y las directivas de [vínculos seguros de su organización.](set-up-atp-safe-links-policies.md) [](set-up-atp-safe-attachments-policies.md)
 
@@ -244,7 +249,7 @@ Para recibir una notificación cuando un archivo en SharePoint Online, OneDrive 
 
 5. En la **sección Enviar esta alerta cuando...** establezca:
 
-   a. En la **lista Actividades,** elija **Malware detectado en el archivo.**
+   a. En la lista **Actividades,** elija **Malware detectado en el archivo.**
 
    b. Deje vacío **el campo** Usuarios.
 

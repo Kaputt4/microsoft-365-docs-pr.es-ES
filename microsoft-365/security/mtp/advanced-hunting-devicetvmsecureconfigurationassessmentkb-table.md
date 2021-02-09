@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4cd23b8f3ba99b38264b9bf1ba18e8ec2574bab6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cf4204767843b9a9e0b0bbfecc2d3fc50db531fc
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145456"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -51,8 +51,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|
 | `ConfigurationSubcategory` | string |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationBenchmarks` | string | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
-| `RelatedMitreTechniques` | string | Lista de las técnicas de Mitre ATT&CK relacionadas con la configuración |
-| `RelatedMitreTactics ` | string | Lista de las tácticas de Mitre ATT&CK relacionadas con la configuración |
+| `Tags` | string | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
+| `RemediationOptions` | string | Acciones recomendadas para reducir o solucionar los riesgos asociados |
 
 ## <a name="related-topics"></a>Temas relacionados
 

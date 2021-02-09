@@ -18,14 +18,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a217970098ab88da286bb44a69845b6383a27bbc
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 5c739a47ccab79561277436812c36f842b6b578c
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142818"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directiva para proteger archivos y sitios de SharePoint
+
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- SharePoint en linea 
+
 
 En este artículo se describe cómo implementar las directivas de identidad y acceso de dispositivo recomendadas para proteger SharePoint y OneDrive para la Empresa. Esta guía se basa en las directivas comunes [de acceso a dispositivos e identidades.](identity-access-policies.md)
 
@@ -71,7 +77,7 @@ Para configurar esta directiva, vea "Bloquear o limitar el acceso a determinadas
 
 Microsoft recomienda proteger el contenido de los sitios de SharePoint con contenido confidencial y altamente regulado con controles de acceso a dispositivos. Para ello, cree una directiva que especifique el nivel de protección y los sitios a los que aplicar la protección.
 
-- Sitios confidenciales: permitir el acceso solo al explorador. Esto impide que los usuarios editen y descarguen archivos.
+- Sitios confidenciales: permitir el acceso solo de explorador. Esto impide que los usuarios editen y descarguen archivos.
 - Sitios altamente regulados: bloquear el acceso desde dispositivos no administrados.
 
 Vea "Bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en Control de acceso [desde dispositivos no administrados.](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
@@ -86,10 +92,10 @@ En la siguiente ilustración se proporciona un ejemplo de cómo las directivas d
 
 [Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-Santiago tiene asignadas directivas de acceso condicional de línea base, pero se le puede dar acceso a sitios de SharePoint con protección confidencial o altamente regulada.
+Juan tiene asignadas directivas de acceso condicional de línea base, pero se le puede dar acceso a sitios de SharePoint con protección confidencial o altamente regulada.
 
 - Si Santiago accede a un sitio confidencial o altamente regulado, es miembro del uso de su PC, su acceso se concede siempre que su PC sea compatible.
-- Si Santiago tiene acceso a un sitio confidencial, es miembro del uso de su teléfono no administrado, que está permitido para los usuarios de línea base, recibirá acceso solo de explorador al sitio confidencial debido a la directiva de acceso a dispositivos configurada para este sitio.
+- Si Santiago accede a un sitio confidencial, es miembro del uso de su teléfono no administrado, que está permitido para los usuarios de línea base, recibirá acceso solo de explorador al sitio confidencial debido a la directiva de acceso de dispositivos configurada para este sitio.
 - Si Santiago tiene acceso a un sitio altamente regulado, es miembro del uso de su teléfono no administrado, se le bloqueará debido a la directiva de acceso configurada para este sitio. Solo puede acceder a este sitio con su equipo administrado y compatible.
 
 ## <a name="next-step"></a>Paso siguiente

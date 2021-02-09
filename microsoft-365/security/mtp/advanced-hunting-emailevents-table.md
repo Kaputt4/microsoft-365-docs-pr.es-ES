@@ -20,22 +20,20 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f39e8f77a53b018fdf9c96981524e12f9aface65
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145048"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
+
 - Microsoft 365 Defender
-
-
 
 La tabla del esquema de búsqueda avanzada contiene información sobre eventos relacionados con el procesamiento de correos electrónicos en `EmailEvents` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Use esta referencia para crear consultas que devuelvan información de esta tabla.
 
@@ -47,16 +45,18 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `EmailId` | cadena | Identificador único del destinatario y correo electrónico. |
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico, generado por Microsoft 365 |
 | `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
 | `SenderMailFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
+| `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o un nombre, una inicial intermedia y un apellido o apellido |
+| `SenderObjectId` | string |Identificador único de la cuenta del remitente en Azure AD |
 | `SenderMailFromDomain` | cadena | Dominio de remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
 | `SenderFromDomain` | cadena | Dominio del remitente en el encabezado FROM, que es visible para los destinatarios del correo electrónico en los clientes de correo. |
 | `SenderIPv4` | cadena | Dirección IPv4 del último servidor de correo detectado que retransmitió el mensaje. |
 | `SenderIPv6` | cadena | Dirección IPv6 del último servidor de correo detectado que retransmitió el mensaje. |
 | `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
+| `RecipientObjectId` | cadena | Identificador único para el destinatario de correo electrónico en Azure AD |
 | `Subject` | cadena | Asunto del correo electrónico. |
 | `EmailClusterId` | cadena | Identificador para el grupo de correos electrónicos similares agrupados según el análisis heurístico de su contenido. |
 | `EmailDirection` | cadena | Dirección del correo electrónico relativo a su red: entrante, saliente, dentro de la organización. |
@@ -66,25 +66,25 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `PhishDetectionMethod` | cadena | Método usado para detectar el correo electrónico como suplantación de identidad: reputación de la dirección URL malintencionada, detonación de url de vínculos seguros, filtro de suplantación de identidad avanzado, filtro de suplantación de identidad general, anti-suplantación de identidad: dentro de la organización, contra la suplantación de identidad: dominio externo, suplantación de dominio, suplantación de usuario, suplantación de marca |
 | `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
 | `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor de antimalware, reputación del archivo, datos adjuntos seguros |
+| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
+| `ThreatNames` | string |Nombre de detección de malware u otras amenazas encontradas |
+| `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
+| `ConfidenceLevel` | string | Lista de niveles de confianza de los veredictos de correo no deseado o de suplantación de identidad. En el caso del correo no deseado, en esta columna se muestra el nivel de confianza contra correo no deseado (SCL), que indica si se omitió el correo electrónico (-1), si se encontró que no es correo no deseado (0,1), si se encontró como correo no deseado con confianza moderada (5,6) o si se encontró como correo no deseado con confianza alta (9). Para la suplantación de identidad, esta columna muestra si el nivel de confianza es "Alto" o "Bajo". |
 | `EmailAction` | cadena | Acción final tomada sobre el correo electrónico basada en el veredicto del filtro, las directivas y las acciones del usuario: mover el mensaje a la carpeta correo no deseado, agregar encabezado X, modificar el asunto, redirigir mensaje, eliminar mensaje, enviar a cuarentena, no realizar ninguna acción, enviar mensaje con CCO. |
 | `EmailActionPolicy` | cadena | Directiva de acciones que entró en vigor: correo electrónico no deseado con alto nivel de confianza, correo electrónico no deseado, correo electrónico no deseado masivo, correo electrónico no deseado de suplantación de identidad, suplantación de un dominio protegido contra la suplantación de identidad, suplantación de un usuario protegido contra la suplantación de identidad, suplantación de identidad en contra de las medidas contra la suplantación de identidad, suplantación del gráfico contra la suplantación de identidad, contra el software malintencionado, datos adjuntos seguros, reglas de transporte empresarial (RTE). |
 | `EmailActionPolicyGuid` | cadena | Identificador único de la directiva que determinó la acción final tomada sobre el correo electrónico. |
 | `AttachmentCount` | entero | Número de datos adjuntos en el correo electrónico. |
 | `UrlCount` | entero | Número de URL insertadas en el correo electrónico. |
 | `EmailLanguage` | cadena | Lenguaje detectado en el contenido del correo electrónico. |
+| `Connectors` | string | Instrucciones personalizadas que definen el flujo de correo de la organización y cómo se enrutó el correo electrónico |
 | `OrgLevelAction` | string | Acción realizada en el correo electrónico en respuesta a coincidencias con una directiva definida en el nivel organizativo |
 | `OrgLevelPolicy` | string | Directiva organizativa que desencadenó la acción realizada en el correo electrónico |
 | `UserLevelAction` | string | Acción realizada en el correo electrónico en respuesta a coincidencias con una directiva de buzón definida por el destinatario |
 | `UserLevelPolicy` | string | Directiva de buzón de usuario final que desencadenó la acción realizada en el correo electrónico |
-| `Connectors` | string | Instrucciones personalizadas que definen el flujo de correo de la organización y cómo se enrutó el correo electrónico |
-| `SenderDisplayName` | string | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o un nombre, una inicial intermedia y un apellido o apellido |
-| `SenderObjectId` | string |Identificador único de la cuenta del remitente en Azure AD |
-| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
-| `ThreatNames` | string |Nombre de detección de malware u otras amenazas encontradas |
-| `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
-
+| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 
 ## <a name="related-topics"></a>Temas relacionados
+
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)

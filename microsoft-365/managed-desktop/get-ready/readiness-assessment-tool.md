@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9fbd24185288265d698288e0d5e63e8b3c2afd10
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142938"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
-Para obtener la experiencia más fluida posible cuando se inscribe en el Escritorio administrado de Microsoft, hay opciones de configuración y otros parámetros que debe establecer con antelación, así como ciertos requisitos de dispositivo y red para cumplir. Una herramienta, a la que se accede a través del portal de administración de Escritorio administrado de Microsoft, comprueba la configuración relacionada con la administración. Otra herramienta, que se puede descargar, comprueba los requisitos de dispositivos individuales y la configuración de red. Puedes usar estas herramientas para comprobar esa configuración y recibir pasos detallados para corregir los que no sean correctos.
+Para una experiencia lo más fluida posible al inscribirse en el Escritorio administrado de Microsoft, hay opciones de configuración y otros parámetros que debe establecer con antelación, así como ciertos requisitos de dispositivo y red que cumplir. Una herramienta, a la que se accede a través del portal de administración de Escritorio administrado de Microsoft, comprueba la configuración relacionada con la administración. Otra herramienta, que se puede descargar, comprueba los requisitos de dispositivo individuales y la configuración de red. Puedes usar estas herramientas para comprobar esa configuración y recibir pasos detallados para corregir los que no sean correctos.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Herramienta de comprobación de evaluación de preparación descargable para dispositivos y red
 
@@ -26,15 +26,15 @@ Para obtener más información sobre cómo usar el herramienta de comprobación 
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Herramienta de evaluación de preparación en línea para la configuración de administración
 
-La herramienta en línea comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con el escritorio administrado de Microsoft. Escritorio administrado de Microsoft conserva los datos asociados con estas comprobaciones durante 12 meses después de la última vez que se ejecuta una comprobación en la organización de Azure AD (inquilino). Después de 12 meses, lo conservamos en forma no identificada. Puede elegir eliminar los datos que recopilamos.
+La herramienta en línea comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con el escritorio administrado de Microsoft. Escritorio administrado de Microsoft conserva los datos asociados con estas comprobaciones durante 12 meses después de la última vez que se ejecuta una comprobación en la organización de Azure AD (inquilino). Después de 12 meses, lo conservamos en formato no identificado. Puedes elegir eliminar los datos que recopilamos.
 
-Cualquiera que tenga al menos el rol de administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones[(las](readiness-assessment-fix.md#conditional-access-policies) directivas de acceso condicional y la autenticación [multifactor](readiness-assessment-fix.md#multifactor-authentication) requieren permisos adicionales.
+Cualquiera con al menos el rol lector global o administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones[(las](readiness-assessment-fix.md#conditional-access-policies) directivas de acceso condicional y la autenticación [multifactor](readiness-assessment-fix.md#multifactor-authentication) requieren permisos adicionales.
  
 La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="microsoft-intune-settings"></a>Configuración de Microsoft Intune
 
-|Cheque  |Descripción  |
+|Cheque  |Description  |
 |---------|---------|
 |Perfil de implementación de Autopilot     | Comprueba que la asignación del perfil de implementación de Autopilot no se aplica a todos los dispositivos (el perfil no debe asignarse a ningún dispositivo de Escritorio administrado de Microsoft).        |
 |Conectores de certificados     | Comprueba el estado de los conectores de certificado para asegurarse de que están activos   |
@@ -56,22 +56,22 @@ La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="azure-active-directory-settings"></a>Configuración de Azure Active Directory
 
-|Cheque  |Descripción  |
+|Cheque  |Description  |
 |---------|---------|
 |Suscripciones "ad hoc" para Enterprise State Roaming     | Indica cómo comprobar una configuración que (si se establece en "false") podría impedir que enterprise State Roaming funcione correctamente  |
 |Enterprise State Roaming     | Aconseja cómo comprobar que enterprise State Roaming está habilitado       |
 |Licencias     | Comprueba que ha obtenido las [licencias necesarias](prerequisites.md#more-about-licenses)         |
 |Autenticación multifactor     | Comprueba que la autenticación multifactor no se aplica a todos los usuarios (la autenticación multifactor no se debe aplicar accidentalmente a las cuentas de servicio de Escritorio administrado de Microsoft).|
-|Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entre en conflicto con los que el Escritorio administrado de Microsoft reserva para su propio uso        |
+|Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entre en conflicto con los que Microsoft Managed Desktop reserva para su propio uso        |
 |Roles de administrador de seguridad     | Confirma que los usuarios con roles lector de seguridad, operador de seguridad o lector global tienen asignados esos roles en Microsoft Defender para endpoint         |
-|Valores predeterminados de seguridad | Comprueba si la organización de Azure AD tiene los valores predeterminados de seguridad habilitados en Azure Active Directory |
+|Valores predeterminados de seguridad | Comprueba si la organización de Azure AD tiene habilitados los valores predeterminados de seguridad en Azure Active Directory |
 |Autoservicio de restablecimiento de contraseña     | Confirma que el restablecimiento de contraseña de autoservicio está habilitado        |
 |Rol de usuario estándar     | Comprueba que los usuarios son usuarios estándar y no tienen derechos de administrador local         |
 
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>Configuración de Aplicaciones de Microsoft 365 para empresas
 
-|Cheque  |Descripción  |
+|Cheque  |Description  |
 |---------|---------|
 |OneDrive para la Empresa     | Comprueba si OneDrive para la Empresa usa la configuración no compatible.        |
 

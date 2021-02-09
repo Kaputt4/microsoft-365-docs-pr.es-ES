@@ -15,25 +15,29 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información sobre las reglas de flujo de correo lentas fix en el Centro de seguridad y cumplimiento de & para identificar y corregir reglas de flujo de correo ineficaces o rotas (también conocidas como reglas de transporte) en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef9f26994f563a5f9dad411f2276fd42c28496f9
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: f7f084735decda922b5bcc57c029f2b384114d30
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029131"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150789"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corregir información de reglas de flujo de correo lentas en el Centro de & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Las reglas de flujo de correo ineficientes (también conocidas como reglas de transporte) pueden provocar retrasos en el flujo de correo para su organización. Esta información informa sobre las reglas de flujo de correo que tienen un impacto en el flujo de correo de su organización. Algunos ejemplos de estos tipos de reglas son:
 
-- Condiciones que usan **Es miembro de** para grupos grandes.
+- Condiciones de las **que se usa Es miembro para** grupos grandes.
 - Condiciones que usan coincidencia de patrón de expresión regular compleja (regex).
 - Condiciones que usan la comprobación de contenido en datos adjuntos.
 
-La  información corregir reglas de  flujo de correo [](mail-flow-insights-v2.md) lentas en el área Recomendado para usted del panel de flujo de correo en el Centro de seguridad y cumplimiento de [&](https://protection.office.com) le notifica cuando una regla de flujo de correo tarda demasiado tiempo en completarse.
+La  información corregir reglas de  flujo de correo [](mail-flow-insights-v2.md) lentas en el área Recomendado para usted del panel de flujo de correo del Centro de seguridad y cumplimiento de [&](https://protection.office.com) le notifica cuando una regla de flujo de correo tarda demasiado tiempo en completarse.
 
 Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
 
@@ -52,6 +56,6 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 
 Para obtener más información acerca de las condiciones y excepciones en las reglas de flujo de correo, vea Condiciones y excepciones de reglas de flujo de correo [(predicados) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

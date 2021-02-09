@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7016127a75bca48103f5325ce169faa3d7c31c85
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 48a1520e9fc6239fd3105f01a32a03e5e58df174
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145300"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "49929819"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-La tabla del esquema de búsqueda avanzada contiene información sobre las consultas realizadas en objetos de Active Directory, como `IdentityQueryEvents` usuarios, grupos, dispositivos y dominios. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La tabla del esquema de búsqueda avanzada contiene información sobre las consultas realizadas en objetos de Active Directory, como usuarios, grupos, dispositivos `IdentityQueryEvents` y dominios. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
 > Para obtener información detallada acerca de los tipos de eventos (valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -59,8 +59,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o nombre, una iniciación intermedia y un apellido o apellido. |
 | `DeviceName` | string | Nombre de dominio completo (FQDN) del extremo |
 | `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
+| `Port` | string | Puerto TCP usado durante la comunicación |
 | `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
 | `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
+| `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
 | `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
 | `TargetAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |
 | `TargetAccountDisplayName` | string | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |

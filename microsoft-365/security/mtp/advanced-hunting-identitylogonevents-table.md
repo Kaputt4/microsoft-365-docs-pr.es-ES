@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145360"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -63,8 +63,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceType` | string | Tipo de dispositivo |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
 | `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
+| `Port` | string | Puerto TCP usado durante la comunicación |
 | `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
 | `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
+| `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
 | `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
 | `TargetAccountDisplayName` | string | Nombre para mostrar de la cuenta a la que se aplicó la acción grabada |
 | `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |

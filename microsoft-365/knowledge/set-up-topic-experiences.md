@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar Temas de Microsoft Viva
-ms.openlocfilehash: e8cfe1d849ba5df903f377fd001a8d067f80b608
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107946"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150505"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar temas de Microsoft Viva
 
@@ -23,7 +23,7 @@ Puede usar el Centro de administración de Microsoft 365 para configurar y confi
 
 Es importante planear la mejor manera de configurar y configurar temas en su entorno. Asegúrese de leer [Plan for Microsoft Viva Topics](plan-topic-experiences.md) antes de comenzar los procedimientos de este artículo.
 
-Debe ser administrador global o administrador de SharePoint para tener acceso al Centro de administración de Microsoft 365 y configurar temas.
+Debe estar suscrito a [Temas Viva](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para acceder al Centro de administración de Microsoft 365 y configurar Temas.
 
 ## <a name="video-demonstration"></a>Vídeo de demostración
 
@@ -35,7 +35,7 @@ En este vídeo se muestra el proceso para configurar temas en Microsoft 365.
 
 <br>
 
-## <a name="set-up-topics"></a>Configurar temas
+## <a name="set-up-topics"></a>Configurar Temas
 
 Para configurar temas
 
@@ -44,9 +44,9 @@ Para configurar temas
 
     ![Conectar a las personas con el conocimiento](../media/admin-org-knowledge-options.png) 
 
-3. En la página **Conectar personas al conocimiento,** haga **clic en** Introducción para que le guía por el proceso de configuración.
+3. En la página **Conectar a personas con conocimientos,** haga clic **en** Introducción para que le guía por el proceso de configuración.
 
-    ![Introducción](../media/k-get-started.png) 
+    ![Comenzar](../media/k-get-started.png) 
 
 4. En la **página Elegir cómo pueden encontrar temas Temas Viva,** configurará la detección de temas. En la sección Seleccionar orígenes de temas **de SharePoint,** seleccione los sitios de SharePoint que se rastrearán como orígenes de los temas durante la detección. Elija entre:
     - **Todos los sitios:** todos los sitios de SharePoint de la organización. Esto incluye los sitios actuales y futuros.
@@ -66,7 +66,7 @@ Para configurar temas
 
     #### <a name="how-to-exclude-topics-by-name"></a>Cómo excluir temas por nombre    
 
-    Si necesita excluir temas, después de seleccionar Excluir temas por **nombre,** descargue la plantilla .csv y actualícelo con la lista de temas que desea excluir de los resultados de detección.
+    Si necesita excluir temas, después de seleccionar Excluir temas por **nombre,** descargue la plantilla .csv y actualícárelo con la lista de temas que desea excluir de los resultados de detección.
 
     ![Excluir temas de la plantilla CSV](../media/exclude-topics-csv.png) 
 
@@ -131,7 +131,7 @@ Para asignar licencias:
 
 2. Seleccione los usuarios a los que desea obtener una licencia y haga clic **en Licencias y aplicaciones.**
 
-3. En **Aplicaciones,** asegúrese de **que la búsqueda de conectores** de Graph con temas Index y **Viva** esté seleccionada.
+3. En **Aplicaciones,** asegúrese de **que la búsqueda de conectores** de Graph con experiencias de **índice** y tema está seleccionada.
 
 4. Haga clic en **Guardar cambios**.
 
@@ -144,6 +144,6 @@ Una vez que haya configurado Temas, puede cambiar la configuración que eligió 
 - [Administrar permisos de temas en temas de Microsoft Viva](topic-experiences-user-permissions.md)
 - [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
 [Introducción a las experiencias del tema](topic-experiences-overview.md)

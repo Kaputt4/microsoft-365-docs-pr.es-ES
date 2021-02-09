@@ -1,7 +1,7 @@
 ---
 title: Tabla AADSignInEventsBeta en el esquema de búsqueda avanzada
-description: Obtenga información sobre la información asociada con la tabla de eventos de inicio de sesión de Azure Active Directory del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, archivo, dirección IP, dispositivo, máquina, usuario, cuenta, identidad, AAD
+description: Obtenga información sobre la información asociada a la tabla de eventos de inicio de sesión de Azure Active Directory del esquema de búsqueda avanzada
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, archivo, dirección IP, dispositivo, máquina, usuario, cuenta, identidad, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145432"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -53,7 +53,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp`                       | datetime      | Fecha y hora en que se generó el registro                                                                                                                                         |
 | `Application`                     | cadena        | Aplicación que realizó la acción grabada                                                                                                                                       |
 | `ApplicationId`                   | string        | Identificador único de la aplicación                                                                                                                                               |
-| `LogonType`                       | string        | Tipo de sesión, específicamente interactiva, interactiva remota (RDP), red, lote y servicio                                                                              |
+| `LogonType`                       | string        | Tipo de sesión de inicio de sesión, específicamente interactiva, interactiva remota (RDP), red, lote y servicio                                                                              |
 | `ErrorCode`                       | entero        | Contiene el código de error si se produce un error de inicio de sesión. Para encontrar una descripción de un código de error específico, visite <https://aka.ms/AADsigninsErrorCodes> .                                     |
 | `CorrelationId`                   | string        | Identificador único del evento de inicio de sesión                                                                                                                                              |
 | `SessionId`                       | string        | Número único asignado a un usuario por el servidor de un sitio web durante la visita o sesión                                                                                     |
@@ -85,7 +85,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `ConditionalAccessPolicies`       | string        | Detalles de las directivas de acceso condicional aplicadas al evento de inicio de sesión                                                                                                             |
 | `ConditionalAccessStatus`         | entero        | Estado de las directivas de acceso condicional aplicadas al inicio de sesión. Los valores posibles son 0 (directivas aplicadas), 1 (error al intentar aplicar directivas) o 2 (directivas no aplicadas).      |
 | `IPAddress`                       | string        | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas                                                                                                  |
-| `CountryCode`                     | string        | Código de dos letras que indica el país en el que se geolocalización la dirección IP del cliente                                                                                                    |
+| `Country`                     | string        | Código de dos letras que indica el país en el que se geolocalización la dirección IP del cliente                                                                                                    |
 | `State`                           | string        | Estado donde se produjo el inicio de sesión, si está disponible                                                                                                                                      |
 | `City`                            | string        | Ciudad donde se encuentra el usuario de la cuenta                                                                                                                                              |
 | `Latitude`                        | string        | Coordenadas de norte a sur de la ubicación de inicio de sesión                                                                                                                              |

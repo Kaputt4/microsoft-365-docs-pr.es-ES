@@ -12,17 +12,21 @@ ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos usuarios que reenvía información de correo electrónico en el Centro de seguridad & Cumplimiento para investigar cuándo los usuarios de su organización reenvía mensajes a nuevos dominios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029875"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150260"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios que reenvía información de correo electrónico en el Centro de & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Es sospechoso cuando las nuevas cuentas de usuario de su organización comienzan de pronto a reenviar mensajes de correo electrónico a dominios externos.
 
@@ -32,7 +36,7 @@ Esta información solo aparece cuando se detecta el problema y aparece en la [p�
 
 ![Información de nuevos usuarios que reenvían correo electrónico](../../media/mfi-new-users-forwarding-email.png)
 
-Al hacer clic en el widget, aparece un control flotante donde puede encontrar más [](#forwarding-modifications-report) detalles sobre los mensajes reenviados, incluido un vínculo al informe de modificaciones de reenvío, como se describe más adelante en este artículo.
+Al hacer clic en el widget, aparece un control flotante donde puede encontrar más [](#forwarding-modifications-report) detalles sobre los mensajes reenviados, incluido un vínculo al informe de modificaciones de reenvío, tal como se describe más adelante en este artículo.
 
 ![Menú desplegable de detalles que aparece después de hacer clic en la información de reenvío de correo electrónico de nuevos usuarios](../../media/mfi-new-users-forwarding-email-details.png)
 
@@ -42,7 +46,7 @@ Puede hacer clic en el **vínculo Ver informe asociado con** información para i
 
 ## <a name="forwarding-modifications-report"></a>Informe de modificaciones de reenvío
 
-El **informe de modificaciones de reenvío** muestra detalles sobre los mensajes que se reenvía automáticamente de los remitentes de su organización:
+El **informe de modificaciones de reenvío** muestra detalles sobre los mensajes que se reenván automáticamente de los remitentes de su organización:
 
 - Cuentas recién creadas que reenvía mensajes a dominios externos.
 - Cuentas que reenvía mensajes a dominios externos que nunca han sido reenviados por otros remitentes de la organización.
@@ -70,7 +74,7 @@ Los siguientes gráficos están disponibles en la vista de informe:
 
 Si hace clic **en Filtros** en una vista de informe, puede especificar un intervalo de fechas con fecha **de inicio** y fecha **de finalización.**
 
-### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vista de tabla de detalles del informe de modificaciones de reenvío
+### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vista de tabla de detalles para el informe de modificaciones de reenvío
 
 Si hace clic **en Ver tabla de detalles,** la información que se muestra depende del gráfico que estaba viendo:
 
@@ -96,7 +100,7 @@ Si hace clic **en Filtros en** una vista de tabla de detalles, puede especificar
 
 Si selecciona una fila de la tabla, **aparecerá** un menú desplegable Detalles con la siguiente información:
 
-- **Nombre:** se trata de la dirección de correo electrónico del remitente (desde Mostrar datos **para:** vista Nuevos usuarios de reenvío) o el dominio de correo electrónico del remitente (desde Mostrar datos **para:** Vista Nuevos dominios de reenvío).
+- **Nombre:** esta es la dirección de correo electrónico del remitente (desde Mostrar datos **para:** vista Nuevos usuarios de reenvío) o el dominio de correo electrónico del remitente (desde Mostrar datos **para:** Vista Nuevos dominios de reenvío).
 - **Tipo de reenvío**
 - **Recipient**
 - **Detalles**
@@ -110,4 +114,4 @@ Para volver a la vista informes, haga clic **en Ver informe.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Para obtener información acerca de otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)
+Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 536d95f7226ba907d913df58a47508e44b50147a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 1340464fbe71e919a60668cf7d1b2f535eb6d260
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145330"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -76,6 +76,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
 | `AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
+| `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
+| `FileSize` | largo | Tamaño del archivo en bytes |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
@@ -90,6 +92,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountObjectId` | string | Identificador de objeto de Azure AD de la cuenta de usuario que ejecutó el proceso responsable del evento |
 | `InitiatingProcessLogonId` | string | Identificador de una sesión de inicio de sesión del proceso que inició el evento. Este identificador es único en el mismo equipo solo entre reinicios |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
 | `AppGuardContainerId` | string | Identificador del contenedor virtualizado usado por la Protección de aplicaciones para aislar la actividad del explorador |

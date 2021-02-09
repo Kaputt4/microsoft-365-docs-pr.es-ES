@@ -14,17 +14,21 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información de corregir posibles bucles de correo en el panel de flujo de correo del Centro de seguridad & y cumplimiento para identificar y corregir bucles de correo en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f08c27c761cdfe4acbbd8cf80e8ab6da8012b55f
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 3c9607f053fb5011b8c8af3c8bb2073a9d022909
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029899"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150236"
 ---
-# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir posibles perspectivas del bucle de correo en el Centro de & cumplimiento
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir la posible información del bucle de correo en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Los bucles de correo son malos porque:
 
@@ -36,7 +40,7 @@ La información **de** corrección  de posibles [](mail-flow-insights-v2.md) buc
 
 Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
 
-![Corregir información de reglas de flujo de correo lentas en el área Recomendada para el panel de flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
+![Corregir información de reglas de flujo de correo lentas en el área Recomendado para el panel de flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 
@@ -46,8 +50,8 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 - **Registro MX:** el host (**servidor de correo)** y los valores **de** prioridad del registro MX para el dominio.
 - **Motivo del** bucle **y cómo corregir:** identificaremos los escenarios de bucle de correo más comunes y proporcionaremos las acciones recomendadas para corregir el bucle.
 
-![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información corregir posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
+![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información de corregir posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información acerca de otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

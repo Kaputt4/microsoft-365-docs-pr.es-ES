@@ -21,12 +21,12 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 858b42dbb647e472bcb3e95ddcba850f03ab11f1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 7b2b433d94915d16cd0f5a3611f8fc17d6254e97
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142090"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -37,7 +37,7 @@ ms.locfileid: "50114830"
 
 ::: moniker-end
 
-Puede usar una tarjeta de crédito o débito, o una cuenta bancaria para pagar la suscripción. En algunos casos, puede pagar mediante factura mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, las opciones son ligeramente diferentes. Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Comprender los perfiles de facturación.](manage-billing-profiles.md)
+Puede usar una tarjeta de crédito o débito, o una cuenta bancaria para pagar la suscripción. En algunos casos, puede pagar mediante factura mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, las opciones son ligeramente diferentes. Para obtener más información, vea [Cómo pagar la suscripción con un perfil de facturación.](pay-for-subscription-billing-profile.md) Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Comprender los perfiles de facturación.](manage-billing-profiles.md)
 
 **¿Solo quiere saber dónde enviar el pago de la factura?** Si paga la factura mediante cheque o transferencia electrónica de fondos (EFT), consulte ¿Dónde envío el cheque o [el pago de EFT?](#where-do-i-send-my-check-or-eft-payment)
 

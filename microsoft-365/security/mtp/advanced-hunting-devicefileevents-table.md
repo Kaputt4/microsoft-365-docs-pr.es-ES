@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb51d9b94cc500361f836f7ba8bc4fc290436805
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145312"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -56,9 +56,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
 | `FileOriginReferrerUrl` | string | Dirección URL de la página web que vincula al archivo descargado |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
+| `PreviousFolderPath` | string | Carpeta original que contiene el archivo antes de aplicar la acción grabada |
+| `PreviousFileName` | string | Nombre original del archivo cuyo nombre se cambió como resultado de la acción |
+| `FileSize` | largo | Tamaño del archivo en bytes |
 | `InitiatingProcessAccountDomain` | string | Dominio de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountName` | string | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
+| `InitiatingProcessAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
@@ -67,7 +71,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessId` | entero | Identificador de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos usada para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
+| `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a procesos basados en determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
 | `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
 | `InitiatingProcessParentId` | entero | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
@@ -79,8 +83,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RequestAccountName` | string | Nombre de usuario de la cuenta usada para iniciar la actividad de forma remota |
 | `RequestAccountDomain` | string | Dominio de la cuenta usada para iniciar la actividad de forma remota |
 | `RequestAccountSid` | string | Identificador de seguridad (SID) de la cuenta usada para iniciar la actividad de forma remota |
-| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `AppGuardContainerId` | string | Identificador del contenedor virtualizado usado por la Protección de aplicaciones para aislar la actividad del explorador |
+| `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
+| `InitiatingProcessFileSize` | largo | Tamaño del archivo que ejecutó el proceso responsable del evento |
 | `SensitivityLabel` | string | Etiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarla para la protección de la información |
 | `SensitivitySubLabel` | string | Subetiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarlo para la protección de la información; las subetiquetas de confidencialidad se agrupan en etiquetas de confidencialidad, pero se tratan de forma independiente |
 | `IsAzureInfoProtectionApplied` | boolean | Indica si Azure Information Protection cifra el archivo. |
