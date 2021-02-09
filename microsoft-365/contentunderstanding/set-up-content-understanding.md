@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: 0e5b48bab343f887a1438386bfa4f7915126ccd7
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 58496041004218b48b864fa725084cba8edd518b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145480"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -92,11 +92,11 @@ Para asignar licencias:
 
 1. En el Centro de administración de Microsoft 365, en **Usuarios**, haga clic en **Usuarios activos**.
 
-2. Seleccione los usuarios a los que desea conceder licencias y haga clic en **Administrar licencias de productos**.
+2. Seleccione los usuarios a los que quiere conceder licencias y haga clic en **Administrar licencias de productos**.
 
-3. Seleccione **Asignar más**.
+3. Elija **Aplicaciones** en el menú desplegable.
 
-4. Seleccione **SharePoint Syntex**. En **Aplicaciones**, asegúrese de estén seleccionadas las opciones **Servicio de datos común para SharePoint Syntex**, **SharePoint Syntex** y **SharePoint Syntex: tipo SPO**.
+4. Seleccione **Mostrar aplicaciones para SharePoint Syntex**. En **Aplicaciones**, asegúrese de estén seleccionadas las opciones **Servicio de datos común para SharePoint Syntex**, **SharePoint Syntex** y **SharePoint Syntex: tipo SPO**.
 
     > [!div class="mx-imgBorder"]
     > ![Licencias de SharePoint Syntex en el Centro de administración de Microsoft 365](../media/content-understanding/sharepoint-syntex-licenses.png)
