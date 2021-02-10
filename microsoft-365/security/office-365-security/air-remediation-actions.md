@@ -1,6 +1,6 @@
 ---
-title: Acciones de corrección tras la investigación automatizada en Microsoft Defender para Office 365
-keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
+title: Acciones de corrección en Microsoft Defender para Office 365
+keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzada, amenaza, protección
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,14 +21,20 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4966ce860c3d27f003a4fd86e158ce80de8252e2
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 6d50ea767a795eb8370e9e5c8c1b07a8c9877424
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142638"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176044"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Acciones de corrección en Microsoft Defender para Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Se aplica a**
+- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="remediation-actions"></a>Acciones de corrección
 
@@ -43,7 +49,7 @@ En Microsoft Defender para Office 365, las acciones de corrección no se toman a
 
 ## <a name="threats-and-remediation-actions"></a>Amenazas y acciones de corrección
 
-Microsoft Defender para Office 365 incluye acciones de corrección para abordar diversas amenazas. Las investigaciones automatizadas suelen dar como resultado una o más acciones correctivas para revisar y aprobar. En algunos casos, una investigación automatizada no da como resultado una acción de corrección específica. Para investigar y realizar las acciones adecuadas, use las instrucciones de la tabla siguiente.
+Microsoft Defender para Office 365 incluye acciones de corrección para abordar diversas amenazas. Las investigaciones automatizadas suelen dar lugar a una o varias acciones correctivas para revisar y aprobar. En algunos casos, una investigación automatizada no da como resultado una acción de corrección específica. Para investigar y realizar las acciones adecuadas, use las instrucciones de la tabla siguiente.
 
 |Categoría|Amenaza/riesgo|Acciones de corrección|
 |:---|:---|:---|
@@ -57,9 +63,9 @@ Microsoft Defender para Office 365 incluye acciones de corrección para abordar 
 |Usuario|Un usuario hizo clic en una dirección URL malintencionada <br> (Un usuario ha navegado a una página que posteriormente se [](atp-safe-links.md#warning-pages-from-safe-links) ha encontrado malintencionada o un usuario ha omitido una página de advertencia de Vínculos seguros para ir a una página malintencionada).|La investigación automatizada no da como resultado una acción específica pendiente. <p>Use el Explorador de amenazas para ver datos sobre direcciones URL y hacer clic [en veredictos.](threat-explorer.md#view-phishing-url-and-click-verdict-data) <p>Si su organización usa [Microsoft Defender para Endpoint,](https://docs.microsoft.com/windows/security/threat-protection/) [considere](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) la posibilidad de investigar al usuario para determinar si su cuenta está en peligro.|
 |Usuario|Un usuario envía malware o phishing|La investigación automatizada no da como resultado una acción específica pendiente. <p> El usuario podría estar informando de malware [](anti-spoofing-protection.md) o phishing, o alguien podría estar suplantando al usuario como parte de un ataque. Use [el Explorador de amenazas](threat-explorer.md) para ver y controlar el correo electrónico que contiene [malware](threat-explorer-views.md#email--malware) o [phishing.](threat-explorer-views.md#email--phish)|
 |Usuario|Reenvío de correo <br> (Se configuran reglas de reenvío de buzones, que se pueden usar para la exfiltración de datos).|Quitar regla de reenvío <p> Use [información sobre el flujo de correo,](mail-flow-insights-v2.md)incluido el [informe](mfi-auto-forwarded-messages-report.md)de mensajes de reenvío automático, para ver detalles más específicos sobre el correo electrónico reenviado.|
-|Usuario|Reglas de delegación de correo electrónico <br> (La cuenta de un usuario tiene configurada la delegación).|Quitar regla de delegación <p> Si su organización usa [Microsoft Defender para Endpoint,](https://docs.microsoft.com/windows/security/threat-protection/)considere [la posibilidad de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) investigar al usuario que está obteniendo el permiso de delegación.|
+|Usuario|Reglas de delegación de correo electrónico <br> (La cuenta de un usuario tiene configurada la delegación).|Quitar regla de delegación <p> Si su organización usa [Microsoft Defender para Endpoint,](https://docs.microsoft.com/windows/security/threat-protection/)considere [la posibilidad de investigar](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) al usuario que tiene el permiso de delegación.|
 |Usuario|Exfiltración de datos <br> (Un usuario infringió el correo electrónico o las directivas DLP de uso [compartido de archivos).](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|La investigación automatizada no da como resultado una acción específica pendiente. <p> [Ver informes dlp y tomar medidas.](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)|
-|Usuario|Envío de correo electrónico anómalo <br> (Un usuario envió recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción específica pendiente. <p> Enviar un gran volumen de correo electrónico no es malintencionado por sí mismo; es posible que el usuario simplemente haya enviado un correo electrónico a un gran grupo de destinatarios para un evento. Para investigar, use información sobre [](mfi-mail-flow-map-report.md) el flujo de correo, incluido [el](mail-flow-insights-v2.md)informe de mapa de flujo de correo para determinar lo que está sucediendo y tomar medidas.|
+|Usuario|Envío de correo electrónico anómalo <br> (Un usuario envió recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción específica pendiente. <p> Enviar un gran volumen de correo electrónico no es malintencionado por sí mismo; es posible que el usuario simplemente haya enviado un correo electrónico a un grupo grande de destinatarios para un evento. Para investigar, use información sobre [](mfi-mail-flow-map-report.md) el flujo de correo, incluido [el](mail-flow-insights-v2.md)informe de mapa de flujo de correo para determinar lo que está sucediendo y tomar medidas.|
 
 ## <a name="next-steps"></a>Siguientes pasos
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
+ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080685"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173127"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -377,7 +377,7 @@ Para cargar un paquete de reglas, siga este procedimiento:
    Para obtener información detallada sobre la sintaxis y los parámetros, vea [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
    > [!NOTE]
-   > El límite para las colecciones de tipo de información confidencial personalizado es de 10.
+   > El número máximo de paquetes de reglas admitidos es 10, pero cada paquete puede contener la definición de varios tipos de información confidencial.
 
 4. Para comprobar si un tipo de información confidencial se creó correctamente, siga uno de estos procedimientos:
 

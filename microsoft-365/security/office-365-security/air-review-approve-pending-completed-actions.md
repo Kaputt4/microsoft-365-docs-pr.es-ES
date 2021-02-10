@@ -1,6 +1,6 @@
 ---
 title: Revisar y administrar acciones correctivas en Microsoft Defender para Office 365
-keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
+keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzada, amenaza, protección
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,16 +19,16 @@ description: Obtenga información sobre las acciones de corrección en las capac
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: bcff8f12133ea16e3d91e293943be1593eaf9659
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142698"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176020"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
-A medida que las investigaciones automatizadas en el correo & contenido de colaboración resultan en veredictos, como *malintencionados* o *sospechosos,* se crean determinadas acciones de corrección. En Microsoft Defender para Office 365, las acciones de corrección pueden incluir:
+A medida que las investigaciones automatizadas en el correo  & contenido de colaboración resultan en veredictos, como malintencionados o sospechosos, se crean determinadas acciones de corrección. En Microsoft Defender para Office 365, las acciones de corrección pueden incluir:
 - Bloqueo de una dirección URL (tiempo de clic)
 - Eliminación de mensajes de correo electrónico o clústeres de forma flexible
 - Quarantining email or email attachments
@@ -36,11 +36,15 @@ A medida que las investigaciones automatizadas en el correo & contenido de colab
 
 Estas acciones de corrección no se toman a menos que el equipo de operaciones de seguridad las apruebe y hasta que el equipo de operaciones de seguridad las apruebe. Se recomienda revisar y aprobar las acciones pendientes lo antes posible para que las investigaciones automatizadas se completen de forma oportuna. En algunos casos, puede deshacer una acción de corrección.
 
+**Se aplica a**
+- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 ## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
 
 1. Vaya al Centro de seguridad de Microsoft 365) [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones.**
-3. En la **pestaña** Pendiente, revisa la lista de acciones que están a la espera de su aprobación.
+3. En la **pestaña** Pendiente, revisa la lista de acciones que esperan la aprobación.
 4. Seleccione un elemento de la lista. Se abre el panel desplegable. 
 5. Revise la información del panel desplegable y, a continuación, siga uno de estos pasos:
    - Seleccione **abrir la página de investigación** para ver más detalles sobre la investigación.

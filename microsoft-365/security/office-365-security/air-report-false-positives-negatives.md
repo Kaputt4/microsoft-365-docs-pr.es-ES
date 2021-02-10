@@ -22,17 +22,20 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142986"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175756"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en las capacidades automatizadas de investigación y respuesta
 
-**Se aplica a:**
-- Microsoft Defender para Office 365
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Se aplica a**
+- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Si las capacidades de investigación y respuesta [automatizadas (AIR) en Office 365](automated-investigation-response-office.md) no se detectaron o detectaron algo incorrectamente, hay pasos que el equipo de operaciones de seguridad puede seguir para solucionarlo. Estas acciones incluyen:
 
@@ -50,7 +53,7 @@ También puede enviar [un archivo a Microsoft para el análisis de malware.](htt
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
 
-Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puedes administrar alertas en el [portal de Cloud App Security.](https://docs.microsoft.com/cloud-app-security/managing-alerts)
+Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puede administrar alertas en el [portal de Cloud App Security.](https://docs.microsoft.com/cloud-app-security/managing-alerts)
 
 Si su organización usa [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puede crear un indicador personalizado con una acción ["Permitir"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo.
 
@@ -63,7 +66,7 @@ En la mayoría de los casos, si se ha realizado una acción de corrección en un
 
 ### <a name="undo-an-action-using-threat-explorer"></a>Deshacer una acción con el Explorador de amenazas
 
-Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encontrar un correo electrónico afectado por una acción y, potencialmente, deshacer la acción.
+Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encontrar un correo electrónico afectado por una acción y deshacer potencialmente la acción.
 
 |Escenario|Opciones de deshacer|Más información|
 |---|---|---|

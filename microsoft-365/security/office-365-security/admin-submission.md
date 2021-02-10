@@ -16,19 +16,23 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar el portal de envíos del Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos sospechosos de suplantación de identidad, correo no deseado y otros mensajes potencialmente peligrosos, direcciones URL y archivos a Microsoft para su análisis.
+description: Los administradores pueden aprender a usar el portal de envíos del Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos sospechosos de suplantación de identidad, correo no deseado y otros mensajes potencialmente perjudiciales, direcciones URL y archivos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed417db93bc2f3efa6b85b0ef97c10b5941cd8eb
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 7a822909c318cb336c179b299aa64cd71dcca4d8
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029519"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175876"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 
 En organizaciones de Microsoft 365 con buzones en Exchange Online, los administradores pueden usar el portal de envíos del Centro de seguridad & y cumplimiento para enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft para su análisis.
@@ -57,7 +61,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
     Tenga en cuenta que es necesario pertenecer a este grupo de roles para ver los [envíos](#view-user-submissions-to-the-custom-mailbox) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
 
-- Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea Notificar mensajes y [archivos a Microsoft.](report-junk-email-messages-to-microsoft.md)
+- Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea Notificar mensajes [y archivos a Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Notificar contenido sospechoso a Microsoft
 
@@ -78,7 +82,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 2. En la **sección** Destinatarios, especifique uno o más destinatarios con los que desea ejecutar una comprobación de directiva. La comprobación de directivas determinará si el correo electrónico omitió el examen debido a directivas de usuario u organización.
 
-3. En la **sección Motivo del** envío, selecciona una de las siguientes opciones:
+3. En la **sección Motivo del envío,** selecciona una de las siguientes opciones:
 
    - **No debería haber sido bloqueado**
 
@@ -108,7 +112,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 2. Haga clic **en Elegir archivo.** En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **Abrir**.
 
-3. En la **sección Motivo del** envío, selecciona una de las siguientes opciones:
+3. En la **sección Motivo del envío,** selecciona una de las siguientes opciones:
 
    - **No debería haber sido bloqueado**
 
@@ -142,7 +146,7 @@ Debajo del gráfico, hay tres pestañas: **Correo** electrónico (predeterminado
 
 Haga clic en **la pestaña** Correo electrónico.
 
-Puede hacer clic en el **botón Opciones de columna** situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
+Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
 - **Fecha**
 - **Identificador de** envío: un valor GUID que se asigna a cada envío.
@@ -163,7 +167,7 @@ Los mensajes que se envían en envíos de administrador se examinan de nuevo y l
 - Si se ha produce un error en la autenticación de correo electrónico del remitente en el momento de la entrega.
 - Información sobre los aciertos de directiva que podrían haber afectado o invalidado el veredicto de un mensaje.
 - Resultados de detonación actuales para ver si las direcciones URL o los archivos contenidos en el mensaje eran malintencionados o no.
-- Comentarios de los alumnos.
+- Comentarios de los calificadores.
 
 Si se encontró una invalidación, el nuevo análisis debe completarse en varios minutos. Si no hubo un problema en la autenticación o entrega de correo electrónico no se vio afectado por una invalidación, los comentarios de los calificadores podrían tardar hasta un día.
 
@@ -171,7 +175,7 @@ Si se encontró una invalidación, el nuevo análisis debe completarse en varios
 
 Haga clic en la **pestaña Dirección** URL.
 
-Puede hacer clic en el **botón Opciones de columna** situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
+Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
 - **Fecha**
 - **Id. de envío**
@@ -199,13 +203,13 @@ Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte 
 
 ## <a name="view-user-submissions-to-microsoft"></a>Ver envíos de usuarios a Microsoft
 
-Si ha implementado el complemento Mensaje de [](enable-the-report-phish-add-in.md) [informe,](enable-the-report-message-add-in.md)el complemento de suplantación de identidad de informes o los usuarios usan los informes integrados en Outlook en [la Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)puede ver qué usuarios están informando en la pestaña **Envíos** de usuarios.
+Si ha implementado el complemento mensaje de [](enable-the-report-phish-add-in.md) [informe,](enable-the-report-message-add-in.md)el complemento de suplantación de identidad de informes o los usuarios usan los informes integrados en Outlook en [la Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)puede ver qué usuarios están informando en la pestaña **Envíos** de usuarios.
 
-1. En el Centro de & cumplimiento, vaya a **Envíos de administración** \> **de amenazas.**
+1. En el Centro de & cumplimiento, vaya a **Envíos de** \> **administración de amenazas.**
 
 2. Selecciona la **pestaña Envíos de** usuario y, a continuación, haz clic **en Nuevo envío.**
 
-Puede hacer clic en el **botón Opciones de columna** situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
+Puede hacer clic en el **botón Opciones de** columna situado cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
 - **Enviado en**
 - **Enviado por**<sup>\*</sup>
@@ -234,7 +238,7 @@ Para exportar los resultados, haga clic **en Exportar** cerca de la parte superi
 
 **Si** ha configurado un [buzón personalizado](user-submission.md) para recibir mensajes notificados por el usuario, puede ver y enviar también los mensajes que se entregaron al buzón de informes.
 
-1. En el Centro de & cumplimiento, vaya a **Envíos de administración** \> **de amenazas.**
+1. En el Centro de & cumplimiento, vaya a **Envíos de** \> **administración de amenazas.**
 
 2. Seleccione la **pestaña Buzón personalizado.**
 
@@ -266,4 +270,4 @@ En la **pestaña Buzón personalizado,** seleccione un  mensaje en la lista, hag
 - **Notificar malware**
 - **Notificar correo no deseado**
 
-![Opciones del botón Acción](../../media/user-submission-custom-mailbox-action-button.png)
+![Opciones en el botón Acción](../../media/user-submission-custom-mailbox-action-button.png)
