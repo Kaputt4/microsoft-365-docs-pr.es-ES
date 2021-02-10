@@ -8,179 +8,182 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre la interfaz de administración web en la protección independiente de Exchange Online (EOP).
-ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Obtenga información sobre la interfaz de administración web en Exchange Online Protection (EOP) independiente.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659671"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166224"
 ---
-# <a name="exchange-admin-center-in-standalone-eop"></a><span data-ttu-id="238f1-103">Centro de administración de Exchange en EOP independiente</span><span class="sxs-lookup"><span data-stu-id="238f1-103">Exchange admin center in standalone EOP</span></span>
+# <a name="exchange-admin-center-in-standalone-eop"></a><span data-ttu-id="a0253-103">Centro de administración de Exchange en EOP independiente</span><span class="sxs-lookup"><span data-stu-id="a0253-103">Exchange admin center in standalone EOP</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="a0253-104">**Se aplica a**</span><span class="sxs-lookup"><span data-stu-id="a0253-104">**Applies to**</span></span>
+-  [<span data-ttu-id="a0253-105">Exchange Online Protection independiente</span><span class="sxs-lookup"><span data-stu-id="a0253-105">Exchange Online Protection standalone</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-<span data-ttu-id="238f1-104">El centro de administración de Exchange (EAC) es una consola de administración basada en web para la protección independiente de Exchange Online (EOP).</span><span class="sxs-lookup"><span data-stu-id="238f1-104">The Exchange admin center (EAC) is a web-based management console for standalone Exchange Online Protection (EOP).</span></span>
+<span data-ttu-id="a0253-106">El Centro de administración de Exchange (EAC) es una consola de administración basada en web para Exchange Online Protection (EOP) independiente.</span><span class="sxs-lookup"><span data-stu-id="a0253-106">The Exchange admin center (EAC) is a web-based management console for standalone Exchange Online Protection (EOP).</span></span>
 
-<span data-ttu-id="238f1-105">¿Está buscando la versión de Exchange Online de este tema?</span><span class="sxs-lookup"><span data-stu-id="238f1-105">Looking for the Exchange Online version of this topic?</span></span> <span data-ttu-id="238f1-106">Vea [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).</span><span class="sxs-lookup"><span data-stu-id="238f1-106">See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).</span></span>
+<span data-ttu-id="a0253-107">¿Está buscando la versión de Exchange Online de este tema?</span><span class="sxs-lookup"><span data-stu-id="a0253-107">Looking for the Exchange Online version of this topic?</span></span> <span data-ttu-id="a0253-108">Vea [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).</span><span class="sxs-lookup"><span data-stu-id="a0253-108">See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).</span></span>
 
-## <a name="open-the-eac-in-eop"></a><span data-ttu-id="238f1-107">Abrir el EAC en EOP</span><span class="sxs-lookup"><span data-stu-id="238f1-107">Open the EAC in EOP</span></span>
+## <a name="open-the-eac-in-eop"></a><span data-ttu-id="a0253-109">Abrir el EAC en EOP</span><span class="sxs-lookup"><span data-stu-id="a0253-109">Open the EAC in EOP</span></span>
 
-<span data-ttu-id="238f1-108">Los clientes de EOP independientes pueden tener acceso al EAC mediante los métodos siguientes:</span><span class="sxs-lookup"><span data-stu-id="238f1-108">Standalone EOP customers can access the EAC by using the following methods:</span></span>
+<span data-ttu-id="a0253-110">Los clientes independientes de EOP pueden acceder al EAC mediante los métodos siguientes:</span><span class="sxs-lookup"><span data-stu-id="a0253-110">Standalone EOP customers can access the EAC by using the following methods:</span></span>
 
-- <span data-ttu-id="238f1-109">**En el centro de administración de Microsoft 365**:</span><span class="sxs-lookup"><span data-stu-id="238f1-109">**From the Microsoft 365 admin center**:</span></span>
+- <span data-ttu-id="a0253-111">**Desde el Centro de administración de Microsoft 365:**</span><span class="sxs-lookup"><span data-stu-id="a0253-111">**From the Microsoft 365 admin center**:</span></span>
 
-  1. <span data-ttu-id="238f1-110">Vaya a <https://admin.microsoft.com> y haga clic en **Mostrar todo**.</span><span class="sxs-lookup"><span data-stu-id="238f1-110">Go to <https://admin.microsoft.com> and click **Show all**.</span></span>
+  1. <span data-ttu-id="a0253-112">Vaya a <https://admin.microsoft.com> Mostrar todo y haga clic en Mostrar **todo.**</span><span class="sxs-lookup"><span data-stu-id="a0253-112">Go to <https://admin.microsoft.com> and click **Show all**.</span></span>
 
-     ![Haga clic en Mostrar todo en el centro de administración de Microsoft 365](../../media/m365-center-show-all.png)
+     ![Haga clic en Mostrar todo en el Centro de administración de Microsoft 365](../../media/m365-center-show-all.png)
 
-  2. <span data-ttu-id="238f1-112">En la sección **centros de administración** que aparece, haga clic en **todos los centros de administración**.</span><span class="sxs-lookup"><span data-stu-id="238f1-112">In the **Admin centers** section that appears, click **All admin centers**.</span></span>
+  2. <span data-ttu-id="a0253-114">En la sección **Centros de** administración que aparece, haga clic en Todos los centros **de administración.**</span><span class="sxs-lookup"><span data-stu-id="a0253-114">In the **Admin centers** section that appears, click **All admin centers**.</span></span>
 
-     ![Haga clic en todos los centros de administración en el centro de administración de Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
+     ![Haga clic en Todos los centros de administración en el Centro de administración de Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
 
-  3. <span data-ttu-id="238f1-114">En la página **todos los centros de administración** que aparece, haga clic en **protección en línea de Exchange**.</span><span class="sxs-lookup"><span data-stu-id="238f1-114">On the **All admin centers** page that appears, click **Exchange Online Protection**.</span></span>
+  3. <span data-ttu-id="a0253-116">En la **página Todos los centros de** administración que aparece, haga clic en Exchange Online **Protection.**</span><span class="sxs-lookup"><span data-stu-id="a0253-116">On the **All admin centers** page that appears, click **Exchange Online Protection**.</span></span>
 
-- <span data-ttu-id="238f1-115">Ir directamente a `https://admin.protection.outlook.com/ecp/` .</span><span class="sxs-lookup"><span data-stu-id="238f1-115">Go directly to `https://admin.protection.outlook.com/ecp/`.</span></span>
+- <span data-ttu-id="a0253-117">Vaya directamente a `https://admin.protection.outlook.com/ecp/` .</span><span class="sxs-lookup"><span data-stu-id="a0253-117">Go directly to `https://admin.protection.outlook.com/ecp/`.</span></span>
 
-## <a name="common-user-interface-elements-in-the-eac-in-eop"></a><span data-ttu-id="238f1-116">Elementos comunes de la interfaz de usuario en el EAC en EOP</span><span class="sxs-lookup"><span data-stu-id="238f1-116">Common user interface elements in the EAC in EOP</span></span>
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a><span data-ttu-id="a0253-118">Elementos comunes de la interfaz de usuario en el EAC en EOP</span><span class="sxs-lookup"><span data-stu-id="a0253-118">Common user interface elements in the EAC in EOP</span></span>
 
-<span data-ttu-id="238f1-117">En esta sección se describen los elementos de la interfaz de usuario del EAC.</span><span class="sxs-lookup"><span data-stu-id="238f1-117">This section describes the user interface elements that are found in the EAC.</span></span>
+<span data-ttu-id="a0253-119">En esta sección se describen los elementos de la interfaz de usuario del EAC.</span><span class="sxs-lookup"><span data-stu-id="a0253-119">This section describes the user interface elements that are found in the EAC.</span></span>
 
-![Centro de administración de Exchange en Exchange Online Protection](../../media/EOP-AdminCenter.png)
+![El Centro de administración de Exchange en Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
-### <a name="feature-pane"></a><span data-ttu-id="238f1-119">Panel de características</span><span class="sxs-lookup"><span data-stu-id="238f1-119">Feature Pane</span></span>
+### <a name="feature-pane"></a><span data-ttu-id="a0253-121">Panel de características</span><span class="sxs-lookup"><span data-stu-id="a0253-121">Feature Pane</span></span>
 
-<span data-ttu-id="238f1-p102">Este es el primer nivel de navegación para la mayoría de las tareas que realizará en el EAC. El panel de características se organiza por áreas.</span><span class="sxs-lookup"><span data-stu-id="238f1-p102">This is the first level of navigation for most of the tasks you'll perform in the EAC. The feature pane is organized by feature areas.</span></span>
+<span data-ttu-id="a0253-p102">Este es el primer nivel de navegación para la mayoría de las tareas que realizará en el EAC. El panel de características se organiza por áreas.</span><span class="sxs-lookup"><span data-stu-id="a0253-p102">This is the first level of navigation for most of the tasks you'll perform in the EAC. The feature pane is organized by feature areas.</span></span>
 
-- <span data-ttu-id="238f1-122">**Destinatarios**: aquí es donde se ven los grupos y los contactos externos.</span><span class="sxs-lookup"><span data-stu-id="238f1-122">**Recipients**: This is where you'll view groups and external contacts.</span></span>
+- <span data-ttu-id="a0253-124">**Destinatarios:** aquí es donde verá grupos y contactos externos.</span><span class="sxs-lookup"><span data-stu-id="a0253-124">**Recipients**: This is where you'll view groups and external contacts.</span></span>
 
-- <span data-ttu-id="238f1-123">**Permisos**: aquí donde podrá administrar los roles de administrador.</span><span class="sxs-lookup"><span data-stu-id="238f1-123">**Permissions**: This where you'll manage admin roles.</span></span>
+- <span data-ttu-id="a0253-125">**Permisos:** aquí donde administrará los roles de administrador.</span><span class="sxs-lookup"><span data-stu-id="a0253-125">**Permissions**: This where you'll manage admin roles.</span></span>
 
-- <span data-ttu-id="238f1-124">**Administración de cumplimiento**: aquí es donde encontrará el informe de grupo de roles de administrador y el registro de auditoría de administrador.</span><span class="sxs-lookup"><span data-stu-id="238f1-124">**Compliance Management**: This is where you'll find the administrator role group report and the admin audit log report.</span></span>
+- <span data-ttu-id="a0253-126">**Administración de** cumplimiento: aquí es donde encontrará el informe de grupo de roles de administrador y el informe de registro de auditoría de administrador.</span><span class="sxs-lookup"><span data-stu-id="a0253-126">**Compliance Management**: This is where you'll find the administrator role group report and the admin audit log report.</span></span>
 
-- <span data-ttu-id="238f1-125">**Protección**: aquí puede administrar las directivas antimalware, la Directiva de filtro de conexión predeterminada y DKIM.</span><span class="sxs-lookup"><span data-stu-id="238f1-125">**Protection**: This is where you can manage anti-malware policies, the default connection filter policy, and DKIM.</span></span>
+- <span data-ttu-id="a0253-127">**Protección:** aquí es donde puede administrar directivas antimalware, la directiva de filtro de conexión predeterminada y DKIM.</span><span class="sxs-lookup"><span data-stu-id="a0253-127">**Protection**: This is where you can manage anti-malware policies, the default connection filter policy, and DKIM.</span></span>
 
   > [!NOTE]
-  > <span data-ttu-id="238f1-126">Debe administrar las directivas antimalware y la Directiva de filtro de conexión predeterminada en el centro de seguridad & cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="238f1-126">You should manage anti-malware policies and the default connection filter policy in the Security & Compliance Center.</span></span> <span data-ttu-id="238f1-127">Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) y [Configure Connection Filtering in EOP](configure-the-connection-filter-policy.md).</span><span class="sxs-lookup"><span data-stu-id="238f1-127">For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).</span></span>
+  > <span data-ttu-id="a0253-128">Debe administrar las directivas antimalware y la directiva de filtro de conexión predeterminada en el Centro de & cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="a0253-128">You should manage anti-malware policies and the default connection filter policy in the Security & Compliance Center.</span></span> <span data-ttu-id="a0253-129">Para obtener más información, vea [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md) y Configurar el filtrado [de conexiones en EOP.](configure-the-connection-filter-policy.md)</span><span class="sxs-lookup"><span data-stu-id="a0253-129">For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).</span></span>
 
-- <span data-ttu-id="238f1-128">**Flujo de correo**: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), dominios aceptados y conectores, así como donde puede ir a ejecutar seguimiento de mensajes.</span><span class="sxs-lookup"><span data-stu-id="238f1-128">**Mail Flow**: This is where you'll manage mail flow rules (also known as transport rules), accepted domains, and connectors, as well as where you can go to run message trace.</span></span>
+- <span data-ttu-id="a0253-130">**Flujo de** correo: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), los dominios aceptados y los conectores, así como dónde puede ir a ejecutar el seguimiento de mensajes.</span><span class="sxs-lookup"><span data-stu-id="a0253-130">**Mail Flow**: This is where you'll manage mail flow rules (also known as transport rules), accepted domains, and connectors, as well as where you can go to run message trace.</span></span>
 
-- <span data-ttu-id="238f1-129">**Híbrido**: aquí puede ejecutar el [Asistente para la configuración híbrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)y donde puede instalar el [módulo de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="238f1-129">**Hybrid**: This is where you can run the [Hybrid Configuration Wizard](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard), and where you can install the [Exchange Online PowerShell module](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).</span></span>
+- <span data-ttu-id="a0253-131">**Híbrido:** aquí es donde puede ejecutar [el](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)Asistente para la configuración híbrida y donde puede instalar el módulo [de PowerShell de Exchange Online.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)</span><span class="sxs-lookup"><span data-stu-id="a0253-131">**Hybrid**: This is where you can run the [Hybrid Configuration Wizard](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard), and where you can install the [Exchange Online PowerShell module](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).</span></span>
 
-### <a name="tabs"></a><span data-ttu-id="238f1-130">Pestañas</span><span class="sxs-lookup"><span data-stu-id="238f1-130">Tabs</span></span>
+### <a name="tabs"></a><span data-ttu-id="a0253-132">Pestañas</span><span class="sxs-lookup"><span data-stu-id="a0253-132">Tabs</span></span>
 
-<span data-ttu-id="238f1-131">Las pestañas son el segundo nivel de navegación.</span><span class="sxs-lookup"><span data-stu-id="238f1-131">The tabs are your second level of navigation.</span></span> <span data-ttu-id="238f1-132">Las áreas de características contienen varias pestañas y cada área representa a una característica.</span><span class="sxs-lookup"><span data-stu-id="238f1-132">Each of the feature areas contains various tabs, each representing a feature.</span></span>
+<span data-ttu-id="a0253-133">Las pestañas son el segundo nivel de navegación.</span><span class="sxs-lookup"><span data-stu-id="a0253-133">The tabs are your second level of navigation.</span></span> <span data-ttu-id="a0253-134">Las áreas de características contienen varias pestañas y cada área representa a una característica.</span><span class="sxs-lookup"><span data-stu-id="a0253-134">Each of the feature areas contains various tabs, each representing a feature.</span></span>
 
-### <a name="toolbar"></a><span data-ttu-id="238f1-133">Barra de herramientas</span><span class="sxs-lookup"><span data-stu-id="238f1-133">Toolbar</span></span>
+### <a name="toolbar"></a><span data-ttu-id="a0253-135">Barra de herramientas</span><span class="sxs-lookup"><span data-stu-id="a0253-135">Toolbar</span></span>
 
-<span data-ttu-id="238f1-p105">Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. La barra de herramientas tiene iconos que realizan una acción específica. La siguiente tabla describe los iconos y sus acciones.</span><span class="sxs-lookup"><span data-stu-id="238f1-p105">When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.</span></span>
+<span data-ttu-id="a0253-p105">Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. La barra de herramientas tiene iconos que realizan una acción específica. La siguiente tabla describe los iconos y sus acciones.</span><span class="sxs-lookup"><span data-stu-id="a0253-p105">When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.</span></span>
 
 ****
 
-|<span data-ttu-id="238f1-137">Icon</span><span class="sxs-lookup"><span data-stu-id="238f1-137">Icon</span></span>|<span data-ttu-id="238f1-138">Nombre</span><span class="sxs-lookup"><span data-stu-id="238f1-138">Name</span></span>|<span data-ttu-id="238f1-139">Action</span><span class="sxs-lookup"><span data-stu-id="238f1-139">Action</span></span>|
+|<span data-ttu-id="a0253-139">Icon</span><span class="sxs-lookup"><span data-stu-id="a0253-139">Icon</span></span>|<span data-ttu-id="a0253-140">Nombre</span><span class="sxs-lookup"><span data-stu-id="a0253-140">Name</span></span>|<span data-ttu-id="a0253-141">Action</span><span class="sxs-lookup"><span data-stu-id="a0253-141">Action</span></span>|
 |---|---|---|
-|![Agregar icono](../../media/ITPro-EAC-AddIcon.gif)|<span data-ttu-id="238f1-141">Agregar, nuevo</span><span class="sxs-lookup"><span data-stu-id="238f1-141">Add, New</span></span>|<span data-ttu-id="238f1-p106">Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.</span><span class="sxs-lookup"><span data-stu-id="238f1-p106">Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.</span></span>|
-|![Icono Editar](../../media/ITPro-EAC-EditIcon.gif)|<span data-ttu-id="238f1-145">Editar</span><span class="sxs-lookup"><span data-stu-id="238f1-145">Edit</span></span>|<span data-ttu-id="238f1-146">Utilice este icono para editar un objeto.</span><span class="sxs-lookup"><span data-stu-id="238f1-146">Use this icon to edit an object.</span></span>|
-|![Eliminar icono](../../media/ITPro-EAC-DeleteIcon.gif)|<span data-ttu-id="238f1-148">Eliminar</span><span class="sxs-lookup"><span data-stu-id="238f1-148">Delete</span></span>|<span data-ttu-id="238f1-p107">Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.</span><span class="sxs-lookup"><span data-stu-id="238f1-p107">Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.</span></span>|
-|![icono de Buscar](../../media/ITPro-EAC-.gif)|<span data-ttu-id="238f1-152">Búsqueda</span><span class="sxs-lookup"><span data-stu-id="238f1-152">Search</span></span>|<span data-ttu-id="238f1-153">Usar este icono para abrir una casilla de búsqueda donde puede escribir una frase de búsqueda para el objeto que desee encontrar.</span><span class="sxs-lookup"><span data-stu-id="238f1-153">Use this icon to open a search box in which you can type the search phrase for an object you want to find.</span></span>|
-|![Icono Actualizar](../../media/ITPro-EAC-RefreshIcon.gif)|<span data-ttu-id="238f1-155">Actualizar</span><span class="sxs-lookup"><span data-stu-id="238f1-155">Refresh</span></span>|<span data-ttu-id="238f1-156">Utilice este icono para actualizar la vista de lista.</span><span class="sxs-lookup"><span data-stu-id="238f1-156">Use this icon to refresh the list view.</span></span>|
-|![Icono Más opciones](../../media/ITPro-EAC-MoreOptionsIcon.gif)|<span data-ttu-id="238f1-158">Más opciones</span><span class="sxs-lookup"><span data-stu-id="238f1-158">More options</span></span>|<span data-ttu-id="238f1-p108">Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  </span><span class="sxs-lookup"><span data-stu-id="238f1-p108">Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.</span></span>|
-|![Icono flecha arriba](../../media/ITPro-EAC-UpArrowIcon.gif)![Icono flecha abajo](../../media/ITPro-EAC-DownArrowIcon.gif)|<span data-ttu-id="238f1-163">Flecha hacia arriba y flecha hacia abajo</span><span class="sxs-lookup"><span data-stu-id="238f1-163">Up arrow and down arrow</span></span>|<span data-ttu-id="238f1-164">Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.</span><span class="sxs-lookup"><span data-stu-id="238f1-164">Use these icons to move an object's priority up or down.</span></span>|
-|![Icono de quitar](../../media/ITPro-EAC-RemoveIcon.gif)|<span data-ttu-id="238f1-166">Quitar</span><span class="sxs-lookup"><span data-stu-id="238f1-166">Remove</span></span>|<span data-ttu-id="238f1-167">Utilice este icono para quitar objetos de la lista.</span><span class="sxs-lookup"><span data-stu-id="238f1-167">Use this icon to remove objects from a list.</span></span>|
+|![Agregar icono](../../media/ITPro-EAC-AddIcon.gif)|<span data-ttu-id="a0253-143">Agregar, nuevo</span><span class="sxs-lookup"><span data-stu-id="a0253-143">Add, New</span></span>|<span data-ttu-id="a0253-p106">Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.</span><span class="sxs-lookup"><span data-stu-id="a0253-p106">Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.</span></span>|
+|![Icono Editar](../../media/ITPro-EAC-EditIcon.gif)|<span data-ttu-id="a0253-147">Editar</span><span class="sxs-lookup"><span data-stu-id="a0253-147">Edit</span></span>|<span data-ttu-id="a0253-148">Utilice este icono para editar un objeto.</span><span class="sxs-lookup"><span data-stu-id="a0253-148">Use this icon to edit an object.</span></span>|
+|![Eliminar icono](../../media/ITPro-EAC-DeleteIcon.gif)|<span data-ttu-id="a0253-150">Eliminar</span><span class="sxs-lookup"><span data-stu-id="a0253-150">Delete</span></span>|<span data-ttu-id="a0253-p107">Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.</span><span class="sxs-lookup"><span data-stu-id="a0253-p107">Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.</span></span>|
+|![icono de Buscar](../../media/ITPro-EAC-.gif)|<span data-ttu-id="a0253-154">Búsqueda</span><span class="sxs-lookup"><span data-stu-id="a0253-154">Search</span></span>|<span data-ttu-id="a0253-155">Usar este icono para abrir una casilla de búsqueda donde puede escribir una frase de búsqueda para el objeto que desee encontrar.</span><span class="sxs-lookup"><span data-stu-id="a0253-155">Use this icon to open a search box in which you can type the search phrase for an object you want to find.</span></span>|
+|![Icono Actualizar](../../media/ITPro-EAC-RefreshIcon.gif)|<span data-ttu-id="a0253-157">Actualizar</span><span class="sxs-lookup"><span data-stu-id="a0253-157">Refresh</span></span>|<span data-ttu-id="a0253-158">Utilice este icono para actualizar la vista de lista.</span><span class="sxs-lookup"><span data-stu-id="a0253-158">Use this icon to refresh the list view.</span></span>|
+|![Icono Más opciones](../../media/ITPro-EAC-MoreOptionsIcon.gif)|<span data-ttu-id="a0253-160">Más opciones</span><span class="sxs-lookup"><span data-stu-id="a0253-160">More options</span></span>|<span data-ttu-id="a0253-p108">Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  </span><span class="sxs-lookup"><span data-stu-id="a0253-p108">Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.</span></span>|
+|![Icono flecha arriba](../../media/ITPro-EAC-UpArrowIcon.gif)![Icono flecha abajo](../../media/ITPro-EAC-DownArrowIcon.gif)|<span data-ttu-id="a0253-165">Flecha hacia arriba y flecha hacia abajo</span><span class="sxs-lookup"><span data-stu-id="a0253-165">Up arrow and down arrow</span></span>|<span data-ttu-id="a0253-166">Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.</span><span class="sxs-lookup"><span data-stu-id="a0253-166">Use these icons to move an object's priority up or down.</span></span>|
+|![Icono de quitar](../../media/ITPro-EAC-RemoveIcon.gif)|<span data-ttu-id="a0253-168">Quitar</span><span class="sxs-lookup"><span data-stu-id="a0253-168">Remove</span></span>|<span data-ttu-id="a0253-169">Utilice este icono para quitar objetos de la lista.</span><span class="sxs-lookup"><span data-stu-id="a0253-169">Use this icon to remove objects from a list.</span></span>|
 |
 
-### <a name="list-view"></a><span data-ttu-id="238f1-168">Vista de lista</span><span class="sxs-lookup"><span data-stu-id="238f1-168">List View</span></span>
+### <a name="list-view"></a><span data-ttu-id="a0253-170">Vista de lista</span><span class="sxs-lookup"><span data-stu-id="a0253-170">List View</span></span>
 
-<span data-ttu-id="238f1-p109">Cuando seleccione una pestaña, en la mayoría de los casos verá la vista de lista. El límite de visualización de la vista de lista del EAC es de 10.000 objetos aproximadamente. Además, la paginación se incluye para que pueda paginar los resultados.</span><span class="sxs-lookup"><span data-stu-id="238f1-p109">When you select a tab, in most cases you'll see a list view. The viewable limit with the EAC list view is approximately 10,000 objects. In addition, paging is included so that you can page to results.</span></span>
+<span data-ttu-id="a0253-p109">Cuando seleccione una pestaña, en la mayoría de los casos verá la vista de lista. El límite de visualización de la vista de lista del EAC es de 10.000 objetos aproximadamente. Además, la paginación se incluye para que pueda paginar los resultados.</span><span class="sxs-lookup"><span data-stu-id="a0253-p109">When you select a tab, in most cases you'll see a list view. The viewable limit with the EAC list view is approximately 10,000 objects. In addition, paging is included so that you can page to results.</span></span>
 
-### <a name="details-pane"></a><span data-ttu-id="238f1-172">panel Detalles</span><span class="sxs-lookup"><span data-stu-id="238f1-172">Details Pane</span></span>
+### <a name="details-pane"></a><span data-ttu-id="a0253-174">panel Detalles</span><span class="sxs-lookup"><span data-stu-id="a0253-174">Details Pane</span></span>
 
-<span data-ttu-id="238f1-p110">Cuando seleccione un objeto de la vista de lista, la información acerca del objeto se muestra en el panel de detalles. En algunos casos, el panel de detalles incluye tareas de administración.</span><span class="sxs-lookup"><span data-stu-id="238f1-p110">When you select an object from the list view, information about that object is displayed in the details pane. In some cases the details pane includes management tasks.</span></span>
+<span data-ttu-id="a0253-p110">Cuando seleccione un objeto de la vista de lista, la información acerca del objeto se muestra en el panel de detalles. En algunos casos, el panel de detalles incluye tareas de administración.</span><span class="sxs-lookup"><span data-stu-id="a0253-p110">When you select an object from the list view, information about that object is displayed in the details pane. In some cases the details pane includes management tasks.</span></span>
 
-### <a name="me-tile-and-help"></a><span data-ttu-id="238f1-175">Mosaico Yo y Ayuda</span><span class="sxs-lookup"><span data-stu-id="238f1-175">Me tile and Help</span></span>
+### <a name="me-tile-and-help"></a><span data-ttu-id="a0253-177">Mosaico Yo y Ayuda</span><span class="sxs-lookup"><span data-stu-id="a0253-177">Me tile and Help</span></span>
 
-<span data-ttu-id="238f1-176">El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente.</span><span class="sxs-lookup"><span data-stu-id="238f1-176">The **Me** tile allows you to sign out the EAC and sign in as a different user.</span></span> <span data-ttu-id="238f1-177">En el  ![ menú desplegable del icono ayuda de la ayuda ](../../media/ITPro-EAC-HelpIcon.gif) , puede realizar las siguientes acciones:</span><span class="sxs-lookup"><span data-stu-id="238f1-177">From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can do the following actions:</span></span>
+<span data-ttu-id="a0253-178">El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente.</span><span class="sxs-lookup"><span data-stu-id="a0253-178">The **Me** tile allows you to sign out the EAC and sign in as a different user.</span></span> <span data-ttu-id="a0253-179">En el **menú** ![ desplegable Icono de ](../../media/ITPro-EAC-HelpIcon.gif) ayuda, puede realizar las siguientes acciones:</span><span class="sxs-lookup"><span data-stu-id="a0253-179">From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can do the following actions:</span></span>
 
-- <span data-ttu-id="238f1-178">**Ayuda**: haga clic en ![ el icono ayuda ](../../media/ITPro-EAC-HelpIcon.gif) para ver el contenido de la ayuda en línea.</span><span class="sxs-lookup"><span data-stu-id="238f1-178">**Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.</span></span>
-- <span data-ttu-id="238f1-179">**Comentarios**: dejar comentarios.</span><span class="sxs-lookup"><span data-stu-id="238f1-179">**Feedback**: Leave feedback.</span></span>
-- <span data-ttu-id="238f1-180">**Comunidad**: publique una pregunta para encontrar respuestas en los foros de la comunidad.</span><span class="sxs-lookup"><span data-stu-id="238f1-180">**Community**: Post a question for find answers in the community forums.</span></span>
-- <span data-ttu-id="238f1-181">**Deshabilitar la burbuja de ayuda**: la burbuja de ayuda muestra la ayuda contextual de los campos cuando se crea o edita un objeto.</span><span class="sxs-lookup"><span data-stu-id="238f1-181">**Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object.</span></span> <span data-ttu-id="238f1-182">Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.</span><span class="sxs-lookup"><span data-stu-id="238f1-182">You can turn off the Help bubble or turn it on if it has been disabled.</span></span>
-- <span data-ttu-id="238f1-183">**Mostrar registro de comandos**: se abre una nueva ventana que muestra los comandos de PowerShell equivalentes en función de lo que haya configurado en el EAC.</span><span class="sxs-lookup"><span data-stu-id="238f1-183">**Show Command Logging**: A new window opens that shows the equivalent PowerShell commands based on what you configured in EAC.</span></span>
+- <span data-ttu-id="a0253-180">**Ayuda:** haga clic ![ en el icono de ayuda para ver el contenido de la ayuda en ](../../media/ITPro-EAC-HelpIcon.gif) línea.</span><span class="sxs-lookup"><span data-stu-id="a0253-180">**Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.</span></span>
+- <span data-ttu-id="a0253-181">**Comentarios:** deje comentarios.</span><span class="sxs-lookup"><span data-stu-id="a0253-181">**Feedback**: Leave feedback.</span></span>
+- <span data-ttu-id="a0253-182">**Comunidad:** publique una pregunta para encontrar respuestas en los foros de la comunidad.</span><span class="sxs-lookup"><span data-stu-id="a0253-182">**Community**: Post a question for find answers in the community forums.</span></span>
+- <span data-ttu-id="a0253-183">**Deshabilitar burbuja de Ayuda:** la burbuja de Ayuda muestra ayuda contextual para los campos al crear o editar un objeto.</span><span class="sxs-lookup"><span data-stu-id="a0253-183">**Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object.</span></span> <span data-ttu-id="a0253-184">Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.</span><span class="sxs-lookup"><span data-stu-id="a0253-184">You can turn off the Help bubble or turn it on if it has been disabled.</span></span>
+- <span data-ttu-id="a0253-185">**Mostrar registro de comandos:** se abre una nueva ventana que muestra los comandos equivalentes de PowerShell en función de lo que configuró en EAC.</span><span class="sxs-lookup"><span data-stu-id="a0253-185">**Show Command Logging**: A new window opens that shows the equivalent PowerShell commands based on what you configured in EAC.</span></span>
 
-## <a name="supported-browsers"></a><span data-ttu-id="238f1-184">Exploradores compatibles</span><span class="sxs-lookup"><span data-stu-id="238f1-184">Supported Browsers</span></span>
+## <a name="supported-browsers"></a><span data-ttu-id="a0253-186">Exploradores compatibles</span><span class="sxs-lookup"><span data-stu-id="a0253-186">Supported Browsers</span></span>
 
-<span data-ttu-id="238f1-185">Para conseguir la mejor experiencia con EAC, le recomendamos que use siempre la versión más actualizada de los exploradores, clientes de Office y aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="238f1-185">For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps.</span></span> <span data-ttu-id="238f1-186">También le recomendamos que instale las actualizaciones de software cuando estén disponibles.</span><span class="sxs-lookup"><span data-stu-id="238f1-186">We also recommend that you install software updates when they become available.</span></span> <span data-ttu-id="238f1-187">Para obtener más información acerca de los exploradores compatibles y los requisitos del sistema para el servicio, vea [System Requirements for Office](https://products.office.com/office-system-requirements).</span><span class="sxs-lookup"><span data-stu-id="238f1-187">For more information about the supported browsers and system requirements for the service, see [System requirements for Office](https://products.office.com/office-system-requirements).</span></span>
+<span data-ttu-id="a0253-187">Para conseguir la mejor experiencia con EAC, le recomendamos que use siempre la versión más actualizada de los exploradores, clientes de Office y aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="a0253-187">For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps.</span></span> <span data-ttu-id="a0253-188">También le recomendamos que instale las actualizaciones de software cuando estén disponibles.</span><span class="sxs-lookup"><span data-stu-id="a0253-188">We also recommend that you install software updates when they become available.</span></span> <span data-ttu-id="a0253-189">Para obtener más información acerca de los exploradores compatibles y los requisitos del sistema para el servicio, vea [Requisitos del sistema para Office](https://products.office.com/office-system-requirements).</span><span class="sxs-lookup"><span data-stu-id="a0253-189">For more information about the supported browsers and system requirements for the service, see [System requirements for Office](https://products.office.com/office-system-requirements).</span></span>
 
-## <a name="supported-languages"></a><span data-ttu-id="238f1-188">Idiomas admitidos</span><span class="sxs-lookup"><span data-stu-id="238f1-188">Supported languages</span></span>
+## <a name="supported-languages"></a><span data-ttu-id="a0253-190">Idiomas admitidos</span><span class="sxs-lookup"><span data-stu-id="a0253-190">Supported languages</span></span>
 
-<span data-ttu-id="238f1-189">Los siguientes idiomas son compatibles y están disponibles para el EAC en un EOP independiente.</span><span class="sxs-lookup"><span data-stu-id="238f1-189">The following languages are supported and available for the EAC in standalone EOP.</span></span>
+<span data-ttu-id="a0253-191">Los siguientes idiomas son compatibles y están disponibles para el EAC en EOP independiente.</span><span class="sxs-lookup"><span data-stu-id="a0253-191">The following languages are supported and available for the EAC in standalone EOP.</span></span>
 
-- <span data-ttu-id="238f1-190">Amhárico</span><span class="sxs-lookup"><span data-stu-id="238f1-190">Amharic</span></span>
-- <span data-ttu-id="238f1-191">Árabe</span><span class="sxs-lookup"><span data-stu-id="238f1-191">Arabic</span></span>
-- <span data-ttu-id="238f1-192">Vasco (Euskera)</span><span class="sxs-lookup"><span data-stu-id="238f1-192">Basque (Basque)</span></span>
-- <span data-ttu-id="238f1-193">Bengalí (India)</span><span class="sxs-lookup"><span data-stu-id="238f1-193">Bengali (India)</span></span>
-- <span data-ttu-id="238f1-194">Búlgaro</span><span class="sxs-lookup"><span data-stu-id="238f1-194">Bulgarian</span></span>
-- <span data-ttu-id="238f1-195">Catalán</span><span class="sxs-lookup"><span data-stu-id="238f1-195">Catalan</span></span>
-- <span data-ttu-id="238f1-196">Chino (simplificado)</span><span class="sxs-lookup"><span data-stu-id="238f1-196">Chinese (Simplified)</span></span>
-- <span data-ttu-id="238f1-197">Chino (tradicional)</span><span class="sxs-lookup"><span data-stu-id="238f1-197">Chinese (Traditional)</span></span>
-- <span data-ttu-id="238f1-198">Croata</span><span class="sxs-lookup"><span data-stu-id="238f1-198">Croatian</span></span>
-- <span data-ttu-id="238f1-199">Checo</span><span class="sxs-lookup"><span data-stu-id="238f1-199">Czech</span></span>
-- <span data-ttu-id="238f1-200">Danés</span><span class="sxs-lookup"><span data-stu-id="238f1-200">Danish</span></span>
-- <span data-ttu-id="238f1-201">Neerlandés</span><span class="sxs-lookup"><span data-stu-id="238f1-201">Dutch</span></span>
-- <span data-ttu-id="238f1-202">Inglés</span><span class="sxs-lookup"><span data-stu-id="238f1-202">English</span></span>
-- <span data-ttu-id="238f1-203">Estonio</span><span class="sxs-lookup"><span data-stu-id="238f1-203">Estonian</span></span>
-- <span data-ttu-id="238f1-204">Filipino (Filipinas)</span><span class="sxs-lookup"><span data-stu-id="238f1-204">Filipino (Philippines)</span></span>
-- <span data-ttu-id="238f1-205">Finés</span><span class="sxs-lookup"><span data-stu-id="238f1-205">Finnish</span></span>
-- <span data-ttu-id="238f1-206">Francés</span><span class="sxs-lookup"><span data-stu-id="238f1-206">French</span></span>
-- <span data-ttu-id="238f1-207">Gallego</span><span class="sxs-lookup"><span data-stu-id="238f1-207">Galician</span></span>
-- <span data-ttu-id="238f1-208">Alemán</span><span class="sxs-lookup"><span data-stu-id="238f1-208">German</span></span>
-- <span data-ttu-id="238f1-209">Griego</span><span class="sxs-lookup"><span data-stu-id="238f1-209">Greek</span></span>
-- <span data-ttu-id="238f1-210">Gujarati</span><span class="sxs-lookup"><span data-stu-id="238f1-210">Gujarati</span></span>
-- <span data-ttu-id="238f1-211">Hebreo</span><span class="sxs-lookup"><span data-stu-id="238f1-211">Hebrew</span></span>
-- <span data-ttu-id="238f1-212">Hindi</span><span class="sxs-lookup"><span data-stu-id="238f1-212">Hindi</span></span>
-- <span data-ttu-id="238f1-213">Húngaro</span><span class="sxs-lookup"><span data-stu-id="238f1-213">Hungarian</span></span>
-- <span data-ttu-id="238f1-214">Islandés</span><span class="sxs-lookup"><span data-stu-id="238f1-214">Icelandic</span></span>
-- <span data-ttu-id="238f1-215">Indonesio</span><span class="sxs-lookup"><span data-stu-id="238f1-215">Indonesian</span></span>
-- <span data-ttu-id="238f1-216">Italiano</span><span class="sxs-lookup"><span data-stu-id="238f1-216">Italian</span></span>
-- <span data-ttu-id="238f1-217">Japonés</span><span class="sxs-lookup"><span data-stu-id="238f1-217">Japanese</span></span>
-- <span data-ttu-id="238f1-218">Kannada</span><span class="sxs-lookup"><span data-stu-id="238f1-218">Kannada</span></span>
-- <span data-ttu-id="238f1-219">Kazajo</span><span class="sxs-lookup"><span data-stu-id="238f1-219">Kazakh</span></span>
-- <span data-ttu-id="238f1-220">Kiswahili</span><span class="sxs-lookup"><span data-stu-id="238f1-220">Kiswahili</span></span>
-- <span data-ttu-id="238f1-221">Coreano</span><span class="sxs-lookup"><span data-stu-id="238f1-221">Korean</span></span>
-- <span data-ttu-id="238f1-222">Letón</span><span class="sxs-lookup"><span data-stu-id="238f1-222">Latvian</span></span>
-- <span data-ttu-id="238f1-223">Lituano</span><span class="sxs-lookup"><span data-stu-id="238f1-223">Lithuanian</span></span>
-- <span data-ttu-id="238f1-224">Malayo (Brunei Darussalam)</span><span class="sxs-lookup"><span data-stu-id="238f1-224">Malay (Brunei Darussalam)</span></span>
-- <span data-ttu-id="238f1-225">Malayo (Malasia)</span><span class="sxs-lookup"><span data-stu-id="238f1-225">Malay (Malaysia)</span></span>
-- <span data-ttu-id="238f1-226">Malayalam</span><span class="sxs-lookup"><span data-stu-id="238f1-226">Malayalam</span></span>
-- <span data-ttu-id="238f1-227">Maratí</span><span class="sxs-lookup"><span data-stu-id="238f1-227">Marathi</span></span>
-- <span data-ttu-id="238f1-228">Noruego (Bokmal)</span><span class="sxs-lookup"><span data-stu-id="238f1-228">Norwegian (Bokmål)</span></span>
-- <span data-ttu-id="238f1-229">Noruego (Nynorsk)</span><span class="sxs-lookup"><span data-stu-id="238f1-229">Norwegian (Nynorsk)</span></span>
-- <span data-ttu-id="238f1-230">Odia</span><span class="sxs-lookup"><span data-stu-id="238f1-230">Oriya</span></span>
-- <span data-ttu-id="238f1-231">Persa</span><span class="sxs-lookup"><span data-stu-id="238f1-231">Persian</span></span>
-- <span data-ttu-id="238f1-232">Polaco</span><span class="sxs-lookup"><span data-stu-id="238f1-232">Polish</span></span>
-- <span data-ttu-id="238f1-233">Portugués (Brasil)</span><span class="sxs-lookup"><span data-stu-id="238f1-233">Portuguese (Brazil)</span></span>
-- <span data-ttu-id="238f1-234">Portugués (Portugal)</span><span class="sxs-lookup"><span data-stu-id="238f1-234">Portuguese (Portugal)</span></span>
-- <span data-ttu-id="238f1-235">Rumano</span><span class="sxs-lookup"><span data-stu-id="238f1-235">Romanian</span></span>
-- <span data-ttu-id="238f1-236">Ruso</span><span class="sxs-lookup"><span data-stu-id="238f1-236">Russian</span></span>
-- <span data-ttu-id="238f1-237">Serbio (cirílico, Serbia)</span><span class="sxs-lookup"><span data-stu-id="238f1-237">Serbian (Cyrillic, Serbia)</span></span>
-- <span data-ttu-id="238f1-238">Serbio (latino)</span><span class="sxs-lookup"><span data-stu-id="238f1-238">Serbian (Latin)</span></span>
-- <span data-ttu-id="238f1-239">Eslovaco</span><span class="sxs-lookup"><span data-stu-id="238f1-239">Slovak</span></span>
-- <span data-ttu-id="238f1-240">Esloveno</span><span class="sxs-lookup"><span data-stu-id="238f1-240">Slovenian</span></span>
-- <span data-ttu-id="238f1-241">Español</span><span class="sxs-lookup"><span data-stu-id="238f1-241">Spanish</span></span>
-- <span data-ttu-id="238f1-242">Sueco</span><span class="sxs-lookup"><span data-stu-id="238f1-242">Swedish</span></span>
-- <span data-ttu-id="238f1-243">Tamil</span><span class="sxs-lookup"><span data-stu-id="238f1-243">Tamil</span></span>
-- <span data-ttu-id="238f1-244">Telugu</span><span class="sxs-lookup"><span data-stu-id="238f1-244">Telugu</span></span>
-- <span data-ttu-id="238f1-245">Tailandés</span><span class="sxs-lookup"><span data-stu-id="238f1-245">Thai</span></span>
-- <span data-ttu-id="238f1-246">Turco</span><span class="sxs-lookup"><span data-stu-id="238f1-246">Turkish</span></span>
-- <span data-ttu-id="238f1-247">Ucraniano</span><span class="sxs-lookup"><span data-stu-id="238f1-247">Ukrainian</span></span>
-- <span data-ttu-id="238f1-248">Urdu</span><span class="sxs-lookup"><span data-stu-id="238f1-248">Urdu</span></span>
-- <span data-ttu-id="238f1-249">Vietnamita</span><span class="sxs-lookup"><span data-stu-id="238f1-249">Vietnamese</span></span>
-- <span data-ttu-id="238f1-250">Galés</span><span class="sxs-lookup"><span data-stu-id="238f1-250">Welsh</span></span>
+- <span data-ttu-id="a0253-192">Amhárico</span><span class="sxs-lookup"><span data-stu-id="a0253-192">Amharic</span></span>
+- <span data-ttu-id="a0253-193">Árabe</span><span class="sxs-lookup"><span data-stu-id="a0253-193">Arabic</span></span>
+- <span data-ttu-id="a0253-194">Vasco (Euskera)</span><span class="sxs-lookup"><span data-stu-id="a0253-194">Basque (Basque)</span></span>
+- <span data-ttu-id="a0253-195">Bengalí (India)</span><span class="sxs-lookup"><span data-stu-id="a0253-195">Bengali (India)</span></span>
+- <span data-ttu-id="a0253-196">Búlgaro</span><span class="sxs-lookup"><span data-stu-id="a0253-196">Bulgarian</span></span>
+- <span data-ttu-id="a0253-197">Catalán</span><span class="sxs-lookup"><span data-stu-id="a0253-197">Catalan</span></span>
+- <span data-ttu-id="a0253-198">Chino (simplificado)</span><span class="sxs-lookup"><span data-stu-id="a0253-198">Chinese (Simplified)</span></span>
+- <span data-ttu-id="a0253-199">Chino (tradicional)</span><span class="sxs-lookup"><span data-stu-id="a0253-199">Chinese (Traditional)</span></span>
+- <span data-ttu-id="a0253-200">Croata</span><span class="sxs-lookup"><span data-stu-id="a0253-200">Croatian</span></span>
+- <span data-ttu-id="a0253-201">Checo</span><span class="sxs-lookup"><span data-stu-id="a0253-201">Czech</span></span>
+- <span data-ttu-id="a0253-202">Danés</span><span class="sxs-lookup"><span data-stu-id="a0253-202">Danish</span></span>
+- <span data-ttu-id="a0253-203">Neerlandés</span><span class="sxs-lookup"><span data-stu-id="a0253-203">Dutch</span></span>
+- <span data-ttu-id="a0253-204">Inglés</span><span class="sxs-lookup"><span data-stu-id="a0253-204">English</span></span>
+- <span data-ttu-id="a0253-205">Estonio</span><span class="sxs-lookup"><span data-stu-id="a0253-205">Estonian</span></span>
+- <span data-ttu-id="a0253-206">Filipino (Filipinas)</span><span class="sxs-lookup"><span data-stu-id="a0253-206">Filipino (Philippines)</span></span>
+- <span data-ttu-id="a0253-207">Finés</span><span class="sxs-lookup"><span data-stu-id="a0253-207">Finnish</span></span>
+- <span data-ttu-id="a0253-208">Francés</span><span class="sxs-lookup"><span data-stu-id="a0253-208">French</span></span>
+- <span data-ttu-id="a0253-209">Gallego</span><span class="sxs-lookup"><span data-stu-id="a0253-209">Galician</span></span>
+- <span data-ttu-id="a0253-210">Alemán</span><span class="sxs-lookup"><span data-stu-id="a0253-210">German</span></span>
+- <span data-ttu-id="a0253-211">Griego</span><span class="sxs-lookup"><span data-stu-id="a0253-211">Greek</span></span>
+- <span data-ttu-id="a0253-212">Gujarati</span><span class="sxs-lookup"><span data-stu-id="a0253-212">Gujarati</span></span>
+- <span data-ttu-id="a0253-213">Hebreo</span><span class="sxs-lookup"><span data-stu-id="a0253-213">Hebrew</span></span>
+- <span data-ttu-id="a0253-214">Hindi</span><span class="sxs-lookup"><span data-stu-id="a0253-214">Hindi</span></span>
+- <span data-ttu-id="a0253-215">Húngaro</span><span class="sxs-lookup"><span data-stu-id="a0253-215">Hungarian</span></span>
+- <span data-ttu-id="a0253-216">Islandés</span><span class="sxs-lookup"><span data-stu-id="a0253-216">Icelandic</span></span>
+- <span data-ttu-id="a0253-217">Indonesio</span><span class="sxs-lookup"><span data-stu-id="a0253-217">Indonesian</span></span>
+- <span data-ttu-id="a0253-218">Italiano</span><span class="sxs-lookup"><span data-stu-id="a0253-218">Italian</span></span>
+- <span data-ttu-id="a0253-219">Japonés</span><span class="sxs-lookup"><span data-stu-id="a0253-219">Japanese</span></span>
+- <span data-ttu-id="a0253-220">Kannada</span><span class="sxs-lookup"><span data-stu-id="a0253-220">Kannada</span></span>
+- <span data-ttu-id="a0253-221">Kazajo</span><span class="sxs-lookup"><span data-stu-id="a0253-221">Kazakh</span></span>
+- <span data-ttu-id="a0253-222">Kiswahili</span><span class="sxs-lookup"><span data-stu-id="a0253-222">Kiswahili</span></span>
+- <span data-ttu-id="a0253-223">Coreano</span><span class="sxs-lookup"><span data-stu-id="a0253-223">Korean</span></span>
+- <span data-ttu-id="a0253-224">Letón</span><span class="sxs-lookup"><span data-stu-id="a0253-224">Latvian</span></span>
+- <span data-ttu-id="a0253-225">Lituano</span><span class="sxs-lookup"><span data-stu-id="a0253-225">Lithuanian</span></span>
+- <span data-ttu-id="a0253-226">Malayo (Brunei Darussalam)</span><span class="sxs-lookup"><span data-stu-id="a0253-226">Malay (Brunei Darussalam)</span></span>
+- <span data-ttu-id="a0253-227">Malayo (Malasia)</span><span class="sxs-lookup"><span data-stu-id="a0253-227">Malay (Malaysia)</span></span>
+- <span data-ttu-id="a0253-228">Malayalam</span><span class="sxs-lookup"><span data-stu-id="a0253-228">Malayalam</span></span>
+- <span data-ttu-id="a0253-229">Maratí</span><span class="sxs-lookup"><span data-stu-id="a0253-229">Marathi</span></span>
+- <span data-ttu-id="a0253-230">Noruego (Bokmal)</span><span class="sxs-lookup"><span data-stu-id="a0253-230">Norwegian (Bokmål)</span></span>
+- <span data-ttu-id="a0253-231">Noruego (Nynorsk)</span><span class="sxs-lookup"><span data-stu-id="a0253-231">Norwegian (Nynorsk)</span></span>
+- <span data-ttu-id="a0253-232">Odia</span><span class="sxs-lookup"><span data-stu-id="a0253-232">Oriya</span></span>
+- <span data-ttu-id="a0253-233">Persa</span><span class="sxs-lookup"><span data-stu-id="a0253-233">Persian</span></span>
+- <span data-ttu-id="a0253-234">Polaco</span><span class="sxs-lookup"><span data-stu-id="a0253-234">Polish</span></span>
+- <span data-ttu-id="a0253-235">Portugués (Brasil)</span><span class="sxs-lookup"><span data-stu-id="a0253-235">Portuguese (Brazil)</span></span>
+- <span data-ttu-id="a0253-236">Portugués (Portugal)</span><span class="sxs-lookup"><span data-stu-id="a0253-236">Portuguese (Portugal)</span></span>
+- <span data-ttu-id="a0253-237">Rumano</span><span class="sxs-lookup"><span data-stu-id="a0253-237">Romanian</span></span>
+- <span data-ttu-id="a0253-238">Ruso</span><span class="sxs-lookup"><span data-stu-id="a0253-238">Russian</span></span>
+- <span data-ttu-id="a0253-239">Serbio (cirílico, Serbia)</span><span class="sxs-lookup"><span data-stu-id="a0253-239">Serbian (Cyrillic, Serbia)</span></span>
+- <span data-ttu-id="a0253-240">Serbio (latino)</span><span class="sxs-lookup"><span data-stu-id="a0253-240">Serbian (Latin)</span></span>
+- <span data-ttu-id="a0253-241">Eslovaco</span><span class="sxs-lookup"><span data-stu-id="a0253-241">Slovak</span></span>
+- <span data-ttu-id="a0253-242">Esloveno</span><span class="sxs-lookup"><span data-stu-id="a0253-242">Slovenian</span></span>
+- <span data-ttu-id="a0253-243">Español</span><span class="sxs-lookup"><span data-stu-id="a0253-243">Spanish</span></span>
+- <span data-ttu-id="a0253-244">Sueco</span><span class="sxs-lookup"><span data-stu-id="a0253-244">Swedish</span></span>
+- <span data-ttu-id="a0253-245">Tamil</span><span class="sxs-lookup"><span data-stu-id="a0253-245">Tamil</span></span>
+- <span data-ttu-id="a0253-246">Telugu</span><span class="sxs-lookup"><span data-stu-id="a0253-246">Telugu</span></span>
+- <span data-ttu-id="a0253-247">Tailandés</span><span class="sxs-lookup"><span data-stu-id="a0253-247">Thai</span></span>
+- <span data-ttu-id="a0253-248">Turco</span><span class="sxs-lookup"><span data-stu-id="a0253-248">Turkish</span></span>
+- <span data-ttu-id="a0253-249">Ucraniano</span><span class="sxs-lookup"><span data-stu-id="a0253-249">Ukrainian</span></span>
+- <span data-ttu-id="a0253-250">Urdu</span><span class="sxs-lookup"><span data-stu-id="a0253-250">Urdu</span></span>
+- <span data-ttu-id="a0253-251">Vietnamita</span><span class="sxs-lookup"><span data-stu-id="a0253-251">Vietnamese</span></span>
+- <span data-ttu-id="a0253-252">Galés</span><span class="sxs-lookup"><span data-stu-id="a0253-252">Welsh</span></span>
