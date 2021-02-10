@@ -19,14 +19,19 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 653b16b7b3f6637440e3740830ffe9f9a51c6dd8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097133"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166512"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
+
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+
 
 En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos e identidades para proteger el correo electrónico de la organización y los clientes de correo electrónico que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las directivas comunes [de acceso](identity-access-policies.md) a dispositivos e identidades y también incluye algunas recomendaciones adicionales.
 
@@ -44,13 +49,13 @@ Para proteger el correo electrónico, en el siguiente diagrama se ilustran las d
 
 Tenga en cuenta la adición de una nueva directiva para Exchange Online para bloquear los clientes de ActiveSync. Esto fuerza el uso de Outlook Mobile.
 
-Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo necesita crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas [en directivas comunes de acceso a dispositivos e identidades.](identity-access-policies.md)
+Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo tiene que crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas [en directivas comunes de acceso a dispositivos e identidades.](identity-access-policies.md)
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 ||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
-||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
+||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrate de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
 ||[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir Exchange Online en la lista de aplicaciones en la nube|
 ||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Incluir Exchange Online en la lista de aplicaciones en la nube|
 ||[Bloquear clientes de ActiveSync](#block-activesync-clients)|Agregar esta nueva directiva|
@@ -107,7 +112,7 @@ Con las nuevas funcionalidades de Cifrado de mensajes de Office 365 (OME), que a
 
 Para obtener más información, vea Configurar nuevas capacidades de cifrado de [mensajes de Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

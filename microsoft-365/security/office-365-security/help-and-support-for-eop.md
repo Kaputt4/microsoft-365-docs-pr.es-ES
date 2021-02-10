@@ -8,33 +8,38 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.openlocfilehash: 7551a792c1d9c10cf5c655dade04bb5606b75f04
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a2b8228d33648f7bd20bde9d9e7b852276231aa6
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658700"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167112"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los recursos de soporte técnico enumerados en este artículo le ayudarán a encontrar respuestas si tiene dificultades con EOP. Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
+En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los recursos de soporte técnico que se enumeran en este artículo le ayudarán a encontrar respuestas si tiene dificultades con EOP. Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 
 ## <a name="self-support-options"></a>Opciones de autosoporte
 
-Tras iniciar sesión, el centro de administración de Microsoft 365 proporciona información sobre el estado de los servicios de la organización. Además, la sección estado del servicio muestra el estado actual de los servicios, los detalles sobre las interrupciones y las interrupciones, y muestra las horas de mantenimiento planeado. El centro de administración de Microsoft 365 también proporciona información sobre problemas conocidos y soluciones previstas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información sobre el área de estado del servicio, consulte [Estado y continuidad del servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Es posible que pueda encontrar más ayuda por su cuenta mediante las herramientas, los foros y los sitios de la comunidad que se muestran aquí.
+Al iniciar sesión, el Centro de administración de Microsoft 365 proporciona información sobre el estado de los servicios de su organización. Además, la sección estado del servicio muestra el estado actual de los servicios, detalles sobre interrupciones y interrupciones, y enumera los tiempos de mantenimiento planeados. El Centro de administración de Microsoft 365 también proporciona información sobre problemas conocidos y soluciones esperadas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información acerca del área de mantenimiento del servicio, vea [Estado y continuidad del servicio.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Es posible que pueda encontrar más ayuda por su cuenta con las herramientas, foros y sitios de la comunidad que se enumeran aquí.
 
 [Información del producto de Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [Contactar con el soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
-[Comunidad 365 de Microsoft](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Comunidad de Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
 [Asistente para soporte y recuperación de Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
@@ -42,17 +47,17 @@ Tras iniciar sesión, el centro de administración de Microsoft 365 proporciona 
 
 ## <a name="assisted-support-from-microsoft"></a>Soporte técnico asistido de Microsoft
 
-Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el centro de administración de Microsoft 365 o llamando al teléfono. Los suscriptores de la compatibilidad Premier tienen opciones de soporte adicionales.
+Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el Centro de administración de Microsoft 365 o llamando por teléfono. Los suscriptores al Soporte técnico Premier tienen opciones de soporte técnico adicionales.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Soporte para suscriptores de soporte premier de Microsoft
 
 Si es un cliente de EOP y también tiene un contrato de soporte premier de Microsoft, puede obtener soporte a través de los canales normales de soporte premier de Microsoft. Esto le permite recibir acceso a todos los procesos y recursos disponibles para clientes de soporte premier, como al administrador de cuentas de soporte técnico premier (TAM) y al envío de casos. El soporte premier para Microsoft Online Services amplía el marco de trabajo de soporte premier de los productos locales a los productos en línea, lo que le proporciona una experiencia de soporte unificada en todos los productos y servicios. Este servicio ayuda a garantizar que los clientes puedan resolver los problemas rápidamente y simplifica la tarea de administrar el soporte para distintos componentes de una infraestructura de TI.
 
-Para obtener más información sobre cómo el soporte Premier puede ayudar a su organización a maximizar el valor de sus inversiones en ti, consulte [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support).
+Para obtener más información acerca de cómo el Soporte técnico Premier puede ayudar a su organización a maximizar el valor de sus inversiones en TI, consulte [Soporte premier para partners.](https://partner.microsoft.com/support/microsoft-services-premier-support)
 
 ### <a name="ask-for-help-on-the-web"></a>Solicitar ayuda en la Web
 
-1. Inicie sesión en el centro de administración de Microsoft 365.
+1. Inicie sesión en el Centro de administración de Microsoft 365.
 
 2. Vaya a **Soporte**\> **Solicitar soporte técnico**\> **Nueva solicitud de servicio**
 
@@ -60,17 +65,17 @@ Para obtener más información sobre cómo el soporte Premier puede ayudar a su 
 
 ### <a name="ask-for-help-on-the-telephone"></a>Solicitar ayuda por teléfono
 
-1. Inicie sesión en el centro de administración de Microsoft 365.
+1. Inicie sesión en el Centro de administración de Microsoft 365.
 
-2. Para problemas generales de productos, vaya a **soporte** técnico \> **solicitar asistencia al cliente** \> .
+2. Para problemas generales del producto, vaya **a Soporte técnico** solicitar soporte técnico de llamada de soporte \>  \> **técnico.**
 
    Para las preguntas relacionadas con la compra de EOP, facturación o suscripciones, vaya a **Soporte**\> **Solicitar soporte técnico**\> **Llamar a soporte de facturación y suscripción**.
 
-3. Use el agente virtual para buscar el número de teléfono adecuado más reciente.
+3. Use el agente virtual para buscar el número de teléfono adecuado más actual.
 
 ## <a name="support-telephone-numbers"></a>Números de teléfono de soporte
 
-Microsoft proporciona números de teléfono locales o gratuitos para el soporte técnico en todo el mundo. Muchos de estos centros de soporte ofrecen ayuda en su propio idioma durante el horario comercial o en inglés las 24 horas del día, todos los días. Si no ve la ubicación que se muestra a continuación, use el agente virtual como se describió anteriormente para encontrar su número de teléfono de soporte local.
+Microsoft proporciona números de teléfono locales o gratuitos para el soporte técnico en todo el mundo. Muchos de estos centros de soporte ofrecen ayuda en su propio idioma durante el horario comercial o en inglés las 24 horas del día, todos los días. Si no ve la ubicación que aparece a continuación, use el agente virtual como se describió anteriormente para encontrar su número de teléfono de soporte técnico local.
 
 ****
 

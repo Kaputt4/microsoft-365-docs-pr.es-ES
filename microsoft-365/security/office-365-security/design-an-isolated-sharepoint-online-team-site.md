@@ -8,7 +8,6 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,133 +16,139 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: Diseñar sitios de grupo de SharePoint Online aislados, incluidos la determinación de niveles de permisos, la asignación de permisos a los usuarios con grupos de acceso y grupos anidados de Azure AD.
-ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Diseñe sitios de grupo aislados de SharePoint Online, incluidos los niveles de permisos, asigne permisos a usuarios con grupos de acceso y grupos anidados de Azure AD.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203124"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165516"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Diseñar un sitio de grupo de SharePoint Online aislado
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
- **Resumen:** Recorra el proceso de diseño de sitios de grupo de SharePoint Online aislados.
 
-Este artículo le guiará por las decisiones de diseño clave que debe tomar antes de crear un sitio de grupo de SharePoint Online aislado.
+ **Resumen:** Paso a paso por el proceso de diseño para sitios de grupo aislados de SharePoint Online.
 
-## <a name="phase-1-determine-your-sharepoint-groups-and-permission-levels"></a>Fase 1: determinar los grupos de SharePoint y los niveles de permisos
+Este artículo le lleva a través de las decisiones de diseño clave que debe tomar antes de crear un sitio de grupo de SharePoint Online aislado.
+
+## <a name="phase-1-determine-your-sharepoint-groups-and-permission-levels"></a>Fase 1: Determinar los grupos y niveles de permisos de SharePoint
 
 Todos los sitios de grupo de SharePoint Online se crean de forma predeterminada con los siguientes grupos de SharePoint:
 
 - \<site name> Miembros
 
-- \<site name> Visite
+- \<site name> Visitantes
 
-- \<site name> Owner
+- \<site name> Propietarios
 
-Estos grupos son independientes de los grupos de Microsoft 365 y Azure Active Directory (AD) y constituyen la base para asignar permisos a los recursos del sitio.
+Estos grupos son independientes de los grupos de Microsoft 365 y Azure Active Directory (AD) y son la base para asignar permisos para los recursos del sitio.
 
-El conjunto de permisos específicos que determina lo que un miembro de un grupo de SharePoint puede hacer en un sitio es un nivel de permisos. De forma predeterminada, hay tres niveles de permisos para un sitio de grupo de SharePoint Online: editar, leer y control total. La siguiente tabla muestra la correlación predeterminada de los grupos de SharePoint y los niveles de permisos asignados:
+El conjunto de permisos específicos que determina lo que un miembro de un grupo de SharePoint puede hacer en un sitio es un nivel de permisos. Hay tres niveles de permisos de forma predeterminada para un sitio de grupo de SharePoint Online: Edición, Lectura y Control total. En la tabla siguiente se muestra la correlación predeterminada de los grupos de SharePoint y los niveles de permisos asignados:
 
 ****
 
 |Grupo de SharePoint|Nivel de permisos|
 |---|---|
-|\<site name> Miembros|Edit|
-|\<site name> Visite|Lectura|
-|\<site name> Owner|Control total|
+|\<site name> Miembros|Editar|
+|\<site name> Visitantes|Lectura|
+|\<site name> Propietarios|Control total|
 |
 
- **Procedimiento recomendado:** Puede crear grupos de SharePoint y niveles de permisos adicionales. Sin embargo, se recomienda usar los grupos de SharePoint y los niveles de permisos predeterminados para el sitio de SharePoint Online aislado.
+ **Procedimiento recomendado:** Puede crear grupos y niveles de permisos de SharePoint adicionales. Sin embargo, se recomienda usar los grupos y niveles de permisos predeterminados de SharePoint para el sitio aislado de SharePoint Online.
 
-Estos son los grupos de SharePoint y los niveles de permisos predeterminados.
+Estos son los grupos y niveles de permisos predeterminados de SharePoint.
 
-![Los grupos de SharePoint y los niveles de permisos predeterminados para un sitio de SharePoint Online.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Los grupos y niveles de permisos predeterminados de SharePoint para un sitio de SharePoint Online.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
 
-## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fase 2: asignar permisos a los usuarios con grupos de acceso
+## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fase 2: Asignar permisos a usuarios con grupos de acceso
 
-Para asignar permisos a usuarios, puede agregar su cuenta de usuario o un grupo de Microsoft 365 o de Azure AD del que la cuenta de usuario es miembro a los grupos de SharePoint. Una vez agregadas, a las cuentas de usuario, ya sea directa o indirectamente la pertenencia a un grupo de Microsoft 365 o Azure AD, se les asigna el nivel de permisos asociado con el grupo de SharePoint.
+Puede asignar permisos a los usuarios agregando su cuenta de usuario, o un grupo de Microsoft 365 o Azure AD del que la cuenta de usuario es miembro, a los grupos de SharePoint. Una vez agregadas, a las cuentas de usuario, ya sea directa o indirectamente a través de la pertenencia a un grupo de Microsoft 365 o Azure AD, se les asigna el nivel de permisos asociado con el grupo de SharePoint.
 
-Con los grupos de SharePoint predeterminados como ejemplo:
+Usar los grupos de SharePoint predeterminados como ejemplo:
 
-- A los miembros del grupo de SharePoint ** \<site name> miembros** , que pueden incluir cuentas de usuario y grupos, se les asigna el nivel de permisos **Editar**
+- A los miembros del **\<site name> grupo de** SharePoint Miembros, que pueden incluir cuentas de usuario y grupos, se les asigna el **nivel de** permiso Editar
 
-- A los miembros del grupo de SharePoint ** \<site name> visitantes** , que pueden incluir cuentas de usuario y grupos, se les asigna el nivel de permisos de **lectura**
+- A los miembros del **\<site name> grupo de** Visitantes de SharePoint, que pueden incluir cuentas de usuario y grupos, se les asigna el nivel **de** permisos de lectura
 
-- A los miembros del grupo de SharePoint ** \<site name> propietarios** , que pueden incluir cuentas de usuario y grupos, se les asigna el nivel de permisos **control total**
+- A los miembros del **\<site name> grupo propietarios** de SharePoint, que pueden incluir tanto cuentas de usuario como grupos, se les asigna el nivel de **permiso Control** total
 
- **Procedimiento recomendado:** Aunque puede administrar permisos mediante cuentas de usuario individuales, en su lugar se recomienda usar un único grupo de Azure AD, conocido como grupo de acceso. Esto simplifica la administración de permisos a través de la pertenencia al grupo de acceso, en lugar de administrar la lista de cuentas de usuario para cada grupo de SharePoint.
+ **Procedimiento recomendado:** Aunque puede administrar permisos a través de cuentas de usuario individuales, le recomendamos que use un único grupo de Azure AD, conocido como grupo de acceso, en su lugar. Esto simplifica la administración de permisos mediante la pertenencia al grupo de acceso, en lugar de administrar la lista de cuentas de usuario para cada grupo de SharePoint.
 
-Los grupos de Azure AD para Microsoft 365 son grupos de Microsoft 365 distintos de Microsoft. Los grupos de Azure AD aparecen en el centro de administración de Microsoft 365 con el **tipo** establecido en **seguridad** y no tienen una dirección de correo electrónico. Los grupos de Azure AD se pueden administrar dentro de:
+Los grupos de Azure AD para Microsoft 365 son diferentes, por ejemplo, grupos de Microsoft 365. Los grupos de Azure AD aparecen en el  Centro  de administración de Microsoft 365 con su tipo establecido en Seguridad y no tienen una dirección de correo electrónico. Los grupos de Azure AD se pueden administrar en:
 
 - Servicios de dominio de Active Directory (AD DS)
 
-    Estos son grupos que se han creado en su infraestructura de AD DS local y sincronizados con su suscripción a Microsoft 365. En el centro de administración de Microsoft 365, estos grupos tienen un **Estado** **sincronizado con Active**Directory.
+    Se trata de grupos que se han creado en la infraestructura local de AD DS y se han sincronizado con su suscripción a Microsoft 365. En el Centro de administración de Microsoft  365, estos grupos tienen un estado **de sincronización con Active Directory.**
 
 - Office 365
 
-    Se trata de grupos que se han creado con el centro de administración de Microsoft 365, el portal de Azure o PowerShell de Microsoft. En el centro de administración de Microsoft 365, estos grupos tienen un **Estado** de **nube**.
+    Se trata de grupos que se han creado con el Centro de administración de Microsoft 365, Azure Portal o PowerShell de Microsoft. En el Centro de administración de Microsoft 365, estos grupos tienen un **estado** de **nube.**
 
- **Procedimiento recomendado:** Si está usando AD DS local y sincronizando con la suscripción de Microsoft 365, realice la administración de usuarios y grupos con AD DS.
+ **Procedimiento recomendado:** Si usa AD DS local y se sincroniza con su suscripción de Microsoft 365, realice la administración de usuarios y grupos con AD DS.
 
-Para los sitios de grupo de SharePoint Online aislados, la estructura de grupo recomendada tiene el siguiente aspecto:
+Para los sitios de grupo de SharePoint Online aislados, la estructura de grupo recomendada tiene este aspecto:
 
 ****
 
 |Grupo de SharePoint|Grupo de acceso basado en Azure AD|Nivel de permisos|
 |---|---|---|
-|\<site name> Miembros|\<site name> Miembros|Edit|
-|\<site name> Visite|\<site name> Visores|Lectura|
-|\<site name> Owner|\<site name> Administradores|Control total|
+|\<site name> Miembros|\<site name> Miembros|Editar|
+|\<site name> Visitantes|\<site name> Visores|Lectura|
+|\<site name> Propietarios|\<site name> Administradores|Control total|
 |
 
- **Procedimiento recomendado:** Aunque puede usar los grupos de Microsoft 365 o de Azure AD como miembros de los grupos de SharePoint, le recomendamos que use grupos de Azure AD. Los grupos de Azure AD, administrados mediante AD DS o Microsoft 365, proporcionan más flexibilidad para usar grupos anidados para asignar permisos.
+ **Procedimiento recomendado:** Aunque puede usar grupos de Microsoft 365 o Azure AD como miembros de grupos de SharePoint, se recomienda usar grupos de Azure AD. Los grupos de Azure AD, administrados a través de AD DS o Microsoft 365, ofrecen más flexibilidad para usar grupos anidados para asignar permisos.
 
-Estos son los grupos predeterminados de SharePoint configurados para usar grupos de acceso basados en Azure AD.
+Estos son los grupos de SharePoint predeterminados configurados para usar grupos de acceso basados en Azure AD.
 
-![Uso de grupos de acceso como miembros de grupos de sitio de SharePoint Online predeterminados.](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Usar grupos de acceso como miembros de grupos de sitios predeterminados de SharePoint Online.](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
 
 Al diseñar los tres grupos de acceso, tenga en cuenta lo siguiente:
 
-- Solo deben existir algunos miembros en el grupo de acceso de ** \<site name> administradores** , que se corresponde con un pequeño número de administradores de SharePoint Online que administran el sitio de grupo.
+- Solo debe haber unos pocos **\<site name>** miembros en el grupo de acceso Administradores, correspondiente a un pequeño número de administradores de SharePoint Online que administran el sitio de grupo.
 
-- La mayoría de los miembros del sitio están en los grupos de acceso de ** \<site name> miembros** o ** \<site name> visores** . Como los miembros del sitio en el grupo de acceso de ** \<site name> los miembros** tienen la capacidad de eliminar o modificar los recursos del sitio, considere detenidamente su pertenencia. Si tiene dudas, agregue el miembro del sitio al grupo de acceso de ** \<site name> visores** .
+- La mayoría de los miembros del sitio están en los grupos **\<site name> de** acceso Miembros o Visores. **\<site name>** Dado que los miembros del **sitio \<site name>** del grupo de acceso Miembros tienen la capacidad de eliminar o modificar recursos del sitio, considere detenidamente su pertenencia. Cuando haya dudas, agregue el miembro del sitio al grupo **\<site name> de acceso** Visores.
 
-Este es un ejemplo de los grupos de SharePoint y los grupos de acceso para un sitio aislado denominado ProyectoX.
+Este es un ejemplo de los grupos de SharePoint y grupos de acceso para un sitio aislado denominado ProjectX.
 
-![Un ejemplo del uso de grupos de acceso para un sitio de SharePoint Online denominado ProyectoX.](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Ejemplo de uso de grupos de acceso para un sitio de SharePoint Online denominado ProjectX.](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
 
-## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: usar grupos anidados de Azure AD
+## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: Usar grupos anidados de Azure AD
 
-Para un proyecto limitado a un número reducido de personas, un solo nivel de grupos de acceso basado en Azure AD que se agrega a los grupos de SharePoint del sitio se ajustará a la mayoría de los escenarios. Sin embargo, si tiene un gran número de personas y esas personas ya son miembros de grupos de Azure AD establecidos, puede asignar permisos de SharePoint más fácilmente mediante grupos anidados o grupos que contengan otros grupos como miembros.
+Para un proyecto limitado a un número reducido de personas, la mayoría de los escenarios se ajustarán a la mayoría de los escenarios con un solo nivel de grupos de acceso basados en Azure AD agregados a los grupos de SharePoint del sitio. Sin embargo, si tiene un gran número de personas y esas personas ya son miembros de grupos de Azure AD establecidos, puede asignar más fácilmente permisos de SharePoint mediante grupos anidados o grupos que contienen otros grupos como miembros.
 
-Por ejemplo, desea crear un sitio de grupo aislado de SharePoint Online para colaborar entre los ejecutivos de los departamentos de ventas, marketing, ingeniería, legal y soporte técnico, y los departamentos que ya tienen su propio grupo con pertenencia a la cuenta de usuario Ejecutivo. En lugar de crear un grupo nuevo para los nuevos miembros del sitio y colocar en él todas las cuentas de usuario Ejecutiva, coloque los grupos ejecutivos existentes para cada departamento en el nuevo grupo.
+Por ejemplo, desea crear un sitio de grupo aislado de SharePoint Online para la colaboración entre los ejecutivos de los departamentos de ventas, marketing, ingeniería, legal y soporte técnico, y esos departamentos ya tienen sus propios grupos con la pertenencia a cuentas de usuario ejecutivo. En lugar de crear un nuevo grupo para los nuevos miembros del sitio y colocar todas las cuentas de usuario ejecutivo individuales en él, coloque los grupos ejecutivos existentes para cada departamento en el nuevo grupo.
 
- Si está compartiendo una suscripción de Microsoft 365 entre varias organizaciones, un único nivel de pertenencia al grupo de un sitio aislado para una organización podría ser difícil de administrar debido al número total de cuentas de usuario. En este caso, puede usar grupos anidados de Azure AD para cada organización que contenga los grupos dentro de sus organizaciones para administrar los permisos.
+ Si comparte una suscripción de Microsoft 365 entre varias organizaciones, es posible que sea difícil administrar un solo nivel de pertenencia a grupos para un sitio aislado de una organización debido al gran número de cuentas de usuario. En este caso, puede usar grupos anidados de Azure AD para cada organización que contenga los grupos dentro de sus organizaciones para administrar los permisos.
 
 Para usar grupos anidados de Azure AD:
 
-1. Identifique o cree los grupos de Azure AD que contendrán cuentas de usuario y agregue las cuentas de usuario adecuadas como miembros.
+1. Identifique o cree los grupos de Azure AD que contendrán cuentas de usuario y agregue las cuentas de usuario apropiadas como miembros.
 
-2. Cree el grupo de acceso de Azure AD basado en el contenedor que contendrá los otros grupos de Azure AD y agregue esos grupos como miembros.
+2. Cree el grupo de acceso basado en Azure AD contenedor que contendrá los demás grupos de Azure AD y agregue esos grupos como miembros.
 
-3. Para el nivel adecuado de acceso para el grupo de acceso del contenedor, identifique el grupo de SharePoint y el nivel de permisos correspondiente.
+3. Para el nivel de acceso adecuado para el grupo de acceso de contenedor, identifique el grupo de SharePoint y el nivel de permisos correspondiente.
 
 > [!NOTE]
 > No puede usar grupos anidados de Microsoft 365.
 
-Este es un ejemplo de grupos de Azure AD anidados para el grupo de acceso a los miembros del ProyectoX.
+Este es un ejemplo de grupos anidados de Azure AD para el grupo de acceso de miembros de ProjectX.
 
-![Un ejemplo del uso de grupos de acceso anidados para el grupo de acceso de los miembros del sitio del ProyectoX.](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Ejemplo de uso de grupos de acceso anidados para el grupo de acceso de miembros para el sitio ProjectX.](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
 
-Debido a que todas las cuentas de usuario de los equipos de clientes potenciales de investigación, ingeniería y proyecto tienen como objetivo ser miembros del sitio, es más fácil agregar sus grupos de Azure AD al grupo de acceso de los miembros del ProyectoX.
+Dado que todas las cuentas de usuario de los equipos de investigación, ingeniería y proyectos principales están pensadas para ser miembros del sitio, es más fácil agregar sus grupos de Azure AD al grupo de acceso de miembros de ProjectX.
 
 ## <a name="next-step"></a>Paso siguiente
 
-Cuando esté listo para crear y configurar un sitio aislado en producción, vea [implementar un sitio de grupo de SharePoint Online aislado](deploy-an-isolated-sharepoint-online-team-site.md).
+Cuando esté listo para crear y configurar un sitio aislado en producción, vea Implementar un sitio de grupo de [SharePoint Online aislado.](deploy-an-isolated-sharepoint-online-team-site.md)
 
 ## <a name="see-also"></a>Vea también
 

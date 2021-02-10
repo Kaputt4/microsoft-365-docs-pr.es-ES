@@ -1,5 +1,5 @@
 ---
-title: Más información sobre los tipos de información confidencial
+title: Obtener más información acerca de los tipos de información confidencial
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 896a529d67faddb45b2672ca077f5a8e3b19827e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933090"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166455"
 ---
-# <a name="learn-about-sensitive-information-types"></a>Más información sobre los tipos de información confidencial
+# <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
 Identificar y clasificar elementos confidenciales que están bajo el control de su organización es el primer paso de la disciplina [de Protección de la información.](protect-information.md)  Microsoft 365 ofrece tres formas de identificar elementos para que se puedan clasificar:
 
@@ -31,7 +31,7 @@ Identificar y clasificar elementos confidenciales que están bajo el control de 
 - reconocimiento de patrones automatizado, como los tipos de información confidencial
 - [aprendizaje automático](classifier-learn-about.md)
 
-Los tipos de información confidencial son clasificadores basados en patrones. Detectan información confidencial, como números de cuentas bancarias, tarjetas de crédito o seguridad social, para identificar elementos confidenciales, consulta definiciones de entidad de [tipos de información confidencial](sensitive-information-type-entity-definitions.md)
+Los tipos de información confidencial son clasificadores basados en patrones. Detectan información confidencial, como números de cuentas bancarias, tarjetas de crédito o seguridad social, para identificar elementos confidenciales, ver definiciones de entidad de [tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
@@ -53,7 +53,7 @@ Cada entidad de tipo de información confidencial se define mediante estos campo
     - Nivel de confianza: los niveles de confianza (alto, medio, bajo) reflejan cuánta evidencia de apoyo se detectó junto con el elemento principal. Cuanto más evidencia de apoyo contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que buscas.
     - Proximidad: número de caracteres entre el elemento principal y el elemento de apoyo
 
-![Diagrama de evidencia corroborativa y ventana de proximidad](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagrama de prueba corroboradora y ventana de proximidad](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 Obtenga más información sobre los niveles de confianza en este vídeo
 
@@ -137,6 +137,8 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 
 
 > [!NOTE]
+> Los niveles de confianza mejorados están disponibles para su uso inmediato en prevención de pérdida de datos para los servicios de Microsoft 365, Microsoft Information Protection para servicios de Microsoft 365, cumplimiento de comunicaciones, gobierno de información y administración de registros.
+
 > Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
 > - Chino (simplificado)
 > - Chino (tradicional)

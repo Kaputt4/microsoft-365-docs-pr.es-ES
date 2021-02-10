@@ -7,23 +7,26 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) independiente con el fin de configurarse correctamente y evitar errores de configuración comunes.
-ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) independiente con el fin de configurarse para el éxito y evitar errores de configuración comunes.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864893"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165936"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedimientos recomendados para configurar EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+-  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Siga estos procedimientos recomendados para Exchange Online Protection (EOP) independiente con el fin de configurarse correctamente y evitar errores de configuración comunes. En este tema se supone que ya completó el proceso de configuración. Si no completó la configuración de EOP, vea [Configurar un servicio de EOP](set-up-your-eop-service.md).
+Siga estos procedimientos recomendados para Exchange Online Protection (EOP) independiente con el fin de configurarse para el éxito y evitar errores de configuración comunes. En este tema se supone que ya completó el proceso de configuración. Si no completó la configuración de EOP, vea [Configurar un servicio de EOP](set-up-your-eop-service.md).
 
 ## <a name="use-a-test-domain"></a>Usar un dominio de prueba
 
@@ -48,13 +51,13 @@ Estas opciones de configuración cubren una serie de características que están
 |[Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sí|Sí||
 |[Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)|Sí|Sí||
 |[Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md)|Sí|Sí|Se `action=quarantine` usa para Standard y `action=reject` Strict.|
-|Implementar el complemento de mensaje [](enable-the-report-phish-add-in.md) de informe [o](enable-the-report-message-add-in.md) el complemento de suplantación de identidad de informes para mejorar los informes de correo electrónico sospechoso para el usuario final|Sí|Sí||
+|Implementar el complemento de mensaje [](enable-the-report-phish-add-in.md) de informe [o](enable-the-report-message-add-in.md) el complemento de suplantación de identidad de informe para mejorar los informes de correo electrónico sospechoso para el usuario final|Sí|Sí||
 |Programar informes de malware y correo no deseado|Sí|Sí||
 |El reenvío automático a dominios externos debe no estar permitido o supervisarse|Sí|Sí||
 |Se debe habilitar la auditoría unificada|Sí|Sí||
 |[Conectividad IMAP al buzón](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Deshabilitado|Deshabilitado||
 |[Conectividad POP al buzón](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Deshabilitado|Deshabilitado||
-|Envío SMTP autenticado|Deshabilitado|Deshabilitado|El envío SMTP de cliente autenticado (también conocido como envío SMTP de cliente o AUTENTICACIÓN SMTP) es necesario para que los clientes POP3 e IMAP4 envíen correo electrónico.|
+|Envío SMTP autenticado|Deshabilitado|Deshabilitado|El envío SMTP del cliente autenticado (también conocido como envío SMTP de cliente o AUTENTICACIÓN SMTP) es necesario para que los clientes POP3 e IMAP4 envíen correo electrónico.|
 |Conectividad de EWS al buzón|Deshabilitado|Deshabilitado||
 |[Conectividad de PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Deshabilitado|Deshabilitado|Disponible para usuarios de buzones de correo o usuarios de correo (objetos de usuario devueltos por el cmdlet [Get-User).](https://docs.microsoft.com/powershell/module/exchange/get-user)|
 |Usar [inteligencia de suplantación](learn-about-spoof-intelligence.md) de identidad para agregar remitentes a la lista de permitidos|Sí|Sí||
@@ -64,7 +67,7 @@ Estas opciones de configuración cubren una serie de características que están
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Solucionar problemas generales y tendencias con los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Obtenga más información sobre la herramienta de seguimiento de mensajes en Seguimiento de mensajes en el Centro [de & cumplimiento.](message-trace-scc.md)
+Solucionar problemas generales y tendencias con los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Obtenga más información sobre la herramienta de seguimiento de mensajes en seguimiento de mensajes en el [Centro de & cumplimiento.](message-trace-scc.md)
 
 ## <a name="report-false-positives-and-false-negatives-to-microsoft"></a>Notificar falsos positivos y falsos negativos a Microsoft
 

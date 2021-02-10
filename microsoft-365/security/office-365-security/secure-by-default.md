@@ -17,17 +17,22 @@ ms.collection:
 description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040549"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166584"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 "Seguro de forma predeterminada" es un término que se usa para definir la configuración predeterminada más segura posible.
 

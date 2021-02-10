@@ -9,7 +9,6 @@ ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,17 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre las vistas de campaña en Microsoft Defender para Office 365.
-ms.openlocfilehash: 20cb50a4b304e148df24e54fac3a05c484cfa4f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e3b9c1a9a19e38ea83b13d9028af1a6ba042b900
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794369"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165924"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Vistas de campaña en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 Vistas de campaña es una característica de Microsoft Defender para Office 365 Plan 2 (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento defender para Office 365 Plan 2). Las vistas de campaña en el Centro de & de cumplimiento identifican y clasifican los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
 
@@ -64,7 +67,7 @@ También puedes acceder a vistas de campaña desde:
 - **Administración de amenazas** \> **Explorador** \> **Vista** \> **Phishing** \> **Pestaña Campaña**
 - **Administración de amenazas** \> **Explorador** \> **Vista** \> **Malware** \> **Pestaña Campaña**
 
-Para obtener acceso a las vistas de campaña, debe ser  miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el Centro de & Cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener acceso a vistas de campaña, debe ser miembro  de los grupos de roles Administración de la **organización,** Administrador de seguridad o Lector de seguridad en el Centro de seguridad & Cumplimiento. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="campaigns-overview"></a>Introducción a las campañas
 
@@ -89,7 +92,7 @@ El resto de la página de información general muestra la siguiente información
   - **Suplantación** de identidad : si está disponible, la marca que esta campaña está suplantación de identidad. Por ejemplo, `Microsoft` , , , o `365` `Unknown` `Outlook` `DocuSign` .
   - **Malware:** por ejemplo, `HTML/PHISH` o `HTML/<MalwareFamilyName>` .
 
-  Cuando esté disponible, la marca que esta campaña suplanta. Cuando la detección está controlada por la tecnología Defender para Office 365, el prefijo **ATP-** se agrega al valor de subtipo.
+  Cuando esté disponible, la marca que esta campaña está suplantada. Cuando la detección está controlada por la tecnología Defender para Office 365, el prefijo **ATP-** se agrega al valor de subtipo.
 
 - **Destinatarios**: el número de usuarios a los que se ha dirigido esta campaña.
 
@@ -97,9 +100,9 @@ El resto de la página de información general muestra la siguiente información
 
 - **Clicked**: The number of users that clicked on the URL or opened the attachment in the phishing message.
 
-- **Tasa de clics:** porcentaje calculado por "**Bandeja** de entrada en la que se  /  **hizo clic".** Este valor es un indicador de la eficacia de la campaña. En otras palabras, si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y si no han hecho clic en la dirección URL de carga.
+- **Tasa de clics:** porcentaje calculado por "**Bandeja** de entrada en la que se  /  **hizo clic".** Este valor es un indicador de la efectividad de la campaña. En otras palabras, si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y si no han hecho clic en la dirección URL de carga.
 
-  Ten en cuenta **que la tasa de** clics no se usa en las campañas de malware.
+  Ten en cuenta **que la tasa de** clics no se usa en campañas de malware.
 
 - **Visitado:** cuántos usuarios llegaron realmente al sitio web de carga. Si hay valores **clicked,** pero vínculos seguros bloquearon el acceso al sitio web, este valor será cero.
 
@@ -165,7 +168,7 @@ Después de crear un filtro básico o avanzado, puede guardarlo mediante Guardar
 
 Para exportar el gráfico o la lista de campañas, haga clic en Exportar **y** seleccione Exportar datos **del gráfico** o Exportar lista **de campañas.**
 
-Si tienes una suscripción de Microsoft Defender para puntos de conexión, puedes hacer clic en Configuración de **MDE** para conectar o desconectar la información de campañas con Microsoft Defender para Endpoint. Para obtener más información, vea [Integrar Microsoft Defender para Office 365 con Microsoft Defender para Endpoint.](integrate-office-365-ti-with-wdatp.md)
+Si tienes una suscripción de Microsoft Defender para puntos de conexión, puedes hacer clic en Configuración de **MDE** para conectar o desconectar la información de campañas con Microsoft Defender para Endpoint. Para obtener más información, vea [Integrar Microsoft Defender para Office 365 con Microsoft Defender para endpoint.](integrate-office-365-ti-with-wdatp.md)
 
 ## <a name="campaign-details"></a>Detalles de la campaña
 
@@ -189,7 +192,7 @@ En la parte superior de la vista de detalles de la campaña, está disponible la
 
 - Una escala de tiempo interactiva de la actividad de la campaña: la escala de tiempo muestra la actividad durante toda la duración de la campaña. De forma predeterminada, el área sombreada incluye el filtro de intervalo de fechas que seleccionó en la introducción. Puede hacer clic y arrastrar para seleccionar un punto inicial y un punto final específicos, lo que cambiará los datos que se muestran en el área de impacto y en el resto de la página, como se describe en las secciones <u>siguientes.  </u>
 
-En la barra de título, puedes hacer clic en el botón Descargar escritura de campaña para descargar el icono de escritura de campaña para descargar los detalles de la campaña en un documento de Word (de forma predeterminada, denominado  ![ ](../../media/download-campaign-write-up-button.png) CampaignReport.docx). Ten en cuenta que la descarga contiene detalles durante toda la duración de la campaña (no solo las fechas de filtro que seleccionaste).
+En la barra de título, puedes hacer clic en el botón Descargar escritura de campaña descargar el icono de escritura de campaña para descargar los detalles de la campaña en un documento de Word (de forma predeterminada, denominado  ![ ](../../media/download-campaign-write-up-button.png) CampaignReport.docx). Ten en cuenta que la descarga contiene detalles durante toda la duración de la campaña (no solo las fechas de filtro que seleccionaste).
 
 ![Información de la campaña](../../media/campaign-details-campaign-info.png)
 
@@ -244,7 +247,7 @@ El diagrama contiene la información siguiente:
 - **Clics de dirección URL:** estos valores se describen en la siguiente sección.
 
 > [!NOTE]
-> En todas las capas que contienen más de 10 elementos, se muestran los 10 elementos principales, mientras que el resto se agrupan en **Otros.**
+> En todas las capas que contienen más de 10 elementos, se muestran los 10 elementos superiores, mientras que el resto se agrupan en **Otros**.
 
 #### <a name="url-clicks"></a>Clics de URL
 
@@ -255,7 +258,7 @@ Si un usuario hizo clic en la dirección URL de carga en el mensaje de suplantac
 - **Permitido**
 - **BlockPage:** el destinatario hizo clic en la dirección URL de carga, pero su acceso al sitio web malintencionado fue bloqueado por una directiva [de](atp-safe-links.md) vínculos seguros de su organización.
 - **BlockPageOverride:** el destinatario hizo clic en la dirección URL de carga del mensaje, Vínculos seguros intentó detenerlos, pero se les permitió invalidar el bloque. Inspeccione las [directivas de vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar hasta el sitio web malintencionado.
-- **PendingDetonationPage:** datos adjuntos seguros en Microsoft Defender para Office 365 está en proceso de abrir e investigar la dirección URL de carga en un entorno de equipo virtual.
+- **PendingDetonationPage:** Datos adjuntos seguros en Microsoft Defender para Office 365 está en proceso de abrir e investigar la dirección URL de carga en un entorno de equipo virtual.
 - **PendingDetonationPageOverride:** se permitió al destinatario invalidar el proceso de detonación de carga y abrir la dirección URL sin esperar los resultados.
 
 ### <a name="tabs"></a>Pestañas
@@ -286,7 +289,7 @@ Las pestañas de la vista de detalles de la campaña te permiten investigar aún
   - **DKIM pasado:** el remitente se autenticó mediante el correo identificado de claves de dominio [(DKIM).](support-for-validation-of-dkim-signed-messages.md) Un remitente que no pasa la validación DKIM indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
   - **DMARC pasado:** el remitente se autenticó mediante autenticación de mensajes basada en dominio, informes y [conformidad (DMARC).](use-dmarc-to-validate-email.md) Un remitente que no pasa la validación de DMARC indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
 
-- **Attachments**
+- **Datos adjuntos**
   - **Filename**
   - **SHA256**
   - **Familia de malware**

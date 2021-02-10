@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
@@ -16,17 +15,23 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 48f08e5b0d94a0e1eb65b78ba56639d8457f90aa
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788104"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165564"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de garantizar que los usuarios recibirán correo electrónico de remitentes de confianza. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, la lista de direcciones IP permitidas (filtrado de conexiones) y listas de remitentes permitidos o listas de dominios permitidos en directivas contra correo no deseado. Colectivamente, puede pensar en estas opciones como listas _de remitentes seguros._
 
@@ -61,7 +66,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
 2. Configure una de las siguientes opciones:
 
-   - **Condición de regla de flujo de correo:** **un encabezado de** mensaje incluye cualquiera de estas palabras Nombre de \>  \> **encabezado**: Valor de `Authentication-Results` \> **encabezado**: o `dmarc=pass` `dmarc=bestguesspass` .
+   - **Condición de regla de flujo de correo:** **un encabezado de** mensaje incluye cualquiera de estas palabras Nombre de encabezado : Valor de \>  \>  `Authentication-Results` \> **encabezado**: o `dmarc=pass` `dmarc=bestguesspass` .
 
      Esta condición comprueba el estado de autenticación de correo electrónico del dominio de correo electrónico de envío para asegurarse de que no se está suplantado el dominio de envío. Para obtener más información acerca de la autenticación de correo electrónico, [vea SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md).
 
@@ -71,7 +76,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
    > [!IMPORTANT]
    >
-   > - No configure nunca reglas de flujo de correo solo con *el* dominio del remitente como la condición para omitir el filtrado de correo no deseado. Si lo  hace, aumentará considerablemente la probabilidad de que los atacantes puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir todo el filtrado de correo no deseado y omitir las comprobaciones de autenticación del remitente para que el mensaje llegue a la Bandeja de entrada del destinatario.
+   > - No configure nunca reglas de flujo *de* correo solo con el dominio del remitente como la condición para omitir el filtrado de correo no deseado. Si lo  hace, aumentará considerablemente la probabilidad de que los atacantes puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir todo el filtrado de correo no deseado y omitir las comprobaciones de autenticación del remitente para que el mensaje llegue a la Bandeja de entrada del destinatario.
    >
    > - No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) como condiciones en las reglas de flujo de correo. Si lo hace, se considera de alto riesgo porque crea oportunidades para que los atacantes envíen correo electrónico que, de lo contrario, se filtraría.
    >
@@ -100,7 +105,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 > [!CAUTION]
 > Este método crea un alto riesgo de que los atacantes entreguen correctamente correo electrónico a la Bandeja de entrada que, de lo contrario, se filtraría; sin embargo, las listas de remitentes seguros o dominios seguros del usuario no impiden que se filtren mensajes de suplantación de identidad de confianza alta o malware.
 
-En lugar de una configuración organizativa, los usuarios o administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros del buzón. Para obtener instrucciones, consulte [Configurar las opciones de correo no deseado en buzones de Exchange Online en Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Esto no es deseable en la mayoría de las situaciones, ya que los remitentes omitirán partes de la pila de filtrado. Aunque confíe en el remitente, el remitente aún puede verse comprometido y enviar contenido malintencionado. Es mejor que permita que nuestros filtros hagan lo que se necesita para comprobar cada mensaje y, a continuación, notificar los [falsos](report-junk-email-messages-to-microsoft.md) positivos o negativos a Microsoft si nuestros filtros tienen un error. Omitir la pila de filtrado también interfiere con [ZAP](zero-hour-auto-purge.md).
+En lugar de una configuración organizativa, los usuarios o administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros del buzón. Para obtener instrucciones, consulte [Configurar las opciones de correo no deseado en buzones de Exchange Online en Office 365.](configure-junk-email-settings-on-exo-mailboxes.md) Esto no es deseable en la mayoría de las situaciones, ya que los remitentes omitirán partes de la pila de filtrado. Aunque confíe en el remitente, el remitente aún puede verse comprometido y enviar contenido malintencionado. Es mejor que permita que nuestros filtros hagan lo necesario para comprobar cada mensaje y, a continuación, notificar los falsos positivos o negativos a [Microsoft](report-junk-email-messages-to-microsoft.md) si nuestros filtros no lo han hecho. Omitir la pila de filtrado también interfiere con [ZAP](zero-hour-auto-purge.md).
 
 Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes seguros de un usuario, el campo de encabezado **X-Forefront-Antispam-Report** contendrá el valor , lo que indica que se omitió el filtrado de correo no deseado, suplantación de identidad y suplantación de `SFV:SFE` identidad.
 
@@ -137,11 +142,11 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre d
 
 - La dirección (también conocida como dirección MAIL FROM, remitente P1 o remitente del sobre) es la dirección de correo electrónico que se usa en la transmisión `5321.MailFrom` SMTP del mensaje.  Esta dirección de correo electrónico normalmente se registra en el campo de encabezado **Return-Path** en el encabezado del mensaje (aunque es posible que el remitente designe una dirección de correo electrónico de **return-path** diferente). Si el mensaje no se puede entregar, es el destinatario del informe de no entrega (también conocido como NDR o mensaje de de rebote).
 
-- El (también conocido como la dirección De o el remitente P2) es la dirección de correo electrónico en el campo de encabezado De y es la dirección de correo electrónico del remitente que se muestra en los clientes de `5322.From` correo electrónico.  
+- La dirección de correo electrónico (también conocida como la dirección De o el remitente P2) es la dirección de correo electrónico del campo de encabezado De y es la dirección de correo electrónico del remitente que se muestra en los clientes de `5322.From` correo electrónico.  
 
-Con frecuencia, las direcciones y son las mismas (comunicación de persona `5321.MailFrom` `5322.From` a persona). Sin embargo, cuando el correo electrónico se envía en nombre de otra persona, las direcciones pueden ser diferentes. Esto sucede con más frecuencia para los mensajes de correo electrónico masivos.
+Con frecuencia, las direcciones y son las mismas (comunicación de persona `5321.MailFrom` `5322.From` a persona). Sin embargo, cuando el correo electrónico se envía en nombre de otra persona, las direcciones pueden ser diferentes. Esto sucede con más frecuencia para los mensajes de correo electrónico masivo.
 
-Por ejemplo, supongamos que Blue Yonder Airlines ha contratado a Viajes Margie para que envíe su publicidad por correo electrónico. El mensaje que recibe en la Bandeja de entrada tiene las siguientes propiedades:
+Por ejemplo, supongamos que Blue Yonder Airlines ha contratado a Viajes Margie para enviar su publicidad por correo electrónico. El mensaje que recibe en la Bandeja de entrada tiene las siguientes propiedades:
 
 - La `5321.MailFrom` dirección es blueyonder.airlines@margiestravel.com.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: efbdee1fd5ee3c8c48aca9cbaf9e5a85a107edb4
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094693"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166465"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -108,7 +108,7 @@ Sin embargo, si se activa el historial de conversaciones en Skype Empresarial y 
 
 Los mensajes de reunión del canal se almacenan de la misma manera que los mensajes del canal, así que para estos datos, seleccione la ubicación de los **mensajes del canal de Teams** cuando configure su directiva de retención.
 
-Los mensajes de reuniones improvisadas se almacenan de la misma manera que los mensajes de chat del grupo, por lo que para estos datos, seleccione la ubicación de los **chats de Teams** cuando configure su directiva de retención.
+Los mensajes de reuniones improvisadas y programadas se almacenan de la misma manera que los mensajes de chat del grupo, por lo que para estos datos, seleccione la ubicación de los **chats de Teams** cuando configure su directiva de retención.
 
 Cuando se incluyen usuarios externos en una reunión que su organización organiza:
 

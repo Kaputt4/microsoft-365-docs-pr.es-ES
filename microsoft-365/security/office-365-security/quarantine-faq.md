@@ -19,21 +19,25 @@ description: Los administradores pueden ver las preguntas más frecuentes y las 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032606"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166932"
 ---
 # <a name="quarantined-messages-faq"></a>Preguntas más frecuentes sobre los mensajes en cuarentena
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En este tema se proporcionan preguntas y respuestas más frecuentes sobre los mensajes de correo electrónico en cuarentena para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
 
-Para obtener preguntas y respuestas acerca de la protección contra correo no deseado, consulte preguntas más frecuentes sobre protección contra [correo no deseado.](anti-spam-protection-faq.md)
+Para obtener preguntas y respuestas acerca de la protección contra correo no deseado, consulte preguntas más frecuentes sobre protección [contra correo no deseado.](anti-spam-protection-faq.md)
 
 Para obtener preguntas y respuestas acerca de la protección antimalware, consulte preguntas más frecuentes sobre protección [antimalware.](anti-malware-protection-faq-eop.md)
 
@@ -45,7 +49,7 @@ Solo los administradores pueden administrar los mensajes que se han puesto en cu
 
 ## <a name="how-do-i-quarantine-spam"></a>¿Cómo poner en cuarentena el correo no deseado?
 
-De forma predeterminada, los mensajes clasificados como correo no deseado o correo electrónico masivo mediante el filtrado de correo no deseado se entregan en el buzón del usuario y se mueven a la carpeta de correo no deseado. Sin embargo, puede crear y configurar directivas contra correo no deseado para poner en cuarentena los mensajes de correo no deseado o de correo masivo en su lugar. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+De forma predeterminada, los mensajes clasificados como correo no deseado o correo masivo mediante el filtrado de correo no deseado se entregan en el buzón del usuario y se mueven a la carpeta correo no deseado. Sin embargo, puede crear y configurar directivas contra correo no deseado para poner en cuarentena los mensajes de correo no deseado o de correo masivo en su lugar. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>¿Cómo puedo dar acceso a los usuarios a la cuarentena?
 
@@ -71,11 +75,11 @@ Los administradores pueden usar los cmdlets [Get-QuarantineMessage](https://docs
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>¿Se admiten caracteres comodín al buscar mensajes en cuarentena? ¿Puedo buscar mensajes en cuarentena para un dominio específico?
 
-Los caracteres comodín no se admiten en el Centro de & cumplimiento. Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa. Sin embargo, puede usar caracteres comodín en Exchange Online PowerShell o EOP PowerShell independiente.
+Los caracteres comodín no se admiten en el Centro de seguridad & cumplimiento. Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa. Pero puede usar caracteres comodín en Exchange Online PowerShell o EOP PowerShell independiente.
 
 Por ejemplo, copie el siguiente código de PowerShell en el Bloc de notas y guarde el archivo como .ps1 en una ubicación que sea fácil de encontrar (por ejemplo, C:\Data\QuarantineRelease.ps1).
 
-A continuación, después de conectarse a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) o [Exchange Online Protection PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)ejecute el siguiente comando para ejecutar el script:
+Después, después de conectarse a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) o [Exchange Online Protection PowerShell,](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)ejecute el siguiente comando para ejecutar el script:
 
 ```powershell
 & C:\Data\QuarantineRelease.ps1

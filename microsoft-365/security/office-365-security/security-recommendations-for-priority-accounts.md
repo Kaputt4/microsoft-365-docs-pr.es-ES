@@ -1,5 +1,5 @@
 ---
-title: Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
+title: Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365, cuentas de prioridad, cuentas de prioridad en Office 365, cuentas de prioridad en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,18 +20,18 @@ ms.collection:
 description: Los administradores pueden aprender a elevar la configuración de seguridad y usar informes, alertas e investigaciones para cuentas de prioridad en sus organizaciones de Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10890a5fe797439de0bfc28bf28a216318016908
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929311"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166374"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recomendaciones de seguridad para cuentas de prioridad en Microsoft 365
 
 No todas las cuentas de usuario tienen acceso a la misma información de la compañía. Algunas cuentas tienen acceso a información confidencial, como datos financieros, información de desarrollo de productos, acceso de asociados a sistemas de compilación críticos y mucho más. Si se ponen en peligro, las cuentas que tienen acceso a información extremadamente confidencial representan una amenaza grave. Llamamos a estos tipos de cuentas _cuentas de prioridad._ Las cuentas de prioridad incluyen (pero no están limitadas a) los directores ejecutivos, los CCE, los directores de finanzas, las cuentas de administrador de infraestructura, las cuentas del sistema de compilación y mucho más.
 
-Para los atacantes, los ataques de suplantación de identidad comunes que convierten en una red aleatoria para usuarios comunes o desconocidos son ineficaces. Por otra parte, los ataques de suplantación de identidad _(phishing)_ o _whaling_ que tienen como objetivo cuentas de prioridad son muy enriquecedores para los atacantes. Por lo tanto, las cuentas de prioridad requieren una protección más sólida que la protección normal para ayudar a evitar que la cuenta se vea comprometida.
+Para los atacantes, los ataques de suplantación de identidad comunes que convierten en una red aleatoria para usuarios comunes o desconocidos son ineficaces. Por otro lado, los ataques de suplantación de identidad _(phishing)_ o _whaling_ que tienen como objetivo cuentas de prioridad son muy recompensados para los atacantes. Por lo tanto, las cuentas de prioridad requieren una protección más sólida que la protección normal para ayudar a evitar que la cuenta se vea comprometida.
 
 Microsoft 365 y Microsoft Defender para Office 365 contienen varias características clave que proporcionan capas adicionales de seguridad para sus cuentas de prioridad. En este artículo se describen estas funcionalidades y cómo usarlas.
 
@@ -39,7 +39,7 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 
 ****
 
-|Tarea|Todos los planes de Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
+|Task|Todos los planes de Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
 |[Aumentar la seguridad de inicio de sesión para las cuentas de prioridad](#increase-sign-in-security-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Usar directivas de seguridad preestablecidas estrictas para cuentas de prioridad](#use-strict-preset-security-policies-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -52,7 +52,7 @@ Microsoft 365 y Microsoft Defender para Office 365 contienen varias característ
 
 Las cuentas de prioridad requieren una mayor seguridad de inicio de sesión. Puede aumentar su seguridad de inicio de sesión si requiere la autenticación multifactor (MFA) y deshabilita los protocolos de autenticación heredados.
 
-Para obtener instrucciones, consulte [el paso 1. Aumente la seguridad de inicio de sesión para los trabajadores remotos con MFA.](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in) Aunque este artículo trata sobre los trabajadores remotos, los mismos conceptos se aplican a los usuarios prioritarios.
+Para obtener instrucciones, consulte [el paso 1. Aumente la seguridad de inicio de sesión para los trabajadores remotos con MFA.](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in) Aunque este artículo trata sobre los trabajadores remotos, los mismos conceptos se aplican a los usuarios con prioridad.
 
 **Nota:** Le recomendamos encarecidamente que deshabilite globalmente los protocolos de autenticación heredados para todos los usuarios con prioridad, como se describe en el artículo anterior. Si los requisitos empresariales le impiden hacerlo, Exchange Online ofrece los siguientes controles para ayudar a limitar el ámbito de los protocolos de autenticación heredados:
 
@@ -62,7 +62,7 @@ Para obtener instrucciones, consulte [el paso 1. Aumente la seguridad de inicio 
   - [Habilitar o deshabilitar el acceso a POP3 o IMAP4 para un usuario](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Habilitar o deshabilitar el envío SMTP del cliente autenticado (AUTH SMTP)](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-También es importante tener en cuenta que la autenticación básica está en desuso en Exchange Online para servicios Web Exchange (EWS), Exchange ActiveSync, POP3, IMAP4 y PowerShell remoto. Para obtener más información, consulte esta [entrada de blog.](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)
+También cabe destacar que la autenticación básica está en proceso de desuso en Exchange Online para servicios Web Exchange (EWS), Exchange ActiveSync, POP3, IMAP4 y PowerShell remoto. Para obtener más información, consulte esta [entrada de blog.](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>Usar directivas de seguridad preestablecidas estrictas para cuentas de prioridad
 
@@ -74,7 +74,7 @@ Puede implementar este enfoque estricto para las cuentas de prioridad mediante e
 
 Las directivas de seguridad preestablecidas son una ubicación cómoda y central para aplicar la configuración de directiva estricta recomendada para todas las protecciones de EOP y Defender para Office 365. Para obtener más información, vea [Las directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365.](preset-security-policies.md)
 
-Para obtener más información sobre cómo la configuración de directiva Estricta difiere de la configuración de directiva predeterminada y estándar, vea Configuración recomendada para EOP y Microsoft Defender para la seguridad [de Office 365.](recommended-settings-for-eop-and-office365-atp.md)
+Para obtener más información sobre cómo la configuración de directiva Estricta difiere de la configuración de directiva predeterminada y estándar, vea Configuración recomendada para EOP y Microsoft Defender para la seguridad de [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Aplicar etiquetas de usuario a cuentas de prioridad
 
@@ -94,18 +94,18 @@ Después de proteger y etiquetar a los usuarios de prioridad, puede usar los inf
 
 |Característica|Descripción|
 |---|---|
-|Alertas|Las etiquetas de usuario de los usuarios  afectados están visibles y disponibles como filtros en la página Ver alertas del Centro de & cumplimiento. Para obtener más información, vea [Ver alertas.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
+|Alertas|Las etiquetas de usuario de los usuarios  afectados están visibles y disponibles como filtros en la página Ver alertas en el Centro de & cumplimiento. Para obtener más información, vea [Ver alertas.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
 |Explorador de amenazas <p> Detecciones en tiempo real|En el Explorador de amenazas **(Microsoft** Defender para Office 365 Plan 2) o en detecciones en tiempo real (Microsoft Defender para Office 365 Plan 1), las etiquetas de usuario están **visibles** en la vista cuadrícula de correo electrónico y en el control desplegable Detalles de correo electrónico. Las etiquetas de usuario también están disponibles como una propiedad que se puede filtrar. Para obtener más información, vea [Etiquetas en el Explorador de amenazas.](threat-explorer.md#tags-in-threat-explorer)|
-|Vistas de campañas|Las etiquetas de usuario son una de las muchas propiedades que se pueden filtrar en vistas de campaña en Microsoft Defender para Office 365 Plan 2. Para obtener más información, consulta [Vistas de la campaña.](campaigns.md)|
+|Vistas de campañas|Las etiquetas de usuario son una de las muchas propiedades que se pueden filtrar en vistas de campaña en Microsoft Defender para Office 365 Plan 2. Para obtener más información, vea [Vistas de la campaña.](campaigns.md)|
 |Informe de estado de protección contra amenazas|En prácticamente todas las vistas y tablas de detalles del informe de estado de protección contra **amenazas,** puede filtrar los resultados por **cuentas de prioridad.** Para obtener más información, consulta [el informe de estado de protección contra amenazas.](view-email-security-reports.md#threat-protection-status-report)|
 |Informe de problemas de correo electrónico para cuentas de prioridad|El **informe problemas de** correo electrónico para cuentas de prioridad en el Centro de administración de Exchange (EAC) contiene información sobre los mensajes no entregados y retrasados para las cuentas de **prioridad.** Para obtener más información, consulte [Problemas de correo electrónico para el informe de cuentas de prioridad.](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
 ## <a name="train-users"></a>Entrenar a los usuarios
 
-La formación de usuarios con cuentas de prioridad puede ayudar a ahorrar mucho tiempo y frustración a esos usuarios y al equipo de operaciones de seguridad. Los usuarios expertos tienen menos probabilidades de abrir datos adjuntos o hacer clic en vínculos en mensajes de correo electrónico cuestionables, y es más probable que eviten sitios web sospechosos.
+La formación de usuarios con cuentas de prioridad puede ayudar a ahorrar tiempo y frustración a esos usuarios y al equipo de operaciones de seguridad. Los usuarios expertos tienen menos probabilidades de abrir datos adjuntos o hacer clic en vínculos en mensajes de correo electrónico cuestionables, y es más probable que eviten sitios web sospechosos.
 
-El Manual [](https://www.belfercenter.org/CyberPlaybook) de campañas de ciberseguridad de la escuela de Phish proporciona una guía excelente para establecer una cultura sólida de reconocimiento de la seguridad dentro de su organización, incluida la formación a los usuarios para identificar ataques de suplantación de identidad.
+El Manual [](https://www.belfercenter.org/CyberPlaybook) de campañas de ciberseguridad de la escuela Descluyéndote proporciona una guía excelente para establecer una cultura sólida de reconocimiento de la seguridad dentro de su organización, incluida la formación de los usuarios para identificar ataques de suplantación de identidad.
 
 Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los usuarios de su organización:
 
@@ -126,6 +126,6 @@ Además, Microsoft recomienda que los usuarios tomen las acciones descritas en e
 - Protección de dispositivos
 - Habilitación de características de seguridad en equipos Windows 10 y Mac (para dispositivos no administrados)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 [Anuncio de protección de cuentas de prioridad en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

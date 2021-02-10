@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,24 +16,30 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, obtendrá información sobre la herramienta de Microsoft Exchange Online Protection (EOP)
-ms.openlocfilehash: 2a752c89e2430f24441d14178942b89362736322
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: En este artículo, aprenderá sobre protección contra correo electrónico no Microsoft Exchange Online (EOP)
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3cdc556a8cc193466d150fc82298796779841cca
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203592"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165960"
 ---
 # <a name="backscatter-in-eop"></a>Reenvío masivo de correo electrónico en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-La *dispersión* es un informe de no entrega (también conocido como NDR o mensajes de devolución) que recibe para los mensajes que no ha enviado. Los remitentes de correo no deseado falsifican (suplantan) la dirección de: de sus mensajes y suelen usar direcciones de correo electrónico reales para prestar credibilidad a sus mensajes. Por lo tanto, cuando los remitentes de correo no deseado envían mensajes a destinatarios inexistentes (el correo no deseado es un gran volumen de operaciones), el servidor de correo electrónico de destino se complica básicamente a devolver el mensaje que no se entrega en un NDR al remitente falsificado en la dirección from:.
+*El correo electrónico no* enviado son informes de no entrega (también conocidos como NDRs o mensajes de de rebote) que recibe para los mensajes que no envió. Los spammers falsificar (suplantar) la dirección De: de sus mensajes y, a menudo, usan direcciones de correo electrónico reales para dar crédito a sus mensajes. Por lo tanto, cuando los spammers inevitablemente envían mensajes a destinatarios inexistentes (el correo no deseado es una operación de gran volumen), el servidor de correo electrónico de destino es esencialmente complicado para devolver el mensaje que no se puede entregar en un NDR al remitente falsificado en la dirección De:.
 
-En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP hace todo lo posible para identificar y eliminar silenciosamente los mensajes de fuentes dudosas sin generar un NDR. Pero, en función de la gran cantidad de correo electrónico que fluye a través del servicio, siempre existe la posibilidad de que EOP envíe involuntariamente el servicio de dispersión.
+En organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP hace todo lo posible por identificar y colocar mensajes de orígenes dudosos sin generar un NDR. Pero, en función del gran volumen de correo electrónico que fluye a través del servicio, siempre existe la posibilidad de que EOP envíe de forma involuntaria el correo electrónico no deseado.
 
-Backscatterer.org mantiene una lista de bloqueados (también conocida como una lista de bloqueados de DNS o DNSBL) de los servidores de correo electrónico que eran responsables del envío de la copia de fondo y los servidores EOP podrían aparecer en esta lista. Pero no estamos intentando eliminarlas de la lista de bloqueadores de Backscatterer.org porque no es una lista de remitentes de correo no deseado (por su propia admisión).
+Backscatterer.org mantiene una lista de bloqueados (también conocida como una lista de bloqueados DNS o DNSBL) de servidores de correo electrónico responsables de enviar reenvío de correo electrónico no deseado, y los servidores EOP pueden aparecer en esta lista. Pero no intentamos quitarnos de la lista de bloqueados de Backscatterer.org porque no es una lista de spammers (por su propia admisión).
 
 > [!TIP]
-> El sitio web de Backscatter.org ( <http://www.backscatterer.org/?target=usage> ) recomienda usar su servicio para comprobar el correo electrónico entrante en modo seguro en lugar de rechazar el modo (los servicios de correo electrónico de gran tamaño casi siempre envían algún indispersión).
+> El Backscatter.org web de correo electrónico ( ) recomienda usar su servicio para comprobar el correo electrónico entrante en modo seguro en lugar del modo de rechazo (los servicios de correo electrónico grandes casi siempre envían algo de correo <http://www.backscatterer.org/?target=usage> electrónico no deseado).

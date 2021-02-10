@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -18,23 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a actualizar un registro de Servicio de nombres de dominio (DNS) para usar el marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
-ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905228"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166236"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Requisitos previos](#prerequisites)
-- [Crear o actualizar el registro TXT de SPF](#create-or-update-your-spf-txt-record)   
-  - [¿Cómo se tratan los subdominios?](#how-to-handle-subdomains)
-- [¿Qué hace realmente la autenticación de correo electrónico SPF?](#what-does-spf-email-authentication-actually-do)   
-   - [Solucionar problemas relacionados con SPF](#troubleshooting-spf)
-- [Más información sobre SPF](#more-information-about-spf)
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En este artículo se describe cómo actualizar un registro del servicio de nombres de dominio (DNS) para que pueda usar la autenticación de correo electrónico del Marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
 

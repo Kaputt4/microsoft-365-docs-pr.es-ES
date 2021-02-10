@@ -13,17 +13,21 @@ description: Los administradores pueden obtener información sobre las perspecti
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef9498d19e79cf670fbae52171b78b0c44c45910
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029367"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167100"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Los administradores pueden usar el panel de flujo de correo en el Centro de seguridad y cumplimiento de & para detectar tendencias, información y realizar acciones para solucionar problemas relacionados con el flujo de correo en su organización.
 
@@ -72,7 +76,7 @@ El panel flujo de correo está disponible para los miembros de los siguientes gr
   - El usuario solo tendrá permiso de solo lectura en el panel de flujo de correo.
   - El usuario no tendrá acceso al Centro de administración de Microsoft 365.
 
-Para obtener más información acerca de los permisos, vea Permisos en el Centro de seguridad [& Cumplimiento](permissions-in-the-security-and-compliance-center.md) y Conceder a los usuarios acceso al Centro de seguridad [& cumplimiento.](grant-access-to-the-security-and-compliance-center.md)
+Para obtener más información acerca de los permisos, vea Permisos en el Centro de seguridad [& Cumplimiento](permissions-in-the-security-and-compliance-center.md) y conceder a los usuarios acceso al Centro de seguridad [& cumplimiento.](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 

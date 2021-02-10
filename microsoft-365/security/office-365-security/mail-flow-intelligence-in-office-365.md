@@ -14,19 +14,23 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocidos como inteligencia de flujo de correo).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7d4277d1ce3baeabcb5b1795b5d57583fbc8245
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029261"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167076"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones de Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, normalmente se usa un conector para enrutar mensajes de correo electrónico desde EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentiendo la entrega de cada mensaje durante 24 horas. Después de 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como NDR o mensaje de devolución).
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar mensajes de correo electrónico desde EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentiendo la entrega de cada mensaje durante 24 horas. Después de 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como NDR o mensaje de devolución).
 
 Microsoft 365 genera un error cuando no se puede entregar un mensaje mediante un conector. Los errores más comunes y sus soluciones se describen en este artículo. Colectivamente, los errores de colas y notificación de mensajes no entregados enviados a través de conectores se conocen como inteligencia _de flujo de correo._
 
@@ -60,7 +64,7 @@ Normalmente, esto significa que Microsoft 365 no puede conectarse al servidor de
 
 - Si el error es de la organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), póngase en contacto con su partner para solucionar el problema.
 
-## <a name="error-code-450-44316-connection-refused"></a>Código de error: 450 4.4.316 Se rechazó la conexión
+## <a name="error-code-450-44316-connection-refused"></a>Código de error: 450 4.4.316 Connection refused
 
 Normalmente, este error significa que Microsoft 365 encontró un error de conexión cuando intentó conectarse al servidor de correo electrónico de destino. Una causa probable de este error es que el firewall está bloqueando las conexiones de las direcciones IP de Microsoft 365. O bien, este error puede ser por diseño si ha migrado completamente el sistema de correo electrónico local a Microsoft 365 y ha cerrado su entorno de correo electrónico local.
 
@@ -76,7 +80,7 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
     2. Seleccione el conector con el **valor De** de  **Office 365** y **el** valor Para del servidor de correo electrónico de su organización y siga uno de estos pasos:
 
-       - Eliminar el conector haciendo clic en **eliminar** ![ icono](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Eliminar el conector haciendo clic en **el icono** ![ Eliminar quitar](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
        - Deshabilite el conector haciendo **clic en el icono** Editar y ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **desactivando Activar.**
 
@@ -136,6 +140,6 @@ Normalmente, este error significa que Microsoft 365 encontró un error al intent
 
 ## <a name="other-error-codes"></a>Otros códigos de error
 
-Microsoft 365 tiene dificultades para entregar mensajes a su servidor de correo electrónico local o asociado. Use la **información del servidor** de destino del error para examinar el problema en su entorno o modifique el conector si hay un error de configuración.
+Microsoft 365 tiene dificultades para entregar mensajes a su servidor de correo electrónico local o asociado. Use la **información del servidor** de destino en el error para examinar el problema en su entorno o modifique el conector si hay un error de configuración.
 
 Si el error es de su organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.

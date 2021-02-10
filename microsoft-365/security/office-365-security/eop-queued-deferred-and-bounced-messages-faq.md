@@ -8,25 +8,30 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
-description: Encuentre respuestas a las preguntas más frecuentes sobre los mensajes que se han puesto en cola, aplazados o devueltos durante el proceso de filtrado de Exchange Online Protection (EOP).
-ms.openlocfilehash: 4ae38e871c0d6e4321bd7586c5cfd0bea3aeef81
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Encuentre respuestas a las preguntas más comunes sobre los mensajes que se han puesto en cola, aplazado o devuelto durante el proceso de filtrado de Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 854e954e3ebb995ba23db2afc6f2ca9ab19de508
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202944"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165432"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-En este tema se proporcionan respuestas a las preguntas más frecuentes acerca de los mensajes que se han puesto en cola, aplazados o devueltos durante el proceso de filtrado de Exchange Online Protection (EOP).
+En este tema se proporcionan respuestas a las preguntas más frecuentes sobre los mensajes que se han puesto en cola, aplazado o devuelto durante el proceso de filtrado de Exchange Online Protection (EOP).
 
 ## <a name="why-is-mail-queuing"></a>¿Por qué se pone el correo en cola?
 
@@ -38,7 +43,7 @@ Los mensajes se retienen cuando no se puede conectar con el servidor del destina
 
 ## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a>¿Cuánto tiempo permanece aplazado un mensaje y cuál es el intervalo de reintento?
 
-Los mensajes en aplazamientos permanecerán en nuestras colas por 1 día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los primeros aplazamientos son de 15 minutos o menos, con reintentos posteriores (en las próximas mitades o más), lo que aumenta el intervalo en varios reintentos hasta un máximo de 60 minutos. La expansión de la duración del intervalo es dinámica, teniendo en cuenta varias variables como los tamaños de las colas y la prioridad de mensajes interna. En Basic, tiene 15 minutos (o menos) para comenzar y, a continuación, se expande a partir de las próximas horas a 60 min máx.
+Los mensajes aplazados permanecerán en las colas durante 1 día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los primeros aplazamientos son de 15 minutos o menos, con reintentos posteriores (durante la siguiente media docenas o más) aumentando el intervalo durante varios reintentos a un máximo de 60 minutos. La expansión de la duración del intervalo es dinámica, teniendo en cuenta varias variables, como los tamaños de cola y la prioridad de los mensajes internos. En básico, el inicio es de 15 minutos (o menos) y, a continuación, se expande desde allí en las próximas horas a 60 minutos como máximo.
 
 ## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a>Después de que se restaura el servidor de correo electrónico, ¿cómo se distribuyen los mensajes en cola?
 

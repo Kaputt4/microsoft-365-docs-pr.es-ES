@@ -6,7 +6,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.article: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,17 +13,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los administradores de Microsoft 365 pueden aprender a recuperarse de un ataque de ransomware.
-ms.openlocfilehash: 753171578dc7b76aefadf4b8587e84320d98b912
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794453"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166908"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Incluso si toma todas las precauciones para proteger su organización, todavía puede ser víctima de un [ataque de ransomware.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware es una gran empresa y los ataques son muy sofisticados.
 
@@ -48,7 +53,7 @@ Si no tiene copias de seguridad o si las copias de seguridad también se vieron 
 
 El punto clave aquí es detener la propagación del cifrado de datos por el ransomware.
 
-Si sospecha que el correo electrónico es un destino del cifrado ransomware, deshabilite temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync sincroniza datos entre dispositivos y buzones de Exchange Online.
+Si sospecha que el correo electrónico es un destino del cifrado de ransomware, deshabilite temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync sincroniza datos entre dispositivos y buzones de Exchange Online.
 
 Para deshabilitar Exchange ActiveSync para un buzón de correo, consulte Cómo deshabilitar Exchange ActiveSync [para los usuarios de Exchange Online](https://support.microsoft.com/help/2795303).
 
@@ -58,7 +63,7 @@ Para deshabilitar otros tipos de acceso a un buzón, consulte:
 
 - [Habilitar o deshabilitar el acceso a POP3 o IMAP4 para un usuario](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nube de que los dispositivos potencialmente infectados se actualicen. Para obtener más información, [vea Cómo pausar y reanudar la sincronización en OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nube de ser actualizados por dispositivos potencialmente infectados. Para obtener más información, [vea Cómo pausar y reanudar la sincronización en OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Paso 3: Quitar el malware de los dispositivos afectados
 
@@ -106,7 +111,7 @@ Después de haber recuperado, puede impedir que los clientes de OneDrive para la
 
 ### <a name="contact-law-enforcement"></a>Ponerse en contacto con las fuerzas del orden
 
-Debe ponerse en contacto con los organismos de seguridad locales o federales. Por ejemplo, si se encuentra en Estados Unidos, puede ponerse en contacto con la oficina de campo local del [DEPARTAMENTO de SEGURIDAD,](https://www.fbi.gov/contact-us/field) [IC3](http://www.ic3.gov/complaint/default.aspx) o [el Servicio secreto.](http://www.secretservice.gov/)
+Debe ponerse en contacto con los organismos de seguridad locales o federales. Por ejemplo, si se encuentra en Estados Unidos, puede ponerse en contacto con la oficina de campo local de [THEBL,](https://www.fbi.gov/contact-us/field) [IC3](http://www.ic3.gov/complaint/default.aspx) o [el Servicio secreto.](http://www.secretservice.gov/)
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Enviar un informe al sitio web de informes de estafas de su país
 
@@ -134,7 +139,7 @@ Si su país no aparece en la lista, pregúntele a los organismos de seguridad lo
 
 Puede notificar mensajes de suplantación de identidad que contienen ransomware mediante uno de varios métodos. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

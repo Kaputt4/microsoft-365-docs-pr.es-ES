@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Consumer/IW
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,17 +18,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
-ms.openlocfilehash: 038d3326df2572f792f1cfc7efa6ad6d03e0a602
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 126bf1f8c8ea8c16242b7b3749066131e8942304
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611369"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166140"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para más información, consulte [Cuarentena en EOP](quarantine-email-messages.md).
 

@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -16,17 +15,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: f5cc652bcc16cec28dd411ad30ce0896334733f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a31f65eb415fbe6ebd58eddf50456ca5e9bb1d27
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683384"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165792"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En organizaciones de Microsoft 365 con buzones de correo de Exchange Online u organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP protege automáticamente los mensajes de correo electrónico entrantes contra el correo no deseado. EOP usa directivas de bloqueo de correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) como parte de la defensa general de la organización contra el correo no deseado. Para obtener más información, consulte [Protección contra correo no deseado](anti-spam-protection.md).
 
@@ -61,7 +66,7 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento de Office 365 antes de que pueda usar este cmdlet.
+- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento para poder realizar los procedimientos de este artículo:
   - Para agregar, modificar y eliminar directivas contra correo no deseado, debe ser miembro de los grupos de roles **Administración de la organización** o **Administrador de seguridad**.
   - Para obtener acceso de solo lectura a las directivas contra correo no deseado, tiene que ser miembro del grupo de roles **Lector de seguridad**.
 
@@ -107,7 +112,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
      ****
 
-     |Acción|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)<br>correo electrónico|Alto<br>confianza<br>suplantación de identidad (phishing)<br>correo electrónico|Masivo<br>correo electrónico|
+     |Action|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)<br>correo electrónico|Alto<br>confianza<br>suplantación de identidad (phishing)<br>correo electrónico|Masivo<br>correo electrónico|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
      |**Agregar encabezado X**: agrega un encabezado X al encabezado del mensaje y entrega el mensaje al buzón. <p> Especifique el nombre de campo del encabezado X (no el valor) más adelante en el cuadro **Agregar este texto de encabezado X**. <p> Para los veredictos **Correo no deseado** y **Correo no deseado de alta confianza**, el mensaje se mueve a la carpeta Correo no deseado.<sup>1,2</sup>|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|

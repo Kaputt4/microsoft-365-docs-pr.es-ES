@@ -14,20 +14,24 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre las opciones integradas de notificación de correo electrónico no deseado, correo no deseado y suplantación de identidad (phishing) en Outlook para iOS y Android.
+description: Los administradores pueden obtener información sobre las opciones integradas de notificación de correo electrónico no deseado, correo no deseado y suplantación de identidad en Outlook para iOS y Android.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d702ab1d97c07c3e38430a9a7beff5f14db7b60a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 58027f7589280b1266cddc8cfbf44db9e4f0ece4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029285"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166824"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Notificar correo electrónico no deseado y de suplantación de identidad en Outlook para iOS y Android en Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 En organizaciones de Microsoft 365 con buzones en Exchange Online o buzones locales mediante la autenticación moderna [híbrida,](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)puede usar las opciones de informes integradas en Outlook para iOS y Android para enviar falsos positivos (correo electrónico bueno marcado como correo no deseado), falsos negativos (correo electrónico no deseado permitido) y mensajes de suplantación de identidad a Exchange Online Protection (EOP).
 
@@ -51,11 +55,11 @@ Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo el
 
    ![Notificar correo no deseado o de suplantación de identidad desde el menú de acción](../../media/Android-report-as-junk-dialog.png)
 
-3. Pulse **Informar de correo no** deseado y, a **continuación,** seleccione Correo no deseado o **Suplantación de identidad**.
+3. Puntee **Informar de correo** no deseado y, a **continuación,** seleccione Correo no deseado o **Suplantación de identidad**.
 
-   ![Informar de correo electrónico no deseado o de suplantación de identidad](../../media/Android-report-junk-or-phishing.png)
+   ![Notificar correo electrónico no deseado o de suplantación de identidad](../../media/Android-report-junk-or-phishing.png)
 
-4. En el cuadro de diálogo que aparece, puede elegir **Informe** o **No gracias.** Al seleccionar No se **agradece,** si ha pulsado Correo no deseado,  el mensaje se mueve a la carpeta Correo no deseado, si pulsa suplantación de identidad, el mensaje se mueve a la carpeta Elementos eliminados.  Seleccione **Informe** para enviar también una copia del mensaje a Microsoft.
+4. En el cuadro de diálogo que aparece, puede elegir **Informe** o **No gracias.** Al seleccionar **No** gracias, si  ha pulsado Correo no deseado, el  mensaje se mueve a la carpeta Correo no deseado, si pulsa suplantación de identidad, el mensaje se mueve a la carpeta Elementos eliminados. Seleccione **Informe** para enviar también una copia del mensaje a Microsoft.
 
    ![Informar sobre las opciones de notificación de correo no deseado o de suplantación de identidad](../../media/Android-junk-email-reporting-options.png)
 

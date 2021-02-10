@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Use las guías del laboratorio de pruebas para crear soluciones y escenarios de Microsoft 365 en un entorno de desarrollo y pruebas.
-ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+description: Use las guías del entorno de pruebas para crear soluciones y escenarios de Microsoft 365 en un entorno de desarrollo y pruebas.
+ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521306"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166188"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guías del entorno de pruebas para soluciones y escenarios
 
@@ -36,3 +36,4 @@ Las TLG también le permiten crear entornos representativos para desarrollo y pr
 
 Pruebe [esta guía del entorno de pruebas](team-security-isolation-dev-test.md) para configurar un equipo con aislamiento de seguridad.
 
+Para obtener guías adicionales sobre las características y la configuración de Microsoft 365, consulte Guías del entorno de pruebas de [Microsoft 365 para empresas.](../enterprise/m365-enterprise-test-lab-guides.md)

@@ -9,7 +9,6 @@ ms.date: ''
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,18 +17,25 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y Defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usarse si desea ser más estricto? ¿Y qué extra obtiene si también usa Defender para Office 365?
-ms.openlocfilehash: c93475f1215477281604abe72d70a60a75c41b3f
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7a609a069e0e35b673b0902f2600f9c5433a14bb
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794465"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166944"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para la seguridad de Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Exchange Online Protection (EOP)** es el núcleo de seguridad de las suscripciones de Microsoft 365 y ayuda a evitar que los correos electrónicos malintencionados lleguen a las bandejas de entrada de los empleados. Pero con nuevos ataques más sofisticados cada día, a menudo se requieren protecciones mejoradas. **Microsoft Defender para Office 365** El plan 1 o el plan 2 contienen características adicionales que dan a los administradores más niveles de seguridad, control e investigación.
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+**Exchange Online Protection (EOP)** es el núcleo de seguridad de las suscripciones de Microsoft 365 y ayuda a evitar que los correos electrónicos malintencionados lleguen a las bandejas de entrada de los empleados. Sin embargo, con los nuevos ataques más sofisticados que surgen cada día, a menudo se requieren protecciones mejoradas. **Microsoft Defender para Office 365** El plan 1 o el plan 2 contienen características adicionales que dan a los administradores más niveles de seguridad, control e investigación.
 
 Aunque habilitamos a los administradores de seguridad para personalizar su configuración de seguridad, hay dos niveles de seguridad en EOP y Microsoft Defender para Office 365 que recomendamos: **Estándar** y **Estricto.** El entorno y las necesidades de cada cliente son diferentes, pero creemos que estos niveles de filtrado ayudarán a evitar que el correo no deseado llegue a la Bandeja de entrada de los empleados en la mayoría de las situaciones.
 
@@ -61,10 +67,10 @@ Para crear y configurar directivas contra correo no deseado, vea Configurar dire
 |**Acción de detección de correo electrónico de suplantación de identidad de** alta confianza <p> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de correo** electrónico masivo <p> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |Umbral de correo electrónico masivo <p> _BulkThreshold_|7 |6 |4 |Para obtener más información, consulte [Nivel de quejas masivas (BCL) en Office 365.](bulk-complaint-level-values.md)|
-|Período de retención en cuarentena <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
+|Período de retención de cuarentena <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
 |**Sugerencias de seguridad** <p> _InlineSafetyTipsEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |Remitentes permitidos <p> _AllowedSenders_|Ninguno|Ninguno|Ninguno||
-|Dominios de remitente permitidos <p> _AllowedSenderDomains_|Ninguno|Ninguno|Ninguno|Agregar dominios a la lista de remitentes permitidos es una idea muy mala. Los atacantes podrían enviarle un correo electrónico que, de lo contrario, se filtraría. <p> Use [](learn-about-spoof-intelligence.md) la inteligencia de suplantación de identidad  en el Centro de seguridad y cumplimiento de & en la página configuración contra correo no deseado para revisar todos los remitentes que suplanta las direcciones de correo electrónico de remitentes en los dominios de correo electrónico de su organización o las direcciones de correo electrónico del remitente de suplantación de identidad en dominios externos.|
+|Dominios de remitente permitidos <p> _AllowedSenderDomains_|Ninguno|Ninguno|Ninguno|Agregar dominios a la lista de remitentes permitidos es una idea muy mala. Los atacantes podrían enviarle un correo electrónico que, de lo contrario, se filtraría. <p> Use [](learn-about-spoof-intelligence.md) la inteligencia de suplantación de identidad  en el Centro de seguridad y cumplimiento de & en la página de configuración contra correo no deseado para revisar todos los remitentes que suplantar direcciones de correo electrónico de remitentes en los dominios de correo electrónico de su organización o suplantar direcciones de correo electrónico del remitente en dominios externos.|
 |Remitentes bloqueados <p> _BlockedSenders_|Ninguno|Ninguno|Ninguno||
 |Dominios de remitente bloqueados <p> _BlockedSenderDomains_|Ninguno|Ninguno|Ninguno||
 |**Habilitar las notificaciones de correo no deseado para el usuario final** <p> _EnableEndUserSpamNotifications_|Deshabilitado <p> `$false`|Habilitado <p> `$true`|Habilitado <p> `$true`||
@@ -76,7 +82,7 @@ Para crear y configurar directivas contra correo no deseado, vea Configurar dire
 
 Existen otras opciones de configuración del Filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado que están en proceso de desuso. Se comunicará más información sobre las escalas de tiempo para la depreciación de estas características fuera de este artículo.
 
-Te recomendamos que desactives esta configuración **de** ASF para los **niveles Estándar** **y Estricto.** Para obtener más información acerca de la configuración de ASF, vea configuración del filtro de correo no deseado [avanzado (ASF) en Office 365.](advanced-spam-filtering-asf-options.md)
+Te recomendamos que desactives esta configuración **de** ASF para los **niveles Estándar** **y Estricto.** Para obtener más información acerca de la configuración de ASF, vea la configuración del filtro de correo no deseado [avanzado (ASF) en Office 365.](advanced-spam-filtering-asf-options.md)
 
 ****
 
@@ -149,11 +155,11 @@ Las ventajas de seguridad adicionales vienen con una suscripción de Microsoft D
 
 > [!IMPORTANT]
 >
-> - La directiva contra suplantación de identidad predeterminada en [](set-up-anti-phishing-policies.md#spoof-settings) Microsoft Defender para Office 365 proporciona protección contra la suplantación de identidad e inteligencia de buzones para todos los destinatarios. Sin embargo, las otras características de [protección](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de suplantación disponibles y la configuración avanzada [no](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) están configuradas ni habilitadas en la directiva predeterminada. Para habilitar todas las características de protección, modifique la directiva contra suplantación de identidad predeterminada o cree directivas adicionales contra la suplantación de identidad.
+> - La directiva contra suplantación de identidad predeterminada en [](set-up-anti-phishing-policies.md#spoof-settings) Microsoft Defender para Office 365 proporciona protección contra la suplantación de identidad e inteligencia de buzones para todos los destinatarios. Sin embargo, las otras características de [protección](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de suplantación disponibles y la configuración [avanzada](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) no están configuradas ni habilitadas en la directiva predeterminada. Para habilitar todas las características de protección, modifique la directiva contra suplantación de identidad predeterminada o cree directivas adicionales contra la suplantación de identidad.
 >
 > - No hay directivas de vínculos seguros predeterminadas ni directivas de datos adjuntos seguros que protejan automáticamente a todos los destinatarios de la organización. Para obtener las protecciones, debe crear al menos una directiva de vínculos seguros y una directiva de datos adjuntos seguros.
 >
-> - [La protección de ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) y la protección de documentos seguros no tienen dependencias en las directivas de vínculos seguros. [](safe-docs.md)
+> - [Los datos adjuntos seguros para la protección de SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) y la protección de documentos seguros no tienen dependencias en las directivas de vínculos seguros. [](safe-docs.md)
 
 Si su suscripción incluye Microsoft Defender para Office 365 o si ha comprado Defender para Office 365 como complemento, establezca las siguientes configuraciones estándar o estrictas.
 
@@ -186,7 +192,7 @@ Para obtener más información acerca de esta configuración, vea la configuraci
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de suplantación de identidad en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
-Tenga en cuenta que estas son las mismas opciones que están disponibles en la configuración de directiva [contra correo no deseado en EOP.](#eop-anti-spam-policy-settings)
+Tenga en cuenta que estas son las mismas opciones que están disponibles en la configuración de directiva contra correo no [deseado en EOP.](#eop-anti-spam-policy-settings)
 
 ****
 
@@ -223,7 +229,7 @@ En PowerShell, use el cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/p
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Usar vínculos seguros en: aplicaciones de Office 365** <p> _EnableSafeLinksForO365Clients_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Usar vínculos seguros en aplicaciones compatibles de escritorio y móviles de Office 365 (iOS y Android). Para obtener más información, vea [La configuración de vínculos seguros para aplicaciones de Office 365.](atp-safe-links.md#safe-links-settings-for-office-365-apps)|
-|**No realizar un seguimiento de cuándo los usuarios hacen clic en Vínculos seguros** <p> _TrackClicks_|Activada <p> `$false`|Desactivada <p> `$true`|Desactivado <p> `$true`|Al desactivar esta configuración (establecer _TrackClicks_ en ) se realiza un seguimiento de los clics del usuario en las aplicaciones compatibles `$true` de Office 365.|
+|**No realizar un seguimiento de cuándo los usuarios hacen clic en Vínculos seguros** <p> _TrackClicks_|Activada <p> `$false`|Desactivada <p> `$true`|Desactivado <p> `$true`|Al desactivar esta configuración (establecer _TrackClicks_ en ) se realiza un seguimiento de los clics del usuario en las aplicaciones compatibles de `$true` Office 365.|
 |**No permitir que los usuarios hagan clic en Vínculos seguros a la dirección URL original** <p> _AllowClickThrough_|Activado <p> `$false`|Activado <p> `$false`|Activado <p> `$false`|Activar esta configuración (establecer _AllowClickThrough en_ ) impide hacer clic en la dirección URL original en las aplicaciones de `$false` Office 365 compatibles.|
 |
 
@@ -246,7 +252,7 @@ En PowerShell, use los cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/
 |**Esperar a que se complete el examen de direcciones URL antes de entregar el mensaje** <p> _DeliverMessageAfterScan_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
 |**Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización** <p> _EnableForInternalSenders_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`||
 |**No realizar un seguimiento de los clics del usuario** <p> _DoNotTrackUserClicks_|Desactivado <p> `$false`|Desactivado <p> `$false`|Desactivado <p> `$false`|Al desactivar esta configuración (establecer _DoNotTrackUserClicks_ en ) se realiza un `$false` seguimiento de los clics de los usuarios.|
-|**No permitir que los usuarios hagan clic en la dirección URL original** <p> _DoNotAllowClickThrough_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Activar esta configuración (establecer _DoNotAllowClickThrough en_ ) impide hacer `$true` clic en la dirección URL original.|
+|**No permitir que los usuarios hagan clic en la dirección URL original** <p> _DoNotAllowClickThrough_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Activar esta configuración (estableciendo _DoNotAllowClickThrough en_ ) impide hacer `$true` clic en la dirección URL original.|
 |
 
 ### <a name="safe-attachments-settings"></a>Configuración de datos adjuntos seguros
@@ -255,7 +261,7 @@ Datos adjuntos seguros en Microsoft Defender para Office 365 incluye la configur
 
 #### <a name="global-settings-for-safe-attachments"></a>Configuración global de datos adjuntos seguros
 
-Para configurar estas opciones, vea Activar ATP para [SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) y documentos seguros [en Microsoft 365 E5.](safe-docs.md)
+Para configurar estas opciones, vea Activar datos adjuntos seguros para [SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) y documentos seguros [en Microsoft 365 E5.](safe-docs.md)
 
 En PowerShell, use el cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) para esta configuración.
 
@@ -263,7 +269,7 @@ En PowerShell, use el cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/p
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Activar ATP para SharePoint, OneDrive y Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Activado <p> `$true`|Activado <p> `$true`||
+|**Activar Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Activado <p> `$true`|Activado <p> `$true`||
 |**Activar documentos seguros para clientes de Office** <p> _EnableSafeDocs_|Activado <p> `$true`|Activado <p> `$true`|Esta configuración solo está disponible con licencias de Seguridad de Microsoft 365 E5 o Microsoft 365 E5. Para obtener más información, vea [Documentos seguros en Microsoft Defender para Office 365.](safe-docs.md)|
 |**Permitir a los usuarios hacer clic a través de la vista protegida incluso si documentos seguros identificaron el archivo como malintencionado** <p> _AllowSafeDocsOpen_|Desactivado <p> `$false`|Desactivado <p> `$false`|Esta configuración está relacionada con documentos seguros.|
 |
@@ -275,7 +281,7 @@ Para configurar estas opciones, vea [Configurar directivas de datos adjuntos seg
 En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) y [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) para esta configuración.
 
 > [!NOTE]
-> Como se describió anteriormente, no hay ninguna directiva predeterminada de datos adjuntos seguros. Los valores de la columna Predeterminado son los valores predeterminados de las nuevas directivas de datos adjuntos seguros que cree.
+> Como se describió anteriormente, no hay ninguna directiva predeterminada de datos adjuntos seguros. Los valores de la columna Predeterminado son los valores predeterminados en las nuevas directivas de datos adjuntos seguros que cree.
 
 ****
 
@@ -283,7 +289,7 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft
 |---|:---:|:---:|:---:|---|
 |**Respuesta de malware desconocido de datos adjuntos seguros** <p> _Acción_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
 |**Redirigir datos adjuntos al detectar:** **habilitar el redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y sin dirección de correo electrónico especificada. <p> `$true` <p> none|On y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|On y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
-|**Aplica la selección anterior si se ha finalizado el análisis de malware para datos adjuntos o si se produce un error.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
+|**Aplica la selección anterior si se ha producido un error o si se ha producido un error en la detección de malware en busca de datos adjuntos.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |
 
 ## <a name="related-articles"></a>Artículos relacionados
@@ -292,6 +298,6 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft
 
 - Los administradores y usuarios pueden enviar falsos positivos (correo electrónico bueno marcado como negativo) y falsos negativos (correo electrónico no deseado permitido) a Microsoft para su análisis. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Use estos vínculos para obtener información sobre cómo **configurar** el servicio [EOP](set-up-your-eop-service.md)y **configurar** [Microsoft Defender para Office 365.](office-365-atp.md) Don't forget the helpful directions in '[Protect Against Threats in Office 365'.](protect-against-threats.md)
+- Use estos vínculos para obtener información sobre cómo **configurar el** servicio [EOP](set-up-your-eop-service.md)y **configurar** Microsoft Defender para [Office 365.](office-365-atp.md) No olvide las instrucciones útiles en "Proteger[contra amenazas en Office 365".](protect-against-threats.md)
 
 - Las líneas base de seguridad para **Windows** se encuentran aquí: ¿Dónde puedo obtener las líneas base de [seguridad?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) para las opciones de GPO/locales y Usar líneas base de seguridad para configurar [dispositivos Windows 10](https://docs.microsoft.com/intune/protect/security-baselines) en Intune para la seguridad basada en Intune. Por último, hay disponible una comparación entre las líneas base de seguridad de Microsoft Defender para Endpoint y Microsoft Intune en Comparar Microsoft Defender para Endpoint y las líneas base de seguridad [de Windows Intune.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)

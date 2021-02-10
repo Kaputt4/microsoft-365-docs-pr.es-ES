@@ -1,5 +1,5 @@
 ---
-title: Configurar EOP a correo no deseado en entornos híbridos
+title: Configurar EOP para correo no deseado en entornos híbridos
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,106 +8,109 @@ manager: chrisda
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre cómo enrutar correo no deseado a las carpetas de correo no deseado del usuario en un entorno híbrido de protección de Exchange Online.
+description: Los administradores pueden aprender a enrutar el correo no deseado a las carpetas de correo no deseado del usuario en un entorno híbrido de Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 76003f18009ebf9159f01d916cdaf38b50a213d1
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 926ac6dec33bf00fc8f0dcd292229e20ccc2b93f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350344"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167124"
 ---
-# <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar un EOP independiente para enviar correo no deseado a la carpeta de correo no deseado en entornos híbridos
+# <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar EOP independiente para entregar correo no deseado a la carpeta correo no deseado en entornos híbridos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+-  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 > [!IMPORTANT]
-> Este tema es solo para clientes de EOP independientes en entornos híbridos. Este tema no se aplica a los clientes de Microsoft 365 con buzones de correo de Exchange Online.
+> Este tema es solo para clientes de EOP independientes en entornos híbridos. Este tema no se aplica a los clientes de Microsoft 365 con buzones de Exchange Online.
 
-Si es cliente independiente de Exchange Online Protection (EOP) en un entorno híbrido, debe configurar la organización de Exchange local para que reconozca y traduzca los veredictos del filtrado de correo no deseado de EOP, por lo que la regla de correo no deseado del buzón local puede mover mensajes a la carpeta de correo electrónico no deseado.
+Si es un cliente independiente de Exchange Online Protection (EOP) en un entorno híbrido, debe configurar la organización de Exchange local para que reconozca y traduzca los veredictos de filtrado de correo no deseado de EOP, de modo que la regla de correo no deseado del buzón local pueda mover mensajes a la carpeta correo no deseado.
 
-En concreto, debe crear reglas de flujo de correo (también conocidas como reglas de transporte) en su organización de Exchange local con condiciones que encuentren mensajes con cualquiera de los siguientes valores y encabezados de correo no deseado de EOP, así como acciones que establezcan el nivel de confianza contra correo no deseado (SCL) de esos mensajes en 6:
+En concreto, debe crear reglas de flujo de correo (también conocidas como reglas de transporte) en su organización de Exchange local con condiciones que encuentren mensajes con cualquiera de los siguientes encabezados y valores de correo no deseado de EOP, y acciones que establezcan el nivel de confianza contra correo no deseado (SCL) de esos mensajes en 6:
 
 - `X-Forefront-Antispam-Report: SFV:SPM` (mensaje marcado como correo no deseado por el filtrado de correo no deseado)
 
-- `X-Forefront-Antispam-Report: SFV:SKS` (mensaje marcado como correo no deseado por reglas de flujo de correo en EOP antes del filtrado de correo no deseado)
+- `X-Forefront-Antispam-Report: SFV:SKS` (Mensaje marcado como correo no deseado por las reglas de flujo de correo en EOP antes del filtrado de correo no deseado)
 
-- `X-Forefront-Antispam-Report: SFV:SKB` (mensaje marcado como correo no deseado por el filtrado de correo no deseado debido a la dirección de correo electrónico o al dominio de correo electrónico del remitente en la lista de remitentes bloqueados o en la lista de dominios bloqueados en EOP)
+- `X-Forefront-Antispam-Report: SFV:SKB` (Mensaje marcado como correo no deseado por el filtrado de correo no deseado debido a que la dirección de correo electrónico o el dominio de correo electrónico del remitente se encuentra en la lista de remitentes bloqueados o en la lista de dominios bloqueados en EOP)
 
-Para obtener más información acerca de estos valores de encabezado, consulte [anti-spam Message headers](anti-spam-message-headers.md).
+Para obtener más información acerca de estos valores de encabezado, consulte [Encabezados de mensajes contra correo no deseado.](anti-spam-message-headers.md)
 
-En este tema se describe cómo crear estas reglas de flujo de correo en el centro de administración de Exchange (EAC) y en el shell de administración de Exchange (Exchange PowerShell) en la organización de Exchange local.
+En este tema se describe cómo crear estas reglas de flujo de correo en el Centro de administración de Exchange (EAC) y en el Shell de administración de Exchange (Exchange PowerShell) en la organización local de Exchange.
 
 > [!TIP]
 > En lugar de entregar los mensajes a la carpeta de correo no deseado del usuario local, puede configurar directivas contra correo no deseado en EOP para poner en cuarentena los mensajes de correo no deseado en EOP. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Debe tener asignados permisos en el entorno local de Exchange para poder realizar estos procedimientos. En concreto, debe tener asignado el rol **reglas de transporte** , que se asigna a las **funciones administración**de la organización, **Administración del cumplimiento**y administración de **registros** de forma predeterminada. Para obtener más información, vea [Agregar miembros a un grupo de funciones](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group).
+- Deberá tener asignados permisos en el entorno de Exchange local antes de poder realizar estos procedimientos. En concreto, debe tener  asignado el rol Reglas de transporte, que se asigna a los **roles** Administración de la **organización,** Administración de cumplimiento y Administración de registros de forma predeterminada. Para obtener más información, vea [Agregar miembros a un grupo de roles.](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group)
 
-- Si un mensaje se entrega a la carpeta de correo no deseado en una organización de Exchange local y se controla mediante una combinación de las siguientes opciones de configuración:
+- Si y cuando se entrega un mensaje a la carpeta correo no deseado de una organización de Exchange local, se controla mediante una combinación de las siguientes opciones:
 
-  - El valor del parámetro _SCLJunkThreshold_ en el cmdlet [set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) del shell de administración de Exchange. El valor predeterminado es 4, lo que significa que un SCL de 5 o superior debe entregar el mensaje en la carpeta de correo no deseado del usuario.
+  - El _valor del parámetro SCLJunkThreshold_ en el cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) del Shell de administración de Exchange. El valor predeterminado es 4, lo que significa que un SCL de 5 o superior debe entregar el mensaje a la carpeta de correo no deseado del usuario.
 
-  - El valor del parámetro _SCLJunkThreshold_ en el cmdlet [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) en el shell de administración de Exchange. El valor predeterminado está en blanco ($null), lo que significa que se usa la configuración de la organización.
+  - El _valor del parámetro SCLJunkThreshold_ en el cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) del Shell de administración de Exchange. El valor predeterminado está en blanco ($null), lo que significa que se usa la configuración de la organización.
 
-  Para obtener información detallada, consulte [umbrales de nivel de confianza contra correo no deseado (SCL) de Exchange](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
+  Para obtener más información, consulte Umbrales de nivel de confianza contra correo no deseado [(SCL) de Exchange.](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl)
 
-  - Si la regla de correo no deseado está habilitada en el buzón (el valor del parámetro _Enabled_ se $true en el cmdlet [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) en el shell de administración de Exchange). Es la regla de correo no deseado que realmente mueve el mensaje a la carpeta correo electrónico no deseado después de la entrega. De forma predeterminada, la regla de correo no deseado está habilitada en los buzones. Para obtener más información, consulte [configurar las opciones de correo no deseado de Exchange en buzones](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  - Si la regla de correo no deseado está habilitada en el buzón (el valor del parámetro _Enabled_ es $true en el cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) en el Shell de administración de Exchange). Es la regla de correo no deseado la que mueve realmente el mensaje a la carpeta correo no deseado después de la entrega. De forma predeterminada, la regla de correo no deseado está habilitada en los buzones. Para obtener más información, vea [Configurar las opciones contra correo no deseado de Exchange en los buzones.](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)
 
-- Para abrir el EAC en un servidor de Exchange, vea [centro de administración de Exchange en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Para abrir el shell de administración de Exchange, consulte [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
+- Para abrir el EAC en una Exchange Server, vea el Centro de [administración de Exchange en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Para abrir el Shell de administración de Exchange, consulte [Abrir el Shell de administración de Exchange](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Para obtener más información acerca de las reglas de flujo de correo en Exchange local, consulte los siguientes temas:
 
   - [Reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
 
-  - [Excepciones (predicados) y condiciones de reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Excepciones y condiciones de regla de flujo de correo (predicados) en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-  - [Acciones de las reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
+  - [Acciones de regla de flujo de correo en Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Usar el EAC para crear reglas de flujo de correo que establezcan el SCL de los mensajes de correo no deseado de EOP
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Haga clic en **Agregar** ![ icono Agregar ](../../media/ITPro-EAC-AddIcon.png) y seleccione **crear una nueva regla** en la lista desplegable que aparece.
+2. Haga **clic en** el icono Agregar y seleccione Crear una nueva regla en la lista desplegable que ![ ](../../media/ITPro-EAC-AddIcon.png) aparece. 
 
 3. En la ventana **Nueva regla** que se abre, configure las siguientes opciones:
 
-   - **Name**: escriba un nombre único y descriptivo para la regla. Por ejemplo:
+   - **Nombre:** escriba un nombre único y descriptivo para la regla. Por ejemplo:
 
-     - EOP SFV: SPM a SCL 6
+     - EOP SFV:SPM a SCL 6
 
-     - EOP SFV: SKS a SCL 6
+     - EOP SFV:SKS a SCL 6
 
-     - EOP SFV: SKB a SCL 6
+     - EOP SFV:SKB a SCL 6
 
    - Haga clic en **Más opciones**.
 
-   - **Aplicar esta regla si**: seleccione **un encabezado** \> **de mensaje incluye alguna de estas palabras**.
+   - **Aplique esta regla si**: Seleccionar **un encabezado de mensaje** incluye cualquiera de estas \> **palabras.**
 
-     En la frase **Escriba el encabezado de texto incluye escribir palabras** , siga estos pasos:
+     En el **encabezado de texto Entrar se incluye la** frase Escribir palabras que aparece, siga estos pasos:
 
-     - Haga clic en **escribir texto**. En el cuadro de diálogo **especificar nombre de encabezado** que aparece, escriba **X-Forefront-antispam-Report** y, a continuación, haga clic en **Aceptar**.
+     - Haga **clic en Escribir texto.** En el **cuadro de diálogo Especificar nombre** de encabezado que aparece, escriba **X-Forefront-Antispam-Report** y, a continuación, haga clic en **Aceptar.**
 
-     - Haga clic en  **escribir palabras**. En el cuadro de diálogo **especificar palabras o frases** que aparece, escriba uno de los valores de encabezado de correo no deseado de EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**), haga clic en **Agregar** ![ icono Agregar ](../../media/ITPro-EAC-AddIcon.png) y, a continuación, haga clic en **Aceptar**.
+     - Haga **clic en Escribir palabras.** En  el cuadro de diálogo Especificar palabras o frases que aparece, escriba uno de los valores de encabezado de correo  no deseado de EOP (**SFV:SPM**, **SFV:SKS** o **SFV:SKB**), haga clic en el icono Agregar y, a continuación, haga clic en Aceptar ![ ](../../media/ITPro-EAC-AddIcon.png) . 
 
-   - **Haga lo siguiente**: seleccione **modificar las propiedades del mensaje** \> **establecer el nivel de confianza contra correo no deseado (SCL)**.
+   - **Haga lo siguiente:** Seleccione Modificar **las propiedades del mensaje** Establecer el nivel de confianza contra correo no deseado \> **(SCL).**
 
-     En el cuadro de diálogo **especificar SCL** que aparece, seleccione **6** (el valor predeterminado es **5**).
+     En el **cuadro de diálogo Especificar SCL** que aparece, seleccione **6** (el valor predeterminado es **5**).
 
-   Cuando haya terminado, haga clic en **Guardar** .
+   Cuando haya terminado, haga clic en **Guardar**
 
-Repita estos pasos para los demás valores de veredicto de correo no deseado de EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**).
+Repita estos pasos para los valores de veredicto de correo no deseado de EOP restantes (**SFV:SPM**, **SFV:SKS** o **SFV:SKB**).
 
-## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Usar el shell de administración de Exchange para crear reglas de flujo de correo que establezcan el SCL de los mensajes de correo no deseado de EOP
+## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Usar el Shell de administración de Exchange para crear reglas de flujo de correo que establezcan el SCL de los mensajes de correo no deseado de EOP
 
 Use la siguiente sintaxis para crear las tres reglas de flujo de correo:
 
@@ -133,17 +136,17 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, vea
 
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
-Para comprobar que configuró correctamente EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en un entorno híbrido, realice uno de los siguientes pasos:
+Para comprobar que ha configurado correctamente EOP independiente para entregar correo no deseado a la carpeta correo no deseado en un entorno híbrido, siga uno de estos pasos:
 
-- En el EAC, vaya a reglas de **flujo de correo** \> **Rules**, seleccione la regla y, a continuación, haga clic en **Editar** ![ icono ](../../media/ITPro-EAC-EditIcon.png) de edición para comprobar la configuración.
+- En el EAC, vaya **a** Reglas de flujo de correo, seleccione la regla y, a continuación, haga clic en el icono Editar \> para comprobar  ![ la ](../../media/ITPro-EAC-EditIcon.png) configuración.
 
-- En el shell de administración de Exchange, reemplace \<RuleName\> por el nombre de la regla de flujo de correo y regla el siguiente comando para comprobar la configuración:
+- En el Shell de administración de Exchange, reemplace por el nombre de la regla de flujo de correo y rule el siguiente comando \<RuleName\> para comprobar la configuración:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- En un sistema de correo electrónico externo **que no analiza los mensajes salientes en busca de correo no deseado**, envíe una prueba genérica de mensaje de correo electrónico masivo no solicitado (GTUBE) a un destinatario afectado y confirme que se entrega a su carpeta de correo electrónico no deseado. Un mensaje GTUBE es similar al archivo de texto del European Institute of Computer virus Research (EICAR) para probar la configuración de malware.
+- En un sistema de correo electrónico externo que no analice los mensajes salientes en busca de correo no **deseado,** envíe un mensaje de prueba genérica de correo masivo no solicitado (GTUBE) a un destinatario afectado y confirme que se ha entregado a su carpeta de correo no deseado. Un mensaje GTUBE es similar al archivo de texto del European Institute of Computer virus Research (EICAR) para probar la configuración de malware.
 
   Para enviar un mensaje GTUBE, incluya el siguiente texto en el cuerpo de un mensaje de correo electrónico en una sola línea, sin espacios ni saltos de línea:
 

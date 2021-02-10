@@ -18,17 +18,21 @@ ms.collection:
 description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que están por debajo de las directivas de seguridad preestablecidas Protección estándar y Protección estricta.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029483"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165912"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 El analizador de configuración del Centro de seguridad y cumplimiento de & proporciona una ubicación central para buscar y corregir directivas de seguridad en las que la configuración se encuentra por debajo de la configuración de protección estándar y de perfil de protección estricta en directivas de seguridad [preestablecidas.](preset-security-policies.md)
 
@@ -104,13 +108,13 @@ En la vista predeterminada, todo está contraído. Junto a cada directiva, hay u
 - **Ámbar:** un número reducido de configuraciones en las directivas existentes no son tan seguras como el perfil de protección.
 - **Rojo:** un número significativo de configuraciones en las directivas existentes no son tan seguras como el perfil de protección. Puede ser unas pocas opciones de configuración en muchas directivas o muchas opciones de configuración en una directiva.
 
-Para comparaciones favorables, verá el texto: Todas **las opciones de configuración siguen las** \<**Standard** or **Strict**\> **recomendaciones.** De lo contrario, verás el número de opciones de configuración recomendadas para cambiar.
+Para comparaciones favorables, verá el texto: **Todas las opciones de configuración siguen las** \<**Standard** or **Strict**\> **recomendaciones.** De lo contrario, verás el número de opciones de configuración recomendadas para cambiar.
 
 Si expandes el **nombre de configuración o** grupo de directivas, se revelan todas las directivas y la configuración asociada en cada directiva específica que requiera atención. O bien, puede expandir un tipo específico de directiva (por **ejemplo,** Contra correo electrónico no deseado) para ver solo la configuración de esos tipos de directivas que requieren su atención.
 
-Si la comparación no tiene recomendaciones para la mejora (verde), expandir la directiva no revela nada. Si hay alguna cantidad de recomendaciones para la mejora (ámbar o rojo), se muestran las configuraciones que requieren atención y la información correspondiente se muestra en las siguientes columnas:
+Si la comparación no tiene recomendaciones para la mejora (verde), expandir la directiva no revela nada. Si hay alguna cantidad de recomendaciones para la mejora (ámbar o rojo), se revelan las configuraciones que requieren atención y la información correspondiente se muestra en las siguientes columnas:
 
-- El nombre de la configuración que requiere tu atención. Por ejemplo, en la captura de pantalla anterior, es el umbral **de correo electrónico** masivo en una directiva contra correo no deseado.
+- Nombre de la configuración que requiere tu atención. Por ejemplo, en la captura de pantalla anterior, es el umbral **de correo electrónico** masivo en una directiva contra correo no deseado.
 
 - **Directiva:** nombre de la directiva afectada que contiene la configuración.
 
@@ -120,7 +124,7 @@ Si la comparación no tiene recomendaciones para la mejora (verde), expandir la 
 
 - **Última modificación:** la fecha en que se modificó la directiva por última vez.
 
-- **Recomendaciones:** el valor de la configuración en el perfil de protección Estándar o Estricto. Para cambiar el valor de la configuración de la directiva para que coincida con el valor recomendado en el perfil de protección, haga clic **en Adoptar**. Si el cambio se realiza correctamente, verá el mensaje: **Recomendaciones aprobadas correctamente.** Haga **clic en** Actualizar para ver el número reducido de recomendaciones y la eliminación de la fila de configuración o directiva específica de los resultados.
+- **Recomendaciones:** el valor de la configuración en el perfil de protección Estándar o Estricto. Para cambiar el valor de la configuración de la directiva para que coincida con el valor recomendado en el perfil de protección, haga clic en **Adoptar**. Si el cambio se realiza correctamente, verá el mensaje: **Recomendaciones aprobadas correctamente.** Haga **clic en** Actualizar para ver el número reducido de recomendaciones y la eliminación de la fila de configuración o directiva específica de los resultados.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Análisis de deriva de configuración e ficha historial en el analizador de configuración
 
