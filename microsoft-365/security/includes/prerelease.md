@@ -14,4 +14,4 @@ ms.lasthandoff: 01/29/2020
 ms.locfileid: "41600017"
 ---
 >[!IMPORTANT]
->Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>Parte de la información está relacionada con el producto de versión preliminar que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.

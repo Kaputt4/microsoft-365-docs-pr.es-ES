@@ -25,39 +25,39 @@ ms.locfileid: "42077107"
 ---
 # <a name="create-tag-groups"></a>Crear grupos de etiquetas
 
-Antes de que usted u otros usuarios puedan etiquetar documentos en un conjunto de revisión, deben crearse las etiquetas. Para ello, puede crear grupos de etiquetas que contengan etiquetas secundarias. Las etiquetas se muestran en el panel de etiquetado al revisar los documentos de un conjunto de revisión.
+Antes de que usted u otras personas puedan etiquetar documentos en un conjunto de revisión, deben crearse las etiquetas. Para ello, puede crear grupos de etiquetas que contengan etiquetas secundarias. Las etiquetas se muestran en el panel de etiquetado al revisar los documentos de un conjunto de revisión.
 
 Para crear un grupo de etiquetas:
 
-1.  En un conjunto de revisiones, haga clic en **administrar conjunto de revisiones**.
+1.  En un conjunto de revisión, haga clic **en Administrar conjunto de revisión.**
 
-    ![Haga clic en administrar conjunto de revisiones](../media/ED-managews.png)
+    ![Haga clic en Administrar conjunto de revisión](../media/ED-managews.png)
 
-2.  En el mosaico **etiquetas** , haga clic en **administrar etiquetas**.
+2.  En el icono **Etiquetas,** haga clic **en Administrar etiquetas.**
 
-    ![Haga clic en administrar etiquetas en el mosaico etiquetas](../media/ED-managetags.png)
+    ![Haga clic en Administrar etiquetas en el icono Etiquetas](../media/ED-managetags.png)
 
-Una vez dentro de la administración de etiquetas, se pueden crear etiquetas para cumplir los requisitos de su caso. Puede empezar por crear un grupo de etiquetas.
+Una vez dentro de la administración de etiquetas, se pueden crear etiquetas para satisfacer los requisitos de su caso. Puede empezar creando un grupo de etiquetas.
 
-1.  Haga clic en **Agregar sección**.
+1.  Haga clic **en Agregar sección.**
 
-    ![Adición de un grupo de etiquetas](../media/ED-addtagsection.png)
+    ![Agregar un grupo de etiquetas](../media/ED-addtagsection.png)
 
-    La pantalla de vista previa se actualizará al guardar para que pueda obtener una vista previa del panel de etiquetas sin tener que cerrar la pantalla de administración de etiquetas y volver al conjunto de trabajo.
+    La pantalla de vista previa se actualizará al guardar para poder obtener una vista previa del panel de etiquetas sin tener que cerrar la pantalla de administración de etiquetas y volver al conjunto de trabajo.
 
 2. Escriba un título y una descripción opcional. 
 
-3. Para crear una etiqueta dentro de ese grupo, haga clic en los puntos suspensivos en el nuevo grupo de etiquetas para crear etiquetas en esa nueva sección.
+3. Para crear una etiqueta dentro de ese grupo, haga clic en los puntos suspensivos del nuevo grupo de etiquetas para crear etiquetas en esa nueva sección.
     
-    ![Crear etiquetas en un grupo de etiquetas](../media/ED-createtag.png)
+    ![Creación de etiquetas en un grupo de etiquetas](../media/ED-createtag.png)
 
-   - Las **etiquetas de opción** obligarán a los usuarios a seleccionar una etiqueta de un grupo de etiquetas.
+   - **Las etiquetas de** opción obligarán a los usuarios a seleccionar una etiqueta de un grupo de etiquetas.
    
-   - Las **etiquetas** de las casillas permitirán a los usuarios seleccionar cualquier combinación de etiquetas. |
+   - **Las etiquetas de** casilla permitirán a los usuarios seleccionar cualquier combinación de etiquetas. |
 
 ## <a name="nested-tags"></a>Etiquetas anidadas
 
-Para anidar etiquetas, haga clic en los puntos suspensivos junto a una etiqueta y, a continuación, seleccione la nueva etiqueta que desea agregar.
+Para anidar etiquetas, haga clic en los puntos suspensivos situados junto a una etiqueta y, a continuación, seleccione una nueva etiqueta para agregarla.
 
-![Anidación de etiquetas](../media/ED-tagnesting.png)
+![Anidamiento de etiquetas](../media/ED-tagnesting.png)
 
