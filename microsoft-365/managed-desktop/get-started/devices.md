@@ -1,5 +1,5 @@
 ---
-title: Pedir dispositivos en el escritorio administrado por Microsoft
+title: Ordenar dispositivos en escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -16,11 +16,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 07/30/2020
 ms.locfileid: "46529534"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a><span data-ttu-id="3f9a2-103">Pedir dispositivos de escritorio administrados por Microsoft</span><span class="sxs-lookup"><span data-stu-id="3f9a2-103">Order Microsoft Managed Desktop devices</span></span>
+# <a name="order-microsoft-managed-desktop-devices"></a><span data-ttu-id="99d28-103">Solicitar dispositivos de Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="99d28-103">Order Microsoft Managed Desktop devices</span></span>
 
-<span data-ttu-id="3f9a2-104">Le recomendamos trabajar con uno de nuestros socios de dispositivo aprobados.</span><span class="sxs-lookup"><span data-stu-id="3f9a2-104">We recommend working with one of our approved device partners.</span></span> <span data-ttu-id="3f9a2-105">Puede trabajar con el contacto de la cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="3f9a2-105">You can work with your Microsoft account contact for more help setting up a device partnership.</span></span>
+<span data-ttu-id="99d28-104">Te recomendamos que trabajes con uno de nuestros partners de dispositivos aprobados.</span><span class="sxs-lookup"><span data-stu-id="99d28-104">We recommend working with one of our approved device partners.</span></span> <span data-ttu-id="99d28-105">Puedes trabajar con el contacto de tu cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="99d28-105">You can work with your Microsoft account contact for more help setting up a device partnership.</span></span>
 
-<span data-ttu-id="3f9a2-106">Mientras tanto, puede revisar la lista de [dispositivos aprobados actualmente](../service-description/device-list.md) que se admiten para su uso con el escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3f9a2-106">In the meantime, you can review the list of [currently approved devices](../service-description/device-list.md) that are supported for use with Microsoft Managed Desktop.</span></span>
+<span data-ttu-id="99d28-106">In the meantime, you can review the list of [currently approved devices](../service-description/device-list.md) that are supported for use with Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="99d28-106">In the meantime, you can review the list of [currently approved devices](../service-description/device-list.md) that are supported for use with Microsoft Managed Desktop.</span></span>
 
 
 

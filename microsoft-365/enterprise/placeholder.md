@@ -20,6 +20,6 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46693880"
 ---
-# <a name="placeholder-article"></a><span data-ttu-id="df1bb-103">Artículo de marcador de posición</span><span class="sxs-lookup"><span data-stu-id="df1bb-103">Placeholder article</span></span>
+# <a name="placeholder-article"></a><span data-ttu-id="40659-103">Artículo de marcador de posición</span><span class="sxs-lookup"><span data-stu-id="40659-103">Placeholder article</span></span>
 
-<span data-ttu-id="df1bb-104">Este artículo es un marcador de posición por ahora.</span><span class="sxs-lookup"><span data-stu-id="df1bb-104">This article is a placeholder for now.</span></span>
+<span data-ttu-id="40659-104">Este artículo es un marcador de posición por ahora.</span><span class="sxs-lookup"><span data-stu-id="40659-104">This article is a placeholder for now.</span></span>
