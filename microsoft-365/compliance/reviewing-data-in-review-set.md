@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre cómo revisar datos de casos en un conjunto de revisiones en eDiscovery avanzado.
+description: Obtenga información sobre cómo revisar los datos de casos en un conjunto de revisión en eDiscovery avanzado.
 ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT

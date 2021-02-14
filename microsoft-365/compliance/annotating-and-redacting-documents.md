@@ -1,5 +1,5 @@
 ---
-title: Ver documentos en un conjunto de revisión en eDiscovery avanzado
+title: Visualización de documentos en un conjunto de revisión en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Puede anotar y censurar documentos en un conjunto de revisiones en eDiscovery avanzado.
+description: Puede anotar y censurar documentos en un conjunto de revisión de eDiscovery avanzado.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 664045a3df50cdceb650208459c122049dba7c7c
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e

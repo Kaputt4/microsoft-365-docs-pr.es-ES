@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico. Solo algunos clientes, como OneDrive para la empresa, pueden devolver resultados en un entorno multigeográfico.
+description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigemico. Solo algunos clientes, como OneDrive para la Empresa, pueden devolver resultados en un entorno multige geográfico.
 ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -84,7 +84,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</td>
-<td align="left">Use el <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "discreta"</a> para refinadores numéricos.</td>
+<td align="left">Use el <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "Discretize" para</a> refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">Identificadores de documento</td>
@@ -131,7 +131,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 
 Todos los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
 
-![Diagrama que muestra cómo las API de REST de búsqueda de SharePoint interactúan con los índices de búsqueda](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagrama que muestra cómo interactúan las API de REST de SharePoint Search con los índices de búsqueda](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.
 2. La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.
@@ -151,11 +151,11 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 
 3. Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
 
-   ![Editar la selección de página en configuración](../media/configure-search-for-multi-geo-image2.png)
+   ![Editar selección de página en Configuración](../media/configure-search-for-multi-geo-image2.png)
 
 4. En el elemento web Resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y, a continuación, haga clic en **Editar elemento web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá debajo de la cinta en la parte superior derecha de la página.
 
-   ![Edición de la selección del elemento Web](../media/configure-search-for-multi-geo-image3.png)
+   ![Editar selección de elementos web](../media/configure-search-for-multi-geo-image3.png)
 
 5. En la sección **Configuración** del panel de herramientas del elemento web de resultados de búsqueda, en **Configuración de control de resultados**, seleccione **Show Multi-Geo results** (Mostrar resultados multigeográficos) para que el elemento web de resultados de la búsqueda muestre los resultados de todas las ubicaciones geográficas.
 
@@ -172,11 +172,11 @@ Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algun
 
 ### <a name="requirement"></a>Requisito
 
-Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso**APAC**.sharepoint.com/ y contoso**UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Para cada ubicación geográfica, debe asegurarse de que se ha concedido a todos los usuarios de la organización el nivel de permisos de **lectura** para el sitio web raíz (por ejemplo, contoso **APAC**.sharepoint.com/ y contoso **UE**.sharepoint.com/). [Más información sobre permisos](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parámetros de consulta
 
-EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta o en **false** para no hacerlo. Si no incluye este parámetro, el valor por defecto es**falso**, excepto cuando se realiza una llamada a REST API contra un sitio que utiliza la plantilla de Enterprise Search Center, en este caso el valor por defecto es **verdadero**.  Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.
+EnableMultiGeoSearch: valor booleano que especifica si se efectuará una distribución ramificada de la consulta a los índices de otras ubicaciones geográficas del inquilino multigeográfico. Establézcalo en **true** para efectuar una distribución ramificada de la consulta o en **false** para no hacerlo. Si no incluye este parámetro, el valor por defecto es **falso**, excepto cuando se realiza una llamada a REST API contra un sitio que utiliza la plantilla de Enterprise Search Center, en este caso el valor por defecto es **verdadero**.  Si usa el parámetro en un entorno que no es multigeográfico, se ignorará el parámetro.
 
 ClientType: es una cadena. Escriba un nombre de cliente único para cada aplicación de búsqueda. Si no incluye este parámetro, no se efectúa una distribución ramificada de la consulta a otra ubicación geográfica.
 
@@ -253,11 +253,11 @@ Con una solicitud GET, especifica los parámetros de consulta en la dirección U
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Ejemplo de distribución ramificada de una solicitud GET a **todas** las ubicaciones geográficas
 
-https:// \<tenant\> / \_ API/Search/Query? QueryText = ' SharePoint ' &Properties = ' EnableMultiGeoSearch: true ' &tipocliente = ' My \_ Client \_ ID '
+https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my \_ client \_ id'
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Ejemplo de solicitud GET para efectuar una distribución ramificada en **algunas** ubicaciones geográficas
 
-https:// \<tenant\> / \_ API/Search/Query? QueryText = "site" &tipocliente = ' my_client_id ' &Properties = ' EnableMultiGeoSearch: true, MultiGeoSearchConfiguration: [{Location \\ : "Nam" \\ , Endpoint \\ : "https \\ ://contosoNAM.SharePoint.com" \\ , SourceId: " \\ B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {Location: " \\ Can" \\ , Endpoint \\ : "https \\ ://contosoCAN.SharePoint-DF.com"}] "
+https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
 > Las comas y los dos puntos de la lista de ubicaciones geográficas de la propiedad MultiGeoSearchConfiguration van precedidas por el carácter **barra diagonal inversa**. Esto se debe a que las solicitudes GET usan dos puntos para separar las propiedades y comas para separar los argumentos de las propiedades. Sin la barra diagonal inversa como carácter de escape, la propiedad MultiGeoSearchConfiguration se interpreta de forma errónea.

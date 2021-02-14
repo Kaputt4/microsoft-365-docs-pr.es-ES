@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft Bookings
-summary: Obtenga información sobre cómo configurar Microsoft bookings para proporcionar servicios a los clientes a partir de una cita.
+summary: Obtenga información sobre cómo configurar Microsoft Bookings para proporcionar servicios a los clientes con una cita.
 brand: m365
 metadata:
   title: Microsoft Bookings
-  description: Obtenga información sobre cómo configurar Microsoft bookings para proporcionar servicios a los clientes a partir de una cita.
+  description: Obtenga información sobre cómo configurar Microsoft Bookings para proporcionar servicios a los clientes con una cita.
   ms.service: bookings
   ms.topic: hub-page
   author: dmaguire
@@ -21,21 +21,21 @@ metadata:
 additionalContent:
   sections:
   - items:
-    - title: ¿Qué es Microsoft bookings?
-      summary: Programe y administre citas con una aplicación y calendario de reserva basados en Web, incluida la integración con Outlook para su personal y los correos electrónicos de notificación automatizados.
+    - title: ¿Qué es Microsoft Bookings?
+      summary: Programe y administre citas con un calendario y una aplicación de reserva basados en web, incluida la integración de Outlook para su personal y los correos electrónicos de notificación automatizados.
       url: bookings-overview.md
-    - title: Escribir la información empresarial
-      summary: Escriba su página para crear información sobre nosotros, que incluye el nombre de la empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft bookings.
+    - title: Escribir la información de su empresa
+      summary: Escriba su página Acerca de nosotros, incluido el nombre comercial, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft Bookings.
       url: enter-business-information.md
-    - title: Obtener la aplicación de reservas
-      summary: Cambiar el tema de color y configurar la apariencia de la página de reserva a la que se enfrenta el cliente externo.
+    - title: Obtener la aplicación Bookings
+      summary: Cambia el tema de color y configura el aspecto que tendrá la página de reservas de cliente externo.
       url: customize-booking-page.md
-    - title: Agregar personal a las reservas
-      summary: Cree la lista de personal y administre los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
+    - title: Agregar personal a Bookings
+      summary: Cree su lista de miembros del personal y administre los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
       url: add-staff.md
-    - title: Programar cierres de la empresa, horas libres y tiempo de vacaciones
-      summary: Programe los cierres de Office y el tiempo de los empleados en el calendario de reservas para que los empleados se marquen como no disponibles para las reservas durante los períodos especificados.
+    - title: Programar cierres de negocios, tiempo libre y tiempo de vacaciones
+      summary: Programe los cierres de oficina y el tiempo libre de los empleados del calendario de Bookings para que los empleados se marquen como no disponibles para las reservas durante las horas especificadas.
       url: schedule-closures-time-off-vacation.md
-    - title: Horas laborables de los empleados en Microsoft bookings
-      summary: Establecer las horas laborables y la disponibilidad de los empleados en Microsoft bookings.
+    - title: Horario laboral de los empleados en Microsoft Bookings
+      summary: Establecer el horario laboral y la disponibilidad de los empleados en Microsoft Bookings.
       url: employee-hours.md

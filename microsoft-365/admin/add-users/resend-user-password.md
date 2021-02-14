@@ -29,13 +29,13 @@ ms.locfileid: "48131751"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario: ayuda para administradores
 
-En este artículo se explica cómo volver a enviar el correo electrónico de notificación a un nuevo usuario en Office 365. Esto puede ocurrir cuando crea un nuevo usuario y no recibe un correo electrónico con la nueva contraseña. Para ello, debe restablecer la contraseña del usuario.
+En este artículo se explica cómo reenviar el correo electrónico de notificación a un nuevo usuario en Office 365. Esto puede suceder cuando crea un nuevo usuario y no recibe un correo electrónico con su nueva contraseña. Para ello, restablezca la contraseña del usuario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../admin-overview/admin-overview.md).
 
-Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para poder realizar estos pasos.
+Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
 ## <a name="resend-user-password"></a>Reenviar la contraseña de usuario
   
@@ -57,11 +57,11 @@ Debe ser [administrador global o administrador de contraseñas](about-admin-role
 
 ::: moniker-end
 
-2. En la página **usuarios activos** , seleccione el usuario y, a continuación, seleccione **Restablecer contraseña**.
+2. En la **página Usuarios activos,** seleccione el usuario y, a continuación, **seleccione Restablecer contraseña.**
 
-3. Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellas y, a continuación, seleccione **restablecer**.  
+3. Siga las instrucciones de la página Restablecer **contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para él y, a continuación, seleccione **Restablecer**.  
 
-4. Escriba una dirección de correo electrónico a la que el usuario pueda acceder para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.
+4. Escriba una dirección de correo electrónico a la que pueda acceder el usuario para recibir la nueva contraseña y realice un seguimiento con ellos para asegurarse de que la obtuvo.
 
 ## <a name="related-content"></a>Contenido relacionado
 

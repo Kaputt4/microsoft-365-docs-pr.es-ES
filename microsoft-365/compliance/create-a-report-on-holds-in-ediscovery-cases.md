@@ -19,7 +19,7 @@ search.appverid:
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las suspensiones asociadas a casos de exhibición de documentos electrónicos.
+description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
 ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -29,27 +29,27 @@ ms.locfileid: "47546982"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
 
-La secuencia de comandos de este artículo permite que los administradores de eDiscovery y los administradores de eDiscovery generen un informe que contiene información acerca de todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento de Office 365 o Microsoft 365. El informe contiene información como, por ejemplo, el nombre del caso de que está asociada una suspensión, las ubicaciones de contenido que se encuentran en espera y si la retención se basa en la consulta. Si hay casos que no tienen ninguna suspensión, el script creará un informe adicional con una lista de casos sin suspensiones.
+El script de este artículo permite a los administradores de exhibición de documentos electrónicos y administradores de exhibición de documentos electrónicos generar un informe que contiene información sobre todas las retenciones asociadas a casos de eDiscovery en el Centro de cumplimiento de Office 365 o Microsoft 365. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en retención y si la retención se basa en consultas. Si hay casos que no tienen retenciones, el script creará un informe adicional con una lista de casos sin retenciones.
 
-Consulte la sección [More Information](#more-information) para obtener una descripción detallada de la información incluida en el informe.
+Vea la [sección Más información](#more-information) para obtener una descripción detallada de la información incluida en el informe.
 
 ## <a name="admin-requirements-and-script-information"></a>Requisitos de administración e información de script
 
-- Para generar un informe en todos los casos de eDiscovery de su organización, debe ser administrador de exhibición de documentos electrónicos en su organización. Si es un administrador de exhibición de documentos electrónicos, el informe solo incluirá información sobre los casos a los que puede tener acceso. Para obtener más información sobre los permisos de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
+- Para generar un informe sobre todos los casos de exhibición de documentos electrónicos de su organización, debe ser administrador de exhibición de documentos electrónicos en su organización. Si es administrador de exhibición de documentos electrónicos, el informe solo incluirá información sobre los casos a los que puede acceder. Para obtener más información acerca de los permisos de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos.](assign-ediscovery-permissions.md)
 
-- La secuencia de comandos de este artículo tiene un tratamiento de errores mínimo. El objetivo principal es crear rápidamente informes sobre las suspensiones asociadas a los casos de eDiscovery de su organización.
+- El script de este artículo tiene un control mínimo de errores. El propósito principal es crear rápidamente un informe sobre las retenciones asociadas a los casos de exhibición de documentos electrónicos de su organización.
 
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Paso 1: conectarse al centro de seguridad & cumplimiento de PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Paso 1: Conectarse al PowerShell del Centro de & cumplimiento
 
-El primer paso consiste en conectar con el PowerShell del centro de cumplimiento de & de seguridad de la organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+El primer paso es conectarse a PowerShell del Centro de & seguridad y cumplimiento de la organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: ejecutar el script para informar sobre suspensiones asociadas con casos de eDiscovery
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: Ejecutar el script para informar sobre las retenciones asociadas a casos de exhibición de documentos electrónicos
 
-Una vez que se haya conectado al centro de seguridad & PowerShell del centro de cumplimiento, el siguiente paso es crear y ejecutar el script que recopila información sobre los casos de eDiscovery de la organización.
+Después de conectarse a PowerShell del Centro de seguridad y cumplimiento de &, el siguiente paso es crear y ejecutar el script que recopila información sobre los casos de eDiscovery en su organización.
 
-1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, CaseHoldsReport.ps1.
+1. Guarde el siguiente texto en un archivo de script Windows PowerShell nombre de archivo con el sufijo de nombre de archivo .ps1; por ejemplo, CaseHoldsReport.ps1.
 
    ```powershell
    #script begin
@@ -139,49 +139,49 @@ Una vez que se haya conectado al centro de seguridad & PowerShell del centro de 
    #script end
    ```
 
-2. En la sesión de Windows PowerShell que se abrió en el paso 1, vaya a la carpeta en la que guardó el script.
+2. En la Windows PowerShell sesión que se abrió en el paso 1, vaya a la carpeta donde guardó el script.
 
-3. Ejecutar el script; por ejemplo:
+3. Ejecute el script; por ejemplo:
 
    ```powershell
    .\CaseHoldsReport.ps1
    ```
 
-   La secuencia de comandos pedirá una carpeta de destino en la que guardar el informe.
+   El script pedirá una carpeta de destino en la que guardar el informe.
 
-4. Escriba el nombre de la ruta de acceso completa de la carpeta en la que desea guardar el informe y, a continuación, presione **entrar**.
+4. Escriba el nombre de la ruta de acceso completa de la carpeta en la que se guardará el informe y, a continuación, presione **ENTRAR**.
 
    > [!TIP]
-   > Para guardar el informe en la misma carpeta en la que se encuentra el script, escriba un punto (".") cuando se le solicite una carpeta de destino. Para guardar el informe en una subcarpeta de la carpeta en la que se encuentra el script, escriba el nombre de la subcarpeta.
+   > Para guardar el informe en la misma carpeta en la que se encuentra el script, escriba un punto (".") cuando se le solicite una carpeta de destino. Para guardar el informe en una subcarpeta de la carpeta donde se encuentra el script, simplemente escriba el nombre de la subcarpeta.
 
-   El script empieza a recopilar información sobre todos los casos de eDiscovery de la organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la sesión de Windows PowerShell. Después de que se muestre este mensaje, puede tener acceso al informe en la carpeta que especificó en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv` .
+   El script comienza a recopilar información sobre todos los casos de exhibición de documentos electrónicos de su organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la Windows PowerShell sesión. Después de mostrar este mensaje, puede obtener acceso al informe en la carpeta que especificó en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv` .
 
-   Además, el script también crea un informe con una lista de casos que no tienen ninguna suspensión. El nombre de archivo de este informe es `CaseswithNoHolds<DateTimeStamp>.csv` .
+   Además, el script también crea un informe con una lista de casos que no tienen ninguna retención. El nombre de archivo de este informe es `CaseswithNoHolds<DateTimeStamp>.csv` .
 
-   A continuación, se muestra un ejemplo de cómo ejecutar el script de CaseHoldsReport.ps1.
+   Este es un ejemplo de cómo ejecutar el script CaseHoldsReport.ps1 script.
 
-   ![El resultado después de ejecutar el script de CaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![El resultado después de ejecutar el script CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## <a name="more-information"></a>Más información
 
-El informe de suspensiones de casos que se crea al ejecutar el script de este artículo contiene la siguiente información sobre cada suspensión. Como se ha explicado anteriormente, debe ser administrador de eDiscovery para devolver información de todas las suspensiones de la organización. Para obtener más información acerca de las suspensiones de casos, consulte [casos de eDiscovery](ediscovery-cases.md).
+El informe de casos que se crea al ejecutar el script de este artículo contiene la siguiente información sobre cada retención. Como se ha explicado anteriormente, debe ser administrador de exhibición de documentos electrónicos para devolver información de todas las retenciones de su organización. Para obtener más información acerca de las retenciones de casos, vea [casos de exhibición de documentos electrónicos.](ediscovery-cases.md)
 
-- El nombre de la retención y el nombre del caso de exhibición de documentos electrónicos con el que está asociada la retención.
+- El nombre de la retención y el nombre del caso de eDiscovery al que está asociada la retención.
 
-- Si el caso de exhibición de documentos electrónicos está activo o cerrado.
+- Indica si el caso de eDiscovery está activo o cerrado.
 
-- Indica si la retención está habilitada o deshabilitada.
+- Si la retención está habilitada o deshabilitada.
 
-- Los miembros del caso de eDiscovery con los que está asociada la retención. Los miembros de caso pueden ver o administrar un caso, según los permisos de exhibición de documentos electrónicos que se les haya asignado.
+- Los miembros del caso de eDiscovery al que está asociada la retención. Los miembros del caso pueden ver o administrar un caso, en función de los permisos de exhibición de documentos electrónicos que se les haya asignado.
 
 - La hora y la fecha en que se creó el caso.
 
-- Si se cierra un caso, la persona que lo cerró y la fecha y hora en que se cerró.
+- Si se cierra un caso, la persona que lo cerró y la hora y la fecha en que se cerró.
 
-- Las ubicaciones de los buzones de Exchange y de los sitios de SharePoint que están en suspensión.
+- Los buzones de Exchange y las ubicaciones de sitios de SharePoint que están en retención.
 
 - Si la retención está basada en consultas, la sintaxis de la consulta.
 
-- La fecha y la hora en que se creó la retención y la persona que la creó.
+- La hora y la fecha en que se creó la retención y la persona que la creó.
 
-- La fecha y la hora en que se modificó por última vez la retención y la persona que la modificó.
+- La hora y la fecha en que se cambió la retención por última vez y la persona que la cambió.

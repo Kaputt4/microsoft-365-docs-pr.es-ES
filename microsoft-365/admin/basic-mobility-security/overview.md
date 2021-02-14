@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la movilidad y la seguridad básicas de Microsoft 365
+title: Información general sobre movilidad y seguridad básicas para Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Use la movilidad y la seguridad básicas para establecer directivas de seguridad de dispositivos y reglas de acceso.
+description: Use Movilidad y seguridad básicas para establecer directivas de seguridad de dispositivos y reglas de acceso.
 ms.openlocfilehash: 177b0769f3cad928d05a41cfe95d5d62ab2b4786
 ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
@@ -25,46 +25,46 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 09/10/2020
 ms.locfileid: "47430297"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Información general sobre la movilidad y la seguridad básicas de Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Información general sobre movilidad y seguridad básicas para Microsoft 365
 
-Puede administrar y proteger los dispositivos móviles cuando están conectados a su organización de Microsoft 365 mediante la movilidad y la seguridad básicas. Los dispositivos móviles, como los smartphones y las tabletas, que se usan para tener acceso a elementos de trabajo como el correo electrónico, el calendario, los contactos y los documentos, desempeñan un papel muy importante a la hora de garantizar que los empleados puedan realizar su trabajo en cualquier momento y en cualquier lugar. Por lo tanto, es fundamental que ayude a proteger la información de su organización cuando los usuarios usan dispositivos. Puede usar la movilidad y la seguridad básicas para establecer las directivas de seguridad de los dispositivos y las reglas de acceso, así como para borrar los dispositivos móviles si se pierden o son robados.
+Puede administrar y proteger los dispositivos móviles cuando estén conectados a su organización de Microsoft 365 mediante movilidad y seguridad básicas. Los dispositivos móviles, como los smartphones y las tabletas, que se usan para tener acceso a elementos de trabajo como el correo electrónico, el calendario, los contactos y los documentos, desempeñan un papel muy importante a la hora de garantizar que los empleados puedan realizar su trabajo en cualquier momento y en cualquier lugar. Por lo tanto, es fundamental que ayude a proteger la información de su organización cuando los usuarios usan dispositivos. Puede usar movilidad y seguridad básicas para establecer directivas de seguridad de dispositivos y reglas de acceso, y para borrar los dispositivos móviles si se pierden o se roban.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Configuración básica de movilidad y seguridad":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>¿Qué tipos de dispositivos se pueden administrar?
 
-Puede usar la movilidad y la seguridad básicas para administrar muchos tipos de dispositivos móviles, como Windows Phone, Android, iPhone y iPad. Para administrar los dispositivos móviles que usan las personas de la organización, cada persona debe tener una licencia de Microsoft 365 aplicable y su dispositivo debe estar inscrito en la movilidad y la seguridad básicas.
+Puede usar movilidad y seguridad básicas para administrar muchos tipos de dispositivos móviles como Windows Phone, Android, iPhone y iPad. Para administrar los dispositivos móviles que usan las personas de su organización, cada persona debe tener una licencia de Microsoft 365 aplicable y su dispositivo debe estar inscrito en Movilidad y Seguridad básicas.
 
-Para ver qué es compatible con la movilidad y la seguridad básicas para cada tipo de dispositivo, consulte [Capabilities of Basic Mobility and Security](capabilities.md).
+Para ver qué admite La movilidad y la seguridad básicas para cada tipo de dispositivo, consulta [Funcionalidades de movilidad y seguridad básicas.](capabilities.md)
 
-## <a name="setup-steps-for-basic-mobility-and-security"></a>Pasos de configuración para la movilidad y la seguridad básicas
+## <a name="setup-steps-for-basic-mobility-and-security"></a>Pasos de configuración para movilidad y seguridad básicas
 
-Un administrador global de Microsoft 365 debe completar los pasos siguientes para activar y configurar la movilidad y la seguridad básicas. Para conocer los pasos detallados, siga las instrucciones de [set up Basic Mobility and Security](set-up.md). 
+Un administrador global de Microsoft 365 debe completar los siguientes pasos para activar y configurar la movilidad y seguridad básicas. Para conocer los pasos detallados, siga las instrucciones de [Configuración de movilidad y seguridad básicas.](set-up.md) 
 
 Este es un resumen de los pasos:
 
-**Paso 1:** Para activar la movilidad y la seguridad básicas, siga los pasos descritos en [set up Basic Mobility and Security](set-up.md).
+**Paso 1:** Active la movilidad y la seguridad básica siguiendo los pasos descritos  [en La configuración de movilidad y seguridad básicas.](set-up.md)
 
-**Paso 2:** Configure la movilidad y la seguridad básicas; por ejemplo, cree un certificado APN para administrar dispositivos iOS y agregar un registro de sistema de nombres de dominio (DNS) para su dominio para que admita Windows Phone.
+**Paso 2:** Configure la movilidad y seguridad básicas mediante, por ejemplo, la creación de un certificado APNs para administrar dispositivos iOS y la adición de un registro del Sistema de nombres de dominio (DNS) para que el dominio admita teléfonos Windows.
 
-**Paso 3:** Crear directivas de dispositivo y aplicarlas a grupos de usuarios. Al hacerlo, los usuarios reciben un mensaje de inscripción en su dispositivo y, cuando hayan completado la inscripción, sus dispositivos estarán restringidos por las directivas que haya configurado para ellos. Para obtener más información, vea [inscribir un dispositivo móvil con la seguridad y la movilidad básicos](enroll-your-mobile-device.md). 
+**Paso 3:** Crear directivas de dispositivo y aplicarlas a grupos de usuarios. Al hacerlo, los usuarios obtienen un mensaje de inscripción en su dispositivo y, cuando hayan completado la inscripción, sus dispositivos están restringidos por las directivas que hayas configurado para ellos. Para obtener más información, consulta [Inscribir el dispositivo móvil con movilidad y seguridad básicas.](enroll-your-mobile-device.md) 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración básica de la Directiva de seguridad y movilidad":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración de directivas básicas de seguridad y movilidad":::
 
 ## <a name="device-management-tasks"></a>Tareas de administración de dispositivos
 
-Una vez que tenga una configuración básica de movilidad y seguridad y que los usuarios hayan inscrito sus dispositivos, puede administrar los dispositivos, bloquear el acceso o borrar un dispositivo, si es necesario. Para obtener más información sobre algunas de las tareas de administración de dispositivos comunes, como dónde completar las tareas, vea [administrar dispositivos inscritos en administración de dispositivos móviles para Microsoft 365](manage-enrolled-devices.md).
+Después de configurar la movilidad y la seguridad básicas y de que los usuarios se han inscrito en sus dispositivos, puedes administrar los dispositivos, bloquear el acceso o borrar un dispositivo, si es necesario. Para obtener más información sobre algunas tareas comunes de administración de dispositivos, incluido dónde completar las tareas, vea Administrar dispositivos inscritos en administración de dispositivos [móviles para Microsoft 365.](manage-enrolled-devices.md)
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Otras formas de administrar dispositivos y aplicaciones
 
-Si solo necesita la administración de aplicaciones móviles (MAM), quizás para las personas que actualicen proyectos de trabajo en sus propios dispositivos, Intune ofrece otra opción además de inscribir y administrar dispositivos. Una suscripción de Intune le permite configurar directivas de MAM mediante el portal de Azure, incluso si los dispositivos de los usuarios no están inscritos en Intune. Para obtener más información, vea [directivas de protección de aplicaciones](https://go.microsoft.com/fwlink/?LinkId=2132517).
+Si solo necesitas la administración de aplicaciones móviles (MAM), quizás para personas que actualicen proyectos de trabajo en sus propios dispositivos, Intune ofrece otra opción además de inscribir y administrar dispositivos. Una suscripción de Intune le permite configurar directivas de MAM con Azure Portal, incluso si los dispositivos de las personas no están inscritos en Intune. Para obtener más información, consulta Introducción [a las directivas de protección de aplicaciones.](https://go.microsoft.com/fwlink/?LinkId=2132517)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 [Configurar la Seguridad de Movilidad Básica](set-up.md)
 
-[Inscribir el dispositivo móvil con la seguridad y la movilidad básicas](enroll-your-mobile-device.md)
+[Inscribir el dispositivo móvil con movilidad y seguridad básicas](enroll-your-mobile-device.md)
 
 [Administrar dispositivos inscritos en la administración de dispositivos móviles para Microsoft 365](manage-enrolled-devices.md)
 
-[Obtener información sobre los dispositivos administrados por la seguridad y la movilidad básicos](get-details-about-managed-devices.md)
+[Obtener detalles sobre los dispositivos administrados por movilidad y seguridad básicas](get-details-about-managed-devices.md)

@@ -1,5 +1,5 @@
 ---
-title: Usar el módulo relevancia para analizar datos en eDiscovery avanzado
+title: Usar el módulo Relevancia para analizar datos en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo el módulo de relevancia analiza los datos en evidencia con una descripción del flujo de trabajo de relevancia y los pasos de aprendizaje en eDiscovery avanzado.
+description: Obtenga información sobre cómo el módulo relevancia analiza los datos en evidencia con una descripción del flujo de trabajo de relevancia y los pasos de aprendizaje en eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 4a05ec47a4a6b2100c062912e7668c2bf785caf7
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -24,116 +24,116 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48286066"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Usar el módulo relevancia para analizar datos en eDiscovery avanzado
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Usar el módulo Relevancia para analizar datos en eDiscovery avanzado
 
-En la exhibición avanzada de documentos electrónicos, el módulo de relevancia incluye el entrenamiento de relevancia y la revisión de los archivos relacionados con un caso. Para usar el flujo de trabajo de relevancia, vaya a administrar revisión establecido en un conjunto de revisión y haga clic en Mostrar relevancia. Hay un par de pasos que debe realizar antes de poder iniciar el flujo de trabajo:
+En eDiscovery avanzado, el módulo Relevancia incluye la formación de relevancia y la revisión de archivos relacionados con un caso. Para usar el flujo de trabajo relevancia, vaya a Administrar conjunto de revisión dentro de un conjunto de revisión y haga clic en Mostrar relevancia. Hay un par de pasos que debe completar para poder iniciar el flujo de trabajo:
 
-- Proceso: cada conjunto de carga agregado al conjunto de revisión se mostrará como un "contenedor" aquí. Debe procesar estos documentos para poder agregarlos al módulo de relevancia; Aquí también puede marcarlos como semilla o etiquetarse previamente para un problema específico.
+- Proceso: cada conjunto de carga agregado al conjunto de revisión se mostrará como un "contenedor" aquí. Debe procesar estos documentos para poder agregarlos al módulo Relevancia; aquí también es donde puedes marcarlos como seed o etiquetados previamente para un problema específico.
 
-- Agregar a relevancia: en cargas de relevancia \> , puede agregar documentos que se han procesado en relevancia para que estén disponibles para su aprendizaje.
+- Agregar a relevancia: en cargas de relevancia, puede agregar documentos que se hayan procesado a Relevancia para que \> estén disponibles para la formación.
 
-El flujo de trabajo de relevancia se muestra y se describe de la siguiente manera:
+El flujo de trabajo relevancia se muestra y describe de la siguiente manera:
   
 ![Flujo de trabajo de relevancia](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- **Ciclos de evaluación y seguimiento**:
+- **Ciclos de evaluación y seguimiento:**
     
-  - **Evaluación**: permite realizar evaluaciones tempranas basándose en un ejemplo aleatorio de archivos y usa esta evaluación para aplicar decisiones para determinar el rendimiento del proceso de codificación predictivo. 
+  - **Evaluación:** habilita la evaluación anticipada en función de una muestra aleatoria de archivos y usa esta evaluación para aplicar decisiones para determinar el rendimiento del proceso de codificación predictiva. 
     
-  - **Track**: calcule y muestre los resultados temporales de la evaluación mientras supervisa la validez estadística del proceso. 
+  - **Seguimiento:** calcular y mostrar los resultados provisionales de la evaluación mientras se supervisa la validez estadística del proceso. 
     
-- **Ciclos de formación y seguimiento**
+- **Ciclos de aprendizaje y seguimiento**
     
-  - **Tag**: Advanced eDiscovery aprende los criterios de relevancia específicos de cada problema en función de la revisión iterativa del experto y el etiquetado de archivos individuales.
+  - **Etiqueta:** eDiscovery avanzado aprende los criterios de relevancia específicos de cada problema en función de la revisión iterativa del experto y el etiquetado de archivos individuales.
     
-  - **Track**: calcule y muestre los resultados temporales de la formación de relevancia mientras supervisa la validez estadística del proceso. 
+  - **Seguimiento:** calcular y mostrar los resultados provisionales de la formación de relevancia mientras se supervisa la validez estadística del proceso. 
     
-- **Cálculo del lote**: los criterios de relevancia acumulados y adquiridos se aplican a toda la colección de archivos y se genera una puntuación de relevancia para cada archivo.
+- **Cálculo por** lotes: los criterios de relevancia acumulados y aprendidos se aplican a toda la colección de archivos y se genera una puntuación de relevancia para cada archivo.
     
-- **Decida**: los resultados del análisis aplicado a todo el caso se muestran tras el cálculo del lote y se muestran los datos usados para realizar las decisiones de revisión del documento.
+- **Decidir:** los resultados del análisis aplicado a todo el caso se muestran después del cálculo por lotes y se muestran los datos usados para tomar decisiones de revisión de documentos.
     
-- **Prueba**: se pueden probar los resultados para comprobar la validez y la eficacia del procesamiento avanzado de eDiscovery.
+- **Prueba:** los resultados se pueden probar para comprobar la validez y la eficacia del procesamiento de eDiscovery avanzado.
 
-- **Buscar**: una vez que se ha completado el flujo de trabajo de relevancia, puede usar el resultado como, por ejemplo, el percentil de lectura de un documento para su problema al ejecutar una consulta dentro del conjunto de revisión.
+- **Búsqueda:** una vez completado el flujo de trabajo relevancia, puede usar el resultado como el percentil de lectura de un documento para su problema al ejecutar una consulta dentro del conjunto de revisión.
     
-## <a name="guidelines-for-relevance-training-and-review"></a>Directrices para la revisión y el aprendizaje de relevancia
+## <a name="guidelines-for-relevance-training-and-review"></a>Directrices para el entrenamiento y revisión de relevancia
 
-A continuación, se encuentra una descripción general de las directrices para la revisión y aprendizaje de relevancia:
+A continuación se ofrece información general sobre las directrices para la formación y revisión de relevancia:
   
-- **Errores e incoherencias**: si se producen errores de etiquetado durante el aprendizaje, vuelva a ejemplos de archivos anteriores para corregirlos. Si hay demasiados errores para corregir o hay una nueva perspectiva del caso o problema, el administrador debe volver a definir los criterios de relevancia y se reiniciará el entrenamiento de relevancia.
+- **Errores e incoherencias:** si se producen errores de etiquetado durante el aprendizaje, vuelva a los ejemplos de archivo anteriores para corregirlos. Si hay demasiados errores para corregir o hay una nueva perspectiva del caso o problema, el administrador debe volver a definir los criterios de relevancia y se reiniciará la formación de relevancia.
     
-- **Etiquetado y aprendizaje**: 
+- **Etiquetado y aprendizaje:** 
     
-  - Los archivos deben etiquetarse en función del contenido únicamente. No tenga en cuenta los metadatos, como custodios, Date o path de archivo. 
+  - Los archivos deben etiquetarse solo en función del contenido. No considere metadatos, como administrador, fecha o ruta de acceso de archivo. 
     
-  - No se deben tener en cuenta las indicaciones de intervalo de fechas en el texto al etiquetar archivos.
+  - No tenga en cuenta las indicaciones del intervalo de fechas en el texto al etiquetar archivos.
     
-  - No considere las imágenes gráficas incrustadas cuando etiquete archivos.
+  - No tenga en cuenta las imágenes gráficas incrustadas al etiquetar archivos.
      
-  - Omitir el texto aplicado a la relevancia se quitará en el contenido del archivo que se muestra en la vista de texto en relevancia. Si los valores de omitir texto se definieron después de que ya se haya iniciado el entrenamiento de relevancia, el nuevo texto omitido se aplicará a los archivos de ejemplo creados a partir del punto en que se definió. La característica omitir texto debe usarse con cuidado, ya que su uso puede reducir el rendimiento del análisis de archivos
+  - Omitir el texto aplicado a Relevancia se quitará en el contenido del archivo mostrado en la vista de texto de Relevancia. Si los valores de Omitir texto se definieron después de que el entrenamiento de relevancia ya se haya iniciado, el nuevo texto omitido se aplicará a los archivos de ejemplo creados desde el punto en que se definió. La característica Omitir texto debe usarse con precaución, ya que su uso puede reducir el rendimiento del análisis de archivos
     
-  - Use la opción **omitir etiquetado** solo cuando sea necesario. La exhibición avanzada de documentos electrónicos no realiza un entrenamiento basado en archivos omitidos. En la evaluación, si es difícil distinguir si un archivo es relevante, es mejor marcar como relevante (R) o no relevante (NR) siempre que sea posible, en lugar de seleccionar **SKIP**. Cuando la exhibición avanzada de documentos electrónicos evalúa el aprendizaje, puede ver cómo se procesaron estos tipos de archivos.
+  - Use la **opción Omitir etiquetado** solo cuando sea necesario. EDiscovery avanzado no se entrena en función de los archivos omitido. En la evaluación, si es difícil saber si un archivo es relevante, es mejor etiquetar como relevante (R) o no relevante (NR) siempre que sea posible en lugar de seleccionar Omitir **.** Cuando eDiscovery avanzado evalúa la formación, se puede ver cómo se procesaron estos tipos de archivos.
     
-  - Incluso los archivos con una cantidad muy pequeña de texto extraído deben etiquetarse en el aprendizaje como R/NR, en lugar de "omitir", cuando sea posible. 
+  - Incluso los archivos con una cantidad muy pequeña de texto extraído deben etiquetarse en el entrenamiento como R/NR, en lugar de como "Omitir", siempre que sea posible. 
     
-  - El etiquetado puede afectar al clasificador siempre que el archivo sea legible y pueda etiquetarse como R/NR.
+  - El etiquetado puede afectar al clasificador siempre que el archivo sea legible y se pueda etiquetar como R/NR.
     
-  - El número de secuencia de archivo en la lista de archivos de ejemplo mostrados de la ficha **etiqueta** permite al usuario volver al orden original mostrado de los archivos. 
+  - El número de secuencia de archivos de  la lista de archivos de muestra que se muestra en la pestaña Etiqueta permite al usuario volver al orden original mostrado de los archivos. 
     
-  - Puede volver a cualquier muestra y cambiar la etiquetación de los archivos de la evaluación y el conjunto de formación. Los cambios se aplicarán al crear el ejemplo siguiente.
+  - Puede volver a cualquier ejemplo y cambiar el etiquetado de los archivos del conjunto de evaluación y aprendizaje. Los cambios se aplicarán al crear el siguiente ejemplo.
     
-  - Los archivos de Excel examinados en formato PDF deben tratarse igual que los archivos de Excel nativos al etiquetar archivos.
+  - Los archivos de Excel examinados en formato PDF deben tratarse igual que los archivos nativos de Excel al etiquetar archivos.
     
-  - Si tiene dudas sobre el etiquetado de relevancia de un archivo, consulte a un experto. Un etiquetado incorrecto durante el aprendizaje de relevancia puede llevar a la pérdida de tiempo más adelante en el proceso y también puede tener un impacto negativo en la calidad de los resultados generales.
+  - Cuando haya dudas sobre el etiquetado de relevancia de un archivo, consulte a un experto. El etiquetado incorrecto durante la formación de relevancia puede provocar pérdidas de tiempo más adelante en el proceso y también puede tener un impacto negativo en la calidad de los resultados generales.
     
-  - Las palabras clave que se definieron en las listas de palabras clave se mostrarán en colores para ayudar al usuario a identificar los archivos relevantes al etiquetar.
+  - Las palabras clave que se definieron en las listas de palabras clave se mostrarán en colores para ayudar al usuario a identificar los archivos relevantes durante el etiquetado.
     
-- **Cálculo del lote**: los archivos que el experto etiquetó como R/NR recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto ha cambiado el problema a inactivo tras el cálculo del lote y ha seguido el etiquetado de este problema, los nuevos resultados etiquetados no serán 100/0, sino la puntuación original.
+- **Cálculo por** lotes: los archivos etiquetados como R/NR por el experto recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto cambió el problema a Inactivo después del cálculo por lotes y siguió etiquetando este problema, las puntuaciones recién etiquetadas no serán 100/0, sino la puntuación original.
     
-- **Problemas y modo de muestreo**: los problemas suelen estar desactivados cuando se completa el trabajo en ellos (el entrenamiento de relevancia está estabilizado y se ha realizado el cálculo del lote), cuando se cancelan los problemas o cuando otro usuario está trabajando en los problemas.
+- **Modo** de muestreo y problemas: los problemas normalmente se apagan cuando se completa el trabajo en ellos (se estabiliza el entrenamiento de relevancia y se realiza el cálculo por lotes), cuando se cancelan los problemas o cuando otro usuario está trabajando en los problemas.
     
-## <a name="steps-in-relevance-training"></a>Pasos de aprendizaje de relevancia
+## <a name="steps-in-relevance-training"></a>Pasos de la formación de relevancia
 
-En la **pestaña \> seguimiento de relevancia** , eDiscovery avanzado proporciona recomendaciones sobre cómo continuar en el procesamiento, con los siguientes pasos. Las implicaciones se describen a continuación cuando se recomienda cada uno de los pasos siguientes en el proceso de entrenamiento de relevancia. 
+En la **pestaña \> Seguimiento de** relevancia, eDiscovery avanzado proporciona recomendaciones sobre cómo continuar con el procesamiento, con los siguientes pasos. Las implicaciones se describen a continuación cuando se recomienda cada uno de los siguientes pasos en el proceso de entrenamiento de relevancia. 
   
-- Etiquetado/continuar etiquetado: revisión de archivos y etiquetado de relevancia realizado por un experto para cada archivo y problema dentro de un ejemplo.
+- Etiquetado /Continuar etiquetado: revisión de archivos y etiquetas de relevancia realizadas por un experto para cada archivo y problema dentro de un ejemplo.
     
-  - Implicación: debe etiquetarse una muestra existente.
+  - Implicación: debe etiquetarse un ejemplo existente.
     
-- Evaluación/continuar evaluación: permite la validación temprana de la relevancia de los casos y una vista preliminar de la relevancia de la población de archivos importada para el caso actual.
+- Evaluación o evaluación continua: permite la validación anticipada de la relevancia de los asuntos y una vista preliminar de la relevancia de la población de archivos importada para el caso actual.
     
-  - Implicación: se requiere o se recomienda más evaluación.
+  - Implicación: se requiere o se recomienda realizar más evaluaciones.
     
-- Aprendizaje/continuar aprendizaje: proceso durante el cual eDiscovery avanzado aprende del experto que etiqueta los ejemplos de archivos y adquiere la capacidad de identificar criterios de relevancia relacionados con cada problema en el contexto de cada caso.
+- Aprendizaje y formación continua: proceso durante el cual eDiscovery avanzado aprende del experto que etiqueta los ejemplos de archivos y adquiere la capacidad de identificar los criterios de relevancia pertinentes para cada problema dentro del contexto de cada caso.
     
-  - Implicación: el problema necesita más formación; la siguiente muestra se debe crear y etiquetar. 
+  - Implicación: el problema necesita más formación; Se debe crear y etiquetar el siguiente ejemplo. 
     
-- Cálculo del lote: proceso de relevancia en el que eDiscovery avanzado toma los conocimientos adquiridos durante la fase de capacitación y los aplica a todo el llenado de archivos. Todos los archivos del grupo de archivos pertinentes se evalúan para su relevancia y se les asigna una puntuación de relevancia.
+- Cálculo por lotes: proceso de relevancia en el que eDiscovery avanzado toma los conocimientos adquiridos durante la fase de aprendizaje y lo aplica a toda la población de archivos. Todos los archivos del grupo de archivos pertinente se evalúan para la relevancia y se les asigna una puntuación de relevancia.
     
-  - Implicación: el problema se ha estabilizado y se puede realizar el cálculo del lote.
+  - Implicación: el problema se ha estabilizado y se puede realizar el cálculo por lotes.
     
-- Puesta en marcha: la relevancia indica cuando un experto revisa y etiqueta una muestra de archivos seleccionados desde una carga de archivos adicional durante un escenario de cargas sucesivas.
+- Ponerse al día: la relevancia indica cuándo un experto revisa y etiqueta una muestra de archivos seleccionados de una carga de archivos adicional durante un escenario de carga gradual.
     
-  - Implicación: se ha agregado una nueva carga y se debe realizar la puesta en marcha para seguir trabajando.
+  - Implicación: se ha agregado una nueva carga y es necesario ponerse al día para seguir funcionando.
     
-- Incoherencias de etiquetas: el proceso identifica, a través de un algoritmo de exhibición de documentos electrónicos avanzado, incoherencias en el proceso de etiquetado de archivos que pueden repercutir negativamente en el análisis.
+- Incoherencias de etiquetas: el proceso identifica, a través de un algoritmo de eDiscovery avanzado, incoherencias en el proceso de etiquetado de archivos que pueden afectar negativamente al análisis.
     
-  - Implicación: el ejemplo siguiente incluirá los archivos que se han etiquetado en ejemplos anteriores y se debe rehacer su etiquetado.
+  - Implicación: en el siguiente ejemplo se incluirán los archivos que se etiquetaron en ejemplos anteriores y su etiquetado debe reetiquetado.
     
-- Actualizar clasificador: permite al usuario aplicar cambios de etiquetado o de inicialización.
+- Clasificador de actualización: permite al usuario aplicar cambios de etiquetado o edización.
     
-  - Implicación: se pueden aplicar los cambios de etiquetado y de inicialización sin necesidad de ejecutar manualmente otro ejemplo de relevancia.
+  - Implicación: los cambios de etiquetado y edización se pueden aplicar sin necesidad de ejecutar manualmente otro ejemplo de relevancia.
     
-- En espera: se ha completado el proceso de entrenamiento de relevancia.
+- En espera: se ha completado el proceso de formación de relevancia.
     
-  - Implicación: en este momento no se requiere ningún entrenamiento sobre la relevancia.
+  - Implicación: no se requiere ninguna formación de relevancia en este momento.
     
-Aunque la exhibición avanzada de documentos electrónicos le guía a través del proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su proceso de revisión de documentos, problema o caso individual. 
+Aunque eDiscovery avanzado le guía a lo largo del proceso, con los siguientes pasos recomendados en distintas etapas, también le permite navegar entre pestañas y páginas, y tomar decisiones para abordar situaciones que pueden ser pertinentes para su proceso individual de revisión de casos, problemas o documentos. 
   
-Es posible aceptar o invalidar las opciones de procesamiento avanzado de paso posterior de eDiscovery. Si desea realizar un paso que no sea el siguiente paso recomendado, haga clic en el **siguiente paso** que aparece en la pantalla problema expandido en el cuadro de diálogo, haga clic en el botón **modificar** junto al paso siguiente y seleccione otra opción de paso siguiente. 
+Es posible aceptar o invalidar las opciones de procesamiento del paso siguiente de eDiscovery avanzado. Si desea realizar un paso distinto del paso  siguiente recomendado, haga clic en el paso  siguiente que aparece en la presentación del problema expandido en el cuadro de diálogo, haga clic en el botón Modificar situado junto al paso siguiente y seleccione otra opción de paso siguiente. 
   
 > [!NOTE]
-> Algunas opciones pueden permanecer deshabilitadas tras el desbloqueo porque no se pueden usar en ese punto del proceso. 
+> Algunas opciones pueden permanecer deshabilitadas después del desbloqueo, ya que no se admiten para su uso en ese punto del proceso. 
   
 ## <a name="more-information"></a>Más información
 
@@ -141,11 +141,11 @@ Es posible aceptar o invalidar las opciones de procesamiento avanzado de paso po
   
 [Etiquetado y evaluación](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Aprendizaje de etiquetas y relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Formación de etiquetas y relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
 [Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Decisiones basadas en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Decidir en función de los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
   
 [Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
 

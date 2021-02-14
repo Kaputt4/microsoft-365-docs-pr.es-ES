@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Bookings
-summary: Programe y administre citas con Microsoft bookings. Incluye la integración con Outlook y las notificaciones automáticas.
+summary: Programar y administrar citas con Microsoft Bookings. Incluye integración con Outlook y notificaciones automatizadas.
 metadata:
   title: Microsoft Bookings
-  description: Programe y administre citas con Microsoft bookings. Incluye la integración con Outlook y las notificaciones automáticas.
+  description: Programar y administrar citas con Microsoft Bookings. Incluye integración con Outlook y notificaciones automatizadas.
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -18,31 +18,31 @@ metadata:
   ms.lasthandoff: 09/09/2020
   ms.locfileid: "47420169"
 landingContent:
-- title: Acerca de Microsoft bookings
+- title: Acerca de Microsoft Bookings
   linkLists:
   - linkListType: overview
     links:
-    - text: ¿Qué es Microsoft bookings?
+    - text: ¿Qué es Microsoft Bookings?
       url: bookings-overview.md
   - linkListType: download
     links:
-    - text: Obtener la aplicación de reservas
+    - text: Obtener la aplicación Bookings
       url: get-bookings-app.md
-- title: Configurar Microsoft bookings
+- title: Configurar Microsoft Bookings
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Escribir la información empresarial
+    - text: Escribir la información de su empresa
       url: enter-business-information.md
-    - text: Establecer las directivas de programación
+    - text: Establecer las directivas de reservas
       url: set-scheduling-policies.md
     - text: Definir las ofertas de servicio
       url: define-service-offerings.md
-    - text: Establecer horas laborables de los empleados
+    - text: Establecer las horas laborables de los empleados
       url: employee-hours.md
     - text: Personalizar y publicar la página de reserva
       url: customize-booking-page.md
-    - text: Crear y proveer de personal a sus reservas
+    - text: Crear y crear personal para las reservas
       url: create-a-manual-booking.md
 - title: Invitar a personas a reservar citas
   linkLists:

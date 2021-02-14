@@ -16,32 +16,32 @@ ms.locfileid: "47950347"
 ---
 # <a name="reliability-insights"></a>Información sobre la confiabilidad
 
-Esta vista le proporciona un resumen de estado de los dispositivos administrados. Para ver los datos de confiabilidad, seleccione la ficha **confiabilidad** .
+Esta vista proporciona un resumen de estado de los dispositivos administrados. Para ver los datos de confiabilidad, seleccione la **pestaña** Confiabilidad.
 
 
-![Panel confiabilidad: confiabilidad en los dispositivos en la parte superior izquierda, la confiabilidad con el gráfico de tiempo en la esquina superior derecha, la tabla de problemas principales en la parte inferior. Botones de ayuda y comentarios en la parte inferior derecha.](../../media/insights_reliability.png)
+![Panel de confiabilidad: confiabilidad en todos los dispositivos en la parte superior izquierda, confiabilidad en el gráfico de tiempo en la parte superior derecha, tabla de problemas superior en la parte inferior. Botones de ayuda y comentarios en la parte inferior derecha.](../../media/insights_reliability.png)
 
-La sección **confiabilidad en todos los dispositivos** ofrece un resumen rápido del estado de la implementación en los últimos 14 días mediante la generación de informes sobre el porcentaje de dispositivos considerados "correctos" y el tiempo medio observado desde el último error notificado. 
+La  sección Confiabilidad entre dispositivos ofrece un resumen de estado rápido de la implementación en los últimos 14 días al notificar el porcentaje de dispositivos considerados "correctos" y el tiempo medio observado desde el último error notificado. 
 
  
-El gráfico **confiabilidad sobre el tiempo** de la derecha informa sobre el número de dispositivos con errores críticos y el número total de errores críticos observados a lo largo del tiempo.
+El **gráfico Confiabilidad a** lo largo del tiempo de la derecha informa del número de dispositivos con errores críticos y el número total de errores críticos observados a lo largo del tiempo.
 
-En la sección **problemas principales** se explican los problemas específicos detectados que afectan al menos el 5% de los dispositivos administrados. Los detalles que se indican incluyen:
+En **la sección De problemas** principales se detallan problemas detectados específicos que afectan al menos al 5 % de los dispositivos administrados. Entre los detalles notificados se incluyen:
 
 - El tipo de problema
-    - Bloqueos de aplicación, en los que una aplicación deja de funcionar o se detiene inesperadamente
-    - La aplicación se bloquea, donde una aplicación deja de responder a la entrada
+    - Se bloquea la aplicación, en la que una aplicación deja de funcionar o se detiene inesperadamente
+    - La aplicación se cuelga, donde una aplicación deja de responder a la entrada
     - Errores críticos, que se producen cuando Windows ha encontrado un problema del que no se puede recuperar
 - El número de dispositivos afectados por el mismo problema
-- El porcentaje de dispositivos administrados que representa el número
-- Número total de ocurrencias del problema específico
-- Componente de software que parece ser el origen del problema
-- La categoría del problema detectado:
+- Porcentaje de dispositivos administrados que representa el número
+- Recuento total de repeticiones del problema específico
+- El componente de software que parece ser el origen del problema
+- Categoría del problema detectado:
     - Explorador (Edge, Chrome, IE)
     - Desconocido (componentes que no son de Microsoft)
     - Controlador (audio, gráficos u otros controladores)
-    - Productividad (margen de demora, G-Suites, Microsoft Office y sus complementos o extensiones, Teams)
-    - Multimedia (imagen, música o aplicaciones de vídeo
+    - Productividad (Slack, G-Suite, Microsoft Office y sus complementos o extensiones, Teams)
+    - Medios (aplicaciones de imagen, música o vídeo
     - Seguridad (componentes de seguridad de Windows)
-- El estado actual de Microsoft Managed Desktop Operations investiga y corrige el problema
+- El estado actual de Operaciones de escritorio administrado de Microsoft investiga y corrige el problema
 
