@@ -37,7 +37,7 @@ La elección de los canales de actualización que se usarán para las aplicacion
 
 ## <a name="production-channels-for-broad-deployment"></a>Canales de producción para la amplia implementación
 
-Haga clic en el vínculo de**Ejemplo** columna para desplazarse por los grupos y fases de implementación para una organización de ejemplo.
+Haga clic en el vínculo de **Ejemplo** columna para desplazarse por los grupos y fases de implementación para una organización de ejemplo.
 
 | Oferta de clientes y canales | Windows 10 | Aplicaciones de Microsoft 365 para empresas (Windows 10) | Ejemplo |
 |:-------|:-------|:-----|:-------|

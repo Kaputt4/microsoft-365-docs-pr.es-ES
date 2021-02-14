@@ -1,5 +1,5 @@
 ---
-title: Pedir dispositivos en el escritorio administrado por Microsoft
+title: Ordenar dispositivos en escritorio administrado de Microsoft
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -16,11 +16,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 07/30/2020
 ms.locfileid: "46529534"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Pedir dispositivos de escritorio administrados por Microsoft
+# <a name="order-microsoft-managed-desktop-devices"></a>Solicitar dispositivos de Escritorio administrado de Microsoft
 
-Le recomendamos trabajar con uno de nuestros socios de dispositivo aprobados. Puede trabajar con el contacto de la cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivos.
+Te recomendamos que trabajes con uno de nuestros partners de dispositivos aprobados. Puedes trabajar con el contacto de tu cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivo.
 
-Mientras tanto, puede revisar la lista de [dispositivos aprobados actualmente](../service-description/device-list.md) que se admiten para su uso con el escritorio administrado de Microsoft.
+In the meantime, you can review the list of [currently approved devices](../service-description/device-list.md) that are supported for use with Microsoft Managed Desktop.
 
 
 

@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para su granja de SharePoint local.
+description: En este artículo se describe cómo usar Azure para crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint.
 ms.openlocfilehash: d1643f3fa0275ef9fbb01372869ca551b9fed495
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "46693751"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure
 
- Con Azure, puede crear un entorno de recuperación ante desastres para su granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.
+ Con Azure, puede crear un entorno de recuperación ante desastres para la granja de servidores local de SharePoint. En este artículo se describe cómo diseñar e implementar esta solución.
 
  **Ver el vídeo de información general sobre la recuperación ante desastres de SharePoint Server 2013**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
@@ -232,7 +232,7 @@ En esta guía básica se da por supuesto que ya tiene una granja de servidores d
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Fase 1: Diseñar el entorno de recuperación ante desastres
 
-Siga las instrucciones de [Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) para diseñar el entorno de recuperación ante desastres, incluida la granja de servidores de recuperación de SharePoint. Puede usar los gráficos de la [solución de recuperación ante desastres de SharePoint en un archivo de Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio para iniciar el proceso de diseño. Le recomendamos que diseñe el entorno completo antes comenzar a trabajar en el entorno de Azure.
+Siga las instrucciones de [Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) para diseñar el entorno de recuperación ante desastres, incluida la granja de servidores de recuperación de SharePoint. Puede usar los gráficos del archivo de solución de recuperación ante desastres de [SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=392554) en Azure Visio para iniciar el proceso de diseño. Le recomendamos que diseñe el entorno completo antes comenzar a trabajar en el entorno de Azure.
   
 Además de las instrucciones proporcionadas en [Arquitecturas de Microsoft Azure para SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) para el diseño de la red virtual, la conexión VPN, Active Directory y la granja de servidores de SharePoint, asegúrese de agregar un rol de recurso compartido de archivos al entorno de Azure.
   
@@ -273,7 +273,7 @@ Esta fase abarca la implementación de Windows Server Active Directory y DNS en 
   
 **Ilustración: Configuración de dominio híbrido de Active Directory**
 
-![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred de la granja de servidores de SharePoint son controladores de dominio de réplica y servidores DNS.](../media/AZarch-HyADdomainConfig.png)
+![Dos máquinas virtuales implementadas en la red virtual de Azure y la subred de la granja de servidores de SharePoint son controladores de dominio de réplica y servidores DNS](../media/AZarch-HyADdomainConfig.png)
   
 En la ilustración, se implementan dos máquinas virtuales en la misma subred. Cada una de estas máquinas virtuales hospeda dos roles: Active Directory y DNS.
   
@@ -325,7 +325,7 @@ En esta tabla se proporcionan vínculos a entradas de blog y artículos de refer
   
 **Tabla: Artículos de referencia de DFSR**
 
-|**Título**|**Descripción**|
+|**Title**|**Descripción**|
 |:-----|:-----|
 |[Replicación](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Tema de TechNet sobre administración de DFS con vínculos para la replicación  <br/> |
 |[Replicación DFS: Guía de supervivencia](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Sitio wiki con vínculos a información sobre DFS  <br/> |
@@ -403,7 +403,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > Cuando usa T-SQL expresamente, especifique **WITH NORECOVERY** o **WITH RECOVERY** en cada instrucción RESTORE para eliminar la ambigüedad; esto es muy importante al escribir scripts. Una vez que se han restaurado las copias de seguridad completas y diferenciales, se pueden restaurar los registros de transacciones en SQL Server Management Studio. Además, como ya se ha detenido el trasvase de registros, la base de datos de contenido se encuentra en un estado de espera, por lo que debe cambiar el estado para el acceso total.
   
-En SQL Server Management Studio, haga clic con el botón derecho en la base de datos **WSS_Content**, seleccione **Tareas** > **Restaurar** y, después, haga clic en **Registro de transacciones** (si no ha restaurado la copia de seguridad completa, no estará disponible). Para obtener más información, consulte[Restaurar una copia de seguridad de registros de transacciones (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+En SQL Server Management Studio, haga clic con el botón derecho en la base de datos **WSS_Content**, seleccione **Tareas** > **Restaurar** y, después, haga clic en **Registro de transacciones** (si no ha restaurado la copia de seguridad completa, no estará disponible). Para obtener más información, consulte [Restaurar una copia de seguridad de registros de transacciones (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
   
 ### <a name="crawl-the-content-source"></a>Rastrear el origen de contenido
 
@@ -452,7 +452,7 @@ En la mayoría de los casos donde tiene varios servidores front-end web, tiene s
   
 Normalmente, al configurar el equilibrio de carga de red, el clúster se asigna una dirección IP única. A continuación, crea un registro de host DNS en el proveedor DNS para la red que apunta al clúster. (Para este proyecto, se coloca un servidor DNS en Azure para resistir en caso de un error en el centro de datos local). Por ejemplo, puede crear un registro DNS, en el Administrador de DNS en Active Directory, por ejemplo, denominado  `https://sharepoint.contoso.com`, que señale a la dirección IP para el clúster de equilibrio de carga.
   
-Para el acceso externo a la granja de servidores de SharePoint, puede crear un registro de host en un servidor DNS externo con la misma dirección URL que usan los clientes en la intranet (por ejemplo, `https://sharepoint.contoso.com` ) que apunta a una dirección IP externa en el firewall. (Un procedimiento recomendado es configurar un DNS dividido para que el servidor DNS interno tenga autoridad para `contoso.com` y enrute las solicitudes directamente al clúster de la granja de servidores de SharePoint, en lugar de enrutar las solicitudes DNS al servidor DNS externo). A continuación, puede asignar la dirección IP externa a la dirección IP interna del clúster local para que los clientes encuentren los recursos que buscan.
+Para el acceso externo a la granja de servidores de SharePoint, puede crear un registro de host en un servidor DNS externo con la misma dirección URL que usan los clientes en la intranet (por ejemplo, ) que apunta a una dirección IP externa en el `https://sharepoint.contoso.com` firewall. (Un procedimiento recomendado, con este ejemplo, es configurar DNS dividido para que el servidor DNS interno sea autoritativo y enruta las solicitudes directamente al clúster de la granja de servidores de SharePoint, en lugar de enrutar las solicitudes DNS al servidor `contoso.com` DNS externo). A continuación, puede asignar la dirección IP externa a la dirección IP interna del clúster local para que los clientes encuentren los recursos que buscan.
   
 A partir de aquí, puede que se encuentre con un par de escenarios de recuperación ante desastres diferentes:
   
@@ -460,7 +460,7 @@ A partir de aquí, puede que se encuentre con un par de escenarios de recuperaci
   
  **Escenario de ejemplo: el centro de datos local se pierde por completo.** Esta situación puede deberse a un desastre natural, como un incendio o una inundación. En este caso, si esto ocurriera en una empresa es probable que tuviera un centro de datos secundario hospedado en otra región, además de la subred de Azure que tiene sus propios servicios de directorio y DNS. Al igual que ocurre en el escenario de desastres anterior, puede redirigir los registros DNS internos y externos para que apunten a la granja de servidores de SharePoint en Azure. De nuevo, tenga en cuenta que la propagación del registro DNS puede tardar bastante.
   
-Si usa colecciones de sitios con nombre de host, como se recomienda en [arquitectura e implementación de colecciones de sitios con nombre de host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), puede tener varias colecciones de sitios hospedadas por la misma aplicación web en su granja de servidores de SharePoint, con nombres DNS únicos (por ejemplo, `https://sales.contoso.com` y `https://marketing.contoso.com` ). En este caso, puede crear registros DNS para cada colección de sitios que señalen la dirección IP del clúster. En cuanto una solicitud llega a los servidores front-end web de SharePoint, estos se encargan de enrutar cada solicitud a la colección de sitios adecuada.
+Si usa colecciones de sitios con nombre de host, como se recomienda en la arquitectura y la implementación de colecciones de sitios con nombre de host [(SharePoint 2013),](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)es posible que tenga varias colecciones de sitios hospedadas por la misma aplicación web en la granja de servidores de SharePoint, con nombres DNS únicos (por ejemplo, `https://sales.contoso.com` y `https://marketing.contoso.com` ). En este caso, puede crear registros DNS para cada colección de sitios que señalen la dirección IP del clúster. En cuanto una solicitud llega a los servidores front-end web de SharePoint, estos se encargan de enrutar cada solicitud a la colección de sitios adecuada.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Entorno de prueba de concepto de Microsoft
 
@@ -630,7 +630,7 @@ Esto sucede porque la preferencia de copia de seguridad predeterminada para un g
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>El servicio de metadatos administrados (u otro servicio de SharePoint) no se puede iniciar automáticamente después de la instalación
 
-Los servicios pueden tardar varios minutos en iniciarse, en función del rendimiento y la carga actual del servidor de SharePoint. Haga clic manualmente en **iniciar** para el servicio y proporcione la hora adecuada para el inicio mientras que, de vez en cuando, actualice la pantalla de servicios en el servidor para supervisar su estado. En caso de que el servicio permanezca detenido, habilite el registro de diagnóstico de SharePoint, intente volver a iniciar el servicio y compruebe si hay errores en el registro. Para obtener más información, vea [configurar el registro de diagnóstico en SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+Los servicios pueden tardar varios minutos en iniciarse, según el rendimiento y la carga actual de SharePoint Server. Haga clic manualmente **en Inicio** para el servicio y proporcione el tiempo adecuado para el inicio mientras actualiza ocasionalmente la pantalla Servicios del servidor para supervisar su estado. En caso de que el servicio permanezca detenido, habilite el registro de diagnóstico de SharePoint, intente iniciar el servicio de nuevo y, a continuación, compruebe si hay errores en el registro. Para obtener más información, vea [Configurar el registro de diagnóstico en SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Después de cambiar DNS al entorno de conmutación por error de Azure, los exploradores de los clientes siguen usando la antigua dirección IP para el sitio de SharePoint
 

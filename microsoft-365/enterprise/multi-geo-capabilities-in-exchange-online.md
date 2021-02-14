@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Obtenga información sobre las funcionalidades multigeográficas en Exchange Online, como limitaciones de características y ubicación de buzones.
+description: Obtenga información sobre las capacidades multige geográficas de Exchange Online, como las limitaciones de características y la colocación de buzones.
 ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -43,7 +43,7 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Cuando **PreferredDataLocation** no está especificada en un usuario, al aprovisionar el buzón, se aprovisionará en la ubicación geográfica central.
 
-- Si el código**PreferredDataLocation** no es correcto (por ejemplo, un tipo de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
+- Si el código **PreferredDataLocation** no es correcto (por ejemplo, un tipo de NAN en lugar de NAM), el buzón se aprovisionará en la ubicación geográfica central.
 
 **Nota**: las funciones de Multi-geo y las reuniones hospedadas regionalmente por Skype Empresarial Online utilizan la propiedad **PreferredDataLocation** en los objetos de usuario para buscar servicios. Si configura los valores de **PreferredDataLocation** en los objetos de usuario para reuniones hospedadas regionalmente, el buzón de correo de esos usuarios se moverá automáticamente a la ubicación geográfica especificada después de que se habilite en el espacio empresarial de Microsoft 365.
 

@@ -1,5 +1,5 @@
 ---
-title: Asignar directivas de Skype empresarial online por usuario con PowerShell para Microsoft 365
+title: Asignar directivas de Skype Empresarial Online por usuario con PowerShell para Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Resumen: Use PowerShell para Microsoft 365 para asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.'
+description: 'Resumen: use PowerShell para Microsoft 365 para asignar la configuración de comunicación por usuario con directivas de Skype Empresarial Online.'
 ms.openlocfilehash: 6ff9fce3e0287313f6725b370b6ba89cb939eb3a
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,17 +21,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46693869"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas de Skype empresarial online por usuario con PowerShell para Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas de Skype Empresarial Online por usuario con PowerShell para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-El uso de PowerShell para Microsoft 365 es una forma eficaz de asignar configuraciones de comunicación por usuario con directivas de Skype empresarial online.
+El uso de PowerShell para Microsoft 365 es una forma eficaz de asignar la configuración de comunicación por usuario con directivas de Skype Empresarial Online.
   
-## <a name="prepare-to-run-the-powershell-commands"></a>Preparar la ejecución de los comandos de PowerShell
+## <a name="prepare-to-run-the-powershell-commands"></a>Prepararse para ejecutar los comandos de PowerShell
 
-Siga estas instrucciones para preparar la ejecución de los comandos (omita los pasos que ya ha completado):
+Siga estas instrucciones para configurarse para ejecutar los comandos (omita los pasos que ya ha completado):
   
-1. Descargue e instale el [módulo de conector de Skype empresarial online](https://www.microsoft.com/download/details.aspx?id=39366).
+1. Descargue e instale el [módulo conector de Skype Empresarial Online.](https://www.microsoft.com/download/details.aspx?id=39366)
     
 2. Abra el símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
@@ -42,23 +42,23 @@ $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
 ```
 
-Cuando se le solicite, escriba el nombre y la contraseña de la cuenta de administrador en línea de Skype empresarial online.
+Cuando se le solicite, escriba el nombre y la contraseña de su cuenta de administrador de Skype Empresarial Online.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Actualización de la configuración de comunicación externa para una cuenta de usuario
 
-Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con los usuarios federados (EnableFederationAccess es igual a true) pero no con los usuarios de Windows Live (EnablePublicCloudAccess es igual a false). Para ello, debe hacer dos cosas:
+Supongamos que desea cambiar la configuración de comunicación externa en una cuenta de usuario. Por ejemplo, desea permitir que Alex se comunique con usuarios federados (EnableFederationAccess es igual a True), pero no con usuarios de Windows Live (EnablePublicCloudAccess es igual a False). Para ello, debe hacer dos cosas:
   
 1. Buscar una directiva de acceso externo que cumpla nuestros criterios.
     
 2. Asignar esa directiva de acceso externo a Alex.
     
-¿Cómo se determina qué directiva de acceso externo se asigna a Alex? El siguiente comando devuelve todas las directivas de acceso externo donde EnableFederationAccess se establece en True y EnablePublicCloudAccess se establece en False:
+¿Cómo se determina qué directiva de acceso externo asignar a Alex? El siguiente comando devuelve todas las directivas de acceso externo donde EnableFederationAccess se establece en True y EnablePublicCloudAccess se establece en False:
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-A menos que haya creado instancias personalizadas de ExternalAccessPolicy, el comando devolverá una directiva que cumpla nuestros criterios (FederationOnly). Aquí le mostramos un ejemplo:
+A menos que haya creado instancias personalizadas de ExternalAccessPolicy, ese comando devuelve una directiva que cumple nuestros criterios (FederationOnly). Aquí le mostramos un ejemplo:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -70,42 +70,42 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Ahora que ya sabe qué directiva asignar a Alex, podemos asignar esa Directiva mediante el cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) . Aquí le mostramos un ejemplo:
+Ahora que sabe qué directiva asignar a Alex, podemos asignarla con el cmdlet [Grant-CsExternalAccessPolicy.](https://go.microsoft.com/fwlink/?LinkId=523974) Aquí le mostramos un ejemplo:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
-La asignación de una directiva es muy sencilla: simplemente especifique la identidad del usuario y el nombre de la Directiva que se va a asignar. 
+Asignar una directiva es bastante sencillo: simplemente especifique la identidad del usuario y el nombre de la directiva que se asignará. 
   
-En lo que se refiere a las directivas y asignaciones de directivas, no se limita a trabajar con cuentas de usuario una vez. Por ejemplo, supongamos que necesita una lista de todos los usuarios que tienen permiso para comunicarse con los socios federados y los usuarios de Windows Live. Ya sabemos que a esos usuarios se les ha asignado la directiva de acceso de usuario externo FederationAndPICDefault. Como sabemos, puede mostrar una lista de todos los usuarios mediante la ejecución de un comando sencillo. Este es el comando:
+Y cuando se trata de directivas y asignaciones de directivas, no se limita a trabajar con cuentas de usuario una por vez. Por ejemplo, supongamos que necesita una lista de todos los usuarios que tienen permiso para comunicarse con los socios federados y los usuarios de Windows Live. Ya sabemos que a esos usuarios se les ha asignado la directiva de acceso de usuario externo FederationAndPICDefault. Como lo sabemos, puede mostrar una lista de todos esos usuarios ejecutando un comando simple. Este es el comando:
   
 ```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
-En otras palabras, veremos a todos los usuarios donde la propiedad ExternalAccessPolicy se establece en FederationAndPICDefault. (Y, para limitar la cantidad de información que aparece en la pantalla, use el cmdlet Select-Object para mostrar solo el nombre para mostrar de cada usuario). 
+En otras palabras, veremos a todos los usuarios donde la propiedad ExternalAccessPolicy se establece en FederationAndPICDefault. (Y, para limitar la cantidad de información que aparece en la pantalla, use el cmdlet Select-Object para mostrarnos solo el nombre para mostrar de cada usuario). 
   
-Para configurar todas las cuentas de usuario para que usen la misma directiva, use este comando:
+Para configurar todas nuestras cuentas de usuario para que usen la misma directiva, use este comando:
   
 ```powershell
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
-Este comando usa Get-CsOnlineUser para devolver una colección de todos los usuarios que se han habilitado para Lync y, a continuación, envía toda la información a Grant-CsExternalAccessPolicy, que asigna la Directiva FederationAndPICDefault a todos y cada uno de los usuarios de la colección.
+Este comando usa Get-CsOnlineUser para devolver una colección de todos los usuarios que se han habilitado para Lync y, a continuación, envía toda esa información a Grant-CsExternalAccessPolicy, que asigna la directiva FederationAndPICDefault a todos y cada uno de los usuarios de la colección.
   
-Por ejemplo, supongamos que anteriormente ha asignado a Alex la Directiva FederationAndPICDefault y que ahora ha cambiado de opinión y desea que se administre mediante la directiva global de acceso externo. No se puede asignar explícitamente la directiva global a nadie. En su lugar, se usa la directiva global para un usuario determinado si no hay una directiva por usuario asignada al usuario. Por lo tanto, si queremos que Alex administre la directiva global, debe  *anular la asignación*  de la Directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
+Como ejemplo adicional, supongamos que ya asignó a Alex la directiva FederationAndPICDefault y ahora ha cambiado de opinión y le gustaría que lo administrara la directiva de acceso externo global. No puede asignar explícitamente la directiva global a nadie. En su lugar, la directiva global se usa para un usuario determinado si no se asigna ninguna directiva por usuario a ese usuario. Por lo tanto, si queremos que Alex sea administrado por la directiva global, debe  *desasignarlo*  cualquier directiva por usuario que se le haya asignado anteriormente. A continuación se muestra un ejemplo:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
-Este comando establece el nombre de la Directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "Nothing". Es decir, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, dicho usuario se administra mediante la directiva global.
+Este comando establece el nombre de la directiva de acceso externo asignada a Alex en un valor nulo ($Null). Null significa "nothing". En otras palabras, no se asigna ninguna directiva de acceso externo a Alex. Cuando no se asigna ninguna directiva de acceso externo a un usuario, la directiva global administra ese usuario.
   
 
 ## <a name="managing-large-numbers-of-users"></a>Administración de grandes cantidades de usuarios
 
-Para administrar un gran número de usuarios (1000 o más), debe procesar los comandos mediante un bloque de script mediante el cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  En los ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de volver a enviarlo.  Cuando se usa un bloque de script, esto permite que se ejecuten los cmdlets de forma remota y, una vez finalizado, se devuelven los datos. 
+Para administrar un gran número de usuarios (1000 o más), debe procesar por lotes los comandos a través de un bloque de script mediante el cmdlet [Invoke-Command.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  En ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de enviarlo de vuelta.  Al usar un bloque de script, esto permite ejecutar los cmdlets de forma remota y, una vez completados, devolver los datos. 
 
 ```powershell
 Import-Module LyncOnlineConnector
@@ -134,9 +134,9 @@ $count = 0
 }
 ```
 
-Esto buscará 500 usuarios a la vez que no tienen una directiva de cliente. Se le concederá la Directiva de cliente "ClientPolicyNoIMURL" y la Directiva de acceso externo "FederationAndPicDefault". Los resultados se procesan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
+Esto encontrará 500 usuarios a la vez que no tienen una directiva de cliente. Les concederá la directiva de cliente "ClientPolicyNoIMURL" y la directiva de acceso externo "FederationAndPicDefault". Los resultados se agrupan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

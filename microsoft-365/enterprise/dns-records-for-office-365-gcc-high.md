@@ -31,33 +31,33 @@ ms.locfileid: "46693828"
 
 *Este artículo se aplica a Office 365 GCC High y Microsoft 365 GCC High*
 
-Como parte de la incorporación a Office 365 GCC High, tendrá que agregar los dominios SMTP y SIP a su inquilino de servicios en línea.  Para hacerlo, use el cmdlet New-MsolDomain en Azure AD PowerShell o use el [portal de Azure Government](https://portal.azure.us) para iniciar el proceso de agregar el dominio y demostrar la propiedad.
+Como parte de la incorporación a Office 365 GCC High, tendrá que agregar los dominios SMTP y SIP a su inquilino de Servicios en línea.  Para ello, use el cmdlet New-MsolDomain azure AD PowerShell o el Portal de [Azure Government para](https://portal.azure.us) iniciar el proceso de agregar el dominio y demostrar la propiedad.
 
-Una vez que haya agregado los dominios al espacio empresarial y se hayan validado, use las siguientes instrucciones para agregar los registros DNS adecuados para los servicios que se indican a continuación.  Es posible que deba modificar la tabla que se muestra a continuación para ajustarse a las necesidades de su organización con respecto a los registros MX de entrada y los registros de Exchange Autodiscover existentes que haya en marcha.  Recomendamos encarecidamente coordinar estos registros DNS con su equipo de mensajería para evitar interrupciones o entregas no deseadas de correo electrónico.
+Una vez que haya agregado sus dominios a su inquilino y validado, use las siguientes instrucciones para agregar los registros DNS adecuados para los servicios siguientes.  Es posible que tenga que modificar la tabla siguiente para satisfacer las necesidades de su organización con respecto a los registros MX entrantes y los registros de Detección automática de Exchange existentes que tenga en su lugar.  Recomendamos encarecidamente coordinar estos registros DNS con el equipo de mensajería para evitar interrupciones o entregas erróneas de correo electrónico.
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Tipo | Prioridad | Nombre de host | Apunta a una dirección o un valor | TTL |
+| Tipo | Prioridad | Nombre de host | Apunta a dirección o valor | TTL |
 | --- | --- | --- | --- | --- |
-| MX | comprendi | @ | *tenant*. mail.Protection.Office365.US (consulte a continuación para obtener más información) | 1 Hour |
-| TXT | - | @ | v = spf1 include include SPF. Protection. Office365. US-All | 1 hora |
+| MX | 0 | @ | *tenant*.mail.protection.office365.us (consulta a continuación para obtener más información) | 1 Hour |
+| TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 hora |
 | CNAME | - | autodiscover | autodiscover.office365.us | 1 Hour |
 
 ### <a name="exchange-autodiscover-record"></a>Registro de detección automática de Exchange
 
-Si tiene Exchange Server local, le recomendamos dejar el registro existente en su lugar mientras migra a Exchange Online y actualizar dicho registro una vez que haya completado la migración. 
+Si tiene una Exchange Server local, le recomendamos dejar el registro existente en su lugar mientras migra a Exchange Online y actualizar ese registro una vez que haya completado la migración. 
 
 ### <a name="exchange-online-mx-record"></a>Registro MX de Exchange Online
 
-El valor del registro MX para los dominios aceptados sigue un formato estándar, como se ha indicado anteriormente: *tenant*. mail.Protection.Office365.US, reemplazando a *tenant* con la primera parte del nombre del espacio empresarial predeterminado.
+El valor del registro MX para los dominios aceptados sigue un formato estándar  como se indicó *anteriormente:* inquilino .mail.protection.office365.us, reemplazando el inquilino por la primera parte del nombre de inquilino predeterminado.
 
-Por ejemplo, si el nombre de su espacio empresarial es contoso.onmicrosoft.us, usaría **contoso.mail.Protection.Office365.US** como el valor para el registro MX.
+Por ejemplo, si el nombre del inquilino es contoso.onmicrosoft.us, usaría contoso.mail.protection.office365.us **como** valor para el registro MX.
 
 ## <a name="skype-for-business-online"></a>Skype Empresarial Online
 
 ### <a name="cname-records"></a>Registros CNAME
 
-| Tipo | Nombre de host | Apunta a una dirección o un valor | TTL |
+| Tipo | Nombre de host | Apunta a dirección o valor | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.gov.skypeforbusiness.us | 1 hora |
 | CNAME | lyncdiscover | webdir.online.gov.skypeforbusiness.us | 1 Hour |
@@ -66,10 +66,10 @@ Por ejemplo, si el nombre de su espacio empresarial es contoso.onmicrosoft.us, u
 
 | Tipo | Servicio | Protocolo | Puerto | Peso | Priority | Nombre | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_MTLS | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 hora |
-| SRV | \_sipfederationtls | \_TPC | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |
+| SRV | \_sip | \_tls | 443 | 1  | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 hora |
+| SRV | \_sipfederationtls | \_tcp | 5061 | 1  | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |
 
 ## <a name="additional-dns-records"></a>Registros DNS adicionales
 
 > [!IMPORTANT]
-> Si ya tiene un registro CNAME de *msoid* en la zona DNS, debe **quitar** el registro de DNS en este momento.  El registro msoid es incompatible con las aplicaciones empresariales de Microsoft 365 *(anteriormente Office 365 ProPlus)* y evitará que la activación se realice correctamente.
+> Si tiene un registro *MSoid* CNAME existente en  la zona DNS, debe quitar el registro de DNS en este momento.  El registro msoid es incompatible con Aplicaciones de Microsoft 365 Enterprise *(anteriormente Office 365 ProPlus)* y evitará que la activación se haga correctamente.

@@ -17,46 +17,46 @@ ms.lasthandoff: 07/30/2020
 ms.locfileid: "46529844"
 ---
 # <a name="battery-insights"></a>Información sobre las baterías
-Esta vista proporciona métricas de uso de energía, batería y aplicaciones para los dispositivos de escritorio administrados por Microsoft. Por estos motivos, una aplicación se considera "en uso" si está en ejecución y en enfoque.
+Esta vista proporciona métricas de uso de energía, batería y aplicaciones para los dispositivos de Escritorio administrado de Microsoft. Para estos fines, una aplicación se considera "en uso" si se está ejecutando y en foco.
 
-Para ver los datos de uso, seleccione la pestaña **batería** .
+Para ver los datos de uso, selecciona la **pestaña** Batería.
 
-![Panel batería: duración prevista de la batería por modelo de dispositivo en la parte superior izquierda y los principales consumidores de energía (por aplicación) en la parte superior derecha y en la tabla información en la parte inferior. Vínculo de documentación en la esquina superior derecha.](../../media/insights_battery.png)
+![Panel de batería: duración de la batería pronosticada por modelo de dispositivo en la parte superior izquierda, consumidores de energía superiores (por aplicación) en la parte superior derecha, tabla insights en la parte inferior. Vínculo de documentación en la parte superior derecha.](../../media/insights_battery.png)
 
-## <a name="predicted-battery-life"></a>Duración prevista de la batería
+## <a name="predicted-battery-life"></a>Duración de la batería pronosticada
 
-En el área de duración de la **batería prevista** , proporcionamos predicciones para la duración prevista de la batería de los dispositivos, organizadas por modelo de dispositivo.
+En el **área de duración prevista** de la batería, proporcionamos las previsiones para la duración prevista de la batería de los dispositivos, organizadas por modelo de dispositivo.
 
 > [!NOTE]
-> Estos datos se derivan del uso de energía de muestreo, el tiempo de uso y la capacidad de la batería desde una <em>selección</em> aleatoria de los dispositivos en su implementación de escritorio administrada de Microsoft que también son datos de informes.
+> Estos datos se derivan del uso de energía de <em></em> muestreo, el tiempo de uso y la capacidad de la batería de una selección aleatoria de los dispositivos de la implementación de Escritorio administrado de Microsoft que también informan de los datos.
 
-La tabla proporciona la duración prevista de la batería (en horas), la duración media de la batería para los mismos modelos en otras implementaciones de escritorio administradas por Microsoft y el número de dispositivos que notifican estos datos en el entorno. Ordene los datos seleccionando los encabezados de columna.
+La tabla proporciona la duración de la batería pronosticada (en horas), la duración media de la batería para los mismos modelos en otras implementaciones de Escritorio administrado de Microsoft y el número de dispositivos que informan de estos datos en su entorno. Ordene los datos seleccionando los encabezados de columna.
 
 
 
 ## <a name="top-energy-consumers"></a>Principales consumidores de energía
 
-En el área de los **principales consumidores de energía** , encontrará las aplicaciones de su entorno que consumen más energía en milliWatt-horas (MWh). Las aplicaciones que se muestran son por dispositivo específico, que se seleccionan en la sección duración de la **batería de previsiones** a la izquierda. Por ejemplo, para ver el consumo por aplicación para los dispositivos de Microsoft Surface Book 2, seleccione esa fila en el área duración de la batería. Si no selecciona ningún modelo, los datos de consumo de la aplicación mostrados son para todas las aplicaciones para las que tenemos datos colectivamente.
+En el **área de consumidores** principales de energía, encontrarás las aplicaciones de tu entorno que consumen la mayor cantidad de energía en milisegundos-hora (mWh). Las aplicaciones que se muestran son por dispositivo específico, que seleccionas en la sección **Duración** de la batería previsto a la izquierda. Por ejemplo, para ver el consumo por aplicación de los dispositivos Microsoft Surface Book 2, selecciona esa fila en el área de duración de la batería. Si no seleccionas ningún modelo, los datos de consumo de aplicaciones que se muestran son para todas las aplicaciones para las que tenemos datos de forma colectiva.
 
- Para cada aplicación, los segmentos de color muestran la distribución del uso de energía de la aplicación entre estas categorías:
+ Para cada aplicación, los segmentos de colores muestran la distribución del uso de energía de la aplicación entre estas categorías:
 
 - CPU
 - Visualización
 - Red
 - Otros
 
-"Otros" podrían incluir consumo energético por una variedad de orígenes, como la actividad de disco, el uso de banda ancha móvil y la pérdida de energía de resistencia interna. 
+"Otros" podría incluir el consumo de energía por parte de una variedad de fuentes, como la actividad de disco, el uso de banda ancha móvil y la energía perdida a la resistencia interna. 
 
-Puede filtrar esta vista para mostrar solo las aplicaciones en primer plano, las aplicaciones en segundo plano o ambas mediante el menú de la esquina superior derecha. Las aplicaciones en primer plano son aquellas en las que se ha producido la interacción del usuario en los últimos 28 días, como seleccionar algo con un mouse (ratón).
+Puedes filtrar esta vista para mostrar solo aplicaciones en primer plano, aplicaciones en segundo plano o ambas mediante el menú de la esquina superior derecha. Las aplicaciones en primer plano son aquellas que han tenido interacción del usuario en los últimos 28 días, como seleccionar algo con un mouse.
 
-## <a name="insights"></a>Información
+## <a name="insights"></a>Insights
 
-El área de **información** muestra los tres consumidores de energía principales en las categorías CPU y red. Estos elementos consumen más de una energía media en comparación con todas las implementaciones de escritorio administradas por Microsoft. No se muestra el recurso para mostrar porque depende en gran medida del tiempo de uso del dispositivo y la configuración del brillo de la pantalla. 
+El **área Insights** muestra los tres principales consumidores de energía en las categorías de CPU y red. Estos elementos consumen una energía superior a la media en comparación con todas las implementaciones de Escritorio administrado de Microsoft. No se muestra el recurso de pantalla porque depende en gran medida del tiempo de uso del dispositivo y de la configuración de brillo de la pantalla. 
 
-Seleccione los listados en la columna **detalles** para obtener más información.
+Seleccione los listados en la **columna Detalles** para obtener más información.
 
 ## <a name="battery-optimization"></a>Optimización de la batería
 
-Windows 10 ofrece varias [Opciones de configuración de dispositivo](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) para mejorar el uso de energía y aumentar la duración de la batería de los dispositivos de escritorio administrados por Microsoft. Algunas de estas opciones de configuración pueden disminuir otras funciones de Windows, por lo que también tendrá que tener en cuenta otros factores, como la función del dispositivo en su organización. El soporte técnico de Windows mantiene una lista de estas [sugerencias de ahorro de batería](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips).
+Windows 10 ofrece numerosas opciones de [configuración de dispositivos](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) para mejorar el uso de energía y aumentar la duración de la batería de los dispositivos de Escritorio administrado de Microsoft. Algunas de estas opciones de configuración pueden disminuir otras funciones de Windows, por lo que también tendrás que tener en cuenta otros factores, como el rol del dispositivo en la organización. El soporte técnico de Windows mantiene una lista de estas sugerencias [de ahorro de batería.](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips)
 
-Los usuarios pueden ajustar algunas opciones de configuración por su cuenta sin necesidad de elevación o soporte administrativo. Otras opciones requieren la asistencia del administrador de TI de la organización.
+Los usuarios pueden ajustar algunas opciones de configuración por sí mismos sin necesidad de elevación o soporte técnico de administrador. Otras opciones requieren soporte técnico del administrador de TI de la organización.

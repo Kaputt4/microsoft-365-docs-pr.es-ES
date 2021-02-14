@@ -24,14 +24,14 @@ ms.locfileid: "45204772"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en JPY y haga referencia al número de factura en la remesa de pago.
+Pagar solo en JPY y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, N. A  
-**Identificador de banco:** 0401  
-**Rama:** Sucursal de Tokio  
+**Banco:** Bank, N.A  
+**Bank ID:** 0401  
+**Rama:** Rama de Tokio  
 **Código de sucursal:** 730  
-**Código SWIFT:** CITIJPJT  
+**Código SWIFT:** JPJPJT  
 **Número de cuenta:** 160609028  
 **Nombre de cuenta:** Microsoft Japan Co., Ltd.
